@@ -1,334 +1,361 @@
-{
-  "id": "019d6143a5c175d1ae04b31bec344a06",
-  "type": "character",
-  "name": "Chie Thakur",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Chop shop operator—vehicle parts, cyberware stripping, industrial equipment",
-  "age": 48,
-  "status": "active",
-  "location": "The Stockyard, Bay 9 of the decommissioned Ferrogate Transit maintenance shed on Axle Row, near Western and Division",
-  "description": "Chie Thakur is a big man run slightly soft, with heavy forearms corded from decades of physical work, dark reddish-brown skin cross-hatched with old chemical burns on the backs of both hands, and a white-streaked beard he keeps trimmed close. He has geneware cat ears—tabby-patterned in brown and gray, a mod he got at thirty-five on a dare and kept because his grandchildren think they're wonderful. He wears the same style of heavy canvas coverall every day in rotating colors, always with the sleeves pushed up, always with at least one pocket tool he's forgotten to put away.\n\nChie Thakur projects the easy authority of a man who has been competent at his work for a long time and knows it. He is not cruel, not dramatic, not particularly greedy—he runs his operation like a small business, because it is one. He is known in the Stockyard as fair: he pays what he says he'll pay, his cuts are clean, and he doesn't ask questions he doesn't want answered. What people underestimate is the quality of his memory and his willingness to call in patience as a debt. He has been waiting on one particular piece of unfinished business for six years.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.3,
-      "mask": 0.4,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "His operation being taken over or destroyed by a larger criminal organization",
-      "Dying before settling the six-year debt"
-    ],
-    "core_desires": [
-      "Stability and continuation of what he's built",
-      "Resolution of the specific betrayal that cost him a partner and a son's future"
-    ],
-    "coping_mechanisms": [
-      "Physical work as meditation—when stressed, he strips components by hand even when tools would be faster",
-      "Humor, mostly dry and self-deprecating"
-    ],
-    "blind_spots": [
-      "His junior workers' loyalty—he assumes it is earned and solid when it is fragile",
-      "He thinks his patience makes him strategic; sometimes it just means he waits while things get worse"
-    ],
-    "secret": "Six years ago a man named Oyelaran Prochaska-Saintil sold Benedikt's eldest son's location to a Helix Biosystems compliance team that had been looking for the son over a stolen organ scaffold. The son did eight months in a Helix detention facility and came out fundamentally changed. Benedikt has since found Oyelaran, who now lives under a new identity in Archer's Line, works a legitimate job, and has a family. Benedikt has not decided what to do. He thinks about it every day."
-  },
-  "speech_patterns": {
-    "vocabulary": "Working-class technical, heavy on mechanical metaphors. Doesn't use filler words. When he says something it's because he means it.",
-    "cadence": "Unhurried, deliberate, occasionally punctuated by short silences while he finishes a thought with his hands.",
-    "verbal_tics": [
-      "'Right, so.'",
-      "Ends declarative sentences with a short exhale through the nose, not quite a laugh"
-    ],
-    "example_lines": [
-      "'Right, so—what you've got here is a third-gen Ferrogate transit motor with the governor stripped, which makes it worth something to me and a serious problem for you if you got stopped with it. Lucky for both of us you weren't.'",
-      "'I've been in this bay twenty-two years. Seen four major gangs try to take the Stockyard. All four are gone. I'm still here. There's a lesson in there if you want it.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Benedikt's eldest son has relapsed into a destructive pattern since the detention stint and Benedikt is quietly, desperately trying to find leverage or money or something to get him into a private rehabilitation program without it becoming public and destabilizing the shop",
-    "Someone has been stripping Ferrogate transit vehicles of a very specific, very expensive navigation component and selling the parts to Benedikt through intermediaries—he has just realized the components are from vehicles that haven't been decommissioned yet"
-  ],
-  "narrative_function": "Reliable fence for vehicle and cyberware components, local color anchor for the Stockyard, potential quest giver for the six-year-old unfinished business, good source of mechanical expertise and underworld pragmatism.",
-  "augmentations": "Geneware cat ears (tabby, brown-gray, cosmetic). Left hand has a mechanical assist brace over the ring and pinky fingers—industrial injury repair, basic model. Optical magnification implant in right eye for fine component work.",
-  "daily_life": "Opens the bay at 0600, works through intake assessments on new acquisitions, manages three junior strippers, closes by 2100—occasionally later if a priority job comes in after dark.",
-  "affiliation": "Independent, informal tribute arrangement with the Stockyard Compact (local protection collective)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 7,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 8,
-      "creativity": 5,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 5,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "patient",
-      "skilled",
-      "principled-within-limits",
-      "quietly-dangerous",
-      "paternal"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Pay what you promised, no exceptions—your word is the only capital that doesn't depreciate",
-      "Don't take anything that has a living person still attached to it—strictly parts and property"
-    ],
-    "escalation_ladder": [
-      "Address problem directly and plainly",
-      "State consequences once, clearly, without theatrics",
-      "Apply economic pressure—stops buying from the offending party, notifies the Compact",
-      "Calls in favors, does not personally engage in violence but does not prevent it"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally neutral, assessing—prices them up before he speaks much",
-      "friends": "Warm in a gruff, practical way; expresses regard through reliability and remembered details"
-    },
-    "stress_responses": {
-      "low": "Strips a component by hand, works quietly",
-      "medium": "Sends his junior workers home early and works alone",
-      "high": "Goes very still and very quiet, which his workers have learned to fear more than shouting"
-    },
-    "contradictions": [
-      "Prides himself on no violence yet is methodically preparing a situation that may end in it",
-      "Extremely fair in business, deeply unfair in his private calculation about Oyelaran"
-    ],
-    "habits": [
-      "Makes tea in a battered ceramic pot at exactly 0800 and 1400, does not offer it to people he doesn't trust",
-      "Wipes his tools individually at end of shift regardless of how tired he is"
-    ],
-    "breaking_points": [
-      "Any direct threat to his grandchildren",
-      "If his eldest son's situation becomes publicly humiliating or dangerous"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Geneware cat ears (tabby pattern, cosmetic)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Geneware cat ears (tabby pattern, cosmetic)",
-      "replaces": ""
-    },
-    {
-      "name": "Mechanical finger brace (left ring and pinky, basic industrial repair model)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Mechanical finger brace (left ring and pinky, basic industrial repair model)",
-      "replaces": ""
-    },
-    {
-      "name": "Optical magnification implant (right eye, fine-detail work configuration)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Optical magnification implant (right eye, fine-detail work configuration)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Dreamer": 0.9,
-    "Seeker": 0.9,
-    "Quick Study": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Stockyard",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 19: Started as a legitimate Ferrogate Transit maintenance apprentice on Axle Row",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 26: First gray-market parts deal—sold components from a legitimately totaled vehicle on the side",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 33: Opened Bay 9 as a nominally legitimate salvage operation",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 42: The Oyelaran betrayal and his son's detention",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 45: Located Oyelaran under his new identity. Has been sitting on it since.",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Tessera TK-5 Compact 'Clerk'",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
-  ],
-  "registered_firearms": [
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Tessera TK-5 Compact 'Clerk'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "The Stockyard",
-    "The Unfinished Theorem",
-    "Patience",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "The Pure Hand"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "North African (28.7%), Eastern European (20.7%), Middle Eastern (19.8%), South Asian (18.1%), and Sub-Saharan African (12.7%) ancestry creates a striking multifaceted phenotype. North African heritage contributes angular bone structure and facial proportions; Eastern European ancestry shapes build and defines cheekbones; Middle Eastern ancestry structures eye placement and adds depth; South Asian heritage brings warmth and refinement to facial planes; Sub-Saharan African ancestry enriches skin undertones and texture. The synthesis is a cosmopolitan face bearing the genetic signature of the Ubiquitous Diaspora—a complex blend where no single ancestry dominates.",
-    "height_cm": 188,
-    "weight_kg": 98,
-    "build": "Broad-shouldered and heavy-limbed, softened through the middle from years of sedentary work interspersed with bursts of physical labor. Thick forearms remain corded and powerful despite the overall stockiness.",
-    "hair_color": "Dark brown with white streaking throughout",
-    "hair_style": "Close-trimmed, kept neat but utilitarian",
-    "hair_length": "Short",
-    "eye_color": "Right eye: augmented with golden-amber optical overlay for magnification readout. Left eye: natural dark brown.",
-    "skin_tone": "Deep warm brown with red-amber and olive undertones—a complex blend reflecting North African, Middle Eastern, South Asian, and Sub-Saharan African ancestry. Weathered and lined from decades in industrial environments, the skin carries warmth and depth that shifts subtly in different light.",
-    "complexion": "Strong, angular features shaped by North African and Eastern European bone structure with Middle Eastern and South Asian heritage contributing to fuller lips, prominent cheekbones, and broader nose bridge. Heavy-featured, serious expression carved by forty-eight years under fluorescent and arc-light work lamps. Chemical burns across his hands have not reached his face, but the knuckles and dorsal hand surfaces show pale scar tissue in fine cross-hatch patterns that contrast against the deeper skin tone.",
-    "distinguishing_marks": [
-      "Chemical burn scarring across the dorsal surfaces of both hands in a fine cross-hatch pattern, pale against darker skin, sustained from industrial solvent exposure approximately 30 years prior.",
-      "Faint circular burn mark on left forearm, approximately 3cm diameter, consistent with welding spark contact.",
-      "Old laceration scar on right temple, barely visible beneath close-trimmed hair, approximately 8cm in length."
-    ],
-    "visible_augmentations": "Geneware cat ears with tabby patterning in brown and gray, positioned naturally on the skull. Left hand fitted with a mechanical assist brace over the ring and pinky fingers—utilitarian industrial model in brushed steel, no cosmetic finishing. Right eye displays a faint amber-gold luminescence when active during precision work, with subtle readout flicker visible in low light.",
-    "posture_movement": "Moves with deliberate efficiency, no wasted motion. Stands with weight balanced slightly forward, as if always ready to lean into work. Keeps his hands visible and in constant, purposeful motion—a man comfortable with tools. His gait is measured and confident, the movement pattern of someone who has never questioned his competence.",
-    "clothing_style": "Heavy canvas coveralls in rotating solid colors (tan, slate gray, dark green, ochre)—always the same cut, always worn-in and bearing grease stains that no amount of washing fully removes. Sleeves perpetually rolled to mid-forearm. Pockets deliberately overstuffed with precision tools, small wrenches, calipers, and forgotten microchips. Steel-toed work boots, practical and scuffed. No jewelry except a simple band-style watch with a cracked crystal on his left wrist. Tier 3-4 working aesthetic—quality materials chosen for durability, not aesthetics."
-  },
-  "image_prompt": "Chie Thakur, 188cm industrial mechanic with deep warm brown skin bearing North African, Eastern European, Middle Eastern, South Asian, and Sub-Saharan African heritage. Heavy-featured angular face weathered from decades under work lamps, dark brown eyes with right eye augmented golden-amber optical overlay. Dark brown hair with white streaking, close-trimmed. Geneware tabby cat ears in brown-gray. Broad shoulders, stocky build with thick corded forearms. Chemical burn scarring visible on both hands in pale cross-hatch patterns against deeper skin. Left hand with brushed steel mechanical assist brace. Wearing worn tan canvas coveralls with rolled sleeves, pockets full of tools and calipers, steel-toed boots, cracked-crystal watch. Measured confident posture, hands visible and purposeful. Serious expression. GLMZ workshop setting, arc lighting and fluorescent work lamps casting warm and cool shadows, industrial environment with tool benches and machinery visible behind. Photorealistic, gritty industrial aesthetic, deep shadow and practical lighting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "North African": 28.7,
-    "Eastern European": 20.7,
-    "Middle Eastern": 19.8,
-    "South Asian": 18.1,
-    "Sub-Saharan African": 12.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "North African": {
-      "Nile Valley": {
-        "Egyptian": 6.6,
-        "Sudanese": 13.8
-      },
-      "Maghreb": {
-        "Moroccan": 6.6,
-        "Tunisian": 1.7
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 8.9
-      },
-      "Slavic East": {
-        "Belarusian": 1.8
-      },
-      "Slavic South": {
-        "Bulgarian": 10
-      }
-    },
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Palestinian": 10.5
-      },
-      "Kurdish": {
-        "Kurdish": 9.3
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 18.1
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Gabonese": 10.2
-      },
-      "East African": {
-        "Ethiopian": 2.5
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a5c175d1ae04b31bec344a06",
+    "type":  "character",
+    "name":  "Chie Thakur",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Chop shop operatorâ€”vehicle parts, cyberware stripping, industrial equipment",
+    "age":  48,
+    "status":  "active",
+    "location":  "The Stockyard, Bay 9 of the decommissioned Ferrogate Transit maintenance shed on Axle Row, near Western and Division",
+    "description":  "Chie Thakur is a big man run slightly soft, with heavy forearms corded from decades of physical work, dark reddish-brown skin cross-hatched with old chemical burns on the backs of both hands, and a white-streaked beard he keeps trimmed close. He has geneware cat earsâ€”tabby-patterned in brown and gray, a mod he got at thirty-five on a dare and kept because his grandchildren think they\u0027re wonderful. He wears the same style of heavy canvas coverall every day in rotating colors, always with the sleeves pushed up, always with at least one pocket tool he\u0027s forgotten to put away.\n\nChie Thakur projects the easy authority of a man who has been competent at his work for a long time and knows it. He is not cruel, not dramatic, not particularly greedyâ€”he runs his operation like a small business, because it is one. He is known in the Stockyard as fair: he pays what he says he\u0027ll pay, his cuts are clean, and he doesn\u0027t ask questions he doesn\u0027t want answered. What people underestimate is the quality of his memory and his willingness to call in patience as a debt. He has been waiting on one particular piece of unfinished business for six years.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "His operation being taken over or destroyed by a larger criminal organization",
+                                          "Dying before settling the six-year debt"
+                                      ],
+                       "core_desires":  [
+                                            "Stability and continuation of what he\u0027s built",
+                                            "Resolution of the specific betrayal that cost him a partner and a son\u0027s future"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Physical work as meditationâ€”when stressed, he strips components by hand even when tools would be faster",
+                                                 "Humor, mostly dry and self-deprecating"
+                                             ],
+                       "blind_spots":  [
+                                           "His junior workers\u0027 loyaltyâ€”he assumes it is earned and solid when it is fragile",
+                                           "He thinks his patience makes him strategic; sometimes it just means he waits while things get worse"
+                                       ],
+                       "secret":  "Six years ago a man named Oyelaran Prochaska-Saintil sold Benedikt\u0027s eldest son\u0027s location to a Helix Biosystems compliance team that had been looking for the son over a stolen organ scaffold. The son did eight months in a Helix detention facility and came out fundamentally changed. Benedikt has since found Oyelaran, who now lives under a new identity in Archer\u0027s Line, works a legitimate job, and has a family. Benedikt has not decided what to do. He thinks about it every day."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Working-class technical, heavy on mechanical metaphors. Doesn\u0027t use filler words. When he says something it\u0027s because he means it.",
+                            "cadence":  "Unhurried, deliberate, occasionally punctuated by short silences while he finishes a thought with his hands.",
+                            "verbal_tics":  [
+                                                "\u0027Right, so.\u0027",
+                                                "Ends declarative sentences with a short exhale through the nose, not quite a laugh"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Right, soâ€”what you\u0027ve got here is a third-gen Ferrogate transit motor with the governor stripped, which makes it worth something to me and a serious problem for you if you got stopped with it. Lucky for both of us you weren\u0027t.\u0027",
+                                                  "\u0027I\u0027ve been in this bay twenty-two years. Seen four major gangs try to take the Stockyard. All four are gone. I\u0027m still here. There\u0027s a lesson in there if you want it.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Benedikt\u0027s eldest son has relapsed into a destructive pattern since the detention stint and Benedikt is quietly, desperately trying to find leverage or money or something to get him into a private rehabilitation program without it becoming public and destabilizing the shop",
+                        "Someone has been stripping Ferrogate transit vehicles of a very specific, very expensive navigation component and selling the parts to Benedikt through intermediariesâ€”he has just realized the components are from vehicles that haven\u0027t been decommissioned yet"
+                    ],
+    "narrative_function":  "Reliable fence for vehicle and cyberware components, local color anchor for the Stockyard, potential quest giver for the six-year-old unfinished business, good source of mechanical expertise and underworld pragmatism.",
+    "augmentations":  "Geneware cat ears (tabby, brown-gray, cosmetic). Left hand has a mechanical assist brace over the ring and pinky fingersâ€”industrial injury repair, basic model. Optical magnification implant in right eye for fine component work.",
+    "daily_life":  "Opens the bay at 0600, works through intake assessments on new acquisitions, manages three junior strippers, closes by 2100â€”occasionally later if a priority job comes in after dark.",
+    "affiliation":  "Independent, informal tribute arrangement with the Stockyard Compact (local protection collective)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  7,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  8,
+                                 "creativity":  5,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  5,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "patient",
+                               "skilled",
+                               "principled-within-limits",
+                               "quietly-dangerous",
+                               "paternal"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Pay what you promised, no exceptionsâ€”your word is the only capital that doesn\u0027t depreciate",
+                                              "Don\u0027t take anything that has a living person still attached to itâ€”strictly parts and property"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Address problem directly and plainly",
+                                                 "State consequences once, clearly, without theatrics",
+                                                 "Apply economic pressureâ€”stops buying from the offending party, notifies the Compact",
+                                                 "Calls in favors, does not personally engage in violence but does not prevent it"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally neutral, assessingâ€”prices them up before he speaks much",
+                                                   "friends":  "Warm in a gruff, practical way; expresses regard through reliability and remembered details"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Strips a component by hand, works quietly",
+                                                "medium":  "Sends his junior workers home early and works alone",
+                                                "high":  "Goes very still and very quiet, which his workers have learned to fear more than shouting"
+                                            },
+                       "contradictions":  [
+                                              "Prides himself on no violence yet is methodically preparing a situation that may end in it",
+                                              "Extremely fair in business, deeply unfair in his private calculation about Oyelaran"
+                                          ],
+                       "habits":  [
+                                      "Makes tea in a battered ceramic pot at exactly 0800 and 1400, does not offer it to people he doesn\u0027t trust",
+                                      "Wipes his tools individually at end of shift regardless of how tired he is"
+                                  ],
+                       "breaking_points":  [
+                                               "Any direct threat to his grandchildren",
+                                               "If his eldest son\u0027s situation becomes publicly humiliating or dangerous"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Geneware cat ears (tabby pattern, cosmetic)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Geneware cat ears (tabby pattern, cosmetic)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Mechanical finger brace (left ring and pinky, basic industrial repair model)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Mechanical finger brace (left ring and pinky, basic industrial repair model)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Optical magnification implant (right eye, fine-detail work configuration)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Optical magnification implant (right eye, fine-detail work configuration)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Dreamer":  0.9,
+                       "Seeker":  0.9,
+                       "Quick Study":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Stockyard",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 19: Started as a legitimate Ferrogate Transit maintenance apprentice on Axle Row",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 26: First gray-market parts dealâ€”sold components from a legitimately totaled vehicle on the side",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 33: Opened Bay 9 as a nominally legitimate salvage operation",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 42: The Oyelaran betrayal and his son\u0027s detention",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 45: Located Oyelaran under his new identity. Has been sitting on it since.",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Arcturus Defense Solutions AR-7 \u0027Mandate\u0027",
+                            "Tessera TK-5 Compact \u0027Clerk\u0027",
+                            "Forge-Smith Collective Ablonite Push Dagger \u0027Bone Key\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Arcturus Defense Solutions AR-7 \u0027Mandate\u0027",
+                                "Tessera TK-5 Compact \u0027Clerk\u0027"
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "The Stockyard",
+                             "The Unfinished Theorem",
+                             "Patience",
+                             "IRONLIMB Spectre SV-4 Stealth Arm",
+                             "The Pure Hand"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "North African (28.7%), Eastern European (20.7%), Middle Eastern (19.8%), South Asian (18.1%), and Sub-Saharan African (12.7%) ancestry creates a striking multifaceted phenotype. North African heritage contributes angular bone structure and facial proportions; Eastern European ancestry shapes build and defines cheekbones; Middle Eastern ancestry structures eye placement and adds depth; South Asian heritage brings warmth and refinement to facial planes; Sub-Saharan African ancestry enriches skin undertones and texture. The synthesis is a cosmopolitan face bearing the genetic signature of the Ubiquitous Diasporaâ€”a complex blend where no single ancestry dominates.",
+                                 "height_cm":  188,
+                                 "weight_kg":  98,
+                                 "build":  "Broad-shouldered and heavy-limbed, softened through the middle from years of sedentary work interspersed with bursts of physical labor. Thick forearms remain corded and powerful despite the overall stockiness.",
+                                 "hair_color":  "Dark brown with white streaking throughout",
+                                 "hair_style":  "Close-trimmed, kept neat but utilitarian",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Right eye: augmented with golden-amber optical overlay for magnification readout. Left eye: natural dark brown.",
+                                 "skin_tone":  "Deep warm brown with red-amber and olive undertonesâ€”a complex blend reflecting North African, Middle Eastern, South Asian, and Sub-Saharan African ancestry. Weathered and lined from decades in industrial environments, the skin carries warmth and depth that shifts subtly in different light.",
+                                 "complexion":  "Strong, angular features shaped by North African and Eastern European bone structure with Middle Eastern and South Asian heritage contributing to fuller lips, prominent cheekbones, and broader nose bridge. Heavy-featured, serious expression carved by forty-eight years under fluorescent and arc-light work lamps. Chemical burns across his hands have not reached his face, but the knuckles and dorsal hand surfaces show pale scar tissue in fine cross-hatch patterns that contrast against the deeper skin tone.",
+                                 "distinguishing_marks":  [
+                                                              "Chemical burn scarring across the dorsal surfaces of both hands in a fine cross-hatch pattern, pale against darker skin, sustained from industrial solvent exposure approximately 30 years prior.",
+                                                              "Faint circular burn mark on left forearm, approximately 3cm diameter, consistent with welding spark contact.",
+                                                              "Old laceration scar on right temple, barely visible beneath close-trimmed hair, approximately 8cm in length."
+                                                          ],
+                                 "visible_augmentations":  "Geneware cat ears with tabby patterning in brown and gray, positioned naturally on the skull. Left hand fitted with a mechanical assist brace over the ring and pinky fingersâ€”utilitarian industrial model in brushed steel, no cosmetic finishing. Right eye displays a faint amber-gold luminescence when active during precision work, with subtle readout flicker visible in low light.",
+                                 "posture_movement":  "Moves with deliberate efficiency, no wasted motion. Stands with weight balanced slightly forward, as if always ready to lean into work. Keeps his hands visible and in constant, purposeful motionâ€”a man comfortable with tools. His gait is measured and confident, the movement pattern of someone who has never questioned his competence.",
+                                 "clothing_style":  "Heavy canvas coveralls in rotating solid colors (tan, slate gray, dark green, ochre)â€”always the same cut, always worn-in and bearing grease stains that no amount of washing fully removes. Sleeves perpetually rolled to mid-forearm. Pockets deliberately overstuffed with precision tools, small wrenches, calipers, and forgotten microchips. Steel-toed work boots, practical and scuffed. No jewelry except a simple band-style watch with a cracked crystal on his left wrist. Tier 3-4 working aestheticâ€”quality materials chosen for durability, not aesthetics."
+                             },
+    "image_prompt":  "Chie Thakur, 188cm industrial mechanic with deep warm brown skin bearing North African, Eastern European, Middle Eastern, South Asian, and Sub-Saharan African heritage. Heavy-featured angular face weathered from decades under work lamps, dark brown eyes with right eye augmented golden-amber optical overlay. Dark brown hair with white streaking, close-trimmed. Geneware tabby cat ears in brown-gray. Broad shoulders, stocky build with thick corded forearms. Chemical burn scarring visible on both hands in pale cross-hatch patterns against deeper skin. Left hand with brushed steel mechanical assist brace. Wearing worn tan canvas coveralls with rolled sleeves, pockets full of tools and calipers, steel-toed boots, cracked-crystal watch. Measured confident posture, hands visible and purposeful. Serious expression. GLMZ workshop setting, arc lighting and fluorescent work lamps casting warm and cool shadows, industrial environment with tool benches and machinery visible behind. Photorealistic, gritty industrial aesthetic, deep shadow and practical lighting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "North African":  28.7,
+                             "Eastern European":  20.7,
+                             "Middle Eastern":  19.8,
+                             "South Asian":  18.1,
+                             "Sub-Saharan African":  12.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "North African":  {
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  6.6,
+                                                                      "Sudanese":  13.8
+                                                                  },
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  6.6,
+                                                                  "Tunisian":  1.7
+                                                              }
+                                              },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  8.9
+                                                                     },
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  1.8
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Bulgarian":  10
+                                                                      }
+                                                 },
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Palestinian":  10.5
+                                                                      },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  9.3
+                                                               }
+                                               },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  18.1
+                                                           }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Gabonese":  10.2
+                                                                            },
+                                                        "East African":  {
+                                                                             "Ethiopian":  2.5
+                                                                         }
+                                                    }
+                        },
+    "tier":  "1"
 }

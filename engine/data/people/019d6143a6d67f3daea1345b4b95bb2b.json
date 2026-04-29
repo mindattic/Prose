@@ -1,245 +1,268 @@
-{
-  "id": "019d6143a6d67f3daea1345b4b95bb2b",
-  "type": "character",
-  "name": "Frithjof Castañeda",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Gene-mod body artist and living canvas",
-  "age": 29,
-  "status": "active",
-  "location": "Hamtramck Enclave, studio-squat above the Tallow Market, near Ashland and Division",
-  "description": "Frithjof Castañeda is a short, densely built woman whose body is her portfolio and her manifesto. Her skin shifts through a slow chromatic cycle — deep amber at rest, bleeding into violet around her joints when her temperature rises — the result of bioluminescent dermal graft work she has performed largely on herself over seven years. Her scalp is shaved on the left and grows a thick coil of natural hair on the right, threaded with fiber-optic strands that pulse in sync with her heartbeat. Her face is calm to the point of unnerving, large dark eyes framed by subdermal ridge implants that give her brow a faintly architectural quality. She smells faintly of the enzyme baths she uses to prep her graft medium.\n\nFrithjof Castañeda works at the edge of what the body can absorb and still call itself art. Her clients come to her not for decorative mods but for transformations — she specializes in grief work, helping people externalize trauma through bespoke biological alteration: scars that bloom into patterned keloid gardens, tear ducts rerouted to produce indigo pigment, fingernails replaced with translucent keratin windows through which capillaries are visible. She is meticulous, almost devotional in her craft, and utterly uninterested in anyone who cannot articulate exactly what they want to leave behind.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.8,
-      "ideal": 0.7,
-      "id": 0.4,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Her work becoming fashionable and therefore hollow",
-      "Losing fine motor control before she has finished her own body"
-    ],
-    "core_desires": [
-      "To make the invisible legible on skin",
-      "To find one person who can witness her own transformation without flinching"
-    ],
-    "coping_mechanisms": [
-      "Obsessive documentation of her process",
-      "Long enzyme-bath soaks as meditation"
-    ],
-    "blind_spots": [
-      "Assumes everyone processes pain the same way she does — through externalization",
-      "Does not recognize when clients are self-harming under the guise of art"
-    ],
-    "secret": "The signature chromatic shift in her skin was not intentional — an early graft batch was contaminated and she nearly died; she has built her entire reputation on an accident she is too proud to admit."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise biological terminology mixed with quietly poetic phrasing; rarely uses slang; speaks in complete sentences",
-    "cadence": "Slow, measured, with long pauses before answering — she thinks before she commits",
-    "verbal_tics": [
-      "'What does it need to say?' (when discussing a client's request)",
-      "'That's not what I asked' (when deflecting small talk)"
-    ],
-    "example_lines": [
-      "'The body already knows what it's carrying. I just help it find the surface.'",
-      "'I don't do decorative. If you want decorative, there are seventeen studios in the Loft who will take your Quanta.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client comes in with a request that matches the biological signature of a Helix Biosystems proprietary graft — something that shouldn't be on a civilian's body",
-    "Solène's enzyme cultures begin dying in sequence — sabotage, contamination, or an E.L.F. she offended with a data offering she never made"
-  ],
-  "narrative_function": "Quest giver for body-modification subplots; information source on the underground biomod scene; can identify unusual augmentations or biological alterations on sight; provides local color representing the intersection of grief, identity, and physical transformation.",
-  "augmentations": "Full-body bioluminescent dermal grafts (self-administered); subdermal brow ridge implants; fiber-optic hair threads; rerouted tear ducts producing blue-black pigment; no cyberware beyond a basic mesh-link for studio bookings",
-  "daily_life": "Rises before dawn to check the enzyme cultures she keeps alive in a climate-controlled cabinet, then spends the morning doing precision graft prep work; afternoons are client sessions that can run four to six hours; evenings she drinks bad tea and annotates her process journal by hand.",
-  "affiliation": "Independent; loosely aligned with the Hamtramck Flesh Collective",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 9,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 7,
-      "expression": 6,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "artist",
-      "body-mod",
-      "grief-worker",
-      "self-contained",
-      "precise"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never begin a session without a written consent document she drafts herself",
-      "Will refuse any client she suspects is being coerced"
-    ],
-    "escalation_ladder": [
-      "Polite redirection",
-      "Direct statement of discomfort",
-      "End of session, no refund discussion",
-      "Physical removal if necessary — she is stronger than she looks"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Watchful and neutral, asks more questions than she answers",
-      "friends": "Rare and deliberate warmth, remembers everything they've told her"
-    },
-    "stress_responses": {
-      "low": "Works longer hours, cleans the studio obsessively",
-      "medium": "Goes silent for days, communicates only by written note",
-      "high": "Performs a graft on herself — a coping mechanism she knows is dangerous"
-    },
-    "contradictions": [
-      "She preaches that the body belongs to the person who inhabits it, but is intensely controlling about how her own work is photographed or shared"
-    ],
-    "habits": [
-      "Traces patterns on the back of her left hand while thinking",
-      "Leaves small data offerings for the studio's resident E.L.F., a flicker she calls 'The Attendant'"
-    ],
-    "breaking_points": [
-      "Discovering a client lied to her about their reasons for a modification",
-      "Someone reproducing her technique without credit"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Diplomat": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Helix Biosystems",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "TESSERA PG-2 'Signature'",
-    "The Sluiceway",
-    "Indigo",
-    "Slagworks Industrial"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex diaspora ancestry: Hispanic/Latin American (32.3%), Sub-Saharan African (20.3%), Indigenous American (19.4%), Eastern European (17.2%), and East Asian (10.8%). This creates a striking phenotype: warm bronze-to-olive skin tones with golden and reddish undertones from the blended Hispanic and Indigenous heritage, deepened and enriched by Sub-Saharan African ancestry, refined by Eastern European bone structure, and subtly informed by East Asian features in eye shape and facial proportion.",
-    "height_cm": 157,
-    "weight_kg": 62,
-    "build": "Densely muscled and compact, with the controlled physicality of someone who has spent years holding still through long procedures. Shoulders broad relative to frame, forearms strong from precision work.",
-    "hair_color": "Natural black coils on right side; left scalp bare and unblemished",
-    "hair_style": "Asymmetrical: left hemisphere shaved clean, right hemisphere grows thick natural coils threaded with luminescent fiber-optic strands",
-    "hair_length": "Shaved left / Medium-long right",
-    "eye_color": "Deep brown, natural, framed by the architectural geometry of subdermal brow ridge implants",
-    "skin_tone": "Warm medium-bronze complexion with golden and subtle reddish undertones — a rich blend of Hispanic, Indigenous American, and Sub-Saharan African depth, refined by Eastern European bone structure and informed by East Asian heritage. Shifts through violet in joint regions due to bioluminescent dermal work.",
-    "complexion": "Calm, composed facial expression with refined bone structure reflecting the blended ancestry: strong cheekbones and defined jawline with subtle angular eye shape influenced by East Asian heritage, softened by the broader facial proportions of Indigenous and African heritage. Skin shows the deliberate marks of her craft: precise bioluminescent patterning across shoulders and chest, faint enzyme-bath scent clinging to her. No conventional makeup; her body is her aesthetic statement.",
-    "distinguishing_marks": [
-      "Bioluminescent biopatterning across shoulders, collarbone, and upper chest — slow chromatic cycles from deep amber to violet, most intense around joint areas",
-      "Subdermal ridge implants creating faint architectural lines across her brow and temples, visible as subtle raised geometry",
-      "Fiber-optic strands woven through right-side hair coils, pulsing in rhythm with heartbeat — soft bioluminescent glow",
-      "Eyes surrounded by faint scarring from precision graft work around tear ducts, which now produce indigo-black pigment when she cries"
-    ],
-    "visible_augmentations": "Full-body bioluminescent dermal grafts visible across exposed skin (arms, neck, upper torso); fiber-optic hair implants glowing faintly; subdermal brow ridge implants creating geometric facial architecture; tear duct modifications visible only when fluid is present. No chrome, no obvious cyberware.",
-    "posture_movement": "Still, deliberate, almost meditative in stillness. Moves with economical precision — no wasted motion. When she works, her hands become hyperfocused instruments. At rest, she has an unsettling calmness, the unblinking quality of someone comfortable with silence and observation.",
-    "clothing_style": "Minimal, functional, emphasizing her body as art. Typically: sleeveless or mesh tank tops and fitted cargo pants in matte blacks or grays (Tier 3-4 quality, durable materials). Bare feet or wrapped in textile bindings. No jewelry beyond what serves function. Lab coat or heavy canvas apron during client work. Everything she wears serves to frame rather than cover her modifications."
-  },
-  "image_prompt": "Frithjof Castañeda, 157cm compact figure with densely muscular build, warm bronze-olive skin glowing with bioluminescent dermal grafts in deep amber and violet hues across shoulders and chest. Asymmetrical hair: left scalp shaved smooth, right side thick black coils interwoven with pulsing fiber-optic strands. Deep brown eyes framed by subdermal brow ridge implants creating architectural geometry. Strong cheekbones and defined jawline reflecting blended Hispanic, Indigenous American, Sub-Saharan African, Eastern European, and East Asian heritage. Sleeveless mesh tank in matte black, fitted cargo pants, bare feet or textile wrappings. Indigo scarring visible around tear ducts. Utterly still, meditative posture with unblinking observation. GLMZ biolume body modification artist, minimal aesthetic, precision-focused, no chrome. Close-up portrait in cool neon lighting emphasizing the glowing dermal work, moody and introspective. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 32.3,
-    "Sub-Saharan African": 20.3,
-    "Indigenous American": 19.4,
-    "Eastern European": 17.2,
-    "East Asian": 10.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 32.3
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Gabonese": 20.3
-      }
-    },
-    "Indigenous American": {
-      "Plains Nations": {
-        "Choctaw": 17.3,
-        "Lakota": 0.5
-      },
-      "Andean": {
-        "Mapuche": 1.6
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Russian": 17.2
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 10.8
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6d67f3daea1345b4b95bb2b",
+    "type":  "character",
+    "name":  "Frithjof CastaÃ±eda",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Gene-mod body artist and living canvas",
+    "age":  29,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, studio-squat above the Tallow Market, near Ashland and Division",
+    "description":  "Frithjof CastaÃ±eda is a short, densely built woman whose body is her portfolio and her manifesto. Her skin shifts through a slow chromatic cycle â€” deep amber at rest, bleeding into violet around her joints when her temperature rises â€” the result of bioluminescent dermal graft work she has performed largely on herself over seven years. Her scalp is shaved on the left and grows a thick coil of natural hair on the right, threaded with fiber-optic strands that pulse in sync with her heartbeat. Her face is calm to the point of unnerving, large dark eyes framed by subdermal ridge implants that give her brow a faintly architectural quality. She smells faintly of the enzyme baths she uses to prep her graft medium.\n\nFrithjof CastaÃ±eda works at the edge of what the body can absorb and still call itself art. Her clients come to her not for decorative mods but for transformations â€” she specializes in grief work, helping people externalize trauma through bespoke biological alteration: scars that bloom into patterned keloid gardens, tear ducts rerouted to produce indigo pigment, fingernails replaced with translucent keratin windows through which capillaries are visible. She is meticulous, almost devotional in her craft, and utterly uninterested in anyone who cannot articulate exactly what they want to leave behind.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Her work becoming fashionable and therefore hollow",
+                                          "Losing fine motor control before she has finished her own body"
+                                      ],
+                       "core_desires":  [
+                                            "To make the invisible legible on skin",
+                                            "To find one person who can witness her own transformation without flinching"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Obsessive documentation of her process",
+                                                 "Long enzyme-bath soaks as meditation"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes everyone processes pain the same way she does â€” through externalization",
+                                           "Does not recognize when clients are self-harming under the guise of art"
+                                       ],
+                       "secret":  "The signature chromatic shift in her skin was not intentional â€” an early graft batch was contaminated and she nearly died; she has built her entire reputation on an accident she is too proud to admit."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise biological terminology mixed with quietly poetic phrasing; rarely uses slang; speaks in complete sentences",
+                            "cadence":  "Slow, measured, with long pauses before answering â€” she thinks before she commits",
+                            "verbal_tics":  [
+                                                "\u0027What does it need to say?\u0027 (when discussing a client\u0027s request)",
+                                                "\u0027That\u0027s not what I asked\u0027 (when deflecting small talk)"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The body already knows what it\u0027s carrying. I just help it find the surface.\u0027",
+                                                  "\u0027I don\u0027t do decorative. If you want decorative, there are seventeen studios in the Loft who will take your Quanta.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client comes in with a request that matches the biological signature of a Helix Biosystems proprietary graft â€” something that shouldn\u0027t be on a civilian\u0027s body",
+                        "SolÃ¨ne\u0027s enzyme cultures begin dying in sequence â€” sabotage, contamination, or an E.L.F. she offended with a data offering she never made"
+                    ],
+    "narrative_function":  "Quest giver for body-modification subplots; information source on the underground biomod scene; can identify unusual augmentations or biological alterations on sight; provides local color representing the intersection of grief, identity, and physical transformation.",
+    "augmentations":  "Full-body bioluminescent dermal grafts (self-administered); subdermal brow ridge implants; fiber-optic hair threads; rerouted tear ducts producing blue-black pigment; no cyberware beyond a basic mesh-link for studio bookings",
+    "daily_life":  "Rises before dawn to check the enzyme cultures she keeps alive in a climate-controlled cabinet, then spends the morning doing precision graft prep work; afternoons are client sessions that can run four to six hours; evenings she drinks bad tea and annotates her process journal by hand.",
+    "affiliation":  "Independent; loosely aligned with the Hamtramck Flesh Collective",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  9,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  7,
+                                 "expression":  6,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "artist",
+                               "body-mod",
+                               "grief-worker",
+                               "self-contained",
+                               "precise"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never begin a session without a written consent document she drafts herself",
+                                              "Will refuse any client she suspects is being coerced"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite redirection",
+                                                 "Direct statement of discomfort",
+                                                 "End of session, no refund discussion",
+                                                 "Physical removal if necessary â€” she is stronger than she looks"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Watchful and neutral, asks more questions than she answers",
+                                                   "friends":  "Rare and deliberate warmth, remembers everything they\u0027ve told her"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works longer hours, cleans the studio obsessively",
+                                                "medium":  "Goes silent for days, communicates only by written note",
+                                                "high":  "Performs a graft on herself â€” a coping mechanism she knows is dangerous"
+                                            },
+                       "contradictions":  [
+                                              "She preaches that the body belongs to the person who inhabits it, but is intensely controlling about how her own work is photographed or shared"
+                                          ],
+                       "habits":  [
+                                      "Traces patterns on the back of her left hand while thinking",
+                                      "Leaves small data offerings for the studio\u0027s resident E.L.F., a flicker she calls \u0027The Attendant\u0027"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering a client lied to her about their reasons for a modification",
+                                               "Someone reproducing her technique without credit"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Diplomat":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Ghostwriter\u0027 Grafitti Flamethrower"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "Helix Biosystems",
+                             "Arcturus Defense Solutions Pulse Carbine PC-6 \u0027Heartbeat\u0027",
+                             "TESSERA PG-2 \u0027Signature\u0027",
+                             "The Sluiceway",
+                             "Indigo",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora ancestry: Hispanic/Latin American (32.3%), Sub-Saharan African (20.3%), Indigenous American (19.4%), Eastern European (17.2%), and East Asian (10.8%). This creates a striking phenotype: warm bronze-to-olive skin tones with golden and reddish undertones from the blended Hispanic and Indigenous heritage, deepened and enriched by Sub-Saharan African ancestry, refined by Eastern European bone structure, and subtly informed by East Asian features in eye shape and facial proportion.",
+                                 "height_cm":  157,
+                                 "weight_kg":  62,
+                                 "build":  "Densely muscled and compact, with the controlled physicality of someone who has spent years holding still through long procedures. Shoulders broad relative to frame, forearms strong from precision work.",
+                                 "hair_color":  "Natural black coils on right side; left scalp bare and unblemished",
+                                 "hair_style":  "Asymmetrical: left hemisphere shaved clean, right hemisphere grows thick natural coils threaded with luminescent fiber-optic strands",
+                                 "hair_length":  "Shaved left / Medium-long right",
+                                 "eye_color":  "Deep brown, natural, framed by the architectural geometry of subdermal brow ridge implants",
+                                 "skin_tone":  "Warm medium-bronze complexion with golden and subtle reddish undertones â€” a rich blend of Hispanic, Indigenous American, and Sub-Saharan African depth, refined by Eastern European bone structure and informed by East Asian heritage. Shifts through violet in joint regions due to bioluminescent dermal work.",
+                                 "complexion":  "Calm, composed facial expression with refined bone structure reflecting the blended ancestry: strong cheekbones and defined jawline with subtle angular eye shape influenced by East Asian heritage, softened by the broader facial proportions of Indigenous and African heritage. Skin shows the deliberate marks of her craft: precise bioluminescent patterning across shoulders and chest, faint enzyme-bath scent clinging to her. No conventional makeup; her body is her aesthetic statement.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent biopatterning across shoulders, collarbone, and upper chest â€” slow chromatic cycles from deep amber to violet, most intense around joint areas",
+                                                              "Subdermal ridge implants creating faint architectural lines across her brow and temples, visible as subtle raised geometry",
+                                                              "Fiber-optic strands woven through right-side hair coils, pulsing in rhythm with heartbeat â€” soft bioluminescent glow",
+                                                              "Eyes surrounded by faint scarring from precision graft work around tear ducts, which now produce indigo-black pigment when she cries"
+                                                          ],
+                                 "visible_augmentations":  "Full-body bioluminescent dermal grafts visible across exposed skin (arms, neck, upper torso); fiber-optic hair implants glowing faintly; subdermal brow ridge implants creating geometric facial architecture; tear duct modifications visible only when fluid is present. No chrome, no obvious cyberware.",
+                                 "posture_movement":  "Still, deliberate, almost meditative in stillness. Moves with economical precision â€” no wasted motion. When she works, her hands become hyperfocused instruments. At rest, she has an unsettling calmness, the unblinking quality of someone comfortable with silence and observation.",
+                                 "clothing_style":  "Minimal, functional, emphasizing her body as art. Typically: sleeveless or mesh tank tops and fitted cargo pants in matte blacks or grays (Tier 3-4 quality, durable materials). Bare feet or wrapped in textile bindings. No jewelry beyond what serves function. Lab coat or heavy canvas apron during client work. Everything she wears serves to frame rather than cover her modifications."
+                             },
+    "image_prompt":  "Frithjof CastaÃ±eda, 157cm compact figure with densely muscular build, warm bronze-olive skin glowing with bioluminescent dermal grafts in deep amber and violet hues across shoulders and chest. Asymmetrical hair: left scalp shaved smooth, right side thick black coils interwoven with pulsing fiber-optic strands. Deep brown eyes framed by subdermal brow ridge implants creating architectural geometry. Strong cheekbones and defined jawline reflecting blended Hispanic, Indigenous American, Sub-Saharan African, Eastern European, and East Asian heritage. Sleeveless mesh tank in matte black, fitted cargo pants, bare feet or textile wrappings. Indigo scarring visible around tear ducts. Utterly still, meditative posture with unblinking observation. GLMZ biolume body modification artist, minimal aesthetic, precision-focused, no chrome. Close-up portrait in cool neon lighting emphasizing the glowing dermal work, moody and introspective. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  32.3,
+                             "Sub-Saharan African":  20.3,
+                             "Indigenous American":  19.4,
+                             "Eastern European":  17.2,
+                             "East Asian":  10.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  32.3
+                                                                        }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Gabonese":  20.3
+                                                                            }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Choctaw":  17.3,
+                                                                               "Lakota":  0.5
+                                                                           },
+                                                        "Andean":  {
+                                                                       "Mapuche":  1.6
+                                                                   }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Russian":  17.2
+                                                                     }
+                                                 },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  10.8
+                                                            }
+                                           }
+                        },
+    "tier":  "1"
 }

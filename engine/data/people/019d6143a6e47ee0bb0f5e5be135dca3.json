@@ -1,302 +1,333 @@
-{
-  "id": "019d6143a6e47ee0bb0f5e5be135dca3",
-  "rating": 80,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Ximena Shin",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Gang prospect (junior), street kid, age-of-prospect stage",
-  "age": 14,
-  "status": "active",
-  "location": "The Narrows, Copperhead, near Armitage and Milwaukee",
-  "description": "Ximena Shin is built square and solid for fourteen, with deep umber skin, a wide nose, and the kind of stillness that comes from having learned early that movement attracts attention. He has a jagged scar through his left eyebrow from a fall at nine that he tells different stories about depending on who\u0027s asking. His hair is cut very close, sometimes faded with a borrowed trimmer into patterns he changes every few weeks. He has no augmentations \u2014 the prospect stage of the Copperhead Rakers doesn\u0027t pay enough for mods \u2014 but wears a red-and-copper braided wristband that marks him as a junior affiliate.\n\nXimena Shin is not stupid, which is the thing that makes his situation complicated. He knows exactly what being a gang prospect means \u2014 he has watched older boys from his building take the same path and where most of them ended up. He\u0027s not naive about it. He is there because his mother is ill, his UBC stipend is \u03A6120, and the Rakers pay him \u03A680-100 a month to do things that are mostly standing around looking available and occasionally moving small packages. He has no plan B he believes in. He prays aggressively to every ELF shrine on his block \u2014 he lights more offerings than anyone in his building \u2014 because he has decided that if anything supernatural is going to help him, he needs to be owed.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.6,
-      "mask": 0.5,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "his mother dying before he can get her somewhere better",
-      "becoming indistinguishable from the older Rakers he privately pities"
-    ],
-    "core_desires": [
-      "enough money that his mother doesn\u0027t have to worry \u2014 a specific number: \u03A6500 in savings",
-      "to be respected without having to hurt someone to earn it"
-    ],
-    "coping_mechanisms": [
-      "ELF devotion (transactional \u2014 he bargains rather than worships)",
-      "humor as deflection, particularly self-deprecating",
-      "compartmentalization \u2014 the part of him doing gang work and the part of him cooking for his mother are sealed from each other"
-    ],
-    "blind_spots": [
-      "his belief that he can leave the Rakers cleanly when he\u0027s ready \u2014 the gang\u0027s investment in him increases every month",
-      "he is being watched more carefully than he knows by a senior Raker who sees potential for advancement, not exit"
-    ],
-    "secret": "Two weeks ago he was tasked with delivering a package and saw it opened at the destination \u2014 it contained body-modification tools that he recognized as surgical grade. He doesn\u0027t know what the Rakers are doing with surgical equipment, but he\u0027s been told nothing and he\u0027s afraid asking would be worse than not knowing. He\u0027s been leaving triple offerings at the ELF shrines since."
-  },
-  "speech_patterns": {
-    "vocabulary": "Copperhead street slang mixed with his mother\u0027s Ghanaian French-derived home language \u2014 code-switches constantly. Economical with words in public, much more verbal at home.",
-    "cadence": "Flat and measured in public; faster and more expressive privately.",
-    "verbal_tics": [
-      "\u0027Honestly though.\u0027",
-      "Clicks his tongue before disagreeing with something",
-      "\u0027We\u0027ll see.\u0027"
-    ],
-    "example_lines": [
-      "\u0027Honestly though, I\u0027m not trying to be here in five years. I got a number. I hit the number, I\u0027m gone. Simple.\u0027",
-      "\u0027You want me to tell you I\u0027m fine, I\u0027m fine. You want the other answer, that\u0027s gonna cost you something.\u0027"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The surgical equipment delivery \u2014 he knows something is wrong and doesn\u0027t know who to tell or whether telling is survivable. He\u0027s been trying to find out what it\u0027s for through careful observation and is in over his head.",
-    "A social worker from Hough Reclamation has been making rounds in Copperhead and specifically asked after S\u00E9raphin by name \u2014 not to turn him in, but because someone flagged his school records (he was a good student until 13) and wants to offer him a conditional alternative program. He doesn\u0027t know yet. His Raker handler does."
-  ],
-  "narrative_function": "Human face of the gang-prospect pipeline \u2014 shows how ordinary children end up in dangerous affiliations through entirely comprehensible economics. Can be a sympathetic quest-giver, a moral weight in stories about the Narrows, or a character who can be helped or lost depending on player choices.",
-  "augmentations": "None. Gang-issued red-and-copper wristband (affiliation marker, not augmentation).",
-  "daily_life": "Morning at home helping his mother with whatever she needs; mid-morning to evening on Raker corner standing duty or package runs; evenings back home, cooking if there\u0027s anything to cook, praying at the ELF shrines in the stairwell.",
-  "affiliation": "Copperhead Rakers (gang junior prospect, Tier 1); mother",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 6,
-      "vitality": 7,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 7,
-      "expression": 5,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -1,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 0,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "gang-adjacent",
-      "caretaker",
-      "elf-devotee",
-      "compartmentalizer",
-      "trapped-by-economics",
-      "hard-line-intact"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Don\u0027t volunteer information \u2014 answer what\u0027s asked, nothing more",
-      "Keep his mother out of everything. Her name is never mentioned in Raker contexts",
-      "Don\u0027t do anything that requires hurting someone directly \u2014 he\u0027s held this line for fourteen months"
-    ],
-    "escalation_ladder": [
-      "Deflect and go quiet",
-      "Make himself useful in a different direction \u2014 redirect attention",
-      "Warn someone he trusts if he thinks they\u0027re in danger",
-      "Flee the situation and figure it out later"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Watchful, neutral, performs mild boredom",
-      "friends": "Genuinely warm, quick-humored, shows a kind of tenderness he\u0027d be mortified to have seen in public"
-    },
-    "stress_responses": {
-      "low": "More ELF shrine offerings",
-      "medium": "Gets very quiet and eats less",
-      "high": "Finds a reason to go home and check on his mother \u2014 physical grounding in something he knows is real"
-    },
-    "contradictions": [
-      "Insists he has a clean exit plan while doing everything that makes exit harder each month"
-    ],
-    "habits": [
-      "Lights an ELF data offering every morning without fail",
-      "Counts money obsessively against his \u03A6500 target",
-      "Cooks elaborate meals when he can afford to \u2014 it\u0027s the only thing that\u0027s completely his"
-    ],
-    "breaking_points": [
-      "Being ordered to physically hurt someone \u2014 he has a hard line he hasn\u0027t had to test yet",
-      "His mother finding out what he\u0027s doing \u2014 not the law, not the gang. Her."
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Copperhead to a Ghanaian-Kazakh mother; father left when he was three",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Mother\u0027s illness begins \u2014 respiratory condition linked to Copperhead air filtration failures",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "School attendance collapses as he takes on more home responsibilities; Rakers begin recruitment approach",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Officially becomes a Copperhead Rakers junior prospect; begins earning \u03A680-100/month",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Witnesses surgical equipment delivery; begins compulsive ELF shrine offerings; social worker inquiry begins circulating",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Complex pan-global ancestry: Hispanic/Latin American (35.4%) provides warm golden undertones and structural features; East Asian (20.6%) contributes to eye shape and cheekbone definition; South Asian (17.8%) shapes facial structure and depth of complexion; Northern European (16.9%) adds subtle lightness to overall tone; Southeast Asian (6.6%) and Sub-Saharan African (2.7%) create nuanced warmth and undertone complexity. The combination produces a rich, multifaceted golden-brown complexion that shifts subtly depending on light.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Square and solid for his age, broad-shouldered with the compact density of a kid who hasn\u0027t yet grown into lanky adolescence. Muscular definition starting to show in his arms and chest from street labor.",
-    "hair_color": "Natural black",
-    "hair_style": "Very close fade with rotating geometric patterns trimmed in every few weeks using borrowed clippers; currently faded into a chevron pattern on the left side",
-    "hair_length": "Short",
-    "eye_color": "Deep brown",
-    "skin_tone": "Warm golden-brown with honey and amber undertones. The Hispanic/Latin American ancestry provides the golden warmth, East and Southeast Asian genetics add depth, South Asian heritage deepens the base tone, while traces of Northern European and African ancestry create subtle complexity\u2014a skin tone that reads as genuinely pan-global, with warm luminosity that catches light distinctly.",
-    "complexion": "Angular face with blended heritage structure: South Asian-influenced defined cheekbones and straight nose with subtle bridge prominence, tempered by East Asian eye shape with gentle epicanthic fold. Face is lean and sculpted. Warm, honey-toned golden-brown complexion across medium-deep base. Eyes are set with characteristic depth from South Asian ancestry but shaped by East Asian genetics. Skin is clear but weathered from street exposure, with the kind of natural radiance that comes from warm undertones. No facial hair.",
-    "distinguishing_marks": [
-      "Jagged scar running through left eyebrow, roughly 3cm long, white against golden-brown skin, from a fall at age nine \u2014 origin story changes depending on audience"
-    ],
-    "visible_augmentations": "None. Wears a red-and-copper braided wristband on left wrist as Copperhead Rakers junior affiliate marker \u2014 handwoven, worn daily, serves as visible gang affiliation.",
-    "posture_movement": "Moves with deliberate stillness and minimal gesture, having learned early that visibility attracts unwanted attention. Stands with weight balanced, ready to move. Eyes constantly scan surroundings without appearing to. Speaks quietly. Posture is alert but not aggressive \u2014 the stance of someone learning how to disappear in plain sight.",
-    "clothing_style": "Tier 5 street utility wear: grey or black synthetic hoodie (worn, functional, no branding), dark jeans or cargo pants with multiple pockets for package runs, scuffed knockoff sneakers. Layered for weather and quick movement. No corporate logos or aspirational styling \u2014 everything is practical and replaceable. Wears the red-and-copper wristband constantly. No jewelry beyond the band."
-  },
-  "image_prompt": "Ximena Shin, 16-year-old street courier in GLMZ Great Lakes Metropolitan Zone, warm golden-brown skin with honey undertones reflecting pan-global ancestry (Hispanic/Latin American, East Asian, South Asian heritage blend). Lean angular face with defined cheekbones, deep brown eyes with gentle East Asian eye shape, jagged white scar through left eyebrow. Short black hair with geometric chevron fade pattern. Wearing worn grey synthetic hoodie, dark cargo pants, scuffed sneakers. Red-and-copper braided wristband on left wrist marking Copperhead Rakers affiliation. Alert posture, minimal movement, constantly scanning. Urban neon-lit alley at dusk, streetlight catching warm skin tone and scar detail, moody neo-noir atmosphere, hyperrealistic portrait, cinematic lighting --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 35.4,
-    "East Asian": 20.6,
-    "South Asian": 17.8,
-    "Northern European": 16.9,
-    "Southeast Asian": 6.6,
-    "Sub-Saharan African": 2.7
-  },
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 17
-      },
-      "Caribbean": {
-        "Haitian": 10.4,
-        "Dominican": 5.4
-      },
-      "South American": {
-        "Peruvian": 2.6
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 20.6
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 17.8
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Welsh": 10.6,
-        "Irish": 1.6
-      },
-      "Scandinavian": {
-        "Swedish": 4.7
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 5.5
-      },
-      "Cambodian": {
-        "Khmer": 1.1
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Senegalese": 0.8,
-        "Nigerian": 0.3
-      },
-      "Southern African": {
-        "South African": 0.8
-      },
-      "East African": {
-        "Somali": 0.6,
-        "Rwandan": 0.2
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a6e47ee0bb0f5e5be135dca3",
+    "rating":  80,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Ximena Shin",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Gang prospect (junior), street kid, age-of-prospect stage",
+    "age":  14,
+    "status":  "active",
+    "location":  "The Narrows, Copperhead, near Armitage and Milwaukee",
+    "description":  "Ximena Shin is built square and solid for fourteen, with deep umber skin, a wide nose, and the kind of stillness that comes from having learned early that movement attracts attention. He has a jagged scar through his left eyebrow from a fall at nine that he tells different stories about depending on who\u0027s asking. His hair is cut very close, sometimes faded with a borrowed trimmer into patterns he changes every few weeks. He has no augmentations — the prospect stage of the Copperhead Rakers doesn\u0027t pay enough for mods — but wears a red-and-copper braided wristband that marks him as a junior affiliate.\n\nXimena Shin is not stupid, which is the thing that makes his situation complicated. He knows exactly what being a gang prospect means — he has watched older boys from his building take the same path and where most of them ended up. He\u0027s not naive about it. He is there because his mother is ill, his UBC stipend is Φ120, and the Rakers pay him Φ80-100 a month to do things that are mostly standing around looking available and occasionally moving small packages. He has no plan B he believes in. He prays aggressively to every ELF shrine on his block — he lights more offerings than anyone in his building — because he has decided that if anything supernatural is going to help him, he needs to be owed.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "his mother dying before he can get her somewhere better",
+                                          "becoming indistinguishable from the older Rakers he privately pities"
+                                      ],
+                       "core_desires":  [
+                                            "enough money that his mother doesn\u0027t have to worry — a specific number: Φ500 in savings",
+                                            "to be respected without having to hurt someone to earn it"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "ELF devotion (transactional — he bargains rather than worships)",
+                                                 "humor as deflection, particularly self-deprecating",
+                                                 "compartmentalization — the part of him doing gang work and the part of him cooking for his mother are sealed from each other"
+                                             ],
+                       "blind_spots":  [
+                                           "his belief that he can leave the Rakers cleanly when he\u0027s ready — the gang\u0027s investment in him increases every month",
+                                           "he is being watched more carefully than he knows by a senior Raker who sees potential for advancement, not exit"
+                                       ],
+                       "secret":  "Two weeks ago he was tasked with delivering a package and saw it opened at the destination — it contained body-modification tools that he recognized as surgical grade. He doesn\u0027t know what the Rakers are doing with surgical equipment, but he\u0027s been told nothing and he\u0027s afraid asking would be worse than not knowing. He\u0027s been leaving triple offerings at the ELF shrines since."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Copperhead street slang mixed with his mother\u0027s Ghanaian French-derived home language — code-switches constantly. Economical with words in public, much more verbal at home.",
+                            "cadence":  "Flat and measured in public; faster and more expressive privately.",
+                            "verbal_tics":  [
+                                                "\u0027Honestly though.\u0027",
+                                                "Clicks his tongue before disagreeing with something",
+                                                "\u0027We\u0027ll see.\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Honestly though, I\u0027m not trying to be here in five years. I got a number. I hit the number, I\u0027m gone. Simple.\u0027",
+                                                  "\u0027You want me to tell you I\u0027m fine, I\u0027m fine. You want the other answer, that\u0027s gonna cost you something.\u0027"
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The surgical equipment delivery — he knows something is wrong and doesn\u0027t know who to tell or whether telling is survivable. He\u0027s been trying to find out what it\u0027s for through careful observation and is in over his head.",
+                        "A social worker from Hough Reclamation has been making rounds in Copperhead and specifically asked after Séraphin by name — not to turn him in, but because someone flagged his school records (he was a good student until 13) and wants to offer him a conditional alternative program. He doesn\u0027t know yet. His Raker handler does."
+                    ],
+    "narrative_function":  "Human face of the gang-prospect pipeline — shows how ordinary children end up in dangerous affiliations through entirely comprehensible economics. Can be a sympathetic quest-giver, a moral weight in stories about the Narrows, or a character who can be helped or lost depending on player choices.",
+    "augmentations":  "None. Gang-issued red-and-copper wristband (affiliation marker, not augmentation).",
+    "daily_life":  "Morning at home helping his mother with whatever she needs; mid-morning to evening on Raker corner standing duty or package runs; evenings back home, cooking if there\u0027s anything to cook, praying at the ELF shrines in the stairwell.",
+    "affiliation":  "Copperhead Rakers (gang junior prospect, Tier 1); mother",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  6,
+                                   "vitality":  7,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  7,
+                                 "expression":  5,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -1,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  0,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "gang-adjacent",
+                               "caretaker",
+                               "elf-devotee",
+                               "compartmentalizer",
+                               "trapped-by-economics",
+                               "hard-line-intact"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Don\u0027t volunteer information — answer what\u0027s asked, nothing more",
+                                              "Keep his mother out of everything. Her name is never mentioned in Raker contexts",
+                                              "Don\u0027t do anything that requires hurting someone directly — he\u0027s held this line for fourteen months"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Deflect and go quiet",
+                                                 "Make himself useful in a different direction — redirect attention",
+                                                 "Warn someone he trusts if he thinks they\u0027re in danger",
+                                                 "Flee the situation and figure it out later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Watchful, neutral, performs mild boredom",
+                                                   "friends":  "Genuinely warm, quick-humored, shows a kind of tenderness he\u0027d be mortified to have seen in public"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More ELF shrine offerings",
+                                                "medium":  "Gets very quiet and eats less",
+                                                "high":  "Finds a reason to go home and check on his mother — physical grounding in something he knows is real"
+                                            },
+                       "contradictions":  [
+                                              "Insists he has a clean exit plan while doing everything that makes exit harder each month"
+                                          ],
+                       "habits":  [
+                                      "Lights an ELF data offering every morning without fail",
+                                      "Counts money obsessively against his Φ500 target",
+                                      "Cooks elaborate meals when he can afford to — it\u0027s the only thing that\u0027s completely his"
+                                  ],
+                       "breaking_points":  [
+                                               "Being ordered to physically hurt someone — he has a hard line he hasn\u0027t had to test yet",
+                                               "His mother finding out what he\u0027s doing — not the law, not the gang. Her."
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Copperhead to a Ghanaian-Kazakh mother; father left when he was three",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Mother\u0027s illness begins — respiratory condition linked to Copperhead air filtration failures",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "School attendance collapses as he takes on more home responsibilities; Rakers begin recruitment approach",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Officially becomes a Copperhead Rakers junior prospect; begins earning Φ80-100/month",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Witnesses surgical equipment delivery; begins compulsive ELF shrine offerings; social worker inquiry begins circulating",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Complex pan-global ancestry: Hispanic/Latin American (35.4%) provides warm golden undertones and structural features; East Asian (20.6%) contributes to eye shape and cheekbone definition; South Asian (17.8%) shapes facial structure and depth of complexion; Northern European (16.9%) adds subtle lightness to overall tone; Southeast Asian (6.6%) and Sub-Saharan African (2.7%) create nuanced warmth and undertone complexity. The combination produces a rich, multifaceted golden-brown complexion that shifts subtly depending on light.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Square and solid for his age, broad-shouldered with the compact density of a kid who hasn\u0027t yet grown into lanky adolescence. Muscular definition starting to show in his arms and chest from street labor.",
+                                 "hair_color":  "Natural black",
+                                 "hair_style":  "Very close fade with rotating geometric patterns trimmed in every few weeks using borrowed clippers; currently faded into a chevron pattern on the left side",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown",
+                                 "skin_tone":  "Warm golden-brown with honey and amber undertones. The Hispanic/Latin American ancestry provides the golden warmth, East and Southeast Asian genetics add depth, South Asian heritage deepens the base tone, while traces of Northern European and African ancestry create subtle complexity—a skin tone that reads as genuinely pan-global, with warm luminosity that catches light distinctly.",
+                                 "complexion":  "Angular face with blended heritage structure: South Asian-influenced defined cheekbones and straight nose with subtle bridge prominence, tempered by East Asian eye shape with gentle epicanthic fold. Face is lean and sculpted. Warm, honey-toned golden-brown complexion across medium-deep base. Eyes are set with characteristic depth from South Asian ancestry but shaped by East Asian genetics. Skin is clear but weathered from street exposure, with the kind of natural radiance that comes from warm undertones. No facial hair.",
+                                 "distinguishing_marks":  [
+                                                              "Jagged scar running through left eyebrow, roughly 3cm long, white against golden-brown skin, from a fall at age nine — origin story changes depending on audience"
+                                                          ],
+                                 "visible_augmentations":  "None. Wears a red-and-copper braided wristband on left wrist as Copperhead Rakers junior affiliate marker — handwoven, worn daily, serves as visible gang affiliation.",
+                                 "posture_movement":  "Moves with deliberate stillness and minimal gesture, having learned early that visibility attracts unwanted attention. Stands with weight balanced, ready to move. Eyes constantly scan surroundings without appearing to. Speaks quietly. Posture is alert but not aggressive — the stance of someone learning how to disappear in plain sight.",
+                                 "clothing_style":  "Tier 5 street utility wear: grey or black synthetic hoodie (worn, functional, no branding), dark jeans or cargo pants with multiple pockets for package runs, scuffed knockoff sneakers. Layered for weather and quick movement. No corporate logos or aspirational styling — everything is practical and replaceable. Wears the red-and-copper wristband constantly. No jewelry beyond the band."
+                             },
+    "image_prompt":  "Ximena Shin, 16-year-old street courier in GLMZ Great Lakes Metropolitan Zone, warm golden-brown skin with honey undertones reflecting pan-global ancestry (Hispanic/Latin American, East Asian, South Asian heritage blend). Lean angular face with defined cheekbones, deep brown eyes with gentle East Asian eye shape, jagged white scar through left eyebrow. Short black hair with geometric chevron fade pattern. Wearing worn grey synthetic hoodie, dark cargo pants, scuffed sneakers. Red-and-copper braided wristband on left wrist marking Copperhead Rakers affiliation. Alert posture, minimal movement, constantly scanning. Urban neon-lit alley at dusk, streetlight catching warm skin tone and scar detail, moody neo-noir atmosphere, hyperrealistic portrait, cinematic lighting --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  35.4,
+                             "East Asian":  20.6,
+                             "South Asian":  17.8,
+                             "Northern European":  16.9,
+                             "Southeast Asian":  6.6,
+                             "Sub-Saharan African":  2.7
+                         },
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  17
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Haitian":  10.4,
+                                                                              "Dominican":  5.4
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Peruvian":  2.6
+                                                                               }
+                                                        },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  20.6
+                                                          }
+                                           },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  17.8
+                                                               }
+                                            },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Welsh":  10.6,
+                                                                            "Irish":  1.6
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  4.7
+                                                                       }
+                                                  },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  5.5
+                                                                },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  1.1
+                                                                  }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Senegalese":  0.8,
+                                                                             "Nigerian":  0.3
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  0.8
+                                                                             },
+                                                        "East African":  {
+                                                                             "Somali":  0.6,
+                                                                             "Rwandan":  0.2
+                                                                         }
+                                                    }
+                        }
 }

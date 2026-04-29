@@ -1,382 +1,395 @@
-{
-  "id": "019d6143a6917a7ba89c007857e982bf",
-  "type": "character",
-  "name": "Arnav Truong",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Electronic and physical observation expert — surveillance specialist",
-  "age": 45,
-  "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
-  "description": "Arnav Truong is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 45, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Arnav Truong plans to keep it that way. She works as a surveillance specialist out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nArnav Truong has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.29,
-      "ideal": 0.61,
-      "id": 0.22,
-      "shadow": 0.82,
-      "mask": 0.18,
-      "ghost": 0.97
-    },
-    "core_fears": [
-      "Betrayal by someone they trust — the only currency that matters",
-      "Losing their edge to age — the body slows before the mind accepts it",
-      "The quiet — silence means something is about to go very wrong"
-    ],
-    "core_desires": [
-      "To protect the people in their district who can't protect themselves",
-      "A crew worth trusting — people who stay when the shooting starts",
-      "To build something that outlasts the next contract cycle"
-    ],
-    "coping_mechanisms": [
-      "Ritual — follows the same pre-job routine every time, superstition as structure",
-      "Planning — responds to chaos by making detailed contingency plans for everything",
-      "Violence — hits something when they can't process emotions, preferably something that deserves it"
-    ],
-    "blind_spots": [
-      "Believes their trauma makes them special instead of recognizing it as damage to manage",
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
-      "Assumes everyone has an angle because they always have an angle"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
-    "cadence": "Low and even — the vocal equivalent of still water.",
-    "verbal_tics": [
-      "Uses technical jargon for everything, including emotions",
-      "Whispers when angry — the quieter the voice, the worse the situation"
-    ],
-    "example_lines": [
-      "\"I've been watching you for three days. You should close your curtains.\"",
-      "\"Information is the only commodity that appreciates with age.\"",
-      "\"Everyone thinks they're careful. Nobody is careful enough.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Pare Hayashi-Amankwah's reputation — and a price for silence",
-    "A high-paying contract turns out to target someone Pare Hayashi-Amankwah owes a personal debt to",
-    "Pare Hayashi-Amankwah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
-  ],
-  "narrative_function": "Pare Hayashi-Amankwah functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster. Geneware muscle density treatment — looks natural, hits like chrome",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Independent — known in Old Harbor circles",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 10
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 5
-      },
-      "endurance": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 9
-      },
-      "reflexes": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 5
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 5
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 4
-      },
-      "willpower": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 5
-      },
-      "technical": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 10
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 5
-      },
-      "intimidation": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 10
-      },
-      "deception": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 8
-      },
-      "empathy": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.67,
-      "caution": 0.5,
-      "loyalty": 0.49,
-      "greed": 0.9,
-      "empathy": 0.13
-    },
-    "drives": [
-      "justice",
-      "protection",
-      "survival"
-    ],
-    "thresholds": {
-      "pain": 6,
-      "stress": 6,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "strategic thinking under pressure",
-      "natural leadership presence"
-    ],
-    "weaknesses": [
-      "poor impulse control in specific triggers",
-      "risk-averse to the point of missed opportunities",
-      "augmentation dependency — performance drops sharply if chrome malfunctions"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "surveillance specialist",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Always has an exit route planned before agreeing to any meeting"
-    ],
-    "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Projects confidence but makes decisions from a foundation of fear they've never examined",
-      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
-    ],
-    "habits": [
-      "Carries a specific caliber round as a lucky charm — has never fired it",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
-      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
-      "Never drinks anything they didn't see poured or open themselves"
-    ],
-    "breaking_points": [
-      "Being publicly exposed — name, face, address, all of it blown",
-      "Watching someone they trained or mentored die on a job they recommended"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Synthetic blood with oxygen-carrying nanites",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
-      "replaces": ""
-    },
-    {
-      "name": "Geneware muscle density treatment",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Geneware muscle density treatment — looks natural, hits like chrome",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7,
-    "Analyst": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Dockside",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Street-Custom Loaded Pipe 'Bell Ringer'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Nearfield",
-    "Lazarus LX-2 'Lab Rat'",
-    "The Pure Hand",
-    "Slagworks Industrial",
-    "Felix Roundtree"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Multiethnic blend with dominant Middle Eastern ancestry (36.9%) creating the foundational phenotype, substantially enriched by Hispanic/Latin American (18.9%), Southeast Asian (16.7%), and East Asian (14.0%) genetic contributions. Central Asian (7.7%) and Northern European (5.8%) elements add depth to facial structure and coloration. This genetic mosaic represents the Ubiquitous Diaspora's true form — features the warm olive-bronze complexion from Middle Eastern-Hispanic blending, with Southeast and East Asian ancestry contributing subtle eye geometry, prominent cheekbone architecture, and a refined bone structure that transcends simple regional categorization.",
-    "height_cm": 168,
-    "weight_kg": 78,
-    "build": "Stocky and solid with dense muscle mass from geneware treatment — compact frame with no wasted space, built like someone who absorbs impact rather than evades it",
-    "hair_color": "Black with premature silver threading at temples",
-    "hair_style": "Pulled back tight, practical — no flourish",
-    "hair_length": "Medium, cropped shoulder-length",
-    "eye_color": "Deep brown, alert and measuring",
-    "skin_tone": "Warm olive-bronze with subtle golden undertones — the product of Middle Eastern-Hispanic-Asian blending creating a complex, weathered patina. The skin displays the characteristic depth of multi-regional ancestry, with warm mid-tone base enriched by golden and bronze undertones from both Mediterranean and Asian genetic contributions.",
-    "complexion": "Strong, defined facial structure reflecting the synthesis of Middle Eastern prominence, Southeast Asian refinement, and East Asian geometry — high, sculpted cheekbones with subtle almond-shaping to the eye area, squared jaw with slight forward projection characteristic of Middle Eastern ancestry. The face shows the blended result: broader across the midface from Hispanic-Southeast Asian heritage, with defined bone structure from East and Central Asian lineage. Lined face with crow's feet and a permanent crease between the brows — weathered but not neglected, scars accepted as part of the landscape. Jaw set in resting neutrality. Minimal grooming beyond function.",
-    "distinguishing_marks": [
-      "Thin white scar running from left temple to cheekbone, old enough to fade but deep enough to catch light",
-      "Knuckles on both hands bear old fracture scars and keloid tissue, years of damage poorly healed",
-      "Faint chemical burn scars on inner right forearm, parallel lines suggesting intentional marking or accident with caustic materials",
-      "Small crescent-shaped scar on right collarbone, precise enough to suggest medical intervention rather than violence"
-    ],
-    "visible_augmentations": "Blood visible in veins with metallic chrome sheen running beneath the skin, most prominent at wrists, neck, and temple. Under strong light, the synthetic material has an almost oil-slick iridescence. Musculature unnaturally dense and defined despite stocky frame, giving compact, coiled appearance. No obvious external chrome, but physical presence suggests deep augmentation to anyone who knows what to look for.",
-    "posture_movement": "Economical and controlled — no wasted motion, no theatrical gestures. Stands with weight distributed, ready to move in any direction. Walks with deliberate placement, like someone used to moving through tight spaces and hostile terrain. Hands often rest in lap or at sides, not defensive but ready. Makes sustained eye contact with deliberate intensity, reading rather than performing.",
-    "clothing_style": "Tier 3-4 practical: dark synthetic fabrics, reinforced at stress points. Favors loose-fitting jackets with multiple interior pockets, cargo pants in charcoal or black, worn work boots with reinforced soles. No logos or identifying marks. Layers to accommodate temperature shifts and quick asset concealment. A single worn silver chain at neck — possibly religious, possibly sentimental, definitely not new. Old dockworker's watch on left wrist, actually functional rather than decorative. No jewelry beyond that. Clothing is maintained but not new — replaced when damaged, not when fashionable."
-  },
-  "image_prompt": "Arnav Truong, a 168cm compact muscular figure with warm olive-bronze skin and deep brown eyes, standing in GLMZ dockside setting. Black hair pulled back tight with silver threading at temples. Strong, defined facial structure with high cheekbones, subtle almond eye shape, and squared jaw — a global phenotype blending Middle Eastern, Hispanic, Southeast Asian, and East Asian heritage. Weathered face with crow's feet and frown line, accepting scars as landscape. Thin white scar visible from left temple to cheekbone. Metallic chrome sheen visible in veins at wrists and neck under neon light, unnaturally dense musculature. Wearing dark synthetic cargo pants, reinforced loose-fitting jacket with multiple pockets, worn work boots, old functional dockworker's watch on left wrist, simple worn silver chain at neck. Economical posture, weight distributed, ready stance. Standing in Great Lakes Metropolitan Zone dockside at night, moody neon lighting with industrial metal structures, rain-slicked surfaces reflecting chrome augmentations. Intense gaze, reading rather than performing. GLMZ 2200s aesthetic, gritty urban environment --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 36.9,
-    "Hispanic/Latin American": 18.9,
-    "Southeast Asian": 16.7,
-    "East Asian": 14,
-    "Central Asian": 7.7,
-    "Northern European": 5.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 9.8,
-        "Afghan Dari": 3.6
-      },
-      "Arab Gulf": {
-        "Emirati": 7.1
-      },
-      "Kurdish": {
-        "Kurdish": 16.4
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Cuban": 9.6,
-        "Puerto Rican": 5.3
-      },
-      "Mexican": {
-        "Mexican": 4
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 11.1
-      },
-      "Filipino": {
-        "Waray": 3.3,
-        "Cebuano": 2.3
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 9.1
-      },
-      "Chinese": {
-        "Sichuanese": 1.9
-      },
-      "Korean": {
-        "Korean": 3
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Mongolian": 1.4,
-        "Buryat": 2.7
-      },
-      "Turkic": {
-        "Kazakh": 2.4,
-        "Turkmen": 1.2
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Dutch": 4.1,
-        "Swiss German": 1.2
-      },
-      "British Isles": {
-        "English": 0.2,
-        "Irish": 0.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6917a7ba89c007857e982bf",
+    "type":  "character",
+    "name":  "Arnav Truong",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Electronic and physical observation expert â€” surveillance specialist",
+    "age":  45,
+    "status":  "active",
+    "location":  "Dockside â€” Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
+    "description":  "Arnav Truong is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 45, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible â€” synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster â€” and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name â€” that person is officially dead, and Arnav Truong plans to keep it that way. She works as a surveillance specialist out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nArnav Truong has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Betrayal by someone they trust â€” the only currency that matters",
+                                          "Losing their edge to age â€” the body slows before the mind accepts it",
+                                          "The quiet â€” silence means something is about to go very wrong"
+                                      ],
+                       "core_desires":  [
+                                            "To protect the people in their district who can\u0027t protect themselves",
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "To build something that outlasts the next contract cycle"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual â€” follows the same pre-job routine every time, superstition as structure",
+                                                 "Planning â€” responds to chaos by making detailed contingency plans for everything",
+                                                 "Violence â€” hits something when they can\u0027t process emotions, preferably something that deserves it"
+                                             ],
+                       "blind_spots":  [
+                                           "Believes their trauma makes them special instead of recognizing it as damage to manage",
+                                           "Mistakes pattern recognition for wisdom â€” sees connections that aren\u0027t there",
+                                           "Assumes everyone has an angle because they always have an angle"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Educated vocabulary wrapped in street delivery â€” the contrast is deliberate.",
+                            "cadence":  "Low and even â€” the vocal equivalent of still water.",
+                            "verbal_tics":  [
+                                                "Uses technical jargon for everything, including emotions",
+                                                "Whispers when angry â€” the quieter the voice, the worse the situation"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I\u0027ve been watching you for three days. You should close your curtains.\"",
+                                                  "\"Information is the only commodity that appreciates with age.\"",
+                                                  "\"Everyone thinks they\u0027re careful. Nobody is careful enough.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A former associate resurfaces with evidence that could destroy Pare Hayashi-Amankwah\u0027s reputation â€” and a price for silence",
+                        "A high-paying contract turns out to target someone Pare Hayashi-Amankwah owes a personal debt to",
+                        "Pare Hayashi-Amankwah\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad"
+                    ],
+    "narrative_function":  "Pare Hayashi-Amankwah functions as a connector â€” her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster. Geneware muscle density treatment â€” looks natural, hits like chrome",
+    "daily_life":  "Between contracts, maintains a cover identity â€” mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+    "affiliation":  "Independent â€” known in Old Harbor circles",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  4,
+                                                    "augmented":  2,
+                                                    "effective":  10
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  2,
+                                                   "effective":  5
+                                               },
+                                   "endurance":  {
+                                                     "base":  5,
+                                                     "augmented":  0,
+                                                     "effective":  9
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  8,
+                                                    "augmented":  1,
+                                                    "effective":  5
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  8,
+                                                      "augmented":  0,
+                                                      "effective":  5
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  2,
+                                                    "effective":  4
+                                                },
+                                 "willpower":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  5
+                                               },
+                                 "technical":  {
+                                                   "base":  6,
+                                                   "augmented":  2,
+                                                   "effective":  10
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  3,
+                                                  "augmented":  2,
+                                                  "effective":  5
+                                              },
+                                 "intimidation":  {
+                                                      "base":  3,
+                                                      "augmented":  2,
+                                                      "effective":  10
+                                                  },
+                                 "deception":  {
+                                                   "base":  4,
+                                                   "augmented":  2,
+                                                   "effective":  8
+                                               },
+                                 "empathy":  {
+                                                 "base":  3,
+                                                 "augmented":  0,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.67,
+                                      "caution":  0.5,
+                                      "loyalty":  0.49,
+                                      "greed":  0.9,
+                                      "empathy":  0.13
+                                  },
+                  "drives":  [
+                                 "justice",
+                                 "protection",
+                                 "survival"
+                             ],
+                  "thresholds":  {
+                                     "pain":  6,
+                                     "stress":  6,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "strategic thinking under pressure",
+                                    "natural leadership presence"
+                                ],
+                  "weaknesses":  [
+                                     "poor impulse control in specific triggers",
+                                     "risk-averse to the point of missed opportunities",
+                                     "augmentation dependency â€” performance drops sharply if chrome malfunctions"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "surveillance specialist",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Always has an exit route planned before agreeing to any meeting"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess â€” read the situation, identify threats and advantages",
+                                                 "2. Negotiate â€” try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate â€” make the cost of conflict clear",
+                                                 "4. Precision violence â€” surgical, targeted, minimal collateral",
+                                                 "5. Full engagement â€” overwhelming force, no half measures",
+                                                 "6. Emergency protocol â€” abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Professional and transactional. The relationship is defined by the contract and nothing else.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined",
+                                              "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
+                                          ],
+                       "habits":  [
+                                      "Carries a specific caliber round as a lucky charm â€” has never fired it",
+                                      "Arrives fifteen minutes early to everything â€” late once, nearly died, never again",
+                                      "Wears the same item of clothing for luck â€” a scarf, a glove, a specific pair of boots",
+                                      "Never drinks anything they didn\u0027t see poured or open themselves"
+                                  ],
+                       "breaking_points":  [
+                                               "Being publicly exposed â€” name, face, address, all of it blown",
+                                               "Watching someone they trained or mentored die on a job they recommended"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Synthetic blood with oxygen-carrying nanites",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Geneware muscle density treatment",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Geneware muscle density treatment â€” looks natural, hits like chrome",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Analyst":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Dockside",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027",
+                            "Street-Custom Loaded Pipe \u0027Bell Ringer\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Nearfield",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "The Pure Hand",
+                             "Slagworks Industrial",
+                             "Felix Roundtree"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Multiethnic blend with dominant Middle Eastern ancestry (36.9%) creating the foundational phenotype, substantially enriched by Hispanic/Latin American (18.9%), Southeast Asian (16.7%), and East Asian (14.0%) genetic contributions. Central Asian (7.7%) and Northern European (5.8%) elements add depth to facial structure and coloration. This genetic mosaic represents the Ubiquitous Diaspora\u0027s true form â€” features the warm olive-bronze complexion from Middle Eastern-Hispanic blending, with Southeast and East Asian ancestry contributing subtle eye geometry, prominent cheekbone architecture, and a refined bone structure that transcends simple regional categorization.",
+                                 "height_cm":  168,
+                                 "weight_kg":  78,
+                                 "build":  "Stocky and solid with dense muscle mass from geneware treatment â€” compact frame with no wasted space, built like someone who absorbs impact rather than evades it",
+                                 "hair_color":  "Black with premature silver threading at temples",
+                                 "hair_style":  "Pulled back tight, practical â€” no flourish",
+                                 "hair_length":  "Medium, cropped shoulder-length",
+                                 "eye_color":  "Deep brown, alert and measuring",
+                                 "skin_tone":  "Warm olive-bronze with subtle golden undertones â€” the product of Middle Eastern-Hispanic-Asian blending creating a complex, weathered patina. The skin displays the characteristic depth of multi-regional ancestry, with warm mid-tone base enriched by golden and bronze undertones from both Mediterranean and Asian genetic contributions.",
+                                 "complexion":  "Strong, defined facial structure reflecting the synthesis of Middle Eastern prominence, Southeast Asian refinement, and East Asian geometry â€” high, sculpted cheekbones with subtle almond-shaping to the eye area, squared jaw with slight forward projection characteristic of Middle Eastern ancestry. The face shows the blended result: broader across the midface from Hispanic-Southeast Asian heritage, with defined bone structure from East and Central Asian lineage. Lined face with crow\u0027s feet and a permanent crease between the brows â€” weathered but not neglected, scars accepted as part of the landscape. Jaw set in resting neutrality. Minimal grooming beyond function.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar running from left temple to cheekbone, old enough to fade but deep enough to catch light",
+                                                              "Knuckles on both hands bear old fracture scars and keloid tissue, years of damage poorly healed",
+                                                              "Faint chemical burn scars on inner right forearm, parallel lines suggesting intentional marking or accident with caustic materials",
+                                                              "Small crescent-shaped scar on right collarbone, precise enough to suggest medical intervention rather than violence"
+                                                          ],
+                                 "visible_augmentations":  "Blood visible in veins with metallic chrome sheen running beneath the skin, most prominent at wrists, neck, and temple. Under strong light, the synthetic material has an almost oil-slick iridescence. Musculature unnaturally dense and defined despite stocky frame, giving compact, coiled appearance. No obvious external chrome, but physical presence suggests deep augmentation to anyone who knows what to look for.",
+                                 "posture_movement":  "Economical and controlled â€” no wasted motion, no theatrical gestures. Stands with weight distributed, ready to move in any direction. Walks with deliberate placement, like someone used to moving through tight spaces and hostile terrain. Hands often rest in lap or at sides, not defensive but ready. Makes sustained eye contact with deliberate intensity, reading rather than performing.",
+                                 "clothing_style":  "Tier 3-4 practical: dark synthetic fabrics, reinforced at stress points. Favors loose-fitting jackets with multiple interior pockets, cargo pants in charcoal or black, worn work boots with reinforced soles. No logos or identifying marks. Layers to accommodate temperature shifts and quick asset concealment. A single worn silver chain at neck â€” possibly religious, possibly sentimental, definitely not new. Old dockworker\u0027s watch on left wrist, actually functional rather than decorative. No jewelry beyond that. Clothing is maintained but not new â€” replaced when damaged, not when fashionable."
+                             },
+    "image_prompt":  "Arnav Truong, a 168cm compact muscular figure with warm olive-bronze skin and deep brown eyes, standing in GLMZ dockside setting. Black hair pulled back tight with silver threading at temples. Strong, defined facial structure with high cheekbones, subtle almond eye shape, and squared jaw â€” a global phenotype blending Middle Eastern, Hispanic, Southeast Asian, and East Asian heritage. Weathered face with crow\u0027s feet and frown line, accepting scars as landscape. Thin white scar visible from left temple to cheekbone. Metallic chrome sheen visible in veins at wrists and neck under neon light, unnaturally dense musculature. Wearing dark synthetic cargo pants, reinforced loose-fitting jacket with multiple pockets, worn work boots, old functional dockworker\u0027s watch on left wrist, simple worn silver chain at neck. Economical posture, weight distributed, ready stance. Standing in Great Lakes Metropolitan Zone dockside at night, moody neon lighting with industrial metal structures, rain-slicked surfaces reflecting chrome augmentations. Intense gaze, reading rather than performing. GLMZ 2200s aesthetic, gritty urban environment --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  36.9,
+                             "Hispanic/Latin American":  18.9,
+                             "Southeast Asian":  16.7,
+                             "East Asian":  14,
+                             "Central Asian":  7.7,
+                             "Northern European":  5.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  9.8,
+                                                                   "Afghan Dari":  3.6
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Emirati":  7.1
+                                                                 },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  16.4
+                                                               }
+                                               },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Cuban":  9.6,
+                                                                              "Puerto Rican":  5.3
+                                                                          },
+                                                            "Mexican":  {
+                                                                            "Mexican":  4
+                                                                        }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  11.1
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Waray":  3.3,
+                                                                     "Cebuano":  2.3
+                                                                 }
+                                                },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  9.1
+                                                            },
+                                               "Chinese":  {
+                                                               "Sichuanese":  1.9
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  3
+                                                          }
+                                           },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  1.4,
+                                                                   "Buryat":  2.7
+                                                               },
+                                                  "Turkic":  {
+                                                                 "Kazakh":  2.4,
+                                                                 "Turkmen":  1.2
+                                                             }
+                                              },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Dutch":  4.1,
+                                                                       "Swiss German":  1.2
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "English":  0.2,
+                                                                            "Irish":  0.3
+                                                                        }
+                                                  }
+                        },
+    "tier":  "3"
 }

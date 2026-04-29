@@ -1,238 +1,259 @@
-{
-  "id": "019d6143a6dc75bd8d48e81c55b00ac2",
-  "type": "character",
-  "name": "Guilherme Adeyemi-Calvillo-Nwosu",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Truant message runner, Tier 1",
-  "age": 9,
-  "status": "active",
-  "location": "Blackpipe Corridor, near Milwaukee and Damen",
-  "description": "Guilherme Adeyemi-Calvillo-Nwosu is small even for nine, with the wiry toughness of a child raised on rationed calories and open air. Her skin is a deep warm brown, her hair a wild halo of tight curls she keeps stuffed under a salvaged Ferrogate Transit cap three sizes too large. She has a cosmetic mod she didn't choose — a faint bioluminescent ring around each iris, blue-green, that her mother installed before disappearing, supposedly to help her be seen in the dark tunnels under Blackpipe. She has not decided whether she loves it or hates it.\n\nGuilherme Adeyemi-Calvillo-Nwosu runs messages for anyone who pays her two Φ or more per delivery: small-time vendors, people who distrust the comm-net, the occasional ELF-shrine keeper who needs physical tokens carried between altars. She is deeply superstitious and leaves pinches of copper filings at every E.L.F. junction box she passes, convinced this is why she has never been caught. Her emotional range is vast but controlled — she laughs easily and cries silently. She is fiercely loyal to the three other children she sleeps near in a maintenance alcove off Corridor 7, and would walk into a burning block for any of them.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.5,
-      "id": 0.8,
-      "shadow": 0.2,
-      "mask": 0.4,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "being alone permanently",
-      "losing the three kids she considers family"
-    ],
-    "core_desires": [
-      "to find her mother or at least know what happened",
-      "to have a door that locks from the inside"
-    ],
-    "coping_mechanisms": [
-      "ritualistic ELF offerings",
-      "counting money repeatedly to feel grounded"
-    ],
-    "blind_spots": [
-      "assumes adults who are kind to her have an angle — misses genuine offers of help"
-    ],
-    "secret": "She knows exactly who took her mother — a mid-level Ferrogate Transit enforcer named Osei-something. She saw the badge number. She has said nothing to anyone because she does not know what to do with that information and is afraid that knowing is already dangerous."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped and functional, corridor-slang heavy, occasional Twi loanwords picked up from the shrine-keeper",
-    "cadence": "Fast when nervous, surprisingly deliberate when she's asking for something",
-    "verbal_tics": [
-      "starts sentences with 'Right so—'",
-      "says 'the Lights keep you' as goodbye"
-    ],
-    "example_lines": [
-      "Right so — two quanta, I get it there before the strips go amber, you don't ask what's in it. That's the deal.",
-      "The Lights kept me through the Sump flood so I figure I owe them something back. You got copper filings? Even shavings?"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She delivers a message and the recipient is dead when she arrives — now someone thinks she saw something",
-    "The badge number she memorized matches a Ferrogate official who has just been promoted and is visiting Blackpipe for an inspection"
-  ],
-  "narrative_function": "Local color and information vector — Sorrel has seen and overheard nearly everything that moves through Blackpipe Corridor. She can be a quest-giver by proxy, a warning system, or a way to introduce the neighborhood's texture.",
-  "augmentations": "Bioluminescent irises (cosmetic, installed by parent). No other mods.",
-  "daily_life": "Wakes before the overhead strips cycle to morning-white, eats whatever the shrine-keeper Adaeze leaves out, then runs circuits through Blackpipe picking up and delivering messages until dark-cycle when she returns to the alcove and counts her Quanta.",
-  "affiliation": "Independent; loosely tolerated by the Blackpipe vendor collective",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 7,
-      "expression": 4,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "street-smart",
-      "superstitious",
-      "loyal",
-      "observant",
-      "survivor"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "always complete the job — reputation is her only currency",
-      "never open a sealed message no matter how tempting"
-    ],
-    "escalation_ladder": [
-      "politely declines suspicious requests",
-      "runs if pressed",
-      "screams names of nearby vendors if cornered — she knows everyone"
-    ],
-    "interpersonal_modes": {
-      "strangers": "watchful and transactional, assesses threat within seconds",
-      "friends": "physically affectionate, shares food without being asked"
-    },
-    "stress_responses": {
-      "low": "hums tunelessly",
-      "medium": "fingers the cap brim repeatedly",
-      "high": "goes completely silent and still"
-    },
-    "contradictions": [
-      "fiercely independent but desperately needs the three alcove kids to be nearby to sleep"
-    ],
-    "habits": [
-      "leaves copper filings at every junction box",
-      "checks exit routes the moment she enters any space"
-    ],
-    "breaking_points": [
-      "harm to one of her three alcove companions"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Hustler": 0.9,
-    "Provider": 0.9,
-    "People Pleaser": 0.9,
-    "Generous Fool": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Blackpipe Corridor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "Ferrogate Transit",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Noir Dining",
-    "GLMZ",
-    "Kel Adeyemi-Strand",
-    "Arcturus KS-7 'Nursery'",
-    "Copper",
-    "Elena Vasquez-9"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (73.6%) with significant Hispanic/Latin American (22.5%) and minor East Asian (3.9%) ancestry. Her features reflect this rich blend: deep dark brown skin with warm golden undertones enriched by Latin American heritage, subtle East Asian influence visible in the slight epicanthic fold of her eyelids and cheekbone structure, creating a striking fusion of continental features.",
-    "height_cm": 125,
-    "weight_kg": 28,
-    "build": "Wiry and slight, all lean muscle and prominent joints from a childhood of sparse meals and constant movement. Her frame is deceptively strong—capable of running rooftops for hours without fatigue.",
-    "hair_color": "Deep black with natural reddish undertones",
-    "hair_style": "Tight, natural curls worn loose and voluminous when uncovered",
-    "hair_length": "Medium (shoulder-length when released from cap)",
-    "eye_color": "Dark brown with bioluminescent blue-green ring around each iris",
-    "skin_tone": "Deep warm brown with golden undertones—rich Sub-Saharan African base warmed by Latin American heritage, with subtle East Asian luminosity across the high cheekbones and bridge of nose",
-    "complexion": "Smooth, sun-darkened from outdoor exposure, cheekbones defined and prominent with the subtle lift characteristic of East Asian ancestry blended with the broad strength of African features. Her expression is often guarded but her eyes betray quick intelligence and curiosity. Warm golden undertones across the bridge of nose and cheekbones reflect her mixed heritage. Slight epicanthic fold of eyelids adds dimension to her sharp, watchful gaze.",
-    "distinguishing_marks": [
-      "Bioluminescent rings circling both irises in faint blue-green, glowing softly in low light—installed by her mother, involuntary but now a signature feature",
-      "A thin scar across her left knuckle from a message delivery gone wrong, barely visible",
-      "Calluses on her palms and fingertips from gripping rooftop edges and weathered surfaces"
-    ],
-    "visible_augmentations": "The bioluminescent irises are immediately visible—a soft blue-green glow that intensifies in darkness, particularly noticeable in tunnel environments. No other visible cybernetics.",
-    "posture_movement": "Constantly restless, weight always ready to shift. She moves with economical grace—quick, efficient, never wasting motion. Her gait is a runner's gait, even when standing still. Her hands fidget with small objects (copper filings, message tokens) when idle. Her eyes track movement instinctively; situational awareness is habitual. When at rest, she curls inward slightly, taking up minimal space.",
-    "clothing_style": "A salvaged Ferrogate Transit cap three sizes too large that she wears constantly, the brim softened from wear. Underneath: layered hand-me-downs patched with mismatched fabric—thermal undershirt, oversized grey utility jacket with multiple pockets (for messages and copper offerings), cargo pants with reinforced knees from rooftop crawling. Worn synthetic running shoes with taped seams. A single copper wire wrapped around her left wrist as both charm and tool. Tier 5 functional—nothing new, everything salvaged or traded. A small cloth pouch at her hip holds her day's earnings in Φ tokens."
-  },
-  "image_prompt": "Guilherme Adeyemi-Calvillo-Nwosu, 12-year-old rooftop runner in GLMZ, deep warm brown skin with golden undertones, dark eyes glowing with soft bioluminescent blue-green rings, prominent cheekbones blending Sub-Saharan African and East Asian heritage, tight natural black curls with reddish undertones escaping from oversized worn Ferrogate Transit cap, wiry lean frame, wearing patched grey utility jacket with multiple pockets, cargo pants with reinforced knees, worn synthetic shoes, copper wire wrapped around left wrist, sitting perched on rain-slicked GLMZ rooftop at dusk, city lights reflecting off wet surfaces below, neon glow from distant advertising towers casting purple and cyan shadows, her bioluminescent irises casting faint blue-green light in gathering darkness, expression alert and guarded, hands fidgeting with copper filings, urban dystopian Great Lakes Metropolitan skyline in soft focus background, cinematic neo-noir lighting, photorealistic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 73.6,
-    "Hispanic/Latin American": 22.5,
-    "East Asian": 3.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "East African": {
-        "Somali": 58.6,
-        "Ethiopian": 15
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 17.7
-      },
-      "South American": {
-        "Brazilian": 2.5,
-        "Venezuelan": 0.5
-      },
-      "Central American": {
-        "Nicaraguan": 1.8
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 0.7
-      },
-      "Chinese": {
-        "Cantonese": 0.2
-      },
-      "Korean": {
-        "Korean": 3
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6dc75bd8d48e81c55b00ac2",
+    "type":  "character",
+    "name":  "Guilherme Adeyemi-Calvillo-Nwosu",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Truant message runner, Tier 1",
+    "age":  9,
+    "status":  "active",
+    "location":  "Blackpipe Corridor, near Milwaukee and Damen",
+    "description":  "Guilherme Adeyemi-Calvillo-Nwosu is small even for nine, with the wiry toughness of a child raised on rationed calories and open air. Her skin is a deep warm brown, her hair a wild halo of tight curls she keeps stuffed under a salvaged Ferrogate Transit cap three sizes too large. She has a cosmetic mod she didn\u0027t choose â€” a faint bioluminescent ring around each iris, blue-green, that her mother installed before disappearing, supposedly to help her be seen in the dark tunnels under Blackpipe. She has not decided whether she loves it or hates it.\n\nGuilherme Adeyemi-Calvillo-Nwosu runs messages for anyone who pays her two Î¦ or more per delivery: small-time vendors, people who distrust the comm-net, the occasional ELF-shrine keeper who needs physical tokens carried between altars. She is deeply superstitious and leaves pinches of copper filings at every E.L.F. junction box she passes, convinced this is why she has never been caught. Her emotional range is vast but controlled â€” she laughs easily and cries silently. She is fiercely loyal to the three other children she sleeps near in a maintenance alcove off Corridor 7, and would walk into a burning block for any of them.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being alone permanently",
+                                          "losing the three kids she considers family"
+                                      ],
+                       "core_desires":  [
+                                            "to find her mother or at least know what happened",
+                                            "to have a door that locks from the inside"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "ritualistic ELF offerings",
+                                                 "counting money repeatedly to feel grounded"
+                                             ],
+                       "blind_spots":  [
+                                           "assumes adults who are kind to her have an angle â€” misses genuine offers of help"
+                                       ],
+                       "secret":  "She knows exactly who took her mother â€” a mid-level Ferrogate Transit enforcer named Osei-something. She saw the badge number. She has said nothing to anyone because she does not know what to do with that information and is afraid that knowing is already dangerous."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped and functional, corridor-slang heavy, occasional Twi loanwords picked up from the shrine-keeper",
+                            "cadence":  "Fast when nervous, surprisingly deliberate when she\u0027s asking for something",
+                            "verbal_tics":  [
+                                                "starts sentences with \u0027Right soâ€”\u0027",
+                                                "says \u0027the Lights keep you\u0027 as goodbye"
+                                            ],
+                            "example_lines":  [
+                                                  "Right so â€” two quanta, I get it there before the strips go amber, you don\u0027t ask what\u0027s in it. That\u0027s the deal.",
+                                                  "The Lights kept me through the Sump flood so I figure I owe them something back. You got copper filings? Even shavings?"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She delivers a message and the recipient is dead when she arrives â€” now someone thinks she saw something",
+                        "The badge number she memorized matches a Ferrogate official who has just been promoted and is visiting Blackpipe for an inspection"
+                    ],
+    "narrative_function":  "Local color and information vector â€” Sorrel has seen and overheard nearly everything that moves through Blackpipe Corridor. She can be a quest-giver by proxy, a warning system, or a way to introduce the neighborhood\u0027s texture.",
+    "augmentations":  "Bioluminescent irises (cosmetic, installed by parent). No other mods.",
+    "daily_life":  "Wakes before the overhead strips cycle to morning-white, eats whatever the shrine-keeper Adaeze leaves out, then runs circuits through Blackpipe picking up and delivering messages until dark-cycle when she returns to the alcove and counts her Quanta.",
+    "affiliation":  "Independent; loosely tolerated by the Blackpipe vendor collective",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  7,
+                                 "expression":  4,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "street-smart",
+                               "superstitious",
+                               "loyal",
+                               "observant",
+                               "survivor"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "always complete the job â€” reputation is her only currency",
+                                              "never open a sealed message no matter how tempting"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "politely declines suspicious requests",
+                                                 "runs if pressed",
+                                                 "screams names of nearby vendors if cornered â€” she knows everyone"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "watchful and transactional, assesses threat within seconds",
+                                                   "friends":  "physically affectionate, shares food without being asked"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "hums tunelessly",
+                                                "medium":  "fingers the cap brim repeatedly",
+                                                "high":  "goes completely silent and still"
+                                            },
+                       "contradictions":  [
+                                              "fiercely independent but desperately needs the three alcove kids to be nearby to sleep"
+                                          ],
+                       "habits":  [
+                                      "leaves copper filings at every junction box",
+                                      "checks exit routes the moment she enters any space"
+                                  ],
+                       "breaking_points":  [
+                                               "harm to one of her three alcove companions"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Hustler":  0.9,
+                       "Provider":  0.9,
+                       "People Pleaser":  0.9,
+                       "Generous Fool":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Blackpipe Corridor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "Ferrogate Transit",
+                             "ShieldTech SB-3 \u0027Groundstrike\u0027",
+                             "Noir Dining",
+                             "GLMZ",
+                             "Kel Adeyemi-Strand",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Copper",
+                             "Elena Vasquez-9"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Sub-Saharan African (73.6%) with significant Hispanic/Latin American (22.5%) and minor East Asian (3.9%) ancestry. Her features reflect this rich blend: deep dark brown skin with warm golden undertones enriched by Latin American heritage, subtle East Asian influence visible in the slight epicanthic fold of her eyelids and cheekbone structure, creating a striking fusion of continental features.",
+                                 "height_cm":  125,
+                                 "weight_kg":  28,
+                                 "build":  "Wiry and slight, all lean muscle and prominent joints from a childhood of sparse meals and constant movement. Her frame is deceptively strongâ€”capable of running rooftops for hours without fatigue.",
+                                 "hair_color":  "Deep black with natural reddish undertones",
+                                 "hair_style":  "Tight, natural curls worn loose and voluminous when uncovered",
+                                 "hair_length":  "Medium (shoulder-length when released from cap)",
+                                 "eye_color":  "Dark brown with bioluminescent blue-green ring around each iris",
+                                 "skin_tone":  "Deep warm brown with golden undertonesâ€”rich Sub-Saharan African base warmed by Latin American heritage, with subtle East Asian luminosity across the high cheekbones and bridge of nose",
+                                 "complexion":  "Smooth, sun-darkened from outdoor exposure, cheekbones defined and prominent with the subtle lift characteristic of East Asian ancestry blended with the broad strength of African features. Her expression is often guarded but her eyes betray quick intelligence and curiosity. Warm golden undertones across the bridge of nose and cheekbones reflect her mixed heritage. Slight epicanthic fold of eyelids adds dimension to her sharp, watchful gaze.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent rings circling both irises in faint blue-green, glowing softly in low lightâ€”installed by her mother, involuntary but now a signature feature",
+                                                              "A thin scar across her left knuckle from a message delivery gone wrong, barely visible",
+                                                              "Calluses on her palms and fingertips from gripping rooftop edges and weathered surfaces"
+                                                          ],
+                                 "visible_augmentations":  "The bioluminescent irises are immediately visibleâ€”a soft blue-green glow that intensifies in darkness, particularly noticeable in tunnel environments. No other visible cybernetics.",
+                                 "posture_movement":  "Constantly restless, weight always ready to shift. She moves with economical graceâ€”quick, efficient, never wasting motion. Her gait is a runner\u0027s gait, even when standing still. Her hands fidget with small objects (copper filings, message tokens) when idle. Her eyes track movement instinctively; situational awareness is habitual. When at rest, she curls inward slightly, taking up minimal space.",
+                                 "clothing_style":  "A salvaged Ferrogate Transit cap three sizes too large that she wears constantly, the brim softened from wear. Underneath: layered hand-me-downs patched with mismatched fabricâ€”thermal undershirt, oversized grey utility jacket with multiple pockets (for messages and copper offerings), cargo pants with reinforced knees from rooftop crawling. Worn synthetic running shoes with taped seams. A single copper wire wrapped around her left wrist as both charm and tool. Tier 5 functionalâ€”nothing new, everything salvaged or traded. A small cloth pouch at her hip holds her day\u0027s earnings in Î¦ tokens."
+                             },
+    "image_prompt":  "Guilherme Adeyemi-Calvillo-Nwosu, 12-year-old rooftop runner in GLMZ, deep warm brown skin with golden undertones, dark eyes glowing with soft bioluminescent blue-green rings, prominent cheekbones blending Sub-Saharan African and East Asian heritage, tight natural black curls with reddish undertones escaping from oversized worn Ferrogate Transit cap, wiry lean frame, wearing patched grey utility jacket with multiple pockets, cargo pants with reinforced knees, worn synthetic shoes, copper wire wrapped around left wrist, sitting perched on rain-slicked GLMZ rooftop at dusk, city lights reflecting off wet surfaces below, neon glow from distant advertising towers casting purple and cyan shadows, her bioluminescent irises casting faint blue-green light in gathering darkness, expression alert and guarded, hands fidgeting with copper filings, urban dystopian Great Lakes Metropolitan skyline in soft focus background, cinematic neo-noir lighting, photorealistic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  73.6,
+                             "Hispanic/Latin American":  22.5,
+                             "East Asian":  3.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Somali":  58.6,
+                                                                             "Ethiopian":  15
+                                                                         }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  17.7
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Brazilian":  2.5,
+                                                                                   "Venezuelan":  0.5
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  1.8
+                                                                                 }
+                                                        },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  0.7
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  0.2
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  3
+                                                          }
+                                           }
+                        },
+    "tier":  "1"
 }

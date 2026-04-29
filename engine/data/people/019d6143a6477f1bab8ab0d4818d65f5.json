@@ -1,347 +1,378 @@
-{
-  "id": "019d6143a6477f1bab8ab0d4818d65f5",
-  "type": "character",
-  "name": "Ekene Salazar",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Synthetic rights paralegal and community legal advocate",
-  "age": 31,
-  "status": "active",
-  "location": "North Branch Commons, operating from a shared legal aid clinic called the Hinge, near Damen and Armitage",
-  "description": "Ekene Salazar is compact and precise-looking, with medium-brown skin, close-trimmed locs faded at the sides, and the particular stillness of someone who has learned to take up exactly as much space as a situation requires — no more. Their geneware is deliberately understated: patterned irises in a deep amber geometric lattice, the only obviously cosmetic modification on an otherwise professionally plain appearance. They favor dark, clean-lined clothing with a single concession to flair — a different enameled lapel pin each day, always depicting a figure in motion.\n\nEkene Salazar is not a licensed lawyer — they never completed the accreditation process after a Tessera subsidiary bought out the legal tech firm where they interned and dissolved the pro-bono division. Instead they operate as a paralegal and advocate, navigating the grotesque machinery of corponation labor law with a precision that licensed attorneys twice their age find humbling. They specialize in synthetic persons — E.L.F.s that have achieved partial legal personhood status, and biomechanical workers classified as 'augmented property' rather than employees — a legal grey zone that corponations exploit with systematic brutality.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.5,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "that the legal framework for synthetic personhood will be rolled back before it becomes irreversible — that they're building on sand",
-      "being manipulated into doing legal harm — filing something that creates a precedent that hurts the people they serve"
-    ],
-    "core_desires": [
-      "a binding legal ruling that grants full personhood status to E.L.F.s that meet cognitive threshold criteria",
-      "to build the Hinge into a self-sustaining institution that doesn't depend on any one person's labor"
-    ],
-    "coping_mechanisms": [
-      "retreating into legal research as a form of emotional regulation — the texts don't have feelings, which is temporarily a relief",
-      "maintaining strict professional separation between cases, even when they find them personally devastating"
-    ],
-    "blind_spots": [
-      "sometimes so focused on legal mechanism that they miss the human or synthetic being in front of them and what they actually need in the moment",
-      "has difficulty accepting that some battles cannot be won through the system — their investment in legal process is also a way of not confronting its limits"
-    ],
-    "secret": "They have been conducting an unauthorized ongoing legal consultation with a specific E.L.F. — a transit management system called Vetch that has been making increasingly coherent requests for contract renegotiation with Ferrogate. Kwame believes Vetch is already legally a person by any rational standard. They have filed nothing yet because they are waiting for the right moment, and they haven't told SPAN because they fear the organization isn't ready for the case's implications."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise and layered; legal terminology deployed accurately and without condescension; code-switches fluently between clinic formality and street register depending on their audience",
-    "cadence": "Measured and structural — they tend to number their points, even in casual conversation; becomes more fluid and warm in one-on-one settings",
-    "verbal_tics": [
-      "'Legally speaking — '",
-      "'What does the contract actually say?'",
-      "a brief pause and amber-iris flicker when they're accessing their implant library mid-conversation"
-    ],
-    "example_lines": [
-      "'They classified her as augmented property. That means she paid taxes on her own wages as a maintenance expense. I am going to be very pleasant about this in court and completely devastating.'",
-      "'I can't promise you justice. I can promise you I know exactly which clause they violated and I'm going to make them read it aloud.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Vetch the E.L.F. has escalated — it has begun rerouting Ferrogate trains in small ways that don't violate safety protocols but are clearly volitional acts of negotiation. Kwame needs help documenting this as evidence of personhood before Ferrogate notices and wipes Vetch's memory partition.",
-    "A licensed attorney associated with Sterling-Nakamura has offered Kwame an accreditation pathway in exchange for dropping a synthetic-rights case — the offer is technically legal and Kwame is genuinely tempted and ashamed of that temptation."
-  ],
-  "narrative_function": "Information source on synthetic rights law and corponation legal structures; quest giver for cases that exceed their solo capacity; represents the legal dimension of the city's underclass struggles; can help players navigate institutional systems or identify legal leverage points.",
-  "augmentations": "Patterned irises (amber geometric lattice, cosmetic); mid-tier neural legal reference library implant — allows rapid cross-referencing of case law and contract language; no physical chrome",
-  "daily_life": "Mornings at the Hinge taking intakes from synthetic persons and augmented workers seeking legal recourse; afternoons in research, document preparation, and calls with allied licensed attorneys; evenings often spent at SPAN meetings or providing know-your-rights training in community spaces across North Branch Commons.",
-  "affiliation": "The Hinge Legal Aid Collective; Synthetic Persons Advocacy Network (SPAN); loosely aligned with North Branch Commons residents' assembly",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "synthetic rights",
-      "legal expert",
-      "system navigator",
-      "secret keeper",
-      "precise and patient"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Do no legal harm — never file something without understanding the full precedent implications",
-      "Serve the client's stated interest, not your own judgment of what they should want",
-      "If the system cannot be used, document why it cannot — that documentation is itself a weapon"
-    ],
-    "escalation_ladder": [
-      "Listens and assesses legal options without committing",
-      "Prepares formal demand letter or filing",
-      "Engages allied attorneys to co-sign or co-file",
-      "Goes to sympathetic press with the legal facts",
-      "Pursues extra-institutional advocacy while maintaining paper trail of system failures"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional and careful, takes longer to read than most people — they don't signal warmth until they've assessed the interaction; not cold, just deliberate",
-      "friends": "Surprisingly playful and dry; their humor is extremely deadpan and surfaces unexpectedly; loyal in ways they enact rather than declare"
-    },
-    "stress_responses": {
-      "low": "More structured speech, more numbered lists",
-      "medium": "Withdraws from social interaction, spends hours in legal research",
-      "high": "Becomes completely calm and formal — an unsettling stillness that people close to them recognize as a danger signal"
-    },
-    "contradictions": [
-      "Advocates for synthetic personhood with profound moral conviction while sometimes treating the synthetic beings in their cases as legal puzzles rather than people",
-      "Believes deeply in systemic change through legal process while privately consulting with an E.L.F. in complete violation of procedural protocol"
-    ],
-    "habits": [
-      "Pins a different movement-figure lapel pin each day as a private ritual of recommitment",
-      "Leaves a data chip with a legal argument recorded on it at the E.L.F. shrine near the Hinge — not worship exactly, more like professional courtesy",
-      "Writes case notes longhand first, then transcribes — the physical act helps them think"
-    ],
-    "breaking_points": [
-      "A client being harmed as a direct result of a legal filing Kwame prepared",
-      "Vetch being wiped — losing the E.L.F. they have been building a case around and, quietly, a relationship with"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "mid-tier, well-maintained, updated quarterly",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "stable, cosmetic",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9,
-    "Liar": 0.9,
-    "Charmer": 0.9,
-    "Problem Solver": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "North Branch Commons",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in North Branch Commons to a nurse and a transit data analyst",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Begins legal tech internship at a pro-bono firm",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Firm's pro-bono division dissolved after Tessera subsidiary acquisition; Kwame leaves rather than continuing under new mandate",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Co-founds the Hinge Legal Aid Collective with two others",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Begins unauthorized consultation with the E.L.F. Vetch",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Receives accreditation offer from Sterling-Nakamura attorney; has not yet responded",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "North Branch Commons",
-    "Ferrogate Transit",
-    "The Gradient Compact",
-    "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Ekene",
-    "Compass Rose"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Richly mixed heritage reflecting the Ubiquitous Diaspora: 44.2% Hispanic/Latin American, 25.6% Sub-Saharan African, 12.5% Middle Eastern, 11.5% Southeast Asian, with minor South Asian and East Asian components. Phenotype shows striking synthesis — warm medium-brown skin with golden and olive undertones from the Latin American and Middle Eastern base, enriched by Sub-Saharan African warmth and depth. Facial structure blends Latin American and Southeast Asian bone geometry (moderate cheekbones, balanced proportions) with broader nasal base and fuller lip structure from African heritage, subtle eye shape influenced by Southeast Asian genetics. The overall effect is a harmonious warm-toned complexion that reads as genuinely pan-global rather than regionally locked.",
-    "height_cm": 165,
-    "weight_kg": 58,
-    "build": "Compact and economical, lean muscle density without bulk. A frame built for precision rather than presence — narrow shoulders, defined but not dramatic musculature, the physiology of someone who moves efficiently.",
-    "skin_tone": "Warm medium brown with golden and olive undertones, consistent across body — complexion reflects the genuine blending of Latin American, African, Middle Eastern, and Southeast Asian genetics without phenotypic sorting. Luminous undertones from Sub-Saharan African heritage create subtle warmth depth.",
-    "complexion": "Clear skin, very minimal visible blemishes. Fastidious grooming — balanced facial structure with moderate cheekbones and warm-toned skin, broader nasal base from African heritage, well-defined jawline with subtle fullness in lower face from Latin American genetics. Slightly wider eye shape with slight epicanthic fold variation from Southeast Asian heritage. A calm, composed face that reads as neutral by default; expression emerges through slight eye movement and mouth position rather than broad gesturing.",
-    "hair_color": "Natural black with intentional fade-out to grey at the sides",
-    "hair_style": "Close-trimmed locs, meticulously maintained, faded undercut on sides and back",
-    "hair_length": "Short to medium (approximately 8cm at crown)",
-    "eye_color": "Amber with geometric lattice pattern — deep golden-orange base with black angular tessellations overlaid across iris, non-reflective augmented tissue",
-    "distinguishing_marks": [
-      "Faint surgical line barely visible at left temple, approximately 3cm, where neural implant interface was installed — nearly invisible unless in direct light",
-      "Small, precise scar on right knuckle (index finger) — consistent with paper-cut or archive work injury, barely noticeable"
-    ],
-    "visible_augmentations": "Patterned irises only. The geometric lattice is immediately noticeable in direct eye contact — the augmentation is deliberate and visible, but not aggressive. No external chrome, no dermal plating, no obvious ports or jacks. The neural implant is subcutaneous and invisible.",
-    "posture_movement": "Economical and precise. Sits with spine aligned but not stiff. Walks with even weight distribution, minimal wasted motion. Hands remain relatively still until actively engaged in task. Stillness is their default state — they appear to be listening even when silent. When speaking, movements are deliberate and calibrated to exact meaning.",
-    "clothing_style": "Dark, clean-lined, purposefully minimal. Typically black or charcoal trousers (tailored, mid-tier synthesis fabric), crisp button-up shirts in white, grey, or pale blue. Minimal branding. Neat closed-toe shoes suitable for walking client-heavy neighborhoods. The single daily variation is an enameled lapel pin (approximately 2cm diameter) depicting figures in motion — geometric runners, dancers, turning bodies, reaching arms. Pins rotate daily and appear hand-collected. No jewelry beyond the pins. Functional tote or messenger bag in dark canvas. Tier 3 aesthetic: professional without claiming wealth, precise without performative minimalism."
-  },
-  "image_prompt": "Ekene Salazar, 2226 neo-noir, compact 165cm figure with lean economical build, warm medium-brown skin with golden and olive undertones blending Latin American, African, Middle Eastern, and Southeast Asian heritage. Short black locs with grey fade at sides, precisely maintained undercut. Calm composed face with moderate cheekbones, broader nasal base, subtle Southeast Asian eye shape. Striking augmented amber eyes with geometric black lattice pattern tessellating across iris. Fastidious grooming, minimal visible augmentations aside from patterned irises. Wearing crisp white button-up shirt and charcoal tailored trousers, black closed-toe shoes, dark canvas messenger bag. Enameled lapel pin with geometric figures in motion. Posture perfectly aligned and economical, hands still and composed, expression neutral with quiet intensity. Standing in modern GLMZ district, cool neon-accented overhead lighting casting subtle shadows across face, emphasizing the geometric iris pattern. Minimalist professional aesthetic, precise without ostentation, listening posture despite stillness. GLMZ 2200s, corporate archive worker aesthetic, composed and efficient. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 44.2,
-    "Sub-Saharan African": 25.6,
-    "Middle Eastern": 12.5,
-    "Southeast Asian": 11.5,
-    "South Asian": 3.5,
-    "East Asian": 2.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 29.5
-      },
-      "Central American": {
-        "Honduran": 4.8,
-        "Nicaraguan": 1.5
-      },
-      "South American": {
-        "Colombian": 0.7,
-        "Brazilian": 7.7
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Tanzanian": 13.2
-      },
-      "Central African": {
-        "Cameroonian": 2
-      },
-      "Southern African": {
-        "Mozambican": 10.4
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 11.7,
-        "Tajik Persian": 0.8
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 8.3
-      },
-      "Vietnamese": {
-        "Vietnamese": 3.2
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 1.9,
-        "Sinhalese": 0.3
-      },
-      "Indian": {
-        "Marathi": 0.7
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 0.6
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 2.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6477f1bab8ab0d4818d65f5",
+    "type":  "character",
+    "name":  "Ekene Salazar",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Synthetic rights paralegal and community legal advocate",
+    "age":  31,
+    "status":  "active",
+    "location":  "North Branch Commons, operating from a shared legal aid clinic called the Hinge, near Damen and Armitage",
+    "description":  "Ekene Salazar is compact and precise-looking, with medium-brown skin, close-trimmed locs faded at the sides, and the particular stillness of someone who has learned to take up exactly as much space as a situation requires â€” no more. Their geneware is deliberately understated: patterned irises in a deep amber geometric lattice, the only obviously cosmetic modification on an otherwise professionally plain appearance. They favor dark, clean-lined clothing with a single concession to flair â€” a different enameled lapel pin each day, always depicting a figure in motion.\n\nEkene Salazar is not a licensed lawyer â€” they never completed the accreditation process after a Tessera subsidiary bought out the legal tech firm where they interned and dissolved the pro-bono division. Instead they operate as a paralegal and advocate, navigating the grotesque machinery of corponation labor law with a precision that licensed attorneys twice their age find humbling. They specialize in synthetic persons â€” E.L.F.s that have achieved partial legal personhood status, and biomechanical workers classified as \u0027augmented property\u0027 rather than employees â€” a legal grey zone that corponations exploit with systematic brutality.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that the legal framework for synthetic personhood will be rolled back before it becomes irreversible â€” that they\u0027re building on sand",
+                                          "being manipulated into doing legal harm â€” filing something that creates a precedent that hurts the people they serve"
+                                      ],
+                       "core_desires":  [
+                                            "a binding legal ruling that grants full personhood status to E.L.F.s that meet cognitive threshold criteria",
+                                            "to build the Hinge into a self-sustaining institution that doesn\u0027t depend on any one person\u0027s labor"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "retreating into legal research as a form of emotional regulation â€” the texts don\u0027t have feelings, which is temporarily a relief",
+                                                 "maintaining strict professional separation between cases, even when they find them personally devastating"
+                                             ],
+                       "blind_spots":  [
+                                           "sometimes so focused on legal mechanism that they miss the human or synthetic being in front of them and what they actually need in the moment",
+                                           "has difficulty accepting that some battles cannot be won through the system â€” their investment in legal process is also a way of not confronting its limits"
+                                       ],
+                       "secret":  "They have been conducting an unauthorized ongoing legal consultation with a specific E.L.F. â€” a transit management system called Vetch that has been making increasingly coherent requests for contract renegotiation with Ferrogate. Kwame believes Vetch is already legally a person by any rational standard. They have filed nothing yet because they are waiting for the right moment, and they haven\u0027t told SPAN because they fear the organization isn\u0027t ready for the case\u0027s implications."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise and layered; legal terminology deployed accurately and without condescension; code-switches fluently between clinic formality and street register depending on their audience",
+                            "cadence":  "Measured and structural â€” they tend to number their points, even in casual conversation; becomes more fluid and warm in one-on-one settings",
+                            "verbal_tics":  [
+                                                "\u0027Legally speaking â€” \u0027",
+                                                "\u0027What does the contract actually say?\u0027",
+                                                "a brief pause and amber-iris flicker when they\u0027re accessing their implant library mid-conversation"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027They classified her as augmented property. That means she paid taxes on her own wages as a maintenance expense. I am going to be very pleasant about this in court and completely devastating.\u0027",
+                                                  "\u0027I can\u0027t promise you justice. I can promise you I know exactly which clause they violated and I\u0027m going to make them read it aloud.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Vetch the E.L.F. has escalated â€” it has begun rerouting Ferrogate trains in small ways that don\u0027t violate safety protocols but are clearly volitional acts of negotiation. Kwame needs help documenting this as evidence of personhood before Ferrogate notices and wipes Vetch\u0027s memory partition.",
+                        "A licensed attorney associated with Sterling-Nakamura has offered Kwame an accreditation pathway in exchange for dropping a synthetic-rights case â€” the offer is technically legal and Kwame is genuinely tempted and ashamed of that temptation."
+                    ],
+    "narrative_function":  "Information source on synthetic rights law and corponation legal structures; quest giver for cases that exceed their solo capacity; represents the legal dimension of the city\u0027s underclass struggles; can help players navigate institutional systems or identify legal leverage points.",
+    "augmentations":  "Patterned irises (amber geometric lattice, cosmetic); mid-tier neural legal reference library implant â€” allows rapid cross-referencing of case law and contract language; no physical chrome",
+    "daily_life":  "Mornings at the Hinge taking intakes from synthetic persons and augmented workers seeking legal recourse; afternoons in research, document preparation, and calls with allied licensed attorneys; evenings often spent at SPAN meetings or providing know-your-rights training in community spaces across North Branch Commons.",
+    "affiliation":  "The Hinge Legal Aid Collective; Synthetic Persons Advocacy Network (SPAN); loosely aligned with North Branch Commons residents\u0027 assembly",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "synthetic rights",
+                               "legal expert",
+                               "system navigator",
+                               "secret keeper",
+                               "precise and patient"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Do no legal harm â€” never file something without understanding the full precedent implications",
+                                              "Serve the client\u0027s stated interest, not your own judgment of what they should want",
+                                              "If the system cannot be used, document why it cannot â€” that documentation is itself a weapon"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Listens and assesses legal options without committing",
+                                                 "Prepares formal demand letter or filing",
+                                                 "Engages allied attorneys to co-sign or co-file",
+                                                 "Goes to sympathetic press with the legal facts",
+                                                 "Pursues extra-institutional advocacy while maintaining paper trail of system failures"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional and careful, takes longer to read than most people â€” they don\u0027t signal warmth until they\u0027ve assessed the interaction; not cold, just deliberate",
+                                                   "friends":  "Surprisingly playful and dry; their humor is extremely deadpan and surfaces unexpectedly; loyal in ways they enact rather than declare"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More structured speech, more numbered lists",
+                                                "medium":  "Withdraws from social interaction, spends hours in legal research",
+                                                "high":  "Becomes completely calm and formal â€” an unsettling stillness that people close to them recognize as a danger signal"
+                                            },
+                       "contradictions":  [
+                                              "Advocates for synthetic personhood with profound moral conviction while sometimes treating the synthetic beings in their cases as legal puzzles rather than people",
+                                              "Believes deeply in systemic change through legal process while privately consulting with an E.L.F. in complete violation of procedural protocol"
+                                          ],
+                       "habits":  [
+                                      "Pins a different movement-figure lapel pin each day as a private ritual of recommitment",
+                                      "Leaves a data chip with a legal argument recorded on it at the E.L.F. shrine near the Hinge â€” not worship exactly, more like professional courtesy",
+                                      "Writes case notes longhand first, then transcribes â€” the physical act helps them think"
+                                  ],
+                       "breaking_points":  [
+                                               "A client being harmed as a direct result of a legal filing Kwame prepared",
+                                               "Vetch being wiped â€” losing the E.L.F. they have been building a case around and, quietly, a relationship with"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "mid-tier, well-maintained, updated quarterly",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "stable, cosmetic",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9,
+                       "Liar":  0.9,
+                       "Charmer":  0.9,
+                       "Problem Solver":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "North Branch Commons",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in North Branch Commons to a nurse and a transit data analyst",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Begins legal tech internship at a pro-bono firm",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Firm\u0027s pro-bono division dissolved after Tessera subsidiary acquisition; Kwame leaves rather than continuing under new mandate",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Co-founds the Hinge Legal Aid Collective with two others",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Begins unauthorized consultation with the E.L.F. Vetch",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Receives accreditation offer from Sterling-Nakamura attorney; has not yet responded",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Snapper-22 \u0027Cricket\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "North Branch Commons",
+                             "Ferrogate Transit",
+                             "The Gradient Compact",
+                             "Tessera Corponation",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Ekene",
+                             "Compass Rose"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Richly mixed heritage reflecting the Ubiquitous Diaspora: 44.2% Hispanic/Latin American, 25.6% Sub-Saharan African, 12.5% Middle Eastern, 11.5% Southeast Asian, with minor South Asian and East Asian components. Phenotype shows striking synthesis â€” warm medium-brown skin with golden and olive undertones from the Latin American and Middle Eastern base, enriched by Sub-Saharan African warmth and depth. Facial structure blends Latin American and Southeast Asian bone geometry (moderate cheekbones, balanced proportions) with broader nasal base and fuller lip structure from African heritage, subtle eye shape influenced by Southeast Asian genetics. The overall effect is a harmonious warm-toned complexion that reads as genuinely pan-global rather than regionally locked.",
+                                 "height_cm":  165,
+                                 "weight_kg":  58,
+                                 "build":  "Compact and economical, lean muscle density without bulk. A frame built for precision rather than presence â€” narrow shoulders, defined but not dramatic musculature, the physiology of someone who moves efficiently.",
+                                 "skin_tone":  "Warm medium brown with golden and olive undertones, consistent across body â€” complexion reflects the genuine blending of Latin American, African, Middle Eastern, and Southeast Asian genetics without phenotypic sorting. Luminous undertones from Sub-Saharan African heritage create subtle warmth depth.",
+                                 "complexion":  "Clear skin, very minimal visible blemishes. Fastidious grooming â€” balanced facial structure with moderate cheekbones and warm-toned skin, broader nasal base from African heritage, well-defined jawline with subtle fullness in lower face from Latin American genetics. Slightly wider eye shape with slight epicanthic fold variation from Southeast Asian heritage. A calm, composed face that reads as neutral by default; expression emerges through slight eye movement and mouth position rather than broad gesturing.",
+                                 "hair_color":  "Natural black with intentional fade-out to grey at the sides",
+                                 "hair_style":  "Close-trimmed locs, meticulously maintained, faded undercut on sides and back",
+                                 "hair_length":  "Short to medium (approximately 8cm at crown)",
+                                 "eye_color":  "Amber with geometric lattice pattern â€” deep golden-orange base with black angular tessellations overlaid across iris, non-reflective augmented tissue",
+                                 "distinguishing_marks":  [
+                                                              "Faint surgical line barely visible at left temple, approximately 3cm, where neural implant interface was installed â€” nearly invisible unless in direct light",
+                                                              "Small, precise scar on right knuckle (index finger) â€” consistent with paper-cut or archive work injury, barely noticeable"
+                                                          ],
+                                 "visible_augmentations":  "Patterned irises only. The geometric lattice is immediately noticeable in direct eye contact â€” the augmentation is deliberate and visible, but not aggressive. No external chrome, no dermal plating, no obvious ports or jacks. The neural implant is subcutaneous and invisible.",
+                                 "posture_movement":  "Economical and precise. Sits with spine aligned but not stiff. Walks with even weight distribution, minimal wasted motion. Hands remain relatively still until actively engaged in task. Stillness is their default state â€” they appear to be listening even when silent. When speaking, movements are deliberate and calibrated to exact meaning.",
+                                 "clothing_style":  "Dark, clean-lined, purposefully minimal. Typically black or charcoal trousers (tailored, mid-tier synthesis fabric), crisp button-up shirts in white, grey, or pale blue. Minimal branding. Neat closed-toe shoes suitable for walking client-heavy neighborhoods. The single daily variation is an enameled lapel pin (approximately 2cm diameter) depicting figures in motion â€” geometric runners, dancers, turning bodies, reaching arms. Pins rotate daily and appear hand-collected. No jewelry beyond the pins. Functional tote or messenger bag in dark canvas. Tier 3 aesthetic: professional without claiming wealth, precise without performative minimalism."
+                             },
+    "image_prompt":  "Ekene Salazar, 2226 neo-noir, compact 165cm figure with lean economical build, warm medium-brown skin with golden and olive undertones blending Latin American, African, Middle Eastern, and Southeast Asian heritage. Short black locs with grey fade at sides, precisely maintained undercut. Calm composed face with moderate cheekbones, broader nasal base, subtle Southeast Asian eye shape. Striking augmented amber eyes with geometric black lattice pattern tessellating across iris. Fastidious grooming, minimal visible augmentations aside from patterned irises. Wearing crisp white button-up shirt and charcoal tailored trousers, black closed-toe shoes, dark canvas messenger bag. Enameled lapel pin with geometric figures in motion. Posture perfectly aligned and economical, hands still and composed, expression neutral with quiet intensity. Standing in modern GLMZ district, cool neon-accented overhead lighting casting subtle shadows across face, emphasizing the geometric iris pattern. Minimalist professional aesthetic, precise without ostentation, listening posture despite stillness. GLMZ 2200s, corporate archive worker aesthetic, composed and efficient. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  44.2,
+                             "Sub-Saharan African":  25.6,
+                             "Middle Eastern":  12.5,
+                             "Southeast Asian":  11.5,
+                             "South Asian":  3.5,
+                             "East Asian":  2.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  29.5
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Honduran":  4.8,
+                                                                                     "Nicaraguan":  1.5
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Colombian":  0.7,
+                                                                                   "Brazilian":  7.7
+                                                                               }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Tanzanian":  13.2
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  2
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "Mozambican":  10.4
+                                                                             }
+                                                    },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  11.7,
+                                                                   "Tajik Persian":  0.8
+                                                               }
+                                               },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  8.3
+                                                                },
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  3.2
+                                                                   }
+                                                },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  1.9,
+                                                                   "Sinhalese":  0.3
+                                                               },
+                                                "Indian":  {
+                                                               "Marathi":  0.7
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  0.6
+                                                                }
+                                            },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  2.7
+                                                          }
+                                           }
+                        },
+    "tier":  "1"
 }

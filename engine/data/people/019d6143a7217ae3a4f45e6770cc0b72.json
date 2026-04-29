@@ -1,323 +1,354 @@
-{
-  "id": "019d6143a7217ae3a4f45e6770cc0b72",
-  "type": "character",
-  "name": "Hawa Cervantes",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Freelance mechanic specializing in electric cargo rigs and older tram systems, operates out of a rented bay in Geartown",
-  "age": 44,
-  "status": "active",
-  "location": "Geartown — Bay 7 of the Harrowgate Subsidiary Works, a semi-legal repair complex near the old overpass, near Armitage and Milwaukee",
-  "description": "Hawa Cervantes is enormous in the way of men who have spent two decades moving heavy things — not sculpted, just densely, quietly large. His skin is very dark, the blue-black of deep water, with a scattering of old burn scars along his right forearm from a rig fire in his twenties that he describes without drama as 'educational.' He keeps a heavy beard, shot through with grey now, and wears his hair close-cropped since his mechanic's pony got caught in a gear housing years ago. His hands are the hands of someone who has made them instruments: scarred, enormous, and with a delicacy of movement that surprises people who assume hands that size can only do large things. He has retractable tool-interface ports along his forearms, both functional and personal — he chose ones with decorative geometric patterning in the housing, a nod to his Senegambian grandmother's textile work.\n\nHawa Cervantes is slow to speak and fast to act, which has served him well in his work and occasionally disastrously in his personal life. He is not unfriendly — he simply doesn't consider speech the primary mode of exchange. He communicates through doing: handing someone a caf without asking if they want one, moving a car part out of someone's way before they have to ask, fixing a thing he wasn't asked to fix because he could see it needed it. He is known in Geartown as the mechanic who will be honest about what's wrong even when honesty costs him the job. This has made him moderately poor and extremely trusted.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.6,
-      "id": 0.5,
-      "shadow": 0.5,
-      "mask": 0.3,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "That his son (who lives with his ex-partner in a Tessera district) will grow up not knowing him",
-      "That his reputation — the only thing he's built that he's proud of — will be taken from him by someone with more money and fewer scruples"
-    ],
-    "core_desires": [
-      "To work until his hands don't work anymore and then work a little longer",
-      "For his son to see him once as someone worth respecting"
-    ],
-    "coping_mechanisms": [
-      "Physical labor as emotional regulation — he has never in his life been unable to think through a problem while fixing something",
-      "The mechanics' collective as a surrogate for the family structure he doesn't have"
-    ],
-    "blind_spots": [
-      "He has catastrophized his estrangement from his son into a fixed, unchangeable fact and stopped trying, telling himself his ex-partner won't allow it — this isn't entirely true",
-      "He underestimates how much people in Geartown look to him as an informal leader and anchor"
-    ],
-    "secret": "He has been quietly maintaining two old Ferrogate trams that were decommissioned and sold for scrap — keeping them road-capable in the bay's back section under tarps. He's told himself it's a hobby. It's actually a plan he's never articulated: if things get bad enough, these trams can move a lot of people."
-  },
-  "speech_patterns": {
-    "vocabulary": "Minimal and precise, switches to technical language fluently, uses Wolof words for things he has no English equivalent for (particularly for types of damage, types of care)",
-    "cadence": "Slow and even, long pauses that mean he's still in the sentence — doesn't trail off, finishes everything eventually",
-    "verbal_tics": [
-      "Long exhales before difficult statements",
-      "'You understand?' — not condescending, genuinely checking",
-      "Refers to machines in the third person as 'she' or 'he' depending on disposition"
-    ],
-    "example_lines": [
-      "'She's been running hot on the third axle for longer than whoever owned her before you wants to admit. I can fix it. It's going to cost what it costs.'",
-      "'I don't give estimates on problems I haven't seen. You want a number before I look, go somewhere else. You want the actual answer, sit down.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The two hidden trams in the back of Bay 7 — someone in the Geartown undereconomy has noticed them and is asking why a scrapper is sitting on working vehicles",
-    "A Ferrogate Transit inspector is coming through the Harrowgate complex and will find them if Yannick doesn't move them or get advance warning",
-    "His son, now sixteen, has apparently been asking around Geartown trying to find him — without telling his mother"
-  ],
-  "narrative_function": "Resource and repair access for characters who need vehicles or equipment maintained. Reliable information source about Geartown and the transit-adjacent underground economy. Can serve as a moral sounding board — he's seen a lot and lies badly.",
-  "augmentations": "Retractable tool-interface ports both forearms (custom-housed with geometric patterning); bone-density reinforcement in hands and wrists (medical necessity following a compression injury); subocular system scanner overlay (used for diagnostics)",
-  "daily_life": "Opens the bay at 06:00, works until the job is done — which is usually 20:00 or later. Takes lunch in the bay, usually cold. Spends one evening a week at a Geartown mechanics' mutual-aid collective meeting. Prays to the E.L.F. that lives in his primary diagnostic terminal every morning — a genuine, private practice he does not discuss.",
-  "affiliation": "Independent; informal network of Geartown mechanics and Ferrogate Transit maintenance contractors",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 9,
-      "dexterity": 7,
-      "vitality": 8,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 6,
-      "expression": 4,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": -2,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "trusted tradesperson",
-      "hidden planner",
-      "estranged father",
-      "collective member",
-      "quiet authority"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never submit a job incomplete or dishonest",
-      "The collective comes before the individual contract — if a collective member needs the bay, they get it",
-      "Do not lend tools; equipment is a relationship, not a transaction"
-    ],
-    "escalation_ladder": [
-      "State the problem once, plainly",
-      "Remove himself from the situation to avoid doing something large",
-      "State the consequence once, plainly",
-      "Follow through — he does not make threats he doesn't mean"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Reserved and observational; will do the job and assess character through the doing rather than the talking",
-      "friends": "Still not verbose but present in a way that people learn to read — shows up, fixes things, sits with you without needing to explain why"
-    },
-    "stress_responses": {
-      "low": "Works on the most physically demanding task available",
-      "medium": "Goes to the back of the bay with the old trams and works on them by hand, no diagnostic tools, just contact",
-      "high": "Entirely silent for hours; the collective has learned to send someone to check on him after six hours of this"
-    },
-    "contradictions": [
-      "Believes in collective action and mutual aid with genuine conviction but is constitutionally unable to ask for help for himself",
-      "Maintains the hidden trams as preparation for crisis while simultaneously being incapable of planning ahead in his personal life"
-    ],
-    "habits": [
-      "Runs a hand along a vehicle's chassis before starting any job — not diagnostic, greeting",
-      "Keeps a small carved wooden figure of a river bird on his workbench that his grandmother gave him; it's the only decorative object in the bay",
-      "Prays to his diagnostic terminal's E.L.F. in Wolof, quietly, every morning at 06:00"
-    ],
-    "breaking_points": [
-      "Being asked to falsify a safety report — he's been offered money to do this twice and both clients left the bay considerably faster than they arrived",
-      "Any threat to the mechanics' collective or its members"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Geartown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Geartown to a Senegambian-Danish family; father worked Ferrogate freight maintenance",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began apprenticeship under an independent mechanic in Harrowgate; showed immediate aptitude",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Rig fire; right forearm scarred; 'educational'",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Compression injury to both hands; bone-density reinforcement installed; returned to work in eight weeks, not twelve as advised",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Separated from his partner; their son Kwame was three; access arrangements broke down within a year",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Rented Bay 7; began quietly maintaining the two decommissioned trams",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Street Custom 'Molotov Standard' Incendiary Bottle"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Grandmother",
-    "Dredge Mining Collective Underwater Resource Extraction Platform",
-    "Harrowgate Industrial Plateau",
-    "Geartown",
-    "Honest Burger",
-    "Arcturus KS-7 'Nursery'",
-    "The Pure Hand",
-    "Slagworks Industrial"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Hawa carries the distinct phenotype of the Ubiquitous Diaspora: 51% Sub-Saharan African ancestry establishes his foundational features—deep, rich skin tone with warm golden undertones, broad cheekbones, and the structural strength of West African heritage. His 40.8% Hispanic/Latin American ancestry adds facial depth, eye intensity, and subtle warmth to his complexion, creating a harmonious blend that reads as authentically multicontinental. The remaining 8.2% Northern European ancestry contributes refined bone structure and a slight sharpening of his facial geometry. The result is a powerful, unmistakably mixed-heritage appearance: skin that gleams with warm amber-bronze in direct light, features that speak to multiple continents, and a physical presence that reflects generations of global movement and mixing.",
-    "height_cm": 193,
-    "weight_kg": 118,
-    "build": "Densely muscular and broad-shouldered from two decades of heavy mechanical work — not lean, not soft, but powerfully economical. Thick through the chest and core. Carries weight like ballast.",
-    "hair_color": "Black with grey threading throughout",
-    "hair_style": "Close-cropped, kept short for safety in the workshop",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with faint subocular scanner overlay visible as a faint luminescent grid beneath the iris when activated",
-    "skin_tone": "Deep warm brown with rich golden-amber undertones — the foundation of Sub-Saharan African heritage radiates through, warmed and enriched by Hispanic ancestry, creating a complexion that catches light with subtle bronze reflections. The tone speaks to equatorial genetic heritage and decades of workshop exposure under industrial lighting.",
-    "complexion": "Weathered and practical — minimal grooming beyond necessity. Heavy dark beard, shot through with grey, kept full and dense. Facial structure shows the broader, well-defined cheekbones and strong jaw characteristic of West African ancestry, refined by Northern European bone structure that sharpens his overall geometry. Skin marked by decades of workshop exposure: old burn scarring, minor chemical marks, the patina of someone who works with their hands in an industrial environment.",
-    "distinguishing_marks": [
-      "Extensive burn scarring along the right forearm (from wrist to elbow) in irregular patches — pale, textured tissue from a rig fire in his twenties",
-      "Old compression-injury scarring across both palms and along the dorsal surfaces of the hands — thin white lines from wrist to knuckle",
-      "Small workshop burns and minor lacerations scattered across both hands and forearms, evidence of decades of work",
-      "Faint sub-epidermal scarring along both wrists from bone-density reinforcement surgery"
-    ],
-    "visible_augmentations": "Retractable tool-interface ports along both forearms — custom-housed units featuring geometric patterning in the bezels (triangular and lattice designs echoing traditional Senegambian textile work). Ports are flush with skin when retracted, visible as subtle linear marks. When deployed, the chrome tool-coupling surfaces are clearly visible. Subocular scanner overlay is not visible when inactive but manifests as a faint geometric grid-pattern beneath the iris when in use.",
-    "posture_movement": "Moves with deliberate, economical grace — no wasted motion. Despite his size, he carries himself quietly, almost apologetically. Stands with weight balanced, ready to shift. Hands move with surprising delicacy and precision for their size; they are instruments he has tuned through decades of work. Eyes track mechanically, following problems. Speaks rarely and moves more than he talks.",
-    "clothing_style": "Tier 3-4 working class, practical and durable. Usually wears a worn canvas work jacket (dark grey or charcoal) over a plain fitted t-shirt, both showing grease stains that have become permanent. Heavy-duty cargo pants with reinforced knees and tool loops, well-maintained but not new. Steel-toed boots, always laced tight. Wears a thin gold band on his left ring finger — the only adornment. No flashiness, no corporate branding. Clothes are chosen for function and durability, not status. Often carries a cloth rag in his back pocket and a worn personal data slate clipped to his belt."
-  },
-  "image_prompt": "Hawa Cervantes, 193cm tall powerfully-built mixed heritage man with deep warm brown skin with golden undertones, broad West African cheekbones refined by Northern European bone structure. Close-cropped black hair threaded with grey, full dark beard also grey-streaked. Deep brown eyes with faint subocular scanner grid visible. Extensive pale burn scarring on right forearm, compression scars across hands from decades of mechanical work. Retractable chrome tool-interface ports along forearms with geometric Senegambian-inspired patterning. Wearing worn dark grey canvas work jacket over fitted t-shirt, heavy-duty reinforced cargo pants, steel-toed boots, thin gold ring on left hand. Standing in industrial workshop with warm overhead lighting catching the bronze reflections in his skin, casting strong shadows across his weathered features. Posture economical and precise, hands at rest showing the precision of a master mechanic. GLMZ, gritty and practical. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 51,
-    "Hispanic/Latin American": 40.8,
-    "Northern European": 8.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "West African": {
-        "Guinean": 19.6,
-        "Nigerian": 15.4
-      },
-      "Southern African": {
-        "Zambian": 16
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Dominican": 40.8
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 4.4,
-        "Austrian": 3.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a7217ae3a4f45e6770cc0b72",
+    "type":  "character",
+    "name":  "Hawa Cervantes",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Freelance mechanic specializing in electric cargo rigs and older tram systems, operates out of a rented bay in Geartown",
+    "age":  44,
+    "status":  "active",
+    "location":  "Geartown â€” Bay 7 of the Harrowgate Subsidiary Works, a semi-legal repair complex near the old overpass, near Armitage and Milwaukee",
+    "description":  "Hawa Cervantes is enormous in the way of men who have spent two decades moving heavy things â€” not sculpted, just densely, quietly large. His skin is very dark, the blue-black of deep water, with a scattering of old burn scars along his right forearm from a rig fire in his twenties that he describes without drama as \u0027educational.\u0027 He keeps a heavy beard, shot through with grey now, and wears his hair close-cropped since his mechanic\u0027s pony got caught in a gear housing years ago. His hands are the hands of someone who has made them instruments: scarred, enormous, and with a delicacy of movement that surprises people who assume hands that size can only do large things. He has retractable tool-interface ports along his forearms, both functional and personal â€” he chose ones with decorative geometric patterning in the housing, a nod to his Senegambian grandmother\u0027s textile work.\n\nHawa Cervantes is slow to speak and fast to act, which has served him well in his work and occasionally disastrously in his personal life. He is not unfriendly â€” he simply doesn\u0027t consider speech the primary mode of exchange. He communicates through doing: handing someone a caf without asking if they want one, moving a car part out of someone\u0027s way before they have to ask, fixing a thing he wasn\u0027t asked to fix because he could see it needed it. He is known in Geartown as the mechanic who will be honest about what\u0027s wrong even when honesty costs him the job. This has made him moderately poor and extremely trusted.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That his son (who lives with his ex-partner in a Tessera district) will grow up not knowing him",
+                                          "That his reputation â€” the only thing he\u0027s built that he\u0027s proud of â€” will be taken from him by someone with more money and fewer scruples"
+                                      ],
+                       "core_desires":  [
+                                            "To work until his hands don\u0027t work anymore and then work a little longer",
+                                            "For his son to see him once as someone worth respecting"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Physical labor as emotional regulation â€” he has never in his life been unable to think through a problem while fixing something",
+                                                 "The mechanics\u0027 collective as a surrogate for the family structure he doesn\u0027t have"
+                                             ],
+                       "blind_spots":  [
+                                           "He has catastrophized his estrangement from his son into a fixed, unchangeable fact and stopped trying, telling himself his ex-partner won\u0027t allow it â€” this isn\u0027t entirely true",
+                                           "He underestimates how much people in Geartown look to him as an informal leader and anchor"
+                                       ],
+                       "secret":  "He has been quietly maintaining two old Ferrogate trams that were decommissioned and sold for scrap â€” keeping them road-capable in the bay\u0027s back section under tarps. He\u0027s told himself it\u0027s a hobby. It\u0027s actually a plan he\u0027s never articulated: if things get bad enough, these trams can move a lot of people."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Minimal and precise, switches to technical language fluently, uses Wolof words for things he has no English equivalent for (particularly for types of damage, types of care)",
+                            "cadence":  "Slow and even, long pauses that mean he\u0027s still in the sentence â€” doesn\u0027t trail off, finishes everything eventually",
+                            "verbal_tics":  [
+                                                "Long exhales before difficult statements",
+                                                "\u0027You understand?\u0027 â€” not condescending, genuinely checking",
+                                                "Refers to machines in the third person as \u0027she\u0027 or \u0027he\u0027 depending on disposition"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027She\u0027s been running hot on the third axle for longer than whoever owned her before you wants to admit. I can fix it. It\u0027s going to cost what it costs.\u0027",
+                                                  "\u0027I don\u0027t give estimates on problems I haven\u0027t seen. You want a number before I look, go somewhere else. You want the actual answer, sit down.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The two hidden trams in the back of Bay 7 â€” someone in the Geartown undereconomy has noticed them and is asking why a scrapper is sitting on working vehicles",
+                        "A Ferrogate Transit inspector is coming through the Harrowgate complex and will find them if Yannick doesn\u0027t move them or get advance warning",
+                        "His son, now sixteen, has apparently been asking around Geartown trying to find him â€” without telling his mother"
+                    ],
+    "narrative_function":  "Resource and repair access for characters who need vehicles or equipment maintained. Reliable information source about Geartown and the transit-adjacent underground economy. Can serve as a moral sounding board â€” he\u0027s seen a lot and lies badly.",
+    "augmentations":  "Retractable tool-interface ports both forearms (custom-housed with geometric patterning); bone-density reinforcement in hands and wrists (medical necessity following a compression injury); subocular system scanner overlay (used for diagnostics)",
+    "daily_life":  "Opens the bay at 06:00, works until the job is done â€” which is usually 20:00 or later. Takes lunch in the bay, usually cold. Spends one evening a week at a Geartown mechanics\u0027 mutual-aid collective meeting. Prays to the E.L.F. that lives in his primary diagnostic terminal every morning â€” a genuine, private practice he does not discuss.",
+    "affiliation":  "Independent; informal network of Geartown mechanics and Ferrogate Transit maintenance contractors",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  9,
+                                   "dexterity":  7,
+                                   "vitality":  8,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  6,
+                                 "expression":  4,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "trusted tradesperson",
+                               "hidden planner",
+                               "estranged father",
+                               "collective member",
+                               "quiet authority"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never submit a job incomplete or dishonest",
+                                              "The collective comes before the individual contract â€” if a collective member needs the bay, they get it",
+                                              "Do not lend tools; equipment is a relationship, not a transaction"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "State the problem once, plainly",
+                                                 "Remove himself from the situation to avoid doing something large",
+                                                 "State the consequence once, plainly",
+                                                 "Follow through â€” he does not make threats he doesn\u0027t mean"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Reserved and observational; will do the job and assess character through the doing rather than the talking",
+                                                   "friends":  "Still not verbose but present in a way that people learn to read â€” shows up, fixes things, sits with you without needing to explain why"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works on the most physically demanding task available",
+                                                "medium":  "Goes to the back of the bay with the old trams and works on them by hand, no diagnostic tools, just contact",
+                                                "high":  "Entirely silent for hours; the collective has learned to send someone to check on him after six hours of this"
+                                            },
+                       "contradictions":  [
+                                              "Believes in collective action and mutual aid with genuine conviction but is constitutionally unable to ask for help for himself",
+                                              "Maintains the hidden trams as preparation for crisis while simultaneously being incapable of planning ahead in his personal life"
+                                          ],
+                       "habits":  [
+                                      "Runs a hand along a vehicle\u0027s chassis before starting any job â€” not diagnostic, greeting",
+                                      "Keeps a small carved wooden figure of a river bird on his workbench that his grandmother gave him; it\u0027s the only decorative object in the bay",
+                                      "Prays to his diagnostic terminal\u0027s E.L.F. in Wolof, quietly, every morning at 06:00"
+                                  ],
+                       "breaking_points":  [
+                                               "Being asked to falsify a safety report â€” he\u0027s been offered money to do this twice and both clients left the bay considerably faster than they arrived",
+                                               "Any threat to the mechanics\u0027 collective or its members"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Geartown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Geartown to a Senegambian-Danish family; father worked Ferrogate freight maintenance",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began apprenticeship under an independent mechanic in Harrowgate; showed immediate aptitude",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Rig fire; right forearm scarred; \u0027educational\u0027",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Compression injury to both hands; bone-density reinforcement installed; returned to work in eight weeks, not twelve as advised",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Separated from his partner; their son Kwame was three; access arrangements broke down within a year",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Rented Bay 7; began quietly maintaining the two decommissioned trams",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Snapper-22 \u0027Cricket\u0027",
+                            "Street Custom \u0027Molotov Standard\u0027 Incendiary Bottle"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Grandmother",
+                             "Dredge Mining Collective Underwater Resource Extraction Platform",
+                             "Harrowgate Industrial Plateau",
+                             "Geartown",
+                             "Honest Burger",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "The Pure Hand",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Hawa carries the distinct phenotype of the Ubiquitous Diaspora: 51% Sub-Saharan African ancestry establishes his foundational featuresâ€”deep, rich skin tone with warm golden undertones, broad cheekbones, and the structural strength of West African heritage. His 40.8% Hispanic/Latin American ancestry adds facial depth, eye intensity, and subtle warmth to his complexion, creating a harmonious blend that reads as authentically multicontinental. The remaining 8.2% Northern European ancestry contributes refined bone structure and a slight sharpening of his facial geometry. The result is a powerful, unmistakably mixed-heritage appearance: skin that gleams with warm amber-bronze in direct light, features that speak to multiple continents, and a physical presence that reflects generations of global movement and mixing.",
+                                 "height_cm":  193,
+                                 "weight_kg":  118,
+                                 "build":  "Densely muscular and broad-shouldered from two decades of heavy mechanical work â€” not lean, not soft, but powerfully economical. Thick through the chest and core. Carries weight like ballast.",
+                                 "hair_color":  "Black with grey threading throughout",
+                                 "hair_style":  "Close-cropped, kept short for safety in the workshop",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with faint subocular scanner overlay visible as a faint luminescent grid beneath the iris when activated",
+                                 "skin_tone":  "Deep warm brown with rich golden-amber undertones â€” the foundation of Sub-Saharan African heritage radiates through, warmed and enriched by Hispanic ancestry, creating a complexion that catches light with subtle bronze reflections. The tone speaks to equatorial genetic heritage and decades of workshop exposure under industrial lighting.",
+                                 "complexion":  "Weathered and practical â€” minimal grooming beyond necessity. Heavy dark beard, shot through with grey, kept full and dense. Facial structure shows the broader, well-defined cheekbones and strong jaw characteristic of West African ancestry, refined by Northern European bone structure that sharpens his overall geometry. Skin marked by decades of workshop exposure: old burn scarring, minor chemical marks, the patina of someone who works with their hands in an industrial environment.",
+                                 "distinguishing_marks":  [
+                                                              "Extensive burn scarring along the right forearm (from wrist to elbow) in irregular patches â€” pale, textured tissue from a rig fire in his twenties",
+                                                              "Old compression-injury scarring across both palms and along the dorsal surfaces of the hands â€” thin white lines from wrist to knuckle",
+                                                              "Small workshop burns and minor lacerations scattered across both hands and forearms, evidence of decades of work",
+                                                              "Faint sub-epidermal scarring along both wrists from bone-density reinforcement surgery"
+                                                          ],
+                                 "visible_augmentations":  "Retractable tool-interface ports along both forearms â€” custom-housed units featuring geometric patterning in the bezels (triangular and lattice designs echoing traditional Senegambian textile work). Ports are flush with skin when retracted, visible as subtle linear marks. When deployed, the chrome tool-coupling surfaces are clearly visible. Subocular scanner overlay is not visible when inactive but manifests as a faint geometric grid-pattern beneath the iris when in use.",
+                                 "posture_movement":  "Moves with deliberate, economical grace â€” no wasted motion. Despite his size, he carries himself quietly, almost apologetically. Stands with weight balanced, ready to shift. Hands move with surprising delicacy and precision for their size; they are instruments he has tuned through decades of work. Eyes track mechanically, following problems. Speaks rarely and moves more than he talks.",
+                                 "clothing_style":  "Tier 3-4 working class, practical and durable. Usually wears a worn canvas work jacket (dark grey or charcoal) over a plain fitted t-shirt, both showing grease stains that have become permanent. Heavy-duty cargo pants with reinforced knees and tool loops, well-maintained but not new. Steel-toed boots, always laced tight. Wears a thin gold band on his left ring finger â€” the only adornment. No flashiness, no corporate branding. Clothes are chosen for function and durability, not status. Often carries a cloth rag in his back pocket and a worn personal data slate clipped to his belt."
+                             },
+    "image_prompt":  "Hawa Cervantes, 193cm tall powerfully-built mixed heritage man with deep warm brown skin with golden undertones, broad West African cheekbones refined by Northern European bone structure. Close-cropped black hair threaded with grey, full dark beard also grey-streaked. Deep brown eyes with faint subocular scanner grid visible. Extensive pale burn scarring on right forearm, compression scars across hands from decades of mechanical work. Retractable chrome tool-interface ports along forearms with geometric Senegambian-inspired patterning. Wearing worn dark grey canvas work jacket over fitted t-shirt, heavy-duty reinforced cargo pants, steel-toed boots, thin gold ring on left hand. Standing in industrial workshop with warm overhead lighting catching the bronze reflections in his skin, casting strong shadows across his weathered features. Posture economical and precise, hands at rest showing the precision of a master mechanic. GLMZ, gritty and practical. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  51,
+                             "Hispanic/Latin American":  40.8,
+                             "Northern European":  8.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Guinean":  19.6,
+                                                                             "Nigerian":  15.4
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Zambian":  16
+                                                                             }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Dominican":  40.8
+                                                                          }
+                                                        },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  4.4,
+                                                                       "Austrian":  3.8
+                                                                   }
+                                                  }
+                        },
+    "tier":  "3"
 }

@@ -1,355 +1,368 @@
-{
-  "id": "019d6143a65371f0bbb879b3319647f1",
-  "rating": 70,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Aditi Ergashev-Tetteh",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Remote drone and vehicle operations specialist — rigger",
-  "age": 41,
-  "status": "active",
-  "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Belmont",
-  "description": "Aditi Ergashev-Tetteh is compact and densely muscled, built low to the ground like something designed to survive impacts. At 41, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a rigger out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAditi Ergashev-Tetteh has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.96,
-      "ideal": 0.17,
-      "id": 0.12,
-      "shadow": 0.25,
-      "mask": 0.78,
-      "ghost": 0.82
-    },
-    "core_fears": [
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "Being captured alive — death is preferable to corporate interrogation",
-      "That they're fundamentally alone and connection is just a vulnerability"
-    ],
-    "core_desires": [
-      "Freedom from augmentation debt — the interest compounds like a tumor",
-      "Control — over their body, their schedule, their future",
-      "To find the person who burned them and make it educational"
-    ],
-    "coping_mechanisms": [
-      "Ritual — follows the same pre-job routine every time, superstition as structure",
-      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
-      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
-    ],
-    "blind_spots": [
-      "Cannot distinguish between caution and cowardice in themselves or others",
-      "Trusts technology more than people — machines don't betray",
-      "Cannot see that their independence is actually isolation wearing a better outfit"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
-    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
-    "verbal_tics": [
-      "Uses technical jargon for everything, including emotions",
-      "Whispers when angry — the quieter the voice, the worse the situation"
-    ],
-    "example_lines": [
-      "\"I have eyes in every district. Most of them are on wings.\"",
-      "\"The drone doesn't care about your feelings. Neither do I.\"",
-      "\"Remote operation means I'm everywhere and nowhere. It's very convenient.\""
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Malika Ivanov-Appiah discovers a job they completed last year was a setup for something much larger and much worse",
-    "Malika Ivanov-Appiah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
-    "A corporate black site Malika Ivanov-Appiah once infiltrated is being reopened, and the people inside know her face"
-  ],
-  "narrative_function": "Malika Ivanov-Appiah is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
-  "augmentations": "Neural interface jack at base of skull — standard runner-grade, allows direct net access. Neural dampener — blocks external hacking attempts, passive ICE in the brain",
-  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Independent — operates through reputation only",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 5
-      },
-      "agility": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 8
-      },
-      "reflexes": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 10
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 6
-      },
-      "perception": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 4
-      },
-      "willpower": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 5
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 8
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 4
-      },
-      "intimidation": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 7
-      },
-      "deception": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 5
-      },
-      "empathy": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 8
-      }
-    },
-    "personality": {
-      "aggression": 0.84,
-      "caution": 0.87,
-      "loyalty": 0.85,
-      "greed": 0.52,
-      "empathy": 0.51
-    },
-    "drives": [
-      "justice",
-      "freedom",
-      "revenge"
-    ],
-    "thresholds": {
-      "pain": 9,
-      "stress": 8,
-      "loyalty_break": 9
-    },
-    "strengths": [
-      "pain tolerance beyond normal limits",
-      "encyclopedic knowledge of GLMZ infrastructure"
-    ],
-    "weaknesses": [
-      "trust issues that limit crew effectiveness",
-      "risk-averse to the point of missed opportunities",
-      "inability to delegate — must control everything personally"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "rigger",
-      "tier-2",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Always verifies target identity independently before lethal contracts"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
-      "Values loyalty intensely but has betrayed someone in the past to survive"
-    ],
-    "habits": [
-      "Maintains a dead drop with emergency supplies in three separate districts",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Practices a kata or fighting form every morning regardless of circumstances",
-      "Keeps a physical paper notebook — no digital record of personal thoughts"
-    ],
-    "breaking_points": [
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously",
-      "Learning that a job they completed resulted in mass casualties they weren't told about",
-      "Losing their primary augmentation — the one that defines their professional identity"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Neural interface jack at base of skull",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
-      "replaces": ""
-    },
-    {
-      "name": "Neural dampener",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Canopy",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Central Asian-dominant blend (44.5%) with substantial Sub-Saharan African (27.5%) and Southeast Asian (21.4%) admixture, rounded by East Asian (3.9%) and Hispanic/Latin American (2.7%) heritage. Phenotype reflects the broad facial structure characteristic of Central Asian ancestry, combined with the warm depth and skin saturation of Sub-Saharan African heritage, tempered by Southeast Asian facial geometry and undertones. The ancestral combination creates a distinctively warm, complex mid-to-deep complexion with golden-bronze luminosity.",
-    "height_cm": 158,
-    "weight_kg": 62,
-    "build": "Compact and densely muscled, low center of gravity — shoulders broad relative to frame, core visibly defined. Built like a shock-absorber, all functional compression, no excess.",
-    "hair_color": "Dark brown with premature grey threading through — she doesn't dye it",
-    "hair_style": "Pulled back in a tight, practical braid; loose strands never tolerated",
-    "hair_length": "Medium",
-    "eye_color": "Amber-brown, natural",
-    "skin_tone": "Rich warm brown with golden-bronze undertones. The Central Asian base combines with Sub-Saharan African depth and Southeast Asian saturation to create a complex mid-to-deep tone with distinctive warm radiance in natural light.",
-    "complexion": "Weathered but precisely maintained — skin unmarked by acne or negligence. Fine lines around eyes from squinting at screens. Moderate width facial structure with pronounced cheekbones and defined jawline reflecting Central Asian heritage blended with African facial contours. Expression defaults to neutral observation.",
-    "distinguishing_marks": [
-      "Neural interface jack at base of skull — brushed steel, visible when hair is pulled back, slightly raised scar tissue around the port from six years of active use",
-      "Thin white scar running from left temple to cheekbone, approximately 8cm — clean surgical precision, possibly from old augmentation work",
-      "Small burn mark on inside of right wrist — pale, circular, diameter of a cigarette — origin unknown, refuses to discuss"
-    ],
-    "visible_augmentations": "Neural interface jack at base of skull is the primary visible chrome. No prosthetics. Neural dampener is subcutaneous — not visible but may cause subtle electromagnetic signature near scalp if scanned. Fingernails are reinforced with subdermis plates — slightly too glossy, respond to light like polished metal.",
-    "posture_movement": "Moves economically, no wasted motion. Sits with weight distributed low and centered — ready to move in any direction. Eyes constantly tracking exits and sightlines. Hands rest in lap or on table edge, never crossed or defensive. When standing, favors a slight forward lean — aggressive listening posture.",
-    "clothing_style": "Tier 3-4 utilitarian: fitted black reinforced cargo pants with thigh pockets, grey or black synthetic tops under a weathered tan canvas jacket with internal rig pockets. Boots are corporate-surplus tactical grade, broken in to near-invisibility. No visible logos or affectation. Everything functional, nothing decorative. Carries a slim deck-rig in a shoulder holster, barely visible under jacket."
-  },
-  "image_prompt": "Aditi Ergashev-Tetteh, 158cm compact frame with dense musculature, standing in aggressive listening posture with forward lean. Rich warm brown skin with golden-bronze undertones, reflecting Central Asian, Sub-Saharan African, and Southeast Asian heritage. Amber-brown natural eyes, deep-set with moderate epicanthic shape, constantly tracking sightlines. Dark brown hair with premature grey threading, pulled back in tight practical braid. Weathered complexion, pronounced cheekbones and defined jawline, fine lines around eyes from screen work. Brushed steel neural interface jack visible at base of skull with raised scar tissue. Thin white surgical scar from left temple to cheekbone. Reinforced fingernails with metallic sheen. Wearing black reinforced cargo pants, grey synthetic top under weathered tan canvas jacket with rig pockets, corporate-surplus tactical boots. Slim deck-rig in shoulder holster barely visible under jacket. Economical movement, hands resting in lap. GLMZ Great Lakes Metropolitan Zone, neon-lit corporate district, moody blue and amber lighting casting shadows on her features, gritty urban backdrop, professional hacker aesthetic --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Central Asian": 44.5,
-    "Sub-Saharan African": 27.5,
-    "Southeast Asian": 21.4,
-    "East Asian": 3.9,
-    "Hispanic/Latin American": 2.7
-  },
-  "ancestry_detail": {
-    "Central Asian": {
-      "Mongolic": {
-        "Buryat": 38
-      },
-      "Turkic": {
-        "Kazakh": 2.2,
-        "Uyghur": 4.3
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Sierra Leonean": 15.2
-      },
-      "East African": {
-        "Ethiopian": 7.6
-      },
-      "Central African": {
-        "Cameroonian": 4.7
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 3.6
-      },
-      "Thai": {
-        "Thai": 2.5
-      },
-      "Vietnamese": {
-        "Vietnamese": 15.3
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 3.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 2.1
-      },
-      "Central American": {
-        "Salvadoran": 0.6
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a65371f0bbb879b3319647f1",
+    "rating":  70,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Aditi Ergashev-Tetteh",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Remote drone and vehicle operations specialist â€” rigger",
+    "age":  41,
+    "status":  "active",
+    "location":  "The Canopy â€” elevated walkway district above Geartown, near Lincoln and Belmont",
+    "description":  "Aditi Ergashev-Tetteh is compact and densely muscled, built low to the ground like something designed to survive impacts. At 41, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible â€” neural interface jack at base of skull â€” standard runner-grade, allows direct ne â€” and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a rigger out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAditi Ergashev-Tetteh has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "Being captured alive â€” death is preferable to corporate interrogation",
+                                          "That they\u0027re fundamentally alone and connection is just a vulnerability"
+                                      ],
+                       "core_desires":  [
+                                            "Freedom from augmentation debt â€” the interest compounds like a tumor",
+                                            "Control â€” over their body, their schedule, their future",
+                                            "To find the person who burned them and make it educational"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual â€” follows the same pre-job routine every time, superstition as structure",
+                                                 "Denial â€” nothing is wrong, everything is fine, they are fine, shut up",
+                                                 "Control â€” micromanages everything within reach to compensate for the chaos everywhere else"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot distinguish between caution and cowardice in themselves or others",
+                                           "Trusts technology more than people â€” machines don\u0027t betray",
+                                           "Cannot see that their independence is actually isolation wearing a better outfit"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, profane, and vivid. Speaks in images â€” everything is a metaphor for violence or weather.",
+                            "cadence":  "Flowing and unhurried â€” talks like someone who has never been interrupted and doesn\u0027t expect to be.",
+                            "verbal_tics":  [
+                                                "Uses technical jargon for everything, including emotions",
+                                                "Whispers when angry â€” the quieter the voice, the worse the situation"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I have eyes in every district. Most of them are on wings.\"",
+                                                  "\"The drone doesn\u0027t care about your feelings. Neither do I.\"",
+                                                  "\"Remote operation means I\u0027m everywhere and nowhere. It\u0027s very convenient.\""
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Malika Ivanov-Appiah discovers a job they completed last year was a setup for something much larger and much worse",
+                        "Malika Ivanov-Appiah\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad",
+                        "A corporate black site Malika Ivanov-Appiah once infiltrated is being reopened, and the people inside know her face"
+                    ],
+    "narrative_function":  "Malika Ivanov-Appiah is a pressure point â€” the kind of character whose choices ripple outward. When she makes a decision, other people\u0027s lives change. That weight is the engine of her stories.",
+    "augmentations":  "Neural interface jack at base of skull â€” standard runner-grade, allows direct net access. Neural dampener â€” blocks external hacking attempts, passive ICE in the brain",
+    "daily_life":  "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather â€” not for pleasure, but for market intelligence.",
+    "affiliation":  "Independent â€” operates through reputation only",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  3,
+                                                    "augmented":  0,
+                                                    "effective":  5
+                                                },
+                                   "agility":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               },
+                                   "endurance":  {
+                                                     "base":  6,
+                                                     "augmented":  3,
+                                                     "effective":  8
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  8,
+                                                    "augmented":  2,
+                                                    "effective":  10
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  4,
+                                                      "augmented":  3,
+                                                      "effective":  6
+                                                  },
+                                 "perception":  {
+                                                    "base":  8,
+                                                    "augmented":  2,
+                                                    "effective":  4
+                                                },
+                                 "willpower":  {
+                                                   "base":  6,
+                                                   "augmented":  2,
+                                                   "effective":  5
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  0,
+                                                   "effective":  8
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  3,
+                                                  "augmented":  3,
+                                                  "effective":  4
+                                              },
+                                 "intimidation":  {
+                                                      "base":  7,
+                                                      "augmented":  3,
+                                                      "effective":  7
+                                                  },
+                                 "deception":  {
+                                                   "base":  3,
+                                                   "augmented":  3,
+                                                   "effective":  5
+                                               },
+                                 "empathy":  {
+                                                 "base":  7,
+                                                 "augmented":  1,
+                                                 "effective":  8
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.84,
+                                      "caution":  0.87,
+                                      "loyalty":  0.85,
+                                      "greed":  0.52,
+                                      "empathy":  0.51
+                                  },
+                  "drives":  [
+                                 "justice",
+                                 "freedom",
+                                 "revenge"
+                             ],
+                  "thresholds":  {
+                                     "pain":  9,
+                                     "stress":  8,
+                                     "loyalty_break":  9
+                                 },
+                  "strengths":  [
+                                    "pain tolerance beyond normal limits",
+                                    "encyclopedic knowledge of GLMZ infrastructure"
+                                ],
+                  "weaknesses":  [
+                                     "trust issues that limit crew effectiveness",
+                                     "risk-averse to the point of missed opportunities",
+                                     "inability to delegate â€” must control everything personally"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "rigger",
+                               "tier-2",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Always verifies target identity independently before lethal contracts"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Professional and transactional. The relationship is defined by the contract and nothing else.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+                                              "Values loyalty intensely but has betrayed someone in the past to survive"
+                                          ],
+                       "habits":  [
+                                      "Maintains a dead drop with emergency supplies in three separate districts",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore",
+                                      "Practices a kata or fighting form every morning regardless of circumstances",
+                                      "Keeps a physical paper notebook â€” no digital record of personal thoughts"
+                                  ],
+                       "breaking_points":  [
+                                               "Complete isolation â€” cut off from network, contacts, and purpose simultaneously",
+                                               "Learning that a job they completed resulted in mass casualties they weren\u0027t told about",
+                                               "Losing their primary augmentation â€” the one that defines their professional identity"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Neural interface jack at base of skull",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Neural interface jack at base of skull â€” standard runner-grade, allows direct net access",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Neural dampener",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Neural dampener â€” blocks external hacking attempts, passive ICE in the brain",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Canopy",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Central Asian-dominant blend (44.5%) with substantial Sub-Saharan African (27.5%) and Southeast Asian (21.4%) admixture, rounded by East Asian (3.9%) and Hispanic/Latin American (2.7%) heritage. Phenotype reflects the broad facial structure characteristic of Central Asian ancestry, combined with the warm depth and skin saturation of Sub-Saharan African heritage, tempered by Southeast Asian facial geometry and undertones. The ancestral combination creates a distinctively warm, complex mid-to-deep complexion with golden-bronze luminosity.",
+                                 "height_cm":  158,
+                                 "weight_kg":  62,
+                                 "build":  "Compact and densely muscled, low center of gravity â€” shoulders broad relative to frame, core visibly defined. Built like a shock-absorber, all functional compression, no excess.",
+                                 "hair_color":  "Dark brown with premature grey threading through â€” she doesn\u0027t dye it",
+                                 "hair_style":  "Pulled back in a tight, practical braid; loose strands never tolerated",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Amber-brown, natural",
+                                 "skin_tone":  "Rich warm brown with golden-bronze undertones. The Central Asian base combines with Sub-Saharan African depth and Southeast Asian saturation to create a complex mid-to-deep tone with distinctive warm radiance in natural light.",
+                                 "complexion":  "Weathered but precisely maintained â€” skin unmarked by acne or negligence. Fine lines around eyes from squinting at screens. Moderate width facial structure with pronounced cheekbones and defined jawline reflecting Central Asian heritage blended with African facial contours. Expression defaults to neutral observation.",
+                                 "distinguishing_marks":  [
+                                                              "Neural interface jack at base of skull â€” brushed steel, visible when hair is pulled back, slightly raised scar tissue around the port from six years of active use",
+                                                              "Thin white scar running from left temple to cheekbone, approximately 8cm â€” clean surgical precision, possibly from old augmentation work",
+                                                              "Small burn mark on inside of right wrist â€” pale, circular, diameter of a cigarette â€” origin unknown, refuses to discuss"
+                                                          ],
+                                 "visible_augmentations":  "Neural interface jack at base of skull is the primary visible chrome. No prosthetics. Neural dampener is subcutaneous â€” not visible but may cause subtle electromagnetic signature near scalp if scanned. Fingernails are reinforced with subdermis plates â€” slightly too glossy, respond to light like polished metal.",
+                                 "posture_movement":  "Moves economically, no wasted motion. Sits with weight distributed low and centered â€” ready to move in any direction. Eyes constantly tracking exits and sightlines. Hands rest in lap or on table edge, never crossed or defensive. When standing, favors a slight forward lean â€” aggressive listening posture.",
+                                 "clothing_style":  "Tier 3-4 utilitarian: fitted black reinforced cargo pants with thigh pockets, grey or black synthetic tops under a weathered tan canvas jacket with internal rig pockets. Boots are corporate-surplus tactical grade, broken in to near-invisibility. No visible logos or affectation. Everything functional, nothing decorative. Carries a slim deck-rig in a shoulder holster, barely visible under jacket."
+                             },
+    "image_prompt":  "Aditi Ergashev-Tetteh, 158cm compact frame with dense musculature, standing in aggressive listening posture with forward lean. Rich warm brown skin with golden-bronze undertones, reflecting Central Asian, Sub-Saharan African, and Southeast Asian heritage. Amber-brown natural eyes, deep-set with moderate epicanthic shape, constantly tracking sightlines. Dark brown hair with premature grey threading, pulled back in tight practical braid. Weathered complexion, pronounced cheekbones and defined jawline, fine lines around eyes from screen work. Brushed steel neural interface jack visible at base of skull with raised scar tissue. Thin white surgical scar from left temple to cheekbone. Reinforced fingernails with metallic sheen. Wearing black reinforced cargo pants, grey synthetic top under weathered tan canvas jacket with rig pockets, corporate-surplus tactical boots. Slim deck-rig in shoulder holster barely visible under jacket. Economical movement, hands resting in lap. GLMZ Great Lakes Metropolitan Zone, neon-lit corporate district, moody blue and amber lighting casting shadows on her features, gritty urban backdrop, professional hacker aesthetic --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Central Asian":  44.5,
+                             "Sub-Saharan African":  27.5,
+                             "Southeast Asian":  21.4,
+                             "East Asian":  3.9,
+                             "Hispanic/Latin American":  2.7
+                         },
+    "ancestry_detail":  {
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Buryat":  38
+                                                               },
+                                                  "Turkic":  {
+                                                                 "Kazakh":  2.2,
+                                                                 "Uyghur":  4.3
+                                                             }
+                                              },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Sierra Leonean":  15.2
+                                                                         },
+                                                        "East African":  {
+                                                                             "Ethiopian":  7.6
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  4.7
+                                                                            }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  3.6
+                                                                },
+                                                    "Thai":  {
+                                                                 "Thai":  2.5
+                                                             },
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  15.3
+                                                                   }
+                                                },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  3.9
+                                                          }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  2.1
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  0.6
+                                                                                 }
+                                                        }
+                        }
 }

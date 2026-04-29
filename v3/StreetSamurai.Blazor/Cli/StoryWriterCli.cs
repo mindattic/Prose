@@ -30,7 +30,7 @@ public static class StoryWriterCli
 
         var director = services.GetRequiredService<IStoryDirectorService>();
         var db       = services.GetRequiredService<IDatabaseService>();
-        var repo     = services.GetRequiredService<IStoryBlockRepository>();
+        var repo     = services.GetRequiredService<IChapterRepository>();
 
         // Resolve protagonist identifiers (name/alias/id) to canonical character names.
         var resolved = new List<string>();
@@ -82,21 +82,30 @@ public static class StoryWriterCli
             return 2;
         }
 
-        // Save as a StoryProject — same as the UI path in Stories.razor:
+        // Save as a Chapter — same as the UI path in Stories.razor:
         // the ProjectId is reused so checkpoint, outline, and knowledge files stay associated.
         var body = parsed.Format == "html"
             ? AutonomousStoryFormatter.ToHtml(story)
             : AutonomousStoryFormatter.ToMarkdown(story);
 
-        var project = new StoryProject
+        var chapter = new Chapter
         {
             Id         = story.ProjectId,
             Title      = story.Title,
             Characters = story.Characters,
             Html       = body,
             Status     = Constants.Status.Draft,
+            Beats      = story.Beats.Select((b, i) => new ChapterBeat
+            {
+                Index         = i,
+                Title         = b.Title,
+                Text          = b.Text,
+                Act           = b.Act,
+                StructureRole = b.StructureRole,
+                SceneType     = b.SceneType,
+            }).ToList(),
         };
-        repo.SaveProject(project);
+        repo.SaveChapter(chapter);
 
         if (!string.IsNullOrWhiteSpace(parsed.OutputPath))
         {

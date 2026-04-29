@@ -1,376 +1,389 @@
-{
-  "id": "019d6143a62e7e7580848bb67a1f7b88",
-  "type": "character",
-  "name": "Edmundo Petelo-Faalele-Tofauti",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Prototype theft and corporate tech acquisition — tech retriever",
-  "age": 35,
-  "status": "active",
-  "location": "The Rookery — dense vertical housing, gang-controlled, near Halsted and Division",
-  "description": "Edmundo Petelo-Faalele-Tofauti is compact and densely muscled, built low to the ground like something designed to survive impacts. At 35, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a tech retriever out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Edmundo Petelo-Faalele-Tofauti describe her as a precision instrument — point her at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.48,
-      "ideal": 0.97,
-      "id": 0.58,
-      "shadow": 0.12,
-      "mask": 0.5,
-      "ghost": 0.16
-    },
-    "core_fears": [
-      "Being replaced — younger, faster, cheaper runners coming up behind them",
-      "That they're fundamentally alone and connection is just a vulnerability",
-      "The quiet — silence means something is about to go very wrong"
-    ],
-    "core_desires": [
-      "To matter to someone for who they are, not what they can do",
-      "To prove everyone who dismissed them catastrophically wrong",
-      "A crew worth trusting — people who stay when the shooting starts"
-    ],
-    "coping_mechanisms": [
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
-      "Maintains weapons obsessively — cleaning guns is meditation",
-      "Exercises compulsively — the body must be ready, always"
-    ],
-    "blind_spots": [
-      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
-      "Trusts technology more than people — machines don't betray",
-      "Cannot see that their independence is actually isolation wearing a better outfit"
-    ],
-    "secret": "Ilhan Sandstrom-Badu maintains a second identity — a completely clean civilian persona with a lease, a job history, and a social profile. It's their exit strategy."
-  },
-  "speech_patterns": {
-    "vocabulary": "the Gray Zone street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
-    "cadence": "Low and even — the vocal equivalent of still water.",
-    "verbal_tics": [
-      "Refers to killing as 'solving' — clinical detachment as coping mechanism",
-      "Ends statements with 'yeah?' — not a question, a dare"
-    ],
-    "example_lines": [
-      "\"Corporate R&D security is built to stop amateurs. I'm a professional.\"",
-      "\"The prototype is worth more than both our lives combined. Handle it carefully.\"",
-      "\"I steal things that haven't been invented yet. The future is always in transit.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A corporate black site Ilhan Sandstrom-Badu once infiltrated is being reopened, and the people inside know her face",
-    "A Tier 4 executive offers Ilhan Sandstrom-Badu a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "Ilhan Sandstrom-Badu's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
-  ],
-  "narrative_function": "As a tech retriever, Ilhan Sandstrom-Badu embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings. Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 6
-      },
-      "agility": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 5
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 7
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 10
-      },
-      "perception": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 10
-      },
-      "willpower": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 4
-      },
-      "technical": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 4
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 5
-      },
-      "intimidation": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 9
-      },
-      "deception": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 6
-      },
-      "empathy": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 9
-      }
-    },
-    "personality": {
-      "aggression": 0.34,
-      "caution": 0.74,
-      "loyalty": 0.76,
-      "greed": 0.77,
-      "empathy": 0.24
-    },
-    "drives": [
-      "protection",
-      "power",
-      "survival"
-    ],
-    "thresholds": {
-      "pain": 9,
-      "stress": 7,
-      "loyalty_break": 10
-    },
-    "strengths": [
-      "physical endurance",
-      "multilingual — speaks 4+ languages fluently"
-    ],
-    "weaknesses": [
-      "grudge-holding that compromises rational decision-making",
-      "inability to delegate — must control everything personally"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "tech retriever",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Always verifies target identity independently before lethal contracts",
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
-    ],
-    "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Claims not to care about reputation but monitors what people say about them obsessively",
-      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior",
-      "Insists they work alone but performs noticeably better in a team"
-    ],
-    "habits": [
-      "Carries a specific caliber round as a lucky charm — has never fired it",
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
-      "Checks exits within 10 seconds of entering any room",
-      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say"
-    ],
-    "breaking_points": [
-      "Running out of options — no contacts, no money, no safe house, no way out",
-      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
-      "Losing their primary augmentation — the one that defines their professional identity"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
-      "replaces": ""
-    },
-    {
-      "name": "Hydraulic joints in knees and elbows",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Rookery",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Model 9 'Payday'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Nearfield",
-    "The Gradient Compact",
-    "Slagworks Industrial",
-    "Gravimetric Collapse Charge GCC-9"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Edmundo's ancestry is a striking Pacific Islander foundation (56.8%) creating warm, luminous melanin with golden undertones, substantially deepened by Sub-Saharan African heritage (9.9%) that adds richness and defined bone structure. South Asian ancestry (17.4%) contributes the prominent, high cheekbones and distinctive eye shape. Middle Eastern (9.9%) and Hispanic/Latin American (6.0%) heritage layer additional warmth and undertone complexity throughout. The result is a medium-to-deep warm complexion with bronze-gold fusion and sophisticated multi-layered undertones — distinctly Polynesian-influenced with South Asian definition and African depth.",
-    "height_cm": 162,
-    "weight_kg": 68,
-    "build": "Compact and densely muscled, low center of gravity with broad shoulders tapering to a narrow waist. Built for impact absorption and explosive movement rather than reach — every visible muscle has definition but not bulk.",
-    "hair_color": "Dark brown with natural copper undertones",
-    "hair_style": "Pulled back in a tight, functional braid secured with steel wire",
-    "hair_length": "Medium (shoulder-length when loose)",
-    "eye_color": "Chrome iris rings surrounding dark brown natural eyes — thermal and low-light augmentation visible as faint LED glow in dim conditions",
-    "skin_tone": "Warm deep-medium tone with rich bronze-gold luminosity, substantial melanin depth from Pacific Islander and Sub-Saharan ancestry, golden undertones dominant throughout, South Asian warmth in the mid-face creating cheekbone radiance, subtle warmth from Hispanic/Latin heritage layering chromatic depth. Skin appears luminous and multitonal rather than matte.",
-    "complexion": "Striking, angular face with high, prominent cheekbones reflecting Pacific Islander, South Asian, and Sub-Saharan ancestry, strong defined jawline with warm undertones, and rich bronze-gold complexion across the full face. The skin around the cybernetic eye sockets shows faint surgical lines and subtle chrome seepage. Grooming is functional and precise — no jewelry, no cosmetics.",
-    "distinguishing_marks": [
-      "Thin surgical scar running from left temple to cheekbone where the cybernetic eye was installed.",
-      "Network of fine white scars across the knuckles and backs of both hands — impact marks from years of combat training.",
-      "Burn scar on the inside of the right forearm (10cm long) — old corporate security escalation, deliberately kept visible as a warning.",
-      "Faint discoloration in a line down the center of her spine, visible only in direct light — subcutaneous armor plating beneath the skin."
-    ],
-    "visible_augmentations": "Cybernetic eyes with chrome iris rings and faint blue-green luminescence in low light. Hydraulic joint articulation visible at the elbows and knees — the skin around these points shows subtle metallic threading and occasional micro-hydraulic fluid weeping. When she moves quickly, the joints emit a soft, precise hissing sound.",
-    "posture_movement": "Moves with economical precision — no wasted motion, no flourish. Stands with weight balanced on the balls of her feet, ready to shift instantly. Resting posture is coiled rather than relaxed. Eyes track targets with mechanical smoothness. When engaging, her movements are sharp and deliberate, powered by the hydraulic augmentations.",
-    "clothing_style": "Tier 3-4 utilitarian: matte-black reinforced synth-weave tactical jacket with hidden pocket architecture, form-fitted to avoid snagging. Underneath, charcoal compression undershirt with integrated cooling channels. Cargo pants in dark gray with reinforced stitching and magnetic tool fasteners at the thighs. Steel-toed boots with grip-enhanced soles — no logos, all function. A single item of visible non-utility clothing: a faded silver pendant worn under the shirt, just visible at the neckline."
-  },
-  "image_prompt": "Edmundo Petelo-Faalele-Tofauti, 162cm tall, compact and densely muscled figure with low center of gravity, broad shoulders tapering to narrow waist. Medium deep warm skin tone with rich bronze-gold luminosity and multi-layered undertones from Pacific Islander, South Asian, Sub-Saharan African, Middle Eastern and Hispanic heritage. Striking angular face with high prominent cheekbones, strong defined jawline, faint surgical scar from left temple to cheekbone, dark brown hair with copper undertones pulled back in tight functional steel-wire secured braid. Cybernetic eyes with chrome iris rings and faint blue-green LED glow. Visible metallic threading around elbows and knees from hydraulic joint augmentations. Dark tactical utilitarian clothing: matte-black reinforced synth-weave jacket, charcoal compression undershirt, dark gray cargo pants with magnetic tool fasteners, steel-toed boots. Faded silver pendant visible at neckline. Coiled posture, economical precise movement, weight balanced on balls of feet. GLMZ Great Lakes Metropolitan Zone, moody neon-lit industrial setting, cool blue and amber accent lighting, mechanical precision in every gesture, ready stance. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Pacific Islander": 56.8,
-    "South Asian": 17.4,
-    "Sub-Saharan African": 9.9,
-    "Middle Eastern": 9.9,
-    "Hispanic/Latin American": 6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Pacific Islander": {
-      "Polynesian": {
-        "Hawaiian": 11.5,
-        "Tongan": 8.1
-      },
-      "Melanesian": {
-        "Ni-Vanuatu": 27.9
-      },
-      "Micronesian": {
-        "Palauan": 7.5,
-        "Kiribati": 1.8
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Punjabi Pakistani": 1.4,
-        "Sindhi": 3.3
-      },
-      "Indian": {
-        "Gujarati": 1.6,
-        "Punjabi": 8.6
-      },
-      "Nepali": {
-        "Nepali": 2.5
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Ugandan": 6.2
-      },
-      "Southern African": {
-        "Zimbabwean": 1.2,
-        "South African": 0.1
-      },
-      "Central African": {
-        "Gabonese": 1.2,
-        "Cameroonian": 1.2
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Afghan Dari": 5.9
-      },
-      "Arab Gulf": {
-        "Kuwaiti": 4
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 4
-      },
-      "Mexican": {
-        "Mexican": 0.9
-      },
-      "South American": {
-        "Colombian": 0.7,
-        "Peruvian": 0.4
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a62e7e7580848bb67a1f7b88",
+    "type":  "character",
+    "name":  "Edmundo Petelo-Faalele-Tofauti",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Prototype theft and corporate tech acquisition â€” tech retriever",
+    "age":  35,
+    "status":  "active",
+    "location":  "The Rookery â€” dense vertical housing, gang-controlled, near Halsted and Division",
+    "description":  "Edmundo Petelo-Faalele-Tofauti is compact and densely muscled, built low to the ground like something designed to survive impacts. At 35, she has soft features that belie the chrome underneath â€” people underestimate her once, usually only once. The chrome is visible â€” cybernetic eyes with thermal overlay and low-light enhancement â€” chrome iris rin â€” and she makes no effort to hide it.\n\nHer entry into running was involuntary â€” a debt to the wrong people, a choice between working it off or losing parts â€” and the debt is still not fully paid. She works as a tech retriever out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Edmundo Petelo-Faalele-Tofauti describe her as a precision instrument â€” point her at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them",
+                                          "That they\u0027re fundamentally alone and connection is just a vulnerability",
+                                          "The quiet â€” silence means something is about to go very wrong"
+                                      ],
+                       "core_desires":  [
+                                            "To matter to someone for who they are, not what they can do",
+                                            "To prove everyone who dismissed them catastrophically wrong",
+                                            "A crew worth trusting â€” people who stay when the shooting starts"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring",
+                                                 "Maintains weapons obsessively â€” cleaning guns is meditation",
+                                                 "Exercises compulsively â€” the body must be ready, always"
+                                             ],
+                       "blind_spots":  [
+                                           "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+                                           "Trusts technology more than people â€” machines don\u0027t betray",
+                                           "Cannot see that their independence is actually isolation wearing a better outfit"
+                                       ],
+                       "secret":  "Ilhan Sandstrom-Badu maintains a second identity â€” a completely clean civilian persona with a lease, a job history, and a social profile. It\u0027s their exit strategy."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "the Gray Zone street dialect â€” layered slang, rhythm-heavy, half the meaning is in the cadence.",
+                            "cadence":  "Low and even â€” the vocal equivalent of still water.",
+                            "verbal_tics":  [
+                                                "Refers to killing as \u0027solving\u0027 â€” clinical detachment as coping mechanism",
+                                                "Ends statements with \u0027yeah?\u0027 â€” not a question, a dare"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Corporate R\u0026D security is built to stop amateurs. I\u0027m a professional.\"",
+                                                  "\"The prototype is worth more than both our lives combined. Handle it carefully.\"",
+                                                  "\"I steal things that haven\u0027t been invented yet. The future is always in transit.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A corporate black site Ilhan Sandstrom-Badu once infiltrated is being reopened, and the people inside know her face",
+                        "A Tier 4 executive offers Ilhan Sandstrom-Badu a permanent position â€” the pay is obscene and the strings are invisible until they tighten",
+                        "Ilhan Sandstrom-Badu\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad"
+                    ],
+    "narrative_function":  "As a tech retriever, Ilhan Sandstrom-Badu embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+    "augmentations":  "Cybernetic eyes with thermal overlay and low-light enhancement â€” chrome iris rings. Hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes",
+    "daily_life":  "Keeps a rigid daily structure â€” wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+    "affiliation":  "Semi-independent â€” recurring contracts with mid-tier fixers",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  5,
+                                                    "augmented":  3,
+                                                    "effective":  6
+                                                },
+                                   "agility":  {
+                                                   "base":  6,
+                                                   "augmented":  0,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  7,
+                                                     "augmented":  1,
+                                                     "effective":  5
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  0,
+                                                    "effective":  7
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  7,
+                                                      "augmented":  3,
+                                                      "effective":  10
+                                                  },
+                                 "perception":  {
+                                                    "base":  5,
+                                                    "augmented":  1,
+                                                    "effective":  10
+                                                },
+                                 "willpower":  {
+                                                   "base":  5,
+                                                   "augmented":  1,
+                                                   "effective":  4
+                                               },
+                                 "technical":  {
+                                                   "base":  5,
+                                                   "augmented":  0,
+                                                   "effective":  4
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  4,
+                                                  "augmented":  3,
+                                                  "effective":  5
+                                              },
+                                 "intimidation":  {
+                                                      "base":  3,
+                                                      "augmented":  0,
+                                                      "effective":  9
+                                                  },
+                                 "deception":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  6
+                                               },
+                                 "empathy":  {
+                                                 "base":  3,
+                                                 "augmented":  2,
+                                                 "effective":  9
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.34,
+                                      "caution":  0.74,
+                                      "loyalty":  0.76,
+                                      "greed":  0.77,
+                                      "empathy":  0.24
+                                  },
+                  "drives":  [
+                                 "protection",
+                                 "power",
+                                 "survival"
+                             ],
+                  "thresholds":  {
+                                     "pain":  9,
+                                     "stress":  7,
+                                     "loyalty_break":  10
+                                 },
+                  "strengths":  [
+                                    "physical endurance",
+                                    "multilingual â€” speaks 4+ languages fluently"
+                                ],
+                  "weaknesses":  [
+                                     "grudge-holding that compromises rational decision-making",
+                                     "inability to delegate â€” must control everything personally"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "tech retriever",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess â€” read the situation, identify threats and advantages",
+                                                 "2. Negotiate â€” try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate â€” make the cost of conflict clear",
+                                                 "4. Precision violence â€” surgical, targeted, minimal collateral",
+                                                 "5. Full engagement â€” overwhelming force, no half measures",
+                                                 "6. Emergency protocol â€” abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Claims not to care about reputation but monitors what people say about them obsessively",
+                                              "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior",
+                                              "Insists they work alone but performs noticeably better in a team"
+                                          ],
+                       "habits":  [
+                                      "Carries a specific caliber round as a lucky charm â€” has never fired it",
+                                      "Takes a specific route home every time, varying only one block per trip â€” paranoia as lifestyle",
+                                      "Checks exits within 10 seconds of entering any room",
+                                      "Taps a specific rhythm on hard surfaces when thinking â€” Morse code for a word they won\u0027t say"
+                                  ],
+                       "breaking_points":  [
+                                               "Running out of options â€” no contacts, no money, no safe house, no way out",
+                                               "Their body rejecting their cyberware â€” chrome rot, immune rejection, the nightmare scenario",
+                                               "Losing their primary augmentation â€” the one that defines their professional identity"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Cybernetic eyes with thermal overlay and low-light enhancement",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Cybernetic eyes with thermal overlay and low-light enhancement â€” chrome iris rings",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Hydraulic joints in knees and elbows",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Rookery",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Nearfield",
+                             "The Gradient Compact",
+                             "Slagworks Industrial",
+                             "Gravimetric Collapse Charge GCC-9"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Edmundo\u0027s ancestry is a striking Pacific Islander foundation (56.8%) creating warm, luminous melanin with golden undertones, substantially deepened by Sub-Saharan African heritage (9.9%) that adds richness and defined bone structure. South Asian ancestry (17.4%) contributes the prominent, high cheekbones and distinctive eye shape. Middle Eastern (9.9%) and Hispanic/Latin American (6.0%) heritage layer additional warmth and undertone complexity throughout. The result is a medium-to-deep warm complexion with bronze-gold fusion and sophisticated multi-layered undertones â€” distinctly Polynesian-influenced with South Asian definition and African depth.",
+                                 "height_cm":  162,
+                                 "weight_kg":  68,
+                                 "build":  "Compact and densely muscled, low center of gravity with broad shoulders tapering to a narrow waist. Built for impact absorption and explosive movement rather than reach â€” every visible muscle has definition but not bulk.",
+                                 "hair_color":  "Dark brown with natural copper undertones",
+                                 "hair_style":  "Pulled back in a tight, functional braid secured with steel wire",
+                                 "hair_length":  "Medium (shoulder-length when loose)",
+                                 "eye_color":  "Chrome iris rings surrounding dark brown natural eyes â€” thermal and low-light augmentation visible as faint LED glow in dim conditions",
+                                 "skin_tone":  "Warm deep-medium tone with rich bronze-gold luminosity, substantial melanin depth from Pacific Islander and Sub-Saharan ancestry, golden undertones dominant throughout, South Asian warmth in the mid-face creating cheekbone radiance, subtle warmth from Hispanic/Latin heritage layering chromatic depth. Skin appears luminous and multitonal rather than matte.",
+                                 "complexion":  "Striking, angular face with high, prominent cheekbones reflecting Pacific Islander, South Asian, and Sub-Saharan ancestry, strong defined jawline with warm undertones, and rich bronze-gold complexion across the full face. The skin around the cybernetic eye sockets shows faint surgical lines and subtle chrome seepage. Grooming is functional and precise â€” no jewelry, no cosmetics.",
+                                 "distinguishing_marks":  [
+                                                              "Thin surgical scar running from left temple to cheekbone where the cybernetic eye was installed.",
+                                                              "Network of fine white scars across the knuckles and backs of both hands â€” impact marks from years of combat training.",
+                                                              "Burn scar on the inside of the right forearm (10cm long) â€” old corporate security escalation, deliberately kept visible as a warning.",
+                                                              "Faint discoloration in a line down the center of her spine, visible only in direct light â€” subcutaneous armor plating beneath the skin."
+                                                          ],
+                                 "visible_augmentations":  "Cybernetic eyes with chrome iris rings and faint blue-green luminescence in low light. Hydraulic joint articulation visible at the elbows and knees â€” the skin around these points shows subtle metallic threading and occasional micro-hydraulic fluid weeping. When she moves quickly, the joints emit a soft, precise hissing sound.",
+                                 "posture_movement":  "Moves with economical precision â€” no wasted motion, no flourish. Stands with weight balanced on the balls of her feet, ready to shift instantly. Resting posture is coiled rather than relaxed. Eyes track targets with mechanical smoothness. When engaging, her movements are sharp and deliberate, powered by the hydraulic augmentations.",
+                                 "clothing_style":  "Tier 3-4 utilitarian: matte-black reinforced synth-weave tactical jacket with hidden pocket architecture, form-fitted to avoid snagging. Underneath, charcoal compression undershirt with integrated cooling channels. Cargo pants in dark gray with reinforced stitching and magnetic tool fasteners at the thighs. Steel-toed boots with grip-enhanced soles â€” no logos, all function. A single item of visible non-utility clothing: a faded silver pendant worn under the shirt, just visible at the neckline."
+                             },
+    "image_prompt":  "Edmundo Petelo-Faalele-Tofauti, 162cm tall, compact and densely muscled figure with low center of gravity, broad shoulders tapering to narrow waist. Medium deep warm skin tone with rich bronze-gold luminosity and multi-layered undertones from Pacific Islander, South Asian, Sub-Saharan African, Middle Eastern and Hispanic heritage. Striking angular face with high prominent cheekbones, strong defined jawline, faint surgical scar from left temple to cheekbone, dark brown hair with copper undertones pulled back in tight functional steel-wire secured braid. Cybernetic eyes with chrome iris rings and faint blue-green LED glow. Visible metallic threading around elbows and knees from hydraulic joint augmentations. Dark tactical utilitarian clothing: matte-black reinforced synth-weave jacket, charcoal compression undershirt, dark gray cargo pants with magnetic tool fasteners, steel-toed boots. Faded silver pendant visible at neckline. Coiled posture, economical precise movement, weight balanced on balls of feet. GLMZ Great Lakes Metropolitan Zone, moody neon-lit industrial setting, cool blue and amber accent lighting, mechanical precision in every gesture, ready stance. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Pacific Islander":  56.8,
+                             "South Asian":  17.4,
+                             "Sub-Saharan African":  9.9,
+                             "Middle Eastern":  9.9,
+                             "Hispanic/Latin American":  6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Pacific Islander":  {
+                                                     "Polynesian":  {
+                                                                        "Hawaiian":  11.5,
+                                                                        "Tongan":  8.1
+                                                                    },
+                                                     "Melanesian":  {
+                                                                        "Ni-Vanuatu":  27.9
+                                                                    },
+                                                     "Micronesian":  {
+                                                                         "Palauan":  7.5,
+                                                                         "Kiribati":  1.8
+                                                                     }
+                                                 },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  1.4,
+                                                                  "Sindhi":  3.3
+                                                              },
+                                                "Indian":  {
+                                                               "Gujarati":  1.6,
+                                                               "Punjabi":  8.6
+                                                           },
+                                                "Nepali":  {
+                                                               "Nepali":  2.5
+                                                           }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ugandan":  6.2
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  1.2,
+                                                                                 "South African":  0.1
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Gabonese":  1.2,
+                                                                                "Cameroonian":  1.2
+                                                                            }
+                                                    },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Afghan Dari":  5.9
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Kuwaiti":  4
+                                                                 }
+                                               },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  4
+                                                                          },
+                                                            "Mexican":  {
+                                                                            "Mexican":  0.9
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Colombian":  0.7,
+                                                                                   "Peruvian":  0.4
+                                                                               }
+                                                        }
+                        },
+    "tier":  "3"
 }

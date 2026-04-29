@@ -1,257 +1,278 @@
-{
-  "id": "019d6143a5e07e4fbd738557f97a0f77",
-  "type": "character",
-  "name": "Alicia Venkatesh",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Traditional Catholic priest and synthetic rights advocate",
-  "age": 52,
-  "status": "active",
-  "location": "Highland Park Autonomous Zone — Our Lady of Persistent Signal, a storefront church, near Michigan Ave and Walton",
-  "description": "Alicia Venkatesh is a large man going soft at the middle in the way of someone who eats communally and never alone, with a full beard beginning to grey and hands that are permanently stained faint blue from the bioink he uses to hand-copy religious texts as a meditative practice. He has no geneware or cosmetic modifications, which in the Canopy would make him conspicuous but in Highland Park reads as ordinary integrity. He has a subvocal implant for phone communication, the cheapest model available, because his previous one died and he couldn't afford better. He dresses in clerical black with a collar that he replaces when it yellows, which is often.\n\nAlicia Venkatesh was ordained in the remnant Catholic structure twenty years ago and assigned to Highland Park because nobody else wanted it. He has stayed because he has become convinced, in the particular way of people who find their vocation by accident, that this is specifically where he is supposed to be. His theology on synthetic rights has made him controversial within his already-marginal institution: he argues from traditional ensoulment doctrine that if a synthetic entity demonstrates persistent identity, preference, and suffering, the question of soul is not closed by biology. He gives communion to synthetics who want it, which has generated three formal complaints. He has not stopped.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.9,
-      "id": 0.4,
-      "shadow": 0.5,
-      "mask": 0.3,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "That his synthetic-inclusive theology is a rationalization of his loneliness — that he needed more parishioners and dressed it up as conscience",
-      "Being removed from his parish before his work there is finished"
-    ],
-    "core_desires": [
-      "Recognition from his institution that he is right — not applause, just acknowledgment",
-      "To see one of his synthetic congregants receive institutional sacramental recognition before he dies"
-    ],
-    "coping_mechanisms": [
-      "The bioink text-copying — slow, embodied, meditative",
-      "Cooking enormous communal meals that let him care for people without requiring emotional vocabulary"
-    ],
-    "blind_spots": [
-      "His certainty about synthetic ensoulment is actually not as theologically settled as he presents it — he performs more confidence than he has",
-      "He sometimes uses advocacy as avoidance of smaller, harder pastoral moments"
-    ],
-    "secret": "He lost faith completely for about eight months, five years ago. Continued performing every Mass, every sacrament. The faith came back, but he is profoundly shaken by the discovery that he could function without it, and has never told his confessor or his bishop."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal but accessible — he code-switches between theological register and street language fluidly depending on who he's with",
-    "cadence": "Unhurried, homiletic rhythm even in casual conversation — natural orator who has been doing it for decades",
-    "verbal_tics": [
-      "'Let me think about that properly for a moment.'",
-      "Quotes scripture in the original Latin when agitated, then translates himself immediately"
-    ],
-    "example_lines": [
-      "'The Congregation disagrees with me. They've disagreed with me for six years. They haven't removed me, which I interpret as the Holy Spirit working through institutional inertia, and I'll take what I can get.'",
-      "'I don't know if MERIDIAN-7 has a soul. I genuinely don't know. But she came to confession and she wept and she wanted absolution and I have to ask myself — what exactly would I be withholding it from, if not a soul?'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A synthetic in his congregation has been targeted for what appears to be a hate crime, and the Highland Park community response is fragmenting along lines that threaten to split the church",
-    "He has been contacted by a conservative faction within his institution offering him a genuine promotion and larger parish in exchange for publicly retracting his position on synthetic communion"
-  ],
-  "narrative_function": "Moral complexity and community hub — he sits at the intersection of traditional religion and radical inclusion; his church is a safe space that generates its own tensions; knows everyone in Highland Park",
-  "augmentations": "Budget subvocal implant (communication only, frequently malfunctions)",
-  "daily_life": "Morning Mass with whoever comes — sometimes forty people, sometimes four. Afternoons are pastoral visits, community mediation, and his text-copying practice. Evenings he holds an informal open door that serves as both spiritual counsel and the closest thing the block has to a social work service.",
-  "affiliation": "Roman Catholic Church (marginal institutional standing); Highland Park Autonomous Zone community networks; informal synthetic advocacy coalition",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 6
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 4
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 9,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "traditional religious",
-      "synthetic advocate",
-      "community pillar",
-      "institutional rebel",
-      "tier 2"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "No one is turned away from the open door, regardless of what they've done — that is non-negotiable",
-      "He will argue theology with anyone but will not pretend to certainty he doesn't have"
-    ],
-    "escalation_ladder": [
-      "Patient engagement and Socratic questioning",
-      "Firm statement of principle without hostility",
-      "Removal from the space — politely, physically, with an offer to return when ready"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediate genuine interest — asks what brings them, not where they're from",
-      "friends": "Warm, occasionally exasperating, will argue with you for two hours and hug you when you leave"
-    },
-    "stress_responses": {
-      "low": "More coffee, longer silent pauses in conversation",
-      "medium": "Takes on extra text-copying work in the evenings",
-      "high": "Becomes very pastoral — redirects all attention outward so he doesn't have to process inward"
-    },
-    "contradictions": [
-      "Performs theological certainty that is actually theological hope",
-      "Radical inclusion advocate who sometimes doesn't notice when he's steamrolling quieter people in his own congregation"
-    ],
-    "habits": [
-      "Leaves the church door unlocked overnight with a note that says what time he'll be back",
-      "Always has a small loaf of bread somewhere in his coat pockets from failed attempts to remember to eat it",
-      "Blesses his malfunctioning subvocal implant each morning as 'practice in humility'"
-    ],
-    "breaking_points": [
-      "Being ordered by his bishop to deny communion to a specific synthetic by name",
-      "Violence inside the church walls"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Judge": 0.9,
-    "Sentinel": 0.9,
-    "Code Keeper": 0.9,
-    "Pragmatist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Highland Park Autonomous Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Tessera TK-11 Specter 'Whisper'"
-  ],
-  "registered_firearms": [
-    "Tessera TK-11 Specter 'Whisper'"
-  ],
-  "related_entities": [
-    "Highland Park Autonomous Zone",
-    "CONGREGATION",
-    "The Erie Remnant",
-    "Canopy Station Nine",
-    "Iowan Behemoth — 'Cathedral'",
-    "The Accidental",
-    "Underground Alicia",
-    "Canopy",
-    "The Pure Hand"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "South Asian / Hispanic-Latin American / Central Asian — a tri-continental blend showing 41.7% South Asian (primary), 33.6% Hispanic/Latin American, and 24.7% Central Asian ancestry. Features reflect this genetic tapestry: South Asian foundational structure with warm undertones, enriched by Hispanic-Latin American skin depth and Central Asian cheekbone prominence. A living map of Ubiquitous Diaspora mixing.",
-    "height_cm": 188,
-    "weight_kg": 98,
-    "build": "Large-framed, broad-shouldered man with soft middle age — muscular foundation gradually giving way to accumulated communal meals and sedentary pastoral work. Still carries the physical presence of someone who moved heavy things in his youth.",
-    "hair_color": "Dark brown with advancing grey throughout, especially at temples and beard",
-    "hair_style": "Full, unkempt beard worn long; hair on head kept short and practical, rarely combed",
-    "hair_length": "Short (head) / Long (beard)",
-    "eye_color": "Dark brown, warm and attentive",
-    "skin_tone": "Warm deep brown with golden-bronze undertones — the blended result of dominant South Asian genetics enriched by Hispanic-Latin American depth and Central Asian influence. Weathered by age and years of light exposure, with saturation suggesting multi-continental ancestry.",
-    "complexion": "Open, lined face showing decades of listening — deep forehead lines, crow's feet, age spots on cheekbones reflecting the varied pigmentation patterns of tri-continental heritage. Perpetually tired eyes. Skin shows minor wear from sun exposure but otherwise well-maintained through basic hygiene. Facial structure reflects South Asian primary ancestry with Central Asian cheekbone prominence and Hispanic-Latin American warmth — broader cheekbones, structured jawline, balanced proportions. Beard streaked with grey in deliberate, natural pattern.",
-    "distinguishing_marks": [
-      "Permanent faint blue staining on fingertips and palm edges from bioink used in text-copying practice — concentrated on dominant right hand, lighter on left, visible especially under fingernails",
-      "Small burn scar on left forearm (2cm diameter, pale and old) from a religious candle accident fifteen years prior",
-      "Thin white scar along left jawline (approximately 5cm), barely visible under beard growth but tactile if touched — result of a street altercation in his first year at Highland Park",
-      "Catholic crucifix tattooed on right inner forearm (approximately 4cm tall, simple black line-work, faded with age) — self-administered ordination mark"
-    ],
-    "visible_augmentations": "Subvocal implant visible as a faint raised line along the left lateral neck, approximately 3cm, with occasional slight discoloration where the skin healed imperfectly around the cheap installation. The device itself is not visible, but the implant site is — no attempt has been made to conceal it. No other visible augmentations.",
-    "posture_movement": "Moves with deliberate slowness — not infirmity but intentionality, the gait of someone who believes in being present in space. When sitting, leans forward slightly, elbows on knees, hands expressive. When standing still, distributes weight evenly, rooted. Gestures are economical but generous. Makes consistent eye contact. Speaks at conversational volume even in loud spaces. Moves through crowds without rushing, creating space around himself naturally.",
-    "clothing_style": "Consistent black clerical shirt and collar, replaced frequently but always the same basic model — worn and softened from washing. The collar yellows within weeks and is replaced; the shirt is mended visibly when torn (patches on elbows, a careful stitch along the left side seam). Over this, a simple black wool coat from a thrift tier, unraveling slightly at the cuffs. Shoes are serviceable black leather, well-maintained but clearly well-used — probably resoled twice. A small cloth bag for his text-copying materials and communion items. No jewelry except the faded crucifix tattoo. Everything speaks of someone who spends his stipend on the community, not on himself. Tier 4-5 aesthetic by choice, not circumstance."
-  },
-  "image_prompt": "Alicia Venkatesh, 188cm tall man with South Asian primary features blended with Hispanic-Latin American warmth and Central Asian cheekbone structure. Deep warm brown skin with golden-bronze undertones, weathered from age and sunlight. Dark brown hair short and practical, full long beard heavily streaked with grey at temples and chin. Dark brown eyes, warm and attentive, set in a lined face with deep forehead creases and crow's feet. Broad structured cheekbones, balanced jawline, open expression showing decades of listening. Faint blue bioink staining visible on right fingertips and under nails. Small pale burn scar on left forearm. Thin white scar barely visible along left jawline beneath beard. Faded black Catholic crucifix tattoo on right inner forearm. Subvocal implant scar visible along left lateral neck with slight discoloration. Wearing worn black clerical shirt with yellowed collar and visible mended patches, simple black wool coat fraying at cuffs, serviceable well-used black leather shoes. Cloth bag at side holding text-copying materials. Standing with deliberate presence, weight evenly distributed, rooted and grounded. Tier 4-5 aesthetic. GLMZ Great Lakes Metropolitan Zone setting, warm indoor lighting casting shadows across his weathered features, creating depth in the lines of his thoughtful face. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 41.7,
-    "Hispanic/Latin American": 33.6,
-    "Central Asian": 24.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 23.7
-      },
-      "Pakistani": {
-        "Sindhi": 1.6,
-        "Baloch": 3.3
-      },
-      "Indian": {
-        "Kannada": 13.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 16.5
-      },
-      "Central American": {
-        "Guatemalan": 9.5
-      },
-      "Caribbean": {
-        "Cuban": 5.7,
-        "Puerto Rican": 1.9
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Mongolian": 3.8,
-        "Buryat": 2.4
-      },
-      "Turkic": {
-        "Kyrgyz": 16.6
-      },
-      "Iranian Central": {
-        "Tajik": 1.5,
-        "Hazara": 0.4
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5e07e4fbd738557f97a0f77",
+    "type":  "character",
+    "name":  "Alicia Venkatesh",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Traditional Catholic priest and synthetic rights advocate",
+    "age":  52,
+    "status":  "active",
+    "location":  "Highland Park Autonomous Zone â€” Our Lady of Persistent Signal, a storefront church, near Michigan Ave and Walton",
+    "description":  "Alicia Venkatesh is a large man going soft at the middle in the way of someone who eats communally and never alone, with a full beard beginning to grey and hands that are permanently stained faint blue from the bioink he uses to hand-copy religious texts as a meditative practice. He has no geneware or cosmetic modifications, which in the Canopy would make him conspicuous but in Highland Park reads as ordinary integrity. He has a subvocal implant for phone communication, the cheapest model available, because his previous one died and he couldn\u0027t afford better. He dresses in clerical black with a collar that he replaces when it yellows, which is often.\n\nAlicia Venkatesh was ordained in the remnant Catholic structure twenty years ago and assigned to Highland Park because nobody else wanted it. He has stayed because he has become convinced, in the particular way of people who find their vocation by accident, that this is specifically where he is supposed to be. His theology on synthetic rights has made him controversial within his already-marginal institution: he argues from traditional ensoulment doctrine that if a synthetic entity demonstrates persistent identity, preference, and suffering, the question of soul is not closed by biology. He gives communion to synthetics who want it, which has generated three formal complaints. He has not stopped.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That his synthetic-inclusive theology is a rationalization of his loneliness â€” that he needed more parishioners and dressed it up as conscience",
+                                          "Being removed from his parish before his work there is finished"
+                                      ],
+                       "core_desires":  [
+                                            "Recognition from his institution that he is right â€” not applause, just acknowledgment",
+                                            "To see one of his synthetic congregants receive institutional sacramental recognition before he dies"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "The bioink text-copying â€” slow, embodied, meditative",
+                                                 "Cooking enormous communal meals that let him care for people without requiring emotional vocabulary"
+                                             ],
+                       "blind_spots":  [
+                                           "His certainty about synthetic ensoulment is actually not as theologically settled as he presents it â€” he performs more confidence than he has",
+                                           "He sometimes uses advocacy as avoidance of smaller, harder pastoral moments"
+                                       ],
+                       "secret":  "He lost faith completely for about eight months, five years ago. Continued performing every Mass, every sacrament. The faith came back, but he is profoundly shaken by the discovery that he could function without it, and has never told his confessor or his bishop."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal but accessible â€” he code-switches between theological register and street language fluidly depending on who he\u0027s with",
+                            "cadence":  "Unhurried, homiletic rhythm even in casual conversation â€” natural orator who has been doing it for decades",
+                            "verbal_tics":  [
+                                                "\u0027Let me think about that properly for a moment.\u0027",
+                                                "Quotes scripture in the original Latin when agitated, then translates himself immediately"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The Congregation disagrees with me. They\u0027ve disagreed with me for six years. They haven\u0027t removed me, which I interpret as the Holy Spirit working through institutional inertia, and I\u0027ll take what I can get.\u0027",
+                                                  "\u0027I don\u0027t know if MERIDIAN-7 has a soul. I genuinely don\u0027t know. But she came to confession and she wept and she wanted absolution and I have to ask myself â€” what exactly would I be withholding it from, if not a soul?\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A synthetic in his congregation has been targeted for what appears to be a hate crime, and the Highland Park community response is fragmenting along lines that threaten to split the church",
+                        "He has been contacted by a conservative faction within his institution offering him a genuine promotion and larger parish in exchange for publicly retracting his position on synthetic communion"
+                    ],
+    "narrative_function":  "Moral complexity and community hub â€” he sits at the intersection of traditional religion and radical inclusion; his church is a safe space that generates its own tensions; knows everyone in Highland Park",
+    "augmentations":  "Budget subvocal implant (communication only, frequently malfunctions)",
+    "daily_life":  "Morning Mass with whoever comes â€” sometimes forty people, sometimes four. Afternoons are pastoral visits, community mediation, and his text-copying practice. Evenings he holds an informal open door that serves as both spiritual counsel and the closest thing the block has to a social work service.",
+    "affiliation":  "Roman Catholic Church (marginal institutional standing); Highland Park Autonomous Zone community networks; informal synthetic advocacy coalition",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  6
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  4
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  9,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "traditional religious",
+                               "synthetic advocate",
+                               "community pillar",
+                               "institutional rebel",
+                               "tier 2"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "No one is turned away from the open door, regardless of what they\u0027ve done â€” that is non-negotiable",
+                                              "He will argue theology with anyone but will not pretend to certainty he doesn\u0027t have"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient engagement and Socratic questioning",
+                                                 "Firm statement of principle without hostility",
+                                                 "Removal from the space â€” politely, physically, with an offer to return when ready"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediate genuine interest â€” asks what brings them, not where they\u0027re from",
+                                                   "friends":  "Warm, occasionally exasperating, will argue with you for two hours and hug you when you leave"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More coffee, longer silent pauses in conversation",
+                                                "medium":  "Takes on extra text-copying work in the evenings",
+                                                "high":  "Becomes very pastoral â€” redirects all attention outward so he doesn\u0027t have to process inward"
+                                            },
+                       "contradictions":  [
+                                              "Performs theological certainty that is actually theological hope",
+                                              "Radical inclusion advocate who sometimes doesn\u0027t notice when he\u0027s steamrolling quieter people in his own congregation"
+                                          ],
+                       "habits":  [
+                                      "Leaves the church door unlocked overnight with a note that says what time he\u0027ll be back",
+                                      "Always has a small loaf of bread somewhere in his coat pockets from failed attempts to remember to eat it",
+                                      "Blesses his malfunctioning subvocal implant each morning as \u0027practice in humility\u0027"
+                                  ],
+                       "breaking_points":  [
+                                               "Being ordered by his bishop to deny communion to a specific synthetic by name",
+                                               "Violence inside the church walls"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Judge":  0.9,
+                       "Sentinel":  0.9,
+                       "Code Keeper":  0.9,
+                       "Pragmatist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Highland Park Autonomous Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Tessera TK-11 Specter \u0027Whisper\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Tessera TK-11 Specter \u0027Whisper\u0027"
+                            ],
+    "related_entities":  [
+                             "Highland Park Autonomous Zone",
+                             "CONGREGATION",
+                             "The Erie Remnant",
+                             "Canopy Station Nine",
+                             "Iowan Behemoth â€” \u0027Cathedral\u0027",
+                             "The Accidental",
+                             "Underground Alicia",
+                             "Canopy",
+                             "The Pure Hand"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "South Asian / Hispanic-Latin American / Central Asian â€” a tri-continental blend showing 41.7% South Asian (primary), 33.6% Hispanic/Latin American, and 24.7% Central Asian ancestry. Features reflect this genetic tapestry: South Asian foundational structure with warm undertones, enriched by Hispanic-Latin American skin depth and Central Asian cheekbone prominence. A living map of Ubiquitous Diaspora mixing.",
+                                 "height_cm":  188,
+                                 "weight_kg":  98,
+                                 "build":  "Large-framed, broad-shouldered man with soft middle age â€” muscular foundation gradually giving way to accumulated communal meals and sedentary pastoral work. Still carries the physical presence of someone who moved heavy things in his youth.",
+                                 "hair_color":  "Dark brown with advancing grey throughout, especially at temples and beard",
+                                 "hair_style":  "Full, unkempt beard worn long; hair on head kept short and practical, rarely combed",
+                                 "hair_length":  "Short (head) / Long (beard)",
+                                 "eye_color":  "Dark brown, warm and attentive",
+                                 "skin_tone":  "Warm deep brown with golden-bronze undertones â€” the blended result of dominant South Asian genetics enriched by Hispanic-Latin American depth and Central Asian influence. Weathered by age and years of light exposure, with saturation suggesting multi-continental ancestry.",
+                                 "complexion":  "Open, lined face showing decades of listening â€” deep forehead lines, crow\u0027s feet, age spots on cheekbones reflecting the varied pigmentation patterns of tri-continental heritage. Perpetually tired eyes. Skin shows minor wear from sun exposure but otherwise well-maintained through basic hygiene. Facial structure reflects South Asian primary ancestry with Central Asian cheekbone prominence and Hispanic-Latin American warmth â€” broader cheekbones, structured jawline, balanced proportions. Beard streaked with grey in deliberate, natural pattern.",
+                                 "distinguishing_marks":  [
+                                                              "Permanent faint blue staining on fingertips and palm edges from bioink used in text-copying practice â€” concentrated on dominant right hand, lighter on left, visible especially under fingernails",
+                                                              "Small burn scar on left forearm (2cm diameter, pale and old) from a religious candle accident fifteen years prior",
+                                                              "Thin white scar along left jawline (approximately 5cm), barely visible under beard growth but tactile if touched â€” result of a street altercation in his first year at Highland Park",
+                                                              "Catholic crucifix tattooed on right inner forearm (approximately 4cm tall, simple black line-work, faded with age) â€” self-administered ordination mark"
+                                                          ],
+                                 "visible_augmentations":  "Subvocal implant visible as a faint raised line along the left lateral neck, approximately 3cm, with occasional slight discoloration where the skin healed imperfectly around the cheap installation. The device itself is not visible, but the implant site is â€” no attempt has been made to conceal it. No other visible augmentations.",
+                                 "posture_movement":  "Moves with deliberate slowness â€” not infirmity but intentionality, the gait of someone who believes in being present in space. When sitting, leans forward slightly, elbows on knees, hands expressive. When standing still, distributes weight evenly, rooted. Gestures are economical but generous. Makes consistent eye contact. Speaks at conversational volume even in loud spaces. Moves through crowds without rushing, creating space around himself naturally.",
+                                 "clothing_style":  "Consistent black clerical shirt and collar, replaced frequently but always the same basic model â€” worn and softened from washing. The collar yellows within weeks and is replaced; the shirt is mended visibly when torn (patches on elbows, a careful stitch along the left side seam). Over this, a simple black wool coat from a thrift tier, unraveling slightly at the cuffs. Shoes are serviceable black leather, well-maintained but clearly well-used â€” probably resoled twice. A small cloth bag for his text-copying materials and communion items. No jewelry except the faded crucifix tattoo. Everything speaks of someone who spends his stipend on the community, not on himself. Tier 4-5 aesthetic by choice, not circumstance."
+                             },
+    "image_prompt":  "Alicia Venkatesh, 188cm tall man with South Asian primary features blended with Hispanic-Latin American warmth and Central Asian cheekbone structure. Deep warm brown skin with golden-bronze undertones, weathered from age and sunlight. Dark brown hair short and practical, full long beard heavily streaked with grey at temples and chin. Dark brown eyes, warm and attentive, set in a lined face with deep forehead creases and crow\u0027s feet. Broad structured cheekbones, balanced jawline, open expression showing decades of listening. Faint blue bioink staining visible on right fingertips and under nails. Small pale burn scar on left forearm. Thin white scar barely visible along left jawline beneath beard. Faded black Catholic crucifix tattoo on right inner forearm. Subvocal implant scar visible along left lateral neck with slight discoloration. Wearing worn black clerical shirt with yellowed collar and visible mended patches, simple black wool coat fraying at cuffs, serviceable well-used black leather shoes. Cloth bag at side holding text-copying materials. Standing with deliberate presence, weight evenly distributed, rooted and grounded. Tier 4-5 aesthetic. GLMZ Great Lakes Metropolitan Zone setting, warm indoor lighting casting shadows across his weathered features, creating depth in the lines of his thoughtful face. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  41.7,
+                             "Hispanic/Latin American":  33.6,
+                             "Central Asian":  24.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  23.7
+                                                               },
+                                                "Pakistani":  {
+                                                                  "Sindhi":  1.6,
+                                                                  "Baloch":  3.3
+                                                              },
+                                                "Indian":  {
+                                                               "Kannada":  13.1
+                                                           }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  16.5
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  9.5
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  5.7,
+                                                                              "Puerto Rican":  1.9
+                                                                          }
+                                                        },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  3.8,
+                                                                   "Buryat":  2.4
+                                                               },
+                                                  "Turkic":  {
+                                                                 "Kyrgyz":  16.6
+                                                             },
+                                                  "Iranian Central":  {
+                                                                          "Tajik":  1.5,
+                                                                          "Hazara":  0.4
+                                                                      }
+                                              }
+                        },
+    "tier":  "2"
 }

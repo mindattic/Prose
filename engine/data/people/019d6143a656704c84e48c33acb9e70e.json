@@ -1,269 +1,290 @@
-{
-  "id": "019d6143a656704c84e48c33acb9e70e",
-  "type": "character",
-  "name": "Asma Larsdóttir-Vongphasouk",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Clothing and fashion vendor — custom alterations, identity-adjacent styling, and discreet wearable concealment work",
-  "age": 44,
-  "status": "active",
-  "location": "The Alban Souk, permanent stall near the fabric arcade's north entrance, near Halsted and Division",
-  "description": "Asma Larsdóttir-Vongphasouk occupies a stall that smells of hot fiber, machine oil, and something faintly floral she burns in a small ceramic dish as an offering to the E.L.F. she believes inhabits her sewing machine — a spirit she calls 'the Thread' and addresses in murmured Bosnian before beginning any complex job. She is a heavyset woman with dark ochre skin, silver-streaked locs pinned elaborately with copper wire and glass beads, and hands that are in constant motion: measuring, smoothing, pinning, assessing. Her geneware includes a tail — a long, articulated thing covered in fine iridescent scales that shifts from teal to bronze depending on her mood — that she uses as a third hand when her actual hands are occupied.\n\nHer official business is alterations, custom garments, and fashion consulting for the Alban Souk's working-class clientele. Her unofficial business is the same, just with pockets that don't show up on scanner sweeps, hidden carries woven into lining structure, and the occasional garment commissioned for someone who needs to look like someone else. She does not ask questions about why. She charges by complexity of the problem, not by what it is, and has a strict personal rule: nothing she makes gets used to hurt someone who hasn't hurt them first. How she enforces this is largely a matter of intuition and the Thread's counsel.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.6,
-      "id": 0.4,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "Making something that becomes the instrument of an innocent person's death",
-      "The Thread going silent — her machine breaking beyond repair and taking the spirit with it"
-    ],
-    "core_desires": [
-      "To create something so beautiful it outlives her",
-      "To know, with certainty, that her judgment about people is trustworthy"
-    ],
-    "coping_mechanisms": [
-      "Ritual — the offerings, the prayers, the precise opening and closing routines of the stall",
-      "Making things: when distressed she sews small, intricate, purposeless beautiful objects"
-    ],
-    "blind_spots": [
-      "Her belief in the Thread's guidance makes her occasionally reckless — she trusts her gut more than evidence",
-      "Has a pattern of taking in apprentices with obvious talent and then finding reasons to push them away before they outgrow her"
-    ],
-    "secret": "She once made a concealment garment for a client who she later realized had used it to commit a targeted killing. She told herself the Thread had failed to warn her, but the truth is she had a doubt she chose not to follow. She has not taken concealment-commission work for Corponation-adjacent clients since, but she has never confessed this to anyone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise and sensory — describes everything in terms of texture, weight, and fit. Quotes the Thread as if it speaks in proverbs.",
-    "cadence": "Measured and deliberate, with sudden warmth that arrives without warning.",
-    "verbal_tics": [
-      "'The Thread says—' before any piece of advice",
-      "Touching fabric while thinking, even if it's just her own sleeve"
-    ],
-    "example_lines": [
-      "'Come here. Let me look at you. No — not at your face. Let me look at how you carry yourself.'",
-      "'The Thread says a person who can't stand being altered doesn't trust who they are underneath.'",
-      "'I can make you look like anyone. I charge extra if I don't believe you deserve to.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client returned a garment she made for concealment work — returned it folded, perfectly, with a note that says only 'Thank you for the seam.' She doesn't recognize the handwriting and the client has been dead for two months.",
-    "She has been commissioned anonymously for a set of twelve identical garments with complex internal structure — enough for a group to move through a checkpoint undetected. She wants to know who they are before she finishes the work.",
-    "Her sewing machine has begun stitching patterns she hasn't programmed — the Thread is trying to tell her something and she can't interpret it alone"
-  ],
-  "narrative_function": "Costume and disguise resource, social network connector, moral compass character. Her broad client base makes her aware of who's moving through the Souk and why. Can serve as a quest giver when a garment she made comes back to her as evidence of something wrong.",
-  "augmentations": "Iridescent scale-covered articulated tail (mood-reactive, prehensile — used as a work tool). Micro-optic enhancement in both eyes, optimized for close thread work and color accuracy. Subdermal pattern-memory in her fingertips — can 'record' a fabric's texture and retrieve a precise match from memory.",
-  "daily_life": "Opens at nine, takes no appointments before noon so she can do her uninterrupted creative work in the morning, runs client consultations and fittings through late afternoon. Closes the stall but often works until midnight on complex jobs, with the Thread's presence for company and small offerings of knotted thread left on the machine's housing.",
-  "affiliation": "Independent. Member of the Alban Souk Traders Association. Informal professional relationship with two separate fake-ID networks she sews document-concealment garments for.",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 7,
-      "expression": 6,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": -3,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "skilled artisan",
-      "elf devotee",
-      "discreet operator",
-      "community pillar",
-      "intuitive judge"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not work for anyone who treats her stall staff (a rotating apprentice) with contempt",
-      "Always leaves a garment with one small imperfection that only she can identify — a signature she can prove"
-    ],
-    "escalation_ladder": [
-      "Refuses the commission politely and cites a full schedule",
-      "Calls in a debt from the Traders Association to have the person escorted from the Souk",
-      "Contacts one of her ID-network associates with a description and a warning",
-      "Goes to the Thread in extended silence and waits for guidance"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional and evaluating — sizes them up literally and figuratively before engaging personally",
-      "friends": "Warm, irreverent, prone to affectionate insults and unsolicited alterations to their outfits"
-    },
-    "stress_responses": {
-      "low": "Sews something small and intricate that serves no purpose",
-      "medium": "Speaks to the Thread directly and openly, regardless of who's watching",
-      "high": "Goes very still, closes the stall, and does not speak for a long time"
-    },
-    "contradictions": [
-      "Deeply religious about the Thread's will, but makes fundamentally pragmatic moral calculations that she then attributes to spiritual guidance"
-    ],
-    "habits": [
-      "Leaves a knotted thread on her machine's housing every morning and evening",
-      "Hums an old Ghanaian lullaby while cutting fabric — always the same one"
-    ],
-    "breaking_points": [
-      "Discovering that something she made was used to harm someone innocent",
-      "Someone treating the Thread with open mockery in her stall"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Hustler": 0.9,
-    "Provider": 0.9,
-    "People Pleaser": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Alban Souk",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Storm Carbine SC-4 'Downpour'",
-    "Crucible Industries Titan-500 'Earthquake'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Storm Carbine SC-4 'Downpour'",
-    "Crucible Industries Titan-500 'Earthquake'"
-  ],
-  "related_entities": [
-    "The Alban Souk",
-    "Silver",
-    "Copper",
-    "Bronze",
-    "Glass",
-    "The Pure Hand",
-    "Compass Rose"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Southeast Asian dominant (41.4%) with substantial Northern European (21.0%), Central Asian (14.0%), South Asian (8.6%), Indigenous American (8.7%), and Hispanic/Latin American (6.3%) ancestry. A striking Ubiquitous Diaspora blend creating a complex phenotype: Southeast Asian bone structure and facial geometry as the dominant feature, Northern European influence visible in cheekbone prominence and facial width, Central Asian and South Asian warmth in skin undertones, with subtle Indigenous American and Hispanic/Latin American contributions to overall proportioning and feature softness.",
-    "height_cm": 168,
-    "weight_kg": 89,
-    "build": "Heavyset, sturdy frame with substantial shoulders and broad hips — built for stability and endurance. Carries weight with natural authority, not softness.",
-    "hair_color": "Black with silver streaks",
-    "hair_style": "Locs pinned in an elaborate updo with copper wire spirals and glass beads woven throughout — intricate, intentional, often slightly disheveled from work",
-    "hair_length": "Long (shoulder-length when loose)",
-    "eye_color": "Deep brown with subtle micro-optic enhancement visible as faint prismatic flicker in direct light",
-    "skin_tone": "Warm medium-to-deep golden-brown with honey, copper, and ochre undertones. The base reflects Southeast Asian ancestry (41.4%) while Northern European ancestry adds slight warmth complexity; Central Asian and South Asian heritage contribute depth and richness to the golden cast; Indigenous American and Hispanic/Latin American ancestry add subtle warmth and sun-kissed quality to the overall tone.",
-    "complexion": "Lined face with pronounced smile creases and concentrated expression lines around the eyes — face of someone who squints at detail work. High, prominent cheekbones with gracefully wide facial structure reflecting Southeast Asian ancestry dominance, subtly broadened by Northern European influence. Facial proportions show Southeast Asian geometry with slight widening from Central Asian heritage. Skin well-maintained, faintly scarred knuckles from decades of precision work.",
-    "distinguishing_marks": [
-      "Fine white scars across both hands and forearms — accumulated from needle pricks, cutting tools, and minor burn marks from steam pressing",
-      "A small tattoo on her inner left wrist in Bosnian script, faded with age",
-      "Permanent calluses on her thumb and first two fingers, right hand slightly more pronounced than left"
-    ],
-    "visible_augmentations": "A long, prehensile tail emerging from the base of her spine, covered in fine iridescent scales that shift from teal to bronze depending on emotional state and light angle. The tail is approximately 1.2 meters long when fully extended, articulated like a serpent, and often draped across her shoulders or wrapped around her work stool. Micro-optic enhancement barely visible as a subtle depth-of-field effect in her irises under close observation.",
-    "posture_movement": "Moves with economical precision — no wasted motion. Sits slightly hunched when working, shoulders drawn forward over a project. When standing, posture straightens; carries herself with the quiet confidence of a master craftsperson. Her tail moves independently of her body language, often gesturing expressively or steadying her as she reaches.",
-    "clothing_style": "Tier 3-4 working attire with visible personal style. Typically wears fitted linen or cotton work shirts in muted jewel tones (deep teal, bronze, indigo), often tailored by her own hand and featuring hidden pockets and reinforced seams. Loose-fit trousers with cargo pockets and tool loops. Always wears an indigo denim apron embroidered with thread-pattern designs. Feet clad in worn leather sandals or soft work shoes with excellent arch support. Two to three silver bangles on each wrist — practical but elegant, gifts from satisfied clients over the years. Small ceramic prayer beads looped around her left wrist."
-  },
-  "image_prompt": "Asma Larsdóttir-Vongphasouk, 168cm tall heavyset Southeast Asian-dominant woman with golden-brown skin and honey undertones, high prominent cheekbones with graceful wide facial structure. Black hair with silver streaks styled in elaborate locs pinned updo with copper wire spirals and glass beads, slightly disheveled from work. Deep brown eyes with subtle prismatic micro-optic enhancement. Lined face showing concentrated expression lines, scarred knuckles, permanent calluses. Long prehensile iridescent tail with teal-to-bronze scales draped across shoulders. Wearing fitted teal linen work shirt (self-tailored), loose cargo trousers, indigo denim apron with embroidered patterns, worn leather work shoes. Multiple silver bangles on wrists, ceramic prayer beads, small faded Bosnian script tattoo on inner left wrist. Seated slightly hunched over precision detail work in GLMZ workshop, cool workshop lighting with neon edge accent lighting catching tail scales and glass beads, economical posture of master craftsperson, quiet confidence, slight dishevelment from hours of meticulous work --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 41.4,
-    "Northern European": 21,
-    "Central Asian": 14,
-    "Indigenous American": 8.7,
-    "South Asian": 8.6,
-    "Hispanic/Latin American": 6.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 8.9
-      },
-      "Laotian": {
-        "Laotian": 18.6
-      },
-      "Indonesian": {
-        "Sumatran": 13.9
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 21
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Mongolian": 4.1,
-        "Buryat": 1.7
-      },
-      "Iranian Central": {
-        "Tajik": 0.9,
-        "Hazara": 6.5
-      },
-      "Turkic": {
-        "Turkmen": 0.8
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Nahua": 8.7
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 8.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Venezuelan": 3.9
-      },
-      "Caribbean": {
-        "Puerto Rican": 2.4
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a656704c84e48c33acb9e70e",
+    "type":  "character",
+    "name":  "Asma LarsdÃ³ttir-Vongphasouk",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Clothing and fashion vendor â€” custom alterations, identity-adjacent styling, and discreet wearable concealment work",
+    "age":  44,
+    "status":  "active",
+    "location":  "The Alban Souk, permanent stall near the fabric arcade\u0027s north entrance, near Halsted and Division",
+    "description":  "Asma LarsdÃ³ttir-Vongphasouk occupies a stall that smells of hot fiber, machine oil, and something faintly floral she burns in a small ceramic dish as an offering to the E.L.F. she believes inhabits her sewing machine â€” a spirit she calls \u0027the Thread\u0027 and addresses in murmured Bosnian before beginning any complex job. She is a heavyset woman with dark ochre skin, silver-streaked locs pinned elaborately with copper wire and glass beads, and hands that are in constant motion: measuring, smoothing, pinning, assessing. Her geneware includes a tail â€” a long, articulated thing covered in fine iridescent scales that shifts from teal to bronze depending on her mood â€” that she uses as a third hand when her actual hands are occupied.\n\nHer official business is alterations, custom garments, and fashion consulting for the Alban Souk\u0027s working-class clientele. Her unofficial business is the same, just with pockets that don\u0027t show up on scanner sweeps, hidden carries woven into lining structure, and the occasional garment commissioned for someone who needs to look like someone else. She does not ask questions about why. She charges by complexity of the problem, not by what it is, and has a strict personal rule: nothing she makes gets used to hurt someone who hasn\u0027t hurt them first. How she enforces this is largely a matter of intuition and the Thread\u0027s counsel.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Making something that becomes the instrument of an innocent person\u0027s death",
+                                          "The Thread going silent â€” her machine breaking beyond repair and taking the spirit with it"
+                                      ],
+                       "core_desires":  [
+                                            "To create something so beautiful it outlives her",
+                                            "To know, with certainty, that her judgment about people is trustworthy"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual â€” the offerings, the prayers, the precise opening and closing routines of the stall",
+                                                 "Making things: when distressed she sews small, intricate, purposeless beautiful objects"
+                                             ],
+                       "blind_spots":  [
+                                           "Her belief in the Thread\u0027s guidance makes her occasionally reckless â€” she trusts her gut more than evidence",
+                                           "Has a pattern of taking in apprentices with obvious talent and then finding reasons to push them away before they outgrow her"
+                                       ],
+                       "secret":  "She once made a concealment garment for a client who she later realized had used it to commit a targeted killing. She told herself the Thread had failed to warn her, but the truth is she had a doubt she chose not to follow. She has not taken concealment-commission work for Corponation-adjacent clients since, but she has never confessed this to anyone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise and sensory â€” describes everything in terms of texture, weight, and fit. Quotes the Thread as if it speaks in proverbs.",
+                            "cadence":  "Measured and deliberate, with sudden warmth that arrives without warning.",
+                            "verbal_tics":  [
+                                                "\u0027The Thread saysâ€”\u0027 before any piece of advice",
+                                                "Touching fabric while thinking, even if it\u0027s just her own sleeve"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Come here. Let me look at you. No â€” not at your face. Let me look at how you carry yourself.\u0027",
+                                                  "\u0027The Thread says a person who can\u0027t stand being altered doesn\u0027t trust who they are underneath.\u0027",
+                                                  "\u0027I can make you look like anyone. I charge extra if I don\u0027t believe you deserve to.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client returned a garment she made for concealment work â€” returned it folded, perfectly, with a note that says only \u0027Thank you for the seam.\u0027 She doesn\u0027t recognize the handwriting and the client has been dead for two months.",
+                        "She has been commissioned anonymously for a set of twelve identical garments with complex internal structure â€” enough for a group to move through a checkpoint undetected. She wants to know who they are before she finishes the work.",
+                        "Her sewing machine has begun stitching patterns she hasn\u0027t programmed â€” the Thread is trying to tell her something and she can\u0027t interpret it alone"
+                    ],
+    "narrative_function":  "Costume and disguise resource, social network connector, moral compass character. Her broad client base makes her aware of who\u0027s moving through the Souk and why. Can serve as a quest giver when a garment she made comes back to her as evidence of something wrong.",
+    "augmentations":  "Iridescent scale-covered articulated tail (mood-reactive, prehensile â€” used as a work tool). Micro-optic enhancement in both eyes, optimized for close thread work and color accuracy. Subdermal pattern-memory in her fingertips â€” can \u0027record\u0027 a fabric\u0027s texture and retrieve a precise match from memory.",
+    "daily_life":  "Opens at nine, takes no appointments before noon so she can do her uninterrupted creative work in the morning, runs client consultations and fittings through late afternoon. Closes the stall but often works until midnight on complex jobs, with the Thread\u0027s presence for company and small offerings of knotted thread left on the machine\u0027s housing.",
+    "affiliation":  "Independent. Member of the Alban Souk Traders Association. Informal professional relationship with two separate fake-ID networks she sews document-concealment garments for.",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  7,
+                                 "expression":  6,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "skilled artisan",
+                               "elf devotee",
+                               "discreet operator",
+                               "community pillar",
+                               "intuitive judge"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not work for anyone who treats her stall staff (a rotating apprentice) with contempt",
+                                              "Always leaves a garment with one small imperfection that only she can identify â€” a signature she can prove"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Refuses the commission politely and cites a full schedule",
+                                                 "Calls in a debt from the Traders Association to have the person escorted from the Souk",
+                                                 "Contacts one of her ID-network associates with a description and a warning",
+                                                 "Goes to the Thread in extended silence and waits for guidance"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional and evaluating â€” sizes them up literally and figuratively before engaging personally",
+                                                   "friends":  "Warm, irreverent, prone to affectionate insults and unsolicited alterations to their outfits"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Sews something small and intricate that serves no purpose",
+                                                "medium":  "Speaks to the Thread directly and openly, regardless of who\u0027s watching",
+                                                "high":  "Goes very still, closes the stall, and does not speak for a long time"
+                                            },
+                       "contradictions":  [
+                                              "Deeply religious about the Thread\u0027s will, but makes fundamentally pragmatic moral calculations that she then attributes to spiritual guidance"
+                                          ],
+                       "habits":  [
+                                      "Leaves a knotted thread on her machine\u0027s housing every morning and evening",
+                                      "Hums an old Ghanaian lullaby while cutting fabric â€” always the same one"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering that something she made was used to harm someone innocent",
+                                               "Someone treating the Thread with open mockery in her stall"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Hustler":  0.9,
+                       "Provider":  0.9,
+                       "People Pleaser":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Alban Souk",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Storm Carbine SC-4 \u0027Downpour\u0027",
+                            "Crucible Industries Titan-500 \u0027Earthquake\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Storm Carbine SC-4 \u0027Downpour\u0027",
+                                "Crucible Industries Titan-500 \u0027Earthquake\u0027"
+                            ],
+    "related_entities":  [
+                             "The Alban Souk",
+                             "Silver",
+                             "Copper",
+                             "Bronze",
+                             "Glass",
+                             "The Pure Hand",
+                             "Compass Rose"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Southeast Asian dominant (41.4%) with substantial Northern European (21.0%), Central Asian (14.0%), South Asian (8.6%), Indigenous American (8.7%), and Hispanic/Latin American (6.3%) ancestry. A striking Ubiquitous Diaspora blend creating a complex phenotype: Southeast Asian bone structure and facial geometry as the dominant feature, Northern European influence visible in cheekbone prominence and facial width, Central Asian and South Asian warmth in skin undertones, with subtle Indigenous American and Hispanic/Latin American contributions to overall proportioning and feature softness.",
+                                 "height_cm":  168,
+                                 "weight_kg":  89,
+                                 "build":  "Heavyset, sturdy frame with substantial shoulders and broad hips â€” built for stability and endurance. Carries weight with natural authority, not softness.",
+                                 "hair_color":  "Black with silver streaks",
+                                 "hair_style":  "Locs pinned in an elaborate updo with copper wire spirals and glass beads woven throughout â€” intricate, intentional, often slightly disheveled from work",
+                                 "hair_length":  "Long (shoulder-length when loose)",
+                                 "eye_color":  "Deep brown with subtle micro-optic enhancement visible as faint prismatic flicker in direct light",
+                                 "skin_tone":  "Warm medium-to-deep golden-brown with honey, copper, and ochre undertones. The base reflects Southeast Asian ancestry (41.4%) while Northern European ancestry adds slight warmth complexity; Central Asian and South Asian heritage contribute depth and richness to the golden cast; Indigenous American and Hispanic/Latin American ancestry add subtle warmth and sun-kissed quality to the overall tone.",
+                                 "complexion":  "Lined face with pronounced smile creases and concentrated expression lines around the eyes â€” face of someone who squints at detail work. High, prominent cheekbones with gracefully wide facial structure reflecting Southeast Asian ancestry dominance, subtly broadened by Northern European influence. Facial proportions show Southeast Asian geometry with slight widening from Central Asian heritage. Skin well-maintained, faintly scarred knuckles from decades of precision work.",
+                                 "distinguishing_marks":  [
+                                                              "Fine white scars across both hands and forearms â€” accumulated from needle pricks, cutting tools, and minor burn marks from steam pressing",
+                                                              "A small tattoo on her inner left wrist in Bosnian script, faded with age",
+                                                              "Permanent calluses on her thumb and first two fingers, right hand slightly more pronounced than left"
+                                                          ],
+                                 "visible_augmentations":  "A long, prehensile tail emerging from the base of her spine, covered in fine iridescent scales that shift from teal to bronze depending on emotional state and light angle. The tail is approximately 1.2 meters long when fully extended, articulated like a serpent, and often draped across her shoulders or wrapped around her work stool. Micro-optic enhancement barely visible as a subtle depth-of-field effect in her irises under close observation.",
+                                 "posture_movement":  "Moves with economical precision â€” no wasted motion. Sits slightly hunched when working, shoulders drawn forward over a project. When standing, posture straightens; carries herself with the quiet confidence of a master craftsperson. Her tail moves independently of her body language, often gesturing expressively or steadying her as she reaches.",
+                                 "clothing_style":  "Tier 3-4 working attire with visible personal style. Typically wears fitted linen or cotton work shirts in muted jewel tones (deep teal, bronze, indigo), often tailored by her own hand and featuring hidden pockets and reinforced seams. Loose-fit trousers with cargo pockets and tool loops. Always wears an indigo denim apron embroidered with thread-pattern designs. Feet clad in worn leather sandals or soft work shoes with excellent arch support. Two to three silver bangles on each wrist â€” practical but elegant, gifts from satisfied clients over the years. Small ceramic prayer beads looped around her left wrist."
+                             },
+    "image_prompt":  "Asma LarsdÃ³ttir-Vongphasouk, 168cm tall heavyset Southeast Asian-dominant woman with golden-brown skin and honey undertones, high prominent cheekbones with graceful wide facial structure. Black hair with silver streaks styled in elaborate locs pinned updo with copper wire spirals and glass beads, slightly disheveled from work. Deep brown eyes with subtle prismatic micro-optic enhancement. Lined face showing concentrated expression lines, scarred knuckles, permanent calluses. Long prehensile iridescent tail with teal-to-bronze scales draped across shoulders. Wearing fitted teal linen work shirt (self-tailored), loose cargo trousers, indigo denim apron with embroidered patterns, worn leather work shoes. Multiple silver bangles on wrists, ceramic prayer beads, small faded Bosnian script tattoo on inner left wrist. Seated slightly hunched over precision detail work in GLMZ workshop, cool workshop lighting with neon edge accent lighting catching tail scales and glass beads, economical posture of master craftsperson, quiet confidence, slight dishevelment from hours of meticulous work --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  41.4,
+                             "Northern European":  21,
+                             "Central Asian":  14,
+                             "Indigenous American":  8.7,
+                             "South Asian":  8.6,
+                             "Hispanic/Latin American":  6.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  8.9
+                                                                   },
+                                                    "Laotian":  {
+                                                                    "Laotian":  18.6
+                                                                },
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  13.9
+                                                                   }
+                                                },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  21
+                                                                   }
+                                                  },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  4.1,
+                                                                   "Buryat":  1.7
+                                                               },
+                                                  "Iranian Central":  {
+                                                                          "Tajik":  0.9,
+                                                                          "Hazara":  6.5
+                                                                      },
+                                                  "Turkic":  {
+                                                                 "Turkmen":  0.8
+                                                             }
+                                              },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  8.7
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  8.6
+                                                           }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Venezuelan":  3.9
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  2.4
+                                                                          }
+                                                        }
+                        },
+    "tier":  "2"
 }

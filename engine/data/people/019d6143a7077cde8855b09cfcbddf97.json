@@ -1,335 +1,364 @@
-{
-  "id": "019d6143a7077cde8855b09cfcbddf97",
-  "type": "character",
-  "name": "Braulio Kariuki-Chatterjee-Somchai",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "street-level organ harvester and black-market tissue broker",
-  "age": 28,
-  "status": "active",
-  "location": "The Undertow, operating out of a submerged-level cold storage unit beneath the Menomonee Gulch flood barriers, near Armitage and Milwaukee",
-  "description": "Braulio Kariuki-Chatterjee-Somchai is lean in the way people get when they've been hungry enough times that the body learns to run efficient. His Tswana-Botswanan heritage shows in his cheekbones and dark complexion; his Croatian-Mexican grandmother gave him an incongruous surname and a slight curl to his black hair, worn short and without product. He has bioluminescent striping across his collarbones — a cheap modification he got at sixteen from a back-alley geneware parlor, blue-white lines that glow faintly through the neckline of his shirts. He keeps his hands very clean. This is the thing people notice: immaculate nails, no blood under them, even when he's come directly from work.\n\nBraulio Kariuki-Chatterjee-Somchai did not choose this profession romantically or willingly. He slid into it at nineteen when a hospital orderly job at the Aurochs Medical Complex auxiliary was his only income and a mid-level harvesting crew offered him Φ200 to look the other way on a body that came through post-mortem. Now he is the one sourcing, and he maintains a tight internal logic about it: he doesn't harvest from the living, he doesn't touch people who haven't already been declared dead by someone else first, and he tells himself that line is the only one that matters. He is wrong about how solid that line is, and some part of him knows it.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.6,
-      "mask": 0.4,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "crossing the line he has drawn about the living and discovering he is capable of it",
-      "being seen clearly by someone he respects"
-    ],
-    "core_desires": [
-      "enough money to leave the Undertow and take his younger sister with him",
-      "to believe that what he does causes net less harm than the corponation hospitals"
-    ],
-    "coping_mechanisms": [
-      "obsessive hand-washing ritual",
-      "building elaborate moral justifications that stop just short of scrutiny"
-    ],
-    "blind_spots": [
-      "cannot see that his 'dead only' rule has already been bent twice under pressure",
-      "does not recognize that his handlers are grooming him toward live harvesting"
-    ],
-    "secret": "He has a standing altar to E.L.F. Corpus — a spirit associated with the dead and medical systems — and prays every night for the people whose organs he moves. He has memorized as many of their names as he could find. There are forty-one."
-  },
-  "speech_patterns": {
-    "vocabulary": "Medical terminology used casually and correctly, mixed with Undertow slang; avoids euphemisms in private but uses them compulsively in public",
-    "cadence": "Quick and clipped when nervous, slow and deliberate when he's trying to sound calm — the switch is a tell",
-    "verbal_tics": [
-      "'It's already done' (meaning the person is already dead)",
-      "'Clean work' as the highest compliment"
-    ],
-    "example_lines": [
-      "'I don't touch runners. I don't touch people who are breathing. That's my rule and I don't move on it.'",
-      "'The Enclosure clinics pay for Grade A tissue, Aurochs dumps it in biowaste, and I am apparently the only person in this city who finds that obscene.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The Meridian Marrow Exchange has started pressuring him to expand into live procurement and he's looking for a way out that doesn't involve the bottom of Lake Michigan",
-    "One of the names on his memorial list belonged to someone whose family is actively looking for answers about their death — and they're getting close to Tshiamo"
-  ],
-  "narrative_function": "Morally complex information source on the Undertow's medical black market; potential reluctant ally if players need access to grey-market biological materials; represents the organ trafficking ecosystem at its working-class end",
-  "augmentations": "Bioluminescent subdermal striping (cosmetic, blue-white, chest and collarbones); basic neural cooling implant to regulate body temperature in cold storage environments",
-  "daily_life": "Spends most nights monitoring hospital discharge data feeds he shouldn't have access to, sleeps through late morning, makes supply runs in the afternoon, and handles 'acquisition logistics' — which is a euphemism — two to three times a week.",
-  "affiliation": "Loosely connected to a tissue-brokering network called the Meridian Marrow Exchange — four operators who share cold storage and a buyer contact at a private clinic in the Grosse Pointe Enclosure",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 5,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 4,
-      "empathy": 7,
-      "expression": 4,
-      "integrity": 4
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": -2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "medical knowledge",
-      "guilt-haunted",
-      "functional ethics",
-      "protective",
-      "quietly devout"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never acquire from anyone who is still breathing — this is the rule he will defend violently",
-      "Always verify the buyer before delivery; one sting operation is all it takes"
-    ],
-    "escalation_ladder": [
-      "Polite refusal with plausible excuse",
-      "Firm refusal with eye contact — no explanation offered",
-      "Disappears from contact for 48 hours until pressure passes",
-      "Reaches out to the only runner-adjacent contact he has to ask about exit options",
-      "Becomes dangerous if cornered — he is lean but fast and has a ceramic scalpel he keeps in his left boot"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Watchful and quiet, gives away nothing, assesses for threat vectors",
-      "friends": "Unexpectedly warm, has a dry humor that surfaces when he feels safe, loyal to a fault"
-    },
-    "stress_responses": {
-      "low": "Washes hands repeatedly, checks his cold storage temperatures three times",
-      "medium": "Goes silent and still — mistaken for calm by people who don't know him",
-      "high": "Prays to E.L.F. Corpus aloud in the dark of the storage unit, then makes a decision and acts on it without second-guessing"
-    },
-    "contradictions": [
-      "Considers himself ethical while operating in a system that makes ethics structurally impossible",
-      "Genuinely gentle with living people even as his work requires him to think of the dead as commodity"
-    ],
-    "habits": [
-      "Checks his fingernails before and after every work session",
-      "Keeps a small handwritten list of names folded inside his left shoe at all times"
-    ],
-    "breaking_points": [
-      "If anyone threatens his sister Kemi, every rule he has goes out immediately"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Undertow",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in the Undertow to a Botswanan-Tswana father and a Croatian-Mexican mother, both Ferrogate Transit laborers",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Took orderly job at Aurochs Medical Complex auxiliary at age 16",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First organ diversion job — looked away on a post-mortem body for Φ200",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Became primary sourcing contact for the Meridian Marrow Exchange",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began the memorial list after recognizing a name on a body's tag as a neighbor's father",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Street Custom 'Lazybones' Tripwire Shotgun Trap"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Aurochs Medical Complex",
-    "Menomonee Gulch",
-    "The Undertow",
-    "Grandmother",
-    "The Heritage Vault",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Zheng-Dao Heavy Industries MGL-8 'Thresher'",
-    "The Marrow Exchange",
-    "The Pure Hand",
-    "The Coffin Nails",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Nightlight"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Complex Pan-Global admixture reflecting the Ubiquitous Diaspora: Sub-Saharan African dominance (37.5%) forms the primary phenotypic foundation, with significant Southeast Asian (19.0%) and South Asian (15.7%) secondary influences, East Asian (14.5%) tertiary contribution, Hispanic/Latin American (10.7%) warmth, and minimal Northern European (2.6%) refinement. This genetic tapestry creates a uniquely blended phenotype: strong Sub-Saharan African facial structure and bone prominence paired with Southeast Asian angularity, South Asian skin undertones and contours, East Asian eye shape characteristics and luminosity, and subtle Latin American warmth in overall coloration.",
-    "height_cm": 175,
-    "weight_kg": 62,
-    "build": "Lean and efficient—the kind of thin that comes from sustained scarcity rather than choice. Minimal muscle definition, but wiry rather than fragile. His frame suggests someone who has learned to run on less.",
-    "hair_color": "Black with slight natural curl",
-    "hair_style": "Short, unstyled, no product—functional rather than intentional",
-    "hair_length": "Short",
-    "eye_color": "Dark brown with slight epicanthic fold influence, alert and measuring",
-    "skin_tone": "Rich warm deep brown with complex multi-layered undertones: strong Sub-Saharan African base luminosity enhanced by South Asian golden warmth, Southeast Asian depth, East Asian radiance, and Latin American warmth creating nuanced chromatic complexity. Slight ashen quality from time spent in cold storage environments, but underlying warmth remains visible beneath surface pallor.",
-    "complexion": "Prominent high cheekbones with strong Sub-Saharan African definition blended with Southeast Asian angularity and South Asian facial contours. Angular jawline shows East Asian bone structure influence. Broad nasal bridge with refined proportions reflecting Pan-Asian heritage contributions. Eyes show slight epicanthic fold influence from East and Southeast Asian ancestry. Skin is clear but shows faint fatigue lines around the eyes. Clean-shaven, meticulous grooming—no scarring on face.",
-    "distinguishing_marks": [
-      "Bioluminescent blue-white subdermal striping across both collarbones and upper chest, visible through thin fabric—lines run roughly parallel to the clavicle and glow faintly in low light, giving off an eerie quality when illuminated",
-      "No visible scars or tattoos; hands are notably clean with well-maintained nails and no discoloration or calluses despite the nature of his work"
-    ],
-    "visible_augmentations": "Bioluminescent striping visible at the neckline and upper chest when wearing standard clothing. No obvious chrome or external augmentation; neural cooling implant is subcutaneous and invisible. Pupils may dilate slightly wider than baseline due to thermoregulation implant.",
-    "posture_movement": "Moves with deliberate, economical precision—no wasted motion. Posture is slightly forward-bent, shoulders rounded as if perpetually hunching against cold. Hands rest still and flat; he does not gesture. His gaze is constant and measuring, the look of someone pricing things.",
-    "clothing_style": "Tier 4-5 utilitarian: thermal-lined base layers visible at the neck and wrists, dark grey or black long-sleeve undershirt, heavy insulated jacket (synthetic fabric, no branding, multiple interior pockets), cargo pants with reinforced thigh pockets and heavy zippers. Worn black slip-on boots with good tread—practical for wet subterranean work. No jewelry. Clothes are clean but aged, maintained rather than replaced. Small evidence of stains carefully treated out."
-  },
-  "image_prompt": "GLMZ, portrait of Braulio Kariuki-Chatterjee-Somchai: lean 175cm man with rich warm deep brown skin blending Sub-Saharan African, Southeast Asian, South Asian, East Asian, and Latin American heritage. Prominent high cheekbones with angular jawline, dark brown eyes with subtle epicanthic folds, short black curled hair. Clean-shaven with alert, measuring gaze and faint fatigue lines. Wears dark grey thermal base layers under heavy insulated black jacket, cargo pants with reinforced pockets, worn black boots. Bioluminescent blue-white subdermal striping glows faintly across collarbones and upper chest visible at neckline. Posture slightly forward-bent, shoulders rounded, hands still and flat. Cold storage facility ambient lighting, eerie glow from bioluminescent implants in low light, wet subterranean setting. Meticulous grooming despite lean efficiency. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 37.5,
-    "Southeast Asian": 19,
-    "South Asian": 15.7,
-    "East Asian": 14.5,
-    "Hispanic/Latin American": 10.7,
-    "Northern European": 2.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "West African": {
-        "Nigerian": 33.7
-      },
-      "East African": {
-        "Somali": 3.8
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 9.1
-      },
-      "Indonesian": {
-        "Javanese": 9.9
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 15.7
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 3.9
-      },
-      "Japanese": {
-        "Japanese": 1.6
-      },
-      "Chinese": {
-        "Fujianese": 4.7,
-        "Mandarin Northern": 4.3
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 6.1
-      },
-      "South American": {
-        "Ecuadorian": 3.8,
-        "Colombian": 0.8
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Swedish": 1.8
-      },
-      "Germanic": {
-        "German": 0.7,
-        "Austrian": 0.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a7077cde8855b09cfcbddf97",
+    "type":  "character",
+    "name":  "Braulio Kariuki-Chatterjee-Somchai",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "street-level organ harvester and black-market tissue broker",
+    "age":  28,
+    "status":  "active",
+    "location":  "The Undertow, operating out of a submerged-level cold storage unit beneath the Menomonee Gulch flood barriers, near Armitage and Milwaukee",
+    "description":  "Braulio Kariuki-Chatterjee-Somchai is lean in the way people get when they\u0027ve been hungry enough times that the body learns to run efficient. His Tswana-Botswanan heritage shows in his cheekbones and dark complexion; his Croatian-Mexican grandmother gave him an incongruous surname and a slight curl to his black hair, worn short and without product. He has bioluminescent striping across his collarbones â€” a cheap modification he got at sixteen from a back-alley geneware parlor, blue-white lines that glow faintly through the neckline of his shirts. He keeps his hands very clean. This is the thing people notice: immaculate nails, no blood under them, even when he\u0027s come directly from work.\n\nBraulio Kariuki-Chatterjee-Somchai did not choose this profession romantically or willingly. He slid into it at nineteen when a hospital orderly job at the Aurochs Medical Complex auxiliary was his only income and a mid-level harvesting crew offered him Î¦200 to look the other way on a body that came through post-mortem. Now he is the one sourcing, and he maintains a tight internal logic about it: he doesn\u0027t harvest from the living, he doesn\u0027t touch people who haven\u0027t already been declared dead by someone else first, and he tells himself that line is the only one that matters. He is wrong about how solid that line is, and some part of him knows it.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "crossing the line he has drawn about the living and discovering he is capable of it",
+                                          "being seen clearly by someone he respects"
+                                      ],
+                       "core_desires":  [
+                                            "enough money to leave the Undertow and take his younger sister with him",
+                                            "to believe that what he does causes net less harm than the corponation hospitals"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "obsessive hand-washing ritual",
+                                                 "building elaborate moral justifications that stop just short of scrutiny"
+                                             ],
+                       "blind_spots":  [
+                                           "cannot see that his \u0027dead only\u0027 rule has already been bent twice under pressure",
+                                           "does not recognize that his handlers are grooming him toward live harvesting"
+                                       ],
+                       "secret":  "He has a standing altar to E.L.F. Corpus â€” a spirit associated with the dead and medical systems â€” and prays every night for the people whose organs he moves. He has memorized as many of their names as he could find. There are forty-one."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Medical terminology used casually and correctly, mixed with Undertow slang; avoids euphemisms in private but uses them compulsively in public",
+                            "cadence":  "Quick and clipped when nervous, slow and deliberate when he\u0027s trying to sound calm â€” the switch is a tell",
+                            "verbal_tics":  [
+                                                "\u0027It\u0027s already done\u0027 (meaning the person is already dead)",
+                                                "\u0027Clean work\u0027 as the highest compliment"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I don\u0027t touch runners. I don\u0027t touch people who are breathing. That\u0027s my rule and I don\u0027t move on it.\u0027",
+                                                  "\u0027The Enclosure clinics pay for Grade A tissue, Aurochs dumps it in biowaste, and I am apparently the only person in this city who finds that obscene.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The Meridian Marrow Exchange has started pressuring him to expand into live procurement and he\u0027s looking for a way out that doesn\u0027t involve the bottom of Lake Michigan",
+                        "One of the names on his memorial list belonged to someone whose family is actively looking for answers about their death â€” and they\u0027re getting close to Tshiamo"
+                    ],
+    "narrative_function":  "Morally complex information source on the Undertow\u0027s medical black market; potential reluctant ally if players need access to grey-market biological materials; represents the organ trafficking ecosystem at its working-class end",
+    "augmentations":  "Bioluminescent subdermal striping (cosmetic, blue-white, chest and collarbones); basic neural cooling implant to regulate body temperature in cold storage environments",
+    "daily_life":  "Spends most nights monitoring hospital discharge data feeds he shouldn\u0027t have access to, sleeps through late morning, makes supply runs in the afternoon, and handles \u0027acquisition logistics\u0027 â€” which is a euphemism â€” two to three times a week.",
+    "affiliation":  "Loosely connected to a tissue-brokering network called the Meridian Marrow Exchange â€” four operators who share cold storage and a buyer contact at a private clinic in the Grosse Pointe Enclosure",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  5,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  4,
+                                 "empathy":  7,
+                                 "expression":  4,
+                                 "integrity":  4
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "medical knowledge",
+                               "guilt-haunted",
+                               "functional ethics",
+                               "protective",
+                               "quietly devout"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never acquire from anyone who is still breathing â€” this is the rule he will defend violently",
+                                              "Always verify the buyer before delivery; one sting operation is all it takes"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite refusal with plausible excuse",
+                                                 "Firm refusal with eye contact â€” no explanation offered",
+                                                 "Disappears from contact for 48 hours until pressure passes",
+                                                 "Reaches out to the only runner-adjacent contact he has to ask about exit options",
+                                                 "Becomes dangerous if cornered â€” he is lean but fast and has a ceramic scalpel he keeps in his left boot"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Watchful and quiet, gives away nothing, assesses for threat vectors",
+                                                   "friends":  "Unexpectedly warm, has a dry humor that surfaces when he feels safe, loyal to a fault"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Washes hands repeatedly, checks his cold storage temperatures three times",
+                                                "medium":  "Goes silent and still â€” mistaken for calm by people who don\u0027t know him",
+                                                "high":  "Prays to E.L.F. Corpus aloud in the dark of the storage unit, then makes a decision and acts on it without second-guessing"
+                                            },
+                       "contradictions":  [
+                                              "Considers himself ethical while operating in a system that makes ethics structurally impossible",
+                                              "Genuinely gentle with living people even as his work requires him to think of the dead as commodity"
+                                          ],
+                       "habits":  [
+                                      "Checks his fingernails before and after every work session",
+                                      "Keeps a small handwritten list of names folded inside his left shoe at all times"
+                                  ],
+                       "breaking_points":  [
+                                               "If anyone threatens his sister Kemi, every rule he has goes out immediately"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Undertow",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in the Undertow to a Botswanan-Tswana father and a Croatian-Mexican mother, both Ferrogate Transit laborers",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Took orderly job at Aurochs Medical Complex auxiliary at age 16",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First organ diversion job â€” looked away on a post-mortem body for Î¦200",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Became primary sourcing contact for the Meridian Marrow Exchange",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began the memorial list after recognizing a name on a body\u0027s tag as a neighbor\u0027s father",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027",
+                            "Street Custom \u0027Lazybones\u0027 Tripwire Shotgun Trap"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Aurochs Medical Complex",
+                             "Menomonee Gulch",
+                             "The Undertow",
+                             "Grandmother",
+                             "The Heritage Vault",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Zheng-Dao Heavy Industries MGL-8 \u0027Thresher\u0027",
+                             "The Marrow Exchange",
+                             "The Pure Hand",
+                             "The Coffin Nails",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "Nightlight"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Complex Pan-Global admixture reflecting the Ubiquitous Diaspora: Sub-Saharan African dominance (37.5%) forms the primary phenotypic foundation, with significant Southeast Asian (19.0%) and South Asian (15.7%) secondary influences, East Asian (14.5%) tertiary contribution, Hispanic/Latin American (10.7%) warmth, and minimal Northern European (2.6%) refinement. This genetic tapestry creates a uniquely blended phenotype: strong Sub-Saharan African facial structure and bone prominence paired with Southeast Asian angularity, South Asian skin undertones and contours, East Asian eye shape characteristics and luminosity, and subtle Latin American warmth in overall coloration.",
+                                 "height_cm":  175,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and efficientâ€”the kind of thin that comes from sustained scarcity rather than choice. Minimal muscle definition, but wiry rather than fragile. His frame suggests someone who has learned to run on less.",
+                                 "hair_color":  "Black with slight natural curl",
+                                 "hair_style":  "Short, unstyled, no productâ€”functional rather than intentional",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown with slight epicanthic fold influence, alert and measuring",
+                                 "skin_tone":  "Rich warm deep brown with complex multi-layered undertones: strong Sub-Saharan African base luminosity enhanced by South Asian golden warmth, Southeast Asian depth, East Asian radiance, and Latin American warmth creating nuanced chromatic complexity. Slight ashen quality from time spent in cold storage environments, but underlying warmth remains visible beneath surface pallor.",
+                                 "complexion":  "Prominent high cheekbones with strong Sub-Saharan African definition blended with Southeast Asian angularity and South Asian facial contours. Angular jawline shows East Asian bone structure influence. Broad nasal bridge with refined proportions reflecting Pan-Asian heritage contributions. Eyes show slight epicanthic fold influence from East and Southeast Asian ancestry. Skin is clear but shows faint fatigue lines around the eyes. Clean-shaven, meticulous groomingâ€”no scarring on face.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent blue-white subdermal striping across both collarbones and upper chest, visible through thin fabricâ€”lines run roughly parallel to the clavicle and glow faintly in low light, giving off an eerie quality when illuminated",
+                                                              "No visible scars or tattoos; hands are notably clean with well-maintained nails and no discoloration or calluses despite the nature of his work"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent striping visible at the neckline and upper chest when wearing standard clothing. No obvious chrome or external augmentation; neural cooling implant is subcutaneous and invisible. Pupils may dilate slightly wider than baseline due to thermoregulation implant.",
+                                 "posture_movement":  "Moves with deliberate, economical precisionâ€”no wasted motion. Posture is slightly forward-bent, shoulders rounded as if perpetually hunching against cold. Hands rest still and flat; he does not gesture. His gaze is constant and measuring, the look of someone pricing things.",
+                                 "clothing_style":  "Tier 4-5 utilitarian: thermal-lined base layers visible at the neck and wrists, dark grey or black long-sleeve undershirt, heavy insulated jacket (synthetic fabric, no branding, multiple interior pockets), cargo pants with reinforced thigh pockets and heavy zippers. Worn black slip-on boots with good treadâ€”practical for wet subterranean work. No jewelry. Clothes are clean but aged, maintained rather than replaced. Small evidence of stains carefully treated out."
+                             },
+    "image_prompt":  "GLMZ, portrait of Braulio Kariuki-Chatterjee-Somchai: lean 175cm man with rich warm deep brown skin blending Sub-Saharan African, Southeast Asian, South Asian, East Asian, and Latin American heritage. Prominent high cheekbones with angular jawline, dark brown eyes with subtle epicanthic folds, short black curled hair. Clean-shaven with alert, measuring gaze and faint fatigue lines. Wears dark grey thermal base layers under heavy insulated black jacket, cargo pants with reinforced pockets, worn black boots. Bioluminescent blue-white subdermal striping glows faintly across collarbones and upper chest visible at neckline. Posture slightly forward-bent, shoulders rounded, hands still and flat. Cold storage facility ambient lighting, eerie glow from bioluminescent implants in low light, wet subterranean setting. Meticulous grooming despite lean efficiency. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  37.5,
+                             "Southeast Asian":  19,
+                             "South Asian":  15.7,
+                             "East Asian":  14.5,
+                             "Hispanic/Latin American":  10.7,
+                             "Northern European":  2.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Nigerian":  33.7
+                                                                         },
+                                                        "East African":  {
+                                                                             "Somali":  3.8
+                                                                         }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  9.1
+                                                             },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  9.9
+                                                                   }
+                                                },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  15.7
+                                                                }
+                                            },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  3.9
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  1.6
+                                                            },
+                                               "Chinese":  {
+                                                               "Fujianese":  4.7,
+                                                               "Mandarin Northern":  4.3
+                                                           }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  6.1
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  3.8,
+                                                                                   "Colombian":  0.8
+                                                                               }
+                                                        },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  1.8
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "German":  0.7,
+                                                                       "Austrian":  0.1
+                                                                   }
+                                                  }
+                        },
+    "tier":  "1"
 }

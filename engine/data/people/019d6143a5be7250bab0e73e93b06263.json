@@ -1,335 +1,364 @@
-{
-  "id": "019d6143a5be7250bab0e73e93b06263",
-  "type": "character",
-  "name": "Delta Haraldsen",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Traditional religious leader (syncretic Catholic-Polynesian priest) and chrome prayer practitioner",
-  "age": 79,
-  "status": "active",
-  "location": "Edgewater Prism, the Church of the Unbroken Signal — a former lakeshore antenna building converted to a place of worship, near Clark and Addison",
-  "description": "Delta Haraldsen is a large man gone soft with age, with big hands that still remember physical labor and a face deeply lined by decades of lake wind. His Guinean-Polynesian heritage is legible in his size and in the traditional tatau that cover his forearms and neck — old work from his father's tradition, geometric and immaculately preserved, now supplemented by chrome prayer circuits inked over the same skin in metallic pigment that complete the patterns in a new vocabulary. He is mostly bald, with close-cropped white at the temples, and he keeps a koa wood cross at his belt alongside a small E.L.F. offering dish he has carried for forty years.\n\nFather Bart runs the largest syncretic congregation in Edgewater Prism, about three hundred people who come to him for a faith that takes both the old sacraments and the new realities seriously at once. He has buried children of people he baptized. He has presided over deaths during power failures by the light of bioluminescent congregation members. He is theologically sophisticated and genuinely unconcerned about whether this makes him orthodox — he says God arrived in GLMZ the same as everyone else, carrying everything from before and adapting. He has a notable temper that he has mostly but not entirely conquered, and a laugh that fills a room.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.6,
-      "mask": 0.4,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "That the church will not survive him — that he has not built it to outlast him",
-      "That his temper has driven away people who needed to stay"
-    ],
-    "core_desires": [
-      "A faith that is honest about what it doesn't know and still offers something real",
-      "To see Edgewater Prism survive the next decade of corponation pressure"
-    ],
-    "coping_mechanisms": [
-      "Liturgy — the repeated forms carry him when he doesn't have the energy to improvise",
-      "Physical work — he still does maintenance on the building himself when possible"
-    ],
-    "blind_spots": [
-      "He can mistake stubbornness for discernment — once he's decided someone's motives are suspect, he rarely revises this",
-      "His resistance to corponation involvement is sometimes ideologically rigid in ways that cost the congregation practical resources"
-    ],
-    "secret": "Fifteen years ago he helped a young woman escape a Sterling-Nakamura indenture contract by falsifying sacramental records to change her documented identity. She is now a well-regarded doctor in Calumet Rise. He has never told anyone, but Sterling-Nakamura's investigators came close twice, and he is waiting for the third approach."
-  },
-  "speech_patterns": {
-    "vocabulary": "Rich and formal in services, shifts to direct and earthy in pastoral conversation; quotes scripture and traditional proverbs with equal fluency; swears inventively in French when angry",
-    "cadence": "Slow and rhythmic in liturgy, conversationally unpredictable — long buildups and short conclusions",
-    "verbal_tics": [
-      "'Now listen to me'",
-      "A long exhale through the nose when someone says something foolish",
-      "'The signal reaches everywhere. That's the whole point.'"
-    ],
-    "example_lines": [
-      "'I have been told by four different corponations that they could help this church reach more people. I tell them all the same thing: I am not trying to reach more people. I am trying to serve the people who are here.'",
-      "'You want to know if God is in the machines. I want to know why you think that's a harder question than whether God is in you.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Sterling-Nakamura has sent a new investigator to Edgewater Prism asking questions about a sacramental record from fifteen years ago — Father Bart needs help determining how much they actually know without tipping them off",
-    "Someone has been leaving threatening messages in chrome prayer pigment on the church's exterior walls — the content suggests insider knowledge of the congregation that only a regular member would have"
-  ],
-  "narrative_function": "Community authority and moral voice; mediator for district-level conflicts; long historical memory; potential quest giver for problems that have been building for decades; someone who knows where bodies are buried, metaphorically.",
-  "augmentations": "Chrome prayer circuits over traditional tatau (cosmetic/devotional, metallic pigment). A cardiac support implant — medical necessity, installed eight years ago. No other augmentations; has refused enhancement on principle.",
-  "daily_life": "Morning mass at dawn with a small core congregation; administrative and pastoral work through the morning; open hours for the community in the afternoon where anyone can come with any problem; evening prayer service with significantly more attendees.",
-  "affiliation": "Church of the Unbroken Signal; loose ecumenical network of syncretic congregations; no corponation affiliation and famously resistant to all corporate sponsorship offers",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 9,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 10,
-      "empathy": 8,
-      "expression": 9,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": 4,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "moral authority",
-      "long memory",
-      "syncretic faith",
-      "protected secret",
-      "temper under pressure"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Protect the congregation before protecting the institution",
-      "Do not lie in the pulpit — struggle openly before you lie smoothly",
-      "When in doubt, ask what the person in front of you actually needs"
-    ],
-    "escalation_ladder": [
-      "Patient listening and pastoral redirection",
-      "Clear statement of where his line is and why",
-      "Explosive anger that he always regrets and apologizes for — but which sometimes resolves things faster than patience did"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Formal and warm simultaneously — extends hospitality immediately but takes longer to trust",
-      "friends": "Unguarded, argumentative, deeply generous, occasionally insufferable"
-    },
-    "stress_responses": {
-      "low": "More quiet, longer homilies",
-      "medium": "Throws himself into physical maintenance work on the building",
-      "high": "Short terrible-tempered period followed by long silence followed by action"
-    },
-    "contradictions": [
-      "Preaches forgiveness and holds grudges with impressive tenacity"
-    ],
-    "habits": [
-      "Polishes the koa wood cross daily while reviewing his notes for the day's services",
-      "Makes tea for anyone who sits down in his office regardless of how long they plan to stay"
-    ],
-    "breaking_points": [
-      "A member of his congregation being harmed by a corponation while he watches",
-      "The falsified records being discovered and the woman whose identity he changed being endangered"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7,
-    "Commander": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Edgewater Prism",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in the Edgewater area to a Guinean-Polynesian family; father was a traditional navigator, mother a dockworker",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Ordained after a long and contested discernment process — his syncretic approach was controversial",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Converts the antenna building into the Church of the Unbroken Signal",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Falsifies sacramental records to protect a woman fleeing Sterling-Nakamura indenture",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Cardiac implant installed; congregation grows significantly during his recovery period as a show of communal support",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Guardian-12 'Bedside'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Bone Parish",
-    "Edgewater Prism",
-    "CONGREGATION",
-    "Iowan Behemoth — 'Cathedral'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "GLMZ",
-    "Weathervane"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Northern European (30.7%), Sub-Saharan African (26.0%), Southeast Asian (20.1%), Pacific Islander (8.3%), East Asian (8.2%), South Asian (6.7%) — a complex global tapestry reflecting the Ubiquitous Diaspora. The genetic blend manifests as warm medium-brown skin with golden and reddish undertones. Facial structure shows broad cheekbones characteristic of Southeast and East Asian genetics, balanced by fuller lips and wider nose bridge from Sub-Saharan African heritage, with the bone prominence and brow structure of Northern European ancestry creating an overall harmonious blend that resists singular continental categorization.",
-    "height_cm": 188,
-    "weight_kg": 104,
-    "build": "Large-framed and broad-shouldered, softened by age and gravity into a barrel-chested heaviness. Still carries the muscularity of someone who spent decades doing physical labor, but now rounded at the middle and loose in the neck. Moves with deliberate slowness that suggests both dignity and the mechanical accommodation of an aging heart.",
-    "hair_color": "White",
-    "hair_style": "Close-cropped, worn very short at the crown with slightly longer tufts at the temples",
-    "hair_length": "Short",
-    "eye_color": "Deep brown, slightly clouded with cataracts at the edges",
-    "skin_tone": "Warm medium-brown with golden and reddish undertones, richly mahogany across face and neck from decades of lake wind exposure and the blended Sub-Saharan and Southeast Asian ancestry components",
-    "complexion": "Deeply lined forehead and around the eyes; pronounced nasolabial folds; loose skin at the jowls; age spots across the temples and scalp. Broad cheekbones and balanced proportions reflecting East Asian and Southeast Asian heritage harmonized with fuller lips and wider nose from Sub-Saharan African ancestry, with Northern European bone prominence in brow and jaw. Meticulous grooming despite age—clean-shaven, skin well-maintained.",
-    "distinguishing_marks": [
-      "Traditional tatau covering both forearms in geometric patterns of black ink—Polynesian ancestral work, perfectly preserved and symmetrical",
-      "Chrome prayer circuits in metallic pigment overlaid across the tatau, forming new geometric completions and liturgical symbols that shimmer faintly under light",
-      "Matching tatau work extending up the right side of the neck in a vertical stripe, supplemented by chrome prayer circuitry that traces his carotid",
-      "A thin surgical scar along the left collarbone, approximately 8cm long, from cardiac implant installation—faded to pale pink",
-      "Weathered creases across the backs of both hands, consistent with decades of manual work and age spots emerging on the knuckles"
-    ],
-    "visible_augmentations": "Chrome prayer circuits in metallic pigment on forearms and neck—not cybernetic but cosmetic-devotional, meant to be visible. The cardiac support implant is subcutaneous and invisible.",
-    "posture_movement": "Stands with a slight forward hunch, shoulders perpetually braced as though against lake wind. Moves deliberately, with careful weight distribution suggesting awareness of cardiac limitation. Hands gesture expansively when animated or passionate; these gestures are precise and sometimes theatrical. When listening, entire body settles into stillness. Walking pace is measured; no rushing.",
-    "clothing_style": "Black wool cassock of older manufacture, well-maintained but not pristine—faint wear at cuffs and hem. Over it, a handwoven stole in red and white geometric pattern (Polynesian weaving, family work). At his belt: a carved koa wood cross on a leather cord and a small polished aluminum E.L.F. offering dish, both worn smooth by forty years of handling. Underneath, simple cotton shirts in white or cream. No jewelry except a worn silver ring on left ring finger. Black leather shoes, resoled multiple times. Tier 4 aesthetic—functionally dressed, resistant to status markers, invested in quality and meaning."
-  },
-  "image_prompt": "A distinguished elderly man of mixed global ancestry, warm medium-brown skin with mahogany tones, white close-cropped hair, deep brown eyes clouded slightly with age. Large-framed, broad-shouldered with barrel chest, carrying dignified heaviness of decades. Face shows deep lines, broad cheekbones blending East Asian structure with fuller lips and wide nose from African heritage, Northern European brow prominence. Meticulous grooming, clean-shaven. Forearms and neck covered in black geometric Polynesian tatau work with overlaid shimmering chrome prayer circuits that catch the light. Wears a black wool cassock with handwoven red and white Polynesian geometric stole. Carved koa wood cross hangs from leather cord at his belt. Stands with slight forward hunch, hands relaxed but expressive. Weathered hands show age spots and creases from decades of labor. Faint surgical scar visible on left collarbone. Setting: Great Lakes Metropolitan Zone interior, soft natural light filtering through windows, GLMZ era. Mood: contemplative, dignified, spiritually grounded despite advanced age and cardiac augmentation. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 30.7,
-    "Sub-Saharan African": 26,
-    "Southeast Asian": 20.1,
-    "Pacific Islander": 8.3,
-    "East Asian": 8.2,
-    "South Asian": 6.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Scandinavian": {
-        "Norwegian": 30.7
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Guinean": 9.7
-      },
-      "East African": {
-        "Rwandan": 3.7
-      },
-      "Central African": {
-        "Congolese": 7.3,
-        "Angolan": 5.3
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 3.4
-      },
-      "Vietnamese": {
-        "Vietnamese": 8.5
-      },
-      "Filipino": {
-        "Tagalog": 8.2
-      }
-    },
-    "Pacific Islander": {
-      "Melanesian": {
-        "Ni-Vanuatu": 8.3
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 4.9
-      },
-      "Japanese": {
-        "Japanese": 1.2
-      },
-      "Chinese": {
-        "Shanghainese": 2.1
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 2.4,
-        "Tamil Sri Lankan": 4.3
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5be7250bab0e73e93b06263",
+    "type":  "character",
+    "name":  "Delta Haraldsen",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Traditional religious leader (syncretic Catholic-Polynesian priest) and chrome prayer practitioner",
+    "age":  79,
+    "status":  "active",
+    "location":  "Edgewater Prism, the Church of the Unbroken Signal â€” a former lakeshore antenna building converted to a place of worship, near Clark and Addison",
+    "description":  "Delta Haraldsen is a large man gone soft with age, with big hands that still remember physical labor and a face deeply lined by decades of lake wind. His Guinean-Polynesian heritage is legible in his size and in the traditional tatau that cover his forearms and neck â€” old work from his father\u0027s tradition, geometric and immaculately preserved, now supplemented by chrome prayer circuits inked over the same skin in metallic pigment that complete the patterns in a new vocabulary. He is mostly bald, with close-cropped white at the temples, and he keeps a koa wood cross at his belt alongside a small E.L.F. offering dish he has carried for forty years.\n\nFather Bart runs the largest syncretic congregation in Edgewater Prism, about three hundred people who come to him for a faith that takes both the old sacraments and the new realities seriously at once. He has buried children of people he baptized. He has presided over deaths during power failures by the light of bioluminescent congregation members. He is theologically sophisticated and genuinely unconcerned about whether this makes him orthodox â€” he says God arrived in GLMZ the same as everyone else, carrying everything from before and adapting. He has a notable temper that he has mostly but not entirely conquered, and a laugh that fills a room.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the church will not survive him â€” that he has not built it to outlast him",
+                                          "That his temper has driven away people who needed to stay"
+                                      ],
+                       "core_desires":  [
+                                            "A faith that is honest about what it doesn\u0027t know and still offers something real",
+                                            "To see Edgewater Prism survive the next decade of corponation pressure"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Liturgy â€” the repeated forms carry him when he doesn\u0027t have the energy to improvise",
+                                                 "Physical work â€” he still does maintenance on the building himself when possible"
+                                             ],
+                       "blind_spots":  [
+                                           "He can mistake stubbornness for discernment â€” once he\u0027s decided someone\u0027s motives are suspect, he rarely revises this",
+                                           "His resistance to corponation involvement is sometimes ideologically rigid in ways that cost the congregation practical resources"
+                                       ],
+                       "secret":  "Fifteen years ago he helped a young woman escape a Sterling-Nakamura indenture contract by falsifying sacramental records to change her documented identity. She is now a well-regarded doctor in Calumet Rise. He has never told anyone, but Sterling-Nakamura\u0027s investigators came close twice, and he is waiting for the third approach."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Rich and formal in services, shifts to direct and earthy in pastoral conversation; quotes scripture and traditional proverbs with equal fluency; swears inventively in French when angry",
+                            "cadence":  "Slow and rhythmic in liturgy, conversationally unpredictable â€” long buildups and short conclusions",
+                            "verbal_tics":  [
+                                                "\u0027Now listen to me\u0027",
+                                                "A long exhale through the nose when someone says something foolish",
+                                                "\u0027The signal reaches everywhere. That\u0027s the whole point.\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I have been told by four different corponations that they could help this church reach more people. I tell them all the same thing: I am not trying to reach more people. I am trying to serve the people who are here.\u0027",
+                                                  "\u0027You want to know if God is in the machines. I want to know why you think that\u0027s a harder question than whether God is in you.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Sterling-Nakamura has sent a new investigator to Edgewater Prism asking questions about a sacramental record from fifteen years ago â€” Father Bart needs help determining how much they actually know without tipping them off",
+                        "Someone has been leaving threatening messages in chrome prayer pigment on the church\u0027s exterior walls â€” the content suggests insider knowledge of the congregation that only a regular member would have"
+                    ],
+    "narrative_function":  "Community authority and moral voice; mediator for district-level conflicts; long historical memory; potential quest giver for problems that have been building for decades; someone who knows where bodies are buried, metaphorically.",
+    "augmentations":  "Chrome prayer circuits over traditional tatau (cosmetic/devotional, metallic pigment). A cardiac support implant â€” medical necessity, installed eight years ago. No other augmentations; has refused enhancement on principle.",
+    "daily_life":  "Morning mass at dawn with a small core congregation; administrative and pastoral work through the morning; open hours for the community in the afternoon where anyone can come with any problem; evening prayer service with significantly more attendees.",
+    "affiliation":  "Church of the Unbroken Signal; loose ecumenical network of syncretic congregations; no corponation affiliation and famously resistant to all corporate sponsorship offers",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  9,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  10,
+                                 "empathy":  8,
+                                 "expression":  9,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "moral authority",
+                               "long memory",
+                               "syncretic faith",
+                               "protected secret",
+                               "temper under pressure"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Protect the congregation before protecting the institution",
+                                              "Do not lie in the pulpit â€” struggle openly before you lie smoothly",
+                                              "When in doubt, ask what the person in front of you actually needs"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient listening and pastoral redirection",
+                                                 "Clear statement of where his line is and why",
+                                                 "Explosive anger that he always regrets and apologizes for â€” but which sometimes resolves things faster than patience did"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Formal and warm simultaneously â€” extends hospitality immediately but takes longer to trust",
+                                                   "friends":  "Unguarded, argumentative, deeply generous, occasionally insufferable"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More quiet, longer homilies",
+                                                "medium":  "Throws himself into physical maintenance work on the building",
+                                                "high":  "Short terrible-tempered period followed by long silence followed by action"
+                                            },
+                       "contradictions":  [
+                                              "Preaches forgiveness and holds grudges with impressive tenacity"
+                                          ],
+                       "habits":  [
+                                      "Polishes the koa wood cross daily while reviewing his notes for the day\u0027s services",
+                                      "Makes tea for anyone who sits down in his office regardless of how long they plan to stay"
+                                  ],
+                       "breaking_points":  [
+                                               "A member of his congregation being harmed by a corponation while he watches",
+                                               "The falsified records being discovered and the woman whose identity he changed being endangered"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Commander":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Edgewater Prism",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in the Edgewater area to a Guinean-Polynesian family; father was a traditional navigator, mother a dockworker",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Ordained after a long and contested discernment process â€” his syncretic approach was controversial",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Converts the antenna building into the Church of the Unbroken Signal",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Falsifies sacramental records to protect a woman fleeing Sterling-Nakamura indenture",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Cardiac implant installed; congregation grows significantly during his recovery period as a show of communal support",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Bone Parish",
+                             "Edgewater Prism",
+                             "CONGREGATION",
+                             "Iowan Behemoth â€” \u0027Cathedral\u0027",
+                             "Ossuary Arms Memento Vivere OA-7 \u0027Momento\u0027",
+                             "The Heritage Vault",
+                             "The Pure Hand",
+                             "GLMZ",
+                             "Weathervane"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Northern European (30.7%), Sub-Saharan African (26.0%), Southeast Asian (20.1%), Pacific Islander (8.3%), East Asian (8.2%), South Asian (6.7%) â€” a complex global tapestry reflecting the Ubiquitous Diaspora. The genetic blend manifests as warm medium-brown skin with golden and reddish undertones. Facial structure shows broad cheekbones characteristic of Southeast and East Asian genetics, balanced by fuller lips and wider nose bridge from Sub-Saharan African heritage, with the bone prominence and brow structure of Northern European ancestry creating an overall harmonious blend that resists singular continental categorization.",
+                                 "height_cm":  188,
+                                 "weight_kg":  104,
+                                 "build":  "Large-framed and broad-shouldered, softened by age and gravity into a barrel-chested heaviness. Still carries the muscularity of someone who spent decades doing physical labor, but now rounded at the middle and loose in the neck. Moves with deliberate slowness that suggests both dignity and the mechanical accommodation of an aging heart.",
+                                 "hair_color":  "White",
+                                 "hair_style":  "Close-cropped, worn very short at the crown with slightly longer tufts at the temples",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown, slightly clouded with cataracts at the edges",
+                                 "skin_tone":  "Warm medium-brown with golden and reddish undertones, richly mahogany across face and neck from decades of lake wind exposure and the blended Sub-Saharan and Southeast Asian ancestry components",
+                                 "complexion":  "Deeply lined forehead and around the eyes; pronounced nasolabial folds; loose skin at the jowls; age spots across the temples and scalp. Broad cheekbones and balanced proportions reflecting East Asian and Southeast Asian heritage harmonized with fuller lips and wider nose from Sub-Saharan African ancestry, with Northern European bone prominence in brow and jaw. Meticulous grooming despite ageâ€”clean-shaven, skin well-maintained.",
+                                 "distinguishing_marks":  [
+                                                              "Traditional tatau covering both forearms in geometric patterns of black inkâ€”Polynesian ancestral work, perfectly preserved and symmetrical",
+                                                              "Chrome prayer circuits in metallic pigment overlaid across the tatau, forming new geometric completions and liturgical symbols that shimmer faintly under light",
+                                                              "Matching tatau work extending up the right side of the neck in a vertical stripe, supplemented by chrome prayer circuitry that traces his carotid",
+                                                              "A thin surgical scar along the left collarbone, approximately 8cm long, from cardiac implant installationâ€”faded to pale pink",
+                                                              "Weathered creases across the backs of both hands, consistent with decades of manual work and age spots emerging on the knuckles"
+                                                          ],
+                                 "visible_augmentations":  "Chrome prayer circuits in metallic pigment on forearms and neckâ€”not cybernetic but cosmetic-devotional, meant to be visible. The cardiac support implant is subcutaneous and invisible.",
+                                 "posture_movement":  "Stands with a slight forward hunch, shoulders perpetually braced as though against lake wind. Moves deliberately, with careful weight distribution suggesting awareness of cardiac limitation. Hands gesture expansively when animated or passionate; these gestures are precise and sometimes theatrical. When listening, entire body settles into stillness. Walking pace is measured; no rushing.",
+                                 "clothing_style":  "Black wool cassock of older manufacture, well-maintained but not pristineâ€”faint wear at cuffs and hem. Over it, a handwoven stole in red and white geometric pattern (Polynesian weaving, family work). At his belt: a carved koa wood cross on a leather cord and a small polished aluminum E.L.F. offering dish, both worn smooth by forty years of handling. Underneath, simple cotton shirts in white or cream. No jewelry except a worn silver ring on left ring finger. Black leather shoes, resoled multiple times. Tier 4 aestheticâ€”functionally dressed, resistant to status markers, invested in quality and meaning."
+                             },
+    "image_prompt":  "A distinguished elderly man of mixed global ancestry, warm medium-brown skin with mahogany tones, white close-cropped hair, deep brown eyes clouded slightly with age. Large-framed, broad-shouldered with barrel chest, carrying dignified heaviness of decades. Face shows deep lines, broad cheekbones blending East Asian structure with fuller lips and wide nose from African heritage, Northern European brow prominence. Meticulous grooming, clean-shaven. Forearms and neck covered in black geometric Polynesian tatau work with overlaid shimmering chrome prayer circuits that catch the light. Wears a black wool cassock with handwoven red and white Polynesian geometric stole. Carved koa wood cross hangs from leather cord at his belt. Stands with slight forward hunch, hands relaxed but expressive. Weathered hands show age spots and creases from decades of labor. Faint surgical scar visible on left collarbone. Setting: Great Lakes Metropolitan Zone interior, soft natural light filtering through windows, GLMZ era. Mood: contemplative, dignified, spiritually grounded despite advanced age and cardiac augmentation. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  30.7,
+                             "Sub-Saharan African":  26,
+                             "Southeast Asian":  20.1,
+                             "Pacific Islander":  8.3,
+                             "East Asian":  8.2,
+                             "South Asian":  6.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  30.7
+                                                                       }
+                                                  },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Guinean":  9.7
+                                                                         },
+                                                        "East African":  {
+                                                                             "Rwandan":  3.7
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  7.3,
+                                                                                "Angolan":  5.3
+                                                                            }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  3.4
+                                                                },
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  8.5
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Tagalog":  8.2
+                                                                 }
+                                                },
+                            "Pacific Islander":  {
+                                                     "Melanesian":  {
+                                                                        "Ni-Vanuatu":  8.3
+                                                                    }
+                                                 },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  4.9
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  1.2
+                                                            },
+                                               "Chinese":  {
+                                                               "Shanghainese":  2.1
+                                                           }
+                                           },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  2.4,
+                                                                   "Tamil Sri Lankan":  4.3
+                                                               }
+                                            }
+                        },
+    "tier":  "2"
 }

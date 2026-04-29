@@ -10,7 +10,17 @@
     "friction sheath"
   ],
   "description": "The sheath (saya) for Silence — a custom-fitted composite friction saya in matte black. The saya is machined to the exact geometry of the blade, forming a friction-fit that holds the blade securely without a locking mechanism. The draw is silent: no click, no snap, no mechanical retention. The blade comes free with consistent, calibrated pull resistance, the same every time, regardless of orientation or ambient conditions.\n\nThe composite material is a carbon-fiber reinforced polymer with a superhydrophobic surface coating — water beads and sheds immediately, preventing moisture from entering the saya mouth and reaching the blade. The interior is lined with a fluoropolymer film that does not react with the blade's TENG film or ferrocerium substrate. Contact between the saya interior and the mune surface does not generate triboelectric charge — the saya material was selected specifically to avoid this. Drawing the blade from the saya does not pre-charge it; only the draw strop on Kyle's forearm does.\n\nThe saya rides across the back in a matte-black back carry mount, blade horizontal, grip at right shoulder. The mount is friction-locked to Kyle's tactical underlayer and releases with a thumb-press. He can draw from the back mount one-handed in approximately 0.3 seconds. This is not impressive by augmented-combatant standards. It is how Seo taught him.",
-  "specifications": "Material: carbon-fiber reinforced polymer shell Interior lining: fluoropolymer film (PTFE-adjacent; triboelectrically matched to blade mune to prevent draw-charging) Surface coating: superhydrophobic, contact angle >150° Fit: custom friction-fit to Silence blade geometry Draw retention: calibrated friction, no mechanical lock Draw sound: silent Mount: back carry, horizontal, right-shoulder-draw Mount release: thumb-press friction lock Draw time (practiced): approximately 0.3 seconds from back mount",
+  "specifications": {
+    "material": "carbon-fiber reinforced polymer shell",
+    "interior_lining": "fluoropolymer film (PTFE-adjacent; triboelectrically matched to blade mune to prevent draw-charging)",
+    "surface_coating": "superhydrophobic, contact angle >150°",
+    "fit": "custom friction-fit to Silence blade geometry",
+    "draw_retention": "calibrated friction, no mechanical lock",
+    "draw_sound": "silent",
+    "mount": "back carry, horizontal, right-shoulder-draw",
+    "mount_release": "thumb-press friction lock",
+    "draw_time_practiced": "approximately 0.3 seconds from back mount"
+  },
   "cost": {
     "part_only": "Φ 680 (custom fabrication to blade geometry; standard composite materials)",
     "installation_labor": "N/A — the saya does not require installation beyond being fitted to the blade during fabrication.",

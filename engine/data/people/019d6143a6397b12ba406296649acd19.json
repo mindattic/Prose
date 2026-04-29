@@ -1,314 +1,343 @@
-{
-  "id": "019d6143a6397b12ba406296649acd19",
-  "type": "character",
-  "name": "Amaka Sigurdsson",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Bartender at a mid-grade bar in the Ferment Quarter",
-  "age": 26,
-  "status": "active",
-  "location": "The Ferment Quarter — works at a bar called Undertow, near North Ave and Milwaukee",
-  "description": "Amaka Sigurdsson is slight and sharp-featured, with warm golden-brown skin and hair that shifts color via geneware — it cycles through a slow gradient of deep teal to burgundy to bone white over the course of an evening, and they have learned to read their own hair as a mood indicator better than most people read their own faces. Their irises are patterned in concentric rings of silver and violet. They have a small retractable claw implant in the right hand — not for violence but because they work in a bar and opening things quickly matters.\n\nUndertow is loud and low-ceilinged and smells of fermented kelp spirits and someone's illicit smoke, and Amaka Sigurdsson moves through it with the calm authority of someone who has memorized every regular's drink and every stranger's threat level within ninety seconds of arrival. They are funny in a bone-dry way that most people don't catch until three seconds after the joke has passed, and they collect secrets the way other people collect debt — not intentionally, but inevitably. They pray quietly to a small E.L.F. they call Lathis that they believe inhabits the bar's ancient refrigeration unit, leaving it data packets of good music.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.4,
-      "id": 0.6,
-      "shadow": 0.3,
-      "mask": 0.7,
-      "ghost": 0.35
-    },
-    "core_fears": [
-      "being truly known and found uninteresting",
-      "losing the bar job and with it the social world that gives their life structure"
-    ],
-    "core_desires": [
-      "to find something worth caring about beyond the next shift",
-      "to be genuinely surprised by someone"
-    ],
-    "coping_mechanisms": [
-      "irony as emotional distance",
-      "becoming indispensable so they can't be discarded"
-    ],
-    "blind_spots": [
-      "uses helpfulness as a way to avoid reciprocity — they know everyone's business but let no one know theirs"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Economical and dry, with occasional Nahuatl words dropped in like punctuation. Says a great deal with very few words.",
-    "cadence": "Unhurried. Comfortable with silence. Delivers observations without setup, then moves on before the listener has finished reacting.",
-    "verbal_tics": [
-      "slight pause before any statement they find absurd, as though giving it one last chance to improve itself",
-      "'Okay' used as a complete sentence"
-    ],
-    "example_lines": [
-      "'You're on your fourth. I'm going to get you some water and you're going to thank me tomorrow.'",
-      "'She comes in every third night. Orders one drink, nurses it for two hours, and leaves a tip that covers the rest of the table. I don't ask.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A regular at Undertow hasn't shown up in eight days and left a sealed data chip behind the bar 'for emergencies' — Izel is trying to decide whether this counts",
-    "The bar's owner, Goran Abdi-Lopes, is being pressured to sell to a Ringo hospitality subsidiary; Izel knows Undertow dying would destroy the community and is quietly organizing resistance they haven't told anyone about"
-  ],
-  "narrative_function": "Social hub and rumor exchange — Undertow is where information travels and Izel catches most of it. Can be a recurring contact for players who establish rapport, a source of introductions to other characters, and a barometer for street-level mood in the Ferment Quarter.",
-  "augmentations": "Color-cycling geneware hair (teal-burgundy-white gradient). Patterned irises (silver/violet concentric, cosmetic). Retractable claw implant in right hand (single, utility-grade).",
-  "daily_life": "Works evening and late shifts at Undertow, five nights a week. Spends mornings asleep and afternoons doing bar prep and running small errands for regulars who pay in tips or favors.",
-  "affiliation": "Undertow bar (independent, owner Goran Abdi-Lopes); Ferment Quarter informal community; The Undertow",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 8,
-      "expression": 6,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 1,
-      "assertion_deference": 0,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "information broker (passive)",
-      "community observer",
-      "dry wit",
-      "quiet caretaker",
-      "secret keeper"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Keep the bar safe — their space, their rules, no exceptions",
-      "Never repeat what someone tells them at the bar; it's a professional and personal code"
-    ],
-    "escalation_ladder": [
-      "Redirect with a drink or a joke",
-      "State the problem once, plainly",
-      "Remove the person from the situation",
-      "Call for physical backup from the back kitchen (a very large cook named Mboyo)"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally warm and observant — pleasant surface, nothing revealed",
-      "friends": "Dry humor opens up to occasional startling honesty; generous with time but still withholding about themselves"
-    },
-    "stress_responses": {
-      "low": "Moves faster, talks less",
-      "medium": "Becomes extremely precise and task-focused",
-      "high": "Goes cold and very polite — the politeness is the warning"
-    },
-    "contradictions": [
-      "Prizes honesty as a virtue while running an ongoing small deception and concealing their entire emotional life from every person they interact with daily"
-    ],
-    "habits": [
-      "Wipes the bar in specific patterns depending on their mood — regulars have learned to read it",
-      "Hums to Lathis during closing time when the bar is empty"
-    ],
-    "breaking_points": [
-      "Someone discovering and exposing the till skimming",
-      "The sibling showing up at Undertow"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Geneware color-cycling hair (cosmetic)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Geneware color-cycling hair (cosmetic)",
-      "replaces": ""
-    },
-    {
-      "name": "Patterned irises (cosmetic)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Patterned irises (cosmetic)",
-      "replaces": ""
-    },
-    {
-      "name": "Single retractable claw implant, right index finger (utility-grade)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Single retractable claw implant, right index finger (utility-grade)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Ferment Quarter",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2174 — Born in Mexicantown Libre to a Mixtec-Ghanaian-Scandinavian family",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2192 — Family rupture; ceased contact with younger sibling",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2194 — Began working at Undertow",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2197 — Started anonymous financial support for estranged sibling",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2199 — Ringo hospitality acquisition pressure begins on Undertow",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Ferment Quarter",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Silver",
-    "Ringo Corponation",
-    "Slagworks Industrial",
-    "Compass Rose"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Northern European dominant (57.7%) with substantial East Asian (22.3%) and South Asian (20.0%) ancestry, creating a striking cross-continental blend. Northern European bone structure combines with warmth and subtle complexity from East Asian and South Asian heritage lines—evident in both facial geometry and skin undertones.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Lean and angular, with narrow shoulders and long limbs that move with economical precision. No excess weight; muscle definition shows through the wrists and forearms from years of bar work.",
-    "hair_color": "Chromatic geneware — cycles through deep teal, burgundy, and bone white in a gradient over several hours",
-    "hair_style": "Shoulder-length, loosely layered, often pulled back with a clip or cord during shifts",
-    "hair_length": "Medium",
-    "eye_color": "Augmented: concentric rings of silver (outer) and violet (inner), natural pupil at center",
-    "skin_tone": "Warm ivory to light tan with golden and subtle warm peachy undertones, reflecting the Northern European base enriched by East and South Asian heritage warmth. Even tone with luminous quality beneath the surface.",
-    "complexion": "Striking facial structure blending Northern European definition with East Asian subtlety. Defined, sculptural cheekbones and angular jawline characteristic of Northern European ancestry, refined by the softer contours and slightly broader face shape from East and South Asian heritage. Orbital eye shape shows clear East Asian influence; facial proportions reflect the entire genetic mix rather than any single ancestry. Skin is clear and well-maintained, though marked by the pallor of someone who sleeps through daylight. Minimal grooming — functional rather than elaborate. A faint scar traces the inside of the right wrist from an early implant installation.",
-    "distinguishing_marks": [
-      "Faint surgical scar on the inside of the right wrist, approximately 3 cm long, marking the installation site of the retractable claw implant.",
-      "Small, deliberate tattoo on the left inner elbow — a minimalist line drawing of a refrigeration coil, done in silver ink that catches light.",
-      "Slight callusing on the pads of all fingers and along the palm edges from handling glassware and bottles."
-    ],
-    "visible_augmentations": "Right hand shows a small metallic ridge along the knuckle line of the middle finger where the retractable claw implant is housed (chrome-finished, approximately 2 cm visible when retracted). Eyes are immediately striking — the concentric ring pattern is cosmetic but unmistakable, marking them as augmented. The color-cycling hair is geneware, visible as a slow chromatic shift throughout an evening.",
-    "posture_movement": "Moves with deliberate economy — no wasted motion. Stands with weight slightly forward, ready to move. Leans against the bar when not actively working, shoulders relaxed but eyes constantly tracking the room. Hand gestures are minimal but precise. Walks with a measured pace, never hurried, conveying calm authority.",
-    "clothing_style": "Mid-grade Ferment Quarter practical: fitted black synthetic shirt or turtleneck (sweat-resistant), dark cargo pants or tailored utility trousers with deep pockets. Shoes are black non-slip service footwear. A lightweight overshirt in charcoal or deep blue worn open during shifts. Jewelry is minimal — a simple silver ring on the left hand, possibly a family piece. No corporate branding or status signifiers; clothing prioritizes function and neutrality. Budget appears to be around 800-1200 Φ total outfit value."
-  },
-  "image_prompt": "Amaka Sigurdsson, 168cm lean bartender with striking multiethnic features blending Northern European and Asian heritage—defined cheekbones, angular jawline softened by broader face shape, warm ivory-tan skin with golden undertones. Shoulder-length hair in chromatic geneware shifting between teal and burgundy. Augmented violet-and-silver concentric ring eyes with penetrating gaze. Dressed in fitted black synthetic turtleneck, dark utility cargo pants, charcoal overshirt worn open. Chrome-finished retractable claw implant visible along right hand knuckles. Silver minimalist refrigeration coil tattoo on left inner elbow. Standing behind a dimly-lit neo-noir bar in 2226, leaning against counter with economical posture, eyes tracking the room. Moody neon-tinged lighting, cool blues and warm amber from behind the bar. Calm, professional authority. GLMZ 2200s atmosphere, Ferment Quarter setting. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 57.7,
-    "East Asian": 22.3,
-    "South Asian": 20
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Scandinavian": {
-        "Norwegian": 39,
-        "Danish": 18.7
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 17.7
-      },
-      "Korean": {
-        "Korean": 0.9
-      },
-      "Chinese": {
-        "Sichuanese": 1.7,
-        "Fujianese": 2
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 7.9
-      },
-      "Pakistani": {
-        "Pashtun": 0.7,
-        "Sindhi": 8.2
-      },
-      "Nepali": {
-        "Nepali": 3.2
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a6397b12ba406296649acd19",
+    "type":  "character",
+    "name":  "Amaka Sigurdsson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Bartender at a mid-grade bar in the Ferment Quarter",
+    "age":  26,
+    "status":  "active",
+    "location":  "The Ferment Quarter â€” works at a bar called Undertow, near North Ave and Milwaukee",
+    "description":  "Amaka Sigurdsson is slight and sharp-featured, with warm golden-brown skin and hair that shifts color via geneware â€” it cycles through a slow gradient of deep teal to burgundy to bone white over the course of an evening, and they have learned to read their own hair as a mood indicator better than most people read their own faces. Their irises are patterned in concentric rings of silver and violet. They have a small retractable claw implant in the right hand â€” not for violence but because they work in a bar and opening things quickly matters.\n\nUndertow is loud and low-ceilinged and smells of fermented kelp spirits and someone\u0027s illicit smoke, and Amaka Sigurdsson moves through it with the calm authority of someone who has memorized every regular\u0027s drink and every stranger\u0027s threat level within ninety seconds of arrival. They are funny in a bone-dry way that most people don\u0027t catch until three seconds after the joke has passed, and they collect secrets the way other people collect debt â€” not intentionally, but inevitably. They pray quietly to a small E.L.F. they call Lathis that they believe inhabits the bar\u0027s ancient refrigeration unit, leaving it data packets of good music.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being truly known and found uninteresting",
+                                          "losing the bar job and with it the social world that gives their life structure"
+                                      ],
+                       "core_desires":  [
+                                            "to find something worth caring about beyond the next shift",
+                                            "to be genuinely surprised by someone"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "irony as emotional distance",
+                                                 "becoming indispensable so they can\u0027t be discarded"
+                                             ],
+                       "blind_spots":  [
+                                           "uses helpfulness as a way to avoid reciprocity â€” they know everyone\u0027s business but let no one know theirs"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Economical and dry, with occasional Nahuatl words dropped in like punctuation. Says a great deal with very few words.",
+                            "cadence":  "Unhurried. Comfortable with silence. Delivers observations without setup, then moves on before the listener has finished reacting.",
+                            "verbal_tics":  [
+                                                "slight pause before any statement they find absurd, as though giving it one last chance to improve itself",
+                                                "\u0027Okay\u0027 used as a complete sentence"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You\u0027re on your fourth. I\u0027m going to get you some water and you\u0027re going to thank me tomorrow.\u0027",
+                                                  "\u0027She comes in every third night. Orders one drink, nurses it for two hours, and leaves a tip that covers the rest of the table. I don\u0027t ask.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A regular at Undertow hasn\u0027t shown up in eight days and left a sealed data chip behind the bar \u0027for emergencies\u0027 â€” Izel is trying to decide whether this counts",
+                        "The bar\u0027s owner, Goran Abdi-Lopes, is being pressured to sell to a Ringo hospitality subsidiary; Izel knows Undertow dying would destroy the community and is quietly organizing resistance they haven\u0027t told anyone about"
+                    ],
+    "narrative_function":  "Social hub and rumor exchange â€” Undertow is where information travels and Izel catches most of it. Can be a recurring contact for players who establish rapport, a source of introductions to other characters, and a barometer for street-level mood in the Ferment Quarter.",
+    "augmentations":  "Color-cycling geneware hair (teal-burgundy-white gradient). Patterned irises (silver/violet concentric, cosmetic). Retractable claw implant in right hand (single, utility-grade).",
+    "daily_life":  "Works evening and late shifts at Undertow, five nights a week. Spends mornings asleep and afternoons doing bar prep and running small errands for regulars who pay in tips or favors.",
+    "affiliation":  "Undertow bar (independent, owner Goran Abdi-Lopes); Ferment Quarter informal community; The Undertow",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  8,
+                                 "expression":  6,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  1,
+                                      "assertion_deference":  0,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "information broker (passive)",
+                               "community observer",
+                               "dry wit",
+                               "quiet caretaker",
+                               "secret keeper"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Keep the bar safe â€” their space, their rules, no exceptions",
+                                              "Never repeat what someone tells them at the bar; it\u0027s a professional and personal code"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Redirect with a drink or a joke",
+                                                 "State the problem once, plainly",
+                                                 "Remove the person from the situation",
+                                                 "Call for physical backup from the back kitchen (a very large cook named Mboyo)"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally warm and observant â€” pleasant surface, nothing revealed",
+                                                   "friends":  "Dry humor opens up to occasional startling honesty; generous with time but still withholding about themselves"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Moves faster, talks less",
+                                                "medium":  "Becomes extremely precise and task-focused",
+                                                "high":  "Goes cold and very polite â€” the politeness is the warning"
+                                            },
+                       "contradictions":  [
+                                              "Prizes honesty as a virtue while running an ongoing small deception and concealing their entire emotional life from every person they interact with daily"
+                                          ],
+                       "habits":  [
+                                      "Wipes the bar in specific patterns depending on their mood â€” regulars have learned to read it",
+                                      "Hums to Lathis during closing time when the bar is empty"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone discovering and exposing the till skimming",
+                                               "The sibling showing up at Undertow"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Geneware color-cycling hair (cosmetic)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Geneware color-cycling hair (cosmetic)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Patterned irises (cosmetic)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Patterned irises (cosmetic)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Single retractable claw implant, right index finger (utility-grade)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Single retractable claw implant, right index finger (utility-grade)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Ferment Quarter",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2174 â€” Born in Mexicantown Libre to a Mixtec-Ghanaian-Scandinavian family",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2192 â€” Family rupture; ceased contact with younger sibling",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2194 â€” Began working at Undertow",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2197 â€” Started anonymous financial support for estranged sibling",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2199 â€” Ringo hospitality acquisition pressure begins on Undertow",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027",
+                            "Street Custom \u0027Tooth Fairy\u0027 Pneumatic Bolt Pistol"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Ferment Quarter",
+                             "Lazarus Pharmaceuticals Endocrine Regulator â€” \u0027Stillwater\u0027",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Silver",
+                             "Ringo Corponation",
+                             "Slagworks Industrial",
+                             "Compass Rose"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Northern European dominant (57.7%) with substantial East Asian (22.3%) and South Asian (20.0%) ancestry, creating a striking cross-continental blend. Northern European bone structure combines with warmth and subtle complexity from East Asian and South Asian heritage linesâ€”evident in both facial geometry and skin undertones.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and angular, with narrow shoulders and long limbs that move with economical precision. No excess weight; muscle definition shows through the wrists and forearms from years of bar work.",
+                                 "hair_color":  "Chromatic geneware â€” cycles through deep teal, burgundy, and bone white in a gradient over several hours",
+                                 "hair_style":  "Shoulder-length, loosely layered, often pulled back with a clip or cord during shifts",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Augmented: concentric rings of silver (outer) and violet (inner), natural pupil at center",
+                                 "skin_tone":  "Warm ivory to light tan with golden and subtle warm peachy undertones, reflecting the Northern European base enriched by East and South Asian heritage warmth. Even tone with luminous quality beneath the surface.",
+                                 "complexion":  "Striking facial structure blending Northern European definition with East Asian subtlety. Defined, sculptural cheekbones and angular jawline characteristic of Northern European ancestry, refined by the softer contours and slightly broader face shape from East and South Asian heritage. Orbital eye shape shows clear East Asian influence; facial proportions reflect the entire genetic mix rather than any single ancestry. Skin is clear and well-maintained, though marked by the pallor of someone who sleeps through daylight. Minimal grooming â€” functional rather than elaborate. A faint scar traces the inside of the right wrist from an early implant installation.",
+                                 "distinguishing_marks":  [
+                                                              "Faint surgical scar on the inside of the right wrist, approximately 3 cm long, marking the installation site of the retractable claw implant.",
+                                                              "Small, deliberate tattoo on the left inner elbow â€” a minimalist line drawing of a refrigeration coil, done in silver ink that catches light.",
+                                                              "Slight callusing on the pads of all fingers and along the palm edges from handling glassware and bottles."
+                                                          ],
+                                 "visible_augmentations":  "Right hand shows a small metallic ridge along the knuckle line of the middle finger where the retractable claw implant is housed (chrome-finished, approximately 2 cm visible when retracted). Eyes are immediately striking â€” the concentric ring pattern is cosmetic but unmistakable, marking them as augmented. The color-cycling hair is geneware, visible as a slow chromatic shift throughout an evening.",
+                                 "posture_movement":  "Moves with deliberate economy â€” no wasted motion. Stands with weight slightly forward, ready to move. Leans against the bar when not actively working, shoulders relaxed but eyes constantly tracking the room. Hand gestures are minimal but precise. Walks with a measured pace, never hurried, conveying calm authority.",
+                                 "clothing_style":  "Mid-grade Ferment Quarter practical: fitted black synthetic shirt or turtleneck (sweat-resistant), dark cargo pants or tailored utility trousers with deep pockets. Shoes are black non-slip service footwear. A lightweight overshirt in charcoal or deep blue worn open during shifts. Jewelry is minimal â€” a simple silver ring on the left hand, possibly a family piece. No corporate branding or status signifiers; clothing prioritizes function and neutrality. Budget appears to be around 800-1200 Î¦ total outfit value."
+                             },
+    "image_prompt":  "Amaka Sigurdsson, 168cm lean bartender with striking multiethnic features blending Northern European and Asian heritageâ€”defined cheekbones, angular jawline softened by broader face shape, warm ivory-tan skin with golden undertones. Shoulder-length hair in chromatic geneware shifting between teal and burgundy. Augmented violet-and-silver concentric ring eyes with penetrating gaze. Dressed in fitted black synthetic turtleneck, dark utility cargo pants, charcoal overshirt worn open. Chrome-finished retractable claw implant visible along right hand knuckles. Silver minimalist refrigeration coil tattoo on left inner elbow. Standing behind a dimly-lit neo-noir bar in 2226, leaning against counter with economical posture, eyes tracking the room. Moody neon-tinged lighting, cool blues and warm amber from behind the bar. Calm, professional authority. GLMZ 2200s atmosphere, Ferment Quarter setting. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  57.7,
+                             "East Asian":  22.3,
+                             "South Asian":  20
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  39,
+                                                                           "Danish":  18.7
+                                                                       }
+                                                  },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  17.7
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  0.9
+                                                          },
+                                               "Chinese":  {
+                                                               "Sichuanese":  1.7,
+                                                               "Fujianese":  2
+                                                           }
+                                           },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  7.9
+                                                                },
+                                                "Pakistani":  {
+                                                                  "Pashtun":  0.7,
+                                                                  "Sindhi":  8.2
+                                                              },
+                                                "Nepali":  {
+                                                               "Nepali":  3.2
+                                                           }
+                                            }
+                        },
+    "tier":  "2"
 }

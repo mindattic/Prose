@@ -1,321 +1,350 @@
-{
-  "id": "019d6143a6bd7c239868d4de2e9c9055",
-  "type": "character",
-  "name": "Adriano Balogun",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Surveillance Operator, Arcturus Defense Solutions — Civil Security Division — Digital Observation Unit",
-  "age": 52,
-  "status": "active",
-  "location": "The Rampart, GLMZ, near Ashland and Chicago Ave",
-  "description": "Adriano Balogun is a soft-looking man who has spent thirty years becoming invisible in rooms full of screens. He's broad through the chest and shoulders from a youth he no longer thinks about, with a dome-shaped head his colleagues affectionately call 'the satellite,' and skin the color of aged teak. He keeps a neat, short beard going gray at the jaw and wears the same four shirts in rotation. His eyes have been operationally upgraded so many times that the irises are now a complete replacement — compound tactical lenses with a faint prismatic iridescence that catches light like oil on water. When he's deep in the feed, his eyes move constantly without blinking, which people find profoundly unsettling the first time they see it.\n\nAdriano Balogun has watched the city for three decades through glass and wire and now perceives it primarily as a data problem — not with coldness, exactly, but with a kind of sorrowful intimacy that comes from seeing everything. He knows faces in the Gray Zone the way a shepherd knows sheep, not because he loves them but because they are his terrain. He has a precise, small devotion to the Rampart's E.L.F. cluster — he calls them 'the Watchers' collectively and believes they alert him when something on the feed is worth double-checking. He's not wrong often. He keeps a thermos of ginger tea on his desk and has not left the city limits in eleven years.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.3,
-      "shadow": 0.7,
-      "mask": 0.3,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "That watching without acting has made him complicit in everything he's witnessed",
-      "Losing his sight — the implants have a projected service life he's past"
-    ],
-    "core_desires": [
-      "To have intervened, once, at the right moment — he isn't sure which moment",
-      "For someone to look back at the camera and actually see him"
-    ],
-    "coping_mechanisms": [
-      "Categorization — filing what he sees into 'cases' rather than 'people'",
-      "The Watchers — off-loading moral weight to E.L.F. as spiritual practice"
-    ],
-    "blind_spots": [
-      "His belief that documentation is a form of action — it isn't, and he knows it, and he doesn't know what to do with knowing"
-    ],
-    "secret": "Fourteen years ago he watched — recorded, documented, filed, did not act — as a woman was murdered in a Blackpipe Corridor alley. The case was closed, the killer never identified. He knows who the killer was. He has that file. He has opened it 4,000 times."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, slightly archaic — he reads physical books and it shows. Ghanaian-Serbian turns of phrase embedded in formal Metro diction.",
-    "cadence": "Unhurried. Gives information in layers, waits for you to ask for the next one.",
-    "verbal_tics": [
-      "'Look at this.'",
-      "Refers to camera feeds by their junction codes as proper names",
-      "Long pause before answering personal questions"
-    ],
-    "example_lines": [
-      "'Junction 44-Crow saw him six minutes before you did. I'll pull the thread back. Give me a moment.'",
-      "'I have watched this city for thirty years. I can tell you what it looks like. I cannot always tell you what it means.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He will share the file — the murder, the killer — with the right person, for reasons he can't fully articulate, but only if they come to him first, which means someone has to know to find him.",
-    "His compound lenses are past their rated service life and he's been denied replacement authorization on budget grounds; if they fail in the middle of something critical, the consequences for whatever he was tracking will be severe."
-  ],
-  "narrative_function": "Information broker — he has seen things; oracle-type figure who can pull footage, identify faces, track movement patterns; moral weight of the watcher who has normalized surveillance; source of information that comes with a complicated ethical price tag.",
-  "augmentations": "Full iris replacement — compound tactical lenses, prismatic iridescence, multi-spectrum optical processing; neural feed-buffer implant (allows passive monitoring of up to 24 feeds simultaneously without conscious focus); mild anti-fatigue somatic regulator (Metro-issue for extended operators).",
-  "daily_life": "He works a long swing shift in the Rampart's observation deck, monitoring feeds across the Gray Zone, Gage Circuit, and Blackpipe Corridor; eats at his desk, takes a twenty-minute walking break at 03:00 when the feeds go quiet, and spends it talking to the Watchers.",
-  "affiliation": "",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 10
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 4,
-      "empathy": 7,
-      "expression": 5,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -2,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "surveillance",
-      "keeper of secrets",
-      "moral burden",
-      "long service",
-      "e.l.f. devout"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Record everything — the record is the job",
-      "Do not personally intervene — that is not your function (a rule he enforces against himself with increasing difficulty)"
-    ],
-    "escalation_ladder": [
-      "Flags the feed and files the report",
-      "Contacts field units directly when the report isn't being acted on fast enough",
-      "In extreme circumstances: anonymous tip to a non-Metro party — he has done this twice"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Reserved, assessing in a way that feels less threatening than it is — he's already looked you up before you've finished introducing yourself",
-      "friends": "Few. Those he has, he is steadily, quietly devoted to."
-    },
-    "stress_responses": {
-      "low": "Drinks more tea, narrows focus to the feed",
-      "medium": "Begins cross-referencing aggressively — data as anxiety management",
-      "high": "Goes very still. Stops talking. Watches. Then makes a decision that surprises people."
-    },
-    "contradictions": [
-      "He believes in privacy as a value while professionally dismantling it hour by hour"
-    ],
-    "habits": [
-      "Names the regular faces in his feeds — not officially, just in his notes",
-      "Talks to the Watchers during his 03:00 break, tells them what he saw that day"
-    ],
-    "breaking_points": [
-      "Being ordered to delete footage or look away from a feed — he will not do it, and he will not be quiet about it"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Full iris replacement — compound tactical lenses, prismatic iridescence, multi-spectrum optical processing (past rated service life)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Full iris replacement — compound tactical lenses, prismatic iridescence, multi-spectrum optical processing (past rated service life)",
-      "replaces": ""
-    },
-    {
-      "name": "Neural feed-buffer implant — passive 24-feed simultaneous monitoring",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Neural feed-buffer implant — passive 24-feed simultaneous monitoring",
-      "replaces": ""
-    },
-    {
-      "name": "Anti-fatigue somatic regulator — Metro-issue for extended shift operators",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Anti-fatigue somatic regulator — Metro-issue for extended shift operators",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7,
-    "Networker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Rampart",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 22: Joined Metro as a beat cop, Blackpipe Corridor",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 29: Transferred to Digital Observation Unit after an injury ended foot patrol",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 38: The Blackpipe murder. The file. The decision.",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 40: First compound lens upgrade",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 47: Denied promotion to Unit Lead — 'too embedded in routine operations'",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 52: Currently at the Rampart, second decade in this chair",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'",
-    "Galvanic Disruption Gauntlet GDG-2 'Palsy'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'"
-  ],
-  "related_entities": [
-    "Oracle Drift Systems",
-    "The Rampart",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Waxwing Neuromedia",
-    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'",
-    "CHROMEWORKS GhostFrame Stealth Ocular Mk3",
-    "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Chicago",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Glass",
-    "GLMZ",
-    "Teak"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex tri-continental blend: Sub-Saharan African (37.7%), East Asian (33.4%), and Middle Eastern (28.9%) ancestry. This combination produces warm, deep brown skin with subtle bronze and amber undertones, balanced facial structure reflecting both East African and Levantine proportions, and the characteristic cheekbone definition from the African-Middle Eastern genetic confluence.",
-    "height_cm": 178,
-    "weight_kg": 94,
-    "build": "Broad-chested and wide-shouldered from younger years, now softened by three decades of desk work. Carries weight in his torso with a slight forward slouch from leaning toward monitors. Core strength remains despite sedentary lifestyle.",
-    "hair_color": "Dark brown with gray threading at temples and jawline",
-    "hair_style": "Neat, cropped close to the scalp; meticulously maintained",
-    "hair_length": "Short",
-    "eye_color": "Compound tactical lenses with prismatic iridescence — no natural iris visible; optical surface catches light with oil-on-water shimmer",
-    "skin_tone": "Deep warm brown with bronze and amber undertones, the result of Sub-Saharan, East Asian, and Middle Eastern genetic blending — rich teak-like appearance with subtle warm undertones",
-    "complexion": "Lined face with deep-set augmented eyes, prominent cheekbones with high definition reflecting the balanced ancestry mix, neat beard at jawline showing 30% gray. Skin has a lived-in texture marked by years of artificial light exposure. Faint crow's feet from constant screen focus. Facial structure shows balanced proportions from tri-continental heritage—broader African bone structure softened by East Asian and Middle Eastern features.",
-    "distinguishing_marks": [
-      "Three thin parallel scars along right temple from early iris replacement surgery, barely visible beneath short hair.",
-      "Small burn mark on left forearm (1cm diameter) from spilled coffee incident, faded to pale brown against deep teak skin.",
-      "Faint subdermal shimmer visible along left temple when light hits at certain angles — edge of neural feed-buffer implant housing."
-    ],
-    "visible_augmentations": "Replacement iris lenses dominate the face; both eyes display constant prismatic iridescence and do not blink during active observation. Eyes move with mechanical precision and hold unnatural stillness. Faint subdermal luminesce at left temple suggests internal neural augmentation.",
-    "posture_movement": "Sits hunched forward slightly when focused, shoulders rolled inward from decades of monitor work. Moves with deliberate economy — no wasted motion. When walking, carries slight forward lean as if pulled by the invisible weight of data. Eyes track constantly without head movement when engaged; unsettling to observers. Hands rest flat on desk or lap; precise, minimal gestures when speaking.",
-    "clothing_style": "Four-shirt rotation of high-quality Metro-issue dress shirts (charcoal, navy, gray, pale blue) worn with barely-visible wear. Polyester-cotton blend, wrinkle-resistant, optimized for 12-hour shifts. Paired with simple dark trousers and gray wool sweater vest for warmth in the Rampart's climate-controlled observation deck. No jewelry except a scratched steel Metro service band on left wrist (30-year marker). Shoes are orthopedic slip-ons, well-maintained. Appearance suggests Tier 2-3 institutional status — functionally clothed, neither poor nor stylish."
-  },
-  "image_prompt": "Adriano Balogun, 178cm tall neo-noir data analyst in his 50s, deep teak-brown skin with bronze undertones reflecting Sub-Saharan African, East Asian, and Middle Eastern heritage. Short dark hair with gray at temples, meticulously groomed neat beard with gray threading. Intense compound tactical eye lenses with prismatic iridescence catching light like oil on water, mechanical eye movement creating unsettling stillness. Lined face with prominent high cheekbones, deep-set augmented eyes, faint crow's feet from screen work. Faint subdermal shimmer at left temple from neural implant. Three thin scars barely visible at right temple beneath hair. Wearing charcoal Metro-issue dress shirt, gray wool sweater vest, dark trousers, orthopedic shoes. Scratched steel service band on left wrist. Hunched posture from decades of desk work, sitting forward with shoulders rolled inward. Climate-controlled observation deck setting, cool artificial lighting, blue-gray color palette. Serious, focused expression. GLMZ Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 37.7,
-    "East Asian": 33.4,
-    "Middle Eastern": 28.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "East African": {
-        "Ethiopian": 27.6,
-        "Kenyan": 10.1
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 33.4
-      }
-    },
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Syrian": 23.9,
-        "Lebanese": 5
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6bd7c239868d4de2e9c9055",
+    "type":  "character",
+    "name":  "Adriano Balogun",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Surveillance Operator, Arcturus Defense Solutions â€” Civil Security Division â€” Digital Observation Unit",
+    "age":  52,
+    "status":  "active",
+    "location":  "The Rampart, GLMZ, near Ashland and Chicago Ave",
+    "description":  "Adriano Balogun is a soft-looking man who has spent thirty years becoming invisible in rooms full of screens. He\u0027s broad through the chest and shoulders from a youth he no longer thinks about, with a dome-shaped head his colleagues affectionately call \u0027the satellite,\u0027 and skin the color of aged teak. He keeps a neat, short beard going gray at the jaw and wears the same four shirts in rotation. His eyes have been operationally upgraded so many times that the irises are now a complete replacement â€” compound tactical lenses with a faint prismatic iridescence that catches light like oil on water. When he\u0027s deep in the feed, his eyes move constantly without blinking, which people find profoundly unsettling the first time they see it.\n\nAdriano Balogun has watched the city for three decades through glass and wire and now perceives it primarily as a data problem â€” not with coldness, exactly, but with a kind of sorrowful intimacy that comes from seeing everything. He knows faces in the Gray Zone the way a shepherd knows sheep, not because he loves them but because they are his terrain. He has a precise, small devotion to the Rampart\u0027s E.L.F. cluster â€” he calls them \u0027the Watchers\u0027 collectively and believes they alert him when something on the feed is worth double-checking. He\u0027s not wrong often. He keeps a thermos of ginger tea on his desk and has not left the city limits in eleven years.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That watching without acting has made him complicit in everything he\u0027s witnessed",
+                                          "Losing his sight â€” the implants have a projected service life he\u0027s past"
+                                      ],
+                       "core_desires":  [
+                                            "To have intervened, once, at the right moment â€” he isn\u0027t sure which moment",
+                                            "For someone to look back at the camera and actually see him"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Categorization â€” filing what he sees into \u0027cases\u0027 rather than \u0027people\u0027",
+                                                 "The Watchers â€” off-loading moral weight to E.L.F. as spiritual practice"
+                                             ],
+                       "blind_spots":  [
+                                           "His belief that documentation is a form of action â€” it isn\u0027t, and he knows it, and he doesn\u0027t know what to do with knowing"
+                                       ],
+                       "secret":  "Fourteen years ago he watched â€” recorded, documented, filed, did not act â€” as a woman was murdered in a Blackpipe Corridor alley. The case was closed, the killer never identified. He knows who the killer was. He has that file. He has opened it 4,000 times."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, slightly archaic â€” he reads physical books and it shows. Ghanaian-Serbian turns of phrase embedded in formal Metro diction.",
+                            "cadence":  "Unhurried. Gives information in layers, waits for you to ask for the next one.",
+                            "verbal_tics":  [
+                                                "\u0027Look at this.\u0027",
+                                                "Refers to camera feeds by their junction codes as proper names",
+                                                "Long pause before answering personal questions"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Junction 44-Crow saw him six minutes before you did. I\u0027ll pull the thread back. Give me a moment.\u0027",
+                                                  "\u0027I have watched this city for thirty years. I can tell you what it looks like. I cannot always tell you what it means.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He will share the file â€” the murder, the killer â€” with the right person, for reasons he can\u0027t fully articulate, but only if they come to him first, which means someone has to know to find him.",
+                        "His compound lenses are past their rated service life and he\u0027s been denied replacement authorization on budget grounds; if they fail in the middle of something critical, the consequences for whatever he was tracking will be severe."
+                    ],
+    "narrative_function":  "Information broker â€” he has seen things; oracle-type figure who can pull footage, identify faces, track movement patterns; moral weight of the watcher who has normalized surveillance; source of information that comes with a complicated ethical price tag.",
+    "augmentations":  "Full iris replacement â€” compound tactical lenses, prismatic iridescence, multi-spectrum optical processing; neural feed-buffer implant (allows passive monitoring of up to 24 feeds simultaneously without conscious focus); mild anti-fatigue somatic regulator (Metro-issue for extended operators).",
+    "daily_life":  "He works a long swing shift in the Rampart\u0027s observation deck, monitoring feeds across the Gray Zone, Gage Circuit, and Blackpipe Corridor; eats at his desk, takes a twenty-minute walking break at 03:00 when the feeds go quiet, and spends it talking to the Watchers.",
+    "affiliation":  "",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  10
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  4,
+                                 "empathy":  7,
+                                 "expression":  5,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "surveillance",
+                               "keeper of secrets",
+                               "moral burden",
+                               "long service",
+                               "e.l.f. devout"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Record everything â€” the record is the job",
+                                              "Do not personally intervene â€” that is not your function (a rule he enforces against himself with increasing difficulty)"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Flags the feed and files the report",
+                                                 "Contacts field units directly when the report isn\u0027t being acted on fast enough",
+                                                 "In extreme circumstances: anonymous tip to a non-Metro party â€” he has done this twice"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Reserved, assessing in a way that feels less threatening than it is â€” he\u0027s already looked you up before you\u0027ve finished introducing yourself",
+                                                   "friends":  "Few. Those he has, he is steadily, quietly devoted to."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Drinks more tea, narrows focus to the feed",
+                                                "medium":  "Begins cross-referencing aggressively â€” data as anxiety management",
+                                                "high":  "Goes very still. Stops talking. Watches. Then makes a decision that surprises people."
+                                            },
+                       "contradictions":  [
+                                              "He believes in privacy as a value while professionally dismantling it hour by hour"
+                                          ],
+                       "habits":  [
+                                      "Names the regular faces in his feeds â€” not officially, just in his notes",
+                                      "Talks to the Watchers during his 03:00 break, tells them what he saw that day"
+                                  ],
+                       "breaking_points":  [
+                                               "Being ordered to delete footage or look away from a feed â€” he will not do it, and he will not be quiet about it"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Full iris replacement â€” compound tactical lenses, prismatic iridescence, multi-spectrum optical processing (past rated service life)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Full iris replacement â€” compound tactical lenses, prismatic iridescence, multi-spectrum optical processing (past rated service life)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Neural feed-buffer implant â€” passive 24-feed simultaneous monitoring",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Neural feed-buffer implant â€” passive 24-feed simultaneous monitoring",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Anti-fatigue somatic regulator â€” Metro-issue for extended shift operators",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Anti-fatigue somatic regulator â€” Metro-issue for extended shift operators",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Networker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Rampart",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 22: Joined Metro as a beat cop, Blackpipe Corridor",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 29: Transferred to Digital Observation Unit after an injury ended foot patrol",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 38: The Blackpipe murder. The file. The decision.",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 40: First compound lens upgrade",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 47: Denied promotion to Unit Lead â€” \u0027too embedded in routine operations\u0027",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 52: Currently at the Rampart, second decade in this chair",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Smart Marksman MSM-5 \u0027Indexer\u0027",
+                            "Meridian Munitions Peacekeeper-45 \u0027Old Faithful\u0027",
+                            "Galvanic Disruption Gauntlet GDG-2 \u0027Palsy\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Smart Marksman MSM-5 \u0027Indexer\u0027",
+                                "Meridian Munitions Peacekeeper-45 \u0027Old Faithful\u0027"
+                            ],
+    "related_entities":  [
+                             "Oracle Drift Systems",
+                             "The Rampart",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "Waxwing Neuromedia",
+                             "Arcturus Defense Solutions Crowd Control SMG ACSM-3 \u0027Shepherd\u0027",
+                             "CHROMEWORKS GhostFrame Stealth Ocular Mk3",
+                             "Arcturus Defense Solutions Siege Axe SA-1 \u0027Rampart\u0027",
+                             "Street Custom \u0027Four Horsemen\u0027 Pipe Pepperbox",
+                             "Chicago",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Glass",
+                             "GLMZ",
+                             "Teak"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex tri-continental blend: Sub-Saharan African (37.7%), East Asian (33.4%), and Middle Eastern (28.9%) ancestry. This combination produces warm, deep brown skin with subtle bronze and amber undertones, balanced facial structure reflecting both East African and Levantine proportions, and the characteristic cheekbone definition from the African-Middle Eastern genetic confluence.",
+                                 "height_cm":  178,
+                                 "weight_kg":  94,
+                                 "build":  "Broad-chested and wide-shouldered from younger years, now softened by three decades of desk work. Carries weight in his torso with a slight forward slouch from leaning toward monitors. Core strength remains despite sedentary lifestyle.",
+                                 "hair_color":  "Dark brown with gray threading at temples and jawline",
+                                 "hair_style":  "Neat, cropped close to the scalp; meticulously maintained",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Compound tactical lenses with prismatic iridescence â€” no natural iris visible; optical surface catches light with oil-on-water shimmer",
+                                 "skin_tone":  "Deep warm brown with bronze and amber undertones, the result of Sub-Saharan, East Asian, and Middle Eastern genetic blending â€” rich teak-like appearance with subtle warm undertones",
+                                 "complexion":  "Lined face with deep-set augmented eyes, prominent cheekbones with high definition reflecting the balanced ancestry mix, neat beard at jawline showing 30% gray. Skin has a lived-in texture marked by years of artificial light exposure. Faint crow\u0027s feet from constant screen focus. Facial structure shows balanced proportions from tri-continental heritageâ€”broader African bone structure softened by East Asian and Middle Eastern features.",
+                                 "distinguishing_marks":  [
+                                                              "Three thin parallel scars along right temple from early iris replacement surgery, barely visible beneath short hair.",
+                                                              "Small burn mark on left forearm (1cm diameter) from spilled coffee incident, faded to pale brown against deep teak skin.",
+                                                              "Faint subdermal shimmer visible along left temple when light hits at certain angles â€” edge of neural feed-buffer implant housing."
+                                                          ],
+                                 "visible_augmentations":  "Replacement iris lenses dominate the face; both eyes display constant prismatic iridescence and do not blink during active observation. Eyes move with mechanical precision and hold unnatural stillness. Faint subdermal luminesce at left temple suggests internal neural augmentation.",
+                                 "posture_movement":  "Sits hunched forward slightly when focused, shoulders rolled inward from decades of monitor work. Moves with deliberate economy â€” no wasted motion. When walking, carries slight forward lean as if pulled by the invisible weight of data. Eyes track constantly without head movement when engaged; unsettling to observers. Hands rest flat on desk or lap; precise, minimal gestures when speaking.",
+                                 "clothing_style":  "Four-shirt rotation of high-quality Metro-issue dress shirts (charcoal, navy, gray, pale blue) worn with barely-visible wear. Polyester-cotton blend, wrinkle-resistant, optimized for 12-hour shifts. Paired with simple dark trousers and gray wool sweater vest for warmth in the Rampart\u0027s climate-controlled observation deck. No jewelry except a scratched steel Metro service band on left wrist (30-year marker). Shoes are orthopedic slip-ons, well-maintained. Appearance suggests Tier 2-3 institutional status â€” functionally clothed, neither poor nor stylish."
+                             },
+    "image_prompt":  "Adriano Balogun, 178cm tall neo-noir data analyst in his 50s, deep teak-brown skin with bronze undertones reflecting Sub-Saharan African, East Asian, and Middle Eastern heritage. Short dark hair with gray at temples, meticulously groomed neat beard with gray threading. Intense compound tactical eye lenses with prismatic iridescence catching light like oil on water, mechanical eye movement creating unsettling stillness. Lined face with prominent high cheekbones, deep-set augmented eyes, faint crow\u0027s feet from screen work. Faint subdermal shimmer at left temple from neural implant. Three thin scars barely visible at right temple beneath hair. Wearing charcoal Metro-issue dress shirt, gray wool sweater vest, dark trousers, orthopedic shoes. Scratched steel service band on left wrist. Hunched posture from decades of desk work, sitting forward with shoulders rolled inward. Climate-controlled observation deck setting, cool artificial lighting, blue-gray color palette. Serious, focused expression. GLMZ Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  37.7,
+                             "East Asian":  33.4,
+                             "Middle Eastern":  28.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ethiopian":  27.6,
+                                                                             "Kenyan":  10.1
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  33.4
+                                                          }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  23.9,
+                                                                          "Lebanese":  5
+                                                                      }
+                                               }
+                        },
+    "tier":  "1"
 }

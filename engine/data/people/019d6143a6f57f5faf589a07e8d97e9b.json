@@ -1,238 +1,261 @@
-{
-  "id": "019d6143a6f57f5faf589a07e8d97e9b",
-  "type": "character",
-  "name": "Halldor Venkatesh-Balogun",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Tailor and garment repair specialist",
-  "age": 27,
-  "status": "active",
-  "location": "The Burnished Market, Hamtramck Enclave, GLMZ, near Pulaski and Chicago Ave",
-  "description": "Halldor Venkatesh-Balogun is slight and precise, with the kind of posture that makes them look taller than they are — the result of years hunched over a machine trained back into discipline by necessity. They have cool brown skin marked with self-applied geometric ink along both forearms (needlework maps, they say, of every garment type they've mastered), cat ears in matte black that they had installed at nineteen and have since come to regard as a mistake they're too broke to undo, and a color-shifting streak in their close-cropped hair that they cycle through neighborhood palette trends with a cheap home kit. Their workspace is a converted stall in the Burnished Market — half the size of their competitors, immaculately organized, with a curtained fitting area that doubles as a break room and occasional sleeping space on bad weeks.\n\nHalldor Venkatesh-Balogun has built a reputation for making cheap fabric look like it wasn't, for structural repair on garments that other tailors would refuse, and for a consultation style that is simultaneously disconcerting and effective — they ask a client what they want to be perceived as, not what they want to look like. They believe clothing is communication and they approach their work with the seriousness of a translator. They are also perpetually underpaid for this and know it and cannot stop doing it anyway.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.7,
-      "shadow": 0.4,
-      "mask": 0.6,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That their talent is real but will never be enough to escape Tier 1",
-      "That they are performing an identity they haven't yet earned"
-    ],
-    "core_desires": [
-      "To make something that outlasts them",
-      "To be taken seriously as an artist, not just a repair service"
-    ],
-    "coping_mechanisms": [
-      "Perfectionism as control",
-      "Deflecting compliments with technical detail"
-    ],
-    "blind_spots": [
-      "Undercharges systematically because they cannot bring themselves to price their labor correctly",
-      "Mistakes artistic integrity for financial martyrdom"
-    ],
-    "secret": "They have been secretly reproducing, stitch by stitch, a lost historical garment pattern they found in a corrupted archive — a Igbo ceremonial textile that predates the megacity by two centuries. They don't know what they'll do with it when it's finished. They've been working on it for three years."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical vocabulary (fabric types, construction methods) woven naturally into conversation; tends to describe people in textile metaphors without realizing they're doing it",
-    "cadence": "Rapid when engaged with something interesting, trails off mid-sentence when distracted by a problem only they can see",
-    "verbal_tics": [
-      "Measuring things with their hands even when not holding measuring tape",
-      "'The structure's wrong' (applied to garments, arguments, and situations equally)",
-      "Starting sentences with 'No, but—'"
-    ],
-    "example_lines": [
-      "'You want to look like you belong in a room you've never been in. That's not impossible. That's actually most of what I do.'",
-      "'No, but — this seam is telling you something. The fabric's failing here because the stress was never distributed right. Same thing happened to my rent situation, honestly.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client leaves a garment for repair that contains something hidden in the lining — documents, a data chip, or a message — and never comes back to collect it",
-    "The historical textile pattern Thessaly has been reconstructing appears in a Zheng-Dao corporate fashion line, and the likeness is too exact to be coincidence"
-  ],
-  "narrative_function": "Craftsperson with social insight — can provide information about regular clients, decode fashion as social signaling, offer access to market gossip; their stall is a liminal space where people talk while being fitted.",
-  "augmentations": "Cat ears (matte black, functional — they can actually rotate toward sound, which Thessaly finds embarrassing in social situations). Color-shift hair streak (cosmetic, home-maintained). A worn stabilizer brace on their right wrist from a repetitive strain injury — not augmentation, just hardware.",
-  "daily_life": "Opens the stall by 09:00, takes alterations and repairs through the day, spends evenings doing design work they never charge for; eats one real meal a day, usually from the noodle vendor two stalls down.",
-  "affiliation": "Independent (no formal affiliation); occasional contract work through Burnished Market vendor collective",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 9,
-      "vitality": 4,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 7,
-      "expression": 6,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 1,
-      "assertion_deference": -1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "artisan",
-      "underpaid expert",
-      "quiet pride",
-      "archive keeper"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never compromise the quality of the work, even if the client would never notice",
-      "Say yes to the work, negotiate everything else afterward"
-    ],
-    "escalation_ladder": [
-      "Redirect with technical expertise",
-      "Quiet, firm assertion of the terms they actually need",
-      "Walk away — the stall can be abandoned faster than people expect"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Intensely focused and slightly formal — treats every new client as a professional interaction even when they clearly just need a hem fixed",
-      "friends": "Dry, warm, unexpectedly funny; shows care through making things for people without being asked"
-    },
-    "stress_responses": {
-      "low": "Works more intricately — takes on technically unnecessary additional stitching",
-      "medium": "Goes silent and communicates only in gestures",
-      "high": "Leaves. Just physically removes themselves from the situation and goes back to the curtained area."
-    },
-    "contradictions": [
-      "Genuinely believes they are unsentimental about their work, but has never sold a single personal design piece, only given them away"
-    ],
-    "habits": [
-      "Runs a finger along every seam of their own clothing at the start of each day — checking, not anxiously, just as orientation",
-      "Leaves an offering of thread at the small E.L.F. shrine by the market entrance every Monday"
-    ],
-    "breaking_points": [
-      "Watching someone deliberately damage or discard something well-made",
-      "Being told that what they do is 'just mending'"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Burnished Market",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Model 9 'Payday'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Burnished Market",
-    "Hamtramck Enclave",
-    "Zheng-dao Bioelectric",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Chicago",
-    "GLMZ"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (54.3%) with significant South Asian (24.7%) and Hispanic/Latin American (21.0%) ancestry — a striking global blend resulting in warm deep brown skin with subtle golden undertones, mixed facial structure combining West African bone geometry with South Asian and Latin features, creating refined and distinctive appearance across multiple heritage traditions",
-    "height_cm": 162,
-    "weight_kg": 51,
-    "build": "Slight and wiry with deceptive posture — years of hunched tailoring work trained into disciplined verticality. Lean shoulders, defined forearms from needle and machine work, minimal excess mass.",
-    "hair_color": "Deep black with a color-shifting iridescent streak (currently cycling through teal-to-violet gradient via home-kit maintenance)",
-    "hair_style": "Close-cropped, precision cut, practical for workshop environment",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, warm and observant",
-    "skin_tone": "Warm deep brown with golden undertones — the blended result of Sub-Saharan African, South Asian, and Hispanic/Latin American heritage creating a complexion that shifts subtly in different light",
-    "complexion": "Clear, unmarked face with strong, defined cheekbones characteristic of West African ancestry structure, refined by the broader bone structure and facial geometry of South Asian and Hispanic heritage. High cheekbones with subtle warmth. Minimal grooming — functional rather than decorative. Hands show fine calluses and occasional needle-prick marks from work.",
-    "distinguishing_marks": [
-      "Self-applied geometric tattoos covering both forearms in fine black ink — intricate needlework maps depicting garment types and construction techniques, densely layered and intentional",
-      "Functional matte black cat ears surgically installed at temples (installed age 19, now regarded as mistake but financially impossible to remove) — ears rotate slightly toward sound sources, causing visible discomfort in social settings"
-    ],
-    "visible_augmentations": "Matte black feline ear implants with subtle servo mechanism articulation. Worn stabilizer brace on right wrist (not augmentation — medical-grade hardware, frayed at edges). Color-shifting hair streak that shifts hue under different lighting.",
-    "posture_movement": "Carries themselves with unusual verticality despite slight frame — shoulders back, spine corrected by years of discipline. Hands move with economic precision and muscle memory. Head often tilts slightly toward sound sources (involuntary ear rotation response). Movements economical and purposeful, no wasted energy.",
-    "clothing_style": "Tier 3-4 working class, deliberately mismatched in ways that signal professional knowledge — wearing garments they've reconstructed themselves as advertisement of skill. Fitted but not fashionable; practical fabrics (cotton-poly blends, durable synthetics). Often wears a heavy canvas apron with multiple tool pockets over regular clothes. Jewelry minimal but intentional — perhaps a simple chain or repurposed notions used as accessories. Shoes worn but maintained, likely soft-soled for long standing shifts. Overall presentation says 'I know how to make things look intentional even from scraps.'"
-  },
-  "image_prompt": "Halldor Venkatesh-Balogun, 162cm tall, wiry frame with defined forearms, warm deep brown skin with golden undertones blending Sub-Saharan African, South Asian, and Hispanic heritage. Strong West African cheekbones refined by broader facial geometry. Dark brown eyes, observant and warm. Short deep black hair with iridescent teal-to-violet color-shifting streak. Precision-cut close crops. Self-applied geometric black ink tattoos covering both forearms depicting garment construction techniques, densely layered. Matte black feline ear implants at temples with subtle servo articulation. Medical-grade stabilizer brace on right wrist, frayed edges. Wearing mismatched tier 3-4 working class clothing: reconstructed garments in cotton-poly blends, practical synthetics, fitted but utilitarian. Heavy canvas apron with multiple tool pockets over regular clothes. Worn but maintained soft-soled shoes. Minimal intentional jewelry — simple chain or repurposed notions. Standing with unusual verticality despite slight frame, shoulders back, spine disciplined. Economic, purposeful movements. Workshop lighting casting warm tones across skin and metallic ear implants. GLMZ GLMZ aesthetic. Direct gaze, quiet confidence. Functional rather than decorative presentation. Mood: focused, precise, exhausted but determined. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 54.3,
-    "South Asian": 24.7,
-    "Hispanic/Latin American": 21
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "West African": {
-        "Guinean": 18.2,
-        "Nigerian": 30.6
-      },
-      "Central African": {
-        "Congolese": 4.3,
-        "Angolan": 1.2
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Punjabi": 1.1,
-        "Malayali": 9.4
-      },
-      "Nepali": {
-        "Nepali": 14.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Venezuelan": 8,
-        "Brazilian": 8.7
-      },
-      "Caribbean": {
-        "Dominican": 2.6,
-        "Haitian": 1.7
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a6f57f5faf589a07e8d97e9b",
+    "type":  "character",
+    "name":  "Halldor Venkatesh-Balogun",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Tailor and garment repair specialist",
+    "age":  27,
+    "status":  "active",
+    "location":  "The Burnished Market, Hamtramck Enclave, GLMZ, near Pulaski and Chicago Ave",
+    "description":  "Halldor Venkatesh-Balogun is slight and precise, with the kind of posture that makes them look taller than they are â€” the result of years hunched over a machine trained back into discipline by necessity. They have cool brown skin marked with self-applied geometric ink along both forearms (needlework maps, they say, of every garment type they\u0027ve mastered), cat ears in matte black that they had installed at nineteen and have since come to regard as a mistake they\u0027re too broke to undo, and a color-shifting streak in their close-cropped hair that they cycle through neighborhood palette trends with a cheap home kit. Their workspace is a converted stall in the Burnished Market â€” half the size of their competitors, immaculately organized, with a curtained fitting area that doubles as a break room and occasional sleeping space on bad weeks.\n\nHalldor Venkatesh-Balogun has built a reputation for making cheap fabric look like it wasn\u0027t, for structural repair on garments that other tailors would refuse, and for a consultation style that is simultaneously disconcerting and effective â€” they ask a client what they want to be perceived as, not what they want to look like. They believe clothing is communication and they approach their work with the seriousness of a translator. They are also perpetually underpaid for this and know it and cannot stop doing it anyway.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That their talent is real but will never be enough to escape Tier 1",
+                                          "That they are performing an identity they haven\u0027t yet earned"
+                                      ],
+                       "core_desires":  [
+                                            "To make something that outlasts them",
+                                            "To be taken seriously as an artist, not just a repair service"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Perfectionism as control",
+                                                 "Deflecting compliments with technical detail"
+                                             ],
+                       "blind_spots":  [
+                                           "Undercharges systematically because they cannot bring themselves to price their labor correctly",
+                                           "Mistakes artistic integrity for financial martyrdom"
+                                       ],
+                       "secret":  "They have been secretly reproducing, stitch by stitch, a lost historical garment pattern they found in a corrupted archive â€” a Igbo ceremonial textile that predates the megacity by two centuries. They don\u0027t know what they\u0027ll do with it when it\u0027s finished. They\u0027ve been working on it for three years."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical vocabulary (fabric types, construction methods) woven naturally into conversation; tends to describe people in textile metaphors without realizing they\u0027re doing it",
+                            "cadence":  "Rapid when engaged with something interesting, trails off mid-sentence when distracted by a problem only they can see",
+                            "verbal_tics":  [
+                                                "Measuring things with their hands even when not holding measuring tape",
+                                                "\u0027The structure\u0027s wrong\u0027 (applied to garments, arguments, and situations equally)",
+                                                "Starting sentences with \u0027No, butâ€”\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You want to look like you belong in a room you\u0027ve never been in. That\u0027s not impossible. That\u0027s actually most of what I do.\u0027",
+                                                  "\u0027No, but â€” this seam is telling you something. The fabric\u0027s failing here because the stress was never distributed right. Same thing happened to my rent situation, honestly.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client leaves a garment for repair that contains something hidden in the lining â€” documents, a data chip, or a message â€” and never comes back to collect it",
+                        "The historical textile pattern Thessaly has been reconstructing appears in a Zheng-Dao corporate fashion line, and the likeness is too exact to be coincidence"
+                    ],
+    "narrative_function":  "Craftsperson with social insight â€” can provide information about regular clients, decode fashion as social signaling, offer access to market gossip; their stall is a liminal space where people talk while being fitted.",
+    "augmentations":  "Cat ears (matte black, functional â€” they can actually rotate toward sound, which Thessaly finds embarrassing in social situations). Color-shift hair streak (cosmetic, home-maintained). A worn stabilizer brace on their right wrist from a repetitive strain injury â€” not augmentation, just hardware.",
+    "daily_life":  "Opens the stall by 09:00, takes alterations and repairs through the day, spends evenings doing design work they never charge for; eats one real meal a day, usually from the noodle vendor two stalls down.",
+    "affiliation":  "Independent (no formal affiliation); occasional contract work through Burnished Market vendor collective",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  9,
+                                   "vitality":  4,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  7,
+                                 "expression":  6,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  1,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "artisan",
+                               "underpaid expert",
+                               "quiet pride",
+                               "archive keeper"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never compromise the quality of the work, even if the client would never notice",
+                                              "Say yes to the work, negotiate everything else afterward"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Redirect with technical expertise",
+                                                 "Quiet, firm assertion of the terms they actually need",
+                                                 "Walk away â€” the stall can be abandoned faster than people expect"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Intensely focused and slightly formal â€” treats every new client as a professional interaction even when they clearly just need a hem fixed",
+                                                   "friends":  "Dry, warm, unexpectedly funny; shows care through making things for people without being asked"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works more intricately â€” takes on technically unnecessary additional stitching",
+                                                "medium":  "Goes silent and communicates only in gestures",
+                                                "high":  "Leaves. Just physically removes themselves from the situation and goes back to the curtained area."
+                                            },
+                       "contradictions":  [
+                                              "Genuinely believes they are unsentimental about their work, but has never sold a single personal design piece, only given them away"
+                                          ],
+                       "habits":  [
+                                      "Runs a finger along every seam of their own clothing at the start of each day â€” checking, not anxiously, just as orientation",
+                                      "Leaves an offering of thread at the small E.L.F. shrine by the market entrance every Monday"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone deliberately damage or discard something well-made",
+                                               "Being told that what they do is \u0027just mending\u0027"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Burnished Market",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Burnished Market",
+                             "Hamtramck Enclave",
+                             "Zheng-dao Bioelectric",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Chicago",
+                             "GLMZ"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Sub-Saharan African (54.3%) with significant South Asian (24.7%) and Hispanic/Latin American (21.0%) ancestry â€” a striking global blend resulting in warm deep brown skin with subtle golden undertones, mixed facial structure combining West African bone geometry with South Asian and Latin features, creating refined and distinctive appearance across multiple heritage traditions",
+                                 "height_cm":  162,
+                                 "weight_kg":  51,
+                                 "build":  "Slight and wiry with deceptive posture â€” years of hunched tailoring work trained into disciplined verticality. Lean shoulders, defined forearms from needle and machine work, minimal excess mass.",
+                                 "hair_color":  "Deep black with a color-shifting iridescent streak (currently cycling through teal-to-violet gradient via home-kit maintenance)",
+                                 "hair_style":  "Close-cropped, precision cut, practical for workshop environment",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, warm and observant",
+                                 "skin_tone":  "Warm deep brown with golden undertones â€” the blended result of Sub-Saharan African, South Asian, and Hispanic/Latin American heritage creating a complexion that shifts subtly in different light",
+                                 "complexion":  "Clear, unmarked face with strong, defined cheekbones characteristic of West African ancestry structure, refined by the broader bone structure and facial geometry of South Asian and Hispanic heritage. High cheekbones with subtle warmth. Minimal grooming â€” functional rather than decorative. Hands show fine calluses and occasional needle-prick marks from work.",
+                                 "distinguishing_marks":  [
+                                                              "Self-applied geometric tattoos covering both forearms in fine black ink â€” intricate needlework maps depicting garment types and construction techniques, densely layered and intentional",
+                                                              "Functional matte black cat ears surgically installed at temples (installed age 19, now regarded as mistake but financially impossible to remove) â€” ears rotate slightly toward sound sources, causing visible discomfort in social settings"
+                                                          ],
+                                 "visible_augmentations":  "Matte black feline ear implants with subtle servo mechanism articulation. Worn stabilizer brace on right wrist (not augmentation â€” medical-grade hardware, frayed at edges). Color-shifting hair streak that shifts hue under different lighting.",
+                                 "posture_movement":  "Carries themselves with unusual verticality despite slight frame â€” shoulders back, spine corrected by years of discipline. Hands move with economic precision and muscle memory. Head often tilts slightly toward sound sources (involuntary ear rotation response). Movements economical and purposeful, no wasted energy.",
+                                 "clothing_style":  "Tier 3-4 working class, deliberately mismatched in ways that signal professional knowledge â€” wearing garments they\u0027ve reconstructed themselves as advertisement of skill. Fitted but not fashionable; practical fabrics (cotton-poly blends, durable synthetics). Often wears a heavy canvas apron with multiple tool pockets over regular clothes. Jewelry minimal but intentional â€” perhaps a simple chain or repurposed notions used as accessories. Shoes worn but maintained, likely soft-soled for long standing shifts. Overall presentation says \u0027I know how to make things look intentional even from scraps.\u0027"
+                             },
+    "image_prompt":  "Halldor Venkatesh-Balogun, 162cm tall, wiry frame with defined forearms, warm deep brown skin with golden undertones blending Sub-Saharan African, South Asian, and Hispanic heritage. Strong West African cheekbones refined by broader facial geometry. Dark brown eyes, observant and warm. Short deep black hair with iridescent teal-to-violet color-shifting streak. Precision-cut close crops. Self-applied geometric black ink tattoos covering both forearms depicting garment construction techniques, densely layered. Matte black feline ear implants at temples with subtle servo articulation. Medical-grade stabilizer brace on right wrist, frayed edges. Wearing mismatched tier 3-4 working class clothing: reconstructed garments in cotton-poly blends, practical synthetics, fitted but utilitarian. Heavy canvas apron with multiple tool pockets over regular clothes. Worn but maintained soft-soled shoes. Minimal intentional jewelry â€” simple chain or repurposed notions. Standing with unusual verticality despite slight frame, shoulders back, spine disciplined. Economic, purposeful movements. Workshop lighting casting warm tones across skin and metallic ear implants. GLMZ GLMZ aesthetic. Direct gaze, quiet confidence. Functional rather than decorative presentation. Mood: focused, precise, exhausted but determined. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  54.3,
+                             "South Asian":  24.7,
+                             "Hispanic/Latin American":  21
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Guinean":  18.2,
+                                                                             "Nigerian":  30.6
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  4.3,
+                                                                                "Angolan":  1.2
+                                                                            }
+                                                    },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Punjabi":  1.1,
+                                                               "Malayali":  9.4
+                                                           },
+                                                "Nepali":  {
+                                                               "Nepali":  14.2
+                                                           }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Venezuelan":  8,
+                                                                                   "Brazilian":  8.7
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  2.6,
+                                                                              "Haitian":  1.7
+                                                                          }
+                                                        }
+                        },
+    "tier":  "2"
 }

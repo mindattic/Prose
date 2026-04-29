@@ -10,7 +10,6 @@ public class StoryStarterService
     private readonly WorldGraphService graph;
     private readonly LoreService canon;
     private readonly DatabaseService canonDb;
-    private readonly FacetService facets;
     private readonly IPathProvider paths;
     private readonly SemanticIndexService semanticIndex;
     private readonly InferenceService inference;
@@ -36,7 +35,7 @@ public class StoryStarterService
 
     public StoryStarterService(
         ILlmService llm, WorldGraphService graph, LoreService canon,
-        DatabaseService canonDb, FacetService facets, IPathProvider paths,
+        DatabaseService canonDb, IPathProvider paths,
         SemanticIndexService semanticIndex, InferenceService inference,
         ILogger<StoryStarterService> log)
     {
@@ -44,7 +43,6 @@ public class StoryStarterService
         this.graph = graph;
         this.canon = canon;
         this.canonDb = canonDb;
-        this.facets = facets;
         this.paths = paths;
         this.semanticIndex = semanticIndex;
         this.inference = inference;
@@ -121,18 +119,9 @@ public class StoryStarterService
 
         var worldFlavor = BuildWorldFlavor();
 
-        // Select lead facet based on character behavioral baselines
-        var blended = canonDb.GetBlendedWeights(request.Characters);
-        var weights = new FacetState
-        {
-            Wound = blended.Wound, Ideal = blended.Ideal, Id = blended.Id,
-            Shadow = blended.Shadow, Mask = blended.Mask, Ghost = blended.Ghost,
-        };
-        var seedTriggers = InferTriggers(request);
-        var (lead, supporting) = facets.SelectFacets(weights, seedTriggers, []);
-
-        var supportingVoices = string.Join("\n", supporting.Select(f =>
-            $"- {f.Label}: {f.VoiceTone}"));
+        // Voice and inner-thought guidance now come from each character's documented psychology
+        // and speech_patterns blocks (injected via {characterContext} below). Italicized inner
+        // thought is permitted but never labeled.
 
         var system = $"""
             You are a literary fiction author writing the opening of a neo-noir story
@@ -140,11 +129,9 @@ public class StoryStarterService
             neural interfaces are ubiquitous, and the line between human and machine dissolves
             a little more every day.
 
-            Your lead voice is {lead.Label} — {lead.VoiceTone}.
-            {lead.SystemPrompt}
-
-            SUPPORTING FACETS (may surface as italicized inner thoughts — the character arguing with themselves):
-            {supportingVoices}
+            INNER MONOLOGUE: italicized stand-alone sentences on their own paragraph, NEVER labeled.
+            Source from the POV character's documented psychology — their core_fears, core_desires,
+            coping_mechanisms, blind_spots, secret. Specific named things, not abstract archetypes.
 
             STORY BIBLE:
             {storyBible}
@@ -185,7 +172,7 @@ public class StoryStarterService
             Write ONLY the story text. No titles, no headers, no metadata.
             """;
 
-        var text = await llm.GenerateAsync(system, user, lead.Temperature, 2048, lead.Model, ct);
+        var text = await llm.GenerateAsync(system, user, temperature: 0.85, maxTokens: 2048, ct: ct);
 
         // Generate a title
         var titlePrompt = $"Given this story opening, generate a short, evocative title (2-5 words, no quotes). The title should feel like graffiti on a wall — raw, cryptic, beautiful:\n\n{text}";
@@ -194,15 +181,12 @@ public class StoryStarterService
             titlePrompt, 0.9, 50, ct: ct);
         title = title.Trim().Trim('"').Trim('\'');
 
-        log.LogInformation("Opening generated: title={Title}, facet={LeadFacet}, textLen={TextLen}",
-            title, lead.Name, text.Length);
+        log.LogInformation("Opening generated: title={Title}, textLen={TextLen}", title, text.Length);
 
         return new GeneratedOpening
         {
             Title = title,
             Text = text,
-            LeadFacet = lead.Name,
-            SupportingFacets = supporting.Select(f => f.Name).ToList(),
             Characters = request.Characters,
             Location = request.Location,
         };
@@ -301,36 +285,6 @@ public class StoryStarterService
         return string.Join("\n", lines);
     }
 
-    private FacetState LoadBlendedWeights(List<string> characters)
-    {
-        var allChars = canon.ListCharacters();
-        var weights = new List<FacetState>();
-
-        foreach (var name in characters)
-        {
-            // Match by name or alias
-            var match = allChars.FirstOrDefault(c =>
-                c.Name.Equals(name, StringComparison.OrdinalIgnoreCase)
-                || c.Aliases.Any(a => a.Equals(name, StringComparison.OrdinalIgnoreCase)));
-
-            if (match?.Facets != null && (match.Facets.Wound > 0 || match.Facets.Ideal > 0))
-                weights.Add(match.Facets);
-        }
-
-        if (weights.Count == 0)
-            return new FacetState { Wound = 0.6, Ideal = 0.5, Id = 0.4, Shadow = 0.55, Mask = 0.45, Ghost = 0.5 };
-
-        return new FacetState
-        {
-            Wound = weights.Average(w => w.Wound),
-            Ideal = weights.Average(w => w.Ideal),
-            Id = weights.Average(w => w.Id),
-            Shadow = weights.Average(w => w.Shadow),
-            Mask = weights.Average(w => w.Mask),
-            Ghost = weights.Average(w => w.Ghost),
-        };
-    }
-
     /// <summary>
     /// Continue a story from existing blocks + a user prompt.
     /// </summary>
@@ -361,21 +315,16 @@ public class StoryStarterService
         var characterContext = session.BuildContext();
         var locationContext = "";
 
-        var blended = canonDb.GetBlendedWeights(characters);
-        var weights = new FacetState
-        {
-            Wound = blended.Wound, Ideal = blended.Ideal, Id = blended.Id,
-            Shadow = blended.Shadow, Mask = blended.Mask, Ghost = blended.Ghost,
-        };
-        var seedTriggers = InferTriggers(new StoryStarterRequest { Premise = prompt, Mood = mood });
-        var (lead, _) = facets.SelectFacets(weights, seedTriggers, []);
+        // Voice and inner-thought guidance come from each character's documented psychology
+        // and speech_patterns blocks (in characterContext below). No facet-based selection.
 
         var system = $"""
             You are a literary fiction author continuing a neo-noir story
             set in Meridian City.
 
-            Your voice is {lead.Label} — {lead.VoiceTone}.
-            {lead.SystemPrompt}
+            INNER MONOLOGUE: italicized stand-alone sentences, NEVER labeled. Source from each
+            POV character's documented psychology — coping_mechanisms, core_fears, blind_spots,
+            secret. Specific named things, not abstract archetypes.
 
             STORY BIBLE:
             {storyBible}
@@ -416,7 +365,7 @@ public class StoryStarterService
             Write ONLY the story text. No titles, no headers, no metadata.
             """;
 
-        return await llm.GenerateAsync(system, user, lead.Temperature, 2048, lead.Model, ct);
+        return await llm.GenerateAsync(system, user, temperature: 0.85, maxTokens: 2048, ct: ct);
     }
 
     /// <summary>
@@ -522,28 +471,6 @@ public class StoryStarterService
         return await llm.GenerateAsync(system, user, 0.5, 4096, ct: ct);
     }
 
-    private static List<string> InferTriggers(StoryStarterRequest request)
-    {
-        var triggers = new List<string>();
-        var premise = (request.Premise + " " + (request.Mood ?? "")).ToLowerInvariant();
-
-        if (premise.Contains("betray") || premise.Contains("trust")) triggers.Add("betrayal");
-        if (premise.Contains("fight") || premise.Contains("violence") || premise.Contains("kill")) triggers.Add("violence");
-        if (premise.Contains("loss") || premise.Contains("grief") || premise.Contains("death")) triggers.Add("loss");
-        if (premise.Contains("choice") || premise.Contains("moral") || premise.Contains("decision")) triggers.Add("moral_choice");
-        if (premise.Contains("memory") || premise.Contains("past") || premise.Contains("remember")) triggers.Add("memory");
-        if (premise.Contains("identity") || premise.Contains("who am i") || premise.Contains("self")) triggers.Add("identity_crisis");
-        if (premise.Contains("corporate") || premise.Contains("corp") || premise.Contains("power")) triggers.Add("corporate_oppression");
-        if (premise.Contains("augment") || premise.Contains("chrome") || premise.Contains("machine")) triggers.Add("transhumanism");
-        if (premise.Contains("contract") || premise.Contains("job") || premise.Contains("hire")) triggers.Add("desperation");
-        if (premise.Contains("rogue") || premise.Contains("ai") || premise.Contains("machine")) triggers.Add("transhumanism");
-        if (premise.Contains("debt") || premise.Contains("owe")) triggers.Add("debt");
-        if (premise.Contains("child") || premise.Contains("kid") || premise.Contains("young")) triggers.Add("children_in_danger");
-
-        if (!triggers.Any()) triggers.AddRange(["unknown_danger", "moral_choice"]);
-        return triggers;
-    }
-
 }
 
 public record StoryStarterRequest
@@ -559,8 +486,6 @@ public record GeneratedOpening
 {
     public string Title { get; init; } = "";
     public string Text { get; init; } = "";
-    public string LeadFacet { get; init; } = "";
-    public List<string> SupportingFacets { get; init; } = [];
     public List<string> Characters { get; init; } = [];
     public string? Location { get; init; }
 }

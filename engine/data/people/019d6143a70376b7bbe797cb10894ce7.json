@@ -1,319 +1,346 @@
-{
-  "id": "019d6143a70376b7bbe797cb10894ce7",
-  "type": "character",
-  "name": "Diogo Agyemang",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Prosthetics fitter and rehabilitation specialist serving the working poor of Archer's Line and the surrounding industrial districts",
-  "age": 62,
-  "status": "active",
-  "location": "Archer's Line — Wambua Prosthetics, a narrow shopfront wedged between a noodle stall and a wire-pull depot, near Damen and Armitage",
-  "description": "Diogo Agyemang is a tall, heavyset man whose age has settled into him rather than diminished him — broad-shouldered, slightly stooped, with enormous hands that have been reshaping and fitting prosthetic limbs for nearly four decades. His skin is dark and weathered at the knuckles, and he has a close-cropped white beard he trims every three days by feel. His own left arm below the elbow is a prosthetic — a mid-range Ferrogate industrial model he modified himself until it became something unique, its housing scratched with small geometric patterns his daughter etched into it when she was seven. He wears reading glasses on a beaded cord even though his vision correction implant is perfectly functional; he says the glasses help him think.\n\nDiogo Agyemang has fitted thousands of limbs over his career — dock workers who lost arms to machinery, children born without full limb formation, veterans of corporate security contracts who came home partial. He knows the psychological landscape of limb loss and re-embodiment with a clinical intimacy that no textbook provides. He's warm but unsentimental, the kind of person who will hand you a tissue and then immediately ask you a practical question to get you moving forward. He prays at a small home altar to an E.L.F. called Joinwork, who he says inhabits the articulation servo in his left wrist and has guided his hands for twenty years.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.7,
-      "id": 0.5,
-      "shadow": 0.3,
-      "mask": 0.2,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Becoming unable to work — losing his own functionality",
-      "Outliving his usefulness to the community"
-    ],
-    "core_desires": [
-      "To pass on his skills before he can no longer practice",
-      "To see affordable prosthetics become a right rather than a luxury"
-    ],
-    "coping_mechanisms": [
-      "Work — always work; the physical act of fitting and adjusting is meditative for him",
-      "Storytelling — he processes difficulty by converting it into narrative"
-    ],
-    "blind_spots": [
-      "Resistant to adopting newer fabrication techniques he hasn't personally vetted, which sometimes means clients wait longer than necessary"
-    ],
-    "secret": "He has been training an apprentice — a seventeen-year-old named Pako from two streets over — entirely off the books, because he cannot afford the Helix licensing fees that would make the apprenticeship official. If Helix inspectors found out, they could shut him down."
-  },
-  "speech_patterns": {
-    "vocabulary": "Rich and unhurried. Mixes Swahili-derived words from his Kenyan grandfather's side with the Slavic-inflected slang of Archer's Line. Uses analogies drawn from mechanics and material science to explain emotional concepts.",
-    "cadence": "Slow and rolling. Rarely interrupts. Lets silences breathe.",
-    "verbal_tics": [
-      "'You follow me?' after explaining something complex",
-      "Hums softly to himself while working — not a specific melody, just tone"
-    ],
-    "example_lines": [
-      "A fit that's almost right will hurt you worse than no fit at all. We take the time. You follow me?",
-      "This arm has been through more than I have. It just needs to remember what it knows."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "His apprentice Pako has been reported to the Helix licensing board by an anonymous source — possibly a competitor — and faces a hearing that could also expose Tomásin.",
-    "A prosthetic he fitted three months ago for a regular client is showing stress fractures that should be impossible given the usage profile, suggesting something about the client's activities that they haven't disclosed."
-  ],
-  "narrative_function": "Local color and community anchor. Can provide prosthetics, rehabilitation advice, and history about the industrial districts. A repository of stories about the people who live and work in Archer's Line. Potential quest giver when one of his clients or family is in trouble.",
-  "augmentations": "Left forearm prosthetic (self-modified Ferrogate industrial base). Vision correction implant. Mild bone-density reinforcement in both shoulders from an industrial injury at age 28.",
-  "daily_life": "Opens the shop at 0800, sees fittings and adjustments until early evening. Takes a long lunch break during which he eats with his daughter's family three days a week. Does his own fabrication and modification work after hours.",
-  "affiliation": "Independent — Wambua Prosthetics; registered with the Archer's Line Community Trade Registry",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "prosthetics fitter",
-      "community elder",
-      "craftsman",
-      "mentor",
-      "working poor adjacent"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never fit a prosthetic you aren't confident in just because the client is impatient",
-      "Sliding scale pricing — those who can pay more do; those who can't pay less or work it off",
-      "Don't ask what the limb will be used for, but don't fit for obvious harm"
-    ],
-    "escalation_ladder": [
-      "Gentle redirection and question-asking when something feels wrong",
-      "Direct, private conversation about his concern",
-      "Refusal of service with a referral elsewhere — he doesn't leave people without options"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally welcoming. Immediate practical focus — what do you need, let me see. Earns trust through competence before warmth.",
-      "friends": "Expansive and generous. Tells long stories. Feeds people. Remembers everything about everyone."
-    },
-    "stress_responses": {
-      "low": "Gets quieter and more deliberate",
-      "medium": "Works with his hands — takes apart and reassembles something small while thinking",
-      "high": "Leaves the situation physically if possible; returns when he has an answer, not just a reaction"
-    },
-    "contradictions": [
-      "Believes deeply in community self-sufficiency but accepts secret help from an Axiom-affiliated supply contact whose ethics he'd rather not examine"
-    ],
-    "habits": [
-      "Touches Joinwork — the servo in his wrist — briefly before starting any complex fitting",
-      "Keeps a handwritten ledger of every prosthetic he's ever fitted: name, limb, date, outcome"
-    ],
-    "breaking_points": [
-      "Watching someone turned away from care purely because they can't afford licensing fees"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Sentinel": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Archer's Line",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Archer's Line to a Kenyan-descended steelworker and a Bosnian-Croatian descended nurse",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Lost his left forearm in a conveyor accident at the Grainfort processing facility, aged 18; fitted with his first prosthetic the following week",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began apprenticeship under a prosthetics fitter who has since died; the man's tools are still in Tomásin's workshop",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Opened Wambua Prosthetics; fitted his first independent client, a child born without a right hand",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began training apprentice Pako Dzivaguru-Amara off the books",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ],
-  "related_entities": [
-    "Archer's Line",
-    "Ferrogate Transit",
-    "The Pure Hand",
-    "Folakemi Boudiaf"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Complex multiethnic blend: 43.3% Sub-Saharan African, 30.4% East Asian, 17.8% South Asian, 8.5% Hispanic/Latin American. Results in rich deep-to-warm brown skin tone with subtle golden and reddish undertones reflecting the admixture; facial structure shows balanced influence from all ancestry groups—West African bone structure with strength and prominence, East Asian eye shape and high cheekbones, South Asian facial proportions and nose bridge characteristics, creating a distinctly cosmopolitan appearance shaped by the Ubiquitous Diaspora",
-    "height_cm": 188,
-    "weight_kg": 98,
-    "build": "Broad-shouldered and heavyset with a slight forward stoop developed over decades of bench work; substantial upper body strength concentrated in chest and shoulders, softened by age but still imposing",
-    "hair_color": "White",
-    "hair_style": "Close-cropped, evenly trimmed",
-    "hair_length": "Short",
-    "eye_color": "Dark brown with subtle neural shimmer from vision correction implant",
-    "skin_tone": "Rich deep-to-warm brown with golden and reddish undertones; burnished deeper tone at knuckles and joints from decades of mechanical work and sun exposure, creating subtle variation across the arms and face with weathered character reflecting his age and labor history",
-    "complexion": "Lined face reflecting sixty-two years of precision work and sun exposure; close-trimmed white beard maintained with ritualistic care every three days; high cheekbones with balanced West African prominence and East Asian definition, South Asian nose bridge; intelligent and observant eyes behind reading glasses worn on a beaded cord despite functional implant correction",
-    "distinguishing_marks": [
-      "Old industrial burn scar across the back of right shoulder — smooth, faded silvery tissue roughly 8cm wide from a machinery accident at age 28",
-      "Calloused hands with permanently darkened knuckles and worn fingerprints from four decades of prosthetic fabrication",
-      "Small geometric patterns etched into the brushed housing of left forearm prosthetic — childish but precise line-work created by his daughter at age seven"
-    ],
-    "visible_augmentations": "Left forearm prosthetic below the elbow: mid-range Ferrogate industrial model heavily customized through decades of modification, its housing bearing scratched geometric etchings and showing signs of personal maintenance; bronze-toned articulation joints visible at wrist and finger servos. Vision correction implant detectable only by the subtle luminescence at the edge of his iris in certain light. Mild skeletal reinforcement in both shoulders suggests past industrial injury but visible only as subtle asymmetry in shoulder width.",
-    "posture_movement": "Stands with a slight forward lean developed from years hunched over fitting benches; moves with economical precision despite his age and bulk; handles objects with meticulous care and deliberation; left arm moves with mechanical smoothness but total naturalness — prosthetic is clearly an extension, not an appendage",
-    "clothing_style": "Practical Tier 3-4 working-class aesthetic: well-maintained black cotton work pants with multiple reinforced pockets, fitted long-sleeved thermal shirt (often dark blue or charcoal) rolled to elbows during fitting work, heavy canvas apron with leather-reinforced cuff for his prosthetic side, worn composite steel-toed boots re-soled multiple times. No jewelry except reading glasses cord made from braided synthetic beads. Occasionally wears a thin gold ring on his right hand — simple, well-worn, likely a wedding band or memorial piece."
-  },
-  "image_prompt": "Diogo Agyemang, 62-year-old neo-noir prosthetics craftsman, standing in his workshop bathed in warm amber work light. Deep rich brown skin with golden undertones, high prominent cheekbones blending West African and East Asian features with South Asian nose bridge, weathered from six decades of sun and labor. Close-cropped white hair and precisely trimmed white beard. Wearing dark charcoal thermal shirt with sleeves rolled up, showing scarred right shoulder and worn calloused hands. Left forearm is a heavily customized bronze-toned Ferrogate prosthetic with child-etched geometric patterns and visible servo joints. Subtle faded silvery burn scar across right shoulder. Reading glasses on beaded cord despite implant correction. Holding a prosthetic component with meticulous precision, slight forward lean to posture. Industrial workshop setting with cool blue-gray background, warm work-light creating depth and shadow on his lined face. 2200s neo-noir urban aesthetic, worn but dignified, showing age with strength --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 43.3,
-    "East Asian": 30.4,
-    "South Asian": 17.8,
-    "Hispanic/Latin American": 8.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 16.5
-      },
-      "East African": {
-        "Kenyan": 22.1,
-        "Rwandan": 4.7
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 16.5
-      },
-      "Chinese": {
-        "Hakka": 13.9
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Punjabi Pakistani": 13.3,
-        "Pashtun": 4.5
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Brazilian": 0.8,
-        "Colombian": 0.8
-      },
-      "Central American": {
-        "Guatemalan": 5.7
-      },
-      "Mexican": {
-        "Mexican": 1.2
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a70376b7bbe797cb10894ce7",
+    "type":  "character",
+    "name":  "Diogo Agyemang",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Prosthetics fitter and rehabilitation specialist serving the working poor of Archer\u0027s Line and the surrounding industrial districts",
+    "age":  62,
+    "status":  "active",
+    "location":  "Archer\u0027s Line â€” Wambua Prosthetics, a narrow shopfront wedged between a noodle stall and a wire-pull depot, near Damen and Armitage",
+    "description":  "Diogo Agyemang is a tall, heavyset man whose age has settled into him rather than diminished him â€” broad-shouldered, slightly stooped, with enormous hands that have been reshaping and fitting prosthetic limbs for nearly four decades. His skin is dark and weathered at the knuckles, and he has a close-cropped white beard he trims every three days by feel. His own left arm below the elbow is a prosthetic â€” a mid-range Ferrogate industrial model he modified himself until it became something unique, its housing scratched with small geometric patterns his daughter etched into it when she was seven. He wears reading glasses on a beaded cord even though his vision correction implant is perfectly functional; he says the glasses help him think.\n\nDiogo Agyemang has fitted thousands of limbs over his career â€” dock workers who lost arms to machinery, children born without full limb formation, veterans of corporate security contracts who came home partial. He knows the psychological landscape of limb loss and re-embodiment with a clinical intimacy that no textbook provides. He\u0027s warm but unsentimental, the kind of person who will hand you a tissue and then immediately ask you a practical question to get you moving forward. He prays at a small home altar to an E.L.F. called Joinwork, who he says inhabits the articulation servo in his left wrist and has guided his hands for twenty years.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming unable to work â€” losing his own functionality",
+                                          "Outliving his usefulness to the community"
+                                      ],
+                       "core_desires":  [
+                                            "To pass on his skills before he can no longer practice",
+                                            "To see affordable prosthetics become a right rather than a luxury"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Work â€” always work; the physical act of fitting and adjusting is meditative for him",
+                                                 "Storytelling â€” he processes difficulty by converting it into narrative"
+                                             ],
+                       "blind_spots":  [
+                                           "Resistant to adopting newer fabrication techniques he hasn\u0027t personally vetted, which sometimes means clients wait longer than necessary"
+                                       ],
+                       "secret":  "He has been training an apprentice â€” a seventeen-year-old named Pako from two streets over â€” entirely off the books, because he cannot afford the Helix licensing fees that would make the apprenticeship official. If Helix inspectors found out, they could shut him down."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Rich and unhurried. Mixes Swahili-derived words from his Kenyan grandfather\u0027s side with the Slavic-inflected slang of Archer\u0027s Line. Uses analogies drawn from mechanics and material science to explain emotional concepts.",
+                            "cadence":  "Slow and rolling. Rarely interrupts. Lets silences breathe.",
+                            "verbal_tics":  [
+                                                "\u0027You follow me?\u0027 after explaining something complex",
+                                                "Hums softly to himself while working â€” not a specific melody, just tone"
+                                            ],
+                            "example_lines":  [
+                                                  "A fit that\u0027s almost right will hurt you worse than no fit at all. We take the time. You follow me?",
+                                                  "This arm has been through more than I have. It just needs to remember what it knows."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "His apprentice Pako has been reported to the Helix licensing board by an anonymous source â€” possibly a competitor â€” and faces a hearing that could also expose TomÃ¡sin.",
+                        "A prosthetic he fitted three months ago for a regular client is showing stress fractures that should be impossible given the usage profile, suggesting something about the client\u0027s activities that they haven\u0027t disclosed."
+                    ],
+    "narrative_function":  "Local color and community anchor. Can provide prosthetics, rehabilitation advice, and history about the industrial districts. A repository of stories about the people who live and work in Archer\u0027s Line. Potential quest giver when one of his clients or family is in trouble.",
+    "augmentations":  "Left forearm prosthetic (self-modified Ferrogate industrial base). Vision correction implant. Mild bone-density reinforcement in both shoulders from an industrial injury at age 28.",
+    "daily_life":  "Opens the shop at 0800, sees fittings and adjustments until early evening. Takes a long lunch break during which he eats with his daughter\u0027s family three days a week. Does his own fabrication and modification work after hours.",
+    "affiliation":  "Independent â€” Wambua Prosthetics; registered with the Archer\u0027s Line Community Trade Registry",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "prosthetics fitter",
+                               "community elder",
+                               "craftsman",
+                               "mentor",
+                               "working poor adjacent"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never fit a prosthetic you aren\u0027t confident in just because the client is impatient",
+                                              "Sliding scale pricing â€” those who can pay more do; those who can\u0027t pay less or work it off",
+                                              "Don\u0027t ask what the limb will be used for, but don\u0027t fit for obvious harm"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Gentle redirection and question-asking when something feels wrong",
+                                                 "Direct, private conversation about his concern",
+                                                 "Refusal of service with a referral elsewhere â€” he doesn\u0027t leave people without options"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally welcoming. Immediate practical focus â€” what do you need, let me see. Earns trust through competence before warmth.",
+                                                   "friends":  "Expansive and generous. Tells long stories. Feeds people. Remembers everything about everyone."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Gets quieter and more deliberate",
+                                                "medium":  "Works with his hands â€” takes apart and reassembles something small while thinking",
+                                                "high":  "Leaves the situation physically if possible; returns when he has an answer, not just a reaction"
+                                            },
+                       "contradictions":  [
+                                              "Believes deeply in community self-sufficiency but accepts secret help from an Axiom-affiliated supply contact whose ethics he\u0027d rather not examine"
+                                          ],
+                       "habits":  [
+                                      "Touches Joinwork â€” the servo in his wrist â€” briefly before starting any complex fitting",
+                                      "Keeps a handwritten ledger of every prosthetic he\u0027s ever fitted: name, limb, date, outcome"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone turned away from care purely because they can\u0027t afford licensing fees"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Sentinel":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Archer\u0027s Line",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Archer\u0027s Line to a Kenyan-descended steelworker and a Bosnian-Croatian descended nurse",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Lost his left forearm in a conveyor accident at the Grainfort processing facility, aged 18; fitted with his first prosthetic the following week",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began apprenticeship under a prosthetics fitter who has since died; the man\u0027s tools are still in TomÃ¡sin\u0027s workshop",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Opened Wambua Prosthetics; fitted his first independent client, a child born without a right hand",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began training apprentice Pako Dzivaguru-Amara off the books",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Scout Rifle HSR-10 \u0027Wanderer\u0027",
+                            "Nkomo-Lindqvist NL-22 \u0027Peacemaker\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms Scout Rifle HSR-10 \u0027Wanderer\u0027",
+                                "Nkomo-Lindqvist NL-22 \u0027Peacemaker\u0027"
+                            ],
+    "related_entities":  [
+                             "Archer\u0027s Line",
+                             "Ferrogate Transit",
+                             "The Pure Hand",
+                             "Folakemi Boudiaf"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Complex multiethnic blend: 43.3% Sub-Saharan African, 30.4% East Asian, 17.8% South Asian, 8.5% Hispanic/Latin American. Results in rich deep-to-warm brown skin tone with subtle golden and reddish undertones reflecting the admixture; facial structure shows balanced influence from all ancestry groupsâ€”West African bone structure with strength and prominence, East Asian eye shape and high cheekbones, South Asian facial proportions and nose bridge characteristics, creating a distinctly cosmopolitan appearance shaped by the Ubiquitous Diaspora",
+                                 "height_cm":  188,
+                                 "weight_kg":  98,
+                                 "build":  "Broad-shouldered and heavyset with a slight forward stoop developed over decades of bench work; substantial upper body strength concentrated in chest and shoulders, softened by age but still imposing",
+                                 "hair_color":  "White",
+                                 "hair_style":  "Close-cropped, evenly trimmed",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown with subtle neural shimmer from vision correction implant",
+                                 "skin_tone":  "Rich deep-to-warm brown with golden and reddish undertones; burnished deeper tone at knuckles and joints from decades of mechanical work and sun exposure, creating subtle variation across the arms and face with weathered character reflecting his age and labor history",
+                                 "complexion":  "Lined face reflecting sixty-two years of precision work and sun exposure; close-trimmed white beard maintained with ritualistic care every three days; high cheekbones with balanced West African prominence and East Asian definition, South Asian nose bridge; intelligent and observant eyes behind reading glasses worn on a beaded cord despite functional implant correction",
+                                 "distinguishing_marks":  [
+                                                              "Old industrial burn scar across the back of right shoulder â€” smooth, faded silvery tissue roughly 8cm wide from a machinery accident at age 28",
+                                                              "Calloused hands with permanently darkened knuckles and worn fingerprints from four decades of prosthetic fabrication",
+                                                              "Small geometric patterns etched into the brushed housing of left forearm prosthetic â€” childish but precise line-work created by his daughter at age seven"
+                                                          ],
+                                 "visible_augmentations":  "Left forearm prosthetic below the elbow: mid-range Ferrogate industrial model heavily customized through decades of modification, its housing bearing scratched geometric etchings and showing signs of personal maintenance; bronze-toned articulation joints visible at wrist and finger servos. Vision correction implant detectable only by the subtle luminescence at the edge of his iris in certain light. Mild skeletal reinforcement in both shoulders suggests past industrial injury but visible only as subtle asymmetry in shoulder width.",
+                                 "posture_movement":  "Stands with a slight forward lean developed from years hunched over fitting benches; moves with economical precision despite his age and bulk; handles objects with meticulous care and deliberation; left arm moves with mechanical smoothness but total naturalness â€” prosthetic is clearly an extension, not an appendage",
+                                 "clothing_style":  "Practical Tier 3-4 working-class aesthetic: well-maintained black cotton work pants with multiple reinforced pockets, fitted long-sleeved thermal shirt (often dark blue or charcoal) rolled to elbows during fitting work, heavy canvas apron with leather-reinforced cuff for his prosthetic side, worn composite steel-toed boots re-soled multiple times. No jewelry except reading glasses cord made from braided synthetic beads. Occasionally wears a thin gold ring on his right hand â€” simple, well-worn, likely a wedding band or memorial piece."
+                             },
+    "image_prompt":  "Diogo Agyemang, 62-year-old neo-noir prosthetics craftsman, standing in his workshop bathed in warm amber work light. Deep rich brown skin with golden undertones, high prominent cheekbones blending West African and East Asian features with South Asian nose bridge, weathered from six decades of sun and labor. Close-cropped white hair and precisely trimmed white beard. Wearing dark charcoal thermal shirt with sleeves rolled up, showing scarred right shoulder and worn calloused hands. Left forearm is a heavily customized bronze-toned Ferrogate prosthetic with child-etched geometric patterns and visible servo joints. Subtle faded silvery burn scar across right shoulder. Reading glasses on beaded cord despite implant correction. Holding a prosthetic component with meticulous precision, slight forward lean to posture. Industrial workshop setting with cool blue-gray background, warm work-light creating depth and shadow on his lined face. 2200s neo-noir urban aesthetic, worn but dignified, showing age with strength --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  43.3,
+                             "East Asian":  30.4,
+                             "South Asian":  17.8,
+                             "Hispanic/Latin American":  8.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  16.5
+                                                                             },
+                                                        "East African":  {
+                                                                             "Kenyan":  22.1,
+                                                                             "Rwandan":  4.7
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  16.5
+                                                            },
+                                               "Chinese":  {
+                                                               "Hakka":  13.9
+                                                           }
+                                           },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  13.3,
+                                                                  "Pashtun":  4.5
+                                                              }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Brazilian":  0.8,
+                                                                                   "Colombian":  0.8
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  5.7
+                                                                                 },
+                                                            "Mexican":  {
+                                                                            "Mexican":  1.2
+                                                                        }
+                                                        }
+                        },
+    "tier":  "4"
 }

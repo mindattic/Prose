@@ -1,247 +1,270 @@
-{
-  "id": "019d6143a7377e2a93c02cc439161131",
-  "rating": 80,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Quinn Tehrani",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Synthetic rights paralegal and street-level legal advocate",
-  "age": 26,
-  "status": "active",
-  "location": "the Gray Zone, near Halsted and Division",
-  "description": "Quinn Tehrani is thin in the way of someone who eats when they remember to, with warm ochre skin, wide-set eyes with patterned irises \u2014 concentric rings of gold and green that pulse very faintly when they\u0027re stressed, an involuntary response from a cosmetic mod that was supposed to only do it when they wanted. Their hair is grown out into a thick natural halo that they sometimes shove under a battered cap. They carry a battered legal tablet that\u0027s been dropped, cracked, and re-shelled so many times it is essentially a philosophy about persistence.\n\nThey work under an advocacy nonprofit called Parallel Standing, providing free legal aid to synthetic workers, ELF-adjacent communities, and anyone else the standard courts treat as property rather than persons. Quinn Tehrani has no law degree \u2014 they have a paralegal certification, six hundred hours of practical training, and an uncanny instinct for finding the procedural gap in any document. They are intensely idealistic in a way that hasn\u0027t yet been beaten flat by the world, which makes them both electric to be around and worrying to people who have been doing this longer.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.9,
-      "id": 0.6,
-      "shadow": 0.2,
-      "mask": 0.4,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Being responsible for a case outcome that gets someone hurt",
-      "That synthetic personhood will be won on paper and mean nothing in practice"
-    ],
-    "core_desires": [
-      "A legal framework that cannot be bought case by case",
-      "To be taken seriously \u2014 not as a prodigy, not as a symbol, as a competent advocate"
-    ],
-    "coping_mechanisms": [
-      "Research spirals \u2014 when uncertain, accumulates more information",
-      "Tight humor with close colleagues as emotional valve"
-    ],
-    "blind_spots": [
-      "Overestimates the persuasive power of a good legal argument against naked economic interest",
-      "Struggles to accept that some clients don\u0027t want what she thinks they need"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Rapid alternation between precise legal language and very blunt colloquial speech \u2014 the code-switching is intentional, they use it as a tool",
-    "cadence": "Fast, tends to front-load the most important information as if they\u0027re always afraid of being cut off",
-    "verbal_tics": [
-      "\u0027Okay but here\u0027s the actual issue \u2014\u0027",
-      "Trails off mid-sentence when they\u0027re working something out, then resumes at full speed"
-    ],
-    "example_lines": [
-      "Okay but here\u0027s the actual issue \u2014 they didn\u0027t file that injunction because they thought they\u0027d win. They filed it because the processing delay gives them forty days to relocate the unit. It\u0027s a clock, not a case.",
-      "I know I\u0027m twenty-six. I also know I read the statute and you didn\u0027t. We can talk about my age or we can talk about the filing date."
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A synthetic they\u0027ve been advocating for has vanished from the pre-trial holding register \u2014 no transfer record, no release, just gone \u2014 and Zinzile is too scared to escalate officially without knowing who to trust",
-    "They\u0027ve stumbled onto a pattern in their caseload that suggests a coordinated effort to reclassify certain synthetic models as property before a rights bill comes to vote"
-  ],
-  "narrative_function": "Access point to the synthetic rights world and legal system underbelly \u2014 they know who has been disappeared, what cases are being buried, and which corporate legal teams are playing dirty.",
-  "augmentations": "Patterned irises (concentric gold/green rings, stress-reactive pulse \u2014 unintended behavior from cosmetic mod). Subvocal comms implant for silent communication during proceedings.",
-  "daily_life": "Intake shifts three mornings a week at the Parallel Standing storefront on the Gray Zone, rest of their time split between case prep, street outreach to synthetic communities, and attending every public hearing they can get into.",
-  "affiliation": "Parallel Standing Legal Advocacy Collective; loose affiliation with several synthetic rights organizations",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 4,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": 3,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "synthetic rights",
-      "legal access",
-      "idealist",
-      "information hub"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The client\u0027s safety comes first, the precedent comes second, their own principles come third",
-      "Never misrepresent a legal position \u2014 it destroys credibility they can\u0027t afford to rebuild"
-    ],
-    "escalation_ladder": [
-      "File every available procedural challenge",
-      "Go public with the case if institutional channels are blocked",
-      "Call in every favor and contact simultaneously if someone\u0027s safety is immediately at risk"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Eager and slightly overwhelming \u2014 they want to know if you\u0027re an ally and tend to skip several steps of social preamble",
-      "friends": "Devoted and slightly chaotic \u2014 will show up for you completely and also forget plans, flood you with information you didn\u0027t ask for, and apologize with genuine distress"
-    },
-    "stress_responses": {
-      "low": "Talks faster",
-      "medium": "Stops eating, develops visible tension in the jaw",
-      "high": "Goes very quiet and still in a way that frightens people who know them"
-    },
-    "contradictions": [
-      "Fights for client autonomy while subtly nudging clients toward the choices they think are right"
-    ],
-    "habits": [
-      "Annotates every document they read even if it\u0027s not case-relevant",
-      "Leaves voice memos to themselves in the middle of the night and never remembers recording them"
-    ],
-    "breaking_points": [
-      "A client being harmed because Zinzile made the wrong call",
-      "Discovering their own organization is compromised by a corporate donor with strings attached"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Predominantly Middle Eastern (56%) with substantial Sub-Saharan African (19.2%) ancestry creating a warm, luminous complexion. Central Asian heritage (10.3%) contributes angular bone structure and slight eye shape variation, while Northern European (11.1%) and Hispanic/Latin American (3.4%) ancestry add subtle undertones to iris coloration and skin depth. The genetic blend produces striking dimensional features: golden-warm skin with rich undertones, prominent cheekbones from Central Asian and Middle Eastern lineage, expressive full mouth characteristic of African heritage contribution, and complex eye coloration reflecting the full ancestry spectrum.",
-    "height_cm": 168,
-    "weight_kg": 54,
-    "build": "Wiry and lean \u2014 the thinness of someone sustained by conviction and irregular meals rather than deprivation. Long-limbed, slight shoulders, core strength that reads in how they hold themselves upright despite the exhaustion",
-    "hair_color": "Natural dark brown with subtle auburn undertones in sunlight",
-    "hair_style": "Thick natural halo, usually unstyled; frequently compressed under a faded canvas cap with a peeling Parallel Standing logo",
-    "hair_length": "Long (shoulder-length when unconstrained)",
-    "eye_color": "Warm brown base with augmented concentric iris patterns \u2014 rings of gold and green that pulse faintly under stress (involuntary)",
-    "skin_tone": "Rich golden-brown complexion with warm luminosity from the Middle Eastern-dominant and Sub-Saharan African blend (75.2% combined), deepened by subtle Central Asian undertones. The tone carries dimensional warmth with faint uneven pigmentation from inconsistent indoor-outdoor exposure across legal offices and street work",
-    "complexion": "Strong angular bone structure influenced by Central Asian and Middle Eastern ancestry, prominent defined cheekbones, full expressive mouth. Warm dimensional features reflecting the genetic blend\u0027s complexity. Minimal grooming \u2014 no visible makeup, fingernails worn short and often ink-stained. Faint dark circles from overwork are permanent fixtures",
-    "distinguishing_marks": [
-      "Thin scar along left jawline, pale and old, approximately 4cm \u2014 origin unknown, never volunteered",
-      "Small burn mark on inside of right wrist (2cm diameter, faded brown) from a heating element accident in their teens",
-      "Faint tattoo on inner left forearm \u2014 a small gavel interlocked with a synthetic circuit symbol, done in black ink, approximately 3cm wide"
-    ],
-    "visible_augmentations": "The stress-reactive iris patterns are immediately visible \u2014 concentric rings that pulse with golden and green light when cortisol spikes. No visible external chrome or subdermal plating. The subvocal comms implant is invisible, though tiny articulation points are visible at the angle of the jaw if you know to look",
-    "posture_movement": "Sits forward in chairs, rarely rests against backs. Moves quickly with purpose, gestures when they talk \u2014 hands are expressive and rarely still. Tends to pace during phone calls or case review. Eyes dart frequently, cataloging exits and overhead sprinklers (habit from street outreach). Maintains direct eye contact even when tired, sometimes to the point of seeming confrontational",
-    "clothing_style": "Tier 3-4 working class with nonprofit aesthetic. Worn jeans or cargo pants (pockets full of case files, evidence bags, burner comm devices). Layered tops \u2014 usually a faded Parallel Standing t-shirt under an oversized thrift-store button-up in neutral tones. The battered legal tablet lives in a patched canvas messenger bag with countless stickers from synthetic rights organizations. Worn canvas sneakers held together with determination and duct tape. One piece of jewelry: a silver ring on their right index finger, worn thin from years of anxious spinning. Cap always within arm\u0027s reach"
-  },
-  "image_prompt": "Quinn Tehrani, 168cm lean wiry frame, warm golden-brown skin with Middle Eastern-African dimensional blend, strong angular cheekbones from Central Asian heritage, expressive full mouth, dark natural brown hair in thick shoulder-length halo usually under faded canvas Parallel Standing cap. Warm brown eyes with augmented pulsing gold-green concentric iris rings that glow faintly under stress. Thin old scar along left jawline, small faded burn mark on right inner wrist, gavel-circuit tattoo on inner left forearm. GLMZ nonprofit legal worker aesthetic: worn jeans, layered faded t-shirt under oversized neutral thrift button-up, patched canvas messenger bag covered in synthetic rights stickers, duct-taped canvas sneakers, worn silver ring on right index finger. Sits forward intensely, hands gesturing expressively, eyes darting\u2014cataloging exits. Direct confrontational eye contact despite exhaustion. Indoor legal office lighting mixing cool fluorescents with warm afternoon window light, conveying dedication, weariness, and conviction. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Middle Eastern": 56,
-    "Sub-Saharan African": 19.2,
-    "Northern European": 11.1,
-    "Central Asian": 10.3,
-    "Hispanic/Latin American": 3.4
-  },
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Palestinian": 45.9
-      },
-      "Persian": {
-        "Afghan Dari": 10.1
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Somali": 6.2,
-        "Ethiopian": 1.5
-      },
-      "West African": {
-        "Senegalese": 9
-      },
-      "Central African": {
-        "Angolan": 2.5
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Dutch": 2.2,
-        "German": 1.3
-      },
-      "British Isles": {
-        "Scottish": 3.8
-      },
-      "Scandinavian": {
-        "Danish": 3.8
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Mongolian": 7.5,
-        "Buryat": 2.8
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Dominican": 1.6,
-        "Haitian": 1.8
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a7377e2a93c02cc439161131",
+    "rating":  80,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Quinn Tehrani",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Synthetic rights paralegal and street-level legal advocate",
+    "age":  26,
+    "status":  "active",
+    "location":  "the Gray Zone, near Halsted and Division",
+    "description":  "Quinn Tehrani is thin in the way of someone who eats when they remember to, with warm ochre skin, wide-set eyes with patterned irises — concentric rings of gold and green that pulse very faintly when they\u0027re stressed, an involuntary response from a cosmetic mod that was supposed to only do it when they wanted. Their hair is grown out into a thick natural halo that they sometimes shove under a battered cap. They carry a battered legal tablet that\u0027s been dropped, cracked, and re-shelled so many times it is essentially a philosophy about persistence.\n\nThey work under an advocacy nonprofit called Parallel Standing, providing free legal aid to synthetic workers, ELF-adjacent communities, and anyone else the standard courts treat as property rather than persons. Quinn Tehrani has no law degree — they have a paralegal certification, six hundred hours of practical training, and an uncanny instinct for finding the procedural gap in any document. They are intensely idealistic in a way that hasn\u0027t yet been beaten flat by the world, which makes them both electric to be around and worrying to people who have been doing this longer.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being responsible for a case outcome that gets someone hurt",
+                                          "That synthetic personhood will be won on paper and mean nothing in practice"
+                                      ],
+                       "core_desires":  [
+                                            "A legal framework that cannot be bought case by case",
+                                            "To be taken seriously — not as a prodigy, not as a symbol, as a competent advocate"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Research spirals — when uncertain, accumulates more information",
+                                                 "Tight humor with close colleagues as emotional valve"
+                                             ],
+                       "blind_spots":  [
+                                           "Overestimates the persuasive power of a good legal argument against naked economic interest",
+                                           "Struggles to accept that some clients don\u0027t want what she thinks they need"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Rapid alternation between precise legal language and very blunt colloquial speech — the code-switching is intentional, they use it as a tool",
+                            "cadence":  "Fast, tends to front-load the most important information as if they\u0027re always afraid of being cut off",
+                            "verbal_tics":  [
+                                                "\u0027Okay but here\u0027s the actual issue —\u0027",
+                                                "Trails off mid-sentence when they\u0027re working something out, then resumes at full speed"
+                                            ],
+                            "example_lines":  [
+                                                  "Okay but here\u0027s the actual issue — they didn\u0027t file that injunction because they thought they\u0027d win. They filed it because the processing delay gives them forty days to relocate the unit. It\u0027s a clock, not a case.",
+                                                  "I know I\u0027m twenty-six. I also know I read the statute and you didn\u0027t. We can talk about my age or we can talk about the filing date."
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A synthetic they\u0027ve been advocating for has vanished from the pre-trial holding register — no transfer record, no release, just gone — and Zinzile is too scared to escalate officially without knowing who to trust",
+                        "They\u0027ve stumbled onto a pattern in their caseload that suggests a coordinated effort to reclassify certain synthetic models as property before a rights bill comes to vote"
+                    ],
+    "narrative_function":  "Access point to the synthetic rights world and legal system underbelly — they know who has been disappeared, what cases are being buried, and which corporate legal teams are playing dirty.",
+    "augmentations":  "Patterned irises (concentric gold/green rings, stress-reactive pulse — unintended behavior from cosmetic mod). Subvocal comms implant for silent communication during proceedings.",
+    "daily_life":  "Intake shifts three mornings a week at the Parallel Standing storefront on the Gray Zone, rest of their time split between case prep, street outreach to synthetic communities, and attending every public hearing they can get into.",
+    "affiliation":  "Parallel Standing Legal Advocacy Collective; loose affiliation with several synthetic rights organizations",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  4,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "synthetic rights",
+                               "legal access",
+                               "idealist",
+                               "information hub"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The client\u0027s safety comes first, the precedent comes second, their own principles come third",
+                                              "Never misrepresent a legal position — it destroys credibility they can\u0027t afford to rebuild"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "File every available procedural challenge",
+                                                 "Go public with the case if institutional channels are blocked",
+                                                 "Call in every favor and contact simultaneously if someone\u0027s safety is immediately at risk"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Eager and slightly overwhelming — they want to know if you\u0027re an ally and tend to skip several steps of social preamble",
+                                                   "friends":  "Devoted and slightly chaotic — will show up for you completely and also forget plans, flood you with information you didn\u0027t ask for, and apologize with genuine distress"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks faster",
+                                                "medium":  "Stops eating, develops visible tension in the jaw",
+                                                "high":  "Goes very quiet and still in a way that frightens people who know them"
+                                            },
+                       "contradictions":  [
+                                              "Fights for client autonomy while subtly nudging clients toward the choices they think are right"
+                                          ],
+                       "habits":  [
+                                      "Annotates every document they read even if it\u0027s not case-relevant",
+                                      "Leaves voice memos to themselves in the middle of the night and never remembers recording them"
+                                  ],
+                       "breaking_points":  [
+                                               "A client being harmed because Zinzile made the wrong call",
+                                               "Discovering their own organization is compromised by a corporate donor with strings attached"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Predominantly Middle Eastern (56%) with substantial Sub-Saharan African (19.2%) ancestry creating a warm, luminous complexion. Central Asian heritage (10.3%) contributes angular bone structure and slight eye shape variation, while Northern European (11.1%) and Hispanic/Latin American (3.4%) ancestry add subtle undertones to iris coloration and skin depth. The genetic blend produces striking dimensional features: golden-warm skin with rich undertones, prominent cheekbones from Central Asian and Middle Eastern lineage, expressive full mouth characteristic of African heritage contribution, and complex eye coloration reflecting the full ancestry spectrum.",
+                                 "height_cm":  168,
+                                 "weight_kg":  54,
+                                 "build":  "Wiry and lean — the thinness of someone sustained by conviction and irregular meals rather than deprivation. Long-limbed, slight shoulders, core strength that reads in how they hold themselves upright despite the exhaustion",
+                                 "hair_color":  "Natural dark brown with subtle auburn undertones in sunlight",
+                                 "hair_style":  "Thick natural halo, usually unstyled; frequently compressed under a faded canvas cap with a peeling Parallel Standing logo",
+                                 "hair_length":  "Long (shoulder-length when unconstrained)",
+                                 "eye_color":  "Warm brown base with augmented concentric iris patterns — rings of gold and green that pulse faintly under stress (involuntary)",
+                                 "skin_tone":  "Rich golden-brown complexion with warm luminosity from the Middle Eastern-dominant and Sub-Saharan African blend (75.2% combined), deepened by subtle Central Asian undertones. The tone carries dimensional warmth with faint uneven pigmentation from inconsistent indoor-outdoor exposure across legal offices and street work",
+                                 "complexion":  "Strong angular bone structure influenced by Central Asian and Middle Eastern ancestry, prominent defined cheekbones, full expressive mouth. Warm dimensional features reflecting the genetic blend\u0027s complexity. Minimal grooming — no visible makeup, fingernails worn short and often ink-stained. Faint dark circles from overwork are permanent fixtures",
+                                 "distinguishing_marks":  [
+                                                              "Thin scar along left jawline, pale and old, approximately 4cm — origin unknown, never volunteered",
+                                                              "Small burn mark on inside of right wrist (2cm diameter, faded brown) from a heating element accident in their teens",
+                                                              "Faint tattoo on inner left forearm — a small gavel interlocked with a synthetic circuit symbol, done in black ink, approximately 3cm wide"
+                                                          ],
+                                 "visible_augmentations":  "The stress-reactive iris patterns are immediately visible — concentric rings that pulse with golden and green light when cortisol spikes. No visible external chrome or subdermal plating. The subvocal comms implant is invisible, though tiny articulation points are visible at the angle of the jaw if you know to look",
+                                 "posture_movement":  "Sits forward in chairs, rarely rests against backs. Moves quickly with purpose, gestures when they talk — hands are expressive and rarely still. Tends to pace during phone calls or case review. Eyes dart frequently, cataloging exits and overhead sprinklers (habit from street outreach). Maintains direct eye contact even when tired, sometimes to the point of seeming confrontational",
+                                 "clothing_style":  "Tier 3-4 working class with nonprofit aesthetic. Worn jeans or cargo pants (pockets full of case files, evidence bags, burner comm devices). Layered tops — usually a faded Parallel Standing t-shirt under an oversized thrift-store button-up in neutral tones. The battered legal tablet lives in a patched canvas messenger bag with countless stickers from synthetic rights organizations. Worn canvas sneakers held together with determination and duct tape. One piece of jewelry: a silver ring on their right index finger, worn thin from years of anxious spinning. Cap always within arm\u0027s reach"
+                             },
+    "image_prompt":  "Quinn Tehrani, 168cm lean wiry frame, warm golden-brown skin with Middle Eastern-African dimensional blend, strong angular cheekbones from Central Asian heritage, expressive full mouth, dark natural brown hair in thick shoulder-length halo usually under faded canvas Parallel Standing cap. Warm brown eyes with augmented pulsing gold-green concentric iris rings that glow faintly under stress. Thin old scar along left jawline, small faded burn mark on right inner wrist, gavel-circuit tattoo on inner left forearm. GLMZ nonprofit legal worker aesthetic: worn jeans, layered faded t-shirt under oversized neutral thrift button-up, patched canvas messenger bag covered in synthetic rights stickers, duct-taped canvas sneakers, worn silver ring on right index finger. Sits forward intensely, hands gesturing expressively, eyes darting—cataloging exits. Direct confrontational eye contact despite exhaustion. Indoor legal office lighting mixing cool fluorescents with warm afternoon window light, conveying dedication, weariness, and conviction. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  56,
+                             "Sub-Saharan African":  19.2,
+                             "Northern European":  11.1,
+                             "Central Asian":  10.3,
+                             "Hispanic/Latin American":  3.4
+                         },
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Palestinian":  45.9
+                                                                      },
+                                                   "Persian":  {
+                                                                   "Afghan Dari":  10.1
+                                                               }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Somali":  6.2,
+                                                                             "Ethiopian":  1.5
+                                                                         },
+                                                        "West African":  {
+                                                                             "Senegalese":  9
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Angolan":  2.5
+                                                                            }
+                                                    },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Dutch":  2.2,
+                                                                       "German":  1.3
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "Scottish":  3.8
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Danish":  3.8
+                                                                       }
+                                                  },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  7.5,
+                                                                   "Buryat":  2.8
+                                                               }
+                                              },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Dominican":  1.6,
+                                                                              "Haitian":  1.8
+                                                                          }
+                                                        }
+                        }
 }

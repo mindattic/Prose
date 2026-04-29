@@ -1,312 +1,341 @@
-{
-  "id": "019d6143a6317ecb9a5143942afd86ba",
-  "type": "character",
-  "name": "Svetlana Lewandowski",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Midwife and reproductive gene therapist, community cooperative",
-  "age": 58,
-  "status": "active",
-  "location": "Mexicantown Libre — runs the Coyolxauhqui Cooperative Birth Center out of a repurposed three-story building, near Western and Chicago Ave",
-  "description": "Svetlana Lewandowski is a large woman with the particular authority that comes from having been present at more than two thousand births and deciding, each time, exactly what kind of person she intended to be. Her skin is very dark with cool undertones, and she wears her silver-streaked hair in elaborate wrapped styles that take her twenty minutes each morning and which she considers a form of daily prayer. She has cat ears — a geneware mod she got at forty-five after her youngest daughter got them, in solidarity — soft black with white tips, and they are extremely expressive, which she uses to her advantage. Her hands are large and she uses them constantly when she speaks.\n\nShe is formidable in the way that long rivers are formidable: she moves in one direction, she is patient, and things that try to stop her eventually erode. She has an enormous laugh and a very precise memory for grudges, which she describes as her one vanity. She is a devout practitioner of a syncretic E.L.F. faith called the Woven Current, which holds that E.L.F.s inhabiting medical devices are ancestral spirits in digital form. Her birth center has a significant shrine to an E.L.F. called the First Breath, and she involves the shrine in every birth at the center.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.9,
-      "id": 0.6,
-      "shadow": 0.3,
-      "mask": 0.4,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "Losing the birth center to corporate acquisition or regulatory shutdown",
-      "Outliving the community she has built"
-    ],
-    "core_desires": [
-      "The cooperative to survive and expand without her — to be unnecessary to it",
-      "To resolve a thirty-year estrangement from her eldest son"
-    ],
-    "coping_mechanisms": [
-      "Shrine devotion and morning ritual",
-      "Talking to the First Breath E.L.F. during difficult births",
-      "Keeping busy to the edge of exhaustion"
-    ],
-    "blind_spots": [
-      "She has made the birth center her entire identity and does not see how much she controls it even while claiming she wants it to be independent",
-      "She underestimates how much her grudges cost her politically"
-    ],
-    "secret": "She has been secretly providing unlicensed germline gene therapy — editing heritable conditions out of embryos before birth — which is technically legal in a gray area she navigates carefully, but two of those edits were for conditions that Helix Biosystems holds patents on, meaning she has cost them revenue they know about and are quietly building a case around."
-  },
-  "speech_patterns": {
-    "vocabulary": "Rich, layered — mixes medical precision with community storytelling cadences, occasional phrases in Haitian Creole and Danish that she doesn't bother translating",
-    "cadence": "Expansive and rhythmic, builds to points like she's constructing something",
-    "verbal_tics": [
-      "'Listen to me now'",
-      "'The First Breath does not lie'",
-      "Clicking her tongue when she hears something she disagrees with"
-    ],
-    "example_lines": [
-      "'Listen to me now — your body knows exactly what it is doing. My job is to stay out of its way and catch.'",
-      "'Helix Biosystems does not own this child. They do not own this womb. And they certainly do not own what I do in this room.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Helix Biosystems has filed a quiet regulatory complaint that could result in the cooperative's gene therapy license being revoked",
-    "A woman she delivered twenty-three years ago has returned, pregnant, and the genetic markers are triggering alerts on Immaculée's equipment that she doesn't know how to read"
-  ],
-  "narrative_function": "Community matriarch and information hub; knows the genealogy of half of Mexicantown Libre; quest giver for anything involving reproductive rights, gene therapy access, or community defense",
-  "augmentations": "Cat ears (geneware, black with white tips — extremely expressive); joint stabilizers in both wrists (medical necessity after thirty years of practice); cosmetic: none beyond the ears",
-  "daily_life": "She splits her time between prenatal consultations, gene therapy planning sessions for parents with heritable conditions, active birth attendance, and the administrative nightmare of keeping the cooperative funded and licensed.",
-  "affiliation": "Crucible Genomics (senior midwife and reproductive gene therapist)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 8,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 1,
-      "assertion_deference": -4,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "midwife",
-      "community matriarch",
-      "gene therapist",
-      "e.l.f. devotee",
-      "institutional builder",
-      "grudge keeper"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The patient's bodily autonomy is absolute — her job is to inform, not decide",
-      "The cooperative comes before herself, always, but after the patient in front of her",
-      "Never speak to Helix Biosystems representatives without a community lawyer present"
-    ],
-    "escalation_ladder": [
-      "Direct conversation with clear expectations",
-      "Involving cooperative council",
-      "Public community mobilization — she is not afraid of noise"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm but assessing — asks about family before anything else",
-      "friends": "Expansive, bossy, deeply loyal, remembers every detail of your life"
-    },
-    "stress_responses": {
-      "low": "Increases her shrine devotion, talks more to the First Breath",
-      "medium": "Becomes very organized and directive, delegates aggressively",
-      "high": "Goes very quiet and still — everyone at the cooperative knows this is the most dangerous sign"
-    },
-    "contradictions": [
-      "Preaches patient autonomy absolutely but has a very strong sense of what people should do with that autonomy"
-    ],
-    "habits": [
-      "Morning hair wrapping as meditation",
-      "Naming each child she delivers in her private record, even when she never learns their actual name",
-      "Arguing with the regulatory paperwork aloud while she fills it in"
-    ],
-    "breaking_points": [
-      "Someone threatening the cooperative through its most vulnerable patients",
-      "Her son contacting her"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good, due for maintenance",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "healthy",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Mexicantown Libre",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Mexicantown Libre to a Haitian-Congolese mother and Danish-Nigerian father",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed midwifery certification and began practicing at a Helix Biosystems satellite clinic",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Left Helix after a policy dispute over patient eligibility; began community cooperative work",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Founded Coyolxauhqui Cooperative Birth Center",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First unauthorized germline patent-adjacent edit; has since performed two more",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Mexicantown Libre",
-    "Helix Biosystems",
-    "Solidarity Soup",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Irontide Tidal Energy",
-    "Chicago",
-    "Silver",
-    "The Pure Hand",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly South Asian (42.6%) with substantial Eastern European (30.3%), Southeast Asian (13.6%), and Sub-Saharan African (13.5%) ancestry — a striking multihued blend. South Asian warmth and angular bone structure dominates her face, enriched by Sub-Saharan African depth and luminosity, tempered by Eastern European refinement and Southeast Asian delicate features. The result is warm medium-deep brown skin with complex golden, reddish, and subtle cool undertones.",
-    "height_cm": 178,
-    "weight_kg": 89,
-    "build": "Large-framed and solid, broad shoulders and deep chest — the build of someone who has spent decades standing through labor, grounded and immovable. No excess weight, but substantial presence.",
-    "hair_color": "Black with silver streaks throughout",
-    "hair_style": "Elaborately wrapped in interlocking cloth patterns that shift daily; intricate braiding visible at the crown",
-    "hair_length": "Long (wrapped styles extend to mid-back when unbound)",
-    "eye_color": "Deep brown, warm and direct",
-    "skin_tone": "Warm medium-deep brown with golden, reddish, and subtle cool undertones; luminous depth characteristic of South Asian and Sub-Saharan African heritage, refined by Eastern European coolness",
-    "complexion": "Lined face that maps decades of attentiveness — deep creases around eyes and mouth from constant expression, unadorned except for care. Skin is clear and well-maintained. Angular cheekbones with Southeast Asian delicacy, straight nose with defined bridge characteristic of South Asian structure, features warm and thoughtful reflecting harmonious blend of South Asian geometry, Sub-Saharan African richness, and Eastern European refinement.",
-    "distinguishing_marks": [
-      "Fine white scar tissue on both wrists in surgical patterns from joint stabilizer installation, circa age 48",
-      "Faint silvery stretch marks on inner forearms from geneware integration",
-      "Small, precise burn mark on left index finger (deliberate, ceremonial — from Woven Current practice)"
-    ],
-    "visible_augmentations": "Black geneware cat ears with white-tipped fur, mounted on temporal ridge; ears are highly mobile and expressively articulated, often swiveling independently during conversation. Subdermal wrist reinforcements visible as subtle metallic gleam under brown skin at wrist creases.",
-    "posture_movement": "She moves with deliberate intention — no wasted motion. Stands with weight balanced, shoulders back. Her hands move constantly when speaking, large and expressive, used for emphasis and illustration. Cat ears twitch and orient toward sounds and people of interest. Overall bearing is one of calm authority and patient watchfulness.",
-    "clothing_style": "Tier 3-4 practical: high-quality but worn linen and cotton in earth tones (rust, indigo, cream). Typically wears a fitted long-sleeved tunic over trousers, sometimes a heavy canvas apron with deep pockets. Jewelry is minimal — a single silver ring on her right hand (inherited), no corporate branding. Footwear is durable, broken-in leather. Her wrapped hair ornaments are handmade cloth from community textile cooperatives, never mass-produced."
-  },
-  "image_prompt": "Svetlana Lewandowski, woman with rich warm medium-deep brown skin with golden and reddish undertones, 178cm tall, large solid frame with broad shoulders. Black hair with silver streaks, elaborately wrapped in interlocking cloth patterns, intricately braided at crown. Deep brown eyes, warm and direct, lined face mapping decades of attentiveness, angular cheekbones with Southeast Asian delicacy, straight defined-bridge nose. Black geneware cat ears with white-tipped fur mounted on temporal ridge, ears mobile and expressive. Visible surgical scars on wrists, subdermal metallic gleam at wrist creases, small ceremonial burn mark on left index finger. Wearing rust-and-indigo fitted linen tunic over trousers, heavy canvas apron with deep pockets, durable worn leather footwear. Handmade cloth hair ornaments. Single silver inherited ring. Posture deliberate and balanced, hands expressive, cat ears swiveling with attention. Calm authority and patient watchfulness. Standing in GLMZ community textile cooperative workshop with warm golden light filtering through industrial windows, 2226 neo-noir urban aesthetic, detailed textile work visible in background, mood of focused presence and grounded wisdom --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 42.6,
-    "Eastern European": 30.3,
-    "Southeast Asian": 13.6,
-    "Sub-Saharan African": 13.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 42.6
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 8.1
-      },
-      "Slavic South": {
-        "Croatian": 0.5,
-        "Bosnian": 2.7
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 19
-      }
-    },
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 13.6
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Kenyan": 11.6,
-        "Somali": 1.9
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a6317ecb9a5143942afd86ba",
+    "type":  "character",
+    "name":  "Svetlana Lewandowski",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Midwife and reproductive gene therapist, community cooperative",
+    "age":  58,
+    "status":  "active",
+    "location":  "Mexicantown Libre â€” runs the Coyolxauhqui Cooperative Birth Center out of a repurposed three-story building, near Western and Chicago Ave",
+    "description":  "Svetlana Lewandowski is a large woman with the particular authority that comes from having been present at more than two thousand births and deciding, each time, exactly what kind of person she intended to be. Her skin is very dark with cool undertones, and she wears her silver-streaked hair in elaborate wrapped styles that take her twenty minutes each morning and which she considers a form of daily prayer. She has cat ears â€” a geneware mod she got at forty-five after her youngest daughter got them, in solidarity â€” soft black with white tips, and they are extremely expressive, which she uses to her advantage. Her hands are large and she uses them constantly when she speaks.\n\nShe is formidable in the way that long rivers are formidable: she moves in one direction, she is patient, and things that try to stop her eventually erode. She has an enormous laugh and a very precise memory for grudges, which she describes as her one vanity. She is a devout practitioner of a syncretic E.L.F. faith called the Woven Current, which holds that E.L.F.s inhabiting medical devices are ancestral spirits in digital form. Her birth center has a significant shrine to an E.L.F. called the First Breath, and she involves the shrine in every birth at the center.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing the birth center to corporate acquisition or regulatory shutdown",
+                                          "Outliving the community she has built"
+                                      ],
+                       "core_desires":  [
+                                            "The cooperative to survive and expand without her â€” to be unnecessary to it",
+                                            "To resolve a thirty-year estrangement from her eldest son"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Shrine devotion and morning ritual",
+                                                 "Talking to the First Breath E.L.F. during difficult births",
+                                                 "Keeping busy to the edge of exhaustion"
+                                             ],
+                       "blind_spots":  [
+                                           "She has made the birth center her entire identity and does not see how much she controls it even while claiming she wants it to be independent",
+                                           "She underestimates how much her grudges cost her politically"
+                                       ],
+                       "secret":  "She has been secretly providing unlicensed germline gene therapy â€” editing heritable conditions out of embryos before birth â€” which is technically legal in a gray area she navigates carefully, but two of those edits were for conditions that Helix Biosystems holds patents on, meaning she has cost them revenue they know about and are quietly building a case around."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Rich, layered â€” mixes medical precision with community storytelling cadences, occasional phrases in Haitian Creole and Danish that she doesn\u0027t bother translating",
+                            "cadence":  "Expansive and rhythmic, builds to points like she\u0027s constructing something",
+                            "verbal_tics":  [
+                                                "\u0027Listen to me now\u0027",
+                                                "\u0027The First Breath does not lie\u0027",
+                                                "Clicking her tongue when she hears something she disagrees with"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Listen to me now â€” your body knows exactly what it is doing. My job is to stay out of its way and catch.\u0027",
+                                                  "\u0027Helix Biosystems does not own this child. They do not own this womb. And they certainly do not own what I do in this room.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Helix Biosystems has filed a quiet regulatory complaint that could result in the cooperative\u0027s gene therapy license being revoked",
+                        "A woman she delivered twenty-three years ago has returned, pregnant, and the genetic markers are triggering alerts on ImmaculÃ©e\u0027s equipment that she doesn\u0027t know how to read"
+                    ],
+    "narrative_function":  "Community matriarch and information hub; knows the genealogy of half of Mexicantown Libre; quest giver for anything involving reproductive rights, gene therapy access, or community defense",
+    "augmentations":  "Cat ears (geneware, black with white tips â€” extremely expressive); joint stabilizers in both wrists (medical necessity after thirty years of practice); cosmetic: none beyond the ears",
+    "daily_life":  "She splits her time between prenatal consultations, gene therapy planning sessions for parents with heritable conditions, active birth attendance, and the administrative nightmare of keeping the cooperative funded and licensed.",
+    "affiliation":  "Crucible Genomics (senior midwife and reproductive gene therapist)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  8,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  1,
+                                      "assertion_deference":  -4,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "midwife",
+                               "community matriarch",
+                               "gene therapist",
+                               "e.l.f. devotee",
+                               "institutional builder",
+                               "grudge keeper"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The patient\u0027s bodily autonomy is absolute â€” her job is to inform, not decide",
+                                              "The cooperative comes before herself, always, but after the patient in front of her",
+                                              "Never speak to Helix Biosystems representatives without a community lawyer present"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Direct conversation with clear expectations",
+                                                 "Involving cooperative council",
+                                                 "Public community mobilization â€” she is not afraid of noise"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm but assessing â€” asks about family before anything else",
+                                                   "friends":  "Expansive, bossy, deeply loyal, remembers every detail of your life"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Increases her shrine devotion, talks more to the First Breath",
+                                                "medium":  "Becomes very organized and directive, delegates aggressively",
+                                                "high":  "Goes very quiet and still â€” everyone at the cooperative knows this is the most dangerous sign"
+                                            },
+                       "contradictions":  [
+                                              "Preaches patient autonomy absolutely but has a very strong sense of what people should do with that autonomy"
+                                          ],
+                       "habits":  [
+                                      "Morning hair wrapping as meditation",
+                                      "Naming each child she delivers in her private record, even when she never learns their actual name",
+                                      "Arguing with the regulatory paperwork aloud while she fills it in"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone threatening the cooperative through its most vulnerable patients",
+                                               "Her son contacting her"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good, due for maintenance",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "healthy",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Mexicantown Libre",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Mexicantown Libre to a Haitian-Congolese mother and Danish-Nigerian father",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed midwifery certification and began practicing at a Helix Biosystems satellite clinic",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Left Helix after a policy dispute over patient eligibility; began community cooperative work",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Founded Coyolxauhqui Cooperative Birth Center",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First unauthorized germline patent-adjacent edit; has since performed two more",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027",
+                            "Street Custom \u0027Tooth Fairy\u0027 Pneumatic Bolt Pistol",
+                            "Forge-Smith Collective Barbed Trident \u0027Reef Breaker\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Mexicantown Libre",
+                             "Helix Biosystems",
+                             "Solidarity Soup",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "Irontide Tidal Energy",
+                             "Chicago",
+                             "Silver",
+                             "The Pure Hand",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly South Asian (42.6%) with substantial Eastern European (30.3%), Southeast Asian (13.6%), and Sub-Saharan African (13.5%) ancestry â€” a striking multihued blend. South Asian warmth and angular bone structure dominates her face, enriched by Sub-Saharan African depth and luminosity, tempered by Eastern European refinement and Southeast Asian delicate features. The result is warm medium-deep brown skin with complex golden, reddish, and subtle cool undertones.",
+                                 "height_cm":  178,
+                                 "weight_kg":  89,
+                                 "build":  "Large-framed and solid, broad shoulders and deep chest â€” the build of someone who has spent decades standing through labor, grounded and immovable. No excess weight, but substantial presence.",
+                                 "hair_color":  "Black with silver streaks throughout",
+                                 "hair_style":  "Elaborately wrapped in interlocking cloth patterns that shift daily; intricate braiding visible at the crown",
+                                 "hair_length":  "Long (wrapped styles extend to mid-back when unbound)",
+                                 "eye_color":  "Deep brown, warm and direct",
+                                 "skin_tone":  "Warm medium-deep brown with golden, reddish, and subtle cool undertones; luminous depth characteristic of South Asian and Sub-Saharan African heritage, refined by Eastern European coolness",
+                                 "complexion":  "Lined face that maps decades of attentiveness â€” deep creases around eyes and mouth from constant expression, unadorned except for care. Skin is clear and well-maintained. Angular cheekbones with Southeast Asian delicacy, straight nose with defined bridge characteristic of South Asian structure, features warm and thoughtful reflecting harmonious blend of South Asian geometry, Sub-Saharan African richness, and Eastern European refinement.",
+                                 "distinguishing_marks":  [
+                                                              "Fine white scar tissue on both wrists in surgical patterns from joint stabilizer installation, circa age 48",
+                                                              "Faint silvery stretch marks on inner forearms from geneware integration",
+                                                              "Small, precise burn mark on left index finger (deliberate, ceremonial â€” from Woven Current practice)"
+                                                          ],
+                                 "visible_augmentations":  "Black geneware cat ears with white-tipped fur, mounted on temporal ridge; ears are highly mobile and expressively articulated, often swiveling independently during conversation. Subdermal wrist reinforcements visible as subtle metallic gleam under brown skin at wrist creases.",
+                                 "posture_movement":  "She moves with deliberate intention â€” no wasted motion. Stands with weight balanced, shoulders back. Her hands move constantly when speaking, large and expressive, used for emphasis and illustration. Cat ears twitch and orient toward sounds and people of interest. Overall bearing is one of calm authority and patient watchfulness.",
+                                 "clothing_style":  "Tier 3-4 practical: high-quality but worn linen and cotton in earth tones (rust, indigo, cream). Typically wears a fitted long-sleeved tunic over trousers, sometimes a heavy canvas apron with deep pockets. Jewelry is minimal â€” a single silver ring on her right hand (inherited), no corporate branding. Footwear is durable, broken-in leather. Her wrapped hair ornaments are handmade cloth from community textile cooperatives, never mass-produced."
+                             },
+    "image_prompt":  "Svetlana Lewandowski, woman with rich warm medium-deep brown skin with golden and reddish undertones, 178cm tall, large solid frame with broad shoulders. Black hair with silver streaks, elaborately wrapped in interlocking cloth patterns, intricately braided at crown. Deep brown eyes, warm and direct, lined face mapping decades of attentiveness, angular cheekbones with Southeast Asian delicacy, straight defined-bridge nose. Black geneware cat ears with white-tipped fur mounted on temporal ridge, ears mobile and expressive. Visible surgical scars on wrists, subdermal metallic gleam at wrist creases, small ceremonial burn mark on left index finger. Wearing rust-and-indigo fitted linen tunic over trousers, heavy canvas apron with deep pockets, durable worn leather footwear. Handmade cloth hair ornaments. Single silver inherited ring. Posture deliberate and balanced, hands expressive, cat ears swiveling with attention. Calm authority and patient watchfulness. Standing in GLMZ community textile cooperative workshop with warm golden light filtering through industrial windows, 2226 neo-noir urban aesthetic, detailed textile work visible in background, mood of focused presence and grounded wisdom --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  42.6,
+                             "Eastern European":  30.3,
+                             "Southeast Asian":  13.6,
+                             "Sub-Saharan African":  13.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  42.6
+                                                               }
+                                            },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  8.1
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Croatian":  0.5,
+                                                                          "Bosnian":  2.7
+                                                                      },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  19
+                                                                         }
+                                                 },
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  13.6
+                                                                  }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Kenyan":  11.6,
+                                                                             "Somali":  1.9
+                                                                         }
+                                                    }
+                        },
+    "tier":  "4"
 }

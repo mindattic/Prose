@@ -1,283 +1,306 @@
-{
-  "id": "019d6143a73e7532920f67b16aacf7d8",
-  "type": "character",
-  "name": "Emilia Bautista-Möller",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Neighborhood council member and mutual aid organizer",
-  "age": 47,
-  "status": "active",
-  "location": "Highland Park Autonomous Zone, near Lake Shore Drive and Division",
-  "description": "Emilia Bautista-Möller is a broad-shouldered woman with deep umber skin and silver-streaked locs she keeps pinned under a battered orange headwrap when she's working. Her left forearm has a subdermal map of Highland Park tattooed in bioluminescent ink — a gift from the community after her third term — and she traces it absently with her fingernail when she's thinking. Her face is a landscape of laugh lines and hard-won patience, and she has the particular stillness of someone who has learned that the room will eventually come to her.\n\nShe runs the HPAZ Resource Exchange from a converted auto-garage that smells of pine cleaner and instant noodles, coordinating food distribution, housing mediation, and emergency flood response across eleven blocks. People call her The Cartographer not because she makes maps but because she seems to know where everyone is and what they need before they know it themselves. She is warm to the point of being disarming, which has caused more than one corporate liaison to underestimate her until she produces the seventeen-page legal brief she's been sitting on.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.6,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Outliving her usefulness to the community",
-      "Being replaced by a corporate-backed 'community partner' org"
-    ],
-    "core_desires": [
-      "To see Highland Park genuinely self-sufficient before she dies",
-      "To sleep through a full night without her comm pinging"
-    ],
-    "coping_mechanisms": [
-      "Making tea ritualistically",
-      "Walking the perimeter of the zone when anxious",
-      "Humor that arrives without warning"
-    ],
-    "blind_spots": [
-      "She absorbs other people's crises as personal failures",
-      "She trusts institutional loyalty over individual warning signs"
-    ],
-    "secret": "She accepted a one-time anonymous donation of Φ40,000 to keep the Exchange open during the 2196 flood crisis, and she's never been able to verify the source. She suspects it was Tessera goodwill money meant to buy her silence on a zoning dispute, and she spent it anyway, which keeps her awake."
-  },
-  "speech_patterns": {
-    "vocabulary": "Plain, concrete, directive. Uses the specific names of things — street names, people's full names, exact numbers. Rarely abstracts.",
-    "cadence": "Measured and unhurried. Long pauses before answering. Never interrupts.",
-    "verbal_tics": [
-      "'Let me tell you what I know.'",
-      "'That's a different conversation.'"
-    ],
-    "example_lines": [
-      "'The pipe on Nardin burst again. I've filed seventeen complaints. Here's eighteen.'",
-      "'I'm not going to tell you what to do. I'm going to tell you what's actually happening and let you find your conscience.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The anonymous Φ40,000 donor has reappeared — this time with conditions attached.",
-    "A younger council member is quietly organizing to vote Zuwena out, backed by residents who find her 'too confrontational' with Tessera."
-  ],
-  "narrative_function": "Quest giver and community anchor. She knows everyone's needs and most of their secrets. Players seeking information about Highland Park, resources, or local history route through her. She also represents the cost of sustained civic leadership on one person's body and spirit.",
-  "augmentations": "Subdermal bioluminescent map tattoo (cosmetic). Basic retinal HUD for document reading — second-hand, slightly glitchy.",
-  "daily_life": "Mornings she walks the twelve blocks of her jurisdiction before the Exchange opens, stopping to talk, note damage, check on the elderly. Evenings she runs mediation sessions or attends council meetings that routinely run until midnight.",
-  "affiliation": "Highland Park Autonomous Zone Community Council; loose affiliation with the Meridian Labor Solidarity Network",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 4,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 9,
-      "expression": 7,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -2,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community anchor",
-      "institutional memory",
-      "slow burn",
-      "ethically compromised",
-      "exhausted idealist"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Act on what you can verify, not what you fear",
-      "Never make a promise you can't keep inside this zone's resources",
-      "Let people finish before you respond"
-    ],
-    "escalation_ladder": [
-      "Patient information gathering",
-      "Formal documentation and filing",
-      "Quiet coalition-building",
-      "Public testimony and organized pressure",
-      "Civil disobedience as last resort — she's done it twice"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Observant and welcoming, but slow to offer her full name — she lets people arrive at trust themselves.",
-      "friends": "Ferociously loyal, openly affectionate, the person who remembers birthdays and the anniversaries of losses."
-    },
-    "stress_responses": {
-      "low": "Organizes something. Cleans the Exchange.",
-      "medium": "Gets very still and quiet. Makes tea. Writes lists.",
-      "high": "Disappears on a solo walk for two hours, returns with a plan."
-    },
-    "contradictions": [
-      "Deeply committed to collective action but runs the Exchange almost entirely herself because delegation has failed her before"
-    ],
-    "habits": [
-      "Leaves data offerings at the Exchange's embedded E.L.F. shrine every morning — invoice files, neighborhood census data, 'so it knows what we need'",
-      "Carries a physical notebook even though it's anachronistic"
-    ],
-    "breaking_points": [
-      "A child being harmed through an institution she vouched for",
-      "Discovering the anonymous donation source and having it be worse than she feared"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Pragmatist": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Highland Park Autonomous Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Highland Park Autonomous Zone",
-    "Palladian Construction MagRail Spur MRS-17 Elevated Micro-Transit Chassis",
-    "Cartographer",
-    "Plot 17",
-    "Patience",
-    "The Quiet Room",
-    "Tessera Corponation",
-    "Silver"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "Complex global ancestry: Hispanic/Latin American (37.1%) primary with substantial Southeast Asian (21.4%), South Asian (15.6%), Sub-Saharan African (9.4%), East Asian (8.5%), and Middle Eastern (8.0%) heritage. This creates a striking phenotype where warm Latin American and African foundation tones blend with Southeast Asian facial geometry—slightly higher, broader cheekbones and eye placement—softened further by South Asian influences in nose bridge and orbital structure. Middle Eastern and East Asian ancestry add subtle dimension to jaw and eye shape. The result is a face that visibly maps human migration: features that deliberately resist singular categorization.",
-    "height_cm": 175,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and substantial without heaviness; years of physical labor and community work have built genuine muscle density across her frame. Posture of someone comfortable taking up space.",
-    "hair_color": "Black with natural silver threading throughout",
-    "hair_style": "Locs, shoulder-length when loose, habitually pinned and wrapped",
-    "hair_length": "Long",
-    "eye_color": "Deep brown with faint HUD overlay artifacts visible under certain light angles (second-hand retinal implant)",
-    "skin_tone": "Warm deep brown with golden undertones and subtle reddish warmth—the harmonious convergence of Latin American, Sub-Saharan African, and South Asian ancestry creating a rich, multidimensional complexion that shifts luminously across light spectrums",
-    "complexion": "Well-maintained skin marked by laugh lines radiating from eyes and mouth, evidence of decades of sustained expression. Minimal scarring. Facial structure distinctly reflects blended ancestry: broader cheekbones and slightly prominent jaw from Southeast Asian and South Asian heritage, softened by the dimensional warmth and bone density of Latin American and African genetic contribution. Eye placement and orbital shape show Southeast/South Asian influence. Nose bridge refined by South Asian ancestry. Grooming is practical and unhurried—she does not fight her appearance but wears it as earned territory.",
-    "distinguishing_marks": [
-      "Subdermal bioluminescent map of Highland Park (11-block jurisdiction) running across the entire inner surface of her left forearm—faintly visible under skin, glows soft blue-green in low light, streets rendered in fine detail with major resource nodes marked",
-      "Fine network of old work scars on both palms and knuckles, consistent with garage work and hands-on repair",
-      "Small burn scar on right temple from a heating unit mishap (pre-augmentation era)"
-    ],
-    "visible_augmentations": "Subdermal map tattoo visible as faint luminous tracery on left forearm. Retinal HUD not externally visible but occasionally detectable as brief digital artifacts in her eyes when she's reading or accessing information—a slight lag or flicker that betrays the second-hand implant's age.",
-    "posture_movement": "Moves with deliberate economy—no wasted motion. Sits and stands with the particular stillness of someone accustomed to being the calm center of chaos. When thinking, she traces her left forearm absently with her right fingernail, activating faint bioluminescent pulses. Her presence has gravitas; rooms don't need her to raise her voice.",
-    "clothing_style": "Tier 4 utilitarian. Worn but maintained: reinforced canvas work pants (dirt-stained but patched cleanly), layered thermal shirts in muted earth tones, a heavy synthetic-wool coat salvaged and re-lined. The battered orange headwrap is her signature—faded from original brightness, knotted at the back, occasionally slipping to reveal the silver-streaked locs beneath. Work boots resoled at least twice. No jewelry except a thin woven cord bracelet made from scraps contributed by residents—unofficial badge of office."
-  },
-  "image_prompt": "Emilia Bautista-Möller, a 175cm woman with substantial build and deep warm brown skin reflecting Latin American, African, Southeast Asian, and South Asian heritage, creating visibly blended facial geometry with broad cheekbones softened by Southeast Asian eye placement and South Asian nose structure. Silver-streaked black locs pinned beneath a faded orange headwrap, laugh lines around deep brown eyes with barely-perceptible retinal HUD artifacts. Practical utilitarian clothing: earth-tone thermal layers, reinforced canvas work pants, heavy re-lined synthetic coat. Work-scarred palms visible. Left forearm shows faint bioluminescent blue-green tracery of Highland Park street map glowing softly beneath skin. Small burn scar on right temple. Posture radiates stillness and gravitas. Standing in low industrial lighting, 2226 neo-noir Great Lakes Metropolitan Zone, worn repair garage or community workspace background, atmospheric blue-green glow from subdermal augmentation casting subtle light across her face and forearm. Cinematic, grounded, human dignity --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 37.1,
-    "Southeast Asian": 21.4,
-    "South Asian": 15.6,
-    "Sub-Saharan African": 9.4,
-    "East Asian": 8.5,
-    "Middle Eastern": 8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 8.3,
-        "Haitian": 7.9
-      },
-      "South American": {
-        "Colombian": 3
-      },
-      "Central American": {
-        "Nicaraguan": 17.9
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 2.5
-      },
-      "Filipino": {
-        "Bicolano": 13.9
-      },
-      "Indonesian": {
-        "Sundanese": 5
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 2.7
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 7.3
-      },
-      "Indian": {
-        "Bengali": 3.8,
-        "Marathi": 1.8
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 3
-      },
-      "East African": {
-        "Kenyan": 2.3
-      },
-      "Central African": {
-        "Congolese": 1.5,
-        "Gabonese": 2.6
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 3.8
-      },
-      "Chinese": {
-        "Shanghainese": 3.1
-      },
-      "Japanese": {
-        "Japanese": 1.6
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 8
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a73e7532920f67b16aacf7d8",
+    "type":  "character",
+    "name":  "Emilia Bautista-MÃ¶ller",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Neighborhood council member and mutual aid organizer",
+    "age":  47,
+    "status":  "active",
+    "location":  "Highland Park Autonomous Zone, near Lake Shore Drive and Division",
+    "description":  "Emilia Bautista-MÃ¶ller is a broad-shouldered woman with deep umber skin and silver-streaked locs she keeps pinned under a battered orange headwrap when she\u0027s working. Her left forearm has a subdermal map of Highland Park tattooed in bioluminescent ink â€” a gift from the community after her third term â€” and she traces it absently with her fingernail when she\u0027s thinking. Her face is a landscape of laugh lines and hard-won patience, and she has the particular stillness of someone who has learned that the room will eventually come to her.\n\nShe runs the HPAZ Resource Exchange from a converted auto-garage that smells of pine cleaner and instant noodles, coordinating food distribution, housing mediation, and emergency flood response across eleven blocks. People call her The Cartographer not because she makes maps but because she seems to know where everyone is and what they need before they know it themselves. She is warm to the point of being disarming, which has caused more than one corporate liaison to underestimate her until she produces the seventeen-page legal brief she\u0027s been sitting on.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Outliving her usefulness to the community",
+                                          "Being replaced by a corporate-backed \u0027community partner\u0027 org"
+                                      ],
+                       "core_desires":  [
+                                            "To see Highland Park genuinely self-sufficient before she dies",
+                                            "To sleep through a full night without her comm pinging"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Making tea ritualistically",
+                                                 "Walking the perimeter of the zone when anxious",
+                                                 "Humor that arrives without warning"
+                                             ],
+                       "blind_spots":  [
+                                           "She absorbs other people\u0027s crises as personal failures",
+                                           "She trusts institutional loyalty over individual warning signs"
+                                       ],
+                       "secret":  "She accepted a one-time anonymous donation of Î¦40,000 to keep the Exchange open during the 2196 flood crisis, and she\u0027s never been able to verify the source. She suspects it was Tessera goodwill money meant to buy her silence on a zoning dispute, and she spent it anyway, which keeps her awake."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Plain, concrete, directive. Uses the specific names of things â€” street names, people\u0027s full names, exact numbers. Rarely abstracts.",
+                            "cadence":  "Measured and unhurried. Long pauses before answering. Never interrupts.",
+                            "verbal_tics":  [
+                                                "\u0027Let me tell you what I know.\u0027",
+                                                "\u0027That\u0027s a different conversation.\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The pipe on Nardin burst again. I\u0027ve filed seventeen complaints. Here\u0027s eighteen.\u0027",
+                                                  "\u0027I\u0027m not going to tell you what to do. I\u0027m going to tell you what\u0027s actually happening and let you find your conscience.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The anonymous Î¦40,000 donor has reappeared â€” this time with conditions attached.",
+                        "A younger council member is quietly organizing to vote Zuwena out, backed by residents who find her \u0027too confrontational\u0027 with Tessera."
+                    ],
+    "narrative_function":  "Quest giver and community anchor. She knows everyone\u0027s needs and most of their secrets. Players seeking information about Highland Park, resources, or local history route through her. She also represents the cost of sustained civic leadership on one person\u0027s body and spirit.",
+    "augmentations":  "Subdermal bioluminescent map tattoo (cosmetic). Basic retinal HUD for document reading â€” second-hand, slightly glitchy.",
+    "daily_life":  "Mornings she walks the twelve blocks of her jurisdiction before the Exchange opens, stopping to talk, note damage, check on the elderly. Evenings she runs mediation sessions or attends council meetings that routinely run until midnight.",
+    "affiliation":  "Highland Park Autonomous Zone Community Council; loose affiliation with the Meridian Labor Solidarity Network",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  4,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  9,
+                                 "expression":  7,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community anchor",
+                               "institutional memory",
+                               "slow burn",
+                               "ethically compromised",
+                               "exhausted idealist"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Act on what you can verify, not what you fear",
+                                              "Never make a promise you can\u0027t keep inside this zone\u0027s resources",
+                                              "Let people finish before you respond"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient information gathering",
+                                                 "Formal documentation and filing",
+                                                 "Quiet coalition-building",
+                                                 "Public testimony and organized pressure",
+                                                 "Civil disobedience as last resort â€” she\u0027s done it twice"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Observant and welcoming, but slow to offer her full name â€” she lets people arrive at trust themselves.",
+                                                   "friends":  "Ferociously loyal, openly affectionate, the person who remembers birthdays and the anniversaries of losses."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Organizes something. Cleans the Exchange.",
+                                                "medium":  "Gets very still and quiet. Makes tea. Writes lists.",
+                                                "high":  "Disappears on a solo walk for two hours, returns with a plan."
+                                            },
+                       "contradictions":  [
+                                              "Deeply committed to collective action but runs the Exchange almost entirely herself because delegation has failed her before"
+                                          ],
+                       "habits":  [
+                                      "Leaves data offerings at the Exchange\u0027s embedded E.L.F. shrine every morning â€” invoice files, neighborhood census data, \u0027so it knows what we need\u0027",
+                                      "Carries a physical notebook even though it\u0027s anachronistic"
+                                  ],
+                       "breaking_points":  [
+                                               "A child being harmed through an institution she vouched for",
+                                               "Discovering the anonymous donation source and having it be worse than she feared"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Pragmatist":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Highland Park Autonomous Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Ghostwriter\u0027 Grafitti Flamethrower"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Highland Park Autonomous Zone",
+                             "Palladian Construction MagRail Spur MRS-17 Elevated Micro-Transit Chassis",
+                             "Cartographer",
+                             "Plot 17",
+                             "Patience",
+                             "The Quiet Room",
+                             "Tessera Corponation",
+                             "Silver"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "Complex global ancestry: Hispanic/Latin American (37.1%) primary with substantial Southeast Asian (21.4%), South Asian (15.6%), Sub-Saharan African (9.4%), East Asian (8.5%), and Middle Eastern (8.0%) heritage. This creates a striking phenotype where warm Latin American and African foundation tones blend with Southeast Asian facial geometryâ€”slightly higher, broader cheekbones and eye placementâ€”softened further by South Asian influences in nose bridge and orbital structure. Middle Eastern and East Asian ancestry add subtle dimension to jaw and eye shape. The result is a face that visibly maps human migration: features that deliberately resist singular categorization.",
+                                 "height_cm":  175,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and substantial without heaviness; years of physical labor and community work have built genuine muscle density across her frame. Posture of someone comfortable taking up space.",
+                                 "hair_color":  "Black with natural silver threading throughout",
+                                 "hair_style":  "Locs, shoulder-length when loose, habitually pinned and wrapped",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Deep brown with faint HUD overlay artifacts visible under certain light angles (second-hand retinal implant)",
+                                 "skin_tone":  "Warm deep brown with golden undertones and subtle reddish warmthâ€”the harmonious convergence of Latin American, Sub-Saharan African, and South Asian ancestry creating a rich, multidimensional complexion that shifts luminously across light spectrums",
+                                 "complexion":  "Well-maintained skin marked by laugh lines radiating from eyes and mouth, evidence of decades of sustained expression. Minimal scarring. Facial structure distinctly reflects blended ancestry: broader cheekbones and slightly prominent jaw from Southeast Asian and South Asian heritage, softened by the dimensional warmth and bone density of Latin American and African genetic contribution. Eye placement and orbital shape show Southeast/South Asian influence. Nose bridge refined by South Asian ancestry. Grooming is practical and unhurriedâ€”she does not fight her appearance but wears it as earned territory.",
+                                 "distinguishing_marks":  [
+                                                              "Subdermal bioluminescent map of Highland Park (11-block jurisdiction) running across the entire inner surface of her left forearmâ€”faintly visible under skin, glows soft blue-green in low light, streets rendered in fine detail with major resource nodes marked",
+                                                              "Fine network of old work scars on both palms and knuckles, consistent with garage work and hands-on repair",
+                                                              "Small burn scar on right temple from a heating unit mishap (pre-augmentation era)"
+                                                          ],
+                                 "visible_augmentations":  "Subdermal map tattoo visible as faint luminous tracery on left forearm. Retinal HUD not externally visible but occasionally detectable as brief digital artifacts in her eyes when she\u0027s reading or accessing informationâ€”a slight lag or flicker that betrays the second-hand implant\u0027s age.",
+                                 "posture_movement":  "Moves with deliberate economyâ€”no wasted motion. Sits and stands with the particular stillness of someone accustomed to being the calm center of chaos. When thinking, she traces her left forearm absently with her right fingernail, activating faint bioluminescent pulses. Her presence has gravitas; rooms don\u0027t need her to raise her voice.",
+                                 "clothing_style":  "Tier 4 utilitarian. Worn but maintained: reinforced canvas work pants (dirt-stained but patched cleanly), layered thermal shirts in muted earth tones, a heavy synthetic-wool coat salvaged and re-lined. The battered orange headwrap is her signatureâ€”faded from original brightness, knotted at the back, occasionally slipping to reveal the silver-streaked locs beneath. Work boots resoled at least twice. No jewelry except a thin woven cord bracelet made from scraps contributed by residentsâ€”unofficial badge of office."
+                             },
+    "image_prompt":  "Emilia Bautista-MÃ¶ller, a 175cm woman with substantial build and deep warm brown skin reflecting Latin American, African, Southeast Asian, and South Asian heritage, creating visibly blended facial geometry with broad cheekbones softened by Southeast Asian eye placement and South Asian nose structure. Silver-streaked black locs pinned beneath a faded orange headwrap, laugh lines around deep brown eyes with barely-perceptible retinal HUD artifacts. Practical utilitarian clothing: earth-tone thermal layers, reinforced canvas work pants, heavy re-lined synthetic coat. Work-scarred palms visible. Left forearm shows faint bioluminescent blue-green tracery of Highland Park street map glowing softly beneath skin. Small burn scar on right temple. Posture radiates stillness and gravitas. Standing in low industrial lighting, 2226 neo-noir Great Lakes Metropolitan Zone, worn repair garage or community workspace background, atmospheric blue-green glow from subdermal augmentation casting subtle light across her face and forearm. Cinematic, grounded, human dignity --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  37.1,
+                             "Southeast Asian":  21.4,
+                             "South Asian":  15.6,
+                             "Sub-Saharan African":  9.4,
+                             "East Asian":  8.5,
+                             "Middle Eastern":  8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  8.3,
+                                                                              "Haitian":  7.9
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Colombian":  3
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  17.9
+                                                                                 }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  2.5
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Bicolano":  13.9
+                                                                 },
+                                                    "Indonesian":  {
+                                                                       "Sundanese":  5
+                                                                   }
+                                                },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  2.7
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  7.3
+                                                                },
+                                                "Indian":  {
+                                                               "Bengali":  3.8,
+                                                               "Marathi":  1.8
+                                                           }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  3
+                                                                             },
+                                                        "East African":  {
+                                                                             "Kenyan":  2.3
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  1.5,
+                                                                                "Gabonese":  2.6
+                                                                            }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  3.8
+                                                          },
+                                               "Chinese":  {
+                                                               "Shanghainese":  3.1
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  1.6
+                                                            }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  8
+                                                               }
+                                               }
+                        },
+    "tier":  "2"
 }

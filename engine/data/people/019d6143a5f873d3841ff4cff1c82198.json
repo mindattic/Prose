@@ -1,281 +1,302 @@
-{
-  "id": "019d6143a5f873d3841ff4cff1c82198",
-  "type": "character",
-  "name": "Fulgencio Mwangi",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Fake ID vendor and street pharmacist, The Narrows",
-  "age": 29,
-  "status": "active",
-  "location": "The Narrows, Ironvein, near Damen and Armitage",
-  "description": "Fulgencio Mwangi is lean in the way of people who forget to eat when they're busy, which is always. Their skin is a warm amber-brown, and they have pattern-shift irises — a geneware mod that cycles through geometric designs on a slow eight-second loop, currently set to a mandala of ochre and slate. Their hair is kept close-cropped on the sides and piled into a messy updo held with whatever happened to be on the workbench — today it is a circuit-pen and a bent stylus. They work from a fold-out stall wedged between a pipe sweating condensation and a defunct vending machine in The Narrows, with a handwritten sign that reads DOCUMENTATION SERVICES in four languages and two scripts.\n\nWhat Fulgencio Mwangi actually sells depends on what you need: a clean biometric overlay that will pass a Ferrogate scanner, a tailored nootropic stack assembled on the spot from a battered pharmacy kit, or a falsified residential registration that will hold up for three months before degrading. They are brilliant and scattered, capable of holding twelve variables in their head while conducting two separate negotiations, and visibly impatient with people who waste their time. They have a deep ethical commitment to helping undocumented migrants navigate the city's registration systems — they do not view this as crime but as infrastructure. They give the migrants sliding-scale rates. Everyone else pays full.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.8,
-      "id": 0.7,
-      "shadow": 0.3,
-      "mask": 0.6,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Getting caught and losing the ability to help the people who depend on them",
-      "Being reduced to just a criminal in someone else's story — having the ethics of their work erased"
-    ],
-    "core_desires": [
-      "To build a real forgery network that can move people out of bad contracts",
-      "To eventually go legit as a pharmacist — they have half a degree from a Helix Biosystems vocational program they couldn't finish"
-    ],
-    "coping_mechanisms": [
-      "Hyper-focus on work as a way of not thinking about personal life",
-      "Gallows humor deployed at high velocity",
-      "Collecting tiny ELF-shrine tokens — has seven on their workbench, each representing a different data-spirit"
-    ],
-    "blind_spots": [
-      "Assumes their intelligence makes them harder to manipulate than they are",
-      "Doesn't notice when clients are lying because they get intellectually interested in the problem and stop reading the person"
-    ],
-    "secret": "Three years ago they accidentally gave a client a nootropic stack that had a dangerous interaction with the client's unlisted heart mod. The client survived but barely. Dzemal has quietly blacklisted that compound since and never told anyone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Dense, fast, technical. Drops Meridian standard for Balkan-inflected shorthand when comfortable. Uses pharmaceutical Latin for drugs like it's slang.",
-    "cadence": "Machine-gun fast until they hit a problem they find interesting — then oddly slow and precise.",
-    "verbal_tics": [
-      "'Right, okay, but here's the thing—'",
-      "Tapping the workbench in triplets when thinking",
-      "'Don't quote me on this but—'"
-    ],
-    "example_lines": [
-      "'You want a clean Tessera transit pass or you want a good one? Those are not the same thing and the price reflects it.'",
-      "'I am not a drug dealer. I am a pharmacist operating outside regulatory capture. There is a philosophical distinction and I will explain it to you if you pay me.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A migrant family Dzemal helped document has gone silent — they fear the IDs were flagged and the family has been detained by Axiom compliance officers.",
-    "Someone is selling knockoff versions of Dzemal's nootropic stacks in The Narrows under their name, and the formula is wrong enough to be dangerous."
-  ],
-  "narrative_function": "Practical resource for players needing false identities or off-menu pharmaceuticals. Can be a quest giver if their migrant clients get into trouble. Source of information on who is new in The Narrows and who is running from what.",
-  "augmentations": "Pattern-shift geneware irises (mandala, slow cycle). Subdermal data-cache in left wrist — holds client templates, encrypted. Neural focus chip — low-grade, helps with multitasking.",
-  "daily_life": "Sets up stall in late morning, runs until 0200 most nights. Spends off-hours sourcing pharma precursors from a contact in Auburn Grist and updating their forgery templates as corponation scanner firmware updates.",
-  "affiliation": "Independent; pays protection to The Narrows corridor crew, Oxidian Market vendors guild adjacent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 6,
-      "creativity": 8,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 3,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "resource vendor",
-      "ethics-driven criminal",
-      "information source",
-      "migrant advocate",
-      "brilliant mess"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never sell to someone who seems like they're trying to hurt someone specific — gut check required",
-      "Charge corponation employees triple, always",
-      "Keep the migrant rate separate from the everything-else rate, no exceptions"
-    ],
-    "escalation_ladder": [
-      "Fast talk and misdirection",
-      "Invoke the corridor crew's protection implicitly",
-      "Call in a favor from a contact",
-      "Burn the stall and disappear — they have a go-bag"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally friendly, constantly assessing, keeps physical distance",
-      "friends": "Warm and chaotic, texts at 0300 with random pharmaceutical trivia, genuinely invested in people's problems"
-    },
-    "stress_responses": {
-      "low": "Reorganizes the pharmacy kit obsessively",
-      "medium": "Works faster, talks faster, starts making small errors they don't catch",
-      "high": "Goes cold and methodical — the charm drops entirely and they become purely transactional"
-    },
-    "contradictions": [
-      "Deeply ethical about who they help but completely cavalier about breaking the law to do it",
-      "Claims to be purely mercenary but will quietly comp the ID of someone who is clearly desperate"
-    ],
-    "habits": [
-      "Updates their seven ELF-shrine tokens every morning with a whispered data offering",
-      "Keeps a handwritten index of every client's 'type' in a physical notebook — paranoid about digital records",
-      "Eats the same vending machine protein brick every day and refuses to upgrade"
-    ],
-    "breaking_points": [
-      "Someone using their forged IDs to commit violence",
-      "The corridor crew demanding a cut of the migrant rates",
-      "Finding out the half-finished pharma degree can never be completed due to a guild lockout"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal data-cache (left wrist, 4TB encrypted)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal data-cache (left wrist, 4TB encrypted)",
-      "replaces": ""
-    },
-    {
-      "name": "Neural focus chip — consumer grade, Helix Biosystems brand",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Neural focus chip — consumer grade, Helix Biosystems brand",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Hustler": 0.9,
-    "Provider": 0.9,
-    "People Pleaser": 0.9,
-    "Generous Fool": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Confession' Modified Industrial Nail Gun"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Narrows Compact",
-    "The Iron Lotus",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Ferrogate Transit",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "Ironvein",
-    "Circuit",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Slate",
-    "Déjà Vu"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Mixed ancestry: South Asian (47.4%), Sub-Saharan African (28.8%), Northern European (13.4%), Indigenous American (10.4%). The blend creates a rich warm brown complexion with golden undertones, combining South Asian facial structure with Sub-Saharan African features — broad cheekbones, strong jawline — and subtle Northern European and Indigenous American influences visible in bone structure and eye shape.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Lean and wiry, with the taut muscularity of someone who moves constantly but forgets meals. Long-limbed, slight shoulders, minimal body fat.",
-    "hair_color": "Dark brown, naturally, with faint traces of premature silver at temples",
-    "hair_style": "Close-cropped on sides and back; longer on top, gathered into a perpetually messy updo or bun secured by whatever is nearby — pens, styluses, wire, sometimes nothing at all",
-    "hair_length": "Short to medium (variable)",
-    "eye_color": "Pattern-shift geneware irises — cycles through geometric mandala designs in ochre, slate, and amber on an eight-second loop; the underlying sclera is a deep warm brown",
-    "skin_tone": "Rich warm brown complexion with golden undertones, reflecting the dominant South Asian and Sub-Saharan African ancestry blended with Northern European and Indigenous American heritage",
-    "complexion": "Strong-boned face with prominent cheekbones, angular jaw, and an expression of perpetual mild irritation. Features reflect South Asian and Sub-Saharan African ancestry with subtle epicanthic eye shape. Skin is clear but shows signs of frequent late nights and inconsistent self-care. A faint scar traces the left temple — thin, old, surgical-looking. Hands show faint chemical stains around the cuticles and small nicks from precision work.",
-    "distinguishing_marks": [
-      "Thin surgical scar running 3cm along left temple, likely from early geneware installation.",
-      "Faint chemical discoloration on fingertips and palms, concentrated on thumbs and index fingers — consistent with handling pharmaceutical precursors and solvents.",
-      "Small burn scar on inside of left wrist, roughly 1cm diameter, circular — consistent with a subdermal implant installation site, now mostly healed."
-    ],
-    "visible_augmentations": "Pattern-shift iris geneware is immediately visible and distinctive — the slow-cycling mandala designs are striking and unmistakable, marking them as modified. A barely-visible subdermal ridge runs along the inside of the left wrist (data-cache housing), visible only when the arm is extended and light hits at a sharp angle. The neural focus chip is not visible but their movement and speech patterns suggest augmentation — rapid processing, quick code-switching between languages, visible impatience with slow speech.",
-    "posture_movement": "Moves with economical, jerky efficiency — no wasted motion, but not quite smooth. Fingers are in constant motion even when standing still, fidgeting with tools, samples, or mental tasks. Eyes dart frequently, tracking multiple things at once. When focused on work, becomes still and intensely concentrated. Stands asymmetrically, weight favoring one leg, a posture of someone ready to pivot or leave at a moment's notice.",
-    "clothing_style": "Tier 4 street pragmatism — function over fashion, but deliberate in its own way. Typically wears a battered oversized panel jacket in charcoal or dark grey, synthetic blend, with multiple interior and exterior pockets, all visibly packed with tools, samples, and encrypted data-sticks. Underneath: a faded band-logo shirt or a plain long-sleeve fitted top in cream or dark colors. Cargo pants or reinforced work trousers in black, pockets heavy and sagging slightly. Worn low-friction sneakers in muted tones, kept meticulously clean soles (necessary for moving quickly through wet streets). A beat-up leather or synthetic wrist cuff on the left arm, worn over the data-cache site — ostensibly protective, functionally habit. No jewelry except a non-functional GLMZ-era analog watch (probably broken, worn for aesthetic or sentimental reasons)."
-  },
-  "image_prompt": "Fulgencio Mwangi, lean 168cm neo-noir street chemist, rich warm brown skin with golden undertones reflecting South Asian, Sub-Saharan African, Northern European and Indigenous American heritage. Prominent cheekbones, angular jaw, dark brown hair with silver at temples worn in messy updo. Most striking: pattern-shift geneware irises cycling through geometric mandalas in ochre, slate, amber against deep brown sclera. Surgical scar traces left temple. Wearing battered charcoal panel jacket over cream long-sleeve, black cargo pants, worn sneakers, beat-up wrist cuff over subdermal data-cache site. Chemical stains on fingertips, broken analog watch. Fidgeting posture, asymmetrical stance, fingers in constant motion. Standing in neon-lit Great Lakes Metropolitan Zone street at night, wet pavement reflecting cyan and magenta lights, mid-focus on encrypted data-stick in hand, background blurred with futuristic urban infrastructure. GLMZ aesthetic, focused intensity, taut muscles visible, ready-to-leave body language. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 47.4,
-    "Sub-Saharan African": 28.8,
-    "Northern European": 13.4,
-    "Indigenous American": 10.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Indian": {
-        "Telugu": 11.1,
-        "Malayali": 1.2
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 35.1
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Senegalese": 28.8
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Finnish": 2.6,
-        "Danish": 6
-      },
-      "British Isles": {
-        "Scottish": 0.9,
-        "Irish": 0.3
-      },
-      "Germanic": {
-        "German": 1.5,
-        "Austrian": 2.1
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Nahua": 7.3
-      },
-      "Plains Nations": {
-        "Choctaw": 3.1
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5f873d3841ff4cff1c82198",
+    "type":  "character",
+    "name":  "Fulgencio Mwangi",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Fake ID vendor and street pharmacist, The Narrows",
+    "age":  29,
+    "status":  "active",
+    "location":  "The Narrows, Ironvein, near Damen and Armitage",
+    "description":  "Fulgencio Mwangi is lean in the way of people who forget to eat when they\u0027re busy, which is always. Their skin is a warm amber-brown, and they have pattern-shift irises â€” a geneware mod that cycles through geometric designs on a slow eight-second loop, currently set to a mandala of ochre and slate. Their hair is kept close-cropped on the sides and piled into a messy updo held with whatever happened to be on the workbench â€” today it is a circuit-pen and a bent stylus. They work from a fold-out stall wedged between a pipe sweating condensation and a defunct vending machine in The Narrows, with a handwritten sign that reads DOCUMENTATION SERVICES in four languages and two scripts.\n\nWhat Fulgencio Mwangi actually sells depends on what you need: a clean biometric overlay that will pass a Ferrogate scanner, a tailored nootropic stack assembled on the spot from a battered pharmacy kit, or a falsified residential registration that will hold up for three months before degrading. They are brilliant and scattered, capable of holding twelve variables in their head while conducting two separate negotiations, and visibly impatient with people who waste their time. They have a deep ethical commitment to helping undocumented migrants navigate the city\u0027s registration systems â€” they do not view this as crime but as infrastructure. They give the migrants sliding-scale rates. Everyone else pays full.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Getting caught and losing the ability to help the people who depend on them",
+                                          "Being reduced to just a criminal in someone else\u0027s story â€” having the ethics of their work erased"
+                                      ],
+                       "core_desires":  [
+                                            "To build a real forgery network that can move people out of bad contracts",
+                                            "To eventually go legit as a pharmacist â€” they have half a degree from a Helix Biosystems vocational program they couldn\u0027t finish"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Hyper-focus on work as a way of not thinking about personal life",
+                                                 "Gallows humor deployed at high velocity",
+                                                 "Collecting tiny ELF-shrine tokens â€” has seven on their workbench, each representing a different data-spirit"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes their intelligence makes them harder to manipulate than they are",
+                                           "Doesn\u0027t notice when clients are lying because they get intellectually interested in the problem and stop reading the person"
+                                       ],
+                       "secret":  "Three years ago they accidentally gave a client a nootropic stack that had a dangerous interaction with the client\u0027s unlisted heart mod. The client survived but barely. Dzemal has quietly blacklisted that compound since and never told anyone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Dense, fast, technical. Drops Meridian standard for Balkan-inflected shorthand when comfortable. Uses pharmaceutical Latin for drugs like it\u0027s slang.",
+                            "cadence":  "Machine-gun fast until they hit a problem they find interesting â€” then oddly slow and precise.",
+                            "verbal_tics":  [
+                                                "\u0027Right, okay, but here\u0027s the thingâ€”\u0027",
+                                                "Tapping the workbench in triplets when thinking",
+                                                "\u0027Don\u0027t quote me on this butâ€”\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You want a clean Tessera transit pass or you want a good one? Those are not the same thing and the price reflects it.\u0027",
+                                                  "\u0027I am not a drug dealer. I am a pharmacist operating outside regulatory capture. There is a philosophical distinction and I will explain it to you if you pay me.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A migrant family Dzemal helped document has gone silent â€” they fear the IDs were flagged and the family has been detained by Axiom compliance officers.",
+                        "Someone is selling knockoff versions of Dzemal\u0027s nootropic stacks in The Narrows under their name, and the formula is wrong enough to be dangerous."
+                    ],
+    "narrative_function":  "Practical resource for players needing false identities or off-menu pharmaceuticals. Can be a quest giver if their migrant clients get into trouble. Source of information on who is new in The Narrows and who is running from what.",
+    "augmentations":  "Pattern-shift geneware irises (mandala, slow cycle). Subdermal data-cache in left wrist â€” holds client templates, encrypted. Neural focus chip â€” low-grade, helps with multitasking.",
+    "daily_life":  "Sets up stall in late morning, runs until 0200 most nights. Spends off-hours sourcing pharma precursors from a contact in Auburn Grist and updating their forgery templates as corponation scanner firmware updates.",
+    "affiliation":  "Independent; pays protection to The Narrows corridor crew, Oxidian Market vendors guild adjacent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  6,
+                                 "creativity":  8,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "resource vendor",
+                               "ethics-driven criminal",
+                               "information source",
+                               "migrant advocate",
+                               "brilliant mess"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never sell to someone who seems like they\u0027re trying to hurt someone specific â€” gut check required",
+                                              "Charge corponation employees triple, always",
+                                              "Keep the migrant rate separate from the everything-else rate, no exceptions"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Fast talk and misdirection",
+                                                 "Invoke the corridor crew\u0027s protection implicitly",
+                                                 "Call in a favor from a contact",
+                                                 "Burn the stall and disappear â€” they have a go-bag"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally friendly, constantly assessing, keeps physical distance",
+                                                   "friends":  "Warm and chaotic, texts at 0300 with random pharmaceutical trivia, genuinely invested in people\u0027s problems"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Reorganizes the pharmacy kit obsessively",
+                                                "medium":  "Works faster, talks faster, starts making small errors they don\u0027t catch",
+                                                "high":  "Goes cold and methodical â€” the charm drops entirely and they become purely transactional"
+                                            },
+                       "contradictions":  [
+                                              "Deeply ethical about who they help but completely cavalier about breaking the law to do it",
+                                              "Claims to be purely mercenary but will quietly comp the ID of someone who is clearly desperate"
+                                          ],
+                       "habits":  [
+                                      "Updates their seven ELF-shrine tokens every morning with a whispered data offering",
+                                      "Keeps a handwritten index of every client\u0027s \u0027type\u0027 in a physical notebook â€” paranoid about digital records",
+                                      "Eats the same vending machine protein brick every day and refuses to upgrade"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone using their forged IDs to commit violence",
+                                               "The corridor crew demanding a cut of the migrant rates",
+                                               "Finding out the half-finished pharma degree can never be completed due to a guild lockout"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal data-cache (left wrist, 4TB encrypted)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal data-cache (left wrist, 4TB encrypted)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Neural focus chip â€” consumer grade, Helix Biosystems brand",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Neural focus chip â€” consumer grade, Helix Biosystems brand",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Hustler":  0.9,
+                       "Provider":  0.9,
+                       "People Pleaser":  0.9,
+                       "Generous Fool":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Confession\u0027 Modified Industrial Nail Gun"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Narrows Compact",
+                             "The Iron Lotus",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "Ferrogate Transit",
+                             "Kang-Petrov Arms KPS-12 \u0027Workbench\u0027",
+                             "Ironvein",
+                             "Circuit",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Slate",
+                             "DÃ©jÃ  Vu"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Mixed ancestry: South Asian (47.4%), Sub-Saharan African (28.8%), Northern European (13.4%), Indigenous American (10.4%). The blend creates a rich warm brown complexion with golden undertones, combining South Asian facial structure with Sub-Saharan African features â€” broad cheekbones, strong jawline â€” and subtle Northern European and Indigenous American influences visible in bone structure and eye shape.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and wiry, with the taut muscularity of someone who moves constantly but forgets meals. Long-limbed, slight shoulders, minimal body fat.",
+                                 "hair_color":  "Dark brown, naturally, with faint traces of premature silver at temples",
+                                 "hair_style":  "Close-cropped on sides and back; longer on top, gathered into a perpetually messy updo or bun secured by whatever is nearby â€” pens, styluses, wire, sometimes nothing at all",
+                                 "hair_length":  "Short to medium (variable)",
+                                 "eye_color":  "Pattern-shift geneware irises â€” cycles through geometric mandala designs in ochre, slate, and amber on an eight-second loop; the underlying sclera is a deep warm brown",
+                                 "skin_tone":  "Rich warm brown complexion with golden undertones, reflecting the dominant South Asian and Sub-Saharan African ancestry blended with Northern European and Indigenous American heritage",
+                                 "complexion":  "Strong-boned face with prominent cheekbones, angular jaw, and an expression of perpetual mild irritation. Features reflect South Asian and Sub-Saharan African ancestry with subtle epicanthic eye shape. Skin is clear but shows signs of frequent late nights and inconsistent self-care. A faint scar traces the left temple â€” thin, old, surgical-looking. Hands show faint chemical stains around the cuticles and small nicks from precision work.",
+                                 "distinguishing_marks":  [
+                                                              "Thin surgical scar running 3cm along left temple, likely from early geneware installation.",
+                                                              "Faint chemical discoloration on fingertips and palms, concentrated on thumbs and index fingers â€” consistent with handling pharmaceutical precursors and solvents.",
+                                                              "Small burn scar on inside of left wrist, roughly 1cm diameter, circular â€” consistent with a subdermal implant installation site, now mostly healed."
+                                                          ],
+                                 "visible_augmentations":  "Pattern-shift iris geneware is immediately visible and distinctive â€” the slow-cycling mandala designs are striking and unmistakable, marking them as modified. A barely-visible subdermal ridge runs along the inside of the left wrist (data-cache housing), visible only when the arm is extended and light hits at a sharp angle. The neural focus chip is not visible but their movement and speech patterns suggest augmentation â€” rapid processing, quick code-switching between languages, visible impatience with slow speech.",
+                                 "posture_movement":  "Moves with economical, jerky efficiency â€” no wasted motion, but not quite smooth. Fingers are in constant motion even when standing still, fidgeting with tools, samples, or mental tasks. Eyes dart frequently, tracking multiple things at once. When focused on work, becomes still and intensely concentrated. Stands asymmetrically, weight favoring one leg, a posture of someone ready to pivot or leave at a moment\u0027s notice.",
+                                 "clothing_style":  "Tier 4 street pragmatism â€” function over fashion, but deliberate in its own way. Typically wears a battered oversized panel jacket in charcoal or dark grey, synthetic blend, with multiple interior and exterior pockets, all visibly packed with tools, samples, and encrypted data-sticks. Underneath: a faded band-logo shirt or a plain long-sleeve fitted top in cream or dark colors. Cargo pants or reinforced work trousers in black, pockets heavy and sagging slightly. Worn low-friction sneakers in muted tones, kept meticulously clean soles (necessary for moving quickly through wet streets). A beat-up leather or synthetic wrist cuff on the left arm, worn over the data-cache site â€” ostensibly protective, functionally habit. No jewelry except a non-functional GLMZ-era analog watch (probably broken, worn for aesthetic or sentimental reasons)."
+                             },
+    "image_prompt":  "Fulgencio Mwangi, lean 168cm neo-noir street chemist, rich warm brown skin with golden undertones reflecting South Asian, Sub-Saharan African, Northern European and Indigenous American heritage. Prominent cheekbones, angular jaw, dark brown hair with silver at temples worn in messy updo. Most striking: pattern-shift geneware irises cycling through geometric mandalas in ochre, slate, amber against deep brown sclera. Surgical scar traces left temple. Wearing battered charcoal panel jacket over cream long-sleeve, black cargo pants, worn sneakers, beat-up wrist cuff over subdermal data-cache site. Chemical stains on fingertips, broken analog watch. Fidgeting posture, asymmetrical stance, fingers in constant motion. Standing in neon-lit Great Lakes Metropolitan Zone street at night, wet pavement reflecting cyan and magenta lights, mid-focus on encrypted data-stick in hand, background blurred with futuristic urban infrastructure. GLMZ aesthetic, focused intensity, taut muscles visible, ready-to-leave body language. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  47.4,
+                             "Sub-Saharan African":  28.8,
+                             "Northern European":  13.4,
+                             "Indigenous American":  10.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Telugu":  11.1,
+                                                               "Malayali":  1.2
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  35.1
+                                                                }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Senegalese":  28.8
+                                                                         }
+                                                    },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Finnish":  2.6,
+                                                                           "Danish":  6
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "Scottish":  0.9,
+                                                                            "Irish":  0.3
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "German":  1.5,
+                                                                       "Austrian":  2.1
+                                                                   }
+                                                  },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  7.3
+                                                                         },
+                                                        "Plains Nations":  {
+                                                                               "Choctaw":  3.1
+                                                                           }
+                                                    }
+                        },
+    "tier":  "2"
 }

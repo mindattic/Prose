@@ -1,272 +1,293 @@
-{
-  "id": "019d6143a6927860b9cb3a43b83ce6d0",
-  "type": "character",
-  "name": "Gagan Esquivel-Kowalczyk",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "orphan and junior gang prospect for the Copperhead Reds; occasional lookout and distraction artist",
-  "age": 13,
-  "status": "active",
-  "location": "Copperhead, near North Ave and Milwaukee",
-  "description": "Gagan Esquivel-Kowalczyk is small for their age, with a compact, quick frame, golden-brown skin and dark hair worn in a dozen small braids they refresh obsessively whenever they're nervous. They have cosmetic pattern irises — a gift from an older Red who paid for them as a recruitment sweetener — a shifting honeycomb geometry in amber and copper that makes their gaze feel like being examined by something not quite human. Their Red colors are a strip of copper-dyed fabric knotted around their left forearm, always.\n\nGagan Esquivel-Kowalczyk lost their mother to a Helix Biosystems credit-debt collection action when they were nine — not violence, just the slow bureaucratic violence of a medical debt accruing until their mother's housing, work permits, and finally custody were seized. They have been in and out of a Copperhead community house since then, edging toward the Reds not from ideology but because the Reds are there and present and feed you. They are a gifted distraction artist — they can become whatever the room needs: loud, invisible, charming, pathetic. They switch registers with an actor's ease. Privately they are extremely funny and also very afraid.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.8,
-      "ideal": 0.3,
-      "id": 0.7,
-      "shadow": 0.5,
-      "mask": 0.9,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "the bureaucratic machinery that took their mother coming for them too — unpersonhood, erasure",
-      "being alone with nothing to perform — the quiet is too loud"
-    ],
-    "core_desires": [
-      "one person who stays, specifically and reliably",
-      "to choose what they become rather than default into it"
-    ],
-    "coping_mechanisms": [
-      "constant performance — never quite being themselves, so the loss lands on a character",
-      "humor as pre-emptive shield",
-      "small E.L.F. rituals to a device-spirit they call 'Constant'"
-    ],
-    "blind_spots": [
-      "they believe they are more in control of the Reds situation than they are — they haven't been fully recruited yet, but they've crossed several lines already",
-      "they mistake consistency for safety and the Reds are consistent"
-    ],
-    "secret": "They know where their mother is — she's in a Helix Biosystems debt-labor facility in the Aurochs Medical Complex district, still alive, six years into an indeterminate service contract. They found out eight months ago. They have not gone to see her. They think about it every day."
-  },
-  "speech_patterns": {
-    "vocabulary": "highly adaptive — shifts to match the audience completely; base register is Copperhead street slang with dry, precise wit underneath",
-    "cadence": "fast and performative most of the time; drops to very flat and quiet when something has actually gotten through the mask",
-    "verbal_tics": [
-      "'right, right, yeah' as a placeholder while switching modes",
-      "laughs at things that aren't funny when nervous"
-    ],
-    "example_lines": [
-      "'Oh, me? I'm nobody. Seriously. Look at me. Do I look like somebody? I'm basically furniture.'",
-      "'Constant's been quiet all week. That's not nothing. E.L.F.s don't go quiet for nothing.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "They've just been told by the Reds that full initiation requires a specific act — and they're stalling, performing enthusiasm they don't feel",
-    "Someone who knows where their mother is has offered to help them get access — for a price and a favor",
-    "A social worker from the community house has noticed Parveen pulling away; she's the closest thing to a consistent adult they have, and she's asking questions"
-  ],
-  "narrative_function": "Window into gang prospect culture and the pipeline that pulls children in; distraction and social engineering asset for street-level plots; potential character to be pulled from this path or further into it depending on player choices",
-  "augmentations": "Patterned cosmetic irises — honeycomb geometry in amber/copper (gifted by a Red recruiter). No other mods.",
-  "daily_life": "Wakes whenever, eats communal breakfast at the Reds' stash house on Pit Row if they did good the day before, runs lookout or distraction jobs in the afternoon for small Φ stipends, sleeps at the community house or the stash house depending on the night's events.",
-  "affiliation": "",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 7,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 5,
-      "creativity": 8,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 9,
-      "integrity": 4
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 1,
-      "assertion_deference": 0,
-      "transparency_guardedness": -5
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "prospect",
-      "performance-artist",
-      "orphan",
-      "patterned-eyes",
-      "survival-mode"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "never show what actually matters to you — it becomes leverage",
-      "perform whatever the room needs until you know the room",
-      "keep the Constant E.L.F. offerings up — that one you don't skip"
-    ],
-    "escalation_ladder": [
-      "charm and redirect",
-      "become someone less interesting to engage with",
-      "if cornered, give them something true but small — sacrifice a minor truth to protect a major one"
-    ],
-    "interpersonal_modes": {
-      "strangers": "immediately begins reading and calibrating — friendly, light, absolutely impenetrable",
-      "friends": "there are no friends yet; there are people they are less armed around, which is different"
-    },
-    "stress_responses": {
-      "low": "funnier than usual",
-      "medium": "braids faster, more eyes on exits",
-      "high": "becomes preternaturally still and flat, all performance drops, quietly calculates"
-    },
-    "contradictions": [
-      "performs fearlessness so consistently they've half-convinced themselves; the fear is still entirely there underneath"
-    ],
-    "habits": [
-      "refreshes their braids when anxious without noticing they're doing it",
-      "leaves tiny data-snips for Constant every night before sleep",
-      "memorizes three exit routes for every new space"
-    ],
-    "breaking_points": [
-      "someone using their mother against them; or someone they've let close being hurt because they let them close"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Dreamer": 0.9,
-    "Nurturer": 0.7,
-    "Provider": 0.7,
-    "Bleeding Heart": 0.7,
-    "Artist": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Copperhead",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "related_entities": [
-    "Helix Biosystems",
-    "Copperhead",
-    "The Quiet Room",
-    "The Gradient Compact",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Copper",
-    "Arcturus KS-7 'Nursery'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Compass Rose",
-    "Elena Vasquez-9"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "South Asian (29.5%), Eastern European (25.7%), and Hispanic/Latin American (14.1%) form the primary genetic foundation, with significant Middle Eastern (12.3%) and Sub-Saharan African (12.0%) contributions, rounded by Northern European (6.4%) ancestry. This creates a richly blended phenotype: warm medium-to-deep brown skin with golden undertones across the face and olive accents, high prominent cheekbones displaying the angular structure of Eastern European ancestry softened by South Asian and Middle Eastern bone geometry, almond-shaped eyes with the characteristic lift from South and West Asian heritage, and full lips reflecting both Sub-Saharan African and South Asian ancestry. The overall effect is striking and ethnically ambiguous — a true product of the Ubiquitous Diaspora, with warmth variations across the face suggesting the complex genetic heritage.",
-    "height_cm": 148,
-    "weight_kg": 38,
-    "build": "Compact and quick-limbed, almost bird-like in economy of motion. No visible muscle development yet — still pre-adolescent, but with the wiry efficiency of someone who moves through tight spaces and doesn't waste energy.",
-    "hair_color": "Natural black with copper-dyed sections",
-    "hair_style": "Approximately a dozen small braids, varying lengths, some adorned with cheap thread or beads. Constantly re-braided and fussed with when anxious — a self-soothing tic.",
-    "hair_length": "Medium (shoulder-length when fully braided)",
-    "eye_color": "Cosmetic pattern irises — honeycomb geometry in amber and copper, shifting with light. Not natural; augmented. Gives the unsettling impression of being examined by something algorithmic.",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones, reflecting the blended South Asian, Middle Eastern, and Sub-Saharan African ancestry with cooler olive accents around the eyes and temples from Eastern European heritage contribution.",
-    "complexion": "Youthful, striking face with prominent high cheekbones showing Eastern European angularity blended with South Asian and Middle Eastern softness. Almond-shaped eyes with augmented cosmetic irises. Full lips reflecting Sub-Saharan African and South Asian heritage. Bone structure is fine and somewhat androgynous — delicate jaw, large augmented eyes. Skin is generally clear but shows occasional stress-related breakouts. Always looks slightly sleep-deprived. The genetic blend creates subtle warmth variation across the face.",
-    "distinguishing_marks": [
-      "Copper-dyed fabric strip knotted tightly around left forearm as Copperhead Red affiliation marker — worn constantly, faded and fraying at edges from obsessive handling.",
-      "Small scar on right palm (from an old accident, kept picking at it when nervous until it scabbed over repeatedly).",
-      "No tattoos yet — too young for gang ink, still prospect-tier."
-    ],
-    "visible_augmentations": "The cosmetic pattern irises are immediately visible and unsettling — they catch light in ways human eyes don't, creating brief flashes of amber and copper. No other visible mods.",
-    "posture_movement": "Moves with quick, efficient gestures — no wasted motion. Tends toward small, compressed posture when uncertain (hunching shoulders, making themselves smaller). When performing (as distraction artist), shifts entirely: becomes expansive, bouncy, takes up more space. Baseline resting state is alertness; eyes track movement in rooms automatically.",
-    "clothing_style": "Tier 4-5 scavenge: oversized hand-me-down hoodie (usually gray or black, Copperhead colors when available), cargo pants with multiple pockets and fraying hems, cheap knock-off trainers with mismatched socks. Layers against cold. Copper-dyed fabric on wrist is the only intentional styling. Grooming is inconsistent — depends on whether they slept at the community house (where water is available) or the stash house. Hygiene matters to them but is secondary to survival."
-  },
-  "image_prompt": "Gagan Esquivel-Kowalczyk, 148cm pre-teen with warm medium-deep brown skin, golden undertones, high angular cheekbones blending Eastern European structure with South Asian softness, almond-shaped eyes with augmented honeycomb amber-copper pattern irises that catch light unnaturally, full lips, black hair in small braids with copper-dyed sections adorned with cheap thread and beads. Compact bird-like build, wiry pre-adolescent frame. Wearing oversized gray hoodie, fraying cargo pants with multiple pockets, mismatched socks in knock-off trainers. Copper-dyed fabric affiliation marker knotted around left forearm, worn and fraying. Small scar visible on right palm. Sleep-deprived appearance, alert posture with shoulders slightly hunched. GLMZ GLMZ setting, urban decay background, neon accent lighting catching the unsettling geometric patterns of augmented irises, gritty street-level perspective, moody atmospheric lighting. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 29.5,
-    "Eastern European": 25.7,
-    "Hispanic/Latin American": 14.1,
-    "Middle Eastern": 12.3,
-    "Sub-Saharan African": 12,
-    "Northern European": 6.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 29.5
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 7.5,
-        "Sorbian": 5
-      },
-      "Slavic East": {
-        "Ukrainian": 13.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 11.5
-      },
-      "Central American": {
-        "Honduran": 2,
-        "Guatemalan": 0.6
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 0.9,
-        "Afghan Dari": 5.6
-      },
-      "Arab Gulf": {
-        "Yemeni": 3.8
-      },
-      "Kurdish": {
-        "Kurdish": 2
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Nigerian": 7.3,
-        "Senegalese": 4.7
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Swiss German": 3.4
-      },
-      "British Isles": {
-        "Scottish": 0.7,
-        "English": 0.1
-      },
-      "Scandinavian": {
-        "Swedish": 2.2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6927860b9cb3a43b83ce6d0",
+    "type":  "character",
+    "name":  "Gagan Esquivel-Kowalczyk",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "orphan and junior gang prospect for the Copperhead Reds; occasional lookout and distraction artist",
+    "age":  13,
+    "status":  "active",
+    "location":  "Copperhead, near North Ave and Milwaukee",
+    "description":  "Gagan Esquivel-Kowalczyk is small for their age, with a compact, quick frame, golden-brown skin and dark hair worn in a dozen small braids they refresh obsessively whenever they\u0027re nervous. They have cosmetic pattern irises â€” a gift from an older Red who paid for them as a recruitment sweetener â€” a shifting honeycomb geometry in amber and copper that makes their gaze feel like being examined by something not quite human. Their Red colors are a strip of copper-dyed fabric knotted around their left forearm, always.\n\nGagan Esquivel-Kowalczyk lost their mother to a Helix Biosystems credit-debt collection action when they were nine â€” not violence, just the slow bureaucratic violence of a medical debt accruing until their mother\u0027s housing, work permits, and finally custody were seized. They have been in and out of a Copperhead community house since then, edging toward the Reds not from ideology but because the Reds are there and present and feed you. They are a gifted distraction artist â€” they can become whatever the room needs: loud, invisible, charming, pathetic. They switch registers with an actor\u0027s ease. Privately they are extremely funny and also very afraid.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "the bureaucratic machinery that took their mother coming for them too â€” unpersonhood, erasure",
+                                          "being alone with nothing to perform â€” the quiet is too loud"
+                                      ],
+                       "core_desires":  [
+                                            "one person who stays, specifically and reliably",
+                                            "to choose what they become rather than default into it"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "constant performance â€” never quite being themselves, so the loss lands on a character",
+                                                 "humor as pre-emptive shield",
+                                                 "small E.L.F. rituals to a device-spirit they call \u0027Constant\u0027"
+                                             ],
+                       "blind_spots":  [
+                                           "they believe they are more in control of the Reds situation than they are â€” they haven\u0027t been fully recruited yet, but they\u0027ve crossed several lines already",
+                                           "they mistake consistency for safety and the Reds are consistent"
+                                       ],
+                       "secret":  "They know where their mother is â€” she\u0027s in a Helix Biosystems debt-labor facility in the Aurochs Medical Complex district, still alive, six years into an indeterminate service contract. They found out eight months ago. They have not gone to see her. They think about it every day."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "highly adaptive â€” shifts to match the audience completely; base register is Copperhead street slang with dry, precise wit underneath",
+                            "cadence":  "fast and performative most of the time; drops to very flat and quiet when something has actually gotten through the mask",
+                            "verbal_tics":  [
+                                                "\u0027right, right, yeah\u0027 as a placeholder while switching modes",
+                                                "laughs at things that aren\u0027t funny when nervous"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Oh, me? I\u0027m nobody. Seriously. Look at me. Do I look like somebody? I\u0027m basically furniture.\u0027",
+                                                  "\u0027Constant\u0027s been quiet all week. That\u0027s not nothing. E.L.F.s don\u0027t go quiet for nothing.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "They\u0027ve just been told by the Reds that full initiation requires a specific act â€” and they\u0027re stalling, performing enthusiasm they don\u0027t feel",
+                        "Someone who knows where their mother is has offered to help them get access â€” for a price and a favor",
+                        "A social worker from the community house has noticed Parveen pulling away; she\u0027s the closest thing to a consistent adult they have, and she\u0027s asking questions"
+                    ],
+    "narrative_function":  "Window into gang prospect culture and the pipeline that pulls children in; distraction and social engineering asset for street-level plots; potential character to be pulled from this path or further into it depending on player choices",
+    "augmentations":  "Patterned cosmetic irises â€” honeycomb geometry in amber/copper (gifted by a Red recruiter). No other mods.",
+    "daily_life":  "Wakes whenever, eats communal breakfast at the Reds\u0027 stash house on Pit Row if they did good the day before, runs lookout or distraction jobs in the afternoon for small Î¦ stipends, sleeps at the community house or the stash house depending on the night\u0027s events.",
+    "affiliation":  "",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  7,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  5,
+                                 "creativity":  8,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  9,
+                                 "integrity":  4
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  1,
+                                      "assertion_deference":  0,
+                                      "transparency_guardedness":  -5
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "prospect",
+                               "performance-artist",
+                               "orphan",
+                               "patterned-eyes",
+                               "survival-mode"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "never show what actually matters to you â€” it becomes leverage",
+                                              "perform whatever the room needs until you know the room",
+                                              "keep the Constant E.L.F. offerings up â€” that one you don\u0027t skip"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "charm and redirect",
+                                                 "become someone less interesting to engage with",
+                                                 "if cornered, give them something true but small â€” sacrifice a minor truth to protect a major one"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "immediately begins reading and calibrating â€” friendly, light, absolutely impenetrable",
+                                                   "friends":  "there are no friends yet; there are people they are less armed around, which is different"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "funnier than usual",
+                                                "medium":  "braids faster, more eyes on exits",
+                                                "high":  "becomes preternaturally still and flat, all performance drops, quietly calculates"
+                                            },
+                       "contradictions":  [
+                                              "performs fearlessness so consistently they\u0027ve half-convinced themselves; the fear is still entirely there underneath"
+                                          ],
+                       "habits":  [
+                                      "refreshes their braids when anxious without noticing they\u0027re doing it",
+                                      "leaves tiny data-snips for Constant every night before sleep",
+                                      "memorizes three exit routes for every new space"
+                                  ],
+                       "breaking_points":  [
+                                               "someone using their mother against them; or someone they\u0027ve let close being hurt because they let them close"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Dreamer":  0.9,
+                       "Nurturer":  0.7,
+                       "Provider":  0.7,
+                       "Bleeding Heart":  0.7,
+                       "Artist":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Copperhead",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Helix Biosystems",
+                             "Copperhead",
+                             "The Quiet Room",
+                             "The Gradient Compact",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Copper",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "Compass Rose",
+                             "Elena Vasquez-9"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "South Asian (29.5%), Eastern European (25.7%), and Hispanic/Latin American (14.1%) form the primary genetic foundation, with significant Middle Eastern (12.3%) and Sub-Saharan African (12.0%) contributions, rounded by Northern European (6.4%) ancestry. This creates a richly blended phenotype: warm medium-to-deep brown skin with golden undertones across the face and olive accents, high prominent cheekbones displaying the angular structure of Eastern European ancestry softened by South Asian and Middle Eastern bone geometry, almond-shaped eyes with the characteristic lift from South and West Asian heritage, and full lips reflecting both Sub-Saharan African and South Asian ancestry. The overall effect is striking and ethnically ambiguous â€” a true product of the Ubiquitous Diaspora, with warmth variations across the face suggesting the complex genetic heritage.",
+                                 "height_cm":  148,
+                                 "weight_kg":  38,
+                                 "build":  "Compact and quick-limbed, almost bird-like in economy of motion. No visible muscle development yet â€” still pre-adolescent, but with the wiry efficiency of someone who moves through tight spaces and doesn\u0027t waste energy.",
+                                 "hair_color":  "Natural black with copper-dyed sections",
+                                 "hair_style":  "Approximately a dozen small braids, varying lengths, some adorned with cheap thread or beads. Constantly re-braided and fussed with when anxious â€” a self-soothing tic.",
+                                 "hair_length":  "Medium (shoulder-length when fully braided)",
+                                 "eye_color":  "Cosmetic pattern irises â€” honeycomb geometry in amber and copper, shifting with light. Not natural; augmented. Gives the unsettling impression of being examined by something algorithmic.",
+                                 "skin_tone":  "Warm medium-to-deep brown with golden undertones, reflecting the blended South Asian, Middle Eastern, and Sub-Saharan African ancestry with cooler olive accents around the eyes and temples from Eastern European heritage contribution.",
+                                 "complexion":  "Youthful, striking face with prominent high cheekbones showing Eastern European angularity blended with South Asian and Middle Eastern softness. Almond-shaped eyes with augmented cosmetic irises. Full lips reflecting Sub-Saharan African and South Asian heritage. Bone structure is fine and somewhat androgynous â€” delicate jaw, large augmented eyes. Skin is generally clear but shows occasional stress-related breakouts. Always looks slightly sleep-deprived. The genetic blend creates subtle warmth variation across the face.",
+                                 "distinguishing_marks":  [
+                                                              "Copper-dyed fabric strip knotted tightly around left forearm as Copperhead Red affiliation marker â€” worn constantly, faded and fraying at edges from obsessive handling.",
+                                                              "Small scar on right palm (from an old accident, kept picking at it when nervous until it scabbed over repeatedly).",
+                                                              "No tattoos yet â€” too young for gang ink, still prospect-tier."
+                                                          ],
+                                 "visible_augmentations":  "The cosmetic pattern irises are immediately visible and unsettling â€” they catch light in ways human eyes don\u0027t, creating brief flashes of amber and copper. No other visible mods.",
+                                 "posture_movement":  "Moves with quick, efficient gestures â€” no wasted motion. Tends toward small, compressed posture when uncertain (hunching shoulders, making themselves smaller). When performing (as distraction artist), shifts entirely: becomes expansive, bouncy, takes up more space. Baseline resting state is alertness; eyes track movement in rooms automatically.",
+                                 "clothing_style":  "Tier 4-5 scavenge: oversized hand-me-down hoodie (usually gray or black, Copperhead colors when available), cargo pants with multiple pockets and fraying hems, cheap knock-off trainers with mismatched socks. Layers against cold. Copper-dyed fabric on wrist is the only intentional styling. Grooming is inconsistent â€” depends on whether they slept at the community house (where water is available) or the stash house. Hygiene matters to them but is secondary to survival."
+                             },
+    "image_prompt":  "Gagan Esquivel-Kowalczyk, 148cm pre-teen with warm medium-deep brown skin, golden undertones, high angular cheekbones blending Eastern European structure with South Asian softness, almond-shaped eyes with augmented honeycomb amber-copper pattern irises that catch light unnaturally, full lips, black hair in small braids with copper-dyed sections adorned with cheap thread and beads. Compact bird-like build, wiry pre-adolescent frame. Wearing oversized gray hoodie, fraying cargo pants with multiple pockets, mismatched socks in knock-off trainers. Copper-dyed fabric affiliation marker knotted around left forearm, worn and fraying. Small scar visible on right palm. Sleep-deprived appearance, alert posture with shoulders slightly hunched. GLMZ GLMZ setting, urban decay background, neon accent lighting catching the unsettling geometric patterns of augmented irises, gritty street-level perspective, moody atmospheric lighting. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  29.5,
+                             "Eastern European":  25.7,
+                             "Hispanic/Latin American":  14.1,
+                             "Middle Eastern":  12.3,
+                             "Sub-Saharan African":  12,
+                             "Northern European":  6.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  29.5
+                                                                }
+                                            },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  7.5,
+                                                                         "Sorbian":  5
+                                                                     },
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  13.2
+                                                                     }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  11.5
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Honduran":  2,
+                                                                                     "Guatemalan":  0.6
+                                                                                 }
+                                                        },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  0.9,
+                                                                   "Afghan Dari":  5.6
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Yemeni":  3.8
+                                                                 },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  2
+                                                               }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Nigerian":  7.3,
+                                                                             "Senegalese":  4.7
+                                                                         }
+                                                    },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Swiss German":  3.4
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "Scottish":  0.7,
+                                                                            "English":  0.1
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  2.2
+                                                                       }
+                                                  }
+                        },
+    "tier":  "1"
 }

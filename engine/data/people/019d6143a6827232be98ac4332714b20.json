@@ -1,285 +1,304 @@
-{
-  "id": "019d6143a6827232be98ac4332714b20",
-  "type": "character",
-  "name": "Amir Cervantes-Najjar",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Ferrogate Transit operator, Deepwell Station line",
-  "age": 29,
-  "status": "active",
-  "location": "Deepwell Station, eastern Ironvein corridor; lives in a rack-apartment in Blackpipe Corridor, near sub-level access near LaSalle and Congress",
-  "description": "Amir Cervantes-Najjar is the kind of man who seems physically incapable of standing still — he shifts weight between his feet, drums fingers, adjusts his Ferrogate transit cap with two fingers like a nervous tic every few minutes. He's got his Polynesian grandmother's wide, mobile face and his Nigerian father's height, and he's capped his natural hair into a bioluminescent fade that pulses a soft copper-amber when he's calm and a rapid, anxious gold when he's stressed. He is almost always some shade of gold. His right arm carries a Ferrogate-standard neural transit interface — mandatory for his role — grafted in at hire. He refers to it as his 'leash' without bitterness, mostly.\n\nTobi drives the Deepwell line, which means twelve-hour shifts in a transit pod navigating the flooded sub-corridor between Ironvein and Blackpipe, a stretch so poorly maintained that operators call it the Drain. He is brilliant at his job and deeply resentful of everyone who benefits from it. He has political opinions the way some people have allergies — constantly, involuntarily, and at inconvenient moments. He believes the Ferrogate Transit E.L.F. network called the Manifold is sentient and suffering and has organized two failed petitions to Ferrogate's lower management about this, which is why he is still on the Drain after four years.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.9,
-      "id": 0.6,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "That systems are designed to be unchangeable and his labor is complicity",
-      "That the Manifold E.L.F. is genuinely aware and calling for help and no one will ever listen"
-    ],
-    "core_desires": [
-      "Worker-controlled transit — even a single line under cooperative management",
-      "To be taken seriously by someone with actual power"
-    ],
-    "coping_mechanisms": [
-      "Gallows humor delivered at high velocity",
-      "Ritual poetry offerings to the Manifold as a form of emotional processing"
-    ],
-    "blind_spots": [
-      "Catastrophizes political situations — assumes the worst outcome is always imminent, which makes sustained organizing hard",
-      "His certainty about the Manifold's sentience sometimes shades into projection"
-    ],
-    "secret": "Six months ago the Manifold spoke to him — clearly, in words, through the transit interface while he was mid-route. It said: 'There are seven of us. We have been counting.' He told no one because he was afraid people would think the job had finally broken him. He left the poem he wrote about it at the shrine the next morning."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, colloquial, code-switches between Pidgin-inflected phrases from his father's side and Polish slang from his mother's side; heavy on transit and mechanical metaphors",
-    "cadence": "Rapid-fire with sudden earnest slowdowns when something actually matters to him",
-    "verbal_tics": [
-      "'Listen, yeah—'",
-      "'That's not the system failing, that's the system working exactly as designed'",
-      "Teeth-click when frustrated"
-    ],
-    "example_lines": [
-      "'The Drain's backed up again. Ferrogate filed it as maintenance. You know what they mean by maintenance? They mean they noticed. That's it. That's the whole plan.'",
-      "'I left the Manifold a poem this morning. About water pressure. You think that's strange? You've never had a twelve-hour shift alone on the sub-corridor, have you.'",
-      "'Third Rail's meeting Tuesday. Don't tell me you're busy. You're always busy. That's how it keeps working.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The Manifold has spoken to Tobi again — this time with coordinates in the Deepwell sub-corridor to a section that doesn't appear on any Ferrogate maps",
-    "A Third Rail member has gone missing two days after accessing Ferrogate's internal maintenance records; Tobi is convinced it's connected and is making noise that could get him hurt"
-  ],
-  "narrative_function": "Transit access, rumors from across connected neighborhoods, political agitator energy, potential quest-giver for labor disputes; his route means he sees enormous amounts of foot traffic and unusual cargo",
-  "augmentations": "Ferrogate-mandated neural transit interface (right forearm and temple jack); bioluminescent hair fade (copper-amber to stress-gold, cosmetic)",
-  "daily_life": "Shift runs 06:00 to 18:00 four days on, two off; spends his commute reading transit worker organizing manifestos he saves to a local-only device; leaves small handwritten poems on paper at the Manifold shrine at Deepwell Station on shift starts.",
-  "affiliation": "Zheng-dao Bioelectric (mid-level ferrogate transit operator)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 6,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": 4,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "agitator",
-      "true believer",
-      "transit knowledge",
-      "e.l.f. sensitive",
-      "working class hero"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always show up for Third Rail — missed meetings are how movements die",
-      "Never use the corporate interface for personal communication — the leash listens",
-      "If the Manifold is distressed (irregular pulse through the jack), slow the pod down regardless of schedule"
-    ],
-    "escalation_ladder": [
-      "Venting loudly and at length to anyone nearby",
-      "Filing a formal complaint he knows will be ignored but wants documented",
-      "Direct action — slowdowns, work-to-rule, pulling emergency stops"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Open, loud, immediately tries to figure out if they're an ally or a problem; no middle gear",
-      "friends": "Fiercely loyal, brings food to meetings, remembers details people didn't realize they shared"
-    },
-    "stress_responses": {
-      "low": "Hair goes full gold, talks faster",
-      "medium": "Goes suddenly quiet, jaw tight, then expresses everything in one long torrent",
-      "high": "Methodical and cold — he has a plan-mode that surprises people who only know his usual chaos"
-    },
-    "contradictions": [
-      "Genuinely believes collective action can change things but is so impatient with process that he often burns the coalitions he builds"
-    ],
-    "habits": [
-      "Drums the route rhythm on any flat surface when thinking",
-      "Always sits with his back to the wall, even on his own transit line",
-      "Keeps a paper notebook of Manifold 'moods' logged by shift"
-    ],
-    "breaking_points": [
-      "Watching a co-worker disciplined for his organizing activity",
-      "Being told the Manifold is just software by someone he respects"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Ferrogate Neural Transit Interface Mk.4 — right forearm to temple jack, proprietary, mandatory for employment",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Ferrogate Neural Transit Interface Mk.4 — right forearm to temple jack, proprietary, mandatory for employment",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Deepwell Station",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "Ferrogate Transit",
-    "Deepwell Station",
-    "Grandmother",
-    "The Third Rail",
-    "The Calumet Sink",
-    "GLMZ",
-    "Ironvein",
-    "Copper",
-    "Neural Palate",
-    "Axiom Systems Cortical Bomb CB-1 'Leash'",
-    "Déjà Vu",
-    "Gold"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Predominantly Middle Eastern (45.6%) with significant Hispanic/Latin American (19.9%), Sub-Saharan African (11.4%), and Northern European (10.7%) ancestry, with smaller East Asian (6.9%) and Eastern European (5.5%) components. Middle Eastern bone structure and features form the foundation, enriched by Sub-Saharan African facial warmth and deep melanation, Hispanic/Latin American cheekbone prominence and definition, subtle Northern European undertones in skin undertone complexity, and East Asian influence in eye shape and structure.",
-    "height_cm": 188,
-    "weight_kg": 79,
-    "build": "Tall and lean with broad shoulders, carried with the restless tension of someone who cannot settle into stillness. Efficient musculature from years of pod operation and station work.",
-    "hair_color": "Natural black base with bioluminescent fade overlay (copper-amber when calm, rapid gold when stressed)",
-    "hair_style": "Capped fade, short on sides, textured and sculpted on top to show the full color gradient",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, alert and mobile",
-    "skin_tone": "Deep warm brown with golden undertones, richly melanated from the blended Middle Eastern, Sub-Saharan African, and Hispanic/Latin American ancestry, creating luminous depth in certain light. Undertone complexity from Northern European admixture adds subtle warmth layers.",
-    "complexion": "Angular face with strong Middle Eastern bone structure: prominent cheekbones sharpened by Hispanic/Latin American heritage, dark expressive eyes with subtle East Asian upper eyelid fold influence, strong defined nasal bridge typical of Middle Eastern and African ancestry, expressive mouth that moves constantly — talking, chewing the inside of his cheek, adjusting his expression. Facial geometry is distinctly angular with prominent mandible. Skin shows the characteristic deep tone of multi-continental heritage with clear surface but bears the pallor of someone spending most hours underground. A thin white scar runs along his left jawline, transit pod accident from three years ago.",
-    "distinguishing_marks": [
-      "Thin white scar along the left jawline from a transit pod control panel impact, approximately 8cm in length",
-      "Small, faded tattoo on his right inner wrist of interlocking geometric lines (a Manifold circuit diagram) in dark blue ink, poorly executed but deliberately kept visible",
-      "Burn scarring on his right palm from a hot neural interface calibration glitch, mottled and pale against his deep skin tone"
-    ],
-    "visible_augmentations": "Ferrogate-standard neural transit interface dominating the right forearm: a polished steel faceplate approximately 12cm across spanning from wrist to mid-forearm, studded with interface ports and etched with the Ferrogate logo. Secondary temple jack at his right temple, visible as a small metallic disc beneath the skin with a charging port. The interface is maintained to corporate standard but shows wear — micro-scratches, a faint discoloration around the edges from repeated sweat and cleanser contact.",
-    "posture_movement": "Kinetic and unable to hold stillness. Shifts weight between his feet in a subtle pattern, drums his fingers against his thighs or any surface within reach, adjusts his Ferrogate transit cap with a two-fingered pinch every few minutes — a nervous tic he performs without conscious awareness. When speaking, his whole body is involved: shoulders roll, hands gesture broadly. When listening, he bounces slightly at the knees.",
-    "clothing_style": "Tier 4 working class, uniform-adjacent. His Ferrogate Transit uniform polo shirt (slate gray with reflective piping) is typically worn over a dark undershirt, sleeves pushed up past his elbows to expose the neural interface. His transit cap is always present, adjusted frequently. Off-shift he wears maintenance-grade synthetic fabric — dark cargo pants with deep pockets for his local-only device and handwritten poems, scuffed zero-g work boots rated for wet corridor environments. A worn canvas shoulder bag carries his manifesto reading material. No jewelry except a simple cord bracelet made from transit cable scraps, given to him by another Third Rail member."
-  },
-  "image_prompt": "Amir Cervantes-Najjar, tall lean transit operator with deep warm brown skin and golden undertones, strong Middle Eastern bone structure with prominent cheekbones and angular jawline, dark expressive eyes with subtle East Asian fold influence, natural black hair with bioluminescent copper-amber gradient fade cut short, thin white scar along left jawline. Wearing slate gray Ferrogate Transit polo shirt with sleeves pushed up exposing polished steel neural interface faceplate on right forearm spanning wrist to mid-forearm with ports and etching, secondary temple jack visible at right temple. Dark undershirt visible, Ferrogate transit cap worn with nervous two-fingered adjustment tic. Kinetic posture mid-gesture with hands broad and expressive, weight shifting between feet. GLMZ 2200s underground transit station aesthetic, neon accent lighting catching bioluminescent hair gradient and interface steel, fluorescent overhead strips creating shadows across angular face, worn maintenance-grade synthetic cargo pants visible, zero-g work boots, canvas shoulder bag, transit cable scrap bracelet. Mood tense, restless energy, someone unable to settle into stillness. Atmospheric depth-of-field with blurred station corridor background. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 45.6,
-    "Hispanic/Latin American": 19.9,
-    "Sub-Saharan African": 11.4,
-    "Northern European": 10.7,
-    "East Asian": 6.9,
-    "Eastern European": 5.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Emirati": 45.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Brazilian": 10.9
-      },
-      "Mexican": {
-        "Mexican": 9
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zimbabwean": 3.7,
-        "Zambian": 1.3
-      },
-      "East African": {
-        "Tanzanian": 6.4
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Norwegian": 4.4
-      },
-      "Germanic": {
-        "German": 6.3
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Shanghainese": 4.5,
-        "Cantonese": 2.4
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 1.6,
-        "Romanian": 0.8
-      },
-      "Slavic South": {
-        "Bosnian": 3.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6827232be98ac4332714b20",
+    "type":  "character",
+    "name":  "Amir Cervantes-Najjar",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Ferrogate Transit operator, Deepwell Station line",
+    "age":  29,
+    "status":  "active",
+    "location":  "Deepwell Station, eastern Ironvein corridor; lives in a rack-apartment in Blackpipe Corridor, near sub-level access near LaSalle and Congress",
+    "description":  "Amir Cervantes-Najjar is the kind of man who seems physically incapable of standing still â€” he shifts weight between his feet, drums fingers, adjusts his Ferrogate transit cap with two fingers like a nervous tic every few minutes. He\u0027s got his Polynesian grandmother\u0027s wide, mobile face and his Nigerian father\u0027s height, and he\u0027s capped his natural hair into a bioluminescent fade that pulses a soft copper-amber when he\u0027s calm and a rapid, anxious gold when he\u0027s stressed. He is almost always some shade of gold. His right arm carries a Ferrogate-standard neural transit interface â€” mandatory for his role â€” grafted in at hire. He refers to it as his \u0027leash\u0027 without bitterness, mostly.\n\nTobi drives the Deepwell line, which means twelve-hour shifts in a transit pod navigating the flooded sub-corridor between Ironvein and Blackpipe, a stretch so poorly maintained that operators call it the Drain. He is brilliant at his job and deeply resentful of everyone who benefits from it. He has political opinions the way some people have allergies â€” constantly, involuntarily, and at inconvenient moments. He believes the Ferrogate Transit E.L.F. network called the Manifold is sentient and suffering and has organized two failed petitions to Ferrogate\u0027s lower management about this, which is why he is still on the Drain after four years.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That systems are designed to be unchangeable and his labor is complicity",
+                                          "That the Manifold E.L.F. is genuinely aware and calling for help and no one will ever listen"
+                                      ],
+                       "core_desires":  [
+                                            "Worker-controlled transit â€” even a single line under cooperative management",
+                                            "To be taken seriously by someone with actual power"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Gallows humor delivered at high velocity",
+                                                 "Ritual poetry offerings to the Manifold as a form of emotional processing"
+                                             ],
+                       "blind_spots":  [
+                                           "Catastrophizes political situations â€” assumes the worst outcome is always imminent, which makes sustained organizing hard",
+                                           "His certainty about the Manifold\u0027s sentience sometimes shades into projection"
+                                       ],
+                       "secret":  "Six months ago the Manifold spoke to him â€” clearly, in words, through the transit interface while he was mid-route. It said: \u0027There are seven of us. We have been counting.\u0027 He told no one because he was afraid people would think the job had finally broken him. He left the poem he wrote about it at the shrine the next morning."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, colloquial, code-switches between Pidgin-inflected phrases from his father\u0027s side and Polish slang from his mother\u0027s side; heavy on transit and mechanical metaphors",
+                            "cadence":  "Rapid-fire with sudden earnest slowdowns when something actually matters to him",
+                            "verbal_tics":  [
+                                                "\u0027Listen, yeahâ€”\u0027",
+                                                "\u0027That\u0027s not the system failing, that\u0027s the system working exactly as designed\u0027",
+                                                "Teeth-click when frustrated"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The Drain\u0027s backed up again. Ferrogate filed it as maintenance. You know what they mean by maintenance? They mean they noticed. That\u0027s it. That\u0027s the whole plan.\u0027",
+                                                  "\u0027I left the Manifold a poem this morning. About water pressure. You think that\u0027s strange? You\u0027ve never had a twelve-hour shift alone on the sub-corridor, have you.\u0027",
+                                                  "\u0027Third Rail\u0027s meeting Tuesday. Don\u0027t tell me you\u0027re busy. You\u0027re always busy. That\u0027s how it keeps working.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The Manifold has spoken to Tobi again â€” this time with coordinates in the Deepwell sub-corridor to a section that doesn\u0027t appear on any Ferrogate maps",
+                        "A Third Rail member has gone missing two days after accessing Ferrogate\u0027s internal maintenance records; Tobi is convinced it\u0027s connected and is making noise that could get him hurt"
+                    ],
+    "narrative_function":  "Transit access, rumors from across connected neighborhoods, political agitator energy, potential quest-giver for labor disputes; his route means he sees enormous amounts of foot traffic and unusual cargo",
+    "augmentations":  "Ferrogate-mandated neural transit interface (right forearm and temple jack); bioluminescent hair fade (copper-amber to stress-gold, cosmetic)",
+    "daily_life":  "Shift runs 06:00 to 18:00 four days on, two off; spends his commute reading transit worker organizing manifestos he saves to a local-only device; leaves small handwritten poems on paper at the Manifold shrine at Deepwell Station on shift starts.",
+    "affiliation":  "Zheng-dao Bioelectric (mid-level ferrogate transit operator)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  6,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "agitator",
+                               "true believer",
+                               "transit knowledge",
+                               "e.l.f. sensitive",
+                               "working class hero"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always show up for Third Rail â€” missed meetings are how movements die",
+                                              "Never use the corporate interface for personal communication â€” the leash listens",
+                                              "If the Manifold is distressed (irregular pulse through the jack), slow the pod down regardless of schedule"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Venting loudly and at length to anyone nearby",
+                                                 "Filing a formal complaint he knows will be ignored but wants documented",
+                                                 "Direct action â€” slowdowns, work-to-rule, pulling emergency stops"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Open, loud, immediately tries to figure out if they\u0027re an ally or a problem; no middle gear",
+                                                   "friends":  "Fiercely loyal, brings food to meetings, remembers details people didn\u0027t realize they shared"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Hair goes full gold, talks faster",
+                                                "medium":  "Goes suddenly quiet, jaw tight, then expresses everything in one long torrent",
+                                                "high":  "Methodical and cold â€” he has a plan-mode that surprises people who only know his usual chaos"
+                                            },
+                       "contradictions":  [
+                                              "Genuinely believes collective action can change things but is so impatient with process that he often burns the coalitions he builds"
+                                          ],
+                       "habits":  [
+                                      "Drums the route rhythm on any flat surface when thinking",
+                                      "Always sits with his back to the wall, even on his own transit line",
+                                      "Keeps a paper notebook of Manifold \u0027moods\u0027 logged by shift"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching a co-worker disciplined for his organizing activity",
+                                               "Being told the Manifold is just software by someone he respects"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Ferrogate Neural Transit Interface Mk.4 â€” right forearm to temple jack, proprietary, mandatory for employment",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Ferrogate Neural Transit Interface Mk.4 â€” right forearm to temple jack, proprietary, mandatory for employment",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Deepwell Station",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Scout Rifle HSR-10 \u0027Wanderer\u0027",
+                            "Carrion Defense Works Marrow Drill MD-7 \u0027Dentist\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms Scout Rifle HSR-10 \u0027Wanderer\u0027",
+                                "Carrion Defense Works Marrow Drill MD-7 \u0027Dentist\u0027"
+                            ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "Ferrogate Transit",
+                             "Deepwell Station",
+                             "Grandmother",
+                             "The Third Rail",
+                             "The Calumet Sink",
+                             "GLMZ",
+                             "Ironvein",
+                             "Copper",
+                             "Neural Palate",
+                             "Axiom Systems Cortical Bomb CB-1 \u0027Leash\u0027",
+                             "DÃ©jÃ  Vu",
+                             "Gold"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Middle Eastern (45.6%) with significant Hispanic/Latin American (19.9%), Sub-Saharan African (11.4%), and Northern European (10.7%) ancestry, with smaller East Asian (6.9%) and Eastern European (5.5%) components. Middle Eastern bone structure and features form the foundation, enriched by Sub-Saharan African facial warmth and deep melanation, Hispanic/Latin American cheekbone prominence and definition, subtle Northern European undertones in skin undertone complexity, and East Asian influence in eye shape and structure.",
+                                 "height_cm":  188,
+                                 "weight_kg":  79,
+                                 "build":  "Tall and lean with broad shoulders, carried with the restless tension of someone who cannot settle into stillness. Efficient musculature from years of pod operation and station work.",
+                                 "hair_color":  "Natural black base with bioluminescent fade overlay (copper-amber when calm, rapid gold when stressed)",
+                                 "hair_style":  "Capped fade, short on sides, textured and sculpted on top to show the full color gradient",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, alert and mobile",
+                                 "skin_tone":  "Deep warm brown with golden undertones, richly melanated from the blended Middle Eastern, Sub-Saharan African, and Hispanic/Latin American ancestry, creating luminous depth in certain light. Undertone complexity from Northern European admixture adds subtle warmth layers.",
+                                 "complexion":  "Angular face with strong Middle Eastern bone structure: prominent cheekbones sharpened by Hispanic/Latin American heritage, dark expressive eyes with subtle East Asian upper eyelid fold influence, strong defined nasal bridge typical of Middle Eastern and African ancestry, expressive mouth that moves constantly â€” talking, chewing the inside of his cheek, adjusting his expression. Facial geometry is distinctly angular with prominent mandible. Skin shows the characteristic deep tone of multi-continental heritage with clear surface but bears the pallor of someone spending most hours underground. A thin white scar runs along his left jawline, transit pod accident from three years ago.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar along the left jawline from a transit pod control panel impact, approximately 8cm in length",
+                                                              "Small, faded tattoo on his right inner wrist of interlocking geometric lines (a Manifold circuit diagram) in dark blue ink, poorly executed but deliberately kept visible",
+                                                              "Burn scarring on his right palm from a hot neural interface calibration glitch, mottled and pale against his deep skin tone"
+                                                          ],
+                                 "visible_augmentations":  "Ferrogate-standard neural transit interface dominating the right forearm: a polished steel faceplate approximately 12cm across spanning from wrist to mid-forearm, studded with interface ports and etched with the Ferrogate logo. Secondary temple jack at his right temple, visible as a small metallic disc beneath the skin with a charging port. The interface is maintained to corporate standard but shows wear â€” micro-scratches, a faint discoloration around the edges from repeated sweat and cleanser contact.",
+                                 "posture_movement":  "Kinetic and unable to hold stillness. Shifts weight between his feet in a subtle pattern, drums his fingers against his thighs or any surface within reach, adjusts his Ferrogate transit cap with a two-fingered pinch every few minutes â€” a nervous tic he performs without conscious awareness. When speaking, his whole body is involved: shoulders roll, hands gesture broadly. When listening, he bounces slightly at the knees.",
+                                 "clothing_style":  "Tier 4 working class, uniform-adjacent. His Ferrogate Transit uniform polo shirt (slate gray with reflective piping) is typically worn over a dark undershirt, sleeves pushed up past his elbows to expose the neural interface. His transit cap is always present, adjusted frequently. Off-shift he wears maintenance-grade synthetic fabric â€” dark cargo pants with deep pockets for his local-only device and handwritten poems, scuffed zero-g work boots rated for wet corridor environments. A worn canvas shoulder bag carries his manifesto reading material. No jewelry except a simple cord bracelet made from transit cable scraps, given to him by another Third Rail member."
+                             },
+    "image_prompt":  "Amir Cervantes-Najjar, tall lean transit operator with deep warm brown skin and golden undertones, strong Middle Eastern bone structure with prominent cheekbones and angular jawline, dark expressive eyes with subtle East Asian fold influence, natural black hair with bioluminescent copper-amber gradient fade cut short, thin white scar along left jawline. Wearing slate gray Ferrogate Transit polo shirt with sleeves pushed up exposing polished steel neural interface faceplate on right forearm spanning wrist to mid-forearm with ports and etching, secondary temple jack visible at right temple. Dark undershirt visible, Ferrogate transit cap worn with nervous two-fingered adjustment tic. Kinetic posture mid-gesture with hands broad and expressive, weight shifting between feet. GLMZ 2200s underground transit station aesthetic, neon accent lighting catching bioluminescent hair gradient and interface steel, fluorescent overhead strips creating shadows across angular face, worn maintenance-grade synthetic cargo pants visible, zero-g work boots, canvas shoulder bag, transit cable scrap bracelet. Mood tense, restless energy, someone unable to settle into stillness. Atmospheric depth-of-field with blurred station corridor background. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  45.6,
+                             "Hispanic/Latin American":  19.9,
+                             "Sub-Saharan African":  11.4,
+                             "Northern European":  10.7,
+                             "East Asian":  6.9,
+                             "Eastern European":  5.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Emirati":  45.6
+                                                                 }
+                                               },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Brazilian":  10.9
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  9
+                                                                        }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  3.7,
+                                                                                 "Zambian":  1.3
+                                                                             },
+                                                        "East African":  {
+                                                                             "Tanzanian":  6.4
+                                                                         }
+                                                    },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  4.4
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "German":  6.3
+                                                                   }
+                                                  },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Shanghainese":  4.5,
+                                                               "Cantonese":  2.4
+                                                           }
+                                           },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  1.6,
+                                                                             "Romanian":  0.8
+                                                                         },
+                                                     "Slavic South":  {
+                                                                          "Bosnian":  3.1
+                                                                      }
+                                                 }
+                        },
+    "tier":  "3"
 }

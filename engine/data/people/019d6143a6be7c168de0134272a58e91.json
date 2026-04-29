@@ -1,326 +1,355 @@
-{
-  "id": "019d6143a6be7c168de0134272a58e91",
-  "type": "character",
-  "name": "Deka Petrović",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Prosthetics fitter and augmentation technician at a mid-tier Geartown workshop",
-  "age": 34,
-  "status": "active",
-  "location": "Geartown, the Spindle District — a workshop called Actual Bodies, near Damen and Armitage",
-  "description": "Deka Petrović is slight and precise, the kind of person whose hands do most of his communicating. He keeps his natural skin — a warm medium brown with undertones that shift gold in good light — completely unmodified, which is unusual for someone in his trade and which he is mildly defensive about if asked. His one concession to the aesthetic of his work is his eyes: he had his irises replaced with calibration-pattern models that display a rotating set of geometric markers he can use as a reference grid when fitting prosthetics. They're beautiful and faintly unsettling, like looking into a targeting system. His hair is cut close on the sides with a soft, loose top he doesn't style — it does what it does.\n\nHe is a craftsman in the old sense, genuinely invested in the fit and function of every limb, joint, and sensory prosthetic that leaves his workshop. He talks to his clients at length before he touches a measurement tool, because he believes most fitters skip the conversation and produce limbs that technically work and practically don't. He is warm and disarming in consultation, a little awkward socially outside of that context — the shop is his native environment and he becomes vaguely uncertain when removed from it. He has a complicated relationship with his own body and its wholeness that he has never examined closely enough to name.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.6,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "fitting something that fails and injures a client",
-      "that his care for his clients is a substitute for something he can't name"
-    ],
-    "core_desires": [
-      "to be recognized as a craftsman, not just a technician",
-      "genuine intimacy — which he consistently mistakes for professional investment"
-    ],
-    "coping_mechanisms": [
-      "losing himself in technical problems",
-      "extremely detailed journaling about client cases that gradually becomes extremely detailed journaling about his own feelings, disguised as client notes"
-    ],
-    "blind_spots": [
-      "he does not recognize that his preference for unmodified skin is connected to a fear of his own vulnerability, not aesthetic choice",
-      "he assumes that because he listens well professionally, he listens well personally — he does not"
-    ],
-    "secret": "His younger sister lost an arm in an industrial accident at Ferrogate Transit and refused any prosthetic. He became a prosthetics fitter specifically to understand why someone would make that choice. He has never asked her directly. He still doesn't understand."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical precision in his domain; outside it, he reaches for technical language to describe emotional things, which lands oddly",
-    "cadence": "Measured and unhurried in consultations; slightly too fast when nervous, which mostly happens outside the shop",
-    "verbal_tics": [
-      "'Let me understand what you're actually describing—'",
-      "Long pauses before answering personal questions, as if running a diagnostic"
-    ],
-    "example_lines": [
-      "The grade-three neural socket is the technically correct option. But I want you to tell me what your mornings look like before we decide anything.",
-      "It's not about matching what you had. It's about fitting what you are now. Those aren't the same body.",
-      "I'm — yeah. I don't know. Outside of here I give bad answers. Ask me something about torque calibration."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client came in with a prosthetic limb that contains something that wasn't there when it was installed — and they didn't put it there",
-    "His sister has reappeared in his life after years of distance, and she needs something he doesn't know if he can give",
-    "A Ferrogate Transit official is pressuring him to report on a specific client's augmentation records"
-  ],
-  "narrative_function": "Service provider and information source for augmentation-adjacent matters; character who humanizes the prosthetics trade; potential emotional complication for characters dealing with body modification or loss",
-  "augmentations": "Calibration-pattern prosthetic irises; fine-motor enhancement mesh in both hands (proprioceptive, not strength — makes him feel where things are joining)",
-  "daily_life": "He opens the shop at 0800, takes consultations in the morning and does fittings and calibration work in the afternoon. He stays late most nights fine-tuning components, eating noodles from a place two doors down, and listening to music he describes as 'structural.'",
-  "affiliation": "Actual Bodies workshop (independent, Tier 3); informal referral relationship with Aurochs Medical Complex's rehabilitation unit",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 6,
-      "creativity": 7,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 7,
-      "expression": 5,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "craftsman",
-      "prosthetics specialist",
-      "geartown",
-      "emotionally sideways",
-      "technically excellent"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "A client's functional needs take precedence over aesthetic preferences — his own or theirs",
-      "He will not install anything he cannot verify the provenance of",
-      "He does not give discounts but he does give payment plans, and he does not chase people who fall behind"
-    ],
-    "escalation_ladder": [
-      "Careful, clarifying questions",
-      "Naming what he observes without judgment",
-      "A very quiet, very firm refusal that does not invite further discussion"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally warm, slightly formal; defaults to the client-consultation mode because it's safe and he's good at it",
-      "friends": "Genuinely present but emotionally a little sideways; expresses care through doing things rather than saying them"
-    },
-    "stress_responses": {
-      "low": "Focuses more intently on whatever he's working on",
-      "medium": "Goes silent and methodical; responds to questions with single sentences",
-      "high": "Leaves the room — physically removes himself to do something with his hands, returns when regulated"
-    },
-    "contradictions": [
-      "He is deeply invested in helping people integrate augmented parts into their sense of self, while refusing to examine his own relationship to augmentation and wholeness"
-    ],
-    "habits": [
-      "Runs his thumb along the seam of any prosthetic joint he passes, checking fit by reflex",
-      "Eats the same meal from the same place every weeknight",
-      "Talks to the shop's resident E.L.F. — a minor spirit he calls the Calibrator — before difficult fittings"
-    ],
-    "breaking_points": [
-      "A fitting failure that causes harm",
-      "Someone deliberately misusing a client's prosthetic against them"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9,
-    "Liar": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Geartown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Geartown to a family of machinists",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Sister's arm lost in a Ferrogate Transit warehouse accident",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began apprenticeship in prosthetics fitting, ostensibly for career reasons",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Opened Actual Bodies with a small inheritance and a large loan",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Established referral relationship with Aurochs Medical Complex rehabilitation unit",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
-    "Crucible Industries Composite Kukri CK-7 'Gurkha'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "TESSERA TX-0 'Mimic'",
-    "Ferrogate Transit",
-    "Geartown",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Pure Hand",
-    "Gold"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Complex Pan-Global heritage: Predominantly Indigenous American (34.6%) with significant Eastern European (31.2%) and East Asian (14.3%) ancestry, complemented by Sub-Saharan African (10.9%), South Asian (5.4%), and Pacific Islander (3.6%) lineage. The result is a richly blended phenotype reflecting the Ubiquitous Diaspora—high cheekbones and defined jawline from Indigenous and East Asian ancestry, warm undertone depth from African and South Asian heritage, and fine facial structure enhanced by Eastern European bloodline. Pacific Islander ancestry adds subtle breadth to facial structure and warm richness to skin undertones.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Slight and precise, almost wiry, with the particular tenseness of someone whose work demands millimeter-scale control. Minimal upper body mass but defined in the forearms and hands. No wasted volume anywhere.",
-    "hair_color": "Natural dark brown, warm undertone",
-    "hair_style": "Close-cropped on sides, soft loose crown left unstyled and slightly tousled",
-    "hair_length": "Short",
-    "eye_color": "Prosthetic calibration-pattern irises — geometric markers in concentric rings of matte black and reflective silver, continuously rotating. The effect is faintly hypnotic and distinctly inhuman despite residing in otherwise ordinary brown eyes.",
-    "skin_tone": "Warm medium-deep brown with golden and amber undertones, the blended result of Indigenous American, Eastern European, East Asian, Sub-Saharan African, South Asian, and Pacific Islander heritage creating luminous depth that catches in natural light. Completely unmodified and unmarked.",
-    "complexion": "Clear, well-maintained skin with a fine-boned face showing the angular cheekbones and defined jaw characteristic of the Indigenous American and East Asian blend, softened by Eastern European, African, and South Asian heritage. Expression defaults to slight focus, as though mentally rotating fine tolerances. When engaged in consultation, face softens noticeably. Minimal grooming beyond functional necessity — no jewelry, no visible styling products.",
-    "distinguishing_marks": [
-      "Faint callus pattern across fingertips and inner palms from decades of precision manipulation and calibration work.",
-      "Barely visible micro-scarring along the knuckles of both hands where proprioceptive mesh was installed — thin white lines now almost flesh-tone, visible only in certain light."
-    ],
-    "visible_augmentations": "Calibration-pattern prosthetic irises (continuously visible, deliberately kept as the only aesthetic modification). Fine-motor enhancement mesh in both hands is subcutaneous and invisible at a distance, but close observation reveals subtle structural differences in hand articulation and an odd stillness to his fingers when at rest — they move with unnatural precision when working.",
-    "posture_movement": "Stands with shoulders slightly forward, weight often on one foot as though ready to lean into work. Hands are never quite still — fidgeting with small objects, making minute adjustments to nearby items. Moves economically, no excess motion. In his workshop, fluid and confident; outside of it, slightly contracted, as though operating on lower power.",
-    "clothing_style": "Tier 3 workshop standard: reinforced cotton work pants (usually dark, often dusted with metal shavings), fitted long-sleeve shirts in neutral tones that allow precise arm movement, sturdy ankle boots with good ankle support for standing all day. A worn canvas apron with deep pockets for calipers, measurement tools, and small components — pockets worn soft from years of use. No logos or status markers. Everything functional, nothing decorative. Occasionally a lightweight overshirt when the workshop ambient temp drops."
-  },
-  "image_prompt": "Deka Petrović, precision calibration technician, GLMZ 2226. 168cm wiry build, warm medium-deep golden-brown skin blending Indigenous American, Eastern European, East Asian, Sub-Saharan African, South Asian, and Pacific Islander heritage. Angular high cheekbones, defined jawline, fine-boned face with clear complexion. Short dark brown tousled hair, close-cropped sides. Striking prosthetic eyes with rotating geometric black and silver calibration-pattern irises—hypnotic, inhuman. Hands showing faint callus patterns and micro-scarring from mesh installation. Wearing dark reinforced work pants, fitted neutral long-sleeve shirt allowing precise movement, sturdy ankle boots, worn canvas apron with deep tool pockets. Standing slightly forward, hands never quite still, fidgeting with small objects. Workshop setting, cool ambient light catching golden undertones in skin. Economical posture, focused expression, operational precision. GLMZ 2200s precision engineer aesthetic, functional and worn. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Indigenous American": 34.6,
-    "Eastern European": 31.2,
-    "East Asian": 14.3,
-    "Sub-Saharan African": 10.9,
-    "South Asian": 5.4,
-    "Pacific Islander": 3.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Indigenous American": {
-      "Andean": {
-        "Mapuche": 11,
-        "Aymara": 3
-      },
-      "Great Lakes Nations": {
-        "Menominee": 17.6
-      },
-      "Mesoamerican": {
-        "Maya": 2.6,
-        "Nahua": 0.4
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 31.2
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 14.3
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 10.9
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 5.4
-      }
-    },
-    "Pacific Islander": {
-      "Melanesian": {
-        "Fijian": 1.3
-      },
-      "Micronesian": {
-        "Kiribati": 0.1,
-        "Palauan": 0.4
-      },
-      "Polynesian": {
-        "Tuvaluan": 1.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6be7c168de0134272a58e91",
+    "type":  "character",
+    "name":  "Deka PetroviÄ‡",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Prosthetics fitter and augmentation technician at a mid-tier Geartown workshop",
+    "age":  34,
+    "status":  "active",
+    "location":  "Geartown, the Spindle District â€” a workshop called Actual Bodies, near Damen and Armitage",
+    "description":  "Deka PetroviÄ‡ is slight and precise, the kind of person whose hands do most of his communicating. He keeps his natural skin â€” a warm medium brown with undertones that shift gold in good light â€” completely unmodified, which is unusual for someone in his trade and which he is mildly defensive about if asked. His one concession to the aesthetic of his work is his eyes: he had his irises replaced with calibration-pattern models that display a rotating set of geometric markers he can use as a reference grid when fitting prosthetics. They\u0027re beautiful and faintly unsettling, like looking into a targeting system. His hair is cut close on the sides with a soft, loose top he doesn\u0027t style â€” it does what it does.\n\nHe is a craftsman in the old sense, genuinely invested in the fit and function of every limb, joint, and sensory prosthetic that leaves his workshop. He talks to his clients at length before he touches a measurement tool, because he believes most fitters skip the conversation and produce limbs that technically work and practically don\u0027t. He is warm and disarming in consultation, a little awkward socially outside of that context â€” the shop is his native environment and he becomes vaguely uncertain when removed from it. He has a complicated relationship with his own body and its wholeness that he has never examined closely enough to name.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "fitting something that fails and injures a client",
+                                          "that his care for his clients is a substitute for something he can\u0027t name"
+                                      ],
+                       "core_desires":  [
+                                            "to be recognized as a craftsman, not just a technician",
+                                            "genuine intimacy â€” which he consistently mistakes for professional investment"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "losing himself in technical problems",
+                                                 "extremely detailed journaling about client cases that gradually becomes extremely detailed journaling about his own feelings, disguised as client notes"
+                                             ],
+                       "blind_spots":  [
+                                           "he does not recognize that his preference for unmodified skin is connected to a fear of his own vulnerability, not aesthetic choice",
+                                           "he assumes that because he listens well professionally, he listens well personally â€” he does not"
+                                       ],
+                       "secret":  "His younger sister lost an arm in an industrial accident at Ferrogate Transit and refused any prosthetic. He became a prosthetics fitter specifically to understand why someone would make that choice. He has never asked her directly. He still doesn\u0027t understand."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical precision in his domain; outside it, he reaches for technical language to describe emotional things, which lands oddly",
+                            "cadence":  "Measured and unhurried in consultations; slightly too fast when nervous, which mostly happens outside the shop",
+                            "verbal_tics":  [
+                                                "\u0027Let me understand what you\u0027re actually describingâ€”\u0027",
+                                                "Long pauses before answering personal questions, as if running a diagnostic"
+                                            ],
+                            "example_lines":  [
+                                                  "The grade-three neural socket is the technically correct option. But I want you to tell me what your mornings look like before we decide anything.",
+                                                  "It\u0027s not about matching what you had. It\u0027s about fitting what you are now. Those aren\u0027t the same body.",
+                                                  "I\u0027m â€” yeah. I don\u0027t know. Outside of here I give bad answers. Ask me something about torque calibration."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client came in with a prosthetic limb that contains something that wasn\u0027t there when it was installed â€” and they didn\u0027t put it there",
+                        "His sister has reappeared in his life after years of distance, and she needs something he doesn\u0027t know if he can give",
+                        "A Ferrogate Transit official is pressuring him to report on a specific client\u0027s augmentation records"
+                    ],
+    "narrative_function":  "Service provider and information source for augmentation-adjacent matters; character who humanizes the prosthetics trade; potential emotional complication for characters dealing with body modification or loss",
+    "augmentations":  "Calibration-pattern prosthetic irises; fine-motor enhancement mesh in both hands (proprioceptive, not strength â€” makes him feel where things are joining)",
+    "daily_life":  "He opens the shop at 0800, takes consultations in the morning and does fittings and calibration work in the afternoon. He stays late most nights fine-tuning components, eating noodles from a place two doors down, and listening to music he describes as \u0027structural.\u0027",
+    "affiliation":  "Actual Bodies workshop (independent, Tier 3); informal referral relationship with Aurochs Medical Complex\u0027s rehabilitation unit",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  6,
+                                 "creativity":  7,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  7,
+                                 "expression":  5,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "craftsman",
+                               "prosthetics specialist",
+                               "geartown",
+                               "emotionally sideways",
+                               "technically excellent"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "A client\u0027s functional needs take precedence over aesthetic preferences â€” his own or theirs",
+                                              "He will not install anything he cannot verify the provenance of",
+                                              "He does not give discounts but he does give payment plans, and he does not chase people who fall behind"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Careful, clarifying questions",
+                                                 "Naming what he observes without judgment",
+                                                 "A very quiet, very firm refusal that does not invite further discussion"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally warm, slightly formal; defaults to the client-consultation mode because it\u0027s safe and he\u0027s good at it",
+                                                   "friends":  "Genuinely present but emotionally a little sideways; expresses care through doing things rather than saying them"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Focuses more intently on whatever he\u0027s working on",
+                                                "medium":  "Goes silent and methodical; responds to questions with single sentences",
+                                                "high":  "Leaves the room â€” physically removes himself to do something with his hands, returns when regulated"
+                                            },
+                       "contradictions":  [
+                                              "He is deeply invested in helping people integrate augmented parts into their sense of self, while refusing to examine his own relationship to augmentation and wholeness"
+                                          ],
+                       "habits":  [
+                                      "Runs his thumb along the seam of any prosthetic joint he passes, checking fit by reflex",
+                                      "Eats the same meal from the same place every weeknight",
+                                      "Talks to the shop\u0027s resident E.L.F. â€” a minor spirit he calls the Calibrator â€” before difficult fittings"
+                                  ],
+                       "breaking_points":  [
+                                               "A fitting failure that causes harm",
+                                               "Someone deliberately misusing a client\u0027s prosthetic against them"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9,
+                       "Liar":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Geartown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Geartown to a family of machinists",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Sister\u0027s arm lost in a Ferrogate Transit warehouse accident",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began apprenticeship in prosthetics fitting, ostensibly for career reasons",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Opened Actual Bodies with a small inheritance and a large loan",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Established referral relationship with Aurochs Medical Complex rehabilitation unit",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027",
+                            "Crucible Industries Composite Kukri CK-7 \u0027Gurkha\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "TESSERA TX-0 \u0027Mimic\u0027",
+                             "Ferrogate Transit",
+                             "Geartown",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "The Pure Hand",
+                             "Gold"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Complex Pan-Global heritage: Predominantly Indigenous American (34.6%) with significant Eastern European (31.2%) and East Asian (14.3%) ancestry, complemented by Sub-Saharan African (10.9%), South Asian (5.4%), and Pacific Islander (3.6%) lineage. The result is a richly blended phenotype reflecting the Ubiquitous Diasporaâ€”high cheekbones and defined jawline from Indigenous and East Asian ancestry, warm undertone depth from African and South Asian heritage, and fine facial structure enhanced by Eastern European bloodline. Pacific Islander ancestry adds subtle breadth to facial structure and warm richness to skin undertones.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Slight and precise, almost wiry, with the particular tenseness of someone whose work demands millimeter-scale control. Minimal upper body mass but defined in the forearms and hands. No wasted volume anywhere.",
+                                 "hair_color":  "Natural dark brown, warm undertone",
+                                 "hair_style":  "Close-cropped on sides, soft loose crown left unstyled and slightly tousled",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Prosthetic calibration-pattern irises â€” geometric markers in concentric rings of matte black and reflective silver, continuously rotating. The effect is faintly hypnotic and distinctly inhuman despite residing in otherwise ordinary brown eyes.",
+                                 "skin_tone":  "Warm medium-deep brown with golden and amber undertones, the blended result of Indigenous American, Eastern European, East Asian, Sub-Saharan African, South Asian, and Pacific Islander heritage creating luminous depth that catches in natural light. Completely unmodified and unmarked.",
+                                 "complexion":  "Clear, well-maintained skin with a fine-boned face showing the angular cheekbones and defined jaw characteristic of the Indigenous American and East Asian blend, softened by Eastern European, African, and South Asian heritage. Expression defaults to slight focus, as though mentally rotating fine tolerances. When engaged in consultation, face softens noticeably. Minimal grooming beyond functional necessity â€” no jewelry, no visible styling products.",
+                                 "distinguishing_marks":  [
+                                                              "Faint callus pattern across fingertips and inner palms from decades of precision manipulation and calibration work.",
+                                                              "Barely visible micro-scarring along the knuckles of both hands where proprioceptive mesh was installed â€” thin white lines now almost flesh-tone, visible only in certain light."
+                                                          ],
+                                 "visible_augmentations":  "Calibration-pattern prosthetic irises (continuously visible, deliberately kept as the only aesthetic modification). Fine-motor enhancement mesh in both hands is subcutaneous and invisible at a distance, but close observation reveals subtle structural differences in hand articulation and an odd stillness to his fingers when at rest â€” they move with unnatural precision when working.",
+                                 "posture_movement":  "Stands with shoulders slightly forward, weight often on one foot as though ready to lean into work. Hands are never quite still â€” fidgeting with small objects, making minute adjustments to nearby items. Moves economically, no excess motion. In his workshop, fluid and confident; outside of it, slightly contracted, as though operating on lower power.",
+                                 "clothing_style":  "Tier 3 workshop standard: reinforced cotton work pants (usually dark, often dusted with metal shavings), fitted long-sleeve shirts in neutral tones that allow precise arm movement, sturdy ankle boots with good ankle support for standing all day. A worn canvas apron with deep pockets for calipers, measurement tools, and small components â€” pockets worn soft from years of use. No logos or status markers. Everything functional, nothing decorative. Occasionally a lightweight overshirt when the workshop ambient temp drops."
+                             },
+    "image_prompt":  "Deka PetroviÄ‡, precision calibration technician, GLMZ 2226. 168cm wiry build, warm medium-deep golden-brown skin blending Indigenous American, Eastern European, East Asian, Sub-Saharan African, South Asian, and Pacific Islander heritage. Angular high cheekbones, defined jawline, fine-boned face with clear complexion. Short dark brown tousled hair, close-cropped sides. Striking prosthetic eyes with rotating geometric black and silver calibration-pattern irisesâ€”hypnotic, inhuman. Hands showing faint callus patterns and micro-scarring from mesh installation. Wearing dark reinforced work pants, fitted neutral long-sleeve shirt allowing precise movement, sturdy ankle boots, worn canvas apron with deep tool pockets. Standing slightly forward, hands never quite still, fidgeting with small objects. Workshop setting, cool ambient light catching golden undertones in skin. Economical posture, focused expression, operational precision. GLMZ 2200s precision engineer aesthetic, functional and worn. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Indigenous American":  34.6,
+                             "Eastern European":  31.2,
+                             "East Asian":  14.3,
+                             "Sub-Saharan African":  10.9,
+                             "South Asian":  5.4,
+                             "Pacific Islander":  3.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Mapuche":  11,
+                                                                       "Aymara":  3
+                                                                   },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Menominee":  17.6
+                                                                                },
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  2.6,
+                                                                             "Nahua":  0.4
+                                                                         }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  31.2
+                                                                     }
+                                                 },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  14.3
+                                                            }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  10.9
+                                                                             }
+                                                    },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  5.4
+                                                           }
+                                            },
+                            "Pacific Islander":  {
+                                                     "Melanesian":  {
+                                                                        "Fijian":  1.3
+                                                                    },
+                                                     "Micronesian":  {
+                                                                         "Kiribati":  0.1,
+                                                                         "Palauan":  0.4
+                                                                     },
+                                                     "Polynesian":  {
+                                                                        "Tuvaluan":  1.8
+                                                                    }
+                                                 }
+                        },
+    "tier":  "3"
 }

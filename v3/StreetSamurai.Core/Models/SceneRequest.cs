@@ -7,7 +7,6 @@ public record SceneRequest
     public List<string> Characters { get; init; } = [];
     public List<string> Themes { get; init; } = [];
     public int NumBeats { get; init; } = 5;
-    public string? ForcedLeadFacet { get; init; }
 }
 
 public record GeneratedScene
@@ -23,8 +22,6 @@ public record GeneratedBeat
 {
     public int Index { get; init; }
     public string Goal { get; init; } = "";
-    public string LeadFacet { get; init; } = "";
-    public List<string> SupportingFacets { get; init; } = [];
     public string Text { get; init; } = "";
     public List<string> ContextTags { get; init; } = [];
     /// <summary>Canon issues detected by post-generation validation. Empty = clean.</summary>
@@ -36,6 +33,5 @@ public record BeatGenerationProgress
 {
     public int BeatIndex { get; init; }
     public int TotalBeats { get; init; }
-    public string LeadFacet { get; init; } = "";
     public string Status { get; init; } = "";
 }

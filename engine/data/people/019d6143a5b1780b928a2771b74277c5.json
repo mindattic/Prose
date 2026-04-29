@@ -1,324 +1,353 @@
-{
-  "id": "019d6143a5b1780b928a2771b74277c5",
-  "type": "character",
-  "name": "Chukwuka Ionescu-Mansour",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Wandering trader and caravan member",
-  "age": 41,
-  "status": "active",
-  "location": "Kenosha Crossing — semi-permanent pitch in the trader's row outside the main terminal, near beyond the Western Perimeter",
-  "description": "Chukwuka Ionescu-Mansour is compact and broad-shouldered, with the particular kind of physical confidence that comes from lifting, hauling, and setting up a market stall in hostile weather for twenty years. Their hair grows in a natural halo that they tint in slow-shifting colors — currently a deep green at the roots bleeding to copper at the tips — using a cheap geneware pigment mod that they refresh every three months at whichever clinic takes cash. Their skin is a warm medium brown covered in a patchwork of small tattoos that are actually a functional mnemonic system: inventory records, supplier codes, route notes, all written in a personal cipher directly on their forearms and the backs of their hands. They wear a coat with an absurd number of pockets, all of which are organized with a precision that would embarrass most archivists.\n\nChukwuka Ionescu-Mansour is sociable in the pure commercial sense — they can talk to anyone, find the common thread, make the sale — but there is a layer of genuine curiosity beneath the salesmanship that surprises people who expect only performance. They have been moving with the Kenosha-Escanaba-Waukegan caravan circuit for fifteen years, specializing in hard-to-source physical goods: specific medicines, particular machine components, seeds, analog media. They know supply and demand in the outer edges of GLMZ with an intimacy that no corporate logistics system can replicate, because they have walked it personally.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.6,
-      "id": 0.7,
-      "shadow": 0.4,
-      "mask": 0.5,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "The circuit dissolving — the caravan ending and with it the only community they have",
-      "That their knowledge of outer-edge supply chains will be absorbed and automated by a corponation, making them obsolete"
-    ],
-    "core_desires": [
-      "To build a permanent trade post — a fixed place that is theirs but also everyone's",
-      "To catalog everything: every route, every supplier, every community need, into something that outlasts them"
-    ],
-    "coping_mechanisms": [
-      "Constant activity and social engagement — idleness is where the hard thoughts live",
-      "Humor and storytelling as deflection and genuine connection simultaneously"
-    ],
-    "blind_spots": [
-      "Treats relationships like inventory — what do they supply, what do they need — and misses the people who simply want to be close to them without transactional framing",
-      "Underestimates how much they are depended upon, because dependency makes them feel trapped"
-    ],
-    "secret": "They have been quietly buying small parcels of land at Kenosha Crossing under a series of proxy names for eight years, slowly assembling the footprint for a permanent trade hall. They have told no one — not from secrecy but from superstition. Saying it aloud feels like it might break it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Rich, concrete, full of regional slang from half a dozen outer-edge communities. Loves specific nouns. Names things precisely.",
-    "cadence": "Warm and flowing in conversation, clipped and efficient in negotiation. Can switch between the two mid-sentence.",
-    "verbal_tics": [
-      "'What's it worth to you' as a genuine question as often as a commercial one",
-      "Pats their coat pockets while thinking",
-      "Ends descriptions with '— good quality, that'"
-    ],
-    "example_lines": [
-      "'I have three things you need and one thing you don't know you need yet. We'll start with the one you don't know.'",
-      "'The circuit doesn't have a home. The circuit is the home. That used to feel like enough.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A shipment of a specific medication they have been supplying to an outer-edge community has been intercepted — someone knows the circuit's route and is specifically targeting this cargo",
-    "One of their land proxy purchases has attracted the attention of a Tessera real estate arm that wants the same parcel for a logistics depot",
-    "A new caravan member is clearly not a trader — Ametsuchi has catalogued the inconsistencies and needs to decide what to do about it"
-  ],
-  "narrative_function": "Source of rare and hard-to-find goods. Information broker in the practical sense — they know what is scarce where, which means they know what is happening in a dozen locations. Connector between isolated communities. Can provide equipment, medicine, or supplies that official channels do not carry.",
-  "augmentations": "Geneware: hair pigment shifting mod (cheap, refills required). One functional aug: a tactile sensitivity enhancement in the fingertips that helps them assess material quality — cloth, metal, grain — by touch.",
-  "daily_life": "Sets up their pitch before dawn, operates through trading hours, spends evenings cataloguing inventory in their personal cipher and networking with other traders. Moves with the circuit on a three-week rotation. Sleeps in a fitted berth in a shared caravan transport vehicle.",
-  "affiliation": "The Kenosha-Escanaba Circuit — an informal caravan collective of about thirty traders who coordinate routes and security",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 7,
-      "vitality": 7,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 6,
-      "creativity": 7,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 8,
-      "expression": 8,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": 2,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "trader",
-      "community hub",
-      "information node",
-      "practically generous",
-      "long game player"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Price is always negotiable but quality is not — they will not sell something they know to be unsafe regardless of the offer",
-      "Circuit loyalty above personal profit — if a caravan member needs something, they get it at cost"
-    ],
-    "escalation_ladder": [
-      "Negotiates — finds the version of the situation where everyone gets something",
-      "Names the problem directly and proposes a specific resolution",
-      "Withdraws the offer entirely and moves the pitch",
-      "Calls a circuit council — makes the problem communal",
-      "Breaks trade relationship permanently with no drama, just cessation"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Open, warm, immediately curious — asks what they need and works from there",
-      "friends": "Deeply loyal, remembers everything, shows up with the specific thing that was needed three weeks ago"
-    },
-    "stress_responses": {
-      "low": "Becomes very focused and businesslike — strips out the warmth temporarily",
-      "medium": "Goes quiet in conversation but physically more active — reorganizes stock, checks inventory",
-      "high": "Makes a large, generous gesture to someone else — redirects the stress into care"
-    },
-    "contradictions": [
-      "Prizes community above everything but is fundamentally a solitary operator",
-      "Generous to the point of self-sacrifice with goods, emotionally withholding with vulnerability"
-    ],
-    "habits": [
-      "Traces their tattoo inventory cipher with one finger when mentally calculating",
-      "Always carries and offers tea — a small camp stove lives in the coat",
-      "Prays to the E.L.F. known at Kenosha Crossing as 'the Ledger' — leaves neat handwritten tallies as offerings"
-    ],
-    "breaking_points": [
-      "Someone harming a circuit member",
-      "Being lied to about what something is actually for after they've provided it"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.7,
-    "Nurturer": 0.6,
-    "Provider": 0.6,
-    "Bleeding Heart": 0.6
-  },
-  "operating_territory": {
-    "home_turf": "Kenosha Crossing",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2159 — Born in Kenosha Crossing to a family of seasonal dock workers",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2177 — Joins the circuit as a junior caravan member, running small goods",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2181 — Takes over a retiring trader's pitch and inventory list, begins building the Catalogue reputation",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2192 — Begins anonymous land purchases at Kenosha Crossing",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Operates the most comprehensive single-trader inventory on the Kenosha-Escanaba-Waukegan circuit",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Dispatch-45 'Last Word'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Dispatch-45 'Last Word'"
-  ],
-  "related_entities": [
-    "Kenosha Crossing",
-    "The Circuit",
-    "NeuralPath Horizon Standard Neural Mesh",
-    "TESSERA ES-4 'Perimeter'",
-    "The Waukegan Industrial Shelf",
-    "The Gradient Compact",
-    "Tessera Corponation",
-    "Circuit",
-    "Copper",
-    "The Pure Hand",
-    "Cargo Tacos",
-    "GLMZ"
-  ],
-  "district": "The Wasteland",
-  "physical_description": {
-    "heritage": "True Ubiquitous Diaspora phenotype: Eastern European (25.9%), Middle Eastern (22.4%), East Asian (18.3%), South Asian (14.3%), Sub-Saharan African (9.9%), Northern European (9.2%). The genetic blend creates a striking multifaceted appearance — warm medium-brown skin with golden-amber undertones that deepen to rich sienna in sun-exposed areas, creating luminous depth across cheekbones and the bridge of nose. Facial architecture displays the prominent, angular cheekbones of Eastern European-Central Asian ancestry paired with the characteristic alert eye-set and slightly wider face structure of East Asian genetics. The nasal bridge is broad and refined, reflecting the blend of Middle Eastern, South Asian, and African heritage. Fuller lips and strong jaw definition create a face that resists easy categorization — genuinely global in its proportions and feature integration, bearing the weathered markers of outdoor labor across multiple climates.",
-    "height_cm": 164,
-    "weight_kg": 68,
-    "build": "Compact and broad-shouldered, densely muscled from two decades of manual labor — lifting cargo, assembling stalls in wind and cold. No excess weight; functional frame built for endurance and sustained physical work rather than speed.",
-    "hair_color": "Natural black at roots, geneware-modified to deep forest green bleeding into oxidized copper at the tips",
-    "hair_style": "Natural textured halo, shoulder-length, kept loose and full",
-    "hair_length": "Medium to Long",
-    "eye_color": "Dark brown, alert and constantly cataloguing",
-    "skin_tone": "Warm medium-brown with golden-amber undertones deepening to sienna in sun-exposed areas, darkened from constant outdoor exposure across decades, luminous depth reflecting the balanced continental blend. Golden cast most visible on high cheekbones and bridge of nose, warmer sienna tones along jawline and temple.",
-    "complexion": "Weathered from constant outdoor exposure — sun-darkened with fine lines around the eyes and mouth from two decades of squinting in bright light and smiling through negotiations. Facial structure displays the prominent, angular cheekbones characteristic of Eastern European genetics, paired with the defined eye-set geometry of East Asian ancestry, broad nasal bridge reflecting Middle Eastern and South Asian heritage, strong jaw definition. Skin texture is lived-in and sun-marked, bearing the patina of someone working through seasons without excess skincare protocols. No facial scars. Minor laugh lines around eyes and mouth from decades of outdoor work and trading negotiations.",
-    "distinguishing_marks": [
-      "Both forearms covered in dense, small cipher tattoos in black ink — inventory codes, supplier identifiers, route waypoints, all in a personal notation system legible only to Chukwuka and perhaps a handful of trusted circuit members",
-      "Backs of both hands tattooed with active supply codes updated roughly quarterly, newer ink slightly raised and more vibrant than older work",
-      "Thin white scar running from left wrist to mid-forearm, approximately 8 centimeters, consistent with a deep cut from sharp metal — old injury, well-healed",
-      "Small burn mark on right shoulder blade visible only when shirtless, roughly circular, 2-3 centimeters diameter, suggests stove or industrial contact from at least a decade ago"
-    ],
-    "visible_augmentations": "Hair pigment geneware modification is the only visible augmentation — the slow color shift from black to forest green to copper is subtle enough to pass for natural variation at casual glance, but obvious under direct light. Fingertip tactile enhancement is subcutaneous and invisible, leaving no visible marking. Wear on fingertips slightly more pronounced than typical from constant material assessment.",
-    "posture_movement": "Moves with economic efficiency — no wasted motion, but not rigid or militaristic. Stands with weight balanced evenly, ready to shift in any direction. Leans forward slightly when listening, especially during negotiation or when genuinely curious. Hands move constantly in conversation: gesturing, demonstrating material qualities, punctuating points. When stationary at their pitch, posture is grounded and stable — the stance of someone who will not be moved.",
-    "clothing_style": "Wears a heavily modified canvas and synth-blend coat (Tier 3-4 quality, well-maintained) with an extraordinary number of pockets, each organized with obsessive precision — estimated 15-20 pockets total, some nested, some reinforced with additional stitching. Underneath: simple, practical layers appropriate to season — usually a fitted base layer and a loose overshirt in earth tones or muted colors that won't show stains. Cargo pants with numerous utility pockets, preferring function over fashion. Boots are heavy-duty, often scuffed and clearly resoled multiple times — no corporate branding, generic utility grade. Wears a heavy canvas apron when actively trading, stained with years of handling goods. Personal adornment minimal: a simple metal ring on left hand (possibly a relationship marker), no neck jewelry. Overall aesthetic is Tier 4 working trader — clearly not wealthy, but equipped with the precision of someone who has refined their kit over decades."
-  },
-  "image_prompt": "Chukwuka Ionescu-Mansour, compact 164cm figure with broad shoulders and dense work-muscle, stands at an outdoor trading pitch in the GLMZ 2226. Warm medium-brown skin with golden-amber undertones and sienna sun-darkening, luminous across high cheekbones and prominent bridge of nose. Sharp Eastern European cheekbones, alert East Asian eye-set, broad refined nasal bridge — genuinely global facial architecture. Dark brown alert eyes, weathered face with laugh lines from decades of negotiations and outdoor work. Shoulder-length natural textured black hair bleeding into deep forest green and oxidized copper at tips from geneware modification, loose halo style. Forearms and back of hands covered in dense black cipher tattoos — inventory codes and supply markers. Thin white scar on left forearm, alert posture. Wearing heavily modified canvas and synth-blend coat with 15-20 organized pockets, earth-tone layers underneath, cargo pants, resoled utility boots. Heavy canvas trading apron stained from years of goods handling. Simple metal ring on left hand. Economic efficient movement, grounded stable stance. Neo-noir trader aesthetic, weathered and precise. Overcast trading floor lighting catching golden undertones on cheekbones. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 25.9,
-    "Middle Eastern": 22.4,
-    "East Asian": 18.3,
-    "South Asian": 14.3,
-    "Sub-Saharan African": 9.9,
-    "Northern European": 9.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Slavic East": {
-        "Russian": 6.3,
-        "Ukrainian": 4.9
-      },
-      "Slavic West": {
-        "Sorbian": 14.7
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Afghan Dari": 21.1,
-        "Tajik Persian": 1.3
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 18.3
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 9.1
-      },
-      "Pakistani": {
-        "Sindhi": 2.8
-      },
-      "Indian": {
-        "Bengali": 1.8,
-        "Tamil": 0.6
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Ugandan": 5.8
-      },
-      "Southern African": {
-        "Botswanan": 4.1
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Irish": 6.6
-      },
-      "Scandinavian": {
-        "Swedish": 2
-      },
-      "Germanic": {
-        "Dutch": 0.3,
-        "Swiss German": 0.3
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5b1780b928a2771b74277c5",
+    "type":  "character",
+    "name":  "Chukwuka Ionescu-Mansour",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Wandering trader and caravan member",
+    "age":  41,
+    "status":  "active",
+    "location":  "Kenosha Crossing â€” semi-permanent pitch in the trader\u0027s row outside the main terminal, near beyond the Western Perimeter",
+    "description":  "Chukwuka Ionescu-Mansour is compact and broad-shouldered, with the particular kind of physical confidence that comes from lifting, hauling, and setting up a market stall in hostile weather for twenty years. Their hair grows in a natural halo that they tint in slow-shifting colors â€” currently a deep green at the roots bleeding to copper at the tips â€” using a cheap geneware pigment mod that they refresh every three months at whichever clinic takes cash. Their skin is a warm medium brown covered in a patchwork of small tattoos that are actually a functional mnemonic system: inventory records, supplier codes, route notes, all written in a personal cipher directly on their forearms and the backs of their hands. They wear a coat with an absurd number of pockets, all of which are organized with a precision that would embarrass most archivists.\n\nChukwuka Ionescu-Mansour is sociable in the pure commercial sense â€” they can talk to anyone, find the common thread, make the sale â€” but there is a layer of genuine curiosity beneath the salesmanship that surprises people who expect only performance. They have been moving with the Kenosha-Escanaba-Waukegan caravan circuit for fifteen years, specializing in hard-to-source physical goods: specific medicines, particular machine components, seeds, analog media. They know supply and demand in the outer edges of GLMZ with an intimacy that no corporate logistics system can replicate, because they have walked it personally.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "The circuit dissolving â€” the caravan ending and with it the only community they have",
+                                          "That their knowledge of outer-edge supply chains will be absorbed and automated by a corponation, making them obsolete"
+                                      ],
+                       "core_desires":  [
+                                            "To build a permanent trade post â€” a fixed place that is theirs but also everyone\u0027s",
+                                            "To catalog everything: every route, every supplier, every community need, into something that outlasts them"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Constant activity and social engagement â€” idleness is where the hard thoughts live",
+                                                 "Humor and storytelling as deflection and genuine connection simultaneously"
+                                             ],
+                       "blind_spots":  [
+                                           "Treats relationships like inventory â€” what do they supply, what do they need â€” and misses the people who simply want to be close to them without transactional framing",
+                                           "Underestimates how much they are depended upon, because dependency makes them feel trapped"
+                                       ],
+                       "secret":  "They have been quietly buying small parcels of land at Kenosha Crossing under a series of proxy names for eight years, slowly assembling the footprint for a permanent trade hall. They have told no one â€” not from secrecy but from superstition. Saying it aloud feels like it might break it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Rich, concrete, full of regional slang from half a dozen outer-edge communities. Loves specific nouns. Names things precisely.",
+                            "cadence":  "Warm and flowing in conversation, clipped and efficient in negotiation. Can switch between the two mid-sentence.",
+                            "verbal_tics":  [
+                                                "\u0027What\u0027s it worth to you\u0027 as a genuine question as often as a commercial one",
+                                                "Pats their coat pockets while thinking",
+                                                "Ends descriptions with \u0027â€” good quality, that\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I have three things you need and one thing you don\u0027t know you need yet. We\u0027ll start with the one you don\u0027t know.\u0027",
+                                                  "\u0027The circuit doesn\u0027t have a home. The circuit is the home. That used to feel like enough.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A shipment of a specific medication they have been supplying to an outer-edge community has been intercepted â€” someone knows the circuit\u0027s route and is specifically targeting this cargo",
+                        "One of their land proxy purchases has attracted the attention of a Tessera real estate arm that wants the same parcel for a logistics depot",
+                        "A new caravan member is clearly not a trader â€” Ametsuchi has catalogued the inconsistencies and needs to decide what to do about it"
+                    ],
+    "narrative_function":  "Source of rare and hard-to-find goods. Information broker in the practical sense â€” they know what is scarce where, which means they know what is happening in a dozen locations. Connector between isolated communities. Can provide equipment, medicine, or supplies that official channels do not carry.",
+    "augmentations":  "Geneware: hair pigment shifting mod (cheap, refills required). One functional aug: a tactile sensitivity enhancement in the fingertips that helps them assess material quality â€” cloth, metal, grain â€” by touch.",
+    "daily_life":  "Sets up their pitch before dawn, operates through trading hours, spends evenings cataloguing inventory in their personal cipher and networking with other traders. Moves with the circuit on a three-week rotation. Sleeps in a fitted berth in a shared caravan transport vehicle.",
+    "affiliation":  "The Kenosha-Escanaba Circuit â€” an informal caravan collective of about thirty traders who coordinate routes and security",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  7,
+                                   "vitality":  7,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  6,
+                                 "creativity":  7,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  8,
+                                 "expression":  8,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "trader",
+                               "community hub",
+                               "information node",
+                               "practically generous",
+                               "long game player"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Price is always negotiable but quality is not â€” they will not sell something they know to be unsafe regardless of the offer",
+                                              "Circuit loyalty above personal profit â€” if a caravan member needs something, they get it at cost"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Negotiates â€” finds the version of the situation where everyone gets something",
+                                                 "Names the problem directly and proposes a specific resolution",
+                                                 "Withdraws the offer entirely and moves the pitch",
+                                                 "Calls a circuit council â€” makes the problem communal",
+                                                 "Breaks trade relationship permanently with no drama, just cessation"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Open, warm, immediately curious â€” asks what they need and works from there",
+                                                   "friends":  "Deeply loyal, remembers everything, shows up with the specific thing that was needed three weeks ago"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes very focused and businesslike â€” strips out the warmth temporarily",
+                                                "medium":  "Goes quiet in conversation but physically more active â€” reorganizes stock, checks inventory",
+                                                "high":  "Makes a large, generous gesture to someone else â€” redirects the stress into care"
+                                            },
+                       "contradictions":  [
+                                              "Prizes community above everything but is fundamentally a solitary operator",
+                                              "Generous to the point of self-sacrifice with goods, emotionally withholding with vulnerability"
+                                          ],
+                       "habits":  [
+                                      "Traces their tattoo inventory cipher with one finger when mentally calculating",
+                                      "Always carries and offers tea â€” a small camp stove lives in the coat",
+                                      "Prays to the E.L.F. known at Kenosha Crossing as \u0027the Ledger\u0027 â€” leaves neat handwritten tallies as offerings"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone harming a circuit member",
+                                               "Being lied to about what something is actually for after they\u0027ve provided it"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.7,
+                       "Nurturer":  0.6,
+                       "Provider":  0.6,
+                       "Bleeding Heart":  0.6
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Kenosha Crossing",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2159 â€” Born in Kenosha Crossing to a family of seasonal dock workers",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2177 â€” Joins the circuit as a junior caravan member, running small goods",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2181 â€” Takes over a retiring trader\u0027s pitch and inventory list, begins building the Catalogue reputation",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2192 â€” Begins anonymous land purchases at Kenosha Crossing",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Operates the most comprehensive single-trader inventory on the Kenosha-Escanaba-Waukegan circuit",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Dispatch-45 \u0027Last Word\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Dispatch-45 \u0027Last Word\u0027"
+                            ],
+    "related_entities":  [
+                             "Kenosha Crossing",
+                             "The Circuit",
+                             "NeuralPath Horizon Standard Neural Mesh",
+                             "TESSERA ES-4 \u0027Perimeter\u0027",
+                             "The Waukegan Industrial Shelf",
+                             "The Gradient Compact",
+                             "Tessera Corponation",
+                             "Circuit",
+                             "Copper",
+                             "The Pure Hand",
+                             "Cargo Tacos",
+                             "GLMZ"
+                         ],
+    "district":  "The Wasteland",
+    "physical_description":  {
+                                 "heritage":  "True Ubiquitous Diaspora phenotype: Eastern European (25.9%), Middle Eastern (22.4%), East Asian (18.3%), South Asian (14.3%), Sub-Saharan African (9.9%), Northern European (9.2%). The genetic blend creates a striking multifaceted appearance â€” warm medium-brown skin with golden-amber undertones that deepen to rich sienna in sun-exposed areas, creating luminous depth across cheekbones and the bridge of nose. Facial architecture displays the prominent, angular cheekbones of Eastern European-Central Asian ancestry paired with the characteristic alert eye-set and slightly wider face structure of East Asian genetics. The nasal bridge is broad and refined, reflecting the blend of Middle Eastern, South Asian, and African heritage. Fuller lips and strong jaw definition create a face that resists easy categorization â€” genuinely global in its proportions and feature integration, bearing the weathered markers of outdoor labor across multiple climates.",
+                                 "height_cm":  164,
+                                 "weight_kg":  68,
+                                 "build":  "Compact and broad-shouldered, densely muscled from two decades of manual labor â€” lifting cargo, assembling stalls in wind and cold. No excess weight; functional frame built for endurance and sustained physical work rather than speed.",
+                                 "hair_color":  "Natural black at roots, geneware-modified to deep forest green bleeding into oxidized copper at the tips",
+                                 "hair_style":  "Natural textured halo, shoulder-length, kept loose and full",
+                                 "hair_length":  "Medium to Long",
+                                 "eye_color":  "Dark brown, alert and constantly cataloguing",
+                                 "skin_tone":  "Warm medium-brown with golden-amber undertones deepening to sienna in sun-exposed areas, darkened from constant outdoor exposure across decades, luminous depth reflecting the balanced continental blend. Golden cast most visible on high cheekbones and bridge of nose, warmer sienna tones along jawline and temple.",
+                                 "complexion":  "Weathered from constant outdoor exposure â€” sun-darkened with fine lines around the eyes and mouth from two decades of squinting in bright light and smiling through negotiations. Facial structure displays the prominent, angular cheekbones characteristic of Eastern European genetics, paired with the defined eye-set geometry of East Asian ancestry, broad nasal bridge reflecting Middle Eastern and South Asian heritage, strong jaw definition. Skin texture is lived-in and sun-marked, bearing the patina of someone working through seasons without excess skincare protocols. No facial scars. Minor laugh lines around eyes and mouth from decades of outdoor work and trading negotiations.",
+                                 "distinguishing_marks":  [
+                                                              "Both forearms covered in dense, small cipher tattoos in black ink â€” inventory codes, supplier identifiers, route waypoints, all in a personal notation system legible only to Chukwuka and perhaps a handful of trusted circuit members",
+                                                              "Backs of both hands tattooed with active supply codes updated roughly quarterly, newer ink slightly raised and more vibrant than older work",
+                                                              "Thin white scar running from left wrist to mid-forearm, approximately 8 centimeters, consistent with a deep cut from sharp metal â€” old injury, well-healed",
+                                                              "Small burn mark on right shoulder blade visible only when shirtless, roughly circular, 2-3 centimeters diameter, suggests stove or industrial contact from at least a decade ago"
+                                                          ],
+                                 "visible_augmentations":  "Hair pigment geneware modification is the only visible augmentation â€” the slow color shift from black to forest green to copper is subtle enough to pass for natural variation at casual glance, but obvious under direct light. Fingertip tactile enhancement is subcutaneous and invisible, leaving no visible marking. Wear on fingertips slightly more pronounced than typical from constant material assessment.",
+                                 "posture_movement":  "Moves with economic efficiency â€” no wasted motion, but not rigid or militaristic. Stands with weight balanced evenly, ready to shift in any direction. Leans forward slightly when listening, especially during negotiation or when genuinely curious. Hands move constantly in conversation: gesturing, demonstrating material qualities, punctuating points. When stationary at their pitch, posture is grounded and stable â€” the stance of someone who will not be moved.",
+                                 "clothing_style":  "Wears a heavily modified canvas and synth-blend coat (Tier 3-4 quality, well-maintained) with an extraordinary number of pockets, each organized with obsessive precision â€” estimated 15-20 pockets total, some nested, some reinforced with additional stitching. Underneath: simple, practical layers appropriate to season â€” usually a fitted base layer and a loose overshirt in earth tones or muted colors that won\u0027t show stains. Cargo pants with numerous utility pockets, preferring function over fashion. Boots are heavy-duty, often scuffed and clearly resoled multiple times â€” no corporate branding, generic utility grade. Wears a heavy canvas apron when actively trading, stained with years of handling goods. Personal adornment minimal: a simple metal ring on left hand (possibly a relationship marker), no neck jewelry. Overall aesthetic is Tier 4 working trader â€” clearly not wealthy, but equipped with the precision of someone who has refined their kit over decades."
+                             },
+    "image_prompt":  "Chukwuka Ionescu-Mansour, compact 164cm figure with broad shoulders and dense work-muscle, stands at an outdoor trading pitch in the GLMZ 2226. Warm medium-brown skin with golden-amber undertones and sienna sun-darkening, luminous across high cheekbones and prominent bridge of nose. Sharp Eastern European cheekbones, alert East Asian eye-set, broad refined nasal bridge â€” genuinely global facial architecture. Dark brown alert eyes, weathered face with laugh lines from decades of negotiations and outdoor work. Shoulder-length natural textured black hair bleeding into deep forest green and oxidized copper at tips from geneware modification, loose halo style. Forearms and back of hands covered in dense black cipher tattoos â€” inventory codes and supply markers. Thin white scar on left forearm, alert posture. Wearing heavily modified canvas and synth-blend coat with 15-20 organized pockets, earth-tone layers underneath, cargo pants, resoled utility boots. Heavy canvas trading apron stained from years of goods handling. Simple metal ring on left hand. Economic efficient movement, grounded stable stance. Neo-noir trader aesthetic, weathered and precise. Overcast trading floor lighting catching golden undertones on cheekbones. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  25.9,
+                             "Middle Eastern":  22.4,
+                             "East Asian":  18.3,
+                             "South Asian":  14.3,
+                             "Sub-Saharan African":  9.9,
+                             "Northern European":  9.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Russian":  6.3,
+                                                                         "Ukrainian":  4.9
+                                                                     },
+                                                     "Slavic West":  {
+                                                                         "Sorbian":  14.7
+                                                                     }
+                                                 },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Afghan Dari":  21.1,
+                                                                   "Tajik Persian":  1.3
+                                                               }
+                                               },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  18.3
+                                                            }
+                                           },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  9.1
+                                                                },
+                                                "Pakistani":  {
+                                                                  "Sindhi":  2.8
+                                                              },
+                                                "Indian":  {
+                                                               "Bengali":  1.8,
+                                                               "Tamil":  0.6
+                                                           }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ugandan":  5.8
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Botswanan":  4.1
+                                                                             }
+                                                    },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  6.6
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  2
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "Dutch":  0.3,
+                                                                       "Swiss German":  0.3
+                                                                   }
+                                                  }
+                        },
+    "tier":  "2"
 }

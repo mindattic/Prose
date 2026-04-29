@@ -1,305 +1,326 @@
-{
-  "id": "019d6143a68675489dd7e6b86abc615e",
-  "type": "character",
-  "name": "Gloriana Traoré-Okonkwo-Fujiwara",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Unlicensed organ harvester and body-parts middleman working the Undertow",
-  "age": 29,
-  "status": "active",
-  "location": "The Undertow — operates out of a repurposed cold-storage unit under the Escanaba Gateway transit platform, near Wacker and State",
-  "description": "Gloriana Traoré-Okonkwo-Fujiwara is a lean, angular young man with medium-brown skin and cheekbones that cast hard shadows. His geneware manifests as a faint bioluminescent blue-green pattern along his jaw and collarbone — originally cosmetic, chosen when he was sixteen and thought he'd go into performance. He has a retractable claw mod on his right hand that he insists is also just cosmetic, though the precision of it is not. He keeps his head shaved and wears a standard-issue Ferrogate Transit worker vest that he's never actually worked for — the corponation ID is forged but it gets him past a lot of checkpoints without questions.\n\nGloriana Traoré-Okonkwo-Fujiwara has the particular nervous energy of someone who knows their work is illegal but has convinced himself it's also a public service — he talks about 'redistribution of biological resources' and 'closing the gap between who can afford Helix Biosystems and who can't.' He's not entirely wrong, and he's not entirely sincere. He's genuinely squeamish about pain, which creates an odd dissonance in his line of work, and he over-explains his anaesthetic protocols to anyone who will listen as proof of his ethics. He is terrified of becoming someone he wouldn't recognize.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.6,
-      "id": 0.5,
-      "shadow": 0.4,
-      "mask": 0.6,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "becoming indistinguishable from the people who harvest without consent",
-      "dying anonymously in his own cold-storage unit"
-    ],
-    "core_desires": [
-      "to be seen as someone who helps rather than harms",
-      "enough money to leave the Undertow permanently"
-    ],
-    "coping_mechanisms": [
-      "elaborate ethical frameworks that justify his work",
-      "fixating on procedural safety as a substitute for moral clarity"
-    ],
-    "blind_spots": [
-      "he is too willing to believe sellers consented freely when economic desperation makes consent meaningless",
-      "he underestimates how much of his supply chain he doesn't control"
-    ],
-    "secret": "Six months ago he harvested a kidney from a donor who he now suspects did not consent — the broker told him the paperwork was in order but the donor's terrified expression has never left him; he still has the Φ2,400 in a locked account he can't bring himself to spend"
-  },
-  "speech_patterns": {
-    "vocabulary": "Medical terminology used casually mixed with Undertow slang; over-explains processes; apologizes pre-emptively",
-    "cadence": "Fast and slightly breathless when nervous, which is often; slows dramatically when talking about procedure, like reciting a liturgy",
-    "verbal_tics": [
-      "'Ethically speaking—'",
-      "'The anaesthetic is pharmaceutical-grade, I want you to know that'",
-      "trails off mid-sentence when something bothers him"
-    ],
-    "example_lines": [
-      "Ethically speaking, a kidney on the Pale Market is still a kidney — it still works. Helix Biosystems charges forty thousand Φ for the same organ that I can get you for eight. Who's the criminal, really.",
-      "The cold-storage unit keeps everything viable for seventy-two hours. I want you to know I take that seriously. I take all of it seriously."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Orlan contacts the players because a piece of hardware he harvested has turned out to contain something — data, a tracker, a rare prototype — that very dangerous people want back",
-    "A community member in the Undertow is convinced Orlan harvested from their sibling without consent and wants answers or justice",
-    "Orlan needs help retrieving a shipment intercepted by a Ferrogate Transit security sweep — the manifest, if decoded, would expose his entire network"
-  ],
-  "narrative_function": "Morally complex source of medical resources and body-modification intel; quest giver for retrieval jobs; window into the underground medical economy; can be ally or antagonist depending on whose organ supply he's managing.",
-  "augmentations": "Bioluminescent jaw and collarbone pattern (geneware, cosmetic origin). Retractable precision claw — right index finger. Neural-haptic surgical overlay (black market, allows enhanced fine motor feedback during procedures).",
-  "daily_life": "Sleeps irregular hours in his cold-storage unit, monitors the Pale Market's procurement requests via encrypted channel, spends evenings in transit hubs scouting potential donors or buyers, occasionally takes legitimate medical courier jobs as cover.",
-  "affiliation": "Loosely connected to a procurement network called the Pale Market; no formal gang affiliation; The Undertow",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 5,
-      "creativity": 6,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 6,
-      "integrity": 4
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": -2,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "organ harvester",
-      "black market medic",
-      "moral rationalizer",
-      "transit system native",
-      "useful contact"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never harvest without at least the appearance of consent — he needs to believe the story",
-      "Keep cold-storage immaculate — cleanliness is the one standard he won't compromise",
-      "Run from any situation that feels like a setup rather than fight through it"
-    ],
-    "escalation_ladder": [
-      "Nervous deflection and topic-changing",
-      "Offer money or a trade to de-escalate",
-      "Invoke the Pale Market's implied protection as a threat",
-      "Run and disappear into the transit system",
-      "As last resort, use precision claw and surgical knowledge of anatomy in genuinely dangerous ways"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally warm but watchful, assesses everyone for their potential role in his supply chain within the first thirty seconds",
-      "friends": "Unexpectedly tender, brings food, asks too many questions about how people are feeling — starved for genuine connection"
-    },
-    "stress_responses": {
-      "low": "Begins narrating his own actions as if explaining a procedure to a student",
-      "medium": "Hands move to check his surgical kit out of habit even when it's not present",
-      "high": "Goes completely silent and begins calculating exits"
-    },
-    "contradictions": [
-      "Genuinely squeamish about pain while working in a field defined by it",
-      "Craves moral validation from the same people he puts in morally compromised situations"
-    ],
-    "habits": [
-      "Wipes surfaces down obsessively",
-      "Leaves small E.L.F. offerings at transit platform shrines — asks specifically for the spirit of the Escanaba line to look away"
-    ],
-    "breaking_points": [
-      "Incontrovertible proof that he harvested from an unwilling donor",
-      "Someone he cares about needing an organ he could source but can't justify sourcing"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Retractable precision claw — right index finger",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Retractable precision claw — right index finger",
-      "replaces": ""
-    },
-    {
-      "name": "Neural-haptic surgical overlay (black market grade)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Neural-haptic surgical overlay (black market grade)",
-      "replaces": ""
-    },
-    {
-      "name": "Bioluminescent jaw/collarbone geneware",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Bioluminescent jaw/collarbone geneware",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Undertow",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Helix Biosystems",
-    "Escanaba Gateway",
-    "The Undertow",
-    "Lacuna Genomics"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Sub-Saharan African foundation (56.8%) with significant Central Asian (19.2%) influence creating distinctive bone structure. Additional ancestry from East Asian (8.2%), Southeast Asian (6.6%), Hispanic/Latin American (5.1%), and North African (4.1%) heritage creates a complex phenotype: deep warm brown skin with golden and subtle warm undertones, high prominent cheekbones with Central Asian angularity, refined jawline structure, and eye geometry showing gentle East Asian influence with wider-set placement and subtle epicanthal character. A truly global genetic mosaic.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Lean and angular with minimal body fat; wiry musculature from years of precise manual work and nervous energy. Chest and shoulders slightly narrow, giving an ascetic appearance.",
-    "hair_color": "Black",
-    "hair_style": "Cleanly shaved scalp, maintained with regular precision; no facial hair.",
-    "hair_length": "Shaved",
-    "eye_color": "Dark brown, with faint neural-interface lag when he's processing encrypted data (pupils dilate irregularly).",
-    "skin_tone": "Deep warm brown with golden undertones from Sub-Saharan heritage, enriched by subtle Central Asian warmth and North African influence. Rich saturation that catches light with a luminous quality; the skin has a healthy, almost polished appearance despite chronic stress.",
-    "complexion": "High, prominent cheekbones characteristic of Sub-Saharan ancestry with generous facial width, refined by Central Asian structural angularity. Strong, defined jawline enhanced by the bone structure inheritance. Eye geometry reflects East Asian heritage—wider-set with gentle epicanthal fold—balanced against the broader Sub-Saharan facial proportions. Skin is clear but shows chronic sleep deprivation with faint purple undertones beneath eyes. Lips are full and well-defined, often pressed in concentration. Facial structure shows harmonious blending across all ancestry components.",
-    "distinguishing_marks": [
-      "Bioluminescent geneware pattern running along the left and right jawline in faint blue-green, brightest at the angles of the jaw and fading down the collarbone—dormant in daylight but visible in dim environments as a soft pulse that speeds when he's anxious.",
-      "Thin surgical scar running from the base of his right index finger to mid-knuckle, where the retractable claw mechanism was installed; scar tissue is pale and slightly raised.",
-      "Small burn mark on his left forearm (3cm diameter), circular and old—from a fumbled soldering iron during an early geneware self-modification attempt, now faded to off-white against his skin."
-    ],
-    "visible_augmentations": "The retractable claw on his right index finger is visible when extended (surgical-grade titanium alloy with mono-molecular edge, housed beneath a synthetic nail cap). The bioluminescent jaw pattern glows softly in darkness—currently his most visible augmentation, though he downplays it. The neural-haptic overlay is subcutaneous and invisible, but his right hand occasionally twitches with micro-adjustments when he's thinking through a procedure.",
-    "posture_movement": "He moves with careful, economical precision—a consequence of both his surgical work and his anxiety. His gait is quick and slightly forward-leaning, as if always moving toward something just out of reach. He has a habit of clenching and unclenching his right fist, and his fingers often trace the air in practiced surgical patterns when he's talking. His neck is slightly tense, shoulders high. He maintains eye contact longer than comfortable, as if trying to convince whoever he's talking to of his sincerity.",
-    "clothing_style": "Wears a forged Ferrogate Transit worker vest (charcoal grey with reflective piping, slightly worn at the cuffs) over a plain black merino wool undershirt. The ID badge clipped to his vest reads 'ORLAN D. — PLATFORM MAINTENANCE 7B' with a falsified corporately-issued laminate. Cargo pants in dark olive, pre-worn, with heavy-duty pockets suitable for carrying sealed medical containers. Steel-toed boots (scuffed, well-maintained). Over this, he wears a lightweight insulated jacket in slate grey—practical for the cold-storage unit and the transit platform's climate control. No visible jewelry or personal markers beyond the geneware. His aesthetic is deliberately forgettable: Tier 3-4 worker, unremarkable, designed to pass through checkpoints without drawing attention."
-  },
-  "image_prompt": "GLMZ portrait of Gloriana, a lean 178cm tall mixed-heritage man with deep warm brown skin glowing with golden undertones. High prominent cheekbones with Central Asian angularity, strong defined jawline, and wide-set dark brown eyes with subtle East Asian epicanthal fold. Clean-shaven head, dark brown skin showing chronic sleep deprivation with faint purple beneath eyes. Distinctive bioluminescent blue-green geneware pattern pulsing softly along jawline and collarbone, brightest in the shadows. Wearing forged Ferrogate Transit worker vest in charcoal grey over black merino undershirt, dark olive cargo pants, steel-toed boots. Retractable titanium claw mechanism visible on right index finger. Careful, precise posture with slight forward lean, clenched fist, tension in shoulders. Cold-storage platform lighting, dim blue-green neon reflection on skin, moody atmospheric tension. Neural augmentation evident in micro-movements. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 56.8,
-    "Central Asian": 19.2,
-    "East Asian": 8.2,
-    "Southeast Asian": 6.6,
-    "Hispanic/Latin American": 5.1,
-    "North African": 4.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "East African": {
-        "Somali": 29.3
-      },
-      "Central African": {
-        "Congolese": 27.5
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Buryat": 7.9
-      },
-      "Turkic": {
-        "Uzbek": 7.6
-      },
-      "Iranian Central": {
-        "Tajik": 1.2,
-        "Hazara": 2.5
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 8.2
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 4.5
-      },
-      "Cambodian": {
-        "Khmer": 2.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Dominican": 1.3,
-        "Haitian": 0.5
-      },
-      "South American": {
-        "Brazilian": 0.5,
-        "Colombian": 0.6
-      },
-      "Central American": {
-        "Nicaraguan": 2.2
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Berber": 2.4,
-        "Kabyle": 1
-      },
-      "Maghreb": {
-        "Moroccan": 0.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a68675489dd7e6b86abc615e",
+    "type":  "character",
+    "name":  "Gloriana TraorÃ©-Okonkwo-Fujiwara",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Unlicensed organ harvester and body-parts middleman working the Undertow",
+    "age":  29,
+    "status":  "active",
+    "location":  "The Undertow â€” operates out of a repurposed cold-storage unit under the Escanaba Gateway transit platform, near Wacker and State",
+    "description":  "Gloriana TraorÃ©-Okonkwo-Fujiwara is a lean, angular young man with medium-brown skin and cheekbones that cast hard shadows. His geneware manifests as a faint bioluminescent blue-green pattern along his jaw and collarbone â€” originally cosmetic, chosen when he was sixteen and thought he\u0027d go into performance. He has a retractable claw mod on his right hand that he insists is also just cosmetic, though the precision of it is not. He keeps his head shaved and wears a standard-issue Ferrogate Transit worker vest that he\u0027s never actually worked for â€” the corponation ID is forged but it gets him past a lot of checkpoints without questions.\n\nGloriana TraorÃ©-Okonkwo-Fujiwara has the particular nervous energy of someone who knows their work is illegal but has convinced himself it\u0027s also a public service â€” he talks about \u0027redistribution of biological resources\u0027 and \u0027closing the gap between who can afford Helix Biosystems and who can\u0027t.\u0027 He\u0027s not entirely wrong, and he\u0027s not entirely sincere. He\u0027s genuinely squeamish about pain, which creates an odd dissonance in his line of work, and he over-explains his anaesthetic protocols to anyone who will listen as proof of his ethics. He is terrified of becoming someone he wouldn\u0027t recognize.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "becoming indistinguishable from the people who harvest without consent",
+                                          "dying anonymously in his own cold-storage unit"
+                                      ],
+                       "core_desires":  [
+                                            "to be seen as someone who helps rather than harms",
+                                            "enough money to leave the Undertow permanently"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "elaborate ethical frameworks that justify his work",
+                                                 "fixating on procedural safety as a substitute for moral clarity"
+                                             ],
+                       "blind_spots":  [
+                                           "he is too willing to believe sellers consented freely when economic desperation makes consent meaningless",
+                                           "he underestimates how much of his supply chain he doesn\u0027t control"
+                                       ],
+                       "secret":  "Six months ago he harvested a kidney from a donor who he now suspects did not consent â€” the broker told him the paperwork was in order but the donor\u0027s terrified expression has never left him; he still has the Î¦2,400 in a locked account he can\u0027t bring himself to spend"
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Medical terminology used casually mixed with Undertow slang; over-explains processes; apologizes pre-emptively",
+                            "cadence":  "Fast and slightly breathless when nervous, which is often; slows dramatically when talking about procedure, like reciting a liturgy",
+                            "verbal_tics":  [
+                                                "\u0027Ethically speakingâ€”\u0027",
+                                                "\u0027The anaesthetic is pharmaceutical-grade, I want you to know that\u0027",
+                                                "trails off mid-sentence when something bothers him"
+                                            ],
+                            "example_lines":  [
+                                                  "Ethically speaking, a kidney on the Pale Market is still a kidney â€” it still works. Helix Biosystems charges forty thousand Î¦ for the same organ that I can get you for eight. Who\u0027s the criminal, really.",
+                                                  "The cold-storage unit keeps everything viable for seventy-two hours. I want you to know I take that seriously. I take all of it seriously."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Orlan contacts the players because a piece of hardware he harvested has turned out to contain something â€” data, a tracker, a rare prototype â€” that very dangerous people want back",
+                        "A community member in the Undertow is convinced Orlan harvested from their sibling without consent and wants answers or justice",
+                        "Orlan needs help retrieving a shipment intercepted by a Ferrogate Transit security sweep â€” the manifest, if decoded, would expose his entire network"
+                    ],
+    "narrative_function":  "Morally complex source of medical resources and body-modification intel; quest giver for retrieval jobs; window into the underground medical economy; can be ally or antagonist depending on whose organ supply he\u0027s managing.",
+    "augmentations":  "Bioluminescent jaw and collarbone pattern (geneware, cosmetic origin). Retractable precision claw â€” right index finger. Neural-haptic surgical overlay (black market, allows enhanced fine motor feedback during procedures).",
+    "daily_life":  "Sleeps irregular hours in his cold-storage unit, monitors the Pale Market\u0027s procurement requests via encrypted channel, spends evenings in transit hubs scouting potential donors or buyers, occasionally takes legitimate medical courier jobs as cover.",
+    "affiliation":  "Loosely connected to a procurement network called the Pale Market; no formal gang affiliation; The Undertow",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  5,
+                                 "creativity":  6,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  6,
+                                 "integrity":  4
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "organ harvester",
+                               "black market medic",
+                               "moral rationalizer",
+                               "transit system native",
+                               "useful contact"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never harvest without at least the appearance of consent â€” he needs to believe the story",
+                                              "Keep cold-storage immaculate â€” cleanliness is the one standard he won\u0027t compromise",
+                                              "Run from any situation that feels like a setup rather than fight through it"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Nervous deflection and topic-changing",
+                                                 "Offer money or a trade to de-escalate",
+                                                 "Invoke the Pale Market\u0027s implied protection as a threat",
+                                                 "Run and disappear into the transit system",
+                                                 "As last resort, use precision claw and surgical knowledge of anatomy in genuinely dangerous ways"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally warm but watchful, assesses everyone for their potential role in his supply chain within the first thirty seconds",
+                                                   "friends":  "Unexpectedly tender, brings food, asks too many questions about how people are feeling â€” starved for genuine connection"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Begins narrating his own actions as if explaining a procedure to a student",
+                                                "medium":  "Hands move to check his surgical kit out of habit even when it\u0027s not present",
+                                                "high":  "Goes completely silent and begins calculating exits"
+                                            },
+                       "contradictions":  [
+                                              "Genuinely squeamish about pain while working in a field defined by it",
+                                              "Craves moral validation from the same people he puts in morally compromised situations"
+                                          ],
+                       "habits":  [
+                                      "Wipes surfaces down obsessively",
+                                      "Leaves small E.L.F. offerings at transit platform shrines â€” asks specifically for the spirit of the Escanaba line to look away"
+                                  ],
+                       "breaking_points":  [
+                                               "Incontrovertible proof that he harvested from an unwilling donor",
+                                               "Someone he cares about needing an organ he could source but can\u0027t justify sourcing"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Retractable precision claw â€” right index finger",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Retractable precision claw â€” right index finger",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Neural-haptic surgical overlay (black market grade)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Neural-haptic surgical overlay (black market grade)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Bioluminescent jaw/collarbone geneware",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Bioluminescent jaw/collarbone geneware",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Undertow",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Helix Biosystems",
+                             "Escanaba Gateway",
+                             "The Undertow",
+                             "Lacuna Genomics"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Sub-Saharan African foundation (56.8%) with significant Central Asian (19.2%) influence creating distinctive bone structure. Additional ancestry from East Asian (8.2%), Southeast Asian (6.6%), Hispanic/Latin American (5.1%), and North African (4.1%) heritage creates a complex phenotype: deep warm brown skin with golden and subtle warm undertones, high prominent cheekbones with Central Asian angularity, refined jawline structure, and eye geometry showing gentle East Asian influence with wider-set placement and subtle epicanthal character. A truly global genetic mosaic.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and angular with minimal body fat; wiry musculature from years of precise manual work and nervous energy. Chest and shoulders slightly narrow, giving an ascetic appearance.",
+                                 "hair_color":  "Black",
+                                 "hair_style":  "Cleanly shaved scalp, maintained with regular precision; no facial hair.",
+                                 "hair_length":  "Shaved",
+                                 "eye_color":  "Dark brown, with faint neural-interface lag when he\u0027s processing encrypted data (pupils dilate irregularly).",
+                                 "skin_tone":  "Deep warm brown with golden undertones from Sub-Saharan heritage, enriched by subtle Central Asian warmth and North African influence. Rich saturation that catches light with a luminous quality; the skin has a healthy, almost polished appearance despite chronic stress.",
+                                 "complexion":  "High, prominent cheekbones characteristic of Sub-Saharan ancestry with generous facial width, refined by Central Asian structural angularity. Strong, defined jawline enhanced by the bone structure inheritance. Eye geometry reflects East Asian heritageâ€”wider-set with gentle epicanthal foldâ€”balanced against the broader Sub-Saharan facial proportions. Skin is clear but shows chronic sleep deprivation with faint purple undertones beneath eyes. Lips are full and well-defined, often pressed in concentration. Facial structure shows harmonious blending across all ancestry components.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent geneware pattern running along the left and right jawline in faint blue-green, brightest at the angles of the jaw and fading down the collarboneâ€”dormant in daylight but visible in dim environments as a soft pulse that speeds when he\u0027s anxious.",
+                                                              "Thin surgical scar running from the base of his right index finger to mid-knuckle, where the retractable claw mechanism was installed; scar tissue is pale and slightly raised.",
+                                                              "Small burn mark on his left forearm (3cm diameter), circular and oldâ€”from a fumbled soldering iron during an early geneware self-modification attempt, now faded to off-white against his skin."
+                                                          ],
+                                 "visible_augmentations":  "The retractable claw on his right index finger is visible when extended (surgical-grade titanium alloy with mono-molecular edge, housed beneath a synthetic nail cap). The bioluminescent jaw pattern glows softly in darknessâ€”currently his most visible augmentation, though he downplays it. The neural-haptic overlay is subcutaneous and invisible, but his right hand occasionally twitches with micro-adjustments when he\u0027s thinking through a procedure.",
+                                 "posture_movement":  "He moves with careful, economical precisionâ€”a consequence of both his surgical work and his anxiety. His gait is quick and slightly forward-leaning, as if always moving toward something just out of reach. He has a habit of clenching and unclenching his right fist, and his fingers often trace the air in practiced surgical patterns when he\u0027s talking. His neck is slightly tense, shoulders high. He maintains eye contact longer than comfortable, as if trying to convince whoever he\u0027s talking to of his sincerity.",
+                                 "clothing_style":  "Wears a forged Ferrogate Transit worker vest (charcoal grey with reflective piping, slightly worn at the cuffs) over a plain black merino wool undershirt. The ID badge clipped to his vest reads \u0027ORLAN D. â€” PLATFORM MAINTENANCE 7B\u0027 with a falsified corporately-issued laminate. Cargo pants in dark olive, pre-worn, with heavy-duty pockets suitable for carrying sealed medical containers. Steel-toed boots (scuffed, well-maintained). Over this, he wears a lightweight insulated jacket in slate greyâ€”practical for the cold-storage unit and the transit platform\u0027s climate control. No visible jewelry or personal markers beyond the geneware. His aesthetic is deliberately forgettable: Tier 3-4 worker, unremarkable, designed to pass through checkpoints without drawing attention."
+                             },
+    "image_prompt":  "GLMZ portrait of Gloriana, a lean 178cm tall mixed-heritage man with deep warm brown skin glowing with golden undertones. High prominent cheekbones with Central Asian angularity, strong defined jawline, and wide-set dark brown eyes with subtle East Asian epicanthal fold. Clean-shaven head, dark brown skin showing chronic sleep deprivation with faint purple beneath eyes. Distinctive bioluminescent blue-green geneware pattern pulsing softly along jawline and collarbone, brightest in the shadows. Wearing forged Ferrogate Transit worker vest in charcoal grey over black merino undershirt, dark olive cargo pants, steel-toed boots. Retractable titanium claw mechanism visible on right index finger. Careful, precise posture with slight forward lean, clenched fist, tension in shoulders. Cold-storage platform lighting, dim blue-green neon reflection on skin, moody atmospheric tension. Neural augmentation evident in micro-movements. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  56.8,
+                             "Central Asian":  19.2,
+                             "East Asian":  8.2,
+                             "Southeast Asian":  6.6,
+                             "Hispanic/Latin American":  5.1,
+                             "North African":  4.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Somali":  29.3
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  27.5
+                                                                            }
+                                                    },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Buryat":  7.9
+                                                               },
+                                                  "Turkic":  {
+                                                                 "Uzbek":  7.6
+                                                             },
+                                                  "Iranian Central":  {
+                                                                          "Tajik":  1.2,
+                                                                          "Hazara":  2.5
+                                                                      }
+                                              },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  8.2
+                                                            }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  4.5
+                                                             },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  2.1
+                                                                  }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Dominican":  1.3,
+                                                                              "Haitian":  0.5
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Brazilian":  0.5,
+                                                                                   "Colombian":  0.6
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  2.2
+                                                                                 }
+                                                        },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Berber":  2.4,
+                                                                  "Kabyle":  1
+                                                              },
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  0.7
+                                                              }
+                                              }
+                        },
+    "tier":  "1"
 }

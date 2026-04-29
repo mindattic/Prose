@@ -31,7 +31,7 @@ if (args.Contains("--rebuild-graph"))
 }
 
 // CLI mode: dotnet run --project ... -- --write-story <mode> [options]
-// Generates a story via the same pipeline as the /stories UI and saves it as a StoryProject.
+// Generates a story via the same pipeline as the /stories UI and saves it as a Chapter.
 if (args.Contains("--write-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
@@ -49,6 +49,17 @@ if (args.Contains("--refine-story"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await StoryRefineCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: book operations — list / new / show / chapters / absorb / review / apply / export / delete.
+// Run `dotnet run --project StreetSamurai.Blazor -- --book` (no subcommand) to see full usage.
+if (args.Contains("--book"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await BookCli.RunAsync(args, cliApp.Services);
     return;
 }
 

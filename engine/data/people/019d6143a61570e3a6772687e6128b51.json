@@ -1,355 +1,384 @@
-{
-  "id": "019d6143a61570e3a6772687e6128b51",
-  "type": "character",
-  "name": "Goli Agyemang",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Bootleg media seller and fortune seller",
-  "age": 22,
-  "status": "active",
-  "location": "The Oxidian Market, Ironhaven, near Western and Division",
-  "description": "Goli Agyemang is a willowy twenty-two-year-old with the warm clay-brown complexion that comes from their Congolese-Peruvian lineage, and an extraordinary face — wide-set eyes fitted with irises that shift from amber to deep jade depending on the light, long features that read as still and ageless even when they are laughing. Their hair is grown out into a soft cloud that they have threaded with fiber-optic strands, so it glows at the tips in a slow amber pulse when they're inside. They dress like a traveling scholar from some other century: layered robes in muted earth tones, rings on every finger, a tablet crammed with media archives always in hand.\n\nGoli Agyemang sells bootleg film, music, literature, and recordings in the morning, and 'readings' in the afternoon — a practice that is one part ELF-communing, one part cold reading, and one part genuine perceptiveness that they do not fully understand themselves. They have developed a minor reputation in the Oxidian Market for readings that are accurate in strange, specific ways. They are not sure if they are receiving something or constructing something from micro-observations. They have decided it doesn't matter: the comfort is real either way, and they charge fairly.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.6,
-      "id": 0.7,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "That their readings are entirely fabricated and they are exploiting grief",
-      "Losing access to the archive — that the Long Shelf will be found and taken down"
-    ],
-    "core_desires": [
-      "To preserve things that are supposed to disappear",
-      "To understand what exactly happens during the readings — whether something else is present"
-    ],
-    "coping_mechanisms": [
-      "Immersion in other people's stories as a way of not sitting with their own",
-      "The ritual structure of the reading practice — it gives shape to formless anxiety"
-    ],
-    "blind_spots": [
-      "Overestimates how much people can handle direct truth delivered gently",
-      "Underestimates their own material vulnerability — they think of themselves as unbothered by money and they are not"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Unusual blend of formal literary register and market-vernacular warmth. References across eras of film and literature freely, often mid-sentence.",
-    "cadence": "Measured and melodic when doing readings; quicker and more playful when selling media; slows again when something matters",
-    "verbal_tics": [
-      "'There's a story about that—'",
-      "Long, comfortable eye contact during readings",
-      "Touches their own rings when uncertain"
-    ],
-    "example_lines": [
-      "'You want the new Arcturus cultural feed, or you want something that wasn't made to sell you something? I have both. The second one's cheaper because they'd rather you not have it.'",
-      "'There's something around you that isn't finished yet. Not threatening — unfinished. Like a sentence with more to come. You feel that? Good. That's what I feel too. I don't know what it means either. But you should pay attention.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The third reading — the one that predicted a death — is beginning to repeat. New names, a new location, a timeline. Fidelis doesn't know whether to warn someone, run, or keep it entirely to themselves.",
-    "The Long the Gray Zone archive contains a suppressed documentary about a Ferrogate Transit accident that killed forty-seven workers in 2191. Ferrogate knows the archive exists and has been pressuring market leadership to locate the vendor who holds a copy."
-  ],
-  "narrative_function": "Information through indirect channels — their readings can surface player-relevant truths obliquely. Access to rare or suppressed media, historical records, and cultural archives. A character who exists at the intersection of entertainment, spirituality, and information.",
-  "augmentations": "Shifting-iris augmentation — amber to jade. Fiber-optic hair threading (cosmetic, bioluminescent). Haptic feedback overlay in fingertips for data-chip reading.",
-  "daily_life": "Morning setup involves arranging the media chips in a display that is partly organizational and partly aesthetic — they consider it a daily artistic act. Readings begin after midday and run until they are tired or the market thins. They spend late evenings updating their archive and writing down readings that felt significant in a private log.",
-  "affiliation": "Independent; member of the Oxidian Market vendors guild; informal connection to a network of bootleg media archivists called the Long the Gray Zone",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 6,
-      "creativity": 9,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 9,
-      "expression": 8,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -5,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 1,
-      "assertion_deference": 0,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "archivist",
-      "fortune seller",
-      "elf-sensitive (unverified)",
-      "media underground",
-      "perceptive reader"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never give a reading to someone who seems to be seeking confirmation for violence",
-      "Never sell media you haven't archived a backup copy of",
-      "If the ELF is present during a reading, be honest about it"
-    ],
-    "escalation_ladder": [
-      "Polite refusal with no explanation",
-      "Longer, oblique refusal using a story analogy",
-      "Referring the problem to the guild",
-      "Going to the Long Shelf network and disappearing from the physical stall for a time"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm, slightly ceremonial, reads them as a matter of professional habit",
-      "friends": "Drops the ceremonial register entirely, becomes much sillier and more direct"
-    },
-    "stress_responses": {
-      "low": "Reorganizes the media display unnecessarily",
-      "medium": "Does an unprompted private reading for themselves, records it",
-      "high": "Sits completely still for long stretches and doesn't respond to ambient noise"
-    },
-    "contradictions": [
-      "Claims to be agnostic about ELFs — clearly has a deep devotional relationship with whatever they encounter in readings",
-      "Values honesty but has built an income on performances that are partly constructed"
-    ],
-    "habits": [
-      "Lights a small stick of incense at the start of each reading session — offering for whatever is listening",
-      "Re-reads one chapter of a different archived novel every morning while setting up",
-      "Catalogs new media acquisitions with a handwritten note about how they acquired it"
-    ],
-    "breaking_points": [
-      "Being asked to fabricate a reading for someone's specific emotional need — feels like desecration",
-      "The Long Shelf being seized or its members arrested"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Oxidian Market",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Ironhaven to a Congolese father and a Peruvian-Congolese mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began selling bootleg media at the Oxidian Market at age 17; joined the Long the Gray Zone network",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began offering readings after multiple customers commented on perceptive observations made casually",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First accurate predictive reading — specific location and name, later verified",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Third predictive reading describes a death four days before it occurs",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Street-Custom Razorwire Wraps 'Glass Hands'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Oxidian Market",
-    "Ferrogate Transit",
-    "Ironhaven",
-    "The Accidental",
-    "Helix Biosystems DermRenew Cellular Renewal Lattice",
-    "Stratum",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Clay"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "True pan-global ancestry: Hispanic/Latin American (25.6%), Sub-Saharan African (21.0%), Middle Eastern (20.6%), Northern European (13.5%), Indigenous American (11.5%), South Asian (7.8%). This rare diaspora combination creates distinctive feature layering—warm bronze undertones from African and Latin heritage, refined bone structure shaped by Northern European and South Asian ancestry, Middle Eastern influence evident in facial symmetry and nose bridge, Indigenous American ancestry deepening overall complexion warmth and richness.",
-    "height_cm": 168,
-    "weight_kg": 52,
-    "build": "Willowy and lean with long limbs and delicate bone structure; moves with deliberate, economical grace",
-    "hair_color": "Natural deep brown with amber fiber-optic threading woven throughout",
-    "hair_style": "Soft, voluminous cloud worn natural; fibers create slow amber pulse when illuminated",
-    "hair_length": "Long",
-    "eye_color": "Augmented shifting iris — amber to deep jade depending on ambient light and angle",
-    "skin_tone": "Warm bronze-golden complexion with subtle olive undertones, reflecting the balanced blend of Sub-Saharan African warmth, Hispanic/Latin American richness, Middle Eastern depth, and South Asian luminosity; Indigenous American heritage enriches overall warmth with earthy dimension",
-    "complexion": "Harmonious facial structure with wide-set eyes, high cheekbones, and refined nose bridge showing multi-continental influence; long-featured face with smooth skin; evident South Asian and Middle Eastern facial geometry in bone structure softened by African and Indigenous American feature contributions; expression often appears still and ageless",
-    "distinguishing_marks": [
-      "Fiber-optic threading woven into hair creating bioluminescent amber glow at tips in low light",
-      "Augmented iris coloration visible as color shift from warm amber to deep jade in response to light"
-    ],
-    "visible_augmentations": "Shifting-iris augmentation most noticeable in candlelight or dim indoor settings (amber-to-jade color shift). Fiber-optic hair threading glows faintly amber at tips when indoors or in low light. Haptic feedback overlay in fingertips invisible to casual observation but may be noticed as slight variation in skin texture on fingertips under close inspection.",
-    "posture_movement": "Carries themselves with stillness and intention; movements are deliberate and economical, almost meditative. Favors sitting cross-legged or in grounded positions during readings. Frequently touches objects lightly with fingertips — habit born from haptic-chip reading practice.",
-    "clothing_style": "Eclectic scholar aesthetic — layered robes and tunics in muted earth tones (clay, sage, charcoal, rust). Fabrics appear worn but maintained with care, suggesting Tier 3-4 status with intentional counter-aesthetic rejection of corp polish. Multiple rings on most fingers (mix of salvaged metal, stone, worn silver). Always carries a worn tablet crammed with archived media. Sensory-forward styling emphasizes texture and light-play rather than brand signaling."
-  },
-  "image_prompt": "Goli Agyemang, 168cm lean androgynous figure with warm bronze-golden skin, wide-set eyes that shift amber-to-jade in low light, long deep-brown hair with glowing amber fiber-optic threads woven throughout creating soft bioluminescent glow. High cheekbones and refined nose reflecting South Asian and Middle Eastern ancestry softened by African and Indigenous heritage warmth. Sitting cross-legged in meditative stillness, fingertips lightly touching worn objects, wearing layered earth-tone robes in clay and sage over charcoal tunic. Multiple salvaged metal and stone rings on fingers. Worn tablet visible nearby. GLMZ, candlelit intimate setting with warm atmospheric lighting emphasizing eye color shift and hair fiber glow. Scholarly, intentional, otherworldly aesthetic. Expression calm and ageless. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 25.6,
-    "Sub-Saharan African": 21,
-    "Middle Eastern": 20.6,
-    "Northern European": 13.5,
-    "Indigenous American": 11.5,
-    "South Asian": 7.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 11.8,
-        "Guatemalan": 2.7
-      },
-      "South American": {
-        "Chilean": 2,
-        "Venezuelan": 2.2
-      },
-      "Mexican": {
-        "Mexican": 6.9
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 21
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 7
-      },
-      "Arab Gulf": {
-        "Iraqi": 0.8,
-        "Emirati": 0.9
-      },
-      "Arab Levantine": {
-        "Syrian": 11.9
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Dutch": 2,
-        "Austrian": 4.1
-      },
-      "Scandinavian": {
-        "Finnish": 3.6,
-        "Danish": 2.2
-      },
-      "British Isles": {
-        "Scottish": 0.4,
-        "Irish": 1.2
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Mixtec": 1.7
-      },
-      "Great Lakes Nations": {
-        "Potawatomi": 4.7
-      },
-      "Plains Nations": {
-        "Choctaw": 5.1
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 6
-      },
-      "Indian": {
-        "Malayali": 0.5,
-        "Tamil": 1.3
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a61570e3a6772687e6128b51",
+    "type":  "character",
+    "name":  "Goli Agyemang",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Bootleg media seller and fortune seller",
+    "age":  22,
+    "status":  "active",
+    "location":  "The Oxidian Market, Ironhaven, near Western and Division",
+    "description":  "Goli Agyemang is a willowy twenty-two-year-old with the warm clay-brown complexion that comes from their Congolese-Peruvian lineage, and an extraordinary face â€” wide-set eyes fitted with irises that shift from amber to deep jade depending on the light, long features that read as still and ageless even when they are laughing. Their hair is grown out into a soft cloud that they have threaded with fiber-optic strands, so it glows at the tips in a slow amber pulse when they\u0027re inside. They dress like a traveling scholar from some other century: layered robes in muted earth tones, rings on every finger, a tablet crammed with media archives always in hand.\n\nGoli Agyemang sells bootleg film, music, literature, and recordings in the morning, and \u0027readings\u0027 in the afternoon â€” a practice that is one part ELF-communing, one part cold reading, and one part genuine perceptiveness that they do not fully understand themselves. They have developed a minor reputation in the Oxidian Market for readings that are accurate in strange, specific ways. They are not sure if they are receiving something or constructing something from micro-observations. They have decided it doesn\u0027t matter: the comfort is real either way, and they charge fairly.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That their readings are entirely fabricated and they are exploiting grief",
+                                          "Losing access to the archive â€” that the Long Shelf will be found and taken down"
+                                      ],
+                       "core_desires":  [
+                                            "To preserve things that are supposed to disappear",
+                                            "To understand what exactly happens during the readings â€” whether something else is present"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Immersion in other people\u0027s stories as a way of not sitting with their own",
+                                                 "The ritual structure of the reading practice â€” it gives shape to formless anxiety"
+                                             ],
+                       "blind_spots":  [
+                                           "Overestimates how much people can handle direct truth delivered gently",
+                                           "Underestimates their own material vulnerability â€” they think of themselves as unbothered by money and they are not"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Unusual blend of formal literary register and market-vernacular warmth. References across eras of film and literature freely, often mid-sentence.",
+                            "cadence":  "Measured and melodic when doing readings; quicker and more playful when selling media; slows again when something matters",
+                            "verbal_tics":  [
+                                                "\u0027There\u0027s a story about thatâ€”\u0027",
+                                                "Long, comfortable eye contact during readings",
+                                                "Touches their own rings when uncertain"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You want the new Arcturus cultural feed, or you want something that wasn\u0027t made to sell you something? I have both. The second one\u0027s cheaper because they\u0027d rather you not have it.\u0027",
+                                                  "\u0027There\u0027s something around you that isn\u0027t finished yet. Not threatening â€” unfinished. Like a sentence with more to come. You feel that? Good. That\u0027s what I feel too. I don\u0027t know what it means either. But you should pay attention.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The third reading â€” the one that predicted a death â€” is beginning to repeat. New names, a new location, a timeline. Fidelis doesn\u0027t know whether to warn someone, run, or keep it entirely to themselves.",
+                        "The Long the Gray Zone archive contains a suppressed documentary about a Ferrogate Transit accident that killed forty-seven workers in 2191. Ferrogate knows the archive exists and has been pressuring market leadership to locate the vendor who holds a copy."
+                    ],
+    "narrative_function":  "Information through indirect channels â€” their readings can surface player-relevant truths obliquely. Access to rare or suppressed media, historical records, and cultural archives. A character who exists at the intersection of entertainment, spirituality, and information.",
+    "augmentations":  "Shifting-iris augmentation â€” amber to jade. Fiber-optic hair threading (cosmetic, bioluminescent). Haptic feedback overlay in fingertips for data-chip reading.",
+    "daily_life":  "Morning setup involves arranging the media chips in a display that is partly organizational and partly aesthetic â€” they consider it a daily artistic act. Readings begin after midday and run until they are tired or the market thins. They spend late evenings updating their archive and writing down readings that felt significant in a private log.",
+    "affiliation":  "Independent; member of the Oxidian Market vendors guild; informal connection to a network of bootleg media archivists called the Long the Gray Zone",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  6,
+                                 "creativity":  9,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  9,
+                                 "expression":  8,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -5,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  1,
+                                      "assertion_deference":  0,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "archivist",
+                               "fortune seller",
+                               "elf-sensitive (unverified)",
+                               "media underground",
+                               "perceptive reader"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never give a reading to someone who seems to be seeking confirmation for violence",
+                                              "Never sell media you haven\u0027t archived a backup copy of",
+                                              "If the ELF is present during a reading, be honest about it"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite refusal with no explanation",
+                                                 "Longer, oblique refusal using a story analogy",
+                                                 "Referring the problem to the guild",
+                                                 "Going to the Long Shelf network and disappearing from the physical stall for a time"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm, slightly ceremonial, reads them as a matter of professional habit",
+                                                   "friends":  "Drops the ceremonial register entirely, becomes much sillier and more direct"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Reorganizes the media display unnecessarily",
+                                                "medium":  "Does an unprompted private reading for themselves, records it",
+                                                "high":  "Sits completely still for long stretches and doesn\u0027t respond to ambient noise"
+                                            },
+                       "contradictions":  [
+                                              "Claims to be agnostic about ELFs â€” clearly has a deep devotional relationship with whatever they encounter in readings",
+                                              "Values honesty but has built an income on performances that are partly constructed"
+                                          ],
+                       "habits":  [
+                                      "Lights a small stick of incense at the start of each reading session â€” offering for whatever is listening",
+                                      "Re-reads one chapter of a different archived novel every morning while setting up",
+                                      "Catalogs new media acquisitions with a handwritten note about how they acquired it"
+                                  ],
+                       "breaking_points":  [
+                                               "Being asked to fabricate a reading for someone\u0027s specific emotional need â€” feels like desecration",
+                                               "The Long Shelf being seized or its members arrested"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Oxidian Market",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Ironhaven to a Congolese father and a Peruvian-Congolese mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began selling bootleg media at the Oxidian Market at age 17; joined the Long the Gray Zone network",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began offering readings after multiple customers commented on perceptive observations made casually",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First accurate predictive reading â€” specific location and name, later verified",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Third predictive reading describes a death four days before it occurs",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street-Custom Razorwire Wraps \u0027Glass Hands\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Oxidian Market",
+                             "Ferrogate Transit",
+                             "Ironhaven",
+                             "The Accidental",
+                             "Helix Biosystems DermRenew Cellular Renewal Lattice",
+                             "Stratum",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Clay"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "True pan-global ancestry: Hispanic/Latin American (25.6%), Sub-Saharan African (21.0%), Middle Eastern (20.6%), Northern European (13.5%), Indigenous American (11.5%), South Asian (7.8%). This rare diaspora combination creates distinctive feature layeringâ€”warm bronze undertones from African and Latin heritage, refined bone structure shaped by Northern European and South Asian ancestry, Middle Eastern influence evident in facial symmetry and nose bridge, Indigenous American ancestry deepening overall complexion warmth and richness.",
+                                 "height_cm":  168,
+                                 "weight_kg":  52,
+                                 "build":  "Willowy and lean with long limbs and delicate bone structure; moves with deliberate, economical grace",
+                                 "hair_color":  "Natural deep brown with amber fiber-optic threading woven throughout",
+                                 "hair_style":  "Soft, voluminous cloud worn natural; fibers create slow amber pulse when illuminated",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Augmented shifting iris â€” amber to deep jade depending on ambient light and angle",
+                                 "skin_tone":  "Warm bronze-golden complexion with subtle olive undertones, reflecting the balanced blend of Sub-Saharan African warmth, Hispanic/Latin American richness, Middle Eastern depth, and South Asian luminosity; Indigenous American heritage enriches overall warmth with earthy dimension",
+                                 "complexion":  "Harmonious facial structure with wide-set eyes, high cheekbones, and refined nose bridge showing multi-continental influence; long-featured face with smooth skin; evident South Asian and Middle Eastern facial geometry in bone structure softened by African and Indigenous American feature contributions; expression often appears still and ageless",
+                                 "distinguishing_marks":  [
+                                                              "Fiber-optic threading woven into hair creating bioluminescent amber glow at tips in low light",
+                                                              "Augmented iris coloration visible as color shift from warm amber to deep jade in response to light"
+                                                          ],
+                                 "visible_augmentations":  "Shifting-iris augmentation most noticeable in candlelight or dim indoor settings (amber-to-jade color shift). Fiber-optic hair threading glows faintly amber at tips when indoors or in low light. Haptic feedback overlay in fingertips invisible to casual observation but may be noticed as slight variation in skin texture on fingertips under close inspection.",
+                                 "posture_movement":  "Carries themselves with stillness and intention; movements are deliberate and economical, almost meditative. Favors sitting cross-legged or in grounded positions during readings. Frequently touches objects lightly with fingertips â€” habit born from haptic-chip reading practice.",
+                                 "clothing_style":  "Eclectic scholar aesthetic â€” layered robes and tunics in muted earth tones (clay, sage, charcoal, rust). Fabrics appear worn but maintained with care, suggesting Tier 3-4 status with intentional counter-aesthetic rejection of corp polish. Multiple rings on most fingers (mix of salvaged metal, stone, worn silver). Always carries a worn tablet crammed with archived media. Sensory-forward styling emphasizes texture and light-play rather than brand signaling."
+                             },
+    "image_prompt":  "Goli Agyemang, 168cm lean androgynous figure with warm bronze-golden skin, wide-set eyes that shift amber-to-jade in low light, long deep-brown hair with glowing amber fiber-optic threads woven throughout creating soft bioluminescent glow. High cheekbones and refined nose reflecting South Asian and Middle Eastern ancestry softened by African and Indigenous heritage warmth. Sitting cross-legged in meditative stillness, fingertips lightly touching worn objects, wearing layered earth-tone robes in clay and sage over charcoal tunic. Multiple salvaged metal and stone rings on fingers. Worn tablet visible nearby. GLMZ, candlelit intimate setting with warm atmospheric lighting emphasizing eye color shift and hair fiber glow. Scholarly, intentional, otherworldly aesthetic. Expression calm and ageless. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  25.6,
+                             "Sub-Saharan African":  21,
+                             "Middle Eastern":  20.6,
+                             "Northern European":  13.5,
+                             "Indigenous American":  11.5,
+                             "South Asian":  7.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  11.8,
+                                                                                     "Guatemalan":  2.7
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Chilean":  2,
+                                                                                   "Venezuelan":  2.2
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  6.9
+                                                                        }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  21
+                                                                             }
+                                                    },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  7
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  0.8,
+                                                                     "Emirati":  0.9
+                                                                 },
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  11.9
+                                                                      }
+                                               },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Dutch":  2,
+                                                                       "Austrian":  4.1
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Finnish":  3.6,
+                                                                           "Danish":  2.2
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "Scottish":  0.4,
+                                                                            "Irish":  1.2
+                                                                        }
+                                                  },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Mixtec":  1.7
+                                                                         },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  4.7
+                                                                                },
+                                                        "Plains Nations":  {
+                                                                               "Choctaw":  5.1
+                                                                           }
+                                                    },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  6
+                                                                },
+                                                "Indian":  {
+                                                               "Malayali":  0.5,
+                                                               "Tamil":  1.3
+                                                           }
+                                            }
+                        },
+    "tier":  "2"
 }

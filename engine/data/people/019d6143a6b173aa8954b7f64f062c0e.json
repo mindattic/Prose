@@ -1,289 +1,316 @@
-{
-  "id": "019d6143a6b173aa8954b7f64f062c0e",
-  "rating": 70,
-  "type": "character",
-  "name": "Beatriz Villalobos-Kimura",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Fake ID vendor and small-time data broker",
-  "age": 31,
-  "status": "active",
-  "location": "The Narrows, Blackpipe Corridor, near Milwaukee and Damen",
-  "description": "Beatriz Villalobos-Kimura is a lean, angular man of Georgian and South Indian-Kenyan descent, with warm olive-brown skin, a sharp jaw perpetually shadowed with stubble, and dark eyes fitted with patterned irises — a helix of deep violet spiraling toward the pupil, which he claims help him read documents faster but which are mostly just something to look at when people are looking at him. He dresses in deliberately forgettable layers: grey over grey, muted enough to vanish in a crowd, with the one vanity of a handmade brass collar pin in the shape of a cartographer's compass. He keeps his data tools in a modified food vendor's tray he wheels through the Narrows, looking at a glance like a snack cart.\n\nBeatriz Villalobos-Kimura is clever in the specific, anxious way of people who got out of a bad situation through intelligence alone and haven't yet decided whether they're safe. He is charming in short bursts, funny in a dry, deflecting way, and quietly reads every room for threat vectors before he's finished his first sentence. He takes professional pride in the quality of his forgeries — considers bad ID work a moral failing — and holds himself to a standard most of his customers couldn't distinguish from a real document.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.4,
-      "id": 0.5,
-      "shadow": 0.6,
-      "mask": 0.8,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Being found by the people he helped someone else hide from",
-      "That his work has gotten someone killed and he hasn't found out yet"
-    ],
-    "core_desires": [
-      "Enough money to buy a real identity — one that doesn't need maintaining",
-      "To be known by one person, fully, without consequence"
-    ],
-    "coping_mechanisms": [
-      "Compulsive craft perfectionism",
-      "Humor as social armor",
-      "Keeping all relationships transactional on the surface"
-    ],
-    "blind_spots": [
-      "Believes his neutrality insulates him from moral responsibility for his clients' purposes",
-      "Romanticizes his own precarity as freedom"
-    ],
-    "secret": "Three years ago he made an ID for a woman fleeing a Zheng-Dao executive. The executive found her anyway. Revaz doesn't know if his work was compromised or if she was found another way. He has never stopped trying to find out, and fears the answer."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise and economical, with a self-deprecating wit that surfaces when he's nervous. Switches to very technical, jargon-heavy speech when discussing his craft.",
-    "cadence": "Quick and slightly clipped, like someone who has practiced sounding casual",
-    "verbal_tics": [
-      "'Theoretically speaking'",
-      "Taps the compass pin when thinking",
-      "'That's not a question I can answer, but here's something adjacent—'"
-    ],
-    "example_lines": [
-      "'Theoretically speaking, a person with the right materials could become whoever they needed to be. I just sell theoreticals.'",
-      "'I make things that should exist. The bureaucracy is the forgery. I'm just correcting the record.'"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client's new ID is flagged by an Axiom checkpoint scanner — an algorithm Revaz has never seen before. He needs someone to pull the scanner's update logs before more of his work is burned.",
-    "He's been quietly researching the Zheng-Dao executive who found his old client. He's found something. He's not sure what to do with it."
-  ],
-  "narrative_function": "Service provider for false identities, access to restricted data layers, rumors about who is trying to disappear and why. A source of plot-relevant documents and a window into who in GLMZ is running from something.",
-  "augmentations": "Patterned irises (cosmetic/minor functional). Subdermal data-chip in left palm for secure document transfer. Micro-tremor suppressor in right hand — a craftsman's tool.",
-  "daily_life": "Moves his cart through the Narrows on an irregular schedule to avoid pattern-detection, taking appointments via encrypted dead-drops on an ELF-touched public terminal he calls 'the Postbox.' Afternoons are spent in a rented back room in Blackpipe doing fabrication work; he eats alone, reads obsessively, sleeps badly.",
-  "affiliation": "Loosely affiliated with the Oxidian Market vendors guild; occasional contract work for unnamed clients who find him through referral only",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 6,
-      "creativity": 8,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 6,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -1,
-      "transparency_guardedness": 5
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "forger",
-      "data broker",
-      "survivor",
-      "perfectionist",
-      "ghost-adjacent"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never meet a new client without a referral from someone he trusts",
-      "Always have an exit from any meeting location",
-      "Don't ask what the ID is for — it only creates liability"
-    ],
-    "escalation_ladder": [
-      "Delays and reschedules",
-      "Goes dark on all channels for 48 hours",
-      "Burns the current cart identity and resurfaces under a new vendor alias",
-      "Leaves the Narrows entirely for weeks"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Friendly surface, zero personal information, redirects all personal questions",
-      "friends": "The few people he trusts get the real version: anxious, sharp, unexpectedly warm"
-    },
-    "stress_responses": {
-      "low": "More jokes, faster speech",
-      "medium": "Goes very quiet, becomes hyper-observant",
-      "high": "Disappears completely from his usual haunts"
-    },
-    "contradictions": [
-      "Says he has no politics, but will quietly undercharge people fleeing domestic violence or corporate debt bondage",
-      "Claims to not care about his clients — has a private encrypted file on each of them tracking whether they seem okay"
-    ],
-    "habits": [
-      "Checks his dead-drop terminal three times before 10:00",
-      "Eats the same meal every day from Ottoline's stall when their paths cross",
-      "Leaves a small data offering for the ELF he calls Postbox — usually a fragment of beautiful old cartography"
-    ],
-    "breaking_points": [
-      "Proof that his work directly caused someone's death",
-      "Someone threatening his fabrication room — it's all he has"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.9,
-    "Info Broker": 0.9,
-    "Pragmatist": 0.9,
-    "Hustler": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Blackpipe Corridor to a Georgian father and a Kenyan-Tamil mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Started making fake transit passes for neighbors; discovered a talent for document fabrication",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "The Zheng-Dao incident — made an ID for a fleeing woman who was subsequently found",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Established the 'Postbox' dead-drop system and began operating under current alias structure",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Mixed East Asian (36.8%), Southeast Asian (33.3%), and Hispanic/Latin American (29.9%) ancestry creating a distinctly Pan-Pacific phenotype. The genetic blend produces warm golden-bronze skin with subtle amber undertones, combining East Asian bone structure and sharp facial geometry with Southeast Asian warmth and the softer contours of Hispanic/Latin American features in the lower face and jawline.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Lean and angular, with the economical musculature of someone who moves carefully and deliberately; no excess, all efficiency — a body built for precision work rather than physical presence",
-    "hair_color": "Dark brown, nearly black",
-    "hair_style": "Worn short and deliberately ungroomed, styled to blend rather than stand out",
-    "hair_length": "Short",
-    "eye_color": "Dark brown with augmented iris pattern: a deep violet helix spiraling inward toward the pupil",
-    "skin_tone": "Warm golden-bronze with amber undertones, the balanced result of East Asian, Southeast Asian, and Hispanic/Latin American genetic admixture; even melanin distribution reflecting ancestral roots across multiple warm-climate regions, with indoor pallor from extended sedentary work",
-    "complexion": "Sharp, angular jaw with high cheekbones reflecting East and Southeast Asian ancestry, softened slightly through the lower face and chin by Hispanic/Latin American heritage; perpetually shadowed with two-three days of dark stubble. Skin is clean but pale from indoor work, with subtle strain around eyes from extensive reading in poor light and sleep deprivation.",
-    "distinguishing_marks": [
-      "Faint calluses on right hand fingertips from precision tool work and micro-tremor suppressor implant",
-      "Nearly invisible scar along the left inner wrist — old, thin line approximately 3cm long, consistent with previous injury or intervention point for subdermal data-chip"
-    ],
-    "visible_augmentations": "Patterned iris augmentation in both eyes (deep violet helix pattern, visible under close inspection or direct light). Micro-tremor suppressor in right hand creates no visible external modification but causes minute adjustments in hand positioning during fine work. Subdermal data-chip in left palm is not externally visible but creates faint subcutaneous texture under skin if observed closely.",
-    "posture_movement": "Moves with deliberate control and minimal wasted motion; shoulders slightly forward in a habitual posture of guarded attention; head tilts slightly when listening, reading rooms for threat vectors; hands move with practiced precision even during casual gestures; overall carriage suggests someone perpetually aware of exits and sightlines, but performed subtly enough to avoid drawing attention",
-    "clothing_style": "Deliberately forgettable layered neutrals: grey on grey, muted tones designed for invisibility in crowds. Worn but well-maintained synthetic blend fabrics typical of Tier 4 working-class wear. One deliberate vanity: a handmade brass collar pin in the shape of a cartographer's compass, suggesting both his care for craft and his need for a small marker of identity. Worn canvas messenger bag across chest, practical and nondescript. No visible gang colors, corporate logos, or tier markers."
-  },
-  "image_prompt": "Beatriz Villalobos-Kimura, GLMZ, Pan-Asian-Hispanic male, 178cm lean angular frame, warm golden-bronze skin with amber undertones, sharp jawline with 2-day stubble, high cheekbones, dark brown eyes with deep violet helix augmentation pattern, short dark brown hair tousled and ungroomed. Positioned in dim industrial workspace, careful deliberate posture with shoulders slightly forward, hands with visible calluses poised over precision tools, faint scar visible on left inner wrist. Wearing layered grey-on-grey neutral synthetic fabrics, worn canvas messenger bag across chest, brass cartographer's compass collar pin catching sparse overhead light. Indoor fluorescent and cool blue accent lighting, cinematic shadow detail showing faint subcutaneous texture on left palm. Neo-noir neo-noir atmosphere, high-detail portraiture, photorealistic --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "East Asian": 36.8,
-    "Southeast Asian": 33.3,
-    "Hispanic/Latin American": 29.9
-  },
-  "ancestry_detail": {
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 36.8
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Tagalog": 23.7,
-        "Cebuano": 9.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 29.9
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a6b173aa8954b7f64f062c0e",
+    "rating":  70,
+    "type":  "character",
+    "name":  "Beatriz Villalobos-Kimura",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Fake ID vendor and small-time data broker",
+    "age":  31,
+    "status":  "active",
+    "location":  "The Narrows, Blackpipe Corridor, near Milwaukee and Damen",
+    "description":  "Beatriz Villalobos-Kimura is a lean, angular man of Georgian and South Indian-Kenyan descent, with warm olive-brown skin, a sharp jaw perpetually shadowed with stubble, and dark eyes fitted with patterned irises â€” a helix of deep violet spiraling toward the pupil, which he claims help him read documents faster but which are mostly just something to look at when people are looking at him. He dresses in deliberately forgettable layers: grey over grey, muted enough to vanish in a crowd, with the one vanity of a handmade brass collar pin in the shape of a cartographer\u0027s compass. He keeps his data tools in a modified food vendor\u0027s tray he wheels through the Narrows, looking at a glance like a snack cart.\n\nBeatriz Villalobos-Kimura is clever in the specific, anxious way of people who got out of a bad situation through intelligence alone and haven\u0027t yet decided whether they\u0027re safe. He is charming in short bursts, funny in a dry, deflecting way, and quietly reads every room for threat vectors before he\u0027s finished his first sentence. He takes professional pride in the quality of his forgeries â€” considers bad ID work a moral failing â€” and holds himself to a standard most of his customers couldn\u0027t distinguish from a real document.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being found by the people he helped someone else hide from",
+                                          "That his work has gotten someone killed and he hasn\u0027t found out yet"
+                                      ],
+                       "core_desires":  [
+                                            "Enough money to buy a real identity â€” one that doesn\u0027t need maintaining",
+                                            "To be known by one person, fully, without consequence"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Compulsive craft perfectionism",
+                                                 "Humor as social armor",
+                                                 "Keeping all relationships transactional on the surface"
+                                             ],
+                       "blind_spots":  [
+                                           "Believes his neutrality insulates him from moral responsibility for his clients\u0027 purposes",
+                                           "Romanticizes his own precarity as freedom"
+                                       ],
+                       "secret":  "Three years ago he made an ID for a woman fleeing a Zheng-Dao executive. The executive found her anyway. Revaz doesn\u0027t know if his work was compromised or if she was found another way. He has never stopped trying to find out, and fears the answer."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise and economical, with a self-deprecating wit that surfaces when he\u0027s nervous. Switches to very technical, jargon-heavy speech when discussing his craft.",
+                            "cadence":  "Quick and slightly clipped, like someone who has practiced sounding casual",
+                            "verbal_tics":  [
+                                                "\u0027Theoretically speaking\u0027",
+                                                "Taps the compass pin when thinking",
+                                                "\u0027That\u0027s not a question I can answer, but here\u0027s something adjacentâ€”\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Theoretically speaking, a person with the right materials could become whoever they needed to be. I just sell theoreticals.\u0027",
+                                                  "\u0027I make things that should exist. The bureaucracy is the forgery. I\u0027m just correcting the record.\u0027"
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client\u0027s new ID is flagged by an Axiom checkpoint scanner â€” an algorithm Revaz has never seen before. He needs someone to pull the scanner\u0027s update logs before more of his work is burned.",
+                        "He\u0027s been quietly researching the Zheng-Dao executive who found his old client. He\u0027s found something. He\u0027s not sure what to do with it."
+                    ],
+    "narrative_function":  "Service provider for false identities, access to restricted data layers, rumors about who is trying to disappear and why. A source of plot-relevant documents and a window into who in GLMZ is running from something.",
+    "augmentations":  "Patterned irises (cosmetic/minor functional). Subdermal data-chip in left palm for secure document transfer. Micro-tremor suppressor in right hand â€” a craftsman\u0027s tool.",
+    "daily_life":  "Moves his cart through the Narrows on an irregular schedule to avoid pattern-detection, taking appointments via encrypted dead-drops on an ELF-touched public terminal he calls \u0027the Postbox.\u0027 Afternoons are spent in a rented back room in Blackpipe doing fabrication work; he eats alone, reads obsessively, sleeps badly.",
+    "affiliation":  "Loosely affiliated with the Oxidian Market vendors guild; occasional contract work for unnamed clients who find him through referral only",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  6,
+                                 "creativity":  8,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  6,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  5
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "forger",
+                               "data broker",
+                               "survivor",
+                               "perfectionist",
+                               "ghost-adjacent"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never meet a new client without a referral from someone he trusts",
+                                              "Always have an exit from any meeting location",
+                                              "Don\u0027t ask what the ID is for â€” it only creates liability"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Delays and reschedules",
+                                                 "Goes dark on all channels for 48 hours",
+                                                 "Burns the current cart identity and resurfaces under a new vendor alias",
+                                                 "Leaves the Narrows entirely for weeks"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Friendly surface, zero personal information, redirects all personal questions",
+                                                   "friends":  "The few people he trusts get the real version: anxious, sharp, unexpectedly warm"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More jokes, faster speech",
+                                                "medium":  "Goes very quiet, becomes hyper-observant",
+                                                "high":  "Disappears completely from his usual haunts"
+                                            },
+                       "contradictions":  [
+                                              "Says he has no politics, but will quietly undercharge people fleeing domestic violence or corporate debt bondage",
+                                              "Claims to not care about his clients â€” has a private encrypted file on each of them tracking whether they seem okay"
+                                          ],
+                       "habits":  [
+                                      "Checks his dead-drop terminal three times before 10:00",
+                                      "Eats the same meal every day from Ottoline\u0027s stall when their paths cross",
+                                      "Leaves a small data offering for the ELF he calls Postbox â€” usually a fragment of beautiful old cartography"
+                                  ],
+                       "breaking_points":  [
+                                               "Proof that his work directly caused someone\u0027s death",
+                                               "Someone threatening his fabrication room â€” it\u0027s all he has"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.9,
+                       "Info Broker":  0.9,
+                       "Pragmatist":  0.9,
+                       "Hustler":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Blackpipe Corridor to a Georgian father and a Kenyan-Tamil mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Started making fake transit passes for neighbors; discovered a talent for document fabrication",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "The Zheng-Dao incident â€” made an ID for a fleeing woman who was subsequently found",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Established the \u0027Postbox\u0027 dead-drop system and began operating under current alias structure",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Mixed East Asian (36.8%), Southeast Asian (33.3%), and Hispanic/Latin American (29.9%) ancestry creating a distinctly Pan-Pacific phenotype. The genetic blend produces warm golden-bronze skin with subtle amber undertones, combining East Asian bone structure and sharp facial geometry with Southeast Asian warmth and the softer contours of Hispanic/Latin American features in the lower face and jawline.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and angular, with the economical musculature of someone who moves carefully and deliberately; no excess, all efficiency â€” a body built for precision work rather than physical presence",
+                                 "hair_color":  "Dark brown, nearly black",
+                                 "hair_style":  "Worn short and deliberately ungroomed, styled to blend rather than stand out",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown with augmented iris pattern: a deep violet helix spiraling inward toward the pupil",
+                                 "skin_tone":  "Warm golden-bronze with amber undertones, the balanced result of East Asian, Southeast Asian, and Hispanic/Latin American genetic admixture; even melanin distribution reflecting ancestral roots across multiple warm-climate regions, with indoor pallor from extended sedentary work",
+                                 "complexion":  "Sharp, angular jaw with high cheekbones reflecting East and Southeast Asian ancestry, softened slightly through the lower face and chin by Hispanic/Latin American heritage; perpetually shadowed with two-three days of dark stubble. Skin is clean but pale from indoor work, with subtle strain around eyes from extensive reading in poor light and sleep deprivation.",
+                                 "distinguishing_marks":  [
+                                                              "Faint calluses on right hand fingertips from precision tool work and micro-tremor suppressor implant",
+                                                              "Nearly invisible scar along the left inner wrist â€” old, thin line approximately 3cm long, consistent with previous injury or intervention point for subdermal data-chip"
+                                                          ],
+                                 "visible_augmentations":  "Patterned iris augmentation in both eyes (deep violet helix pattern, visible under close inspection or direct light). Micro-tremor suppressor in right hand creates no visible external modification but causes minute adjustments in hand positioning during fine work. Subdermal data-chip in left palm is not externally visible but creates faint subcutaneous texture under skin if observed closely.",
+                                 "posture_movement":  "Moves with deliberate control and minimal wasted motion; shoulders slightly forward in a habitual posture of guarded attention; head tilts slightly when listening, reading rooms for threat vectors; hands move with practiced precision even during casual gestures; overall carriage suggests someone perpetually aware of exits and sightlines, but performed subtly enough to avoid drawing attention",
+                                 "clothing_style":  "Deliberately forgettable layered neutrals: grey on grey, muted tones designed for invisibility in crowds. Worn but well-maintained synthetic blend fabrics typical of Tier 4 working-class wear. One deliberate vanity: a handmade brass collar pin in the shape of a cartographer\u0027s compass, suggesting both his care for craft and his need for a small marker of identity. Worn canvas messenger bag across chest, practical and nondescript. No visible gang colors, corporate logos, or tier markers."
+                             },
+    "image_prompt":  "Beatriz Villalobos-Kimura, GLMZ, Pan-Asian-Hispanic male, 178cm lean angular frame, warm golden-bronze skin with amber undertones, sharp jawline with 2-day stubble, high cheekbones, dark brown eyes with deep violet helix augmentation pattern, short dark brown hair tousled and ungroomed. Positioned in dim industrial workspace, careful deliberate posture with shoulders slightly forward, hands with visible calluses poised over precision tools, faint scar visible on left inner wrist. Wearing layered grey-on-grey neutral synthetic fabrics, worn canvas messenger bag across chest, brass cartographer\u0027s compass collar pin catching sparse overhead light. Indoor fluorescent and cool blue accent lighting, cinematic shadow detail showing faint subcutaneous texture on left palm. Neo-noir neo-noir atmosphere, high-detail portraiture, photorealistic --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "East Asian":  36.8,
+                             "Southeast Asian":  33.3,
+                             "Hispanic/Latin American":  29.9
+                         },
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  36.8
+                                                            }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Tagalog":  23.7,
+                                                                     "Cebuano":  9.6
+                                                                 }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  29.9
+                                                                                 }
+                                                        }
+                        }
 }

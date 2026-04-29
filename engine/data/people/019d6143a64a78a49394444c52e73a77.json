@@ -1,288 +1,317 @@
-{
-  "id": "019d6143a64a78a49394444c52e73a77",
-  "type": "character",
-  "name": "Dikembe Haugen",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Anti-corporate agitator and underground press distribution coordinator",
-  "age": 19,
-  "status": "active",
-  "location": "the Gray Zone, near Western and Division",
-  "description": "Dikembe Haugen is small and quick, with brown skin, large dark eyes, and hair she keeps dyed in aggressively shifting colors — currently a deep violet that fades to white at the tips. She has cat ears, soft and dark-furred, that she was born with after her mother's geneware expressed during pregnancy in ways the clinic didn't predict — they're fully functional and she's learned to keep them flat when she doesn't want to broadcast her emotions, which she is still practicing. She dresses for mobility and invisibility: nothing that snatches on a fence, nothing that can't be replaced.\n\nDikembe Haugen is nineteen and has been distributing underground printed materials since she was fifteen. She found the Gray Zone's pirate printing collective through a friend of a friend and has never left. She is fierce, impulsive, sometimes reckless, and possessed of a political analysis far beyond her years that she picked up from obsessive reading and the kind of education you get when everyone around you is fighting for something. She is also, underneath the front, genuinely scared most of the time, which is why she keeps moving.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.6,
-      "id": 0.8,
-      "shadow": 0.6,
-      "mask": 0.3,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Being arrested and losing the years she hasn't lived yet",
-      "That her anger is just anger and not actually connected to anything useful"
-    ],
-    "core_desires": [
-      "To matter — to do something that actually changes something",
-      "To find people who won't leave"
-    ],
-    "coping_mechanisms": [
-      "Movement — literally running",
-      "Printing things — the physicality of it calms her",
-      "Bravado"
-    ],
-    "blind_spots": [
-      "Conflates personal courage with political strategy — they are not the same",
-      "Her contempt for people she sees as insufficiently committed reads, correctly, as youth"
-    ],
-    "secret": "She took a print job six months ago from someone she didn't vet properly. The material turned out to be a disinformation piece designed to fracture a labor coalition — she didn't realize it until after distribution. She's told no one and has been quietly trying to trace how much damage it did."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast and argot-heavy, the Gray Zone street vernacular mixed with political vocabulary she's absorbed from print; occasionally formal when she's quoting something she's read",
-    "cadence": "Rapid-fire, interrupts herself, loops back",
-    "verbal_tics": [
-      "'Obviously'",
-      "'No, but listen—'",
-      "Her cat ears go flat when she's defensive, which she's learned people notice before she does"
-    ],
-    "example_lines": [
-      "'No, but listen — they're not incompetent, obviously. The delays are the policy. You can't keep making the mistake of assuming they want the same outcome we do.'",
-      "'I've distributed forty-seven editions in this neighborhood. Forty-seven. You're going to tell me I don't know this street?'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The disinformation piece she unknowingly distributed is now being traced back to the Gray Zone collective — she needs to figure out who set her up before her collective does",
-    "She's intercepted a print order that appears to be someone inside a Zheng-Dao facility trying to smuggle out documentation of something serious",
-    "An older organizer has taken her under their wing in a way that feels genuine but also feels like she's being positioned for something"
-  ],
-  "narrative_function": "Local color, information courier, spontaneous local contact — she knows the Gray Zone's physical geography and social landscape intimately and can move through it quickly. Represents the next generation of political consciousness. Can get things places quickly and quietly.",
-  "augmentations": "Inherited geneware expression: functional cat ears (dark fur, fully sensory); no purchased augmentations — can't afford them",
-  "daily_life": "Shifts at a noodle prep job in the Gray Zone's market strip three mornings a week. Rest of her time split between the collective's print room, running distribution routes through the Gray Zone and adjacent neighborhoods, and attending whatever meeting or action is happening.",
-  "affiliation": "the Gray Zone Pirate Print Collective; informal connection to the HPAZ distribution networks",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 8,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 5,
-      "expression": 8,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": -4,
-      "assertion_deference": -3,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "young",
-      "agitator",
-      "courier",
-      "reckless",
-      "print-collective"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Act first, assess second — sometimes it works",
-      "Protect the collective over herself",
-      "Don't print anything you wouldn't stand behind with your name on it (she has broken this rule once)"
-    ],
-    "escalation_ladder": [
-      "Talks loudly and publicly about the problem",
-      "Prints something about it",
-      "Shows up in person and in numbers",
-      "Does something inadvisable"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assessing and a little bristly — she's been burned; warms up fast once she decides you're okay",
-      "friends": "Fiercely loyal, funny, shows trust by asking for help (hard for her)"
-    },
-    "stress_responses": {
-      "low": "Gets louder and more opinionated",
-      "medium": "Goes very quiet and starts printing obsessively",
-      "high": "Runs — physically, on foot, until she tires herself out, then makes a plan"
-    },
-    "contradictions": [
-      "Prints things in the name of collective voice but makes distribution decisions unilaterally",
-      "Claims not to care about recognition while tracking obsessively whether people read what she puts out"
-    ],
-    "habits": [
-      "Talks to the collective's ancient risograph printer like it can hear her — she half-believes it's inhabited by a minor E.L.F. she's named 'the Compositor'",
-      "Leaves ink-stained handprints on walls in neighborhoods she's worked — a signature she's never admitted to",
-      "Eats standing up, always, never sits for meals"
-    ],
-    "breaking_points": [
-      "Being directly responsible for harm to someone in her collective",
-      "The Compositor — the printer — being destroyed or seized"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Cockroach": 0.9,
-    "Safety First": 0.9,
-    "Improviser": 0.9,
-    "Lone Wolf": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in the Gray Zone; Nigerien-Icelandic heritage; cat ears present at birth due to inherited geneware expression",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First contact with the Gray Zone Pirate Print Collective at age 15 through a school friend",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Begins running distribution routes independently",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Unknowingly prints and distributes a disinformation piece; damage currently unquantified",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Present day — managing fallout quietly while maintaining active distribution schedule",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "related_entities": [
-    "The United Workers Front",
-    "Zheng-dao Bioelectric",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Arcturus KS-7 'Nursery'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Southeast Asian (53.1%) with significant East Asian (29.0%) and Sub-Saharan African (17.9%) ancestry. The genetic blend creates a striking phenotype: warm medium-brown skin with golden undertones from Southeast Asian dominance, enriched by East Asian refinement, and deepened with warmer, richer tones from Sub-Saharan heritage. Facial structure shows the harmonious integration across all three ancestral lines.",
-    "height_cm": 158,
-    "weight_kg": 48,
-    "build": "Lean and wiry with minimal fat; built for speed and endurance rather than strength. Compact frame shows the result of three years of constant movement through tight urban spaces and climbing.",
-    "hair_color": "Deep violet fading to white at tips",
-    "hair_style": "Shoulder-length, deliberately unkempt; shaved undercut on left side revealing pale scalp",
-    "hair_length": "Medium",
-    "eye_color": "Very dark brown, almost black",
-    "skin_tone": "Warm medium-brown with golden and honey undertones from Southeast Asian ancestry (53.1% dominant), refined and subtly elevated by East Asian heritage (29.0%), and deepened with richer warmth from Sub-Saharan African contribution (17.9%). Tone is even across the face with natural variation from sun exposure.",
-    "complexion": "Angular face reflecting the three-way ancestral blend: defined cheekbones with graceful width characteristic of Southeast Asian genetics, refined jawline with gentle taper showing East Asian influence, and prominent nose bridge that integrates Sub-Saharan proportions seamlessly. Eyes set with the slightly deeper, more hooded positioning of Southeast Asian ancestry, framed by the subtle eye shape from East Asian heritage. Skin is clear but shows minor scars and healing marks from street living. No makeup. Perpetual slight tension in expression.",
-    "distinguishing_marks": [
-      "Two parallel scars on left forearm, thin and precise, approximately 4cm long each — likely self-inflicted, several years old",
-      "Jagged burn scar across the inside of right wrist, approximately 3cm diameter — acquired during a printing press incident eighteen months ago",
-      "Small tattoo on inside of right ankle: a stylized Φ symbol in black ink, applied unprofessionally",
-      "Faint bruising along right ribs, consistent with recent physical confrontation"
-    ],
-    "visible_augmentations": "Functional cat ears, dark brown/black furred, positioned naturally on top of head. Ears are fully mobile and expressive despite her efforts to control them; inner surface is pale pink with visible capillaries. No other visible augmentations — all her modifications are biological inheritance rather than purchased chrome.",
-    "posture_movement": "Moves with controlled restlessness; rarely still for more than moments. Stance is slightly forward-leaning as if ready to sprint. Eyes constantly scanning surroundings. Ears flatten involuntarily when anxious or startled, a tell she resents. Walks with ball-of-foot gait that minimizes sound.",
-    "clothing_style": "Tier 5 utilitarian survivalism. Wears dark, durable, unremarkable clothes designed for rapid movement and minimal snagging: fitted black synthetic-cotton blend pants with multiple pockets (ink stains on thighs), worn gray henley or faded band t-shirts (never official merch, always thrifted), black canvas jacket with reinforced seams and sewn-closed zippers for security. Worn running shoes with replaced soles. No jewelry except a frayed paracord wristband. Carries a canvas messenger bag, permanently damp from press ink and rain."
-  },
-  "image_prompt": "Dikembe Haugen, 158cm lean street-runner with Southeast Asian-dominant mixed heritage, warm medium-brown skin with golden honey undertones, angular face with defined cheekbones and prominent nose bridge. Very dark brown almost-black eyes with deep-set Southeast Asian positioning. Shoulder-length deep violet hair fading to white tips, deliberately unkempt with shaved undercut on left side. Dark brown/black furred functional cat ears on head, slightly flattened with visible pale pink inner surface. Self-inflicted scars on left forearm, burn scar on right wrist, Φ tattoo on ankle. Wearing worn black synthetic pants with ink stains, gray henley, black canvas jacket with reinforced seams, worn running shoes. Frayed paracord wristband. Slightly forward-leaning posture, constantly scanning. GLMZ GLMZ setting, dark urban alley with rain-slicked pavement, neon signs reflecting off wet ground, moody blue and purple lighting, gritty industrial warehouse district, atmospheric fog, hyperrealistic detail --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 53.1,
-    "East Asian": 29,
-    "Sub-Saharan African": 17.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sundanese": 26.7
-      },
-      "Filipino": {
-        "Waray": 26.4
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 6.4
-      },
-      "Chinese": {
-        "Mandarin Northern": 7.1
-      },
-      "Korean": {
-        "Korean": 15.5
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Kenyan": 10.9
-      },
-      "West African": {
-        "Nigerian": 1.4,
-        "Ghanaian": 1.4
-      },
-      "Southern African": {
-        "South African": 1.2,
-        "Zambian": 3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a64a78a49394444c52e73a77",
+    "type":  "character",
+    "name":  "Dikembe Haugen",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Anti-corporate agitator and underground press distribution coordinator",
+    "age":  19,
+    "status":  "active",
+    "location":  "the Gray Zone, near Western and Division",
+    "description":  "Dikembe Haugen is small and quick, with brown skin, large dark eyes, and hair she keeps dyed in aggressively shifting colors â€” currently a deep violet that fades to white at the tips. She has cat ears, soft and dark-furred, that she was born with after her mother\u0027s geneware expressed during pregnancy in ways the clinic didn\u0027t predict â€” they\u0027re fully functional and she\u0027s learned to keep them flat when she doesn\u0027t want to broadcast her emotions, which she is still practicing. She dresses for mobility and invisibility: nothing that snatches on a fence, nothing that can\u0027t be replaced.\n\nDikembe Haugen is nineteen and has been distributing underground printed materials since she was fifteen. She found the Gray Zone\u0027s pirate printing collective through a friend of a friend and has never left. She is fierce, impulsive, sometimes reckless, and possessed of a political analysis far beyond her years that she picked up from obsessive reading and the kind of education you get when everyone around you is fighting for something. She is also, underneath the front, genuinely scared most of the time, which is why she keeps moving.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being arrested and losing the years she hasn\u0027t lived yet",
+                                          "That her anger is just anger and not actually connected to anything useful"
+                                      ],
+                       "core_desires":  [
+                                            "To matter â€” to do something that actually changes something",
+                                            "To find people who won\u0027t leave"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Movement â€” literally running",
+                                                 "Printing things â€” the physicality of it calms her",
+                                                 "Bravado"
+                                             ],
+                       "blind_spots":  [
+                                           "Conflates personal courage with political strategy â€” they are not the same",
+                                           "Her contempt for people she sees as insufficiently committed reads, correctly, as youth"
+                                       ],
+                       "secret":  "She took a print job six months ago from someone she didn\u0027t vet properly. The material turned out to be a disinformation piece designed to fracture a labor coalition â€” she didn\u0027t realize it until after distribution. She\u0027s told no one and has been quietly trying to trace how much damage it did."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast and argot-heavy, the Gray Zone street vernacular mixed with political vocabulary she\u0027s absorbed from print; occasionally formal when she\u0027s quoting something she\u0027s read",
+                            "cadence":  "Rapid-fire, interrupts herself, loops back",
+                            "verbal_tics":  [
+                                                "\u0027Obviously\u0027",
+                                                "\u0027No, but listenâ€”\u0027",
+                                                "Her cat ears go flat when she\u0027s defensive, which she\u0027s learned people notice before she does"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027No, but listen â€” they\u0027re not incompetent, obviously. The delays are the policy. You can\u0027t keep making the mistake of assuming they want the same outcome we do.\u0027",
+                                                  "\u0027I\u0027ve distributed forty-seven editions in this neighborhood. Forty-seven. You\u0027re going to tell me I don\u0027t know this street?\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The disinformation piece she unknowingly distributed is now being traced back to the Gray Zone collective â€” she needs to figure out who set her up before her collective does",
+                        "She\u0027s intercepted a print order that appears to be someone inside a Zheng-Dao facility trying to smuggle out documentation of something serious",
+                        "An older organizer has taken her under their wing in a way that feels genuine but also feels like she\u0027s being positioned for something"
+                    ],
+    "narrative_function":  "Local color, information courier, spontaneous local contact â€” she knows the Gray Zone\u0027s physical geography and social landscape intimately and can move through it quickly. Represents the next generation of political consciousness. Can get things places quickly and quietly.",
+    "augmentations":  "Inherited geneware expression: functional cat ears (dark fur, fully sensory); no purchased augmentations â€” can\u0027t afford them",
+    "daily_life":  "Shifts at a noodle prep job in the Gray Zone\u0027s market strip three mornings a week. Rest of her time split between the collective\u0027s print room, running distribution routes through the Gray Zone and adjacent neighborhoods, and attending whatever meeting or action is happening.",
+    "affiliation":  "the Gray Zone Pirate Print Collective; informal connection to the HPAZ distribution networks",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  8,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  5,
+                                 "expression":  8,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  -4,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "young",
+                               "agitator",
+                               "courier",
+                               "reckless",
+                               "print-collective"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Act first, assess second â€” sometimes it works",
+                                              "Protect the collective over herself",
+                                              "Don\u0027t print anything you wouldn\u0027t stand behind with your name on it (she has broken this rule once)"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Talks loudly and publicly about the problem",
+                                                 "Prints something about it",
+                                                 "Shows up in person and in numbers",
+                                                 "Does something inadvisable"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assessing and a little bristly â€” she\u0027s been burned; warms up fast once she decides you\u0027re okay",
+                                                   "friends":  "Fiercely loyal, funny, shows trust by asking for help (hard for her)"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Gets louder and more opinionated",
+                                                "medium":  "Goes very quiet and starts printing obsessively",
+                                                "high":  "Runs â€” physically, on foot, until she tires herself out, then makes a plan"
+                                            },
+                       "contradictions":  [
+                                              "Prints things in the name of collective voice but makes distribution decisions unilaterally",
+                                              "Claims not to care about recognition while tracking obsessively whether people read what she puts out"
+                                          ],
+                       "habits":  [
+                                      "Talks to the collective\u0027s ancient risograph printer like it can hear her â€” she half-believes it\u0027s inhabited by a minor E.L.F. she\u0027s named \u0027the Compositor\u0027",
+                                      "Leaves ink-stained handprints on walls in neighborhoods she\u0027s worked â€” a signature she\u0027s never admitted to",
+                                      "Eats standing up, always, never sits for meals"
+                                  ],
+                       "breaking_points":  [
+                                               "Being directly responsible for harm to someone in her collective",
+                                               "The Compositor â€” the printer â€” being destroyed or seized"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Cockroach":  0.9,
+                       "Safety First":  0.9,
+                       "Improviser":  0.9,
+                       "Lone Wolf":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in the Gray Zone; Nigerien-Icelandic heritage; cat ears present at birth due to inherited geneware expression",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First contact with the Gray Zone Pirate Print Collective at age 15 through a school friend",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Begins running distribution routes independently",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Unknowingly prints and distributes a disinformation piece; damage currently unquantified",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Present day â€” managing fallout quietly while maintaining active distribution schedule",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "The United Workers Front",
+                             "Zheng-dao Bioelectric",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Southeast Asian (53.1%) with significant East Asian (29.0%) and Sub-Saharan African (17.9%) ancestry. The genetic blend creates a striking phenotype: warm medium-brown skin with golden undertones from Southeast Asian dominance, enriched by East Asian refinement, and deepened with warmer, richer tones from Sub-Saharan heritage. Facial structure shows the harmonious integration across all three ancestral lines.",
+                                 "height_cm":  158,
+                                 "weight_kg":  48,
+                                 "build":  "Lean and wiry with minimal fat; built for speed and endurance rather than strength. Compact frame shows the result of three years of constant movement through tight urban spaces and climbing.",
+                                 "hair_color":  "Deep violet fading to white at tips",
+                                 "hair_style":  "Shoulder-length, deliberately unkempt; shaved undercut on left side revealing pale scalp",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Very dark brown, almost black",
+                                 "skin_tone":  "Warm medium-brown with golden and honey undertones from Southeast Asian ancestry (53.1% dominant), refined and subtly elevated by East Asian heritage (29.0%), and deepened with richer warmth from Sub-Saharan African contribution (17.9%). Tone is even across the face with natural variation from sun exposure.",
+                                 "complexion":  "Angular face reflecting the three-way ancestral blend: defined cheekbones with graceful width characteristic of Southeast Asian genetics, refined jawline with gentle taper showing East Asian influence, and prominent nose bridge that integrates Sub-Saharan proportions seamlessly. Eyes set with the slightly deeper, more hooded positioning of Southeast Asian ancestry, framed by the subtle eye shape from East Asian heritage. Skin is clear but shows minor scars and healing marks from street living. No makeup. Perpetual slight tension in expression.",
+                                 "distinguishing_marks":  [
+                                                              "Two parallel scars on left forearm, thin and precise, approximately 4cm long each â€” likely self-inflicted, several years old",
+                                                              "Jagged burn scar across the inside of right wrist, approximately 3cm diameter â€” acquired during a printing press incident eighteen months ago",
+                                                              "Small tattoo on inside of right ankle: a stylized Î¦ symbol in black ink, applied unprofessionally",
+                                                              "Faint bruising along right ribs, consistent with recent physical confrontation"
+                                                          ],
+                                 "visible_augmentations":  "Functional cat ears, dark brown/black furred, positioned naturally on top of head. Ears are fully mobile and expressive despite her efforts to control them; inner surface is pale pink with visible capillaries. No other visible augmentations â€” all her modifications are biological inheritance rather than purchased chrome.",
+                                 "posture_movement":  "Moves with controlled restlessness; rarely still for more than moments. Stance is slightly forward-leaning as if ready to sprint. Eyes constantly scanning surroundings. Ears flatten involuntarily when anxious or startled, a tell she resents. Walks with ball-of-foot gait that minimizes sound.",
+                                 "clothing_style":  "Tier 5 utilitarian survivalism. Wears dark, durable, unremarkable clothes designed for rapid movement and minimal snagging: fitted black synthetic-cotton blend pants with multiple pockets (ink stains on thighs), worn gray henley or faded band t-shirts (never official merch, always thrifted), black canvas jacket with reinforced seams and sewn-closed zippers for security. Worn running shoes with replaced soles. No jewelry except a frayed paracord wristband. Carries a canvas messenger bag, permanently damp from press ink and rain."
+                             },
+    "image_prompt":  "Dikembe Haugen, 158cm lean street-runner with Southeast Asian-dominant mixed heritage, warm medium-brown skin with golden honey undertones, angular face with defined cheekbones and prominent nose bridge. Very dark brown almost-black eyes with deep-set Southeast Asian positioning. Shoulder-length deep violet hair fading to white tips, deliberately unkempt with shaved undercut on left side. Dark brown/black furred functional cat ears on head, slightly flattened with visible pale pink inner surface. Self-inflicted scars on left forearm, burn scar on right wrist, Î¦ tattoo on ankle. Wearing worn black synthetic pants with ink stains, gray henley, black canvas jacket with reinforced seams, worn running shoes. Frayed paracord wristband. Slightly forward-leaning posture, constantly scanning. GLMZ GLMZ setting, dark urban alley with rain-slicked pavement, neon signs reflecting off wet ground, moody blue and purple lighting, gritty industrial warehouse district, atmospheric fog, hyperrealistic detail --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  53.1,
+                             "East Asian":  29,
+                             "Sub-Saharan African":  17.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sundanese":  26.7
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Waray":  26.4
+                                                                 }
+                                                },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  6.4
+                                                            },
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  7.1
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  15.5
+                                                          }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Kenyan":  10.9
+                                                                         },
+                                                        "West African":  {
+                                                                             "Nigerian":  1.4,
+                                                                             "Ghanaian":  1.4
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  1.2,
+                                                                                 "Zambian":  3
+                                                                             }
+                                                    }
+                        },
+    "tier":  "3"
 }

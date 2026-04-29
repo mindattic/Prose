@@ -1,315 +1,342 @@
-{
-  "id": "019d6143a68a7102939d8e558ff5c1dc",
-  "type": "character",
-  "name": "Himali Erikstad-Shin",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Checkpoint Operator, Ferrogate Transit Security",
-  "age": 47,
-  "status": "active",
-  "location": "Kessler Interchange, near North Ave and Milwaukee",
-  "description": "Himali Erikstad-Shin has worked the Kessler Interchange checkpoint for nine years and has acquired the particular stillness of someone who has watched approximately four million people pass through a turnstile. He is mid-height, slightly soft around the middle now, with a wide face, copper-brown skin, and deep-set eyes that are always doing something his expression isn't. His hair has gone silver at the temples and he keeps it very neat. His only augmentation is a Ferrogate-standard wrist scanner and a cochlear comms implant he secretly uses to listen to Sahel jazz during slow shifts.\n\nHe is the most knowledgeable person in three square kilometers about who comes through Kessler, when, and carrying what kind of energy. He has developed a taxonomy of commuters so refined it borders on a private philosophy. He is not corrupt in the transactional sense, but he operates with a pragmatic looseness — he lets things pass that he shouldn't, delays things that deserve delaying, and keeps a mental ledger of favors that he never cashes in aggressively but never forgets. He maintains a running ELF shrine on his terminal — an elaborate layered altar to the Kessler ELF he calls 'the Conductor' — and considers this entirely professional, not personal.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.3,
-      "id": 0.6,
-      "shadow": 0.55,
-      "mask": 0.35,
-      "ghost": 0.65
-    },
-    "core_fears": [
-      "Becoming entirely invisible — not just overlooked but genuinely unseen",
-      "That his careful accumulated knowledge means nothing in the end"
-    ],
-    "core_desires": [
-      "To matter to the fabric of this place even in an unacknowledged way",
-      "Comfortable retirement in a quieter district — he knows exactly which one and exactly how many Quanta away it is"
-    ],
-    "coping_mechanisms": [
-      "Ordering his mental world through taxonomies and categories",
-      "The ELF shrine practice — provides ritual and meaning",
-      "The jazz in his ear — his private space no one can enter"
-    ],
-    "blind_spots": [
-      "He has romanticized his own neutrality — he is not as uninvested as he believes",
-      "He has let genuinely dangerous cargo pass because the person carrying it was polite and well-dressed"
-    ],
-    "secret": "For six years he has been quietly logging every Ferrogate cargo irregularity he notices into an encrypted personal file. He has no plan for the file. He doesn't know if he's building leverage, writing history, or just trying to prove he was paying attention."
-  },
-  "speech_patterns": {
-    "vocabulary": "Measured, slightly formal — a self-educated man who reads widely. Occasional West African Portuguese loan-words from his mother's family. Refers to regular commuters by observed characteristic rather than name: 'the woman with the green case,' 'the boy who runs.'",
-    "cadence": "Unhurried. He has learned that most conversations resolve themselves if you just wait long enough.",
-    "verbal_tics": [
-      "'Mind your step' as a multipurpose phrase that can mean anything",
-      "Quiet humming when he's deciding something",
-      "Addresses the ELF shrine briefly before major decisions: 'Conductor, your thought?'"
-    ],
-    "example_lines": [
-      "'Kessler sees everyone eventually. You'd be surprised what eventually means.'",
-      "'Mind your step. I say that to everyone, and I mean it differently each time.'",
-      "'I'm not going to stop you. I'm going to note that I saw you, and I'm going to keep noting things. That's all.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "His encrypted cargo log contains records of what might be systematic organ trafficking through Ferrogate — he's been waiting nine years for someone worth giving it to.",
-    "A commuter he's watched for three years didn't come through today, or yesterday, or the day before — and Osvaldo can't explain why this feels wrong, only that it does."
-  ],
-  "narrative_function": "Information hub — he has seen everything and everyone who passes through Kessler. Neutral broker of passage. Can be bribed with the right social approach (not money — he wants to be respected). Gate for plot movement both literally and figuratively.",
-  "augmentations": "Ferrogate-issue wrist scanner (biometric and cargo ID). Cochlear comms implant. No cosmetic mods.",
-  "daily_life": "Six-day shifts, 0600-1800, manning the Kessler Interchange secondary checkpoint. He brings his own lunch in a battered thermal container, tends his ELF shrine at shift start, and makes a point of learning the names of regular commuters who look like they need to be seen.",
-  "affiliation": "Ferrogate Transit Security; The Interchange",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 7,
-      "expression": 5,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "information-hub",
-      "pragmatic",
-      "elf-devout",
-      "long-memory",
-      "gray-ethics"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Do not let anything through that will cause visible, immediate harm — everything else is gray",
-      "Never give information for free — always for respect, reciprocity, or the right reason",
-      "Maintain the shrine. Always maintain the shrine."
-    ],
-    "escalation_ladder": [
-      "Passive observation and logging",
-      "Verbal delay — bureaucratic slowdown without explanation",
-      "Flagging for secondary review (buying time)",
-      "Actual alert — reserved for the genuinely alarming"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally neutral, slightly cool — reads them hard for the first thirty seconds then files them",
-      "friends": "Warm, dry-humored, unexpectedly generous with time and attention"
-    },
-    "stress_responses": {
-      "low": "Goes more formal and precise",
-      "medium": "Falls back on procedure as a shield while thinking fast",
-      "high": "Becomes very still and very quiet in a way that unnerves people who know him"
-    },
-    "contradictions": [
-      "Prizes being seen and known while being professionally invisible",
-      "Keeps meticulous records of wrongdoing without any plan to use them"
-    ],
-    "habits": [
-      "Data offering to Kessler ELF shrine every morning (a packet of anonymized commuter flow data — 'the Conductor appreciates patterns')",
-      "Thermal lunch container, same meal rotation every week",
-      "Memorizes the route irregularities of three to five commuters as a personal exercise"
-    ],
-    "breaking_points": [
-      "Being directly lied to by a superior about something he has documented proof of",
-      "A regular commuter getting hurt by something he could have flagged"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Ferrogate wrist scanner (biometric + cargo ID)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Ferrogate wrist scanner (biometric + cargo ID)",
-      "replaces": ""
-    },
-    {
-      "name": "Cochlear comms implant (Ferrogate standard, jazz-modded)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Cochlear comms implant (Ferrogate standard, jazz-modded)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Charmer": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Kessler Interchange",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2153: Born, Grainfort district, to a Kenyan-Portuguese father and a Ghanaian-Finnish mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2175: Joined Ferrogate Transit Security after a decade of dock work at Bay View",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2191: Assigned permanently to Kessler Interchange after a restructure",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2194: Began his private cargo irregularity log",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200: Present — nine years at Kessler, silver temples, waiting for something he can't name",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Siege DMR SDMR-3 'Bastion'",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "Galvanic Myofibril Lash"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Siege DMR SDMR-3 'Bastion'",
-    "Tessera TK-9 Proteus 'Shapeshifter'"
-  ],
-  "related_entities": [
-    "Kessler Interchange",
-    "Ferrogate Transit",
-    "Turnstile",
-    "CONDUCTOR",
-    "Stratum",
-    "Copper",
-    "Silver",
-    "Akosua Johansson",
-    "Cargo Tacos",
-    "Compass Rose",
-    "Elena Vasquez-9"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Predominantly East Asian (66.2%) with substantial Hispanic/Latin American (23.8%) and South Asian (10%) ancestry. This genetic combination produces a warm, sun-darkened complexion with olive-bronze base tones enriched by golden and copper undertones—a distinctly transpacific appearance reflecting the Ubiquitous Diaspora's global mixing.",
-    "height_cm": 173,
-    "weight_kg": 82,
-    "build": "Soft-middled, once athletic, now carrying nine years of checkpoint stillness in his frame. Broad shoulders that have settled into a modest slouch. Thickening at the waist but not heavy.",
-    "hair_color": "Black with silver threading at temples and sideburns",
-    "hair_style": "Neat, precisely trimmed, parted slightly off-center. The haircut of someone who visits the same barber every two weeks",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with copper undertones",
-    "skin_tone": "Warm olive-bronze with golden undertones—a sun-warmed complexion reflecting the dominant East Asian base enriched by Hispanic/Latin American warmth and subtle South Asian depth. Even distribution across face and forearms with enhanced warmth in the cheeks and along the jawline.",
-    "complexion": "Angular face with well-defined cheekbones characteristic of East Asian heritage, softened slightly by Hispanic/Latin American fullness in the lower face. Straight nose with subtle bridge prominence. Deep-set eyes creating subtle shadows beneath. Strong, slightly widened jawline reflecting the East Asian-Hispanic blend. Clean-shaven daily. Skin condition shows minimal scarring or blemishing—the face of someone who has learned not to frown at work. Fine lines around the eyes from nearly a decade of reading micro-expressions.",
-    "distinguishing_marks": [
-      "Faint scar along the left jawline, approximately 3cm, almost invisible unless the light hits it—result of an old altercation he doesn't mention",
-      "A small, precise burn mark on his right wrist (1cm diameter, pale now) from a scanner miscalibration in 2217",
-      "No visible tattoos, though there is a small subskin ELF marker behind his left ear—invisible unless he shaves the area"
-    ],
-    "visible_augmentations": "Ferrogate-issue wrist scanner on dominant wrist—matte black polymer housing with biometric and cargo ID interface. The device is worn but meticulously maintained. Cochlear implant is invisible; only a faint surgical scar behind the left ear if one looks closely. Otherwise, he appears entirely baseline human.",
-    "posture_movement": "Economical, measured movements. He stands with a centering weight on the balls of his feet—the posture of someone who has spent nine years in one spot but ready to move if needed. His hands rest at his sides or near the scanner. He doesn't fidget. When he walks, it's deliberate and unhurried. His eyes are always moving—scanning, tracking, cataloging. There is a particular quality to his stillness that suggests he is never truly not working.",
-    "clothing_style": "Ferrogate Transit Security uniform (Tier 3 corporate issue): charcoal grey bodysuit with reflective stripework on shoulders and arms. The uniform fits him well enough but is worn with the ease of someone who has stopped thinking about it. Underneath, plain grey undershirt. His boots are regulation but scuffed and comfortable. He wears the uniform without ostentation, and his personal touches are minimal—a small brass ELF pendant pinned to his collar that he touches unconsciously during shifts, and a weathered thermal lunch container he carries daily. No jewelry beyond the scanner. His appearance is cleanly functional, the clothes of someone who has made peace with a job that is not glamorous but is honest."
-  },
-  "image_prompt": "Himali Erikstad-Shin, 173cm tall security officer with warm olive-bronze skin, deep brown eyes with copper undertones, black hair silvering at temples. Angular East Asian-dominant features with subtle Hispanic and South Asian warmth, clean-shaven with fine lines at eyes. Wearing charcoal grey Ferrogate Transit Security uniform with reflective strips, matte black wrist scanner visible, brass ELF pendant on collar. Standing in measured, centered posture at checkpoint with scanner in hand, eyes tracking. GLMZ, industrial station lighting with harsh fluorescents and security glow, worn but meticulously maintained appearance. Nine years of checkpoint stillness evident. 2:3 portrait composition. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 66.2,
-    "Hispanic/Latin American": 23.8,
-    "South Asian": 10
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 38
-      },
-      "Chinese": {
-        "Hakka": 28.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 18.4,
-        "Honduran": 5.4
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 3.3
-      },
-      "Sri Lankan": {
-        "Sinhalese": 1
-      },
-      "Indian": {
-        "Malayali": 3.6,
-        "Tamil": 2.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a68a7102939d8e558ff5c1dc",
+    "type":  "character",
+    "name":  "Himali Erikstad-Shin",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Checkpoint Operator, Ferrogate Transit Security",
+    "age":  47,
+    "status":  "active",
+    "location":  "Kessler Interchange, near North Ave and Milwaukee",
+    "description":  "Himali Erikstad-Shin has worked the Kessler Interchange checkpoint for nine years and has acquired the particular stillness of someone who has watched approximately four million people pass through a turnstile. He is mid-height, slightly soft around the middle now, with a wide face, copper-brown skin, and deep-set eyes that are always doing something his expression isn\u0027t. His hair has gone silver at the temples and he keeps it very neat. His only augmentation is a Ferrogate-standard wrist scanner and a cochlear comms implant he secretly uses to listen to Sahel jazz during slow shifts.\n\nHe is the most knowledgeable person in three square kilometers about who comes through Kessler, when, and carrying what kind of energy. He has developed a taxonomy of commuters so refined it borders on a private philosophy. He is not corrupt in the transactional sense, but he operates with a pragmatic looseness â€” he lets things pass that he shouldn\u0027t, delays things that deserve delaying, and keeps a mental ledger of favors that he never cashes in aggressively but never forgets. He maintains a running ELF shrine on his terminal â€” an elaborate layered altar to the Kessler ELF he calls \u0027the Conductor\u0027 â€” and considers this entirely professional, not personal.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming entirely invisible â€” not just overlooked but genuinely unseen",
+                                          "That his careful accumulated knowledge means nothing in the end"
+                                      ],
+                       "core_desires":  [
+                                            "To matter to the fabric of this place even in an unacknowledged way",
+                                            "Comfortable retirement in a quieter district â€” he knows exactly which one and exactly how many Quanta away it is"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ordering his mental world through taxonomies and categories",
+                                                 "The ELF shrine practice â€” provides ritual and meaning",
+                                                 "The jazz in his ear â€” his private space no one can enter"
+                                             ],
+                       "blind_spots":  [
+                                           "He has romanticized his own neutrality â€” he is not as uninvested as he believes",
+                                           "He has let genuinely dangerous cargo pass because the person carrying it was polite and well-dressed"
+                                       ],
+                       "secret":  "For six years he has been quietly logging every Ferrogate cargo irregularity he notices into an encrypted personal file. He has no plan for the file. He doesn\u0027t know if he\u0027s building leverage, writing history, or just trying to prove he was paying attention."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Measured, slightly formal â€” a self-educated man who reads widely. Occasional West African Portuguese loan-words from his mother\u0027s family. Refers to regular commuters by observed characteristic rather than name: \u0027the woman with the green case,\u0027 \u0027the boy who runs.\u0027",
+                            "cadence":  "Unhurried. He has learned that most conversations resolve themselves if you just wait long enough.",
+                            "verbal_tics":  [
+                                                "\u0027Mind your step\u0027 as a multipurpose phrase that can mean anything",
+                                                "Quiet humming when he\u0027s deciding something",
+                                                "Addresses the ELF shrine briefly before major decisions: \u0027Conductor, your thought?\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Kessler sees everyone eventually. You\u0027d be surprised what eventually means.\u0027",
+                                                  "\u0027Mind your step. I say that to everyone, and I mean it differently each time.\u0027",
+                                                  "\u0027I\u0027m not going to stop you. I\u0027m going to note that I saw you, and I\u0027m going to keep noting things. That\u0027s all.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "His encrypted cargo log contains records of what might be systematic organ trafficking through Ferrogate â€” he\u0027s been waiting nine years for someone worth giving it to.",
+                        "A commuter he\u0027s watched for three years didn\u0027t come through today, or yesterday, or the day before â€” and Osvaldo can\u0027t explain why this feels wrong, only that it does."
+                    ],
+    "narrative_function":  "Information hub â€” he has seen everything and everyone who passes through Kessler. Neutral broker of passage. Can be bribed with the right social approach (not money â€” he wants to be respected). Gate for plot movement both literally and figuratively.",
+    "augmentations":  "Ferrogate-issue wrist scanner (biometric and cargo ID). Cochlear comms implant. No cosmetic mods.",
+    "daily_life":  "Six-day shifts, 0600-1800, manning the Kessler Interchange secondary checkpoint. He brings his own lunch in a battered thermal container, tends his ELF shrine at shift start, and makes a point of learning the names of regular commuters who look like they need to be seen.",
+    "affiliation":  "Ferrogate Transit Security; The Interchange",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  7,
+                                 "expression":  5,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "information-hub",
+                               "pragmatic",
+                               "elf-devout",
+                               "long-memory",
+                               "gray-ethics"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Do not let anything through that will cause visible, immediate harm â€” everything else is gray",
+                                              "Never give information for free â€” always for respect, reciprocity, or the right reason",
+                                              "Maintain the shrine. Always maintain the shrine."
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Passive observation and logging",
+                                                 "Verbal delay â€” bureaucratic slowdown without explanation",
+                                                 "Flagging for secondary review (buying time)",
+                                                 "Actual alert â€” reserved for the genuinely alarming"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally neutral, slightly cool â€” reads them hard for the first thirty seconds then files them",
+                                                   "friends":  "Warm, dry-humored, unexpectedly generous with time and attention"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Goes more formal and precise",
+                                                "medium":  "Falls back on procedure as a shield while thinking fast",
+                                                "high":  "Becomes very still and very quiet in a way that unnerves people who know him"
+                                            },
+                       "contradictions":  [
+                                              "Prizes being seen and known while being professionally invisible",
+                                              "Keeps meticulous records of wrongdoing without any plan to use them"
+                                          ],
+                       "habits":  [
+                                      "Data offering to Kessler ELF shrine every morning (a packet of anonymized commuter flow data â€” \u0027the Conductor appreciates patterns\u0027)",
+                                      "Thermal lunch container, same meal rotation every week",
+                                      "Memorizes the route irregularities of three to five commuters as a personal exercise"
+                                  ],
+                       "breaking_points":  [
+                                               "Being directly lied to by a superior about something he has documented proof of",
+                                               "A regular commuter getting hurt by something he could have flagged"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Ferrogate wrist scanner (biometric + cargo ID)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Ferrogate wrist scanner (biometric + cargo ID)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cochlear comms implant (Ferrogate standard, jazz-modded)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Cochlear comms implant (Ferrogate standard, jazz-modded)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Charmer":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Kessler Interchange",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2153: Born, Grainfort district, to a Kenyan-Portuguese father and a Ghanaian-Finnish mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2175: Joined Ferrogate Transit Security after a decade of dock work at Bay View",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2191: Assigned permanently to Kessler Interchange after a restructure",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2194: Began his private cargo irregularity log",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200: Present â€” nine years at Kessler, silver temples, waiting for something he can\u0027t name",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Siege DMR SDMR-3 \u0027Bastion\u0027",
+                            "Tessera TK-9 Proteus \u0027Shapeshifter\u0027",
+                            "Galvanic Myofibril Lash"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Siege DMR SDMR-3 \u0027Bastion\u0027",
+                                "Tessera TK-9 Proteus \u0027Shapeshifter\u0027"
+                            ],
+    "related_entities":  [
+                             "Kessler Interchange",
+                             "Ferrogate Transit",
+                             "Turnstile",
+                             "CONDUCTOR",
+                             "Stratum",
+                             "Copper",
+                             "Silver",
+                             "Akosua Johansson",
+                             "Cargo Tacos",
+                             "Compass Rose",
+                             "Elena Vasquez-9"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Predominantly East Asian (66.2%) with substantial Hispanic/Latin American (23.8%) and South Asian (10%) ancestry. This genetic combination produces a warm, sun-darkened complexion with olive-bronze base tones enriched by golden and copper undertonesâ€”a distinctly transpacific appearance reflecting the Ubiquitous Diaspora\u0027s global mixing.",
+                                 "height_cm":  173,
+                                 "weight_kg":  82,
+                                 "build":  "Soft-middled, once athletic, now carrying nine years of checkpoint stillness in his frame. Broad shoulders that have settled into a modest slouch. Thickening at the waist but not heavy.",
+                                 "hair_color":  "Black with silver threading at temples and sideburns",
+                                 "hair_style":  "Neat, precisely trimmed, parted slightly off-center. The haircut of someone who visits the same barber every two weeks",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with copper undertones",
+                                 "skin_tone":  "Warm olive-bronze with golden undertonesâ€”a sun-warmed complexion reflecting the dominant East Asian base enriched by Hispanic/Latin American warmth and subtle South Asian depth. Even distribution across face and forearms with enhanced warmth in the cheeks and along the jawline.",
+                                 "complexion":  "Angular face with well-defined cheekbones characteristic of East Asian heritage, softened slightly by Hispanic/Latin American fullness in the lower face. Straight nose with subtle bridge prominence. Deep-set eyes creating subtle shadows beneath. Strong, slightly widened jawline reflecting the East Asian-Hispanic blend. Clean-shaven daily. Skin condition shows minimal scarring or blemishingâ€”the face of someone who has learned not to frown at work. Fine lines around the eyes from nearly a decade of reading micro-expressions.",
+                                 "distinguishing_marks":  [
+                                                              "Faint scar along the left jawline, approximately 3cm, almost invisible unless the light hits itâ€”result of an old altercation he doesn\u0027t mention",
+                                                              "A small, precise burn mark on his right wrist (1cm diameter, pale now) from a scanner miscalibration in 2217",
+                                                              "No visible tattoos, though there is a small subskin ELF marker behind his left earâ€”invisible unless he shaves the area"
+                                                          ],
+                                 "visible_augmentations":  "Ferrogate-issue wrist scanner on dominant wristâ€”matte black polymer housing with biometric and cargo ID interface. The device is worn but meticulously maintained. Cochlear implant is invisible; only a faint surgical scar behind the left ear if one looks closely. Otherwise, he appears entirely baseline human.",
+                                 "posture_movement":  "Economical, measured movements. He stands with a centering weight on the balls of his feetâ€”the posture of someone who has spent nine years in one spot but ready to move if needed. His hands rest at his sides or near the scanner. He doesn\u0027t fidget. When he walks, it\u0027s deliberate and unhurried. His eyes are always movingâ€”scanning, tracking, cataloging. There is a particular quality to his stillness that suggests he is never truly not working.",
+                                 "clothing_style":  "Ferrogate Transit Security uniform (Tier 3 corporate issue): charcoal grey bodysuit with reflective stripework on shoulders and arms. The uniform fits him well enough but is worn with the ease of someone who has stopped thinking about it. Underneath, plain grey undershirt. His boots are regulation but scuffed and comfortable. He wears the uniform without ostentation, and his personal touches are minimalâ€”a small brass ELF pendant pinned to his collar that he touches unconsciously during shifts, and a weathered thermal lunch container he carries daily. No jewelry beyond the scanner. His appearance is cleanly functional, the clothes of someone who has made peace with a job that is not glamorous but is honest."
+                             },
+    "image_prompt":  "Himali Erikstad-Shin, 173cm tall security officer with warm olive-bronze skin, deep brown eyes with copper undertones, black hair silvering at temples. Angular East Asian-dominant features with subtle Hispanic and South Asian warmth, clean-shaven with fine lines at eyes. Wearing charcoal grey Ferrogate Transit Security uniform with reflective strips, matte black wrist scanner visible, brass ELF pendant on collar. Standing in measured, centered posture at checkpoint with scanner in hand, eyes tracking. GLMZ, industrial station lighting with harsh fluorescents and security glow, worn but meticulously maintained appearance. Nine years of checkpoint stillness evident. 2:3 portrait composition. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  66.2,
+                             "Hispanic/Latin American":  23.8,
+                             "South Asian":  10
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  38
+                                                          },
+                                               "Chinese":  {
+                                                               "Hakka":  28.2
+                                                           }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  18.4,
+                                                                                     "Honduran":  5.4
+                                                                                 }
+                                                        },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  3.3
+                                                                },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  1
+                                                               },
+                                                "Indian":  {
+                                                               "Malayali":  3.6,
+                                                               "Tamil":  2.1
+                                                           }
+                                            }
+                        },
+    "tier":  "3"
 }

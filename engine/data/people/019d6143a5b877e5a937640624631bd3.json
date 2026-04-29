@@ -1,354 +1,365 @@
-{
-  "id": "019d6143a5b877e5a937640624631bd3",
-  "type": "character",
-  "name": "Basanti Bustamante",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Counter-surveillance and mole detection — counterintelligence specialist",
-  "age": 22,
-  "status": "active",
-  "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Halsted and Chicago Ave",
-  "description": "Basanti Bustamante is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 22, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a counterintelligence specialist out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Basanti Bustamante is known for getting the job done and not asking questions that would make the job harder to stomach.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.91,
-      "ideal": 0.15,
-      "id": 0.44,
-      "shadow": 0.39,
-      "mask": 0.93,
-      "ghost": 0.58
-    },
-    "core_fears": [
-      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "That they're fundamentally alone and connection is just a vulnerability"
-    ],
-    "core_desires": [
-      "A crew worth trusting — people who stay when the shooting starts",
-      "To find the person who burned them and make it educational",
-      "To matter to someone for who they are, not what they can do"
-    ],
-    "coping_mechanisms": [
-      "Planning — responds to chaos by making detailed contingency plans for everything",
-      "Humor — deflects everything serious with jokes until the joke becomes the personality",
-      "Denial — nothing is wrong, everything is fine, they are fine, shut up"
-    ],
-    "blind_spots": [
-      "Assumes their skill set is more transferable than it actually is",
-      "Assumes everyone has an angle because they always have an angle",
-      "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
-    ],
-    "secret": "Aslan Kimura-Nkrumah once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what's left of their independence."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
-    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
-    "verbal_tics": [
-      "Swears in three languages, often in the same sentence",
-      "Pauses mid-sentence to listen — combat habit that bleeds into conversation"
-    ],
-    "example_lines": [
-      "\"Everyone in this room is lying. My job is knowing who's lying about what.\"",
-      "\"Paranoia isn't a disorder in this profession. It's a job requirement.\"",
-      "\"I find the leak. What happens to the leak after that isn't my department.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A dead drop Aslan Kimura-Nkrumah maintains is found and cleaned out — whoever did it now has leverage",
-    "Someone is impersonating Aslan Kimura-Nkrumah on jobs, and the impersonator is better at the work than the original",
-    "Aslan Kimura-Nkrumah discovers a job they completed last year was a setup for something much larger and much worse"
-  ],
-  "narrative_function": "Aslan Kimura-Nkrumah functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate. Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
-  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Freelance — works the Gray Zone circuit exclusively",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 9
-      },
-      "agility": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 4
-      },
-      "endurance": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 5
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 10
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 10
-      },
-      "perception": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 7
-      },
-      "willpower": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 10
-      },
-      "technical": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 6
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 10
-      },
-      "intimidation": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 6
-      },
-      "deception": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 5
-      },
-      "empathy": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.3,
-      "caution": 0.96,
-      "loyalty": 0.57,
-      "greed": 0.72,
-      "empathy": 0.93
-    },
-    "drives": [
-      "survival",
-      "money",
-      "loyalty"
-    ],
-    "thresholds": {
-      "pain": 9,
-      "stress": 6,
-      "loyalty_break": 8
-    },
-    "strengths": [
-      "technical expertise with augmentation systems",
-      "expert marksman",
-      "network of reliable contacts"
-    ],
-    "weaknesses": [
-      "old injury that flares under specific conditions",
-      "difficulty with authority figures"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "counterintelligence specialist",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Always has an exit route planned before agreeing to any meeting",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
-      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
-    ],
-    "habits": [
-      "Checks exits within 10 seconds of entering any room",
-      "Carries a specific caliber round as a lucky charm — has never fired it",
-      "Eats the same meal before every job — superstition masquerading as preference",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
-    ],
-    "breaking_points": [
-      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Pain editor",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
-      "replaces": ""
-    },
-    {
-      "name": "Bone lacing",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Sentinel": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Crucible Square",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Kang-Petrov Arms KPR-357 'Journeyman'"
-  ],
-  "registered_firearms": [
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Kang-Petrov Arms KPR-357 'Journeyman'"
-  ],
-  "related_entities": [
-    "Masquerade",
-    "The Heritage Vault",
-    "Diaspora Table",
-    "Stratum",
-    "Chicago",
-    "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (66.2%) with significant Northern European (22.4%) and Middle Eastern (11.4%) ancestry. The blend creates warm olive-bronze skin with golden undertones, angular facial structure from the Middle Eastern component, and a synthesis that reads as genuinely mixed without single-region dominance. Features Mediterranean warmth layered over Northern European bone structure.",
-    "height_cm": 183,
-    "weight_kg": 61,
-    "build": "Rawboned and lean — minimal body fat, defined musculature from functional training rather than aesthetics. Shoulders broad and squared from years of combat conditioning. Frame suggests efficiency over comfort.",
-    "hair_color": "Black with natural blue undertones in direct light",
-    "hair_style": "Pulled back in a tight, practical braid that sits low on her neck. No ornamentation. Occasionally worn loose but quickly retied when work begins.",
-    "hair_length": "Medium — falls to mid-shoulder when unbound",
-    "eye_color": "Dark brown, sharp and analytically focused. Eyes track movement with predatory precision.",
-    "skin_tone": "Warm olive-bronze with golden-amber undertones across cheekbones and nose bridge. Even distribution across face and body with subtle peachy warmth at temples and jawline — the result of Hispanic/Latin American warmth modified by Northern European and Middle Eastern ancestry.",
-    "complexion": "Gaunt cheeks, prominent angular jaw reflecting Middle Eastern ancestry. Minimal scarring on face suggests deliberate avoidance or fast reflexes. Skin texture shows dehydration from nocturnal lifestyle—not unhealthy, but tired. No makeup. Eyes carry the hollow awareness of chronic sleep disruption.",
-    "distinguishing_marks": [
-      "Faint white line scar along left temple, approximately 3cm, running toward hairline — old trauma, cleanly healed",
-      "Tattoo on inner left wrist: minimalist circuit board pattern in silver ink, approximately 4cm wide — personal mark, not gang affiliation",
-      "Small burn scar on right palm, circular, approximately 1cm diameter — equipment malfunction or deliberate test"
-    ],
-    "visible_augmentations": "Chrome pain editor housing visible on left side of neck, just below the jaw — matte titanium surface with subtle LED indicator (dark when inactive, amber when running). The titanium bone lacing is not visibly apparent beneath intact skin, but close observation reveals subtle angular distortions in her wrists and knuckles where the mesh creates slight bulges under dermis.",
-    "posture_movement": "Economical and predatory. Stands with shoulders slightly forward and weight distributed for immediate movement in any direction. Walks with minimal wasted motion — knees slightly bent, ready to shift stance. Eyes constantly scan environments for exits, threats, and information. Hands rest naturally at sides or on equipment, never crossed or defensive. Movements are fluid but never relaxed.",
-    "clothing_style": "Function-first, Tier 3-4 utilitarian aesthetic. Black matte tactical trousers with reinforced panels at knees and thighs — worn from frequent use. Dark gray compression shirt under a modified field jacket in charcoal synthetic leather, oversized enough to conceal equipment and augmentation but tailored to not impede movement. Worn boots with reinforced soles and ankle support — scuffed from active work. Minimal jewelry: single silver ring on right middle finger, likely a memento. No corporate branding. Gear organized on belt with pragmatic purpose — encrypted comm unit, lockpick set, small medkit, spare ammunition magazine for sidearm kept in shoulder holster."
-  },
-  "image_prompt": "Basanti Bustamante, 183cm lean operative with warm olive-bronze skin and golden undertones, angular Middle Eastern-influenced jaw, dark brown predatory eyes. Black hair braided low, blue undertones in harsh light. Gaunt cheeks, tired from nocturnal work, faint 3cm scar along left temple. Visible matte titanium pain editor on left neck with dark LED. Circuit board tattoo on inner left wrist, burn scar on right palm. Wearing charcoal synthetic leather field jacket over dark gray compression shirt, black tactical trousers with reinforced knees, worn boots. Standing in economical ready stance, shoulders forward, scanning for threats. Shoulder holster visible, belt with encrypted comm and lockpicks. Single silver ring. GLMZ aesthetic, neon-lit shadows, moody underground setting, cool blues and amber accent lighting, cinematic depth, neo-noir noir atmosphere --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 66.2,
-    "Northern European": 22.4,
-    "Middle Eastern": 11.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Haitian": 19.4
-      },
-      "South American": {
-        "Brazilian": 22.4
-      },
-      "Central American": {
-        "Honduran": 8.3,
-        "Costa Rican": 16.1
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Danish": 17.9
-      },
-      "Germanic": {
-        "Dutch": 0.6
-      },
-      "British Isles": {
-        "English": 3.9
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 8.4
-      },
-      "Persian": {
-        "Iranian": 3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5b877e5a937640624631bd3",
+    "type":  "character",
+    "name":  "Basanti Bustamante",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Counter-surveillance and mole detection â€” counterintelligence specialist",
+    "age":  22,
+    "status":  "active",
+    "location":  "Crucible Square â€” open-air market, Tier 1-2 commerce, near Halsted and Chicago Ave",
+    "description":  "Basanti Bustamante is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 22, her face carries the layered heritage of generations of diaspora mixing â€” features that resist easy categorization and reward attention. The chrome is visible â€” pain editor â€” dampens pain signals, allows function through injuries that would â€” and she makes no effort to hide it.\n\nMilitary training â€” one of the private security corps that folded during the consolidation wars â€” left her with skills and night terrors in equal measure. She works as a counterintelligence specialist out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Basanti Bustamante is known for getting the job done and not asking questions that would make the job harder to stomach.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Never being able to stop running â€” the lifestyle is a trap disguised as freedom",
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "That they\u0027re fundamentally alone and connection is just a vulnerability"
+                                      ],
+                       "core_desires":  [
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "To find the person who burned them and make it educational",
+                                            "To matter to someone for who they are, not what they can do"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Planning â€” responds to chaos by making detailed contingency plans for everything",
+                                                 "Humor â€” deflects everything serious with jokes until the joke becomes the personality",
+                                                 "Denial â€” nothing is wrong, everything is fine, they are fine, shut up"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes their skill set is more transferable than it actually is",
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
+                                       ],
+                       "secret":  "Aslan Kimura-Nkrumah once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what\u0027s left of their independence."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+                            "cadence":  "Rhythmic, almost musical â€” the sentence structure has a pattern even when the words are brutal.",
+                            "verbal_tics":  [
+                                                "Swears in three languages, often in the same sentence",
+                                                "Pauses mid-sentence to listen â€” combat habit that bleeds into conversation"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Everyone in this room is lying. My job is knowing who\u0027s lying about what.\"",
+                                                  "\"Paranoia isn\u0027t a disorder in this profession. It\u0027s a job requirement.\"",
+                                                  "\"I find the leak. What happens to the leak after that isn\u0027t my department.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A dead drop Aslan Kimura-Nkrumah maintains is found and cleaned out â€” whoever did it now has leverage",
+                        "Someone is impersonating Aslan Kimura-Nkrumah on jobs, and the impersonator is better at the work than the original",
+                        "Aslan Kimura-Nkrumah discovers a job they completed last year was a setup for something much larger and much worse"
+                    ],
+    "narrative_function":  "Aslan Kimura-Nkrumah functions as a connector â€” her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Pain editor â€” dampens pain signals, allows function through injuries that would incapacitate. Bone lacing â€” titanium mesh throughout skeleton, increases durability and striking power",
+    "daily_life":  "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+    "affiliation":  "Freelance â€” works the Gray Zone circuit exclusively",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  7,
+                                                    "augmented":  1,
+                                                    "effective":  9
+                                                },
+                                   "agility":  {
+                                                   "base":  6,
+                                                   "augmented":  2,
+                                                   "effective":  4
+                                               },
+                                   "endurance":  {
+                                                     "base":  3,
+                                                     "augmented":  0,
+                                                     "effective":  5
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  1,
+                                                    "effective":  10
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  3,
+                                                      "augmented":  1,
+                                                      "effective":  10
+                                                  },
+                                 "perception":  {
+                                                    "base":  6,
+                                                    "augmented":  3,
+                                                    "effective":  7
+                                                },
+                                 "willpower":  {
+                                                   "base":  5,
+                                                   "augmented":  3,
+                                                   "effective":  10
+                                               },
+                                 "technical":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  6
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  3,
+                                                  "augmented":  2,
+                                                  "effective":  10
+                                              },
+                                 "intimidation":  {
+                                                      "base":  4,
+                                                      "augmented":  0,
+                                                      "effective":  6
+                                                  },
+                                 "deception":  {
+                                                   "base":  4,
+                                                   "augmented":  0,
+                                                   "effective":  5
+                                               },
+                                 "empathy":  {
+                                                 "base":  8,
+                                                 "augmented":  0,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.3,
+                                      "caution":  0.96,
+                                      "loyalty":  0.57,
+                                      "greed":  0.72,
+                                      "empathy":  0.93
+                                  },
+                  "drives":  [
+                                 "survival",
+                                 "money",
+                                 "loyalty"
+                             ],
+                  "thresholds":  {
+                                     "pain":  9,
+                                     "stress":  6,
+                                     "loyalty_break":  8
+                                 },
+                  "strengths":  [
+                                    "technical expertise with augmentation systems",
+                                    "expert marksman",
+                                    "network of reliable contacts"
+                                ],
+                  "weaknesses":  [
+                                     "old injury that flares under specific conditions",
+                                     "difficulty with authority figures"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "counterintelligence specialist",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+                                              "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
+                                          ],
+                       "habits":  [
+                                      "Checks exits within 10 seconds of entering any room",
+                                      "Carries a specific caliber round as a lucky charm â€” has never fired it",
+                                      "Eats the same meal before every job â€” superstition masquerading as preference",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore"
+                                  ],
+                       "breaking_points":  [
+                                               "Betrayal by the one person they actually trust â€” the single point of failure in their emotional architecture",
+                                               "Complete isolation â€” cut off from network, contacts, and purpose simultaneously"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Pain editor",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Pain editor â€” dampens pain signals, allows function through injuries that would incapacitate",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Bone lacing",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Bone lacing â€” titanium mesh throughout skeleton, increases durability and striking power",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Sentinel":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Crucible Square",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Arcturus Defense Solutions AR-7 \u0027Mandate\u0027",
+                            "Kang-Petrov Arms KPR-357 \u0027Journeyman\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Arcturus Defense Solutions AR-7 \u0027Mandate\u0027",
+                                "Kang-Petrov Arms KPR-357 \u0027Journeyman\u0027"
+                            ],
+    "related_entities":  [
+                             "Masquerade",
+                             "The Heritage Vault",
+                             "Diaspora Table",
+                             "Stratum",
+                             "Chicago",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Hispanic/Latin American (66.2%) with significant Northern European (22.4%) and Middle Eastern (11.4%) ancestry. The blend creates warm olive-bronze skin with golden undertones, angular facial structure from the Middle Eastern component, and a synthesis that reads as genuinely mixed without single-region dominance. Features Mediterranean warmth layered over Northern European bone structure.",
+                                 "height_cm":  183,
+                                 "weight_kg":  61,
+                                 "build":  "Rawboned and lean â€” minimal body fat, defined musculature from functional training rather than aesthetics. Shoulders broad and squared from years of combat conditioning. Frame suggests efficiency over comfort.",
+                                 "hair_color":  "Black with natural blue undertones in direct light",
+                                 "hair_style":  "Pulled back in a tight, practical braid that sits low on her neck. No ornamentation. Occasionally worn loose but quickly retied when work begins.",
+                                 "hair_length":  "Medium â€” falls to mid-shoulder when unbound",
+                                 "eye_color":  "Dark brown, sharp and analytically focused. Eyes track movement with predatory precision.",
+                                 "skin_tone":  "Warm olive-bronze with golden-amber undertones across cheekbones and nose bridge. Even distribution across face and body with subtle peachy warmth at temples and jawline â€” the result of Hispanic/Latin American warmth modified by Northern European and Middle Eastern ancestry.",
+                                 "complexion":  "Gaunt cheeks, prominent angular jaw reflecting Middle Eastern ancestry. Minimal scarring on face suggests deliberate avoidance or fast reflexes. Skin texture shows dehydration from nocturnal lifestyleâ€”not unhealthy, but tired. No makeup. Eyes carry the hollow awareness of chronic sleep disruption.",
+                                 "distinguishing_marks":  [
+                                                              "Faint white line scar along left temple, approximately 3cm, running toward hairline â€” old trauma, cleanly healed",
+                                                              "Tattoo on inner left wrist: minimalist circuit board pattern in silver ink, approximately 4cm wide â€” personal mark, not gang affiliation",
+                                                              "Small burn scar on right palm, circular, approximately 1cm diameter â€” equipment malfunction or deliberate test"
+                                                          ],
+                                 "visible_augmentations":  "Chrome pain editor housing visible on left side of neck, just below the jaw â€” matte titanium surface with subtle LED indicator (dark when inactive, amber when running). The titanium bone lacing is not visibly apparent beneath intact skin, but close observation reveals subtle angular distortions in her wrists and knuckles where the mesh creates slight bulges under dermis.",
+                                 "posture_movement":  "Economical and predatory. Stands with shoulders slightly forward and weight distributed for immediate movement in any direction. Walks with minimal wasted motion â€” knees slightly bent, ready to shift stance. Eyes constantly scan environments for exits, threats, and information. Hands rest naturally at sides or on equipment, never crossed or defensive. Movements are fluid but never relaxed.",
+                                 "clothing_style":  "Function-first, Tier 3-4 utilitarian aesthetic. Black matte tactical trousers with reinforced panels at knees and thighs â€” worn from frequent use. Dark gray compression shirt under a modified field jacket in charcoal synthetic leather, oversized enough to conceal equipment and augmentation but tailored to not impede movement. Worn boots with reinforced soles and ankle support â€” scuffed from active work. Minimal jewelry: single silver ring on right middle finger, likely a memento. No corporate branding. Gear organized on belt with pragmatic purpose â€” encrypted comm unit, lockpick set, small medkit, spare ammunition magazine for sidearm kept in shoulder holster."
+                             },
+    "image_prompt":  "Basanti Bustamante, 183cm lean operative with warm olive-bronze skin and golden undertones, angular Middle Eastern-influenced jaw, dark brown predatory eyes. Black hair braided low, blue undertones in harsh light. Gaunt cheeks, tired from nocturnal work, faint 3cm scar along left temple. Visible matte titanium pain editor on left neck with dark LED. Circuit board tattoo on inner left wrist, burn scar on right palm. Wearing charcoal synthetic leather field jacket over dark gray compression shirt, black tactical trousers with reinforced knees, worn boots. Standing in economical ready stance, shoulders forward, scanning for threats. Shoulder holster visible, belt with encrypted comm and lockpicks. Single silver ring. GLMZ aesthetic, neon-lit shadows, moody underground setting, cool blues and amber accent lighting, cinematic depth, neo-noir noir atmosphere --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  66.2,
+                             "Northern European":  22.4,
+                             "Middle Eastern":  11.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Haitian":  19.4
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Brazilian":  22.4
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Honduran":  8.3,
+                                                                                     "Costa Rican":  16.1
+                                                                                 }
+                                                        },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Danish":  17.9
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "Dutch":  0.6
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "English":  3.9
+                                                                        }
+                                                  },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  8.4
+                                                               },
+                                                   "Persian":  {
+                                                                   "Iranian":  3
+                                                               }
+                                               }
+                        },
+    "tier":  "3"
 }

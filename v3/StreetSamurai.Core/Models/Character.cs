@@ -11,9 +11,7 @@ public record Character
     public string Augmentation { get; init; } = "";
     public string Occupation { get; init; } = "";
     public string Affiliation { get; init; } = "";
-    public FacetState Facets { get; init; } = new();
     public List<CascadeOverride> CascadeOverrides { get; init; } = [];
-    public Dictionary<string, string> FacetVoices { get; init; } = [];
     public List<Modifier> ActiveModifiers { get; init; } = [];
     public List<HistoryBeat> History { get; init; } = [];
     public List<Relationship> Relationships { get; init; } = [];
@@ -33,7 +31,6 @@ public record Modifier
 {
     public string Name { get; init; } = "";
     public string Trigger { get; init; } = "";
-    public Dictionary<string, double> FacetDeltas { get; init; } = [];
     public double Intensity { get; init; }
     public string Duration { get; init; } = "";
     public string Decay { get; init; } = "";
@@ -45,13 +42,11 @@ public record HistoryBeat
 {
     public int Age { get; init; }
     public string Event { get; init; } = "";
-    public string FacetImpact { get; init; } = "";
 }
 
 public record Relationship
 {
     public string Name { get; init; } = "";
     public string Status { get; init; } = "";
-    public string FacetConnection { get; init; } = "";
     public string Notes { get; init; } = "";
 }

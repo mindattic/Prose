@@ -1,377 +1,388 @@
-{
-  "id": "019d6143a66179a0bd06a381c6e4e385",
-  "type": "character",
-  "name": "Caetano Horváth-Castañeda",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Forced entry and close-quarters combat specialist — breacher",
-  "age": 36,
-  "status": "active",
-  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Halsted and Division",
-  "description": "Caetano Horváth-Castañeda are compact and densely muscled, built low to the ground like something designed to survive impacts. At 36, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic, — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a breacher out of the Gray Zone, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Caetano Horváth-Castañeda describe them as a precision instrument — point them at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.85,
-      "ideal": 0.59,
-      "id": 0.92,
-      "shadow": 0.28,
-      "mask": 0.35,
-      "ghost": 0.33
-    },
-    "core_fears": [
-      "That the work they do makes the city worse, not better",
-      "Their past catching up — debts, enemies, broken promises",
-      "The quiet — silence means something is about to go very wrong"
-    ],
-    "core_desires": [
-      "A crew worth trusting — people who stay when the shooting starts",
-      "Control — over their body, their schedule, their future",
-      "To matter to someone for who they are, not what they can do"
-    ],
-    "coping_mechanisms": [
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
-      "Compartmentalization — work feelings and personal feelings exist in separate boxes"
-    ],
-    "blind_spots": [
-      "Cannot accept help without interpreting it as leverage",
-      "Fails to notice when their own behavior mirrors the people they despise",
-      "Overestimates their own abilities in situations outside their specialty"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
-    "cadence": "Staccato bursts separated by calculating silences.",
-    "verbal_tics": [
-      "Calls everyone 'friend' — the warmth varies from genuine to threatening",
-      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
-    ],
-    "example_lines": [
-      "\"Doors are polite suggestions. I'm not polite.\"",
-      "\"First through the door, last to flinch. That's the job description.\"",
-      "\"Close quarters is where plans go to die. I make sure it's their plans, not ours.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Nenad Vargas-Baffour's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
-    "Nenad Vargas-Baffour is offered a contract that would clear all their debts — the target is someone they respect",
-    "A dead drop Nenad Vargas-Baffour maintains is found and cleaned out — whoever did it now has leverage"
-  ],
-  "narrative_function": "Nenad Vargas-Baffour functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome. Chemical analyzer in nasal passages — can identify substances by scent alone",
-  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Freelance — Geartown regular; Switchblade Alley",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 9
-      },
-      "agility": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 6
-      },
-      "endurance": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 5
-      },
-      "reflexes": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 9
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 7
-      },
-      "perception": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 5
-      },
-      "willpower": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 9
-      },
-      "technical": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 4
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 6
-      },
-      "intimidation": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 4
-      },
-      "deception": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 9
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 9
-      }
-    },
-    "personality": {
-      "aggression": 0.87,
-      "caution": 0.56,
-      "loyalty": 0.55,
-      "greed": 0.75,
-      "empathy": 0.22
-    },
-    "drives": [
-      "freedom",
-      "loyalty",
-      "reputation"
-    ],
-    "thresholds": {
-      "pain": 6,
-      "stress": 4,
-      "loyalty_break": 6
-    },
-    "strengths": [
-      "photographic memory for faces and layouts",
-      "physical endurance",
-      "expert marksman"
-    ],
-    "weaknesses": [
-      "emotional volatility under extreme stress",
-      "difficulty with authority figures"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "breacher",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always has an exit route planned before agreeing to any meeting",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously"
-    ],
-    "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Insists they work alone but performs noticeably better in a team",
-      "Values loyalty intensely but has betrayed someone in the past to survive",
-      "Projects confidence but makes decisions from a foundation of fear they've never examined"
-    ],
-    "habits": [
-      "Checks exits within 10 seconds of entering any room",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Maintains a dead drop with emergency supplies in three separate districts"
-    ],
-    "breaking_points": [
-      "A child being put in danger as leverage against them",
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Being publicly exposed — name, face, address, all of it blown"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Cybernetic arm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
-      "replaces": ""
-    },
-    {
-      "name": "Chemical analyzer in nasal passages",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Chemical analyzer in nasal passages — can identify substances by scent alone",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ],
-  "related_entities": [
-    "The Nearfield",
-    "The Heritage Vault",
-    "Diaspora Table",
-    "The Gradient Compact",
-    "Stratum",
-    "Pellucid Systems"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Sub-Saharan African (34.4%), Indigenous American (19.3%), Hispanic/Latin American (18.4%), Eastern European (14.5%), East Asian (9.7%), and Southeast Asian (3.7%) blend. The dominant Sub-Saharan African and Indigenous American ancestry creates prominent high cheekbones, strong angular jaw structure, and naturally dense bone density. The East Asian and Southeast Asian components (13.4% combined) contribute a subtle epicanthic eye fold influence and moderate facial width. Hispanic/Latin American heritage adds warmth and golden undertones throughout. Eastern European ancestry provides slight facial width balance. The combination produces someone striking and genuinely mixed—a cosmopolitan appearance where no single ancestry dominates, reflecting the Ubiquitous Diaspora.",
-    "height_cm": 168,
-    "weight_kg": 78,
-    "build": "Compact and densely muscled, built low to the ground with a center of gravity engineered for impact absorption. Shoulders broad relative to frame, legs powerful and proportional. No excess mass — every kilogram serves function.",
-    "hair_color": "Dark brown, naturally, with premature silver threading at temples",
-    "hair_style": "Pulled back tight, practical, minimal styling. Kept short enough to prevent grab points.",
-    "hair_length": "Short",
-    "eye_color": "Deep dark brown with subtle epicanthic fold influence and warm amber undertones",
-    "skin_tone": "Rich warm brown with golden undertones, a complex blend reflecting Sub-Saharan African, Indigenous American, and Hispanic/Latin American heritage with Eastern European and East Asian modulation",
-    "complexion": "Weathered for 36—sun damage from nocturnal work cycles causing occasional hyperpigmentation on cheekbones. Prominent, high cheekbones with strong definition from Sub-Saharan African and Indigenous American heritage. Squared jaw with angular structure shows East Asian facial width influence. Nose professionally reset after break, bridge slightly asymmetrical. Facial structure displays strong bone architecture: medium-width face with defined planes and natural prominence. Subtle eye fold characteristic of East and Southeast Asian ancestry. Facial hair kept to stubble, deliberate maintenance.",
-    "distinguishing_marks": [
-      "Jagged scar along left temple, 4cm, running toward the hairline—blunt force impact",
-      "Burn scarring across right shoulder and upper chest in a crescent pattern, faded but visible—old thermal damage",
-      "Thin white scar bisecting the left eyebrow",
-      "Tattoo on left inner forearm: a geometric circuit pattern in black ink, 8cm tall, functional aesthetic"
-    ],
-    "visible_augmentations": "Full cybernetic right arm from shoulder replacement—polished gunmetal chrome with visible articulation joints and servo lines. The arm is noticeably stronger in profile, with angular plating and a distinctly non-organic aesthetic. No attempt to pass it off as skin. Nasal augmentation barely visible—faint discoloration around the nostrils where the chemical analyzer interfaces with living tissue.",
-    "posture_movement": "Economy of motion. Stands with weight distributed across both legs, knees slightly bent, ready to shift. Moves without excess. The chrome arm hangs naturally but with a subtle mechanical precision to its rest position. Eyes are always tracking, cataloging. Nocturnal adaptation—slight squint in bright light, but in dim conditions moves with predatory comfort.",
-    "clothing_style": "Tier 4 utilitarian—function over fashion. Black reinforced cargo pants with utility pockets and articulated knee panels. Steel-toe boots, scuffed and worn but maintained. Layered tops: a fitted grey undershirt and a black tactical vest with integrated armor plating and tool loops. A worn synthetic leather jacket in charcoal, sized to accommodate the chrome arm without binding. No corporate branding. All materials are durable and matte—nothing that catches light. Minimal jewelry: a simple steel ring on left hand, a wrist-mounted chronometer in brushed steel."
-  },
-  "image_prompt": "Caetano Horváth-Castañeda, 36-year-old neo-noir operative, mixed heritage with prominent high cheekbones and angular jaw, warm rich brown skin with golden undertones, deep brown eyes with subtle Asian fold influence. Short dark brown hair with silver at temples, pulled back tight. 168cm compact densely muscled build. Full cybernetic gunmetal chrome right arm with visible joints and servo lines. Jagged scar on left temple, thin scar through left eyebrow, faded crescent burn scarring on right shoulder. Black facial stubble. Wearing black reinforced tactical cargo pants, grey fitted undershirt, black armor-plated tactical vest, worn charcoal synthetic leather jacket. Steel-toe boots. Wrist chronometer, simple steel ring. Geometric circuit tattoo visible on left forearm. Standing in dim industrial setting, weight distributed, knees bent, predatory stillness. Nocturnal lighting, cool shadows, slight squint. Matte non-reflective utilitarian aesthetic. GLMZ, GLMZ aesthetic. Photorealistic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 34.4,
-    "Indigenous American": 19.3,
-    "Hispanic/Latin American": 18.4,
-    "Eastern European": 14.5,
-    "East Asian": 9.7,
-    "Southeast Asian": 3.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 13.3,
-        "Zimbabwean": 3.7
-      },
-      "Central African": {
-        "Congolese": 3.8,
-        "Angolan": 1
-      },
-      "West African": {
-        "Malian": 6.6,
-        "Liberian": 6
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Maya": 5.8,
-        "Nahua": 6.5
-      },
-      "Andean": {
-        "Quechua": 7
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Nicaraguan": 18.4
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Slovak": 10.9
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 3.6
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Shanghainese": 4.6
-      },
-      "Japanese": {
-        "Japanese": 1.5
-      },
-      "Korean": {
-        "Korean": 3.6
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Tagalog": 3.7
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a66179a0bd06a381c6e4e385",
+    "type":  "character",
+    "name":  "Caetano HorvÃ¡th-CastaÃ±eda",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Forced entry and close-quarters combat specialist â€” breacher",
+    "age":  36,
+    "status":  "active",
+    "location":  "the Gray Zone â€” lower district tenements near the old lakeshore, near Halsted and Division",
+    "description":  "Caetano HorvÃ¡th-CastaÃ±eda are compact and densely muscled, built low to the ground like something designed to survive impacts. At 36, their face carries the layered heritage of generations of diaspora mixing â€” features that resist easy categorization and reward attention. The chrome is visible â€” cybernetic arm â€” right, full replacement from shoulder â€” stronger than organic, â€” and they make no effort to hide it.\n\nTheir entry into running was involuntary â€” a debt to the wrong people, a choice between working it off or losing parts â€” and the debt is still not fully paid. They work as a breacher out of the Gray Zone, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Caetano HorvÃ¡th-CastaÃ±eda describe them as a precision instrument â€” point them at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the work they do makes the city worse, not better",
+                                          "Their past catching up â€” debts, enemies, broken promises",
+                                          "The quiet â€” silence means something is about to go very wrong"
+                                      ],
+                       "core_desires":  [
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "Control â€” over their body, their schedule, their future",
+                                            "To matter to someone for who they are, not what they can do"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+                                                 "Denial â€” nothing is wrong, everything is fine, they are fine, shut up",
+                                                 "Compartmentalization â€” work feelings and personal feelings exist in separate boxes"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot accept help without interpreting it as leverage",
+                                           "Fails to notice when their own behavior mirrors the people they despise",
+                                           "Overestimates their own abilities in situations outside their specialty"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+                            "cadence":  "Staccato bursts separated by calculating silences.",
+                            "verbal_tics":  [
+                                                "Calls everyone \u0027friend\u0027 â€” the warmth varies from genuine to threatening",
+                                                "Uses \u0027we\u0027 instead of \u0027I\u0027 â€” either royal or dissociative, nobody asks"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Doors are polite suggestions. I\u0027m not polite.\"",
+                                                  "\"First through the door, last to flinch. That\u0027s the job description.\"",
+                                                  "\"Close quarters is where plans go to die. I make sure it\u0027s their plans, not ours.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Nenad Vargas-Baffour\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad",
+                        "Nenad Vargas-Baffour is offered a contract that would clear all their debts â€” the target is someone they respect",
+                        "A dead drop Nenad Vargas-Baffour maintains is found and cleaned out â€” whoever did it now has leverage"
+                    ],
+    "narrative_function":  "Nenad Vargas-Baffour functions as a connector â€” their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Cybernetic arm â€” right, full replacement from shoulder â€” stronger than organic, obvious chrome. Chemical analyzer in nasal passages â€” can identify substances by scent alone",
+    "daily_life":  "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+    "affiliation":  "Freelance â€” Geartown regular; Switchblade Alley",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  6,
+                                                    "augmented":  3,
+                                                    "effective":  9
+                                                },
+                                   "agility":  {
+                                                   "base":  6,
+                                                   "augmented":  3,
+                                                   "effective":  6
+                                               },
+                                   "endurance":  {
+                                                     "base":  6,
+                                                     "augmented":  2,
+                                                     "effective":  5
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  4,
+                                                    "augmented":  2,
+                                                    "effective":  9
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  5,
+                                                      "augmented":  1,
+                                                      "effective":  7
+                                                  },
+                                 "perception":  {
+                                                    "base":  8,
+                                                    "augmented":  2,
+                                                    "effective":  5
+                                                },
+                                 "willpower":  {
+                                                   "base":  3,
+                                                   "augmented":  0,
+                                                   "effective":  9
+                                               },
+                                 "technical":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  4
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  3,
+                                                  "augmented":  1,
+                                                  "effective":  6
+                                              },
+                                 "intimidation":  {
+                                                      "base":  8,
+                                                      "augmented":  3,
+                                                      "effective":  4
+                                                  },
+                                 "deception":  {
+                                                   "base":  3,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  1,
+                                                 "effective":  9
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.87,
+                                      "caution":  0.56,
+                                      "loyalty":  0.55,
+                                      "greed":  0.75,
+                                      "empathy":  0.22
+                                  },
+                  "drives":  [
+                                 "freedom",
+                                 "loyalty",
+                                 "reputation"
+                             ],
+                  "thresholds":  {
+                                     "pain":  6,
+                                     "stress":  4,
+                                     "loyalty_break":  6
+                                 },
+                  "strengths":  [
+                                    "photographic memory for faces and layouts",
+                                    "physical endurance",
+                                    "expert marksman"
+                                ],
+                  "weaknesses":  [
+                                     "emotional volatility under extreme stress",
+                                     "difficulty with authority figures"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "breacher",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess â€” read the situation, identify threats and advantages",
+                                                 "2. Negotiate â€” try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate â€” make the cost of conflict clear",
+                                                 "4. Precision violence â€” surgical, targeted, minimal collateral",
+                                                 "5. Full engagement â€” overwhelming force, no half measures",
+                                                 "6. Emergency protocol â€” abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Professional and transactional. The relationship is defined by the contract and nothing else.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Values loyalty intensely but has betrayed someone in the past to survive",
+                                              "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined"
+                                          ],
+                       "habits":  [
+                                      "Checks exits within 10 seconds of entering any room",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore",
+                                      "Maintains a dead drop with emergency supplies in three separate districts"
+                                  ],
+                       "breaking_points":  [
+                                               "A child being put in danger as leverage against them",
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Being publicly exposed â€” name, face, address, all of it blown"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Cybernetic arm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Cybernetic arm â€” right, full replacement from shoulder â€” stronger than organic, obvious chrome",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Chemical analyzer in nasal passages",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Chemical analyzer in nasal passages â€” can identify substances by scent alone",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Field Marksman Rifle FMR-8 \u0027Sentinel\u0027",
+                            "Carrion Defense Works Marrow Drill MD-7 \u0027Dentist\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Field Marksman Rifle FMR-8 \u0027Sentinel\u0027",
+                                "Carrion Defense Works Marrow Drill MD-7 \u0027Dentist\u0027"
+                            ],
+    "related_entities":  [
+                             "The Nearfield",
+                             "The Heritage Vault",
+                             "Diaspora Table",
+                             "The Gradient Compact",
+                             "Stratum",
+                             "Pellucid Systems"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Sub-Saharan African (34.4%), Indigenous American (19.3%), Hispanic/Latin American (18.4%), Eastern European (14.5%), East Asian (9.7%), and Southeast Asian (3.7%) blend. The dominant Sub-Saharan African and Indigenous American ancestry creates prominent high cheekbones, strong angular jaw structure, and naturally dense bone density. The East Asian and Southeast Asian components (13.4% combined) contribute a subtle epicanthic eye fold influence and moderate facial width. Hispanic/Latin American heritage adds warmth and golden undertones throughout. Eastern European ancestry provides slight facial width balance. The combination produces someone striking and genuinely mixedâ€”a cosmopolitan appearance where no single ancestry dominates, reflecting the Ubiquitous Diaspora.",
+                                 "height_cm":  168,
+                                 "weight_kg":  78,
+                                 "build":  "Compact and densely muscled, built low to the ground with a center of gravity engineered for impact absorption. Shoulders broad relative to frame, legs powerful and proportional. No excess mass â€” every kilogram serves function.",
+                                 "hair_color":  "Dark brown, naturally, with premature silver threading at temples",
+                                 "hair_style":  "Pulled back tight, practical, minimal styling. Kept short enough to prevent grab points.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep dark brown with subtle epicanthic fold influence and warm amber undertones",
+                                 "skin_tone":  "Rich warm brown with golden undertones, a complex blend reflecting Sub-Saharan African, Indigenous American, and Hispanic/Latin American heritage with Eastern European and East Asian modulation",
+                                 "complexion":  "Weathered for 36â€”sun damage from nocturnal work cycles causing occasional hyperpigmentation on cheekbones. Prominent, high cheekbones with strong definition from Sub-Saharan African and Indigenous American heritage. Squared jaw with angular structure shows East Asian facial width influence. Nose professionally reset after break, bridge slightly asymmetrical. Facial structure displays strong bone architecture: medium-width face with defined planes and natural prominence. Subtle eye fold characteristic of East and Southeast Asian ancestry. Facial hair kept to stubble, deliberate maintenance.",
+                                 "distinguishing_marks":  [
+                                                              "Jagged scar along left temple, 4cm, running toward the hairlineâ€”blunt force impact",
+                                                              "Burn scarring across right shoulder and upper chest in a crescent pattern, faded but visibleâ€”old thermal damage",
+                                                              "Thin white scar bisecting the left eyebrow",
+                                                              "Tattoo on left inner forearm: a geometric circuit pattern in black ink, 8cm tall, functional aesthetic"
+                                                          ],
+                                 "visible_augmentations":  "Full cybernetic right arm from shoulder replacementâ€”polished gunmetal chrome with visible articulation joints and servo lines. The arm is noticeably stronger in profile, with angular plating and a distinctly non-organic aesthetic. No attempt to pass it off as skin. Nasal augmentation barely visibleâ€”faint discoloration around the nostrils where the chemical analyzer interfaces with living tissue.",
+                                 "posture_movement":  "Economy of motion. Stands with weight distributed across both legs, knees slightly bent, ready to shift. Moves without excess. The chrome arm hangs naturally but with a subtle mechanical precision to its rest position. Eyes are always tracking, cataloging. Nocturnal adaptationâ€”slight squint in bright light, but in dim conditions moves with predatory comfort.",
+                                 "clothing_style":  "Tier 4 utilitarianâ€”function over fashion. Black reinforced cargo pants with utility pockets and articulated knee panels. Steel-toe boots, scuffed and worn but maintained. Layered tops: a fitted grey undershirt and a black tactical vest with integrated armor plating and tool loops. A worn synthetic leather jacket in charcoal, sized to accommodate the chrome arm without binding. No corporate branding. All materials are durable and matteâ€”nothing that catches light. Minimal jewelry: a simple steel ring on left hand, a wrist-mounted chronometer in brushed steel."
+                             },
+    "image_prompt":  "Caetano HorvÃ¡th-CastaÃ±eda, 36-year-old neo-noir operative, mixed heritage with prominent high cheekbones and angular jaw, warm rich brown skin with golden undertones, deep brown eyes with subtle Asian fold influence. Short dark brown hair with silver at temples, pulled back tight. 168cm compact densely muscled build. Full cybernetic gunmetal chrome right arm with visible joints and servo lines. Jagged scar on left temple, thin scar through left eyebrow, faded crescent burn scarring on right shoulder. Black facial stubble. Wearing black reinforced tactical cargo pants, grey fitted undershirt, black armor-plated tactical vest, worn charcoal synthetic leather jacket. Steel-toe boots. Wrist chronometer, simple steel ring. Geometric circuit tattoo visible on left forearm. Standing in dim industrial setting, weight distributed, knees bent, predatory stillness. Nocturnal lighting, cool shadows, slight squint. Matte non-reflective utilitarian aesthetic. GLMZ, GLMZ aesthetic. Photorealistic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  34.4,
+                             "Indigenous American":  19.3,
+                             "Hispanic/Latin American":  18.4,
+                             "Eastern European":  14.5,
+                             "East Asian":  9.7,
+                             "Southeast Asian":  3.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  13.3,
+                                                                                 "Zimbabwean":  3.7
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Congolese":  3.8,
+                                                                                "Angolan":  1
+                                                                            },
+                                                        "West African":  {
+                                                                             "Malian":  6.6,
+                                                                             "Liberian":  6
+                                                                         }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  5.8,
+                                                                             "Nahua":  6.5
+                                                                         },
+                                                        "Andean":  {
+                                                                       "Quechua":  7
+                                                                   }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  18.4
+                                                                                 }
+                                                        },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Slovak":  10.9
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  3.6
+                                                                         }
+                                                 },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Shanghainese":  4.6
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  1.5
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  3.6
+                                                          }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Tagalog":  3.7
+                                                                 }
+                                                }
+                        },
+    "tier":  "3"
 }

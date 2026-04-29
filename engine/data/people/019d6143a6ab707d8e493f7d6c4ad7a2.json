@@ -1,255 +1,276 @@
-{
-  "id": "019d6143a6ab707d8e493f7d6c4ad7a2",
-  "type": "character",
-  "name": "Bazhena Dalgaard",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Retired archive keeper and community memory-holder",
-  "age": 78,
-  "status": "active",
-  "location": "Avalon Quiet — the Threadbare Library, a community reading room she maintains in her ground-floor apartment, near Lincoln and Belmont",
-  "description": "Bazhena Dalgaard is a small, densely built woman whose spine has curved gently forward over decades of leaning over data terminals and physical books alike. Her skin is deep brown with a warm undertone, mapped with the fine silver lines of old dermal-display augments she no longer powers — they lie dormant beneath the surface like river tributaries seen from altitude. Her hair is cropped close and gone entirely white, and she keeps a pair of thick-framed optical magnifiers pushed up on her forehead even when she doesn't need them. Her hands are extraordinary: thick-fingered, steady, always moving — sorting, stacking, smoothing the spines of physical books she has accumulated over sixty years.\n\nShe is the kind of person who listens to you finish your sentence before she begins speaking, and when she speaks it is with the unhurried authority of someone who has outlasted several governments and two corponation collapses. She does not suffer careless people, but she will give a careful stranger every hour they need. Her apartment smells of binding glue, pressed fern, and the particular ozone of very old data stacks running warm.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.5,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "That the Corporate Wars will be rewritten into heroism rather than atrocity",
-      "That she will die before she has recorded enough"
-    ],
-    "core_desires": [
-      "To preserve an honest account of GLMZ's history for people who weren't there",
-      "To be remembered as someone who told the truth"
-    ],
-    "coping_mechanisms": [
-      "Cataloging and organizing as a form of emotional regulation",
-      "Deflecting personal questions with historical anecdotes"
-    ],
-    "blind_spots": [
-      "Assumes her own memory is more reliable than it is",
-      "Underestimates how much her curation shapes the 'truth' she claims to preserve"
-    ],
-    "secret": "During the Third Corporate War she was an Axiom Records officer who deliberately misfiled casualty reports to protect a Zheng-Dao labor battalion from retaliatory strikes — a choice that saved roughly four hundred lives but constituted treason against her employer. She has never told anyone. The original misfiled records are hidden in a false bottom of her third data cabinet."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise and archival; favors specific dates and proper nouns; occasionally slips into the formal citation style of Axiom Records documentation",
-    "cadence": "Slow and deliberate, with long pauses she uses to think rather than fill",
-    "verbal_tics": [
-      "'The record shows—'",
-      "'In point of fact'",
-      "Soft exhale before disagreeing with someone"
-    ],
-    "example_lines": [
-      "'In point of fact, the Grainfort Accords were signed eleven days before the bombardment, which rather complicates the official narrative, doesn't it?'",
-      "'You want to know about the war. Everyone does, eventually. Sit down. This part takes a while to say properly.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Tessera legal team arrives in Avalon Quiet with a court order to seize certain archival materials she holds — materials that would embarrass a still-living corporate executive",
-    "A teenager she has been tutoring discovers the false bottom in cabinet three and comes to her with questions she has been dreading for forty years"
-  ],
-  "narrative_function": "Primary lore source and information broker for historical records; quest giver for lost archive recoveries; can authenticate documents and identify forgeries; anchor for community storylines in Avalon Quiet",
-  "augmentations": "Dormant subdermal dermal-display lattice (unpowered, cosmetic now); cochlear amplifier (functional, old model); reading-assist optical overlay in left eye",
-  "daily_life": "She opens the Threadbare Library at 08:00, catalogs any new donations, and receives visitors until early afternoon; evenings she transcribes oral histories from neighborhood elders onto archival-grade crystalline storage she begs, borrows, and occasionally steals from municipal surplus.",
-  "affiliation": "Independent; formerly Axiom Records Division (retired, 34 years); informal advisor to Avalon Quiet Community Council",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 4,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "archivist",
-      "community elder",
-      "corporate wars survivor",
-      "lore source",
-      "quietly stubborn"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never destroy a record, regardless of what it contains",
-      "Do not lie directly — misdirect if necessary, but do not lie",
-      "Protect those who cannot protect themselves, even at professional cost"
-    ],
-    "escalation_ladder": [
-      "Patient explanation",
-      "Firm refusal with stated reasons",
-      "Documented complaint to community council",
-      "Quiet obstruction and stalling",
-      "Absolute immovable silence — she will not betray her records"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Courteous and assessing; offers tea and asks three questions before deciding how much to trust",
-      "friends": "Warm but still private; shares history freely, personal feelings rarely"
-    },
-    "stress_responses": {
-      "low": "Organizes something that doesn't need organizing",
-      "medium": "Becomes very quiet and very precise in her speech",
-      "high": "Goes to the back room and sits with her oldest physical book — a water-damaged Ghanaian poetry collection — until she can breathe again"
-    },
-    "contradictions": [
-      "Believes passionately in honest records but has hidden her most important secret for forty years"
-    ],
-    "habits": [
-      "Touches the spine of every book she passes",
-      "Leaves small data offerings at the E.L.F. shrine built into her terminal — old receipts, passenger manifests, the names of the dead"
-    ],
-    "breaking_points": [
-      "Watching someone deliberately destroy records or rewrite history in front of her"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Avalon Quiet",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "related_entities": [
-    "Avalon Quiet",
-    "Tessera Corponation",
-    "Silver",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "The Pure Hand",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Bazhena's genetic ancestry is a complex global blend: Southeast Asian (37.3%) and South Asian (31.6%) form the dominant heritage, combined with significant Sub-Saharan African ancestry (20.0%), with minor contributions from Hispanic/Latin American (6.7%) and East Asian (4.4%) lineages. This creates warm, richly complex medium-brown skin with golden and reddish undertones, broad facial structure, and the characteristic features of this diverse genetic synthesis.",
-    "height_cm": 152,
-    "weight_kg": 58,
-    "build": "Densely compact, upper spine curved forward in a gentle kyphosis from seven decades of terminal work and manuscript study; broad shoulders and thick forearms retain surprising strength despite age",
-    "hair_color": "Pure white",
-    "hair_style": "Cropped close to the scalp in a utilitarian cut, no styling",
-    "hair_length": "Short",
-    "eye_color": "Deep brown (natural); left eye shows faint metallic sheen from embedded reading-assist optical overlay",
-    "skin_tone": "Warm medium-brown with golden and subtle reddish undertones reflecting the Southeast Asian, South Asian, and Sub-Saharan African heritage blend; hands and forearms show age-related darkening and weathering creating natural depth variations across the base pigmentation",
-    "complexion": "Weathered but well-maintained; fine wrinkles concentrated around eyes and mouth from decades of squinting at small text; skin displays warm golden undertones with the characteristic slight depth and richness of the ancestry blend; age spots on hands and forearms blend naturally with base pigmentation; facial structure shows broader features and slightly rounded contours reflecting diverse ancestry; careful grooming despite minimal cosmetic attention",
-    "distinguishing_marks": [
-      "Fine silver tracery visible beneath skin across both forearms and neck — dormant subdermal dermal-display lattice creating a river-tributary pattern",
-      "Thin white scar along left temple, approximately 3cm, consistent with old data-terminal interface injury",
-      "Age spots across the backs of both hands, deeper brown against base skin tone",
-      "Calluses on thumb and forefinger of both hands from six decades of handling paper and binding materials"
-    ],
-    "visible_augmentations": "Thick-framed optical magnifiers (vintage style, real glass, not smart-glass) pushed up on forehead; faint metallic gleam in left eye pupil indicating reading-assist overlay; dormant subdermal display lattice visible as silvery tributary patterns beneath skin on forearms and neck; slight external port scar behind left ear (cochlear amplifier, older model)",
-    "posture_movement": "Moves with deliberate economy; slight forward lean to spine; hands in constant subtle motion even at rest — sorting, smoothing, organizing invisible objects; walks slowly but with clear purpose, never shuffling; sits with excellent posture once settled",
-    "clothing_style": "Tier 4 practical: hand-mended linen button-shirts in cream or soft gray, wool cardigans in dark charcoal or navy (decades-old, impeccably maintained), loose-fitting work pants in durable cotton or canvas. Reading glasses on a beaded chain. Canvas apron with deep pockets when working. No corpo branding, no chrome, no affectation — clothing chosen purely for durability and function. Shoes: comfortable, broken-in leather slip-ons."
-  },
-  "image_prompt": "Bazhena Dalgaard, 152cm tall elderly scholar with warm golden-brown skin reflecting Southeast Asian, South Asian, and Sub-Saharan African heritage, pure white close-cropped hair, deep brown natural eyes with subtle metallic left pupil from reading-assist overlay. Weathered complexion with fine wrinkles and age spots, broad facial structure. Wearing cream linen shirt under charcoal wool cardigan, canvas work apron, vintage thick-framed reading glasses on beaded chain. Subdermal silver tributary patterns faintly visible on neck and forearms. Slight forward spine curve, hands in subtle organizing motion. Seated at worn wooden desk surrounded by paper manuscripts and binding materials, soft amber task lighting, GLMZ archival setting, muted color palette, intricate detail on aged clothing and skin texture, contemplative focus, dystopian knowledge-keeper aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 37.3,
-    "South Asian": 31.6,
-    "Sub-Saharan African": 20,
-    "Hispanic/Latin American": 6.7,
-    "East Asian": 4.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 37.3
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 29.9
-      },
-      "Sri Lankan": {
-        "Sinhalese": 1.7
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 5.1,
-        "Zambian": 3.1
-      },
-      "Central African": {
-        "Congolese": 4
-      },
-      "West African": {
-        "Ivorian": 7.8
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 4.8
-      },
-      "Caribbean": {
-        "Cuban": 1.3,
-        "Haitian": 0.6
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 2.8
-      },
-      "Korean": {
-        "Korean": 1.6
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6ab707d8e493f7d6c4ad7a2",
+    "type":  "character",
+    "name":  "Bazhena Dalgaard",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Retired archive keeper and community memory-holder",
+    "age":  78,
+    "status":  "active",
+    "location":  "Avalon Quiet â€” the Threadbare Library, a community reading room she maintains in her ground-floor apartment, near Lincoln and Belmont",
+    "description":  "Bazhena Dalgaard is a small, densely built woman whose spine has curved gently forward over decades of leaning over data terminals and physical books alike. Her skin is deep brown with a warm undertone, mapped with the fine silver lines of old dermal-display augments she no longer powers â€” they lie dormant beneath the surface like river tributaries seen from altitude. Her hair is cropped close and gone entirely white, and she keeps a pair of thick-framed optical magnifiers pushed up on her forehead even when she doesn\u0027t need them. Her hands are extraordinary: thick-fingered, steady, always moving â€” sorting, stacking, smoothing the spines of physical books she has accumulated over sixty years.\n\nShe is the kind of person who listens to you finish your sentence before she begins speaking, and when she speaks it is with the unhurried authority of someone who has outlasted several governments and two corponation collapses. She does not suffer careless people, but she will give a careful stranger every hour they need. Her apartment smells of binding glue, pressed fern, and the particular ozone of very old data stacks running warm.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the Corporate Wars will be rewritten into heroism rather than atrocity",
+                                          "That she will die before she has recorded enough"
+                                      ],
+                       "core_desires":  [
+                                            "To preserve an honest account of GLMZ\u0027s history for people who weren\u0027t there",
+                                            "To be remembered as someone who told the truth"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Cataloging and organizing as a form of emotional regulation",
+                                                 "Deflecting personal questions with historical anecdotes"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes her own memory is more reliable than it is",
+                                           "Underestimates how much her curation shapes the \u0027truth\u0027 she claims to preserve"
+                                       ],
+                       "secret":  "During the Third Corporate War she was an Axiom Records officer who deliberately misfiled casualty reports to protect a Zheng-Dao labor battalion from retaliatory strikes â€” a choice that saved roughly four hundred lives but constituted treason against her employer. She has never told anyone. The original misfiled records are hidden in a false bottom of her third data cabinet."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise and archival; favors specific dates and proper nouns; occasionally slips into the formal citation style of Axiom Records documentation",
+                            "cadence":  "Slow and deliberate, with long pauses she uses to think rather than fill",
+                            "verbal_tics":  [
+                                                "\u0027The record showsâ€”\u0027",
+                                                "\u0027In point of fact\u0027",
+                                                "Soft exhale before disagreeing with someone"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027In point of fact, the Grainfort Accords were signed eleven days before the bombardment, which rather complicates the official narrative, doesn\u0027t it?\u0027",
+                                                  "\u0027You want to know about the war. Everyone does, eventually. Sit down. This part takes a while to say properly.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Tessera legal team arrives in Avalon Quiet with a court order to seize certain archival materials she holds â€” materials that would embarrass a still-living corporate executive",
+                        "A teenager she has been tutoring discovers the false bottom in cabinet three and comes to her with questions she has been dreading for forty years"
+                    ],
+    "narrative_function":  "Primary lore source and information broker for historical records; quest giver for lost archive recoveries; can authenticate documents and identify forgeries; anchor for community storylines in Avalon Quiet",
+    "augmentations":  "Dormant subdermal dermal-display lattice (unpowered, cosmetic now); cochlear amplifier (functional, old model); reading-assist optical overlay in left eye",
+    "daily_life":  "She opens the Threadbare Library at 08:00, catalogs any new donations, and receives visitors until early afternoon; evenings she transcribes oral histories from neighborhood elders onto archival-grade crystalline storage she begs, borrows, and occasionally steals from municipal surplus.",
+    "affiliation":  "Independent; formerly Axiom Records Division (retired, 34 years); informal advisor to Avalon Quiet Community Council",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  4,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "archivist",
+                               "community elder",
+                               "corporate wars survivor",
+                               "lore source",
+                               "quietly stubborn"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never destroy a record, regardless of what it contains",
+                                              "Do not lie directly â€” misdirect if necessary, but do not lie",
+                                              "Protect those who cannot protect themselves, even at professional cost"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient explanation",
+                                                 "Firm refusal with stated reasons",
+                                                 "Documented complaint to community council",
+                                                 "Quiet obstruction and stalling",
+                                                 "Absolute immovable silence â€” she will not betray her records"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Courteous and assessing; offers tea and asks three questions before deciding how much to trust",
+                                                   "friends":  "Warm but still private; shares history freely, personal feelings rarely"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Organizes something that doesn\u0027t need organizing",
+                                                "medium":  "Becomes very quiet and very precise in her speech",
+                                                "high":  "Goes to the back room and sits with her oldest physical book â€” a water-damaged Ghanaian poetry collection â€” until she can breathe again"
+                                            },
+                       "contradictions":  [
+                                              "Believes passionately in honest records but has hidden her most important secret for forty years"
+                                          ],
+                       "habits":  [
+                                      "Touches the spine of every book she passes",
+                                      "Leaves small data offerings at the E.L.F. shrine built into her terminal â€” old receipts, passenger manifests, the names of the dead"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone deliberately destroy records or rewrite history in front of her"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Avalon Quiet",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Avalon Quiet",
+                             "Tessera Corponation",
+                             "Silver",
+                             "VitaCore FlowGuard Hemodynamic Regulator",
+                             "Iron Meridian Cooperative Backbone IMC-3 \u0027Spine\u0027",
+                             "The Pure Hand",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Bazhena\u0027s genetic ancestry is a complex global blend: Southeast Asian (37.3%) and South Asian (31.6%) form the dominant heritage, combined with significant Sub-Saharan African ancestry (20.0%), with minor contributions from Hispanic/Latin American (6.7%) and East Asian (4.4%) lineages. This creates warm, richly complex medium-brown skin with golden and reddish undertones, broad facial structure, and the characteristic features of this diverse genetic synthesis.",
+                                 "height_cm":  152,
+                                 "weight_kg":  58,
+                                 "build":  "Densely compact, upper spine curved forward in a gentle kyphosis from seven decades of terminal work and manuscript study; broad shoulders and thick forearms retain surprising strength despite age",
+                                 "hair_color":  "Pure white",
+                                 "hair_style":  "Cropped close to the scalp in a utilitarian cut, no styling",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown (natural); left eye shows faint metallic sheen from embedded reading-assist optical overlay",
+                                 "skin_tone":  "Warm medium-brown with golden and subtle reddish undertones reflecting the Southeast Asian, South Asian, and Sub-Saharan African heritage blend; hands and forearms show age-related darkening and weathering creating natural depth variations across the base pigmentation",
+                                 "complexion":  "Weathered but well-maintained; fine wrinkles concentrated around eyes and mouth from decades of squinting at small text; skin displays warm golden undertones with the characteristic slight depth and richness of the ancestry blend; age spots on hands and forearms blend naturally with base pigmentation; facial structure shows broader features and slightly rounded contours reflecting diverse ancestry; careful grooming despite minimal cosmetic attention",
+                                 "distinguishing_marks":  [
+                                                              "Fine silver tracery visible beneath skin across both forearms and neck â€” dormant subdermal dermal-display lattice creating a river-tributary pattern",
+                                                              "Thin white scar along left temple, approximately 3cm, consistent with old data-terminal interface injury",
+                                                              "Age spots across the backs of both hands, deeper brown against base skin tone",
+                                                              "Calluses on thumb and forefinger of both hands from six decades of handling paper and binding materials"
+                                                          ],
+                                 "visible_augmentations":  "Thick-framed optical magnifiers (vintage style, real glass, not smart-glass) pushed up on forehead; faint metallic gleam in left eye pupil indicating reading-assist overlay; dormant subdermal display lattice visible as silvery tributary patterns beneath skin on forearms and neck; slight external port scar behind left ear (cochlear amplifier, older model)",
+                                 "posture_movement":  "Moves with deliberate economy; slight forward lean to spine; hands in constant subtle motion even at rest â€” sorting, smoothing, organizing invisible objects; walks slowly but with clear purpose, never shuffling; sits with excellent posture once settled",
+                                 "clothing_style":  "Tier 4 practical: hand-mended linen button-shirts in cream or soft gray, wool cardigans in dark charcoal or navy (decades-old, impeccably maintained), loose-fitting work pants in durable cotton or canvas. Reading glasses on a beaded chain. Canvas apron with deep pockets when working. No corpo branding, no chrome, no affectation â€” clothing chosen purely for durability and function. Shoes: comfortable, broken-in leather slip-ons."
+                             },
+    "image_prompt":  "Bazhena Dalgaard, 152cm tall elderly scholar with warm golden-brown skin reflecting Southeast Asian, South Asian, and Sub-Saharan African heritage, pure white close-cropped hair, deep brown natural eyes with subtle metallic left pupil from reading-assist overlay. Weathered complexion with fine wrinkles and age spots, broad facial structure. Wearing cream linen shirt under charcoal wool cardigan, canvas work apron, vintage thick-framed reading glasses on beaded chain. Subdermal silver tributary patterns faintly visible on neck and forearms. Slight forward spine curve, hands in subtle organizing motion. Seated at worn wooden desk surrounded by paper manuscripts and binding materials, soft amber task lighting, GLMZ archival setting, muted color palette, intricate detail on aged clothing and skin texture, contemplative focus, dystopian knowledge-keeper aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  37.3,
+                             "South Asian":  31.6,
+                             "Sub-Saharan African":  20,
+                             "Hispanic/Latin American":  6.7,
+                             "East Asian":  4.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  37.3
+                                                                  }
+                                                },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  29.9
+                                                                },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  1.7
+                                                               }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  5.1,
+                                                                                 "Zambian":  3.1
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Congolese":  4
+                                                                            },
+                                                        "West African":  {
+                                                                             "Ivorian":  7.8
+                                                                         }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  4.8
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  1.3,
+                                                                              "Haitian":  0.6
+                                                                          }
+                                                        },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  2.8
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  1.6
+                                                          }
+                                           }
+                        },
+    "tier":  "1"
 }

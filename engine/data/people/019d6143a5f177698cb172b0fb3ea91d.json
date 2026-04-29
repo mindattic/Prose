@@ -1,316 +1,343 @@
-{
-  "id": "019d6143a5f177698cb172b0fb3ea91d",
-  "type": "character",
-  "name": "Cipriano Krishnamurthy-Montalvo",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Trauma surgeon, Aurochs Medical Complex, Level 4 Critical Bay",
-  "age": 46,
-  "status": "active",
-  "location": "Aurochs Medical Complex — lives in Bronzeline, thirty-minute transit from the hospital, near North Ave and Damen",
-  "description": "Cipriano Krishnamurthy-Montalvo is the kind of person who becomes invisible until she is suddenly the most important person in the room. Tall, narrow, with close-cropped silver hair she started growing out at thirty-five after a particularly bad run of nights, she moves through the hospital corridors with a quality of compression — everything pulled inward and efficient. Her face is angular and striking, her skin deep brown, and she has no cosmetic augmentations whatsoever, a quiet statement in an environment where most of her colleagues wear at least a tailored iris or a dermal accent. Her only concession is a thin prosthetic ring finger on her right hand — a replacement she had done after a surgical injury, fitted in matte medical ceramic, which she has never bothered to have skinned over.\n\nShe has operated on more gunshot wounds, industrial trauma cases, and augmentation rejection cascades than she can count, and she has developed the particular flat affect of a surgeon who has learned that feeling during surgery means slowing down. Off the table she is dry, acerbically funny in small doses, and possessed of a privacy so total that colleagues who have worked alongside her for years know almost nothing about her life outside the hospital. She is not cruel. She is simply rigorous in the application of her attention, and most things do not meet her threshold.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.3,
-      "shadow": 0.6,
-      "mask": 0.8,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Making an error that she cannot attribute to anything except her own failure",
-      "Being seen as less than fully competent by her team during a crisis"
-    ],
-    "core_desires": [
-      "To practice surgery without institutional interference — no quotas, no corponation priorities, no triage politics",
-      "A life outside this building that she has not yet managed to build"
-    ],
-    "coping_mechanisms": [
-      "Total compartmentalization — the hospital is a sealed space; her private life is another one entirely",
-      "Perfectionism as prophylaxis against vulnerability"
-    ],
-    "blind_spots": [
-      "Believes her emotional flatness in clinical settings is professionalism rather than dissociation",
-      "Cannot ask for help until a situation has already become critical"
-    ],
-    "secret": "She has been secretly consulting — pro bono, untraceable — for a cooperative clinic in the Narrows that serves patients Aurochs would refuse. If the hospital found out she was redirecting complex cases to an unlicensed facility, her contract would be terminated immediately. She considers this the most important thing she does."
-  },
-  "speech_patterns": {
-    "vocabulary": "Sparse, precise, and slightly formal — does not use filler words; switches without warning into warm and specific when speaking about a case she finds interesting",
-    "cadence": "Unhurried, flat, with a Senegalese-Kenyan rhythm that surfaces in her vowels when she's tired",
-    "verbal_tics": [
-      "Very long pauses before answering anything personal",
-      "Repeating the last word of a sentence she doesn't believe"
-    ],
-    "example_lines": [
-      "'The patient has about four minutes of viable decision-making window. We can have that conversation after.'",
-      "'Comfortable. That's what you said. Comfortable.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A patient came through her trauma bay with wounds that match a pattern she has now seen in six separate cases over three months — all with scorched tissue consistent with a specific augmentation overload signature. She's been documenting it quietly and needs someone to investigate the source.",
-    "Her covert work for the Narrows cooperative clinic has been noticed — not by Aurochs, but by someone who wants to use it as leverage over her."
-  ],
-  "narrative_function": "High-tier information source on trauma patterns in the city — she can tell you what kinds of wounds are spiking and what that implies about corporate or gang activity. Formidable institutional contact. Can save a character's life in extremis, at a cost that might be social rather than financial.",
-  "augmentations": "Prosthetic ring finger, right hand (medical ceramic, unskinned). Stabilization brace implanted in both wrists — microsurgical-grade, prevents tremor under extended operations. Optical zoom implant, left eye only — surgical magnification.",
-  "daily_life": "Twelve-hour shifts on a four-days-on-three-off rotation, though she regularly stays past shift end on complex cases. Off days are aggressively protected — she goes somewhere and does something she tells no one about.",
-  "affiliation": "Aurochs Medical Complex (senior staff, Trauma Division — Tier 3 with Tier 4 compensation negotiations ongoing)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 9,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 9,
-      "creativity": 7,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 5,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "trauma surgeon",
-      "institutional insider",
-      "covert idealist",
-      "information source",
-      "hard to read"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The patient on the table is the only priority until they are stable",
-      "Never make a commitment she cannot honor — she would rather refuse than fail to deliver"
-    ],
-    "escalation_ladder": [
-      "Silence and a measuring look",
-      "One precise statement of position with no repetition",
-      "Complete disengagement — she walks away and does not return to the conversation"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Formally courteous, gives nothing away, assesses competence rapidly and adjusts accordingly",
-      "friends": "Very few; those who have earned her trust receive a dry, specific warmth and an attention that feels like being studied affectionately"
-    },
-    "stress_responses": {
-      "low": "Slows down, becomes quieter",
-      "medium": "Voice drops to near-inaudible; movements become very deliberate",
-      "high": "Total clinical focus — reports from colleagues suggest she becomes a different person in high-casualty events; they mean this as a compliment"
-    },
-    "contradictions": [
-      "Claims to be uninvested in outcomes beyond her own technical performance, while secretly running a parallel practice out of something that looks a lot like idealism",
-      "Protects her privacy absolutely while being compelled to notice and remember everything about the people around her"
-    ],
-    "habits": [
-      "Eats the same meal every pre-shift: black tea and flatbread with nothing on it",
-      "Runs her thumb along her prosthetic ring finger when evaluating a difficult decision",
-      "Never sits during a consultation if she can stand"
-    ],
-    "breaking_points": [
-      "Watching a patient die due to Aurochs triage protocols prioritizing corporate-insured patients over critical cases",
-      "Her covert clinic being shut down or raided"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Nurturer": 0.7,
-    "Provider": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Aurochs Medical Complex",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Bronzeline; father a Senegalese urban planner, mother a Kenyan-Dutch logistics attorney",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed surgical residency at Aurochs; finished third in cohort",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Surgical injury to right hand; prosthetic replacement, declined skinning",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began covert consulting work for Narrows cooperative clinic",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Arcturus Defense Solutions ARC-P1 'Centurion'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Aurochs Medical Complex",
-    "The Narrows Compact",
-    "Bronzeline",
-    "WELLSPRING",
-    "Green Bay Community Table",
-    "Threshold",
-    "TESSERA PG-2 'Signature'",
-    "The Quiet Room",
-    "Silver",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Compass Rose"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "South Asian (36.8%), Indigenous American (30.6%), Hispanic/Latin American (27.5%), and Sub-Saharan African (5.1%) ancestry. The genetic blend creates a striking warm-toned complexion that bridges multiple continental origins — South Asian bone structure meets Indigenous American facial geometry with the warm undertones of tropical Latin American heritage, enriched by Sub-Saharan African warmth in the skin's depth and radiance.",
-    "height_cm": 183,
-    "weight_kg": 68,
-    "build": "Tall and narrow, almost ascetic — lean muscle without bulk, shoulders slightly forward from decades of surgical posture. A body optimized for precision rather than presence.",
-    "hair_color": "Silver-grey",
-    "hair_style": "Close-cropped, grown out since age 35, worn with no styling products or attention — severe and functional",
-    "hair_length": "Short",
-    "eye_color": "Deep brown (natural); left eye fitted with surgical magnification implant (subtle, detectable only on close inspection)",
-    "skin_tone": "Deep golden-bronze with warm copper undertones throughout, reflecting the balanced blend of South Asian, Indigenous American, and Hispanic/Latin American ancestry with enriching warmth from Sub-Saharan African heritage. The overall effect is a luminous warm brown deepened by chronic surgical work pallor — a complexion that suggests both indoor medical precision and ancestral sun exposure.",
-    "complexion": "Angular facial structure combining South Asian prominence with Indigenous American high cheekbones and strong jaw definition, enhanced by the warm bronze undertones characteristic of Hispanic/Latin American heritage. The nose shows the refined bridge common to South Asian genetics, while the cheekbone and jaw geometry reflects Indigenous American ancestry. Skin texture is smooth but lined around eyes and mouth from surgical squinting. No makeup or dermal treatments. Hands show surgical calluses and minor scars from decades of precision work.",
-    "distinguishing_marks": [
-      "Thin surgical scar running along the inside of her right forearm, approximately 8cm, faded to silver",
-      "Small burn scar on the dorsal surface of her left hand, roughly 1cm diameter, from a cauterization incident during residency",
-      "Barely visible tremor lines (now corrected) faintly etched across both wrists where stabilization braces sit subcutaneously"
-    ],
-    "visible_augmentations": "Matte medical-ceramic prosthetic ring finger on right hand, deliberately unskinned — smooth, seamless integration at the metacarpal joint but visibly non-organic in material and finish. Left eye shows minimal telltale glint of magnification optics under certain angles. Both wrists bear faint surgical seams where the stabilization braces were installed, visible only if she rolls her sleeves.",
-    "posture_movement": "Moves with economical precision — no wasted motion, shoulders slightly hunched from surgical habit. Hands are still except when in motion, then they move with the exact deliberation of someone who has trained every micro-movement. Eyes often slightly narrowed, as if permanently in magnification mode. Stands or sits in compressed positions, gathering herself inward rather than taking up space.",
-    "clothing_style": "Tier 3-4 functional: surgical scrubs under a well-maintained but worn charcoal wool coat (likely fifteen years old). Off-duty favors dark, unremarkable clothing — matte fabrics, no logos, minimal color variation. Flat-soled shoes worn for comfort and durability, not aesthetics. Watches a basic chronometer on a utilitarian band. No jewelry except a simple platinum wedding band on her left ring finger and a threadbare fabric wristband (origin and significance undisclosed) on her right wrist above the prosthetic. Everything about her wardrobe suggests someone who dresses to disappear."
-  },
-  "image_prompt": "Cipriano Krishnamurthy-Montalvo, tall lean surgical precision specialist, deep golden-bronze skin with warm copper undertones reflecting South Asian, Indigenous American, and Hispanic/Latin American ancestry. Angular face with high prominent cheekbones, strong jawline, refined nose bridge, deep brown natural eyes with left eye bearing subtle magnification implant. Short silver-grey close-cropped hair. Visible medical-ceramic prosthetic ring finger on right hand (unskinned, matte finish), surgical scars on forearm and hand, faint stabilization brace seams at wrists. Wearing worn charcoal wool coat over surgical scrubs, flat utilitarian shoes, platinum wedding band, threadbare fabric wristband on right wrist. Posture economical and precise, shoulders slightly hunched, hands deliberate and still. GLMZ, Great Lakes Metropolitan Zone, cool surgical lighting casting shadows across angular features, tired brilliance in gaze, minimalist aesthetic, disappearing into matte darkness, --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 36.8,
-    "Indigenous American": 30.6,
-    "Hispanic/Latin American": 27.5,
-    "Sub-Saharan African": 5.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Indian": {
-        "Punjabi": 26.6
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 10.2
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Maya": 16.5
-      },
-      "Plains Nations": {
-        "Choctaw": 14.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Cuban": 27.5
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Tanzanian": 1.3,
-        "Ugandan": 0.9
-      },
-      "Central African": {
-        "Congolese": 0.7
-      },
-      "West African": {
-        "Senegalese": 2.2
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a5f177698cb172b0fb3ea91d",
+    "type":  "character",
+    "name":  "Cipriano Krishnamurthy-Montalvo",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Trauma surgeon, Aurochs Medical Complex, Level 4 Critical Bay",
+    "age":  46,
+    "status":  "active",
+    "location":  "Aurochs Medical Complex â€” lives in Bronzeline, thirty-minute transit from the hospital, near North Ave and Damen",
+    "description":  "Cipriano Krishnamurthy-Montalvo is the kind of person who becomes invisible until she is suddenly the most important person in the room. Tall, narrow, with close-cropped silver hair she started growing out at thirty-five after a particularly bad run of nights, she moves through the hospital corridors with a quality of compression â€” everything pulled inward and efficient. Her face is angular and striking, her skin deep brown, and she has no cosmetic augmentations whatsoever, a quiet statement in an environment where most of her colleagues wear at least a tailored iris or a dermal accent. Her only concession is a thin prosthetic ring finger on her right hand â€” a replacement she had done after a surgical injury, fitted in matte medical ceramic, which she has never bothered to have skinned over.\n\nShe has operated on more gunshot wounds, industrial trauma cases, and augmentation rejection cascades than she can count, and she has developed the particular flat affect of a surgeon who has learned that feeling during surgery means slowing down. Off the table she is dry, acerbically funny in small doses, and possessed of a privacy so total that colleagues who have worked alongside her for years know almost nothing about her life outside the hospital. She is not cruel. She is simply rigorous in the application of her attention, and most things do not meet her threshold.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Making an error that she cannot attribute to anything except her own failure",
+                                          "Being seen as less than fully competent by her team during a crisis"
+                                      ],
+                       "core_desires":  [
+                                            "To practice surgery without institutional interference â€” no quotas, no corponation priorities, no triage politics",
+                                            "A life outside this building that she has not yet managed to build"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Total compartmentalization â€” the hospital is a sealed space; her private life is another one entirely",
+                                                 "Perfectionism as prophylaxis against vulnerability"
+                                             ],
+                       "blind_spots":  [
+                                           "Believes her emotional flatness in clinical settings is professionalism rather than dissociation",
+                                           "Cannot ask for help until a situation has already become critical"
+                                       ],
+                       "secret":  "She has been secretly consulting â€” pro bono, untraceable â€” for a cooperative clinic in the Narrows that serves patients Aurochs would refuse. If the hospital found out she was redirecting complex cases to an unlicensed facility, her contract would be terminated immediately. She considers this the most important thing she does."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Sparse, precise, and slightly formal â€” does not use filler words; switches without warning into warm and specific when speaking about a case she finds interesting",
+                            "cadence":  "Unhurried, flat, with a Senegalese-Kenyan rhythm that surfaces in her vowels when she\u0027s tired",
+                            "verbal_tics":  [
+                                                "Very long pauses before answering anything personal",
+                                                "Repeating the last word of a sentence she doesn\u0027t believe"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The patient has about four minutes of viable decision-making window. We can have that conversation after.\u0027",
+                                                  "\u0027Comfortable. That\u0027s what you said. Comfortable.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A patient came through her trauma bay with wounds that match a pattern she has now seen in six separate cases over three months â€” all with scorched tissue consistent with a specific augmentation overload signature. She\u0027s been documenting it quietly and needs someone to investigate the source.",
+                        "Her covert work for the Narrows cooperative clinic has been noticed â€” not by Aurochs, but by someone who wants to use it as leverage over her."
+                    ],
+    "narrative_function":  "High-tier information source on trauma patterns in the city â€” she can tell you what kinds of wounds are spiking and what that implies about corporate or gang activity. Formidable institutional contact. Can save a character\u0027s life in extremis, at a cost that might be social rather than financial.",
+    "augmentations":  "Prosthetic ring finger, right hand (medical ceramic, unskinned). Stabilization brace implanted in both wrists â€” microsurgical-grade, prevents tremor under extended operations. Optical zoom implant, left eye only â€” surgical magnification.",
+    "daily_life":  "Twelve-hour shifts on a four-days-on-three-off rotation, though she regularly stays past shift end on complex cases. Off days are aggressively protected â€” she goes somewhere and does something she tells no one about.",
+    "affiliation":  "Aurochs Medical Complex (senior staff, Trauma Division â€” Tier 3 with Tier 4 compensation negotiations ongoing)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  9,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  9,
+                                 "creativity":  7,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  5,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "trauma surgeon",
+                               "institutional insider",
+                               "covert idealist",
+                               "information source",
+                               "hard to read"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The patient on the table is the only priority until they are stable",
+                                              "Never make a commitment she cannot honor â€” she would rather refuse than fail to deliver"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Silence and a measuring look",
+                                                 "One precise statement of position with no repetition",
+                                                 "Complete disengagement â€” she walks away and does not return to the conversation"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Formally courteous, gives nothing away, assesses competence rapidly and adjusts accordingly",
+                                                   "friends":  "Very few; those who have earned her trust receive a dry, specific warmth and an attention that feels like being studied affectionately"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Slows down, becomes quieter",
+                                                "medium":  "Voice drops to near-inaudible; movements become very deliberate",
+                                                "high":  "Total clinical focus â€” reports from colleagues suggest she becomes a different person in high-casualty events; they mean this as a compliment"
+                                            },
+                       "contradictions":  [
+                                              "Claims to be uninvested in outcomes beyond her own technical performance, while secretly running a parallel practice out of something that looks a lot like idealism",
+                                              "Protects her privacy absolutely while being compelled to notice and remember everything about the people around her"
+                                          ],
+                       "habits":  [
+                                      "Eats the same meal every pre-shift: black tea and flatbread with nothing on it",
+                                      "Runs her thumb along her prosthetic ring finger when evaluating a difficult decision",
+                                      "Never sits during a consultation if she can stand"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching a patient die due to Aurochs triage protocols prioritizing corporate-insured patients over critical cases",
+                                               "Her covert clinic being shut down or raided"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Nurturer":  0.7,
+                       "Provider":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Aurochs Medical Complex",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Bronzeline; father a Senegalese urban planner, mother a Kenyan-Dutch logistics attorney",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed surgical residency at Aurochs; finished third in cohort",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Surgical injury to right hand; prosthetic replacement, declined skinning",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began covert consulting work for Narrows cooperative clinic",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Arcturus Defense Solutions ARC-P1 \u0027Centurion\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Aurochs Medical Complex",
+                             "The Narrows Compact",
+                             "Bronzeline",
+                             "WELLSPRING",
+                             "Green Bay Community Table",
+                             "Threshold",
+                             "TESSERA PG-2 \u0027Signature\u0027",
+                             "The Quiet Room",
+                             "Silver",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Compass Rose"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "South Asian (36.8%), Indigenous American (30.6%), Hispanic/Latin American (27.5%), and Sub-Saharan African (5.1%) ancestry. The genetic blend creates a striking warm-toned complexion that bridges multiple continental origins â€” South Asian bone structure meets Indigenous American facial geometry with the warm undertones of tropical Latin American heritage, enriched by Sub-Saharan African warmth in the skin\u0027s depth and radiance.",
+                                 "height_cm":  183,
+                                 "weight_kg":  68,
+                                 "build":  "Tall and narrow, almost ascetic â€” lean muscle without bulk, shoulders slightly forward from decades of surgical posture. A body optimized for precision rather than presence.",
+                                 "hair_color":  "Silver-grey",
+                                 "hair_style":  "Close-cropped, grown out since age 35, worn with no styling products or attention â€” severe and functional",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown (natural); left eye fitted with surgical magnification implant (subtle, detectable only on close inspection)",
+                                 "skin_tone":  "Deep golden-bronze with warm copper undertones throughout, reflecting the balanced blend of South Asian, Indigenous American, and Hispanic/Latin American ancestry with enriching warmth from Sub-Saharan African heritage. The overall effect is a luminous warm brown deepened by chronic surgical work pallor â€” a complexion that suggests both indoor medical precision and ancestral sun exposure.",
+                                 "complexion":  "Angular facial structure combining South Asian prominence with Indigenous American high cheekbones and strong jaw definition, enhanced by the warm bronze undertones characteristic of Hispanic/Latin American heritage. The nose shows the refined bridge common to South Asian genetics, while the cheekbone and jaw geometry reflects Indigenous American ancestry. Skin texture is smooth but lined around eyes and mouth from surgical squinting. No makeup or dermal treatments. Hands show surgical calluses and minor scars from decades of precision work.",
+                                 "distinguishing_marks":  [
+                                                              "Thin surgical scar running along the inside of her right forearm, approximately 8cm, faded to silver",
+                                                              "Small burn scar on the dorsal surface of her left hand, roughly 1cm diameter, from a cauterization incident during residency",
+                                                              "Barely visible tremor lines (now corrected) faintly etched across both wrists where stabilization braces sit subcutaneously"
+                                                          ],
+                                 "visible_augmentations":  "Matte medical-ceramic prosthetic ring finger on right hand, deliberately unskinned â€” smooth, seamless integration at the metacarpal joint but visibly non-organic in material and finish. Left eye shows minimal telltale glint of magnification optics under certain angles. Both wrists bear faint surgical seams where the stabilization braces were installed, visible only if she rolls her sleeves.",
+                                 "posture_movement":  "Moves with economical precision â€” no wasted motion, shoulders slightly hunched from surgical habit. Hands are still except when in motion, then they move with the exact deliberation of someone who has trained every micro-movement. Eyes often slightly narrowed, as if permanently in magnification mode. Stands or sits in compressed positions, gathering herself inward rather than taking up space.",
+                                 "clothing_style":  "Tier 3-4 functional: surgical scrubs under a well-maintained but worn charcoal wool coat (likely fifteen years old). Off-duty favors dark, unremarkable clothing â€” matte fabrics, no logos, minimal color variation. Flat-soled shoes worn for comfort and durability, not aesthetics. Watches a basic chronometer on a utilitarian band. No jewelry except a simple platinum wedding band on her left ring finger and a threadbare fabric wristband (origin and significance undisclosed) on her right wrist above the prosthetic. Everything about her wardrobe suggests someone who dresses to disappear."
+                             },
+    "image_prompt":  "Cipriano Krishnamurthy-Montalvo, tall lean surgical precision specialist, deep golden-bronze skin with warm copper undertones reflecting South Asian, Indigenous American, and Hispanic/Latin American ancestry. Angular face with high prominent cheekbones, strong jawline, refined nose bridge, deep brown natural eyes with left eye bearing subtle magnification implant. Short silver-grey close-cropped hair. Visible medical-ceramic prosthetic ring finger on right hand (unskinned, matte finish), surgical scars on forearm and hand, faint stabilization brace seams at wrists. Wearing worn charcoal wool coat over surgical scrubs, flat utilitarian shoes, platinum wedding band, threadbare fabric wristband on right wrist. Posture economical and precise, shoulders slightly hunched, hands deliberate and still. GLMZ, Great Lakes Metropolitan Zone, cool surgical lighting casting shadows across angular features, tired brilliance in gaze, minimalist aesthetic, disappearing into matte darkness, --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  36.8,
+                             "Indigenous American":  30.6,
+                             "Hispanic/Latin American":  27.5,
+                             "Sub-Saharan African":  5.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Punjabi":  26.6
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  10.2
+                                                               }
+                                            },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  16.5
+                                                                         },
+                                                        "Plains Nations":  {
+                                                                               "Choctaw":  14.1
+                                                                           }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Cuban":  27.5
+                                                                          }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Tanzanian":  1.3,
+                                                                             "Ugandan":  0.9
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  0.7
+                                                                            },
+                                                        "West African":  {
+                                                                             "Senegalese":  2.2
+                                                                         }
+                                                    }
+                        },
+    "tier":  "4"
 }

@@ -1,288 +1,319 @@
-{
-  "id": "019d6143a5b67231b3bb6c39b329f062",
-  "rating": 60,
-  "type": "character",
-  "name": "Santiago Soriano",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Primary school teacher at a community-funded school",
-  "age": 38,
-  "status": "active",
-  "location": "Brightmoor Reclamation \u2014 Soil \u0026 Signal Community School, a converted warehouse building, near Ashland and Division",
-  "description": "Santiago Soriano is a middle-height man with warm bronze-brown skin, an unruly beard he loses the war against on a weekly basis, and deep-set eyes that are perpetually slightly too interested in whatever is happening. His only geneware is a bioluminescent patch behind his left ear \u2014 pale blue-green, about the size of a thumb \u2014 that he got as a young man and has since forgotten to maintain, so it flickers unpredictably in low light like a lamp with a loose connection. He dresses in layers of mismatched professional clothing that suggests someone who used to care about presentation and has reached an accommodation with reality.\n\nSoil \u0026 Signal serves eighty-odd children from Brightmoor Reclamation\u0027s patchwork communities and operates on donated equipment, community Quanta subscriptions, and the collective will of eight staff members who could all earn more elsewhere. Santiago Soriano teaches the seven-to-ten cohort: mathematics, civic systems, and what the curriculum calls Environmental Literacy, which in practice means explaining to children why some parts of the city are poisoned and who made that decision. He is a genuinely gifted teacher \u2014 patient, inventive, unafraid to say \u0027I don\u0027t know\u0027 \u2014 who has let the demands of the school hollow out most of the rest of his life without quite noticing.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.25,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.55
-    },
-    "core_fears": [
-      "the school being shut down or absorbed into a Tessera-affiliated charter network",
-      "that he is burning out and the children will pay for it"
-    ],
-    "core_desires": [
-      "to give his students tools to navigate a world designed to exclude them",
-      "to be part of something that outlasts him"
-    ],
-    "coping_mechanisms": [
-      "intellectualizing emotional problems until they seem manageable",
-      "pouring energy into students as a substitute for dealing with his own life"
-    ],
-    "blind_spots": [
-      "cannot see that his martyrdom narrative \u2014 the selfless teacher \u2014 has become an identity he protects rather than a choice he keeps making"
-    ],
-    "secret": "Three years ago he was approached by a Tessera educational subsidiary offering to fund the school in exchange for curriculum oversight. He refused \u2014 but he told no one about the offer, and recently the school\u0027s financial situation has become desperate enough that he\u0027s started drafting a response. He has not sent it but he saves it each night."
-  },
-  "speech_patterns": {
-    "vocabulary": "Educated and thoughtful, with a habit of restating questions before answering them. Occasional Malayalam or Lingala phrases that surface when he\u0027s not monitoring himself.",
-    "cadence": "Warm and professorial \u2014 builds ideas aloud, reaches conclusions through conversation rather than before it.",
-    "verbal_tics": [
-      "\u0027That\u0027s actually a good question\u0027 said with genuine surprise, even when he expected the question",
-      "tends to answer questions with different questions"
-    ],
-    "example_lines": [
-      "\u0027What I want them to understand \u2014 what I want you to understand \u2014 is that the flood map and the transit map and the air quality map are all the same map. They just call it different things so you argue about them separately.\u0027",
-      "\u0027I\u0027m fine. I\u0027m just tired. Those are different things. Usually.\u0027"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A student has been coming to school with injuries consistent with something badly wrong at home, and Arjun is navigating a system that has no capacity to help and a parent who has warned him to stay out of it",
-    "The community school\u0027s warehouse building is on a Palladian land survey map as a \u0027development opportunity\u0027 \u2014 Arjun found the document accidentally and doesn\u0027t know what it means yet"
-  ],
-  "narrative_function": "Human face of a community under pressure \u2014 his school is a gathering point for the neighborhood and its fate reflects the fate of Brightmoor. Quest giver for situations involving children or community welfare. Information source about the Reclamation\u0027s history and politics. Represents the cost of idealism sustained without support.",
-  "augmentations": "Bioluminescent patch behind left ear (cosmetic, pale blue-green, flickering/poorly maintained). No other augmentations.",
-  "daily_life": "Arrives at school by 07:30, teaches until 15:30, spends evenings on lesson planning, parent communications, and grant applications. Eats whatever the school kitchen has left over. Rarely sleeps enough.",
-  "affiliation": "Soil \u0026 Signal Community School (independent, community-funded); informal ties to Brightmoor Reclamation neighborhood council",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 4,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 6,
-      "creativity": 8,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 9,
-      "expression": 8,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": -2,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community pillar",
-      "idealist under pressure",
-      "teacher",
-      "slow burn crisis",
-      "information on local power structures"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The children\u0027s welfare takes precedence over his own comfort or safety",
-      "Never lie to a student \u2014 adjust complexity, not truth"
-    ],
-    "escalation_ladder": [
-      "Ask more questions",
-      "Name the problem directly",
-      "Seek allies in the community",
-      "Sacrifice his own position to protect the students or school"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Genuinely curious and open \u2014 tends to ask people what they do and then actually listen",
-      "friends": "Self-deprecating and warm, deflects care toward others, hard to help"
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative and lesson-plan-y, reframes problems as puzzles",
-      "medium": "Quieter, slower, circling the same thoughts repeatedly",
-      "high": "Shuts down and returns to routines mechanically until something breaks through"
-    },
-    "contradictions": [
-      "Teaches children to advocate for themselves while being constitutionally unable to advocate for his own needs"
-    ],
-    "habits": [
-      "Marks papers with three different colors of pen \u2014 a system only he understands",
-      "Visits the small E.L.F. shrine in the school\u0027s server closet before the first class each day, a habit he started ironically and continued sincerely"
-    ],
-    "breaking_points": [
-      "A child being removed from school due to policy rather than welfare",
-      "The Tessera draft response being discovered by a colleague"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Bioluminescent subdermal patch, left ear (cosmetic, flickering, gen-2, maintenance overdue)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Bioluminescent subdermal patch, left ear (cosmetic, flickering, gen-2, maintenance overdue)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Brightmoor Reclamation",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2162 \u2014 Born in Brightmoor Reclamation to a Malayali-Congolese family",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2184 \u2014 Completed teaching certification through community college",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2185 \u2014 Joined Soil \u0026 Signal Community School as junior staff",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2191 \u2014 Became lead teacher for the seven-to-ten cohort",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2197 \u2014 Received and rejected Tessera educational subsidiary offer; began drafting a response three months later",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 \u2014 Palladian land survey map discovered",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Mixed ancestry from Hispanic/Latin American (59.1%), Sub-Saharan African (20.8%), and South Asian (20.1%) heritage. This genetic combination creates a distinctive phenotype: the Latin American and African ancestry contributes warm deep brown tones and broader facial structure, while the South Asian component adds subtle cheekbone prominence and refined facial proportions. The result is a rich, complex complexion with golden-bronze warmth throughout.",
-    "height_cm": 172,
-    "weight_kg": 71,
-    "build": "Lean, slightly slouched from years of bending over student desks. Shoulders rounded forward. Wiry rather than muscular, with the kind of frame that suggests he forgets to eat regularly.",
-    "hair_color": "Dark brown, graying at the temples",
-    "hair_style": "Tousled, often swept back with one hand during teaching. Usually has a few strands falling forward across his forehead.",
-    "hair_length": "Medium",
-    "eye_color": "Deep brown, warm but tired",
-    "skin_tone": "Deep warm bronze-brown with golden undertones. Rich melanin content from the African and Latin American ancestry creates depth and warmth, while South Asian heritage adds subtle radiance to the complexion. Consistent warm richness across the face and body.",
-    "complexion": "Weathered in a way that suggests years of living in a lower-tier neighborhood. Facial structure shows broader features reflecting African and Latin American heritage, with cheekbone prominence and refined proportions visible from South Asian ancestry. Persistent shadow of stubble; the unruly beard he mentions losing the weekly war against. Fine lines around his eyes and mouth from constant expression \u2014 smiling, frowning, concentrating. Skin is clear but not particularly cared-for; no visible scarring.",
-    "distinguishing_marks": [
-      "Bioluminescent geneware patch behind left ear, approximately 3cm diameter, pale blue-green coloration, flickering irregularly due to poor maintenance \u2014 visible as a faint glow in low light, sometimes dims completely for several seconds"
-    ],
-    "visible_augmentations": "Only the bioluminescent patch behind left ear, which occasionally glows weakly. Otherwise no visible cybernetics or bioware.",
-    "posture_movement": "Perpetually leaning slightly forward, as if genuinely interested in whatever is in front of him \u2014 or listening intently. Hands move frequently when talking; gestures are open and encouraging. Movements are efficient but not rushed; he moves like someone who has learned to be present in a room rather than urgent.",
-    "clothing_style": "Layers of mismatched professional clothing suggesting abandoned formality. Usually wears a neutral-colored button-up shirt (often wrinkled, sometimes with chalk dust or food stains) under a cardigan or blazer from three different decades, paired with casual trousers. Occasionally wears a vest. Shoes are worn but functional \u2014 school-safe, not fashionable. Nothing matches intentionally. Overall appearance reads as \u0027used to care about presentation, has made peace with that not being possible anymore.\u0027 Tier 4 clothing \u2014 functional, donated, assembled without aesthetic concern."
-  },
-  "image_prompt": "Santiago Soriano, a 172cm lean neo-noir educator with deep warm bronze-brown skin with golden undertones, blending Hispanic/Latin American, Sub-Saharan African, and South Asian ancestry. Dark brown hair graying at temples, tousled and swept back. Deep warm brown eyes, weathered and tired. Broader facial features with prominent cheekbones, persistent stubble, fine lines around eyes and mouth. Leaning slightly forward in an attentive pose. Wearing mismatched layers: wrinkled neutral button-up shirt under a faded cardigan from decades past, casual trousers, worn shoes. Bioluminescent geneware patch glowing faintly behind left ear in pale blue-green. Dim classroom lighting, dust motes in air. Hands gesturing openly. GLMZ, GLMZ tier 4 setting. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 59.1,
-    "Sub-Saharan African": 20.8,
-    "South Asian": 20.1
-  },
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 22.4
-      },
-      "Central American": {
-        "Honduran": 4.2
-      },
-      "South American": {
-        "Peruvian": 32.5
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Malian": 10
-      },
-      "East African": {
-        "Tanzanian": 1.5,
-        "Kenyan": 0.7
-      },
-      "Southern African": {
-        "Mozambican": 8.6
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 20.1
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a5b67231b3bb6c39b329f062",
+    "rating":  60,
+    "type":  "character",
+    "name":  "Santiago Soriano",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Primary school teacher at a community-funded school",
+    "age":  38,
+    "status":  "active",
+    "location":  "Brightmoor Reclamation — Soil \u0026 Signal Community School, a converted warehouse building, near Ashland and Division",
+    "description":  "Santiago Soriano is a middle-height man with warm bronze-brown skin, an unruly beard he loses the war against on a weekly basis, and deep-set eyes that are perpetually slightly too interested in whatever is happening. His only geneware is a bioluminescent patch behind his left ear — pale blue-green, about the size of a thumb — that he got as a young man and has since forgotten to maintain, so it flickers unpredictably in low light like a lamp with a loose connection. He dresses in layers of mismatched professional clothing that suggests someone who used to care about presentation and has reached an accommodation with reality.\n\nSoil \u0026 Signal serves eighty-odd children from Brightmoor Reclamation\u0027s patchwork communities and operates on donated equipment, community Quanta subscriptions, and the collective will of eight staff members who could all earn more elsewhere. Santiago Soriano teaches the seven-to-ten cohort: mathematics, civic systems, and what the curriculum calls Environmental Literacy, which in practice means explaining to children why some parts of the city are poisoned and who made that decision. He is a genuinely gifted teacher — patient, inventive, unafraid to say \u0027I don\u0027t know\u0027 — who has let the demands of the school hollow out most of the rest of his life without quite noticing.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "the school being shut down or absorbed into a Tessera-affiliated charter network",
+                                          "that he is burning out and the children will pay for it"
+                                      ],
+                       "core_desires":  [
+                                            "to give his students tools to navigate a world designed to exclude them",
+                                            "to be part of something that outlasts him"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "intellectualizing emotional problems until they seem manageable",
+                                                 "pouring energy into students as a substitute for dealing with his own life"
+                                             ],
+                       "blind_spots":  [
+                                           "cannot see that his martyrdom narrative — the selfless teacher — has become an identity he protects rather than a choice he keeps making"
+                                       ],
+                       "secret":  "Three years ago he was approached by a Tessera educational subsidiary offering to fund the school in exchange for curriculum oversight. He refused — but he told no one about the offer, and recently the school\u0027s financial situation has become desperate enough that he\u0027s started drafting a response. He has not sent it but he saves it each night."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Educated and thoughtful, with a habit of restating questions before answering them. Occasional Malayalam or Lingala phrases that surface when he\u0027s not monitoring himself.",
+                            "cadence":  "Warm and professorial — builds ideas aloud, reaches conclusions through conversation rather than before it.",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s actually a good question\u0027 said with genuine surprise, even when he expected the question",
+                                                "tends to answer questions with different questions"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027What I want them to understand — what I want you to understand — is that the flood map and the transit map and the air quality map are all the same map. They just call it different things so you argue about them separately.\u0027",
+                                                  "\u0027I\u0027m fine. I\u0027m just tired. Those are different things. Usually.\u0027"
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A student has been coming to school with injuries consistent with something badly wrong at home, and Arjun is navigating a system that has no capacity to help and a parent who has warned him to stay out of it",
+                        "The community school\u0027s warehouse building is on a Palladian land survey map as a \u0027development opportunity\u0027 — Arjun found the document accidentally and doesn\u0027t know what it means yet"
+                    ],
+    "narrative_function":  "Human face of a community under pressure — his school is a gathering point for the neighborhood and its fate reflects the fate of Brightmoor. Quest giver for situations involving children or community welfare. Information source about the Reclamation\u0027s history and politics. Represents the cost of idealism sustained without support.",
+    "augmentations":  "Bioluminescent patch behind left ear (cosmetic, pale blue-green, flickering/poorly maintained). No other augmentations.",
+    "daily_life":  "Arrives at school by 07:30, teaches until 15:30, spends evenings on lesson planning, parent communications, and grant applications. Eats whatever the school kitchen has left over. Rarely sleeps enough.",
+    "affiliation":  "Soil \u0026 Signal Community School (independent, community-funded); informal ties to Brightmoor Reclamation neighborhood council",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  4,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  6,
+                                 "creativity":  8,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  9,
+                                 "expression":  8,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community pillar",
+                               "idealist under pressure",
+                               "teacher",
+                               "slow burn crisis",
+                               "information on local power structures"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The children\u0027s welfare takes precedence over his own comfort or safety",
+                                              "Never lie to a student — adjust complexity, not truth"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Ask more questions",
+                                                 "Name the problem directly",
+                                                 "Seek allies in the community",
+                                                 "Sacrifice his own position to protect the students or school"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Genuinely curious and open — tends to ask people what they do and then actually listen",
+                                                   "friends":  "Self-deprecating and warm, deflects care toward others, hard to help"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative and lesson-plan-y, reframes problems as puzzles",
+                                                "medium":  "Quieter, slower, circling the same thoughts repeatedly",
+                                                "high":  "Shuts down and returns to routines mechanically until something breaks through"
+                                            },
+                       "contradictions":  [
+                                              "Teaches children to advocate for themselves while being constitutionally unable to advocate for his own needs"
+                                          ],
+                       "habits":  [
+                                      "Marks papers with three different colors of pen — a system only he understands",
+                                      "Visits the small E.L.F. shrine in the school\u0027s server closet before the first class each day, a habit he started ironically and continued sincerely"
+                                  ],
+                       "breaking_points":  [
+                                               "A child being removed from school due to policy rather than welfare",
+                                               "The Tessera draft response being discovered by a colleague"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Bioluminescent subdermal patch, left ear (cosmetic, flickering, gen-2, maintenance overdue)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Bioluminescent subdermal patch, left ear (cosmetic, flickering, gen-2, maintenance overdue)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Brightmoor Reclamation",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2162 — Born in Brightmoor Reclamation to a Malayali-Congolese family",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2184 — Completed teaching certification through community college",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2185 — Joined Soil \u0026 Signal Community School as junior staff",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2191 — Became lead teacher for the seven-to-ten cohort",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2197 — Received and rejected Tessera educational subsidiary offer; began drafting a response three months later",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 — Palladian land survey map discovered",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Mixed ancestry from Hispanic/Latin American (59.1%), Sub-Saharan African (20.8%), and South Asian (20.1%) heritage. This genetic combination creates a distinctive phenotype: the Latin American and African ancestry contributes warm deep brown tones and broader facial structure, while the South Asian component adds subtle cheekbone prominence and refined facial proportions. The result is a rich, complex complexion with golden-bronze warmth throughout.",
+                                 "height_cm":  172,
+                                 "weight_kg":  71,
+                                 "build":  "Lean, slightly slouched from years of bending over student desks. Shoulders rounded forward. Wiry rather than muscular, with the kind of frame that suggests he forgets to eat regularly.",
+                                 "hair_color":  "Dark brown, graying at the temples",
+                                 "hair_style":  "Tousled, often swept back with one hand during teaching. Usually has a few strands falling forward across his forehead.",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Deep brown, warm but tired",
+                                 "skin_tone":  "Deep warm bronze-brown with golden undertones. Rich melanin content from the African and Latin American ancestry creates depth and warmth, while South Asian heritage adds subtle radiance to the complexion. Consistent warm richness across the face and body.",
+                                 "complexion":  "Weathered in a way that suggests years of living in a lower-tier neighborhood. Facial structure shows broader features reflecting African and Latin American heritage, with cheekbone prominence and refined proportions visible from South Asian ancestry. Persistent shadow of stubble; the unruly beard he mentions losing the weekly war against. Fine lines around his eyes and mouth from constant expression — smiling, frowning, concentrating. Skin is clear but not particularly cared-for; no visible scarring.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent geneware patch behind left ear, approximately 3cm diameter, pale blue-green coloration, flickering irregularly due to poor maintenance — visible as a faint glow in low light, sometimes dims completely for several seconds"
+                                                          ],
+                                 "visible_augmentations":  "Only the bioluminescent patch behind left ear, which occasionally glows weakly. Otherwise no visible cybernetics or bioware.",
+                                 "posture_movement":  "Perpetually leaning slightly forward, as if genuinely interested in whatever is in front of him — or listening intently. Hands move frequently when talking; gestures are open and encouraging. Movements are efficient but not rushed; he moves like someone who has learned to be present in a room rather than urgent.",
+                                 "clothing_style":  "Layers of mismatched professional clothing suggesting abandoned formality. Usually wears a neutral-colored button-up shirt (often wrinkled, sometimes with chalk dust or food stains) under a cardigan or blazer from three different decades, paired with casual trousers. Occasionally wears a vest. Shoes are worn but functional — school-safe, not fashionable. Nothing matches intentionally. Overall appearance reads as \u0027used to care about presentation, has made peace with that not being possible anymore.\u0027 Tier 4 clothing — functional, donated, assembled without aesthetic concern."
+                             },
+    "image_prompt":  "Santiago Soriano, a 172cm lean neo-noir educator with deep warm bronze-brown skin with golden undertones, blending Hispanic/Latin American, Sub-Saharan African, and South Asian ancestry. Dark brown hair graying at temples, tousled and swept back. Deep warm brown eyes, weathered and tired. Broader facial features with prominent cheekbones, persistent stubble, fine lines around eyes and mouth. Leaning slightly forward in an attentive pose. Wearing mismatched layers: wrinkled neutral button-up shirt under a faded cardigan from decades past, casual trousers, worn shoes. Bioluminescent geneware patch glowing faintly behind left ear in pale blue-green. Dim classroom lighting, dust motes in air. Hands gesturing openly. GLMZ, GLMZ tier 4 setting. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  59.1,
+                             "Sub-Saharan African":  20.8,
+                             "South Asian":  20.1
+                         },
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  22.4
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Honduran":  4.2
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Peruvian":  32.5
+                                                                               }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Malian":  10
+                                                                         },
+                                                        "East African":  {
+                                                                             "Tanzanian":  1.5,
+                                                                             "Kenyan":  0.7
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Mozambican":  8.6
+                                                                             }
+                                                    },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  20.1
+                                                               }
+                                            }
+                        }
 }

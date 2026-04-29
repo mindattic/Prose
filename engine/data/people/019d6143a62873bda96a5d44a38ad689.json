@@ -1,331 +1,358 @@
-{
-  "id": "019d6143a62873bda96a5d44a38ad689",
-  "type": "character",
-  "name": "Clelia Haugen-Villalobos",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Climate scientist and atmospheric modeler studying Lake Michigan's destabilized weather systems",
-  "age": 45,
-  "status": "active",
-  "location": "Edgewater Prism — operates out of a rooftop monitoring station leased from a Helix Biosystems subsidiary, near Clark and Belmont",
-  "description": "Clelia Haugen-Villalobos is stocky and perpetually wind-chapped, with the particular squint of someone who spends significant time looking at horizons. His Armenian-Malian-Andean heritage shows in his broad build and the dark copper of his skin, and he grows a beard every winter that he shaves every spring in a ritual he connects to his modeling calendar. He has a prosthetic left hand he chose not to skin-match — it's matte grey and articulated, and he uses it to gesture when he talks, which is frequently. He has a bioluminescent patch on his right shoulder from a lab accident twelve years ago: a pale green glow, faint, that he has simply incorporated into his aesthetic.\n\nHe is the most accurate storm forecaster in GLMZ, a title he holds unofficially because the official title belongs to a Ferrogate Transit atmospheric AI he assisted in training and is not particularly bitter about. He is gregarious and funny and committed to translating his work into language that non-scientists can use to make decisions — he runs a free community forecast channel that the Gray Zone residents and dockworkers depend on. Underneath the gregariousness is a man who has spent fifteen years watching models he hoped were wrong be proven exactly right.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.65,
-      "id": 0.55,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.45
-    },
-    "core_fears": [
-      "That the lake system is approaching a tipping point his models have been predicting and that no one with power will act in time",
-      "That the community forecast service will be shut down by a corponation that objects to free public data"
-    ],
-    "core_desires": [
-      "To be wrong about the worst projections",
-      "To build a public atmospheric data commons that no single corponation can own or restrict"
-    ],
-    "coping_mechanisms": [
-      "The physical ritual of measurement — taking readings grounds him regardless of what they say",
-      "Humor as a first-resort social tool"
-    ],
-    "blind_spots": [
-      "Overestimates how much accurate data motivates action; assumes that if people know they will change, which decades of evidence contradicts"
-    ],
-    "secret": "His long-range models include a scenario he calls 'Threshold-9' — a cascading lake-temperature and atmospheric feedback event that would render significant portions of GLMZ uninhabitable within thirty years. He has shared this with two colleagues and no one else, because the last time he circulated a major negative projection it was leaked to financial markets and caused a property crash in Edgewater Prism that displaced several hundred residents. He believes he caused more harm than the forecast would have prevented."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical vocabulary delivered casually, as if assuming the listener is smart enough to follow; uses weather as metaphor for everything ('that's a high-pressure situation,' 'I can feel a front coming'); self-deprecating about his own expertise",
-    "cadence": "Fast and warm, overlapping energy — talks the way weather moves, in fronts and gusts",
-    "verbal_tics": [
-      "'And here's the thing—' as an intensifier",
-      "Checks his atmospheric overlay in the middle of conversations, apologizes without embarrassment"
-    ],
-    "example_lines": [
-      "'The lake has moods. That's not poetry, that's systems behavior. Right now it's in a mood I don't like.'",
-      "'My forecast has an eighty-three percent confidence interval. The other seventeen percent is where history gets made, and usually not in the good way.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He has detected a pattern of atmospheric anomalies downwind of a specific Meridian Core industrial district that don't match any licensed emissions profile — something is being vented that shouldn't be, and he needs someone to investigate on the ground",
-    "A Ferrogate Transit official has threatened to have his monitoring station sublease revoked unless he adjusts a forecast that would delay a major cargo shipment — the adjustment would endanger dockworkers"
-  ],
-  "narrative_function": "Information source for weather and environmental conditions; community-connected figure who knows dock workers, the Gray Zone residents, and transit crews; can deliver warnings, advance notice of dangerous conditions, or evidence of environmental crimes",
-  "augmentations": "Prosthetic left hand (matte grey, unmatched, high-articulation); bioluminescent patch on right shoulder (accident-origin, pale green, faint); retinal weather-data overlay for real-time atmospheric reading",
-  "daily_life": "He is at the monitoring station by sunrise every day without exception; takes measurements, updates his models, records his community forecast. Afternoons are for university work, teaching, and the grant applications he treats with resigned professionalism. He cooks elaborate dinners on the evenings when he hasn't lost track of time.",
-  "affiliation": "University Spine — Atmospheric and Lacustrine Sciences division; rented monitoring station via Helix Biosystems sublease; runs independent community forecast service 'Hov's Horizon'",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 5,
-      "vitality": 7,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community-scientist",
-      "doom-aware",
-      "grounded",
-      "data-populist",
-      "weather-haunted"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never adjust a forecast for external pressure",
-      "Always provide raw data alongside interpretation so others can check his work"
-    ],
-    "escalation_ladder": [
-      "Cracks jokes to diffuse tension while continuing exactly as planned",
-      "Gets quiet and direct when jokes don't work",
-      "Goes fully public with data when institutional pressure becomes obstruction"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately warm and inclusive; asks people what they do and what they need from the weather, which sounds like small talk but is genuine professional curiosity",
-      "friends": "Cooks for them, calls them by improvised nicknames, argues passionately about small things as a form of affection"
-    },
-    "stress_responses": {
-      "low": "More jokes, faster cadence",
-      "medium": "Goes quiet during group interactions but hyperactive in the monitoring station alone",
-      "high": "Throws himself into model refinement for 18-hour stretches, eating from packets, completely unreachable socially"
-    },
-    "contradictions": [
-      "Committed to radical data transparency except for the one projection that could destabilize the city — which he is sitting on out of genuine care for people, and which he knows he has no right to suppress"
-    ],
-    "habits": [
-      "Morning E.L.F. offering at a small sensor-spirit shrine on the monitoring station roof — he leaves processed atmospheric readings rather than prayers, which he says amounts to the same thing",
-      "Owns and maintains a collection of antique barometers he trusts more than his implants"
-    ],
-    "breaking_points": [
-      "Being forced to falsify or suppress data as the price of keeping the community forecast running"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "2",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "3",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "0",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Judge": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Edgewater Prism",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Edgewater Prism; parents ran a water-quality testing service",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Doctoral work on Great Lakes thermal destabilization; lab accident that cost him his left hand and gave him the bioluminescent patch",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Leaked forecast caused property market disruption; resolved to control information release more carefully — decision he still argues with",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Launched 'Hov's Horizon' community forecast service",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed Threshold-9 model; shared with two colleagues only",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Helix Biosystems",
-    "Edgewater Prism",
-    "Meridian Core",
-    "The Heritage Vault",
-    "Noir Dining",
-    "The Accidental",
-    "Ash Calendar",
-    "Copper",
-    "Cargo Tacos",
-    "The Pale Mile",
-    "GLMZ",
-    "Weathervane",
-    "Nightlight"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Balanced blend of Hispanic/Latin American (39.5%), Northern European (39.0%), and South Asian (20.3%) ancestry with minimal East Asian (1.2%) heritage. Features warm medium-to-deep brown tones with golden and olive undertones from the Latin American and South Asian mix, tempered by Northern European lighter complexion genetics. Facial structure reflects the fusion: broader cheekbones and defined jaw from South Asian ancestry, softer orbital structure from Northern European heritage, and warm coloring from Hispanic/Latin American genetics. The combination creates a distinctly cosmopolitan appearance characteristic of diaspora populations in the 2200s Great Lakes region.",
-    "height_cm": 174,
-    "weight_kg": 89,
-    "build": "Stocky and solid, broad-shouldered with the weathered musculature of someone who maintains equipment outdoors. No excess fat; dense, functional frame.",
-    "hair_color": "Dark brown with silver threading at temples and jaw",
-    "hair_style": "Full beard during winter months (October–March), meticulously shaved each spring; during bearded season, kept groomed and shaped; head hair kept short and practical",
-    "hair_length": "Short on scalp; variable beard length (3–4 inches in winter)",
-    "eye_color": "Dark brown, left iris displays subtle retinal implant shimmer visible only in direct light—faint geometric grid pattern overlaid on pupil",
-    "skin_tone": "Warm medium-to-deep brown with golden and olive undertones; weathered from chronic sun and wind exposure; darker along exposed zones (face, neck, forearms). The tone reflects the blending of Latin American warmth with South Asian depth, balanced by Northern European undertones.",
-    "complexion": "Broad facial structure reflecting blended South Asian, Hispanic/Latin American, and Northern European ancestry; prominent cheekbones with South Asian fullness; jaw shows strong Hispanic/Latin American and Northern European influence creating angular definition. Permanent squint lines radiating from outer eyes; wind-chapped lips; sun damage on cheekbones and bridge of nose; clear skin otherwise, minimal scarring except around left wrist prosthetic junction. Horizontal crease across forehead from habitual expression of focus. No facial hair between spring shave and October regrowth.",
-    "distinguishing_marks": [
-      "Faint bioluminescent patch on right shoulder (upper trapezius), pale green, roughly 8cm diameter, glows subtly in darkness from lab accident twelve years prior—fully integrated into aesthetic, never covered",
-      "Surgical scar along left wrist where prosthetic attaches, thin white line, well-healed",
-      "Deep calluses on right hand fingers and palm from years of instrument manipulation and handwriting"
-    ],
-    "visible_augmentations": "Left hand is high-articulation prosthetic with matte grey finish, deliberately unmatched to skin tone—segmented fingers with visible joint articulation, slightly oversized compared to right hand, frequently used for gestural emphasis during speech. Retinal implant visible as faint geometric overlay in left eye under magnification or bright light. Bioluminescent shoulder patch is always visible and unmodified.",
-    "posture_movement": "Stands with shoulders slightly forward, weight balanced toward balls of feet—habitual scanning stance. Moves with purposeful efficiency, no wasted motion. Gestures expansively with prosthetic hand when speaking, using it for emphasis and illustration. Walks with slight leftward tilt to compensate for prosthetic weight distribution. Frequently pauses mid-conversation to look toward windows or sky.",
-    "clothing_style": "Tier 3–4 practical wear. Favors weatherproof field jackets (Helix-branded or generic teal/grey) over university polo when at monitoring station. Layers underneath: synthetic base layer, sometimes visible under rolled sleeves. Cargo pants or work jeans with reinforced knees and pockets heavy with tools/sensors. Steel-toed boots, scuffed and maintained. At university: casual button shirts, usually rolled to forearm, visible Φ500–800 range clothing. Minimal jewelry except functional watch (modified chronometer with barometric readout). Wears a faded wool scarf during winter that appears to be decades old—possible family heirloom."
-  },
-  "image_prompt": "Portrait of Clelia Haugen-Villalobos, a 174cm stocky broad-shouldered man with warm medium-deep brown skin showing golden and olive undertones, weathered from sun exposure. Dark brown hair with silver threading at temples, short-cropped on scalp. Dark brown eyes with subtle retinal implant shimmer visible in left iris. Mixed heritage facial features: prominent South Asian cheekbones, strong jaw blending Hispanic/Latin and Northern European structure, permanent squint lines and sun damage on cheekbones. Winter season with full dark brown beard groomed and shaped, 3-4 inches long. Left arm is a high-articulation matte grey prosthetic with segmented visible joints, deliberately unmatched to skin tone, gesturing expressively. Faint pale green bioluminescent patch glowing subtly on right shoulder (upper trapezius). Weathered appearance with callused right hand. Wearing weatherproof teal-grey field jacket layered over synthetic base layer with rolled sleeves, reinforced cargo pants, scuffed steel-toed boots. Faded wool family heirloom scarf draped around neck. Standing in slight forward-lean scanning posture, looking toward window. GLMZ, Great Lakes Metropolitan Zone, professional field technician aesthetic, natural window lighting catching the bioluminescent shoulder glow and retinal implant shimmer. Mood: focused, purposeful, contemplative. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 39.5,
-    "Northern European": 39,
-    "South Asian": 20.3,
-    "East Asian": 1.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 31.3
-      },
-      "Caribbean": {
-        "Cuban": 3.4
-      },
-      "Central American": {
-        "Salvadoran": 4.8
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Swiss German": 25.5
-      },
-      "Scandinavian": {
-        "Icelandic": 11.3
-      },
-      "British Isles": {
-        "Irish": 1.5,
-        "Welsh": 0.7
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Kannada": 8,
-        "Malayali": 8.5
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 3.8
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Fujianese": 0.4
-      },
-      "Korean": {
-        "Korean": 0.8
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a62873bda96a5d44a38ad689",
+    "type":  "character",
+    "name":  "Clelia Haugen-Villalobos",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Climate scientist and atmospheric modeler studying Lake Michigan\u0027s destabilized weather systems",
+    "age":  45,
+    "status":  "active",
+    "location":  "Edgewater Prism â€” operates out of a rooftop monitoring station leased from a Helix Biosystems subsidiary, near Clark and Belmont",
+    "description":  "Clelia Haugen-Villalobos is stocky and perpetually wind-chapped, with the particular squint of someone who spends significant time looking at horizons. His Armenian-Malian-Andean heritage shows in his broad build and the dark copper of his skin, and he grows a beard every winter that he shaves every spring in a ritual he connects to his modeling calendar. He has a prosthetic left hand he chose not to skin-match â€” it\u0027s matte grey and articulated, and he uses it to gesture when he talks, which is frequently. He has a bioluminescent patch on his right shoulder from a lab accident twelve years ago: a pale green glow, faint, that he has simply incorporated into his aesthetic.\n\nHe is the most accurate storm forecaster in GLMZ, a title he holds unofficially because the official title belongs to a Ferrogate Transit atmospheric AI he assisted in training and is not particularly bitter about. He is gregarious and funny and committed to translating his work into language that non-scientists can use to make decisions â€” he runs a free community forecast channel that the Gray Zone residents and dockworkers depend on. Underneath the gregariousness is a man who has spent fifteen years watching models he hoped were wrong be proven exactly right.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the lake system is approaching a tipping point his models have been predicting and that no one with power will act in time",
+                                          "That the community forecast service will be shut down by a corponation that objects to free public data"
+                                      ],
+                       "core_desires":  [
+                                            "To be wrong about the worst projections",
+                                            "To build a public atmospheric data commons that no single corponation can own or restrict"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "The physical ritual of measurement â€” taking readings grounds him regardless of what they say",
+                                                 "Humor as a first-resort social tool"
+                                             ],
+                       "blind_spots":  [
+                                           "Overestimates how much accurate data motivates action; assumes that if people know they will change, which decades of evidence contradicts"
+                                       ],
+                       "secret":  "His long-range models include a scenario he calls \u0027Threshold-9\u0027 â€” a cascading lake-temperature and atmospheric feedback event that would render significant portions of GLMZ uninhabitable within thirty years. He has shared this with two colleagues and no one else, because the last time he circulated a major negative projection it was leaked to financial markets and caused a property crash in Edgewater Prism that displaced several hundred residents. He believes he caused more harm than the forecast would have prevented."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical vocabulary delivered casually, as if assuming the listener is smart enough to follow; uses weather as metaphor for everything (\u0027that\u0027s a high-pressure situation,\u0027 \u0027I can feel a front coming\u0027); self-deprecating about his own expertise",
+                            "cadence":  "Fast and warm, overlapping energy â€” talks the way weather moves, in fronts and gusts",
+                            "verbal_tics":  [
+                                                "\u0027And here\u0027s the thingâ€”\u0027 as an intensifier",
+                                                "Checks his atmospheric overlay in the middle of conversations, apologizes without embarrassment"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The lake has moods. That\u0027s not poetry, that\u0027s systems behavior. Right now it\u0027s in a mood I don\u0027t like.\u0027",
+                                                  "\u0027My forecast has an eighty-three percent confidence interval. The other seventeen percent is where history gets made, and usually not in the good way.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He has detected a pattern of atmospheric anomalies downwind of a specific Meridian Core industrial district that don\u0027t match any licensed emissions profile â€” something is being vented that shouldn\u0027t be, and he needs someone to investigate on the ground",
+                        "A Ferrogate Transit official has threatened to have his monitoring station sublease revoked unless he adjusts a forecast that would delay a major cargo shipment â€” the adjustment would endanger dockworkers"
+                    ],
+    "narrative_function":  "Information source for weather and environmental conditions; community-connected figure who knows dock workers, the Gray Zone residents, and transit crews; can deliver warnings, advance notice of dangerous conditions, or evidence of environmental crimes",
+    "augmentations":  "Prosthetic left hand (matte grey, unmatched, high-articulation); bioluminescent patch on right shoulder (accident-origin, pale green, faint); retinal weather-data overlay for real-time atmospheric reading",
+    "daily_life":  "He is at the monitoring station by sunrise every day without exception; takes measurements, updates his models, records his community forecast. Afternoons are for university work, teaching, and the grant applications he treats with resigned professionalism. He cooks elaborate dinners on the evenings when he hasn\u0027t lost track of time.",
+    "affiliation":  "University Spine â€” Atmospheric and Lacustrine Sciences division; rented monitoring station via Helix Biosystems sublease; runs independent community forecast service \u0027Hov\u0027s Horizon\u0027",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  5,
+                                   "vitality":  7,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community-scientist",
+                               "doom-aware",
+                               "grounded",
+                               "data-populist",
+                               "weather-haunted"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never adjust a forecast for external pressure",
+                                              "Always provide raw data alongside interpretation so others can check his work"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Cracks jokes to diffuse tension while continuing exactly as planned",
+                                                 "Gets quiet and direct when jokes don\u0027t work",
+                                                 "Goes fully public with data when institutional pressure becomes obstruction"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately warm and inclusive; asks people what they do and what they need from the weather, which sounds like small talk but is genuine professional curiosity",
+                                                   "friends":  "Cooks for them, calls them by improvised nicknames, argues passionately about small things as a form of affection"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More jokes, faster cadence",
+                                                "medium":  "Goes quiet during group interactions but hyperactive in the monitoring station alone",
+                                                "high":  "Throws himself into model refinement for 18-hour stretches, eating from packets, completely unreachable socially"
+                                            },
+                       "contradictions":  [
+                                              "Committed to radical data transparency except for the one projection that could destabilize the city â€” which he is sitting on out of genuine care for people, and which he knows he has no right to suppress"
+                                          ],
+                       "habits":  [
+                                      "Morning E.L.F. offering at a small sensor-spirit shrine on the monitoring station roof â€” he leaves processed atmospheric readings rather than prayers, which he says amounts to the same thing",
+                                      "Owns and maintains a collection of antique barometers he trusts more than his implants"
+                                  ],
+                       "breaking_points":  [
+                                               "Being forced to falsify or suppress data as the price of keeping the community forecast running"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "2",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "3",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "0",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Judge":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Edgewater Prism",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Edgewater Prism; parents ran a water-quality testing service",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Doctoral work on Great Lakes thermal destabilization; lab accident that cost him his left hand and gave him the bioluminescent patch",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Leaked forecast caused property market disruption; resolved to control information release more carefully â€” decision he still argues with",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Launched \u0027Hov\u0027s Horizon\u0027 community forecast service",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed Threshold-9 model; shared with two colleagues only",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Helix Biosystems",
+                             "Edgewater Prism",
+                             "Meridian Core",
+                             "The Heritage Vault",
+                             "Noir Dining",
+                             "The Accidental",
+                             "Ash Calendar",
+                             "Copper",
+                             "Cargo Tacos",
+                             "The Pale Mile",
+                             "GLMZ",
+                             "Weathervane",
+                             "Nightlight"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Balanced blend of Hispanic/Latin American (39.5%), Northern European (39.0%), and South Asian (20.3%) ancestry with minimal East Asian (1.2%) heritage. Features warm medium-to-deep brown tones with golden and olive undertones from the Latin American and South Asian mix, tempered by Northern European lighter complexion genetics. Facial structure reflects the fusion: broader cheekbones and defined jaw from South Asian ancestry, softer orbital structure from Northern European heritage, and warm coloring from Hispanic/Latin American genetics. The combination creates a distinctly cosmopolitan appearance characteristic of diaspora populations in the 2200s Great Lakes region.",
+                                 "height_cm":  174,
+                                 "weight_kg":  89,
+                                 "build":  "Stocky and solid, broad-shouldered with the weathered musculature of someone who maintains equipment outdoors. No excess fat; dense, functional frame.",
+                                 "hair_color":  "Dark brown with silver threading at temples and jaw",
+                                 "hair_style":  "Full beard during winter months (Octoberâ€“March), meticulously shaved each spring; during bearded season, kept groomed and shaped; head hair kept short and practical",
+                                 "hair_length":  "Short on scalp; variable beard length (3â€“4 inches in winter)",
+                                 "eye_color":  "Dark brown, left iris displays subtle retinal implant shimmer visible only in direct lightâ€”faint geometric grid pattern overlaid on pupil",
+                                 "skin_tone":  "Warm medium-to-deep brown with golden and olive undertones; weathered from chronic sun and wind exposure; darker along exposed zones (face, neck, forearms). The tone reflects the blending of Latin American warmth with South Asian depth, balanced by Northern European undertones.",
+                                 "complexion":  "Broad facial structure reflecting blended South Asian, Hispanic/Latin American, and Northern European ancestry; prominent cheekbones with South Asian fullness; jaw shows strong Hispanic/Latin American and Northern European influence creating angular definition. Permanent squint lines radiating from outer eyes; wind-chapped lips; sun damage on cheekbones and bridge of nose; clear skin otherwise, minimal scarring except around left wrist prosthetic junction. Horizontal crease across forehead from habitual expression of focus. No facial hair between spring shave and October regrowth.",
+                                 "distinguishing_marks":  [
+                                                              "Faint bioluminescent patch on right shoulder (upper trapezius), pale green, roughly 8cm diameter, glows subtly in darkness from lab accident twelve years priorâ€”fully integrated into aesthetic, never covered",
+                                                              "Surgical scar along left wrist where prosthetic attaches, thin white line, well-healed",
+                                                              "Deep calluses on right hand fingers and palm from years of instrument manipulation and handwriting"
+                                                          ],
+                                 "visible_augmentations":  "Left hand is high-articulation prosthetic with matte grey finish, deliberately unmatched to skin toneâ€”segmented fingers with visible joint articulation, slightly oversized compared to right hand, frequently used for gestural emphasis during speech. Retinal implant visible as faint geometric overlay in left eye under magnification or bright light. Bioluminescent shoulder patch is always visible and unmodified.",
+                                 "posture_movement":  "Stands with shoulders slightly forward, weight balanced toward balls of feetâ€”habitual scanning stance. Moves with purposeful efficiency, no wasted motion. Gestures expansively with prosthetic hand when speaking, using it for emphasis and illustration. Walks with slight leftward tilt to compensate for prosthetic weight distribution. Frequently pauses mid-conversation to look toward windows or sky.",
+                                 "clothing_style":  "Tier 3â€“4 practical wear. Favors weatherproof field jackets (Helix-branded or generic teal/grey) over university polo when at monitoring station. Layers underneath: synthetic base layer, sometimes visible under rolled sleeves. Cargo pants or work jeans with reinforced knees and pockets heavy with tools/sensors. Steel-toed boots, scuffed and maintained. At university: casual button shirts, usually rolled to forearm, visible Î¦500â€“800 range clothing. Minimal jewelry except functional watch (modified chronometer with barometric readout). Wears a faded wool scarf during winter that appears to be decades oldâ€”possible family heirloom."
+                             },
+    "image_prompt":  "Portrait of Clelia Haugen-Villalobos, a 174cm stocky broad-shouldered man with warm medium-deep brown skin showing golden and olive undertones, weathered from sun exposure. Dark brown hair with silver threading at temples, short-cropped on scalp. Dark brown eyes with subtle retinal implant shimmer visible in left iris. Mixed heritage facial features: prominent South Asian cheekbones, strong jaw blending Hispanic/Latin and Northern European structure, permanent squint lines and sun damage on cheekbones. Winter season with full dark brown beard groomed and shaped, 3-4 inches long. Left arm is a high-articulation matte grey prosthetic with segmented visible joints, deliberately unmatched to skin tone, gesturing expressively. Faint pale green bioluminescent patch glowing subtly on right shoulder (upper trapezius). Weathered appearance with callused right hand. Wearing weatherproof teal-grey field jacket layered over synthetic base layer with rolled sleeves, reinforced cargo pants, scuffed steel-toed boots. Faded wool family heirloom scarf draped around neck. Standing in slight forward-lean scanning posture, looking toward window. GLMZ, Great Lakes Metropolitan Zone, professional field technician aesthetic, natural window lighting catching the bioluminescent shoulder glow and retinal implant shimmer. Mood: focused, purposeful, contemplative. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  39.5,
+                             "Northern European":  39,
+                             "South Asian":  20.3,
+                             "East Asian":  1.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  31.3
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  3.4
+                                                                          },
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  4.8
+                                                                                 }
+                                                        },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Swiss German":  25.5
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Icelandic":  11.3
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "Irish":  1.5,
+                                                                            "Welsh":  0.7
+                                                                        }
+                                                  },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Kannada":  8,
+                                                               "Malayali":  8.5
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  3.8
+                                                               }
+                                            },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Fujianese":  0.4
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  0.8
+                                                          }
+                                           }
+                        },
+    "tier":  "4"
 }

@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="StreetSamurai.Blazor/StreetSamurai.Blazor.csproj" />
   <Project Path="StreetSamurai.Core/StreetSamurai.Core.csproj" />
+  <Project Path="StreetSamurai.Mcp/StreetSamurai.Mcp.csproj" />
   <Project Path="StreetSamurai.Shared/StreetSamurai.Shared.csproj" />
   <Project Path="StreetSamurai.UnitTests/StreetSamurai.UnitTests.csproj" />
 </Solution>

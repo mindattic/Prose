@@ -1,270 +1,291 @@
-{
-  "id": "019d6143a5fb77ba880b9a61e3a04a50",
-  "type": "character",
-  "name": "Bushra Pathak-Keïta",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Building super, manages the physical infrastructure of the Grainfort Cistern Towers residential complex",
-  "age": 47,
-  "status": "active",
-  "location": "Grainfort, sub-level maintenance office, Cistern Tower B, near sub-level access near Dearborn and Jackson",
-  "description": "Bushra Pathak-Keïta is a heavyset man with a short grey-flecked beard and the permanently slightly-squinting expression of someone who has spent a lot of time in bad lighting. His Belarusian father gave him pale grey eyes; his Burkinabè mother gave him dark skin and a wide, expressive mouth that he almost never uses for smiling on the job but uses quite a lot off it. He has a patterned iris mod — concentric rings of copper and black that glow faintly in darkness, which he got twenty years ago because the original model came with a built-in low-light enhancement he still uses every single day in the maintenance tunnels. He is perpetually in some form of work clothing: coveralls, a utility harness, boots that have been re-soled four times.\n\nHe has been the super for the Cistern Towers for eleven years, and he knows every pipe, every junction, every failing junction-that-he-has-personally-been-preventing-from-failing-for-three-years in the building's guts. He has a deeply territorial relationship with the towers' infrastructure, the way a surgeon might feel about a long-term patient. He doesn't love the residents particularly — he loves the building, and the residents are the people who live inside the thing he loves. This distinction occasionally causes interpersonal friction.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.3,
-      "id": 0.7,
-      "shadow": 0.6,
-      "mask": 0.4,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "The building failing catastrophically on his watch",
-      "Being replaced by an automated maintenance AI that he suspects is already being piloted in Tessera-adjacent properties"
-    ],
-    "core_desires": [
-      "To be left alone to do his job correctly",
-      "For the property management company to fund the pressure valve replacement he's been requesting for two years"
-    ],
-    "coping_mechanisms": [
-      "Retreating into the tunnels when stressed — physical problem-solving as emotional regulation",
-      "Talking to Oversight as a genuine companion, leaving it system-data prayers"
-    ],
-    "blind_spots": [
-      "Dismisses residents' concerns as 'they don't understand how buildings work' — sometimes missing legitimate warnings",
-      "Deeply underestimates how much information he holds that others would pay for"
-    ],
-    "secret": "He has discovered that sub-level conduit 7-North runs alongside a sealed chamber that appears on no official building schematic. He has heard sounds from it twice. He has not reported it. He has reinforced the wall panel on his side instead, and he sleeps less well than he used to."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical, specific, Belarusian-inflected sentence structures occasionally surfacing. Uses building and mechanical metaphors for everything including emotions.",
-    "cadence": "Flat and matter-of-fact. Dislikes meandering. Gets to the point.",
-    "verbal_tics": [
-      "'That's not how it works'",
-      "Long pauses before answering questions he finds stupid"
-    ],
-    "example_lines": [
-      "'That's not how it works. You don't call me at 2300 for a heat issue and then tell me you 'didn't want to bother anyone.' You call. That's why I exist.'",
-      "'Building's like a body. You ignore a small sound long enough, it becomes a large sound. I don't like large sounds.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The sealed chamber in 7-North has started appearing in Oversight's thermal readings, and Dzmitry is being forced to decide whether to keep ignoring it",
-    "Property management is sending an 'efficiency consultant' to evaluate whether his role can be automated — Dzmitry is convinced the consultant doesn't understand what he actually does and is looking for ways to demonstrate that, possibly by creating a problem only he can solve"
-  ],
-  "narrative_function": "Access point to building infrastructure and hidden spaces. Keeper of structural secrets. Can provide access to restricted areas, reveal what's in the walls, or serve as a reluctant ally in emergencies. Quest giver for building-level mysteries.",
-  "augmentations": "Patterned iris mod with low-light enhancement (copper/black rings, original install 20 years ago, twice refurbished). Tactile sensitivity dampener in both hands — allows him to work with hot pipes and electrical components without injury (practical install, employer-subsidized).",
-  "daily_life": "Morning walkthrough of both towers' mechanical levels from 0700-1000, then reactive maintenance through the afternoon. Takes dinner in the sub-level office. Monitors the building's systems through a dashboard ELF he has named 'Oversight' and to which he is very devoted.",
-  "affiliation": "Employed by Grainfort Residential Holdings LLC, a mid-tier property management firm with partial Tessera capital",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 7,
-      "dexterity": 6,
-      "vitality": 7,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 4,
-      "empathy": 4,
-      "expression": 3,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 2,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "infrastructure-keeper",
-      "territorial",
-      "hidden-knowledge",
-      "elf-devotee",
-      "reluctant-protector"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Building safety above property management directives, always",
-      "Don't discuss residents' living situations with management beyond what's structurally relevant"
-    ],
-    "escalation_ladder": [
-      "Ignore the problem",
-      "Confront the problem directly and alone",
-      "Escalate to management only as absolute last resort and with complete documentation"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Brusque, transactional, waiting for them to demonstrate whether they're going to waste his time",
-      "friends": "Surprisingly dry humor, reliable, shows care through competence rather than words"
-    },
-    "stress_responses": {
-      "low": "Becomes louder and more technical in explanation",
-      "medium": "Goes silent and does a physical inspection of whatever space he's in",
-      "high": "Retreats completely to the maintenance sub-levels and does not come up until the problem is solved or he has a plan"
-    },
-    "contradictions": [
-      "Insists he doesn't care about the residents, but has quietly fixed three apartments' heating off-the-books for elderly tenants who couldn't afford the service call"
-    ],
-    "habits": [
-      "Leaves a compressed-data offering for Oversight every morning before his walkthrough",
-      "Carries a physical notebook of non-digitized schematic annotations that he trusts more than the building's systems"
-    ],
-    "breaking_points": [
-      "The building being deliberately damaged",
-      "Being told a structural problem he's flagged 'isn't in the budget'"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Judge": 0.9,
-    "Sentinel": 0.9,
-    "Code Keeper": 0.9,
-    "Pragmatist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Grainfort",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
-  ],
-  "related_entities": [
-    "The Cistern",
-    "Grainfort",
-    "Dearborn Forge",
-    "Arcturus KS-7 'Nursery'",
-    "Copper",
-    "Compass Rose",
-    "The Pale Mile",
-    "Nightlight"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Complex diaspora blend: 41% Sub-Saharan African, 37% South Asian, 9% Southeast Asian, 9% Eastern European, 4% Northern European. Features reflect this intricate mix—strong bone structure and facial width from Sub-Saharan African ancestry, subtle eye geometry and lower facial proportions from South Asian heritage, refined cheekbone definition enriched by Southeast Asian genetics, with cooler undertones from Eastern European ancestry creating warm-brown skin with olive-bronze depth.",
-    "height_cm": 178,
-    "weight_kg": 94,
-    "build": "Heavyset, broad-shouldered, with thickened middle age spread across the torso. Functional muscle underlying the weight from decades of manual labor — strong legs and forearms despite the bulk.",
-    "hair_color": "Dark brown with grey flecking throughout, particularly in the beard",
-    "hair_style": "Kept short and utilitarian, beard trimmed close but present",
-    "hair_length": "Short",
-    "eye_color": "Augmented copper and black concentric ring pattern glowing faintly in low light (natural base color obscured by modification)",
-    "skin_tone": "Warm brown complexion with olive undertones from blended Sub-Saharan African and South Asian ancestry; enriched with subtle bronze depth from Southeast Asian and Eastern European genetics; weathered and darkened further by years in poorly-lit industrial environments",
-    "complexion": "Permanently slightly-squinting eyes from chronic low-light exposure; strong, prominent cheekbones reflecting Sub-Saharan African heritage; wide, expressive mouth usually held in a neutral working expression; broad nasal base with refined bridge geometry characteristic of South Asian-Sub-Saharan blend; calloused, thick-fingered hands; face lined with concentration rather than age",
-    "distinguishing_marks": [
-      "Faint burn scar across the back of his right hand from a steam line incident fifteen years ago",
-      "Chemical discoloration stain on his left forearm where caustic cleaning solution once pooled inside his glove cuff",
-      "Small tattoo on his inner left wrist — a blueprint-style junction diagram in black ink, done poorly by a friend with a needle gun in his thirties"
-    ],
-    "visible_augmentations": "Patterned iris modification with concentric copper and black rings that emit a faint bioluminescent glow in darkness — becomes visible and striking in the dim sub-level tunnels he inhabits. Callus patterns on palms and fingers suggest subcutaneous tactile dampening work, though not visibly obvious. Micro-scars around the iris suggest multiple refurbishment procedures.",
-    "posture_movement": "Moves with deliberate, economical efficiency — no wasted motion. Slight forward lean as if perpetually descending stairs. Hands held loosely at sides, fingers flexing occasionally as if testing phantom pipe temperatures. When stationary, shifts weight from one leg to the other in a patient, waiting stance. Makes direct eye contact but holds it too long, as if listening to something others cannot hear.",
-    "clothing_style": "Tier 3-4 utilitarian. Worn work coveralls in faded navy or grey, multiple pockets filled with tools and diagnostic tablets. Heavy steel-toed boots resoled repeatedly. Utility harness with carabiners and a worn leather tool belt. Sometimes a company-issued jacket in cold months. Everything is functional, maintained but not new, bearing the patina of real use. No styling or vanity — this is someone who has worn the same brand of coveralls for fifteen years because they fit his frame and his routine."
-  },
-  "image_prompt": "Bushra Pathak-Keïta, 178cm heavyset industrial worker, warm brown skin with olive-bronze undertones reflecting Sub-Saharan African, South Asian, Southeast Asian, and Eastern European heritage blend, strong prominent cheekbones, broad nasal base, dark brown hair with grey flecking, close-trimmed beard, augmented glowing copper and black concentric ring eyes faintly bioluminescent, permanently squinting expression from chronic low-light exposure, burn scar on right hand, chemical discoloration on left forearm, blueprint tattoo on inner wrist, worn faded navy coveralls with multiple tool pockets, heavy steel-toed boots, utility harness with carabiners, leather tool belt, forward lean posture as if descending stairs, economical deliberate movements, direct intense eye contact, dim industrial sub-level tunnel setting with moody low-key lighting, faint glow reflecting off augmented iris, GLMZ, gritty functional aesthetic, photorealistic, moody atmospheric --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 41.1,
-    "South Asian": 36.8,
-    "Southeast Asian": 9.2,
-    "Eastern European": 8.9,
-    "Northern European": 3.7,
-    "Hispanic/Latin American": 0.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Central African": {
-        "Gabonese": 23.3
-      },
-      "Southern African": {
-        "South African": 17.8
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 18.9
-      },
-      "Indian": {
-        "Tamil": 15,
-        "Telugu": 2.9
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 6.9
-      },
-      "Vietnamese": {
-        "Vietnamese": 2.3
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 4.9,
-        "Czech": 2.1
-      },
-      "Slavic East": {
-        "Belarusian": 1.8,
-        "Ukrainian": 0.1
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Swiss German": 3.7
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 0.1,
-        "Salvadoran": 0.1
-      },
-      "South American": {
-        "Brazilian": 0.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5fb77ba880b9a61e3a04a50",
+    "type":  "character",
+    "name":  "Bushra Pathak-KeÃ¯ta",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Building super, manages the physical infrastructure of the Grainfort Cistern Towers residential complex",
+    "age":  47,
+    "status":  "active",
+    "location":  "Grainfort, sub-level maintenance office, Cistern Tower B, near sub-level access near Dearborn and Jackson",
+    "description":  "Bushra Pathak-KeÃ¯ta is a heavyset man with a short grey-flecked beard and the permanently slightly-squinting expression of someone who has spent a lot of time in bad lighting. His Belarusian father gave him pale grey eyes; his BurkinabÃ¨ mother gave him dark skin and a wide, expressive mouth that he almost never uses for smiling on the job but uses quite a lot off it. He has a patterned iris mod â€” concentric rings of copper and black that glow faintly in darkness, which he got twenty years ago because the original model came with a built-in low-light enhancement he still uses every single day in the maintenance tunnels. He is perpetually in some form of work clothing: coveralls, a utility harness, boots that have been re-soled four times.\n\nHe has been the super for the Cistern Towers for eleven years, and he knows every pipe, every junction, every failing junction-that-he-has-personally-been-preventing-from-failing-for-three-years in the building\u0027s guts. He has a deeply territorial relationship with the towers\u0027 infrastructure, the way a surgeon might feel about a long-term patient. He doesn\u0027t love the residents particularly â€” he loves the building, and the residents are the people who live inside the thing he loves. This distinction occasionally causes interpersonal friction.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "The building failing catastrophically on his watch",
+                                          "Being replaced by an automated maintenance AI that he suspects is already being piloted in Tessera-adjacent properties"
+                                      ],
+                       "core_desires":  [
+                                            "To be left alone to do his job correctly",
+                                            "For the property management company to fund the pressure valve replacement he\u0027s been requesting for two years"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Retreating into the tunnels when stressed â€” physical problem-solving as emotional regulation",
+                                                 "Talking to Oversight as a genuine companion, leaving it system-data prayers"
+                                             ],
+                       "blind_spots":  [
+                                           "Dismisses residents\u0027 concerns as \u0027they don\u0027t understand how buildings work\u0027 â€” sometimes missing legitimate warnings",
+                                           "Deeply underestimates how much information he holds that others would pay for"
+                                       ],
+                       "secret":  "He has discovered that sub-level conduit 7-North runs alongside a sealed chamber that appears on no official building schematic. He has heard sounds from it twice. He has not reported it. He has reinforced the wall panel on his side instead, and he sleeps less well than he used to."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical, specific, Belarusian-inflected sentence structures occasionally surfacing. Uses building and mechanical metaphors for everything including emotions.",
+                            "cadence":  "Flat and matter-of-fact. Dislikes meandering. Gets to the point.",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s not how it works\u0027",
+                                                "Long pauses before answering questions he finds stupid"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027That\u0027s not how it works. You don\u0027t call me at 2300 for a heat issue and then tell me you \u0027didn\u0027t want to bother anyone.\u0027 You call. That\u0027s why I exist.\u0027",
+                                                  "\u0027Building\u0027s like a body. You ignore a small sound long enough, it becomes a large sound. I don\u0027t like large sounds.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The sealed chamber in 7-North has started appearing in Oversight\u0027s thermal readings, and Dzmitry is being forced to decide whether to keep ignoring it",
+                        "Property management is sending an \u0027efficiency consultant\u0027 to evaluate whether his role can be automated â€” Dzmitry is convinced the consultant doesn\u0027t understand what he actually does and is looking for ways to demonstrate that, possibly by creating a problem only he can solve"
+                    ],
+    "narrative_function":  "Access point to building infrastructure and hidden spaces. Keeper of structural secrets. Can provide access to restricted areas, reveal what\u0027s in the walls, or serve as a reluctant ally in emergencies. Quest giver for building-level mysteries.",
+    "augmentations":  "Patterned iris mod with low-light enhancement (copper/black rings, original install 20 years ago, twice refurbished). Tactile sensitivity dampener in both hands â€” allows him to work with hot pipes and electrical components without injury (practical install, employer-subsidized).",
+    "daily_life":  "Morning walkthrough of both towers\u0027 mechanical levels from 0700-1000, then reactive maintenance through the afternoon. Takes dinner in the sub-level office. Monitors the building\u0027s systems through a dashboard ELF he has named \u0027Oversight\u0027 and to which he is very devoted.",
+    "affiliation":  "Employed by Grainfort Residential Holdings LLC, a mid-tier property management firm with partial Tessera capital",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  7,
+                                   "dexterity":  6,
+                                   "vitality":  7,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  4,
+                                 "empathy":  4,
+                                 "expression":  3,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "infrastructure-keeper",
+                               "territorial",
+                               "hidden-knowledge",
+                               "elf-devotee",
+                               "reluctant-protector"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Building safety above property management directives, always",
+                                              "Don\u0027t discuss residents\u0027 living situations with management beyond what\u0027s structurally relevant"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Ignore the problem",
+                                                 "Confront the problem directly and alone",
+                                                 "Escalate to management only as absolute last resort and with complete documentation"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Brusque, transactional, waiting for them to demonstrate whether they\u0027re going to waste his time",
+                                                   "friends":  "Surprisingly dry humor, reliable, shows care through competence rather than words"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes louder and more technical in explanation",
+                                                "medium":  "Goes silent and does a physical inspection of whatever space he\u0027s in",
+                                                "high":  "Retreats completely to the maintenance sub-levels and does not come up until the problem is solved or he has a plan"
+                                            },
+                       "contradictions":  [
+                                              "Insists he doesn\u0027t care about the residents, but has quietly fixed three apartments\u0027 heating off-the-books for elderly tenants who couldn\u0027t afford the service call"
+                                          ],
+                       "habits":  [
+                                      "Leaves a compressed-data offering for Oversight every morning before his walkthrough",
+                                      "Carries a physical notebook of non-digitized schematic annotations that he trusts more than the building\u0027s systems"
+                                  ],
+                       "breaking_points":  [
+                                               "The building being deliberately damaged",
+                                               "Being told a structural problem he\u0027s flagged \u0027isn\u0027t in the budget\u0027"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Judge":  0.9,
+                       "Sentinel":  0.9,
+                       "Code Keeper":  0.9,
+                       "Pragmatist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Grainfort",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                            "Vespid Dynamics Needlestorm NS-4 \u0027Pincushion\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                                "Vespid Dynamics Needlestorm NS-4 \u0027Pincushion\u0027"
+                            ],
+    "related_entities":  [
+                             "The Cistern",
+                             "Grainfort",
+                             "Dearborn Forge",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Copper",
+                             "Compass Rose",
+                             "The Pale Mile",
+                             "Nightlight"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora blend: 41% Sub-Saharan African, 37% South Asian, 9% Southeast Asian, 9% Eastern European, 4% Northern European. Features reflect this intricate mixâ€”strong bone structure and facial width from Sub-Saharan African ancestry, subtle eye geometry and lower facial proportions from South Asian heritage, refined cheekbone definition enriched by Southeast Asian genetics, with cooler undertones from Eastern European ancestry creating warm-brown skin with olive-bronze depth.",
+                                 "height_cm":  178,
+                                 "weight_kg":  94,
+                                 "build":  "Heavyset, broad-shouldered, with thickened middle age spread across the torso. Functional muscle underlying the weight from decades of manual labor â€” strong legs and forearms despite the bulk.",
+                                 "hair_color":  "Dark brown with grey flecking throughout, particularly in the beard",
+                                 "hair_style":  "Kept short and utilitarian, beard trimmed close but present",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Augmented copper and black concentric ring pattern glowing faintly in low light (natural base color obscured by modification)",
+                                 "skin_tone":  "Warm brown complexion with olive undertones from blended Sub-Saharan African and South Asian ancestry; enriched with subtle bronze depth from Southeast Asian and Eastern European genetics; weathered and darkened further by years in poorly-lit industrial environments",
+                                 "complexion":  "Permanently slightly-squinting eyes from chronic low-light exposure; strong, prominent cheekbones reflecting Sub-Saharan African heritage; wide, expressive mouth usually held in a neutral working expression; broad nasal base with refined bridge geometry characteristic of South Asian-Sub-Saharan blend; calloused, thick-fingered hands; face lined with concentration rather than age",
+                                 "distinguishing_marks":  [
+                                                              "Faint burn scar across the back of his right hand from a steam line incident fifteen years ago",
+                                                              "Chemical discoloration stain on his left forearm where caustic cleaning solution once pooled inside his glove cuff",
+                                                              "Small tattoo on his inner left wrist â€” a blueprint-style junction diagram in black ink, done poorly by a friend with a needle gun in his thirties"
+                                                          ],
+                                 "visible_augmentations":  "Patterned iris modification with concentric copper and black rings that emit a faint bioluminescent glow in darkness â€” becomes visible and striking in the dim sub-level tunnels he inhabits. Callus patterns on palms and fingers suggest subcutaneous tactile dampening work, though not visibly obvious. Micro-scars around the iris suggest multiple refurbishment procedures.",
+                                 "posture_movement":  "Moves with deliberate, economical efficiency â€” no wasted motion. Slight forward lean as if perpetually descending stairs. Hands held loosely at sides, fingers flexing occasionally as if testing phantom pipe temperatures. When stationary, shifts weight from one leg to the other in a patient, waiting stance. Makes direct eye contact but holds it too long, as if listening to something others cannot hear.",
+                                 "clothing_style":  "Tier 3-4 utilitarian. Worn work coveralls in faded navy or grey, multiple pockets filled with tools and diagnostic tablets. Heavy steel-toed boots resoled repeatedly. Utility harness with carabiners and a worn leather tool belt. Sometimes a company-issued jacket in cold months. Everything is functional, maintained but not new, bearing the patina of real use. No styling or vanity â€” this is someone who has worn the same brand of coveralls for fifteen years because they fit his frame and his routine."
+                             },
+    "image_prompt":  "Bushra Pathak-KeÃ¯ta, 178cm heavyset industrial worker, warm brown skin with olive-bronze undertones reflecting Sub-Saharan African, South Asian, Southeast Asian, and Eastern European heritage blend, strong prominent cheekbones, broad nasal base, dark brown hair with grey flecking, close-trimmed beard, augmented glowing copper and black concentric ring eyes faintly bioluminescent, permanently squinting expression from chronic low-light exposure, burn scar on right hand, chemical discoloration on left forearm, blueprint tattoo on inner wrist, worn faded navy coveralls with multiple tool pockets, heavy steel-toed boots, utility harness with carabiners, leather tool belt, forward lean posture as if descending stairs, economical deliberate movements, direct intense eye contact, dim industrial sub-level tunnel setting with moody low-key lighting, faint glow reflecting off augmented iris, GLMZ, gritty functional aesthetic, photorealistic, moody atmospheric --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  41.1,
+                             "South Asian":  36.8,
+                             "Southeast Asian":  9.2,
+                             "Eastern European":  8.9,
+                             "Northern European":  3.7,
+                             "Hispanic/Latin American":  0.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Gabonese":  23.3
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "South African":  17.8
+                                                                             }
+                                                    },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  18.9
+                                                                },
+                                                "Indian":  {
+                                                               "Tamil":  15,
+                                                               "Telugu":  2.9
+                                                           }
+                                            },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  6.9
+                                                             },
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  2.3
+                                                                   }
+                                                },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  4.9,
+                                                                         "Czech":  2.1
+                                                                     },
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  1.8,
+                                                                         "Ukrainian":  0.1
+                                                                     }
+                                                 },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Swiss German":  3.7
+                                                                   }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  0.1,
+                                                                                     "Salvadoran":  0.1
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Brazilian":  0.1
+                                                                               }
+                                                        }
+                        },
+    "tier":  "3"
 }

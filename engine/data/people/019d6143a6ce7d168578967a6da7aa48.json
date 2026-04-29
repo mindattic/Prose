@@ -1,334 +1,347 @@
-{
-  "id": "019d6143a6ce7d168578967a6da7aa48",
-  "type": "character",
-  "name": "Ankur Malhotra",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Personnel recovery and hostile extraction — extraction specialist",
-  "age": 33,
-  "status": "active",
-  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Ankur Malhotra is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a extraction specialist out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented extraction specialist in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.1,
-      "ideal": 0.66,
-      "id": 0.66,
-      "shadow": 0.19,
-      "mask": 0.85,
-      "ghost": 0.46
-    },
-    "core_fears": [
-      "Losing their edge to age — the body slows before the mind accepts it",
-      "Being identified by corporate facial recognition — living off-grid is survival",
-      "Going cyberpsycho — losing the boundary between human and machine"
-    ],
-    "core_desires": [
-      "A crew worth trusting — people who stay when the shooting starts",
-      "Control — over their body, their schedule, their future",
-      "To matter to someone for who they are, not what they can do"
-    ],
-    "coping_mechanisms": [
-      "Planning — responds to chaos by making detailed contingency plans for everything",
-      "Ritual — follows the same pre-job routine every time, superstition as structure",
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
-    ],
-    "blind_spots": [
-      "Assumes everyone has an angle because they always have an angle",
-      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
-      "Cannot accept help without interpreting it as leverage"
-    ],
-    "secret": "Sinan Tanaka-Frimpong witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
-  },
-  "speech_patterns": {
-    "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
-    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
-    "verbal_tics": [
-      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks",
-      "Uses old pre-collapse slang that nobody else remembers"
-    ],
-    "example_lines": [
-      "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
-      "\"The extraction window is four minutes. I've done it in three.\"",
-      "\"I don't rescue people. I relocate them aggressively.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A dead drop Sinan Tanaka-Frimpong maintains is found and cleaned out — whoever did it now has leverage",
-    "A former associate resurfaces with evidence that could destroy Sinan Tanaka-Frimpong's reputation — and a price for silence",
-    "The fixer who handles Sinan Tanaka-Frimpong's contracts goes silent — dead, disappeared, or turned"
-  ],
-  "narrative_function": "As a extraction specialist, Sinan Tanaka-Frimpong embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings. Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
-  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Independent — works solo contracts",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 4
-      },
-      "agility": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 9
-      },
-      "reflexes": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 5
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 4
-      },
-      "perception": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 7
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 10
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 9
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 8
-      },
-      "intimidation": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 7
-      },
-      "deception": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 9
-      },
-      "empathy": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.6,
-      "caution": 0.86,
-      "loyalty": 0.83,
-      "greed": 0.23,
-      "empathy": 0.83
-    },
-    "drives": [
-      "survival",
-      "money",
-      "protection"
-    ],
-    "thresholds": {
-      "pain": 6,
-      "stress": 5,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "multilingual — speaks 4+ languages fluently",
-      "technical expertise with augmentation systems",
-      "photographic memory for faces and layouts"
-    ],
-    "weaknesses": [
-      "augmentation dependency — performance drops sharply if chrome malfunctions",
-      "difficulty with authority figures",
-      "trust issues that limit crew effectiveness"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "extraction specialist",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Always verifies target identity independently before lethal contracts",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Presents as emotionless professional but is deeply affected by collateral damage",
-      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
-    ],
-    "habits": [
-      "Never drinks anything they didn't see poured or open themselves",
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
-      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say"
-    ],
-    "breaking_points": [
-      "A child being put in danger as leverage against them",
-      "Being forced to harm a civilian — collateral damage that can't be rationalized",
-      "Watching someone they trained or mentored die on a job they recommended"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
-      "replaces": ""
-    },
-    {
-      "name": "Synthetic blood with oxygen-carrying nanites",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Spires",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-R8 'Verdict'",
-    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "Predominantly South Asian (61.4%) with meaningful Eastern European (19.6%) and Northern European (19.0%) admixture. This genetic blend produces warm medium-brown skin with subtle golden undertones, a balanced facial structure reflecting the convergence of South Asian definition with Northern European angularity, and the lean, efficient musculature characteristic of functional optimization across diverse ancestral lines.",
-    "height_cm": 188,
-    "weight_kg": 78,
-    "build": "Lean and angular, all efficiency — long limbs with visible musculature but no excess bulk. The physique of someone who has optimized every gram for functional movement rather than appearance.",
-    "hair_color": "Black with premature silver threading at the temples",
-    "hair_style": "Closely cropped, sharp edges, deliberately maintained",
-    "hair_length": "Short",
-    "eye_color": "Chrome iris rings encircling dark pupils — thermal and low-light augmentation visible as faint LED circuitry at the rim",
-    "skin_tone": "Warm medium brown with golden undertones — medium melanin density complexion blending South Asian warmth with cooler Northern European undertones, creating balanced warm depth across face and body.",
-    "complexion": "Balanced facial structure with defined cheekbones and jawline reflecting South Asian prominence and Northern European angularity. High cheekbones, defined jawline, straight nose with subtle bridge definition characteristic of South Asian-Northern European blend. Skin shows minor scarring around the eye sockets from augmentation integration — thin white lines barely visible in certain light. Clean-shaven. Few wrinkles despite age, suggesting either good genetics or minor dermal maintenance.",
-    "distinguishing_marks": [
-      "Surgical scars encircling both eye sockets in thin white lines where cybernetic implants were integrated.",
-      "Thin burn scar along the inside of his right forearm — pale against darker skin, roughly 8cm long, from an old extraction gone wrong.",
-      "Small entry wound scar on his left shoulder blade, barely noticeable unless he's shirtless."
-    ],
-    "visible_augmentations": "Chrome iris rings in both eyes — distinctive, deliberate, makes no attempt to hide them. The rings glow faintly in low light with thermal overlay activation. No visible limb augmentation; synthetic blood and nanite system is entirely subcutaneous.",
-    "posture_movement": "Moves with deliberate economy — every motion calculated and efficient. Stands with weight slightly forward, ready to shift direction instantly. Eyes rarely still; constant thermal and visual scanning of his environment. No wasted gestures. Handshake firm but not aggressive. In conversation, he maintains eye contact unflinchingly, the chrome rings catching light.",
-    "clothing_style": "Tier 2-3 functional aesthetic — tailored but utilitarian. Dark monochrome palette: charcoal tactical jacket with internal holsters and cargo placement, black reinforced pants with thigh pockets, grey compression base layer visible at collar and wrists. Unmarked boots (reinforced soles, good traction). Minimal branding; quality is visible but anonymous. Jacket shows subtle wear patterns consistent with field use. No jewelry except a worn titanium watch with military-style face."
-  },
-  "image_prompt": "Ankur Malhotra, tall lean male with warm medium-brown skin and golden undertones, sharp defined cheekbones and angular jawline blending South Asian and Northern European features. Black hair with silver temples, closely cropped and sharp-edged. Chrome iris rings glowing faintly in his dark eyes with visible LED circuitry, unblinking thermal-vision augment. Thin white surgical scars around eye sockets, clean-shaven. Dressed in charcoal tactical jacket and black reinforced pants over grey compression base layer, unmarked reinforced boots. Military-style titanium watch. Worn titanium watch. Standing in low-light neo-noir environment—neon edge lighting catching the chrome iris rings—scanning surroundings with intense focus, posture forward-ready, every movement economical and calculated. GLMZ 2200s Great Lakes Metropolitan Zone operative. Film noir lighting, moody and tense. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 61.4,
-    "Eastern European": 19.6,
-    "Northern European": 19
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Indian": {
-        "Punjabi": 61.4
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Belarusian": 4.3,
-        "Russian": 1.8
-      },
-      "Slavic South": {
-        "Croatian": 7.4,
-        "Bulgarian": 6.1
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Irish": 19
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6ce7d168578967a6da7aa48",
+    "type":  "character",
+    "name":  "Ankur Malhotra",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Personnel recovery and hostile extraction â€” extraction specialist",
+    "age":  33,
+    "status":  "active",
+    "location":  "The Spires â€” mid-level corporate residential towers, near Michigan Ave and Oak",
+    "description":  "Ankur Malhotra is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has the kind of face that changes depending on the light â€” trustworthy in daylight, dangerous after dark. The chrome is visible â€” cybernetic eyes with thermal overlay and low-light enhancement â€” chrome iris rin â€” and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a extraction specialist out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented extraction specialist in GLMZ, but he might be the most stubborn, and in this city that\u0027s worth more.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing their edge to age â€” the body slows before the mind accepts it",
+                                          "Being identified by corporate facial recognition â€” living off-grid is survival",
+                                          "Going cyberpsycho â€” losing the boundary between human and machine"
+                                      ],
+                       "core_desires":  [
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "Control â€” over their body, their schedule, their future",
+                                            "To matter to someone for who they are, not what they can do"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Planning â€” responds to chaos by making detailed contingency plans for everything",
+                                                 "Ritual â€” follows the same pre-job routine every time, superstition as structure",
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Cannot recognize when they\u0027re being manipulated by someone who genuinely seems to care",
+                                           "Cannot accept help without interpreting it as leverage"
+                                       ],
+                       "secret":  "Sinan Tanaka-Frimpong witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
+                            "cadence":  "Rhythmic, almost musical â€” the sentence structure has a pattern even when the words are brutal.",
+                            "verbal_tics":  [
+                                                "Uses \u0027we\u0027 instead of \u0027I\u0027 â€” either royal or dissociative, nobody asks",
+                                                "Uses old pre-collapse slang that nobody else remembers"
+                                            ],
+                            "example_lines":  [
+                                                  "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
+                                                  "\"The extraction window is four minutes. I\u0027ve done it in three.\"",
+                                                  "\"I don\u0027t rescue people. I relocate them aggressively.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A dead drop Sinan Tanaka-Frimpong maintains is found and cleaned out â€” whoever did it now has leverage",
+                        "A former associate resurfaces with evidence that could destroy Sinan Tanaka-Frimpong\u0027s reputation â€” and a price for silence",
+                        "The fixer who handles Sinan Tanaka-Frimpong\u0027s contracts goes silent â€” dead, disappeared, or turned"
+                    ],
+    "narrative_function":  "As a extraction specialist, Sinan Tanaka-Frimpong embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+    "augmentations":  "Cybernetic eyes with thermal overlay and low-light enhancement â€” chrome iris rings. Synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster",
+    "daily_life":  "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather â€” not for pleasure, but for market intelligence.",
+    "affiliation":  "Independent â€” works solo contracts",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  3,
+                                                    "effective":  4
+                                                },
+                                   "agility":  {
+                                                   "base":  7,
+                                                   "augmented":  0,
+                                                   "effective":  8
+                                               },
+                                   "endurance":  {
+                                                     "base":  7,
+                                                     "augmented":  0,
+                                                     "effective":  9
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  5,
+                                                    "augmented":  3,
+                                                    "effective":  5
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  7,
+                                                      "augmented":  2,
+                                                      "effective":  4
+                                                  },
+                                 "perception":  {
+                                                    "base":  6,
+                                                    "augmented":  0,
+                                                    "effective":  7
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  3,
+                                                   "effective":  9
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  3,
+                                                  "augmented":  1,
+                                                  "effective":  8
+                                              },
+                                 "intimidation":  {
+                                                      "base":  4,
+                                                      "augmented":  1,
+                                                      "effective":  7
+                                                  },
+                                 "deception":  {
+                                                   "base":  5,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               },
+                                 "empathy":  {
+                                                 "base":  8,
+                                                 "augmented":  0,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.6,
+                                      "caution":  0.86,
+                                      "loyalty":  0.83,
+                                      "greed":  0.23,
+                                      "empathy":  0.83
+                                  },
+                  "drives":  [
+                                 "survival",
+                                 "money",
+                                 "protection"
+                             ],
+                  "thresholds":  {
+                                     "pain":  6,
+                                     "stress":  5,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "multilingual â€” speaks 4+ languages fluently",
+                                    "technical expertise with augmentation systems",
+                                    "photographic memory for faces and layouts"
+                                ],
+                  "weaknesses":  [
+                                     "augmentation dependency â€” performance drops sharply if chrome malfunctions",
+                                     "difficulty with authority figures",
+                                     "trust issues that limit crew effectiveness"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "extraction specialist",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Professional and transactional. The relationship is defined by the contract and nothing else.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Presents as emotionless professional but is deeply affected by collateral damage",
+                                              "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
+                                          ],
+                       "habits":  [
+                                      "Never drinks anything they didn\u0027t see poured or open themselves",
+                                      "Talks to their gear â€” names weapons, thanks tools, treats equipment as companions",
+                                      "Taps a specific rhythm on hard surfaces when thinking â€” Morse code for a word they won\u0027t say"
+                                  ],
+                       "breaking_points":  [
+                                               "A child being put in danger as leverage against them",
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized",
+                                               "Watching someone they trained or mentored die on a job they recommended"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Cybernetic eyes with thermal overlay and low-light enhancement",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Cybernetic eyes with thermal overlay and low-light enhancement â€” chrome iris rings",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Synthetic blood with oxygen-carrying nanites",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Spires",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-R8 \u0027Verdict\u0027",
+                            "Arcturus Defense Solutions Crowd Control SMG ACSM-3 \u0027Shepherd\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Slagworks Industrial",
+                             "GLMZ"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "Predominantly South Asian (61.4%) with meaningful Eastern European (19.6%) and Northern European (19.0%) admixture. This genetic blend produces warm medium-brown skin with subtle golden undertones, a balanced facial structure reflecting the convergence of South Asian definition with Northern European angularity, and the lean, efficient musculature characteristic of functional optimization across diverse ancestral lines.",
+                                 "height_cm":  188,
+                                 "weight_kg":  78,
+                                 "build":  "Lean and angular, all efficiency â€” long limbs with visible musculature but no excess bulk. The physique of someone who has optimized every gram for functional movement rather than appearance.",
+                                 "hair_color":  "Black with premature silver threading at the temples",
+                                 "hair_style":  "Closely cropped, sharp edges, deliberately maintained",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Chrome iris rings encircling dark pupils â€” thermal and low-light augmentation visible as faint LED circuitry at the rim",
+                                 "skin_tone":  "Warm medium brown with golden undertones â€” medium melanin density complexion blending South Asian warmth with cooler Northern European undertones, creating balanced warm depth across face and body.",
+                                 "complexion":  "Balanced facial structure with defined cheekbones and jawline reflecting South Asian prominence and Northern European angularity. High cheekbones, defined jawline, straight nose with subtle bridge definition characteristic of South Asian-Northern European blend. Skin shows minor scarring around the eye sockets from augmentation integration â€” thin white lines barely visible in certain light. Clean-shaven. Few wrinkles despite age, suggesting either good genetics or minor dermal maintenance.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scars encircling both eye sockets in thin white lines where cybernetic implants were integrated.",
+                                                              "Thin burn scar along the inside of his right forearm â€” pale against darker skin, roughly 8cm long, from an old extraction gone wrong.",
+                                                              "Small entry wound scar on his left shoulder blade, barely noticeable unless he\u0027s shirtless."
+                                                          ],
+                                 "visible_augmentations":  "Chrome iris rings in both eyes â€” distinctive, deliberate, makes no attempt to hide them. The rings glow faintly in low light with thermal overlay activation. No visible limb augmentation; synthetic blood and nanite system is entirely subcutaneous.",
+                                 "posture_movement":  "Moves with deliberate economy â€” every motion calculated and efficient. Stands with weight slightly forward, ready to shift direction instantly. Eyes rarely still; constant thermal and visual scanning of his environment. No wasted gestures. Handshake firm but not aggressive. In conversation, he maintains eye contact unflinchingly, the chrome rings catching light.",
+                                 "clothing_style":  "Tier 2-3 functional aesthetic â€” tailored but utilitarian. Dark monochrome palette: charcoal tactical jacket with internal holsters and cargo placement, black reinforced pants with thigh pockets, grey compression base layer visible at collar and wrists. Unmarked boots (reinforced soles, good traction). Minimal branding; quality is visible but anonymous. Jacket shows subtle wear patterns consistent with field use. No jewelry except a worn titanium watch with military-style face."
+                             },
+    "image_prompt":  "Ankur Malhotra, tall lean male with warm medium-brown skin and golden undertones, sharp defined cheekbones and angular jawline blending South Asian and Northern European features. Black hair with silver temples, closely cropped and sharp-edged. Chrome iris rings glowing faintly in his dark eyes with visible LED circuitry, unblinking thermal-vision augment. Thin white surgical scars around eye sockets, clean-shaven. Dressed in charcoal tactical jacket and black reinforced pants over grey compression base layer, unmarked reinforced boots. Military-style titanium watch. Worn titanium watch. Standing in low-light neo-noir environmentâ€”neon edge lighting catching the chrome iris ringsâ€”scanning surroundings with intense focus, posture forward-ready, every movement economical and calculated. GLMZ 2200s Great Lakes Metropolitan Zone operative. Film noir lighting, moody and tense. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  61.4,
+                             "Eastern European":  19.6,
+                             "Northern European":  19
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Punjabi":  61.4
+                                                           }
+                                            },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  4.3,
+                                                                         "Russian":  1.8
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Croatian":  7.4,
+                                                                          "Bulgarian":  6.1
+                                                                      }
+                                                 },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  19
+                                                                        }
+                                                  }
+                        },
+    "tier":  "3"
 }

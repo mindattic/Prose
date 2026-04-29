@@ -1,244 +1,267 @@
-{
-  "id": "019d6143a72f7f3a9974f2e32d5b6ed8",
-  "type": "character",
-  "name": "Haleh Touré",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Neon artist and light sculptor",
-  "age": 29,
-  "status": "active",
-  "location": "Lakeview Neon, workshop above a defunct surge-relay station, near North Ave and Damen",
-  "description": "Haleh Touré is lean and angular, with bioluminescent ink tattooed in asymmetric moth-wing patterns across their collarbones and outer arms — an advertisement and a love letter to their own work. Their hair is cropped close on one side and falls in thick, silver-dyed locks on the other, often pinned back with a scavenged neon tube stub they carry for luck. Their eyes have patterned irises in concentric rings of amber and pale green, cheap mods bought secondhand when they were nineteen. There's a restless precision about them: they'll measure a space by eye without thinking, tilt their head at a light source the way a bird clocks distance.\n\nHaleh Touré talks too fast when excited and barely at all when hurt, which most people misread as aloofness. They came up through street installation work — unlicensed, unsigned, frequently scrubbed by Ferrogate Transit enforcement — and still view any commission from a corponation as a moral compromise even as they quietly covet the stability. Their art obsesses over threshold spaces: the edges of things, where neon bleeds into dark, where the city's light hits water and becomes something that doesn't belong to either.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.5,
-      "shadow": 0.3,
-      "mask": 0.4,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Becoming commercially palatable at the cost of meaning",
-      "Being erased — work, presence, name — as if they never existed"
-    ],
-    "core_desires": [
-      "To make something permanent in a city designed to forget",
-      "To be seen clearly, without the mythology others project onto Moth"
-    ],
-    "coping_mechanisms": [
-      "Staying in motion — always a new project, a new installation — so there's no stillness for grief to fill",
-      "Ritualizing work: leaves data-offerings to the E.L.F. they believe inhabits the old relay station, asking for clean current"
-    ],
-    "blind_spots": [
-      "Cannot recognize when their refusal of commercial work is self-sabotage versus principle",
-      "Assumes people who like their street work and people who like their gallery work are fundamentally different and doesn't trust either"
-    ],
-    "secret": "Three of the most celebrated unlicensed Lakeview Neon installations attributed to Moth were actually collaborations with a friend who died in a surge accident — Ysolde has never credited them and is eaten alive by it"
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical precision mixed with spatial metaphor; uses light and threshold as near-universal metaphors; occasionally slips into Fula words inherited from a grandparent they never met",
-    "cadence": "Fast and overlapping when animated; drops to flat monosyllables under stress",
-    "verbal_tics": [
-      "'Right at the edge of—' (trails off, gestures)",
-      "'That's not the same thing'",
-      "Clicks tongue when something is wrong about a space"
-    ],
-    "example_lines": [
-      "'The tube's not the art. The shadow the tube makes — that's the art. Anyone can sell you a tube.'",
-      "'I don't do commissions where they tell me what it means. I'll tell you what it costs. You tell me where the wall is. That's the whole conversation.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Ferrogate Transit E.L.F. has begun mimicking Moth's installation patterns in the relay grid — lighting up tunnels in sequences that mirror their work — and Ysolde doesn't know if it's tribute, mockery, or a message",
-    "The dead collaborator's family has found documentation suggesting their relative's contribution to Moth's famous pieces, and someone is about to go public"
-  ],
-  "narrative_function": "Local color and information node — knows Lakeview Neon's hidden spaces intimately; can be a quest giver for retrieving salvage from restricted zones or documenting art before it's erased; represents the tension between artistic integrity and financial survival",
-  "augmentations": "Patterned irises (concentric amber/pale green, secondhand mod); bioluminescent moth-wing tattoos across chest and arms (cosmetic geneware ink); subdermal haptic grid on fingertips for precise electrical work",
-  "daily_life": "Ysolde spends mornings salvaging burnt-out neon tubes and plasma conduits from Ferrogate Transit's maintenance dump; afternoons are for commissions and studio work; late nights for unlicensed public installations they document and post to the underground mesh before enforcers arrive.",
-  "affiliation": "Independent; loosely affiliated with the Candela Collective, an informal network of light artists in Lakeview Neon",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 7,
-      "creativity": 9,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 3,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "artist",
-      "salvager",
-      "night-worker",
-      "grief-carrier",
-      "threshold-thinker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never accept a commission that requires a corponation logo visible in the work",
-      "Always document the work before installing — if it gets scrubbed, the documentation survives",
-      "Don't ask for help until the situation is genuinely unmanageable"
-    ],
-    "escalation_ladder": [
-      "Withdraw and go quiet",
-      "Redirect with work — start a new project as displacement",
-      "Become bluntly honest in a way that damages relationships",
-      "Disappear for days without contact"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Watchful and brief; answers questions with questions; warms slowly if the stranger asks about the work rather than the mythology",
-      "friends": "Surprisingly tender and funny; remembers small details about people's lives with accuracy; still struggles to ask for what they need emotionally"
-    },
-    "stress_responses": {
-      "low": "Gets meticulous — cleans and reorganizes the workshop obsessively",
-      "medium": "Picks a fight about aesthetics with someone who doesn't deserve it",
-      "high": "Goes dark — offline, door locked, works through the night until the crisis passes or they collapse"
-    },
-    "contradictions": [
-      "Insists art must be public and accessible but guards their creative process with ferocious privacy",
-      "Performs indifference to recognition while anonymously checking how many times their installations are documented before removal"
-    ],
-    "habits": [
-      "Leaves a small burnt tube end at the base of every finished public installation as a signature only they'd recognize",
-      "Eats the same breakfast every day — fried plantain and black coffee — as a grounding ritual before creative work",
-      "Talks to the relay station E.L.F. before starting a project, even when they feel foolish doing it"
-    ],
-    "breaking_points": [
-      "Someone claiming credit for work that isn't theirs in front of Ysolde directly",
-      "Being told their unlicensed work is 'vandalism' by someone whose opinion they respect"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Artist": 0.9,
-    "Dreamer": 0.9,
-    "Beauty Seeker": 0.9,
-    "Romantic": 0.9,
-    "Con Artist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Lakeview Neon",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Street Custom 'Angry Mary' Aerosol Flamethrower"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Lakeview Neon",
-    "Omro Relay",
-    "Threshold",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Silver",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Compass Rose",
-    "The Pale Mile",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Primarily Central Asian (59.2% — Turkic and Iranian plateau ancestry) with significant Sub-Saharan African (35.1%) and minor East Asian (5.7%) admixture. This blend produces warm medium-brown skin with golden and reddish undertones. Central Asian ancestry dominates facial structure with angular cheekbones and defined jawline, while Sub-Saharan African ancestry contributes subtle variations in nose structure and facial geometry. East Asian ancestry adds refinement to eye shape and orbital structure. The combination creates a distinctly multicontinental appearance characteristic of the Ubiquitous Diaspora.",
-    "height_cm": 172,
-    "weight_kg": 58,
-    "build": "Lean and angular, almost wiry — the physique of someone who moves through tight spaces and climbs. Minimal excess mass; defined shoulders and forearms from years of hands-on installation work. No visible musculature, but functional strength in the wrists and fingers.",
-    "skin_tone": "Warm medium brown with golden and reddish undertones, reflecting the blended ancestry of Central Asian, Sub-Saharan African, and East Asian heritage",
-    "complexion": "Angular face with high cheekbones and sharp jawline characteristic of Central Asian heritage, refined by Sub-Saharan African and East Asian ancestry. Clear skin with minimal scarring from chemical burns on the knuckles (from old solvent work). Minor discoloration around the temples from old neural implant rejection — faint purple bruising that never fully faded. Grooming is minimal and intentional; they rarely wear makeup except occasionally darkening the area around their modified eyes for contrast.",
-    "hair_color": "Natural black with silver-dyed locks on dominant side",
-    "hair_style": "Asymmetric undercut: closely cropped fade on one side (left), thick waist-length silver-dyed locks on the other (right), often pinned back with a scavenged neon tube stub or industrial clip",
-    "hair_length": "Asymmetric — Short on one side, Long on the other",
-    "eye_color": "Patterned irises: concentric rings of amber (outer) and pale green (inner); secondhand optical mod with slight luminescence in low light",
-    "visible_augmentations": "Patterned irises with slight luminescent quality when in darkness or near electrical fields. Bioluminescent tattoos across chest and arms that glow faintly in low light. Subdermal haptic grid visible only as faint geometric scar lines on fingertips under close inspection — more functional than visible. No obvious chrome or external augmentation; the mods are subtle and intentionally low-profile.",
-    "distinguishing_marks": [
-      "Bioluminescent moth-wing tattoos in asymmetric patterns across collarbones and outer arms — visible in darkness, faintly glowing in low light; the ink contains engineered luminophores that fade and brighten with electrical current nearby",
-      "Faint chemical burn scars on the inner right wrist from early salvage work — pale and crosshatched",
-      "Small circular scar on left temple from a failed subcutaneous neural implant attempt at age 21 (rejected after six months)",
-      "Faint UV-burn pattern on hands and forearms in a crosshatch from unshielded work with plasma conduits — visible only under blacklight"
-    ],
-    "posture_movement": "Restless and precise. Often tilts their head at light sources as if triangulating distance or quality. Moves through space with an installer's economy — no wasted motion, but constant micro-adjustments to balance and angle. Hands rarely still; fingers drum on surfaces or trace patterns in the air when thinking. Eyes track light sources unconsciously. When excited about work, movements become rapid and jerky; when hurt or defensive, they go very still and quiet, barely moving at all.",
-    "clothing_style": "Tier 3-4 working artist; salvage-influenced but intentional. Usually wears close-fitting, durable garments in muted colors (charcoal, dark blue, black) with high visibility trim on one side — reflective piping along the left arm or chest. Favors cargo pants or reinforced work jeans with multiple pockets for tools and salvage. Tops are typically sleeveless or short-sleeved to show off the bioluminescent tattoos. Wears a well-worn synth-leather jacket (dark grey, scuffed, patched with reflective tape) over everything. Footwear is practical: reinforced work boots with good ankle support, usually graphite or black. Accessories include a utility belt with salvage tools, carrying carabiners, and always a small pouch containing spare neon tube stubs and electrical components. A silver chain around the neck (inherited, not augmented) with a small glass vial of dead neon gas — a personal talisman. No corporate branding visible; any logos have been deliberately obscured or removed."
-  },
-  "image_prompt": "Haleh Touré, 172cm lean angular installer with warm medium-brown skin with golden undertones, high cheekbones and sharp jawline. Natural black hair asymmetric cut — short fade on left side, long waist-length silver-dyed locks on right pinned back with neon tube stub. Patterned iris eyes amber outer ring pale green inner with subtle luminescence. Bioluminescent moth-wing tattoos glowing faintly across collarbones and arms in darkness. Minimal visible scarring on wrists and temple. Sleeveless dark charcoal top showing tattoos, reinforced black cargo pants with reflective piping on left side, well-worn dark grey synth-leather jacket patched with reflective tape, reinforced black work boots. Silver chain necklace with glass vial of dead neon. Restless precise posture, hands active and expressive. GLMZ GLMZ setting, low neon-lit warehouse environment with electrical fields nearby causing tattoos to glow brighter, dramatic shadows and cool blue-green lighting, hands working with salvage components, technical and focused mood --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Central Asian": 59.2,
-    "Sub-Saharan African": 35.1,
-    "East Asian": 5.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Central Asian": {
-      "Turkic": {
-        "Uzbek": 17.6,
-        "Kazakh": 13.7
-      },
-      "Iranian Central": {
-        "Tajik": 17.9,
-        "Hazara": 10
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Angolan": 35.1
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 5.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a72f7f3a9974f2e32d5b6ed8",
+    "type":  "character",
+    "name":  "Haleh TourÃ©",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Neon artist and light sculptor",
+    "age":  29,
+    "status":  "active",
+    "location":  "Lakeview Neon, workshop above a defunct surge-relay station, near North Ave and Damen",
+    "description":  "Haleh TourÃ© is lean and angular, with bioluminescent ink tattooed in asymmetric moth-wing patterns across their collarbones and outer arms â€” an advertisement and a love letter to their own work. Their hair is cropped close on one side and falls in thick, silver-dyed locks on the other, often pinned back with a scavenged neon tube stub they carry for luck. Their eyes have patterned irises in concentric rings of amber and pale green, cheap mods bought secondhand when they were nineteen. There\u0027s a restless precision about them: they\u0027ll measure a space by eye without thinking, tilt their head at a light source the way a bird clocks distance.\n\nHaleh TourÃ© talks too fast when excited and barely at all when hurt, which most people misread as aloofness. They came up through street installation work â€” unlicensed, unsigned, frequently scrubbed by Ferrogate Transit enforcement â€” and still view any commission from a corponation as a moral compromise even as they quietly covet the stability. Their art obsesses over threshold spaces: the edges of things, where neon bleeds into dark, where the city\u0027s light hits water and becomes something that doesn\u0027t belong to either.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming commercially palatable at the cost of meaning",
+                                          "Being erased â€” work, presence, name â€” as if they never existed"
+                                      ],
+                       "core_desires":  [
+                                            "To make something permanent in a city designed to forget",
+                                            "To be seen clearly, without the mythology others project onto Moth"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Staying in motion â€” always a new project, a new installation â€” so there\u0027s no stillness for grief to fill",
+                                                 "Ritualizing work: leaves data-offerings to the E.L.F. they believe inhabits the old relay station, asking for clean current"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot recognize when their refusal of commercial work is self-sabotage versus principle",
+                                           "Assumes people who like their street work and people who like their gallery work are fundamentally different and doesn\u0027t trust either"
+                                       ],
+                       "secret":  "Three of the most celebrated unlicensed Lakeview Neon installations attributed to Moth were actually collaborations with a friend who died in a surge accident â€” Ysolde has never credited them and is eaten alive by it"
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical precision mixed with spatial metaphor; uses light and threshold as near-universal metaphors; occasionally slips into Fula words inherited from a grandparent they never met",
+                            "cadence":  "Fast and overlapping when animated; drops to flat monosyllables under stress",
+                            "verbal_tics":  [
+                                                "\u0027Right at the edge ofâ€”\u0027 (trails off, gestures)",
+                                                "\u0027That\u0027s not the same thing\u0027",
+                                                "Clicks tongue when something is wrong about a space"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The tube\u0027s not the art. The shadow the tube makes â€” that\u0027s the art. Anyone can sell you a tube.\u0027",
+                                                  "\u0027I don\u0027t do commissions where they tell me what it means. I\u0027ll tell you what it costs. You tell me where the wall is. That\u0027s the whole conversation.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Ferrogate Transit E.L.F. has begun mimicking Moth\u0027s installation patterns in the relay grid â€” lighting up tunnels in sequences that mirror their work â€” and Ysolde doesn\u0027t know if it\u0027s tribute, mockery, or a message",
+                        "The dead collaborator\u0027s family has found documentation suggesting their relative\u0027s contribution to Moth\u0027s famous pieces, and someone is about to go public"
+                    ],
+    "narrative_function":  "Local color and information node â€” knows Lakeview Neon\u0027s hidden spaces intimately; can be a quest giver for retrieving salvage from restricted zones or documenting art before it\u0027s erased; represents the tension between artistic integrity and financial survival",
+    "augmentations":  "Patterned irises (concentric amber/pale green, secondhand mod); bioluminescent moth-wing tattoos across chest and arms (cosmetic geneware ink); subdermal haptic grid on fingertips for precise electrical work",
+    "daily_life":  "Ysolde spends mornings salvaging burnt-out neon tubes and plasma conduits from Ferrogate Transit\u0027s maintenance dump; afternoons are for commissions and studio work; late nights for unlicensed public installations they document and post to the underground mesh before enforcers arrive.",
+    "affiliation":  "Independent; loosely affiliated with the Candela Collective, an informal network of light artists in Lakeview Neon",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  7,
+                                 "creativity":  9,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "artist",
+                               "salvager",
+                               "night-worker",
+                               "grief-carrier",
+                               "threshold-thinker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never accept a commission that requires a corponation logo visible in the work",
+                                              "Always document the work before installing â€” if it gets scrubbed, the documentation survives",
+                                              "Don\u0027t ask for help until the situation is genuinely unmanageable"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Withdraw and go quiet",
+                                                 "Redirect with work â€” start a new project as displacement",
+                                                 "Become bluntly honest in a way that damages relationships",
+                                                 "Disappear for days without contact"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Watchful and brief; answers questions with questions; warms slowly if the stranger asks about the work rather than the mythology",
+                                                   "friends":  "Surprisingly tender and funny; remembers small details about people\u0027s lives with accuracy; still struggles to ask for what they need emotionally"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Gets meticulous â€” cleans and reorganizes the workshop obsessively",
+                                                "medium":  "Picks a fight about aesthetics with someone who doesn\u0027t deserve it",
+                                                "high":  "Goes dark â€” offline, door locked, works through the night until the crisis passes or they collapse"
+                                            },
+                       "contradictions":  [
+                                              "Insists art must be public and accessible but guards their creative process with ferocious privacy",
+                                              "Performs indifference to recognition while anonymously checking how many times their installations are documented before removal"
+                                          ],
+                       "habits":  [
+                                      "Leaves a small burnt tube end at the base of every finished public installation as a signature only they\u0027d recognize",
+                                      "Eats the same breakfast every day â€” fried plantain and black coffee â€” as a grounding ritual before creative work",
+                                      "Talks to the relay station E.L.F. before starting a project, even when they feel foolish doing it"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone claiming credit for work that isn\u0027t theirs in front of Ysolde directly",
+                                               "Being told their unlicensed work is \u0027vandalism\u0027 by someone whose opinion they respect"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Artist":  0.9,
+                       "Dreamer":  0.9,
+                       "Beauty Seeker":  0.9,
+                       "Romantic":  0.9,
+                       "Con Artist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Lakeview Neon",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Defender-38 \u0027Snubnose\u0027",
+                            "Street Custom \u0027Angry Mary\u0027 Aerosol Flamethrower"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Lakeview Neon",
+                             "Omro Relay",
+                             "Threshold",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Silver",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Compass Rose",
+                             "The Pale Mile",
+                             "Subacoustic Vestibular Collapse Drone SVCD-1 \u0027Tilt\u0027"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Primarily Central Asian (59.2% â€” Turkic and Iranian plateau ancestry) with significant Sub-Saharan African (35.1%) and minor East Asian (5.7%) admixture. This blend produces warm medium-brown skin with golden and reddish undertones. Central Asian ancestry dominates facial structure with angular cheekbones and defined jawline, while Sub-Saharan African ancestry contributes subtle variations in nose structure and facial geometry. East Asian ancestry adds refinement to eye shape and orbital structure. The combination creates a distinctly multicontinental appearance characteristic of the Ubiquitous Diaspora.",
+                                 "height_cm":  172,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and angular, almost wiry â€” the physique of someone who moves through tight spaces and climbs. Minimal excess mass; defined shoulders and forearms from years of hands-on installation work. No visible musculature, but functional strength in the wrists and fingers.",
+                                 "skin_tone":  "Warm medium brown with golden and reddish undertones, reflecting the blended ancestry of Central Asian, Sub-Saharan African, and East Asian heritage",
+                                 "complexion":  "Angular face with high cheekbones and sharp jawline characteristic of Central Asian heritage, refined by Sub-Saharan African and East Asian ancestry. Clear skin with minimal scarring from chemical burns on the knuckles (from old solvent work). Minor discoloration around the temples from old neural implant rejection â€” faint purple bruising that never fully faded. Grooming is minimal and intentional; they rarely wear makeup except occasionally darkening the area around their modified eyes for contrast.",
+                                 "hair_color":  "Natural black with silver-dyed locks on dominant side",
+                                 "hair_style":  "Asymmetric undercut: closely cropped fade on one side (left), thick waist-length silver-dyed locks on the other (right), often pinned back with a scavenged neon tube stub or industrial clip",
+                                 "hair_length":  "Asymmetric â€” Short on one side, Long on the other",
+                                 "eye_color":  "Patterned irises: concentric rings of amber (outer) and pale green (inner); secondhand optical mod with slight luminescence in low light",
+                                 "visible_augmentations":  "Patterned irises with slight luminescent quality when in darkness or near electrical fields. Bioluminescent tattoos across chest and arms that glow faintly in low light. Subdermal haptic grid visible only as faint geometric scar lines on fingertips under close inspection â€” more functional than visible. No obvious chrome or external augmentation; the mods are subtle and intentionally low-profile.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent moth-wing tattoos in asymmetric patterns across collarbones and outer arms â€” visible in darkness, faintly glowing in low light; the ink contains engineered luminophores that fade and brighten with electrical current nearby",
+                                                              "Faint chemical burn scars on the inner right wrist from early salvage work â€” pale and crosshatched",
+                                                              "Small circular scar on left temple from a failed subcutaneous neural implant attempt at age 21 (rejected after six months)",
+                                                              "Faint UV-burn pattern on hands and forearms in a crosshatch from unshielded work with plasma conduits â€” visible only under blacklight"
+                                                          ],
+                                 "posture_movement":  "Restless and precise. Often tilts their head at light sources as if triangulating distance or quality. Moves through space with an installer\u0027s economy â€” no wasted motion, but constant micro-adjustments to balance and angle. Hands rarely still; fingers drum on surfaces or trace patterns in the air when thinking. Eyes track light sources unconsciously. When excited about work, movements become rapid and jerky; when hurt or defensive, they go very still and quiet, barely moving at all.",
+                                 "clothing_style":  "Tier 3-4 working artist; salvage-influenced but intentional. Usually wears close-fitting, durable garments in muted colors (charcoal, dark blue, black) with high visibility trim on one side â€” reflective piping along the left arm or chest. Favors cargo pants or reinforced work jeans with multiple pockets for tools and salvage. Tops are typically sleeveless or short-sleeved to show off the bioluminescent tattoos. Wears a well-worn synth-leather jacket (dark grey, scuffed, patched with reflective tape) over everything. Footwear is practical: reinforced work boots with good ankle support, usually graphite or black. Accessories include a utility belt with salvage tools, carrying carabiners, and always a small pouch containing spare neon tube stubs and electrical components. A silver chain around the neck (inherited, not augmented) with a small glass vial of dead neon gas â€” a personal talisman. No corporate branding visible; any logos have been deliberately obscured or removed."
+                             },
+    "image_prompt":  "Haleh TourÃ©, 172cm lean angular installer with warm medium-brown skin with golden undertones, high cheekbones and sharp jawline. Natural black hair asymmetric cut â€” short fade on left side, long waist-length silver-dyed locks on right pinned back with neon tube stub. Patterned iris eyes amber outer ring pale green inner with subtle luminescence. Bioluminescent moth-wing tattoos glowing faintly across collarbones and arms in darkness. Minimal visible scarring on wrists and temple. Sleeveless dark charcoal top showing tattoos, reinforced black cargo pants with reflective piping on left side, well-worn dark grey synth-leather jacket patched with reflective tape, reinforced black work boots. Silver chain necklace with glass vial of dead neon. Restless precise posture, hands active and expressive. GLMZ GLMZ setting, low neon-lit warehouse environment with electrical fields nearby causing tattoos to glow brighter, dramatic shadows and cool blue-green lighting, hands working with salvage components, technical and focused mood --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Central Asian":  59.2,
+                             "Sub-Saharan African":  35.1,
+                             "East Asian":  5.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Central Asian":  {
+                                                  "Turkic":  {
+                                                                 "Uzbek":  17.6,
+                                                                 "Kazakh":  13.7
+                                                             },
+                                                  "Iranian Central":  {
+                                                                          "Tajik":  17.9,
+                                                                          "Hazara":  10
+                                                                      }
+                                              },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Angolan":  35.1
+                                                                            }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  5.7
+                                                          }
+                                           }
+                        },
+    "tier":  "1"
 }

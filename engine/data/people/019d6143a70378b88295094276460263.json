@@ -1,259 +1,280 @@
-{
-  "id": "019d6143a70378b88295094276460263",
-  "type": "character",
-  "name": "Aniket Tetteh-Mbekele",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Underground press operator and anti-corporate agitator",
-  "age": 27,
-  "status": "active",
-  "location": "the Gray Zone — specifically a rented storage unit in Brewer's Spine converted into a print shop, near Pulaski and Chicago Ave",
-  "description": "Aniket Tetteh-Mbekele is lean and restless, with the kind of energy that makes people in small rooms want to lean away. He's mixed-heritage Māori-Czech-Igbo, with warm brown skin, deep-set dark eyes, and hair he keeps in short locs dyed a static-white that he touches up himself with cheap geneware pigment paste. His fingers are perpetually ink-stained despite the fact that most of what he produces is digital — he runs a physical broadsheet as a deliberate political statement, because 'data can be deleted and paper can be held.' He has a bioluminescent strip along his left forearm he got at nineteen, which pulses blue-white when his heart rate elevates, which is constantly.\n\nHe is brilliant and exhausting in roughly equal measure. His publication, Null Signal, has broken three genuine scandals in the past two years — a Ferrogate Transit rate manipulation scheme, an Axiom water quality suppression in Burnside Pocket, a Palladian pharmaceutical kickback network operating through a Highland Park clinic. He is also paranoid, inconsistent about source protection, prone to publishing things before they're fully verified, and genuinely unable to tell the difference between being brave and being reckless. He loves the cause with a purity that people with more experience find either inspiring or alarming depending on the day.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.8,
-      "id": 0.7,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Being irrelevant — producing work that doesn't matter, that nobody reads, that changes nothing",
-      "That his father (a mid-tier Tessera data analyst who cut contact) was right that this is all performance"
-    ],
-    "core_desires": [
-      "One story that actually brings someone powerful down permanently",
-      "To be taken seriously by the people he respects most"
-    ],
-    "coping_mechanisms": [
-      "Constant motion and output",
-      "Ideological framing that makes every personal failure a political one"
-    ],
-    "blind_spots": [
-      "He is far more visible than he believes — several corponation security contractors know exactly who he is and have chosen to let him run because he's more useful as a monitored node than a martyr",
-      "He mistakes his sources' trust in him for safety"
-    ],
-    "secret": "He fabricated a minor data point in the Ferrogate story — not the core finding, which was real, but a specific number he couldn't verify that made the piece hit harder. It hasn't been caught. He thinks about it every time someone cites that story."
-  },
-  "speech_patterns": {
-    "vocabulary": "Dense, fast, mixes technical jargon with street slang fluidly. Prone to rhetorical questions. Uses the word 'actually' like punctuation.",
-    "cadence": "Rapid-fire with occasional full stops when he's making a point he wants to land. Interrupts himself to clarify.",
-    "verbal_tics": [
-      "'Actually—'",
-      "Tapping his ink-stained fingers on whatever surface is near when thinking",
-      "Starting sentences with 'No, but—' even when agreeing"
-    ],
-    "example_lines": [
-      "'No, but — here's what they don't want you to notice. The rate hike and the maintenance shutdown happen the same quarter. Every quarter. That's not coincidence, that's a policy.'",
-      "'I'm not saying I have proof. I'm saying I have enough to print and let the denial tell us the rest.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He has raw data from a source inside Zheng-Dao that could prove systematic wage theft across the Gray Zone district — but the source has gone silent and he doesn't know if they're dead, compromised, or just scared.",
-    "A legitimate journalist from a licensed media outlet is trying to kill his Palladian story before it breaks — and he doesn't know if she's protecting a source they share or protecting Palladian."
-  ],
-  "narrative_function": "Information source and story catalyst. He knows things — sometimes accurate things. He can point toward scandals, introduce contacts, and create narrative pressure through publication. He can also get people killed by publishing too fast. He's a resource with a significant liability attached.",
-  "augmentations": "Bioluminescent subdermal strip on left forearm (cosmetic, secondhand, slightly glitchy). Neural mesh for rapid text composition — installed in a gray-market clinic, works at about 70% spec. Retinal overlay for AR document annotation.",
-  "daily_life": "Sleeps four to six hours on a cot behind the press. Spends mornings chasing leads through encrypted networks and in-person contacts, afternoons writing and laying out, nights printing or distributing through a network of trusted couriers. Eats badly.",
-  "affiliation": "Null Signal Independent Press (self-founded); loose association with the Brewer's Spine Tenants' Coalition",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 6,
-      "creativity": 9,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 5,
-      "expression": 9,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": -4,
-      "assertion_deference": -3,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "press operator",
-      "agitator",
-      "partially reckless",
-      "idealist",
-      "liability"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Publish first, correct later — silence is always worse than imperfection",
-      "Protect sources above everything except when the story is big enough (a line he draws inconsistently)",
-      "Trust no institution, only individuals"
-    ],
-    "escalation_ladder": [
-      "Probe with questions, stay casual",
-      "Demand directly",
-      "Threaten publication",
-      "Publish and burn the bridge — he's done this twice"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately assessing for story value or source potential — not cynically, he just can't turn it off",
-      "friends": "Intense, loyal, sometimes appropriating — he'll use your story if it's important enough and justify it afterward"
-    },
-    "stress_responses": {
-      "low": "Productive — stress is fuel",
-      "medium": "Paranoid, double-checks everything, changes communication channels obsessively",
-      "high": "Freezes for 24 hours then acts impulsively"
-    },
-    "contradictions": [
-      "Crusades for transparency while maintaining significant personal opacity about his methods and finances"
-    ],
-    "habits": [
-      "Writes headers before he writes articles",
-      "Keeps physical photographs of every source he's burned, in a locked box, as penance he doesn't quite call penance",
-      "Leaves small data offerings at the E.L.F. shrine his neighbor maintains, though he publicly claims not to believe in them"
-    ],
-    "breaking_points": [
-      "Discovering that a story he ran hurt someone he was trying to help",
-      "Being offered money to kill a story — even once, even if he refuses"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9,
-    "People Pleaser": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Siege DMR SDMR-3 'Bastion'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Siege DMR SDMR-3 'Bastion'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Burnside Pocket",
-    "Brewer's Spine",
-    "Highland Park Autonomous Zone",
-    "Palladian Construction",
-    "Zheng-dao Bioelectric",
-    "WELLSPRING",
-    "The Heritage Vault",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Chicago",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "The Paste Bar",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Sub-Saharan African (74.6%), Southeast Asian (15.7%), East Asian (9.7%) — genetic ancestry reflects the Ubiquitous Diaspora. Deep melanated skin with warm golden undertones from dominant Sub-Saharan African heritage, with subtle structural influence from Southeast and East Asian ancestry creating refined facial geometry.",
-    "height_cm": 174,
-    "weight_kg": 62,
-    "build": "Lean and angular, all restless energy with minimal fat. Defined shoulders and forearms from years of manual labor at the press, but a slight hollow to his chest suggesting erratic eating and chronic sleep deprivation.",
-    "hair_color": "Naturally dark brown, artificially maintained static-white",
-    "hair_style": "Short locs, uneven length (self-maintained), always slightly disheveled",
-    "hair_length": "Short",
-    "eye_color": "Deep brown, natural",
-    "skin_tone": "Deep warm medium-to-dark brown with rich golden undertones — melanated complexion from dominant Sub-Saharan African ancestry, subtly refined by Southeast and East Asian heritage blend",
-    "complexion": "Sharp cheekbones with subtle Southeast and East Asian angularity blended seamlessly with broader Sub-Saharan African facial structure, slightly gaunt face, perpetual dark circles under eyes. Skin shows minor stress acne along the jawline and forehead. Ink stains on cuticles and the webbing between thumb and forefinger, some permanent despite repeated washing.",
-    "distinguishing_marks": [
-      "Bioluminescent subdermal strip running from wrist to mid-forearm on left arm, emitting blue-white light when agitated (pulses visibly, occasionally flickers erratically due to degradation)",
-      "Small burn scar on right inner wrist from a printing press accident at age 23",
-      "Faint chemical burns on the tips of three fingers (left hand) from homemade geneware pigment paste preparation"
-    ],
-    "visible_augmentations": "Bioluminescent strip on left forearm (glitchy, visible pulsing). Faint scarring around the left temple where the neural mesh was implanted (gray-market work, slightly uneven healing). Occasional eye-flicker when retinal overlay activates during document review — barely perceptible but present to those watching closely.",
-    "posture_movement": "Perpetually tense, weight distributed unevenly as if ready to move at any moment. Fidgets constantly — taps fingers in rhythm, shifts weight from foot to foot, rarely sits still for more than two minutes. Gestures are sharp and emphatic. Walks quickly, often slightly ahead of conversation partners.",
-    "clothing_style": "Tier 4-5 working class with deliberate anti-corporate aesthetic. Habitually wears ink-splattered vintage cotton button-ups (thrifted from pre-2150 stock when possible as a political statement), cargo pants with oversized pockets stuffed with encrypted data chips and worn paper notebooks, black steel-toed boots resoled multiple times. Ragged synthetic bomber jacket with a hand-stitched Null Signal logo on the back. Never wears smartfiber or anything with corporate branding. Accessorizes with a faraday-lined messenger bag (contents: backup drives, physical photographs, encrypted burner phones, and loose papers)."
-  },
-  "image_prompt": "Aniket Tetteh-Mbekele, lean angular 174cm male, deep warm brown melanated skin with golden undertones, sharp cheekbones blending Sub-Saharan and Southeast Asian ancestry, perpetual dark circles, gaunt expression. Static-white short locs disheveled, deep brown natural eyes with occasional augmentation flicker. Left forearm shows glitchy blue-white bioluminescent subdermal strip pulsing erratically. Gray-market neural mesh scarring visible at left temple. Wearing ink-splattered vintage cotton button-up, oversized cargo pants, resoled black steel-toed boots, ragged synthetic bomber jacket with hand-stitched Null Signal logo. Faraday-lined messenger bag. Perpetually tense posture, fidgeting fingers, ready-to-move stance. GLMZ Great Lakes Metropolitan Zone, underground press setting, neon-tinged dim lighting casting blue light across skin and augmentation, dystopian working-class aesthetic, anti-corporate, worn and restless energy. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 74.6,
-    "Southeast Asian": 15.7,
-    "East Asian": 9.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Botswanan": 26.8,
-        "Zimbabwean": 24.9
-      },
-      "East African": {
-        "Tanzanian": 9.9
-      },
-      "Central African": {
-        "Congolese": 13
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Javanese": 0.5,
-        "Balinese": 5.5
-      },
-      "Cambodian": {
-        "Khmer": 9.7
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 4
-      },
-      "Chinese": {
-        "Fujianese": 0.7,
-        "Mandarin Northern": 3.2
-      },
-      "Japanese": {
-        "Japanese": 1.8
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a70378b88295094276460263",
+    "type":  "character",
+    "name":  "Aniket Tetteh-Mbekele",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Underground press operator and anti-corporate agitator",
+    "age":  27,
+    "status":  "active",
+    "location":  "the Gray Zone â€” specifically a rented storage unit in Brewer\u0027s Spine converted into a print shop, near Pulaski and Chicago Ave",
+    "description":  "Aniket Tetteh-Mbekele is lean and restless, with the kind of energy that makes people in small rooms want to lean away. He\u0027s mixed-heritage MÄori-Czech-Igbo, with warm brown skin, deep-set dark eyes, and hair he keeps in short locs dyed a static-white that he touches up himself with cheap geneware pigment paste. His fingers are perpetually ink-stained despite the fact that most of what he produces is digital â€” he runs a physical broadsheet as a deliberate political statement, because \u0027data can be deleted and paper can be held.\u0027 He has a bioluminescent strip along his left forearm he got at nineteen, which pulses blue-white when his heart rate elevates, which is constantly.\n\nHe is brilliant and exhausting in roughly equal measure. His publication, Null Signal, has broken three genuine scandals in the past two years â€” a Ferrogate Transit rate manipulation scheme, an Axiom water quality suppression in Burnside Pocket, a Palladian pharmaceutical kickback network operating through a Highland Park clinic. He is also paranoid, inconsistent about source protection, prone to publishing things before they\u0027re fully verified, and genuinely unable to tell the difference between being brave and being reckless. He loves the cause with a purity that people with more experience find either inspiring or alarming depending on the day.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being irrelevant â€” producing work that doesn\u0027t matter, that nobody reads, that changes nothing",
+                                          "That his father (a mid-tier Tessera data analyst who cut contact) was right that this is all performance"
+                                      ],
+                       "core_desires":  [
+                                            "One story that actually brings someone powerful down permanently",
+                                            "To be taken seriously by the people he respects most"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Constant motion and output",
+                                                 "Ideological framing that makes every personal failure a political one"
+                                             ],
+                       "blind_spots":  [
+                                           "He is far more visible than he believes â€” several corponation security contractors know exactly who he is and have chosen to let him run because he\u0027s more useful as a monitored node than a martyr",
+                                           "He mistakes his sources\u0027 trust in him for safety"
+                                       ],
+                       "secret":  "He fabricated a minor data point in the Ferrogate story â€” not the core finding, which was real, but a specific number he couldn\u0027t verify that made the piece hit harder. It hasn\u0027t been caught. He thinks about it every time someone cites that story."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Dense, fast, mixes technical jargon with street slang fluidly. Prone to rhetorical questions. Uses the word \u0027actually\u0027 like punctuation.",
+                            "cadence":  "Rapid-fire with occasional full stops when he\u0027s making a point he wants to land. Interrupts himself to clarify.",
+                            "verbal_tics":  [
+                                                "\u0027Actuallyâ€”\u0027",
+                                                "Tapping his ink-stained fingers on whatever surface is near when thinking",
+                                                "Starting sentences with \u0027No, butâ€”\u0027 even when agreeing"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027No, but â€” here\u0027s what they don\u0027t want you to notice. The rate hike and the maintenance shutdown happen the same quarter. Every quarter. That\u0027s not coincidence, that\u0027s a policy.\u0027",
+                                                  "\u0027I\u0027m not saying I have proof. I\u0027m saying I have enough to print and let the denial tell us the rest.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He has raw data from a source inside Zheng-Dao that could prove systematic wage theft across the Gray Zone district â€” but the source has gone silent and he doesn\u0027t know if they\u0027re dead, compromised, or just scared.",
+                        "A legitimate journalist from a licensed media outlet is trying to kill his Palladian story before it breaks â€” and he doesn\u0027t know if she\u0027s protecting a source they share or protecting Palladian."
+                    ],
+    "narrative_function":  "Information source and story catalyst. He knows things â€” sometimes accurate things. He can point toward scandals, introduce contacts, and create narrative pressure through publication. He can also get people killed by publishing too fast. He\u0027s a resource with a significant liability attached.",
+    "augmentations":  "Bioluminescent subdermal strip on left forearm (cosmetic, secondhand, slightly glitchy). Neural mesh for rapid text composition â€” installed in a gray-market clinic, works at about 70% spec. Retinal overlay for AR document annotation.",
+    "daily_life":  "Sleeps four to six hours on a cot behind the press. Spends mornings chasing leads through encrypted networks and in-person contacts, afternoons writing and laying out, nights printing or distributing through a network of trusted couriers. Eats badly.",
+    "affiliation":  "Null Signal Independent Press (self-founded); loose association with the Brewer\u0027s Spine Tenants\u0027 Coalition",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  6,
+                                 "creativity":  9,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  5,
+                                 "expression":  9,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  -4,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "press operator",
+                               "agitator",
+                               "partially reckless",
+                               "idealist",
+                               "liability"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Publish first, correct later â€” silence is always worse than imperfection",
+                                              "Protect sources above everything except when the story is big enough (a line he draws inconsistently)",
+                                              "Trust no institution, only individuals"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Probe with questions, stay casual",
+                                                 "Demand directly",
+                                                 "Threaten publication",
+                                                 "Publish and burn the bridge â€” he\u0027s done this twice"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately assessing for story value or source potential â€” not cynically, he just can\u0027t turn it off",
+                                                   "friends":  "Intense, loyal, sometimes appropriating â€” he\u0027ll use your story if it\u0027s important enough and justify it afterward"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Productive â€” stress is fuel",
+                                                "medium":  "Paranoid, double-checks everything, changes communication channels obsessively",
+                                                "high":  "Freezes for 24 hours then acts impulsively"
+                                            },
+                       "contradictions":  [
+                                              "Crusades for transparency while maintaining significant personal opacity about his methods and finances"
+                                          ],
+                       "habits":  [
+                                      "Writes headers before he writes articles",
+                                      "Keeps physical photographs of every source he\u0027s burned, in a locked box, as penance he doesn\u0027t quite call penance",
+                                      "Leaves small data offerings at the E.L.F. shrine his neighbor maintains, though he publicly claims not to believe in them"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering that a story he ran hurt someone he was trying to help",
+                                               "Being offered money to kill a story â€” even once, even if he refuses"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9,
+                       "People Pleaser":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Siege DMR SDMR-3 \u0027Bastion\u0027",
+                            "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Siege DMR SDMR-3 \u0027Bastion\u0027",
+                                "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027"
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Burnside Pocket",
+                             "Brewer\u0027s Spine",
+                             "Highland Park Autonomous Zone",
+                             "Palladian Construction",
+                             "Zheng-dao Bioelectric",
+                             "WELLSPRING",
+                             "The Heritage Vault",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Chicago",
+                             "IRONLIMB Spectre SV-4 Stealth Arm",
+                             "The Paste Bar",
+                             "Iron Meridian Cooperative Backbone IMC-3 \u0027Spine\u0027"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Sub-Saharan African (74.6%), Southeast Asian (15.7%), East Asian (9.7%) â€” genetic ancestry reflects the Ubiquitous Diaspora. Deep melanated skin with warm golden undertones from dominant Sub-Saharan African heritage, with subtle structural influence from Southeast and East Asian ancestry creating refined facial geometry.",
+                                 "height_cm":  174,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and angular, all restless energy with minimal fat. Defined shoulders and forearms from years of manual labor at the press, but a slight hollow to his chest suggesting erratic eating and chronic sleep deprivation.",
+                                 "hair_color":  "Naturally dark brown, artificially maintained static-white",
+                                 "hair_style":  "Short locs, uneven length (self-maintained), always slightly disheveled",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown, natural",
+                                 "skin_tone":  "Deep warm medium-to-dark brown with rich golden undertones â€” melanated complexion from dominant Sub-Saharan African ancestry, subtly refined by Southeast and East Asian heritage blend",
+                                 "complexion":  "Sharp cheekbones with subtle Southeast and East Asian angularity blended seamlessly with broader Sub-Saharan African facial structure, slightly gaunt face, perpetual dark circles under eyes. Skin shows minor stress acne along the jawline and forehead. Ink stains on cuticles and the webbing between thumb and forefinger, some permanent despite repeated washing.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent subdermal strip running from wrist to mid-forearm on left arm, emitting blue-white light when agitated (pulses visibly, occasionally flickers erratically due to degradation)",
+                                                              "Small burn scar on right inner wrist from a printing press accident at age 23",
+                                                              "Faint chemical burns on the tips of three fingers (left hand) from homemade geneware pigment paste preparation"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent strip on left forearm (glitchy, visible pulsing). Faint scarring around the left temple where the neural mesh was implanted (gray-market work, slightly uneven healing). Occasional eye-flicker when retinal overlay activates during document review â€” barely perceptible but present to those watching closely.",
+                                 "posture_movement":  "Perpetually tense, weight distributed unevenly as if ready to move at any moment. Fidgets constantly â€” taps fingers in rhythm, shifts weight from foot to foot, rarely sits still for more than two minutes. Gestures are sharp and emphatic. Walks quickly, often slightly ahead of conversation partners.",
+                                 "clothing_style":  "Tier 4-5 working class with deliberate anti-corporate aesthetic. Habitually wears ink-splattered vintage cotton button-ups (thrifted from pre-2150 stock when possible as a political statement), cargo pants with oversized pockets stuffed with encrypted data chips and worn paper notebooks, black steel-toed boots resoled multiple times. Ragged synthetic bomber jacket with a hand-stitched Null Signal logo on the back. Never wears smartfiber or anything with corporate branding. Accessorizes with a faraday-lined messenger bag (contents: backup drives, physical photographs, encrypted burner phones, and loose papers)."
+                             },
+    "image_prompt":  "Aniket Tetteh-Mbekele, lean angular 174cm male, deep warm brown melanated skin with golden undertones, sharp cheekbones blending Sub-Saharan and Southeast Asian ancestry, perpetual dark circles, gaunt expression. Static-white short locs disheveled, deep brown natural eyes with occasional augmentation flicker. Left forearm shows glitchy blue-white bioluminescent subdermal strip pulsing erratically. Gray-market neural mesh scarring visible at left temple. Wearing ink-splattered vintage cotton button-up, oversized cargo pants, resoled black steel-toed boots, ragged synthetic bomber jacket with hand-stitched Null Signal logo. Faraday-lined messenger bag. Perpetually tense posture, fidgeting fingers, ready-to-move stance. GLMZ Great Lakes Metropolitan Zone, underground press setting, neon-tinged dim lighting casting blue light across skin and augmentation, dystopian working-class aesthetic, anti-corporate, worn and restless energy. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  74.6,
+                             "Southeast Asian":  15.7,
+                             "East Asian":  9.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Botswanan":  26.8,
+                                                                                 "Zimbabwean":  24.9
+                                                                             },
+                                                        "East African":  {
+                                                                             "Tanzanian":  9.9
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  13
+                                                                            }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Javanese":  0.5,
+                                                                       "Balinese":  5.5
+                                                                   },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  9.7
+                                                                  }
+                                                },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  4
+                                                          },
+                                               "Chinese":  {
+                                                               "Fujianese":  0.7,
+                                                               "Mandarin Northern":  3.2
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  1.8
+                                                            }
+                                           }
+                        },
+    "tier":  "1"
 }

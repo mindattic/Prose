@@ -1,376 +1,387 @@
-{
-  "id": "019d6143a5bc7f67b5f074e1df597cfc",
-  "type": "character",
-  "name": "Amara Boateng-Shin",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Electronic and physical observation expert — surveillance specialist",
-  "age": 25,
-  "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures, near Milwaukee and Damen",
-  "description": "Amara Boateng-Shin are average height but with a presence that fills more space than the body accounts for. At 25, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Amara Boateng-Shin plans to keep it that way. They work as a surveillance specialist out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nAmara Boateng-Shin operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.64,
-      "ideal": 0.14,
-      "id": 0.45,
-      "shadow": 0.48,
-      "mask": 0.15,
-      "ghost": 0.52
-    },
-    "core_fears": [
-      "Losing control of their own body to a hacker or malfunctioning cyberware",
-      "Being replaced — younger, faster, cheaper runners coming up behind them",
-      "Going cyberpsycho — losing the boundary between human and machine"
-    ],
-    "core_desires": [
-      "Control — over their body, their schedule, their future",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
-    ],
-    "coping_mechanisms": [
-      "Exercises compulsively — the body must be ready, always",
-      "Maintains weapons obsessively — cleaning guns is meditation",
-      "Humor — deflects everything serious with jokes until the joke becomes the personality"
-    ],
-    "blind_spots": [
-      "Cannot distinguish between caution and cowardice in themselves or others",
-      "Believes their trauma makes them special instead of recognizing it as damage to manage",
-      "Assumes their skill set is more transferable than it actually is"
-    ],
-    "secret": "Aybek Yamamoto-Darko can't read. Hides it behind voice interfaces and memorization. The shame is older than the chrome."
-  },
-  "speech_patterns": {
-    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
-    "cadence": "Staccato bursts separated by calculating silences.",
-    "verbal_tics": [
-      "Whispers when angry — the quieter the voice, the worse the situation",
-      "Calls money 'weight' — as in 'that job doesn't carry enough weight'"
-    ],
-    "example_lines": [
-      "\"I've been watching you for three days. You should close your curtains.\"",
-      "\"Information is the only commodity that appreciates with age.\"",
-      "\"Everyone thinks they're careful. Nobody is careful enough.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Tier 4 executive offers Aybek Yamamoto-Darko a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "A dead drop Aybek Yamamoto-Darko maintains is found and cleaned out — whoever did it now has leverage",
-    "Aybek Yamamoto-Darko's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
-  ],
-  "narrative_function": "Aybek Yamamoto-Darko functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Internal drug synthesizer — produces combat stims and medical compounds on demand. Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Freelance — multi-district operator",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 8
-      },
-      "agility": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 9
-      },
-      "reflexes": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 6
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 7
-      },
-      "perception": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 4
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 9
-      },
-      "technical": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 8
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 5
-      },
-      "intimidation": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 4
-      },
-      "deception": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 6
-      },
-      "empathy": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 5
-      }
-    },
-    "personality": {
-      "aggression": 0.81,
-      "caution": 0.55,
-      "loyalty": 0.72,
-      "greed": 0.27,
-      "empathy": 0.49
-    },
-    "drives": [
-      "survival",
-      "power",
-      "money"
-    ],
-    "thresholds": {
-      "pain": 9,
-      "stress": 5,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "exceptional close-quarters combat",
-      "intimidating physical presence"
-    ],
-    "weaknesses": [
-      "overconfidence in specialty areas leading to blind spots",
-      "substance dependency — functional but fragile",
-      "emotional volatility under extreme stress"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "surveillance specialist",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Always verifies target identity independently before lethal contracts",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Preaches independence but is desperate for approval from people they respect",
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
-      "Claims not to care about reputation but monitors what people say about them obsessively"
-    ],
-    "habits": [
-      "Eats the same meal before every job — superstition masquerading as preference",
-      "Practices a kata or fighting form every morning regardless of circumstances",
-      "Carries a specific caliber round as a lucky charm — has never fired it",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
-    ],
-    "breaking_points": [
-      "Losing their primary augmentation — the one that defines their professional identity",
-      "Watching someone they trained or mentored die on a job they recommended"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Internal drug synthesizer",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Internal drug synthesizer — produces combat stims and medical compounds on demand",
-      "replaces": ""
-    },
-    {
-      "name": "Internal air filtration system",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Brawler": 0.7,
-    "Berserker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ],
-  "registered_firearms": [
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ],
-  "related_entities": [
-    "The Narrows Compact",
-    "The Nearfield",
-    "The Heritage Vault",
-    "Diaspora Table",
-    "Stratum"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Southeast Asian (26.1%), Sub-Saharan African (24.1%), East Asian (23.4%), South Asian (9.8%), Middle Eastern (8.4%), and Eastern European (8.2%) ancestry—a genuinely global genetic diaspora creating a complex phenotype where multiple continental features synthesize into something distinctly 2220s. The combination produces facial structure that refuses easy categorization: Southeast Asian cheekbone prominence blended with Sub-Saharan African lip fullness and nose structure, East Asian eye shape subtleties, South Asian skin depth and warmth, Middle Eastern jawline refinement, and Eastern European undertones in overall bone structure. Phenotype is visibly multicontinental, carrying its diverse heritage without settling into any single categorical appearance.",
-    "height_cm": 172,
-    "weight_kg": 68,
-    "build": "Lean and economical—muscle distributed for endurance rather than bulk. Movements suggest compressed efficiency, as if they've learned to occupy minimal space despite their psychological presence.",
-    "hair_color": "Dark brown with deliberate silver threading at the temples",
-    "hair_style": "Asymmetrical undercut; longer on one side (covers scarring), shorter on the other for visibility and counterbalance",
-    "hair_length": "Medium (varied)",
-    "eye_color": "Dark brown with faint amber undertones—natural, unreplaced",
-    "skin_tone": "Rich deep warm brown with golden and olive undertones—the result of six-way ancestral blending creating luminous depth. Skin reads as simultaneously warm and cool depending on light angle, with undertones synthesizing Sub-Saharan, Southeast Asian, South Asian, and Eastern European heritage into a complex, glowing tone that shifts with ambient lighting.",
-    "complexion": "High prominent cheekbones with subtle width characteristic of Southeast and East Asian ancestry; strong refined jawline with Middle Eastern angularity and Sub-Saharan definition; nose structure reflecting Sub-Saharan and South Asian heritage with an East Asian-influenced bridge and refined tip. Lip fullness suggesting Sub-Saharan ancestry. Facial structure displays visible multicontinental blending—high cheekbones, broad nose bridge, refined jaw, full lips, and subtle eye shape create a phenotype that clearly carries global ancestry. Skin maintained with clinical precision—minimal scarring except where deliberately hidden. Expression defaults to neutral observation. Eyes move constantly; they are always recording.",
-    "distinguishing_marks": [
-      "Surgical scar running from left temple to jawline, partially obscured by longer hair on that side, suggesting facial reconstruction or trauma removal",
-      "Thin pale line across the right wrist—self-inflicted or combat-related, deliberately left unhealed",
-      "Faint tattooed circuit pattern along the inside of left forearm—custom work, non-standard design, possibly ritual or identification marker"
-    ],
-    "visible_augmentations": "Chrome synthesizer port at the base of the neck—roughly the size of a thumb, visible when head is tilted or hair is swept back. The port has a matte gunmetal finish with subtle wear marks. No visible respiratory augmentation; lungs are replaced internally and undetectable. The overall aesthetic suggests someone who doesn't bother hiding what they are.",
-    "posture_movement": "Still when stationary—genuinely still, not the tense stillness of anxiety but the economical stillness of predatory focus. Moves with controlled precision, weight always centered and ready. Hands at rest are never fully relaxed; fingers maintain micro-movements suggesting constant sensory processing. Eyes scan spaces methodically before settling. Speech patterns shift between clipped efficiency and unexpected verbosity, depending on context.",
-    "clothing_style": "Tier 3-4 practical wear with personal modifications. Matte black layered jacket (Kessler brand knockoff, reinforced at stress points) over grey utility vest with asymmetrical pockets and cable anchors. Dark fitted pants with cargo modifications and reinforced knee panels. Worn tactical boots with custom grip sole. Thermal-responsive base layers visible at collar and wrists. No logos or corporate affiliation visible. Jewelry minimal—only a worn brass ring on right index finger, possibly a ritual object or timer. Functional, forgettable, designed not to register as either wealthy or desperate."
-  },
-  "image_prompt": "GLMZ portrait of Amara Boateng-Shin, a 172cm lean-built figure with rich deep warm brown skin displaying complex golden and olive undertones from multicontinental ancestry. High prominent Southeast Asian cheekbones blend with Sub-Saharan African nose structure and lip fullness; Middle Eastern jawline refinement; East Asian eye shape. Dark brown eyes with amber undertones, constantly scanning. Dark brown hair with silver threading at temples, asymmetrical undercut with longer left side obscuring surgical scar running temple to jaw. Right wrist shows thin pale self-inflicted line. Left forearm bears faint tattooed circuit pattern. Chrome synthesizer port visible at neck base with matte gunmetal finish. Wearing matte black reinforced Kessler-knockoff jacket over grey asymmetrical utility vest; dark fitted cargo pants; worn tactical boots; thermal-responsive base layers. Worn brass ring on right index finger. Posture: still, predatory, economical. Neutral expression, eyes recording. Industrial GLMZ setting, cool neon side-lighting emphasizing skin's luminous depth and complex undertones, subtle geometric shadows. Mood: focused, inhuman precision, dangerous calm. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 26.1,
-    "Sub-Saharan African": 24.1,
-    "East Asian": 23.4,
-    "South Asian": 9.8,
-    "Middle Eastern": 8.4,
-    "Eastern European": 8.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 26.1
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Sierra Leonean": 24.1
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 13.3
-      },
-      "Chinese": {
-        "Cantonese": 10.1
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 5.2
-      },
-      "Indian": {
-        "Marathi": 4.6
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 2.3
-      },
-      "Arab Levantine": {
-        "Syrian": 1.2,
-        "Lebanese": 1
-      },
-      "Kurdish": {
-        "Kurdish": 3.9
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Russian": 3.4,
-        "Belarusian": 1.6
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 0.4,
-        "Romanian": 0.2
-      },
-      "Slavic South": {
-        "Bosnian": 1.8,
-        "Slovenian": 0.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5bc7f67b5f074e1df597cfc",
+    "type":  "character",
+    "name":  "Amara Boateng-Shin",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Electronic and physical observation expert â€” surveillance specialist",
+    "age":  25,
+    "status":  "active",
+    "location":  "The Narrows â€” cramped residential corridors between megastructures, near Milwaukee and Damen",
+    "description":  "Amara Boateng-Shin are average height but with a presence that fills more space than the body accounts for. At 25, their face carries the layered heritage of generations of diaspora mixing â€” features that resist easy categorization and reward attention. The chrome is visible â€” internal drug synthesizer â€” produces combat stims and medical compounds on deman â€” and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name â€” that person is officially dead, and Amara Boateng-Shin plans to keep it that way. They work as a surveillance specialist out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nAmara Boateng-Shin operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing control of their own body to a hacker or malfunctioning cyberware",
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them",
+                                          "Going cyberpsycho â€” losing the boundary between human and machine"
+                                      ],
+                       "core_desires":  [
+                                            "Control â€” over their body, their schedule, their future",
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail",
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Exercises compulsively â€” the body must be ready, always",
+                                                 "Maintains weapons obsessively â€” cleaning guns is meditation",
+                                                 "Humor â€” deflects everything serious with jokes until the joke becomes the personality"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot distinguish between caution and cowardice in themselves or others",
+                                           "Believes their trauma makes them special instead of recognizing it as damage to manage",
+                                           "Assumes their skill set is more transferable than it actually is"
+                                       ],
+                       "secret":  "Aybek Yamamoto-Darko can\u0027t read. Hides it behind voice interfaces and memorization. The shame is older than the chrome."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Educated vocabulary wrapped in street delivery â€” the contrast is deliberate.",
+                            "cadence":  "Staccato bursts separated by calculating silences.",
+                            "verbal_tics":  [
+                                                "Whispers when angry â€” the quieter the voice, the worse the situation",
+                                                "Calls money \u0027weight\u0027 â€” as in \u0027that job doesn\u0027t carry enough weight\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I\u0027ve been watching you for three days. You should close your curtains.\"",
+                                                  "\"Information is the only commodity that appreciates with age.\"",
+                                                  "\"Everyone thinks they\u0027re careful. Nobody is careful enough.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Tier 4 executive offers Aybek Yamamoto-Darko a permanent position â€” the pay is obscene and the strings are invisible until they tighten",
+                        "A dead drop Aybek Yamamoto-Darko maintains is found and cleaned out â€” whoever did it now has leverage",
+                        "Aybek Yamamoto-Darko\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad"
+                    ],
+    "narrative_function":  "Aybek Yamamoto-Darko functions as a connector â€” their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Internal drug synthesizer â€” produces combat stims and medical compounds on demand. Internal air filtration system â€” lungs replaced with synthetic equivalents, immune to gas attacks",
+    "daily_life":  "Between contracts, maintains a cover identity â€” mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+    "affiliation":  "Freelance â€” multi-district operator",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  7,
+                                                    "augmented":  2,
+                                                    "effective":  8
+                                                },
+                                   "agility":  {
+                                                   "base":  8,
+                                                   "augmented":  2,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  6,
+                                                     "augmented":  1,
+                                                     "effective":  9
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  4,
+                                                    "augmented":  1,
+                                                    "effective":  6
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  6,
+                                                      "augmented":  3,
+                                                      "effective":  7
+                                                  },
+                                 "perception":  {
+                                                    "base":  7,
+                                                    "augmented":  0,
+                                                    "effective":  4
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               },
+                                 "technical":  {
+                                                   "base":  3,
+                                                   "augmented":  3,
+                                                   "effective":  8
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  5,
+                                                  "augmented":  1,
+                                                  "effective":  5
+                                              },
+                                 "intimidation":  {
+                                                      "base":  3,
+                                                      "augmented":  1,
+                                                      "effective":  4
+                                                  },
+                                 "deception":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  6
+                                               },
+                                 "empathy":  {
+                                                 "base":  3,
+                                                 "augmented":  1,
+                                                 "effective":  5
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.81,
+                                      "caution":  0.55,
+                                      "loyalty":  0.72,
+                                      "greed":  0.27,
+                                      "empathy":  0.49
+                                  },
+                  "drives":  [
+                                 "survival",
+                                 "power",
+                                 "money"
+                             ],
+                  "thresholds":  {
+                                     "pain":  9,
+                                     "stress":  5,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "exceptional close-quarters combat",
+                                    "intimidating physical presence"
+                                ],
+                  "weaknesses":  [
+                                     "overconfidence in specialty areas leading to blind spots",
+                                     "substance dependency â€” functional but fragile",
+                                     "emotional volatility under extreme stress"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "surveillance specialist",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+                                              "Claims not to care about reputation but monitors what people say about them obsessively"
+                                          ],
+                       "habits":  [
+                                      "Eats the same meal before every job â€” superstition masquerading as preference",
+                                      "Practices a kata or fighting form every morning regardless of circumstances",
+                                      "Carries a specific caliber round as a lucky charm â€” has never fired it",
+                                      "Arrives fifteen minutes early to everything â€” late once, nearly died, never again"
+                                  ],
+                       "breaking_points":  [
+                                               "Losing their primary augmentation â€” the one that defines their professional identity",
+                                               "Watching someone they trained or mentored die on a job they recommended"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Internal drug synthesizer",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Internal drug synthesizer â€” produces combat stims and medical compounds on demand",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Internal air filtration system",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Internal air filtration system â€” lungs replaced with synthetic equivalents, immune to gas attacks",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Brawler":  0.7,
+                       "Berserker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Vespid Dynamics Tracker Round System TRS-4 \u0027Breadcrumb\u0027",
+                            "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Vespid Dynamics Tracker Round System TRS-4 \u0027Breadcrumb\u0027",
+                                "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027"
+                            ],
+    "related_entities":  [
+                             "The Narrows Compact",
+                             "The Nearfield",
+                             "The Heritage Vault",
+                             "Diaspora Table",
+                             "Stratum"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Southeast Asian (26.1%), Sub-Saharan African (24.1%), East Asian (23.4%), South Asian (9.8%), Middle Eastern (8.4%), and Eastern European (8.2%) ancestryâ€”a genuinely global genetic diaspora creating a complex phenotype where multiple continental features synthesize into something distinctly 2220s. The combination produces facial structure that refuses easy categorization: Southeast Asian cheekbone prominence blended with Sub-Saharan African lip fullness and nose structure, East Asian eye shape subtleties, South Asian skin depth and warmth, Middle Eastern jawline refinement, and Eastern European undertones in overall bone structure. Phenotype is visibly multicontinental, carrying its diverse heritage without settling into any single categorical appearance.",
+                                 "height_cm":  172,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and economicalâ€”muscle distributed for endurance rather than bulk. Movements suggest compressed efficiency, as if they\u0027ve learned to occupy minimal space despite their psychological presence.",
+                                 "hair_color":  "Dark brown with deliberate silver threading at the temples",
+                                 "hair_style":  "Asymmetrical undercut; longer on one side (covers scarring), shorter on the other for visibility and counterbalance",
+                                 "hair_length":  "Medium (varied)",
+                                 "eye_color":  "Dark brown with faint amber undertonesâ€”natural, unreplaced",
+                                 "skin_tone":  "Rich deep warm brown with golden and olive undertonesâ€”the result of six-way ancestral blending creating luminous depth. Skin reads as simultaneously warm and cool depending on light angle, with undertones synthesizing Sub-Saharan, Southeast Asian, South Asian, and Eastern European heritage into a complex, glowing tone that shifts with ambient lighting.",
+                                 "complexion":  "High prominent cheekbones with subtle width characteristic of Southeast and East Asian ancestry; strong refined jawline with Middle Eastern angularity and Sub-Saharan definition; nose structure reflecting Sub-Saharan and South Asian heritage with an East Asian-influenced bridge and refined tip. Lip fullness suggesting Sub-Saharan ancestry. Facial structure displays visible multicontinental blendingâ€”high cheekbones, broad nose bridge, refined jaw, full lips, and subtle eye shape create a phenotype that clearly carries global ancestry. Skin maintained with clinical precisionâ€”minimal scarring except where deliberately hidden. Expression defaults to neutral observation. Eyes move constantly; they are always recording.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar running from left temple to jawline, partially obscured by longer hair on that side, suggesting facial reconstruction or trauma removal",
+                                                              "Thin pale line across the right wristâ€”self-inflicted or combat-related, deliberately left unhealed",
+                                                              "Faint tattooed circuit pattern along the inside of left forearmâ€”custom work, non-standard design, possibly ritual or identification marker"
+                                                          ],
+                                 "visible_augmentations":  "Chrome synthesizer port at the base of the neckâ€”roughly the size of a thumb, visible when head is tilted or hair is swept back. The port has a matte gunmetal finish with subtle wear marks. No visible respiratory augmentation; lungs are replaced internally and undetectable. The overall aesthetic suggests someone who doesn\u0027t bother hiding what they are.",
+                                 "posture_movement":  "Still when stationaryâ€”genuinely still, not the tense stillness of anxiety but the economical stillness of predatory focus. Moves with controlled precision, weight always centered and ready. Hands at rest are never fully relaxed; fingers maintain micro-movements suggesting constant sensory processing. Eyes scan spaces methodically before settling. Speech patterns shift between clipped efficiency and unexpected verbosity, depending on context.",
+                                 "clothing_style":  "Tier 3-4 practical wear with personal modifications. Matte black layered jacket (Kessler brand knockoff, reinforced at stress points) over grey utility vest with asymmetrical pockets and cable anchors. Dark fitted pants with cargo modifications and reinforced knee panels. Worn tactical boots with custom grip sole. Thermal-responsive base layers visible at collar and wrists. No logos or corporate affiliation visible. Jewelry minimalâ€”only a worn brass ring on right index finger, possibly a ritual object or timer. Functional, forgettable, designed not to register as either wealthy or desperate."
+                             },
+    "image_prompt":  "GLMZ portrait of Amara Boateng-Shin, a 172cm lean-built figure with rich deep warm brown skin displaying complex golden and olive undertones from multicontinental ancestry. High prominent Southeast Asian cheekbones blend with Sub-Saharan African nose structure and lip fullness; Middle Eastern jawline refinement; East Asian eye shape. Dark brown eyes with amber undertones, constantly scanning. Dark brown hair with silver threading at temples, asymmetrical undercut with longer left side obscuring surgical scar running temple to jaw. Right wrist shows thin pale self-inflicted line. Left forearm bears faint tattooed circuit pattern. Chrome synthesizer port visible at neck base with matte gunmetal finish. Wearing matte black reinforced Kessler-knockoff jacket over grey asymmetrical utility vest; dark fitted cargo pants; worn tactical boots; thermal-responsive base layers. Worn brass ring on right index finger. Posture: still, predatory, economical. Neutral expression, eyes recording. Industrial GLMZ setting, cool neon side-lighting emphasizing skin\u0027s luminous depth and complex undertones, subtle geometric shadows. Mood: focused, inhuman precision, dangerous calm. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  26.1,
+                             "Sub-Saharan African":  24.1,
+                             "East Asian":  23.4,
+                             "South Asian":  9.8,
+                             "Middle Eastern":  8.4,
+                             "Eastern European":  8.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  26.1
+                                                             }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Sierra Leonean":  24.1
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  13.3
+                                                          },
+                                               "Chinese":  {
+                                                               "Cantonese":  10.1
+                                                           }
+                                           },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  5.2
+                                                           },
+                                                "Indian":  {
+                                                               "Marathi":  4.6
+                                                           }
+                                            },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  2.3
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  1.2,
+                                                                          "Lebanese":  1
+                                                                      },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  3.9
+                                                               }
+                                               },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Russian":  3.4,
+                                                                         "Belarusian":  1.6
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  0.4,
+                                                                             "Romanian":  0.2
+                                                                         },
+                                                     "Slavic South":  {
+                                                                          "Bosnian":  1.8,
+                                                                          "Slovenian":  0.8
+                                                                      }
+                                                 }
+                        },
+    "tier":  "3"
 }

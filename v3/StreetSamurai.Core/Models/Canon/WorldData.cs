@@ -27,7 +27,30 @@ public class LiteraryRulesData
     [JsonPropertyName("paragraph_requirements")] public List<string> ParagraphRequirements { get; set; } = [];
     [JsonPropertyName("prohibitions")] public List<string> Prohibitions { get; set; } = [];
     [JsonPropertyName("structural")] public StructuralRulesData Structural { get; set; } = new();
-    [JsonPropertyName("facet_rules")] public FacetRulesData FacetRules { get; set; } = new();
+    [JsonPropertyName("pov_voice_rules")] public PovVoiceRules PovVoice { get; set; } = new();
+    [JsonPropertyName("paragraph_economy")] public ParagraphEconomyRules ParagraphEconomy { get; set; } = new();
+    [JsonPropertyName("register_permissions")] public RegisterPermissions RegisterPermissions { get; set; } = new();
+}
+
+public class PovVoiceRules
+{
+    [JsonPropertyName("principle")] public string Principle { get; set; } = "";
+    [JsonPropertyName("differentiation")] public List<string> Differentiation { get; set; } = [];
+    [JsonPropertyName("anti_cadence_check")] public string AntiCadenceCheck { get; set; } = "";
+    [JsonPropertyName("shared_world_anchors")] public string SharedWorldAnchors { get; set; } = "";
+}
+
+public class ParagraphEconomyRules
+{
+    [JsonPropertyName("principle")] public string Principle { get; set; } = "";
+    [JsonPropertyName("tests")] public List<string> Tests { get; set; } = [];
+}
+
+public class RegisterPermissions
+{
+    [JsonPropertyName("principle")] public string Principle { get; set; } = "";
+    [JsonPropertyName("allowed_modes")] public List<string> AllowedModes { get; set; } = [];
+    [JsonPropertyName("register_traps_to_still_avoid")] public List<string> Traps { get; set; } = [];
 }
 
 public class StructuralRulesData
@@ -40,13 +63,6 @@ public class StructuralRulesData
     [JsonPropertyName("pace")] public string Pace { get; set; } = "";
 }
 
-public class FacetRulesData
-{
-    [JsonPropertyName("interjections")] public string Interjections { get; set; } = "";
-    [JsonPropertyName("disagreement")] public string Disagreement { get; set; } = "";
-    [JsonPropertyName("lead_voice")] public string LeadVoice { get; set; } = "";
-    [JsonPropertyName("rotation")] public string Rotation { get; set; } = "";
-}
 
 public class MotifData : IWorldRecord
 {

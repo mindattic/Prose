@@ -1,331 +1,362 @@
-{
-  "id": "019d6143a70a7629b2b3a77fd01dbee2",
-  "type": "character",
-  "name": "Chang-min Montalvo",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Loan shark and neighborhood bookmaker",
-  "age": 54,
-  "status": "active",
-  "location": "the Gray Zone lower levels, operates from a tea shop called Ndovu & Sons in Ironvein, near Halsted and Chicago Ave",
-  "description": "Chang-min Montalvo is a lean, bespectacled man of fifty-four who looks like someone's favorite uncle and has ruined more lives than he can accurately count. He is medium height with warm brown skin, a close-trimmed white beard, and the kind of eyes that seem genuinely interested in whatever you're saying. He favors clean but worn shirts in earth tones and keeps a small potted succulent on the counter of his tea shop, which he waters with ritual attention every morning. He has no visible augmentations and makes a mild point of this — old-fashioned, he says, I trust my own hands. His geneware is limited to a patterned iris modification he got when he was young, concentric rings of amber and brown that make people feel they're being watched even when he's looking elsewhere.\n\nHe has operated in Ironvein for twenty-six years. He knows exactly which families are behind on their Ferrogate bills, who has a gambling habit they're hiding from their partner, which teenagers are moving small product for which crews. He does not advertise his lending services — they advertise themselves, because when you need Φ300 before the end of the week and the Tier 2 credit system has already declined you twice, someone will tell you about Tel. His rates are usurious and his enforcement is never personal — he outsources that to a pair of young men who are efficient if not imaginative. He himself never raises his voice.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.3,
-      "id": 0.5,
-      "shadow": 0.5,
-      "mask": 0.9,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "the Gray Zone Syndicate deciding he's more valuable as an example than as a tributary",
-      "someone finding the physical ledger"
-    ],
-    "core_desires": [
-      "stability and the appearance of respectability",
-      "to be genuinely loved in the neighborhood, not just tolerated"
-    ],
-    "coping_mechanisms": [
-      "performing warmth so consistently that he sometimes forgets it's a performance",
-      "the tea shop routine as a grounding ritual"
-    ],
-    "blind_spots": [
-      "believes the community genuinely likes him and is not merely afraid of him; cannot distinguish between the two anymore"
-    ],
-    "secret": "He has been quietly forgiving the debts of three widows in the neighborhood for years, anonymously marking their ledger lines as 'settled by arrangement' — he tells himself it's good community relations but it is in fact straightforward guilt, and the amounts involved have begun to attract the Syndicate's attention."
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm, unhurried, full of proverbs. Uses 'my friend' constantly. Talks about money the way other people talk about weather.",
-    "cadence": "Slow and comfortable, with long sighing pauses. Never sounds threatening even when threatening.",
-    "verbal_tics": [
-      "'my friend'",
-      "'these things have a way of working themselves out'",
-      "asks after family members by name"
-    ],
-    "example_lines": [
-      "'My friend, I am not a bank. Banks have rules designed by committees. I have an understanding between two people, and understandings are much more flexible. Sit, have tea, let's talk.'",
-      "'Your brother — Ekele, yes? He was in last week. He seems well. These things run in families, I find, this habit of needing a little breathing room at the end of the month.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A borrower who died before repaying had information about a larger criminal operation — Télesphore holds the debt marker and believes it can be transferred to whatever the deceased knew",
-    "the Gray Zone Syndicate has sent an auditor to review his books, and the forgiven debts will appear as losses — he needs a discreet solution within seventy-two hours"
-  ],
-  "narrative_function": "Quest giver when debts intersect with larger plots; pressure source when player-adjacent characters owe him money; information broker who knows everyone's financial secrets; represents the mundane cruelty of economic desperation",
-  "augmentations": "Patterned iris geneware (amber/brown concentric rings); an old subdermal transaction ledger implant in his right forearm, tech so dated it's nearly decorative",
-  "daily_life": "Opens the tea shop at 0700, serves genuine customers until mid-morning, then conducts lending and collection business in the back room through the afternoon, closes by 1900, spends evenings updating his books by hand in a physical ledger encrypted with a cipher only he knows.",
-  "affiliation": "Independent operator with tribute arrangements to the Ironvein the Gray Zone Syndicate",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 4
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 2
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 1,
-      "transparency_guardedness": -5
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "neighborhood fixture",
-      "information sponge",
-      "performer",
-      "predator in uncle's clothing",
-      "ritualist"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "never lend to someone who has no collateral of any kind — even social capital counts",
-      "never let enforcement get personal or visible — messiness is bad for the brand"
-    ],
-    "escalation_ladder": [
-      "gentle reminder in conversation, always phrased as concern",
-      "a visit from the young men, described as 'checking in'",
-      "public social pressure — mentioning the debt in community contexts",
-      "asset seizure through intermediaries",
-      "as a last resort, sells the debt to the Syndicate and washes his hands"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm and genuinely curious — he is always gathering information, but the warmth is real enough to be functional",
-      "friends": "Attentive, generous with small gifts, remembers every detail — it reads as friendship but serves as intelligence-gathering"
-    },
-    "stress_responses": {
-      "low": "Makes more tea, becomes even more deliberately calm",
-      "medium": "Starts pulling at his beard and asking questions he already knows the answers to",
-      "high": "Goes completely still and quiet — the mask drops and what's underneath is a very cold actuarial mind running numbers"
-    },
-    "contradictions": [
-      "Genuinely cares about community stability while being one of its primary economic predators"
-    ],
-    "habits": [
-      "waters the succulent before any difficult conversation",
-      "writes every transaction in the physical ledger in a different color ink depending on the risk level",
-      "prays to the tea shop's resident E.L.F. before opening each morning"
-    ],
-    "breaking_points": [
-      "A direct threat to the physical ledger — he will do anything to keep it out of outside hands"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal transaction ledger implant (right forearm, obsolete)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal transaction ledger implant (right forearm, obsolete)",
-      "replaces": ""
-    },
-    {
-      "name": "Patterned iris geneware",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Patterned iris geneware",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.9,
-    "Info Broker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2146 — Born in Ironvein to a the Gray Zone family with three generations of residency",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2164 — Began running numbers for the Ironvein the Gray Zone Syndicate as a teenager",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2172 — Opened Ndovu & Sons tea shop as a front; began independent lending",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2180 — Negotiated tributary arrangement with the Syndicate — independence in exchange for a percentage",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2195 — Began quietly forgiving the debts of neighborhood widows",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2199 — Syndicate financial review announced; currently managing exposure",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
-    "Ferrogate Transit",
-    "Ironvein",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Chicago",
-    "Flux Strömqvist-Villalobos",
-    "The Pure Hand"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex Eurasian blend dominated by Central Asian (28.7%) and Middle Eastern (25.0%) ancestry, with substantial Eastern European (16.1%), Hispanic/Latin American (15.4%), and Northern European (14.8%) admixture. This creates a distinctly multicontinental phenotype: warm olive skin with golden undertones from the Central Asian-Middle Eastern core, tempered by cooler Northern European influence. Facial structure reflects the steppe-Mediterranean convergence—prominent Central Asian cheekbones, refined Eastern European jawline definition, and the subtle facial warmth characteristic of Hispanic/Latin American heritage. His features suggest a man whose ancestry traces across the old Silk Road and beyond, manifesting in balanced, harmonious proportions that read as neither distinctly 'from' any single region nor obviously mixed, but rather as a naturally occurring Ubiquitous Diaspora phenotype.",
-    "height_cm": 173,
-    "weight_kg": 68,
-    "build": "Lean and economical, no excess — the body of someone who has never needed to prove his strength. Wiry rather than muscular, with the posture of a man comfortable in stillness.",
-    "hair_color": "White with faint traces of salt-and-pepper gray at the temples",
-    "hair_style": "Neatly parted, close to the scalp, combed back with precision",
-    "hair_length": "Short",
-    "eye_color": "Modified — concentric rings of amber and brown (geneware iris modification), with darker brown natural iris at the center. The rings create an optical illusion of being constantly observed.",
-    "skin_tone": "Warm olive-gold with subtle honeyed undertones, sun-weathered and even in coloration, showing the patina of age and consistent climate exposure",
-    "complexion": "Clean-shaven except for a close-trimmed white beard, about 5mm length, carefully maintained. Fine lines around the eyes and mouth reflecting decades of patient observation. Skin clear, well-hydrated, without blemish or visible scarring. Expression naturally inclined toward interest and mild amusement.",
-    "distinguishing_marks": [
-      "Small, faded scar above the left eyebrow, approximately 2cm, possibly decades old and nearly invisible",
-      "A thin, pale line running along the right inner forearm where the subdermal transaction ledger implant sits beneath the skin — visible only as a slight discoloration, barely noticeable"
-    ],
-    "visible_augmentations": "The iris geneware is immediately visible in direct light; the concentric ring pattern of amber and brown is unmistakable and deliberate. The subdermal ledger implant is not visible unless he rolls up his right sleeve, and he rarely does. He wears it as a small badge of old-fashioned authenticity.",
-    "posture_movement": "Sits still for long periods without fidgeting. Moves with economy — no excess motion, no nervous habits. His hands are always visible and usually at rest on the counter or in his lap. When he walks, his stride is measured and unhurried. He listens more than he speaks, and his body language communicates patient attention rather than impatience.",
-    "clothing_style": "Clean, worn shirts in earth tones — ochre, rust, pale brown, sometimes cream. The fabric shows age but is meticulously maintained: no stains, no tears, pressed and orderly. Occasionally a linen vest in a neutral color. Dark trousers, probably black or dark gray, simple cut. No logos, no corporate branding, no tier-markers. His clothes suggest deliberate de-escalation: nothing that announces wealth, status, or threat. Worn leather sandals or simple canvas shoes. A small wristwatch with a mechanical face — analogue, no smart features. One thin gold ring on his left hand, marriage band or purely sentimental. In Tier 5 terms, he dresses like someone who has chosen simplicity, not someone who cannot afford better."
-  },
-  "image_prompt": "Chang-min Montalvo, a weathered man of 173cm lean build, mid-to-late age with white hair neatly parted and combed back. Warm olive-gold skin with honeyed undertones, meticulously clean-shaven except for close-trimmed white 5mm beard. Most striking feature: modified iris geneware showing concentric rings of amber and brown with darker brown natural iris at center, creating an unsettling optical illusion of constant observation. Fine lines around eyes and mouth speak to decades of patient attention. Dressed in austere earth tones—faded ochre linen shirt, dark gray trousers, worn leather sandals. Simple gold wedding band on left hand, vintage mechanical wristwatch. Body language communicates stillness and careful listening. Sitting at a worn counter in a Tier 5 establishment, soft amber neon lighting catching the concentric rings of his modified eyes, GLMZ aesthetic, muted earth-tone color palette, patient and observant expression, subtle subdermal ledger implant scar barely visible on inner right forearm --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Central Asian": 28.7,
-    "Middle Eastern": 25,
-    "Eastern European": 16.1,
-    "Hispanic/Latin American": 15.4,
-    "Northern European": 14.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Central Asian": {
-      "Turkic": {
-        "Kyrgyz": 2.5
-      },
-      "Mongolic": {
-        "Mongolian": 26.2
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 10.7,
-        "Tajik Persian": 5.1
-      },
-      "Kurdish": {
-        "Kurdish": 9.2
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Belarusian": 11.7
-      },
-      "Slavic West": {
-        "Sorbian": 4.4
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 3.3,
-        "Ecuadorian": 12.1
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Finnish": 6.7,
-        "Swedish": 2.9
-      },
-      "British Isles": {
-        "English": 1.3,
-        "Welsh": 0.2
-      },
-      "Germanic": {
-        "Austrian": 2.6,
-        "German": 1.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a70a7629b2b3a77fd01dbee2",
+    "type":  "character",
+    "name":  "Chang-min Montalvo",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Loan shark and neighborhood bookmaker",
+    "age":  54,
+    "status":  "active",
+    "location":  "the Gray Zone lower levels, operates from a tea shop called Ndovu \u0026 Sons in Ironvein, near Halsted and Chicago Ave",
+    "description":  "Chang-min Montalvo is a lean, bespectacled man of fifty-four who looks like someone\u0027s favorite uncle and has ruined more lives than he can accurately count. He is medium height with warm brown skin, a close-trimmed white beard, and the kind of eyes that seem genuinely interested in whatever you\u0027re saying. He favors clean but worn shirts in earth tones and keeps a small potted succulent on the counter of his tea shop, which he waters with ritual attention every morning. He has no visible augmentations and makes a mild point of this â€” old-fashioned, he says, I trust my own hands. His geneware is limited to a patterned iris modification he got when he was young, concentric rings of amber and brown that make people feel they\u0027re being watched even when he\u0027s looking elsewhere.\n\nHe has operated in Ironvein for twenty-six years. He knows exactly which families are behind on their Ferrogate bills, who has a gambling habit they\u0027re hiding from their partner, which teenagers are moving small product for which crews. He does not advertise his lending services â€” they advertise themselves, because when you need Î¦300 before the end of the week and the Tier 2 credit system has already declined you twice, someone will tell you about Tel. His rates are usurious and his enforcement is never personal â€” he outsources that to a pair of young men who are efficient if not imaginative. He himself never raises his voice.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "the Gray Zone Syndicate deciding he\u0027s more valuable as an example than as a tributary",
+                                          "someone finding the physical ledger"
+                                      ],
+                       "core_desires":  [
+                                            "stability and the appearance of respectability",
+                                            "to be genuinely loved in the neighborhood, not just tolerated"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "performing warmth so consistently that he sometimes forgets it\u0027s a performance",
+                                                 "the tea shop routine as a grounding ritual"
+                                             ],
+                       "blind_spots":  [
+                                           "believes the community genuinely likes him and is not merely afraid of him; cannot distinguish between the two anymore"
+                                       ],
+                       "secret":  "He has been quietly forgiving the debts of three widows in the neighborhood for years, anonymously marking their ledger lines as \u0027settled by arrangement\u0027 â€” he tells himself it\u0027s good community relations but it is in fact straightforward guilt, and the amounts involved have begun to attract the Syndicate\u0027s attention."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm, unhurried, full of proverbs. Uses \u0027my friend\u0027 constantly. Talks about money the way other people talk about weather.",
+                            "cadence":  "Slow and comfortable, with long sighing pauses. Never sounds threatening even when threatening.",
+                            "verbal_tics":  [
+                                                "\u0027my friend\u0027",
+                                                "\u0027these things have a way of working themselves out\u0027",
+                                                "asks after family members by name"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027My friend, I am not a bank. Banks have rules designed by committees. I have an understanding between two people, and understandings are much more flexible. Sit, have tea, let\u0027s talk.\u0027",
+                                                  "\u0027Your brother â€” Ekele, yes? He was in last week. He seems well. These things run in families, I find, this habit of needing a little breathing room at the end of the month.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A borrower who died before repaying had information about a larger criminal operation â€” TÃ©lesphore holds the debt marker and believes it can be transferred to whatever the deceased knew",
+                        "the Gray Zone Syndicate has sent an auditor to review his books, and the forgiven debts will appear as losses â€” he needs a discreet solution within seventy-two hours"
+                    ],
+    "narrative_function":  "Quest giver when debts intersect with larger plots; pressure source when player-adjacent characters owe him money; information broker who knows everyone\u0027s financial secrets; represents the mundane cruelty of economic desperation",
+    "augmentations":  "Patterned iris geneware (amber/brown concentric rings); an old subdermal transaction ledger implant in his right forearm, tech so dated it\u0027s nearly decorative",
+    "daily_life":  "Opens the tea shop at 0700, serves genuine customers until mid-morning, then conducts lending and collection business in the back room through the afternoon, closes by 1900, spends evenings updating his books by hand in a physical ledger encrypted with a cipher only he knows.",
+    "affiliation":  "Independent operator with tribute arrangements to the Ironvein the Gray Zone Syndicate",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  4
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  2
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -5
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "neighborhood fixture",
+                               "information sponge",
+                               "performer",
+                               "predator in uncle\u0027s clothing",
+                               "ritualist"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "never lend to someone who has no collateral of any kind â€” even social capital counts",
+                                              "never let enforcement get personal or visible â€” messiness is bad for the brand"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "gentle reminder in conversation, always phrased as concern",
+                                                 "a visit from the young men, described as \u0027checking in\u0027",
+                                                 "public social pressure â€” mentioning the debt in community contexts",
+                                                 "asset seizure through intermediaries",
+                                                 "as a last resort, sells the debt to the Syndicate and washes his hands"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm and genuinely curious â€” he is always gathering information, but the warmth is real enough to be functional",
+                                                   "friends":  "Attentive, generous with small gifts, remembers every detail â€” it reads as friendship but serves as intelligence-gathering"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Makes more tea, becomes even more deliberately calm",
+                                                "medium":  "Starts pulling at his beard and asking questions he already knows the answers to",
+                                                "high":  "Goes completely still and quiet â€” the mask drops and what\u0027s underneath is a very cold actuarial mind running numbers"
+                                            },
+                       "contradictions":  [
+                                              "Genuinely cares about community stability while being one of its primary economic predators"
+                                          ],
+                       "habits":  [
+                                      "waters the succulent before any difficult conversation",
+                                      "writes every transaction in the physical ledger in a different color ink depending on the risk level",
+                                      "prays to the tea shop\u0027s resident E.L.F. before opening each morning"
+                                  ],
+                       "breaking_points":  [
+                                               "A direct threat to the physical ledger â€” he will do anything to keep it out of outside hands"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal transaction ledger implant (right forearm, obsolete)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal transaction ledger implant (right forearm, obsolete)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Patterned iris geneware",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Patterned iris geneware",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.9,
+                       "Info Broker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2146 â€” Born in Ironvein to a the Gray Zone family with three generations of residency",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2164 â€” Began running numbers for the Ironvein the Gray Zone Syndicate as a teenager",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2172 â€” Opened Ndovu \u0026 Sons tea shop as a front; began independent lending",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2180 â€” Negotiated tributary arrangement with the Syndicate â€” independence in exchange for a percentage",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2195 â€” Began quietly forgiving the debts of neighborhood widows",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2199 â€” Syndicate financial review announced; currently managing exposure",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027",
+                            "Street Custom \u0027Mockingbird\u0027 Voice-Activated Trap Gun"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+                             "Ferrogate Transit",
+                             "Ironvein",
+                             "Carrion Defense Works Entropic Shotgun ES-4 \u0027Ragnarok\u0027",
+                             "Chicago",
+                             "Flux StrÃ¶mqvist-Villalobos",
+                             "The Pure Hand"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex Eurasian blend dominated by Central Asian (28.7%) and Middle Eastern (25.0%) ancestry, with substantial Eastern European (16.1%), Hispanic/Latin American (15.4%), and Northern European (14.8%) admixture. This creates a distinctly multicontinental phenotype: warm olive skin with golden undertones from the Central Asian-Middle Eastern core, tempered by cooler Northern European influence. Facial structure reflects the steppe-Mediterranean convergenceâ€”prominent Central Asian cheekbones, refined Eastern European jawline definition, and the subtle facial warmth characteristic of Hispanic/Latin American heritage. His features suggest a man whose ancestry traces across the old Silk Road and beyond, manifesting in balanced, harmonious proportions that read as neither distinctly \u0027from\u0027 any single region nor obviously mixed, but rather as a naturally occurring Ubiquitous Diaspora phenotype.",
+                                 "height_cm":  173,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and economical, no excess â€” the body of someone who has never needed to prove his strength. Wiry rather than muscular, with the posture of a man comfortable in stillness.",
+                                 "hair_color":  "White with faint traces of salt-and-pepper gray at the temples",
+                                 "hair_style":  "Neatly parted, close to the scalp, combed back with precision",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Modified â€” concentric rings of amber and brown (geneware iris modification), with darker brown natural iris at the center. The rings create an optical illusion of being constantly observed.",
+                                 "skin_tone":  "Warm olive-gold with subtle honeyed undertones, sun-weathered and even in coloration, showing the patina of age and consistent climate exposure",
+                                 "complexion":  "Clean-shaven except for a close-trimmed white beard, about 5mm length, carefully maintained. Fine lines around the eyes and mouth reflecting decades of patient observation. Skin clear, well-hydrated, without blemish or visible scarring. Expression naturally inclined toward interest and mild amusement.",
+                                 "distinguishing_marks":  [
+                                                              "Small, faded scar above the left eyebrow, approximately 2cm, possibly decades old and nearly invisible",
+                                                              "A thin, pale line running along the right inner forearm where the subdermal transaction ledger implant sits beneath the skin â€” visible only as a slight discoloration, barely noticeable"
+                                                          ],
+                                 "visible_augmentations":  "The iris geneware is immediately visible in direct light; the concentric ring pattern of amber and brown is unmistakable and deliberate. The subdermal ledger implant is not visible unless he rolls up his right sleeve, and he rarely does. He wears it as a small badge of old-fashioned authenticity.",
+                                 "posture_movement":  "Sits still for long periods without fidgeting. Moves with economy â€” no excess motion, no nervous habits. His hands are always visible and usually at rest on the counter or in his lap. When he walks, his stride is measured and unhurried. He listens more than he speaks, and his body language communicates patient attention rather than impatience.",
+                                 "clothing_style":  "Clean, worn shirts in earth tones â€” ochre, rust, pale brown, sometimes cream. The fabric shows age but is meticulously maintained: no stains, no tears, pressed and orderly. Occasionally a linen vest in a neutral color. Dark trousers, probably black or dark gray, simple cut. No logos, no corporate branding, no tier-markers. His clothes suggest deliberate de-escalation: nothing that announces wealth, status, or threat. Worn leather sandals or simple canvas shoes. A small wristwatch with a mechanical face â€” analogue, no smart features. One thin gold ring on his left hand, marriage band or purely sentimental. In Tier 5 terms, he dresses like someone who has chosen simplicity, not someone who cannot afford better."
+                             },
+    "image_prompt":  "Chang-min Montalvo, a weathered man of 173cm lean build, mid-to-late age with white hair neatly parted and combed back. Warm olive-gold skin with honeyed undertones, meticulously clean-shaven except for close-trimmed white 5mm beard. Most striking feature: modified iris geneware showing concentric rings of amber and brown with darker brown natural iris at center, creating an unsettling optical illusion of constant observation. Fine lines around eyes and mouth speak to decades of patient attention. Dressed in austere earth tonesâ€”faded ochre linen shirt, dark gray trousers, worn leather sandals. Simple gold wedding band on left hand, vintage mechanical wristwatch. Body language communicates stillness and careful listening. Sitting at a worn counter in a Tier 5 establishment, soft amber neon lighting catching the concentric rings of his modified eyes, GLMZ aesthetic, muted earth-tone color palette, patient and observant expression, subtle subdermal ledger implant scar barely visible on inner right forearm --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Central Asian":  28.7,
+                             "Middle Eastern":  25,
+                             "Eastern European":  16.1,
+                             "Hispanic/Latin American":  15.4,
+                             "Northern European":  14.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Central Asian":  {
+                                                  "Turkic":  {
+                                                                 "Kyrgyz":  2.5
+                                                             },
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  26.2
+                                                               }
+                                              },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  10.7,
+                                                                   "Tajik Persian":  5.1
+                                                               },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  9.2
+                                                               }
+                                               },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  11.7
+                                                                     },
+                                                     "Slavic West":  {
+                                                                         "Sorbian":  4.4
+                                                                     }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  3.3,
+                                                                                   "Ecuadorian":  12.1
+                                                                               }
+                                                        },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Finnish":  6.7,
+                                                                           "Swedish":  2.9
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "English":  1.3,
+                                                                            "Welsh":  0.2
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "Austrian":  2.6,
+                                                                       "German":  1.1
+                                                                   }
+                                                  }
+                        },
+    "tier":  "1"
 }

@@ -1,252 +1,273 @@
-{
-  "id": "019d6143a65777a399fa80d3f455c8ef",
-  "type": "character",
-  "name": "Boris Salazar",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Orphan, gang prospect (junior affiliate); Stockyard territory, does odd jobs for the Copperheads",
-  "age": 9,
-  "status": "active",
-  "location": "The Stockyard, near Western and Chicago Ave",
-  "description": "Boris Salazar is a small, round-faced nine-year-old with his South African grandfather's dark complexion and his Russian grandmother's light gray eyes, a combination that makes people look at him twice in a way he has not yet decided whether to be proud of. He has been at the Stockyard's communal housing block since he was six, when his mother didn't come back from a job and no one came to explain why. He has the characteristic roughness of a Stockyard kid — scuffed knees, hair grown out past caring, a jacket two sizes too large that he found and claimed as territory. He has no augmentations of any kind. The Copperheads, a junior street crew that operates in the Stockyard's eastern blocks, have noticed him the way they notice all the unattached kids — as resource or recruitment opportunity. So far he has run two lookout shifts for them, for which he was paid in food rather than Quanta, which tells you something about both the crew's resources and his bargaining position.\n\nHe is, underneath the hard-knock exterior, a nine-year-old who still sleeps with his knees pulled to his chest and who has attached himself to a specific E.L.F. he calls Glow that he believes lives in the light-strip above his communal bunk. He leaves it small paper offerings — drawings, mostly — folded under the fixture every night. He is fiercely protective of two things: a palm-sized carved wooden animal his mother left in the housing block storage, and a seven-year-old girl named Polu in the adjacent bunk who cannot defend herself the way he has learned to.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.9,
-      "ideal": 0.4,
-      "id": 0.6,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "Polu getting hurt because of something he failed to do",
-      "the Copperheads making him do something that can't be undone"
-    ],
-    "core_desires": [
-      "for his mother to have a reason she didn't come back",
-      "a door that locks from the inside"
-    ],
-    "coping_mechanisms": [
-      "rituals around the Glow E.L.F. — nightly paper offerings, morning check that the strip is still on",
-      "protecting Polu as a displacement of all unprocessable grief"
-    ],
-    "blind_spots": [
-      "believes the Copperheads are separate from the forces that took his mother — does not see the structural continuity",
-      "thinks he can keep Polu safe through vigilance alone"
-    ],
-    "secret": "He overheard a Copperheads conversation three weeks ago that included a description of a job gone wrong in the Stockyard's sixth sector — the job his mother was last known to be near. He doesn't have enough context to understand it. He has been trying to get more context ever since, slowly, without anyone noticing."
-  },
-  "speech_patterns": {
-    "vocabulary": "Short sentences. Stockyard patois, slightly blurred from communal housing mix of backgrounds. Asks practical questions rather than emotional ones.",
-    "cadence": "Quiet and direct. Speaks louder when he's pretending not to be scared.",
-    "verbal_tics": [
-      "'Yeah' as agreement but also as filler when he's processing",
-      "gets very still and precise when actually frightened"
-    ],
-    "example_lines": [
-      "'Glow was on this morning. That's good.'",
-      "'Polu stays here. She's not part of whatever this is.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The Copperheads are moving toward asking him to do something that crosses a line — and he's been too hungry, too often, to have good options for refusing.",
-    "The fragment of conversation he overheard about the job near sector six could be the beginning of understanding what happened to his mother — but finding out more means going somewhere in the Stockyard he can't bring Polu."
-  ],
-  "narrative_function": "Emotional stakes and moral weight; his situation forces players to reckon with structural failure; can serve as an object of protection or a small information source about Stockyard street patterns; his trajectory is genuinely in play.",
-  "augmentations": "None.",
-  "daily_life": "Eats communal breakfast if there is one, spends the day ranging the Stockyard's blocks doing whatever earns food or Φ — carrying, watching, fetching. Is back at the housing block before dark because that is the rule he has made for himself.",
-  "affiliation": "Stockyard communal housing (ward of informal community); junior Copperheads affiliate (reluctant)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 4,
-      "empathy": 8,
-      "expression": 3,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 0,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 1,
-      "assertion_deference": -1,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "orphan",
-      "gang-prospect",
-      "caretaker",
-      "e.l.f.-devotee",
-      "stockyard-survivor",
-      "searching"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Polu doesn't get involved in anything",
-      "don't take jobs that happen after dark",
-      "always know where the exit is"
-    ],
-    "escalation_ladder": [
-      "stay quiet and small",
-      "put himself physically between the problem and Polu",
-      "run, accepting whatever cost that has with the Copperheads later"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Wary and still; watches hands; doesn't speak first unless asked",
-      "friends": "Quietly devoted; expresses care through vigilance and small practical actions; will share food"
-    },
-    "stress_responses": {
-      "low": "Goes to check on Polu",
-      "medium": "Performs an extended Glow ritual — re-folds old paper offerings, makes a new one",
-      "high": "Becomes very, very calm in a way that is actually dissociation"
-    },
-    "contradictions": [
-      "Pretends not to care about his mother's wooden animal; sleeps with it in his jacket pocket every night"
-    ],
-    "habits": [
-      "morning light-check on Glow's fixture before getting up",
-      "always positions himself between Polu's bunk and the door",
-      "folds paper offerings with more care than anything else he does"
-    ],
-    "breaking_points": [
-      "Polu being threatened directly",
-      "learning definitive information about his mother that he isn't ready for"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Diplomat": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Stockyard",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "related_entities": [
-    "The Stockyard",
-    "The CEO",
-    "Grandmother",
-    "Chicago",
-    "Arcturus KS-7 'Nursery'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Palm Leaf",
-    "Elena Vasquez-9",
-    "Nightlight"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Mixed heritage with dominant Hispanic/Latin American ancestry (52%), significant South Asian influence (21.5%), notable Sub-Saharan African ancestry (12.3%), Eastern European (10.3%), and Southeast Asian (3.9%). Features reflect this complex blend: warm golden-brown skin with rich depth, high prominent cheekbones with subtle Southeast Asian structure, rounded lower face with South Asian softness, and luminous warm undertones from Latin American heritage mixing with African depth and Eastern European complexity.",
-    "height_cm": 128,
-    "weight_kg": 26,
-    "build": "Small-framed and lean from inconsistent nutrition, with the gangly proportions of a nine-year-old entering growth phases unevenly. Compact and wiry rather than naturally delicate.",
-    "hair_color": "Dark brown, almost black",
-    "hair_style": "Grown out past maintenance, tousled and uneven; occasionally tied back with whatever cord or cloth is at hand",
-    "hair_length": "Medium",
-    "eye_color": "Light gray with dark brown iris ring — unusual combination that draws attention",
-    "skin_tone": "Warm golden-brown with rich depth: golden warmth from Hispanic/Latin American heritage, richness from Sub-Saharan African genetics, bronze undertones from South Asian ancestry, and subtle cooler undertones from Eastern European heritage creating a complex, luminous complexion with exceptional depth",
-    "complexion": "Angular face with high, sharp cheekbones and subtly rounded lower face reflecting the diverse ancestry blend; frequent scrapes and small scars on forehead and chin from street living; skin weathered beyond his years but retains childhood softness. Perpetually dirt-smudged, especially around the knuckles and neck. Distinctive facial structure shows the balanced influence of Latin American, South Asian, and African genetics with subtle Eastern European bone structure.",
-    "distinguishing_marks": [
-      "Thin white scar along his left temple, approximately 2cm, origin unclear — possibly from a fall or childhood accident",
-      "Scrape marks on both knees in various stages of healing, consistent with constant climbing and movement",
-      "Small burn mark on his right wrist from a communal cooking incident, faint but visible"
-    ],
-    "visible_augmentations": "None. No chrome, no optics, no subdermal plating. Completely unaugmented — notable in the GLMZ for a child of his circumstances.",
-    "posture_movement": "Moves with sharp, economical efficiency; hunches slightly as if accustomed to making himself smaller. Sits with knees pulled up even when standing still. Eyes are rarely still, constantly scanning his environment. Physical confidence that contradicts his size — moves like someone who has already learned to take hits.",
-    "clothing_style": "Wears a jacket two sizes too large, claimed salvage in faded charcoal synthetic blend with torn inner lining; the cuffs are rolled and re-rolled constantly. Beneath it, whatever layered shirt is cleanest that week. Pants are gray synthetic work-wear with grass stains and frayed cuffs; shoes are mismatched, one held together with wire. No Tier branding visible — all clothing is reclaimed or communal. Everything smells faintly of detergent and smoke from the Stockyard's generators."
-  },
-  "image_prompt": "GLMZ, portrait of Boris Salazar, a nine-year-old street kid with warm golden-brown skin reflecting mixed Hispanic/Latin American, South Asian, and Sub-Saharan African heritage. Lean, small-framed build, angular face with high sharp cheekbones and rounded lower face. Light gray eyes with dark brown iris rings, dark brown almost-black hair medium length and tousled. Visible scars and scrapes on forehead, chin, and knees from street living. Wearing oversized faded charcoal synthetic jacket with rolled cuffs over layered shirt, gray work-wear pants with grass stains, mismatched shoes held together with wire. Dirt-smudged skin, perpetually weathered expression. Hunched posture, constantly scanning eyes. Gritty Great Lakes Metropolitan Zone background with industrial Stockyard generators and warm amber-sodium lighting casting shadows. Unaugmented, completely chrome-free. Film grain and neo-noir color grading. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 52,
-    "South Asian": 21.5,
-    "Sub-Saharan African": 12.3,
-    "Eastern European": 10.3,
-    "Southeast Asian": 3.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 52
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 21.5
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zimbabwean": 2.9,
-        "South African": 3.9
-      },
-      "West African": {
-        "Nigerian": 3.3,
-        "Ghanaian": 2.2
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 2.5
-      },
-      "Slavic West": {
-        "Sorbian": 3.8
-      },
-      "Slavic South": {
-        "Slovenian": 2.3,
-        "Serbian": 1.7
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 3.9
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a65777a399fa80d3f455c8ef",
+    "type":  "character",
+    "name":  "Boris Salazar",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Orphan, gang prospect (junior affiliate); Stockyard territory, does odd jobs for the Copperheads",
+    "age":  9,
+    "status":  "active",
+    "location":  "The Stockyard, near Western and Chicago Ave",
+    "description":  "Boris Salazar is a small, round-faced nine-year-old with his South African grandfather\u0027s dark complexion and his Russian grandmother\u0027s light gray eyes, a combination that makes people look at him twice in a way he has not yet decided whether to be proud of. He has been at the Stockyard\u0027s communal housing block since he was six, when his mother didn\u0027t come back from a job and no one came to explain why. He has the characteristic roughness of a Stockyard kid â€” scuffed knees, hair grown out past caring, a jacket two sizes too large that he found and claimed as territory. He has no augmentations of any kind. The Copperheads, a junior street crew that operates in the Stockyard\u0027s eastern blocks, have noticed him the way they notice all the unattached kids â€” as resource or recruitment opportunity. So far he has run two lookout shifts for them, for which he was paid in food rather than Quanta, which tells you something about both the crew\u0027s resources and his bargaining position.\n\nHe is, underneath the hard-knock exterior, a nine-year-old who still sleeps with his knees pulled to his chest and who has attached himself to a specific E.L.F. he calls Glow that he believes lives in the light-strip above his communal bunk. He leaves it small paper offerings â€” drawings, mostly â€” folded under the fixture every night. He is fiercely protective of two things: a palm-sized carved wooden animal his mother left in the housing block storage, and a seven-year-old girl named Polu in the adjacent bunk who cannot defend herself the way he has learned to.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Polu getting hurt because of something he failed to do",
+                                          "the Copperheads making him do something that can\u0027t be undone"
+                                      ],
+                       "core_desires":  [
+                                            "for his mother to have a reason she didn\u0027t come back",
+                                            "a door that locks from the inside"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "rituals around the Glow E.L.F. â€” nightly paper offerings, morning check that the strip is still on",
+                                                 "protecting Polu as a displacement of all unprocessable grief"
+                                             ],
+                       "blind_spots":  [
+                                           "believes the Copperheads are separate from the forces that took his mother â€” does not see the structural continuity",
+                                           "thinks he can keep Polu safe through vigilance alone"
+                                       ],
+                       "secret":  "He overheard a Copperheads conversation three weeks ago that included a description of a job gone wrong in the Stockyard\u0027s sixth sector â€” the job his mother was last known to be near. He doesn\u0027t have enough context to understand it. He has been trying to get more context ever since, slowly, without anyone noticing."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Short sentences. Stockyard patois, slightly blurred from communal housing mix of backgrounds. Asks practical questions rather than emotional ones.",
+                            "cadence":  "Quiet and direct. Speaks louder when he\u0027s pretending not to be scared.",
+                            "verbal_tics":  [
+                                                "\u0027Yeah\u0027 as agreement but also as filler when he\u0027s processing",
+                                                "gets very still and precise when actually frightened"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Glow was on this morning. That\u0027s good.\u0027",
+                                                  "\u0027Polu stays here. She\u0027s not part of whatever this is.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The Copperheads are moving toward asking him to do something that crosses a line â€” and he\u0027s been too hungry, too often, to have good options for refusing.",
+                        "The fragment of conversation he overheard about the job near sector six could be the beginning of understanding what happened to his mother â€” but finding out more means going somewhere in the Stockyard he can\u0027t bring Polu."
+                    ],
+    "narrative_function":  "Emotional stakes and moral weight; his situation forces players to reckon with structural failure; can serve as an object of protection or a small information source about Stockyard street patterns; his trajectory is genuinely in play.",
+    "augmentations":  "None.",
+    "daily_life":  "Eats communal breakfast if there is one, spends the day ranging the Stockyard\u0027s blocks doing whatever earns food or Î¦ â€” carrying, watching, fetching. Is back at the housing block before dark because that is the rule he has made for himself.",
+    "affiliation":  "Stockyard communal housing (ward of informal community); junior Copperheads affiliate (reluctant)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  4,
+                                 "empathy":  8,
+                                 "expression":  3,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  0,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  1,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "orphan",
+                               "gang-prospect",
+                               "caretaker",
+                               "e.l.f.-devotee",
+                               "stockyard-survivor",
+                               "searching"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Polu doesn\u0027t get involved in anything",
+                                              "don\u0027t take jobs that happen after dark",
+                                              "always know where the exit is"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "stay quiet and small",
+                                                 "put himself physically between the problem and Polu",
+                                                 "run, accepting whatever cost that has with the Copperheads later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Wary and still; watches hands; doesn\u0027t speak first unless asked",
+                                                   "friends":  "Quietly devoted; expresses care through vigilance and small practical actions; will share food"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Goes to check on Polu",
+                                                "medium":  "Performs an extended Glow ritual â€” re-folds old paper offerings, makes a new one",
+                                                "high":  "Becomes very, very calm in a way that is actually dissociation"
+                                            },
+                       "contradictions":  [
+                                              "Pretends not to care about his mother\u0027s wooden animal; sleeps with it in his jacket pocket every night"
+                                          ],
+                       "habits":  [
+                                      "morning light-check on Glow\u0027s fixture before getting up",
+                                      "always positions himself between Polu\u0027s bunk and the door",
+                                      "folds paper offerings with more care than anything else he does"
+                                  ],
+                       "breaking_points":  [
+                                               "Polu being threatened directly",
+                                               "learning definitive information about his mother that he isn\u0027t ready for"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Diplomat":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Stockyard",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "The Stockyard",
+                             "The CEO",
+                             "Grandmother",
+                             "Chicago",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "Palm Leaf",
+                             "Elena Vasquez-9",
+                             "Nightlight"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Mixed heritage with dominant Hispanic/Latin American ancestry (52%), significant South Asian influence (21.5%), notable Sub-Saharan African ancestry (12.3%), Eastern European (10.3%), and Southeast Asian (3.9%). Features reflect this complex blend: warm golden-brown skin with rich depth, high prominent cheekbones with subtle Southeast Asian structure, rounded lower face with South Asian softness, and luminous warm undertones from Latin American heritage mixing with African depth and Eastern European complexity.",
+                                 "height_cm":  128,
+                                 "weight_kg":  26,
+                                 "build":  "Small-framed and lean from inconsistent nutrition, with the gangly proportions of a nine-year-old entering growth phases unevenly. Compact and wiry rather than naturally delicate.",
+                                 "hair_color":  "Dark brown, almost black",
+                                 "hair_style":  "Grown out past maintenance, tousled and uneven; occasionally tied back with whatever cord or cloth is at hand",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Light gray with dark brown iris ring â€” unusual combination that draws attention",
+                                 "skin_tone":  "Warm golden-brown with rich depth: golden warmth from Hispanic/Latin American heritage, richness from Sub-Saharan African genetics, bronze undertones from South Asian ancestry, and subtle cooler undertones from Eastern European heritage creating a complex, luminous complexion with exceptional depth",
+                                 "complexion":  "Angular face with high, sharp cheekbones and subtly rounded lower face reflecting the diverse ancestry blend; frequent scrapes and small scars on forehead and chin from street living; skin weathered beyond his years but retains childhood softness. Perpetually dirt-smudged, especially around the knuckles and neck. Distinctive facial structure shows the balanced influence of Latin American, South Asian, and African genetics with subtle Eastern European bone structure.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar along his left temple, approximately 2cm, origin unclear â€” possibly from a fall or childhood accident",
+                                                              "Scrape marks on both knees in various stages of healing, consistent with constant climbing and movement",
+                                                              "Small burn mark on his right wrist from a communal cooking incident, faint but visible"
+                                                          ],
+                                 "visible_augmentations":  "None. No chrome, no optics, no subdermal plating. Completely unaugmented â€” notable in the GLMZ for a child of his circumstances.",
+                                 "posture_movement":  "Moves with sharp, economical efficiency; hunches slightly as if accustomed to making himself smaller. Sits with knees pulled up even when standing still. Eyes are rarely still, constantly scanning his environment. Physical confidence that contradicts his size â€” moves like someone who has already learned to take hits.",
+                                 "clothing_style":  "Wears a jacket two sizes too large, claimed salvage in faded charcoal synthetic blend with torn inner lining; the cuffs are rolled and re-rolled constantly. Beneath it, whatever layered shirt is cleanest that week. Pants are gray synthetic work-wear with grass stains and frayed cuffs; shoes are mismatched, one held together with wire. No Tier branding visible â€” all clothing is reclaimed or communal. Everything smells faintly of detergent and smoke from the Stockyard\u0027s generators."
+                             },
+    "image_prompt":  "GLMZ, portrait of Boris Salazar, a nine-year-old street kid with warm golden-brown skin reflecting mixed Hispanic/Latin American, South Asian, and Sub-Saharan African heritage. Lean, small-framed build, angular face with high sharp cheekbones and rounded lower face. Light gray eyes with dark brown iris rings, dark brown almost-black hair medium length and tousled. Visible scars and scrapes on forehead, chin, and knees from street living. Wearing oversized faded charcoal synthetic jacket with rolled cuffs over layered shirt, gray work-wear pants with grass stains, mismatched shoes held together with wire. Dirt-smudged skin, perpetually weathered expression. Hunched posture, constantly scanning eyes. Gritty Great Lakes Metropolitan Zone background with industrial Stockyard generators and warm amber-sodium lighting casting shadows. Unaugmented, completely chrome-free. Film grain and neo-noir color grading. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  52,
+                             "South Asian":  21.5,
+                             "Sub-Saharan African":  12.3,
+                             "Eastern European":  10.3,
+                             "Southeast Asian":  3.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  52
+                                                                        }
+                                                        },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  21.5
+                                                           }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  2.9,
+                                                                                 "South African":  3.9
+                                                                             },
+                                                        "West African":  {
+                                                                             "Nigerian":  3.3,
+                                                                             "Ghanaian":  2.2
+                                                                         }
+                                                    },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  2.5
+                                                                         },
+                                                     "Slavic West":  {
+                                                                         "Sorbian":  3.8
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Slovenian":  2.3,
+                                                                          "Serbian":  1.7
+                                                                      }
+                                                 },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  3.9
+                                                             }
+                                                }
+                        },
+    "tier":  "1"
 }

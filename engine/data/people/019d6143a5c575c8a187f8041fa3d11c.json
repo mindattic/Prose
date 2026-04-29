@@ -1,303 +1,328 @@
-{
-  "id": "019d6143a5c575c8a187f8041fa3d11c",
-  "type": "character",
-  "name": "Edilberto Strömqvist-Rahman",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Community midwife serving Hamtramck Enclave and surrounding districts",
-  "age": 58,
-  "status": "active",
-  "location": "Hamtramck Enclave, near Kedzie and Division",
-  "description": "Edilberto Strömqvist-Rahman is a heavyset woman whose physical presence seems to fill rooms without effort — not loudly, but thoroughly, the way warm air fills a cold space. Her skin is very dark, deeply creased at the eyes and mouth from decades of expressions she never suppressed, and her white hair grows in a wide natural halo that she refuses to modify or dye on principle. One ear carries a cluster of small silver and copper rings, each one given to her by a family whose child she delivered. There are thirty-one of them. Her hands are strong and practiced, and people who have been through labor under her care describe the specific quality of her grip — firm and unfrightened — as the thing they remember most.\n\nShe is a woman of organized faith in two directions simultaneously: she attends a Reconstructionist Yoruba ceremony circle on Tuesdays and maintains a detailed data-shrine to the E.L.F. called Firstcry, patron of births and neonatal systems, on a water-damaged tablet she has repaired seven times. She speaks to Firstcry aloud and does not care who hears. In conversation she is patient past the point that other people are comfortable with, willing to sit in silence while someone finds the words. She is also capable of a firmness that people who mistake her warmth for softness find startling.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.85,
-      "id": 0.4,
-      "shadow": 0.3,
-      "mask": 0.25,
-      "ghost": 0.65
-    },
-    "core_fears": [
-      "losing a mother or child in a birth she could not prevent",
-      "Hamtramck Enclave's community fabric being dissolved by corporate rezoning"
-    ],
-    "core_desires": [
-      "for the children she has delivered to live full lives in this city",
-      "to die having been genuinely useful"
-    ],
-    "coping_mechanisms": [
-      "prayer to Firstcry (aloud, conversational, ongoing)",
-      "physical work; she bakes when she is troubled",
-      "community ceremony attendance"
-    ],
-    "blind_spots": [
-      "can underestimate the extent to which her moral authority intimidates younger people into silence around her",
-      "does not see her own exhaustion as a problem requiring intervention"
-    ],
-    "secret": "Twelve years ago she covered for a woman whose labor revealed injuries consistent with ongoing domestic violence — documented them as accidental in the official record to prevent the woman's husband, who had Tessera corporate insurance, from accessing her protected health file. The woman later left him. Blessing has never regretted the choice but carries the professional dishonesty like a stone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Rich, unhurried; mixes Yoruba phrases into English without translation or apology; uses parable structure in advice-giving",
-    "cadence": "Slow and deliberate; comfortable with silence; does not rush toward the end of sentences",
-    "verbal_tics": [
-      "'Ehh.' (a sound of patient acknowledgment)",
-      "'Let me tell you what I have seen.'"
-    ],
-    "example_lines": [
-      "'Firstcry has been awake tonight. I could feel it. The tablet was warm.'",
-      "'Pain is not a sign that something is wrong. Pain is a sign that the body is doing enormous work. Those are different.'",
-      "'Sit. I have nowhere to be until you are ready for me to go.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A birth she attends produces a child with augmentation markers that cannot have come from either parent's documented geneware history — someone has been running an unauthorized germline modification program in Hamtramck Enclave",
-    "Tessera corporate rezoning agents begin offering buyouts to enclave residents, and several families she has delivered for are considering leaving; she has thirty-one rings and each one represents a community thread she can pull"
-  ],
-  "narrative_function": "Local color and community anchor; information source about family histories and neighborhood dynamics going back three decades; moral weight in stories — her approval or disapproval carries community consequence",
-  "augmentations": "Bone-conduction hearing amplifier (left ear, concealed within the ring cluster); basic subdermal temperature sensor in both palms for neonatal assessment; no cosmetic mods",
-  "daily_life": "Moves through the enclave on foot, visiting expectant families in the week before due dates, attending births when called at any hour, conducting postnatal checks for the first month after delivery. Two afternoons a week she holds a free information session in the Enclave community hall.",
-  "affiliation": "Hamtramck Enclave Community Health Circle; informal referral network with Ingrid Mwololo-Saarinen and other Narrows-adjacent practitioners",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 6,
-      "vitality": 7,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 10,
-      "expression": 8,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -5,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 1,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "midwife",
-      "community elder",
-      "firstcry devotee",
-      "yoruba ceremony circle",
-      "hamtramck anchor"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The mother's safety is the first priority in every birth decision",
-      "Never share patient information with anyone, including family members, without the patient's explicit permission",
-      "Do not deliver judgment alongside care; deliver care first"
-    ],
-    "escalation_ladder": [
-      "Patient listening and gentle redirection",
-      "Clear and firm statement of concern without softening",
-      "Outright refusal and, if necessary, public community statement"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately warm; assesses quickly for what they need; never performs warmth she does not mean",
-      "friends": "Teases with deep affection; remembers every significant date in their lives; shows up without being asked"
-    },
-    "stress_responses": {
-      "low": "Works more slowly and carefully",
-      "medium": "Goes very quiet; prays aloud to Firstcry in a murmur while working",
-      "high": "Becomes icily precise and fully focused; the warmth leaves her face entirely until the crisis passes"
-    },
-    "contradictions": [
-      "Insists she does not play favorites among the children she has delivered while clearly having favorites among the children she has delivered"
-    ],
-    "habits": [
-      "Talks to the Firstcry tablet every morning and evening",
-      "Bakes when troubled; distributes the results to neighbors without explanation",
-      "Touches each ring in the cluster when she is thinking"
-    ],
-    "breaking_points": [
-      "A mother dying in a birth she attended",
-      "Corporate forces entering the enclave to forcibly relocate a family she knows"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Judge": 0.9,
-    "Sentinel": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Hamtramck Enclave; third generation resident",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed midwifery certification through community health apprenticeship",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Falsified injury documentation to protect a patient from an abusive spouse; patient later left safely",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Has delivered 847 children; wears thirty-one rings",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Tessera Corponation",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Silver",
-    "Copper",
-    "The Pure Hand"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "East Asian, Middle Eastern, Indigenous American, and South Asian genetic blend — a complex phenotype reflecting the Ubiquitous Diaspora. High cheekbones and eye shape from East Asian ancestry (34%), warm olive-brown skin tone from the Middle Eastern component (25.5%), broader facial structure and fuller features from Indigenous American heritage (21.1%), and refined bone structure with warm undertones from South Asian genetics (19.4%). The result is a distinctive, balanced phenotype that integrates multiple continental traditions into a unified whole.",
-    "height_cm": 168,
-    "weight_kg": 92,
-    "build": "Heavyset, broad-shouldered, with substantial mass distributed through torso and hips — a frame that speaks of physical resilience and presence rather than bulk. Muscle beneath the weight from decades of active work.",
-    "hair_color": "White",
-    "hair_style": "Natural, unmodified halo — voluminous and textured, worn loose",
-    "hair_length": "Medium to long, approximately shoulder-length when unbound",
-    "eye_color": "Dark brown, warm and steady",
-    "skin_tone": "Warm olive-brown complexion with golden and amber undertones — a richly melanated skin that blends East Asian, Middle Eastern, and South Asian warmth with the depth that comes from Indigenous American heritage. The tone deepens slightly in sun-exposed areas, bearing the patina of decades in varied climates.",
-    "complexion": "Deeply lined face — creases at eyes and mouth map decades of unguarded expressions, laugh lines prominent. Skin texture is rich and weathered with the kind of character that speaks to both sun exposure and genetic predisposition. Bone structure shows the high, prominent cheekbones characteristic of East Asian and Indigenous American ancestry, with the refined nose bridge and eye shape reflecting South Asian and Middle Eastern genetics. The fuller facial structure and broader jawline show Indigenous American influence. Grooming is deliberate and minimal: no cosmetic augmentation, no attempt to conceal age.",
-    "distinguishing_marks": [
-      "Left ear carries thirty-one small silver and copper rings clustered along the lobe and upper cartilage — each gifted by a family whose child she delivered, a living record.",
-      "Palms show the callused wear patterns of hands that work constantly — grip lines deep and pronounced.",
-      "Fine scars on inner forearms consistent with years of repeated contact with ambiotic fluid and biological exposure — unmarked by any attempt at cosmetic concealment."
-    ],
-    "visible_augmentations": "Bone-conduction hearing amplifier embedded within the left ear ring cluster — visible only as subtle technological integration among the copper and silver. The rings themselves partially conceal the hardware. No other visible cybernetics; subdermal temperature sensors in palms are not externally apparent.",
-    "posture_movement": "Carries herself with deliberate, centered stillness — the physical equivalent of patient listening. Movements are economical and purposeful, never rushed. When approaching someone, she moves as if she has already decided she is not in a hurry. Her hands rest comfortably at her sides or engaged in work; she does not fidget or distract. When sitting, she settles completely, as if willing to occupy that space indefinitely.",
-    "clothing_style": "Tier 3-4 practical wear reflecting Hamtramck Enclave culture and her role: layered cotton and linen shirts in earth tones, worn loose over the body. Comfortable working trousers in dark colors. A long linen coat or wrap she carries for home visits — pockets deep and organized. No visible branding. Sensible shoes suited for walking the enclave at all hours. Her only consistent jewelry is the ear rings; she wears a simple cord around her neck holding a small water-damaged tablet (the Firstcry shrine) wrapped in cloth. Everything chosen for utility and respect, nothing for status."
-  },
-  "image_prompt": "Edilberto Strömqvist-Rahman, 168cm, heavyset broad-shouldered midwife with warm olive-brown skin blending East Asian, Middle Eastern, Indigenous American and South Asian features. High prominent cheekbones, refined nose bridge, fuller broader jawline, dark brown steady eyes. Deeply lined face mapping decades of patient work, weathered richly melanated skin with golden amber undertones. Shoulder-length voluminous white textured hair worn loose in natural halo. Thirty-one silver and copper rings clustered along left ear with embedded bone-conduction amplifier technology subtly integrated. Callused palms with deep grip lines, fine unmarked scars on inner forearms from biological exposure. Wearing layered loose earth-tone cotton and linen shirt, dark working trousers, sensible walking shoes. Long linen coat wrapped nearby. Water-damaged tablet shrine on cord around neck. Standing with deliberate centered stillness, economical purposeful movements, patient listening posture. GLMZ Great Lakes Metropolitan Zone setting, warm ambient lighting in Hamtramck Enclave home interior, quiet moment before house call. Practical, respected, utility-focused presence. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 34,
-    "Middle Eastern": 25.5,
-    "Indigenous American": 21.1,
-    "South Asian": 19.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Chinese": {
-        "Mandarin Northern": 31.8,
-        "Shanghainese": 2.2
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Iraqi": 25.5
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Nahua": 5
-      },
-      "Great Lakes Nations": {
-        "Ojibwe": 13.3
-      },
-      "Andean": {
-        "Aymara": 1.7,
-        "Quechua": 1.1
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Gujarati": 17.3,
-        "Marathi": 2.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a5c575c8a187f8041fa3d11c",
+    "type":  "character",
+    "name":  "Edilberto StrÃ¶mqvist-Rahman",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Community midwife serving Hamtramck Enclave and surrounding districts",
+    "age":  58,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, near Kedzie and Division",
+    "description":  "Edilberto StrÃ¶mqvist-Rahman is a heavyset woman whose physical presence seems to fill rooms without effort â€” not loudly, but thoroughly, the way warm air fills a cold space. Her skin is very dark, deeply creased at the eyes and mouth from decades of expressions she never suppressed, and her white hair grows in a wide natural halo that she refuses to modify or dye on principle. One ear carries a cluster of small silver and copper rings, each one given to her by a family whose child she delivered. There are thirty-one of them. Her hands are strong and practiced, and people who have been through labor under her care describe the specific quality of her grip â€” firm and unfrightened â€” as the thing they remember most.\n\nShe is a woman of organized faith in two directions simultaneously: she attends a Reconstructionist Yoruba ceremony circle on Tuesdays and maintains a detailed data-shrine to the E.L.F. called Firstcry, patron of births and neonatal systems, on a water-damaged tablet she has repaired seven times. She speaks to Firstcry aloud and does not care who hears. In conversation she is patient past the point that other people are comfortable with, willing to sit in silence while someone finds the words. She is also capable of a firmness that people who mistake her warmth for softness find startling.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "losing a mother or child in a birth she could not prevent",
+                                          "Hamtramck Enclave\u0027s community fabric being dissolved by corporate rezoning"
+                                      ],
+                       "core_desires":  [
+                                            "for the children she has delivered to live full lives in this city",
+                                            "to die having been genuinely useful"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "prayer to Firstcry (aloud, conversational, ongoing)",
+                                                 "physical work; she bakes when she is troubled",
+                                                 "community ceremony attendance"
+                                             ],
+                       "blind_spots":  [
+                                           "can underestimate the extent to which her moral authority intimidates younger people into silence around her",
+                                           "does not see her own exhaustion as a problem requiring intervention"
+                                       ],
+                       "secret":  "Twelve years ago she covered for a woman whose labor revealed injuries consistent with ongoing domestic violence â€” documented them as accidental in the official record to prevent the woman\u0027s husband, who had Tessera corporate insurance, from accessing her protected health file. The woman later left him. Blessing has never regretted the choice but carries the professional dishonesty like a stone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Rich, unhurried; mixes Yoruba phrases into English without translation or apology; uses parable structure in advice-giving",
+                            "cadence":  "Slow and deliberate; comfortable with silence; does not rush toward the end of sentences",
+                            "verbal_tics":  [
+                                                "\u0027Ehh.\u0027 (a sound of patient acknowledgment)",
+                                                "\u0027Let me tell you what I have seen.\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Firstcry has been awake tonight. I could feel it. The tablet was warm.\u0027",
+                                                  "\u0027Pain is not a sign that something is wrong. Pain is a sign that the body is doing enormous work. Those are different.\u0027",
+                                                  "\u0027Sit. I have nowhere to be until you are ready for me to go.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A birth she attends produces a child with augmentation markers that cannot have come from either parent\u0027s documented geneware history â€” someone has been running an unauthorized germline modification program in Hamtramck Enclave",
+                        "Tessera corporate rezoning agents begin offering buyouts to enclave residents, and several families she has delivered for are considering leaving; she has thirty-one rings and each one represents a community thread she can pull"
+                    ],
+    "narrative_function":  "Local color and community anchor; information source about family histories and neighborhood dynamics going back three decades; moral weight in stories â€” her approval or disapproval carries community consequence",
+    "augmentations":  "Bone-conduction hearing amplifier (left ear, concealed within the ring cluster); basic subdermal temperature sensor in both palms for neonatal assessment; no cosmetic mods",
+    "daily_life":  "Moves through the enclave on foot, visiting expectant families in the week before due dates, attending births when called at any hour, conducting postnatal checks for the first month after delivery. Two afternoons a week she holds a free information session in the Enclave community hall.",
+    "affiliation":  "Hamtramck Enclave Community Health Circle; informal referral network with Ingrid Mwololo-Saarinen and other Narrows-adjacent practitioners",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  6,
+                                   "vitality":  7,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  10,
+                                 "expression":  8,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -5,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "midwife",
+                               "community elder",
+                               "firstcry devotee",
+                               "yoruba ceremony circle",
+                               "hamtramck anchor"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The mother\u0027s safety is the first priority in every birth decision",
+                                              "Never share patient information with anyone, including family members, without the patient\u0027s explicit permission",
+                                              "Do not deliver judgment alongside care; deliver care first"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient listening and gentle redirection",
+                                                 "Clear and firm statement of concern without softening",
+                                                 "Outright refusal and, if necessary, public community statement"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately warm; assesses quickly for what they need; never performs warmth she does not mean",
+                                                   "friends":  "Teases with deep affection; remembers every significant date in their lives; shows up without being asked"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works more slowly and carefully",
+                                                "medium":  "Goes very quiet; prays aloud to Firstcry in a murmur while working",
+                                                "high":  "Becomes icily precise and fully focused; the warmth leaves her face entirely until the crisis passes"
+                                            },
+                       "contradictions":  [
+                                              "Insists she does not play favorites among the children she has delivered while clearly having favorites among the children she has delivered"
+                                          ],
+                       "habits":  [
+                                      "Talks to the Firstcry tablet every morning and evening",
+                                      "Bakes when troubled; distributes the results to neighbors without explanation",
+                                      "Touches each ring in the cluster when she is thinking"
+                                  ],
+                       "breaking_points":  [
+                                               "A mother dying in a birth she attended",
+                                               "Corporate forces entering the enclave to forcibly relocate a family she knows"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Judge":  0.9,
+                       "Sentinel":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Hamtramck Enclave; third generation resident",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed midwifery certification through community health apprenticeship",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Falsified injury documentation to protect a patient from an abusive spouse; patient later left safely",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Has delivered 847 children; wears thirty-one rings",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-R44 Heritage \u0027Legacy\u0027",
+                            "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Volkov-Saito Precision VS-R44 Heritage \u0027Legacy\u0027",
+                                "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "Ossuary Arms Memento Vivere OA-7 \u0027Momento\u0027",
+                             "Tessera Corponation",
+                             "Street Custom \u0027Four Horsemen\u0027 Pipe Pepperbox",
+                             "Silver",
+                             "Copper",
+                             "The Pure Hand"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "East Asian, Middle Eastern, Indigenous American, and South Asian genetic blend â€” a complex phenotype reflecting the Ubiquitous Diaspora. High cheekbones and eye shape from East Asian ancestry (34%), warm olive-brown skin tone from the Middle Eastern component (25.5%), broader facial structure and fuller features from Indigenous American heritage (21.1%), and refined bone structure with warm undertones from South Asian genetics (19.4%). The result is a distinctive, balanced phenotype that integrates multiple continental traditions into a unified whole.",
+                                 "height_cm":  168,
+                                 "weight_kg":  92,
+                                 "build":  "Heavyset, broad-shouldered, with substantial mass distributed through torso and hips â€” a frame that speaks of physical resilience and presence rather than bulk. Muscle beneath the weight from decades of active work.",
+                                 "hair_color":  "White",
+                                 "hair_style":  "Natural, unmodified halo â€” voluminous and textured, worn loose",
+                                 "hair_length":  "Medium to long, approximately shoulder-length when unbound",
+                                 "eye_color":  "Dark brown, warm and steady",
+                                 "skin_tone":  "Warm olive-brown complexion with golden and amber undertones â€” a richly melanated skin that blends East Asian, Middle Eastern, and South Asian warmth with the depth that comes from Indigenous American heritage. The tone deepens slightly in sun-exposed areas, bearing the patina of decades in varied climates.",
+                                 "complexion":  "Deeply lined face â€” creases at eyes and mouth map decades of unguarded expressions, laugh lines prominent. Skin texture is rich and weathered with the kind of character that speaks to both sun exposure and genetic predisposition. Bone structure shows the high, prominent cheekbones characteristic of East Asian and Indigenous American ancestry, with the refined nose bridge and eye shape reflecting South Asian and Middle Eastern genetics. The fuller facial structure and broader jawline show Indigenous American influence. Grooming is deliberate and minimal: no cosmetic augmentation, no attempt to conceal age.",
+                                 "distinguishing_marks":  [
+                                                              "Left ear carries thirty-one small silver and copper rings clustered along the lobe and upper cartilage â€” each gifted by a family whose child she delivered, a living record.",
+                                                              "Palms show the callused wear patterns of hands that work constantly â€” grip lines deep and pronounced.",
+                                                              "Fine scars on inner forearms consistent with years of repeated contact with ambiotic fluid and biological exposure â€” unmarked by any attempt at cosmetic concealment."
+                                                          ],
+                                 "visible_augmentations":  "Bone-conduction hearing amplifier embedded within the left ear ring cluster â€” visible only as subtle technological integration among the copper and silver. The rings themselves partially conceal the hardware. No other visible cybernetics; subdermal temperature sensors in palms are not externally apparent.",
+                                 "posture_movement":  "Carries herself with deliberate, centered stillness â€” the physical equivalent of patient listening. Movements are economical and purposeful, never rushed. When approaching someone, she moves as if she has already decided she is not in a hurry. Her hands rest comfortably at her sides or engaged in work; she does not fidget or distract. When sitting, she settles completely, as if willing to occupy that space indefinitely.",
+                                 "clothing_style":  "Tier 3-4 practical wear reflecting Hamtramck Enclave culture and her role: layered cotton and linen shirts in earth tones, worn loose over the body. Comfortable working trousers in dark colors. A long linen coat or wrap she carries for home visits â€” pockets deep and organized. No visible branding. Sensible shoes suited for walking the enclave at all hours. Her only consistent jewelry is the ear rings; she wears a simple cord around her neck holding a small water-damaged tablet (the Firstcry shrine) wrapped in cloth. Everything chosen for utility and respect, nothing for status."
+                             },
+    "image_prompt":  "Edilberto StrÃ¶mqvist-Rahman, 168cm, heavyset broad-shouldered midwife with warm olive-brown skin blending East Asian, Middle Eastern, Indigenous American and South Asian features. High prominent cheekbones, refined nose bridge, fuller broader jawline, dark brown steady eyes. Deeply lined face mapping decades of patient work, weathered richly melanated skin with golden amber undertones. Shoulder-length voluminous white textured hair worn loose in natural halo. Thirty-one silver and copper rings clustered along left ear with embedded bone-conduction amplifier technology subtly integrated. Callused palms with deep grip lines, fine unmarked scars on inner forearms from biological exposure. Wearing layered loose earth-tone cotton and linen shirt, dark working trousers, sensible walking shoes. Long linen coat wrapped nearby. Water-damaged tablet shrine on cord around neck. Standing with deliberate centered stillness, economical purposeful movements, patient listening posture. GLMZ Great Lakes Metropolitan Zone setting, warm ambient lighting in Hamtramck Enclave home interior, quiet moment before house call. Practical, respected, utility-focused presence. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  34,
+                             "Middle Eastern":  25.5,
+                             "Indigenous American":  21.1,
+                             "South Asian":  19.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  31.8,
+                                                               "Shanghainese":  2.2
+                                                           }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  25.5
+                                                                 }
+                                               },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  5
+                                                                         },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Ojibwe":  13.3
+                                                                                },
+                                                        "Andean":  {
+                                                                       "Aymara":  1.7,
+                                                                       "Quechua":  1.1
+                                                                   }
+                                                    },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Gujarati":  17.3,
+                                                               "Marathi":  2.1
+                                                           }
+                                            }
+                        },
+    "tier":  "1"
 }

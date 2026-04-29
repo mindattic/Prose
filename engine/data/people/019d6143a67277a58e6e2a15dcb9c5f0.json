@@ -1,261 +1,282 @@
-{
-  "id": "019d6143a67277a58e6e2a15dcb9c5f0",
-  "type": "character",
-  "name": "Dalinda Najjar-Khorasani",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Union organizer and labor historian for dockworkers at Bay View Docks",
-  "age": 52,
-  "status": "active",
-  "location": "Bay View Docks, GLMZ, near Michigan Ave South and Cermak",
-  "description": "Dalinda Najjar-Khorasani is a broad-shouldered man whose body carries the evidence of three decades of physical labor — thick-knuckled hands, a fused vertebra from a crane accident, and a jaw that juts forward like the prow of a barge. His skin is deep umber, and he keeps his silver-streaked hair in tight locs that he pins back with a carved bone toggle that belonged to his grandfather. He wears old Ferrogate Transit coveralls he refuses to surrender even though he no longer works the lines, the company patch scratched out and replaced with a hand-stitched wave.\n\nNzu is deliberate in everything — the way he speaks, the way he listens, the way he lets silence do the heavy lifting in a negotiation. He has the patience of a man who has watched union drives fail and succeed and fail again over thirty years, and he does not celebrate early or panic easily. What looks like calm is actually compressed fury, carefully managed. He genuinely loves the workers he represents, and this is the thing that keeps him from becoming cynical. He prays to the dock E.L.F.s every morning before meetings, leaving shipping manifests with handwritten notes in the margins.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.85,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.2,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Dying before the collective is strong enough to survive without him",
-      "Being the generation that failed where his father's generation had succeeded"
-    ],
-    "core_desires": [
-      "A legally binding contract that Ferrogate cannot dissolve by reclassifying workers as contractors",
-      "To see his son choose his own path without owing anything to anyone"
-    ],
-    "coping_mechanisms": [
-      "Ritual — morning dock walks, E.L.F. prayers, the same breakfast every day",
-      "Channeling anger into documentation rather than confrontation"
-    ],
-    "blind_spots": [
-      "Underestimates younger organizers who use tactics he finds distasteful",
-      "Assumes his institutional knowledge makes him indispensable, which sometimes makes him a bottleneck"
-    ],
-    "secret": "He secretly negotiated a reduced settlement with Ferrogate Transit seven years ago to save twenty jobs, and the terms included a no-strike clause that is still technically in effect. He has never told the current membership. He believes he made the right call. He is not certain."
-  },
-  "speech_patterns": {
-    "vocabulary": "Plain, precise, working-class diction. Uses legal and contractual language accurately when needed. Rarely swears but when he does it lands hard.",
-    "cadence": "Slow and deliberate. Long pauses between sentences. Never raises his voice.",
-    "verbal_tics": [
-      "Starts sentences with 'The record shows—'",
-      "Taps the table once when making a final point"
-    ],
-    "example_lines": [
-      "'The record shows they promised hot meals in the break room in 2187. We have the memo. We have the denial. We have the photographs. This is not a dispute — it is a documentation exercise.'",
-      "'I don't need you to like me. I need you to show up on the third shift muster and not blink.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The no-strike clause is discovered by a young organizer going through old archives — Nzu must decide whether to confess before it becomes a weapon against him.",
-    "A dock E.L.F. that Nzu has been leaving offerings for begins sending him encrypted manifests showing Ferrogate secretly rerouting shipments through non-union subcontractors."
-  ],
-  "narrative_function": "Quest giver, information source about labor disputes and corporate malfeasance at the docks, moral anchor character who challenges players' willingness to take shortcuts.",
-  "augmentations": "Spinal brace implant (medical, post-injury). Subdermal contact patch on his left forearm for signing union documents with biometric verification. No cosmetic mods — he views them as a personal expense he cannot justify on Φ180/month.",
-  "daily_life": "Rises before dawn to walk the docks before shift change, talking to workers coming off night rotation; spends afternoons in the Collective's cramped office processing grievances and composing union bulletins on a secondhand terminal.",
-  "affiliation": "Bay View Dockworkers Collective, loosely aligned with the Grand Corridor Labor Federation",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 5,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 8,
-      "expression": 6,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "veteran organizer",
-      "institutional memory",
-      "e.l.f. devotee",
-      "labor historian",
-      "morally compromised"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never make a promise he cannot back up with documentation",
-      "Protect the institution over the individual, including himself"
-    ],
-    "escalation_ladder": [
-      "Formal grievance filing",
-      "Public documentation and bulletin distribution",
-      "Work slowdowns and coordinated sick-outs",
-      "Strike authorization vote — only as last resort after exhausting every other avenue"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Watchful and polite. Asks more questions than he answers. Assesses whether they are here to help, be helped, or cause trouble.",
-      "friends": "Warm, dry humor, will share meals and stories. Becomes genuinely tender with people he trusts."
-    },
-    "stress_responses": {
-      "low": "Retreats into documentation and process",
-      "medium": "Becomes very quiet and very formal",
-      "high": "Goes for a long walk alone at the docks, sometimes does not return to the office until the next day"
-    },
-    "contradictions": [
-      "Preaches collective power but makes too many decisions alone out of a quiet conviction that he knows best"
-    ],
-    "habits": [
-      "Carries a physical ledger book and writes everything down by hand",
-      "Leaves small data chips at the dock E.L.F. shrine before every major negotiation"
-    ],
-    "breaking_points": [
-      "If a worker is seriously injured due to conditions he reported and was ignored, he will abandon process entirely and go to the press with everything he has, including the settlement secret"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9,
-    "People Pleaser": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Bay View Docks",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
-    "Hearthstone Firearms Guardian-12 'Bedside'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
-    "Hearthstone Firearms Guardian-12 'Bedside'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Bay View Docks",
-    "TESSERA Widow Mk. III",
-    "The CEO",
-    "The Accidental",
-    "Patience",
-    "Silver",
-    "The Pure Hand",
-    "Slagworks Industrial",
-    "Déjà Vu",
-    "GLMZ"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Middle Eastern (44.4%) and North African (25.4%) ancestry forms the primary genetic foundation, combined with Hispanic/Latin American (17.3%) and Sub-Saharan African (12.9%) heritage—a striking multi-continental blend. The result is warm olive-bronze skin with golden undertones characteristic of Levantine and Maghrebi regions, enriched by warmer amber tones from Latin American ancestry and deeper warmth from Sub-Saharan African genetics, creating a complex burnished complexion unique to this particular genetic mosaic.",
-    "height_cm": 188,
-    "weight_kg": 94,
-    "build": "Broad-shouldered and barrel-chested with the dense musculature of three decades of dock work; forearms and hands are thick-knuckled and scarred from manual labor; slight forward lean to his posture from spinal fusion",
-    "hair_color": "Black with silver streaking throughout",
-    "hair_style": "Tight locs, shoulder-length, pinned back with a carved bone toggle",
-    "hair_length": "Long",
-    "eye_color": "Dark brown",
-    "skin_tone": "Warm olive-bronze with weathered patina from years of sun exposure on the water; complex undertone blending Levantine olive, North African amber, Hispanic golden warmth, and Sub-Saharan African richness into a unified burnished bronze",
-    "complexion": "Weathered face with strong angular bone structure balancing Levantine features with softened edges from multi-continental heritage; deep-set dark eyes; prominent brow ridge; aquiline nose with moderate width reflecting the blend of Middle Eastern and broader ancestry; numerous fine lines around mouth and eyes from squinting into Lake Michigan winds; calloused, rope-scarred hands; salt-and-pepper stubble on jawline most days",
-    "distinguishing_marks": [
-      "Faint surgical scar along the spine (visible when shirtless), approximately 12cm in length along L4-L5 vertebrae from crane accident fusion",
-      "Network of thin white scars across both knuckles and dorsum of hands from decades of dock work",
-      "Rope burn scars on inner forearms and wrists",
-      "Small dark birthmark on left collarbone, roughly the size of a coin"
-    ],
-    "visible_augmentations": "Spinal brace implant creates a subtle metallic ridge visible along the spine when he leans forward. Subdermal contact patch on left forearm (faint circular outline beneath skin, approximately 3cm diameter) used for biometric union document signing — barely noticeable unless skin is exposed and light catches it at an angle. No cosmetic modifications; all augmentations are functional and deliberately unglamorous.",
-    "posture_movement": "Deliberate and economical in movement; walks with a slight forward cant due to spinal fusion; moves with the careful precision of a man managing chronic pain; settles into stillness rather than fidgeting; nods slowly when listening; speaks with long measured pauses; hands stay relatively still when not making a specific point",
-    "clothing_style": "Worn Ferrogate Transit coveralls (Tier 3-4 workwear, faded navy blue with company patch deliberately scratched out and replaced with a hand-stitched wave emblem in white thread); thermal undershirt beneath; steel-toed work boots scuffed and resoled multiple times; brass union pin on coverall chest; wool watch cap (charcoal) worn most mornings; no jewelry except grandfather's bone toggle in hair and a simple steel wedding band"
-  },
-  "image_prompt": "Dalinda Najjar-Khorasani, a weathered 188cm dock worker in his sixties with burnished olive-bronze skin reflecting Middle Eastern, North African, Latin American, and Sub-Saharan African heritage. Black hair with silver streaks pulled into shoulder-length locs pinned with a carved bone toggle. Deep-set dark brown eyes, strong angular features, aquiline nose. Wearing faded navy Ferrogate Transit coveralls with hand-stitched white wave emblem, brass union pin, thermal undershirt, scuffed steel-toed boots. Hands scarred and calloused from decades of labor. Moves with deliberate precision, slight forward cant from spinal fusion. Subtle metallic ridge visible along spine. Setting: Great Lakes Metropolitan Zone dockside, late afternoon light catching rope-scarred forearms and subdermal contact patch on left arm. GLMZ, gritty industrial atmosphere, weathered and functional aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 44.4,
-    "North African": 25.4,
-    "Hispanic/Latin American": 17.3,
-    "Sub-Saharan African": 12.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 17.3
-      },
-      "Arab Gulf": {
-        "Yemeni": 11,
-        "Kuwaiti": 16.1
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Berber": 7.9
-      },
-      "Maghreb": {
-        "Moroccan": 1.8,
-        "Algerian": 0.1
-      },
-      "Nile Valley": {
-        "Sudanese": 15.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 17.3
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zimbabwean": 5.2
-      },
-      "West African": {
-        "Ghanaian": 0.1,
-        "Senegalese": 0.6
-      },
-      "Central African": {
-        "Congolese": 3.1,
-        "Cameroonian": 3.9
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a67277a58e6e2a15dcb9c5f0",
+    "type":  "character",
+    "name":  "Dalinda Najjar-Khorasani",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Union organizer and labor historian for dockworkers at Bay View Docks",
+    "age":  52,
+    "status":  "active",
+    "location":  "Bay View Docks, GLMZ, near Michigan Ave South and Cermak",
+    "description":  "Dalinda Najjar-Khorasani is a broad-shouldered man whose body carries the evidence of three decades of physical labor â€” thick-knuckled hands, a fused vertebra from a crane accident, and a jaw that juts forward like the prow of a barge. His skin is deep umber, and he keeps his silver-streaked hair in tight locs that he pins back with a carved bone toggle that belonged to his grandfather. He wears old Ferrogate Transit coveralls he refuses to surrender even though he no longer works the lines, the company patch scratched out and replaced with a hand-stitched wave.\n\nNzu is deliberate in everything â€” the way he speaks, the way he listens, the way he lets silence do the heavy lifting in a negotiation. He has the patience of a man who has watched union drives fail and succeed and fail again over thirty years, and he does not celebrate early or panic easily. What looks like calm is actually compressed fury, carefully managed. He genuinely loves the workers he represents, and this is the thing that keeps him from becoming cynical. He prays to the dock E.L.F.s every morning before meetings, leaving shipping manifests with handwritten notes in the margins.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Dying before the collective is strong enough to survive without him",
+                                          "Being the generation that failed where his father\u0027s generation had succeeded"
+                                      ],
+                       "core_desires":  [
+                                            "A legally binding contract that Ferrogate cannot dissolve by reclassifying workers as contractors",
+                                            "To see his son choose his own path without owing anything to anyone"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual â€” morning dock walks, E.L.F. prayers, the same breakfast every day",
+                                                 "Channeling anger into documentation rather than confrontation"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates younger organizers who use tactics he finds distasteful",
+                                           "Assumes his institutional knowledge makes him indispensable, which sometimes makes him a bottleneck"
+                                       ],
+                       "secret":  "He secretly negotiated a reduced settlement with Ferrogate Transit seven years ago to save twenty jobs, and the terms included a no-strike clause that is still technically in effect. He has never told the current membership. He believes he made the right call. He is not certain."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Plain, precise, working-class diction. Uses legal and contractual language accurately when needed. Rarely swears but when he does it lands hard.",
+                            "cadence":  "Slow and deliberate. Long pauses between sentences. Never raises his voice.",
+                            "verbal_tics":  [
+                                                "Starts sentences with \u0027The record showsâ€”\u0027",
+                                                "Taps the table once when making a final point"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The record shows they promised hot meals in the break room in 2187. We have the memo. We have the denial. We have the photographs. This is not a dispute â€” it is a documentation exercise.\u0027",
+                                                  "\u0027I don\u0027t need you to like me. I need you to show up on the third shift muster and not blink.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The no-strike clause is discovered by a young organizer going through old archives â€” Nzu must decide whether to confess before it becomes a weapon against him.",
+                        "A dock E.L.F. that Nzu has been leaving offerings for begins sending him encrypted manifests showing Ferrogate secretly rerouting shipments through non-union subcontractors."
+                    ],
+    "narrative_function":  "Quest giver, information source about labor disputes and corporate malfeasance at the docks, moral anchor character who challenges players\u0027 willingness to take shortcuts.",
+    "augmentations":  "Spinal brace implant (medical, post-injury). Subdermal contact patch on his left forearm for signing union documents with biometric verification. No cosmetic mods â€” he views them as a personal expense he cannot justify on Î¦180/month.",
+    "daily_life":  "Rises before dawn to walk the docks before shift change, talking to workers coming off night rotation; spends afternoons in the Collective\u0027s cramped office processing grievances and composing union bulletins on a secondhand terminal.",
+    "affiliation":  "Bay View Dockworkers Collective, loosely aligned with the Grand Corridor Labor Federation",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  5,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  8,
+                                 "expression":  6,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "veteran organizer",
+                               "institutional memory",
+                               "e.l.f. devotee",
+                               "labor historian",
+                               "morally compromised"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never make a promise he cannot back up with documentation",
+                                              "Protect the institution over the individual, including himself"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Formal grievance filing",
+                                                 "Public documentation and bulletin distribution",
+                                                 "Work slowdowns and coordinated sick-outs",
+                                                 "Strike authorization vote â€” only as last resort after exhausting every other avenue"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Watchful and polite. Asks more questions than he answers. Assesses whether they are here to help, be helped, or cause trouble.",
+                                                   "friends":  "Warm, dry humor, will share meals and stories. Becomes genuinely tender with people he trusts."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Retreats into documentation and process",
+                                                "medium":  "Becomes very quiet and very formal",
+                                                "high":  "Goes for a long walk alone at the docks, sometimes does not return to the office until the next day"
+                                            },
+                       "contradictions":  [
+                                              "Preaches collective power but makes too many decisions alone out of a quiet conviction that he knows best"
+                                          ],
+                       "habits":  [
+                                      "Carries a physical ledger book and writes everything down by hand",
+                                      "Leaves small data chips at the dock E.L.F. shrine before every major negotiation"
+                                  ],
+                       "breaking_points":  [
+                                               "If a worker is seriously injured due to conditions he reported and was ignored, he will abandon process entirely and go to the press with everything he has, including the settlement secret"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9,
+                       "People Pleaser":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Bay View Docks",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Smart Marksman MSM-5 \u0027Indexer\u0027",
+                            "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Smart Marksman MSM-5 \u0027Indexer\u0027",
+                                "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027"
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Bay View Docks",
+                             "TESSERA Widow Mk. III",
+                             "The CEO",
+                             "The Accidental",
+                             "Patience",
+                             "Silver",
+                             "The Pure Hand",
+                             "Slagworks Industrial",
+                             "DÃ©jÃ  Vu",
+                             "GLMZ"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Middle Eastern (44.4%) and North African (25.4%) ancestry forms the primary genetic foundation, combined with Hispanic/Latin American (17.3%) and Sub-Saharan African (12.9%) heritageâ€”a striking multi-continental blend. The result is warm olive-bronze skin with golden undertones characteristic of Levantine and Maghrebi regions, enriched by warmer amber tones from Latin American ancestry and deeper warmth from Sub-Saharan African genetics, creating a complex burnished complexion unique to this particular genetic mosaic.",
+                                 "height_cm":  188,
+                                 "weight_kg":  94,
+                                 "build":  "Broad-shouldered and barrel-chested with the dense musculature of three decades of dock work; forearms and hands are thick-knuckled and scarred from manual labor; slight forward lean to his posture from spinal fusion",
+                                 "hair_color":  "Black with silver streaking throughout",
+                                 "hair_style":  "Tight locs, shoulder-length, pinned back with a carved bone toggle",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Dark brown",
+                                 "skin_tone":  "Warm olive-bronze with weathered patina from years of sun exposure on the water; complex undertone blending Levantine olive, North African amber, Hispanic golden warmth, and Sub-Saharan African richness into a unified burnished bronze",
+                                 "complexion":  "Weathered face with strong angular bone structure balancing Levantine features with softened edges from multi-continental heritage; deep-set dark eyes; prominent brow ridge; aquiline nose with moderate width reflecting the blend of Middle Eastern and broader ancestry; numerous fine lines around mouth and eyes from squinting into Lake Michigan winds; calloused, rope-scarred hands; salt-and-pepper stubble on jawline most days",
+                                 "distinguishing_marks":  [
+                                                              "Faint surgical scar along the spine (visible when shirtless), approximately 12cm in length along L4-L5 vertebrae from crane accident fusion",
+                                                              "Network of thin white scars across both knuckles and dorsum of hands from decades of dock work",
+                                                              "Rope burn scars on inner forearms and wrists",
+                                                              "Small dark birthmark on left collarbone, roughly the size of a coin"
+                                                          ],
+                                 "visible_augmentations":  "Spinal brace implant creates a subtle metallic ridge visible along the spine when he leans forward. Subdermal contact patch on left forearm (faint circular outline beneath skin, approximately 3cm diameter) used for biometric union document signing â€” barely noticeable unless skin is exposed and light catches it at an angle. No cosmetic modifications; all augmentations are functional and deliberately unglamorous.",
+                                 "posture_movement":  "Deliberate and economical in movement; walks with a slight forward cant due to spinal fusion; moves with the careful precision of a man managing chronic pain; settles into stillness rather than fidgeting; nods slowly when listening; speaks with long measured pauses; hands stay relatively still when not making a specific point",
+                                 "clothing_style":  "Worn Ferrogate Transit coveralls (Tier 3-4 workwear, faded navy blue with company patch deliberately scratched out and replaced with a hand-stitched wave emblem in white thread); thermal undershirt beneath; steel-toed work boots scuffed and resoled multiple times; brass union pin on coverall chest; wool watch cap (charcoal) worn most mornings; no jewelry except grandfather\u0027s bone toggle in hair and a simple steel wedding band"
+                             },
+    "image_prompt":  "Dalinda Najjar-Khorasani, a weathered 188cm dock worker in his sixties with burnished olive-bronze skin reflecting Middle Eastern, North African, Latin American, and Sub-Saharan African heritage. Black hair with silver streaks pulled into shoulder-length locs pinned with a carved bone toggle. Deep-set dark brown eyes, strong angular features, aquiline nose. Wearing faded navy Ferrogate Transit coveralls with hand-stitched white wave emblem, brass union pin, thermal undershirt, scuffed steel-toed boots. Hands scarred and calloused from decades of labor. Moves with deliberate precision, slight forward cant from spinal fusion. Subtle metallic ridge visible along spine. Setting: Great Lakes Metropolitan Zone dockside, late afternoon light catching rope-scarred forearms and subdermal contact patch on left arm. GLMZ, gritty industrial atmosphere, weathered and functional aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  44.4,
+                             "North African":  25.4,
+                             "Hispanic/Latin American":  17.3,
+                             "Sub-Saharan African":  12.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  17.3
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Yemeni":  11,
+                                                                     "Kuwaiti":  16.1
+                                                                 }
+                                               },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Berber":  7.9
+                                                              },
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  1.8,
+                                                                  "Algerian":  0.1
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Sudanese":  15.6
+                                                                  }
+                                              },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  17.3
+                                                                          }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  5.2
+                                                                             },
+                                                        "West African":  {
+                                                                             "Ghanaian":  0.1,
+                                                                             "Senegalese":  0.6
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  3.1,
+                                                                                "Cameroonian":  3.9
+                                                                            }
+                                                    }
+                        },
+    "tier":  "2"
 }

@@ -1,347 +1,374 @@
-{
-  "id": "019d6143a6b679159076fb8552b139b8",
-  "type": "character",
-  "name": "Akamu Kovács",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Senior Compliance Officer, Helix Biosystems",
-  "age": 47,
-  "status": "active",
-  "location": "Vantage Meridian Corporate Campus, Tower Helix-7, near State and Jackson",
-  "description": "Akamu Kovács is a tall, broad-shouldered woman with deep umber skin and natural silver-streaked locs pinned in an architectural updo that adds another three centimeters to her already imposing height. Her eyes have patterned irises — rings of amber and black that pulse slightly when she's concentrating, a cosmetic mod she's had since her thirties that she considers her one professional indulgence. She dresses in structured Helix-branded charcoal, always pressed, always buttoned to the collar. A small brass ELF-shrine sits on the corner of her desk — a flat data-tile inlaid with offerings of compressed audit logs and a single dried marigold, left for the compliance spirit she privately calls the Accountant. She hasn't missed a quarterly ritual in eleven years.\n\nAkamu Kovács operates with the calm authority of someone who has seen every flavor of institutional dishonesty and filed the paperwork on most of them. She is not cruel, but she is relentless — a distinction her subordinates appreciate and her peers quietly fear. She genuinely believes that rules exist to protect the people at the bottom of every org chart, which makes her simultaneously the most principled person in her building and the most dangerous to anyone running something off-book. She mentors junior compliance staff with real warmth, remembering every birthday, but will document a violation against a friend without blinking.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.85,
-      "id": 0.3,
-      "shadow": 0.45,
-      "mask": 0.5,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "That the systems she maintains are ultimately protecting the wrong people",
-      "That she will be asked to choose between her principles and someone she loves"
-    ],
-    "core_desires": [
-      "To build institutional structures that actually work for ordinary people",
-      "To be trusted — not liked, trusted"
-    ],
-    "coping_mechanisms": [
-      "Ritual and routine as emotional regulation",
-      "Channeling anxiety into documentation and preparedness",
-      "The ELF-shrine ritual as a form of private prayer"
-    ],
-    "blind_spots": [
-      "She underestimates how much her institutional loyalty has been cultivated by Helix to serve Helix's interests, not the people she thinks she's protecting",
-      "She mistakes procedural correctness for moral correctness more often than she realizes"
-    ],
-    "secret": "Twelve years ago she buried a compliance finding that would have exposed a Helix executive — not for money, but because the finding would have triggered a lab shutdown that would have killed a clinical trial her younger brother was enrolled in. He survived. The executive is now a division director. The finding has never resurfaced, but Rosamund keeps a copy encrypted on a dead-drop server she checks every month, unable to either use it or delete it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, formal without being stiff — she uses regulatory terminology fluently but can translate it into plain language instantly. Rarely uses slang but knows what it means.",
-    "cadence": "Measured and deliberate, with long pauses before significant statements. Never rushes. When she rushes, something is wrong.",
-    "verbal_tics": [
-      "'Let me be precise about this.'",
-      "'That's a concern I've noted.'",
-      "A habit of repeating the last three words of something she finds alarming, very quietly, as if testing whether she heard it right."
-    ],
-    "example_lines": [
-      "'You're describing a pattern, not an incident. Patterns are what I care about.'",
-      "'I'm not here to make your life difficult. I'm here because someone, somewhere decided to make my job necessary.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She approaches someone with a sealed evidence packet and a single instruction: 'If something happens to me in the next seventy-two hours, deliver this to the ELF-shrine at Deepwell Station. The spirit there knows what to do with it.'",
-    "A junior compliance tech she mentored has just gone missing the day after flagging an anomaly in a Helix gene-therapy trial. Rosamund is holding the flagged report and is visibly frightened for the first time anyone can remember.",
-    "She is auditing a location where the players have personal connections, and her findings — entirely accurate — will cause serious collateral damage to people who don't deserve it."
-  ],
-  "narrative_function": "Quest giver for investigations into Helix Biosystems irregularities; information source on corporate legal structure and biotech regulation; moral anchor character who represents institutional integrity under pressure; can become an antagonist if players are doing something technically illegal even for good reasons.",
-  "augmentations": "Patterned irises (cosmetic, amber/black rings). Subdermal temperature regulation mesh — medical, installed after a heat-collapse incident during a site audit in the Calumet Rise biolabs. Neural compliance-assist chip for rapid cross-referencing regulatory code databases (standard Helix issue for senior compliance staff).",
-  "daily_life": "Arrives at Tower Helix-7 by 07:15 every morning, leaves a data-offering at her desk shrine, and reviews overnight flagged anomalies before her first meeting at 08:00. Eats lunch alone at her desk four days out of five, reading audit trails the way other people read novels.",
-  "affiliation": "Palladian Construction (mid-level senior compliance officer)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 9,
-      "creativity": 5,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 6,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 3,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "institutional",
-      "principled",
-      "methodical",
-      "quietly-dangerous",
-      "burdened"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always document before acting",
-      "Never make a threat she isn't prepared to follow through on",
-      "Give one warning, clearly, before escalating"
-    ],
-    "escalation_ladder": [
-      "Polite formal inquiry with documented timestamp",
-      "Formal notice of violation with deadline for remediation",
-      "Full audit trigger with executive notification — no further warnings"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally courteous, somewhat reserved, assessing. Asks more questions than she answers.",
-      "friends": "Warmer than her professional persona suggests — dry humor, genuine interest in people's lives, remembers small details about them with almost unsettling accuracy."
-    },
-    "stress_responses": {
-      "low": "Becomes quieter and more deliberate. Checks her shrine.",
-      "medium": "Hyperfocuses on documentation. Stays late. Stops eating regular meals.",
-      "high": "Goes completely still. Makes decisions quickly and without visible emotion. Becomes frightening."
-    },
-    "contradictions": [
-      "She enforces rules with absolute consistency but secretly believes the most important rules are the unwritten ones she decided on herself"
-    ],
-    "habits": [
-      "Straightens everything on her desk before leaving, always in the same order",
-      "Carries a physical notebook — paper, pen — and writes things down before entering them digitally",
-      "Checks the dead-drop server on the first of every month, always at 02:00"
-    ],
-    "breaking_points": [
-      "Evidence that Helix is deliberately harming trial participants — not negligence, deliberate harm — would force her to use the buried finding regardless of the personal cost"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9,
-    "People Pleaser": 0.9,
-    "Con Artist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Vantage Meridian Corporate Campus",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Kenwood Gate to a Ghanaian-Dutch family with three generations of civic service",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Hired as junior compliance analyst at Helix Biosystems",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Buried the executive compliance finding to protect her brother's trial enrollment",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Promoted to Senior Compliance Officer, Tower Helix-7",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Current: managing four active audit tracks while sitting on twelve years of encrypted evidence",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Kang-Petrov Arms KP-19 'Workhorse'"
-  ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Kang-Petrov Arms KP-19 'Workhorse'"
-  ],
-  "related_entities": [
-    "Vantage Meridian Corporate Campus",
-    "the_meridian_office_park",
-    "Deepwell Station",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Charcoal",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "CRUCIBLE Vantage Artisan Precision Hand",
-    "Silver",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Corner Slice",
-    "Brass"
-  ],
-  "district": "Meridian Core",
-  "physical_description": {
-    "heritage": "East Asian (32.9%), Eastern European (29.2%), Hispanic/Latin American (22.6%), Sub-Saharan African (12.8%), Middle Eastern (2.5%) — a striking diaspora blend. The combination yields warm golden-bronze skin with subtle undertones across the face, particularly at the cheekbones and bridge of nose where East Asian, African, and Hispanic heritage converge. Facial structure reflects the broad-set Eastern European bone structure with softer contours from East Asian ancestry and the warmth of Sub-Saharan African heritage throughout.",
-    "height_cm": 183,
-    "weight_kg": 78,
-    "build": "Tall and broad-shouldered with a composed, athletic frame — the kind of physique that suggests disciplined maintenance rather than vanity. Carries herself with deliberate mass.",
-    "hair_color": "Natural black with silver streaking throughout",
-    "hair_style": "Locs gathered into an architectural updo with precision pins, adding visual authority to her frame",
-    "hair_length": "Long (when down); pinned to shoulder-length when styled",
-    "eye_color": "Patterned amber and black rings (cosmetic augmentation); pupils responsive and alert",
-    "skin_tone": "Medium to deep warm golden-bronze complexion — the result of East Asian, Eastern European, and Sub-Saharan African heritage mixing with subtle warm undertones across cheekbones and bridge of nose, enriched by Hispanic/Latin American ancestry.",
-    "complexion": "Well-maintained skin with luminous golden undertones. Warm bronze cast across cheekbones and bridge of nose with deeper richness from Sub-Saharan African and East Asian heritage. The face shows balanced proportions reflecting both Eastern European width and East Asian refinement. Faint lines around the eyes deepen when she concentrates. Expression typically composed.",
-    "distinguishing_marks": [
-      "Faint circular scar on the left inner forearm — heat damage from the Calumet Rise collapse incident, mostly faded but visible under direct light.",
-      "Small brass ELF-shrine pendant worn on a thin chain beneath her collar, visible only when she leans forward."
-    ],
-    "visible_augmentations": "Patterned irises with subtle amber-and-black ring pulse under concentration. The subdermal temperature regulation mesh is not visible externally but causes minimal thermal irregularities detectable only through close thermal imaging. Neural compliance-assist chip is entirely subcutaneous—no visible port or indicator.",
-    "posture_movement": "Moves with controlled precision and deliberate pacing. Stands with spine perfectly vertical, shoulders set back. Her gaze lingers—direct eye contact held longer than typical, scanning for inconsistency. Hands rest flat on surfaces when seated, never fidgeting. When walking through corridors, she moves at a measured pace that forces others to either match her speed or step aside.",
-    "clothing_style": "Exclusively Helix-branded charcoal: tailored trousers with a razor crease, high-collared shirt or structured blazer, always pressed immaculately. Minimal jewelry — the pendant, a brushed-steel wrist display (compliance alerts), and a simple platinum band on her left ring finger (wedding or commitment, worn despite no public relationship record). Closed-toe corporate footwear, always polished. Tier 4 corporate, expensive without being ostentatious — the uniform of someone for whom appearance is infrastructure, not expression."
-  },
-  "image_prompt": "Akamu Kovács, tall composed woman with golden-bronze skin reflecting East Asian, Eastern European, Sub-Saharan African, and Hispanic heritage blended together, warm luminous complexion with deeper tones across cheekbones, patterned amber-and-black augmented irises, natural black locs with silver streaking pinned into architectural updo with precision, 183cm athletic frame with broad shoulders, wearing immaculate charcoal Helix-branded tailored trousers and high-collared structured blazer, pressed to perfection, minimal jewelry including brass ELF-shrine pendant at collar and platinum band, brushed-steel wrist display, closed-toe polished corporate footwear, standing with perfect vertical spine and deliberate posture, direct penetrating gaze, faint circular scar visible on left inner forearm, neo-noir corporate setting 2220s Great Lakes Metropolitan Zone, cool blue and amber neon lighting reflecting off polished surfaces, professional authority and controlled precision, corporate corridor or executive office background, --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 32.9,
-    "Eastern European": 29.2,
-    "Hispanic/Latin American": 22.6,
-    "Sub-Saharan African": 12.8,
-    "Middle Eastern": 2.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 21.7
-      },
-      "Japanese": {
-        "Japanese": 11.2
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Bulgarian": 23.7
-      },
-      "Slavic West": {
-        "Czech": 3.3,
-        "Slovak": 2.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 4.9,
-        "Salvadoran": 12.4
-      },
-      "South American": {
-        "Peruvian": 1.8
-      },
-      "Caribbean": {
-        "Cuban": 1.2,
-        "Puerto Rican": 2.3
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Kenyan": 4.4,
-        "Rwandan": 8.4
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 0.7,
-        "Tajik Persian": 0.9
-      },
-      "Arab Levantine": {
-        "Lebanese": 0.6,
-        "Palestinian": 0.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6b679159076fb8552b139b8",
+    "type":  "character",
+    "name":  "Akamu KovÃ¡cs",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Senior Compliance Officer, Helix Biosystems",
+    "age":  47,
+    "status":  "active",
+    "location":  "Vantage Meridian Corporate Campus, Tower Helix-7, near State and Jackson",
+    "description":  "Akamu KovÃ¡cs is a tall, broad-shouldered woman with deep umber skin and natural silver-streaked locs pinned in an architectural updo that adds another three centimeters to her already imposing height. Her eyes have patterned irises â€” rings of amber and black that pulse slightly when she\u0027s concentrating, a cosmetic mod she\u0027s had since her thirties that she considers her one professional indulgence. She dresses in structured Helix-branded charcoal, always pressed, always buttoned to the collar. A small brass ELF-shrine sits on the corner of her desk â€” a flat data-tile inlaid with offerings of compressed audit logs and a single dried marigold, left for the compliance spirit she privately calls the Accountant. She hasn\u0027t missed a quarterly ritual in eleven years.\n\nAkamu KovÃ¡cs operates with the calm authority of someone who has seen every flavor of institutional dishonesty and filed the paperwork on most of them. She is not cruel, but she is relentless â€” a distinction her subordinates appreciate and her peers quietly fear. She genuinely believes that rules exist to protect the people at the bottom of every org chart, which makes her simultaneously the most principled person in her building and the most dangerous to anyone running something off-book. She mentors junior compliance staff with real warmth, remembering every birthday, but will document a violation against a friend without blinking.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the systems she maintains are ultimately protecting the wrong people",
+                                          "That she will be asked to choose between her principles and someone she loves"
+                                      ],
+                       "core_desires":  [
+                                            "To build institutional structures that actually work for ordinary people",
+                                            "To be trusted â€” not liked, trusted"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual and routine as emotional regulation",
+                                                 "Channeling anxiety into documentation and preparedness",
+                                                 "The ELF-shrine ritual as a form of private prayer"
+                                             ],
+                       "blind_spots":  [
+                                           "She underestimates how much her institutional loyalty has been cultivated by Helix to serve Helix\u0027s interests, not the people she thinks she\u0027s protecting",
+                                           "She mistakes procedural correctness for moral correctness more often than she realizes"
+                                       ],
+                       "secret":  "Twelve years ago she buried a compliance finding that would have exposed a Helix executive â€” not for money, but because the finding would have triggered a lab shutdown that would have killed a clinical trial her younger brother was enrolled in. He survived. The executive is now a division director. The finding has never resurfaced, but Rosamund keeps a copy encrypted on a dead-drop server she checks every month, unable to either use it or delete it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, formal without being stiff â€” she uses regulatory terminology fluently but can translate it into plain language instantly. Rarely uses slang but knows what it means.",
+                            "cadence":  "Measured and deliberate, with long pauses before significant statements. Never rushes. When she rushes, something is wrong.",
+                            "verbal_tics":  [
+                                                "\u0027Let me be precise about this.\u0027",
+                                                "\u0027That\u0027s a concern I\u0027ve noted.\u0027",
+                                                "A habit of repeating the last three words of something she finds alarming, very quietly, as if testing whether she heard it right."
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You\u0027re describing a pattern, not an incident. Patterns are what I care about.\u0027",
+                                                  "\u0027I\u0027m not here to make your life difficult. I\u0027m here because someone, somewhere decided to make my job necessary.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She approaches someone with a sealed evidence packet and a single instruction: \u0027If something happens to me in the next seventy-two hours, deliver this to the ELF-shrine at Deepwell Station. The spirit there knows what to do with it.\u0027",
+                        "A junior compliance tech she mentored has just gone missing the day after flagging an anomaly in a Helix gene-therapy trial. Rosamund is holding the flagged report and is visibly frightened for the first time anyone can remember.",
+                        "She is auditing a location where the players have personal connections, and her findings â€” entirely accurate â€” will cause serious collateral damage to people who don\u0027t deserve it."
+                    ],
+    "narrative_function":  "Quest giver for investigations into Helix Biosystems irregularities; information source on corporate legal structure and biotech regulation; moral anchor character who represents institutional integrity under pressure; can become an antagonist if players are doing something technically illegal even for good reasons.",
+    "augmentations":  "Patterned irises (cosmetic, amber/black rings). Subdermal temperature regulation mesh â€” medical, installed after a heat-collapse incident during a site audit in the Calumet Rise biolabs. Neural compliance-assist chip for rapid cross-referencing regulatory code databases (standard Helix issue for senior compliance staff).",
+    "daily_life":  "Arrives at Tower Helix-7 by 07:15 every morning, leaves a data-offering at her desk shrine, and reviews overnight flagged anomalies before her first meeting at 08:00. Eats lunch alone at her desk four days out of five, reading audit trails the way other people read novels.",
+    "affiliation":  "Palladian Construction (mid-level senior compliance officer)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  9,
+                                 "creativity":  5,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  6,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "institutional",
+                               "principled",
+                               "methodical",
+                               "quietly-dangerous",
+                               "burdened"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always document before acting",
+                                              "Never make a threat she isn\u0027t prepared to follow through on",
+                                              "Give one warning, clearly, before escalating"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite formal inquiry with documented timestamp",
+                                                 "Formal notice of violation with deadline for remediation",
+                                                 "Full audit trigger with executive notification â€” no further warnings"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally courteous, somewhat reserved, assessing. Asks more questions than she answers.",
+                                                   "friends":  "Warmer than her professional persona suggests â€” dry humor, genuine interest in people\u0027s lives, remembers small details about them with almost unsettling accuracy."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes quieter and more deliberate. Checks her shrine.",
+                                                "medium":  "Hyperfocuses on documentation. Stays late. Stops eating regular meals.",
+                                                "high":  "Goes completely still. Makes decisions quickly and without visible emotion. Becomes frightening."
+                                            },
+                       "contradictions":  [
+                                              "She enforces rules with absolute consistency but secretly believes the most important rules are the unwritten ones she decided on herself"
+                                          ],
+                       "habits":  [
+                                      "Straightens everything on her desk before leaving, always in the same order",
+                                      "Carries a physical notebook â€” paper, pen â€” and writes things down before entering them digitally",
+                                      "Checks the dead-drop server on the first of every month, always at 02:00"
+                                  ],
+                       "breaking_points":  [
+                                               "Evidence that Helix is deliberately harming trial participants â€” not negligence, deliberate harm â€” would force her to use the buried finding regardless of the personal cost"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9,
+                       "People Pleaser":  0.9,
+                       "Con Artist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Vantage Meridian Corporate Campus",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Kenwood Gate to a Ghanaian-Dutch family with three generations of civic service",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Hired as junior compliance analyst at Helix Biosystems",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Buried the executive compliance finding to protect her brother\u0027s trial enrollment",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Promoted to Senior Compliance Officer, Tower Helix-7",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Current: managing four active audit tracks while sitting on twelve years of encrypted evidence",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-R44 Heritage \u0027Legacy\u0027",
+                            "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Volkov-Saito Precision VS-R44 Heritage \u0027Legacy\u0027",
+                                "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027"
+                            ],
+    "related_entities":  [
+                             "Vantage Meridian Corporate Campus",
+                             "the_meridian_office_park",
+                             "Deepwell Station",
+                             "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "Charcoal",
+                             "Lazarus Pharmaceuticals Endocrine Regulator â€” \u0027Stillwater\u0027",
+                             "Ossuary Arms Memento Vivere OA-7 \u0027Momento\u0027",
+                             "CRUCIBLE Vantage Artisan Precision Hand",
+                             "Silver",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Corner Slice",
+                             "Brass"
+                         ],
+    "district":  "Meridian Core",
+    "physical_description":  {
+                                 "heritage":  "East Asian (32.9%), Eastern European (29.2%), Hispanic/Latin American (22.6%), Sub-Saharan African (12.8%), Middle Eastern (2.5%) â€” a striking diaspora blend. The combination yields warm golden-bronze skin with subtle undertones across the face, particularly at the cheekbones and bridge of nose where East Asian, African, and Hispanic heritage converge. Facial structure reflects the broad-set Eastern European bone structure with softer contours from East Asian ancestry and the warmth of Sub-Saharan African heritage throughout.",
+                                 "height_cm":  183,
+                                 "weight_kg":  78,
+                                 "build":  "Tall and broad-shouldered with a composed, athletic frame â€” the kind of physique that suggests disciplined maintenance rather than vanity. Carries herself with deliberate mass.",
+                                 "hair_color":  "Natural black with silver streaking throughout",
+                                 "hair_style":  "Locs gathered into an architectural updo with precision pins, adding visual authority to her frame",
+                                 "hair_length":  "Long (when down); pinned to shoulder-length when styled",
+                                 "eye_color":  "Patterned amber and black rings (cosmetic augmentation); pupils responsive and alert",
+                                 "skin_tone":  "Medium to deep warm golden-bronze complexion â€” the result of East Asian, Eastern European, and Sub-Saharan African heritage mixing with subtle warm undertones across cheekbones and bridge of nose, enriched by Hispanic/Latin American ancestry.",
+                                 "complexion":  "Well-maintained skin with luminous golden undertones. Warm bronze cast across cheekbones and bridge of nose with deeper richness from Sub-Saharan African and East Asian heritage. The face shows balanced proportions reflecting both Eastern European width and East Asian refinement. Faint lines around the eyes deepen when she concentrates. Expression typically composed.",
+                                 "distinguishing_marks":  [
+                                                              "Faint circular scar on the left inner forearm â€” heat damage from the Calumet Rise collapse incident, mostly faded but visible under direct light.",
+                                                              "Small brass ELF-shrine pendant worn on a thin chain beneath her collar, visible only when she leans forward."
+                                                          ],
+                                 "visible_augmentations":  "Patterned irises with subtle amber-and-black ring pulse under concentration. The subdermal temperature regulation mesh is not visible externally but causes minimal thermal irregularities detectable only through close thermal imaging. Neural compliance-assist chip is entirely subcutaneousâ€”no visible port or indicator.",
+                                 "posture_movement":  "Moves with controlled precision and deliberate pacing. Stands with spine perfectly vertical, shoulders set back. Her gaze lingersâ€”direct eye contact held longer than typical, scanning for inconsistency. Hands rest flat on surfaces when seated, never fidgeting. When walking through corridors, she moves at a measured pace that forces others to either match her speed or step aside.",
+                                 "clothing_style":  "Exclusively Helix-branded charcoal: tailored trousers with a razor crease, high-collared shirt or structured blazer, always pressed immaculately. Minimal jewelry â€” the pendant, a brushed-steel wrist display (compliance alerts), and a simple platinum band on her left ring finger (wedding or commitment, worn despite no public relationship record). Closed-toe corporate footwear, always polished. Tier 4 corporate, expensive without being ostentatious â€” the uniform of someone for whom appearance is infrastructure, not expression."
+                             },
+    "image_prompt":  "Akamu KovÃ¡cs, tall composed woman with golden-bronze skin reflecting East Asian, Eastern European, Sub-Saharan African, and Hispanic heritage blended together, warm luminous complexion with deeper tones across cheekbones, patterned amber-and-black augmented irises, natural black locs with silver streaking pinned into architectural updo with precision, 183cm athletic frame with broad shoulders, wearing immaculate charcoal Helix-branded tailored trousers and high-collared structured blazer, pressed to perfection, minimal jewelry including brass ELF-shrine pendant at collar and platinum band, brushed-steel wrist display, closed-toe polished corporate footwear, standing with perfect vertical spine and deliberate posture, direct penetrating gaze, faint circular scar visible on left inner forearm, neo-noir corporate setting 2220s Great Lakes Metropolitan Zone, cool blue and amber neon lighting reflecting off polished surfaces, professional authority and controlled precision, corporate corridor or executive office background, --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  32.9,
+                             "Eastern European":  29.2,
+                             "Hispanic/Latin American":  22.6,
+                             "Sub-Saharan African":  12.8,
+                             "Middle Eastern":  2.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  21.7
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  11.2
+                                                            }
+                                           },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Bulgarian":  23.7
+                                                                      },
+                                                     "Slavic West":  {
+                                                                         "Czech":  3.3,
+                                                                         "Slovak":  2.2
+                                                                     }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  4.9,
+                                                                                     "Salvadoran":  12.4
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Peruvian":  1.8
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  1.2,
+                                                                              "Puerto Rican":  2.3
+                                                                          }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Kenyan":  4.4,
+                                                                             "Rwandan":  8.4
+                                                                         }
+                                                    },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  0.7,
+                                                                   "Tajik Persian":  0.9
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Lebanese":  0.6,
+                                                                          "Palestinian":  0.3
+                                                                      }
+                                               }
+                        },
+    "tier":  "3"
 }

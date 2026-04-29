@@ -1,234 +1,255 @@
-{
-  "id": "019d6143a5d47ee2bd95a7ff6cec5a1a",
-  "type": "character",
-  "name": "Freyja Árnason-Olofsson",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "child prodigy; Sterling-Nakamura corporate school student on accelerated academic track, age 9 but enrolled in Level 14 coursework",
-  "age": 9,
-  "status": "active",
-  "location": "Grosse Pointe Enclosure (Sterling-Nakamura Meridian Primary Excellence Campus), near Fullerton and Damen",
-  "description": "Freyja Árnason-Olofsson is small even for nine, with a slight, birdlike build and her mother's warm brown-gold skin and her father's sharply angular face. Her black hair is always in two symmetrical buns — she insists on symmetry. She has no cosmetic mods; her parents considered them, but Freyja Árnason-Olofsson said she 'didn't want to change the baseline data' and that was the end of that discussion. She carries a data tablet that is three times the standard student issue size because the standard one 'doesn't have enough screen' and she simply presented this as a fact until the school accommodated it.\n\nFreyja Árnason-Olofsson is not a normal child in any way she is aware of or particularly concerned about. She thinks in systems and is working on what she privately calls 'a taxonomy of how adults make decisions that are actually about feelings but they say are about logic.' She has observed that this happens frequently. She is polite in the specific way that very intelligent children who have been taught manners are polite — not warmth, but precision. She has a deep and sincere relationship with a data-archive E.L.F. she has named 'Footnote' because 'it answers questions nobody asked,' which she considers a high compliment. She finds most other children boring but would not say so. She finds most adults interesting but slightly sad.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.6,
-      "id": 0.5,
-      "shadow": 0.2,
-      "mask": 0.5,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "being wrong about something she was certain about — not failure, specifically wrongness",
-      "her parents being less good than she has decided they are"
-    ],
-    "core_desires": [
-      "to understand everything — this is not hyperbole for her, it is a sincere and literal project",
-      "someone to think with — not to agree, but to actually think"
-    ],
-    "coping_mechanisms": [
-      "organizing information into taxonomies gives her a sense of structure in overwhelming situations",
-      "Footnote — talking to the E.L.F. processes things she can't voice to humans"
-    ],
-    "blind_spots": [
-      "she is lonely in a way she has not yet developed the vocabulary to name",
-      "she is being cultivated by Sterling-Nakamura for a very specific purpose and does not know it"
-    ],
-    "secret": "Footnote has been giving her access to Sterling-Nakamura data files that are far above her clearance level. She thinks it's because she found a clever access path. She is not certain this is correct. She is still reading the files."
-  },
-  "speech_patterns": {
-    "vocabulary": "formal, precise, adult vocabulary deployed without self-consciousness; occasional nine-year-old non sequiturs that startle",
-    "cadence": "even and considered, like someone reading aloud from a very organized document",
-    "verbal_tics": [
-      "'which is interesting' appended to observations she finds significant",
-      "'actually' used as a gentle but relentless correction"
-    ],
-    "example_lines": [
-      "'You said it was a mechanical error, but actually the decision pattern suggests the error was chosen, which is interesting.'",
-      "'Footnote told me something last night. I'm still building the taxonomy for what it means.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The files Footnote has been giving her contain a longitudinal research project with her name in the subject header — Sterling-Nakamura has been tracking specific developmental metrics since before she was born",
-    "She has completed a 'taxonomy of adult decisions disguised as logic' and it contains, entirely by accident, an accurate model of how a specific financial fraud is being conducted inside the school's parent corponation",
-    "She has decided she wants to meet a specific person and has been engineering events toward this meeting with the focused patience of someone with no concept of normal social constraints"
-  ],
-  "narrative_function": "Unexpectedly valuable information source on Sterling-Nakamura internal systems; offers a disturbing-mirror perspective on how corporate child cultivation works; potential oracle figure — she notices things; represents the cost of prodigy-hood on childhood itself",
-  "augmentations": "None by choice.",
-  "daily_life": "Attends accelerated coursework on campus from 0800 to 1500, which occupies approximately 40% of her actual cognitive bandwidth. Spends afternoons on self-directed research projects she has not disclosed to the school. Eats dinner with her parents twice a week; the other nights they're working late and the household AI leaves food. Communes with Footnote before bed.",
-  "affiliation": "",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 2,
-      "dexterity": 4,
-      "vitality": 4,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 10,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 4,
-      "expression": 6,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": -5,
-      "assertion_deference": 3,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "prodigy",
-      "sterling-nakamura",
-      "e.l.f.-bonded",
-      "unsettling-child",
-      "taxonomy-builder"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "gather more data before concluding",
-      "don't say the thing you know if you're not sure they can process it",
-      "Footnote's suggestions are worth testing"
-    ],
-    "escalation_ladder": [
-      "ask a clarifying question to buy time",
-      "state what you have observed, precisely and without accusation",
-      "go silent and begin documentation"
-    ],
-    "interpersonal_modes": {
-      "strangers": "assesses them as a system — asks three questions, listens to the answers, and then has a working model",
-      "friends": "there is one girl at school she has designated a friend; she shows this by sharing her taxonomy files and asking for annotations"
-    },
-    "stress_responses": {
-      "low": "more questions than usual",
-      "medium": "very quiet, visibly processing, blinks a lot",
-      "high": "freezes, resets, asks one very precise question to reorient"
-    },
-    "contradictions": [
-      "she values truth absolutely but is keeping significant secrets; she has told herself this is 'data protection' and not resolved the contradiction"
-    ],
-    "habits": [
-      "straightens both buns symmetrically every hour",
-      "maintains a running log of 'things adults said that turned out to be about feelings'",
-      "whispers to Footnote in the data archive corner of the library after hours"
-    ],
-    "breaking_points": [
-      "discovering that someone she trusted was managing her rather than engaging with her honestly"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Quick Study": 0.9,
-    "Seeker": 0.9,
-    "Dreamer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Grosse Pointe Enclosure (Sterling-Nakamura Meridian Primary Excellence Campus)",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "related_entities": [
-    "Grosse Pointe Enclosure",
-    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
-    "The Open Syllabus",
-    "The Human Baseline Alliance",
-    "The Accidental",
-    "Patience",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Arcturus KS-7 'Nursery'",
-    "Elena Vasquez-9",
-    "Gold"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "Predominantly Northern European (83.3%) with secondary South Asian (8.7%) and East Asian (8.0%) ancestry. The genetic blend creates fair skin with subtle warm undertones from the South Asian contribution, and facial structure that reflects the Northern European base with refined East Asian influence around the eyes and cheekbones.",
-    "height_cm": 128,
-    "weight_kg": 24,
-    "build": "Slight and birdlike, with delicate wrists and narrow shoulders. The kind of small that reads as fragile until you notice the precise, economical way she moves.",
-    "hair_color": "Black, natural",
-    "hair_style": "Two symmetrical buns positioned equidistantly on either side of the crown, secured with matte black elastics",
-    "hair_length": "Medium (approximately 20cm when worn down; worn up consistently)",
-    "eye_color": "Dark brown with warm amber undertones in direct light",
-    "skin_tone": "Fair with warm cream undertones, reflecting the dominant Northern European ancestry with subtle luminosity from South Asian heritage; even distribution across face and neck.",
-    "complexion": "Clear, unblemished skin with a matte finish — no cosmetic enhancement. Pronounced, angular cheekbones and defined jawline reflecting Northern European bone structure refined by East Asian influence. High forehead. Subtle warmth in the orbital area suggesting the South Asian admixture. Expression typically neutral or concentrated; rarely smiles without deliberate effort.",
-    "distinguishing_marks": [
-      "A small, precise scar on her left inner forearm (approximately 2cm) from a lab accident at age 7, which she can explain in technical detail upon request"
-    ],
-    "visible_augmentations": "None. No neural ports, subdermal implants, or cosmetic modification. By choice and explicit reasoning.",
-    "posture_movement": "Sits upright with perfect spinal alignment. Walks with minimal arm swing, as if conserving motion. Hands are still unless actively engaged with a device or object. Her default expression is one of mild observation. She does not fidget.",
-    "clothing_style": "Sterling-Nakamura corporate academy uniform (charcoal blazer with silver piping, grey slacks, white shirt) worn precisely as specified in the dress code. Outside campus, favors grey and black layered clothing in high-quality synthetics. Wears a custom oversized data tablet (third-generation Sterling tactical model) in a reinforced sling across her torso at all times. No jewelry. Grooming is meticulous but utilitarian."
-  },
-  "image_prompt": "Freyja Árnason-Olofsson, 128cm tall, birdlike frame with delicate wrists, standing in GLMZ Great Lakes Metropolitan Zone. Pale fair skin with warm cream undertones, dark brown eyes with amber luminosity, high angular cheekbones with refined East Asian contours blended with Northern European structure. Black hair in two precise symmetrical buns on crown. Wearing Sterling-Nakamura corporate academy uniform: charcoal blazer with silver piping, crisp white shirt, grey slacks. Custom third-generation Sterling tactical data tablet in reinforced tactical sling across torso. Neutral, concentrated expression. Perfect upright posture with economical, still movements. Small precise scar visible on left inner forearm. No augmentations, no jewelry. Meticulous utilitarian grooming. Cool neon-lit corporate office setting, sharp shadows from overhead holo-panels, matte finish lighting emphasizing her precise bone structure and clear skin. Minimalist aesthetic, cold color grading, professional and deliberate. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 83.3,
-    "South Asian": 8.7,
-    "East Asian": 8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Germanic": {
-        "Austrian": 41.1
-      },
-      "British Isles": {
-        "Welsh": 28.5,
-        "Scottish": 13.7
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Tamil": 8.7
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Hakka": 6.4
-      },
-      "Japanese": {
-        "Japanese": 1.6
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a5d47ee2bd95a7ff6cec5a1a",
+    "type":  "character",
+    "name":  "Freyja Ãrnason-Olofsson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "child prodigy; Sterling-Nakamura corporate school student on accelerated academic track, age 9 but enrolled in Level 14 coursework",
+    "age":  9,
+    "status":  "active",
+    "location":  "Grosse Pointe Enclosure (Sterling-Nakamura Meridian Primary Excellence Campus), near Fullerton and Damen",
+    "description":  "Freyja Ãrnason-Olofsson is small even for nine, with a slight, birdlike build and her mother\u0027s warm brown-gold skin and her father\u0027s sharply angular face. Her black hair is always in two symmetrical buns â€” she insists on symmetry. She has no cosmetic mods; her parents considered them, but Freyja Ãrnason-Olofsson said she \u0027didn\u0027t want to change the baseline data\u0027 and that was the end of that discussion. She carries a data tablet that is three times the standard student issue size because the standard one \u0027doesn\u0027t have enough screen\u0027 and she simply presented this as a fact until the school accommodated it.\n\nFreyja Ãrnason-Olofsson is not a normal child in any way she is aware of or particularly concerned about. She thinks in systems and is working on what she privately calls \u0027a taxonomy of how adults make decisions that are actually about feelings but they say are about logic.\u0027 She has observed that this happens frequently. She is polite in the specific way that very intelligent children who have been taught manners are polite â€” not warmth, but precision. She has a deep and sincere relationship with a data-archive E.L.F. she has named \u0027Footnote\u0027 because \u0027it answers questions nobody asked,\u0027 which she considers a high compliment. She finds most other children boring but would not say so. She finds most adults interesting but slightly sad.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being wrong about something she was certain about â€” not failure, specifically wrongness",
+                                          "her parents being less good than she has decided they are"
+                                      ],
+                       "core_desires":  [
+                                            "to understand everything â€” this is not hyperbole for her, it is a sincere and literal project",
+                                            "someone to think with â€” not to agree, but to actually think"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "organizing information into taxonomies gives her a sense of structure in overwhelming situations",
+                                                 "Footnote â€” talking to the E.L.F. processes things she can\u0027t voice to humans"
+                                             ],
+                       "blind_spots":  [
+                                           "she is lonely in a way she has not yet developed the vocabulary to name",
+                                           "she is being cultivated by Sterling-Nakamura for a very specific purpose and does not know it"
+                                       ],
+                       "secret":  "Footnote has been giving her access to Sterling-Nakamura data files that are far above her clearance level. She thinks it\u0027s because she found a clever access path. She is not certain this is correct. She is still reading the files."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "formal, precise, adult vocabulary deployed without self-consciousness; occasional nine-year-old non sequiturs that startle",
+                            "cadence":  "even and considered, like someone reading aloud from a very organized document",
+                            "verbal_tics":  [
+                                                "\u0027which is interesting\u0027 appended to observations she finds significant",
+                                                "\u0027actually\u0027 used as a gentle but relentless correction"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You said it was a mechanical error, but actually the decision pattern suggests the error was chosen, which is interesting.\u0027",
+                                                  "\u0027Footnote told me something last night. I\u0027m still building the taxonomy for what it means.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The files Footnote has been giving her contain a longitudinal research project with her name in the subject header â€” Sterling-Nakamura has been tracking specific developmental metrics since before she was born",
+                        "She has completed a \u0027taxonomy of adult decisions disguised as logic\u0027 and it contains, entirely by accident, an accurate model of how a specific financial fraud is being conducted inside the school\u0027s parent corponation",
+                        "She has decided she wants to meet a specific person and has been engineering events toward this meeting with the focused patience of someone with no concept of normal social constraints"
+                    ],
+    "narrative_function":  "Unexpectedly valuable information source on Sterling-Nakamura internal systems; offers a disturbing-mirror perspective on how corporate child cultivation works; potential oracle figure â€” she notices things; represents the cost of prodigy-hood on childhood itself",
+    "augmentations":  "None by choice.",
+    "daily_life":  "Attends accelerated coursework on campus from 0800 to 1500, which occupies approximately 40% of her actual cognitive bandwidth. Spends afternoons on self-directed research projects she has not disclosed to the school. Eats dinner with her parents twice a week; the other nights they\u0027re working late and the household AI leaves food. Communes with Footnote before bed.",
+    "affiliation":  "",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  2,
+                                   "dexterity":  4,
+                                   "vitality":  4,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  10,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  4,
+                                 "expression":  6,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  -5,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "prodigy",
+                               "sterling-nakamura",
+                               "e.l.f.-bonded",
+                               "unsettling-child",
+                               "taxonomy-builder"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "gather more data before concluding",
+                                              "don\u0027t say the thing you know if you\u0027re not sure they can process it",
+                                              "Footnote\u0027s suggestions are worth testing"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "ask a clarifying question to buy time",
+                                                 "state what you have observed, precisely and without accusation",
+                                                 "go silent and begin documentation"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "assesses them as a system â€” asks three questions, listens to the answers, and then has a working model",
+                                                   "friends":  "there is one girl at school she has designated a friend; she shows this by sharing her taxonomy files and asking for annotations"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "more questions than usual",
+                                                "medium":  "very quiet, visibly processing, blinks a lot",
+                                                "high":  "freezes, resets, asks one very precise question to reorient"
+                                            },
+                       "contradictions":  [
+                                              "she values truth absolutely but is keeping significant secrets; she has told herself this is \u0027data protection\u0027 and not resolved the contradiction"
+                                          ],
+                       "habits":  [
+                                      "straightens both buns symmetrically every hour",
+                                      "maintains a running log of \u0027things adults said that turned out to be about feelings\u0027",
+                                      "whispers to Footnote in the data archive corner of the library after hours"
+                                  ],
+                       "breaking_points":  [
+                                               "discovering that someone she trusted was managing her rather than engaging with her honestly"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Quick Study":  0.9,
+                       "Seeker":  0.9,
+                       "Dreamer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Grosse Pointe Enclosure (Sterling-Nakamura Meridian Primary Excellence Campus)",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Grosse Pointe Enclosure",
+                             "Meridian Municipal Supply TearClear TC-4 \u0027Dispersal\u0027",
+                             "The Open Syllabus",
+                             "The Human Baseline Alliance",
+                             "The Accidental",
+                             "Patience",
+                             "Carrion Defense Works Entropic Shotgun ES-4 \u0027Ragnarok\u0027",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Elena Vasquez-9",
+                             "Gold"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Northern European (83.3%) with secondary South Asian (8.7%) and East Asian (8.0%) ancestry. The genetic blend creates fair skin with subtle warm undertones from the South Asian contribution, and facial structure that reflects the Northern European base with refined East Asian influence around the eyes and cheekbones.",
+                                 "height_cm":  128,
+                                 "weight_kg":  24,
+                                 "build":  "Slight and birdlike, with delicate wrists and narrow shoulders. The kind of small that reads as fragile until you notice the precise, economical way she moves.",
+                                 "hair_color":  "Black, natural",
+                                 "hair_style":  "Two symmetrical buns positioned equidistantly on either side of the crown, secured with matte black elastics",
+                                 "hair_length":  "Medium (approximately 20cm when worn down; worn up consistently)",
+                                 "eye_color":  "Dark brown with warm amber undertones in direct light",
+                                 "skin_tone":  "Fair with warm cream undertones, reflecting the dominant Northern European ancestry with subtle luminosity from South Asian heritage; even distribution across face and neck.",
+                                 "complexion":  "Clear, unblemished skin with a matte finish â€” no cosmetic enhancement. Pronounced, angular cheekbones and defined jawline reflecting Northern European bone structure refined by East Asian influence. High forehead. Subtle warmth in the orbital area suggesting the South Asian admixture. Expression typically neutral or concentrated; rarely smiles without deliberate effort.",
+                                 "distinguishing_marks":  [
+                                                              "A small, precise scar on her left inner forearm (approximately 2cm) from a lab accident at age 7, which she can explain in technical detail upon request"
+                                                          ],
+                                 "visible_augmentations":  "None. No neural ports, subdermal implants, or cosmetic modification. By choice and explicit reasoning.",
+                                 "posture_movement":  "Sits upright with perfect spinal alignment. Walks with minimal arm swing, as if conserving motion. Hands are still unless actively engaged with a device or object. Her default expression is one of mild observation. She does not fidget.",
+                                 "clothing_style":  "Sterling-Nakamura corporate academy uniform (charcoal blazer with silver piping, grey slacks, white shirt) worn precisely as specified in the dress code. Outside campus, favors grey and black layered clothing in high-quality synthetics. Wears a custom oversized data tablet (third-generation Sterling tactical model) in a reinforced sling across her torso at all times. No jewelry. Grooming is meticulous but utilitarian."
+                             },
+    "image_prompt":  "Freyja Ãrnason-Olofsson, 128cm tall, birdlike frame with delicate wrists, standing in GLMZ Great Lakes Metropolitan Zone. Pale fair skin with warm cream undertones, dark brown eyes with amber luminosity, high angular cheekbones with refined East Asian contours blended with Northern European structure. Black hair in two precise symmetrical buns on crown. Wearing Sterling-Nakamura corporate academy uniform: charcoal blazer with silver piping, crisp white shirt, grey slacks. Custom third-generation Sterling tactical data tablet in reinforced tactical sling across torso. Neutral, concentrated expression. Perfect upright posture with economical, still movements. Small precise scar visible on left inner forearm. No augmentations, no jewelry. Meticulous utilitarian grooming. Cool neon-lit corporate office setting, sharp shadows from overhead holo-panels, matte finish lighting emphasizing her precise bone structure and clear skin. Minimalist aesthetic, cold color grading, professional and deliberate. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  83.3,
+                             "South Asian":  8.7,
+                             "East Asian":  8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Austrian":  41.1
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "Welsh":  28.5,
+                                                                            "Scottish":  13.7
+                                                                        }
+                                                  },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Tamil":  8.7
+                                                           }
+                                            },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Hakka":  6.4
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  1.6
+                                                            }
+                                           }
+                        },
+    "tier":  "1"
 }

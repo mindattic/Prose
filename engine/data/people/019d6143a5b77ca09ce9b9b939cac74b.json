@@ -1,334 +1,347 @@
-{
-  "id": "019d6143a5b77ca09ce9b9b939cac74b",
-  "type": "character",
-  "name": "Bartosz Cho",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Counter-surveillance and mole detection — counterintelligence specialist",
-  "age": 29,
-  "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators, near Fullerton and Damen",
-  "description": "Bartosz Cho is lean and angular, all sharp edges and visible tension. At 29, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a counterintelligence specialist out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nBartosz Cho has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.58,
-      "ideal": 0.71,
-      "id": 0.86,
-      "shadow": 0.73,
-      "mask": 0.35,
-      "ghost": 0.48
-    },
-    "core_fears": [
-      "Their past catching up — debts, enemies, broken promises",
-      "The quiet — silence means something is about to go very wrong",
-      "That the work they do makes the city worse, not better"
-    ],
-    "core_desires": [
-      "Justice — the corporate kind, where the punishment fits the profit margin",
-      "To build something that outlasts the next contract cycle",
-      "Knowledge — to understand the systems that grind people down"
-    ],
-    "coping_mechanisms": [
-      "Compartmentalization — work feelings and personal feelings exist in separate boxes",
-      "Isolates — retreats into their space when overwhelmed, emerges only for work",
-      "Ritual — follows the same pre-job routine every time, superstition as structure"
-    ],
-    "blind_spots": [
-      "Cannot distinguish between caution and cowardice in themselves or others",
-      "Trusts technology more than people — machines don't betray",
-      "Thinks speed can substitute for planning because it's worked so far"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
-    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
-    "verbal_tics": [
-      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries",
-      "Uses technical jargon for everything, including emotions"
-    ],
-    "example_lines": [
-      "\"Everyone in this room is lying. My job is knowing who's lying about what.\"",
-      "\"Paranoia isn't a disorder in this profession. It's a job requirement.\"",
-      "\"I find the leak. What happens to the leak after that isn't my department.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Tier 4 executive offers Arseniy Granlund-Tawiah a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "A corporate black site Arseniy Granlund-Tawiah once infiltrated is being reopened, and the people inside know her face",
-    "Arseniy Granlund-Tawiah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
-  ],
-  "narrative_function": "Arseniy Granlund-Tawiah functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Reflex boosters wired into spinal column — shaves reaction time by 40ms. Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
-  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Freelance — works the Gray Zone circuit exclusively",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 7
-      },
-      "agility": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 10
-      },
-      "reflexes": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 9
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 5
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 10
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 10
-      },
-      "technical": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 8
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 8
-      },
-      "intimidation": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 5
-      },
-      "deception": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 7
-      },
-      "empathy": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 8
-      }
-    },
-    "personality": {
-      "aggression": 0.61,
-      "caution": 0.39,
-      "loyalty": 0.88,
-      "greed": 0.84,
-      "empathy": 0.34
-    },
-    "drives": [
-      "reputation",
-      "power",
-      "revenge"
-    ],
-    "thresholds": {
-      "pain": 4,
-      "stress": 8,
-      "loyalty_break": 10
-    },
-    "strengths": [
-      "natural leadership presence",
-      "pain tolerance beyond normal limits",
-      "ability to remain calm under fire"
-    ],
-    "weaknesses": [
-      "trust issues that limit crew effectiveness",
-      "chronic insomnia affecting long-term performance",
-      "augmentation dependency — performance drops sharply if chrome malfunctions"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "counterintelligence specialist",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never discusses active contracts with anyone not directly involved",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Always has an exit route planned before agreeing to any meeting",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
-      "Insists they work alone but performs noticeably better in a team",
-      "Projects confidence but makes decisions from a foundation of fear they've never examined"
-    ],
-    "habits": [
-      "Checks exits within 10 seconds of entering any room",
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Practices a kata or fighting form every morning regardless of circumstances"
-    ],
-    "breaking_points": [
-      "Being publicly exposed — name, face, address, all of it blown",
-      "Running out of options — no contacts, no money, no safe house, no way out",
-      "Losing their primary augmentation — the one that defines their professional identity"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Reflex boosters wired into spinal column",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Reflex boosters wired into spinal column — shaves reaction time by 40ms",
-      "replaces": ""
-    },
-    {
-      "name": "Gecko-grip fingertip implants and toe pads",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Geartown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Nearfield",
-    "Geartown",
-    "Neuromorphic Pressure Cestus",
-    "Slagworks Industrial"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Predominantly South Asian (49%) with substantial East Asian (37.2%) and Southeast Asian (13.8%) ancestry. This genetic combination produces warm medium-to-deep brown skin with golden and honey undertones characteristic of South Asian heritage, refined by the sharp angular features and high prominent cheekbones from East Asian genetics. The Southeast Asian component contributes refined bone structure, subtle warmth depth, and the integrated aesthetic that bridges the other ancestries seamlessly.",
-    "height_cm": 172,
-    "weight_kg": 58,
-    "build": "Lean and angular with visible musculature — low body fat, wiry frame built for speed and endurance rather than strength. Shoulders slightly asymmetrical from old injury or chronic tension.",
-    "hair_color": "Dark brown with early-stage silver threading at temples",
-    "hair_style": "Pulled back in a tight, functional braid — no ornamentation",
-    "hair_length": "Long",
-    "eye_color": "Deep brown with pale grey-blue rim and faint stress lines radiating outward — unusual dual-tone coloration suggesting genetic complexity or subtle cybernetic enhancement",
-    "skin_tone": "Warm deep brown with golden and honey undertones — South Asian base harmoniously blended with East and Southeast Asian heritage creating rich, unified depth across face and body",
-    "complexion": "Weathered for her age. High, prominent cheekbones with sharp, refined facial planes characteristic of the South and East Asian genetic blend. Extensive scarring across left cheekbone (three parallel lines, old blade work), smaller scar tissue along right temple (impact), faint burn mark along jawline. Minimal makeup, meticulous grooming despite working lifestyle.",
-    "distinguishing_marks": [
-      "Three parallel blade scars running diagonally across left cheekbone, approximately 8cm total length, white and well-healed",
-      "Impact scar on right temple just above hairline, crescent-shaped, approximately 2cm, silvered tissue",
-      "Burn scar along right jawline below ear, faint and thin, approximately 4cm in length",
-      "Thin white scar running along inside of left wrist — longitudinal, approximately 6cm, surgical precision"
-    ],
-    "visible_augmentations": "Chrome reflex booster hardware visible along spine — brushed steel nodes running from mid-thoracic to sacrum, approximately 2cm diameter, interconnected with faint luminescent tracery when active. Fingertips show faint geometric patterning under skin (gecko-grip implant ports) visible only in certain light. No attempt to conceal augmentation work.",
-    "posture_movement": "Economical and precise — minimal wasted motion. Walks with weight on balls of feet, ready to shift direction. Sits with back to wall and clear sightlines. Hands rest within 15cm of body. Eyes track movement constantly. Overall impression: coiled spring.",
-    "clothing_style": "Tier 4 utilitarian — function over aesthetics. Dark textiles (charcoal, black, deep blue) in durable synthetics and treated canvas. Reinforced cargo pants with custom thigh holster rig. Fitted tactical jacket (matte black, multiple pockets, cable management built in). Worn Geartown-manufacture climbing boots with custom grip soles. No logos or visible branding. Jewelry: only a scratched chronometer on left wrist, military-grade, probably scavenged. Overall aesthetic: prepared for immediate action, zero flash."
-  },
-  "image_prompt": "Bartosz Cho, 172cm lean angular frame, warm deep brown skin with golden honey undertones blending South Asian, East Asian, and Southeast Asian heritage. Sharp high prominent cheekbones, weathered complexion. Long dark brown hair with silver threading pulled in tight functional braid. Deep brown eyes with pale grey-blue rim. Three parallel blade scars on left cheekbone, crescent scar on right temple, faint burn mark along jawline, surgical scar on left wrist. Chrome reflex booster nodes visible along spine with luminescent tracery, gecko-grip geometric patterning on fingertips. Wearing dark utilitarian tactical jacket, reinforced cargo pants with thigh holster, worn climbing boots. Coiled posture, economical movement, weight on balls of feet. GLMZ GLMZ operative. Neon-lit industrial setting, cool blue and amber lighting, ready stance against blurred urban backdrop, cinematic depth of field --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 49,
-    "East Asian": 37.2,
-    "Southeast Asian": 13.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 49
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 37.2
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 4.8
-      },
-      "Cambodian": {
-        "Khmer": 9
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5b77ca09ce9b9b939cac74b",
+    "type":  "character",
+    "name":  "Bartosz Cho",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Counter-surveillance and mole detection â€” counterintelligence specialist",
+    "age":  29,
+    "status":  "active",
+    "location":  "Geartown â€” industrial district of chop shops and fabricators, near Fullerton and Damen",
+    "description":  "Bartosz Cho is lean and angular, all sharp edges and visible tension. At 29, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible â€” reflex boosters wired into spinal column â€” shaves reaction time by 40ms â€” and she makes no effort to hide it.\n\nShe came up through the Gray Zone\u0027s informal apprentice system, learning the trade from runners who didn\u0027t survive long enough to see her surpass them. She works as a counterintelligence specialist out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nBartosz Cho has built a reputation on reliability rather than flash â€” she shows up, she delivers, she collects.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Their past catching up â€” debts, enemies, broken promises",
+                                          "The quiet â€” silence means something is about to go very wrong",
+                                          "That the work they do makes the city worse, not better"
+                                      ],
+                       "core_desires":  [
+                                            "Justice â€” the corporate kind, where the punishment fits the profit margin",
+                                            "To build something that outlasts the next contract cycle",
+                                            "Knowledge â€” to understand the systems that grind people down"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Compartmentalization â€” work feelings and personal feelings exist in separate boxes",
+                                                 "Isolates â€” retreats into their space when overwhelmed, emerges only for work",
+                                                 "Ritual â€” follows the same pre-job routine every time, superstition as structure"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot distinguish between caution and cowardice in themselves or others",
+                                           "Trusts technology more than people â€” machines don\u0027t betray",
+                                           "Thinks speed can substitute for planning because it\u0027s worked so far"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Educated vocabulary wrapped in street delivery â€” the contrast is deliberate.",
+                            "cadence":  "Flowing and unhurried â€” talks like someone who has never been interrupted and doesn\u0027t expect to be.",
+                            "verbal_tics":  [
+                                                "Speaks in clipped fragments when stressed â€” drops pronouns, articles, pleasantries",
+                                                "Uses technical jargon for everything, including emotions"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Everyone in this room is lying. My job is knowing who\u0027s lying about what.\"",
+                                                  "\"Paranoia isn\u0027t a disorder in this profession. It\u0027s a job requirement.\"",
+                                                  "\"I find the leak. What happens to the leak after that isn\u0027t my department.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Tier 4 executive offers Arseniy Granlund-Tawiah a permanent position â€” the pay is obscene and the strings are invisible until they tighten",
+                        "A corporate black site Arseniy Granlund-Tawiah once infiltrated is being reopened, and the people inside know her face",
+                        "Arseniy Granlund-Tawiah\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad"
+                    ],
+    "narrative_function":  "Arseniy Granlund-Tawiah functions as a connector â€” her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Reflex boosters wired into spinal column â€” shaves reaction time by 40ms. Gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces",
+    "daily_life":  "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+    "affiliation":  "Freelance â€” works the Gray Zone circuit exclusively",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  0,
+                                                    "effective":  7
+                                                },
+                                   "agility":  {
+                                                   "base":  3,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               },
+                                   "endurance":  {
+                                                     "base":  7,
+                                                     "augmented":  1,
+                                                     "effective":  10
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  7,
+                                                    "augmented":  2,
+                                                    "effective":  9
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  6,
+                                                      "augmented":  3,
+                                                      "effective":  5
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  3,
+                                                    "effective":  10
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  10
+                                               },
+                                 "technical":  {
+                                                   "base":  6,
+                                                   "augmented":  2,
+                                                   "effective":  8
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  6,
+                                                  "augmented":  1,
+                                                  "effective":  8
+                                              },
+                                 "intimidation":  {
+                                                      "base":  6,
+                                                      "augmented":  3,
+                                                      "effective":  5
+                                                  },
+                                 "deception":  {
+                                                   "base":  3,
+                                                   "augmented":  2,
+                                                   "effective":  7
+                                               },
+                                 "empathy":  {
+                                                 "base":  5,
+                                                 "augmented":  2,
+                                                 "effective":  8
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.61,
+                                      "caution":  0.39,
+                                      "loyalty":  0.88,
+                                      "greed":  0.84,
+                                      "empathy":  0.34
+                                  },
+                  "drives":  [
+                                 "reputation",
+                                 "power",
+                                 "revenge"
+                             ],
+                  "thresholds":  {
+                                     "pain":  4,
+                                     "stress":  8,
+                                     "loyalty_break":  10
+                                 },
+                  "strengths":  [
+                                    "natural leadership presence",
+                                    "pain tolerance beyond normal limits",
+                                    "ability to remain calm under fire"
+                                ],
+                  "weaknesses":  [
+                                     "trust issues that limit crew effectiveness",
+                                     "chronic insomnia affecting long-term performance",
+                                     "augmentation dependency â€” performance drops sharply if chrome malfunctions"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "counterintelligence specialist",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never discusses active contracts with anyone not directly involved",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined"
+                                          ],
+                       "habits":  [
+                                      "Checks exits within 10 seconds of entering any room",
+                                      "Talks to their gear â€” names weapons, thanks tools, treats equipment as companions",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore",
+                                      "Practices a kata or fighting form every morning regardless of circumstances"
+                                  ],
+                       "breaking_points":  [
+                                               "Being publicly exposed â€” name, face, address, all of it blown",
+                                               "Running out of options â€” no contacts, no money, no safe house, no way out",
+                                               "Losing their primary augmentation â€” the one that defines their professional identity"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Reflex boosters wired into spinal column",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Reflex boosters wired into spinal column â€” shaves reaction time by 40ms",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Gecko-grip fingertip implants and toe pads",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Geartown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Nearfield",
+                             "Geartown",
+                             "Neuromorphic Pressure Cestus",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Predominantly South Asian (49%) with substantial East Asian (37.2%) and Southeast Asian (13.8%) ancestry. This genetic combination produces warm medium-to-deep brown skin with golden and honey undertones characteristic of South Asian heritage, refined by the sharp angular features and high prominent cheekbones from East Asian genetics. The Southeast Asian component contributes refined bone structure, subtle warmth depth, and the integrated aesthetic that bridges the other ancestries seamlessly.",
+                                 "height_cm":  172,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and angular with visible musculature â€” low body fat, wiry frame built for speed and endurance rather than strength. Shoulders slightly asymmetrical from old injury or chronic tension.",
+                                 "hair_color":  "Dark brown with early-stage silver threading at temples",
+                                 "hair_style":  "Pulled back in a tight, functional braid â€” no ornamentation",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Deep brown with pale grey-blue rim and faint stress lines radiating outward â€” unusual dual-tone coloration suggesting genetic complexity or subtle cybernetic enhancement",
+                                 "skin_tone":  "Warm deep brown with golden and honey undertones â€” South Asian base harmoniously blended with East and Southeast Asian heritage creating rich, unified depth across face and body",
+                                 "complexion":  "Weathered for her age. High, prominent cheekbones with sharp, refined facial planes characteristic of the South and East Asian genetic blend. Extensive scarring across left cheekbone (three parallel lines, old blade work), smaller scar tissue along right temple (impact), faint burn mark along jawline. Minimal makeup, meticulous grooming despite working lifestyle.",
+                                 "distinguishing_marks":  [
+                                                              "Three parallel blade scars running diagonally across left cheekbone, approximately 8cm total length, white and well-healed",
+                                                              "Impact scar on right temple just above hairline, crescent-shaped, approximately 2cm, silvered tissue",
+                                                              "Burn scar along right jawline below ear, faint and thin, approximately 4cm in length",
+                                                              "Thin white scar running along inside of left wrist â€” longitudinal, approximately 6cm, surgical precision"
+                                                          ],
+                                 "visible_augmentations":  "Chrome reflex booster hardware visible along spine â€” brushed steel nodes running from mid-thoracic to sacrum, approximately 2cm diameter, interconnected with faint luminescent tracery when active. Fingertips show faint geometric patterning under skin (gecko-grip implant ports) visible only in certain light. No attempt to conceal augmentation work.",
+                                 "posture_movement":  "Economical and precise â€” minimal wasted motion. Walks with weight on balls of feet, ready to shift direction. Sits with back to wall and clear sightlines. Hands rest within 15cm of body. Eyes track movement constantly. Overall impression: coiled spring.",
+                                 "clothing_style":  "Tier 4 utilitarian â€” function over aesthetics. Dark textiles (charcoal, black, deep blue) in durable synthetics and treated canvas. Reinforced cargo pants with custom thigh holster rig. Fitted tactical jacket (matte black, multiple pockets, cable management built in). Worn Geartown-manufacture climbing boots with custom grip soles. No logos or visible branding. Jewelry: only a scratched chronometer on left wrist, military-grade, probably scavenged. Overall aesthetic: prepared for immediate action, zero flash."
+                             },
+    "image_prompt":  "Bartosz Cho, 172cm lean angular frame, warm deep brown skin with golden honey undertones blending South Asian, East Asian, and Southeast Asian heritage. Sharp high prominent cheekbones, weathered complexion. Long dark brown hair with silver threading pulled in tight functional braid. Deep brown eyes with pale grey-blue rim. Three parallel blade scars on left cheekbone, crescent scar on right temple, faint burn mark along jawline, surgical scar on left wrist. Chrome reflex booster nodes visible along spine with luminescent tracery, gecko-grip geometric patterning on fingertips. Wearing dark utilitarian tactical jacket, reinforced cargo pants with thigh holster, worn climbing boots. Coiled posture, economical movement, weight on balls of feet. GLMZ GLMZ operative. Neon-lit industrial setting, cool blue and amber lighting, ready stance against blurred urban backdrop, cinematic depth of field --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  49,
+                             "East Asian":  37.2,
+                             "Southeast Asian":  13.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  49
+                                                           }
+                                            },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  37.2
+                                                          }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  4.8
+                                                             },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  9
+                                                                  }
+                                                }
+                        },
+    "tier":  "3"
 }

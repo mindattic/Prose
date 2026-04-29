@@ -1,271 +1,292 @@
-{
-  "id": "019d6143a5e3748ba8c62f368706a958",
-  "type": "character",
-  "name": "Anjali Migizi-Shirazi",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Union organizer for Ferrogate Transit maintenance workers",
-  "age": 52,
-  "status": "active",
-  "location": "Hamtramck Enclave, near Halsted and Division",
-  "description": "Anjali Migizi-Shirazi is a large man going soft at the middle after thirty years of physical work, with calloused hands that don't quite match his current desk-and-meeting life. His skin is a dark, warm brown, and he keeps his silver-streaked hair cropped close. He has a prosthetic left forearm — industrial accident, Ferrogate's fault, settled out of court for a number he will not say — in matte gray that he has deliberately kept undecorated while everyone around him customizes their chrome. The plainness is a statement about what it cost him.\n\nHe has organized three successful contract actions in the past decade and is personally responsible for the Hamtramck Enclave maintenance workers' current health and hazard provisions. He is patient to a degree that unnerves younger activists — he can sit in a bad meeting for four hours and still be the last person to speak, and still be the one who changes the outcome. He lights a candle at the Enclave's E.L.F. shrine every morning and asks the transit spirits to keep his people safe underground.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.7,
-      "id": 0.2,
-      "shadow": 0.5,
-      "mask": 0.3,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Watching his people accept a bad deal because they are too tired to fight",
-      "That the union will outlive its principles and he will have built a machine that grinds the same people it was meant to protect"
-    ],
-    "core_desires": [
-      "Dignity as a structural condition, not a personal achievement",
-      "To retire knowing someone good is holding what he built"
-    ],
-    "coping_mechanisms": [
-      "Ritual — the candle, the morning prayers to the E.L.F.s, the same route to work every day",
-      "Mentorship as a way of externalizing hope he can no longer hold internally"
-    ],
-    "blind_spots": [
-      "Can be paternalistic with younger organizers, especially women — he means well but steers too hard",
-      "His caution sometimes reads as conservatism and he loses radical energy he could use"
-    ],
-    "secret": "During a particularly brutal contract fight twelve years ago, he quietly passed an Axiom HR operative information about a disruptive faction within his own union — not to break the strike, but to protect what he saw as a winnable core demand. The faction was sidelined. He has never told anyone. He does not know if it was the right thing."
-  },
-  "speech_patterns": {
-    "vocabulary": "Plain, working language, occasional French phrases from his grandmother's side — he uses them when he wants to say something precisely and doesn't trust the English to hold",
-    "cadence": "Slow and deliberate, with long pauses that feel like they have weight",
-    "verbal_tics": [
-      "'You understand what I'm saying?'",
-      "Addresses people as 'friend' when he's making a point he needs them to hear"
-    ],
-    "example_lines": [
-      "The contract isn't the victory. The contract is the floor. The victory is that they know we can build the floor again whenever they try to take it.",
-      "Friend, I've sat in that room. They're not afraid of loud. They're afraid of organized. There's a difference."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A series of 'accidents' in the maintenance tunnels has him convinced someone is trying to thin the union's most vocal members — he needs outside eyes who can move through the tunnels without being marked as his people",
-    "A young organizer he mentored has gone missing three days before a critical contract vote"
-  ],
-  "narrative_function": "Quest giver and moral anchor — he has connections throughout Ferrogate's physical infrastructure and can get people into or out of transit tunnels, but his real value is as a barometer of what the working tier actually needs and thinks.",
-  "augmentations": "Industrial-grade prosthetic left forearm (post-accident). Basic retinal work-light mod for tunnel inspection.",
-  "daily_life": "Up at five, checks in with shop stewards across three maintenance depots via encrypted comms, spends his afternoons in the Enclave's union hall handling grievances and mentoring younger organizers, evenings often mediating between management and workers or attending council meetings.",
-  "affiliation": "Ferrogate Transit Workers' Solidarity Union (FTWSU); Hamtramck Enclave community council",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 4,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": -4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "veteran organizer",
-      "infrastructure access",
-      "community pillar",
-      "patient strategist"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never cross a line that can't be uncrossed — the movement has to outlast any single fight",
-      "Protect your most vulnerable members first, your loudest members second"
-    ],
-    "escalation_ladder": [
-      "Exhaust every official channel first, documenting everything",
-      "Move to work slowdowns and public pressure campaigns",
-      "Strike action as last resort — it costs his people too much to use lightly"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Formal and courteous, takes measure slowly, offers respect before it is earned as a matter of principle",
-      "friends": "Warm and intensely present — remembers details about people's families, asks real follow-up questions"
-    },
-    "stress_responses": {
-      "low": "Becomes quieter and more deliberate",
-      "medium": "Increases his ritual behaviors — more candles, longer prayer sessions",
-      "high": "Goes into problem-solving isolation, barely sleeps, emerges with a plan fully formed"
-    },
-    "contradictions": [
-      "Preaches collective action but carries his heaviest burdens absolutely alone"
-    ],
-    "habits": [
-      "Morning candle at the E.L.F. shrine before anything else",
-      "Keeps a handwritten ledger of every grievance filed and resolved — forty years of them"
-    ],
-    "breaking_points": [
-      "Watching a worker he personally vouched for get fired as retaliation and being unable to prevent it",
-      "Discovering his own union leadership has been bought"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9,
-    "Liar": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'"
-  ],
-  "registered_firearms": [
-    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'"
-  ],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Provisions",
-    "Ferrogate Transit",
-    "The Accidental",
-    "Irontide Tidal Energy",
-    "Silver",
-    "The Pure Hand"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "South Asian (32.9%) / Indigenous American (21.1%) / Central Asian (15.5%) / Middle Eastern (15.0%) / Sub-Saharan African (13.2%) / East Asian (2.3%) blend. The dominant South Asian and sub-Saharan African ancestry provides deep warm brown pigmentation, enriched by Central Asian and Middle Eastern olive undertones. Indigenous American heritage contributes prominent cheekbone structure and facial geometry. The synthesis creates a complexion of remarkable depth—rich warm brown with golden undertones and subtle olive warmth in midtones, particularly visible along the jawline and temples.",
-    "height_cm": 188,
-    "weight_kg": 98,
-    "build": "Large-framed and broad-shouldered, visibly softened through the midsection from decades of desk work and meetings replacing physical labor. Still carries the muscle density of someone who spent thirty years doing heavy maintenance work, but distributed unevenly now—solid legs and forearms, softer torso.",
-    "hair_color": "Dark brown with heavy silver threading throughout",
-    "hair_style": "Close-cropped, military-neat, styled for practicality and no fuss",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with faint amber-tinted retinal augmentation visible under direct light",
-    "skin_tone": "Deep warm brown with golden undertones and subtle olive warmth, the balanced result of South Asian primary ancestry combined with significant sub-Saharan African, Central Asian, and Middle Eastern components",
-    "complexion": "Weathered and lined from outdoor and underground work—deep creases around eyes and mouth from squinting in poor lighting and years of concentration. Well-maintained beard, close-trimmed with gray at the jawline. Skin texture is thick and resilient with warm golden-brown undertones across cheeks and bridge of nose. Visible sun damage on forearms and neck despite underground work. A few scattered white patches of minor scar tissue from industrial burns. High, prominent cheekbones with strong definition reflecting Indigenous American ancestry structure, softened by the rounded facial contours characteristic of South Asian heritage. Temple area shows subtle olive warmth beneath the deep brown surface.",
-    "distinguishing_marks": [
-      "Extensive callusing across palms and inside of right fingers from thirty years gripping tools and documents",
-      "Faint circular burn scar on right bicep, approximately 3cm diameter, pale and smooth—industrial contact burn from the accident that cost him his forearm",
-      "Linear scarring across left shoulder and upper chest, thin and pale, consistent with medical intervention",
-      "Small tattoo on left inner wrist: union solidarity fist in black ink, approximately 2cm, unadorned and worn"
-    ],
-    "visible_augmentations": "Left forearm prosthetic from wrist to elbow joint, industrial-grade titanium-composite construction in flat matte gray finish with no chrome plating, no LEDs, no decorative customization—the joint articulation is visible but deliberately stark. Amber-tinted retinal work-light modification visible as subtle coloration in sclera under direct light or dim conditions.",
-    "posture_movement": "Carries himself with deliberate stillness—someone accustomed to being the calm presence in agitated rooms. Walks with measured pace, favoring his right side slightly though the prosthetic left arm moves with full mechanical precision. Sits motionless for extended periods without fidgeting. Rarely gestures while speaking; when he does move, every motion is purposeful. Dominant right hand still carries the tension of someone ready to write something down.",
-    "clothing_style": "Tier 3-4 working class, deliberately modest. Standard-issue gray Ferrogate maintenance union jacket over dark cotton shirts, usually with the sleeves rolled to mid-forearm to display the prosthetic plainly. Worn dark jeans or work trousers. Steel-toed boots, scuffed and well-maintained. No visible jewelry except a simple silver wedding band. His clothing is clean and functional but never new—he replaces items when they wear out, not for fashion. His affiliation is worn into the fabric, not purchased."
-  },
-  "image_prompt": "Anjali Migizi-Shirazi, a 188cm broad-shouldered maintenance supervisor with deep warm brown skin glowing with golden and subtle olive undertones, high prominent Indigenous cheekbones contrasting with rounded South Asian facial structure. Close-cropped dark brown hair heavily silvered at temples and jaw, deep brown eyes with barely-visible amber retinal augmentation. Weathered face deeply lined from decades of underground work, well-trimmed gray beard, thick resilient complexion. Left forearm ends in stark matte gray titanium-composite industrial prosthetic, deliberately undecorated. Wearing worn gray Ferrogate union maintenance jacket over dark rolled-sleeve cotton shirt, displaying the prosthetic plainly, dark work jeans, scuffed steel-toed boots. Small black solidarity fist tattoo visible on left inner wrist. Sitting with deliberate stillness in dim underground maintenance facility lighting, amber work-lights casting warm glow across his multiethnic features. Calm, purposeful presence. GLMZ 2200s industrial worker aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 32.9,
-    "Indigenous American": 21.1,
-    "Central Asian": 15.5,
-    "Middle Eastern": 15,
-    "Sub-Saharan African": 13.2,
-    "East Asian": 2.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Indian": {
-        "Malayali": 24.5,
-        "Punjabi": 1.4
-      },
-      "Nepali": {
-        "Nepali": 7
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Maya": 14.6,
-        "Nahua": 6.5
-      }
-    },
-    "Central Asian": {
-      "Turkic": {
-        "Kazakh": 5,
-        "Uzbek": 3.9
-      },
-      "Mongolic": {
-        "Mongolian": 6.6
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Emirati": 2.9
-      },
-      "Persian": {
-        "Iranian": 0.2
-      },
-      "Arab Levantine": {
-        "Palestinian": 11.9
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Nigerian": 10.2
-      },
-      "Central African": {
-        "Cameroonian": 2
-      },
-      "East African": {
-        "Kenyan": 0.7,
-        "Tanzanian": 0.3
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Shanghainese": 2.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5e3748ba8c62f368706a958",
+    "type":  "character",
+    "name":  "Anjali Migizi-Shirazi",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Union organizer for Ferrogate Transit maintenance workers",
+    "age":  52,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, near Halsted and Division",
+    "description":  "Anjali Migizi-Shirazi is a large man going soft at the middle after thirty years of physical work, with calloused hands that don\u0027t quite match his current desk-and-meeting life. His skin is a dark, warm brown, and he keeps his silver-streaked hair cropped close. He has a prosthetic left forearm â€” industrial accident, Ferrogate\u0027s fault, settled out of court for a number he will not say â€” in matte gray that he has deliberately kept undecorated while everyone around him customizes their chrome. The plainness is a statement about what it cost him.\n\nHe has organized three successful contract actions in the past decade and is personally responsible for the Hamtramck Enclave maintenance workers\u0027 current health and hazard provisions. He is patient to a degree that unnerves younger activists â€” he can sit in a bad meeting for four hours and still be the last person to speak, and still be the one who changes the outcome. He lights a candle at the Enclave\u0027s E.L.F. shrine every morning and asks the transit spirits to keep his people safe underground.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Watching his people accept a bad deal because they are too tired to fight",
+                                          "That the union will outlive its principles and he will have built a machine that grinds the same people it was meant to protect"
+                                      ],
+                       "core_desires":  [
+                                            "Dignity as a structural condition, not a personal achievement",
+                                            "To retire knowing someone good is holding what he built"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual â€” the candle, the morning prayers to the E.L.F.s, the same route to work every day",
+                                                 "Mentorship as a way of externalizing hope he can no longer hold internally"
+                                             ],
+                       "blind_spots":  [
+                                           "Can be paternalistic with younger organizers, especially women â€” he means well but steers too hard",
+                                           "His caution sometimes reads as conservatism and he loses radical energy he could use"
+                                       ],
+                       "secret":  "During a particularly brutal contract fight twelve years ago, he quietly passed an Axiom HR operative information about a disruptive faction within his own union â€” not to break the strike, but to protect what he saw as a winnable core demand. The faction was sidelined. He has never told anyone. He does not know if it was the right thing."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Plain, working language, occasional French phrases from his grandmother\u0027s side â€” he uses them when he wants to say something precisely and doesn\u0027t trust the English to hold",
+                            "cadence":  "Slow and deliberate, with long pauses that feel like they have weight",
+                            "verbal_tics":  [
+                                                "\u0027You understand what I\u0027m saying?\u0027",
+                                                "Addresses people as \u0027friend\u0027 when he\u0027s making a point he needs them to hear"
+                                            ],
+                            "example_lines":  [
+                                                  "The contract isn\u0027t the victory. The contract is the floor. The victory is that they know we can build the floor again whenever they try to take it.",
+                                                  "Friend, I\u0027ve sat in that room. They\u0027re not afraid of loud. They\u0027re afraid of organized. There\u0027s a difference."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A series of \u0027accidents\u0027 in the maintenance tunnels has him convinced someone is trying to thin the union\u0027s most vocal members â€” he needs outside eyes who can move through the tunnels without being marked as his people",
+                        "A young organizer he mentored has gone missing three days before a critical contract vote"
+                    ],
+    "narrative_function":  "Quest giver and moral anchor â€” he has connections throughout Ferrogate\u0027s physical infrastructure and can get people into or out of transit tunnels, but his real value is as a barometer of what the working tier actually needs and thinks.",
+    "augmentations":  "Industrial-grade prosthetic left forearm (post-accident). Basic retinal work-light mod for tunnel inspection.",
+    "daily_life":  "Up at five, checks in with shop stewards across three maintenance depots via encrypted comms, spends his afternoons in the Enclave\u0027s union hall handling grievances and mentoring younger organizers, evenings often mediating between management and workers or attending council meetings.",
+    "affiliation":  "Ferrogate Transit Workers\u0027 Solidarity Union (FTWSU); Hamtramck Enclave community council",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  4,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  -4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "veteran organizer",
+                               "infrastructure access",
+                               "community pillar",
+                               "patient strategist"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never cross a line that can\u0027t be uncrossed â€” the movement has to outlast any single fight",
+                                              "Protect your most vulnerable members first, your loudest members second"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Exhaust every official channel first, documenting everything",
+                                                 "Move to work slowdowns and public pressure campaigns",
+                                                 "Strike action as last resort â€” it costs his people too much to use lightly"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Formal and courteous, takes measure slowly, offers respect before it is earned as a matter of principle",
+                                                   "friends":  "Warm and intensely present â€” remembers details about people\u0027s families, asks real follow-up questions"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes quieter and more deliberate",
+                                                "medium":  "Increases his ritual behaviors â€” more candles, longer prayer sessions",
+                                                "high":  "Goes into problem-solving isolation, barely sleeps, emerges with a plan fully formed"
+                                            },
+                       "contradictions":  [
+                                              "Preaches collective action but carries his heaviest burdens absolutely alone"
+                                          ],
+                       "habits":  [
+                                      "Morning candle at the E.L.F. shrine before anything else",
+                                      "Keeps a handwritten ledger of every grievance filed and resolved â€” forty years of them"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching a worker he personally vouched for get fired as retaliation and being unable to prevent it",
+                                               "Discovering his own union leadership has been bought"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9,
+                       "Liar":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Axiom Systems Biometric Lock Rifle BLR-3 \u0027Personal\u0027",
+                            "Meridian Munitions Peacekeeper-45 \u0027Old Faithful\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Axiom Systems Biometric Lock Rifle BLR-3 \u0027Personal\u0027",
+                                "Meridian Munitions Peacekeeper-45 \u0027Old Faithful\u0027"
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "Provisions",
+                             "Ferrogate Transit",
+                             "The Accidental",
+                             "Irontide Tidal Energy",
+                             "Silver",
+                             "The Pure Hand"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "South Asian (32.9%) / Indigenous American (21.1%) / Central Asian (15.5%) / Middle Eastern (15.0%) / Sub-Saharan African (13.2%) / East Asian (2.3%) blend. The dominant South Asian and sub-Saharan African ancestry provides deep warm brown pigmentation, enriched by Central Asian and Middle Eastern olive undertones. Indigenous American heritage contributes prominent cheekbone structure and facial geometry. The synthesis creates a complexion of remarkable depthâ€”rich warm brown with golden undertones and subtle olive warmth in midtones, particularly visible along the jawline and temples.",
+                                 "height_cm":  188,
+                                 "weight_kg":  98,
+                                 "build":  "Large-framed and broad-shouldered, visibly softened through the midsection from decades of desk work and meetings replacing physical labor. Still carries the muscle density of someone who spent thirty years doing heavy maintenance work, but distributed unevenly nowâ€”solid legs and forearms, softer torso.",
+                                 "hair_color":  "Dark brown with heavy silver threading throughout",
+                                 "hair_style":  "Close-cropped, military-neat, styled for practicality and no fuss",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with faint amber-tinted retinal augmentation visible under direct light",
+                                 "skin_tone":  "Deep warm brown with golden undertones and subtle olive warmth, the balanced result of South Asian primary ancestry combined with significant sub-Saharan African, Central Asian, and Middle Eastern components",
+                                 "complexion":  "Weathered and lined from outdoor and underground workâ€”deep creases around eyes and mouth from squinting in poor lighting and years of concentration. Well-maintained beard, close-trimmed with gray at the jawline. Skin texture is thick and resilient with warm golden-brown undertones across cheeks and bridge of nose. Visible sun damage on forearms and neck despite underground work. A few scattered white patches of minor scar tissue from industrial burns. High, prominent cheekbones with strong definition reflecting Indigenous American ancestry structure, softened by the rounded facial contours characteristic of South Asian heritage. Temple area shows subtle olive warmth beneath the deep brown surface.",
+                                 "distinguishing_marks":  [
+                                                              "Extensive callusing across palms and inside of right fingers from thirty years gripping tools and documents",
+                                                              "Faint circular burn scar on right bicep, approximately 3cm diameter, pale and smoothâ€”industrial contact burn from the accident that cost him his forearm",
+                                                              "Linear scarring across left shoulder and upper chest, thin and pale, consistent with medical intervention",
+                                                              "Small tattoo on left inner wrist: union solidarity fist in black ink, approximately 2cm, unadorned and worn"
+                                                          ],
+                                 "visible_augmentations":  "Left forearm prosthetic from wrist to elbow joint, industrial-grade titanium-composite construction in flat matte gray finish with no chrome plating, no LEDs, no decorative customizationâ€”the joint articulation is visible but deliberately stark. Amber-tinted retinal work-light modification visible as subtle coloration in sclera under direct light or dim conditions.",
+                                 "posture_movement":  "Carries himself with deliberate stillnessâ€”someone accustomed to being the calm presence in agitated rooms. Walks with measured pace, favoring his right side slightly though the prosthetic left arm moves with full mechanical precision. Sits motionless for extended periods without fidgeting. Rarely gestures while speaking; when he does move, every motion is purposeful. Dominant right hand still carries the tension of someone ready to write something down.",
+                                 "clothing_style":  "Tier 3-4 working class, deliberately modest. Standard-issue gray Ferrogate maintenance union jacket over dark cotton shirts, usually with the sleeves rolled to mid-forearm to display the prosthetic plainly. Worn dark jeans or work trousers. Steel-toed boots, scuffed and well-maintained. No visible jewelry except a simple silver wedding band. His clothing is clean and functional but never newâ€”he replaces items when they wear out, not for fashion. His affiliation is worn into the fabric, not purchased."
+                             },
+    "image_prompt":  "Anjali Migizi-Shirazi, a 188cm broad-shouldered maintenance supervisor with deep warm brown skin glowing with golden and subtle olive undertones, high prominent Indigenous cheekbones contrasting with rounded South Asian facial structure. Close-cropped dark brown hair heavily silvered at temples and jaw, deep brown eyes with barely-visible amber retinal augmentation. Weathered face deeply lined from decades of underground work, well-trimmed gray beard, thick resilient complexion. Left forearm ends in stark matte gray titanium-composite industrial prosthetic, deliberately undecorated. Wearing worn gray Ferrogate union maintenance jacket over dark rolled-sleeve cotton shirt, displaying the prosthetic plainly, dark work jeans, scuffed steel-toed boots. Small black solidarity fist tattoo visible on left inner wrist. Sitting with deliberate stillness in dim underground maintenance facility lighting, amber work-lights casting warm glow across his multiethnic features. Calm, purposeful presence. GLMZ 2200s industrial worker aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  32.9,
+                             "Indigenous American":  21.1,
+                             "Central Asian":  15.5,
+                             "Middle Eastern":  15,
+                             "Sub-Saharan African":  13.2,
+                             "East Asian":  2.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Malayali":  24.5,
+                                                               "Punjabi":  1.4
+                                                           },
+                                                "Nepali":  {
+                                                               "Nepali":  7
+                                                           }
+                                            },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  14.6,
+                                                                             "Nahua":  6.5
+                                                                         }
+                                                    },
+                            "Central Asian":  {
+                                                  "Turkic":  {
+                                                                 "Kazakh":  5,
+                                                                 "Uzbek":  3.9
+                                                             },
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  6.6
+                                                               }
+                                              },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Emirati":  2.9
+                                                                 },
+                                                   "Persian":  {
+                                                                   "Iranian":  0.2
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Palestinian":  11.9
+                                                                      }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Nigerian":  10.2
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  2
+                                                                            },
+                                                        "East African":  {
+                                                                             "Kenyan":  0.7,
+                                                                             "Tanzanian":  0.3
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Shanghainese":  2.3
+                                                           }
+                                           }
+                        },
+    "tier":  "3"
 }

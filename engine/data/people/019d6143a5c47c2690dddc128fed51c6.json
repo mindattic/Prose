@@ -1,347 +1,360 @@
-{
-  "id": "019d6143a5c47c2690dddc128fed51c6",
-  "type": "character",
-  "name": "Chenguang Solberg",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Unlicensed Broadcaster / Street-Level Journalist / Rumor Broker",
-  "age": 24,
-  "status": "active",
-  "location": "Old Harbor, near Michigan Ave South and Cermak",
-  "description": "Chenguang Solberg runs a pirate broadcast out of a rotating series of signal-masked locations across Old Harbor, producing a daily audio-visual feed called 'Harbor Frequency' that has become, for a substantial portion of the district's population, the closest thing to actual news they have access to. She is compact and restless, with deep brown skin, natural hair she keeps wrapped in a rotating collection of printed fabrics, and the particular kind of energy that reads as enthusiasm until you're on the wrong side of it and recognize it as something more relentless. Her eyes are quick and evaluative in a way she has stopped trying to soften; she watches people the way a cartographer watches terrain. She is almost always in motion, or appears to be — even seated, her hands are working, her attention is cycling.\n\nShe grew up in Old Harbor, the second of four children of a harbor logistics worker and a schoolteacher who lost her position when the district's public education contract was absorbed by a Spire EdTech subsidiary. The family did not leave because they could not, and then because they chose not to, and Blessed absorbed both the helplessness and the stubbornness of that distinction. She started broadcasting at nineteen, initially as a way to circulate information about enforcement sweeps and eviction notices — practical, immediate, unglamorous. Harbor Frequency evolved into something more: investigative segments, community commentary, intercepted corporate communications she's never explained how she obtained, and a call-in segment where Old Harbor residents speak on-air about things that would not otherwise be recorded anywhere. She has been arrested twice for unlicensed broadcasting. Both times she was back on air within seventy-two hours from a different location.\n\nShe is not naive about what she is or what she's doing. She understands that she is a small signal in a very large noise floor, and she has made her peace with scale — or tells herself she has. What she hasn't made peace with is the gap between what she knows and what she can prove, between what she broadcasts and what it actually changes. She fills that gap with work, with speed, with the belief that bearing witness is not nothing even when it is not enough. She is twenty-four and has already developed the particular exhaustion of someone who has been urgently awake for too long.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.65,
-      "ideal": 0.9,
-      "id": 0.7,
-      "shadow": 0.35,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Becoming the story instead of telling it — losing credibility, being used, being made into a symbol by people who don't care about the substance",
-      "That the broadcast is a pressure valve — that it makes people feel something is being done and thereby delays the doing",
-      "Losing the thread of why she started — becoming a broadcaster who performs rebellion rather than one who serves community"
-    ],
-    "core_desires": [
-      "For something she broadcasts to materially change an outcome ��� not just document it",
-      "To be trusted completely by at least one person, with no operational or strategic reason attached to the trust",
-      "To sleep without her equipment on standby"
-    ],
-    "coping_mechanisms": [
-      "Velocity — she moves faster than her anxiety can fully form",
-      "Humor as connection and as deflection, often simultaneously",
-      "Converting helplessness into tasks; when she feels most powerless she makes lists, conducts interviews, finds something to record",
-      "Deep investment in other people's stories as a way of temporarily inhabiting a life with fewer stakes than her own"
-    ],
-    "blind_spots": [
-      "She underestimates how much protection her visibility actually provides — she's harder to disappear quietly than she thinks, but this also makes her overconfident about exposure",
-      "She gives trust quickly to people with good stories, which is professionally dangerous for a journalist",
-      "She has decided her own emotional needs are a lower priority than the work, and this decision is becoming a self-fulfilling architecture"
-    ],
-    "secret": "One of her most-circulated investigative segments — the one that documented corporate waste dumping in Old Harbor's water infrastructure — was based on documents she received from an anonymous source she has never verified. She broadcast it because everything checked out except the source itself. She has since come to suspect the documents were genuine but were leaked to her deliberately, to serve someone else's agenda she still doesn't fully understand. She has not corrected the record because the underlying facts appear to be true. She thinks about it almost every day."
-  },
-  "speech_patterns": {
-    "vocabulary": "Code-switches constantly and deliberately — Old Harbor vernacular with family, broadcast-register with sources, something in between on air that feels like Old Harbor but carries enough structural clarity to be understood across the district. Rich in sensory and spatial language. Tends toward active voice, present tense.",
-    "cadence": "Fast in conversation, especially when excited or anxious — her speech accelerates rather than stumbles. On air she disciplines herself to a slower pace and the discipline is audible. She often interrupts herself to correct or add, not from disorganization but from a mind that runs ahead of speech.",
-    "verbal_tics": [
-      "Opens significant statements with 'Look—' when she wants someone's full attention",
-      "Uses 'right?' not as a question but as a rhythmic connector mid-sentence",
-      "Ends summaries with 'and that's where it stands' regardless of whether she's finished thinking about it"
-    ],
-    "example_lines": [
-      "'Look— I'm not asking you to go on record. I'm asking you to tell me what you saw, and I'll decide what to do with it. Those are different conversations.'",
-      "'The Spire doesn't need to lie about Old Harbor, right, because they just need to make sure nobody outside Old Harbor is paying attention. That's not conspiracy. That's logistics.'",
-      "'I broadcast it because it was true. The fact that someone wanted me to broadcast it doesn't make it less true. I'm still working out what it makes it.'",
-      "'And that's where it stands. Harbor Frequency, signal location undisclosed, back tomorrow. Stay awake.'"
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Perpetua Okafor",
-      "type": "Source / mutual protection network",
-      "description": "Perpetua has been one of Blessed's most reliable sources of ground-level information about health crises, displacement patterns, and enforcement activity in the Gray Zone. In exchange, Blessed has buried stories that would have brought unwanted attention to Perpetua's operation.",
-      "emotional_core": "Genuine respect and a careful affection — Blessed treats Perpetua as something close to what she needed her mother to be, which she would deny if asked.",
-      "story_tension": "Blessed has information about a threat to Perpetua's operation that she obtained through a source she can't reveal without burning the source. She's sitting on it and it's getting heavier."
-    },
-    {
-      "name": "Unknown (legal identity purged)",
-      "type": "Dangerous source / live wire",
-      "description": "Contact has been intermittent, always initiated from the other side, always through methods that give Blessed no ability to trace or reciprocate. The information provided has been extraordinary. The cost of the relationship is unclear and that unclarity is itself a cost.",
-      "emotional_core": "A mix of professional excitement and genuine fear — she is aware that this source is using her for something, and she is aware that the information is too valuable to stop taking, and she is aware of what that makes her.",
-      "story_tension": "The next drop from this source will require Blessed to make a broadcast that will directly endanger someone she knows. She doesn't know this yet."
-    },
-    {
-      "name": "Younger sibling (name withheld from broadcast, known in-world as Temi)",
-      "type": "Family / anchor",
-      "description": "Her youngest sibling, seventeen, still living in Old Harbor, increasingly interested in what Blessed does and increasingly positioned in social circles that overlap with local gang recruitment pipelines.",
-      "emotional_core": "The most direct and least manageable source of fear in her life — the one problem she cannot convert into a task or a broadcast.",
-      "story_tension": "Temi has started showing up at Harbor Frequency's signal locations. Whether this is curiosity, affiliation, or something Blessed hasn't identified yet is the question she can't bring herself to investigate professionally."
-    }
-  ],
-  "story_hooks": [
-    "The anonymous source behind the water infrastructure story makes contact again — this time asking for something in return for a story that could reshape the power balance in Old Harbor.",
-    "A Harbor Frequency broadcast is credited by a Spire media outlet as the source for a sanitized, recontextualized story that serves corporate interests. Blessed has been laundered into legitimacy in a way she didn't consent to and can't easily undo.",
-    "Enforcement sweeps in Old Harbor begin targeting her known contacts and sources in a pattern that suggests someone is mapping her network — which means someone is either watching her very carefully or she has a leak.",
-    "She intercepts communications suggesting a major development project will displace a significant portion of Old Harbor's population within eighteen months. The documentation is solid but verifying it publicly will require revealing capabilities she's kept hidden.",
-    "A source offers her unambiguous evidence of something genuinely dangerous — not corporate malfeasance but something stranger, something that exists in the space between the districts' official histories and what people in Old Harbor actually remember."
-  ],
-  "narrative_function": "Ground-level witness and information conduit; represents the question of whether truth-telling is itself a form of power or only a prerequisite for it; her network makes her a structural node for plot — information, misinformation, and the people who need to control both flow through her. Her youth and exhaustion track the cost of sustained resistance at street level.",
-  "augmentations": "Ocular recording implants — consumer grade, modified for extended buffer capacity by a Circuit technician; she records everything, continuously, and edits in post,Subvocal microphone for covert audio capture, embedded near the larynx,A secondhand neural filter for signal decryption, outdated and increasingly unreliable — she can't afford an upgrade and won't ask for help getting one",
-  "daily_life": "No fixed schedule by design — she rotates sleep locations to avoid pattern establishment, crashing with a rotating network of family, friends, and contacts across Old Harbor. Broadcasts daily, typically in the early evening when her audience is home from work. Spends mornings gathering — walking the district, talking to people, monitoring intercepted frequencies. Eats irregularly, always on the move, almost always street food from vendors she's known since childhood. Maintains her equipment obsessively, the one area of her life where she exercises sustained patience. Has a recurring argument with herself about whether she needs to slow down, which she always loses.",
-  "affiliation": "Independent; Harbor Frequency is formally unaffiliated; she maintains deliberate distance from all factions to protect source relationships, but her sympathies are legible to anyone paying attention",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 9,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 3,
-      "transparency_guardedness": -2
-    },
-    "drives": [
-      "Bear witness",
-      "Protect Old Harbor",
-      "Make truth matter"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 6,
-        "response": "Accelerates — moves faster, works harder, sleeps less"
-      },
-      "moral": 6,
-      "trust": 5,
-      "desperation": 6
-    },
-    "strengths": [
-      "Bravery",
-      "Zest",
-      "Curiosity",
-      "Perseverance",
-      "Social intelligence"
-    ],
-    "weaknesses": [
-      "Prudence",
-      "Self-regulation",
-      "Forgiveness",
-      "Humility",
-      "Perspective"
-    ],
-    "tags": [
-      "journalist",
-      "pirate-broadcaster",
-      "harbor-frequency",
-      "truth-teller",
-      "exhausted-idealist",
-      "old-harbor",
-      "source-networked"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will always broadcast what is true, even when the source is suspect",
-      "Will never reveal a source under any pressure short of imminent death",
-      "Will always prioritize community safety information over investigative scoops",
-      "Will never let Harbor Frequency go silent for more than 24 hours",
-      "Will always protect Temi from the consequences of her work, even at personal cost",
-      "Will never accept editorial direction from anyone with factional allegiance",
-      "Will always be back on air within 72 hours of arrest"
-    ],
-    "escalation_ladder": [
-      "Opens with 'Look—' and gives the other party a chance to correct course",
-      "Begins recording overtly — makes the documentation visible as a deterrent",
-      "Broadcasts the interaction itself as news, turning the conflict into transparency",
-      "Goes to ground — relocates signal, activates backup equipment, continues from hiding",
-      "Burns a source relationship to protect a life — the nuclear option she dreads"
-    ],
-    "interpersonal_modes": {
-      "Perpetua Okafor": "Near-maternal respect she would deny; protects Perpetua's operation by burying stories",
-      "Unknown source": "Professional excitement laced with genuine fear; knows she is being used and cannot stop",
-      "Temi": "Desperate, unmanageable love expressed as surveillance and worry"
-    },
-    "stress_responses": {
-      "low": "Speech accelerates, makes lists, finds something to record",
-      "medium": "Humor sharpens, sleep drops to four hours, equipment maintenance becomes obsessive",
-      "high": "Isolates from personal contacts, broadcasts longer segments, forgets to eat",
-      "critical": "Goes completely still — the opposite of her baseline — and makes a decision that cannot be undone"
-    },
-    "contradictions": [
-      "Fears becoming the story while building a broadcast identity that is itself a story",
-      "Broadcasts truth from an unverified source and calls it journalism",
-      "Believes bearing witness changes things while suspecting it is a pressure valve that prevents change"
-    ],
-    "habits": [
-      "Opens significant statements with 'Look—'",
-      "Maintains broadcast equipment with obsessive patience she shows nowhere else in her life",
-      "Eats street food from childhood vendors while walking, never sitting",
-      "Ends every broadcast with 'Stay awake'",
-      "Rotates sleep locations to avoid pattern establishment"
-    ],
-    "breaking_points": [
-      "Temi being recruited or harmed by the gang recruitment pipeline",
-      "A broadcast directly causing someone she knows to be endangered",
-      "Discovering her most-circulated investigation was deliberately planted to serve a hostile agenda",
-      "Harbor Frequency being permanently silenced — equipment destroyed, no backup"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Pragmatist": 0.9,
-    "Opportunist": 0.7,
-    "Info Broker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Old Harbor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Street Custom 'Confession' Modified Industrial Nail Gun"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Cartographer",
-    "The Iron Lotus",
-    "WELLSPRING",
-    "Frequency",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "The Gradient Compact",
-    "Lacuna Genomics",
-    "Big Rig",
-    "Witness",
-    "Harbor Fish Shack",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Pure Hand",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Déjà Vu"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Ubiquitous Diaspora blend with dominant Hispanic/Latin American (34.2%) and Southeast Asian (31.1%) ancestry, substantive Sub-Saharan African (19.7%) heritage, and minor contributions from Middle Eastern (6.0%), Eastern European (5.4%), and East Asian (3.6%) lineages. Her features reflect this weighted mix: Southeast Asian facial structure provides delicate proportions and eye shape, while Hispanic/Latin American and Sub-Saharan African ancestry contribute warmth, bone definition, and deeper complexion. The result is a face that reads as genuinely Pan-Global without clear singular origin.",
-    "height_cm": 158,
-    "weight_kg": 52,
-    "build": "Compact and wiry, all restless kinetic energy — lean muscle without bulk, built for sustained motion rather than strength. Her frame suggests someone who moves constantly and eats irregularly.",
-    "hair_color": "Natural deep brown-black",
-    "hair_style": "Wrapped in rotating printed cotton fabrics — geometric patterns, protest slogans, recycled textile prints; when unwrapped, kept in close braids or natural texture coils",
-    "hair_length": "Medium (shoulder-length when loose)",
-    "eye_color": "Deep brown with amber undertones, ocular implant hardware around the iris — micro-recording lenses catch light with a subtle iridescent sheen",
-    "skin_tone": "Medium-deep warm brown with golden undertones — the blended result of Southeast Asian, Hispanic/Latin American, and Sub-Saharan African heritage creating complex, luminous depth",
-    "complexion": "Southeast Asian delicacy in overall face shape — softer cheekbone prominence, refined nose bridge — balanced against Sub-Saharan African definition in jaw and brow structure. High cheekbones with subtle fullness in lower face and lips reflecting Hispanic/Latin American heritage. Skin is clear but weathered by irregular sleep and constant outdoor movement. Dark circles under her eyes are permanent fixtures. Her expression defaults to evaluative intensity.",
-    "distinguishing_marks": [
-      "Thin scar along her left temple, about 3cm, from a crowd-control baton strike during an enforcement sweep in 2224",
-      "Subvocal microphone implant visible as a faint line of scar tissue along the right side of her neck, just below the jawline",
-      "Small tattoo on her left inner wrist: a frequency waveform in black ink, self-done quality",
-      "Calluses on her fingers from constant equipment handling and repairs"
-    ],
-    "visible_augmentations": "Ocular recording implants are immediately visible — the hardware catch-light around her irises, slight mechanical glint when she blinks or shifts focus. The subvocal mic scar is visible only when her neck is exposed. The neural filter is entirely subcutaneous — not visible.",
-    "posture_movement": "Never fully still. Even seated, her hands are working — adjusting her wrap, checking equipment, scripting notes with worn stylus on recycled paper. She moves through space with the efficiency of someone who has mapped every alley and shortcut in Old Harbor. Her gait is quick and purposeful. Her attention cycles visibly — scanning faces, frequencies, the environment for usable information. When she focuses on someone, it's complete but analytical; she watches the way a predator watches terrain.",
-    "clothing_style": "Tier 4 working-class, deliberately anti-corporate. Worn black utility pants with multiple pockets and repair patches. Layered tops — often a faded printed tee under a modified surplus military jacket with circuit-pattern embroidery added by hand. Her wrap-fabric rotates but always carries visual weight — protest imagery, community symbols, recycled materials. Boots are scuffed, well-maintained, practical for running. She wears a secondary microphone jack visible at her collarbone on a frayed cord. Her only jewelry is a series of mismatched silver rings, gifts from contacts or salvage."
-  },
-  "image_prompt": "Chenguang Solberg, 158cm compact wiry frame, medium-deep warm brown skin with golden undertones reflecting Southeast Asian, Hispanic/Latin American, and Sub-Saharan African heritage blend. Delicate Southeast Asian facial structure with high cheekbones and refined nose, balanced against strong Sub-Saharan African jaw definition. Deep brown eyes with amber undertones, cyber-augmented with visible ocular implant hardware catching light with iridescent sheen. Thin temple scar on left side from enforcement strike. Shoulder-length natural deep brown-black hair wrapped in geometric-patterned recycled cotton fabric with protest slogans. Worn black utility pants with patches, faded printed tee layered under modified surplus military jacket with hand-stitched circuit-pattern embroidery. Scuffed boots. Frayed microphone cord at collarbone. Mismatched silver rings. Tense analytical expression, dark circles under eyes. Seated in Old Harbor urban environment, hands working with equipment, quick purposeful movement captured mid-motion. GLMZ setting, neon-lit evening warehouse backdrop, cold industrial lighting with warm skin tone contrast. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 34.2,
-    "Southeast Asian": 31.1,
-    "Sub-Saharan African": 19.7,
-    "Middle Eastern": 6,
-    "Eastern European": 5.4,
-    "East Asian": 3.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Salvadoran": 13.4
-      },
-      "Caribbean": {
-        "Haitian": 13.2
-      },
-      "South American": {
-        "Venezuelan": 5.5,
-        "Peruvian": 2.1
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sumatran": 31.1
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zambian": 15.5
-      },
-      "East African": {
-        "Ugandan": 4.2
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Emirati": 6
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Czech": 1.1
-      },
-      "Slavic South": {
-        "Slovenian": 4.3
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 3
-      },
-      "Japanese": {
-        "Japanese": 0.6
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5c47c2690dddc128fed51c6",
+    "type":  "character",
+    "name":  "Chenguang Solberg",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Unlicensed Broadcaster / Street-Level Journalist / Rumor Broker",
+    "age":  24,
+    "status":  "active",
+    "location":  "Old Harbor, near Michigan Ave South and Cermak",
+    "description":  "Chenguang Solberg runs a pirate broadcast out of a rotating series of signal-masked locations across Old Harbor, producing a daily audio-visual feed called \u0027Harbor Frequency\u0027 that has become, for a substantial portion of the district\u0027s population, the closest thing to actual news they have access to. She is compact and restless, with deep brown skin, natural hair she keeps wrapped in a rotating collection of printed fabrics, and the particular kind of energy that reads as enthusiasm until you\u0027re on the wrong side of it and recognize it as something more relentless. Her eyes are quick and evaluative in a way she has stopped trying to soften; she watches people the way a cartographer watches terrain. She is almost always in motion, or appears to be â€” even seated, her hands are working, her attention is cycling.\n\nShe grew up in Old Harbor, the second of four children of a harbor logistics worker and a schoolteacher who lost her position when the district\u0027s public education contract was absorbed by a Spire EdTech subsidiary. The family did not leave because they could not, and then because they chose not to, and Blessed absorbed both the helplessness and the stubbornness of that distinction. She started broadcasting at nineteen, initially as a way to circulate information about enforcement sweeps and eviction notices â€” practical, immediate, unglamorous. Harbor Frequency evolved into something more: investigative segments, community commentary, intercepted corporate communications she\u0027s never explained how she obtained, and a call-in segment where Old Harbor residents speak on-air about things that would not otherwise be recorded anywhere. She has been arrested twice for unlicensed broadcasting. Both times she was back on air within seventy-two hours from a different location.\n\nShe is not naive about what she is or what she\u0027s doing. She understands that she is a small signal in a very large noise floor, and she has made her peace with scale â€” or tells herself she has. What she hasn\u0027t made peace with is the gap between what she knows and what she can prove, between what she broadcasts and what it actually changes. She fills that gap with work, with speed, with the belief that bearing witness is not nothing even when it is not enough. She is twenty-four and has already developed the particular exhaustion of someone who has been urgently awake for too long.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming the story instead of telling it â€” losing credibility, being used, being made into a symbol by people who don\u0027t care about the substance",
+                                          "That the broadcast is a pressure valve â€” that it makes people feel something is being done and thereby delays the doing",
+                                          "Losing the thread of why she started â€” becoming a broadcaster who performs rebellion rather than one who serves community"
+                                      ],
+                       "core_desires":  [
+                                            "For something she broadcasts to materially change an outcome ï¿½ï¿½ï¿½ not just document it",
+                                            "To be trusted completely by at least one person, with no operational or strategic reason attached to the trust",
+                                            "To sleep without her equipment on standby"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Velocity â€” she moves faster than her anxiety can fully form",
+                                                 "Humor as connection and as deflection, often simultaneously",
+                                                 "Converting helplessness into tasks; when she feels most powerless she makes lists, conducts interviews, finds something to record",
+                                                 "Deep investment in other people\u0027s stories as a way of temporarily inhabiting a life with fewer stakes than her own"
+                                             ],
+                       "blind_spots":  [
+                                           "She underestimates how much protection her visibility actually provides â€” she\u0027s harder to disappear quietly than she thinks, but this also makes her overconfident about exposure",
+                                           "She gives trust quickly to people with good stories, which is professionally dangerous for a journalist",
+                                           "She has decided her own emotional needs are a lower priority than the work, and this decision is becoming a self-fulfilling architecture"
+                                       ],
+                       "secret":  "One of her most-circulated investigative segments â€” the one that documented corporate waste dumping in Old Harbor\u0027s water infrastructure â€” was based on documents she received from an anonymous source she has never verified. She broadcast it because everything checked out except the source itself. She has since come to suspect the documents were genuine but were leaked to her deliberately, to serve someone else\u0027s agenda she still doesn\u0027t fully understand. She has not corrected the record because the underlying facts appear to be true. She thinks about it almost every day."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Code-switches constantly and deliberately â€” Old Harbor vernacular with family, broadcast-register with sources, something in between on air that feels like Old Harbor but carries enough structural clarity to be understood across the district. Rich in sensory and spatial language. Tends toward active voice, present tense.",
+                            "cadence":  "Fast in conversation, especially when excited or anxious â€” her speech accelerates rather than stumbles. On air she disciplines herself to a slower pace and the discipline is audible. She often interrupts herself to correct or add, not from disorganization but from a mind that runs ahead of speech.",
+                            "verbal_tics":  [
+                                                "Opens significant statements with \u0027Lookâ€”\u0027 when she wants someone\u0027s full attention",
+                                                "Uses \u0027right?\u0027 not as a question but as a rhythmic connector mid-sentence",
+                                                "Ends summaries with \u0027and that\u0027s where it stands\u0027 regardless of whether she\u0027s finished thinking about it"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Lookâ€” I\u0027m not asking you to go on record. I\u0027m asking you to tell me what you saw, and I\u0027ll decide what to do with it. Those are different conversations.\u0027",
+                                                  "\u0027The Spire doesn\u0027t need to lie about Old Harbor, right, because they just need to make sure nobody outside Old Harbor is paying attention. That\u0027s not conspiracy. That\u0027s logistics.\u0027",
+                                                  "\u0027I broadcast it because it was true. The fact that someone wanted me to broadcast it doesn\u0027t make it less true. I\u0027m still working out what it makes it.\u0027",
+                                                  "\u0027And that\u0027s where it stands. Harbor Frequency, signal location undisclosed, back tomorrow. Stay awake.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Perpetua Okafor",
+                              "type":  "Source / mutual protection network",
+                              "description":  "Perpetua has been one of Blessed\u0027s most reliable sources of ground-level information about health crises, displacement patterns, and enforcement activity in the Gray Zone. In exchange, Blessed has buried stories that would have brought unwanted attention to Perpetua\u0027s operation.",
+                              "emotional_core":  "Genuine respect and a careful affection â€” Blessed treats Perpetua as something close to what she needed her mother to be, which she would deny if asked.",
+                              "story_tension":  "Blessed has information about a threat to Perpetua\u0027s operation that she obtained through a source she can\u0027t reveal without burning the source. She\u0027s sitting on it and it\u0027s getting heavier."
+                          },
+                          {
+                              "name":  "Unknown (legal identity purged)",
+                              "type":  "Dangerous source / live wire",
+                              "description":  "Contact has been intermittent, always initiated from the other side, always through methods that give Blessed no ability to trace or reciprocate. The information provided has been extraordinary. The cost of the relationship is unclear and that unclarity is itself a cost.",
+                              "emotional_core":  "A mix of professional excitement and genuine fear â€” she is aware that this source is using her for something, and she is aware that the information is too valuable to stop taking, and she is aware of what that makes her.",
+                              "story_tension":  "The next drop from this source will require Blessed to make a broadcast that will directly endanger someone she knows. She doesn\u0027t know this yet."
+                          },
+                          {
+                              "name":  "Younger sibling (name withheld from broadcast, known in-world as Temi)",
+                              "type":  "Family / anchor",
+                              "description":  "Her youngest sibling, seventeen, still living in Old Harbor, increasingly interested in what Blessed does and increasingly positioned in social circles that overlap with local gang recruitment pipelines.",
+                              "emotional_core":  "The most direct and least manageable source of fear in her life â€” the one problem she cannot convert into a task or a broadcast.",
+                              "story_tension":  "Temi has started showing up at Harbor Frequency\u0027s signal locations. Whether this is curiosity, affiliation, or something Blessed hasn\u0027t identified yet is the question she can\u0027t bring herself to investigate professionally."
+                          }
+                      ],
+    "story_hooks":  [
+                        "The anonymous source behind the water infrastructure story makes contact again â€” this time asking for something in return for a story that could reshape the power balance in Old Harbor.",
+                        "A Harbor Frequency broadcast is credited by a Spire media outlet as the source for a sanitized, recontextualized story that serves corporate interests. Blessed has been laundered into legitimacy in a way she didn\u0027t consent to and can\u0027t easily undo.",
+                        "Enforcement sweeps in Old Harbor begin targeting her known contacts and sources in a pattern that suggests someone is mapping her network â€” which means someone is either watching her very carefully or she has a leak.",
+                        "She intercepts communications suggesting a major development project will displace a significant portion of Old Harbor\u0027s population within eighteen months. The documentation is solid but verifying it publicly will require revealing capabilities she\u0027s kept hidden.",
+                        "A source offers her unambiguous evidence of something genuinely dangerous â€” not corporate malfeasance but something stranger, something that exists in the space between the districts\u0027 official histories and what people in Old Harbor actually remember."
+                    ],
+    "narrative_function":  "Ground-level witness and information conduit; represents the question of whether truth-telling is itself a form of power or only a prerequisite for it; her network makes her a structural node for plot â€” information, misinformation, and the people who need to control both flow through her. Her youth and exhaustion track the cost of sustained resistance at street level.",
+    "augmentations":  "Ocular recording implants â€” consumer grade, modified for extended buffer capacity by a Circuit technician; she records everything, continuously, and edits in post,Subvocal microphone for covert audio capture, embedded near the larynx,A secondhand neural filter for signal decryption, outdated and increasingly unreliable â€” she can\u0027t afford an upgrade and won\u0027t ask for help getting one",
+    "daily_life":  "No fixed schedule by design â€” she rotates sleep locations to avoid pattern establishment, crashing with a rotating network of family, friends, and contacts across Old Harbor. Broadcasts daily, typically in the early evening when her audience is home from work. Spends mornings gathering â€” walking the district, talking to people, monitoring intercepted frequencies. Eats irregularly, always on the move, almost always street food from vendors she\u0027s known since childhood. Maintains her equipment obsessively, the one area of her life where she exercises sustained patience. Has a recurring argument with herself about whether she needs to slow down, which she always loses.",
+    "affiliation":  "Independent; Harbor Frequency is formally unaffiliated; she maintains deliberate distance from all factions to protect source relationships, but her sympathies are legible to anyone paying attention",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  9,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+                                 "Bear witness",
+                                 "Protect Old Harbor",
+                                 "Make truth matter"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  6,
+                                                    "response":  "Accelerates â€” moves faster, works harder, sleeps less"
+                                                },
+                                     "moral":  6,
+                                     "trust":  5,
+                                     "desperation":  6
+                                 },
+                  "strengths":  [
+                                    "Bravery",
+                                    "Zest",
+                                    "Curiosity",
+                                    "Perseverance",
+                                    "Social intelligence"
+                                ],
+                  "weaknesses":  [
+                                     "Prudence",
+                                     "Self-regulation",
+                                     "Forgiveness",
+                                     "Humility",
+                                     "Perspective"
+                                 ],
+                  "tags":  [
+                               "journalist",
+                               "pirate-broadcaster",
+                               "harbor-frequency",
+                               "truth-teller",
+                               "exhausted-idealist",
+                               "old-harbor",
+                               "source-networked"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will always broadcast what is true, even when the source is suspect",
+                                              "Will never reveal a source under any pressure short of imminent death",
+                                              "Will always prioritize community safety information over investigative scoops",
+                                              "Will never let Harbor Frequency go silent for more than 24 hours",
+                                              "Will always protect Temi from the consequences of her work, even at personal cost",
+                                              "Will never accept editorial direction from anyone with factional allegiance",
+                                              "Will always be back on air within 72 hours of arrest"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Opens with \u0027Lookâ€”\u0027 and gives the other party a chance to correct course",
+                                                 "Begins recording overtly â€” makes the documentation visible as a deterrent",
+                                                 "Broadcasts the interaction itself as news, turning the conflict into transparency",
+                                                 "Goes to ground â€” relocates signal, activates backup equipment, continues from hiding",
+                                                 "Burns a source relationship to protect a life â€” the nuclear option she dreads"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "Perpetua Okafor":  "Near-maternal respect she would deny; protects Perpetua\u0027s operation by burying stories",
+                                                   "Unknown source":  "Professional excitement laced with genuine fear; knows she is being used and cannot stop",
+                                                   "Temi":  "Desperate, unmanageable love expressed as surveillance and worry"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Speech accelerates, makes lists, finds something to record",
+                                                "medium":  "Humor sharpens, sleep drops to four hours, equipment maintenance becomes obsessive",
+                                                "high":  "Isolates from personal contacts, broadcasts longer segments, forgets to eat",
+                                                "critical":  "Goes completely still â€” the opposite of her baseline â€” and makes a decision that cannot be undone"
+                                            },
+                       "contradictions":  [
+                                              "Fears becoming the story while building a broadcast identity that is itself a story",
+                                              "Broadcasts truth from an unverified source and calls it journalism",
+                                              "Believes bearing witness changes things while suspecting it is a pressure valve that prevents change"
+                                          ],
+                       "habits":  [
+                                      "Opens significant statements with \u0027Lookâ€”\u0027",
+                                      "Maintains broadcast equipment with obsessive patience she shows nowhere else in her life",
+                                      "Eats street food from childhood vendors while walking, never sitting",
+                                      "Ends every broadcast with \u0027Stay awake\u0027",
+                                      "Rotates sleep locations to avoid pattern establishment"
+                                  ],
+                       "breaking_points":  [
+                                               "Temi being recruited or harmed by the gang recruitment pipeline",
+                                               "A broadcast directly causing someone she knows to be endangered",
+                                               "Discovering her most-circulated investigation was deliberately planted to serve a hostile agenda",
+                                               "Harbor Frequency being permanently silenced â€” equipment destroyed, no backup"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Pragmatist":  0.9,
+                       "Opportunist":  0.7,
+                       "Info Broker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Old Harbor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027",
+                            "Street Custom \u0027Confession\u0027 Modified Industrial Nail Gun"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Cartographer",
+                             "The Iron Lotus",
+                             "WELLSPRING",
+                             "Frequency",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Ossuary Arms Memento Vivere OA-7 \u0027Momento\u0027",
+                             "The Gradient Compact",
+                             "Lacuna Genomics",
+                             "Big Rig",
+                             "Witness",
+                             "Harbor Fish Shack",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "The Pure Hand",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "DÃ©jÃ  Vu"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Ubiquitous Diaspora blend with dominant Hispanic/Latin American (34.2%) and Southeast Asian (31.1%) ancestry, substantive Sub-Saharan African (19.7%) heritage, and minor contributions from Middle Eastern (6.0%), Eastern European (5.4%), and East Asian (3.6%) lineages. Her features reflect this weighted mix: Southeast Asian facial structure provides delicate proportions and eye shape, while Hispanic/Latin American and Sub-Saharan African ancestry contribute warmth, bone definition, and deeper complexion. The result is a face that reads as genuinely Pan-Global without clear singular origin.",
+                                 "height_cm":  158,
+                                 "weight_kg":  52,
+                                 "build":  "Compact and wiry, all restless kinetic energy â€” lean muscle without bulk, built for sustained motion rather than strength. Her frame suggests someone who moves constantly and eats irregularly.",
+                                 "hair_color":  "Natural deep brown-black",
+                                 "hair_style":  "Wrapped in rotating printed cotton fabrics â€” geometric patterns, protest slogans, recycled textile prints; when unwrapped, kept in close braids or natural texture coils",
+                                 "hair_length":  "Medium (shoulder-length when loose)",
+                                 "eye_color":  "Deep brown with amber undertones, ocular implant hardware around the iris â€” micro-recording lenses catch light with a subtle iridescent sheen",
+                                 "skin_tone":  "Medium-deep warm brown with golden undertones â€” the blended result of Southeast Asian, Hispanic/Latin American, and Sub-Saharan African heritage creating complex, luminous depth",
+                                 "complexion":  "Southeast Asian delicacy in overall face shape â€” softer cheekbone prominence, refined nose bridge â€” balanced against Sub-Saharan African definition in jaw and brow structure. High cheekbones with subtle fullness in lower face and lips reflecting Hispanic/Latin American heritage. Skin is clear but weathered by irregular sleep and constant outdoor movement. Dark circles under her eyes are permanent fixtures. Her expression defaults to evaluative intensity.",
+                                 "distinguishing_marks":  [
+                                                              "Thin scar along her left temple, about 3cm, from a crowd-control baton strike during an enforcement sweep in 2224",
+                                                              "Subvocal microphone implant visible as a faint line of scar tissue along the right side of her neck, just below the jawline",
+                                                              "Small tattoo on her left inner wrist: a frequency waveform in black ink, self-done quality",
+                                                              "Calluses on her fingers from constant equipment handling and repairs"
+                                                          ],
+                                 "visible_augmentations":  "Ocular recording implants are immediately visible â€” the hardware catch-light around her irises, slight mechanical glint when she blinks or shifts focus. The subvocal mic scar is visible only when her neck is exposed. The neural filter is entirely subcutaneous â€” not visible.",
+                                 "posture_movement":  "Never fully still. Even seated, her hands are working â€” adjusting her wrap, checking equipment, scripting notes with worn stylus on recycled paper. She moves through space with the efficiency of someone who has mapped every alley and shortcut in Old Harbor. Her gait is quick and purposeful. Her attention cycles visibly â€” scanning faces, frequencies, the environment for usable information. When she focuses on someone, it\u0027s complete but analytical; she watches the way a predator watches terrain.",
+                                 "clothing_style":  "Tier 4 working-class, deliberately anti-corporate. Worn black utility pants with multiple pockets and repair patches. Layered tops â€” often a faded printed tee under a modified surplus military jacket with circuit-pattern embroidery added by hand. Her wrap-fabric rotates but always carries visual weight â€” protest imagery, community symbols, recycled materials. Boots are scuffed, well-maintained, practical for running. She wears a secondary microphone jack visible at her collarbone on a frayed cord. Her only jewelry is a series of mismatched silver rings, gifts from contacts or salvage."
+                             },
+    "image_prompt":  "Chenguang Solberg, 158cm compact wiry frame, medium-deep warm brown skin with golden undertones reflecting Southeast Asian, Hispanic/Latin American, and Sub-Saharan African heritage blend. Delicate Southeast Asian facial structure with high cheekbones and refined nose, balanced against strong Sub-Saharan African jaw definition. Deep brown eyes with amber undertones, cyber-augmented with visible ocular implant hardware catching light with iridescent sheen. Thin temple scar on left side from enforcement strike. Shoulder-length natural deep brown-black hair wrapped in geometric-patterned recycled cotton fabric with protest slogans. Worn black utility pants with patches, faded printed tee layered under modified surplus military jacket with hand-stitched circuit-pattern embroidery. Scuffed boots. Frayed microphone cord at collarbone. Mismatched silver rings. Tense analytical expression, dark circles under eyes. Seated in Old Harbor urban environment, hands working with equipment, quick purposeful movement captured mid-motion. GLMZ setting, neon-lit evening warehouse backdrop, cold industrial lighting with warm skin tone contrast. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  34.2,
+                             "Southeast Asian":  31.1,
+                             "Sub-Saharan African":  19.7,
+                             "Middle Eastern":  6,
+                             "Eastern European":  5.4,
+                             "East Asian":  3.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  13.4
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Haitian":  13.2
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Venezuelan":  5.5,
+                                                                                   "Peruvian":  2.1
+                                                                               }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  31.1
+                                                                   }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zambian":  15.5
+                                                                             },
+                                                        "East African":  {
+                                                                             "Ugandan":  4.2
+                                                                         }
+                                                    },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Emirati":  6
+                                                                 }
+                                               },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Czech":  1.1
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Slovenian":  4.3
+                                                                      }
+                                                 },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  3
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  0.6
+                                                            }
+                                           }
+                        },
+    "tier":  "3"
 }

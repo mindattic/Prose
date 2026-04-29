@@ -1,254 +1,275 @@
-{
-  "id": "019d6143a6237c998f459a038f4868c0",
-  "type": "character",
-  "name": "Aishwarya Jung",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Climate refugee and de facto matriarch of a tent-city family cluster",
-  "age": 67,
-  "status": "active",
-  "location": "The Waukegan Industrial the Gray Zone, Tent Cluster 9 (informally: 'Haf's Row'), near Michigan Ave and Roosevelt",
-  "description": "Aishwarya Jung came to GLMZ's edges seventeen years ago with twelve people and lost four of them to the journey. She arrived with nothing except a ferocious organizational intelligence and the absolute conviction that the remaining eight would survive. They did. The cluster at Haf's Row has grown to forty-one people now — not all related by blood, but all held in place by a complex web of obligation, affection, and the specific terror of disappointing this woman.\n\nShe is small and tends toward stillness, which makes people underestimate her until they have been in a room with her for five minutes. Her face is a remarkable architecture of age and expression — she has the kind of features that are precise and deliberate even at rest. She wears her natural white hair unprocessed, cut close on the sides and fuller on top. Her hands are her most augmented feature: she accepted a nerve-enhancement package years ago to treat arthritic damage, and the faint silver threads of the implants are visible under the skin of her knuckles when the light is right. She does not consider this augmentation — she considers it a medical necessity, and she resents the question. She is generous to the point of self-destruction with resources and merciless with nonsense, and she has no patience for the distinction between the two.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.5,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "That the cluster will fracture after she is gone",
-      "That the journey cost more than it was worth and she will never be allowed to admit it"
-    ],
-    "core_desires": [
-      "Legal residency for every person in her cluster",
-      "One day of rest where she is not responsible for anything"
-    ],
-    "coping_mechanisms": [
-      "Ritual — the morning prayer, the evening count, the maintenance of routine as a bulwark against chaos",
-      "Redirecting grief into logistics"
-    ],
-    "blind_spots": [
-      "Cannot accept help gracefully — frames it as weakness even when she is exhausted",
-      "Has decided two of her cluster members are trustworthy beyond evidence; has not updated this assessment in years"
-    ],
-    "secret": "One of the four people she lost on the journey to GLMZ did not die by accident. There was a choice, in the dark, with limited water, and she made it. She has never spoken of it. She carries the name of that person in her mouth like a stone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal and precise in three languages, shifts between them within sentences based on emotional register. Sahel-inflected syntax, constructed sentences.",
-    "cadence": "Measured, even, authoritative — speaks as if each sentence has been weighed before release",
-    "verbal_tics": [
-      "'Listen to me.' (not a request)",
-      "'Yes or no, not maybe.'",
-      "Uses full names when displeased"
-    ],
-    "example_lines": [
-      "'You want to help. Good. Help means showing up on the third day when it is boring and nothing has changed. Can you do that?'",
-      "'I did not carry these people this far to watch them disappear into someone else's problem. What are you going to do about it?'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Ferrogate Transit representative has been visiting the Gray Zone with relocation offers that sound generous and feel wrong; Hafsatu needs someone with city-knowledge to investigate the fine print.",
-    "One of her cluster's young adults has gone missing into the deeper city, and she cannot go herself without leaving the cluster leaderless — she needs someone she can trust to find them."
-  ],
-  "narrative_function": "Authority figure in the margins — she commands loyalty in communities that have no official power. Quest giver for problems within the Gray Zone community. Moral compass character who challenges players' assumptions about poverty and agency. Can provide shelter and community knowledge.",
-  "augmentations": "Nerve-enhancement implants in both hands (medical, treats arthritic neuropathy — silver subcutaneous threading visible at knuckles). No cosmetic modifications.",
-  "daily_life": "Up before anyone else, mediating the morning's conflicts before they become the afternoon's crises; coordinates food and water allocation for the cluster, maintains the shared prayer-shrine to the industrial E.L.F. called Ironlung who the Gray Zone residents believe governs the heating systems.",
-  "affiliation": "Waukegan the Gray Zone Refugee Collective (informal); no corponation ties",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 10,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": -4,
-      "assertion_deference": 4,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "matriarch",
-      "survivor",
-      "community organizer",
-      "grief-keeper",
-      "pragmatist"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The cluster's survival comes before her comfort, always",
-      "Never lie to someone who is making a decision that affects their safety",
-      "Accept nothing from corponations without reading every word twice"
-    ],
-    "escalation_ladder": [
-      "Quiet, pointed questions",
-      "Public naming of the problem in front of witnesses",
-      "Withdrawal of cooperation and community resources",
-      "Appeals to the broader Shelf Collective — she has allies"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Formally courteous, immediately assessing — watches hands and eyes, categorizes within the first minute",
-      "friends": "Demanding and tender in equal measure, expresses affection through acts of practical care"
-    },
-    "stress_responses": {
-      "low": "Becomes more formal, speech slows",
-      "medium": "Begins reorganizing physical space — cleaning, moving, ordering — as displaced action",
-      "high": "Goes completely silent and finds somewhere private; the cluster knows not to approach for twenty minutes"
-    },
-    "contradictions": [
-      "Preaches that everyone is worth saving while having made a choice that suggests she knows this is not always true"
-    ],
-    "habits": [
-      "Counts the cluster members every evening — a head-count, murmured names",
-      "Keeps a physical ledger of resources in a waterproof case",
-      "Tends the Ironlung shrine with small machine-oil offerings every morning"
-    ],
-    "breaking_points": [
-      "Any official threatening to separate families in the cluster",
-      "Being asked to prove her value to someone with authority over her"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Nerve-enhancement implants (both hands, medical grade, arthritic neuropathy treatment)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Nerve-enhancement implants (both hands, medical grade, arthritic neuropathy treatment)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Nurturer": 0.7,
-    "Provider": 0.7,
-    "Bleeding Heart": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Waukegan Industrial the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Waukegan Industrial Shelf",
-    "Ferrogate Transit",
-    "Plot 17",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Patience",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Silver",
-    "The Pure Hand",
-    "GLMZ"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Predominantly East Asian (78.9%), with significant Hispanic/Latin American (10.7%) and Eastern European (10.4%) ancestry, creating a phenotype with warm medium-honey skin tone, subtle high cheekbones with slight lateral prominence, and almond-shaped eyes reflecting the East Asian genetic dominance, warmed by undertones from the secondary ancestry groups",
-    "height_cm": 156,
-    "weight_kg": 52,
-    "build": "Small-framed and lean, with the wiry resilience of someone who has spent decades rationing calories and carrying responsibility. No softness; muscle definition visible at wrists and forearms despite age.",
-    "hair_color": "Natural white, unbleached and unprocessed",
-    "hair_style": "Undercut: shaved close at temples and sides, fuller crown left standing approximately 5cm, swept slightly back",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, alert and penetrating",
-    "skin_tone": "Warm medium-honey brown with golden undertones from the East Asian ancestry base, enriched by subtle warmth from Hispanic/Latin American heritage and a cool undertone from Eastern European genetics, creating a luminous balanced tone without ashy cast",
-    "complexion": "Heavily lined face with pronounced cheekbones and sharp jawline; deep laugh lines around the eyes and mouth suggest chronic amusement at human folly. Facial structure shows the high cheekbone prominence and subtle eye-shape characteristic of East Asian heritage, combined with angular jaw definition enhanced by the secondary ancestry influences. Skin weathered but clean, with the particular dryness of someone living in industrial lake-effect zones. No makeup. Expression tends toward stillness until she speaks, then becomes remarkably mobile.",
-    "distinguishing_marks": [
-      "Fine silver threading visible beneath the skin of both knuckles, most visible on the dorsal surface in direct light — the result of subcutaneous nerve-enhancement implants.",
-      "A thin pale scar running along her left temple to jawline, approximately 8cm, healed decades ago; she does not discuss its origin.",
-      "Calluses on both palms and fingertips from seventeen years of manual resource management — food preparation, water distribution, cloth mending."
-    ],
-    "visible_augmentations": "Silver subcutaneous implant threading visible at the knuckles of both hands when light catches them at the correct angle. She makes no effort to conceal this. No other visible augmentation; any internal modifications are not apparent.",
-    "posture_movement": "Carries herself with minimal motion; economical and deliberate. Sits still for extended periods, hands folded, observing before speaking. Moves with the precision of someone managing chronic pain without complaint. When she stands, she rises slowly but completely — no half-measures. Her default expression is rest-neutral, but her eyes miss nothing.",
-    "clothing_style": "Tier 5 practical: hand-mended gray synthetic workpants with reinforced knees, a layered system of undyed linen and recycled thermal-weave that can be adjusted for temperature, and a long vest made from salvaged industrial canvas dyed dark indigo. All items show visible mending; nothing matches by design. Wears a hand-braided cord around her left wrist from which hangs a small cast-iron charm in the shape of an abstract machine (representing Ironlung). Footwear is practical boots with reinforced soles, resoled at least twice. No jewelry except the charm. Clothing is kept scrupulously clean despite the environment."
-  },
-  "image_prompt": "Aishwarya Jung, 156cm tall, wiry-lean East Asian-dominant woman (78.9% East Asian, 10.7% Hispanic/Latin American, 10.4% Eastern European) with warm honey-brown skin and golden undertones. Natural white short hair in undercut style, shaved at temples and sides with fuller crown swept back. Dark penetrating brown eyes set in heavily lined face with sharp cheekbones and angular jawline. Silver subcutaneous implant threading visible on knuckles in direct light. Thin pale 8cm scar along left temple to jawline. Wearing hand-mended gray synthetic workpants, layered undyed linen and thermal-weave top, long dark indigo salvaged canvas vest. Hand-braided cord around left wrist with cast-iron machine charm. Practical reinforced boots. Economical posture, minimal motion, rest-neutral expression. GLMZ Great Lakes Metropolitan Zone, industrial lake-effect setting, cool neon and overhead lighting highlighting her augmentations and weathered resilience. Scrupulously clean clothing despite environment. Stillness and quiet observation. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 78.9,
-    "Hispanic/Latin American": 10.7,
-    "Eastern European": 10.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 78.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Colombian": 8.5
-      },
-      "Mexican": {
-        "Mexican": 2.2
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Romanian": 4.5,
-        "Hungarian": 3.2
-      },
-      "Slavic West": {
-        "Polish": 2.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6237c998f459a038f4868c0",
+    "type":  "character",
+    "name":  "Aishwarya Jung",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Climate refugee and de facto matriarch of a tent-city family cluster",
+    "age":  67,
+    "status":  "active",
+    "location":  "The Waukegan Industrial the Gray Zone, Tent Cluster 9 (informally: \u0027Haf\u0027s Row\u0027), near Michigan Ave and Roosevelt",
+    "description":  "Aishwarya Jung came to GLMZ\u0027s edges seventeen years ago with twelve people and lost four of them to the journey. She arrived with nothing except a ferocious organizational intelligence and the absolute conviction that the remaining eight would survive. They did. The cluster at Haf\u0027s Row has grown to forty-one people now â€” not all related by blood, but all held in place by a complex web of obligation, affection, and the specific terror of disappointing this woman.\n\nShe is small and tends toward stillness, which makes people underestimate her until they have been in a room with her for five minutes. Her face is a remarkable architecture of age and expression â€” she has the kind of features that are precise and deliberate even at rest. She wears her natural white hair unprocessed, cut close on the sides and fuller on top. Her hands are her most augmented feature: she accepted a nerve-enhancement package years ago to treat arthritic damage, and the faint silver threads of the implants are visible under the skin of her knuckles when the light is right. She does not consider this augmentation â€” she considers it a medical necessity, and she resents the question. She is generous to the point of self-destruction with resources and merciless with nonsense, and she has no patience for the distinction between the two.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the cluster will fracture after she is gone",
+                                          "That the journey cost more than it was worth and she will never be allowed to admit it"
+                                      ],
+                       "core_desires":  [
+                                            "Legal residency for every person in her cluster",
+                                            "One day of rest where she is not responsible for anything"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual â€” the morning prayer, the evening count, the maintenance of routine as a bulwark against chaos",
+                                                 "Redirecting grief into logistics"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot accept help gracefully â€” frames it as weakness even when she is exhausted",
+                                           "Has decided two of her cluster members are trustworthy beyond evidence; has not updated this assessment in years"
+                                       ],
+                       "secret":  "One of the four people she lost on the journey to GLMZ did not die by accident. There was a choice, in the dark, with limited water, and she made it. She has never spoken of it. She carries the name of that person in her mouth like a stone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal and precise in three languages, shifts between them within sentences based on emotional register. Sahel-inflected syntax, constructed sentences.",
+                            "cadence":  "Measured, even, authoritative â€” speaks as if each sentence has been weighed before release",
+                            "verbal_tics":  [
+                                                "\u0027Listen to me.\u0027 (not a request)",
+                                                "\u0027Yes or no, not maybe.\u0027",
+                                                "Uses full names when displeased"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You want to help. Good. Help means showing up on the third day when it is boring and nothing has changed. Can you do that?\u0027",
+                                                  "\u0027I did not carry these people this far to watch them disappear into someone else\u0027s problem. What are you going to do about it?\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Ferrogate Transit representative has been visiting the Gray Zone with relocation offers that sound generous and feel wrong; Hafsatu needs someone with city-knowledge to investigate the fine print.",
+                        "One of her cluster\u0027s young adults has gone missing into the deeper city, and she cannot go herself without leaving the cluster leaderless â€” she needs someone she can trust to find them."
+                    ],
+    "narrative_function":  "Authority figure in the margins â€” she commands loyalty in communities that have no official power. Quest giver for problems within the Gray Zone community. Moral compass character who challenges players\u0027 assumptions about poverty and agency. Can provide shelter and community knowledge.",
+    "augmentations":  "Nerve-enhancement implants in both hands (medical, treats arthritic neuropathy â€” silver subcutaneous threading visible at knuckles). No cosmetic modifications.",
+    "daily_life":  "Up before anyone else, mediating the morning\u0027s conflicts before they become the afternoon\u0027s crises; coordinates food and water allocation for the cluster, maintains the shared prayer-shrine to the industrial E.L.F. called Ironlung who the Gray Zone residents believe governs the heating systems.",
+    "affiliation":  "Waukegan the Gray Zone Refugee Collective (informal); no corponation ties",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  10,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  -4,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "matriarch",
+                               "survivor",
+                               "community organizer",
+                               "grief-keeper",
+                               "pragmatist"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The cluster\u0027s survival comes before her comfort, always",
+                                              "Never lie to someone who is making a decision that affects their safety",
+                                              "Accept nothing from corponations without reading every word twice"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Quiet, pointed questions",
+                                                 "Public naming of the problem in front of witnesses",
+                                                 "Withdrawal of cooperation and community resources",
+                                                 "Appeals to the broader Shelf Collective â€” she has allies"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Formally courteous, immediately assessing â€” watches hands and eyes, categorizes within the first minute",
+                                                   "friends":  "Demanding and tender in equal measure, expresses affection through acts of practical care"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more formal, speech slows",
+                                                "medium":  "Begins reorganizing physical space â€” cleaning, moving, ordering â€” as displaced action",
+                                                "high":  "Goes completely silent and finds somewhere private; the cluster knows not to approach for twenty minutes"
+                                            },
+                       "contradictions":  [
+                                              "Preaches that everyone is worth saving while having made a choice that suggests she knows this is not always true"
+                                          ],
+                       "habits":  [
+                                      "Counts the cluster members every evening â€” a head-count, murmured names",
+                                      "Keeps a physical ledger of resources in a waterproof case",
+                                      "Tends the Ironlung shrine with small machine-oil offerings every morning"
+                                  ],
+                       "breaking_points":  [
+                                               "Any official threatening to separate families in the cluster",
+                                               "Being asked to prove her value to someone with authority over her"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Nerve-enhancement implants (both hands, medical grade, arthritic neuropathy treatment)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Nerve-enhancement implants (both hands, medical grade, arthritic neuropathy treatment)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Nurturer":  0.7,
+                       "Provider":  0.7,
+                       "Bleeding Heart":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Waukegan Industrial the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Snapper-22 \u0027Cricket\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Waukegan Industrial Shelf",
+                             "Ferrogate Transit",
+                             "Plot 17",
+                             "Crucible Industries Cryogenic Projector CP-7 \u0027Absolute\u0027",
+                             "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+                             "Patience",
+                             "Street Custom \u0027Four Horsemen\u0027 Pipe Pepperbox",
+                             "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+                             "Silver",
+                             "The Pure Hand",
+                             "GLMZ"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Predominantly East Asian (78.9%), with significant Hispanic/Latin American (10.7%) and Eastern European (10.4%) ancestry, creating a phenotype with warm medium-honey skin tone, subtle high cheekbones with slight lateral prominence, and almond-shaped eyes reflecting the East Asian genetic dominance, warmed by undertones from the secondary ancestry groups",
+                                 "height_cm":  156,
+                                 "weight_kg":  52,
+                                 "build":  "Small-framed and lean, with the wiry resilience of someone who has spent decades rationing calories and carrying responsibility. No softness; muscle definition visible at wrists and forearms despite age.",
+                                 "hair_color":  "Natural white, unbleached and unprocessed",
+                                 "hair_style":  "Undercut: shaved close at temples and sides, fuller crown left standing approximately 5cm, swept slightly back",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, alert and penetrating",
+                                 "skin_tone":  "Warm medium-honey brown with golden undertones from the East Asian ancestry base, enriched by subtle warmth from Hispanic/Latin American heritage and a cool undertone from Eastern European genetics, creating a luminous balanced tone without ashy cast",
+                                 "complexion":  "Heavily lined face with pronounced cheekbones and sharp jawline; deep laugh lines around the eyes and mouth suggest chronic amusement at human folly. Facial structure shows the high cheekbone prominence and subtle eye-shape characteristic of East Asian heritage, combined with angular jaw definition enhanced by the secondary ancestry influences. Skin weathered but clean, with the particular dryness of someone living in industrial lake-effect zones. No makeup. Expression tends toward stillness until she speaks, then becomes remarkably mobile.",
+                                 "distinguishing_marks":  [
+                                                              "Fine silver threading visible beneath the skin of both knuckles, most visible on the dorsal surface in direct light â€” the result of subcutaneous nerve-enhancement implants.",
+                                                              "A thin pale scar running along her left temple to jawline, approximately 8cm, healed decades ago; she does not discuss its origin.",
+                                                              "Calluses on both palms and fingertips from seventeen years of manual resource management â€” food preparation, water distribution, cloth mending."
+                                                          ],
+                                 "visible_augmentations":  "Silver subcutaneous implant threading visible at the knuckles of both hands when light catches them at the correct angle. She makes no effort to conceal this. No other visible augmentation; any internal modifications are not apparent.",
+                                 "posture_movement":  "Carries herself with minimal motion; economical and deliberate. Sits still for extended periods, hands folded, observing before speaking. Moves with the precision of someone managing chronic pain without complaint. When she stands, she rises slowly but completely â€” no half-measures. Her default expression is rest-neutral, but her eyes miss nothing.",
+                                 "clothing_style":  "Tier 5 practical: hand-mended gray synthetic workpants with reinforced knees, a layered system of undyed linen and recycled thermal-weave that can be adjusted for temperature, and a long vest made from salvaged industrial canvas dyed dark indigo. All items show visible mending; nothing matches by design. Wears a hand-braided cord around her left wrist from which hangs a small cast-iron charm in the shape of an abstract machine (representing Ironlung). Footwear is practical boots with reinforced soles, resoled at least twice. No jewelry except the charm. Clothing is kept scrupulously clean despite the environment."
+                             },
+    "image_prompt":  "Aishwarya Jung, 156cm tall, wiry-lean East Asian-dominant woman (78.9% East Asian, 10.7% Hispanic/Latin American, 10.4% Eastern European) with warm honey-brown skin and golden undertones. Natural white short hair in undercut style, shaved at temples and sides with fuller crown swept back. Dark penetrating brown eyes set in heavily lined face with sharp cheekbones and angular jawline. Silver subcutaneous implant threading visible on knuckles in direct light. Thin pale 8cm scar along left temple to jawline. Wearing hand-mended gray synthetic workpants, layered undyed linen and thermal-weave top, long dark indigo salvaged canvas vest. Hand-braided cord around left wrist with cast-iron machine charm. Practical reinforced boots. Economical posture, minimal motion, rest-neutral expression. GLMZ Great Lakes Metropolitan Zone, industrial lake-effect setting, cool neon and overhead lighting highlighting her augmentations and weathered resilience. Scrupulously clean clothing despite environment. Stillness and quiet observation. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  78.9,
+                             "Hispanic/Latin American":  10.7,
+                             "Eastern European":  10.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  78.9
+                                                          }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Colombian":  8.5
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  2.2
+                                                                        }
+                                                        },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  4.5,
+                                                                             "Hungarian":  3.2
+                                                                         },
+                                                     "Slavic West":  {
+                                                                         "Polish":  2.7
+                                                                     }
+                                                 }
+                        },
+    "tier":  "1"
 }

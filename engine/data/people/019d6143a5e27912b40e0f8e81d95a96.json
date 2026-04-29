@@ -1,305 +1,324 @@
-{
-  "id": "019d6143a5e27912b40e0f8e81d95a96",
-  "type": "character",
-  "name": "Fermin Baiseitov",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Ferrogate Transit rail operator, Deepwell Station line",
-  "age": 34,
-  "status": "active",
-  "location": "Deepwell Station, lower Blackpipe Corridor — lives in transit housing on Avon Curve, near sub-level access near LaSalle and Congress",
-  "description": "Fermin Baiseitov is lean and angular, with a long face, close-cropped hair, and the particular posture of someone who spends ten hours a day in a seated position in a tight cab: slightly hunched forward, neck perpetually stiff. His skin is a warm dark brown and he has a geneware mod — iridescent peacock-pattern irises — that he got done at nineteen when he had money for exactly one vanity thing and he chose to make it count. He keeps his fingernails very clean because the cab makes them filthy and cleanliness feels like the one thing he controls.\n\nFermin Baiseitov is not an unhappy man, but he is a careful one. He has seen too many things go wrong in the tunnels — mechanical failures, platform incidents, the odd person who steps onto the rail on purpose — to be loose with his attention. Off the clock he is surprisingly funny in a dry, deadpan way, a collector of absurd overheard conversations which he logs in a personal audio journal he has kept for eleven years. He has mild, undiagnosed tunnel fatigue — a known occupational condition among long-haul transit operators — which manifests as a need for open-sky time and a deep, inarticulate dread of any room without a visible exit.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.3,
-      "mask": 0.7,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Something catastrophic happening on his line and being unable to stop it",
-      "His life amounting to nothing more than its routine"
-    ],
-    "core_desires": [
-      "Enough savings to take six months off and do nothing — just exist above ground",
-      "To be genuinely surprised by something again"
-    ],
-    "coping_mechanisms": [
-      "The audio journal — obsessive documentation as emotional processing",
-      "Gallows humor with fellow operators"
-    ],
-    "blind_spots": [
-      "Mistakes emotional distance for self-sufficiency — doesn't realize how lonely he actually is",
-      "Underestimates how much institutional loyalty he has toward Ferrogate despite knowing it exploits him"
-    ],
-    "secret": "Eight months ago, he saw something on the rail through his cab camera — a person being pushed onto the tracks at Kessler Interchange, not jumping. He braked, nobody died. Ferrogate's official incident report logged it as a medical episode. He still has the raw footage cached on a local drive. He has told no one."
-  },
-  "speech_patterns": {
-    "vocabulary": "Dry, minimal, observational. Hausa-inflected sentence rhythms from his father's side mixed with flat Meridian transit-worker slang. Uses technical rail terminology as metaphor without realizing he does it.",
-    "cadence": "Measured and unhurried, with long pauses before punchlines that land better for the wait.",
-    "verbal_tics": [
-      "'Mm.' as a full response to things he doesn't want to engage",
-      "'You know what I saw today' as a story opener"
-    ],
-    "example_lines": [
-      "'The job is the job. It's not a calling. People who say it's a calling haven't been in the tunnel at hour nine.'",
-      "'You know what I saw today? A man in a full Axiom executive suit eating a flatbread over the trash. We contain multitudes in this city.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The cached footage from the Kessler Interchange incident is going to matter — someone is looking for it, and Danladi doesn't know yet that they know he has it.",
-    "Something is wrong on the deep section of Line 7 — the E.L.F. known to operators as the Groundwarden has gone silent, and two trains have experienced unexplained signal failures."
-  ],
-  "narrative_function": "Transit-connected information source — he sees who moves through the underground city every day. Potential witness. Window into Ferrogate's labor conditions and the hidden life of the rail system.",
-  "augmentations": "Geneware peacock-patterned iridescent irises. Ferrogate-issued neural timing patch (mandatory for operators — regulates micro-sleep and reaction latency). Nothing else.",
-  "daily_life": "Runs four shifts per week on the Deepwell-Bronzeline express, each shift ten hours. Uses off days for open-air walks along Grindstone Shore and recording his journal. Attends mutual aid meetings on the 12th of each month.",
-  "affiliation": "Ferrogate Transit — Line 7 Operator, Deepwell-Bronzeline corridor; member of the Ferrogate Worker Mutual Aid cell",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 6,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 7,
-      "expression": 6,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "observer",
-      "institutional insider",
-      "quiet courage",
-      "tunnel fatigue",
-      "documentation obsessive"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Don't borrow trouble — but don't pretend it isn't there either",
-      "Protect the passengers. That is the job, whatever else it is."
-    ],
-    "escalation_ladder": [
-      "Observe and wait",
-      "Document carefully",
-      "Raise with trusted mutual aid contact",
-      "Go public only as absolute last resort — he has seen what happens to people who do"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Polite and minimal — cordial in that professional way that gives nothing away",
-      "friends": "Generous, funny, remembers everything anyone has ever told him because the journal holds it all"
-    },
-    "stress_responses": {
-      "low": "Gets very quiet and processes alone",
-      "medium": "Records a journal entry, sometimes mid-shift on his break",
-      "high": "Goes completely flat affect — calm, efficient, functional — processes collapse later when he's safe"
-    },
-    "contradictions": [
-      "Keeps meticulous records of everything as an act of bearing witness, but is terrified of what bearing witness might cost him"
-    ],
-    "habits": [
-      "Touches the cab wall before every shift start — an unconscious ritual inherited from an older operator who said it was for the Groundwarden",
-      "Eats the same meal every work day: pickled vegetables and rice from a vendor at Deepwell platform"
-    ],
-    "breaking_points": [
-      "Watching institutional power bury something true that hurt someone real"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Ferrogate neural timing patch — reaction latency regulation, mandatory implant, Ferrogate retains administrative access",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Ferrogate neural timing patch — reaction latency regulation, mandatory implant, Ferrogate retains administrative access",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7,
-    "Con Artist": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Deepwell Station",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Street-Custom Gutter Katana 'Flatline'"
-  ],
-  "registered_firearms": [
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Crucible Industries Viper Mk.III 'Copperhead'"
-  ],
-  "related_entities": [
-    "Kessler Interchange",
-    "Blackpipe Corridor",
-    "Deepwell Station",
-    "Avon Curve",
-    "Timekeeper",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Ringo Heavy Transit MagRail Levitation Transport Network",
-    "Bathysphere Networks",
-    "GLMZ",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Line 7 Bar"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Complex continental blend dominated by Northern European (38.8%) and Central Asian (24.5%) ancestry, with significant East Asian (18%), Eastern European (12.8%), and South Asian (5%) admixture. This genetic mosaic creates striking facial architecture: broad, defined cheekbones and balanced proportions from Northern European and Central Asian stock, refined by East Asian eye shape and skin undertones. South Asian heritage contributes warmth and depth to complexion. The result is a distinctly cosmopolitan face—high angular cheekbones, straight jawline with subtle East Asian eye fold, balanced proportions with warm golden-neutral undertones characteristic of the Ubiquitous Diaspora.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Lean and angular with pronounced shoulders and a slight forward curve to the spine from prolonged seated work. Long-limbed, almost ascetic in frame, with minimal body fat.",
-    "hair_color": "Black",
-    "hair_style": "Close-cropped, military-neat, maintained for minimal cab friction and sweat management",
-    "hair_length": "Short",
-    "eye_color": "Iridescent peacock-pattern — naturally dark brown base with engineered blue-green-violet shimmer that shifts with light and pupil dilation; geneware modification performed at age 19",
-    "skin_tone": "Warm tan with golden undertones and neutral depth, reflecting the balanced blend of Northern European, Central Asian, East Asian, and South Asian ancestry. Years of artificial station lighting have prevented deeper tanning, maintaining a balanced mid-range tone with subtle golden warmth and slight olive undertones beneath the surface.",
-    "complexion": "Broad, defined face with prominent high cheekbones reflecting Northern European and Central Asian ancestry structure, balanced proportions with a straight jawline and subtle monolid characteristics from East Asian heritage. Skin is clear but shows minor stress lines around the eyes and perpetual tension across the forehead from focused concentration. Subtle warm undertones throughout. Fingernails are consistently clean and well-maintained, sometimes with visible calluses from cab controls.",
-    "distinguishing_marks": [
-      "Faint white scar on the inner left wrist, approximately 3cm long, from a childhood accident — barely visible unless looking closely",
-      "Small burn mark on the back of right hand near knuckle, roughly 1cm diameter, from an old brake-line incident early in his operator career"
-    ],
-    "visible_augmentations": "Peacock-pattern iridescent irises are immediately striking and clearly geneware. Ferrogate-issued neural timing patch is subcutaneous at the base of the skull — invisible unless specifically sought, but a trained eye might catch a faint linear scar at the hairline where it was installed.",
-    "posture_movement": "Habitually slight forward lean even when standing, as if anticipating the need to engage controls. Neck carries perpetual tension. Movements are precise and economical — no wasted motion. When walking, takes measured, deliberate strides. Sits with ankles crossed or feet firmly planted. Eyes move with intense focus before head follows.",
-    "clothing_style": "Tier 3-4 working class. Off-shift: well-maintained dark synthetic pants, long-sleeved shirt in muted colors (grey, charcoal, dark blue) for sun protection and concealment of sweat. Ferrogate-issued operator jacket — dark blue with reflective piping and Line 7 patches, worn during shifts. Practical shoes with good grip. Minimal jewelry except for a worn analog wristwatch and a simple brass ring on left middle finger. Everything is clean, functional, and chosen for durability over style. No visible corporate branding outside the transit uniform."
-  },
-  "image_prompt": "Fermin Baiseitov, transit operator in GLMZ, close-cropped black hair, striking iridescent peacock-blue-violet eyes with engineered geneware, warm tan skin with golden undertones and subtle East Asian features. Broad high cheekbones, straight jawline, slight forward lean from years at transit controls. Lean angular build, 178cm tall. Wearing dark charcoal long-sleeved shirt, dark blue Ferrogate operator jacket with reflective piping and Line 7 transit patches, practical dark pants. Worn analog wristwatch and simple brass ring visible. Faint white wrist scar barely visible, small burn mark on right hand. Tense focused expression, eyes intense and concentrated. Standing in neon-lit Great Lakes Metropolitan Zone transit hub, artificial station lighting casting cool shadows across his face, highlighting iridescent eyes. Precise measured posture, minimal movement. GLMZ 2200s aesthetic, gritty industrial setting, moody atmospheric lighting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 38.8,
-    "Central Asian": 24.5,
-    "East Asian": 18,
-    "Eastern European": 12.8,
-    "South Asian": 5,
-    "Hispanic/Latin American": 0.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Scandinavian": {
-        "Swedish": 21.2
-      },
-      "Germanic": {
-        "Austrian": 7.5,
-        "German": 4.2
-      },
-      "British Isles": {
-        "English": 5.9
-      }
-    },
-    "Central Asian": {
-      "Turkic": {
-        "Uzbek": 7.2
-      },
-      "Mongolic": {
-        "Mongolian": 14.4
-      },
-      "Iranian Central": {
-        "Tajik": 2.9
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 10.8
-      },
-      "Chinese": {
-        "Cantonese": 0.4,
-        "Shanghainese": 0.5
-      },
-      "Korean": {
-        "Korean": 6.3
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 0.2,
-        "Romanian": 0.6
-      },
-      "Slavic South": {
-        "Bosnian": 1.9
-      },
-      "Slavic East": {
-        "Belarusian": 10.1
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Baloch": 2.5,
-        "Punjabi Pakistani": 1.2
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 1,
-        "Sinhalese": 0.3
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 0.4,
-        "Guatemalan": 0.2
-      },
-      "South American": {
-        "Brazilian": 0.2
-      },
-      "Mexican": {
-        "Mexican": 0.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5e27912b40e0f8e81d95a96",
+    "type":  "character",
+    "name":  "Fermin Baiseitov",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Ferrogate Transit rail operator, Deepwell Station line",
+    "age":  34,
+    "status":  "active",
+    "location":  "Deepwell Station, lower Blackpipe Corridor â€” lives in transit housing on Avon Curve, near sub-level access near LaSalle and Congress",
+    "description":  "Fermin Baiseitov is lean and angular, with a long face, close-cropped hair, and the particular posture of someone who spends ten hours a day in a seated position in a tight cab: slightly hunched forward, neck perpetually stiff. His skin is a warm dark brown and he has a geneware mod â€” iridescent peacock-pattern irises â€” that he got done at nineteen when he had money for exactly one vanity thing and he chose to make it count. He keeps his fingernails very clean because the cab makes them filthy and cleanliness feels like the one thing he controls.\n\nFermin Baiseitov is not an unhappy man, but he is a careful one. He has seen too many things go wrong in the tunnels â€” mechanical failures, platform incidents, the odd person who steps onto the rail on purpose â€” to be loose with his attention. Off the clock he is surprisingly funny in a dry, deadpan way, a collector of absurd overheard conversations which he logs in a personal audio journal he has kept for eleven years. He has mild, undiagnosed tunnel fatigue â€” a known occupational condition among long-haul transit operators â€” which manifests as a need for open-sky time and a deep, inarticulate dread of any room without a visible exit.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Something catastrophic happening on his line and being unable to stop it",
+                                          "His life amounting to nothing more than its routine"
+                                      ],
+                       "core_desires":  [
+                                            "Enough savings to take six months off and do nothing â€” just exist above ground",
+                                            "To be genuinely surprised by something again"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "The audio journal â€” obsessive documentation as emotional processing",
+                                                 "Gallows humor with fellow operators"
+                                             ],
+                       "blind_spots":  [
+                                           "Mistakes emotional distance for self-sufficiency â€” doesn\u0027t realize how lonely he actually is",
+                                           "Underestimates how much institutional loyalty he has toward Ferrogate despite knowing it exploits him"
+                                       ],
+                       "secret":  "Eight months ago, he saw something on the rail through his cab camera â€” a person being pushed onto the tracks at Kessler Interchange, not jumping. He braked, nobody died. Ferrogate\u0027s official incident report logged it as a medical episode. He still has the raw footage cached on a local drive. He has told no one."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Dry, minimal, observational. Hausa-inflected sentence rhythms from his father\u0027s side mixed with flat Meridian transit-worker slang. Uses technical rail terminology as metaphor without realizing he does it.",
+                            "cadence":  "Measured and unhurried, with long pauses before punchlines that land better for the wait.",
+                            "verbal_tics":  [
+                                                "\u0027Mm.\u0027 as a full response to things he doesn\u0027t want to engage",
+                                                "\u0027You know what I saw today\u0027 as a story opener"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The job is the job. It\u0027s not a calling. People who say it\u0027s a calling haven\u0027t been in the tunnel at hour nine.\u0027",
+                                                  "\u0027You know what I saw today? A man in a full Axiom executive suit eating a flatbread over the trash. We contain multitudes in this city.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The cached footage from the Kessler Interchange incident is going to matter â€” someone is looking for it, and Danladi doesn\u0027t know yet that they know he has it.",
+                        "Something is wrong on the deep section of Line 7 â€” the E.L.F. known to operators as the Groundwarden has gone silent, and two trains have experienced unexplained signal failures."
+                    ],
+    "narrative_function":  "Transit-connected information source â€” he sees who moves through the underground city every day. Potential witness. Window into Ferrogate\u0027s labor conditions and the hidden life of the rail system.",
+    "augmentations":  "Geneware peacock-patterned iridescent irises. Ferrogate-issued neural timing patch (mandatory for operators â€” regulates micro-sleep and reaction latency). Nothing else.",
+    "daily_life":  "Runs four shifts per week on the Deepwell-Bronzeline express, each shift ten hours. Uses off days for open-air walks along Grindstone Shore and recording his journal. Attends mutual aid meetings on the 12th of each month.",
+    "affiliation":  "Ferrogate Transit â€” Line 7 Operator, Deepwell-Bronzeline corridor; member of the Ferrogate Worker Mutual Aid cell",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  6,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  7,
+                                 "expression":  6,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "observer",
+                               "institutional insider",
+                               "quiet courage",
+                               "tunnel fatigue",
+                               "documentation obsessive"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Don\u0027t borrow trouble â€” but don\u0027t pretend it isn\u0027t there either",
+                                              "Protect the passengers. That is the job, whatever else it is."
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Observe and wait",
+                                                 "Document carefully",
+                                                 "Raise with trusted mutual aid contact",
+                                                 "Go public only as absolute last resort â€” he has seen what happens to people who do"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Polite and minimal â€” cordial in that professional way that gives nothing away",
+                                                   "friends":  "Generous, funny, remembers everything anyone has ever told him because the journal holds it all"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Gets very quiet and processes alone",
+                                                "medium":  "Records a journal entry, sometimes mid-shift on his break",
+                                                "high":  "Goes completely flat affect â€” calm, efficient, functional â€” processes collapse later when he\u0027s safe"
+                                            },
+                       "contradictions":  [
+                                              "Keeps meticulous records of everything as an act of bearing witness, but is terrified of what bearing witness might cost him"
+                                          ],
+                       "habits":  [
+                                      "Touches the cab wall before every shift start â€” an unconscious ritual inherited from an older operator who said it was for the Groundwarden",
+                                      "Eats the same meal every work day: pickled vegetables and rice from a vendor at Deepwell platform"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching institutional power bury something true that hurt someone real"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Ferrogate neural timing patch â€” reaction latency regulation, mandatory implant, Ferrogate retains administrative access",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Ferrogate neural timing patch â€” reaction latency regulation, mandatory implant, Ferrogate retains administrative access",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Con Artist":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Deepwell Station",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Arcturus Defense Solutions AR-7 \u0027Mandate\u0027",
+                            "Crucible Industries Viper Mk.III \u0027Copperhead\u0027",
+                            "Street-Custom Gutter Katana \u0027Flatline\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Arcturus Defense Solutions AR-7 \u0027Mandate\u0027",
+                                "Crucible Industries Viper Mk.III \u0027Copperhead\u0027"
+                            ],
+    "related_entities":  [
+                             "Kessler Interchange",
+                             "Blackpipe Corridor",
+                             "Deepwell Station",
+                             "Avon Curve",
+                             "Timekeeper",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Ringo Heavy Transit MagRail Levitation Transport Network",
+                             "Bathysphere Networks",
+                             "GLMZ",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Line 7 Bar"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Complex continental blend dominated by Northern European (38.8%) and Central Asian (24.5%) ancestry, with significant East Asian (18%), Eastern European (12.8%), and South Asian (5%) admixture. This genetic mosaic creates striking facial architecture: broad, defined cheekbones and balanced proportions from Northern European and Central Asian stock, refined by East Asian eye shape and skin undertones. South Asian heritage contributes warmth and depth to complexion. The result is a distinctly cosmopolitan faceâ€”high angular cheekbones, straight jawline with subtle East Asian eye fold, balanced proportions with warm golden-neutral undertones characteristic of the Ubiquitous Diaspora.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and angular with pronounced shoulders and a slight forward curve to the spine from prolonged seated work. Long-limbed, almost ascetic in frame, with minimal body fat.",
+                                 "hair_color":  "Black",
+                                 "hair_style":  "Close-cropped, military-neat, maintained for minimal cab friction and sweat management",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Iridescent peacock-pattern â€” naturally dark brown base with engineered blue-green-violet shimmer that shifts with light and pupil dilation; geneware modification performed at age 19",
+                                 "skin_tone":  "Warm tan with golden undertones and neutral depth, reflecting the balanced blend of Northern European, Central Asian, East Asian, and South Asian ancestry. Years of artificial station lighting have prevented deeper tanning, maintaining a balanced mid-range tone with subtle golden warmth and slight olive undertones beneath the surface.",
+                                 "complexion":  "Broad, defined face with prominent high cheekbones reflecting Northern European and Central Asian ancestry structure, balanced proportions with a straight jawline and subtle monolid characteristics from East Asian heritage. Skin is clear but shows minor stress lines around the eyes and perpetual tension across the forehead from focused concentration. Subtle warm undertones throughout. Fingernails are consistently clean and well-maintained, sometimes with visible calluses from cab controls.",
+                                 "distinguishing_marks":  [
+                                                              "Faint white scar on the inner left wrist, approximately 3cm long, from a childhood accident â€” barely visible unless looking closely",
+                                                              "Small burn mark on the back of right hand near knuckle, roughly 1cm diameter, from an old brake-line incident early in his operator career"
+                                                          ],
+                                 "visible_augmentations":  "Peacock-pattern iridescent irises are immediately striking and clearly geneware. Ferrogate-issued neural timing patch is subcutaneous at the base of the skull â€” invisible unless specifically sought, but a trained eye might catch a faint linear scar at the hairline where it was installed.",
+                                 "posture_movement":  "Habitually slight forward lean even when standing, as if anticipating the need to engage controls. Neck carries perpetual tension. Movements are precise and economical â€” no wasted motion. When walking, takes measured, deliberate strides. Sits with ankles crossed or feet firmly planted. Eyes move with intense focus before head follows.",
+                                 "clothing_style":  "Tier 3-4 working class. Off-shift: well-maintained dark synthetic pants, long-sleeved shirt in muted colors (grey, charcoal, dark blue) for sun protection and concealment of sweat. Ferrogate-issued operator jacket â€” dark blue with reflective piping and Line 7 patches, worn during shifts. Practical shoes with good grip. Minimal jewelry except for a worn analog wristwatch and a simple brass ring on left middle finger. Everything is clean, functional, and chosen for durability over style. No visible corporate branding outside the transit uniform."
+                             },
+    "image_prompt":  "Fermin Baiseitov, transit operator in GLMZ, close-cropped black hair, striking iridescent peacock-blue-violet eyes with engineered geneware, warm tan skin with golden undertones and subtle East Asian features. Broad high cheekbones, straight jawline, slight forward lean from years at transit controls. Lean angular build, 178cm tall. Wearing dark charcoal long-sleeved shirt, dark blue Ferrogate operator jacket with reflective piping and Line 7 transit patches, practical dark pants. Worn analog wristwatch and simple brass ring visible. Faint white wrist scar barely visible, small burn mark on right hand. Tense focused expression, eyes intense and concentrated. Standing in neon-lit Great Lakes Metropolitan Zone transit hub, artificial station lighting casting cool shadows across his face, highlighting iridescent eyes. Precise measured posture, minimal movement. GLMZ 2200s aesthetic, gritty industrial setting, moody atmospheric lighting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  38.8,
+                             "Central Asian":  24.5,
+                             "East Asian":  18,
+                             "Eastern European":  12.8,
+                             "South Asian":  5,
+                             "Hispanic/Latin American":  0.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  21.2
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "Austrian":  7.5,
+                                                                       "German":  4.2
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "English":  5.9
+                                                                        }
+                                                  },
+                            "Central Asian":  {
+                                                  "Turkic":  {
+                                                                 "Uzbek":  7.2
+                                                             },
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  14.4
+                                                               },
+                                                  "Iranian Central":  {
+                                                                          "Tajik":  2.9
+                                                                      }
+                                              },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  10.8
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  0.4,
+                                                               "Shanghainese":  0.5
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  6.3
+                                                          }
+                                           },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  0.2,
+                                                                             "Romanian":  0.6
+                                                                         },
+                                                     "Slavic South":  {
+                                                                          "Bosnian":  1.9
+                                                                      },
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  10.1
+                                                                     }
+                                                 },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Baloch":  2.5,
+                                                                  "Punjabi Pakistani":  1.2
+                                                              },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  1,
+                                                                   "Sinhalese":  0.3
+                                                               }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  0.4,
+                                                                                     "Guatemalan":  0.2
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Brazilian":  0.2
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  0.1
+                                                                        }
+                                                        }
+                        },
+    "tier":  "3"
 }

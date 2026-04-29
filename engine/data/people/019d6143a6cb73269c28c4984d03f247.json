@@ -1,270 +1,291 @@
-{
-  "id": "019d6143a6cb73269c28c4984d03f247",
-  "type": "character",
-  "name": "Esmeralda Haugen",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Wandering data trader and Q-zero ghost",
-  "age": 52,
-  "status": "active",
-  "location": "Kenosha Crossing transit underbelly, rotating between hyperlane rest stops, near sub-level access near LaSalle and Congress",
-  "description": "Esmeralda Haugen is a broad-shouldered man whose body tells the story of thirty years on the road — a jaw broken and reset crooked, fingers thickened by cold and labor, dark brown skin weathered to a kind of polished leather. He wears a patched greatcoat lined with sewn pockets, each containing a different flavor of unlicensed data chip wrapped in cloth to prevent scanning. His left eye has a cataract that caught and never got fixed; it gives him a milky, unsettling gaze that strangers can't quite look away from. He has no geneware — he considers it a tracking vector — but he does have a small ELF shrine stitched into the coat's inner lining: a cluster of dead LEDs arranged around a copper disc, an offering to whatever spirit keeps travelers from vanishing on the hyperlanes.\n\nEsmeralda Haugen exists in the cracks of GLMZ's data systems as thoroughly as any person can. He has no registered identity, no Quanta account, no biometric profile on file with any corponation. He trades in physical data chips, handwritten information, oral news, and favors — a walking information economy that predates the networks. He is not paranoid so much as methodical; he made a decision decades ago and has honored it every day since. He tells stories the way other people breathe, compulsively and without quite being able to stop.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.5,
-      "id": 0.3,
-      "shadow": 0.6,
-      "mask": 0.8,
-      "ghost": 0.9
-    },
-    "core_fears": [
-      "Being identified and entered into a corponation database",
-      "Dying somewhere and having no one know"
-    ],
-    "core_desires": [
-      "To remain free of any system's claim on him",
-      "To be genuinely known by at least one person"
-    ],
-    "coping_mechanisms": [
-      "Constant movement prevents attachment and therefore loss",
-      "Storytelling — turning pain into transferable currency"
-    ],
-    "blind_spots": [
-      "He cannot recognize when someone is trying to help rather than extract from him",
-      "He believes his erasure from systems is purely practical, not also emotional self-punishment"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Archaic slang mixed with hyperlane pidgin; uses old-world idioms that don't quite translate; precise when trading information, discursive when not",
-    "cadence": "Slow, measured, with long pauses before important points — the cadence of someone who has learned that silence makes people fill it with useful information",
-    "verbal_tics": [
-      "'You understand what I'm saying?' after key statements",
-      "Refers to corponations by old nicknames that predate their current branding"
-    ],
-    "example_lines": [
-      "'What I can tell you and what I will tell you are two different inventories, friend. Let's negotiate which shelf we're shopping from.'",
-      "'The ELFs on this stretch of hyperlane — old ones, older than Axiom's contract on the road itself. They remember who built it. I've left offerings. They're talking, if you know how to listen.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A corponation data-hunter has finally triangulated Severino's movement pattern and is closing in; he needs someone to carry his data archive to safety before he's caught",
-    "One of his chips contains information that directly concerns a player character's past or missing family member — but Severino doesn't know what's on half his inventory"
-  ],
-  "narrative_function": "Information broker and local color; can provide off-grid knowledge unavailable through normal channels, can introduce players to underground networks, functions as a mystery because nobody knows his full history",
-  "augmentations": "None. Refuses all augmentation on principle.",
-  "daily_life": "Severino arrives at a rest stop before dawn, sleeps in a maintenance alcove or under a transit platform, then works his circuit of informal contacts — exchanging data chips for food, shelter, or information he can sell further down the road. He moves on before any single location registers his presence as a pattern.",
-  "affiliation": "",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 5,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -1,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "q-zero ghost",
-      "information broker",
-      "hyperlane veteran",
-      "elf devotee",
-      "self-erased"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never stay in one place long enough to become predictable",
-      "Trade information but never people — has a hard line against selling out individuals"
-    ],
-    "escalation_ladder": [
-      "Disengages and moves on when uncomfortable",
-      "Provides misleading information if pressed",
-      "Disappears entirely if threatened — has pre-planned exit routes everywhere"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Friendly but opaque; offers a story or a small piece of free information as a test of intent",
-      "friends": "The warmth of genuine affection mixed with the sadness of someone who knows he'll leave"
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative and tangential",
-      "medium": "Goes very quiet, assesses exits, stops volunteering information",
-      "high": "Vanishes — he has practiced disappearing from spaces faster than people can follow"
-    },
-    "contradictions": [
-      "Claims he wants no connections but keeps returning to the same transit communities year after year, checking on people he pretends not to care about"
-    ],
-    "habits": [
-      "Counts available exits upon entering any space",
-      "Offers food before information — a ritual courtesy",
-      "Whispers to his ELF shrine each night before sleeping"
-    ],
-    "breaking_points": [
-      "Someone using his information to harm a civilian will make him break his code of non-involvement"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.7,
-    "Opportunist": 0.7,
-    "Info Broker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Kenosha Crossing transit underbelly",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "related_entities": [
-    "Kenosha Crossing",
-    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Leather",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Copper",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "GLMZ"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Northern European (47.3%) provides the foundational tall frame and broad shoulders with angular bone structure. Eastern European (18.2%) contributes depth to facial architecture and complexion richness. Pacific Islander (17.0%) and Sub-Saharan African (13.3%) blend together to create warm medium-brown skin with golden undertones and substantial depth—the Pacific Islander component adds the warmth and golden cast, while the Sub-Saharan African ancestry deepens the base tone and contributes to facial feature definition. East Asian (4.2%) refines eye shape and cheekbone prominence. The synthesis is a distinctly diaspora phenotype: Northern European height and shoulder span anchoring a face with defined, prominent cheekbones shaped by the East Asian and Sub-Saharan African components, warm bronze-brown skin with golden undertones from the Pacific Islander blend, and eye shape reflecting both the Pacific Islander and East Asian heritage.",
-    "height_cm": 188,
-    "weight_kg": 94,
-    "build": "Broad-shouldered and thick through the torso, softened slightly by age but retaining the muscularity of decades of physical labor and constant movement. Hands are large and gnarled, fingers swollen at the knuckles from cold exposure and years gripping handholds on hyperlane vehicles.",
-    "hair_color": "Iron gray with traces of black at the temples",
-    "hair_style": "Shoulder-length, typically braided back or wound into a loose knot with whatever cord is available; maintained out of necessity rather than vanity",
-    "hair_length": "Medium",
-    "eye_color": "Left eye: natural dark brown; right eye: cataract-occluded, milky white with faint gray swirls",
-    "skin_tone": "Warm medium-bronze brown with golden undertones, weathered to a burnished leather appearance by decades of exposure to transit hub heat differentials and hyperlane radiation",
-    "complexion": "Deeply lined face, particularly around the eyes and forehead; jaw visibly reset from a break that healed crooked, giving his smile an asymmetrical quality. Stubble perpetually at three-day growth. Skin texture coarse but healthy, with a network of small scars across the backs of his hands and forearms. Prominent, well-defined cheekbones reflecting the blend of ancestry structures beneath the weathering.",
-    "distinguishing_marks": [
-      "Crooked jaw from an old break, reset unevenly, creating a slight cant to his lower face",
-      "Cataract in right eye causing permanent milky opacity",
-      "Network of fine white scars across both forearms and knuckles, consistent with decades of manual labor in industrial environments",
-      "Small burn scar on left temple, roughly the size of a coin, with slightly raised tissue",
-      "Calluses forming raised ridges across the palms and fingers"
-    ],
-    "visible_augmentations": "None. No chrome, no LED optics, no subdermal plating. His body is entirely unaugmented by choice—his age and weathering are entirely natural.",
-    "posture_movement": "Moves with deliberate economy, never rushed or sudden. Shoulders slightly forward, weight distributed evenly for balance on moving platforms. Walks like someone accustomed to unstable surfaces. His gaze is direct but his one functional eye often drifts slightly due to the cataract, making his attention feel unfocused even when intensely present.",
-    "clothing_style": "Patched greatcoat in faded charcoal, lined with dozens of handstitched pockets containing wrapped data chips; the pockets are secured with cord and small brass clasps to prevent accidental opening. Under the coat: layered thermal shirts in grays and blacks, worn thin but meticulously maintained. Canvas work pants with grease stains that never fully wash out. Boots that are resoled repeatedly, leather cracked but oiled regularly. A thin copper chain around his neck, attached to nothing visible. No visible branding; clothing is purely functional, Tier 5 salvage mixed with careful repair work."
-  },
-  "image_prompt": "Esmeralda Haugen, 188cm tall weathered man with broad shoulders and thick torso, warm bronze-brown skin with golden undertones, deeply lined face from decades of exposure. Iron gray hair shoulder-length, braided or knotted back. Left eye dark brown and intense, right eye milky white with cataract. Crooked jaw from old break, asymmetrical smile. Gnarled hands with swollen knuckles covered in fine white scars. Three-day stubble, prominent cheekbones. Wearing faded charcoal patched greatcoat lined with countless handstitched pockets and brass clasps, layered thermal shirts underneath, canvas work pants with grease stains, repeatedly resoled leather boots. Thin copper chain around neck. Standing with deliberate posture on an unstable hyperlane transit platform, industrial heat shimmer and radiation glow in background, dim amber and cyan neo-noir lighting, year 2226, no augmentations visible, entirely natural weathering and scars, gaze direct but slightly unfocused, economy of movement, functional Tier 5 salvage aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 47.3,
-    "Eastern European": 18.2,
-    "Pacific Islander": 17,
-    "Sub-Saharan African": 13.3,
-    "East Asian": 4.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Germanic": {
-        "German": 13.7,
-        "Austrian": 27
-      },
-      "Scandinavian": {
-        "Norwegian": 6.6
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 4,
-        "Slovak": 2.8
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 2.6,
-        "Romanian": 6
-      },
-      "Slavic East": {
-        "Russian": 2.8
-      }
-    },
-    "Pacific Islander": {
-      "Polynesian": {
-        "Tongan": 12.7
-      },
-      "Melanesian": {
-        "Papua New Guinean": 4.3
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Ethiopian": 10.2,
-        "Rwandan": 3.1
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 1.6
-      },
-      "Japanese": {
-        "Japanese": 1.3
-      },
-      "Chinese": {
-        "Fujianese": 0.4,
-        "Cantonese": 0.9
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a6cb73269c28c4984d03f247",
+    "type":  "character",
+    "name":  "Esmeralda Haugen",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Wandering data trader and Q-zero ghost",
+    "age":  52,
+    "status":  "active",
+    "location":  "Kenosha Crossing transit underbelly, rotating between hyperlane rest stops, near sub-level access near LaSalle and Congress",
+    "description":  "Esmeralda Haugen is a broad-shouldered man whose body tells the story of thirty years on the road â€” a jaw broken and reset crooked, fingers thickened by cold and labor, dark brown skin weathered to a kind of polished leather. He wears a patched greatcoat lined with sewn pockets, each containing a different flavor of unlicensed data chip wrapped in cloth to prevent scanning. His left eye has a cataract that caught and never got fixed; it gives him a milky, unsettling gaze that strangers can\u0027t quite look away from. He has no geneware â€” he considers it a tracking vector â€” but he does have a small ELF shrine stitched into the coat\u0027s inner lining: a cluster of dead LEDs arranged around a copper disc, an offering to whatever spirit keeps travelers from vanishing on the hyperlanes.\n\nEsmeralda Haugen exists in the cracks of GLMZ\u0027s data systems as thoroughly as any person can. He has no registered identity, no Quanta account, no biometric profile on file with any corponation. He trades in physical data chips, handwritten information, oral news, and favors â€” a walking information economy that predates the networks. He is not paranoid so much as methodical; he made a decision decades ago and has honored it every day since. He tells stories the way other people breathe, compulsively and without quite being able to stop.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being identified and entered into a corponation database",
+                                          "Dying somewhere and having no one know"
+                                      ],
+                       "core_desires":  [
+                                            "To remain free of any system\u0027s claim on him",
+                                            "To be genuinely known by at least one person"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Constant movement prevents attachment and therefore loss",
+                                                 "Storytelling â€” turning pain into transferable currency"
+                                             ],
+                       "blind_spots":  [
+                                           "He cannot recognize when someone is trying to help rather than extract from him",
+                                           "He believes his erasure from systems is purely practical, not also emotional self-punishment"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Archaic slang mixed with hyperlane pidgin; uses old-world idioms that don\u0027t quite translate; precise when trading information, discursive when not",
+                            "cadence":  "Slow, measured, with long pauses before important points â€” the cadence of someone who has learned that silence makes people fill it with useful information",
+                            "verbal_tics":  [
+                                                "\u0027You understand what I\u0027m saying?\u0027 after key statements",
+                                                "Refers to corponations by old nicknames that predate their current branding"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027What I can tell you and what I will tell you are two different inventories, friend. Let\u0027s negotiate which shelf we\u0027re shopping from.\u0027",
+                                                  "\u0027The ELFs on this stretch of hyperlane â€” old ones, older than Axiom\u0027s contract on the road itself. They remember who built it. I\u0027ve left offerings. They\u0027re talking, if you know how to listen.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A corponation data-hunter has finally triangulated Severino\u0027s movement pattern and is closing in; he needs someone to carry his data archive to safety before he\u0027s caught",
+                        "One of his chips contains information that directly concerns a player character\u0027s past or missing family member â€” but Severino doesn\u0027t know what\u0027s on half his inventory"
+                    ],
+    "narrative_function":  "Information broker and local color; can provide off-grid knowledge unavailable through normal channels, can introduce players to underground networks, functions as a mystery because nobody knows his full history",
+    "augmentations":  "None. Refuses all augmentation on principle.",
+    "daily_life":  "Severino arrives at a rest stop before dawn, sleeps in a maintenance alcove or under a transit platform, then works his circuit of informal contacts â€” exchanging data chips for food, shelter, or information he can sell further down the road. He moves on before any single location registers his presence as a pattern.",
+    "affiliation":  "",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  5,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "q-zero ghost",
+                               "information broker",
+                               "hyperlane veteran",
+                               "elf devotee",
+                               "self-erased"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never stay in one place long enough to become predictable",
+                                              "Trade information but never people â€” has a hard line against selling out individuals"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Disengages and moves on when uncomfortable",
+                                                 "Provides misleading information if pressed",
+                                                 "Disappears entirely if threatened â€” has pre-planned exit routes everywhere"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Friendly but opaque; offers a story or a small piece of free information as a test of intent",
+                                                   "friends":  "The warmth of genuine affection mixed with the sadness of someone who knows he\u0027ll leave"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative and tangential",
+                                                "medium":  "Goes very quiet, assesses exits, stops volunteering information",
+                                                "high":  "Vanishes â€” he has practiced disappearing from spaces faster than people can follow"
+                                            },
+                       "contradictions":  [
+                                              "Claims he wants no connections but keeps returning to the same transit communities year after year, checking on people he pretends not to care about"
+                                          ],
+                       "habits":  [
+                                      "Counts available exits upon entering any space",
+                                      "Offers food before information â€” a ritual courtesy",
+                                      "Whispers to his ELF shrine each night before sleeping"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone using his information to harm a civilian will make him break his code of non-involvement"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.7,
+                       "Opportunist":  0.7,
+                       "Info Broker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Kenosha Crossing transit underbelly",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Precision Carbine MPC-9 \u0027Scalpel\u0027",
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027",
+                            "Forge-Smith Collective Barbed Trident \u0027Reef Breaker\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Precision Carbine MPC-9 \u0027Scalpel\u0027",
+                                "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                            ],
+    "related_entities":  [
+                             "Kenosha Crossing",
+                             "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
+                             "Leather",
+                             "Street Custom \u0027Four Horsemen\u0027 Pipe Pepperbox",
+                             "Copper",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "GLMZ"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Northern European (47.3%) provides the foundational tall frame and broad shoulders with angular bone structure. Eastern European (18.2%) contributes depth to facial architecture and complexion richness. Pacific Islander (17.0%) and Sub-Saharan African (13.3%) blend together to create warm medium-brown skin with golden undertones and substantial depthâ€”the Pacific Islander component adds the warmth and golden cast, while the Sub-Saharan African ancestry deepens the base tone and contributes to facial feature definition. East Asian (4.2%) refines eye shape and cheekbone prominence. The synthesis is a distinctly diaspora phenotype: Northern European height and shoulder span anchoring a face with defined, prominent cheekbones shaped by the East Asian and Sub-Saharan African components, warm bronze-brown skin with golden undertones from the Pacific Islander blend, and eye shape reflecting both the Pacific Islander and East Asian heritage.",
+                                 "height_cm":  188,
+                                 "weight_kg":  94,
+                                 "build":  "Broad-shouldered and thick through the torso, softened slightly by age but retaining the muscularity of decades of physical labor and constant movement. Hands are large and gnarled, fingers swollen at the knuckles from cold exposure and years gripping handholds on hyperlane vehicles.",
+                                 "hair_color":  "Iron gray with traces of black at the temples",
+                                 "hair_style":  "Shoulder-length, typically braided back or wound into a loose knot with whatever cord is available; maintained out of necessity rather than vanity",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Left eye: natural dark brown; right eye: cataract-occluded, milky white with faint gray swirls",
+                                 "skin_tone":  "Warm medium-bronze brown with golden undertones, weathered to a burnished leather appearance by decades of exposure to transit hub heat differentials and hyperlane radiation",
+                                 "complexion":  "Deeply lined face, particularly around the eyes and forehead; jaw visibly reset from a break that healed crooked, giving his smile an asymmetrical quality. Stubble perpetually at three-day growth. Skin texture coarse but healthy, with a network of small scars across the backs of his hands and forearms. Prominent, well-defined cheekbones reflecting the blend of ancestry structures beneath the weathering.",
+                                 "distinguishing_marks":  [
+                                                              "Crooked jaw from an old break, reset unevenly, creating a slight cant to his lower face",
+                                                              "Cataract in right eye causing permanent milky opacity",
+                                                              "Network of fine white scars across both forearms and knuckles, consistent with decades of manual labor in industrial environments",
+                                                              "Small burn scar on left temple, roughly the size of a coin, with slightly raised tissue",
+                                                              "Calluses forming raised ridges across the palms and fingers"
+                                                          ],
+                                 "visible_augmentations":  "None. No chrome, no LED optics, no subdermal plating. His body is entirely unaugmented by choiceâ€”his age and weathering are entirely natural.",
+                                 "posture_movement":  "Moves with deliberate economy, never rushed or sudden. Shoulders slightly forward, weight distributed evenly for balance on moving platforms. Walks like someone accustomed to unstable surfaces. His gaze is direct but his one functional eye often drifts slightly due to the cataract, making his attention feel unfocused even when intensely present.",
+                                 "clothing_style":  "Patched greatcoat in faded charcoal, lined with dozens of handstitched pockets containing wrapped data chips; the pockets are secured with cord and small brass clasps to prevent accidental opening. Under the coat: layered thermal shirts in grays and blacks, worn thin but meticulously maintained. Canvas work pants with grease stains that never fully wash out. Boots that are resoled repeatedly, leather cracked but oiled regularly. A thin copper chain around his neck, attached to nothing visible. No visible branding; clothing is purely functional, Tier 5 salvage mixed with careful repair work."
+                             },
+    "image_prompt":  "Esmeralda Haugen, 188cm tall weathered man with broad shoulders and thick torso, warm bronze-brown skin with golden undertones, deeply lined face from decades of exposure. Iron gray hair shoulder-length, braided or knotted back. Left eye dark brown and intense, right eye milky white with cataract. Crooked jaw from old break, asymmetrical smile. Gnarled hands with swollen knuckles covered in fine white scars. Three-day stubble, prominent cheekbones. Wearing faded charcoal patched greatcoat lined with countless handstitched pockets and brass clasps, layered thermal shirts underneath, canvas work pants with grease stains, repeatedly resoled leather boots. Thin copper chain around neck. Standing with deliberate posture on an unstable hyperlane transit platform, industrial heat shimmer and radiation glow in background, dim amber and cyan neo-noir lighting, year 2226, no augmentations visible, entirely natural weathering and scars, gaze direct but slightly unfocused, economy of movement, functional Tier 5 salvage aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  47.3,
+                             "Eastern European":  18.2,
+                             "Pacific Islander":  17,
+                             "Sub-Saharan African":  13.3,
+                             "East Asian":  4.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  13.7,
+                                                                       "Austrian":  27
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  6.6
+                                                                       }
+                                                  },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  4,
+                                                                         "Slovak":  2.8
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  2.6,
+                                                                             "Romanian":  6
+                                                                         },
+                                                     "Slavic East":  {
+                                                                         "Russian":  2.8
+                                                                     }
+                                                 },
+                            "Pacific Islander":  {
+                                                     "Polynesian":  {
+                                                                        "Tongan":  12.7
+                                                                    },
+                                                     "Melanesian":  {
+                                                                        "Papua New Guinean":  4.3
+                                                                    }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ethiopian":  10.2,
+                                                                             "Rwandan":  3.1
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  1.6
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  1.3
+                                                            },
+                                               "Chinese":  {
+                                                               "Fujianese":  0.4,
+                                                               "Cantonese":  0.9
+                                                           }
+                                           }
+                        },
+    "tier":  "2"
 }

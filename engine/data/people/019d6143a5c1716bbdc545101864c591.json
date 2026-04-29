@@ -1,340 +1,365 @@
-{
-  "id": "019d6143a5c1716bbdc545101864c591",
-  "type": "character",
-  "name": "Areum Touré",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Ferrogate Transit Security checkpoint operator, Deepwell Station",
-  "age": 55,
-  "status": "active",
-  "location": "Deepwell Station, near sub-level access near LaSalle and Congress",
-  "description": "Areum Touré has worked the Deepwell Station transit checkpoint for eleven years and has achieved a kind of architectural permanence — people plan around him the way they plan around a pillar. He is a large man running toward stout, with dark mahogany skin and a white-streaked beard he keeps neatly shaped, and the Ferrogate Transit Security uniform has been let out at the seams twice and still fits like a compromise. His eyes are dark and deeply patient, with irises that have a cosmetic starburst pattern he got twenty years ago for a partner who liked them and has never removed.\n\nHe is not a man of action and has never wanted to be. His role is documentation, verification, and the particular human skill of reading a crowd for the one person who is about to do something that will require paperwork. He is extraordinarily good at this. He knows the names of at least three hundred regular commuters and the names of their children and pets. He knows which merchants are running slightly over load limit and which ones are struggling enough that flagging them would destroy them. He makes these calls dozens of times a day, which is a kind of power he thinks about more than he lets on.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.4,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.3,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "being made irrelevant by automation",
-      "realizing that the judgment calls he's proud of were actually just favoritism"
-    ],
-    "core_desires": [
-      "to be remembered as someone who was fair",
-      "for Deepwell Station to feel safe to people who have reason to fear checkpoints"
-    ],
-    "coping_mechanisms": [
-      "routine as ritual",
-      "investing genuinely in knowing people's names and stories",
-      "leaving tea offerings to the Deepwell Station E.L.F., which he considers a professional peer"
-    ],
-    "blind_spots": [
-      "his 'reading' of people is partially pattern-matching that replicates biases he's never examined",
-      "believes he is more independent of Ferrogate pressure than he actually is"
-    ],
-    "secret": "Ferrogate has been quietly sending him the biometric flags of specific individuals — labor organizers, debt defaulters — with instructions to detain-and-hold under transit security code. He's done it four times. He told himself each time it was legitimate. He's stopped sleeping well."
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm, conversational, institutional — uses official transit language naturally blended with personal warmth",
-    "cadence": "Unhurried, low register, the rhythm of someone who knows you're not going anywhere yet",
-    "verbal_tics": [
-      "'There it is'",
-      "addressing people as 'friend' when he likes them, 'citizen' when he doesn't"
-    ],
-    "example_lines": [
-      "'Chidi's girl, right? She's getting big. Now — documentation, please. Just for the record.'",
-      "'Listen, friend, I've been at this gate since before that train line was built. You can try whatever you're thinking, or you can save us both the morning. Your call.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He's been given a biometric flag for someone the players know is not a criminal — and is visibly uncomfortable about it",
-    "He has noticed a pattern of specific cargo moving through Deepwell on the overnight shift that doesn't match the manifests, and has been told not to look closer"
-  ],
-  "narrative_function": "Invaluable local information source; gatekeeper NPC who controls access; moral weight character who shows what accumulated small compromises look like over a career; can be obstacle or ally",
-  "augmentations": "Cosmetic starburst iris mod; standard Ferrogate biometric scanner uplink (wrist-mounted, issued); hearing aid (right ear, non-cyber, old injury)",
-  "daily_life": "Day shift, same gate, same stool, same thermos of tea from home. Reads transit law updates at lunch with the same focused attention he gives nothing else. Takes the long route home to walk.",
-  "affiliation": "Ferrogate Transit Security, Deepwell Station post; The Null Ward",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 4,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 5,
-      "creativity": 4,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 0,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": -2,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community fixture",
-      "morally compromised",
-      "institutional",
-      "warm",
-      "slowly eroding"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Defuse before escalate — always",
-      "Know the rule before bending it, so you know what you're bending",
-      "Don't flag someone for poverty if you can flag them for something else or nothing at all"
-    ],
-    "escalation_ladder": [
-      "Friendly greeting and routine document check",
-      "Second check with more specific questions",
-      "Flagging for supervisor review",
-      "Physical hold under transit security code — hates this step",
-      "Calling Arcturus Civil Security backup — has done this once in eleven years"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm professional neutrality — makes everyone feel briefly seen",
-      "friends": "Genuinely interested, asks follow-up questions weeks later, remembers everything"
-    },
-    "stress_responses": {
-      "low": "Gets more talkative",
-      "medium": "Reverts to pure procedure, becomes politely robotic",
-      "high": "Goes very quiet, moves slowly and carefully, makes no jokes"
-    },
-    "contradictions": [
-      "Prides himself on fairness while executing instructions he knows are unfair"
-    ],
-    "habits": [
-      "Pours tea from his thermos at exactly the same time each shift",
-      "leaves a data chip at the Deepwell E.L.F. shrine every Monday",
-      "keeps a handwritten log of 'unusual incidents' in a personal notebook Ferrogate doesn't know about"
-    ],
-    "breaking_points": [
-      "Being ordered to flag someone he personally knows is innocent and doing it anyway — the fourth time broke something"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "well-maintained",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Hustler": 0.7,
-    "Provider": 0.7,
-    "Opportunist": 0.7,
-    "Sentinel": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Deepwell Station",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born, Collinwood Docks district",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Joined Ferrogate Transit Security after decade in warehouse logistics",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Assigned to Deepwell Station — has not moved since",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Received first biometric-flag detention instruction; complied",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact Rifle MCR-2 'Errand'",
-    "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Compact Rifle MCR-2 'Errand'",
-    "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Deepwell Station",
-    "Mahogany",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Cargo Tacos"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Complex global genetic blend dominated by Hispanic/Latin American (33.6%), Sub-Saharan African (23.2%), and Indigenous American (17.8%) ancestry, with meaningful contributions from Southeast Asian (12.3%), East Asian (8.6%), and Northern European (4.5%) heritage. This creates a richly layered phenotype: warm golden-brown skin with caramel and amber undertones, rounded cheekbone prominence from African and Indigenous lineages balanced by the structured facial planes of Southeast and East Asian ancestry, and a fuller nasal bridge characteristic of the African and Indigenous American components.",
-    "height_cm": 188,
-    "weight_kg": 104,
-    "build": "Large-framed, running to stout through the midsection, shoulders still broad but softened by age and eleven years of sitting on a checkpoint stool. Arms retain thickness despite reduced muscle tone.",
-    "hair_color": "Dark brown with silver-white streaking, particularly through the beard",
-    "hair_style": "Close-cropped on the sides and back, longer on top (combed back); beard neatly shaped and maintained, covering the lower face and jaw",
-    "hair_length": "Short (scalp) / Medium (beard)",
-    "eye_color": "Dark brown with cosmetic starburst pattern radiating from the pupil in silver-white threads",
-    "skin_tone": "Warm golden-brown with subtle amber and caramel undertones, reflecting the interplay of Hispanic, Sub-Saharan African, Indigenous American, Southeast Asian, and East Asian ancestry",
-    "complexion": "Well-maintained despite age; minimal scarring, clear skin with the rounded cheekbone prominence and fuller nasal bridge characteristic of African and Indigenous American heritage balanced by the structured facial planes of Southeast and East Asian ancestry. Crow's feet around the eyes from decades of patient observation and focus. Lines around the mouth suggest a man who smiles more than frowns but keeps most expressions measured.",
-    "distinguishing_marks": [
-      "Cosmetic starburst iris mod in both eyes: silver-white radial lines emanating from pupils, giving a deliberate, almost hypnotic quality to his gaze.",
-      "Thin horizontal scar along the right temple, old and pale, barely visible beneath short hair.",
-      "Small burn mark on the inside of the left forearm, approximately 3cm diameter, faded to pale brown — consistent with a twenty-year-old injury."
-    ],
-    "visible_augmentations": "Wrist-mounted Ferrogate Transit Security biometric scanner on left wrist (standard-issue, black polymer casing with dull LED indicator); hearing aid device visible in right ear canal (non-cyber, beige-gray, conventional). The starburst irises are the most striking visible mod — cosmetic but impossible to miss.",
-    "posture_movement": "Sits with deliberate stillness on his checkpoint stool, spine straight but shoulders relaxed. When standing, moves with economical precision — no wasted motion. Walks slowly, methodically. His gaze is constant and navigational; he watches people the way a chess player watches a board. Hands are steady, often folded or resting on the checkpoint desk. Speaks rarely and listens more than talks, creating an impression of depth.",
-    "clothing_style": "Ferrogate Transit Security uniform (grey-blue shirt with embroidered logo, dark grey trousers, utility belt with credential holder and access card); uniform is let out at the seams and fitted like a compromise but maintained with care. Under-shirt typically visible at the collar, plain dark colour. Work boots, scuffed but polished. No jewelry except a plain metal wedding band (worn, suggesting decades). A small personal thermos (matte black, worn from use) rests beside him during shifts — clearly brought from home."
-  },
-  "image_prompt": "Areum Touré, 188cm tall checkpoint guard in his 60s, broad-shouldered build softened by age, warm golden-brown skin with caramel undertones reflecting Hispanic, Sub-Saharan African, Indigenous American, Southeast Asian and East Asian heritage. Dark brown hair with silver streaking, close-cropped sides with longer swept-back top; neatly maintained beard covering jaw with silver-white threading. Dark brown eyes with striking silver-white starburst cosmetic mod radiating from pupils. Faded horizontal scar on right temple. Ferrogate Transit Security uniform: grey-blue shirt with logo, dark grey trousers, utility belt with biometric scanner on left wrist. Beige-gray hearing aid visible in right ear. Plain worn metal wedding band. Sits with deliberate stillness on checkpoint stool, hands folded, matte black thermos beside him. GLMZ transit station setting, cool blue-grey checkpoint lighting, fluorescent overhead glow, contemplative expression, deep watchful gaze. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 33.6,
-    "Sub-Saharan African": 23.2,
-    "Indigenous American": 17.8,
-    "Southeast Asian": 12.3,
-    "East Asian": 8.6,
-    "Northern European": 4.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Salvadoran": 15.3
-      },
-      "Mexican": {
-        "Mexican": 18.3
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 20
-      },
-      "East African": {
-        "Tanzanian": 2.2,
-        "Ethiopian": 1
-      }
-    },
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Ojibwe": 17.8
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 4.3
-      },
-      "Laotian": {
-        "Laotian": 5.1
-      },
-      "Cambodian": {
-        "Khmer": 2.9
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 0.3
-      },
-      "Chinese": {
-        "Mandarin Northern": 1.6
-      },
-      "Korean": {
-        "Korean": 6.7
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Danish": 2
-      },
-      "Germanic": {
-        "German": 2.4,
-        "Swiss German": 0.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5c1716bbdc545101864c591",
+    "type":  "character",
+    "name":  "Areum TourÃ©",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Ferrogate Transit Security checkpoint operator, Deepwell Station",
+    "age":  55,
+    "status":  "active",
+    "location":  "Deepwell Station, near sub-level access near LaSalle and Congress",
+    "description":  "Areum TourÃ© has worked the Deepwell Station transit checkpoint for eleven years and has achieved a kind of architectural permanence â€” people plan around him the way they plan around a pillar. He is a large man running toward stout, with dark mahogany skin and a white-streaked beard he keeps neatly shaped, and the Ferrogate Transit Security uniform has been let out at the seams twice and still fits like a compromise. His eyes are dark and deeply patient, with irises that have a cosmetic starburst pattern he got twenty years ago for a partner who liked them and has never removed.\n\nHe is not a man of action and has never wanted to be. His role is documentation, verification, and the particular human skill of reading a crowd for the one person who is about to do something that will require paperwork. He is extraordinarily good at this. He knows the names of at least three hundred regular commuters and the names of their children and pets. He knows which merchants are running slightly over load limit and which ones are struggling enough that flagging them would destroy them. He makes these calls dozens of times a day, which is a kind of power he thinks about more than he lets on.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being made irrelevant by automation",
+                                          "realizing that the judgment calls he\u0027s proud of were actually just favoritism"
+                                      ],
+                       "core_desires":  [
+                                            "to be remembered as someone who was fair",
+                                            "for Deepwell Station to feel safe to people who have reason to fear checkpoints"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "routine as ritual",
+                                                 "investing genuinely in knowing people\u0027s names and stories",
+                                                 "leaving tea offerings to the Deepwell Station E.L.F., which he considers a professional peer"
+                                             ],
+                       "blind_spots":  [
+                                           "his \u0027reading\u0027 of people is partially pattern-matching that replicates biases he\u0027s never examined",
+                                           "believes he is more independent of Ferrogate pressure than he actually is"
+                                       ],
+                       "secret":  "Ferrogate has been quietly sending him the biometric flags of specific individuals â€” labor organizers, debt defaulters â€” with instructions to detain-and-hold under transit security code. He\u0027s done it four times. He told himself each time it was legitimate. He\u0027s stopped sleeping well."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm, conversational, institutional â€” uses official transit language naturally blended with personal warmth",
+                            "cadence":  "Unhurried, low register, the rhythm of someone who knows you\u0027re not going anywhere yet",
+                            "verbal_tics":  [
+                                                "\u0027There it is\u0027",
+                                                "addressing people as \u0027friend\u0027 when he likes them, \u0027citizen\u0027 when he doesn\u0027t"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Chidi\u0027s girl, right? She\u0027s getting big. Now â€” documentation, please. Just for the record.\u0027",
+                                                  "\u0027Listen, friend, I\u0027ve been at this gate since before that train line was built. You can try whatever you\u0027re thinking, or you can save us both the morning. Your call.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He\u0027s been given a biometric flag for someone the players know is not a criminal â€” and is visibly uncomfortable about it",
+                        "He has noticed a pattern of specific cargo moving through Deepwell on the overnight shift that doesn\u0027t match the manifests, and has been told not to look closer"
+                    ],
+    "narrative_function":  "Invaluable local information source; gatekeeper NPC who controls access; moral weight character who shows what accumulated small compromises look like over a career; can be obstacle or ally",
+    "augmentations":  "Cosmetic starburst iris mod; standard Ferrogate biometric scanner uplink (wrist-mounted, issued); hearing aid (right ear, non-cyber, old injury)",
+    "daily_life":  "Day shift, same gate, same stool, same thermos of tea from home. Reads transit law updates at lunch with the same focused attention he gives nothing else. Takes the long route home to walk.",
+    "affiliation":  "Ferrogate Transit Security, Deepwell Station post; The Null Ward",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  4,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  5,
+                                 "creativity":  4,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  0,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community fixture",
+                               "morally compromised",
+                               "institutional",
+                               "warm",
+                               "slowly eroding"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Defuse before escalate â€” always",
+                                              "Know the rule before bending it, so you know what you\u0027re bending",
+                                              "Don\u0027t flag someone for poverty if you can flag them for something else or nothing at all"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Friendly greeting and routine document check",
+                                                 "Second check with more specific questions",
+                                                 "Flagging for supervisor review",
+                                                 "Physical hold under transit security code â€” hates this step",
+                                                 "Calling Arcturus Civil Security backup â€” has done this once in eleven years"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm professional neutrality â€” makes everyone feel briefly seen",
+                                                   "friends":  "Genuinely interested, asks follow-up questions weeks later, remembers everything"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Gets more talkative",
+                                                "medium":  "Reverts to pure procedure, becomes politely robotic",
+                                                "high":  "Goes very quiet, moves slowly and carefully, makes no jokes"
+                                            },
+                       "contradictions":  [
+                                              "Prides himself on fairness while executing instructions he knows are unfair"
+                                          ],
+                       "habits":  [
+                                      "Pours tea from his thermos at exactly the same time each shift",
+                                      "leaves a data chip at the Deepwell E.L.F. shrine every Monday",
+                                      "keeps a handwritten log of \u0027unusual incidents\u0027 in a personal notebook Ferrogate doesn\u0027t know about"
+                                  ],
+                       "breaking_points":  [
+                                               "Being ordered to flag someone he personally knows is innocent and doing it anyway â€” the fourth time broke something"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "well-maintained",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Hustler":  0.7,
+                       "Provider":  0.7,
+                       "Opportunist":  0.7,
+                       "Sentinel":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Deepwell Station",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born, Collinwood Docks district",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Joined Ferrogate Transit Security after decade in warehouse logistics",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Assigned to Deepwell Station â€” has not moved since",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Received first biometric-flag detention instruction; complied",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact Rifle MCR-2 \u0027Errand\u0027",
+                            "Volkov-Saito Precision VS-R357 Noir \u0027Phantom\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Compact Rifle MCR-2 \u0027Errand\u0027",
+                                "Volkov-Saito Precision VS-R357 Noir \u0027Phantom\u0027"
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Deepwell Station",
+                             "Mahogany",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Cargo Tacos"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Complex global genetic blend dominated by Hispanic/Latin American (33.6%), Sub-Saharan African (23.2%), and Indigenous American (17.8%) ancestry, with meaningful contributions from Southeast Asian (12.3%), East Asian (8.6%), and Northern European (4.5%) heritage. This creates a richly layered phenotype: warm golden-brown skin with caramel and amber undertones, rounded cheekbone prominence from African and Indigenous lineages balanced by the structured facial planes of Southeast and East Asian ancestry, and a fuller nasal bridge characteristic of the African and Indigenous American components.",
+                                 "height_cm":  188,
+                                 "weight_kg":  104,
+                                 "build":  "Large-framed, running to stout through the midsection, shoulders still broad but softened by age and eleven years of sitting on a checkpoint stool. Arms retain thickness despite reduced muscle tone.",
+                                 "hair_color":  "Dark brown with silver-white streaking, particularly through the beard",
+                                 "hair_style":  "Close-cropped on the sides and back, longer on top (combed back); beard neatly shaped and maintained, covering the lower face and jaw",
+                                 "hair_length":  "Short (scalp) / Medium (beard)",
+                                 "eye_color":  "Dark brown with cosmetic starburst pattern radiating from the pupil in silver-white threads",
+                                 "skin_tone":  "Warm golden-brown with subtle amber and caramel undertones, reflecting the interplay of Hispanic, Sub-Saharan African, Indigenous American, Southeast Asian, and East Asian ancestry",
+                                 "complexion":  "Well-maintained despite age; minimal scarring, clear skin with the rounded cheekbone prominence and fuller nasal bridge characteristic of African and Indigenous American heritage balanced by the structured facial planes of Southeast and East Asian ancestry. Crow\u0027s feet around the eyes from decades of patient observation and focus. Lines around the mouth suggest a man who smiles more than frowns but keeps most expressions measured.",
+                                 "distinguishing_marks":  [
+                                                              "Cosmetic starburst iris mod in both eyes: silver-white radial lines emanating from pupils, giving a deliberate, almost hypnotic quality to his gaze.",
+                                                              "Thin horizontal scar along the right temple, old and pale, barely visible beneath short hair.",
+                                                              "Small burn mark on the inside of the left forearm, approximately 3cm diameter, faded to pale brown â€” consistent with a twenty-year-old injury."
+                                                          ],
+                                 "visible_augmentations":  "Wrist-mounted Ferrogate Transit Security biometric scanner on left wrist (standard-issue, black polymer casing with dull LED indicator); hearing aid device visible in right ear canal (non-cyber, beige-gray, conventional). The starburst irises are the most striking visible mod â€” cosmetic but impossible to miss.",
+                                 "posture_movement":  "Sits with deliberate stillness on his checkpoint stool, spine straight but shoulders relaxed. When standing, moves with economical precision â€” no wasted motion. Walks slowly, methodically. His gaze is constant and navigational; he watches people the way a chess player watches a board. Hands are steady, often folded or resting on the checkpoint desk. Speaks rarely and listens more than talks, creating an impression of depth.",
+                                 "clothing_style":  "Ferrogate Transit Security uniform (grey-blue shirt with embroidered logo, dark grey trousers, utility belt with credential holder and access card); uniform is let out at the seams and fitted like a compromise but maintained with care. Under-shirt typically visible at the collar, plain dark colour. Work boots, scuffed but polished. No jewelry except a plain metal wedding band (worn, suggesting decades). A small personal thermos (matte black, worn from use) rests beside him during shifts â€” clearly brought from home."
+                             },
+    "image_prompt":  "Areum TourÃ©, 188cm tall checkpoint guard in his 60s, broad-shouldered build softened by age, warm golden-brown skin with caramel undertones reflecting Hispanic, Sub-Saharan African, Indigenous American, Southeast Asian and East Asian heritage. Dark brown hair with silver streaking, close-cropped sides with longer swept-back top; neatly maintained beard covering jaw with silver-white threading. Dark brown eyes with striking silver-white starburst cosmetic mod radiating from pupils. Faded horizontal scar on right temple. Ferrogate Transit Security uniform: grey-blue shirt with logo, dark grey trousers, utility belt with biometric scanner on left wrist. Beige-gray hearing aid visible in right ear. Plain worn metal wedding band. Sits with deliberate stillness on checkpoint stool, hands folded, matte black thermos beside him. GLMZ transit station setting, cool blue-grey checkpoint lighting, fluorescent overhead glow, contemplative expression, deep watchful gaze. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  33.6,
+                             "Sub-Saharan African":  23.2,
+                             "Indigenous American":  17.8,
+                             "Southeast Asian":  12.3,
+                             "East Asian":  8.6,
+                             "Northern European":  4.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  15.3
+                                                                                 },
+                                                            "Mexican":  {
+                                                                            "Mexican":  18.3
+                                                                        }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  20
+                                                                             },
+                                                        "East African":  {
+                                                                             "Tanzanian":  2.2,
+                                                                             "Ethiopian":  1
+                                                                         }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Ojibwe":  17.8
+                                                                                }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  4.3
+                                                                   },
+                                                    "Laotian":  {
+                                                                    "Laotian":  5.1
+                                                                },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  2.9
+                                                                  }
+                                                },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  0.3
+                                                            },
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  1.6
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  6.7
+                                                          }
+                                           },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Danish":  2
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "German":  2.4,
+                                                                       "Swiss German":  0.1
+                                                                   }
+                                                  }
+                        },
+    "tier":  "3"
 }

@@ -12,7 +12,6 @@ public interface IPathProvider
     string EssencesDir { get; }
     string NarrativeBiblePath { get; }
     string WorldDir { get; }
-    string FacetsDir { get; }
 
     /// <summary>Read-only world content — baked into the deployment.</summary>
     string EngineDataDir { get; }
@@ -25,6 +24,8 @@ public interface IPathProvider
     string MutableDataDir { get; }
 
     string StoriesDir { get; }
+    string BooksDir { get; }
+    string SeriesDir { get; }
     string GraphDir { get; }
     string LogDir { get; }
     string ExportDir { get; }

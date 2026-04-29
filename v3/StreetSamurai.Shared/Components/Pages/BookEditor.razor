@@ -1,0 +1,13 @@
+@page "/books/{BookId}"
+@attribute [Authorize(Roles = "Contributor,Administrator")]
+@inject NavigationManager Nav
+
+@code {
+    [Parameter] public string BookId { get; set; } = "";
+
+    protected override void OnInitialized()
+    {
+        // Book detail collapsed into the chapters page — redirect so old bookmarks still work.
+        Nav.NavigateTo($"/books/{BookId}/chapters", replace: true);
+    }
+}

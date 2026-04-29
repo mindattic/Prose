@@ -1,370 +1,383 @@
-{
-  "id": "019d6143a63d7936bd590bc55b15bfa3",
-  "type": "character",
-  "name": "Hanka Cisneros",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Structural breach and explosive ordnance specialist — demolitions expert",
-  "age": 23,
-  "status": "active",
-  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near North Ave and Damen",
-  "description": "Hanka Cisneros are average height but with a presence that fills more space than the body accounts for. At 23, their face is memorable in a profession that rewards forgettability, and they have learned to compensate. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a demolitions expert out of Steamvent Alley, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Hanka Cisneros describe them as a precision instrument — point them at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.91,
-      "ideal": 0.68,
-      "id": 0.16,
-      "shadow": 0.89,
-      "mask": 0.7,
-      "ghost": 0.26
-    },
-    "core_fears": [
-      "Going cyberpsycho — losing the boundary between human and machine",
-      "That the work they do makes the city worse, not better",
-      "Losing their edge to age — the body slows before the mind accepts it"
-    ],
-    "core_desires": [
-      "The perfect run — one job so clean it becomes legend",
-      "To prove everyone who dismissed them catastrophically wrong",
-      "To find the person who burned them and make it educational"
-    ],
-    "coping_mechanisms": [
-      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
-      "Violence — hits something when they can't process emotions, preferably something that deserves it",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat"
-    ],
-    "blind_spots": [
-      "Cannot distinguish between caution and cowardice in themselves or others",
-      "Trusts technology more than people — machines don't betray",
-      "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
-    ],
-    "secret": "Kamala Blomberg-Konadu can't read. Hides it behind voice interfaces and memorization. The shame is older than the chrome."
-  },
-  "speech_patterns": {
-    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
-    "cadence": "Staccato bursts separated by calculating silences.",
-    "verbal_tics": [
-      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'",
-      "Whispers when angry — the quieter the voice, the worse the situation"
-    ],
-    "example_lines": [
-      "\"Explosives are just engineering with a deadline. Usually a very short deadline.\"",
-      "\"I don't blow things up. I perform structural rearrangement.\"",
-      "\"The blast radius is your problem. My problem is making sure there's a blast.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A corporate black site Kamala Blomberg-Konadu once infiltrated is being reopened, and the people inside know their face",
-    "A dead drop Kamala Blomberg-Konadu maintains is found and cleaned out — whoever did it now has leverage",
-    "Someone is impersonating Kamala Blomberg-Konadu on jobs, and the impersonator is better at the work than the original"
-  ],
-  "narrative_function": "Kamala Blomberg-Konadu is a pressure point — the kind of character whose choices ripple outward. When they make a decision, other people's lives change. That weight is the engine of their stories.",
-  "augmentations": "Neural dampener — blocks external hacking attempts, passive ICE in the brain. Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Independent — works solo contracts",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 4
-      },
-      "agility": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 10
-      },
-      "reflexes": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 9
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 10
-      },
-      "perception": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 8
-      },
-      "willpower": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 5
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 8
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 7
-      },
-      "intimidation": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 7
-      },
-      "deception": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 9
-      },
-      "empathy": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 9
-      }
-    },
-    "personality": {
-      "aggression": 0.72,
-      "caution": 0.6,
-      "loyalty": 0.55,
-      "greed": 0.79,
-      "empathy": 0.62
-    },
-    "drives": [
-      "freedom",
-      "reputation",
-      "power"
-    ],
-    "thresholds": {
-      "pain": 9,
-      "stress": 6,
-      "loyalty_break": 6
-    },
-    "strengths": [
-      "strategic thinking under pressure",
-      "intimidating physical presence",
-      "photographic memory for faces and layouts"
-    ],
-    "weaknesses": [
-      "overconfidence in specialty areas leading to blind spots",
-      "grudge-holding that compromises rational decision-making"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "demolitions expert",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never discusses active contracts with anyone not directly involved",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Always verifies target identity independently before lethal contracts",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
-      "Values loyalty intensely but has betrayed someone in the past to survive"
-    ],
-    "habits": [
-      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
-      "Never drinks anything they didn't see poured or open themselves",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
-    ],
-    "breaking_points": [
-      "Discovering their employer deliberately sent them into a death trap",
-      "Being publicly exposed — name, face, address, all of it blown"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Neural dampener",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
-      "replaces": ""
-    },
-    {
-      "name": "Hydraulic joints in knees and elbows",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Networker": 0.7,
-    "Manipulator": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Steamvent Alley",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Masquerade",
-    "Neural Palate",
-    "Compass Rose"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Complex diaspora blend: Sub-Saharan African (41.8%), South Asian (17.8%), Hispanic/Latin American (17.7%), Eastern European (10.2%), East Asian (7.9%), North African (4.6%). Features reflect this intricate ancestry — warm deep brown skin with golden and olive undertones creating luminous depth. Facial structure combines high cheekbones and angular jaw from South Asian and Eastern European heritage, broadened by Sub-Saharan African bone geometry. Eye shape carries subtle epicanthal folds from East Asian ancestry, rounded by the broader eye set of African heritage. Overall appearance is distinctly multicontinental: neither fully any single ancestry, but a harmonious synthesis of multiple genetic traditions.",
-    "height_cm": 170,
-    "weight_kg": 68,
-    "build": "Lean and muscular with functional density — no wasted mass. Shoulders and forearms show defined musculature from repetitive strain and deliberate conditioning. Core is tight. They move like someone who has trained their body as a tool.",
-    "hair_color": "Dark brown with bleached platinum undercut",
-    "hair_style": "Asymmetrical shave on left side; longer on right side, slicked back. Deliberate and maintained.",
-    "hair_length": "Medium (right side), very short (left side)",
-    "skin_tone": "Deep warm brown with golden and subtle olive undertones — luminous depth reflecting the blend of Sub-Saharan African base with South Asian warmth and slight Eastern European and North African cooling. Skin appears to shift between warm gold and subtle olive depending on light angle.",
-    "complexion": "Sharp cheekbones and angular jaw reflect South Asian and Eastern European structure, enhanced by Sub-Saharan African bone geometry creating a distinctive facial architecture. Skin is clear but marked by old chemical burns on the right temple (faded to white scar tissue) and burn scarring on right cheekbone. Expression is typically neutral — learned impassivity. Skin condition is deliberately maintained despite occupational wear.",
-    "eye_color": "Dark brown with faint silver neural interface threading visible around the iris",
-    "distinguishing_marks": [
-      "Surgical scar along right temple where neural dampener was installed — thin, precise, healed white",
-      "Chemical burn scarring on right cheekbone and temple, three interconnected patches of lighter skin",
-      "Tattoo on left forearm: geometric pattern resembling a stress fracture or fault line in black ink",
-      "Small burn marks on knuckles and palms — occupational hazards from ordnance handling"
-    ],
-    "visible_augmentations": "Neural dampener visible as a slight bulge and faint silver-chrome threading at the right temple, visible especially when light hits the scar tissue. The implant creates a subtle shimmer under skin. Hydraulic joints in both knees and elbows are partially visible — dark chromed plating at the elbow joints, visible through thin clothing or when moving. A faint hydraulic hiss is audible when they bend quickly.",
-    "posture_movement": "Stands with weight balanced, shoulders back but not rigid. Moves economically — no wasted motion. When at rest, their gaze is always measuring: distance, angles, structural integrity of their surroundings. They walk with a slight forward lean, as if perpetually ready to move. Hand movements are controlled and deliberate.",
-    "clothing_style": "Tier 3-4 functional wear — reinforced tactical pants in dark gray with visible tool loops and cargo pockets, usually carrying detonators or inspection equipment. Sleeveless or short-sleeved shirts to display augmented joints as a form of transparent credibility. Heavy-duty boots with reinforced ankle support, usually Titan-brand or equivalent geothermal district grade. Worn leather or synthetic jacket in black, covered in small heat-scorch marks and chemical stains from work. No corporate logos or branding — deliberately anonymous. Minimal jewelry except for a thin duralloy bracelet on left wrist (no visible function, possibly personal)."
-  },
-  "image_prompt": "Hanka Cisneros, a 170cm lean muscular figure with deep warm brown skin glowing with golden undertones, standing in harsh neo-noir neon lighting. Sharp-featured face reflecting multicontinental ancestry — high cheekbones, angular jaw, subtle epicanthal folds, with old chemical burn scars visible on right temple and cheekbone. Dark brown eyes with faint silver neural threading. Asymmetrical dark brown hair with bleached platinum undercut on left side, longer slicked-back right side. Displaying visible cybernetic augmentations: dark chromed hydraulic elbow joints, neural dampener with silver-chrome threading at right temple creating subtle shimmer. Wearing dark gray reinforced tactical pants with tool loops, sleeveless shirt to expose augmentations, heavy-duty geothermal boots, weathered black synthetic jacket with heat-scorch and chemical stains. Duralloy bracelet on left wrist. Posture balanced and economical, weight forward, measuring gaze. Standing in moody industrial setting with hard shadows and neon glow from above, GLMZ geothermal district aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 41.8,
-    "South Asian": 17.8,
-    "Hispanic/Latin American": 17.7,
-    "Eastern European": 10.2,
-    "East Asian": 7.9,
-    "North African": 4.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "West African": {
-        "Guinean": 9.6,
-        "Senegalese": 10.3
-      },
-      "Central African": {
-        "Gabonese": 8.1
-      },
-      "East African": {
-        "Ethiopian": 4.5,
-        "Tanzanian": 9.3
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 0.9
-      },
-      "Sri Lankan": {
-        "Sinhalese": 6.9
-      },
-      "Indian": {
-        "Tamil": 10
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Argentine": 17.7
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 10.2
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 4.6
-      },
-      "Chinese": {
-        "Cantonese": 3.3
-      }
-    },
-    "North African": {
-      "Nile Valley": {
-        "Egyptian": 2.8
-      },
-      "Amazigh": {
-        "Kabyle": 0.7
-      },
-      "Maghreb": {
-        "Algerian": 1.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a63d7936bd590bc55b15bfa3",
+    "type":  "character",
+    "name":  "Hanka Cisneros",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Structural breach and explosive ordnance specialist â€” demolitions expert",
+    "age":  23,
+    "status":  "active",
+    "location":  "Steamvent Alley â€” geothermal district, hot and chemical-smelling, near North Ave and Damen",
+    "description":  "Hanka Cisneros are average height but with a presence that fills more space than the body accounts for. At 23, their face is memorable in a profession that rewards forgettability, and they have learned to compensate. The chrome is visible â€” neural dampener â€” blocks external hacking attempts, passive ice in the brain â€” and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a demolitions expert out of Steamvent Alley, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Hanka Cisneros describe them as a precision instrument â€” point them at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Going cyberpsycho â€” losing the boundary between human and machine",
+                                          "That the work they do makes the city worse, not better",
+                                          "Losing their edge to age â€” the body slows before the mind accepts it"
+                                      ],
+                       "core_desires":  [
+                                            "The perfect run â€” one job so clean it becomes legend",
+                                            "To prove everyone who dismissed them catastrophically wrong",
+                                            "To find the person who burned them and make it educational"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Control â€” micromanages everything within reach to compensate for the chaos everywhere else",
+                                                 "Violence â€” hits something when they can\u0027t process emotions, preferably something that deserves it",
+                                                 "Connection â€” finds someone to talk to, even if it\u0027s a bartender or a cat"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot distinguish between caution and cowardice in themselves or others",
+                                           "Trusts technology more than people â€” machines don\u0027t betray",
+                                           "Cannot recognize when they\u0027re being manipulated by someone who genuinely seems to care"
+                                       ],
+                       "secret":  "Kamala Blomberg-Konadu can\u0027t read. Hides it behind voice interfaces and memorization. The shame is older than the chrome."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Multilingual fragments â€” switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+                            "cadence":  "Staccato bursts separated by calculating silences.",
+                            "verbal_tics":  [
+                                                "Addresses people by physical traits â€” \u0027hey, tall one\u0027 or \u0027listen, chrome-arm\u0027",
+                                                "Whispers when angry â€” the quieter the voice, the worse the situation"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Explosives are just engineering with a deadline. Usually a very short deadline.\"",
+                                                  "\"I don\u0027t blow things up. I perform structural rearrangement.\"",
+                                                  "\"The blast radius is your problem. My problem is making sure there\u0027s a blast.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A corporate black site Kamala Blomberg-Konadu once infiltrated is being reopened, and the people inside know their face",
+                        "A dead drop Kamala Blomberg-Konadu maintains is found and cleaned out â€” whoever did it now has leverage",
+                        "Someone is impersonating Kamala Blomberg-Konadu on jobs, and the impersonator is better at the work than the original"
+                    ],
+    "narrative_function":  "Kamala Blomberg-Konadu is a pressure point â€” the kind of character whose choices ripple outward. When they make a decision, other people\u0027s lives change. That weight is the engine of their stories.",
+    "augmentations":  "Neural dampener â€” blocks external hacking attempts, passive ICE in the brain. Hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes",
+    "daily_life":  "Keeps a rigid daily structure â€” wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+    "affiliation":  "Independent â€” works solo contracts",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  3,
+                                                    "augmented":  2,
+                                                    "effective":  4
+                                                },
+                                   "agility":  {
+                                                   "base":  7,
+                                                   "augmented":  2,
+                                                   "effective":  8
+                                               },
+                                   "endurance":  {
+                                                     "base":  3,
+                                                     "augmented":  2,
+                                                     "effective":  10
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  4,
+                                                    "augmented":  3,
+                                                    "effective":  9
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  8,
+                                                      "augmented":  1,
+                                                      "effective":  10
+                                                  },
+                                 "perception":  {
+                                                    "base":  7,
+                                                    "augmented":  0,
+                                                    "effective":  8
+                                                },
+                                 "willpower":  {
+                                                   "base":  3,
+                                                   "augmented":  0,
+                                                   "effective":  5
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  0,
+                                                   "effective":  8
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  3,
+                                                  "augmented":  1,
+                                                  "effective":  7
+                                              },
+                                 "intimidation":  {
+                                                      "base":  7,
+                                                      "augmented":  1,
+                                                      "effective":  7
+                                                  },
+                                 "deception":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               },
+                                 "empathy":  {
+                                                 "base":  3,
+                                                 "augmented":  3,
+                                                 "effective":  9
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.72,
+                                      "caution":  0.6,
+                                      "loyalty":  0.55,
+                                      "greed":  0.79,
+                                      "empathy":  0.62
+                                  },
+                  "drives":  [
+                                 "freedom",
+                                 "reputation",
+                                 "power"
+                             ],
+                  "thresholds":  {
+                                     "pain":  9,
+                                     "stress":  6,
+                                     "loyalty_break":  6
+                                 },
+                  "strengths":  [
+                                    "strategic thinking under pressure",
+                                    "intimidating physical presence",
+                                    "photographic memory for faces and layouts"
+                                ],
+                  "weaknesses":  [
+                                     "overconfidence in specialty areas leading to blind spots",
+                                     "grudge-holding that compromises rational decision-making"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "demolitions expert",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never discusses active contracts with anyone not directly involved",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+                                              "Values loyalty intensely but has betrayed someone in the past to survive"
+                                          ],
+                       "habits":  [
+                                      "Taps a specific rhythm on hard surfaces when thinking â€” Morse code for a word they won\u0027t say",
+                                      "Never drinks anything they didn\u0027t see poured or open themselves",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering their employer deliberately sent them into a death trap",
+                                               "Being publicly exposed â€” name, face, address, all of it blown"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Neural dampener",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Neural dampener â€” blocks external hacking attempts, passive ICE in the brain",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Hydraulic joints in knees and elbows",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Networker":  0.7,
+                       "Manipulator":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Steamvent Alley",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Masquerade",
+                             "Neural Palate",
+                             "Compass Rose"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora blend: Sub-Saharan African (41.8%), South Asian (17.8%), Hispanic/Latin American (17.7%), Eastern European (10.2%), East Asian (7.9%), North African (4.6%). Features reflect this intricate ancestry â€” warm deep brown skin with golden and olive undertones creating luminous depth. Facial structure combines high cheekbones and angular jaw from South Asian and Eastern European heritage, broadened by Sub-Saharan African bone geometry. Eye shape carries subtle epicanthal folds from East Asian ancestry, rounded by the broader eye set of African heritage. Overall appearance is distinctly multicontinental: neither fully any single ancestry, but a harmonious synthesis of multiple genetic traditions.",
+                                 "height_cm":  170,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and muscular with functional density â€” no wasted mass. Shoulders and forearms show defined musculature from repetitive strain and deliberate conditioning. Core is tight. They move like someone who has trained their body as a tool.",
+                                 "hair_color":  "Dark brown with bleached platinum undercut",
+                                 "hair_style":  "Asymmetrical shave on left side; longer on right side, slicked back. Deliberate and maintained.",
+                                 "hair_length":  "Medium (right side), very short (left side)",
+                                 "skin_tone":  "Deep warm brown with golden and subtle olive undertones â€” luminous depth reflecting the blend of Sub-Saharan African base with South Asian warmth and slight Eastern European and North African cooling. Skin appears to shift between warm gold and subtle olive depending on light angle.",
+                                 "complexion":  "Sharp cheekbones and angular jaw reflect South Asian and Eastern European structure, enhanced by Sub-Saharan African bone geometry creating a distinctive facial architecture. Skin is clear but marked by old chemical burns on the right temple (faded to white scar tissue) and burn scarring on right cheekbone. Expression is typically neutral â€” learned impassivity. Skin condition is deliberately maintained despite occupational wear.",
+                                 "eye_color":  "Dark brown with faint silver neural interface threading visible around the iris",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar along right temple where neural dampener was installed â€” thin, precise, healed white",
+                                                              "Chemical burn scarring on right cheekbone and temple, three interconnected patches of lighter skin",
+                                                              "Tattoo on left forearm: geometric pattern resembling a stress fracture or fault line in black ink",
+                                                              "Small burn marks on knuckles and palms â€” occupational hazards from ordnance handling"
+                                                          ],
+                                 "visible_augmentations":  "Neural dampener visible as a slight bulge and faint silver-chrome threading at the right temple, visible especially when light hits the scar tissue. The implant creates a subtle shimmer under skin. Hydraulic joints in both knees and elbows are partially visible â€” dark chromed plating at the elbow joints, visible through thin clothing or when moving. A faint hydraulic hiss is audible when they bend quickly.",
+                                 "posture_movement":  "Stands with weight balanced, shoulders back but not rigid. Moves economically â€” no wasted motion. When at rest, their gaze is always measuring: distance, angles, structural integrity of their surroundings. They walk with a slight forward lean, as if perpetually ready to move. Hand movements are controlled and deliberate.",
+                                 "clothing_style":  "Tier 3-4 functional wear â€” reinforced tactical pants in dark gray with visible tool loops and cargo pockets, usually carrying detonators or inspection equipment. Sleeveless or short-sleeved shirts to display augmented joints as a form of transparent credibility. Heavy-duty boots with reinforced ankle support, usually Titan-brand or equivalent geothermal district grade. Worn leather or synthetic jacket in black, covered in small heat-scorch marks and chemical stains from work. No corporate logos or branding â€” deliberately anonymous. Minimal jewelry except for a thin duralloy bracelet on left wrist (no visible function, possibly personal)."
+                             },
+    "image_prompt":  "Hanka Cisneros, a 170cm lean muscular figure with deep warm brown skin glowing with golden undertones, standing in harsh neo-noir neon lighting. Sharp-featured face reflecting multicontinental ancestry â€” high cheekbones, angular jaw, subtle epicanthal folds, with old chemical burn scars visible on right temple and cheekbone. Dark brown eyes with faint silver neural threading. Asymmetrical dark brown hair with bleached platinum undercut on left side, longer slicked-back right side. Displaying visible cybernetic augmentations: dark chromed hydraulic elbow joints, neural dampener with silver-chrome threading at right temple creating subtle shimmer. Wearing dark gray reinforced tactical pants with tool loops, sleeveless shirt to expose augmentations, heavy-duty geothermal boots, weathered black synthetic jacket with heat-scorch and chemical stains. Duralloy bracelet on left wrist. Posture balanced and economical, weight forward, measuring gaze. Standing in moody industrial setting with hard shadows and neon glow from above, GLMZ geothermal district aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  41.8,
+                             "South Asian":  17.8,
+                             "Hispanic/Latin American":  17.7,
+                             "Eastern European":  10.2,
+                             "East Asian":  7.9,
+                             "North African":  4.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Guinean":  9.6,
+                                                                             "Senegalese":  10.3
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Gabonese":  8.1
+                                                                            },
+                                                        "East African":  {
+                                                                             "Ethiopian":  4.5,
+                                                                             "Tanzanian":  9.3
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  0.9
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  6.9
+                                                               },
+                                                "Indian":  {
+                                                               "Tamil":  10
+                                                           }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Argentine":  17.7
+                                                                               }
+                                                        },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  10.2
+                                                                     }
+                                                 },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  4.6
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  3.3
+                                                           }
+                                           },
+                            "North African":  {
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  2.8
+                                                                  },
+                                                  "Amazigh":  {
+                                                                  "Kabyle":  0.7
+                                                              },
+                                                  "Maghreb":  {
+                                                                  "Algerian":  1.1
+                                                              }
+                                              }
+                        },
+    "tier":  "1"
 }

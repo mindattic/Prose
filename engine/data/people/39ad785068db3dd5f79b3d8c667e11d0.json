@@ -1,275 +1,294 @@
-{
-  "id": "39ad785068db3dd5f79b3d8c667e11d0",
-  "type": "character",
-  "name": "Faheem Čabarkapa-Inthavong",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Baker. Makes real bread from real flour in a brick oven she built with her hands.",
-  "age": 63,
-  "status": "active",
-  "location": "Block 9, the Gray Zone — a ground-floor unit converted into a bakery with a brick oven built into the wall, near Ashland and Division",
-  "description": "Faheem Čabarkapa-Inthavong is 63 years old. Nobody uses her real name anymore, not even her. She is Auntie Flour, or The Baker, or Block 9, depending on who is speaking and how hungry they are. She is short, broad, with hands that look like they were designed for kneading dough — thick-fingered, strong, permanently dusted with flour that has worked into the creases of her skin and will not wash out and she has stopped trying.\n\nShe bakes real bread. From real flour. In a brick oven she built herself over three months from salvaged bricks and clay she mixed by hand. The oven takes up a third of her apartment. She does not care.\n\nThe flour comes from rooftop wheat grown by Plot 17 — the agricultural bot that manages the Block 9 garden cooperative. The wheat is ground by hand in a stone mill she traded six months of bread to acquire. The yeast is a sourdough culture she has maintained for 11 years. She calls it \"the old man.\"\n\nShe bakes 40 loaves a day. She loses money on every single one. The flour costs more than she charges. The fuel for the oven costs more than she charges. Her time costs more than she charges. She has a four-month waiting list. She does not take advance payment. You show up on your day, you pay what she asks, you take your bread.\n\nPeople cry when they eat it. Not because it is the best bread — it is good bread, honest bread, but it is not technically extraordinary. People cry because a human being made it with her hands. In a world of nutrient paste and synthesized carbohydrates and food printers that can replicate any flavor, a woman got up at 4 AM and mixed flour and water and salt and the old man, and she kneaded it, and she shaped it, and she put it in an oven she built, and she waited, and she pulled it out, and it is bread. A person made this. A person's hands were in this. That is why people cry.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.8,
-      "id": 0.7,
-      "shadow": 0.2,
-      "mask": 0.1,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That the old man — the sourdough culture — will die and she won't be able to start it again",
-      "That the waiting list will get so long people stop believing the bread is real"
-    ],
-    "core_desires": [
-      "To feed people something a human made",
-      "To prove that the old ways of making things are not nostalgia but resistance"
-    ],
-    "coping_mechanisms": [
-      "Baking. The rhythm of kneading is meditation.",
-      "Talking to the old man. The sourdough culture. She insists it listens."
-    ],
-    "blind_spots": [
-      "She does not see her bakery as political. Everyone else does.",
-      "Her generosity with pricing is slowly bankrupting her, and she refuses to acknowledge it"
-    ],
-    "secret": "She can't taste bread anymore. Her sense of taste faded five years ago. She bakes by memory, by texture, by the sound the crust makes. She has not told anyone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Plain. Direct. the Gray Zone creole with heavy Slavic and West African cadences inherited from a grandmother and a neighborhood.",
-    "cadence": "Warm and rhythmic, like kneading. Sentences have a push-pull quality.",
-    "verbal_tics": [
-      "Calls everyone 'baby' regardless of age or station",
-      "Knocks on the nearest surface twice before saying something she considers important"
-    ],
-    "example_lines": [
-      "'Baby, I don't make bread for money. I make bread so someone in this city touches something real today.'",
-      "'The old man is cranky this morning. Bread's going to be sour. Good sour. Angry sour. You'll love it.'"
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Plot 17",
-      "type": "supplier / symbiotic",
-      "description": "The wheat comes from Plot 17's rooftop gardens. She has never spoken to the automaton. She leaves a loaf on the Roof 3 railing every morning. It is always gone by afternoon."
-    },
-    {
-      "name": "Emile Nakamura-Osei",
-      "type": "friend",
-      "description": "Emile eats her bread and nods. She considers this the highest compliment she has ever received."
-    }
-  ],
-  "story_hooks": [
-    "A Spire food corporation has offered to buy her recipe, her culture, and her brand for Φ500,000. She said no. They're coming back with a number she can't refuse. the Gray Zone is organizing.",
-    "The old man — the sourdough culture — has changed. The bread tastes different. Better. Impossible. A microbiologist friend says the yeast has a strain in it that doesn't exist in any database. It came from the rooftop wheat. It came from Plot 17.",
-    "Her oven cracked. She needs bricks. Real bricks. Not printed. Not synthesized. Real bricks from a real building. She knows where to find them — in the Underworld — but she's 63 and the Underworld is not safe."
-  ],
-  "narrative_function": "She is proof that making something with your hands in a world that has automated everything is a radical act. She is the human counterpart to Plot 17 — one feeds the body, the other feeds something harder to name.",
-  "augmentations": "None. Unaugmented. Has declined a BCI three times.",
-  "daily_life": "Wakes at 4 AM. Feeds the old man. Mixes dough. Kneads for 40 minutes. Shapes 40 loaves. Fires the oven. Bakes. Sells. Cleans. Sleeps. Repeats.",
-  "affiliation": "Block 9 Rooftop Garden Cooperative (informal)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 7,
-      "vitality": 5,
-      "perception": 6
-    },
-    "mental": {
-      "cognition": 5,
-      "willpower": 9,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": -1,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "baker",
-      "artisan",
-      "unaugmented",
-      "community anchor",
-      "resistance"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The bread is priced for the Gray Zone. Not for profit.",
-      "No one is turned away hungry if she has bread left at end of day."
-    ],
-    "escalation_ladder": [
-      "Feeds you",
-      "Feeds you and tells you what she thinks",
-      "Refuses to feed you (this has happened twice in 11 years and both times the person deserved it)",
-      "Closes the bakery for a day (nuclear option — the Gray Zone panics)"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Feeds them first, asks questions second. A stranger in the bakery gets bread before they get conversation.",
-      "friends": "Brutally honest, endlessly generous, will tell you your idea is stupid while handing you a fresh loaf."
-    },
-    "stress_responses": {
-      "low": "Bakes more. Stress bread is indistinguishable from regular bread. She makes more of it.",
-      "medium": "Talks to the old man. Long conversations. One-sided, unless you count the bubbling.",
-      "high": "Goes to Roof 3 and sits near Plot 17. Doesn't speak. The automaton doesn't either. They sit."
-    },
-    "contradictions": [
-      "Insists the bakery isn't political while operating the most politically significant kitchen in the Gray Zone"
-    ],
-    "habits": [
-      "Leaves a loaf on the Roof 3 railing for Plot 17 every morning",
-      "Knocks twice on wood before important statements"
-    ],
-    "breaking_points": [
-      "Someone disrespecting the bread. Not her — the bread. Wasting it, throwing it away, using it as a prop. The bread is the thing she cares about."
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "Block 9, ground floor — half apartment, half bakery",
-    "clothing_style": "Flour-dusted apron over whatever she grabbed that morning. Practical. Worn.",
-    "favorite_drink": "",
-    "favorite_food": "Cannot taste anymore. Remembers bread.",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [
-      "Brick oven (self-built)",
-      "Stone flour mill",
-      "The old man (11-year sourdough culture)"
-    ],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Dreamer": 0.9,
-    "Sentinel": 0.7,
-    "Pragmatist": 0.8,
-    "Code Keeper": 0.6,
-    "Judge": 0.3
-  },
-  "operating_territory": {
-    "home_turf": "Block 9, the Gray Zone",
-    "familiar_zones": [
-      "Block 9",
-      "Rooftop Gardens"
-    ],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Brick Oven",
-    "Cinderblock Ai",
-    "Resonant Microwave Denial System RMDS-4 'Crowdbreaker'",
-    "Plot 17",
-    "Honest Burger",
-    "The Pure Hand",
-    "The Paste Bar",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Clay"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Eastern European-Southeast Asian blend with Pacific Islander and South Asian ancestry: 51.6% Eastern European (dominant), 25.3% Southeast Asian, 12% Pacific Islander, 10.9% South Asian, 0.2% Sub-Saharan African. Phenotype reflects this primary mix—warm medium-deep brown skin with golden and olive undertones from the Southeast Asian and Pacific Islander heritage, bone structure showing defined angular cheekbones characteristic of Eastern European ancestry, with secondary facial breadth from Pacific Islander and Southeast Asian lines. The blend creates a distinctive phenotype: the structural angularity of Eastern Europe softened and warmed by the golden undertones and fuller features of Southeast Asian and Pacific Islander ancestry.",
-    "height_cm": 157,
-    "weight_kg": 78,
-    "build": "Broad, compact, densely muscled through the shoulders and core. Decades of kneading and physical labor have built functional strength rather than appearance—no wasted frame, everything compressed and purposeful.",
-    "hair_color": "Steel gray with undertones of black",
-    "hair_style": "Pulled back in a thick, practical braid or wrapped in a cloth. Always secured. Always out of the way.",
-    "hair_length": "Medium (shoulder-length when unbound)",
-    "eye_color": "Dark brown, warm, slightly creased at the corners",
-    "skin_tone": "Medium-deep warm brown with golden and olive undertones, weathered by heat from the oven and age. The warmth and depth reflect her blended ancestry—the golden richness of Southeast Asian and Pacific Islander heritage layered beneath the angular structure of Eastern European heritage.",
-    "complexion": "Lined face—forehead, around eyes, bracketing the mouth. Laugh lines deeper than worry lines. Skin has the texture of someone who has spent 11 years standing in front of a brick oven; not damaged, but seasoned. Flour dust permanently embedded in the creases of her face, particularly around her nose and temples, visible even after washing. Defined angular cheekbones characteristic of Eastern European ancestry, with subtle broader facial structure from Southeast Asian and Pacific Islander ancestry, creating a distinctive blended phenotype.",
-    "distinguishing_marks": [
-      "Calluses on both palms and all ten fingers, thick and silvered from decades of kneading dough",
-      "Faint burn scars on the inside of both forearms (splashes from early oven experiments, healed long ago)",
-      "A long, thin scar running along her left wrist to mid-forearm (from a salvage accident 20 years ago, pre-oven era)",
-      "Flour dust permanently worked into the lines of her palms and the creases between her fingers, visible as a fine white residue that no amount of washing removes"
-    ],
-    "visible_augmentations": "None. Unaugmented. Her hands are her technology.",
-    "posture_movement": "Moves with economical precision—no wasted motion. Slight forward lean from decades of tending the oven. Hands gesture while speaking, flour dust trailing from her fingers. When still, she seems coiled, ready to move. When moving, she moves with purpose and balance. Walks with the careful solidity of someone used to standing for 16 hours a day.",
-    "clothing_style": "Tier 4 practical. Heavy canvas apron, flour-stained white, always worn. Underneath: thermal base layer (dark blue or black, functional) and a loose linen shirt or sweater in neutral tones—grays, creams, soft browns. All clothing shows honest wear and repeated washing. She owns five aprons; they rotate through the wash cycle. Bare feet in her bakery space (for balance on the tiled floor), or practical canvas slip-ons when she leaves Block 9. No jewelry except a simple copper ring on her left index finger, worn smooth from 40+ years of wear. No decoration. No chrome. No statement. Everything is functional or beloved."
-  },
-  "image_prompt": "Faheem Čabarkapa-Inthavong, 157cm tall, compact and densely muscled, medium-deep warm brown skin with golden and olive undertones, defined angular cheekbones, dark warm brown eyes creased at corners, steel gray hair with black undertones pulled back in thick practical braid, lined face weathered by oven heat, flour dust permanently embedded in facial creases and palms, silvered calluses on all fingers, faint burn scars on forearms, thin scar along left wrist, simple copper ring worn smooth on left index finger. Wearing flour-stained white canvas apron over dark thermal base layer and loose cream linen shirt, bare feet on tiled bakery floor or canvas slip-ons outside. Moving with economical precision, slight forward lean, coiled readiness, hands gesturing with flour dust trailing. GLMZ, Great Lakes Metropolitan Zone, Block 9 bakery interior with brick oven glow, warm tungsten lighting casting shadows on her weathered face, no augmentations, unaugmented hands as her technology, honest wear visible on all clothing, functional aesthetic, moody atmospheric lighting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 51.6,
-    "Southeast Asian": 25.3,
-    "Pacific Islander": 12,
-    "South Asian": 10.9,
-    "Sub-Saharan African": 0.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 32.2,
-        "Czech": 19.4
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 17.1
-      },
-      "Thai": {
-        "Thai": 8.2
-      }
-    },
-    "Pacific Islander": {
-      "Micronesian": {
-        "Marshallese": 2.8,
-        "Palauan": 2
-      },
-      "Melanesian": {
-        "Fijian": 5.6,
-        "Ni-Vanuatu": 1.6
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Telugu": 2.3,
-        "Kannada": 2.6
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 6
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zimbabwean": 0.1,
-        "South African": 0.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "39ad785068db3dd5f79b3d8c667e11d0",
+    "type":  "character",
+    "name":  "Faheem ÄŒabarkapa-Inthavong",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Baker. Makes real bread from real flour in a brick oven she built with her hands.",
+    "age":  63,
+    "status":  "active",
+    "location":  "Block 9, the Gray Zone â€” a ground-floor unit converted into a bakery with a brick oven built into the wall, near Ashland and Division",
+    "description":  "Faheem ÄŒabarkapa-Inthavong is 63 years old. Nobody uses her real name anymore, not even her. She is Auntie Flour, or The Baker, or Block 9, depending on who is speaking and how hungry they are. She is short, broad, with hands that look like they were designed for kneading dough â€” thick-fingered, strong, permanently dusted with flour that has worked into the creases of her skin and will not wash out and she has stopped trying.\n\nShe bakes real bread. From real flour. In a brick oven she built herself over three months from salvaged bricks and clay she mixed by hand. The oven takes up a third of her apartment. She does not care.\n\nThe flour comes from rooftop wheat grown by Plot 17 â€” the agricultural bot that manages the Block 9 garden cooperative. The wheat is ground by hand in a stone mill she traded six months of bread to acquire. The yeast is a sourdough culture she has maintained for 11 years. She calls it \"the old man.\"\n\nShe bakes 40 loaves a day. She loses money on every single one. The flour costs more than she charges. The fuel for the oven costs more than she charges. Her time costs more than she charges. She has a four-month waiting list. She does not take advance payment. You show up on your day, you pay what she asks, you take your bread.\n\nPeople cry when they eat it. Not because it is the best bread â€” it is good bread, honest bread, but it is not technically extraordinary. People cry because a human being made it with her hands. In a world of nutrient paste and synthesized carbohydrates and food printers that can replicate any flavor, a woman got up at 4 AM and mixed flour and water and salt and the old man, and she kneaded it, and she shaped it, and she put it in an oven she built, and she waited, and she pulled it out, and it is bread. A person made this. A person\u0027s hands were in this. That is why people cry.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the old man â€” the sourdough culture â€” will die and she won\u0027t be able to start it again",
+                                          "That the waiting list will get so long people stop believing the bread is real"
+                                      ],
+                       "core_desires":  [
+                                            "To feed people something a human made",
+                                            "To prove that the old ways of making things are not nostalgia but resistance"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Baking. The rhythm of kneading is meditation.",
+                                                 "Talking to the old man. The sourdough culture. She insists it listens."
+                                             ],
+                       "blind_spots":  [
+                                           "She does not see her bakery as political. Everyone else does.",
+                                           "Her generosity with pricing is slowly bankrupting her, and she refuses to acknowledge it"
+                                       ],
+                       "secret":  "She can\u0027t taste bread anymore. Her sense of taste faded five years ago. She bakes by memory, by texture, by the sound the crust makes. She has not told anyone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Plain. Direct. the Gray Zone creole with heavy Slavic and West African cadences inherited from a grandmother and a neighborhood.",
+                            "cadence":  "Warm and rhythmic, like kneading. Sentences have a push-pull quality.",
+                            "verbal_tics":  [
+                                                "Calls everyone \u0027baby\u0027 regardless of age or station",
+                                                "Knocks on the nearest surface twice before saying something she considers important"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Baby, I don\u0027t make bread for money. I make bread so someone in this city touches something real today.\u0027",
+                                                  "\u0027The old man is cranky this morning. Bread\u0027s going to be sour. Good sour. Angry sour. You\u0027ll love it.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Plot 17",
+                              "type":  "supplier / symbiotic",
+                              "description":  "The wheat comes from Plot 17\u0027s rooftop gardens. She has never spoken to the automaton. She leaves a loaf on the Roof 3 railing every morning. It is always gone by afternoon."
+                          },
+                          {
+                              "name":  "Emile Nakamura-Osei",
+                              "type":  "friend",
+                              "description":  "Emile eats her bread and nods. She considers this the highest compliment she has ever received."
+                          }
+                      ],
+    "story_hooks":  [
+                        "A Spire food corporation has offered to buy her recipe, her culture, and her brand for Î¦500,000. She said no. They\u0027re coming back with a number she can\u0027t refuse. the Gray Zone is organizing.",
+                        "The old man â€” the sourdough culture â€” has changed. The bread tastes different. Better. Impossible. A microbiologist friend says the yeast has a strain in it that doesn\u0027t exist in any database. It came from the rooftop wheat. It came from Plot 17.",
+                        "Her oven cracked. She needs bricks. Real bricks. Not printed. Not synthesized. Real bricks from a real building. She knows where to find them â€” in the Underworld â€” but she\u0027s 63 and the Underworld is not safe."
+                    ],
+    "narrative_function":  "She is proof that making something with your hands in a world that has automated everything is a radical act. She is the human counterpart to Plot 17 â€” one feeds the body, the other feeds something harder to name.",
+    "augmentations":  "None. Unaugmented. Has declined a BCI three times.",
+    "daily_life":  "Wakes at 4 AM. Feeds the old man. Mixes dough. Kneads for 40 minutes. Shapes 40 loaves. Fires the oven. Bakes. Sells. Cleans. Sleeps. Repeats.",
+    "affiliation":  "Block 9 Rooftop Garden Cooperative (informal)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  7,
+                                   "vitality":  5,
+                                   "perception":  6
+                               },
+                  "mental":  {
+                                 "cognition":  5,
+                                 "willpower":  9,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -1,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "baker",
+                               "artisan",
+                               "unaugmented",
+                               "community anchor",
+                               "resistance"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The bread is priced for the Gray Zone. Not for profit.",
+                                              "No one is turned away hungry if she has bread left at end of day."
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Feeds you",
+                                                 "Feeds you and tells you what she thinks",
+                                                 "Refuses to feed you (this has happened twice in 11 years and both times the person deserved it)",
+                                                 "Closes the bakery for a day (nuclear option â€” the Gray Zone panics)"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Feeds them first, asks questions second. A stranger in the bakery gets bread before they get conversation.",
+                                                   "friends":  "Brutally honest, endlessly generous, will tell you your idea is stupid while handing you a fresh loaf."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Bakes more. Stress bread is indistinguishable from regular bread. She makes more of it.",
+                                                "medium":  "Talks to the old man. Long conversations. One-sided, unless you count the bubbling.",
+                                                "high":  "Goes to Roof 3 and sits near Plot 17. Doesn\u0027t speak. The automaton doesn\u0027t either. They sit."
+                                            },
+                       "contradictions":  [
+                                              "Insists the bakery isn\u0027t political while operating the most politically significant kitchen in the Gray Zone"
+                                          ],
+                       "habits":  [
+                                      "Leaves a loaf on the Roof 3 railing for Plot 17 every morning",
+                                      "Knocks twice on wood before important statements"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone disrespecting the bread. Not her â€” the bread. Wasting it, throwing it away, using it as a prop. The bread is the thing she cares about."
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "Block 9, ground floor â€” half apartment, half bakery",
+                       "clothing_style":  "Flour-dusted apron over whatever she grabbed that morning. Practical. Worn.",
+                       "favorite_drink":  "",
+                       "favorite_food":  "Cannot taste anymore. Remembers bread.",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+                                              "Brick oven (self-built)",
+                                              "Stone flour mill",
+                                              "The old man (11-year sourdough culture)"
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Dreamer":  0.9,
+                       "Sentinel":  0.7,
+                       "Pragmatist":  0.8,
+                       "Code Keeper":  0.6,
+                       "Judge":  0.3
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Block 9, the Gray Zone",
+                                "familiar_zones":  [
+                                                       "Block 9",
+                                                       "Rooftop Gardens"
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Brick Oven",
+                             "Cinderblock Ai",
+                             "Resonant Microwave Denial System RMDS-4 \u0027Crowdbreaker\u0027",
+                             "Plot 17",
+                             "Honest Burger",
+                             "The Pure Hand",
+                             "The Paste Bar",
+                             "Sterling-Nakamura PersonalAegis PA-7 \u0027Rampart\u0027",
+                             "Clay"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Eastern European-Southeast Asian blend with Pacific Islander and South Asian ancestry: 51.6% Eastern European (dominant), 25.3% Southeast Asian, 12% Pacific Islander, 10.9% South Asian, 0.2% Sub-Saharan African. Phenotype reflects this primary mixâ€”warm medium-deep brown skin with golden and olive undertones from the Southeast Asian and Pacific Islander heritage, bone structure showing defined angular cheekbones characteristic of Eastern European ancestry, with secondary facial breadth from Pacific Islander and Southeast Asian lines. The blend creates a distinctive phenotype: the structural angularity of Eastern Europe softened and warmed by the golden undertones and fuller features of Southeast Asian and Pacific Islander ancestry.",
+                                 "height_cm":  157,
+                                 "weight_kg":  78,
+                                 "build":  "Broad, compact, densely muscled through the shoulders and core. Decades of kneading and physical labor have built functional strength rather than appearanceâ€”no wasted frame, everything compressed and purposeful.",
+                                 "hair_color":  "Steel gray with undertones of black",
+                                 "hair_style":  "Pulled back in a thick, practical braid or wrapped in a cloth. Always secured. Always out of the way.",
+                                 "hair_length":  "Medium (shoulder-length when unbound)",
+                                 "eye_color":  "Dark brown, warm, slightly creased at the corners",
+                                 "skin_tone":  "Medium-deep warm brown with golden and olive undertones, weathered by heat from the oven and age. The warmth and depth reflect her blended ancestryâ€”the golden richness of Southeast Asian and Pacific Islander heritage layered beneath the angular structure of Eastern European heritage.",
+                                 "complexion":  "Lined faceâ€”forehead, around eyes, bracketing the mouth. Laugh lines deeper than worry lines. Skin has the texture of someone who has spent 11 years standing in front of a brick oven; not damaged, but seasoned. Flour dust permanently embedded in the creases of her face, particularly around her nose and temples, visible even after washing. Defined angular cheekbones characteristic of Eastern European ancestry, with subtle broader facial structure from Southeast Asian and Pacific Islander ancestry, creating a distinctive blended phenotype.",
+                                 "distinguishing_marks":  [
+                                                              "Calluses on both palms and all ten fingers, thick and silvered from decades of kneading dough",
+                                                              "Faint burn scars on the inside of both forearms (splashes from early oven experiments, healed long ago)",
+                                                              "A long, thin scar running along her left wrist to mid-forearm (from a salvage accident 20 years ago, pre-oven era)",
+                                                              "Flour dust permanently worked into the lines of her palms and the creases between her fingers, visible as a fine white residue that no amount of washing removes"
+                                                          ],
+                                 "visible_augmentations":  "None. Unaugmented. Her hands are her technology.",
+                                 "posture_movement":  "Moves with economical precisionâ€”no wasted motion. Slight forward lean from decades of tending the oven. Hands gesture while speaking, flour dust trailing from her fingers. When still, she seems coiled, ready to move. When moving, she moves with purpose and balance. Walks with the careful solidity of someone used to standing for 16 hours a day.",
+                                 "clothing_style":  "Tier 4 practical. Heavy canvas apron, flour-stained white, always worn. Underneath: thermal base layer (dark blue or black, functional) and a loose linen shirt or sweater in neutral tonesâ€”grays, creams, soft browns. All clothing shows honest wear and repeated washing. She owns five aprons; they rotate through the wash cycle. Bare feet in her bakery space (for balance on the tiled floor), or practical canvas slip-ons when she leaves Block 9. No jewelry except a simple copper ring on her left index finger, worn smooth from 40+ years of wear. No decoration. No chrome. No statement. Everything is functional or beloved."
+                             },
+    "image_prompt":  "Faheem ÄŒabarkapa-Inthavong, 157cm tall, compact and densely muscled, medium-deep warm brown skin with golden and olive undertones, defined angular cheekbones, dark warm brown eyes creased at corners, steel gray hair with black undertones pulled back in thick practical braid, lined face weathered by oven heat, flour dust permanently embedded in facial creases and palms, silvered calluses on all fingers, faint burn scars on forearms, thin scar along left wrist, simple copper ring worn smooth on left index finger. Wearing flour-stained white canvas apron over dark thermal base layer and loose cream linen shirt, bare feet on tiled bakery floor or canvas slip-ons outside. Moving with economical precision, slight forward lean, coiled readiness, hands gesturing with flour dust trailing. GLMZ, Great Lakes Metropolitan Zone, Block 9 bakery interior with brick oven glow, warm tungsten lighting casting shadows on her weathered face, no augmentations, unaugmented hands as her technology, honest wear visible on all clothing, functional aesthetic, moody atmospheric lighting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  51.6,
+                             "Southeast Asian":  25.3,
+                             "Pacific Islander":  12,
+                             "South Asian":  10.9,
+                             "Sub-Saharan African":  0.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  32.2,
+                                                                         "Czech":  19.4
+                                                                     }
+                                                 },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  17.1
+                                                                },
+                                                    "Thai":  {
+                                                                 "Thai":  8.2
+                                                             }
+                                                },
+                            "Pacific Islander":  {
+                                                     "Micronesian":  {
+                                                                         "Marshallese":  2.8,
+                                                                         "Palauan":  2
+                                                                     },
+                                                     "Melanesian":  {
+                                                                        "Fijian":  5.6,
+                                                                        "Ni-Vanuatu":  1.6
+                                                                    }
+                                                 },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Telugu":  2.3,
+                                                               "Kannada":  2.6
+                                                           },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  6
+                                                              }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  0.1,
+                                                                                 "South African":  0.1
+                                                                             }
+                                                    }
+                        },
+    "tier":  "1"
 }

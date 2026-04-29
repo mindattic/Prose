@@ -94,28 +94,6 @@ public class DatabaseService : IDatabaseService
             || c.Aliases.Any(a => a.Equals(nameOrAlias, StringComparison.OrdinalIgnoreCase)));
     }
 
-    public FacetWeights GetBlendedWeights(List<string> characterNames)
-    {
-        var weights = characterNames
-            .Select(FindCharacter)
-            .Where(c => c != null && (c.Psychology.FacetWeights.Wound > 0 || c.Psychology.FacetWeights.Ideal > 0))
-            .Select(c => c!.Psychology.FacetWeights)
-            .ToList();
-
-        if (weights.Count == 0)
-            return new FacetWeights { Wound = 0.6, Ideal = 0.5, Id = 0.4, Shadow = 0.55, Mask = 0.45, Ghost = 0.5 };
-
-        return new FacetWeights
-        {
-            Wound = weights.Average(w => w.Wound),
-            Ideal = weights.Average(w => w.Ideal),
-            Id = weights.Average(w => w.Id),
-            Shadow = weights.Average(w => w.Shadow),
-            Mask = weights.Average(w => w.Mask),
-            Ghost = weights.Average(w => w.Ghost),
-        };
-    }
-
     public string GetCharacterContext(string nameOrAlias)
     {
         var c = FindCharacter(nameOrAlias);
@@ -133,9 +111,6 @@ public class DatabaseService : IDatabaseService
         if (p.CopingMechanisms.Any()) lines.Add($"COPING MECHANISMS: {string.Join("; ", p.CopingMechanisms)}");
         if (p.BlindSpots.Any()) lines.Add($"BLIND SPOTS: {string.Join("; ", p.BlindSpots)}");
         if (p.Secret.Length > 0) lines.Add($"SECRET: {p.Secret}");
-
-        var fw = p.FacetWeights;
-        lines.Add($"FACET WEIGHTS: wound={fw.Wound:F2} ideal={fw.Ideal:F2} id={fw.Id:F2} shadow={fw.Shadow:F2} mask={fw.Mask:F2} ghost={fw.Ghost:F2}");
 
         var sp = c.SpeechPatterns;
         if (sp.Vocabulary.Length > 0) lines.Add($"VOCABULARY: {sp.Vocabulary}");
@@ -273,10 +248,10 @@ public class DatabaseService : IDatabaseService
         if (s.Pace.Length > 0) lines.Add($"PACE: {s.Pace}");
         if (s.Ending.Length > 0) lines.Add($"ENDING: {s.Ending}");
 
-        var f = rules.FacetRules;
-        if (f.LeadVoice.Length > 0) lines.Add($"LEAD VOICE: {f.LeadVoice}");
-        if (f.Rotation.Length > 0) lines.Add($"ROTATION: {f.Rotation}");
-        if (f.Interjections.Length > 0) lines.Add($"INTERJECTIONS: {f.Interjections}");
+        // Inner monologue: italicized stand-alone lines, never labeled. Sourced from each
+        // POV character's documented psychology — coping_mechanisms, core_fears, blind_spots,
+        // secret. The six-archetype facet schema was retired 2026-04-26.
+        lines.Add("INNER MONOLOGUE: italicized stand-alone lines on their own paragraph, NEVER labeled. Source from the POV character's psychology fields, not an archetype schema.");
 
         if (Motifs.Any())
         {

@@ -1,301 +1,330 @@
-{
-  "id": "019d6143a6a57d018ab3c1dcbe5ad4a7",
-  "type": "character",
-  "name": "Hassan Kovalenko-Lahlou",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Clothing and fashion vendor specializing in custom retrofits, geneware-compatible garments, and augmentation-integrated streetwear",
-  "age": 42,
-  "status": "active",
-  "location": "The Burnished Market, The Laceworks district, near Lincoln and Belmont",
-  "description": "Hassan Kovalenko-Lahlou is a tall woman with the posture of someone who was once told to slouch and decided never to again. Her skin is warm brown, her hair a natural silver she has streaked with bioluminescent thread-fibers so it catches and pulses faintly in low light — not a geneware mod but textile craft, and she is meticulous about the distinction. She wears her own creations exclusively: today a structured coat with induction-panel lining that shifts color along the hem, tomorrow a deconstructed layering piece that incorporates a client's old Ferrogate Transit jacket. She has retractable claw geneware on her dominant hand, which she uses with equal facility for detail sewing and emphasis in arguments.\n\nHassan Kovalenko-Lahlou came from the Balkans diaspora through Lagos and arrived in GLMZ with a sewing kit, a secondhand cutting laser, and opinions she has never once kept to herself. She is opinionated about aesthetics to the point of manifesto, believes that how people dress in a corponation city is a political act whether or not they mean it to be, and will refuse a commission she finds artistically dishonest even at cost to herself. She is the kind of person who makes enemies easily and keeps them; her regulars are fiercely loyal because she makes things that fit them like she understood what they needed before they said it.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.9,
-      "id": 0.6,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "making something that is used to harm someone — being complicit through craft",
-      "losing the workshop and having to work for a corporate fashion house to survive"
-    ],
-    "core_desires": [
-      "to build something that outlasts her — a school, a collective, a craft tradition",
-      "to be honestly seen, which is different from being appreciated"
-    ],
-    "coping_mechanisms": [
-      "work as grounding ritual",
-      "aesthetic philosophy as a framework for making ethical decisions"
-    ],
-    "blind_spots": [
-      "her pride makes her slow to accept help, which strains the workshop finances",
-      "she reads political meaning into things that are sometimes just coincidence"
-    ],
-    "secret": "She has been quietly making alterations to garments for a network she doesn't fully understand — people who need concealments, hidden pockets, lining modifications — and she has told herself it is none of her business. She suspects it might be resistance work. She has not asked because she is afraid the answer will force a decision."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise and confident; uses textile and craft terms as metaphors; direct to the point of bluntness",
-    "cadence": "Measured, declarative — she holds eye contact and waits for understanding before moving on",
-    "verbal_tics": [
-      "taps claws on the counter surface when thinking",
-      "'That's not a garment, that's a costume — there's a difference'",
-      "'No, listen'"
-    ],
-    "example_lines": [
-      "'A Tier 3 person wearing Axiom branding is a person who has decided what they are. I make clothes for people who haven't decided yet.'",
-      "'I don't do concealed pockets without knowing the reason. Generally. Ask me again when you've had a drink and thought about what you're actually asking.'",
-      "'The thread remembers the tension. That's not a metaphor, that's materials science. That is also a metaphor.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She has found something sewn into the lining of a garment that was brought in for alteration — something that should not be there — and does not know what to do with it",
-    "A Palladian fashion house rep has offered her a contract that would pay off her workshop debt in eight months; the terms include an exclusivity clause that would end the concealments work, and she suspects the offer was engineered specifically to isolate her",
-    "A young tailor she has been informally mentoring has disappeared, and the last thing they were working on was a commission from a client Radmila thought was trouble"
-  ],
-  "narrative_function": "Social connector to The Laceworks and Burnished Market communities; can source unusual materials or modify garments to conceal or integrate equipment; her sharp eye makes her an excellent involuntary observer of who is wearing what and why.",
-  "augmentations": "Retractable claw geneware (dominant hand, right; dark amber). Vision augmentation: microscopic focus overlay for detail work (basic grade, self-paid). Color-changing hair achieved through bioluminescent textile fibers, not geneware — she corrects anyone who assumes otherwise.",
-  "daily_life": "Market hours 10am to 8pm managing the stall and seeing clients; late evenings in her workshop two streets away doing production work; she sleeps badly and sews at 3am frequently.",
-  "affiliation": "Independent; The Burnished Market informal collective; occasional contract work for mid-tier Tier 2-3 clients who want bespoke without Axiom fashion house prices",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 9,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": -4,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "artisan",
-      "political dresser",
-      "claw geneware",
-      "elf devotee",
-      "idealist-pragmatist",
-      "involuntary operative"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never make something you would not put your name on",
-      "The client describes the need; you decide the form — that's the contract",
-      "If a thing is worth doing, it is worth doing with the right materials"
-    ],
-    "escalation_ladder": [
-      "Warm with regulars and appropriately professional with new clients",
-      "Goes crisp and direct if boundaries are pushed",
-      "Will end a transaction mid-commission if her ethics are violated, refunding deposit",
-      "Will not be physically intimidated — the claws are not decorative"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assessing; she watches how someone moves and dresses before deciding how to talk to them",
-      "friends": "Demanding but deeply loyal; the kind of friend who tells you the truth and then helps you fix it"
-    },
-    "stress_responses": {
-      "low": "Sews faster; the quality improves under mild pressure",
-      "medium": "Becomes very precise in language; measures words like fabric",
-      "high": "Completely silent; works with focused intensity; processes afterward, alone"
-    },
-    "contradictions": [
-      "Believes in transparency and honesty but has avoided asking the question that would force her into the open about the concealment work",
-      "Refuses corporate aesthetics philosophically but her technique owes everything to a training program funded by Sterling-Nakamura"
-    ],
-    "habits": [
-      "Runs her right-hand claw along seam lines to test tension — in garments and in situations",
-      "Leaves a thread-fiber offering on the windowsill of her workshop for the ELF she calls Selvage",
-      "Drinks three cups of very bitter tea before opening the stall"
-    ],
-    "breaking_points": [
-      "Finding out the concealment garments were used in something that got people killed",
-      "The workshop being seized or destroyed"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "People Pleaser": 0.9,
-    "Hustler": 0.7,
-    "Provider": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Burnished Market",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in what is now the Highland Park Autonomous Zone, diaspora family",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed informal craft apprenticeship; began stall at The Burnished Market",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Workshop space secured in The Laceworks",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began receiving concealment modification requests from unidentified network",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Current; Palladian approach and disappearance of mentee apprentice complicating operations",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Burnished Market",
-    "Ferrogate Transit",
-    "The Laceworks",
-    "Palladian Construction",
-    "Diaspora Table",
-    "Silver",
-    "Déjà Vu",
-    "GLMZ"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Complex pan-global phenotype blending Hispanic/Latin American warmth (34.5%), North African sun-depth (30.7%), Eastern European angularity (23.1%), and Southeast Asian refinement (11.7%). The combination creates striking facial geometry: high Southeast Asian-Hispanic cheekbones, Eastern European jawline sharpness, North African nose structure, unified by warm golden-olive skin that shifts between amber and bronze depending on light",
-    "height_cm": 182,
-    "weight_kg": 68,
-    "build": "Tall and lean with defined shoulders and wiry musculature from precision hand work; economical movement, no excess",
-    "hair_color": "Natural silver with embedded bioluminescent thread-fibers that pulse faintly in dim light",
-    "hair_style": "Worn long and loose, often pinned asymmetrically with custom hardware; fibers create subtle light-scatter effect",
-    "hair_length": "Long (shoulder-blade length)",
-    "eye_color": "Dark brown with microscopic overlay augmentation visible as faint prismatic shimmer at certain angles",
-    "skin_tone": "Warm golden-olive complexion with amber undertones, reflecting blended North African sun-depth, Hispanic/Latin American and Southeast Asian golden warmth, grounded by Eastern European richness",
-    "complexion": "High, prominent cheekbones showing Southeast Asian and Hispanic/Latin American bone structure with slight temple widening; sharp, angular jawline from Eastern European genetics; refined nose bridge with subtle flare reflecting North African heritage; skin shows fine stress lines around eyes from decades of detail work; minor scarring on fingertips and palms from laser burns and needle puncture work; subtle luminescence in warm light from melanin complexity and warm undertone saturation",
-    "distinguishing_marks": [
-      "Thin white scar running from right wrist to mid-forearm (old cutting laser accident, 2198)",
-      "Series of small circular marks on inner wrists (textile needle practice scars, self-inflicted in youth)",
-      "Tattoo across right collarbone: geometric pattern in silver ink that reads as abstract until viewed at specific angle, then resolves to Cyrillic text (personal manifesto, refusing translation)",
-      "Right hand shows faint subdermal discoloration where claw geneware retracts; claws are dark amber/tobacco-colored, visible even when withdrawn"
-    ],
-    "visible_augmentations": "Retractable claw geneware on right hand (dark amber, extends approximately 8cm, visible subdermal scarring at base of digits); microscopic focus overlay in right eye (subtle prismatic artifact visible in bright light, manifests as faint rainbow shimmer)",
-    "posture_movement": "Habitually upright and deliberate; walks with measured stride; hands rarely still — constant micro-gestures when speaking, fingers often in needle-and-thread positioning even when empty; extends claws unconsciously when emphasizing points or when concentrating on aesthetic problems",
-    "clothing_style": "Exclusively wears her own designs: structured, asymmetrical pieces that integrate functional elements (induction panels, modular pockets, augmentation-access seams); color palette of deep teals, charcoal, burnt orange, silver; mixing of tailored and deconstructed elements; visible stitching as design feature; often incorporates salvaged fabric from client commissions or historical garments; layers always intentional and visible; leather and synthetic blends; zero corporate branding; Tier 3 independent maker aesthetic — expensive to those who understand the work, invisible wealth to outsiders"
-  },
-  "image_prompt": "Hassan Kovalenko-Lahlou, tall lean woman with shoulder-blade length silver hair embedded with bioluminescent threads, warm golden-olive complexion with amber undertones reflecting pan-global ancestry, sharp Eastern European jawline paired with Southeast Asian-Hispanic cheekbones and North African nose structure. Dark brown eyes with subtle prismatic augmentation shimmer. Silver ink Cyrillic tattoo across right collarbone. Right hand displays retracted amber claw geneware with visible subdermal scarring. Fine stress lines around eyes, laser burn scars on fingertips, wrist needle scars. Wearing asymmetrical structured garments of her own design in deep teal, charcoal, and burnt orange with visible stitching, leather-synthetic blends, modular pockets, augmentation-access seams. Upright posture, hands in active micro-gesture. GLMZ 2200s interior workshop setting with warm overhead lighting catching hair luminescence and skin warm undertones, moody focused atmosphere, Tier 3 independent maker aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 34.5,
-    "North African": 30.7,
-    "Eastern European": 23.1,
-    "Southeast Asian": 11.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 4.8,
-        "Honduran": 29.7
-      }
-    },
-    "North African": {
-      "Maghreb": {
-        "Moroccan": 30.7
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Romanian": 11.7,
-        "Hungarian": 11.4
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 10.1
-      },
-      "Thai": {
-        "Thai": 1.6
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a6a57d018ab3c1dcbe5ad4a7",
+    "type":  "character",
+    "name":  "Hassan Kovalenko-Lahlou",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Clothing and fashion vendor specializing in custom retrofits, geneware-compatible garments, and augmentation-integrated streetwear",
+    "age":  42,
+    "status":  "active",
+    "location":  "The Burnished Market, The Laceworks district, near Lincoln and Belmont",
+    "description":  "Hassan Kovalenko-Lahlou is a tall woman with the posture of someone who was once told to slouch and decided never to again. Her skin is warm brown, her hair a natural silver she has streaked with bioluminescent thread-fibers so it catches and pulses faintly in low light â€” not a geneware mod but textile craft, and she is meticulous about the distinction. She wears her own creations exclusively: today a structured coat with induction-panel lining that shifts color along the hem, tomorrow a deconstructed layering piece that incorporates a client\u0027s old Ferrogate Transit jacket. She has retractable claw geneware on her dominant hand, which she uses with equal facility for detail sewing and emphasis in arguments.\n\nHassan Kovalenko-Lahlou came from the Balkans diaspora through Lagos and arrived in GLMZ with a sewing kit, a secondhand cutting laser, and opinions she has never once kept to herself. She is opinionated about aesthetics to the point of manifesto, believes that how people dress in a corponation city is a political act whether or not they mean it to be, and will refuse a commission she finds artistically dishonest even at cost to herself. She is the kind of person who makes enemies easily and keeps them; her regulars are fiercely loyal because she makes things that fit them like she understood what they needed before they said it.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "making something that is used to harm someone â€” being complicit through craft",
+                                          "losing the workshop and having to work for a corporate fashion house to survive"
+                                      ],
+                       "core_desires":  [
+                                            "to build something that outlasts her â€” a school, a collective, a craft tradition",
+                                            "to be honestly seen, which is different from being appreciated"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "work as grounding ritual",
+                                                 "aesthetic philosophy as a framework for making ethical decisions"
+                                             ],
+                       "blind_spots":  [
+                                           "her pride makes her slow to accept help, which strains the workshop finances",
+                                           "she reads political meaning into things that are sometimes just coincidence"
+                                       ],
+                       "secret":  "She has been quietly making alterations to garments for a network she doesn\u0027t fully understand â€” people who need concealments, hidden pockets, lining modifications â€” and she has told herself it is none of her business. She suspects it might be resistance work. She has not asked because she is afraid the answer will force a decision."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise and confident; uses textile and craft terms as metaphors; direct to the point of bluntness",
+                            "cadence":  "Measured, declarative â€” she holds eye contact and waits for understanding before moving on",
+                            "verbal_tics":  [
+                                                "taps claws on the counter surface when thinking",
+                                                "\u0027That\u0027s not a garment, that\u0027s a costume â€” there\u0027s a difference\u0027",
+                                                "\u0027No, listen\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027A Tier 3 person wearing Axiom branding is a person who has decided what they are. I make clothes for people who haven\u0027t decided yet.\u0027",
+                                                  "\u0027I don\u0027t do concealed pockets without knowing the reason. Generally. Ask me again when you\u0027ve had a drink and thought about what you\u0027re actually asking.\u0027",
+                                                  "\u0027The thread remembers the tension. That\u0027s not a metaphor, that\u0027s materials science. That is also a metaphor.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She has found something sewn into the lining of a garment that was brought in for alteration â€” something that should not be there â€” and does not know what to do with it",
+                        "A Palladian fashion house rep has offered her a contract that would pay off her workshop debt in eight months; the terms include an exclusivity clause that would end the concealments work, and she suspects the offer was engineered specifically to isolate her",
+                        "A young tailor she has been informally mentoring has disappeared, and the last thing they were working on was a commission from a client Radmila thought was trouble"
+                    ],
+    "narrative_function":  "Social connector to The Laceworks and Burnished Market communities; can source unusual materials or modify garments to conceal or integrate equipment; her sharp eye makes her an excellent involuntary observer of who is wearing what and why.",
+    "augmentations":  "Retractable claw geneware (dominant hand, right; dark amber). Vision augmentation: microscopic focus overlay for detail work (basic grade, self-paid). Color-changing hair achieved through bioluminescent textile fibers, not geneware â€” she corrects anyone who assumes otherwise.",
+    "daily_life":  "Market hours 10am to 8pm managing the stall and seeing clients; late evenings in her workshop two streets away doing production work; she sleeps badly and sews at 3am frequently.",
+    "affiliation":  "Independent; The Burnished Market informal collective; occasional contract work for mid-tier Tier 2-3 clients who want bespoke without Axiom fashion house prices",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  9,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  -4,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "artisan",
+                               "political dresser",
+                               "claw geneware",
+                               "elf devotee",
+                               "idealist-pragmatist",
+                               "involuntary operative"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never make something you would not put your name on",
+                                              "The client describes the need; you decide the form â€” that\u0027s the contract",
+                                              "If a thing is worth doing, it is worth doing with the right materials"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Warm with regulars and appropriately professional with new clients",
+                                                 "Goes crisp and direct if boundaries are pushed",
+                                                 "Will end a transaction mid-commission if her ethics are violated, refunding deposit",
+                                                 "Will not be physically intimidated â€” the claws are not decorative"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assessing; she watches how someone moves and dresses before deciding how to talk to them",
+                                                   "friends":  "Demanding but deeply loyal; the kind of friend who tells you the truth and then helps you fix it"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Sews faster; the quality improves under mild pressure",
+                                                "medium":  "Becomes very precise in language; measures words like fabric",
+                                                "high":  "Completely silent; works with focused intensity; processes afterward, alone"
+                                            },
+                       "contradictions":  [
+                                              "Believes in transparency and honesty but has avoided asking the question that would force her into the open about the concealment work",
+                                              "Refuses corporate aesthetics philosophically but her technique owes everything to a training program funded by Sterling-Nakamura"
+                                          ],
+                       "habits":  [
+                                      "Runs her right-hand claw along seam lines to test tension â€” in garments and in situations",
+                                      "Leaves a thread-fiber offering on the windowsill of her workshop for the ELF she calls Selvage",
+                                      "Drinks three cups of very bitter tea before opening the stall"
+                                  ],
+                       "breaking_points":  [
+                                               "Finding out the concealment garments were used in something that got people killed",
+                                               "The workshop being seized or destroyed"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "People Pleaser":  0.9,
+                       "Hustler":  0.7,
+                       "Provider":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Burnished Market",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in what is now the Highland Park Autonomous Zone, diaspora family",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed informal craft apprenticeship; began stall at The Burnished Market",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Workshop space secured in The Laceworks",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began receiving concealment modification requests from unidentified network",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Current; Palladian approach and disappearance of mentee apprentice complicating operations",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact-7 \u0027Rat Trap\u0027",
+                            "Street Custom \u0027Spiderbite\u0027 Electrified Barbed Wire Launcher"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Burnished Market",
+                             "Ferrogate Transit",
+                             "The Laceworks",
+                             "Palladian Construction",
+                             "Diaspora Table",
+                             "Silver",
+                             "DÃ©jÃ  Vu",
+                             "GLMZ"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Complex pan-global phenotype blending Hispanic/Latin American warmth (34.5%), North African sun-depth (30.7%), Eastern European angularity (23.1%), and Southeast Asian refinement (11.7%). The combination creates striking facial geometry: high Southeast Asian-Hispanic cheekbones, Eastern European jawline sharpness, North African nose structure, unified by warm golden-olive skin that shifts between amber and bronze depending on light",
+                                 "height_cm":  182,
+                                 "weight_kg":  68,
+                                 "build":  "Tall and lean with defined shoulders and wiry musculature from precision hand work; economical movement, no excess",
+                                 "hair_color":  "Natural silver with embedded bioluminescent thread-fibers that pulse faintly in dim light",
+                                 "hair_style":  "Worn long and loose, often pinned asymmetrically with custom hardware; fibers create subtle light-scatter effect",
+                                 "hair_length":  "Long (shoulder-blade length)",
+                                 "eye_color":  "Dark brown with microscopic overlay augmentation visible as faint prismatic shimmer at certain angles",
+                                 "skin_tone":  "Warm golden-olive complexion with amber undertones, reflecting blended North African sun-depth, Hispanic/Latin American and Southeast Asian golden warmth, grounded by Eastern European richness",
+                                 "complexion":  "High, prominent cheekbones showing Southeast Asian and Hispanic/Latin American bone structure with slight temple widening; sharp, angular jawline from Eastern European genetics; refined nose bridge with subtle flare reflecting North African heritage; skin shows fine stress lines around eyes from decades of detail work; minor scarring on fingertips and palms from laser burns and needle puncture work; subtle luminescence in warm light from melanin complexity and warm undertone saturation",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar running from right wrist to mid-forearm (old cutting laser accident, 2198)",
+                                                              "Series of small circular marks on inner wrists (textile needle practice scars, self-inflicted in youth)",
+                                                              "Tattoo across right collarbone: geometric pattern in silver ink that reads as abstract until viewed at specific angle, then resolves to Cyrillic text (personal manifesto, refusing translation)",
+                                                              "Right hand shows faint subdermal discoloration where claw geneware retracts; claws are dark amber/tobacco-colored, visible even when withdrawn"
+                                                          ],
+                                 "visible_augmentations":  "Retractable claw geneware on right hand (dark amber, extends approximately 8cm, visible subdermal scarring at base of digits); microscopic focus overlay in right eye (subtle prismatic artifact visible in bright light, manifests as faint rainbow shimmer)",
+                                 "posture_movement":  "Habitually upright and deliberate; walks with measured stride; hands rarely still â€” constant micro-gestures when speaking, fingers often in needle-and-thread positioning even when empty; extends claws unconsciously when emphasizing points or when concentrating on aesthetic problems",
+                                 "clothing_style":  "Exclusively wears her own designs: structured, asymmetrical pieces that integrate functional elements (induction panels, modular pockets, augmentation-access seams); color palette of deep teals, charcoal, burnt orange, silver; mixing of tailored and deconstructed elements; visible stitching as design feature; often incorporates salvaged fabric from client commissions or historical garments; layers always intentional and visible; leather and synthetic blends; zero corporate branding; Tier 3 independent maker aesthetic â€” expensive to those who understand the work, invisible wealth to outsiders"
+                             },
+    "image_prompt":  "Hassan Kovalenko-Lahlou, tall lean woman with shoulder-blade length silver hair embedded with bioluminescent threads, warm golden-olive complexion with amber undertones reflecting pan-global ancestry, sharp Eastern European jawline paired with Southeast Asian-Hispanic cheekbones and North African nose structure. Dark brown eyes with subtle prismatic augmentation shimmer. Silver ink Cyrillic tattoo across right collarbone. Right hand displays retracted amber claw geneware with visible subdermal scarring. Fine stress lines around eyes, laser burn scars on fingertips, wrist needle scars. Wearing asymmetrical structured garments of her own design in deep teal, charcoal, and burnt orange with visible stitching, leather-synthetic blends, modular pockets, augmentation-access seams. Upright posture, hands in active micro-gesture. GLMZ 2200s interior workshop setting with warm overhead lighting catching hair luminescence and skin warm undertones, moody focused atmosphere, Tier 3 independent maker aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  34.5,
+                             "North African":  30.7,
+                             "Eastern European":  23.1,
+                             "Southeast Asian":  11.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  4.8,
+                                                                                     "Honduran":  29.7
+                                                                                 }
+                                                        },
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  30.7
+                                                              }
+                                              },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  11.7,
+                                                                             "Hungarian":  11.4
+                                                                         }
+                                                 },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  10.1
+                                                                   },
+                                                    "Thai":  {
+                                                                 "Thai":  1.6
+                                                             }
+                                                }
+                        },
+    "tier":  "2"
 }

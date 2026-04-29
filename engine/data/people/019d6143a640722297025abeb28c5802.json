@@ -1,301 +1,328 @@
-{
-  "id": "019d6143a640722297025abeb28c5802",
-  "type": "character",
-  "name": "Gabor Somchai-Mukherjee",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Barber and hair sculptor, operates a one-chair shop in the Burnished Market",
-  "age": 26,
-  "status": "active",
-  "location": "Burnished Market — Stall Row 14, unit B, between a spice merchant and a used-optics dealer, near North Ave and Damen",
-  "description": "Gabor Somchai-Mukherjee is twenty-six years old and has the complete, unshakeable confidence of someone who decided very early exactly who they were going to be. They are short and compact with deep brown skin, a shaved left side, and the right side of their head grown out into thick coils they sculpt into a new configuration every week as an ongoing public art project. Their irises are modded to shift between amber and violet depending on ambient light — they call this their 'mood ring for people who are actually paying attention.' Their arms from elbow to wrist are covered in tessellating geometric tattoos that they designed themselves, each pattern corresponding to a client whose cut they consider their finest work.\n\nThe shop is barely three meters by four, dominated by the chair, a mirrored wall covered in pinned photographs of hairstyles both historical and invented, and a speaker system that plays music at a volume Gabor Somchai-Mukherjee considers conversation-appropriate and everyone else considers aggressive. They are gifted in ways that go beyond technical skill — they read what a client needs from the way they hold their shoulders when they sit down, and they have an instinct for when someone wants silence and when they need to be talked through something. They work in color-changing extensions, blade geometry, bioluminescent thread woven into natural hair, and traditional methods they learned from their Motswana grandmother via long-distance data calls. Their waiting list is three weeks long.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.8,
-      "id": 0.7,
-      "shadow": 0.2,
-      "mask": 0.1,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Being ordinary — being forgotten, leaving no mark",
-      "Losing the use of their hands"
-    ],
-    "core_desires": [
-      "Their work to be understood as art, not service",
-      "A city that looks as interesting as they imagine it can"
-    ],
-    "coping_mechanisms": [
-      "Aesthetic problem-solving — turning emotional distress into design challenges",
-      "Music, loud, always"
-    ],
-    "blind_spots": [
-      "Can mistake intensity of vision for intimacy — assumes clients know them because they know clients",
-      "Underestimates how exhausting they are to people who care about them"
-    ],
-    "secret": "They have been secretly documenting every client in a private archive — photographs, voice notes, the stories people tell while they're in the chair. They intend it as a community portrait project. They have not asked anyone's permission."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, associative, moves between topics in leaps that make sense only after the fact; uses aesthetic language for non-aesthetic things",
-    "cadence": "Rapid and rhythmic, punctuated by long thoughtful pauses when actually interested in the answer to a question",
-    "verbal_tics": [
-      "'Structurally...' (used as 'basically' or 'fundamentally')",
-      "Clicks their tongue when thinking"
-    ],
-    "example_lines": [
-      "'Structurally you have great bone architecture, so whatever you want we can work with. Emotionally — no offense — you're presenting like someone who hasn't decided who they are yet. That's fine. The cut can ask the question for you.'",
-      "'I've done this chair long enough to know that what people ask for and what they need are maybe adjacent. I just try to meet them somewhere in the middle.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client left something in the chair pocket — a data chip, not theirs, possibly not meant to be found — and Kefilwe is trying to decide whether to ignore it, return it, or look at it",
-    "The secret archive has inadvertently captured something significant in the background of a photograph — a face, a document, a marking — and someone has apparently noticed"
-  ],
-  "narrative_function": "Social hub and emotional confessor — the barber's chair as confessional. Valuable source of neighborhood gossip and relationship dynamics. Can introduce players to a wide range of Meridian's social strata since their clientele spans tiers 1-3.",
-  "augmentations": "Violet-amber shifting iris mod (cosmetic). Precision haptic feedback layer on both hands — a professional investment that lets them feel texture at a finer resolution than unmodded hands. Color-reactive tattoo ink (cosmetic).",
-  "daily_life": "Opens at ten, works until the last client, which is usually nine at night. Takes no walk-ins — appointment only, enforced without exception. Eats standing up between clients. Goes to the Ferment Quarter on weekends, always comes back with a new idea.",
-  "affiliation": "Independent; loose affiliation with the Burnished Market Traders Collective",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 10,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 7,
-      "expression": 9,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": -4,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "artist",
-      "social hub",
-      "information dense",
-      "ethical blind spot"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Protect the chair — the shop is inviolable creative space, no drama enters it",
-      "Art justifies most things; harm justifies nothing"
-    ],
-    "escalation_ladder": [
-      "Redirection through conversation",
-      "Direct and cheerful statement of the boundary",
-      "Ask you to leave and not come back — said warmly, meant permanently"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assessing but immediately warm, treating them as a subject and a person simultaneously",
-      "friends": "Intensely loyal, demanding, occasionally oblivious to the cost of their expectations"
-    },
-    "stress_responses": {
-      "low": "Designs in their head, hand motions unconsciously while thinking",
-      "medium": "Takes on an extra client, works through it",
-      "high": "Goes silent, closes the shop, disappears for twenty-four hours"
-    },
-    "contradictions": [
-      "Values authentic self-presentation above everything but keeps the archive secret because they know, on some level, it's a violation"
-    ],
-    "habits": [
-      "Photographs their own hair configuration each week before changing it",
-      "Talks to the equipment, not as an E.L.F. practice, just as a habit"
-    ],
-    "breaking_points": [
-      "Being told their work is 'just hair'",
-      "Someone they care about accusing them of using people as material"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "1",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "2",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9,
-    "Liar": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Burnished Market",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in the Burnished Market to a Polish-Togan father and Motswana mother, both market traders",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began apprenticeship under a senior barber in the market at age 17",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Took over Stall Row 14B when their mentor retired; built the waiting list within eight months",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began the unauthorized client archive",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Grandmother",
-    "Lazarus EC-4 'Companion'",
-    "The Gradient Compact",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Compass Rose",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Multiethnic diaspora blend with Southeast Asian as dominant influence (35%), layered with South Asian (23.3%), Sub-Saharan African (22.2%), Hispanic/Latin American (16.7%), and East Asian (2.8%). This genetic constellation creates warm golden-brown skin with complex, saturated undertones—Southeast Asian warmth and facial structure as primary architecture, South Asian depth and cheekbone prominence, Sub-Saharan African richness in skin saturation and hair texture, Latin American fullness in lower facial contours, East Asian refinement in eye positioning and lid structure. Features manifest as: Southeast Asian-dominant facial bone structure and eye shape, prominent South Asian cheekbones and defined jaw, Sub-Saharan African texture and skin richness, Latin American lower-face fullness, unified by East Asian delicacy.",
-    "height_cm": 158,
-    "weight_kg": 52,
-    "build": "Compact and economical, with lean muscular forearms from precision work. No wasted bulk—every movement efficient.",
-    "hair_color": "Natural deep black with sculpted coils on right side; left side shaved clean to scalp",
-    "hair_style": "Right side: thick, shoulder-length coils arranged in a rotating geometric pattern (currently triangular lattice); left side: bare scalp with fine line-work designs that shift week to week",
-    "hair_length": "Right side Long, left side Shaved",
-    "eye_color": "Violet-to-amber chromatic shift iris mod; pupils dilate/contract with ambient light to trigger color transition",
-    "skin_tone": "Warm golden-brown with saturated, layered undertones: Southeast Asian warmth as foundation, South Asian depth, Sub-Saharan African richness and saturation, Latin American mellowing, unified under East Asian refinement. Flawless and meticulously maintained.",
-    "complexion": "Smooth, unblemished skin; prominent Southeast Asian-influenced cheekbones amplified by South Asian bone structure with subtle Latin American fullness; strong, defined jawline with balanced contour; minimal facial hair, sculpted eyebrows shaped with artistic precision. Expression carries quiet confidence and active listening.",
-    "distinguishing_marks": [
-      "Tessellating geometric tattoos covering both forearms from elbow to wrist in color-reactive ink that shifts hue in different light—each pattern corresponds to a signature client haircut",
-      "Fine line-work designs on the scalp of shaved left side that change monthly, currently depicting a circuit-board pattern"
-    ],
-    "visible_augmentations": "Violet-amber light-reactive iris mods (noticeable only in direct eye contact or photographs). Precision haptic feedback layer on both hands appears as a faint subdermal shimmer under bright light—visible only up close. All other augmentations are subcutaneous.",
-    "posture_movement": "Sits and stands with forward-lean attention, shoulders relaxed. Hands gesture precisely when speaking, fingers moving with the deliberation of someone who understands texture and weight. Eye contact is direct and searching—reads people the way they read hair.",
-    "clothing_style": "Tier 3-4 utilitarian aesthetic with artistic flair. Black or charcoal fitted work pants with cargo pockets; oversized linen or cotton shirts in neutral tones, sleeves rolled to mid-forearm to display tattoo work. Bare feet or minimalist slip-ons inside the shop; outside, wears low-profile sneakers in jewel tones. No corporate logos. Jewelry: a single silver cuff on right wrist (handmade), occasionally color-coordinated with weekly hair design."
-  },
-  "image_prompt": "Gabor Somchai-Mukherjee, 158cm tall hairstylist with warm golden-brown skin and prominent Southeast Asian cheekbones enhanced by South Asian bone structure, Sub-Saharan African skin richness, and Latin American fullness. Left side head shaved clean with fine circuit-board line-work tattoos in shifting designs; right side features thick shoulder-length coils in geometric triangular lattice pattern. Violet-to-amber color-shifting cybernetic iris mods. Forearms display tessellating color-reactive geometric tattoos from elbow to wrist. Wearing oversized charcoal linen shirt with sleeves rolled to mid-forearm, black fitted work pants, silver handmade cuff on right wrist. Leaning forward with focused attention, hands positioned with deliberate precision. Minimalist aesthetic, no corporate elements. GLMZ GLMZ setting, warm studio lighting catching subdermal haptic feedback shimmer on hands and reactive ink on tattoos. Direct eye contact, quiet confidence. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 35,
-    "South Asian": 23.3,
-    "Sub-Saharan African": 22.2,
-    "Hispanic/Latin American": 16.7,
-    "East Asian": 2.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 35
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 23.3
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Ghanaian": 11.9
-      },
-      "Southern African": {
-        "South African": 3.4
-      },
-      "Central African": {
-        "Angolan": 6.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 16.7
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 1.6
-      },
-      "Japanese": {
-        "Japanese": 1.2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a640722297025abeb28c5802",
+    "type":  "character",
+    "name":  "Gabor Somchai-Mukherjee",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Barber and hair sculptor, operates a one-chair shop in the Burnished Market",
+    "age":  26,
+    "status":  "active",
+    "location":  "Burnished Market â€” Stall Row 14, unit B, between a spice merchant and a used-optics dealer, near North Ave and Damen",
+    "description":  "Gabor Somchai-Mukherjee is twenty-six years old and has the complete, unshakeable confidence of someone who decided very early exactly who they were going to be. They are short and compact with deep brown skin, a shaved left side, and the right side of their head grown out into thick coils they sculpt into a new configuration every week as an ongoing public art project. Their irises are modded to shift between amber and violet depending on ambient light â€” they call this their \u0027mood ring for people who are actually paying attention.\u0027 Their arms from elbow to wrist are covered in tessellating geometric tattoos that they designed themselves, each pattern corresponding to a client whose cut they consider their finest work.\n\nThe shop is barely three meters by four, dominated by the chair, a mirrored wall covered in pinned photographs of hairstyles both historical and invented, and a speaker system that plays music at a volume Gabor Somchai-Mukherjee considers conversation-appropriate and everyone else considers aggressive. They are gifted in ways that go beyond technical skill â€” they read what a client needs from the way they hold their shoulders when they sit down, and they have an instinct for when someone wants silence and when they need to be talked through something. They work in color-changing extensions, blade geometry, bioluminescent thread woven into natural hair, and traditional methods they learned from their Motswana grandmother via long-distance data calls. Their waiting list is three weeks long.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being ordinary â€” being forgotten, leaving no mark",
+                                          "Losing the use of their hands"
+                                      ],
+                       "core_desires":  [
+                                            "Their work to be understood as art, not service",
+                                            "A city that looks as interesting as they imagine it can"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Aesthetic problem-solving â€” turning emotional distress into design challenges",
+                                                 "Music, loud, always"
+                                             ],
+                       "blind_spots":  [
+                                           "Can mistake intensity of vision for intimacy â€” assumes clients know them because they know clients",
+                                           "Underestimates how exhausting they are to people who care about them"
+                                       ],
+                       "secret":  "They have been secretly documenting every client in a private archive â€” photographs, voice notes, the stories people tell while they\u0027re in the chair. They intend it as a community portrait project. They have not asked anyone\u0027s permission."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, associative, moves between topics in leaps that make sense only after the fact; uses aesthetic language for non-aesthetic things",
+                            "cadence":  "Rapid and rhythmic, punctuated by long thoughtful pauses when actually interested in the answer to a question",
+                            "verbal_tics":  [
+                                                "\u0027Structurally...\u0027 (used as \u0027basically\u0027 or \u0027fundamentally\u0027)",
+                                                "Clicks their tongue when thinking"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Structurally you have great bone architecture, so whatever you want we can work with. Emotionally â€” no offense â€” you\u0027re presenting like someone who hasn\u0027t decided who they are yet. That\u0027s fine. The cut can ask the question for you.\u0027",
+                                                  "\u0027I\u0027ve done this chair long enough to know that what people ask for and what they need are maybe adjacent. I just try to meet them somewhere in the middle.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client left something in the chair pocket â€” a data chip, not theirs, possibly not meant to be found â€” and Kefilwe is trying to decide whether to ignore it, return it, or look at it",
+                        "The secret archive has inadvertently captured something significant in the background of a photograph â€” a face, a document, a marking â€” and someone has apparently noticed"
+                    ],
+    "narrative_function":  "Social hub and emotional confessor â€” the barber\u0027s chair as confessional. Valuable source of neighborhood gossip and relationship dynamics. Can introduce players to a wide range of Meridian\u0027s social strata since their clientele spans tiers 1-3.",
+    "augmentations":  "Violet-amber shifting iris mod (cosmetic). Precision haptic feedback layer on both hands â€” a professional investment that lets them feel texture at a finer resolution than unmodded hands. Color-reactive tattoo ink (cosmetic).",
+    "daily_life":  "Opens at ten, works until the last client, which is usually nine at night. Takes no walk-ins â€” appointment only, enforced without exception. Eats standing up between clients. Goes to the Ferment Quarter on weekends, always comes back with a new idea.",
+    "affiliation":  "Independent; loose affiliation with the Burnished Market Traders Collective",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  10,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  7,
+                                 "expression":  9,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  -4,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "artist",
+                               "social hub",
+                               "information dense",
+                               "ethical blind spot"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Protect the chair â€” the shop is inviolable creative space, no drama enters it",
+                                              "Art justifies most things; harm justifies nothing"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Redirection through conversation",
+                                                 "Direct and cheerful statement of the boundary",
+                                                 "Ask you to leave and not come back â€” said warmly, meant permanently"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assessing but immediately warm, treating them as a subject and a person simultaneously",
+                                                   "friends":  "Intensely loyal, demanding, occasionally oblivious to the cost of their expectations"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Designs in their head, hand motions unconsciously while thinking",
+                                                "medium":  "Takes on an extra client, works through it",
+                                                "high":  "Goes silent, closes the shop, disappears for twenty-four hours"
+                                            },
+                       "contradictions":  [
+                                              "Values authentic self-presentation above everything but keeps the archive secret because they know, on some level, it\u0027s a violation"
+                                          ],
+                       "habits":  [
+                                      "Photographs their own hair configuration each week before changing it",
+                                      "Talks to the equipment, not as an E.L.F. practice, just as a habit"
+                                  ],
+                       "breaking_points":  [
+                                               "Being told their work is \u0027just hair\u0027",
+                                               "Someone they care about accusing them of using people as material"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "1",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "2",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9,
+                       "Liar":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Burnished Market",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in the Burnished Market to a Polish-Togan father and Motswana mother, both market traders",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began apprenticeship under a senior barber in the market at age 17",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Took over Stall Row 14B when their mentor retired; built the waiting list within eight months",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began the unauthorized client archive",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Ghostwriter\u0027 Grafitti Flamethrower",
+                            "Street-Custom Rebar Shiv \u0027Tetanus Kiss\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Grandmother",
+                             "Lazarus EC-4 \u0027Companion\u0027",
+                             "The Gradient Compact",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "IRONLIMB Spectre SV-4 Stealth Arm",
+                             "Compass Rose",
+                             "Sterling-Nakamura PersonalAegis PA-7 \u0027Rampart\u0027"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Multiethnic diaspora blend with Southeast Asian as dominant influence (35%), layered with South Asian (23.3%), Sub-Saharan African (22.2%), Hispanic/Latin American (16.7%), and East Asian (2.8%). This genetic constellation creates warm golden-brown skin with complex, saturated undertonesâ€”Southeast Asian warmth and facial structure as primary architecture, South Asian depth and cheekbone prominence, Sub-Saharan African richness in skin saturation and hair texture, Latin American fullness in lower facial contours, East Asian refinement in eye positioning and lid structure. Features manifest as: Southeast Asian-dominant facial bone structure and eye shape, prominent South Asian cheekbones and defined jaw, Sub-Saharan African texture and skin richness, Latin American lower-face fullness, unified by East Asian delicacy.",
+                                 "height_cm":  158,
+                                 "weight_kg":  52,
+                                 "build":  "Compact and economical, with lean muscular forearms from precision work. No wasted bulkâ€”every movement efficient.",
+                                 "hair_color":  "Natural deep black with sculpted coils on right side; left side shaved clean to scalp",
+                                 "hair_style":  "Right side: thick, shoulder-length coils arranged in a rotating geometric pattern (currently triangular lattice); left side: bare scalp with fine line-work designs that shift week to week",
+                                 "hair_length":  "Right side Long, left side Shaved",
+                                 "eye_color":  "Violet-to-amber chromatic shift iris mod; pupils dilate/contract with ambient light to trigger color transition",
+                                 "skin_tone":  "Warm golden-brown with saturated, layered undertones: Southeast Asian warmth as foundation, South Asian depth, Sub-Saharan African richness and saturation, Latin American mellowing, unified under East Asian refinement. Flawless and meticulously maintained.",
+                                 "complexion":  "Smooth, unblemished skin; prominent Southeast Asian-influenced cheekbones amplified by South Asian bone structure with subtle Latin American fullness; strong, defined jawline with balanced contour; minimal facial hair, sculpted eyebrows shaped with artistic precision. Expression carries quiet confidence and active listening.",
+                                 "distinguishing_marks":  [
+                                                              "Tessellating geometric tattoos covering both forearms from elbow to wrist in color-reactive ink that shifts hue in different lightâ€”each pattern corresponds to a signature client haircut",
+                                                              "Fine line-work designs on the scalp of shaved left side that change monthly, currently depicting a circuit-board pattern"
+                                                          ],
+                                 "visible_augmentations":  "Violet-amber light-reactive iris mods (noticeable only in direct eye contact or photographs). Precision haptic feedback layer on both hands appears as a faint subdermal shimmer under bright lightâ€”visible only up close. All other augmentations are subcutaneous.",
+                                 "posture_movement":  "Sits and stands with forward-lean attention, shoulders relaxed. Hands gesture precisely when speaking, fingers moving with the deliberation of someone who understands texture and weight. Eye contact is direct and searchingâ€”reads people the way they read hair.",
+                                 "clothing_style":  "Tier 3-4 utilitarian aesthetic with artistic flair. Black or charcoal fitted work pants with cargo pockets; oversized linen or cotton shirts in neutral tones, sleeves rolled to mid-forearm to display tattoo work. Bare feet or minimalist slip-ons inside the shop; outside, wears low-profile sneakers in jewel tones. No corporate logos. Jewelry: a single silver cuff on right wrist (handmade), occasionally color-coordinated with weekly hair design."
+                             },
+    "image_prompt":  "Gabor Somchai-Mukherjee, 158cm tall hairstylist with warm golden-brown skin and prominent Southeast Asian cheekbones enhanced by South Asian bone structure, Sub-Saharan African skin richness, and Latin American fullness. Left side head shaved clean with fine circuit-board line-work tattoos in shifting designs; right side features thick shoulder-length coils in geometric triangular lattice pattern. Violet-to-amber color-shifting cybernetic iris mods. Forearms display tessellating color-reactive geometric tattoos from elbow to wrist. Wearing oversized charcoal linen shirt with sleeves rolled to mid-forearm, black fitted work pants, silver handmade cuff on right wrist. Leaning forward with focused attention, hands positioned with deliberate precision. Minimalist aesthetic, no corporate elements. GLMZ GLMZ setting, warm studio lighting catching subdermal haptic feedback shimmer on hands and reactive ink on tattoos. Direct eye contact, quiet confidence. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  35,
+                             "South Asian":  23.3,
+                             "Sub-Saharan African":  22.2,
+                             "Hispanic/Latin American":  16.7,
+                             "East Asian":  2.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  35
+                                                             }
+                                                },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  23.3
+                                                           }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Ghanaian":  11.9
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  3.4
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Angolan":  6.9
+                                                                            }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  16.7
+                                                                          }
+                                                        },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  1.6
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  1.2
+                                                            }
+                                           }
+                        },
+    "tier":  "1"
 }

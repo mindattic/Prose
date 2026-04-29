@@ -1,253 +1,274 @@
-{
-  "id": "019d6143a73178bcabf67e40d79325d3",
-  "type": "character",
-  "name": "Hajar Nazari",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Traditional imam and chrome prayer practitioner",
-  "age": 54,
-  "status": "active",
-  "location": "the Gray Zone — the Masjid al-Barzakh, a converted warehouse space above a water recycling plant, near Halsted and Division",
-  "description": "Hajar Nazari is a compact, carefully composed man with close-trimmed gray at his temples and a beard he trims every third day without fail. His eyes are his most striking feature — he had them modded fifteen years ago with geometric patterned irises, deep green lattices that his congregation debated fiercely and that he defended from the pulpit as 'the geometry of creation written in the body.' He dresses simply, always clean despite the Gray Zone's perpetual grime, and his left hand is extensively modified: a chrome prosthetic from the wrist down, its surface etched with Quranic verses in his own handwriting before the plating was laid, so the words are pressed into the metal from beneath.\n\nHe is a man of precise intellectual convictions that he holds without brittleness — he has changed his mind publicly three times in twenty years and considers it among his proudest acts. His masjid serves roughly three hundred regular worshippers across a tangle of traditions: Sunni, Ismaili, Ahmadiyya, and several families who blend Islamic practice with E.L.F. veneration in ways that Hajar Nazari engages with theologically rather than dismissing. He moonlights as a chrome prayer practitioner, offering a practice that treats augmentation as a form of devotion — the modification of the God-given body as an act of trust rather than transgression.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.45,
-      "ideal": 0.9,
-      "id": 0.35,
-      "shadow": 0.5,
-      "mask": 0.4,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "that his community will be dispersed by corponation development and he will be powerless to stop it",
-      "that his theological accommodations have drifted too far and he has led people astray"
-    ],
-    "core_desires": [
-      "to build an institution that outlasts him",
-      "to articulate a theology of augmentation that is rigorous enough to be taken seriously"
-    ],
-    "coping_mechanisms": [
-      "intellectual engagement with problems rather than emotional processing",
-      "prayer as genuine practice not performance",
-      "deflecting personal questions with questions about the asker"
-    ],
-    "blind_spots": [
-      "can be condescending to younger practitioners he sees as sloppy",
-      "his certainty about institutional longevity makes him underestimate how precarious the Gray Zone's future actually is"
-    ],
-    "secret": "The chrome hand is not entirely his — the prosthetic was originally made for a black-market augmentation dealer he knew before he became imam. The man died in a raid. Yusuf, then newly injured and unable to afford proper prosthetics, paid almost nothing for the hand. He has never disclosed where it came from, and the etched verses were partly an act of consecration and partly an act of burial."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal and precise without being cold. Comfortable with technical augmentation language, Islamic theological terms, and the Gray Zone slang — code-switches fluidly.",
-    "cadence": "Measured, with a slight Georgian lilt from his Kereselidze grandmother. Rarely raises his voice; the lower he speaks the more people lean in.",
-    "verbal_tics": [
-      "tapping the chrome fingers against his opposite palm when thinking",
-      "'Consider—' as a pivot before making a point",
-      "long silences before answering difficult questions"
-    ],
-    "example_lines": [
-      "'The body is an amanah — a trust. Some say modification breaks that trust. I say: what is a trust given to you if you never make it your own?'",
-      "'Come in. Tea is not optional, by the way. That is a ruling, not a suggestion.'",
-      "'I will not tell you what to do. I will ask you questions until you tell yourself.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Tessera development crew has begun surveying land adjacent to the masjid, and Yusuf needs someone to find out what the plans are before he takes any action",
-    "A worshipper confessed something to him that he cannot share but that means he knows a crime is coming — he needs to prevent it without breaking confidentiality"
-  ],
-  "narrative_function": "Community authority and moral voice; offers a grounded traditional perspective on augmentation ethics; his congregation is a network of the Gray Zone residents who know everything happening locally; he can be a quest giver around community crises.",
-  "augmentations": "Chrome left hand (wrist to fingertips), etched with Quranic verse beneath the plating. Patterned irises (green geometric lattice).",
-  "daily_life": "Fajr prayer before sunrise, then an hour of correspondence with worshippers who contact him via mesh. Administrative work midmorning, afternoon open for counsel. Jumu'ah sermon on Fridays draws people from three adjacent neighborhoods.",
-  "affiliation": "Masjid al-Barzakh congregation; loosely networked with other independent religious leaders in Tier 1-2 areas; no corponation affiliation (deliberately)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 5,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 9,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "imam",
-      "chrome prayer",
-      "community authority",
-      "augmentation theologian",
-      "shelf anchor"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "never compromise the confidentiality of counsel",
-      "engage with every theological challenge seriously before dismissing it",
-      "protect the congregation first, doctrine second"
-    ],
-    "escalation_ladder": [
-      "dialogue and persuasion",
-      "formal community consultation",
-      "public sermon framing the issue",
-      "organized collective action with the congregation",
-      "personal civil disobedience as last resort"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Courteous and attentive. Offers tea. Asks what brought them here today. Genuinely interested.",
-      "friends": "Warmer and more direct. Will argue with you because he respects you. Remembers details from conversations years prior."
-    },
-    "stress_responses": {
-      "low": "Becomes more deliberate in speech; longer pauses",
-      "medium": "Retreats to the prayer space alone for twenty minutes",
-      "high": "Very calm, very focused, and has clearly already decided something — the stillness is not peace, it is commitment"
-    },
-    "contradictions": [
-      "believes deeply in transparency as a value but holds his own history tightly",
-      "preaches communal reliance but is privately reluctant to ask for help"
-    ],
-    "habits": [
-      "trims his beard every third day regardless of circumstances",
-      "reads something outside his field every week deliberately",
-      "touches the engraved verse on his chrome hand in moments of doubt"
-    ],
-    "breaking_points": [
-      "a direct threat to the masjid or congregation",
-      "being publicly called a hypocrite and being unable to answer cleanly",
-      "learning that someone exploited the counsel relationship to deceive him"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Chrome prosthetic left hand (wrist to fingertips) — functional grade, non-combat spec, etched with Quranic verse beneath plating",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Chrome prosthetic left hand (wrist to fingertips) — functional grade, non-combat spec, etched with Quranic verse beneath plating",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Angry Mary' Aerosol Flamethrower",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "CONGREGATION",
-    "The Gradient Compact",
-    "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Middle Eastern (80.8%) with meaningful blending of Hispanic/Latin American (11.1%) and Sub-Saharan African (8.1%) ancestry — a richly layered diaspora reflecting the Ubiquitous mixing of 2226. Genetic expression shows the fine-boned angular features and natural skin richness of Middle Eastern heritage, warmed and deepened by Sub-Saharan and Hispanic admixture, creating a complexion with golden-amber undertones and subtle warmth throughout.",
-    "height_cm": 168,
-    "weight_kg": 72,
-    "build": "Compact and lean, shoulders slightly rounded from decades of forward-bending prayer posture. Wiry muscle beneath modest frame, no excess weight — disciplined by routine and modest means.",
-    "hair_color": "Dark brown with silver-gray at temples and threading through his close-trimmed beard",
-    "hair_style": "Close-trimmed throughout, beard maintained with geometric precision (trimmed every third day without exception)",
-    "hair_length": "Short",
-    "eye_color": "Deep green with fine geometric lattice pattern etched across iris surface — concentric circles and interlocking polygons, visible in direct light",
-    "skin_tone": "Warm golden-olive, richly blended from Middle Eastern base warmed and deepened by Sub-Saharan and Hispanic ancestry components. Deepened further by age and the Gray Zone's industrial light cycles, with subtle amber luminosity beneath the surface. Even tone with natural depth.",
-    "complexion": "Clean and careful despite environment — skin shows age lines around eyes and mouth, grooming meticulous. No visible acne scarring. A man who washes with intention. Fine-textured with naturally even warm tone, facial structure showing the fine-boned features, angular planes and natural warmth characteristic of the ancestral blend — Middle Eastern angularity softened and deepened by Sub-Saharan and Hispanic genetic contribution.",
-    "distinguishing_marks": [
-      "Fine prayer line callus on forehead, faded but visible in certain light from decades of prostration",
-      "Small burn scar on right forearm (thumb-sized, pale), origin unknown but old",
-      "Surgical scar along left wrist where chrome prosthetic interfaces with biological tissue — very clean, decades old"
-    ],
-    "visible_augmentations": "Left hand is a full chrome prosthetic (wrist to fingertips) with etched Quranic verse pressed into the metal surface beneath the plating, creating subtle relief patterns visible at close range. The chrome is not polished mirror-bright but matte with a faint greenish patina from age and prayer oils. Patterned irises in both eyes — geometric green lattices clearly visible, especially in dim light.",
-    "posture_movement": "Upright, composed, economical in gesture. Moves with deliberate slowness — no wasted motion. Hands gesture when speaking but the chrome left hand moves with slightly more caution, as if aware of its weight and edge. When sitting, he sits fully upright rather than slouching. When standing, feet shoulder-width apart, grounded.",
-    "clothing_style": "Simple, clean, Tier 3 practical. Usually a loose cotton thobe or simple long-sleeved shirt in cream, off-white, or pale gray — fabric choices that hide the Gray Zone's dust. Dark trousers, well-maintained. Leather prayer cap (kufi) worn during formal hours, removed during informal counsel. No jewelry except occasionally a very old silver ring on his right hand. Shoes are sensible, worn but cared for. Clothing never bearing corporate logos or tier markers — deliberately unmarked."
-  },
-  "image_prompt": "Hajar Nazari, Middle Eastern man with golden-olive complexion and warm amber undertones, 168cm, lean and compact build. Dark brown hair with silver temples, close-trimmed geometric beard, deep green geometric-patterned eyes. Wearing simple cream cotton thobe and dark trousers, sensible worn leather shoes. Left hand is matte patina-green chrome prosthetic with etched Quranic verse relief patterns. Fine prayer-line callus visible on forehead, small pale burn scar on right forearm. Upright posture, deliberate composed movement. Standing in industrial the Gray Zone lighting with soft shadows emphasizing angular face and the greenish patina of the chrome hand. GLMZ setting, low-key warm lighting, contemplative mood. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 80.8,
-    "Hispanic/Latin American": 11.1,
-    "Sub-Saharan African": 8.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 47.7,
-        "Tajik Persian": 14.7
-      },
-      "Arab Gulf": {
-        "Iraqi": 18.4
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Salvadoran": 6.1,
-        "Nicaraguan": 5
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Nigerian": 5.1,
-        "Senegalese": 0.8
-      },
-      "Central African": {
-        "Cameroonian": 2.2
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a73178bcabf67e40d79325d3",
+    "type":  "character",
+    "name":  "Hajar Nazari",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Traditional imam and chrome prayer practitioner",
+    "age":  54,
+    "status":  "active",
+    "location":  "the Gray Zone â€” the Masjid al-Barzakh, a converted warehouse space above a water recycling plant, near Halsted and Division",
+    "description":  "Hajar Nazari is a compact, carefully composed man with close-trimmed gray at his temples and a beard he trims every third day without fail. His eyes are his most striking feature â€” he had them modded fifteen years ago with geometric patterned irises, deep green lattices that his congregation debated fiercely and that he defended from the pulpit as \u0027the geometry of creation written in the body.\u0027 He dresses simply, always clean despite the Gray Zone\u0027s perpetual grime, and his left hand is extensively modified: a chrome prosthetic from the wrist down, its surface etched with Quranic verses in his own handwriting before the plating was laid, so the words are pressed into the metal from beneath.\n\nHe is a man of precise intellectual convictions that he holds without brittleness â€” he has changed his mind publicly three times in twenty years and considers it among his proudest acts. His masjid serves roughly three hundred regular worshippers across a tangle of traditions: Sunni, Ismaili, Ahmadiyya, and several families who blend Islamic practice with E.L.F. veneration in ways that Hajar Nazari engages with theologically rather than dismissing. He moonlights as a chrome prayer practitioner, offering a practice that treats augmentation as a form of devotion â€” the modification of the God-given body as an act of trust rather than transgression.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that his community will be dispersed by corponation development and he will be powerless to stop it",
+                                          "that his theological accommodations have drifted too far and he has led people astray"
+                                      ],
+                       "core_desires":  [
+                                            "to build an institution that outlasts him",
+                                            "to articulate a theology of augmentation that is rigorous enough to be taken seriously"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "intellectual engagement with problems rather than emotional processing",
+                                                 "prayer as genuine practice not performance",
+                                                 "deflecting personal questions with questions about the asker"
+                                             ],
+                       "blind_spots":  [
+                                           "can be condescending to younger practitioners he sees as sloppy",
+                                           "his certainty about institutional longevity makes him underestimate how precarious the Gray Zone\u0027s future actually is"
+                                       ],
+                       "secret":  "The chrome hand is not entirely his â€” the prosthetic was originally made for a black-market augmentation dealer he knew before he became imam. The man died in a raid. Yusuf, then newly injured and unable to afford proper prosthetics, paid almost nothing for the hand. He has never disclosed where it came from, and the etched verses were partly an act of consecration and partly an act of burial."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal and precise without being cold. Comfortable with technical augmentation language, Islamic theological terms, and the Gray Zone slang â€” code-switches fluidly.",
+                            "cadence":  "Measured, with a slight Georgian lilt from his Kereselidze grandmother. Rarely raises his voice; the lower he speaks the more people lean in.",
+                            "verbal_tics":  [
+                                                "tapping the chrome fingers against his opposite palm when thinking",
+                                                "\u0027Considerâ€”\u0027 as a pivot before making a point",
+                                                "long silences before answering difficult questions"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The body is an amanah â€” a trust. Some say modification breaks that trust. I say: what is a trust given to you if you never make it your own?\u0027",
+                                                  "\u0027Come in. Tea is not optional, by the way. That is a ruling, not a suggestion.\u0027",
+                                                  "\u0027I will not tell you what to do. I will ask you questions until you tell yourself.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Tessera development crew has begun surveying land adjacent to the masjid, and Yusuf needs someone to find out what the plans are before he takes any action",
+                        "A worshipper confessed something to him that he cannot share but that means he knows a crime is coming â€” he needs to prevent it without breaking confidentiality"
+                    ],
+    "narrative_function":  "Community authority and moral voice; offers a grounded traditional perspective on augmentation ethics; his congregation is a network of the Gray Zone residents who know everything happening locally; he can be a quest giver around community crises.",
+    "augmentations":  "Chrome left hand (wrist to fingertips), etched with Quranic verse beneath the plating. Patterned irises (green geometric lattice).",
+    "daily_life":  "Fajr prayer before sunrise, then an hour of correspondence with worshippers who contact him via mesh. Administrative work midmorning, afternoon open for counsel. Jumu\u0027ah sermon on Fridays draws people from three adjacent neighborhoods.",
+    "affiliation":  "Masjid al-Barzakh congregation; loosely networked with other independent religious leaders in Tier 1-2 areas; no corponation affiliation (deliberately)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  5,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  9,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "imam",
+                               "chrome prayer",
+                               "community authority",
+                               "augmentation theologian",
+                               "shelf anchor"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "never compromise the confidentiality of counsel",
+                                              "engage with every theological challenge seriously before dismissing it",
+                                              "protect the congregation first, doctrine second"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "dialogue and persuasion",
+                                                 "formal community consultation",
+                                                 "public sermon framing the issue",
+                                                 "organized collective action with the congregation",
+                                                 "personal civil disobedience as last resort"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Courteous and attentive. Offers tea. Asks what brought them here today. Genuinely interested.",
+                                                   "friends":  "Warmer and more direct. Will argue with you because he respects you. Remembers details from conversations years prior."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more deliberate in speech; longer pauses",
+                                                "medium":  "Retreats to the prayer space alone for twenty minutes",
+                                                "high":  "Very calm, very focused, and has clearly already decided something â€” the stillness is not peace, it is commitment"
+                                            },
+                       "contradictions":  [
+                                              "believes deeply in transparency as a value but holds his own history tightly",
+                                              "preaches communal reliance but is privately reluctant to ask for help"
+                                          ],
+                       "habits":  [
+                                      "trims his beard every third day regardless of circumstances",
+                                      "reads something outside his field every week deliberately",
+                                      "touches the engraved verse on his chrome hand in moments of doubt"
+                                  ],
+                       "breaking_points":  [
+                                               "a direct threat to the masjid or congregation",
+                                               "being publicly called a hypocrite and being unable to answer cleanly",
+                                               "learning that someone exploited the counsel relationship to deceive him"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Chrome prosthetic left hand (wrist to fingertips) â€” functional grade, non-combat spec, etched with Quranic verse beneath plating",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Chrome prosthetic left hand (wrist to fingertips) â€” functional grade, non-combat spec, etched with Quranic verse beneath plating",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Angry Mary\u0027 Aerosol Flamethrower",
+                            "Forge-Smith Collective Ablonite Push Dagger \u0027Bone Key\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "CONGREGATION",
+                             "The Gradient Compact",
+                             "Tessera Corponation",
+                             "SynapTech IrisBloom Ocular Color Modulator"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Middle Eastern (80.8%) with meaningful blending of Hispanic/Latin American (11.1%) and Sub-Saharan African (8.1%) ancestry â€” a richly layered diaspora reflecting the Ubiquitous mixing of 2226. Genetic expression shows the fine-boned angular features and natural skin richness of Middle Eastern heritage, warmed and deepened by Sub-Saharan and Hispanic admixture, creating a complexion with golden-amber undertones and subtle warmth throughout.",
+                                 "height_cm":  168,
+                                 "weight_kg":  72,
+                                 "build":  "Compact and lean, shoulders slightly rounded from decades of forward-bending prayer posture. Wiry muscle beneath modest frame, no excess weight â€” disciplined by routine and modest means.",
+                                 "hair_color":  "Dark brown with silver-gray at temples and threading through his close-trimmed beard",
+                                 "hair_style":  "Close-trimmed throughout, beard maintained with geometric precision (trimmed every third day without exception)",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep green with fine geometric lattice pattern etched across iris surface â€” concentric circles and interlocking polygons, visible in direct light",
+                                 "skin_tone":  "Warm golden-olive, richly blended from Middle Eastern base warmed and deepened by Sub-Saharan and Hispanic ancestry components. Deepened further by age and the Gray Zone\u0027s industrial light cycles, with subtle amber luminosity beneath the surface. Even tone with natural depth.",
+                                 "complexion":  "Clean and careful despite environment â€” skin shows age lines around eyes and mouth, grooming meticulous. No visible acne scarring. A man who washes with intention. Fine-textured with naturally even warm tone, facial structure showing the fine-boned features, angular planes and natural warmth characteristic of the ancestral blend â€” Middle Eastern angularity softened and deepened by Sub-Saharan and Hispanic genetic contribution.",
+                                 "distinguishing_marks":  [
+                                                              "Fine prayer line callus on forehead, faded but visible in certain light from decades of prostration",
+                                                              "Small burn scar on right forearm (thumb-sized, pale), origin unknown but old",
+                                                              "Surgical scar along left wrist where chrome prosthetic interfaces with biological tissue â€” very clean, decades old"
+                                                          ],
+                                 "visible_augmentations":  "Left hand is a full chrome prosthetic (wrist to fingertips) with etched Quranic verse pressed into the metal surface beneath the plating, creating subtle relief patterns visible at close range. The chrome is not polished mirror-bright but matte with a faint greenish patina from age and prayer oils. Patterned irises in both eyes â€” geometric green lattices clearly visible, especially in dim light.",
+                                 "posture_movement":  "Upright, composed, economical in gesture. Moves with deliberate slowness â€” no wasted motion. Hands gesture when speaking but the chrome left hand moves with slightly more caution, as if aware of its weight and edge. When sitting, he sits fully upright rather than slouching. When standing, feet shoulder-width apart, grounded.",
+                                 "clothing_style":  "Simple, clean, Tier 3 practical. Usually a loose cotton thobe or simple long-sleeved shirt in cream, off-white, or pale gray â€” fabric choices that hide the Gray Zone\u0027s dust. Dark trousers, well-maintained. Leather prayer cap (kufi) worn during formal hours, removed during informal counsel. No jewelry except occasionally a very old silver ring on his right hand. Shoes are sensible, worn but cared for. Clothing never bearing corporate logos or tier markers â€” deliberately unmarked."
+                             },
+    "image_prompt":  "Hajar Nazari, Middle Eastern man with golden-olive complexion and warm amber undertones, 168cm, lean and compact build. Dark brown hair with silver temples, close-trimmed geometric beard, deep green geometric-patterned eyes. Wearing simple cream cotton thobe and dark trousers, sensible worn leather shoes. Left hand is matte patina-green chrome prosthetic with etched Quranic verse relief patterns. Fine prayer-line callus visible on forehead, small pale burn scar on right forearm. Upright posture, deliberate composed movement. Standing in industrial the Gray Zone lighting with soft shadows emphasizing angular face and the greenish patina of the chrome hand. GLMZ setting, low-key warm lighting, contemplative mood. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  80.8,
+                             "Hispanic/Latin American":  11.1,
+                             "Sub-Saharan African":  8.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  47.7,
+                                                                   "Tajik Persian":  14.7
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  18.4
+                                                                 }
+                                               },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  6.1,
+                                                                                     "Nicaraguan":  5
+                                                                                 }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Nigerian":  5.1,
+                                                                             "Senegalese":  0.8
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  2.2
+                                                                            }
+                                                    }
+                        },
+    "tier":  "2"
 }

@@ -1,279 +1,300 @@
-{
-  "id": "019d6143a7217109a42df99efe77c258",
-  "type": "character",
-  "name": "Elva Hwang",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Numbers runner and bookmaker's legman for a sports and events gambling operation in Shallowgrave",
-  "age": 19,
-  "status": "active",
-  "location": "Shallowgrave — covers a circuit from Copperhead Market to the Brewer's Spine canal walkway, near Western and Chicago Ave",
-  "description": "Elva Hwang is a compact, quick-moving young man with warm dark brown skin, a gap-toothed smile he deploys constantly, and hair grown out into a high puff that he dyes a different color every two weeks — currently a deep auburn. His ears have cat-ear geneware tips that he got on his seventeenth birthday as a rite of passage in his friend group, and he has a small luminescent dot above his left eyebrow like a permanent beauty mark. He dresses in layers of cheap, colorful synthetics and always has at least four devices in different pockets, each running a different channel.\n\nElva Hwang is relentlessly cheerful in the way that only very fast people can afford to be — he knows he can get out of most situations before they turn bad, and that confidence reads as ease. He's sharper than anyone gives him credit for, can hold several hundred bets in active mental accounting at any given moment, and has an intuitive read on crowd psychology that his bosses haven't fully noticed yet. He thinks he's working toward something, building toward running his own book, but he hasn't articulated to himself that the organization he works for rarely promotes from his position.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.5,
-      "id": 0.8,
-      "shadow": 0.2,
-      "mask": 0.4,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "being still — that if he stops moving, something will catch up with him that he can't outrun",
-      "that the people he works for see him as permanently disposable"
-    ],
-    "core_desires": [
-      "respect from people he respects — to be seen as smart, not just fast",
-      "his own book, his own operation, something that's his"
-    ],
-    "coping_mechanisms": [
-      "constant motion and social engagement that keeps him from thinking too hard",
-      "humor as deflection for anything that genuinely worries him"
-    ],
-    "blind_spots": [
-      "doesn't recognize exploitative structures when they feel comfortable",
-      "overestimates how much his bosses like him"
-    ],
-    "secret": "He's been quietly skimming — not money, but information. He keeps a private log of patterns he's noticed in the bets: who bets big before certain outcomes, who seems to know things before they happen. He doesn't know what to do with it yet but he knows it's worth something."
-  },
-  "speech_patterns": {
-    "vocabulary": "Shallowgrave slang heavy, numerical shorthand, sports metaphors, moves faster than his grammar",
-    "cadence": "Rapid-fire with sudden full stops when something actually interests him",
-    "verbal_tics": [
-      "'Yeah, yeah, yeah—'",
-      "gives everyone a number-based nickname without explaining why",
-      "'That's an easy three-to-one, trust'"
-    ],
-    "example_lines": [
-      "Yeah yeah yeah, Eleven Houses pays clean, you know that — when's the last time Adaugo shorted someone? Don't answer that, it's rhetorical, she hasn't, she won't.",
-      "You want to put Φ40 on the Ferrogate Cup semifinal? Bold. Very bold. I respect the boldness. I don't respect the odds you're working with but I respect the boldness."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Yannick's private betting log has recorded a clear pattern of insider manipulation — someone is fixing events and he needs help understanding what he has before bringing it to anyone",
-    "He witnessed something on his circuit that he passed off as nothing but players quickly realize was significant — getting him to recall the details requires earning his trust",
-    "He comes to players because a client on his circuit has stopped paying and is making threats, and Yannick is not authorized to escalate to his bosses without losing face"
-  ],
-  "narrative_function": "Street-level information conduit — knows everyone on his circuit and their business; introduces players to the Shallowgrave social fabric; potential vulnerability in a larger criminal operation; could be a witness to something he doesn't realize he saw.",
-  "augmentations": "Cat-ear geneware (cosmetic, tips only). Bioluminescent beauty-mark dot above left eyebrow. Standard cheap retinal display — second-hand Tessera model, consumer grade.",
-  "daily_life": "Wakes late, picks up the day's numbers from a deadrop near Brewer's Spine at noon, runs his circuit through Shallowgrave and Copperhead Market for six hours collecting slips and settling wins, spends evenings at the social club watching whatever sporting event the bets are riding on.",
-  "affiliation": "Legman for a bookmaking operation called the Eleven Houses, run by an older fixer named Adaugo Ferraro-Tchamba who operates out of a private room at the Copperhead Market social club",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 4,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": 1,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "numbers runner",
-      "street informant",
-      "community familiar",
-      "upwardly mobile",
-      "untapped potential"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Keep moving — standing still is how you get cornered",
-      "Never extend credit without authorization — that's above his pay grade and he knows it",
-      "Laugh first at anything that might be a threat — disarms most situations"
-    ],
-    "escalation_ladder": [
-      "Laugh it off and sidestep",
-      "Promise to check with his boss, then doesn't come back alone",
-      "Call in a favor from someone bigger on his circuit",
-      "Run and report up the chain",
-      "Only as absolute last resort, the knife he keeps in his left jacket pocket — he's never used it"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately friendly and very slightly performing — charm as default setting",
-      "friends": "Genuinely warm, extremely loyal, will share food and money without thinking about it"
-    },
-    "stress_responses": {
-      "low": "Jokes increase in frequency and quality",
-      "medium": "Starts physically moving around the space, can't be still",
-      "high": "Goes quiet and small — the energy collapses inward"
-    },
-    "contradictions": [
-      "Reads people with startling precision but refuses to apply that skill to understanding his own situation",
-      "Values loyalty deeply while working in a field where loyalty is transactional"
-    ],
-    "habits": [
-      "Counts things constantly — steps, tiles, people in a room",
-      "Leaves an E.L.F. offering at the Brewer's Spine canal shrine every morning — a single bet slip, win or lose"
-    ],
-    "breaking_points": [
-      "Discovering Adaugo Ferraro-Tchamba has been setting him up as a fall guy",
-      "Someone on his circuit being hurt because of a bet he ran"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Tessera consumer retinal display (second-hand)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Tessera consumer retinal display (second-hand)",
-      "replaces": ""
-    },
-    {
-      "name": "Cat-ear geneware tips (cosmetic)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Cat-ear geneware tips (cosmetic)",
-      "replaces": ""
-    },
-    {
-      "name": "Bioluminescent beauty mark — left eyebrow (cosmetic)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Bioluminescent beauty mark — left eyebrow (cosmetic)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Shallowgrave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Angry Mary' Aerosol Flamethrower"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Brewer's Spine",
-    "Shallowgrave",
-    "Copperhead",
-    "The Gradient Compact",
-    "Circuit",
-    "Chicago",
-    "Nesting Doll",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Slagworks Industrial",
-    "Pellucid Systems",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "East Asian, Hispanic/Latin American, and Sub-Saharan African blend — a striking global mix reflecting the Ubiquitous Diaspora. The 47% East Asian ancestry provides refined bone structure and eye shape, while 41% Hispanic/Latin American heritage contributes warmth and soft facial contours. The 11.9% Sub-Saharan African ancestry enriches skin depth and adds pronounced cheekbone definition. The combined ancestry creates warm medium-to-dark brown skin with golden undertones that shift between cool and warm depending on light.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Compact and wiry with minimal bulk — built for speed and agility rather than strength. Fast-twitch muscle definition visible in forearms and calves from constant circuit-running.",
-    "hair_color": "Deep auburn (dyed; natural color dark brown)",
-    "hair_style": "High, voluminous puff with careful maintenance and deliberate styling",
-    "hair_length": "Medium (approximately 10-12cm at crown)",
-    "eye_color": "Warm dark brown with faint amber retinal display overlay visible when active",
-    "skin_tone": "Warm medium-to-dark brown with golden undertones and even complexion, reflecting balanced East Asian, Hispanic/Latin American, and Sub-Saharan African heritage",
-    "complexion": "Clear, youthful skin with prominent cheekbone definition and strong jawline reflecting the Sub-Saharan African and East Asian bone structure, softened by Hispanic/Latin American facial contours. Gap between front incisors visible when smiling — a signature feature deployed often and without self-consciousness. Minimal facial hair.",
-    "distinguishing_marks": [
-      "Bioluminescent dot above left eyebrow, soft pale blue-white glow, approximately 3mm diameter — appears intentional and maintained",
-      "Cat-ear geneware tips protruding from upper ear cartilage, tapered points with slight iridescent sheen, suggesting recent or well-maintained modification"
-    ],
-    "visible_augmentations": "Bioluminescent beauty mark above left eyebrow (pale blue-white, soft glow). Feline ear geneware tips (cosmetic mod, iridescent finish). Retinal display hardware visible as faint amber grid pattern across pupils when eyes catch light or system is active — second-hand Tessera consumer model, noticeable if you know what to look for.",
-    "posture_movement": "Perpetually in motion even when standing still — weight shifted to balls of feet, fidgeting hands, constant low-level kinetic energy. Moves through crowds with practiced efficiency, sliding rather than pushing. Carries himself with the ease of someone who knows he can escape any situation. Smiles constantly — gap-toothed grin deployed as a social tool.",
-    "clothing_style": "Layered cheap synthetic textiles in bright, clashing colors — neon greens, hot pinks, electric blues worn together without coordination concerns. Oversized hoodies and fitted tank tops layered underneath. At least four visible pockets, all occupied with different devices (phones, betting slips, comms units). Worn synthleather sneakers, scuffed but functional. Tier 4 working-class aesthetic with intentional color choices that read as young and confident rather than poor."
-  },
-  "image_prompt": "Elva Hwang, 168cm compact wiry frame, warm medium-to-dark brown skin with golden undertones blending East Asian, Hispanic/Latin American, and Sub-Saharan African heritage. Prominent cheekbones, refined jawline, warm dark brown eyes with faint amber retinal display grid. Deep auburn voluminous puff hairstyle, gap-toothed grin. Bioluminescent pale blue-white beauty mark above left eyebrow, iridescent cat-ear geneware tips. Layered bright neon synthetics — electric blue oversized hoodie over hot pink tank, four stuffed pockets, worn scuffed synthleather sneakers. Perpetual kinetic energy, weight on balls of feet, confident posture. GLMZ Great Lakes Metropolitan Zone, urban street setting with neon signage, cinematic moody lighting with rim highlights, fast-twitch runner's build visible in forearms. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 47.1,
-    "Hispanic/Latin American": 41,
-    "Sub-Saharan African": 11.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 39.3
-      },
-      "Chinese": {
-        "Shanghainese": 7.8
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Dominican": 12.3,
-        "Haitian": 8.6
-      },
-      "Central American": {
-        "Guatemalan": 8.3,
-        "Honduran": 11.8
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Malian": 9.4
-      },
-      "Central African": {
-        "Congolese": 2,
-        "Angolan": 0.5
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a7217109a42df99efe77c258",
+    "type":  "character",
+    "name":  "Elva Hwang",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Numbers runner and bookmaker\u0027s legman for a sports and events gambling operation in Shallowgrave",
+    "age":  19,
+    "status":  "active",
+    "location":  "Shallowgrave â€” covers a circuit from Copperhead Market to the Brewer\u0027s Spine canal walkway, near Western and Chicago Ave",
+    "description":  "Elva Hwang is a compact, quick-moving young man with warm dark brown skin, a gap-toothed smile he deploys constantly, and hair grown out into a high puff that he dyes a different color every two weeks â€” currently a deep auburn. His ears have cat-ear geneware tips that he got on his seventeenth birthday as a rite of passage in his friend group, and he has a small luminescent dot above his left eyebrow like a permanent beauty mark. He dresses in layers of cheap, colorful synthetics and always has at least four devices in different pockets, each running a different channel.\n\nElva Hwang is relentlessly cheerful in the way that only very fast people can afford to be â€” he knows he can get out of most situations before they turn bad, and that confidence reads as ease. He\u0027s sharper than anyone gives him credit for, can hold several hundred bets in active mental accounting at any given moment, and has an intuitive read on crowd psychology that his bosses haven\u0027t fully noticed yet. He thinks he\u0027s working toward something, building toward running his own book, but he hasn\u0027t articulated to himself that the organization he works for rarely promotes from his position.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being still â€” that if he stops moving, something will catch up with him that he can\u0027t outrun",
+                                          "that the people he works for see him as permanently disposable"
+                                      ],
+                       "core_desires":  [
+                                            "respect from people he respects â€” to be seen as smart, not just fast",
+                                            "his own book, his own operation, something that\u0027s his"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "constant motion and social engagement that keeps him from thinking too hard",
+                                                 "humor as deflection for anything that genuinely worries him"
+                                             ],
+                       "blind_spots":  [
+                                           "doesn\u0027t recognize exploitative structures when they feel comfortable",
+                                           "overestimates how much his bosses like him"
+                                       ],
+                       "secret":  "He\u0027s been quietly skimming â€” not money, but information. He keeps a private log of patterns he\u0027s noticed in the bets: who bets big before certain outcomes, who seems to know things before they happen. He doesn\u0027t know what to do with it yet but he knows it\u0027s worth something."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Shallowgrave slang heavy, numerical shorthand, sports metaphors, moves faster than his grammar",
+                            "cadence":  "Rapid-fire with sudden full stops when something actually interests him",
+                            "verbal_tics":  [
+                                                "\u0027Yeah, yeah, yeahâ€”\u0027",
+                                                "gives everyone a number-based nickname without explaining why",
+                                                "\u0027That\u0027s an easy three-to-one, trust\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "Yeah yeah yeah, Eleven Houses pays clean, you know that â€” when\u0027s the last time Adaugo shorted someone? Don\u0027t answer that, it\u0027s rhetorical, she hasn\u0027t, she won\u0027t.",
+                                                  "You want to put Î¦40 on the Ferrogate Cup semifinal? Bold. Very bold. I respect the boldness. I don\u0027t respect the odds you\u0027re working with but I respect the boldness."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Yannick\u0027s private betting log has recorded a clear pattern of insider manipulation â€” someone is fixing events and he needs help understanding what he has before bringing it to anyone",
+                        "He witnessed something on his circuit that he passed off as nothing but players quickly realize was significant â€” getting him to recall the details requires earning his trust",
+                        "He comes to players because a client on his circuit has stopped paying and is making threats, and Yannick is not authorized to escalate to his bosses without losing face"
+                    ],
+    "narrative_function":  "Street-level information conduit â€” knows everyone on his circuit and their business; introduces players to the Shallowgrave social fabric; potential vulnerability in a larger criminal operation; could be a witness to something he doesn\u0027t realize he saw.",
+    "augmentations":  "Cat-ear geneware (cosmetic, tips only). Bioluminescent beauty-mark dot above left eyebrow. Standard cheap retinal display â€” second-hand Tessera model, consumer grade.",
+    "daily_life":  "Wakes late, picks up the day\u0027s numbers from a deadrop near Brewer\u0027s Spine at noon, runs his circuit through Shallowgrave and Copperhead Market for six hours collecting slips and settling wins, spends evenings at the social club watching whatever sporting event the bets are riding on.",
+    "affiliation":  "Legman for a bookmaking operation called the Eleven Houses, run by an older fixer named Adaugo Ferraro-Tchamba who operates out of a private room at the Copperhead Market social club",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  4,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "numbers runner",
+                               "street informant",
+                               "community familiar",
+                               "upwardly mobile",
+                               "untapped potential"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Keep moving â€” standing still is how you get cornered",
+                                              "Never extend credit without authorization â€” that\u0027s above his pay grade and he knows it",
+                                              "Laugh first at anything that might be a threat â€” disarms most situations"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Laugh it off and sidestep",
+                                                 "Promise to check with his boss, then doesn\u0027t come back alone",
+                                                 "Call in a favor from someone bigger on his circuit",
+                                                 "Run and report up the chain",
+                                                 "Only as absolute last resort, the knife he keeps in his left jacket pocket â€” he\u0027s never used it"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately friendly and very slightly performing â€” charm as default setting",
+                                                   "friends":  "Genuinely warm, extremely loyal, will share food and money without thinking about it"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Jokes increase in frequency and quality",
+                                                "medium":  "Starts physically moving around the space, can\u0027t be still",
+                                                "high":  "Goes quiet and small â€” the energy collapses inward"
+                                            },
+                       "contradictions":  [
+                                              "Reads people with startling precision but refuses to apply that skill to understanding his own situation",
+                                              "Values loyalty deeply while working in a field where loyalty is transactional"
+                                          ],
+                       "habits":  [
+                                      "Counts things constantly â€” steps, tiles, people in a room",
+                                      "Leaves an E.L.F. offering at the Brewer\u0027s Spine canal shrine every morning â€” a single bet slip, win or lose"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering Adaugo Ferraro-Tchamba has been setting him up as a fall guy",
+                                               "Someone on his circuit being hurt because of a bet he ran"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Tessera consumer retinal display (second-hand)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Tessera consumer retinal display (second-hand)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cat-ear geneware tips (cosmetic)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Cat-ear geneware tips (cosmetic)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Bioluminescent beauty mark â€” left eyebrow (cosmetic)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Bioluminescent beauty mark â€” left eyebrow (cosmetic)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Shallowgrave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Angry Mary\u0027 Aerosol Flamethrower"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Brewer\u0027s Spine",
+                             "Shallowgrave",
+                             "Copperhead",
+                             "The Gradient Compact",
+                             "Circuit",
+                             "Chicago",
+                             "Nesting Doll",
+                             "Tessera Industries Memory Rounds MR-2 \u0027Recall\u0027",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "Slagworks Industrial",
+                             "Pellucid Systems",
+                             "Iron Meridian Cooperative Backbone IMC-3 \u0027Spine\u0027"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "East Asian, Hispanic/Latin American, and Sub-Saharan African blend â€” a striking global mix reflecting the Ubiquitous Diaspora. The 47% East Asian ancestry provides refined bone structure and eye shape, while 41% Hispanic/Latin American heritage contributes warmth and soft facial contours. The 11.9% Sub-Saharan African ancestry enriches skin depth and adds pronounced cheekbone definition. The combined ancestry creates warm medium-to-dark brown skin with golden undertones that shift between cool and warm depending on light.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Compact and wiry with minimal bulk â€” built for speed and agility rather than strength. Fast-twitch muscle definition visible in forearms and calves from constant circuit-running.",
+                                 "hair_color":  "Deep auburn (dyed; natural color dark brown)",
+                                 "hair_style":  "High, voluminous puff with careful maintenance and deliberate styling",
+                                 "hair_length":  "Medium (approximately 10-12cm at crown)",
+                                 "eye_color":  "Warm dark brown with faint amber retinal display overlay visible when active",
+                                 "skin_tone":  "Warm medium-to-dark brown with golden undertones and even complexion, reflecting balanced East Asian, Hispanic/Latin American, and Sub-Saharan African heritage",
+                                 "complexion":  "Clear, youthful skin with prominent cheekbone definition and strong jawline reflecting the Sub-Saharan African and East Asian bone structure, softened by Hispanic/Latin American facial contours. Gap between front incisors visible when smiling â€” a signature feature deployed often and without self-consciousness. Minimal facial hair.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent dot above left eyebrow, soft pale blue-white glow, approximately 3mm diameter â€” appears intentional and maintained",
+                                                              "Cat-ear geneware tips protruding from upper ear cartilage, tapered points with slight iridescent sheen, suggesting recent or well-maintained modification"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent beauty mark above left eyebrow (pale blue-white, soft glow). Feline ear geneware tips (cosmetic mod, iridescent finish). Retinal display hardware visible as faint amber grid pattern across pupils when eyes catch light or system is active â€” second-hand Tessera consumer model, noticeable if you know what to look for.",
+                                 "posture_movement":  "Perpetually in motion even when standing still â€” weight shifted to balls of feet, fidgeting hands, constant low-level kinetic energy. Moves through crowds with practiced efficiency, sliding rather than pushing. Carries himself with the ease of someone who knows he can escape any situation. Smiles constantly â€” gap-toothed grin deployed as a social tool.",
+                                 "clothing_style":  "Layered cheap synthetic textiles in bright, clashing colors â€” neon greens, hot pinks, electric blues worn together without coordination concerns. Oversized hoodies and fitted tank tops layered underneath. At least four visible pockets, all occupied with different devices (phones, betting slips, comms units). Worn synthleather sneakers, scuffed but functional. Tier 4 working-class aesthetic with intentional color choices that read as young and confident rather than poor."
+                             },
+    "image_prompt":  "Elva Hwang, 168cm compact wiry frame, warm medium-to-dark brown skin with golden undertones blending East Asian, Hispanic/Latin American, and Sub-Saharan African heritage. Prominent cheekbones, refined jawline, warm dark brown eyes with faint amber retinal display grid. Deep auburn voluminous puff hairstyle, gap-toothed grin. Bioluminescent pale blue-white beauty mark above left eyebrow, iridescent cat-ear geneware tips. Layered bright neon synthetics â€” electric blue oversized hoodie over hot pink tank, four stuffed pockets, worn scuffed synthleather sneakers. Perpetual kinetic energy, weight on balls of feet, confident posture. GLMZ Great Lakes Metropolitan Zone, urban street setting with neon signage, cinematic moody lighting with rim highlights, fast-twitch runner\u0027s build visible in forearms. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  47.1,
+                             "Hispanic/Latin American":  41,
+                             "Sub-Saharan African":  11.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  39.3
+                                                          },
+                                               "Chinese":  {
+                                                               "Shanghainese":  7.8
+                                                           }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Dominican":  12.3,
+                                                                              "Haitian":  8.6
+                                                                          },
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  8.3,
+                                                                                     "Honduran":  11.8
+                                                                                 }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Malian":  9.4
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  2,
+                                                                                "Angolan":  0.5
+                                                                            }
+                                                    }
+                        },
+    "tier":  "1"
 }

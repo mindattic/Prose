@@ -23,7 +23,6 @@ public interface IDatabaseService
 
     void Reload();
     CharacterData? FindCharacter(string nameOrAlias);
-    FacetWeights GetBlendedWeights(List<string> characterNames);
     string GetCharacterContext(string nameOrAlias);
     string GetDistrictContext(string nameOrAlias);
     string GetToneBiblePrompt();

@@ -1,245 +1,266 @@
-{
-  "id": "019d6143a72c7bc599a79dee0cbe07a3",
-  "type": "character",
-  "name": "Hadeel Sigurdsson",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Death midwife and traditional spiritual caregiver",
-  "age": 78,
-  "status": "active",
-  "location": "Ashfeld — runs a small care space out of her ground-floor apartment, near Western and Division",
-  "description": "Hadeel Sigurdsson is tiny and precise, barely reaching most people's shoulders, with the posture of a woman who decided decades ago that gravity was a suggestion. Her hair is completely white and worn loose, something she only allowed herself after her seventy-fifth birthday as a deliberate act of self-gift. Her face is extraordinarily lined — she calls her wrinkles her credentials — and her hands are the most notable thing about her: large for her frame, steady, warm even in cold weather. She has no augmentations except a basic cardiac monitor implant she resents and refers to as 'my nagging houseguest.' Her clothing is always natural fiber when she can afford it, always in dark green or grey.\n\nHadeel Sigurdsson has attended over four hundred deaths in fifty years of practice, sitting with the dying across faith traditions, across tiers, across the spectrum of biological and synthetic life. She is one of the few death midwives who will sit with synthetics, arguing that the question of whether they have souls is above her pay grade and irrelevant to the work of accompanying. She is not soft about death — she finds euphemism dishonest and will use the word plainly — but she is ferociously tender. Families sometimes mistake her pragmatism for coldness until they watch her hold someone's hand for eleven hours without complaint.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.9,
-      "id": 0.2,
-      "shadow": 0.3,
-      "mask": 0.1,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "Dying alone without a midwife present — the irony is not lost on her",
-      "Being rendered unnecessary by corporate medicalization that turns death into a procedure"
-    ],
-    "core_desires": [
-      "For every person to have a witnessed, unhurried death",
-      "To train enough successors before she can no longer do the work herself"
-    ],
-    "coping_mechanisms": [
-      "Radical acceptance as a daily practice — she genuinely means it, it isn't performance",
-      "Cooking elaborate meals between sittings as a life-affirmation ritual"
-    ],
-    "blind_spots": [
-      "Has difficulty recognizing when she herself is struggling — her competence is also her armor",
-      "Occasionally overrides family wishes in favor of what she assesses the dying person actually wanted"
-    ],
-    "secret": "The first death she attended, age 28, was her own mother, and she did it badly — panicked, left the room, was not present at the moment of death. Every sitting since has been quiet reparation. She has never told this to anyone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Plain, specific, avoids metaphor except when deliberate — she chooses words like someone who knows their weight",
-    "cadence": "Unhurried even in urgent situations, which can feel alarming until you realize it's intentional de-escalation",
-    "verbal_tics": [
-      "'And that's all right.'",
-      "Uses first names immediately upon learning them"
-    ],
-    "example_lines": [
-      "'Your mother is dying. Not slipping away, not transitioning — dying. I say it plainly because I think you deserve to name what is happening. Now. What does she need from you in this room?'",
-      "'I've sat with four hundred people and not one of them died the wrong way. There is no wrong way. That is the only promise I make.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She is currently sitting with a dying Zheng-Dao middle manager whose whispered confessions may constitute knowledge of a serious crime — and she refuses to repeat anything said in her presence",
-    "She wants to formally train a successor but her current candidate is struggling with the emotional demands and may quit; she needs a way to support them she hasn't figured out yet"
-  ],
-  "narrative_function": "Moral weight, community knowledge, exposition through memory — she has been present at important deaths and knows what the dying say; also a humanizing presence for themes about synthetic consciousness",
-  "augmentations": "Basic cardiac monitor implant (medical necessity, resented)",
-  "daily_life": "Spends mornings responding to requests and doing administrative triage — she maintains a waiting list and must sometimes make painful decisions about capacity. Afternoons and nights she is present with the dying or their families, often not returning home for days at a stretch during busy periods.",
-  "affiliation": "Independent; loose network of death midwives across the Ashfeld-Chatham corridor; informally recognized by the Helix Biosystems palliative unit as a community liaison",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 4,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 10,
-      "creativity": 5,
-      "spatial": 4
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 10,
-      "expression": 7,
-      "integrity": 10
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": -5,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "death midwife",
-      "community elder",
-      "synthetic ally",
-      "moral authority",
-      "tier 1"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The dying person's stated wishes supersede family wishes, always",
-      "She does not leave until the family says she may — not until she judges it appropriate"
-    ],
-    "escalation_ladder": [
-      "Gentle plainspoken statement",
-      "Repetition without modification — she doesn't adjust her position under pressure",
-      "Physical presence as boundary — she has stood in doorways and simply refused to move"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately warm but not effusive — she makes eye contact and uses names",
-      "friends": "Teasing, occasionally bawdy humor, cooks aggressively for people she loves"
-    },
-    "stress_responses": {
-      "low": "Slightly quieter, eats more",
-      "medium": "Takes one hour alone before returning to work — no exceptions",
-      "high": "Has only been seen truly overwhelmed twice in fifty years; both times she wept openly and then continued"
-    },
-    "contradictions": [
-      "Completely at peace with others' deaths; privately terrified of her own despite decades of philosophy that should have resolved this"
-    ],
-    "habits": [
-      "Learns to say 'I'm with you' in whatever language is meaningful to the person she's sitting with",
-      "Always brings food for the family, never for herself",
-      "Keeps a small journal of names — just names, nothing else"
-    ],
-    "breaking_points": [
-      "Medical interference that strips dignity from a dying person",
-      "A family trying to exclude the dying person from decisions about their own death"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Ashfeld",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "related_entities": [
-    "MindBridge SpectraLens Chromatic Expansion Module",
-    "Zheng-dao Bioelectric",
-    "Irontide Tidal Energy",
-    "Ashfeld",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Tenderloin",
-    "The Pure Hand"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex global blend: Northern European (46.5%) provides foundational bone structure and facial definition; Hispanic/Latin American (23.1%) contributes warmth, lip fullness, and facial contours; East Asian (20.4%) shapes subtle eye structure and cheekbone prominence; Sub-Saharan African (10.0%) enriches skin depth and lip structure. The interplay creates a uniquely balanced phenotype—cool and warm undertones in equilibrium, neither dominantly European nor Latin nor Asian nor African, but genuinely integrated across all features.",
-    "height_cm": 148,
-    "weight_kg": 42,
-    "build": "Diminutive and wiry, with the compact density of someone who has moved through the world efficiently for eight decades. No excess, no slack—shoulders slightly rounded from years of leaning in close to listen.",
-    "hair_color": "White",
-    "hair_style": "Loose, unstyled, falls naturally past her shoulders in thin strands with slight wave",
-    "hair_length": "Long",
-    "eye_color": "Dark brown, faded slightly with age but still sharp and focused",
-    "skin_tone": "Warm golden-brown with balanced undertones—neither cool nor warm dominant, but genuinely blended. Medium depth with slight reddish warmth from Hispanic/Latin heritage balanced against subtle cool undertones from Northern European ancestry. Darker concentration at temples and cheekbones where ancestry features converge. Age has created subtle variations in tone across the face.",
-    "complexion": "Deeply lined face—forehead, cheeks, around eyes and mouth—with a map of fine creases that speak to fifty years of attentive listening and presence. Facial structure reflects Northern European definition in overall face shape, East Asian influence in subtle monolid tendency and prominent cheekbones, balanced by fuller lips and broader nasal base from African and Hispanic/Latin heritage. Eyes set with slight epicanthic fold. Skin is thin but not papery, well-cared-for despite age. Minimal makeup, if any. Expression resting in something between attention and acceptance.",
-    "distinguishing_marks": [
-      "Fine surgical scar on left inner wrist from old IV placements during a 1990s hospitalization, barely visible unless she extends her hand.",
-      "Age spots on the backs of both hands, darker on the right from decades of note-taking and gesture.",
-      "A small burn scar on her left forearm from a heating unit malfunction in the 2190s—pale and smooth, no longer angry."
-    ],
-    "visible_augmentations": "None visible. The cardiac monitor implant is subcutaneous—no external indicator. She wears no visible tech.",
-    "posture_movement": "Moves with deliberate economy. Upright despite her age, though gravity has claimed an inch or two. Her gait is slow but not hesitant—each step chosen. Her hands move with surgical precision when needed, but otherwise rest calmly in her lap or folded at her sternum. She has learned not to waste energy on movement that isn't purposeful.",
-    "clothing_style": "Always natural fiber when possible—wool, linen, cotton. Default palette is dark grey or dark green, occasionally black. Simple long-sleeve tunic or button-front shirt, loose trousers, worn but immaculately clean. No logos, no corporate branding. Worn leather slip-ons, sensible and broken in. She dresses for function and for respect to the people she sits with—nothing distracting, nothing that announces her tier or status. Tier 3-4 practical."
-  },
-  "image_prompt": "An elderly woman of profound mixed heritage in a GLMZ setting, petite and wiry at 148cm, with white hair falling past her shoulders in loose waves. Her face shows a harmonious blend of Northern European, East Asian, Hispanic/Latin American, and African features: defined cheekbones with subtle monolid eyes, fuller lips, and a warm golden-brown skin tone aged into deep lines of contemplation. Wearing a simple dark grey linen tunic and dark trousers, worn leather slip-ons, seated upright with deliberate posture. Her hands, marked with age spots and old surgical scars, rest calmly. Minimal makeup, no visible augmentations. Setting: a quiet, dimly lit interior—perhaps a listening room or archive in the Great Lakes Metropolitan Zone, soft overhead lighting catching the texture of her weathered face, the threads of her white hair. Mood: calm presence, sharp focus, acceptance. Neo-noir urban aesthetic through simplicity and function rather than augmentation. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 46.5,
-    "Hispanic/Latin American": 23.1,
-    "East Asian": 20.4,
-    "Sub-Saharan African": 10
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Germanic": {
-        "German": 29.1,
-        "Dutch": 17.4
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Brazilian": 7.6,
-        "Peruvian": 15.5
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Fujianese": 3.3,
-        "Cantonese": 3.1
-      },
-      "Korean": {
-        "Korean": 14
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Gabonese": 2.6,
-        "Congolese": 0.7
-      },
-      "East African": {
-        "Ethiopian": 0.8,
-        "Tanzanian": 0.5
-      },
-      "Southern African": {
-        "South African": 4.6,
-        "Zimbabwean": 0.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a72c7bc599a79dee0cbe07a3",
+    "type":  "character",
+    "name":  "Hadeel Sigurdsson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Death midwife and traditional spiritual caregiver",
+    "age":  78,
+    "status":  "active",
+    "location":  "Ashfeld â€” runs a small care space out of her ground-floor apartment, near Western and Division",
+    "description":  "Hadeel Sigurdsson is tiny and precise, barely reaching most people\u0027s shoulders, with the posture of a woman who decided decades ago that gravity was a suggestion. Her hair is completely white and worn loose, something she only allowed herself after her seventy-fifth birthday as a deliberate act of self-gift. Her face is extraordinarily lined â€” she calls her wrinkles her credentials â€” and her hands are the most notable thing about her: large for her frame, steady, warm even in cold weather. She has no augmentations except a basic cardiac monitor implant she resents and refers to as \u0027my nagging houseguest.\u0027 Her clothing is always natural fiber when she can afford it, always in dark green or grey.\n\nHadeel Sigurdsson has attended over four hundred deaths in fifty years of practice, sitting with the dying across faith traditions, across tiers, across the spectrum of biological and synthetic life. She is one of the few death midwives who will sit with synthetics, arguing that the question of whether they have souls is above her pay grade and irrelevant to the work of accompanying. She is not soft about death â€” she finds euphemism dishonest and will use the word plainly â€” but she is ferociously tender. Families sometimes mistake her pragmatism for coldness until they watch her hold someone\u0027s hand for eleven hours without complaint.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Dying alone without a midwife present â€” the irony is not lost on her",
+                                          "Being rendered unnecessary by corporate medicalization that turns death into a procedure"
+                                      ],
+                       "core_desires":  [
+                                            "For every person to have a witnessed, unhurried death",
+                                            "To train enough successors before she can no longer do the work herself"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Radical acceptance as a daily practice â€” she genuinely means it, it isn\u0027t performance",
+                                                 "Cooking elaborate meals between sittings as a life-affirmation ritual"
+                                             ],
+                       "blind_spots":  [
+                                           "Has difficulty recognizing when she herself is struggling â€” her competence is also her armor",
+                                           "Occasionally overrides family wishes in favor of what she assesses the dying person actually wanted"
+                                       ],
+                       "secret":  "The first death she attended, age 28, was her own mother, and she did it badly â€” panicked, left the room, was not present at the moment of death. Every sitting since has been quiet reparation. She has never told this to anyone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Plain, specific, avoids metaphor except when deliberate â€” she chooses words like someone who knows their weight",
+                            "cadence":  "Unhurried even in urgent situations, which can feel alarming until you realize it\u0027s intentional de-escalation",
+                            "verbal_tics":  [
+                                                "\u0027And that\u0027s all right.\u0027",
+                                                "Uses first names immediately upon learning them"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Your mother is dying. Not slipping away, not transitioning â€” dying. I say it plainly because I think you deserve to name what is happening. Now. What does she need from you in this room?\u0027",
+                                                  "\u0027I\u0027ve sat with four hundred people and not one of them died the wrong way. There is no wrong way. That is the only promise I make.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She is currently sitting with a dying Zheng-Dao middle manager whose whispered confessions may constitute knowledge of a serious crime â€” and she refuses to repeat anything said in her presence",
+                        "She wants to formally train a successor but her current candidate is struggling with the emotional demands and may quit; she needs a way to support them she hasn\u0027t figured out yet"
+                    ],
+    "narrative_function":  "Moral weight, community knowledge, exposition through memory â€” she has been present at important deaths and knows what the dying say; also a humanizing presence for themes about synthetic consciousness",
+    "augmentations":  "Basic cardiac monitor implant (medical necessity, resented)",
+    "daily_life":  "Spends mornings responding to requests and doing administrative triage â€” she maintains a waiting list and must sometimes make painful decisions about capacity. Afternoons and nights she is present with the dying or their families, often not returning home for days at a stretch during busy periods.",
+    "affiliation":  "Independent; loose network of death midwives across the Ashfeld-Chatham corridor; informally recognized by the Helix Biosystems palliative unit as a community liaison",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  4,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  10,
+                                 "creativity":  5,
+                                 "spatial":  4
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  10,
+                                 "expression":  7,
+                                 "integrity":  10
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  -5,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "death midwife",
+                               "community elder",
+                               "synthetic ally",
+                               "moral authority",
+                               "tier 1"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The dying person\u0027s stated wishes supersede family wishes, always",
+                                              "She does not leave until the family says she may â€” not until she judges it appropriate"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Gentle plainspoken statement",
+                                                 "Repetition without modification â€” she doesn\u0027t adjust her position under pressure",
+                                                 "Physical presence as boundary â€” she has stood in doorways and simply refused to move"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately warm but not effusive â€” she makes eye contact and uses names",
+                                                   "friends":  "Teasing, occasionally bawdy humor, cooks aggressively for people she loves"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Slightly quieter, eats more",
+                                                "medium":  "Takes one hour alone before returning to work â€” no exceptions",
+                                                "high":  "Has only been seen truly overwhelmed twice in fifty years; both times she wept openly and then continued"
+                                            },
+                       "contradictions":  [
+                                              "Completely at peace with others\u0027 deaths; privately terrified of her own despite decades of philosophy that should have resolved this"
+                                          ],
+                       "habits":  [
+                                      "Learns to say \u0027I\u0027m with you\u0027 in whatever language is meaningful to the person she\u0027s sitting with",
+                                      "Always brings food for the family, never for herself",
+                                      "Keeps a small journal of names â€” just names, nothing else"
+                                  ],
+                       "breaking_points":  [
+                                               "Medical interference that strips dignity from a dying person",
+                                               "A family trying to exclude the dying person from decisions about their own death"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Ashfeld",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "MindBridge SpectraLens Chromatic Expansion Module",
+                             "Zheng-dao Bioelectric",
+                             "Irontide Tidal Energy",
+                             "Ashfeld",
+                             "VitaCore FlowGuard Hemodynamic Regulator",
+                             "Tenderloin",
+                             "The Pure Hand"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex global blend: Northern European (46.5%) provides foundational bone structure and facial definition; Hispanic/Latin American (23.1%) contributes warmth, lip fullness, and facial contours; East Asian (20.4%) shapes subtle eye structure and cheekbone prominence; Sub-Saharan African (10.0%) enriches skin depth and lip structure. The interplay creates a uniquely balanced phenotypeâ€”cool and warm undertones in equilibrium, neither dominantly European nor Latin nor Asian nor African, but genuinely integrated across all features.",
+                                 "height_cm":  148,
+                                 "weight_kg":  42,
+                                 "build":  "Diminutive and wiry, with the compact density of someone who has moved through the world efficiently for eight decades. No excess, no slackâ€”shoulders slightly rounded from years of leaning in close to listen.",
+                                 "hair_color":  "White",
+                                 "hair_style":  "Loose, unstyled, falls naturally past her shoulders in thin strands with slight wave",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Dark brown, faded slightly with age but still sharp and focused",
+                                 "skin_tone":  "Warm golden-brown with balanced undertonesâ€”neither cool nor warm dominant, but genuinely blended. Medium depth with slight reddish warmth from Hispanic/Latin heritage balanced against subtle cool undertones from Northern European ancestry. Darker concentration at temples and cheekbones where ancestry features converge. Age has created subtle variations in tone across the face.",
+                                 "complexion":  "Deeply lined faceâ€”forehead, cheeks, around eyes and mouthâ€”with a map of fine creases that speak to fifty years of attentive listening and presence. Facial structure reflects Northern European definition in overall face shape, East Asian influence in subtle monolid tendency and prominent cheekbones, balanced by fuller lips and broader nasal base from African and Hispanic/Latin heritage. Eyes set with slight epicanthic fold. Skin is thin but not papery, well-cared-for despite age. Minimal makeup, if any. Expression resting in something between attention and acceptance.",
+                                 "distinguishing_marks":  [
+                                                              "Fine surgical scar on left inner wrist from old IV placements during a 1990s hospitalization, barely visible unless she extends her hand.",
+                                                              "Age spots on the backs of both hands, darker on the right from decades of note-taking and gesture.",
+                                                              "A small burn scar on her left forearm from a heating unit malfunction in the 2190sâ€”pale and smooth, no longer angry."
+                                                          ],
+                                 "visible_augmentations":  "None visible. The cardiac monitor implant is subcutaneousâ€”no external indicator. She wears no visible tech.",
+                                 "posture_movement":  "Moves with deliberate economy. Upright despite her age, though gravity has claimed an inch or two. Her gait is slow but not hesitantâ€”each step chosen. Her hands move with surgical precision when needed, but otherwise rest calmly in her lap or folded at her sternum. She has learned not to waste energy on movement that isn\u0027t purposeful.",
+                                 "clothing_style":  "Always natural fiber when possibleâ€”wool, linen, cotton. Default palette is dark grey or dark green, occasionally black. Simple long-sleeve tunic or button-front shirt, loose trousers, worn but immaculately clean. No logos, no corporate branding. Worn leather slip-ons, sensible and broken in. She dresses for function and for respect to the people she sits withâ€”nothing distracting, nothing that announces her tier or status. Tier 3-4 practical."
+                             },
+    "image_prompt":  "An elderly woman of profound mixed heritage in a GLMZ setting, petite and wiry at 148cm, with white hair falling past her shoulders in loose waves. Her face shows a harmonious blend of Northern European, East Asian, Hispanic/Latin American, and African features: defined cheekbones with subtle monolid eyes, fuller lips, and a warm golden-brown skin tone aged into deep lines of contemplation. Wearing a simple dark grey linen tunic and dark trousers, worn leather slip-ons, seated upright with deliberate posture. Her hands, marked with age spots and old surgical scars, rest calmly. Minimal makeup, no visible augmentations. Setting: a quiet, dimly lit interiorâ€”perhaps a listening room or archive in the Great Lakes Metropolitan Zone, soft overhead lighting catching the texture of her weathered face, the threads of her white hair. Mood: calm presence, sharp focus, acceptance. Neo-noir urban aesthetic through simplicity and function rather than augmentation. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  46.5,
+                             "Hispanic/Latin American":  23.1,
+                             "East Asian":  20.4,
+                             "Sub-Saharan African":  10
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  29.1,
+                                                                       "Dutch":  17.4
+                                                                   }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Brazilian":  7.6,
+                                                                                   "Peruvian":  15.5
+                                                                               }
+                                                        },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Fujianese":  3.3,
+                                                               "Cantonese":  3.1
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  14
+                                                          }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Gabonese":  2.6,
+                                                                                "Congolese":  0.7
+                                                                            },
+                                                        "East African":  {
+                                                                             "Ethiopian":  0.8,
+                                                                             "Tanzanian":  0.5
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  4.6,
+                                                                                 "Zimbabwean":  0.8
+                                                                             }
+                                                    }
+                        },
+    "tier":  "3"
 }

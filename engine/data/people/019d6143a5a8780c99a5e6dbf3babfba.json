@@ -1,351 +1,364 @@
-{
-  "id": "019d6143a5a8780c99a5e6dbf3babfba",
-  "type": "character",
-  "name": "Bart Montalvo",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Electronic and physical observation expert — surveillance specialist",
-  "age": 40,
-  "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Western and Chicago Ave",
-  "description": "Bart Montalvo is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 40, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Bart Montalvo plans to keep it that way. He works as a surveillance specialist out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Bart Montalvo describe him as a precision instrument — point him at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.38,
-      "ideal": 0.43,
-      "id": 0.67,
-      "shadow": 0.85,
-      "mask": 0.24,
-      "ghost": 0.79
-    },
-    "core_fears": [
-      "The quiet — silence means something is about to go very wrong",
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "Betrayal by someone they trust — the only currency that matters"
-    ],
-    "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "Control — over their body, their schedule, their future",
-      "A crew worth trusting — people who stay when the shooting starts"
-    ],
-    "coping_mechanisms": [
-      "Exercises compulsively — the body must be ready, always",
-      "Humor — deflects everything serious with jokes until the joke becomes the personality",
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
-    ],
-    "blind_spots": [
-      "Fails to notice when their own behavior mirrors the people they despise",
-      "Assumes the worst in corporate people, missing the rare ones who could be allies",
-      "Cannot see that their independence is actually isolation wearing a better outfit"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
-    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
-    "verbal_tics": [
-      "Whispers when angry — the quieter the voice, the worse the situation",
-      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries"
-    ],
-    "example_lines": [
-      "\"I've been watching you for three days. You should close your curtains.\"",
-      "\"Information is the only commodity that appreciates with age.\"",
-      "\"Everyone thinks they're careful. Nobody is careful enough.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Alper Holmberg-Dembele's reputation — and a price for silence",
-    "Alper Holmberg-Dembele discovers a job they completed last year was a setup for something much larger and much worse",
-    "Alper Holmberg-Dembele intercepts intelligence about a threat to their district and must decide between profit and protection"
-  ],
-  "narrative_function": "As a surveillance specialist, Alper Holmberg-Dembele embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Subdermal weapon mount — pop-out blade in each forearm. Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
-  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Unaffiliated — too volatile for permanent crews",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 9
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 6
-      },
-      "endurance": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 9
-      },
-      "reflexes": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 5
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 5
-      },
-      "perception": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 6
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 5
-      },
-      "technical": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 8
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 10
-      },
-      "intimidation": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 4
-      },
-      "deception": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 5
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 9
-      }
-    },
-    "personality": {
-      "aggression": 0.43,
-      "caution": 0.52,
-      "loyalty": 0.98,
-      "greed": 0.26,
-      "empathy": 0.68
-    },
-    "drives": [
-      "survival",
-      "justice",
-      "power"
-    ],
-    "thresholds": {
-      "pain": 7,
-      "stress": 3,
-      "loyalty_break": 6
-    },
-    "strengths": [
-      "encyclopedic knowledge of GLMZ infrastructure",
-      "mechanical aptitude — can repair or modify almost anything",
-      "natural leadership presence"
-    ],
-    "weaknesses": [
-      "overconfidence in specialty areas leading to blind spots",
-      "augmentation dependency — performance drops sharply if chrome malfunctions"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "surveillance specialist",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Always verifies target identity independently before lethal contracts"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Preaches independence but is desperate for approval from people they respect",
-      "Projects confidence but makes decisions from a foundation of fear they've never examined"
-    ],
-    "habits": [
-      "Practices a kata or fighting form every morning regardless of circumstances",
-      "Never drinks anything they didn't see poured or open themselves",
-      "Eats the same meal before every job — superstition masquerading as preference",
-      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space"
-    ],
-    "breaking_points": [
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Being forced to harm a civilian — collateral damage that can't be rationalized",
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal weapon mount",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Subdermal weapon mount — pop-out blade in each forearm",
-      "replaces": ""
-    },
-    {
-      "name": "Cybernetic arm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Networker": 0.7,
-    "Manipulator": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Ashfield",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "Street Custom 'Scorpion Tail' Chain Whip"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Ashfield",
-    "Chicago",
-    "The Pure Hand",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Slagworks Industrial"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Pacific Islander (40%), Hispanic/Latin American (39%), and Indigenous American (21%) — a diaspora blend creating warm medium-deep skin with golden and olive undertones. The broader facial structure, defined cheekbones, and prominent squared jaw reflect Pacific Islander and Indigenous American ancestry. Higher, more angular cheekbones and slightly wider face structure are characteristic of indigenous Pacific and American lineages, while the warmth and depth of complexion draws from all three heritage groups' tropical and equatorial origins.",
-    "height_cm": 178,
-    "weight_kg": 94,
-    "build": "Stocky and solid, thick through the chest and shoulders with the compact density of someone who has spent decades maintaining functional strength rather than aesthetic muscle. Forearms are visibly corded, scarred from repeated augmentation work.",
-    "hair_color": "Dark brown, graying at temples",
-    "hair_style": "Cropped short, practical, no styling",
-    "hair_length": "Short",
-    "eye_color": "Pale gray, unremarkable — human baseline",
-    "skin_tone": "Medium-deep warm tan with golden and olive undertones, weathered from years in Ashfield's polluted air and inconsistent shelter. The warmth and depth reflect the blended ancestry across Pacific Islander, Hispanic/Latin American, and Indigenous American heritage.",
-    "complexion": "Hard-lined face with broader, fuller bone structure reflecting Pacific Islander and Indigenous American ancestry. Jaw is prominent and squared. Cheekbones are higher and more defined, with slightly wider face structure characteristic of Pacific Islander and Indigenous American lineages. Deep nasolabial folds frame the mouth. Skin texture rough, pockmarked around the temple and jawline where augmentation scarring pulls slightly at the surface. Five-o'clock shadow is his default state. Eyes sit deep-set, giving him a permanently tired appearance that suits his work.",
-    "distinguishing_marks": [
-      "Augmentation scarring in a horseshoe pattern around both temples, pale pink tissue against warm tan skin, from subdermal blade mount installation.",
-      "Jagged scar running from left jaw angle down toward the clavicle, approximately 8cm, old and white — pre-augmentation injury.",
-      "Heavy keloid scarring across both inner forearms where the weapon mounts were installed, visible when his sleeves are rolled.",
-      "Burn mark on right shoulder — crescent-shaped, roughly 5cm across, from industrial accident or weapons discharge, old enough to have faded to light brown."
-    ],
-    "visible_augmentations": "Right arm is full-replacement cybernetic from shoulder joint down — obvious chrome and polished steel, synthetic muscle layering visible at the elbow joint. The arm is noticeably stronger and more refined than organic tissue, with articulation that's too precise. Pop-out blade mounts are visible along both forearms as chrome-lined slots, sealed but obvious to anyone who knows what they're looking at. Subdermal scarring around temples indicates weapon mount installation beneath the skin.",
-    "posture_movement": "Stands with weight balanced forward on the balls of his feet, a runner's ready stance. Moves deliberately, economically — no wasted motion. His right arm compensates with slight mechanical hesitation on fast movements, but he's so practiced with it that the hesitation reads as control rather than disability. Hands rest in fists more often than open palms. His gaze is active, tracking, never settling — the paranoia is embedded in his body language.",
-    "clothing_style": "Tier 5 utilitarian — worn synthweave cargo pants with visible equipment loops, reinforced at stress points. Sleeveless or short-sleeved tops to keep the right arm visible and unobstructed, usually unmarked dark gray or black. Over this, a faded ballistic jacket with multiple pockets, patched at the elbows, missing the logo from its original brand. Steel-toed boots, scuffed, re-soled multiple times. No jewelry, no identifying markers beyond his augmentations. Clothing is functional and replaceable, not an investment."
-  },
-  "image_prompt": "Bart Montalvo, 2226 neo-noir operative, 178cm stocky solid frame. Warm medium-deep golden-olive tan skin, weathered Pacific Islander and Indigenous American features with prominent squared jaw and defined high cheekbones. Dark brown hair graying at temples, cropped short. Pale gray baseline eyes, deep-set and tired. Five-o'clock shadow. Pale pink horseshoe augmentation scarring at temples, old white jaw scar, heavy keloid forearm scarring visible. Full-replacement right arm cybernetic chrome and steel with visible synthetic muscle at elbow, pop-out blade mount slots along forearms. Sleeveless dark gray shirt, worn synthweave cargo pants with equipment loops, faded ballistic jacket patched at elbows, scuffed steel-toed boots. Stands in ready stance, weight forward on balls of feet. Hands in fists. Active, tracking gaze. Industrial Ashfield setting, polluted gray-blue neon lighting, paranoid body language, economical movement. GLMZ 2200s aesthetic, functional and replaceable. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Pacific Islander": 40.2,
-    "Hispanic/Latin American": 39.3,
-    "Indigenous American": 20.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Pacific Islander": {
-      "Melanesian": {
-        "Fijian": 28.7
-      },
-      "Polynesian": {
-        "Hawaiian": 11,
-        "Samoan": 0.5
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 30.1,
-        "Cuban": 3.3
-      },
-      "Mexican": {
-        "Mexican": 5.9
-      }
-    },
-    "Indigenous American": {
-      "Andean": {
-        "Quechua": 11
-      },
-      "Mesoamerican": {
-        "Maya": 1.4
-      },
-      "Great Lakes Nations": {
-        "Ojibwe": 4,
-        "Potawatomi": 4.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5a8780c99a5e6dbf3babfba",
+    "type":  "character",
+    "name":  "Bart Montalvo",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Electronic and physical observation expert â€” surveillance specialist",
+    "age":  40,
+    "status":  "active",
+    "location":  "Ashfield â€” former residential district, half-burned, now squatter territory, near Western and Chicago Ave",
+    "description":  "Bart Montalvo is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 40, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible â€” subdermal weapon mount â€” pop-out blade in each forearm â€” and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name â€” that person is officially dead, and Bart Montalvo plans to keep it that way. He works as a surveillance specialist out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Bart Montalvo describe him as a precision instrument â€” point him at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "The quiet â€” silence means something is about to go very wrong",
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "Betrayal by someone they trust â€” the only currency that matters"
+                                      ],
+                       "core_desires":  [
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "Control â€” over their body, their schedule, their future",
+                                            "A crew worth trusting â€” people who stay when the shooting starts"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Exercises compulsively â€” the body must be ready, always",
+                                                 "Humor â€” deflects everything serious with jokes until the joke becomes the personality",
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring"
+                                             ],
+                       "blind_spots":  [
+                                           "Fails to notice when their own behavior mirrors the people they despise",
+                                           "Assumes the worst in corporate people, missing the rare ones who could be allies",
+                                           "Cannot see that their independence is actually isolation wearing a better outfit"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+                            "cadence":  "Measured and deliberate â€” pauses before important words for emphasis.",
+                            "verbal_tics":  [
+                                                "Whispers when angry â€” the quieter the voice, the worse the situation",
+                                                "Speaks in clipped fragments when stressed â€” drops pronouns, articles, pleasantries"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I\u0027ve been watching you for three days. You should close your curtains.\"",
+                                                  "\"Information is the only commodity that appreciates with age.\"",
+                                                  "\"Everyone thinks they\u0027re careful. Nobody is careful enough.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A former associate resurfaces with evidence that could destroy Alper Holmberg-Dembele\u0027s reputation â€” and a price for silence",
+                        "Alper Holmberg-Dembele discovers a job they completed last year was a setup for something much larger and much worse",
+                        "Alper Holmberg-Dembele intercepts intelligence about a threat to their district and must decide between profit and protection"
+                    ],
+    "narrative_function":  "As a surveillance specialist, Alper Holmberg-Dembele embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+    "augmentations":  "Subdermal weapon mount â€” pop-out blade in each forearm. Cybernetic arm â€” right, full replacement from shoulder â€” stronger than organic, obvious chrome",
+    "daily_life":  "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+    "affiliation":  "Unaffiliated â€” too volatile for permanent crews",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  7,
+                                                    "augmented":  0,
+                                                    "effective":  9
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  0,
+                                                   "effective":  6
+                                               },
+                                   "endurance":  {
+                                                     "base":  4,
+                                                     "augmented":  2,
+                                                     "effective":  9
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  6,
+                                                    "augmented":  0,
+                                                    "effective":  5
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  7,
+                                                      "augmented":  2,
+                                                      "effective":  5
+                                                  },
+                                 "perception":  {
+                                                    "base":  5,
+                                                    "augmented":  2,
+                                                    "effective":  6
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  0,
+                                                   "effective":  5
+                                               },
+                                 "technical":  {
+                                                   "base":  7,
+                                                   "augmented":  0,
+                                                   "effective":  8
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  6,
+                                                  "augmented":  2,
+                                                  "effective":  10
+                                              },
+                                 "intimidation":  {
+                                                      "base":  5,
+                                                      "augmented":  1,
+                                                      "effective":  4
+                                                  },
+                                 "deception":  {
+                                                   "base":  5,
+                                                   "augmented":  0,
+                                                   "effective":  5
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  2,
+                                                 "effective":  9
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.43,
+                                      "caution":  0.52,
+                                      "loyalty":  0.98,
+                                      "greed":  0.26,
+                                      "empathy":  0.68
+                                  },
+                  "drives":  [
+                                 "survival",
+                                 "justice",
+                                 "power"
+                             ],
+                  "thresholds":  {
+                                     "pain":  7,
+                                     "stress":  3,
+                                     "loyalty_break":  6
+                                 },
+                  "strengths":  [
+                                    "encyclopedic knowledge of GLMZ infrastructure",
+                                    "mechanical aptitude â€” can repair or modify almost anything",
+                                    "natural leadership presence"
+                                ],
+                  "weaknesses":  [
+                                     "overconfidence in specialty areas leading to blind spots",
+                                     "augmentation dependency â€” performance drops sharply if chrome malfunctions"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "surveillance specialist",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Always verifies target identity independently before lethal contracts"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined"
+                                          ],
+                       "habits":  [
+                                      "Practices a kata or fighting form every morning regardless of circumstances",
+                                      "Never drinks anything they didn\u0027t see poured or open themselves",
+                                      "Eats the same meal before every job â€” superstition masquerading as preference",
+                                      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized",
+                                               "Complete isolation â€” cut off from network, contacts, and purpose simultaneously"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal weapon mount",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal weapon mount â€” pop-out blade in each forearm",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cybernetic arm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Cybernetic arm â€” right, full replacement from shoulder â€” stronger than organic, obvious chrome",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Networker":  0.7,
+                       "Manipulator":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Ashfield",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027",
+                            "Street Custom \u0027Confession\u0027 Modified Industrial Nail Gun",
+                            "Street Custom \u0027Scorpion Tail\u0027 Chain Whip"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Ashfield",
+                             "Chicago",
+                             "The Pure Hand",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Pacific Islander (40%), Hispanic/Latin American (39%), and Indigenous American (21%) â€” a diaspora blend creating warm medium-deep skin with golden and olive undertones. The broader facial structure, defined cheekbones, and prominent squared jaw reflect Pacific Islander and Indigenous American ancestry. Higher, more angular cheekbones and slightly wider face structure are characteristic of indigenous Pacific and American lineages, while the warmth and depth of complexion draws from all three heritage groups\u0027 tropical and equatorial origins.",
+                                 "height_cm":  178,
+                                 "weight_kg":  94,
+                                 "build":  "Stocky and solid, thick through the chest and shoulders with the compact density of someone who has spent decades maintaining functional strength rather than aesthetic muscle. Forearms are visibly corded, scarred from repeated augmentation work.",
+                                 "hair_color":  "Dark brown, graying at temples",
+                                 "hair_style":  "Cropped short, practical, no styling",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Pale gray, unremarkable â€” human baseline",
+                                 "skin_tone":  "Medium-deep warm tan with golden and olive undertones, weathered from years in Ashfield\u0027s polluted air and inconsistent shelter. The warmth and depth reflect the blended ancestry across Pacific Islander, Hispanic/Latin American, and Indigenous American heritage.",
+                                 "complexion":  "Hard-lined face with broader, fuller bone structure reflecting Pacific Islander and Indigenous American ancestry. Jaw is prominent and squared. Cheekbones are higher and more defined, with slightly wider face structure characteristic of Pacific Islander and Indigenous American lineages. Deep nasolabial folds frame the mouth. Skin texture rough, pockmarked around the temple and jawline where augmentation scarring pulls slightly at the surface. Five-o\u0027clock shadow is his default state. Eyes sit deep-set, giving him a permanently tired appearance that suits his work.",
+                                 "distinguishing_marks":  [
+                                                              "Augmentation scarring in a horseshoe pattern around both temples, pale pink tissue against warm tan skin, from subdermal blade mount installation.",
+                                                              "Jagged scar running from left jaw angle down toward the clavicle, approximately 8cm, old and white â€” pre-augmentation injury.",
+                                                              "Heavy keloid scarring across both inner forearms where the weapon mounts were installed, visible when his sleeves are rolled.",
+                                                              "Burn mark on right shoulder â€” crescent-shaped, roughly 5cm across, from industrial accident or weapons discharge, old enough to have faded to light brown."
+                                                          ],
+                                 "visible_augmentations":  "Right arm is full-replacement cybernetic from shoulder joint down â€” obvious chrome and polished steel, synthetic muscle layering visible at the elbow joint. The arm is noticeably stronger and more refined than organic tissue, with articulation that\u0027s too precise. Pop-out blade mounts are visible along both forearms as chrome-lined slots, sealed but obvious to anyone who knows what they\u0027re looking at. Subdermal scarring around temples indicates weapon mount installation beneath the skin.",
+                                 "posture_movement":  "Stands with weight balanced forward on the balls of his feet, a runner\u0027s ready stance. Moves deliberately, economically â€” no wasted motion. His right arm compensates with slight mechanical hesitation on fast movements, but he\u0027s so practiced with it that the hesitation reads as control rather than disability. Hands rest in fists more often than open palms. His gaze is active, tracking, never settling â€” the paranoia is embedded in his body language.",
+                                 "clothing_style":  "Tier 5 utilitarian â€” worn synthweave cargo pants with visible equipment loops, reinforced at stress points. Sleeveless or short-sleeved tops to keep the right arm visible and unobstructed, usually unmarked dark gray or black. Over this, a faded ballistic jacket with multiple pockets, patched at the elbows, missing the logo from its original brand. Steel-toed boots, scuffed, re-soled multiple times. No jewelry, no identifying markers beyond his augmentations. Clothing is functional and replaceable, not an investment."
+                             },
+    "image_prompt":  "Bart Montalvo, 2226 neo-noir operative, 178cm stocky solid frame. Warm medium-deep golden-olive tan skin, weathered Pacific Islander and Indigenous American features with prominent squared jaw and defined high cheekbones. Dark brown hair graying at temples, cropped short. Pale gray baseline eyes, deep-set and tired. Five-o\u0027clock shadow. Pale pink horseshoe augmentation scarring at temples, old white jaw scar, heavy keloid forearm scarring visible. Full-replacement right arm cybernetic chrome and steel with visible synthetic muscle at elbow, pop-out blade mount slots along forearms. Sleeveless dark gray shirt, worn synthweave cargo pants with equipment loops, faded ballistic jacket patched at elbows, scuffed steel-toed boots. Stands in ready stance, weight forward on balls of feet. Hands in fists. Active, tracking gaze. Industrial Ashfield setting, polluted gray-blue neon lighting, paranoid body language, economical movement. GLMZ 2200s aesthetic, functional and replaceable. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Pacific Islander":  40.2,
+                             "Hispanic/Latin American":  39.3,
+                             "Indigenous American":  20.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Pacific Islander":  {
+                                                     "Melanesian":  {
+                                                                        "Fijian":  28.7
+                                                                    },
+                                                     "Polynesian":  {
+                                                                        "Hawaiian":  11,
+                                                                        "Samoan":  0.5
+                                                                    }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  30.1,
+                                                                              "Cuban":  3.3
+                                                                          },
+                                                            "Mexican":  {
+                                                                            "Mexican":  5.9
+                                                                        }
+                                                        },
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Quechua":  11
+                                                                   },
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  1.4
+                                                                         },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Ojibwe":  4,
+                                                                                    "Potawatomi":  4.1
+                                                                                }
+                                                    }
+                        },
+    "tier":  "3"
 }

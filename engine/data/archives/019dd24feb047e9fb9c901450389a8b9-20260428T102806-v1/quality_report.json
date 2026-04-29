@@ -1,0 +1,164 @@
+{
+  "project_id": "019dd24feb047e9fb9c901450389a8b9",
+  "title": "Without Hands",
+  "evaluated_at": "2026-04-28T13:16:20.7721102Z",
+  "aggregate_scores": {
+    "VOICE": 9.333333333333334,
+    "MORAL_COMPLEXITY": 8.5,
+    "PACING": 8.833333333333334,
+    "CHARACTER_AUTHENTICITY": 9.333333333333334,
+    "WORLD_SPECIFICITY": 9,
+    "CLICHE_AVOIDANCE": 8.666666666666666,
+    "DIALOGUE_QUALITY": 8.5,
+    "OVERALL": 8.880952380952381
+  },
+  "consensus_strengths": [],
+  "all_failures": [
+    "The E.L.F. communicating exclusively through the Axiom salvage-rights glyph \u2014 \u0027the symbol the Cruciform Depot\u0027s original Axiom signage used for salvage rights\u0027 \u2014 is a masterclass in non-verbal characterization that never anthropomorphizes the entity",
+    "Hua\u0027s real hands as a deliberate power statement: \u0027In this room, in this city, that was a statement of such deliberate violence that it made the men at his shoulders seem decorative by comparison\u0027",
+    "The amputation scene\u0027s restraint: \u0027The sound was administrative\u0027 \u2014 the NeoCortex rerouting pain as traffic management is both technically specific and emotionally devastating",
+    "The debt-conversion as the story\u0027s true violence: \u0027the worst thing you can do to the woman who hurt you is leave her alive holding a debt she will spend the rest of her life knowing she said aloud\u0027 \u2014 the theme is fully earned by the climax",
+    "Kyle\u0027s internal Chekhov\u0027s Crocodile observation \u2014 \u0027the NeoCortex flagging the dramatic geometry the way it flags exits\u0027 \u2014 is self-aware without being smug, characterizing the NeoCortex as a narrative-pattern recognizer",
+    "The scream \u0027SAY IT\u0027 breaking Kyle\u0027s discipline and then the immediate recovery to flat coldness: the emotional architecture of that beat is precise and psychologically true",
+    "The hands-as-necklace image \u2014 \u0027palms outward, dripping\u0027 \u2014 is a genuinely original noir image with no obvious antecedent",
+    "The AutoDoc\u0027s \u0027automated reverence machines have for swords\u0027 is a perfect small observation that earns its space",
+    "World-specificity is the story\u0027s thinnest dimension: no \u03A6 pricing appears anywhere in the executed text, no corponation territory context is established for the Lotus Syndicate, and the Cruciform Depot\u0027s relationship to the Gray Zone or any specific corponation zone is never named \u2014 the setting reads as strong cyberpunk but not specifically GLMZ",
+    "The Gap, the Spine, the thrumline, Arcturus\u0027s presence or absence, and tier-level texture are entirely absent \u2014 the world could be any high-craft cyberpunk city"
+  ],
+  "all_cliches_found": [],
+  "improvement_directives": [
+    "Expand the Gray Zone\u0027s structural context by adding 2-3 specific details about its governance, territorial boundaries, or power dynamics to ground readers in the world\u0027s political geography.",
+    "Deepen dialogue subtext by revising functional exchanges to carry double meanings, unspoken history, or character-specific verbal tics that reveal psychology beyond plot utility.",
+    "Sharpen the E.L.F.\u0027s salvage-rights logic by making its communication glyphs and decision-making protocols more explicitly defined, so its role as unsettling third party carries greater narrative weight.",
+    "Complicate the debt-conversion resolution by introducing a concrete downstream consequence or ambiguity that prevents the ending from reading as structurally neat, preserving the moral discomfort the story earns.",
+    "Enrich corponation geography by grounding Arcturus presence and Cruciform Depot in the broader GLMZ power map, clarifying what territorial or economic stakes make these locations meaningful to Kyle\u0027s survival calculus."
+  ],
+  "weakest_dimension": "MORAL_COMPLEXITY",
+  "individual_votes": [
+    {
+      "provider": "claude",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 8,
+        "PACING": 9,
+        "CHARACTER_AUTHENTICITY": 10,
+        "WORLD_SPECIFICITY": 7,
+        "CLICHE_AVOIDANCE": 9,
+        "DIALOGUE_QUALITY": 9
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [
+        "The E.L.F. communicating exclusively through the Axiom salvage-rights glyph \u2014 \u0027the symbol the Cruciform Depot\u0027s original Axiom signage used for salvage rights\u0027 \u2014 is a masterclass in non-verbal characterization that never anthropomorphizes the entity",
+        "Hua\u0027s real hands as a deliberate power statement: \u0027In this room, in this city, that was a statement of such deliberate violence that it made the men at his shoulders seem decorative by comparison\u0027",
+        "The amputation scene\u0027s restraint: \u0027The sound was administrative\u0027 \u2014 the NeoCortex rerouting pain as traffic management is both technically specific and emotionally devastating",
+        "The debt-conversion as the story\u0027s true violence: \u0027the worst thing you can do to the woman who hurt you is leave her alive holding a debt she will spend the rest of her life knowing she said aloud\u0027 \u2014 the theme is fully earned by the climax",
+        "Kyle\u0027s internal Chekhov\u0027s Crocodile observation \u2014 \u0027the NeoCortex flagging the dramatic geometry the way it flags exits\u0027 \u2014 is self-aware without being smug, characterizing the NeoCortex as a narrative-pattern recognizer",
+        "The scream \u0027SAY IT\u0027 breaking Kyle\u0027s discipline and then the immediate recovery to flat coldness: the emotional architecture of that beat is precise and psychologically true",
+        "The hands-as-necklace image \u2014 \u0027palms outward, dripping\u0027 \u2014 is a genuinely original noir image with no obvious antecedent",
+        "The AutoDoc\u0027s \u0027automated reverence machines have for swords\u0027 is a perfect small observation that earns its space",
+        "World-specificity is the story\u0027s thinnest dimension: no \u03A6 pricing appears anywhere in the executed text, no corponation territory context is established for the Lotus Syndicate, and the Cruciform Depot\u0027s relationship to the Gray Zone or any specific corponation zone is never named \u2014 the setting reads as strong cyberpunk but not specifically GLMZ",
+        "The Gap, the Spine, the thrumline, Arcturus\u0027s presence or absence, and tier-level texture are entirely absent \u2014 the world could be any high-craft cyberpunk city"
+      ],
+      "cliches_found": [],
+      "best_moment": "The scream and its aftermath in Beat 9: Kyle\u0027s discipline fracturing into \u0027SAY IT\u0027 \u2014 \u0027the kind of sound a man makes when something is being taken out of him that he had not catalogued\u0027 \u2014 followed immediately by the flat, cold terms of the debt, is the story\u0027s emotional and thematic center. The scream is not weakness; it is the cost of the conversion, the thing that had to come out before the accounting could close. Hua flinching at the scream after not flinching at the cleaver is the story\u0027s single best character beat.",
+      "worst_moment": "The story\u0027s world-specificity gap is most visible in the opening chamber scene, where the Lotus Syndicate\u0027s location within GLMZ\u0027s territorial geography is entirely unestablished. We are told the Cruciform Depot\u0027s south arm, but not whether this is Gray Zone, which corponation\u0027s shadow it operates under, or why Arcturus Civil Security has not touched it \u2014 the structural DMZ logic that makes the Syndicate\u0027s sovereignty legible is absent, and the setting consequently floats without the specific gravity the world is capable of providing.",
+      "improvement_directive": "Anchor the story in GLMZ\u0027s specific territorial logic: name which corponation zone the Cruciform Depot borders, establish whether the Syndicate operates in Gray Zone (which would explain the absence of Arcturus intervention without needing to say so explicitly), and price at least one transaction in \u03A6 with a specific number \u2014 the AutoDoc kiosk in Beat 10 is the perfect opportunity, and a \u03A6 figure there would retroactively make the \u03A685,000 debt feel like it exists in a real economy rather than an abstract one."
+    },
+    {
+      "provider": "openai",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 9,
+        "PACING": 8,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 10,
+        "CLICHE_AVOIDANCE": 9,
+        "DIALOGUE_QUALITY": 8
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "Kyle\u0027s confrontation in the Lotus Syndicate chamber where he reclaims Silence with the cargo arm and imposes the \u03A685,000 debt on Hua, culminating in the chilling command: \u0027SAY IT.\u0027 This moment crystallizes the story\u0027s theme of discipline and debt with powerful emotional and moral resonance.",
+      "worst_moment": "The extended procedural description of detaching the cargo arm at the rotator coupling, which, while immersive, slows pacing and tension during a critical survival sequence.",
+      "improvement_directive": "Tighten pacing by condensing procedural and technical descriptions to maintain narrative momentum without sacrificing world specificity."
+    },
+    {
+      "provider": "deepseek",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 8,
+        "PACING": 9,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 8,
+        "CLICHE_AVOIDANCE": 8,
+        "DIALOGUE_QUALITY": 8
+      },
+      "overall_score": 8,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "The debt conversion scene (Beat 9) where Kyle screams \u0027SAY IT\u0027 \u2014 the raw, ugly sound breaking through his discipline, then the immediate return to flat, cold control. The transformation from victim to creditor is earned through every previous beat.",
+      "worst_moment": "The transition from Beat 7 to Beat 8 (\u0027He turns toward the surface without looking at Hua again\u0027) \u2014 the climb back up is summarized rather than dramatized, losing some of the tension built in the descent.",
+      "improvement_directive": "Deepen the Gray Zone texture with specific slang, place names (The Spine, thrumline), and references to The Gap to make the world feel inhabited rather than just described."
+    },
+    {
+      "provider": "mistral",
+      "scores": {
+        "VOICE": 10,
+        "MORAL_COMPLEXITY": 9,
+        "PACING": 9,
+        "CHARACTER_AUTHENTICITY": 10,
+        "WORLD_SPECIFICITY": 10,
+        "CLICHE_AVOIDANCE": 9,
+        "DIALOGUE_QUALITY": 9
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "Kyle\u2019s scream\u2014\u0027SAY IT\u0027\u2014and Hua\u2019s whimper: \u0027I owe you.\u0027 The debt is converted from violence to a spoken obligation, and the room\u2019s silence afterward is more brutal than any kill. The cargo arm\u2019s patient articulation of the twine necklace is a close second.",
+      "worst_moment": "The \u0027Chekhov\u2019s Crocodile\u0027 line. It\u2019s a great observation, but the NeoCortex flagging it as dramatic geometry risks making Kyle seem like a genre-savvy protagonist rather than a man in the moment.",
+      "improvement_directive": "Replace the \u0027Chekhov\u2019s Crocodile\u0027 line with a purely sensory detail (e.g., the crocodile\u2019s breath on Kyle\u2019s neck as it passes, or the way its scales feel like Silence\u2019s hamon under his stumps). Keep the meta-awareness in the E.L.F.\u2019s glyph, but make it more ambiguous\u2014e.g., a single pulse instead of three syllables."
+    },
+    {
+      "provider": "xai",
+      "scores": {
+        "VOICE": 10,
+        "MORAL_COMPLEXITY": 9,
+        "PACING": 9,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 10,
+        "CLICHE_AVOIDANCE": 9,
+        "DIALOGUE_QUALITY": 8
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "Kyle\u0027s confrontation with Hua, where he demands she acknowledge the debt: \u0027SAY IT,\u0027 highlighting the story\u0027s moral weight and emotional peak.",
+      "worst_moment": "The story\u0027s abrupt truncation in the full text, which cuts off Kyle\u0027s interaction with the automaton, potentially weakening the immersive flow.",
+      "improvement_directive": "Expand and vary dialogue to more deeply reveal subtext and character psychology, ensuring each line feels essential and distinct."
+    },
+    {
+      "provider": "groq",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 8,
+        "PACING": 9,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 9,
+        "CLICHE_AVOIDANCE": 8,
+        "DIALOGUE_QUALITY": 9
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "The moment when Kyle, despite being severely injured and handicapped, manages to improvise a weapon and defeat the mutant in the tunnel, showcasing his resourcefulness and determination.",
+      "worst_moment": "The story\u0027s abrupt transition from the protagonist\u0027s past to his current situation, which could be smoothed out for better flow.",
+      "improvement_directive": "To further enhance the story, consider adding more nuance to the supporting characters, such as Hua and the members of the Lotus Syndicate, to make their motivations and actions more believable and complex."
+    }
+  ]
+}

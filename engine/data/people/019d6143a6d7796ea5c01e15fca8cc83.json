@@ -1,342 +1,355 @@
-{
-  "id": "019d6143a6d7796ea5c01e15fca8cc83",
-  "type": "character",
-  "name": "Cayetano Souvannasane",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Information trader and intelligence analyst — broker",
-  "age": 29,
-  "status": "active",
-  "location": "The Overhang — residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
-  "description": "Cayetano Souvannasane is compact and densely muscled, built low to the ground like something designed to survive impacts. At 29, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a broker out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Cayetano Souvannasane is known for getting the job done and not asking questions that would make the job harder to stomach.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.47,
-      "ideal": 0.62,
-      "id": 0.94,
-      "shadow": 0.86,
-      "mask": 0.93,
-      "ghost": 0.72
-    },
-    "core_fears": [
-      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
-      "That their reputation is built on luck, not skill, and the luck is finite",
-      "Being replaced — younger, faster, cheaper runners coming up behind them"
-    ],
-    "core_desires": [
-      "The perfect run — one job so clean it becomes legend",
-      "Freedom from augmentation debt — the interest compounds like a tumor",
-      "To matter to someone for who they are, not what they can do"
-    ],
-    "coping_mechanisms": [
-      "Exercises compulsively — the body must be ready, always",
-      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat"
-    ],
-    "blind_spots": [
-      "Cannot accept help without interpreting it as leverage",
-      "Cannot see that their independence is actually isolation wearing a better outfit",
-      "Fails to notice when their own behavior mirrors the people they despise"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "the Gray Zone street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
-    "cadence": "Low and even — the vocal equivalent of still water.",
-    "verbal_tics": [
-      "Calls money 'weight' — as in 'that job doesn't carry enough weight'",
-      "Refers to killing as 'solving' — clinical detachment as coping mechanism"
-    ],
-    "example_lines": [
-      "\"I don't sell information. I sell certainty. Different product, different price.\"",
-      "\"Everything has a value. Most people underestimate what they know.\"",
-      "\"My sources are confidential. My prices are not.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Somadina Baranov-Fosu's reputation — and a price for silence",
-    "A crew member from Somadina Baranov-Fosu's past shows up in GLMZ, carrying old grievances and new chrome",
-    "Someone is impersonating Somadina Baranov-Fosu on jobs, and the impersonator is better at the work than the original"
-  ],
-  "narrative_function": "Somadina Baranov-Fosu functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage. Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Independent — operates through reputation only",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 6
-      },
-      "agility": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 9
-      },
-      "reflexes": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 8
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 10
-      },
-      "perception": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 5
-      },
-      "willpower": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 8
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 8
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 7
-      },
-      "intimidation": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 7
-      },
-      "deception": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 4
-      },
-      "empathy": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.16,
-      "caution": 0.96,
-      "loyalty": 0.47,
-      "greed": 0.98,
-      "empathy": 0.66
-    },
-    "drives": [
-      "knowledge",
-      "reputation",
-      "survival"
-    ],
-    "thresholds": {
-      "pain": 4,
-      "stress": 7,
-      "loyalty_break": 10
-    },
-    "strengths": [
-      "network of reliable contacts",
-      "photographic memory for faces and layouts"
-    ],
-    "weaknesses": [
-      "emotional volatility under extreme stress",
-      "difficulty with authority figures"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "broker",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Always has an exit route planned before agreeing to any meeting"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Presents as emotionless professional but is deeply affected by collateral damage",
-      "Insists they work alone but performs noticeably better in a team"
-    ],
-    "habits": [
-      "Practices a kata or fighting form every morning regardless of circumstances",
-      "Never drinks anything they didn't see poured or open themselves",
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Checks exits within 10 seconds of entering any room"
-    ],
-    "breaking_points": [
-      "A child being put in danger as leverage against them",
-      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Dermal camouflage",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
-      "replaces": ""
-    },
-    {
-      "name": "Move-by-wire system",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.9,
-    "Info Broker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Overhang",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Adaptive Camouflage Skin",
-    "Masquerade",
-    "Ironveil Canopy",
-    "The Gradient Compact",
-    "Chicago",
-    "Lazarus LX-2 'Lab Rat'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Southeast Asian (54.1%) as primary ancestry, with significant Hispanic/Latin American (38.6%) and Eastern European (7.3%) blend. Southeast Asian bone structure provides moderate, width-set cheekbones and facial proportions. Hispanic/Latin American ancestry contributes warm golden and copper undertones to skin and facial warmth. Eastern European ancestry adds subtle angularity to the jawline and slight depth to eye-set. The combination creates warm, burnished mid-tone skin with golden-copper undertones that appears luminous in certain light—a unified, complex coloration from genuine genetic blending.",
-    "height_cm": 158,
-    "weight_kg": 62,
-    "build": "Compact and densely muscled, low center of gravity. Every movement economical. Shoulders broad relative to frame, legs thick and powerful — built for stability and explosive force rather than speed.",
-    "hair_color": "Black with rust-colored undertones",
-    "hair_style": "Pulled back tight, often in a single braid or coiled knot. Practical. Minimal surface area.",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown, with faint iridescent sheen from subcutaneous neural interface bleed-through",
-    "skin_tone": "Warm medium-deep brown with golden-copper undertones—Southeast Asian base enriched by Hispanic/Latin American warmth and Eastern European depth, creating a burnished unified tone that catches light with subtle luminescence.",
-    "complexion": "Face angular and weathered beyond her years. Southeast Asian width through the cheekbones balanced by subtle Eastern European jawline angularity. Skin bears institutional scarring from dermal augmentation installation—thin surgical lines visible at temples and along the mandible where chromatic cells were integrated. No attempt made to conceal them. Minor acne scarring on left cheekbone. Calluses on knuckles and palms from move-by-wire system stress.",
-    "visible_augmentations": "Chromatic skin pigment cells across shoulders, neck, and upper chest—pigmentation shifts subtly between copper, slate, and matte black depending on angle and light. Faint geometric patterning visible under the skin along collarbone suggesting underlying nervous system architecture. Eyes have barely perceptible iridescence. When she moves, there's an uncanny precision to gesture—move-by-wire integration creates micro-corrections invisible to untrained observers but unsettling to those who notice.",
-    "posture_movement": "Economical and coiled. Stands with weight distributed low, knees never fully locked. Moves with deliberate precision—no wasted motion, no flourish. Head turns before eyes. Hands positioned where they can be useful. Default expression is neutral, almost flat, with minimal micro-expression leakage—move-by-wire teaches you to compartmentalize.",
-    "clothing_style": "Tier 3-4 working class blended with runner aesthetics. Typically wears fitted synth-leather jackets in charcoal or navy, reinforced at shoulders and elbows with discreet ablative weave. Under-layers are technical: moisture-wicking, temperature-adaptive fabrics from mid-tier corporate spillover. Pants are cargo-cut synthetic denim, pockets deep and reinforced. Boots are steel-toed, worn, broken in, reliable. No jewelry beyond a simple titanium wrist cuff that doubles as a data interface. When maintaining her cover identity, she switches to plain synthetic cotton and neutral colors, but the wear patterns and fit always remain functional—she cannot help but dress for violence.",
-    "distinguishing_marks": [
-      "Thin surgical scar running from left temple to behind the ear, site of chromatic pigment cell matrix installation.",
-      "Parallel scarring along right jawline where the dermal augmentation's neural feeds were anchored.",
-      "Faint chemical burn mark on inner left wrist—old, from early augmentation work.",
-      "Tattoo on right forearm: geometric Akan symbol (Gye Nyame), done in metallic ink that catches light."
-    ]
-  },
-  "image_prompt": "Cayetano Souvannasane, compact 158cm frame with densely muscled build, warm burnished medium-brown skin with golden-copper undertones reflecting Southeast Asian, Hispanic, and Eastern European heritage blend. Dark brown eyes with subtle iridescence. Black hair with rust undertones pulled tight in a braid. Institutional surgical scars visible at temples and jawline from chromatic dermal augmentation. Chromatic pigment cells shifting copper-slate-black across shoulders and neck. Callused hands, coiled posture with weight distributed low. Worn steel-toed boots, fitted charcoal synth-leather jacket with ablative weave reinforcement, technical base layers, cargo denim. Titanium wrist cuff data interface. Geometric Gye Nyame tattoo on right forearm in metallic ink. GLMZ Great Lakes Metropolitan Zone, neutral expression, economical movement, standing ready in industrial neon-lit setting, cool and warm lighting catching skin iridescence and augmentation patterns, photorealistic, intricate detail on scars and augmentation marks --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 54.1,
-    "Hispanic/Latin American": 38.6,
-    "Eastern European": 7.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 54.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Colombian": 11.5,
-        "Brazilian": 13.6
-      },
-      "Mexican": {
-        "Mexican": 1.7
-      },
-      "Caribbean": {
-        "Haitian": 11.8
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 7.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6d7796ea5c01e15fca8cc83",
+    "type":  "character",
+    "name":  "Cayetano Souvannasane",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Information trader and intelligence analyst â€” broker",
+    "age":  29,
+    "status":  "active",
+    "location":  "The Overhang â€” residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
+    "description":  "Cayetano Souvannasane is compact and densely muscled, built low to the ground like something designed to survive impacts. At 29, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible â€” dermal camouflage â€” chromatic skin pigment cells, limited active camouflage â€” and she makes no effort to hide it.\n\nShe came up through the Gray Zone\u0027s informal apprentice system, learning the trade from runners who didn\u0027t survive long enough to see her surpass them. She works as a broker out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Cayetano Souvannasane is known for getting the job done and not asking questions that would make the job harder to stomach.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Never being able to stop running â€” the lifestyle is a trap disguised as freedom",
+                                          "That their reputation is built on luck, not skill, and the luck is finite",
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them"
+                                      ],
+                       "core_desires":  [
+                                            "The perfect run â€” one job so clean it becomes legend",
+                                            "Freedom from augmentation debt â€” the interest compounds like a tumor",
+                                            "To matter to someone for who they are, not what they can do"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Exercises compulsively â€” the body must be ready, always",
+                                                 "Denial â€” nothing is wrong, everything is fine, they are fine, shut up",
+                                                 "Connection â€” finds someone to talk to, even if it\u0027s a bartender or a cat"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot accept help without interpreting it as leverage",
+                                           "Cannot see that their independence is actually isolation wearing a better outfit",
+                                           "Fails to notice when their own behavior mirrors the people they despise"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "the Gray Zone street dialect â€” layered slang, rhythm-heavy, half the meaning is in the cadence.",
+                            "cadence":  "Low and even â€” the vocal equivalent of still water.",
+                            "verbal_tics":  [
+                                                "Calls money \u0027weight\u0027 â€” as in \u0027that job doesn\u0027t carry enough weight\u0027",
+                                                "Refers to killing as \u0027solving\u0027 â€” clinical detachment as coping mechanism"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I don\u0027t sell information. I sell certainty. Different product, different price.\"",
+                                                  "\"Everything has a value. Most people underestimate what they know.\"",
+                                                  "\"My sources are confidential. My prices are not.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A former associate resurfaces with evidence that could destroy Somadina Baranov-Fosu\u0027s reputation â€” and a price for silence",
+                        "A crew member from Somadina Baranov-Fosu\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
+                        "Someone is impersonating Somadina Baranov-Fosu on jobs, and the impersonator is better at the work than the original"
+                    ],
+    "narrative_function":  "Somadina Baranov-Fosu functions as a connector â€” her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Dermal camouflage â€” chromatic skin pigment cells, limited active camouflage. Move-by-wire system â€” full nervous system augmentation, makes the body a weapon platform",
+    "daily_life":  "Between contracts, maintains a cover identity â€” mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+    "affiliation":  "Independent â€” operates through reputation only",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  5,
+                                                    "augmented":  2,
+                                                    "effective":  6
+                                                },
+                                   "agility":  {
+                                                   "base":  7,
+                                                   "augmented":  3,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  5,
+                                                     "augmented":  2,
+                                                     "effective":  9
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  4,
+                                                    "augmented":  1,
+                                                    "effective":  8
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  4,
+                                                      "augmented":  0,
+                                                      "effective":  10
+                                                  },
+                                 "perception":  {
+                                                    "base":  6,
+                                                    "augmented":  2,
+                                                    "effective":  5
+                                                },
+                                 "willpower":  {
+                                                   "base":  7,
+                                                   "augmented":  2,
+                                                   "effective":  8
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  3,
+                                                   "effective":  8
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  5,
+                                                  "augmented":  1,
+                                                  "effective":  7
+                                              },
+                                 "intimidation":  {
+                                                      "base":  7,
+                                                      "augmented":  0,
+                                                      "effective":  7
+                                                  },
+                                 "deception":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  4
+                                               },
+                                 "empathy":  {
+                                                 "base":  8,
+                                                 "augmented":  2,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.16,
+                                      "caution":  0.96,
+                                      "loyalty":  0.47,
+                                      "greed":  0.98,
+                                      "empathy":  0.66
+                                  },
+                  "drives":  [
+                                 "knowledge",
+                                 "reputation",
+                                 "survival"
+                             ],
+                  "thresholds":  {
+                                     "pain":  4,
+                                     "stress":  7,
+                                     "loyalty_break":  10
+                                 },
+                  "strengths":  [
+                                    "network of reliable contacts",
+                                    "photographic memory for faces and layouts"
+                                ],
+                  "weaknesses":  [
+                                     "emotional volatility under extreme stress",
+                                     "difficulty with authority figures"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "broker",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Always has an exit route planned before agreeing to any meeting"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Physical agitation â€” pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Presents as emotionless professional but is deeply affected by collateral damage",
+                                              "Insists they work alone but performs noticeably better in a team"
+                                          ],
+                       "habits":  [
+                                      "Practices a kata or fighting form every morning regardless of circumstances",
+                                      "Never drinks anything they didn\u0027t see poured or open themselves",
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Checks exits within 10 seconds of entering any room"
+                                  ],
+                       "breaking_points":  [
+                                               "A child being put in danger as leverage against them",
+                                               "Betrayal by the one person they actually trust â€” the single point of failure in their emotional architecture"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Dermal camouflage",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Dermal camouflage â€” chromatic skin pigment cells, limited active camouflage",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Move-by-wire system",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Move-by-wire system â€” full nervous system augmentation, makes the body a weapon platform",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.9,
+                       "Info Broker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Overhang",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Carrion Defense Works Marrow Drill MD-7 \u0027Dentist\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Adaptive Camouflage Skin",
+                             "Masquerade",
+                             "Ironveil Canopy",
+                             "The Gradient Compact",
+                             "Chicago",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "Slagworks Industrial",
+                             "GLMZ"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Southeast Asian (54.1%) as primary ancestry, with significant Hispanic/Latin American (38.6%) and Eastern European (7.3%) blend. Southeast Asian bone structure provides moderate, width-set cheekbones and facial proportions. Hispanic/Latin American ancestry contributes warm golden and copper undertones to skin and facial warmth. Eastern European ancestry adds subtle angularity to the jawline and slight depth to eye-set. The combination creates warm, burnished mid-tone skin with golden-copper undertones that appears luminous in certain lightâ€”a unified, complex coloration from genuine genetic blending.",
+                                 "height_cm":  158,
+                                 "weight_kg":  62,
+                                 "build":  "Compact and densely muscled, low center of gravity. Every movement economical. Shoulders broad relative to frame, legs thick and powerful â€” built for stability and explosive force rather than speed.",
+                                 "hair_color":  "Black with rust-colored undertones",
+                                 "hair_style":  "Pulled back tight, often in a single braid or coiled knot. Practical. Minimal surface area.",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown, with faint iridescent sheen from subcutaneous neural interface bleed-through",
+                                 "skin_tone":  "Warm medium-deep brown with golden-copper undertonesâ€”Southeast Asian base enriched by Hispanic/Latin American warmth and Eastern European depth, creating a burnished unified tone that catches light with subtle luminescence.",
+                                 "complexion":  "Face angular and weathered beyond her years. Southeast Asian width through the cheekbones balanced by subtle Eastern European jawline angularity. Skin bears institutional scarring from dermal augmentation installationâ€”thin surgical lines visible at temples and along the mandible where chromatic cells were integrated. No attempt made to conceal them. Minor acne scarring on left cheekbone. Calluses on knuckles and palms from move-by-wire system stress.",
+                                 "visible_augmentations":  "Chromatic skin pigment cells across shoulders, neck, and upper chestâ€”pigmentation shifts subtly between copper, slate, and matte black depending on angle and light. Faint geometric patterning visible under the skin along collarbone suggesting underlying nervous system architecture. Eyes have barely perceptible iridescence. When she moves, there\u0027s an uncanny precision to gestureâ€”move-by-wire integration creates micro-corrections invisible to untrained observers but unsettling to those who notice.",
+                                 "posture_movement":  "Economical and coiled. Stands with weight distributed low, knees never fully locked. Moves with deliberate precisionâ€”no wasted motion, no flourish. Head turns before eyes. Hands positioned where they can be useful. Default expression is neutral, almost flat, with minimal micro-expression leakageâ€”move-by-wire teaches you to compartmentalize.",
+                                 "clothing_style":  "Tier 3-4 working class blended with runner aesthetics. Typically wears fitted synth-leather jackets in charcoal or navy, reinforced at shoulders and elbows with discreet ablative weave. Under-layers are technical: moisture-wicking, temperature-adaptive fabrics from mid-tier corporate spillover. Pants are cargo-cut synthetic denim, pockets deep and reinforced. Boots are steel-toed, worn, broken in, reliable. No jewelry beyond a simple titanium wrist cuff that doubles as a data interface. When maintaining her cover identity, she switches to plain synthetic cotton and neutral colors, but the wear patterns and fit always remain functionalâ€”she cannot help but dress for violence.",
+                                 "distinguishing_marks":  [
+                                                              "Thin surgical scar running from left temple to behind the ear, site of chromatic pigment cell matrix installation.",
+                                                              "Parallel scarring along right jawline where the dermal augmentation\u0027s neural feeds were anchored.",
+                                                              "Faint chemical burn mark on inner left wristâ€”old, from early augmentation work.",
+                                                              "Tattoo on right forearm: geometric Akan symbol (Gye Nyame), done in metallic ink that catches light."
+                                                          ]
+                             },
+    "image_prompt":  "Cayetano Souvannasane, compact 158cm frame with densely muscled build, warm burnished medium-brown skin with golden-copper undertones reflecting Southeast Asian, Hispanic, and Eastern European heritage blend. Dark brown eyes with subtle iridescence. Black hair with rust undertones pulled tight in a braid. Institutional surgical scars visible at temples and jawline from chromatic dermal augmentation. Chromatic pigment cells shifting copper-slate-black across shoulders and neck. Callused hands, coiled posture with weight distributed low. Worn steel-toed boots, fitted charcoal synth-leather jacket with ablative weave reinforcement, technical base layers, cargo denim. Titanium wrist cuff data interface. Geometric Gye Nyame tattoo on right forearm in metallic ink. GLMZ Great Lakes Metropolitan Zone, neutral expression, economical movement, standing ready in industrial neon-lit setting, cool and warm lighting catching skin iridescence and augmentation patterns, photorealistic, intricate detail on scars and augmentation marks --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  54.1,
+                             "Hispanic/Latin American":  38.6,
+                             "Eastern European":  7.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  54.1
+                                                                }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Colombian":  11.5,
+                                                                                   "Brazilian":  13.6
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  1.7
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Haitian":  11.8
+                                                                          }
+                                                        },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  7.3
+                                                                         }
+                                                 }
+                        },
+    "tier":  "3"
 }

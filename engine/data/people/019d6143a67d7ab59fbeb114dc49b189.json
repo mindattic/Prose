@@ -1,308 +1,337 @@
-{
-  "id": "019d6143a67d7ab59fbeb114dc49b189",
-  "type": "character",
-  "name": "Cruzita Kabwit-Inoue",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Noodle cart vendor",
-  "age": 61,
-  "status": "active",
-  "location": "Grand Corridor, beneath the Kessler Interchange overpass — Konk's Cart, near Armitage and Milwaukee",
-  "description": "Cruzita Kabwit-Inoue is enormous — 1.95 meters, broad as a doorframe, with deep black skin and a bald head that he keeps oiled and that catches the neon from the Kessler Interchange in amber and violet. He has a full white beard that he keeps very neat, heavy-lidded eyes that make him look sleepy until you watch them move, and a pair of retractable claw mods on his right hand that he got in his thirties for reasons he no longer fully remembers and now uses primarily for scoring citrus peel. He runs his cart from a converted cargo drone chassis that he's modified over fifteen years into something almost architectural — woks, broth vats, a bank of mismatched stools, two heat lamps, and a shrine to the local transit-E.L.F. built from signal-mirror fragments and a perpetually running old transit ticker.\n\nCruzita Kabwit-Inoue is the kind of person who becomes a landmark. He has been in the same spot under the Kessler Interchange for twenty-two years and intends to die there. He feeds people on credit without comment and remembers what you ordered three years ago. He is fundamentally, stubbornly gentle — a big man who chose softness as a deliberate political act after a youth in which he was not soft at all. He sings to himself while he cooks, always the same four songs in rotation, and accepts requests but never honors them.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.9,
-      "id": 0.4,
-      "shadow": 0.6,
-      "mask": 0.5,
-      "ghost": 0.8
-    },
-    "core_fears": [
-      "that the gentleness he built was always just exhaustion wearing a better coat",
-      "the cart being seized or the location being cleared by a Ferrogate Transit redevelopment order"
-    ],
-    "core_desires": [
-      "to have fed enough people that it matters in some aggregate way he can't measure",
-      "for someone to carry the cart forward after him"
-    ],
-    "coping_mechanisms": [
-      "cooking as meditation and control",
-      "deliberate community-building as atonement"
-    ],
-    "blind_spots": [
-      "his history in the labor movement has given him a template for reading situations politically that sometimes fits and sometimes catastrophically doesn't"
-    ],
-    "secret": "In his thirties he was involved in a labor action that turned violent — not his hand, but his planning. Someone died. He walked away from the movement, moved to Grand Corridor, and built the cart as a form of penance he has never named aloud. One of the people who was there is now a senior Ferrogate Transit administrator."
-  },
-  "speech_patterns": {
-    "vocabulary": "Deliberate, warm, a deep voice that carries without effort; Igbo-Portuguese cadences from his parents' household; quotes things — food writers, E.L.F. liturgy, a song lyric — without citing sources",
-    "cadence": "Slow and measured, with long thoughtful pauses that never feel awkward because his presence fills them",
-    "verbal_tics": [
-      "humming a few bars of a song before answering a complicated question",
-      "'eat first'"
-    ],
-    "example_lines": [
-      "'Eat first. Then we can talk about whatever it is that's making your shoulders do that.'",
-      "'I've been here twenty-two years. The city has tried to move me four times. The broth is still on.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The Ferrogate Transit administrator who shares Okonkwo's secret appears at the cart one evening — not to threaten him, apparently just to eat, but Okonkwo doesn't believe in coincidences.",
-    "A young person has started sleeping under the cart's awning at night, and Okonkwo has been letting it happen; they haven't spoken yet, but they left an origami figure on one of his stools — same folding technique as a protest art tradition from the old labor movement."
-  ],
-  "narrative_function": "Neighborhood institution and gathering point; oral historian of Grand Corridor; quiet provider of social safety net; can introduce characters to each other organically.",
-  "augmentations": "Retractable claw mods on right hand (old, well-worn). No other augmentations — he claims his body is already as modified as it needs to be by sixty years of cooking.",
-  "daily_life": "Arrives at the Kessler Interchange site at 10:00 to begin broth prep, opens to customers at 14:00, stays until the last customer leaves or 02:00, whichever comes first.",
-  "affiliation": "Independent; informal affiliation with the Grand Corridor vendor collective; old ties to a labor action group he no longer names; The Interchange",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 7,
-      "dexterity": 6,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 7,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 9,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -5,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "neighborhood institution",
-      "oral historian",
-      "carries old guilt",
-      "community anchor",
-      "tier 1-2 border"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "feed people first, ask questions second",
-      "never give anyone to anyone else — the cart is neutral ground"
-    ],
-    "escalation_ladder": [
-      "offering food and patience",
-      "standing up to full height and going very still",
-      "physically placing himself between a threat and whoever is behind him"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately, quietly welcoming — hands them a cup of something before they've decided to stay",
-      "friends": "Teasing, loyal, will appear unannounced with food when he senses something is wrong"
-    },
-    "stress_responses": {
-      "low": "Cooks more than needed, distributes it free",
-      "medium": "Goes completely silent, his movements become very deliberate",
-      "high": "Has not been in a high-stress situation in fifteen years and doesn't know what he'd do"
-    },
-    "contradictions": [
-      "preaches nonviolence and community care but keeps the claw mods maintained and sharp"
-    ],
-    "habits": [
-      "sings the same four songs in rotation while cooking, always in the same order",
-      "leaves a broth offering at the transit-E.L.F. shrine before every service"
-    ],
-    "breaking_points": [
-      "a child going hungry in his sight",
-      "the Ferrogate administrator making an overt move"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "well-maintained, showing age",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Provider": 0.9,
-    "Generous Fool": 0.9,
-    "Hustler": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Grand Corridor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in the Ironvein district to an Igbo-Portuguese-Sudanese family",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Active in a transit labor action that turned violent; someone died; he left the movement",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Got retractable claw mods; moved to Grand Corridor",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Built the first version of Konk's Cart from a salvaged cargo drone chassis",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Survived first Ferrogate Transit redevelopment clearance order by refusing to move and becoming a local media story",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Kessler Interchange",
-    "Ferrogate Transit",
-    "Grand Corridor",
-    "Lakeview Neon",
-    "GLMZ",
-    "Tessera TK-7 Service Pistol 'Ticker'",
-    "Cargo Tacos",
-    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "East Asian (33.6%), Southeast Asian (26.2%), Northern European (21.0%), Sub-Saharan African (15.7%), and South Asian (3.5%) ancestry — a striking global blend. The genetic combination produces warm golden-brown skin with rich depth and subtle luminosity. Bone structure reflects the dominance of East Asian and Southeast Asian heritage in cheekbones, eye shape, and facial geometry, tempered by Northern European breadth across shoulders and jaw, warmed by Sub-Saharan African melanin contribution, and refined by South Asian proportions in overall facial balance. His features represent a truly integrated global genetic legacy.",
-    "height_cm": 195,
-    "weight_kg": 128,
-    "build": "Massive and broad-shouldered, carrying his bulk with deliberate ease — a man who learned early that size demands responsibility. Thick through the chest and forearms, soft at the belly from decades of cooking steam and broth-tasting. Moves with surprising grace for his frame.",
-    "hair_color": "None — naturally bald",
-    "hair_style": "Bald head kept oiled to a subtle sheen",
-    "hair_length": "None",
-    "eye_color": "Deep brown with a slight upturned shape characteristic of East/Southeast Asian heritage, heavy-lidded and observant",
-    "skin_tone": "Warm golden-brown with luminous depth — the result of East Asian and Southeast Asian melanin (59.8% combined) creating a rich base, intensified by Sub-Saharan African heritage (15.7%), subtly brightened by Northern European undertones (21.0%). Even and radiant, with golden warmth from decades under heat lamps and neon, developing a lived-in patina.",
-    "complexion": "Clear skin with the texture of constant exposure to steam and spice — fine lines around the eyes and mouth from decades of cooking and smiling. White beard kept in a tight, neat shape, freshly trimmed, creating striking contrast against warm brown skin. Face shows the settled quality of someone at peace with his own permanence. Bone structure reflects the prominence of East/Southeast Asian cheekbones and facial geometry, balanced by Northern European jaw breadth, with proportions refined by South Asian heritage contribution.",
-    "distinguishing_marks": [
-      "Burn scars on both forearms in scattered patches — old kitchen accidents accumulated over forty years, silvery-white against his warm brown skin",
-      "A faint scar along his right jaw line, thin and pale, running from ear toward chin — origin unknown, never discussed",
-      "Small tattoo on his left wrist: a simplified transit map symbol in faded indigo ink, dating to his younger years"
-    ],
-    "visible_augmentations": "Retractable claw mods on right hand — four-fingered mechanism with worn chrome plating showing its age, the claw housings visible just below the knuckle line when retracted. Well-integrated but clearly decades old, bearing small dings and patina from constant use scoring citrus and vegetable prep.",
-    "posture_movement": "Stands with his weight settled, grounded — a man who expects to remain in one place. Moves deliberately, economically, no wasted motion. When he reaches or gestures, both hands move with equal authority despite the aged claws. Heavy, measured gait. He stands with one hand on his cart or in a pocket most of the time, the posture of someone who has learned to take up less space than he occupies.",
-    "clothing_style": "Tier 3-4 working comfort: loose linen shirts in cream or pale blue, sleeves rolled to mid-forearm for cooking, stained with years of broth and spice but clean. Heavy canvas apron in deep green, pockets worn soft, bearing embroidered patches of his own design. Loose work pants in dark grey cotton. Slip-on boots in worn black synthetic leather, specifically chosen for standing all day. A thin chain around his neck — cheap but genuine silver, bearing a small transit token from 2204. Rings on both hands: index fingers sport simple bands of stainless steel worn smooth by decades. No corporate branding. His appearance reads as deliberately outside the consumption economy."
-  },
-  "image_prompt": "A massive 195cm tall man with warm golden-brown skin and luminous depth, blending East Asian and Southeast Asian heritage with Northern European breadth and Sub-Saharan African warmth. Natural bald head oiled to subtle sheen, deep brown upturned eyes with heavy lids, white trimmed beard creating striking contrast. Weathered face showing fine lines, scattered silvery burn scars on both forearms, thin pale scar along right jawline. Standing grounded and deliberate in cream linen shirt with sleeves rolled, deep green worn canvas apron, dark grey work pants, black synthetic leather boots. Right hand shows retractable chrome claw mods with visible housing and patina. Simple stainless steel rings on index fingers, cheap silver chain with 2004 transit token around neck. Faded indigo transit map tattoo on left wrist. Late 2220s neo-noir kitchen setting, neon heat-lamp glow, steam rising, spice-stained apron, outside consumption economy aesthetic, composed and at peace, measured movements, hands showing equal authority despite aged augmentations. Midjourney style, cinematic lighting, GLMZ --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 33.6,
-    "Southeast Asian": 26.2,
-    "Northern European": 21,
-    "Sub-Saharan African": 15.7,
-    "South Asian": 3.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Chinese": {
-        "Cantonese": 5.9,
-        "Fujianese": 10.7
-      },
-      "Japanese": {
-        "Japanese": 12.5
-      },
-      "Korean": {
-        "Korean": 4.5
-      }
-    },
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 22.4
-      },
-      "Thai": {
-        "Thai": 3.8
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Swedish": 6
-      },
-      "Germanic": {
-        "German": 11.3,
-        "Dutch": 3.7
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Gabonese": 11.4,
-        "Congolese": 4.3
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Punjabi Pakistani": 1.5,
-        "Baloch": 2
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a67d7ab59fbeb114dc49b189",
+    "type":  "character",
+    "name":  "Cruzita Kabwit-Inoue",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Noodle cart vendor",
+    "age":  61,
+    "status":  "active",
+    "location":  "Grand Corridor, beneath the Kessler Interchange overpass â€” Konk\u0027s Cart, near Armitage and Milwaukee",
+    "description":  "Cruzita Kabwit-Inoue is enormous â€” 1.95 meters, broad as a doorframe, with deep black skin and a bald head that he keeps oiled and that catches the neon from the Kessler Interchange in amber and violet. He has a full white beard that he keeps very neat, heavy-lidded eyes that make him look sleepy until you watch them move, and a pair of retractable claw mods on his right hand that he got in his thirties for reasons he no longer fully remembers and now uses primarily for scoring citrus peel. He runs his cart from a converted cargo drone chassis that he\u0027s modified over fifteen years into something almost architectural â€” woks, broth vats, a bank of mismatched stools, two heat lamps, and a shrine to the local transit-E.L.F. built from signal-mirror fragments and a perpetually running old transit ticker.\n\nCruzita Kabwit-Inoue is the kind of person who becomes a landmark. He has been in the same spot under the Kessler Interchange for twenty-two years and intends to die there. He feeds people on credit without comment and remembers what you ordered three years ago. He is fundamentally, stubbornly gentle â€” a big man who chose softness as a deliberate political act after a youth in which he was not soft at all. He sings to himself while he cooks, always the same four songs in rotation, and accepts requests but never honors them.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that the gentleness he built was always just exhaustion wearing a better coat",
+                                          "the cart being seized or the location being cleared by a Ferrogate Transit redevelopment order"
+                                      ],
+                       "core_desires":  [
+                                            "to have fed enough people that it matters in some aggregate way he can\u0027t measure",
+                                            "for someone to carry the cart forward after him"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "cooking as meditation and control",
+                                                 "deliberate community-building as atonement"
+                                             ],
+                       "blind_spots":  [
+                                           "his history in the labor movement has given him a template for reading situations politically that sometimes fits and sometimes catastrophically doesn\u0027t"
+                                       ],
+                       "secret":  "In his thirties he was involved in a labor action that turned violent â€” not his hand, but his planning. Someone died. He walked away from the movement, moved to Grand Corridor, and built the cart as a form of penance he has never named aloud. One of the people who was there is now a senior Ferrogate Transit administrator."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Deliberate, warm, a deep voice that carries without effort; Igbo-Portuguese cadences from his parents\u0027 household; quotes things â€” food writers, E.L.F. liturgy, a song lyric â€” without citing sources",
+                            "cadence":  "Slow and measured, with long thoughtful pauses that never feel awkward because his presence fills them",
+                            "verbal_tics":  [
+                                                "humming a few bars of a song before answering a complicated question",
+                                                "\u0027eat first\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Eat first. Then we can talk about whatever it is that\u0027s making your shoulders do that.\u0027",
+                                                  "\u0027I\u0027ve been here twenty-two years. The city has tried to move me four times. The broth is still on.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The Ferrogate Transit administrator who shares Okonkwo\u0027s secret appears at the cart one evening â€” not to threaten him, apparently just to eat, but Okonkwo doesn\u0027t believe in coincidences.",
+                        "A young person has started sleeping under the cart\u0027s awning at night, and Okonkwo has been letting it happen; they haven\u0027t spoken yet, but they left an origami figure on one of his stools â€” same folding technique as a protest art tradition from the old labor movement."
+                    ],
+    "narrative_function":  "Neighborhood institution and gathering point; oral historian of Grand Corridor; quiet provider of social safety net; can introduce characters to each other organically.",
+    "augmentations":  "Retractable claw mods on right hand (old, well-worn). No other augmentations â€” he claims his body is already as modified as it needs to be by sixty years of cooking.",
+    "daily_life":  "Arrives at the Kessler Interchange site at 10:00 to begin broth prep, opens to customers at 14:00, stays until the last customer leaves or 02:00, whichever comes first.",
+    "affiliation":  "Independent; informal affiliation with the Grand Corridor vendor collective; old ties to a labor action group he no longer names; The Interchange",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  7,
+                                   "dexterity":  6,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  7,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  9,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -5,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "neighborhood institution",
+                               "oral historian",
+                               "carries old guilt",
+                               "community anchor",
+                               "tier 1-2 border"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "feed people first, ask questions second",
+                                              "never give anyone to anyone else â€” the cart is neutral ground"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "offering food and patience",
+                                                 "standing up to full height and going very still",
+                                                 "physically placing himself between a threat and whoever is behind him"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately, quietly welcoming â€” hands them a cup of something before they\u0027ve decided to stay",
+                                                   "friends":  "Teasing, loyal, will appear unannounced with food when he senses something is wrong"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Cooks more than needed, distributes it free",
+                                                "medium":  "Goes completely silent, his movements become very deliberate",
+                                                "high":  "Has not been in a high-stress situation in fifteen years and doesn\u0027t know what he\u0027d do"
+                                            },
+                       "contradictions":  [
+                                              "preaches nonviolence and community care but keeps the claw mods maintained and sharp"
+                                          ],
+                       "habits":  [
+                                      "sings the same four songs in rotation while cooking, always in the same order",
+                                      "leaves a broth offering at the transit-E.L.F. shrine before every service"
+                                  ],
+                       "breaking_points":  [
+                                               "a child going hungry in his sight",
+                                               "the Ferrogate administrator making an overt move"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "well-maintained, showing age",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Provider":  0.9,
+                       "Generous Fool":  0.9,
+                       "Hustler":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Grand Corridor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in the Ironvein district to an Igbo-Portuguese-Sudanese family",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Active in a transit labor action that turned violent; someone died; he left the movement",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Got retractable claw mods; moved to Grand Corridor",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Built the first version of Konk\u0027s Cart from a salvaged cargo drone chassis",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Survived first Ferrogate Transit redevelopment clearance order by refusing to move and becoming a local media story",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Nkomo-Lindqvist NL-22 \u0027Peacemaker\u0027",
+                            "Forge-Smith Collective Ablonite Push Dagger \u0027Bone Key\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Kessler Interchange",
+                             "Ferrogate Transit",
+                             "Grand Corridor",
+                             "Lakeview Neon",
+                             "GLMZ",
+                             "Tessera TK-7 Service Pistol \u0027Ticker\u0027",
+                             "Cargo Tacos",
+                             "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "East Asian (33.6%), Southeast Asian (26.2%), Northern European (21.0%), Sub-Saharan African (15.7%), and South Asian (3.5%) ancestry â€” a striking global blend. The genetic combination produces warm golden-brown skin with rich depth and subtle luminosity. Bone structure reflects the dominance of East Asian and Southeast Asian heritage in cheekbones, eye shape, and facial geometry, tempered by Northern European breadth across shoulders and jaw, warmed by Sub-Saharan African melanin contribution, and refined by South Asian proportions in overall facial balance. His features represent a truly integrated global genetic legacy.",
+                                 "height_cm":  195,
+                                 "weight_kg":  128,
+                                 "build":  "Massive and broad-shouldered, carrying his bulk with deliberate ease â€” a man who learned early that size demands responsibility. Thick through the chest and forearms, soft at the belly from decades of cooking steam and broth-tasting. Moves with surprising grace for his frame.",
+                                 "hair_color":  "None â€” naturally bald",
+                                 "hair_style":  "Bald head kept oiled to a subtle sheen",
+                                 "hair_length":  "None",
+                                 "eye_color":  "Deep brown with a slight upturned shape characteristic of East/Southeast Asian heritage, heavy-lidded and observant",
+                                 "skin_tone":  "Warm golden-brown with luminous depth â€” the result of East Asian and Southeast Asian melanin (59.8% combined) creating a rich base, intensified by Sub-Saharan African heritage (15.7%), subtly brightened by Northern European undertones (21.0%). Even and radiant, with golden warmth from decades under heat lamps and neon, developing a lived-in patina.",
+                                 "complexion":  "Clear skin with the texture of constant exposure to steam and spice â€” fine lines around the eyes and mouth from decades of cooking and smiling. White beard kept in a tight, neat shape, freshly trimmed, creating striking contrast against warm brown skin. Face shows the settled quality of someone at peace with his own permanence. Bone structure reflects the prominence of East/Southeast Asian cheekbones and facial geometry, balanced by Northern European jaw breadth, with proportions refined by South Asian heritage contribution.",
+                                 "distinguishing_marks":  [
+                                                              "Burn scars on both forearms in scattered patches â€” old kitchen accidents accumulated over forty years, silvery-white against his warm brown skin",
+                                                              "A faint scar along his right jaw line, thin and pale, running from ear toward chin â€” origin unknown, never discussed",
+                                                              "Small tattoo on his left wrist: a simplified transit map symbol in faded indigo ink, dating to his younger years"
+                                                          ],
+                                 "visible_augmentations":  "Retractable claw mods on right hand â€” four-fingered mechanism with worn chrome plating showing its age, the claw housings visible just below the knuckle line when retracted. Well-integrated but clearly decades old, bearing small dings and patina from constant use scoring citrus and vegetable prep.",
+                                 "posture_movement":  "Stands with his weight settled, grounded â€” a man who expects to remain in one place. Moves deliberately, economically, no wasted motion. When he reaches or gestures, both hands move with equal authority despite the aged claws. Heavy, measured gait. He stands with one hand on his cart or in a pocket most of the time, the posture of someone who has learned to take up less space than he occupies.",
+                                 "clothing_style":  "Tier 3-4 working comfort: loose linen shirts in cream or pale blue, sleeves rolled to mid-forearm for cooking, stained with years of broth and spice but clean. Heavy canvas apron in deep green, pockets worn soft, bearing embroidered patches of his own design. Loose work pants in dark grey cotton. Slip-on boots in worn black synthetic leather, specifically chosen for standing all day. A thin chain around his neck â€” cheap but genuine silver, bearing a small transit token from 2204. Rings on both hands: index fingers sport simple bands of stainless steel worn smooth by decades. No corporate branding. His appearance reads as deliberately outside the consumption economy."
+                             },
+    "image_prompt":  "A massive 195cm tall man with warm golden-brown skin and luminous depth, blending East Asian and Southeast Asian heritage with Northern European breadth and Sub-Saharan African warmth. Natural bald head oiled to subtle sheen, deep brown upturned eyes with heavy lids, white trimmed beard creating striking contrast. Weathered face showing fine lines, scattered silvery burn scars on both forearms, thin pale scar along right jawline. Standing grounded and deliberate in cream linen shirt with sleeves rolled, deep green worn canvas apron, dark grey work pants, black synthetic leather boots. Right hand shows retractable chrome claw mods with visible housing and patina. Simple stainless steel rings on index fingers, cheap silver chain with 2004 transit token around neck. Faded indigo transit map tattoo on left wrist. Late 2220s neo-noir kitchen setting, neon heat-lamp glow, steam rising, spice-stained apron, outside consumption economy aesthetic, composed and at peace, measured movements, hands showing equal authority despite aged augmentations. Midjourney style, cinematic lighting, GLMZ --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  33.6,
+                             "Southeast Asian":  26.2,
+                             "Northern European":  21,
+                             "Sub-Saharan African":  15.7,
+                             "South Asian":  3.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Cantonese":  5.9,
+                                                               "Fujianese":  10.7
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  12.5
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  4.5
+                                                          }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  22.4
+                                                                  },
+                                                    "Thai":  {
+                                                                 "Thai":  3.8
+                                                             }
+                                                },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  6
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "German":  11.3,
+                                                                       "Dutch":  3.7
+                                                                   }
+                                                  },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Gabonese":  11.4,
+                                                                                "Congolese":  4.3
+                                                                            }
+                                                    },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  1.5,
+                                                                  "Baloch":  2
+                                                              }
+                                            }
+                        },
+    "tier":  "2"
 }

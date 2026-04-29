@@ -1,354 +1,367 @@
-{
-  "id": "019d6143a5b87c0e92fb61e216ead521",
-  "type": "character",
-  "name": "Cleo Dalgaard",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Aerial extraction and rapid transit pilot — getaway pilot",
-  "age": 59,
-  "status": "active",
-  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Cleo Dalgaard is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 59, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a getaway pilot out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nCleo Dalgaard is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.55,
-      "ideal": 0.54,
-      "id": 0.71,
-      "shadow": 0.62,
-      "mask": 0.26,
-      "ghost": 0.83
-    },
-    "core_fears": [
-      "Losing control of their own body to a hacker or malfunctioning cyberware",
-      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
-      "Their past catching up — debts, enemies, broken promises"
-    ],
-    "core_desires": [
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "To matter to someone for who they are, not what they can do",
-      "To prove everyone who dismissed them catastrophically wrong"
-    ],
-    "coping_mechanisms": [
-      "Violence — hits something when they can't process emotions, preferably something that deserves it",
-      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
-    ],
-    "blind_spots": [
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
-      "Assumes their skill set is more transferable than it actually is",
-      "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
-    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
-    "verbal_tics": [
-      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
-      "Calls money 'weight' — as in 'that job doesn't carry enough weight'"
-    ],
-    "example_lines": [
-      "\"Vertical extraction in thirty seconds. Don't be late.\"",
-      "\"I fly things that aren't supposed to fly in places they aren't supposed to go.\"",
-      "\"Airspace regulations are for people who file flight plans. I don't file flight plans.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Aslan Granlund-Tawiah's reputation — and a price for silence",
-    "A high-paying contract turns out to target someone Aslan Granlund-Tawiah owes a personal debt to",
-    "Aslan Granlund-Tawiah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
-  ],
-  "narrative_function": "Aslan Granlund-Tawiah functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Vocal modulator — can replicate any voice after 30 seconds of sample audio. Geneware muscle density treatment — looks natural, hits like chrome",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Independent — Dockside connections",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 10
-      },
-      "agility": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 4
-      },
-      "endurance": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 6
-      },
-      "reflexes": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 4
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 7
-      },
-      "perception": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 9
-      },
-      "willpower": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 6
-      },
-      "technical": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 4
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 8
-      },
-      "intimidation": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 7
-      },
-      "deception": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 5
-      },
-      "empathy": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 8
-      }
-    },
-    "personality": {
-      "aggression": 0.81,
-      "caution": 0.62,
-      "loyalty": 0.74,
-      "greed": 0.94,
-      "empathy": 0.28
-    },
-    "drives": [
-      "loyalty",
-      "revenge",
-      "knowledge"
-    ],
-    "thresholds": {
-      "pain": 9,
-      "stress": 3,
-      "loyalty_break": 5
-    },
-    "strengths": [
-      "ability to remain calm under fire",
-      "technical expertise with augmentation systems",
-      "natural leadership presence"
-    ],
-    "weaknesses": [
-      "chronic insomnia affecting long-term performance",
-      "physical limitation from incomplete augmentation",
-      "grudge-holding that compromises rational decision-making"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "getaway pilot",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Never discusses active contracts with anyone not directly involved",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
-      "Projects confidence but makes decisions from a foundation of fear they've never examined"
-    ],
-    "habits": [
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Keeps a physical paper notebook — no digital record of personal thoughts",
-      "Eats the same meal before every job — superstition masquerading as preference",
-      "Checks exits within 10 seconds of entering any room"
-    ],
-    "breaking_points": [
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Discovering their employer deliberately sent them into a death trap",
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Vocal modulator",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Vocal modulator — can replicate any voice after 30 seconds of sample audio",
-      "replaces": ""
-    },
-    {
-      "name": "Geneware muscle density treatment",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Geneware muscle density treatment — looks natural, hits like chrome",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Improviser": 0.9,
-    "Risk Taker": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Spires",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Nearfield",
-    "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "Complex panethnic ancestry combining Northern European (48%), Sub-Saharan African (26.4%), Indigenous American (13.9%), East Asian (10.9%), and trace Middle Eastern (0.8%) genetics. This rare combination creates a phenotype that reads as distinctly diaspora-mixed: Northern European bone structure provides baseline facial angles and bridge refinement; Sub-Saharan African ancestry contributes rich melanin depth, pronounced cheekbone geometry, and fuller lip structure; Indigenous American heritage adds distinctive cheekbone prominence and facial width; East Asian genetics refine the eye shape with slight epicanthic quality and contribute bridge definition; trace Middle Eastern warmth adds subtle richness to overall tone. The result is an unmistakably global face — no single heritage dominates visually, creating a striking geometric blend that marks her as Ubiquitous Diaspora generation.",
-    "height_cm": 183,
-    "weight_kg": 71,
-    "build": "Lean and angular, with wiry musculature that reads as natural until you see her move — geneware muscle density treatment gives her deceptive power in economical frame",
-    "hair_color": "Iron gray with faded copper undertones",
-    "hair_style": "Pulled back tight, practical, minimal styling",
-    "hair_length": "Medium — shoulder-length, utilitarian",
-    "eye_color": "Light brown with amber rim",
-    "skin_tone": "Rich warm bronze with complex undertone interplay: honeyed base from Northern European fairness harmonizing with deep melanin richness from Sub-Saharan African ancestry, further warmed by East Asian undertones and sun-weathered from outdoor flight hours. In natural light reads as luminous bronze; in shadow deepens to warm mahogany brown. Melanin distribution creates visual depth while maintaining brightness characteristic of mixed Northern European heritage.",
-    "complexion": "Striking geometric blend of global features: broad, prominent cheekbones with fullness reflecting Sub-Saharan African and Indigenous American ancestry meet angular, defined Northern European jaw structure. Eyes refined by East Asian genetics with subtle epicanthic fold and darker iris pigmentation. Nasal bridge is fine and straight, influenced by Northern European and East Asian ancestry, with base width reflecting African heritage. Overall facial geometry is distinctly panethnic — wide through the cheekbones, tapered at the jaw, refined at the bridge. Lip structure fuller from African ancestry. Skin texture shows sun-weathering and callus marks; minimal cosmetic grooming.",
-    "distinguishing_marks": [
-      "Thin scar across left temple, barely visible unless light catches it, old and precise",
-      "Callused hands from flight stick work, knuckles scarred from early-career accidents",
-      "Burn scar on right forearm (inner side, 8cm), faded but visible, from an extraction-gone-wrong in 2219"
-    ],
-    "visible_augmentations": "Chrome vocal modulator visible at throat — brushed titanium insert at anterior neck, approximately 4cm wide, with subtle LED indicator that glows soft blue when in use. No attempt to conceal it. Moves with the ease of someone who has worn chrome long enough to forget it isn't bone.",
-    "posture_movement": "Economical, minimal gesture. Sits with weight distributed for quick movement. Walks like she's always calculating sight lines and exit vectors. When speaking, hand movements are deliberate and spare — the chrome modulator does the work. Eyes track movement constantly, habit not paranoia.",
-    "clothing_style": "Tier 2-3 hybrid: functional tactical base (reinforced flight jacket in matte black synthetic, utility cargo pants in charcoal gray), paired with mid-tier civilian approximation (understated brands, nothing that flags wealth or gang affiliation). Wears a worn leather flight jacket over everything — pre-2200s, hand-tooled, tells its own story. Boots are military-grade and regularly maintained. Jewelry minimal: a simple ring on her left ring finger, tarnished silver, worn smooth."
-  },
-  "image_prompt": "Cleo Dalgaard, 183cm tall diaspora pilot with unmistakably global features: rich warm bronze skin blending Northern European, Sub-Saharan African, Indigenous American, and East Asian heritage. Broad high cheekbones, angular jaw, refined East Asian eye shape with light brown-amber eyes, straight nasal bridge with subtle fullness at base. Iron gray hair with copper undertones pulled back tight. Thin scar across left temple barely visible. Brushed titanium vocal modulator at throat glowing soft blue. Wearing matte black reinforced flight jacket over charcoal utility cargo pants, worn pre-2200s hand-tooled leather jacket, military-grade boots. Tarnished silver ring on left ring finger. Economical posture, calculating gaze tracking sight lines. GLMZ cockpit or industrial dock setting, cool neon and natural light mixing, her global phenotype striking against chrome and concrete. Mood: competent, weathered, diaspora-generation survivor. Professional portrait, angular geometric composition highlighting her panethnic features. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 48,
-    "Sub-Saharan African": 26.4,
-    "Indigenous American": 13.9,
-    "East Asian": 10.9,
-    "Middle Eastern": 0.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Scandinavian": {
-        "Norwegian": 48
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 26.4
-      }
-    },
-    "Indigenous American": {
-      "Andean": {
-        "Quechua": 13.9
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 5.6
-      },
-      "Japanese": {
-        "Japanese": 3.6
-      },
-      "Chinese": {
-        "Mandarin Northern": 1.4,
-        "Shanghainese": 0.3
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Tajik Persian": 0.5,
-        "Iranian": 0.1
-      },
-      "Arab Levantine": {
-        "Lebanese": 0.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5b87c0e92fb61e216ead521",
+    "type":  "character",
+    "name":  "Cleo Dalgaard",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Aerial extraction and rapid transit pilot â€” getaway pilot",
+    "age":  59,
+    "status":  "active",
+    "location":  "The Spires â€” mid-level corporate residential towers, near Michigan Ave and Oak",
+    "description":  "Cleo Dalgaard is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 59, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible â€” vocal modulator â€” can replicate any voice after 30 seconds of sample audio â€” and she makes no effort to hide it.\n\nHer entry into running was involuntary â€” a debt to the wrong people, a choice between working it off or losing parts â€” and the debt is still not fully paid. She works as a getaway pilot out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nCleo Dalgaard is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing control of their own body to a hacker or malfunctioning cyberware",
+                                          "Never being able to stop running â€” the lifestyle is a trap disguised as freedom",
+                                          "Their past catching up â€” debts, enemies, broken promises"
+                                      ],
+                       "core_desires":  [
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail",
+                                            "To matter to someone for who they are, not what they can do",
+                                            "To prove everyone who dismissed them catastrophically wrong"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Violence â€” hits something when they can\u0027t process emotions, preferably something that deserves it",
+                                                 "Control â€” micromanages everything within reach to compensate for the chaos everywhere else",
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
+                                             ],
+                       "blind_spots":  [
+                                           "Mistakes pattern recognition for wisdom â€” sees connections that aren\u0027t there",
+                                           "Assumes their skill set is more transferable than it actually is",
+                                           "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+                            "cadence":  "Rapid and dense â€” information-heavy sentences that demand attention.",
+                            "verbal_tics":  [
+                                                "Pauses mid-sentence to listen â€” combat habit that bleeds into conversation",
+                                                "Calls money \u0027weight\u0027 â€” as in \u0027that job doesn\u0027t carry enough weight\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Vertical extraction in thirty seconds. Don\u0027t be late.\"",
+                                                  "\"I fly things that aren\u0027t supposed to fly in places they aren\u0027t supposed to go.\"",
+                                                  "\"Airspace regulations are for people who file flight plans. I don\u0027t file flight plans.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A former associate resurfaces with evidence that could destroy Aslan Granlund-Tawiah\u0027s reputation â€” and a price for silence",
+                        "A high-paying contract turns out to target someone Aslan Granlund-Tawiah owes a personal debt to",
+                        "Aslan Granlund-Tawiah\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad"
+                    ],
+    "narrative_function":  "Aslan Granlund-Tawiah functions as a connector â€” her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Vocal modulator â€” can replicate any voice after 30 seconds of sample audio. Geneware muscle density treatment â€” looks natural, hits like chrome",
+    "daily_life":  "Between contracts, maintains a cover identity â€” mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+    "affiliation":  "Independent â€” Dockside connections",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  3,
+                                                    "effective":  10
+                                                },
+                                   "agility":  {
+                                                   "base":  8,
+                                                   "augmented":  0,
+                                                   "effective":  4
+                                               },
+                                   "endurance":  {
+                                                     "base":  7,
+                                                     "augmented":  2,
+                                                     "effective":  6
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  8,
+                                                    "augmented":  3,
+                                                    "effective":  4
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  3,
+                                                      "augmented":  1,
+                                                      "effective":  7
+                                                  },
+                                 "perception":  {
+                                                    "base":  7,
+                                                    "augmented":  0,
+                                                    "effective":  9
+                                                },
+                                 "willpower":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  6
+                                               },
+                                 "technical":  {
+                                                   "base":  5,
+                                                   "augmented":  0,
+                                                   "effective":  4
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  5,
+                                                  "augmented":  0,
+                                                  "effective":  8
+                                              },
+                                 "intimidation":  {
+                                                      "base":  7,
+                                                      "augmented":  0,
+                                                      "effective":  7
+                                                  },
+                                 "deception":  {
+                                                   "base":  7,
+                                                   "augmented":  0,
+                                                   "effective":  5
+                                               },
+                                 "empathy":  {
+                                                 "base":  5,
+                                                 "augmented":  3,
+                                                 "effective":  8
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.81,
+                                      "caution":  0.62,
+                                      "loyalty":  0.74,
+                                      "greed":  0.94,
+                                      "empathy":  0.28
+                                  },
+                  "drives":  [
+                                 "loyalty",
+                                 "revenge",
+                                 "knowledge"
+                             ],
+                  "thresholds":  {
+                                     "pain":  9,
+                                     "stress":  3,
+                                     "loyalty_break":  5
+                                 },
+                  "strengths":  [
+                                    "ability to remain calm under fire",
+                                    "technical expertise with augmentation systems",
+                                    "natural leadership presence"
+                                ],
+                  "weaknesses":  [
+                                     "chronic insomnia affecting long-term performance",
+                                     "physical limitation from incomplete augmentation",
+                                     "grudge-holding that compromises rational decision-making"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "getaway pilot",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Never discusses active contracts with anyone not directly involved",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+                                              "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined"
+                                          ],
+                       "habits":  [
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Keeps a physical paper notebook â€” no digital record of personal thoughts",
+                                      "Eats the same meal before every job â€” superstition masquerading as preference",
+                                      "Checks exits within 10 seconds of entering any room"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Discovering their employer deliberately sent them into a death trap",
+                                               "Complete isolation â€” cut off from network, contacts, and purpose simultaneously"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Vocal modulator",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Vocal modulator â€” can replicate any voice after 30 seconds of sample audio",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Geneware muscle density treatment",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Geneware muscle density treatment â€” looks natural, hits like chrome",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Improviser":  0.9,
+                       "Risk Taker":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Spires",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Nearfield",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "Complex panethnic ancestry combining Northern European (48%), Sub-Saharan African (26.4%), Indigenous American (13.9%), East Asian (10.9%), and trace Middle Eastern (0.8%) genetics. This rare combination creates a phenotype that reads as distinctly diaspora-mixed: Northern European bone structure provides baseline facial angles and bridge refinement; Sub-Saharan African ancestry contributes rich melanin depth, pronounced cheekbone geometry, and fuller lip structure; Indigenous American heritage adds distinctive cheekbone prominence and facial width; East Asian genetics refine the eye shape with slight epicanthic quality and contribute bridge definition; trace Middle Eastern warmth adds subtle richness to overall tone. The result is an unmistakably global face â€” no single heritage dominates visually, creating a striking geometric blend that marks her as Ubiquitous Diaspora generation.",
+                                 "height_cm":  183,
+                                 "weight_kg":  71,
+                                 "build":  "Lean and angular, with wiry musculature that reads as natural until you see her move â€” geneware muscle density treatment gives her deceptive power in economical frame",
+                                 "hair_color":  "Iron gray with faded copper undertones",
+                                 "hair_style":  "Pulled back tight, practical, minimal styling",
+                                 "hair_length":  "Medium â€” shoulder-length, utilitarian",
+                                 "eye_color":  "Light brown with amber rim",
+                                 "skin_tone":  "Rich warm bronze with complex undertone interplay: honeyed base from Northern European fairness harmonizing with deep melanin richness from Sub-Saharan African ancestry, further warmed by East Asian undertones and sun-weathered from outdoor flight hours. In natural light reads as luminous bronze; in shadow deepens to warm mahogany brown. Melanin distribution creates visual depth while maintaining brightness characteristic of mixed Northern European heritage.",
+                                 "complexion":  "Striking geometric blend of global features: broad, prominent cheekbones with fullness reflecting Sub-Saharan African and Indigenous American ancestry meet angular, defined Northern European jaw structure. Eyes refined by East Asian genetics with subtle epicanthic fold and darker iris pigmentation. Nasal bridge is fine and straight, influenced by Northern European and East Asian ancestry, with base width reflecting African heritage. Overall facial geometry is distinctly panethnic â€” wide through the cheekbones, tapered at the jaw, refined at the bridge. Lip structure fuller from African ancestry. Skin texture shows sun-weathering and callus marks; minimal cosmetic grooming.",
+                                 "distinguishing_marks":  [
+                                                              "Thin scar across left temple, barely visible unless light catches it, old and precise",
+                                                              "Callused hands from flight stick work, knuckles scarred from early-career accidents",
+                                                              "Burn scar on right forearm (inner side, 8cm), faded but visible, from an extraction-gone-wrong in 2219"
+                                                          ],
+                                 "visible_augmentations":  "Chrome vocal modulator visible at throat â€” brushed titanium insert at anterior neck, approximately 4cm wide, with subtle LED indicator that glows soft blue when in use. No attempt to conceal it. Moves with the ease of someone who has worn chrome long enough to forget it isn\u0027t bone.",
+                                 "posture_movement":  "Economical, minimal gesture. Sits with weight distributed for quick movement. Walks like she\u0027s always calculating sight lines and exit vectors. When speaking, hand movements are deliberate and spare â€” the chrome modulator does the work. Eyes track movement constantly, habit not paranoia.",
+                                 "clothing_style":  "Tier 2-3 hybrid: functional tactical base (reinforced flight jacket in matte black synthetic, utility cargo pants in charcoal gray), paired with mid-tier civilian approximation (understated brands, nothing that flags wealth or gang affiliation). Wears a worn leather flight jacket over everything â€” pre-2200s, hand-tooled, tells its own story. Boots are military-grade and regularly maintained. Jewelry minimal: a simple ring on her left ring finger, tarnished silver, worn smooth."
+                             },
+    "image_prompt":  "Cleo Dalgaard, 183cm tall diaspora pilot with unmistakably global features: rich warm bronze skin blending Northern European, Sub-Saharan African, Indigenous American, and East Asian heritage. Broad high cheekbones, angular jaw, refined East Asian eye shape with light brown-amber eyes, straight nasal bridge with subtle fullness at base. Iron gray hair with copper undertones pulled back tight. Thin scar across left temple barely visible. Brushed titanium vocal modulator at throat glowing soft blue. Wearing matte black reinforced flight jacket over charcoal utility cargo pants, worn pre-2200s hand-tooled leather jacket, military-grade boots. Tarnished silver ring on left ring finger. Economical posture, calculating gaze tracking sight lines. GLMZ cockpit or industrial dock setting, cool neon and natural light mixing, her global phenotype striking against chrome and concrete. Mood: competent, weathered, diaspora-generation survivor. Professional portrait, angular geometric composition highlighting her panethnic features. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  48,
+                             "Sub-Saharan African":  26.4,
+                             "Indigenous American":  13.9,
+                             "East Asian":  10.9,
+                             "Middle Eastern":  0.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  48
+                                                                       }
+                                                  },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  26.4
+                                                                            }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Quechua":  13.9
+                                                                   }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  5.6
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  3.6
+                                                            },
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  1.4,
+                                                               "Shanghainese":  0.3
+                                                           }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Tajik Persian":  0.5,
+                                                                   "Iranian":  0.1
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Lebanese":  0.2
+                                                                      }
+                                               }
+                        },
+    "tier":  "3"
 }

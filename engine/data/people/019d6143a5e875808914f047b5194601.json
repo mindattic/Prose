@@ -1,377 +1,390 @@
-{
-  "id": "019d6143a5e875808914f047b5194601",
-  "type": "character",
-  "name": "Enola Quartey",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Electronic and physical observation expert — surveillance specialist",
-  "age": 37,
-  "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Michigan Ave South and Cermak",
-  "description": "Enola Quartey are lean and angular, all sharp edges and visible tension. At 37, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and they make no effort to hide it.\n\nThey grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. They work as a surveillance specialist out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Enola Quartey describe them as a precision instrument — point them at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.53,
-      "ideal": 0.86,
-      "id": 0.98,
-      "shadow": 0.96,
-      "mask": 0.18,
-      "ghost": 0.74
-    },
-    "core_fears": [
-      "Their past catching up — debts, enemies, broken promises",
-      "Going cyberpsycho — losing the boundary between human and machine",
-      "Betrayal by someone they trust — the only currency that matters"
-    ],
-    "core_desires": [
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "To protect the people in their district who can't protect themselves",
-      "A crew worth trusting — people who stay when the shooting starts"
-    ],
-    "coping_mechanisms": [
-      "Connection — finds someone to talk to, even if it's a bartender or a cat",
-      "Planning — responds to chaos by making detailed contingency plans for everything",
-      "Violence — hits something when they can't process emotions, preferably something that deserves it"
-    ],
-    "blind_spots": [
-      "Assumes their skill set is more transferable than it actually is",
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
-      "Assumes the worst in corporate people, missing the rare ones who could be allies"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
-    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
-    "verbal_tics": [
-      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
-      "Calls money 'weight' — as in 'that job doesn't carry enough weight'"
-    ],
-    "example_lines": [
-      "\"I've been watching you for three days. You should close your curtains.\"",
-      "\"Information is the only commodity that appreciates with age.\"",
-      "\"Everyone thinks they're careful. Nobody is careful enough.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Daulet Petersen-Bah intercepts intelligence about a threat to their district and must decide between profit and protection",
-    "A dead drop Daulet Petersen-Bah maintains is found and cleaned out — whoever did it now has leverage",
-    "Daulet Petersen-Bah is offered a contract that would clear all their debts — the target is someone they respect"
-  ],
-  "narrative_function": "Daulet Petersen-Bah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters. Neural dampener — blocks external hacking attempts, passive ICE in the brain",
-  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Freelance — available through Circuit fixers",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 4
-      },
-      "agility": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 10
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 10
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 4
-      },
-      "perception": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 6
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 8
-      },
-      "technical": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 8
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 8
-      },
-      "intimidation": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 4
-      },
-      "deception": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 6
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.29,
-      "caution": 0.87,
-      "loyalty": 0.74,
-      "greed": 0.25,
-      "empathy": 0.68
-    },
-    "drives": [
-      "money",
-      "power",
-      "loyalty"
-    ],
-    "thresholds": {
-      "pain": 6,
-      "stress": 6,
-      "loyalty_break": 5
-    },
-    "strengths": [
-      "natural leadership presence",
-      "exceptional close-quarters combat"
-    ],
-    "weaknesses": [
-      "risk-averse to the point of missed opportunities",
-      "inability to delegate — must control everything personally",
-      "old injury that flares under specific conditions"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "surveillance specialist",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Always verifies target identity independently before lethal contracts",
-      "Will work with anyone once. Second time requires vouching from someone trusted."
-    ],
-    "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
-      "Insists they work alone but performs noticeably better in a team"
-    ],
-    "habits": [
-      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
-      "Practices a kata or fighting form every morning regardless of circumstances",
-      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
-    ],
-    "breaking_points": [
-      "Losing their primary augmentation — the one that defines their professional identity",
-      "Being forced to choose between a crew member and the mission — and choosing wrong",
-      "Watching someone they trained or mentored die on a job they recommended"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Retractable monofilament whip in left forearm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters",
-      "replaces": ""
-    },
-    {
-      "name": "Neural dampener",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9,
-    "Opportunist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Dockside",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact-7 'Rat Trap'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Narrows Compact",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Pellucid Systems"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Ubiquitous Diaspora blend with dominant Sub-Saharan African (41%) and South Asian (19.8%) ancestry, enriched by East Asian (15.9%), Southeast Asian (11.2%), Hispanic/Latin American (9.3%), and Eastern European (2.8%) admixture. This creates a distinctive multitonal phenotype: deep warm-brown base from African and South Asian dominance, with geometric cheekbone and eye structure influenced by East and Southeast Asian ancestry. The smaller Eastern European component adds subtle cool undertones visible in protected skin areas, creating a rich complexion that shifts between golden-bronze and deep mahogany depending on light and context.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Lean and angular with visible musculature — wiry strength rather than bulk, built for speed and precision. Shoulders slightly narrower than hips, giving an almost skeletal quality. Zero excess body fat.",
-    "hair_color": "Platinum blonde with dark roots showing 2–3 weeks of growth",
-    "hair_style": "Pulled back tight into a short, functional braid or topknot; styled for combat efficiency, not aesthetics",
-    "hair_length": "Short to Medium",
-    "eye_color": "Steel gray with warm brown undertones, natural",
-    "skin_tone": "Deep warm-brown complexion with regional variation — darker on sun-exposed forearms, neck, and face from Dockside work; warmer golden undertones visible at wrists and torso from South and Southeast Asian heritage blending with African depth. The multitonal blend creates a lived-in appearance that shifts between rich bronze and deep mahogany depending on light angle.",
-    "complexion": "Sharp cheekbones with pronounced East and Southeast Asian geometry, angular jawline tempered by South Asian influence. Skin bears weathering from Dockside exposure — salt spray, wind burn. Minimal grooming; scarring around temples and along left jawline from augmentation surgery is deliberate and unhidden. Faint catharral lines around the eyes from chronic sleep deprivation.",
-    "distinguishing_marks": [
-      "Augmentation scar tissue along the left temple, running upward from cheekbone — crude suturing visible, suggesting installation by street-tier surgeon",
-      "Matching scar along the left jawline where monofilament whip was spliced into forearm fascia, raised and slightly discolored against deep skin tone",
-      "Burn scar across the back of left hand — pale silvery against warm deep-brown skin, old, probably from equipment malfunction or combat",
-      "Faint needle track marks along inner right elbow, consistent with neural interface calibration injections"
-    ],
-    "visible_augmentations": "Left forearm bears a subtle chrome seam running from wrist to mid-forearm where the monofilament whip is housed — appears as a thin metallic line under the skin when flexed. The seam is intentionally visible; makes no effort to conceal it. Faint LED indicator (inactive/dark) embedded at the wrist junction. Neural dampener ports visible at the temples as small chrome nodes, roughly 5mm in diameter, slightly raised from skin.",
-    "posture_movement": "Stands with weight forward on the balls of their feet — a fighter's stance even at rest. Movements are economical and precise; no wasted motion. Carries tension in the shoulders and neck. Head turns in controlled arcs rather than fluid motion — suggests constant threat assessment. Left arm hangs slightly away from the body, ready for deployment. Walking gait is measured, light-footed, almost predatory.",
-    "clothing_style": "Tier 3–4 street operative. Black cargo pants (reinforced synthetic weave, multiple thigh pockets) tucked into ankle-high combat boots with steel toe and kevlar reinforcement. Sleeveless tactical vest worn over a dark long-sleeved compression shirt — the vest bears ballistic plating visible at the shoulders and torso. Fingerless gloves in worn black leather, left hand reinforced at the palm and wrist. Jacket: oversized charcoal bomber jacket (synthetic leather, Dockside-grade) worn open, ideal for concealing or rapidly accessing tools. Belt: industrial-grade synthetic with reinforced buckle, laden with carabiners and attachment points. No jewelry. Boots and vest show salt staining and wear consistent with regular fieldwork."
-  },
-  "image_prompt": "Enola Quartey, GLMZ Dockside operative with lean angular build, deep warm-brown complexion with golden-bronze undertones from African and South Asian heritage blended with East Asian geometry, sharp cheekbones, steel-gray eyes with brown undertones. Platinum blonde hair with dark roots pulled tight into functional topknot, shaved sides showing temple augmentation scars. Visible chrome neural dampener ports at temples, crude suturing along left jawline. Wearing sleeveless ballistic tactical vest over dark compression shirt, reinforced fingerless leather gloves, oversized charcoal synthetic bomber jacket worn open, black cargo pants, combat boots with steel toe. Left forearm shows subtle chrome seam housing monofilament whip, pale burn scar on left hand contrasting against deep skin. Stands in predatory fighter's stance, weight forward, tension in shoulders. Salt-worn Dockside operative aesthetic, industrial chrome accents, gritty worn textures. Neon-lit industrial setting, harsh shadows, neo-noir street lighting, moody and tense --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 41,
-    "South Asian": 19.8,
-    "East Asian": 15.9,
-    "Southeast Asian": 11.2,
-    "Hispanic/Latin American": 9.3,
-    "Eastern European": 2.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 8.6
-      },
-      "West African": {
-        "Malian": 11,
-        "Nigerian": 21.4
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Pashtun": 10.6
-      },
-      "Indian": {
-        "Bengali": 5.1
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 4.1
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Cantonese": 1.7
-      },
-      "Korean": {
-        "Korean": 10.2
-      },
-      "Japanese": {
-        "Japanese": 4
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sumatran": 6.6,
-        "Balinese": 4.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Salvadoran": 4.5
-      },
-      "South American": {
-        "Colombian": 2
-      },
-      "Caribbean": {
-        "Dominican": 2.2,
-        "Cuban": 0.6
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Sorbian": 1.8
-      },
-      "Slavic South": {
-        "Serbian": 0.6,
-        "Bosnian": 0.4
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5e875808914f047b5194601",
+    "type":  "character",
+    "name":  "Enola Quartey",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Electronic and physical observation expert â€” surveillance specialist",
+    "age":  37,
+    "status":  "active",
+    "location":  "Dockside â€” Lake Michigan waterfront, smuggler territory, near Michigan Ave South and Cermak",
+    "description":  "Enola Quartey are lean and angular, all sharp edges and visible tension. At 37, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible â€” retractable monofilament whip in left forearm â€” concealed weapon, devastating in â€” and they make no effort to hide it.\n\nThey grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. They work as a surveillance specialist out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Enola Quartey describe them as a precision instrument â€” point them at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Their past catching up â€” debts, enemies, broken promises",
+                                          "Going cyberpsycho â€” losing the boundary between human and machine",
+                                          "Betrayal by someone they trust â€” the only currency that matters"
+                                      ],
+                       "core_desires":  [
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail",
+                                            "To protect the people in their district who can\u0027t protect themselves",
+                                            "A crew worth trusting â€” people who stay when the shooting starts"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Connection â€” finds someone to talk to, even if it\u0027s a bartender or a cat",
+                                                 "Planning â€” responds to chaos by making detailed contingency plans for everything",
+                                                 "Violence â€” hits something when they can\u0027t process emotions, preferably something that deserves it"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes their skill set is more transferable than it actually is",
+                                           "Mistakes pattern recognition for wisdom â€” sees connections that aren\u0027t there",
+                                           "Assumes the worst in corporate people, missing the rare ones who could be allies"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Old-fashioned formal diction â€” sounds like they learned to speak from pre-collapse recordings.",
+                            "cadence":  "Halting â€” speaks in fragments, reassembles thoughts in real time.",
+                            "verbal_tics":  [
+                                                "Pauses mid-sentence to listen â€” combat habit that bleeds into conversation",
+                                                "Calls money \u0027weight\u0027 â€” as in \u0027that job doesn\u0027t carry enough weight\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I\u0027ve been watching you for three days. You should close your curtains.\"",
+                                                  "\"Information is the only commodity that appreciates with age.\"",
+                                                  "\"Everyone thinks they\u0027re careful. Nobody is careful enough.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Daulet Petersen-Bah intercepts intelligence about a threat to their district and must decide between profit and protection",
+                        "A dead drop Daulet Petersen-Bah maintains is found and cleaned out â€” whoever did it now has leverage",
+                        "Daulet Petersen-Bah is offered a contract that would clear all their debts â€” the target is someone they respect"
+                    ],
+    "narrative_function":  "Daulet Petersen-Bah represents the working professional of the runner world â€” competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+    "augmentations":  "Retractable monofilament whip in left forearm â€” concealed weapon, devastating in close quarters. Neural dampener â€” blocks external hacking attempts, passive ICE in the brain",
+    "daily_life":  "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather â€” not for pleasure, but for market intelligence.",
+    "affiliation":  "Freelance â€” available through Circuit fixers",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  3,
+                                                    "effective":  4
+                                                },
+                                   "agility":  {
+                                                   "base":  6,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  5,
+                                                     "augmented":  3,
+                                                     "effective":  10
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  0,
+                                                    "effective":  10
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  6,
+                                                      "augmented":  3,
+                                                      "effective":  4
+                                                  },
+                                 "perception":  {
+                                                    "base":  6,
+                                                    "augmented":  1,
+                                                    "effective":  6
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  8
+                                               },
+                                 "technical":  {
+                                                   "base":  6,
+                                                   "augmented":  2,
+                                                   "effective":  8
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  3,
+                                                  "augmented":  0,
+                                                  "effective":  8
+                                              },
+                                 "intimidation":  {
+                                                      "base":  5,
+                                                      "augmented":  2,
+                                                      "effective":  4
+                                                  },
+                                 "deception":  {
+                                                   "base":  7,
+                                                   "augmented":  3,
+                                                   "effective":  6
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  1,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.29,
+                                      "caution":  0.87,
+                                      "loyalty":  0.74,
+                                      "greed":  0.25,
+                                      "empathy":  0.68
+                                  },
+                  "drives":  [
+                                 "money",
+                                 "power",
+                                 "loyalty"
+                             ],
+                  "thresholds":  {
+                                     "pain":  6,
+                                     "stress":  6,
+                                     "loyalty_break":  5
+                                 },
+                  "strengths":  [
+                                    "natural leadership presence",
+                                    "exceptional close-quarters combat"
+                                ],
+                  "weaknesses":  [
+                                     "risk-averse to the point of missed opportunities",
+                                     "inability to delegate â€” must control everything personally",
+                                     "old injury that flares under specific conditions"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "surveillance specialist",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted."
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess â€” read the situation, identify threats and advantages",
+                                                 "2. Negotiate â€” try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate â€” make the cost of conflict clear",
+                                                 "4. Precision violence â€” surgical, targeted, minimal collateral",
+                                                 "5. Full engagement â€” overwhelming force, no half measures",
+                                                 "6. Emergency protocol â€” abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+                                              "Insists they work alone but performs noticeably better in a team"
+                                          ],
+                       "habits":  [
+                                      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+                                      "Practices a kata or fighting form every morning regardless of circumstances",
+                                      "Wears the same item of clothing for luck â€” a scarf, a glove, a specific pair of boots",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore"
+                                  ],
+                       "breaking_points":  [
+                                               "Losing their primary augmentation â€” the one that defines their professional identity",
+                                               "Being forced to choose between a crew member and the mission â€” and choosing wrong",
+                                               "Watching someone they trained or mentored die on a job they recommended"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Retractable monofilament whip in left forearm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Retractable monofilament whip in left forearm â€” concealed weapon, devastating in close quarters",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Neural dampener",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Neural dampener â€” blocks external hacking attempts, passive ICE in the brain",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9,
+                       "Opportunist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Dockside",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact-7 \u0027Rat Trap\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Narrows Compact",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "Pellucid Systems"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Ubiquitous Diaspora blend with dominant Sub-Saharan African (41%) and South Asian (19.8%) ancestry, enriched by East Asian (15.9%), Southeast Asian (11.2%), Hispanic/Latin American (9.3%), and Eastern European (2.8%) admixture. This creates a distinctive multitonal phenotype: deep warm-brown base from African and South Asian dominance, with geometric cheekbone and eye structure influenced by East and Southeast Asian ancestry. The smaller Eastern European component adds subtle cool undertones visible in protected skin areas, creating a rich complexion that shifts between golden-bronze and deep mahogany depending on light and context.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and angular with visible musculature â€” wiry strength rather than bulk, built for speed and precision. Shoulders slightly narrower than hips, giving an almost skeletal quality. Zero excess body fat.",
+                                 "hair_color":  "Platinum blonde with dark roots showing 2â€“3 weeks of growth",
+                                 "hair_style":  "Pulled back tight into a short, functional braid or topknot; styled for combat efficiency, not aesthetics",
+                                 "hair_length":  "Short to Medium",
+                                 "eye_color":  "Steel gray with warm brown undertones, natural",
+                                 "skin_tone":  "Deep warm-brown complexion with regional variation â€” darker on sun-exposed forearms, neck, and face from Dockside work; warmer golden undertones visible at wrists and torso from South and Southeast Asian heritage blending with African depth. The multitonal blend creates a lived-in appearance that shifts between rich bronze and deep mahogany depending on light angle.",
+                                 "complexion":  "Sharp cheekbones with pronounced East and Southeast Asian geometry, angular jawline tempered by South Asian influence. Skin bears weathering from Dockside exposure â€” salt spray, wind burn. Minimal grooming; scarring around temples and along left jawline from augmentation surgery is deliberate and unhidden. Faint catharral lines around the eyes from chronic sleep deprivation.",
+                                 "distinguishing_marks":  [
+                                                              "Augmentation scar tissue along the left temple, running upward from cheekbone â€” crude suturing visible, suggesting installation by street-tier surgeon",
+                                                              "Matching scar along the left jawline where monofilament whip was spliced into forearm fascia, raised and slightly discolored against deep skin tone",
+                                                              "Burn scar across the back of left hand â€” pale silvery against warm deep-brown skin, old, probably from equipment malfunction or combat",
+                                                              "Faint needle track marks along inner right elbow, consistent with neural interface calibration injections"
+                                                          ],
+                                 "visible_augmentations":  "Left forearm bears a subtle chrome seam running from wrist to mid-forearm where the monofilament whip is housed â€” appears as a thin metallic line under the skin when flexed. The seam is intentionally visible; makes no effort to conceal it. Faint LED indicator (inactive/dark) embedded at the wrist junction. Neural dampener ports visible at the temples as small chrome nodes, roughly 5mm in diameter, slightly raised from skin.",
+                                 "posture_movement":  "Stands with weight forward on the balls of their feet â€” a fighter\u0027s stance even at rest. Movements are economical and precise; no wasted motion. Carries tension in the shoulders and neck. Head turns in controlled arcs rather than fluid motion â€” suggests constant threat assessment. Left arm hangs slightly away from the body, ready for deployment. Walking gait is measured, light-footed, almost predatory.",
+                                 "clothing_style":  "Tier 3â€“4 street operative. Black cargo pants (reinforced synthetic weave, multiple thigh pockets) tucked into ankle-high combat boots with steel toe and kevlar reinforcement. Sleeveless tactical vest worn over a dark long-sleeved compression shirt â€” the vest bears ballistic plating visible at the shoulders and torso. Fingerless gloves in worn black leather, left hand reinforced at the palm and wrist. Jacket: oversized charcoal bomber jacket (synthetic leather, Dockside-grade) worn open, ideal for concealing or rapidly accessing tools. Belt: industrial-grade synthetic with reinforced buckle, laden with carabiners and attachment points. No jewelry. Boots and vest show salt staining and wear consistent with regular fieldwork."
+                             },
+    "image_prompt":  "Enola Quartey, GLMZ Dockside operative with lean angular build, deep warm-brown complexion with golden-bronze undertones from African and South Asian heritage blended with East Asian geometry, sharp cheekbones, steel-gray eyes with brown undertones. Platinum blonde hair with dark roots pulled tight into functional topknot, shaved sides showing temple augmentation scars. Visible chrome neural dampener ports at temples, crude suturing along left jawline. Wearing sleeveless ballistic tactical vest over dark compression shirt, reinforced fingerless leather gloves, oversized charcoal synthetic bomber jacket worn open, black cargo pants, combat boots with steel toe. Left forearm shows subtle chrome seam housing monofilament whip, pale burn scar on left hand contrasting against deep skin. Stands in predatory fighter\u0027s stance, weight forward, tension in shoulders. Salt-worn Dockside operative aesthetic, industrial chrome accents, gritty worn textures. Neon-lit industrial setting, harsh shadows, neo-noir street lighting, moody and tense --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  41,
+                             "South Asian":  19.8,
+                             "East Asian":  15.9,
+                             "Southeast Asian":  11.2,
+                             "Hispanic/Latin American":  9.3,
+                             "Eastern European":  2.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  8.6
+                                                                            },
+                                                        "West African":  {
+                                                                             "Malian":  11,
+                                                                             "Nigerian":  21.4
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Pashtun":  10.6
+                                                              },
+                                                "Indian":  {
+                                                               "Bengali":  5.1
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  4.1
+                                                                }
+                                            },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Cantonese":  1.7
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  10.2
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  4
+                                                            }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  6.6,
+                                                                       "Balinese":  4.6
+                                                                   }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  4.5
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Colombian":  2
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  2.2,
+                                                                              "Cuban":  0.6
+                                                                          }
+                                                        },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Sorbian":  1.8
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Serbian":  0.6,
+                                                                          "Bosnian":  0.4
+                                                                      }
+                                                 }
+                        },
+    "tier":  "3"
 }

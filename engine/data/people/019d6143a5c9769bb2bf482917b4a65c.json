@@ -1,279 +1,302 @@
-{
-  "id": "019d6143a5c9769bb2bf482917b4a65c",
-  "type": "character",
-  "name": "Agastya Phommasack-Delgado",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Junk merchant and scrap reseller — salvage, broken augmentations, mystery components",
-  "age": 44,
-  "status": "active",
-  "location": "the Gray Zone, Harrowgate Industrial Plateau, near Halsted and Division",
-  "description": "Agastya Phommasack-Delgado is a stocky, perpetually grease-smudged man whose Indonesian-Ethiopian features have been weathered by twenty years of Harrowgate's industrial air into something that looks carved rather than grown. He has a magnificent mustache he tends with more care than anything else in his life, and his left eye is a salvaged optical implant three generations out of date that gives everything a faint amber tint and occasionally displays error codes in his peripheral vision that he's learned to ignore. His hands are enormous and scarred, and he can identify a component by touch alone in the dark. His stall is a magnificent catastrophe: towers of sorted scrap in a system only he understands, with handwritten price tags that rarely match what he actually charges.\n\nAgastya Phommasack-Delgado is irrepressibly cheerful in the way that only someone who has completely stopped expecting things to go well can be. He finds everything slightly funny, including disasters, including his own. He narrates his life as if it's a story he's telling to someone who will appreciate it later. He genuinely loves salvage — not for profit, which is good because he's terrible at profit, but because every broken thing is a puzzle and he likes puzzles. He has an encyclopedic knowledge of augmentation components from five different decades and will talk about them at length to anyone who doesn't flee quickly enough. He is not stupid. He is simply constitutionally incapable of prioritizing money over curiosity.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.4,
-      "id": 0.9,
-      "shadow": 0.3,
-      "mask": 0.7,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Dying before he figures out what a particular mystery component he's had for six years actually does",
-      "The Tongs deciding to make an example of him over the debt"
-    ],
-    "core_desires": [
-      "To find the one piece of salvage that changes everything — not for money, but for the story of finding it",
-      "For someone to be genuinely interested in what he knows"
-    ],
-    "coping_mechanisms": [
-      "Humor as a universal buffer",
-      "Treating every setback as material for a good story later",
-      "Staying too busy to think about the debt"
-    ],
-    "blind_spots": [
-      "Genuinely does not process financial risk as real until it's sitting in front of him with a weapon",
-      "Assumes everyone finds the same things interesting that he does"
-    ],
-    "secret": "Six months ago, in a salvage haul from a demolished Axiom subsidiary building, Branko pulled a data core he can't open, can't identify, and can't stop thinking about. He's hidden it inside a disemboweled coffee maker behind his counter. He has shown it to exactly one person — a data broker friend who went quiet and stopped returning his messages three days later. Branko has not connected these two events, which is both his greatest protection and his greatest danger."
-  },
-  "speech_patterns": {
-    "vocabulary": "Rambling and associative; technical precision about components coexists with complete vagueness about everything else; Croatian-inflected sentence structures from his Balkan paternal line",
-    "cadence": "Fast when excited, which is most of the time; accelerates when discussing salvage until he's almost incomprehensible",
-    "verbal_tics": [
-      "'Here's the thing—' before any statement he finds interesting, which is most statements",
-      "Laughs at his own observations before finishing them",
-      "Says 'magnificent' about objects, never people"
-    ],
-    "example_lines": [
-      "'Here's the thing — this coupling is from a Sterling-Nakamura rig, 2170s, you can tell by the thread pitch, but the housing is Arcturus, which means someone was doing something they were not supposed to be doing. Magnificent.'",
-      "'The Tongs? Ha. Yes. That is a situation. I am working on a situation about the situation, you understand?'",
-      "'I cannot sell you that. I mean, I can, but I would like to look at it for another week first. Two more days. One more day. Φ40, final.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The data core hidden in the coffee maker is a dead employee's backed-up consciousness — an Axiom executive who was supposed to have died cleanly. Someone is looking for it.",
-    "Branko's Tongs debt has been sold to a third party and the new collector wants something other than money.",
-    "He has a component that completes a set someone else in the market has been searching for — but neither of them knows the set exists yet."
-  ],
-  "narrative_function": "Equipment source for unusual or obsolete components; information source about the Harrowgate area and its industrial history; comic relief that contains genuine pathos; could accidentally possess something extremely valuable or dangerous.",
-  "augmentations": "Salvaged third-generation optical implant (left eye, amber-tinted, glitchy error codes). Reinforced knuckle plating on both hands — utility, not combat, for breaking down salvage. No geneware.",
-  "daily_life": "Arrives at the stall before dawn to assess overnight salvage runs; spends mornings sorting and pricing; afternoons haggling and taking apart things he shouldn't; evenings at a bar called the Oxidized Nail arguing with other vendors about component history.",
-  "affiliation": "Independent; owes protection fees to a local outfit called the Harrowgate Tongs who he's three months behind on",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 6,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 4,
-      "creativity": 7,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 5,
-      "expression": 8,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 5,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": -4,
-      "assertion_deference": -1,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "enthusiast",
-      "chaotic",
-      "knowledgeable",
-      "financially reckless",
-      "accidentally dangerous"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never sell something before you understand what it does",
-      "Pay the Tongs eventually, just not today",
-      "A good story is worth more than a clean transaction"
-    ],
-    "escalation_ladder": [
-      "Jokes and deflects",
-      "Offers to barter or delay",
-      "Gets genuinely flustered and apologetic",
-      "Runs"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately launches into whatever he's currently fascinated by; treats everyone as a potential audience",
-      "friends": "Exactly the same but louder; will loan things he shouldn't"
-    },
-    "stress_responses": {
-      "low": "Talks faster",
-      "medium": "Laughs inappropriately and makes increasingly worse jokes",
-      "high": "Goes very still and quiet, which is so unlike him it alarms anyone who knows him"
-    },
-    "contradictions": [
-      "Treasures objects deeply but can't keep track of money; treats Φ as an abstraction but a corroded coupling as a sacred artifact"
-    ],
-    "habits": [
-      "Strokes his mustache when examining something new",
-      "Leaves a broken component on the small E.L.F. shrine bolted to his stall's corner post — 'so it knows I'm trying'",
-      "Always has a half-eaten something in his coat pocket"
-    ],
-    "breaking_points": [
-      "Someone destroying or discarding something he's identified as historically significant",
-      "The data core being taken before he understands it"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Hustler": 0.9,
-    "Provider": 0.9,
-    "Opportunist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Harrowgate Industrial Plateau",
-    "The Marrow Market",
-    "Noir Dining",
-    "Chimera-Null",
-    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
-    "The Pure Hand",
-    "Tin Man"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Ubiquitous Diaspora ancestry: 37% Hispanic/Latin American, 33.5% Sub-Saharan African, 12.7% Southeast Asian, 8.3% East Asian, 5.8% North African, and 2.7% South Asian. His features reflect this intricate blend: warm deep bronze skin with golden and reddish undertones from the combined African, Latin American, and Southeast Asian heritage; broad cheekbones and defined facial structure from East Asian and Southeast Asian ancestry; facial proportions that echo Latin American and North African lineage. The result is a richly textured phenotype marked by warm, complex undertones rather than a single dominant heritage.",
-    "height_cm": 172,
-    "weight_kg": 94,
-    "build": "Stocky and broad-shouldered with the dense musculature of someone who's spent two decades hauling salvage. His frame carries weight low and solid, without softness — functional rather than cultivated.",
-    "hair_color": "Dark brown, peppered with grey",
-    "hair_style": "Short and unkempt, rarely combed, often matted with industrial dust and machine oil",
-    "hair_length": "Short",
-    "eye_color": "Left eye: salvaged optical implant with amber lens displaying faint error glitches; Right eye: natural dark brown",
-    "skin_tone": "Warm deep bronze with golden and reddish undertones reflecting the blend of Sub-Saharan African, Hispanic/Latin American, and Southeast Asian ancestry; dulled by years of Harrowgate industrial particulates; weathered and lined with visible ashiness from chronic exposure to rust-laden air",
-    "complexion": "Heavily weathered face with broad cheekbones and defined structure reflecting Southeast Asian and East Asian heritage, warmed by Sub-Saharan African and Latin American ancestry. Deep nasolabial folds, crow's feet from constant squinting at small components. His most striking feature is his mustache — thick, well-waxed, jet-black with silver threading, meticulously groomed and curled at the ends, a cultural grooming choice he's maintained through decades of salvage work. His face is perpetually smudged with grease and calibration dust.",
-    "distinguishing_marks": [
-      "Extensive scar tissue across both knuckles and the backs of both hands from repeated cuts, burns, and puncture wounds during salvage work",
-      "A thin burn scar running from his left temple down to his jaw — industrial accident from fifteen years ago, partially obscured by his mustache",
-      "Faint oil stains permanently tattooed into the creases of his palms and the base of his fingers",
-      "A patch of discolored skin on his right forearm where a corroded battery once leaked"
-    ],
-    "visible_augmentations": "Left eye is obviously mechanical — an older-generation optical unit with a slightly misaligned amber lens housing and occasional green error code text flickering in his peripheral vision (which he ignores). Both hands display reinforced knuckle plating: dull chrome and steel caps welded over his metacarpals, worn and scratched from constant use but functional and unpretentious.",
-    "posture_movement": "He moves with a careful, economical shuffle — the gait of someone who's learned to navigate tight spaces between salvage towers without wasting energy. His hands are always in motion, turning things over, testing weight, running fingers across surfaces. When standing still, he leans slightly forward as if perpetually about to lean into a new puzzle. His left eye often clicks audibly as it refocuses.",
-    "clothing_style": "Tier 4-5 salvage worker aesthetic. Layers of worn canvas work shirts, usually unbuttoned over a faded thermal, both stained with grease that has become part of the fabric's character. Heavy reinforced work pants with cargo pockets, each one containing unidentifiable components and tools. A patched canvas coat from perhaps three different garments, stitched together with visible wire. Steel-toed boots held together by duct tape and stubbornness. He wears a harness with loose chains and carabiners for hauling salvage. No corporate branding, no pretense — everything is utility and history."
-  },
-  "image_prompt": "Agastya Phommasack-Delgado, 172cm salvage worker in the Great Lakes Metropolitan Zone, 2226. Stocky broad-shouldered build with warm deep bronze skin glowing with golden and reddish undertones, reflecting Sub-Saharan African, Hispanic/Latin American, and Southeast Asian ancestry. Weather-beaten face with broad cheekbones, deep nasolabial folds, crow's feet; defined structure showing East Asian influence. Striking thick black mustache with silver threading, meticulously waxed and curled at ends. Left eye is a mechanical optical implant with amber lens and green error glitches; right eye natural dark brown. Dark brown hair peppered with grey, short and matted with industrial dust. Extensive scarring on knuckles and hand backs; thin burn scar from left temple to jaw partially hidden by mustache. Grease-stained, oil-weathered complexion. Wearing layered worn canvas work shirts over faded thermal, heavily stained, reinforced work pants with cargo pockets, patched coat from multiple garments stitched with wire, steel-toed boots held together with duct tape. Harness with chains and carabiners. Reinforced chrome and steel knuckle plating on both hands. Moving with economical shuffle in tight salvage tower space, hands in constant motion examining salvage components. Industrial particulate-dulled skin. Neo-noir salvage aesthetic, functional and unpretentious. Harsh neon and rust-orange industrial lighting, shadows from massive salvage machinery. Gritty, worn, authentic post-industrial worker. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 37,
-    "Sub-Saharan African": 33.5,
-    "Southeast Asian": 12.7,
-    "East Asian": 8.3,
-    "North African": 5.8,
-    "South Asian": 2.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Ecuadorian": 22.7
-      },
-      "Mexican": {
-        "Mexican": 6.8
-      },
-      "Caribbean": {
-        "Puerto Rican": 7.5
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Liberian": 11.5
-      },
-      "Central African": {
-        "Congolese": 9.1,
-        "Cameroonian": 6.3
-      },
-      "East African": {
-        "Tanzanian": 6.6
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 12.7
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 7.7
-      },
-      "Japanese": {
-        "Japanese": 0.6
-      }
-    },
-    "North African": {
-      "Nile Valley": {
-        "Egyptian": 2.4,
-        "Sudanese": 0.6
-      },
-      "Amazigh": {
-        "Berber": 0.4,
-        "Tuareg": 0.3
-      },
-      "Maghreb": {
-        "Moroccan": 1.4,
-        "Algerian": 0.7
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 2.7
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5c9769bb2bf482917b4a65c",
+    "type":  "character",
+    "name":  "Agastya Phommasack-Delgado",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Junk merchant and scrap reseller â€” salvage, broken augmentations, mystery components",
+    "age":  44,
+    "status":  "active",
+    "location":  "the Gray Zone, Harrowgate Industrial Plateau, near Halsted and Division",
+    "description":  "Agastya Phommasack-Delgado is a stocky, perpetually grease-smudged man whose Indonesian-Ethiopian features have been weathered by twenty years of Harrowgate\u0027s industrial air into something that looks carved rather than grown. He has a magnificent mustache he tends with more care than anything else in his life, and his left eye is a salvaged optical implant three generations out of date that gives everything a faint amber tint and occasionally displays error codes in his peripheral vision that he\u0027s learned to ignore. His hands are enormous and scarred, and he can identify a component by touch alone in the dark. His stall is a magnificent catastrophe: towers of sorted scrap in a system only he understands, with handwritten price tags that rarely match what he actually charges.\n\nAgastya Phommasack-Delgado is irrepressibly cheerful in the way that only someone who has completely stopped expecting things to go well can be. He finds everything slightly funny, including disasters, including his own. He narrates his life as if it\u0027s a story he\u0027s telling to someone who will appreciate it later. He genuinely loves salvage â€” not for profit, which is good because he\u0027s terrible at profit, but because every broken thing is a puzzle and he likes puzzles. He has an encyclopedic knowledge of augmentation components from five different decades and will talk about them at length to anyone who doesn\u0027t flee quickly enough. He is not stupid. He is simply constitutionally incapable of prioritizing money over curiosity.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Dying before he figures out what a particular mystery component he\u0027s had for six years actually does",
+                                          "The Tongs deciding to make an example of him over the debt"
+                                      ],
+                       "core_desires":  [
+                                            "To find the one piece of salvage that changes everything â€” not for money, but for the story of finding it",
+                                            "For someone to be genuinely interested in what he knows"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Humor as a universal buffer",
+                                                 "Treating every setback as material for a good story later",
+                                                 "Staying too busy to think about the debt"
+                                             ],
+                       "blind_spots":  [
+                                           "Genuinely does not process financial risk as real until it\u0027s sitting in front of him with a weapon",
+                                           "Assumes everyone finds the same things interesting that he does"
+                                       ],
+                       "secret":  "Six months ago, in a salvage haul from a demolished Axiom subsidiary building, Branko pulled a data core he can\u0027t open, can\u0027t identify, and can\u0027t stop thinking about. He\u0027s hidden it inside a disemboweled coffee maker behind his counter. He has shown it to exactly one person â€” a data broker friend who went quiet and stopped returning his messages three days later. Branko has not connected these two events, which is both his greatest protection and his greatest danger."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Rambling and associative; technical precision about components coexists with complete vagueness about everything else; Croatian-inflected sentence structures from his Balkan paternal line",
+                            "cadence":  "Fast when excited, which is most of the time; accelerates when discussing salvage until he\u0027s almost incomprehensible",
+                            "verbal_tics":  [
+                                                "\u0027Here\u0027s the thingâ€”\u0027 before any statement he finds interesting, which is most statements",
+                                                "Laughs at his own observations before finishing them",
+                                                "Says \u0027magnificent\u0027 about objects, never people"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Here\u0027s the thing â€” this coupling is from a Sterling-Nakamura rig, 2170s, you can tell by the thread pitch, but the housing is Arcturus, which means someone was doing something they were not supposed to be doing. Magnificent.\u0027",
+                                                  "\u0027The Tongs? Ha. Yes. That is a situation. I am working on a situation about the situation, you understand?\u0027",
+                                                  "\u0027I cannot sell you that. I mean, I can, but I would like to look at it for another week first. Two more days. One more day. Î¦40, final.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The data core hidden in the coffee maker is a dead employee\u0027s backed-up consciousness â€” an Axiom executive who was supposed to have died cleanly. Someone is looking for it.",
+                        "Branko\u0027s Tongs debt has been sold to a third party and the new collector wants something other than money.",
+                        "He has a component that completes a set someone else in the market has been searching for â€” but neither of them knows the set exists yet."
+                    ],
+    "narrative_function":  "Equipment source for unusual or obsolete components; information source about the Harrowgate area and its industrial history; comic relief that contains genuine pathos; could accidentally possess something extremely valuable or dangerous.",
+    "augmentations":  "Salvaged third-generation optical implant (left eye, amber-tinted, glitchy error codes). Reinforced knuckle plating on both hands â€” utility, not combat, for breaking down salvage. No geneware.",
+    "daily_life":  "Arrives at the stall before dawn to assess overnight salvage runs; spends mornings sorting and pricing; afternoons haggling and taking apart things he shouldn\u0027t; evenings at a bar called the Oxidized Nail arguing with other vendors about component history.",
+    "affiliation":  "Independent; owes protection fees to a local outfit called the Harrowgate Tongs who he\u0027s three months behind on",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  6,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  4,
+                                 "creativity":  7,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  5,
+                                 "expression":  8,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  5,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  -4,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "enthusiast",
+                               "chaotic",
+                               "knowledgeable",
+                               "financially reckless",
+                               "accidentally dangerous"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never sell something before you understand what it does",
+                                              "Pay the Tongs eventually, just not today",
+                                              "A good story is worth more than a clean transaction"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Jokes and deflects",
+                                                 "Offers to barter or delay",
+                                                 "Gets genuinely flustered and apologetic",
+                                                 "Runs"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately launches into whatever he\u0027s currently fascinated by; treats everyone as a potential audience",
+                                                   "friends":  "Exactly the same but louder; will loan things he shouldn\u0027t"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks faster",
+                                                "medium":  "Laughs inappropriately and makes increasingly worse jokes",
+                                                "high":  "Goes very still and quiet, which is so unlike him it alarms anyone who knows him"
+                                            },
+                       "contradictions":  [
+                                              "Treasures objects deeply but can\u0027t keep track of money; treats Î¦ as an abstraction but a corroded coupling as a sacred artifact"
+                                          ],
+                       "habits":  [
+                                      "Strokes his mustache when examining something new",
+                                      "Leaves a broken component on the small E.L.F. shrine bolted to his stall\u0027s corner post â€” \u0027so it knows I\u0027m trying\u0027",
+                                      "Always has a half-eaten something in his coat pocket"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone destroying or discarding something he\u0027s identified as historically significant",
+                                               "The data core being taken before he understands it"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Hustler":  0.9,
+                       "Provider":  0.9,
+                       "Opportunist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact-7 \u0027Rat Trap\u0027",
+                            "Street Custom \u0027Mercy\u0027 Veterinary Tranquilizer Gun"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Harrowgate Industrial Plateau",
+                             "The Marrow Market",
+                             "Noir Dining",
+                             "Chimera-Null",
+                             "Crucible Industries Volt Knuckle VK-1 \u0027Jawbreaker\u0027",
+                             "The Pure Hand",
+                             "Tin Man"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Ubiquitous Diaspora ancestry: 37% Hispanic/Latin American, 33.5% Sub-Saharan African, 12.7% Southeast Asian, 8.3% East Asian, 5.8% North African, and 2.7% South Asian. His features reflect this intricate blend: warm deep bronze skin with golden and reddish undertones from the combined African, Latin American, and Southeast Asian heritage; broad cheekbones and defined facial structure from East Asian and Southeast Asian ancestry; facial proportions that echo Latin American and North African lineage. The result is a richly textured phenotype marked by warm, complex undertones rather than a single dominant heritage.",
+                                 "height_cm":  172,
+                                 "weight_kg":  94,
+                                 "build":  "Stocky and broad-shouldered with the dense musculature of someone who\u0027s spent two decades hauling salvage. His frame carries weight low and solid, without softness â€” functional rather than cultivated.",
+                                 "hair_color":  "Dark brown, peppered with grey",
+                                 "hair_style":  "Short and unkempt, rarely combed, often matted with industrial dust and machine oil",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Left eye: salvaged optical implant with amber lens displaying faint error glitches; Right eye: natural dark brown",
+                                 "skin_tone":  "Warm deep bronze with golden and reddish undertones reflecting the blend of Sub-Saharan African, Hispanic/Latin American, and Southeast Asian ancestry; dulled by years of Harrowgate industrial particulates; weathered and lined with visible ashiness from chronic exposure to rust-laden air",
+                                 "complexion":  "Heavily weathered face with broad cheekbones and defined structure reflecting Southeast Asian and East Asian heritage, warmed by Sub-Saharan African and Latin American ancestry. Deep nasolabial folds, crow\u0027s feet from constant squinting at small components. His most striking feature is his mustache â€” thick, well-waxed, jet-black with silver threading, meticulously groomed and curled at the ends, a cultural grooming choice he\u0027s maintained through decades of salvage work. His face is perpetually smudged with grease and calibration dust.",
+                                 "distinguishing_marks":  [
+                                                              "Extensive scar tissue across both knuckles and the backs of both hands from repeated cuts, burns, and puncture wounds during salvage work",
+                                                              "A thin burn scar running from his left temple down to his jaw â€” industrial accident from fifteen years ago, partially obscured by his mustache",
+                                                              "Faint oil stains permanently tattooed into the creases of his palms and the base of his fingers",
+                                                              "A patch of discolored skin on his right forearm where a corroded battery once leaked"
+                                                          ],
+                                 "visible_augmentations":  "Left eye is obviously mechanical â€” an older-generation optical unit with a slightly misaligned amber lens housing and occasional green error code text flickering in his peripheral vision (which he ignores). Both hands display reinforced knuckle plating: dull chrome and steel caps welded over his metacarpals, worn and scratched from constant use but functional and unpretentious.",
+                                 "posture_movement":  "He moves with a careful, economical shuffle â€” the gait of someone who\u0027s learned to navigate tight spaces between salvage towers without wasting energy. His hands are always in motion, turning things over, testing weight, running fingers across surfaces. When standing still, he leans slightly forward as if perpetually about to lean into a new puzzle. His left eye often clicks audibly as it refocuses.",
+                                 "clothing_style":  "Tier 4-5 salvage worker aesthetic. Layers of worn canvas work shirts, usually unbuttoned over a faded thermal, both stained with grease that has become part of the fabric\u0027s character. Heavy reinforced work pants with cargo pockets, each one containing unidentifiable components and tools. A patched canvas coat from perhaps three different garments, stitched together with visible wire. Steel-toed boots held together by duct tape and stubbornness. He wears a harness with loose chains and carabiners for hauling salvage. No corporate branding, no pretense â€” everything is utility and history."
+                             },
+    "image_prompt":  "Agastya Phommasack-Delgado, 172cm salvage worker in the Great Lakes Metropolitan Zone, 2226. Stocky broad-shouldered build with warm deep bronze skin glowing with golden and reddish undertones, reflecting Sub-Saharan African, Hispanic/Latin American, and Southeast Asian ancestry. Weather-beaten face with broad cheekbones, deep nasolabial folds, crow\u0027s feet; defined structure showing East Asian influence. Striking thick black mustache with silver threading, meticulously waxed and curled at ends. Left eye is a mechanical optical implant with amber lens and green error glitches; right eye natural dark brown. Dark brown hair peppered with grey, short and matted with industrial dust. Extensive scarring on knuckles and hand backs; thin burn scar from left temple to jaw partially hidden by mustache. Grease-stained, oil-weathered complexion. Wearing layered worn canvas work shirts over faded thermal, heavily stained, reinforced work pants with cargo pockets, patched coat from multiple garments stitched with wire, steel-toed boots held together with duct tape. Harness with chains and carabiners. Reinforced chrome and steel knuckle plating on both hands. Moving with economical shuffle in tight salvage tower space, hands in constant motion examining salvage components. Industrial particulate-dulled skin. Neo-noir salvage aesthetic, functional and unpretentious. Harsh neon and rust-orange industrial lighting, shadows from massive salvage machinery. Gritty, worn, authentic post-industrial worker. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  37,
+                             "Sub-Saharan African":  33.5,
+                             "Southeast Asian":  12.7,
+                             "East Asian":  8.3,
+                             "North African":  5.8,
+                             "South Asian":  2.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  22.7
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  6.8
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  7.5
+                                                                          }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Liberian":  11.5
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  9.1,
+                                                                                "Cameroonian":  6.3
+                                                                            },
+                                                        "East African":  {
+                                                                             "Tanzanian":  6.6
+                                                                         }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  12.7
+                                                                }
+                                                },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  7.7
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  0.6
+                                                            }
+                                           },
+                            "North African":  {
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  2.4,
+                                                                      "Sudanese":  0.6
+                                                                  },
+                                                  "Amazigh":  {
+                                                                  "Berber":  0.4,
+                                                                  "Tuareg":  0.3
+                                                              },
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  1.4,
+                                                                  "Algerian":  0.7
+                                                              }
+                                              },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  2.7
+                                                                }
+                                            }
+                        },
+    "tier":  "2"
 }

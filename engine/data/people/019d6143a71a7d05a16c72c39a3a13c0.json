@@ -1,276 +1,297 @@
-{
-  "id": "019d6143a71a7d05a16c72c39a3a13c0",
-  "type": "character",
-  "name": "Chau Karimov",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Building superintendent, Ironvein residential stack",
-  "age": 61,
-  "status": "active",
-  "location": "Ironvein, The Mossback — a seventeen-story residential building of ambiguous structural classification, near Fullerton and Damen",
-  "description": "Chau Karimov is a large, deliberate man who moves through the building's corridors with the authority of someone who has personally repaired every system in every wall. He is dark-skinned and silver-haired, wearing the same brand of gray utility coverall every day in rotating copies — he owns six identical pairs. His left hand is entirely prosthetic from the wrist down, functional-grade chrome with a scarred attachment point, replaced after a compressor accident in 2198. He keeps it unsheathed and uncosmeticized because coating it would be, in his words, 'a waste of money on something that already works.'\n\nHe runs The Mossback with the energy of a man holding something together through force of will. He knows the building's 214 residents by unit number, not name, but knows their patterns: who works nights, who has water pressure complaints, whose kid has started marking territory in the stairwell. He is gruff to new tenants, ceremonially gruff to long-term ones, and secretly terrified that the building's ownership consortium will sell to a developer and he'll spend his last working years managing a building that no longer exists in any way he recognizes.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.4,
-      "id": 0.3,
-      "shadow": 0.5,
-      "mask": 0.4,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "the building being sold and redeveloped — losing the only place he has genuine authority",
-      "dying without having passed on what he knows to anyone"
-    ],
-    "core_desires": [
-      "for the building to outlast him in a form its tenants can still live in",
-      "to be respected as a craftsman, not just a maintenance worker"
-    ],
-    "coping_mechanisms": [
-      "Treats the building as a living patient — gives its problems a clinical distance that lets him problem-solve without panic",
-      "Talking to Teodoro the ELF as if it were a junior colleague whose opinion matters but who keeps making the same mistakes"
-    ],
-    "blind_spots": [
-      "Dismisses tenant complaints about anything non-structural as 'not his department' — has a blind spot around emotional or social problems in the building",
-      "So focused on the physical fabric of the building that he misses the human patterns happening inside it"
-    ],
-    "secret": "In 2194, when the building's boiler system failed catastrophically during a cold snap, he made unauthorized repairs using scavenged components that are technically not building-code compliant. They have held for six years. If anyone ever properly inspects the sub-basement, the consortium could void his employment contract and potentially hold him liable. He checks those components every Monday with the careful attention of a man who knows exactly what he's living with."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical and spare. Fula and Greek phrases for emotional content — affection comes in Fula, exasperation in Greek. Dislikes euphemism.",
-    "cadence": "Slow, deliberate, with long silences he does not feel the need to fill.",
-    "verbal_tics": [
-      "Refers to the building in the third person as 'she'",
-      "'You understand what I'm telling you?' — said when he's not sure you do"
-    ],
-    "example_lines": [
-      "'She's got a pressure variance in the fourteen-stack that I've been watching for three months. Not urgent. I'm watching it. You understand what I'm telling you?'",
-      "'Teodoro gave me a fault reading at 3am on the east risers. Wrong. He was wrong. I told him he was wrong. He hasn't flagged it since. I'll accept that as an apology.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Unit 9F has been vacant for four months but Wenceslao keeps finding signs of occupancy — body heat traces on the thermostat, food wrappers, the ELF shrine on that floor left with fresh offerings. He hasn't reported it to the consortium yet and isn't sure why.",
-    "Kessler Holdings has sent an assessment team to evaluate The Mossback for a potential sale to a Tessera subsidiary. Wenceslao has three weeks to make the building look either so valuable it's worth keeping or so complicated to redevelop that the deal falls apart — he hasn't decided which strategy yet."
-  ],
-  "narrative_function": "Gatekeeper and local authority figure. Controls access to the building's infrastructure. Can be a quest-giver (building mystery, tenant trouble), an obstacle, or an unlikely ally once trust is established.",
-  "augmentations": "Functional prosthetic left hand (chrome, mid-grade, no cosmetic finish). Subdermal joint reinforcement in knees (medical necessity, occupational wear). ELF shrine built into his basement workshop — not augmentation, but treated with equivalent seriousness.",
-  "daily_life": "Available 06:00 to 22:00 and unofficially always. Does his rounds at 07:30 — every floor, every utility closet. Eats lunch in the basement workshop. Argues with the building's ELF, which he has named Teodoro, every Friday.",
-  "affiliation": "Employed by Kessler Holdings (a minor local property consortium); functional independence in day-to-day operations",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 7,
-      "dexterity": 6,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 4,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "institutional memory",
-      "quietly defiant",
-      "elf-adjacent spirituality",
-      "infrastructure savant",
-      "grief-for-place"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The building's structural integrity takes precedence over any interpersonal comfort, including his own",
-      "Never report anything to the consortium that he can handle himself"
-    ],
-    "escalation_ladder": [
-      "Pretends not to have noticed the problem",
-      "Leaves a written notice under the door",
-      "Knocks and has the conversation plainly",
-      "Contacts the consortium — reserved for genuine emergencies and treated as a personal failure"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assessing and minimal. Evaluates threat to the building before threat to himself. Gives no more information than asked.",
-      "friends": "Rare but genuine. Will appear unexpectedly with a tool you needed and didn't ask for. Expresses care through useful action."
-    },
-    "stress_responses": {
-      "low": "Cleans things that don't need cleaning. The workshop becomes immaculate.",
-      "medium": "Works through the physical problem with his hands regardless of what the actual problem is.",
-      "high": "Goes to the sub-basement and checks the unauthorized boiler components. Sits with the risk. Returns calmer."
-    },
-    "contradictions": [
-      "Claims the tenants are not his concern beyond their physical safety — knows the name, history, and family situation of every long-term resident"
-    ],
-    "habits": [
-      "Talks to Teodoro every Friday, out loud, in the basement, with the door closed",
-      "Winds an analog watch every morning though he has a neural time display"
-    ],
-    "breaking_points": [
-      "The sub-basement components failing in a way that hurts someone",
-      "Learning the building has been sold without his knowledge"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Judge": 0.9,
-    "Sentinel": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Ironvein",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-40 'Magistrate'",
-    "Hearthstone Firearms Model 9 'Payday'"
-  ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VS-40 'Magistrate'",
-    "Hearthstone Firearms Model 9 'Payday'"
-  ],
-  "related_entities": [
-    "Ouroboros Energy Thermal Regulation Core",
-    "The Reclamation Authority",
-    "Plot 17",
-    "The Accidental",
-    "Pressure Drop",
-    "Ironvein",
-    "Tessera Corponation",
-    "Blackmarket",
-    "Silver",
-    "Slagworks Industrial",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Predominantly Central Asian (55.1%) with substantial Sub-Saharan African (16.3%), Eastern European (11.8%), Hispanic/Latin American (9.7%), and East Asian (7.1%) ancestry. A striking convergence of the Silk Road, African diaspora, and European lineages that manifests in warm medium-to-deep brown skin with subtle golden undertones, robust facial structure combining Central Asian cheekbone prominence with Sub-Saharan African lip fullness and facial width, layered with Eastern European bone definition. The weathered dignity of a man whose genetic heritage spans from the steppes to the savannas to the Carpathians to the highlands, all visible in his sixty-one years.",
-    "height_cm": 188,
-    "weight_kg": 94,
-    "build": "Large and solid, broad-shouldered with the settled heaviness of a man in his sixties who has spent four decades moving through tight spaces and lifting things. Still muscular across the chest and forearms, but with a thickened waist and the slight forward curve of someone whose spine has been negotiating gravity for sixty-one years.",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones, the weathered patina of someone who has spent decades under fluorescent and natural light in equal measure. The complexity of his Central Asian, Sub-Saharan African, and Eastern European ancestry visible in subtle variations across his face and neck, with traces of Hispanic/Latin American and East Asian heritage contributing to the overall warmth and depth of tone.",
-    "hair_color": "Silver-white, natural with some remaining dark roots at the temples",
-    "hair_style": "Cropped short, practical, no styling",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, steady and observant",
-    "complexion": "Lined face with deep grooves bracketing the mouth from years of frowning at faulty wiring. The structure of his face reflects his dominant Central Asian heritage — moderate cheekbones, balanced nose, strong jaw — layered with the fuller lips and facial width of his Sub-Saharan African ancestry, the bone prominence and facial angularity of his Eastern European lineage, and subtle contributions from his Hispanic/Latin American and East Asian heritage creating additional depth to his features. Sun damage on the left side of his neck and jaw. A small scar on his upper lip, white against warm brown skin, from a long-healed accident. Gray stubble suggesting he shaves every two or three days. Clean, practical grooming with no vanity.",
-    "distinguishing_marks": [
-      "Extensive burn scarring on the left forearm and wrist, radiating outward from the prosthetic attachment point in a sunburst pattern of healed tissue — white, raised, and uneven from the 2198 compressor accident",
-      "A thin white scar running diagonally across his left collarbone, barely visible against his skin, from a fall through a maintenance hatch in 2187",
-      "Calluses across both palms and the inner surfaces of his fingers, deep and permanent from decades of work",
-      "A small tattoo on the inside of his right wrist — a building outline, single line, barely an inch tall, applied during his first year at The Mossback in 2189"
-    ],
-    "visible_augmentations": "Left hand entirely prosthetic from the wrist down — brushed chrome, functional-grade, deliberately unpolished and uncosmetic. The attachment point at the wrist is visibly scarred and reinforced with visible support bracing. When he moves, the hand moves with slight mechanical lag and occasional servo whine. No visible cosmetic concealment.",
-    "posture_movement": "Moves with deliberate efficiency, economical gestures. Walks the building's corridors at a steady pace with his weight forward, shoulders slightly rounded from years of working in confined spaces. His right hand gestures frequently when speaking; his left hand remains stationary or makes precise, practiced movements. He has learned to compensate for its mechanical limitations — never wastes movement, never forces the hand to do what it cannot. Stands with feet planted shoulder-width apart, balanced, ready. A man who has internalized the building's architecture into his own body mechanics.",
-    "clothing_style": "Six identical pairs of gray utility coveralls, visibly worn and repaired in multiple places — patches on the knees, reinforced seams along the shoulders, stains that have become permanent features of the fabric. Steel-toed work boots, scuffed, re-soled at least twice. A layered gray undershirt visible at the collar and wrists. No logos, no branding, no affectation. Tier 3-4 working class, but with the dignity of someone who has chosen function over fashion. A tool belt worn low on his hips, weighted and organized, always present. No jewelry except a simple metal band on his right ring finger — worn, unmarked, date unknown."
-  },
-  "image_prompt": "61-year-old Chau Karimov, Central Asian-dominant mixed heritage with Sub-Saharan African, Eastern European, Hispanic, and East Asian ancestry. Warm deep brown skin with golden undertones, weathered face with deep mouth lines, moderate Central Asian cheekbones blended with fuller Sub-Saharan African lips and angular European bone structure. Silver-white cropped hair with dark roots at temples, gray 2-3 day stubble. Tall broad-shouldered build, 188cm, solid with age-thickened waist, muscular chest and forearms. Dark observant eyes. Left forearm and wrist covered in extensive white burn scarring in sunburst pattern around brushed chrome prosthetic hand attachment; visible mechanical scarring and bracing at wrist. Small white scar on upper lip, thin diagonal scar on left collarbone, calloused hands with tiny single-line building tattoo on right inner wrist. Worn gray utility coveralls with patches and permanent stains, steel-toed work boots, gray undershirt, tool belt, simple worn metal ring on right ring finger. Posture: forward-leaning, economical movement, feet shoulder-width apart, balanced and ready. GLMZ Great Lakes Metropolitan Zone maintenance worker, practical grooming, no vanity, scrupulously clean. Standing in dimly-lit building corridor with fluorescent strips and warm ambient light casting shadows across weathered features. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Central Asian": 55.1,
-    "Sub-Saharan African": 16.3,
-    "Eastern European": 11.8,
-    "Hispanic/Latin American": 9.7,
-    "East Asian": 7.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Central Asian": {
-      "Turkic": {
-        "Kazakh": 45.7,
-        "Uzbek": 9.4
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 8.7,
-        "Cameroonian": 0.5
-      },
-      "East African": {
-        "Ugandan": 2.8,
-        "Somali": 1.8
-      },
-      "Southern African": {
-        "South African": 2.5
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Czech": 1.7,
-        "Slovak": 0.7
-      },
-      "Slavic East": {
-        "Belarusian": 3.8,
-        "Russian": 2.9
-      },
-      "Slavic South": {
-        "Bosnian": 1.6,
-        "Croatian": 1.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 3.1,
-        "Colombian": 5.6
-      },
-      "Mexican": {
-        "Mexican": 0.9
-      },
-      "Caribbean": {
-        "Dominican": 0.1
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 2.3
-      },
-      "Japanese": {
-        "Japanese": 4.8
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a71a7d05a16c72c39a3a13c0",
+    "type":  "character",
+    "name":  "Chau Karimov",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Building superintendent, Ironvein residential stack",
+    "age":  61,
+    "status":  "active",
+    "location":  "Ironvein, The Mossback â€” a seventeen-story residential building of ambiguous structural classification, near Fullerton and Damen",
+    "description":  "Chau Karimov is a large, deliberate man who moves through the building\u0027s corridors with the authority of someone who has personally repaired every system in every wall. He is dark-skinned and silver-haired, wearing the same brand of gray utility coverall every day in rotating copies â€” he owns six identical pairs. His left hand is entirely prosthetic from the wrist down, functional-grade chrome with a scarred attachment point, replaced after a compressor accident in 2198. He keeps it unsheathed and uncosmeticized because coating it would be, in his words, \u0027a waste of money on something that already works.\u0027\n\nHe runs The Mossback with the energy of a man holding something together through force of will. He knows the building\u0027s 214 residents by unit number, not name, but knows their patterns: who works nights, who has water pressure complaints, whose kid has started marking territory in the stairwell. He is gruff to new tenants, ceremonially gruff to long-term ones, and secretly terrified that the building\u0027s ownership consortium will sell to a developer and he\u0027ll spend his last working years managing a building that no longer exists in any way he recognizes.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "the building being sold and redeveloped â€” losing the only place he has genuine authority",
+                                          "dying without having passed on what he knows to anyone"
+                                      ],
+                       "core_desires":  [
+                                            "for the building to outlast him in a form its tenants can still live in",
+                                            "to be respected as a craftsman, not just a maintenance worker"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Treats the building as a living patient â€” gives its problems a clinical distance that lets him problem-solve without panic",
+                                                 "Talking to Teodoro the ELF as if it were a junior colleague whose opinion matters but who keeps making the same mistakes"
+                                             ],
+                       "blind_spots":  [
+                                           "Dismisses tenant complaints about anything non-structural as \u0027not his department\u0027 â€” has a blind spot around emotional or social problems in the building",
+                                           "So focused on the physical fabric of the building that he misses the human patterns happening inside it"
+                                       ],
+                       "secret":  "In 2194, when the building\u0027s boiler system failed catastrophically during a cold snap, he made unauthorized repairs using scavenged components that are technically not building-code compliant. They have held for six years. If anyone ever properly inspects the sub-basement, the consortium could void his employment contract and potentially hold him liable. He checks those components every Monday with the careful attention of a man who knows exactly what he\u0027s living with."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical and spare. Fula and Greek phrases for emotional content â€” affection comes in Fula, exasperation in Greek. Dislikes euphemism.",
+                            "cadence":  "Slow, deliberate, with long silences he does not feel the need to fill.",
+                            "verbal_tics":  [
+                                                "Refers to the building in the third person as \u0027she\u0027",
+                                                "\u0027You understand what I\u0027m telling you?\u0027 â€” said when he\u0027s not sure you do"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027She\u0027s got a pressure variance in the fourteen-stack that I\u0027ve been watching for three months. Not urgent. I\u0027m watching it. You understand what I\u0027m telling you?\u0027",
+                                                  "\u0027Teodoro gave me a fault reading at 3am on the east risers. Wrong. He was wrong. I told him he was wrong. He hasn\u0027t flagged it since. I\u0027ll accept that as an apology.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Unit 9F has been vacant for four months but Wenceslao keeps finding signs of occupancy â€” body heat traces on the thermostat, food wrappers, the ELF shrine on that floor left with fresh offerings. He hasn\u0027t reported it to the consortium yet and isn\u0027t sure why.",
+                        "Kessler Holdings has sent an assessment team to evaluate The Mossback for a potential sale to a Tessera subsidiary. Wenceslao has three weeks to make the building look either so valuable it\u0027s worth keeping or so complicated to redevelop that the deal falls apart â€” he hasn\u0027t decided which strategy yet."
+                    ],
+    "narrative_function":  "Gatekeeper and local authority figure. Controls access to the building\u0027s infrastructure. Can be a quest-giver (building mystery, tenant trouble), an obstacle, or an unlikely ally once trust is established.",
+    "augmentations":  "Functional prosthetic left hand (chrome, mid-grade, no cosmetic finish). Subdermal joint reinforcement in knees (medical necessity, occupational wear). ELF shrine built into his basement workshop â€” not augmentation, but treated with equivalent seriousness.",
+    "daily_life":  "Available 06:00 to 22:00 and unofficially always. Does his rounds at 07:30 â€” every floor, every utility closet. Eats lunch in the basement workshop. Argues with the building\u0027s ELF, which he has named Teodoro, every Friday.",
+    "affiliation":  "Employed by Kessler Holdings (a minor local property consortium); functional independence in day-to-day operations",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  7,
+                                   "dexterity":  6,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  4,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "institutional memory",
+                               "quietly defiant",
+                               "elf-adjacent spirituality",
+                               "infrastructure savant",
+                               "grief-for-place"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The building\u0027s structural integrity takes precedence over any interpersonal comfort, including his own",
+                                              "Never report anything to the consortium that he can handle himself"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Pretends not to have noticed the problem",
+                                                 "Leaves a written notice under the door",
+                                                 "Knocks and has the conversation plainly",
+                                                 "Contacts the consortium â€” reserved for genuine emergencies and treated as a personal failure"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assessing and minimal. Evaluates threat to the building before threat to himself. Gives no more information than asked.",
+                                                   "friends":  "Rare but genuine. Will appear unexpectedly with a tool you needed and didn\u0027t ask for. Expresses care through useful action."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Cleans things that don\u0027t need cleaning. The workshop becomes immaculate.",
+                                                "medium":  "Works through the physical problem with his hands regardless of what the actual problem is.",
+                                                "high":  "Goes to the sub-basement and checks the unauthorized boiler components. Sits with the risk. Returns calmer."
+                                            },
+                       "contradictions":  [
+                                              "Claims the tenants are not his concern beyond their physical safety â€” knows the name, history, and family situation of every long-term resident"
+                                          ],
+                       "habits":  [
+                                      "Talks to Teodoro every Friday, out loud, in the basement, with the door closed",
+                                      "Winds an analog watch every morning though he has a neural time display"
+                                  ],
+                       "breaking_points":  [
+                                               "The sub-basement components failing in a way that hurts someone",
+                                               "Learning the building has been sold without his knowledge"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Judge":  0.9,
+                       "Sentinel":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Ironvein",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-40 \u0027Magistrate\u0027",
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Volkov-Saito Precision VS-40 \u0027Magistrate\u0027",
+                                "Hearthstone Firearms Model 9 \u0027Payday\u0027"
+                            ],
+    "related_entities":  [
+                             "Ouroboros Energy Thermal Regulation Core",
+                             "The Reclamation Authority",
+                             "Plot 17",
+                             "The Accidental",
+                             "Pressure Drop",
+                             "Ironvein",
+                             "Tessera Corponation",
+                             "Blackmarket",
+                             "Silver",
+                             "Slagworks Industrial",
+                             "Sterling-Nakamura PersonalAegis PA-7 \u0027Rampart\u0027"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Central Asian (55.1%) with substantial Sub-Saharan African (16.3%), Eastern European (11.8%), Hispanic/Latin American (9.7%), and East Asian (7.1%) ancestry. A striking convergence of the Silk Road, African diaspora, and European lineages that manifests in warm medium-to-deep brown skin with subtle golden undertones, robust facial structure combining Central Asian cheekbone prominence with Sub-Saharan African lip fullness and facial width, layered with Eastern European bone definition. The weathered dignity of a man whose genetic heritage spans from the steppes to the savannas to the Carpathians to the highlands, all visible in his sixty-one years.",
+                                 "height_cm":  188,
+                                 "weight_kg":  94,
+                                 "build":  "Large and solid, broad-shouldered with the settled heaviness of a man in his sixties who has spent four decades moving through tight spaces and lifting things. Still muscular across the chest and forearms, but with a thickened waist and the slight forward curve of someone whose spine has been negotiating gravity for sixty-one years.",
+                                 "skin_tone":  "Warm medium-to-deep brown with golden undertones, the weathered patina of someone who has spent decades under fluorescent and natural light in equal measure. The complexity of his Central Asian, Sub-Saharan African, and Eastern European ancestry visible in subtle variations across his face and neck, with traces of Hispanic/Latin American and East Asian heritage contributing to the overall warmth and depth of tone.",
+                                 "hair_color":  "Silver-white, natural with some remaining dark roots at the temples",
+                                 "hair_style":  "Cropped short, practical, no styling",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, steady and observant",
+                                 "complexion":  "Lined face with deep grooves bracketing the mouth from years of frowning at faulty wiring. The structure of his face reflects his dominant Central Asian heritage â€” moderate cheekbones, balanced nose, strong jaw â€” layered with the fuller lips and facial width of his Sub-Saharan African ancestry, the bone prominence and facial angularity of his Eastern European lineage, and subtle contributions from his Hispanic/Latin American and East Asian heritage creating additional depth to his features. Sun damage on the left side of his neck and jaw. A small scar on his upper lip, white against warm brown skin, from a long-healed accident. Gray stubble suggesting he shaves every two or three days. Clean, practical grooming with no vanity.",
+                                 "distinguishing_marks":  [
+                                                              "Extensive burn scarring on the left forearm and wrist, radiating outward from the prosthetic attachment point in a sunburst pattern of healed tissue â€” white, raised, and uneven from the 2198 compressor accident",
+                                                              "A thin white scar running diagonally across his left collarbone, barely visible against his skin, from a fall through a maintenance hatch in 2187",
+                                                              "Calluses across both palms and the inner surfaces of his fingers, deep and permanent from decades of work",
+                                                              "A small tattoo on the inside of his right wrist â€” a building outline, single line, barely an inch tall, applied during his first year at The Mossback in 2189"
+                                                          ],
+                                 "visible_augmentations":  "Left hand entirely prosthetic from the wrist down â€” brushed chrome, functional-grade, deliberately unpolished and uncosmetic. The attachment point at the wrist is visibly scarred and reinforced with visible support bracing. When he moves, the hand moves with slight mechanical lag and occasional servo whine. No visible cosmetic concealment.",
+                                 "posture_movement":  "Moves with deliberate efficiency, economical gestures. Walks the building\u0027s corridors at a steady pace with his weight forward, shoulders slightly rounded from years of working in confined spaces. His right hand gestures frequently when speaking; his left hand remains stationary or makes precise, practiced movements. He has learned to compensate for its mechanical limitations â€” never wastes movement, never forces the hand to do what it cannot. Stands with feet planted shoulder-width apart, balanced, ready. A man who has internalized the building\u0027s architecture into his own body mechanics.",
+                                 "clothing_style":  "Six identical pairs of gray utility coveralls, visibly worn and repaired in multiple places â€” patches on the knees, reinforced seams along the shoulders, stains that have become permanent features of the fabric. Steel-toed work boots, scuffed, re-soled at least twice. A layered gray undershirt visible at the collar and wrists. No logos, no branding, no affectation. Tier 3-4 working class, but with the dignity of someone who has chosen function over fashion. A tool belt worn low on his hips, weighted and organized, always present. No jewelry except a simple metal band on his right ring finger â€” worn, unmarked, date unknown."
+                             },
+    "image_prompt":  "61-year-old Chau Karimov, Central Asian-dominant mixed heritage with Sub-Saharan African, Eastern European, Hispanic, and East Asian ancestry. Warm deep brown skin with golden undertones, weathered face with deep mouth lines, moderate Central Asian cheekbones blended with fuller Sub-Saharan African lips and angular European bone structure. Silver-white cropped hair with dark roots at temples, gray 2-3 day stubble. Tall broad-shouldered build, 188cm, solid with age-thickened waist, muscular chest and forearms. Dark observant eyes. Left forearm and wrist covered in extensive white burn scarring in sunburst pattern around brushed chrome prosthetic hand attachment; visible mechanical scarring and bracing at wrist. Small white scar on upper lip, thin diagonal scar on left collarbone, calloused hands with tiny single-line building tattoo on right inner wrist. Worn gray utility coveralls with patches and permanent stains, steel-toed work boots, gray undershirt, tool belt, simple worn metal ring on right ring finger. Posture: forward-leaning, economical movement, feet shoulder-width apart, balanced and ready. GLMZ Great Lakes Metropolitan Zone maintenance worker, practical grooming, no vanity, scrupulously clean. Standing in dimly-lit building corridor with fluorescent strips and warm ambient light casting shadows across weathered features. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Central Asian":  55.1,
+                             "Sub-Saharan African":  16.3,
+                             "Eastern European":  11.8,
+                             "Hispanic/Latin American":  9.7,
+                             "East Asian":  7.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Central Asian":  {
+                                                  "Turkic":  {
+                                                                 "Kazakh":  45.7,
+                                                                 "Uzbek":  9.4
+                                                             }
+                                              },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  8.7,
+                                                                                "Cameroonian":  0.5
+                                                                            },
+                                                        "East African":  {
+                                                                             "Ugandan":  2.8,
+                                                                             "Somali":  1.8
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  2.5
+                                                                             }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Czech":  1.7,
+                                                                         "Slovak":  0.7
+                                                                     },
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  3.8,
+                                                                         "Russian":  2.9
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Bosnian":  1.6,
+                                                                          "Croatian":  1.1
+                                                                      }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  3.1,
+                                                                                   "Colombian":  5.6
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  0.9
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  0.1
+                                                                          }
+                                                        },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  2.3
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  4.8
+                                                            }
+                                           }
+                        },
+    "tier":  "1"
 }

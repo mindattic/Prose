@@ -1,363 +1,376 @@
-{
-  "id": "019d6143a63f735d8ca5b773d8b9ec6f",
-  "type": "character",
-  "name": "Armaan Bah",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Information trader and intelligence analyst — broker",
-  "age": 32,
-  "status": "active",
-  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Armitage and Milwaukee",
-  "description": "Armaan Bah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 32, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a broker out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Armaan Bah describe him as a precision instrument — point him at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.66,
-      "ideal": 0.3,
-      "id": 0.86,
-      "shadow": 0.52,
-      "mask": 0.13,
-      "ghost": 0.88
-    },
-    "core_fears": [
-      "That the work they do makes the city worse, not better",
-      "Losing control of their own body to a hacker or malfunctioning cyberware",
-      "Losing their edge to age — the body slows before the mind accepts it"
-    ],
-    "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "Freedom from augmentation debt — the interest compounds like a tumor",
-      "Control — over their body, their schedule, their future"
-    ],
-    "coping_mechanisms": [
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
-      "Exercises compulsively — the body must be ready, always"
-    ],
-    "blind_spots": [
-      "Cannot distinguish between caution and cowardice in themselves or others",
-      "Trusts technology more than people — machines don't betray",
-      "Cannot see that their independence is actually isolation wearing a better outfit"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
-    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
-    "verbal_tics": [
-      "Hums tunelessly when planning — the team has learned to wait for the humming to stop",
-      "Uses old pre-collapse slang that nobody else remembers"
-    ],
-    "example_lines": [
-      "\"I don't sell information. I sell certainty. Different product, different price.\"",
-      "\"Everything has a value. Most people underestimate what they know.\"",
-      "\"My sources are confidential. My prices are not.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A crew member from Kamala Sorokin-Gyasi's past shows up in GLMZ, carrying old grievances and new chrome",
-    "A corporate black site Kamala Sorokin-Gyasi once infiltrated is being reopened, and the people inside know his face",
-    "A Tier 4 executive offers Kamala Sorokin-Gyasi a permanent position — the pay is obscene and the strings are invisible until they tighten"
-  ],
-  "narrative_function": "As a broker, Kamala Sorokin-Gyasi embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces. Reflex boosters wired into spinal column — shaves reaction time by 40ms",
-  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 8
-      },
-      "agility": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 7
-      },
-      "endurance": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 6
-      },
-      "reflexes": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 8
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 9
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 5
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 4
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 7
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 10
-      },
-      "intimidation": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 9
-      },
-      "deception": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 6
-      },
-      "empathy": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.85,
-      "caution": 0.69,
-      "loyalty": 0.57,
-      "greed": 0.85,
-      "empathy": 0.49
-    },
-    "drives": [
-      "reputation",
-      "survival",
-      "revenge"
-    ],
-    "thresholds": {
-      "pain": 7,
-      "stress": 6,
-      "loyalty_break": 5
-    },
-    "strengths": [
-      "network of reliable contacts",
-      "exceptional close-quarters combat",
-      "natural leadership presence"
-    ],
-    "weaknesses": [
-      "chronic insomnia affecting long-term performance",
-      "grudge-holding that compromises rational decision-making",
-      "risk-averse to the point of missed opportunities"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "broker",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Refuses contracts that require operating inside The Spires — too much surveillance"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior",
-      "Values loyalty intensely but has betrayed someone in the past to survive",
-      "Preaches independence but is desperate for approval from people they respect"
-    ],
-    "habits": [
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Eats the same meal before every job — superstition masquerading as preference",
-      "Keeps a physical paper notebook — no digital record of personal thoughts"
-    ],
-    "breaking_points": [
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Being publicly exposed — name, face, address, all of it blown"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Gecko-grip fingertip implants and toe pads",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
-      "replaces": ""
-    },
-    {
-      "name": "Reflex boosters wired into spinal column",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Reflex boosters wired into spinal column — shaves reaction time by 40ms",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.9,
-    "Face": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Steamvent Alley",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Volkov-Saito Precision VSP-11 'Stiletto'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Eastern European (40%) with substantial Sub-Saharan African (34.8%), Central Asian (10.1%), South Asian (8.1%), and East Asian (7%) ancestry — a complex genetic tapestry reflecting the Ubiquitous Diaspora. The combination produces warm deep brown skin with subtle golden undertones, blending Eastern European and Central Asian cooler ancestry with the warmth of African and South Asian genetics.",
-    "height_cm": 189,
-    "weight_kg": 78,
-    "build": "Lean and angular with visible musculature — the physiology of someone who trains constantly. No wasted mass. Shoulders broad but not bulky. Limbs long and proportionally efficient.",
-    "hair_color": "Black with premature gray at temples",
-    "hair_style": "Kept short and neat, styled back from forehead",
-    "hair_length": "Short",
-    "eye_color": "Dark brown",
-    "skin_tone": "Deep warm brown with golden undertones, reflecting the balanced blend of Eastern European, Sub-Saharan African, Central Asian, and South Asian ancestry. Medium saturation with slight luster.",
-    "complexion": "High, prominent cheekbones with balanced projection — characteristic of Sub-Saharan African and Eastern European features blended with Central Asian structure. Angular but balanced jaw with subtle width through the lower face. Nose bridge straight with refined proportions reflecting the Eastern European and Central Asian contributions, with slight nasal bridge width from South Asian ancestry. Skin shows the strain of nocturnal living — slightly matte, minor discoloration under eyes. Expression habitually neutral and controlled. Grooming is meticulous but not decorative.",
-    "distinguishing_marks": [
-      "Thin pale scar along left jawline, approximately 8cm, slightly raised — old enough to be well-healed but still visible",
-      "Minor burn marks on inner left wrist in a pattern suggesting wire contact — barely noticeable unless pointed out"
-    ],
-    "visible_augmentations": "Gecko-grip implants visible at fingertips and toe pads — matte black synthetic material with subtle iridescent sheening when light catches them at certain angles. The implants create a subtle geometric texture on skin. No visible spinal augmentation — reflex boosters are internal.",
-    "posture_movement": "Stands with economical stillness — every micro-movement deliberate. Walks with minimal wasted motion, weight balanced. Hands rest at sides or on lap when seated, fingers rarely fidget. Movements are smooth and precise when engaged. Eye contact is controlled, neither aggressive nor avoidant. Default expression: guarded neutrality.",
-    "clothing_style": "Tier 3-4 functional wear — dark fitted synthetics, black tactical cargo pants with multiple sealed pockets, lightweight thermal undershirt. Carries a reinforced harness rig for equipment. Boots are matte black with reinforced toe caps (compatible with gecko-grip pads). No visible corp logos or status symbols. Layers suggest someone who works in Steamvent's heat and chemical air — practical, replaceable, purchased for durability not fashion."
-  },
-  "image_prompt": "Armaan Bah, a 189cm lean muscular figure with deep warm brown skin and golden undertones, standing in a GLMZ industrial setting. Angular face with high cheekbones, dark brown eyes, straight nose, thin scar along left jawline. Black hair with gray at temples, kept short and neat. Matte black gecko-grip implants visible on fingertips and toe pads with subtle iridescent sheening. Wearing dark fitted synthetic tactical cargo pants with sealed pockets, lightweight thermal undershirt, reinforced black boots with toe caps. Reinforced equipment harness across chest. Posture is economical and still, expression guarded and neutral. Standing in Steamvent's chemical haze and heat, neon lighting catching the iridescence of augmented fingertips. Nocturnal living evident in slight fatigue under eyes. Cinematic neo-noir lighting, 2200s aesthetic, hyperrealistic, --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 40,
-    "Sub-Saharan African": 34.8,
-    "Central Asian": 10.1,
-    "South Asian": 8.1,
-    "East Asian": 7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Slavic East": {
-        "Belarusian": 34.9
-      },
-      "Slavic South": {
-        "Bosnian": 3.2
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 1.1,
-        "Romanian": 0.8
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Ghanaian": 33.2,
-        "Ivorian": 1.6
-      }
-    },
-    "Central Asian": {
-      "Turkic": {
-        "Kyrgyz": 7.8,
-        "Uzbek": 2.3
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Punjabi": 4.5
-      },
-      "Nepali": {
-        "Nepali": 1.5
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 2.1
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 4.1
-      },
-      "Japanese": {
-        "Japanese": 0.8
-      },
-      "Chinese": {
-        "Shanghainese": 2.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a63f735d8ca5b773d8b9ec6f",
+    "type":  "character",
+    "name":  "Armaan Bah",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Information trader and intelligence analyst â€” broker",
+    "age":  32,
+    "status":  "active",
+    "location":  "Steamvent Alley â€” geothermal district, hot and chemical-smelling, near Armitage and Milwaukee",
+    "description":  "Armaan Bah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 32, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible â€” gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces â€” and he makes no effort to hide it.\n\nHis entry into running was involuntary â€” a debt to the wrong people, a choice between working it off or losing parts â€” and the debt is still not fully paid. He works as a broker out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Armaan Bah describe him as a precision instrument â€” point him at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the work they do makes the city worse, not better",
+                                          "Losing control of their own body to a hacker or malfunctioning cyberware",
+                                          "Losing their edge to age â€” the body slows before the mind accepts it"
+                                      ],
+                       "core_desires":  [
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "Freedom from augmentation debt â€” the interest compounds like a tumor",
+                                            "Control â€” over their body, their schedule, their future"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+                                                 "Art â€” draws, paints, or sculpts in private; the violence goes somewhere constructive",
+                                                 "Exercises compulsively â€” the body must be ready, always"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot distinguish between caution and cowardice in themselves or others",
+                                           "Trusts technology more than people â€” machines don\u0027t betray",
+                                           "Cannot see that their independence is actually isolation wearing a better outfit"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+                            "cadence":  "Rhythmic, almost musical â€” the sentence structure has a pattern even when the words are brutal.",
+                            "verbal_tics":  [
+                                                "Hums tunelessly when planning â€” the team has learned to wait for the humming to stop",
+                                                "Uses old pre-collapse slang that nobody else remembers"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I don\u0027t sell information. I sell certainty. Different product, different price.\"",
+                                                  "\"Everything has a value. Most people underestimate what they know.\"",
+                                                  "\"My sources are confidential. My prices are not.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A crew member from Kamala Sorokin-Gyasi\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
+                        "A corporate black site Kamala Sorokin-Gyasi once infiltrated is being reopened, and the people inside know his face",
+                        "A Tier 4 executive offers Kamala Sorokin-Gyasi a permanent position â€” the pay is obscene and the strings are invisible until they tighten"
+                    ],
+    "narrative_function":  "As a broker, Kamala Sorokin-Gyasi embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+    "augmentations":  "Gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces. Reflex boosters wired into spinal column â€” shaves reaction time by 40ms",
+    "daily_life":  "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+    "affiliation":  "Semi-independent â€” recurring contracts with mid-tier fixers",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  1,
+                                                    "effective":  8
+                                                },
+                                   "agility":  {
+                                                   "base":  6,
+                                                   "augmented":  0,
+                                                   "effective":  7
+                                               },
+                                   "endurance":  {
+                                                     "base":  6,
+                                                     "augmented":  0,
+                                                     "effective":  6
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  6,
+                                                    "augmented":  3,
+                                                    "effective":  8
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  3,
+                                                      "augmented":  3,
+                                                      "effective":  9
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  1,
+                                                    "effective":  5
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  2,
+                                                   "effective":  4
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  0,
+                                                   "effective":  7
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  6,
+                                                  "augmented":  3,
+                                                  "effective":  10
+                                              },
+                                 "intimidation":  {
+                                                      "base":  5,
+                                                      "augmented":  1,
+                                                      "effective":  9
+                                                  },
+                                 "deception":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  6
+                                               },
+                                 "empathy":  {
+                                                 "base":  4,
+                                                 "augmented":  1,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.85,
+                                      "caution":  0.69,
+                                      "loyalty":  0.57,
+                                      "greed":  0.85,
+                                      "empathy":  0.49
+                                  },
+                  "drives":  [
+                                 "reputation",
+                                 "survival",
+                                 "revenge"
+                             ],
+                  "thresholds":  {
+                                     "pain":  7,
+                                     "stress":  6,
+                                     "loyalty_break":  5
+                                 },
+                  "strengths":  [
+                                    "network of reliable contacts",
+                                    "exceptional close-quarters combat",
+                                    "natural leadership presence"
+                                ],
+                  "weaknesses":  [
+                                     "chronic insomnia affecting long-term performance",
+                                     "grudge-holding that compromises rational decision-making",
+                                     "risk-averse to the point of missed opportunities"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "broker",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior",
+                                              "Values loyalty intensely but has betrayed someone in the past to survive",
+                                              "Preaches independence but is desperate for approval from people they respect"
+                                          ],
+                       "habits":  [
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore",
+                                      "Eats the same meal before every job â€” superstition masquerading as preference",
+                                      "Keeps a physical paper notebook â€” no digital record of personal thoughts"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Being publicly exposed â€” name, face, address, all of it blown"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Gecko-grip fingertip implants and toe pads",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Reflex boosters wired into spinal column",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Reflex boosters wired into spinal column â€” shaves reaction time by 40ms",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.9,
+                       "Face":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Steamvent Alley",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KP-22 Sport \u0027Plinkmaster\u0027",
+                            "Volkov-Saito Precision VSP-11 \u0027Stiletto\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
+                             "Slagworks Industrial",
+                             "GLMZ"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Eastern European (40%) with substantial Sub-Saharan African (34.8%), Central Asian (10.1%), South Asian (8.1%), and East Asian (7%) ancestry â€” a complex genetic tapestry reflecting the Ubiquitous Diaspora. The combination produces warm deep brown skin with subtle golden undertones, blending Eastern European and Central Asian cooler ancestry with the warmth of African and South Asian genetics.",
+                                 "height_cm":  189,
+                                 "weight_kg":  78,
+                                 "build":  "Lean and angular with visible musculature â€” the physiology of someone who trains constantly. No wasted mass. Shoulders broad but not bulky. Limbs long and proportionally efficient.",
+                                 "hair_color":  "Black with premature gray at temples",
+                                 "hair_style":  "Kept short and neat, styled back from forehead",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown",
+                                 "skin_tone":  "Deep warm brown with golden undertones, reflecting the balanced blend of Eastern European, Sub-Saharan African, Central Asian, and South Asian ancestry. Medium saturation with slight luster.",
+                                 "complexion":  "High, prominent cheekbones with balanced projection â€” characteristic of Sub-Saharan African and Eastern European features blended with Central Asian structure. Angular but balanced jaw with subtle width through the lower face. Nose bridge straight with refined proportions reflecting the Eastern European and Central Asian contributions, with slight nasal bridge width from South Asian ancestry. Skin shows the strain of nocturnal living â€” slightly matte, minor discoloration under eyes. Expression habitually neutral and controlled. Grooming is meticulous but not decorative.",
+                                 "distinguishing_marks":  [
+                                                              "Thin pale scar along left jawline, approximately 8cm, slightly raised â€” old enough to be well-healed but still visible",
+                                                              "Minor burn marks on inner left wrist in a pattern suggesting wire contact â€” barely noticeable unless pointed out"
+                                                          ],
+                                 "visible_augmentations":  "Gecko-grip implants visible at fingertips and toe pads â€” matte black synthetic material with subtle iridescent sheening when light catches them at certain angles. The implants create a subtle geometric texture on skin. No visible spinal augmentation â€” reflex boosters are internal.",
+                                 "posture_movement":  "Stands with economical stillness â€” every micro-movement deliberate. Walks with minimal wasted motion, weight balanced. Hands rest at sides or on lap when seated, fingers rarely fidget. Movements are smooth and precise when engaged. Eye contact is controlled, neither aggressive nor avoidant. Default expression: guarded neutrality.",
+                                 "clothing_style":  "Tier 3-4 functional wear â€” dark fitted synthetics, black tactical cargo pants with multiple sealed pockets, lightweight thermal undershirt. Carries a reinforced harness rig for equipment. Boots are matte black with reinforced toe caps (compatible with gecko-grip pads). No visible corp logos or status symbols. Layers suggest someone who works in Steamvent\u0027s heat and chemical air â€” practical, replaceable, purchased for durability not fashion."
+                             },
+    "image_prompt":  "Armaan Bah, a 189cm lean muscular figure with deep warm brown skin and golden undertones, standing in a GLMZ industrial setting. Angular face with high cheekbones, dark brown eyes, straight nose, thin scar along left jawline. Black hair with gray at temples, kept short and neat. Matte black gecko-grip implants visible on fingertips and toe pads with subtle iridescent sheening. Wearing dark fitted synthetic tactical cargo pants with sealed pockets, lightweight thermal undershirt, reinforced black boots with toe caps. Reinforced equipment harness across chest. Posture is economical and still, expression guarded and neutral. Standing in Steamvent\u0027s chemical haze and heat, neon lighting catching the iridescence of augmented fingertips. Nocturnal living evident in slight fatigue under eyes. Cinematic neo-noir lighting, 2200s aesthetic, hyperrealistic, --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  40,
+                             "Sub-Saharan African":  34.8,
+                             "Central Asian":  10.1,
+                             "South Asian":  8.1,
+                             "East Asian":  7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  34.9
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Bosnian":  3.2
+                                                                      },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  1.1,
+                                                                             "Romanian":  0.8
+                                                                         }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Ghanaian":  33.2,
+                                                                             "Ivorian":  1.6
+                                                                         }
+                                                    },
+                            "Central Asian":  {
+                                                  "Turkic":  {
+                                                                 "Kyrgyz":  7.8,
+                                                                 "Uzbek":  2.3
+                                                             }
+                                              },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Punjabi":  4.5
+                                                           },
+                                                "Nepali":  {
+                                                               "Nepali":  1.5
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  2.1
+                                                                }
+                                            },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  4.1
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  0.8
+                                                            },
+                                               "Chinese":  {
+                                                               "Shanghainese":  2.1
+                                                           }
+                                           }
+                        },
+    "tier":  "3"
 }

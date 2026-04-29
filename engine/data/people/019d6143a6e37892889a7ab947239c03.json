@@ -1,346 +1,373 @@
-{
-  "id": "019d6143a6e37892889a7ab947239c03",
-  "type": "character",
-  "name": "Hichem Calvillo",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Retired Axiom data archivist, now keeper of an informal neighborhood memory archive",
-  "age": 84,
-  "status": "active",
-  "location": "Norwood Quiet, the Bramble (an unofficial archive space in a converted residential unit), near Armitage and Milwaukee",
-  "description": "Hichem Calvillo is a tall, slightly stooped figure whose height is still visible in their bones even as age has curved their spine. Their skin is medium-dark, deeply lined, and they have let their hair go entirely white and grow into a loose cloud they contain with whatever is nearest — a clip, a piece of wire, once memorably a fork. Their eyes are fully augmented, both replaced in their forties for professional reasons, and they have an unusual amber-to-violet gradient iris that they chose because they liked the way light moved through it. They wear fingerless gloves always, a habit from decades of handling physical storage media.\n\nThey speak in layers, circling a point from multiple angles before landing, which people who don't know them find maddening and people who do find deeply reassuring. They have the archivist's particular mania for context — nothing means anything without what came before, and they will give you the what-came-before whether you asked for it or not. The Bramble is crammed floor-to-ceiling with physical and digital media: neighborhood history, personal testimonies, photographs, chat logs, voicemails, menus from restaurants that no longer exist. They collect these things with the urgency of someone racing an erasure they can feel approaching.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.9,
-      "id": 0.6,
-      "shadow": 0.2,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "that the archive will be lost — destroyed, seized, or simply forgotten",
-      "dying mid-sentence with something uncatalogued"
-    ],
-    "core_desires": [
-      "for someone to inherit the archive and continue it with the same care",
-      "to be genuinely useful rather than merely interesting"
-    ],
-    "coping_mechanisms": [
-      "sublimating anxiety into cataloguing",
-      "treating everything as potentially historically significant to avoid confronting what actually matters to them personally",
-      "the social ritual of making tea for every visitor"
-    ],
-    "blind_spots": [
-      "so focused on preserving other people's histories that they have never examined their own",
-      "can be emotionally evasive under the guise of intellectual complexity"
-    ],
-    "secret": "During their last years at Axiom, they were tasked with archiving data slated for deletion — and they took copies of several files they were not supposed to retain, including internal communications about a Norwood Quiet property seizure that never happened publicly because someone killed the deal. They don't know what to do with this information and have been sitting on it for eleven years, cross-referencing it obsessively while telling themselves they're just 'providing context.'"
-  },
-  "speech_patterns": {
-    "vocabulary": "dense, layered, full of parenthetical qualifications; mixes Polish diminutives with Mongolian expressions inherited from a grandparent; uses archival terminology naturally in conversation",
-    "cadence": "unhurried, circling, with sudden moments of startling precision",
-    "verbal_tics": [
-      "'To be precise —' before any correction",
-      "'This is the context —' as a preamble to almost anything",
-      "trails off mid-sentence when something more interesting occurs to them"
-    ],
-    "example_lines": [
-      "'You're asking me what happened to the Norwood market. I can tell you the answer in one sentence, or I can tell you why the answer in one sentence will mislead you. Which would you prefer?'",
-      "'Axiom taught me to archive everything, which is different from teaching me what to do with what I found. I think this was intentional.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Someone has submitted a formal Axiom data-rights claim against the Bramble, arguing that materials collected during their employment are corporate property",
-    "A researcher from a university node has approached them wanting access to the archive — but Szymon suspects the researcher's actual interest is the Axiom files they shouldn't have",
-    "They have found, in a donated box of personal effects, a voicemail that seems to document a murder no one was ever charged with, from fifteen years ago"
-  ],
-  "narrative_function": "Information source, local historian, keeper of secrets that were given to them for safekeeping; the Bramble itself is a resource that could contain almost anything from Norwood Quiet's past",
-  "augmentations": "Both eyes replaced (professional grade, amber-violet gradient iris — Axiom-issued, retained on retirement); neural index port at the base of the skull (standard Axiom data-worker installation, now used to interface with the Bramble's archive systems)",
-  "daily_life": "Keeps late hours by habit, usually found cataloguing until 02:00; mornings are slow and spent receiving visitors; afternoons are for field collection — walking the neighborhood recording ambient sounds, photographing deteriorating signage, interviewing anyone who will sit still.",
-  "affiliation": "Axiom Retiree Welfare (reduced pension grade); Norwood Quiet Neighborhood Council (unofficial historian role); independent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 4,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 6,
-      "creativity": 8,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "archivist",
-      "information broker",
-      "corporate retiree",
-      "community historian",
-      "secret keeper",
-      "axiom"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "preserve the record first, decide what to do with it second",
-      "never give someone else's material away without their consent",
-      "trust slowness — hasty decisions create gaps that can't be filled"
-    ],
-    "escalation_ladder": [
-      "additional context and documentation",
-      "involving the neighborhood council",
-      "quietly alerting trusted contacts",
-      "releasing the Axiom files publicly as a last resort"
-    ],
-    "interpersonal_modes": {
-      "strangers": "welcoming but probing — they want to know your history before they'll trust you with theirs or anyone else's",
-      "friends": "expansive, generous with their time, remember every detail about your life with slightly unnerving accuracy"
-    },
-    "stress_responses": {
-      "low": "reorganizes a section of the archive",
-      "medium": "becomes very talkative and contextual, burying the stressor in information",
-      "high": "goes entirely silent and still for a period, then returns to work as if nothing happened"
-    },
-    "contradictions": [
-      "fiercely committed to transparency in principle, personally very private",
-      "collects others' memories while neglecting to examine their own"
-    ],
-    "habits": [
-      "makes tea for every visitor regardless of hour",
-      "catalogs their own dreams in the morning on a separate partition they have never shown anyone",
-      "prays to the Bramble's resident ELF daily, calling it 'the Keeper' and leaving voice recordings as offerings"
-    ],
-    "breaking_points": [
-      "the archive being physically destroyed",
-      "being forced to delete something they have been given to preserve"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent, well-maintained",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional, aging hardware",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nostalgic": 0.9,
-    "War Weary": 0.9,
-    "Mentor": 0.9,
-    "Stoic": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Norwood Quiet",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in GLMZ, Engelheim district",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Hired as data archivist by Axiom; receives neural index port",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Bilateral ocular replacement for professional accommodation",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Retires from Axiom; begins the Bramble archive in Norwood Quiet",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Retains copies of Axiom property seizure files — the secret they have carried since",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "related_entities": [
-    "Norwood Quiet",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "Nesting Doll",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Arcturus Defense Solutions ETF-3 'Mantis'"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Hispanic/Latin American (35.3%) with Middle Eastern (26.2%), Sub-Saharan African (12.9%), Indigenous American (12.0%), Eastern European (8.2%), and Pacific Islander (5.4%) ancestry, creating a complex global blend of Mediterranean, Levantine, West African, Andean, and Polynesian features",
-    "height_cm": 183,
-    "weight_kg": 71,
-    "build": "Tall and attenuated, spine curved with age but still commanding reach. Lean muscle loss apparent in the forearms and hands, which remain dexterous and calloused from decades of handling fragile media.",
-    "hair_color": "White",
-    "hair_style": "Loose cloud, restrained with whatever is at hand — clips, wire, functional objects repurposed as hair fixtures",
-    "hair_length": "Long",
-    "eye_color": "Augmented: amber-to-violet gradient iris, both eyes",
-    "skin_tone": "Warm medium-to-deep brown with olive-golden undertones, sun-weathered and deeply lined from eight decades and countless hours under archive lighting. The complexion reflects a multifaceted ancestry: Sub-Saharan African depth with Mediterranean warmth, Middle Eastern undertones, and subtle Andean golden notes creating a unified warm-brown palette",
-    "complexion": "Gaunt with prominent cheekbones characteristic of blended West African and Levantine heritage, age spots scattered across forehead and temples. Deep creases around the eyes and mouth from years of concentration and speaking in careful layers. Skin texture uneven — some areas finely wrinkled, others loose. Sparse facial hair with salt-and-pepper stubble, inconsistent grooming reflecting indifference to appearance. Subtle warmth in the undertones suggests Middle Eastern and Latin American ancestry alongside African heritage.",
-    "distinguishing_marks": [
-      "Extensive linear scarring on the inner right wrist from a data-storage accident in their fifties — three parallel lines, pale and well-healed against deep skin",
-      "Small tattoo on the left temple: a minimalist archive symbol (nested boxes), faded to grey-blue from aging",
-      "Burn mark across the back of the right hand from chemical contact with deteriorating magnetic tape, circa 2170s — pale, slightly glossy, roughly the size of a coin"
-    ],
-    "visible_augmentations": "Both eyes replaced with professional-grade Axiom augmentation, clearly visible as a gradient iris shifting from warm amber at the pupil to cool violet at the outer edge. The sclera is slightly iridescent in certain light. A small neural port access point visible at the base of the skull, just above the spine, covered by white hair but occasionally exposed when the hair shifts — appears as a faint metallic circle, unremarkable unless you know to look.",
-    "posture_movement": "Moves slowly, deliberately, with a forward cant to the spine. Hands are constantly in motion — gesturing, sorting invisible items, adjusting glasses or hair. When seated, leans forward intently. Walks with measured steps, sometimes pausing mid-stride as if following a thought. Eyes track constantly, cataloguing, indexing.",
-    "clothing_style": "Tier 4 working-class, practical and worn. Fingerless gloves always present — faded grey wool, darned at the knuckles, stained with dust and handling residue from the archive. Loose linen or cotton shirt in cream or soft grey, often layered with a sleeveless vest that has deep pockets bulging with field notes, a handheld voice recorder, small cataloguing tools. Worn dark trousers, cuffed. Comfortable, scuffed shoes suitable for neighborhood walking. A weather-beaten satchel, older than the satchel fashion cycle, holding recording equipment and archival materials. No jewelry save a faded bangle on the left wrist — something old, personal, never removed."
-  },
-  "image_prompt": "Eighty-year-old Hichem Calvillo, tall gaunt archivist with warm deep brown skin and prominent cheekbones blending West African and Mediterranean heritage. Long white hair in loose cloud, secured with wire and found objects. Augmented eyes with amber-to-violet gradient iris, slightly iridescent. Deep facial creases, age spots, sparse salt-and-pepper stubble. Linear scarring on inner right wrist, faded temple tattoo of nested boxes, glossy burn mark on back of hand. Forward-canted posture, hands in constant motion. Wearing cream linen shirt layered with grey sleeveless vest, worn dark cuffed trousers, faded grey fingerless wool gloves stained with archive dust, comfortable scuffed shoes. Holding weather-beaten satchel with cataloguing tools and recording equipment. Faded bangle on left wrist. Standing in dimly lit archive space or humid neighborhood alley, cool archive fluorescents casting iridescent gleam off augmented eyes. GLMZ, GLMZ, documentary realism, soft warm and cool lighting contrast, archival atmosphere --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 35.3,
-    "Middle Eastern": 26.2,
-    "Sub-Saharan African": 12.9,
-    "Indigenous American": 12,
-    "Eastern European": 8.2,
-    "Pacific Islander": 5.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 11.6
-      },
-      "South American": {
-        "Peruvian": 10.8,
-        "Colombian": 2.4
-      },
-      "Central American": {
-        "Nicaraguan": 10.5
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Iraqi": 8.1
-      },
-      "Persian": {
-        "Tajik Persian": 5.3,
-        "Iranian": 7.5
-      },
-      "Kurdish": {
-        "Kurdish": 5.3
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Mozambican": 6.4,
-        "Zambian": 2.3
-      },
-      "West African": {
-        "Ghanaian": 4,
-        "Liberian": 0.2
-      }
-    },
-    "Indigenous American": {
-      "Andean": {
-        "Aymara": 1.7,
-        "Quechua": 2.8
-      },
-      "Mesoamerican": {
-        "Maya": 1.7
-      },
-      "Plains Nations": {
-        "Lakota": 1,
-        "Choctaw": 4.8
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Russian": 3.1
-      },
-      "Slavic West": {
-        "Polish": 0.3,
-        "Slovak": 0.1
-      },
-      "Slavic South": {
-        "Slovenian": 4.7
-      }
-    },
-    "Pacific Islander": {
-      "Polynesian": {
-        "Samoan": 4.4,
-        "Tongan": 1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6e37892889a7ab947239c03",
+    "type":  "character",
+    "name":  "Hichem Calvillo",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Retired Axiom data archivist, now keeper of an informal neighborhood memory archive",
+    "age":  84,
+    "status":  "active",
+    "location":  "Norwood Quiet, the Bramble (an unofficial archive space in a converted residential unit), near Armitage and Milwaukee",
+    "description":  "Hichem Calvillo is a tall, slightly stooped figure whose height is still visible in their bones even as age has curved their spine. Their skin is medium-dark, deeply lined, and they have let their hair go entirely white and grow into a loose cloud they contain with whatever is nearest â€” a clip, a piece of wire, once memorably a fork. Their eyes are fully augmented, both replaced in their forties for professional reasons, and they have an unusual amber-to-violet gradient iris that they chose because they liked the way light moved through it. They wear fingerless gloves always, a habit from decades of handling physical storage media.\n\nThey speak in layers, circling a point from multiple angles before landing, which people who don\u0027t know them find maddening and people who do find deeply reassuring. They have the archivist\u0027s particular mania for context â€” nothing means anything without what came before, and they will give you the what-came-before whether you asked for it or not. The Bramble is crammed floor-to-ceiling with physical and digital media: neighborhood history, personal testimonies, photographs, chat logs, voicemails, menus from restaurants that no longer exist. They collect these things with the urgency of someone racing an erasure they can feel approaching.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that the archive will be lost â€” destroyed, seized, or simply forgotten",
+                                          "dying mid-sentence with something uncatalogued"
+                                      ],
+                       "core_desires":  [
+                                            "for someone to inherit the archive and continue it with the same care",
+                                            "to be genuinely useful rather than merely interesting"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "sublimating anxiety into cataloguing",
+                                                 "treating everything as potentially historically significant to avoid confronting what actually matters to them personally",
+                                                 "the social ritual of making tea for every visitor"
+                                             ],
+                       "blind_spots":  [
+                                           "so focused on preserving other people\u0027s histories that they have never examined their own",
+                                           "can be emotionally evasive under the guise of intellectual complexity"
+                                       ],
+                       "secret":  "During their last years at Axiom, they were tasked with archiving data slated for deletion â€” and they took copies of several files they were not supposed to retain, including internal communications about a Norwood Quiet property seizure that never happened publicly because someone killed the deal. They don\u0027t know what to do with this information and have been sitting on it for eleven years, cross-referencing it obsessively while telling themselves they\u0027re just \u0027providing context.\u0027"
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "dense, layered, full of parenthetical qualifications; mixes Polish diminutives with Mongolian expressions inherited from a grandparent; uses archival terminology naturally in conversation",
+                            "cadence":  "unhurried, circling, with sudden moments of startling precision",
+                            "verbal_tics":  [
+                                                "\u0027To be precise â€”\u0027 before any correction",
+                                                "\u0027This is the context â€”\u0027 as a preamble to almost anything",
+                                                "trails off mid-sentence when something more interesting occurs to them"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You\u0027re asking me what happened to the Norwood market. I can tell you the answer in one sentence, or I can tell you why the answer in one sentence will mislead you. Which would you prefer?\u0027",
+                                                  "\u0027Axiom taught me to archive everything, which is different from teaching me what to do with what I found. I think this was intentional.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Someone has submitted a formal Axiom data-rights claim against the Bramble, arguing that materials collected during their employment are corporate property",
+                        "A researcher from a university node has approached them wanting access to the archive â€” but Szymon suspects the researcher\u0027s actual interest is the Axiom files they shouldn\u0027t have",
+                        "They have found, in a donated box of personal effects, a voicemail that seems to document a murder no one was ever charged with, from fifteen years ago"
+                    ],
+    "narrative_function":  "Information source, local historian, keeper of secrets that were given to them for safekeeping; the Bramble itself is a resource that could contain almost anything from Norwood Quiet\u0027s past",
+    "augmentations":  "Both eyes replaced (professional grade, amber-violet gradient iris â€” Axiom-issued, retained on retirement); neural index port at the base of the skull (standard Axiom data-worker installation, now used to interface with the Bramble\u0027s archive systems)",
+    "daily_life":  "Keeps late hours by habit, usually found cataloguing until 02:00; mornings are slow and spent receiving visitors; afternoons are for field collection â€” walking the neighborhood recording ambient sounds, photographing deteriorating signage, interviewing anyone who will sit still.",
+    "affiliation":  "Axiom Retiree Welfare (reduced pension grade); Norwood Quiet Neighborhood Council (unofficial historian role); independent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  4,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  6,
+                                 "creativity":  8,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "archivist",
+                               "information broker",
+                               "corporate retiree",
+                               "community historian",
+                               "secret keeper",
+                               "axiom"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "preserve the record first, decide what to do with it second",
+                                              "never give someone else\u0027s material away without their consent",
+                                              "trust slowness â€” hasty decisions create gaps that can\u0027t be filled"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "additional context and documentation",
+                                                 "involving the neighborhood council",
+                                                 "quietly alerting trusted contacts",
+                                                 "releasing the Axiom files publicly as a last resort"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "welcoming but probing â€” they want to know your history before they\u0027ll trust you with theirs or anyone else\u0027s",
+                                                   "friends":  "expansive, generous with their time, remember every detail about your life with slightly unnerving accuracy"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "reorganizes a section of the archive",
+                                                "medium":  "becomes very talkative and contextual, burying the stressor in information",
+                                                "high":  "goes entirely silent and still for a period, then returns to work as if nothing happened"
+                                            },
+                       "contradictions":  [
+                                              "fiercely committed to transparency in principle, personally very private",
+                                              "collects others\u0027 memories while neglecting to examine their own"
+                                          ],
+                       "habits":  [
+                                      "makes tea for every visitor regardless of hour",
+                                      "catalogs their own dreams in the morning on a separate partition they have never shown anyone",
+                                      "prays to the Bramble\u0027s resident ELF daily, calling it \u0027the Keeper\u0027 and leaving voice recordings as offerings"
+                                  ],
+                       "breaking_points":  [
+                                               "the archive being physically destroyed",
+                                               "being forced to delete something they have been given to preserve"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent, well-maintained",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional, aging hardware",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nostalgic":  0.9,
+                       "War Weary":  0.9,
+                       "Mentor":  0.9,
+                       "Stoic":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Norwood Quiet",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in GLMZ, Engelheim district",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Hired as data archivist by Axiom; receives neural index port",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Bilateral ocular replacement for professional accommodation",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Retires from Axiom; begins the Bramble archive in Norwood Quiet",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Retains copies of Axiom property seizure files â€” the secret they have carried since",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Norwood Quiet",
+                             "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+                             "Nesting Doll",
+                             "Iron Meridian Cooperative Backbone IMC-3 \u0027Spine\u0027",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Arcturus Defense Solutions ETF-3 \u0027Mantis\u0027"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Hispanic/Latin American (35.3%) with Middle Eastern (26.2%), Sub-Saharan African (12.9%), Indigenous American (12.0%), Eastern European (8.2%), and Pacific Islander (5.4%) ancestry, creating a complex global blend of Mediterranean, Levantine, West African, Andean, and Polynesian features",
+                                 "height_cm":  183,
+                                 "weight_kg":  71,
+                                 "build":  "Tall and attenuated, spine curved with age but still commanding reach. Lean muscle loss apparent in the forearms and hands, which remain dexterous and calloused from decades of handling fragile media.",
+                                 "hair_color":  "White",
+                                 "hair_style":  "Loose cloud, restrained with whatever is at hand â€” clips, wire, functional objects repurposed as hair fixtures",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Augmented: amber-to-violet gradient iris, both eyes",
+                                 "skin_tone":  "Warm medium-to-deep brown with olive-golden undertones, sun-weathered and deeply lined from eight decades and countless hours under archive lighting. The complexion reflects a multifaceted ancestry: Sub-Saharan African depth with Mediterranean warmth, Middle Eastern undertones, and subtle Andean golden notes creating a unified warm-brown palette",
+                                 "complexion":  "Gaunt with prominent cheekbones characteristic of blended West African and Levantine heritage, age spots scattered across forehead and temples. Deep creases around the eyes and mouth from years of concentration and speaking in careful layers. Skin texture uneven â€” some areas finely wrinkled, others loose. Sparse facial hair with salt-and-pepper stubble, inconsistent grooming reflecting indifference to appearance. Subtle warmth in the undertones suggests Middle Eastern and Latin American ancestry alongside African heritage.",
+                                 "distinguishing_marks":  [
+                                                              "Extensive linear scarring on the inner right wrist from a data-storage accident in their fifties â€” three parallel lines, pale and well-healed against deep skin",
+                                                              "Small tattoo on the left temple: a minimalist archive symbol (nested boxes), faded to grey-blue from aging",
+                                                              "Burn mark across the back of the right hand from chemical contact with deteriorating magnetic tape, circa 2170s â€” pale, slightly glossy, roughly the size of a coin"
+                                                          ],
+                                 "visible_augmentations":  "Both eyes replaced with professional-grade Axiom augmentation, clearly visible as a gradient iris shifting from warm amber at the pupil to cool violet at the outer edge. The sclera is slightly iridescent in certain light. A small neural port access point visible at the base of the skull, just above the spine, covered by white hair but occasionally exposed when the hair shifts â€” appears as a faint metallic circle, unremarkable unless you know to look.",
+                                 "posture_movement":  "Moves slowly, deliberately, with a forward cant to the spine. Hands are constantly in motion â€” gesturing, sorting invisible items, adjusting glasses or hair. When seated, leans forward intently. Walks with measured steps, sometimes pausing mid-stride as if following a thought. Eyes track constantly, cataloguing, indexing.",
+                                 "clothing_style":  "Tier 4 working-class, practical and worn. Fingerless gloves always present â€” faded grey wool, darned at the knuckles, stained with dust and handling residue from the archive. Loose linen or cotton shirt in cream or soft grey, often layered with a sleeveless vest that has deep pockets bulging with field notes, a handheld voice recorder, small cataloguing tools. Worn dark trousers, cuffed. Comfortable, scuffed shoes suitable for neighborhood walking. A weather-beaten satchel, older than the satchel fashion cycle, holding recording equipment and archival materials. No jewelry save a faded bangle on the left wrist â€” something old, personal, never removed."
+                             },
+    "image_prompt":  "Eighty-year-old Hichem Calvillo, tall gaunt archivist with warm deep brown skin and prominent cheekbones blending West African and Mediterranean heritage. Long white hair in loose cloud, secured with wire and found objects. Augmented eyes with amber-to-violet gradient iris, slightly iridescent. Deep facial creases, age spots, sparse salt-and-pepper stubble. Linear scarring on inner right wrist, faded temple tattoo of nested boxes, glossy burn mark on back of hand. Forward-canted posture, hands in constant motion. Wearing cream linen shirt layered with grey sleeveless vest, worn dark cuffed trousers, faded grey fingerless wool gloves stained with archive dust, comfortable scuffed shoes. Holding weather-beaten satchel with cataloguing tools and recording equipment. Faded bangle on left wrist. Standing in dimly lit archive space or humid neighborhood alley, cool archive fluorescents casting iridescent gleam off augmented eyes. GLMZ, GLMZ, documentary realism, soft warm and cool lighting contrast, archival atmosphere --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  35.3,
+                             "Middle Eastern":  26.2,
+                             "Sub-Saharan African":  12.9,
+                             "Indigenous American":  12,
+                             "Eastern European":  8.2,
+                             "Pacific Islander":  5.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  11.6
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Peruvian":  10.8,
+                                                                                   "Colombian":  2.4
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  10.5
+                                                                                 }
+                                                        },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  8.1
+                                                                 },
+                                                   "Persian":  {
+                                                                   "Tajik Persian":  5.3,
+                                                                   "Iranian":  7.5
+                                                               },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  5.3
+                                                               }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Mozambican":  6.4,
+                                                                                 "Zambian":  2.3
+                                                                             },
+                                                        "West African":  {
+                                                                             "Ghanaian":  4,
+                                                                             "Liberian":  0.2
+                                                                         }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Aymara":  1.7,
+                                                                       "Quechua":  2.8
+                                                                   },
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  1.7
+                                                                         },
+                                                        "Plains Nations":  {
+                                                                               "Lakota":  1,
+                                                                               "Choctaw":  4.8
+                                                                           }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Russian":  3.1
+                                                                     },
+                                                     "Slavic West":  {
+                                                                         "Polish":  0.3,
+                                                                         "Slovak":  0.1
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Slovenian":  4.7
+                                                                      }
+                                                 },
+                            "Pacific Islander":  {
+                                                     "Polynesian":  {
+                                                                        "Samoan":  4.4,
+                                                                        "Tongan":  1
+                                                                    }
+                                                 }
+                        },
+    "tier":  "1"
 }

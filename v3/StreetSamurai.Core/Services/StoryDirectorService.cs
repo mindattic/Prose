@@ -51,7 +51,6 @@ public class StoryDirectorService : IStoryDirectorService
     private readonly ILlmService llm;
     private readonly DatabaseService db;
     private readonly WorldGraphService graph;
-    private readonly FacetService facets;
     private readonly OutlineService outlineSvc;
     private readonly AgendaEngine agenda;
     private readonly StoryStateService storyState;
@@ -71,8 +70,9 @@ public class StoryDirectorService : IStoryDirectorService
     private readonly SuggestionEngineService suggestions;
     private readonly OutlineReviewService outlineReview;
     private readonly StoryQualityService quality;
-    private readonly FacetEvolutionService facetEvolution;
     private readonly CanonGroundingService canonGrounding;
+    private readonly BookOutlineService? bookOutline;
+    private readonly IChapterRepository? chapterRepo;
 
     public event Action<DirectorProgress>? OnProgress;
 
@@ -84,7 +84,7 @@ public class StoryDirectorService : IStoryDirectorService
 
     public StoryDirectorService(
         ILlmService llm, DatabaseService db, WorldGraphService graph,
-        FacetService facets, OutlineService outline, AgendaEngine agenda,
+        OutlineService outline, AgendaEngine agenda,
         StoryStateService storyState, EventLogService eventLog,
         KnowledgeMapService knowledge, StoryStarterService starter,
         SemanticIndexService semanticIndex, InferenceService inference,
@@ -94,12 +94,12 @@ public class StoryDirectorService : IStoryDirectorService
         DialogueService dialogue, ArcTrackerService arcTracker,
         ContinuityValidatorService continuityValidator, SuggestionEngineService suggestions,
         OutlineReviewService outlineReview, StoryQualityService quality,
-        FacetEvolutionService facetEvolution, CanonGroundingService canonGrounding)
+        CanonGroundingService canonGrounding,
+        BookOutlineService? bookOutline = null, IChapterRepository? chapterRepo = null)
     {
         this.llm = llm;
         this.db = db;
         this.graph = graph;
-        this.facets = facets;
         this.outlineSvc = outline;
         this.agenda = agenda;
         this.storyState = storyState;
@@ -119,8 +119,9 @@ public class StoryDirectorService : IStoryDirectorService
         this.suggestions = suggestions;
         this.outlineReview = outlineReview;
         this.quality = quality;
-        this.facetEvolution = facetEvolution;
         this.canonGrounding = canonGrounding;
+        this.bookOutline = bookOutline;
+        this.chapterRepo = chapterRepo;
     }
 
     /// <summary>
@@ -626,18 +627,8 @@ public class StoryDirectorService : IStoryDirectorService
                     log.LogWarning(ex, "State extraction failed for beat {BeatIndex} — continuing with stale state", beat.BeatIndex);
                 }
 
-                // Facet evolution — analyze beat and shift character facet weights (fire-and-forget)
-                var charsForEvolution = (beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all).ToList();
-                var beatTextForEvolution = beatText;
-                var beatGoalForEvolution = beat.Goal;
-                _ = Task.Run(async () =>
-                {
-                    foreach (var name in charsForEvolution)
-                    {
-                        try { await facetEvolution.AnalyzeAndApplyAsync(beatTextForEvolution, name, beatGoalForEvolution); }
-                        catch { /* best-effort — never block the pipeline */ }
-                    }
-                });
+                // (Facet evolution removed 2026-04-26 — facet system retired. Character interior
+                // is now sourced from documented psychology fields, not from drifting weights.)
 
                 // Arc validation (best-effort — don't block story on validation failures)
                 try
@@ -813,6 +804,7 @@ public class StoryDirectorService : IStoryDirectorService
         var dialogueConstraints = dialogue.BuildDialogueContext(charsForBeat);
         var conversationGoals = dialogue.BuildConversationGoals(charsForBeat, beat.Goal, beat.Tension);
         var physicalContext = BuildPhysicalContext(charsForBeat);
+        var povVoiceContext = BuildPovVoiceContext(cast.protagonist);
 
         // Pacing guidance — tells the LLM how to structure the prose for this beat's position
         var totalBeats = outline.Acts.SelectMany(a => a.Beats).Count();
@@ -861,6 +853,7 @@ public class StoryDirectorService : IStoryDirectorService
 
         var fullOutlineContext = outlineContext
             + (structuralGuidance.Length > 0 ? "\n\n" + structuralGuidance : "")
+            + (povVoiceContext.Length > 0 ? "\n\n" + povVoiceContext : "")
             + (thematicContext.Length > 0 ? "\n\n" + thematicContext : "")
             + (behaviorContext.Length > 0 ? "\n\n" + behaviorContext : "")
             + (physicalContext.Length > 0 ? "\n\n" + physicalContext : "")
@@ -1089,6 +1082,53 @@ public class StoryDirectorService : IStoryDirectorService
 
         if (lines.Count <= 1) return "";
         lines.Add("  These characters must NEVER sound alike. Their voices are their identity.");
+        return string.Join("\n", lines);
+    }
+
+    /// <summary>
+    /// POV voice rubric for the lead character. Different from BuildDialogueConstraints
+    /// (which scopes voice differentiation across speakers) — this is the *narrative* voice
+    /// the prose itself should sound like. Ensures the system writes the chapter through
+    /// THIS character's eyes, not the generic project-default.
+    /// </summary>
+    private string BuildPovVoiceContext(string leadName)
+    {
+        var c = db.FindCharacter(leadName);
+        if (c == null) return "";
+
+        var lines = new List<string> { $"POV NARRATIVE VOICE — {leadName} is the lens, not just the subject:" };
+
+        // Speech patterns shape narration too — not just dialogue.
+        var sp = c.SpeechPatterns;
+        if (!string.IsNullOrEmpty(sp.Cadence)) lines.Add($"  cadence: {sp.Cadence}");
+        if (!string.IsNullOrEmpty(sp.Vocabulary)) lines.Add($"  vocabulary: {sp.Vocabulary}");
+        if (sp.VerbalTics?.Count > 0) lines.Add($"  verbal tics: {string.Join(" | ", sp.VerbalTics.Take(3))}");
+        if (sp.ExampleLines?.Count > 0) lines.Add($"  voice example: \"{sp.ExampleLines[0]}\"");
+
+        // Psychology drives WHAT they notice, not just HOW.
+        var psy = c.Psychology;
+        if (psy.CoreFears?.Count > 0) lines.Add($"  what they fear: {psy.CoreFears[0]}");
+        if (psy.CoreDesires?.Count > 0) lines.Add($"  what they want: {psy.CoreDesires[0]}");
+        if (psy.CopingMechanisms?.Count > 0) lines.Add($"  how they cope: {psy.CopingMechanisms[0]}");
+
+        // Behavioral cues for what action looks like through their eyes.
+        var beh = c.Behavioral;
+        if (beh.DecisionRules?.Count > 0) lines.Add($"  decision rule: {beh.DecisionRules[0]}");
+        if (beh.Habits?.Count > 0) lines.Add($"  habit: {beh.Habits[0]}");
+
+        // Concrete observation rubric: what they NOTICE first in any space.
+        // Fall back to character-agnostic guidance if literary_rules don't have it loaded yet.
+        try
+        {
+            var pov = db.LiteraryRules?.PovVoice;
+            if (pov != null && pov.Differentiation?.Count > 0)
+                lines.Add($"  observation rubric: every paragraph should reflect THIS character's notice budget — what {leadName} would attend to first, in this order, given who they are. Ref: {pov.Differentiation[0]}");
+        }
+        catch { /* rules not loaded — skip */ }
+
+        if (lines.Count == 1) return "";  // no usable canon
+
+        lines.Add($"  ANTI-CADENCE: this prose should be unmistakably {leadName}'s. If the same paragraph could appear in another character's chapter, the voice has failed.");
         return string.Join("\n", lines);
     }
 

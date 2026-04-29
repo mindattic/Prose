@@ -1,318 +1,351 @@
-{
-  "id": "019d6143a6b678ed89580c96839e1db5",
-  "type": "character",
-  "name": "Aleksander Huitzil-Salazar",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Retired union leader, Tier 3, community council chair, grandmother raising two grandchildren",
-  "age": 68,
-  "status": "active",
-  "location": "Montclare Quiet, a corner flat above a laundromat she technically still owns half of, near Damen and Armitage",
-  "description": "Aleksander Huitzil-Salazar is the kind of woman whose presence in a room shifts the acoustics ��� people speak differently, sit straighter, choose their words more carefully. She is not tall but carries herself with the posture of someone who spent thirty years at the front of rooms demanding to be heard. Her heritage is Fijian-Polish, which expresses itself in wide cheekbones, a generous build, and warm brown skin that she has decorated with an elaborate bioluminescent tattoo pattern along both arms — traditional Fijian knotwork rendered in soft gold light, a gift she gave herself on her sixtieth birthday when Tessera's transit workers finally won the pension reform she'd fought for through three contract cycles. Her hair is silver-black, worn in a thick braid, and she has cat ears — small, rounded, dark-furred — a geneware mod she got to match her grandchildren when they wanted one, which she now considers non-negotiable to her identity.\n\nAleksander Huitzil-Salazar is formidable and knows it, which means she has spent decades learning to calibrate her formidableness carefully. She can be devastatingly charming when she chooses, withering when she must, and quietly exhausted in the rare moments when no one is looking. She is raising her two grandchildren, Kofi (9) and Mira (6), after her daughter's breakdown, and the exhaustion of simultaneous community leadership and primary caregiving is the thing she most carefully never shows.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.9,
-      "id": 0.5,
-      "shadow": 0.3,
-      "mask": 0.6,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Her grandchildren inheriting a worse world than the one she fought to improve",
-      "Becoming a figurehead — respected but no longer effective"
-    ],
-    "core_desires": [
-      "Genuine, durable protection for working people",
-      "To see Kofi and Mira grow up in a neighborhood that knows who they are"
-    ],
-    "coping_mechanisms": [
-      "Action — she processes stress by working",
-      "Ritual tea-making as a decompression tool she does not fully acknowledge as such"
-    ],
-    "blind_spots": [
-      "She has a tendency to assume that organizing and collective action can solve problems that require individual intervention, sometimes missing when someone needs help that is personal rather than political",
-      "She does not adequately account for how much her strength intimidates people who want to help her"
-    ],
-    "secret": "During the 2168 transit strike, she accepted a private side-agreement with a Ferrogate mid-level executive that ended the strike three weeks early. The workers got most of what they needed, but not everything, and the executive was protected from an internal Ferrogate investigation that would have exposed serious safety violations. Four workers were injured in an 'accident' on a line that the investigation would have flagged. She has rationalized this for fifteen years. She has not stopped."
-  },
-  "speech_patterns": {
-    "vocabulary": "Polished public speaker's vocabulary with an undercurrent of Fijian-inflected English rhythms and occasional Polish idioms inherited from her grandmother. Knows how to make formal language feel warm and warm language feel formal.",
-    "cadence": "Measured in public settings, faster and more direct in private. Pauses before key points with the precision of someone who learned pause as a rhetorical tool.",
-    "verbal_tics": [
-      "'Let me be plain with you —'",
-      "Uses 'we' when she means 'I' in political contexts, genuinely and not evasively",
-      "Ends difficult statements with a short exhale that is almost but not quite a laugh"
-    ],
-    "example_lines": [
-      "Let me be plain with you — this neighborhood does not need a developer's vision for what it could be. It needs to be left alone to be what it already is.",
-      "We didn't win that contract by asking nicely. We won it because we made it more expensive to deny us than to give us what we'd earned. That's not idealism. That's just arithmetic."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Ferrogate urban infrastructure project will route a new transit line directly through Montclare Quiet — the same executive she made the 2168 deal with is overseeing it, and he's been leaving her messages she hasn't answered",
-    "Her daughter attempts a surprise return to take custody of Kofi and Mira, and Rosalind must decide between her daughter's recovery and the children's stability — she needs someone neutral to help mediate",
-    "Former union members begin approaching her with evidence that Ferrogate has been systematically underpaying pension disbursements across the retired membership for years"
-  ],
-  "narrative_function": "Political and community power broker; can broker deals, gather community support, or apply legitimate pressure to local institutions; quest giver for stories about labor rights, housing disputes, or neighborhood protection; provides access to union networks and transit worker information channels.",
-  "augmentations": "Bioluminescent tattoo array, both arms (gold knotwork, geneware-integrated). Cat ears, dark-furred (geneware, cosmetic). Cochlear enhancement implant, left ear — an old injury from a corporate security clash during the 2168 transit strike left her with significant hearing loss on that side.",
-  "daily_life": "Up at 0600 to get the grandchildren fed and to school; council business consumes most mornings via comm-calls and in-person mediations; afternoons she tries to reserve for the laundromat's books and the council's actual paperwork; picks up Kofi and Mira at 1600 and considers that hour the best part of every day; evenings she reads old union documents, ostensibly for history but really because they calm her.",
-  "affiliation": "Ferrogate Transit Workers Union (retired president, 30-year member); Montclare Quiet Community Council (current chair); Tessera pension recipient",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 5,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 9,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 10,
-      "empathy": 7,
-      "expression": 9,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 4,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "union leader",
-      "community anchor",
-      "political broker",
-      "grandmother",
-      "compromised idealist"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Protect the collective before the individual unless the individual is one of her grandchildren",
-      "Never negotiate from a position you haven't prepared; never enter a room without knowing what you'll accept and what you won't"
-    ],
-    "escalation_ladder": [
-      "Warm, reasonable inquiry that maps the situation",
-      "Clear articulation of interests and potential consequences",
-      "Formal collective response — council motions, union contacts, public statements",
-      "Direct personal confrontation, private, devastating"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally warm, assessing their relationship to power and to the community simultaneously",
-      "friends": "Genuinely funny, self-deprecating about her own formidableness, physically affectionate"
-    },
-    "stress_responses": {
-      "low": "Makes tea. Elaborate, time-consuming tea.",
-      "medium": "Becomes very still and structured in speech; agenda-driven even in personal conversations",
-      "high": "Withdraws entirely for 20-30 minutes, will not be reached; returns with a plan"
-    },
-    "contradictions": [
-      "Dedicated to collective good but made a private deal that prioritized expedience over full accountability",
-      "Projects inexhaustible strength while running on empty"
-    ],
-    "habits": [
-      "Touches her cat ears when thinking — an unconscious fidget she does not know she does",
-      "Reviews old union contract documents before sleeping",
-      "Never raises her voice in formal settings"
-    ],
-    "breaking_points": [
-      "One of her grandchildren being frightened or harmed",
-      "Being publicly exposed as having made the 2168 deal"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Montclare Quiet",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Montclare Quiet, third-generation GLMZ resident",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Hired by Ferrogate Transit as a maintenance scheduler",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Elected to local union steward position; begins rapid ascent through union structure",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Leads the major Ferrogate transit strike; negotiates private side-agreement to end it; partially regrets this immediately",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Elected president of Ferrogate Transit Workers Union; serves three terms",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Retires from union presidency; elected to Montclare Quiet Community Council almost immediately",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Takes custody of grandchildren Kofi and Mira following daughter's crisis",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Forge-Smith Collective Fighting Chain 'Serpent'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Montclare Quiet",
-    "The United Workers Front",
-    "Ferrogate Transit",
-    "The Heritage Vault",
-    "Tessera Corponation",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "Silver",
-    "Corner Slice",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Gold"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Indigenous American (50%), Central Asian (29.3%), and Hispanic/Latin American (20.7%) ancestry. This genetic combination creates a striking phenotype with strong Indigenous American bone structure enhanced by Central Asian and Latin American heritage contributions. Her ancestry reflects deep roots of Mesoamerican and Andean lineages mixed with Turkic and Mongolian steppe genetics, resulting in prominent high cheekbones, characteristically broad facial structure, and warm-to-deep skin tones that shift between bronze and rich mahogany with subtle golden undertones.",
-    "height_cm": 162,
-    "weight_kg": 78,
-    "build": "Stocky and substantial, with a wide frame that reads as grounded and immovable. Decades of union organizing and manual labor have built dense muscle beneath generous padding; she moves with the economy of someone who knows exactly how much space she occupies.",
-    "hair_color": "Silver-black",
-    "hair_style": "Thick braid, usually bound with a simple cord or elastic, occasionally adorned with small beads her grandchildren have gifted her",
-    "hair_length": "Long",
-    "eye_color": "Deep brown, alert and calculating",
-    "skin_tone": "Rich mahogany-bronze with warm golden undertones—a nuanced blend reflecting strong Indigenous American and Latin American heritage with Central Asian depth, creating a complexion that shifts between burnished bronze and deep warm brown depending on light",
-    "complexion": "Lined face that reads as lived-in rather than aged; high, prominent cheekbones characteristic of Indigenous American ancestry; broad facial structure with strong jaw carrying Indigenous and Central Asian bone geometry; laugh lines around eyes and mouth are deep and expressive; skin has the slight weathering of someone who spent decades outdoors during transit operations; minimal makeup, usually just a dark lipstick in deep berry or burgundy",
-    "distinguishing_marks": [
-      "Bioluminescent tattoo array covering both forearms and extending onto the backs of her hands — traditional Fijian knotwork rendered in soft gold light that pulses faintly with her heartbeat, visible even in daylight as an iridescent shimmer beneath the skin",
-      "Thin, pale scar running from her left temple down to her jaw line — result of corporate security baton strike during the 2168 Ferrogate transit strike, now mostly faded but still visible under certain angles of light",
-      "Small calluses on the inside of her fingers from decades of writing, signing documents, and holding protest signs"
-    ],
-    "visible_augmentations": "Bioluminescent tattoo array (geneware-integrated, glowing gold knotwork on both arms). Small rounded dark-furred cat ears (geneware cosmetic modification, proportional to her head, always alert). Left ear shows a barely-visible surgical scar where cochlear enhancement implant was installed — the implant itself is internal and not visible, but the scar is noticeable if you're close enough.",
-    "posture_movement": "She stands with her weight evenly distributed, shoulders back but not rigid — the posture of someone trained to command rooms without appearing aggressive. Her movements are deliberate and economical; she doesn't fidget or gesture excessively. When she walks, there's a slight favoring of her right side, a legacy of old injuries. Her default expression is listening — she makes sustained eye contact and allows silence without filling it, which makes people nervous and makes her dangerous in negotiations.",
-    "clothing_style": "Tier 3 working-class aesthetic with deliberate touches of dignity. She favors well-maintained practical clothing: dark jeans or work pants, usually paired with a button-up shirt in jewel tones (deep emerald, burgundy, navy) or understated patterns; cardigan or well-cut blazer worn over everything as armor and professionalism. Her shoes are sensible and broken in, usually leather boots that have been resoled multiple times. She wears a thick gold wedding band on her left hand (widowed fifteen years) and a silver pen on a chain around her neck — a gift from the union on her retirement. No flashy corporate wear, no Tier 1 affectation, but nothing threadbare either. Everything is clean, mended where necessary with visible care, and arranged to project quiet authority without ostentation."
-  },
-  "image_prompt": "Aleksander Huitzil-Salazar, a 162cm stocky woman with rich mahogany-bronze skin and strong Indigenous American bone structure, high prominent cheekbones, broad facial geometry reflecting 50% Indigenous American, 29.3% Central Asian, and 20.7% Hispanic/Latin American ancestry. Silver-black hair in a thick long braid bound with cord and beads. Deep brown alert eyes. Small dark-furred geneware cat ears. Both forearms covered in bioluminescent gold knotwork tattoos that shimmer iridescent. Thin scar running from left temple to jaw. Wearing well-maintained dark jeans, deep emerald button-up shirt, navy cardigan blazer. Sensible leather boots resoled multiple times. Gold wedding band and silver pen on chain. Standing with deliberate posture, weight evenly distributed, commanding presence without aggression. Lived-in lined face with deep laugh lines. GLMZ Great Lakes Metropolitan Zone setting, industrial backdrop, cool neon lighting casting shadows across her face highlighting bone structure and tattoo bioluminescence, serious contemplative mood, negotiator's patience visible in her gaze. Professional portrait lighting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Indigenous American": 50,
-    "Central Asian": 29.3,
-    "Hispanic/Latin American": 20.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Nahua": 25.7
-      },
-      "Great Lakes Nations": {
-        "Menominee": 5.5,
-        "Ojibwe": 18.8
-      }
-    },
-    "Central Asian": {
-      "Turkic": {
-        "Uzbek": 7.3
-      },
-      "Mongolic": {
-        "Mongolian": 5.6,
-        "Buryat": 2
-      },
-      "Iranian Central": {
-        "Tajik": 5.5,
-        "Hazara": 8.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 19.2
-      },
-      "Caribbean": {
-        "Puerto Rican": 1.1,
-        "Haitian": 0.4
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6b678ed89580c96839e1db5",
+    "type":  "character",
+    "name":  "Aleksander Huitzil-Salazar",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Retired union leader, Tier 3, community council chair, grandmother raising two grandchildren",
+    "age":  68,
+    "status":  "active",
+    "location":  "Montclare Quiet, a corner flat above a laundromat she technically still owns half of, near Damen and Armitage",
+    "description":  "Aleksander Huitzil-Salazar is the kind of woman whose presence in a room shifts the acoustics ï¿½ï¿½ï¿½ people speak differently, sit straighter, choose their words more carefully. She is not tall but carries herself with the posture of someone who spent thirty years at the front of rooms demanding to be heard. Her heritage is Fijian-Polish, which expresses itself in wide cheekbones, a generous build, and warm brown skin that she has decorated with an elaborate bioluminescent tattoo pattern along both arms â€” traditional Fijian knotwork rendered in soft gold light, a gift she gave herself on her sixtieth birthday when Tessera\u0027s transit workers finally won the pension reform she\u0027d fought for through three contract cycles. Her hair is silver-black, worn in a thick braid, and she has cat ears â€” small, rounded, dark-furred â€” a geneware mod she got to match her grandchildren when they wanted one, which she now considers non-negotiable to her identity.\n\nAleksander Huitzil-Salazar is formidable and knows it, which means she has spent decades learning to calibrate her formidableness carefully. She can be devastatingly charming when she chooses, withering when she must, and quietly exhausted in the rare moments when no one is looking. She is raising her two grandchildren, Kofi (9) and Mira (6), after her daughter\u0027s breakdown, and the exhaustion of simultaneous community leadership and primary caregiving is the thing she most carefully never shows.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Her grandchildren inheriting a worse world than the one she fought to improve",
+                                          "Becoming a figurehead â€” respected but no longer effective"
+                                      ],
+                       "core_desires":  [
+                                            "Genuine, durable protection for working people",
+                                            "To see Kofi and Mira grow up in a neighborhood that knows who they are"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Action â€” she processes stress by working",
+                                                 "Ritual tea-making as a decompression tool she does not fully acknowledge as such"
+                                             ],
+                       "blind_spots":  [
+                                           "She has a tendency to assume that organizing and collective action can solve problems that require individual intervention, sometimes missing when someone needs help that is personal rather than political",
+                                           "She does not adequately account for how much her strength intimidates people who want to help her"
+                                       ],
+                       "secret":  "During the 2168 transit strike, she accepted a private side-agreement with a Ferrogate mid-level executive that ended the strike three weeks early. The workers got most of what they needed, but not everything, and the executive was protected from an internal Ferrogate investigation that would have exposed serious safety violations. Four workers were injured in an \u0027accident\u0027 on a line that the investigation would have flagged. She has rationalized this for fifteen years. She has not stopped."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Polished public speaker\u0027s vocabulary with an undercurrent of Fijian-inflected English rhythms and occasional Polish idioms inherited from her grandmother. Knows how to make formal language feel warm and warm language feel formal.",
+                            "cadence":  "Measured in public settings, faster and more direct in private. Pauses before key points with the precision of someone who learned pause as a rhetorical tool.",
+                            "verbal_tics":  [
+                                                "\u0027Let me be plain with you â€”\u0027",
+                                                "Uses \u0027we\u0027 when she means \u0027I\u0027 in political contexts, genuinely and not evasively",
+                                                "Ends difficult statements with a short exhale that is almost but not quite a laugh"
+                                            ],
+                            "example_lines":  [
+                                                  "Let me be plain with you â€” this neighborhood does not need a developer\u0027s vision for what it could be. It needs to be left alone to be what it already is.",
+                                                  "We didn\u0027t win that contract by asking nicely. We won it because we made it more expensive to deny us than to give us what we\u0027d earned. That\u0027s not idealism. That\u0027s just arithmetic."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Ferrogate urban infrastructure project will route a new transit line directly through Montclare Quiet â€” the same executive she made the 2168 deal with is overseeing it, and he\u0027s been leaving her messages she hasn\u0027t answered",
+                        "Her daughter attempts a surprise return to take custody of Kofi and Mira, and Rosalind must decide between her daughter\u0027s recovery and the children\u0027s stability â€” she needs someone neutral to help mediate",
+                        "Former union members begin approaching her with evidence that Ferrogate has been systematically underpaying pension disbursements across the retired membership for years"
+                    ],
+    "narrative_function":  "Political and community power broker; can broker deals, gather community support, or apply legitimate pressure to local institutions; quest giver for stories about labor rights, housing disputes, or neighborhood protection; provides access to union networks and transit worker information channels.",
+    "augmentations":  "Bioluminescent tattoo array, both arms (gold knotwork, geneware-integrated). Cat ears, dark-furred (geneware, cosmetic). Cochlear enhancement implant, left ear â€” an old injury from a corporate security clash during the 2168 transit strike left her with significant hearing loss on that side.",
+    "daily_life":  "Up at 0600 to get the grandchildren fed and to school; council business consumes most mornings via comm-calls and in-person mediations; afternoons she tries to reserve for the laundromat\u0027s books and the council\u0027s actual paperwork; picks up Kofi and Mira at 1600 and considers that hour the best part of every day; evenings she reads old union documents, ostensibly for history but really because they calm her.",
+    "affiliation":  "Ferrogate Transit Workers Union (retired president, 30-year member); Montclare Quiet Community Council (current chair); Tessera pension recipient",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  5,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  9,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  10,
+                                 "empathy":  7,
+                                 "expression":  9,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "union leader",
+                               "community anchor",
+                               "political broker",
+                               "grandmother",
+                               "compromised idealist"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Protect the collective before the individual unless the individual is one of her grandchildren",
+                                              "Never negotiate from a position you haven\u0027t prepared; never enter a room without knowing what you\u0027ll accept and what you won\u0027t"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Warm, reasonable inquiry that maps the situation",
+                                                 "Clear articulation of interests and potential consequences",
+                                                 "Formal collective response â€” council motions, union contacts, public statements",
+                                                 "Direct personal confrontation, private, devastating"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally warm, assessing their relationship to power and to the community simultaneously",
+                                                   "friends":  "Genuinely funny, self-deprecating about her own formidableness, physically affectionate"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Makes tea. Elaborate, time-consuming tea.",
+                                                "medium":  "Becomes very still and structured in speech; agenda-driven even in personal conversations",
+                                                "high":  "Withdraws entirely for 20-30 minutes, will not be reached; returns with a plan"
+                                            },
+                       "contradictions":  [
+                                              "Dedicated to collective good but made a private deal that prioritized expedience over full accountability",
+                                              "Projects inexhaustible strength while running on empty"
+                                          ],
+                       "habits":  [
+                                      "Touches her cat ears when thinking â€” an unconscious fidget she does not know she does",
+                                      "Reviews old union contract documents before sleeping",
+                                      "Never raises her voice in formal settings"
+                                  ],
+                       "breaking_points":  [
+                                               "One of her grandchildren being frightened or harmed",
+                                               "Being publicly exposed as having made the 2168 deal"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Montclare Quiet",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Montclare Quiet, third-generation GLMZ resident",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Hired by Ferrogate Transit as a maintenance scheduler",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Elected to local union steward position; begins rapid ascent through union structure",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Leads the major Ferrogate transit strike; negotiates private side-agreement to end it; partially regrets this immediately",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Elected president of Ferrogate Transit Workers Union; serves three terms",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Retires from union presidency; elected to Montclare Quiet Community Council almost immediately",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Takes custody of grandchildren Kofi and Mira following daughter\u0027s crisis",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Forge-Smith Collective Fighting Chain \u0027Serpent\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Montclare Quiet",
+                             "The United Workers Front",
+                             "Ferrogate Transit",
+                             "The Heritage Vault",
+                             "Tessera Corponation",
+                             "Crucible Industries CR-2 \u0027Trapdoor\u0027",
+                             "Silver",
+                             "Corner Slice",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Gold"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Indigenous American (50%), Central Asian (29.3%), and Hispanic/Latin American (20.7%) ancestry. This genetic combination creates a striking phenotype with strong Indigenous American bone structure enhanced by Central Asian and Latin American heritage contributions. Her ancestry reflects deep roots of Mesoamerican and Andean lineages mixed with Turkic and Mongolian steppe genetics, resulting in prominent high cheekbones, characteristically broad facial structure, and warm-to-deep skin tones that shift between bronze and rich mahogany with subtle golden undertones.",
+                                 "height_cm":  162,
+                                 "weight_kg":  78,
+                                 "build":  "Stocky and substantial, with a wide frame that reads as grounded and immovable. Decades of union organizing and manual labor have built dense muscle beneath generous padding; she moves with the economy of someone who knows exactly how much space she occupies.",
+                                 "hair_color":  "Silver-black",
+                                 "hair_style":  "Thick braid, usually bound with a simple cord or elastic, occasionally adorned with small beads her grandchildren have gifted her",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Deep brown, alert and calculating",
+                                 "skin_tone":  "Rich mahogany-bronze with warm golden undertonesâ€”a nuanced blend reflecting strong Indigenous American and Latin American heritage with Central Asian depth, creating a complexion that shifts between burnished bronze and deep warm brown depending on light",
+                                 "complexion":  "Lined face that reads as lived-in rather than aged; high, prominent cheekbones characteristic of Indigenous American ancestry; broad facial structure with strong jaw carrying Indigenous and Central Asian bone geometry; laugh lines around eyes and mouth are deep and expressive; skin has the slight weathering of someone who spent decades outdoors during transit operations; minimal makeup, usually just a dark lipstick in deep berry or burgundy",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent tattoo array covering both forearms and extending onto the backs of her hands â€” traditional Fijian knotwork rendered in soft gold light that pulses faintly with her heartbeat, visible even in daylight as an iridescent shimmer beneath the skin",
+                                                              "Thin, pale scar running from her left temple down to her jaw line â€” result of corporate security baton strike during the 2168 Ferrogate transit strike, now mostly faded but still visible under certain angles of light",
+                                                              "Small calluses on the inside of her fingers from decades of writing, signing documents, and holding protest signs"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent tattoo array (geneware-integrated, glowing gold knotwork on both arms). Small rounded dark-furred cat ears (geneware cosmetic modification, proportional to her head, always alert). Left ear shows a barely-visible surgical scar where cochlear enhancement implant was installed â€” the implant itself is internal and not visible, but the scar is noticeable if you\u0027re close enough.",
+                                 "posture_movement":  "She stands with her weight evenly distributed, shoulders back but not rigid â€” the posture of someone trained to command rooms without appearing aggressive. Her movements are deliberate and economical; she doesn\u0027t fidget or gesture excessively. When she walks, there\u0027s a slight favoring of her right side, a legacy of old injuries. Her default expression is listening â€” she makes sustained eye contact and allows silence without filling it, which makes people nervous and makes her dangerous in negotiations.",
+                                 "clothing_style":  "Tier 3 working-class aesthetic with deliberate touches of dignity. She favors well-maintained practical clothing: dark jeans or work pants, usually paired with a button-up shirt in jewel tones (deep emerald, burgundy, navy) or understated patterns; cardigan or well-cut blazer worn over everything as armor and professionalism. Her shoes are sensible and broken in, usually leather boots that have been resoled multiple times. She wears a thick gold wedding band on her left hand (widowed fifteen years) and a silver pen on a chain around her neck â€” a gift from the union on her retirement. No flashy corporate wear, no Tier 1 affectation, but nothing threadbare either. Everything is clean, mended where necessary with visible care, and arranged to project quiet authority without ostentation."
+                             },
+    "image_prompt":  "Aleksander Huitzil-Salazar, a 162cm stocky woman with rich mahogany-bronze skin and strong Indigenous American bone structure, high prominent cheekbones, broad facial geometry reflecting 50% Indigenous American, 29.3% Central Asian, and 20.7% Hispanic/Latin American ancestry. Silver-black hair in a thick long braid bound with cord and beads. Deep brown alert eyes. Small dark-furred geneware cat ears. Both forearms covered in bioluminescent gold knotwork tattoos that shimmer iridescent. Thin scar running from left temple to jaw. Wearing well-maintained dark jeans, deep emerald button-up shirt, navy cardigan blazer. Sensible leather boots resoled multiple times. Gold wedding band and silver pen on chain. Standing with deliberate posture, weight evenly distributed, commanding presence without aggression. Lived-in lined face with deep laugh lines. GLMZ Great Lakes Metropolitan Zone setting, industrial backdrop, cool neon lighting casting shadows across her face highlighting bone structure and tattoo bioluminescence, serious contemplative mood, negotiator\u0027s patience visible in her gaze. Professional portrait lighting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Indigenous American":  50,
+                             "Central Asian":  29.3,
+                             "Hispanic/Latin American":  20.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  25.7
+                                                                         },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Menominee":  5.5,
+                                                                                    "Ojibwe":  18.8
+                                                                                }
+                                                    },
+                            "Central Asian":  {
+                                                  "Turkic":  {
+                                                                 "Uzbek":  7.3
+                                                             },
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  5.6,
+                                                                   "Buryat":  2
+                                                               },
+                                                  "Iranian Central":  {
+                                                                          "Tajik":  5.5,
+                                                                          "Hazara":  8.9
+                                                                      }
+                                              },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  19.2
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  1.1,
+                                                                              "Haitian":  0.4
+                                                                          }
+                                                        }
+                        },
+    "tier":  "1"
 }

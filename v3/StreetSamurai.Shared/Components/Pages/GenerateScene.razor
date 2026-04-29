@@ -4,15 +4,14 @@
 @using StreetSamurai.Core.Interfaces
 @inject SceneGenerationService SceneGen
 @inject LoreService Canon
-@inject FacetService FacetSvc
 @inject WorldGraphService Graph
-@inject IStoryBlockRepository Repo
+@inject IChapterRepository Repo
 @inject NavigationManager Nav
 @inject ElevenLabsTtsService TtsSvc
 @implements IDisposable
 
 <h4 class="text-danger mb-1">Generate Scene</h4>
-<p class="text-muted mb-3">Multi-beat scene generator. Each beat selects a lead facet, pulls world context, and writes prose. Facets rotate to prevent repetition.</p>
+<p class="text-muted mb-3">Multi-beat scene generator. Each beat pulls character voice from documented psychology and speech patterns, then writes prose grounded in the world graph.</p>
 
 @if (!generating && generatedScene == null)
 {
@@ -69,24 +68,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card bg-dark text-light border-secondary">
-                <div class="card-header text-muted">Loaded Facets</div>
-                <div class="card-body">
-                    @foreach (var (name, facet) in _facets)
-                    {
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <FacetBadge Name="@name" />
-                            <small class="text-muted">@facet.Domain</small>
-                        </div>
-                    }
-                    @if (!_facets.Any())
-                    {
-                        <small class="text-muted">No facets loaded. Check Canon Root Path in Settings.</small>
-                    }
-                </div>
-            </div>
-        </div>
     </div>
 }
 else if (generating)
@@ -98,29 +79,19 @@ else if (generating)
             <button class="btn btn-sm btn-outline-secondary" @onclick="CancelGeneration"><div class="btn-lbl">Cancel</div></button>
         </div>
         <div class="card-body">
-            @* Facet rotation bar *@
-            <div class="d-flex gap-1 mb-3">
-                @foreach (var beat in completedBeats)
-                {
-                    <FacetBadge Name="@beat.LeadFacet" />
-                }
-                @if (generating)
-                {
-                    <div class="spinner-border spinner-border-sm text-danger" role="status"></div>
-                }
-            </div>
-
-            @foreach (var beat in completedBeats)
+            @for (int i = 0; i < completedBeats.Count; i++)
             {
-                <div class="mb-3 border-start border-2 ps-3" style="border-color: @GetFacetColor(beat.LeadFacet) !important;">
-                    <div class="d-flex gap-2 mb-1">
-                        <FacetBadge Name="@beat.LeadFacet" />
-                        @foreach (var sf in beat.SupportingFacets)
-                        {
-                            <small class="text-muted">+@sf</small>
-                        }
-                    </div>
+                var beat = completedBeats[i];
+                <div class="mb-3 border-start border-2 border-secondary ps-3">
+                    <div class="text-muted small mb-1">Beat @(i + 1)</div>
                     <div style="white-space: pre-wrap; font-family: Georgia, serif; line-height: 1.7;">@beat.Text</div>
+                </div>
+            }
+            @if (generating)
+            {
+                <div class="d-flex align-items-center gap-2 text-muted">
+                    <div class="spinner-border spinner-border-sm text-danger" role="status"></div>
+                    <span class="small">writing beat @currentBeat...</span>
                 </div>
             }
         </div>
@@ -143,23 +114,11 @@ else if (generatedScene != null)
 
     <AudioPlayer @ref="audioPlayer" Visible="showAudioPlayer" OnDismissed="() => showAudioPlayer = false" CssClass="mb-3" />
 
-    <div class="d-flex gap-1 mb-3">
-        @foreach (var beat in generatedScene.Beats)
-        {
-            <FacetBadge Name="@beat.LeadFacet" />
-        }
-    </div>
-
-    @foreach (var beat in generatedScene.Beats)
+    @for (int i = 0; i < generatedScene.Beats.Count; i++)
     {
-        <div class="mb-3 border-start border-2 ps-3" style="border-color: @GetFacetColor(beat.LeadFacet) !important;">
-            <div class="d-flex gap-2 mb-1">
-                <FacetBadge Name="@beat.LeadFacet" />
-                @foreach (var sf in beat.SupportingFacets)
-                {
-                    <small class="text-muted">+@sf</small>
-                }
-            </div>
+        var beat = generatedScene.Beats[i];
+        <div class="mb-3 border-start border-2 border-secondary ps-3">
+            <div class="text-muted small mb-1">Beat @(i + 1)</div>
             <div style="white-space: pre-wrap; font-family: Georgia, serif; line-height: 1.7;">@beat.Text</div>
         </div>
     }
@@ -178,7 +137,6 @@ else if (generatedScene != null)
     private CancellationTokenSource? cts;
 
     private List<District> districts = [];
-    private Dictionary<string, FacetDefinition> _facets = [];
     private bool ttsAvailable;
     private bool narrating;
     private bool showAudioPlayer;
@@ -187,7 +145,6 @@ else if (generatedScene != null)
     protected override async Task OnInitializedAsync()
     {
         districts = Canon.ListDistricts();
-        _facets = FacetSvc.LoadAllFacets();
         Graph.EnsureLoaded();
         ttsAvailable = await TtsSvc.IsConfiguredAsync();
 
@@ -214,17 +171,14 @@ else if (generatedScene != null)
             NumBeats = numBeats,
         };
 
-        // Load real character weights from canon, blend if multiple characters
-        var weights = LoadBlendedWeights(characters);
-
         try
         {
-            generatedScene = await SceneGen.GenerateSceneAsync(request, weights, cts.Token);
+            generatedScene = await SceneGen.GenerateSceneAsync(request, cts.Token);
         }
         catch (OperationCanceledException) { }
         catch (Exception ex)
         {
-            completedBeats.Add(new GeneratedBeat { Text = $"Error: {ex.Message}", LeadFacet = "wound" });
+            completedBeats.Add(new GeneratedBeat { Text = $"Error: {ex.Message}" });
         }
         finally
         {
@@ -254,14 +208,14 @@ else if (generatedScene != null)
     private void SaveAsStory()
     {
         if (generatedScene == null) return;
-        var project = new StoryProject
+        var chapter = new Chapter
         {
             Title = goal.Length > 50 ? goal[..50] + "..." : goal,
             Characters = characterInput.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(),
             Html = $"<p>{System.Net.WebUtility.HtmlEncode(generatedScene.FullText).Replace("\n\n", "</p><p>").Replace("\n", "<br>")}</p>",
         };
-        Repo.SaveProject(project);
-        Nav.NavigateTo($"/stories/write/{project.Id}");
+        Repo.SaveChapter(chapter);
+        Nav.NavigateTo($"/stories/write/{chapter.Id}");
     }
 
     private void Reset()
@@ -294,45 +248,6 @@ else if (generatedScene != null)
             narrating = false;
         }
     }
-
-    private FacetState LoadBlendedWeights(List<string> characters)
-    {
-        var allWeights = new List<FacetState>();
-        var allChars = Canon.ListCharacters();
-
-        foreach (var name in characters)
-        {
-            var match = allChars.FirstOrDefault(c =>
-                c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
-            if (match?.Facets != null && (match.Facets.Wound > 0 || match.Facets.Ideal > 0))
-                allWeights.Add(match.Facets);
-        }
-
-        if (allWeights.Count == 0)
-            return new FacetState { Wound = 0.5, Ideal = 0.5, Id = 0.5, Shadow = 0.5, Mask = 0.5, Ghost = 0.5 };
-
-        // Blend by averaging all character weights — ensemble cast
-        return new FacetState
-        {
-            Wound = allWeights.Average(w => w.Wound),
-            Ideal = allWeights.Average(w => w.Ideal),
-            Id = allWeights.Average(w => w.Id),
-            Shadow = allWeights.Average(w => w.Shadow),
-            Mask = allWeights.Average(w => w.Mask),
-            Ghost = allWeights.Average(w => w.Ghost),
-        };
-    }
-
-    private static string GetFacetColor(string facet) => facet.ToLowerInvariant() switch
-    {
-        "wound" => "#dc3545",
-        "ideal" => "#198754",
-        "id" => "#ffc107",
-        "shadow" => "#6f42c1",
-        "mask" => "#0dcaf0",
-        "ghost" => "#6c757d",
-        _ => "#adb5bd",
-    };
 
     public void Dispose()
     {

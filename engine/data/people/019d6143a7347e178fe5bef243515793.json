@@ -1,279 +1,298 @@
-{
-  "id": "019d6143a7347e178fe5bef243515793",
-  "type": "character",
-  "name": "Hamed Baiseitov-Zaragoza",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Transit operator, Ferrogate Line 7 maglev",
-  "age": 41,
-  "status": "active",
-  "location": "Kessler Interchange, operates between Kessler and Deepwell Station, near sub-level access near State and Van Buren",
-  "description": "Hamed Baiseitov-Zaragoza is a broad-shouldered woman with deep umber skin and close-cropped silver-threaded locs she keeps pinned under her Ferrogate operator's cap during shifts. Her left eye is a corporate-issue Ferrogate transit mod — pale grey iris with a subtle amber ring that pulses when she's interfacing with the train's systems — but the right eye is her mother's: dark brown and very still, the kind of eye that misses nothing. She moves through the crowded interchange with the particular grace of someone who has learned to navigate bodies in motion, always finding the gap, always half a step ahead of the surge. A small shrine to the Transit Mind E.L.F. hangs from her cab dashboard — a looped wire figure she wound herself, hung with data chips from old passes.\n\nShe is patient in the way that long experience makes you patient, not the soft kind but the kind with iron underneath. Passengers who give her grief get exactly one warning, delivered in a voice so level it takes a moment to realize it was a threat. On slow runs through the Blackpipe Corridor at 0300, she sometimes hums old Ghanaian highlife her grandmother used to play — her Danish side never gave her music, only punctuality, which she also kept.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.6,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.7,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "losing her operator's license and her only real identity",
-      "the maglev failing and passengers dying on her watch"
-    ],
-    "core_desires": [
-      "order and predictability — a world that runs on schedule",
-      "to be seen as competent and trustworthy by people who matter"
-    ],
-    "coping_mechanisms": [
-      "rigid daily ritual",
-      "prayer to the Transit Mind E.L.F.",
-      "emotional compartmentalization"
-    ],
-    "blind_spots": [
-      "assumes rule-following protects people when it often just protects the system",
-      "dismisses emotional appeals as manipulation"
-    ],
-    "secret": "Three years ago she saw a man fall onto the track at Deepwell Station and froze for four seconds before pulling the emergency brake — four seconds too long. He survived but lost a foot. The official report blamed signal failure. She filed no correction."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped, procedural. Shifts into warmer, more melodic phrasing when genuinely comfortable. Occasional Danish loanwords for dismissal.",
-    "cadence": "Measured, unhurried. Never wastes breath.",
-    "verbal_tics": [
-      "'Next stop—' even off-duty",
-      "'That's not how it works'",
-      "clicks her tongue before disagreeing"
-    ],
-    "example_lines": [
-      "'Line 7 doesn't care about your emergency. Neither do I. Doors close in eight seconds.'",
-      "'You want information about who rides my train? Then you want to stand here all day and watch. Like I do. Welcome to the job.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She's noticed the same passenger riding Line 7 to Deepwell every night at 0200, never disembarking — just riding the loop. She thinks they're surveilling someone. She's wrong about who.",
-    "Ferrogate's new scheduling algorithm has quietly rerouted Line 7 away from the Hamtramck Enclave during peak hours — a decision that reads as corporate redlining. She's the only operator vocal enough internally to push back, and she needs leverage."
-  ],
-  "narrative_function": "Information conduit — she sees who rides Line 7 every day, notices patterns, knows when something is off. Can provide passage, access to restricted transit tunnels, or unwanted attention from Ferrogate Transit Authority if players draw her suspicion.",
-  "augmentations": "Ferrogate-issue left ocular interface (transit system HUD, passenger count, track telemetry); mild cochlear dampener (work-issue, protects against brake shriek); no cosmetic mods",
-  "daily_life": "Runs the 0530-1430 shift on Line 7, eating her lunch — always the same: rice and smoked fish from a thermos — in the cab between Kessler and Deepwell. After shift she stops at the Interchange's small E.L.F. shrine to leave a burned data chip before heading home to her apartment in Bronzeline.",
-  "affiliation": "Ferrogate Transit; The Interchange",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 6,
-      "vitality": 7,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 8,
-      "creativity": 4,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 5,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 2,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "steadfast",
-      "observant",
-      "burdened",
-      "ritualistic",
-      "transit-attuned"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "follow procedure unless the procedure would clearly get someone killed",
-      "never lie to Transit Authority — bend truth, yes, but not break it",
-      "protect regulars over newcomers if forced to choose"
-    ],
-    "escalation_ladder": [
-      "verbal warning, precise and flat",
-      "removal of service — will stop the train",
-      "Transit Authority call — her last resort because she hates involving them"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional distance, efficient, not unkind but not warm",
-      "friends": "Dry humor, fierce loyalty, will feed you from her thermos"
-    },
-    "stress_responses": {
-      "low": "Tighter procedural adherence, shorter sentences",
-      "medium": "Goes quiet, jaw tightens, eyes track everything",
-      "high": "Shuts down emotionally and executes — acts first, processes later"
-    },
-    "contradictions": [
-      "Prizes order but feels most alive during the chaotic midnight runs when anything can happen"
-    ],
-    "habits": [
-      "taps the cab doorframe three times before every departure",
-      "checks the Transit Mind shrine before starting her shift",
-      "never eats in front of passengers"
-    ],
-    "breaking_points": [
-      "a child in danger on her train",
-      "being publicly blamed for something she didn't do when she already carries guilt for something she did"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Ferrogate Transit ocular interface (left eye, employer-owned)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Ferrogate Transit ocular interface (left eye, employer-owned)",
-      "replaces": ""
-    },
-    {
-      "name": "Cochlear dampener (employer-issue, work-band only)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Cochlear dampener (employer-issue, work-band only)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Kessler Interchange",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPM-15R 'Reclaim'",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPM-15R 'Reclaim'",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "Kessler Interchange",
-    "Ferrogate Transit",
-    "Hamtramck Enclave",
-    "Deepwell Station",
-    "Grandmother",
-    "Noodle Train",
-    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
-    "GLMZ",
-    "Meridian Core",
-    "Lacuna Genomics",
-    "Silver",
-    "Arcturus KS-7 'Nursery'",
-    "Line 7 Bar",
-    "The Pale Mile",
-    "Iron",
-    "Déjà Vu"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Central Asian-dominant ancestry (62.8%) forms the foundation of her genetic makeup, enriched by substantial Sub-Saharan African heritage (24.5%), with meaningful Hispanic/Latin American admixture (11.1%) and minimal Eastern European traces (1.6%). This genetic combination produces striking facial geometry—the high, prominent cheekbones and eye-set of Central Asian ancestry harmonized with the broader facial planes and full features characteristic of African heritage, while Hispanic ancestry adds warmth and subtle roundness to her overall structure. Her appearance reflects the Ubiquitous Diaspora's genetic reality: a seamless synthesis rather than distinct traits.",
-    "height_cm": 178,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and solid without heaviness; muscular through the torso and arms from years of gripping transit controls and moving through crowded stations. Carries herself with economical strength.",
-    "hair_color": "Black with silver threading",
-    "hair_style": "Close-cropped locs, typically pinned under Ferrogate operator's cap during shifts",
-    "hair_length": "Short",
-    "eye_color": "Left eye: pale grey with amber ring (corporate-issue transit mod); Right eye: dark brown, natural",
-    "skin_tone": "Deep warm brown with rich golden undertones—the result of Central Asian ancestry as primary heritage blended with Sub-Saharan African warmth and Latin American depth. Complexion has natural luminosity that shifts subtly across light spectrums: deepens to burnished mahogany in lower light, brightens to warm honey-gold under fluorescent station lighting, develops subtle bronze warmth in natural daylight.",
-    "complexion": "Weathered by 41 years in controlled environments and fluorescent light, yet skin maintains clarity and refined definition. Minimal makeup. Bone structure is striking: high, prominent cheekbones characteristic of Central Asian ancestry, balanced by the broader facial planes and fuller cheeks from African heritage. Jaw is defined with subtle natural fullness. Expression habitually composed and observant. Small horizontal creases between brows mark decades of focused concentration. Facial features reflect harmonious genetic synthesis across her mixed Central Asian, Sub-Saharan African, and Hispanic lineage.",
-    "distinguishing_marks": [
-      "Small burn scar on the inside of her right wrist, thin and precise, from early transit training accident with hot cooling line.",
-      "Faint linear scarring on her left temple, barely visible, likely from old interface calibration procedure with the ocular mod.",
-      "Calloused fingertips and palm ridges on both hands from repetitive control interface work."
-    ],
-    "visible_augmentations": "Left ocular interface: subtle grey iris with pulsing amber ring, becomes more pronounced during system interfacing. Mild cochlear dampener visible as small titanium-grade port behind left ear, usually covered by hair or cap. No cosmetic chrome.",
-    "posture_movement": "Moves with practiced grace through crowded spaces, always finding gaps in foot traffic half a step ahead of surge patterns. Stands with weight balanced, shoulders back but not rigid. Hands rest naturally at sides or on transit controls. Her right eye (natural) is in constant micro-motion, scanning; her left eye (augmented) occasionally goes distant when processing system data. Walks with purpose, never hesitates in her chosen path.",
-    "clothing_style": "Tier 3-4 working class. Standard Ferrogate Transit operator uniform: charcoal grey regulation shirt with embroidered company patch, darker grey trousers with reinforced knees, steel-toed boots scuffed from station platform work. Off-duty: practical layers appropriate to Bronzeline tier housing; worn denim, maintenance-grade synthetic jackets in greys and blacks, functional rather than fashionable. Always wears a small wire E.L.F. transit shrine pendant or keeps similar talisman accessible."
-  },
-  "image_prompt": "Hamed Baiseitov-Zaragoza, 41-year-old Ferrogate transit operator, standing in neon-lit station corridor, GLMZ. Tall athletic woman with deep warm brown skin with golden undertones, striking high cheekbones and refined facial features blending Central Asian geometry with broader African heritage planes, dark eyes with left eye showing pale grey cybernetic iris with amber pulsing ring. Close-cropped black locs with silver threading pinned under grey operator's cap. Charcoal Ferrogate uniform shirt, dark grey reinforced trousers, scuffed steel-toed boots. Small titanium cochlear port visible behind left ear. Composed expression, weight balanced in practiced stance. Fluorescent and neon lighting reflecting off her luminous skin tone, creating warm golden highlights. Subtle burn scar visible on right wrist. Background: crowded transit platform with blur of movement, holographic transit displays, cool blue-grey station architecture with warm neon accents. Mood: alert, professional, observant. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Central Asian": 62.8,
-    "Sub-Saharan African": 24.5,
-    "Hispanic/Latin American": 11.1,
-    "Eastern European": 1.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Central Asian": {
-      "Turkic": {
-        "Kazakh": 62.8
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Gabonese": 10.8,
-        "Congolese": 1.5
-      },
-      "East African": {
-        "Ethiopian": 10.7,
-        "Tanzanian": 1.5
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 11.1
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Serbian": 1.5
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 0.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a7347e178fe5bef243515793",
+    "type":  "character",
+    "name":  "Hamed Baiseitov-Zaragoza",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Transit operator, Ferrogate Line 7 maglev",
+    "age":  41,
+    "status":  "active",
+    "location":  "Kessler Interchange, operates between Kessler and Deepwell Station, near sub-level access near State and Van Buren",
+    "description":  "Hamed Baiseitov-Zaragoza is a broad-shouldered woman with deep umber skin and close-cropped silver-threaded locs she keeps pinned under her Ferrogate operator\u0027s cap during shifts. Her left eye is a corporate-issue Ferrogate transit mod â€” pale grey iris with a subtle amber ring that pulses when she\u0027s interfacing with the train\u0027s systems â€” but the right eye is her mother\u0027s: dark brown and very still, the kind of eye that misses nothing. She moves through the crowded interchange with the particular grace of someone who has learned to navigate bodies in motion, always finding the gap, always half a step ahead of the surge. A small shrine to the Transit Mind E.L.F. hangs from her cab dashboard â€” a looped wire figure she wound herself, hung with data chips from old passes.\n\nShe is patient in the way that long experience makes you patient, not the soft kind but the kind with iron underneath. Passengers who give her grief get exactly one warning, delivered in a voice so level it takes a moment to realize it was a threat. On slow runs through the Blackpipe Corridor at 0300, she sometimes hums old Ghanaian highlife her grandmother used to play â€” her Danish side never gave her music, only punctuality, which she also kept.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "losing her operator\u0027s license and her only real identity",
+                                          "the maglev failing and passengers dying on her watch"
+                                      ],
+                       "core_desires":  [
+                                            "order and predictability â€” a world that runs on schedule",
+                                            "to be seen as competent and trustworthy by people who matter"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "rigid daily ritual",
+                                                 "prayer to the Transit Mind E.L.F.",
+                                                 "emotional compartmentalization"
+                                             ],
+                       "blind_spots":  [
+                                           "assumes rule-following protects people when it often just protects the system",
+                                           "dismisses emotional appeals as manipulation"
+                                       ],
+                       "secret":  "Three years ago she saw a man fall onto the track at Deepwell Station and froze for four seconds before pulling the emergency brake â€” four seconds too long. He survived but lost a foot. The official report blamed signal failure. She filed no correction."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped, procedural. Shifts into warmer, more melodic phrasing when genuinely comfortable. Occasional Danish loanwords for dismissal.",
+                            "cadence":  "Measured, unhurried. Never wastes breath.",
+                            "verbal_tics":  [
+                                                "\u0027Next stopâ€”\u0027 even off-duty",
+                                                "\u0027That\u0027s not how it works\u0027",
+                                                "clicks her tongue before disagreeing"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Line 7 doesn\u0027t care about your emergency. Neither do I. Doors close in eight seconds.\u0027",
+                                                  "\u0027You want information about who rides my train? Then you want to stand here all day and watch. Like I do. Welcome to the job.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She\u0027s noticed the same passenger riding Line 7 to Deepwell every night at 0200, never disembarking â€” just riding the loop. She thinks they\u0027re surveilling someone. She\u0027s wrong about who.",
+                        "Ferrogate\u0027s new scheduling algorithm has quietly rerouted Line 7 away from the Hamtramck Enclave during peak hours â€” a decision that reads as corporate redlining. She\u0027s the only operator vocal enough internally to push back, and she needs leverage."
+                    ],
+    "narrative_function":  "Information conduit â€” she sees who rides Line 7 every day, notices patterns, knows when something is off. Can provide passage, access to restricted transit tunnels, or unwanted attention from Ferrogate Transit Authority if players draw her suspicion.",
+    "augmentations":  "Ferrogate-issue left ocular interface (transit system HUD, passenger count, track telemetry); mild cochlear dampener (work-issue, protects against brake shriek); no cosmetic mods",
+    "daily_life":  "Runs the 0530-1430 shift on Line 7, eating her lunch â€” always the same: rice and smoked fish from a thermos â€” in the cab between Kessler and Deepwell. After shift she stops at the Interchange\u0027s small E.L.F. shrine to leave a burned data chip before heading home to her apartment in Bronzeline.",
+    "affiliation":  "Ferrogate Transit; The Interchange",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  6,
+                                   "vitality":  7,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  8,
+                                 "creativity":  4,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  5,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "steadfast",
+                               "observant",
+                               "burdened",
+                               "ritualistic",
+                               "transit-attuned"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "follow procedure unless the procedure would clearly get someone killed",
+                                              "never lie to Transit Authority â€” bend truth, yes, but not break it",
+                                              "protect regulars over newcomers if forced to choose"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "verbal warning, precise and flat",
+                                                 "removal of service â€” will stop the train",
+                                                 "Transit Authority call â€” her last resort because she hates involving them"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional distance, efficient, not unkind but not warm",
+                                                   "friends":  "Dry humor, fierce loyalty, will feed you from her thermos"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Tighter procedural adherence, shorter sentences",
+                                                "medium":  "Goes quiet, jaw tightens, eyes track everything",
+                                                "high":  "Shuts down emotionally and executes â€” acts first, processes later"
+                                            },
+                       "contradictions":  [
+                                              "Prizes order but feels most alive during the chaotic midnight runs when anything can happen"
+                                          ],
+                       "habits":  [
+                                      "taps the cab doorframe three times before every departure",
+                                      "checks the Transit Mind shrine before starting her shift",
+                                      "never eats in front of passengers"
+                                  ],
+                       "breaking_points":  [
+                                               "a child in danger on her train",
+                                               "being publicly blamed for something she didn\u0027t do when she already carries guilt for something she did"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Ferrogate Transit ocular interface (left eye, employer-owned)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Ferrogate Transit ocular interface (left eye, employer-owned)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cochlear dampener (employer-issue, work-band only)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Cochlear dampener (employer-issue, work-band only)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Kessler Interchange",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPM-15R \u0027Reclaim\u0027",
+                            "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPM-15R \u0027Reclaim\u0027",
+                                "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027"
+                            ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "Kessler Interchange",
+                             "Ferrogate Transit",
+                             "Hamtramck Enclave",
+                             "Deepwell Station",
+                             "Grandmother",
+                             "Noodle Train",
+                             "Endocrine Cascade Volatilization Lance ECVL-5 \u0027Burnout\u0027",
+                             "GLMZ",
+                             "Meridian Core",
+                             "Lacuna Genomics",
+                             "Silver",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Line 7 Bar",
+                             "The Pale Mile",
+                             "Iron",
+                             "DÃ©jÃ  Vu"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Central Asian-dominant ancestry (62.8%) forms the foundation of her genetic makeup, enriched by substantial Sub-Saharan African heritage (24.5%), with meaningful Hispanic/Latin American admixture (11.1%) and minimal Eastern European traces (1.6%). This genetic combination produces striking facial geometryâ€”the high, prominent cheekbones and eye-set of Central Asian ancestry harmonized with the broader facial planes and full features characteristic of African heritage, while Hispanic ancestry adds warmth and subtle roundness to her overall structure. Her appearance reflects the Ubiquitous Diaspora\u0027s genetic reality: a seamless synthesis rather than distinct traits.",
+                                 "height_cm":  178,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and solid without heaviness; muscular through the torso and arms from years of gripping transit controls and moving through crowded stations. Carries herself with economical strength.",
+                                 "hair_color":  "Black with silver threading",
+                                 "hair_style":  "Close-cropped locs, typically pinned under Ferrogate operator\u0027s cap during shifts",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Left eye: pale grey with amber ring (corporate-issue transit mod); Right eye: dark brown, natural",
+                                 "skin_tone":  "Deep warm brown with rich golden undertonesâ€”the result of Central Asian ancestry as primary heritage blended with Sub-Saharan African warmth and Latin American depth. Complexion has natural luminosity that shifts subtly across light spectrums: deepens to burnished mahogany in lower light, brightens to warm honey-gold under fluorescent station lighting, develops subtle bronze warmth in natural daylight.",
+                                 "complexion":  "Weathered by 41 years in controlled environments and fluorescent light, yet skin maintains clarity and refined definition. Minimal makeup. Bone structure is striking: high, prominent cheekbones characteristic of Central Asian ancestry, balanced by the broader facial planes and fuller cheeks from African heritage. Jaw is defined with subtle natural fullness. Expression habitually composed and observant. Small horizontal creases between brows mark decades of focused concentration. Facial features reflect harmonious genetic synthesis across her mixed Central Asian, Sub-Saharan African, and Hispanic lineage.",
+                                 "distinguishing_marks":  [
+                                                              "Small burn scar on the inside of her right wrist, thin and precise, from early transit training accident with hot cooling line.",
+                                                              "Faint linear scarring on her left temple, barely visible, likely from old interface calibration procedure with the ocular mod.",
+                                                              "Calloused fingertips and palm ridges on both hands from repetitive control interface work."
+                                                          ],
+                                 "visible_augmentations":  "Left ocular interface: subtle grey iris with pulsing amber ring, becomes more pronounced during system interfacing. Mild cochlear dampener visible as small titanium-grade port behind left ear, usually covered by hair or cap. No cosmetic chrome.",
+                                 "posture_movement":  "Moves with practiced grace through crowded spaces, always finding gaps in foot traffic half a step ahead of surge patterns. Stands with weight balanced, shoulders back but not rigid. Hands rest naturally at sides or on transit controls. Her right eye (natural) is in constant micro-motion, scanning; her left eye (augmented) occasionally goes distant when processing system data. Walks with purpose, never hesitates in her chosen path.",
+                                 "clothing_style":  "Tier 3-4 working class. Standard Ferrogate Transit operator uniform: charcoal grey regulation shirt with embroidered company patch, darker grey trousers with reinforced knees, steel-toed boots scuffed from station platform work. Off-duty: practical layers appropriate to Bronzeline tier housing; worn denim, maintenance-grade synthetic jackets in greys and blacks, functional rather than fashionable. Always wears a small wire E.L.F. transit shrine pendant or keeps similar talisman accessible."
+                             },
+    "image_prompt":  "Hamed Baiseitov-Zaragoza, 41-year-old Ferrogate transit operator, standing in neon-lit station corridor, GLMZ. Tall athletic woman with deep warm brown skin with golden undertones, striking high cheekbones and refined facial features blending Central Asian geometry with broader African heritage planes, dark eyes with left eye showing pale grey cybernetic iris with amber pulsing ring. Close-cropped black locs with silver threading pinned under grey operator\u0027s cap. Charcoal Ferrogate uniform shirt, dark grey reinforced trousers, scuffed steel-toed boots. Small titanium cochlear port visible behind left ear. Composed expression, weight balanced in practiced stance. Fluorescent and neon lighting reflecting off her luminous skin tone, creating warm golden highlights. Subtle burn scar visible on right wrist. Background: crowded transit platform with blur of movement, holographic transit displays, cool blue-grey station architecture with warm neon accents. Mood: alert, professional, observant. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Central Asian":  62.8,
+                             "Sub-Saharan African":  24.5,
+                             "Hispanic/Latin American":  11.1,
+                             "Eastern European":  1.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Central Asian":  {
+                                                  "Turkic":  {
+                                                                 "Kazakh":  62.8
+                                                             }
+                                              },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Gabonese":  10.8,
+                                                                                "Congolese":  1.5
+                                                                            },
+                                                        "East African":  {
+                                                                             "Ethiopian":  10.7,
+                                                                             "Tanzanian":  1.5
+                                                                         }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  11.1
+                                                                        }
+                                                        },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Serbian":  1.5
+                                                                      },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  0.1
+                                                                         }
+                                                 }
+                        },
+    "tier":  "3"
 }

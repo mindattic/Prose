@@ -1,358 +1,371 @@
-{
-  "id": "019d6143a5b27c51b27f899892be7b60",
-  "rating": 70,
-  "type": "character",
-  "name": "Cipher Jung",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Contract broker and resource coordinator \u2014 fixer",
-  "age": 32,
-  "status": "active",
-  "location": "The Canopy \u2014 elevated walkway district above Geartown, near Lincoln and Belmont",
-  "description": "Cipher Jung is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 32, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible \u2014 smartgun link in right forearm \u2014 interfaces directly with compatible weapons \u2014 and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation \u2014 she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a fixer out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Cipher Jung describe her as a precision instrument \u2014 point her at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.87,
-      "ideal": 0.85,
-      "id": 0.92,
-      "shadow": 0.65,
-      "mask": 0.58,
-      "ghost": 0.56
-    },
-    "core_fears": [
-      "The quiet \u2014 silence means something is about to go very wrong",
-      "Dying alone in some alley and nobody noticing for weeks",
-      "Losing control of their own body to a hacker or malfunctioning cyberware"
-    ],
-    "core_desires": [
-      "Knowledge \u2014 to understand the systems that grind people down",
-      "Enough Quanta to buy out of the life \u2014 a clean identity and passage out of GLMZ",
-      "Justice \u2014 the corporate kind, where the punishment fits the profit margin"
-    ],
-    "coping_mechanisms": [
-      "Planning \u2014 responds to chaos by making detailed contingency plans for everything",
-      "Maintains weapons obsessively \u2014 cleaning guns is meditation",
-      "Drinks methodically \u2014 not to get drunk, to maintain a specific level of not-caring"
-    ],
-    "blind_spots": [
-      "Assumes everyone has an angle because they always have an angle",
-      "Cannot accept help without interpreting it as leverage",
-      "Overestimates their own abilities in situations outside their specialty"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
-    "cadence": "Low and even \u2014 the vocal equivalent of still water.",
-    "verbal_tics": [
-      "Calls everyone \u0027friend\u0027 \u2014 the warmth varies from genuine to threatening",
-      "Uses \u0027we\u0027 instead of \u0027I\u0027 \u2014 either royal or dissociative, nobody asks"
-    ],
-    "example_lines": [
-      "\u0022I know a person who knows a person. That\u0027s not evasion \u2014 that\u0027s the service.\u0022",
-      "\u0022My commission is fifteen percent. You\u0027re welcome to find someone cheaper. You won\u0027t find someone better.\u0022",
-      "\u0022The job isn\u0027t dangerous. The people involved are dangerous. The job is just logistics.\u0022"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Aminata Tarasov-Yiadom is offered a contract that would clear all their debts \u2014 the target is someone they respect",
-    "A former associate resurfaces with evidence that could destroy Aminata Tarasov-Yiadom\u0027s reputation \u2014 and a price for silence",
-    "A Tier 4 executive offers Aminata Tarasov-Yiadom a permanent position \u2014 the pay is obscene and the strings are invisible until they tighten"
-  ],
-  "narrative_function": "Aminata Tarasov-Yiadom represents the working professional of the runner world \u2014 competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Smartgun link in right forearm \u2014 interfaces directly with compatible weapons. Wired reflexes with adrenaline pump \u2014 chemical-mechanical hybrid augmentation",
-  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Unaffiliated \u2014 too volatile for permanent crews",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 9
-      },
-      "agility": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 8
-      },
-      "reflexes": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 7
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 6
-      },
-      "perception": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 5
-      },
-      "willpower": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 10
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 7
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 10
-      },
-      "intimidation": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 7
-      },
-      "deception": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 10
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 8
-      }
-    },
-    "personality": {
-      "aggression": 0.68,
-      "caution": 0.13,
-      "loyalty": 0.25,
-      "greed": 0.22,
-      "empathy": 0.57
-    },
-    "drives": [
-      "money",
-      "freedom",
-      "protection"
-    ],
-    "thresholds": {
-      "pain": 9,
-      "stress": 6,
-      "loyalty_break": 6
-    },
-    "strengths": [
-      "encyclopedic knowledge of GLMZ infrastructure",
-      "multilingual \u2014 speaks 4\u002B languages fluently",
-      "network of reliable contacts"
-    ],
-    "weaknesses": [
-      "risk-averse to the point of missed opportunities",
-      "augmentation dependency \u2014 performance drops sharply if chrome malfunctions",
-      "overconfidence in specialty areas leading to blind spots"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "fixer",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Refuses contracts that require operating inside The Spires \u2014 too much surveillance",
-      "Always has an exit route planned before agreeing to any meeting",
-      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate \u2014 talk first, assess options, buy time",
-      "2. Reposition \u2014 move to advantage, control sightlines and exits",
-      "3. Threaten \u2014 make consequences clear without committing to them",
-      "4. Non-lethal force \u2014 incapacitate, restrain, disable",
-      "5. Lethal force \u2014 only when other options are exhausted or time runs out",
-      "6. Scorched earth \u2014 everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
-      "threats": "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation \u2014 checks gear, reviews plans, contacts sources.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Goes quiet. The silence is not calm \u2014 it\u0027s the sound of every contingency being evaluated simultaneously.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Preaches independence but is desperate for approval from people they respect",
-      "Presents as emotionless professional but is deeply affected by collateral damage"
-    ],
-    "habits": [
-      "Taps a specific rhythm on hard surfaces when thinking \u2014 Morse code for a word they won\u0027t say",
-      "Sleeps with one hand on a weapon \u2014 has done this for so long it\u0027s not deliberate anymore",
-      "Never drinks anything they didn\u0027t see poured or open themselves",
-      "Arrives fifteen minutes early to everything \u2014 late once, nearly died, never again"
-    ],
-    "breaking_points": [
-      "Their body rejecting their cyberware \u2014 chrome rot, immune rejection, the nightmare scenario",
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Running out of options \u2014 no contacts, no money, no safe house, no way out"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Smartgun link in right forearm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Smartgun link in right forearm \u2014 interfaces directly with compatible weapons",
-      "replaces": ""
-    },
-    {
-      "name": "Wired reflexes with adrenaline pump",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Wired reflexes with adrenaline pump \u2014 chemical-mechanical hybrid augmentation",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.9,
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Manipulator": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Canopy",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Predominantly East Asian (55.9%) with significant Eastern European ancestry (27.4%), creating a striking pan-Eurasian blend. East Asian genetics provide characteristic eye structure, strong cheekbone prominence, and facial proportion; Eastern European ancestry contributes increased bone density, subtle facial angularity, and structural width through the jaw and cheekbones. Hispanic/Latin American (9.0%), Central Asian (4.7%), and Sub-Saharan African (3.0%) ancestry add warmth to overall coloration, slight broadening of facial features, and enriched golden-bronze undertones to the base complexion.",
-    "height_cm": 178,
-    "weight_kg": 82,
-    "build": "Broad-shouldered and heavy, muscular-stocky, carries weight with deliberate control \u2014 built for power and endurance rather than speed",
-    "hair_color": "Dark brown with premature silver threading at temples",
-    "hair_style": "Pulled back in a tight, functional braid; practical, no vanity",
-    "hair_length": "Long",
-    "eye_color": "Dark brown, alert and calculating",
-    "skin_tone": "Warm medium bronze with golden undertones; rich saturated tone from East Asian base enriched by Central Asian and African warmth, sun-weathered and lived-in appearance",
-    "complexion": "Strong, angular face with East Asian cheekbone prominence slightly widened by Eastern European bone structure; warm bronze complexion with subtle golden warmth across cheekbones and bridge of nose. Multiple fine scars across jawline and left temple; no makeup, minimal grooming beyond function.",
-    "distinguishing_marks": [
-      "Three parallel scars running from left cheekbone to jawline, thin and precise as blade work",
-      "Scar tissue along right forearm from smartgun link installation, visible chrome edges catching light",
-      "Burn scar on inside of left wrist, roughly circular, old and faded",
-      "Thin white line running from right eyebrow through temple to hairline",
-      "Knuckle scars on both hands, the wear of hand-to-hand work"
-    ],
-    "visible_augmentations": "Smartgun link mounted in right forearm with visible chrome interface plates and neural connector ports; metallic silver sheen at wrist joint; occasional faint LED glow at interface when systems active",
-    "posture_movement": "Moves with economical precision, no wasted motion; stands with weight balanced on balls of feet, ready to shift; shoulders set forward slightly; resting expression is watchful, not hostile but not welcoming",
-    "clothing_style": "Tier 3-4 practical: reinforced synthetic jacket in matte charcoal over tech-wear underlayer with visible connector ports; cargo pants with multiple tool pockets and armor plating at knees and hips; worn steel-toed boots with grip soles; minimal jewelry except functional smartwatch on left wrist; no corporate branding, all utility"
-  },
-  "image_prompt": "Cipher Jung, GLMZ, 178cm tall muscular-stocky build with broad shoulders. Pan-Eurasian features: strong East Asian cheekbones slightly widened by Eastern European bone structure, dark brown alert eyes, warm bronze skin with golden undertones. Long dark brown hair with silver threading pulled back in tight functional braid. Multiple thin precise scars across left cheekbone and jawline, scar tissue along right forearm with visible chrome smartgun link interface catching neon light, burn scar on left wrist, white line through right eyebrow. Knuckle scars on both hands. Wearing matte charcoal reinforced synthetic jacket over tech-wear underlayer with visible connector ports, cargo pants with armor plating, worn steel-toed boots. Metallic LED glow faintly visible at right wrist interface. Economical posture, weight balanced on balls of feet, watchful resting expression. Neon-lit industrial near-future megacity setting, moody atmospheric lighting, rain-slicked concrete, blue and purple ambient neon glow, cinematic depth of field --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "East Asian": 55.9,
-    "Eastern European": 27.4,
-    "Hispanic/Latin American": 9,
-    "Central Asian": 4.7,
-    "Sub-Saharan African": 3
-  },
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 41.2
-      },
-      "Japanese": {
-        "Japanese": 14.7
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Slovak": 4.5,
-        "Sorbian": 11.1
-      },
-      "Slavic East": {
-        "Russian": 5.2,
-        "Ukrainian": 6.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Ecuadorian": 9
-      }
-    },
-    "Central Asian": {
-      "Turkic": {
-        "Uzbek": 0.3
-      },
-      "Mongolic": {
-        "Mongolian": 1.6,
-        "Kalmyk": 2
-      },
-      "Iranian Central": {
-        "Tajik": 0.8
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 1.1,
-        "Botswanan": 0.2
-      },
-      "West African": {
-        "Ghanaian": 1.7
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a5b27c51b27f899892be7b60",
+    "rating":  70,
+    "type":  "character",
+    "name":  "Cipher Jung",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Contract broker and resource coordinator — fixer",
+    "age":  32,
+    "status":  "active",
+    "location":  "The Canopy — elevated walkway district above Geartown, near Lincoln and Belmont",
+    "description":  "Cipher Jung is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 32, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a fixer out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Cipher Jung describe her as a precision instrument — point her at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "The quiet — silence means something is about to go very wrong",
+                                          "Dying alone in some alley and nobody noticing for weeks",
+                                          "Losing control of their own body to a hacker or malfunctioning cyberware"
+                                      ],
+                       "core_desires":  [
+                                            "Knowledge — to understand the systems that grind people down",
+                                            "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+                                            "Justice — the corporate kind, where the punishment fits the profit margin"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Planning — responds to chaos by making detailed contingency plans for everything",
+                                                 "Maintains weapons obsessively — cleaning guns is meditation",
+                                                 "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Cannot accept help without interpreting it as leverage",
+                                           "Overestimates their own abilities in situations outside their specialty"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+                            "cadence":  "Low and even — the vocal equivalent of still water.",
+                            "verbal_tics":  [
+                                                "Calls everyone \u0027friend\u0027 — the warmth varies from genuine to threatening",
+                                                "Uses \u0027we\u0027 instead of \u0027I\u0027 — either royal or dissociative, nobody asks"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I know a person who knows a person. That\u0027s not evasion — that\u0027s the service.\"",
+                                                  "\"My commission is fifteen percent. You\u0027re welcome to find someone cheaper. You won\u0027t find someone better.\"",
+                                                  "\"The job isn\u0027t dangerous. The people involved are dangerous. The job is just logistics.\""
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Aminata Tarasov-Yiadom is offered a contract that would clear all their debts — the target is someone they respect",
+                        "A former associate resurfaces with evidence that could destroy Aminata Tarasov-Yiadom\u0027s reputation — and a price for silence",
+                        "A Tier 4 executive offers Aminata Tarasov-Yiadom a permanent position — the pay is obscene and the strings are invisible until they tighten"
+                    ],
+    "narrative_function":  "Aminata Tarasov-Yiadom represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
+    "augmentations":  "Smartgun link in right forearm — interfaces directly with compatible weapons. Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+    "daily_life":  "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+    "affiliation":  "Unaffiliated — too volatile for permanent crews",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  4,
+                                                    "augmented":  3,
+                                                    "effective":  9
+                                                },
+                                   "agility":  {
+                                                   "base":  3,
+                                                   "augmented":  3,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  6,
+                                                     "augmented":  3,
+                                                     "effective":  8
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  5,
+                                                    "augmented":  0,
+                                                    "effective":  7
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  4,
+                                                      "augmented":  3,
+                                                      "effective":  6
+                                                  },
+                                 "perception":  {
+                                                    "base":  6,
+                                                    "augmented":  3,
+                                                    "effective":  5
+                                                },
+                                 "willpower":  {
+                                                   "base":  6,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  7
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  4,
+                                                  "augmented":  0,
+                                                  "effective":  10
+                                              },
+                                 "intimidation":  {
+                                                      "base":  3,
+                                                      "augmented":  1,
+                                                      "effective":  7
+                                                  },
+                                 "deception":  {
+                                                   "base":  6,
+                                                   "augmented":  0,
+                                                   "effective":  10
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  0,
+                                                 "effective":  8
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.68,
+                                      "caution":  0.13,
+                                      "loyalty":  0.25,
+                                      "greed":  0.22,
+                                      "empathy":  0.57
+                                  },
+                  "drives":  [
+                                 "money",
+                                 "freedom",
+                                 "protection"
+                             ],
+                  "thresholds":  {
+                                     "pain":  9,
+                                     "stress":  6,
+                                     "loyalty_break":  6
+                                 },
+                  "strengths":  [
+                                    "encyclopedic knowledge of GLMZ infrastructure",
+                                    "multilingual — speaks 4+ languages fluently",
+                                    "network of reliable contacts"
+                                ],
+                  "weaknesses":  [
+                                     "risk-averse to the point of missed opportunities",
+                                     "augmentation dependency — performance drops sharply if chrome malfunctions",
+                                     "overconfidence in specialty areas leading to blind spots"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "fixer",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Refuses contracts that require operating inside The Spires — too much surveillance",
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate — talk first, assess options, buy time",
+                                                 "2. Reposition — move to advantage, control sightlines and exits",
+                                                 "3. Threaten — make consequences clear without committing to them",
+                                                 "4. Non-lethal force — incapacitate, restrain, disable",
+                                                 "5. Lethal force — only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth — everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Goes quiet. The silence is not calm — it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Presents as emotionless professional but is deeply affected by collateral damage"
+                                          ],
+                       "habits":  [
+                                      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won\u0027t say",
+                                      "Sleeps with one hand on a weapon — has done this for so long it\u0027s not deliberate anymore",
+                                      "Never drinks anything they didn\u0027t see poured or open themselves",
+                                      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
+                                  ],
+                       "breaking_points":  [
+                                               "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Running out of options — no contacts, no money, no safe house, no way out"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Smartgun link in right forearm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Smartgun link in right forearm — interfaces directly with compatible weapons",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Wired reflexes with adrenaline pump",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.9,
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Manipulator":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Canopy",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Predominantly East Asian (55.9%) with significant Eastern European ancestry (27.4%), creating a striking pan-Eurasian blend. East Asian genetics provide characteristic eye structure, strong cheekbone prominence, and facial proportion; Eastern European ancestry contributes increased bone density, subtle facial angularity, and structural width through the jaw and cheekbones. Hispanic/Latin American (9.0%), Central Asian (4.7%), and Sub-Saharan African (3.0%) ancestry add warmth to overall coloration, slight broadening of facial features, and enriched golden-bronze undertones to the base complexion.",
+                                 "height_cm":  178,
+                                 "weight_kg":  82,
+                                 "build":  "Broad-shouldered and heavy, muscular-stocky, carries weight with deliberate control — built for power and endurance rather than speed",
+                                 "hair_color":  "Dark brown with premature silver threading at temples",
+                                 "hair_style":  "Pulled back in a tight, functional braid; practical, no vanity",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Dark brown, alert and calculating",
+                                 "skin_tone":  "Warm medium bronze with golden undertones; rich saturated tone from East Asian base enriched by Central Asian and African warmth, sun-weathered and lived-in appearance",
+                                 "complexion":  "Strong, angular face with East Asian cheekbone prominence slightly widened by Eastern European bone structure; warm bronze complexion with subtle golden warmth across cheekbones and bridge of nose. Multiple fine scars across jawline and left temple; no makeup, minimal grooming beyond function.",
+                                 "distinguishing_marks":  [
+                                                              "Three parallel scars running from left cheekbone to jawline, thin and precise as blade work",
+                                                              "Scar tissue along right forearm from smartgun link installation, visible chrome edges catching light",
+                                                              "Burn scar on inside of left wrist, roughly circular, old and faded",
+                                                              "Thin white line running from right eyebrow through temple to hairline",
+                                                              "Knuckle scars on both hands, the wear of hand-to-hand work"
+                                                          ],
+                                 "visible_augmentations":  "Smartgun link mounted in right forearm with visible chrome interface plates and neural connector ports; metallic silver sheen at wrist joint; occasional faint LED glow at interface when systems active",
+                                 "posture_movement":  "Moves with economical precision, no wasted motion; stands with weight balanced on balls of feet, ready to shift; shoulders set forward slightly; resting expression is watchful, not hostile but not welcoming",
+                                 "clothing_style":  "Tier 3-4 practical: reinforced synthetic jacket in matte charcoal over tech-wear underlayer with visible connector ports; cargo pants with multiple tool pockets and armor plating at knees and hips; worn steel-toed boots with grip soles; minimal jewelry except functional smartwatch on left wrist; no corporate branding, all utility"
+                             },
+    "image_prompt":  "Cipher Jung, GLMZ, 178cm tall muscular-stocky build with broad shoulders. Pan-Eurasian features: strong East Asian cheekbones slightly widened by Eastern European bone structure, dark brown alert eyes, warm bronze skin with golden undertones. Long dark brown hair with silver threading pulled back in tight functional braid. Multiple thin precise scars across left cheekbone and jawline, scar tissue along right forearm with visible chrome smartgun link interface catching neon light, burn scar on left wrist, white line through right eyebrow. Knuckle scars on both hands. Wearing matte charcoal reinforced synthetic jacket over tech-wear underlayer with visible connector ports, cargo pants with armor plating, worn steel-toed boots. Metallic LED glow faintly visible at right wrist interface. Economical posture, weight balanced on balls of feet, watchful resting expression. Neon-lit industrial near-future megacity setting, moody atmospheric lighting, rain-slicked concrete, blue and purple ambient neon glow, cinematic depth of field --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "East Asian":  55.9,
+                             "Eastern European":  27.4,
+                             "Hispanic/Latin American":  9,
+                             "Central Asian":  4.7,
+                             "Sub-Saharan African":  3
+                         },
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  41.2
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  14.7
+                                                            }
+                                           },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Slovak":  4.5,
+                                                                         "Sorbian":  11.1
+                                                                     },
+                                                     "Slavic East":  {
+                                                                         "Russian":  5.2,
+                                                                         "Ukrainian":  6.6
+                                                                     }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  9
+                                                                               }
+                                                        },
+                            "Central Asian":  {
+                                                  "Turkic":  {
+                                                                 "Uzbek":  0.3
+                                                             },
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  1.6,
+                                                                   "Kalmyk":  2
+                                                               },
+                                                  "Iranian Central":  {
+                                                                          "Tajik":  0.8
+                                                                      }
+                                              },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  1.1,
+                                                                                 "Botswanan":  0.2
+                                                                             },
+                                                        "West African":  {
+                                                                             "Ghanaian":  1.7
+                                                                         }
+                                                    }
+                        }
 }

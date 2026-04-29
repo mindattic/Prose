@@ -1,167 +1,226 @@
-{
-  "id": "019d6143a71c79cfa40197e01db6c23e",
-  "rating": 20,
-  "vote_count": 5,
-  "type": "character",
-  "name": "Anja Lindström-Kristjánsson",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Fixer - Personal security",
-  "age": 48,
-  "status": "active",
-  "location": "The Spires, near Michigan Ave and Chicago Ave",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Independent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Spires",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Complex tri-continental ancestry with East Asian foundation (52.6%) modified by substantial Northern European (32.9%) and meaningful Sub-Saharan African (13.7%) contributions. Genetic expression creates distinctive phenotype: East Asian bone structure and monolid eye geometry form baseline, elevated by Northern European height and facial breadth, enriched by Sub-Saharan African ancestry contributing skin depth, warmth, and undertone complexity. Result is high-cheekboned face with moderate projection, broader facial width typical of East Asian heritage, strong brow ridge, and skin with luminous warm-brown canvas showing golden-amber highlights in direct light.",
-    "height_cm": 188,
-    "weight_kg": 94,
-    "build": "Athletic and broad-shouldered, muscle definition visible but not excessive; carries weight in chest and forearms from decades of physical work. Frame suggests controlled strength rather than showiness.",
-    "hair_color": "Black with silver threading at temples",
-    "hair_style": "Tight fade, closely clippered on sides with longer texture on crown",
-    "hair_length": "Short",
-    "eye_color": "Dark brown",
-    "skin_tone": "Warm medium-brown with golden-amber luminosity, combining East Asian and Sub-Saharan African depth with subtle olive undertones. Richer warmth than Northern European baseline, glows amber in direct light.",
-    "complexion": "Weathered by sun and stress, minimal facial hair except neatly trimmed goatee. Faint lines around eyes and forehead from squinting and chronic alertness. Monolid eye structure with strong brow ridge; high cheekbones with moderate projection and slight fullness; broader face width with lower cheekbone placement characteristic of East Asian heritage, subtly modified by Northern European contribution. Clear skin bearing texture of someone who doesn't prioritize cosmetic treatments. No visible hyperpigmentation or depigmentation.",
-    "distinguishing_marks": [
-      "Pale burn scar running from right temple down to jawline, approximately 8cm in length, suggesting old thermal weapon or industrial accident",
-      "Faded tattoo on left forearm: abstract geometric pattern in black ink, approximately 10cm across, style suggests personal rather than commercial design",
-      "Thin white scar bisecting left eyebrow, barely noticeable unless light catches it directly"
-    ],
-    "visible_augmentations": "None visible. Any augmentations are subcutaneous or internal—characteristic of someone who values discretion and maintains a low-profile presence despite their role.",
-    "posture_movement": "Stands with weight balanced evenly, shoulders slightly back. Moves with deliberate efficiency—no wasted motion. Eyes constantly assess surroundings, head turns at controlled intervals. Handshake is firm but not aggressive. Speaks from the chest, voice modulated low.",
-    "clothing_style": "Tier 2-3 professional security aesthetic. Typically wears tailored charcoal or matte-black synthlinen jackets with subtle Φ-laced smart-weave (barely detectable); fitted cargo pants with discrete pockets; reinforced undersuit visible at collar and wrists (ballistic-rated, matte finish). Boots are heavy-soled tactical grade, well-maintained but scuffed from use. Favors brands associated with corpo security (Hexus, Ironclad). No jewelry except a worn digital watch on left wrist with encrypted band."
-  },
-  "image_prompt": "Portrait of Anja Lindström-Kristjánsson, 188cm tall athletic security operative, GLMZ. Warm medium-brown skin with golden-amber luminosity, East Asian monolid eyes with strong brow ridge, high cheekbones with moderate fullness, broader facial geometry. Black hair with silver temples, tight fade undercut, neatly trimmed goatee. Pale thermal burn scar from right temple to jawline. Dark intense gaze, weathered expression of chronic alertness. Wearing matte-black synthlinen tactical jacket with Φ-laced smart-weave, reinforced ballistic undersuit visible at collar and wrists, heavy-soled tactical boots. Digital watch on left wrist. Posture balanced and deliberate. Indoor GLMZ corporate security setting, cool blue-grey overhead lighting with warm accent light catching amber skin tone and scar texture. Cinematic, film noir security professional aesthetic, moody atmospheric lighting --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "East Asian": 52.6,
-    "Northern European": 32.9,
-    "Sub-Saharan African": 13.7,
-    "North African": 0.8
-  },
-  "ancestry_detail": {
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 8.4
-      },
-      "Chinese": {
-        "Cantonese": 44.2
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Austrian": 21.5
-      },
-      "British Isles": {
-        "Irish": 11.4
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Malian": 4.6
-      },
-      "Central African": {
-        "Congolese": 5.6,
-        "Angolan": 3.5
-      }
-    },
-    "North African": {
-      "Nile Valley": {
-        "Egyptian": 0.8
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a71c79cfa40197e01db6c23e",
+    "rating":  20,
+    "vote_count":  5,
+    "type":  "character",
+    "name":  "Anja LindstrÃ¶m-KristjÃ¡nsson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Fixer - Personal security",
+    "age":  48,
+    "status":  "active",
+    "location":  "The Spires, near Michigan Ave and Chicago Ave",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Independent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Spires",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Complex tri-continental ancestry with East Asian foundation (52.6%) modified by substantial Northern European (32.9%) and meaningful Sub-Saharan African (13.7%) contributions. Genetic expression creates distinctive phenotype: East Asian bone structure and monolid eye geometry form baseline, elevated by Northern European height and facial breadth, enriched by Sub-Saharan African ancestry contributing skin depth, warmth, and undertone complexity. Result is high-cheekboned face with moderate projection, broader facial width typical of East Asian heritage, strong brow ridge, and skin with luminous warm-brown canvas showing golden-amber highlights in direct light.",
+                                 "height_cm":  188,
+                                 "weight_kg":  94,
+                                 "build":  "Athletic and broad-shouldered, muscle definition visible but not excessive; carries weight in chest and forearms from decades of physical work. Frame suggests controlled strength rather than showiness.",
+                                 "hair_color":  "Black with silver threading at temples",
+                                 "hair_style":  "Tight fade, closely clippered on sides with longer texture on crown",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown",
+                                 "skin_tone":  "Warm medium-brown with golden-amber luminosity, combining East Asian and Sub-Saharan African depth with subtle olive undertones. Richer warmth than Northern European baseline, glows amber in direct light.",
+                                 "complexion":  "Weathered by sun and stress, minimal facial hair except neatly trimmed goatee. Faint lines around eyes and forehead from squinting and chronic alertness. Monolid eye structure with strong brow ridge; high cheekbones with moderate projection and slight fullness; broader face width with lower cheekbone placement characteristic of East Asian heritage, subtly modified by Northern European contribution. Clear skin bearing texture of someone who doesn\u0027t prioritize cosmetic treatments. No visible hyperpigmentation or depigmentation.",
+                                 "distinguishing_marks":  [
+                                                              "Pale burn scar running from right temple down to jawline, approximately 8cm in length, suggesting old thermal weapon or industrial accident",
+                                                              "Faded tattoo on left forearm: abstract geometric pattern in black ink, approximately 10cm across, style suggests personal rather than commercial design",
+                                                              "Thin white scar bisecting left eyebrow, barely noticeable unless light catches it directly"
+                                                          ],
+                                 "visible_augmentations":  "None visible. Any augmentations are subcutaneous or internalâ€”characteristic of someone who values discretion and maintains a low-profile presence despite their role.",
+                                 "posture_movement":  "Stands with weight balanced evenly, shoulders slightly back. Moves with deliberate efficiencyâ€”no wasted motion. Eyes constantly assess surroundings, head turns at controlled intervals. Handshake is firm but not aggressive. Speaks from the chest, voice modulated low.",
+                                 "clothing_style":  "Tier 2-3 professional security aesthetic. Typically wears tailored charcoal or matte-black synthlinen jackets with subtle Î¦-laced smart-weave (barely detectable); fitted cargo pants with discrete pockets; reinforced undersuit visible at collar and wrists (ballistic-rated, matte finish). Boots are heavy-soled tactical grade, well-maintained but scuffed from use. Favors brands associated with corpo security (Hexus, Ironclad). No jewelry except a worn digital watch on left wrist with encrypted band."
+                             },
+    "image_prompt":  "Portrait of Anja LindstrÃ¶m-KristjÃ¡nsson, 188cm tall athletic security operative, GLMZ. Warm medium-brown skin with golden-amber luminosity, East Asian monolid eyes with strong brow ridge, high cheekbones with moderate fullness, broader facial geometry. Black hair with silver temples, tight fade undercut, neatly trimmed goatee. Pale thermal burn scar from right temple to jawline. Dark intense gaze, weathered expression of chronic alertness. Wearing matte-black synthlinen tactical jacket with Î¦-laced smart-weave, reinforced ballistic undersuit visible at collar and wrists, heavy-soled tactical boots. Digital watch on left wrist. Posture balanced and deliberate. Indoor GLMZ corporate security setting, cool blue-grey overhead lighting with warm accent light catching amber skin tone and scar texture. Cinematic, film noir security professional aesthetic, moody atmospheric lighting --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "East Asian":  52.6,
+                             "Northern European":  32.9,
+                             "Sub-Saharan African":  13.7,
+                             "North African":  0.8
+                         },
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  8.4
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  44.2
+                                                           }
+                                           },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Austrian":  21.5
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "Irish":  11.4
+                                                                        }
+                                                  },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Malian":  4.6
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  5.6,
+                                                                                "Angolan":  3.5
+                                                                            }
+                                                    },
+                            "North African":  {
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  0.8
+                                                                  }
+                                              }
+                        }
 }

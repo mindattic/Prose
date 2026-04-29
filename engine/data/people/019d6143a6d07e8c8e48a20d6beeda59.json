@@ -1,299 +1,328 @@
-{
-  "id": "019d6143a6d07e8c8e48a20d6beeda59",
-  "type": "character",
-  "name": "Kitchi Baiseitov-Ixchel",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Substitute childcare worker and unofficial after-school program coordinator",
-  "age": 23,
-  "status": "active",
-  "location": "Mexicantown Libre, operating out of the Libre Community Creche on Calle Veintitrés, near Western and Chicago Ave",
-  "description": "Kitchi Baiseitov-Ixchel is slight with enormous energy — she is the kind of person who enters a room already talking, gesturing, pulling objects from her pockets to illustrate a point. Her skin is a warm golden-brown, her natural hair twisted into thick locs that she decorates with small colored rings and one clip shaped like a fish that her students gave her. She has retractable claws, a cosmetic geneware mod she got at nineteen that she now mostly uses to open packaging and gently scratch children's backs when they're upset, which has become a signature of her caregiving style. Her eyes are dark, large, and deeply attentive in a way that children recognize immediately as meaning she is actually listening.\n\nKitchi Baiseitov-Ixchel is technically a substitute — she fills in at three different licensed creches across Mexicantown Libre when regular workers are out — but in practice she has become the linchpin of a sprawling unofficial after-school program she runs from the Libre Creche's outdoor space on a budget of approximately nothing. She writes curriculum on whatever surfaces are available, sourced donated materials from the Burnished Market, and has an arrangement with a local E.L.F. she calls Señora Chispa (inhabiting the creche's aging electrical panel) that involves leaving handwritten songs as data offerings. The children are convinced Señora Chispa plays favorites, and they are probably right.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.9,
-      "id": 0.5,
-      "shadow": 0.2,
-      "mask": 0.5,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That the children she cares for will be failed by the systems she cannot fix",
-      "That her own instability — substitute work, no permanent position — will one day mean she disappears from their lives without warning"
-    ],
-    "core_desires": [
-      "A permanent position — one that pays enough to stay",
-      "To give the kids in the program a reason to believe the city isn't only indifferent to them"
-    ],
-    "coping_mechanisms": [
-      "Throws herself into activity to avoid sitting with the feeling that it might not be enough",
-      "Talks to Señora Chispa when she's overwhelmed; doesn't need an answer, just needs to say it"
-    ],
-    "blind_spots": [
-      "Systematically deprioritizes her own needs in ways she frames as virtue",
-      "Does not recognize when she is being exploited by the creche operators who rely on her without offering security"
-    ],
-    "secret": "One of the children in her program — a quiet seven-year-old named Paz — has not been collected for two days. The mother is unreachable. Sisay has been keeping the child at the creche overnight rather than contacting city services, because she knows what happens to children who enter the system alone and young. She has 72 hours before someone notices."
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm, concrete, child-accessible even when talking to adults — she narrates her thinking out loud",
-    "cadence": "Fast and enthusiastic, pitches up when excited, drops to something very gentle when scared",
-    "verbal_tics": [
-      "'Okay so here's the thing—'",
-      "'Right? Right.' (self-affirming when nervous)"
-    ],
-    "example_lines": [
-      "'Okay so here's the thing — the curriculum they gave me assumes these kids have consistent net access at home. They don't. So I made a paper version. It takes longer but they remember it better, right? Right.'",
-      "'She's fine. She's with me. She's fine.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The situation with Paz is approaching a point where Sisay will need help from someone outside the system.",
-    "One of the licensed creche operators is underpaying substitutes and pocketing the collective's support funds; Sisay has seen the numbers but not yet decided what to do with what she knows."
-  ],
-  "narrative_function": "Emotional ground-truth character — reflects what is happening to families in the neighborhood. Potential quest giver for issues affecting children or the Libre community. A character who can contextualize what large-scale events mean at the most human level.",
-  "augmentations": "Cosmetic geneware: retractable finger-length claws, keratin-reinforced, dark brown. No other modifications.",
-  "daily_life": "Receives her day's assignment by 07:00 via the collective's messaging system; works whichever creche needs coverage until 17:00; runs the unofficial after-school program until 19:00 or until the last child is collected; spends evenings planning the next day's activities on whatever she can find to write on.",
-  "affiliation": "Mexicantown Libre Community Creche Collective (informal); substitute contractor for three licensed childcare providers",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 4
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 9,
-      "expression": 8,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": -5,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": -1,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "childcare",
-      "community organizer",
-      "substitute worker",
-      "e.l.f. devotee",
-      "retractable claws",
-      "precarious employment"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The children come first — full stop",
-      "When in doubt, act and ask for forgiveness rather than wait for permission"
-    ],
-    "escalation_ladder": [
-      "Handle it herself quietly",
-      "Ask a trusted adult in the community (like Mirela types) for informal help",
-      "Go to the collective",
-      "Go public within the Libre neighborhood network",
-      "Contact outside help as an absolute last resort"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately warm and a little overwhelming — she assumes good faith and acts on it before verifying",
-      "friends": "Profoundly loyal, will do nearly anything asked of her, gives more than she should"
-    },
-    "stress_responses": {
-      "low": "Talks faster, plans more elaborate activities to keep herself occupied",
-      "medium": "Becomes very focused and a little short with adults while maintaining perfect patience with children",
-      "high": "Goes completely quiet; the children find this more frightening than any display and immediately try to comfort her"
-    },
-    "contradictions": [
-      "Holds fierce ideals about community accountability but cannot bring herself to report individuals she likes even when they've done wrong"
-    ],
-    "habits": [
-      "Leaves a new handwritten song for Señora Chispa every Friday evening",
-      "Always has at least two pens, a piece of chalk, and a snack somewhere on her person"
-    ],
-    "breaking_points": [
-      "A child being harmed or taken away unjustly",
-      "Being told to stop the unofficial program by someone with the authority to make it stick"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Cosmetic geneware: retractable finger-length claws, keratin-reinforced, dark brown (Narrows clinic, age 19)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Cosmetic geneware: retractable finger-length claws, keratin-reinforced, dark brown (Narrows clinic, age 19)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Quick Study": 0.9,
-    "Seeker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Mexicantown Libre",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2177 — Born in Mexicantown Libre to an Ethiopian-Filipino family",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2195 — Begins substitute work with the Libre Creche Collective",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2196 — Starts the unofficial after-school program with Φ80 of her own savings",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2199 — Program grows to 34 children; still receives no formal funding",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Present day; the situation with Paz has entered its second day",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Dispatch-45 'Last Word'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Burnished Market",
-    "Mexicantown Libre",
-    "Dredge Mining Collective",
-    "TESSERA PG-2 'Signature'",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Chicago"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Multiethnic blend: Indigenous American (36%), South Asian (27%), Central Asian (26.7%), and Eastern European (10.3%). This combination creates warm, earthy undertones with distinctive high cheekbones and eye structure reflecting strong Amerindian and Central Asian influence, enriched by South Asian facial geometry and balanced with lighter Eastern European undertones in skin depth.",
-    "height_cm": 158,
-    "weight_kg": 48,
-    "build": "Slight and wiry with restless energy — lean muscle from constant movement, minimal body fat, a frame built for reaching high shelves and sitting cross-legged on the floor",
-    "hair_color": "Natural dark brown to black",
-    "hair_style": "Thick locs twisted tightly, shoulder-length, decorated with small colored rings (rotating selection of brass, plastic, and handmade beads) and one hand-carved wooden fish clip",
-    "hair_length": "Long (shoulder-length locs)",
-    "eye_color": "Dark brown, naturally large and wide-set",
-    "skin_tone": "Warm golden-bronze with earthy undertones, medium depth from sun exposure. The blend of Indigenous American, South Asian, and Central Asian ancestry creates rich warm saturation, tempered by subtle Eastern European lightening — a balanced warm-medium complexion suggesting both outdoor time and mixed heritage.",
-    "complexion": "Open, animated expression with a baseline micro-smile. Medium-textured skin showing minimal scarring or blemishing — young skin cared for with budget products. Facial structure shows prominent, high cheekbones with strong Indigenous American and Central Asian architecture, balanced by South Asian influence in eye placement, orbital geometry, and overall facial proportions. Eyebrows are full and naturally shaped, rarely plucked. No visible cosmetic face mods.",
-    "distinguishing_marks": [
-      "Fine white scar across the knuckle of her right index finger from a childhood accident, barely visible unless pointed out",
-      "Faint burn mark on her left inner forearm (approximately 3cm, crescent-shaped) from a creche kitchen incident at age seventeen, healed to near-invisibility"
-    ],
-    "visible_augmentations": "Retractable keratin-reinforced claws, dark brown, extending from all ten fingertips to approximately 4cm in length when fully deployed. Visible at rest as smooth, slightly raised nail beds with a subtle metallic sheen under certain light. No other visible augmentations; any subcutaneous mods would be invisible.",
-    "posture_movement": "Perpetually in motion — stands with weight shifting between feet, hands gesturing while speaking, shoulders animated. Sits in fluid, cross-legged position on the floor often. Movements are quick and efficient rather than graceful, optimized for childcare (sweeping a child up, reaching into pockets, opening things, soothing physical contact). Habitual gesture of running her claws through her locs or tapping them rhythmically on surfaces when thinking.",
-    "clothing_style": "Tier 4 working-class pragmatism with personal flair. Typically wears comfortable, durable pants (often canvas or cotton blend in neutral colors — charcoal, olive, tan) with deep pockets filled with small objects (drawing supplies, snacks, toys, messages for Señora Chispa). Layered shirts: a fitted base layer under an oversized button-up or pullover in warm colors (rust, mustard, deep rose) or handwoven fabrics from Mexicantown makers. Shoes are practical and broken-in — canvas sneakers or worn leather boots, scuffed from daily wear. No visible jewelry except the hair decorations. Clothing shows signs of daily use with children — marker smudges, small holes, fading — but is always clean. Occasionally wears an apron with oversized pockets, usually fabric-dyed or embroidered by students."
-  },
-  "image_prompt": "Kitchi Baiseitov-Ixchel, 158cm tall, slight wiry frame, standing in motion with restless energy. Warm golden-bronze skin with earthy undertones reflecting Indigenous American, South Asian, Central Asian, and Eastern European heritage blend. High prominent cheekbones, large dark brown eyes wide-set, full natural eyebrows. Shoulder-length thick dark brown locs decorated with brass rings, plastic beads, and wooden fish clip. Dark brown retractable keratin claws visible at fingertips with metallic sheen. Wearing layered outfit: fitted base layer under rust-colored oversized pullover, charcoal canvas pants with deep pockets, worn canvas sneakers. Animated micro-smile, hands gesturing, perpetually in motion. Neo-noir Great Lakes Metropolitan Zone, 2226, warm indoor lighting in a community education space with colorful student artwork visible behind. Diverse, energetic, practical working-class aesthetic with personal handmade flair. Close-up portrait framing from waist up. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Indigenous American": 36,
-    "South Asian": 27,
-    "Central Asian": 26.7,
-    "Eastern European": 10.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Maya": 5.5,
-        "Zapotec": 1.8
-      },
-      "Plains Nations": {
-        "Muscogee": 12.4,
-        "Choctaw": 16.3
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Bengali": 15.9,
-        "Gujarati": 11.1
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Mongolian": 18.4
-      },
-      "Turkic": {
-        "Uyghur": 1.7,
-        "Turkmen": 1.3
-      },
-      "Iranian Central": {
-        "Tajik": 5.3
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 10.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6d07e8c8e48a20d6beeda59",
+    "type":  "character",
+    "name":  "Kitchi Baiseitov-Ixchel",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Substitute childcare worker and unofficial after-school program coordinator",
+    "age":  23,
+    "status":  "active",
+    "location":  "Mexicantown Libre, operating out of the Libre Community Creche on Calle VeintitrÃ©s, near Western and Chicago Ave",
+    "description":  "Kitchi Baiseitov-Ixchel is slight with enormous energy â€” she is the kind of person who enters a room already talking, gesturing, pulling objects from her pockets to illustrate a point. Her skin is a warm golden-brown, her natural hair twisted into thick locs that she decorates with small colored rings and one clip shaped like a fish that her students gave her. She has retractable claws, a cosmetic geneware mod she got at nineteen that she now mostly uses to open packaging and gently scratch children\u0027s backs when they\u0027re upset, which has become a signature of her caregiving style. Her eyes are dark, large, and deeply attentive in a way that children recognize immediately as meaning she is actually listening.\n\nKitchi Baiseitov-Ixchel is technically a substitute â€” she fills in at three different licensed creches across Mexicantown Libre when regular workers are out â€” but in practice she has become the linchpin of a sprawling unofficial after-school program she runs from the Libre Creche\u0027s outdoor space on a budget of approximately nothing. She writes curriculum on whatever surfaces are available, sourced donated materials from the Burnished Market, and has an arrangement with a local E.L.F. she calls SeÃ±ora Chispa (inhabiting the creche\u0027s aging electrical panel) that involves leaving handwritten songs as data offerings. The children are convinced SeÃ±ora Chispa plays favorites, and they are probably right.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the children she cares for will be failed by the systems she cannot fix",
+                                          "That her own instability â€” substitute work, no permanent position â€” will one day mean she disappears from their lives without warning"
+                                      ],
+                       "core_desires":  [
+                                            "A permanent position â€” one that pays enough to stay",
+                                            "To give the kids in the program a reason to believe the city isn\u0027t only indifferent to them"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Throws herself into activity to avoid sitting with the feeling that it might not be enough",
+                                                 "Talks to SeÃ±ora Chispa when she\u0027s overwhelmed; doesn\u0027t need an answer, just needs to say it"
+                                             ],
+                       "blind_spots":  [
+                                           "Systematically deprioritizes her own needs in ways she frames as virtue",
+                                           "Does not recognize when she is being exploited by the creche operators who rely on her without offering security"
+                                       ],
+                       "secret":  "One of the children in her program â€” a quiet seven-year-old named Paz â€” has not been collected for two days. The mother is unreachable. Sisay has been keeping the child at the creche overnight rather than contacting city services, because she knows what happens to children who enter the system alone and young. She has 72 hours before someone notices."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm, concrete, child-accessible even when talking to adults â€” she narrates her thinking out loud",
+                            "cadence":  "Fast and enthusiastic, pitches up when excited, drops to something very gentle when scared",
+                            "verbal_tics":  [
+                                                "\u0027Okay so here\u0027s the thingâ€”\u0027",
+                                                "\u0027Right? Right.\u0027 (self-affirming when nervous)"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Okay so here\u0027s the thing â€” the curriculum they gave me assumes these kids have consistent net access at home. They don\u0027t. So I made a paper version. It takes longer but they remember it better, right? Right.\u0027",
+                                                  "\u0027She\u0027s fine. She\u0027s with me. She\u0027s fine.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The situation with Paz is approaching a point where Sisay will need help from someone outside the system.",
+                        "One of the licensed creche operators is underpaying substitutes and pocketing the collective\u0027s support funds; Sisay has seen the numbers but not yet decided what to do with what she knows."
+                    ],
+    "narrative_function":  "Emotional ground-truth character â€” reflects what is happening to families in the neighborhood. Potential quest giver for issues affecting children or the Libre community. A character who can contextualize what large-scale events mean at the most human level.",
+    "augmentations":  "Cosmetic geneware: retractable finger-length claws, keratin-reinforced, dark brown. No other modifications.",
+    "daily_life":  "Receives her day\u0027s assignment by 07:00 via the collective\u0027s messaging system; works whichever creche needs coverage until 17:00; runs the unofficial after-school program until 19:00 or until the last child is collected; spends evenings planning the next day\u0027s activities on whatever she can find to write on.",
+    "affiliation":  "Mexicantown Libre Community Creche Collective (informal); substitute contractor for three licensed childcare providers",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  4
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  9,
+                                 "expression":  8,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  -5,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "childcare",
+                               "community organizer",
+                               "substitute worker",
+                               "e.l.f. devotee",
+                               "retractable claws",
+                               "precarious employment"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The children come first â€” full stop",
+                                              "When in doubt, act and ask for forgiveness rather than wait for permission"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Handle it herself quietly",
+                                                 "Ask a trusted adult in the community (like Mirela types) for informal help",
+                                                 "Go to the collective",
+                                                 "Go public within the Libre neighborhood network",
+                                                 "Contact outside help as an absolute last resort"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately warm and a little overwhelming â€” she assumes good faith and acts on it before verifying",
+                                                   "friends":  "Profoundly loyal, will do nearly anything asked of her, gives more than she should"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks faster, plans more elaborate activities to keep herself occupied",
+                                                "medium":  "Becomes very focused and a little short with adults while maintaining perfect patience with children",
+                                                "high":  "Goes completely quiet; the children find this more frightening than any display and immediately try to comfort her"
+                                            },
+                       "contradictions":  [
+                                              "Holds fierce ideals about community accountability but cannot bring herself to report individuals she likes even when they\u0027ve done wrong"
+                                          ],
+                       "habits":  [
+                                      "Leaves a new handwritten song for SeÃ±ora Chispa every Friday evening",
+                                      "Always has at least two pens, a piece of chalk, and a snack somewhere on her person"
+                                  ],
+                       "breaking_points":  [
+                                               "A child being harmed or taken away unjustly",
+                                               "Being told to stop the unofficial program by someone with the authority to make it stick"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Cosmetic geneware: retractable finger-length claws, keratin-reinforced, dark brown (Narrows clinic, age 19)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Cosmetic geneware: retractable finger-length claws, keratin-reinforced, dark brown (Narrows clinic, age 19)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Quick Study":  0.9,
+                       "Seeker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Mexicantown Libre",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2177 â€” Born in Mexicantown Libre to an Ethiopian-Filipino family",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2195 â€” Begins substitute work with the Libre Creche Collective",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2196 â€” Starts the unofficial after-school program with Î¦80 of her own savings",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2199 â€” Program grows to 34 children; still receives no formal funding",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Present day; the situation with Paz has entered its second day",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Dispatch-45 \u0027Last Word\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Burnished Market",
+                             "Mexicantown Libre",
+                             "Dredge Mining Collective",
+                             "TESSERA PG-2 \u0027Signature\u0027",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Chicago"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Multiethnic blend: Indigenous American (36%), South Asian (27%), Central Asian (26.7%), and Eastern European (10.3%). This combination creates warm, earthy undertones with distinctive high cheekbones and eye structure reflecting strong Amerindian and Central Asian influence, enriched by South Asian facial geometry and balanced with lighter Eastern European undertones in skin depth.",
+                                 "height_cm":  158,
+                                 "weight_kg":  48,
+                                 "build":  "Slight and wiry with restless energy â€” lean muscle from constant movement, minimal body fat, a frame built for reaching high shelves and sitting cross-legged on the floor",
+                                 "hair_color":  "Natural dark brown to black",
+                                 "hair_style":  "Thick locs twisted tightly, shoulder-length, decorated with small colored rings (rotating selection of brass, plastic, and handmade beads) and one hand-carved wooden fish clip",
+                                 "hair_length":  "Long (shoulder-length locs)",
+                                 "eye_color":  "Dark brown, naturally large and wide-set",
+                                 "skin_tone":  "Warm golden-bronze with earthy undertones, medium depth from sun exposure. The blend of Indigenous American, South Asian, and Central Asian ancestry creates rich warm saturation, tempered by subtle Eastern European lightening â€” a balanced warm-medium complexion suggesting both outdoor time and mixed heritage.",
+                                 "complexion":  "Open, animated expression with a baseline micro-smile. Medium-textured skin showing minimal scarring or blemishing â€” young skin cared for with budget products. Facial structure shows prominent, high cheekbones with strong Indigenous American and Central Asian architecture, balanced by South Asian influence in eye placement, orbital geometry, and overall facial proportions. Eyebrows are full and naturally shaped, rarely plucked. No visible cosmetic face mods.",
+                                 "distinguishing_marks":  [
+                                                              "Fine white scar across the knuckle of her right index finger from a childhood accident, barely visible unless pointed out",
+                                                              "Faint burn mark on her left inner forearm (approximately 3cm, crescent-shaped) from a creche kitchen incident at age seventeen, healed to near-invisibility"
+                                                          ],
+                                 "visible_augmentations":  "Retractable keratin-reinforced claws, dark brown, extending from all ten fingertips to approximately 4cm in length when fully deployed. Visible at rest as smooth, slightly raised nail beds with a subtle metallic sheen under certain light. No other visible augmentations; any subcutaneous mods would be invisible.",
+                                 "posture_movement":  "Perpetually in motion â€” stands with weight shifting between feet, hands gesturing while speaking, shoulders animated. Sits in fluid, cross-legged position on the floor often. Movements are quick and efficient rather than graceful, optimized for childcare (sweeping a child up, reaching into pockets, opening things, soothing physical contact). Habitual gesture of running her claws through her locs or tapping them rhythmically on surfaces when thinking.",
+                                 "clothing_style":  "Tier 4 working-class pragmatism with personal flair. Typically wears comfortable, durable pants (often canvas or cotton blend in neutral colors â€” charcoal, olive, tan) with deep pockets filled with small objects (drawing supplies, snacks, toys, messages for SeÃ±ora Chispa). Layered shirts: a fitted base layer under an oversized button-up or pullover in warm colors (rust, mustard, deep rose) or handwoven fabrics from Mexicantown makers. Shoes are practical and broken-in â€” canvas sneakers or worn leather boots, scuffed from daily wear. No visible jewelry except the hair decorations. Clothing shows signs of daily use with children â€” marker smudges, small holes, fading â€” but is always clean. Occasionally wears an apron with oversized pockets, usually fabric-dyed or embroidered by students."
+                             },
+    "image_prompt":  "Kitchi Baiseitov-Ixchel, 158cm tall, slight wiry frame, standing in motion with restless energy. Warm golden-bronze skin with earthy undertones reflecting Indigenous American, South Asian, Central Asian, and Eastern European heritage blend. High prominent cheekbones, large dark brown eyes wide-set, full natural eyebrows. Shoulder-length thick dark brown locs decorated with brass rings, plastic beads, and wooden fish clip. Dark brown retractable keratin claws visible at fingertips with metallic sheen. Wearing layered outfit: fitted base layer under rust-colored oversized pullover, charcoal canvas pants with deep pockets, worn canvas sneakers. Animated micro-smile, hands gesturing, perpetually in motion. Neo-noir Great Lakes Metropolitan Zone, 2226, warm indoor lighting in a community education space with colorful student artwork visible behind. Diverse, energetic, practical working-class aesthetic with personal handmade flair. Close-up portrait framing from waist up. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Indigenous American":  36,
+                             "South Asian":  27,
+                             "Central Asian":  26.7,
+                             "Eastern European":  10.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  5.5,
+                                                                             "Zapotec":  1.8
+                                                                         },
+                                                        "Plains Nations":  {
+                                                                               "Muscogee":  12.4,
+                                                                               "Choctaw":  16.3
+                                                                           }
+                                                    },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Bengali":  15.9,
+                                                               "Gujarati":  11.1
+                                                           }
+                                            },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  18.4
+                                                               },
+                                                  "Turkic":  {
+                                                                 "Uyghur":  1.7,
+                                                                 "Turkmen":  1.3
+                                                             },
+                                                  "Iranian Central":  {
+                                                                          "Tajik":  5.3
+                                                                      }
+                                              },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  10.3
+                                                                         }
+                                                 }
+                        },
+    "tier":  "3"
 }

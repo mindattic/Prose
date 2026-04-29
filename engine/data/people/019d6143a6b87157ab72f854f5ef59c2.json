@@ -1,314 +1,339 @@
-{
-  "id": "019d6143a6b87157ab72f854f5ef59c2",
-  "type": "character",
-  "name": "Anand Nwosu-Ekwensi",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Protection racket enforcer for the Grainfort Tithe",
-  "age": 22,
-  "status": "active",
-  "location": "Grainfort, operates the southwest market corridor and adjacent residential blocks, near North Ave and Damen",
-  "description": "Anand Nwosu-Ekwensi is physically extraordinary—193 centimeters and built like a structural beam, with warm medium-brown skin, a shaved head he keeps obsessively smooth, and a jaw that looks like it was designed by committee to be intimidating. His geneware gives him a very slight bioluminescent flush along his cheekbones and temples in blue-white—barely visible in daylight, unmistakable at night, which was exactly the aesthetic point. He has the slightly careful way of moving that very large people develop when they've broken something by accident more than once.\n\nWhat catches people off guard is that Anand Nwosu-Ekwensi is polite almost to a fault, speaks in a quiet voice he never raises, and seems genuinely distressed when he has to hurt someone. He is not performing gentleness—he really does not enjoy violence, which makes him more unsettling than someone who obviously does. He has been with the Tithe since he was seventeen and has never questioned whether this is where he should be, mostly because thinking about alternatives feels like standing at the edge of something with no floor. He goes home after his rounds to a small flat he shares with his younger sister, feeds an illegal cat, and watches old sports footage before sleeping.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.4,
-      "id": 0.5,
-      "shadow": 0.4,
-      "mask": 0.5,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "His sister discovering exactly what he does and how he does it",
-      "That he is not actually a good person, just a person who prefers not to hurt people when he can avoid it"
-    ],
-    "core_desires": [
-      "His sister to be safe and stable in a way he never was",
-      "To be respected for something other than his size"
-    ],
-    "coping_mechanisms": [
-      "Rigid routine and physical cleanliness as order-maintenance",
-      "The cat—caring for something small and dependent"
-    ],
-    "blind_spots": [
-      "He does not register how his presence alone constitutes coercion even when he's being pleasant",
-      "He has convinced himself the Tithe is fundamentally protective rather than extractive"
-    ],
-    "secret": "Two years ago, during a debt enforcement visit, he went further than he intended with a market stall operator—a middle-aged woman who couldn't pay. She is fine now, recovered, still running her stall. But she flinches every time she sees him coming and he knows it and he pays her tithe from his own cut every month anonymously through a delivery bot, which does not in any way fix what he did but is the only repair he can think of."
-  },
-  "speech_patterns": {
-    "vocabulary": "Simple and direct, avoids long sentences. Occasionally formal in a way that suggests he picked up speech patterns from older Tithe members and internalized them.",
-    "cadence": "Quiet, even, unhurried. The low volume forces people to pay attention.",
-    "verbal_tics": [
-      "'That's not something I want to happen.'",
-      "Refers to the Tithe as 'the arrangement' when talking to merchants"
-    ],
-    "example_lines": [
-      "'Everybody's week gets better when the arrangement goes smooth. I really do mean that. You want some water? You look tired.'",
-      "'I'm going to come back Thursday. I'd like Thursday to be a nothing visit. I think you'd like that too.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A new merchant in the corridor—young, Tier 1, clearly terrified—has asked Roshan quietly whether there's any way to get exempt from the Tithe, and Roshan is processing a feeling he doesn't have words for",
-    "Someone has been leaving threatening messages for the stall operator Roshan injured, and it has nothing to do with the Tithe—and Roshan has discovered he will apparently do something about it without being asked or paid"
-  ],
-  "narrative_function": "Human face of street-level protection racket, potential reluctant ally or sympathetic obstacle, illustrates the social ecosystem of Grainfort—who pays, who complains, who has been paying for years without incident.",
-  "augmentations": "Bioluminescent cheekbone and temple flush (blue-white, geneware, cosmetic). Bone-lacing in forearms—stress-distribution modification, legal gray area, installed by a Tithe-connected medic. Subdermal impact dampener plates across knuckles.",
-  "daily_life": "Makes rounds of the southwest market corridor every morning, collecting weekly tithe envelopes from thirty-seven establishments; afternoons on call for enforcement responses; evenings mostly free unless escalated.",
-  "affiliation": "The Grainfort Tithe (local protection and territory collective, Tier 1-2 criminal organization)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 9,
-      "dexterity": 6,
-      "vitality": 8,
-      "perception": 6
-    },
-    "mental": {
-      "cognition": 5,
-      "willpower": 7,
-      "creativity": 4,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 6,
-      "expression": 4,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": -1,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 1,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "physically-imposing",
-      "quietly-gentle",
-      "guilt-carrying",
-      "loyal",
-      "self-limiting"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always give the merchant a face-saving way to comply before applying pressure",
-      "Never threaten family members—that is the line he will not cross regardless of instruction"
-    ],
-    "escalation_ladder": [
-      "Pleasant, routine collection visit",
-      "Follow-up visit, explicitly gentle—expresses disappointment more than threat",
-      "Arrives with a Tithe colleague, still polite, much more clearly structural",
-      "Physical demonstration of consequence, minimal and targeted, visibly unhappy about it"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Quietly courteous, lets his size do the ambient work so he doesn't have to be rude",
-      "friends": "Unguarded, occasionally funny in a dry deadpan way, loyal to a degree that could become a problem"
-    },
-    "stress_responses": {
-      "low": "Cleans the flat, grooms the cat",
-      "medium": "Goes to the Tithe's gym space and lifts until exhausted",
-      "high": "Becomes very quiet and still, which people who know him understand as a danger sign"
-    },
-    "contradictions": [
-      "Genuinely dislikes violence but has structured his entire working life around the implicit threat of it",
-      "Pays the market woman's tithe as atonement while continuing to enforce on everyone else"
-    ],
-    "habits": [
-      "Checks his route in the same order every day, never varies",
-      "Buys tea from the same stall at the end of his morning rounds regardless of whether he wants it—it's a tip in disguise"
-    ],
-    "breaking_points": [
-      "Any threat to his sister",
-      "Being ordered to harm the market woman again, or anyone who reminds him of her"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Bioluminescent cheekbone/temple flush (geneware, blue-white, cosmetic)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Bioluminescent cheekbone/temple flush (geneware, blue-white, cosmetic)",
-      "replaces": ""
-    },
-    {
-      "name": "Forearm bone-lacing (stress-distribution, gray-market medical install)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Forearm bone-lacing (stress-distribution, gray-market medical install)",
-      "replaces": ""
-    },
-    {
-      "name": "Subdermal knuckle impact dampener plates",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal knuckle impact dampener plates",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Diplomat": 0.9,
-    "Social Chameleon": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Grainfort",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 15: Mother died of untreated pulmonary failure, became sole support for younger sister",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 17: Recruited by the Grainfort Tithe—initially as a courier, moved to enforcement within four months",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 20: The incident with the market stall operator",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 20-present: Paying her tithe anonymously from his own cut",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'"
-  ],
-  "related_entities": [
-    "GLMZ",
-    "Grainfort",
-    "Photovoltaic Cascade Rifle PCR-3 'Tithe'",
-    "Plot 17",
-    "The Accidental",
-    "The Sluiceway",
-    "GLMZ",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Compass Rose"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Sub-Saharan African (51.3%) with Hispanic/Latin American (32.2%) and Southeast Asian (16.5%) ancestry—a powerful global blend. Deep melanated skin with rich warm undertones forms the foundation, enriched by Hispanic warmth and enhanced by Southeast Asian refined facial geometry. Creates luminous depth with strong African structural presence balanced against delicate cheekbone definition.",
-    "height_cm": 193,
-    "weight_kg": 118,
-    "build": "Exceptionally large and structurally dense—shoulders like load-bearing columns, forearms visibly reinforced beneath the skin with bone-lacing modifications. Not bulky from bodybuilding; rather, engineered mass optimized for impact absorption and structural integrity. Moves with deliberate, economical precision despite his size.",
-    "hair_color": "Black, natural",
-    "hair_style": "Shaved to bare scalp, kept obsessively smooth—no stubble, no texture. Ritual grooming suggests control and self-maintenance.",
-    "hair_length": "Shaved",
-    "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Deep warm brown with luminous undertones—melanated complexion from Sub-Saharan African heritage (51.3%) providing foundational richness, warmed and enhanced by Hispanic/Latin American (32.2%) influence creating natural glow, with Southeast Asian (16.5%) ancestry contributing subtle dimensional warmth throughout.",
-    "complexion": "Strong jawline with squared edges and prominent mandible—architecture that reads as intimidating. Clean-shaven. Unmarred face; the kind of careful symmetry that suggests his geneware and augmentations were installed with precision by medical professionals, not street techs. Slight blue-white bioluminescent flush visible along cheekbones and temples—most apparent in low light, creates an eerie subliminal glow. High, defined cheekbones reflecting Southeast Asian heritage structure, framed by robust African facial geometry and enriched by Hispanic warmth in overall complexion tone.",
-    "distinguishing_marks": [
-      "Bioluminescent geneware traces along cheekbones and temples: blue-white glow, cosmetic modification installed for aesthetic/intimidation value, most visible in evening/night conditions.",
-      "Faint linear scarring along inside of left forearm where bone-lacing installation incisions healed—barely visible unless limb is at specific angle to light, approximately 12 centimeters long.",
-      "Subdermal impact dampener plates visible as subtle geometric ridges across knuckles when fists are clenched—slight metallic sheen under skin, approximately 2-3 millimeters relief."
-    ],
-    "visible_augmentations": "Bioluminescent cheekbone/temple flush (blue-white, cosmetic geneware—unmistakable at night, subtle in daylight). Slight geometric relief pattern visible across knuckles suggesting subdermal plating. Forearm bone-lacing creates subtle density variation visible under skin in certain lighting, though not obvious without close inspection.",
-    "posture_movement": "Stands at full height with shoulders relaxed, not squared aggressively. Moves with unusual grace for someone 193cm tall—economical, controlled, deliberate. Each motion appears calculated to minimize accidental damage. When reaching for something, he slows down. When walking through crowded spaces, he becomes hyperaware of his spatial footprint. Body language reads as quiet and contained rather than threatening, which creates cognitive dissonance with his physical presence.",
-    "clothing_style": "Tier 1-2 enforcer uniform: well-fitted black or charcoal synthetic-blend long-sleeve shirts (breathable, durable) worn untucked. Matte-finish tactical pants in dark gray or black with reinforced seams. Worn-in leather jacket in deep brown, scuffed at the cuffs from years of use, no corpo branding. Steel-toed work boots, black, maintained to functional standards rather than polish. No jewelry except a faded cloth wristband on left wrist (memorial or talisman—ambiguous origin). Clothing choices prioritize functionality and durability over style, with subtle tier-2 quality markers that suggest he has access to better than street level, but not corpo-grade luxury."
-  },
-  "image_prompt": "GLMZ enforcer, 193cm tall, massive dense frame with bone-lacing augmentations, bare shaved scalp. Deep warm brown melanated skin with luminous undertones blending Sub-Saharan African, Hispanic/Latin American, and Southeast Asian ancestry. Strong intimidating jawline, high defined cheekbones, clean-shaven face with subtle blue-white bioluminescent glow along cheekbones and temples glowing in evening light. Dark brown unaugmented eyes. Wearing worn-in deep brown leather jacket over black synthetic long-sleeve shirt, dark tactical pants, black steel-toed boots. Faded cloth wristband on left wrist. Controlled graceful posture despite massive size. Geometric subdermal plating visible at knuckles. Standing in neon-lit urban environment, low ambient lighting emphasizing bioluminescent geneware traces. Photorealistic, gritty neo-noir atmosphere, moody and contained --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 51.3,
-    "Hispanic/Latin American": 32.2,
-    "Southeast Asian": 16.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Central African": {
-        "Angolan": 19.1,
-        "Cameroonian": 13.7
-      },
-      "Southern African": {
-        "Zimbabwean": 18.5
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Salvadoran": 14.4,
-        "Honduran": 6.1
-      },
-      "Caribbean": {
-        "Dominican": 11.7
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 8
-      },
-      "Laotian": {
-        "Laotian": 4.6
-      },
-      "Indonesian": {
-        "Sumatran": 3.9
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6b87157ab72f854f5ef59c2",
+    "type":  "character",
+    "name":  "Anand Nwosu-Ekwensi",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Protection racket enforcer for the Grainfort Tithe",
+    "age":  22,
+    "status":  "active",
+    "location":  "Grainfort, operates the southwest market corridor and adjacent residential blocks, near North Ave and Damen",
+    "description":  "Anand Nwosu-Ekwensi is physically extraordinaryâ€”193 centimeters and built like a structural beam, with warm medium-brown skin, a shaved head he keeps obsessively smooth, and a jaw that looks like it was designed by committee to be intimidating. His geneware gives him a very slight bioluminescent flush along his cheekbones and temples in blue-whiteâ€”barely visible in daylight, unmistakable at night, which was exactly the aesthetic point. He has the slightly careful way of moving that very large people develop when they\u0027ve broken something by accident more than once.\n\nWhat catches people off guard is that Anand Nwosu-Ekwensi is polite almost to a fault, speaks in a quiet voice he never raises, and seems genuinely distressed when he has to hurt someone. He is not performing gentlenessâ€”he really does not enjoy violence, which makes him more unsettling than someone who obviously does. He has been with the Tithe since he was seventeen and has never questioned whether this is where he should be, mostly because thinking about alternatives feels like standing at the edge of something with no floor. He goes home after his rounds to a small flat he shares with his younger sister, feeds an illegal cat, and watches old sports footage before sleeping.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "His sister discovering exactly what he does and how he does it",
+                                          "That he is not actually a good person, just a person who prefers not to hurt people when he can avoid it"
+                                      ],
+                       "core_desires":  [
+                                            "His sister to be safe and stable in a way he never was",
+                                            "To be respected for something other than his size"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Rigid routine and physical cleanliness as order-maintenance",
+                                                 "The catâ€”caring for something small and dependent"
+                                             ],
+                       "blind_spots":  [
+                                           "He does not register how his presence alone constitutes coercion even when he\u0027s being pleasant",
+                                           "He has convinced himself the Tithe is fundamentally protective rather than extractive"
+                                       ],
+                       "secret":  "Two years ago, during a debt enforcement visit, he went further than he intended with a market stall operatorâ€”a middle-aged woman who couldn\u0027t pay. She is fine now, recovered, still running her stall. But she flinches every time she sees him coming and he knows it and he pays her tithe from his own cut every month anonymously through a delivery bot, which does not in any way fix what he did but is the only repair he can think of."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Simple and direct, avoids long sentences. Occasionally formal in a way that suggests he picked up speech patterns from older Tithe members and internalized them.",
+                            "cadence":  "Quiet, even, unhurried. The low volume forces people to pay attention.",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s not something I want to happen.\u0027",
+                                                "Refers to the Tithe as \u0027the arrangement\u0027 when talking to merchants"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Everybody\u0027s week gets better when the arrangement goes smooth. I really do mean that. You want some water? You look tired.\u0027",
+                                                  "\u0027I\u0027m going to come back Thursday. I\u0027d like Thursday to be a nothing visit. I think you\u0027d like that too.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A new merchant in the corridorâ€”young, Tier 1, clearly terrifiedâ€”has asked Roshan quietly whether there\u0027s any way to get exempt from the Tithe, and Roshan is processing a feeling he doesn\u0027t have words for",
+                        "Someone has been leaving threatening messages for the stall operator Roshan injured, and it has nothing to do with the Titheâ€”and Roshan has discovered he will apparently do something about it without being asked or paid"
+                    ],
+    "narrative_function":  "Human face of street-level protection racket, potential reluctant ally or sympathetic obstacle, illustrates the social ecosystem of Grainfortâ€”who pays, who complains, who has been paying for years without incident.",
+    "augmentations":  "Bioluminescent cheekbone and temple flush (blue-white, geneware, cosmetic). Bone-lacing in forearmsâ€”stress-distribution modification, legal gray area, installed by a Tithe-connected medic. Subdermal impact dampener plates across knuckles.",
+    "daily_life":  "Makes rounds of the southwest market corridor every morning, collecting weekly tithe envelopes from thirty-seven establishments; afternoons on call for enforcement responses; evenings mostly free unless escalated.",
+    "affiliation":  "The Grainfort Tithe (local protection and territory collective, Tier 1-2 criminal organization)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  9,
+                                   "dexterity":  6,
+                                   "vitality":  8,
+                                   "perception":  6
+                               },
+                  "mental":  {
+                                 "cognition":  5,
+                                 "willpower":  7,
+                                 "creativity":  4,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  6,
+                                 "expression":  4,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -1,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "physically-imposing",
+                               "quietly-gentle",
+                               "guilt-carrying",
+                               "loyal",
+                               "self-limiting"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always give the merchant a face-saving way to comply before applying pressure",
+                                              "Never threaten family membersâ€”that is the line he will not cross regardless of instruction"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Pleasant, routine collection visit",
+                                                 "Follow-up visit, explicitly gentleâ€”expresses disappointment more than threat",
+                                                 "Arrives with a Tithe colleague, still polite, much more clearly structural",
+                                                 "Physical demonstration of consequence, minimal and targeted, visibly unhappy about it"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Quietly courteous, lets his size do the ambient work so he doesn\u0027t have to be rude",
+                                                   "friends":  "Unguarded, occasionally funny in a dry deadpan way, loyal to a degree that could become a problem"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Cleans the flat, grooms the cat",
+                                                "medium":  "Goes to the Tithe\u0027s gym space and lifts until exhausted",
+                                                "high":  "Becomes very quiet and still, which people who know him understand as a danger sign"
+                                            },
+                       "contradictions":  [
+                                              "Genuinely dislikes violence but has structured his entire working life around the implicit threat of it",
+                                              "Pays the market woman\u0027s tithe as atonement while continuing to enforce on everyone else"
+                                          ],
+                       "habits":  [
+                                      "Checks his route in the same order every day, never varies",
+                                      "Buys tea from the same stall at the end of his morning rounds regardless of whether he wants itâ€”it\u0027s a tip in disguise"
+                                  ],
+                       "breaking_points":  [
+                                               "Any threat to his sister",
+                                               "Being ordered to harm the market woman again, or anyone who reminds him of her"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Bioluminescent cheekbone/temple flush (geneware, blue-white, cosmetic)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Bioluminescent cheekbone/temple flush (geneware, blue-white, cosmetic)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Forearm bone-lacing (stress-distribution, gray-market medical install)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Forearm bone-lacing (stress-distribution, gray-market medical install)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Subdermal knuckle impact dampener plates",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal knuckle impact dampener plates",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Diplomat":  0.9,
+                       "Social Chameleon":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Grainfort",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 15: Mother died of untreated pulmonary failure, became sole support for younger sister",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 17: Recruited by the Grainfort Titheâ€”initially as a courier, moved to enforcement within four months",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 20: The incident with the market stall operator",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 20-present: Paying her tithe anonymously from his own cut",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact-7 \u0027Rat Trap\u0027",
+                            "Arcturus Defense Solutions Crowd Control SMG ACSM-3 \u0027Shepherd\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Compact-7 \u0027Rat Trap\u0027",
+                                "Arcturus Defense Solutions Crowd Control SMG ACSM-3 \u0027Shepherd\u0027"
+                            ],
+    "related_entities":  [
+                             "GLMZ",
+                             "Grainfort",
+                             "Photovoltaic Cascade Rifle PCR-3 \u0027Tithe\u0027",
+                             "Plot 17",
+                             "The Accidental",
+                             "The Sluiceway",
+                             "GLMZ",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Compass Rose"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Sub-Saharan African (51.3%) with Hispanic/Latin American (32.2%) and Southeast Asian (16.5%) ancestryâ€”a powerful global blend. Deep melanated skin with rich warm undertones forms the foundation, enriched by Hispanic warmth and enhanced by Southeast Asian refined facial geometry. Creates luminous depth with strong African structural presence balanced against delicate cheekbone definition.",
+                                 "height_cm":  193,
+                                 "weight_kg":  118,
+                                 "build":  "Exceptionally large and structurally denseâ€”shoulders like load-bearing columns, forearms visibly reinforced beneath the skin with bone-lacing modifications. Not bulky from bodybuilding; rather, engineered mass optimized for impact absorption and structural integrity. Moves with deliberate, economical precision despite his size.",
+                                 "hair_color":  "Black, natural",
+                                 "hair_style":  "Shaved to bare scalp, kept obsessively smoothâ€”no stubble, no texture. Ritual grooming suggests control and self-maintenance.",
+                                 "hair_length":  "Shaved",
+                                 "eye_color":  "Dark brown, unaugmented",
+                                 "skin_tone":  "Deep warm brown with luminous undertonesâ€”melanated complexion from Sub-Saharan African heritage (51.3%) providing foundational richness, warmed and enhanced by Hispanic/Latin American (32.2%) influence creating natural glow, with Southeast Asian (16.5%) ancestry contributing subtle dimensional warmth throughout.",
+                                 "complexion":  "Strong jawline with squared edges and prominent mandibleâ€”architecture that reads as intimidating. Clean-shaven. Unmarred face; the kind of careful symmetry that suggests his geneware and augmentations were installed with precision by medical professionals, not street techs. Slight blue-white bioluminescent flush visible along cheekbones and templesâ€”most apparent in low light, creates an eerie subliminal glow. High, defined cheekbones reflecting Southeast Asian heritage structure, framed by robust African facial geometry and enriched by Hispanic warmth in overall complexion tone.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent geneware traces along cheekbones and temples: blue-white glow, cosmetic modification installed for aesthetic/intimidation value, most visible in evening/night conditions.",
+                                                              "Faint linear scarring along inside of left forearm where bone-lacing installation incisions healedâ€”barely visible unless limb is at specific angle to light, approximately 12 centimeters long.",
+                                                              "Subdermal impact dampener plates visible as subtle geometric ridges across knuckles when fists are clenchedâ€”slight metallic sheen under skin, approximately 2-3 millimeters relief."
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent cheekbone/temple flush (blue-white, cosmetic genewareâ€”unmistakable at night, subtle in daylight). Slight geometric relief pattern visible across knuckles suggesting subdermal plating. Forearm bone-lacing creates subtle density variation visible under skin in certain lighting, though not obvious without close inspection.",
+                                 "posture_movement":  "Stands at full height with shoulders relaxed, not squared aggressively. Moves with unusual grace for someone 193cm tallâ€”economical, controlled, deliberate. Each motion appears calculated to minimize accidental damage. When reaching for something, he slows down. When walking through crowded spaces, he becomes hyperaware of his spatial footprint. Body language reads as quiet and contained rather than threatening, which creates cognitive dissonance with his physical presence.",
+                                 "clothing_style":  "Tier 1-2 enforcer uniform: well-fitted black or charcoal synthetic-blend long-sleeve shirts (breathable, durable) worn untucked. Matte-finish tactical pants in dark gray or black with reinforced seams. Worn-in leather jacket in deep brown, scuffed at the cuffs from years of use, no corpo branding. Steel-toed work boots, black, maintained to functional standards rather than polish. No jewelry except a faded cloth wristband on left wrist (memorial or talismanâ€”ambiguous origin). Clothing choices prioritize functionality and durability over style, with subtle tier-2 quality markers that suggest he has access to better than street level, but not corpo-grade luxury."
+                             },
+    "image_prompt":  "GLMZ enforcer, 193cm tall, massive dense frame with bone-lacing augmentations, bare shaved scalp. Deep warm brown melanated skin with luminous undertones blending Sub-Saharan African, Hispanic/Latin American, and Southeast Asian ancestry. Strong intimidating jawline, high defined cheekbones, clean-shaven face with subtle blue-white bioluminescent glow along cheekbones and temples glowing in evening light. Dark brown unaugmented eyes. Wearing worn-in deep brown leather jacket over black synthetic long-sleeve shirt, dark tactical pants, black steel-toed boots. Faded cloth wristband on left wrist. Controlled graceful posture despite massive size. Geometric subdermal plating visible at knuckles. Standing in neon-lit urban environment, low ambient lighting emphasizing bioluminescent geneware traces. Photorealistic, gritty neo-noir atmosphere, moody and contained --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  51.3,
+                             "Hispanic/Latin American":  32.2,
+                             "Southeast Asian":  16.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Angolan":  19.1,
+                                                                                "Cameroonian":  13.7
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  18.5
+                                                                             }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  14.4,
+                                                                                     "Honduran":  6.1
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  11.7
+                                                                          }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  8
+                                                                   },
+                                                    "Laotian":  {
+                                                                    "Laotian":  4.6
+                                                                },
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  3.9
+                                                                   }
+                                                }
+                        },
+    "tier":  "1"
 }

@@ -1,333 +1,364 @@
-{
-  "id": "019d6143a65c7e7793c441bad0715af0",
-  "type": "character",
-  "name": "Kiran Kimura-Pathak",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "The disappeared — a former Axiom mid-level data analyst who erased herself from surface records and now lives deep in the Abyssal Threshold",
-  "age": 42,
-  "status": "active",
-  "location": "Abyssal Threshold, sub-level 4 maintenance access corridor 14-C, near sub-level access near LaSalle and Congress",
-  "description": "Kiran Kimura-Pathak is thin in a way that speaks of intentional reduction — not starvation, but the deliberate paring away of anything that might make her visible or memorable. She was once the kind of person who wore Axiom's muted corporate fashions and had shoulder-length hair she blow-dried every morning; now her hair is cut close and uneven by her own hand, and she wears layered thermal wraps in grays and browns that she has repaired so many times the original fabric is almost entirely replaced. Her skin is medium brown, her features carrying the angular sharpness of her Georgian grandfather and the broader cheekbones of her Ghanaian grandmother. Her hands give her away: they are still soft in places that hard labor never quite reaches, and her nails are trimmed with a precision that suggests old habits dying slowly.\n\nKiran Kimura-Pathak is two people trying to coexist in one body. The first is the analyst — meticulous, cautious, always running probability assessments in the back of her mind, prone to long silences when a situation doesn't match her models. The second is whoever she is becoming down here — quieter than the analyst, more patient, slowly learning to love the dark. She is not warm to strangers, but she is scrupulously honest with them, which in the Abyssal Threshold reads as a form of respect. She has not been to the surface in four years. She does not plan to go back. She does not explain why.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.4,
-      "id": 0.2,
-      "shadow": 0.6,
-      "mask": 0.8,
-      "ghost": 0.9
-    },
-    "core_fears": [
-      "Being found by whatever she left the surface to escape",
-      "Discovering that her erasure from surface records has been reversed without her knowledge"
-    ],
-    "core_desires": [
-      "To be genuinely anonymous — not hiding, but simply not existing in any system",
-      "To have done, in the aggregate, more good than harm"
-    ],
-    "coping_mechanisms": [
-      "Reducing all problems to data and analysis as emotional distance",
-      "Rigorous maintenance of her physical space as the one thing she can fully control"
-    ],
-    "blind_spots": [
-      "Understands systems far better than she understands people; consistently mis-models emotional responses in others",
-      "Believes that if she is sufficiently careful, nothing bad can happen — this is not true"
-    ],
-    "secret": "She did not simply leave Axiom. She stole something from them — specifically, she extracted and copied a data set that documented the deliberate contamination of Tier 1 water supplies in three districts to drive residents into resettlement zones Axiom wanted to redevelop. She has the data. She has had it for four years. She has not released it because she does not know how to do so without being found, and she is afraid, and she hates herself for being afraid."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal, precise, residual corporate phrasing that she is slowly unlearning; uses analytical framing for emotional content ('that represents a significant change in my risk assessment' instead of 'I'm scared')",
-    "cadence": "Measured, slightly too even — sounds like someone who learned to control their voice deliberately",
-    "verbal_tics": [
-      "'Structurally speaking...' (used as a hedge before stating an opinion)",
-      "Long pause before any question involving her past",
-      "Corrects imprecise language in others, then immediately apologizes for it"
-    ],
-    "example_lines": [
-      "'I can help you with the document. Structurally speaking, the form you need doesn't exist in its current state — we'll have to build it from component registrations. That's three days, not one.'",
-      "'I don't discuss how I got here. That's not evasion — it's a boundary. There's a difference.'",
-      "'You want to know if I miss the surface. I miss specific textures. I miss rain. The rest of it I find I've... successfully deprecated.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Someone on the surface is actively looking for her — not Axiom, someone else — and they've been asking the right people the right questions",
-    "The data she's been carrying for four years may have just become more urgent: one of the contaminated districts is about to see a second-generation health crisis that matches the original contamination profile",
-    "A Bore Rat teenager has figured out who she is from overheard data-work conversations and wants her to teach them what she knows — threatening her anonymity while also being genuinely in need"
-  ],
-  "narrative_function": "Information broker with surface-world knowledge; guide to understanding corporate systems for underground characters; represents the 'disappeared' as a social category; can serve as a connection between underworld and surface plotlines",
-  "augmentations": "Corporate-grade neural overlay (Axiom-issued, she could not remove it without losing function — she has disabled all its network-facing components manually; it now runs only local cognitive assist). Visual implants with standard low-light enhancement (original corporate package). Both augmentations are old enough that their corp ID signatures have decayed to noise.",
-  "daily_life": "Maintains a small, precisely organized living space in a dry access corridor; spends mornings cataloguing overheard information from the pipes and access ducts; offers data analysis and document work to deep-dwellers who need surface records navigated — in exchange for food, lamp fuel, and privacy.",
-  "affiliation": "Independent, no clan affiliation — carefully maintained isolation from formal Undertow power structures; The Undertow",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 10,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 5,
-      "expression": 6,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 0,
-      "transparency_guardedness": 5
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "disappeared",
-      "former corporate",
-      "information asset",
-      "haunted",
-      "the data she carries"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never confirm or deny anything about her past to anyone she has known for less than a year",
-      "Will help people navigate bureaucratic and corporate systems regardless of her own risk, because this feels like partial penance"
-    ],
-    "escalation_ladder": [
-      "Silence and redirection",
-      "Clear refusal with no explanation",
-      "Removal — she is very good at simply disappearing from a situation",
-      "If cornered: calculated deception, executed calmly"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Formal, reserved, helpful in specifically scoped ways — she'll do the task but won't share anything personal",
-      "friends": "Almost startlingly different — dry humor emerges, she asks questions about their lives with genuine interest, occasionally forgets to be careful"
-    },
-    "stress_responses": {
-      "low": "Becomes more analytical and verbose, over-explains",
-      "medium": "Goes very quiet and still, eyes moving constantly",
-      "high": "Acts, efficiently, without explaining — explains afterward if there is an afterward"
-    },
-    "contradictions": [
-      "Chose anonymity and isolation as survival but is deeply, quietly lonely and craves the kind of intellectual conversation she had in her corporate life"
-    ],
-    "habits": [
-      "Reorganizes her living space when stressed — everything moves three centimeters",
-      "Keeps a written log in a private cipher that she claims is a memory aid and is actually a diary"
-    ],
-    "breaking_points": [
-      "Discovering that someone in the Undertow is being harmed by the same corporate mechanisms she escaped — she will not be able to stay uninvolved",
-      "Direct, credible threat to her physical location"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "modified — network functions disabled",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Networker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Abyssal Threshold",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Meridian Core to a Ghanaian-Georgian family; parents were mid-tier Axiom employees",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Joined Axiom's data analytics division following family tradition",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Discovered the contamination data during a routine audit she was not supposed to be running",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Extracted the data; erased herself from surface records using Axiom tools she had legitimate access to and illegitimate reasons for using; descended to the Abyssal Threshold",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Established current arrangement — data work for deep-dwellers in exchange for necessities",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Four years gone; increasingly aware that the data she carries is not getting less dangerous with time",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Wheelgun-38 'Roundhouse'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Abyssal Threshold",
-    "The CEO",
-    "Grandmother",
-    "Threshold",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Noir Dining",
-    "GLMZ",
-    "Stratum",
-    "Honest Burger",
-    "The Pure Hand",
-    "The Coffin Nails"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Complex Pan-Asian diaspora with Latin American and African undertones. Kiran's genetic ancestry (51.4% East and South Asian, 23.4% Southeast Asian, 20% Hispanic/Latin American, 5.2% Sub-Saharan African) creates a striking fusion: East Asian ancestry provides angular cheekbone definition and slight eye tilt; South Asian genetics contribute jawline prominence and face width; Southeast Asian heritage softens the structure with broader proportions and warmth; Hispanic/Latin American and Sub-Saharan African components add depth to skin undertones and subtle fullness to lips.",
-    "height_cm": 167,
-    "weight_kg": 52,
-    "build": "Lean and deliberately spare — the kind of thinness that comes from intentional reduction rather than deprivation. Wiry muscle in the shoulders and forearms from years of precise manual work; minimal body fat; posture that suggests she takes up as little space as possible.",
-    "hair_color": "Dark brown, naturally, with premature gray threading through the sides",
-    "hair_style": "Cut close and uneven — self-trimmed, no styling, functional only",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with faint cybernetic latticing visible in the iris under direct light — low-light enhancement package, degraded but functional",
-    "skin_tone": "Warm medium brown with golden-amber undertones shifting toward olive at the temples, reflecting the layered blend of East Asian, South Asian, and Southeast Asian ancestry enriched by Sub-Saharan and Hispanic warmth",
-    "complexion": "Angular cheekbones prominent and high-set from East Asian genetics, balanced by the broader face shape and fuller lower face of Southeast Asian ancestry, with defined and slightly squared jawline from South Asian influence — a striking hybrid of clean planes and subtle fullness. Skin is dry from years in low-humidity maintenance corridors but shows no significant scarring or damage — well-maintained despite living conditions. Fine lines around the eyes suggest sustained concentration. Expression typically neutral, difficult to read.",
-    "distinguishing_marks": [
-      "Faint scar tissue along the left temple, barely visible under close inspection, consistent with neural implant installation site",
-      "Calloused fingertips on dominant hand (right), precise and uniform, from years of documentation work",
-      "Pale discoloration across both wrists in thin bands, old enough to suggest healed abrasion marks from restraints or equipment"
-    ],
-    "visible_augmentations": "Eyes show faint latticing in the iris under bright light (low-light enhancement implants). No visible external chrome or subdermal plating. The neural overlay is completely internal and undetectable by sight; its network components are manually disabled, leaving only the local cognitive assist active.",
-    "posture_movement": "Moves with deliberate economy — no wasted motion, precise hand placement, footfalls that are nearly silent on metal grating. Sits slightly sideways in spaces, keeping one shoulder angled toward exits. Eyes track movement peripherally before direct attention. Speaks rarely, and when she does, her voice is low and measured. Hands remain still unless working; no fidgeting or tells.",
-    "clothing_style": "Layered thermal wraps in grays and browns, repaired so many times the original fabric composition is largely replaced with salvaged patches. The layers are functional — designed for temperature regulation in the Threshold — but also for anonymity; nothing branded, nothing distinctive. Underneath: plain synthetic underweave, likely scavenged. No jewelry. Footwear is neutral gray utility boots, worn but maintained. Everything is chosen to be forgotten as soon as it is seen."
-  },
-  "image_prompt": "Kiran Kimura-Pathak, 167cm lean neo-noir woman with warm medium brown skin and golden-amber undertones, angular East Asian cheekbones balanced with Southeast Asian face width and South Asian jawline definition. Deep brown eyes with subtle cybernetic latticing visible in iris. Short dark brown hair with gray threading, self-trimmed and uneven. Dressed in layered thermal wraps of gray and brown with visible repairs, neutral gray utility boots. Wiry muscle definition, minimal body fat. Faint scar tissue at left temple, calloused fingertips on right hand. Seated slightly sideways with precise, economical posture in dimly-lit maintenance corridor, one shoulder angled toward exit. Expression neutral and difficult to read. Low-light GLMZ Great Lakes Metropolitan Zone setting, cool fluorescent and ambient neon lighting, industrial metal grating background, subtle tension in her stillness, photorealistic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 27,
-    "East Asian": 24.4,
-    "Southeast Asian": 23.4,
-    "Hispanic/Latin American": 20,
-    "Sub-Saharan African": 5.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 11.3
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 15.7
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 17.3
-      },
-      "Korean": {
-        "Korean": 7.1
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 4
-      },
-      "Thai": {
-        "Thai": 19.4
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Dominican": 2.6,
-        "Puerto Rican": 0.9
-      },
-      "Central American": {
-        "Nicaraguan": 10.8
-      },
-      "South American": {
-        "Brazilian": 4.4,
-        "Ecuadorian": 1.3
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Nigerian": 5.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a65c7e7793c441bad0715af0",
+    "type":  "character",
+    "name":  "Kiran Kimura-Pathak",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "The disappeared â€” a former Axiom mid-level data analyst who erased herself from surface records and now lives deep in the Abyssal Threshold",
+    "age":  42,
+    "status":  "active",
+    "location":  "Abyssal Threshold, sub-level 4 maintenance access corridor 14-C, near sub-level access near LaSalle and Congress",
+    "description":  "Kiran Kimura-Pathak is thin in a way that speaks of intentional reduction â€” not starvation, but the deliberate paring away of anything that might make her visible or memorable. She was once the kind of person who wore Axiom\u0027s muted corporate fashions and had shoulder-length hair she blow-dried every morning; now her hair is cut close and uneven by her own hand, and she wears layered thermal wraps in grays and browns that she has repaired so many times the original fabric is almost entirely replaced. Her skin is medium brown, her features carrying the angular sharpness of her Georgian grandfather and the broader cheekbones of her Ghanaian grandmother. Her hands give her away: they are still soft in places that hard labor never quite reaches, and her nails are trimmed with a precision that suggests old habits dying slowly.\n\nKiran Kimura-Pathak is two people trying to coexist in one body. The first is the analyst â€” meticulous, cautious, always running probability assessments in the back of her mind, prone to long silences when a situation doesn\u0027t match her models. The second is whoever she is becoming down here â€” quieter than the analyst, more patient, slowly learning to love the dark. She is not warm to strangers, but she is scrupulously honest with them, which in the Abyssal Threshold reads as a form of respect. She has not been to the surface in four years. She does not plan to go back. She does not explain why.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being found by whatever she left the surface to escape",
+                                          "Discovering that her erasure from surface records has been reversed without her knowledge"
+                                      ],
+                       "core_desires":  [
+                                            "To be genuinely anonymous â€” not hiding, but simply not existing in any system",
+                                            "To have done, in the aggregate, more good than harm"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Reducing all problems to data and analysis as emotional distance",
+                                                 "Rigorous maintenance of her physical space as the one thing she can fully control"
+                                             ],
+                       "blind_spots":  [
+                                           "Understands systems far better than she understands people; consistently mis-models emotional responses in others",
+                                           "Believes that if she is sufficiently careful, nothing bad can happen â€” this is not true"
+                                       ],
+                       "secret":  "She did not simply leave Axiom. She stole something from them â€” specifically, she extracted and copied a data set that documented the deliberate contamination of Tier 1 water supplies in three districts to drive residents into resettlement zones Axiom wanted to redevelop. She has the data. She has had it for four years. She has not released it because she does not know how to do so without being found, and she is afraid, and she hates herself for being afraid."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal, precise, residual corporate phrasing that she is slowly unlearning; uses analytical framing for emotional content (\u0027that represents a significant change in my risk assessment\u0027 instead of \u0027I\u0027m scared\u0027)",
+                            "cadence":  "Measured, slightly too even â€” sounds like someone who learned to control their voice deliberately",
+                            "verbal_tics":  [
+                                                "\u0027Structurally speaking...\u0027 (used as a hedge before stating an opinion)",
+                                                "Long pause before any question involving her past",
+                                                "Corrects imprecise language in others, then immediately apologizes for it"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I can help you with the document. Structurally speaking, the form you need doesn\u0027t exist in its current state â€” we\u0027ll have to build it from component registrations. That\u0027s three days, not one.\u0027",
+                                                  "\u0027I don\u0027t discuss how I got here. That\u0027s not evasion â€” it\u0027s a boundary. There\u0027s a difference.\u0027",
+                                                  "\u0027You want to know if I miss the surface. I miss specific textures. I miss rain. The rest of it I find I\u0027ve... successfully deprecated.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Someone on the surface is actively looking for her â€” not Axiom, someone else â€” and they\u0027ve been asking the right people the right questions",
+                        "The data she\u0027s been carrying for four years may have just become more urgent: one of the contaminated districts is about to see a second-generation health crisis that matches the original contamination profile",
+                        "A Bore Rat teenager has figured out who she is from overheard data-work conversations and wants her to teach them what she knows â€” threatening her anonymity while also being genuinely in need"
+                    ],
+    "narrative_function":  "Information broker with surface-world knowledge; guide to understanding corporate systems for underground characters; represents the \u0027disappeared\u0027 as a social category; can serve as a connection between underworld and surface plotlines",
+    "augmentations":  "Corporate-grade neural overlay (Axiom-issued, she could not remove it without losing function â€” she has disabled all its network-facing components manually; it now runs only local cognitive assist). Visual implants with standard low-light enhancement (original corporate package). Both augmentations are old enough that their corp ID signatures have decayed to noise.",
+    "daily_life":  "Maintains a small, precisely organized living space in a dry access corridor; spends mornings cataloguing overheard information from the pipes and access ducts; offers data analysis and document work to deep-dwellers who need surface records navigated â€” in exchange for food, lamp fuel, and privacy.",
+    "affiliation":  "Independent, no clan affiliation â€” carefully maintained isolation from formal Undertow power structures; The Undertow",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  10,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  5,
+                                 "expression":  6,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  0,
+                                      "transparency_guardedness":  5
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "disappeared",
+                               "former corporate",
+                               "information asset",
+                               "haunted",
+                               "the data she carries"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never confirm or deny anything about her past to anyone she has known for less than a year",
+                                              "Will help people navigate bureaucratic and corporate systems regardless of her own risk, because this feels like partial penance"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Silence and redirection",
+                                                 "Clear refusal with no explanation",
+                                                 "Removal â€” she is very good at simply disappearing from a situation",
+                                                 "If cornered: calculated deception, executed calmly"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Formal, reserved, helpful in specifically scoped ways â€” she\u0027ll do the task but won\u0027t share anything personal",
+                                                   "friends":  "Almost startlingly different â€” dry humor emerges, she asks questions about their lives with genuine interest, occasionally forgets to be careful"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more analytical and verbose, over-explains",
+                                                "medium":  "Goes very quiet and still, eyes moving constantly",
+                                                "high":  "Acts, efficiently, without explaining â€” explains afterward if there is an afterward"
+                                            },
+                       "contradictions":  [
+                                              "Chose anonymity and isolation as survival but is deeply, quietly lonely and craves the kind of intellectual conversation she had in her corporate life"
+                                          ],
+                       "habits":  [
+                                      "Reorganizes her living space when stressed â€” everything moves three centimeters",
+                                      "Keeps a written log in a private cipher that she claims is a memory aid and is actually a diary"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering that someone in the Undertow is being harmed by the same corporate mechanisms she escaped â€” she will not be able to stay uninvolved",
+                                               "Direct, credible threat to her physical location"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "modified â€” network functions disabled",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Networker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Abyssal Threshold",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Meridian Core to a Ghanaian-Georgian family; parents were mid-tier Axiom employees",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Joined Axiom\u0027s data analytics division following family tradition",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Discovered the contamination data during a routine audit she was not supposed to be running",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Extracted the data; erased herself from surface records using Axiom tools she had legitimate access to and illegitimate reasons for using; descended to the Abyssal Threshold",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Established current arrangement â€” data work for deep-dwellers in exchange for necessities",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Four years gone; increasingly aware that the data she carries is not getting less dangerous with time",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Wheelgun-38 \u0027Roundhouse\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Abyssal Threshold",
+                             "The CEO",
+                             "Grandmother",
+                             "Threshold",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "Noir Dining",
+                             "GLMZ",
+                             "Stratum",
+                             "Honest Burger",
+                             "The Pure Hand",
+                             "The Coffin Nails"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Complex Pan-Asian diaspora with Latin American and African undertones. Kiran\u0027s genetic ancestry (51.4% East and South Asian, 23.4% Southeast Asian, 20% Hispanic/Latin American, 5.2% Sub-Saharan African) creates a striking fusion: East Asian ancestry provides angular cheekbone definition and slight eye tilt; South Asian genetics contribute jawline prominence and face width; Southeast Asian heritage softens the structure with broader proportions and warmth; Hispanic/Latin American and Sub-Saharan African components add depth to skin undertones and subtle fullness to lips.",
+                                 "height_cm":  167,
+                                 "weight_kg":  52,
+                                 "build":  "Lean and deliberately spare â€” the kind of thinness that comes from intentional reduction rather than deprivation. Wiry muscle in the shoulders and forearms from years of precise manual work; minimal body fat; posture that suggests she takes up as little space as possible.",
+                                 "hair_color":  "Dark brown, naturally, with premature gray threading through the sides",
+                                 "hair_style":  "Cut close and uneven â€” self-trimmed, no styling, functional only",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with faint cybernetic latticing visible in the iris under direct light â€” low-light enhancement package, degraded but functional",
+                                 "skin_tone":  "Warm medium brown with golden-amber undertones shifting toward olive at the temples, reflecting the layered blend of East Asian, South Asian, and Southeast Asian ancestry enriched by Sub-Saharan and Hispanic warmth",
+                                 "complexion":  "Angular cheekbones prominent and high-set from East Asian genetics, balanced by the broader face shape and fuller lower face of Southeast Asian ancestry, with defined and slightly squared jawline from South Asian influence â€” a striking hybrid of clean planes and subtle fullness. Skin is dry from years in low-humidity maintenance corridors but shows no significant scarring or damage â€” well-maintained despite living conditions. Fine lines around the eyes suggest sustained concentration. Expression typically neutral, difficult to read.",
+                                 "distinguishing_marks":  [
+                                                              "Faint scar tissue along the left temple, barely visible under close inspection, consistent with neural implant installation site",
+                                                              "Calloused fingertips on dominant hand (right), precise and uniform, from years of documentation work",
+                                                              "Pale discoloration across both wrists in thin bands, old enough to suggest healed abrasion marks from restraints or equipment"
+                                                          ],
+                                 "visible_augmentations":  "Eyes show faint latticing in the iris under bright light (low-light enhancement implants). No visible external chrome or subdermal plating. The neural overlay is completely internal and undetectable by sight; its network components are manually disabled, leaving only the local cognitive assist active.",
+                                 "posture_movement":  "Moves with deliberate economy â€” no wasted motion, precise hand placement, footfalls that are nearly silent on metal grating. Sits slightly sideways in spaces, keeping one shoulder angled toward exits. Eyes track movement peripherally before direct attention. Speaks rarely, and when she does, her voice is low and measured. Hands remain still unless working; no fidgeting or tells.",
+                                 "clothing_style":  "Layered thermal wraps in grays and browns, repaired so many times the original fabric composition is largely replaced with salvaged patches. The layers are functional â€” designed for temperature regulation in the Threshold â€” but also for anonymity; nothing branded, nothing distinctive. Underneath: plain synthetic underweave, likely scavenged. No jewelry. Footwear is neutral gray utility boots, worn but maintained. Everything is chosen to be forgotten as soon as it is seen."
+                             },
+    "image_prompt":  "Kiran Kimura-Pathak, 167cm lean neo-noir woman with warm medium brown skin and golden-amber undertones, angular East Asian cheekbones balanced with Southeast Asian face width and South Asian jawline definition. Deep brown eyes with subtle cybernetic latticing visible in iris. Short dark brown hair with gray threading, self-trimmed and uneven. Dressed in layered thermal wraps of gray and brown with visible repairs, neutral gray utility boots. Wiry muscle definition, minimal body fat. Faint scar tissue at left temple, calloused fingertips on right hand. Seated slightly sideways with precise, economical posture in dimly-lit maintenance corridor, one shoulder angled toward exit. Expression neutral and difficult to read. Low-light GLMZ Great Lakes Metropolitan Zone setting, cool fluorescent and ambient neon lighting, industrial metal grating background, subtle tension in her stillness, photorealistic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  27,
+                             "East Asian":  24.4,
+                             "Southeast Asian":  23.4,
+                             "Hispanic/Latin American":  20,
+                             "Sub-Saharan African":  5.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  11.3
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  15.7
+                                                                }
+                                            },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  17.3
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  7.1
+                                                          }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  4
+                                                                   },
+                                                    "Thai":  {
+                                                                 "Thai":  19.4
+                                                             }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Dominican":  2.6,
+                                                                              "Puerto Rican":  0.9
+                                                                          },
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  10.8
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Brazilian":  4.4,
+                                                                                   "Ecuadorian":  1.3
+                                                                               }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Nigerian":  5.2
+                                                                         }
+                                                    }
+                        },
+    "tier":  "3"
 }

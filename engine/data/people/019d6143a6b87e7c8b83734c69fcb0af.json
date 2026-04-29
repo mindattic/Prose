@@ -1,315 +1,344 @@
-{
-  "id": "019d6143a6b87e7c8b83734c69fcb0af",
-  "type": "character",
-  "name": "Fabiana Mwangi",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Labor union shop steward and anti-corporate agitator",
-  "age": 26,
-  "status": "active",
-  "location": "Hamtramck Enclave, near Halsted and Division",
-  "description": "Fabiana Mwangi is a young man built like a question mark — tall, slightly hunched forward, always leaning into whatever conversation he's in. His Yoruba-Turkish-Māori heritage has given him brown skin, broad features, and a jaw that looks like it was made to set stubbornly, which it often is. His arms are sleeved in geneware bioluminescent patterns that trace his capillary structures in faint blue-white under his skin — a cosmetic mod he got at nineteen with money saved from three months of double shifts. When he's agitated, which is often, the patterns pulse more visibly. His hair is natural and large and rarely managed. He has a gap between his front teeth that gives his wide smile a slightly reckless quality.\n\nFabiana Mwangi is a third-generation Hamtramck line worker who found his purpose early and loud. He was elected shop steward of Ferrogate Transit's maintenance division at twenty-three, the youngest in the union's recorded history, after organizing a sick-out that stopped maintenance operations across six districts. He is brash, physically energetic, capable of genuine strategic thinking that he often undermines with impatience, and beloved by the workers on his floor in a way that makes his supervisors nervous. He has been formally disciplined four times and each time the union has gotten him reinstated.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.6,
-      "id": 0.8,
-      "shadow": 0.6,
-      "mask": 0.2,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Becoming the kind of person who compromises so many times they no longer know what they stood for",
-      "Watching someone get hurt in an action he organized badly"
-    ],
-    "core_desires": [
-      "A union contract that actually protects the workers he represents",
-      "To be taken seriously — not liked, but taken seriously — by people with power"
-    ],
-    "coping_mechanisms": [
-      "Physical work — when stressed he volunteers for the hardest manual tasks on shift",
-      "The crowd energy of collective action as a genuine emotional release"
-    ],
-    "blind_spots": [
-      "His visibility makes him an obvious target for corporate retaliation that falls on less visible workers around him",
-      "He reads reluctance to escalate as cowardice rather than as legitimate strategic disagreement"
-    ],
-    "secret": "During last year's sick-out, he fabricated a safety report to give the action a legally protected pretext. The report isn't entirely false — there are genuine safety concerns — but the specific incident he cited didn't happen the way he described it. If this comes out, it would invalidate the sick-out's legal protection retroactively and expose the union to a liability suit."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast and colloquial, Hamtramck working-class dialect with Yoruba phrases when emotional. Excellent at rally speech — short declarative sentences that land like hammers. Less good at nuance in private conversation.",
-    "cadence": "Quick, accelerating when excited, with a rhythm that builds toward emphasis. Tends to repeat key phrases for effect.",
-    "verbal_tics": [
-      "'You understand what I'm saying?' after key points",
-      "Switches to Yoruba mid-sentence when frustrated — usually just one or two words",
-      "'Real talk' as a signal he's about to say something he actually believes"
-    ],
-    "example_lines": [
-      "'They cut the safety inspection cycle from quarterly to annual and called it a budget optimization. Six people I know work that line. Real talk — that's not optimization, that's a wager on our lives.'",
-      "'I hear you on the strategy, I do. But at some point you gotta decide whether you're building toward action or building toward a very detailed record of why you couldn't act. You understand what I'm saying?'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Ferrogate has brought in an outside consulting firm — widely understood to be a union-busting operation — and Rotimi needs someone to dig into their client history before they get fully embedded.",
-    "The fabricated safety report is about to surface in a corporate legal filing; Rotimi needs help either burying it or getting out ahead of it in a way that doesn't destroy the union's credibility."
-  ],
-  "narrative_function": "Street-level labor conflict resource. Can pull players into union politics, corporate retaliation storylines, or the specific world of transit infrastructure. His impulsiveness creates drama; his genuine capability creates solutions.",
-  "augmentations": "Geneware bioluminescent capillary patterns, arms and upper chest. A cheap impact-dampening subdermal layer on the forearms — a common workers' modification for people doing heavy maintenance work.",
-  "daily_life": "Maintenance shift at Ferrogate from 06:00-14:00, union work and agitation from 14:00 until whenever, which is usually late. Spends weekends at community organizing events and, when possible, at the ELF shrine near the depot that the maintenance workers have adopted.",
-  "affiliation": "Ferrogate Transit Workers' Union, Local 7; informal ties to anti-corporate agitator networks in the Enclave",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 7,
-      "dexterity": 6,
-      "vitality": 8,
-      "perception": 6
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 6,
-      "expression": 9,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -4,
-      "assertion_deference": 4,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "union organizer",
-      "shop steward",
-      "agitator",
-      "labor",
-      "impulsive idealist",
-      "quietly compromised",
-      "crowd energy"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Protect the workers on his floor first, ideological purity second",
-      "Never cross a picket line, never — this is not negotiable under any framing"
-    ],
-    "escalation_ladder": [
-      "Formal grievance filing through proper union channels",
-      "Informal collective pressure — work slowdowns, visible solidarity actions",
-      "Organized direct action — sick-outs, work stoppages",
-      "Whatever it takes — he tries not to think too hard about what this means"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Evaluates quickly — are you labor or management or trying not to answer. Warm if you pass the test, guarded if you don't.",
-      "friends": "Loud and generous and occasionally exhausting. Shows up. Will absolutely argue with you."
-    },
-    "stress_responses": {
-      "low": "Gets louder and moves faster",
-      "medium": "Takes on extra physical work on shift, doesn't sleep enough",
-      "high": "Makes a bold decision without consulting anyone and deals with the consequences"
-    },
-    "contradictions": [
-      "Committed to collective action but often makes unilateral decisions under pressure",
-      "Hates dishonesty in management but used a fabricated report himself"
-    ],
-    "habits": [
-      "Checks the union's incident log every morning before shift",
-      "Keeps a running mental count of how many days since the last workplace injury on his floor",
-      "Leaves offerings at the depot ELF shrine before major actions — 'for luck, not religion, but also maybe religion'"
-    ],
-    "breaking_points": [
-      "A worker on his floor seriously injured due to conditions he flagged and was ignored on",
-      "Public proof that a union ally has been informing to management"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9,
-    "People Pleaser": 0.9,
-    "Con Artist": 0.9,
-    "Grifter": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Hamtramck Enclave; grandfather was a founding member of the original Ferrogate Transit Workers' Union",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Begins work at Ferrogate as a maintenance technician at age 18, following family tradition",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Gets the bioluminescent geneware mod — first significant personal expenditure of his life",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Organizes the sick-out using a fabricated safety report as legal pretext; action succeeds; elected shop steward",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Fourth formal disciplinary action — reinstated by the union after a three-week fight",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Hamtramck Enclave",
-    "The Heritage Vault",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Lazarus IDP-1 'Teeth'"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Sub-Saharan African dominant (69.7%) with significant East Asian ancestry (26.1%), complemented by minor Middle Eastern and South Asian components. The combination creates rich deep brown skin with warm undertones and a subtle golden luminosity from East Asian heritage. Facial structure reflects strong Sub-Saharan African ancestry with prominent, sculpted cheekbones and defined jaw, refined by East Asian influences visible in the subtle almond shape of the eyes and refined bone structure tapering toward the chin. The bridge of the nose is broad and strong, while the eye set and brow structure carry East Asian characteristics. The result is striking and distinctive—a face that commands attention through its balanced fusion of ancestral features.",
-    "height_cm": 188,
-    "weight_kg": 76,
-    "build": "Tall and lean with a slight forward stoop, as if perpetually leaning into confrontation. Broad shoulders that taper to a wiry frame built for endurance rather than bulk. Arms corded with lean muscle from years of maintenance work.",
-    "hair_color": "Natural dark brown, almost black",
-    "hair_style": "Voluminous, natural texture, frequently unkempt and unstyled — grows outward rather than down",
-    "hair_length": "Medium, approximately 12-15cm",
-    "eye_color": "Dark brown with subtle warmth, characteristic of Sub-Saharan and East Asian heritage blend",
-    "skin_tone": "Deep warm brown with rich golden undertones reflecting the fusion of Sub-Saharan African and East Asian ancestry. Skin appears sun-weathered from outdoor industrial work, with an underlying luminosity from the heritage blend.",
-    "complexion": "Strong, sculpted facial structure with high, pronounced cheekbones and defined jaw reflecting Sub-Saharan African heritage, refined by East Asian bone structure subtly visible in the almond eye shape and graceful facial tapering. Nose is broad-bridged and strong. Wide smile with a visible gap between upper front teeth giving an expression of reckless confidence. Skin is clear and unlined, with the worn, sun-exposed quality of someone who works outdoors in industrial settings. Minimal grooming — practical rather than aesthetic.",
-    "distinguishing_marks": [
-      "Bioluminescent geneware patterns tracing capillary structures across both forearms and upper chest in faint blue-white, pulsing visibly when agitated",
-      "Impact-resistant subdermal scarring visible along both forearms as slightly raised, pale streaking beneath the geneware patterns"
-    ],
-    "visible_augmentations": "Bioluminescent capillary mapping on forearms and chest, most visible when skin is bare or under thin fabric. The patterns glow softly under clothing. Forearm subdermal reinforcement creates subtle texture variation under the skin. No chrome or obvious cybernetic augmentation — all modifications are biological or subcutaneous.",
-    "posture_movement": "Hunched slightly forward, shoulders rounded, as if permanently braced for argument or action. Moves with restless physical energy — taps fingers, shifts weight, rarely still. Gestures are broad and emphatic. Eye contact is direct and challenging.",
-    "clothing_style": "Tier 3-4 working class. Favors utilitarian union-branded workwear even off-shift — Ferrogate Transit maintenance coveralls modified with rolled sleeves to display the bioluminescent patterns. Off-duty: worn union t-shirts, patched cargo pants in dark colors, steel-toed boots scuffed from depot work. Occasionally wears a faded Ferrogate Transit shop steward armband even outside work. No luxury items. Accessories limited to a battered union card and a small ELF shrine charm worn on a cord around his neck."
-  },
-  "image_prompt": "Fabiana Mwangi, 188cm tall lean-muscled transit worker with deep warm brown skin glowing faintly with golden undertones, prominent sculpted cheekbones and strong jaw refined by East Asian bone structure, almond-shaped dark brown eyes with direct challenging gaze, voluminous unstyled dark brown natural hair medium length. Bioluminescent blue-white capillary patterns pulsing across forearms and chest visible beneath rolled-sleeve Ferrogate Transit maintenance coveralls, subdermal scarring streaking forearms. Forward-hunched posture with restless energy, gap-toothed confident smile. Industrial GLMZ Great Lakes Metropolitan Zone, dim neon warehouse lighting casting cool shadows across his augmented frame, union charm visible on chest cord, worn steel-toed boots planted firmly on grimy depot floor, hands gesturing emphatically. Photorealistic, moody, 35mm film grain, neo-noir atmosphere. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 69.7,
-    "East Asian": 26.1,
-    "Middle Eastern": 2.2,
-    "South Asian": 2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Botswanan": 17.5,
-        "Zimbabwean": 21.9
-      },
-      "East African": {
-        "Somali": 30.3
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 26.1
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 0.4
-      },
-      "Arab Levantine": {
-        "Syrian": 1.4
-      },
-      "Arab Gulf": {
-        "Kuwaiti": 0.1,
-        "Yemeni": 0.3
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 1
-      },
-      "Pakistani": {
-        "Baloch": 0.8,
-        "Punjabi Pakistani": 0.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6b87e7c8b83734c69fcb0af",
+    "type":  "character",
+    "name":  "Fabiana Mwangi",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Labor union shop steward and anti-corporate agitator",
+    "age":  26,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, near Halsted and Division",
+    "description":  "Fabiana Mwangi is a young man built like a question mark â€” tall, slightly hunched forward, always leaning into whatever conversation he\u0027s in. His Yoruba-Turkish-MÄori heritage has given him brown skin, broad features, and a jaw that looks like it was made to set stubbornly, which it often is. His arms are sleeved in geneware bioluminescent patterns that trace his capillary structures in faint blue-white under his skin â€” a cosmetic mod he got at nineteen with money saved from three months of double shifts. When he\u0027s agitated, which is often, the patterns pulse more visibly. His hair is natural and large and rarely managed. He has a gap between his front teeth that gives his wide smile a slightly reckless quality.\n\nFabiana Mwangi is a third-generation Hamtramck line worker who found his purpose early and loud. He was elected shop steward of Ferrogate Transit\u0027s maintenance division at twenty-three, the youngest in the union\u0027s recorded history, after organizing a sick-out that stopped maintenance operations across six districts. He is brash, physically energetic, capable of genuine strategic thinking that he often undermines with impatience, and beloved by the workers on his floor in a way that makes his supervisors nervous. He has been formally disciplined four times and each time the union has gotten him reinstated.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming the kind of person who compromises so many times they no longer know what they stood for",
+                                          "Watching someone get hurt in an action he organized badly"
+                                      ],
+                       "core_desires":  [
+                                            "A union contract that actually protects the workers he represents",
+                                            "To be taken seriously â€” not liked, but taken seriously â€” by people with power"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Physical work â€” when stressed he volunteers for the hardest manual tasks on shift",
+                                                 "The crowd energy of collective action as a genuine emotional release"
+                                             ],
+                       "blind_spots":  [
+                                           "His visibility makes him an obvious target for corporate retaliation that falls on less visible workers around him",
+                                           "He reads reluctance to escalate as cowardice rather than as legitimate strategic disagreement"
+                                       ],
+                       "secret":  "During last year\u0027s sick-out, he fabricated a safety report to give the action a legally protected pretext. The report isn\u0027t entirely false â€” there are genuine safety concerns â€” but the specific incident he cited didn\u0027t happen the way he described it. If this comes out, it would invalidate the sick-out\u0027s legal protection retroactively and expose the union to a liability suit."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast and colloquial, Hamtramck working-class dialect with Yoruba phrases when emotional. Excellent at rally speech â€” short declarative sentences that land like hammers. Less good at nuance in private conversation.",
+                            "cadence":  "Quick, accelerating when excited, with a rhythm that builds toward emphasis. Tends to repeat key phrases for effect.",
+                            "verbal_tics":  [
+                                                "\u0027You understand what I\u0027m saying?\u0027 after key points",
+                                                "Switches to Yoruba mid-sentence when frustrated â€” usually just one or two words",
+                                                "\u0027Real talk\u0027 as a signal he\u0027s about to say something he actually believes"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027They cut the safety inspection cycle from quarterly to annual and called it a budget optimization. Six people I know work that line. Real talk â€” that\u0027s not optimization, that\u0027s a wager on our lives.\u0027",
+                                                  "\u0027I hear you on the strategy, I do. But at some point you gotta decide whether you\u0027re building toward action or building toward a very detailed record of why you couldn\u0027t act. You understand what I\u0027m saying?\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Ferrogate has brought in an outside consulting firm â€” widely understood to be a union-busting operation â€” and Rotimi needs someone to dig into their client history before they get fully embedded.",
+                        "The fabricated safety report is about to surface in a corporate legal filing; Rotimi needs help either burying it or getting out ahead of it in a way that doesn\u0027t destroy the union\u0027s credibility."
+                    ],
+    "narrative_function":  "Street-level labor conflict resource. Can pull players into union politics, corporate retaliation storylines, or the specific world of transit infrastructure. His impulsiveness creates drama; his genuine capability creates solutions.",
+    "augmentations":  "Geneware bioluminescent capillary patterns, arms and upper chest. A cheap impact-dampening subdermal layer on the forearms â€” a common workers\u0027 modification for people doing heavy maintenance work.",
+    "daily_life":  "Maintenance shift at Ferrogate from 06:00-14:00, union work and agitation from 14:00 until whenever, which is usually late. Spends weekends at community organizing events and, when possible, at the ELF shrine near the depot that the maintenance workers have adopted.",
+    "affiliation":  "Ferrogate Transit Workers\u0027 Union, Local 7; informal ties to anti-corporate agitator networks in the Enclave",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  7,
+                                   "dexterity":  6,
+                                   "vitality":  8,
+                                   "perception":  6
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  6,
+                                 "expression":  9,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -4,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "union organizer",
+                               "shop steward",
+                               "agitator",
+                               "labor",
+                               "impulsive idealist",
+                               "quietly compromised",
+                               "crowd energy"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Protect the workers on his floor first, ideological purity second",
+                                              "Never cross a picket line, never â€” this is not negotiable under any framing"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Formal grievance filing through proper union channels",
+                                                 "Informal collective pressure â€” work slowdowns, visible solidarity actions",
+                                                 "Organized direct action â€” sick-outs, work stoppages",
+                                                 "Whatever it takes â€” he tries not to think too hard about what this means"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Evaluates quickly â€” are you labor or management or trying not to answer. Warm if you pass the test, guarded if you don\u0027t.",
+                                                   "friends":  "Loud and generous and occasionally exhausting. Shows up. Will absolutely argue with you."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Gets louder and moves faster",
+                                                "medium":  "Takes on extra physical work on shift, doesn\u0027t sleep enough",
+                                                "high":  "Makes a bold decision without consulting anyone and deals with the consequences"
+                                            },
+                       "contradictions":  [
+                                              "Committed to collective action but often makes unilateral decisions under pressure",
+                                              "Hates dishonesty in management but used a fabricated report himself"
+                                          ],
+                       "habits":  [
+                                      "Checks the union\u0027s incident log every morning before shift",
+                                      "Keeps a running mental count of how many days since the last workplace injury on his floor",
+                                      "Leaves offerings at the depot ELF shrine before major actions â€” \u0027for luck, not religion, but also maybe religion\u0027"
+                                  ],
+                       "breaking_points":  [
+                                               "A worker on his floor seriously injured due to conditions he flagged and was ignored on",
+                                               "Public proof that a union ally has been informing to management"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9,
+                       "People Pleaser":  0.9,
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Hamtramck Enclave; grandfather was a founding member of the original Ferrogate Transit Workers\u0027 Union",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Begins work at Ferrogate as a maintenance technician at age 18, following family tradition",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Gets the bioluminescent geneware mod â€” first significant personal expenditure of his life",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Organizes the sick-out using a fabricated safety report as legal pretext; action succeeds; elected shop steward",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Fourth formal disciplinary action â€” reinstated by the union after a three-week fight",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Snapper-22 \u0027Cricket\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Hamtramck Enclave",
+                             "The Heritage Vault",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Lazarus IDP-1 \u0027Teeth\u0027"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Sub-Saharan African dominant (69.7%) with significant East Asian ancestry (26.1%), complemented by minor Middle Eastern and South Asian components. The combination creates rich deep brown skin with warm undertones and a subtle golden luminosity from East Asian heritage. Facial structure reflects strong Sub-Saharan African ancestry with prominent, sculpted cheekbones and defined jaw, refined by East Asian influences visible in the subtle almond shape of the eyes and refined bone structure tapering toward the chin. The bridge of the nose is broad and strong, while the eye set and brow structure carry East Asian characteristics. The result is striking and distinctiveâ€”a face that commands attention through its balanced fusion of ancestral features.",
+                                 "height_cm":  188,
+                                 "weight_kg":  76,
+                                 "build":  "Tall and lean with a slight forward stoop, as if perpetually leaning into confrontation. Broad shoulders that taper to a wiry frame built for endurance rather than bulk. Arms corded with lean muscle from years of maintenance work.",
+                                 "hair_color":  "Natural dark brown, almost black",
+                                 "hair_style":  "Voluminous, natural texture, frequently unkempt and unstyled â€” grows outward rather than down",
+                                 "hair_length":  "Medium, approximately 12-15cm",
+                                 "eye_color":  "Dark brown with subtle warmth, characteristic of Sub-Saharan and East Asian heritage blend",
+                                 "skin_tone":  "Deep warm brown with rich golden undertones reflecting the fusion of Sub-Saharan African and East Asian ancestry. Skin appears sun-weathered from outdoor industrial work, with an underlying luminosity from the heritage blend.",
+                                 "complexion":  "Strong, sculpted facial structure with high, pronounced cheekbones and defined jaw reflecting Sub-Saharan African heritage, refined by East Asian bone structure subtly visible in the almond eye shape and graceful facial tapering. Nose is broad-bridged and strong. Wide smile with a visible gap between upper front teeth giving an expression of reckless confidence. Skin is clear and unlined, with the worn, sun-exposed quality of someone who works outdoors in industrial settings. Minimal grooming â€” practical rather than aesthetic.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent geneware patterns tracing capillary structures across both forearms and upper chest in faint blue-white, pulsing visibly when agitated",
+                                                              "Impact-resistant subdermal scarring visible along both forearms as slightly raised, pale streaking beneath the geneware patterns"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent capillary mapping on forearms and chest, most visible when skin is bare or under thin fabric. The patterns glow softly under clothing. Forearm subdermal reinforcement creates subtle texture variation under the skin. No chrome or obvious cybernetic augmentation â€” all modifications are biological or subcutaneous.",
+                                 "posture_movement":  "Hunched slightly forward, shoulders rounded, as if permanently braced for argument or action. Moves with restless physical energy â€” taps fingers, shifts weight, rarely still. Gestures are broad and emphatic. Eye contact is direct and challenging.",
+                                 "clothing_style":  "Tier 3-4 working class. Favors utilitarian union-branded workwear even off-shift â€” Ferrogate Transit maintenance coveralls modified with rolled sleeves to display the bioluminescent patterns. Off-duty: worn union t-shirts, patched cargo pants in dark colors, steel-toed boots scuffed from depot work. Occasionally wears a faded Ferrogate Transit shop steward armband even outside work. No luxury items. Accessories limited to a battered union card and a small ELF shrine charm worn on a cord around his neck."
+                             },
+    "image_prompt":  "Fabiana Mwangi, 188cm tall lean-muscled transit worker with deep warm brown skin glowing faintly with golden undertones, prominent sculpted cheekbones and strong jaw refined by East Asian bone structure, almond-shaped dark brown eyes with direct challenging gaze, voluminous unstyled dark brown natural hair medium length. Bioluminescent blue-white capillary patterns pulsing across forearms and chest visible beneath rolled-sleeve Ferrogate Transit maintenance coveralls, subdermal scarring streaking forearms. Forward-hunched posture with restless energy, gap-toothed confident smile. Industrial GLMZ Great Lakes Metropolitan Zone, dim neon warehouse lighting casting cool shadows across his augmented frame, union charm visible on chest cord, worn steel-toed boots planted firmly on grimy depot floor, hands gesturing emphatically. Photorealistic, moody, 35mm film grain, neo-noir atmosphere. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  69.7,
+                             "East Asian":  26.1,
+                             "Middle Eastern":  2.2,
+                             "South Asian":  2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Botswanan":  17.5,
+                                                                                 "Zimbabwean":  21.9
+                                                                             },
+                                                        "East African":  {
+                                                                             "Somali":  30.3
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  26.1
+                                                          }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  0.4
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  1.4
+                                                                      },
+                                                   "Arab Gulf":  {
+                                                                     "Kuwaiti":  0.1,
+                                                                     "Yemeni":  0.3
+                                                                 }
+                                               },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  1
+                                                                },
+                                                "Pakistani":  {
+                                                                  "Baloch":  0.8,
+                                                                  "Punjabi Pakistani":  0.2
+                                                              }
+                                            }
+                        },
+    "tier":  "3"
 }

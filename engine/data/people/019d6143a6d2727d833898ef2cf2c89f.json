@@ -1,330 +1,357 @@
-{
-  "id": "019d6143a6d2727d833898ef2cf2c89f",
-  "type": "character",
-  "name": "Chiamaka Makwa",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Food stall operator, street pharmacist (herbal/unlicensed supplements)",
-  "age": 58,
-  "status": "active",
-  "location": "The Oxidian Market, Geartown, near Ashland and Chicago Ave",
-  "description": "Chiamaka Makwa is a broad-shouldered woman with deep umber skin mapped with old burn scars along her left forearm — she never hides them and never explains them. Her hair is dyed a permanent warm ochre through pigment geneware she got decades ago, and it suits her the way a crown suits a queen. She wears layered wraps in burnt orange and green over heat-resistant vendor's apron, three copper bangles on each wrist, and a small laminated icon of the Oxidian Market's resident E.L.F., Rustgod, pinned to her collar. Her stall serves a rotating menu of West-Central African and Balkan fusion street food — peanut groundnut stew ladled over fried cornbread, slow-braised lamb with ajvar and dried baobab, spiced tea that allegedly treats three different kinds of grief. She has run this stall for twenty-two years and has outlasted two gang transitions, one corporate rezoning attempt, and a fire.\n\nChiamaka Makwa is the kind of woman who speaks slowly and means everything she says. She remembers the name of every regular's firstborn child and the anniversary of every hardship they've told her about. She is also, quietly and without drama, the stall's second function: she sells unlicensed herbal and synthetic supplements out of a locked drawer under the prep counter — pain blockers, mood stabilizers, sleep aids, appetite regulators — things Tier 1 and 2 residents cannot afford through licensed channels. She considers this a moral act and will not be talked out of it.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.2,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Outliving the community she has built",
-      "Being forced to close the stall and losing her purpose"
-    ],
-    "core_desires": [
-      "That the people around her survive with their dignity intact",
-      "To be remembered as someone who fed people when they had nothing"
-    ],
-    "coping_mechanisms": [
-      "Cooking as meditative ritual",
-      "Deflecting personal pain with caregiving for others"
-    ],
-    "blind_spots": [
-      "Underestimates how much danger her supplement trade puts her in",
-      "Refuses to see that some people exploit her generosity strategically"
-    ],
-    "secret": "The fire that scarred her arm twenty years ago was not an accident — she burned down a Tessera subcontractor's storage unit that was being used to warehouse eviction drones. She has never told anyone and considers it her one act of violence, which she neither regrets nor intends to repeat."
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm, deliberate, proverb-heavy. Mixes Lingala phrases and old Bosnian idioms seamlessly, as if unaware they are different languages. Does not use slang.",
-    "cadence": "Slow and measured. Lets silence do work. Never interrupts.",
-    "verbal_tics": [
-      "'Eat first, then we talk'",
-      "Refers to the Market as 'the body' and its vendors as 'the bones'"
-    ],
-    "example_lines": [
-      "'You look like someone who has been running from something for three days. Sit. The stew takes ten minutes.'",
-      "'I don't sell remedies for problems that don't exist. Tell me what it actually is.'",
-      "'Rustgod has been restless this week. I left an extra data-offering this morning. You should be careful with your devices.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Helix Biosystems inspector has begun making weekly visits to the Market, ostensibly checking food safety certifications — but they keep stopping at Solange's stall too long. She needs someone to find out who sent them and why.",
-    "One of her supplement regulars — a shift worker from the Edison Grid — has gone missing after telling her they found something wrong in their facility. She has the last message they sent her and doesn't know who to trust with it.",
-    "The Oxidian Market vendors guild is fractioning over whether to accept a Tessera 'partnership' offer that would give them security guarantees in exchange for registry compliance. Solange is the loudest 'no' vote and is receiving pressure to change her position."
-  ],
-  "narrative_function": "Local anchor and information hub — she has seen everything in this market for two decades. Quest giver for problems affecting market residents; source of healing items and off-grid medicine; moral compass character who will call out ethical failures plainly.",
-  "augmentations": "Pigment geneware (permanent ochre hair). Arthritic joint stabilizer implants in both hands, basic medical grade. No cosmetic chrome.",
-  "daily_life": "Arrives at the stall two hours before dawn to start her long-cook dishes, sells through midday rush and evening commuter wave, closes when the food runs out. Sundays she closes entirely and attends a neighborhood data-prayer circle devoted to Rustgod.",
-  "affiliation": "Independent; loosely protected by The Oxidian Market vendors guild; informal relationship with the Geartown block association",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 5,
-      "vitality": 7,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 9,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 9,
-      "expression": 7,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -5,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -2,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community anchor",
-      "unlicensed pharmacist",
-      "e.l.f. devotee",
-      "survivor",
-      "moral authority"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Feed anyone who is visibly hungry before any conversation happens",
-      "Never lie, but choose carefully what truth to offer and when",
-      "Protect the market community over any individual interest including her own"
-    ],
-    "escalation_ladder": [
-      "Quiet observation — she watches and catalogues before engaging",
-      "Direct, warm confrontation — names the problem plainly without accusation",
-      "Withdrawal of access — will simply stop serving someone who has proven themselves a threat",
-      "Calls in favors from the guild or block association to apply collective pressure"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Feeds them first, asks questions second. Friendly but measuring. Decides quickly whether someone is safe.",
-      "friends": "Fiercely loyal. Remembers everything. Will sacrifice her own comfort without being asked."
-    },
-    "stress_responses": {
-      "low": "Cooks more elaborate dishes than usual",
-      "medium": "Becomes quieter and more watchful; speaks less, observes more",
-      "high": "Goes completely still and methodical, as if operating on protocol — efficient, precise, emotionally unreadable"
-    },
-    "contradictions": [
-      "Preaches that violence is not the answer while privately knowing it sometimes was",
-      "Extraordinarily generous with strangers but struggles to accept help offered to her"
-    ],
-    "habits": [
-      "Polishes her copper bangles every evening before sleep",
-      "Whispers a brief prayer to Rustgod before lighting the first burner each morning",
-      "Saves a small portion of every new dish recipe in a handwritten notebook she has kept since age 30"
-    ],
-    "breaking_points": [
-      "Watching a child go unfed because of bureaucratic obstruction",
-      "Being told that her community does not deserve protection because they are 'informal'"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Provider": 0.9,
-    "People Pleaser": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Oxidian Market",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Arrived in Geartown from Bronzeline following a housing eviction; set up first stall with borrowed equipment",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Burn incident — arm scarred; Tessera subcontractor storage unit destroyed by fire, cause officially undetermined",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Joined the Oxidian Market vendors guild; became a founding voice in the collective pricing agreement",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began selling unlicensed supplements after watching a neighbor die from untreated pain because they couldn't afford licensed medication",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Current: navigating Tessera partnership pressure while managing increased inspector attention",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ],
-  "related_entities": [
-    "The Oxidian Market",
-    "Helix Biosystems",
-    "Edison Grid",
-    "The Marrow Market",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Pressure Drop",
-    "Geartown",
-    "Tessera Corponation",
-    "Stratum",
-    "Chicago",
-    "Copper"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Truly global diaspora ancestry with East Asian foundation (42.6%) layered with significant Indigenous American (15.8%), Hispanic/Latin American (17.5%), and Southeast Asian (11.6%) heritage, rounded by Middle Eastern (6.8%) and North African (5.7%) elements. This blend creates a phenotype that defies single-region categorization: warm golden-brown skin with honey and olive undertones, a facial structure combining East Asian moderate planes with the higher cheekbones and broader face shape characteristic of Indigenous American and Hispanic/Latin American lineages, and an eye shape that reflects the Southeast Asian component. The overall effect reads as authentically multi-continental.",
-    "height_cm": 168,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and solid, with the compact muscularity of someone who has spent decades standing over a prep counter. Not lean, not heavy — grounded and present in her body.",
-    "hair_color": "Warm ochre, permanently modified through pigment geneware",
-    "hair_style": "Worn loose or loosely braided, often wrapped with a patterned headscarf during work hours",
-    "hair_length": "Medium, shoulder-length",
-    "eye_color": "Deep brown, naturally warm",
-    "skin_tone": "Warm golden-brown with honey and olive undertones, reflecting the blended East Asian, Southeast Asian, Hispanic/Latin American, Middle Eastern, and North African heritage",
-    "complexion": "Weathered but well-maintained; laugh lines around her eyes and mouth speaking to a life fully lived. Her facial structure shows moderate East Asian planes balanced with the higher cheekbones and broader face shape from Indigenous American and Hispanic/Latin American ancestry. Minimal makeup. Her face reads as someone who has lived fully and without apology.",
-    "distinguishing_marks": [
-      "Burn scars mapping the entire left forearm in a constellation pattern — old, healed, unpigmented silver against her warm golden-brown skin. She displays them without concealment.",
-      "Three copper bangles on each wrist, worn to a soft patina, part of her daily presentation.",
-      "Small laminated icon of Rustgod pinned to her collar — faded and creased from decades of wear."
-    ],
-    "visible_augmentations": "Arthritic joint stabilizer implants visible as faint metallic tracery under the skin across the back of both hands, particularly noticeable when she moves. No cosmetic chrome.",
-    "posture_movement": "She stands still with absolute confidence, weight centered. When she moves, it is economical and purposeful — no wasted motion after fifty-eight years at a prep counter. She handles objects with the careful precision of someone managing mild joint pain with grace.",
-    "clothing_style": "Layered wraps in burnt orange and green worn over a heat-resistant vendor's apron in neutral gray-black. The wraps are quality fabric, well-maintained, suggesting both practicality and dignity. Tier 3-4 working class aesthetic — no corporate branding, no pretension, but nothing threadbare. Worn copper jewelry. Practical closed-toe shoes suitable for standing."
-  },
-  "image_prompt": "Chiamaka Makwa, 58-year-old woman with warm golden-brown skin blending East Asian, Indigenous American, Hispanic/Latin American, Southeast Asian, Middle Eastern, and North African heritage. Shoulder-length medium hair in warm ochre, loosely worn. Deep brown eyes with laugh lines. Moderate East Asian facial planes with higher cheekbones and broader face shape from Indigenous American ancestry. Silver constellation burn scars down left forearm, displayed without concealment. Wearing burnt orange and green layered wraps over gray-black heat-resistant vendor's apron. Copper bangles with patina on both wrists. Faded Rustgod icon pinned to collar. Arthritic joint stabilizer implants faintly visible under skin on back of hands. Standing with centered confidence in a bustling neo-noir food market, Great Lakes Metropolitan Zone 2226. Warm practical lighting, no-nonsense presence, dignified working-class aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 42.6,
-    "Hispanic/Latin American": 17.5,
-    "Indigenous American": 15.8,
-    "Southeast Asian": 11.6,
-    "Middle Eastern": 6.8,
-    "North African": 5.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Chinese": {
-        "Shanghainese": 42.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 5.4
-      },
-      "South American": {
-        "Chilean": 6.2
-      },
-      "Caribbean": {
-        "Cuban": 5.9
-      }
-    },
-    "Indigenous American": {
-      "Plains Nations": {
-        "Cherokee": 15.8
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Tagalog": 9.6,
-        "Cebuano": 2
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Iraqi": 3.3
-      },
-      "Arab Levantine": {
-        "Lebanese": 1.2
-      },
-      "Kurdish": {
-        "Kurdish": 2.3
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Berber": 3.8,
-        "Tuareg": 0.8
-      },
-      "Maghreb": {
-        "Moroccan": 0.3
-      },
-      "Nile Valley": {
-        "Egyptian": 0.8
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a6d2727d833898ef2cf2c89f",
+    "type":  "character",
+    "name":  "Chiamaka Makwa",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Food stall operator, street pharmacist (herbal/unlicensed supplements)",
+    "age":  58,
+    "status":  "active",
+    "location":  "The Oxidian Market, Geartown, near Ashland and Chicago Ave",
+    "description":  "Chiamaka Makwa is a broad-shouldered woman with deep umber skin mapped with old burn scars along her left forearm â€” she never hides them and never explains them. Her hair is dyed a permanent warm ochre through pigment geneware she got decades ago, and it suits her the way a crown suits a queen. She wears layered wraps in burnt orange and green over heat-resistant vendor\u0027s apron, three copper bangles on each wrist, and a small laminated icon of the Oxidian Market\u0027s resident E.L.F., Rustgod, pinned to her collar. Her stall serves a rotating menu of West-Central African and Balkan fusion street food â€” peanut groundnut stew ladled over fried cornbread, slow-braised lamb with ajvar and dried baobab, spiced tea that allegedly treats three different kinds of grief. She has run this stall for twenty-two years and has outlasted two gang transitions, one corporate rezoning attempt, and a fire.\n\nChiamaka Makwa is the kind of woman who speaks slowly and means everything she says. She remembers the name of every regular\u0027s firstborn child and the anniversary of every hardship they\u0027ve told her about. She is also, quietly and without drama, the stall\u0027s second function: she sells unlicensed herbal and synthetic supplements out of a locked drawer under the prep counter â€” pain blockers, mood stabilizers, sleep aids, appetite regulators â€” things Tier 1 and 2 residents cannot afford through licensed channels. She considers this a moral act and will not be talked out of it.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Outliving the community she has built",
+                                          "Being forced to close the stall and losing her purpose"
+                                      ],
+                       "core_desires":  [
+                                            "That the people around her survive with their dignity intact",
+                                            "To be remembered as someone who fed people when they had nothing"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Cooking as meditative ritual",
+                                                 "Deflecting personal pain with caregiving for others"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much danger her supplement trade puts her in",
+                                           "Refuses to see that some people exploit her generosity strategically"
+                                       ],
+                       "secret":  "The fire that scarred her arm twenty years ago was not an accident â€” she burned down a Tessera subcontractor\u0027s storage unit that was being used to warehouse eviction drones. She has never told anyone and considers it her one act of violence, which she neither regrets nor intends to repeat."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm, deliberate, proverb-heavy. Mixes Lingala phrases and old Bosnian idioms seamlessly, as if unaware they are different languages. Does not use slang.",
+                            "cadence":  "Slow and measured. Lets silence do work. Never interrupts.",
+                            "verbal_tics":  [
+                                                "\u0027Eat first, then we talk\u0027",
+                                                "Refers to the Market as \u0027the body\u0027 and its vendors as \u0027the bones\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You look like someone who has been running from something for three days. Sit. The stew takes ten minutes.\u0027",
+                                                  "\u0027I don\u0027t sell remedies for problems that don\u0027t exist. Tell me what it actually is.\u0027",
+                                                  "\u0027Rustgod has been restless this week. I left an extra data-offering this morning. You should be careful with your devices.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Helix Biosystems inspector has begun making weekly visits to the Market, ostensibly checking food safety certifications â€” but they keep stopping at Solange\u0027s stall too long. She needs someone to find out who sent them and why.",
+                        "One of her supplement regulars â€” a shift worker from the Edison Grid â€” has gone missing after telling her they found something wrong in their facility. She has the last message they sent her and doesn\u0027t know who to trust with it.",
+                        "The Oxidian Market vendors guild is fractioning over whether to accept a Tessera \u0027partnership\u0027 offer that would give them security guarantees in exchange for registry compliance. Solange is the loudest \u0027no\u0027 vote and is receiving pressure to change her position."
+                    ],
+    "narrative_function":  "Local anchor and information hub â€” she has seen everything in this market for two decades. Quest giver for problems affecting market residents; source of healing items and off-grid medicine; moral compass character who will call out ethical failures plainly.",
+    "augmentations":  "Pigment geneware (permanent ochre hair). Arthritic joint stabilizer implants in both hands, basic medical grade. No cosmetic chrome.",
+    "daily_life":  "Arrives at the stall two hours before dawn to start her long-cook dishes, sells through midday rush and evening commuter wave, closes when the food runs out. Sundays she closes entirely and attends a neighborhood data-prayer circle devoted to Rustgod.",
+    "affiliation":  "Independent; loosely protected by The Oxidian Market vendors guild; informal relationship with the Geartown block association",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  5,
+                                   "vitality":  7,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  9,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  9,
+                                 "expression":  7,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -5,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community anchor",
+                               "unlicensed pharmacist",
+                               "e.l.f. devotee",
+                               "survivor",
+                               "moral authority"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Feed anyone who is visibly hungry before any conversation happens",
+                                              "Never lie, but choose carefully what truth to offer and when",
+                                              "Protect the market community over any individual interest including her own"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Quiet observation â€” she watches and catalogues before engaging",
+                                                 "Direct, warm confrontation â€” names the problem plainly without accusation",
+                                                 "Withdrawal of access â€” will simply stop serving someone who has proven themselves a threat",
+                                                 "Calls in favors from the guild or block association to apply collective pressure"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Feeds them first, asks questions second. Friendly but measuring. Decides quickly whether someone is safe.",
+                                                   "friends":  "Fiercely loyal. Remembers everything. Will sacrifice her own comfort without being asked."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Cooks more elaborate dishes than usual",
+                                                "medium":  "Becomes quieter and more watchful; speaks less, observes more",
+                                                "high":  "Goes completely still and methodical, as if operating on protocol â€” efficient, precise, emotionally unreadable"
+                                            },
+                       "contradictions":  [
+                                              "Preaches that violence is not the answer while privately knowing it sometimes was",
+                                              "Extraordinarily generous with strangers but struggles to accept help offered to her"
+                                          ],
+                       "habits":  [
+                                      "Polishes her copper bangles every evening before sleep",
+                                      "Whispers a brief prayer to Rustgod before lighting the first burner each morning",
+                                      "Saves a small portion of every new dish recipe in a handwritten notebook she has kept since age 30"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching a child go unfed because of bureaucratic obstruction",
+                                               "Being told that her community does not deserve protection because they are \u0027informal\u0027"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Provider":  0.9,
+                       "People Pleaser":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Oxidian Market",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Arrived in Geartown from Bronzeline following a housing eviction; set up first stall with borrowed equipment",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Burn incident â€” arm scarred; Tessera subcontractor storage unit destroyed by fire, cause officially undetermined",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Joined the Oxidian Market vendors guild; became a founding voice in the collective pricing agreement",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began selling unlicensed supplements after watching a neighbor die from untreated pain because they couldn\u0027t afford licensed medication",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Current: navigating Tessera partnership pressure while managing increased inspector attention",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Ember Rifle ER-7 \u0027Ashfall\u0027",
+                            "Nkomo-Lindqvist NL-22 \u0027Peacemaker\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Ember Rifle ER-7 \u0027Ashfall\u0027",
+                                "Nkomo-Lindqvist NL-22 \u0027Peacemaker\u0027"
+                            ],
+    "related_entities":  [
+                             "The Oxidian Market",
+                             "Helix Biosystems",
+                             "Edison Grid",
+                             "The Marrow Market",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "Pressure Drop",
+                             "Geartown",
+                             "Tessera Corponation",
+                             "Stratum",
+                             "Chicago",
+                             "Copper"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Truly global diaspora ancestry with East Asian foundation (42.6%) layered with significant Indigenous American (15.8%), Hispanic/Latin American (17.5%), and Southeast Asian (11.6%) heritage, rounded by Middle Eastern (6.8%) and North African (5.7%) elements. This blend creates a phenotype that defies single-region categorization: warm golden-brown skin with honey and olive undertones, a facial structure combining East Asian moderate planes with the higher cheekbones and broader face shape characteristic of Indigenous American and Hispanic/Latin American lineages, and an eye shape that reflects the Southeast Asian component. The overall effect reads as authentically multi-continental.",
+                                 "height_cm":  168,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and solid, with the compact muscularity of someone who has spent decades standing over a prep counter. Not lean, not heavy â€” grounded and present in her body.",
+                                 "hair_color":  "Warm ochre, permanently modified through pigment geneware",
+                                 "hair_style":  "Worn loose or loosely braided, often wrapped with a patterned headscarf during work hours",
+                                 "hair_length":  "Medium, shoulder-length",
+                                 "eye_color":  "Deep brown, naturally warm",
+                                 "skin_tone":  "Warm golden-brown with honey and olive undertones, reflecting the blended East Asian, Southeast Asian, Hispanic/Latin American, Middle Eastern, and North African heritage",
+                                 "complexion":  "Weathered but well-maintained; laugh lines around her eyes and mouth speaking to a life fully lived. Her facial structure shows moderate East Asian planes balanced with the higher cheekbones and broader face shape from Indigenous American and Hispanic/Latin American ancestry. Minimal makeup. Her face reads as someone who has lived fully and without apology.",
+                                 "distinguishing_marks":  [
+                                                              "Burn scars mapping the entire left forearm in a constellation pattern â€” old, healed, unpigmented silver against her warm golden-brown skin. She displays them without concealment.",
+                                                              "Three copper bangles on each wrist, worn to a soft patina, part of her daily presentation.",
+                                                              "Small laminated icon of Rustgod pinned to her collar â€” faded and creased from decades of wear."
+                                                          ],
+                                 "visible_augmentations":  "Arthritic joint stabilizer implants visible as faint metallic tracery under the skin across the back of both hands, particularly noticeable when she moves. No cosmetic chrome.",
+                                 "posture_movement":  "She stands still with absolute confidence, weight centered. When she moves, it is economical and purposeful â€” no wasted motion after fifty-eight years at a prep counter. She handles objects with the careful precision of someone managing mild joint pain with grace.",
+                                 "clothing_style":  "Layered wraps in burnt orange and green worn over a heat-resistant vendor\u0027s apron in neutral gray-black. The wraps are quality fabric, well-maintained, suggesting both practicality and dignity. Tier 3-4 working class aesthetic â€” no corporate branding, no pretension, but nothing threadbare. Worn copper jewelry. Practical closed-toe shoes suitable for standing."
+                             },
+    "image_prompt":  "Chiamaka Makwa, 58-year-old woman with warm golden-brown skin blending East Asian, Indigenous American, Hispanic/Latin American, Southeast Asian, Middle Eastern, and North African heritage. Shoulder-length medium hair in warm ochre, loosely worn. Deep brown eyes with laugh lines. Moderate East Asian facial planes with higher cheekbones and broader face shape from Indigenous American ancestry. Silver constellation burn scars down left forearm, displayed without concealment. Wearing burnt orange and green layered wraps over gray-black heat-resistant vendor\u0027s apron. Copper bangles with patina on both wrists. Faded Rustgod icon pinned to collar. Arthritic joint stabilizer implants faintly visible under skin on back of hands. Standing with centered confidence in a bustling neo-noir food market, Great Lakes Metropolitan Zone 2226. Warm practical lighting, no-nonsense presence, dignified working-class aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  42.6,
+                             "Hispanic/Latin American":  17.5,
+                             "Indigenous American":  15.8,
+                             "Southeast Asian":  11.6,
+                             "Middle Eastern":  6.8,
+                             "North African":  5.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Shanghainese":  42.6
+                                                           }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  5.4
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Chilean":  6.2
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  5.9
+                                                                          }
+                                                        },
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Cherokee":  15.8
+                                                                           }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Tagalog":  9.6,
+                                                                     "Cebuano":  2
+                                                                 }
+                                                },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  3.3
+                                                                 },
+                                                   "Arab Levantine":  {
+                                                                          "Lebanese":  1.2
+                                                                      },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  2.3
+                                                               }
+                                               },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Berber":  3.8,
+                                                                  "Tuareg":  0.8
+                                                              },
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  0.3
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  0.8
+                                                                  }
+                                              }
+                        },
+    "tier":  "2"
 }

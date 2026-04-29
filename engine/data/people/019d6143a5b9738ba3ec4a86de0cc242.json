@@ -1,353 +1,364 @@
-{
-  "id": "019d6143a5b9738ba3ec4a86de0cc242",
-  "type": "character",
-  "name": "Bahar Jaramillo-Cissé",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Street-level medic and unlicensed augmentation surgeon operating out of Old Harbor",
-  "age": 58,
-  "status": "active",
-  "location": "Old Harbor, sub-level canal district, near sub-level access near State and Van Buren",
-  "description": "Bahar Jaramillo-Cissé is a broad-shouldered man whose face has been mapped by decades of difficult living — deep-set creases around his eyes, a jaw that still carries the ghost of old muscle, skin the warm brown of river silt that has seen too many winters. His hair is close-cropped and almost entirely white, though his eyebrows remain stubbornly dark, giving him an expression of permanent mild surprise. He works in a converted barge permanently moored at Canal 7, where the smell of antiseptic and frying oil from the neighbouring food stall have become inseparable. His hands are his most striking feature: enormous, steady, and threaded with the fine silver filaments of a haptic-feedback augmentation that lets him feel at the microscopic level — installed, he'll tell anyone who asks, by himself, on himself, without anaesthetic, in 2171.\n\nHe was once a licensed trauma surgeon at a Meridian Core hospital before a malpractice suit — widely believed to have been engineered by a corporate competitor — stripped him of his credentials and left him with a debt load that pushed him to the Gray Zone and eventually to Old Harbor. He rebuilt himself slowly, earning trust one stitched wound at a time, one extracted bullet at a time, until the canal district came to regard him as something between a doctor and a priest. He charges what people can pay, which is often very little, and he has never turned away a patient who was bleeding.\n\nBahar Jaramillo-Cissé carries his past with the careful stillness of a man who has decided not to be destroyed by it, but has not quite decided to forgive it either. He drinks a single glass of real Scotch every evening at precisely 8 p.m. — a ritual that functions simultaneously as reward, mourning, and punctuation. He keeps a photograph of his daughter, Liria, tucked under the lip of his operating lamp. She is in The Spire now, a junior executive at Helix-Vantage Biomedical. They have not spoken in eleven years.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.72,
-      "ideal": 0.85,
-      "id": 0.31,
-      "shadow": 0.44,
-      "mask": 0.58,
-      "ghost": 0.67
-    },
-    "core_fears": [
-      "That his competence will one day fail someone who trusted him completely",
-      "That Liria has become exactly what the system that destroyed him wanted her to become",
-      "That his exile from medicine was partly deserved — that he was arrogant, and the system only named it"
-    ],
-    "core_desires": [
-      "To practice medicine with full resources, just once more, without apology",
-      "A reconciliation with Liria that does not require either of them to lie",
-      "To see Old Harbor become a place where people do not have to choose between eating and healing"
-    ],
-    "coping_mechanisms": [
-      "Radical focus on the immediate task — when working, nothing else exists",
-      "Dark, self-deprecating humour deployed before anyone else can aim it at him",
-      "Maintaining strict daily routines as proof of personal order amid external chaos",
-      "Mentorship — teaching what he knows to anyone willing to learn"
-    ],
-    "blind_spots": [
-      "Mistakes stubbornness for principle, sometimes to the detriment of patients who need referral",
-      "Underestimates how much his martyrdom narrative shapes his choices",
-      "Cannot see that some people in Old Harbor rely on his presence so heavily it has become a form of dependency he enables"
-    ],
-    "secret": "The malpractice suit was not entirely fabricated. Augustin made an error — a small one, non-fatal, but real — and rather than disclose it, he let the corporate narrative swallow it whole. He has never told anyone. The patient lived. He isn't sure that matters."
-  },
-  "speech_patterns": {
-    "vocabulary": "Medical precision mixed with the worn idioms of someone who has lived in many cities; occasional Spanish phrases, especially under stress; avoids corporate jargon with visible distaste",
-    "cadence": "Slow and deliberate when explaining, faster and clipped when working; capable of long, winding sentences that arrive at their point only after establishing every surrounding condition",
-    "verbal_tics": [
-      "\"You follow me?\" — used to check comprehension, not condescend",
-      "A habit of naming the body part before describing what he's doing to it",
-      "Starts disagreements with \"Now—\" and a brief pause",
-      "Refers to death as \"the door\""
-    ],
-    "example_lines": [
-      "\"Now — I hear what you're saying, and I respect it, but your spleen is not interested in your ideology right now.\"",
-      "\"The liver's taken worse. Probably. Lie still.\"",
-      "\"You follow me? Good. Because I'm going to need you conscious for the next part and it would help if you trusted me.\"",
-      "\"I've been past the door three times on the table and twice off it. I know what it looks like. You're not there yet. Hold on.\"",
-      "\"She works for Helix-Vantage. My daughter. No, I don't want to talk about it. Hold the light steady.\""
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Liria Reyes-Mbatha",
-      "type": "estranged daughter",
-      "description": "Junior executive at Helix-Vantage Biomedical in The Spire; has not contacted Augustin in eleven years",
-      "emotional_core": "A grief he has categorised as resolved and visits nightly",
-      "story_tension": "Liria may be involved in a Helix-Vantage project that will directly affect Old Harbor patients; the plot may force contact neither of them has prepared for"
-    },
-    {
-      "name": "Sable",
-      "type": "uneasy ally",
-      "description": "Sable occasionally routes injured contacts to Augustin's barge; Augustin treats them without asking questions he doesn't want answered",
-      "emotional_core": "Mutual respect built on shared commitment to not letting people die unnecessarily; neither fully trusts the other's methods",
-      "story_tension": "Sable's work keeps bringing patients whose injuries suggest an escalating conflict Augustin is being kept deliberately ignorant of"
-    },
-    {
-      "name": "Perpetua Okafor",
-      "type": "professional respect, cautious friendship",
-      "description": "Perpetua has sent community members to Augustin and occasionally consults him on health conditions in her district; they share a background of institutional betrayal",
-      "emotional_core": "Recognition — two people who see the shape of each other's losses without needing them explained",
-      "story_tension": "Perpetua knows something about the original malpractice case that Augustin does not, and hasn't decided whether telling him would help or destroy him"
-    }
-  ],
-  "story_hooks": [
-    "A patient arrives with an augmentation Augustin has never seen — proprietary, deeply embedded, and actively resisting removal — and the person who installed it is hunting the patient",
-    "Liria contacts Augustin through an intermediary with a job offer that is clearly also a surveillance operation; he doesn't know whether she's warning him or baiting him",
-    "A series of Old Harbor residents are presenting with identical neurological symptoms; Augustin begins to suspect the water filtration system has been tampered with, and the tampering is recent",
-    "A young medic apprentice Augustin has been training is offered a corporate scholarship — the same institution that destroyed his career — and asks his advice",
-    "Evidence surfaces that the patient from his original malpractice case has been found dead, the circumstances pointing to deliberate silencing, and someone is leaving that information where Augustin will find it"
-  ],
-  "narrative_function": "Moral anchor and threshold guardian for the street-level world; represents the cost of integrity in a system designed to monetise suffering; his barge functions as a neutral ground where information and people converge",
-  "augmentations": "Haptic-feedback microsurgical filaments in both hands (self-installed, uncertified),Subdermal toxin-analysis patch on left forearm — identifies contaminants on contact,Optical overlay for vein and tissue mapping, left eye only (right eye refused on principle),Cervical pain-suppression node — installed to manage a spinal injury, kept because the work requires it",
-  "daily_life": "Wakes at 5 a.m. regardless of when he slept, makes strong coffee in a battered press, reviews any overnight patients. Mornings are walk-in hours; afternoons are appointments, teaching, or supply runs through Old Harbor's grey market. Evenings are for complex procedures requiring controlled conditions. The 8 p.m. Scotch is inviolable. Sleeps in a hammock strung across the barge's bow cabin, often with a medical text open on his chest.",
-  "affiliation": "Independent; loosely aligned with Old Harbor's informal mutual aid networks; explicitly unaffiliated with any corporate or government body",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 3,
-      "transparency_guardedness": 2
-    },
-    "drives": [
-      "Heal the unhealable",
-      "Atone through service",
-      "Reconnect with Liria"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 7,
-        "response": "Retreats into procedural focus, humor becomes darker"
-      },
-      "moral": 7,
-      "trust": 5,
-      "desperation": 7
-    },
-    "strengths": [
-      "Kindness",
-      "Perseverance",
-      "Judgment",
-      "Leadership",
-      "Bravery"
-    ],
-    "weaknesses": [
-      "Humility",
-      "Forgiveness",
-      "Prudence",
-      "Teamwork",
-      "Hope"
-    ],
-    "tags": [
-      "street-doctor",
-      "ex-surgeon",
-      "mentor",
-      "self-augmented",
-      "martyr-complex",
-      "barge-clinic",
-      "old-harbor"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will never turn away a bleeding patient regardless of faction or ability to pay",
-      "Will always explain a procedure before performing it, even under fire",
-      "Will never refer a patient to a corporate facility unless death is the alternative",
-      "Will always maintain the 8 p.m. Scotch ritual — it is the last structure holding him together",
-      "Will never discuss Liria voluntarily — the subject is closed until she opens it",
-      "Will always teach anyone willing to learn, even at cost to his own schedule",
-      "Will never accept payment he considers disproportionate to the patient's means"
-    ],
-    "escalation_ladder": [
-      "Self-deprecating deflection — humor to lower the temperature",
-      "Clinical detachment — treats the conflict like a diagnosis, names the problem precisely",
-      "Quiet, immovable refusal — 'Now—' followed by a boundary that will not move",
-      "Deploys the authority of thirty years of trauma medicine — voice drops, hands steady, the room obeys",
-      "Walks away entirely and does not look back — his final escalation is absence"
-    ],
-    "interpersonal_modes": {
-      "Liria": "Avoidant grief masked as acceptance; keeps her photo where he works as penance",
-      "Sable": "Professional courtesy stretched thin over mutual suspicion; treats Sable's people without asking questions",
-      "Perpetua Okafor": "Quiet recognition — two institutional refugees who share losses without naming them",
-      "Patients": "Warm authority — the doctor-priest hybrid Old Harbor needs"
-    },
-    "stress_responses": {
-      "low": "Maintains routines with extra precision, coffee gets stronger",
-      "medium": "Spanish phrases surface, humor sharpens to a cutting edge",
-      "high": "Goes silent except for clinical communication, works until his hands shake",
-      "critical": "The old arrogance resurfaces — he becomes the Meridian Core surgeon again, brilliant and terrifying"
-    },
-    "contradictions": [
-      "Teaches honesty in medicine while concealing the truth about his malpractice case",
-      "Refuses corporate medicine on principle while his cervical implant keeps him functional",
-      "Creates dependency in Old Harbor while believing he empowers self-sufficiency"
-    ],
-    "habits": [
-      "Makes coffee in a battered press at 5 a.m. regardless of sleep",
-      "Names the body part aloud before touching it during examination",
-      "Checks on Liria's photograph under the operating lamp at the start of each procedure",
-      "Walks the barge deck once before any complex surgery",
-      "Pours the 8 p.m. Scotch with his left hand — always the left"
-    ],
-    "breaking_points": [
-      "A patient dying because he lacked resources he once had access to",
-      "Liria appearing in person, unannounced, on the barge",
-      "The original malpractice error becoming public knowledge in Old Harbor",
-      "Being forced to choose between two patients when only one can be saved"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Nurturer": 0.7,
-    "Provider": 0.7,
-    "Charmer": 0.7,
-    "Bleeding Heart": 0.6
-  },
-  "operating_territory": {
-    "home_turf": "Old Harbor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ],
-  "related_entities": [
-    "Meridian Core",
-    "The Filament",
-    "The Spire",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "CRUCIBLE Vantage Artisan Precision Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Silver",
-    "Harbor Fish Shack",
-    "Slagworks Industrial",
-    "The Pure Hand",
-    "Glass"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Deep diaspora blend: 31.7% Sub-Saharan African (primary), 27.3% Southeast Asian, 25% Hispanic/Latin American, 6.8% Eastern European, 6.2% Northern European, 3% South Asian. Features reflect this intricate genetic weaving—warm brown skin with bronze and copper undertones, facial structure showing West/Central African bone prominence softened by Southeast Asian and Hispanic facial geometry, with subtle eye shape contribution from South and Southeast Asian ancestry.",
-    "height_cm": 185,
-    "weight_kg": 92,
-    "build": "Broad-shouldered and still muscular despite age, with the dense frame of someone who has done physical labor for decades. Chest and shoulders retain definition; slight softening at the midsection from years of late-night coffee and minimal exercise, but still fundamentally sturdy.",
-    "hair_color": "White with iron-grey undertones",
-    "hair_style": "Close-cropped, military precision, styled with a clipper at approximately 8mm length",
-    "hair_length": "Short",
-    "eye_color": "Left eye: amber-gold with faint luminescent grid overlay (vein-mapping optical); Right eye: dark brown, natural",
-    "skin_tone": "Rich warm brown with bronze and copper undertones—the complex coloration of Sub-Saharan, Southeast Asian, and Hispanic/Latin American ancestry with subtle contributions from Eastern and Northern European heritage. Weathered and uneven from decades under barge-cabin tungsten and canal-district industrial light, with the patina of someone who has spent half their life in artificial environments.",
-    "complexion": "Deeply lined face map reflecting age and exposure: deep creases radiating from the outer corners of both eyes (shaped by mixed ancestry bone structure with African prominence and Southeast Asian eye shape softening), pronounced nasolabial folds, horizontal forehead lines, vertical crease between brows. Jaw still defined despite age; stubble growth appears as iron-grey rather than white. Skin shows minor scarring on left temple (old laceration) and weathering consistent with decades of exposure. Dark eyebrows remain stubbornly dark brown, creating a perpetual expression of mild surprise against white hair. Facial features show the broad nasal bridge and high cheekbone prominence characteristic of Sub-Saharan and Southeast Asian ancestry, with the more delicate bone structure contributed by Hispanic/Latin American and Northern European lineage creating a balanced, mature face.",
-    "distinguishing_marks": [
-      "Thin hairline scar across left temple, approximately 4cm, angling toward the ear — result of a trauma from his licensed years, visible only under direct light",
-      "Surgical scar on left forearm (anterior aspect, wrist to mid-forearm) housing the subdermal toxin-analysis patch; scar is thin and well-healed but visible, slightly raised and pale against his skin tone",
-      "Faint burn scars on the knuckles of both hands from self-installed augmentation work; barely visible but felt by anyone who shakes his hand",
-      "Small tattoo on right wrist: a single line in black ink, no more than 2cm, positioned over the radial artery — dated 1997, personal meaning unknown to most who ask"
-    ],
-    "visible_augmentations": "Both hands thread with fine silver filaments visible beneath the skin, most apparent on the backs of the hands and between the knuckles when his hands are in motion or light strikes them at an angle. Left eye displays a faint luminescent amber grid overlay, most visible in low light or when he focuses intently. Left forearm bears a subtle raised scarline where the toxin-analysis patch sits subcutaneously. Cervical pain-suppression node is not externally visible but may be palpable as a small subdermal ridge at the base of the skull if touched.",
-    "posture_movement": "Carries himself with the careful vertical stillness of a man managing chronic pain with an implant. Movements are economical and precise — no wasted motion. Hands are his primary expressive tool; they move with unusual steadiness and deliberation, especially during conversation. When concentrating, he tilts his head very slightly to bring his augmented left eye to bear. Walks with even weight distribution, suggesting either good physical conditioning or learned compensation for the spinal issue. At rest, he tends to keep his hands visible and still, palms up — a gesture that reads as both openness and control.",
-    "clothing_style": "Tier 5 utilitarian with embedded practicality. Typically wears: loose linen or synthetic blend work shirts in faded grey, tan, or cream, sleeves rolled to mid-forearm to keep augmented hands visible and accessible. Cargo pants or modified medical scrub bottoms in slate grey or forest green, with reinforced thigh pockets for instruments and supplies. An aged brown canvas coat with multiple interior pockets, visible repair patches, and the faint smell of antiseptic is his near-constant outer layer. Work boots are high-topped, oil-resistant, and visibly resoled multiple times. No corporate branding. No chrome. No affectation. Everything is worn smooth by use and weather. A single piece of jewelry: a titanium wedding band on his left ring finger, no longer worn for marital reasons but kept as anchoring weight."
-  },
-  "image_prompt": "Bahar Jaramillo-Cissé, 185cm tall, weathered older man with rich warm brown skin with bronze and copper undertones reflecting Sub-Saharan, Southeast Asian, and Hispanic ancestry. White and iron-grey close-cropped hair, dark eyebrows. Deeply lined face with high cheekbones and prominent nasal bridge, aged amber-gold cybernetic left eye with luminescent grid overlay glowing faintly, natural dark brown right eye. Thin scar across left temple. Broad-shouldered muscular build, slight midsection softness. Wears faded grey linen shirt with rolled sleeves revealing silver filaments threaded through hands, dark cargo pants, aged brown canvas coat with repair patches. Surgical scar visible on left forearm. Surgical scars on knuckles. Stands with economical posture, hands visible and still with palms up. Titanium wedding band on left ring finger. GLMZ canal-district industrial setting, tungsten and neon lighting, weathered background, contemplative expression, hands in focus, low-light moody atmosphere --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 31.7,
-    "Southeast Asian": 27.3,
-    "Hispanic/Latin American": 25,
-    "Eastern European": 6.8,
-    "Northern European": 6.2,
-    "South Asian": 3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zimbabwean": 31,
-        "Zambian": 0.7
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Javanese": 27.3
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Salvadoran": 25
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 0.6,
-        "Romanian": 0.8
-      },
-      "Slavic South": {
-        "Bosnian": 3.9
-      },
-      "Slavic East": {
-        "Ukrainian": 1.2,
-        "Belarusian": 0.3
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Austrian": 3.3
-      },
-      "British Isles": {
-        "Welsh": 1.1
-      },
-      "Scandinavian": {
-        "Norwegian": 1.8
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Punjabi Pakistani": 2.5
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 0.5
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5b9738ba3ec4a86de0cc242",
+    "type":  "character",
+    "name":  "Bahar Jaramillo-CissÃ©",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Street-level medic and unlicensed augmentation surgeon operating out of Old Harbor",
+    "age":  58,
+    "status":  "active",
+    "location":  "Old Harbor, sub-level canal district, near sub-level access near State and Van Buren",
+    "description":  "Bahar Jaramillo-CissÃ© is a broad-shouldered man whose face has been mapped by decades of difficult living â€” deep-set creases around his eyes, a jaw that still carries the ghost of old muscle, skin the warm brown of river silt that has seen too many winters. His hair is close-cropped and almost entirely white, though his eyebrows remain stubbornly dark, giving him an expression of permanent mild surprise. He works in a converted barge permanently moored at Canal 7, where the smell of antiseptic and frying oil from the neighbouring food stall have become inseparable. His hands are his most striking feature: enormous, steady, and threaded with the fine silver filaments of a haptic-feedback augmentation that lets him feel at the microscopic level â€” installed, he\u0027ll tell anyone who asks, by himself, on himself, without anaesthetic, in 2171.\n\nHe was once a licensed trauma surgeon at a Meridian Core hospital before a malpractice suit â€” widely believed to have been engineered by a corporate competitor â€” stripped him of his credentials and left him with a debt load that pushed him to the Gray Zone and eventually to Old Harbor. He rebuilt himself slowly, earning trust one stitched wound at a time, one extracted bullet at a time, until the canal district came to regard him as something between a doctor and a priest. He charges what people can pay, which is often very little, and he has never turned away a patient who was bleeding.\n\nBahar Jaramillo-CissÃ© carries his past with the careful stillness of a man who has decided not to be destroyed by it, but has not quite decided to forgive it either. He drinks a single glass of real Scotch every evening at precisely 8 p.m. â€” a ritual that functions simultaneously as reward, mourning, and punctuation. He keeps a photograph of his daughter, Liria, tucked under the lip of his operating lamp. She is in The Spire now, a junior executive at Helix-Vantage Biomedical. They have not spoken in eleven years.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That his competence will one day fail someone who trusted him completely",
+                                          "That Liria has become exactly what the system that destroyed him wanted her to become",
+                                          "That his exile from medicine was partly deserved â€” that he was arrogant, and the system only named it"
+                                      ],
+                       "core_desires":  [
+                                            "To practice medicine with full resources, just once more, without apology",
+                                            "A reconciliation with Liria that does not require either of them to lie",
+                                            "To see Old Harbor become a place where people do not have to choose between eating and healing"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Radical focus on the immediate task â€” when working, nothing else exists",
+                                                 "Dark, self-deprecating humour deployed before anyone else can aim it at him",
+                                                 "Maintaining strict daily routines as proof of personal order amid external chaos",
+                                                 "Mentorship â€” teaching what he knows to anyone willing to learn"
+                                             ],
+                       "blind_spots":  [
+                                           "Mistakes stubbornness for principle, sometimes to the detriment of patients who need referral",
+                                           "Underestimates how much his martyrdom narrative shapes his choices",
+                                           "Cannot see that some people in Old Harbor rely on his presence so heavily it has become a form of dependency he enables"
+                                       ],
+                       "secret":  "The malpractice suit was not entirely fabricated. Augustin made an error â€” a small one, non-fatal, but real â€” and rather than disclose it, he let the corporate narrative swallow it whole. He has never told anyone. The patient lived. He isn\u0027t sure that matters."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Medical precision mixed with the worn idioms of someone who has lived in many cities; occasional Spanish phrases, especially under stress; avoids corporate jargon with visible distaste",
+                            "cadence":  "Slow and deliberate when explaining, faster and clipped when working; capable of long, winding sentences that arrive at their point only after establishing every surrounding condition",
+                            "verbal_tics":  [
+                                                "\"You follow me?\" â€” used to check comprehension, not condescend",
+                                                "A habit of naming the body part before describing what he\u0027s doing to it",
+                                                "Starts disagreements with \"Nowâ€”\" and a brief pause",
+                                                "Refers to death as \"the door\""
+                                            ],
+                            "example_lines":  [
+                                                  "\"Now â€” I hear what you\u0027re saying, and I respect it, but your spleen is not interested in your ideology right now.\"",
+                                                  "\"The liver\u0027s taken worse. Probably. Lie still.\"",
+                                                  "\"You follow me? Good. Because I\u0027m going to need you conscious for the next part and it would help if you trusted me.\"",
+                                                  "\"I\u0027ve been past the door three times on the table and twice off it. I know what it looks like. You\u0027re not there yet. Hold on.\"",
+                                                  "\"She works for Helix-Vantage. My daughter. No, I don\u0027t want to talk about it. Hold the light steady.\""
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Liria Reyes-Mbatha",
+                              "type":  "estranged daughter",
+                              "description":  "Junior executive at Helix-Vantage Biomedical in The Spire; has not contacted Augustin in eleven years",
+                              "emotional_core":  "A grief he has categorised as resolved and visits nightly",
+                              "story_tension":  "Liria may be involved in a Helix-Vantage project that will directly affect Old Harbor patients; the plot may force contact neither of them has prepared for"
+                          },
+                          {
+                              "name":  "Sable",
+                              "type":  "uneasy ally",
+                              "description":  "Sable occasionally routes injured contacts to Augustin\u0027s barge; Augustin treats them without asking questions he doesn\u0027t want answered",
+                              "emotional_core":  "Mutual respect built on shared commitment to not letting people die unnecessarily; neither fully trusts the other\u0027s methods",
+                              "story_tension":  "Sable\u0027s work keeps bringing patients whose injuries suggest an escalating conflict Augustin is being kept deliberately ignorant of"
+                          },
+                          {
+                              "name":  "Perpetua Okafor",
+                              "type":  "professional respect, cautious friendship",
+                              "description":  "Perpetua has sent community members to Augustin and occasionally consults him on health conditions in her district; they share a background of institutional betrayal",
+                              "emotional_core":  "Recognition â€” two people who see the shape of each other\u0027s losses without needing them explained",
+                              "story_tension":  "Perpetua knows something about the original malpractice case that Augustin does not, and hasn\u0027t decided whether telling him would help or destroy him"
+                          }
+                      ],
+    "story_hooks":  [
+                        "A patient arrives with an augmentation Augustin has never seen â€” proprietary, deeply embedded, and actively resisting removal â€” and the person who installed it is hunting the patient",
+                        "Liria contacts Augustin through an intermediary with a job offer that is clearly also a surveillance operation; he doesn\u0027t know whether she\u0027s warning him or baiting him",
+                        "A series of Old Harbor residents are presenting with identical neurological symptoms; Augustin begins to suspect the water filtration system has been tampered with, and the tampering is recent",
+                        "A young medic apprentice Augustin has been training is offered a corporate scholarship â€” the same institution that destroyed his career â€” and asks his advice",
+                        "Evidence surfaces that the patient from his original malpractice case has been found dead, the circumstances pointing to deliberate silencing, and someone is leaving that information where Augustin will find it"
+                    ],
+    "narrative_function":  "Moral anchor and threshold guardian for the street-level world; represents the cost of integrity in a system designed to monetise suffering; his barge functions as a neutral ground where information and people converge",
+    "augmentations":  "Haptic-feedback microsurgical filaments in both hands (self-installed, uncertified),Subdermal toxin-analysis patch on left forearm â€” identifies contaminants on contact,Optical overlay for vein and tissue mapping, left eye only (right eye refused on principle),Cervical pain-suppression node â€” installed to manage a spinal injury, kept because the work requires it",
+    "daily_life":  "Wakes at 5 a.m. regardless of when he slept, makes strong coffee in a battered press, reviews any overnight patients. Mornings are walk-in hours; afternoons are appointments, teaching, or supply runs through Old Harbor\u0027s grey market. Evenings are for complex procedures requiring controlled conditions. The 8 p.m. Scotch is inviolable. Sleeps in a hammock strung across the barge\u0027s bow cabin, often with a medical text open on his chest.",
+    "affiliation":  "Independent; loosely aligned with Old Harbor\u0027s informal mutual aid networks; explicitly unaffiliated with any corporate or government body",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+                                 "Heal the unhealable",
+                                 "Atone through service",
+                                 "Reconnect with Liria"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  7,
+                                                    "response":  "Retreats into procedural focus, humor becomes darker"
+                                                },
+                                     "moral":  7,
+                                     "trust":  5,
+                                     "desperation":  7
+                                 },
+                  "strengths":  [
+                                    "Kindness",
+                                    "Perseverance",
+                                    "Judgment",
+                                    "Leadership",
+                                    "Bravery"
+                                ],
+                  "weaknesses":  [
+                                     "Humility",
+                                     "Forgiveness",
+                                     "Prudence",
+                                     "Teamwork",
+                                     "Hope"
+                                 ],
+                  "tags":  [
+                               "street-doctor",
+                               "ex-surgeon",
+                               "mentor",
+                               "self-augmented",
+                               "martyr-complex",
+                               "barge-clinic",
+                               "old-harbor"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will never turn away a bleeding patient regardless of faction or ability to pay",
+                                              "Will always explain a procedure before performing it, even under fire",
+                                              "Will never refer a patient to a corporate facility unless death is the alternative",
+                                              "Will always maintain the 8 p.m. Scotch ritual â€” it is the last structure holding him together",
+                                              "Will never discuss Liria voluntarily â€” the subject is closed until she opens it",
+                                              "Will always teach anyone willing to learn, even at cost to his own schedule",
+                                              "Will never accept payment he considers disproportionate to the patient\u0027s means"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Self-deprecating deflection â€” humor to lower the temperature",
+                                                 "Clinical detachment â€” treats the conflict like a diagnosis, names the problem precisely",
+                                                 "Quiet, immovable refusal â€” \u0027Nowâ€”\u0027 followed by a boundary that will not move",
+                                                 "Deploys the authority of thirty years of trauma medicine â€” voice drops, hands steady, the room obeys",
+                                                 "Walks away entirely and does not look back â€” his final escalation is absence"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "Liria":  "Avoidant grief masked as acceptance; keeps her photo where he works as penance",
+                                                   "Sable":  "Professional courtesy stretched thin over mutual suspicion; treats Sable\u0027s people without asking questions",
+                                                   "Perpetua Okafor":  "Quiet recognition â€” two institutional refugees who share losses without naming them",
+                                                   "Patients":  "Warm authority â€” the doctor-priest hybrid Old Harbor needs"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Maintains routines with extra precision, coffee gets stronger",
+                                                "medium":  "Spanish phrases surface, humor sharpens to a cutting edge",
+                                                "high":  "Goes silent except for clinical communication, works until his hands shake",
+                                                "critical":  "The old arrogance resurfaces â€” he becomes the Meridian Core surgeon again, brilliant and terrifying"
+                                            },
+                       "contradictions":  [
+                                              "Teaches honesty in medicine while concealing the truth about his malpractice case",
+                                              "Refuses corporate medicine on principle while his cervical implant keeps him functional",
+                                              "Creates dependency in Old Harbor while believing he empowers self-sufficiency"
+                                          ],
+                       "habits":  [
+                                      "Makes coffee in a battered press at 5 a.m. regardless of sleep",
+                                      "Names the body part aloud before touching it during examination",
+                                      "Checks on Liria\u0027s photograph under the operating lamp at the start of each procedure",
+                                      "Walks the barge deck once before any complex surgery",
+                                      "Pours the 8 p.m. Scotch with his left hand â€” always the left"
+                                  ],
+                       "breaking_points":  [
+                                               "A patient dying because he lacked resources he once had access to",
+                                               "Liria appearing in person, unannounced, on the barge",
+                                               "The original malpractice error becoming public knowledge in Old Harbor",
+                                               "Being forced to choose between two patients when only one can be saved"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Nurturer":  0.7,
+                       "Provider":  0.7,
+                       "Charmer":  0.7,
+                       "Bleeding Heart":  0.6
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Old Harbor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027",
+                            "Nkomo-Lindqvist NL-9SD \u0027Lullaby\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027",
+                                "Nkomo-Lindqvist NL-9SD \u0027Lullaby\u0027"
+                            ],
+    "related_entities":  [
+                             "Meridian Core",
+                             "The Filament",
+                             "The Spire",
+                             "Neural Feedback Carbine NFC-3 \u0027Mirrorgun\u0027",
+                             "Crucible Industries CR-2 \u0027Trapdoor\u0027",
+                             "CRUCIBLE Vantage Artisan Precision Hand",
+                             "VitaCore FlowGuard Hemodynamic Regulator",
+                             "Silver",
+                             "Harbor Fish Shack",
+                             "Slagworks Industrial",
+                             "The Pure Hand",
+                             "Glass"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Deep diaspora blend: 31.7% Sub-Saharan African (primary), 27.3% Southeast Asian, 25% Hispanic/Latin American, 6.8% Eastern European, 6.2% Northern European, 3% South Asian. Features reflect this intricate genetic weavingâ€”warm brown skin with bronze and copper undertones, facial structure showing West/Central African bone prominence softened by Southeast Asian and Hispanic facial geometry, with subtle eye shape contribution from South and Southeast Asian ancestry.",
+                                 "height_cm":  185,
+                                 "weight_kg":  92,
+                                 "build":  "Broad-shouldered and still muscular despite age, with the dense frame of someone who has done physical labor for decades. Chest and shoulders retain definition; slight softening at the midsection from years of late-night coffee and minimal exercise, but still fundamentally sturdy.",
+                                 "hair_color":  "White with iron-grey undertones",
+                                 "hair_style":  "Close-cropped, military precision, styled with a clipper at approximately 8mm length",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Left eye: amber-gold with faint luminescent grid overlay (vein-mapping optical); Right eye: dark brown, natural",
+                                 "skin_tone":  "Rich warm brown with bronze and copper undertonesâ€”the complex coloration of Sub-Saharan, Southeast Asian, and Hispanic/Latin American ancestry with subtle contributions from Eastern and Northern European heritage. Weathered and uneven from decades under barge-cabin tungsten and canal-district industrial light, with the patina of someone who has spent half their life in artificial environments.",
+                                 "complexion":  "Deeply lined face map reflecting age and exposure: deep creases radiating from the outer corners of both eyes (shaped by mixed ancestry bone structure with African prominence and Southeast Asian eye shape softening), pronounced nasolabial folds, horizontal forehead lines, vertical crease between brows. Jaw still defined despite age; stubble growth appears as iron-grey rather than white. Skin shows minor scarring on left temple (old laceration) and weathering consistent with decades of exposure. Dark eyebrows remain stubbornly dark brown, creating a perpetual expression of mild surprise against white hair. Facial features show the broad nasal bridge and high cheekbone prominence characteristic of Sub-Saharan and Southeast Asian ancestry, with the more delicate bone structure contributed by Hispanic/Latin American and Northern European lineage creating a balanced, mature face.",
+                                 "distinguishing_marks":  [
+                                                              "Thin hairline scar across left temple, approximately 4cm, angling toward the ear â€” result of a trauma from his licensed years, visible only under direct light",
+                                                              "Surgical scar on left forearm (anterior aspect, wrist to mid-forearm) housing the subdermal toxin-analysis patch; scar is thin and well-healed but visible, slightly raised and pale against his skin tone",
+                                                              "Faint burn scars on the knuckles of both hands from self-installed augmentation work; barely visible but felt by anyone who shakes his hand",
+                                                              "Small tattoo on right wrist: a single line in black ink, no more than 2cm, positioned over the radial artery â€” dated 1997, personal meaning unknown to most who ask"
+                                                          ],
+                                 "visible_augmentations":  "Both hands thread with fine silver filaments visible beneath the skin, most apparent on the backs of the hands and between the knuckles when his hands are in motion or light strikes them at an angle. Left eye displays a faint luminescent amber grid overlay, most visible in low light or when he focuses intently. Left forearm bears a subtle raised scarline where the toxin-analysis patch sits subcutaneously. Cervical pain-suppression node is not externally visible but may be palpable as a small subdermal ridge at the base of the skull if touched.",
+                                 "posture_movement":  "Carries himself with the careful vertical stillness of a man managing chronic pain with an implant. Movements are economical and precise â€” no wasted motion. Hands are his primary expressive tool; they move with unusual steadiness and deliberation, especially during conversation. When concentrating, he tilts his head very slightly to bring his augmented left eye to bear. Walks with even weight distribution, suggesting either good physical conditioning or learned compensation for the spinal issue. At rest, he tends to keep his hands visible and still, palms up â€” a gesture that reads as both openness and control.",
+                                 "clothing_style":  "Tier 5 utilitarian with embedded practicality. Typically wears: loose linen or synthetic blend work shirts in faded grey, tan, or cream, sleeves rolled to mid-forearm to keep augmented hands visible and accessible. Cargo pants or modified medical scrub bottoms in slate grey or forest green, with reinforced thigh pockets for instruments and supplies. An aged brown canvas coat with multiple interior pockets, visible repair patches, and the faint smell of antiseptic is his near-constant outer layer. Work boots are high-topped, oil-resistant, and visibly resoled multiple times. No corporate branding. No chrome. No affectation. Everything is worn smooth by use and weather. A single piece of jewelry: a titanium wedding band on his left ring finger, no longer worn for marital reasons but kept as anchoring weight."
+                             },
+    "image_prompt":  "Bahar Jaramillo-CissÃ©, 185cm tall, weathered older man with rich warm brown skin with bronze and copper undertones reflecting Sub-Saharan, Southeast Asian, and Hispanic ancestry. White and iron-grey close-cropped hair, dark eyebrows. Deeply lined face with high cheekbones and prominent nasal bridge, aged amber-gold cybernetic left eye with luminescent grid overlay glowing faintly, natural dark brown right eye. Thin scar across left temple. Broad-shouldered muscular build, slight midsection softness. Wears faded grey linen shirt with rolled sleeves revealing silver filaments threaded through hands, dark cargo pants, aged brown canvas coat with repair patches. Surgical scar visible on left forearm. Surgical scars on knuckles. Stands with economical posture, hands visible and still with palms up. Titanium wedding band on left ring finger. GLMZ canal-district industrial setting, tungsten and neon lighting, weathered background, contemplative expression, hands in focus, low-light moody atmosphere --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  31.7,
+                             "Southeast Asian":  27.3,
+                             "Hispanic/Latin American":  25,
+                             "Eastern European":  6.8,
+                             "Northern European":  6.2,
+                             "South Asian":  3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  31,
+                                                                                 "Zambian":  0.7
+                                                                             }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Javanese":  27.3
+                                                                   }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  25
+                                                                                 }
+                                                        },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  0.6,
+                                                                             "Romanian":  0.8
+                                                                         },
+                                                     "Slavic South":  {
+                                                                          "Bosnian":  3.9
+                                                                      },
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  1.2,
+                                                                         "Belarusian":  0.3
+                                                                     }
+                                                 },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Austrian":  3.3
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "Welsh":  1.1
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  1.8
+                                                                       }
+                                                  },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  2.5
+                                                              },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  0.5
+                                                                }
+                                            }
+                        },
+    "tier":  "3"
 }

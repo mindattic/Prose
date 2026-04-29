@@ -1,362 +1,375 @@
-{
-  "id": "019d6143a73d79a9b07a41036123a4a9",
-  "type": "character",
-  "name": "Chimamanda Fredriksen",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Personnel recovery and hostile extraction — extraction specialist",
-  "age": 55,
-  "status": "active",
-  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Armitage and Milwaukee",
-  "description": "Chimamanda Fredriksen is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 55, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Chimamanda Fredriksen plans to keep it that way. She works as a extraction specialist out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Chimamanda Fredriksen is known for getting the job done and not asking questions that would make the job harder to stomach.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.92,
-      "ideal": 0.23,
-      "id": 0.82,
-      "shadow": 0.53,
-      "mask": 0.97,
-      "ghost": 0.38
-    },
-    "core_fears": [
-      "Being replaced — younger, faster, cheaper runners coming up behind them",
-      "Losing control of their own body to a hacker or malfunctioning cyberware",
-      "Dying alone in some alley and nobody noticing for weeks"
-    ],
-    "core_desires": [
-      "Knowledge — to understand the systems that grind people down",
-      "To find the person who burned them and make it educational",
-      "To prove everyone who dismissed them catastrophically wrong"
-    ],
-    "coping_mechanisms": [
-      "Planning — responds to chaos by making detailed contingency plans for everything",
-      "Overwork — takes every contract offered because idleness invites thinking",
-      "Violence — hits something when they can't process emotions, preferably something that deserves it"
-    ],
-    "blind_spots": [
-      "Overestimates their own abilities in situations outside their specialty",
-      "Fails to notice when their own behavior mirrors the people they despise",
-      "Believes their trauma makes them special instead of recognizing it as damage to manage"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
-    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
-    "verbal_tics": [
-      "Calls everyone 'friend' — the warmth varies from genuine to threatening",
-      "Swears in three languages, often in the same sentence"
-    ],
-    "example_lines": [
-      "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
-      "\"The extraction window is four minutes. I've done it in three.\"",
-      "\"I don't rescue people. I relocate them aggressively.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Zurab Ivanov-Appiah discovers a job they completed last year was a setup for something much larger and much worse",
-    "Zurab Ivanov-Appiah intercepts intelligence about a threat to their district and must decide between profit and protection",
-    "A former associate resurfaces with evidence that could destroy Zurab Ivanov-Appiah's reputation — and a price for silence"
-  ],
-  "narrative_function": "Zurab Ivanov-Appiah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes. Eye replacement — one organic, one cybernetic with recording capability and zoom",
-  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Unaffiliated — too volatile for permanent crews",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 5
-      },
-      "agility": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 7
-      },
-      "endurance": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 5
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 5
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 7
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 4
-      },
-      "willpower": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 4
-      },
-      "technical": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 8
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 4
-      },
-      "intimidation": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 6
-      },
-      "deception": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 6
-      },
-      "empathy": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 5
-      }
-    },
-    "personality": {
-      "aggression": 0.97,
-      "caution": 0.11,
-      "loyalty": 0.9,
-      "greed": 0.5,
-      "empathy": 0.58
-    },
-    "drives": [
-      "freedom",
-      "justice",
-      "reputation"
-    ],
-    "thresholds": {
-      "pain": 7,
-      "stress": 8,
-      "loyalty_break": 9
-    },
-    "strengths": [
-      "physical endurance",
-      "pain tolerance beyond normal limits"
-    ],
-    "weaknesses": [
-      "trust issues that limit crew effectiveness",
-      "grudge-holding that compromises rational decision-making"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "extraction specialist",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Always verifies target identity independently before lethal contracts",
-      "Never discusses active contracts with anyone not directly involved"
-    ],
-    "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
-      "Preaches independence but is desperate for approval from people they respect",
-      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
-    ],
-    "habits": [
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
-    ],
-    "breaking_points": [
-      "Being publicly exposed — name, face, address, all of it blown",
-      "Losing their primary augmentation — the one that defines their professional identity"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Hydraulic joints in knees and elbows",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
-      "replaces": ""
-    },
-    {
-      "name": "Eye replacement",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Eye replacement — one organic, one cybernetic with recording capability and zoom",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Tactician": 0.9,
-    "Protector": 0.9,
-    "Improviser": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Steamvent Alley",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Burden of Longitude",
-    "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Indigenous American (43.9%) dominant with substantial Northern European (26.1%), East Asian (17.0%), South Asian (8.7%), and Middle Eastern (4.3%) ancestry. This blend produces warm medium-brown skin with golden and olive undertones, distinctive eye geometry reflecting East and South Asian heritage mixed with broader cheekbones and nose structure from Indigenous and Northern European ancestry, creating a uniquely blended facial structure that defies simple categorization.",
-    "height_cm": 178,
-    "weight_kg": 92,
-    "build": "Broad-shouldered and heavy-set, muscular underneath a layer of accumulated weight that reads as density rather than softness. Thick through the torso and limbs — built like someone who absorbs punishment and stays upright.",
-    "hair_color": "Steel gray with darker roots",
-    "hair_style": "Pulled back in a tight, practical braid, no frills",
-    "hair_length": "Medium",
-    "eye_color": "Left eye: deep brown with warm undertones, natural. Right eye: chrome-housed cybernetic with visible LED targeting reticle, amber luminescence when active",
-    "skin_tone": "Warm medium-bronze with golden and olive undertones, weathered from exposure and chemical-laden Steamvent air. The tone reflects the blended ancestry — complex mid-range bronze from Indigenous-Northern European base, subtly warmed by East and South Asian genetics, catching light with olive-shifted depth.",
-    "complexion": "Deep laugh lines around the mouth, prominent cheekbones with structure reflecting Indigenous and Northern European heritage balanced with East Asian-influenced eye placement and slight South Asian nasal bridge character. Minimal grooming beyond functional maintenance. Scarring along the left temple fades into her hairline. Skin has a slight chemical sheen from geothermal district residue. Facial geometry shows harmonious blend of broad Indigenous and Northern European features with narrower East and South Asian eye geometry.",
-    "distinguishing_marks": [
-      "Hydraulic port access points visible at elbows — chrome plating recessed into skin, servicing marks still readable",
-      "Matching hydraulic knee assemblies visible when she moves or sits — chrome framework integrated with muscle, pressure lines etched into the metal",
-      "Burn scarring across the right shoulder and upper arm, old and paled but textured, partially concealed by clothing",
-      "Small, faded tactical tattoo on the inside of her left wrist — geometric, possibly military or corporate origin, deliberately understated",
-      "Surgical scar tissue along the right temple where the eye replacement integrates with the skull"
-    ],
-    "visible_augmentations": "Hydraulic knee and elbow joints with exposed chrome framework — not hidden, not flaunted, simply present. Right eye cybernetic with amber LED visible in low light. Micro-hydraulic servos create subtle clicking sounds during precise movements. No attempt to pass as unaugmented.",
-    "posture_movement": "Moves with economical precision — every motion calculated for efficiency and minimal energy waste. Sits with weight distributed to absorb quick vertical movement. Favors her left side slightly when standing. Stance is wide, grounded. When at rest, she is truly still — no fidgeting, no nervous tells. When moving, the hydraulics whisper.",
-    "clothing_style": "Tier 4 practicality — reinforced cargo pants with thigh pockets for tools or sidearm, tactical vest over a loose-fitting thermal base layer to accommodate augmentation cooling ports. Weather-resistant synthetic jacket with hood. Heavy boots with reinforced heel plating. No logos, no flash, no color beyond functional black and dark gray. Clothing shows wear and careful repair. No jewelry. All garments have concealment capability."
-  },
-  "image_prompt": "Chimamanda Fredriksen, 2226 neo-noir character, 178cm tall broad-shouldered muscular build. Warm bronze-toned skin blending Indigenous American, Northern European, East Asian, and South Asian heritage — medium-brown complexion with golden olive undertones. Deep brown left eye, chrome cybernetic right eye with amber LED reticle. Steel gray hair braided back. Prominent cheekbones, laugh lines, left temple scar fading into hairline. Exposed chrome hydraulic framework visible at elbows and knees integrated with muscle tissue. Old burn scarring on right shoulder and arm. Wearing black reinforced cargo tactical vest over thermal base layer, weather-resistant jacket with hood, heavy reinforced boots. Faded geometric tactical tattoo on left wrist. Grounded wide stance, economical movement. Geothermal Steamvent district setting, low industrial lighting casting amber and blue shadows, slight chemical atmospheric haze, chrome framework catching light. GLMZ 2200s aesthetic, utilitarian and worn but functional. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Indigenous American": 43.9,
-    "Northern European": 26.1,
-    "East Asian": 17,
-    "South Asian": 8.7,
-    "Middle Eastern": 4.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Nahua": 10,
-        "Maya": 18.8
-      },
-      "Andean": {
-        "Aymara": 15.1
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "English": 7.7,
-        "Irish": 18.4
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Shanghainese": 8.9,
-        "Sichuanese": 0.6
-      },
-      "Korean": {
-        "Korean": 1.2
-      },
-      "Japanese": {
-        "Japanese": 6.3
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 2.9
-      },
-      "Indian": {
-        "Marathi": 3.4,
-        "Telugu": 1.9
-      },
-      "Nepali": {
-        "Nepali": 0.5
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Iraqi": 2.5,
-        "Kuwaiti": 1.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a73d79a9b07a41036123a4a9",
+    "type":  "character",
+    "name":  "Chimamanda Fredriksen",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Personnel recovery and hostile extraction â€” extraction specialist",
+    "age":  55,
+    "status":  "active",
+    "location":  "Steamvent Alley â€” geothermal district, hot and chemical-smelling, near Armitage and Milwaukee",
+    "description":  "Chimamanda Fredriksen is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 55, she has soft features that belie the chrome underneath â€” people underestimate her once, usually only once. The chrome is visible â€” hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes â€” and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name â€” that person is officially dead, and Chimamanda Fredriksen plans to keep it that way. She works as a extraction specialist out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Chimamanda Fredriksen is known for getting the job done and not asking questions that would make the job harder to stomach.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them",
+                                          "Losing control of their own body to a hacker or malfunctioning cyberware",
+                                          "Dying alone in some alley and nobody noticing for weeks"
+                                      ],
+                       "core_desires":  [
+                                            "Knowledge â€” to understand the systems that grind people down",
+                                            "To find the person who burned them and make it educational",
+                                            "To prove everyone who dismissed them catastrophically wrong"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Planning â€” responds to chaos by making detailed contingency plans for everything",
+                                                 "Overwork â€” takes every contract offered because idleness invites thinking",
+                                                 "Violence â€” hits something when they can\u0027t process emotions, preferably something that deserves it"
+                                             ],
+                       "blind_spots":  [
+                                           "Overestimates their own abilities in situations outside their specialty",
+                                           "Fails to notice when their own behavior mirrors the people they despise",
+                                           "Believes their trauma makes them special instead of recognizing it as damage to manage"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+                            "cadence":  "Rapid and dense â€” information-heavy sentences that demand attention.",
+                            "verbal_tics":  [
+                                                "Calls everyone \u0027friend\u0027 â€” the warmth varies from genuine to threatening",
+                                                "Swears in three languages, often in the same sentence"
+                                            ],
+                            "example_lines":  [
+                                                  "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
+                                                  "\"The extraction window is four minutes. I\u0027ve done it in three.\"",
+                                                  "\"I don\u0027t rescue people. I relocate them aggressively.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Zurab Ivanov-Appiah discovers a job they completed last year was a setup for something much larger and much worse",
+                        "Zurab Ivanov-Appiah intercepts intelligence about a threat to their district and must decide between profit and protection",
+                        "A former associate resurfaces with evidence that could destroy Zurab Ivanov-Appiah\u0027s reputation â€” and a price for silence"
+                    ],
+    "narrative_function":  "Zurab Ivanov-Appiah represents the working professional of the runner world â€” competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
+    "augmentations":  "Hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes. Eye replacement â€” one organic, one cybernetic with recording capability and zoom",
+    "daily_life":  "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather â€” not for pleasure, but for market intelligence.",
+    "affiliation":  "Unaffiliated â€” too volatile for permanent crews",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  0,
+                                                    "effective":  5
+                                                },
+                                   "agility":  {
+                                                   "base":  7,
+                                                   "augmented":  2,
+                                                   "effective":  7
+                                               },
+                                   "endurance":  {
+                                                     "base":  8,
+                                                     "augmented":  0,
+                                                     "effective":  5
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  0,
+                                                    "effective":  5
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  6,
+                                                      "augmented":  3,
+                                                      "effective":  7
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  0,
+                                                    "effective":  4
+                                                },
+                                 "willpower":  {
+                                                   "base":  6,
+                                                   "augmented":  3,
+                                                   "effective":  4
+                                               },
+                                 "technical":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  8
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  6,
+                                                  "augmented":  2,
+                                                  "effective":  4
+                                              },
+                                 "intimidation":  {
+                                                      "base":  6,
+                                                      "augmented":  3,
+                                                      "effective":  6
+                                                  },
+                                 "deception":  {
+                                                   "base":  4,
+                                                   "augmented":  2,
+                                                   "effective":  6
+                                               },
+                                 "empathy":  {
+                                                 "base":  4,
+                                                 "augmented":  2,
+                                                 "effective":  5
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.97,
+                                      "caution":  0.11,
+                                      "loyalty":  0.9,
+                                      "greed":  0.5,
+                                      "empathy":  0.58
+                                  },
+                  "drives":  [
+                                 "freedom",
+                                 "justice",
+                                 "reputation"
+                             ],
+                  "thresholds":  {
+                                     "pain":  7,
+                                     "stress":  8,
+                                     "loyalty_break":  9
+                                 },
+                  "strengths":  [
+                                    "physical endurance",
+                                    "pain tolerance beyond normal limits"
+                                ],
+                  "weaknesses":  [
+                                     "trust issues that limit crew effectiveness",
+                                     "grudge-holding that compromises rational decision-making"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "extraction specialist",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Never discusses active contracts with anyone not directly involved"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess â€” read the situation, identify threats and advantages",
+                                                 "2. Negotiate â€” try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate â€” make the cost of conflict clear",
+                                                 "4. Precision violence â€” surgical, targeted, minimal collateral",
+                                                 "5. Full engagement â€” overwhelming force, no half measures",
+                                                 "6. Emergency protocol â€” abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Professional and transactional. The relationship is defined by the contract and nothing else.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+                                          ],
+                       "habits":  [
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Arrives fifteen minutes early to everything â€” late once, nearly died, never again",
+                                      "Takes a specific route home every time, varying only one block per trip â€” paranoia as lifestyle",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore"
+                                  ],
+                       "breaking_points":  [
+                                               "Being publicly exposed â€” name, face, address, all of it blown",
+                                               "Losing their primary augmentation â€” the one that defines their professional identity"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Hydraulic joints in knees and elbows",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Eye replacement",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Eye replacement â€” one organic, one cybernetic with recording capability and zoom",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Tactician":  0.9,
+                       "Protector":  0.9,
+                       "Improviser":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Steamvent Alley",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Nkomo-Lindqvist NL-22 \u0027Peacemaker\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Burden of Longitude",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Indigenous American (43.9%) dominant with substantial Northern European (26.1%), East Asian (17.0%), South Asian (8.7%), and Middle Eastern (4.3%) ancestry. This blend produces warm medium-brown skin with golden and olive undertones, distinctive eye geometry reflecting East and South Asian heritage mixed with broader cheekbones and nose structure from Indigenous and Northern European ancestry, creating a uniquely blended facial structure that defies simple categorization.",
+                                 "height_cm":  178,
+                                 "weight_kg":  92,
+                                 "build":  "Broad-shouldered and heavy-set, muscular underneath a layer of accumulated weight that reads as density rather than softness. Thick through the torso and limbs â€” built like someone who absorbs punishment and stays upright.",
+                                 "hair_color":  "Steel gray with darker roots",
+                                 "hair_style":  "Pulled back in a tight, practical braid, no frills",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Left eye: deep brown with warm undertones, natural. Right eye: chrome-housed cybernetic with visible LED targeting reticle, amber luminescence when active",
+                                 "skin_tone":  "Warm medium-bronze with golden and olive undertones, weathered from exposure and chemical-laden Steamvent air. The tone reflects the blended ancestry â€” complex mid-range bronze from Indigenous-Northern European base, subtly warmed by East and South Asian genetics, catching light with olive-shifted depth.",
+                                 "complexion":  "Deep laugh lines around the mouth, prominent cheekbones with structure reflecting Indigenous and Northern European heritage balanced with East Asian-influenced eye placement and slight South Asian nasal bridge character. Minimal grooming beyond functional maintenance. Scarring along the left temple fades into her hairline. Skin has a slight chemical sheen from geothermal district residue. Facial geometry shows harmonious blend of broad Indigenous and Northern European features with narrower East and South Asian eye geometry.",
+                                 "distinguishing_marks":  [
+                                                              "Hydraulic port access points visible at elbows â€” chrome plating recessed into skin, servicing marks still readable",
+                                                              "Matching hydraulic knee assemblies visible when she moves or sits â€” chrome framework integrated with muscle, pressure lines etched into the metal",
+                                                              "Burn scarring across the right shoulder and upper arm, old and paled but textured, partially concealed by clothing",
+                                                              "Small, faded tactical tattoo on the inside of her left wrist â€” geometric, possibly military or corporate origin, deliberately understated",
+                                                              "Surgical scar tissue along the right temple where the eye replacement integrates with the skull"
+                                                          ],
+                                 "visible_augmentations":  "Hydraulic knee and elbow joints with exposed chrome framework â€” not hidden, not flaunted, simply present. Right eye cybernetic with amber LED visible in low light. Micro-hydraulic servos create subtle clicking sounds during precise movements. No attempt to pass as unaugmented.",
+                                 "posture_movement":  "Moves with economical precision â€” every motion calculated for efficiency and minimal energy waste. Sits with weight distributed to absorb quick vertical movement. Favors her left side slightly when standing. Stance is wide, grounded. When at rest, she is truly still â€” no fidgeting, no nervous tells. When moving, the hydraulics whisper.",
+                                 "clothing_style":  "Tier 4 practicality â€” reinforced cargo pants with thigh pockets for tools or sidearm, tactical vest over a loose-fitting thermal base layer to accommodate augmentation cooling ports. Weather-resistant synthetic jacket with hood. Heavy boots with reinforced heel plating. No logos, no flash, no color beyond functional black and dark gray. Clothing shows wear and careful repair. No jewelry. All garments have concealment capability."
+                             },
+    "image_prompt":  "Chimamanda Fredriksen, 2226 neo-noir character, 178cm tall broad-shouldered muscular build. Warm bronze-toned skin blending Indigenous American, Northern European, East Asian, and South Asian heritage â€” medium-brown complexion with golden olive undertones. Deep brown left eye, chrome cybernetic right eye with amber LED reticle. Steel gray hair braided back. Prominent cheekbones, laugh lines, left temple scar fading into hairline. Exposed chrome hydraulic framework visible at elbows and knees integrated with muscle tissue. Old burn scarring on right shoulder and arm. Wearing black reinforced cargo tactical vest over thermal base layer, weather-resistant jacket with hood, heavy reinforced boots. Faded geometric tactical tattoo on left wrist. Grounded wide stance, economical movement. Geothermal Steamvent district setting, low industrial lighting casting amber and blue shadows, slight chemical atmospheric haze, chrome framework catching light. GLMZ 2200s aesthetic, utilitarian and worn but functional. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Indigenous American":  43.9,
+                             "Northern European":  26.1,
+                             "East Asian":  17,
+                             "South Asian":  8.7,
+                             "Middle Eastern":  4.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  10,
+                                                                             "Maya":  18.8
+                                                                         },
+                                                        "Andean":  {
+                                                                       "Aymara":  15.1
+                                                                   }
+                                                    },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "English":  7.7,
+                                                                            "Irish":  18.4
+                                                                        }
+                                                  },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Shanghainese":  8.9,
+                                                               "Sichuanese":  0.6
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  1.2
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  6.3
+                                                            }
+                                           },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  2.9
+                                                                },
+                                                "Indian":  {
+                                                               "Marathi":  3.4,
+                                                               "Telugu":  1.9
+                                                           },
+                                                "Nepali":  {
+                                                               "Nepali":  0.5
+                                                           }
+                                            },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  2.5,
+                                                                     "Kuwaiti":  1.8
+                                                                 }
+                                               }
+                        },
+    "tier":  "3"
 }

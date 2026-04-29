@@ -523,10 +523,11 @@ internal class RealDataPathProvider : IPathProvider
     public string EssencesDir => Path.Combine(root, "essences");
     public string NarrativeBiblePath => Path.Combine(root, "narrative_bible.md");
     public string WorldDir => Path.Combine(root, "world");
-    public string FacetsDir => Path.Combine(engineData, "facets");
     public string EngineDataDir => engineData;
     public string MutableDataDir => engineData;
     public string StoriesDir => Path.Combine(engineData, "stories");
+    public string BooksDir => Path.Combine(engineData, "books");
+    public string SeriesDir => Path.Combine(engineData, "series");
     public string GraphDir => Path.Combine(engineData, "graph");
     public string LogDir => Path.Combine(root, "engine", "logs");
     public string ExportDir => Path.Combine(root, "engine", "exports");

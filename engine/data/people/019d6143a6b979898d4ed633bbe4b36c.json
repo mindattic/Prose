@@ -1,268 +1,289 @@
-{
-  "id": "019d6143a6b979898d4ed633bbe4b36c",
-  "type": "character",
-  "name": "Govert Petrović-Balogun",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Union organizer and protest coordinator",
-  "age": 24,
-  "status": "active",
-  "location": "Mexicantown Libre — sleeps in the back of the Ferrogate Transit Workers' Local 9 hall, near Western and Division",
-  "description": "Govert Petrović-Balogun is compact and kinetic, rarely fully still, with medium-brown skin and a geneware tail — a long, expressive black cat tail they got at seventeen — that broadcasts their mood with embarrassing accuracy. Their hair is dyed in shifting bands of amber and copper, and they have the kind of face that looks younger than it is, which they've learned to use strategically: people underestimate them exactly once. There are calluses on their hands from six months working actual transit maintenance before they moved into organizing full-time, and they consider those calluses a credential.\n\nGovert Petrović-Balogun has been with Transit Workers' Local 9 for three years and is, depending on who you ask, either the most effective junior organizer the local has seen in a decade or an absolute disaster waiting to happen. Both assessments are probably true. They have an instinct for crowd dynamics and an appetite for confrontation that their more experienced colleagues find alternately inspiring and terrifying. They believe completely in the workers they represent and are only beginning to understand the gap between belief and strategy.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.8,
-      "id": 0.8,
-      "shadow": 0.2,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Getting someone hurt because they moved too fast",
-      "Becoming the kind of leader who talks about workers instead of to them"
-    ],
-    "core_desires": [
-      "A genuine strike win — not a settlement, a win",
-      "To be taken seriously without having to perform seriousness"
-    ],
-    "coping_mechanisms": [
-      "Movement — physical activity, walking, pacing",
-      "Talking it out loud even when no one is there",
-      "Spending time with the E.L.F. of the union hall's old PA system, which they treat as a confidant"
-    ],
-    "blind_spots": [
-      "They read momentum as mandate",
-      "They can't always tell when they've inspired someone versus exhausted them"
-    ],
-    "secret": "During a wildcat action eighteen months ago that went wrong — a blockade that got three workers cited and fined — Rudo had been warned it was premature by their mentor and proceeded anyway. They've never told anyone this. The official union account blames miscommunication. The workers who were fined don't know Rudo knew."
-  },
-  "speech_patterns": {
-    "vocabulary": "Direct, concrete, collective 'we' constantly. Quotes union history with genuine enthusiasm. Uses profanity as punctuation, not emphasis.",
-    "cadence": "Fast and building, with a rhetorical rhythm they've learned from watching older organizers — sets up a beat and carries people along it.",
-    "verbal_tics": [
-      "'We don't ask, we build power.'",
-      "Physical — the tail flicks sharply when they're making a point they're unsure of"
-    ],
-    "example_lines": [
-      "'Ferrogate runs the trains on our labor and they want to reclassify the night crew as contractors. I don't care if it's legal. I care if we let them.'",
-      "'I've been wrong before. I'll be wrong again. The question is whether we're wrong together or right alone, and I know which one wins.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A secret vote is scheduled within Local 9 on whether to affiliate with a larger corponation-adjacent 'workers' advocacy group that Rudo believes is a co-optation attempt — and they don't have the votes yet.",
-    "The three workers fined during the wildcat action eighteen months ago have begun asking questions about who knew what and when."
-  ],
-  "narrative_function": "Local color and action catalyst. They can mobilize people fast and are the character most likely to turn a situation from a conversation into an event. They're also a mentorship opportunity and a liability — their energy is useful and their judgment is developing.",
-  "augmentations": "Geneware cat tail (cosmetic, expressive). Cheap subvocal mic implant for hands-free comms during actions.",
-  "daily_life": "Moves constantly between the union hall, worksites, and community meetings. Eats whatever's available whenever someone puts it in front of them. Attends every public meeting of the Ferrogate Transit corponation they can access, usually in the back row.",
-  "affiliation": "Ferrogate Transit Workers' Local 9; loose network of Mexicantown Libre community organizers",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 7,
-      "perception": 6
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -4,
-      "assertion_deference": -4,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "crowd catalyst",
-      "developing leader",
-      "guilty conscience",
-      "genuine belief",
-      "lovable liability"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Ask the workers first, always",
-      "Don't call an action you can't see the exit from — a rule they're still learning to follow",
-      "Protect your relationships because they're your infrastructure"
-    ],
-    "escalation_ladder": [
-      "Organizing conversation",
-      "Petition and formal grievance",
-      "Public visibility action",
-      "Work-to-rule",
-      "Strike authorization vote",
-      "Strike"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately warm and assessing — are you a worker, a boss, or neither? Moves fast to establish which.",
-      "friends": "Fiercely present, also occasionally suffocating. Texts at 2am with organizing ideas."
-    },
-    "stress_responses": {
-      "low": "Paces. Talks to the PA system E.L.F.",
-      "medium": "Calls a meeting, real or informal, needs to be in motion with other people.",
-      "high": "Goes very quiet and still, which alarmed people who know them — the tail stops moving entirely."
-    },
-    "contradictions": [
-      "Believes in collective process deeply, but makes unilateral decisions when they're scared"
-    ],
-    "habits": [
-      "Leaves transit tokens as offerings at the union hall PA shrine",
-      "Counts exits and sight lines in every room — a habit they picked up from an older organizer and can't explain why they've kept"
-    ],
-    "breaking_points": [
-      "Being directly confronted with evidence of the wildcat action deception",
-      "Watching someone get badly hurt at an action they called"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Mexicantown Libre",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Hearthstone Firearms Defender-38 'Snubnose'"
-  ],
-  "registered_firearms": [
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Hearthstone Firearms Defender-38 'Snubnose'"
-  ],
-  "related_entities": [
-    "Mexicantown Libre",
-    "Ferrogate Transit",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Plot 17",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "The Gradient Compact",
-    "Lacuna Genomics",
-    "Big Rig",
-    "Copper",
-    "The Pure Hand"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Pan-diaspora blend: Sub-Saharan African (50%), Hispanic/Latin American (30.1%), Eastern European (15.6%), Southeast Asian (4.3%). Features a striking mix of warm deep brown and golden undertones with Sub-Saharan African bone structure and facial proportions, Latin American jaw and mouth shape, Eastern European subtle cheekbone definition, and Southeast Asian eye characteristics. Rich melanin expression with warm undertones.",
-    "height_cm": 162,
-    "weight_kg": 58,
-    "build": "Compact and wiry, high muscle density from transit maintenance work. Restless kinetic energy evident even at rest — shoulders often slightly raised, weight constantly shifting between feet.",
-    "hair_color": "Natural dark brown with semi-permanent dye in shifting bands of amber and copper",
-    "hair_style": "Shoulder-length, deliberately unkempt, often pulled back with whatever's at hand — wire, fabric scraps, union pins",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown, alert and calculating",
-    "skin_tone": "Deep warm brown complexion with golden and honey undertones, reflecting the dominant Sub-Saharan African ancestry blended with Latin American and Eastern European warmth — rich melanin expression, medium-to-deep depth",
-    "complexion": "Strong-boned face with prominent cheekbones and defined jaw reflecting Sub-Saharan African ancestry, combined with Latin American fullness in the lower face and wide mouth, Eastern European subtle structure. Youthful features that read younger than 24. Skin shows sun exposure and stress — occasional breakouts along the jaw from inconsistent sleep. Minimal grooming beyond necessity; calluses on palms and finger pads from six months of maintenance work and constant document handling.",
-    "distinguishing_marks": [
-      "Subvocal mic implant visible as a small silvered node at the base of the throat, faintly luminescent when active",
-      "Geneware cat tail: sleek black, feline structure, approximately 60cm long, extends from base of spine with full articulation and fur texture. Ears remain human. The tail moves independently of conscious control, broadcasting emotional states with visibility that Govert finds simultaneously useful and mortifying.",
-      "Callused palms and finger pads, deeply grooved from six months of transit maintenance",
-      "A faint scar on the left knuckle from a tool slip during early maintenance work"
-    ],
-    "visible_augmentations": "Black feline geneware tail with independent articulation, visible at the base of the spine and extending below the hip line — constantly moving. Subvocal mic implant at the throat base, subtle silvered node, faintly luminescent during active transmission.",
-    "posture_movement": "Never fully still. Weight rocks side to side while standing. Hands gesture constantly — punctuating speech, organizing space around them, fidgeting with union pins, fabric, document edges. When focused in conversation, they lean forward with intense eye contact. When agitated or thinking, the tail lashes in tight circles. When confident, the tail arcs high and relaxed. Moves quickly through spaces with purposeful efficiency, rarely walks when they can move with intention.",
-    "clothing_style": "Tier 4 working-class practical with protest aesthetics. Black cargo pants with multiple pockets and frayed cuffs, scuffed steel-toed boots. Oversized union-branded windbreaker or worn flannel shirt layered over cheap synthetic tank tops. Visible union pins, hand-drawn protest patch clusters on jacket sleeves. Wears a faded 'Ferrogate Transit Local 9' baseball cap backward when working public actions. Jewelry minimal: a simple cord bracelet with metal beads made by fellow organizers, clip-on comms earpiece (basic model, visible). No grooming for aesthetics — appearance reflects time scarcity and tier reality."
-  },
-  "image_prompt": "Govert Petrović-Balogun, compact 162cm figure with deep warm brown skin and golden undertones, dark brown alert eyes, shoulder-length dark hair with amber and copper dye bands pulled back with wire. Strong Sub-Saharan African bone structure with Latin American jaw fullness and Eastern European subtle definition. Wiry build, restless kinetic posture. Black articulated feline geneware tail extending from spine, constantly moving. Subvocal mic node visible at throat, faintly luminescent. Wearing scuffed steel-toed boots, black frayed cargo pants, oversized union-branded windbreaker over synthetic tank, visible union pins and hand-drawn protest patches on sleeves. Backward 'Ferrogate Transit Local 9' baseball cap. Cord bracelet with metal beads, basic comms earpiece. Hands mid-gesture. Intense eye contact. GLMZ Great Lakes Metropolitan Zone, gritty transit hub setting, neon-reflected wet concrete, harsh overhead lighting catching the luminescence of the implant, motion blur suggesting constant movement, blue-purple ambient light from transit systems --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 50,
-    "Hispanic/Latin American": 30.1,
-    "Eastern European": 15.6,
-    "Southeast Asian": 4.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "West African": {
-        "Ghanaian": 9.3,
-        "Senegalese": 10.3
-      },
-      "East African": {
-        "Tanzanian": 6.6,
-        "Ethiopian": 1.3
-      },
-      "Southern African": {
-        "Zambian": 5.5,
-        "South African": 17
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Dominican": 8.8,
-        "Puerto Rican": 1.1
-      },
-      "Mexican": {
-        "Mexican": 11.1
-      },
-      "South American": {
-        "Colombian": 9.1
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 15.6
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Waray": 0.7
-      },
-      "Laotian": {
-        "Laotian": 1.9
-      },
-      "Indonesian": {
-        "Sumatran": 1.3,
-        "Sundanese": 0.4
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6b979898d4ed633bbe4b36c",
+    "type":  "character",
+    "name":  "Govert PetroviÄ‡-Balogun",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Union organizer and protest coordinator",
+    "age":  24,
+    "status":  "active",
+    "location":  "Mexicantown Libre â€” sleeps in the back of the Ferrogate Transit Workers\u0027 Local 9 hall, near Western and Division",
+    "description":  "Govert PetroviÄ‡-Balogun is compact and kinetic, rarely fully still, with medium-brown skin and a geneware tail â€” a long, expressive black cat tail they got at seventeen â€” that broadcasts their mood with embarrassing accuracy. Their hair is dyed in shifting bands of amber and copper, and they have the kind of face that looks younger than it is, which they\u0027ve learned to use strategically: people underestimate them exactly once. There are calluses on their hands from six months working actual transit maintenance before they moved into organizing full-time, and they consider those calluses a credential.\n\nGovert PetroviÄ‡-Balogun has been with Transit Workers\u0027 Local 9 for three years and is, depending on who you ask, either the most effective junior organizer the local has seen in a decade or an absolute disaster waiting to happen. Both assessments are probably true. They have an instinct for crowd dynamics and an appetite for confrontation that their more experienced colleagues find alternately inspiring and terrifying. They believe completely in the workers they represent and are only beginning to understand the gap between belief and strategy.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Getting someone hurt because they moved too fast",
+                                          "Becoming the kind of leader who talks about workers instead of to them"
+                                      ],
+                       "core_desires":  [
+                                            "A genuine strike win â€” not a settlement, a win",
+                                            "To be taken seriously without having to perform seriousness"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Movement â€” physical activity, walking, pacing",
+                                                 "Talking it out loud even when no one is there",
+                                                 "Spending time with the E.L.F. of the union hall\u0027s old PA system, which they treat as a confidant"
+                                             ],
+                       "blind_spots":  [
+                                           "They read momentum as mandate",
+                                           "They can\u0027t always tell when they\u0027ve inspired someone versus exhausted them"
+                                       ],
+                       "secret":  "During a wildcat action eighteen months ago that went wrong â€” a blockade that got three workers cited and fined â€” Rudo had been warned it was premature by their mentor and proceeded anyway. They\u0027ve never told anyone this. The official union account blames miscommunication. The workers who were fined don\u0027t know Rudo knew."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Direct, concrete, collective \u0027we\u0027 constantly. Quotes union history with genuine enthusiasm. Uses profanity as punctuation, not emphasis.",
+                            "cadence":  "Fast and building, with a rhetorical rhythm they\u0027ve learned from watching older organizers â€” sets up a beat and carries people along it.",
+                            "verbal_tics":  [
+                                                "\u0027We don\u0027t ask, we build power.\u0027",
+                                                "Physical â€” the tail flicks sharply when they\u0027re making a point they\u0027re unsure of"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Ferrogate runs the trains on our labor and they want to reclassify the night crew as contractors. I don\u0027t care if it\u0027s legal. I care if we let them.\u0027",
+                                                  "\u0027I\u0027ve been wrong before. I\u0027ll be wrong again. The question is whether we\u0027re wrong together or right alone, and I know which one wins.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A secret vote is scheduled within Local 9 on whether to affiliate with a larger corponation-adjacent \u0027workers\u0027 advocacy group that Rudo believes is a co-optation attempt â€” and they don\u0027t have the votes yet.",
+                        "The three workers fined during the wildcat action eighteen months ago have begun asking questions about who knew what and when."
+                    ],
+    "narrative_function":  "Local color and action catalyst. They can mobilize people fast and are the character most likely to turn a situation from a conversation into an event. They\u0027re also a mentorship opportunity and a liability â€” their energy is useful and their judgment is developing.",
+    "augmentations":  "Geneware cat tail (cosmetic, expressive). Cheap subvocal mic implant for hands-free comms during actions.",
+    "daily_life":  "Moves constantly between the union hall, worksites, and community meetings. Eats whatever\u0027s available whenever someone puts it in front of them. Attends every public meeting of the Ferrogate Transit corponation they can access, usually in the back row.",
+    "affiliation":  "Ferrogate Transit Workers\u0027 Local 9; loose network of Mexicantown Libre community organizers",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  7,
+                                   "perception":  6
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -4,
+                                      "assertion_deference":  -4,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "crowd catalyst",
+                               "developing leader",
+                               "guilty conscience",
+                               "genuine belief",
+                               "lovable liability"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Ask the workers first, always",
+                                              "Don\u0027t call an action you can\u0027t see the exit from â€” a rule they\u0027re still learning to follow",
+                                              "Protect your relationships because they\u0027re your infrastructure"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Organizing conversation",
+                                                 "Petition and formal grievance",
+                                                 "Public visibility action",
+                                                 "Work-to-rule",
+                                                 "Strike authorization vote",
+                                                 "Strike"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately warm and assessing â€” are you a worker, a boss, or neither? Moves fast to establish which.",
+                                                   "friends":  "Fiercely present, also occasionally suffocating. Texts at 2am with organizing ideas."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Paces. Talks to the PA system E.L.F.",
+                                                "medium":  "Calls a meeting, real or informal, needs to be in motion with other people.",
+                                                "high":  "Goes very quiet and still, which alarmed people who know them â€” the tail stops moving entirely."
+                                            },
+                       "contradictions":  [
+                                              "Believes in collective process deeply, but makes unilateral decisions when they\u0027re scared"
+                                          ],
+                       "habits":  [
+                                      "Leaves transit tokens as offerings at the union hall PA shrine",
+                                      "Counts exits and sight lines in every room â€” a habit they picked up from an older organizer and can\u0027t explain why they\u0027ve kept"
+                                  ],
+                       "breaking_points":  [
+                                               "Being directly confronted with evidence of the wildcat action deception",
+                                               "Watching someone get badly hurt at an action they called"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Mexicantown Libre",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Nkomo-Lindqvist NL-9SD \u0027Lullaby\u0027",
+                            "Hearthstone Firearms Defender-38 \u0027Snubnose\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Nkomo-Lindqvist NL-9SD \u0027Lullaby\u0027",
+                                "Hearthstone Firearms Defender-38 \u0027Snubnose\u0027"
+                            ],
+    "related_entities":  [
+                             "Mexicantown Libre",
+                             "Ferrogate Transit",
+                             "ShieldTech SB-3 \u0027Groundstrike\u0027",
+                             "Plot 17",
+                             "Crucible Industries Cryogenic Projector CP-7 \u0027Absolute\u0027",
+                             "The Gradient Compact",
+                             "Lacuna Genomics",
+                             "Big Rig",
+                             "Copper",
+                             "The Pure Hand"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Pan-diaspora blend: Sub-Saharan African (50%), Hispanic/Latin American (30.1%), Eastern European (15.6%), Southeast Asian (4.3%). Features a striking mix of warm deep brown and golden undertones with Sub-Saharan African bone structure and facial proportions, Latin American jaw and mouth shape, Eastern European subtle cheekbone definition, and Southeast Asian eye characteristics. Rich melanin expression with warm undertones.",
+                                 "height_cm":  162,
+                                 "weight_kg":  58,
+                                 "build":  "Compact and wiry, high muscle density from transit maintenance work. Restless kinetic energy evident even at rest â€” shoulders often slightly raised, weight constantly shifting between feet.",
+                                 "hair_color":  "Natural dark brown with semi-permanent dye in shifting bands of amber and copper",
+                                 "hair_style":  "Shoulder-length, deliberately unkempt, often pulled back with whatever\u0027s at hand â€” wire, fabric scraps, union pins",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown, alert and calculating",
+                                 "skin_tone":  "Deep warm brown complexion with golden and honey undertones, reflecting the dominant Sub-Saharan African ancestry blended with Latin American and Eastern European warmth â€” rich melanin expression, medium-to-deep depth",
+                                 "complexion":  "Strong-boned face with prominent cheekbones and defined jaw reflecting Sub-Saharan African ancestry, combined with Latin American fullness in the lower face and wide mouth, Eastern European subtle structure. Youthful features that read younger than 24. Skin shows sun exposure and stress â€” occasional breakouts along the jaw from inconsistent sleep. Minimal grooming beyond necessity; calluses on palms and finger pads from six months of maintenance work and constant document handling.",
+                                 "distinguishing_marks":  [
+                                                              "Subvocal mic implant visible as a small silvered node at the base of the throat, faintly luminescent when active",
+                                                              "Geneware cat tail: sleek black, feline structure, approximately 60cm long, extends from base of spine with full articulation and fur texture. Ears remain human. The tail moves independently of conscious control, broadcasting emotional states with visibility that Govert finds simultaneously useful and mortifying.",
+                                                              "Callused palms and finger pads, deeply grooved from six months of transit maintenance",
+                                                              "A faint scar on the left knuckle from a tool slip during early maintenance work"
+                                                          ],
+                                 "visible_augmentations":  "Black feline geneware tail with independent articulation, visible at the base of the spine and extending below the hip line â€” constantly moving. Subvocal mic implant at the throat base, subtle silvered node, faintly luminescent during active transmission.",
+                                 "posture_movement":  "Never fully still. Weight rocks side to side while standing. Hands gesture constantly â€” punctuating speech, organizing space around them, fidgeting with union pins, fabric, document edges. When focused in conversation, they lean forward with intense eye contact. When agitated or thinking, the tail lashes in tight circles. When confident, the tail arcs high and relaxed. Moves quickly through spaces with purposeful efficiency, rarely walks when they can move with intention.",
+                                 "clothing_style":  "Tier 4 working-class practical with protest aesthetics. Black cargo pants with multiple pockets and frayed cuffs, scuffed steel-toed boots. Oversized union-branded windbreaker or worn flannel shirt layered over cheap synthetic tank tops. Visible union pins, hand-drawn protest patch clusters on jacket sleeves. Wears a faded \u0027Ferrogate Transit Local 9\u0027 baseball cap backward when working public actions. Jewelry minimal: a simple cord bracelet with metal beads made by fellow organizers, clip-on comms earpiece (basic model, visible). No grooming for aesthetics â€” appearance reflects time scarcity and tier reality."
+                             },
+    "image_prompt":  "Govert PetroviÄ‡-Balogun, compact 162cm figure with deep warm brown skin and golden undertones, dark brown alert eyes, shoulder-length dark hair with amber and copper dye bands pulled back with wire. Strong Sub-Saharan African bone structure with Latin American jaw fullness and Eastern European subtle definition. Wiry build, restless kinetic posture. Black articulated feline geneware tail extending from spine, constantly moving. Subvocal mic node visible at throat, faintly luminescent. Wearing scuffed steel-toed boots, black frayed cargo pants, oversized union-branded windbreaker over synthetic tank, visible union pins and hand-drawn protest patches on sleeves. Backward \u0027Ferrogate Transit Local 9\u0027 baseball cap. Cord bracelet with metal beads, basic comms earpiece. Hands mid-gesture. Intense eye contact. GLMZ Great Lakes Metropolitan Zone, gritty transit hub setting, neon-reflected wet concrete, harsh overhead lighting catching the luminescence of the implant, motion blur suggesting constant movement, blue-purple ambient light from transit systems --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  50,
+                             "Hispanic/Latin American":  30.1,
+                             "Eastern European":  15.6,
+                             "Southeast Asian":  4.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Ghanaian":  9.3,
+                                                                             "Senegalese":  10.3
+                                                                         },
+                                                        "East African":  {
+                                                                             "Tanzanian":  6.6,
+                                                                             "Ethiopian":  1.3
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Zambian":  5.5,
+                                                                                 "South African":  17
+                                                                             }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Dominican":  8.8,
+                                                                              "Puerto Rican":  1.1
+                                                                          },
+                                                            "Mexican":  {
+                                                                            "Mexican":  11.1
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Colombian":  9.1
+                                                                               }
+                                                        },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  15.6
+                                                                         }
+                                                 },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Waray":  0.7
+                                                                 },
+                                                    "Laotian":  {
+                                                                    "Laotian":  1.9
+                                                                },
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  1.3,
+                                                                       "Sundanese":  0.4
+                                                                   }
+                                                }
+                        },
+    "tier":  "3"
 }

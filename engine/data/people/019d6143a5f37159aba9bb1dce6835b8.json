@@ -1,356 +1,367 @@
-{
-  "id": "019d6143a5f37159aba9bb1dce6835b8",
-  "type": "character",
-  "name": "Bahman Trujillo-Guerrero",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Freelance combat specialist — street samurai",
-  "age": 62,
-  "status": "active",
-  "location": "Kessler Row — arms dealers and augmentation clinics, near Halsted and Chicago Ave",
-  "description": "Bahman Trujillo-Guerrero is compact and densely muscled, built low to the ground like something designed to survive impacts. At 62, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Bahman Trujillo-Guerrero plans to keep it that way. She works as a street samurai out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Bahman Trujillo-Guerrero lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.19,
-      "ideal": 0.23,
-      "id": 0.84,
-      "shadow": 0.16,
-      "mask": 0.61,
-      "ghost": 0.94
-    },
-    "core_fears": [
-      "Losing control of their own body to a hacker or malfunctioning cyberware",
-      "Going cyberpsycho — losing the boundary between human and machine",
-      "Never being able to stop running — the lifestyle is a trap disguised as freedom"
-    ],
-    "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "The perfect run — one job so clean it becomes legend",
-      "Stability — a place to sleep that's the same place two nights running"
-    ],
-    "coping_mechanisms": [
-      "Planning — responds to chaos by making detailed contingency plans for everything",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat",
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
-    ],
-    "blind_spots": [
-      "Cannot see that their independence is actually isolation wearing a better outfit",
-      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there"
-    ],
-    "secret": "Djeneba Tarasov-Yiadom witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
-    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
-    "verbal_tics": [
-      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'",
-      "Refers to killing as 'solving' — clinical detachment as coping mechanism"
-    ],
-    "example_lines": [
-      "\"I don't get paid to have opinions about the target. I get paid to make them stop moving.\"",
-      "\"Chrome doesn't make you faster. Training makes you faster. Chrome just means you survive learning.\"",
-      "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A corporate black site Djeneba Tarasov-Yiadom once infiltrated is being reopened, and the people inside know her face",
-    "Djeneba Tarasov-Yiadom's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
-    "A high-paying contract turns out to target someone Djeneba Tarasov-Yiadom owes a personal debt to"
-  ],
-  "narrative_function": "As a street samurai, Djeneba Tarasov-Yiadom embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes. Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Independent — works solo contracts",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 8
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 10
-      },
-      "reflexes": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 10
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 4
-      },
-      "perception": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 4
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 4
-      },
-      "technical": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 7
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 10
-      },
-      "intimidation": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 10
-      },
-      "deception": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 4
-      },
-      "empathy": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 7
-      }
-    },
-    "personality": {
-      "aggression": 0.86,
-      "caution": 0.94,
-      "loyalty": 0.6,
-      "greed": 0.84,
-      "empathy": 0.65
-    },
-    "drives": [
-      "justice",
-      "freedom",
-      "power"
-    ],
-    "thresholds": {
-      "pain": 8,
-      "stress": 3,
-      "loyalty_break": 10
-    },
-    "strengths": [
-      "intimidating physical presence",
-      "natural leadership presence",
-      "multilingual — speaks 4+ languages fluently"
-    ],
-    "weaknesses": [
-      "chronic insomnia affecting long-term performance",
-      "old injury that flares under specific conditions",
-      "emotional volatility under extreme stress"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "street samurai",
-      "tier-2",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Will not take contracts against children or families — the line is hard and non-negotiable"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Insists they work alone but performs noticeably better in a team",
-      "Values loyalty intensely but has betrayed someone in the past to survive",
-      "Advocates caution to others but takes insane risks personally — double standard they can't see"
-    ],
-    "habits": [
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Eats the same meal before every job — superstition masquerading as preference",
-      "Keeps a physical paper notebook — no digital record of personal thoughts"
-    ],
-    "breaking_points": [
-      "A child being put in danger as leverage against them",
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Being publicly exposed — name, face, address, all of it blown"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Hydraulic joints in knees and elbows",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
-      "replaces": ""
-    },
-    {
-      "name": "Bone lacing",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Protector": 0.9,
-    "Duelist": 0.9,
-    "Code Keeper": 0.9,
-    "Stoic": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Kessler Row",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions MM-4 'Breadwinner'",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions MM-4 'Breadwinner'",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ],
-  "related_entities": [
-    "The Unfinished Theorem",
-    "The Nearfield",
-    "The Gradient Compact",
-    "Chicago",
-    "Slagworks Industrial"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (66.4%) with substantial Eastern European (20.2%) and South Asian (13.4%) ancestry. The blend creates warm golden-brown skin with rich olive and amber undertones from Latin American and South Asian heritage, tempered by cool undertones from Eastern European ancestry. Her facial structure reflects the angular prominence of Eastern European bone structure combined with the defined cheekbones of Latin American heritage and the softer contours characteristic of South Asian ancestry.",
-    "height_cm": 158,
-    "weight_kg": 68,
-    "build": "Compact and densely muscled, built low to the ground with a center of gravity designed for stability and impact absorption. Broad shoulders tapering to a narrow waist. No excess mass — pure functional architecture.",
-    "hair_color": "Steel gray with natural dark undertones",
-    "hair_style": "Pulled back tight in a utilitarian braid, secured with matte black polymer bands",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown",
-    "skin_tone": "Warm golden-brown with rich olive and amber undertones, cooled subtly by Eastern European ancestry. Sun-weathered in high-contact areas, maintaining even tone across the body despite six decades of hard use.",
-    "complexion": "Strong, angular features blending Latin American and Eastern European bone structure with South Asian softness — high, well-defined cheekbones with moderate width through the face, squared jawline with subtle roundness at the corners. Deep-set dark eyes. Minimal facial scarring. Skin shows the weathering of six decades and hard living, maintained with disciplined care. Thin lips, often pressed into a flat line.",
-    "distinguishing_marks": [
-      "Long surgical scar running down the inside of left forearm — augmentation installation point, partially camouflaged by tattoo work",
-      "Tattoo of geometric pattern wrapping the right shoulder — appears to mark augmentation seams beneath the skin",
-      "Burn scar across knuckles of right hand — old, pre-augmentation, from before the chrome",
-      "Small notch missing from left ear — probably from a contract gone sideways"
-    ],
-    "visible_augmentations": "Hydraulic joint assemblies visible at knees and elbows — polished titanium and brushed steel with synthetic muscle cabling. The joints are seamlessly integrated but unmissable — no effort made to hide them. Faint seams along the forearms and shins suggest bone lacing beneath the skin. Subtle LED indicators glow amber at the elbow and knee joints when she moves under load.",
-    "posture_movement": "Stands with weight balanced low and forward — a fighter's stance held at rest. Moves with mechanical precision, each motion economical and intentional. No wasted gesture. When she walks, there is a barely perceptible hitch in the rhythm where the hydraulic joints compensate for impacts. She carries herself like someone who has already accounted for everything that could go wrong.",
-    "clothing_style": "Tier 4 practical — form-fitting synth-leather jacket in matte black, unbranded. Cargo pants in dark gray with reinforced stitching and internal holster points. Steel-toed combat boots, scuffed and re-maintained repeatedly. A thin silver chain around her neck with no visible pendant. No jewelry, no corpo logos, no affectation."
-  },
-  "image_prompt": "Bahman Trujillo-Guerrero, 158cm tall neo-noir operative with warm golden-brown skin blending Hispanic, Eastern European and South Asian heritage, strong angular features with high cheekbones and defined jawline. Steel gray hair in tight utilitarian braid, dark brown eyes. Six decades weathered but maintained, minimal facial scars. Visible titanium hydraulic joints at elbows and knees with amber LED indicators, bone-lace seams on forearms and shins, surgical scar on left forearm partially hidden by geometric tattoo, notch missing from left ear. Compact muscular build, fighter's stance. Matte black synth-leather jacket, dark gray cargo pants with reinforcement, scuffed steel-toed boots, silver chain necklace. Standing in neon-lit Great Lakes Metropolitan alleyway, rain-slick pavement, GLMZ, moody lighting with amber and blue neon reflections, intense focused expression, ready posture, mechanical precision in every movement --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 66.4,
-    "Eastern European": 20.2,
-    "South Asian": 13.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 13.2,
-        "Brazilian": 6.6
-      },
-      "Caribbean": {
-        "Haitian": 3.8,
-        "Cuban": 8.7
-      },
-      "Central American": {
-        "Nicaraguan": 11.1,
-        "Salvadoran": 23
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 9.5
-      },
-      "Slavic South": {
-        "Serbian": 1.5
-      },
-      "Magyar-Romanian": {
-        "Romanian": 9.2
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 10.7
-      },
-      "Sri Lankan": {
-        "Sinhalese": 2.3,
-        "Tamil Sri Lankan": 0.4
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5f37159aba9bb1dce6835b8",
+    "type":  "character",
+    "name":  "Bahman Trujillo-Guerrero",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Freelance combat specialist â€” street samurai",
+    "age":  62,
+    "status":  "active",
+    "location":  "Kessler Row â€” arms dealers and augmentation clinics, near Halsted and Chicago Ave",
+    "description":  "Bahman Trujillo-Guerrero is compact and densely muscled, built low to the ground like something designed to survive impacts. At 62, she has soft features that belie the chrome underneath â€” people underestimate her once, usually only once. The chrome is visible â€” hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes â€” and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name â€” that person is officially dead, and Bahman Trujillo-Guerrero plans to keep it that way. She works as a street samurai out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Bahman Trujillo-Guerrero lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing control of their own body to a hacker or malfunctioning cyberware",
+                                          "Going cyberpsycho â€” losing the boundary between human and machine",
+                                          "Never being able to stop running â€” the lifestyle is a trap disguised as freedom"
+                                      ],
+                       "core_desires":  [
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "The perfect run â€” one job so clean it becomes legend",
+                                            "Stability â€” a place to sleep that\u0027s the same place two nights running"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Planning â€” responds to chaos by making detailed contingency plans for everything",
+                                                 "Connection â€” finds someone to talk to, even if it\u0027s a bartender or a cat",
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot see that their independence is actually isolation wearing a better outfit",
+                                           "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+                                           "Mistakes pattern recognition for wisdom â€” sees connections that aren\u0027t there"
+                                       ],
+                       "secret":  "Djeneba Tarasov-Yiadom witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+                            "cadence":  "Rapid and dense â€” information-heavy sentences that demand attention.",
+                            "verbal_tics":  [
+                                                "Addresses people by physical traits â€” \u0027hey, tall one\u0027 or \u0027listen, chrome-arm\u0027",
+                                                "Refers to killing as \u0027solving\u0027 â€” clinical detachment as coping mechanism"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I don\u0027t get paid to have opinions about the target. I get paid to make them stop moving.\"",
+                                                  "\"Chrome doesn\u0027t make you faster. Training makes you faster. Chrome just means you survive learning.\"",
+                                                  "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A corporate black site Djeneba Tarasov-Yiadom once infiltrated is being reopened, and the people inside know her face",
+                        "Djeneba Tarasov-Yiadom\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad",
+                        "A high-paying contract turns out to target someone Djeneba Tarasov-Yiadom owes a personal debt to"
+                    ],
+    "narrative_function":  "As a street samurai, Djeneba Tarasov-Yiadom embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+    "augmentations":  "Hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes. Bone lacing â€” titanium mesh throughout skeleton, increases durability and striking power",
+    "daily_life":  "Keeps a rigid daily structure â€” wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+    "affiliation":  "Independent â€” works solo contracts",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  0,
+                                                    "effective":  8
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  5,
+                                                     "augmented":  3,
+                                                     "effective":  10
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  6,
+                                                    "augmented":  2,
+                                                    "effective":  10
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  8,
+                                                      "augmented":  1,
+                                                      "effective":  4
+                                                  },
+                                 "perception":  {
+                                                    "base":  5,
+                                                    "augmented":  0,
+                                                    "effective":  4
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  4
+                                               },
+                                 "technical":  {
+                                                   "base":  5,
+                                                   "augmented":  3,
+                                                   "effective":  7
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  4,
+                                                  "augmented":  3,
+                                                  "effective":  10
+                                              },
+                                 "intimidation":  {
+                                                      "base":  3,
+                                                      "augmented":  0,
+                                                      "effective":  10
+                                                  },
+                                 "deception":  {
+                                                   "base":  8,
+                                                   "augmented":  0,
+                                                   "effective":  4
+                                               },
+                                 "empathy":  {
+                                                 "base":  8,
+                                                 "augmented":  0,
+                                                 "effective":  7
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.86,
+                                      "caution":  0.94,
+                                      "loyalty":  0.6,
+                                      "greed":  0.84,
+                                      "empathy":  0.65
+                                  },
+                  "drives":  [
+                                 "justice",
+                                 "freedom",
+                                 "power"
+                             ],
+                  "thresholds":  {
+                                     "pain":  8,
+                                     "stress":  3,
+                                     "loyalty_break":  10
+                                 },
+                  "strengths":  [
+                                    "intimidating physical presence",
+                                    "natural leadership presence",
+                                    "multilingual â€” speaks 4+ languages fluently"
+                                ],
+                  "weaknesses":  [
+                                     "chronic insomnia affecting long-term performance",
+                                     "old injury that flares under specific conditions",
+                                     "emotional volatility under extreme stress"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "street samurai",
+                               "tier-2",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Physical agitation â€” pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Values loyalty intensely but has betrayed someone in the past to survive",
+                                              "Advocates caution to others but takes insane risks personally â€” double standard they can\u0027t see"
+                                          ],
+                       "habits":  [
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore",
+                                      "Eats the same meal before every job â€” superstition masquerading as preference",
+                                      "Keeps a physical paper notebook â€” no digital record of personal thoughts"
+                                  ],
+                       "breaking_points":  [
+                                               "A child being put in danger as leverage against them",
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Being publicly exposed â€” name, face, address, all of it blown"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Hydraulic joints in knees and elbows",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Bone lacing",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Bone lacing â€” titanium mesh throughout skeleton, increases durability and striking power",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Protector":  0.9,
+                       "Duelist":  0.9,
+                       "Code Keeper":  0.9,
+                       "Stoic":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Kessler Row",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions MM-4 \u0027Breadwinner\u0027",
+                            "Carrion Defense Works Marrow Drill MD-7 \u0027Dentist\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions MM-4 \u0027Breadwinner\u0027",
+                                "Carrion Defense Works Marrow Drill MD-7 \u0027Dentist\u0027"
+                            ],
+    "related_entities":  [
+                             "The Unfinished Theorem",
+                             "The Nearfield",
+                             "The Gradient Compact",
+                             "Chicago",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Hispanic/Latin American (66.4%) with substantial Eastern European (20.2%) and South Asian (13.4%) ancestry. The blend creates warm golden-brown skin with rich olive and amber undertones from Latin American and South Asian heritage, tempered by cool undertones from Eastern European ancestry. Her facial structure reflects the angular prominence of Eastern European bone structure combined with the defined cheekbones of Latin American heritage and the softer contours characteristic of South Asian ancestry.",
+                                 "height_cm":  158,
+                                 "weight_kg":  68,
+                                 "build":  "Compact and densely muscled, built low to the ground with a center of gravity designed for stability and impact absorption. Broad shoulders tapering to a narrow waist. No excess mass â€” pure functional architecture.",
+                                 "hair_color":  "Steel gray with natural dark undertones",
+                                 "hair_style":  "Pulled back tight in a utilitarian braid, secured with matte black polymer bands",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown",
+                                 "skin_tone":  "Warm golden-brown with rich olive and amber undertones, cooled subtly by Eastern European ancestry. Sun-weathered in high-contact areas, maintaining even tone across the body despite six decades of hard use.",
+                                 "complexion":  "Strong, angular features blending Latin American and Eastern European bone structure with South Asian softness â€” high, well-defined cheekbones with moderate width through the face, squared jawline with subtle roundness at the corners. Deep-set dark eyes. Minimal facial scarring. Skin shows the weathering of six decades and hard living, maintained with disciplined care. Thin lips, often pressed into a flat line.",
+                                 "distinguishing_marks":  [
+                                                              "Long surgical scar running down the inside of left forearm â€” augmentation installation point, partially camouflaged by tattoo work",
+                                                              "Tattoo of geometric pattern wrapping the right shoulder â€” appears to mark augmentation seams beneath the skin",
+                                                              "Burn scar across knuckles of right hand â€” old, pre-augmentation, from before the chrome",
+                                                              "Small notch missing from left ear â€” probably from a contract gone sideways"
+                                                          ],
+                                 "visible_augmentations":  "Hydraulic joint assemblies visible at knees and elbows â€” polished titanium and brushed steel with synthetic muscle cabling. The joints are seamlessly integrated but unmissable â€” no effort made to hide them. Faint seams along the forearms and shins suggest bone lacing beneath the skin. Subtle LED indicators glow amber at the elbow and knee joints when she moves under load.",
+                                 "posture_movement":  "Stands with weight balanced low and forward â€” a fighter\u0027s stance held at rest. Moves with mechanical precision, each motion economical and intentional. No wasted gesture. When she walks, there is a barely perceptible hitch in the rhythm where the hydraulic joints compensate for impacts. She carries herself like someone who has already accounted for everything that could go wrong.",
+                                 "clothing_style":  "Tier 4 practical â€” form-fitting synth-leather jacket in matte black, unbranded. Cargo pants in dark gray with reinforced stitching and internal holster points. Steel-toed combat boots, scuffed and re-maintained repeatedly. A thin silver chain around her neck with no visible pendant. No jewelry, no corpo logos, no affectation."
+                             },
+    "image_prompt":  "Bahman Trujillo-Guerrero, 158cm tall neo-noir operative with warm golden-brown skin blending Hispanic, Eastern European and South Asian heritage, strong angular features with high cheekbones and defined jawline. Steel gray hair in tight utilitarian braid, dark brown eyes. Six decades weathered but maintained, minimal facial scars. Visible titanium hydraulic joints at elbows and knees with amber LED indicators, bone-lace seams on forearms and shins, surgical scar on left forearm partially hidden by geometric tattoo, notch missing from left ear. Compact muscular build, fighter\u0027s stance. Matte black synth-leather jacket, dark gray cargo pants with reinforcement, scuffed steel-toed boots, silver chain necklace. Standing in neon-lit Great Lakes Metropolitan alleyway, rain-slick pavement, GLMZ, moody lighting with amber and blue neon reflections, intense focused expression, ready posture, mechanical precision in every movement --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  66.4,
+                             "Eastern European":  20.2,
+                             "South Asian":  13.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  13.2,
+                                                                                   "Brazilian":  6.6
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Haitian":  3.8,
+                                                                              "Cuban":  8.7
+                                                                          },
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  11.1,
+                                                                                     "Salvadoran":  23
+                                                                                 }
+                                                        },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  9.5
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Serbian":  1.5
+                                                                      },
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  9.2
+                                                                         }
+                                                 },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  10.7
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  2.3,
+                                                                   "Tamil Sri Lankan":  0.4
+                                                               }
+                                            }
+                        },
+    "tier":  "2"
 }

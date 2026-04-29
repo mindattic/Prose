@@ -1,339 +1,352 @@
-{
-  "id": "019d6143a5bb7907a55d456f62a4e8ca",
-  "rating": 70,
-  "type": "character",
-  "name": "Binta Khoury-Hern\u00E1ndez-Str\u00F6mqvist",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Forced entry and close-quarters combat specialist \u2014 breacher",
-  "age": 37,
-  "status": "active",
-  "location": "Geartown \u2014 industrial district of chop shops and fabricators, near Milwaukee and Damen",
-  "description": "Binta Khoury-Hern\u00E1ndez-Str\u00F6mqvist are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 37, there\u0027s something unfinished about their face, like a sculpture the artist walked away from \u2014 striking rather than beautiful. The chrome is visible \u2014 bioware adrenaline regulator \u2014 keeps calm under fire, controlled hormone release \u2014 and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a breacher out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Binta Khoury-Hern\u00E1ndez-Str\u00F6mqvist describe them as a precision instrument \u2014 point them at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.52,
-      "ideal": 0.67,
-      "id": 0.21,
-      "shadow": 0.97,
-      "mask": 0.15,
-      "ghost": 0.81
-    },
-    "core_fears": [
-      "Losing their edge to age \u2014 the body slows before the mind accepts it",
-      "Being captured alive \u2014 death is preferable to corporate interrogation",
-      "Becoming obsolete as augmentation technology outpaces their chrome"
-    ],
-    "core_desires": [
-      "To prove everyone who dismissed them catastrophically wrong",
-      "To find the person who burned them and make it educational",
-      "Reputation \u2014 to be the name fixers whisper when the job absolutely cannot fail"
-    ],
-    "coping_mechanisms": [
-      "Drinks methodically \u2014 not to get drunk, to maintain a specific level of not-caring",
-      "Art \u2014 draws, paints, or sculpts in private; the violence goes somewhere constructive",
-      "Connection \u2014 finds someone to talk to, even if it\u0027s a bartender or a cat"
-    ],
-    "blind_spots": [
-      "Trusts technology more than people \u2014 machines don\u0027t betray",
-      "Fails to notice when their own behavior mirrors the people they despise",
-      "Cannot accept help without interpreting it as leverage"
-    ],
-    "secret": "Aybek Guerrero-Osei-Mensah murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
-  },
-  "speech_patterns": {
-    "vocabulary": "Multilingual fragments \u2014 switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
-    "cadence": "Measured and deliberate \u2014 pauses before important words for emphasis.",
-    "verbal_tics": [
-      "Uses technical jargon for everything, including emotions",
-      "Ends statements with \u0027yeah?\u0027 \u2014 not a question, a dare"
-    ],
-    "example_lines": [
-      "\u0022Doors are polite suggestions. I\u0027m not polite.\u0022",
-      "\u0022First through the door, last to flinch. That\u0027s the job description.\u0022",
-      "\u0022Close quarters is where plans go to die. I make sure it\u0027s their plans, not ours.\u0022"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Aybek Guerrero-Osei-Mensah\u0027s augmentations begin malfunctioning in the field \u2014 sabotage or degradation, and either answer is bad",
-    "A dead drop Aybek Guerrero-Osei-Mensah maintains is found and cleaned out \u2014 whoever did it now has leverage",
-    "Aybek Guerrero-Osei-Mensah is offered a contract that would clear all their debts \u2014 the target is someone they respect"
-  ],
-  "narrative_function": "Aybek Guerrero-Osei-Mensah represents the working professional of the runner world \u2014 competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Bioware adrenaline regulator \u2014 keeps calm under fire, controlled hormone release. Bone lacing \u2014 titanium mesh throughout skeleton, increases durability and striking power",
-  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Independent \u2014 operates through reputation only",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 7
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 7
-      },
-      "reflexes": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 6
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 7
-      },
-      "perception": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 9
-      },
-      "willpower": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 8
-      },
-      "technical": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 10
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 10
-      },
-      "intimidation": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 5
-      },
-      "deception": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 10
-      },
-      "empathy": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 5
-      }
-    },
-    "personality": {
-      "aggression": 0.69,
-      "caution": 0.56,
-      "loyalty": 1,
-      "greed": 0.41,
-      "empathy": 0.81
-    },
-    "drives": [
-      "survival",
-      "money",
-      "revenge"
-    ],
-    "thresholds": {
-      "pain": 7,
-      "stress": 5,
-      "loyalty_break": 5
-    },
-    "strengths": [
-      "intimidating physical presence",
-      "exceptional close-quarters combat",
-      "photographic memory for faces and layouts"
-    ],
-    "weaknesses": [
-      "old injury that flares under specific conditions",
-      "substance dependency \u2014 functional but fragile"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "breacher",
-      "tier-2",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Always demands half payment upfront \u2014 trust is a luxury, Quanta is concrete",
-      "Never discusses active contracts with anyone not directly involved",
-      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy",
-      "Will abandon a job if the intel was deliberately falsified \u2014 being set up violates the contract"
-    ],
-    "escalation_ladder": [
-      "1. Assess \u2014 read the situation, identify threats and advantages",
-      "2. Negotiate \u2014 try to find a solution that doesn\u0027t cost ammunition",
-      "3. Intimidate \u2014 make the cost of conflict clear",
-      "4. Precision violence \u2014 surgical, targeted, minimal collateral",
-      "5. Full engagement \u2014 overwhelming force, no half measures",
-      "6. Emergency protocol \u2014 abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation \u2014 checks gear, reviews plans, contacts sources.",
-      "medium": "Physical agitation \u2014 pacing, fidgeting, compulsive equipment checks.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Preaches independence but is desperate for approval from people they respect",
-      "Insists they work alone but performs noticeably better in a team"
-    ],
-    "habits": [
-      "Sleeps with one hand on a weapon \u2014 has done this for so long it\u0027s not deliberate anymore",
-      "Eats the same meal before every job \u2014 superstition masquerading as preference",
-      "Practices a kata or fighting form every morning regardless of circumstances",
-      "Takes a specific route home every time, varying only one block per trip \u2014 paranoia as lifestyle"
-    ],
-    "breaking_points": [
-      "Being publicly exposed \u2014 name, face, address, all of it blown",
-      "Watching someone they trained or mentored die on a job they recommended",
-      "A child being put in danger as leverage against them"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Bioware adrenaline regulator",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Bioware adrenaline regulator \u2014 keeps calm under fire, controlled hormone release",
-      "replaces": ""
-    },
-    {
-      "name": "Bone lacing",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Bone lacing \u2014 titanium mesh throughout skeleton, increases durability and striking power",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Brawler": 0.7,
-    "Berserker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Geartown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Middle Eastern (43.6%) with Sub-Saharan African (23.3%), Hispanic/Latin American (16.9%), and East Asian (16.2%) ancestry \u2014 a truly global genetic blend. The dominant Middle Eastern component combines with substantial African heritage to create deep, richly saturated skin tones with warm golden undertones. The Hispanic and East Asian heritage adds complexity to facial structure, creating a geometric precision in cheekbones and jaw, with subtle fullness through the lower face from the African component.",
-    "height_cm": 188,
-    "weight_kg": 78,
-    "build": "Lean and ropey, all cable and leverage. No excess mass \u2014 every kilogram serves function. The titanium bone lacing adds subtle density without bulk. Shoulders broad but not overdeveloped; wrists and forearms corded with visible tendon definition.",
-    "hair_color": "Natural deep brown, nearly black",
-    "hair_style": "Cropped close on sides, longer on top \u2014 practical for headgear and optics, styled with minimal maintenance. A few silver threads visible at the temples.",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with warm amber undertones \u2014 natural",
-    "skin_tone": "Deep warm medium-brown complexion \u2014 the result of dominant Middle Eastern (43.6%) and substantial Sub-Saharan African (23.3%) heritage creating rich, saturated tone with golden and amber undertones. The East Asian (16.2%) and Hispanic/Latin American (16.9%) components add subtle warmth and complexity. Radiant beneath the surface even under sleep deprivation, with warmth that catches light distinctly.",
-    "complexion": "Angular face with defined high cheekbones and sharp jaw structure \u2014 the East Asian and Middle Eastern mix creating geometric precision in facial planes. Moderate fullness through the lower face reflecting African heritage. Nose with slightly broader bridge, softened by Middle Eastern and African features. Skin weathered from sleep deprivation and nocturnal living \u2014 slight gray undertone beneath the warm brown. A few fine lines around the eyes from squinting in low light. Clean-shaven or with 1-2 days stubble; minimal grooming routine.",
-    "distinguishing_marks": [
-      "Bioware regulator: visible chrome interface at the base of the neck, left side \u2014 a small silvered port with subtle LED indicator cycling pale blue when dormant.",
-      "Scar tissue along the right forearm: three parallel marks from a blade strike during an early contract gone sideways, now pale against the skin.",
-      "Burn scar on the left palm: old accident during equipment fabrication, circular and faded white.",
-      "Impact bruising on the knuckles, chronic: blue-black discoloration suggesting repeated trauma, imperfectly healed."
-    ],
-    "visible_augmentations": "Chrome bioware regulator at the base of the neck (left), clearly visible \u2014 a small port with faint LED indicator, no effort made to conceal it. The bone lacing is invisible subcutaneously, but subtle signs of its presence: increased muscle definition despite lean frame, and a faint metallic sheen under bright light where titanium mesh sits just beneath the skin at joints.",
-    "posture_movement": "Economical and predatory. No wasted motion. They move from the hips, shoulders loose, hands always aware of their position relative to exits and potential threats. When still, there\u0027s coiled tension \u2014 not anxious, but ready. When moving through a space, they map it instantly: sightlines, cover, approach vectors. The bioware regulator keeps their physical demeanor calm even when running hot \u2014 controlled breathing, deliberate pace.",
-    "clothing_style": "Tier 4 utilitarian: matte-black tactical pants with reinforced seams and cargo pockets (Hegemony brand, 800 \u03A6 range), steel-toed boots scuffed from actual use, gray or black moisture-wicking shirt (generic, unremarkable). A long black coat or reinforced vest depending on the job \u2014 usually something with deep pockets and minimal branding. Minimal jewelry; a worn silver ring on the left hand (inheritance or ritual unknown). No corpo logos. Everything designed for function and anonymity in low light."
-  },
-  "image_prompt": "Binta Khoury-Hern\u00E1ndez-Str\u00F6mqvist, GLMZ, 188cm lean operative with deep warm brown skin and golden undertones reflecting Middle Eastern and Sub-Saharan African ancestry, angular high cheekbones from East Asian-Middle Eastern mix, natural deep brown eyes with amber warmth. Short dark hair with silver at temples, sharp-featured face weathered from nocturnal work. Visible chrome bioware regulator port at neck base with pale blue LED, scar tissue on right forearm, burn scar on left palm, chronic knuckle bruising. Matte-black tactical Hegemony pants, gray moisture-wicking shirt, long black reinforced coat, steel-toed boots. Economical posture, coiled tension, hands positioned with tactical awareness. Worn silver ring on left hand. Noir near-future megacity setting, low-key lighting with neon edge highlighting chrome bioware, urban grit atmosphere, predatory calm demeanor --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Middle Eastern": 43.6,
-    "Sub-Saharan African": 23.3,
-    "Hispanic/Latin American": 16.9,
-    "East Asian": 16.2
-  },
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 43.6
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 4.1
-      },
-      "West African": {
-        "Senegalese": 5,
-        "Malian": 1.7
-      },
-      "East African": {
-        "Rwandan": 1.3,
-        "Ethiopian": 11.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 16.9
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Fujianese": 16.2
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a5bb7907a55d456f62a4e8ca",
+    "rating":  70,
+    "type":  "character",
+    "name":  "Binta Khoury-Hernández-Strömqvist",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Forced entry and close-quarters combat specialist — breacher",
+    "age":  37,
+    "status":  "active",
+    "location":  "Geartown — industrial district of chop shops and fabricators, near Milwaukee and Damen",
+    "description":  "Binta Khoury-Hernández-Strömqvist are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 37, there\u0027s something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a breacher out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Binta Khoury-Hernández-Strömqvist describe them as a precision instrument — point them at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing their edge to age — the body slows before the mind accepts it",
+                                          "Being captured alive — death is preferable to corporate interrogation",
+                                          "Becoming obsolete as augmentation technology outpaces their chrome"
+                                      ],
+                       "core_desires":  [
+                                            "To prove everyone who dismissed them catastrophically wrong",
+                                            "To find the person who burned them and make it educational",
+                                            "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+                                                 "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
+                                                 "Connection — finds someone to talk to, even if it\u0027s a bartender or a cat"
+                                             ],
+                       "blind_spots":  [
+                                           "Trusts technology more than people — machines don\u0027t betray",
+                                           "Fails to notice when their own behavior mirrors the people they despise",
+                                           "Cannot accept help without interpreting it as leverage"
+                                       ],
+                       "secret":  "Aybek Guerrero-Osei-Mensah murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+                            "cadence":  "Measured and deliberate — pauses before important words for emphasis.",
+                            "verbal_tics":  [
+                                                "Uses technical jargon for everything, including emotions",
+                                                "Ends statements with \u0027yeah?\u0027 — not a question, a dare"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Doors are polite suggestions. I\u0027m not polite.\"",
+                                                  "\"First through the door, last to flinch. That\u0027s the job description.\"",
+                                                  "\"Close quarters is where plans go to die. I make sure it\u0027s their plans, not ours.\""
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Aybek Guerrero-Osei-Mensah\u0027s augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+                        "A dead drop Aybek Guerrero-Osei-Mensah maintains is found and cleaned out — whoever did it now has leverage",
+                        "Aybek Guerrero-Osei-Mensah is offered a contract that would clear all their debts — the target is someone they respect"
+                    ],
+    "narrative_function":  "Aybek Guerrero-Osei-Mensah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+    "augmentations":  "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release. Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
+    "daily_life":  "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+    "affiliation":  "Independent — operates through reputation only",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  7,
+                                                    "augmented":  1,
+                                                    "effective":  7
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  5,
+                                                     "augmented":  0,
+                                                     "effective":  7
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  8,
+                                                    "augmented":  3,
+                                                    "effective":  6
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  4,
+                                                      "augmented":  1,
+                                                      "effective":  7
+                                                  },
+                                 "perception":  {
+                                                    "base":  8,
+                                                    "augmented":  1,
+                                                    "effective":  9
+                                                },
+                                 "willpower":  {
+                                                   "base":  3,
+                                                   "augmented":  1,
+                                                   "effective":  8
+                                               },
+                                 "technical":  {
+                                                   "base":  7,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  8,
+                                                  "augmented":  1,
+                                                  "effective":  10
+                                              },
+                                 "intimidation":  {
+                                                      "base":  4,
+                                                      "augmented":  3,
+                                                      "effective":  5
+                                                  },
+                                 "deception":  {
+                                                   "base":  6,
+                                                   "augmented":  0,
+                                                   "effective":  10
+                                               },
+                                 "empathy":  {
+                                                 "base":  4,
+                                                 "augmented":  1,
+                                                 "effective":  5
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.69,
+                                      "caution":  0.56,
+                                      "loyalty":  1,
+                                      "greed":  0.41,
+                                      "empathy":  0.81
+                                  },
+                  "drives":  [
+                                 "survival",
+                                 "money",
+                                 "revenge"
+                             ],
+                  "thresholds":  {
+                                     "pain":  7,
+                                     "stress":  5,
+                                     "loyalty_break":  5
+                                 },
+                  "strengths":  [
+                                    "intimidating physical presence",
+                                    "exceptional close-quarters combat",
+                                    "photographic memory for faces and layouts"
+                                ],
+                  "weaknesses":  [
+                                     "old injury that flares under specific conditions",
+                                     "substance dependency — functional but fragile"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "breacher",
+                               "tier-2",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+                                              "Never discusses active contracts with anyone not directly involved",
+                                              "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+                                              "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess — read the situation, identify threats and advantages",
+                                                 "2. Negotiate — try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate — make the cost of conflict clear",
+                                                 "4. Precision violence — surgical, targeted, minimal collateral",
+                                                 "5. Full engagement — overwhelming force, no half measures",
+                                                 "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Insists they work alone but performs noticeably better in a team"
+                                          ],
+                       "habits":  [
+                                      "Sleeps with one hand on a weapon — has done this for so long it\u0027s not deliberate anymore",
+                                      "Eats the same meal before every job — superstition masquerading as preference",
+                                      "Practices a kata or fighting form every morning regardless of circumstances",
+                                      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
+                                  ],
+                       "breaking_points":  [
+                                               "Being publicly exposed — name, face, address, all of it blown",
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "A child being put in danger as leverage against them"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Bioware adrenaline regulator",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Bone lacing",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Brawler":  0.7,
+                       "Berserker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Geartown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Middle Eastern (43.6%) with Sub-Saharan African (23.3%), Hispanic/Latin American (16.9%), and East Asian (16.2%) ancestry — a truly global genetic blend. The dominant Middle Eastern component combines with substantial African heritage to create deep, richly saturated skin tones with warm golden undertones. The Hispanic and East Asian heritage adds complexity to facial structure, creating a geometric precision in cheekbones and jaw, with subtle fullness through the lower face from the African component.",
+                                 "height_cm":  188,
+                                 "weight_kg":  78,
+                                 "build":  "Lean and ropey, all cable and leverage. No excess mass — every kilogram serves function. The titanium bone lacing adds subtle density without bulk. Shoulders broad but not overdeveloped; wrists and forearms corded with visible tendon definition.",
+                                 "hair_color":  "Natural deep brown, nearly black",
+                                 "hair_style":  "Cropped close on sides, longer on top — practical for headgear and optics, styled with minimal maintenance. A few silver threads visible at the temples.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with warm amber undertones — natural",
+                                 "skin_tone":  "Deep warm medium-brown complexion — the result of dominant Middle Eastern (43.6%) and substantial Sub-Saharan African (23.3%) heritage creating rich, saturated tone with golden and amber undertones. The East Asian (16.2%) and Hispanic/Latin American (16.9%) components add subtle warmth and complexity. Radiant beneath the surface even under sleep deprivation, with warmth that catches light distinctly.",
+                                 "complexion":  "Angular face with defined high cheekbones and sharp jaw structure — the East Asian and Middle Eastern mix creating geometric precision in facial planes. Moderate fullness through the lower face reflecting African heritage. Nose with slightly broader bridge, softened by Middle Eastern and African features. Skin weathered from sleep deprivation and nocturnal living — slight gray undertone beneath the warm brown. A few fine lines around the eyes from squinting in low light. Clean-shaven or with 1-2 days stubble; minimal grooming routine.",
+                                 "distinguishing_marks":  [
+                                                              "Bioware regulator: visible chrome interface at the base of the neck, left side — a small silvered port with subtle LED indicator cycling pale blue when dormant.",
+                                                              "Scar tissue along the right forearm: three parallel marks from a blade strike during an early contract gone sideways, now pale against the skin.",
+                                                              "Burn scar on the left palm: old accident during equipment fabrication, circular and faded white.",
+                                                              "Impact bruising on the knuckles, chronic: blue-black discoloration suggesting repeated trauma, imperfectly healed."
+                                                          ],
+                                 "visible_augmentations":  "Chrome bioware regulator at the base of the neck (left), clearly visible — a small port with faint LED indicator, no effort made to conceal it. The bone lacing is invisible subcutaneously, but subtle signs of its presence: increased muscle definition despite lean frame, and a faint metallic sheen under bright light where titanium mesh sits just beneath the skin at joints.",
+                                 "posture_movement":  "Economical and predatory. No wasted motion. They move from the hips, shoulders loose, hands always aware of their position relative to exits and potential threats. When still, there\u0027s coiled tension — not anxious, but ready. When moving through a space, they map it instantly: sightlines, cover, approach vectors. The bioware regulator keeps their physical demeanor calm even when running hot — controlled breathing, deliberate pace.",
+                                 "clothing_style":  "Tier 4 utilitarian: matte-black tactical pants with reinforced seams and cargo pockets (Hegemony brand, 800 Φ range), steel-toed boots scuffed from actual use, gray or black moisture-wicking shirt (generic, unremarkable). A long black coat or reinforced vest depending on the job — usually something with deep pockets and minimal branding. Minimal jewelry; a worn silver ring on the left hand (inheritance or ritual unknown). No corpo logos. Everything designed for function and anonymity in low light."
+                             },
+    "image_prompt":  "Binta Khoury-Hernández-Strömqvist, GLMZ, 188cm lean operative with deep warm brown skin and golden undertones reflecting Middle Eastern and Sub-Saharan African ancestry, angular high cheekbones from East Asian-Middle Eastern mix, natural deep brown eyes with amber warmth. Short dark hair with silver at temples, sharp-featured face weathered from nocturnal work. Visible chrome bioware regulator port at neck base with pale blue LED, scar tissue on right forearm, burn scar on left palm, chronic knuckle bruising. Matte-black tactical Hegemony pants, gray moisture-wicking shirt, long black reinforced coat, steel-toed boots. Economical posture, coiled tension, hands positioned with tactical awareness. Worn silver ring on left hand. Noir near-future megacity setting, low-key lighting with neon edge highlighting chrome bioware, urban grit atmosphere, predatory calm demeanor --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  43.6,
+                             "Sub-Saharan African":  23.3,
+                             "Hispanic/Latin American":  16.9,
+                             "East Asian":  16.2
+                         },
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  43.6
+                                                               }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  4.1
+                                                                             },
+                                                        "West African":  {
+                                                                             "Senegalese":  5,
+                                                                             "Malian":  1.7
+                                                                         },
+                                                        "East African":  {
+                                                                             "Rwandan":  1.3,
+                                                                             "Ethiopian":  11.2
+                                                                         }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  16.9
+                                                                        }
+                                                        },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Fujianese":  16.2
+                                                           }
+                                           }
+                        }
 }

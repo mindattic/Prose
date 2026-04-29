@@ -1,165 +1,224 @@
-{
-  "id": "019d6143a5b6766c8d76b7e045e180e9",
-  "rating": 20,
-  "vote_count": 4,
-  "type": "character",
-  "name": "Echo Ogawa",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Fixer - Academic theft",
-  "age": 61,
-  "status": "active",
-  "location": "The Core, near State and Monroe",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Independent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9,
-    "Opportunist": 0.9,
-    "Face": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Core",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Indigenous American (43.2%), East Asian (30.4%), and Hispanic/Latin American (26.4%) ancestry creates a distinctly multicontinental phenotype. Facial structure shows prominent, high cheekbones with the placement characteristic of East Asian heritage, blended with the broader facial proportions and stronger bone density typical of Indigenous American ancestry. Hispanic/Latin American heritage contributes warmth, subtle golden undertones, and dimensionality to the overall features. The combination produces sharply angular cheekbones, slightly wider facial structure at the temples, and eye placement reflecting both East Asian and Indigenous American traits with deeper-set eyes.",
-    "height_cm": 178,
-    "weight_kg": 74,
-    "build": "Lean and wiry with the posture of someone accustomed to prolonged sitting. Visible muscle definition in forearms suggests decades of fine motor work. Slight forward curve to shoulders from age and desk labor.",
-    "hair_color": "Salt-and-pepper gray with darker roots",
-    "hair_style": "Close-cropped, precisely maintained with minor fade lines",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with age-related yellowing in the sclera",
-    "skin_tone": "Warm medium-to-deep brown with golden, clay, and olive undertones. The blend shows rich earth tones characteristic of the Indigenous American (43.2%) and Hispanic/Latin American (26.4%) components, warmed and subtly refined by golden highlights from East Asian heritage (30.4%). Complexion shifts with light, appearing warmer in cheek and temple areas with a natural olive cast.",
-    "complexion": "Weathered but well-maintained. Fine lines around eyes and forehead create a map of decades-long concentration. Clean-shaven with occasional five-o\u0027clock shadow. Minor age spots on temples and cheekbones with warm golden-brown undertones. High, sharply defined cheekbones reflecting the blended East Asian and Indigenous American heritage. Natural warmth and olive-golden cast to overall complexion, particularly visible across the bridge of nose and upper cheeks.",
-    "distinguishing_marks": [
-      "Thin surgical scar running 3cm along right jawline, partially obscured by stubble",
-      "Faded indigo tattoo on inner left wrist \u2014 appears to be archival notation or personal cipher",
-      "Burn mark on back of left hand, roughly 2cm diameter, suggesting old chemical or thermal accident"
-    ],
-    "visible_augmentations": "None visible. However, subtle neural interface port visible at base of skull behind left ear when hair is disturbed \u2014 suggests subcutaneous cognitive enhancement or data interface capability.",
-    "posture_movement": "Moves with calculated efficiency, minimal wasted motion. Tends to tilt head slightly when listening, suggesting auditory processing enhancements. Hands often steepled or gesture with precision. Walks with measured pace, favoring the left side slightly.",
-    "clothing_style": "Tier 2-3 hybrid: tailored black wool trousers, fitted charcoal turtleneck or oxford shirt in muted colors. Favors vintage-style leather jacket with reinforced panels (possibly lined with signal-blocking material). Minimal visible branding. Silver-toned accessories \u2014 simple watch with analog face, worn wedding band. Carries a worn leather messenger bag with multiple interior pockets."
-  },
-  "image_prompt": "GLMZ, mature East Asian-Indigenous American-Hispanic male, age 55-65, sharp angular cheekbones, warm deep brown skin with golden olive undertones, salt-and-pepper hair close-cropped, deep brown eyes with yellowing sclera, weathered features with concentration lines, jawline scar, faded wrist tattoo, 178cm lean wiry build, seated at retro-tech workstation, wearing fitted charcoal turtleneck and vintage leather jacket with reinforced panels, minimal jewelry, worn leather messenger bag nearby, subtle neural port visible behind left ear, dim overhead lighting casting shadows across angular face, cool blue-green ambient glow from screens, photorealistic, 2200s aesthetic, focused concentrated expression, hands steepled thoughtfully, morning light through rain-streaked windows, high resolution portraiture --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Indigenous American": 43.2,
-    "East Asian": 30.4,
-    "Hispanic/Latin American": 26.4
-  },
-  "ancestry_detail": {
-    "Indigenous American": {
-      "Plains Nations": {
-        "Lakota": 15.7
-      },
-      "Great Lakes Nations": {
-        "Menominee": 2.4,
-        "Potawatomi": 7.7
-      },
-      "Mesoamerican": {
-        "Mixtec": 4.3,
-        "Maya": 13.1
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 30.4
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Cuban": 19.9
-      },
-      "Central American": {
-        "Honduran": 0.7,
-        "Nicaraguan": 5.8
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a5b6766c8d76b7e045e180e9",
+    "rating":  20,
+    "vote_count":  4,
+    "type":  "character",
+    "name":  "Echo Ogawa",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Fixer - Academic theft",
+    "age":  61,
+    "status":  "active",
+    "location":  "The Core, near State and Monroe",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Independent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9,
+                       "Opportunist":  0.9,
+                       "Face":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Core",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Indigenous American (43.2%), East Asian (30.4%), and Hispanic/Latin American (26.4%) ancestry creates a distinctly multicontinental phenotype. Facial structure shows prominent, high cheekbones with the placement characteristic of East Asian heritage, blended with the broader facial proportions and stronger bone density typical of Indigenous American ancestry. Hispanic/Latin American heritage contributes warmth, subtle golden undertones, and dimensionality to the overall features. The combination produces sharply angular cheekbones, slightly wider facial structure at the temples, and eye placement reflecting both East Asian and Indigenous American traits with deeper-set eyes.",
+                                 "height_cm":  178,
+                                 "weight_kg":  74,
+                                 "build":  "Lean and wiry with the posture of someone accustomed to prolonged sitting. Visible muscle definition in forearms suggests decades of fine motor work. Slight forward curve to shoulders from age and desk labor.",
+                                 "hair_color":  "Salt-and-pepper gray with darker roots",
+                                 "hair_style":  "Close-cropped, precisely maintained with minor fade lines",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with age-related yellowing in the sclera",
+                                 "skin_tone":  "Warm medium-to-deep brown with golden, clay, and olive undertones. The blend shows rich earth tones characteristic of the Indigenous American (43.2%) and Hispanic/Latin American (26.4%) components, warmed and subtly refined by golden highlights from East Asian heritage (30.4%). Complexion shifts with light, appearing warmer in cheek and temple areas with a natural olive cast.",
+                                 "complexion":  "Weathered but well-maintained. Fine lines around eyes and forehead create a map of decades-long concentration. Clean-shaven with occasional five-o\u0027clock shadow. Minor age spots on temples and cheekbones with warm golden-brown undertones. High, sharply defined cheekbones reflecting the blended East Asian and Indigenous American heritage. Natural warmth and olive-golden cast to overall complexion, particularly visible across the bridge of nose and upper cheeks.",
+                                 "distinguishing_marks":  [
+                                                              "Thin surgical scar running 3cm along right jawline, partially obscured by stubble",
+                                                              "Faded indigo tattoo on inner left wrist — appears to be archival notation or personal cipher",
+                                                              "Burn mark on back of left hand, roughly 2cm diameter, suggesting old chemical or thermal accident"
+                                                          ],
+                                 "visible_augmentations":  "None visible. However, subtle neural interface port visible at base of skull behind left ear when hair is disturbed — suggests subcutaneous cognitive enhancement or data interface capability.",
+                                 "posture_movement":  "Moves with calculated efficiency, minimal wasted motion. Tends to tilt head slightly when listening, suggesting auditory processing enhancements. Hands often steepled or gesture with precision. Walks with measured pace, favoring the left side slightly.",
+                                 "clothing_style":  "Tier 2-3 hybrid: tailored black wool trousers, fitted charcoal turtleneck or oxford shirt in muted colors. Favors vintage-style leather jacket with reinforced panels (possibly lined with signal-blocking material). Minimal visible branding. Silver-toned accessories — simple watch with analog face, worn wedding band. Carries a worn leather messenger bag with multiple interior pockets."
+                             },
+    "image_prompt":  "GLMZ, mature East Asian-Indigenous American-Hispanic male, age 55-65, sharp angular cheekbones, warm deep brown skin with golden olive undertones, salt-and-pepper hair close-cropped, deep brown eyes with yellowing sclera, weathered features with concentration lines, jawline scar, faded wrist tattoo, 178cm lean wiry build, seated at retro-tech workstation, wearing fitted charcoal turtleneck and vintage leather jacket with reinforced panels, minimal jewelry, worn leather messenger bag nearby, subtle neural port visible behind left ear, dim overhead lighting casting shadows across angular face, cool blue-green ambient glow from screens, photorealistic, 2200s aesthetic, focused concentrated expression, hands steepled thoughtfully, morning light through rain-streaked windows, high resolution portraiture --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Indigenous American":  43.2,
+                             "East Asian":  30.4,
+                             "Hispanic/Latin American":  26.4
+                         },
+    "ancestry_detail":  {
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Lakota":  15.7
+                                                                           },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Menominee":  2.4,
+                                                                                    "Potawatomi":  7.7
+                                                                                },
+                                                        "Mesoamerican":  {
+                                                                             "Mixtec":  4.3,
+                                                                             "Maya":  13.1
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  30.4
+                                                            }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Cuban":  19.9
+                                                                          },
+                                                            "Central American":  {
+                                                                                     "Honduran":  0.7,
+                                                                                     "Nicaraguan":  5.8
+                                                                                 }
+                                                        }
+                        }
 }

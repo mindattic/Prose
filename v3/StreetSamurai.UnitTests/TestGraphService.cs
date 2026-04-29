@@ -9,7 +9,14 @@ namespace StreetSamurai.UnitTests;
 /// </summary>
 public class TestGraphService : WorldGraphService
 {
-    public TestGraphService() : base(new TestPathProvider(), new TestDatabaseService()) { }
+    public TestGraphService() : base(new TestPathProvider(), new TestDatabaseService())
+    {
+        // Prime EnsureLoaded() with an empty in-memory graph so subsequent calls from
+        // production services (NarrativeSessionContext, ResolveId, GetEntityBrief, etc)
+        // are no-ops and don't wipe AddTestNode-injected fixtures by Rebuild()-ing from
+        // the empty test database.
+        EnsureLoaded();
+    }
 
     public void AddTestNode(string id, string name, string nodeType, Dictionary<string, string> props)
     {
@@ -47,10 +54,11 @@ public class TestPathProvider : StreetSamurai.Core.Interfaces.IPathProvider
     public string EssencesDir => Path.Combine(root, "essences");
     public string NarrativeBiblePath => Path.Combine(root, "narrative_bible.md");
     public string WorldDir => Path.Combine(root, "world");
-    public string FacetsDir => Path.Combine(root, "character", "facets");
     public string EngineDataDir => Path.Combine(root, "engine_data");
     public string MutableDataDir => Path.Combine(root, "engine_data");
     public string StoriesDir => Path.Combine(root, "stories");
+    public string BooksDir => Path.Combine(root, "books");
+    public string SeriesDir => Path.Combine(root, "series");
     public string GraphDir => Path.Combine(root, "engine_data", "graph");
     public string LogDir => Path.Combine(root, "logs");
     public string ExportDir => Path.Combine(root, "exports");

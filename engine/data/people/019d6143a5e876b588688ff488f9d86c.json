@@ -1,353 +1,366 @@
-{
-  "id": "019d6143a5e876b588688ff488f9d86c",
-  "type": "character",
-  "name": "Fiorella Sigurdsson",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Cross-district contraband specialist — smuggler",
-  "age": 37,
-  "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Fiorella Sigurdsson is average height but with a presence that fills more space than the body accounts for. At 37, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a smuggler out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Fiorella Sigurdsson describe him as a precision instrument — point him at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.22,
-      "ideal": 0.48,
-      "id": 0.11,
-      "shadow": 0.1,
-      "mask": 0.96,
-      "ghost": 0.21
-    },
-    "core_fears": [
-      "Betrayal by someone they trust — the only currency that matters",
-      "Losing control of their own body to a hacker or malfunctioning cyberware",
-      "Being replaced — younger, faster, cheaper runners coming up behind them"
-    ],
-    "core_desires": [
-      "A crew worth trusting — people who stay when the shooting starts",
-      "To find the person who burned them and make it educational",
-      "To matter to someone for who they are, not what they can do"
-    ],
-    "coping_mechanisms": [
-      "Connection — finds someone to talk to, even if it's a bartender or a cat",
-      "Ritual — follows the same pre-job routine every time, superstition as structure",
-      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
-    ],
-    "blind_spots": [
-      "Fails to notice when their own behavior mirrors the people they despise",
-      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
-      "Cannot see that their independence is actually isolation wearing a better outfit"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
-    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
-    "verbal_tics": [
-      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
-      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries"
-    ],
-    "example_lines": [
-      "\"Contraband is just cargo that hasn't been properly introduced to the right people.\"",
-      "\"Every border is a suggestion. Every checkpoint is a negotiation.\"",
-      "\"I move things from where they are to where they need to be. The legality is your problem.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A corporate black site Daulet Novak-Tetteh once infiltrated is being reopened, and the people inside know his face",
-    "A former associate resurfaces with evidence that could destroy Daulet Novak-Tetteh's reputation — and a price for silence",
-    "Someone is impersonating Daulet Novak-Tetteh on jobs, and the impersonator is better at the work than the original"
-  ],
-  "narrative_function": "Daulet Novak-Tetteh is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
-  "augmentations": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters. Enhanced tendons — geneware upgrade, jump height and grip strength tripled",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Semi-independent — has standing arrangements with several crews",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 7
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 7
-      },
-      "endurance": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 9
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 4
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 9
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 10
-      },
-      "willpower": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 7
-      },
-      "technical": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 10
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 9
-      },
-      "intimidation": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 10
-      },
-      "deception": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 10
-      },
-      "empathy": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 5
-      }
-    },
-    "personality": {
-      "aggression": 0.64,
-      "caution": 0.64,
-      "loyalty": 0.51,
-      "greed": 0.34,
-      "empathy": 0.1
-    },
-    "drives": [
-      "survival",
-      "freedom",
-      "protection"
-    ],
-    "thresholds": {
-      "pain": 9,
-      "stress": 4,
-      "loyalty_break": 10
-    },
-    "strengths": [
-      "exceptional close-quarters combat",
-      "social chameleon — adapts to any environment",
-      "multilingual — speaks 4+ languages fluently"
-    ],
-    "weaknesses": [
-      "augmentation dependency — performance drops sharply if chrome malfunctions",
-      "old injury that flares under specific conditions",
-      "overconfidence in specialty areas leading to blind spots"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "smuggler",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Will not take contracts against children or families — the line is hard and non-negotiable"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
-      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Claims not to care about reputation but monitors what people say about them obsessively",
-      "Values loyalty intensely but has betrayed someone in the past to survive",
-      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
-    ],
-    "habits": [
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions"
-    ],
-    "breaking_points": [
-      "Discovering their employer deliberately sent them into a death trap",
-      "Being forced to harm a civilian — collateral damage that can't be rationalized"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Cyberears with directional microphones and sound dampening",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
-      "replaces": ""
-    },
-    {
-      "name": "Enhanced tendons",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Enhanced tendons — geneware upgrade, jump height and grip strength tripled",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Dockside",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street-Custom Loaded Pipe 'Bell Ringer'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Masquerade",
-    "Fiorella",
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Northern European dominant (53.1%) with significant Southeast Asian (22.4%), South Asian (12.8%), and East Asian (11.7%) ancestry. The genetic blend produces a striking phenotype: Northern European bone structure provides the foundation, while Southeast Asian refinement softens facial angles, South Asian warmth deepens skin tone and eye richness, and East Asian subtlety shapes eye contour and cheekbone definition. The result is a cool-to-warm complexion with unexpected depth—Nordic structure illuminated from within by warmer ancestral influences, creating a face that reads as neither fully Northern nor fully Asian, but a sophisticated integration of both.",
-    "height_cm": 174,
-    "weight_kg": 78,
-    "build": "Lean and economical — muscle definition visible in forearms and shoulders from years of precise, controlled work. No excess mass. Moves like someone who has learned to inhabit minimal space.",
-    "hair_color": "Dark brown, graying at temples",
-    "hair_style": "Short, blunt cut — functional. Kept neat. No vanity, pure maintenance.",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with warm undertones, natural",
-    "skin_tone": "Olive-golden medium tone—Northern European fairness enriched and warmed by Southeast Asian and South Asian ancestry. Sun-darkened from waterfront exposure, creating dimensional depth in coloration while retaining cool Nordic undertones at the jaw and temples. The blend creates a warm-neutral complexion that catches light distinctly.",
-    "complexion": "Clean-shaven, structured face with Northern European bone prominence refined by Southeast Asian and South Asian features into elegant proportions. Cheekbones defined but not severe, suggesting the blend of Nordic angularity with warmer ancestral softening. Eye shape shows East Asian influence in the subtle epicanthal fold and upper lid definition, while eye depth and warmth reflect South Asian genetics. Jaw shows Nordic structure tempered by Southeast Asian refinement. Weathered around the eyes from six years of squinting at contracts and horizon. Skin shows minor sun damage and one thin scar through left eyebrow (pale, old). Expression deliberately neutral — a mask worn so long it's become the face.",
-    "distinguishing_marks": [
-      "Thin horizontal scar through left eyebrow, approximately 3cm, pale and well-healed",
-      "Burn scar on right forearm, size of a thumbprint, dark and slightly raised — chemical burn from early cargo mishap",
-      "Faint tattoo on left wrist: a single vertical line with three horizontal marks crossing it — personal code, meaning unknown to outsiders"
-    ],
-    "visible_augmentations": "Cyberears: polished titanium and black polymer construction replacing biological ears, with visible directional microphone arrays and silver accent tuning ports. No attempt to hide them — they're part of his professional toolkit. Enhanced tendons visible as faint seams of darker skin and subtle musculature definition in forearms and calves, particularly around the Achilles tendons — geneware upgrade markers subtle but present to those who know where to look.",
-    "posture_movement": "Stands with weight balanced, never fully committed to one leg. Moves with economical precision — no wasted motion. Hands stay visible and controlled when speaking to others. Head movements precise and deliberate, often angling to use directional microphone pickup. The way he occupies space suggests someone constantly measuring distances and angles.",
-    "clothing_style": "Tier 4 practical: dark, neutral colors — charcoal, black, deep gray. Reinforced cargo pants with multiple sealed pockets (for secure storage of contracts and dataflakes). Matte black synth-leather jacket, worn but well-maintained, fitted close to the body. No logos or corporate affiliations visible. Subdermal armor plating under left shoulder, detectable only as subtle rigidity under fabric. Nondescript mid-tier boots with reinforced soles for dock work. Everything is functional, everything communicates: 'I know what I'm doing and I don't need to tell you about it.'"
-  },
-  "image_prompt": "Fiorella Sigurdsson, GLMZ, Great Lakes Metropolitan Zone. 174cm tall, lean muscular build. Olive-golden skin tone blending Nordic fairness with Southeast and South Asian warmth, sun-darkened from waterfront work. Sharp Northern European bone structure refined by Asian ancestry—defined cheekbones, elegant facial proportions, natural deep brown eyes with warm undertones showing East Asian eye shape subtlety. Dark brown hair graying at temples, short blunt cut. Clean-shaven with weathered lines around eyes. Thin pale scar through left eyebrow. Polished titanium and black polymer cyberears with visible microphone arrays and silver tuning ports. Dark charcoal synth-leather jacket fitted close, reinforced cargo pants, nondescript boots. Subdermal armor plating visible under left shoulder. Hands visible and controlled. Precise, economical posture. Standing on industrial dock at dusk, neon reflections off water behind him, cool blue and amber lighting. Expression deliberately neutral, mask-like. Professional, measured, dangerous competence. Cinematic, noir neo-noir atmosphere, film noir lighting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 53.1,
-    "Southeast Asian": 22.4,
-    "South Asian": 12.8,
-    "East Asian": 11.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "British Isles": {
-        "Irish": 45.8,
-        "English": 7.3
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 14.8
-      },
-      "Thai": {
-        "Thai": 5.3
-      },
-      "Cambodian": {
-        "Khmer": 2.3
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 4.1
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 3
-      },
-      "Indian": {
-        "Bengali": 5.7
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 1.7
-      },
-      "Chinese": {
-        "Cantonese": 6.4,
-        "Mandarin Northern": 3.6
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5e876b588688ff488f9d86c",
+    "type":  "character",
+    "name":  "Fiorella Sigurdsson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Cross-district contraband specialist â€” smuggler",
+    "age":  37,
+    "status":  "active",
+    "location":  "Dockside â€” Lake Michigan waterfront, smuggler territory, near Wacker and State",
+    "description":  "Fiorella Sigurdsson is average height but with a presence that fills more space than the body accounts for. At 37, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible â€” cyberears with directional microphones and sound dampening â€” can hear whispers a â€” and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a smuggler out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Fiorella Sigurdsson describe him as a precision instrument â€” point him at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Betrayal by someone they trust â€” the only currency that matters",
+                                          "Losing control of their own body to a hacker or malfunctioning cyberware",
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them"
+                                      ],
+                       "core_desires":  [
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "To find the person who burned them and make it educational",
+                                            "To matter to someone for who they are, not what they can do"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Connection â€” finds someone to talk to, even if it\u0027s a bartender or a cat",
+                                                 "Ritual â€” follows the same pre-job routine every time, superstition as structure",
+                                                 "Art â€” draws, paints, or sculpts in private; the violence goes somewhere constructive"
+                                             ],
+                       "blind_spots":  [
+                                           "Fails to notice when their own behavior mirrors the people they despise",
+                                           "Refuses to update their mental model of people â€” first impressions calcify into permanent judgments",
+                                           "Cannot see that their independence is actually isolation wearing a better outfit"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Educated vocabulary wrapped in street delivery â€” the contrast is deliberate.",
+                            "cadence":  "Rapid and dense â€” information-heavy sentences that demand attention.",
+                            "verbal_tics":  [
+                                                "Pauses mid-sentence to listen â€” combat habit that bleeds into conversation",
+                                                "Speaks in clipped fragments when stressed â€” drops pronouns, articles, pleasantries"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Contraband is just cargo that hasn\u0027t been properly introduced to the right people.\"",
+                                                  "\"Every border is a suggestion. Every checkpoint is a negotiation.\"",
+                                                  "\"I move things from where they are to where they need to be. The legality is your problem.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A corporate black site Daulet Novak-Tetteh once infiltrated is being reopened, and the people inside know his face",
+                        "A former associate resurfaces with evidence that could destroy Daulet Novak-Tetteh\u0027s reputation â€” and a price for silence",
+                        "Someone is impersonating Daulet Novak-Tetteh on jobs, and the impersonator is better at the work than the original"
+                    ],
+    "narrative_function":  "Daulet Novak-Tetteh is a pressure point â€” the kind of character whose choices ripple outward. When he makes a decision, other people\u0027s lives change. That weight is the engine of his stories.",
+    "augmentations":  "Cyberears with directional microphones and sound dampening â€” can hear whispers at 50 meters. Enhanced tendons â€” geneware upgrade, jump height and grip strength tripled",
+    "daily_life":  "Keeps a rigid daily structure â€” wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+    "affiliation":  "Semi-independent â€” has standing arrangements with several crews",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  1,
+                                                    "effective":  7
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  3,
+                                                   "effective":  7
+                                               },
+                                   "endurance":  {
+                                                     "base":  3,
+                                                     "augmented":  0,
+                                                     "effective":  9
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  1,
+                                                    "effective":  4
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  4,
+                                                      "augmented":  0,
+                                                      "effective":  9
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  1,
+                                                    "effective":  10
+                                                },
+                                 "willpower":  {
+                                                   "base":  6,
+                                                   "augmented":  1,
+                                                   "effective":  7
+                                               },
+                                 "technical":  {
+                                                   "base":  8,
+                                                   "augmented":  0,
+                                                   "effective":  10
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  6,
+                                                  "augmented":  3,
+                                                  "effective":  9
+                                              },
+                                 "intimidation":  {
+                                                      "base":  7,
+                                                      "augmented":  2,
+                                                      "effective":  10
+                                                  },
+                                 "deception":  {
+                                                   "base":  6,
+                                                   "augmented":  2,
+                                                   "effective":  10
+                                               },
+                                 "empathy":  {
+                                                 "base":  7,
+                                                 "augmented":  3,
+                                                 "effective":  5
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.64,
+                                      "caution":  0.64,
+                                      "loyalty":  0.51,
+                                      "greed":  0.34,
+                                      "empathy":  0.1
+                                  },
+                  "drives":  [
+                                 "survival",
+                                 "freedom",
+                                 "protection"
+                             ],
+                  "thresholds":  {
+                                     "pain":  9,
+                                     "stress":  4,
+                                     "loyalty_break":  10
+                                 },
+                  "strengths":  [
+                                    "exceptional close-quarters combat",
+                                    "social chameleon â€” adapts to any environment",
+                                    "multilingual â€” speaks 4+ languages fluently"
+                                ],
+                  "weaknesses":  [
+                                     "augmentation dependency â€” performance drops sharply if chrome malfunctions",
+                                     "old injury that flares under specific conditions",
+                                     "overconfidence in specialty areas leading to blind spots"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "smuggler",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Physical agitation â€” pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Claims not to care about reputation but monitors what people say about them obsessively",
+                                              "Values loyalty intensely but has betrayed someone in the past to survive",
+                                              "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+                                          ],
+                       "habits":  [
+                                      "Takes a specific route home every time, varying only one block per trip â€” paranoia as lifestyle",
+                                      "Arrives fifteen minutes early to everything â€” late once, nearly died, never again",
+                                      "Talks to their gear â€” names weapons, thanks tools, treats equipment as companions"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering their employer deliberately sent them into a death trap",
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Cyberears with directional microphones and sound dampening",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Cyberears with directional microphones and sound dampening â€” can hear whispers at 50 meters",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Enhanced tendons",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Enhanced tendons â€” geneware upgrade, jump height and grip strength tripled",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Dockside",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street-Custom Loaded Pipe \u0027Bell Ringer\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Masquerade",
+                             "Fiorella",
+                             "Slagworks Industrial",
+                             "GLMZ"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Northern European dominant (53.1%) with significant Southeast Asian (22.4%), South Asian (12.8%), and East Asian (11.7%) ancestry. The genetic blend produces a striking phenotype: Northern European bone structure provides the foundation, while Southeast Asian refinement softens facial angles, South Asian warmth deepens skin tone and eye richness, and East Asian subtlety shapes eye contour and cheekbone definition. The result is a cool-to-warm complexion with unexpected depthâ€”Nordic structure illuminated from within by warmer ancestral influences, creating a face that reads as neither fully Northern nor fully Asian, but a sophisticated integration of both.",
+                                 "height_cm":  174,
+                                 "weight_kg":  78,
+                                 "build":  "Lean and economical â€” muscle definition visible in forearms and shoulders from years of precise, controlled work. No excess mass. Moves like someone who has learned to inhabit minimal space.",
+                                 "hair_color":  "Dark brown, graying at temples",
+                                 "hair_style":  "Short, blunt cut â€” functional. Kept neat. No vanity, pure maintenance.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with warm undertones, natural",
+                                 "skin_tone":  "Olive-golden medium toneâ€”Northern European fairness enriched and warmed by Southeast Asian and South Asian ancestry. Sun-darkened from waterfront exposure, creating dimensional depth in coloration while retaining cool Nordic undertones at the jaw and temples. The blend creates a warm-neutral complexion that catches light distinctly.",
+                                 "complexion":  "Clean-shaven, structured face with Northern European bone prominence refined by Southeast Asian and South Asian features into elegant proportions. Cheekbones defined but not severe, suggesting the blend of Nordic angularity with warmer ancestral softening. Eye shape shows East Asian influence in the subtle epicanthal fold and upper lid definition, while eye depth and warmth reflect South Asian genetics. Jaw shows Nordic structure tempered by Southeast Asian refinement. Weathered around the eyes from six years of squinting at contracts and horizon. Skin shows minor sun damage and one thin scar through left eyebrow (pale, old). Expression deliberately neutral â€” a mask worn so long it\u0027s become the face.",
+                                 "distinguishing_marks":  [
+                                                              "Thin horizontal scar through left eyebrow, approximately 3cm, pale and well-healed",
+                                                              "Burn scar on right forearm, size of a thumbprint, dark and slightly raised â€” chemical burn from early cargo mishap",
+                                                              "Faint tattoo on left wrist: a single vertical line with three horizontal marks crossing it â€” personal code, meaning unknown to outsiders"
+                                                          ],
+                                 "visible_augmentations":  "Cyberears: polished titanium and black polymer construction replacing biological ears, with visible directional microphone arrays and silver accent tuning ports. No attempt to hide them â€” they\u0027re part of his professional toolkit. Enhanced tendons visible as faint seams of darker skin and subtle musculature definition in forearms and calves, particularly around the Achilles tendons â€” geneware upgrade markers subtle but present to those who know where to look.",
+                                 "posture_movement":  "Stands with weight balanced, never fully committed to one leg. Moves with economical precision â€” no wasted motion. Hands stay visible and controlled when speaking to others. Head movements precise and deliberate, often angling to use directional microphone pickup. The way he occupies space suggests someone constantly measuring distances and angles.",
+                                 "clothing_style":  "Tier 4 practical: dark, neutral colors â€” charcoal, black, deep gray. Reinforced cargo pants with multiple sealed pockets (for secure storage of contracts and dataflakes). Matte black synth-leather jacket, worn but well-maintained, fitted close to the body. No logos or corporate affiliations visible. Subdermal armor plating under left shoulder, detectable only as subtle rigidity under fabric. Nondescript mid-tier boots with reinforced soles for dock work. Everything is functional, everything communicates: \u0027I know what I\u0027m doing and I don\u0027t need to tell you about it.\u0027"
+                             },
+    "image_prompt":  "Fiorella Sigurdsson, GLMZ, Great Lakes Metropolitan Zone. 174cm tall, lean muscular build. Olive-golden skin tone blending Nordic fairness with Southeast and South Asian warmth, sun-darkened from waterfront work. Sharp Northern European bone structure refined by Asian ancestryâ€”defined cheekbones, elegant facial proportions, natural deep brown eyes with warm undertones showing East Asian eye shape subtlety. Dark brown hair graying at temples, short blunt cut. Clean-shaven with weathered lines around eyes. Thin pale scar through left eyebrow. Polished titanium and black polymer cyberears with visible microphone arrays and silver tuning ports. Dark charcoal synth-leather jacket fitted close, reinforced cargo pants, nondescript boots. Subdermal armor plating visible under left shoulder. Hands visible and controlled. Precise, economical posture. Standing on industrial dock at dusk, neon reflections off water behind him, cool blue and amber lighting. Expression deliberately neutral, mask-like. Professional, measured, dangerous competence. Cinematic, noir neo-noir atmosphere, film noir lighting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  53.1,
+                             "Southeast Asian":  22.4,
+                             "South Asian":  12.8,
+                             "East Asian":  11.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  45.8,
+                                                                            "English":  7.3
+                                                                        }
+                                                  },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  14.8
+                                                                },
+                                                    "Thai":  {
+                                                                 "Thai":  5.3
+                                                             },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  2.3
+                                                                  }
+                                                },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  4.1
+                                                                },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  3
+                                                               },
+                                                "Indian":  {
+                                                               "Bengali":  5.7
+                                                           }
+                                            },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  1.7
+                                                          },
+                                               "Chinese":  {
+                                                               "Cantonese":  6.4,
+                                                               "Mandarin Northern":  3.6
+                                                           }
+                                           }
+                        },
+    "tier":  "3"
 }

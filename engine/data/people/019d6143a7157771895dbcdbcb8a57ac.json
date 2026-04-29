@@ -1,181 +1,240 @@
-{
-  "id": "019d6143a7157771895dbcdbcb8a57ac",
-  "rating": 30,
-  "vote_count": 2,
-  "type": "character",
-  "name": "Ghislaine Nazari-Hinojosa",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Fixer - Network of sub-fixers",
-  "age": 56,
-  "status": "active",
-  "location": "the Gray Zone, near Western and Chicago Ave",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Independent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9,
-    "Opportunist": 0.9,
-    "Face": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Complex diaspora blend: 48.2% Hispanic/Latin American, 20.9% Middle Eastern, 14.5% South Asian, 11.4% Indigenous American, and 5.0% Sub-Saharan African. This genetic combination creates her striking angular architecture—pronounced cheekbones and defined jaw from Hispanic/Latin and Middle Eastern ancestry, softened and warmed by South Asian facial geometry. Indigenous American ancestry contributes sharp angular features and rich earth-tone undertones. The Sub-Saharan African component adds luminosity and warm undertones that glow beneath her skin. The result is a face of compelling contradictions: sharp and soft simultaneously, with intelligent depth that reflects her complex ancestry.",
-    "height_cm": 168,
-    "weight_kg": 72,
-    "build": "Broad-shouldered and solid, carrying weight with authority rather than bulk. Muscular forearms suggest decades of hands-on work. Slight forward lean to posture from age, but not frail.",
-    "hair_color": "Steel gray with natural dark roots showing",
-    "hair_style": "Pulled back in a tight, no-nonsense braid; silver clasp at the base",
-    "hair_length": "Long",
-    "eye_color": "Deep brown with subtle amber undertones",
-    "skin_tone": "Warm medium bronze complexion with golden, olive, and ochre undertones—a luminous depth reflecting her layered ancestry across Hispanic/Latin, Middle Eastern, South Asian, Indigenous American, and Sub-Saharan African heritages. Rich, weathered warmth from decades of sun exposure and lived experience. Luminous rather than pallid, with subtle undertone variation across her face from the blending of her genetic regions.",
-    "complexion": "Angular face with pronounced cheekbones and strong, defined jaw that speaks to her Hispanic/Latin and Middle Eastern ancestry, warmed and softened by South Asian and Indigenous American heritage. Deep-set eyes with intelligent, direct gaze that cuts through pretense. High, carved cheekbones shaped by both genetics and time. A thin scar runs from her left temple to her ear—old, pale, healed badly. Her hands are scarred and calloused, stained with old nicotine and permanent grease marks under the fingernails.",
-    "distinguishing_marks": [
-      "Pale scar from temple to ear on left side of face, approximately 8cm long",
-      "Māori ta moko pattern tattooed on left temple (genealogical markings in dark indigo)",
-      "Faded Polish-style cross tattoo on right inner forearm, circa 2170s design",
-      "Burn scar on the back of right hand (three-fingered grip pattern, likely industrial accident)"
-    ],
-    "visible_augmentations": "None visible. Her augmentations are subcutaneous: neural jack at the base of her skull (concealed by hair), subdermal wrist interface for direct network access, and encrypted comms relay behind her right ear.",
-    "posture_movement": "She moves with deliberate efficiency—no wasted motion. Her gaze is direct and assesses before she speaks. When sitting, she occupies space fully, elbows on the table. Her hands are always busy: shuffling papers, tapping comms, or unconsciously checking security feeds through her wrist interface.",
-    "clothing_style": "Tier 3-4 pragmatist. Dark gray or charcoal reinforced jacket (Khao-brand, durable synthleather with hidden pockets for data-slips and payment devices) worn over plain black crew-neck underlayer. Fitted tactical cargo pants in dark blue with reinforced knees. Worn leather work boots, resoled multiple times. A chunky stainless steel watch on her left wrist—old, pre-collapse model, still runs on mechanical gears. No corporate logos. No jewelry except the watch and a thin platinum band on her left ring finger (old, worn smooth)."
-  },
-  "image_prompt": "Ghislaine Nazari-Hinojosa, 168cm tall woman with broad shoulders and athletic build, steel gray hair in tight braid, warm bronze skin with golden and olive undertones blending Hispanic, Middle Eastern, South Asian, Indigenous, and Sub-Saharan African heritage. Angular face with pronounced carved cheekbones, strong jaw, deep brown eyes with amber flecks. Pale 8cm scar running from left temple to ear. Dark indigo Māori ta moko pattern on left temple. Weathered hands with calloused fingers and old burn scar. Wearing dark charcoal Khao synthleather jacket over black crew-neck, tactical dark blue cargo pants with reinforced knees, worn leather work boots. Old stainless steel mechanical watch on left wrist, platinum band on ring finger. Direct, assessing gaze. Sitting at table with elbows down, hands busy with data-slips. Neon-lit GLMZ office setting, 2226, cool blue and amber lighting casting shadows across her featured scarring and tattoos. Neo-noir noir atmosphere, worn and practical aesthetic. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 48.2,
-    "Middle Eastern": 20.9,
-    "South Asian": 14.5,
-    "Indigenous American": 11.4,
-    "Sub-Saharan African": 5
-  },
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 46.8
-      },
-      "South American": {
-        "Colombian": 1.4
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Emirati": 5.8,
-        "Kuwaiti": 2.8
-      },
-      "Kurdish": {
-        "Kurdish": 12.3
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 14.5
-      }
-    },
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Potawatomi": 5
-      },
-      "Andean": {
-        "Quechua": 6.4
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Somali": 3.3,
-        "Tanzanian": 1.1
-      },
-      "West African": {
-        "Guinean": 0.3,
-        "Nigerian": 0.3
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a7157771895dbcdbcb8a57ac",
+    "rating":  30,
+    "vote_count":  2,
+    "type":  "character",
+    "name":  "Ghislaine Nazari-Hinojosa",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Fixer - Network of sub-fixers",
+    "age":  56,
+    "status":  "active",
+    "location":  "the Gray Zone, near Western and Chicago Ave",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Independent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9,
+                       "Opportunist":  0.9,
+                       "Face":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora blend: 48.2% Hispanic/Latin American, 20.9% Middle Eastern, 14.5% South Asian, 11.4% Indigenous American, and 5.0% Sub-Saharan African. This genetic combination creates her striking angular architectureâ€”pronounced cheekbones and defined jaw from Hispanic/Latin and Middle Eastern ancestry, softened and warmed by South Asian facial geometry. Indigenous American ancestry contributes sharp angular features and rich earth-tone undertones. The Sub-Saharan African component adds luminosity and warm undertones that glow beneath her skin. The result is a face of compelling contradictions: sharp and soft simultaneously, with intelligent depth that reflects her complex ancestry.",
+                                 "height_cm":  168,
+                                 "weight_kg":  72,
+                                 "build":  "Broad-shouldered and solid, carrying weight with authority rather than bulk. Muscular forearms suggest decades of hands-on work. Slight forward lean to posture from age, but not frail.",
+                                 "hair_color":  "Steel gray with natural dark roots showing",
+                                 "hair_style":  "Pulled back in a tight, no-nonsense braid; silver clasp at the base",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Deep brown with subtle amber undertones",
+                                 "skin_tone":  "Warm medium bronze complexion with golden, olive, and ochre undertonesâ€”a luminous depth reflecting her layered ancestry across Hispanic/Latin, Middle Eastern, South Asian, Indigenous American, and Sub-Saharan African heritages. Rich, weathered warmth from decades of sun exposure and lived experience. Luminous rather than pallid, with subtle undertone variation across her face from the blending of her genetic regions.",
+                                 "complexion":  "Angular face with pronounced cheekbones and strong, defined jaw that speaks to her Hispanic/Latin and Middle Eastern ancestry, warmed and softened by South Asian and Indigenous American heritage. Deep-set eyes with intelligent, direct gaze that cuts through pretense. High, carved cheekbones shaped by both genetics and time. A thin scar runs from her left temple to her earâ€”old, pale, healed badly. Her hands are scarred and calloused, stained with old nicotine and permanent grease marks under the fingernails.",
+                                 "distinguishing_marks":  [
+                                                              "Pale scar from temple to ear on left side of face, approximately 8cm long",
+                                                              "MÄori ta moko pattern tattooed on left temple (genealogical markings in dark indigo)",
+                                                              "Faded Polish-style cross tattoo on right inner forearm, circa 2170s design",
+                                                              "Burn scar on the back of right hand (three-fingered grip pattern, likely industrial accident)"
+                                                          ],
+                                 "visible_augmentations":  "None visible. Her augmentations are subcutaneous: neural jack at the base of her skull (concealed by hair), subdermal wrist interface for direct network access, and encrypted comms relay behind her right ear.",
+                                 "posture_movement":  "She moves with deliberate efficiencyâ€”no wasted motion. Her gaze is direct and assesses before she speaks. When sitting, she occupies space fully, elbows on the table. Her hands are always busy: shuffling papers, tapping comms, or unconsciously checking security feeds through her wrist interface.",
+                                 "clothing_style":  "Tier 3-4 pragmatist. Dark gray or charcoal reinforced jacket (Khao-brand, durable synthleather with hidden pockets for data-slips and payment devices) worn over plain black crew-neck underlayer. Fitted tactical cargo pants in dark blue with reinforced knees. Worn leather work boots, resoled multiple times. A chunky stainless steel watch on her left wristâ€”old, pre-collapse model, still runs on mechanical gears. No corporate logos. No jewelry except the watch and a thin platinum band on her left ring finger (old, worn smooth)."
+                             },
+    "image_prompt":  "Ghislaine Nazari-Hinojosa, 168cm tall woman with broad shoulders and athletic build, steel gray hair in tight braid, warm bronze skin with golden and olive undertones blending Hispanic, Middle Eastern, South Asian, Indigenous, and Sub-Saharan African heritage. Angular face with pronounced carved cheekbones, strong jaw, deep brown eyes with amber flecks. Pale 8cm scar running from left temple to ear. Dark indigo MÄori ta moko pattern on left temple. Weathered hands with calloused fingers and old burn scar. Wearing dark charcoal Khao synthleather jacket over black crew-neck, tactical dark blue cargo pants with reinforced knees, worn leather work boots. Old stainless steel mechanical watch on left wrist, platinum band on ring finger. Direct, assessing gaze. Sitting at table with elbows down, hands busy with data-slips. Neon-lit GLMZ office setting, 2226, cool blue and amber lighting casting shadows across her featured scarring and tattoos. Neo-noir noir atmosphere, worn and practical aesthetic. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  48.2,
+                             "Middle Eastern":  20.9,
+                             "South Asian":  14.5,
+                             "Indigenous American":  11.4,
+                             "Sub-Saharan African":  5
+                         },
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  46.8
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Colombian":  1.4
+                                                                               }
+                                                        },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Emirati":  5.8,
+                                                                     "Kuwaiti":  2.8
+                                                                 },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  12.3
+                                                               }
+                                               },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  14.5
+                                                               }
+                                            },
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  5
+                                                                                },
+                                                        "Andean":  {
+                                                                       "Quechua":  6.4
+                                                                   }
+                                                    },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Somali":  3.3,
+                                                                             "Tanzanian":  1.1
+                                                                         },
+                                                        "West African":  {
+                                                                             "Guinean":  0.3,
+                                                                             "Nigerian":  0.3
+                                                                         }
+                                                    }
+                        }
 }

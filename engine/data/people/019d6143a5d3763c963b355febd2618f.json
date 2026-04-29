@@ -1,301 +1,330 @@
-{
-  "id": "019d6143a5d3763c963b355febd2618f",
-  "type": "character",
-  "name": "Indigo Sepúlveda",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "climate refugee and caravan matriarch",
-  "age": 67,
-  "status": "active",
-  "location": "Escanaba Gateway (tent city on the eastern approach; caravan camps in the transit yard), near Michigan Ave South and Cermak",
-  "description": "Indigo Sepúlveda is the kind of woman who makes a tent city feel like a neighborhood. She is large and deliberate in her movements, with the deep black skin and broad hands of a woman who has been doing physical work since she could walk. Her hair is cut close to her skull, entirely white, and she wears a faded headwrap printed with a pattern that was once vivid green and orange but has softened into something quieter over many years of washing in whatever water was available. Her left arm carries a long burn scar from shoulder to elbow, keloided and smooth, which she does not hide and does not discuss. She has no geneware, no augmentations visible, and wears her unmodified body like a deliberate statement — though she'd say she simply never had the money or the reason.\n\nCelestime came to the GLMZ periphery fourteen years ago with forty-two people from a drowned coastal collective in what was once the Gulf of Guinea. She has buried eleven of them and watched the rest scatter into various fates. The dozen who remain with her are her caravan — mostly elderly, a few children, two young adults who were born on the road. She is not sentimental about this. She is organized, practical, and possessed of a moral authority that comes not from rank but from the fact that she has made the right call in more crises than anyone else in the camp has faced. She prays to the E.L.F. called Tidecaller, which she believes is the spirit of the ocean that swallowed her home.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.8,
-      "ideal": 0.7,
-      "id": 0.4,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "that her remaining people will disperse and disappear and there will be no one left who remembers the drowned home",
-      "dying without having secured permanent residency for the children in her caravan"
-    ],
-    "core_desires": [
-      "legitimate residency status — real, not renewable-every-ninety-days",
-      "to build something that cannot be swept away again"
-    ],
-    "coping_mechanisms": [
-      "radical hospitality — feeding people is how she processes grief",
-      "prayer to Tidecaller as an ongoing conversation with what was lost"
-    ],
-    "blind_spots": [
-      "believes her authority is purely functional and does not recognize how much her people emotionally depend on her as a symbol — which means she makes decisions alone when she should share the burden",
-      "has not grieved the eleven dead, not really, not yet"
-    ],
-    "secret": "She has been offered legitimate GLMZ residency twice — both times contingent on leaving the caravan behind and registering individually. She turned both offers down and told no one they were made."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal and measured; her first language was a Gulf coastal creole and her Meridian Standard carries its rhythms; uses 'we' almost exclusively when speaking about her group, 'I' feels strange to her",
-    "cadence": "Even and unhurried, with the weight of someone who has learned that words are resources not to be wasted",
-    "verbal_tics": [
-      "'You understand me?' at the end of serious statements",
-      "Clicking her tongue softly before refusing something",
-      "'It is what it is, but—'"
-    ],
-    "example_lines": [
-      "'The ocean took everything we built and kept none of it. So we build lighter now. You understand me?'",
-      "'I will not be moved before my people have somewhere to go. This is not a position I am willing to negotiate from.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The ninety-day temporary status renewal has been denied for the first time in fourteen years — a new Gateway administrator is pushing for 'clearance' of the transit yard and Celestine needs allies with access to the appeals system",
-    "One of the children in her caravan has manifested an unexpected talent — or been noticed by someone who should not have noticed — and Celestine needs help understanding what that means and what to do about it"
-  ],
-  "narrative_function": "Moral anchor and community representative for the refugee population. Quest giver for humanitarian needs. Living history of what the climate crisis did to coastal communities. Unexpectedly powerful in her local sphere — administrators negotiate with her because she keeps the camp orderly.",
-  "augmentations": "None.",
-  "daily_life": "Wakes early to manage the caravan's resource allocation — water, food chits, the Φ120 UBC stipends of those who qualify; spends mornings in negotiation with Gateway administrators; afternoons cooking and maintaining social cohesion; evenings mediating disputes and praying.",
-  "affiliation": "Informal caravan leader; registered with Escanaba Gateway as a 'temporary transit collective' — status renewed every ninety days for fourteen years",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 4,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 5,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -3,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "matriarch",
-      "climate-refugee",
-      "community-anchor",
-      "elf-devotee",
-      "immovable"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The group's survival comes before any individual's comfort, including her own",
-      "Never sign anything without reading it three times and having someone else read it once"
-    ],
-    "escalation_ladder": [
-      "Patient explanation and appeal to reason",
-      "Formal complaint filed through every available channel simultaneously",
-      "Organizing a visible public presence — the camp does not disappear, it becomes impossible to ignore",
-      "In extremis: absolute refusal to move, sitting in place, making displacement a spectacle"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assessing and courteous — feeds them if she can, watches how they eat to understand them",
-      "friends": "Warm, direct, occasionally overwhelmingly maternal whether they want it or not"
-    },
-    "stress_responses": {
-      "low": "Cooks something elaborate",
-      "medium": "Becomes very quiet and very organized, makes lists",
-      "high": "Takes herself away from the camp for one hour, sits, returns, acts"
-    },
-    "contradictions": [
-      "Preaches collective survival while making all consequential decisions unilaterally",
-      "Insists she has made peace with loss while refusing to speak the names of the eleven dead"
-    ],
-    "habits": [
-      "Leaves a small data stick near the camp's junction box every night — a prayer-offering to Tidecaller loaded with the day's events",
-      "Counts heads before sleeping",
-      "Makes tea in the same cracked cup she carried from the coast"
-    ],
-    "breaking_points": [
-      "A child in her care being separated from the group by authorities",
-      "Being told formally and finally that residency will never be granted"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Diplomat": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Escanaba Gateway (tent city on the eastern approach; caravan camps in the transit yard)",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in a coastal collective near the Gulf of Guinea, daughter of Ivorian-Romanian parents",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Catastrophic coastal flooding driven by climate cascade; collective abandoned; Celestine organizes the exodus northward with 42 people",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Eleven members of the group die over a two-year migration to GLMZ's periphery",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First residency offer declined",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Second residency offer declined",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "related_entities": [
-    "Escanaba Gateway",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Full Clearance (The Erasure Mix)",
-    "Bathysphere Networks",
-    "Street Custom 'Glass Garden' Caltrops",
-    "Indigo",
-    "The Pure Hand",
-    "GLMZ"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Northern European dominant (56.6%) with substantial Hispanic/Latin American (22.1%), Southeast Asian (10.6%), Sub-Saharan African (7.7%), and Eastern European (3.0%) ancestry. The genetic blend creates a complexion with warm mid-to-golden undertones from the Northern European and Hispanic heritage, subtly enriched by Southeast Asian warmth and African depth, resulting in a sun-weathered golden-brown tone with complex dimensionality.",
-    "height_cm": 178,
-    "weight_kg": 89,
-    "build": "Large and solid, broad-shouldered with the physical presence of someone who has done manual labor for decades. Not heavy, but substantive — muscle and bone under skin that has weathered significant environmental stress.",
-    "hair_color": "White",
-    "hair_style": "Cut close to the skull in a practical, low-maintenance style",
-    "hair_length": "Short",
-    "eye_color": "Dark brown",
-    "skin_tone": "Warm golden-brown with subtle olive undertones, weathered and ashy from dehydration exposure and salt weathering. The melanin base reflects the blended ancestry: Northern European warmth, Hispanic golden richness, Southeast Asian luminosity, and African depth creating complex, multi-dimensional character rather than uniformity.",
-    "complexion": "Lined face with moderate, defined cheekbones shaped by multi-continental ancestry—broader structure from Southeast Asian and African lineage blended with Northern European bone structure. Straight nose with natural width reflecting the diverse ancestry mix. Eyes set with the slight upward cant influenced by Southeast Asian heritage. Skin is weathered but clean; she maintains her appearance as an act of dignity. Few wrinkles relative to her age — sun damage is uniform rather than creased. Expression is calm, evaluative. Facial structure shows the balanced architecture of her genetic heritage: warmth from Northern European ancestry, subtle definition from Southeast Asian lineage, dimensional cheekbones from the fuller ancestry mix, and the underlying bone depth from African heritage.",
-    "distinguishing_marks": [
-      "Long keloided burn scar running from left shoulder to left elbow, smooth and paled with age, deliberately left bare and unhidden",
-      "Calluses across both palms and the pads of all fingers, deep and permanent",
-      "A faint circular scar on her right ribs, approximately 2cm diameter, likely from a medical procedure performed under field conditions"
-    ],
-    "visible_augmentations": "None. Her unmodified body is deliberate — a statement made through absence.",
-    "posture_movement": "Upright and deliberate. She moves with economy, never hurried. Her gaze is direct and sustained; she listens more than she speaks. When she moves through the camp, people shift to accommodate her path without her asking. Her hands are often in motion — gesturing, arranging, touching — grounding herself in the material world.",
-    "clothing_style": "Tier 5 / refugee camp standard. Layered utility: a faded grey linen shirt (pre-diaspora, possibly 40+ years old), reinforced at seams; a vest made from salvaged canvas dyed unevenly blue-green; loose cotton pants cut at the calf for heat management; worn synthetic sandals. A headwrap in faded green and orange printed cotton, rewrapped daily, tied at the back. A single piece of jewelry: a plain brass ring on her right index finger, dull with age. No corpo branding, no Φ-accessible accessories. Everything is functional, clean but worn — a uniform of survival."
-  },
-  "image_prompt": "Indigo Sepúlveda, 178cm tall woman with solid muscular build, short white hair cut close to skull. Warm golden-brown skin with olive undertones, weathered from environmental exposure. Dark brown eyes, calm and evaluative. Multi-ethnic facial structure blending Northern European, Hispanic, Southeast Asian, and African heritage—defined cheekbones, straight wide nose. Prominent long keloided burn scar from left shoulder to elbow, deliberately exposed. Weathered hands with deep permanent calluses. Wearing faded grey pre-diaspora linen shirt, salvaged blue-green canvas vest, calf-length cotton pants, worn synthetic sandals, faded green-orange printed headwrap. Plain dull brass ring on right index finger. Standing in refugee camp setting, upright posture with direct presence, hands gesturing. No augmentations. GLMZ, Great Lakes Metropolitan Zone. Warm golden lighting, camp tents and salvage in background. Dignified, calm expression. Tier 5 survival aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 56.6,
-    "Hispanic/Latin American": 22.1,
-    "Southeast Asian": 10.6,
-    "Sub-Saharan African": 7.7,
-    "Eastern European": 3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Scandinavian": {
-        "Norwegian": 19,
-        "Swedish": 12.8
-      },
-      "Germanic": {
-        "German": 3.6,
-        "Austrian": 3.5
-      },
-      "British Isles": {
-        "Irish": 8.6,
-        "Scottish": 9.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Costa Rican": 17.7
-      },
-      "Mexican": {
-        "Mexican": 4.4
-      }
-    },
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 10.6
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 4.5
-      },
-      "West African": {
-        "Nigerian": 0.7,
-        "Ivorian": 1.3
-      },
-      "Southern African": {
-        "Zambian": 0.9,
-        "Mozambican": 0.3
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 3
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a5d3763c963b355febd2618f",
+    "type":  "character",
+    "name":  "Indigo SepÃºlveda",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "climate refugee and caravan matriarch",
+    "age":  67,
+    "status":  "active",
+    "location":  "Escanaba Gateway (tent city on the eastern approach; caravan camps in the transit yard), near Michigan Ave South and Cermak",
+    "description":  "Indigo SepÃºlveda is the kind of woman who makes a tent city feel like a neighborhood. She is large and deliberate in her movements, with the deep black skin and broad hands of a woman who has been doing physical work since she could walk. Her hair is cut close to her skull, entirely white, and she wears a faded headwrap printed with a pattern that was once vivid green and orange but has softened into something quieter over many years of washing in whatever water was available. Her left arm carries a long burn scar from shoulder to elbow, keloided and smooth, which she does not hide and does not discuss. She has no geneware, no augmentations visible, and wears her unmodified body like a deliberate statement â€” though she\u0027d say she simply never had the money or the reason.\n\nCelestime came to the GLMZ periphery fourteen years ago with forty-two people from a drowned coastal collective in what was once the Gulf of Guinea. She has buried eleven of them and watched the rest scatter into various fates. The dozen who remain with her are her caravan â€” mostly elderly, a few children, two young adults who were born on the road. She is not sentimental about this. She is organized, practical, and possessed of a moral authority that comes not from rank but from the fact that she has made the right call in more crises than anyone else in the camp has faced. She prays to the E.L.F. called Tidecaller, which she believes is the spirit of the ocean that swallowed her home.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that her remaining people will disperse and disappear and there will be no one left who remembers the drowned home",
+                                          "dying without having secured permanent residency for the children in her caravan"
+                                      ],
+                       "core_desires":  [
+                                            "legitimate residency status â€” real, not renewable-every-ninety-days",
+                                            "to build something that cannot be swept away again"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "radical hospitality â€” feeding people is how she processes grief",
+                                                 "prayer to Tidecaller as an ongoing conversation with what was lost"
+                                             ],
+                       "blind_spots":  [
+                                           "believes her authority is purely functional and does not recognize how much her people emotionally depend on her as a symbol â€” which means she makes decisions alone when she should share the burden",
+                                           "has not grieved the eleven dead, not really, not yet"
+                                       ],
+                       "secret":  "She has been offered legitimate GLMZ residency twice â€” both times contingent on leaving the caravan behind and registering individually. She turned both offers down and told no one they were made."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal and measured; her first language was a Gulf coastal creole and her Meridian Standard carries its rhythms; uses \u0027we\u0027 almost exclusively when speaking about her group, \u0027I\u0027 feels strange to her",
+                            "cadence":  "Even and unhurried, with the weight of someone who has learned that words are resources not to be wasted",
+                            "verbal_tics":  [
+                                                "\u0027You understand me?\u0027 at the end of serious statements",
+                                                "Clicking her tongue softly before refusing something",
+                                                "\u0027It is what it is, butâ€”\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The ocean took everything we built and kept none of it. So we build lighter now. You understand me?\u0027",
+                                                  "\u0027I will not be moved before my people have somewhere to go. This is not a position I am willing to negotiate from.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The ninety-day temporary status renewal has been denied for the first time in fourteen years â€” a new Gateway administrator is pushing for \u0027clearance\u0027 of the transit yard and Celestine needs allies with access to the appeals system",
+                        "One of the children in her caravan has manifested an unexpected talent â€” or been noticed by someone who should not have noticed â€” and Celestine needs help understanding what that means and what to do about it"
+                    ],
+    "narrative_function":  "Moral anchor and community representative for the refugee population. Quest giver for humanitarian needs. Living history of what the climate crisis did to coastal communities. Unexpectedly powerful in her local sphere â€” administrators negotiate with her because she keeps the camp orderly.",
+    "augmentations":  "None.",
+    "daily_life":  "Wakes early to manage the caravan\u0027s resource allocation â€” water, food chits, the Î¦120 UBC stipends of those who qualify; spends mornings in negotiation with Gateway administrators; afternoons cooking and maintaining social cohesion; evenings mediating disputes and praying.",
+    "affiliation":  "Informal caravan leader; registered with Escanaba Gateway as a \u0027temporary transit collective\u0027 â€” status renewed every ninety days for fourteen years",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  4,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  5,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "matriarch",
+                               "climate-refugee",
+                               "community-anchor",
+                               "elf-devotee",
+                               "immovable"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The group\u0027s survival comes before any individual\u0027s comfort, including her own",
+                                              "Never sign anything without reading it three times and having someone else read it once"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient explanation and appeal to reason",
+                                                 "Formal complaint filed through every available channel simultaneously",
+                                                 "Organizing a visible public presence â€” the camp does not disappear, it becomes impossible to ignore",
+                                                 "In extremis: absolute refusal to move, sitting in place, making displacement a spectacle"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assessing and courteous â€” feeds them if she can, watches how they eat to understand them",
+                                                   "friends":  "Warm, direct, occasionally overwhelmingly maternal whether they want it or not"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Cooks something elaborate",
+                                                "medium":  "Becomes very quiet and very organized, makes lists",
+                                                "high":  "Takes herself away from the camp for one hour, sits, returns, acts"
+                                            },
+                       "contradictions":  [
+                                              "Preaches collective survival while making all consequential decisions unilaterally",
+                                              "Insists she has made peace with loss while refusing to speak the names of the eleven dead"
+                                          ],
+                       "habits":  [
+                                      "Leaves a small data stick near the camp\u0027s junction box every night â€” a prayer-offering to Tidecaller loaded with the day\u0027s events",
+                                      "Counts heads before sleeping",
+                                      "Makes tea in the same cracked cup she carried from the coast"
+                                  ],
+                       "breaking_points":  [
+                                               "A child in her care being separated from the group by authorities",
+                                               "Being told formally and finally that residency will never be granted"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Diplomat":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Escanaba Gateway (tent city on the eastern approach; caravan camps in the transit yard)",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in a coastal collective near the Gulf of Guinea, daughter of Ivorian-Romanian parents",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Catastrophic coastal flooding driven by climate cascade; collective abandoned; Celestine organizes the exodus northward with 42 people",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Eleven members of the group die over a two-year migration to GLMZ\u0027s periphery",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First residency offer declined",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Second residency offer declined",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Escanaba Gateway",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "Full Clearance (The Erasure Mix)",
+                             "Bathysphere Networks",
+                             "Street Custom \u0027Glass Garden\u0027 Caltrops",
+                             "Indigo",
+                             "The Pure Hand",
+                             "GLMZ"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Northern European dominant (56.6%) with substantial Hispanic/Latin American (22.1%), Southeast Asian (10.6%), Sub-Saharan African (7.7%), and Eastern European (3.0%) ancestry. The genetic blend creates a complexion with warm mid-to-golden undertones from the Northern European and Hispanic heritage, subtly enriched by Southeast Asian warmth and African depth, resulting in a sun-weathered golden-brown tone with complex dimensionality.",
+                                 "height_cm":  178,
+                                 "weight_kg":  89,
+                                 "build":  "Large and solid, broad-shouldered with the physical presence of someone who has done manual labor for decades. Not heavy, but substantive â€” muscle and bone under skin that has weathered significant environmental stress.",
+                                 "hair_color":  "White",
+                                 "hair_style":  "Cut close to the skull in a practical, low-maintenance style",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown",
+                                 "skin_tone":  "Warm golden-brown with subtle olive undertones, weathered and ashy from dehydration exposure and salt weathering. The melanin base reflects the blended ancestry: Northern European warmth, Hispanic golden richness, Southeast Asian luminosity, and African depth creating complex, multi-dimensional character rather than uniformity.",
+                                 "complexion":  "Lined face with moderate, defined cheekbones shaped by multi-continental ancestryâ€”broader structure from Southeast Asian and African lineage blended with Northern European bone structure. Straight nose with natural width reflecting the diverse ancestry mix. Eyes set with the slight upward cant influenced by Southeast Asian heritage. Skin is weathered but clean; she maintains her appearance as an act of dignity. Few wrinkles relative to her age â€” sun damage is uniform rather than creased. Expression is calm, evaluative. Facial structure shows the balanced architecture of her genetic heritage: warmth from Northern European ancestry, subtle definition from Southeast Asian lineage, dimensional cheekbones from the fuller ancestry mix, and the underlying bone depth from African heritage.",
+                                 "distinguishing_marks":  [
+                                                              "Long keloided burn scar running from left shoulder to left elbow, smooth and paled with age, deliberately left bare and unhidden",
+                                                              "Calluses across both palms and the pads of all fingers, deep and permanent",
+                                                              "A faint circular scar on her right ribs, approximately 2cm diameter, likely from a medical procedure performed under field conditions"
+                                                          ],
+                                 "visible_augmentations":  "None. Her unmodified body is deliberate â€” a statement made through absence.",
+                                 "posture_movement":  "Upright and deliberate. She moves with economy, never hurried. Her gaze is direct and sustained; she listens more than she speaks. When she moves through the camp, people shift to accommodate her path without her asking. Her hands are often in motion â€” gesturing, arranging, touching â€” grounding herself in the material world.",
+                                 "clothing_style":  "Tier 5 / refugee camp standard. Layered utility: a faded grey linen shirt (pre-diaspora, possibly 40+ years old), reinforced at seams; a vest made from salvaged canvas dyed unevenly blue-green; loose cotton pants cut at the calf for heat management; worn synthetic sandals. A headwrap in faded green and orange printed cotton, rewrapped daily, tied at the back. A single piece of jewelry: a plain brass ring on her right index finger, dull with age. No corpo branding, no Î¦-accessible accessories. Everything is functional, clean but worn â€” a uniform of survival."
+                             },
+    "image_prompt":  "Indigo SepÃºlveda, 178cm tall woman with solid muscular build, short white hair cut close to skull. Warm golden-brown skin with olive undertones, weathered from environmental exposure. Dark brown eyes, calm and evaluative. Multi-ethnic facial structure blending Northern European, Hispanic, Southeast Asian, and African heritageâ€”defined cheekbones, straight wide nose. Prominent long keloided burn scar from left shoulder to elbow, deliberately exposed. Weathered hands with deep permanent calluses. Wearing faded grey pre-diaspora linen shirt, salvaged blue-green canvas vest, calf-length cotton pants, worn synthetic sandals, faded green-orange printed headwrap. Plain dull brass ring on right index finger. Standing in refugee camp setting, upright posture with direct presence, hands gesturing. No augmentations. GLMZ, Great Lakes Metropolitan Zone. Warm golden lighting, camp tents and salvage in background. Dignified, calm expression. Tier 5 survival aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  56.6,
+                             "Hispanic/Latin American":  22.1,
+                             "Southeast Asian":  10.6,
+                             "Sub-Saharan African":  7.7,
+                             "Eastern European":  3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  19,
+                                                                           "Swedish":  12.8
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "German":  3.6,
+                                                                       "Austrian":  3.5
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "Irish":  8.6,
+                                                                            "Scottish":  9.1
+                                                                        }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Costa Rican":  17.7
+                                                                                 },
+                                                            "Mexican":  {
+                                                                            "Mexican":  4.4
+                                                                        }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  10.6
+                                                                  }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  4.5
+                                                                            },
+                                                        "West African":  {
+                                                                             "Nigerian":  0.7,
+                                                                             "Ivorian":  1.3
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Zambian":  0.9,
+                                                                                 "Mozambican":  0.3
+                                                                             }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  3
+                                                                     }
+                                                 }
+                        },
+    "tier":  "1"
 }

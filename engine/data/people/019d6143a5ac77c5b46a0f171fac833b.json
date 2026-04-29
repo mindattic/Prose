@@ -1,311 +1,338 @@
-{
-  "id": "019d6143a5ac77c5b46a0f171fac833b",
-  "type": "character",
-  "name": "Bolivar Makwa-Guerrero",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Climate scientist and atmospheric modeler studying Lake Michigan's feedback loops and the megacity's thermal impact",
-  "age": 61,
-  "status": "active",
-  "location": "Edgewater Prism — lakefront atmospheric monitoring station, upper floors, near Lincoln and Addison",
-  "description": "Bolivar Makwa-Guerrero is a tall man gone slightly soft in the middle, with deep brown skin, close-cropped white hair, and a beard he keeps meaning to trim. He has a cataract in his left eye that he refuses to have corrected on philosophical grounds — 'everything has limits,' he says, which is either profound or an excuse to avoid the clinic, depending on who you ask. His geneware is minimal: a color-reactive pigment in his forearm that shifts from blue to deep red as barometric pressure changes, which he originally got as a research tool and now also uses to decide whether to bring an umbrella. After thirty years working near the lake, he moves with a particular awareness of weather — he will stop mid-conversation to tilt his head at the sky.\n\nHe is a famously good teacher who is famously bad at academic politics, having been passed over for department chair three times due to his inability to stop saying true things at inconvenient moments. He is fond of his students in a distracted way, and has maintained correspondence with former graduate students across two generations. He has a dry, self-deprecating humor that becomes sharp when he is angry — which happens most often when people use his climate models to make decisions without reading the uncertainty margins. He is tired in the way of someone who has been right about bad things for decades and has stopped expecting it to feel like vindication.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.6,
-      "id": 0.5,
-      "shadow": 0.6,
-      "mask": 0.3,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "That the lake system is approaching a threshold no model can adequately predict",
-      "That his life's work will be used to justify harm rather than prevent it"
-    ],
-    "core_desires": [
-      "To see his models used honestly and with respect for their limitations",
-      "One genuinely good policy decision made on the basis of his research before he dies"
-    ],
-    "coping_mechanisms": [
-      "Long walks along the lakefront regardless of weather",
-      "Cooking elaborate meals for anyone who will come — his apartment has become an informal salon"
-    ],
-    "blind_spots": [
-      "Underestimates how much his reputation actually protects him — believes himself more marginal than he is",
-      "Has convinced himself he no longer cares about recognition while clearly caring quite a bit"
-    ],
-    "secret": "His most recent models, still unpublished, predict a cascade thermal event in the lake system within fifteen to thirty years that would fundamentally destabilize the megacity's northern sectors — he has not published because he doesn't trust the institutions that would receive the data to use it well"
-  },
-  "speech_patterns": {
-    "vocabulary": "Educated and precise in technical matters; in casual conversation, fond of old proverbs from several traditions, often misattributed on purpose as a small joke",
-    "cadence": "Unhurried and warm, with a lecturer's habit of building to a point; can shift to clipped and direct when frustrated",
-    "verbal_tics": [
-      "'As my data currently suggests—'",
-      "'You're reading the headline, not the methodology'",
-      "Exhales through his nose when he disagrees but isn't going to argue"
-    ],
-    "example_lines": [
-      "'The lake doesn't care about our projections. It's not being difficult. We're the ones who keep being surprised.'",
-      "'My colleague says this is alarmist. My colleague has not stood at the monitoring station at 0300 and watched the thermal layer shift forty meters in six hours.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He needs someone to retrieve a physical sensor buoy that drifted into a restricted Arcturus lake zone — he suspects the data it collected is why Arcturus 'accidentally' stopped maintaining the retrieval protocol",
-    "A junior researcher from his department has been quietly headhunted by Arcturus; he suspects it's to access his unpublished models through her"
-  ],
-  "narrative_function": "Local color and world-building anchor for lake and weather dynamics; information source on environmental data and corporate misuse of research; can provide exposition on the megacity's ecological footprint",
-  "augmentations": "Barometric geneware pigment (forearm, functional/cosmetic hybrid); standard academic ocular HUD for data overlay (right eye only — he leaves the left natural)",
-  "daily_life": "Morning readings at the lakefront monitoring station, cross-referencing overnight data with his models; teaches one graduate seminar three days a week; spends evenings writing or in arguments with Arcturus liaison staff about how they are using his data.",
-  "affiliation": "University Spine — Department of Atmospheric and Lacustrine Sciences; long-term data-sharing agreement with Arcturus environmental division",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": -2,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "veteran",
-      "principled",
-      "mentorly",
-      "quietly-exhausted",
-      "expert"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never release data before it's ready, but don't hold it past readiness",
-      "Protect junior researchers from institutional pressure — they don't have the armor yet",
-      "Say the true thing even when no one wants to hear it"
-    ],
-    "escalation_ladder": [
-      "Makes his point once, clearly, and waits",
-      "Puts it in writing so there is a record",
-      "Goes to the press or public data repositories if institutions won't act",
-      "Has never reached the fourth step but it would involve a very long resignation letter"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Courteous and assessingly curious; will ask about their work before their name",
-      "friends": "Deeply generous, will cook for you, will remember what you said you were worried about six months ago"
-    },
-    "stress_responses": {
-      "low": "Takes longer walks; drinks more tea than usual",
-      "medium": "Becomes quieter and more formal in professional settings",
-      "high": "Becomes entirely still and precise — colleagues find this more alarming than if he shouted"
-    },
-    "contradictions": [
-      "Claims not to want recognition but keeps meticulous records of who cited his work and how",
-      "Believes in institutional science while being deeply mistrustful of institutions"
-    ],
-    "habits": [
-      "Checks the barometric pigment on his arm first thing every morning before any other data",
-      "Sends voice messages to former students on their research anniversaries"
-    ],
-    "breaking_points": [
-      "Discovering his data has been deliberately falsified or selectively used to authorize environmental harm",
-      "The death of a student caused by something his unpublished models could have predicted"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "1",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "2",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Teacher": 0.9,
-    "Mentor": 0.9,
-    "Nurturer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Edgewater Prism",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Grand Corridor district to a Malian-Senegalese father and Finnish-Indian mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed doctorate on Lake Michigan thermal stratification post-megacity construction",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First major publication on urban heat island effects on lacustrine ecosystems — widely cited, mostly ignored by policy",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Established the Edgewater Prism monitoring station; his most lasting institutional achievement",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed unpublished cascade thermal event models; has not submitted for publication",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
-    "Tessera TK-7 Service Pistol 'Ticker'"
-  ],
-  "registered_firearms": [
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
-    "Tessera TK-7 Service Pistol 'Ticker'"
-  ],
-  "related_entities": [
-    "Edgewater Prism",
-    "Lakefront Creamery",
-    "Arcturus Defense Solutions",
-    "Pressure Drop",
-    "Crucible UB-2 'Umbrella'",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Predominantly Indigenous American (53%) with significant Northern European (24.3%) and Hispanic/Latin American (22.7%) ancestry. This genetic combination creates a distinctive phenotype: strong angular cheekbones and prominent facial structure characteristic of Indigenous American heritage, blended with the broader eye-sockets and higher cheek placement of Northern European ancestry, and the warmth and depth of Hispanic/Latin American lineage. The result is warm medium-to-deep brown skin with golden undertones, olive mid-tones, and subtle warmth throughout—a rich, sun-weathered complexion reflecting decades of lakefront exposure.",
-    "height_cm": 188,
-    "weight_kg": 82,
-    "build": "Tall and formerly athletic, now softened through the middle with age; broad shoulders still evident but spine slightly rounded from decades of hunching over data terminals and lakeside instruments",
-    "hair_color": "White",
-    "hair_style": "Close-cropped, neatly maintained but slightly uneven as if trimmed by himself or someone indifferent to precision",
-    "hair_length": "Short",
-    "eye_color": "Left eye: deep brown, naturally occluded by age-related cataract (milky-white clouding across upper half of iris); Right eye: deep brown with faint golden circuitry visible at the corner where ocular HUD interfaces with the sclera",
-    "skin_tone": "Warm medium-to-deep brown with golden, olive, and subtle warmth undertones; weathered and sun-marked from decades of lakefront exposure, with visible age spots across hands and forearms",
-    "complexion": "Lined face with deep creases around the eyes and across the forehead; strong angular cheekbones and prominent facial structure reflecting the Indigenous American and Hispanic heritage dominant in the genetic blend, softened by Northern European bone structure and eye-socket width; salt-and-pepper beard kept to approximately one-week growth; skin texture slightly weathered from sun exposure and age but fundamentally healthy. Left eye slightly more closed than right due to cataract progression.",
-    "distinguishing_marks": [
-      "Fine radiating wrinkles around both eyes, deepest on the left side, creating a permanent expression of squinting toward distant horizons",
-      "A thin vertical scar approximately 2 cm long on the right temple, old and pale, origin unknown or unmentioned",
-      "Forearm geneware pigment spanning 8 cm along the inner left forearm, currently displaying deep red coloration (barometric pressure indicator); the pigment shifts visibly between cobalt blue and burgundy depending on atmospheric conditions, creating a subtle iridescent gradient at the edges",
-      "Age spots across the back of both hands and upper forearms, consistent with lifelong sun exposure"
-    ],
-    "visible_augmentations": "Color-reactive barometric geneware on left forearm (functional atmospheric indicator, shifts blue-to-red with pressure changes); subtle golden circuitry visible at the right eye corner where ocular HUD neural interface meets the sclera; no obvious prosthetics or chrome. The augmentations are deliberately understated — academic-grade, practical, not aesthetic.",
-    "posture_movement": "Moves with deliberate, economical motions; frequently stops mid-stride or mid-conversation to observe the sky, tilting his head with the habit of someone who has spent three decades reading weather in cloud formations and wind patterns. Stands with hands often clasped in front, or one hand raised in explanation. When tired or frustrated, he hunches slightly and touches the bridge of his nose. His gait is steady but not hurried; the walk of someone who has nowhere urgent to be and much to observe.",
-    "clothing_style": "Tier 2-3 academic: well-worn University Spine lab coat (slate gray, with multiple button repairs and a faded logo on the chest) worn over practical but aging clothing — charcoal slacks, a thermal-weave undershirt in muted teal or grey, sometimes a wool sweater underneath in colder months. No visible corporate branding. Footwear is functional (waterproofed hiking boots, often muddy from lakefront station visits) rather than fashionable. He wears a tarnished silver watch on his left wrist, clearly decades old and frequently consulted. The overall impression is of someone who dresses for utility and weather, not appearance — Tier 2 institutional status visible only through the university affiliation, not through grooming or accessories."
-  },
-  "image_prompt": "Bolivar Makwa-Guerrero, 188cm tall weathered academic scientist in his 60s-70s with warm medium-deep brown skin tone reflecting Indigenous American, Northern European, and Hispanic heritage blend. Strong angular cheekbones, prominent facial structure, deep-lined face with permanent squint-wrinkles, white close-cropped hair, week-old salt-pepper beard. Left eye milky with age cataract, right eye natural deep brown with faint golden circuitry at corner. Thin pale scar on right temple. Wearing faded slate-gray University Spine lab coat over charcoal slacks and muted teal thermal shirt. Tarnished silver watch on left wrist. Red-to-blue iridescent barometric geneware on inner left forearm. Muddy waterproofed hiking boots. Standing with hands clasped, tilting head to observe sky, posture of decades-long weather observer. Great Lakes Metropolitan Zone lakefront setting, overcast GLMZ atmosphere, soft diffused lighting, practical academic aesthetic, hyperrealistic portrait --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Indigenous American": 53,
-    "Northern European": 24.3,
-    "Hispanic/Latin American": 22.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Indigenous American": {
-      "Andean": {
-        "Mapuche": 27.7
-      },
-      "Plains Nations": {
-        "Muscogee": 10.5
-      },
-      "Mesoamerican": {
-        "Maya": 14.8
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 10.8
-      },
-      "British Isles": {
-        "Welsh": 6.5
-      },
-      "Scandinavian": {
-        "Norwegian": 5.3,
-        "Danish": 1.7
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 19,
-        "Salvadoran": 3.7
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a5ac77c5b46a0f171fac833b",
+    "type":  "character",
+    "name":  "Bolivar Makwa-Guerrero",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Climate scientist and atmospheric modeler studying Lake Michigan\u0027s feedback loops and the megacity\u0027s thermal impact",
+    "age":  61,
+    "status":  "active",
+    "location":  "Edgewater Prism â€” lakefront atmospheric monitoring station, upper floors, near Lincoln and Addison",
+    "description":  "Bolivar Makwa-Guerrero is a tall man gone slightly soft in the middle, with deep brown skin, close-cropped white hair, and a beard he keeps meaning to trim. He has a cataract in his left eye that he refuses to have corrected on philosophical grounds â€” \u0027everything has limits,\u0027 he says, which is either profound or an excuse to avoid the clinic, depending on who you ask. His geneware is minimal: a color-reactive pigment in his forearm that shifts from blue to deep red as barometric pressure changes, which he originally got as a research tool and now also uses to decide whether to bring an umbrella. After thirty years working near the lake, he moves with a particular awareness of weather â€” he will stop mid-conversation to tilt his head at the sky.\n\nHe is a famously good teacher who is famously bad at academic politics, having been passed over for department chair three times due to his inability to stop saying true things at inconvenient moments. He is fond of his students in a distracted way, and has maintained correspondence with former graduate students across two generations. He has a dry, self-deprecating humor that becomes sharp when he is angry â€” which happens most often when people use his climate models to make decisions without reading the uncertainty margins. He is tired in the way of someone who has been right about bad things for decades and has stopped expecting it to feel like vindication.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the lake system is approaching a threshold no model can adequately predict",
+                                          "That his life\u0027s work will be used to justify harm rather than prevent it"
+                                      ],
+                       "core_desires":  [
+                                            "To see his models used honestly and with respect for their limitations",
+                                            "One genuinely good policy decision made on the basis of his research before he dies"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Long walks along the lakefront regardless of weather",
+                                                 "Cooking elaborate meals for anyone who will come â€” his apartment has become an informal salon"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much his reputation actually protects him â€” believes himself more marginal than he is",
+                                           "Has convinced himself he no longer cares about recognition while clearly caring quite a bit"
+                                       ],
+                       "secret":  "His most recent models, still unpublished, predict a cascade thermal event in the lake system within fifteen to thirty years that would fundamentally destabilize the megacity\u0027s northern sectors â€” he has not published because he doesn\u0027t trust the institutions that would receive the data to use it well"
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Educated and precise in technical matters; in casual conversation, fond of old proverbs from several traditions, often misattributed on purpose as a small joke",
+                            "cadence":  "Unhurried and warm, with a lecturer\u0027s habit of building to a point; can shift to clipped and direct when frustrated",
+                            "verbal_tics":  [
+                                                "\u0027As my data currently suggestsâ€”\u0027",
+                                                "\u0027You\u0027re reading the headline, not the methodology\u0027",
+                                                "Exhales through his nose when he disagrees but isn\u0027t going to argue"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The lake doesn\u0027t care about our projections. It\u0027s not being difficult. We\u0027re the ones who keep being surprised.\u0027",
+                                                  "\u0027My colleague says this is alarmist. My colleague has not stood at the monitoring station at 0300 and watched the thermal layer shift forty meters in six hours.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He needs someone to retrieve a physical sensor buoy that drifted into a restricted Arcturus lake zone â€” he suspects the data it collected is why Arcturus \u0027accidentally\u0027 stopped maintaining the retrieval protocol",
+                        "A junior researcher from his department has been quietly headhunted by Arcturus; he suspects it\u0027s to access his unpublished models through her"
+                    ],
+    "narrative_function":  "Local color and world-building anchor for lake and weather dynamics; information source on environmental data and corporate misuse of research; can provide exposition on the megacity\u0027s ecological footprint",
+    "augmentations":  "Barometric geneware pigment (forearm, functional/cosmetic hybrid); standard academic ocular HUD for data overlay (right eye only â€” he leaves the left natural)",
+    "daily_life":  "Morning readings at the lakefront monitoring station, cross-referencing overnight data with his models; teaches one graduate seminar three days a week; spends evenings writing or in arguments with Arcturus liaison staff about how they are using his data.",
+    "affiliation":  "University Spine â€” Department of Atmospheric and Lacustrine Sciences; long-term data-sharing agreement with Arcturus environmental division",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "veteran",
+                               "principled",
+                               "mentorly",
+                               "quietly-exhausted",
+                               "expert"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never release data before it\u0027s ready, but don\u0027t hold it past readiness",
+                                              "Protect junior researchers from institutional pressure â€” they don\u0027t have the armor yet",
+                                              "Say the true thing even when no one wants to hear it"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Makes his point once, clearly, and waits",
+                                                 "Puts it in writing so there is a record",
+                                                 "Goes to the press or public data repositories if institutions won\u0027t act",
+                                                 "Has never reached the fourth step but it would involve a very long resignation letter"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Courteous and assessingly curious; will ask about their work before their name",
+                                                   "friends":  "Deeply generous, will cook for you, will remember what you said you were worried about six months ago"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Takes longer walks; drinks more tea than usual",
+                                                "medium":  "Becomes quieter and more formal in professional settings",
+                                                "high":  "Becomes entirely still and precise â€” colleagues find this more alarming than if he shouted"
+                                            },
+                       "contradictions":  [
+                                              "Claims not to want recognition but keeps meticulous records of who cited his work and how",
+                                              "Believes in institutional science while being deeply mistrustful of institutions"
+                                          ],
+                       "habits":  [
+                                      "Checks the barometric pigment on his arm first thing every morning before any other data",
+                                      "Sends voice messages to former students on their research anniversaries"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering his data has been deliberately falsified or selectively used to authorize environmental harm",
+                                               "The death of a student caused by something his unpublished models could have predicted"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "1",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "2",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Teacher":  0.9,
+                       "Mentor":  0.9,
+                       "Nurturer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Edgewater Prism",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Grand Corridor district to a Malian-Senegalese father and Finnish-Indian mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed doctorate on Lake Michigan thermal stratification post-megacity construction",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First major publication on urban heat island effects on lacustrine ecosystems â€” widely cited, mostly ignored by policy",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Established the Edgewater Prism monitoring station; his most lasting institutional achievement",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed unpublished cascade thermal event models; has not submitted for publication",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Vespid Dynamics Tracker Round System TRS-4 \u0027Breadcrumb\u0027",
+                            "Tessera TK-7 Service Pistol \u0027Ticker\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Vespid Dynamics Tracker Round System TRS-4 \u0027Breadcrumb\u0027",
+                                "Tessera TK-7 Service Pistol \u0027Ticker\u0027"
+                            ],
+    "related_entities":  [
+                             "Edgewater Prism",
+                             "Lakefront Creamery",
+                             "Arcturus Defense Solutions",
+                             "Pressure Drop",
+                             "Crucible UB-2 \u0027Umbrella\u0027",
+                             "Subacoustic Vestibular Collapse Drone SVCD-1 \u0027Tilt\u0027"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Indigenous American (53%) with significant Northern European (24.3%) and Hispanic/Latin American (22.7%) ancestry. This genetic combination creates a distinctive phenotype: strong angular cheekbones and prominent facial structure characteristic of Indigenous American heritage, blended with the broader eye-sockets and higher cheek placement of Northern European ancestry, and the warmth and depth of Hispanic/Latin American lineage. The result is warm medium-to-deep brown skin with golden undertones, olive mid-tones, and subtle warmth throughoutâ€”a rich, sun-weathered complexion reflecting decades of lakefront exposure.",
+                                 "height_cm":  188,
+                                 "weight_kg":  82,
+                                 "build":  "Tall and formerly athletic, now softened through the middle with age; broad shoulders still evident but spine slightly rounded from decades of hunching over data terminals and lakeside instruments",
+                                 "hair_color":  "White",
+                                 "hair_style":  "Close-cropped, neatly maintained but slightly uneven as if trimmed by himself or someone indifferent to precision",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Left eye: deep brown, naturally occluded by age-related cataract (milky-white clouding across upper half of iris); Right eye: deep brown with faint golden circuitry visible at the corner where ocular HUD interfaces with the sclera",
+                                 "skin_tone":  "Warm medium-to-deep brown with golden, olive, and subtle warmth undertones; weathered and sun-marked from decades of lakefront exposure, with visible age spots across hands and forearms",
+                                 "complexion":  "Lined face with deep creases around the eyes and across the forehead; strong angular cheekbones and prominent facial structure reflecting the Indigenous American and Hispanic heritage dominant in the genetic blend, softened by Northern European bone structure and eye-socket width; salt-and-pepper beard kept to approximately one-week growth; skin texture slightly weathered from sun exposure and age but fundamentally healthy. Left eye slightly more closed than right due to cataract progression.",
+                                 "distinguishing_marks":  [
+                                                              "Fine radiating wrinkles around both eyes, deepest on the left side, creating a permanent expression of squinting toward distant horizons",
+                                                              "A thin vertical scar approximately 2 cm long on the right temple, old and pale, origin unknown or unmentioned",
+                                                              "Forearm geneware pigment spanning 8 cm along the inner left forearm, currently displaying deep red coloration (barometric pressure indicator); the pigment shifts visibly between cobalt blue and burgundy depending on atmospheric conditions, creating a subtle iridescent gradient at the edges",
+                                                              "Age spots across the back of both hands and upper forearms, consistent with lifelong sun exposure"
+                                                          ],
+                                 "visible_augmentations":  "Color-reactive barometric geneware on left forearm (functional atmospheric indicator, shifts blue-to-red with pressure changes); subtle golden circuitry visible at the right eye corner where ocular HUD neural interface meets the sclera; no obvious prosthetics or chrome. The augmentations are deliberately understated â€” academic-grade, practical, not aesthetic.",
+                                 "posture_movement":  "Moves with deliberate, economical motions; frequently stops mid-stride or mid-conversation to observe the sky, tilting his head with the habit of someone who has spent three decades reading weather in cloud formations and wind patterns. Stands with hands often clasped in front, or one hand raised in explanation. When tired or frustrated, he hunches slightly and touches the bridge of his nose. His gait is steady but not hurried; the walk of someone who has nowhere urgent to be and much to observe.",
+                                 "clothing_style":  "Tier 2-3 academic: well-worn University Spine lab coat (slate gray, with multiple button repairs and a faded logo on the chest) worn over practical but aging clothing â€” charcoal slacks, a thermal-weave undershirt in muted teal or grey, sometimes a wool sweater underneath in colder months. No visible corporate branding. Footwear is functional (waterproofed hiking boots, often muddy from lakefront station visits) rather than fashionable. He wears a tarnished silver watch on his left wrist, clearly decades old and frequently consulted. The overall impression is of someone who dresses for utility and weather, not appearance â€” Tier 2 institutional status visible only through the university affiliation, not through grooming or accessories."
+                             },
+    "image_prompt":  "Bolivar Makwa-Guerrero, 188cm tall weathered academic scientist in his 60s-70s with warm medium-deep brown skin tone reflecting Indigenous American, Northern European, and Hispanic heritage blend. Strong angular cheekbones, prominent facial structure, deep-lined face with permanent squint-wrinkles, white close-cropped hair, week-old salt-pepper beard. Left eye milky with age cataract, right eye natural deep brown with faint golden circuitry at corner. Thin pale scar on right temple. Wearing faded slate-gray University Spine lab coat over charcoal slacks and muted teal thermal shirt. Tarnished silver watch on left wrist. Red-to-blue iridescent barometric geneware on inner left forearm. Muddy waterproofed hiking boots. Standing with hands clasped, tilting head to observe sky, posture of decades-long weather observer. Great Lakes Metropolitan Zone lakefront setting, overcast GLMZ atmosphere, soft diffused lighting, practical academic aesthetic, hyperrealistic portrait --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Indigenous American":  53,
+                             "Northern European":  24.3,
+                             "Hispanic/Latin American":  22.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Mapuche":  27.7
+                                                                   },
+                                                        "Plains Nations":  {
+                                                                               "Muscogee":  10.5
+                                                                           },
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  14.8
+                                                                         }
+                                                    },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  10.8
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "Welsh":  6.5
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  5.3,
+                                                                           "Danish":  1.7
+                                                                       }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  19,
+                                                                                     "Salvadoran":  3.7
+                                                                                 }
+                                                        }
+                        },
+    "tier":  "4"
 }

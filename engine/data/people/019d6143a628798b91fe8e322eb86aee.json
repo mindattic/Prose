@@ -1,249 +1,270 @@
-{
-  "id": "019d6143a628798b91fe8e322eb86aee",
-  "type": "character",
-  "name": "Ishaan Pathak",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Comedian and underground cabaret performer",
-  "age": 47,
-  "status": "active",
-  "location": "The Ferment Quarter, resident performer at the Lye & Lampblack club on Sutter Mews, near Armitage and Milwaukee",
-  "description": "Ishaan Pathak is medium height, broad-shouldered, and has the physical presence of someone who learned early that a room either belongs to you or it doesn't. Her hair is deep red — natural color, she will tell you, with a straight face, for about four seconds — and she wears it long and somewhat chaotic. Her skin is warm tawny-olive and she has laugh lines that could double as topographic maps. Her only mod is a tail, cat-model, rust-colored, which she uses as a prop during performances with expert comic timing; she has had it since she was twenty-three and considers it a co-author.\n\nHer comedy is vicious, structural, and deeply personal — she excavates class rage, corponation absurdity, and the specific indignities of Tier 2 civilian life with the precision of someone who has lived every joke. She has been banned from two Axiom-affiliated venues and has a standing invitation to return to both that she declines publicly and enthusiastically. At the Lye & Lampblack she is an institution: four nights a week, two sets, and an after-set period where she sits at the bar and is notoriously unapproachable unless you buy her a specific brand of fermented grain drink and ask her about something she actually cares about.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.4,
-      "id": 0.8,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "That the anger that fuels her work will one day just be gone — burned out — and she will have nothing left",
-      "Being genuinely pitied rather than laughed with"
-    ],
-    "core_desires": [
-      "For her audiences to leave feeling less alone in their rage",
-      "One large, definitive, undeniable success before she decides she doesn't care about success"
-    ],
-    "coping_mechanisms": [
-      "Converts every painful experience into material within 48 hours",
-      "Maintains very strict routines as an anchor against chaos"
-    ],
-    "blind_spots": [
-      "Uses humor to deflect every time someone tries to care for her directly",
-      "Cannot tell when she has actually wounded someone who laughed anyway"
-    ],
-    "secret": "She was offered a Zheng-Dao corporate entertainment contract eight years ago — full Tier 3 package, creative control clause she knew was meaningless — and she almost took it. She spent a week in a hotel room they paid for, ordered room service for three days, then walked out without signing. She has never told anyone how close she came to taking it and pretends the offer was always a joke."
-  },
-  "speech_patterns": {
-    "vocabulary": "Dense, allusive, class-conscious; mixes formal diction with Ferment Quarter vernacular deliberately for comic and rhetorical effect",
-    "cadence": "Rhythmic with expert timing; knows exactly when to slow down and when to accelerate",
-    "verbal_tics": [
-      "'Don't look at me like that'",
-      "Tail moves in slow arcs when she is about to say something she has been building toward"
-    ],
-    "example_lines": [
-      "'Axiom banned me because my material was, quote, corrosive to workplace morale. I have never been more flattered by anything in my professional life.'",
-      "'You know what I love about GLMZ? We've solved poverty. We just moved it somewhere we don't have to look at it. Problem solved! Great city. Fantastic city.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The Lye & Lampblack's owner has quietly sold a stake to a Ringo subsidiary without telling the staff; Hripsimé has found the filing buried in public records and is deciding what to do with it.",
-    "Someone has been recording her sets and selling them to a Tier 4 underground stream; the recordings are edited to remove the class politics and leave only the safe jokes."
-  ],
-  "narrative_function": "Information source — she knows everyone in the Ferment Quarter and remembers everything; social lubricant for getting players into scenes; occasional quest giver when something threatens the club or the neighborhood",
-  "augmentations": "Rust-colored cat tail (cosmetic, geneware); minor vocal clarity implant in larynx (she calls it insurance)",
-  "daily_life": "Writes material in the mornings, usually in a back booth at the Lye & Lampblack before it opens; spends afternoons handling the practical administration of her own career with barely concealed contempt; performs four nights, sleeps erratically, reads constantly.",
-  "affiliation": "Resident performer at Lye & Lampblack; no collective affiliation; nominally independent; The Ferment",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 9,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 7,
-      "expression": 10,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": -4,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "performer",
-      "sharp",
-      "guarded",
-      "class-conscious",
-      "institution"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never soften a joke that is also true",
-      "Do not perform for audiences who are laughing at the people the joke is about rather than recognizing themselves"
-    ],
-    "escalation_ladder": [
-      "Deals with threats via public ridicule first",
-      "Goes very quiet and formal when genuinely angry — a sign people around her recognize as serious",
-      "Takes precise, researched, deliberate action without warning"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Performs a version of herself — charming, sharp, slightly too much — as a screening mechanism",
-      "friends": "Still performs but with the volume down; shows real care through remembered details and unexpected practical help"
-    },
-    "stress_responses": {
-      "low": "Writes more, edits less",
-      "medium": "Drinks more than she should and picks unnecessary arguments with people she likes",
-      "high": "Cancels everything, goes home, doesn't speak for two days, emerges with new material"
-    },
-    "contradictions": [
-      "Performs intimacy and vulnerability on stage for hundreds of people but cannot accept either in a private room"
-    ],
-    "habits": [
-      "Writes every set line by hand before typing it",
-      "Strokes her tail absently when thinking — not for show, genuinely unconscious"
-    ],
-    "breaking_points": [
-      "Someone using her material to punch down at a target she was defending"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Ferment Quarter",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Havoc-44 'Mauler'",
-    "Arcturus Defense Solutions CSW-4 'Cicada'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Havoc-44 'Mauler'",
-    "Arcturus Defense Solutions CSW-4 'Cicada'"
-  ],
-  "related_entities": [
-    "The Ferment Quarter",
-    "Dawnlight Industries LuxDefend LD-1 'Clutch'",
-    "Ringo Corponation",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Predominantly South Asian ancestry (66.1%) with significant East Asian heritage (17.6%), complemented by Indigenous American (8.3%) and Eastern European (8.0%) genetic contribution. This blend produces a distinctly multicultural phenotype—warm, rich South Asian undertones mixed with East Asian angular bone structure, softened and deepened by Indigenous American genetic expression and Eastern European facial geometry. A diaspora face that defies singular categorization, with layered ancestry visible in the interplay of cheekbone structure, eye shape, and skin luminosity.",
-    "height_cm": 168,
-    "weight_kg": 72,
-    "build": "Broad-shouldered and substantial without heaviness; the physique of someone who takes up space intentionally. Strong core, defined arms from years of gesturing on stage, carries weight with deliberate presence rather than bulk.",
-    "hair_color": "Deep red—dyed, maintained with theatrical precision, though she claims natural with deadpan conviction",
-    "hair_style": "Long, deliberately somewhat chaotic—styled to look unstyled, with volume that reads as either artistic or disheveled depending on the hour",
-    "hair_length": "Long",
-    "eye_color": "Dark brown, sharp and assessing",
-    "skin_tone": "Warm medium to deep golden-brown complexion with sophisticated multi-dimensional undertones: South Asian warmth as the foundational base, enriched by East Asian depth and subtle cool undertones, brightened by Indigenous American luminosity, with delicate olive notes from Eastern European genetics creating a complex, radiant tone that shifts subtly in different lighting",
-    "complexion": "Heavily lined face—deep laugh lines branching from eyes and mouth that map decades of expression work. Minimal makeup, occasionally dramatic for performances. Skin texture weathered from smoke-filled venues and inconsistent sleep. Facial structure shows South Asian softness in lower face and cheekbone fullness, blended with East Asian angularity in eye shape, temple definition, and upper cheekbone prominence. Indigenous American influence visible in subtle cheekbone width and facial proportion balance. No visible acne or blemishes; skin has the quality of someone who stopped worrying about minor imperfections years ago.",
-    "distinguishing_marks": [
-      "Topographic laugh lines radiating from outer corners of both eyes, deepest and most pronounced on the right side",
-      "Asymmetrical smile line on left side of mouth, slightly higher than right, creates permanent micro-expression of skepticism",
-      "Small scar on left eyebrow, thin, approximately 1cm, likely accidental rather than intentional",
-      "Rust-colored cat tail extending from base of spine, feline anatomy, visible whenever seated or standing; moves with conscious, trained articulation during speech"
-    ],
-    "visible_augmentations": "Rust-colored cat tail (geneware, feline model) extending from lower spine—visible at all times, integrated into posture and movement. Laryngeal implant not visible but produces subtly enhanced vocal clarity and resonance. No visible cyber-chrome, subdermal plates, or ocular mods.",
-    "posture_movement": "Commands space without aggression. Stands with weight slightly forward, shoulders back, ready to lean into a punchline or a confrontation with equal ease. Sits sprawled—takes up bar stools and booth seats like she owns them. Gestures are economical but emphatic; every movement is deliberate. Tail moves independently during performance with practiced comic timing; in repose, it curls beneath or around chair legs. Eye contact is sustained and evaluative. Moves through rooms like she's scanning for structural weaknesses.",
-    "clothing_style": "Tier 2 civilian aesthetic with deliberate anti-polish. Typically wears fitted dark jeans or tactical pants (pockets matter), vintage band shirts or well-worn linen, layered with oversized jackets—leather, denim, or canvas, always well-worn and scuffed. On performance nights, slightly more put-together but maintaining the aesthetic of someone who got dressed in the dark and doesn't care: dark lipstick occasionally, jewelry kept minimal and functional (watch, single ring, no bangles). Boots always—worn combat style or engineer boots, broken in. Fabrics are practical rather than fashionable. No visible corpo branding. Entire wardrobe reads as Tier 2 working-class with intellectual pretensions and zero interest in appearing aspirational."
-  },
-  "image_prompt": "Ishaan Pathak, 168cm tall performer with warm golden-brown complexion reflecting South Asian, East Asian, Indigenous American and Eastern European ancestry blend. Deep red shoulder-length hair styled deliberately chaotic, dark sharp eyes with pronounced laugh lines mapping years of expression work. Asymmetrical smile with subtle left eyebrow scar. Rust-colored feline cat tail extending from lower spine with practiced control. Broad shoulders, substantial build, sitting sprawled in bar stool, commanding presence without aggression. Wearing fitted dark tactical pants, vintage band tee layered under well-worn leather jacket, engineer boots broken in. Minimal jewelry—single ring and practical watch. Tier 2 neo-noir working-class aesthetic, zero corpo branding. Intimate smoke-filled venue lighting, moody atmospheric background, intense eye contact evaluating the room. 2226 GLMZ diaspora face, neon-touched shadows, gritty authenticity --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 66.1,
-    "East Asian": 17.6,
-    "Indigenous American": 8.3,
-    "Eastern European": 8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 35.6
-      },
-      "Indian": {
-        "Punjabi": 30.5
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 12.3
-      },
-      "Korean": {
-        "Korean": 5.3
-      }
-    },
-    "Indigenous American": {
-      "Plains Nations": {
-        "Muscogee": 0.7,
-        "Cherokee": 0.5
-      },
-      "Andean": {
-        "Aymara": 5.7,
-        "Quechua": 0.7
-      },
-      "Mesoamerican": {
-        "Nahua": 0.7
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Sorbian": 7.3,
-        "Czech": 0.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a628798b91fe8e322eb86aee",
+    "type":  "character",
+    "name":  "Ishaan Pathak",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Comedian and underground cabaret performer",
+    "age":  47,
+    "status":  "active",
+    "location":  "The Ferment Quarter, resident performer at the Lye \u0026 Lampblack club on Sutter Mews, near Armitage and Milwaukee",
+    "description":  "Ishaan Pathak is medium height, broad-shouldered, and has the physical presence of someone who learned early that a room either belongs to you or it doesn\u0027t. Her hair is deep red â€” natural color, she will tell you, with a straight face, for about four seconds â€” and she wears it long and somewhat chaotic. Her skin is warm tawny-olive and she has laugh lines that could double as topographic maps. Her only mod is a tail, cat-model, rust-colored, which she uses as a prop during performances with expert comic timing; she has had it since she was twenty-three and considers it a co-author.\n\nHer comedy is vicious, structural, and deeply personal â€” she excavates class rage, corponation absurdity, and the specific indignities of Tier 2 civilian life with the precision of someone who has lived every joke. She has been banned from two Axiom-affiliated venues and has a standing invitation to return to both that she declines publicly and enthusiastically. At the Lye \u0026 Lampblack she is an institution: four nights a week, two sets, and an after-set period where she sits at the bar and is notoriously unapproachable unless you buy her a specific brand of fermented grain drink and ask her about something she actually cares about.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the anger that fuels her work will one day just be gone â€” burned out â€” and she will have nothing left",
+                                          "Being genuinely pitied rather than laughed with"
+                                      ],
+                       "core_desires":  [
+                                            "For her audiences to leave feeling less alone in their rage",
+                                            "One large, definitive, undeniable success before she decides she doesn\u0027t care about success"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Converts every painful experience into material within 48 hours",
+                                                 "Maintains very strict routines as an anchor against chaos"
+                                             ],
+                       "blind_spots":  [
+                                           "Uses humor to deflect every time someone tries to care for her directly",
+                                           "Cannot tell when she has actually wounded someone who laughed anyway"
+                                       ],
+                       "secret":  "She was offered a Zheng-Dao corporate entertainment contract eight years ago â€” full Tier 3 package, creative control clause she knew was meaningless â€” and she almost took it. She spent a week in a hotel room they paid for, ordered room service for three days, then walked out without signing. She has never told anyone how close she came to taking it and pretends the offer was always a joke."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Dense, allusive, class-conscious; mixes formal diction with Ferment Quarter vernacular deliberately for comic and rhetorical effect",
+                            "cadence":  "Rhythmic with expert timing; knows exactly when to slow down and when to accelerate",
+                            "verbal_tics":  [
+                                                "\u0027Don\u0027t look at me like that\u0027",
+                                                "Tail moves in slow arcs when she is about to say something she has been building toward"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Axiom banned me because my material was, quote, corrosive to workplace morale. I have never been more flattered by anything in my professional life.\u0027",
+                                                  "\u0027You know what I love about GLMZ? We\u0027ve solved poverty. We just moved it somewhere we don\u0027t have to look at it. Problem solved! Great city. Fantastic city.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The Lye \u0026 Lampblack\u0027s owner has quietly sold a stake to a Ringo subsidiary without telling the staff; HripsimÃ© has found the filing buried in public records and is deciding what to do with it.",
+                        "Someone has been recording her sets and selling them to a Tier 4 underground stream; the recordings are edited to remove the class politics and leave only the safe jokes."
+                    ],
+    "narrative_function":  "Information source â€” she knows everyone in the Ferment Quarter and remembers everything; social lubricant for getting players into scenes; occasional quest giver when something threatens the club or the neighborhood",
+    "augmentations":  "Rust-colored cat tail (cosmetic, geneware); minor vocal clarity implant in larynx (she calls it insurance)",
+    "daily_life":  "Writes material in the mornings, usually in a back booth at the Lye \u0026 Lampblack before it opens; spends afternoons handling the practical administration of her own career with barely concealed contempt; performs four nights, sleeps erratically, reads constantly.",
+    "affiliation":  "Resident performer at Lye \u0026 Lampblack; no collective affiliation; nominally independent; The Ferment",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  9,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  7,
+                                 "expression":  10,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  -4,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "performer",
+                               "sharp",
+                               "guarded",
+                               "class-conscious",
+                               "institution"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never soften a joke that is also true",
+                                              "Do not perform for audiences who are laughing at the people the joke is about rather than recognizing themselves"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Deals with threats via public ridicule first",
+                                                 "Goes very quiet and formal when genuinely angry â€” a sign people around her recognize as serious",
+                                                 "Takes precise, researched, deliberate action without warning"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Performs a version of herself â€” charming, sharp, slightly too much â€” as a screening mechanism",
+                                                   "friends":  "Still performs but with the volume down; shows real care through remembered details and unexpected practical help"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Writes more, edits less",
+                                                "medium":  "Drinks more than she should and picks unnecessary arguments with people she likes",
+                                                "high":  "Cancels everything, goes home, doesn\u0027t speak for two days, emerges with new material"
+                                            },
+                       "contradictions":  [
+                                              "Performs intimacy and vulnerability on stage for hundreds of people but cannot accept either in a private room"
+                                          ],
+                       "habits":  [
+                                      "Writes every set line by hand before typing it",
+                                      "Strokes her tail absently when thinking â€” not for show, genuinely unconscious"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone using her material to punch down at a target she was defending"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Ferment Quarter",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Havoc-44 \u0027Mauler\u0027",
+                            "Arcturus Defense Solutions CSW-4 \u0027Cicada\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Havoc-44 \u0027Mauler\u0027",
+                                "Arcturus Defense Solutions CSW-4 \u0027Cicada\u0027"
+                            ],
+    "related_entities":  [
+                             "The Ferment Quarter",
+                             "Dawnlight Industries LuxDefend LD-1 \u0027Clutch\u0027",
+                             "Ringo Corponation",
+                             "Zheng-Dao Heavy Industries Space Elevator Tether System"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Predominantly South Asian ancestry (66.1%) with significant East Asian heritage (17.6%), complemented by Indigenous American (8.3%) and Eastern European (8.0%) genetic contribution. This blend produces a distinctly multicultural phenotypeâ€”warm, rich South Asian undertones mixed with East Asian angular bone structure, softened and deepened by Indigenous American genetic expression and Eastern European facial geometry. A diaspora face that defies singular categorization, with layered ancestry visible in the interplay of cheekbone structure, eye shape, and skin luminosity.",
+                                 "height_cm":  168,
+                                 "weight_kg":  72,
+                                 "build":  "Broad-shouldered and substantial without heaviness; the physique of someone who takes up space intentionally. Strong core, defined arms from years of gesturing on stage, carries weight with deliberate presence rather than bulk.",
+                                 "hair_color":  "Deep redâ€”dyed, maintained with theatrical precision, though she claims natural with deadpan conviction",
+                                 "hair_style":  "Long, deliberately somewhat chaoticâ€”styled to look unstyled, with volume that reads as either artistic or disheveled depending on the hour",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Dark brown, sharp and assessing",
+                                 "skin_tone":  "Warm medium to deep golden-brown complexion with sophisticated multi-dimensional undertones: South Asian warmth as the foundational base, enriched by East Asian depth and subtle cool undertones, brightened by Indigenous American luminosity, with delicate olive notes from Eastern European genetics creating a complex, radiant tone that shifts subtly in different lighting",
+                                 "complexion":  "Heavily lined faceâ€”deep laugh lines branching from eyes and mouth that map decades of expression work. Minimal makeup, occasionally dramatic for performances. Skin texture weathered from smoke-filled venues and inconsistent sleep. Facial structure shows South Asian softness in lower face and cheekbone fullness, blended with East Asian angularity in eye shape, temple definition, and upper cheekbone prominence. Indigenous American influence visible in subtle cheekbone width and facial proportion balance. No visible acne or blemishes; skin has the quality of someone who stopped worrying about minor imperfections years ago.",
+                                 "distinguishing_marks":  [
+                                                              "Topographic laugh lines radiating from outer corners of both eyes, deepest and most pronounced on the right side",
+                                                              "Asymmetrical smile line on left side of mouth, slightly higher than right, creates permanent micro-expression of skepticism",
+                                                              "Small scar on left eyebrow, thin, approximately 1cm, likely accidental rather than intentional",
+                                                              "Rust-colored cat tail extending from base of spine, feline anatomy, visible whenever seated or standing; moves with conscious, trained articulation during speech"
+                                                          ],
+                                 "visible_augmentations":  "Rust-colored cat tail (geneware, feline model) extending from lower spineâ€”visible at all times, integrated into posture and movement. Laryngeal implant not visible but produces subtly enhanced vocal clarity and resonance. No visible cyber-chrome, subdermal plates, or ocular mods.",
+                                 "posture_movement":  "Commands space without aggression. Stands with weight slightly forward, shoulders back, ready to lean into a punchline or a confrontation with equal ease. Sits sprawledâ€”takes up bar stools and booth seats like she owns them. Gestures are economical but emphatic; every movement is deliberate. Tail moves independently during performance with practiced comic timing; in repose, it curls beneath or around chair legs. Eye contact is sustained and evaluative. Moves through rooms like she\u0027s scanning for structural weaknesses.",
+                                 "clothing_style":  "Tier 2 civilian aesthetic with deliberate anti-polish. Typically wears fitted dark jeans or tactical pants (pockets matter), vintage band shirts or well-worn linen, layered with oversized jacketsâ€”leather, denim, or canvas, always well-worn and scuffed. On performance nights, slightly more put-together but maintaining the aesthetic of someone who got dressed in the dark and doesn\u0027t care: dark lipstick occasionally, jewelry kept minimal and functional (watch, single ring, no bangles). Boots alwaysâ€”worn combat style or engineer boots, broken in. Fabrics are practical rather than fashionable. No visible corpo branding. Entire wardrobe reads as Tier 2 working-class with intellectual pretensions and zero interest in appearing aspirational."
+                             },
+    "image_prompt":  "Ishaan Pathak, 168cm tall performer with warm golden-brown complexion reflecting South Asian, East Asian, Indigenous American and Eastern European ancestry blend. Deep red shoulder-length hair styled deliberately chaotic, dark sharp eyes with pronounced laugh lines mapping years of expression work. Asymmetrical smile with subtle left eyebrow scar. Rust-colored feline cat tail extending from lower spine with practiced control. Broad shoulders, substantial build, sitting sprawled in bar stool, commanding presence without aggression. Wearing fitted dark tactical pants, vintage band tee layered under well-worn leather jacket, engineer boots broken in. Minimal jewelryâ€”single ring and practical watch. Tier 2 neo-noir working-class aesthetic, zero corpo branding. Intimate smoke-filled venue lighting, moody atmospheric background, intense eye contact evaluating the room. 2226 GLMZ diaspora face, neon-touched shadows, gritty authenticity --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  66.1,
+                             "East Asian":  17.6,
+                             "Indigenous American":  8.3,
+                             "Eastern European":  8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  35.6
+                                                           },
+                                                "Indian":  {
+                                                               "Punjabi":  30.5
+                                                           }
+                                            },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  12.3
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  5.3
+                                                          }
+                                           },
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Muscogee":  0.7,
+                                                                               "Cherokee":  0.5
+                                                                           },
+                                                        "Andean":  {
+                                                                       "Aymara":  5.7,
+                                                                       "Quechua":  0.7
+                                                                   },
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  0.7
+                                                                         }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Sorbian":  7.3,
+                                                                         "Czech":  0.7
+                                                                     }
+                                                 }
+                        },
+    "tier":  "1"
 }

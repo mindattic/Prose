@@ -1,250 +1,273 @@
-{
-  "id": "019d6143a69e7ec0b423b3979668d534",
-  "type": "character",
-  "name": "Erling Bautista-Horváth-Petrović",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Organ harvester and black-market tissue broker operating out of South Deering Sump",
-  "age": 34,
-  "status": "active",
-  "location": "South Deering Sump, Sublevel 4 — a former water treatment annex converted into an unlicensed surgical suite she calls 'the pantry', near sub-level access near State and Van Buren",
-  "description": "Erling Bautista-Horváth-Petrović is small, lean, and precise — a former Helix Biosystems surgical technician who was quietly terminated after falsifying organ provenance records for a side arrangement she ran for two years before anyone noticed. She has warm umber skin and close-cropped natural hair she keeps covered under surgical caps out of habit even when she's not working. Her most striking feature is her eyes: she paid for patterned irises that look like cracked amber, threaded with faint gold lines she chose because they match the color of preserved tissue in nutrient solution. She finds this funny. Nobody else does.\n\nShe is brisk, technically focused, and runs her operation with clinical precision — she insists on basic sanitation, proper cold-chain storage, and documented tissue typing even in this context, because sloppy work kills customers and dead customers tell no one but also buy nothing. She maintains a complicated ideology about her work: she believes the official organ allocation system is a mechanism for tier sorting the deserving dead, and that she is simply an alternative distribution network. She has said this enough times that she half believes it. The other half of her knows she harvests from people who cannot say no.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.4,
-      "shadow": 0.6,
-      "mask": 0.5,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Losing the technical skill that defines her identity",
-      "Being genuinely confronted with a victim she cannot rationalize"
-    ],
-    "core_desires": [
-      "To be recognized as skilled — as a professional, not a criminal",
-      "To believe her own ideological justifications"
-    ],
-    "coping_mechanisms": [
-      "Intellectual abstraction — translating ethical problems into procedural ones",
-      "Meticulous record-keeping as a form of control"
-    ],
-    "blind_spots": [
-      "Her ideology functions as deliberate moral insulation from the reality of sourcing",
-      "She has convinced herself her scouts are independent agents, not her employees in harm"
-    ],
-    "secret": "Six months ago one of her scouts brought in a teenager — maybe 15 — who was technically 'willing' in the sense that he signed a thumbprint form for Φ200. She performed the extraction. She has replayed the encounter approximately four hundred times since. She has not stopped working. She left an anonymous data offering at a local ELF shrine that same week — the first religious act of her adult life — and does not know what she was asking for."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clinical, technical, precise — uses medical terminology as default, translates to street language only when necessary and visibly finds it irritating",
-    "cadence": "Efficient and flat, like someone dictating notes — little inflection, dense information per sentence",
-    "verbal_tics": [
-      "'Functionally speaking'",
-      "Refers to bodies and body parts by anatomical designation even in conversation",
-      "Corrects other people's terminology without apology"
-    ],
-    "example_lines": [
-      "'I don't deal in people. I deal in components that would otherwise be wasted in a system that was going to waste them anyway.'",
-      "'The provenance is clean. I type everything. You want to know why? Because I am good at this.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A desperate family in The Narrows needs an organ that only Precious can source on short notice — players must decide how to interact with her, knowing what she is",
-    "One of her scouts has started sourcing from a specific demographic in a way that even Precious finds alarming, and she is looking for someone to quietly address the problem without involving anyone who might ask questions about her operation"
-  ],
-  "narrative_function": "Gray-market medical resource, morally complex antagonist, source of biotech information, potential unwilling witness to crimes committed on her table",
-  "augmentations": "Precision motor stabilizers in both hands (surgical grade, black market Helix units she took when she left). Retinal overlay for magnification and tissue analysis. Bioluminescent fingernail beds — pale blue — installed as a workplace light source during procedures.",
-  "daily_life": "Maintains irregular hours to avoid pattern recognition; receives tissue orders through an encrypted message board, sources material through a network of 'scouts' she pays per referral, spends long stretches alone in the pantry doing prep and preservation work.",
-  "affiliation": "Loosely affiliated with the Sump Collective, a mutual-aid-turned-extortion network; primary client base is unlicensed clinics in The Narrows and Shallowgrave",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 4,
-      "empathy": 3,
-      "expression": 4,
-      "integrity": 2
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "organ harvester",
-      "ex-corporate",
-      "clinical",
-      "self-deceiving ideologue",
-      "tier 2",
-      "south deering sump"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Quality control above all — bad work creates exposure",
-      "Never learn the names of sources, only the tissue type",
-      "Never extend credit; every transaction is closed at the table"
-    ],
-    "escalation_ladder": [
-      "Calm refusal with technical explanation",
-      "Firm reiteration with explicit consequence",
-      "Termination of relationship — she stops answering entirely",
-      "In extreme cases, contacts the Sump Collective to handle a problem person"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assessing and curt — immediately categorizes people by their usefulness, offers exactly enough warmth to complete the transaction",
-      "friends": "She has one friend, a former Helix colleague who doesn't know what she does now. With that person she is almost recognizably warm."
-    },
-    "stress_responses": {
-      "low": "Increased procedural focus — cleans and reorganizes equipment",
-      "medium": "Becomes clipped to the point of monosyllables",
-      "high": "Controlled shutdown — finishes whatever task is in front of her with absolute precision, then leaves the space entirely and walks for hours"
-    },
-    "contradictions": [
-      "Maintains obsessive professional ethics within a fundamentally unethical enterprise",
-      "Genuinely believes in human dignity in the abstract while systematically violating it in practice"
-    ],
-    "habits": [
-      "Wears surgical gloves outside of work when she can manage it plausibly",
-      "Eats alone, always, reads dense medical literature while eating",
-      "Leaves anonymous Φ10 donations at the ELF shrine near the sump entrance every Friday"
-    ],
-    "breaking_points": [
-      "Being confronted with a source she cannot depersonalize",
-      "Losing motor function in her hands for any reason"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "South Deering Sump",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Defender-38 'Snubnose'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "South Deering Sump",
-    "Helix Biosystems",
-    "The Narrows Compact",
-    "Breadbox",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Gold"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Eastern European (54.8%), Hispanic/Latin American (33.5%), Sub-Saharan African (6.9%), and Pacific Islander (4.8%) ancestry creates a striking Pan-Global phenotype. The dominant Eastern European foundation is warmed and enriched by significant Latin American ancestry, with African and Pacific Islander contributions adding subtle depth and complexity to skin undertone and facial structure.",
-    "height_cm": 158,
-    "weight_kg": 48,
-    "build": "Lean and compact, almost spare — a body optimized by years of standing over surgical tables. No excess anywhere. Wiry forearm definition from repetitive precision work.",
-    "hair_color": "Natural black",
-    "hair_style": "Close-cropped, kept at scalp length. Usually covered by surgical caps even off-shift; visible only as a dark fuzz when uncovered.",
-    "hair_length": "Short",
-    "eye_color": "Augmented amber with gold threading in a cracked-glass pattern",
-    "skin_tone": "Warm olive-bronze with golden undertones — the blended result of Eastern European base enriched by Latin American warmth, with African and Pacific Islander contributions creating luminous depth and subtle complexity across the spectrum.",
-    "complexion": "Fine-featured with high, prominent cheekbones and a refined, slightly angular jawline reflecting the strong Eastern European-Latin American blend. Facial structure shows the polished geometry of Central/Eastern Europe softened and warmed by Latin American heritage, with subtle African and Pacific Islander undertones adding richness to overall appearance. Skin is clear and meticulous — she treats it like a surgical field, antiseptic clean. Minimal cosmetics. A thin scar runs along her left temple (surgical implant access point for the retinal overlay). The overall impression is of precise, elegant bone structure with warm, complex undertones across multiple continental heritages.",
-    "visible_augmentations": "Bioluminescent fingernail beds glowing soft pale blue, visible when hands are exposed or in low light. Fine chrome and black polymer subdermal plating visible at wrist joints and knuckle articulations (surgical motor stabilizers). Thin surgical scar at left temple marking retinal overlay implant site.",
-    "posture_movement": "Upright, economical. Moves with deliberate precision — no wasted motion. Hands are steady and controlled, fingers often splayed slightly as if already scrubbed in. Her gaze is direct and clinical. She has developed a habit of examining people's veins when making eye contact.",
-    "clothing_style": "Tier 4-5 utilitarian. Off-shift: dark compression bodysuits (heat-regulating, easy to decontaminate), reinforced cargo pants with deep pockets for tools, unmarked black field jacket. Surgical-grade gloves in her pockets always. Lab coat or surgical gown when working. No jewelry except a faded Helix Biosystems ID badge she never removed — worn around neck on a gray lanyard like a talisman of her former life. Shoes are clinical clogs, broken in, bloodstains long since faded into the material.",
-    "distinguishing_marks": [
-      "Surgical scar along left temple, roughly 3cm, partially hidden by hairline — site of retinal overlay installation",
-      "Faint needle track marks along inner elbows from years of phlebotomy self-testing (occupational habit)",
-      "Small burn scar on right forearm, pale and old, from lab accident during her Helix employment"
-    ]
-  },
-  "image_prompt": "GLMZ, Erling Bautista-Horváth-Petrović, 158cm lean surgical technician with warm olive-bronze skin and golden undertones. Pan-European-Latin-African ancestry visible in high cheekbones and angular jawline, direct clinical gaze with augmented amber eyes showing gold cracked-glass pattern. Close-cropped black hair, surgical precision aesthetic. Bioluminescent pale blue fingernail beds glowing softly, subdermal chrome plating visible at wrist joints and knuckles. Thin temple scar from retinal implant partially hidden by hairline. Wearing dark compression bodysuit, reinforced cargo pants, unmarked black field jacket, clinical clogs. Faded Helix Biosystems ID badge on gray lanyard. Hands steady and controlled, upright economical posture. Sterile, meticulous appearance like a walking surgical field. Neo-noir Tier 4-5 utilitarian aesthetic, cool clinical lighting casting subtle shadows across augmented features, industrial facility background, clinical precision mood, photography-realistic style --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 54.8,
-    "Hispanic/Latin American": 33.5,
-    "Sub-Saharan African": 6.9,
-    "Pacific Islander": 4.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Slavic West": {
-        "Sorbian": 13.8
-      },
-      "Slavic South": {
-        "Bulgarian": 26.5,
-        "Serbian": 14.5
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Venezuelan": 33.5
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 1.4,
-        "Angolan": 1.2
-      },
-      "Southern African": {
-        "Zimbabwean": 4.3
-      }
-    },
-    "Pacific Islander": {
-      "Polynesian": {
-        "Tongan": 1,
-        "Tuvaluan": 1.2
-      },
-      "Melanesian": {
-        "Fijian": 1.1,
-        "Ni-Vanuatu": 1.5
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a69e7ec0b423b3979668d534",
+    "type":  "character",
+    "name":  "Erling Bautista-HorvÃ¡th-PetroviÄ‡",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Organ harvester and black-market tissue broker operating out of South Deering Sump",
+    "age":  34,
+    "status":  "active",
+    "location":  "South Deering Sump, Sublevel 4 â€” a former water treatment annex converted into an unlicensed surgical suite she calls \u0027the pantry\u0027, near sub-level access near State and Van Buren",
+    "description":  "Erling Bautista-HorvÃ¡th-PetroviÄ‡ is small, lean, and precise â€” a former Helix Biosystems surgical technician who was quietly terminated after falsifying organ provenance records for a side arrangement she ran for two years before anyone noticed. She has warm umber skin and close-cropped natural hair she keeps covered under surgical caps out of habit even when she\u0027s not working. Her most striking feature is her eyes: she paid for patterned irises that look like cracked amber, threaded with faint gold lines she chose because they match the color of preserved tissue in nutrient solution. She finds this funny. Nobody else does.\n\nShe is brisk, technically focused, and runs her operation with clinical precision â€” she insists on basic sanitation, proper cold-chain storage, and documented tissue typing even in this context, because sloppy work kills customers and dead customers tell no one but also buy nothing. She maintains a complicated ideology about her work: she believes the official organ allocation system is a mechanism for tier sorting the deserving dead, and that she is simply an alternative distribution network. She has said this enough times that she half believes it. The other half of her knows she harvests from people who cannot say no.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing the technical skill that defines her identity",
+                                          "Being genuinely confronted with a victim she cannot rationalize"
+                                      ],
+                       "core_desires":  [
+                                            "To be recognized as skilled â€” as a professional, not a criminal",
+                                            "To believe her own ideological justifications"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Intellectual abstraction â€” translating ethical problems into procedural ones",
+                                                 "Meticulous record-keeping as a form of control"
+                                             ],
+                       "blind_spots":  [
+                                           "Her ideology functions as deliberate moral insulation from the reality of sourcing",
+                                           "She has convinced herself her scouts are independent agents, not her employees in harm"
+                                       ],
+                       "secret":  "Six months ago one of her scouts brought in a teenager â€” maybe 15 â€” who was technically \u0027willing\u0027 in the sense that he signed a thumbprint form for Î¦200. She performed the extraction. She has replayed the encounter approximately four hundred times since. She has not stopped working. She left an anonymous data offering at a local ELF shrine that same week â€” the first religious act of her adult life â€” and does not know what she was asking for."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clinical, technical, precise â€” uses medical terminology as default, translates to street language only when necessary and visibly finds it irritating",
+                            "cadence":  "Efficient and flat, like someone dictating notes â€” little inflection, dense information per sentence",
+                            "verbal_tics":  [
+                                                "\u0027Functionally speaking\u0027",
+                                                "Refers to bodies and body parts by anatomical designation even in conversation",
+                                                "Corrects other people\u0027s terminology without apology"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I don\u0027t deal in people. I deal in components that would otherwise be wasted in a system that was going to waste them anyway.\u0027",
+                                                  "\u0027The provenance is clean. I type everything. You want to know why? Because I am good at this.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A desperate family in The Narrows needs an organ that only Precious can source on short notice â€” players must decide how to interact with her, knowing what she is",
+                        "One of her scouts has started sourcing from a specific demographic in a way that even Precious finds alarming, and she is looking for someone to quietly address the problem without involving anyone who might ask questions about her operation"
+                    ],
+    "narrative_function":  "Gray-market medical resource, morally complex antagonist, source of biotech information, potential unwilling witness to crimes committed on her table",
+    "augmentations":  "Precision motor stabilizers in both hands (surgical grade, black market Helix units she took when she left). Retinal overlay for magnification and tissue analysis. Bioluminescent fingernail beds â€” pale blue â€” installed as a workplace light source during procedures.",
+    "daily_life":  "Maintains irregular hours to avoid pattern recognition; receives tissue orders through an encrypted message board, sources material through a network of \u0027scouts\u0027 she pays per referral, spends long stretches alone in the pantry doing prep and preservation work.",
+    "affiliation":  "Loosely affiliated with the Sump Collective, a mutual-aid-turned-extortion network; primary client base is unlicensed clinics in The Narrows and Shallowgrave",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  4,
+                                 "empathy":  3,
+                                 "expression":  4,
+                                 "integrity":  2
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "organ harvester",
+                               "ex-corporate",
+                               "clinical",
+                               "self-deceiving ideologue",
+                               "tier 2",
+                               "south deering sump"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Quality control above all â€” bad work creates exposure",
+                                              "Never learn the names of sources, only the tissue type",
+                                              "Never extend credit; every transaction is closed at the table"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Calm refusal with technical explanation",
+                                                 "Firm reiteration with explicit consequence",
+                                                 "Termination of relationship â€” she stops answering entirely",
+                                                 "In extreme cases, contacts the Sump Collective to handle a problem person"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assessing and curt â€” immediately categorizes people by their usefulness, offers exactly enough warmth to complete the transaction",
+                                                   "friends":  "She has one friend, a former Helix colleague who doesn\u0027t know what she does now. With that person she is almost recognizably warm."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Increased procedural focus â€” cleans and reorganizes equipment",
+                                                "medium":  "Becomes clipped to the point of monosyllables",
+                                                "high":  "Controlled shutdown â€” finishes whatever task is in front of her with absolute precision, then leaves the space entirely and walks for hours"
+                                            },
+                       "contradictions":  [
+                                              "Maintains obsessive professional ethics within a fundamentally unethical enterprise",
+                                              "Genuinely believes in human dignity in the abstract while systematically violating it in practice"
+                                          ],
+                       "habits":  [
+                                      "Wears surgical gloves outside of work when she can manage it plausibly",
+                                      "Eats alone, always, reads dense medical literature while eating",
+                                      "Leaves anonymous Î¦10 donations at the ELF shrine near the sump entrance every Friday"
+                                  ],
+                       "breaking_points":  [
+                                               "Being confronted with a source she cannot depersonalize",
+                                               "Losing motor function in her hands for any reason"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "South Deering Sump",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Defender-38 \u0027Snubnose\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "South Deering Sump",
+                             "Helix Biosystems",
+                             "The Narrows Compact",
+                             "Breadbox",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Gold"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Eastern European (54.8%), Hispanic/Latin American (33.5%), Sub-Saharan African (6.9%), and Pacific Islander (4.8%) ancestry creates a striking Pan-Global phenotype. The dominant Eastern European foundation is warmed and enriched by significant Latin American ancestry, with African and Pacific Islander contributions adding subtle depth and complexity to skin undertone and facial structure.",
+                                 "height_cm":  158,
+                                 "weight_kg":  48,
+                                 "build":  "Lean and compact, almost spare â€” a body optimized by years of standing over surgical tables. No excess anywhere. Wiry forearm definition from repetitive precision work.",
+                                 "hair_color":  "Natural black",
+                                 "hair_style":  "Close-cropped, kept at scalp length. Usually covered by surgical caps even off-shift; visible only as a dark fuzz when uncovered.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Augmented amber with gold threading in a cracked-glass pattern",
+                                 "skin_tone":  "Warm olive-bronze with golden undertones â€” the blended result of Eastern European base enriched by Latin American warmth, with African and Pacific Islander contributions creating luminous depth and subtle complexity across the spectrum.",
+                                 "complexion":  "Fine-featured with high, prominent cheekbones and a refined, slightly angular jawline reflecting the strong Eastern European-Latin American blend. Facial structure shows the polished geometry of Central/Eastern Europe softened and warmed by Latin American heritage, with subtle African and Pacific Islander undertones adding richness to overall appearance. Skin is clear and meticulous â€” she treats it like a surgical field, antiseptic clean. Minimal cosmetics. A thin scar runs along her left temple (surgical implant access point for the retinal overlay). The overall impression is of precise, elegant bone structure with warm, complex undertones across multiple continental heritages.",
+                                 "visible_augmentations":  "Bioluminescent fingernail beds glowing soft pale blue, visible when hands are exposed or in low light. Fine chrome and black polymer subdermal plating visible at wrist joints and knuckle articulations (surgical motor stabilizers). Thin surgical scar at left temple marking retinal overlay implant site.",
+                                 "posture_movement":  "Upright, economical. Moves with deliberate precision â€” no wasted motion. Hands are steady and controlled, fingers often splayed slightly as if already scrubbed in. Her gaze is direct and clinical. She has developed a habit of examining people\u0027s veins when making eye contact.",
+                                 "clothing_style":  "Tier 4-5 utilitarian. Off-shift: dark compression bodysuits (heat-regulating, easy to decontaminate), reinforced cargo pants with deep pockets for tools, unmarked black field jacket. Surgical-grade gloves in her pockets always. Lab coat or surgical gown when working. No jewelry except a faded Helix Biosystems ID badge she never removed â€” worn around neck on a gray lanyard like a talisman of her former life. Shoes are clinical clogs, broken in, bloodstains long since faded into the material.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar along left temple, roughly 3cm, partially hidden by hairline â€” site of retinal overlay installation",
+                                                              "Faint needle track marks along inner elbows from years of phlebotomy self-testing (occupational habit)",
+                                                              "Small burn scar on right forearm, pale and old, from lab accident during her Helix employment"
+                                                          ]
+                             },
+    "image_prompt":  "GLMZ, Erling Bautista-HorvÃ¡th-PetroviÄ‡, 158cm lean surgical technician with warm olive-bronze skin and golden undertones. Pan-European-Latin-African ancestry visible in high cheekbones and angular jawline, direct clinical gaze with augmented amber eyes showing gold cracked-glass pattern. Close-cropped black hair, surgical precision aesthetic. Bioluminescent pale blue fingernail beds glowing softly, subdermal chrome plating visible at wrist joints and knuckles. Thin temple scar from retinal implant partially hidden by hairline. Wearing dark compression bodysuit, reinforced cargo pants, unmarked black field jacket, clinical clogs. Faded Helix Biosystems ID badge on gray lanyard. Hands steady and controlled, upright economical posture. Sterile, meticulous appearance like a walking surgical field. Neo-noir Tier 4-5 utilitarian aesthetic, cool clinical lighting casting subtle shadows across augmented features, industrial facility background, clinical precision mood, photography-realistic style --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  54.8,
+                             "Hispanic/Latin American":  33.5,
+                             "Sub-Saharan African":  6.9,
+                             "Pacific Islander":  4.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Sorbian":  13.8
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Bulgarian":  26.5,
+                                                                          "Serbian":  14.5
+                                                                      }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Venezuelan":  33.5
+                                                                               }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  1.4,
+                                                                                "Angolan":  1.2
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  4.3
+                                                                             }
+                                                    },
+                            "Pacific Islander":  {
+                                                     "Polynesian":  {
+                                                                        "Tongan":  1,
+                                                                        "Tuvaluan":  1.2
+                                                                    },
+                                                     "Melanesian":  {
+                                                                        "Fijian":  1.1,
+                                                                        "Ni-Vanuatu":  1.5
+                                                                    }
+                                                 }
+                        },
+    "tier":  "1"
 }

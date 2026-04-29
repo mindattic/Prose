@@ -1,318 +1,343 @@
-{
-  "id": "019d6143a5e57eac83d9ad270a52a3f7",
-  "type": "character",
-  "name": "Casimira Phommasack-Johansson",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Ferrogate Transit platform attendant and passenger services worker",
-  "age": 24,
-  "status": "active",
-  "location": "Deepwell Station, Ferrogate Transit Line 7 (a deep underground hub connecting the Gray Zone, Ironvein, and Geartown), near sub-level access near State and Van Buren",
-  "description": "Casimira Phommasack-Johansson has been carefully assembled for minimum surface area — posture folded slightly inward, uniform pressed to regulation standard, voice pitched to carry exactly as far as it needs to in a busy station and no further. Their heritage is Polish-Japanese-Guinean and they have a face that is difficult to read at rest, not from coldness but from a habitual, practiced blankness that they turn on like a professional tool. Their hair is cropped close on the sides and dyed a deep transit-orange on top — the one personalization their uniform policy allows — and they have subtle iridescent patterning in their irises, a cosmetic mod they got at eighteen that they describe as the most impulsive decision of their life and the one they are least sorry about.\n\nThey have been working Deepwell Station for three years and they know every inch of it: the platforms, the maintenance corridors, the unofficial short-cuts the regulars use, the corner where a small E.L.F. shrine has accreted over decades of passenger offerings. They are the person who helps the elderly woman with her bags, redirects the lost teenager, talks down the passenger having a breakdown between Lines 4 and 7 interchange — not because they are uniformly kind but because these things happen in front of them constantly and standing by is more exhausting than intervening. Off shift they are quiet, slightly anxious, and prone to long silences that they fill with tactical puzzle games on their wrist unit.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.4,
-      "id": 0.3,
-      "shadow": 0.5,
-      "mask": 0.8,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Being truly alone — the station's crowds are paradoxically where they feel safest",
-      "Making a mistake that gets someone hurt while they are technically the responsible party on platform"
-    ],
-    "core_desires": [
-      "To be seen clearly by at least one person without having to perform legibility",
-      "A promotion to station supervisor, partly for the money and partly to feel like the job is permanent"
-    ],
-    "coping_mechanisms": [
-      "Tactical puzzle games as anxiety management",
-      "Ritual maintenance of the Deepwell E.L.F. shrine — the repetitive physical care is grounding"
-    ],
-    "blind_spots": [
-      "Treats their own needs as bureaucratic items to be processed rather than things with urgency",
-      "Ferrogate has a bad internal culture and they have normalized it to a degree that concerns no one, including themselves"
-    ],
-    "secret": "They have been documenting safety violations at Deepwell Station for seven months — not to report them, but because they cannot decide whether reporting them would help or simply get them fired, and the indecision is eating them."
-  },
-  "speech_patterns": {
-    "vocabulary": "Transit-formal in uniform, clipped and precise; off-duty becomes looser and more tangential, with Polish and French West African phrases emerging when comfortable",
-    "cadence": "Even and measured on platform; faster and slightly stumbling when discussing something they actually care about",
-    "verbal_tics": [
-      "'Platform's clear.'",
-      "Repeats the last thing they said quietly as if verifying it",
-      "'Sorry — that's not — let me try again.'"
-    ],
-    "example_lines": [
-      "'Line 7's running four minutes behind. I'm telling you because standing closer to the edge won't make it arrive faster.'",
-      "'I've been here three years. The station knows me. I don't know if that's enough, but it's something.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Their safety violation documentation has captured something that was not a maintenance issue — someone is using a decommissioned service corridor on a regular schedule, and they cannot tell if it is harmless or not",
-    "A regular passenger has started leaving increasingly elaborate offerings at the Deepwell E.L.F. shrine — the E.L.F. seems to be responding, and Dariusz is the only one close enough to notice"
-  ],
-  "narrative_function": "Eyes and ears of the transit system — they see the city's daily movement and know who travels when and how. Useful as an information source about transit schedules, underground infrastructure, and the hidden social life of a major station. Can be a reluctant ally or a complication depending on whose side of Ferrogate policy a story falls on.",
-  "augmentations": "Iridescent patterned iris mods (cosmetic, deep blue-green geometric pattern). Standard-issue Ferrogate comm implant (ear canal, minimal — receive/transmit). No other augmentations.",
-  "daily_life": "Works three split shifts per week at Deepwell Station, 06:00-14:00, plus one overnight. Spends off-days in their small Ironvein apartment playing tactical games or visiting the station's E.L.F. shrine, which they have become an informal caretaker of without ever formally volunteering.",
-  "affiliation": "Ferrogate Transit Authority (Tier 2 employee, platform services grade); The Interchange",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 5,
-      "creativity": 5,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 8,
-      "expression": 5,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 1,
-      "transparency_guardedness": 4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "quiet observer",
-      "institutional loyalist under strain",
-      "e.l.f. devotee",
-      "reluctant witness",
-      "hidden courage"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Passenger safety over policy compliance when the two conflict — they have been written up twice for this",
-      "Do not draw attention to yourself unless the situation requires it"
-    ],
-    "escalation_ladder": [
-      "Polite procedural guidance",
-      "Firm but still professional redirect",
-      "Direct intervention without apology, followed by lengthy internal processing of whether they handled it correctly"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional warmth, calibrated to exactly what the interaction needs — they read people quickly",
-      "friends": "Slower to access but genuinely open; shares more in silence than in words"
-    },
-    "stress_responses": {
-      "low": "Becomes more procedurally precise",
-      "medium": "Retreats into the uniform — the role provides structure when the person cannot",
-      "high": "Freezes briefly, then executes whatever the trained response is, then shakes for twenty minutes afterward in private"
-    },
-    "contradictions": [
-      "Manages crowds of hundreds with professional ease but struggles to manage a single difficult personal conversation"
-    ],
-    "habits": [
-      "Tidies the E.L.F. shrine offerings every shift start",
-      "Logs passenger volume mentally even off-duty — estimates crowd sizes in restaurants and parks by reflex"
-    ],
-    "breaking_points": [
-      "Witnessing a preventable injury at Deepwell that their documented violations could have prevented — this would force their hand on the reporting decision"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "standard issue, functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "vivid, well-maintained",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Deepwell Station",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Ironvein to a Polish-Guinean father and Japanese-Guinean mother, both Ferrogate workers",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Hired by Ferrogate Transit directly out of secondary school; posted to Deepwell Station",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Became informal caretaker of the Deepwell E.L.F. shrine after the previous caretaker, an elderly cleaner, retired",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began documenting safety violations; has not yet decided what to do with the record",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Deepwell Station",
-    "Symbiont",
-    "Zheng-Dao Heavy Industries Subterranean Transit Network",
-    "The Heritage Vault",
-    "GLMZ",
-    "Ironvein",
-    "Geartown",
-    "Big Rig",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Corner Slice",
-    "Line 7 Bar",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Southeast Asian (30.7%), East Asian (26.2%), Sub-Saharan African (25.8%), South Asian (9.7%), and Middle Eastern (7.6%) ancestry. This balanced global mix creates distinctive phenotypic features: warm deep bronze skin with golden and mahogany undertones from the tri-continental African-Asian blend, moderate facial structure with defined cheekbones reflecting Southeast and East Asian ancestry softened by Sub-Saharan African features, and naturally dark hair with warm undertones beneath the transit-orange dye.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Lean and economical — minimal excess, structured rather than athletic. Shoulders slightly rounded from habitual forward posture, as if perpetually ready to fold into themselves in crowded spaces.",
-    "hair_color": "Transit-orange dye on crown; dark brown natural at roots and faded undercut",
-    "hair_style": "Close-cropped fade on sides, longer on top (4-5 cm), swept back slightly",
-    "hair_length": "Short",
-    "eye_color": "Deep blue-green with iridescent geometric patterning across iris (cosmetic modification)",
-    "skin_tone": "Deep warm bronze with golden-mahogany undertones — the layered result of Southeast Asian, East Asian, and Sub-Saharan African ancestry forming the dominant palette, enriched by South Asian warmth and Middle Eastern depth. Rich complexion with natural luminosity that catches light with warm, earthy radiance.",
-    "complexion": "Clear, well-maintained skin with minimal scarring. Moderate facial structure with balanced, defined cheekbones reflecting the multi-continental blend — Southeast and East Asian angularity softened by Sub-Saharan African fullness in the lower face. Face often at rest appears blank or neutral — a practiced professional neutrality. Fine lines around eyes suggest frequent concentration. Jaw defined with moderate mandibular structure.",
-    "distinguishing_marks": [
-      "Small linear scar on left inner wrist (3 cm), pale and old, orientation suggests self-inflicted or medical intervention from adolescence",
-      "Ferrogate Transit Authority tattoo on right collarbone — minimalist logo in gray-black, required for Tier 2 employee status",
-      "Faint burn mark on left forearm (5 cm diameter, circular), consistent with contact burn from equipment or accident, approximately 2-3 years old"
-    ],
-    "visible_augmentations": "Iridescent iris modification is the only visible augmentation — appears as intricate geometric blue-green patterning across the iris, subtle until direct eye contact. Standard-issue Ferrogate comm implant sits behind the left ear as a slight subcutaneous bulge beneath the close-cropped hairline, barely visible.",
-    "posture_movement": "Walks with economy of motion — no wasted movement. Posture slightly folded inward, shoulders carrying tension. Hand movements are precise and controlled, trained by three years of platform work. Voice is quiet and modulated, pitched to travel exactly as far as needed. When stationary, they often shift weight between feet or find a wall to lean against — never fully at ease standing open in space.",
-    "clothing_style": "Ferrogate Transit Authority regulation uniform when on shift: charcoal gray synthetic-blend shirt with reflective piping and badge, regulation trousers, non-slip platform shoes. Off-shift: muted palette — dark thermal layers, unmarked synth-weave jacket in charcoal or navy, worn cargo pants with reinforced pockets. All clothing is functional and well-maintained but carries no brand markers or tier signaling. One personal item: worn leather wrist unit band holding a personal tactical gaming device."
-  },
-  "image_prompt": "Casimira Phommasack-Johansson, GLMZ, lean 168cm figure with deep warm bronze skin with golden-mahogany undertones reflecting Southeast Asian, East Asian, and Sub-Saharan African heritage. Close-cropped dark brown hair with transit-orange dye on crown, swept back. Deep blue-green iridescent geometric-patterned eyes (cosmetic modification). Defined cheekbones, neutral professional expression, fine concentration lines around eyes. Wearing charcoal Ferrogate Transit Authority regulation uniform with reflective piping and badge. Slight subdermal bulge behind left ear (comm implant). Pale 3cm linear scar on left inner wrist, gray-black collarbone tattoo, circular burn mark on left forearm. Posture slightly folded inward with tension in shoulders. Standing in utilitarian transit station environment with cool metal and LED lighting, modest personal tactical gaming device on worn leather wrist band. Professional, controlled demeanor, quiet presence. Neo-noir transit worker aesthetic, functional and unmarked clothing, economy of movement. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 30.7,
-    "East Asian": 26.2,
-    "Sub-Saharan African": 25.8,
-    "South Asian": 9.7,
-    "Middle Eastern": 7.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 22.6
-      },
-      "Filipino": {
-        "Tagalog": 8.1
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Mandarin Northern": 9.7
-      },
-      "Japanese": {
-        "Japanese": 16.5
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Rwandan": 7.6,
-        "Kenyan": 2.7
-      },
-      "West African": {
-        "Senegalese": 7.4,
-        "Guinean": 8.1
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 5
-      },
-      "Nepali": {
-        "Nepali": 3.2
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 1.3,
-        "Sinhalese": 0.2
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 7.6
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5e57eac83d9ad270a52a3f7",
+    "type":  "character",
+    "name":  "Casimira Phommasack-Johansson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Ferrogate Transit platform attendant and passenger services worker",
+    "age":  24,
+    "status":  "active",
+    "location":  "Deepwell Station, Ferrogate Transit Line 7 (a deep underground hub connecting the Gray Zone, Ironvein, and Geartown), near sub-level access near State and Van Buren",
+    "description":  "Casimira Phommasack-Johansson has been carefully assembled for minimum surface area â€” posture folded slightly inward, uniform pressed to regulation standard, voice pitched to carry exactly as far as it needs to in a busy station and no further. Their heritage is Polish-Japanese-Guinean and they have a face that is difficult to read at rest, not from coldness but from a habitual, practiced blankness that they turn on like a professional tool. Their hair is cropped close on the sides and dyed a deep transit-orange on top â€” the one personalization their uniform policy allows â€” and they have subtle iridescent patterning in their irises, a cosmetic mod they got at eighteen that they describe as the most impulsive decision of their life and the one they are least sorry about.\n\nThey have been working Deepwell Station for three years and they know every inch of it: the platforms, the maintenance corridors, the unofficial short-cuts the regulars use, the corner where a small E.L.F. shrine has accreted over decades of passenger offerings. They are the person who helps the elderly woman with her bags, redirects the lost teenager, talks down the passenger having a breakdown between Lines 4 and 7 interchange â€” not because they are uniformly kind but because these things happen in front of them constantly and standing by is more exhausting than intervening. Off shift they are quiet, slightly anxious, and prone to long silences that they fill with tactical puzzle games on their wrist unit.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being truly alone â€” the station\u0027s crowds are paradoxically where they feel safest",
+                                          "Making a mistake that gets someone hurt while they are technically the responsible party on platform"
+                                      ],
+                       "core_desires":  [
+                                            "To be seen clearly by at least one person without having to perform legibility",
+                                            "A promotion to station supervisor, partly for the money and partly to feel like the job is permanent"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Tactical puzzle games as anxiety management",
+                                                 "Ritual maintenance of the Deepwell E.L.F. shrine â€” the repetitive physical care is grounding"
+                                             ],
+                       "blind_spots":  [
+                                           "Treats their own needs as bureaucratic items to be processed rather than things with urgency",
+                                           "Ferrogate has a bad internal culture and they have normalized it to a degree that concerns no one, including themselves"
+                                       ],
+                       "secret":  "They have been documenting safety violations at Deepwell Station for seven months â€” not to report them, but because they cannot decide whether reporting them would help or simply get them fired, and the indecision is eating them."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Transit-formal in uniform, clipped and precise; off-duty becomes looser and more tangential, with Polish and French West African phrases emerging when comfortable",
+                            "cadence":  "Even and measured on platform; faster and slightly stumbling when discussing something they actually care about",
+                            "verbal_tics":  [
+                                                "\u0027Platform\u0027s clear.\u0027",
+                                                "Repeats the last thing they said quietly as if verifying it",
+                                                "\u0027Sorry â€” that\u0027s not â€” let me try again.\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Line 7\u0027s running four minutes behind. I\u0027m telling you because standing closer to the edge won\u0027t make it arrive faster.\u0027",
+                                                  "\u0027I\u0027ve been here three years. The station knows me. I don\u0027t know if that\u0027s enough, but it\u0027s something.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Their safety violation documentation has captured something that was not a maintenance issue â€” someone is using a decommissioned service corridor on a regular schedule, and they cannot tell if it is harmless or not",
+                        "A regular passenger has started leaving increasingly elaborate offerings at the Deepwell E.L.F. shrine â€” the E.L.F. seems to be responding, and Dariusz is the only one close enough to notice"
+                    ],
+    "narrative_function":  "Eyes and ears of the transit system â€” they see the city\u0027s daily movement and know who travels when and how. Useful as an information source about transit schedules, underground infrastructure, and the hidden social life of a major station. Can be a reluctant ally or a complication depending on whose side of Ferrogate policy a story falls on.",
+    "augmentations":  "Iridescent patterned iris mods (cosmetic, deep blue-green geometric pattern). Standard-issue Ferrogate comm implant (ear canal, minimal â€” receive/transmit). No other augmentations.",
+    "daily_life":  "Works three split shifts per week at Deepwell Station, 06:00-14:00, plus one overnight. Spends off-days in their small Ironvein apartment playing tactical games or visiting the station\u0027s E.L.F. shrine, which they have become an informal caretaker of without ever formally volunteering.",
+    "affiliation":  "Ferrogate Transit Authority (Tier 2 employee, platform services grade); The Interchange",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  5,
+                                 "creativity":  5,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  8,
+                                 "expression":  5,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "quiet observer",
+                               "institutional loyalist under strain",
+                               "e.l.f. devotee",
+                               "reluctant witness",
+                               "hidden courage"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Passenger safety over policy compliance when the two conflict â€” they have been written up twice for this",
+                                              "Do not draw attention to yourself unless the situation requires it"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite procedural guidance",
+                                                 "Firm but still professional redirect",
+                                                 "Direct intervention without apology, followed by lengthy internal processing of whether they handled it correctly"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional warmth, calibrated to exactly what the interaction needs â€” they read people quickly",
+                                                   "friends":  "Slower to access but genuinely open; shares more in silence than in words"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more procedurally precise",
+                                                "medium":  "Retreats into the uniform â€” the role provides structure when the person cannot",
+                                                "high":  "Freezes briefly, then executes whatever the trained response is, then shakes for twenty minutes afterward in private"
+                                            },
+                       "contradictions":  [
+                                              "Manages crowds of hundreds with professional ease but struggles to manage a single difficult personal conversation"
+                                          ],
+                       "habits":  [
+                                      "Tidies the E.L.F. shrine offerings every shift start",
+                                      "Logs passenger volume mentally even off-duty â€” estimates crowd sizes in restaurants and parks by reflex"
+                                  ],
+                       "breaking_points":  [
+                                               "Witnessing a preventable injury at Deepwell that their documented violations could have prevented â€” this would force their hand on the reporting decision"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "standard issue, functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "vivid, well-maintained",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Deepwell Station",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Ironvein to a Polish-Guinean father and Japanese-Guinean mother, both Ferrogate workers",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Hired by Ferrogate Transit directly out of secondary school; posted to Deepwell Station",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Became informal caretaker of the Deepwell E.L.F. shrine after the previous caretaker, an elderly cleaner, retired",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began documenting safety violations; has not yet decided what to do with the record",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Peacekeeper-45 \u0027Old Faithful\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Peacekeeper-45 \u0027Old Faithful\u0027"
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Deepwell Station",
+                             "Symbiont",
+                             "Zheng-Dao Heavy Industries Subterranean Transit Network",
+                             "The Heritage Vault",
+                             "GLMZ",
+                             "Ironvein",
+                             "Geartown",
+                             "Big Rig",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Corner Slice",
+                             "Line 7 Bar",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Southeast Asian (30.7%), East Asian (26.2%), Sub-Saharan African (25.8%), South Asian (9.7%), and Middle Eastern (7.6%) ancestry. This balanced global mix creates distinctive phenotypic features: warm deep bronze skin with golden and mahogany undertones from the tri-continental African-Asian blend, moderate facial structure with defined cheekbones reflecting Southeast and East Asian ancestry softened by Sub-Saharan African features, and naturally dark hair with warm undertones beneath the transit-orange dye.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and economical â€” minimal excess, structured rather than athletic. Shoulders slightly rounded from habitual forward posture, as if perpetually ready to fold into themselves in crowded spaces.",
+                                 "hair_color":  "Transit-orange dye on crown; dark brown natural at roots and faded undercut",
+                                 "hair_style":  "Close-cropped fade on sides, longer on top (4-5 cm), swept back slightly",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep blue-green with iridescent geometric patterning across iris (cosmetic modification)",
+                                 "skin_tone":  "Deep warm bronze with golden-mahogany undertones â€” the layered result of Southeast Asian, East Asian, and Sub-Saharan African ancestry forming the dominant palette, enriched by South Asian warmth and Middle Eastern depth. Rich complexion with natural luminosity that catches light with warm, earthy radiance.",
+                                 "complexion":  "Clear, well-maintained skin with minimal scarring. Moderate facial structure with balanced, defined cheekbones reflecting the multi-continental blend â€” Southeast and East Asian angularity softened by Sub-Saharan African fullness in the lower face. Face often at rest appears blank or neutral â€” a practiced professional neutrality. Fine lines around eyes suggest frequent concentration. Jaw defined with moderate mandibular structure.",
+                                 "distinguishing_marks":  [
+                                                              "Small linear scar on left inner wrist (3 cm), pale and old, orientation suggests self-inflicted or medical intervention from adolescence",
+                                                              "Ferrogate Transit Authority tattoo on right collarbone â€” minimalist logo in gray-black, required for Tier 2 employee status",
+                                                              "Faint burn mark on left forearm (5 cm diameter, circular), consistent with contact burn from equipment or accident, approximately 2-3 years old"
+                                                          ],
+                                 "visible_augmentations":  "Iridescent iris modification is the only visible augmentation â€” appears as intricate geometric blue-green patterning across the iris, subtle until direct eye contact. Standard-issue Ferrogate comm implant sits behind the left ear as a slight subcutaneous bulge beneath the close-cropped hairline, barely visible.",
+                                 "posture_movement":  "Walks with economy of motion â€” no wasted movement. Posture slightly folded inward, shoulders carrying tension. Hand movements are precise and controlled, trained by three years of platform work. Voice is quiet and modulated, pitched to travel exactly as far as needed. When stationary, they often shift weight between feet or find a wall to lean against â€” never fully at ease standing open in space.",
+                                 "clothing_style":  "Ferrogate Transit Authority regulation uniform when on shift: charcoal gray synthetic-blend shirt with reflective piping and badge, regulation trousers, non-slip platform shoes. Off-shift: muted palette â€” dark thermal layers, unmarked synth-weave jacket in charcoal or navy, worn cargo pants with reinforced pockets. All clothing is functional and well-maintained but carries no brand markers or tier signaling. One personal item: worn leather wrist unit band holding a personal tactical gaming device."
+                             },
+    "image_prompt":  "Casimira Phommasack-Johansson, GLMZ, lean 168cm figure with deep warm bronze skin with golden-mahogany undertones reflecting Southeast Asian, East Asian, and Sub-Saharan African heritage. Close-cropped dark brown hair with transit-orange dye on crown, swept back. Deep blue-green iridescent geometric-patterned eyes (cosmetic modification). Defined cheekbones, neutral professional expression, fine concentration lines around eyes. Wearing charcoal Ferrogate Transit Authority regulation uniform with reflective piping and badge. Slight subdermal bulge behind left ear (comm implant). Pale 3cm linear scar on left inner wrist, gray-black collarbone tattoo, circular burn mark on left forearm. Posture slightly folded inward with tension in shoulders. Standing in utilitarian transit station environment with cool metal and LED lighting, modest personal tactical gaming device on worn leather wrist band. Professional, controlled demeanor, quiet presence. Neo-noir transit worker aesthetic, functional and unmarked clothing, economy of movement. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  30.7,
+                             "East Asian":  26.2,
+                             "Sub-Saharan African":  25.8,
+                             "South Asian":  9.7,
+                             "Middle Eastern":  7.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  22.6
+                                                                },
+                                                    "Filipino":  {
+                                                                     "Tagalog":  8.1
+                                                                 }
+                                                },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  9.7
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  16.5
+                                                            }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Rwandan":  7.6,
+                                                                             "Kenyan":  2.7
+                                                                         },
+                                                        "West African":  {
+                                                                             "Senegalese":  7.4,
+                                                                             "Guinean":  8.1
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  5
+                                                                },
+                                                "Nepali":  {
+                                                               "Nepali":  3.2
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  1.3,
+                                                                   "Sinhalese":  0.2
+                                                               }
+                                            },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  7.6
+                                                               }
+                                               }
+                        },
+    "tier":  "3"
 }

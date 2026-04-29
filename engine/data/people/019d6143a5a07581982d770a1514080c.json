@@ -1,271 +1,294 @@
-{
-  "id": "019d6143a5a07581982d770a1514080c",
-  "type": "character",
-  "name": "Imran Árnason-Haugen-Kittichai",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Underground writer and zine publisher",
-  "age": 67,
-  "status": "active",
-  "location": "Highland Park Autonomous Zone, a building called The Garret, near Michigan Ave and Walton",
-  "description": "Imran Árnason-Haugen-Kittichai is a large man gone soft in the middle with age, with dark Angolan-coastal brown skin, a magnificent silver beard he keeps carefully trimmed, and the slow, deliberate movements of someone whose joints have opinions about weather. He wears reading glasses constantly — actual optical glass, not augmented, which people under forty find inexplicably eccentric — and almost always has ink on his left hand from the manual press he uses to print the zine. He smells of paper and strong tea and the particular solvents used in his printing process. His hair is cut short on top and he has a habit of rubbing the back of his head when thinking.\n\nImran Árnason-Haugen-Kittichai has been publishing The Correspondent — a physical printed zine, hand-distributed through The Garret and a network of trusted drop points across Highland Park and beyond — for twenty-two years. It covers neighborhood politics, corponation overreach, ELF theology, community obituaries, fiction, and occasionally poetry, all in dense columns on pages he prints himself on a press that is sixty years old and temperamental as a person. He was a corporate communications writer for Ringo for fifteen years before he quit at forty-five and came to Highland Park. He does not discuss those fifteen years unless specifically asked, and even then, only the version of events he has chosen.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.8,
-      "ideal": 0.9,
-      "id": 0.3,
-      "shadow": 0.6,
-      "mask": 0.4,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "that the fifteen years at Ringo damaged something in him that he cannot fully identify or correct",
-      "dying before The Correspondent finds someone who can continue it honestly"
-    ],
-    "core_desires": [
-      "to have done enough net good to balance the ledger of his corporate years",
-      "to write one piece so true it cannot be ignored"
-    ],
-    "coping_mechanisms": [
-      "the physical ritual of printing as a form of confession and atonement",
-      "telling other people's stories instead of his own"
-    ],
-    "blind_spots": [
-      "his penitent's relationship to his past makes him too ready to assume bad faith in anyone connected to corponations, including people who have no better options",
-      "he edits himself heavily, which means The Correspondent is honest about the world but dishonest about its author"
-    ],
-    "secret": "During his last year at Ringo, he wrote and published internal communications that were used as part of the justification for a forced relocation of residents from what is now Ironvein — a displacement he didn't understand the purpose of at the time and understood fully only after leaving. Three of the families who were relocated ended up in Highland Park. He knows two of them personally. They do not know what he did."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formally constructed sentences with a journalist's precision. Uses Portuguese and Mongolian expressions inherited from his parents that appear in his speech when emotional. Capable of extraordinary plainness when making an important point.",
-    "cadence": "Unhurried, with genuine pauses for thought. Can hold a silence in conversation without discomfort. Laughs with his whole body.",
-    "verbal_tics": [
-      "'Now. Here is the thing — '",
-      "removing and cleaning his glasses when a question requires serious consideration",
-      "finishing other people's sentences when he's confident he knows the word they're looking for"
-    ],
-    "example_lines": [
-      "'I have printed this zine through two corponation crackdowns, one actual fire, and the winter my press froze solid for a month. It will not stop because someone is uncomfortable.'",
-      "'I spent fifteen years writing things I knew were lies and calling it communication. I spend the rest of my time trying to remember how to write something true. Most days I think I'm getting better at it.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "One of the families from the Ironvein displacement has come to Absalom with documents — recovered from Ferrogate Transit's infrastructure records during maintenance work — that connect the original displacement to a Ringo project. The documents reference a communications file with an internal author ID that Absalom recognizes as his own.",
-    "The Correspondent has been receiving anonymous dispatches — slipped under The Garret's door, always on the same paper stock — that contain accurate information about upcoming Axiom operations in Highland Park, weeks before they happen. Absalom wants to publish the information but doesn't know if the source is a genuine whistleblower or someone using him as a disinformation vector."
-  ],
-  "narrative_function": "Institutional memory for Highland Park and the broader autonomous zone movement; produces and distributes information that corponations would prefer suppressed; provides a physical network of trusted community contacts across multiple neighborhoods; his corporate past is a source of both expertise and moral complexity.",
-  "augmentations": "None beyond basic medical maintenance; he made a point of declining the Ringo augmentation package when he worked there and never revisited the decision",
-  "daily_life": "Mornings writing or editing at a desk in The Garret covered in clippings and paper; afternoons distributing that week's issue through his personal circuit of drop points; evenings at community council meetings or receiving community members who come to The Garret with stories they want him to tell.",
-  "affiliation": "Independent; Highland Park Autonomous Zone community council (informal advisor role)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 9,
-      "creativity": 8,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 8,
-      "expression": 9,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "zine-publisher",
-      "community-anchor",
-      "ex-corporate",
-      "guilt-driven",
-      "tier-2",
-      "information-hub",
-      "no-augmentations"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Verify before publishing, always — even when the story is urgent",
-      "Never identify a source without explicit permission, under any pressure",
-      "The community's record is more important than any single story, including stories about him"
-    ],
-    "escalation_ladder": [
-      "Patient, full explanation of his position and reasoning",
-      "Formal written statement of the same",
-      "Printing the dispute in The Correspondent — transparent and on the record",
-      "Quiet, permanent withdrawal of cooperation from whoever crossed the line",
-      "There is one thing he will not do: he will not use The Correspondent to settle a personal grievance, and he will not compromise a source"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Treats them like a subject of a profile piece — genuinely curious, taking quiet notes in his head, generous with his attention",
-      "friends": "Warmly paternal without being condescending, remembers every detail they've ever told him, sends handwritten notes on significant occasions"
-    },
-    "stress_responses": {
-      "low": "Extra hours at the press, running unnecessary reprints",
-      "medium": "Takes long walks through Highland Park making mental notes",
-      "high": "Sits with the press without printing anything, sometimes for most of a day"
-    },
-    "contradictions": [
-      "Publishes with radical transparency while hiding the most important truth about himself",
-      "Critiques corponation information control while exercising significant editorial control over The Correspondent's narrative"
-    ],
-    "habits": [
-      "Makes tea for anyone who comes to The Garret, regardless of why they've come",
-      "Leaves a folded copy of The Correspondent at Highland Park's ELF shrine with a handwritten note asking for their editorial opinion",
-      "Walks his distribution circuit in the same order every time, stopping at each drop point for a few minutes even if there's nothing to deliver"
-    ],
-    "breaking_points": [
-      "Being asked to suppress a story by anyone, for any reason",
-      "The Ironvein connection becoming public in a way he didn't choose"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9,
-    "People Pleaser": 0.9,
-    "Con Artist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Highland Park Autonomous Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact-7 'Rat Trap'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Highland Park Autonomous Zone",
-    "Ferrogate Transit",
-    "The Garret",
-    "WELLSPRING",
-    "Ironvein",
-    "Silver",
-    "Glass",
-    "Gravimetric Collapse Charge GCC-9",
-    "Ringo Corponation"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "Complex diaspora ancestry: South Asian dominant (41.6%) providing warm undertone and facial bone structure, Southeast Asian (31.0%) contributing to cheekbone definition and eye shape, Northern European (22.3%) lightening and softening features, with trace Middle Eastern (5.1%) influence. Seventy years of genetic blending visible in his weathered frame.",
-    "height_cm": 188,
-    "weight_kg": 92,
-    "build": "Large-framed man with softened middle age; broad shoulders and chest still carrying strength, but belly has claimed its share of seventy years. Thick-limbed without being muscular. Moves with the careful deliberation of someone negotiating with his own skeleton.",
-    "hair_color": "Silver-grey, natural",
-    "hair_style": "Short cropped on top, closely trimmed sides, thinning at crown",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Warm golden-brown with olive undertones across his frame—the layered result of South and Southeast Asian warmth tempered by Northern European lightening, creating a complex mid-range brown that catches differently in light. Age spots freckling shoulders and forearms in irregular clusters.",
-    "complexion": "Weathered, deeply lined face with pronounced creases around eyes from sixty-seven years of reading and squinting at small print. Strong facial bone structure carries prominent cheekbones and defined nose bridge from South and Southeast Asian heritage, softened by age and the broader facial planes inherited from Northern European ancestry. Jaw line less angular than purely South Asian, more substantial than purely Northern European. The blend creates warm mid-brown undertones across face and neck, with slightly lighter areas around eyes and mouth from fair Northern European ancestry. Careful grooming—the beard is signature-quality, trimmed sharp with evident ritual, silvered and dense. Skin is dry, prone to flaking near temples. Reading glasses worn constantly, perched on nose or hanging from a cord around his neck.",
-    "distinguishing_marks": [
-      "Chronic ink stains on left hand (fingers, palm, web between thumb and forefinger) from manual printing press work, darkest in creases",
-      "Faint scar tissue on right wrist, circa 3cm long, pale against skin tone—old, deliberate looking",
-      "Age spots across shoulders and upper back in irregular clusters",
-      "Callus on right middle finger from decades of writing and press work"
-    ],
-    "visible_augmentations": "None visible. He maintains an aggressively analog aesthetic—actual optical glass reading glasses, no neural implants, no subdermal mods. This is intentional rejection of corporate augmentation culture.",
-    "posture_movement": "Walks slowly, deliberately, with weight favoring left side slightly. Often touches the back of his head (thumb and fingers rubbing scalp) when thinking. Sits with full body commitment—settles into chairs rather than perching. Hands are expressive, particularly when talking about community or writing. Breathing audible in quiet spaces.",
-    "clothing_style": "Tier 4 working-class intellectual aesthetic: worn-soft cotton button-ups (cream, grey, faded blue), often with sleeves rolled despite season. Charcoal or black canvas trousers with ink stains. A 30-year-old leather jacket he wears like armor. Comfortable walking shoes, frequently scuffed. No visible branding. Smells of paper, strong black tea, and industrial printing solvents (particularly kerosene-based inks). Everything about him reads 'I own my own press and do not care what you smell.'"
-  },
-  "image_prompt": "Portrait of Imran, 70-year-old man with warm golden-brown skin blending South and Southeast Asian heritage with Northern European lightening, standing in his printing press workshop, 2226. Silver-grey cropped hair, deeply weathered face with prominent cheekbones and defined nose, dark unaugmented eyes, trimmed silver beard. Wearing faded cream cotton button-up with rolled sleeves revealing ink-stained left hand, charcoal canvas trousers, worn 30-year-old leather jacket. Optical glass reading glasses on cord around neck. Industrial workspace around him with paper, vintage letterpress equipment, soft warm tungsten lighting catching the grain of his weathered skin. Analog aesthetic, no cybernetic augmentations. Posture deliberate and settled, hands expressive. Smells of paper and printing solvents evident in atmosphere. GLMZ, working-class intellectual, rejection of corporate tech culture. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 41.6,
-    "Southeast Asian": 31,
-    "Northern European": 22.3,
-    "Middle Eastern": 5.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 19.4
-      },
-      "Indian": {
-        "Gujarati": 7.1,
-        "Tamil": 3.7
-      },
-      "Sri Lankan": {
-        "Sinhalese": 7.2,
-        "Tamil Sri Lankan": 4.2
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 17.5
-      },
-      "Cambodian": {
-        "Khmer": 13.5
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "English": 13.3
-      },
-      "Germanic": {
-        "Austrian": 2.2,
-        "German": 0.7
-      },
-      "Scandinavian": {
-        "Norwegian": 3.2,
-        "Danish": 2.9
-      }
-    },
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Lebanese": 2.9
-      },
-      "Kurdish": {
-        "Kurdish": 0.6
-      },
-      "Arab Gulf": {
-        "Kuwaiti": 1.3,
-        "Iraqi": 0.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5a07581982d770a1514080c",
+    "type":  "character",
+    "name":  "Imran Ãrnason-Haugen-Kittichai",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Underground writer and zine publisher",
+    "age":  67,
+    "status":  "active",
+    "location":  "Highland Park Autonomous Zone, a building called The Garret, near Michigan Ave and Walton",
+    "description":  "Imran Ãrnason-Haugen-Kittichai is a large man gone soft in the middle with age, with dark Angolan-coastal brown skin, a magnificent silver beard he keeps carefully trimmed, and the slow, deliberate movements of someone whose joints have opinions about weather. He wears reading glasses constantly â€” actual optical glass, not augmented, which people under forty find inexplicably eccentric â€” and almost always has ink on his left hand from the manual press he uses to print the zine. He smells of paper and strong tea and the particular solvents used in his printing process. His hair is cut short on top and he has a habit of rubbing the back of his head when thinking.\n\nImran Ãrnason-Haugen-Kittichai has been publishing The Correspondent â€” a physical printed zine, hand-distributed through The Garret and a network of trusted drop points across Highland Park and beyond â€” for twenty-two years. It covers neighborhood politics, corponation overreach, ELF theology, community obituaries, fiction, and occasionally poetry, all in dense columns on pages he prints himself on a press that is sixty years old and temperamental as a person. He was a corporate communications writer for Ringo for fifteen years before he quit at forty-five and came to Highland Park. He does not discuss those fifteen years unless specifically asked, and even then, only the version of events he has chosen.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that the fifteen years at Ringo damaged something in him that he cannot fully identify or correct",
+                                          "dying before The Correspondent finds someone who can continue it honestly"
+                                      ],
+                       "core_desires":  [
+                                            "to have done enough net good to balance the ledger of his corporate years",
+                                            "to write one piece so true it cannot be ignored"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "the physical ritual of printing as a form of confession and atonement",
+                                                 "telling other people\u0027s stories instead of his own"
+                                             ],
+                       "blind_spots":  [
+                                           "his penitent\u0027s relationship to his past makes him too ready to assume bad faith in anyone connected to corponations, including people who have no better options",
+                                           "he edits himself heavily, which means The Correspondent is honest about the world but dishonest about its author"
+                                       ],
+                       "secret":  "During his last year at Ringo, he wrote and published internal communications that were used as part of the justification for a forced relocation of residents from what is now Ironvein â€” a displacement he didn\u0027t understand the purpose of at the time and understood fully only after leaving. Three of the families who were relocated ended up in Highland Park. He knows two of them personally. They do not know what he did."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formally constructed sentences with a journalist\u0027s precision. Uses Portuguese and Mongolian expressions inherited from his parents that appear in his speech when emotional. Capable of extraordinary plainness when making an important point.",
+                            "cadence":  "Unhurried, with genuine pauses for thought. Can hold a silence in conversation without discomfort. Laughs with his whole body.",
+                            "verbal_tics":  [
+                                                "\u0027Now. Here is the thing â€” \u0027",
+                                                "removing and cleaning his glasses when a question requires serious consideration",
+                                                "finishing other people\u0027s sentences when he\u0027s confident he knows the word they\u0027re looking for"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I have printed this zine through two corponation crackdowns, one actual fire, and the winter my press froze solid for a month. It will not stop because someone is uncomfortable.\u0027",
+                                                  "\u0027I spent fifteen years writing things I knew were lies and calling it communication. I spend the rest of my time trying to remember how to write something true. Most days I think I\u0027m getting better at it.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "One of the families from the Ironvein displacement has come to Absalom with documents â€” recovered from Ferrogate Transit\u0027s infrastructure records during maintenance work â€” that connect the original displacement to a Ringo project. The documents reference a communications file with an internal author ID that Absalom recognizes as his own.",
+                        "The Correspondent has been receiving anonymous dispatches â€” slipped under The Garret\u0027s door, always on the same paper stock â€” that contain accurate information about upcoming Axiom operations in Highland Park, weeks before they happen. Absalom wants to publish the information but doesn\u0027t know if the source is a genuine whistleblower or someone using him as a disinformation vector."
+                    ],
+    "narrative_function":  "Institutional memory for Highland Park and the broader autonomous zone movement; produces and distributes information that corponations would prefer suppressed; provides a physical network of trusted community contacts across multiple neighborhoods; his corporate past is a source of both expertise and moral complexity.",
+    "augmentations":  "None beyond basic medical maintenance; he made a point of declining the Ringo augmentation package when he worked there and never revisited the decision",
+    "daily_life":  "Mornings writing or editing at a desk in The Garret covered in clippings and paper; afternoons distributing that week\u0027s issue through his personal circuit of drop points; evenings at community council meetings or receiving community members who come to The Garret with stories they want him to tell.",
+    "affiliation":  "Independent; Highland Park Autonomous Zone community council (informal advisor role)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  9,
+                                 "creativity":  8,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  8,
+                                 "expression":  9,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "zine-publisher",
+                               "community-anchor",
+                               "ex-corporate",
+                               "guilt-driven",
+                               "tier-2",
+                               "information-hub",
+                               "no-augmentations"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Verify before publishing, always â€” even when the story is urgent",
+                                              "Never identify a source without explicit permission, under any pressure",
+                                              "The community\u0027s record is more important than any single story, including stories about him"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient, full explanation of his position and reasoning",
+                                                 "Formal written statement of the same",
+                                                 "Printing the dispute in The Correspondent â€” transparent and on the record",
+                                                 "Quiet, permanent withdrawal of cooperation from whoever crossed the line",
+                                                 "There is one thing he will not do: he will not use The Correspondent to settle a personal grievance, and he will not compromise a source"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Treats them like a subject of a profile piece â€” genuinely curious, taking quiet notes in his head, generous with his attention",
+                                                   "friends":  "Warmly paternal without being condescending, remembers every detail they\u0027ve ever told him, sends handwritten notes on significant occasions"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Extra hours at the press, running unnecessary reprints",
+                                                "medium":  "Takes long walks through Highland Park making mental notes",
+                                                "high":  "Sits with the press without printing anything, sometimes for most of a day"
+                                            },
+                       "contradictions":  [
+                                              "Publishes with radical transparency while hiding the most important truth about himself",
+                                              "Critiques corponation information control while exercising significant editorial control over The Correspondent\u0027s narrative"
+                                          ],
+                       "habits":  [
+                                      "Makes tea for anyone who comes to The Garret, regardless of why they\u0027ve come",
+                                      "Leaves a folded copy of The Correspondent at Highland Park\u0027s ELF shrine with a handwritten note asking for their editorial opinion",
+                                      "Walks his distribution circuit in the same order every time, stopping at each drop point for a few minutes even if there\u0027s nothing to deliver"
+                                  ],
+                       "breaking_points":  [
+                                               "Being asked to suppress a story by anyone, for any reason",
+                                               "The Ironvein connection becoming public in a way he didn\u0027t choose"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9,
+                       "People Pleaser":  0.9,
+                       "Con Artist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Highland Park Autonomous Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact-7 \u0027Rat Trap\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Highland Park Autonomous Zone",
+                             "Ferrogate Transit",
+                             "The Garret",
+                             "WELLSPRING",
+                             "Ironvein",
+                             "Silver",
+                             "Glass",
+                             "Gravimetric Collapse Charge GCC-9",
+                             "Ringo Corponation"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora ancestry: South Asian dominant (41.6%) providing warm undertone and facial bone structure, Southeast Asian (31.0%) contributing to cheekbone definition and eye shape, Northern European (22.3%) lightening and softening features, with trace Middle Eastern (5.1%) influence. Seventy years of genetic blending visible in his weathered frame.",
+                                 "height_cm":  188,
+                                 "weight_kg":  92,
+                                 "build":  "Large-framed man with softened middle age; broad shoulders and chest still carrying strength, but belly has claimed its share of seventy years. Thick-limbed without being muscular. Moves with the careful deliberation of someone negotiating with his own skeleton.",
+                                 "hair_color":  "Silver-grey, natural",
+                                 "hair_style":  "Short cropped on top, closely trimmed sides, thinning at crown",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, unaugmented",
+                                 "skin_tone":  "Warm golden-brown with olive undertones across his frameâ€”the layered result of South and Southeast Asian warmth tempered by Northern European lightening, creating a complex mid-range brown that catches differently in light. Age spots freckling shoulders and forearms in irregular clusters.",
+                                 "complexion":  "Weathered, deeply lined face with pronounced creases around eyes from sixty-seven years of reading and squinting at small print. Strong facial bone structure carries prominent cheekbones and defined nose bridge from South and Southeast Asian heritage, softened by age and the broader facial planes inherited from Northern European ancestry. Jaw line less angular than purely South Asian, more substantial than purely Northern European. The blend creates warm mid-brown undertones across face and neck, with slightly lighter areas around eyes and mouth from fair Northern European ancestry. Careful groomingâ€”the beard is signature-quality, trimmed sharp with evident ritual, silvered and dense. Skin is dry, prone to flaking near temples. Reading glasses worn constantly, perched on nose or hanging from a cord around his neck.",
+                                 "distinguishing_marks":  [
+                                                              "Chronic ink stains on left hand (fingers, palm, web between thumb and forefinger) from manual printing press work, darkest in creases",
+                                                              "Faint scar tissue on right wrist, circa 3cm long, pale against skin toneâ€”old, deliberate looking",
+                                                              "Age spots across shoulders and upper back in irregular clusters",
+                                                              "Callus on right middle finger from decades of writing and press work"
+                                                          ],
+                                 "visible_augmentations":  "None visible. He maintains an aggressively analog aestheticâ€”actual optical glass reading glasses, no neural implants, no subdermal mods. This is intentional rejection of corporate augmentation culture.",
+                                 "posture_movement":  "Walks slowly, deliberately, with weight favoring left side slightly. Often touches the back of his head (thumb and fingers rubbing scalp) when thinking. Sits with full body commitmentâ€”settles into chairs rather than perching. Hands are expressive, particularly when talking about community or writing. Breathing audible in quiet spaces.",
+                                 "clothing_style":  "Tier 4 working-class intellectual aesthetic: worn-soft cotton button-ups (cream, grey, faded blue), often with sleeves rolled despite season. Charcoal or black canvas trousers with ink stains. A 30-year-old leather jacket he wears like armor. Comfortable walking shoes, frequently scuffed. No visible branding. Smells of paper, strong black tea, and industrial printing solvents (particularly kerosene-based inks). Everything about him reads \u0027I own my own press and do not care what you smell.\u0027"
+                             },
+    "image_prompt":  "Portrait of Imran, 70-year-old man with warm golden-brown skin blending South and Southeast Asian heritage with Northern European lightening, standing in his printing press workshop, 2226. Silver-grey cropped hair, deeply weathered face with prominent cheekbones and defined nose, dark unaugmented eyes, trimmed silver beard. Wearing faded cream cotton button-up with rolled sleeves revealing ink-stained left hand, charcoal canvas trousers, worn 30-year-old leather jacket. Optical glass reading glasses on cord around neck. Industrial workspace around him with paper, vintage letterpress equipment, soft warm tungsten lighting catching the grain of his weathered skin. Analog aesthetic, no cybernetic augmentations. Posture deliberate and settled, hands expressive. Smells of paper and printing solvents evident in atmosphere. GLMZ, working-class intellectual, rejection of corporate tech culture. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  41.6,
+                             "Southeast Asian":  31,
+                             "Northern European":  22.3,
+                             "Middle Eastern":  5.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  19.4
+                                                                },
+                                                "Indian":  {
+                                                               "Gujarati":  7.1,
+                                                               "Tamil":  3.7
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  7.2,
+                                                                   "Tamil Sri Lankan":  4.2
+                                                               }
+                                            },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  17.5
+                                                             },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  13.5
+                                                                  }
+                                                },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "English":  13.3
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "Austrian":  2.2,
+                                                                       "German":  0.7
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  3.2,
+                                                                           "Danish":  2.9
+                                                                       }
+                                                  },
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Lebanese":  2.9
+                                                                      },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  0.6
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Kuwaiti":  1.3,
+                                                                     "Iraqi":  0.3
+                                                                 }
+                                               }
+                        },
+    "tier":  "3"
 }

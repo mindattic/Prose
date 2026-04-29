@@ -1,341 +1,372 @@
-{
-  "id": "019d6143a6c87a8fa0d746dbfca72ff0",
-  "type": "character",
-  "name": "Fikret Mukherjee",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Retired Axiom archive keeper, community storyteller and unofficial neighborhood historian",
-  "age": 71,
-  "status": "active",
-  "location": "Montclare Quiet, the Sable House Community Center — she has effectively colonized the back room, near Damen and Armitage",
-  "description": "Fikret Mukherjee is small and precise, the kind of woman who takes up exactly as much space as she intends to and no more. She has rich brown skin and natural white hair she wears in an elaborate braided crown she redoes every Sunday, a weekly ritual she treats with the gravity of liturgy. Her irises were replaced with cosmetic patterned geneware decades ago — deep violet with a star-cluster pattern that was fashionable in the 2150s and is now charming in its datedness. She dresses in layered earth tones with one aggressively bright accessory — today a saffron scarf, tomorrow a red belt — and always, always a pair of reading glasses she doesn't need but finds psychologically essential.\n\nFor thirty-one years Fikret Mukherjee maintained the classified internal archive for Axiom's urban development division, which means she personally catalogued the documentation of three neighborhood demolitions, two relocation programs, and one flood-management rerouting that she believes was deliberately aimed at Chatham Flats to drive out residents. She retired with a modest pension and a colossal private collection of copied files she was absolutely not supposed to take. She now runs a weekly 'Story Hour' at the community center that is ostensibly for children but draws a standing-room crowd of all ages — because Fikret Mukherjee's stories are true, thinly veiled, and devastatingly specific.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.9,
-      "id": 0.4,
-      "shadow": 0.6,
-      "mask": 0.3,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "that the records she preserved will never matter",
-      "that she compromised too much for too long before leaving"
-    ],
-    "core_desires": [
-      "for one piece of her archive to result in actual accountability",
-      "to be known honestly rather than just liked"
-    ],
-    "coping_mechanisms": [
-      "meticulous organization as control",
-      "teaching and storytelling as indirect confession",
-      "dark humor about corporate malfeasance"
-    ],
-    "blind_spots": [
-      "genuinely believes her Story Hour is subtle enough that Axiom hasn't noticed",
-      "underestimates how much people emotionally depend on her — she thinks of herself as a resource, not a person"
-    ],
-    "secret": "She has a complete, sourced record of the Chatham Flats flood-route manipulation, including a senior Axiom director's name on the sign-off. She has held it for eleven years and has never shared it because the director's daughter is now a resident of Montclare Quiet who brings Serafina pastries every week and has no idea."
-  },
-  "speech_patterns": {
-    "vocabulary": "Archival and precise — she dates things, cites sources, uses formal register; switches to warm and wry when relaxed",
-    "cadence": "Measured and deliberate, with theatrical pauses for emphasis; speeds up when she is excited about an interesting fact",
-    "verbal_tics": [
-      "'According to the record—'",
-      "Adjusting her unnecessary glasses when buying time",
-      "'Now, this is the part people always get wrong'"
-    ],
-    "example_lines": [
-      "'According to the record — and I do mean a specific record, with a timestamp — that building was declared structurally sound six weeks before it was demolished for the transit expansion. Draw your own conclusions.'",
-      "'I tell stories because people remember stories. Nobody remembers a memo. I used to file memos for a living. I know.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Someone is asking Serafina for information about a property — but their questions are too specific, and she suspects they may be working for Axiom's legal recovery team trying to locate her private archive",
-    "The daughter of the Chatham Flats director has discovered something in an old family document and has come to Serafina for context — Serafina must decide in real time whether to tell the truth"
-  ],
-  "narrative_function": "Information broker (unofficial); source of Axiom corporate history and urban development cover-ups; can provide documentary evidence of past injustices; storyteller whose narratives encode real intelligence; may be in danger for what she knows",
-  "augmentations": "Cosmetic patterned irises (violet star-cluster, early 2150s model — considered retro); subdermal data-storage array in left forearm, civilian grade, holds approximately 40TB — she uses it as a personal archive",
-  "daily_life": "Arrives at the community center by 0800, catalogs and cross-references her personal archive for two hours, then receives a steady trickle of visitors seeking information about old neighborhood history, property records, or 'what really happened.' Prepares Story Hour every Thursday. Eats lunch alone and guards this time ferociously.",
-  "affiliation": "Sable House Community Center (volunteer); formerly Axiom Urban Development Archive Division",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "archivist",
-      "reluctant whistleblower",
-      "keeper of inconvenient truths",
-      "community storyteller",
-      "corporate insider (retired)"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never destroy a record",
-      "Never give information to someone whose purpose you don't understand",
-      "Tell the truth sideways if you can't tell it directly"
-    ],
-    "escalation_ladder": [
-      "Polite deflection and redirection",
-      "Deliberate vagueness and archival jargon until the person gives up",
-      "Ending the conversation with warm finality",
-      "Activating an old Axiom emergency contact she has never used — a nuclear option she fears"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally warm, assessingly curious — asks many questions before answering any",
-      "friends": "Dry, affectionate, surprisingly funny; shares actual opinions rather than diplomatic ones"
-    },
-    "stress_responses": {
-      "low": "Reorganizes something unnecessarily",
-      "medium": "Becomes hyperbolically calm — the quieter she gets, the more alarmed people around her become",
-      "high": "Goes into full archival mode: documentation, timestamps, witnesses — she starts building a record of whatever is happening as it happens"
-    },
-    "contradictions": [
-      "Devoted to transparency but keeps her most important secret from someone it would directly help",
-      "Believes information should be free but guards her archive like a dragon"
-    ],
-    "habits": [
-      "Re-braids a loose section of hair when thinking",
-      "Offers tea before answering difficult questions — uses the preparation time to decide what to say",
-      "Labels everything, including her personal belongings, with small adhesive tags"
-    ],
-    "breaking_points": [
-      "Watching a record being destroyed",
-      "Someone lying to her face about documented history she personally archived"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Cosmetic patterned iris implants — violet, star-cluster pattern (2150s model, no functional enhancement)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Cosmetic patterned iris implants — violet, star-cluster pattern (2150s model, no functional enhancement)",
-      "replaces": ""
-    },
-    {
-      "name": "Subdermal civilian data-storage array, left forearm, ~40TB capacity",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal civilian data-storage array, left forearm, ~40TB capacity",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Montclare Quiet",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2129 — Born in Montclare Quiet to a schoolteacher and a transit scheduler",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2151 — Hired by Axiom Urban Development Archive Division as junior cataloguer",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2163 — Promoted to Senior Archive Keeper; begins systematic personal copying of significant records",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2187 — Chatham Flats flood-route decision signed; she files it and says nothing",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2188 — Retires; takes personal archive; moves back to Montclare Quiet",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2192 — Begins Story Hour at Sable House Community Center",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Present day",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-40 'Magistrate'",
-    "Kang-Petrov Arms KP-10C 'Bullpup'"
-  ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VS-40 'Magistrate'",
-    "Kang-Petrov Arms KP-10C 'Bullpup'"
-  ],
-  "related_entities": [
-    "Montclare Quiet",
-    "Chatham Flats",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Stratum",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Celeste Abram"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "South Asian dominant (67.6%) with significant Hispanic/Latin American (11.2%), Middle Eastern (10.5%), Sub-Saharan African (7.6%), and Pacific Islander (3.1%) admixture. This creates warm medium-brown skin with golden undertones and subtle complexity—deeper amber warmth at cheekbones and jawline reflecting the layered ancestry blend, with faint luminescence from subdermal implants catching light.",
-    "height_cm": 152,
-    "weight_kg": 52,
-    "build": "Slight and compact, almost birdlike in its economy of movement. No excess—bone structure shows clearly at wrists and collarbone. Decades of sitting in archive work have left her spine subtly curved, though she corrects it with visible effort when standing.",
-    "hair_color": "Natural white",
-    "hair_style": "Elaborate crown braid—five interwoven strands, redone every Sunday, currently studded with small copper wire accents she adds herself. The precision is almost architectural.",
-    "hair_length": "Long (mid-back when fully braided)",
-    "eye_color": "Violet with star-cluster pattern (cosmetic patterned geneware, circa 2150s)",
-    "skin_tone": "Warm medium brown with golden undertones deepening to rich amber at cheekbones and jawline. The blend reflects her South Asian, Hispanic/Latin American, Middle Eastern, Sub-Saharan African, and Pacific Islander ancestry with luminescent quality where subdermal implants sit close to surface.",
-    "complexion": "Clean, lined face that reads as carefully maintained rather than youthful. High, defined cheekbones with refined structure reflecting South Asian and Middle Eastern ancestry. Laugh lines run deep from the corners of her mouth. Skin texture shows three decades of archive lighting exposure—natural golden warmth of blended heritage slightly subdued by artificial light, with faint luminescence marking subdermal implant sites.",
-    "distinguishing_marks": [
-      "Thin white scar along left temple, approximately 3cm, faded but visible—relic of a 2175 archive fire she walked into to retrieve files",
-      "Burn scar across knuckles of right hand, irregular pattern from handling deteriorating paper documents, now faint and silvered with age",
-      "Small circular indentation on left inner forearm where subdermal data-storage array interface sits—slightly discolored, barely visible unless she extends her arm in bright light"
-    ],
-    "visible_augmentations": "Violet star-cluster irises (dated cosmetic geneware, worn with complete unselfconsciousness). Subdermal data-storage array in left forearm with faint luminescent quality under certain angles. Reading glasses suspended on braided copper wire cord, always present.",
-    "posture_movement": "Moves with minimal wasted motion—each gesture precise and economical. Sits with perfect spinal alignment when focusing on archival work. Walks slowly but with absolute certainty, as though she has already mapped the space. Her hands are steady when handling documents. She has the physical grammar of someone accustomed to silence and small spaces.",
-    "clothing_style": "Layered earth tones: rust, ochre, slate, charcoal, cream. Today: a cream linen shirt under a burnt-sienna vest, charcoal wide-leg trousers (Tier 3-4 quality, well-maintained, unfashionable), and a saffron scarf knotted loosely around her neck. One aggressively bright accessory rotates daily—tomorrow a cardinal-red belt, next week perhaps a marigold headwrap. The bright accent seems chosen with intent, like a signal. Comfortable low-heeled boots, worn to softness. Everything speaks of care rather than cost."
-  },
-  "image_prompt": "Fikret Mukherjee, 152cm petite South Asian woman with layered global heritage—warm medium-brown skin with golden amber undertones at cheekbones, refined high cheekbones reflecting South Asian and Middle Eastern ancestry. Natural white hair in elaborate five-strand crown braid studded with copper wire, mid-back length. Striking violet eyes with star-cluster geneware pattern (2150s cosmetic implants). Fine facial lines from decades of archival work, white scar along left temple, silvered burn scars on right hand knuckles. Compact birdlike build, precise economical posture. Wearing cream linen shirt under burnt-sienna vest, charcoal wide-leg trousers, saffron scarf knotted at neck, low-heeled worn boots. Copper-wire reading glasses on cord. Faint subdermal luminescence at left inner forearm. Archive lighting aesthetic, quiet dignity, 2226 near-future megacity setting, soft warm gallery lighting, archival atmosphere --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 67.6,
-    "Hispanic/Latin American": 11.2,
-    "Middle Eastern": 10.5,
-    "Sub-Saharan African": 7.6,
-    "Pacific Islander": 3.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 7.1
-      },
-      "Nepali": {
-        "Nepali": 14.3
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 46.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Salvadoran": 4.9,
-        "Guatemalan": 3.3
-      },
-      "Mexican": {
-        "Mexican": 3
-      }
-    },
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Lebanese": 6.5,
-        "Palestinian": 4
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Ethiopian": 5
-      },
-      "Central African": {
-        "Congolese": 2.5,
-        "Angolan": 0.1
-      }
-    },
-    "Pacific Islander": {
-      "Micronesian": {
-        "Marshallese": 3.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6c87a8fa0d746dbfca72ff0",
+    "type":  "character",
+    "name":  "Fikret Mukherjee",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Retired Axiom archive keeper, community storyteller and unofficial neighborhood historian",
+    "age":  71,
+    "status":  "active",
+    "location":  "Montclare Quiet, the Sable House Community Center â€” she has effectively colonized the back room, near Damen and Armitage",
+    "description":  "Fikret Mukherjee is small and precise, the kind of woman who takes up exactly as much space as she intends to and no more. She has rich brown skin and natural white hair she wears in an elaborate braided crown she redoes every Sunday, a weekly ritual she treats with the gravity of liturgy. Her irises were replaced with cosmetic patterned geneware decades ago â€” deep violet with a star-cluster pattern that was fashionable in the 2150s and is now charming in its datedness. She dresses in layered earth tones with one aggressively bright accessory â€” today a saffron scarf, tomorrow a red belt â€” and always, always a pair of reading glasses she doesn\u0027t need but finds psychologically essential.\n\nFor thirty-one years Fikret Mukherjee maintained the classified internal archive for Axiom\u0027s urban development division, which means she personally catalogued the documentation of three neighborhood demolitions, two relocation programs, and one flood-management rerouting that she believes was deliberately aimed at Chatham Flats to drive out residents. She retired with a modest pension and a colossal private collection of copied files she was absolutely not supposed to take. She now runs a weekly \u0027Story Hour\u0027 at the community center that is ostensibly for children but draws a standing-room crowd of all ages â€” because Fikret Mukherjee\u0027s stories are true, thinly veiled, and devastatingly specific.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that the records she preserved will never matter",
+                                          "that she compromised too much for too long before leaving"
+                                      ],
+                       "core_desires":  [
+                                            "for one piece of her archive to result in actual accountability",
+                                            "to be known honestly rather than just liked"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "meticulous organization as control",
+                                                 "teaching and storytelling as indirect confession",
+                                                 "dark humor about corporate malfeasance"
+                                             ],
+                       "blind_spots":  [
+                                           "genuinely believes her Story Hour is subtle enough that Axiom hasn\u0027t noticed",
+                                           "underestimates how much people emotionally depend on her â€” she thinks of herself as a resource, not a person"
+                                       ],
+                       "secret":  "She has a complete, sourced record of the Chatham Flats flood-route manipulation, including a senior Axiom director\u0027s name on the sign-off. She has held it for eleven years and has never shared it because the director\u0027s daughter is now a resident of Montclare Quiet who brings Serafina pastries every week and has no idea."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Archival and precise â€” she dates things, cites sources, uses formal register; switches to warm and wry when relaxed",
+                            "cadence":  "Measured and deliberate, with theatrical pauses for emphasis; speeds up when she is excited about an interesting fact",
+                            "verbal_tics":  [
+                                                "\u0027According to the recordâ€”\u0027",
+                                                "Adjusting her unnecessary glasses when buying time",
+                                                "\u0027Now, this is the part people always get wrong\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027According to the record â€” and I do mean a specific record, with a timestamp â€” that building was declared structurally sound six weeks before it was demolished for the transit expansion. Draw your own conclusions.\u0027",
+                                                  "\u0027I tell stories because people remember stories. Nobody remembers a memo. I used to file memos for a living. I know.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Someone is asking Serafina for information about a property â€” but their questions are too specific, and she suspects they may be working for Axiom\u0027s legal recovery team trying to locate her private archive",
+                        "The daughter of the Chatham Flats director has discovered something in an old family document and has come to Serafina for context â€” Serafina must decide in real time whether to tell the truth"
+                    ],
+    "narrative_function":  "Information broker (unofficial); source of Axiom corporate history and urban development cover-ups; can provide documentary evidence of past injustices; storyteller whose narratives encode real intelligence; may be in danger for what she knows",
+    "augmentations":  "Cosmetic patterned irises (violet star-cluster, early 2150s model â€” considered retro); subdermal data-storage array in left forearm, civilian grade, holds approximately 40TB â€” she uses it as a personal archive",
+    "daily_life":  "Arrives at the community center by 0800, catalogs and cross-references her personal archive for two hours, then receives a steady trickle of visitors seeking information about old neighborhood history, property records, or \u0027what really happened.\u0027 Prepares Story Hour every Thursday. Eats lunch alone and guards this time ferociously.",
+    "affiliation":  "Sable House Community Center (volunteer); formerly Axiom Urban Development Archive Division",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "archivist",
+                               "reluctant whistleblower",
+                               "keeper of inconvenient truths",
+                               "community storyteller",
+                               "corporate insider (retired)"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never destroy a record",
+                                              "Never give information to someone whose purpose you don\u0027t understand",
+                                              "Tell the truth sideways if you can\u0027t tell it directly"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite deflection and redirection",
+                                                 "Deliberate vagueness and archival jargon until the person gives up",
+                                                 "Ending the conversation with warm finality",
+                                                 "Activating an old Axiom emergency contact she has never used â€” a nuclear option she fears"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally warm, assessingly curious â€” asks many questions before answering any",
+                                                   "friends":  "Dry, affectionate, surprisingly funny; shares actual opinions rather than diplomatic ones"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Reorganizes something unnecessarily",
+                                                "medium":  "Becomes hyperbolically calm â€” the quieter she gets, the more alarmed people around her become",
+                                                "high":  "Goes into full archival mode: documentation, timestamps, witnesses â€” she starts building a record of whatever is happening as it happens"
+                                            },
+                       "contradictions":  [
+                                              "Devoted to transparency but keeps her most important secret from someone it would directly help",
+                                              "Believes information should be free but guards her archive like a dragon"
+                                          ],
+                       "habits":  [
+                                      "Re-braids a loose section of hair when thinking",
+                                      "Offers tea before answering difficult questions â€” uses the preparation time to decide what to say",
+                                      "Labels everything, including her personal belongings, with small adhesive tags"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching a record being destroyed",
+                                               "Someone lying to her face about documented history she personally archived"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Cosmetic patterned iris implants â€” violet, star-cluster pattern (2150s model, no functional enhancement)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Cosmetic patterned iris implants â€” violet, star-cluster pattern (2150s model, no functional enhancement)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Subdermal civilian data-storage array, left forearm, ~40TB capacity",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal civilian data-storage array, left forearm, ~40TB capacity",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Montclare Quiet",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2129 â€” Born in Montclare Quiet to a schoolteacher and a transit scheduler",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2151 â€” Hired by Axiom Urban Development Archive Division as junior cataloguer",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2163 â€” Promoted to Senior Archive Keeper; begins systematic personal copying of significant records",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2187 â€” Chatham Flats flood-route decision signed; she files it and says nothing",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2188 â€” Retires; takes personal archive; moves back to Montclare Quiet",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2192 â€” Begins Story Hour at Sable House Community Center",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Present day",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-40 \u0027Magistrate\u0027",
+                            "Kang-Petrov Arms KP-10C \u0027Bullpup\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Volkov-Saito Precision VS-40 \u0027Magistrate\u0027",
+                                "Kang-Petrov Arms KP-10C \u0027Bullpup\u0027"
+                            ],
+    "related_entities":  [
+                             "Montclare Quiet",
+                             "Chatham Flats",
+                             "Street Custom \u0027Four Horsemen\u0027 Pipe Pepperbox",
+                             "Stratum",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Celeste Abram"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "South Asian dominant (67.6%) with significant Hispanic/Latin American (11.2%), Middle Eastern (10.5%), Sub-Saharan African (7.6%), and Pacific Islander (3.1%) admixture. This creates warm medium-brown skin with golden undertones and subtle complexityâ€”deeper amber warmth at cheekbones and jawline reflecting the layered ancestry blend, with faint luminescence from subdermal implants catching light.",
+                                 "height_cm":  152,
+                                 "weight_kg":  52,
+                                 "build":  "Slight and compact, almost birdlike in its economy of movement. No excessâ€”bone structure shows clearly at wrists and collarbone. Decades of sitting in archive work have left her spine subtly curved, though she corrects it with visible effort when standing.",
+                                 "hair_color":  "Natural white",
+                                 "hair_style":  "Elaborate crown braidâ€”five interwoven strands, redone every Sunday, currently studded with small copper wire accents she adds herself. The precision is almost architectural.",
+                                 "hair_length":  "Long (mid-back when fully braided)",
+                                 "eye_color":  "Violet with star-cluster pattern (cosmetic patterned geneware, circa 2150s)",
+                                 "skin_tone":  "Warm medium brown with golden undertones deepening to rich amber at cheekbones and jawline. The blend reflects her South Asian, Hispanic/Latin American, Middle Eastern, Sub-Saharan African, and Pacific Islander ancestry with luminescent quality where subdermal implants sit close to surface.",
+                                 "complexion":  "Clean, lined face that reads as carefully maintained rather than youthful. High, defined cheekbones with refined structure reflecting South Asian and Middle Eastern ancestry. Laugh lines run deep from the corners of her mouth. Skin texture shows three decades of archive lighting exposureâ€”natural golden warmth of blended heritage slightly subdued by artificial light, with faint luminescence marking subdermal implant sites.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar along left temple, approximately 3cm, faded but visibleâ€”relic of a 2175 archive fire she walked into to retrieve files",
+                                                              "Burn scar across knuckles of right hand, irregular pattern from handling deteriorating paper documents, now faint and silvered with age",
+                                                              "Small circular indentation on left inner forearm where subdermal data-storage array interface sitsâ€”slightly discolored, barely visible unless she extends her arm in bright light"
+                                                          ],
+                                 "visible_augmentations":  "Violet star-cluster irises (dated cosmetic geneware, worn with complete unselfconsciousness). Subdermal data-storage array in left forearm with faint luminescent quality under certain angles. Reading glasses suspended on braided copper wire cord, always present.",
+                                 "posture_movement":  "Moves with minimal wasted motionâ€”each gesture precise and economical. Sits with perfect spinal alignment when focusing on archival work. Walks slowly but with absolute certainty, as though she has already mapped the space. Her hands are steady when handling documents. She has the physical grammar of someone accustomed to silence and small spaces.",
+                                 "clothing_style":  "Layered earth tones: rust, ochre, slate, charcoal, cream. Today: a cream linen shirt under a burnt-sienna vest, charcoal wide-leg trousers (Tier 3-4 quality, well-maintained, unfashionable), and a saffron scarf knotted loosely around her neck. One aggressively bright accessory rotates dailyâ€”tomorrow a cardinal-red belt, next week perhaps a marigold headwrap. The bright accent seems chosen with intent, like a signal. Comfortable low-heeled boots, worn to softness. Everything speaks of care rather than cost."
+                             },
+    "image_prompt":  "Fikret Mukherjee, 152cm petite South Asian woman with layered global heritageâ€”warm medium-brown skin with golden amber undertones at cheekbones, refined high cheekbones reflecting South Asian and Middle Eastern ancestry. Natural white hair in elaborate five-strand crown braid studded with copper wire, mid-back length. Striking violet eyes with star-cluster geneware pattern (2150s cosmetic implants). Fine facial lines from decades of archival work, white scar along left temple, silvered burn scars on right hand knuckles. Compact birdlike build, precise economical posture. Wearing cream linen shirt under burnt-sienna vest, charcoal wide-leg trousers, saffron scarf knotted at neck, low-heeled worn boots. Copper-wire reading glasses on cord. Faint subdermal luminescence at left inner forearm. Archive lighting aesthetic, quiet dignity, 2226 near-future megacity setting, soft warm gallery lighting, archival atmosphere --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  67.6,
+                             "Hispanic/Latin American":  11.2,
+                             "Middle Eastern":  10.5,
+                             "Sub-Saharan African":  7.6,
+                             "Pacific Islander":  3.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  7.1
+                                                               },
+                                                "Nepali":  {
+                                                               "Nepali":  14.3
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  46.2
+                                                                }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  4.9,
+                                                                                     "Guatemalan":  3.3
+                                                                                 },
+                                                            "Mexican":  {
+                                                                            "Mexican":  3
+                                                                        }
+                                                        },
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Lebanese":  6.5,
+                                                                          "Palestinian":  4
+                                                                      }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ethiopian":  5
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  2.5,
+                                                                                "Angolan":  0.1
+                                                                            }
+                                                    },
+                            "Pacific Islander":  {
+                                                     "Micronesian":  {
+                                                                         "Marshallese":  3.1
+                                                                     }
+                                                 }
+                        },
+    "tier":  "1"
 }

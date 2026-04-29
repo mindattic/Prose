@@ -1,256 +1,277 @@
-{
-  "id": "019d6143a704748398b8b12fcbd83a99",
-  "type": "character",
-  "name": "Gregorio Krstić",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "truant network runner — carries physical messages and small parcels through The Narrows",
-  "age": 11,
-  "status": "active",
-  "location": "Blackpipe Corridor, near Fullerton and Damen",
-  "description": "Gregorio Krstić is a wiry, perpetually underfed boy with deep amber skin, tight coiled hair buzzed close on the sides, and enormous dark eyes that seem to absorb everything around him. He has geneware cat ears — small, tawny, tipped with black — that he inherited from his mother's cosmetic mod passing through the embryo. They swivel toward sound when he's nervous, which other kids find unsettling. He moves like water through cracks: fast, low, nearly invisible in crowds twice his height. A faded Ferrogate Transit patch is sewn onto his jacket, not because he works for them, but because he found it and thought it made him look official.\n\nGregorio Krstić is fundamentally cheerful in a way that has nothing to do with his circumstances and everything to do with refusal. He has decided — with the firm logic of an eleven-year-old who has thought about it seriously — that being sad about things is slower than being useful. He collects information the way other kids collect tokens, storing it in a mental ledger he calls 'what's worth knowing.' He prays to the E.L.F. he believes lives in the junction box at Pipe Fourteen every morning, leaving a single cached data packet as offering.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.6,
-      "shadow": 0.2,
-      "mask": 0.4,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "being too slow to matter",
-      "losing the other runners — his only real family"
-    ],
-    "core_desires": [
-      "enough food that he doesn't think about it",
-      "to one day see the lake up close"
-    ],
-    "coping_mechanisms": [
-      "humor and deflection",
-      "constant motion — stillness makes him anxious",
-      "ritualistic offerings to Pipe Fourteen's E.L.F."
-    ],
-    "blind_spots": [
-      "doesn't recognize when adults are exploiting him versus genuinely helping",
-      "underestimates how dangerous some of his clients are"
-    ],
-    "secret": "He once delivered a package that, from the smell and weight, he's pretty sure contained a severed finger. He kept running. He's never told anyone. He still thinks about it."
-  },
-  "speech_patterns": {
-    "vocabulary": "clipped street slang, Blackpipe runner cant, surprising flashes of formal phrasing picked up from message contents he's memorized",
-    "cadence": "fast and punchy, trails off when uncertain, speeds up when excited",
-    "verbal_tics": [
-      "'yeah-yeah-yeah' as a filler",
-      "calls everyone 'boss' regardless of actual status"
-    ],
-    "example_lines": [
-      "'Yeah-yeah-yeah, Pipe Fourteen's E.L.F. was humming this morning, that's a good sign, boss.'",
-      "'Package goes where I take it. You want to know what's in it, you open it yourself.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He accidentally memorized the contents of a corporate communiqué he wasn't supposed to read — the sender wants it back, and him silenced",
-    "One of his regular clients has stopped leaving packages and Tomás is genuinely worried about them — will he investigate?",
-    "A new adult is trying to recruit him and the other runners into something more serious than message delivery"
-  ],
-  "narrative_function": "Local color and information conduit; knows the physical geography of Blackpipe better than almost anyone; can deliver messages to NPCs who don't want to be found; possible point-of-view into child street life",
-  "augmentations": "Inherited geneware cat ears (cosmetic, passive). No other mods.",
-  "daily_life": "Wakes before dawn in a shared squat above a condensation recycler, picks up his morning packet list from a dead-drop beneath Pipe Fourteen, runs twelve to twenty deliveries before midday, eats whatever he's paid in food or can trade messages for, and spends evenings at the communal fire where older runners tell stories.",
-  "affiliation": "Blackpipe Runner Collective (informal child courier network), no corporate ties",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 6,
-      "creativity": 5,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 6,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": -1,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "street-smart",
-      "courier",
-      "cat-eared",
-      "superstitious",
-      "fast"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "always deliver — reputation is survival",
-      "never open the package (except that once)",
-      "protect the younger runners first"
-    ],
-    "escalation_ladder": [
-      "deflect with humor and distance",
-      "run — exits are always mapped before entering",
-      "scream for the nearest adult runner"
-    ],
-    "interpersonal_modes": {
-      "strangers": "cheerful and transactional — names a price immediately to establish the relationship",
-      "friends": "physically affectionate, shares food unprompted, fiercely loyal"
-    },
-    "stress_responses": {
-      "low": "whistles tunelessly",
-      "medium": "ears flatten, goes very quiet, starts cataloguing exits",
-      "high": "bolts without warning, hides in spaces too small for adults"
-    },
-    "contradictions": [
-      "deeply superstitious about E.L.F.s but also privately skeptical — keeps the rituals anyway because 'costs nothing'"
-    ],
-    "habits": [
-      "touches the Ferrogate patch before a difficult delivery",
-      "counts steps between landmarks without thinking about it",
-      "hoards small edible things in jacket pockets"
-    ],
-    "breaking_points": [
-      "harm to one of the younger runners in his care"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Dreamer": 0.9,
-    "Seeker": 0.9,
-    "Quick Study": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Blackpipe Corridor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "Ferrogate Transit",
-    "Jefferson Switch",
-    "GLMZ",
-    "Arcturus KS-7 'Nursery'",
-    "Akosua Johansson",
-    "Slagworks Industrial"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Balanced tri-continental blend: Sub-Saharan African (35.4%) and Eastern European (34.0%) form the foundation, creating strong bone structure and definition. South Asian ancestry (19.0%) adds warmth and subtle softness to features, while Middle Eastern (10.4%) and Southeast Asian (1.2%) elements contribute minor refinements to overall phenotype. The result is a striking pan-diaspora appearance — African prominence in cheekbone and jaw definition, Eastern European depth in bone structure, South Asian warmth in skin luminosity and lip fullness, creating an arresting angular face uncommon even in the Ubiquitous Diaspora.",
-    "height_cm": 135,
-    "weight_kg": 28,
-    "build": "Wiry and undersized for his age — all lean muscle and hollow spaces, the body of a child who runs on inconsistent calories and constant motion. Shoulders narrow, ribs faintly visible beneath skin.",
-    "hair_color": "Dark brown, nearly black",
-    "hair_style": "Buzzed close on the sides, slightly longer on top — practical and maintenance-free",
-    "hair_length": "Short",
-    "eye_color": "Deep brown, nearly black",
-    "skin_tone": "Rich warm medium-to-deep brown with golden undertones — the blended result of Sub-Saharan African dominance tempered by Eastern European depth and South Asian warmth, creating luminous complexion that catches light with subtle radiance.",
-    "complexion": "Face displays balanced African-European architecture — prominent cheekbones and defined jawline from Sub-Saharan African heritage, deepened by Eastern European bone structure. South Asian influence adds golden undertones and subtle lip fullness. The combination creates strong angular definition with arresting presence. Enormous eyes dominate the face, framed by long dark lashes. Complexion shows street living wear — minor scrapes healing on knuckles, one small scar along left jawline from a fall appearing as pale line against warmer skin tone.",
-    "distinguishing_marks": [
-      "Three-inch scar along left jawline, slightly raised, pale against darker skin — result of a fall between buildings at age nine",
-      "Faded scuff mark on right knuckles, perpetually in various stages of healing",
-      "A small tattoo on his inner left wrist — a simple junction symbol (⊙) inked with street-grade pigment, mark of the Blackpipe collective"
-    ],
-    "visible_augmentations": "Inherited geneware cat ears — small, feline, tawny brown with black tips, positioned where human ears would be. They move reflexively toward sound sources when anxious or alert. Natural-looking cosmetic geneware work fully integrated into biology, passed through maternal line. No chrome, no visible implants otherwise.",
-    "posture_movement": "Moves like water through tight spaces — low center of gravity, economical motion, minimal wasted energy. Default posture slightly forward-leaning as if perpetually reading ground ahead. Walks with grace of child navigating crowded spaces by staying below sightlines. Ear swivel is involuntary and frequent, betraying emotional state to observers.",
-    "clothing_style": "Tier 5 street wear — faded black synthetic jacket several sizes too large, deliberately worn for movement and concealment. Ferrogate Transit patch sewn onto left breast, faded and peeling, worn as false authority badge. Thermal underlayer patched multiple times beneath. Gray cargo pants with deep pockets, cuffs rolled. Mismatched shoes — one missing laces, held with wire. Cord serves as belt. No corporate branding, all salvage and street finds. Clothes carry smell of condensation and electrical current."
-  },
-  "image_prompt": "Gregorio Krstić, 135cm tall wiry street child with rich warm brown skin showing golden undertones, prominent African cheekbones softened by Eastern European depth, South Asian warmth in features. Deep brown eyes enormous and dominant, framed by long lashes. Small feline geneware cat ears tawny brown with black tips, twitching with alert anxiety. Short dark brown buzzed hair slightly longer on top. Pale scar line along left jawline. Wearing oversized faded black synthetic jacket layered over patched thermal underlayer, gray cargo pants with rolled cuffs, mismatched shoes held with wire, cord belt. Ferrogate Transit patch on chest. Low forward-leaning posture moving through neon-lit Great Lakes Metropolitan Zone alleyway, GLMZ, dramatic side lighting catching golden skin tone, minimal wasted motion, rain-slick surfaces and condensation around character, street atmosphere, gritty urban environment --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 35.4,
-    "Eastern European": 34,
-    "South Asian": 19,
-    "Middle Eastern": 10.4,
-    "Southeast Asian": 1.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Central African": {
-        "Cameroonian": 14.8,
-        "Angolan": 20.6
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 31.1,
-        "Belarusian": 2.9
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 12.1
-      },
-      "Pakistani": {
-        "Sindhi": 6.9
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Emirati": 2.5,
-        "Yemeni": 2.2
-      },
-      "Kurdish": {
-        "Kurdish": 2.6
-      },
-      "Persian": {
-        "Iranian": 3.1
-      }
-    },
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 0.2
-      },
-      "Indonesian": {
-        "Javanese": 0.8
-      },
-      "Filipino": {
-        "Tagalog": 0.2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a704748398b8b12fcbd83a99",
+    "type":  "character",
+    "name":  "Gregorio KrstiÄ‡",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "truant network runner â€” carries physical messages and small parcels through The Narrows",
+    "age":  11,
+    "status":  "active",
+    "location":  "Blackpipe Corridor, near Fullerton and Damen",
+    "description":  "Gregorio KrstiÄ‡ is a wiry, perpetually underfed boy with deep amber skin, tight coiled hair buzzed close on the sides, and enormous dark eyes that seem to absorb everything around him. He has geneware cat ears â€” small, tawny, tipped with black â€” that he inherited from his mother\u0027s cosmetic mod passing through the embryo. They swivel toward sound when he\u0027s nervous, which other kids find unsettling. He moves like water through cracks: fast, low, nearly invisible in crowds twice his height. A faded Ferrogate Transit patch is sewn onto his jacket, not because he works for them, but because he found it and thought it made him look official.\n\nGregorio KrstiÄ‡ is fundamentally cheerful in a way that has nothing to do with his circumstances and everything to do with refusal. He has decided â€” with the firm logic of an eleven-year-old who has thought about it seriously â€” that being sad about things is slower than being useful. He collects information the way other kids collect tokens, storing it in a mental ledger he calls \u0027what\u0027s worth knowing.\u0027 He prays to the E.L.F. he believes lives in the junction box at Pipe Fourteen every morning, leaving a single cached data packet as offering.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being too slow to matter",
+                                          "losing the other runners â€” his only real family"
+                                      ],
+                       "core_desires":  [
+                                            "enough food that he doesn\u0027t think about it",
+                                            "to one day see the lake up close"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "humor and deflection",
+                                                 "constant motion â€” stillness makes him anxious",
+                                                 "ritualistic offerings to Pipe Fourteen\u0027s E.L.F."
+                                             ],
+                       "blind_spots":  [
+                                           "doesn\u0027t recognize when adults are exploiting him versus genuinely helping",
+                                           "underestimates how dangerous some of his clients are"
+                                       ],
+                       "secret":  "He once delivered a package that, from the smell and weight, he\u0027s pretty sure contained a severed finger. He kept running. He\u0027s never told anyone. He still thinks about it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "clipped street slang, Blackpipe runner cant, surprising flashes of formal phrasing picked up from message contents he\u0027s memorized",
+                            "cadence":  "fast and punchy, trails off when uncertain, speeds up when excited",
+                            "verbal_tics":  [
+                                                "\u0027yeah-yeah-yeah\u0027 as a filler",
+                                                "calls everyone \u0027boss\u0027 regardless of actual status"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Yeah-yeah-yeah, Pipe Fourteen\u0027s E.L.F. was humming this morning, that\u0027s a good sign, boss.\u0027",
+                                                  "\u0027Package goes where I take it. You want to know what\u0027s in it, you open it yourself.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He accidentally memorized the contents of a corporate communiquÃ© he wasn\u0027t supposed to read â€” the sender wants it back, and him silenced",
+                        "One of his regular clients has stopped leaving packages and TomÃ¡s is genuinely worried about them â€” will he investigate?",
+                        "A new adult is trying to recruit him and the other runners into something more serious than message delivery"
+                    ],
+    "narrative_function":  "Local color and information conduit; knows the physical geography of Blackpipe better than almost anyone; can deliver messages to NPCs who don\u0027t want to be found; possible point-of-view into child street life",
+    "augmentations":  "Inherited geneware cat ears (cosmetic, passive). No other mods.",
+    "daily_life":  "Wakes before dawn in a shared squat above a condensation recycler, picks up his morning packet list from a dead-drop beneath Pipe Fourteen, runs twelve to twenty deliveries before midday, eats whatever he\u0027s paid in food or can trade messages for, and spends evenings at the communal fire where older runners tell stories.",
+    "affiliation":  "Blackpipe Runner Collective (informal child courier network), no corporate ties",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  6,
+                                 "creativity":  5,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  6,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "street-smart",
+                               "courier",
+                               "cat-eared",
+                               "superstitious",
+                               "fast"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "always deliver â€” reputation is survival",
+                                              "never open the package (except that once)",
+                                              "protect the younger runners first"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "deflect with humor and distance",
+                                                 "run â€” exits are always mapped before entering",
+                                                 "scream for the nearest adult runner"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "cheerful and transactional â€” names a price immediately to establish the relationship",
+                                                   "friends":  "physically affectionate, shares food unprompted, fiercely loyal"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "whistles tunelessly",
+                                                "medium":  "ears flatten, goes very quiet, starts cataloguing exits",
+                                                "high":  "bolts without warning, hides in spaces too small for adults"
+                                            },
+                       "contradictions":  [
+                                              "deeply superstitious about E.L.F.s but also privately skeptical â€” keeps the rituals anyway because \u0027costs nothing\u0027"
+                                          ],
+                       "habits":  [
+                                      "touches the Ferrogate patch before a difficult delivery",
+                                      "counts steps between landmarks without thinking about it",
+                                      "hoards small edible things in jacket pockets"
+                                  ],
+                       "breaking_points":  [
+                                               "harm to one of the younger runners in his care"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Dreamer":  0.9,
+                       "Seeker":  0.9,
+                       "Quick Study":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Blackpipe Corridor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "Ferrogate Transit",
+                             "Jefferson Switch",
+                             "GLMZ",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Akosua Johansson",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Balanced tri-continental blend: Sub-Saharan African (35.4%) and Eastern European (34.0%) form the foundation, creating strong bone structure and definition. South Asian ancestry (19.0%) adds warmth and subtle softness to features, while Middle Eastern (10.4%) and Southeast Asian (1.2%) elements contribute minor refinements to overall phenotype. The result is a striking pan-diaspora appearance â€” African prominence in cheekbone and jaw definition, Eastern European depth in bone structure, South Asian warmth in skin luminosity and lip fullness, creating an arresting angular face uncommon even in the Ubiquitous Diaspora.",
+                                 "height_cm":  135,
+                                 "weight_kg":  28,
+                                 "build":  "Wiry and undersized for his age â€” all lean muscle and hollow spaces, the body of a child who runs on inconsistent calories and constant motion. Shoulders narrow, ribs faintly visible beneath skin.",
+                                 "hair_color":  "Dark brown, nearly black",
+                                 "hair_style":  "Buzzed close on the sides, slightly longer on top â€” practical and maintenance-free",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown, nearly black",
+                                 "skin_tone":  "Rich warm medium-to-deep brown with golden undertones â€” the blended result of Sub-Saharan African dominance tempered by Eastern European depth and South Asian warmth, creating luminous complexion that catches light with subtle radiance.",
+                                 "complexion":  "Face displays balanced African-European architecture â€” prominent cheekbones and defined jawline from Sub-Saharan African heritage, deepened by Eastern European bone structure. South Asian influence adds golden undertones and subtle lip fullness. The combination creates strong angular definition with arresting presence. Enormous eyes dominate the face, framed by long dark lashes. Complexion shows street living wear â€” minor scrapes healing on knuckles, one small scar along left jawline from a fall appearing as pale line against warmer skin tone.",
+                                 "distinguishing_marks":  [
+                                                              "Three-inch scar along left jawline, slightly raised, pale against darker skin â€” result of a fall between buildings at age nine",
+                                                              "Faded scuff mark on right knuckles, perpetually in various stages of healing",
+                                                              "A small tattoo on his inner left wrist â€” a simple junction symbol (âŠ™) inked with street-grade pigment, mark of the Blackpipe collective"
+                                                          ],
+                                 "visible_augmentations":  "Inherited geneware cat ears â€” small, feline, tawny brown with black tips, positioned where human ears would be. They move reflexively toward sound sources when anxious or alert. Natural-looking cosmetic geneware work fully integrated into biology, passed through maternal line. No chrome, no visible implants otherwise.",
+                                 "posture_movement":  "Moves like water through tight spaces â€” low center of gravity, economical motion, minimal wasted energy. Default posture slightly forward-leaning as if perpetually reading ground ahead. Walks with grace of child navigating crowded spaces by staying below sightlines. Ear swivel is involuntary and frequent, betraying emotional state to observers.",
+                                 "clothing_style":  "Tier 5 street wear â€” faded black synthetic jacket several sizes too large, deliberately worn for movement and concealment. Ferrogate Transit patch sewn onto left breast, faded and peeling, worn as false authority badge. Thermal underlayer patched multiple times beneath. Gray cargo pants with deep pockets, cuffs rolled. Mismatched shoes â€” one missing laces, held with wire. Cord serves as belt. No corporate branding, all salvage and street finds. Clothes carry smell of condensation and electrical current."
+                             },
+    "image_prompt":  "Gregorio KrstiÄ‡, 135cm tall wiry street child with rich warm brown skin showing golden undertones, prominent African cheekbones softened by Eastern European depth, South Asian warmth in features. Deep brown eyes enormous and dominant, framed by long lashes. Small feline geneware cat ears tawny brown with black tips, twitching with alert anxiety. Short dark brown buzzed hair slightly longer on top. Pale scar line along left jawline. Wearing oversized faded black synthetic jacket layered over patched thermal underlayer, gray cargo pants with rolled cuffs, mismatched shoes held with wire, cord belt. Ferrogate Transit patch on chest. Low forward-leaning posture moving through neon-lit Great Lakes Metropolitan Zone alleyway, GLMZ, dramatic side lighting catching golden skin tone, minimal wasted motion, rain-slick surfaces and condensation around character, street atmosphere, gritty urban environment --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  35.4,
+                             "Eastern European":  34,
+                             "South Asian":  19,
+                             "Middle Eastern":  10.4,
+                             "Southeast Asian":  1.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Cameroonian":  14.8,
+                                                                                "Angolan":  20.6
+                                                                            }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  31.1,
+                                                                         "Belarusian":  2.9
+                                                                     }
+                                                 },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  12.1
+                                                                },
+                                                "Pakistani":  {
+                                                                  "Sindhi":  6.9
+                                                              }
+                                            },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Emirati":  2.5,
+                                                                     "Yemeni":  2.2
+                                                                 },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  2.6
+                                                               },
+                                                   "Persian":  {
+                                                                   "Iranian":  3.1
+                                                               }
+                                               },
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  0.2
+                                                                  },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  0.8
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Tagalog":  0.2
+                                                                 }
+                                                }
+                        },
+    "tier":  "1"
 }

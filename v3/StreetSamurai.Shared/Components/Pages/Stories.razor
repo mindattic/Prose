@@ -1,9 +1,15 @@
-@page "/stories"
+@page "/books/{BookId}/chapters"
 @attribute [Authorize(Roles = "Contributor,Administrator")]
 @using StreetSamurai.Core
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
-@inject IStoryBlockRepository Repo
+@inject IChapterRepository Repo
+@inject IBookRepository BookRepo
+@inject IBookReviewService ReviewSvc
+@inject BookExportService ExportSvc
+@inject MotifService MotifSvc
+@inject DatabaseService CanonDb
+@inject BookOutlineService OutlineSvc
 @inject StoryDirectorService Director
 @inject NavigationManager Nav
 @inject SuggestionEngineService Suggestions
@@ -12,18 +18,357 @@
 @inject SettingsService SettingsSvc
 @implements IDisposable
 
-<div class="d-flex justify-content-between align-items-center mb-3">
-    <h4 class="text-danger mb-0">Stories</h4>
-    <div class="d-flex gap-2 align-items-center">
-        <button class="btn btn-sm btn-outline-primary" @onclick="SurpriseMe" disabled="@generating">
-            <i class="bi bi-lightning"></i><div class="btn-lbl"> Surprise Me</div>
-        </button>
-        <button class="btn btn-sm btn-outline-warning" @onclick="OpenGuideMe" disabled="@generating">
-            <i class="bi bi-compass"></i><div class="btn-lbl"> Guide Me</div>
-        </button>
-        <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew"><i class="bi bi-plus-lg"></i><div class="btn-lbl"> New Story</div></button>
+@if (book == null)
+{
+    <div class="alert alert-danger">
+        Book not found. <a href="/books">Back to bookshelf</a>
     </div>
-</div>
+}
+else
+{
+    @* Always-on collaborative dialog. Persistent across edits — collapse if it's in the way. *@
+    <CoWriter BookId="@BookId" />
+    @* ── Book Header ──────────────────────────────── *@
+    <div class="d-flex justify-content-between align-items-start mb-3">
+        <div class="flex-grow-1 me-3">
+            <div class="small text-muted mb-1">
+                <a href="/books" class="text-muted text-decoration-none">
+                    <i class="bi bi-arrow-left me-1"></i>Bookshelf
+                </a>
+            </div>
+            <h4 class="text-danger mb-0">@book.Title</h4>
+            @if (!string.IsNullOrEmpty(book.Tagline))
+            {
+                <div class="text-warning fst-italic small">@book.Tagline</div>
+            }
+            @if (!string.IsNullOrEmpty(book.Premise))
+            {
+                <p class="text-muted small mb-1 mt-1">@book.Premise</p>
+            }
+            @if (book.Protagonists.Any())
+            {
+                <div class="small text-muted">
+                    <i class="bi bi-people-fill me-1"></i>@string.Join(", ", book.Protagonists)
+                </div>
+            }
+        </div>
+        <div class="d-flex gap-2 align-items-center flex-wrap justify-content-end">
+            <a href="@($"/books/{BookId}/outline")" class="btn btn-sm btn-outline-warning" title="Build / edit the book's outline (the plot every chapter shares)">
+                <i class="bi bi-list-ol"></i><div class="btn-lbl"> Outline</div>
+            </a>
+            <button class="btn btn-sm btn-outline-info" @onclick="ToggleEditBook" title="Edit book metadata">
+                <i class="bi bi-gear"></i>
+            </button>
+            <button class="btn btn-sm btn-outline-success" @onclick="OpenReview" disabled="@reviewing" title="Multi-LLM book review">
+                <i class="bi bi-search-heart"></i><div class="btn-lbl"> Review</div>
+                @if (PendingFindingsCount > 0)
+                {
+                    <span class="badge bg-danger ms-1">@PendingFindingsCount</span>
+                }
+            </button>
+            <button class="btn btn-sm btn-outline-info" @onclick="OpenMotifs" title="Detect motif candidates / manage motif inventory">
+                <i class="bi bi-tags"></i><div class="btn-lbl"> Motifs</div>
+                @if (motifInventory != null && motifInventory.Motifs.Count > 0)
+                {
+                    <span class="badge bg-secondary ms-1">@motifInventory.Motifs.Count</span>
+                }
+            </button>
+            <div class="btn-group btn-group-sm" role="group">
+                <button class="btn btn-sm btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" title="Export / Publish">
+                    <i class="bi bi-cloud-download"></i><div class="btn-lbl"> Publish</div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                    <li><button class="dropdown-item" @onclick='() => Export("epub")'>
+                        <i class="bi bi-book me-2"></i>EPUB <span class="text-muted small">(for Calibre → Kindle)</span></button></li>
+                    <li><button class="dropdown-item" @onclick='() => Export("html")'>
+                        <i class="bi bi-filetype-html me-2"></i>Standalone HTML</button></li>
+                    <li><button class="dropdown-item" @onclick='() => Export("md")'>
+                        <i class="bi bi-markdown me-2"></i>Markdown</button></li>
+                </ul>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="ToggleAbsorb" title="Absorb a loose chapter into this book">
+                <i class="bi bi-box-arrow-in-down"></i><div class="btn-lbl"> Absorb</div>
+            </button>
+            <button class="btn btn-sm btn-outline-primary" @onclick="SurpriseMe"
+                    disabled="@(generating || !OutlineApproved)"
+                    title="@(OutlineApproved ? "Generate a chapter from the outline" : "Approve the outline first")">
+                <i class="bi bi-lightning"></i><div class="btn-lbl"> Surprise Me</div>
+            </button>
+            <button class="btn btn-sm btn-outline-warning" @onclick="OpenGuideMe"
+                    disabled="@(generating || !OutlineApproved)"
+                    title="@(OutlineApproved ? "Generate a chapter with custom synopsis" : "Approve the outline first")">
+                <i class="bi bi-compass"></i><div class="btn-lbl"> Guide Me</div>
+            </button>
+            <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew">
+                <i class="bi bi-plus-lg"></i><div class="btn-lbl"> New Chapter</div>
+            </button>
+        </div>
+    </div>
+
+    @* ── Outline Status Banner ──────────────────────────────── *@
+    @if (!OutlineApproved)
+    {
+        <div class="alert alert-warning d-flex justify-content-between align-items-center small mb-3">
+            <div>
+                <i class="bi bi-exclamation-triangle me-1"></i>
+                <strong>Outline is @outlineStatus.</strong>
+                Build the outline first — the Director uses it as the spine for every chapter.
+                Generating prose against a draft outline produces incoherent chapters.
+            </div>
+            <a href="@($"/books/{BookId}/outline")" class="btn btn-sm btn-warning">
+                <i class="bi bi-list-ol me-1"></i>Open Outline
+            </a>
+        </div>
+    }
+
+    @* ── Edit Book Metadata Modal ──────────────────────────────── *@
+    @if (editBookOpen)
+    {
+        <div class="modal-backdrop fade show" style="z-index:1050;"></div>
+        <div class="modal fade show d-block" tabindex="-1" style="z-index:1055;" @onclick="ToggleEditBook">
+            <div class="modal-dialog modal-dialog-centered" @onclick:stopPropagation="true">
+                <div class="modal-content bg-dark text-light border-info">
+                    <div class="modal-header border-secondary">
+                        <h5 class="modal-title text-info"><i class="bi bi-gear me-2"></i>Edit Book</h5>
+                        <button type="button" class="btn-close btn-close-white" @onclick="ToggleEditBook"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-2">
+                            <label class="form-label small text-info mb-1">Title</label>
+                            <input class="form-control bg-black text-light border-secondary" @bind="book.Title" />
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label small text-info mb-1">Tagline</label>
+                            <input class="form-control bg-black text-light border-secondary" @bind="book.Tagline" />
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label small text-info mb-1">Premise</label>
+                            <textarea class="form-control bg-black text-light border-secondary" rows="3" @bind="book.Premise"></textarea>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label small text-info mb-1">Arc target</label>
+                            <input class="form-control bg-black text-light border-secondary" @bind="book.ArcTarget" />
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label small text-info mb-1">Protagonists (comma-separated)</label>
+                            <input class="form-control bg-black text-light border-secondary" @bind="protagonistsCsv" />
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label small text-info mb-1">Status</label>
+                            <select class="form-select bg-black text-light border-secondary" @bind="book.Status">
+                                <option value="drafting">drafting</option>
+                                <option value="review">review</option>
+                                <option value="published">published</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                        <button class="btn btn-secondary btn-sm" @onclick="ToggleEditBook">Cancel</button>
+                        <button class="btn btn-info btn-sm" @onclick="SaveBookMeta">
+                            <i class="bi bi-check-lg"></i> Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @* ── Book Review Panel ──────────────────────────────── *@
+    @if (reviewOpen)
+    {
+        <div class="modal-backdrop fade show" style="z-index:1050;"></div>
+        <div class="modal fade show d-block" tabindex="-1" style="z-index:1055;" @onclick="CloseReview">
+            <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" @onclick:stopPropagation="true">
+                <div class="modal-content bg-dark text-light border-success">
+                    <div class="modal-header border-secondary">
+                        <h5 class="modal-title text-success">
+                            <i class="bi bi-search-heart me-2"></i>Book Review
+                            @if (review != null && review.VoterCount > 0)
+                            {
+                                <span class="text-muted small ms-2">@review.VoterCount voters · @review.GeneratedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</span>
+                            }
+                        </h5>
+                        <div class="d-flex gap-2 align-items-center">
+                            <button class="btn btn-sm btn-success" @onclick="StartReview" disabled="@reviewing">
+                                @if (reviewing)
+                                {
+                                    <span class="spinner-border spinner-border-sm me-1"></span>
+                                }
+                                else
+                                {
+                                    <i class="bi bi-arrow-clockwise me-1"></i>
+                                }
+                                @(review == null ? "Run Review" : "Re-review")
+                            </button>
+                            <button type="button" class="btn-close btn-close-white" @onclick="CloseReview"></button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        @if (reviewing)
+                        {
+                            <div class="alert alert-info small">@reviewProgress</div>
+                        }
+                        else if (review == null)
+                        {
+                            <div class="text-muted">
+                                Click <strong>Run Review</strong> to ask every configured LLM to surface continuity gaps,
+                                dropped motifs, and small in-chapter edits that thread a through-line across the book's
+                                chapters. Multi-voter aggregation keeps single-model hallucinations out.
+                            </div>
+                        }
+                        else if (!string.IsNullOrEmpty(review.Error))
+                        {
+                            <div class="alert alert-danger">@review.Error</div>
+                        }
+                        else
+                        {
+                            @RenderFindingsGroup("Whole Book", review.BookFindings, "bi-bookmark-star")
+                            @RenderFindingsGroup("Between Chapters (Seams)", review.SeamFindings, "bi-link-45deg")
+                            @RenderFindingsGroup("Per Chapter", review.ChapterFindings, "bi-card-text")
+
+                            @if (!review.BookFindings.Any() && !review.SeamFindings.Any() && !review.ChapterFindings.Any())
+                            {
+                                <div class="alert alert-success">No findings — the book is well-threaded as-is.</div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @* ── Motif Inventory Modal ──────────────────────────────── *@
+    @if (motifsOpen)
+    {
+        <div class="modal-backdrop fade show" style="z-index:1050;"></div>
+        <div class="modal fade show d-block" tabindex="-1" style="z-index:1055;" @onclick="CloseMotifs">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" @onclick:stopPropagation="true">
+                <div class="modal-content bg-dark text-light border-info">
+                    <div class="modal-header border-secondary">
+                        <h5 class="modal-title text-info"><i class="bi bi-tags me-2"></i>Motifs</h5>
+                        <div class="d-flex gap-2 align-items-center">
+                            <button class="btn btn-sm btn-info" @onclick="DetectMotifs" disabled="@detectingMotifs">
+                                @if (detectingMotifs)
+                                {
+                                    <span class="spinner-border spinner-border-sm me-1"></span>
+                                }
+                                else
+                                {
+                                    <i class="bi bi-search me-1"></i>
+                                }
+                                Auto-detect from chapters
+                            </button>
+                            <button type="button" class="btn-close btn-close-white" @onclick="CloseMotifs"></button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="text-success">Registered Motifs</h6>
+                        @if (motifInventory != null && motifInventory.Motifs.Any())
+                        {
+                            <ul class="list-group mb-3">
+                                @foreach (var m in motifInventory.Motifs)
+                                {
+                                    <li class="list-group-item bg-black text-light border-secondary d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <strong>@m.Name</strong>
+                                            <span class="badge bg-dark text-info ms-2">@m.Kind</span>
+                                            <div class="small text-muted">@m.Description</div>
+                                            @if (m.ReferencedInChapterIds.Any())
+                                            {
+                                                <div class="small text-success">Referenced in @m.ReferencedInChapterIds.Count chapter(s).</div>
+                                            }
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <div class="text-muted small mb-3">No motifs registered yet.</div>
+                        }
+
+                        <h6 class="text-warning mt-3">Proposals
+                            @if (motifProposals.Any())
+                            {
+                                <span class="badge bg-warning text-dark ms-2">@motifProposals.Count</span>
+                            }
+                        </h6>
+                        @if (!motifProposals.Any() && !detectingMotifs)
+                        {
+                            <div class="text-muted small">Click <strong>Auto-detect from chapters</strong> to surface candidate motifs (italicized recurring phrases, capitalized named objects).</div>
+                        }
+                        @foreach (var (chapterTitle, p) in motifProposals)
+                        {
+                            <div class="card bg-black border-warning mb-2">
+                                <div class="card-body py-2 px-3">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <div class="flex-grow-1">
+                                            <strong>@p.Name</strong>
+                                            <span class="badge bg-dark text-info ms-2">@p.Kind</span>
+                                            <span class="text-muted small ms-2">in @chapterTitle</span>
+                                            <div class="small text-muted">@p.Description</div>
+                                            <div class="small text-warning">@p.Evidence</div>
+                                        </div>
+                                        <div class="d-flex gap-1">
+                                            <button class="btn btn-sm btn-success py-0" @onclick="() => AcceptMotif(p)">
+                                                <i class="bi bi-check-lg"></i> Accept
+                                            </button>
+                                            <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => DismissMotif(p)">
+                                                <i class="bi bi-x-lg"></i> Dismiss
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @* ── Absorb Modal ──────────────────────────────── *@
+    @if (absorbOpen)
+    {
+        <div class="modal-backdrop fade show" style="z-index:1050;"></div>
+        <div class="modal fade show d-block" tabindex="-1" style="z-index:1055;" @onclick="ToggleAbsorb">
+            <div class="modal-dialog modal-dialog-centered modal-lg" @onclick:stopPropagation="true">
+                <div class="modal-content bg-dark text-light border-secondary">
+                    <div class="modal-header border-secondary">
+                        <h5 class="modal-title"><i class="bi bi-box-arrow-in-down me-2"></i>Absorb a Loose Chapter</h5>
+                        <button type="button" class="btn-close btn-close-white" @onclick="ToggleAbsorb"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="small text-muted mb-3">Pick a chapter that isn't currently part of any book.</p>
+                        @if (looseCandidates.Any())
+                        {
+                            <div class="list-group">
+                                @foreach (var c in looseCandidates)
+                                {
+                                    <button class="list-group-item list-group-item-action bg-black text-light border-secondary"
+                                            @onclick="() => AbsorbChapter(c.Id)">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>@c.Title</strong>
+                                            <small class="text-muted">@c.Modified.ToString("yyyy-MM-dd")</small>
+                                        </div>
+                                        @if (c.Characters.Any())
+                                        {
+                                            <small class="text-info">@string.Join(", ", c.Characters)</small>
+                                        }
+                                    </button>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="text-muted small">No loose chapters available — every chapter is already part of a book.</div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
 
 @* ── Guide Me Modal ──────────────────────────────── *@
 @if (guideMeOpen)
@@ -300,28 +645,53 @@
         <table class="table table-dark table-hover table-sm">
             <thead>
                 <tr>
+                    <th style="width:60px;">#</th>
                     <th>Title</th>
                     <th>Status</th>
                     <th>Modified</th>
-                    <th></th>
+                    <th style="width:170px;text-align:right;">Actions</th>
                 </tr>
             </thead>
             <tbody>
+                @{ var chapterIdx = 0; }
                 @foreach (var p in projects)
                 {
+                    var idx = chapterIdx++;
+                    var isFirst = idx == 0;
+                    var isLast  = idx == projects.Count - 1;
                     <tr style="cursor: pointer;" @onclick="() => OpenProject(p.Id)">
+                        <td class="text-muted">@(idx + 1)</td>
                         <td class="fw-bold">@(string.IsNullOrWhiteSpace(p.Title) ? Constants.Defaults.UntitledStory : p.Title)</td>
                         <td><span class="badge bg-secondary">@p.Status</span></td>
                         <td class="text-muted small">@p.Modified.ToString("yyyy-MM-dd HH:mm")</td>
-                        <td>
+                        <td class="text-end" @onclick:stopPropagation="true">
+                            <button class="btn btn-sm btn-outline-secondary py-0 me-1"
+                                    title="Move up"
+                                    disabled="@isFirst"
+                                    @onclick="() => MoveChapterUp(p.Id)">
+                                <i class="bi bi-arrow-up"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary py-0 me-1"
+                                    title="Move down"
+                                    disabled="@isLast"
+                                    @onclick="() => MoveChapterDown(p.Id)">
+                                <i class="bi bi-arrow-down"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-info py-0 me-1"
+                                    title="Insert new chapter below this one"
+                                    @onclick="() => InsertAfter(p.Id)">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
                             @if (confirmArchiveId == p.Id)
                             {
-                                <button class="btn btn-sm btn-warning py-0" @onclick="() => DoArchive(p.Id)" @onclick:stopPropagation="true"><div class="btn-lbl">Archive</div></button>
-                                <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => confirmArchiveId = null" @onclick:stopPropagation="true"><div class="btn-lbl">No</div></button>
+                                <button class="btn btn-sm btn-warning py-0" @onclick="() => DoArchive(p.Id)"><div class="btn-lbl">Archive</div></button>
+                                <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => confirmArchiveId = null"><div class="btn-lbl">No</div></button>
                             }
                             else
                             {
-                                <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => confirmArchiveId = p.Id" @onclick:stopPropagation="true"><i class="bi bi-archive"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary py-0" title="Archive" @onclick="() => confirmArchiveId = p.Id">
+                                    <i class="bi bi-archive"></i>
+                                </button>
                             }
                         </td>
                     </tr>
@@ -333,17 +703,18 @@
 else if (!generating)
 {
     <div class="text-center py-5 text-muted">
-        <p>No stories yet.</p>
+        <p>No chapters in this book yet.</p>
         <div class="d-flex gap-2 justify-content-center">
             <button class="btn btn-outline-primary" @onclick="SurpriseMe"><i class="bi bi-lightning"></i><div class="btn-lbl"> Surprise Me</div></button>
             <button class="btn btn-outline-warning" @onclick="OpenGuideMe"><i class="bi bi-compass"></i><div class="btn-lbl"> Guide Me</div></button>
-            <button class="btn btn-outline-danger" @onclick="CreateNew"><div class="btn-lbl">New Story</div></button>
+            <button class="btn btn-outline-danger" @onclick="CreateNew"><i class="bi bi-plus-lg"></i><div class="btn-lbl"> New Chapter</div></button>
+            <button class="btn btn-outline-secondary" @onclick="ToggleAbsorb"><i class="bi bi-box-arrow-in-down"></i><div class="btn-lbl"> Absorb</div></button>
         </div>
     </div>
 }
 
 @code {
-    private List<StoryProject> projects = [];
+    private List<Chapter> projects = [];
     private List<AutonomousStory> failedCheckpoints = [];
     private string? confirmArchiveId;
     private bool generating;
@@ -356,15 +727,387 @@ else if (!generating)
     private List<BeatSuggestion> suggestedBeats = [];
     private CancellationTokenSource? cts;
 
+    [Parameter] public string BookId { get; set; } = "";
+
+    private Book? book;
+    private List<Chapter> looseCandidates = [];
+    private bool absorbOpen;
+    private bool editBookOpen;
+    private string protagonistsCsv = "";
+
+    // ── Book Review state ──
+    private bool reviewOpen;
+    private bool reviewing;
+    private string reviewProgress = "";
+    private BookReviewReport? review;
+    private string? applyError;
+
+    // ── Outline gate state ──
+    private OutlineStatus outlineStatus = OutlineStatus.Draft;
+    private bool OutlineApproved => outlineStatus == OutlineStatus.Approved;
+
+    // ── Motif state ──
+    private bool motifsOpen;
+    private bool detectingMotifs;
+    private MotifInventory? motifInventory;
+    private List<(string chapterTitle, MotifProposal proposal)> motifProposals = [];
+    private HashSet<string> dismissedProposalKeys = new(StringComparer.OrdinalIgnoreCase);
+    private int PendingFindingsCount =>
+        review == null ? 0 :
+        review.BookFindings.Count(f => f.Status == ReviewStatus.Pending) +
+        review.ChapterFindings.Count(f => f.Status == ReviewStatus.Pending) +
+        review.SeamFindings.Count(f => f.Status == ReviewStatus.Pending);
+
+    private static readonly string DiagPath = System.IO.Path.Combine(System.IO.Path.GetTempPath(), "stories-diag.log");
+    private static void Diag(string step) => System.IO.File.AppendAllText(DiagPath,
+        $"{DateTime.Now:HH:mm:ss.fff} {step}{Environment.NewLine}");
+
     protected override void OnInitialized()
     {
-        projects = Repo.ListProjects();
-        LoadFailedCheckpoints();
+        Diag($"OnInitialized: enter BookId={BookId}");
         Director.OnProgress += OnDirectorProgress;
+        Diag("OnInitialized: hooked OnProgress");
         CharRepo.Reload();
+        Diag("OnInitialized: CharRepo.Reload done");
         allCharacters = CharRepo.GetAll();
+        Diag($"OnInitialized: CharRepo.GetAll done ({allCharacters.Count})");
         districts = DistrictRepo.GetAll();
+        Diag($"OnInitialized: DistrictRepo.GetAll done ({districts.Count}) — exit");
     }
+
+    protected override void OnParametersSet()
+    {
+        Diag($"OnParametersSet: enter BookId={BookId}");
+        ReloadBook();
+        Diag("OnParametersSet: ReloadBook returned");
+        if (!string.IsNullOrWhiteSpace(ProtagonistParam) && !generating && book != null)
+            _ = SurpriseMeFor(ProtagonistParam);
+        Diag("OnParametersSet: exit");
+    }
+
+    /// <summary>Loads this book's chapters in declared order. Filters out anything that doesn't belong to this book.</summary>
+    private void ReloadBook()
+    {
+        Diag("ReloadBook: enter");
+        book = BookRepo.LoadBook(BookId);
+        Diag($"ReloadBook: BookRepo.LoadBook done (book={(book == null ? "null" : book.Title)})");
+        if (book == null) { projects = []; return; }
+
+        var all = Repo.ListChapters().ToDictionary(c => c.Id);
+        Diag($"ReloadBook: Repo.ListChapters done ({all.Count})");
+        // Use Book.ChapterIds as the canonical order; fall back to anything pointing at this book that isn't in the list yet.
+        projects = book.ChapterIds
+            .Select(id => all.GetValueOrDefault(id))
+            .Where(c => c != null)
+            .ToList()!;
+        var inOrder = projects.Select(p => p.Id).ToHashSet();
+        var orphaned = all.Values.Where(c => c.BookId == BookId && !inOrder.Contains(c.Id));
+        projects.AddRange(orphaned);
+        Diag($"ReloadBook: projects assembled ({projects.Count})");
+
+        // Loose candidates: chapters with no book or pointing at a vanished book.
+        var liveBookIds = BookRepo.ListBooks().Select(b => b.Id).ToHashSet();
+        looseCandidates = all.Values
+            .Where(c => string.IsNullOrEmpty(c.BookId) || !liveBookIds.Contains(c.BookId))
+            .OrderByDescending(c => c.Modified)
+            .ToList();
+        Diag($"ReloadBook: looseCandidates done ({looseCandidates.Count})");
+
+        // Load any existing review report so the pending-findings badge can render on first paint.
+        review = ReviewSvc.LoadReport(BookId);
+        Diag("ReloadBook: ReviewSvc.LoadReport done");
+        motifInventory = MotifSvc.Load(BookId);
+        Diag("ReloadBook: MotifSvc.Load done");
+        outlineStatus = OutlineSvc.Load(BookId).Status;
+        Diag($"ReloadBook: OutlineSvc.Load done (status={outlineStatus})");
+
+        LoadFailedCheckpoints();
+        Diag("ReloadBook: LoadFailedCheckpoints done — exit");
+    }
+
+    /// <summary>Sets BookId + Number on a new chapter, saves it, and pushes the id onto the parent book's ordered list.</summary>
+    private void AttachToBook(Chapter chapter)
+    {
+        if (book == null) { Repo.SaveChapter(chapter); return; }
+
+        chapter.BookId = book.Id;
+        chapter.Number = book.ChapterIds.Count + 1;
+        Repo.SaveChapter(chapter);
+
+        if (!book.ChapterIds.Contains(chapter.Id))
+        {
+            book.ChapterIds.Add(chapter.Id);
+            BookRepo.SaveBook(book);
+        }
+    }
+
+    private void ToggleAbsorb()
+    {
+        absorbOpen = !absorbOpen;
+        if (absorbOpen) ReloadBook();
+    }
+
+    private void AbsorbChapter(string chapterId)
+    {
+        if (book == null) return;
+        var chapter = Repo.LoadChapter(chapterId);
+        if (chapter == null) return;
+
+        chapter.BookId = book.Id;
+        chapter.Number = book.ChapterIds.Count + 1;
+        Repo.SaveChapter(chapter);
+
+        if (!book.ChapterIds.Contains(chapter.Id))
+        {
+            book.ChapterIds.Add(chapter.Id);
+            BookRepo.SaveBook(book);
+        }
+
+        absorbOpen = false;
+        ReloadBook();
+    }
+
+    private void ToggleEditBook()
+    {
+        if (!editBookOpen && book != null)
+            protagonistsCsv = string.Join(", ", book.Protagonists);
+        editBookOpen = !editBookOpen;
+    }
+
+    private void SaveBookMeta()
+    {
+        if (book == null) return;
+        book.Protagonists = protagonistsCsv
+            .Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries)
+            .ToList();
+        if (string.IsNullOrWhiteSpace(book.Tagline)) book.Tagline = null;
+        BookRepo.SaveBook(book);
+        editBookOpen = false;
+    }
+
+    // ── Review handlers ─────────────────────────────────────────
+
+    private void OpenReview()
+    {
+        if (book == null) return;
+        review = ReviewSvc.LoadReport(book.Id);
+        applyError = null;
+        reviewOpen = true;
+    }
+
+    private void CloseReview() => reviewOpen = false;
+
+    private async Task StartReview()
+    {
+        if (book == null || reviewing) return;
+        reviewing = true;
+        reviewProgress = "Starting...";
+        applyError = null;
+        StateHasChanged();
+
+        var progress = new Progress<string>(msg =>
+        {
+            reviewProgress = msg;
+            InvokeAsync(StateHasChanged);
+        });
+
+        try
+        {
+            review = await ReviewSvc.ReviewAsync(book.Id, progress);
+        }
+        catch (Exception ex)
+        {
+            review = new BookReviewReport { BookId = book.Id, Error = ex.Message };
+        }
+        finally
+        {
+            reviewing = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task ApplyFinding(string findingId)
+    {
+        if (book == null) return;
+        applyError = null;
+        var result = await ReviewSvc.ApplyFindingAsync(book.Id, findingId);
+        if (!result.Success) { applyError = result.Error; }
+        review = ReviewSvc.LoadReport(book.Id);
+        ReloadBook();
+        StateHasChanged();
+    }
+
+    private void RejectFinding(string findingId)
+    {
+        if (book == null) return;
+        ReviewSvc.RejectFinding(book.Id, findingId);
+        review = ReviewSvc.LoadReport(book.Id);
+    }
+
+    // ── Motif handlers ──────────────────────────────────────────
+
+    private void OpenMotifs()
+    {
+        motifInventory = MotifSvc.Load(BookId);
+        motifsOpen = true;
+    }
+    private void CloseMotifs() => motifsOpen = false;
+
+    private void DetectMotifs()
+    {
+        if (book == null) return;
+        detectingMotifs = true;
+        StateHasChanged();
+        try
+        {
+            // Pass canonical character names so the proposer doesn't flag them as motif candidates.
+            var knownNames = CanonDb.Characters.Select(c => c.Name).Where(n => !string.IsNullOrEmpty(n));
+
+            motifProposals.Clear();
+            foreach (var c in projects)
+            {
+                var proposals = MotifSvc.ProposeFromChapter(BookId, c, knownNames);
+                foreach (var p in proposals)
+                {
+                    var key = $"{p.Kind}::{p.Name}".ToLowerInvariant();
+                    if (dismissedProposalKeys.Contains(key)) continue;
+                    motifProposals.Add((c.Title, p));
+                }
+            }
+        }
+        finally
+        {
+            detectingMotifs = false;
+            StateHasChanged();
+        }
+    }
+
+    private void AcceptMotif(MotifProposal p)
+    {
+        if (book == null) return;
+        // Find the chapter this proposal came from to record introduction.
+        var sourceChapter = motifProposals.FirstOrDefault(t => t.proposal.Name == p.Name).chapterTitle;
+        var introducedIn = projects.FirstOrDefault(c => c.Title == sourceChapter)?.Id ?? "";
+        MotifSvc.Plant(BookId, p.Name, p.Description, p.Kind, introducedIn);
+        motifInventory = MotifSvc.Load(BookId);
+        motifProposals.RemoveAll(t => string.Equals(t.proposal.Name, p.Name, StringComparison.OrdinalIgnoreCase));
+    }
+
+    private void DismissMotif(MotifProposal p)
+    {
+        var key = $"{p.Kind}::{p.Name}".ToLowerInvariant();
+        dismissedProposalKeys.Add(key);
+        motifProposals.RemoveAll(t => string.Equals(t.proposal.Name, p.Name, StringComparison.OrdinalIgnoreCase));
+    }
+
+    /// <summary>Build an export of the current book in the requested format and surface the path.</summary>
+    private void Export(string format)
+    {
+        if (book == null) return;
+        try
+        {
+            string path = format switch
+            {
+                "html" => ExportSvc.ExportHtml(book.Id),
+                "md"   => ExportSvc.ExportMarkdown(book.Id),
+                _      => ExportSvc.ExportEpub(book.Id),
+            };
+            applyError = $"Exported: {path}";  // reuse the alert slot — green path message
+        }
+        catch (Exception ex)
+        {
+            applyError = $"Export failed: {ex.Message}";
+        }
+    }
+
+    private string ChapterTitleFor(string? chapterId)
+    {
+        if (string.IsNullOrEmpty(chapterId)) return "";
+        var p = projects.FirstOrDefault(c => c.Id == chapterId);
+        return p?.Title ?? "(unknown chapter)";
+    }
+
+    private static string SeverityClass(ReviewSeverity s) => s switch
+    {
+        ReviewSeverity.Critical => "bg-danger",
+        ReviewSeverity.Warning => "bg-warning text-dark",
+        _ => "bg-info text-dark",
+    };
+
+    private RenderFragment RenderFindingsGroup(string heading, List<ReviewFinding> findings, string icon) => __builder =>
+    {
+        var visible = findings.Where(f => f.Status != ReviewStatus.Rejected).ToList();
+        if (!visible.Any()) return;
+
+        <h6 class="text-success mt-3 mb-2">
+            <i class="bi @icon me-1"></i>@heading
+            <span class="badge bg-secondary ms-2">@visible.Count</span>
+        </h6>
+
+        @if (!string.IsNullOrEmpty(applyError))
+        {
+            <div class="alert alert-warning small mb-2">@applyError</div>
+        }
+
+        @foreach (var f in visible)
+        {
+            <div class="card bg-black border-secondary mb-2">
+                <div class="card-body py-2 px-3">
+                    <div class="d-flex justify-content-between align-items-start mb-1">
+                        <div class="flex-grow-1">
+                            <span class="badge @SeverityClass(f.Severity) me-2">@f.Severity</span>
+                            <span class="badge bg-dark text-info me-2">@f.Kind</span>
+                            @if (!string.IsNullOrEmpty(f.ChapterId))
+                            {
+                                <span class="text-muted small">Ch: @ChapterTitleFor(f.ChapterId)</span>
+                            }
+                            @if (!string.IsNullOrEmpty(f.NextChapterId))
+                            {
+                                <span class="text-muted small"> → @ChapterTitleFor(f.NextChapterId)</span>
+                            }
+                            @if (f.VoterAgreement > 1)
+                            {
+                                <span class="badge bg-secondary ms-2">@(f.VoterAgreement) voters</span>
+                            }
+                            @if (f.Status == ReviewStatus.Applied)
+                            {
+                                <span class="badge bg-success ms-2"><i class="bi bi-check-lg"></i> applied</span>
+                            }
+                        </div>
+                        <div class="d-flex gap-1">
+                            @if (f.Status == ReviewStatus.Pending && f.HasEdit)
+                            {
+                                <button class="btn btn-sm btn-success py-0" @onclick="() => ApplyFinding(f.Id)">
+                                    <i class="bi bi-check-lg"></i> Apply
+                                </button>
+                            }
+                            @if (f.Status == ReviewStatus.Pending)
+                            {
+                                <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => RejectFinding(f.Id)">
+                                    <i class="bi bi-x-lg"></i> Dismiss
+                                </button>
+                            }
+                        </div>
+                    </div>
+                    <div class="fw-bold mb-1">@f.Title</div>
+                    <div class="text-muted small mb-2">@f.Rationale</div>
+
+                    @if (f.HasEdit)
+                    {
+                        <details class="small">
+                            <summary class="text-info" style="cursor:pointer;">Preview edit</summary>
+                            <div class="mt-2">
+                                <div class="text-danger small mb-1">— remove:</div>
+                                <pre class="bg-black border border-danger p-2 rounded small" style="white-space:pre-wrap;">@f.BeforeText</pre>
+                                <div class="text-success small mb-1 mt-2">+ insert:</div>
+                                <pre class="bg-black border border-success p-2 rounded small" style="white-space:pre-wrap;">@f.AfterText</pre>
+                            </div>
+                        </details>
+                    }
+                </div>
+            </div>
+        }
+    };
 
     // ── Guide Me modal state ────────────────────────────
     private bool guideMeOpen;
@@ -486,7 +1229,7 @@ else if (!generating)
 
             if (autonomousStory.Complete)
             {
-                var project = new StoryProject
+                var project = new Chapter
                 {
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
@@ -494,8 +1237,8 @@ else if (!generating)
                     Html = SettingsSvc.SaveStoriesAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
-                Repo.SaveProject(project);
-                projects = Repo.ListProjects();
+                AttachToBook(project);
+                ReloadBook();
                 Nav.NavigateTo($"/stories/write/{project.Id}");
             }
         }
@@ -535,19 +1278,17 @@ else if (!generating)
 
     private void CreateNew()
     {
-        var project = new StoryProject();
-        Repo.SaveProject(project);
+        if (book == null) return;
+        var project = new Chapter
+        {
+            Title = $"Chapter {book.ChapterIds.Count + 1}",
+        };
+        AttachToBook(project);
         Nav.NavigateTo($"/stories/write/{project.Id}");
     }
 
     [SupplyParameterFromQuery(Name = "protagonist")]
     public string? ProtagonistParam { get; set; }
-
-    protected override void OnParametersSet()
-    {
-        if (!string.IsNullOrWhiteSpace(ProtagonistParam) && !generating)
-            _ = SurpriseMeFor(ProtagonistParam);
-    }
 
     private async Task SurpriseMeFor(string characterName)
     {
@@ -565,7 +1306,7 @@ else if (!generating)
 
             if (autonomousStory.Complete)
             {
-                var project = new StoryProject
+                var project = new Chapter
                 {
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
@@ -573,8 +1314,8 @@ else if (!generating)
                     Html = SettingsSvc.SaveStoriesAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
-                Repo.SaveProject(project);
-                projects = Repo.ListProjects();
+                AttachToBook(project);
+                ReloadBook();
             }
         }
         catch (OperationCanceledException) { progressMessage = "Cancelled."; }
@@ -598,9 +1339,9 @@ else if (!generating)
 
             if (autonomousStory.Complete)
             {
-                // Save as a StoryProject — reuse the AutonomousStory's ProjectId
+                // Save as a Chapter — reuse the AutonomousStory's ProjectId
                 // so checkpoint, outline, events, and knowledge files stay associated
-                var project = new StoryProject
+                var project = new Chapter
                 {
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
@@ -608,8 +1349,8 @@ else if (!generating)
                     Html = SettingsSvc.SaveStoriesAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
-                Repo.SaveProject(project);
-                projects = Repo.ListProjects();
+                AttachToBook(project);
+                ReloadBook();
 
                 // Navigate to the new story
                 Nav.NavigateTo($"/stories/write/{project.Id}");
@@ -639,7 +1380,7 @@ else if (!generating)
 
             if (autonomousStory.Complete)
             {
-                var project = new StoryProject
+                var project = new Chapter
                 {
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
@@ -647,8 +1388,8 @@ else if (!generating)
                     Html = SettingsSvc.SaveStoriesAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
-                Repo.SaveProject(project);
-                projects = Repo.ListProjects();
+                AttachToBook(project);
+                ReloadBook();
                 LoadFailedCheckpoints();
                 Nav.NavigateTo($"/stories/write/{project.Id}");
             }
@@ -679,7 +1420,7 @@ else if (!generating)
 
             if (autonomousStory.Complete)
             {
-                var project = new StoryProject
+                var project = new Chapter
                 {
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
@@ -687,8 +1428,8 @@ else if (!generating)
                     Html = SettingsSvc.SaveStoriesAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
-                Repo.SaveProject(project);
-                projects = Repo.ListProjects();
+                AttachToBook(project);
+                ReloadBook();
                 LoadFailedCheckpoints();
                 Nav.NavigateTo($"/stories/write/{project.Id}");
             }
@@ -710,9 +1451,77 @@ else if (!generating)
 
     private void DoArchive(string id)
     {
-        Repo.DeleteProject(id);
+        Repo.DeleteChapter(id);
         confirmArchiveId = null;
         projects.RemoveAll(p => p.Id == id);
+
+        // Drop from the book's ordered list too — otherwise the next ReloadBook leaves a hole.
+        if (book != null && book.ChapterIds.Remove(id))
+        {
+            BookRepo.SaveBook(book);
+            RenumberChapters();
+        }
+    }
+
+    private void MoveChapterUp(string id)
+    {
+        if (book == null) return;
+        var i = book.ChapterIds.IndexOf(id);
+        if (i <= 0) return;
+        (book.ChapterIds[i - 1], book.ChapterIds[i]) = (book.ChapterIds[i], book.ChapterIds[i - 1]);
+        BookRepo.SaveBook(book);
+        RenumberChapters();
+        ReloadBook();
+    }
+
+    private void MoveChapterDown(string id)
+    {
+        if (book == null) return;
+        var i = book.ChapterIds.IndexOf(id);
+        if (i < 0 || i >= book.ChapterIds.Count - 1) return;
+        (book.ChapterIds[i + 1], book.ChapterIds[i]) = (book.ChapterIds[i], book.ChapterIds[i + 1]);
+        BookRepo.SaveBook(book);
+        RenumberChapters();
+        ReloadBook();
+    }
+
+    /// <summary>Creates a new blank chapter and inserts it directly after the chapter with the given id.</summary>
+    private void InsertAfter(string anchorChapterId)
+    {
+        if (book == null) return;
+        var i = book.ChapterIds.IndexOf(anchorChapterId);
+        if (i < 0) return;
+
+        var newChapter = new Chapter
+        {
+            BookId = book.Id,
+            Title  = $"Chapter {i + 2}",
+        };
+        Repo.SaveChapter(newChapter);
+
+        // Insert at position i+1 so it falls between the anchor and what came after.
+        book.ChapterIds.Insert(i + 1, newChapter.Id);
+        BookRepo.SaveBook(book);
+        RenumberChapters();
+
+        Nav.NavigateTo($"/stories/write/{newChapter.Id}");
+    }
+
+    /// <summary>Rewrites Chapter.Number on every chapter to match its new position in book.ChapterIds.</summary>
+    private void RenumberChapters()
+    {
+        if (book == null) return;
+        for (int i = 0; i < book.ChapterIds.Count; i++)
+        {
+            var c = Repo.LoadChapter(book.ChapterIds[i]);
+            if (c == null) continue;
+            var newNumber = i + 1;
+            if (c.Number != newNumber)
+            {
+                c.Number = newNumber;
+                Repo.SaveChapter(c);
+            }
+        }
     }
 
     private async Task GetSuggestions(AutonomousStory checkpoint)

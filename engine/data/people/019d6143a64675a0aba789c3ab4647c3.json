@@ -1,249 +1,272 @@
-{
-  "id": "019d6143a64675a0aba789c3ab4647c3",
-  "type": "character",
-  "name": "Vivaan Espinoza-Deshpande",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "VR experience designer and underground filmmaker",
-  "age": 19,
-  "status": "active",
-  "location": "Highland Park Autonomous Zone, works out of a shared fabrication space called The Burrow, near Michigan Ave and Walton",
-  "description": "Vivaan Espinoza-Deshpande is lanky and perpetually underslept, with the golden-brown skin of his Ghanaian father's family and the sharp Armenian nose he got from his grandmother Tamar, which he has decorated with a small bioluminescent stud that pulses faintly blue when he is in deep concentration — a mod he got at sixteen from a friend rather than a professional, which is both charming and slightly crooked. He moves through The Burrow at a half-jog, always carrying something, often mid-sentence with someone across the room. His hair is shaped into two neat puffs that he maintains with obsessive regularity even when the rest of his presentation is in chaos.\n\nHe has been making VR experiences since he was fourteen — at first pure technical curiosity, then something more urgent. His work is formally experimental and politically raw: his best-known piece, a forty-minute experience called Φ0.00 that simulates one month of existence at rock-bottom UBC stipend with every sensory detail rendered at maximum fidelity, has been downloaded approximately eighty thousand times across underground distribution channels and has been cited in three separate GLMZ social policy arguments. He did not intend it to be a policy document. He made it because he and his mother lived it for six months when he was twelve and he wanted to know if he could make someone else understand. The answer, apparently, was yes.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.8,
-      "shadow": 0.2,
-      "mask": 0.2,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Selling out — the specific fear that comfort will make him incapable of making honest work",
-      "That Φ0.00 was his best thing and everything after it will be smaller"
-    ],
-    "core_desires": [
-      "To make something that changes what people are able to feel, not just what they know",
-      "To earn enough that his mother never has another Φ0.00 month"
-    ],
-    "coping_mechanisms": [
-      "Throwing himself into the next project before finishing grieving the last one",
-      "The collective as family — physical proximity to people he trusts"
-    ],
-    "blind_spots": [
-      "His certainty about his own intentions makes him resistant to feedback that implicates those intentions",
-      "He is burning himself out at nineteen and everyone can see it except him"
-    ],
-    "secret": "The anonymous grants are from Arcturus, and Kwabena actually knows this — he identified the signature in the transfer metadata six months ago. He has not returned the money or told anyone because it has funded his last two projects and he cannot afford to be principled about it and he is ashamed of both things."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast and dense; shifts between technical VR terminology, HPAZ collective vernacular, and the occasional formal policy phrase absorbed from watching too many social advocacy feeds; uses 'right' as punctuation",
-    "cadence": "Rapid-fire in pitching mode; surprisingly still and deliberate when talking about something that genuinely hurt him",
-    "verbal_tics": [
-      "'Right, right, right' in rapid succession when listening",
-      "'Okay but what if—' as a near-constant conversation pivot"
-    ],
-    "example_lines": [
-      "'I am not trying to make people feel bad. I am trying to make people feel accurate. There is a difference. Right.'",
-      "'The thing about Φ0.00 is it was not a political project. It was a — I needed to know if I had actually experienced it or just survived it. Turns out both.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The secret project he is working on contains documentary footage of something happening in HPAZ that at least one corponation would prefer remain undocumented — he captured it accidentally and has not yet understood what he has",
-    "Arcturus makes a direct approach, ending the fiction of the anonymous grants and offering a production deal that would give him resources he cannot imagine refusing"
-  ],
-  "narrative_function": "Window into HPAZ youth culture and politics; potential technical resource for anyone needing VR or documentary work; represents the tension between raw artistic talent and institutional pressure; his secret project may become a significant plot element",
-  "augmentations": "Bioluminescent nose stud (geneware, cosmetic, informally applied); retinal display overlay in both eyes (practical; secondhand, slightly glitchy — sometimes shows him notifications from the previous owner's accounts)",
-  "daily_life": "He sleeps in four-hour blocks whenever the work allows, eats communally at The Burrow when the collective cooks, and spends the rest of his time either in deep production work — headset on, entirely unreachable — or in frantic social mode, pitching ideas to anyone who will listen and consuming other people's work with indiscriminate hunger. He is currently simultaneously behind on two collaborative projects and ahead of schedule on a personal piece no one knows he is making.",
-  "affiliation": "Highland Park Autonomous Zone collective; informal distribution through the Burrow network; has received two anonymous grants he suspects originate from Arcturus but cannot confirm",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 6,
-      "vitality": 3,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 5,
-      "creativity": 10,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": -4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "prodigy-burnout",
-      "compromised-idealism",
-      "hpaz-embedded",
-      "secret-keeper",
-      "technically-gifted"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Make the thing you need to make, not the thing that will get you noticed — the attention follows or it does not",
-      "The collective's needs come before personal projects; he believes this and violates it regularly"
-    ],
-    "escalation_ladder": [
-      "Argumentative enthusiasm — treats conflict as a creative problem to solve",
-      "Genuine hurt, expressed as sudden quiet and withdrawal from the conversation",
-      "Long-form processing that results in something being made; he does not resolve conflict with words, he resolves it with work"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately curious and slightly overwhelming; will ask three personal questions before introducing himself properly",
-      "friends": "Deeply loyal; unreliable on logistics; will remember the thing you said six months ago that mattered"
-    },
-    "stress_responses": {
-      "low": "More productive; works faster; quality goes up",
-      "medium": "Productivity collapses into compulsive research and note-taking without completion",
-      "high": "Disappears into a headset; is technically present in The Burrow but unreachable; emerges with either nothing or something extraordinary"
-    },
-    "contradictions": [
-      "Talks constantly about collective values and creative community while the secret project is entirely solo and deliberately hidden from the people he trusts most"
-    ],
-    "habits": [
-      "Leaves voice memos to himself constantly — has years of recordings he has never revisited",
-      "Resets his workspace completely before starting a new project; does not work in an environment that carries the previous thing's residue"
-    ],
-    "breaking_points": [
-      "Being told his work is impressive for his age",
-      "Discovering that the Arcturus money has compromised something he made"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Artist": 0.9,
-    "Dreamer": 0.9,
-    "Beauty Seeker": 0.9,
-    "Romantic": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Highland Park Autonomous Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Street Custom 'Widowmaker' Rigged Power Tool",
-    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Highland Park Autonomous Zone",
-    "Grandmother",
-    "Arcturus Defense Solutions",
-    "The Quiet Room",
-    "Street Custom 'Spider Hole' Concealed Position Kit",
-    "Arcturus KS-7 'Nursery'",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Slagworks Industrial",
-    "GLMZ",
-    "Arcturus CK-5 'Bloodhound'"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "Triethnic blend: Hispanic/Latin American (43.8%), South Asian (41.3%), and Sub-Saharan African (14.9%). Features reflect balanced contribution across all three ancestries—South Asian facial structure layered with Hispanic and African warmth. Pan-Diaspora genetic signature.",
-    "height_cm": 178,
-    "weight_kg": 62,
-    "build": "Lanky and angular, with the restless physique of someone who forgets to eat and moves in bursts of frantic energy rather than deliberate stride. Narrow shoulders, long limbs, minimal muscle definition.",
-    "hair_color": "Dark brown, natural",
-    "hair_style": "Two neat puffs maintained with obsessive care, cleanly shaped",
-    "hair_length": "Medium",
-    "eye_color": "Deep brown, with faint retinal display overlay grid visible in both irises under direct light",
-    "skin_tone": "Rich warm medium-brown with golden-bronze undertones—the blend of warm Hispanic and African tones layered over South Asian base creates saturated, dimensional complexion. Deep and luminous rather than olive.",
-    "complexion": "Angular face with pronounced cheekbones reflecting South Asian structure softened by broader African heritage influence. Moderately defined jawline with subtle warmth. Nose with South Asian bridge prominence, slightly crooked from informal augmentation application. Perpetually underslept with dark under-eye circles. Warm golden undertones across face intensified by the triethnic blend, with rich depth from Sub-Saharan African heritage creating dimensional, glowing quality. Minimal grooming elsewhere; stark contrast between obsessive hair maintenance and general dishevelment.",
-    "distinguishing_marks": [
-      "Small bioluminescent nose stud (right nostril) that pulses soft blue when in deep focus or concentration—geneware mod applied informally at age 16, noticeably crooked"
-    ],
-    "visible_augmentations": "Bioluminescent nose stud (active, blue-pulsing). Retinal display overlays visible as faint grid patterns in both eyes when lit from certain angles or during eye contact—occasionally flickers with notifications from previous owner's ghost accounts. Both modifications appear salvaged or informally installed rather than corp-grade.",
-    "posture_movement": "Moves in half-jogs through spaces, always carrying something (tablet, prototype, wiring), perpetually mid-gesture mid-sentence. Rarely still—fidgets with hands when stationary. Leans in intensely during conversation. Body language broadcasts simultaneous excitement and sleep deprivation.",
-    "clothing_style": "Tier 4 working-collective aesthetic: hand-patched oversized hoodies (often with The Burrow's mark or indie media distribution logos), cargo pants with multiple pockets for tools and drives, worn synth-leather boots. Layers suggest he pulls on whatever is nearest. Occasional color clashes. No corporate branding. Functional rather than fashionable, but with intentional anti-establishment edge. Wears a single faded wristband (possibly handmade, possibly from an old VR collective)."
-  },
-  "image_prompt": "GLMZ, Vivaan Espinoza-Deshpande: lanky 178cm tall mixed-heritage man with rich warm medium-brown skin, glowing golden undertones, angular South Asian-influenced cheekbones and facial structure. Dark brown eyes with barely-visible retinal display grid overlay. Two neat dark brown puffs, obsessively maintained. Right nostril: softly blue-pulsing bioluminescent nose stud, slightly crooked. Perpetually sleep-deprived with dark under-eye circles. Wearing oversized patched hoodie, cargo pants, worn synth-leather boots. Blue-black neon ambient lighting reflects off skin and stud. Mid-gesture, intense eye contact, fidgety energy captured mid-motion. Great Lakes Metropolitan Zone corporate undercity background, dim industrial glow. Thin frame, restless posture, wired aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 43.8,
-    "South Asian": 41.3,
-    "Sub-Saharan African": 14.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 17.3,
-        "Brazilian": 6.2
-      },
-      "Central American": {
-        "Guatemalan": 5.4,
-        "Salvadoran": 1.9
-      },
-      "Mexican": {
-        "Mexican": 13
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 24.8
-      },
-      "Sri Lankan": {
-        "Sinhalese": 16.5
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Somali": 2.3
-      },
-      "West African": {
-        "Senegalese": 7.5,
-        "Ivorian": 1.3
-      },
-      "Central African": {
-        "Cameroonian": 3.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a64675a0aba789c3ab4647c3",
+    "type":  "character",
+    "name":  "Vivaan Espinoza-Deshpande",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "VR experience designer and underground filmmaker",
+    "age":  19,
+    "status":  "active",
+    "location":  "Highland Park Autonomous Zone, works out of a shared fabrication space called The Burrow, near Michigan Ave and Walton",
+    "description":  "Vivaan Espinoza-Deshpande is lanky and perpetually underslept, with the golden-brown skin of his Ghanaian father\u0027s family and the sharp Armenian nose he got from his grandmother Tamar, which he has decorated with a small bioluminescent stud that pulses faintly blue when he is in deep concentration â€” a mod he got at sixteen from a friend rather than a professional, which is both charming and slightly crooked. He moves through The Burrow at a half-jog, always carrying something, often mid-sentence with someone across the room. His hair is shaped into two neat puffs that he maintains with obsessive regularity even when the rest of his presentation is in chaos.\n\nHe has been making VR experiences since he was fourteen â€” at first pure technical curiosity, then something more urgent. His work is formally experimental and politically raw: his best-known piece, a forty-minute experience called Î¦0.00 that simulates one month of existence at rock-bottom UBC stipend with every sensory detail rendered at maximum fidelity, has been downloaded approximately eighty thousand times across underground distribution channels and has been cited in three separate GLMZ social policy arguments. He did not intend it to be a policy document. He made it because he and his mother lived it for six months when he was twelve and he wanted to know if he could make someone else understand. The answer, apparently, was yes.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Selling out â€” the specific fear that comfort will make him incapable of making honest work",
+                                          "That Î¦0.00 was his best thing and everything after it will be smaller"
+                                      ],
+                       "core_desires":  [
+                                            "To make something that changes what people are able to feel, not just what they know",
+                                            "To earn enough that his mother never has another Î¦0.00 month"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Throwing himself into the next project before finishing grieving the last one",
+                                                 "The collective as family â€” physical proximity to people he trusts"
+                                             ],
+                       "blind_spots":  [
+                                           "His certainty about his own intentions makes him resistant to feedback that implicates those intentions",
+                                           "He is burning himself out at nineteen and everyone can see it except him"
+                                       ],
+                       "secret":  "The anonymous grants are from Arcturus, and Kwabena actually knows this â€” he identified the signature in the transfer metadata six months ago. He has not returned the money or told anyone because it has funded his last two projects and he cannot afford to be principled about it and he is ashamed of both things."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast and dense; shifts between technical VR terminology, HPAZ collective vernacular, and the occasional formal policy phrase absorbed from watching too many social advocacy feeds; uses \u0027right\u0027 as punctuation",
+                            "cadence":  "Rapid-fire in pitching mode; surprisingly still and deliberate when talking about something that genuinely hurt him",
+                            "verbal_tics":  [
+                                                "\u0027Right, right, right\u0027 in rapid succession when listening",
+                                                "\u0027Okay but what ifâ€”\u0027 as a near-constant conversation pivot"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I am not trying to make people feel bad. I am trying to make people feel accurate. There is a difference. Right.\u0027",
+                                                  "\u0027The thing about Î¦0.00 is it was not a political project. It was a â€” I needed to know if I had actually experienced it or just survived it. Turns out both.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The secret project he is working on contains documentary footage of something happening in HPAZ that at least one corponation would prefer remain undocumented â€” he captured it accidentally and has not yet understood what he has",
+                        "Arcturus makes a direct approach, ending the fiction of the anonymous grants and offering a production deal that would give him resources he cannot imagine refusing"
+                    ],
+    "narrative_function":  "Window into HPAZ youth culture and politics; potential technical resource for anyone needing VR or documentary work; represents the tension between raw artistic talent and institutional pressure; his secret project may become a significant plot element",
+    "augmentations":  "Bioluminescent nose stud (geneware, cosmetic, informally applied); retinal display overlay in both eyes (practical; secondhand, slightly glitchy â€” sometimes shows him notifications from the previous owner\u0027s accounts)",
+    "daily_life":  "He sleeps in four-hour blocks whenever the work allows, eats communally at The Burrow when the collective cooks, and spends the rest of his time either in deep production work â€” headset on, entirely unreachable â€” or in frantic social mode, pitching ideas to anyone who will listen and consuming other people\u0027s work with indiscriminate hunger. He is currently simultaneously behind on two collaborative projects and ahead of schedule on a personal piece no one knows he is making.",
+    "affiliation":  "Highland Park Autonomous Zone collective; informal distribution through the Burrow network; has received two anonymous grants he suspects originate from Arcturus but cannot confirm",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  6,
+                                   "vitality":  3,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  5,
+                                 "creativity":  10,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  -4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "prodigy-burnout",
+                               "compromised-idealism",
+                               "hpaz-embedded",
+                               "secret-keeper",
+                               "technically-gifted"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Make the thing you need to make, not the thing that will get you noticed â€” the attention follows or it does not",
+                                              "The collective\u0027s needs come before personal projects; he believes this and violates it regularly"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Argumentative enthusiasm â€” treats conflict as a creative problem to solve",
+                                                 "Genuine hurt, expressed as sudden quiet and withdrawal from the conversation",
+                                                 "Long-form processing that results in something being made; he does not resolve conflict with words, he resolves it with work"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately curious and slightly overwhelming; will ask three personal questions before introducing himself properly",
+                                                   "friends":  "Deeply loyal; unreliable on logistics; will remember the thing you said six months ago that mattered"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More productive; works faster; quality goes up",
+                                                "medium":  "Productivity collapses into compulsive research and note-taking without completion",
+                                                "high":  "Disappears into a headset; is technically present in The Burrow but unreachable; emerges with either nothing or something extraordinary"
+                                            },
+                       "contradictions":  [
+                                              "Talks constantly about collective values and creative community while the secret project is entirely solo and deliberately hidden from the people he trusts most"
+                                          ],
+                       "habits":  [
+                                      "Leaves voice memos to himself constantly â€” has years of recordings he has never revisited",
+                                      "Resets his workspace completely before starting a new project; does not work in an environment that carries the previous thing\u0027s residue"
+                                  ],
+                       "breaking_points":  [
+                                               "Being told his work is impressive for his age",
+                                               "Discovering that the Arcturus money has compromised something he made"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Artist":  0.9,
+                       "Dreamer":  0.9,
+                       "Beauty Seeker":  0.9,
+                       "Romantic":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Highland Park Autonomous Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Snapper-22 \u0027Cricket\u0027",
+                            "Street Custom \u0027Widowmaker\u0027 Rigged Power Tool",
+                            "Street-Custom Memory Alloy Butterfly Knife \u0027Quicksilver\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Highland Park Autonomous Zone",
+                             "Grandmother",
+                             "Arcturus Defense Solutions",
+                             "The Quiet Room",
+                             "Street Custom \u0027Spider Hole\u0027 Concealed Position Kit",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+                             "Slagworks Industrial",
+                             "GLMZ",
+                             "Arcturus CK-5 \u0027Bloodhound\u0027"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "Triethnic blend: Hispanic/Latin American (43.8%), South Asian (41.3%), and Sub-Saharan African (14.9%). Features reflect balanced contribution across all three ancestriesâ€”South Asian facial structure layered with Hispanic and African warmth. Pan-Diaspora genetic signature.",
+                                 "height_cm":  178,
+                                 "weight_kg":  62,
+                                 "build":  "Lanky and angular, with the restless physique of someone who forgets to eat and moves in bursts of frantic energy rather than deliberate stride. Narrow shoulders, long limbs, minimal muscle definition.",
+                                 "hair_color":  "Dark brown, natural",
+                                 "hair_style":  "Two neat puffs maintained with obsessive care, cleanly shaped",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Deep brown, with faint retinal display overlay grid visible in both irises under direct light",
+                                 "skin_tone":  "Rich warm medium-brown with golden-bronze undertonesâ€”the blend of warm Hispanic and African tones layered over South Asian base creates saturated, dimensional complexion. Deep and luminous rather than olive.",
+                                 "complexion":  "Angular face with pronounced cheekbones reflecting South Asian structure softened by broader African heritage influence. Moderately defined jawline with subtle warmth. Nose with South Asian bridge prominence, slightly crooked from informal augmentation application. Perpetually underslept with dark under-eye circles. Warm golden undertones across face intensified by the triethnic blend, with rich depth from Sub-Saharan African heritage creating dimensional, glowing quality. Minimal grooming elsewhere; stark contrast between obsessive hair maintenance and general dishevelment.",
+                                 "distinguishing_marks":  [
+                                                              "Small bioluminescent nose stud (right nostril) that pulses soft blue when in deep focus or concentrationâ€”geneware mod applied informally at age 16, noticeably crooked"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent nose stud (active, blue-pulsing). Retinal display overlays visible as faint grid patterns in both eyes when lit from certain angles or during eye contactâ€”occasionally flickers with notifications from previous owner\u0027s ghost accounts. Both modifications appear salvaged or informally installed rather than corp-grade.",
+                                 "posture_movement":  "Moves in half-jogs through spaces, always carrying something (tablet, prototype, wiring), perpetually mid-gesture mid-sentence. Rarely stillâ€”fidgets with hands when stationary. Leans in intensely during conversation. Body language broadcasts simultaneous excitement and sleep deprivation.",
+                                 "clothing_style":  "Tier 4 working-collective aesthetic: hand-patched oversized hoodies (often with The Burrow\u0027s mark or indie media distribution logos), cargo pants with multiple pockets for tools and drives, worn synth-leather boots. Layers suggest he pulls on whatever is nearest. Occasional color clashes. No corporate branding. Functional rather than fashionable, but with intentional anti-establishment edge. Wears a single faded wristband (possibly handmade, possibly from an old VR collective)."
+                             },
+    "image_prompt":  "GLMZ, Vivaan Espinoza-Deshpande: lanky 178cm tall mixed-heritage man with rich warm medium-brown skin, glowing golden undertones, angular South Asian-influenced cheekbones and facial structure. Dark brown eyes with barely-visible retinal display grid overlay. Two neat dark brown puffs, obsessively maintained. Right nostril: softly blue-pulsing bioluminescent nose stud, slightly crooked. Perpetually sleep-deprived with dark under-eye circles. Wearing oversized patched hoodie, cargo pants, worn synth-leather boots. Blue-black neon ambient lighting reflects off skin and stud. Mid-gesture, intense eye contact, fidgety energy captured mid-motion. Great Lakes Metropolitan Zone corporate undercity background, dim industrial glow. Thin frame, restless posture, wired aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  43.8,
+                             "South Asian":  41.3,
+                             "Sub-Saharan African":  14.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  17.3,
+                                                                                   "Brazilian":  6.2
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  5.4,
+                                                                                     "Salvadoran":  1.9
+                                                                                 },
+                                                            "Mexican":  {
+                                                                            "Mexican":  13
+                                                                        }
+                                                        },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  24.8
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  16.5
+                                                               }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Somali":  2.3
+                                                                         },
+                                                        "West African":  {
+                                                                             "Senegalese":  7.5,
+                                                                             "Ivorian":  1.3
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  3.8
+                                                                            }
+                                                    }
+                        },
+    "tier":  "3"
 }

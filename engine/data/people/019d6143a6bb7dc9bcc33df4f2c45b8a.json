@@ -1,331 +1,356 @@
-{
-  "id": "019d6143a6bb7dc9bcc33df4f2c45b8a",
-  "type": "character",
-  "name": "Eberechi Lindström",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Bio-waste disposal technician, Aurochs Medical Complex",
-  "age": 27,
-  "status": "active",
-  "location": "Aurochs Medical Complex — sub-basement disposal corridors and external processing bays, near North Ave and Milwaukee",
-  "description": "Eberechi Lindström is wiry and quick-moving with the restless energy of someone who has decided that boredom is a personal failing. His skin is light brown with olive undertones, and he has patterned irises — a cosmetic mod he saved three months of UBC stipend for as a teenager, concentric rings of teal and amber — which are his most immediately striking feature in an otherwise unremarkable face. He wears his dark hair shaggy and keeps a small charm of braided copper wire on his left wrist, an offering token for the E.L.F. he calls the Rot, which he believes inhabits the incinerator system and keeps the more dangerous biological material from becoming something worse.\n\nEberechi Lindström is cheerful in the way people sometimes are when they have accepted something that others cannot, which in his case is that he handles medical waste all day, knows exactly what hospitals produce, and has developed a deeply comprehensive understanding of what is discarded and what is valuable. He is not above sharing this information for the right consideration. He is not malicious — he's curious, social, and fundamentally unsqueamish in a way that took him years to recognize as an asset. He calls himself the last thing between GLMZ and a very bad outbreak, which is truer than anyone likes to admit.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.4,
-      "id": 0.7,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "Getting sick from something that slips through his filter and finding out only after it's too late",
-      "Being permanently stuck at the bottom of a system that will never look at him"
-    ],
-    "core_desires": [
-      "Enough money to get certified as an actual medical technician and move sideways into the system",
-      "Someone to genuinely listen to what he knows about how Aurochs actually works"
-    ],
-    "coping_mechanisms": [
-      "Humor as social lubricant",
-      "Devotion to the Rot E.L.F. as genuine spiritual grounding",
-      "Collecting small anomalies from his rounds as a kind of informal research"
-    ],
-    "blind_spots": [
-      "He doesn't fully appreciate how dangerous the information he casually trades actually is",
-      "He assumes people find him as charming as he finds himself"
-    ],
-    "secret": "Over the past eight months he has been quietly cataloguing anomalies in the biological waste stream — irregular tissue samples, disposal manifests that don't match what he collects, a pattern of materials from one specific wing of Aurochs being processed off-manifest entirely. He has not told anyone because he doesn't know if it's illegal, alarming, or both."
-  },
-  "speech_patterns": {
-    "vocabulary": "Cheerful, informal, comfortable with graphic medical terminology delivered completely without affect",
-    "cadence": "Fast-moving, tends to front-load interesting information before the social niceties",
-    "verbal_tics": [
-      "'Not to be gross, but—'",
-      "'The Rot's got opinions about this'",
-      "Laughing at his own observations before finishing them"
-    ],
-    "example_lines": [
-      "'Not to be gross, but based on what I pulled from Sub-3 last Tuesday, someone up there is doing a lot of something they're not filing paperwork for.'",
-      "'The Rot's been restless near the east incinerator all week. Last time that happened, we had a containment breach in the path lab. Just saying.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He approaches someone outside Aurochs with his disposal anomaly records, not sure what to do with them but certain they matter",
-    "Something in the waste stream this week was still technically alive when it shouldn't have been, and he didn't put it in the incinerator — he has it in a sealed container in his locker"
-  ],
-  "narrative_function": "Unexpected information source — knows what medications are being used in volume, what injuries are coming through, what's being quietly disposed of; underestimated by almost everyone; can be leveraged as an entry point into Aurochs",
-  "augmentations": "Patterned irises (cosmetic, teal and amber concentric rings); respiratory filter implant (required by his employer for hazmat work); cosmetic: none else",
-  "daily_life": "He runs four collection circuits through the medical complex daily, manages the incinerator logs, handles the paperwork for hazardous biological material transport, and eats lunch in the sub-basement talking to the Rot.",
-  "affiliation": "Aurochs Medical Complex (contracted staff, sub-tier — employed through a disposal subcontractor called Ferrogate Sanitation Solutions)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 5,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "bio-waste tech",
-      "accidental investigator",
-      "e.l.f. devotee",
-      "information broker (low tier)",
-      "underestimated asset"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never open sealed biological containers without full gear, no exceptions",
-      "Share information proportionally — what he gives should match what he gets",
-      "Don't give names without being asked directly"
-    ],
-    "escalation_ladder": [
-      "Cheerful deflection",
-      "Direct statement that he's not going to help with this specific thing",
-      "Removal of himself from the situation without explanation"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Open and chatty, deploys the patterned irises as a social icebreaker, asks questions fast",
-      "friends": "Loyal and generous, will share more than is wise"
-    },
-    "stress_responses": {
-      "low": "Gets more talkative",
-      "medium": "Jokes become slightly more manic and less grounded",
-      "high": "Goes very quiet and practical — handles the crisis first, falls apart later in private"
-    },
-    "contradictions": [
-      "Presents as someone who doesn't want anything much, but is carefully building toward something specific"
-    ],
-    "habits": [
-      "Leaves copper wire shavings at the incinerator access panel as offering to the Rot",
-      "Keeps a small personal log of disposal anomalies on a chip he carries in his boot",
-      "Whistles while doing the most unpleasant parts of his job"
-    ],
-    "breaking_points": [
-      "Discovering that what he has been disposing of has been causing direct harm to people",
-      "Being threatened by someone with the power to end his contract and strand him"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good, employer-maintained",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Nurturer": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Aurochs Medical Complex",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Geartown to a Ghanaian-Uzbek father and Italian-Burkinabe mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Left school at 18, worked a series of logistics jobs in Geartown",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Hired by Ferrogate Sanitation Solutions, assigned to Aurochs Medical Complex contract",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began cataloguing disposal anomalies in the east wing",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ],
-  "related_entities": [
-    "Aurochs Medical Complex",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Copper",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Compass Rose",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Genuinely pan-diaspora: Sub-Saharan African (33.8%) and Northern European (32.2%) form the dominant dual foundation, with substantial Hispanic/Latin American (20.3%) contribution creating warm undertones and subtle facial width. South Asian (8.4%), East Asian (3.8%), and Eastern European (1.5%) add minor refinement to overall phenotype. Results in a balanced, warm brown complexion with golden-caramel luminosity, moderately prominent cheekbones with slight width from Hispanic ancestry, and facial structure that reads as authentically multi-continental rather than distinctly regional.",
-    "height_cm": 172,
-    "weight_kg": 62,
-    "build": "Wiry and lean with compact muscle distribution — the frame of someone who moves constantly and efficiently through confined spaces. No excess weight; all kinetic energy.",
-    "hair_color": "Dark brown, natural",
-    "hair_style": "Shaggy, deliberately unkempt, falls across forehead with slight curl",
-    "hair_length": "Medium",
-    "eye_color": "Patterned irises — concentric rings of teal and amber, custom cosmetic modification",
-    "skin_tone": "Warm golden-brown with balanced caramel undertones, reflecting the equal weight of Sub-Saharan African and Northern European ancestry anchored by Hispanic/Latin American warmth. Radiant and even-toned with natural luminosity.",
-    "complexion": "Youthful face with moderately prominent cheekbones of balanced width, combining African angularity with Hispanic-Latino structure. Expressive mouth defaulting to slight smile. Skin displays warm golden radiance and even texture without visible scarring. Regular grooming despite working conditions. Faint discoloration around mouth and jawline from sustained respiratory filter implant wear.",
-    "distinguishing_marks": [
-      "Braided copper wire charm worn on left wrist — thin, handmade, used as an offering token",
-      "Faint discoloration around mouth and jawline from sustained respiratory filter implant wear — slightly darker patch where the seal sits"
-    ],
-    "visible_augmentations": "Respiratory filter implant visible as a small seam-line along the left jaw at rest; becomes more apparent when he speaks. The patterned irises dominate first impression — deliberate cosmetic modification that catches light distinctly. No other visible chrome or subdermal work.",
-    "posture_movement": "Quick, economical movements with restless energy even when still. He leans forward slightly when listening, suggesting engagement and curiosity. Comfortable in cramped spaces — moves with the unselfconscious fluidity of someone at home underground. Often fidgets with the copper wire charm on his wrist.",
-    "clothing_style": "Tier 5 practical: reinforced grey-green Ferrogate Sanitation Solutions issue coveralls (corporate branding faded), fitted snugly to avoid snags in tight corridors. Undershirt usually synthetic blend in muted colors. Heavy-duty steel-toed boots, scuffed and worn. A faded denim jacket layered over coveralls on breaks, pockets stuffed with incinerator logs, hand wipes, and wire. No luxury items visible — everything functional, everything used."
-  },
-  "image_prompt": "Eberechi Lindström, 172cm lean sanitation worker with warm golden-brown skin blending Sub-Saharan African and Northern European features with Hispanic-Latino warmth. Youthful face with moderate prominent cheekbones, slight smile, dark shaggy brown hair falling across forehead. Striking custom teal-amber concentric patterned irises. Faint respiratory filter implant scar along left jawline. Wearing faded grey-green Ferrogate Sanitation Solutions coveralls, fitted snugly, layered with worn denim jacket, steel-toed boots. Copper wire charm braided on left wrist. Restless posture, economical movements. Underground GLMZ tunnel setting, cool blue-grey industrial lighting casting shadows across face. GLMZ, gritty working-class aesthetic, slightly forward lean, fidgeting with charm. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 33.8,
-    "Northern European": 32.2,
-    "Hispanic/Latin American": 20.3,
-    "South Asian": 8.4,
-    "East Asian": 3.8,
-    "Eastern European": 1.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zambian": 6.9,
-        "South African": 1.4
-      },
-      "Central African": {
-        "Gabonese": 7.8
-      },
-      "West African": {
-        "Senegalese": 9.2,
-        "Nigerian": 8.5
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Danish": 32.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 12.8
-      },
-      "Mexican": {
-        "Mexican": 6.5
-      },
-      "South American": {
-        "Venezuelan": 0.8,
-        "Colombian": 0.2
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Tamil": 0.6,
-        "Punjabi": 0.9
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 2.2
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 4.7
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 3.8
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Serbian": 0.8
-      },
-      "Slavic East": {
-        "Belarusian": 0.2,
-        "Ukrainian": 0.3
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 0.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6bb7dc9bcc33df4f2c45b8a",
+    "type":  "character",
+    "name":  "Eberechi LindstrÃ¶m",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Bio-waste disposal technician, Aurochs Medical Complex",
+    "age":  27,
+    "status":  "active",
+    "location":  "Aurochs Medical Complex â€” sub-basement disposal corridors and external processing bays, near North Ave and Milwaukee",
+    "description":  "Eberechi LindstrÃ¶m is wiry and quick-moving with the restless energy of someone who has decided that boredom is a personal failing. His skin is light brown with olive undertones, and he has patterned irises â€” a cosmetic mod he saved three months of UBC stipend for as a teenager, concentric rings of teal and amber â€” which are his most immediately striking feature in an otherwise unremarkable face. He wears his dark hair shaggy and keeps a small charm of braided copper wire on his left wrist, an offering token for the E.L.F. he calls the Rot, which he believes inhabits the incinerator system and keeps the more dangerous biological material from becoming something worse.\n\nEberechi LindstrÃ¶m is cheerful in the way people sometimes are when they have accepted something that others cannot, which in his case is that he handles medical waste all day, knows exactly what hospitals produce, and has developed a deeply comprehensive understanding of what is discarded and what is valuable. He is not above sharing this information for the right consideration. He is not malicious â€” he\u0027s curious, social, and fundamentally unsqueamish in a way that took him years to recognize as an asset. He calls himself the last thing between GLMZ and a very bad outbreak, which is truer than anyone likes to admit.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Getting sick from something that slips through his filter and finding out only after it\u0027s too late",
+                                          "Being permanently stuck at the bottom of a system that will never look at him"
+                                      ],
+                       "core_desires":  [
+                                            "Enough money to get certified as an actual medical technician and move sideways into the system",
+                                            "Someone to genuinely listen to what he knows about how Aurochs actually works"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Humor as social lubricant",
+                                                 "Devotion to the Rot E.L.F. as genuine spiritual grounding",
+                                                 "Collecting small anomalies from his rounds as a kind of informal research"
+                                             ],
+                       "blind_spots":  [
+                                           "He doesn\u0027t fully appreciate how dangerous the information he casually trades actually is",
+                                           "He assumes people find him as charming as he finds himself"
+                                       ],
+                       "secret":  "Over the past eight months he has been quietly cataloguing anomalies in the biological waste stream â€” irregular tissue samples, disposal manifests that don\u0027t match what he collects, a pattern of materials from one specific wing of Aurochs being processed off-manifest entirely. He has not told anyone because he doesn\u0027t know if it\u0027s illegal, alarming, or both."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Cheerful, informal, comfortable with graphic medical terminology delivered completely without affect",
+                            "cadence":  "Fast-moving, tends to front-load interesting information before the social niceties",
+                            "verbal_tics":  [
+                                                "\u0027Not to be gross, butâ€”\u0027",
+                                                "\u0027The Rot\u0027s got opinions about this\u0027",
+                                                "Laughing at his own observations before finishing them"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Not to be gross, but based on what I pulled from Sub-3 last Tuesday, someone up there is doing a lot of something they\u0027re not filing paperwork for.\u0027",
+                                                  "\u0027The Rot\u0027s been restless near the east incinerator all week. Last time that happened, we had a containment breach in the path lab. Just saying.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He approaches someone outside Aurochs with his disposal anomaly records, not sure what to do with them but certain they matter",
+                        "Something in the waste stream this week was still technically alive when it shouldn\u0027t have been, and he didn\u0027t put it in the incinerator â€” he has it in a sealed container in his locker"
+                    ],
+    "narrative_function":  "Unexpected information source â€” knows what medications are being used in volume, what injuries are coming through, what\u0027s being quietly disposed of; underestimated by almost everyone; can be leveraged as an entry point into Aurochs",
+    "augmentations":  "Patterned irises (cosmetic, teal and amber concentric rings); respiratory filter implant (required by his employer for hazmat work); cosmetic: none else",
+    "daily_life":  "He runs four collection circuits through the medical complex daily, manages the incinerator logs, handles the paperwork for hazardous biological material transport, and eats lunch in the sub-basement talking to the Rot.",
+    "affiliation":  "Aurochs Medical Complex (contracted staff, sub-tier â€” employed through a disposal subcontractor called Ferrogate Sanitation Solutions)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  5,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "bio-waste tech",
+                               "accidental investigator",
+                               "e.l.f. devotee",
+                               "information broker (low tier)",
+                               "underestimated asset"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never open sealed biological containers without full gear, no exceptions",
+                                              "Share information proportionally â€” what he gives should match what he gets",
+                                              "Don\u0027t give names without being asked directly"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Cheerful deflection",
+                                                 "Direct statement that he\u0027s not going to help with this specific thing",
+                                                 "Removal of himself from the situation without explanation"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Open and chatty, deploys the patterned irises as a social icebreaker, asks questions fast",
+                                                   "friends":  "Loyal and generous, will share more than is wise"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Gets more talkative",
+                                                "medium":  "Jokes become slightly more manic and less grounded",
+                                                "high":  "Goes very quiet and practical â€” handles the crisis first, falls apart later in private"
+                                            },
+                       "contradictions":  [
+                                              "Presents as someone who doesn\u0027t want anything much, but is carefully building toward something specific"
+                                          ],
+                       "habits":  [
+                                      "Leaves copper wire shavings at the incinerator access panel as offering to the Rot",
+                                      "Keeps a small personal log of disposal anomalies on a chip he carries in his boot",
+                                      "Whistles while doing the most unpleasant parts of his job"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering that what he has been disposing of has been causing direct harm to people",
+                                               "Being threatened by someone with the power to end his contract and strand him"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good, employer-maintained",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Nurturer":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Aurochs Medical Complex",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Geartown to a Ghanaian-Uzbek father and Italian-Burkinabe mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Left school at 18, worked a series of logistics jobs in Geartown",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Hired by Ferrogate Sanitation Solutions, assigned to Aurochs Medical Complex contract",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began cataloguing disposal anomalies in the east wing",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KP-22 Sport \u0027Plinkmaster\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KP-22 Sport \u0027Plinkmaster\u0027"
+                            ],
+    "related_entities":  [
+                             "Aurochs Medical Complex",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Copper",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "Compass Rose",
+                             "GLMZ"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Genuinely pan-diaspora: Sub-Saharan African (33.8%) and Northern European (32.2%) form the dominant dual foundation, with substantial Hispanic/Latin American (20.3%) contribution creating warm undertones and subtle facial width. South Asian (8.4%), East Asian (3.8%), and Eastern European (1.5%) add minor refinement to overall phenotype. Results in a balanced, warm brown complexion with golden-caramel luminosity, moderately prominent cheekbones with slight width from Hispanic ancestry, and facial structure that reads as authentically multi-continental rather than distinctly regional.",
+                                 "height_cm":  172,
+                                 "weight_kg":  62,
+                                 "build":  "Wiry and lean with compact muscle distribution â€” the frame of someone who moves constantly and efficiently through confined spaces. No excess weight; all kinetic energy.",
+                                 "hair_color":  "Dark brown, natural",
+                                 "hair_style":  "Shaggy, deliberately unkempt, falls across forehead with slight curl",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Patterned irises â€” concentric rings of teal and amber, custom cosmetic modification",
+                                 "skin_tone":  "Warm golden-brown with balanced caramel undertones, reflecting the equal weight of Sub-Saharan African and Northern European ancestry anchored by Hispanic/Latin American warmth. Radiant and even-toned with natural luminosity.",
+                                 "complexion":  "Youthful face with moderately prominent cheekbones of balanced width, combining African angularity with Hispanic-Latino structure. Expressive mouth defaulting to slight smile. Skin displays warm golden radiance and even texture without visible scarring. Regular grooming despite working conditions. Faint discoloration around mouth and jawline from sustained respiratory filter implant wear.",
+                                 "distinguishing_marks":  [
+                                                              "Braided copper wire charm worn on left wrist â€” thin, handmade, used as an offering token",
+                                                              "Faint discoloration around mouth and jawline from sustained respiratory filter implant wear â€” slightly darker patch where the seal sits"
+                                                          ],
+                                 "visible_augmentations":  "Respiratory filter implant visible as a small seam-line along the left jaw at rest; becomes more apparent when he speaks. The patterned irises dominate first impression â€” deliberate cosmetic modification that catches light distinctly. No other visible chrome or subdermal work.",
+                                 "posture_movement":  "Quick, economical movements with restless energy even when still. He leans forward slightly when listening, suggesting engagement and curiosity. Comfortable in cramped spaces â€” moves with the unselfconscious fluidity of someone at home underground. Often fidgets with the copper wire charm on his wrist.",
+                                 "clothing_style":  "Tier 5 practical: reinforced grey-green Ferrogate Sanitation Solutions issue coveralls (corporate branding faded), fitted snugly to avoid snags in tight corridors. Undershirt usually synthetic blend in muted colors. Heavy-duty steel-toed boots, scuffed and worn. A faded denim jacket layered over coveralls on breaks, pockets stuffed with incinerator logs, hand wipes, and wire. No luxury items visible â€” everything functional, everything used."
+                             },
+    "image_prompt":  "Eberechi LindstrÃ¶m, 172cm lean sanitation worker with warm golden-brown skin blending Sub-Saharan African and Northern European features with Hispanic-Latino warmth. Youthful face with moderate prominent cheekbones, slight smile, dark shaggy brown hair falling across forehead. Striking custom teal-amber concentric patterned irises. Faint respiratory filter implant scar along left jawline. Wearing faded grey-green Ferrogate Sanitation Solutions coveralls, fitted snugly, layered with worn denim jacket, steel-toed boots. Copper wire charm braided on left wrist. Restless posture, economical movements. Underground GLMZ tunnel setting, cool blue-grey industrial lighting casting shadows across face. GLMZ, gritty working-class aesthetic, slightly forward lean, fidgeting with charm. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  33.8,
+                             "Northern European":  32.2,
+                             "Hispanic/Latin American":  20.3,
+                             "South Asian":  8.4,
+                             "East Asian":  3.8,
+                             "Eastern European":  1.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zambian":  6.9,
+                                                                                 "South African":  1.4
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Gabonese":  7.8
+                                                                            },
+                                                        "West African":  {
+                                                                             "Senegalese":  9.2,
+                                                                             "Nigerian":  8.5
+                                                                         }
+                                                    },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Danish":  32.2
+                                                                       }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  12.8
+                                                                          },
+                                                            "Mexican":  {
+                                                                            "Mexican":  6.5
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Venezuelan":  0.8,
+                                                                                   "Colombian":  0.2
+                                                                               }
+                                                        },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Tamil":  0.6,
+                                                               "Punjabi":  0.9
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  2.2
+                                                               },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  4.7
+                                                                }
+                                            },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  3.8
+                                                            }
+                                           },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Serbian":  0.8
+                                                                      },
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  0.2,
+                                                                         "Ukrainian":  0.3
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  0.2
+                                                                         }
+                                                 }
+                        },
+    "tier":  "3"
 }

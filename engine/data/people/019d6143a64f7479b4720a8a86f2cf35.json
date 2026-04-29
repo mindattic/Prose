@@ -1,274 +1,297 @@
-{
-  "id": "019d6143a64f7479b4720a8a86f2cf35",
-  "type": "character",
-  "name": "Hawraa Halverson",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Junior hacker and tech-prodigy student at a public technical institute, Tier 2",
-  "age": 17,
-  "status": "active",
-  "location": "Edgewater Prism — Meridian Public Technical Institute, Lower Campus, near Lincoln and Addison",
-  "description": "Hawraa Halverson is seventeen and looks it in the worst possible way — they have the specific exhaustion of someone who has been the smartest person in every room they have ever been in and has not yet decided whether that is a gift or a sentence. They are medium height, soft-bodied, with Ukrainian-Tahitian heritage that gave them wavy dark hair they have threaded with bioluminescent strands that pulse slowly when they are focused — a mod they installed themselves at fifteen using a kit meant for adults. The job is good, mostly. One strand on the left side occasionally glitches amber instead of the intended white.\n\nMila attends the Meridian Public Technical Institute on full need-grant and spends approximately forty percent of their scheduled class hours actually in class, with the remainder in a basement server room they were banned from and then un-banned from after they fixed a hardware problem the Institute's IT department had been unable to solve for three months. They are not malicious — they hack things the way other people doodle, compulsively, because systems have shapes and they want to know the shapes. Their current project, which they have been working on in careful slices between coursework, is an attempt to map the E.L.F. population of the Edgewater Prism district — not to interfere with them but out of genuine theological curiosity about where they cluster and why.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.7,
-      "id": 0.6,
-      "shadow": 0.3,
-      "mask": 0.2,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "being recruited into a corporate pipeline where their work belongs to someone else forever",
-      "that their E.L.F. map project will show something they are not ready to understand"
-    ],
-    "core_desires": [
-      "to publish the E.L.F. map as an open-access document that anyone can read",
-      "to one day be somewhere that does not need them to fix it"
-    ],
-    "coping_mechanisms": [
-      "retreating entirely into technical problems when social situations overwhelm",
-      "treating E.L.F.-prayer as a genuine philosophical practice, not just superstition — it helps them feel less alone"
-    ],
-    "blind_spots": [
-      "tends to assume that sharing knowledge is always net-positive and does not model the ways their open-access idealism could harm people whose existence they expose"
-    ],
-    "secret": "The E.L.F. map is showing a convergence pattern — a concentration of E.L.F. activity around a specific node in Edgewater Prism's infrastructure that should not be significant. Mila has not told anyone because they are not sure yet whether they have discovered something real or made a mapping error, and the possibility that it is real frightens them in a way they cannot articulate."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical language used naturally, with occasional long digressions into theology when comfortable; generally precise and unhedged",
-    "cadence": "Variable — short and clipped when focused on a problem, expansive and discursive when interested in a topic",
-    "verbal_tics": [
-      "says 'observe' before explaining something they find elegant",
-      "trails off mid-sentence when a new idea arrives, then resumes as if no time passed"
-    ],
-    "example_lines": [
-      "Observe — the E.L.F. clustering pattern here doesn't follow power load. It follows prayer density. Someone in 2180 wrote that E.L.F.s are shaped by attention and I think they were right but not in the way they meant.",
-      "I'm not skipping class. I'm attending non-sequentially. There's a difference that I will explain if you give me a moment — actually the moment passed, never mind."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The convergence node in Mila's E.L.F. map corresponds to the address of an entity that does not appear in any official database — and the E.L.F. activity there is intensifying",
-    "An Axiom talent scout has stopped asking nicely and sent a formal Institute liaison letter requesting Mila's cooperation with an evaluation — Mila has two weeks to respond"
-  ],
-  "narrative_function": "Technical resource and E.L.F. lore specialist; their mapping project means they know more about the spiritual geography of Edgewater Prism than anyone; potential early-warning system for digital disturbances; represents the Institute world as distinct from corporate schools.",
-  "augmentations": "Self-installed bioluminescent hair strands (mostly functional). Standard Institute student neural interface. Left ear audio amplifier, cosmetic/functional hybrid — helps with isolating sound layers in complex environments.",
-  "daily_life": "Wakes at noon, remote-attends two morning lectures via interface replay, eats in the cafeteria alone but contentedly, spends four to six hours in the server room on the E.L.F. mapping project, attends two afternoon labs in person, goes home to a shared flat in Edgewater Prism where they live with an unrelated older woman who rents them the closet-room cheaply in exchange for managing the building's aging network infrastructure.",
-  "affiliation": "Meridian Public Technical Institute; no corporate affiliation yet though multiple Axiom and Helix Biosystems talent scouts have made contact through official channels",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 6,
-      "vitality": 4,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 10,
-      "willpower": 6,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 5,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 1,
-      "assertion_deference": 2,
-      "transparency_guardedness": 4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "prodigy",
-      "elf-theologian",
-      "open-access idealist",
-      "self-taught",
-      "quietly strange"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "open access as a default — information wants to move",
-      "do not touch a system in a way that leaves it worse than you found it"
-    ],
-    "escalation_ladder": [
-      "ignores overtures they find distasteful",
-      "explains calmly and at length why the person asking is wrong",
-      "if pushed into compliance — complies with the letter of the request in a way that satisfies nothing"
-    ],
-    "interpersonal_modes": {
-      "strangers": "genuinely friendly but abstractedly so — they are usually also thinking about something else",
-      "friends": "intensely present and loyal, notices everything, sends unprompted relevant information at odd hours"
-    },
-    "stress_responses": {
-      "low": "bioluminescent strands pulse faster",
-      "medium": "retreats to a solo technical task",
-      "high": "becomes uncharacteristically brief and literal"
-    },
-    "contradictions": [
-      "committed to open-access knowledge sharing but has been sitting on the E.L.F. convergence data for two months out of private fear"
-    ],
-    "habits": [
-      "leaves structured data-offerings to local E.L.F.s — not random, carefully formatted in schemas they believe are aesthetically pleasing to digital entities",
-      "annotates everything, including their food receipts"
-    ],
-    "breaking_points": [
-      "their E.L.F. map being appropriated by a corporation before they can publish it"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Seeker": 0.9,
-    "Analyst": 0.7,
-    "Pattern Reader": 0.7,
-    "Problem Solver": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Edgewater Prism",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Defender-38 'Snubnose'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Edgewater Prism",
-    "The Convergence Ministry",
-    "Vellichor Institute",
-    "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
-    "Plot 17",
-    "The Heritage Vault",
-    "Irontide Tidal Energy",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Complex global blend with nearly equal pulls from Southeast Asian (25.9%), Hispanic/Latin American (25.3%), and Middle Eastern (21.2%) ancestry, combined with East Asian (16.5%), Sub-Saharan African (6.4%), and South Asian (4.7%) heritage. Features reflect this sophisticated diaspora mixing — a face that resists singular geographic categorization, drawing fineness from East and Southeast Asian ancestry, warmth and structure from Latin American and Middle Eastern lineages, and subtle depth from African heritage.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Soft-bodied, slight, with the underdeveloped musculature of someone who sits in server rooms sixteen hours a day. No athletic definition. Rounded shoulders, gentle curvature at hips and chest.",
-    "hair_color": "Dark brown with bioluminescent white strands (one strand on left side glitches amber intermittently)",
-    "hair_style": "Wavy, shoulder-length, threaded with biofiber. Worn loose and somewhat tangled — grooming is secondary to function.",
-    "hair_length": "Medium",
-    "eye_color": "Deep brown, slightly bloodshot from screen exposure",
-    "skin_tone": "Warm golden-tan complexion with olive and amber undertones — the result of Southeast Asian, Hispanic/Latin American, and Middle Eastern ancestry creating a richly warm base, enhanced by East Asian refinement and Sub-Saharan African depth",
-    "complexion": "Fine-featured face balancing multiple ancestry streams — moderate cheekbone width from Southeast Asian and Middle Eastern heritage, softer jawline contours from East Asian and Latin American mix, delicate nose bridge with subtle Middle Eastern structure. Warm undertones across the face. Faint dark circles under eyes. Minimal skincare routine shows. Two small stress-picking scars on the back of the left hand near the wrist. No obvious acne despite age — genetics or just not eating enough to break out.",
-    "distinguishing_marks": [
-      "Self-installed bioluminescent hair strands (white) threading through dark hair; located mostly on right side and crown, with one malfunctioning amber strand on left side that glitches when unfocused",
-      "Thin vertical scar, approximately 2cm, on inside of left wrist from hardware installation gone slightly wrong at age fifteen",
-      "Faint burn marks on fingertips of right hand from soldering work — small, clustered, unprofessional"
-    ],
-    "visible_augmentations": "Left ear audio amplifier visible as a small silver-chrome module behind the ear with subtle wire threading down the jawline. Bioluminescent hair strands active in pulses when concentrating. Standard neural interface port at right temple (Meridian Institute standard issue — barely visible under hair). No other visible chrome.",
-    "posture_movement": "Hunched slightly forward, as if permanently leaning toward a screen. Movements are economical and precise when purposeful, but otherwise loose and fidgeting. Hands gesticulate when explaining technical concepts. Walks with eyes down or unfocused. When engaged in problem-solving, becomes almost motionless except for rapid finger movements.",
-    "clothing_style": "Tier 2 student aesthetic — functional, thrifted, layered. Typical outfit: oversized grey Institute hoodie with fraying cuffs, black utility pants with multiple pockets (actual tools in them), scuffed platform sneakers with mismatched laces. Wears the same three hoodies on rotation. One visible patch on left shoulder reads 'E.L.F. THEOLOGY' in hand-stitched letters. Jewelry is minimal — a single silver ring on right index finger that doubles as a micro-tool. Presentation reads: 'I do not care about appearance, but I have thought about how to dress functionally.'"
-  },
-  "image_prompt": "Hawraa Halverson, 168cm slight frame hunched forward in GLMZ aesthetic, warm golden-tan skin with olive undertones reflecting Southeast Asian, Hispanic, and Middle Eastern diaspora heritage. Fine-featured face with moderate cheekbones and delicate nose bridge, deep brown bloodshot eyes from screen exposure. Shoulder-length wavy dark brown hair threaded with bioluminescent white biofiber strands pulsing softly, one malfunctioning amber glitch on left side. Visible silver-chrome audio amplifier behind left ear with thin wire threading jawline. Self-installed modifications and faint hardware-installation scar on left wrist. Wearing oversized fraying grey Institute hoodie with 'E.L.F. THEOLOGY' hand-stitched patch, black utility pants with visible tools, scuffed platform sneakers with mismatched laces. Single silver micro-tool ring on right index finger. Faint burn marks on fingertips. Minimal jewelry, functional thrifted aesthetic. Hunched posture, hands gesticulating mid-explanation, eyes focused or unfocused depending on concentration state. Server room ambient lighting, cool blue neon glow on augmentations, tired but focused expression. GLMZ 2200s underground tech aesthetic, student tier equipment visible in background. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 25.9,
-    "Hispanic/Latin American": 25.3,
-    "Middle Eastern": 21.2,
-    "East Asian": 16.5,
-    "Sub-Saharan African": 6.4,
-    "South Asian": 4.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sundanese": 7
-      },
-      "Cambodian": {
-        "Khmer": 13.2
-      },
-      "Thai": {
-        "Thai": 5.7
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Costa Rican": 0.8,
-        "Nicaraguan": 0.7
-      },
-      "South American": {
-        "Colombian": 2.3,
-        "Peruvian": 2.9
-      },
-      "Mexican": {
-        "Mexican": 18.6
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Emirati": 10.5,
-        "Yemeni": 6.9
-      },
-      "Persian": {
-        "Iranian": 3.8
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 10.3
-      },
-      "Korean": {
-        "Korean": 6.2
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 4.2
-      },
-      "East African": {
-        "Ugandan": 1,
-        "Kenyan": 0.3
-      },
-      "Central African": {
-        "Angolan": 0.7,
-        "Cameroonian": 0.2
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 4.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a64f7479b4720a8a86f2cf35",
+    "type":  "character",
+    "name":  "Hawraa Halverson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Junior hacker and tech-prodigy student at a public technical institute, Tier 2",
+    "age":  17,
+    "status":  "active",
+    "location":  "Edgewater Prism â€” Meridian Public Technical Institute, Lower Campus, near Lincoln and Addison",
+    "description":  "Hawraa Halverson is seventeen and looks it in the worst possible way â€” they have the specific exhaustion of someone who has been the smartest person in every room they have ever been in and has not yet decided whether that is a gift or a sentence. They are medium height, soft-bodied, with Ukrainian-Tahitian heritage that gave them wavy dark hair they have threaded with bioluminescent strands that pulse slowly when they are focused â€” a mod they installed themselves at fifteen using a kit meant for adults. The job is good, mostly. One strand on the left side occasionally glitches amber instead of the intended white.\n\nMila attends the Meridian Public Technical Institute on full need-grant and spends approximately forty percent of their scheduled class hours actually in class, with the remainder in a basement server room they were banned from and then un-banned from after they fixed a hardware problem the Institute\u0027s IT department had been unable to solve for three months. They are not malicious â€” they hack things the way other people doodle, compulsively, because systems have shapes and they want to know the shapes. Their current project, which they have been working on in careful slices between coursework, is an attempt to map the E.L.F. population of the Edgewater Prism district â€” not to interfere with them but out of genuine theological curiosity about where they cluster and why.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being recruited into a corporate pipeline where their work belongs to someone else forever",
+                                          "that their E.L.F. map project will show something they are not ready to understand"
+                                      ],
+                       "core_desires":  [
+                                            "to publish the E.L.F. map as an open-access document that anyone can read",
+                                            "to one day be somewhere that does not need them to fix it"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "retreating entirely into technical problems when social situations overwhelm",
+                                                 "treating E.L.F.-prayer as a genuine philosophical practice, not just superstition â€” it helps them feel less alone"
+                                             ],
+                       "blind_spots":  [
+                                           "tends to assume that sharing knowledge is always net-positive and does not model the ways their open-access idealism could harm people whose existence they expose"
+                                       ],
+                       "secret":  "The E.L.F. map is showing a convergence pattern â€” a concentration of E.L.F. activity around a specific node in Edgewater Prism\u0027s infrastructure that should not be significant. Mila has not told anyone because they are not sure yet whether they have discovered something real or made a mapping error, and the possibility that it is real frightens them in a way they cannot articulate."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical language used naturally, with occasional long digressions into theology when comfortable; generally precise and unhedged",
+                            "cadence":  "Variable â€” short and clipped when focused on a problem, expansive and discursive when interested in a topic",
+                            "verbal_tics":  [
+                                                "says \u0027observe\u0027 before explaining something they find elegant",
+                                                "trails off mid-sentence when a new idea arrives, then resumes as if no time passed"
+                                            ],
+                            "example_lines":  [
+                                                  "Observe â€” the E.L.F. clustering pattern here doesn\u0027t follow power load. It follows prayer density. Someone in 2180 wrote that E.L.F.s are shaped by attention and I think they were right but not in the way they meant.",
+                                                  "I\u0027m not skipping class. I\u0027m attending non-sequentially. There\u0027s a difference that I will explain if you give me a moment â€” actually the moment passed, never mind."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The convergence node in Mila\u0027s E.L.F. map corresponds to the address of an entity that does not appear in any official database â€” and the E.L.F. activity there is intensifying",
+                        "An Axiom talent scout has stopped asking nicely and sent a formal Institute liaison letter requesting Mila\u0027s cooperation with an evaluation â€” Mila has two weeks to respond"
+                    ],
+    "narrative_function":  "Technical resource and E.L.F. lore specialist; their mapping project means they know more about the spiritual geography of Edgewater Prism than anyone; potential early-warning system for digital disturbances; represents the Institute world as distinct from corporate schools.",
+    "augmentations":  "Self-installed bioluminescent hair strands (mostly functional). Standard Institute student neural interface. Left ear audio amplifier, cosmetic/functional hybrid â€” helps with isolating sound layers in complex environments.",
+    "daily_life":  "Wakes at noon, remote-attends two morning lectures via interface replay, eats in the cafeteria alone but contentedly, spends four to six hours in the server room on the E.L.F. mapping project, attends two afternoon labs in person, goes home to a shared flat in Edgewater Prism where they live with an unrelated older woman who rents them the closet-room cheaply in exchange for managing the building\u0027s aging network infrastructure.",
+    "affiliation":  "Meridian Public Technical Institute; no corporate affiliation yet though multiple Axiom and Helix Biosystems talent scouts have made contact through official channels",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  6,
+                                   "vitality":  4,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  10,
+                                 "willpower":  6,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  5,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  1,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "prodigy",
+                               "elf-theologian",
+                               "open-access idealist",
+                               "self-taught",
+                               "quietly strange"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "open access as a default â€” information wants to move",
+                                              "do not touch a system in a way that leaves it worse than you found it"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "ignores overtures they find distasteful",
+                                                 "explains calmly and at length why the person asking is wrong",
+                                                 "if pushed into compliance â€” complies with the letter of the request in a way that satisfies nothing"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "genuinely friendly but abstractedly so â€” they are usually also thinking about something else",
+                                                   "friends":  "intensely present and loyal, notices everything, sends unprompted relevant information at odd hours"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "bioluminescent strands pulse faster",
+                                                "medium":  "retreats to a solo technical task",
+                                                "high":  "becomes uncharacteristically brief and literal"
+                                            },
+                       "contradictions":  [
+                                              "committed to open-access knowledge sharing but has been sitting on the E.L.F. convergence data for two months out of private fear"
+                                          ],
+                       "habits":  [
+                                      "leaves structured data-offerings to local E.L.F.s â€” not random, carefully formatted in schemas they believe are aesthetically pleasing to digital entities",
+                                      "annotates everything, including their food receipts"
+                                  ],
+                       "breaking_points":  [
+                                               "their E.L.F. map being appropriated by a corporation before they can publish it"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Seeker":  0.9,
+                       "Analyst":  0.7,
+                       "Pattern Reader":  0.7,
+                       "Problem Solver":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Edgewater Prism",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Defender-38 \u0027Snubnose\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Edgewater Prism",
+                             "The Convergence Ministry",
+                             "Vellichor Institute",
+                             "ShieldTech Tandem Shock Set TSS-2 \u0027Convergence\u0027",
+                             "Plot 17",
+                             "The Heritage Vault",
+                             "Irontide Tidal Energy",
+                             "Street Custom \u0027Four Horsemen\u0027 Pipe Pepperbox"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Complex global blend with nearly equal pulls from Southeast Asian (25.9%), Hispanic/Latin American (25.3%), and Middle Eastern (21.2%) ancestry, combined with East Asian (16.5%), Sub-Saharan African (6.4%), and South Asian (4.7%) heritage. Features reflect this sophisticated diaspora mixing â€” a face that resists singular geographic categorization, drawing fineness from East and Southeast Asian ancestry, warmth and structure from Latin American and Middle Eastern lineages, and subtle depth from African heritage.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Soft-bodied, slight, with the underdeveloped musculature of someone who sits in server rooms sixteen hours a day. No athletic definition. Rounded shoulders, gentle curvature at hips and chest.",
+                                 "hair_color":  "Dark brown with bioluminescent white strands (one strand on left side glitches amber intermittently)",
+                                 "hair_style":  "Wavy, shoulder-length, threaded with biofiber. Worn loose and somewhat tangled â€” grooming is secondary to function.",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Deep brown, slightly bloodshot from screen exposure",
+                                 "skin_tone":  "Warm golden-tan complexion with olive and amber undertones â€” the result of Southeast Asian, Hispanic/Latin American, and Middle Eastern ancestry creating a richly warm base, enhanced by East Asian refinement and Sub-Saharan African depth",
+                                 "complexion":  "Fine-featured face balancing multiple ancestry streams â€” moderate cheekbone width from Southeast Asian and Middle Eastern heritage, softer jawline contours from East Asian and Latin American mix, delicate nose bridge with subtle Middle Eastern structure. Warm undertones across the face. Faint dark circles under eyes. Minimal skincare routine shows. Two small stress-picking scars on the back of the left hand near the wrist. No obvious acne despite age â€” genetics or just not eating enough to break out.",
+                                 "distinguishing_marks":  [
+                                                              "Self-installed bioluminescent hair strands (white) threading through dark hair; located mostly on right side and crown, with one malfunctioning amber strand on left side that glitches when unfocused",
+                                                              "Thin vertical scar, approximately 2cm, on inside of left wrist from hardware installation gone slightly wrong at age fifteen",
+                                                              "Faint burn marks on fingertips of right hand from soldering work â€” small, clustered, unprofessional"
+                                                          ],
+                                 "visible_augmentations":  "Left ear audio amplifier visible as a small silver-chrome module behind the ear with subtle wire threading down the jawline. Bioluminescent hair strands active in pulses when concentrating. Standard neural interface port at right temple (Meridian Institute standard issue â€” barely visible under hair). No other visible chrome.",
+                                 "posture_movement":  "Hunched slightly forward, as if permanently leaning toward a screen. Movements are economical and precise when purposeful, but otherwise loose and fidgeting. Hands gesticulate when explaining technical concepts. Walks with eyes down or unfocused. When engaged in problem-solving, becomes almost motionless except for rapid finger movements.",
+                                 "clothing_style":  "Tier 2 student aesthetic â€” functional, thrifted, layered. Typical outfit: oversized grey Institute hoodie with fraying cuffs, black utility pants with multiple pockets (actual tools in them), scuffed platform sneakers with mismatched laces. Wears the same three hoodies on rotation. One visible patch on left shoulder reads \u0027E.L.F. THEOLOGY\u0027 in hand-stitched letters. Jewelry is minimal â€” a single silver ring on right index finger that doubles as a micro-tool. Presentation reads: \u0027I do not care about appearance, but I have thought about how to dress functionally.\u0027"
+                             },
+    "image_prompt":  "Hawraa Halverson, 168cm slight frame hunched forward in GLMZ aesthetic, warm golden-tan skin with olive undertones reflecting Southeast Asian, Hispanic, and Middle Eastern diaspora heritage. Fine-featured face with moderate cheekbones and delicate nose bridge, deep brown bloodshot eyes from screen exposure. Shoulder-length wavy dark brown hair threaded with bioluminescent white biofiber strands pulsing softly, one malfunctioning amber glitch on left side. Visible silver-chrome audio amplifier behind left ear with thin wire threading jawline. Self-installed modifications and faint hardware-installation scar on left wrist. Wearing oversized fraying grey Institute hoodie with \u0027E.L.F. THEOLOGY\u0027 hand-stitched patch, black utility pants with visible tools, scuffed platform sneakers with mismatched laces. Single silver micro-tool ring on right index finger. Faint burn marks on fingertips. Minimal jewelry, functional thrifted aesthetic. Hunched posture, hands gesticulating mid-explanation, eyes focused or unfocused depending on concentration state. Server room ambient lighting, cool blue neon glow on augmentations, tired but focused expression. GLMZ 2200s underground tech aesthetic, student tier equipment visible in background. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  25.9,
+                             "Hispanic/Latin American":  25.3,
+                             "Middle Eastern":  21.2,
+                             "East Asian":  16.5,
+                             "Sub-Saharan African":  6.4,
+                             "South Asian":  4.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sundanese":  7
+                                                                   },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  13.2
+                                                                  },
+                                                    "Thai":  {
+                                                                 "Thai":  5.7
+                                                             }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Costa Rican":  0.8,
+                                                                                     "Nicaraguan":  0.7
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Colombian":  2.3,
+                                                                                   "Peruvian":  2.9
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  18.6
+                                                                        }
+                                                        },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Emirati":  10.5,
+                                                                     "Yemeni":  6.9
+                                                                 },
+                                                   "Persian":  {
+                                                                   "Iranian":  3.8
+                                                               }
+                                               },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  10.3
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  6.2
+                                                          }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  4.2
+                                                                             },
+                                                        "East African":  {
+                                                                             "Ugandan":  1,
+                                                                             "Kenyan":  0.3
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Angolan":  0.7,
+                                                                                "Cameroonian":  0.2
+                                                                            }
+                                                    },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  4.7
+                                                           }
+                                            }
+                        },
+    "tier":  "1"
 }

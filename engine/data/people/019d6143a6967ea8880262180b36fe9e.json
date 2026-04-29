@@ -1,315 +1,342 @@
-{
-  "id": "019d6143a6967ea8880262180b36fe9e",
-  "type": "character",
-  "name": "Anjum Krstić",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Sociologist studying informal economy and community formation on the Gray Zone",
-  "age": 28,
-  "status": "active",
-  "location": "Hough Reclamation (fieldwork); Meridian Core (institutional address), near State and Madison",
-  "description": "Anjum Krstić is compact and coiled-looking, the kind of person who is always slightly in motion even when sitting still — knee bouncing, fingers tracking invisible data, head tilted as though listening to something just outside the conversation's frequency. Their skin is a warm reddish-brown, and they have cat ears, dark brown and velvety, a geneware mod they got at nineteen with a student discount and have since come to regard as both a minor embarrassment and a genuine part of themselves. Their natural hair is grown out in loose coils they keep tied back during fieldwork. They dress practically — durable fabrics, flat shoes, everything with pockets — but with a consistent stripe of color, usually deep orange or red, that former classmates say is the only vanity they have maintained from their undergraduate years.\n\nThey grew up on the Gray Zone in Hough Reclamation — Tier 1 transitioning to Tier 2 across their childhood — and are now the first person from their immediate family to hold an academic position, a fact that produces in them equal parts pride and a persistent low-level guilt they have not resolved. Their research is not extractive tourism of the community they came from; they are genuinely embedded, genuinely accountable, and they fight loud public battles about what ethical fieldwork looks like in academic venues where people are not always ready to hear it. They are twenty-eight and have already made enemies.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.8,
-      "id": 0.6,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Becoming the kind of researcher who exploits their community of origin for career advancement",
-      "Being pushed out of academia before their work reaches the people it is supposed to help"
-    ],
-    "core_desires": [
-      "To produce research that materially changes conditions in Hough Reclamation",
-      "To be a person their community can still recognize as theirs"
-    ],
-    "coping_mechanisms": [
-      "Over-explaining their methodology to anyone who questions their credentials",
-      "Cooking elaborate meals from their grandmother's Congolese-Armenian recipes when overwhelmed"
-    ],
-    "blind_spots": [
-      "They sometimes prioritize community loyalty over research rigor in ways that leave them vulnerable to methodological attacks",
-      "They underestimate how much their position has already changed them"
-    ],
-    "secret": "One of their primary research subjects — a woman who runs an informal credit system in Hough Reclamation — has confided information about a Ferrogate Transit bribery arrangement that keeps certain residential blocks intentionally transit-deprived to depress land values. Pepetua has this in their field notes. They have not reported it because the source would be identifiable and endangered if they did."
-  },
-  "speech_patterns": {
-    "vocabulary": "Code-switches fluidly between academic register and the Gray Zone vernacular — the vernacular feels more natural, the academic register is worn like a coat they put on for specific rooms. Uses 'right?' similarly to Tito Sigurðsson-Batmunkh but with different energy — more confrontational.",
-    "cadence": "Fast, dense, slightly breathless — they think faster than they talk and it shows.",
-    "verbal_tics": [
-      "'Be clear about what you're actually saying' (directed at obfuscation)",
-      "Starting with 'Look—' when pushed"
-    ],
-    "example_lines": [
-      "'Look, I did not write a dissertation about the informal economy of Hough Reclamation so that Axiom could use it to design a better gentrification strategy. That is not a neutral outcome I am willing to accept.'",
-      "'She runs a credit system that has kept forty families fed through three separate corponation market corrections. What you're calling informal, I'm calling functional. Be clear about what you're actually saying.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The Ferrogate bribery information in their field notes becomes explosive when a city planning review threatens their fieldwork community — they must decide whether protecting a source or protecting a neighborhood takes priority",
-    "Their community documentation project has inadvertently become the most complete record of a neighborhood that a corponation is about to attempt to redevelop, making them and their data a target"
-  ],
-  "narrative_function": "Community connection and moral lens — they know people in the Gray Zone tiers that no other academic character would have access to, and they hold trust that took years to build. They can introduce characters to the Gray Zone communities or provide social and structural context for events happening in lower-tier zones.",
-  "augmentations": "Cat ears (geneware, dark brown, velvety — cosmetic). Lightweight neural notepad implant (Tier 2, low-cost model) for in-field recording and transcription.",
-  "daily_life": "They spend three to four days a week in Hough Reclamation doing participant-observation fieldwork and maintain relationships with approximately sixty ongoing interview subjects. On days at the Core, they write, argue with their institutional supervisor about research ethics protocols, and attend committee meetings they find alienating.",
-  "affiliation": "University Spine — Department of Urban Sociology (adjunct researcher); Hough Reclamation Community Documentation Project (co-founder)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 6,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 9,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 4,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 3,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "embedded researcher",
-      "community-tied",
-      "institutional friction",
-      "ethically burdened",
-      "bridge figure"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Research subjects come before research outputs — protect people first",
-      "Do not let institutional affiliation be used to validate corponation activity"
-    ],
-    "escalation_ladder": [
-      "States concern directly and clearly",
-      "Requests formal review and escalates to department committee",
-      "Goes public on academic networks with a documented complaint",
-      "Takes the story to community media outlets and accepts the professional fallout"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Watchful and measured — assesses trust gradually, gives almost nothing personal until certain of safety",
-      "friends": "Fiercely loyal, occasionally overwhelming — checks in constantly, brings food, argues passionately about things they care about"
-    },
-    "stress_responses": {
-      "low": "Talks faster and asks more questions",
-      "medium": "Goes quiet in institutional settings but calls community contacts for grounding",
-      "high": "Makes a unilateral decision that bypasses institutional process and deals with the consequences afterward"
-    },
-    "contradictions": [
-      "Champions transparency in research methodology while keeping their most explosive fieldwork data hidden"
-    ],
-    "habits": [
-      "Takes handwritten notes during fieldwork even when the neural notepad is running — the subjects trust it more",
-      "Leaves their cat ears slightly flattened when in institutional meetings, a tell they do not notice"
-    ],
-    "breaking_points": [
-      "Watching a research subject harmed because of something that appears in their work",
-      "Being told by an academic superior to 'be more objective' about their own community of origin"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Quick Study": 0.9,
-    "Seeker": 0.9,
-    "Dreamer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hough Reclamation (fieldwork); Meridian Core (institutional address)",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Hough Reclamation to a Congolese-Armenian heritage family; father drives a Ferrogate maintenance vehicle, mother operates a neighborhood data-access kiosk",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Received scholarship to University Spine; first in family to attend",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Co-founded the Hough Reclamation Community Documentation Project with two former classmates",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Obtained adjunct research position; ongoing tenure-track application in dispute over methodology standards",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Dispatch-45 'Last Word'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Hough Reclamation",
-    "Meridian Core",
-    "The Reclamation Assembly",
-    "Ferrogate Transit",
-    "Frequency",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "The Gradient Compact"
-  ],
-  "district": "Meridian Core",
-  "physical_description": {
-    "heritage": "Complex multicontinent ancestry blending Eastern European (36.1%), South Asian (23.0%), Sub-Saharan African (22.1%), Hispanic/Latin American (10.5%), and Pacific Islander (8.3%) heritage. This genetic mosaic creates rich, dimensional warm brown skin with golden-olive base tones, subtle reddish undertones, and warmth that shifts across the face—a truly global phenotype reflecting the Ubiquitous Diaspora.",
-    "height_cm": 162,
-    "weight_kg": 58,
-    "build": "Compact and wiry, muscular in the way of someone who walks constantly and carries tension in their shoulders. No excess weight; lean but not fragile. Center of gravity slightly forward, as though perpetually ready to move.",
-    "hair_color": "Dark brown, natural",
-    "hair_style": "Loose coils, typically secured back with a cloth tie or simple elastic during fieldwork; occasionally left loose on institutional days",
-    "hair_length": "Medium (shoulder-length when loose)",
-    "eye_color": "Dark brown, warm",
-    "skin_tone": "Warm golden-brown with olive and reddish undertones, dimensional and complex—the natural result of Eastern European, South Asian, Sub-Saharan African, and Pacific Islander ancestry creating depth and warmth across the entire complexion",
-    "complexion": "Clear, with sun-darkened freckles across the bridge of nose and cheekbones from outdoor fieldwork. Subtle warmth in cheek and temple area. Minimal grooming vanity except for consistent attention to keeping nails short and practical. Fine lines beginning around eyes from squinting while taking notes. Facial structure shows the blend of ancestry—broader cheekbones reflecting South Asian and Sub-Saharan African heritage, defined jaw reflecting Eastern European heritage, with overall warmth and dimensional feature architecture.",
-    "distinguishing_marks": [
-      "Faint surgical scar at the base of the skull, approximately 3cm, from neural implant insertion — visible only when hair is pulled back",
-      "Small burn scar on inner left wrist (cooking accident, age 12) — pale and well-healed",
-      "Asymmetrical ear piercings (both ears, multiple holes) with mismatched practical studs — never matching pairs"
-    ],
-    "visible_augmentations": "Dark brown velvety cat ears (geneware) positioned naturally above human ears, fully mobile and expressive — twitch and rotate reflexively in response to sound and emotion. No visible external neural implant hardware, but slight subcutaneous ridge at base of skull if hair pulled back. Occasional faint blue LED flicker visible at the corner of left eye when actively recording through neural notepad (low-power, discrete).",
-    "posture_movement": "Perpetually coiled. Even sitting still, some part of them moves — knee bounce, finger drumming, head tilt. Cat ears swivel independently toward sound sources or conversation partners. When walking, efficient and purposeful, never leisurely. Hands frequently gesture while speaking, especially when explaining research concepts. They have a habit of tilting their head slightly to the left when listening intently.",
-    "clothing_style": "Pragmatic Tier 2-3 blend. Durable synthetic fabrics, flat steel-toed boots (worn but well-maintained), cargo pants or utility jeans with visible patch repairs. Base layers are neutral (gray, black, cream) but always paired with a deliberately chosen stripe of color — deep rust orange, burnt red, or terracotta — in the form of a thrifted overshirt, armband, or bandana. On institutional days, this same color appears as a scarf or deliberately clashing accent. No logos or status markers. Everything has functional pockets. Worn canvas messenger bag for fieldwork. One piece of jewelry: a thin silver ring on index finger, dented and old."
-  },
-  "image_prompt": "Anjum Krstić, GLMZ, 162cm tall compact wiry frame, warm golden-brown skin with olive and reddish undertones reflecting Eastern European, South Asian, Sub-Saharan African, Hispanic, and Pacific Islander heritage. Dark brown coiled shoulder-length hair, dark warm eyes, mobile velvety dark brown cat ears (geneware) above human ears. Practical fieldwork clothing: worn steel-toed boots, utility cargo pants with patches, neutral base layer with rust-orange overshirt accent, worn canvas messenger bag. Thin silver dented ring on index finger. Asymmetrical ear piercings. Faint surgical scar at skull base visible when hair pulled back. Perpetually coiled posture, tilted head listening intently. Discrete blue LED flicker at corner of left eye. GLMZ industrial setting, late afternoon fieldwork lighting, focused intense expression, hands gesturing while explaining, tension visible in shoulders. Neo-noir urban aesthetic, gritty urban environment, atmospheric lighting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 36.1,
-    "South Asian": 23,
-    "Sub-Saharan African": 22.1,
-    "Hispanic/Latin American": 10.5,
-    "Pacific Islander": 8.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 17.9,
-        "Romanian": 18.2
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Sindhi": 19
-      },
-      "Nepali": {
-        "Nepali": 3.5
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 0.5
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Cameroonian": 6.8
-      },
-      "West African": {
-        "Ghanaian": 8.5
-      },
-      "Southern African": {
-        "South African": 6.8
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Ecuadorian": 2.7
-      },
-      "Mexican": {
-        "Mexican": 6.4
-      },
-      "Caribbean": {
-        "Dominican": 0.4,
-        "Puerto Rican": 1
-      }
-    },
-    "Pacific Islander": {
-      "Micronesian": {
-        "Palauan": 8.3
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6967ea8880262180b36fe9e",
+    "type":  "character",
+    "name":  "Anjum KrstiÄ‡",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Sociologist studying informal economy and community formation on the Gray Zone",
+    "age":  28,
+    "status":  "active",
+    "location":  "Hough Reclamation (fieldwork); Meridian Core (institutional address), near State and Madison",
+    "description":  "Anjum KrstiÄ‡ is compact and coiled-looking, the kind of person who is always slightly in motion even when sitting still â€” knee bouncing, fingers tracking invisible data, head tilted as though listening to something just outside the conversation\u0027s frequency. Their skin is a warm reddish-brown, and they have cat ears, dark brown and velvety, a geneware mod they got at nineteen with a student discount and have since come to regard as both a minor embarrassment and a genuine part of themselves. Their natural hair is grown out in loose coils they keep tied back during fieldwork. They dress practically â€” durable fabrics, flat shoes, everything with pockets â€” but with a consistent stripe of color, usually deep orange or red, that former classmates say is the only vanity they have maintained from their undergraduate years.\n\nThey grew up on the Gray Zone in Hough Reclamation â€” Tier 1 transitioning to Tier 2 across their childhood â€” and are now the first person from their immediate family to hold an academic position, a fact that produces in them equal parts pride and a persistent low-level guilt they have not resolved. Their research is not extractive tourism of the community they came from; they are genuinely embedded, genuinely accountable, and they fight loud public battles about what ethical fieldwork looks like in academic venues where people are not always ready to hear it. They are twenty-eight and have already made enemies.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming the kind of researcher who exploits their community of origin for career advancement",
+                                          "Being pushed out of academia before their work reaches the people it is supposed to help"
+                                      ],
+                       "core_desires":  [
+                                            "To produce research that materially changes conditions in Hough Reclamation",
+                                            "To be a person their community can still recognize as theirs"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Over-explaining their methodology to anyone who questions their credentials",
+                                                 "Cooking elaborate meals from their grandmother\u0027s Congolese-Armenian recipes when overwhelmed"
+                                             ],
+                       "blind_spots":  [
+                                           "They sometimes prioritize community loyalty over research rigor in ways that leave them vulnerable to methodological attacks",
+                                           "They underestimate how much their position has already changed them"
+                                       ],
+                       "secret":  "One of their primary research subjects â€” a woman who runs an informal credit system in Hough Reclamation â€” has confided information about a Ferrogate Transit bribery arrangement that keeps certain residential blocks intentionally transit-deprived to depress land values. Pepetua has this in their field notes. They have not reported it because the source would be identifiable and endangered if they did."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Code-switches fluidly between academic register and the Gray Zone vernacular â€” the vernacular feels more natural, the academic register is worn like a coat they put on for specific rooms. Uses \u0027right?\u0027 similarly to Tito SigurÃ°sson-Batmunkh but with different energy â€” more confrontational.",
+                            "cadence":  "Fast, dense, slightly breathless â€” they think faster than they talk and it shows.",
+                            "verbal_tics":  [
+                                                "\u0027Be clear about what you\u0027re actually saying\u0027 (directed at obfuscation)",
+                                                "Starting with \u0027Lookâ€”\u0027 when pushed"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Look, I did not write a dissertation about the informal economy of Hough Reclamation so that Axiom could use it to design a better gentrification strategy. That is not a neutral outcome I am willing to accept.\u0027",
+                                                  "\u0027She runs a credit system that has kept forty families fed through three separate corponation market corrections. What you\u0027re calling informal, I\u0027m calling functional. Be clear about what you\u0027re actually saying.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The Ferrogate bribery information in their field notes becomes explosive when a city planning review threatens their fieldwork community â€” they must decide whether protecting a source or protecting a neighborhood takes priority",
+                        "Their community documentation project has inadvertently become the most complete record of a neighborhood that a corponation is about to attempt to redevelop, making them and their data a target"
+                    ],
+    "narrative_function":  "Community connection and moral lens â€” they know people in the Gray Zone tiers that no other academic character would have access to, and they hold trust that took years to build. They can introduce characters to the Gray Zone communities or provide social and structural context for events happening in lower-tier zones.",
+    "augmentations":  "Cat ears (geneware, dark brown, velvety â€” cosmetic). Lightweight neural notepad implant (Tier 2, low-cost model) for in-field recording and transcription.",
+    "daily_life":  "They spend three to four days a week in Hough Reclamation doing participant-observation fieldwork and maintain relationships with approximately sixty ongoing interview subjects. On days at the Core, they write, argue with their institutional supervisor about research ethics protocols, and attend committee meetings they find alienating.",
+    "affiliation":  "University Spine â€” Department of Urban Sociology (adjunct researcher); Hough Reclamation Community Documentation Project (co-founder)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  6,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  9,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  4,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "embedded researcher",
+                               "community-tied",
+                               "institutional friction",
+                               "ethically burdened",
+                               "bridge figure"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Research subjects come before research outputs â€” protect people first",
+                                              "Do not let institutional affiliation be used to validate corponation activity"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "States concern directly and clearly",
+                                                 "Requests formal review and escalates to department committee",
+                                                 "Goes public on academic networks with a documented complaint",
+                                                 "Takes the story to community media outlets and accepts the professional fallout"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Watchful and measured â€” assesses trust gradually, gives almost nothing personal until certain of safety",
+                                                   "friends":  "Fiercely loyal, occasionally overwhelming â€” checks in constantly, brings food, argues passionately about things they care about"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks faster and asks more questions",
+                                                "medium":  "Goes quiet in institutional settings but calls community contacts for grounding",
+                                                "high":  "Makes a unilateral decision that bypasses institutional process and deals with the consequences afterward"
+                                            },
+                       "contradictions":  [
+                                              "Champions transparency in research methodology while keeping their most explosive fieldwork data hidden"
+                                          ],
+                       "habits":  [
+                                      "Takes handwritten notes during fieldwork even when the neural notepad is running â€” the subjects trust it more",
+                                      "Leaves their cat ears slightly flattened when in institutional meetings, a tell they do not notice"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching a research subject harmed because of something that appears in their work",
+                                               "Being told by an academic superior to \u0027be more objective\u0027 about their own community of origin"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Quick Study":  0.9,
+                       "Seeker":  0.9,
+                       "Dreamer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hough Reclamation (fieldwork); Meridian Core (institutional address)",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Hough Reclamation to a Congolese-Armenian heritage family; father drives a Ferrogate maintenance vehicle, mother operates a neighborhood data-access kiosk",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Received scholarship to University Spine; first in family to attend",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Co-founded the Hough Reclamation Community Documentation Project with two former classmates",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Obtained adjunct research position; ongoing tenure-track application in dispute over methodology standards",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Dispatch-45 \u0027Last Word\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Hough Reclamation",
+                             "Meridian Core",
+                             "The Reclamation Assembly",
+                             "Ferrogate Transit",
+                             "Frequency",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "The Gradient Compact"
+                         ],
+    "district":  "Meridian Core",
+    "physical_description":  {
+                                 "heritage":  "Complex multicontinent ancestry blending Eastern European (36.1%), South Asian (23.0%), Sub-Saharan African (22.1%), Hispanic/Latin American (10.5%), and Pacific Islander (8.3%) heritage. This genetic mosaic creates rich, dimensional warm brown skin with golden-olive base tones, subtle reddish undertones, and warmth that shifts across the faceâ€”a truly global phenotype reflecting the Ubiquitous Diaspora.",
+                                 "height_cm":  162,
+                                 "weight_kg":  58,
+                                 "build":  "Compact and wiry, muscular in the way of someone who walks constantly and carries tension in their shoulders. No excess weight; lean but not fragile. Center of gravity slightly forward, as though perpetually ready to move.",
+                                 "hair_color":  "Dark brown, natural",
+                                 "hair_style":  "Loose coils, typically secured back with a cloth tie or simple elastic during fieldwork; occasionally left loose on institutional days",
+                                 "hair_length":  "Medium (shoulder-length when loose)",
+                                 "eye_color":  "Dark brown, warm",
+                                 "skin_tone":  "Warm golden-brown with olive and reddish undertones, dimensional and complexâ€”the natural result of Eastern European, South Asian, Sub-Saharan African, and Pacific Islander ancestry creating depth and warmth across the entire complexion",
+                                 "complexion":  "Clear, with sun-darkened freckles across the bridge of nose and cheekbones from outdoor fieldwork. Subtle warmth in cheek and temple area. Minimal grooming vanity except for consistent attention to keeping nails short and practical. Fine lines beginning around eyes from squinting while taking notes. Facial structure shows the blend of ancestryâ€”broader cheekbones reflecting South Asian and Sub-Saharan African heritage, defined jaw reflecting Eastern European heritage, with overall warmth and dimensional feature architecture.",
+                                 "distinguishing_marks":  [
+                                                              "Faint surgical scar at the base of the skull, approximately 3cm, from neural implant insertion â€” visible only when hair is pulled back",
+                                                              "Small burn scar on inner left wrist (cooking accident, age 12) â€” pale and well-healed",
+                                                              "Asymmetrical ear piercings (both ears, multiple holes) with mismatched practical studs â€” never matching pairs"
+                                                          ],
+                                 "visible_augmentations":  "Dark brown velvety cat ears (geneware) positioned naturally above human ears, fully mobile and expressive â€” twitch and rotate reflexively in response to sound and emotion. No visible external neural implant hardware, but slight subcutaneous ridge at base of skull if hair pulled back. Occasional faint blue LED flicker visible at the corner of left eye when actively recording through neural notepad (low-power, discrete).",
+                                 "posture_movement":  "Perpetually coiled. Even sitting still, some part of them moves â€” knee bounce, finger drumming, head tilt. Cat ears swivel independently toward sound sources or conversation partners. When walking, efficient and purposeful, never leisurely. Hands frequently gesture while speaking, especially when explaining research concepts. They have a habit of tilting their head slightly to the left when listening intently.",
+                                 "clothing_style":  "Pragmatic Tier 2-3 blend. Durable synthetic fabrics, flat steel-toed boots (worn but well-maintained), cargo pants or utility jeans with visible patch repairs. Base layers are neutral (gray, black, cream) but always paired with a deliberately chosen stripe of color â€” deep rust orange, burnt red, or terracotta â€” in the form of a thrifted overshirt, armband, or bandana. On institutional days, this same color appears as a scarf or deliberately clashing accent. No logos or status markers. Everything has functional pockets. Worn canvas messenger bag for fieldwork. One piece of jewelry: a thin silver ring on index finger, dented and old."
+                             },
+    "image_prompt":  "Anjum KrstiÄ‡, GLMZ, 162cm tall compact wiry frame, warm golden-brown skin with olive and reddish undertones reflecting Eastern European, South Asian, Sub-Saharan African, Hispanic, and Pacific Islander heritage. Dark brown coiled shoulder-length hair, dark warm eyes, mobile velvety dark brown cat ears (geneware) above human ears. Practical fieldwork clothing: worn steel-toed boots, utility cargo pants with patches, neutral base layer with rust-orange overshirt accent, worn canvas messenger bag. Thin silver dented ring on index finger. Asymmetrical ear piercings. Faint surgical scar at skull base visible when hair pulled back. Perpetually coiled posture, tilted head listening intently. Discrete blue LED flicker at corner of left eye. GLMZ industrial setting, late afternoon fieldwork lighting, focused intense expression, hands gesturing while explaining, tension visible in shoulders. Neo-noir urban aesthetic, gritty urban environment, atmospheric lighting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  36.1,
+                             "South Asian":  23,
+                             "Sub-Saharan African":  22.1,
+                             "Hispanic/Latin American":  10.5,
+                             "Pacific Islander":  8.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  17.9,
+                                                                             "Romanian":  18.2
+                                                                         }
+                                                 },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Sindhi":  19
+                                                              },
+                                                "Nepali":  {
+                                                               "Nepali":  3.5
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  0.5
+                                                                }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Cameroonian":  6.8
+                                                                            },
+                                                        "West African":  {
+                                                                             "Ghanaian":  8.5
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  6.8
+                                                                             }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  2.7
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  6.4
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  0.4,
+                                                                              "Puerto Rican":  1
+                                                                          }
+                                                        },
+                            "Pacific Islander":  {
+                                                     "Micronesian":  {
+                                                                         "Palauan":  8.3
+                                                                     }
+                                                 }
+                        },
+    "tier":  "1"
 }

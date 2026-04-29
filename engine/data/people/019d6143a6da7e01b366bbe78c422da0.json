@@ -1,265 +1,286 @@
-{
-  "id": "019d6143a6da7e01b366bbe78c422da0",
-  "type": "character",
-  "name": "Cornelio Jeong",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Bootleg fashion vendor and textile reseller",
-  "age": 34,
-  "status": "active",
-  "location": "The Laceworks, Stall Row 7, Ironvein, near Lincoln and Belmont",
-  "description": "Cornelio Jeong is a broad-shouldered woman with deep ochre skin and close-cropped natural hair dyed in chevrons of burnt orange and cream — a technique she does herself using surplus textile dye. Her left arm from the elbow down is covered in a patchwork of fabric swatches she's stitched directly to her jacket sleeve, each one a sample from her current inventory. Her eyes have iris mods — concentric rings of copper and jade — that she claims she won in a card game but actually saved six months of UBC stipend for. She laughs with her whole chest and haggles with theatrical offence, clutching her heart and muttering in a mix of Igbo and Greek when customers lowball her.\n\nHer stall is a riot of stolen aesthetics: Tessera corporate surplus, knockoff Zheng-Dao runway pieces, hand-altered casualwear with new stitching that makes them genuinely better than the originals. She has an eye for what will sell in two weeks before anyone else sees it coming, and a deep contempt for trend-followers who come to her after the fact. She's prouder of her craft than her income suggests she should be, and it shows in every seam.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.7,
-      "id": 0.5,
-      "shadow": 0.3,
-      "mask": 0.6,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "Being seen as low-class despite her craft",
-      "Her talent being stolen or copied without credit"
-    ],
-    "core_desires": [
-      "Recognition as a genuine designer, not just a reseller",
-      "Financial stability that doesn't require compromising her aesthetic standards"
-    ],
-    "coping_mechanisms": [
-      "Channeling frustration into elaborate new designs",
-      "Loud performative confidence as emotional armour"
-    ],
-    "blind_spots": [
-      "Underestimates how much her stubbornness costs her actual sales",
-      "Doesn't notice when people are being genuine versus flattering her"
-    ],
-    "secret": "She has a Tessera corporate talent scout's business card hidden in her stall's false floor. They offered her a junior design role six months ago. She hasn't thrown it away or called."
-  },
-  "speech_patterns": {
-    "vocabulary": "Punchy, vivid, market-floor confident; slips into Igbo diminutives when emotional; uses fashion jargon as metaphor for everything",
-    "cadence": "Fast when excited, deliberately slow when haggling — uses silence as a weapon",
-    "verbal_tics": [
-      "'Look at this seam — look at it'",
-      "'That price is an insult to the fabric itself'"
-    ],
-    "example_lines": [
-      "You want me to go lower? Lower. On this? This is hand-topstitched delta-weave. You're asking me to go lower.",
-      "I knew that silhouette was coming back. Told Danladi three months ago. Nobody listens until they're buying."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A knockoff of her most distinctive design appears on a Tessera executive at a public function — someone is feeding her work upstream",
-    "A teenager arrives at her stall wearing a piece she made ten years ago in a city she's never told anyone she lived in"
-  ],
-  "narrative_function": "Local color and fashion intelligence source; can identify corporate affiliations by uniform details; potential quest giver when a shipment goes missing or a rival vendor starts underselling her with suspiciously high-end stock.",
-  "augmentations": "Cosmetic iris modification (concentric copper-jade rings). No functional augmentation.",
-  "daily_life": "Up before dawn to review overnight fabric shipments at the Ironvein loading bay, then six hours at the stall, then three hours of alterations work in the back room behind her display.",
-  "affiliation": "Independent; pays informal dues to the Oxidian Market Vendors Guild",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 7,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 5,
-      "expression": 8,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 4,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "craftsperson",
-      "market-savvy",
-      "trend-reader",
-      "proud",
-      "tier-1-aspirant"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never sell to someone who disrespects the work, even at full price",
-      "Always know your inventory's origin — provenance is leverage"
-    ],
-    "escalation_ladder": [
-      "Theatrical offence and verbal shaming",
-      "Refusing to sell and loudly explaining why to the whole market row",
-      "Reporting to the guild and getting the person informally blacklisted"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm but watchful — assesses what they're wearing before she decides how to pitch",
-      "friends": "Fierce, generous, brutally honest about their fashion choices"
-    },
-    "stress_responses": {
-      "low": "Gets louder and more performative",
-      "medium": "Goes quiet and starts obsessively reorganising stock",
-      "high": "Disappears into her back room for hours, emerges with something she's made from scratch"
-    },
-    "contradictions": [
-      "Professes not to care about corporate validation but keeps that scout's card"
-    ],
-    "habits": [
-      "Touches fabric samples when thinking",
-      "Hums Highlife variants while working"
-    ],
-    "breaking_points": [
-      "Watching someone else get credit for her design in a public venue"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "People Pleaser": 0.9,
-    "Pragmatist": 0.9,
-    "Hustler": 0.7,
-    "Provider": 0.7,
-    "Generous Fool": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Laceworks",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Sentinel-9 'Block Watch'",
-    "Crucible Industries Ember-9 'Firefly'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms Sentinel-9 'Block Watch'",
-    "Crucible Industries Ember-9 'Firefly'"
-  ],
-  "related_entities": [
-    "The Laceworks",
-    "Zheng-dao Bioelectric",
-    "Ironvein",
-    "Irontide Tidal Energy",
-    "Tessera Corponation",
-    "Copper",
-    "Clearpath"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Dominant East Asian (32.7%) and Southeast Asian (25.0%) ancestry with substantial Northern European (20.3%) and Hispanic/Latin American (13.7%) admixture, complemented by South Asian (8.3%) heritage—a striking Ubiquitous Diaspora phenotype featuring warm golden-brown skin with olive undertones, East Asian cheekbone prominence and eye shape blended with broader facial structure, fuller lips, and slightly wider facial proportions from Southeast Asian and Hispanic/Latin American ancestry, creating a distinctive multi-regional appearance",
-    "height_cm": 172,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and sturdy with functional muscle from handling bolts of fabric and manual textile work; not lean, not heavy — solidly built with the physique of someone who works with their hands for ten hours a day",
-    "hair_color": "Natural black with hand-applied chevron pattern in burnt orange and cream",
-    "hair_style": "Close-cropped with geometric precision; dyed chevrons run front-to-back across the crown",
-    "hair_length": "Short",
-    "eye_color": "Dark brown iris with cosmetic modification: concentric rings of brushed copper and jade set in the iris itself",
-    "skin_tone": "Warm golden-brown with subtle olive undertones from the blending of East Asian, Southeast Asian, Northern European, Hispanic/Latin American, and South Asian heritage—sun-darkened from outdoor market work into a rich, luminous ochre",
-    "complexion": "Clear and sun-weathered; East Asian cheekbone structure softened by Southeast Asian and Hispanic/Latin American influences resulting in slightly broader cheekbones and fuller lips; strong defined jawline reflecting Northern European heritage; minimal makeup except occasional kohl around the modified eyes",
-    "distinguishing_marks": [
-      "Fabric swatches stitched directly to the sleeve of her left jacket arm from elbow to wrist — a patchwork of varying textures, colors, and weaves that serves as mobile inventory samples",
-      "Permanent textile dye stains on her fingertips and under her nails from years of hand-dyeing and alteration work",
-      "Small burn scar on her right forearm from a heat-press accident three years ago"
-    ],
-    "visible_augmentations": "Cosmetic iris modification only — concentric rings of copper and jade embedded in the iris, visible when making eye contact. No other visible cybernetics.",
-    "posture_movement": "Confident and expansive; she takes up space deliberately. Moves with efficiency but also theatricality — gestures are broad when haggling, deliberate when inspecting fabric. Stands with weight shifted, often one hand on her hip or holding a bolt of material. Natural and unselfconscious.",
-    "clothing_style": "Tier 4 working-class practicality with personal aesthetic rebellion. Always wears a heavy canvas jacket or work coat (usually indigo or charcoal) with the fabric swatches stitched to the left sleeve. Layers — thermal undershirts, sometimes a vest. Cargo pants or modified denim with utility pockets. Steel-toed boots, scuffed from market floors. Occasionally wears pieces from her own inventory as living advertisements — a hand-altered Tessera surplus overshirt, a Zheng-Dao knockoff with improved seams. No corporate branding. Minimal jewelry except for a worn silver bangle on her right wrist (family piece, Greek side)."
-  },
-  "image_prompt": "Cornelio Jeong, a 172cm mixed-heritage woman in 2226 Great Lakes Metropolitan Zone, warm golden-brown skin with olive undertones from East Asian, Southeast Asian, Northern European, Hispanic/Latin American and South Asian ancestry. East Asian cheekbones softened by broader facial structure and fuller lips. Close-cropped natural black hair with geometric burnt orange and cream chevron pattern running front-to-back. Dark brown eyes with embedded concentric copper and jade cosmetic iris modification rings. Sturdy, broad-shouldered build, sun-darkened skin. Wearing heavy charcoal canvas work coat with vibrant fabric swatches stitched to left sleeve from elbow to wrist—textile inventory samples in varying colors and weaves. Layered with thermal undershirt, cargo pants with utility pockets, scuffed steel-toed boots. Dye stains visible on fingertips. Worn silver bangle on right wrist. Standing in neon-lit market setting, confident expansive posture, one hand on hip holding fabric bolt. Neo-noir working-class aesthetic, practical rebellion, hand-dyed garment textures, cool neon market lighting against warm skin tones, detailed textures visible on clothing and samples --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 32.7,
-    "Southeast Asian": 25,
-    "Northern European": 20.3,
-    "Hispanic/Latin American": 13.7,
-    "South Asian": 8.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 17.6
-      },
-      "Japanese": {
-        "Japanese": 7
-      },
-      "Chinese": {
-        "Cantonese": 8.1
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Javanese": 15.3,
-        "Sumatran": 9.7
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "English": 17.1
-      },
-      "Germanic": {
-        "German": 3.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Venezuelan": 4.4
-      },
-      "Caribbean": {
-        "Puerto Rican": 3.7,
-        "Dominican": 5.3
-      },
-      "Central American": {
-        "Guatemalan": 0.1,
-        "Nicaraguan": 0.2
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 5.1
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 3.2
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a6da7e01b366bbe78c422da0",
+    "type":  "character",
+    "name":  "Cornelio Jeong",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Bootleg fashion vendor and textile reseller",
+    "age":  34,
+    "status":  "active",
+    "location":  "The Laceworks, Stall Row 7, Ironvein, near Lincoln and Belmont",
+    "description":  "Cornelio Jeong is a broad-shouldered woman with deep ochre skin and close-cropped natural hair dyed in chevrons of burnt orange and cream â€” a technique she does herself using surplus textile dye. Her left arm from the elbow down is covered in a patchwork of fabric swatches she\u0027s stitched directly to her jacket sleeve, each one a sample from her current inventory. Her eyes have iris mods â€” concentric rings of copper and jade â€” that she claims she won in a card game but actually saved six months of UBC stipend for. She laughs with her whole chest and haggles with theatrical offence, clutching her heart and muttering in a mix of Igbo and Greek when customers lowball her.\n\nHer stall is a riot of stolen aesthetics: Tessera corporate surplus, knockoff Zheng-Dao runway pieces, hand-altered casualwear with new stitching that makes them genuinely better than the originals. She has an eye for what will sell in two weeks before anyone else sees it coming, and a deep contempt for trend-followers who come to her after the fact. She\u0027s prouder of her craft than her income suggests she should be, and it shows in every seam.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being seen as low-class despite her craft",
+                                          "Her talent being stolen or copied without credit"
+                                      ],
+                       "core_desires":  [
+                                            "Recognition as a genuine designer, not just a reseller",
+                                            "Financial stability that doesn\u0027t require compromising her aesthetic standards"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Channeling frustration into elaborate new designs",
+                                                 "Loud performative confidence as emotional armour"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much her stubbornness costs her actual sales",
+                                           "Doesn\u0027t notice when people are being genuine versus flattering her"
+                                       ],
+                       "secret":  "She has a Tessera corporate talent scout\u0027s business card hidden in her stall\u0027s false floor. They offered her a junior design role six months ago. She hasn\u0027t thrown it away or called."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Punchy, vivid, market-floor confident; slips into Igbo diminutives when emotional; uses fashion jargon as metaphor for everything",
+                            "cadence":  "Fast when excited, deliberately slow when haggling â€” uses silence as a weapon",
+                            "verbal_tics":  [
+                                                "\u0027Look at this seam â€” look at it\u0027",
+                                                "\u0027That price is an insult to the fabric itself\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "You want me to go lower? Lower. On this? This is hand-topstitched delta-weave. You\u0027re asking me to go lower.",
+                                                  "I knew that silhouette was coming back. Told Danladi three months ago. Nobody listens until they\u0027re buying."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A knockoff of her most distinctive design appears on a Tessera executive at a public function â€” someone is feeding her work upstream",
+                        "A teenager arrives at her stall wearing a piece she made ten years ago in a city she\u0027s never told anyone she lived in"
+                    ],
+    "narrative_function":  "Local color and fashion intelligence source; can identify corporate affiliations by uniform details; potential quest giver when a shipment goes missing or a rival vendor starts underselling her with suspiciously high-end stock.",
+    "augmentations":  "Cosmetic iris modification (concentric copper-jade rings). No functional augmentation.",
+    "daily_life":  "Up before dawn to review overnight fabric shipments at the Ironvein loading bay, then six hours at the stall, then three hours of alterations work in the back room behind her display.",
+    "affiliation":  "Independent; pays informal dues to the Oxidian Market Vendors Guild",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  7,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  5,
+                                 "expression":  8,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "craftsperson",
+                               "market-savvy",
+                               "trend-reader",
+                               "proud",
+                               "tier-1-aspirant"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never sell to someone who disrespects the work, even at full price",
+                                              "Always know your inventory\u0027s origin â€” provenance is leverage"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Theatrical offence and verbal shaming",
+                                                 "Refusing to sell and loudly explaining why to the whole market row",
+                                                 "Reporting to the guild and getting the person informally blacklisted"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm but watchful â€” assesses what they\u0027re wearing before she decides how to pitch",
+                                                   "friends":  "Fierce, generous, brutally honest about their fashion choices"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Gets louder and more performative",
+                                                "medium":  "Goes quiet and starts obsessively reorganising stock",
+                                                "high":  "Disappears into her back room for hours, emerges with something she\u0027s made from scratch"
+                                            },
+                       "contradictions":  [
+                                              "Professes not to care about corporate validation but keeps that scout\u0027s card"
+                                          ],
+                       "habits":  [
+                                      "Touches fabric samples when thinking",
+                                      "Hums Highlife variants while working"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone else get credit for her design in a public venue"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "People Pleaser":  0.9,
+                       "Pragmatist":  0.9,
+                       "Hustler":  0.7,
+                       "Provider":  0.7,
+                       "Generous Fool":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Laceworks",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Sentinel-9 \u0027Block Watch\u0027",
+                            "Crucible Industries Ember-9 \u0027Firefly\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms Sentinel-9 \u0027Block Watch\u0027",
+                                "Crucible Industries Ember-9 \u0027Firefly\u0027"
+                            ],
+    "related_entities":  [
+                             "The Laceworks",
+                             "Zheng-dao Bioelectric",
+                             "Ironvein",
+                             "Irontide Tidal Energy",
+                             "Tessera Corponation",
+                             "Copper",
+                             "Clearpath"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Dominant East Asian (32.7%) and Southeast Asian (25.0%) ancestry with substantial Northern European (20.3%) and Hispanic/Latin American (13.7%) admixture, complemented by South Asian (8.3%) heritageâ€”a striking Ubiquitous Diaspora phenotype featuring warm golden-brown skin with olive undertones, East Asian cheekbone prominence and eye shape blended with broader facial structure, fuller lips, and slightly wider facial proportions from Southeast Asian and Hispanic/Latin American ancestry, creating a distinctive multi-regional appearance",
+                                 "height_cm":  172,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and sturdy with functional muscle from handling bolts of fabric and manual textile work; not lean, not heavy â€” solidly built with the physique of someone who works with their hands for ten hours a day",
+                                 "hair_color":  "Natural black with hand-applied chevron pattern in burnt orange and cream",
+                                 "hair_style":  "Close-cropped with geometric precision; dyed chevrons run front-to-back across the crown",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown iris with cosmetic modification: concentric rings of brushed copper and jade set in the iris itself",
+                                 "skin_tone":  "Warm golden-brown with subtle olive undertones from the blending of East Asian, Southeast Asian, Northern European, Hispanic/Latin American, and South Asian heritageâ€”sun-darkened from outdoor market work into a rich, luminous ochre",
+                                 "complexion":  "Clear and sun-weathered; East Asian cheekbone structure softened by Southeast Asian and Hispanic/Latin American influences resulting in slightly broader cheekbones and fuller lips; strong defined jawline reflecting Northern European heritage; minimal makeup except occasional kohl around the modified eyes",
+                                 "distinguishing_marks":  [
+                                                              "Fabric swatches stitched directly to the sleeve of her left jacket arm from elbow to wrist â€” a patchwork of varying textures, colors, and weaves that serves as mobile inventory samples",
+                                                              "Permanent textile dye stains on her fingertips and under her nails from years of hand-dyeing and alteration work",
+                                                              "Small burn scar on her right forearm from a heat-press accident three years ago"
+                                                          ],
+                                 "visible_augmentations":  "Cosmetic iris modification only â€” concentric rings of copper and jade embedded in the iris, visible when making eye contact. No other visible cybernetics.",
+                                 "posture_movement":  "Confident and expansive; she takes up space deliberately. Moves with efficiency but also theatricality â€” gestures are broad when haggling, deliberate when inspecting fabric. Stands with weight shifted, often one hand on her hip or holding a bolt of material. Natural and unselfconscious.",
+                                 "clothing_style":  "Tier 4 working-class practicality with personal aesthetic rebellion. Always wears a heavy canvas jacket or work coat (usually indigo or charcoal) with the fabric swatches stitched to the left sleeve. Layers â€” thermal undershirts, sometimes a vest. Cargo pants or modified denim with utility pockets. Steel-toed boots, scuffed from market floors. Occasionally wears pieces from her own inventory as living advertisements â€” a hand-altered Tessera surplus overshirt, a Zheng-Dao knockoff with improved seams. No corporate branding. Minimal jewelry except for a worn silver bangle on her right wrist (family piece, Greek side)."
+                             },
+    "image_prompt":  "Cornelio Jeong, a 172cm mixed-heritage woman in 2226 Great Lakes Metropolitan Zone, warm golden-brown skin with olive undertones from East Asian, Southeast Asian, Northern European, Hispanic/Latin American and South Asian ancestry. East Asian cheekbones softened by broader facial structure and fuller lips. Close-cropped natural black hair with geometric burnt orange and cream chevron pattern running front-to-back. Dark brown eyes with embedded concentric copper and jade cosmetic iris modification rings. Sturdy, broad-shouldered build, sun-darkened skin. Wearing heavy charcoal canvas work coat with vibrant fabric swatches stitched to left sleeve from elbow to wristâ€”textile inventory samples in varying colors and weaves. Layered with thermal undershirt, cargo pants with utility pockets, scuffed steel-toed boots. Dye stains visible on fingertips. Worn silver bangle on right wrist. Standing in neon-lit market setting, confident expansive posture, one hand on hip holding fabric bolt. Neo-noir working-class aesthetic, practical rebellion, hand-dyed garment textures, cool neon market lighting against warm skin tones, detailed textures visible on clothing and samples --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  32.7,
+                             "Southeast Asian":  25,
+                             "Northern European":  20.3,
+                             "Hispanic/Latin American":  13.7,
+                             "South Asian":  8.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  17.6
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  7
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  8.1
+                                                           }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Javanese":  15.3,
+                                                                       "Sumatran":  9.7
+                                                                   }
+                                                },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "English":  17.1
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "German":  3.2
+                                                                   }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Venezuelan":  4.4
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  3.7,
+                                                                              "Dominican":  5.3
+                                                                          },
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  0.1,
+                                                                                     "Nicaraguan":  0.2
+                                                                                 }
+                                                        },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  5.1
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  3.2
+                                                                }
+                                            }
+                        },
+    "tier":  "2"
 }

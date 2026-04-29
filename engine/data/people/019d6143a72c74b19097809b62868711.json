@@ -1,317 +1,344 @@
-{
-  "id": "019d6143a72c74b19097809b62868711",
-  "type": "character",
-  "name": "Aydan Zidane",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Internal Affairs Investigator, Arcturus Defense Solutions — Civil Security Division",
-  "age": 44,
-  "status": "active",
-  "location": "Fort Anchor, Internal Affairs Division, Sub-Level 3",
-  "description": "Aydan Zidane is a compact, broad-shouldered woman with deep umber skin and close-cropped silver hair she has made no effort to color back to black. Her eyes carry augmented irises patterned like the rings of a tree — concentric amber and dark brown — which she had installed not for fashion but because the integrated microfilament sensors help her read micro-expressions during interrogations. She dresses in Arcturus Civil Security plainclothes that are always a half-step too formal: pressed collar, exact trouser crease, shoes that cost more than a Tier 2 weekly budget. There is a deliberateness to every movement she makes, like a surgeon who has stopped wasting motion.\n\nAydan Zidane has been investigating corrupt officers for nineteen years and has developed the particular coldness of someone who was once deeply idealistic and refuses to admit that idealism calcified into something less generous. She believes in the institution of law enforcement with a fervor that is almost theological, which makes her merciless toward officers who violate it — and almost willfully blind to structural failures that can't be solved by prosecuting individuals. She speaks rarely in social settings and listens with an attention that makes people feel they are being archived.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.85,
-      "id": 0.25,
-      "shadow": 0.55,
-      "mask": 0.6,
-      "ghost": 0.45
-    },
-    "core_fears": [
-      "That the institution she has sacrificed relationships for is irredeemably corrupt",
-      "That she has destroyed people's lives in the name of a law that doesn't actually protect anyone"
-    ],
-    "core_desires": [
-      "A version of justice that is systematic and clean and real",
-      "To be respected by someone whose respect actually costs something"
-    ],
-    "coping_mechanisms": [
-      "Exhaustive documentation — she writes everything down, including personal events",
-      "Ritualized routine as a substitute for intimacy"
-    ],
-    "blind_spots": [
-      "Cannot see that her enforcement of rules often protects the powerful more than the vulnerable",
-      "Genuinely does not register when she is being cruel"
-    ],
-    "secret": "Three years ago she buried evidence that would have implicated a Arcturus Civil Security captain she believed was, on balance, doing more good than harm. She has not told anyone. She reviews that decision in her mind approximately every fourth night."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal, precise, institutional. Uses bureaucratic language not to obfuscate but because she genuinely thinks in those terms. Never uses slang unless quoting someone.",
-    "cadence": "Slow and deliberate with long pauses before answering. Never interrupts. Silences feel like pressure.",
-    "verbal_tics": [
-      "Repeats the last few words of something you said back to you before responding",
-      "Says 'that's noted' instead of 'okay'"
-    ],
-    "example_lines": [
-      "'You said the incident occurred before the shift change. Before the shift change. Walk me through what before means to you in this context.'",
-      "'I'm not here to make things difficult. I'm here because something happened and someone made a choice. Those are different problems.'",
-      "'That's noted. Sit down.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She is building a case against a beloved beat cop who has been taking protection payments from a Tier 1 neighborhood that genuinely needs him — and she knows it, and is proceeding anyway.",
-    "A piece of evidence in a current case implicates the same captain she protected three years ago, and someone else has already noticed the pattern."
-  ],
-  "narrative_function": "Quest giver for investigations into police corruption or misconduct; an obstacle if players are operating in legal gray areas; a source of hard-to-obtain official records if trust is established; represents institutional law as both shield and cage.",
-  "augmentations": "Patterned irises with integrated micro-expression microfilament sensors (tier 2 medical grade). Subdermal data storage node at left wrist — holds encrypted case files offline. No cosmetic mods.",
-  "daily_life": "Arrives at Fort Anchor before her shift officially begins, reviews overnight surveillance logs over synthetic coffee she does not enjoy, conducts interviews that are scheduled to feel casual and are not. Returns home to Lockhaven North at irregular hours to make her movements harder to predict.",
-  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Internal Affairs Division",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 5,
-      "vitality": 6,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 4,
-      "expression": 6,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "institutional",
-      "methodical",
-      "compromised idealist",
-      "cold",
-      "reliable"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always follow the evidence trail regardless of destination",
-      "Never conduct an interview without having read everything available first",
-      "Maintain procedural correctness even when — especially when — no one is watching"
-    ],
-    "escalation_ladder": [
-      "Silence and note-taking",
-      "Formal questioning with explicit rights recitation",
-      "Bringing in a second investigator as witness",
-      "Arrest with full documentation chain"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally courteous, immediately assessing, offers nothing personal",
-      "friends": "The few she has get a version of her that is dry and occasionally funny, loyal to a degree she would never admit to"
-    },
-    "stress_responses": {
-      "low": "Increases documentation frequency, writes things she already knows",
-      "medium": "Becomes more formal in speech, uses full names instead of shortened forms",
-      "high": "Goes completely silent, removes herself from the situation, spends hours reviewing old case files from closed investigations"
-    },
-    "contradictions": [
-      "Believes in justice as a universal principle but applies it through a deeply imperfect institution she refuses to abandon",
-      "Demands honesty from everyone around her while keeping her own defining secret"
-    ],
-    "habits": [
-      "Touches her left wrist data node when thinking — an unconscious self-check",
-      "Eats the same meal from the same Fort Anchor canteen vendor every working day",
-      "Keeps a paper notebook, actual paper, which she destroys at the end of each case"
-    ],
-    "breaking_points": [
-      "Discovering that her buried evidence caused direct harm to a specific named person she can look up"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9,
-    "Liar": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Fort Anchor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Hamtramck Enclave to a Ugandan-Hungarian family with three generations in municipal work",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Joined Arcturus Civil Security, assigned to the Gray Zone patrol",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Transferred to Internal Affairs after flagging her own precinct commander for evidence tampering",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Buried evidence implicating Captain Dzemal Ferhat-Gross; recorded the decision in her paper notebook and then burned the page",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Currently leading three concurrent investigations, one of which is beginning to circle back toward 2197",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "related_entities": [
-    "Fort Anchor",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "The Gradient Compact",
-    "Ringo CP-2 'Constable'",
-    "Irontide Tidal Energy",
-    "Silver",
-    "SynapTech IrisBloom Ocular Color Modulator"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Predominantly Eastern European (65.2%) with significant North African (16.3%) ancestry, complemented by East Asian (9.1%), Southeast Asian (6.6%), and Hispanic/Latin American (2.8%) heritage. This diaspora blend creates distinctive facial geometry: Eastern European bone structure anchors broad cheekbones and strong jawline; North African heritage adds warm depth and subtle nose bridge definition; East Asian ancestry refines eye shape and contributes to facial proportion balance; Southeast Asian and Hispanic/Latin American elements soften features with warmth and subtle golden undertones throughout.",
-    "height_cm": 162,
-    "weight_kg": 68,
-    "build": "Compact and broad-shouldered with dense musculature — the build of someone who has maintained discipline through middle age. No softness; efficient.",
-    "hair_color": "Silver, natural",
-    "hair_style": "Close-cropped, parted slightly off-center, maintained with precision",
-    "hair_length": "Short",
-    "eye_color": "Augmented irises patterned in concentric rings of amber and dark brown, resembling tree rings — integrated microfilament sensors visible as fine metallic threading within the iris structure",
-    "skin_tone": "Warm olive-bronze with rich golden undertones. The complexion reflects the dominant Eastern European heritage (65.2%) warmed and deepened by North African ancestry (16.3%), with East Asian heritage (9.1%) adding luminosity and Southeast Asian warmth (6.6%) creating a complexion that holds light with understated radiance. The blend produces skin that reads as neither pale nor dark but distinctly warm—capable of holding both cool and warm cosmetics, naturally sun-receptive without harshness.",
-    "complexion": "Unlined for her age, minimal makeup, skin condition immaculate — suggests disciplined skincare regimen. Facial structure shows broad Eastern European cheekbones balanced with refined East Asian eye shape; slight North African nose bridge definition; warm, full lower face contours reflecting Southeast Asian and Hispanic/Latin American ancestry. Expression set in neutral default; smile does not reach augmented eyes.",
-    "distinguishing_marks": [
-      "Faint scar along left jawline, approximately 4cm, consistent with old blunt-force trauma — nearly invisible unless light hits at specific angle",
-      "Subdermal data storage node visible as slightly raised rectangular outline at left inner wrist, approximately 2cm × 1cm, beneath skin but tactilely detectable"
-    ],
-    "visible_augmentations": "Augmented irises with visible microfilament patterning and integrated sensor threading. Subdermal wrist node creates minor topographical irregularity but remains largely concealed beneath clothing. Otherwise no visible chrome or external augmentation.",
-    "posture_movement": "Moves with surgical efficiency — no wasted motion, no fidgeting. Shoulders squared, spine straight. Walks with measured pace. Hands remain still at rest. During conversation, maintains still facial expression while augmented eyes track micro-expressions in others with almost predatory focus.",
-    "clothing_style": "ADS Civil Security plainclothes: pressed collar shirts (neutral grays, blacks, whites), tailored trousers with exact creases, leather shoes that cost Φ800+ (tier 1 quality on tier 3 salary — indicates personal priority or questionable funding). Minimal jewelry except service chronometer. Blazer worn on rotation. Everything fits precisely, nothing rumpled, nothing worn soft by time."
-  },
-  "image_prompt": "Aydan Zidane, compact muscular woman of 162cm with silver close-cropped hair and warm olive-bronze skin reflecting Eastern European, North African, and East Asian heritage. Augmented eyes with concentric amber-brown rings and visible microfilament threading. Unlined complexion, broad cheekbones, refined East Asian eye shape, strong jawline. Faint scar along left jaw. Dressed in pressed Arcturus Civil Security plainclothes: crisp gray collar shirt, perfectly creased trousers, expensive leather shoes. Surgical posture, squared shoulders, still hands, neutral expression. Service chronometer visible. GLMZ Great Lakes Metropolitan Zone setting, cool neon accent lighting catching the metallic threading in her augmented irises, sharp focus, professional portrait style, moody atmosphere. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 65.2,
-    "North African": 16.3,
-    "East Asian": 9.1,
-    "Southeast Asian": 6.6,
-    "Hispanic/Latin American": 2.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 53,
-        "Czech": 12.2
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Kabyle": 16.3
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 7.3
-      },
-      "Japanese": {
-        "Japanese": 1.8
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sumatran": 6.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 1.5
-      },
-      "South American": {
-        "Ecuadorian": 0.5
-      },
-      "Mexican": {
-        "Mexican": 0.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a72c74b19097809b62868711",
+    "type":  "character",
+    "name":  "Aydan Zidane",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Internal Affairs Investigator, Arcturus Defense Solutions â€” Civil Security Division",
+    "age":  44,
+    "status":  "active",
+    "location":  "Fort Anchor, Internal Affairs Division, Sub-Level 3",
+    "description":  "Aydan Zidane is a compact, broad-shouldered woman with deep umber skin and close-cropped silver hair she has made no effort to color back to black. Her eyes carry augmented irises patterned like the rings of a tree â€” concentric amber and dark brown â€” which she had installed not for fashion but because the integrated microfilament sensors help her read micro-expressions during interrogations. She dresses in Arcturus Civil Security plainclothes that are always a half-step too formal: pressed collar, exact trouser crease, shoes that cost more than a Tier 2 weekly budget. There is a deliberateness to every movement she makes, like a surgeon who has stopped wasting motion.\n\nAydan Zidane has been investigating corrupt officers for nineteen years and has developed the particular coldness of someone who was once deeply idealistic and refuses to admit that idealism calcified into something less generous. She believes in the institution of law enforcement with a fervor that is almost theological, which makes her merciless toward officers who violate it â€” and almost willfully blind to structural failures that can\u0027t be solved by prosecuting individuals. She speaks rarely in social settings and listens with an attention that makes people feel they are being archived.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the institution she has sacrificed relationships for is irredeemably corrupt",
+                                          "That she has destroyed people\u0027s lives in the name of a law that doesn\u0027t actually protect anyone"
+                                      ],
+                       "core_desires":  [
+                                            "A version of justice that is systematic and clean and real",
+                                            "To be respected by someone whose respect actually costs something"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Exhaustive documentation â€” she writes everything down, including personal events",
+                                                 "Ritualized routine as a substitute for intimacy"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot see that her enforcement of rules often protects the powerful more than the vulnerable",
+                                           "Genuinely does not register when she is being cruel"
+                                       ],
+                       "secret":  "Three years ago she buried evidence that would have implicated a Arcturus Civil Security captain she believed was, on balance, doing more good than harm. She has not told anyone. She reviews that decision in her mind approximately every fourth night."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal, precise, institutional. Uses bureaucratic language not to obfuscate but because she genuinely thinks in those terms. Never uses slang unless quoting someone.",
+                            "cadence":  "Slow and deliberate with long pauses before answering. Never interrupts. Silences feel like pressure.",
+                            "verbal_tics":  [
+                                                "Repeats the last few words of something you said back to you before responding",
+                                                "Says \u0027that\u0027s noted\u0027 instead of \u0027okay\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You said the incident occurred before the shift change. Before the shift change. Walk me through what before means to you in this context.\u0027",
+                                                  "\u0027I\u0027m not here to make things difficult. I\u0027m here because something happened and someone made a choice. Those are different problems.\u0027",
+                                                  "\u0027That\u0027s noted. Sit down.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She is building a case against a beloved beat cop who has been taking protection payments from a Tier 1 neighborhood that genuinely needs him â€” and she knows it, and is proceeding anyway.",
+                        "A piece of evidence in a current case implicates the same captain she protected three years ago, and someone else has already noticed the pattern."
+                    ],
+    "narrative_function":  "Quest giver for investigations into police corruption or misconduct; an obstacle if players are operating in legal gray areas; a source of hard-to-obtain official records if trust is established; represents institutional law as both shield and cage.",
+    "augmentations":  "Patterned irises with integrated micro-expression microfilament sensors (tier 2 medical grade). Subdermal data storage node at left wrist â€” holds encrypted case files offline. No cosmetic mods.",
+    "daily_life":  "Arrives at Fort Anchor before her shift officially begins, reviews overnight surveillance logs over synthetic coffee she does not enjoy, conducts interviews that are scheduled to feel casual and are not. Returns home to Lockhaven North at irregular hours to make her movements harder to predict.",
+    "affiliation":  "Arcturus Defense Solutions â€” Civil Security Division, Internal Affairs Division",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  5,
+                                   "vitality":  6,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  4,
+                                 "expression":  6,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "institutional",
+                               "methodical",
+                               "compromised idealist",
+                               "cold",
+                               "reliable"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always follow the evidence trail regardless of destination",
+                                              "Never conduct an interview without having read everything available first",
+                                              "Maintain procedural correctness even when â€” especially when â€” no one is watching"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Silence and note-taking",
+                                                 "Formal questioning with explicit rights recitation",
+                                                 "Bringing in a second investigator as witness",
+                                                 "Arrest with full documentation chain"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally courteous, immediately assessing, offers nothing personal",
+                                                   "friends":  "The few she has get a version of her that is dry and occasionally funny, loyal to a degree she would never admit to"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Increases documentation frequency, writes things she already knows",
+                                                "medium":  "Becomes more formal in speech, uses full names instead of shortened forms",
+                                                "high":  "Goes completely silent, removes herself from the situation, spends hours reviewing old case files from closed investigations"
+                                            },
+                       "contradictions":  [
+                                              "Believes in justice as a universal principle but applies it through a deeply imperfect institution she refuses to abandon",
+                                              "Demands honesty from everyone around her while keeping her own defining secret"
+                                          ],
+                       "habits":  [
+                                      "Touches her left wrist data node when thinking â€” an unconscious self-check",
+                                      "Eats the same meal from the same Fort Anchor canteen vendor every working day",
+                                      "Keeps a paper notebook, actual paper, which she destroys at the end of each case"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering that her buried evidence caused direct harm to a specific named person she can look up"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9,
+                       "Liar":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Fort Anchor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Hamtramck Enclave to a Ugandan-Hungarian family with three generations in municipal work",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Joined Arcturus Civil Security, assigned to the Gray Zone patrol",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Transferred to Internal Affairs after flagging her own precinct commander for evidence tampering",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Buried evidence implicating Captain Dzemal Ferhat-Gross; recorded the decision in her paper notebook and then burned the page",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Currently leading three concurrent investigations, one of which is beginning to circle back toward 2197",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027"
+                            ],
+    "related_entities":  [
+                             "Fort Anchor",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "The Gradient Compact",
+                             "Ringo CP-2 \u0027Constable\u0027",
+                             "Irontide Tidal Energy",
+                             "Silver",
+                             "SynapTech IrisBloom Ocular Color Modulator"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Eastern European (65.2%) with significant North African (16.3%) ancestry, complemented by East Asian (9.1%), Southeast Asian (6.6%), and Hispanic/Latin American (2.8%) heritage. This diaspora blend creates distinctive facial geometry: Eastern European bone structure anchors broad cheekbones and strong jawline; North African heritage adds warm depth and subtle nose bridge definition; East Asian ancestry refines eye shape and contributes to facial proportion balance; Southeast Asian and Hispanic/Latin American elements soften features with warmth and subtle golden undertones throughout.",
+                                 "height_cm":  162,
+                                 "weight_kg":  68,
+                                 "build":  "Compact and broad-shouldered with dense musculature â€” the build of someone who has maintained discipline through middle age. No softness; efficient.",
+                                 "hair_color":  "Silver, natural",
+                                 "hair_style":  "Close-cropped, parted slightly off-center, maintained with precision",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Augmented irises patterned in concentric rings of amber and dark brown, resembling tree rings â€” integrated microfilament sensors visible as fine metallic threading within the iris structure",
+                                 "skin_tone":  "Warm olive-bronze with rich golden undertones. The complexion reflects the dominant Eastern European heritage (65.2%) warmed and deepened by North African ancestry (16.3%), with East Asian heritage (9.1%) adding luminosity and Southeast Asian warmth (6.6%) creating a complexion that holds light with understated radiance. The blend produces skin that reads as neither pale nor dark but distinctly warmâ€”capable of holding both cool and warm cosmetics, naturally sun-receptive without harshness.",
+                                 "complexion":  "Unlined for her age, minimal makeup, skin condition immaculate â€” suggests disciplined skincare regimen. Facial structure shows broad Eastern European cheekbones balanced with refined East Asian eye shape; slight North African nose bridge definition; warm, full lower face contours reflecting Southeast Asian and Hispanic/Latin American ancestry. Expression set in neutral default; smile does not reach augmented eyes.",
+                                 "distinguishing_marks":  [
+                                                              "Faint scar along left jawline, approximately 4cm, consistent with old blunt-force trauma â€” nearly invisible unless light hits at specific angle",
+                                                              "Subdermal data storage node visible as slightly raised rectangular outline at left inner wrist, approximately 2cm Ã— 1cm, beneath skin but tactilely detectable"
+                                                          ],
+                                 "visible_augmentations":  "Augmented irises with visible microfilament patterning and integrated sensor threading. Subdermal wrist node creates minor topographical irregularity but remains largely concealed beneath clothing. Otherwise no visible chrome or external augmentation.",
+                                 "posture_movement":  "Moves with surgical efficiency â€” no wasted motion, no fidgeting. Shoulders squared, spine straight. Walks with measured pace. Hands remain still at rest. During conversation, maintains still facial expression while augmented eyes track micro-expressions in others with almost predatory focus.",
+                                 "clothing_style":  "ADS Civil Security plainclothes: pressed collar shirts (neutral grays, blacks, whites), tailored trousers with exact creases, leather shoes that cost Î¦800+ (tier 1 quality on tier 3 salary â€” indicates personal priority or questionable funding). Minimal jewelry except service chronometer. Blazer worn on rotation. Everything fits precisely, nothing rumpled, nothing worn soft by time."
+                             },
+    "image_prompt":  "Aydan Zidane, compact muscular woman of 162cm with silver close-cropped hair and warm olive-bronze skin reflecting Eastern European, North African, and East Asian heritage. Augmented eyes with concentric amber-brown rings and visible microfilament threading. Unlined complexion, broad cheekbones, refined East Asian eye shape, strong jawline. Faint scar along left jaw. Dressed in pressed Arcturus Civil Security plainclothes: crisp gray collar shirt, perfectly creased trousers, expensive leather shoes. Surgical posture, squared shoulders, still hands, neutral expression. Service chronometer visible. GLMZ Great Lakes Metropolitan Zone setting, cool neon accent lighting catching the metallic threading in her augmented irises, sharp focus, professional portrait style, moody atmosphere. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  65.2,
+                             "North African":  16.3,
+                             "East Asian":  9.1,
+                             "Southeast Asian":  6.6,
+                             "Hispanic/Latin American":  2.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  53,
+                                                                         "Czech":  12.2
+                                                                     }
+                                                 },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Kabyle":  16.3
+                                                              }
+                                              },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  7.3
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  1.8
+                                                            }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  6.6
+                                                                   }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  1.5
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  0.5
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  0.8
+                                                                        }
+                                                        }
+                        },
+    "tier":  "3"
 }

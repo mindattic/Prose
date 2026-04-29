@@ -1,344 +1,357 @@
-{
-  "id": "019d6143a620734f92cb6d678eebc22c",
-  "type": "character",
-  "name": "Ashanti Okonkwo-Keïta-Fassi",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Evidence removal and scene sanitation — cleaner",
-  "age": 32,
-  "status": "active",
-  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near North Ave and Milwaukee",
-  "description": "Ashanti Okonkwo-Keïta-Fassi are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 32, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and they make no effort to hide it.\n\nBorn and raised in GLMZ, third generation — they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a cleaner out of Steamvent Alley, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nAshanti Okonkwo-Keïta-Fassi operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.71,
-      "id": 0.12,
-      "shadow": 0.27,
-      "mask": 0.34,
-      "ghost": 0.58
-    },
-    "core_fears": [
-      "Being identified by corporate facial recognition — living off-grid is survival",
-      "Dying alone in some alley and nobody noticing for weeks",
-      "That their reputation is built on luck, not skill, and the luck is finite"
-    ],
-    "core_desires": [
-      "Control — over their body, their schedule, their future",
-      "A crew worth trusting — people who stay when the shooting starts",
-      "Knowledge — to understand the systems that grind people down"
-    ],
-    "coping_mechanisms": [
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
-      "Compartmentalization — work feelings and personal feelings exist in separate boxes",
-      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
-    ],
-    "blind_spots": [
-      "Assumes everyone has an angle because they always have an angle",
-      "Fails to notice when their own behavior mirrors the people they despise",
-      "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
-    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
-    "verbal_tics": [
-      "Never uses contractions when lying — 'I did not' instead of 'I didn't'",
-      "Uses old pre-collapse slang that nobody else remembers"
-    ],
-    "example_lines": [
-      "\"I make problems disappear. The mess is temporary. The clean is permanent.\"",
-      "\"There was never anyone here. There was never anything here. Are we clear?\"",
-      "\"Forensics is a conversation between evidence and investigators. I end that conversation.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Hadiya Arai-Ofori-Atta discovers a job they completed last year was a setup for something much larger and much worse",
-    "The fixer who handles Hadiya Arai-Ofori-Atta's contracts goes silent — dead, disappeared, or turned",
-    "A corporate black site Hadiya Arai-Ofori-Atta once infiltrated is being reopened, and the people inside know their face"
-  ],
-  "narrative_function": "As a cleaner, Hadiya Arai-Ofori-Atta embodies the tension between independence and isolation. They are a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Neural interface jack at base of skull — standard runner-grade, allows direct net access. Neural interface jack at base of skull — standard runner-grade, allows direct net access",
-  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Freelance — Geartown regular",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 8
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 6
-      },
-      "endurance": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 7
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 6
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 5
-      },
-      "perception": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 7
-      },
-      "willpower": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 9
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 6
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 7
-      },
-      "intimidation": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 4
-      },
-      "deception": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 9
-      },
-      "empathy": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.27,
-      "caution": 0.38,
-      "loyalty": 0.8,
-      "greed": 0.35,
-      "empathy": 0.3
-    },
-    "drives": [
-      "survival",
-      "reputation",
-      "loyalty"
-    ],
-    "thresholds": {
-      "pain": 6,
-      "stress": 3,
-      "loyalty_break": 9
-    },
-    "strengths": [
-      "photographic memory for faces and layouts",
-      "network of reliable contacts"
-    ],
-    "weaknesses": [
-      "difficulty with authority figures",
-      "physical limitation from incomplete augmentation"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "cleaner",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Always has an exit route planned before agreeing to any meeting",
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
-      "Presents as emotionless professional but is deeply affected by collateral damage"
-    ],
-    "habits": [
-      "Eats the same meal before every job — superstition masquerading as preference",
-      "Keeps a physical paper notebook — no digital record of personal thoughts",
-      "Carries a specific caliber round as a lucky charm — has never fired it",
-      "Practices a kata or fighting form every morning regardless of circumstances"
-    ],
-    "breaking_points": [
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Being forced to harm a civilian — collateral damage that can't be rationalized"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Neural interface jack at base of skull",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
-      "replaces": ""
-    },
-    {
-      "name": "Neural interface jack at base of skull",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Networker": 0.7,
-    "Manipulator": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Steamvent Alley",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Model 9 'Payday'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Neural Palate",
-    "Lazarus LX-2 'Lab Rat'",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Compass Rose",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Mixed Sub-Saharan African (56.3%) and North African (39.6%) ancestry with minor South Asian heritage (4.1%), creating a phenotype centered in West and Central African features with Mediterranean North African influence. Bone structure reflects African heritage — prominent, high cheekbones with wider nasal base and fuller lip structure. Skin tone is rich warm brown from the blended ancestry, with the even complexion characteristic of this genetic mix. The combination produces a distinctly African-rooted appearance with subtle Mediterranean warmth from North African ancestry.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Wiry and lean with corded muscle from sustained physical activity. Minimal body fat, efficient musculature optimized for speed and endurance rather than strength. Restless posture suggests constant low-level kinetic energy.",
-    "hair_color": "Black with synthetic silver threading woven through — practical modification, not aesthetic",
-    "hair_style": "Pulled back in a tight, functional braid. Kept short enough for quick maintenance between jobs.",
-    "hair_length": "Short to medium",
-    "eye_color": "Dark brown, natural",
-    "skin_tone": "Rich warm brown — the genetic blend of West/Central African and North African ancestry creates deep, even toning across face and body with warm undertones. Skin has the characteristic even distribution of melanin from this ancestry mix.",
-    "complexion": "Strong, prominent cheekbones set in a face with the broader bone structure characteristic of Sub-Saharan African heritage. Angular jaw with fuller lower face structure. Skin shows the wear of chemical exposure — faint discoloration around the hairline from repeated contact with industrial solvents. Otherwise clear, with the kind of tight alertness that comes from chronic low-level stress. No grooming excess; functional only.",
-    "distinguishing_marks": [
-      "Visible neural interface jack at base of skull — chrome-plated, rectangular, approximately 3cm across, sits at the C7 vertebra. Shows minor scarring around the edges from repeated insertion cycles.",
-      "Thin scar along inner left forearm, approximately 8cm, pale and old — consistent with early augmentation work or accident.",
-      "Chemical burn marks across the knuckles of both hands — irregular white patches where skin never fully repigmented. Occupational hazard."
-    ],
-    "visible_augmentations": "Neural interface jack at base of skull is the only visible chrome. No limb replacement, no ocular modification, no subdermal plating. Everything else is internal or deliberately hidden.",
-    "posture_movement": "Moves with economical efficiency — no wasted motion. Stands with weight distributed to ball of feet, ready to pivot or run. Hands rest in lap or at sides, never crossed over torso. Default expression: guarded neutrality. Eyes constantly scanning environment. Speaks quietly, listens more than talks.",
-    "clothing_style": "Tier 3-4 utilitarian. Unmarked dark synthfabric cargo pants with multiple pockets for tools and supplies. Reinforced work boots with chemical-resistant soles, scuffed and stained. Sleeveless or short-sleeved tops that expose the jack — a deliberate choice, not accidental. Thin leather gloves (left hand missing two fingers on the glove — modification to accommodate regular neural jack insertion). No corporate branding, no status indicators. Clothing is expendable and replaceable; color palette is grays, blacks, deep greens."
-  },
-  "image_prompt": "Ashanti Okonkwo-Keïta-Fassi, 168cm lean muscular frame, rich warm brown skin from West African and North African heritage blend, prominent high cheekbones and angular jaw, natural dark brown eyes. Black hair with silver threads pulled back in tight functional braid. Sleeveless dark synth top exposing chrome neural interface jack at base of skull with visible scarring. Dark cargo pants, reinforced work boots, thin leather gloves with modified left hand. Chemical burn marks on knuckles, faint scar on inner left forearm. Guarded neutral expression, alert scanning gaze. GLMZ Great Lakes Metropolitan Zone, moody industrial interior lighting with cool blue-grey neon accents, standing in economical ready posture, no wasted motion, constant kinetic readiness. Gritty utilitarian atmosphere, expendable clothing, minimal chrome augmentation visible. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 56.3,
-    "North African": 39.6,
-    "South Asian": 4.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "East African": {
-        "Kenyan": 4,
-        "Ethiopian": 10.3
-      },
-      "West African": {
-        "Liberian": 22.7,
-        "Nigerian": 19.3
-      }
-    },
-    "North African": {
-      "Maghreb": {
-        "Algerian": 17.5
-      },
-      "Amazigh": {
-        "Kabyle": 16.3,
-        "Berber": 5.8
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 3.8
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 0.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a620734f92cb6d678eebc22c",
+    "type":  "character",
+    "name":  "Ashanti Okonkwo-KeÃ¯ta-Fassi",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Evidence removal and scene sanitation â€” cleaner",
+    "age":  32,
+    "status":  "active",
+    "location":  "Steamvent Alley â€” geothermal district, hot and chemical-smelling, near North Ave and Milwaukee",
+    "description":  "Ashanti Okonkwo-KeÃ¯ta-Fassi are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 32, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible â€” neural interface jack at base of skull â€” standard runner-grade, allows direct ne â€” and they make no effort to hide it.\n\nBorn and raised in GLMZ, third generation â€” they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a cleaner out of Steamvent Alley, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nAshanti Okonkwo-KeÃ¯ta-Fassi operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being identified by corporate facial recognition â€” living off-grid is survival",
+                                          "Dying alone in some alley and nobody noticing for weeks",
+                                          "That their reputation is built on luck, not skill, and the luck is finite"
+                                      ],
+                       "core_desires":  [
+                                            "Control â€” over their body, their schedule, their future",
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "Knowledge â€” to understand the systems that grind people down"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring",
+                                                 "Compartmentalization â€” work feelings and personal feelings exist in separate boxes",
+                                                 "Control â€” micromanages everything within reach to compensate for the chaos everywhere else"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Fails to notice when their own behavior mirrors the people they despise",
+                                           "Cannot recognize when they\u0027re being manipulated by someone who genuinely seems to care"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Educated vocabulary wrapped in street delivery â€” the contrast is deliberate.",
+                            "cadence":  "Conversational and disarming â€” sounds like a neighbor until the content registers.",
+                            "verbal_tics":  [
+                                                "Never uses contractions when lying â€” \u0027I did not\u0027 instead of \u0027I didn\u0027t\u0027",
+                                                "Uses old pre-collapse slang that nobody else remembers"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I make problems disappear. The mess is temporary. The clean is permanent.\"",
+                                                  "\"There was never anyone here. There was never anything here. Are we clear?\"",
+                                                  "\"Forensics is a conversation between evidence and investigators. I end that conversation.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Hadiya Arai-Ofori-Atta discovers a job they completed last year was a setup for something much larger and much worse",
+                        "The fixer who handles Hadiya Arai-Ofori-Atta\u0027s contracts goes silent â€” dead, disappeared, or turned",
+                        "A corporate black site Hadiya Arai-Ofori-Atta once infiltrated is being reopened, and the people inside know their face"
+                    ],
+    "narrative_function":  "As a cleaner, Hadiya Arai-Ofori-Atta embodies the tension between independence and isolation. They are a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+    "augmentations":  "Neural interface jack at base of skull â€” standard runner-grade, allows direct net access. Neural interface jack at base of skull â€” standard runner-grade, allows direct net access",
+    "daily_life":  "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather â€” not for pleasure, but for market intelligence.",
+    "affiliation":  "Freelance â€” Geartown regular",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  5,
+                                                    "augmented":  0,
+                                                    "effective":  8
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  6
+                                               },
+                                   "endurance":  {
+                                                     "base":  8,
+                                                     "augmented":  3,
+                                                     "effective":  7
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  2,
+                                                    "effective":  6
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  7,
+                                                      "augmented":  1,
+                                                      "effective":  5
+                                                  },
+                                 "perception":  {
+                                                    "base":  8,
+                                                    "augmented":  3,
+                                                    "effective":  7
+                                                },
+                                 "willpower":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  2,
+                                                   "effective":  6
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  8,
+                                                  "augmented":  0,
+                                                  "effective":  7
+                                              },
+                                 "intimidation":  {
+                                                      "base":  5,
+                                                      "augmented":  0,
+                                                      "effective":  4
+                                                  },
+                                 "deception":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  9
+                                               },
+                                 "empathy":  {
+                                                 "base":  4,
+                                                 "augmented":  3,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.27,
+                                      "caution":  0.38,
+                                      "loyalty":  0.8,
+                                      "greed":  0.35,
+                                      "empathy":  0.3
+                                  },
+                  "drives":  [
+                                 "survival",
+                                 "reputation",
+                                 "loyalty"
+                             ],
+                  "thresholds":  {
+                                     "pain":  6,
+                                     "stress":  3,
+                                     "loyalty_break":  9
+                                 },
+                  "strengths":  [
+                                    "photographic memory for faces and layouts",
+                                    "network of reliable contacts"
+                                ],
+                  "weaknesses":  [
+                                     "difficulty with authority figures",
+                                     "physical limitation from incomplete augmentation"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "cleaner",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Physical agitation â€” pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+                                              "Presents as emotionless professional but is deeply affected by collateral damage"
+                                          ],
+                       "habits":  [
+                                      "Eats the same meal before every job â€” superstition masquerading as preference",
+                                      "Keeps a physical paper notebook â€” no digital record of personal thoughts",
+                                      "Carries a specific caliber round as a lucky charm â€” has never fired it",
+                                      "Practices a kata or fighting form every morning regardless of circumstances"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Neural interface jack at base of skull",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Neural interface jack at base of skull â€” standard runner-grade, allows direct net access",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Neural interface jack at base of skull",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Neural interface jack at base of skull â€” standard runner-grade, allows direct net access",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Networker":  0.7,
+                       "Manipulator":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Steamvent Alley",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Neural Palate",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "Compass Rose",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "GLMZ"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Mixed Sub-Saharan African (56.3%) and North African (39.6%) ancestry with minor South Asian heritage (4.1%), creating a phenotype centered in West and Central African features with Mediterranean North African influence. Bone structure reflects African heritage â€” prominent, high cheekbones with wider nasal base and fuller lip structure. Skin tone is rich warm brown from the blended ancestry, with the even complexion characteristic of this genetic mix. The combination produces a distinctly African-rooted appearance with subtle Mediterranean warmth from North African ancestry.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Wiry and lean with corded muscle from sustained physical activity. Minimal body fat, efficient musculature optimized for speed and endurance rather than strength. Restless posture suggests constant low-level kinetic energy.",
+                                 "hair_color":  "Black with synthetic silver threading woven through â€” practical modification, not aesthetic",
+                                 "hair_style":  "Pulled back in a tight, functional braid. Kept short enough for quick maintenance between jobs.",
+                                 "hair_length":  "Short to medium",
+                                 "eye_color":  "Dark brown, natural",
+                                 "skin_tone":  "Rich warm brown â€” the genetic blend of West/Central African and North African ancestry creates deep, even toning across face and body with warm undertones. Skin has the characteristic even distribution of melanin from this ancestry mix.",
+                                 "complexion":  "Strong, prominent cheekbones set in a face with the broader bone structure characteristic of Sub-Saharan African heritage. Angular jaw with fuller lower face structure. Skin shows the wear of chemical exposure â€” faint discoloration around the hairline from repeated contact with industrial solvents. Otherwise clear, with the kind of tight alertness that comes from chronic low-level stress. No grooming excess; functional only.",
+                                 "distinguishing_marks":  [
+                                                              "Visible neural interface jack at base of skull â€” chrome-plated, rectangular, approximately 3cm across, sits at the C7 vertebra. Shows minor scarring around the edges from repeated insertion cycles.",
+                                                              "Thin scar along inner left forearm, approximately 8cm, pale and old â€” consistent with early augmentation work or accident.",
+                                                              "Chemical burn marks across the knuckles of both hands â€” irregular white patches where skin never fully repigmented. Occupational hazard."
+                                                          ],
+                                 "visible_augmentations":  "Neural interface jack at base of skull is the only visible chrome. No limb replacement, no ocular modification, no subdermal plating. Everything else is internal or deliberately hidden.",
+                                 "posture_movement":  "Moves with economical efficiency â€” no wasted motion. Stands with weight distributed to ball of feet, ready to pivot or run. Hands rest in lap or at sides, never crossed over torso. Default expression: guarded neutrality. Eyes constantly scanning environment. Speaks quietly, listens more than talks.",
+                                 "clothing_style":  "Tier 3-4 utilitarian. Unmarked dark synthfabric cargo pants with multiple pockets for tools and supplies. Reinforced work boots with chemical-resistant soles, scuffed and stained. Sleeveless or short-sleeved tops that expose the jack â€” a deliberate choice, not accidental. Thin leather gloves (left hand missing two fingers on the glove â€” modification to accommodate regular neural jack insertion). No corporate branding, no status indicators. Clothing is expendable and replaceable; color palette is grays, blacks, deep greens."
+                             },
+    "image_prompt":  "Ashanti Okonkwo-KeÃ¯ta-Fassi, 168cm lean muscular frame, rich warm brown skin from West African and North African heritage blend, prominent high cheekbones and angular jaw, natural dark brown eyes. Black hair with silver threads pulled back in tight functional braid. Sleeveless dark synth top exposing chrome neural interface jack at base of skull with visible scarring. Dark cargo pants, reinforced work boots, thin leather gloves with modified left hand. Chemical burn marks on knuckles, faint scar on inner left forearm. Guarded neutral expression, alert scanning gaze. GLMZ Great Lakes Metropolitan Zone, moody industrial interior lighting with cool blue-grey neon accents, standing in economical ready posture, no wasted motion, constant kinetic readiness. Gritty utilitarian atmosphere, expendable clothing, minimal chrome augmentation visible. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  56.3,
+                             "North African":  39.6,
+                             "South Asian":  4.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Kenyan":  4,
+                                                                             "Ethiopian":  10.3
+                                                                         },
+                                                        "West African":  {
+                                                                             "Liberian":  22.7,
+                                                                             "Nigerian":  19.3
+                                                                         }
+                                                    },
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Algerian":  17.5
+                                                              },
+                                                  "Amazigh":  {
+                                                                  "Kabyle":  16.3,
+                                                                  "Berber":  5.8
+                                                              }
+                                              },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  3.8
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  0.3
+                                                                }
+                                            }
+                        },
+    "tier":  "3"
 }

@@ -1,309 +1,338 @@
-{
-  "id": "019d6143a6a17b4abcdfe86ce5ab219f",
-  "rating": 70,
-  "type": "character",
-  "name": "Catori Madrigal",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Circuit monk and chrome prayer practitioner",
-  "age": 34,
-  "status": "active",
-  "location": "Brightmoor Reclamation, the Tessellated Chapel — a repurposed Ferrogate Transit relay station, near Western and Division",
-  "description": "Catori Madrigal is lean in the way of someone who forgets to eat when absorbed in something, with long-fingered hands that are always slightly ink-stained from the circuit diagrams he draws as meditative practice. His Zambian-Russian heritage gives him warm brown skin and broad cheekbones, and he keeps his head shaved except for a central strip of hair that he has grown into a narrow topknot. His most visible modification is a bioluminescent stripe running from his left temple to his jaw that pulses in slow rhythms matching his resting heartrate — a devotional mod he received during his ordination into the Circuit Path, meant to make the soul's rhythm visible to the world.\n\nHe came to the circuit monks after a breakdown at nineteen, when a corporate data compression project he'd been laboring on for Tessera was quietly canceled without credit or compensation. The spiritual collapse that followed became the foundation of something else. He is earnest to a degree that can be disarming or irritating depending on the listener, but there is nothing performative about his faith — he genuinely believes that the act of building and repairing circuits is a form of prayer, and that the monks' practice of meditating through hardware maintenance brings them closer to something real. He struggles with anger, which he has mostly converted into fierce advocacy.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.9,
-      "id": 0.5,
-      "shadow": 0.6,
-      "mask": 0.2,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That his faith is a sophisticated avoidance of the rage he never fully processed",
-      "Becoming an institution rather than a person"
-    ],
-    "core_desires": [
-      "To actually change material conditions for people in Brightmoor, not just comfort them",
-      "To be genuinely good, not just good-seeming"
-    ],
-    "coping_mechanisms": [
-      "Physical repetitive tasks — soldering, cleaning contacts, winding wire",
-      "Theological frameworks that recontextualize powerlessness as spiritual discipline"
-    ],
-    "blind_spots": [
-      "He sometimes mistakes his own unprocessed anger for discernment about other people's motivations",
-      "He can be condescending to people whose faith is less systematized than his"
-    ],
-    "secret": "He still has the complete project files from his canceled Tessera work — he preserved them knowing they were proprietary, and has occasionally leaked small pieces anonymously to help people in disputes with the corponation. He knows this could end the chapel."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clear and accessible, deliberately avoids jargon when teaching; in theological discussion becomes more precise and slightly archaic",
-    "cadence": "Measured, with the habit of pausing and rephrasing when he feels he's being unclear",
-    "verbal_tics": [
-      "'That's not quite right, let me try again'",
-      "Taps the bioluminescent stripe absently when thinking",
-      "'The signal and the noise are both information'"
-    ],
-    "example_lines": [
-      "'You don't have to believe what I believe to sit here and fix something broken. The work is the same either way.'",
-      "'Tessera didn't take my project. They took three years of my life and called it a rounding error. The math is the same. The feeling is different.'"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "One of his teenage students has gone missing — Prokhor suspects a Tessera recruitment sweep in Brightmoor but can't prove it and won't go to corponation security",
-    "The chapel's relay station structure has begun receiving transmissions on old Ferrogate frequencies that no one can explain — Prokhor thinks it's an E.L.F., his order's leadership thinks it's an interference problem they need to suppress quietly"
-  ],
-  "narrative_function": "Sympathetic community figure, potential quest giver for problems in Brightmoor Reclamation; his corporate grievance history can connect plots to Tessera; his students and congregation give him wide knowledge of local civilian struggles.",
-  "augmentations": "Bioluminescent pulse stripe on left face (devotional, ordination mark). Basic neural focus chip — helps sustain meditative states during long repair sessions. No combat or enhancement augmentations.",
-  "daily_life": "Morning liturgy involves an hour of silent circuit repair on donated broken devices; he teaches afternoon classes on basic electronics maintenance to Brightmoor kids for free, funded by donations; evenings he leads chrome prayer sessions that blend meditation with device blessing rituals.",
-  "affiliation": "The Circuit Path — an independent monastic order with small chapters across the Reclamation zones",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 5,
-      "perception": 6
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 7,
-      "expression": 7,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "circuit monk",
-      "grassroots teacher",
-      "suppressed anger",
-      "corporate grievance",
-      "earnest idealist"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Exhaust peaceful and transparent options before any other approach",
-      "Never lie to congregation members even when truth is uncomfortable",
-      "Protect the children in his classes above all other considerations"
-    ],
-    "escalation_ladder": [
-      "Patient dialogue and reframing",
-      "Clear statement of what he believes to be true and why",
-      "Removal of cooperation — becomes entirely unhelpful to those he believes are causing harm"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Open and curious, asks genuine questions, slightly intense eye contact",
-      "friends": "Warmer, self-deprecating, will admit doubts and fears he conceals from the congregation"
-    },
-    "stress_responses": {
-      "low": "More soldering, less talking",
-      "medium": "Becomes very precise and formal in speech — retreats into structure",
-      "high": "Long silence followed by a single clear statement of what he intends to do"
-    },
-    "contradictions": [
-      "Preaches non-attachment to outcomes but is privately obsessive about whether his work is actually helping"
-    ],
-    "habits": [
-      "Draws circuit diagrams in the margins of any paper he handles",
-      "Always offers tea before any serious conversation, delays the conversation until it's made"
-    ],
-    "breaking_points": [
-      "Watching a child be exploited by a corponation with no recourse",
-      "Being asked to stay quiet about something harmful to protect the chapel"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Seeker": 0.9,
-    "Perpetual Student": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Brightmoor Reclamation",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Brightmoor Reclamation; parents were Ghanaian-Russian labor migrants",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Begins contract work for Tessera as a data compression engineer",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Project canceled without credit; enters a period of breakdown and displacement",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Found by a Circuit Path monk; joins the order",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Opens the Tessellated Chapel in Brightmoor; begins free electronics classes for local youth",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (67.6%) with significant Northern European (11.8%), East Asian (10.0%), and smaller portions of Sub-Saharan African (5.7%) and Southeast Asian (4.9%) ancestry. This creates a warm, sun-kissed complexion with strong Latin American foundation, enhanced by subtle East Asian bone structure and the depth and warmth from African ancestry. Northern European traces add slight cool undertones to an otherwise warm, golden palette.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Lean and angular, the build of someone whose body follows the rhythm of their mind rather than disciplined training. Long-limbed with visible tendons in forearms and hands; slight forward shoulder curve from years hunched over circuit boards.",
-    "hair_color": "Dark brown, natural",
-    "hair_style": "Central strip of hair grown into a narrow, carefully maintained topknot; the sides of his skull are shaved smooth and regularly maintained",
-    "hair_length": "Shaved on sides, medium-length topknot",
-    "eye_color": "Deep brown, warm and attentive",
-    "skin_tone": "Warm golden-brown with luminous richness—predominantly Latin American undertone enhanced by East Asian subtlety and African depth. Sun-warmed complexion that glows distinctly in light, catching highlights with warm golden reflections.",
-    "complexion": "Clean-shaven with prominent cheekbones and slight hollowness suggesting irregular eating habits. The facial structure reflects Latin American geometry with subtle East Asian influence in eye placement and bone definition, warmed by African ancestry contributing depth and richness to overall tone. Skin is clear but weathered from hours under workstation LEDs. Expression defaults to focused intensity, softened by genuine kindness.",
-    "distinguishing_marks": [
-      "Bioluminescent stripe running from left temple to left jawline, pulsing in slow rhythm — cyan-blue in color, most visible in dim light or evening hours",
-      "Faint, systematic burn scars across the backs of both hands from soldering work — old, healed, pale against his skin",
-      "Ink stains, usually faint, across the inner knuckles and between fingers from his meditative circuit diagram practice"
-    ],
-    "visible_augmentations": "Bioluminescent pulse stripe on left face (cyan-blue, subtle, rhythmic). No obvious chrome or external hardware. The neural focus chip is subcutaneous and invisible.",
-    "posture_movement": "Moves with deliberate, economical precision — no wasted motion. His hands are constantly slightly active, fingers making micro-movements as if working through problems. When listening, he tilts his head slightly, a habit from focusing on faint electronic hums. Sits cross-legged frequently, even informally.",
-    "clothing_style": "Tier 3-4 working class with ascetic undertones. Favors loose, practical clothing: worn canvas work robes in muted grays and blacks (monastic order signature), layered with a sleeveless thermal underneath. Carries a worn leather satchel with hand tools and circuit components. His clothing shows signs of minor burns and staining but is kept scrupulously clean. No corporate logos or luxury indicators; everything is functional and intentionally simple. Bare feet when possible, calloused and steady."
-  },
-  "image_prompt": "Catori Madrigal, GLMZ, Great Lakes Metropolitan Zone. Tall lean figure, 178cm, warm golden-brown skin with luminous undertones reflecting Latin American, East Asian, and African heritage. Clean-shaven with prominent cheekbones, deep brown attentive eyes. Dark brown hair shaved at sides with central topknot. Distinctive cyan-blue bioluminescent stripe running from left temple to jawline, pulsing softly. Faint pale soldering scars across both hands, ink stains on knuckles. Wears loose, practical canvas work robes in muted grays and blacks over sleeveless thermal, worn leather satchel with tools. Bare feet, calloused and steady. Posture precise and economical, fingers subtly moving. Focused intensity softened by kindness. Workstation-weathered skin. Sitting cross-legged in dim workshop lighting, cyan bioluminescence visible against darkness, monastic ascetic aesthetic, hands active with circuit work, moody neo-noir atmosphere --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 67.6,
-    "Northern European": 11.8,
-    "East Asian": 10,
-    "Sub-Saharan African": 5.7,
-    "Southeast Asian": 4.9
-  },
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 25.9
-      },
-      "Mexican": {
-        "Mexican": 24.1
-      },
-      "Central American": {
-        "Salvadoran": 17.6
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Welsh": 7,
-        "English": 1.1
-      },
-      "Scandinavian": {
-        "Danish": 2.6
-      },
-      "Germanic": {
-        "Swiss German": 1.1
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 5.3
-      },
-      "Korean": {
-        "Korean": 4.7
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zimbabwean": 5.7
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sumatran": 3.6,
-        "Javanese": 1.3
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a6a17b4abcdfe86ce5ab219f",
+    "rating":  70,
+    "type":  "character",
+    "name":  "Catori Madrigal",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Circuit monk and chrome prayer practitioner",
+    "age":  34,
+    "status":  "active",
+    "location":  "Brightmoor Reclamation, the Tessellated Chapel â€” a repurposed Ferrogate Transit relay station, near Western and Division",
+    "description":  "Catori Madrigal is lean in the way of someone who forgets to eat when absorbed in something, with long-fingered hands that are always slightly ink-stained from the circuit diagrams he draws as meditative practice. His Zambian-Russian heritage gives him warm brown skin and broad cheekbones, and he keeps his head shaved except for a central strip of hair that he has grown into a narrow topknot. His most visible modification is a bioluminescent stripe running from his left temple to his jaw that pulses in slow rhythms matching his resting heartrate â€” a devotional mod he received during his ordination into the Circuit Path, meant to make the soul\u0027s rhythm visible to the world.\n\nHe came to the circuit monks after a breakdown at nineteen, when a corporate data compression project he\u0027d been laboring on for Tessera was quietly canceled without credit or compensation. The spiritual collapse that followed became the foundation of something else. He is earnest to a degree that can be disarming or irritating depending on the listener, but there is nothing performative about his faith â€” he genuinely believes that the act of building and repairing circuits is a form of prayer, and that the monks\u0027 practice of meditating through hardware maintenance brings them closer to something real. He struggles with anger, which he has mostly converted into fierce advocacy.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That his faith is a sophisticated avoidance of the rage he never fully processed",
+                                          "Becoming an institution rather than a person"
+                                      ],
+                       "core_desires":  [
+                                            "To actually change material conditions for people in Brightmoor, not just comfort them",
+                                            "To be genuinely good, not just good-seeming"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Physical repetitive tasks â€” soldering, cleaning contacts, winding wire",
+                                                 "Theological frameworks that recontextualize powerlessness as spiritual discipline"
+                                             ],
+                       "blind_spots":  [
+                                           "He sometimes mistakes his own unprocessed anger for discernment about other people\u0027s motivations",
+                                           "He can be condescending to people whose faith is less systematized than his"
+                                       ],
+                       "secret":  "He still has the complete project files from his canceled Tessera work â€” he preserved them knowing they were proprietary, and has occasionally leaked small pieces anonymously to help people in disputes with the corponation. He knows this could end the chapel."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clear and accessible, deliberately avoids jargon when teaching; in theological discussion becomes more precise and slightly archaic",
+                            "cadence":  "Measured, with the habit of pausing and rephrasing when he feels he\u0027s being unclear",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s not quite right, let me try again\u0027",
+                                                "Taps the bioluminescent stripe absently when thinking",
+                                                "\u0027The signal and the noise are both information\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You don\u0027t have to believe what I believe to sit here and fix something broken. The work is the same either way.\u0027",
+                                                  "\u0027Tessera didn\u0027t take my project. They took three years of my life and called it a rounding error. The math is the same. The feeling is different.\u0027"
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "One of his teenage students has gone missing â€” Prokhor suspects a Tessera recruitment sweep in Brightmoor but can\u0027t prove it and won\u0027t go to corponation security",
+                        "The chapel\u0027s relay station structure has begun receiving transmissions on old Ferrogate frequencies that no one can explain â€” Prokhor thinks it\u0027s an E.L.F., his order\u0027s leadership thinks it\u0027s an interference problem they need to suppress quietly"
+                    ],
+    "narrative_function":  "Sympathetic community figure, potential quest giver for problems in Brightmoor Reclamation; his corporate grievance history can connect plots to Tessera; his students and congregation give him wide knowledge of local civilian struggles.",
+    "augmentations":  "Bioluminescent pulse stripe on left face (devotional, ordination mark). Basic neural focus chip â€” helps sustain meditative states during long repair sessions. No combat or enhancement augmentations.",
+    "daily_life":  "Morning liturgy involves an hour of silent circuit repair on donated broken devices; he teaches afternoon classes on basic electronics maintenance to Brightmoor kids for free, funded by donations; evenings he leads chrome prayer sessions that blend meditation with device blessing rituals.",
+    "affiliation":  "The Circuit Path â€” an independent monastic order with small chapters across the Reclamation zones",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  5,
+                                   "perception":  6
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  7,
+                                 "expression":  7,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "circuit monk",
+                               "grassroots teacher",
+                               "suppressed anger",
+                               "corporate grievance",
+                               "earnest idealist"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Exhaust peaceful and transparent options before any other approach",
+                                              "Never lie to congregation members even when truth is uncomfortable",
+                                              "Protect the children in his classes above all other considerations"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient dialogue and reframing",
+                                                 "Clear statement of what he believes to be true and why",
+                                                 "Removal of cooperation â€” becomes entirely unhelpful to those he believes are causing harm"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Open and curious, asks genuine questions, slightly intense eye contact",
+                                                   "friends":  "Warmer, self-deprecating, will admit doubts and fears he conceals from the congregation"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More soldering, less talking",
+                                                "medium":  "Becomes very precise and formal in speech â€” retreats into structure",
+                                                "high":  "Long silence followed by a single clear statement of what he intends to do"
+                                            },
+                       "contradictions":  [
+                                              "Preaches non-attachment to outcomes but is privately obsessive about whether his work is actually helping"
+                                          ],
+                       "habits":  [
+                                      "Draws circuit diagrams in the margins of any paper he handles",
+                                      "Always offers tea before any serious conversation, delays the conversation until it\u0027s made"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching a child be exploited by a corponation with no recourse",
+                                               "Being asked to stay quiet about something harmful to protect the chapel"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Seeker":  0.9,
+                       "Perpetual Student":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Brightmoor Reclamation",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Brightmoor Reclamation; parents were Ghanaian-Russian labor migrants",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Begins contract work for Tessera as a data compression engineer",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Project canceled without credit; enters a period of breakdown and displacement",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Found by a Circuit Path monk; joins the order",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Opens the Tessellated Chapel in Brightmoor; begins free electronics classes for local youth",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Predominantly Hispanic/Latin American (67.6%) with significant Northern European (11.8%), East Asian (10.0%), and smaller portions of Sub-Saharan African (5.7%) and Southeast Asian (4.9%) ancestry. This creates a warm, sun-kissed complexion with strong Latin American foundation, enhanced by subtle East Asian bone structure and the depth and warmth from African ancestry. Northern European traces add slight cool undertones to an otherwise warm, golden palette.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and angular, the build of someone whose body follows the rhythm of their mind rather than disciplined training. Long-limbed with visible tendons in forearms and hands; slight forward shoulder curve from years hunched over circuit boards.",
+                                 "hair_color":  "Dark brown, natural",
+                                 "hair_style":  "Central strip of hair grown into a narrow, carefully maintained topknot; the sides of his skull are shaved smooth and regularly maintained",
+                                 "hair_length":  "Shaved on sides, medium-length topknot",
+                                 "eye_color":  "Deep brown, warm and attentive",
+                                 "skin_tone":  "Warm golden-brown with luminous richnessâ€”predominantly Latin American undertone enhanced by East Asian subtlety and African depth. Sun-warmed complexion that glows distinctly in light, catching highlights with warm golden reflections.",
+                                 "complexion":  "Clean-shaven with prominent cheekbones and slight hollowness suggesting irregular eating habits. The facial structure reflects Latin American geometry with subtle East Asian influence in eye placement and bone definition, warmed by African ancestry contributing depth and richness to overall tone. Skin is clear but weathered from hours under workstation LEDs. Expression defaults to focused intensity, softened by genuine kindness.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent stripe running from left temple to left jawline, pulsing in slow rhythm â€” cyan-blue in color, most visible in dim light or evening hours",
+                                                              "Faint, systematic burn scars across the backs of both hands from soldering work â€” old, healed, pale against his skin",
+                                                              "Ink stains, usually faint, across the inner knuckles and between fingers from his meditative circuit diagram practice"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent pulse stripe on left face (cyan-blue, subtle, rhythmic). No obvious chrome or external hardware. The neural focus chip is subcutaneous and invisible.",
+                                 "posture_movement":  "Moves with deliberate, economical precision â€” no wasted motion. His hands are constantly slightly active, fingers making micro-movements as if working through problems. When listening, he tilts his head slightly, a habit from focusing on faint electronic hums. Sits cross-legged frequently, even informally.",
+                                 "clothing_style":  "Tier 3-4 working class with ascetic undertones. Favors loose, practical clothing: worn canvas work robes in muted grays and blacks (monastic order signature), layered with a sleeveless thermal underneath. Carries a worn leather satchel with hand tools and circuit components. His clothing shows signs of minor burns and staining but is kept scrupulously clean. No corporate logos or luxury indicators; everything is functional and intentionally simple. Bare feet when possible, calloused and steady."
+                             },
+    "image_prompt":  "Catori Madrigal, GLMZ, Great Lakes Metropolitan Zone. Tall lean figure, 178cm, warm golden-brown skin with luminous undertones reflecting Latin American, East Asian, and African heritage. Clean-shaven with prominent cheekbones, deep brown attentive eyes. Dark brown hair shaved at sides with central topknot. Distinctive cyan-blue bioluminescent stripe running from left temple to jawline, pulsing softly. Faint pale soldering scars across both hands, ink stains on knuckles. Wears loose, practical canvas work robes in muted grays and blacks over sleeveless thermal, worn leather satchel with tools. Bare feet, calloused and steady. Posture precise and economical, fingers subtly moving. Focused intensity softened by kindness. Workstation-weathered skin. Sitting cross-legged in dim workshop lighting, cyan bioluminescence visible against darkness, monastic ascetic aesthetic, hands active with circuit work, moody neo-noir atmosphere --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  67.6,
+                             "Northern European":  11.8,
+                             "East Asian":  10,
+                             "Sub-Saharan African":  5.7,
+                             "Southeast Asian":  4.9
+                         },
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  25.9
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  24.1
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  17.6
+                                                                                 }
+                                                        },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Welsh":  7,
+                                                                            "English":  1.1
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Danish":  2.6
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "Swiss German":  1.1
+                                                                   }
+                                                  },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  5.3
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  4.7
+                                                          }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  5.7
+                                                                             }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  3.6,
+                                                                       "Javanese":  1.3
+                                                                   }
+                                                }
+                        }
 }

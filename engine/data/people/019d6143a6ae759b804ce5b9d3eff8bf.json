@@ -1,244 +1,265 @@
-{
-  "id": "019d6143a6ae759b804ce5b9d3eff8bf",
-  "type": "character",
-  "name": "Havard Madrigal",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Anti-corporate agitator and protest coordinator",
-  "age": 19,
-  "status": "active",
-  "location": "North Branch Commons, near North Ave and Damen",
-  "description": "Havard Madrigal is tall and still growing, with a loose-limbed energy that makes him seem like he might trip over himself until suddenly he doesn't — he moves fast when he needs to and knows every rooftop, alley, and maintenance corridor in the North Branch Commons with the intimacy of someone who has been running since he was twelve. His skin is a rich brown, and he has retractable claw mods on his right hand that he got on a dare at sixteen and has kept because they're useful for scaling drainage pipes. His left cheekbone has a hairline fracture that healed imperfectly — a reminder from a Palladian security response at a demonstration last year.\n\nHe coordinates direct actions — marches, blockades, projection vandalism, the occasional coordinated work disruption in Palladian-adjacent supply lines — with a tactical instinct that belies his age and an absolute inability to sit through a long meeting without his knee bouncing audibly. He is not strategic in the way older activists mean it. He is strategic in the way a game player is: fast pattern recognition, good in chaos, bad at long timelines. The elders in the movement find him alternately inspiring and exhausting. He finds them slow.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.8,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Becoming one of the people who talks about change but never makes it",
-      "That the system is not broken and working as intended, which is worse"
-    ],
-    "core_desires": [
-      "To matter, specifically and concretely — not abstractly",
-      "For the people he grew up with to have something better than what they inherited"
-    ],
-    "coping_mechanisms": [
-      "Movement — physical activity as emotional processing",
-      "Dark humor about the situation with a refusal to be hopeless, even performatively"
-    ],
-    "blind_spots": [
-      "His contempt for caution as cowardice means he sometimes takes risks that land other people in danger",
-      "He doesn't fully understand how much of his confidence depends on not having lost badly yet"
-    ],
-    "secret": "After the Palladian response that broke his cheekbone, Rashid secretly identified three security officers involved and posted their personal addresses on an encrypted forum. He framed it as 'public accountability.' Someone vandalized one of the addresses. He does not know if he feels bad about this. He is afraid that he doesn't."
-  },
-  "speech_patterns": {
-    "vocabulary": "Current North Branch Commons street slang, fast references, tends to use 'we' rather than 'I' for political statements and 'I' for personal ones as a kind of unconscious integrity",
-    "cadence": "Rapid, interrupts himself to revise mid-sentence, thoughts arrive faster than speech",
-    "verbal_tics": [
-      "'No but actually —'",
-      "Calls people 'blood' as a term of approval or solidarity"
-    ],
-    "example_lines": [
-      "No but actually — they're not even trying to make it look fair anymore, blood. That's the move. Normalize the violence so nobody's surprised, so nobody thinks it's news.",
-      "I'm not asking if it's safe. Everything we do is not safe. I'm asking if it's worth it. Those are different questions."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "An action he coordinated went sideways and someone in his network is now being held by Palladian security — he needs extraction help and is in over his head but won't admit it",
-    "He's been approached by someone claiming to be from a more radical faction offering resources, and he's tempted even though something feels wrong about the offer"
-  ],
-  "narrative_function": "Kinetic energy and ground-level access — he knows what's happening on the street right now, can mobilize people fast, and is a good barometer for youth sentiment in the Commons.",
-  "augmentations": "Retractable claw mods, right hand (basic, street-grade). Reinforced kneejoints from a running injury repair. Mesh-broadcast node embedded in collar — lets him push real-time comms to his network during actions.",
-  "daily_life": "Sleeps irregular hours in a rotating arrangement with three different comrades' apartments, spends days in motion — scouting locations, flyering, coordinating over encrypted channels, arguing in common spaces.",
-  "affiliation": "No single org — deliberately unaffiliated. Acts as coordinator between several North Branch Commons activist groups and takes operational lead on direct actions.",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 9,
-      "vitality": 7,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -4,
-      "assertion_deference": 4,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "street level",
-      "direct action",
-      "fast mover",
-      "young and unbroken"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Move before the moment passes — hesitation has its own costs",
-      "Never give up someone else's name to anyone with institutional authority"
-    ],
-    "escalation_ladder": [
-      "Visible, loud public disruption",
-      "Property-focused actions targeting corporate infrastructure specifically",
-      "Would resist further escalation to personal harm — this is a genuine line, not performance"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Suspicious until proven trustworthy, then suddenly and completely open — there is very little middle ground",
-      "friends": "Intensely loyal, checks in on people constantly via short messages, remembers small details that surprise people"
-    },
-    "stress_responses": {
-      "low": "Becomes louder and more animated",
-      "medium": "Goes physical — paces, needs to be moving",
-      "high": "Becomes uncharacteristically quiet and very still, then makes a decision and executes it fast"
-    },
-    "contradictions": [
-      "Believes in collective decision-making and routinely makes unilateral calls under the reasoning that there wasn't time"
-    ],
-    "habits": [
-      "Scouting routes — mentally maps exits in every space he enters",
-      "Leaves micro data-offerings at street-level E.L.F. nodes before major actions — 'for the grid spirits, just in case'"
-    ],
-    "breaking_points": [
-      "Someone he brought into an action being seriously hurt",
-      "Being betrayed by someone he trusted completely"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Sentinel": 0.7,
-    "Protector": 0.7,
-    "Code Keeper": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "North Branch Commons",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "related_entities": [
-    "North Branch Commons",
-    "Palladian Construction",
-    "GLMZ",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Compass Rose"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Complex diaspora blend: predominantly Hispanic/Latin American (62.9%) providing warm base tones and facial structure, with significant Sub-Saharan African (13.4%) contributing fuller lips and broader nasal bridge, Southeast Asian (12.1%) adding subtle eye shape and cheekbone definition, and Eastern European (11.6%) visible in high cheekbone prominence and slight pallor undertones. The combination creates a warm caramel complexion with layered depth—sun-responsive warmth layered over cooler undertones.",
-    "height_cm": 188,
-    "weight_kg": 71,
-    "build": "Lanky and angular with lean muscle from constant movement and rooftop running. Long-limbed with visible definition in shoulders and forearms from scaling work. Chest slightly concave from years of irregular eating.",
-    "hair_color": "Black, natural",
-    "hair_style": "Short fade, kept practical and low-maintenance. Often uneven from self-cutting or scissor work done in apartments between actions.",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, naturally warm",
-    "skin_tone": "Warm caramel to golden-brown complexion with balanced fusion of warm and cool undertones—the caramel-gold warmth from Hispanic/Latin American and Sub-Saharan African ancestry tempered by subtle olive-grey undertones from Eastern European and Southeast Asian heritage. Sun-responsive with even warmth distribution. Mid-depth tone showing neither pallor nor deep saturation—a harmonious blend.",
-    "complexion": "Facial structure combining high, prominent cheekbones from Eastern European ancestry with fuller lips and broader nasal bridge from Hispanic and Sub-Saharan African heritage. Subtle eye shape refinement from Southeast Asian ancestry. Left cheekbone shows a visible irregularity—hairline fracture scar approximately 4cm long, healed slightly lighter against warm caramel skin with minor misalignment creating asymmetry. Perpetually tired eyes with pronounced dark circles. Minimal facial hair grooming, often a few days of stubble. Skin otherwise clear but marked by minor scrapes and rope burns from regular climbing.",
-    "distinguishing_marks": [
-      "Hairline fracture scar on left cheekbone with visible misalignment, approximately 4cm long, healed slightly lighter against warm caramel skin",
-      "Multiple thin rope-burn scars across both palms and inner forearms, acquired from climbing and rigging work",
-      "Three-dot tattoo on right inner wrist (North Branch Commons solidarity mark), done with hand-poke tools",
-      "Small burn scar on left shoulder blade from an incendiary round grazing his jacket during a security response"
-    ],
-    "visible_augmentations": "Right hand shows retractable claw mods—five metallic prongs (approximately 8cm extended length) housed beneath knuckle-skin integration points. Chrome is scuffed and shows street-grade fabrication. Reinforced kneecaps visible as slight hardening/discoloration along the patellar tendons. Mesh-broadcast node at base of neck beneath collar line—visible as a small raised bump when neck is exposed, slight LED indicator glow underneath skin in low light.",
-    "posture_movement": "Operates in constant motion—fidgeting, bouncing knee when stationary, fingers twitching. Walks with a loping gait optimized for speed and momentum. Descends stairs and ladders with surprising grace despite lanky frame. Shoulders naturally hunched from hours hunched over encrypted devices. When focused, becomes almost unnaturally still before sudden explosive movement. Rests in coiled positions—crouched rather than seated.",
-    "clothing_style": "Tier 4/5 transitional—salvaged and repurposed. Cargo pants patched multiple times with different fabrics, pockets stuffed with climbing gear and encrypted comms. Oversized hoodies (usually black or dark gray, logo-faded) layered over fitted athletic shirts. Worn Goretex jacket with modified pockets for quick access. No corporate branding. Scuffed climbing shoes, preferring grip over comfort. Reusable equipment bag made from salvaged tarp material slung over one shoulder. Mesh node embedded in base of neck creates subtle bulge under high collars. Clothing functional and designed for movement, showing heavy wear and multiple repairs."
-  },
-  "image_prompt": "Havard Madrigal, 188cm lean-muscled parkour runner with warm caramel complexion blending Hispanic, Sub-Saharan African, Southeast Asian, and Eastern European heritage. Sharp high cheekbones, full lips, dark brown eyes shadowed with exhaustion, prominent scar crossing left cheekbone. Black short-fade hair, stubbled jaw. Right hand features retractable metallic claw augmentations with scuffed chrome. Rope-burn scars visible on forearms. Wearing oversized black hoodie layered over athletic shirt, heavily patched cargo pants, worn climbing shoes. Mesh-broadcast node visible at neck under high collar. Coiled posture, shoulder hunched, fingers twitching with restless energy. Dark urban rooftop setting, neon glow from city below, rain-slicked surfaces, cool neo-noir lighting casting shadows across angular features. Cinematic GLMZ, street-tier transhumanist aesthetics, gritty and hyperaware mood --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 62.9,
-    "Sub-Saharan African": 13.4,
-    "Southeast Asian": 12.1,
-    "Eastern European": 11.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 62.9
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Malian": 11.3,
-        "Senegalese": 2.1
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 7.7
-      },
-      "Cambodian": {
-        "Khmer": 0.8
-      },
-      "Vietnamese": {
-        "Vietnamese": 3.6
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 5.2,
-        "Romanian": 6.4
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6ae759b804ce5b9d3eff8bf",
+    "type":  "character",
+    "name":  "Havard Madrigal",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Anti-corporate agitator and protest coordinator",
+    "age":  19,
+    "status":  "active",
+    "location":  "North Branch Commons, near North Ave and Damen",
+    "description":  "Havard Madrigal is tall and still growing, with a loose-limbed energy that makes him seem like he might trip over himself until suddenly he doesn\u0027t â€” he moves fast when he needs to and knows every rooftop, alley, and maintenance corridor in the North Branch Commons with the intimacy of someone who has been running since he was twelve. His skin is a rich brown, and he has retractable claw mods on his right hand that he got on a dare at sixteen and has kept because they\u0027re useful for scaling drainage pipes. His left cheekbone has a hairline fracture that healed imperfectly â€” a reminder from a Palladian security response at a demonstration last year.\n\nHe coordinates direct actions â€” marches, blockades, projection vandalism, the occasional coordinated work disruption in Palladian-adjacent supply lines â€” with a tactical instinct that belies his age and an absolute inability to sit through a long meeting without his knee bouncing audibly. He is not strategic in the way older activists mean it. He is strategic in the way a game player is: fast pattern recognition, good in chaos, bad at long timelines. The elders in the movement find him alternately inspiring and exhausting. He finds them slow.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming one of the people who talks about change but never makes it",
+                                          "That the system is not broken and working as intended, which is worse"
+                                      ],
+                       "core_desires":  [
+                                            "To matter, specifically and concretely â€” not abstractly",
+                                            "For the people he grew up with to have something better than what they inherited"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Movement â€” physical activity as emotional processing",
+                                                 "Dark humor about the situation with a refusal to be hopeless, even performatively"
+                                             ],
+                       "blind_spots":  [
+                                           "His contempt for caution as cowardice means he sometimes takes risks that land other people in danger",
+                                           "He doesn\u0027t fully understand how much of his confidence depends on not having lost badly yet"
+                                       ],
+                       "secret":  "After the Palladian response that broke his cheekbone, Rashid secretly identified three security officers involved and posted their personal addresses on an encrypted forum. He framed it as \u0027public accountability.\u0027 Someone vandalized one of the addresses. He does not know if he feels bad about this. He is afraid that he doesn\u0027t."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Current North Branch Commons street slang, fast references, tends to use \u0027we\u0027 rather than \u0027I\u0027 for political statements and \u0027I\u0027 for personal ones as a kind of unconscious integrity",
+                            "cadence":  "Rapid, interrupts himself to revise mid-sentence, thoughts arrive faster than speech",
+                            "verbal_tics":  [
+                                                "\u0027No but actually â€”\u0027",
+                                                "Calls people \u0027blood\u0027 as a term of approval or solidarity"
+                                            ],
+                            "example_lines":  [
+                                                  "No but actually â€” they\u0027re not even trying to make it look fair anymore, blood. That\u0027s the move. Normalize the violence so nobody\u0027s surprised, so nobody thinks it\u0027s news.",
+                                                  "I\u0027m not asking if it\u0027s safe. Everything we do is not safe. I\u0027m asking if it\u0027s worth it. Those are different questions."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "An action he coordinated went sideways and someone in his network is now being held by Palladian security â€” he needs extraction help and is in over his head but won\u0027t admit it",
+                        "He\u0027s been approached by someone claiming to be from a more radical faction offering resources, and he\u0027s tempted even though something feels wrong about the offer"
+                    ],
+    "narrative_function":  "Kinetic energy and ground-level access â€” he knows what\u0027s happening on the street right now, can mobilize people fast, and is a good barometer for youth sentiment in the Commons.",
+    "augmentations":  "Retractable claw mods, right hand (basic, street-grade). Reinforced kneejoints from a running injury repair. Mesh-broadcast node embedded in collar â€” lets him push real-time comms to his network during actions.",
+    "daily_life":  "Sleeps irregular hours in a rotating arrangement with three different comrades\u0027 apartments, spends days in motion â€” scouting locations, flyering, coordinating over encrypted channels, arguing in common spaces.",
+    "affiliation":  "No single org â€” deliberately unaffiliated. Acts as coordinator between several North Branch Commons activist groups and takes operational lead on direct actions.",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  9,
+                                   "vitality":  7,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -4,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "street level",
+                               "direct action",
+                               "fast mover",
+                               "young and unbroken"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Move before the moment passes â€” hesitation has its own costs",
+                                              "Never give up someone else\u0027s name to anyone with institutional authority"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Visible, loud public disruption",
+                                                 "Property-focused actions targeting corporate infrastructure specifically",
+                                                 "Would resist further escalation to personal harm â€” this is a genuine line, not performance"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Suspicious until proven trustworthy, then suddenly and completely open â€” there is very little middle ground",
+                                                   "friends":  "Intensely loyal, checks in on people constantly via short messages, remembers small details that surprise people"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes louder and more animated",
+                                                "medium":  "Goes physical â€” paces, needs to be moving",
+                                                "high":  "Becomes uncharacteristically quiet and very still, then makes a decision and executes it fast"
+                                            },
+                       "contradictions":  [
+                                              "Believes in collective decision-making and routinely makes unilateral calls under the reasoning that there wasn\u0027t time"
+                                          ],
+                       "habits":  [
+                                      "Scouting routes â€” mentally maps exits in every space he enters",
+                                      "Leaves micro data-offerings at street-level E.L.F. nodes before major actions â€” \u0027for the grid spirits, just in case\u0027"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone he brought into an action being seriously hurt",
+                                               "Being betrayed by someone he trusted completely"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Sentinel":  0.7,
+                       "Protector":  0.7,
+                       "Code Keeper":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "North Branch Commons",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027"
+                            ],
+    "related_entities":  [
+                             "North Branch Commons",
+                             "Palladian Construction",
+                             "GLMZ",
+                             "Galvanic Periosteal Fatigue Emitter GPFE-4 \u0027Hairline\u0027",
+                             "Crucible Industries Cryogenic Projector CP-7 \u0027Absolute\u0027",
+                             "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+                             "Compass Rose"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora blend: predominantly Hispanic/Latin American (62.9%) providing warm base tones and facial structure, with significant Sub-Saharan African (13.4%) contributing fuller lips and broader nasal bridge, Southeast Asian (12.1%) adding subtle eye shape and cheekbone definition, and Eastern European (11.6%) visible in high cheekbone prominence and slight pallor undertones. The combination creates a warm caramel complexion with layered depthâ€”sun-responsive warmth layered over cooler undertones.",
+                                 "height_cm":  188,
+                                 "weight_kg":  71,
+                                 "build":  "Lanky and angular with lean muscle from constant movement and rooftop running. Long-limbed with visible definition in shoulders and forearms from scaling work. Chest slightly concave from years of irregular eating.",
+                                 "hair_color":  "Black, natural",
+                                 "hair_style":  "Short fade, kept practical and low-maintenance. Often uneven from self-cutting or scissor work done in apartments between actions.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, naturally warm",
+                                 "skin_tone":  "Warm caramel to golden-brown complexion with balanced fusion of warm and cool undertonesâ€”the caramel-gold warmth from Hispanic/Latin American and Sub-Saharan African ancestry tempered by subtle olive-grey undertones from Eastern European and Southeast Asian heritage. Sun-responsive with even warmth distribution. Mid-depth tone showing neither pallor nor deep saturationâ€”a harmonious blend.",
+                                 "complexion":  "Facial structure combining high, prominent cheekbones from Eastern European ancestry with fuller lips and broader nasal bridge from Hispanic and Sub-Saharan African heritage. Subtle eye shape refinement from Southeast Asian ancestry. Left cheekbone shows a visible irregularityâ€”hairline fracture scar approximately 4cm long, healed slightly lighter against warm caramel skin with minor misalignment creating asymmetry. Perpetually tired eyes with pronounced dark circles. Minimal facial hair grooming, often a few days of stubble. Skin otherwise clear but marked by minor scrapes and rope burns from regular climbing.",
+                                 "distinguishing_marks":  [
+                                                              "Hairline fracture scar on left cheekbone with visible misalignment, approximately 4cm long, healed slightly lighter against warm caramel skin",
+                                                              "Multiple thin rope-burn scars across both palms and inner forearms, acquired from climbing and rigging work",
+                                                              "Three-dot tattoo on right inner wrist (North Branch Commons solidarity mark), done with hand-poke tools",
+                                                              "Small burn scar on left shoulder blade from an incendiary round grazing his jacket during a security response"
+                                                          ],
+                                 "visible_augmentations":  "Right hand shows retractable claw modsâ€”five metallic prongs (approximately 8cm extended length) housed beneath knuckle-skin integration points. Chrome is scuffed and shows street-grade fabrication. Reinforced kneecaps visible as slight hardening/discoloration along the patellar tendons. Mesh-broadcast node at base of neck beneath collar lineâ€”visible as a small raised bump when neck is exposed, slight LED indicator glow underneath skin in low light.",
+                                 "posture_movement":  "Operates in constant motionâ€”fidgeting, bouncing knee when stationary, fingers twitching. Walks with a loping gait optimized for speed and momentum. Descends stairs and ladders with surprising grace despite lanky frame. Shoulders naturally hunched from hours hunched over encrypted devices. When focused, becomes almost unnaturally still before sudden explosive movement. Rests in coiled positionsâ€”crouched rather than seated.",
+                                 "clothing_style":  "Tier 4/5 transitionalâ€”salvaged and repurposed. Cargo pants patched multiple times with different fabrics, pockets stuffed with climbing gear and encrypted comms. Oversized hoodies (usually black or dark gray, logo-faded) layered over fitted athletic shirts. Worn Goretex jacket with modified pockets for quick access. No corporate branding. Scuffed climbing shoes, preferring grip over comfort. Reusable equipment bag made from salvaged tarp material slung over one shoulder. Mesh node embedded in base of neck creates subtle bulge under high collars. Clothing functional and designed for movement, showing heavy wear and multiple repairs."
+                             },
+    "image_prompt":  "Havard Madrigal, 188cm lean-muscled parkour runner with warm caramel complexion blending Hispanic, Sub-Saharan African, Southeast Asian, and Eastern European heritage. Sharp high cheekbones, full lips, dark brown eyes shadowed with exhaustion, prominent scar crossing left cheekbone. Black short-fade hair, stubbled jaw. Right hand features retractable metallic claw augmentations with scuffed chrome. Rope-burn scars visible on forearms. Wearing oversized black hoodie layered over athletic shirt, heavily patched cargo pants, worn climbing shoes. Mesh-broadcast node visible at neck under high collar. Coiled posture, shoulder hunched, fingers twitching with restless energy. Dark urban rooftop setting, neon glow from city below, rain-slicked surfaces, cool neo-noir lighting casting shadows across angular features. Cinematic GLMZ, street-tier transhumanist aesthetics, gritty and hyperaware mood --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  62.9,
+                             "Sub-Saharan African":  13.4,
+                             "Southeast Asian":  12.1,
+                             "Eastern European":  11.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  62.9
+                                                                                 }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Malian":  11.3,
+                                                                             "Senegalese":  2.1
+                                                                         }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  7.7
+                                                             },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  0.8
+                                                                  },
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  3.6
+                                                                   }
+                                                },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  5.2,
+                                                                             "Romanian":  6.4
+                                                                         }
+                                                 }
+                        },
+    "tier":  "3"
 }

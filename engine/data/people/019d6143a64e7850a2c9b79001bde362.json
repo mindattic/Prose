@@ -1,312 +1,339 @@
-{
-  "id": "019d6143a64e7850a2c9b79001bde362",
-  "type": "character",
-  "name": "Flavio Echeverría",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Airship drifter and unlicensed courier, traveling between GLMZ and the northern lake settlements aboard transient cargo airships",
-  "age": 19,
-  "status": "active",
-  "location": "Currently grounded at Escanaba Gateway airship mooring, waiting for a berth on anything heading south, near Michigan Ave and Roosevelt",
-  "description": "Flavio Echeverría has bioluminescent skin — faint blue-gold pulses that move under the surface of their brown skin like something swimming beneath still water, brightest at their temples and collarbones. It's a natural geneware expression that came through their father's side and they have done nothing to modify or suppress it; up in the dark of an airship cargo hold at three in the morning, they are their own light source. They are lean and quick, with dark eyes that are always slightly too aware — always tracking exits, always calculating load weights. They have a scar across their left palm from a cargo strap incident two years ago that they are irrationally proud of.\n\nThey grew up on airships and know no other life — their parents were both drifters and they were born somewhere over Lake Superior during a cargo run. They are nineteen but have the practical knowledge of someone much older and the emotional regulation of someone much younger. Lumi is bright and genuinely funny, with a quick warm laugh that surprises people, but they crash into loneliness hard and often. They have been in GLMZ exactly twice before and each time felt like being asked to live inside a machine. They find ground-level cities claustrophobic. They pray to the ELF they call the Ballast Keeper, who they believe lives in the pressure gauges of every lift-gas rig on the northern routes.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.6,
-      "id": 0.7,
-      "shadow": 0.3,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Being permanently grounded — through injury, debt, or the end of the airship economy",
-      "Dying and being buried under soil, in a fixed place, where they can't feel the lift"
-    ],
-    "core_desires": [
-      "Their own berth on a ship, even a small one, that doesn't belong to anyone else",
-      "To find out if there is anywhere in the world they feel as at home as they feel in the air"
-    ],
-    "coping_mechanisms": [
-      "Humor — they joke about everything including things that hurt them",
-      "Movement — staying still is the worst thing they can do emotionally"
-    ],
-    "blind_spots": [
-      "They romanticize airship captains and often let exploitation pass because it comes wrapped in the life they want",
-      "They assume people who live on the ground are fundamentally different from them in some deep way"
-    ],
-    "secret": "They have been carrying a sealed data chip for four months that a dying captain pressed into their hand at a northern mooring and said 'don't open this, just carry it south.' They haven't opened it. They are starting to wonder if they should. The captain's ship was found empty two weeks later."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, casual, full of airship and cargo jargon. Uses altitude and weather as metaphors for everything. Mixes Portuguese-derived coastal slang with Ghanaian-inflected tonal patterns when excited.",
-    "cadence": "Quick and light, like they're burning through words to get to the good part. Laughs mid-sentence.",
-    "verbal_tics": [
-      "'Sky's clear on that' to mean they understand or agree",
-      "'Running heavy' to describe stress",
-      "Says 'aye' instead of yes, always"
-    ],
-    "example_lines": [
-      "Sky's clear on that — I know the northern mooring points better than I know my own face. Which is saying something because my face glows.",
-      "I'm not grounded, I'm just between berths. There's a difference. Ask me again in a week.",
-      "The Ballast Keeper's been restless — pressure readings are weird all up the western shore. Something's moving up there."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The sealed chip they're carrying begins to emit a faint signal that a character with the right equipment can detect — and someone else has already noticed.",
-    "They need a specific cargo run completed to earn a berth on a northbound ship, but the cargo is something they didn't look at closely enough when they agreed."
-  ],
-  "narrative_function": "Access point to airship routes, northern settlements, and off-grid communities; provides a mobile contact who moves between locations players cannot easily reach; source of aerial and northern regional intelligence; represents the second-generation drifter experience.",
-  "augmentations": "Bioluminescent skin (natural geneware inheritance). Callus-hardened hands from manual cargo work. No installed augmentations — can't afford them and doesn't trust anyone planetside to install them safely.",
-  "daily_life": "Haunts the Escanaba Gateway mooring board, picks up day labor loading and unloading cargo, eats at the subsidized terminal canteen, sleeps in the open mooring shelter under their own emergency thermal wrap, and runs courier packages between airship crews who don't want them on record.",
-  "affiliation": "No fixed crew. Has working relationships with three independent airship captains on the northern lake circuit.; The Shore Dogs",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 5,
-      "creativity": 7,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": 2,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "sky-born",
-      "bioluminescent",
-      "airship courier",
-      "rootless",
-      "carrying secrets"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never take a berth without knowing the ship's maintenance record if they can help it",
-      "A laugh diffuses; when a laugh doesn't work, leave"
-    ],
-    "escalation_ladder": [
-      "Joke about it and change the subject",
-      "Get serious and direct — they can turn the lightness off completely",
-      "Physical: they are fast and have spent years moving in confined cargo spaces; they will run or they will fight depending on the geometry"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm and open by default — they meet new people constantly and have learned to read fast. Generous with their time but not with real information.",
-      "friends": "Loyal and physically demonstrative — hugs, shoulder-bumps, showing up. Will do almost anything for someone they've decided is crew."
-    },
-    "stress_responses": {
-      "low": "Talks more. Fills silence with chatter.",
-      "medium": "Gets quiet suddenly, which is alarming to people who know them.",
-      "high": "Needs to physically move — will pace, climb, find somewhere elevated."
-    },
-    "contradictions": [
-      "Describes themselves as someone with no attachments and no fixed connections, but has memorized the name, ship, and mooring schedule of every captain they have ever worked with"
-    ],
-    "habits": [
-      "Checks the mooring board first thing every morning even when they already know what's there",
-      "Glows brighter when they're happy and doesn't notice",
-      "Braids a new knot into their bootlace for every new route completed"
-    ],
-    "breaking_points": [
-      "Watching a ship they love go down — or finding out someone they trusted sold them a bad berth knowing the ship wasn't safe"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Cockroach": 0.7,
-    "Safety First": 0.7,
-    "Improviser": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Currently grounded at Escanaba Gateway airship mooring",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born aboard a cargo airship over Lake Superior",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First solo courier run, age 15, between two northern lake settlements",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Cargo strap accident — left palm scar",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Captain Ossolo (no relation to anyone registered) pressed the sealed data chip into their hands and died three days later",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Currently grounded at Escanaba Gateway, waiting for southbound berth",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "related_entities": [
-    "Escanaba Gateway",
-    "Spire Light on Still Water",
-    "Arcturus Defense Solutions Skeletal Anchor System — 'The Ballast'",
-    "Noir Dining",
-    "The Meridian Drift",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Pressure Drop",
-    "Flavio",
-    "Cargo Tacos",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Palm Leaf",
-    "GLMZ",
-    "Gold"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Hispanic/Latin American (37.8%), East Asian (26.2%), Sub-Saharan African (22.5%), South Asian (10.9%), and Southeast Asian (2.6%) ancestry—a striking cosmopolitan blend characteristic of the Ubiquitous Diaspora. Latin angular structure combines with East Asian eye geometry, Sub-Saharan melanin depth, South Asian warmth, and Southeast Asian subtlety into a genuinely borderless appearance that reads as distinctly 2220s.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Lean and angular, with corded forearm muscles from years of cargo handling. No excess weight; their frame is efficient, built for climbing and balance in confined spaces. Shoulders slightly asymmetrical from repetitive lifting.",
-    "hair_color": "Dark brown with natural warm undertones",
-    "hair_style": "Pulled back in a practical single braid or loose knot, often secured with salvaged cargo straps or wire",
-    "hair_length": "Medium (shoulder-length when loose)",
-    "eye_color": "Dark brown, nearly black, with a faint reflective quality in low light from bioluminescent subcutaneous activity",
-    "skin_tone": "Warm medium-deep brown with golden, olive, and reddish undertones from the rich blend of Latin, East Asian, Sub-Saharan, and South Asian heritage. Sun-deepened from constant airship exposure, the baseline complexion carries warmth and dimension beneath which faint blue-gold bioluminescent pathways glow, most visible along temples, collarbones, and wrists.",
-    "complexion": "Sun-worn from constant airship exposure despite northern latitudes, with weathered quality unusual for someone nineteen. Fine lines around the eyes from squinting against wind. The bone structure shows Latin angularity softened by Sub-Saharan fullness, with subtle East Asian eye shape and South Asian undertones creating a balanced, multi-dimensional face. Open expression offset by constant micro-vigilance in their gaze.",
-    "distinguishing_marks": [
-      "Prominent white scar across the left palm, running diagonal from wrist to mid-hand, raised and slightly puckered, sustained from cargo strap friction two years prior",
-      "Faint tracery of bioluminescent pathways visible along collarbones and neck when activated or in darkness",
-      "Callused fingers and palm pads, particularly pronounced on index and middle fingers from line work",
-      "Small thermal burn scar on right forearm, approximately 3cm in length, from incidental contact with cooling vent during cargo operations"
-    ],
-    "visible_augmentations": "Bioluminescent skin manifestation is visible and always present, though intensity fluctuates with emotional state, fatigue, and ambient light. No installed cybernetics visible. Hands show extensive manual wear and callus development consistent with unaugmented physical labor.",
-    "posture_movement": "Alert, economical movement with an instinctive awareness of vertical space and weight distribution. They move like someone comfortable in confined quarters and moving cargo — balance-first, every step calculated. Fidgets with hands when stationary (picking at scar, testing rope knots, checking equipment). When tired or lonely, they slouch slightly, making themselves smaller. Quick, infectious smile that doesn't reach their eyes until they trust someone.",
-    "clothing_style": "Pure Tier 4-5 transient: layered insulation wear in grays and deep blues, cargo pants with reinforced thigh and shin pockets, worn synthetic-leather boots with aggressive tread, salvaged thermal wrap worn as a coat or blanket depending on need. No corporate branding. Patches and repairs are functional, not aesthetic. Carries a battered chest harness with carabiners, rope, and cargo assessment tools. Everything smells faintly of lift-gas, ozone, and Lake Superior wind. Wears a single brass pressure gauge on a cord around their neck as a prayer object — the Ballast Keeper token."
-  },
-  "image_prompt": "Flavio Echeverría, 19-year-old airship cargo worker, lean angular build with warm medium-deep brown skin glowing faintly with bioluminescent blue-gold pathways along collarbones and temples. Dark brown eyes, practical medium-length dark hair in a cargo-strap-secured braid, sun-worn face with fine lines around eyes and angular cheekbones blending Latin, East Asian, Sub-Saharan, and South Asian features. Visible white diagonal scar across left palm, thermal burn on right forearm, extensive hand calluses. Wearing layered gray-blue insulation wear, reinforced cargo pants, worn synthetic-leather boots, battered chest harness with carabiners and rope, salvaged thermal wrap draped as coat. Brass pressure gauge prayer token on cord around neck. Alert, economical posture. Neo-noir 2220s Great Lakes Metropolitan airship aesthetic. Wind-swept, ozone-tinged atmosphere, cold northern lighting with glow from bioluminescent activation. Transient warehouse worker aesthetic, no corporate branding. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 37.8,
-    "East Asian": 26.2,
-    "Sub-Saharan African": 22.5,
-    "South Asian": 10.9,
-    "Southeast Asian": 2.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Chilean": 17.6,
-        "Ecuadorian": 17.5
-      },
-      "Mexican": {
-        "Mexican": 2.7
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Fujianese": 8.7,
-        "Sichuanese": 12.9
-      },
-      "Korean": {
-        "Korean": 4.6
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 11.1
-      },
-      "West African": {
-        "Ivorian": 11.4
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 3.4
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 3.9,
-        "Sinhalese": 3.6
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 2.6
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a64e7850a2c9b79001bde362",
+    "type":  "character",
+    "name":  "Flavio EcheverrÃ­a",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Airship drifter and unlicensed courier, traveling between GLMZ and the northern lake settlements aboard transient cargo airships",
+    "age":  19,
+    "status":  "active",
+    "location":  "Currently grounded at Escanaba Gateway airship mooring, waiting for a berth on anything heading south, near Michigan Ave and Roosevelt",
+    "description":  "Flavio EcheverrÃ­a has bioluminescent skin â€” faint blue-gold pulses that move under the surface of their brown skin like something swimming beneath still water, brightest at their temples and collarbones. It\u0027s a natural geneware expression that came through their father\u0027s side and they have done nothing to modify or suppress it; up in the dark of an airship cargo hold at three in the morning, they are their own light source. They are lean and quick, with dark eyes that are always slightly too aware â€” always tracking exits, always calculating load weights. They have a scar across their left palm from a cargo strap incident two years ago that they are irrationally proud of.\n\nThey grew up on airships and know no other life â€” their parents were both drifters and they were born somewhere over Lake Superior during a cargo run. They are nineteen but have the practical knowledge of someone much older and the emotional regulation of someone much younger. Lumi is bright and genuinely funny, with a quick warm laugh that surprises people, but they crash into loneliness hard and often. They have been in GLMZ exactly twice before and each time felt like being asked to live inside a machine. They find ground-level cities claustrophobic. They pray to the ELF they call the Ballast Keeper, who they believe lives in the pressure gauges of every lift-gas rig on the northern routes.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being permanently grounded â€” through injury, debt, or the end of the airship economy",
+                                          "Dying and being buried under soil, in a fixed place, where they can\u0027t feel the lift"
+                                      ],
+                       "core_desires":  [
+                                            "Their own berth on a ship, even a small one, that doesn\u0027t belong to anyone else",
+                                            "To find out if there is anywhere in the world they feel as at home as they feel in the air"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Humor â€” they joke about everything including things that hurt them",
+                                                 "Movement â€” staying still is the worst thing they can do emotionally"
+                                             ],
+                       "blind_spots":  [
+                                           "They romanticize airship captains and often let exploitation pass because it comes wrapped in the life they want",
+                                           "They assume people who live on the ground are fundamentally different from them in some deep way"
+                                       ],
+                       "secret":  "They have been carrying a sealed data chip for four months that a dying captain pressed into their hand at a northern mooring and said \u0027don\u0027t open this, just carry it south.\u0027 They haven\u0027t opened it. They are starting to wonder if they should. The captain\u0027s ship was found empty two weeks later."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, casual, full of airship and cargo jargon. Uses altitude and weather as metaphors for everything. Mixes Portuguese-derived coastal slang with Ghanaian-inflected tonal patterns when excited.",
+                            "cadence":  "Quick and light, like they\u0027re burning through words to get to the good part. Laughs mid-sentence.",
+                            "verbal_tics":  [
+                                                "\u0027Sky\u0027s clear on that\u0027 to mean they understand or agree",
+                                                "\u0027Running heavy\u0027 to describe stress",
+                                                "Says \u0027aye\u0027 instead of yes, always"
+                                            ],
+                            "example_lines":  [
+                                                  "Sky\u0027s clear on that â€” I know the northern mooring points better than I know my own face. Which is saying something because my face glows.",
+                                                  "I\u0027m not grounded, I\u0027m just between berths. There\u0027s a difference. Ask me again in a week.",
+                                                  "The Ballast Keeper\u0027s been restless â€” pressure readings are weird all up the western shore. Something\u0027s moving up there."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The sealed chip they\u0027re carrying begins to emit a faint signal that a character with the right equipment can detect â€” and someone else has already noticed.",
+                        "They need a specific cargo run completed to earn a berth on a northbound ship, but the cargo is something they didn\u0027t look at closely enough when they agreed."
+                    ],
+    "narrative_function":  "Access point to airship routes, northern settlements, and off-grid communities; provides a mobile contact who moves between locations players cannot easily reach; source of aerial and northern regional intelligence; represents the second-generation drifter experience.",
+    "augmentations":  "Bioluminescent skin (natural geneware inheritance). Callus-hardened hands from manual cargo work. No installed augmentations â€” can\u0027t afford them and doesn\u0027t trust anyone planetside to install them safely.",
+    "daily_life":  "Haunts the Escanaba Gateway mooring board, picks up day labor loading and unloading cargo, eats at the subsidized terminal canteen, sleeps in the open mooring shelter under their own emergency thermal wrap, and runs courier packages between airship crews who don\u0027t want them on record.",
+    "affiliation":  "No fixed crew. Has working relationships with three independent airship captains on the northern lake circuit.; The Shore Dogs",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  5,
+                                 "creativity":  7,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "sky-born",
+                               "bioluminescent",
+                               "airship courier",
+                               "rootless",
+                               "carrying secrets"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never take a berth without knowing the ship\u0027s maintenance record if they can help it",
+                                              "A laugh diffuses; when a laugh doesn\u0027t work, leave"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Joke about it and change the subject",
+                                                 "Get serious and direct â€” they can turn the lightness off completely",
+                                                 "Physical: they are fast and have spent years moving in confined cargo spaces; they will run or they will fight depending on the geometry"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm and open by default â€” they meet new people constantly and have learned to read fast. Generous with their time but not with real information.",
+                                                   "friends":  "Loyal and physically demonstrative â€” hugs, shoulder-bumps, showing up. Will do almost anything for someone they\u0027ve decided is crew."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks more. Fills silence with chatter.",
+                                                "medium":  "Gets quiet suddenly, which is alarming to people who know them.",
+                                                "high":  "Needs to physically move â€” will pace, climb, find somewhere elevated."
+                                            },
+                       "contradictions":  [
+                                              "Describes themselves as someone with no attachments and no fixed connections, but has memorized the name, ship, and mooring schedule of every captain they have ever worked with"
+                                          ],
+                       "habits":  [
+                                      "Checks the mooring board first thing every morning even when they already know what\u0027s there",
+                                      "Glows brighter when they\u0027re happy and doesn\u0027t notice",
+                                      "Braids a new knot into their bootlace for every new route completed"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching a ship they love go down â€” or finding out someone they trusted sold them a bad berth knowing the ship wasn\u0027t safe"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Cockroach":  0.7,
+                       "Safety First":  0.7,
+                       "Improviser":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Currently grounded at Escanaba Gateway airship mooring",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born aboard a cargo airship over Lake Superior",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First solo courier run, age 15, between two northern lake settlements",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Cargo strap accident â€” left palm scar",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Captain Ossolo (no relation to anyone registered) pressed the sealed data chip into their hands and died three days later",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Currently grounded at Escanaba Gateway, waiting for southbound berth",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Escanaba Gateway",
+                             "Spire Light on Still Water",
+                             "Arcturus Defense Solutions Skeletal Anchor System â€” \u0027The Ballast\u0027",
+                             "Noir Dining",
+                             "The Meridian Drift",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Pressure Drop",
+                             "Flavio",
+                             "Cargo Tacos",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "Palm Leaf",
+                             "GLMZ",
+                             "Gold"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Hispanic/Latin American (37.8%), East Asian (26.2%), Sub-Saharan African (22.5%), South Asian (10.9%), and Southeast Asian (2.6%) ancestryâ€”a striking cosmopolitan blend characteristic of the Ubiquitous Diaspora. Latin angular structure combines with East Asian eye geometry, Sub-Saharan melanin depth, South Asian warmth, and Southeast Asian subtlety into a genuinely borderless appearance that reads as distinctly 2220s.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and angular, with corded forearm muscles from years of cargo handling. No excess weight; their frame is efficient, built for climbing and balance in confined spaces. Shoulders slightly asymmetrical from repetitive lifting.",
+                                 "hair_color":  "Dark brown with natural warm undertones",
+                                 "hair_style":  "Pulled back in a practical single braid or loose knot, often secured with salvaged cargo straps or wire",
+                                 "hair_length":  "Medium (shoulder-length when loose)",
+                                 "eye_color":  "Dark brown, nearly black, with a faint reflective quality in low light from bioluminescent subcutaneous activity",
+                                 "skin_tone":  "Warm medium-deep brown with golden, olive, and reddish undertones from the rich blend of Latin, East Asian, Sub-Saharan, and South Asian heritage. Sun-deepened from constant airship exposure, the baseline complexion carries warmth and dimension beneath which faint blue-gold bioluminescent pathways glow, most visible along temples, collarbones, and wrists.",
+                                 "complexion":  "Sun-worn from constant airship exposure despite northern latitudes, with weathered quality unusual for someone nineteen. Fine lines around the eyes from squinting against wind. The bone structure shows Latin angularity softened by Sub-Saharan fullness, with subtle East Asian eye shape and South Asian undertones creating a balanced, multi-dimensional face. Open expression offset by constant micro-vigilance in their gaze.",
+                                 "distinguishing_marks":  [
+                                                              "Prominent white scar across the left palm, running diagonal from wrist to mid-hand, raised and slightly puckered, sustained from cargo strap friction two years prior",
+                                                              "Faint tracery of bioluminescent pathways visible along collarbones and neck when activated or in darkness",
+                                                              "Callused fingers and palm pads, particularly pronounced on index and middle fingers from line work",
+                                                              "Small thermal burn scar on right forearm, approximately 3cm in length, from incidental contact with cooling vent during cargo operations"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent skin manifestation is visible and always present, though intensity fluctuates with emotional state, fatigue, and ambient light. No installed cybernetics visible. Hands show extensive manual wear and callus development consistent with unaugmented physical labor.",
+                                 "posture_movement":  "Alert, economical movement with an instinctive awareness of vertical space and weight distribution. They move like someone comfortable in confined quarters and moving cargo â€” balance-first, every step calculated. Fidgets with hands when stationary (picking at scar, testing rope knots, checking equipment). When tired or lonely, they slouch slightly, making themselves smaller. Quick, infectious smile that doesn\u0027t reach their eyes until they trust someone.",
+                                 "clothing_style":  "Pure Tier 4-5 transient: layered insulation wear in grays and deep blues, cargo pants with reinforced thigh and shin pockets, worn synthetic-leather boots with aggressive tread, salvaged thermal wrap worn as a coat or blanket depending on need. No corporate branding. Patches and repairs are functional, not aesthetic. Carries a battered chest harness with carabiners, rope, and cargo assessment tools. Everything smells faintly of lift-gas, ozone, and Lake Superior wind. Wears a single brass pressure gauge on a cord around their neck as a prayer object â€” the Ballast Keeper token."
+                             },
+    "image_prompt":  "Flavio EcheverrÃ­a, 19-year-old airship cargo worker, lean angular build with warm medium-deep brown skin glowing faintly with bioluminescent blue-gold pathways along collarbones and temples. Dark brown eyes, practical medium-length dark hair in a cargo-strap-secured braid, sun-worn face with fine lines around eyes and angular cheekbones blending Latin, East Asian, Sub-Saharan, and South Asian features. Visible white diagonal scar across left palm, thermal burn on right forearm, extensive hand calluses. Wearing layered gray-blue insulation wear, reinforced cargo pants, worn synthetic-leather boots, battered chest harness with carabiners and rope, salvaged thermal wrap draped as coat. Brass pressure gauge prayer token on cord around neck. Alert, economical posture. Neo-noir 2220s Great Lakes Metropolitan airship aesthetic. Wind-swept, ozone-tinged atmosphere, cold northern lighting with glow from bioluminescent activation. Transient warehouse worker aesthetic, no corporate branding. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  37.8,
+                             "East Asian":  26.2,
+                             "Sub-Saharan African":  22.5,
+                             "South Asian":  10.9,
+                             "Southeast Asian":  2.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Chilean":  17.6,
+                                                                                   "Ecuadorian":  17.5
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  2.7
+                                                                        }
+                                                        },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Fujianese":  8.7,
+                                                               "Sichuanese":  12.9
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  4.6
+                                                          }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  11.1
+                                                                             },
+                                                        "West African":  {
+                                                                             "Ivorian":  11.4
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  3.4
+                                                                },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  3.9,
+                                                                   "Sinhalese":  3.6
+                                                               }
+                                            },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  2.6
+                                                                }
+                                                }
+                        },
+    "tier":  "1"
 }

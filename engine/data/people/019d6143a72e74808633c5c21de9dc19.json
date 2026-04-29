@@ -1,324 +1,337 @@
-{
-  "id": "019d6143a72e74808633c5c21de9dc19",
-  "type": "character",
-  "name": "Helmut Chakraborty",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Senior urban design director at a Spire-tier architectural firm; covert historical preservationist",
-  "age": 58,
-  "status": "active",
-  "location": "The Spire, near Lake Shore Drive and Division",
-  "description": "Helmut Chakraborty is a tall, angular woman of Italian-Lao descent whose posture suggests someone who has spent decades deciding which rooms to fill and which to empty. Her silver-streaked black hair is worn in a severe architectural roll, and her clothing is always monochrome — charcoals and off-whites — chosen, she once said, so that nothing she wears competes with what she is looking at. The fine lines around her eyes and the deliberate economy of her expressions give her the quality of a building that has been renovated so many times only the original load-bearing structure remains.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.85,
-      "id": 0.3,
-      "shadow": 0.65,
-      "mask": 0.8,
-      "ghost": 0.9
-    },
-    "core_fears": [
-      "That the city's memory is being deliberately erased and she is the instrument of that erasure",
-      "That her children will inherit a GLMZ with no evidence it was ever anything other than what the corps made it",
-      "Dying with the archive incomplete"
-    ],
-    "core_desires": [
-      "To preserve, hidden inside the structures she builds, enough physical evidence of the city's pre-corporate history that it can never be fully demolished",
-      "To be understood by someone who doesn't need her to explain herself",
-      "To complete one project that is entirely and purely hers"
-    ],
-    "coping_mechanisms": [
-      "Retreating into technical language when emotionally threatened",
-      "Maintaining meticulous control of her physical environment as a proxy for larger helplessness",
-      "Channeling grief into archival obsession"
-    ],
-    "blind_spots": [
-      "Believes her class position gives her more protection than it actually does",
-      "Underestimates how legible her subversion is to people paying close attention",
-      "Her contempt for sentimentality makes her dismiss emotional intelligence as a resource"
-    ],
-    "secret": "Embedded within the structural specifications of eleven Spire-commissioned buildings across GLMZ, she has hidden sealed chambers containing physical archives — paper documents, material samples, photographs, oral history recordings on non-networked media — of neighborhoods that were demolished to build those structures. The chambers are built to survive demolition and are keyed to a decryption sequence she has memorized. She has told no one. Two of the buildings are scheduled for renovation next year."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, structural, often uses architectural terminology as metaphor without explaining it. Formal register in professional contexts, unexpectedly direct in private ones. Rarely uses qualifiers.",
-    "cadence": "Deliberate and unhurried. Sentences are fully constructed before they begin. Long pauses before important statements, no pauses before dismissals.",
-    "verbal_tics": [
-      "Refers to abstract concepts by their material properties ('that's a load-bearing assumption')",
-      "Uses 'we' when she means 'I' in professional contexts, 'I' when she means 'we' in personal ones",
-      "Ends disagreements with 'but you know that' — implying the other person is arguing in bad faith"
-    ],
-    "example_lines": [
-      "The building doesn't lie. The brief lies. The brief always lies. My job is to find the building inside the brief.",
-      "You're asking me to demolish forty years of memory so a corp can have better sightlines. I'll do it. But you know that.",
-      "Load-bearing assumptions are the most dangerous kind. You don't find out they were wrong until the structure fails.",
-      "I don't preserve the past because I'm sentimental. I preserve it because without evidence, there is no argument."
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Rector Hollowell",
-      "type": "Professional antagonist, possible mutual recognition",
-      "description": "Hollowell's institutional reach occasionally intersects with Yseult's projects. She finds him useful and repellent in roughly equal measure. He has never commented on the unusual structural specifications she files, which she cannot decide means he hasn't noticed or that he has and is waiting.",
-      "emotional_core": "The specific paranoia of two people who are each hiding something and each suspect the other knows",
-      "story_tension": "Hollowell has commissioned a renovation of one of the eleven buildings containing her archives — whether this is coincidence, a test, or a threat is entirely unclear"
-    },
-    {
-      "name": "Tomás Arriaga-Venn",
-      "type": "Estranged former protégé",
-      "description": "Yseult mentored Tomás for four years before he left the firm under circumstances she will not discuss. She tracks his work at a distance. He is the only person who ever came close to understanding what she was doing inside the buildings.",
-      "emotional_core": "The grief of mentorship that became too close to inheritance — and what it means when the person you chose to carry something forward chooses differently",
-      "story_tension": "Tomás has recently begun working with community groups in Old Harbor who are fighting demolition of a building Yseult designed — and he may have realized what's inside it"
-    },
-    {
-      "name": "Imara Solís-Bekele",
-      "type": "Unknown — potential ally or threat",
-      "description": "Yseult became aware of Imara through a procurement dispute that revealed unusual material sourcing in one of Imara's adjacent projects. She suspects Imara may be doing something structurally similar to what she herself does, through entirely different means.",
-      "emotional_core": "The disorienting hope of possibly not being alone in something you have always done alone",
-      "story_tension": "Approaching Imara risks exposing herself; not approaching her risks a missed alliance that won't come again"
-    }
-  ],
-  "story_hooks": [
-    "A building containing one of her largest archives is being purchased by a corp that specializes in structural demolition — she has six months before groundbreaking",
-    "Someone has sent her a photograph of a room that can only be one of her hidden chambers, with no message attached",
-    "A junior architect at her firm has filed a structural query about load tolerances in a section of a building that should never have been questioned unless someone was looking",
-    "She is offered the commission of her career — a complete redesign of the Gray Zone's civic infrastructure — and she has to decide whether to use it as the largest archive she's ever built or whether the price is too high"
-  ],
-  "narrative_function": "Corporate elite whose subversion operates entirely within the system's language — she represents the question of whether complicity can be weaponized and at what personal cost, and functions as an access point into Spire-level power structures",
-  "augmentations": "Precision haptic feedback implants in both hands — originally for drafting accuracy, now so finely calibrated she can detect structural inconsistencies by touching a wall,Retinal overlay with architectural modeling suite, high-end corporate model, projections visible only to her,Cochlear filter that isolates and enhances specific frequency ranges — she uses it to hear building materials under stress",
-  "daily_life": "Arrives at the office before anyone else and leaves after most have gone. Mornings are client-facing work — proposals, presentations, the performance of corporate alignment. Afternoons are design work proper, door closed, display wall off. Three evenings a week she walks a specific route through Old Harbor and the Gray Zone, always alone, always with a small analog camera she has carried for twenty years. She eats alone or with clients; she has no social life that is not also professional. She sleeps six hours, always, and considers this a structural requirement rather than a preference.",
-  "affiliation": "Senior Director, Marchetti-Fon Design Group (Spire-tier firm); no formal affiliations outside corporate structure; the preservation network is entirely her own and has no name",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 4,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 9,
-      "creativity": 10,
-      "spatial": 10
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 4,
-      "expression": 7,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 8,
-      "empathy_detachment": 6,
-      "impulsivity_deliberation": 9,
-      "assertion_deference": 7,
-      "transparency_guardedness": 8
-    },
-    "drives": [
-      "Preservation",
-      "Legacy",
-      "One pure project"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 7,
-        "response": "Retreats into technical language and meticulous environmental control"
-      },
-      "moral": 7,
-      "trust": 3,
-      "desperation": 6
-    },
-    "strengths": [
-      "Creativity",
-      "Perseverance",
-      "Perspective",
-      "Judgment",
-      "Appreciation of beauty"
-    ],
-    "weaknesses": [
-      "Kindness",
-      "Humor",
-      "Social intelligence",
-      "Teamwork",
-      "Forgiveness"
-    ],
-    "tags": [
-      "spire-architect",
-      "covert-preservationist",
-      "institutional-subversive",
-      "urban-designer",
-      "archive-builder"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Hide sealed archive chambers within every building she designs",
-      "Never explain the unusual structural specifications in her filings",
-      "Use architectural terminology as metaphor without explaining it",
-      "Maintain monochrome wardrobe so nothing competes with what she is looking at",
-      "Walk Old Harbor and the Gray Zone three evenings per week with the analog camera",
-      "End disagreements with but you know that — implying bad faith"
-    ],
-    "escalation_ladder": [
-      "Technical language that excludes non-architects from the conversation",
-      "Long pause before an important statement, no pause before a dismissal",
-      "Devastating assessment delivered in the register of a building specification",
-      "Strategic deployment of documentary evidence from the hidden archives",
-      "Full activation of the archive network — releasing locations keyed to her decryption sequence"
-    ],
-    "interpersonal_modes": {
-      "rector_hollowell": "Specific paranoia of two people each hiding something who each suspect the other knows",
-      "tomas_arriaga_venn": "Grief of mentorship that became too close to inheritance",
-      "imara_solis_bekele": "Disorienting hope of possibly not being alone in what she has always done alone",
-      "colleagues": "Professional performance of corporate alignment; door closed for real work",
-      "strangers": "Severe precision that reads as both competence and inaccessibility"
-    },
-    "stress_responses": {
-      "low": "Meticulous control of physical environment — lighting, arrangement, order",
-      "medium": "Channeling anxiety into archival obsession; photographs increase",
-      "high": "Technical language becomes impenetrable; emotional register shuts down completely",
-      "critical": "Considers whether to reveal the eleven archive locations before the renovations destroy them"
-    },
-    "contradictions": [
-      "Demolishes the city memory for corporate clients while secretly preserving it inside the structures she builds",
-      "Dismisses sentimentality while performing the most sentimental act in the city — hiding its history in walls",
-      "Believes her class position gives her more protection than it actually does"
-    ],
-    "habits": [
-      "Arrives at office before anyone else and leaves after most have gone",
-      "Three evenings per week walking Old Harbor and the Gray Zone alone with analog camera",
-      "Eats alone or with clients; no social life that is not also professional",
-      "Sleeps exactly six hours as a structural requirement",
-      "Uses we when she means I in professional contexts and I when she means we in personal ones"
-    ],
-    "breaking_points": [
-      "A building containing her largest archive being purchased for structural demolition",
-      "Someone sending her a photograph of one of her hidden chambers with no message",
-      "A junior architect filing a structural query about a section that should never have been questioned",
-      "Being offered the commission of her career that could become the largest archive or the highest cost"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Spire",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Tessera TKR-SL 'Inquisitor'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Drowned Commission",
-    "The Spire",
-    "ARCHITECT",
-    "Silver"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "Complex multihemispheric ancestry: Hispanic/Latin American (32.9%) and South Asian (26.8%) form the dominant base, creating warm golden-bronze undertones and defined facial structure. Northern European (18.9%) ancestry adds subtle cool undertones and lighter features to the mix. East Asian (8.2%), Indigenous American (8.0%), and North African (5.2%) heritage further refine her appearance with layered geometric features and warm depth. This blend produces luminous golden-bronze skin with a unique warm-cool balance, visible in facial geometry that combines sharp cheekbones with broader facial planes, and bearing that suggests both precision and ancestral presence.",
-    "height_cm": 180,
-    "weight_kg": 62,
-    "build": "Tall and angular, with the deliberate leanness of someone who treats her body as functional infrastructure rather than aesthetic concern. Shoulders held level; minimal subcutaneous fat; visible muscle definition in forearms and neck from decades of precision work.",
-    "hair_color": "Black with silver streaking throughout",
-    "hair_style": "Severe architectural roll pinned at the nape, not a strand displaced",
-    "hair_length": "Medium (shoulder-length when unrolled)",
-    "eye_color": "Dark brown with faint iridescent shimmer at certain angles indicating retinal overlay hardware",
-    "skin_tone": "Warm golden-bronze throughout, medium-deep saturation with subtle cool undertones from Northern European ancestry. The complexion is luminous and even, reflecting the balanced blend of South Asian and Hispanic/Latin American heritage with grounding from Indigenous American and North African ancestry. Creates a unique warm-cool luminescence even despite frequent outdoor work exposure.",
-    "complexion": "Fine lines concentrated around eyes and mouth from decades of focused scrutiny and minimal expression. Skin texture is smooth but not soft — well-maintained through corporate-tier medical access. High, defined cheekbones with subtle broader planes reflecting the blend of South Asian, Indigenous American, and Northern European ancestry. Defined jawline with warm undertone and slight width suggesting multihemispheric heritage. No visible blemishes or cosmetic augmentation; grooming is utilitarian and precise.",
-    "distinguishing_marks": [
-      "Thin, barely-visible scar along the left temple where retinal overlay was installed approximately thirty years ago, visible only in certain light",
-      "Small circular scar on the inside of each wrist (cochlear filter installation points, now largely faded)",
-      "Fine white line across the knuckle of her right index finger from a precision tool accident in her thirties, now barely noticeable"
-    ],
-    "visible_augmentations": "Retinal overlay creates a faint pearlescent sheen in her irises when active, most noticeable in dim lighting. Haptic implants in both hands show no external markers but her touch is unnaturally precise and her fingers move with mechanical economy. The cochlear filter produces no visible signs beyond occasional momentary disconnection when she is isolating specific frequency ranges.",
-    "posture_movement": "Moves with architectural efficiency — no wasted motion, each step deliberate and directional. When standing still, her weight is perfectly balanced. When observing spaces, she becomes nearly motionless, eyes moving in slow architectural sweeps. Her hand movements are slow and controlled, tactile; she touches surfaces as if reading them. Her expressions are minimal; emotion registers primarily in eye focus and the angle of her head.",
-    "clothing_style": "Exclusively monochrome — charcoal gray, off-white, black, pale cream. High-end corpo-casual: fitted but structured fabrics, minimal branding, tailored cuts that suggest both precision and invisibility. Spire-tier wardrobe but worn without ostentation. Always wears a lightweight technical jacket in charcoal, pockets reinforced for carrying the analog camera and design instruments. No jewelry beyond a single titanium watch with analog face. Footwear is understated technical — expensive but designed for ten-hour days on feet, worn building sites."
-  },
-  "image_prompt": "Helmut Chakraborty, a 180cm tall angular woman with warm golden-bronze skin reflecting South Asian, Hispanic, Indigenous American, and Northern European ancestry. Dark hair with silver streaks pulled into severe architectural roll. Dark brown eyes with subtle iridescent retinal overlay shimmer. Fine lines around eyes from decades of focused work. High defined cheekbones with subtle broader planes. Faint scar visible on left temple in certain lighting. Minimal expression, emotional depth in eye focus. Wearing monochrome charcoal technical jacket over pale cream shirt, titanium analog watch, expensive understated technical footwear. Standing with perfect postural balance, hands positioned with mechanical precision. GLMZ, Great Lakes Metropolitan Zone, photorealistic portrait, cool LED lighting highlighting skin luminescence, architectural precision evident in bearing and gaze, mood of focused intensity and technological integration, sharp focus on facial geometry --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 32.9,
-    "South Asian": 26.8,
-    "Northern European": 18.9,
-    "East Asian": 8.2,
-    "Indigenous American": 8,
-    "North African": 5.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 32.9
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 26.8
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "English": 14.5,
-        "Scottish": 4.4
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 2.8
-      },
-      "Chinese": {
-        "Shanghainese": 4
-      },
-      "Japanese": {
-        "Japanese": 1.4
-      }
-    },
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Potawatomi": 2.2,
-        "Menominee": 1.5
-      },
-      "Andean": {
-        "Mapuche": 4.3
-      }
-    },
-    "North African": {
-      "Maghreb": {
-        "Mauritanian": 5.2
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a72e74808633c5c21de9dc19",
+    "type":  "character",
+    "name":  "Helmut Chakraborty",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Senior urban design director at a Spire-tier architectural firm; covert historical preservationist",
+    "age":  58,
+    "status":  "active",
+    "location":  "The Spire, near Lake Shore Drive and Division",
+    "description":  "Helmut Chakraborty is a tall, angular woman of Italian-Lao descent whose posture suggests someone who has spent decades deciding which rooms to fill and which to empty. Her silver-streaked black hair is worn in a severe architectural roll, and her clothing is always monochrome â€” charcoals and off-whites â€” chosen, she once said, so that nothing she wears competes with what she is looking at. The fine lines around her eyes and the deliberate economy of her expressions give her the quality of a building that has been renovated so many times only the original load-bearing structure remains.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the city\u0027s memory is being deliberately erased and she is the instrument of that erasure",
+                                          "That her children will inherit a GLMZ with no evidence it was ever anything other than what the corps made it",
+                                          "Dying with the archive incomplete"
+                                      ],
+                       "core_desires":  [
+                                            "To preserve, hidden inside the structures she builds, enough physical evidence of the city\u0027s pre-corporate history that it can never be fully demolished",
+                                            "To be understood by someone who doesn\u0027t need her to explain herself",
+                                            "To complete one project that is entirely and purely hers"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Retreating into technical language when emotionally threatened",
+                                                 "Maintaining meticulous control of her physical environment as a proxy for larger helplessness",
+                                                 "Channeling grief into archival obsession"
+                                             ],
+                       "blind_spots":  [
+                                           "Believes her class position gives her more protection than it actually does",
+                                           "Underestimates how legible her subversion is to people paying close attention",
+                                           "Her contempt for sentimentality makes her dismiss emotional intelligence as a resource"
+                                       ],
+                       "secret":  "Embedded within the structural specifications of eleven Spire-commissioned buildings across GLMZ, she has hidden sealed chambers containing physical archives â€” paper documents, material samples, photographs, oral history recordings on non-networked media â€” of neighborhoods that were demolished to build those structures. The chambers are built to survive demolition and are keyed to a decryption sequence she has memorized. She has told no one. Two of the buildings are scheduled for renovation next year."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, structural, often uses architectural terminology as metaphor without explaining it. Formal register in professional contexts, unexpectedly direct in private ones. Rarely uses qualifiers.",
+                            "cadence":  "Deliberate and unhurried. Sentences are fully constructed before they begin. Long pauses before important statements, no pauses before dismissals.",
+                            "verbal_tics":  [
+                                                "Refers to abstract concepts by their material properties (\u0027that\u0027s a load-bearing assumption\u0027)",
+                                                "Uses \u0027we\u0027 when she means \u0027I\u0027 in professional contexts, \u0027I\u0027 when she means \u0027we\u0027 in personal ones",
+                                                "Ends disagreements with \u0027but you know that\u0027 â€” implying the other person is arguing in bad faith"
+                                            ],
+                            "example_lines":  [
+                                                  "The building doesn\u0027t lie. The brief lies. The brief always lies. My job is to find the building inside the brief.",
+                                                  "You\u0027re asking me to demolish forty years of memory so a corp can have better sightlines. I\u0027ll do it. But you know that.",
+                                                  "Load-bearing assumptions are the most dangerous kind. You don\u0027t find out they were wrong until the structure fails.",
+                                                  "I don\u0027t preserve the past because I\u0027m sentimental. I preserve it because without evidence, there is no argument."
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Rector Hollowell",
+                              "type":  "Professional antagonist, possible mutual recognition",
+                              "description":  "Hollowell\u0027s institutional reach occasionally intersects with Yseult\u0027s projects. She finds him useful and repellent in roughly equal measure. He has never commented on the unusual structural specifications she files, which she cannot decide means he hasn\u0027t noticed or that he has and is waiting.",
+                              "emotional_core":  "The specific paranoia of two people who are each hiding something and each suspect the other knows",
+                              "story_tension":  "Hollowell has commissioned a renovation of one of the eleven buildings containing her archives â€” whether this is coincidence, a test, or a threat is entirely unclear"
+                          },
+                          {
+                              "name":  "TomÃ¡s Arriaga-Venn",
+                              "type":  "Estranged former protÃ©gÃ©",
+                              "description":  "Yseult mentored TomÃ¡s for four years before he left the firm under circumstances she will not discuss. She tracks his work at a distance. He is the only person who ever came close to understanding what she was doing inside the buildings.",
+                              "emotional_core":  "The grief of mentorship that became too close to inheritance â€” and what it means when the person you chose to carry something forward chooses differently",
+                              "story_tension":  "TomÃ¡s has recently begun working with community groups in Old Harbor who are fighting demolition of a building Yseult designed â€” and he may have realized what\u0027s inside it"
+                          },
+                          {
+                              "name":  "Imara SolÃ­s-Bekele",
+                              "type":  "Unknown â€” potential ally or threat",
+                              "description":  "Yseult became aware of Imara through a procurement dispute that revealed unusual material sourcing in one of Imara\u0027s adjacent projects. She suspects Imara may be doing something structurally similar to what she herself does, through entirely different means.",
+                              "emotional_core":  "The disorienting hope of possibly not being alone in something you have always done alone",
+                              "story_tension":  "Approaching Imara risks exposing herself; not approaching her risks a missed alliance that won\u0027t come again"
+                          }
+                      ],
+    "story_hooks":  [
+                        "A building containing one of her largest archives is being purchased by a corp that specializes in structural demolition â€” she has six months before groundbreaking",
+                        "Someone has sent her a photograph of a room that can only be one of her hidden chambers, with no message attached",
+                        "A junior architect at her firm has filed a structural query about load tolerances in a section of a building that should never have been questioned unless someone was looking",
+                        "She is offered the commission of her career â€” a complete redesign of the Gray Zone\u0027s civic infrastructure â€” and she has to decide whether to use it as the largest archive she\u0027s ever built or whether the price is too high"
+                    ],
+    "narrative_function":  "Corporate elite whose subversion operates entirely within the system\u0027s language â€” she represents the question of whether complicity can be weaponized and at what personal cost, and functions as an access point into Spire-level power structures",
+    "augmentations":  "Precision haptic feedback implants in both hands â€” originally for drafting accuracy, now so finely calibrated she can detect structural inconsistencies by touching a wall,Retinal overlay with architectural modeling suite, high-end corporate model, projections visible only to her,Cochlear filter that isolates and enhances specific frequency ranges â€” she uses it to hear building materials under stress",
+    "daily_life":  "Arrives at the office before anyone else and leaves after most have gone. Mornings are client-facing work â€” proposals, presentations, the performance of corporate alignment. Afternoons are design work proper, door closed, display wall off. Three evenings a week she walks a specific route through Old Harbor and the Gray Zone, always alone, always with a small analog camera she has carried for twenty years. She eats alone or with clients; she has no social life that is not also professional. She sleeps six hours, always, and considers this a structural requirement rather than a preference.",
+    "affiliation":  "Senior Director, Marchetti-Fon Design Group (Spire-tier firm); no formal affiliations outside corporate structure; the preservation network is entirely her own and has no name",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  4,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  9,
+                                 "creativity":  10,
+                                 "spatial":  10
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  4,
+                                 "expression":  7,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  8,
+                                      "empathy_detachment":  6,
+                                      "impulsivity_deliberation":  9,
+                                      "assertion_deference":  7,
+                                      "transparency_guardedness":  8
+                                  },
+                  "drives":  [
+                                 "Preservation",
+                                 "Legacy",
+                                 "One pure project"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  7,
+                                                    "response":  "Retreats into technical language and meticulous environmental control"
+                                                },
+                                     "moral":  7,
+                                     "trust":  3,
+                                     "desperation":  6
+                                 },
+                  "strengths":  [
+                                    "Creativity",
+                                    "Perseverance",
+                                    "Perspective",
+                                    "Judgment",
+                                    "Appreciation of beauty"
+                                ],
+                  "weaknesses":  [
+                                     "Kindness",
+                                     "Humor",
+                                     "Social intelligence",
+                                     "Teamwork",
+                                     "Forgiveness"
+                                 ],
+                  "tags":  [
+                               "spire-architect",
+                               "covert-preservationist",
+                               "institutional-subversive",
+                               "urban-designer",
+                               "archive-builder"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Hide sealed archive chambers within every building she designs",
+                                              "Never explain the unusual structural specifications in her filings",
+                                              "Use architectural terminology as metaphor without explaining it",
+                                              "Maintain monochrome wardrobe so nothing competes with what she is looking at",
+                                              "Walk Old Harbor and the Gray Zone three evenings per week with the analog camera",
+                                              "End disagreements with but you know that â€” implying bad faith"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Technical language that excludes non-architects from the conversation",
+                                                 "Long pause before an important statement, no pause before a dismissal",
+                                                 "Devastating assessment delivered in the register of a building specification",
+                                                 "Strategic deployment of documentary evidence from the hidden archives",
+                                                 "Full activation of the archive network â€” releasing locations keyed to her decryption sequence"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "rector_hollowell":  "Specific paranoia of two people each hiding something who each suspect the other knows",
+                                                   "tomas_arriaga_venn":  "Grief of mentorship that became too close to inheritance",
+                                                   "imara_solis_bekele":  "Disorienting hope of possibly not being alone in what she has always done alone",
+                                                   "colleagues":  "Professional performance of corporate alignment; door closed for real work",
+                                                   "strangers":  "Severe precision that reads as both competence and inaccessibility"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Meticulous control of physical environment â€” lighting, arrangement, order",
+                                                "medium":  "Channeling anxiety into archival obsession; photographs increase",
+                                                "high":  "Technical language becomes impenetrable; emotional register shuts down completely",
+                                                "critical":  "Considers whether to reveal the eleven archive locations before the renovations destroy them"
+                                            },
+                       "contradictions":  [
+                                              "Demolishes the city memory for corporate clients while secretly preserving it inside the structures she builds",
+                                              "Dismisses sentimentality while performing the most sentimental act in the city â€” hiding its history in walls",
+                                              "Believes her class position gives her more protection than it actually does"
+                                          ],
+                       "habits":  [
+                                      "Arrives at office before anyone else and leaves after most have gone",
+                                      "Three evenings per week walking Old Harbor and the Gray Zone alone with analog camera",
+                                      "Eats alone or with clients; no social life that is not also professional",
+                                      "Sleeps exactly six hours as a structural requirement",
+                                      "Uses we when she means I in professional contexts and I when she means we in personal ones"
+                                  ],
+                       "breaking_points":  [
+                                               "A building containing her largest archive being purchased for structural demolition",
+                                               "Someone sending her a photograph of one of her hidden chambers with no message",
+                                               "A junior architect filing a structural query about a section that should never have been questioned",
+                                               "Being offered the commission of her career that could become the largest archive or the highest cost"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Spire",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Tessera TKR-SL \u0027Inquisitor\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Drowned Commission",
+                             "The Spire",
+                             "ARCHITECT",
+                             "Silver"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "Complex multihemispheric ancestry: Hispanic/Latin American (32.9%) and South Asian (26.8%) form the dominant base, creating warm golden-bronze undertones and defined facial structure. Northern European (18.9%) ancestry adds subtle cool undertones and lighter features to the mix. East Asian (8.2%), Indigenous American (8.0%), and North African (5.2%) heritage further refine her appearance with layered geometric features and warm depth. This blend produces luminous golden-bronze skin with a unique warm-cool balance, visible in facial geometry that combines sharp cheekbones with broader facial planes, and bearing that suggests both precision and ancestral presence.",
+                                 "height_cm":  180,
+                                 "weight_kg":  62,
+                                 "build":  "Tall and angular, with the deliberate leanness of someone who treats her body as functional infrastructure rather than aesthetic concern. Shoulders held level; minimal subcutaneous fat; visible muscle definition in forearms and neck from decades of precision work.",
+                                 "hair_color":  "Black with silver streaking throughout",
+                                 "hair_style":  "Severe architectural roll pinned at the nape, not a strand displaced",
+                                 "hair_length":  "Medium (shoulder-length when unrolled)",
+                                 "eye_color":  "Dark brown with faint iridescent shimmer at certain angles indicating retinal overlay hardware",
+                                 "skin_tone":  "Warm golden-bronze throughout, medium-deep saturation with subtle cool undertones from Northern European ancestry. The complexion is luminous and even, reflecting the balanced blend of South Asian and Hispanic/Latin American heritage with grounding from Indigenous American and North African ancestry. Creates a unique warm-cool luminescence even despite frequent outdoor work exposure.",
+                                 "complexion":  "Fine lines concentrated around eyes and mouth from decades of focused scrutiny and minimal expression. Skin texture is smooth but not soft â€” well-maintained through corporate-tier medical access. High, defined cheekbones with subtle broader planes reflecting the blend of South Asian, Indigenous American, and Northern European ancestry. Defined jawline with warm undertone and slight width suggesting multihemispheric heritage. No visible blemishes or cosmetic augmentation; grooming is utilitarian and precise.",
+                                 "distinguishing_marks":  [
+                                                              "Thin, barely-visible scar along the left temple where retinal overlay was installed approximately thirty years ago, visible only in certain light",
+                                                              "Small circular scar on the inside of each wrist (cochlear filter installation points, now largely faded)",
+                                                              "Fine white line across the knuckle of her right index finger from a precision tool accident in her thirties, now barely noticeable"
+                                                          ],
+                                 "visible_augmentations":  "Retinal overlay creates a faint pearlescent sheen in her irises when active, most noticeable in dim lighting. Haptic implants in both hands show no external markers but her touch is unnaturally precise and her fingers move with mechanical economy. The cochlear filter produces no visible signs beyond occasional momentary disconnection when she is isolating specific frequency ranges.",
+                                 "posture_movement":  "Moves with architectural efficiency â€” no wasted motion, each step deliberate and directional. When standing still, her weight is perfectly balanced. When observing spaces, she becomes nearly motionless, eyes moving in slow architectural sweeps. Her hand movements are slow and controlled, tactile; she touches surfaces as if reading them. Her expressions are minimal; emotion registers primarily in eye focus and the angle of her head.",
+                                 "clothing_style":  "Exclusively monochrome â€” charcoal gray, off-white, black, pale cream. High-end corpo-casual: fitted but structured fabrics, minimal branding, tailored cuts that suggest both precision and invisibility. Spire-tier wardrobe but worn without ostentation. Always wears a lightweight technical jacket in charcoal, pockets reinforced for carrying the analog camera and design instruments. No jewelry beyond a single titanium watch with analog face. Footwear is understated technical â€” expensive but designed for ten-hour days on feet, worn building sites."
+                             },
+    "image_prompt":  "Helmut Chakraborty, a 180cm tall angular woman with warm golden-bronze skin reflecting South Asian, Hispanic, Indigenous American, and Northern European ancestry. Dark hair with silver streaks pulled into severe architectural roll. Dark brown eyes with subtle iridescent retinal overlay shimmer. Fine lines around eyes from decades of focused work. High defined cheekbones with subtle broader planes. Faint scar visible on left temple in certain lighting. Minimal expression, emotional depth in eye focus. Wearing monochrome charcoal technical jacket over pale cream shirt, titanium analog watch, expensive understated technical footwear. Standing with perfect postural balance, hands positioned with mechanical precision. GLMZ, Great Lakes Metropolitan Zone, photorealistic portrait, cool LED lighting highlighting skin luminescence, architectural precision evident in bearing and gaze, mood of focused intensity and technological integration, sharp focus on facial geometry --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  32.9,
+                             "South Asian":  26.8,
+                             "Northern European":  18.9,
+                             "East Asian":  8.2,
+                             "Indigenous American":  8,
+                             "North African":  5.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  32.9
+                                                                               }
+                                                        },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  26.8
+                                                                }
+                                            },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "English":  14.5,
+                                                                            "Scottish":  4.4
+                                                                        }
+                                                  },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  2.8
+                                                          },
+                                               "Chinese":  {
+                                                               "Shanghainese":  4
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  1.4
+                                                            }
+                                           },
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  2.2,
+                                                                                    "Menominee":  1.5
+                                                                                },
+                                                        "Andean":  {
+                                                                       "Mapuche":  4.3
+                                                                   }
+                                                    },
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Mauritanian":  5.2
+                                                              }
+                                              }
+                        },
+    "tier":  "4"
 }

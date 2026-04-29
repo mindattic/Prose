@@ -3,8 +3,7 @@
 @inject WorldGraphService Graph
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
-@inject IStoryBlockRepository StoryRepo
-@inject FacetService FacetSvc
+@inject IChapterRepository StoryRepo
 @inject ILlmService Llm
 @inject ITtsService Tts
 @inject TriviaService TriviaSvc
@@ -159,9 +158,9 @@
 </div>
 
 @code {
-    private int docCount, corpCount, charCount, nodeCount, edgeCount, facetCount;
+    private int docCount, corpCount, charCount, nodeCount, edgeCount;
     private bool llmReady, ttsReady;
-    private List<StoryProject> stories = [];
+    private List<Chapter> stories = [];
     private List<(WorldNode node, int count)> topConnected = [];
     private int orphanCount;
 
@@ -176,8 +175,7 @@
         nodeCount = Graph.NodeCount;
         edgeCount = Graph.EdgeCount;
 
-        facetCount = FacetSvc.LoadAllFacets().Count;
-        stories = StoryRepo.ListProjects();
+        stories = StoryRepo.ListChapters();
 
         triviaRing = TriviaSvc.GetFacts();
         llmReady = await Llm.IsConfiguredAsync();

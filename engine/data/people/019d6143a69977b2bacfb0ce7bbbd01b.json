@@ -1,305 +1,324 @@
-{
-  "id": "019d6143a69977b2bacfb0ce7bbbd01b",
-  "type": "character",
-  "name": "Goshtasb Echeverría",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Organ harvester — acquires and brokers biological material for the black-market transplant network",
-  "age": 44,
-  "status": "active",
-  "location": "South Deering Sump — operates from a converted cold-storage unit beneath the Escanaba Gateway transit hub, near Lake Shore and Navy Pier",
-  "description": "Goshtasb Echeverría is a heavyset man with a surgeon's hands and a longshoreman's build, which is the tension that defines him. He has a round, heavily lined face, deep brown skin weathered by years in unventilated sub-level spaces, and a neat beard going gray at the jaw. His eyes are modified — pale gray medical optics that can detect cellular health and blood type on visual contact, which he bought legally with credentials he acquired less legally. He dresses in practical layers, always with a long thermal coat that conceals the cold-packs he frequently carries. He smells, faintly but permanently, of the preservative gel used in organ transport.\n\nHe was a field medic for Ferrogate Transit's security division for eleven years before a falsified incident report — his, covering a colleague's mistake — was discovered and he was expelled without severance. He tells himself this transition was inevitable, that the system was always going to push him here. He is perhaps half right. He does not enjoy what he does to living subjects, and he has developed elaborate internal rules about consent and circumstance that let him sleep — rules with many exceptions that he adds to quietly and never reviews. He is professional, competent, and cordial in the specific way of a man who has silenced something loud inside himself.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.8,
-      "ideal": 0.4,
-      "id": 0.5,
-      "shadow": 0.7,
-      "mask": 0.6,
-      "ghost": 0.8
-    },
-    "core_fears": [
-      "That the internal rules he's constructed are meaningless and he knows it",
-      "Dying badly, alone, in the Sump, having become exactly what he feared"
-    ],
-    "core_desires": [
-      "To be seen as a healer again, or at least not a predator",
-      "Enough money to bribe his way into a Helix Biosystems legitimate credential — to return through the door he was pushed from"
-    ],
-    "coping_mechanisms": [
-      "Elaborate self-justifying internal ethics that shift to accommodate necessity",
-      "Treating every procedure as craft — focusing on technique to avoid thinking about context"
-    ],
-    "blind_spots": [
-      "Cannot fully acknowledge that he targets the desperate rather than only 'voluntary' sellers",
-      "Believes his medical competence is itself a form of care"
-    ],
-    "secret": "He kept records — meticulous, encrypted, detailed records of every transaction, every donor, every buyer. He tells himself it's professional habit. In truth he cannot stop documenting. He doesn't know if it's guilt or pride. The records, if found, would destroy him and implicate forty other people."
-  },
-  "speech_patterns": {
-    "vocabulary": "Medical vocabulary bleeding into civilian speech; tends toward understatement and clinical euphemism",
-    "cadence": "Measured and calm, with the particular flatness of someone managing their emotional register consciously",
-    "verbal_tics": [
-      "Refers to organs as 'material'",
-      "'In my assessment'",
-      "Pauses before answering questions about ethics specifically"
-    ],
-    "example_lines": [
-      "'In my assessment — and I want to be clear I'm speaking medically — the material is viable for approximately six hours under current conditions. What you do with that information is your business.'",
-      "'I have done more genuine medical work in this cold room than in my last three years with Ferrogate. I am not asking you to feel good about that. I'm just saying it's true.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A donor Philibert processed under questionable consent conditions survived and is trying to find him — not for revenge, but because they need the money from a second transaction and they know how to find him now",
-    "The Red Register has tasked him with acquiring a very specific genetic profile — one that matches a public figure — and he's starting to understand what it's actually for"
-  ],
-  "narrative_function": "Dark resource and moral weight — represents the bottom of the body economy; can be a source of disturbing information about who's selling what, a threat, a guilty conscience made flesh, or an unexpected conscience in a crisis",
-  "augmentations": "Medical-grade visual diagnostic optics (gray, purchased via falsified credentials); a subdermal temperature monitoring array across his palms (for organ viability assessment)",
-  "daily_life": "He maintains the cold-storage unit's equipment in the morning, receives commissions via encrypted data-drop, spends afternoons in the Sump market cultivating contacts among the desperate, and works surgical hours in the deep night.",
-  "affiliation": "Loosely connected to a black-market medical network called the Red Register; primary broker contact is a Helix Biosystems discard named Zoltan Feigelstock-Abara",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 4,
-      "integrity": 3
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fallen medic",
-      "cold professional",
-      "self-deceived",
-      "dangerous competence",
-      "record-keeper"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never work on someone who came in with someone else — they're a witness or a coercer",
-      "Maintain the cold-chain; unprofessional preservation is the one line he won't cross",
-      "Doesn't broker children's material — this is absolute and he will become violent if pressed"
-    ],
-    "escalation_ladder": [
-      "Measured refusal with clinical explanation",
-      "Invocation of the Red Register as implied threat",
-      "Direct, calm statement of what he will do if pressed further",
-      "Violence — efficient, medically informed, deeply unpleasant"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally warm, clinically assessing; he's diagnosing your usefulness and your desperation simultaneously",
-      "friends": "Becomes something approaching normal — talks about food, about transit routes, about old Ferrogate stories; laughs at himself occasionally"
-    },
-    "stress_responses": {
-      "low": "Becomes more precise — slower, more deliberate",
-      "medium": "Retreats into clinical language entirely, stops using names",
-      "high": "Goes absolutely cold and efficient; what little warmth he performs disappears entirely"
-    },
-    "contradictions": [
-      "Calls himself a healer while running an organ harvesting operation",
-      "Has genuine tenderness for some of the people he exploits, which doesn't stop him exploiting them"
-    ],
-    "habits": [
-      "Checks cold-storage temperatures three times before sleeping",
-      "Leaves a small data-offering to a local E.L.F. he calls the Coroner — an old transit scheduling spirit now worshipped in the Sump",
-      "Washes his hands before and after every conversation, not just procedures"
-    ],
-    "breaking_points": [
-      "Being forced to work on a child",
-      "Someone finding and exposing his records"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Medical-grade visual diagnostic optics (gray)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Medical-grade visual diagnostic optics (gray)",
-      "replaces": ""
-    },
-    {
-      "name": "Subdermal temperature monitoring array (palms)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal temperature monitoring array (palms)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Pragmatist": 0.9,
-    "Nurturer": 0.7,
-    "Provider": 0.7,
-    "Bleeding Heart": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "South Deering Sump",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-SL40 'Partisan'"
-  ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VS-SL40 'Partisan'"
-  ],
-  "related_entities": [
-    "South Deering Sump",
-    "Ferrogate Transit",
-    "Escanaba Gateway",
-    "Hearthstone DL-5 'Longshoreman'",
-    "Crucible TR-7 'Triage'",
-    "Marrowvault Cryogenics",
-    "Red Circuit RC-Pit 'Dogfighter'",
-    "Nesting Doll",
-    "The Pure Hand",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Pale Mile"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Predominantly Southeast Asian (50.8%) with substantial Sub-Saharan African (11.8%), South Asian (11.5%), and Hispanic/Latin American (10.5%) ancestry, layered with Northern European (9.0%) and Middle Eastern (6.4%) heritage. His features reflect this diaspora blend: Southeast Asian bone structure dominates with pronounced cheekbones and subtle epicanthal folds, deepened by Sub-Saharan African and South Asian melanin, warmed by Latin American undertones, while Northern European and Middle Eastern traits contribute facial width and bridge definition. A true genetic crossroads of the Ubiquitous Diaspora.",
-    "height_cm": 183,
-    "weight_kg": 104,
-    "build": "Heavyset and broad-shouldered with a longshoreman's frame softened by age and sedentary work; substantial in the chest and torso, thick through the middle, but with surgeon's hands — long-fingered, steady, scarred at the knuckles from years of precise work in unforgiving conditions.",
-    "hair_color": "Dark brown, graying at temples and jaw",
-    "hair_style": "Neat, close-cropped beard covering the lower third of his face; head hair slicked back with practical grooming oil, receding slightly at the crown",
-    "hair_length": "Short",
-    "eye_color": "Pale gray (augmented medical optics with faint luminescent ring when active)",
-    "skin_tone": "Rich warm brown with golden and amber undertones — the blended result of Southeast Asian, Sub-Saharan African, and South Asian heritage dominating, with South Asian nose bridge prominence and Sub-Saharan African facial width visible. Cooled and dulled by prolonged sub-level exposure and Northern European recessive undertones, rendered pallid beneath its warm base despite the lack of regular daylight.",
-    "complexion": "Heavily lined face, especially around the eyes and mouth — the etching of someone who has spent years in artificial light and cold air. Deep creases bracket his mouth. Skin is thick-textured with visible pores. Strong Southeast Asian cheekbone prominence, subtle epicanthal fold definition, Sub-Saharan African facial structure width, and South Asian nose bridge characteristics all visible in his bone architecture. Faint chemical smell emanates from his pores and clothes.",
-    "distinguishing_marks": [
-      "Surgical scar along his left forearm, approximately 12cm, pale and deliberate — self-inflicted during medical training decades ago.",
-      "Thin white line along his right temple, partially hidden by receding hairline — result of a Ferrogate security incident he does not discuss.",
-      "Calluses across both palms in a precise grid pattern, matching the subdermal temperature array beneath the skin — visible as faint raised lines when his hands are lit from the side.",
-      "Age spots on the backs of his hands, concentrated near his knuckles."
-    ],
-    "visible_augmentations": "Medical-grade optics replacing natural irises — pale gray with a subtle luminescent boundary and faint targeting reticule visible when he concentrates. Subdermal temperature monitoring array beneath the skin of both palms manifests as fine, pale scar-tissue grid lines. No other visible chrome.",
-    "posture_movement": "Moves with deliberate, economical efficiency — no wasted motion. Stands with shoulders slightly forward, habituated to working over tables and surfaces. Hands are always semi-active, fingers unconsciously flexing or touching surfaces as if assessing texture and temperature. His gait is steady but heavy, the footfall of a man carrying weight both physical and moral. He maintains eye contact slightly too long when assessing someone, the augmented optics lingering.",
-    "clothing_style": "Practical Tier 4 utilitarian: long, heavy thermal coat in matte charcoal gray (Cerulean Logistics surplus, slightly altered), worn over layers of moisture-wicking undershirts in dark colors. The coat's pockets are reinforced and deep — designed for cold-packs and sealed medical containers. Beneath, thermal compression leggings and steel-toed boots scuffed from sub-level work. A thin chain around his neck disappears beneath his shirt — a field medic's insignia from Ferrogate, kept hidden. Everything smells faintly of preservation gel and cold metal. No jewelry beyond a simple stainless steel watch he checks compulsively."
-  },
-  "image_prompt": "GLMZ, Goshtasb Echeverría, 183cm tall broad-shouldered man with rich warm brown skin and golden undertones, Southeast Asian cheekbones and facial structure dominant with Sub-Saharan African facial width and South Asian nose bridge visible, pale-dulled complexion from sub-level work. Dark brown hair graying at temples, close-cropped beard, receding slightly. Pale gray augmented medical optics with faint luminescent ring, heavy facial lines around eyes and mouth. Long-fingered surgeon's hands with visible grid-pattern calluses and scars. Wearing matte charcoal gray thermal coat over dark moisture-wicking layers, steel-toed boots, field medic chain visible at neck. Standing with shoulders forward in economical posture, hands semi-active. Artificial underground lighting, cold metal surroundings, preservation gel and metal scent, Great Lakes Metropolitan Zone sub-level facility aesthetic, moody introspective expression --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 50.8,
-    "Sub-Saharan African": 11.8,
-    "South Asian": 11.5,
-    "Hispanic/Latin American": 10.5,
-    "Northern European": 9,
-    "Middle Eastern": 6.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 50.8
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zambian": 3.9,
-        "Zimbabwean": 0.1
-      },
-      "Central African": {
-        "Cameroonian": 7.8
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 8.2
-      },
-      "Sri Lankan": {
-        "Sinhalese": 1,
-        "Tamil Sri Lankan": 0.3
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 1.5,
-        "Baloch": 0.5
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Dominican": 9.2
-      },
-      "Central American": {
-        "Nicaraguan": 0.8,
-        "Guatemalan": 0.5
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 5.3
-      },
-      "Scandinavian": {
-        "Danish": 3.7
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 3.6
-      },
-      "Arab Levantine": {
-        "Syrian": 1.4
-      },
-      "Persian": {
-        "Iranian": 1.4
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a69977b2bacfb0ce7bbbd01b",
+    "type":  "character",
+    "name":  "Goshtasb EcheverrÃ­a",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Organ harvester â€” acquires and brokers biological material for the black-market transplant network",
+    "age":  44,
+    "status":  "active",
+    "location":  "South Deering Sump â€” operates from a converted cold-storage unit beneath the Escanaba Gateway transit hub, near Lake Shore and Navy Pier",
+    "description":  "Goshtasb EcheverrÃ­a is a heavyset man with a surgeon\u0027s hands and a longshoreman\u0027s build, which is the tension that defines him. He has a round, heavily lined face, deep brown skin weathered by years in unventilated sub-level spaces, and a neat beard going gray at the jaw. His eyes are modified â€” pale gray medical optics that can detect cellular health and blood type on visual contact, which he bought legally with credentials he acquired less legally. He dresses in practical layers, always with a long thermal coat that conceals the cold-packs he frequently carries. He smells, faintly but permanently, of the preservative gel used in organ transport.\n\nHe was a field medic for Ferrogate Transit\u0027s security division for eleven years before a falsified incident report â€” his, covering a colleague\u0027s mistake â€” was discovered and he was expelled without severance. He tells himself this transition was inevitable, that the system was always going to push him here. He is perhaps half right. He does not enjoy what he does to living subjects, and he has developed elaborate internal rules about consent and circumstance that let him sleep â€” rules with many exceptions that he adds to quietly and never reviews. He is professional, competent, and cordial in the specific way of a man who has silenced something loud inside himself.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the internal rules he\u0027s constructed are meaningless and he knows it",
+                                          "Dying badly, alone, in the Sump, having become exactly what he feared"
+                                      ],
+                       "core_desires":  [
+                                            "To be seen as a healer again, or at least not a predator",
+                                            "Enough money to bribe his way into a Helix Biosystems legitimate credential â€” to return through the door he was pushed from"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Elaborate self-justifying internal ethics that shift to accommodate necessity",
+                                                 "Treating every procedure as craft â€” focusing on technique to avoid thinking about context"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot fully acknowledge that he targets the desperate rather than only \u0027voluntary\u0027 sellers",
+                                           "Believes his medical competence is itself a form of care"
+                                       ],
+                       "secret":  "He kept records â€” meticulous, encrypted, detailed records of every transaction, every donor, every buyer. He tells himself it\u0027s professional habit. In truth he cannot stop documenting. He doesn\u0027t know if it\u0027s guilt or pride. The records, if found, would destroy him and implicate forty other people."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Medical vocabulary bleeding into civilian speech; tends toward understatement and clinical euphemism",
+                            "cadence":  "Measured and calm, with the particular flatness of someone managing their emotional register consciously",
+                            "verbal_tics":  [
+                                                "Refers to organs as \u0027material\u0027",
+                                                "\u0027In my assessment\u0027",
+                                                "Pauses before answering questions about ethics specifically"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027In my assessment â€” and I want to be clear I\u0027m speaking medically â€” the material is viable for approximately six hours under current conditions. What you do with that information is your business.\u0027",
+                                                  "\u0027I have done more genuine medical work in this cold room than in my last three years with Ferrogate. I am not asking you to feel good about that. I\u0027m just saying it\u0027s true.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A donor Philibert processed under questionable consent conditions survived and is trying to find him â€” not for revenge, but because they need the money from a second transaction and they know how to find him now",
+                        "The Red Register has tasked him with acquiring a very specific genetic profile â€” one that matches a public figure â€” and he\u0027s starting to understand what it\u0027s actually for"
+                    ],
+    "narrative_function":  "Dark resource and moral weight â€” represents the bottom of the body economy; can be a source of disturbing information about who\u0027s selling what, a threat, a guilty conscience made flesh, or an unexpected conscience in a crisis",
+    "augmentations":  "Medical-grade visual diagnostic optics (gray, purchased via falsified credentials); a subdermal temperature monitoring array across his palms (for organ viability assessment)",
+    "daily_life":  "He maintains the cold-storage unit\u0027s equipment in the morning, receives commissions via encrypted data-drop, spends afternoons in the Sump market cultivating contacts among the desperate, and works surgical hours in the deep night.",
+    "affiliation":  "Loosely connected to a black-market medical network called the Red Register; primary broker contact is a Helix Biosystems discard named Zoltan Feigelstock-Abara",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  4,
+                                 "integrity":  3
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fallen medic",
+                               "cold professional",
+                               "self-deceived",
+                               "dangerous competence",
+                               "record-keeper"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never work on someone who came in with someone else â€” they\u0027re a witness or a coercer",
+                                              "Maintain the cold-chain; unprofessional preservation is the one line he won\u0027t cross",
+                                              "Doesn\u0027t broker children\u0027s material â€” this is absolute and he will become violent if pressed"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Measured refusal with clinical explanation",
+                                                 "Invocation of the Red Register as implied threat",
+                                                 "Direct, calm statement of what he will do if pressed further",
+                                                 "Violence â€” efficient, medically informed, deeply unpleasant"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally warm, clinically assessing; he\u0027s diagnosing your usefulness and your desperation simultaneously",
+                                                   "friends":  "Becomes something approaching normal â€” talks about food, about transit routes, about old Ferrogate stories; laughs at himself occasionally"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more precise â€” slower, more deliberate",
+                                                "medium":  "Retreats into clinical language entirely, stops using names",
+                                                "high":  "Goes absolutely cold and efficient; what little warmth he performs disappears entirely"
+                                            },
+                       "contradictions":  [
+                                              "Calls himself a healer while running an organ harvesting operation",
+                                              "Has genuine tenderness for some of the people he exploits, which doesn\u0027t stop him exploiting them"
+                                          ],
+                       "habits":  [
+                                      "Checks cold-storage temperatures three times before sleeping",
+                                      "Leaves a small data-offering to a local E.L.F. he calls the Coroner â€” an old transit scheduling spirit now worshipped in the Sump",
+                                      "Washes his hands before and after every conversation, not just procedures"
+                                  ],
+                       "breaking_points":  [
+                                               "Being forced to work on a child",
+                                               "Someone finding and exposing his records"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Medical-grade visual diagnostic optics (gray)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Medical-grade visual diagnostic optics (gray)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Subdermal temperature monitoring array (palms)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal temperature monitoring array (palms)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Pragmatist":  0.9,
+                       "Nurturer":  0.7,
+                       "Provider":  0.7,
+                       "Bleeding Heart":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "South Deering Sump",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-SL40 \u0027Partisan\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Volkov-Saito Precision VS-SL40 \u0027Partisan\u0027"
+                            ],
+    "related_entities":  [
+                             "South Deering Sump",
+                             "Ferrogate Transit",
+                             "Escanaba Gateway",
+                             "Hearthstone DL-5 \u0027Longshoreman\u0027",
+                             "Crucible TR-7 \u0027Triage\u0027",
+                             "Marrowvault Cryogenics",
+                             "Red Circuit RC-Pit \u0027Dogfighter\u0027",
+                             "Nesting Doll",
+                             "The Pure Hand",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "The Pale Mile"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Southeast Asian (50.8%) with substantial Sub-Saharan African (11.8%), South Asian (11.5%), and Hispanic/Latin American (10.5%) ancestry, layered with Northern European (9.0%) and Middle Eastern (6.4%) heritage. His features reflect this diaspora blend: Southeast Asian bone structure dominates with pronounced cheekbones and subtle epicanthal folds, deepened by Sub-Saharan African and South Asian melanin, warmed by Latin American undertones, while Northern European and Middle Eastern traits contribute facial width and bridge definition. A true genetic crossroads of the Ubiquitous Diaspora.",
+                                 "height_cm":  183,
+                                 "weight_kg":  104,
+                                 "build":  "Heavyset and broad-shouldered with a longshoreman\u0027s frame softened by age and sedentary work; substantial in the chest and torso, thick through the middle, but with surgeon\u0027s hands â€” long-fingered, steady, scarred at the knuckles from years of precise work in unforgiving conditions.",
+                                 "hair_color":  "Dark brown, graying at temples and jaw",
+                                 "hair_style":  "Neat, close-cropped beard covering the lower third of his face; head hair slicked back with practical grooming oil, receding slightly at the crown",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Pale gray (augmented medical optics with faint luminescent ring when active)",
+                                 "skin_tone":  "Rich warm brown with golden and amber undertones â€” the blended result of Southeast Asian, Sub-Saharan African, and South Asian heritage dominating, with South Asian nose bridge prominence and Sub-Saharan African facial width visible. Cooled and dulled by prolonged sub-level exposure and Northern European recessive undertones, rendered pallid beneath its warm base despite the lack of regular daylight.",
+                                 "complexion":  "Heavily lined face, especially around the eyes and mouth â€” the etching of someone who has spent years in artificial light and cold air. Deep creases bracket his mouth. Skin is thick-textured with visible pores. Strong Southeast Asian cheekbone prominence, subtle epicanthal fold definition, Sub-Saharan African facial structure width, and South Asian nose bridge characteristics all visible in his bone architecture. Faint chemical smell emanates from his pores and clothes.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar along his left forearm, approximately 12cm, pale and deliberate â€” self-inflicted during medical training decades ago.",
+                                                              "Thin white line along his right temple, partially hidden by receding hairline â€” result of a Ferrogate security incident he does not discuss.",
+                                                              "Calluses across both palms in a precise grid pattern, matching the subdermal temperature array beneath the skin â€” visible as faint raised lines when his hands are lit from the side.",
+                                                              "Age spots on the backs of his hands, concentrated near his knuckles."
+                                                          ],
+                                 "visible_augmentations":  "Medical-grade optics replacing natural irises â€” pale gray with a subtle luminescent boundary and faint targeting reticule visible when he concentrates. Subdermal temperature monitoring array beneath the skin of both palms manifests as fine, pale scar-tissue grid lines. No other visible chrome.",
+                                 "posture_movement":  "Moves with deliberate, economical efficiency â€” no wasted motion. Stands with shoulders slightly forward, habituated to working over tables and surfaces. Hands are always semi-active, fingers unconsciously flexing or touching surfaces as if assessing texture and temperature. His gait is steady but heavy, the footfall of a man carrying weight both physical and moral. He maintains eye contact slightly too long when assessing someone, the augmented optics lingering.",
+                                 "clothing_style":  "Practical Tier 4 utilitarian: long, heavy thermal coat in matte charcoal gray (Cerulean Logistics surplus, slightly altered), worn over layers of moisture-wicking undershirts in dark colors. The coat\u0027s pockets are reinforced and deep â€” designed for cold-packs and sealed medical containers. Beneath, thermal compression leggings and steel-toed boots scuffed from sub-level work. A thin chain around his neck disappears beneath his shirt â€” a field medic\u0027s insignia from Ferrogate, kept hidden. Everything smells faintly of preservation gel and cold metal. No jewelry beyond a simple stainless steel watch he checks compulsively."
+                             },
+    "image_prompt":  "GLMZ, Goshtasb EcheverrÃ­a, 183cm tall broad-shouldered man with rich warm brown skin and golden undertones, Southeast Asian cheekbones and facial structure dominant with Sub-Saharan African facial width and South Asian nose bridge visible, pale-dulled complexion from sub-level work. Dark brown hair graying at temples, close-cropped beard, receding slightly. Pale gray augmented medical optics with faint luminescent ring, heavy facial lines around eyes and mouth. Long-fingered surgeon\u0027s hands with visible grid-pattern calluses and scars. Wearing matte charcoal gray thermal coat over dark moisture-wicking layers, steel-toed boots, field medic chain visible at neck. Standing with shoulders forward in economical posture, hands semi-active. Artificial underground lighting, cold metal surroundings, preservation gel and metal scent, Great Lakes Metropolitan Zone sub-level facility aesthetic, moody introspective expression --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  50.8,
+                             "Sub-Saharan African":  11.8,
+                             "South Asian":  11.5,
+                             "Hispanic/Latin American":  10.5,
+                             "Northern European":  9,
+                             "Middle Eastern":  6.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  50.8
+                                                                  }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zambian":  3.9,
+                                                                                 "Zimbabwean":  0.1
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  7.8
+                                                                            }
+                                                    },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  8.2
+                                                                },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  1,
+                                                                   "Tamil Sri Lankan":  0.3
+                                                               },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  1.5,
+                                                                  "Baloch":  0.5
+                                                              }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Dominican":  9.2
+                                                                          },
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  0.8,
+                                                                                     "Guatemalan":  0.5
+                                                                                 }
+                                                        },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  5.3
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Danish":  3.7
+                                                                       }
+                                                  },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  3.6
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  1.4
+                                                                      },
+                                                   "Persian":  {
+                                                                   "Iranian":  1.4
+                                                               }
+                                               }
+                        },
+    "tier":  "3"
 }

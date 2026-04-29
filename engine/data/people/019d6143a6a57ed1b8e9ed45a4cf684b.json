@@ -1,346 +1,375 @@
-{
-  "id": "019d6143a6a57ed1b8e9ed45a4cf684b",
-  "type": "character",
-  "name": "Esen Krstić",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Forensic Technician, Arcturus Defense Solutions — Civil Security Division",
-  "age": 52,
-  "status": "active",
-  "location": "Deepwell Station, Arcturus Civil Security Forensic Sciences Division, Sub-Level 3",
-  "description": "Esen Krstić has the kind of face that has settled into itself — strong-boned, Balkan-Filipino features framed by silver-streaked hair kept in a tight braid she hasn't changed in fifteen years, not for vanity but because she has found the optimal solution and sees no reason to revisit it. She wears magnification rigs over her eyes during work hours, giving her the appearance of a very patient owl. Her hands are the most expressive part of her — long-fingered, precise, and in constant motion even when she's still, running over surfaces, testing textures. She smells faintly of the preservative compounds she works with daily, a smell she is no longer aware of.\n\nShe is the most competent person in most rooms and behaves as if this is simply the baseline condition of existing rather than something to be proud of. Her emotional register is narrow but not absent — she is moved by injustice in a cold, slow way that burns long, and her entire career has been animated by the conviction that the dead deserve the same quality of attention as the living. She has an extremely dry sense of humor that only emerges after midnight when she's on long evidence processing runs. She does not pray to E.L.F.s herself but maintains ritual respect for the one that inhabits the refrigeration units, because she believes in not antagonizing the unknowable.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "that the evidence she produces is being used to justify predetermined conclusions",
-      "dying before a particular unsolved case is resolved"
-    ],
-    "core_desires": [
-      "for the truth of a death to be the thing that determines what happens next",
-      "to train someone worthy to continue her work"
-    ],
-    "coping_mechanisms": [
-      "total immersion in technical process as emotional distance",
-      "the long-burn anger she keeps separate from her work, which she thinks of as 'the file'"
-    ],
-    "blind_spots": [
-      "trusts evidence completely and distrusts human testimony almost absolutely, missing important contextual truths that people carry",
-      "underestimates how much the institution shapes what questions are even asked of the evidence"
-    ],
-    "secret": "She has a private encrypted archive containing forensic irregularities she's documented over twenty-two years — cases where evidence was clearly altered or findings overridden before trial. She has never shown it to anyone. She is waiting for a reason that feels sufficient."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise and technical, with occasional Tagalog or Serbian expressions when emotional, which she doesn't notice she uses. Rarely wastes words.",
-    "cadence": "Even and measured; sounds the same whether describing lunch or a murder. Goes very quiet rather than louder when making an important point.",
-    "verbal_tics": [
-      "'Specifically' used where others would say 'really' or 'very'",
-      "long silences before answering that she is unaware of",
-      "addresses the dead in her evidence bay by case number as a form of respect"
-    ],
-    "example_lines": [
-      "'This is not a fall. Falls produce a specific distribution of injury. Whoever wrote this report has not looked at a fall victim in some time, or they have looked at one very carefully and written the opposite of what they saw.'",
-      "'I don't speculate. I can tell you what the evidence says. What you do with that is your problem.'",
-      "'Maingat. Be careful with that. She was someone.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A recent intake has evidence that matches a pattern in her private archive — same method, same forensic erasure signatures — for the first time in years",
-    "A junior Metro cop has been quietly bringing her cases flagged 'closed' and asking her to look again; she's started to wonder if they're testing her or genuinely asking for help"
-  ],
-  "narrative_function": "Expert information source on cause of death, trace evidence, and forensic anomalies; can identify inconsistencies in official reports; one of the few truly honest people in the justice system; represents institutional memory and quiet resistance",
-  "augmentations": "Neural-optical forensic integration suite (Metro-issued, enhanced tissue and compound analysis), subdermal chemical hazard sensors in fingertips (Metro-issued), elective memory compression implant (personal, allows perfect evidence recall)",
-  "daily_life": "Arrives at Deepwell Station before first shift, checks the overnight intake, processes evidence with methodical precision across ten-to-fourteen-hour days; eats one real meal a day; speaks to the refrigeration unit E.L.F. before locking up.",
-  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Forensic Sciences Division",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 5,
-      "perception": 10
-    },
-    "mental": {
-      "cognition": 10,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 4,
-      "integrity": 10
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "expert",
-      "incorruptible",
-      "cold-burning",
-      "institutional memory",
-      "dangerous archive"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "document everything, always, even findings she isn't asked for",
-      "never alter or omit evidence regardless of instruction source",
-      "share findings only with the person officially assigned to the case — unless the pattern is too important"
-    ],
-    "escalation_ladder": [
-      "passive resistance via meticulous documentation",
-      "formal objection through official channels with full expectation of being ignored",
-      "anonymous data release to parties with investigative capacity",
-      "direct confrontation only when the archived evidence reaches a threshold she's defined and refuses to share"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Courteous, minimal, assessing competence rapidly and calibrating detail level accordingly",
-      "friends": "Almost no different, but will make dark jokes and occasionally bring food"
-    },
-    "stress_responses": {
-      "low": "Works faster and more quietly",
-      "medium": "Becomes laser-focused to the exclusion of everything else",
-      "high": "Goes completely still and silent for several minutes, then acts with absolute precision"
-    },
-    "contradictions": [
-      "Believes in the truth above institutions but continues to operate inside the institution that distorts the truth she believes in"
-    ],
-    "habits": [
-      "leaves a small data chip with a random piece of music inside on the refrigeration unit each morning as offering",
-      "reads the case file before looking at evidence so she knows what she's supposed to find — better to know the bias you're working against"
-    ],
-    "breaking_points": [
-      "being directly ordered to alter findings",
-      "discovering that the junior cop bringing her cases is Internal Affairs running a loyalty test"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Metro-issued neural-optical forensic integration suite (multi-spectrum tissue analysis)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Metro-issued neural-optical forensic integration suite (multi-spectrum tissue analysis)",
-      "replaces": ""
-    },
-    {
-      "name": "subdermal chemical hazard sensors (fingertips, both hands)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "subdermal chemical hazard sensors (fingertips, both hands)",
-      "replaces": ""
-    },
-    {
-      "name": "Helix Biosystems memory compression implant (personal purchase, 2189)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Helix Biosystems memory compression implant (personal purchase, 2189)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Deepwell Station",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2148 — Born in Glenville Sound, Serbian-heritage father, Filipina mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2169 — Completed forensic sciences certification, hired immediately by Arcturus Civil Security",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2178 — First documented case of altered evidence in her private archive",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2186 — Offered a promotion to lab director; declined; the position would have taken her away from direct evidence work",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2194 — Archive reaches one hundred cases; she creates a redundant encrypted backup in a location she will not specify",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Present; the new pattern case sitting in the intake bay, matching something from fifteen years ago",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Meridian Munitions Compact-7 'Rat Trap'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Meridian Munitions Compact-7 'Rat Trap'"
-  ],
-  "related_entities": [
-    "Deepwell Station",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "The Human Baseline Alliance",
-    "Midnight Gyros",
-    "Silver",
-    "The Pure Hand",
-    "Slagworks Industrial",
-    "Déjà Vu"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Sub-Saharan African (46.9%) with significant South Asian (25.7%), Eastern European (14.2%), East Asian (6.9%), and Northern European (6.3%) ancestry. This creates a phenotype of remarkable complexity: the deep melanin expression and facial structure of African heritage blended with the warm undertones and subtle eye shape variations from South Asian and East Asian ancestry, tempered by the cooler undertones of Eastern and Northern European genetics. The result is a richly dimensional skin tone with both warm and cool depth.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Lean and wiry with the economical musculature of someone who has spent thirty years bending over evidence tables rather than lifting weights. Posture is habitually forward-curved at the shoulders, spine adapted to microscopic work.",
-    "hair_color": "Dark brown with silver streaking throughout, natural graying pattern",
-    "hair_style": "Tight, functional braid worn at the nape of the neck, same style for approximately fifteen years",
-    "hair_length": "Long (braided)",
-    "eye_color": "Warm brown (natural); augmented with neural-optical forensic overlays that manifest as faint iridescent shimmer at the pupils when active",
-    "skin_tone": "Deep rich brown with complex undertones—warm amber notes from South Asian and African heritage, subtle cool undertones from Eastern European ancestry, creating luminous depth without being purely warm or cool. The skin has a refined quality suggesting both intense sunlight exposure in ancestry and work environment.",
-    "complexion": "Weathered in a precise way—minimal wrinkles except around the eyes and mouth from decades of concentration and rare, dry humor. Skin texture slightly papery from exposure to preservative compounds. Facial structure reflects the genetic blend: strong, broad cheekbones characteristic of African heritage, a nose with both breadth and definition suggesting the South Asian component, and subtle variations in eye shape and upper lid structure from East Asian ancestry. Closed expression that softens incrementally with familiarity.",
-    "distinguishing_marks": [
-      "Chemical burn scar on the inside of her left forearm, silvered and old, approximately 8cm long—legacy of early-career evidence processing accident",
-      "Fine needle-puncture scarring on both temples where neural-optical integration suite was installed, barely visible beneath hair",
-      "Callus pattern on fingertips distinctive and asymmetrical, right hand more developed than left from twenty years of precision manual evidence handling"
-    ],
-    "visible_augmentations": "Magnification rigs worn over eyes during work hours (removable, Metro-issued, give her an owl-like appearance). Subdermal chemical hazard sensors in fingertips create faint luminescent tracery visible under forensic-spectrum light only. Neural-optical enhancement suite has no visible external hardware but manifests as subtle iridescent pupil shimmer when actively processing compound analysis.",
-    "posture_movement": "Habitually forward-leaning, shoulders curved inward. Hands in constant micro-motion even at rest—testing textures, running fingers across surfaces, fidgeting with evidence containers or examining tools. Movements are economical and precise; she does not waste energy. Walking gait is steady and unhurried. Her presence is quiet—she does not announce herself.",
-    "clothing_style": "Arcturus Defense Solutions Civil Security forensic technician uniform: dark grey utility coveralls with reflective trim, multiple sealed pockets for evidence containers and tools. Under-layers of polyweave thermal regulation wear. Feet shod in sealed forensic-grade boots with enhanced grip for lab surfaces. Over this, a Metro-issued long coat in dark blue with forensic division insignia, worn open. Minimal jewelry: a single band on her left ring finger (neither wedding nor engagement, purpose unknown). Her appearance is Tier 3 working-class, but the quality of her tools and the precision of her kit suggests someone who invests all discretionary Φ in equipment rather than appearance."
-  },
-  "image_prompt": "Esen Krstić, a 168cm lean forensic technician with deep rich brown skin blending Sub-Saharan African, South Asian, Eastern European, and East Asian ancestry, warm amber and cool undertones creating luminous depth. Strong broad cheekbones, defined nose, subtle East Asian eye shape variations, warm brown natural eyes with faint iridescent neural-optical shimmer. Dark brown hair with silver streaking, worn in tight braids at nape. Weathered complexion from decades of precision lab work, minimal wrinkles around eyes and mouth, papery skin texture. Forward-curved posture, economical precise movements, hands in constant micro-motion. Wearing Arcturus Defense Solutions Civil Security dark grey utility coveralls with reflective trim and sealed pockets, dark blue forensic division coat worn open, sealed forensic boots. Single band on left ring finger. Magnification rigs over eyes (owl-like). Chemical burn scar visible on left forearm, needle-puncture scars on temples beneath braids. Quiet presence, subdued energy. GLMZ forensic lab setting with cool neon-accented lighting, evidence containers and precision tools visible, atmospheric depth of field. Cinematic forensic noir mood. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 46.9,
-    "South Asian": 25.7,
-    "Eastern European": 14.2,
-    "East Asian": 6.9,
-    "Northern European": 6.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 8.3
-      },
-      "East African": {
-        "Somali": 13.2
-      },
-      "Southern African": {
-        "South African": 7.9,
-        "Zimbabwean": 17.5
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 3.8
-      },
-      "Indian": {
-        "Kannada": 13.6
-      },
-      "Sri Lankan": {
-        "Sinhalese": 8.3
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 14.2
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 5.7
-      },
-      "Japanese": {
-        "Japanese": 1.2
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Welsh": 4.5
-      },
-      "Scandinavian": {
-        "Norwegian": 1.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6a57ed1b8e9ed45a4cf684b",
+    "type":  "character",
+    "name":  "Esen KrstiÄ‡",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Forensic Technician, Arcturus Defense Solutions â€” Civil Security Division",
+    "age":  52,
+    "status":  "active",
+    "location":  "Deepwell Station, Arcturus Civil Security Forensic Sciences Division, Sub-Level 3",
+    "description":  "Esen KrstiÄ‡ has the kind of face that has settled into itself â€” strong-boned, Balkan-Filipino features framed by silver-streaked hair kept in a tight braid she hasn\u0027t changed in fifteen years, not for vanity but because she has found the optimal solution and sees no reason to revisit it. She wears magnification rigs over her eyes during work hours, giving her the appearance of a very patient owl. Her hands are the most expressive part of her â€” long-fingered, precise, and in constant motion even when she\u0027s still, running over surfaces, testing textures. She smells faintly of the preservative compounds she works with daily, a smell she is no longer aware of.\n\nShe is the most competent person in most rooms and behaves as if this is simply the baseline condition of existing rather than something to be proud of. Her emotional register is narrow but not absent â€” she is moved by injustice in a cold, slow way that burns long, and her entire career has been animated by the conviction that the dead deserve the same quality of attention as the living. She has an extremely dry sense of humor that only emerges after midnight when she\u0027s on long evidence processing runs. She does not pray to E.L.F.s herself but maintains ritual respect for the one that inhabits the refrigeration units, because she believes in not antagonizing the unknowable.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that the evidence she produces is being used to justify predetermined conclusions",
+                                          "dying before a particular unsolved case is resolved"
+                                      ],
+                       "core_desires":  [
+                                            "for the truth of a death to be the thing that determines what happens next",
+                                            "to train someone worthy to continue her work"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "total immersion in technical process as emotional distance",
+                                                 "the long-burn anger she keeps separate from her work, which she thinks of as \u0027the file\u0027"
+                                             ],
+                       "blind_spots":  [
+                                           "trusts evidence completely and distrusts human testimony almost absolutely, missing important contextual truths that people carry",
+                                           "underestimates how much the institution shapes what questions are even asked of the evidence"
+                                       ],
+                       "secret":  "She has a private encrypted archive containing forensic irregularities she\u0027s documented over twenty-two years â€” cases where evidence was clearly altered or findings overridden before trial. She has never shown it to anyone. She is waiting for a reason that feels sufficient."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise and technical, with occasional Tagalog or Serbian expressions when emotional, which she doesn\u0027t notice she uses. Rarely wastes words.",
+                            "cadence":  "Even and measured; sounds the same whether describing lunch or a murder. Goes very quiet rather than louder when making an important point.",
+                            "verbal_tics":  [
+                                                "\u0027Specifically\u0027 used where others would say \u0027really\u0027 or \u0027very\u0027",
+                                                "long silences before answering that she is unaware of",
+                                                "addresses the dead in her evidence bay by case number as a form of respect"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027This is not a fall. Falls produce a specific distribution of injury. Whoever wrote this report has not looked at a fall victim in some time, or they have looked at one very carefully and written the opposite of what they saw.\u0027",
+                                                  "\u0027I don\u0027t speculate. I can tell you what the evidence says. What you do with that is your problem.\u0027",
+                                                  "\u0027Maingat. Be careful with that. She was someone.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A recent intake has evidence that matches a pattern in her private archive â€” same method, same forensic erasure signatures â€” for the first time in years",
+                        "A junior Metro cop has been quietly bringing her cases flagged \u0027closed\u0027 and asking her to look again; she\u0027s started to wonder if they\u0027re testing her or genuinely asking for help"
+                    ],
+    "narrative_function":  "Expert information source on cause of death, trace evidence, and forensic anomalies; can identify inconsistencies in official reports; one of the few truly honest people in the justice system; represents institutional memory and quiet resistance",
+    "augmentations":  "Neural-optical forensic integration suite (Metro-issued, enhanced tissue and compound analysis), subdermal chemical hazard sensors in fingertips (Metro-issued), elective memory compression implant (personal, allows perfect evidence recall)",
+    "daily_life":  "Arrives at Deepwell Station before first shift, checks the overnight intake, processes evidence with methodical precision across ten-to-fourteen-hour days; eats one real meal a day; speaks to the refrigeration unit E.L.F. before locking up.",
+    "affiliation":  "Arcturus Defense Solutions â€” Civil Security Division, Forensic Sciences Division",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  5,
+                                   "perception":  10
+                               },
+                  "mental":  {
+                                 "cognition":  10,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  4,
+                                 "integrity":  10
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "expert",
+                               "incorruptible",
+                               "cold-burning",
+                               "institutional memory",
+                               "dangerous archive"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "document everything, always, even findings she isn\u0027t asked for",
+                                              "never alter or omit evidence regardless of instruction source",
+                                              "share findings only with the person officially assigned to the case â€” unless the pattern is too important"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "passive resistance via meticulous documentation",
+                                                 "formal objection through official channels with full expectation of being ignored",
+                                                 "anonymous data release to parties with investigative capacity",
+                                                 "direct confrontation only when the archived evidence reaches a threshold she\u0027s defined and refuses to share"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Courteous, minimal, assessing competence rapidly and calibrating detail level accordingly",
+                                                   "friends":  "Almost no different, but will make dark jokes and occasionally bring food"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works faster and more quietly",
+                                                "medium":  "Becomes laser-focused to the exclusion of everything else",
+                                                "high":  "Goes completely still and silent for several minutes, then acts with absolute precision"
+                                            },
+                       "contradictions":  [
+                                              "Believes in the truth above institutions but continues to operate inside the institution that distorts the truth she believes in"
+                                          ],
+                       "habits":  [
+                                      "leaves a small data chip with a random piece of music inside on the refrigeration unit each morning as offering",
+                                      "reads the case file before looking at evidence so she knows what she\u0027s supposed to find â€” better to know the bias you\u0027re working against"
+                                  ],
+                       "breaking_points":  [
+                                               "being directly ordered to alter findings",
+                                               "discovering that the junior cop bringing her cases is Internal Affairs running a loyalty test"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Metro-issued neural-optical forensic integration suite (multi-spectrum tissue analysis)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Metro-issued neural-optical forensic integration suite (multi-spectrum tissue analysis)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "subdermal chemical hazard sensors (fingertips, both hands)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "subdermal chemical hazard sensors (fingertips, both hands)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Helix Biosystems memory compression implant (personal purchase, 2189)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Helix Biosystems memory compression implant (personal purchase, 2189)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Deepwell Station",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2148 â€” Born in Glenville Sound, Serbian-heritage father, Filipina mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2169 â€” Completed forensic sciences certification, hired immediately by Arcturus Civil Security",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2178 â€” First documented case of altered evidence in her private archive",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2186 â€” Offered a promotion to lab director; declined; the position would have taken her away from direct evidence work",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2194 â€” Archive reaches one hundred cases; she creates a redundant encrypted backup in a location she will not specify",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Present; the new pattern case sitting in the intake bay, matching something from fifteen years ago",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KP-10C \u0027Bullpup\u0027",
+                            "Meridian Munitions Compact-7 \u0027Rat Trap\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KP-10C \u0027Bullpup\u0027",
+                                "Meridian Munitions Compact-7 \u0027Rat Trap\u0027"
+                            ],
+    "related_entities":  [
+                             "Deepwell Station",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "The Human Baseline Alliance",
+                             "Midnight Gyros",
+                             "Silver",
+                             "The Pure Hand",
+                             "Slagworks Industrial",
+                             "DÃ©jÃ  Vu"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Sub-Saharan African (46.9%) with significant South Asian (25.7%), Eastern European (14.2%), East Asian (6.9%), and Northern European (6.3%) ancestry. This creates a phenotype of remarkable complexity: the deep melanin expression and facial structure of African heritage blended with the warm undertones and subtle eye shape variations from South Asian and East Asian ancestry, tempered by the cooler undertones of Eastern and Northern European genetics. The result is a richly dimensional skin tone with both warm and cool depth.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and wiry with the economical musculature of someone who has spent thirty years bending over evidence tables rather than lifting weights. Posture is habitually forward-curved at the shoulders, spine adapted to microscopic work.",
+                                 "hair_color":  "Dark brown with silver streaking throughout, natural graying pattern",
+                                 "hair_style":  "Tight, functional braid worn at the nape of the neck, same style for approximately fifteen years",
+                                 "hair_length":  "Long (braided)",
+                                 "eye_color":  "Warm brown (natural); augmented with neural-optical forensic overlays that manifest as faint iridescent shimmer at the pupils when active",
+                                 "skin_tone":  "Deep rich brown with complex undertonesâ€”warm amber notes from South Asian and African heritage, subtle cool undertones from Eastern European ancestry, creating luminous depth without being purely warm or cool. The skin has a refined quality suggesting both intense sunlight exposure in ancestry and work environment.",
+                                 "complexion":  "Weathered in a precise wayâ€”minimal wrinkles except around the eyes and mouth from decades of concentration and rare, dry humor. Skin texture slightly papery from exposure to preservative compounds. Facial structure reflects the genetic blend: strong, broad cheekbones characteristic of African heritage, a nose with both breadth and definition suggesting the South Asian component, and subtle variations in eye shape and upper lid structure from East Asian ancestry. Closed expression that softens incrementally with familiarity.",
+                                 "distinguishing_marks":  [
+                                                              "Chemical burn scar on the inside of her left forearm, silvered and old, approximately 8cm longâ€”legacy of early-career evidence processing accident",
+                                                              "Fine needle-puncture scarring on both temples where neural-optical integration suite was installed, barely visible beneath hair",
+                                                              "Callus pattern on fingertips distinctive and asymmetrical, right hand more developed than left from twenty years of precision manual evidence handling"
+                                                          ],
+                                 "visible_augmentations":  "Magnification rigs worn over eyes during work hours (removable, Metro-issued, give her an owl-like appearance). Subdermal chemical hazard sensors in fingertips create faint luminescent tracery visible under forensic-spectrum light only. Neural-optical enhancement suite has no visible external hardware but manifests as subtle iridescent pupil shimmer when actively processing compound analysis.",
+                                 "posture_movement":  "Habitually forward-leaning, shoulders curved inward. Hands in constant micro-motion even at restâ€”testing textures, running fingers across surfaces, fidgeting with evidence containers or examining tools. Movements are economical and precise; she does not waste energy. Walking gait is steady and unhurried. Her presence is quietâ€”she does not announce herself.",
+                                 "clothing_style":  "Arcturus Defense Solutions Civil Security forensic technician uniform: dark grey utility coveralls with reflective trim, multiple sealed pockets for evidence containers and tools. Under-layers of polyweave thermal regulation wear. Feet shod in sealed forensic-grade boots with enhanced grip for lab surfaces. Over this, a Metro-issued long coat in dark blue with forensic division insignia, worn open. Minimal jewelry: a single band on her left ring finger (neither wedding nor engagement, purpose unknown). Her appearance is Tier 3 working-class, but the quality of her tools and the precision of her kit suggests someone who invests all discretionary Î¦ in equipment rather than appearance."
+                             },
+    "image_prompt":  "Esen KrstiÄ‡, a 168cm lean forensic technician with deep rich brown skin blending Sub-Saharan African, South Asian, Eastern European, and East Asian ancestry, warm amber and cool undertones creating luminous depth. Strong broad cheekbones, defined nose, subtle East Asian eye shape variations, warm brown natural eyes with faint iridescent neural-optical shimmer. Dark brown hair with silver streaking, worn in tight braids at nape. Weathered complexion from decades of precision lab work, minimal wrinkles around eyes and mouth, papery skin texture. Forward-curved posture, economical precise movements, hands in constant micro-motion. Wearing Arcturus Defense Solutions Civil Security dark grey utility coveralls with reflective trim and sealed pockets, dark blue forensic division coat worn open, sealed forensic boots. Single band on left ring finger. Magnification rigs over eyes (owl-like). Chemical burn scar visible on left forearm, needle-puncture scars on temples beneath braids. Quiet presence, subdued energy. GLMZ forensic lab setting with cool neon-accented lighting, evidence containers and precision tools visible, atmospheric depth of field. Cinematic forensic noir mood. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  46.9,
+                             "South Asian":  25.7,
+                             "Eastern European":  14.2,
+                             "East Asian":  6.9,
+                             "Northern European":  6.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  8.3
+                                                                            },
+                                                        "East African":  {
+                                                                             "Somali":  13.2
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  7.9,
+                                                                                 "Zimbabwean":  17.5
+                                                                             }
+                                                    },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  3.8
+                                                           },
+                                                "Indian":  {
+                                                               "Kannada":  13.6
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  8.3
+                                                               }
+                                            },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  14.2
+                                                                     }
+                                                 },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  5.7
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  1.2
+                                                            }
+                                           },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Welsh":  4.5
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  1.8
+                                                                       }
+                                                  }
+                        },
+    "tier":  "3"
 }

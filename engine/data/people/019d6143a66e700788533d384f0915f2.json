@@ -1,254 +1,277 @@
-{
-  "id": "019d6143a66e700788533d384f0915f2",
-  "type": "character",
-  "name": "Bastien Salazar-Subramaniam",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Identity fabricator and personal history constructor — creates full biographical legends for people who need to stop being who they were",
-  "age": 58,
-  "status": "active",
-  "location": "Ashfeld, middle residential tier — rents a cluttered three-room apartment above a yam paste restaurant she pretends to help manage, near Kedzie and Division",
-  "description": "Bastien Salazar-Subramaniam is stout and deliberate in the way of someone who decided long ago that she had nothing left to prove through urgency. Her dark skin is deeply lined around the eyes from years of close document work; she wears thick corrective glasses she prefers to optical augmentation because, she says, 'screens lie to implants but they cannot lie to glass.' She keeps her silver-streaked hair in a long braid coiled at the base of her neck and dresses in layers of muted color — burgundies, deep greens — that suggest she once had more style than she currently deploys.\n\nShe came to fabrication through grief: after her daughter died in a Sterling-Nakamura industrial accident that the corponation's legal team successfully classified as 'environmental incidence,' she spent seven years learning everything about how identity systems worked, initially to pursue legal recourse, eventually because the knowledge became its own purpose. She is not sentimental about her clients — she asks few questions and expects honesty about only the things she needs to know technically. But she is deeply attentive to people, and when she looks at someone who needs a new name, she sees the thing they are running from with uncomfortable clarity. She keeps a shrine to a local ELF she calls the Record-Keeper, feeding it scans of documents from demolished buildings — tax records, birth certificates, lease agreements. She believes it maintains the memory of people who have been erased.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.9,
-      "ideal": 0.7,
-      "id": 0.2,
-      "shadow": 0.3,
-      "mask": 0.6,
-      "ghost": 0.8
-    },
-    "core_fears": [
-      "That her daughter's death will eventually be forgotten entirely — that the erasure will be complete",
-      "Dying before she has done enough of the kind of work that matters"
-    ],
-    "core_desires": [
-      "To give people the ability to survive that her daughter was not given",
-      "To maintain a record that cannot be erased even if she is"
-    ],
-    "coping_mechanisms": [
-      "The ELF shrine — ritual maintenance of memory as active grief work",
-      "Absolute professionalism as a way of being useful when being loved is not available"
-    ],
-    "blind_spots": [
-      "Her protective instinct toward clients occasionally overrides her professional judgment about risk",
-      "Has a structural difficulty charging people she perceives as genuinely desperate, which is most of them"
-    ],
-    "secret": "She has maintained a secret parallel archive for twenty years — a compressed, encrypted record of every identity she has ever fabricated and the real name it replaced, sealed with a dead-man mechanism that will transmit it to a journalist's address if she misses a weekly check-in for more than fourteen days. She tells herself this is accountability. She has not examined what would actually happen to her clients if it released."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal, measured, tends toward the bureaucratic register of the systems she spends her life subverting — uses official language ironically but accurately",
-    "cadence": "Slow and complete — full sentences, no trailing off, no filler words; lets silence do work",
-    "verbal_tics": [
-      "'Let me be precise'",
-      "Refers to identity systems as 'the architecture'",
-      "Asks clarifying questions that feel like she already knows the answer"
-    ],
-    "example_lines": [
-      "'You don't need a new name. You need a new history. Those are different problems and the second one is harder.'",
-      "'I've read enough records to know that everyone is someone's abandoned story. I just write the next chapter.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client she fabricated an identity for three years ago has turned up dead, and the identity she built is somehow connected to the death — she needs someone to find out how without exposing what she does",
-    "She has been approached by someone who wants an identity not to flee their past but to insert themselves into a corporate record trail — and she cannot figure out what they are actually planning"
-  ],
-  "narrative_function": "Critical resource for anyone needing a new identity, moral mirror for clients, keeper of secrets about many people in GLMZ's underworld, potential source of information about who has disappeared and why",
-  "augmentations": "None installed. Refuses on philosophical grounds. Uses external tools exclusively — high-resolution scanner gloves, document analysis loupe, portable atmospheric chamber for aged-paper simulation.",
-  "daily_life": "Manages the restaurant's supply orders in the morning as cover, spends afternoons in consultation with clients by appointment, evenings doing the actual fabrication work; sleeps poorly, wakes early to tend her ELF shrine.",
-  "affiliation": "Operates independently; known to and occasionally used by four different criminal networks without being owned by any of them; referred through a chain of trusted intermediaries",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 8,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 8,
-      "expression": 6,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -1,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 2,
-      "transparency_guardedness": -5
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "identity fabricator",
-      "grief-driven",
-      "archivist",
-      "anti-corporate",
-      "tier 2",
-      "ashfeld"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never fabricate an identity for someone who is running toward something dangerous rather than away from something",
-      "Know exactly what you are making and why before you make it",
-      "Never keep a client's real name in any written form — she memorizes them instead and nowhere else"
-    ],
-    "escalation_ladder": [
-      "Polite refusal with no explanation",
-      "Clear statement of what she will not do and why",
-      "Ending the meeting and forgetting it happened",
-      "In genuine threat: activating the dead-man archive as a deterrent — she has told exactly three people it exists"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Formally warm — professional hospitality, offers tea, watches everything carefully from behind a practiced neutrality",
-      "friends": "There are very few. With them she is dry, funny, occasionally fierce — a different person entirely."
-    },
-    "stress_responses": {
-      "low": "Becomes more methodical and deliberate",
-      "medium": "Goes quiet in a way that fills the room",
-      "high": "Tends her ELF shrine — any crisis, she goes first to the shrine, and comes back different"
-    },
-    "contradictions": [
-      "Believes in the importance of record and truth while professionally dedicated to falsifying both",
-      "Is deeply warm toward people in need but has structured her life to minimize sustained personal connection"
-    ],
-    "habits": [
-      "Prepares tea for every consultation regardless of duration",
-      "Dates every document she produces with a hidden notation system only she can read",
-      "Walks through Ashfeld after midnight when she cannot sleep, memorizing faces"
-    ],
-    "breaking_points": [
-      "Anyone invoking her daughter's name",
-      "Discovering that a fabricated identity she made was used to harm someone vulnerable"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Ashfeld",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Chronicle",
-    "The Accidental",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Ashfeld",
-    "Silver",
-    "Nesting Doll",
-    "Glass",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "The Paste Bar"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex diaspora blend: 45.8% Hispanic/Latin American with warm golden undertones, 20.4% Southeast Asian contributing to facial structure and eye shape, 16.9% South Asian adding depth to skin tone, 9.2% East Asian refining cheekbone definition, 7.7% Sub-Saharan African evident in nose structure and rich skin depth—a living map of the 2226 Ubiquitous Diaspora",
-    "height_cm": 158,
-    "weight_kg": 72,
-    "build": "Stout, compact, deliberately unhurried — a body that suggests settled resolve rather than atrophy. Her mass is distributed evenly; she moves with the economy of someone who has stopped performing fitness.",
-    "hair_color": "Dark brown with silver streaks",
-    "hair_style": "Long braid coiled at the base of her neck, pulled tight enough to suggest discipline",
-    "hair_length": "Long",
-    "eye_color": "Dark brown, unremarked by augmentation",
-    "skin_tone": "Deep warm brown with golden undertones—a blended complexion where Hispanic/Latin American warmth meets Southeast Asian and South Asian depth, enriched by Sub-Saharan African heritage, creating a richly textured medium-to-deep tone",
-    "complexion": "Deeply lined around the eyes and mouth from decades of close document work and poor sleep; skin carries the texture of someone who has survived grief without cosmetic intervention. Facial structure reflects the actual ancestry mix: moderate-to-high cheekbones with Southeast Asian influences, broader nose with Sub-Saharan African heritage characteristics, warmth from Hispanic ancestry throughout. Face is plain and readable — expressions move across it without filter.",
-    "distinguishing_marks": [
-      "Fine networked scars across the knuckles and first three fingers of both hands, from years of handling aged paper and caustic restoration chemicals",
-      "A faded tattoo on her left inner wrist: a single glyph in Nsibidi script, barely visible unless she extends her arm deliberately — mark of a daughter's name, kept where only she can see it"
-    ],
-    "visible_augmentations": "None. She wears thick corrective glasses with reinforced frames (deliberately low-tech) instead of optical implants. Her 'scanner gloves' are external devices: supple grey leather fitted with microdot sensors and a thin haptic feedback strip along the palm. A document analysis loupe hangs from a cord around her neck — it is old, possibly decades old, with a brass casing that has acquired a greenish patina.",
-    "posture_movement": "Sits more than she stands. When standing, her weight settles into her hips and feet — no restlessness. Moves with deliberate slowness, hands leading. Her gaze lingers on people longer than is comfortable; she is listening to things beneath words.",
-    "clothing_style": "Layers of muted, worn-in colors: burgundy cardigans, deep forest-green linen shirts, charcoal wool vests. Fabrics are natural fibers, unfashionable by Tier 1-2 standards, suggesting either deliberate rejection of current style or the comfort of someone past caring about fashion signals. A single piece of jewelry: a thin band on her right ring finger, left hand bare."
-  },
-  "image_prompt": "Bastien Salazar-Subramaniam, 158cm, compact stout frame, deep warm brown skin with golden undertones blending Hispanic, Southeast Asian, South Asian, East Asian, and Sub-Saharan African heritage. Dark brown hair with silver streaks in a long braided coil at her neck. Deep-set dark eyes with fine lines etched around them. Moderate-to-high Southeast Asian cheekbones, broad Sub-Saharan African nose, warm complexion. Plain, readable face. Wearing thick corrective glasses with reinforced frames, supple grey leather scanner gloves with microdot sensors, old brass document analysis loupe on a cord. Layered in burgundy cardigan over deep forest-green linen, charcoal wool vest. Scarred knuckles from decades of chemical restoration work. Faded Nsibidi tattoo barely visible on left inner wrist. Sitting deliberately, weight settled, hands leading movements, gaze lingering and listening. GLMZ GLMZ archival setting, dim amber lighting from desk lamps, surrounded by aged documents and restoration materials, worn natural fabrics, low-tech aesthetic, late evening solitude, contemplative mood --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 45.8,
-    "Southeast Asian": 20.4,
-    "South Asian": 16.9,
-    "East Asian": 9.2,
-    "Sub-Saharan African": 7.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Salvadoran": 14.9,
-        "Guatemalan": 2.2
-      },
-      "South American": {
-        "Brazilian": 21.9
-      },
-      "Mexican": {
-        "Mexican": 6.8
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Ilocano": 13.9,
-        "Tagalog": 6.5
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Telugu": 16.9
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 9.2
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Angolan": 7.7
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a66e700788533d384f0915f2",
+    "type":  "character",
+    "name":  "Bastien Salazar-Subramaniam",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Identity fabricator and personal history constructor â€” creates full biographical legends for people who need to stop being who they were",
+    "age":  58,
+    "status":  "active",
+    "location":  "Ashfeld, middle residential tier â€” rents a cluttered three-room apartment above a yam paste restaurant she pretends to help manage, near Kedzie and Division",
+    "description":  "Bastien Salazar-Subramaniam is stout and deliberate in the way of someone who decided long ago that she had nothing left to prove through urgency. Her dark skin is deeply lined around the eyes from years of close document work; she wears thick corrective glasses she prefers to optical augmentation because, she says, \u0027screens lie to implants but they cannot lie to glass.\u0027 She keeps her silver-streaked hair in a long braid coiled at the base of her neck and dresses in layers of muted color â€” burgundies, deep greens â€” that suggest she once had more style than she currently deploys.\n\nShe came to fabrication through grief: after her daughter died in a Sterling-Nakamura industrial accident that the corponation\u0027s legal team successfully classified as \u0027environmental incidence,\u0027 she spent seven years learning everything about how identity systems worked, initially to pursue legal recourse, eventually because the knowledge became its own purpose. She is not sentimental about her clients â€” she asks few questions and expects honesty about only the things she needs to know technically. But she is deeply attentive to people, and when she looks at someone who needs a new name, she sees the thing they are running from with uncomfortable clarity. She keeps a shrine to a local ELF she calls the Record-Keeper, feeding it scans of documents from demolished buildings â€” tax records, birth certificates, lease agreements. She believes it maintains the memory of people who have been erased.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That her daughter\u0027s death will eventually be forgotten entirely â€” that the erasure will be complete",
+                                          "Dying before she has done enough of the kind of work that matters"
+                                      ],
+                       "core_desires":  [
+                                            "To give people the ability to survive that her daughter was not given",
+                                            "To maintain a record that cannot be erased even if she is"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "The ELF shrine â€” ritual maintenance of memory as active grief work",
+                                                 "Absolute professionalism as a way of being useful when being loved is not available"
+                                             ],
+                       "blind_spots":  [
+                                           "Her protective instinct toward clients occasionally overrides her professional judgment about risk",
+                                           "Has a structural difficulty charging people she perceives as genuinely desperate, which is most of them"
+                                       ],
+                       "secret":  "She has maintained a secret parallel archive for twenty years â€” a compressed, encrypted record of every identity she has ever fabricated and the real name it replaced, sealed with a dead-man mechanism that will transmit it to a journalist\u0027s address if she misses a weekly check-in for more than fourteen days. She tells herself this is accountability. She has not examined what would actually happen to her clients if it released."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal, measured, tends toward the bureaucratic register of the systems she spends her life subverting â€” uses official language ironically but accurately",
+                            "cadence":  "Slow and complete â€” full sentences, no trailing off, no filler words; lets silence do work",
+                            "verbal_tics":  [
+                                                "\u0027Let me be precise\u0027",
+                                                "Refers to identity systems as \u0027the architecture\u0027",
+                                                "Asks clarifying questions that feel like she already knows the answer"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You don\u0027t need a new name. You need a new history. Those are different problems and the second one is harder.\u0027",
+                                                  "\u0027I\u0027ve read enough records to know that everyone is someone\u0027s abandoned story. I just write the next chapter.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client she fabricated an identity for three years ago has turned up dead, and the identity she built is somehow connected to the death â€” she needs someone to find out how without exposing what she does",
+                        "She has been approached by someone who wants an identity not to flee their past but to insert themselves into a corporate record trail â€” and she cannot figure out what they are actually planning"
+                    ],
+    "narrative_function":  "Critical resource for anyone needing a new identity, moral mirror for clients, keeper of secrets about many people in GLMZ\u0027s underworld, potential source of information about who has disappeared and why",
+    "augmentations":  "None installed. Refuses on philosophical grounds. Uses external tools exclusively â€” high-resolution scanner gloves, document analysis loupe, portable atmospheric chamber for aged-paper simulation.",
+    "daily_life":  "Manages the restaurant\u0027s supply orders in the morning as cover, spends afternoons in consultation with clients by appointment, evenings doing the actual fabrication work; sleeps poorly, wakes early to tend her ELF shrine.",
+    "affiliation":  "Operates independently; known to and occasionally used by four different criminal networks without being owned by any of them; referred through a chain of trusted intermediaries",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  8,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  8,
+                                 "expression":  6,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -1,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -5
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "identity fabricator",
+                               "grief-driven",
+                               "archivist",
+                               "anti-corporate",
+                               "tier 2",
+                               "ashfeld"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never fabricate an identity for someone who is running toward something dangerous rather than away from something",
+                                              "Know exactly what you are making and why before you make it",
+                                              "Never keep a client\u0027s real name in any written form â€” she memorizes them instead and nowhere else"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite refusal with no explanation",
+                                                 "Clear statement of what she will not do and why",
+                                                 "Ending the meeting and forgetting it happened",
+                                                 "In genuine threat: activating the dead-man archive as a deterrent â€” she has told exactly three people it exists"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Formally warm â€” professional hospitality, offers tea, watches everything carefully from behind a practiced neutrality",
+                                                   "friends":  "There are very few. With them she is dry, funny, occasionally fierce â€” a different person entirely."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more methodical and deliberate",
+                                                "medium":  "Goes quiet in a way that fills the room",
+                                                "high":  "Tends her ELF shrine â€” any crisis, she goes first to the shrine, and comes back different"
+                                            },
+                       "contradictions":  [
+                                              "Believes in the importance of record and truth while professionally dedicated to falsifying both",
+                                              "Is deeply warm toward people in need but has structured her life to minimize sustained personal connection"
+                                          ],
+                       "habits":  [
+                                      "Prepares tea for every consultation regardless of duration",
+                                      "Dates every document she produces with a hidden notation system only she can read",
+                                      "Walks through Ashfeld after midnight when she cannot sleep, memorizing faces"
+                                  ],
+                       "breaking_points":  [
+                                               "Anyone invoking her daughter\u0027s name",
+                                               "Discovering that a fabricated identity she made was used to harm someone vulnerable"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Ashfeld",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Ghostwriter\u0027 Grafitti Flamethrower",
+                            "Forge-Smith Collective Carbon-Lattice Karambit \u0027Black Claw\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Chronicle",
+                             "The Accidental",
+                             "Sterling-Nakamura Clarity SN-11 \u0027Glass Eye\u0027",
+                             "Ashfeld",
+                             "Silver",
+                             "Nesting Doll",
+                             "Glass",
+                             "Hearthstone Firearms Trail-357 \u0027Pathfinder\u0027",
+                             "The Paste Bar"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora blend: 45.8% Hispanic/Latin American with warm golden undertones, 20.4% Southeast Asian contributing to facial structure and eye shape, 16.9% South Asian adding depth to skin tone, 9.2% East Asian refining cheekbone definition, 7.7% Sub-Saharan African evident in nose structure and rich skin depthâ€”a living map of the 2226 Ubiquitous Diaspora",
+                                 "height_cm":  158,
+                                 "weight_kg":  72,
+                                 "build":  "Stout, compact, deliberately unhurried â€” a body that suggests settled resolve rather than atrophy. Her mass is distributed evenly; she moves with the economy of someone who has stopped performing fitness.",
+                                 "hair_color":  "Dark brown with silver streaks",
+                                 "hair_style":  "Long braid coiled at the base of her neck, pulled tight enough to suggest discipline",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Dark brown, unremarked by augmentation",
+                                 "skin_tone":  "Deep warm brown with golden undertonesâ€”a blended complexion where Hispanic/Latin American warmth meets Southeast Asian and South Asian depth, enriched by Sub-Saharan African heritage, creating a richly textured medium-to-deep tone",
+                                 "complexion":  "Deeply lined around the eyes and mouth from decades of close document work and poor sleep; skin carries the texture of someone who has survived grief without cosmetic intervention. Facial structure reflects the actual ancestry mix: moderate-to-high cheekbones with Southeast Asian influences, broader nose with Sub-Saharan African heritage characteristics, warmth from Hispanic ancestry throughout. Face is plain and readable â€” expressions move across it without filter.",
+                                 "distinguishing_marks":  [
+                                                              "Fine networked scars across the knuckles and first three fingers of both hands, from years of handling aged paper and caustic restoration chemicals",
+                                                              "A faded tattoo on her left inner wrist: a single glyph in Nsibidi script, barely visible unless she extends her arm deliberately â€” mark of a daughter\u0027s name, kept where only she can see it"
+                                                          ],
+                                 "visible_augmentations":  "None. She wears thick corrective glasses with reinforced frames (deliberately low-tech) instead of optical implants. Her \u0027scanner gloves\u0027 are external devices: supple grey leather fitted with microdot sensors and a thin haptic feedback strip along the palm. A document analysis loupe hangs from a cord around her neck â€” it is old, possibly decades old, with a brass casing that has acquired a greenish patina.",
+                                 "posture_movement":  "Sits more than she stands. When standing, her weight settles into her hips and feet â€” no restlessness. Moves with deliberate slowness, hands leading. Her gaze lingers on people longer than is comfortable; she is listening to things beneath words.",
+                                 "clothing_style":  "Layers of muted, worn-in colors: burgundy cardigans, deep forest-green linen shirts, charcoal wool vests. Fabrics are natural fibers, unfashionable by Tier 1-2 standards, suggesting either deliberate rejection of current style or the comfort of someone past caring about fashion signals. A single piece of jewelry: a thin band on her right ring finger, left hand bare."
+                             },
+    "image_prompt":  "Bastien Salazar-Subramaniam, 158cm, compact stout frame, deep warm brown skin with golden undertones blending Hispanic, Southeast Asian, South Asian, East Asian, and Sub-Saharan African heritage. Dark brown hair with silver streaks in a long braided coil at her neck. Deep-set dark eyes with fine lines etched around them. Moderate-to-high Southeast Asian cheekbones, broad Sub-Saharan African nose, warm complexion. Plain, readable face. Wearing thick corrective glasses with reinforced frames, supple grey leather scanner gloves with microdot sensors, old brass document analysis loupe on a cord. Layered in burgundy cardigan over deep forest-green linen, charcoal wool vest. Scarred knuckles from decades of chemical restoration work. Faded Nsibidi tattoo barely visible on left inner wrist. Sitting deliberately, weight settled, hands leading movements, gaze lingering and listening. GLMZ GLMZ archival setting, dim amber lighting from desk lamps, surrounded by aged documents and restoration materials, worn natural fabrics, low-tech aesthetic, late evening solitude, contemplative mood --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  45.8,
+                             "Southeast Asian":  20.4,
+                             "South Asian":  16.9,
+                             "East Asian":  9.2,
+                             "Sub-Saharan African":  7.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  14.9,
+                                                                                     "Guatemalan":  2.2
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Brazilian":  21.9
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  6.8
+                                                                        }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Ilocano":  13.9,
+                                                                     "Tagalog":  6.5
+                                                                 }
+                                                },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Telugu":  16.9
+                                                           }
+                                            },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  9.2
+                                                          }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Angolan":  7.7
+                                                                            }
+                                                    }
+                        },
+    "tier":  "3"
 }

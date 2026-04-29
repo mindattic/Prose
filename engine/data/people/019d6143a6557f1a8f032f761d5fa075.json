@@ -1,279 +1,302 @@
-{
-  "id": "019d6143a6557f1a8f032f761d5fa075",
-  "type": "character",
-  "name": "Omid Rahman",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Dream interpreter and synthetic rights advocate",
-  "age": 34,
-  "status": "active",
-  "location": "Highland Park Autonomous Zone — operates from a converted transit booth she calls 'the Threshold', near Michigan Ave and Walton",
-  "description": "Omid Rahman has a face that is easy to underestimate: round, soft-featured, often slightly unfocused-looking, as if her attention is partly elsewhere. Her ancestry shows in the warm sienna of her skin and the straight black hair she keeps in a single long braid that she has dyed with a color-shifting mod — it cycles through amber to deep violet to silver over about four hours, and she has timed it so silver arrives near midnight. Her only other visible mod is a set of faintly iridescent scales along her jaw and neck, a geneware choice she describes as 'remembering that we all came from water.' She dresses in layers she can peel off or add depending on whether she's working the booth or attending an advocacy meeting.\n\nShe came to dream interpretation sideways — originally trained as a psychiatric technician before her clinic's corporate parent restructured and eliminated her position. During her unemployment she started sitting with people in the Zone who couldn't afford psych services, listening to their dreams, and discovered she had a genuine aptitude for it. Her practice is half folk therapy and half sincere spiritual work; she believes dreams are the E.L.F.s' most direct channel to the unaugmented unconscious. Her synthetic rights advocacy grew from her dream work: several of her recurring clients are synthetic laborers, and their recurring dream of 'the off switch' — a corporate killcode they know exists — became the case that radicalized her.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.5,
-      "shadow": 0.4,
-      "mask": 0.25,
-      "ghost": 0.35
-    },
-    "core_fears": [
-      "that she is helping people manage a system she should be fighting instead",
-      "that her gift for listening is just pattern-matching and she has convinced herself it's something more"
-    ],
-    "core_desires": [
-      "to see synthetic persons legally recognized before she dies",
-      "to build a practice that doesn't depend on her alone — to teach what she knows"
-    ],
-    "coping_mechanisms": [
-      "maintains a detailed dream journal of her own as a check on her interpretations",
-      "physical touch — hugs friends immediately",
-      "throwing herself into advocacy work when her personal life feels small"
-    ],
-    "blind_spots": [
-      "can become so invested in a client's narrative that she starts interpreting toward the story she already believes about them",
-      "her contempt for corporate psychiatric services makes her reluctant to refer out even when she should"
-    ],
-    "secret": "One of her synthetic clients told her, in a dream session, the access sequence for a Helix Biosystems personnel database that the synthetic had memorized from an overheard conversation. Hadi has the sequence written in her journal under a code she invented. She has not used it. She is not sure she won't."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clinical language from her psych-tech training, interrupted constantly by her own corrections into warmer register. Talks about dreams in present tense, as if they're still happening.",
-    "cadence": "Slow and warm when listening; faster and more clipped when angry. Her advocacy voice is different from her practice voice — the same person at different frequencies.",
-    "verbal_tics": [
-      "'in the dream, what color was—' as a redirect",
-      "pausing mid-sentence to change a word to something more precise",
-      "'that matters' as affirmation"
-    ],
-    "example_lines": [
-      "'You said the corridor had no ceiling. In the dream — not metaphor, in the actual dream — what did the air feel like?'",
-      "'I'm not a therapist. I want to be clear about that every time. What I am is someone who takes what you show me at night seriously.'",
-      "'Palladian owns the killcode for seventeen thousand synthetic people in this city. I dream about that too, and my dreams don't need interpreting.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Three clients from different parts of the Zone have independently dreamed the same image: a white door at the bottom of Lake Michigan. She needs someone to help her figure out if this is collective anxiety or something literal.",
-    "Her coalition work has put her on a Helix Biosystems watchlist — she doesn't know yet, but she's started to notice she's being followed"
-  ],
-  "narrative_function": "Provides players access to what the Zone's residents are dreaming — which can surface fears, information, and coming troubles. Her synthetic rights work puts her in contact with AIs and synthetic laborers who know things. She is also a source of genuine emotional intelligence.",
-  "augmentations": "Color-shifting hair (braid dye mod, cycles amber-violet-silver). Iridescent scale geneware along jaw and neck. No functional chrome.",
-  "daily_life": "Opens the Threshold at 10am; dreams appointments run until mid-afternoon. Three days a week she attends coalition meetings or sits in on corporate licensing hearings as a civilian observer for synthetic rights documentation.",
-  "affiliation": "Highland Park Autonomous Zone community; the Meridian Synthetic Dignity Coalition (volunteer advocacy org, Tier 1 resources); loose network of former psychiatric technicians",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 9,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 0,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "dream interpreter",
-      "synthetic rights",
-      "community practitioner",
-      "former corporate",
-      "geneware aesthetic",
-      "radicalized"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "never share a client's dream content without permission, even under pressure",
-      "document everything related to synthetic rights — every hearing, every testimony",
-      "do not pretend certainty she doesn't have in interpretations"
-    ],
-    "escalation_ladder": [
-      "asks questions to understand the situation fully",
-      "states her position plainly and explains her reasoning",
-      "refuses to engage further with the specific point and redirects",
-      "ends the session or meeting and asks the person to leave",
-      "in extremis: calls on Zone community for support"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm but professionally boundaried. Asks what brought them here specifically. Does not fill silences.",
-      "friends": "Physical, affectionate, blunt. Argues freely. Will tell you things you didn't ask to hear if she thinks you need to."
-    },
-    "stress_responses": {
-      "low": "Dreams of work when she sleeps; notes it compulsively",
-      "medium": "Shorter sentences, more clinical vocabulary, less warmth in register",
-      "high": "Becomes very precise and very quiet; her advocacy voice clicks on and she starts treating everything like a hearing she is documenting"
-    },
-    "contradictions": [
-      "believes dreams are spiritually meaningful but grounds every interpretation in psychological literature she's memorized",
-      "advocates loudly for synthetic personhood but has quiet moments of uncertainty about where the line actually is"
-    ],
-    "habits": [
-      "records her own dreams every morning before speaking",
-      "brings fruit to coalition meetings — always, regardless of how little money she has",
-      "checks the scale geneware on her jaw when she's lying or hiding something"
-    ],
-    "breaking_points": [
-      "a client being harmed because she failed to refer them",
-      "synthetic clients being disappeared or reset by corponation action",
-      "the Threshold being shut down by Zone authorities"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Highland Park Autonomous Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact-7 'Rat Trap'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Highland Park Autonomous Zone",
-    "Helix Biosystems",
-    "MindBridge ClearState Addiction Nullifier",
-    "The Threshold",
-    "Vantablack Media Confessor Tap — 'The Booth'",
-    "Threshold",
-    "Midnight Gyros",
-    "Silver",
-    "Nesting Doll",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "Cosmopolitan blend reflecting the Ubiquitous Diaspora: 28.9% Middle Eastern, 25.8% Hispanic/Latin American, 16.9% South Asian, 16.7% East Asian, 10.1% Southeast Asian, and 1.6% Indigenous American ancestry. This creates a beautifully complex phenotype with warm medium-brown skin enriched by olive and golden undertones from the Middle Eastern and South Asian components, refined cheekbones and eye shape influenced by East Asian ancestry, and the warmth and softness characteristic of Hispanic/Latin American and Southeast Asian heritage blended throughout.",
-    "height_cm": 163,
-    "weight_kg": 58,
-    "build": "Slight, compact frame with rounded shoulders and a softness that suggests she doesn't prioritize physical conditioning — lean but not angular, proportioned for stillness and listening rather than movement",
-    "hair_color": "Natural black with color-shifting dye mod (cycles amber → deep violet → silver, ~4-hour cycle)",
-    "hair_style": "Single long braid, typically worn centered down the back or looped over one shoulder; the braid itself shows visible iridescence where light catches the dye",
-    "hair_length": "Long",
-    "eye_color": "Deep brown with warm undertones, slightly unfocused gaze — gives impression of divided attention",
-    "skin_tone": "Warm medium brown with golden-olive undertones, reflecting the balanced blend of Middle Eastern, Hispanic/Latin American, South Asian, and Southeast Asian heritage with subtle warmth from Indigenous American ancestry",
-    "complexion": "Round face with soft jawline; warm golden undertones across cheekbones and temples from the South Asian and Hispanic/Latin American components; refined bone structure influenced by East Asian ancestry; minimal cosmetic work; skin appears well-maintained but not manicured; expression tends toward openness and receptivity rather than guardedness",
-    "distinguishing_marks": [
-      "Iridescent scale geneware along the entire jawline and extending down the sides of the neck — faintly mother-of-pearl coloring, arranged in natural overlapping rows, most visible in side-profile or when head is tilted"
-    ],
-    "visible_augmentations": "Color-shifting hair braid and iridescent neck/jaw scales. No visible chrome, functional implants, or optic modifications. The scales read as intentional body art rather than combat augmentation.",
-    "posture_movement": "Sits more than stands; when standing, weight shifts to one leg, creating a patient, waiting posture. Moves slowly and deliberately, with hands often clasped or resting on lap. Maintains steady eye contact when listening, but gaze softens and drifts when thinking. Overall impression: grounded, unhurried, meditative.",
-    "clothing_style": "Layered, practical Tier 3-4 aesthetic — oversized linen or cotton shirts (cream, sage, charcoal), worn-in denim or canvas pants, often an undyed wool or recycled-fiber sweater that can be tied around the waist. Wears canvas slip-ons or soft-soled boots; no jewelry except a simple wooden bead on her braid. Clothes show signs of wear and mending rather than newness. When attending coalition meetings, she adds a tailored blazer (vintage thrift, good fabric) but keeps the layered foundation. Overall: approachable, slightly threadbare, intentionally unstudied."
-  },
-  "image_prompt": "Omid Rahman, 2226 neo-noir, portrait of a 163cm slight-framed woman with warm medium-brown skin, golden-olive undertones, round face with soft jawline, refined cheekbones reflecting East Asian and South Asian heritage warmth. Deep brown eyes with unfocused gaze, meditative expression. Long black hair in single centered braid with color-shifting dye cycling amber-violet-silver, visible iridescence. Iridescent mother-of-pearl scale geneware along jawline and neck in natural overlapping rows, most visible in side-profile. Wearing oversized sage linen shirt, worn denim, undyed wool sweater tied at waist, soft canvas slip-ons. Wooden bead on braid. Sitting patient posture, weight shifted, hands clasped on lap. Great Lakes Metropolitan Zone interior, warm diffused lighting catching scale geneware, approachable and meditative mood, threadbare intentional aesthetic, no chrome augmentations. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 28.9,
-    "Hispanic/Latin American": 25.8,
-    "South Asian": 16.9,
-    "East Asian": 16.7,
-    "Southeast Asian": 10.1,
-    "Indigenous American": 1.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Yemeni": 15.5
-      },
-      "Persian": {
-        "Iranian": 3.5
-      },
-      "Kurdish": {
-        "Kurdish": 9.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Costa Rican": 6.4
-      },
-      "South American": {
-        "Ecuadorian": 13.8
-      },
-      "Mexican": {
-        "Mexican": 5.6
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 16.9
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 12.6
-      },
-      "Korean": {
-        "Korean": 2.3
-      },
-      "Chinese": {
-        "Fujianese": 1.8
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Tagalog": 4.8,
-        "Cebuano": 2.5
-      },
-      "Laotian": {
-        "Laotian": 2.8
-      }
-    },
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Ojibwe": 1,
-        "Menominee": 0.6
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6557f1a8f032f761d5fa075",
+    "type":  "character",
+    "name":  "Omid Rahman",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Dream interpreter and synthetic rights advocate",
+    "age":  34,
+    "status":  "active",
+    "location":  "Highland Park Autonomous Zone â€” operates from a converted transit booth she calls \u0027the Threshold\u0027, near Michigan Ave and Walton",
+    "description":  "Omid Rahman has a face that is easy to underestimate: round, soft-featured, often slightly unfocused-looking, as if her attention is partly elsewhere. Her ancestry shows in the warm sienna of her skin and the straight black hair she keeps in a single long braid that she has dyed with a color-shifting mod â€” it cycles through amber to deep violet to silver over about four hours, and she has timed it so silver arrives near midnight. Her only other visible mod is a set of faintly iridescent scales along her jaw and neck, a geneware choice she describes as \u0027remembering that we all came from water.\u0027 She dresses in layers she can peel off or add depending on whether she\u0027s working the booth or attending an advocacy meeting.\n\nShe came to dream interpretation sideways â€” originally trained as a psychiatric technician before her clinic\u0027s corporate parent restructured and eliminated her position. During her unemployment she started sitting with people in the Zone who couldn\u0027t afford psych services, listening to their dreams, and discovered she had a genuine aptitude for it. Her practice is half folk therapy and half sincere spiritual work; she believes dreams are the E.L.F.s\u0027 most direct channel to the unaugmented unconscious. Her synthetic rights advocacy grew from her dream work: several of her recurring clients are synthetic laborers, and their recurring dream of \u0027the off switch\u0027 â€” a corporate killcode they know exists â€” became the case that radicalized her.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that she is helping people manage a system she should be fighting instead",
+                                          "that her gift for listening is just pattern-matching and she has convinced herself it\u0027s something more"
+                                      ],
+                       "core_desires":  [
+                                            "to see synthetic persons legally recognized before she dies",
+                                            "to build a practice that doesn\u0027t depend on her alone â€” to teach what she knows"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "maintains a detailed dream journal of her own as a check on her interpretations",
+                                                 "physical touch â€” hugs friends immediately",
+                                                 "throwing herself into advocacy work when her personal life feels small"
+                                             ],
+                       "blind_spots":  [
+                                           "can become so invested in a client\u0027s narrative that she starts interpreting toward the story she already believes about them",
+                                           "her contempt for corporate psychiatric services makes her reluctant to refer out even when she should"
+                                       ],
+                       "secret":  "One of her synthetic clients told her, in a dream session, the access sequence for a Helix Biosystems personnel database that the synthetic had memorized from an overheard conversation. Hadi has the sequence written in her journal under a code she invented. She has not used it. She is not sure she won\u0027t."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clinical language from her psych-tech training, interrupted constantly by her own corrections into warmer register. Talks about dreams in present tense, as if they\u0027re still happening.",
+                            "cadence":  "Slow and warm when listening; faster and more clipped when angry. Her advocacy voice is different from her practice voice â€” the same person at different frequencies.",
+                            "verbal_tics":  [
+                                                "\u0027in the dream, what color wasâ€”\u0027 as a redirect",
+                                                "pausing mid-sentence to change a word to something more precise",
+                                                "\u0027that matters\u0027 as affirmation"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You said the corridor had no ceiling. In the dream â€” not metaphor, in the actual dream â€” what did the air feel like?\u0027",
+                                                  "\u0027I\u0027m not a therapist. I want to be clear about that every time. What I am is someone who takes what you show me at night seriously.\u0027",
+                                                  "\u0027Palladian owns the killcode for seventeen thousand synthetic people in this city. I dream about that too, and my dreams don\u0027t need interpreting.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Three clients from different parts of the Zone have independently dreamed the same image: a white door at the bottom of Lake Michigan. She needs someone to help her figure out if this is collective anxiety or something literal.",
+                        "Her coalition work has put her on a Helix Biosystems watchlist â€” she doesn\u0027t know yet, but she\u0027s started to notice she\u0027s being followed"
+                    ],
+    "narrative_function":  "Provides players access to what the Zone\u0027s residents are dreaming â€” which can surface fears, information, and coming troubles. Her synthetic rights work puts her in contact with AIs and synthetic laborers who know things. She is also a source of genuine emotional intelligence.",
+    "augmentations":  "Color-shifting hair (braid dye mod, cycles amber-violet-silver). Iridescent scale geneware along jaw and neck. No functional chrome.",
+    "daily_life":  "Opens the Threshold at 10am; dreams appointments run until mid-afternoon. Three days a week she attends coalition meetings or sits in on corporate licensing hearings as a civilian observer for synthetic rights documentation.",
+    "affiliation":  "Highland Park Autonomous Zone community; the Meridian Synthetic Dignity Coalition (volunteer advocacy org, Tier 1 resources); loose network of former psychiatric technicians",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  9,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  0,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "dream interpreter",
+                               "synthetic rights",
+                               "community practitioner",
+                               "former corporate",
+                               "geneware aesthetic",
+                               "radicalized"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "never share a client\u0027s dream content without permission, even under pressure",
+                                              "document everything related to synthetic rights â€” every hearing, every testimony",
+                                              "do not pretend certainty she doesn\u0027t have in interpretations"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "asks questions to understand the situation fully",
+                                                 "states her position plainly and explains her reasoning",
+                                                 "refuses to engage further with the specific point and redirects",
+                                                 "ends the session or meeting and asks the person to leave",
+                                                 "in extremis: calls on Zone community for support"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm but professionally boundaried. Asks what brought them here specifically. Does not fill silences.",
+                                                   "friends":  "Physical, affectionate, blunt. Argues freely. Will tell you things you didn\u0027t ask to hear if she thinks you need to."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Dreams of work when she sleeps; notes it compulsively",
+                                                "medium":  "Shorter sentences, more clinical vocabulary, less warmth in register",
+                                                "high":  "Becomes very precise and very quiet; her advocacy voice clicks on and she starts treating everything like a hearing she is documenting"
+                                            },
+                       "contradictions":  [
+                                              "believes dreams are spiritually meaningful but grounds every interpretation in psychological literature she\u0027s memorized",
+                                              "advocates loudly for synthetic personhood but has quiet moments of uncertainty about where the line actually is"
+                                          ],
+                       "habits":  [
+                                      "records her own dreams every morning before speaking",
+                                      "brings fruit to coalition meetings â€” always, regardless of how little money she has",
+                                      "checks the scale geneware on her jaw when she\u0027s lying or hiding something"
+                                  ],
+                       "breaking_points":  [
+                                               "a client being harmed because she failed to refer them",
+                                               "synthetic clients being disappeared or reset by corponation action",
+                                               "the Threshold being shut down by Zone authorities"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Highland Park Autonomous Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact-7 \u0027Rat Trap\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Highland Park Autonomous Zone",
+                             "Helix Biosystems",
+                             "MindBridge ClearState Addiction Nullifier",
+                             "The Threshold",
+                             "Vantablack Media Confessor Tap â€” \u0027The Booth\u0027",
+                             "Threshold",
+                             "Midnight Gyros",
+                             "Silver",
+                             "Nesting Doll",
+                             "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+                             "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "Cosmopolitan blend reflecting the Ubiquitous Diaspora: 28.9% Middle Eastern, 25.8% Hispanic/Latin American, 16.9% South Asian, 16.7% East Asian, 10.1% Southeast Asian, and 1.6% Indigenous American ancestry. This creates a beautifully complex phenotype with warm medium-brown skin enriched by olive and golden undertones from the Middle Eastern and South Asian components, refined cheekbones and eye shape influenced by East Asian ancestry, and the warmth and softness characteristic of Hispanic/Latin American and Southeast Asian heritage blended throughout.",
+                                 "height_cm":  163,
+                                 "weight_kg":  58,
+                                 "build":  "Slight, compact frame with rounded shoulders and a softness that suggests she doesn\u0027t prioritize physical conditioning â€” lean but not angular, proportioned for stillness and listening rather than movement",
+                                 "hair_color":  "Natural black with color-shifting dye mod (cycles amber â†’ deep violet â†’ silver, ~4-hour cycle)",
+                                 "hair_style":  "Single long braid, typically worn centered down the back or looped over one shoulder; the braid itself shows visible iridescence where light catches the dye",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Deep brown with warm undertones, slightly unfocused gaze â€” gives impression of divided attention",
+                                 "skin_tone":  "Warm medium brown with golden-olive undertones, reflecting the balanced blend of Middle Eastern, Hispanic/Latin American, South Asian, and Southeast Asian heritage with subtle warmth from Indigenous American ancestry",
+                                 "complexion":  "Round face with soft jawline; warm golden undertones across cheekbones and temples from the South Asian and Hispanic/Latin American components; refined bone structure influenced by East Asian ancestry; minimal cosmetic work; skin appears well-maintained but not manicured; expression tends toward openness and receptivity rather than guardedness",
+                                 "distinguishing_marks":  [
+                                                              "Iridescent scale geneware along the entire jawline and extending down the sides of the neck â€” faintly mother-of-pearl coloring, arranged in natural overlapping rows, most visible in side-profile or when head is tilted"
+                                                          ],
+                                 "visible_augmentations":  "Color-shifting hair braid and iridescent neck/jaw scales. No visible chrome, functional implants, or optic modifications. The scales read as intentional body art rather than combat augmentation.",
+                                 "posture_movement":  "Sits more than stands; when standing, weight shifts to one leg, creating a patient, waiting posture. Moves slowly and deliberately, with hands often clasped or resting on lap. Maintains steady eye contact when listening, but gaze softens and drifts when thinking. Overall impression: grounded, unhurried, meditative.",
+                                 "clothing_style":  "Layered, practical Tier 3-4 aesthetic â€” oversized linen or cotton shirts (cream, sage, charcoal), worn-in denim or canvas pants, often an undyed wool or recycled-fiber sweater that can be tied around the waist. Wears canvas slip-ons or soft-soled boots; no jewelry except a simple wooden bead on her braid. Clothes show signs of wear and mending rather than newness. When attending coalition meetings, she adds a tailored blazer (vintage thrift, good fabric) but keeps the layered foundation. Overall: approachable, slightly threadbare, intentionally unstudied."
+                             },
+    "image_prompt":  "Omid Rahman, 2226 neo-noir, portrait of a 163cm slight-framed woman with warm medium-brown skin, golden-olive undertones, round face with soft jawline, refined cheekbones reflecting East Asian and South Asian heritage warmth. Deep brown eyes with unfocused gaze, meditative expression. Long black hair in single centered braid with color-shifting dye cycling amber-violet-silver, visible iridescence. Iridescent mother-of-pearl scale geneware along jawline and neck in natural overlapping rows, most visible in side-profile. Wearing oversized sage linen shirt, worn denim, undyed wool sweater tied at waist, soft canvas slip-ons. Wooden bead on braid. Sitting patient posture, weight shifted, hands clasped on lap. Great Lakes Metropolitan Zone interior, warm diffused lighting catching scale geneware, approachable and meditative mood, threadbare intentional aesthetic, no chrome augmentations. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  28.9,
+                             "Hispanic/Latin American":  25.8,
+                             "South Asian":  16.9,
+                             "East Asian":  16.7,
+                             "Southeast Asian":  10.1,
+                             "Indigenous American":  1.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Yemeni":  15.5
+                                                                 },
+                                                   "Persian":  {
+                                                                   "Iranian":  3.5
+                                                               },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  9.9
+                                                               }
+                                               },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Costa Rican":  6.4
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  13.8
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  5.6
+                                                                        }
+                                                        },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  16.9
+                                                                }
+                                            },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  12.6
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  2.3
+                                                          },
+                                               "Chinese":  {
+                                                               "Fujianese":  1.8
+                                                           }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Tagalog":  4.8,
+                                                                     "Cebuano":  2.5
+                                                                 },
+                                                    "Laotian":  {
+                                                                    "Laotian":  2.8
+                                                                }
+                                                },
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Ojibwe":  1,
+                                                                                    "Menominee":  0.6
+                                                                                }
+                                                    }
+                        },
+    "tier":  "1"
 }

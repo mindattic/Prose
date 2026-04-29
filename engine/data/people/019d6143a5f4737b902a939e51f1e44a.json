@@ -1,341 +1,370 @@
-{
-  "id": "019d6143a5f4737b902a939e51f1e44a",
-  "type": "character",
-  "name": "Aarav Krishnamurthy",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Chop shop operator and vehicle parts broker",
-  "age": 19,
-  "status": "active",
-  "location": "The Stockyard, operates from a leased bay in the Geartown industrial fringe, near Western and Chicago Ave",
-  "description": "Aarav Krishnamurthy is nineteen years old and already has the hands of someone twice his age — scarred across the knuckles, always traced with grease that soap only partially removes, with a slight tremor in the left index finger from a pneumatic press accident last year that he never had properly treated. He is tall and lanky, still growing into himself, with warm brown skin, close-cropped natural hair, and a permanent squint from years of working under inadequate lighting. He has cat ear geneware — gray-tipped, slightly mobile — that he got at sixteen because all his friends were getting mods and it seemed like the thing to do; they're more expressive than he intends them to be, flattening when he's stressed in ways he can't control. He wears coveralls in various states of destruction and is almost always holding a tool.\n\nHe did not plan to be running a chop shop at nineteen. He planned to be doing legitimate Ferrogate maintenance, for which he has genuine talent, but the apprenticeship application was rejected twice — once for a juvie citation he got at fourteen, once for reasons that were given as 'candidate pool volume' and which he suspects have more to do with his address. The shop fell into his hands when its previous operator left GLMZ in a hurry and owed Aarav Krishnamurthy's uncle a favor. He's good at the work. He's learning the business side faster than is comfortable. He is not yet sure if he's the kind of person who ends up staying in this life.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.7,
-      "id": 0.5,
-      "shadow": 0.2,
-      "mask": 0.4,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "becoming someone he can't get out of being",
-      "something bad happening to Bolt or Rust because of his decisions"
-    ],
-    "core_desires": [
-      "a legitimate path that doesn't require pretending none of this happened",
-      "recognition that he's actually good at something"
-    ],
-    "coping_mechanisms": [
-      "mechanical work as total absorption — when he's in a vehicle he stops thinking about everything else",
-      "deflects serious conversation with technical talk"
-    ],
-    "blind_spots": [
-      "underestimates how visible his operation is to Ferrogate Transit's security division, which has been logging the bay for eight months"
-    ],
-    "secret": "He has been sending monthly payments to Ferrogate Transit's anonymous tip line about a rival chop operator in the Stockyard — not because he has a moral objection but because it keeps enforcement attention directed away from his bay. He tells himself this doesn't make him an informant. He is not certain of this."
-  },
-  "speech_patterns": {
-    "vocabulary": "Mechanical jargon mixed with Stockyard slang. Gets more articulate when talking about engines than about anything else. Short sentences.",
-    "cadence": "Fast and clipped when busy, which is always. Trails off when uncertain. Gets oddly precise when explaining technical things.",
-    "verbal_tics": [
-      "'it's fine'",
-      "'basically'",
-      "explains technical details at length when nervous as a deflection"
-    ],
-    "example_lines": [
-      "'It's fine. The coupler seal was degraded anyway, that's not from the drop, that's from mileage. Basically you're lucky you brought it here because another hundred ks and you'd have lost the whole drive assembly.'",
-      "'I don't ask where vehicles come from. I mean — I have an idea. But I don't ask. That's — it's fine. It's how the bay works.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Ferrogate Transit's security division is about to move on the bay — Doru needs advance warning and someone who can help him think through whether to run, comply, or negotiate",
-    "One of the vehicles that came through the bay had something hidden in the chassis — something that people are now looking for, and those people have found their way to Geartown"
-  ],
-  "narrative_function": "Local color and access point for vehicle-related needs; represents the younger generation being funneled into criminal work by structural exclusion; potential for redemption arc or darker trajectory depending on story pressure; information source on what's moving through the Stockyard",
-  "augmentations": "Cat ear geneware (gray-tipped, mobile, involuntary expressiveness); basic subdermal impact absorption in both hands (installed after the press accident, budget grade)",
-  "daily_life": "At the bay by 0600, works until the light fails or later. Takes in vehicles — stolen, crashed, or unwanted — and disassembles them for parts with two teenage assistants he calls Bolt and Rust. Spends evenings running the parts ledger and doing client pickups. Eats terribly.",
-  "affiliation": "",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 5,
-      "creativity": 6,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 4,
-      "empathy": 6,
-      "expression": 4,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": -2,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "mechanical genius",
-      "reluctant criminal",
-      "protective",
-      "young and unformed",
-      "structural outsider"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "don't take anything from Tier 4 or above — too much heat",
-      "keep Bolt and Rust out of anything that could get them cited"
-    ],
-    "escalation_ladder": [
-      "does the work and doesn't ask questions",
-      "gets quiet and evasive when something is wrong",
-      "redirects to technical topics to avoid confrontation",
-      "tries to give back whatever is causing the problem",
-      "flees the bay if things go physical — he's not a fighter"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Cautious and professional, hides behind technical discussion, takes a while to make eye contact",
-      "friends": "Genuinely warm and generous with his skills — will fix things for free for people he likes, gives his honest opinion, terrible at emotional conversations but tries"
-    },
-    "stress_responses": {
-      "low": "Works faster, takes on more disassembly than necessary",
-      "medium": "Cats ears go flat, he talks more about mechanical details, deflects",
-      "high": "Goes completely quiet, hands stop moving, makes a decision very fast and then executes it without discussion"
-    },
-    "contradictions": [
-      "Has a genuine ethical core that keeps asserting itself inside a profession that doesn't reward ethics; is simultaneously the most and least cynical person in any room he's in"
-    ],
-    "habits": [
-      "names every vehicle that comes through the bay before disassembly — 'it just feels right'",
-      "keeps a running list of parts his operation has produced taped inside his locker, not for inventory but as a record",
-      "leaves a small tool as an offering at the E.L.F. that lives in the bay's main breaker panel"
-    ],
-    "breaking_points": [
-      "Bolt or Rust getting hurt because of his operation; being formally categorized as an informant by the Geartown Strippers"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Cat ear geneware (gray-tipped, mobile)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Cat ear geneware (gray-tipped, mobile)",
-      "replaces": ""
-    },
-    {
-      "name": "Subdermal impact absorption, both hands (budget grade)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal impact absorption, both hands (budget grade)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.9,
-    "Info Broker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Stockyard",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2181 — Born in the Stockyard to a family with two generations of Ferrogate maintenance work",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2195 — Juvie citation for unauthorized vehicle entry",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2197 — First Ferrogate apprenticeship application rejected",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2198 — Second application rejected; uncle arranges transfer of chop bay",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2199 — Pneumatic press accident, left index finger; begins tipping Ferrogate security about rival operation",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Bay under passive surveillance by Ferrogate Transit security division",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "Hearthstone Firearms Model 9 'Payday'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "Hearthstone Firearms Model 9 'Payday'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "The Stockyard",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "The Accidental",
-    "Geartown",
-    "Chicago",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
-    "The Pure Hand",
-    "Auni Bergqvist",
-    "Flux Strömqvist-Villalobos",
-    "GLMZ"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex Ubiquitous Diaspora blend: South Asian dominant (38.9%) with strong Northern European (30.7%) and Eastern European (13.2%) contributions, supplemented by Sub-Saharan African (10.8%) and Middle Eastern (6.4%) ancestry. Results in warm medium-to-olive complexion with golden undertones, facial structure combining South Asian nose bridge and cheekbone definition with Northern European eye shape and brow structure, and Sub-Saharan African lip fullness creating a distinctly multicultural appearance characteristic of 23rd century genetic mixing",
-    "height_cm": 188,
-    "weight_kg": 72,
-    "build": "Lanky and still angular with the awkwardness of adolescent growth not yet settled into adult proportion; lean muscle across shoulders and forearms from years of repetitive work, minimal body fat, slight forward hunch from hunching over workbenches",
-    "hair_color": "Natural dark brown, almost black",
-    "hair_style": "Close-cropped, practical, maintained with clippers rather than scissors",
-    "hair_length": "Short",
-    "eye_color": "Warm brown with amber undertones, slightly squinted at rest from chronic inadequate lighting exposure",
-    "skin_tone": "Warm olive-brown with golden-amber undertones; medium depth blending South Asian warmth with Northern European fairness, enriched by Sub-Saharan African and Middle Eastern contribution creating luminous, multi-layered undertone rather than single-origin appearance",
-    "complexion": "Young face with premature wear around the eyes; permanent squint lines; acne scars on shoulders and upper back; perpetually grease-stained around the cuticles and under fingernails despite frequent washing; facial structure shows blend of South Asian cheekbone prominence with widened nose bridge from Northern European ancestry, fuller lips reflecting Sub-Saharan African heritage, Eastern European brow structure, and warm Middle Eastern undertones creating harmonious cross-continental features",
-    "distinguishing_marks": [
-      "Pneumatic press scar across the dorsal surface of left hand between knuckles, jagged and poorly healed, approximately 4cm in length",
-      "Scattered small burn marks on both forearms consistent with welding spatter and grinder discharge",
-      "Deep grease stains and small cuts across knuckles and palms of both hands that never fully fade",
-      "Faint subdermal scarring visible under translucent skin on both hands where impact absorption implants were installed"
-    ],
-    "visible_augmentations": "Pair of mobile cat ears (gray-tipped, feline in shape) protruding from crown, involuntarily expressive — flatten and rotate with emotional state; subdermal impact absorption visible as faint linear scarring across knuckles and dorsal hand surfaces",
-    "posture_movement": "Hunched posture from workbench hours; moves with functional efficiency rather than grace; left hand tremor noticeable when holding precision tools or during stress; cat ears twitch and flatten involuntarily during concentration or anxiety, betraying emotional state he may not otherwise show; default facial expression is a slight squint",
-    "clothing_style": "Work-worn Tier 4-5 industrial aesthetic; heavily patched coveralls in faded blue or gray with custom pockets for tools, oil stains that won't wash out, burn holes from welding; plain synthetic t-shirt underneath, usually pit-stained; steel-toed boots scarred and scuffed from seven years of bay work; fingerless mechanics gloves held in back pocket or tucked into waistband; no jewelry or accessories beyond a battered analog wristwatch inherited from his uncle"
-  },
-  "image_prompt": "Aarav Krishnamurthy, 188cm tall lean androgynous young mechanic, warm olive-brown skin with golden undertones blending South Asian, Northern European, Eastern European, Sub-Saharan African and Middle Eastern ancestry, dark brown close-cropped hair, warm amber-brown squinted eyes, distinctive gray-tipped cat ears protruding from crown with feline expressiveness, angular multicultural facial features with prominent cheekbones and fuller lips, faint industrial scars on hands and forearms, perpetually grease-stained fingers, slight forward hunch from workbench posture, wearing heavily patched faded blue coveralls with oil stains and burn holes, plain stained synthetic shirt underneath, scarred steel-toed boots, fingerless mechanics gloves, battered analog wristwatch, tremor in left hand visible, hunched efficiency in movement, GLMZ industrial bay setting with harsh fluorescent and neon lighting casting shadows across work-weary features, gritty urban dystopian aesthetic, moody introspective expression with default squint, emotional state betrayed by twitching cat ears, highly detailed character study portrait --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 38.9,
-    "Northern European": 30.7,
-    "Eastern European": 13.2,
-    "Sub-Saharan African": 10.8,
-    "Middle Eastern": 6.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Pakistani": {
-        "Baloch": 38.9
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Icelandic": 17.9
-      },
-      "Germanic": {
-        "German": 12.8
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Slovak": 5.3,
-        "Czech": 4.1
-      },
-      "Slavic South": {
-        "Croatian": 1.9,
-        "Serbian": 1.9
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 0.7,
-        "Gabonese": 1
-      },
-      "East African": {
-        "Tanzanian": 0.3,
-        "Kenyan": 2.1
-      },
-      "Southern African": {
-        "Mozambican": 2.8,
-        "Zimbabwean": 3.9
-      }
-    },
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Palestinian": 3,
-        "Syrian": 0.7
-      },
-      "Kurdish": {
-        "Kurdish": 2.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a5f4737b902a939e51f1e44a",
+    "type":  "character",
+    "name":  "Aarav Krishnamurthy",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Chop shop operator and vehicle parts broker",
+    "age":  19,
+    "status":  "active",
+    "location":  "The Stockyard, operates from a leased bay in the Geartown industrial fringe, near Western and Chicago Ave",
+    "description":  "Aarav Krishnamurthy is nineteen years old and already has the hands of someone twice his age â€” scarred across the knuckles, always traced with grease that soap only partially removes, with a slight tremor in the left index finger from a pneumatic press accident last year that he never had properly treated. He is tall and lanky, still growing into himself, with warm brown skin, close-cropped natural hair, and a permanent squint from years of working under inadequate lighting. He has cat ear geneware â€” gray-tipped, slightly mobile â€” that he got at sixteen because all his friends were getting mods and it seemed like the thing to do; they\u0027re more expressive than he intends them to be, flattening when he\u0027s stressed in ways he can\u0027t control. He wears coveralls in various states of destruction and is almost always holding a tool.\n\nHe did not plan to be running a chop shop at nineteen. He planned to be doing legitimate Ferrogate maintenance, for which he has genuine talent, but the apprenticeship application was rejected twice â€” once for a juvie citation he got at fourteen, once for reasons that were given as \u0027candidate pool volume\u0027 and which he suspects have more to do with his address. The shop fell into his hands when its previous operator left GLMZ in a hurry and owed Aarav Krishnamurthy\u0027s uncle a favor. He\u0027s good at the work. He\u0027s learning the business side faster than is comfortable. He is not yet sure if he\u0027s the kind of person who ends up staying in this life.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "becoming someone he can\u0027t get out of being",
+                                          "something bad happening to Bolt or Rust because of his decisions"
+                                      ],
+                       "core_desires":  [
+                                            "a legitimate path that doesn\u0027t require pretending none of this happened",
+                                            "recognition that he\u0027s actually good at something"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "mechanical work as total absorption â€” when he\u0027s in a vehicle he stops thinking about everything else",
+                                                 "deflects serious conversation with technical talk"
+                                             ],
+                       "blind_spots":  [
+                                           "underestimates how visible his operation is to Ferrogate Transit\u0027s security division, which has been logging the bay for eight months"
+                                       ],
+                       "secret":  "He has been sending monthly payments to Ferrogate Transit\u0027s anonymous tip line about a rival chop operator in the Stockyard â€” not because he has a moral objection but because it keeps enforcement attention directed away from his bay. He tells himself this doesn\u0027t make him an informant. He is not certain of this."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Mechanical jargon mixed with Stockyard slang. Gets more articulate when talking about engines than about anything else. Short sentences.",
+                            "cadence":  "Fast and clipped when busy, which is always. Trails off when uncertain. Gets oddly precise when explaining technical things.",
+                            "verbal_tics":  [
+                                                "\u0027it\u0027s fine\u0027",
+                                                "\u0027basically\u0027",
+                                                "explains technical details at length when nervous as a deflection"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027It\u0027s fine. The coupler seal was degraded anyway, that\u0027s not from the drop, that\u0027s from mileage. Basically you\u0027re lucky you brought it here because another hundred ks and you\u0027d have lost the whole drive assembly.\u0027",
+                                                  "\u0027I don\u0027t ask where vehicles come from. I mean â€” I have an idea. But I don\u0027t ask. That\u0027s â€” it\u0027s fine. It\u0027s how the bay works.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Ferrogate Transit\u0027s security division is about to move on the bay â€” Doru needs advance warning and someone who can help him think through whether to run, comply, or negotiate",
+                        "One of the vehicles that came through the bay had something hidden in the chassis â€” something that people are now looking for, and those people have found their way to Geartown"
+                    ],
+    "narrative_function":  "Local color and access point for vehicle-related needs; represents the younger generation being funneled into criminal work by structural exclusion; potential for redemption arc or darker trajectory depending on story pressure; information source on what\u0027s moving through the Stockyard",
+    "augmentations":  "Cat ear geneware (gray-tipped, mobile, involuntary expressiveness); basic subdermal impact absorption in both hands (installed after the press accident, budget grade)",
+    "daily_life":  "At the bay by 0600, works until the light fails or later. Takes in vehicles â€” stolen, crashed, or unwanted â€” and disassembles them for parts with two teenage assistants he calls Bolt and Rust. Spends evenings running the parts ledger and doing client pickups. Eats terribly.",
+    "affiliation":  "",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  5,
+                                 "creativity":  6,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  4,
+                                 "empathy":  6,
+                                 "expression":  4,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "mechanical genius",
+                               "reluctant criminal",
+                               "protective",
+                               "young and unformed",
+                               "structural outsider"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "don\u0027t take anything from Tier 4 or above â€” too much heat",
+                                              "keep Bolt and Rust out of anything that could get them cited"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "does the work and doesn\u0027t ask questions",
+                                                 "gets quiet and evasive when something is wrong",
+                                                 "redirects to technical topics to avoid confrontation",
+                                                 "tries to give back whatever is causing the problem",
+                                                 "flees the bay if things go physical â€” he\u0027s not a fighter"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Cautious and professional, hides behind technical discussion, takes a while to make eye contact",
+                                                   "friends":  "Genuinely warm and generous with his skills â€” will fix things for free for people he likes, gives his honest opinion, terrible at emotional conversations but tries"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works faster, takes on more disassembly than necessary",
+                                                "medium":  "Cats ears go flat, he talks more about mechanical details, deflects",
+                                                "high":  "Goes completely quiet, hands stop moving, makes a decision very fast and then executes it without discussion"
+                                            },
+                       "contradictions":  [
+                                              "Has a genuine ethical core that keeps asserting itself inside a profession that doesn\u0027t reward ethics; is simultaneously the most and least cynical person in any room he\u0027s in"
+                                          ],
+                       "habits":  [
+                                      "names every vehicle that comes through the bay before disassembly â€” \u0027it just feels right\u0027",
+                                      "keeps a running list of parts his operation has produced taped inside his locker, not for inventory but as a record",
+                                      "leaves a small tool as an offering at the E.L.F. that lives in the bay\u0027s main breaker panel"
+                                  ],
+                       "breaking_points":  [
+                                               "Bolt or Rust getting hurt because of his operation; being formally categorized as an informant by the Geartown Strippers"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Cat ear geneware (gray-tipped, mobile)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Cat ear geneware (gray-tipped, mobile)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Subdermal impact absorption, both hands (budget grade)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal impact absorption, both hands (budget grade)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.9,
+                       "Info Broker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Stockyard",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2181 â€” Born in the Stockyard to a family with two generations of Ferrogate maintenance work",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2195 â€” Juvie citation for unauthorized vehicle entry",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2197 â€” First Ferrogate apprenticeship application rejected",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2198 â€” Second application rejected; uncle arranges transfer of chop bay",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2199 â€” Pneumatic press accident, left index finger; begins tipping Ferrogate security about rival operation",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Bay under passive surveillance by Ferrogate Transit security division",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Field Marksman Rifle FMR-8 \u0027Sentinel\u0027",
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Field Marksman Rifle FMR-8 \u0027Sentinel\u0027",
+                                "Hearthstone Firearms Model 9 \u0027Payday\u0027"
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "The Stockyard",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "The Accidental",
+                             "Geartown",
+                             "Chicago",
+                             "Zheng-Dao Heavy Industries Siege Mortar SM-8 \u0027Tremor\u0027",
+                             "The Pure Hand",
+                             "Auni Bergqvist",
+                             "Flux StrÃ¶mqvist-Villalobos",
+                             "GLMZ"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex Ubiquitous Diaspora blend: South Asian dominant (38.9%) with strong Northern European (30.7%) and Eastern European (13.2%) contributions, supplemented by Sub-Saharan African (10.8%) and Middle Eastern (6.4%) ancestry. Results in warm medium-to-olive complexion with golden undertones, facial structure combining South Asian nose bridge and cheekbone definition with Northern European eye shape and brow structure, and Sub-Saharan African lip fullness creating a distinctly multicultural appearance characteristic of 23rd century genetic mixing",
+                                 "height_cm":  188,
+                                 "weight_kg":  72,
+                                 "build":  "Lanky and still angular with the awkwardness of adolescent growth not yet settled into adult proportion; lean muscle across shoulders and forearms from years of repetitive work, minimal body fat, slight forward hunch from hunching over workbenches",
+                                 "hair_color":  "Natural dark brown, almost black",
+                                 "hair_style":  "Close-cropped, practical, maintained with clippers rather than scissors",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Warm brown with amber undertones, slightly squinted at rest from chronic inadequate lighting exposure",
+                                 "skin_tone":  "Warm olive-brown with golden-amber undertones; medium depth blending South Asian warmth with Northern European fairness, enriched by Sub-Saharan African and Middle Eastern contribution creating luminous, multi-layered undertone rather than single-origin appearance",
+                                 "complexion":  "Young face with premature wear around the eyes; permanent squint lines; acne scars on shoulders and upper back; perpetually grease-stained around the cuticles and under fingernails despite frequent washing; facial structure shows blend of South Asian cheekbone prominence with widened nose bridge from Northern European ancestry, fuller lips reflecting Sub-Saharan African heritage, Eastern European brow structure, and warm Middle Eastern undertones creating harmonious cross-continental features",
+                                 "distinguishing_marks":  [
+                                                              "Pneumatic press scar across the dorsal surface of left hand between knuckles, jagged and poorly healed, approximately 4cm in length",
+                                                              "Scattered small burn marks on both forearms consistent with welding spatter and grinder discharge",
+                                                              "Deep grease stains and small cuts across knuckles and palms of both hands that never fully fade",
+                                                              "Faint subdermal scarring visible under translucent skin on both hands where impact absorption implants were installed"
+                                                          ],
+                                 "visible_augmentations":  "Pair of mobile cat ears (gray-tipped, feline in shape) protruding from crown, involuntarily expressive â€” flatten and rotate with emotional state; subdermal impact absorption visible as faint linear scarring across knuckles and dorsal hand surfaces",
+                                 "posture_movement":  "Hunched posture from workbench hours; moves with functional efficiency rather than grace; left hand tremor noticeable when holding precision tools or during stress; cat ears twitch and flatten involuntarily during concentration or anxiety, betraying emotional state he may not otherwise show; default facial expression is a slight squint",
+                                 "clothing_style":  "Work-worn Tier 4-5 industrial aesthetic; heavily patched coveralls in faded blue or gray with custom pockets for tools, oil stains that won\u0027t wash out, burn holes from welding; plain synthetic t-shirt underneath, usually pit-stained; steel-toed boots scarred and scuffed from seven years of bay work; fingerless mechanics gloves held in back pocket or tucked into waistband; no jewelry or accessories beyond a battered analog wristwatch inherited from his uncle"
+                             },
+    "image_prompt":  "Aarav Krishnamurthy, 188cm tall lean androgynous young mechanic, warm olive-brown skin with golden undertones blending South Asian, Northern European, Eastern European, Sub-Saharan African and Middle Eastern ancestry, dark brown close-cropped hair, warm amber-brown squinted eyes, distinctive gray-tipped cat ears protruding from crown with feline expressiveness, angular multicultural facial features with prominent cheekbones and fuller lips, faint industrial scars on hands and forearms, perpetually grease-stained fingers, slight forward hunch from workbench posture, wearing heavily patched faded blue coveralls with oil stains and burn holes, plain stained synthetic shirt underneath, scarred steel-toed boots, fingerless mechanics gloves, battered analog wristwatch, tremor in left hand visible, hunched efficiency in movement, GLMZ industrial bay setting with harsh fluorescent and neon lighting casting shadows across work-weary features, gritty urban dystopian aesthetic, moody introspective expression with default squint, emotional state betrayed by twitching cat ears, highly detailed character study portrait --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  38.9,
+                             "Northern European":  30.7,
+                             "Eastern European":  13.2,
+                             "Sub-Saharan African":  10.8,
+                             "Middle Eastern":  6.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Baloch":  38.9
+                                                              }
+                                            },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Icelandic":  17.9
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "German":  12.8
+                                                                   }
+                                                  },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Slovak":  5.3,
+                                                                         "Czech":  4.1
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Croatian":  1.9,
+                                                                          "Serbian":  1.9
+                                                                      }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  0.7,
+                                                                                "Gabonese":  1
+                                                                            },
+                                                        "East African":  {
+                                                                             "Tanzanian":  0.3,
+                                                                             "Kenyan":  2.1
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Mozambican":  2.8,
+                                                                                 "Zimbabwean":  3.9
+                                                                             }
+                                                    },
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Palestinian":  3,
+                                                                          "Syrian":  0.7
+                                                                      },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  2.7
+                                                               }
+                                               }
+                        },
+    "tier":  "1"
 }

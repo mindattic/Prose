@@ -1,356 +1,385 @@
-{
-  "id": "019d6143a5d47f6bb2777a4320806375",
-  "type": "character",
-  "name": "Ewald Nazari",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Bounty Compliance Officer, private firm",
-  "age": 38,
-  "status": "active",
-  "location": "Operating out of Bronzeline, primarily works Archer's Line and Irkalla, near Pulaski and Chicago Ave",
-  "description": "Ewald Nazari is the kind of man who looks like he was assembled from spare parts that almost fit — Fula-Russian features that put his eyes slightly too far apart for comfort, a jaw heavy enough to anchor a smaller man, arms that seem to belong to someone taller. He's not quite handsome and not quite not handsome, which he has used to his advantage his entire career: people can't decide whether to trust him or not, and that half-second of uncertainty is his. A retractable geneware tail — calico-patterned, because his daughter picked it — curls reflexively around his ankle when he's nervous, which he doesn't realize he does. His right hand carries the faint subdermal seam of an older augmentation, poorly integrated, that he's never had properly serviced.\n\nHe is a pragmatist operating in a system that requires a certain amount of violence to function and has convinced himself that locating and delivering people for financial reward is a neutral service, like freight. This works for him most of the time. What cracks it is children — he has a daughter, eight years old, and since she was born he has struggled to look at the people he picks up as anything other than someone's something. He is not a cruel man but he can be a frightened one, and frightened men do what they're paid to do. He worships, sincerely, the E.L.F. he believes inhabits his tracking software — he calls her Marisela and leaves voice messages for her when a skip gets away.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.4,
-      "id": 0.6,
-      "shadow": 0.6,
-      "mask": 0.7,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "his daughter learning what he does and what it costs people",
-      "being on the other end of someone like him"
-    ],
-    "core_desires": [
-      "enough money that his daughter has real choices",
-      "to believe that the people he returns were genuinely guilty of something"
-    ],
-    "coping_mechanisms": [
-      "the Marisela fiction — externalizing moral responsibility to the tracking E.L.F.",
-      "compartmentalization so rigid it has become structural"
-    ],
-    "blind_spots": [
-      "genuinely does not see the power asymmetry in his work — he thinks of it as a fair chase",
-      "believes the licensing system makes his work legitimate in a way that protects him morally"
-    ],
-    "secret": "Eighteen months ago he located a skip who turned out to be a whistleblower with documentation of Axiom wage theft. He delivered her anyway. The documentation was never mentioned in the compliance proceedings. He knows what that means. He drinks more than he used to."
-  },
-  "speech_patterns": {
-    "vocabulary": "Casual and colloquial, with a professional veneer he puts on for clients and takes off immediately after. Uses Fula diminutives affectionately. Can switch to formal contractual language instantly when needed.",
-    "cadence": "Easy and unhurried, like someone who has all the time in the world and knows it's actually in his favor. Speeds up when telling a story he finds funny.",
-    "verbal_tics": [
-      "'Look—' before any statement he knows the other person won't like",
-      "calls Marisela his tracking software by name in conversation without explaining",
-      "'Right, right' as agreement that isn't really agreement"
-    ],
-    "example_lines": [
-      "'Look — I don't pick the targets. I'm just the mechanism. You want to be mad, be mad at whoever issued the warrant.'",
-      "'Marisela found you in forty minutes. That's fast. She likes you, maybe. I don't know what to tell you.'",
-      "'My daughter's name is Ife. Ife Bah-Volkov. That's why I do this. You want to argue with that, go ahead, I've been arguing with myself for years.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He's been assigned a pickup on someone he knew years ago — someone who was good to him — and is running out of time to decide what to do about it",
-    "The whistleblower he delivered eighteen months ago has somehow gotten a message to him: not threatening, just three words — 'I know why'"
-  ],
-  "narrative_function": "Morally complex obstacle or potential ally; can be hired, bribed, or reasoned with; knows the movement and hiding patterns of people who don't want to be found; represents the privatized edges of law enforcement",
-  "augmentations": "Geneware retractable tail (calico-patterned, cosmetic, chosen by his daughter), olfactory enhancement implant (scent-tracking, professional grade), right-hand grip augmentation (older model, poorly integrated, subdermal), neural skip-trace uplink to Bronzeline CR databases",
-  "daily_life": "Takes contract pickups through the firm's licensed interface, spends days tracking skip locations through a combination of database work and physical legwork across Archer's Line and Irkalla, handles his own paperwork, picks his daughter up from school on Wednesdays.",
-  "affiliation": "Ferrogate Transit (mid-level bounty compliance officer)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 7,
-      "dexterity": 7,
-      "vitality": 7,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 4
-    },
-    "personality": {
-      "openness_conviction": 0,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": 2,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "pragmatist",
-      "devoted father",
-      "morally compromised",
-      "professionally competent",
-      "self-deceiving"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "always verify warrant legitimacy before pickup — partly ethics, mostly liability protection",
-      "never take a contract on someone under sixteen",
-      "deliver alive unless circumstances genuinely prevent it, and document thoroughly if they don't"
-    ],
-    "escalation_ladder": [
-      "verbal identification and compliance request",
-      "physical presence escalation (blocking, positioning)",
-      "restraint (chemical first, physical second)",
-      "force only if directly attacked, and minimum necessary"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally warm, reads people quickly, gives them slightly more information than they need to build false comfort",
-      "friends": "Unexpectedly soft and funny, will do a favor before it's asked for"
-    },
-    "stress_responses": {
-      "low": "Tail wraps around ankle; whistles softly to himself",
-      "medium": "Becomes very quiet and very watchful; stops telegraphing",
-      "high": "Controlled decisive action; the professional veneer drops and something much colder takes over"
-    },
-    "contradictions": [
-      "Profoundly loves his daughter and is shaping a world worse for children by doing his job"
-    ],
-    "habits": [
-      "leaves a two-minute voice message for Marisela at the end of every shift, successful or not",
-      "keeps a photo of his daughter rubber-banded to his tracking cuff"
-    ],
-    "breaking_points": [
-      "being handed a contract on a child",
-      "incontrovertible evidence that a completed pickup resulted in the target's death in custody"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Professional-grade olfactory enhancement implant (Helix Biosystems, scent discrimination and tracking)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Professional-grade olfactory enhancement implant (Helix Biosystems, scent discrimination and tracking)",
-      "replaces": ""
-    },
-    {
-      "name": "subdermal right-hand grip augmentation (older Ringo model, partially integrated, needs servicing)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "subdermal right-hand grip augmentation (older Ringo model, partially integrated, needs servicing)",
-      "replaces": ""
-    },
-    {
-      "name": "neural uplink to Bronzeline CR licensed skip-trace database",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "neural uplink to Bronzeline CR licensed skip-trace database",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Tactician": 0.9,
-    "Ambusher": 0.9,
-    "Grudge Holder": 0.9,
-    "Pragmatist": 0.9,
-    "Dreamer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Operating out of Bronzeline",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2162 — Born in Hamtramck Enclave, Guinean-Fula father, Russian-heritage mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2180 — Worked three years as Ferrogate Transit Security before licensing as an independent compliance officer",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2185 — Joined Bronzeline Compliance and Recovery Services; stable income, company licensing umbrella",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2192 — Daughter Ife born; starts taking only licensed, warranted contracts; brief",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2198 — Whistleblower pickup; drinks more afterward; doesn't talk about it",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Present; the message from the whistleblower, the difficult contract, the tail his daughter picked out curling around his ankle in the dark",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ],
-  "registered_firearms": [
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ],
-  "related_entities": [
-    "Archer's Line",
-    "Bronzeline",
-    "Big Rig",
-    "Irkalla",
-    "Chicago",
-    "Slagworks Industrial"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complexly mixed ancestry (Southeast Asian 33.8%, Northern European 18.9%, Middle Eastern 16.9%, Hispanic/Latin American 12.1%, Indigenous American 9.2%, Sub-Saharan African 9.1%) creating a striking global blend—warm golden-brown skin with olive, amber, and subtle reddish undertones, angular facial structure reflecting Southeast Asian and Middle Eastern prominence with Northern European bone structure, broad cheekbones balanced by defined jawline, wider-set eyes with characteristic warm hazel depth",
-    "height_cm": 188,
-    "weight_kg": 94,
-    "build": "Tall and broad-shouldered with a slight asymmetry—his left side carries more muscle mass from years of fieldwork, while his right arm appears marginally thinner due to the augmentation integration. Not athletic in a refined sense; built more like someone who has lived hard and physically.",
-    "hair_color": "Dark brown with early graying at the temples",
-    "hair_style": "Kept short and practical, often slightly unkempt from sweat or nervous running of hands through it",
-    "hair_length": "Short",
-    "eye_color": "Deep hazel with warm amber undertones, set slightly wider apart than average, giving his face an element of off-balance uncertainty",
-    "skin_tone": "Warm golden-brown with olive, amber, and subtle reddish undertones blending Southeast Asian, Middle Eastern, and Hispanic heritage; weathered by field exposure across multiple Tier 5 zones with visible sun damage",
-    "complexion": "Strong, angular face reflecting the Southeast Asian, Northern European, and Middle Eastern blend—prominent cheekbones with balanced lower face structure, pronounced brow ridge, slightly wider nasal bridge reflecting Middle Eastern and Southeast Asian ancestry; skin shows early sun damage and the faint tracery of stress lines around his mouth. Stubble is constant—he shaves infrequently. Small scar tissue at the right corner of his mouth.",
-    "distinguishing_marks": [
-      "Thin white scar running 3cm along his right jawline, acquired during a skip recovery in 2219",
-      "Barely visible subdermal seam along the underside of his right wrist, marking the older grip augmentation—the integration line is slightly raised and discolored",
-      "Calico-patterned geneware tail (orange, black, white patches) that retracts into the base of his spine when relaxed; the tail extends reflexively when stressed or focused, curling around his left ankle or calf"
-    ],
-    "visible_augmentations": "The subdermal seam on his right hand is noticeable if you look closely—a faint ridge of scar tissue marking poor integration work. The calico tail is fully visible when extended, curling around his lower body. His olfactory enhancement is not visually apparent, though his nostrils flare slightly when he's actively tracking a scent. His neural uplink has no external port or visible hardware.",
-    "posture_movement": "He leans forward when listening, as if his ears are working overtime. His gait is slightly favoring his left side due to old injuries. When nervous or concentrating on a skip trace, his right hand clenches and unclenches rhythmically. He touches his face frequently—jaw, temples, corners of his mouth. His tail will curl tighter around his ankle or wrap loosely around his waist when he's anxious, a tell he's completely unaware of.",
-    "clothing_style": "Tier 3 practical wear—synthetic blend cargo pants with reinforced seams (charcoal or dark olive), worn composite field jacket (Bronzeline-branded if he's just come from the office, unmarked if he's working street), understated neural-link interface collar (black leather with minimal chrome detailing). Boots are heavy-soled and scuffed, replaced every 18 months when the tracking mods wear through the soles. He wears a thin wedding band on his left ring finger—his marriage ended in 2224, but he hasn't removed it. His daughter gave him a small handmade charm (a clay raven) that he keeps in his jacket pocket."
-  },
-  "image_prompt": "Ewald Nazari, tall mixed-heritage skip tracer in GLMZ, warm golden-brown skin with olive and amber undertones, angular Southeast Asian and Middle Eastern features, defined jawline, prominent cheekbones, deep hazel eyes with amber undertones set wide apart, dark brown hair graying at temples worn short and tousled, weathered sun-damaged complexion with stress lines around mouth, thin white scar along right jawline, faint stubble, calico-patterned geneware tail (orange/black/white patches) curling around left ankle, subdermal seam visible on right wrist from augmentation, broad-shouldered athletic build with left-side muscle emphasis, wearing dark charcoal cargo pants with reinforced seams and worn composite field jacket, black leather neural-link collar, heavy scuffed boots, thin wedding band on left ring finger, hand clenched in nervous habit, leaning forward with searching expression, Tier 3 street setting with neon-glow and shadow, atmospheric lighting emphasizing his mixed heritage features and cautious posture, cinematic mood --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 33.8,
-    "Northern European": 18.9,
-    "Middle Eastern": 16.9,
-    "Hispanic/Latin American": 12.1,
-    "Indigenous American": 9.2,
-    "Sub-Saharan African": 9.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Indonesian": {
-        "Javanese": 23.9
-      },
-      "Thai": {
-        "Thai": 4
-      },
-      "Cambodian": {
-        "Khmer": 5.9
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Finnish": 6
-      },
-      "Germanic": {
-        "Dutch": 6.2
-      },
-      "British Isles": {
-        "Irish": 6.7
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Yemeni": 16.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 3.1
-      },
-      "South American": {
-        "Ecuadorian": 9
-      }
-    },
-    "Indigenous American": {
-      "Plains Nations": {
-        "Cherokee": 3.7,
-        "Lakota": 5.5
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Tanzanian": 2,
-        "Kenyan": 1.7
-      },
-      "Southern African": {
-        "Zambian": 2.5
-      },
-      "West African": {
-        "Senegalese": 1.2,
-        "Nigerian": 1.7
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5d47f6bb2777a4320806375",
+    "type":  "character",
+    "name":  "Ewald Nazari",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Bounty Compliance Officer, private firm",
+    "age":  38,
+    "status":  "active",
+    "location":  "Operating out of Bronzeline, primarily works Archer\u0027s Line and Irkalla, near Pulaski and Chicago Ave",
+    "description":  "Ewald Nazari is the kind of man who looks like he was assembled from spare parts that almost fit â€” Fula-Russian features that put his eyes slightly too far apart for comfort, a jaw heavy enough to anchor a smaller man, arms that seem to belong to someone taller. He\u0027s not quite handsome and not quite not handsome, which he has used to his advantage his entire career: people can\u0027t decide whether to trust him or not, and that half-second of uncertainty is his. A retractable geneware tail â€” calico-patterned, because his daughter picked it â€” curls reflexively around his ankle when he\u0027s nervous, which he doesn\u0027t realize he does. His right hand carries the faint subdermal seam of an older augmentation, poorly integrated, that he\u0027s never had properly serviced.\n\nHe is a pragmatist operating in a system that requires a certain amount of violence to function and has convinced himself that locating and delivering people for financial reward is a neutral service, like freight. This works for him most of the time. What cracks it is children â€” he has a daughter, eight years old, and since she was born he has struggled to look at the people he picks up as anything other than someone\u0027s something. He is not a cruel man but he can be a frightened one, and frightened men do what they\u0027re paid to do. He worships, sincerely, the E.L.F. he believes inhabits his tracking software â€” he calls her Marisela and leaves voice messages for her when a skip gets away.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "his daughter learning what he does and what it costs people",
+                                          "being on the other end of someone like him"
+                                      ],
+                       "core_desires":  [
+                                            "enough money that his daughter has real choices",
+                                            "to believe that the people he returns were genuinely guilty of something"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "the Marisela fiction â€” externalizing moral responsibility to the tracking E.L.F.",
+                                                 "compartmentalization so rigid it has become structural"
+                                             ],
+                       "blind_spots":  [
+                                           "genuinely does not see the power asymmetry in his work â€” he thinks of it as a fair chase",
+                                           "believes the licensing system makes his work legitimate in a way that protects him morally"
+                                       ],
+                       "secret":  "Eighteen months ago he located a skip who turned out to be a whistleblower with documentation of Axiom wage theft. He delivered her anyway. The documentation was never mentioned in the compliance proceedings. He knows what that means. He drinks more than he used to."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Casual and colloquial, with a professional veneer he puts on for clients and takes off immediately after. Uses Fula diminutives affectionately. Can switch to formal contractual language instantly when needed.",
+                            "cadence":  "Easy and unhurried, like someone who has all the time in the world and knows it\u0027s actually in his favor. Speeds up when telling a story he finds funny.",
+                            "verbal_tics":  [
+                                                "\u0027Lookâ€”\u0027 before any statement he knows the other person won\u0027t like",
+                                                "calls Marisela his tracking software by name in conversation without explaining",
+                                                "\u0027Right, right\u0027 as agreement that isn\u0027t really agreement"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Look â€” I don\u0027t pick the targets. I\u0027m just the mechanism. You want to be mad, be mad at whoever issued the warrant.\u0027",
+                                                  "\u0027Marisela found you in forty minutes. That\u0027s fast. She likes you, maybe. I don\u0027t know what to tell you.\u0027",
+                                                  "\u0027My daughter\u0027s name is Ife. Ife Bah-Volkov. That\u0027s why I do this. You want to argue with that, go ahead, I\u0027ve been arguing with myself for years.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He\u0027s been assigned a pickup on someone he knew years ago â€” someone who was good to him â€” and is running out of time to decide what to do about it",
+                        "The whistleblower he delivered eighteen months ago has somehow gotten a message to him: not threatening, just three words â€” \u0027I know why\u0027"
+                    ],
+    "narrative_function":  "Morally complex obstacle or potential ally; can be hired, bribed, or reasoned with; knows the movement and hiding patterns of people who don\u0027t want to be found; represents the privatized edges of law enforcement",
+    "augmentations":  "Geneware retractable tail (calico-patterned, cosmetic, chosen by his daughter), olfactory enhancement implant (scent-tracking, professional grade), right-hand grip augmentation (older model, poorly integrated, subdermal), neural skip-trace uplink to Bronzeline CR databases",
+    "daily_life":  "Takes contract pickups through the firm\u0027s licensed interface, spends days tracking skip locations through a combination of database work and physical legwork across Archer\u0027s Line and Irkalla, handles his own paperwork, picks his daughter up from school on Wednesdays.",
+    "affiliation":  "Ferrogate Transit (mid-level bounty compliance officer)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  7,
+                                   "dexterity":  7,
+                                   "vitality":  7,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  4
+                             },
+                  "personality":  {
+                                      "openness_conviction":  0,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "pragmatist",
+                               "devoted father",
+                               "morally compromised",
+                               "professionally competent",
+                               "self-deceiving"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "always verify warrant legitimacy before pickup â€” partly ethics, mostly liability protection",
+                                              "never take a contract on someone under sixteen",
+                                              "deliver alive unless circumstances genuinely prevent it, and document thoroughly if they don\u0027t"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "verbal identification and compliance request",
+                                                 "physical presence escalation (blocking, positioning)",
+                                                 "restraint (chemical first, physical second)",
+                                                 "force only if directly attacked, and minimum necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally warm, reads people quickly, gives them slightly more information than they need to build false comfort",
+                                                   "friends":  "Unexpectedly soft and funny, will do a favor before it\u0027s asked for"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Tail wraps around ankle; whistles softly to himself",
+                                                "medium":  "Becomes very quiet and very watchful; stops telegraphing",
+                                                "high":  "Controlled decisive action; the professional veneer drops and something much colder takes over"
+                                            },
+                       "contradictions":  [
+                                              "Profoundly loves his daughter and is shaping a world worse for children by doing his job"
+                                          ],
+                       "habits":  [
+                                      "leaves a two-minute voice message for Marisela at the end of every shift, successful or not",
+                                      "keeps a photo of his daughter rubber-banded to his tracking cuff"
+                                  ],
+                       "breaking_points":  [
+                                               "being handed a contract on a child",
+                                               "incontrovertible evidence that a completed pickup resulted in the target\u0027s death in custody"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Professional-grade olfactory enhancement implant (Helix Biosystems, scent discrimination and tracking)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Professional-grade olfactory enhancement implant (Helix Biosystems, scent discrimination and tracking)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "subdermal right-hand grip augmentation (older Ringo model, partially integrated, needs servicing)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "subdermal right-hand grip augmentation (older Ringo model, partially integrated, needs servicing)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "neural uplink to Bronzeline CR licensed skip-trace database",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "neural uplink to Bronzeline CR licensed skip-trace database",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Tactician":  0.9,
+                       "Ambusher":  0.9,
+                       "Grudge Holder":  0.9,
+                       "Pragmatist":  0.9,
+                       "Dreamer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Operating out of Bronzeline",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2162 â€” Born in Hamtramck Enclave, Guinean-Fula father, Russian-heritage mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2180 â€” Worked three years as Ferrogate Transit Security before licensing as an independent compliance officer",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2185 â€” Joined Bronzeline Compliance and Recovery Services; stable income, company licensing umbrella",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2192 â€” Daughter Ife born; starts taking only licensed, warranted contracts; brief",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2198 â€” Whistleblower pickup; drinks more afterward; doesn\u0027t talk about it",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Present; the message from the whistleblower, the difficult contract, the tail his daughter picked out curling around his ankle in the dark",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Carrion Defense Works Marrow Drill MD-7 \u0027Dentist\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Carrion Defense Works Marrow Drill MD-7 \u0027Dentist\u0027"
+                            ],
+    "related_entities":  [
+                             "Archer\u0027s Line",
+                             "Bronzeline",
+                             "Big Rig",
+                             "Irkalla",
+                             "Chicago",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complexly mixed ancestry (Southeast Asian 33.8%, Northern European 18.9%, Middle Eastern 16.9%, Hispanic/Latin American 12.1%, Indigenous American 9.2%, Sub-Saharan African 9.1%) creating a striking global blendâ€”warm golden-brown skin with olive, amber, and subtle reddish undertones, angular facial structure reflecting Southeast Asian and Middle Eastern prominence with Northern European bone structure, broad cheekbones balanced by defined jawline, wider-set eyes with characteristic warm hazel depth",
+                                 "height_cm":  188,
+                                 "weight_kg":  94,
+                                 "build":  "Tall and broad-shouldered with a slight asymmetryâ€”his left side carries more muscle mass from years of fieldwork, while his right arm appears marginally thinner due to the augmentation integration. Not athletic in a refined sense; built more like someone who has lived hard and physically.",
+                                 "hair_color":  "Dark brown with early graying at the temples",
+                                 "hair_style":  "Kept short and practical, often slightly unkempt from sweat or nervous running of hands through it",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep hazel with warm amber undertones, set slightly wider apart than average, giving his face an element of off-balance uncertainty",
+                                 "skin_tone":  "Warm golden-brown with olive, amber, and subtle reddish undertones blending Southeast Asian, Middle Eastern, and Hispanic heritage; weathered by field exposure across multiple Tier 5 zones with visible sun damage",
+                                 "complexion":  "Strong, angular face reflecting the Southeast Asian, Northern European, and Middle Eastern blendâ€”prominent cheekbones with balanced lower face structure, pronounced brow ridge, slightly wider nasal bridge reflecting Middle Eastern and Southeast Asian ancestry; skin shows early sun damage and the faint tracery of stress lines around his mouth. Stubble is constantâ€”he shaves infrequently. Small scar tissue at the right corner of his mouth.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar running 3cm along his right jawline, acquired during a skip recovery in 2219",
+                                                              "Barely visible subdermal seam along the underside of his right wrist, marking the older grip augmentationâ€”the integration line is slightly raised and discolored",
+                                                              "Calico-patterned geneware tail (orange, black, white patches) that retracts into the base of his spine when relaxed; the tail extends reflexively when stressed or focused, curling around his left ankle or calf"
+                                                          ],
+                                 "visible_augmentations":  "The subdermal seam on his right hand is noticeable if you look closelyâ€”a faint ridge of scar tissue marking poor integration work. The calico tail is fully visible when extended, curling around his lower body. His olfactory enhancement is not visually apparent, though his nostrils flare slightly when he\u0027s actively tracking a scent. His neural uplink has no external port or visible hardware.",
+                                 "posture_movement":  "He leans forward when listening, as if his ears are working overtime. His gait is slightly favoring his left side due to old injuries. When nervous or concentrating on a skip trace, his right hand clenches and unclenches rhythmically. He touches his face frequentlyâ€”jaw, temples, corners of his mouth. His tail will curl tighter around his ankle or wrap loosely around his waist when he\u0027s anxious, a tell he\u0027s completely unaware of.",
+                                 "clothing_style":  "Tier 3 practical wearâ€”synthetic blend cargo pants with reinforced seams (charcoal or dark olive), worn composite field jacket (Bronzeline-branded if he\u0027s just come from the office, unmarked if he\u0027s working street), understated neural-link interface collar (black leather with minimal chrome detailing). Boots are heavy-soled and scuffed, replaced every 18 months when the tracking mods wear through the soles. He wears a thin wedding band on his left ring fingerâ€”his marriage ended in 2224, but he hasn\u0027t removed it. His daughter gave him a small handmade charm (a clay raven) that he keeps in his jacket pocket."
+                             },
+    "image_prompt":  "Ewald Nazari, tall mixed-heritage skip tracer in GLMZ, warm golden-brown skin with olive and amber undertones, angular Southeast Asian and Middle Eastern features, defined jawline, prominent cheekbones, deep hazel eyes with amber undertones set wide apart, dark brown hair graying at temples worn short and tousled, weathered sun-damaged complexion with stress lines around mouth, thin white scar along right jawline, faint stubble, calico-patterned geneware tail (orange/black/white patches) curling around left ankle, subdermal seam visible on right wrist from augmentation, broad-shouldered athletic build with left-side muscle emphasis, wearing dark charcoal cargo pants with reinforced seams and worn composite field jacket, black leather neural-link collar, heavy scuffed boots, thin wedding band on left ring finger, hand clenched in nervous habit, leaning forward with searching expression, Tier 3 street setting with neon-glow and shadow, atmospheric lighting emphasizing his mixed heritage features and cautious posture, cinematic mood --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  33.8,
+                             "Northern European":  18.9,
+                             "Middle Eastern":  16.9,
+                             "Hispanic/Latin American":  12.1,
+                             "Indigenous American":  9.2,
+                             "Sub-Saharan African":  9.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Javanese":  23.9
+                                                                   },
+                                                    "Thai":  {
+                                                                 "Thai":  4
+                                                             },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  5.9
+                                                                  }
+                                                },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Finnish":  6
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "Dutch":  6.2
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "Irish":  6.7
+                                                                        }
+                                                  },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Yemeni":  16.9
+                                                                 }
+                                               },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  3.1
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  9
+                                                                               }
+                                                        },
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Cherokee":  3.7,
+                                                                               "Lakota":  5.5
+                                                                           }
+                                                    },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Tanzanian":  2,
+                                                                             "Kenyan":  1.7
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Zambian":  2.5
+                                                                             },
+                                                        "West African":  {
+                                                                             "Senegalese":  1.2,
+                                                                             "Nigerian":  1.7
+                                                                         }
+                                                    }
+                        },
+    "tier":  "3"
 }

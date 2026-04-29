@@ -1,0 +1,133 @@
+{
+  "id": "019dd276fca3723081f533ef4d429bd0",
+  "rating": 0,
+  "vote_count": 0,
+  "type": "character",
+  "name": "Yuen-Pak",
+  "aliases": [],
+  "species": "human",
+  "gender": "",
+  "pronouns": "",
+  "role": "",
+  "age": 0,
+  "status": "alive",
+  "location": "",
+  "description": "Auto-scaffolded. First mentioned: \u0022The Yuen-Pak contract, she said. She said it the way you say the name of someone who died badly.\u0022",
+  "psychology": {
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
+  },
+  "relationships": [
+    {
+      "name": "a contract worth \u03A685,000",
+      "type": "subject",
+      "description": "subject of a contract worth \u03A685,000",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "",
+      "type": "Kyle stole from the Syndicate in connection with this contract",
+      "description": "Kyle stole from the Syndicate in connection with this contract",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "",
+      "type": "referenced by Hua as the basis for Kyle\u0027s punishment",
+      "description": "referenced by Hua as the basis for Kyle\u0027s punishment",
+      "emotional_core": "",
+      "story_tension": ""
+    }
+  ],
+  "story_hooks": [],
+  "narrative_function": "",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "",
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {},
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "tags": [
+    "auto-scaffolded",
+    "needs-review"
+  ],
+  "physical_description": {
+    "heritage": "",
+    "height_cm": 0,
+    "weight_kg": 0,
+    "build": "",
+    "hair_color": "",
+    "hair_style": "",
+    "hair_length": "",
+    "eye_color": "",
+    "skin_tone": "",
+    "complexion": "",
+    "distinguishing_marks": [],
+    "visible_augmentations": "",
+    "posture_movement": "",
+    "clothing_style": ""
+  },
+  "image_prompt": "",
+  "dalle3_prompt": "",
+  "genetic_ancestry": {},
+  "ancestry_detail": {},
+  "neural_abilities": []
+}

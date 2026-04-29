@@ -1,190 +1,249 @@
-{
-  "id": "019d6143a6437e7f9b7c93cede01e52d",
-  "rating": 25,
-  "vote_count": 2,
-  "type": "character",
-  "name": "Fatima Lahlou",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Fixer - Ghost fixer",
-  "age": 37,
-  "status": "active",
-  "location": "Unknown, near Milwaukee and North Ave",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Tessera Corponation (mid-level fixer)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9,
-    "Opportunist": 0.9,
-    "Face": 0.9,
-    "Ghost": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Unknown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Complex multicontinent blend: 36.8% Hispanic/Latin American, 30.6% North African, 19.8% Sub-Saharan African, 7.9% Indigenous American, 4.9% Northern European. This genetic distribution creates phenotypic richness\u2014warm medium-brown skin with golden undertones from the dominant Latin American and North African ancestry, deepened by Sub-Saharan African heritage warmth. Indigenous American ancestry contributes pronounced cheekbone architecture and facial structure, while the Sub-Saharan African component adds fullness to lips and broader nasal base. Northern European ancestry creates subtle undertone complexity in skin luminosity. The result is someone whose appearance reflects equatorial, subtropical, and Mediterranean genetic memory across multiple ancestral populations.",
-    "height_cm": 172,
-    "weight_kg": 64,
-    "build": "Lean and efficient, minimal wasted mass. Corded muscle from years of fieldwork rather than gym aesthetics. Moves like someone who conserves energy.",
-    "hair_color": "Black with premature silver threading at temples",
-    "hair_style": "Undercut with textured top, kept short enough for quick maintenance",
-    "hair_length": "Short",
-    "eye_color": "Deep brown, alert and assessing",
-    "skin_tone": "Medium warm brown with golden undertones, even sun-exposure coloration reflecting the blended heritage distribution across Latin American, North African, and Sub-Saharan African regions",
-    "complexion": "Clean-shaven, angular features with prominent high cheekbones and refined facial structure shaped by Indigenous American and North African ancestry. Skin shows healthy sun exposure but well-maintained. A small old burn scar visible on left jawline. Subtle definition in cheek and jaw structure reflecting the blended equatorial and subtropical heritage.",
-    "distinguishing_marks": [
-      "Burn scar (3cm) on left jawline, pale and smooth from old healing",
-      "Faint horizontal scar across right palm, approximately 5cm, consistent with a defensive wound",
-      "Small geometric tattoo (1cm) on inside left wrist \u2014 appears to be coordinates or a code in minimalist lines"
-    ],
-    "visible_augmentations": "None visible. Ghost fixers typically run subcutaneous or fully internalized augmentation suites.",
-    "posture_movement": "Relaxed but never truly at rest. Eyes track exits and ambient movement. Sits with spine straight, hands visible. Moves with deliberate economy \u2014 no wasted gestures, no nervous fidgeting. Gives impression of someone listening more than speaking.",
-    "clothing_style": "Tier 3-4 functional. Unmarked grey synthetic jacket (tech-weave, practical water resistance), plain dark compression shirt underneath. Charcoal cargo pants with reinforced seams and subtle tech pockets. Military-grade boots, worn but maintained. No logos, no affiliation markers. Everything is replaceable and forgettable. Single silver ring on right index finger \u2014 appears functional, possibly a discrete data interface or auth token."
-  },
-  "image_prompt": "Fatima Lahlou, GLMZ, medium warm brown skin with golden undertones reflecting Latin American and North African heritage, high prominent cheekbones from Indigenous American ancestry, deep brown alert eyes, angular refined facial structure, black hair with silver at temples in sharp undercut style, small pale burn scar on left jawline, clean-shaven. Lean 172cm build with corded muscle from fieldwork. Wearing unmarked grey tech-weave synthetic jacket, dark compression shirt, charcoal reinforced cargo pants, military-grade boots. Silver ring on right index finger. Relaxed posture with deliberate economy of movement, eyes tracking ambient space. Standing in dimly lit urban setting, neon accent lighting casting cool shadows across angular features. Mood: calm, focused, watchful. Neo-noir Great Lakes Metropolitan Zone aesthetic, high contrast lighting, cinematic depth of field --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 36.8,
-    "North African": 30.6,
-    "Sub-Saharan African": 19.8,
-    "Indigenous American": 7.9,
-    "Northern European": 4.9
-  },
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Costa Rican": 13.1
-      },
-      "South American": {
-        "Venezuelan": 8.4
-      },
-      "Caribbean": {
-        "Dominican": 15.3
-      }
-    },
-    "North African": {
-      "Maghreb": {
-        "Algerian": 29.5,
-        "Tunisian": 1.1
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 1.4,
-        "Mozambican": 10.7
-      },
-      "East African": {
-        "Kenyan": 1.8,
-        "Somali": 2.1
-      },
-      "West African": {
-        "Ghanaian": 3.8
-      }
-    },
-    "Indigenous American": {
-      "Plains Nations": {
-        "Choctaw": 1.5,
-        "Lakota": 1
-      },
-      "Great Lakes Nations": {
-        "Potawatomi": 5.4
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "English": 1.5,
-        "Scottish": 2
-      },
-      "Germanic": {
-        "Austrian": 0.9,
-        "German": 0.5
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a6437e7f9b7c93cede01e52d",
+    "rating":  25,
+    "vote_count":  2,
+    "type":  "character",
+    "name":  "Fatima Lahlou",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Fixer - Ghost fixer",
+    "age":  37,
+    "status":  "active",
+    "location":  "Unknown, near Milwaukee and North Ave",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Tessera Corponation (mid-level fixer)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9,
+                       "Opportunist":  0.9,
+                       "Face":  0.9,
+                       "Ghost":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Unknown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Complex multicontinent blend: 36.8% Hispanic/Latin American, 30.6% North African, 19.8% Sub-Saharan African, 7.9% Indigenous American, 4.9% Northern European. This genetic distribution creates phenotypic richness—warm medium-brown skin with golden undertones from the dominant Latin American and North African ancestry, deepened by Sub-Saharan African heritage warmth. Indigenous American ancestry contributes pronounced cheekbone architecture and facial structure, while the Sub-Saharan African component adds fullness to lips and broader nasal base. Northern European ancestry creates subtle undertone complexity in skin luminosity. The result is someone whose appearance reflects equatorial, subtropical, and Mediterranean genetic memory across multiple ancestral populations.",
+                                 "height_cm":  172,
+                                 "weight_kg":  64,
+                                 "build":  "Lean and efficient, minimal wasted mass. Corded muscle from years of fieldwork rather than gym aesthetics. Moves like someone who conserves energy.",
+                                 "hair_color":  "Black with premature silver threading at temples",
+                                 "hair_style":  "Undercut with textured top, kept short enough for quick maintenance",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown, alert and assessing",
+                                 "skin_tone":  "Medium warm brown with golden undertones, even sun-exposure coloration reflecting the blended heritage distribution across Latin American, North African, and Sub-Saharan African regions",
+                                 "complexion":  "Clean-shaven, angular features with prominent high cheekbones and refined facial structure shaped by Indigenous American and North African ancestry. Skin shows healthy sun exposure but well-maintained. A small old burn scar visible on left jawline. Subtle definition in cheek and jaw structure reflecting the blended equatorial and subtropical heritage.",
+                                 "distinguishing_marks":  [
+                                                              "Burn scar (3cm) on left jawline, pale and smooth from old healing",
+                                                              "Faint horizontal scar across right palm, approximately 5cm, consistent with a defensive wound",
+                                                              "Small geometric tattoo (1cm) on inside left wrist — appears to be coordinates or a code in minimalist lines"
+                                                          ],
+                                 "visible_augmentations":  "None visible. Ghost fixers typically run subcutaneous or fully internalized augmentation suites.",
+                                 "posture_movement":  "Relaxed but never truly at rest. Eyes track exits and ambient movement. Sits with spine straight, hands visible. Moves with deliberate economy — no wasted gestures, no nervous fidgeting. Gives impression of someone listening more than speaking.",
+                                 "clothing_style":  "Tier 3-4 functional. Unmarked grey synthetic jacket (tech-weave, practical water resistance), plain dark compression shirt underneath. Charcoal cargo pants with reinforced seams and subtle tech pockets. Military-grade boots, worn but maintained. No logos, no affiliation markers. Everything is replaceable and forgettable. Single silver ring on right index finger — appears functional, possibly a discrete data interface or auth token."
+                             },
+    "image_prompt":  "Fatima Lahlou, GLMZ, medium warm brown skin with golden undertones reflecting Latin American and North African heritage, high prominent cheekbones from Indigenous American ancestry, deep brown alert eyes, angular refined facial structure, black hair with silver at temples in sharp undercut style, small pale burn scar on left jawline, clean-shaven. Lean 172cm build with corded muscle from fieldwork. Wearing unmarked grey tech-weave synthetic jacket, dark compression shirt, charcoal reinforced cargo pants, military-grade boots. Silver ring on right index finger. Relaxed posture with deliberate economy of movement, eyes tracking ambient space. Standing in dimly lit urban setting, neon accent lighting casting cool shadows across angular features. Mood: calm, focused, watchful. Neo-noir Great Lakes Metropolitan Zone aesthetic, high contrast lighting, cinematic depth of field --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  36.8,
+                             "North African":  30.6,
+                             "Sub-Saharan African":  19.8,
+                             "Indigenous American":  7.9,
+                             "Northern European":  4.9
+                         },
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Costa Rican":  13.1
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Venezuelan":  8.4
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  15.3
+                                                                          }
+                                                        },
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Algerian":  29.5,
+                                                                  "Tunisian":  1.1
+                                                              }
+                                              },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  1.4,
+                                                                                 "Mozambican":  10.7
+                                                                             },
+                                                        "East African":  {
+                                                                             "Kenyan":  1.8,
+                                                                             "Somali":  2.1
+                                                                         },
+                                                        "West African":  {
+                                                                             "Ghanaian":  3.8
+                                                                         }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Choctaw":  1.5,
+                                                                               "Lakota":  1
+                                                                           },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  5.4
+                                                                                }
+                                                    },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "English":  1.5,
+                                                                            "Scottish":  2
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "Austrian":  0.9,
+                                                                       "German":  0.5
+                                                                   }
+                                                  }
+                        }
 }

@@ -1,268 +1,293 @@
-{
-  "id": "019d6143a67e704a90e8c9040e736de8",
-  "type": "character",
-  "name": "Birendra Nygaard-Haugen",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "corporate school student and junior hacker, Tier 3",
-  "age": 14,
-  "status": "active",
-  "location": "Engelheim, Axiom Meridian Youth Preparatory Campus, near Lincoln and Belmont",
-  "description": "Birendra Nygaard-Haugen is a tall, soft-faced fourteen-year-old with his father's Ukrainian pallor cut through with his grandfather's Ghanaian bone structure, resulting in something that looks like a sculptor started with two different models and found the intersection interesting. His geneware is modest — his parents approved a bioluminescent vein treatment in pale gold that shows at his temples and wrists when he's excited or stressed, something he deeply regrets as it is essentially a visible anxiety indicator. He keeps his school uniform impeccably pressed to compensate.\n\nHe is enrolled at Axiom Meridian Youth Prep on a partial academic scholarship, meaning his family stretches Tier 3 income to cover the gap. He is genuinely brilliant at systems architecture and has parlayed that into a small private operation: for a fee, he fixes other students' academic scores, not by hacking the official records (too dangerous) but by finding the legitimate alternate-submission loopholes buried in the campus governance code that no one else reads. He calls this 'procedural advocacy.' He is aware this is thin moral ice and he keeps skating.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.3,
-      "shadow": 0.6,
-      "mask": 0.7,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "losing the scholarship and proving his family's sacrifice was wasted",
-      "being caught and labeled a cheater rather than a clever person"
-    ],
-    "core_desires": [
-      "to be recognized as legitimately brilliant without having to explain the legitimate part",
-      "to get into Axiom's advanced systems track on pure merit"
-    ],
-    "coping_mechanisms": [
-      "rationalization through legal framing — 'I only use what the rules allow'",
-      "meticulous documentation of everything"
-    ],
-    "blind_spots": [
-      "Genuinely cannot see that the clients who rely on him are becoming dependent in ways that will eventually make him complicit in their failures"
-    ],
-    "secret": "Six months ago he found a genuine security vulnerability in the campus assessment system — a real one, not a loophole — and didn't report it. He uses it as a last resort and has used it exactly once, for himself, to correct a score he earned but that was logged incorrectly due to a teacher's error. He tells himself that last part matters."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, clause-heavy, uses legal and procedural language casually; shifts to clipped teen slang around peers he's trying to impress",
-    "cadence": "Measured, slightly too slow for his age, like he's reading from internal notes",
-    "verbal_tics": [
-      "'technically speaking'",
-      "long pause before answering anything, even simple questions"
-    ],
-    "example_lines": [
-      "Technically speaking, Subsection 14-C of the Axiom Academic Remediation Policy permits supplementary submission within the same assessment cycle. I'm just helping you find the form.",
-      "I don't hack anything. I read everything. There's a difference and it matters."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client's parent has found out and is threatening to report Oleander unless he provides something much larger — access he doesn't have and would have to steal honestly",
-    "The unreported vulnerability has been found by someone else and they know he knew — they want a partner or they want him silent"
-  ],
-  "narrative_function": "Information broker within the corporate school ecosystem; can provide access to Axiom campus systems or student social networks; represents the pressure-cooker of Tier 3 families buying into corporate education pipelines; his operation could explode in multiple interesting directions",
-  "augmentations": "Bioluminescent vein treatment (gold, temple and wrists); basic neural study-assist implant standard-issued by Axiom to scholarship students (read/recall enhancement, cannot be removed without forfeiting enrollment status)",
-  "daily_life": "Class from 0700-1500, two hours of mandatory Axiom-branded extracurricular programming, then three hours in his dorm room doing actual work — half homework, half client requests — followed by compulsive reviewing of campus governance documents looking for new procedural gaps.",
-  "affiliation": "Axiom Meridian Youth Preparatory (student); informal peer-network of paying clients",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 4,
-      "perception": 6
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 4,
-      "expression": 6,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "systems thinker",
-      "procedural loophole artist",
-      "scholarship pressure",
-      "visible anxiety geneware"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Only use what can be defended as procedurally legitimate",
-      "Never touch official record files directly — only inputs and submission windows"
-    ],
-    "escalation_ladder": [
-      "Cites the specific policy section that authorizes whatever he did",
-      "Produces documentation proving intent was never malicious",
-      "Goes completely silent and consults his mental risk-tree before saying another word"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Polite, slightly formal, evaluating whether they are a risk or an opportunity",
-      "friends": "Warms dramatically, becomes almost chatty, will share his documentation of injustices he's catalogued like sharing gossip"
-    },
-    "stress_responses": {
-      "low": "Bioluminescent veins brighten; he starts reviewing documentation in his head",
-      "medium": "Becomes very still, very articulate, slightly cold",
-      "high": "Dissociates into pure proceduralism — speaks in policy language as a defensive shell"
-    },
-    "contradictions": [
-      "Talks endlessly about legitimacy while running an operation he would not want his scholarship committee to know about"
-    ],
-    "habits": [
-      "Screenshots every piece of campus governance documentation he reads",
-      "Checks his vein luminescence in reflective surfaces to calibrate his visible stress level"
-    ],
-    "breaking_points": [
-      "Being told his scholarship is conditional on something academically dishonest by the institution itself"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Axiom Academic Neural Assist Mark IV — read/recall enhancement, scholarship-issue, non-removable while enrolled",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Axiom Academic Neural Assist Mark IV — read/recall enhancement, scholarship-issue, non-removable while enrolled",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Pragmatist": 0.9,
-    "Analyst": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Engelheim",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 11 — scored in the 99th percentile on the Axiom district aptitude screening",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 12 — enrolled at Meridian Youth Prep on partial scholarship; family budget restructured to cover the gap",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 13 — discovered the first procedural loophole; used it for himself, then realized others would pay",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 14, present — running a discreet client list of eleven students; has not been caught",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "related_entities": [
-    "The CEO",
-    "Hydewood",
-    "Engelheim",
-    "Lacuna Genomics",
-    "Ironvein",
-    "The Pale Mile",
-    "Gold"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Mixed Middle Eastern, Northern European, and Hispanic/Latin American heritage (47.5% Middle Eastern, 39.4% Northern European, 13.1% Hispanic/Latin American) — a striking blend creating warm olive undertones with subtle depth, bridging Mediterranean and Nordic features",
-    "height_cm": 178,
-    "weight_kg": 62,
-    "build": "Tall and lean with narrow shoulders and long limbs still catching up to his frame; the awkward proportionality of early adolescence stretched across an unusually adult height. Minimal muscle definition.",
-    "hair_color": "Dark brown, nearly black",
-    "hair_style": "Neat, carefully parted on the left; kept short enough to look regulation-compliant but with enough length to suggest deliberate grooming rather than default",
-    "hair_length": "Short",
-    "eye_color": "Warm brown with a slight amber undertone",
-    "skin_tone": "Warm olive-beige with golden undertones — the dominant Middle Eastern ancestry (47.5%) creates a luminous olive base, softened and brightened by Northern European heritage (39.4%), with the Hispanic/Latin American component (13.1%) adding subtle warmth and depth throughout. Even complexion with Mediterranean glow.",
-    "complexion": "Fine-featured with subtle angular definition emerging; rounded jawline softening toward adult sharpening; strong nasal bridge reflecting Middle Eastern heritage; slightly widened cheekbones from Latin American ancestry; clear skin with the careful grooming habits of someone overcompensating for visible augmentations. Warm olive undertones throughout with golden luminosity. Frequently appears slightly tense or concentrating.",
-    "distinguishing_marks": [
-      "Bioluminescent gold vein tracery visible along both temples, most prominent when stressed or excited — he visibly hates this tell",
-      "Matching bioluminescent gold tracery along the inner wrists, same activation pattern as temples"
-    ],
-    "visible_augmentations": "Gold bioluminescent vein treatment at temples and wrists (involuntary stress indicator). No obvious external neural implant, but the mandatory Axiom study-assist is subcutaneous.",
-    "posture_movement": "Sits very straight, shoulders held rigid — habitual tension from self-consciousness about his height and his glowing veins. Moves with the careful precision of someone who knows they're being watched. Fidgets with hands when thinking, particularly picking at the cuffs of his uniform.",
-    "clothing_style": "Axiom Meridian regulation uniform: pressed charcoal blazer with embroidered school crest, white dress shirt (always tucked), dark trousers with a sharp crease, school-issued tie. Everything maintained obsessively — no wrinkles, no stains. Off-campus wears similar Tier 3 corporate-casual: clean neutral tones, expensive-looking but not ostentatiously so, always fitted. No logos. Minimal jewelry except a thin silver wristband that hides his bioluminescent veins."
-  },
-  "image_prompt": "Birendra Nygaard-Haugen, 178cm tall androgynous teenager with warm olive-beige skin and golden undertones blending Middle Eastern, Northern European, and Latin American heritage. Dark brown nearly-black hair, neatly parted left, short length. Warm brown eyes with amber undertones. Fine-featured angular face with rounded jawline and prominent nasal bridge. Wearing pressed charcoal Axiom Meridian regulation blazer, white tucked dress shirt, dark trousers with sharp crease, school tie. Silver wristband visible on one wrist. Bioluminescent gold vein tracery faintly visible along temples and inner wrists. Rigid posture, shoulders tense, expression slightly concentrated. GLMZ Great Lakes Metropolitan Zone, cool neon-lit corridor or academy setting, subtle cool lighting highlighting skin's luminous olive quality, minimal jewelry, obsessively groomed appearance, subtle stress glow emanating from temple veins --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 47.5,
-    "Northern European": 39.4,
-    "Hispanic/Latin American": 13.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Iraqi": 8.2,
-        "Kuwaiti": 13.7
-      },
-      "Kurdish": {
-        "Kurdish": 25.6
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Danish": 16.9,
-        "Swedish": 22.5
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 13.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a67e704a90e8c9040e736de8",
+    "type":  "character",
+    "name":  "Birendra Nygaard-Haugen",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "corporate school student and junior hacker, Tier 3",
+    "age":  14,
+    "status":  "active",
+    "location":  "Engelheim, Axiom Meridian Youth Preparatory Campus, near Lincoln and Belmont",
+    "description":  "Birendra Nygaard-Haugen is a tall, soft-faced fourteen-year-old with his father\u0027s Ukrainian pallor cut through with his grandfather\u0027s Ghanaian bone structure, resulting in something that looks like a sculptor started with two different models and found the intersection interesting. His geneware is modest â€” his parents approved a bioluminescent vein treatment in pale gold that shows at his temples and wrists when he\u0027s excited or stressed, something he deeply regrets as it is essentially a visible anxiety indicator. He keeps his school uniform impeccably pressed to compensate.\n\nHe is enrolled at Axiom Meridian Youth Prep on a partial academic scholarship, meaning his family stretches Tier 3 income to cover the gap. He is genuinely brilliant at systems architecture and has parlayed that into a small private operation: for a fee, he fixes other students\u0027 academic scores, not by hacking the official records (too dangerous) but by finding the legitimate alternate-submission loopholes buried in the campus governance code that no one else reads. He calls this \u0027procedural advocacy.\u0027 He is aware this is thin moral ice and he keeps skating.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "losing the scholarship and proving his family\u0027s sacrifice was wasted",
+                                          "being caught and labeled a cheater rather than a clever person"
+                                      ],
+                       "core_desires":  [
+                                            "to be recognized as legitimately brilliant without having to explain the legitimate part",
+                                            "to get into Axiom\u0027s advanced systems track on pure merit"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "rationalization through legal framing â€” \u0027I only use what the rules allow\u0027",
+                                                 "meticulous documentation of everything"
+                                             ],
+                       "blind_spots":  [
+                                           "Genuinely cannot see that the clients who rely on him are becoming dependent in ways that will eventually make him complicit in their failures"
+                                       ],
+                       "secret":  "Six months ago he found a genuine security vulnerability in the campus assessment system â€” a real one, not a loophole â€” and didn\u0027t report it. He uses it as a last resort and has used it exactly once, for himself, to correct a score he earned but that was logged incorrectly due to a teacher\u0027s error. He tells himself that last part matters."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, clause-heavy, uses legal and procedural language casually; shifts to clipped teen slang around peers he\u0027s trying to impress",
+                            "cadence":  "Measured, slightly too slow for his age, like he\u0027s reading from internal notes",
+                            "verbal_tics":  [
+                                                "\u0027technically speaking\u0027",
+                                                "long pause before answering anything, even simple questions"
+                                            ],
+                            "example_lines":  [
+                                                  "Technically speaking, Subsection 14-C of the Axiom Academic Remediation Policy permits supplementary submission within the same assessment cycle. I\u0027m just helping you find the form.",
+                                                  "I don\u0027t hack anything. I read everything. There\u0027s a difference and it matters."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client\u0027s parent has found out and is threatening to report Oleander unless he provides something much larger â€” access he doesn\u0027t have and would have to steal honestly",
+                        "The unreported vulnerability has been found by someone else and they know he knew â€” they want a partner or they want him silent"
+                    ],
+    "narrative_function":  "Information broker within the corporate school ecosystem; can provide access to Axiom campus systems or student social networks; represents the pressure-cooker of Tier 3 families buying into corporate education pipelines; his operation could explode in multiple interesting directions",
+    "augmentations":  "Bioluminescent vein treatment (gold, temple and wrists); basic neural study-assist implant standard-issued by Axiom to scholarship students (read/recall enhancement, cannot be removed without forfeiting enrollment status)",
+    "daily_life":  "Class from 0700-1500, two hours of mandatory Axiom-branded extracurricular programming, then three hours in his dorm room doing actual work â€” half homework, half client requests â€” followed by compulsive reviewing of campus governance documents looking for new procedural gaps.",
+    "affiliation":  "Axiom Meridian Youth Preparatory (student); informal peer-network of paying clients",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  4,
+                                   "perception":  6
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  4,
+                                 "expression":  6,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "systems thinker",
+                               "procedural loophole artist",
+                               "scholarship pressure",
+                               "visible anxiety geneware"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Only use what can be defended as procedurally legitimate",
+                                              "Never touch official record files directly â€” only inputs and submission windows"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Cites the specific policy section that authorizes whatever he did",
+                                                 "Produces documentation proving intent was never malicious",
+                                                 "Goes completely silent and consults his mental risk-tree before saying another word"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Polite, slightly formal, evaluating whether they are a risk or an opportunity",
+                                                   "friends":  "Warms dramatically, becomes almost chatty, will share his documentation of injustices he\u0027s catalogued like sharing gossip"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Bioluminescent veins brighten; he starts reviewing documentation in his head",
+                                                "medium":  "Becomes very still, very articulate, slightly cold",
+                                                "high":  "Dissociates into pure proceduralism â€” speaks in policy language as a defensive shell"
+                                            },
+                       "contradictions":  [
+                                              "Talks endlessly about legitimacy while running an operation he would not want his scholarship committee to know about"
+                                          ],
+                       "habits":  [
+                                      "Screenshots every piece of campus governance documentation he reads",
+                                      "Checks his vein luminescence in reflective surfaces to calibrate his visible stress level"
+                                  ],
+                       "breaking_points":  [
+                                               "Being told his scholarship is conditional on something academically dishonest by the institution itself"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Axiom Academic Neural Assist Mark IV â€” read/recall enhancement, scholarship-issue, non-removable while enrolled",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Axiom Academic Neural Assist Mark IV â€” read/recall enhancement, scholarship-issue, non-removable while enrolled",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Pragmatist":  0.9,
+                       "Analyst":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Engelheim",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 11 â€” scored in the 99th percentile on the Axiom district aptitude screening",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 12 â€” enrolled at Meridian Youth Prep on partial scholarship; family budget restructured to cover the gap",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 13 â€” discovered the first procedural loophole; used it for himself, then realized others would pay",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 14, present â€” running a discreet client list of eleven students; has not been caught",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "The CEO",
+                             "Hydewood",
+                             "Engelheim",
+                             "Lacuna Genomics",
+                             "Ironvein",
+                             "The Pale Mile",
+                             "Gold"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Mixed Middle Eastern, Northern European, and Hispanic/Latin American heritage (47.5% Middle Eastern, 39.4% Northern European, 13.1% Hispanic/Latin American) â€” a striking blend creating warm olive undertones with subtle depth, bridging Mediterranean and Nordic features",
+                                 "height_cm":  178,
+                                 "weight_kg":  62,
+                                 "build":  "Tall and lean with narrow shoulders and long limbs still catching up to his frame; the awkward proportionality of early adolescence stretched across an unusually adult height. Minimal muscle definition.",
+                                 "hair_color":  "Dark brown, nearly black",
+                                 "hair_style":  "Neat, carefully parted on the left; kept short enough to look regulation-compliant but with enough length to suggest deliberate grooming rather than default",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Warm brown with a slight amber undertone",
+                                 "skin_tone":  "Warm olive-beige with golden undertones â€” the dominant Middle Eastern ancestry (47.5%) creates a luminous olive base, softened and brightened by Northern European heritage (39.4%), with the Hispanic/Latin American component (13.1%) adding subtle warmth and depth throughout. Even complexion with Mediterranean glow.",
+                                 "complexion":  "Fine-featured with subtle angular definition emerging; rounded jawline softening toward adult sharpening; strong nasal bridge reflecting Middle Eastern heritage; slightly widened cheekbones from Latin American ancestry; clear skin with the careful grooming habits of someone overcompensating for visible augmentations. Warm olive undertones throughout with golden luminosity. Frequently appears slightly tense or concentrating.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent gold vein tracery visible along both temples, most prominent when stressed or excited â€” he visibly hates this tell",
+                                                              "Matching bioluminescent gold tracery along the inner wrists, same activation pattern as temples"
+                                                          ],
+                                 "visible_augmentations":  "Gold bioluminescent vein treatment at temples and wrists (involuntary stress indicator). No obvious external neural implant, but the mandatory Axiom study-assist is subcutaneous.",
+                                 "posture_movement":  "Sits very straight, shoulders held rigid â€” habitual tension from self-consciousness about his height and his glowing veins. Moves with the careful precision of someone who knows they\u0027re being watched. Fidgets with hands when thinking, particularly picking at the cuffs of his uniform.",
+                                 "clothing_style":  "Axiom Meridian regulation uniform: pressed charcoal blazer with embroidered school crest, white dress shirt (always tucked), dark trousers with a sharp crease, school-issued tie. Everything maintained obsessively â€” no wrinkles, no stains. Off-campus wears similar Tier 3 corporate-casual: clean neutral tones, expensive-looking but not ostentatiously so, always fitted. No logos. Minimal jewelry except a thin silver wristband that hides his bioluminescent veins."
+                             },
+    "image_prompt":  "Birendra Nygaard-Haugen, 178cm tall androgynous teenager with warm olive-beige skin and golden undertones blending Middle Eastern, Northern European, and Latin American heritage. Dark brown nearly-black hair, neatly parted left, short length. Warm brown eyes with amber undertones. Fine-featured angular face with rounded jawline and prominent nasal bridge. Wearing pressed charcoal Axiom Meridian regulation blazer, white tucked dress shirt, dark trousers with sharp crease, school tie. Silver wristband visible on one wrist. Bioluminescent gold vein tracery faintly visible along temples and inner wrists. Rigid posture, shoulders tense, expression slightly concentrated. GLMZ Great Lakes Metropolitan Zone, cool neon-lit corridor or academy setting, subtle cool lighting highlighting skin\u0027s luminous olive quality, minimal jewelry, obsessively groomed appearance, subtle stress glow emanating from temple veins --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  47.5,
+                             "Northern European":  39.4,
+                             "Hispanic/Latin American":  13.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  8.2,
+                                                                     "Kuwaiti":  13.7
+                                                                 },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  25.6
+                                                               }
+                                               },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Danish":  16.9,
+                                                                           "Swedish":  22.5
+                                                                       }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  13.1
+                                                                                 }
+                                                        }
+                        },
+    "tier":  "1"
 }

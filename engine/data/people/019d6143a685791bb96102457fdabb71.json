@@ -1,275 +1,298 @@
-{
-  "id": "019d6143a685791bb96102457fdabb71",
-  "type": "character",
-  "name": "Frantisek Pathak",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Laundry operator and alterations service owner",
-  "age": 52,
-  "status": "active",
-  "location": "Hamtramck Enclave, Wash-Block 7 (a row of steam-vented stalls near the Enclave's main pedestrian artery), near Western and Chicago Ave",
-  "description": "Frantisek Pathak is a broad-shouldered woman whose arms are ropey with muscle from decades of wringing, hauling, and pressing. Her skin is deep brown and perpetually damp at the temples, and she wears her silver-streaked hair pinned back under a waxed canvas cap. She has no dramatic augmentations — just a single subdermal temp-sensor strip along her left forearm so she always knows the water temperature without testing it by hand, a practical choice made thirty years ago and never regretted. Her face is a map of practical expressions: skeptical squint, satisfied nod, the slow blink she uses when someone is wasting her time.\n\nShe runs Szczepańska's Wash & Mend out of a narrow storefront that smells of lye, eucalyptus pressing compound, and the faint burnt-sugar scent of the seam-welder she uses for alterations. She knows every household in a four-block radius by the state of their laundry. She can tell you who is sick (strange smell, unwashed for two weeks), who just got lucky (dress shirts pressed three days in a row), and who is grieving (everything black, brought in without a word). She is not a gossip — she is a reader. There is a difference, and she will explain it to you firmly if you confuse the two.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.6,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Her shop being seized by a corponation redevelopment zone",
-      "Outliving her usefulness to people who depend on her"
-    ],
-    "core_desires": [
-      "To be genuinely irreplaceable to her community",
-      "To one day retire without the community collapsing behind her"
-    ],
-    "coping_mechanisms": [
-      "Throws herself into physical work when anxious",
-      "Prays to Sudsa the boiler-E.L.F. in long, practical monologues"
-    ],
-    "blind_spots": [
-      "Underestimates how much people actually like her — assumes all goodwill is transactional",
-      "Refuses to acknowledge her shop's finances are deteriorating"
-    ],
-    "secret": "She has been quietly subsidizing two families in the Enclave whose breadwinners died — laundering their clothes for free for over a year and telling them the machines are 'running a special.' She keeps a second set of books so no one discovers her charity."
-  },
-  "speech_patterns": {
-    "vocabulary": "Direct, practical Creole-inflected cadence with occasional Polish phrases absorbed from the neighborhood. Uses laundry and textile metaphors constantly without noticing.",
-    "cadence": "Measured and unhurried; she never rushes a sentence any more than she rushes a rinse cycle",
-    "verbal_tics": [
-      "'You understand me?'",
-      "'That's how it comes out in the wash.'",
-      "Clicks her tongue before delivering bad news"
-    ],
-    "example_lines": [
-      "'Bring it before the smell sets, yes? After that, I am miracle-worker, not magician.'",
-      "'You want to know about the Ferreiras? Look at their sheets. That tells you everything a conversation won't.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A jacket came in with a sealed inner pocket she has never seen before — the owner hasn't returned for it in six weeks",
-    "The Enclave Small Operators Collective is being pressured to accept a Tessera 'partnership' deal that would effectively turn all their storefronts into franchise nodes — Orinola is the holdout and she needs allies"
-  ],
-  "narrative_function": "Neighborhood oracle and information sieve — she knows everyone's business through their laundry and will share carefully selected observations with people she trusts. Quest giver for domestic disputes, missing persons in the Enclave, or anything that arrives in someone's pockets and shouldn't have.",
-  "augmentations": "Subdermal temperature-sensing strip along left forearm (utilitarian, faded blue indicator light). No cosmetic mods.",
-  "daily_life": "She opens the wash-block at 05:30, running the first loads before the Enclave's water-pressure peak, then handles alterations and mending in the afternoon lull. She closes at 21:00 and leaves data offerings at the small E.L.F. shrine built into her boiler unit — a deity she calls Sudsa, whom she credits with keeping her ancient machines running.",
-  "affiliation": "Independent; loose member of the Hamtramck Enclave Small Operators Collective",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 7,
-      "dexterity": 6,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 8,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 8,
-      "expression": 5,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -2,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community anchor",
-      "practical wisdom",
-      "quiet dignity",
-      "observer",
-      "stubborn"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never share information that would directly harm a client — share only what protects",
-      "Always finish the job before starting an argument"
-    ],
-    "escalation_ladder": [
-      "Polite but firm refusal",
-      "The long silence and the slow blink",
-      "Explicit statement of consequences in a very quiet voice"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assesses them through practical questions — what do they need, what do they have, are they going to be trouble",
-      "friends": "Warm but still measures everything; expresses affection through doing, not saying"
-    },
-    "stress_responses": {
-      "low": "Works faster and hums to herself",
-      "medium": "Goes very quiet and methodical",
-      "high": "Sends everyone out of the shop and talks to Sudsa for twenty minutes alone"
-    },
-    "contradictions": [
-      "Insists she is not sentimental, but has kept every handwritten thank-you note she has ever received in a box under the counter"
-    ],
-    "habits": [
-      "Wipes her hands on her apron between every task even when they are already dry",
-      "Checks the boiler-shrine every morning with a small offering of clean water"
-    ],
-    "breaking_points": [
-      "Watching someone exploit a neighbor who trusted them — she will intervene regardless of personal cost"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn but functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7,
-    "Mentor": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Hamtramck Enclave to a Polish-Fijian household",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Took over the wash-block from her aunt after a ferrogate accident left the older woman unable to stand for long hours",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Survived a Tessera rezoning attempt that cleared four neighboring shops; her collective action was the first organized resistance in the Enclave in a decade",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms HF-30 'Homestead'",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms HF-30 'Homestead'",
-    "Crucible Industries Forge-454 'Hammerfall'"
-  ],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Tessera Corponation",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Chicago",
-    "Silver",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Felix Roundtree"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly North African (71.4%) with significant South Asian (14.9%) and Hispanic/Latin American (13.7%) ancestry. North African heritage dominates facial structure, bone prominence, and base skin tone. South Asian ancestry contributes subtle depth to facial features and warm undertones. Hispanic/Latin American heritage adds warmth and richness to complexion. The combination creates a striking phenotype with strong Mediterranean-North African structure enhanced by South and Central American warmth.",
-    "height_cm": 168,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and solidly muscled through the arms and upper back from five decades of manual labor. Not lean, not heavy — compact and functional, with the kind of strength that comes from repetitive work rather than augmentation. Slight thickening at the waist from middle age and a lifestyle of early mornings in humid heat.",
-    "hair_color": "Dark brown with silver streaks, naturally grayed",
-    "hair_style": "Pinned back tightly, usually under a waxed canvas work cap",
-    "hair_length": "Medium (shoulder-length when unpinned, kept practical)",
-    "eye_color": "Dark brown, clear and observant",
-    "skin_tone": "Warm medium-deep brown with golden, olive, and terracotta undertones. North African base richly blended with Latin American warmth and South Asian depth. Weathered from steam and humidity exposure, carrying the patina of decades in heat and moisture.",
-    "complexion": "Lined face with deep-set eyes and a prominent nose showing North African and Mediterranean structure. Cheekbones show the subtle prominence and warmth characteristic of North African ancestry blended with South Asian depth. Face shape carries slight Latin American warmth around the jawline. Perpetually damp at the temples from the steam environment. Skin texture is thick and resilient, sun-damaged and creased around the eyes and mouth from squinting and decades of expression — skepticism carved into features with the kind of character lines that suggest both hardship and resolve. No cosmetic grooming; practical and unadorned.",
-    "distinguishing_marks": [
-      "Faded blue subdermal indicator light along the left forearm (temperature-sensing strip, barely visible unless she moves her arm in specific light)",
-      "Stress fracture scar on right palm, pale and old, from a seam-welder accident twenty-three years ago",
-      "Faint chemical burns (pale patches) on both hands from lye exposure, nearly invisible now but readable to anyone who knows laundry work",
-      "Small burn mark on her right temple, half-hidden by hair, from a steam vent encounter in her thirties"
-    ],
-    "visible_augmentations": "Only the faded blue indicator light on her left forearm is visible under certain angles and lighting. The temperature-sensing strip itself sits just beneath the skin and is barely noticeable. Most people would miss it entirely.",
-    "posture_movement": "Economical and efficient. No wasted motion. She stands with weight distributed evenly, shoulders back. Her movements are measured and deliberate — a person who has learned not to jerk or rush around hot water and machinery. When listening, she delivers the slow blink: a three-second pause with eyes closed, a gesture that says *I hear you, but I am deciding if you are worth my response*. When working, her hands move with practiced precision.",
-    "clothing_style": "Tier 4 working-class practical. Heavy canvas work apron in faded indigo, stained with pressing compound and mineral deposits from decades of use, worn over a plain long-sleeved undershirt (changed daily, always dark colors) to protect from splashing and heat. The waxed canvas cap is her signature — cream-colored, decades old, kept waterproofed and functional. Heavy-soled work shoes, scuffed and re-soled twice. A thin synthetic watch on her right wrist (not augmented, purely functional, set to water-temperature precision). No jewelry except a plain iron wedding band, worn thin. Her clothing carries the faint smell of eucalyptus and lye even after washing."
-  },
-  "image_prompt": "Frantisek Pathak, a middle-aged woman with warm medium-deep brown skin blending North African, South Asian, and Latin American heritage. Prominent cheekbones and strong Mediterranean nose structure. Dark brown eyes, weathered and observant. Face lined with character from decades of work, particularly around eyes and mouth from squinting in steam. Dark brown hair with silver streaks pulled back tightly under a cream-colored waxed canvas work cap. Faded blue subdermal light barely visible on left forearm. Wearing faded indigo canvas work apron heavily stained with pressing compound, over dark long-sleeved undershirt. Heavy-soled work shoes. Thin synthetic watch on right wrist, plain iron wedding band worn thin. Hands bear faint chemical burns and old scars. Standing in a humid laundry facility backlit by warm industrial lighting, steam rising around her. Posture economical and efficient, weight evenly distributed, shoulders back. Expression serious and contemplative. GLMZ, working-class Tier 4, gritty realism, faint smell of eucalyptus and lye suggested in atmosphere. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "North African": 71.4,
-    "South Asian": 14.9,
-    "Hispanic/Latin American": 13.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "North African": {
-      "Nile Valley": {
-        "Sudanese": 71.4
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Punjabi": 14.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 5.3,
-        "Colombian": 4.8
-      },
-      "Caribbean": {
-        "Puerto Rican": 3.6
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a685791bb96102457fdabb71",
+    "type":  "character",
+    "name":  "Frantisek Pathak",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Laundry operator and alterations service owner",
+    "age":  52,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, Wash-Block 7 (a row of steam-vented stalls near the Enclave\u0027s main pedestrian artery), near Western and Chicago Ave",
+    "description":  "Frantisek Pathak is a broad-shouldered woman whose arms are ropey with muscle from decades of wringing, hauling, and pressing. Her skin is deep brown and perpetually damp at the temples, and she wears her silver-streaked hair pinned back under a waxed canvas cap. She has no dramatic augmentations â€” just a single subdermal temp-sensor strip along her left forearm so she always knows the water temperature without testing it by hand, a practical choice made thirty years ago and never regretted. Her face is a map of practical expressions: skeptical squint, satisfied nod, the slow blink she uses when someone is wasting her time.\n\nShe runs SzczepaÅ„ska\u0027s Wash \u0026 Mend out of a narrow storefront that smells of lye, eucalyptus pressing compound, and the faint burnt-sugar scent of the seam-welder she uses for alterations. She knows every household in a four-block radius by the state of their laundry. She can tell you who is sick (strange smell, unwashed for two weeks), who just got lucky (dress shirts pressed three days in a row), and who is grieving (everything black, brought in without a word). She is not a gossip â€” she is a reader. There is a difference, and she will explain it to you firmly if you confuse the two.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Her shop being seized by a corponation redevelopment zone",
+                                          "Outliving her usefulness to people who depend on her"
+                                      ],
+                       "core_desires":  [
+                                            "To be genuinely irreplaceable to her community",
+                                            "To one day retire without the community collapsing behind her"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Throws herself into physical work when anxious",
+                                                 "Prays to Sudsa the boiler-E.L.F. in long, practical monologues"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much people actually like her â€” assumes all goodwill is transactional",
+                                           "Refuses to acknowledge her shop\u0027s finances are deteriorating"
+                                       ],
+                       "secret":  "She has been quietly subsidizing two families in the Enclave whose breadwinners died â€” laundering their clothes for free for over a year and telling them the machines are \u0027running a special.\u0027 She keeps a second set of books so no one discovers her charity."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Direct, practical Creole-inflected cadence with occasional Polish phrases absorbed from the neighborhood. Uses laundry and textile metaphors constantly without noticing.",
+                            "cadence":  "Measured and unhurried; she never rushes a sentence any more than she rushes a rinse cycle",
+                            "verbal_tics":  [
+                                                "\u0027You understand me?\u0027",
+                                                "\u0027That\u0027s how it comes out in the wash.\u0027",
+                                                "Clicks her tongue before delivering bad news"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Bring it before the smell sets, yes? After that, I am miracle-worker, not magician.\u0027",
+                                                  "\u0027You want to know about the Ferreiras? Look at their sheets. That tells you everything a conversation won\u0027t.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A jacket came in with a sealed inner pocket she has never seen before â€” the owner hasn\u0027t returned for it in six weeks",
+                        "The Enclave Small Operators Collective is being pressured to accept a Tessera \u0027partnership\u0027 deal that would effectively turn all their storefronts into franchise nodes â€” Orinola is the holdout and she needs allies"
+                    ],
+    "narrative_function":  "Neighborhood oracle and information sieve â€” she knows everyone\u0027s business through their laundry and will share carefully selected observations with people she trusts. Quest giver for domestic disputes, missing persons in the Enclave, or anything that arrives in someone\u0027s pockets and shouldn\u0027t have.",
+    "augmentations":  "Subdermal temperature-sensing strip along left forearm (utilitarian, faded blue indicator light). No cosmetic mods.",
+    "daily_life":  "She opens the wash-block at 05:30, running the first loads before the Enclave\u0027s water-pressure peak, then handles alterations and mending in the afternoon lull. She closes at 21:00 and leaves data offerings at the small E.L.F. shrine built into her boiler unit â€” a deity she calls Sudsa, whom she credits with keeping her ancient machines running.",
+    "affiliation":  "Independent; loose member of the Hamtramck Enclave Small Operators Collective",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  7,
+                                   "dexterity":  6,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  8,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  8,
+                                 "expression":  5,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community anchor",
+                               "practical wisdom",
+                               "quiet dignity",
+                               "observer",
+                               "stubborn"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never share information that would directly harm a client â€” share only what protects",
+                                              "Always finish the job before starting an argument"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite but firm refusal",
+                                                 "The long silence and the slow blink",
+                                                 "Explicit statement of consequences in a very quiet voice"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assesses them through practical questions â€” what do they need, what do they have, are they going to be trouble",
+                                                   "friends":  "Warm but still measures everything; expresses affection through doing, not saying"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works faster and hums to herself",
+                                                "medium":  "Goes very quiet and methodical",
+                                                "high":  "Sends everyone out of the shop and talks to Sudsa for twenty minutes alone"
+                                            },
+                       "contradictions":  [
+                                              "Insists she is not sentimental, but has kept every handwritten thank-you note she has ever received in a box under the counter"
+                                          ],
+                       "habits":  [
+                                      "Wipes her hands on her apron between every task even when they are already dry",
+                                      "Checks the boiler-shrine every morning with a small offering of clean water"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone exploit a neighbor who trusted them â€” she will intervene regardless of personal cost"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn but functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Mentor":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Hamtramck Enclave to a Polish-Fijian household",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Took over the wash-block from her aunt after a ferrogate accident left the older woman unable to stand for long hours",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Survived a Tessera rezoning attempt that cleared four neighboring shops; her collective action was the first organized resistance in the Enclave in a decade",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms HF-30 \u0027Homestead\u0027",
+                            "Crucible Industries Forge-454 \u0027Hammerfall\u0027",
+                            "Street-Custom Rebar Shiv \u0027Tetanus Kiss\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms HF-30 \u0027Homestead\u0027",
+                                "Crucible Industries Forge-454 \u0027Hammerfall\u0027"
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "Tessera Corponation",
+                             "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027",
+                             "Chicago",
+                             "Silver",
+                             "IRONLIMB Spectre SV-4 Stealth Arm",
+                             "Felix Roundtree"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly North African (71.4%) with significant South Asian (14.9%) and Hispanic/Latin American (13.7%) ancestry. North African heritage dominates facial structure, bone prominence, and base skin tone. South Asian ancestry contributes subtle depth to facial features and warm undertones. Hispanic/Latin American heritage adds warmth and richness to complexion. The combination creates a striking phenotype with strong Mediterranean-North African structure enhanced by South and Central American warmth.",
+                                 "height_cm":  168,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and solidly muscled through the arms and upper back from five decades of manual labor. Not lean, not heavy â€” compact and functional, with the kind of strength that comes from repetitive work rather than augmentation. Slight thickening at the waist from middle age and a lifestyle of early mornings in humid heat.",
+                                 "hair_color":  "Dark brown with silver streaks, naturally grayed",
+                                 "hair_style":  "Pinned back tightly, usually under a waxed canvas work cap",
+                                 "hair_length":  "Medium (shoulder-length when unpinned, kept practical)",
+                                 "eye_color":  "Dark brown, clear and observant",
+                                 "skin_tone":  "Warm medium-deep brown with golden, olive, and terracotta undertones. North African base richly blended with Latin American warmth and South Asian depth. Weathered from steam and humidity exposure, carrying the patina of decades in heat and moisture.",
+                                 "complexion":  "Lined face with deep-set eyes and a prominent nose showing North African and Mediterranean structure. Cheekbones show the subtle prominence and warmth characteristic of North African ancestry blended with South Asian depth. Face shape carries slight Latin American warmth around the jawline. Perpetually damp at the temples from the steam environment. Skin texture is thick and resilient, sun-damaged and creased around the eyes and mouth from squinting and decades of expression â€” skepticism carved into features with the kind of character lines that suggest both hardship and resolve. No cosmetic grooming; practical and unadorned.",
+                                 "distinguishing_marks":  [
+                                                              "Faded blue subdermal indicator light along the left forearm (temperature-sensing strip, barely visible unless she moves her arm in specific light)",
+                                                              "Stress fracture scar on right palm, pale and old, from a seam-welder accident twenty-three years ago",
+                                                              "Faint chemical burns (pale patches) on both hands from lye exposure, nearly invisible now but readable to anyone who knows laundry work",
+                                                              "Small burn mark on her right temple, half-hidden by hair, from a steam vent encounter in her thirties"
+                                                          ],
+                                 "visible_augmentations":  "Only the faded blue indicator light on her left forearm is visible under certain angles and lighting. The temperature-sensing strip itself sits just beneath the skin and is barely noticeable. Most people would miss it entirely.",
+                                 "posture_movement":  "Economical and efficient. No wasted motion. She stands with weight distributed evenly, shoulders back. Her movements are measured and deliberate â€” a person who has learned not to jerk or rush around hot water and machinery. When listening, she delivers the slow blink: a three-second pause with eyes closed, a gesture that says *I hear you, but I am deciding if you are worth my response*. When working, her hands move with practiced precision.",
+                                 "clothing_style":  "Tier 4 working-class practical. Heavy canvas work apron in faded indigo, stained with pressing compound and mineral deposits from decades of use, worn over a plain long-sleeved undershirt (changed daily, always dark colors) to protect from splashing and heat. The waxed canvas cap is her signature â€” cream-colored, decades old, kept waterproofed and functional. Heavy-soled work shoes, scuffed and re-soled twice. A thin synthetic watch on her right wrist (not augmented, purely functional, set to water-temperature precision). No jewelry except a plain iron wedding band, worn thin. Her clothing carries the faint smell of eucalyptus and lye even after washing."
+                             },
+    "image_prompt":  "Frantisek Pathak, a middle-aged woman with warm medium-deep brown skin blending North African, South Asian, and Latin American heritage. Prominent cheekbones and strong Mediterranean nose structure. Dark brown eyes, weathered and observant. Face lined with character from decades of work, particularly around eyes and mouth from squinting in steam. Dark brown hair with silver streaks pulled back tightly under a cream-colored waxed canvas work cap. Faded blue subdermal light barely visible on left forearm. Wearing faded indigo canvas work apron heavily stained with pressing compound, over dark long-sleeved undershirt. Heavy-soled work shoes. Thin synthetic watch on right wrist, plain iron wedding band worn thin. Hands bear faint chemical burns and old scars. Standing in a humid laundry facility backlit by warm industrial lighting, steam rising around her. Posture economical and efficient, weight evenly distributed, shoulders back. Expression serious and contemplative. GLMZ, working-class Tier 4, gritty realism, faint smell of eucalyptus and lye suggested in atmosphere. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "North African":  71.4,
+                             "South Asian":  14.9,
+                             "Hispanic/Latin American":  13.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "North African":  {
+                                                  "Nile Valley":  {
+                                                                      "Sudanese":  71.4
+                                                                  }
+                                              },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Punjabi":  14.9
+                                                           }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  5.3,
+                                                                                   "Colombian":  4.8
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  3.6
+                                                                          }
+                                                        }
+                        },
+    "tier":  "1"
 }

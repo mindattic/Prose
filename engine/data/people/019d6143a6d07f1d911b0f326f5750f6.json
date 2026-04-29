@@ -1,270 +1,297 @@
-{
-  "id": "019d6143a6d07f1d911b0f326f5750f6",
-  "rating": 80,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Meera Tetteh-Deshpande",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Chop shop operator and parts fence working out of a salvage yard in Shallowgrave",
-  "age": 19,
-  "status": "active",
-  "location": "Shallowgrave \u2014 Bergqvist \u0026 Sons Salvage (the sons don\u0027t exist), a working chop shop and legitimate scrap dealer on the western run of the Sump Road",
-  "description": "Meera Tetteh-Deshpande is nineteen and looks it \u2014 sharp-faced and still growing into her height, with grease that never fully comes out of the creases of her knuckles and a habit of wiping her hands on a rag she keeps tucked in her waistband. Her skin is a warm medium brown, her hair grown in thick loose coils she shoves under a cap when she\u0027s working and lets fall to her shoulders otherwise. Her one visible mod is a retractable tool-array in her right hand \u2014 three thin probe fingers that extend from the palm for accessing component ports \u2014 which she got secondhand from a chop-house in Ironhaven and jury-rigged to fit her hand herself. She\u0027s quietly proud of that.\n\nSio inherited the salvage yard at sixteen when her father died of a respiratory illness from years of unfiltered sump exposure. She turned it from a struggling legal operation into a profitable illegal one inside a year out of sheer necessity, and she\u0027s been running it that way since. She is not reckless \u2014 she runs a very careful shop, clean books on the legal side, and clear sourcing rules for what she\u0027ll accept \u2014 but she is young and the combination of competence and overconfidence occasionally creates problems. She has three employees: an older mechanic named Duru who knew her father and probably knows more about the illegal side than he lets on, and two teenagers from the neighborhood she pays above-market because she remembers what it felt like to need money badly at sixteen.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.4,
-      "id": 0.7,
-      "shadow": 0.3,
-      "mask": 0.4,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "losing the yard \u2014 it\u0027s all she has of her father and also her only income",
-      "making a bad call that gets one of her teenage employees hurt"
-    ],
-    "core_desires": [
-      "to make the yard genuinely profitable enough to go fully legitimate eventually",
-      "to be taken seriously by the older operators who still see her as a kid"
-    ],
-    "coping_mechanisms": [
-      "physical work as anxiety management \u2014 she takes things apart and puts them back together when she\u0027s stressed",
-      "bravado as pre-emptive defense"
-    ],
-    "blind_spots": [
-      "her loyalty to the two teenage employees makes her predictable to anyone who wants leverage over her",
-      "she\u0027s built a business model that requires constant growth to stay ahead of the gangs, and she hasn\u0027t thought about the ceiling"
-    ],
-    "secret": "She found a Ferrogate Transit black-box recorder in a stripped vehicle two months ago that contains footage of a transit security officer committing a serious crime. She hasn\u0027t decided what to do with it. It\u0027s wrapped in a cloth under the floor of her office."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, technical, deeply neighborhood \u2014 heavy in salvage and mechanical slang; swears with creativity",
-    "cadence": "Quick and often overlapping itself; she thinks faster than she edits",
-    "verbal_tics": [
-      "\u0027That\u0027s not how it works\u0027",
-      "starts sentences with \u0027Look\u2014\u0027 when she\u0027s about to correct someone"
-    ],
-    "example_lines": [
-      "\u0027Look, I don\u0027t ask where it came from. I ask what it is, what condition it\u0027s in, and whether it\u0027s going to bring someone to my door. You tell me no on that last one, we have a conversation.\u0027",
-      "\u0027My father ran this yard for twenty years without cutting a single corner. I cut corners. I\u0027m not him. But this place is still standing, so.\u0027"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The Ferrogate Transit black-box is burning a hole in her floor and she\u0027s looking for someone she can trust to tell her what it\u0027s worth and whether keeping it is going to get her killed",
-    "One of her teenage employees has started skimming parts to sell independently to a scavenger gang, and Sio needs to resolve it without anyone getting hurt and without losing face"
-  ],
-  "narrative_function": "Local color and practical resource; can source vehicle parts, tech components, and stripped augmentation hardware; potential ally who trades favors for help with the scavenger gang pressure; represents the working young criminal who hasn\u0027t yet been destroyed by the system",
-  "augmentations": "Retractable tool-array (right palm, secondhand and self-modified \u2014 three probe fingers, used for component diagnosis and access); no other augmentations",
-  "daily_life": "Up before dawn to receive night deliveries before the sump road gets traffic; legal salvage business open 08:00-17:00; illegal intake happens in the locked rear yard after dark.",
-  "affiliation": "Independent; fences primarily to a mid-level network connected to Gravesend Basin smuggling routes; has a tense but functional relationship with the local Shallowgrave scavenger gangs",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 7,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 6,
-      "expression": 5,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": 3,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "chop shop operator",
-      "fence",
-      "young entrepreneur",
-      "fiercely practical",
-      "protective"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "No bioware \u2014 she won\u0027t chop organs, hard line, watched her father deteriorate from medical neglect and it\u0027s personal",
-      "Anyone who brings trouble to the yard gets blacklisted; the yard\u0027s safety is the primary rule"
-    ],
-    "escalation_ladder": [
-      "Direct confrontation and renegotiation",
-      "Refusing future business",
-      "Reporting to the scavenger gang network that a client is untrustworthy (devastating to their operations)",
-      "As last resort: disappearing the problematic merchandise and claiming it was never there"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Suspicious and quick to test; asks two or three slightly-too-specific questions to see how someone handles not knowing the answer",
-      "friends": "Unfussy and loyal; shows up with a wrench when something needs fixing; doesn\u0027t say emotional things out loud but does them visibly"
-    },
-    "stress_responses": {
-      "low": "Starts taking apart something small and nearby \u2014 a pen, a component, anything",
-      "medium": "Gets blunt to the point of rudeness; efficiency collapses into curtness",
-      "high": "Goes very controlled and quiet; starts calculating out loud in a flat voice"
-    },
-    "contradictions": [
-      "Runs an illegal operation specifically to protect and care for the people around her, then insists she\u0027s in it only for the business"
-    ],
-    "habits": [
-      "Eats lunch on the roof of the main salvage building every day regardless of weather",
-      "Leaves a cracked circuit board at the small shrine to the E.L.F. called the Broken Engine at the yard\u0027s gate, first of every month",
-      "Keeps her father\u0027s salvage license framed inside the office even though it\u0027s no longer valid"
-    ],
-    "breaking_points": [
-      "Any harm coming to her two young employees",
-      "The discovery that someone has reported the yard\u0027s illegal operations to Ferrogate Transit security"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "1",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Shallowgrave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Shallowgrave to a Tongan-Guinean-Swedish family; father Setareki ran the salvage yard",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Father Setareki dies of sump-exposure respiratory disease; Sio takes over the yard at 16",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Converts the yard\u0027s back operation to illegal chop work within a year of taking over",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Finds the Ferrogate Transit black-box recorder; currently undecided on its use",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Sub-Saharan African (46.9%), South Asian (31.2%), Southeast Asian (11.8%), and Northern European (10.1%) \u2014 a striking pan-continental blend evident in her rich deep skin tone, the particular set of her cheekbones, and the complexity of her facial structure reflecting multiple ancestral lines",
-    "height_cm": 174,
-    "weight_kg": 62,
-    "build": "Lean and rangy with emerging muscularity in her shoulders and forearms from years of dismantling work; still has the gangly proportions of someone not quite finished growing into her frame",
-    "hair_color": "Natural dark brown with warm undertones",
-    "hair_style": "Thick, loose coils worn down to shoulder length when off-duty; habitually shoved under a grease-stained canvas cap during work",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown",
-    "skin_tone": "Rich warm brown with golden undertones \u2014 a deep, luminous complexion reflecting the dominance of Sub-Saharan and South Asian ancestry; medium-to-deep depth with natural radiance that contrasts strikingly with the grime of her work",
-    "complexion": "Angular face with high, defined cheekbones characteristic of her African and South Asian heritage; prominent nasal bridge with subtle refinement from Southeast Asian ancestry; dark expressive eyes set with characteristic Southeast Asian width; chronic grease stains embedded in the creases of her knuckles and under her fingernails despite frequent washing; sun-damaged from early-morning sump road exposure; minimal grooming beyond practicality",
-    "distinguishing_marks": [
-      "Faint burn scar on her left forearm from a component arc accident at age seventeen",
-      "Callused palms and fingertips from handling corroded metal and precision diagnostics",
-      "Grease ingrained into her skin in a pattern that suggests constant work contact"
-    ],
-    "visible_augmentations": "Retractable tool-array in right palm: three thin probe fingers that extend from the palm for component port access, visibly jury-rigged with mismatched titanium casing and hand-welded articulation joints; shows evidence of self-modification and repeated field repairs",
-    "posture_movement": "Moves with practical efficiency, economical gestures honed by close work in tight spaces; frequently has her right hand half-extended as if reaching for tools; stands with weight shifted forward slightly, ready to move; habitual nervous tic of rubbing her right palm against her thigh",
-    "clothing_style": "Tier 4-5 utilitarian: oil-stained Carhartt-equivalent work pants with multiple tool pockets, most containing actual tools; worn thermal undershirt visible at the collar; oversized gray or brown work shirt that hangs loose enough to move in; unlaced steel-toed boots caked with salvage yard detritus; faded canvas cap with a stitched patch where the original logo was removed; a grease-stained rag permanently tucked into her waistband; no jewelry, no fashion-forward choices, everything chosen for durability and function"
-  },
-  "image_prompt": "Meera Tetteh-Deshpande, 174cm tall lean dismantler tech, rich deep golden-brown skin tone from Sub-Saharan African and South Asian heritage, angular face with high prominent cheekbones, dark expressive eyes with Southeast Asian width, thick dark coils shoulder-length, wearing oil-stained utilitarian work clothing, oversized gray work shirt, steel-toed boots, faded canvas cap, right palm with jury-rigged titanium retractable tool-array fingers visible, burn scar on left forearm, grease-stained hands, practical forward-leaning posture, gritty salvage yard setting with industrial debris, warm artificial work lights casting shadows, GLMZ, realistic gritty aesthetic --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 46.9,
-    "South Asian": 31.2,
-    "Southeast Asian": 11.8,
-    "Northern European": 10.1
-  },
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "East African": {
-        "Ethiopian": 46.9
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 31.2
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Tagalog": 11.8
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Danish": 10.1
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a6d07f1d911b0f326f5750f6",
+    "rating":  80,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Meera Tetteh-Deshpande",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Chop shop operator and parts fence working out of a salvage yard in Shallowgrave",
+    "age":  19,
+    "status":  "active",
+    "location":  "Shallowgrave — Bergqvist \u0026 Sons Salvage (the sons don\u0027t exist), a working chop shop and legitimate scrap dealer on the western run of the Sump Road",
+    "description":  "Meera Tetteh-Deshpande is nineteen and looks it — sharp-faced and still growing into her height, with grease that never fully comes out of the creases of her knuckles and a habit of wiping her hands on a rag she keeps tucked in her waistband. Her skin is a warm medium brown, her hair grown in thick loose coils she shoves under a cap when she\u0027s working and lets fall to her shoulders otherwise. Her one visible mod is a retractable tool-array in her right hand — three thin probe fingers that extend from the palm for accessing component ports — which she got secondhand from a chop-house in Ironhaven and jury-rigged to fit her hand herself. She\u0027s quietly proud of that.\n\nSio inherited the salvage yard at sixteen when her father died of a respiratory illness from years of unfiltered sump exposure. She turned it from a struggling legal operation into a profitable illegal one inside a year out of sheer necessity, and she\u0027s been running it that way since. She is not reckless — she runs a very careful shop, clean books on the legal side, and clear sourcing rules for what she\u0027ll accept — but she is young and the combination of competence and overconfidence occasionally creates problems. She has three employees: an older mechanic named Duru who knew her father and probably knows more about the illegal side than he lets on, and two teenagers from the neighborhood she pays above-market because she remembers what it felt like to need money badly at sixteen.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "losing the yard — it\u0027s all she has of her father and also her only income",
+                                          "making a bad call that gets one of her teenage employees hurt"
+                                      ],
+                       "core_desires":  [
+                                            "to make the yard genuinely profitable enough to go fully legitimate eventually",
+                                            "to be taken seriously by the older operators who still see her as a kid"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "physical work as anxiety management — she takes things apart and puts them back together when she\u0027s stressed",
+                                                 "bravado as pre-emptive defense"
+                                             ],
+                       "blind_spots":  [
+                                           "her loyalty to the two teenage employees makes her predictable to anyone who wants leverage over her",
+                                           "she\u0027s built a business model that requires constant growth to stay ahead of the gangs, and she hasn\u0027t thought about the ceiling"
+                                       ],
+                       "secret":  "She found a Ferrogate Transit black-box recorder in a stripped vehicle two months ago that contains footage of a transit security officer committing a serious crime. She hasn\u0027t decided what to do with it. It\u0027s wrapped in a cloth under the floor of her office."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, technical, deeply neighborhood — heavy in salvage and mechanical slang; swears with creativity",
+                            "cadence":  "Quick and often overlapping itself; she thinks faster than she edits",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s not how it works\u0027",
+                                                "starts sentences with \u0027Look—\u0027 when she\u0027s about to correct someone"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Look, I don\u0027t ask where it came from. I ask what it is, what condition it\u0027s in, and whether it\u0027s going to bring someone to my door. You tell me no on that last one, we have a conversation.\u0027",
+                                                  "\u0027My father ran this yard for twenty years without cutting a single corner. I cut corners. I\u0027m not him. But this place is still standing, so.\u0027"
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The Ferrogate Transit black-box is burning a hole in her floor and she\u0027s looking for someone she can trust to tell her what it\u0027s worth and whether keeping it is going to get her killed",
+                        "One of her teenage employees has started skimming parts to sell independently to a scavenger gang, and Sio needs to resolve it without anyone getting hurt and without losing face"
+                    ],
+    "narrative_function":  "Local color and practical resource; can source vehicle parts, tech components, and stripped augmentation hardware; potential ally who trades favors for help with the scavenger gang pressure; represents the working young criminal who hasn\u0027t yet been destroyed by the system",
+    "augmentations":  "Retractable tool-array (right palm, secondhand and self-modified — three probe fingers, used for component diagnosis and access); no other augmentations",
+    "daily_life":  "Up before dawn to receive night deliveries before the sump road gets traffic; legal salvage business open 08:00-17:00; illegal intake happens in the locked rear yard after dark.",
+    "affiliation":  "Independent; fences primarily to a mid-level network connected to Gravesend Basin smuggling routes; has a tense but functional relationship with the local Shallowgrave scavenger gangs",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  7,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  6,
+                                 "expression":  5,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "chop shop operator",
+                               "fence",
+                               "young entrepreneur",
+                               "fiercely practical",
+                               "protective"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "No bioware — she won\u0027t chop organs, hard line, watched her father deteriorate from medical neglect and it\u0027s personal",
+                                              "Anyone who brings trouble to the yard gets blacklisted; the yard\u0027s safety is the primary rule"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Direct confrontation and renegotiation",
+                                                 "Refusing future business",
+                                                 "Reporting to the scavenger gang network that a client is untrustworthy (devastating to their operations)",
+                                                 "As last resort: disappearing the problematic merchandise and claiming it was never there"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Suspicious and quick to test; asks two or three slightly-too-specific questions to see how someone handles not knowing the answer",
+                                                   "friends":  "Unfussy and loyal; shows up with a wrench when something needs fixing; doesn\u0027t say emotional things out loud but does them visibly"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Starts taking apart something small and nearby — a pen, a component, anything",
+                                                "medium":  "Gets blunt to the point of rudeness; efficiency collapses into curtness",
+                                                "high":  "Goes very controlled and quiet; starts calculating out loud in a flat voice"
+                                            },
+                       "contradictions":  [
+                                              "Runs an illegal operation specifically to protect and care for the people around her, then insists she\u0027s in it only for the business"
+                                          ],
+                       "habits":  [
+                                      "Eats lunch on the roof of the main salvage building every day regardless of weather",
+                                      "Leaves a cracked circuit board at the small shrine to the E.L.F. called the Broken Engine at the yard\u0027s gate, first of every month",
+                                      "Keeps her father\u0027s salvage license framed inside the office even though it\u0027s no longer valid"
+                                  ],
+                       "breaking_points":  [
+                                               "Any harm coming to her two young employees",
+                                               "The discovery that someone has reported the yard\u0027s illegal operations to Ferrogate Transit security"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "1",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Shallowgrave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Shallowgrave to a Tongan-Guinean-Swedish family; father Setareki ran the salvage yard",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Father Setareki dies of sump-exposure respiratory disease; Sio takes over the yard at 16",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Converts the yard\u0027s back operation to illegal chop work within a year of taking over",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Finds the Ferrogate Transit black-box recorder; currently undecided on its use",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Sub-Saharan African (46.9%), South Asian (31.2%), Southeast Asian (11.8%), and Northern European (10.1%) — a striking pan-continental blend evident in her rich deep skin tone, the particular set of her cheekbones, and the complexity of her facial structure reflecting multiple ancestral lines",
+                                 "height_cm":  174,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and rangy with emerging muscularity in her shoulders and forearms from years of dismantling work; still has the gangly proportions of someone not quite finished growing into her frame",
+                                 "hair_color":  "Natural dark brown with warm undertones",
+                                 "hair_style":  "Thick, loose coils worn down to shoulder length when off-duty; habitually shoved under a grease-stained canvas cap during work",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown",
+                                 "skin_tone":  "Rich warm brown with golden undertones — a deep, luminous complexion reflecting the dominance of Sub-Saharan and South Asian ancestry; medium-to-deep depth with natural radiance that contrasts strikingly with the grime of her work",
+                                 "complexion":  "Angular face with high, defined cheekbones characteristic of her African and South Asian heritage; prominent nasal bridge with subtle refinement from Southeast Asian ancestry; dark expressive eyes set with characteristic Southeast Asian width; chronic grease stains embedded in the creases of her knuckles and under her fingernails despite frequent washing; sun-damaged from early-morning sump road exposure; minimal grooming beyond practicality",
+                                 "distinguishing_marks":  [
+                                                              "Faint burn scar on her left forearm from a component arc accident at age seventeen",
+                                                              "Callused palms and fingertips from handling corroded metal and precision diagnostics",
+                                                              "Grease ingrained into her skin in a pattern that suggests constant work contact"
+                                                          ],
+                                 "visible_augmentations":  "Retractable tool-array in right palm: three thin probe fingers that extend from the palm for component port access, visibly jury-rigged with mismatched titanium casing and hand-welded articulation joints; shows evidence of self-modification and repeated field repairs",
+                                 "posture_movement":  "Moves with practical efficiency, economical gestures honed by close work in tight spaces; frequently has her right hand half-extended as if reaching for tools; stands with weight shifted forward slightly, ready to move; habitual nervous tic of rubbing her right palm against her thigh",
+                                 "clothing_style":  "Tier 4-5 utilitarian: oil-stained Carhartt-equivalent work pants with multiple tool pockets, most containing actual tools; worn thermal undershirt visible at the collar; oversized gray or brown work shirt that hangs loose enough to move in; unlaced steel-toed boots caked with salvage yard detritus; faded canvas cap with a stitched patch where the original logo was removed; a grease-stained rag permanently tucked into her waistband; no jewelry, no fashion-forward choices, everything chosen for durability and function"
+                             },
+    "image_prompt":  "Meera Tetteh-Deshpande, 174cm tall lean dismantler tech, rich deep golden-brown skin tone from Sub-Saharan African and South Asian heritage, angular face with high prominent cheekbones, dark expressive eyes with Southeast Asian width, thick dark coils shoulder-length, wearing oil-stained utilitarian work clothing, oversized gray work shirt, steel-toed boots, faded canvas cap, right palm with jury-rigged titanium retractable tool-array fingers visible, burn scar on left forearm, grease-stained hands, practical forward-leaning posture, gritty salvage yard setting with industrial debris, warm artificial work lights casting shadows, GLMZ, realistic gritty aesthetic --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  46.9,
+                             "South Asian":  31.2,
+                             "Southeast Asian":  11.8,
+                             "Northern European":  10.1
+                         },
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ethiopian":  46.9
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  31.2
+                                                               }
+                                            },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Tagalog":  11.8
+                                                                 }
+                                                },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Danish":  10.1
+                                                                       }
+                                                  }
+                        }
 }

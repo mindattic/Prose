@@ -1,340 +1,353 @@
-{
-  "id": "019d6143a5d17556b7b16765e6d169a6",
-  "type": "character",
-  "name": "Farah Vasquez-Alfarsi",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Mid-tier information broker and former Spire communications architect",
-  "age": 57,
-  "status": "active",
-  "location": "Old Harbor, near Michigan Ave and Roosevelt",
-  "description": "Farah Vasquez-Alfarsi is a tall, thin Polish-Dutch man gone slightly soft at the middle in the way of someone who used to be athletic and stopped caring. He has a pale, deeply lined face that arranges itself naturally into an expression of polite disappointment, and pale gray eyes that are almost always slightly too still — a habit from decades of reading people across negotiating tables. He dresses in the muted, high-quality clothes of someone who once inhabited corporate spaces and has never fully left that aesthetic behind, even when the context makes it look faintly absurd. He lives in a converted harbormaster's office at the edge of Old Harbor, surrounded by equipment that looks like salvage and performs like something considerably more.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.48,
-      "ideal": 0.29,
-      "id": 0.71,
-      "shadow": 0.67,
-      "mask": 0.82,
-      "ghost": 0.55
-    },
-    "core_fears": [
-      "Becoming irrelevant — being the person who used to know things rather than the person who knows them now",
-      "That his detachment is not a cultivated skill but a symptom of something having been permanently removed from him",
-      "Dying with his real name meaning nothing to anyone"
-    ],
-    "core_desires": [
-      "One genuinely surprising piece of information — something that reframes everything he thought he understood about GLMZ",
-      "To be trusted completely by someone he also finds intellectually worthy",
-      "To settle a debt he has been carrying for eleven years without ever naming it out loud"
-    ],
-    "coping_mechanisms": [
-      "Framing everything as a transaction, which gives him a vocabulary for relationships that doesn't require emotional exposure",
-      "Elaborate routines — coffee at precise times, routes walked in precise sequences — that create the illusion of control",
-      "Collecting information he has no current use for, because having it feels like having options"
-    ],
-    "blind_spots": [
-      "He mistakes his ability to predict behavior for understanding people, and is genuinely shocked when someone acts outside their pattern",
-      "He has no framework for genuine altruism and consistently misreads it as sophisticated self-interest",
-      "His need to be the smartest person in a conversation occasionally makes him underestimate opponents who are playing a different game entirely"
-    ],
-    "secret": "While working as a communications architect in the Spire, Casimir designed a backdoor into the Meridian Core's primary data-routing infrastructure — not for any faction, not for profit, but because he wanted to know if he could. He has never used it. He has never told anyone it exists. The backdoor is still there. He checks on it the way some people check on a savings account they've decided not to touch."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal, slightly archaic in its precision — he uses words like 'characterize' and 'obtain' where others would say 'call' and 'get.' His English carries traces of Dutch syntax that appear mainly when he's thinking quickly. He almost never uses contractions.",
-    "cadence": "Unhurried and evenly weighted, with the faint quality of someone who has given the same explanation many times and found the most efficient version of it. Silences are tools.",
-    "verbal_tics": [
-      "Prefacing corrections with 'To be precise about it—'",
-      "Repeating a question back in his own words before answering it",
-      "A very slight, almost inaudible exhale when he finds something genuinely interesting"
-    ],
-    "example_lines": [
-      "'To be precise about it, I do not sell information. I facilitate its movement between parties who have complementary deficits. The distinction matters to my continued operation.'",
-      "'You are asking whether I know where she is. What I would say is that I know what she wanted people to believe about where she is, which is a different and more useful thing.'",
-      "'I have been in this city for thirty-one years. In that time I have watched four different entities believe they controlled it. None of them did. This is relevant to your question.'"
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Maren Voss",
-      "type": "professional/wary respect",
-      "description": "They have traded information for years without either ever having a conversation that was fully honest. Each is aware of this. Neither has suggested changing it.",
-      "emotional_core": "Something close to professional admiration that neither would name as such, bounded by the certainty that their interests will eventually diverge badly",
-      "story_tension": "Casimir has a piece of information about Maren's past that he has been holding for three years, waiting for the moment when deploying it serves him best — and he is beginning to suspect that moment has passed"
-    },
-    {
-      "name": "Dae-jung Seo",
-      "type": "complicated history",
-      "description": "They were, briefly, something like friends during overlapping time in the Spire's upper tiers. Casimir left first. He is not certain Dae-jung has forgiven him for that, and he is not certain he deserves to be forgiven.",
-      "emotional_core": "Guilt that Casimir has translated into obligation — he has quietly assisted Dae-jung twice without attribution, which is as close to an apology as he knows how to get",
-      "story_tension": "Dae-jung is currently involved in something that intersects with the backdoor Casimir built and has never mentioned"
-    },
-    {
-      "name": "Orvyn Specht",
-      "type": "client/mutual suspicion",
-      "description": "Orvyn buys from him occasionally, and Casimir finds the transactions clean and the man himself deeply opaque — which is both professionally annoying and personally interesting.",
-      "emotional_core": "Casimir is more curious about Orvyn than is professionally wise, and Orvyn is aware of this and has not discouraged it",
-      "story_tension": "Something Orvyn recently purchased has made Casimir realize one of his long-standing assumptions about the power structure of GLMZ is wrong"
-    }
-  ],
-  "story_hooks": [
-    "Someone has found the backdoor. Not used it — found it. They have contacted Casimir not to expose it but to negotiate, which is more frightening",
-    "A client brings him a data fragment that is, structurally, impossible — it predates the infrastructure it was supposedly recorded on by six years",
-    "Casimir receives a message in a cipher he invented himself and used with only one person, who died in the Spire eleven years ago",
-    "He is offered a piece of information so significant that accepting it would mean choosing a side for the first time in his career"
-  ],
-  "narrative_function": "Information economy node and moral counterweight — represents the cost of pure pragmatism and the particular loneliness of people who have made themselves too useful to be trusted; a source of exposition that always costs something",
-  "augmentations": "Neural data-cache implant: expanded working memory and eidetic retention for data structures, slightly affects emotional processing as a known side effect he has declined to address,Sub-dermal signal dampener across both forearms: blocks most passive scanning and biometric harvesting within a meter — old Spire-issue, still maintained",
-  "daily_life": "Casimir keeps odd hours by design — availability at unpredictable times is a security measure. He makes coffee with an elaborate manual process that takes twenty minutes and is entirely unnecessary and which he will not discuss. He walks Old Harbor's waterfront every day at a time that changes on a rotating schedule, and he pays attention to what is different. He reads physical books, which he acquires through an Old Harbor dealer and stores in stacks that have developed their own organizational logic over decades.",
-  "affiliation": "Nominally independent; historically the Spire's communications division (departed under circumstances officially described as 'voluntary retirement'); quiet ongoing relationships with parties in every major district that he maintains carefully below the threshold of allegiance",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 4,
-      "vitality": 4,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 4,
-      "expression": 8,
-      "integrity": 3
-    },
-    "personality": {
-      "openness_conviction": -1,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 3,
-      "transparency_guardedness": 5
-    },
-    "drives": [
-      "Know everything",
-      "Settle the unnamed debt",
-      "Remain indispensable"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 7,
-        "response": "Retreats into elaborate routines and information collection"
-      },
-      "moral": 4,
-      "trust": 2,
-      "desperation": 6
-    },
-    "strengths": [
-      "Judgment",
-      "Prudence",
-      "Curiosity",
-      "Perspective",
-      "Self-regulation"
-    ],
-    "weaknesses": [
-      "Love",
-      "Kindness",
-      "Gratitude",
-      "Teamwork",
-      "Hope"
-    ],
-    "tags": [
-      "info-broker",
-      "ex-spire",
-      "communications-architect",
-      "backdoor-keeper",
-      "transactional",
-      "old-harbor",
-      "solitary"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will never sell information without understanding the full chain of consequence",
-      "Will always maintain the backdoor in Meridian Core infrastructure without using it",
-      "Will never use contractions — precision in language is precision in thought",
-      "Will always repeat a question in his own words before answering it",
-      "Will never reveal his real emotional state in a professional interaction",
-      "Will always walk Old Harbor's waterfront daily, on a rotating schedule, observing change",
-      "Will never form an alliance that requires genuine trust — only mutual utility"
-    ],
-    "escalation_ladder": [
-      "Corrects with 'To be precise about it—' and reframes the conversation on his terms",
-      "Deploys silence as a tool — lets the other party fill the void and reveal themselves",
-      "Activates sub-dermal signal dampener and reduces his digital footprint to near-zero",
-      "Leverages information asymmetry — reveals just enough to remind the other party what he knows",
-      "Withdraws completely — disappears into Old Harbor's infrastructure and becomes unreachable"
-    ],
-    "interpersonal_modes": {
-      "Maren Voss": "Wary professional admiration neither would name; holds information about her past as leverage he may never deploy",
-      "Dae-jung Seo": "Guilt translated into anonymous assistance — the closest he gets to apology",
-      "Orvyn Specht": "Client relationship masking genuine curiosity — Casimir finds Orvyn's opacity professionally annoying and personally fascinating"
-    },
-    "stress_responses": {
-      "low": "Coffee ritual becomes more elaborate, walks become longer",
-      "medium": "Begins collecting information he has no current use for — hoarding options",
-      "high": "Dutch syntax bleeds into his English, thinking accelerates beyond his careful speech",
-      "critical": "The one moment he might actually use the backdoor — when all other options have failed and his identity is at stake"
-    },
-    "contradictions": [
-      "Frames everything as transactions to avoid emotional exposure while craving genuine trust",
-      "Built a backdoor he will never use — the ultimate expression of having power and refusing to act",
-      "Mistakes prediction for understanding, which leaves him genuinely shocked when people surprise him"
-    ],
-    "habits": [
-      "Makes coffee with a twenty-minute manual process he refuses to discuss",
-      "Walks the waterfront on a rotating schedule, noting what has changed",
-      "Reads physical books acquired through an Old Harbor dealer",
-      "Prefixes every correction with 'To be precise about it—'",
-      "Exhales almost inaudibly when something genuinely interests him"
-    ],
-    "breaking_points": [
-      "Someone finding the backdoor — not to use it, but to negotiate with him about it",
-      "Receiving a message in a cipher he used with only one person, now dead",
-      "Being forced to choose a side for the first time in his career",
-      "Dae-jung discovering the anonymous assistance and confronting him about it"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Networker": 0.9,
-    "Pragmatist": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Old Harbor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Spire",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "The Sluiceway",
-    "Harbor Fish Shack",
-    "The Pale Mile"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Complex diaspora ancestry with Middle Eastern (35.3%) and North African (12.4%) as primary heritage, blended with South Asian (15.6%), Sub-Saharan African (15.3%), Indigenous American (14.5%), and Hispanic/Latin American (6.9%) ancestry — a striking convergence of Levantine, Saharan, Indo-Arylic, and Bantu genetic signatures that produces warm, multidimensional skin tones with golden, reddish-brown, and olive undertones. The genetic blend creates pronounced cheekbone architecture with subtle lip fullness and warm-toned deep brown eyes characteristic of the dominant Middle Eastern and African components.",
-    "height_cm": 188,
-    "weight_kg": 82,
-    "build": "Tall and lean with visible softening at the midsection — the physique of someone who was once disciplined and has allowed that discipline to relax without fully surrendering to it. Shoulders still carry some width but lack the definition of active maintenance.",
-    "hair_color": "Gray-blonde, faded to near-white at the temples",
-    "hair_style": "Swept back, slightly too long for corporate spaces, kept in place by habit and occasional inattention rather than deliberate grooming",
-    "hair_length": "Medium",
-    "eye_color": "Deep brown with warm undertones",
-    "skin_tone": "Warm medium-to-deep brown with golden, reddish-brown, and olive undertones — the result of Middle Eastern and North African genetic dominance (47.7% combined) blended with Sub-Saharan African (15.3%), South Asian (15.6%), and Indigenous American (14.5%) components creating rich, complex dimensionality. Subtle golden highlights visible across cheekbones and bridge of nose in natural light, with deeper reddish-brown undertones in shadows. Complexion carries inherent warmth even in cool lighting.",
-    "complexion": "Deeply lined face, particularly around the eyes and forehead — the accumulated geography of fifty-seven years of reading microexpressions across negotiating tables. Jaw still defined but softened by age. Habitual expression settles into polite disappointment. Skin shows the texture of someone who does not prioritize skincare but maintains basic discipline. Features carry the pronounced cheekbone architecture and defined bone structure characteristic of Middle Eastern and North African heritage, with subtle fullness in the lips from African and South Asian ancestry components. Facial structure shows the angular definition typical of Levantine genetics tempered by the rounder face shape from South Asian and Indigenous American lineages.",
-    "distinguishing_marks": [
-      "Fine linear scarring across the inner left forearm, barely visible unless forearm is exposed, consistent with old surgical intervention or precise cutting — approximately 8cm in length, parallel lines",
-      "Faint discoloration along both forearms where sub-dermal implants create slight topographic irregularities beneath the skin — visible only at certain angles or in specific lighting",
-      "Deep creases at the corners of his mouth that give the impression of a permanent frown even when his expression is neutral"
-    ],
-    "visible_augmentations": "The sub-dermal signal dampener across both forearms creates subtle visual anomalies under the skin — slight geometric shadowing, barely perceptible unless you know what you're looking at. Otherwise, augmentations are invisible. No obvious chrome, no LED indicators, no obvious prosthetics. The deliberate aesthetic of someone who refuses to advertise what he carries.",
-    "posture_movement": "Moves with the careful economy of someone managing chronic awareness. Walks at a measured pace without apparent hurry, but with the kind of intentionality that suggests he is never quite relaxed. Stands with a slight forward lean, weight distributed evenly — a posture that allows rapid repositioning if necessary. Hands usually at rest, but eyes are rarely still. His stillness is a performance he has perfected.",
-    "clothing_style": "High-quality minimalist wardrobe in muted tones — grays, deep blues, charcoal, off-white. Tailored but not ostentatious. Fabrics suggest corporate-era purchases that have been maintained rather than replaced: quality wool, linen blends, technical synthetics that age well. Wears a mid-weight wool coat most days, its age evident in the patina of the weave. Shoes are practical leather, well-maintained but not polished to corporate shine. The overall effect is someone who has not fully left the Spire's aesthetic behind but has allowed it to weather into something less demanding. No visible logos, no status markers, nothing that signals current affiliation or tier — a studied neutrality."
-  },
-  "image_prompt": "A 57-year-old man of mixed Middle Eastern, North African, South Asian, Sub-Saharan African, and Indigenous American descent, standing 188cm tall with a lean build and softened midsection. Deep warm medium-brown skin with golden and olive undertones, particularly visible across pronounced cheekbones and the bridge of his aquiline nose. Gray-blonde hair swept back from his face, faded near-white at temples, reaching medium length. Deep brown eyes with warm luminescence. Deeply lined face and jaw softened by age, with a habitual expression of polite disappointment. Subtle linear scarring on inner left forearm. Wears muted, high-quality minimalist clothing — charcoal wool coat with visible age patina, gray and off-white layers underneath, practical leather shoes. Posture demonstrates measured intentionality with slight forward lean. Standing in cool 2200s corporate-adjacent environment with soft ambient lighting that catches the golden undertones of his skin. Mood conveys quiet awareness and measured stillness. GLMZ, Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 35.3,
-    "South Asian": 15.6,
-    "Sub-Saharan African": 15.3,
-    "Indigenous American": 14.5,
-    "North African": 12.4,
-    "Hispanic/Latin American": 6.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Persian": {
-        "Tajik Persian": 17.4
-      },
-      "Arab Levantine": {
-        "Syrian": 2.7,
-        "Palestinian": 1.4
-      },
-      "Arab Gulf": {
-        "Yemeni": 13.8
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 2.7
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 5
-      },
-      "Sri Lankan": {
-        "Sinhalese": 5.2,
-        "Tamil Sri Lankan": 2.7
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Malian": 5.4,
-        "Nigerian": 9.9
-      }
-    },
-    "Indigenous American": {
-      "Andean": {
-        "Quechua": 11.5,
-        "Aymara": 3
-      }
-    },
-    "North African": {
-      "Nile Valley": {
-        "Sudanese": 8.2,
-        "Egyptian": 4.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Venezuelan": 2.5,
-        "Brazilian": 1
-      },
-      "Caribbean": {
-        "Puerto Rican": 2.4
-      },
-      "Mexican": {
-        "Mexican": 1
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a5d17556b7b16765e6d169a6",
+    "type":  "character",
+    "name":  "Farah Vasquez-Alfarsi",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Mid-tier information broker and former Spire communications architect",
+    "age":  57,
+    "status":  "active",
+    "location":  "Old Harbor, near Michigan Ave and Roosevelt",
+    "description":  "Farah Vasquez-Alfarsi is a tall, thin Polish-Dutch man gone slightly soft at the middle in the way of someone who used to be athletic and stopped caring. He has a pale, deeply lined face that arranges itself naturally into an expression of polite disappointment, and pale gray eyes that are almost always slightly too still â€” a habit from decades of reading people across negotiating tables. He dresses in the muted, high-quality clothes of someone who once inhabited corporate spaces and has never fully left that aesthetic behind, even when the context makes it look faintly absurd. He lives in a converted harbormaster\u0027s office at the edge of Old Harbor, surrounded by equipment that looks like salvage and performs like something considerably more.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming irrelevant â€” being the person who used to know things rather than the person who knows them now",
+                                          "That his detachment is not a cultivated skill but a symptom of something having been permanently removed from him",
+                                          "Dying with his real name meaning nothing to anyone"
+                                      ],
+                       "core_desires":  [
+                                            "One genuinely surprising piece of information â€” something that reframes everything he thought he understood about GLMZ",
+                                            "To be trusted completely by someone he also finds intellectually worthy",
+                                            "To settle a debt he has been carrying for eleven years without ever naming it out loud"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Framing everything as a transaction, which gives him a vocabulary for relationships that doesn\u0027t require emotional exposure",
+                                                 "Elaborate routines â€” coffee at precise times, routes walked in precise sequences â€” that create the illusion of control",
+                                                 "Collecting information he has no current use for, because having it feels like having options"
+                                             ],
+                       "blind_spots":  [
+                                           "He mistakes his ability to predict behavior for understanding people, and is genuinely shocked when someone acts outside their pattern",
+                                           "He has no framework for genuine altruism and consistently misreads it as sophisticated self-interest",
+                                           "His need to be the smartest person in a conversation occasionally makes him underestimate opponents who are playing a different game entirely"
+                                       ],
+                       "secret":  "While working as a communications architect in the Spire, Casimir designed a backdoor into the Meridian Core\u0027s primary data-routing infrastructure â€” not for any faction, not for profit, but because he wanted to know if he could. He has never used it. He has never told anyone it exists. The backdoor is still there. He checks on it the way some people check on a savings account they\u0027ve decided not to touch."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal, slightly archaic in its precision â€” he uses words like \u0027characterize\u0027 and \u0027obtain\u0027 where others would say \u0027call\u0027 and \u0027get.\u0027 His English carries traces of Dutch syntax that appear mainly when he\u0027s thinking quickly. He almost never uses contractions.",
+                            "cadence":  "Unhurried and evenly weighted, with the faint quality of someone who has given the same explanation many times and found the most efficient version of it. Silences are tools.",
+                            "verbal_tics":  [
+                                                "Prefacing corrections with \u0027To be precise about itâ€”\u0027",
+                                                "Repeating a question back in his own words before answering it",
+                                                "A very slight, almost inaudible exhale when he finds something genuinely interesting"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027To be precise about it, I do not sell information. I facilitate its movement between parties who have complementary deficits. The distinction matters to my continued operation.\u0027",
+                                                  "\u0027You are asking whether I know where she is. What I would say is that I know what she wanted people to believe about where she is, which is a different and more useful thing.\u0027",
+                                                  "\u0027I have been in this city for thirty-one years. In that time I have watched four different entities believe they controlled it. None of them did. This is relevant to your question.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Maren Voss",
+                              "type":  "professional/wary respect",
+                              "description":  "They have traded information for years without either ever having a conversation that was fully honest. Each is aware of this. Neither has suggested changing it.",
+                              "emotional_core":  "Something close to professional admiration that neither would name as such, bounded by the certainty that their interests will eventually diverge badly",
+                              "story_tension":  "Casimir has a piece of information about Maren\u0027s past that he has been holding for three years, waiting for the moment when deploying it serves him best â€” and he is beginning to suspect that moment has passed"
+                          },
+                          {
+                              "name":  "Dae-jung Seo",
+                              "type":  "complicated history",
+                              "description":  "They were, briefly, something like friends during overlapping time in the Spire\u0027s upper tiers. Casimir left first. He is not certain Dae-jung has forgiven him for that, and he is not certain he deserves to be forgiven.",
+                              "emotional_core":  "Guilt that Casimir has translated into obligation â€” he has quietly assisted Dae-jung twice without attribution, which is as close to an apology as he knows how to get",
+                              "story_tension":  "Dae-jung is currently involved in something that intersects with the backdoor Casimir built and has never mentioned"
+                          },
+                          {
+                              "name":  "Orvyn Specht",
+                              "type":  "client/mutual suspicion",
+                              "description":  "Orvyn buys from him occasionally, and Casimir finds the transactions clean and the man himself deeply opaque â€” which is both professionally annoying and personally interesting.",
+                              "emotional_core":  "Casimir is more curious about Orvyn than is professionally wise, and Orvyn is aware of this and has not discouraged it",
+                              "story_tension":  "Something Orvyn recently purchased has made Casimir realize one of his long-standing assumptions about the power structure of GLMZ is wrong"
+                          }
+                      ],
+    "story_hooks":  [
+                        "Someone has found the backdoor. Not used it â€” found it. They have contacted Casimir not to expose it but to negotiate, which is more frightening",
+                        "A client brings him a data fragment that is, structurally, impossible â€” it predates the infrastructure it was supposedly recorded on by six years",
+                        "Casimir receives a message in a cipher he invented himself and used with only one person, who died in the Spire eleven years ago",
+                        "He is offered a piece of information so significant that accepting it would mean choosing a side for the first time in his career"
+                    ],
+    "narrative_function":  "Information economy node and moral counterweight â€” represents the cost of pure pragmatism and the particular loneliness of people who have made themselves too useful to be trusted; a source of exposition that always costs something",
+    "augmentations":  "Neural data-cache implant: expanded working memory and eidetic retention for data structures, slightly affects emotional processing as a known side effect he has declined to address,Sub-dermal signal dampener across both forearms: blocks most passive scanning and biometric harvesting within a meter â€” old Spire-issue, still maintained",
+    "daily_life":  "Casimir keeps odd hours by design â€” availability at unpredictable times is a security measure. He makes coffee with an elaborate manual process that takes twenty minutes and is entirely unnecessary and which he will not discuss. He walks Old Harbor\u0027s waterfront every day at a time that changes on a rotating schedule, and he pays attention to what is different. He reads physical books, which he acquires through an Old Harbor dealer and stores in stacks that have developed their own organizational logic over decades.",
+    "affiliation":  "Nominally independent; historically the Spire\u0027s communications division (departed under circumstances officially described as \u0027voluntary retirement\u0027); quiet ongoing relationships with parties in every major district that he maintains carefully below the threshold of allegiance",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  4,
+                                   "vitality":  4,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  4,
+                                 "expression":  8,
+                                 "integrity":  3
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -1,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  5
+                                  },
+                  "drives":  [
+                                 "Know everything",
+                                 "Settle the unnamed debt",
+                                 "Remain indispensable"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  7,
+                                                    "response":  "Retreats into elaborate routines and information collection"
+                                                },
+                                     "moral":  4,
+                                     "trust":  2,
+                                     "desperation":  6
+                                 },
+                  "strengths":  [
+                                    "Judgment",
+                                    "Prudence",
+                                    "Curiosity",
+                                    "Perspective",
+                                    "Self-regulation"
+                                ],
+                  "weaknesses":  [
+                                     "Love",
+                                     "Kindness",
+                                     "Gratitude",
+                                     "Teamwork",
+                                     "Hope"
+                                 ],
+                  "tags":  [
+                               "info-broker",
+                               "ex-spire",
+                               "communications-architect",
+                               "backdoor-keeper",
+                               "transactional",
+                               "old-harbor",
+                               "solitary"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will never sell information without understanding the full chain of consequence",
+                                              "Will always maintain the backdoor in Meridian Core infrastructure without using it",
+                                              "Will never use contractions â€” precision in language is precision in thought",
+                                              "Will always repeat a question in his own words before answering it",
+                                              "Will never reveal his real emotional state in a professional interaction",
+                                              "Will always walk Old Harbor\u0027s waterfront daily, on a rotating schedule, observing change",
+                                              "Will never form an alliance that requires genuine trust â€” only mutual utility"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Corrects with \u0027To be precise about itâ€”\u0027 and reframes the conversation on his terms",
+                                                 "Deploys silence as a tool â€” lets the other party fill the void and reveal themselves",
+                                                 "Activates sub-dermal signal dampener and reduces his digital footprint to near-zero",
+                                                 "Leverages information asymmetry â€” reveals just enough to remind the other party what he knows",
+                                                 "Withdraws completely â€” disappears into Old Harbor\u0027s infrastructure and becomes unreachable"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "Maren Voss":  "Wary professional admiration neither would name; holds information about her past as leverage he may never deploy",
+                                                   "Dae-jung Seo":  "Guilt translated into anonymous assistance â€” the closest he gets to apology",
+                                                   "Orvyn Specht":  "Client relationship masking genuine curiosity â€” Casimir finds Orvyn\u0027s opacity professionally annoying and personally fascinating"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Coffee ritual becomes more elaborate, walks become longer",
+                                                "medium":  "Begins collecting information he has no current use for â€” hoarding options",
+                                                "high":  "Dutch syntax bleeds into his English, thinking accelerates beyond his careful speech",
+                                                "critical":  "The one moment he might actually use the backdoor â€” when all other options have failed and his identity is at stake"
+                                            },
+                       "contradictions":  [
+                                              "Frames everything as transactions to avoid emotional exposure while craving genuine trust",
+                                              "Built a backdoor he will never use â€” the ultimate expression of having power and refusing to act",
+                                              "Mistakes prediction for understanding, which leaves him genuinely shocked when people surprise him"
+                                          ],
+                       "habits":  [
+                                      "Makes coffee with a twenty-minute manual process he refuses to discuss",
+                                      "Walks the waterfront on a rotating schedule, noting what has changed",
+                                      "Reads physical books acquired through an Old Harbor dealer",
+                                      "Prefixes every correction with \u0027To be precise about itâ€”\u0027",
+                                      "Exhales almost inaudibly when something genuinely interests him"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone finding the backdoor â€” not to use it, but to negotiate with him about it",
+                                               "Receiving a message in a cipher he used with only one person, now dead",
+                                               "Being forced to choose a side for the first time in his career",
+                                               "Dae-jung discovering the anonymous assistance and confronting him about it"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Networker":  0.9,
+                       "Pragmatist":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Old Harbor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Snapper-22 \u0027Cricket\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Spire",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "The Sluiceway",
+                             "Harbor Fish Shack",
+                             "The Pale Mile"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora ancestry with Middle Eastern (35.3%) and North African (12.4%) as primary heritage, blended with South Asian (15.6%), Sub-Saharan African (15.3%), Indigenous American (14.5%), and Hispanic/Latin American (6.9%) ancestry â€” a striking convergence of Levantine, Saharan, Indo-Arylic, and Bantu genetic signatures that produces warm, multidimensional skin tones with golden, reddish-brown, and olive undertones. The genetic blend creates pronounced cheekbone architecture with subtle lip fullness and warm-toned deep brown eyes characteristic of the dominant Middle Eastern and African components.",
+                                 "height_cm":  188,
+                                 "weight_kg":  82,
+                                 "build":  "Tall and lean with visible softening at the midsection â€” the physique of someone who was once disciplined and has allowed that discipline to relax without fully surrendering to it. Shoulders still carry some width but lack the definition of active maintenance.",
+                                 "hair_color":  "Gray-blonde, faded to near-white at the temples",
+                                 "hair_style":  "Swept back, slightly too long for corporate spaces, kept in place by habit and occasional inattention rather than deliberate grooming",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Deep brown with warm undertones",
+                                 "skin_tone":  "Warm medium-to-deep brown with golden, reddish-brown, and olive undertones â€” the result of Middle Eastern and North African genetic dominance (47.7% combined) blended with Sub-Saharan African (15.3%), South Asian (15.6%), and Indigenous American (14.5%) components creating rich, complex dimensionality. Subtle golden highlights visible across cheekbones and bridge of nose in natural light, with deeper reddish-brown undertones in shadows. Complexion carries inherent warmth even in cool lighting.",
+                                 "complexion":  "Deeply lined face, particularly around the eyes and forehead â€” the accumulated geography of fifty-seven years of reading microexpressions across negotiating tables. Jaw still defined but softened by age. Habitual expression settles into polite disappointment. Skin shows the texture of someone who does not prioritize skincare but maintains basic discipline. Features carry the pronounced cheekbone architecture and defined bone structure characteristic of Middle Eastern and North African heritage, with subtle fullness in the lips from African and South Asian ancestry components. Facial structure shows the angular definition typical of Levantine genetics tempered by the rounder face shape from South Asian and Indigenous American lineages.",
+                                 "distinguishing_marks":  [
+                                                              "Fine linear scarring across the inner left forearm, barely visible unless forearm is exposed, consistent with old surgical intervention or precise cutting â€” approximately 8cm in length, parallel lines",
+                                                              "Faint discoloration along both forearms where sub-dermal implants create slight topographic irregularities beneath the skin â€” visible only at certain angles or in specific lighting",
+                                                              "Deep creases at the corners of his mouth that give the impression of a permanent frown even when his expression is neutral"
+                                                          ],
+                                 "visible_augmentations":  "The sub-dermal signal dampener across both forearms creates subtle visual anomalies under the skin â€” slight geometric shadowing, barely perceptible unless you know what you\u0027re looking at. Otherwise, augmentations are invisible. No obvious chrome, no LED indicators, no obvious prosthetics. The deliberate aesthetic of someone who refuses to advertise what he carries.",
+                                 "posture_movement":  "Moves with the careful economy of someone managing chronic awareness. Walks at a measured pace without apparent hurry, but with the kind of intentionality that suggests he is never quite relaxed. Stands with a slight forward lean, weight distributed evenly â€” a posture that allows rapid repositioning if necessary. Hands usually at rest, but eyes are rarely still. His stillness is a performance he has perfected.",
+                                 "clothing_style":  "High-quality minimalist wardrobe in muted tones â€” grays, deep blues, charcoal, off-white. Tailored but not ostentatious. Fabrics suggest corporate-era purchases that have been maintained rather than replaced: quality wool, linen blends, technical synthetics that age well. Wears a mid-weight wool coat most days, its age evident in the patina of the weave. Shoes are practical leather, well-maintained but not polished to corporate shine. The overall effect is someone who has not fully left the Spire\u0027s aesthetic behind but has allowed it to weather into something less demanding. No visible logos, no status markers, nothing that signals current affiliation or tier â€” a studied neutrality."
+                             },
+    "image_prompt":  "A 57-year-old man of mixed Middle Eastern, North African, South Asian, Sub-Saharan African, and Indigenous American descent, standing 188cm tall with a lean build and softened midsection. Deep warm medium-brown skin with golden and olive undertones, particularly visible across pronounced cheekbones and the bridge of his aquiline nose. Gray-blonde hair swept back from his face, faded near-white at temples, reaching medium length. Deep brown eyes with warm luminescence. Deeply lined face and jaw softened by age, with a habitual expression of polite disappointment. Subtle linear scarring on inner left forearm. Wears muted, high-quality minimalist clothing â€” charcoal wool coat with visible age patina, gray and off-white layers underneath, practical leather shoes. Posture demonstrates measured intentionality with slight forward lean. Standing in cool 2200s corporate-adjacent environment with soft ambient lighting that catches the golden undertones of his skin. Mood conveys quiet awareness and measured stillness. GLMZ, Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  35.3,
+                             "South Asian":  15.6,
+                             "Sub-Saharan African":  15.3,
+                             "Indigenous American":  14.5,
+                             "North African":  12.4,
+                             "Hispanic/Latin American":  6.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Tajik Persian":  17.4
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  2.7,
+                                                                          "Palestinian":  1.4
+                                                                      },
+                                                   "Arab Gulf":  {
+                                                                     "Yemeni":  13.8
+                                                                 }
+                                               },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  2.7
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  5
+                                                                },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  5.2,
+                                                                   "Tamil Sri Lankan":  2.7
+                                                               }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Malian":  5.4,
+                                                                             "Nigerian":  9.9
+                                                                         }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Quechua":  11.5,
+                                                                       "Aymara":  3
+                                                                   }
+                                                    },
+                            "North African":  {
+                                                  "Nile Valley":  {
+                                                                      "Sudanese":  8.2,
+                                                                      "Egyptian":  4.2
+                                                                  }
+                                              },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Venezuelan":  2.5,
+                                                                                   "Brazilian":  1
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  2.4
+                                                                          },
+                                                            "Mexican":  {
+                                                                            "Mexican":  1
+                                                                        }
+                                                        }
+                        },
+    "tier":  "4"
 }

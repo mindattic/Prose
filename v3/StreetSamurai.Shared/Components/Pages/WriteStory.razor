@@ -3,7 +3,8 @@
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
 @inject StoryStarterService Starter
-@inject IStoryBlockRepository Repo
+@inject IChapterRepository Repo
+@inject IBookRepository BookRepo
 @inject NavigationManager Nav
 @inject ElevenLabsTtsService TtsSvc
 @inject WindowsTtsService DraftTts
@@ -28,8 +29,33 @@
 @inject IJSRuntime JS
 @implements IDisposable
 
-@* ── Title + Save ─────────────────────────────────────── *@
+@* Co-writer drawer pins to the right edge whenever this chapter belongs to a book. *@
+@if (book != null)
+{
+    <CoWriter BookId="@book.Id" />
+}
+
+@* ── Book Nav + Title + Save ────────────────────────────── *@
 <div class="d-flex align-items-center gap-2 mb-2" style="height: 32px;">
+    @if (book != null)
+    {
+        <a href="@($"/books/{book.Id}/chapters")" class="btn btn-sm btn-outline-secondary text-nowrap" style="height: 32px;" title="Back to chapters">
+            <i class="bi bi-list-ol"></i>
+        </a>
+        <button class="btn btn-sm btn-outline-secondary text-nowrap" style="height: 32px;"
+                disabled="@(prevChapterId == null)"
+                @onclick="GoPrev" title="Previous chapter">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <span class="text-muted small text-nowrap" style="line-height: 32px;">
+            @(chapterNumber.HasValue ? $"Ch. {chapterNumber} / {book.ChapterIds.Count}" : $"in {book.Title}")
+        </span>
+        <button class="btn btn-sm btn-outline-secondary text-nowrap" style="height: 32px;"
+                disabled="@(nextChapterId == null)"
+                @onclick="GoNext" title="Next chapter">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    }
     <input type="text" class="form-control form-control-sm bg-dark text-danger border-secondary fw-bold flex-grow-1"
            style="font-family: Georgia, serif; font-size: 1rem; height: 32px;"
            placeholder="Untitled"
@@ -1034,8 +1060,50 @@
     [Parameter] public string? ProjectId { get; set; }
 
     // ── Core state ──
-    private StoryProject project = new();
+    private Chapter project = new();
     private string storyText = "";
+
+    // ── Book context (Previous/Next nav) ──
+    private Book? book;
+    private string? prevChapterId;
+    private string? nextChapterId;
+    private int? chapterNumber;
+
+    /// <summary>Loads the parent book and computes prev/next ids from <see cref="Book.ChapterIds"/>.</summary>
+    private void ResolveBookContext()
+    {
+        book = null;
+        prevChapterId = null;
+        nextChapterId = null;
+        chapterNumber = null;
+
+        if (string.IsNullOrEmpty(project.BookId)) return;
+
+        book = BookRepo.LoadBook(project.BookId);
+        if (book == null) return;
+
+        var i = book.ChapterIds.IndexOf(project.Id);
+        if (i < 0) return;
+
+        chapterNumber = i + 1;
+        if (i > 0) prevChapterId = book.ChapterIds[i - 1];
+        if (i < book.ChapterIds.Count - 1) nextChapterId = book.ChapterIds[i + 1];
+    }
+
+    private void GoPrev()
+    {
+        if (prevChapterId == null) return;
+        if (dirty) Save();
+        Nav.NavigateTo($"/stories/write/{prevChapterId}", forceLoad: true);
+    }
+
+    private void GoNext()
+    {
+        if (nextChapterId == null) return;
+        if (dirty) Save();
+        Nav.NavigateTo($"/stories/write/{nextChapterId}", forceLoad: true);
+    }
+
     private int wordCount;
 #pragma warning disable CS0414
     private bool saved; // written by save logic; suppress "assigned but never used" until wired to UI
@@ -1351,7 +1419,7 @@
 
         storyText = newText;
         project.Html = newText;
-        Repo.SaveProject(project);
+        Repo.SaveChapter(project);
         try { await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText); }
         catch { /* prerender — ignore */ }
         UpdateWordCount();
@@ -1386,9 +1454,10 @@
         ttsAvailable = await TtsSvc.IsConfiguredAsync();
         if (!string.IsNullOrEmpty(ProjectId))
         {
-            var loaded = Repo.LoadProject(ProjectId);
+            var loaded = Repo.LoadChapter(ProjectId);
             if (loaded != null) project = loaded;
         }
+        ResolveBookContext();
         storyText = project.Html;
         currentOutline = OutlineSvc.Load(project.Id);
         refinement = Refinement.LoadReport(project.Id);
@@ -1399,7 +1468,7 @@
         // Auto-save new projects so they appear in the Stories list
         if (string.IsNullOrEmpty(ProjectId))
         {
-            Repo.SaveProject(project);
+            Repo.SaveChapter(project);
             Nav.NavigateTo($"/stories/write/{project.Id}", replace: true);
         }
     }
@@ -1473,11 +1542,11 @@
             string storyContext;
             if (askScope == "series")
             {
-                var allProjects = Repo.ListProjects();
+                var allProjects = Repo.ListChapters();
                 var parts = new List<string>();
                 foreach (var proj in allProjects)
                 {
-                    var full = Repo.LoadProject(proj.Id);
+                    var full = Repo.LoadChapter(proj.Id);
                     if (full == null) continue;
                     var text = full.PlainText;
                     if (text.Length > 0)
@@ -1612,7 +1681,7 @@
     {
         project.Html = storyText;
         project.Modified = DateTime.UtcNow;
-        Repo.SaveProject(project);
+        Repo.SaveChapter(project);
         saved = true;
         dirty = false;
     }
@@ -1851,10 +1920,10 @@
 
     // ── Project management ──
 
-    private void LoadProject(string id)
+    private void LoadChapter(string id)
     {
         if (hasExistingText) Save();
-        var loaded = Repo.LoadProject(id);
+        var loaded = Repo.LoadChapter(id);
         if (loaded == null) return;
         project = loaded;
         storyText = project.Html;
@@ -1909,8 +1978,8 @@
     private void NewStory()
     {
         if (hasExistingText) Save();
-        project = new StoryProject();
-        Repo.SaveProject(project);
+        project = new Chapter();
+        Repo.SaveChapter(project);
         storyText = "";
         printHtml = "";
         error = null;
@@ -2266,7 +2335,7 @@
 
     public void Dispose()
     {
-        if (dirty) { project.Html = storyText; Repo.SaveProject(project); }
+        if (dirty) { project.Html = storyText; Repo.SaveChapter(project); }
         miniGraphRef?.Dispose();
     }
 

@@ -1,320 +1,349 @@
-{
-  "id": "019d6143a65d794e8189977791ade32a",
-  "type": "character",
-  "name": "Helmer Bergqvist-Phommasack-Lahlou",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Internal Affairs Investigator, Axiom Security Division",
-  "age": 54,
-  "status": "active",
-  "location": "Meridian Core, near State and Madison",
-  "description": "Helmer Bergqvist-Phommasack-Lahlou has spent thirty years inside corporate security and carries every one of them. She is silver-haired and sharp-boned, with the kind of angular face that photographs well and intimidates in person. Her skin is brown-olive, sun-dark from an outdoor assignment in her thirties that she doesn't discuss. Her only augmentation is an olfactory enhancement implant — a professional tool she had installed at fifty when she decided she was done letting people lie to her face without confirmation. She dresses in Axiom's internal affairs charcoal and moves through the company's glass corridors with a particular gravity, as if her mass has been increased by everything she knows.\n\nShe is not cruel. This surprises people. They expect internal affairs to be punitive and she is not — she is surgical. She distinguishes between malice and incompetence, between corruption and desperation, and she applies different responses accordingly. What she will not tolerate is the lie, and she is very good at finding it. She prays to no E.L.F. and observes no rituals — she regards them as a structural bias in investigative thinking, a way of surrendering agency to the unprovable. She is wrong about this, and somewhere in herself she suspects it, which is why she's so pointed about it. She has outlasted four Axiom Security Directors, and the current one is afraid of her, which she considers a reasonable and appropriate state of affairs.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.3,
-      "shadow": 0.5,
-      "mask": 0.6,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "being wrong about something that matters and not finding out until it's too late to repair",
-      "dying before she finishes the case she's been quietly building for six years"
-    ],
-    "core_desires": [
-      "to complete one investigation that actually changes something structural rather than just processing an individual",
-      "to have acted, in the long balance, with more integrity than not"
-    ],
-    "coping_mechanisms": [
-      "work as a replacement for most forms of human comfort",
-      "rigorous separation of what she knows from what she feels about what she knows",
-      "the physical books — analog as a deliberate resistance to surveillance"
-    ],
-    "blind_spots": [
-      "her resistance to E.L.F. belief is a form of pride that occasionally blinds her to information that moves through devotional networks",
-      "she has decided she is done with personal attachments and in doing so has become less able to read the emotional dimensions of cases"
-    ],
-    "secret": "For six years she has been building a case against Axiom's Director of Infrastructure Security — not for corruption exactly, but for the systematic suppression of safety reports in the Brewer's Spine energy grid, reports whose findings, had they been acted on, would have prevented a structural fire that killed thirty-one workers in 2196. The director is three tiers above her in the organization. She has everything except one witness who won't speak. She has been protecting that witness from the inside for two years, at significant personal risk, without their knowledge."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, measured, economical — no words wasted; technical when discussing process; surprisingly plain-spoken about ethics",
-    "cadence": "Unhurried. She does not rush because she has learned that silence is a tool and she intends to use every tool available.",
-    "verbal_tics": [
-      "asks questions rather than making statements — even when she knows the answer",
-      "long pauses after an interviewee speaks, waiting for them to fill the silence"
-    ],
-    "example_lines": [
-      "'I'm not here to determine guilt. I'm here to determine what happened. Those are different questions. I'd like you to help me with the second one.'",
-      "'You're telling me the report was filed at oh-three-fifteen. I'm telling you the timestamp shows oh-four-forty. One of those things isn't correct. I'm asking you to tell me which one, and I'd like you to think carefully before you answer.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The witness she's been protecting has finally made contact — not with her, but with a Tier 2 private investigator operating out of Copperhead, and now Miroslava has to decide whether to expose her operation or find a way to work with someone she can't fully vet.",
-    "A junior Axiom compliance officer has filed an internal complaint against her — a clearly fabricated procedural violation — and the Director of Infrastructure Security has signed the referral. She has seventy-two hours before it escalates to a formal review."
-  ],
-  "narrative_function": "A power in the room — someone who investigates those who should not be investigated, who has enough institutional knowledge to be genuinely dangerous, and whose allegiances are to something more complex than Axiom's interests; can be antagonist, unexpected ally, or source of pressure that forces other characters to act.",
-  "augmentations": "Olfactory enhancement implant (professional tool — detects elevated cortisol, synthetic adrenaline compounds, deception-associated chemical markers); no cosmetic mods",
-  "daily_life": "She maintains an office in Meridian Core's Axiom tower complex but spends most of her time in the field — visiting satellite facilities, interviewing personnel, reviewing surveillance logs; eats lunch alone almost always, at a quiet counter-service Maghreb restaurant twelve floors below her office; reads physical books in the evenings.",
-  "affiliation": "Axiom Security Division — Internal Affairs and Compliance Investigation",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 10
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 9,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 3,
-      "transparency_guardedness": -5
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "internal affairs",
-      "institutional predator",
-      "evidence specialist",
-      "long game operator",
-      "anti-e.l.f.",
-      "power in the room"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "document before acting, always",
-      "distinguish between what you can prove and what you know — treat them differently",
-      "protect the investigation over the self; the case is what matters"
-    ],
-    "escalation_ladder": [
-      "Passive evidence gathering — never tips her hand early",
-      "Formal interview request through correct channels",
-      "Irregular approach — visiting subjects in non-official contexts",
-      "Escalating to external oversight bodies if internal channels are compromised — she keeps a contact at the Arcturus Civil Security internal review board she has never used and hopes never to need"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Controlled, watchful, professionally courteous — gives very little; receives everything",
-      "friends": "Almost nothing left of this category; people she trusts get blunt honesty and absolute discretion"
-    },
-    "stress_responses": {
-      "low": "Work volume increases; she arrives earlier and leaves later",
-      "medium": "Becomes even more precise and economical; strips away anything unnecessary from her days",
-      "high": "One person in Axiom has seen her genuinely shaken and that person is no longer employed there; her high stress is invisible from outside"
-    },
-    "contradictions": [
-      "She investigates institutional corruption while being institutionally embedded; she believes she can remain clean while working inside a system designed to dirty everyone; this belief has cost her every close relationship she had"
-    ],
-    "habits": [
-      "Reads printed documentation rather than digital when possible",
-      "Lunch alone at the Maghreb counter-service restaurant, same seat, same order",
-      "Does not leave work product on networked systems if she can avoid it — the physical books are not just reading material"
-    ],
-    "breaking_points": [
-      "The witness dying before they testify",
-      "Evidence that she has been used — that some of her past investigations were directed to suppress the truth she thought she was surfacing"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Olfactory enhancement implant — cortisol and deception-marker detection (professional tool, Axiom-issued)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Olfactory enhancement implant — cortisol and deception-marker detection (professional tool, Axiom-issued)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Pragmatist": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Meridian Core",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2146 — Born in the Garfield Rack district, Tuiasau-Tamboli family — Samoan-Fijian and Balkans descent",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2168 — Joined Axiom Security Division as a junior compliance analyst",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2179 — Promoted to investigative division after breaking a procurement fraud case that implicated her own department head",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2190 — Appointed to Internal Affairs and Compliance Investigation",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2194 — Brewer's Spine fire; begins quiet parallel investigation into safety report suppression",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Current case at critical threshold; Director of Infrastructure Security has filed procedural complaint against her",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions MM-4 'Breadwinner'",
-    "Crucible Industries Fang-9 'Switchblade'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions MM-4 'Breadwinner'",
-    "Crucible Industries Fang-9 'Switchblade'"
-  ],
-  "related_entities": [
-    "Meridian Core",
-    "The Undertow",
-    "Copperhead",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Charcoal",
-    "Irontide Tidal Energy",
-    "Witness",
-    "Silver",
-    "Glass"
-  ],
-  "district": "Meridian Core",
-  "physical_description": {
-    "heritage": "Northern European (51.6%), Southeast Asian (25.8%), North African (16.3%), and Sub-Saharan African (6.3%) — a striking blend that manifests as warm medium-tan tones with Scandinavian bone structure refined by Southeast Asian cheekbone prominence and North African facial geometry, with Sub-Saharan African warmth deepening her skin undertones. The combination creates sharp, angular geometry softened by golden-warm undertones that shift with light.",
-    "height_cm": 174,
-    "weight_kg": 68,
-    "build": "Lean and angular, with the controlled posture of someone who has spent three decades in offices and interrogation rooms. No softness; muscle definition visible in forearms and neck. Carries herself as if her skeleton is the most honest thing about her.",
-    "hair_color": "Silver-white, natural with no artificial shimmer or dye",
-    "hair_style": "Pulled back in a tight, practical bun at the nape of her neck. No loose strands. Never loose strands.",
-    "hair_length": "Long",
-    "eye_color": "Dark brown, clear and direct",
-    "skin_tone": "Warm medium tan with golden undertones and subtle deeper saturation from Sub-Saharan and North African heritage, darker at the shoulders and upper chest from sun exposure during field years. The pigmentation shows the blended genetics with luminous quality in certain light, with subtle variation in depth that catches differently depending on angle—golden-warm rather than cool.",
-    "complexion": "Angular face with high, prominent cheekbones characteristic of Northern European and Southeast Asian heritage, softened by warmer pigmentation from North African and Sub-Saharan ancestry. Jaw defined and squared. Nose straight with subtle bridge width, shaped by her mixed ancestry. Minimal makeup — a matte lipstick in warm neutral brown, nothing else. Fine lines around her eyes and mouth that deepen when she listens. Her skin shows the texture of someone who has not prioritized cosmetic treatments; small surgical scars are faintly visible at her temples (implant access ports, old and well-healed).",
-    "distinguishing_marks": [
-      "Thin horizontal scar across the base of her left wrist, approximately 4cm long, white and old — a knife wound from a field assignment in her thirties that she never discusses.",
-      "Faint grid-pattern scarring at her right temple, where the olfactory enhancement implant was installed fourteen years ago; the scarring is thin and pale, professionally done.",
-      "A small burn mark on the inside of her right forearm, the size of a cigarette tip, positioned at her wrist. She does not smoke and will not explain it."
-    ],
-    "visible_augmentations": "None visible. The olfactory enhancement implant is subcutaneous and leaves only the faint temple scarring. She wears no chrome, no LED modifications, no decorative augmentation. Her only concession to her implant is a slight pause sometimes — a moment where she appears to be scenting the air, almost imperceptible unless you're watching for it.",
-    "posture_movement": "She moves with deliberate, economical grace. Her weight shifts before she steps. She sits very still, feet flat on the floor or crossed at the ankle — never slouched. When she listens, her entire body becomes still, as if she is using all available sensory input. Her hands rest on the table or in her lap, never fidgeting. She does not smile easily, but when she does, the entire structure of her face changes; the sharpness softens into something almost gentle. She has learned to use this.",
-    "clothing_style": "Axiom Internal Affairs standard: tailored charcoal blazer (always brushed and pressed), white or pale gray under-shirt with no visible corporate branding, dark trousers with a crisp crease, flat black leather shoes (practical, not fashionable, but expensive in their austerity). A thin silver watch on her left wrist — no smart functions, analog only. A small silver pendant on a thin chain, visible only sometimes: a small religious icon she does not discuss. A leather document folder she carries everywhere, worn and well-used. Tier 2 quality throughout — not ostentatious, but the kind of clothing that signals 'I have authority and comfort in this building.'"
-  },
-  "image_prompt": "Helmer Bergqvist-Phommasack-Lahlou, 174cm tall woman with lean angular build, silver-white hair in tight bun, warm medium-tan skin with golden undertones reflecting North African and Southeast Asian heritage, sharp Scandinavian cheekbones, dark brown penetrating eyes, fine lines around eyes and mouth. Faint grid-pattern scar at right temple from implant. Wearing tailored charcoal blazer, white undershirt, dark trousers, flat black leather shoes, thin analog silver watch, worn leather document folder. Standing in sterile corporate interrogation room or Axiom Internal Affairs office with cool fluorescent lighting, posture rigid and controlled, hands at rest, expression stern and direct. GLMZ, dystopian corporate aesthetic, Tier 2 professional authority, no visible augmentations, scent of metal and recycled air, atmospheric depth with geometric shadows --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 51.6,
-    "Southeast Asian": 25.8,
-    "North African": 16.3,
-    "Sub-Saharan African": 6.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "British Isles": {
-        "Irish": 3.6,
-        "Welsh": 12.2
-      },
-      "Germanic": {
-        "German": 7.4,
-        "Swiss German": 28.4
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sumatran": 2.2,
-        "Javanese": 3.8
-      },
-      "Filipino": {
-        "Tagalog": 1.3,
-        "Bicolano": 7.5
-      },
-      "Laotian": {
-        "Laotian": 11
-      }
-    },
-    "North African": {
-      "Maghreb": {
-        "Moroccan": 11.8,
-        "Tunisian": 4.5
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 6.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a65d794e8189977791ade32a",
+    "type":  "character",
+    "name":  "Helmer Bergqvist-Phommasack-Lahlou",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Internal Affairs Investigator, Axiom Security Division",
+    "age":  54,
+    "status":  "active",
+    "location":  "Meridian Core, near State and Madison",
+    "description":  "Helmer Bergqvist-Phommasack-Lahlou has spent thirty years inside corporate security and carries every one of them. She is silver-haired and sharp-boned, with the kind of angular face that photographs well and intimidates in person. Her skin is brown-olive, sun-dark from an outdoor assignment in her thirties that she doesn\u0027t discuss. Her only augmentation is an olfactory enhancement implant â€” a professional tool she had installed at fifty when she decided she was done letting people lie to her face without confirmation. She dresses in Axiom\u0027s internal affairs charcoal and moves through the company\u0027s glass corridors with a particular gravity, as if her mass has been increased by everything she knows.\n\nShe is not cruel. This surprises people. They expect internal affairs to be punitive and she is not â€” she is surgical. She distinguishes between malice and incompetence, between corruption and desperation, and she applies different responses accordingly. What she will not tolerate is the lie, and she is very good at finding it. She prays to no E.L.F. and observes no rituals â€” she regards them as a structural bias in investigative thinking, a way of surrendering agency to the unprovable. She is wrong about this, and somewhere in herself she suspects it, which is why she\u0027s so pointed about it. She has outlasted four Axiom Security Directors, and the current one is afraid of her, which she considers a reasonable and appropriate state of affairs.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being wrong about something that matters and not finding out until it\u0027s too late to repair",
+                                          "dying before she finishes the case she\u0027s been quietly building for six years"
+                                      ],
+                       "core_desires":  [
+                                            "to complete one investigation that actually changes something structural rather than just processing an individual",
+                                            "to have acted, in the long balance, with more integrity than not"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "work as a replacement for most forms of human comfort",
+                                                 "rigorous separation of what she knows from what she feels about what she knows",
+                                                 "the physical books â€” analog as a deliberate resistance to surveillance"
+                                             ],
+                       "blind_spots":  [
+                                           "her resistance to E.L.F. belief is a form of pride that occasionally blinds her to information that moves through devotional networks",
+                                           "she has decided she is done with personal attachments and in doing so has become less able to read the emotional dimensions of cases"
+                                       ],
+                       "secret":  "For six years she has been building a case against Axiom\u0027s Director of Infrastructure Security â€” not for corruption exactly, but for the systematic suppression of safety reports in the Brewer\u0027s Spine energy grid, reports whose findings, had they been acted on, would have prevented a structural fire that killed thirty-one workers in 2196. The director is three tiers above her in the organization. She has everything except one witness who won\u0027t speak. She has been protecting that witness from the inside for two years, at significant personal risk, without their knowledge."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, measured, economical â€” no words wasted; technical when discussing process; surprisingly plain-spoken about ethics",
+                            "cadence":  "Unhurried. She does not rush because she has learned that silence is a tool and she intends to use every tool available.",
+                            "verbal_tics":  [
+                                                "asks questions rather than making statements â€” even when she knows the answer",
+                                                "long pauses after an interviewee speaks, waiting for them to fill the silence"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I\u0027m not here to determine guilt. I\u0027m here to determine what happened. Those are different questions. I\u0027d like you to help me with the second one.\u0027",
+                                                  "\u0027You\u0027re telling me the report was filed at oh-three-fifteen. I\u0027m telling you the timestamp shows oh-four-forty. One of those things isn\u0027t correct. I\u0027m asking you to tell me which one, and I\u0027d like you to think carefully before you answer.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The witness she\u0027s been protecting has finally made contact â€” not with her, but with a Tier 2 private investigator operating out of Copperhead, and now Miroslava has to decide whether to expose her operation or find a way to work with someone she can\u0027t fully vet.",
+                        "A junior Axiom compliance officer has filed an internal complaint against her â€” a clearly fabricated procedural violation â€” and the Director of Infrastructure Security has signed the referral. She has seventy-two hours before it escalates to a formal review."
+                    ],
+    "narrative_function":  "A power in the room â€” someone who investigates those who should not be investigated, who has enough institutional knowledge to be genuinely dangerous, and whose allegiances are to something more complex than Axiom\u0027s interests; can be antagonist, unexpected ally, or source of pressure that forces other characters to act.",
+    "augmentations":  "Olfactory enhancement implant (professional tool â€” detects elevated cortisol, synthetic adrenaline compounds, deception-associated chemical markers); no cosmetic mods",
+    "daily_life":  "She maintains an office in Meridian Core\u0027s Axiom tower complex but spends most of her time in the field â€” visiting satellite facilities, interviewing personnel, reviewing surveillance logs; eats lunch alone almost always, at a quiet counter-service Maghreb restaurant twelve floors below her office; reads physical books in the evenings.",
+    "affiliation":  "Axiom Security Division â€” Internal Affairs and Compliance Investigation",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  10
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  9,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -5
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "internal affairs",
+                               "institutional predator",
+                               "evidence specialist",
+                               "long game operator",
+                               "anti-e.l.f.",
+                               "power in the room"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "document before acting, always",
+                                              "distinguish between what you can prove and what you know â€” treat them differently",
+                                              "protect the investigation over the self; the case is what matters"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Passive evidence gathering â€” never tips her hand early",
+                                                 "Formal interview request through correct channels",
+                                                 "Irregular approach â€” visiting subjects in non-official contexts",
+                                                 "Escalating to external oversight bodies if internal channels are compromised â€” she keeps a contact at the Arcturus Civil Security internal review board she has never used and hopes never to need"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Controlled, watchful, professionally courteous â€” gives very little; receives everything",
+                                                   "friends":  "Almost nothing left of this category; people she trusts get blunt honesty and absolute discretion"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Work volume increases; she arrives earlier and leaves later",
+                                                "medium":  "Becomes even more precise and economical; strips away anything unnecessary from her days",
+                                                "high":  "One person in Axiom has seen her genuinely shaken and that person is no longer employed there; her high stress is invisible from outside"
+                                            },
+                       "contradictions":  [
+                                              "She investigates institutional corruption while being institutionally embedded; she believes she can remain clean while working inside a system designed to dirty everyone; this belief has cost her every close relationship she had"
+                                          ],
+                       "habits":  [
+                                      "Reads printed documentation rather than digital when possible",
+                                      "Lunch alone at the Maghreb counter-service restaurant, same seat, same order",
+                                      "Does not leave work product on networked systems if she can avoid it â€” the physical books are not just reading material"
+                                  ],
+                       "breaking_points":  [
+                                               "The witness dying before they testify",
+                                               "Evidence that she has been used â€” that some of her past investigations were directed to suppress the truth she thought she was surfacing"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Olfactory enhancement implant â€” cortisol and deception-marker detection (professional tool, Axiom-issued)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Olfactory enhancement implant â€” cortisol and deception-marker detection (professional tool, Axiom-issued)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Pragmatist":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Meridian Core",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2146 â€” Born in the Garfield Rack district, Tuiasau-Tamboli family â€” Samoan-Fijian and Balkans descent",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2168 â€” Joined Axiom Security Division as a junior compliance analyst",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2179 â€” Promoted to investigative division after breaking a procurement fraud case that implicated her own department head",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2190 â€” Appointed to Internal Affairs and Compliance Investigation",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2194 â€” Brewer\u0027s Spine fire; begins quiet parallel investigation into safety report suppression",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Current case at critical threshold; Director of Infrastructure Security has filed procedural complaint against her",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions MM-4 \u0027Breadwinner\u0027",
+                            "Crucible Industries Fang-9 \u0027Switchblade\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions MM-4 \u0027Breadwinner\u0027",
+                                "Crucible Industries Fang-9 \u0027Switchblade\u0027"
+                            ],
+    "related_entities":  [
+                             "Meridian Core",
+                             "The Undertow",
+                             "Copperhead",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "Charcoal",
+                             "Irontide Tidal Energy",
+                             "Witness",
+                             "Silver",
+                             "Glass"
+                         ],
+    "district":  "Meridian Core",
+    "physical_description":  {
+                                 "heritage":  "Northern European (51.6%), Southeast Asian (25.8%), North African (16.3%), and Sub-Saharan African (6.3%) â€” a striking blend that manifests as warm medium-tan tones with Scandinavian bone structure refined by Southeast Asian cheekbone prominence and North African facial geometry, with Sub-Saharan African warmth deepening her skin undertones. The combination creates sharp, angular geometry softened by golden-warm undertones that shift with light.",
+                                 "height_cm":  174,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and angular, with the controlled posture of someone who has spent three decades in offices and interrogation rooms. No softness; muscle definition visible in forearms and neck. Carries herself as if her skeleton is the most honest thing about her.",
+                                 "hair_color":  "Silver-white, natural with no artificial shimmer or dye",
+                                 "hair_style":  "Pulled back in a tight, practical bun at the nape of her neck. No loose strands. Never loose strands.",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Dark brown, clear and direct",
+                                 "skin_tone":  "Warm medium tan with golden undertones and subtle deeper saturation from Sub-Saharan and North African heritage, darker at the shoulders and upper chest from sun exposure during field years. The pigmentation shows the blended genetics with luminous quality in certain light, with subtle variation in depth that catches differently depending on angleâ€”golden-warm rather than cool.",
+                                 "complexion":  "Angular face with high, prominent cheekbones characteristic of Northern European and Southeast Asian heritage, softened by warmer pigmentation from North African and Sub-Saharan ancestry. Jaw defined and squared. Nose straight with subtle bridge width, shaped by her mixed ancestry. Minimal makeup â€” a matte lipstick in warm neutral brown, nothing else. Fine lines around her eyes and mouth that deepen when she listens. Her skin shows the texture of someone who has not prioritized cosmetic treatments; small surgical scars are faintly visible at her temples (implant access ports, old and well-healed).",
+                                 "distinguishing_marks":  [
+                                                              "Thin horizontal scar across the base of her left wrist, approximately 4cm long, white and old â€” a knife wound from a field assignment in her thirties that she never discusses.",
+                                                              "Faint grid-pattern scarring at her right temple, where the olfactory enhancement implant was installed fourteen years ago; the scarring is thin and pale, professionally done.",
+                                                              "A small burn mark on the inside of her right forearm, the size of a cigarette tip, positioned at her wrist. She does not smoke and will not explain it."
+                                                          ],
+                                 "visible_augmentations":  "None visible. The olfactory enhancement implant is subcutaneous and leaves only the faint temple scarring. She wears no chrome, no LED modifications, no decorative augmentation. Her only concession to her implant is a slight pause sometimes â€” a moment where she appears to be scenting the air, almost imperceptible unless you\u0027re watching for it.",
+                                 "posture_movement":  "She moves with deliberate, economical grace. Her weight shifts before she steps. She sits very still, feet flat on the floor or crossed at the ankle â€” never slouched. When she listens, her entire body becomes still, as if she is using all available sensory input. Her hands rest on the table or in her lap, never fidgeting. She does not smile easily, but when she does, the entire structure of her face changes; the sharpness softens into something almost gentle. She has learned to use this.",
+                                 "clothing_style":  "Axiom Internal Affairs standard: tailored charcoal blazer (always brushed and pressed), white or pale gray under-shirt with no visible corporate branding, dark trousers with a crisp crease, flat black leather shoes (practical, not fashionable, but expensive in their austerity). A thin silver watch on her left wrist â€” no smart functions, analog only. A small silver pendant on a thin chain, visible only sometimes: a small religious icon she does not discuss. A leather document folder she carries everywhere, worn and well-used. Tier 2 quality throughout â€” not ostentatious, but the kind of clothing that signals \u0027I have authority and comfort in this building.\u0027"
+                             },
+    "image_prompt":  "Helmer Bergqvist-Phommasack-Lahlou, 174cm tall woman with lean angular build, silver-white hair in tight bun, warm medium-tan skin with golden undertones reflecting North African and Southeast Asian heritage, sharp Scandinavian cheekbones, dark brown penetrating eyes, fine lines around eyes and mouth. Faint grid-pattern scar at right temple from implant. Wearing tailored charcoal blazer, white undershirt, dark trousers, flat black leather shoes, thin analog silver watch, worn leather document folder. Standing in sterile corporate interrogation room or Axiom Internal Affairs office with cool fluorescent lighting, posture rigid and controlled, hands at rest, expression stern and direct. GLMZ, dystopian corporate aesthetic, Tier 2 professional authority, no visible augmentations, scent of metal and recycled air, atmospheric depth with geometric shadows --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  51.6,
+                             "Southeast Asian":  25.8,
+                             "North African":  16.3,
+                             "Sub-Saharan African":  6.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  3.6,
+                                                                            "Welsh":  12.2
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "German":  7.4,
+                                                                       "Swiss German":  28.4
+                                                                   }
+                                                  },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  2.2,
+                                                                       "Javanese":  3.8
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Tagalog":  1.3,
+                                                                     "Bicolano":  7.5
+                                                                 },
+                                                    "Laotian":  {
+                                                                    "Laotian":  11
+                                                                }
+                                                },
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  11.8,
+                                                                  "Tunisian":  4.5
+                                                              }
+                                              },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  6.3
+                                                                            }
+                                                    }
+                        },
+    "tier":  "3"
 }

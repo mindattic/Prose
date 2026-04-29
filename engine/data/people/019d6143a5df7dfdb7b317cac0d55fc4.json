@@ -1,331 +1,344 @@
-{
-  "id": "019d6143a5df7dfdb7b317cac0d55fc4",
-  "type": "character",
-  "name": "Cyrus Möller-Fredriksen",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Mid-tier corporate compliance auditor and covert information broker",
-  "age": 51,
-  "status": "active",
-  "location": "The Meridian Core, near State and Jackson",
-  "description": "Cyrus Möller-Fredriksen is a broad-shouldered Filipino-Swedish man of fifty-one who has spent so long performing the aesthetics of institutional trust that they have half-become real. He dresses in muted, expensive neutrals — nothing that would be remembered — and carries himself with the particular stillness of someone who learned long ago that a calm body reads as an authoritative one. His hair has gone fully silver and he wears it short and immaculate. The only thing that slightly undermines the effect is his habit of rolling a small obsidian bead between his fingers when he thinks no one is watching.\n\nOfficially, Cyrus Möller-Fredriksen is a Senior Compliance Auditor for Veltris Solutions, one of the Meridian Core's mid-weight corporate entities specializing in infrastructure licensing. He is very good at his job. He is also, quietly, one of the most reliable information brokers operating at the corporate tier — not a dealer in secrets so much as a dealer in context. He does not sell raw data; he sells the correct reading of data, the understanding of what something means and who it benefits. His clients are executives, rivals, occasionally investigators who can afford him.\n\nCyrus Möller-Fredriksen came to the Core from Old Harbor, a trajectory he has spent twenty years making illegible by careful accumulation of the right credentials, the right accent, the right address. He is not ashamed of Old Harbor. He is terrified of going back. The distinction matters to him and he is honest about it with himself at two in the morning when the distinction feels very thin. He has one adult daughter he supports financially and sees three times a year, and the relationship is exactly as complicated as that arrangement suggests.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.65,
-      "ideal": 0.4,
-      "id": 0.55,
-      "shadow": 0.7,
-      "mask": 0.85,
-      "ghost": 0.75
-    },
-    "core_fears": [
-      "Exposure — not of his brokering, but of his origins and the effort he has expended concealing them",
-      "That the version of himself he performs has replaced something that was actually worth keeping",
-      "Becoming unnecessary — in the corporate ecosystem, in his daughter's life"
-    ],
-    "core_desires": [
-      "Security that does not depend on anyone else's continued goodwill",
-      "To be genuinely known by someone without the knowledge being used against him",
-      "To do something, once, that is unambiguously good"
-    ],
-    "coping_mechanisms": [
-      "Compartmentalization so practiced it operates automatically",
-      "Obsessive preparation and contingency planning",
-      "Emotional withdrawal framed as professionalism"
-    ],
-    "blind_spots": [
-      "Assumes everyone operates with his level of strategic self-interest, misreads genuine altruism",
-      "His mask has become so functional he sometimes cannot locate his actual preferences",
-      "Underestimates the degree to which people in his life can see through the performance"
-    ],
-    "secret": "Three years ago he obtained and suppressed information that would have exposed a Veltris subsidiary's involvement in the displacement of several Old Harbor residential blocks, including the building where his mother lived until her death. He suppressed it because releasing it would have exposed his brokering operation. He has not fully processed this and may never."
-  },
-  "speech_patterns": {
-    "vocabulary": "Boardroom-precise, slightly formal, with occasional idiomatic slippages into Tagalog or blunt Old Harbor directness when he is tired or cornered; uses passive constructions to distribute responsibility",
-    "cadence": "Measured and deliberate, each sentence placed like a document on a desk; rarely raises his voice; silence is a tool he uses consciously",
-    "verbal_tics": [
-      "Prefixes disagreement with 'I think what you're describing is—' before reframing it entirely",
-      "Uses 'we' when he means 'you' to soften demands",
-      "The obsidian bead rolling is audible on calls and he has never acknowledged it"
-    ],
-    "example_lines": [
-      "'I think what you're describing is a risk tolerance question. Let me tell you what the risk actually looks like.'",
-      "'We're going to want to be careful about how that finding is documented. Not buried — careful.'",
-      "'I grew up in Old Harbor. I know what a disposal operation sounds like. This is a disposal operation.'",
-      "'The information is worth what it costs you not to have it. That's not a negotiation. That's arithmetic.'"
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Thessaly Mourne",
-      "type": "professional contact / mutual leverage",
-      "description": "They have exchanged useful information on three separate occasions and neither has made the mistake of calling it friendship.",
-      "emotional_core": "Wary respect between two people who recognize the same survival mechanisms in each other",
-      "story_tension": "Thessaly has recently come into possession of something that implicates Crisanto in the Old Harbor displacement suppression"
-    },
-    {
-      "name": "Priya Subramaniam-Vogt",
-      "type": "estranged colleague / ghost",
-      "description": "A former Veltris colleague who left the company abruptly two years ago. Crisanto knows why and has never told anyone.",
-      "emotional_core": "Guilt he has reclassified as a professional debt",
-      "story_tension": "Priya has resurfaced in a context that will force Crisanto to decide whether to protect her or protect himself"
-    },
-    {
-      "name": "His daughter, Remedios",
-      "type": "family / painful distance",
-      "description": "Remedios is twenty-three, lives in the Circuit, and has her father's capacity for strategic thinking and none of his patience for performing respectability.",
-      "emotional_core": "Love expressed almost entirely as financial support and withheld as presence",
-      "story_tension": "Remedios has independently begun investigating the Old Harbor displacement — she does not know her father is connected"
-    }
-  ],
-  "story_hooks": [
-    "A compliance audit Crisanto is assigned to unexpectedly surfaces the suppressed Old Harbor data from three years ago",
-    "Someone begins leaving him anonymous messages that contain information only he should know — testing him or warning him",
-    "A client asks him to broker something that would directly harm the Gray Zone community, including Nkechi Abara-Veltman's clinic",
-    "Remedios contacts him for the first time in eight months asking about Old Harbor records — and he has to decide in real time how to respond"
-  ],
-  "narrative_function": "Moral complexity at the corporate tier; embodies the cost of assimilation and the violence of institutional complicity; provides access to Core-level information and plot mechanics while remaining personally compromised",
-  "augmentations": "Cortical memory indexer (standard corporate-tier, allows near-perfect recall of documents and conversations),Subvocal communication implant for silent calls,Subtle biometric regulation implant that suppresses visible stress indicators — heart rate, micro-expression, perspiration — installed voluntarily for professional performance",
-  "daily_life": "Arrives at Veltris before most colleagues, leaves after most. Eats lunch alone and considers it the most honest part of his day. Meets brokering clients in three rotating locations, never the same week twice. Sends Remedios a bank transfer on the first of each month with no accompanying message. Rolls the obsidian bead — his mother's, from a rosary — in quiet moments and does not call it prayer.",
-  "affiliation": "Veltris Solutions (Senior Compliance Auditor, official); independent information broker (covert, no organizational affiliation)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 4,
-      "expression": 8,
-      "integrity": 3
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 2,
-      "transparency_guardedness": 5
-    },
-    "drives": [
-      "Maintain security",
-      "Protect his constructed identity",
-      "Do one unambiguously good thing"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 7,
-        "response": "Compartmentalizes harder, obsidian bead rolling intensifies"
-      },
-      "moral": 4,
-      "trust": 2,
-      "desperation": 7
-    },
-    "strengths": [
-      "Prudence",
-      "Self-regulation",
-      "Judgment",
-      "Perspective",
-      "Social intelligence"
-    ],
-    "weaknesses": [
-      "Honesty",
-      "Love",
-      "Kindness",
-      "Gratitude",
-      "Bravery"
-    ],
-    "tags": [
-      "corporate-auditor",
-      "info-broker",
-      "old-harbor-origin",
-      "mask-wearer",
-      "veltris",
-      "meridian-core",
-      "complicit"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will always reframe disagreements before engaging — 'I think what you're describing is—'",
-      "Will never reveal his Old Harbor origins unless strategically necessary",
-      "Will always use 'we' when he means 'you' to soften demands",
-      "Will never form a relationship that cannot be rationalized as transactional",
-      "Will always send Remedios money on the first of each month with no message",
-      "Will never act on information that would expose his brokering operation, even when morality demands it",
-      "Will always arrive before colleagues and leave after — performance of dedication as cover"
-    ],
-    "escalation_ladder": [
-      "Reframes the conflict in institutional language — strips emotion, centers compliance",
-      "Deploys silence and the obsidian bead — lets the other party reveal their position",
-      "Shifts to Old Harbor directness — drops the boardroom mask, which shocks people who only know the performance",
-      "Leverages brokered information — reminds the other party what he knows without explicit threat",
-      "Disappears from the interaction entirely — goes through channels, removes himself as a visible party"
-    ],
-    "interpersonal_modes": {
-      "Thessaly Mourne": "Wary mutual recognition — two survival strategists who see the same mechanisms in each other",
-      "Priya Subramaniam-Vogt": "Guilt reclassified as professional debt; avoids direct contact",
-      "Remedios": "Love expressed entirely as financial support, withheld as presence — the distance is killing him slowly"
-    },
-    "stress_responses": {
-      "low": "Obsidian bead rolling increases, contingency plans get updated",
-      "medium": "Tagalog phrases surface, Old Harbor directness leaks through the corporate mask",
-      "high": "Cannot locate his actual preferences beneath the performance — decision paralysis masked as deliberation",
-      "critical": "The mask cracks — he becomes the Old Harbor kid who knows exactly what a disposal operation sounds like"
-    },
-    "contradictions": [
-      "Suppressed information that would have helped Old Harbor to protect his brokering operation — betrayed his origin to preserve his cover",
-      "Performs institutional trust so well it has half-become real, blurring the line between mask and self",
-      "Wants to be genuinely known while building an identity designed to prevent exactly that"
-    ],
-    "habits": [
-      "Rolls his mother's obsidian rosary bead between his fingers in quiet moments",
-      "Eats lunch alone and considers it the most honest part of his day",
-      "Uses passive constructions to distribute responsibility away from himself",
-      "Meets brokering clients in three rotating locations, never the same week twice",
-      "Arrives at Veltris before most colleagues, leaves after most"
-    ],
-    "breaking_points": [
-      "The suppressed Old Harbor displacement data resurfacing in an audit he is assigned to",
-      "Remedios independently investigating the displacement and discovering his connection",
-      "His Old Harbor origins being exposed to his corporate tier contacts",
-      "Being asked to broker something that directly harms the Gray Zone community he came from"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Meridian Core",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Forge-Smith Collective Thundermouth Double 'Old Testament'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Meridian Core",
-    "Meridian Core",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Silver",
-    "Harbor Fish Shack",
-    "Honest Burger"
-  ],
-  "district": "Meridian Core",
-  "physical_description": {
-    "heritage": "Northern European and Middle Eastern ancestry form the visual foundation (76% combined), with meaningful contributions from East Asian, Hispanic/Latin American, and minor Sub-Saharan African ancestry. This creates a balanced, non-dominant phenotype where Northern European bone structure and Middle Eastern definition share equal visual weight, tempered by East Asian angularity in the eye area and subtle warmth from the Hispanic/Latin American and Sub-Saharan African components. His features embody the Ubiquitous Diaspora's characteristic genetic recombination — ancestry visible but not categorizable.",
-    "height_cm": 180,
-    "weight_kg": 82,
-    "build": "Broad-shouldered and substantial without heaviness; the frame of someone who came from manual labor tier but has maintained discipline through corporate years. Solid, not athletic — the weight sits in his chest and shoulders.",
-    "hair_color": "Silver-gray, fully natural transition",
-    "hair_style": "Short, cropped close to the scalp, immaculately groomed",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Warm olive-bronze with golden undertones, the direct result of Northern European paleness and Middle Eastern depth blended with East Asian, Hispanic/Latin American, and minor Sub-Saharan African warmth. The tone reads as Mediterranean but with subtle golden richness.",
-    "complexion": "Weathered but well-maintained; minimal visible lines despite age, suggesting either genetic luck or subtle cosmetic intervention. Clean-shaven. Skin has the particular clarity of someone who treats their face as a professional asset. Facial structure is balanced between Northern European regularity and Middle Eastern definition, with defined cheekbones and slightly squared jawline. East Asian genetics contribute subtle eye area angularity and slightly higher cheekbone prominence. Complexion is even-toned across the face with no unusual discoloration.",
-    "distinguishing_marks": [
-      "A thin, pale scar running approximately 4cm along his left jawline, visible only in certain light, likely from his Old Harbor decades",
-      "Very faint burn scar on the inside of his right wrist, roughly 2cm diameter, almost invisible unless you know where to look"
-    ],
-    "visible_augmentations": "None. The cortical indexer, subvocal implant, and biometric regulation implant are all subcutaneous or neural. His eyes are unmodified. He wears a thin silver wedding band on his right ring finger — not married, a deliberate aesthetic choice for professional trust-building.",
-    "posture_movement": "Unnaturally still when seated or in conversation — the practiced stillness of someone who learned that motion reads as anxiety. Moves with economy when he does move. His hands are steady and his breathing is controlled. When alone, occasionally rolls something small between his fingers (the obsidian bead), a micro-movement that suggests his stillness is a performance, not a nature.",
-    "clothing_style": "Tier 2-3 corporate neutral: tailored charcoal and navy suits from mid-tier makers, white or pale gray shirts, minimal jewelry beyond the ring. Shoes are always polished. He dresses to be forgotten, to read as institutional rather than individual. Everything is expensive in a way that does not announce itself. His watch is a mid-range chronometer, intentionally unremarkable."
-  },
-  "image_prompt": "Cyrus Möller-Fredriksen, 180cm tall, broad-shouldered corporate man with silver-gray cropped hair and warm olive-bronze skin reflecting Northern European and Middle Eastern ancestry balanced with East Asian, Hispanic/Latin American, and Sub-Saharan African heritage. Dark brown unaugmented eyes, defined cheekbones, balanced facial structure, subtle scar on left jawline visible in certain light. Clean-shaven, weathered but well-maintained complexion. Seated in corporate stillness, hands steady, wearing tailored charcoal suit and pale gray shirt, silver wedding band, polished shoes. GLMZ, Great Lakes Metropolitan Zone, cool corporate office lighting, professional trust-building aesthetic, institutional rather than individual, everything expensive in an unremarkable way. Mood: controlled, practiced stillness, the performance of professionalism. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 39.9,
-    "Middle Eastern": 36.1,
-    "East Asian": 13.3,
-    "Hispanic/Latin American": 8.9,
-    "Sub-Saharan African": 1.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Germanic": {
-        "Austrian": 11.7,
-        "German": 1.8
-      },
-      "Scandinavian": {
-        "Swedish": 8.3
-      },
-      "British Isles": {
-        "Irish": 11.4,
-        "Scottish": 6.7
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 20.9
-      },
-      "Arab Gulf": {
-        "Kuwaiti": 3.8,
-        "Yemeni": 2.7
-      },
-      "Arab Levantine": {
-        "Syrian": 7.3,
-        "Lebanese": 1.4
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Sichuanese": 8.3,
-        "Hakka": 5
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 8.9
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 1.2
-      },
-      "Central African": {
-        "Congolese": 0.6
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5df7dfdb7b317cac0d55fc4",
+    "type":  "character",
+    "name":  "Cyrus MÃ¶ller-Fredriksen",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Mid-tier corporate compliance auditor and covert information broker",
+    "age":  51,
+    "status":  "active",
+    "location":  "The Meridian Core, near State and Jackson",
+    "description":  "Cyrus MÃ¶ller-Fredriksen is a broad-shouldered Filipino-Swedish man of fifty-one who has spent so long performing the aesthetics of institutional trust that they have half-become real. He dresses in muted, expensive neutrals â€” nothing that would be remembered â€” and carries himself with the particular stillness of someone who learned long ago that a calm body reads as an authoritative one. His hair has gone fully silver and he wears it short and immaculate. The only thing that slightly undermines the effect is his habit of rolling a small obsidian bead between his fingers when he thinks no one is watching.\n\nOfficially, Cyrus MÃ¶ller-Fredriksen is a Senior Compliance Auditor for Veltris Solutions, one of the Meridian Core\u0027s mid-weight corporate entities specializing in infrastructure licensing. He is very good at his job. He is also, quietly, one of the most reliable information brokers operating at the corporate tier â€” not a dealer in secrets so much as a dealer in context. He does not sell raw data; he sells the correct reading of data, the understanding of what something means and who it benefits. His clients are executives, rivals, occasionally investigators who can afford him.\n\nCyrus MÃ¶ller-Fredriksen came to the Core from Old Harbor, a trajectory he has spent twenty years making illegible by careful accumulation of the right credentials, the right accent, the right address. He is not ashamed of Old Harbor. He is terrified of going back. The distinction matters to him and he is honest about it with himself at two in the morning when the distinction feels very thin. He has one adult daughter he supports financially and sees three times a year, and the relationship is exactly as complicated as that arrangement suggests.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Exposure â€” not of his brokering, but of his origins and the effort he has expended concealing them",
+                                          "That the version of himself he performs has replaced something that was actually worth keeping",
+                                          "Becoming unnecessary â€” in the corporate ecosystem, in his daughter\u0027s life"
+                                      ],
+                       "core_desires":  [
+                                            "Security that does not depend on anyone else\u0027s continued goodwill",
+                                            "To be genuinely known by someone without the knowledge being used against him",
+                                            "To do something, once, that is unambiguously good"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Compartmentalization so practiced it operates automatically",
+                                                 "Obsessive preparation and contingency planning",
+                                                 "Emotional withdrawal framed as professionalism"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes everyone operates with his level of strategic self-interest, misreads genuine altruism",
+                                           "His mask has become so functional he sometimes cannot locate his actual preferences",
+                                           "Underestimates the degree to which people in his life can see through the performance"
+                                       ],
+                       "secret":  "Three years ago he obtained and suppressed information that would have exposed a Veltris subsidiary\u0027s involvement in the displacement of several Old Harbor residential blocks, including the building where his mother lived until her death. He suppressed it because releasing it would have exposed his brokering operation. He has not fully processed this and may never."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Boardroom-precise, slightly formal, with occasional idiomatic slippages into Tagalog or blunt Old Harbor directness when he is tired or cornered; uses passive constructions to distribute responsibility",
+                            "cadence":  "Measured and deliberate, each sentence placed like a document on a desk; rarely raises his voice; silence is a tool he uses consciously",
+                            "verbal_tics":  [
+                                                "Prefixes disagreement with \u0027I think what you\u0027re describing isâ€”\u0027 before reframing it entirely",
+                                                "Uses \u0027we\u0027 when he means \u0027you\u0027 to soften demands",
+                                                "The obsidian bead rolling is audible on calls and he has never acknowledged it"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I think what you\u0027re describing is a risk tolerance question. Let me tell you what the risk actually looks like.\u0027",
+                                                  "\u0027We\u0027re going to want to be careful about how that finding is documented. Not buried â€” careful.\u0027",
+                                                  "\u0027I grew up in Old Harbor. I know what a disposal operation sounds like. This is a disposal operation.\u0027",
+                                                  "\u0027The information is worth what it costs you not to have it. That\u0027s not a negotiation. That\u0027s arithmetic.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Thessaly Mourne",
+                              "type":  "professional contact / mutual leverage",
+                              "description":  "They have exchanged useful information on three separate occasions and neither has made the mistake of calling it friendship.",
+                              "emotional_core":  "Wary respect between two people who recognize the same survival mechanisms in each other",
+                              "story_tension":  "Thessaly has recently come into possession of something that implicates Crisanto in the Old Harbor displacement suppression"
+                          },
+                          {
+                              "name":  "Priya Subramaniam-Vogt",
+                              "type":  "estranged colleague / ghost",
+                              "description":  "A former Veltris colleague who left the company abruptly two years ago. Crisanto knows why and has never told anyone.",
+                              "emotional_core":  "Guilt he has reclassified as a professional debt",
+                              "story_tension":  "Priya has resurfaced in a context that will force Crisanto to decide whether to protect her or protect himself"
+                          },
+                          {
+                              "name":  "His daughter, Remedios",
+                              "type":  "family / painful distance",
+                              "description":  "Remedios is twenty-three, lives in the Circuit, and has her father\u0027s capacity for strategic thinking and none of his patience for performing respectability.",
+                              "emotional_core":  "Love expressed almost entirely as financial support and withheld as presence",
+                              "story_tension":  "Remedios has independently begun investigating the Old Harbor displacement â€” she does not know her father is connected"
+                          }
+                      ],
+    "story_hooks":  [
+                        "A compliance audit Crisanto is assigned to unexpectedly surfaces the suppressed Old Harbor data from three years ago",
+                        "Someone begins leaving him anonymous messages that contain information only he should know â€” testing him or warning him",
+                        "A client asks him to broker something that would directly harm the Gray Zone community, including Nkechi Abara-Veltman\u0027s clinic",
+                        "Remedios contacts him for the first time in eight months asking about Old Harbor records â€” and he has to decide in real time how to respond"
+                    ],
+    "narrative_function":  "Moral complexity at the corporate tier; embodies the cost of assimilation and the violence of institutional complicity; provides access to Core-level information and plot mechanics while remaining personally compromised",
+    "augmentations":  "Cortical memory indexer (standard corporate-tier, allows near-perfect recall of documents and conversations),Subvocal communication implant for silent calls,Subtle biometric regulation implant that suppresses visible stress indicators â€” heart rate, micro-expression, perspiration â€” installed voluntarily for professional performance",
+    "daily_life":  "Arrives at Veltris before most colleagues, leaves after most. Eats lunch alone and considers it the most honest part of his day. Meets brokering clients in three rotating locations, never the same week twice. Sends Remedios a bank transfer on the first of each month with no accompanying message. Rolls the obsidian bead â€” his mother\u0027s, from a rosary â€” in quiet moments and does not call it prayer.",
+    "affiliation":  "Veltris Solutions (Senior Compliance Auditor, official); independent information broker (covert, no organizational affiliation)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  4,
+                                 "expression":  8,
+                                 "integrity":  3
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  5
+                                  },
+                  "drives":  [
+                                 "Maintain security",
+                                 "Protect his constructed identity",
+                                 "Do one unambiguously good thing"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  7,
+                                                    "response":  "Compartmentalizes harder, obsidian bead rolling intensifies"
+                                                },
+                                     "moral":  4,
+                                     "trust":  2,
+                                     "desperation":  7
+                                 },
+                  "strengths":  [
+                                    "Prudence",
+                                    "Self-regulation",
+                                    "Judgment",
+                                    "Perspective",
+                                    "Social intelligence"
+                                ],
+                  "weaknesses":  [
+                                     "Honesty",
+                                     "Love",
+                                     "Kindness",
+                                     "Gratitude",
+                                     "Bravery"
+                                 ],
+                  "tags":  [
+                               "corporate-auditor",
+                               "info-broker",
+                               "old-harbor-origin",
+                               "mask-wearer",
+                               "veltris",
+                               "meridian-core",
+                               "complicit"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will always reframe disagreements before engaging â€” \u0027I think what you\u0027re describing isâ€”\u0027",
+                                              "Will never reveal his Old Harbor origins unless strategically necessary",
+                                              "Will always use \u0027we\u0027 when he means \u0027you\u0027 to soften demands",
+                                              "Will never form a relationship that cannot be rationalized as transactional",
+                                              "Will always send Remedios money on the first of each month with no message",
+                                              "Will never act on information that would expose his brokering operation, even when morality demands it",
+                                              "Will always arrive before colleagues and leave after â€” performance of dedication as cover"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Reframes the conflict in institutional language â€” strips emotion, centers compliance",
+                                                 "Deploys silence and the obsidian bead â€” lets the other party reveal their position",
+                                                 "Shifts to Old Harbor directness â€” drops the boardroom mask, which shocks people who only know the performance",
+                                                 "Leverages brokered information â€” reminds the other party what he knows without explicit threat",
+                                                 "Disappears from the interaction entirely â€” goes through channels, removes himself as a visible party"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "Thessaly Mourne":  "Wary mutual recognition â€” two survival strategists who see the same mechanisms in each other",
+                                                   "Priya Subramaniam-Vogt":  "Guilt reclassified as professional debt; avoids direct contact",
+                                                   "Remedios":  "Love expressed entirely as financial support, withheld as presence â€” the distance is killing him slowly"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Obsidian bead rolling increases, contingency plans get updated",
+                                                "medium":  "Tagalog phrases surface, Old Harbor directness leaks through the corporate mask",
+                                                "high":  "Cannot locate his actual preferences beneath the performance â€” decision paralysis masked as deliberation",
+                                                "critical":  "The mask cracks â€” he becomes the Old Harbor kid who knows exactly what a disposal operation sounds like"
+                                            },
+                       "contradictions":  [
+                                              "Suppressed information that would have helped Old Harbor to protect his brokering operation â€” betrayed his origin to preserve his cover",
+                                              "Performs institutional trust so well it has half-become real, blurring the line between mask and self",
+                                              "Wants to be genuinely known while building an identity designed to prevent exactly that"
+                                          ],
+                       "habits":  [
+                                      "Rolls his mother\u0027s obsidian rosary bead between his fingers in quiet moments",
+                                      "Eats lunch alone and considers it the most honest part of his day",
+                                      "Uses passive constructions to distribute responsibility away from himself",
+                                      "Meets brokering clients in three rotating locations, never the same week twice",
+                                      "Arrives at Veltris before most colleagues, leaves after most"
+                                  ],
+                       "breaking_points":  [
+                                               "The suppressed Old Harbor displacement data resurfacing in an audit he is assigned to",
+                                               "Remedios independently investigating the displacement and discovering his connection",
+                                               "His Old Harbor origins being exposed to his corporate tier contacts",
+                                               "Being asked to broker something that directly harms the Gray Zone community he came from"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Meridian Core",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027",
+                            "Forge-Smith Collective Thundermouth Double \u0027Old Testament\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Meridian Core",
+                             "Meridian Core",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "Silver",
+                             "Harbor Fish Shack",
+                             "Honest Burger"
+                         ],
+    "district":  "Meridian Core",
+    "physical_description":  {
+                                 "heritage":  "Northern European and Middle Eastern ancestry form the visual foundation (76% combined), with meaningful contributions from East Asian, Hispanic/Latin American, and minor Sub-Saharan African ancestry. This creates a balanced, non-dominant phenotype where Northern European bone structure and Middle Eastern definition share equal visual weight, tempered by East Asian angularity in the eye area and subtle warmth from the Hispanic/Latin American and Sub-Saharan African components. His features embody the Ubiquitous Diaspora\u0027s characteristic genetic recombination â€” ancestry visible but not categorizable.",
+                                 "height_cm":  180,
+                                 "weight_kg":  82,
+                                 "build":  "Broad-shouldered and substantial without heaviness; the frame of someone who came from manual labor tier but has maintained discipline through corporate years. Solid, not athletic â€” the weight sits in his chest and shoulders.",
+                                 "hair_color":  "Silver-gray, fully natural transition",
+                                 "hair_style":  "Short, cropped close to the scalp, immaculately groomed",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, unaugmented",
+                                 "skin_tone":  "Warm olive-bronze with golden undertones, the direct result of Northern European paleness and Middle Eastern depth blended with East Asian, Hispanic/Latin American, and minor Sub-Saharan African warmth. The tone reads as Mediterranean but with subtle golden richness.",
+                                 "complexion":  "Weathered but well-maintained; minimal visible lines despite age, suggesting either genetic luck or subtle cosmetic intervention. Clean-shaven. Skin has the particular clarity of someone who treats their face as a professional asset. Facial structure is balanced between Northern European regularity and Middle Eastern definition, with defined cheekbones and slightly squared jawline. East Asian genetics contribute subtle eye area angularity and slightly higher cheekbone prominence. Complexion is even-toned across the face with no unusual discoloration.",
+                                 "distinguishing_marks":  [
+                                                              "A thin, pale scar running approximately 4cm along his left jawline, visible only in certain light, likely from his Old Harbor decades",
+                                                              "Very faint burn scar on the inside of his right wrist, roughly 2cm diameter, almost invisible unless you know where to look"
+                                                          ],
+                                 "visible_augmentations":  "None. The cortical indexer, subvocal implant, and biometric regulation implant are all subcutaneous or neural. His eyes are unmodified. He wears a thin silver wedding band on his right ring finger â€” not married, a deliberate aesthetic choice for professional trust-building.",
+                                 "posture_movement":  "Unnaturally still when seated or in conversation â€” the practiced stillness of someone who learned that motion reads as anxiety. Moves with economy when he does move. His hands are steady and his breathing is controlled. When alone, occasionally rolls something small between his fingers (the obsidian bead), a micro-movement that suggests his stillness is a performance, not a nature.",
+                                 "clothing_style":  "Tier 2-3 corporate neutral: tailored charcoal and navy suits from mid-tier makers, white or pale gray shirts, minimal jewelry beyond the ring. Shoes are always polished. He dresses to be forgotten, to read as institutional rather than individual. Everything is expensive in a way that does not announce itself. His watch is a mid-range chronometer, intentionally unremarkable."
+                             },
+    "image_prompt":  "Cyrus MÃ¶ller-Fredriksen, 180cm tall, broad-shouldered corporate man with silver-gray cropped hair and warm olive-bronze skin reflecting Northern European and Middle Eastern ancestry balanced with East Asian, Hispanic/Latin American, and Sub-Saharan African heritage. Dark brown unaugmented eyes, defined cheekbones, balanced facial structure, subtle scar on left jawline visible in certain light. Clean-shaven, weathered but well-maintained complexion. Seated in corporate stillness, hands steady, wearing tailored charcoal suit and pale gray shirt, silver wedding band, polished shoes. GLMZ, Great Lakes Metropolitan Zone, cool corporate office lighting, professional trust-building aesthetic, institutional rather than individual, everything expensive in an unremarkable way. Mood: controlled, practiced stillness, the performance of professionalism. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  39.9,
+                             "Middle Eastern":  36.1,
+                             "East Asian":  13.3,
+                             "Hispanic/Latin American":  8.9,
+                             "Sub-Saharan African":  1.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Austrian":  11.7,
+                                                                       "German":  1.8
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  8.3
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "Irish":  11.4,
+                                                                            "Scottish":  6.7
+                                                                        }
+                                                  },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  20.9
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Kuwaiti":  3.8,
+                                                                     "Yemeni":  2.7
+                                                                 },
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  7.3,
+                                                                          "Lebanese":  1.4
+                                                                      }
+                                               },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Sichuanese":  8.3,
+                                                               "Hakka":  5
+                                                           }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  8.9
+                                                                                 }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  1.2
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Congolese":  0.6
+                                                                            }
+                                                    }
+                        },
+    "tier":  "3"
 }

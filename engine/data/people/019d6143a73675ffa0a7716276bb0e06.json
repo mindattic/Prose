@@ -1,280 +1,307 @@
-{
-  "id": "019d6143a73675ffa0a7716276bb0e06",
-  "type": "character",
-  "name": "Gulbakyt Arredondo",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Q-zero ghost — person with no digital identity",
-  "age": 24,
-  "status": "active",
-  "location": "Irkalla (sleeps rough; known to haunt the edges of Grand Crossing Gate), near Halsted and Division",
-  "description": "Gulbakyt Arredondo in GLMZ the way a smudge exists on glass — present, visible up close, invisible to systems. They are slight and quick, with a narrow face, very dark skin, and hair grown out in a dense, unpruned natural that they've threaded through with copper wire salvaged from old conduit — not for aesthetics exactly, more the way a bird lines a nest. Their eyes are a striking honey-amber with natural starburst patterning in the irises, one of the few things about them that seems to invite attention. They move in a permanent half-crouch, not from fear exactly but from a lifetime habit of occupying less space than they're entitled to. They wear whatever fits and whatever doesn't show stains and have no particular relationship with color or style.\n\nZinnia was born to parents who were themselves Q-zeros — Nigerien refugees who crossed the corponation registration wall and chose invisibility over the terms of citizenship. They have never had a digital footprint, a Quanta account, a biometric record, or a registered name. Legally they do not exist. In practice they are extraordinarily good at existing anyway, navigating the city by a combination of spatial memory, social mimicry, and a preternatural ability to read who in any given space has power and who doesn't. They are not ideological about their status — being Q-zero isn't a choice or a statement, it's just what they are. They are however deeply pragmatic, deeply suspicious of anyone who seems too interested in them, and quietly desperate for something they can't name.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.3,
-      "id": 0.8,
-      "shadow": 0.5,
-      "mask": 0.6,
-      "ghost": 0.9
-    },
-    "core_fears": [
-      "being registered — losing the invisibility that is also the only identity they know",
-      "that their parents' sacrifice in staying Q-zero was meaningless or wrong"
-    ],
-    "core_desires": [
-      "to feel real to at least one person in a permanent way",
-      "a safe place to sleep for more than a few nights in a row"
-    ],
-    "coping_mechanisms": [
-      "hypervigilant environmental scanning — always knows all exits",
-      "dissociative humor, deflecting serious moments with a flat joke"
-    ],
-    "blind_spots": [
-      "believes connection requires disclosure, so avoids both; profoundly lonely as a result",
-      "overestimates how much registered people's lives are better than theirs"
-    ],
-    "secret": "They found a dead woman's registration chip two months ago. They've been carrying it in a sealed pouch, haven't used it, haven't discarded it. Some nights they take it out and just hold it. They don't know what they want from it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped, efficient, minimal. Uses cant terms from the Q-zero underground. Occasionally slips into a more formal, almost stilted register they got from reading whatever text they could find — no formal education but voracious and unguided reading.",
-    "cadence": "Quick when nervous, which is often. Long pauses when thinking. Rarely finishes sentences when the ending seems obvious to them.",
-    "verbal_tics": [
-      "'You follow?' as a check that they're being understood",
-      "Trailing off mid-sentence and looking away",
-      "Refers to registered citizens as 'tagged'"
-    ],
-    "example_lines": [
-      "'I'm not in the system. So far as the system cares, I'm weather. You follow?'",
-      "'Tagged folk think invisible means safe. It means hungry. There's a difference.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The dead woman whose registration chip Zinnia carries was not registered as dead ��� she was registered as alive, working, paying taxes. Someone is using her identity. Zinnia is the only one who knows there's a body.",
-    "A Null Web elder has asked Zinnia to carry a message to a Q-zero community in Escanaba Gateway — the message is encoded in a way Zinnia cannot read, and two tagged people are already following them"
-  ],
-  "narrative_function": "Access to spaces and information that registered citizens cannot reach. A window into what it means to live outside every official system. Can be hired for untraceable tasks. May need help from people with digital existence to solve a problem they cannot solve alone.",
-  "augmentations": "None. Zero. They are suspicious of augmentations that could be tracked or that require registration.",
-  "daily_life": "Wakes whenever they wake in whatever hidden space they last slept; spends mornings doing day labor for cash-equivalent barter (Φ-scrip, food chits) at Grand Crossing Gate; afternoons navigating, scavenging, surviving; evenings in the Irkalla underground where Q-zeros gather.",
-  "affiliation": "None — loosely known to the Q-zero underground network called the Null Web",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 4,
-      "empathy": 7,
-      "expression": 4,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 1,
-      "transparency_guardedness": 5
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "q-zero",
-      "stateless",
-      "survivor",
-      "urban-ghost",
-      "unrealized-longing"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never register anything — not a purchase, not a location, not a name",
-      "Trust is extended in increments; the first increment is very small"
-    ],
-    "escalation_ladder": [
-      "Goes still and watchful",
-      "Physically relocates without explanation",
-      "Disappears — simply ceases to be findable for days",
-      "In genuine danger: runs with everything they have, which is considerable"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Evasive and economical — answers questions with questions, volunteers nothing",
-      "friends": "Oddly intense and loyal once trust is established; treats friendship like a scarce resource"
-    },
-    "stress_responses": {
-      "low": "Nervous humor and subject changes",
-      "medium": "Silence and rapid environmental reassessment",
-      "high": "Complete withdrawal — becomes monosyllabic and begins planning exits"
-    },
-    "contradictions": [
-      "Furiously protective of their invisibility while being desperately lonely for visibility",
-      "Distrusts systems but has memorized the Meridian transit system map down to maintenance corridors"
-    ],
-    "habits": [
-      "Touches the sealed pouch with the registration chip every morning to confirm it's still there",
-      "Counts exits upon entering any space before doing anything else",
-      "Eats whatever is available without apparent preference, methodically"
-    ],
-    "breaking_points": [
-      "Being forcibly scanned or registered — would experience this as a kind of death",
-      "Witnessing a child being turned away from aid because they're Q-zero"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Irkalla (sleeps rough; known to haunt the edges of Grand Crossing Gate)",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in a Q-zero enclave in what is now Irkalla; parents were Nigerien-Fijian refugees from the first corponation border-wall sweeps",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Parents disappear during a registration enforcement sweep; Zinnia escapes by hiding in a drainage conduit for three days",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Makes first contact with the Null Web; learns the city's invisible geography",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Finds the dead woman and her chip near Grand Crossing Gate",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "related_entities": [
-    "Grand Crossing Gate",
-    "Escanaba Gateway",
-    "Irkalla",
-    "Copper",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Glass",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Gravimetric Collapse Charge GCC-9",
-    "GLMZ",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
-  ],
-  "district": "The Wasteland",
-  "physical_description": {
-    "heritage": "Complex genetic mosaic: Southeast Asian (38.3%), Hispanic/Latin American (36.4%), and Pacific Islander (25.3%) ancestry creates a striking phenotype. The blend produces warm bronze-brown skin with golden and peachy undertones; bone structure combines Southeast Asian angularity with Pacific Islander robustness, creating defined cheekbones and a slightly broader facial geometry. Features reflect the diverse beauty of pan-Pacific and Latinx heritage—delicate in some planes, sturdy in others.",
-    "height_cm": 162,
-    "weight_kg": 48,
-    "build": "Slight and wiry, with minimal muscle definition — the build of someone who moves efficiently rather than powerfully, all lean angles and economical motion",
-    "hair_color": "Natural black with copper wire threaded throughout",
-    "hair_style": "Dense, unpruned natural grown long; copper salvage wire woven throughout in loose, organic patterns like a bird's nest",
-    "hair_length": "Long (shoulder-length and beyond)",
-    "eye_color": "Striking honey-amber with natural starburst patterning in the irises",
-    "skin_tone": "Warm bronze-brown with golden and peachy undertones; the coloration reflects Southeast Asian, Pacific Islander, and Hispanic/Latin American heritage, creating natural variation across the face and body that deepens slightly in sun-exposed areas",
-    "complexion": "Angular face with sharp, defined cheekbones reflecting Southeast Asian heritage; features show the blend of delicate and robust bone structure from Pacific Islander ancestry; skin shows the wear of rough living but is otherwise clear; minimal grooming beyond necessity; expression often reads as guarded or calculating",
-    "distinguishing_marks": [
-      "Natural starburst patterning visible in both irises — a genetic variation that makes eye contact distinctive and memorable",
-      "Hands show signs of day labor: calluses on palms and fingers, occasional minor cuts and scrapes in various stages of healing",
-      "No intentional tattoos or marks; any scars are faint and unremarkable from rough living"
-    ],
-    "visible_augmentations": "None visible. Zero augmentations by choice — skin is unmarked by implant sites, no LED optics, no subdermal tech. The copper wire in their hair is salvage, not neural interface.",
-    "posture_movement": "Permanent half-crouch stance, even when standing still; moves with quick, efficient economy of motion; shoulders slightly inward as if occupying less space than physically present; head often angled to observe without seeming to; never fully relaxed in open spaces",
-    "clothing_style": "Practical Tier 4-5 layering: worn cargo pants or salvaged work trousers with multiple pockets (for scavenging); oversized or ill-fitting jackets and hoodies in neutral grays and blacks; no logos or identifiable branding; clothing selected for function (pockets, durability, lack of stains) rather than style; footwear is worn sneakers or boots held together with improvised repairs; no accessories except the copper wire and whatever they're currently carrying"
-  },
-  "image_prompt": "Gulbakyt Arredondo, 162cm slight wiry frame, warm bronze-brown skin with golden undertones blending Southeast Asian, Hispanic/Latin American, and Pacific Islander heritage. Sharp defined cheekbones with robust Pacific Islander bone structure, angular face showing delicate and sturdy features. Striking honey-amber eyes with natural starburst irises. Long shoulder-length black hair with copper salvage wire woven organically throughout like a bird's nest. Guarded expression, permanent half-crouch stance, moves with economical efficiency. Worn gray hoodie, oversized jacket, salvaged work cargo pants with multiple pockets, worn boots held together with improvised repairs. Calloused hands showing day labor wear. Zero visible augmentations, skin unmarked. GLMZ Great Lakes Metropolitan Zone, dimly lit industrial scavenging site, neon glints off copper wire in hair, gritty atmospheric lighting, observant pose suggesting caution and calculation --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 38.3,
-    "Hispanic/Latin American": 36.4,
-    "Pacific Islander": 25.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 14.7
-      },
-      "Filipino": {
-        "Cebuano": 12.5
-      },
-      "Laotian": {
-        "Laotian": 11.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Dominican": 8.9,
-        "Cuban": 26.5
-      },
-      "South American": {
-        "Ecuadorian": 0.9,
-        "Brazilian": 0.1
-      }
-    },
-    "Pacific Islander": {
-      "Polynesian": {
-        "Samoan": 25.3
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a73675ffa0a7716276bb0e06",
+    "type":  "character",
+    "name":  "Gulbakyt Arredondo",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Q-zero ghost â€” person with no digital identity",
+    "age":  24,
+    "status":  "active",
+    "location":  "Irkalla (sleeps rough; known to haunt the edges of Grand Crossing Gate), near Halsted and Division",
+    "description":  "Gulbakyt Arredondo in GLMZ the way a smudge exists on glass â€” present, visible up close, invisible to systems. They are slight and quick, with a narrow face, very dark skin, and hair grown out in a dense, unpruned natural that they\u0027ve threaded through with copper wire salvaged from old conduit â€” not for aesthetics exactly, more the way a bird lines a nest. Their eyes are a striking honey-amber with natural starburst patterning in the irises, one of the few things about them that seems to invite attention. They move in a permanent half-crouch, not from fear exactly but from a lifetime habit of occupying less space than they\u0027re entitled to. They wear whatever fits and whatever doesn\u0027t show stains and have no particular relationship with color or style.\n\nZinnia was born to parents who were themselves Q-zeros â€” Nigerien refugees who crossed the corponation registration wall and chose invisibility over the terms of citizenship. They have never had a digital footprint, a Quanta account, a biometric record, or a registered name. Legally they do not exist. In practice they are extraordinarily good at existing anyway, navigating the city by a combination of spatial memory, social mimicry, and a preternatural ability to read who in any given space has power and who doesn\u0027t. They are not ideological about their status â€” being Q-zero isn\u0027t a choice or a statement, it\u0027s just what they are. They are however deeply pragmatic, deeply suspicious of anyone who seems too interested in them, and quietly desperate for something they can\u0027t name.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being registered â€” losing the invisibility that is also the only identity they know",
+                                          "that their parents\u0027 sacrifice in staying Q-zero was meaningless or wrong"
+                                      ],
+                       "core_desires":  [
+                                            "to feel real to at least one person in a permanent way",
+                                            "a safe place to sleep for more than a few nights in a row"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "hypervigilant environmental scanning â€” always knows all exits",
+                                                 "dissociative humor, deflecting serious moments with a flat joke"
+                                             ],
+                       "blind_spots":  [
+                                           "believes connection requires disclosure, so avoids both; profoundly lonely as a result",
+                                           "overestimates how much registered people\u0027s lives are better than theirs"
+                                       ],
+                       "secret":  "They found a dead woman\u0027s registration chip two months ago. They\u0027ve been carrying it in a sealed pouch, haven\u0027t used it, haven\u0027t discarded it. Some nights they take it out and just hold it. They don\u0027t know what they want from it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped, efficient, minimal. Uses cant terms from the Q-zero underground. Occasionally slips into a more formal, almost stilted register they got from reading whatever text they could find â€” no formal education but voracious and unguided reading.",
+                            "cadence":  "Quick when nervous, which is often. Long pauses when thinking. Rarely finishes sentences when the ending seems obvious to them.",
+                            "verbal_tics":  [
+                                                "\u0027You follow?\u0027 as a check that they\u0027re being understood",
+                                                "Trailing off mid-sentence and looking away",
+                                                "Refers to registered citizens as \u0027tagged\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I\u0027m not in the system. So far as the system cares, I\u0027m weather. You follow?\u0027",
+                                                  "\u0027Tagged folk think invisible means safe. It means hungry. There\u0027s a difference.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The dead woman whose registration chip Zinnia carries was not registered as dead ï¿½ï¿½ï¿½ she was registered as alive, working, paying taxes. Someone is using her identity. Zinnia is the only one who knows there\u0027s a body.",
+                        "A Null Web elder has asked Zinnia to carry a message to a Q-zero community in Escanaba Gateway â€” the message is encoded in a way Zinnia cannot read, and two tagged people are already following them"
+                    ],
+    "narrative_function":  "Access to spaces and information that registered citizens cannot reach. A window into what it means to live outside every official system. Can be hired for untraceable tasks. May need help from people with digital existence to solve a problem they cannot solve alone.",
+    "augmentations":  "None. Zero. They are suspicious of augmentations that could be tracked or that require registration.",
+    "daily_life":  "Wakes whenever they wake in whatever hidden space they last slept; spends mornings doing day labor for cash-equivalent barter (Î¦-scrip, food chits) at Grand Crossing Gate; afternoons navigating, scavenging, surviving; evenings in the Irkalla underground where Q-zeros gather.",
+    "affiliation":  "None â€” loosely known to the Q-zero underground network called the Null Web",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  4,
+                                 "empathy":  7,
+                                 "expression":  4,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  5
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "q-zero",
+                               "stateless",
+                               "survivor",
+                               "urban-ghost",
+                               "unrealized-longing"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never register anything â€” not a purchase, not a location, not a name",
+                                              "Trust is extended in increments; the first increment is very small"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Goes still and watchful",
+                                                 "Physically relocates without explanation",
+                                                 "Disappears â€” simply ceases to be findable for days",
+                                                 "In genuine danger: runs with everything they have, which is considerable"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Evasive and economical â€” answers questions with questions, volunteers nothing",
+                                                   "friends":  "Oddly intense and loyal once trust is established; treats friendship like a scarce resource"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Nervous humor and subject changes",
+                                                "medium":  "Silence and rapid environmental reassessment",
+                                                "high":  "Complete withdrawal â€” becomes monosyllabic and begins planning exits"
+                                            },
+                       "contradictions":  [
+                                              "Furiously protective of their invisibility while being desperately lonely for visibility",
+                                              "Distrusts systems but has memorized the Meridian transit system map down to maintenance corridors"
+                                          ],
+                       "habits":  [
+                                      "Touches the sealed pouch with the registration chip every morning to confirm it\u0027s still there",
+                                      "Counts exits upon entering any space before doing anything else",
+                                      "Eats whatever is available without apparent preference, methodically"
+                                  ],
+                       "breaking_points":  [
+                                               "Being forcibly scanned or registered â€” would experience this as a kind of death",
+                                               "Witnessing a child being turned away from aid because they\u0027re Q-zero"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Irkalla (sleeps rough; known to haunt the edges of Grand Crossing Gate)",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in a Q-zero enclave in what is now Irkalla; parents were Nigerien-Fijian refugees from the first corponation border-wall sweeps",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Parents disappear during a registration enforcement sweep; Zinnia escapes by hiding in a drainage conduit for three days",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Makes first contact with the Null Web; learns the city\u0027s invisible geography",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Finds the dead woman and her chip near Grand Crossing Gate",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                            ],
+    "related_entities":  [
+                             "Grand Crossing Gate",
+                             "Escanaba Gateway",
+                             "Irkalla",
+                             "Copper",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Glass",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "Gravimetric Collapse Charge GCC-9",
+                             "GLMZ",
+                             "Sterling-Nakamura PersonalAegis PA-7 \u0027Rampart\u0027"
+                         ],
+    "district":  "The Wasteland",
+    "physical_description":  {
+                                 "heritage":  "Complex genetic mosaic: Southeast Asian (38.3%), Hispanic/Latin American (36.4%), and Pacific Islander (25.3%) ancestry creates a striking phenotype. The blend produces warm bronze-brown skin with golden and peachy undertones; bone structure combines Southeast Asian angularity with Pacific Islander robustness, creating defined cheekbones and a slightly broader facial geometry. Features reflect the diverse beauty of pan-Pacific and Latinx heritageâ€”delicate in some planes, sturdy in others.",
+                                 "height_cm":  162,
+                                 "weight_kg":  48,
+                                 "build":  "Slight and wiry, with minimal muscle definition â€” the build of someone who moves efficiently rather than powerfully, all lean angles and economical motion",
+                                 "hair_color":  "Natural black with copper wire threaded throughout",
+                                 "hair_style":  "Dense, unpruned natural grown long; copper salvage wire woven throughout in loose, organic patterns like a bird\u0027s nest",
+                                 "hair_length":  "Long (shoulder-length and beyond)",
+                                 "eye_color":  "Striking honey-amber with natural starburst patterning in the irises",
+                                 "skin_tone":  "Warm bronze-brown with golden and peachy undertones; the coloration reflects Southeast Asian, Pacific Islander, and Hispanic/Latin American heritage, creating natural variation across the face and body that deepens slightly in sun-exposed areas",
+                                 "complexion":  "Angular face with sharp, defined cheekbones reflecting Southeast Asian heritage; features show the blend of delicate and robust bone structure from Pacific Islander ancestry; skin shows the wear of rough living but is otherwise clear; minimal grooming beyond necessity; expression often reads as guarded or calculating",
+                                 "distinguishing_marks":  [
+                                                              "Natural starburst patterning visible in both irises â€” a genetic variation that makes eye contact distinctive and memorable",
+                                                              "Hands show signs of day labor: calluses on palms and fingers, occasional minor cuts and scrapes in various stages of healing",
+                                                              "No intentional tattoos or marks; any scars are faint and unremarkable from rough living"
+                                                          ],
+                                 "visible_augmentations":  "None visible. Zero augmentations by choice â€” skin is unmarked by implant sites, no LED optics, no subdermal tech. The copper wire in their hair is salvage, not neural interface.",
+                                 "posture_movement":  "Permanent half-crouch stance, even when standing still; moves with quick, efficient economy of motion; shoulders slightly inward as if occupying less space than physically present; head often angled to observe without seeming to; never fully relaxed in open spaces",
+                                 "clothing_style":  "Practical Tier 4-5 layering: worn cargo pants or salvaged work trousers with multiple pockets (for scavenging); oversized or ill-fitting jackets and hoodies in neutral grays and blacks; no logos or identifiable branding; clothing selected for function (pockets, durability, lack of stains) rather than style; footwear is worn sneakers or boots held together with improvised repairs; no accessories except the copper wire and whatever they\u0027re currently carrying"
+                             },
+    "image_prompt":  "Gulbakyt Arredondo, 162cm slight wiry frame, warm bronze-brown skin with golden undertones blending Southeast Asian, Hispanic/Latin American, and Pacific Islander heritage. Sharp defined cheekbones with robust Pacific Islander bone structure, angular face showing delicate and sturdy features. Striking honey-amber eyes with natural starburst irises. Long shoulder-length black hair with copper salvage wire woven organically throughout like a bird\u0027s nest. Guarded expression, permanent half-crouch stance, moves with economical efficiency. Worn gray hoodie, oversized jacket, salvaged work cargo pants with multiple pockets, worn boots held together with improvised repairs. Calloused hands showing day labor wear. Zero visible augmentations, skin unmarked. GLMZ Great Lakes Metropolitan Zone, dimly lit industrial scavenging site, neon glints off copper wire in hair, gritty atmospheric lighting, observant pose suggesting caution and calculation --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  38.3,
+                             "Hispanic/Latin American":  36.4,
+                             "Pacific Islander":  25.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  14.7
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Cebuano":  12.5
+                                                                 },
+                                                    "Laotian":  {
+                                                                    "Laotian":  11.1
+                                                                }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Dominican":  8.9,
+                                                                              "Cuban":  26.5
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  0.9,
+                                                                                   "Brazilian":  0.1
+                                                                               }
+                                                        },
+                            "Pacific Islander":  {
+                                                     "Polynesian":  {
+                                                                        "Samoan":  25.3
+                                                                    }
+                                                 }
+                        },
+    "tier":  "1"
 }

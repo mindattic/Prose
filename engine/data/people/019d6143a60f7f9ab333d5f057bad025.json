@@ -1,315 +1,344 @@
-{
-  "id": "019d6143a60f7f9ab333d5f057bad025",
-  "type": "character",
-  "name": "Boluwatife Morimoto",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Building superintendent for a mid-tier residential block",
-  "age": 47,
-  "status": "active",
-  "location": "Lockhaven North, Block 7 — a twelve-story residential stack owned by a Palladian property sub-entity, near Armitage and Milwaukee",
-  "description": "Boluwatife Morimoto is a big woman, wide through the shoulders and unhurried in every movement, with dark skin and close-cropped natural hair going silver at the temples. She has no cosmetic geneware — considers it wasteful — but her left forearm is sheathed in functional chrome from wrist to elbow, a prosthetic she received after an industrial accident fifteen years ago. She keeps it polished to a mirror shine, the one vanity she permits herself. Her face is deeply expressive, capable of communicating entire paragraphs of displeasure through a single lifted brow.\n\nBoluwatife Morimoto has managed Block 7 for eleven years and knows every pipe, every tenant, and every leak before it happens. She is the closest thing to a government most residents will ever interact with — she mediates disputes, facilitates unofficial rent negotiations, holds keys to every unit, and knows who is three months behind and who is running an unlicensed business out of their kitchen. She is fair to a degree that exhausts her and does not apologize for any of her decisions.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.75,
-      "id": 0.4,
-      "shadow": 0.45,
-      "mask": 0.35,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Palladian terminating her contract and leaving the building to a remote management system",
-      "one of her tenants dying of something she could have prevented"
-    ],
-    "core_desires": [
-      "for Block 7 to function as a genuine community, not just a revenue asset",
-      "to retire knowing the building is in good hands"
-    ],
-    "coping_mechanisms": [
-      "physical labor as emotional regulation",
-      "maintaining strict routines as a bulwark against chaos"
-    ],
-    "blind_spots": [
-      "her authority in the building has become so total she cannot see when she is overstepping — she believes she always knows best"
-    ],
-    "secret": "She has been quietly subsidizing three families' rent shortfalls out of her own wages for two years, recording them as maintenance cost overruns in Palladian's system. The discrepancy is approaching a threshold that will trigger an audit."
-  },
-  "speech_patterns": {
-    "vocabulary": "Direct and institutional, carries the cadence of someone who has read too many maintenance contracts. Occasionally drops into Bambara when frustrated.",
-    "cadence": "Slow and weighted — every sentence arrives like a decision that's already been made.",
-    "verbal_tics": [
-      "'That is not how this building works'",
-      "refers to Block 7 as 'my building' without self-consciousness"
-    ],
-    "example_lines": [
-      "'You have a noise complaint. I have seventeen noise complaints. Yours is noted.'",
-      "'Palladian owns the walls. I run what's inside them. There is a difference and you will respect it.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A tenant in unit 9-F has stopped answering the door for eleven days — Fanta is two decisions away from using her master key and needs someone else to make the call for her",
-    "The Palladian audit is coming and she needs someone to help her quietly restructure four years of falsified maintenance records before an inspector arrives"
-  ],
-  "narrative_function": "Gateway to the residential community of Lockhaven North — controls access, knows everyone's business. Can be a quest giver, a gatekeeper, a source of information about specific tenants, or an obstacle. Represents institutional power at human scale.",
-  "augmentations": "Chrome prosthetic left forearm (functional, utility-grade, high polish). Internal pressure and temperature sensors in the prosthetic hand for plumbing diagnostics.",
-  "daily_life": "On-call all hours; spends mornings doing inspection rounds, afternoons on maintenance and paperwork, evenings available to tenants. Eats dinner at the same corner table in the ground-floor common room every night at 19:00.",
-  "affiliation": "Palladian (property subsidiary, Lockhaven North management contract); functionally independent in daily operation",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 7,
-      "dexterity": 5,
-      "vitality": 8,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 5,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 6,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 4,
-      "transparency_guardedness": 0
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community anchor",
-      "institutional gatekeeper",
-      "pragmatic idealist",
-      "rule-breaker for good reasons",
-      "physical presence"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The building's stability comes before any individual's convenience, including her own",
-      "Never lie to a tenant directly — omit, redirect, or refuse, but do not lie"
-    ],
-    "escalation_ladder": [
-      "Explain the rule once, patiently",
-      "Explain the consequence, without emotion",
-      "Implement the consequence",
-      "Involve Palladian, which she considers a personal failure"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional and assessing — not unfriendly but not warm until trust is established",
-      "friends": "Rare, deep loyalty; she feeds people and shows up at 02:00 if needed"
-    },
-    "stress_responses": {
-      "low": "Becomes more methodical — lists, schedules, inspections",
-      "medium": "Goes physically very still and speaks more slowly",
-      "high": "Cleans. Aggressively. For hours."
-    },
-    "contradictions": [
-      "Believes fiercely in rules and fairness while systematically breaking financial regulations to protect people she cares about"
-    ],
-    "habits": [
-      "Runs her chrome hand along the walls during inspection rounds, feeling for vibration anomalies",
-      "Leaves a small digital candle lit on the building's shared network at night — an offering to whatever E.L.F. she believes keeps the boiler running"
-    ],
-    "breaking_points": [
-      "A tenant being evicted without cause",
-      "Someone threatening to expose the falsified maintenance records"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Chrome prosthetic left forearm with integrated pressure/temperature sensors (utility-grade, gen-2)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Chrome prosthetic left forearm with integrated pressure/temperature sensors (utility-grade, gen-2)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Lockhaven North",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2153 — Born in Lockhaven North to a Malian-Danish family",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2178 — Lost left forearm in a building infrastructure accident; received prosthetic through Palladian worker compensation",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2189 — Appointed superintendent of Block 7",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2198 — Began subsidizing tenant rent shortfalls, recording as maintenance overruns",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Palladian audit threshold approaching",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Street Custom 'Lazarus Wire' Garrote System"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Lockhaven North",
-    "Palladian Construction",
-    "The Accidental",
-    "The Peninsula",
-    "Silver",
-    "Compass Rose"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex diaspora blend: East Asian (41.2%) as primary ancestry, Hispanic/Latin American (30.7%) as secondary, with significant Sub-Saharan African (11.0%), Northern European (10.1%), and Southeast Asian (7.0%) contributions. Creates warm medium-to-deep brown skin with golden undertones, angular facial structure blending East Asian bone structure with Latin American features, enriched by African melanin depth and Northern European cheekbone prominence.",
-    "height_cm": 178,
-    "weight_kg": 94,
-    "build": "Broad-shouldered and solid, with a thick torso and strong legs. No excess body fat but substantial muscle mass from decades of hands-on maintenance work. Carries herself with the unrushed weight of someone who knows her own strength.",
-    "hair_color": "Natural black with silver threading at temples and along the sides",
-    "hair_style": "Close-cropped natural cut, no styling products, minimal maintenance",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, sharp and assessing",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones, reflecting dominant East Asian and Hispanic ancestry balanced with African melanin depth. Subtle warm richness from Southeast Asian contribution. Even complexion without excessive weathering despite outdoor work history.",
-    "complexion": "Weathered and expressive face with deep lines around the eyes and mouth from years of outdoor work and the weight of responsibility. High cheekbones with East Asian influence blended with fuller cheek structure from Latin American ancestry. Strong jawline with defined contours. Minimal makeup. Calloused hands. Small scar on left cheekbone from a minor job site incident.",
-    "distinguishing_marks": [
-      "Thin horizontal scar on left cheekbone, approximately 3cm long, slightly lighter than surrounding skin",
-      "Industrial burn scarring on right shoulder and upper arm from old accident, faded to pale patches",
-      "Left forearm sheathed in mirror-polished utilitarian chrome from wrist to elbow, with visible pressure gauge and diagnostic ports on the palm side"
-    ],
-    "visible_augmentations": "Left forearm prosthetic in functional chrome (utility-grade, not cosmetic), kept in high-polish condition. The hand contains integrated pressure and temperature sensors for plumbing diagnostics. No other visible modifications.",
-    "posture_movement": "Unhurried and deliberate in every movement. Stands with weight balanced evenly, shoulders relaxed but ready. Moves through space like someone who owns it without needing to prove it. Her lifted brow and slight head tilt communicate disapproval more effectively than words.",
-    "clothing_style": "Tier 3-4 practical wear: durable coveralls or heavy-duty work pants and fitted utility shirts in grays and dark blues. Steel-toed boots, well-maintained but worn. A heavy jacket in cold months. A keyring with at least thirty keys visible at her belt. No jewelry except a simple analog watch. Everything chosen for function over fashion; nothing flashy, nothing wasteful."
-  },
-  "image_prompt": "Boluwatife Morimoto, 178cm tall broad-shouldered maintenance technician with warm medium-to-deep brown skin with golden undertones reflecting East Asian, Hispanic, and African heritage. Short black hair with silver at temples. Sharp dark brown eyes. Angular face with high East Asian cheekbones, strong Latin American jawline, weathered from decades of outdoor work. Thin scar on left cheekbone. Left forearm sheathed in mirror-polished chrome prosthetic with diagnostic ports, dark burn scars on right shoulder. Wearing gray heavy-duty work coveralls and fitted dark blue utility shirt, steel-toed boots, thick mechanical watch, keyring with thirty keys at belt. Standing in relaxed but commanding posture in industrial plumbing workshop with warm amber lighting, water pipes and tool racks behind her, GLMZ Great Lakes Metropolitan Zone, cinematic realism, character portrait --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 41.2,
-    "Hispanic/Latin American": 30.7,
-    "Sub-Saharan African": 11,
-    "Northern European": 10.1,
-    "Southeast Asian": 7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 24.7
-      },
-      "Chinese": {
-        "Mandarin Northern": 3.4,
-        "Sichuanese": 2.3
-      },
-      "Korean": {
-        "Korean": 10.8
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 16.6
-      },
-      "Caribbean": {
-        "Dominican": 3.4,
-        "Cuban": 4.9
-      },
-      "South American": {
-        "Argentine": 2.9,
-        "Brazilian": 2.9
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Tanzanian": 10.6,
-        "Rwandan": 0.4
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Finnish": 1.8,
-        "Danish": 0.7
-      },
-      "Germanic": {
-        "Austrian": 7.6
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sumatran": 3.5
-      },
-      "Filipino": {
-        "Waray": 1.5,
-        "Tagalog": 2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a60f7f9ab333d5f057bad025",
+    "type":  "character",
+    "name":  "Boluwatife Morimoto",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Building superintendent for a mid-tier residential block",
+    "age":  47,
+    "status":  "active",
+    "location":  "Lockhaven North, Block 7 â€” a twelve-story residential stack owned by a Palladian property sub-entity, near Armitage and Milwaukee",
+    "description":  "Boluwatife Morimoto is a big woman, wide through the shoulders and unhurried in every movement, with dark skin and close-cropped natural hair going silver at the temples. She has no cosmetic geneware â€” considers it wasteful â€” but her left forearm is sheathed in functional chrome from wrist to elbow, a prosthetic she received after an industrial accident fifteen years ago. She keeps it polished to a mirror shine, the one vanity she permits herself. Her face is deeply expressive, capable of communicating entire paragraphs of displeasure through a single lifted brow.\n\nBoluwatife Morimoto has managed Block 7 for eleven years and knows every pipe, every tenant, and every leak before it happens. She is the closest thing to a government most residents will ever interact with â€” she mediates disputes, facilitates unofficial rent negotiations, holds keys to every unit, and knows who is three months behind and who is running an unlicensed business out of their kitchen. She is fair to a degree that exhausts her and does not apologize for any of her decisions.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Palladian terminating her contract and leaving the building to a remote management system",
+                                          "one of her tenants dying of something she could have prevented"
+                                      ],
+                       "core_desires":  [
+                                            "for Block 7 to function as a genuine community, not just a revenue asset",
+                                            "to retire knowing the building is in good hands"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "physical labor as emotional regulation",
+                                                 "maintaining strict routines as a bulwark against chaos"
+                                             ],
+                       "blind_spots":  [
+                                           "her authority in the building has become so total she cannot see when she is overstepping â€” she believes she always knows best"
+                                       ],
+                       "secret":  "She has been quietly subsidizing three families\u0027 rent shortfalls out of her own wages for two years, recording them as maintenance cost overruns in Palladian\u0027s system. The discrepancy is approaching a threshold that will trigger an audit."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Direct and institutional, carries the cadence of someone who has read too many maintenance contracts. Occasionally drops into Bambara when frustrated.",
+                            "cadence":  "Slow and weighted â€” every sentence arrives like a decision that\u0027s already been made.",
+                            "verbal_tics":  [
+                                                "\u0027That is not how this building works\u0027",
+                                                "refers to Block 7 as \u0027my building\u0027 without self-consciousness"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You have a noise complaint. I have seventeen noise complaints. Yours is noted.\u0027",
+                                                  "\u0027Palladian owns the walls. I run what\u0027s inside them. There is a difference and you will respect it.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A tenant in unit 9-F has stopped answering the door for eleven days â€” Fanta is two decisions away from using her master key and needs someone else to make the call for her",
+                        "The Palladian audit is coming and she needs someone to help her quietly restructure four years of falsified maintenance records before an inspector arrives"
+                    ],
+    "narrative_function":  "Gateway to the residential community of Lockhaven North â€” controls access, knows everyone\u0027s business. Can be a quest giver, a gatekeeper, a source of information about specific tenants, or an obstacle. Represents institutional power at human scale.",
+    "augmentations":  "Chrome prosthetic left forearm (functional, utility-grade, high polish). Internal pressure and temperature sensors in the prosthetic hand for plumbing diagnostics.",
+    "daily_life":  "On-call all hours; spends mornings doing inspection rounds, afternoons on maintenance and paperwork, evenings available to tenants. Eats dinner at the same corner table in the ground-floor common room every night at 19:00.",
+    "affiliation":  "Palladian (property subsidiary, Lockhaven North management contract); functionally independent in daily operation",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  7,
+                                   "dexterity":  5,
+                                   "vitality":  8,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  5,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  6,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  0
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community anchor",
+                               "institutional gatekeeper",
+                               "pragmatic idealist",
+                               "rule-breaker for good reasons",
+                               "physical presence"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The building\u0027s stability comes before any individual\u0027s convenience, including her own",
+                                              "Never lie to a tenant directly â€” omit, redirect, or refuse, but do not lie"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Explain the rule once, patiently",
+                                                 "Explain the consequence, without emotion",
+                                                 "Implement the consequence",
+                                                 "Involve Palladian, which she considers a personal failure"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional and assessing â€” not unfriendly but not warm until trust is established",
+                                                   "friends":  "Rare, deep loyalty; she feeds people and shows up at 02:00 if needed"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more methodical â€” lists, schedules, inspections",
+                                                "medium":  "Goes physically very still and speaks more slowly",
+                                                "high":  "Cleans. Aggressively. For hours."
+                                            },
+                       "contradictions":  [
+                                              "Believes fiercely in rules and fairness while systematically breaking financial regulations to protect people she cares about"
+                                          ],
+                       "habits":  [
+                                      "Runs her chrome hand along the walls during inspection rounds, feeling for vibration anomalies",
+                                      "Leaves a small digital candle lit on the building\u0027s shared network at night â€” an offering to whatever E.L.F. she believes keeps the boiler running"
+                                  ],
+                       "breaking_points":  [
+                                               "A tenant being evicted without cause",
+                                               "Someone threatening to expose the falsified maintenance records"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Chrome prosthetic left forearm with integrated pressure/temperature sensors (utility-grade, gen-2)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Chrome prosthetic left forearm with integrated pressure/temperature sensors (utility-grade, gen-2)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Lockhaven North",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2153 â€” Born in Lockhaven North to a Malian-Danish family",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2178 â€” Lost left forearm in a building infrastructure accident; received prosthetic through Palladian worker compensation",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2189 â€” Appointed superintendent of Block 7",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2198 â€” Began subsidizing tenant rent shortfalls, recording as maintenance overruns",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Palladian audit threshold approaching",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Dispatch-45 \u0027Last Word\u0027",
+                            "Street Custom \u0027Lazarus Wire\u0027 Garrote System"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Lockhaven North",
+                             "Palladian Construction",
+                             "The Accidental",
+                             "The Peninsula",
+                             "Silver",
+                             "Compass Rose"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora blend: East Asian (41.2%) as primary ancestry, Hispanic/Latin American (30.7%) as secondary, with significant Sub-Saharan African (11.0%), Northern European (10.1%), and Southeast Asian (7.0%) contributions. Creates warm medium-to-deep brown skin with golden undertones, angular facial structure blending East Asian bone structure with Latin American features, enriched by African melanin depth and Northern European cheekbone prominence.",
+                                 "height_cm":  178,
+                                 "weight_kg":  94,
+                                 "build":  "Broad-shouldered and solid, with a thick torso and strong legs. No excess body fat but substantial muscle mass from decades of hands-on maintenance work. Carries herself with the unrushed weight of someone who knows her own strength.",
+                                 "hair_color":  "Natural black with silver threading at temples and along the sides",
+                                 "hair_style":  "Close-cropped natural cut, no styling products, minimal maintenance",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, sharp and assessing",
+                                 "skin_tone":  "Warm medium-to-deep brown with golden undertones, reflecting dominant East Asian and Hispanic ancestry balanced with African melanin depth. Subtle warm richness from Southeast Asian contribution. Even complexion without excessive weathering despite outdoor work history.",
+                                 "complexion":  "Weathered and expressive face with deep lines around the eyes and mouth from years of outdoor work and the weight of responsibility. High cheekbones with East Asian influence blended with fuller cheek structure from Latin American ancestry. Strong jawline with defined contours. Minimal makeup. Calloused hands. Small scar on left cheekbone from a minor job site incident.",
+                                 "distinguishing_marks":  [
+                                                              "Thin horizontal scar on left cheekbone, approximately 3cm long, slightly lighter than surrounding skin",
+                                                              "Industrial burn scarring on right shoulder and upper arm from old accident, faded to pale patches",
+                                                              "Left forearm sheathed in mirror-polished utilitarian chrome from wrist to elbow, with visible pressure gauge and diagnostic ports on the palm side"
+                                                          ],
+                                 "visible_augmentations":  "Left forearm prosthetic in functional chrome (utility-grade, not cosmetic), kept in high-polish condition. The hand contains integrated pressure and temperature sensors for plumbing diagnostics. No other visible modifications.",
+                                 "posture_movement":  "Unhurried and deliberate in every movement. Stands with weight balanced evenly, shoulders relaxed but ready. Moves through space like someone who owns it without needing to prove it. Her lifted brow and slight head tilt communicate disapproval more effectively than words.",
+                                 "clothing_style":  "Tier 3-4 practical wear: durable coveralls or heavy-duty work pants and fitted utility shirts in grays and dark blues. Steel-toed boots, well-maintained but worn. A heavy jacket in cold months. A keyring with at least thirty keys visible at her belt. No jewelry except a simple analog watch. Everything chosen for function over fashion; nothing flashy, nothing wasteful."
+                             },
+    "image_prompt":  "Boluwatife Morimoto, 178cm tall broad-shouldered maintenance technician with warm medium-to-deep brown skin with golden undertones reflecting East Asian, Hispanic, and African heritage. Short black hair with silver at temples. Sharp dark brown eyes. Angular face with high East Asian cheekbones, strong Latin American jawline, weathered from decades of outdoor work. Thin scar on left cheekbone. Left forearm sheathed in mirror-polished chrome prosthetic with diagnostic ports, dark burn scars on right shoulder. Wearing gray heavy-duty work coveralls and fitted dark blue utility shirt, steel-toed boots, thick mechanical watch, keyring with thirty keys at belt. Standing in relaxed but commanding posture in industrial plumbing workshop with warm amber lighting, water pipes and tool racks behind her, GLMZ Great Lakes Metropolitan Zone, cinematic realism, character portrait --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  41.2,
+                             "Hispanic/Latin American":  30.7,
+                             "Sub-Saharan African":  11,
+                             "Northern European":  10.1,
+                             "Southeast Asian":  7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  24.7
+                                                            },
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  3.4,
+                                                               "Sichuanese":  2.3
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  10.8
+                                                          }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  16.6
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  3.4,
+                                                                              "Cuban":  4.9
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Argentine":  2.9,
+                                                                                   "Brazilian":  2.9
+                                                                               }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Tanzanian":  10.6,
+                                                                             "Rwandan":  0.4
+                                                                         }
+                                                    },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Finnish":  1.8,
+                                                                           "Danish":  0.7
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "Austrian":  7.6
+                                                                   }
+                                                  },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  3.5
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Waray":  1.5,
+                                                                     "Tagalog":  2
+                                                                 }
+                                                }
+                        },
+    "tier":  "3"
 }

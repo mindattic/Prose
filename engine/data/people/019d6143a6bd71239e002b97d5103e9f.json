@@ -1,316 +1,343 @@
-{
-  "id": "019d6143a6bd71239e002b97d5103e9f",
-  "type": "character",
-  "name": "Hildur Hernández",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Bio-waste disposal technician for Aurochs Medical Complex",
-  "age": 27,
-  "status": "active",
-  "location": "Aurochs Medical Complex, service sublevel corridors, near sub-level access near Dearborn and Jackson",
-  "description": "Hildur Hernández is lean and angular, with the particular pallor of someone who works night shifts in fluorescent-lit sublevels, though his Ugandan-Hungarian ancestry gives his skin a warm undertone that fights back. He keeps his head shaved close and has a constellation of small bioluminescent freckle-mods across his left temple and jaw — a cosmetic geneware treatment he had done at eighteen that pulses faintly blue when his heart rate elevates, which he finds mortifying in tense situations. He moves through the hospital's service corridors like someone who has memorized every turn and wants to be finished before anyone notices him.\n\nHe is sharper than his job suggests and acutely aware of that gap, which produces a chip on his shoulder he tries to sand down with self-deprecating humor. He has worked the bio-waste runs at Aurochs for four years and in that time has accidentally become something of an expert in what the hospital throws away — which procedures are spiking, which departments are over-ordering which compounds, which disposal manifests do not match the volumes going into the incinerators. He notices things. He has not yet decided what to do with what he notices.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.5,
-      "id": 0.65,
-      "shadow": 0.4,
-      "mask": 0.55,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "being dismissed for the rest of his life as someone who carries bags of medical trash",
-      "that the things he has noticed in the disposal manifests mean something serious enough to get him hurt"
-    ],
-    "core_desires": [
-      "to get the medical tech certification and be seen differently",
-      "to understand why the numbers do not add up without getting himself killed for asking"
-    ],
-    "coping_mechanisms": [
-      "dark humor about his job before anyone else can make the joke",
-      "online coursework as proof to himself that he is going somewhere",
-      "a running mental catalog of anomalies he has observed, organized by department"
-    ],
-    "blind_spots": [
-      "underestimates how much information he actually possesses and how dangerous it could be",
-      "assumes people look down on him when some of them genuinely do not"
-    ],
-    "secret": "For three months he has been photographing disposal manifest discrepancies and storing them in an encrypted personal archive. One department — the gene therapy research sublevel — is disposing of biological material that does not appear anywhere in the official treatment logs. He has not told anyone. He has not deleted the photos."
-  },
-  "speech_patterns": {
-    "vocabulary": "Casual and quick; uses hospital jargon accurately but pretends it is accidental; self-deprecating humor as deflection",
-    "cadence": "Fast when nervous, which is often; sentences sometimes outrun their endings",
-    "verbal_tics": [
-      "'Not my department.' (ironic, since everything is technically his department)",
-      "'Which is fine.'"
-    ],
-    "example_lines": [
-      "'I just move the bags. Extremely important bags. The most important bags in this building, arguably.'",
-      "'There's a lot you can learn about a hospital from what it throws away. Not that I would know anything about that.'",
-      "'Look, the bioluminescent things were a phase. I was eighteen. I cannot be held responsible for being eighteen.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The gene therapy sublevel disposal discrepancies begin to include something that is clearly not standard biological waste — a material Rúben does not recognize and cannot find in any database he has legitimate access to",
-    "A Helix Biosystems compliance auditor begins asking questions about disposal logs specifically, and makes a point of talking to junior staff — including Rúben — in a way that feels less like routine audit and more like they are looking for a specific leak"
-  ],
-  "narrative_function": "Unexpected information source; has knowledge of hospital operations, waste streams, and disposal records that no one suspects he has; local color for the unglamorous underside of the medical system; potential whistleblower",
-  "augmentations": "Bioluminescent freckle-mods on left temple and jaw (cosmetic geneware, pulses blue under stress); standard-issue hazmat-rated subdermal filter implant in respiratory tract (employer-provided, technically owned by Aurochs)",
-  "daily_life": "Night shift, 2200 to 0600. Runs bio-waste collection from surgical floors, gene therapy wards, and augmentation recovery suites, processes and logs materials, operates the sublevel incinerators. Sleeps days in a rented room in Ironvein. Spends two days a week taking online coursework toward a medical technician certification.",
-  "affiliation": "Aurochs Medical Complex (contracted waste disposal staff, Tier 2 worker classification)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 6,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 5,
-      "creativity": 6,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": -2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "bio-waste tech",
-      "accidental whistleblower",
-      "aurochs sublevel",
-      "night shift",
-      "working class observer"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Keep your head down until you understand what you are looking at",
-      "Never confront authority directly; deflect, joke, leave",
-      "Document before you decide what the documentation means"
-    ],
-    "escalation_ladder": [
-      "Deflection and humor",
-      "Physical absence — finds reasons to be elsewhere",
-      "If truly cornered, blurts the truth unexpectedly and then panics about having done it"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Deflects with jokes; assesses quickly for whether they think less of him for his job",
-      "friends": "Generous and genuinely funny; drops the performance; stays up too late talking"
-    },
-    "stress_responses": {
-      "low": "Jokes more frequently",
-      "medium": "Bioluminescent mods start pulsing; he becomes hyperaware of this and it makes it worse",
-      "high": "Goes completely silent and still; humor evaporates; starts thinking very fast"
-    },
-    "contradictions": [
-      "Insists he does not care about being underestimated while obsessively cataloging evidence of his own competence"
-    ],
-    "habits": [
-      "Photographs disposal manifests on his personal device at end of each shift",
-      "Reviews online course material during 0300 quiet hours in the sublevel",
-      "Counts bags by department; notices when counts are wrong"
-    ],
-    "breaking_points": [
-      "Someone at Aurochs figuring out that he has the encrypted archive",
-      "Being threatened by someone he outranks in knowledge but not power"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good, mandatory annual replacement",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9,
-    "Con Artist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Aurochs Medical Complex",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Ironvein to a Ugandan-Hungarian family; father worked port logistics",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Got bioluminescent freckle-mods; has regretted the choice in high-stress situations ever since",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began contracted waste disposal work at Aurochs Medical Complex",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Three months into building an encrypted archive of disposal manifest discrepancies; has not told anyone",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Forge-Smith Collective Trench Knuckles 'Anvil'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Aurochs Medical Complex",
-    "Helix Biosystems",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Dearborn Forge",
-    "Big Rig",
-    "Slagworks Industrial"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Mixed ancestry: Southeast Asian (38.3%), Hispanic/Latin American (30.4%), Sub-Saharan African (10.9%), South Asian (8.4%), Eastern European (6.8%), Northern European (5.2%). The combination creates a striking polyphonic appearance — warm golden-brown undertones from the Southeast Asian and Hispanic heritage, enriched by African genetics, with subtle coolness from Eastern European ancestry. High, defined cheekbones from Southeast Asian influence balanced with broader orbital structure from African heritage, refined jawline with understated width. A face that reads as genuinely global, carrying features that blend seamlessly across multiple continental regions.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Lean and angular, with a wiry frame that suggests either natural metabolism or years of night-shift fatigue. Minimal muscle definition despite regular physical labor; the build of someone who moves efficiently rather than powerfully.",
-    "hair_color": "Black",
-    "hair_style": "Shaved close to the scalp in a practical, low-maintenance cut",
-    "hair_length": "Shaved",
-    "eye_color": "Dark brown",
-    "skin_tone": "Warm golden-brown with rich depth from blended heritage, medium to medium-deep tone. The characteristic pallor of prolonged fluorescent-light exposure sits over naturally warm undertones that prevent sallowness — a luminous tone with understated complexity that catches light with quiet depth.",
-    "complexion": "Angular jawline with moderate width at the cheekbones reflecting Southeast Asian and South Asian structure; high, defined cheekbones with subtle projection from African heritage. Fine facial features with a slight tension around the eyes and mouth — the look of someone chronically alert. Subtle orbital shape and nose structure reflecting Southeast Asian and South Asian ancestry with warmth from Hispanic heritage. Clean-shaven, meticulously groomed in the manner of someone who has little else to control.",
-    "distinguishing_marks": [
-      "Constellation of bioluminescent freckle-mods across left temple and jaw, arranged in an organic scatter pattern; glow soft blue when heart rate elevates, faintly visible in dim light at rest",
-      "Small surgical scar on left forearm from subdermal filter implant insertion, barely visible unless examined closely"
-    ],
-    "visible_augmentations": "Bioluminescent freckle-mods on left temple and jaw (geneware cosmetic treatment); subdermal hazmat filter implant not externally visible but occasionally detectable as a faint ridge beneath the skin below the left clavicle. Respiratory tract implant is completely internal.",
-    "posture_movement": "Moves with economical precision through tight spaces, shoulders slightly forward, head slightly down in the default posture of service-corridor navigation. Walks as though he has already memorized the route and is mentally three steps ahead. Tendency to stand at angles rather than face-on, a habit from navigating around equipment and maintaining peripheral awareness. Fidgets with fingernails when anxious.",
-    "clothing_style": "Tier 2 contractor: regulation Aurochs-issue hazmat oversuit (navy with reflective trim) worn over cheap synthetic base layers. Off-duty clothing is thrifted and practical — faded work pants, thermal shirts, a battered Ironvein transit hoodie with the crest half-faded. No jewelry. Cheap steel-toed boots, well-maintained. Overall appearance is scrupulously clean but threadbare, with the precision of someone who cannot afford replacements but refuses to look slovenly."
-  },
-  "image_prompt": "Hildur Hernández, 178cm lean-angular build, shaved black hair, dark brown eyes. Medium-deep warm golden-brown skin with subtle richness blending Southeast Asian, Hispanic, African, and South Asian heritage. High defined cheekbones, angular jawline with balanced proportions. Clean-shaven, chronically alert expression with slight tension around eyes. Bioluminescent blue freckle-mods constellation across left temple and jaw faintly glowing. Navy Aurochs-issue hazmat oversuit with reflective trim over thermal layers, steel-toed boots. Standing at slight angle with shoulders forward, economical posture of service-corridor navigation. GLMZ, neon-lit industrial corridor setting with fluorescent overhead lighting, faint atmospheric haze. Mood: meticulously alert, exhausted precision, quiet global presence. Cinematic lighting, photorealistic, --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 38.3,
-    "Hispanic/Latin American": 30.4,
-    "Sub-Saharan African": 10.9,
-    "South Asian": 8.4,
-    "Eastern European": 6.8,
-    "Northern European": 5.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Filipino": {
-        "Tagalog": 38.3
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Colombian": 21.1,
-        "Peruvian": 9.3
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zimbabwean": 5.6
-      },
-      "East African": {
-        "Ugandan": 1.2,
-        "Somali": 4.1
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Tamil": 3.7
-      },
-      "Nepali": {
-        "Nepali": 1.9
-      },
-      "Pakistani": {
-        "Baloch": 2.8
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Russian": 4.7
-      },
-      "Slavic West": {
-        "Polish": 1.1,
-        "Sorbian": 0.3
-      },
-      "Slavic South": {
-        "Serbian": 0.7
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Irish": 3.9
-      },
-      "Germanic": {
-        "Austrian": 0.8,
-        "German": 0.5
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6bd71239e002b97d5103e9f",
+    "type":  "character",
+    "name":  "Hildur HernÃ¡ndez",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Bio-waste disposal technician for Aurochs Medical Complex",
+    "age":  27,
+    "status":  "active",
+    "location":  "Aurochs Medical Complex, service sublevel corridors, near sub-level access near Dearborn and Jackson",
+    "description":  "Hildur HernÃ¡ndez is lean and angular, with the particular pallor of someone who works night shifts in fluorescent-lit sublevels, though his Ugandan-Hungarian ancestry gives his skin a warm undertone that fights back. He keeps his head shaved close and has a constellation of small bioluminescent freckle-mods across his left temple and jaw â€” a cosmetic geneware treatment he had done at eighteen that pulses faintly blue when his heart rate elevates, which he finds mortifying in tense situations. He moves through the hospital\u0027s service corridors like someone who has memorized every turn and wants to be finished before anyone notices him.\n\nHe is sharper than his job suggests and acutely aware of that gap, which produces a chip on his shoulder he tries to sand down with self-deprecating humor. He has worked the bio-waste runs at Aurochs for four years and in that time has accidentally become something of an expert in what the hospital throws away â€” which procedures are spiking, which departments are over-ordering which compounds, which disposal manifests do not match the volumes going into the incinerators. He notices things. He has not yet decided what to do with what he notices.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being dismissed for the rest of his life as someone who carries bags of medical trash",
+                                          "that the things he has noticed in the disposal manifests mean something serious enough to get him hurt"
+                                      ],
+                       "core_desires":  [
+                                            "to get the medical tech certification and be seen differently",
+                                            "to understand why the numbers do not add up without getting himself killed for asking"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "dark humor about his job before anyone else can make the joke",
+                                                 "online coursework as proof to himself that he is going somewhere",
+                                                 "a running mental catalog of anomalies he has observed, organized by department"
+                                             ],
+                       "blind_spots":  [
+                                           "underestimates how much information he actually possesses and how dangerous it could be",
+                                           "assumes people look down on him when some of them genuinely do not"
+                                       ],
+                       "secret":  "For three months he has been photographing disposal manifest discrepancies and storing them in an encrypted personal archive. One department â€” the gene therapy research sublevel â€” is disposing of biological material that does not appear anywhere in the official treatment logs. He has not told anyone. He has not deleted the photos."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Casual and quick; uses hospital jargon accurately but pretends it is accidental; self-deprecating humor as deflection",
+                            "cadence":  "Fast when nervous, which is often; sentences sometimes outrun their endings",
+                            "verbal_tics":  [
+                                                "\u0027Not my department.\u0027 (ironic, since everything is technically his department)",
+                                                "\u0027Which is fine.\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I just move the bags. Extremely important bags. The most important bags in this building, arguably.\u0027",
+                                                  "\u0027There\u0027s a lot you can learn about a hospital from what it throws away. Not that I would know anything about that.\u0027",
+                                                  "\u0027Look, the bioluminescent things were a phase. I was eighteen. I cannot be held responsible for being eighteen.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The gene therapy sublevel disposal discrepancies begin to include something that is clearly not standard biological waste â€” a material RÃºben does not recognize and cannot find in any database he has legitimate access to",
+                        "A Helix Biosystems compliance auditor begins asking questions about disposal logs specifically, and makes a point of talking to junior staff â€” including RÃºben â€” in a way that feels less like routine audit and more like they are looking for a specific leak"
+                    ],
+    "narrative_function":  "Unexpected information source; has knowledge of hospital operations, waste streams, and disposal records that no one suspects he has; local color for the unglamorous underside of the medical system; potential whistleblower",
+    "augmentations":  "Bioluminescent freckle-mods on left temple and jaw (cosmetic geneware, pulses blue under stress); standard-issue hazmat-rated subdermal filter implant in respiratory tract (employer-provided, technically owned by Aurochs)",
+    "daily_life":  "Night shift, 2200 to 0600. Runs bio-waste collection from surgical floors, gene therapy wards, and augmentation recovery suites, processes and logs materials, operates the sublevel incinerators. Sleeps days in a rented room in Ironvein. Spends two days a week taking online coursework toward a medical technician certification.",
+    "affiliation":  "Aurochs Medical Complex (contracted waste disposal staff, Tier 2 worker classification)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  6,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  5,
+                                 "creativity":  6,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "bio-waste tech",
+                               "accidental whistleblower",
+                               "aurochs sublevel",
+                               "night shift",
+                               "working class observer"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Keep your head down until you understand what you are looking at",
+                                              "Never confront authority directly; deflect, joke, leave",
+                                              "Document before you decide what the documentation means"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Deflection and humor",
+                                                 "Physical absence â€” finds reasons to be elsewhere",
+                                                 "If truly cornered, blurts the truth unexpectedly and then panics about having done it"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Deflects with jokes; assesses quickly for whether they think less of him for his job",
+                                                   "friends":  "Generous and genuinely funny; drops the performance; stays up too late talking"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Jokes more frequently",
+                                                "medium":  "Bioluminescent mods start pulsing; he becomes hyperaware of this and it makes it worse",
+                                                "high":  "Goes completely silent and still; humor evaporates; starts thinking very fast"
+                                            },
+                       "contradictions":  [
+                                              "Insists he does not care about being underestimated while obsessively cataloging evidence of his own competence"
+                                          ],
+                       "habits":  [
+                                      "Photographs disposal manifests on his personal device at end of each shift",
+                                      "Reviews online course material during 0300 quiet hours in the sublevel",
+                                      "Counts bags by department; notices when counts are wrong"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone at Aurochs figuring out that he has the encrypted archive",
+                                               "Being threatened by someone he outranks in knowledge but not power"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good, mandatory annual replacement",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9,
+                       "Con Artist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Aurochs Medical Complex",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Ironvein to a Ugandan-Hungarian family; father worked port logistics",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Got bioluminescent freckle-mods; has regretted the choice in high-stress situations ever since",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began contracted waste disposal work at Aurochs Medical Complex",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Three months into building an encrypted archive of disposal manifest discrepancies; has not told anyone",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027",
+                            "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                            "Forge-Smith Collective Trench Knuckles \u0027Anvil\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Aurochs Medical Complex",
+                             "Helix Biosystems",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "Dearborn Forge",
+                             "Big Rig",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Mixed ancestry: Southeast Asian (38.3%), Hispanic/Latin American (30.4%), Sub-Saharan African (10.9%), South Asian (8.4%), Eastern European (6.8%), Northern European (5.2%). The combination creates a striking polyphonic appearance â€” warm golden-brown undertones from the Southeast Asian and Hispanic heritage, enriched by African genetics, with subtle coolness from Eastern European ancestry. High, defined cheekbones from Southeast Asian influence balanced with broader orbital structure from African heritage, refined jawline with understated width. A face that reads as genuinely global, carrying features that blend seamlessly across multiple continental regions.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and angular, with a wiry frame that suggests either natural metabolism or years of night-shift fatigue. Minimal muscle definition despite regular physical labor; the build of someone who moves efficiently rather than powerfully.",
+                                 "hair_color":  "Black",
+                                 "hair_style":  "Shaved close to the scalp in a practical, low-maintenance cut",
+                                 "hair_length":  "Shaved",
+                                 "eye_color":  "Dark brown",
+                                 "skin_tone":  "Warm golden-brown with rich depth from blended heritage, medium to medium-deep tone. The characteristic pallor of prolonged fluorescent-light exposure sits over naturally warm undertones that prevent sallowness â€” a luminous tone with understated complexity that catches light with quiet depth.",
+                                 "complexion":  "Angular jawline with moderate width at the cheekbones reflecting Southeast Asian and South Asian structure; high, defined cheekbones with subtle projection from African heritage. Fine facial features with a slight tension around the eyes and mouth â€” the look of someone chronically alert. Subtle orbital shape and nose structure reflecting Southeast Asian and South Asian ancestry with warmth from Hispanic heritage. Clean-shaven, meticulously groomed in the manner of someone who has little else to control.",
+                                 "distinguishing_marks":  [
+                                                              "Constellation of bioluminescent freckle-mods across left temple and jaw, arranged in an organic scatter pattern; glow soft blue when heart rate elevates, faintly visible in dim light at rest",
+                                                              "Small surgical scar on left forearm from subdermal filter implant insertion, barely visible unless examined closely"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent freckle-mods on left temple and jaw (geneware cosmetic treatment); subdermal hazmat filter implant not externally visible but occasionally detectable as a faint ridge beneath the skin below the left clavicle. Respiratory tract implant is completely internal.",
+                                 "posture_movement":  "Moves with economical precision through tight spaces, shoulders slightly forward, head slightly down in the default posture of service-corridor navigation. Walks as though he has already memorized the route and is mentally three steps ahead. Tendency to stand at angles rather than face-on, a habit from navigating around equipment and maintaining peripheral awareness. Fidgets with fingernails when anxious.",
+                                 "clothing_style":  "Tier 2 contractor: regulation Aurochs-issue hazmat oversuit (navy with reflective trim) worn over cheap synthetic base layers. Off-duty clothing is thrifted and practical â€” faded work pants, thermal shirts, a battered Ironvein transit hoodie with the crest half-faded. No jewelry. Cheap steel-toed boots, well-maintained. Overall appearance is scrupulously clean but threadbare, with the precision of someone who cannot afford replacements but refuses to look slovenly."
+                             },
+    "image_prompt":  "Hildur HernÃ¡ndez, 178cm lean-angular build, shaved black hair, dark brown eyes. Medium-deep warm golden-brown skin with subtle richness blending Southeast Asian, Hispanic, African, and South Asian heritage. High defined cheekbones, angular jawline with balanced proportions. Clean-shaven, chronically alert expression with slight tension around eyes. Bioluminescent blue freckle-mods constellation across left temple and jaw faintly glowing. Navy Aurochs-issue hazmat oversuit with reflective trim over thermal layers, steel-toed boots. Standing at slight angle with shoulders forward, economical posture of service-corridor navigation. GLMZ, neon-lit industrial corridor setting with fluorescent overhead lighting, faint atmospheric haze. Mood: meticulously alert, exhausted precision, quiet global presence. Cinematic lighting, photorealistic, --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  38.3,
+                             "Hispanic/Latin American":  30.4,
+                             "Sub-Saharan African":  10.9,
+                             "South Asian":  8.4,
+                             "Eastern European":  6.8,
+                             "Northern European":  5.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Tagalog":  38.3
+                                                                 }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Colombian":  21.1,
+                                                                                   "Peruvian":  9.3
+                                                                               }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  5.6
+                                                                             },
+                                                        "East African":  {
+                                                                             "Ugandan":  1.2,
+                                                                             "Somali":  4.1
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Tamil":  3.7
+                                                           },
+                                                "Nepali":  {
+                                                               "Nepali":  1.9
+                                                           },
+                                                "Pakistani":  {
+                                                                  "Baloch":  2.8
+                                                              }
+                                            },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Russian":  4.7
+                                                                     },
+                                                     "Slavic West":  {
+                                                                         "Polish":  1.1,
+                                                                         "Sorbian":  0.3
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Serbian":  0.7
+                                                                      }
+                                                 },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  3.9
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "Austrian":  0.8,
+                                                                       "German":  0.5
+                                                                   }
+                                                  }
+                        },
+    "tier":  "3"
 }

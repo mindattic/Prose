@@ -18,30 +18,22 @@ public class BeatGeneratorService
 
     public async Task<string> GenerateBeatAsync(
         BeatContext context,
-        FacetDefinition leadFacet,
-        List<FacetDefinition> supportingFacets,
         CancellationToken ct = default)
     {
-        var supportingVoices = string.Join("\n", supportingFacets.Select(f =>
-            $"- {f.VoiceTone}. May surface as italicized inner thoughts."));
-
-        var coreMemories = string.Join("\n", leadFacet.CoreMemories.Select(m => $"  - {m}"));
-
         var dialogueBlock = !string.IsNullOrWhiteSpace(context.DialogueContext)
             ? $"\n\n{context.DialogueContext}"
             : "";
 
         var system = $"""
-            {leadFacet.SystemPrompt}
+            You are writing a beat in a literary cyberpunk scene set in GLMZ (Meridian 88).
+
+            INNER MONOLOGUE: italicized stand-alone sentences, on their own paragraph, NEVER labeled.
+            Source from each POV character's documented psychology — coping_mechanisms, core_fears,
+            blind_spots, secret. Specific named things, not abstract archetypes. Do NOT use bracketed
+            tags like [WOUND] or [IDEAL] — those are retired.
 
             STORY BIBLE AND LITERARY RULES:
             {context.StoryBibleContext}
-
-            SUPPORTING FACETS (surface as italicized inner thoughts — the character arguing with themselves):
-            {supportingVoices}
-
-            CORE MEMORIES TO DRAW FROM:
-            {coreMemories}
 
             WORLD CONTEXT (characters, locations, equipment, relationships — use as canon facts):
             {context.RelationshipContext}
@@ -66,17 +58,15 @@ public class BeatGeneratorService
 
             BEAT GOAL: {context.BeatGoal}
 
-            Write the next beat of the scene. The lead voice is {leadFacet.Label} — shape the prose
-            style accordingly. Supporting facets surface as the character's inner thoughts — italicized
-            lines where a different part of the psyche pushes back, questions, or reacts. Format these
-            as *italicized inner monologue* on their own line, like a person arguing with themselves.
-            Do NOT use bracketed labels like [WOUND] or [IDEAL]. The reader should feel the shift
-            in voice without being told which facet is speaking.{dialogueInstruction}
+            Write the next beat of the scene. Voice comes from the POV character's documented
+            speech_patterns and psychology — clipped or warm, deflective or direct, depending on
+            whose head we're in. Inner thoughts surface as *italicized stand-alone lines*, never
+            labeled — a person arguing with themselves about a specific named thing.{dialogueInstruction}
 
             Write 2-4 paragraphs. Make every word count.
             """;
 
-        return await llm.GenerateAsync(system, user, leadFacet.Temperature, 2048, leadFacet.Model, ct);
+        return await llm.GenerateAsync(system, user, temperature: 0.85, maxTokens: 2048, ct: ct);
     }
 }
 

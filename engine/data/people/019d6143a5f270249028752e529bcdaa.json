@@ -1,363 +1,376 @@
-{
-  "id": "019d6143a5f270249028752e529bcdaa",
-  "type": "character",
-  "name": "Rajan Quiñones",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Covert entry and social penetration specialist — infiltrator",
-  "age": 37,
-  "status": "active",
-  "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Addison",
-  "description": "Rajan Quiñones is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 37, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a infiltrator out of The Canopy, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented infiltrator in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.96,
-      "ideal": 0.18,
-      "id": 0.73,
-      "shadow": 0.79,
-      "mask": 0.81,
-      "ghost": 0.29
-    },
-    "core_fears": [
-      "Losing control of their own body to a hacker or malfunctioning cyberware",
-      "That they're fundamentally alone and connection is just a vulnerability",
-      "Betrayal by someone they trust — the only currency that matters"
-    ],
-    "core_desires": [
-      "A crew worth trusting — people who stay when the shooting starts",
-      "Freedom from augmentation debt — the interest compounds like a tumor",
-      "The perfect run — one job so clean it becomes legend"
-    ],
-    "coping_mechanisms": [
-      "Violence — hits something when they can't process emotions, preferably something that deserves it",
-      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
-    ],
-    "blind_spots": [
-      "Assumes everyone has an angle because they always have an angle",
-      "Cannot accept help without interpreting it as leverage",
-      "Assumes the worst in corporate people, missing the rare ones who could be allies"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
-    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
-    "verbal_tics": [
-      "Ends statements with 'yeah?' — not a question, a dare",
-      "Calls money 'weight' — as in 'that job doesn't carry enough weight'"
-    ],
-    "example_lines": [
-      "\"The best disguise is being exactly who they expect to see.\"",
-      "\"I was in the building for six hours before anyone realized I didn't work there.\"",
-      "\"Security is a story people tell themselves. I'm the plot twist.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Djeneba Blom-Attah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
-    "A high-paying contract turns out to target someone Djeneba Blom-Attah owes a personal debt to",
-    "A crew member from Djeneba Blom-Attah's past shows up in GLMZ, carrying old grievances and new chrome"
-  ],
-  "narrative_function": "Djeneba Blom-Attah functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters. Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
-  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Freelance — Geartown regular",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 6
-      },
-      "agility": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 4
-      },
-      "reflexes": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 8
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 4
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 4
-      },
-      "willpower": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 10
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 5
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 7
-      },
-      "intimidation": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 8
-      },
-      "deception": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 9
-      },
-      "empathy": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.75,
-      "caution": 0.77,
-      "loyalty": 0.15,
-      "greed": 0.2,
-      "empathy": 0.39
-    },
-    "drives": [
-      "revenge",
-      "money",
-      "survival"
-    ],
-    "thresholds": {
-      "pain": 9,
-      "stress": 8,
-      "loyalty_break": 8
-    },
-    "strengths": [
-      "multilingual — speaks 4+ languages fluently",
-      "strategic thinking under pressure"
-    ],
-    "weaknesses": [
-      "substance dependency — functional but fragile",
-      "emotional volatility under extreme stress",
-      "overconfidence in specialty areas leading to blind spots"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "infiltrator",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Always has an exit route planned before agreeing to any meeting",
-      "Never discusses active contracts with anyone not directly involved",
-      "Will work with anyone once. Second time requires vouching from someone trusted."
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Presents as emotionless professional but is deeply affected by collateral damage",
-      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
-    ],
-    "habits": [
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Maintains a dead drop with emergency supplies in three separate districts",
-      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
-    ],
-    "breaking_points": [
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously",
-      "A child being put in danger as leverage against them",
-      "Being forced to harm a civilian — collateral damage that can't be rationalized"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Retractable monofilament whip in left forearm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters",
-      "replaces": ""
-    },
-    {
-      "name": "Synthetic blood with oxygen-carrying nanites",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Social Chameleon": 0.9,
-    "Charmer": 0.9,
-    "Ghost": 0.7,
-    "Ambusher": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Canopy",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Street Custom 'Tombstone' Concrete Block Launcher",
-    "Street-Custom Gutter Katana 'Flatline'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Canopy Station Nine",
-    "The Nearfield",
-    "Geartown",
-    "Canopy",
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Hispanic/Latin American foundation (56.2%) with South Asian (19.6%), Sub-Saharan African (18.5%), and Southeast Asian (5.7%) genetic contributions — a true Ubiquitous Diaspora blend. The combination creates a striking phenotype: Latin American ancestry provides baseline facial structure and warm undertones, South Asian heritage contributes defined bone architecture and angular features, Sub-Saharan African ancestry adds skin depth, richness, and facial contours, while Southeast Asian ancestry introduces subtle eye shape variation and additional warmth to overall presentation.",
-    "height_cm": 189,
-    "weight_kg": 78,
-    "build": "Lean and angular — long-limbed with visible muscle definition from constant training. Chest and shoulders suggest disciplined strength without bulk. Zero excess fat. Built for speed and flexibility rather than power.",
-    "hair_color": "Dark brown with early silver threading at temples",
-    "hair_style": "Close-cropped, functional. Edges maintained with precision. No styling pretense.",
-    "hair_length": "Short",
-    "eye_color": "Dark brown — natural, unaugmented",
-    "skin_tone": "Warm deep brown — the result of dominant Hispanic/Latin American ancestry (56.2%) blended with South Asian, Sub-Saharan African, and Southeast Asian heritage. Rich golden-brown undertones with substantial depth from African ancestry contribution. Sun exposure patterns suggest outdoor upbringing; city living hasn't faded the natural warmth and saturation.",
-    "complexion": "Strong angular features reflecting the blend of Hispanic/Latin American and South Asian bone structure with African ancestry influence — prominent cheekbones, defined jawline with substantial structure, broad nose bridge from South Asian contribution. Weathered rather than aged — lines around eyes from squinting, from calculation. Skin textured with richness and depth from Sub-Saharan African genetics. Scarred from old burns on right temple (entry wound from a failed operation, seven years back). Clean-shaven daily. Expression neutral at rest — the kind of face that reveals nothing until it decides to.",
-    "distinguishing_marks": [
-      "Three parallel burn scars down right temple and cheekbone — thin, precise, circa 2219",
-      "Entry wound scar (old, silvered) on left collarbone — visible when wearing anything sleeveless",
-      "Network of fine white scars across both palms — accumulated from equipment work and close calls",
-      "Faint tattoo on right wrist: a geometric pattern in faded black ink, barely visible unless specifically noted"
-    ],
-    "visible_augmentations": "Left forearm shows the junction line where synthetic bone meets organic tissue — sealed but visible under certain angles of light. When the monofilament whip retracts, a faint metallic shimmer is briefly visible beneath the skin. No external ports or chrome. The augmentations are designed for concealment.",
-    "posture_movement": "Stands with weight slightly forward — ready position disguised as relaxation. Moves with economical precision; no wasted motion. When walking, feet placed with deliberate quiet. Head stays level; eyes track without moving face. Hands rest loose at sides, never in pockets — maintains access. When seated, back never fully against walls. This is not paranoia; this is craft.",
-    "clothing_style": "Tier 4 functional — mid-grade synth-cotton and reinforced polymer blend. Dark colors (charcoal, matte black, deep navy). Fitted cargo pants with sealed pockets and thigh-access panels (equipment loops for climbing gear, lockpicks, small tools). Hooded technical jacket with non-reflective surface — worn open over a form-fitting athletic shirt. Steel-toed work boots, military-spec lacing. A single piece of jewelry: silver ring on right index finger, worn from years of contact with it. No corporate insignia. No gang markers. Built for function and anonymity — clothes that work in darkness and disappear in crowds."
-  },
-  "image_prompt": "Rajan Quiñones, 189cm tall lean angular operative with deep warm brown skin (Hispanic/Latin American, South Asian, Sub-Saharan African, Southeast Asian blend), sharp defined features, prominent cheekbones, angular jawline, dark brown eyes, close-cropped dark hair with silver at temples. Burn scars on right temple, collarbone scar visible. Silver ring on right index finger. Wearing dark charcoal hooded technical jacket over form-fitting black athletic shirt, fitted dark cargo pants with sealed pockets, military-spec steel-toed boots. Left forearm shows synthetic bone junction line. GLMZ setting, Great Lakes Metropolitan Zone, standing in shadow with weight forward in ready position, economical posture, hands loose at sides, neutral expression. Neon city lights behind, non-reflective surfaces, darkness favoring stealth. Moody, calculated, dangerous competence. Professional operative at rest. Cinematic lighting emphasizing bone structure and warmth of skin tone --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 56.2,
-    "South Asian": 19.6,
-    "Sub-Saharan African": 18.5,
-    "Southeast Asian": 5.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 37.6
-      },
-      "Mexican": {
-        "Mexican": 18.6
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 9.7
-      },
-      "Indian": {
-        "Malayali": 2.8,
-        "Gujarati": 0.4
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 3.8,
-        "Pashtun": 2.9
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Nigerian": 7.5,
-        "Ghanaian": 3.2
-      },
-      "Southern African": {
-        "South African": 0.2,
-        "Zimbabwean": 5.7
-      },
-      "East African": {
-        "Tanzanian": 1.9
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 2.4
-      },
-      "Indonesian": {
-        "Sundanese": 3.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5f270249028752e529bcdaa",
+    "type":  "character",
+    "name":  "Rajan QuiÃ±ones",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Covert entry and social penetration specialist â€” infiltrator",
+    "age":  37,
+    "status":  "active",
+    "location":  "The Canopy â€” elevated walkway district above Geartown, near Lincoln and Addison",
+    "description":  "Rajan QuiÃ±ones is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 37, he has the kind of face that changes depending on the light â€” trustworthy in daylight, dangerous after dark. The chrome is visible â€” retractable monofilament whip in left forearm â€” concealed weapon, devastating in â€” and he makes no effort to hide it.\n\nHis entry into running was involuntary â€” a debt to the wrong people, a choice between working it off or losing parts â€” and the debt is still not fully paid. He works as a infiltrator out of The Canopy, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented infiltrator in GLMZ, but he might be the most stubborn, and in this city that\u0027s worth more.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing control of their own body to a hacker or malfunctioning cyberware",
+                                          "That they\u0027re fundamentally alone and connection is just a vulnerability",
+                                          "Betrayal by someone they trust â€” the only currency that matters"
+                                      ],
+                       "core_desires":  [
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "Freedom from augmentation debt â€” the interest compounds like a tumor",
+                                            "The perfect run â€” one job so clean it becomes legend"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Violence â€” hits something when they can\u0027t process emotions, preferably something that deserves it",
+                                                 "Art â€” draws, paints, or sculpts in private; the violence goes somewhere constructive",
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Cannot accept help without interpreting it as leverage",
+                                           "Assumes the worst in corporate people, missing the rare ones who could be allies"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Multilingual fragments â€” switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+                            "cadence":  "Rhythmic, almost musical â€” the sentence structure has a pattern even when the words are brutal.",
+                            "verbal_tics":  [
+                                                "Ends statements with \u0027yeah?\u0027 â€” not a question, a dare",
+                                                "Calls money \u0027weight\u0027 â€” as in \u0027that job doesn\u0027t carry enough weight\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\"The best disguise is being exactly who they expect to see.\"",
+                                                  "\"I was in the building for six hours before anyone realized I didn\u0027t work there.\"",
+                                                  "\"Security is a story people tell themselves. I\u0027m the plot twist.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Djeneba Blom-Attah\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad",
+                        "A high-paying contract turns out to target someone Djeneba Blom-Attah owes a personal debt to",
+                        "A crew member from Djeneba Blom-Attah\u0027s past shows up in GLMZ, carrying old grievances and new chrome"
+                    ],
+    "narrative_function":  "Djeneba Blom-Attah functions as a connector â€” his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Retractable monofilament whip in left forearm â€” concealed weapon, devastating in close quarters. Synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster",
+    "daily_life":  "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather â€” not for pleasure, but for market intelligence.",
+    "affiliation":  "Freelance â€” Geartown regular",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  6,
+                                                    "augmented":  2,
+                                                    "effective":  6
+                                                },
+                                   "agility":  {
+                                                   "base":  6,
+                                                   "augmented":  0,
+                                                   "effective":  9
+                                               },
+                                   "endurance":  {
+                                                     "base":  3,
+                                                     "augmented":  3,
+                                                     "effective":  4
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  4,
+                                                    "augmented":  0,
+                                                    "effective":  8
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  5,
+                                                      "augmented":  2,
+                                                      "effective":  4
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  0,
+                                                    "effective":  4
+                                                },
+                                 "willpower":  {
+                                                   "base":  5,
+                                                   "augmented":  0,
+                                                   "effective":  10
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  0,
+                                                   "effective":  5
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  4,
+                                                  "augmented":  1,
+                                                  "effective":  7
+                                              },
+                                 "intimidation":  {
+                                                      "base":  8,
+                                                      "augmented":  2,
+                                                      "effective":  8
+                                                  },
+                                 "deception":  {
+                                                   "base":  3,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               },
+                                 "empathy":  {
+                                                 "base":  7,
+                                                 "augmented":  1,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.75,
+                                      "caution":  0.77,
+                                      "loyalty":  0.15,
+                                      "greed":  0.2,
+                                      "empathy":  0.39
+                                  },
+                  "drives":  [
+                                 "revenge",
+                                 "money",
+                                 "survival"
+                             ],
+                  "thresholds":  {
+                                     "pain":  9,
+                                     "stress":  8,
+                                     "loyalty_break":  8
+                                 },
+                  "strengths":  [
+                                    "multilingual â€” speaks 4+ languages fluently",
+                                    "strategic thinking under pressure"
+                                ],
+                  "weaknesses":  [
+                                     "substance dependency â€” functional but fragile",
+                                     "emotional volatility under extreme stress",
+                                     "overconfidence in specialty areas leading to blind spots"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "infiltrator",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Never discusses active contracts with anyone not directly involved",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted."
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Professional and transactional. The relationship is defined by the contract and nothing else.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Presents as emotionless professional but is deeply affected by collateral damage",
+                                              "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
+                                          ],
+                       "habits":  [
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Maintains a dead drop with emergency supplies in three separate districts",
+                                      "Wears the same item of clothing for luck â€” a scarf, a glove, a specific pair of boots",
+                                      "Takes a specific route home every time, varying only one block per trip â€” paranoia as lifestyle"
+                                  ],
+                       "breaking_points":  [
+                                               "Complete isolation â€” cut off from network, contacts, and purpose simultaneously",
+                                               "A child being put in danger as leverage against them",
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Retractable monofilament whip in left forearm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Retractable monofilament whip in left forearm â€” concealed weapon, devastating in close quarters",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Synthetic blood with oxygen-carrying nanites",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Social Chameleon":  0.9,
+                       "Charmer":  0.9,
+                       "Ghost":  0.7,
+                       "Ambusher":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Canopy",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Defender-38 \u0027Snubnose\u0027",
+                            "Street Custom \u0027Tombstone\u0027 Concrete Block Launcher",
+                            "Street-Custom Gutter Katana \u0027Flatline\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Canopy Station Nine",
+                             "The Nearfield",
+                             "Geartown",
+                             "Canopy",
+                             "Slagworks Industrial",
+                             "GLMZ"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Hispanic/Latin American foundation (56.2%) with South Asian (19.6%), Sub-Saharan African (18.5%), and Southeast Asian (5.7%) genetic contributions â€” a true Ubiquitous Diaspora blend. The combination creates a striking phenotype: Latin American ancestry provides baseline facial structure and warm undertones, South Asian heritage contributes defined bone architecture and angular features, Sub-Saharan African ancestry adds skin depth, richness, and facial contours, while Southeast Asian ancestry introduces subtle eye shape variation and additional warmth to overall presentation.",
+                                 "height_cm":  189,
+                                 "weight_kg":  78,
+                                 "build":  "Lean and angular â€” long-limbed with visible muscle definition from constant training. Chest and shoulders suggest disciplined strength without bulk. Zero excess fat. Built for speed and flexibility rather than power.",
+                                 "hair_color":  "Dark brown with early silver threading at temples",
+                                 "hair_style":  "Close-cropped, functional. Edges maintained with precision. No styling pretense.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown â€” natural, unaugmented",
+                                 "skin_tone":  "Warm deep brown â€” the result of dominant Hispanic/Latin American ancestry (56.2%) blended with South Asian, Sub-Saharan African, and Southeast Asian heritage. Rich golden-brown undertones with substantial depth from African ancestry contribution. Sun exposure patterns suggest outdoor upbringing; city living hasn\u0027t faded the natural warmth and saturation.",
+                                 "complexion":  "Strong angular features reflecting the blend of Hispanic/Latin American and South Asian bone structure with African ancestry influence â€” prominent cheekbones, defined jawline with substantial structure, broad nose bridge from South Asian contribution. Weathered rather than aged â€” lines around eyes from squinting, from calculation. Skin textured with richness and depth from Sub-Saharan African genetics. Scarred from old burns on right temple (entry wound from a failed operation, seven years back). Clean-shaven daily. Expression neutral at rest â€” the kind of face that reveals nothing until it decides to.",
+                                 "distinguishing_marks":  [
+                                                              "Three parallel burn scars down right temple and cheekbone â€” thin, precise, circa 2219",
+                                                              "Entry wound scar (old, silvered) on left collarbone â€” visible when wearing anything sleeveless",
+                                                              "Network of fine white scars across both palms â€” accumulated from equipment work and close calls",
+                                                              "Faint tattoo on right wrist: a geometric pattern in faded black ink, barely visible unless specifically noted"
+                                                          ],
+                                 "visible_augmentations":  "Left forearm shows the junction line where synthetic bone meets organic tissue â€” sealed but visible under certain angles of light. When the monofilament whip retracts, a faint metallic shimmer is briefly visible beneath the skin. No external ports or chrome. The augmentations are designed for concealment.",
+                                 "posture_movement":  "Stands with weight slightly forward â€” ready position disguised as relaxation. Moves with economical precision; no wasted motion. When walking, feet placed with deliberate quiet. Head stays level; eyes track without moving face. Hands rest loose at sides, never in pockets â€” maintains access. When seated, back never fully against walls. This is not paranoia; this is craft.",
+                                 "clothing_style":  "Tier 4 functional â€” mid-grade synth-cotton and reinforced polymer blend. Dark colors (charcoal, matte black, deep navy). Fitted cargo pants with sealed pockets and thigh-access panels (equipment loops for climbing gear, lockpicks, small tools). Hooded technical jacket with non-reflective surface â€” worn open over a form-fitting athletic shirt. Steel-toed work boots, military-spec lacing. A single piece of jewelry: silver ring on right index finger, worn from years of contact with it. No corporate insignia. No gang markers. Built for function and anonymity â€” clothes that work in darkness and disappear in crowds."
+                             },
+    "image_prompt":  "Rajan QuiÃ±ones, 189cm tall lean angular operative with deep warm brown skin (Hispanic/Latin American, South Asian, Sub-Saharan African, Southeast Asian blend), sharp defined features, prominent cheekbones, angular jawline, dark brown eyes, close-cropped dark hair with silver at temples. Burn scars on right temple, collarbone scar visible. Silver ring on right index finger. Wearing dark charcoal hooded technical jacket over form-fitting black athletic shirt, fitted dark cargo pants with sealed pockets, military-spec steel-toed boots. Left forearm shows synthetic bone junction line. GLMZ setting, Great Lakes Metropolitan Zone, standing in shadow with weight forward in ready position, economical posture, hands loose at sides, neutral expression. Neon city lights behind, non-reflective surfaces, darkness favoring stealth. Moody, calculated, dangerous competence. Professional operative at rest. Cinematic lighting emphasizing bone structure and warmth of skin tone --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  56.2,
+                             "South Asian":  19.6,
+                             "Sub-Saharan African":  18.5,
+                             "Southeast Asian":  5.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  37.6
+                                                                                 },
+                                                            "Mexican":  {
+                                                                            "Mexican":  18.6
+                                                                        }
+                                                        },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  9.7
+                                                               },
+                                                "Indian":  {
+                                                               "Malayali":  2.8,
+                                                               "Gujarati":  0.4
+                                                           },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  3.8,
+                                                                  "Pashtun":  2.9
+                                                              }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Nigerian":  7.5,
+                                                                             "Ghanaian":  3.2
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  0.2,
+                                                                                 "Zimbabwean":  5.7
+                                                                             },
+                                                        "East African":  {
+                                                                             "Tanzanian":  1.9
+                                                                         }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  2.4
+                                                                   },
+                                                    "Indonesian":  {
+                                                                       "Sundanese":  3.3
+                                                                   }
+                                                }
+                        },
+    "tier":  "3"
 }

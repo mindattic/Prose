@@ -1,318 +1,349 @@
-{
-  "id": "019d6143a6b77fc788ec309585a1fc80",
-  "type": "character",
-  "name": "Adriaan Song",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Retired secondary school teacher, informal neighborhood storyteller and oral historian",
-  "age": 72,
-  "status": "active",
-  "location": "Avalon Quiet, Unit 3B; teaches informal story sessions at the Avalon Community Hearth, near Lincoln and Addison",
-  "description": "Adriaan Song is the kind of woman who makes a room feel both smaller and more significant simply by being present — she has that particular gravity of someone who spent decades at the front of a classroom demanding attention and getting it. She's medium height, brown-skinned, with warm undertones and a face built for expression, every emotion living near the surface and making no apologies. She wears her silver hair in elaborate braided wraps she learned from her Guinean grandmother and has continued perfecting for sixty years. Her only augmentation is cosmetic: her fingernails are geneware, growing in shifting blues and greens, a retirement gift she gave herself after twenty-eight years of being professionally 'appropriate.'\n\nShe is the best storyteller in Avalon Quiet, possibly in any of the Quiet districts, and she knows it without it making her insufferable — she treats it as a responsibility rather than a distinction. On the third evening of every month she holds sessions at the Community Hearth where she tells stories: sometimes history, sometimes myth, sometimes thinly veiled accounts of things that actually happened to people in the room who gave her permission. Children come because they're brought. Adults come because they keep coming back. She has never repeated a session in eleven years.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.7,
-      "shadow": 0.4,
-      "mask": 0.6,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "being forgotten — not as a person but as a voice, having the stories die with her",
-      "that she taught children to love a world that was going to fail them"
-    ],
-    "core_desires": [
-      "to pass something real on, not just information but a way of seeing",
-      "to tell one true story about herself before she dies"
-    ],
-    "coping_mechanisms": [
-      "transforming pain into narrative as a way of giving it shape and distance",
-      "connection — she is never truly at rest unless she's with people",
-      "the monthly sessions as a ritual that structures time and meaning"
-    ],
-    "blind_spots": [
-      "sometimes aestheticizes suffering — including her own — in ways that prevent her from sitting with it directly",
-      "can be performing warmth when she's actually lonely"
-    ],
-    "secret": "One of the stories she tells — a beloved one, about a teacher who protected a student during the Corporate Wars by hiding them in the school's server room and convincing an Arcturus unit that the building was empty — is true, and she is the teacher. She has never confirmed this. The student died in 2199 and she has never spoken of them by name in any other context."
-  },
-  "speech_patterns": {
-    "vocabulary": "rich, varied, deliberately chosen; shifts register easily between formal and intimate; uses silence as punctuation",
-    "cadence": "expansive and controlled, the cadence of someone who knows exactly how much time they have and how to fill it",
-    "verbal_tics": [
-      "'Now —' to begin any story or reorientation",
-      "repeating a question before answering it, as if tasting it",
-      "very rare profanity, deployed for maximum effect"
-    ],
-    "example_lines": [
-      "'You want to know what the Corporate Wars were like? I'll tell you. But I'm going to tell you the version that's true, not the version that's useful.'",
-      "'I taught for twenty-eight years. I know when someone is sitting in the back of the room hoping not to be called on. I always called on them. I'm going to call on you now.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A former student has returned to Avalon Quiet — now working for Axiom — and wants her blessing for something she finds deeply troubling",
-    "She has finally decided to tell the true version of the server room story, but only in the presence of someone who will record it accurately",
-    "A corporate media company has approached the Community Hearth about licensing her sessions for a nostalgia content platform — the community is divided and she has the casting vote"
-  ],
-  "narrative_function": "Storyteller and local color, keeper of oral history, emotional core of the Avalon Quiet community; can provide backstory on long-term residents and neighborhood history through the frame of her stories",
-  "augmentations": "Geneware fingernails (shifting blue-green, cosmetic); no other modifications",
-  "daily_life": "Mornings for walking and observation — she collects raw material constantly; afternoons for writing and correspondence; evenings for people, always for people.",
-  "affiliation": "Avalon Quiet Community Hearth; GLMZ Educators Retiree Association (MERA); independent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 9,
-      "spatial": 4
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 8,
-      "expression": 10,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 1,
-      "assertion_deference": -2,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "storyteller",
-      "educator",
-      "oral historian",
-      "community anchor",
-      "war witness",
-      "avalon quiet"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "never tell a story about someone without their permission — except when the story is larger than them",
-      "a room full of people is never a crowd, it's a collection of individuals who deserve to be seen as such",
-      "if a thing is true, it deserves to be said well"
-    ],
-    "escalation_ladder": [
-      "a story with a pointed moral",
-      "direct private conversation",
-      "direct public statement",
-      "refusal — she is capable of simply withdrawing her presence as a form of protest"
-    ],
-    "interpersonal_modes": {
-      "strangers": "immediately warm, immediately curious, immediately asking questions; makes people feel chosen",
-      "friends": "deeply present, occasionally overwhelming; remembers everything, asks after everything"
-    },
-    "stress_responses": {
-      "low": "goes for a longer walk, collects more material",
-      "medium": "tells a story about someone else in her situation, processing it once removed",
-      "high": "goes entirely internal and quiet for days, then returns with something new to say"
-    },
-    "contradictions": [
-      "celebrates honesty but has held her most important true story for decades",
-      "makes others feel seen while carefully controlling what of herself is visible"
-    ],
-    "habits": [
-      "carries a small physical notebook for raw observations — smells, fragments of overheard conversation, the particular quality of light",
-      "touches the framing of the Hearth doorway each session before she begins, a private ritual she has no explanation for",
-      "leaves printed story-fragments as data offerings at the neighborhood ELF shrine"
-    ],
-    "breaking_points": [
-      "a story being used against someone she told it to honor",
-      "watching a child give up on the idea that things can be different"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "vibrant",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Mentor": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Avalon Quiet",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in GLMZ, Grainfort district",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Begins teaching at Garfield Secondary Node",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Corporate Wars engagement near Garfield; hides a student, saves their life",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Purchases geneware fingernails as quiet self-reclamation",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "The hidden student dies; she does not attend the funeral publicly",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Retires; moves to Avalon Quiet; begins the Community Hearth sessions",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Avalon Quiet",
-    "Grandmother",
-    "The United Workers Front",
-    "The Quiet Room",
-    "Silver",
-    "Crucible HS-2 'Hearth'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "SynapTech ReadRoom Social Cue Enhancer"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "East Asian dominant (50.5%) with significant Southeast Asian (25.2%), Sub-Saharan African (15.4%), and Hispanic/Latin American (8.9%) ancestry. This creates a rich, multifaceted phenotype: the East Asian foundation provides characteristic facial structure and eye shape, warmed and deepened by Southeast Asian and African components, with subtle warmth from Latin American heritage.",
-    "height_cm": 163,
-    "weight_kg": 68,
-    "build": "Compact and proportional, neither frail nor heavy — the build of someone who walks daily and carries her years without apology. Shoulders still squared from decades of classroom presence.",
-    "hair_color": "Silver-gray, naturally grayed over decades",
-    "hair_style": "Elaborate braided wraps in intricate patterns, each braid reinforced and arranged with deliberate artistry, some adorned with small brass or ceramic beads passed down from her grandmother's collection",
-    "hair_length": "Medium (wrapped close to scalp in braids extending to mid-shoulder when unwrapped)",
-    "eye_color": "Deep warm brown with subtle amber undertones, characteristic of East and Southeast Asian heritage enriched by African ancestry, with the slight creasing at the corners that comes from seventy-two years of animated expression",
-    "skin_tone": "Warm medium golden-brown — the harmonious blend of East Asian warmth with deeper Sub-Saharan African and Southeast Asian tones, creating a luminous complexion that catches light beautifully with golden and amber undertones.",
-    "complexion": "Smooth with dignified age lines—particularly pronounced around her eyes and mouth from decades of teaching and smiling. Facial structure reflects East Asian heritage (softer cheekbones, gentle eye shape) enriched by the fuller features characteristic of Southeast Asian and African ancestry. Skin well-maintained, no visible scarring or blemishing. Expression naturally animated even in repose.",
-    "distinguishing_marks": [
-      "Faint surgical scar along left wrist (appendectomy, 2178) — barely visible unless examined closely",
-      "Small burn scar on right forearm (cooking accident, 2195) — pale and largely faded"
-    ],
-    "visible_augmentations": "Geneware fingernails that shift between iridescent blue and green depending on light angle and her body chemistry — they catch attention in conversation and storytelling gestures. No other visible modifications; any neural or sensory augmentations are entirely subcutaneous.",
-    "posture_movement": "Upright and grounded, with the natural authority of someone accustomed to commanding a room. She moves deliberately rather than quickly, each gesture economical and purposeful. When speaking, her hands are never still — they illustrate, emphasize, and invite listeners into the narrative. Sits with perfect spinal alignment.",
-    "clothing_style": "Tier 3-4 working class, but with evident personal style and dignity. Favors well-fitted linen and cotton blends in earth tones (ochre, rust, deep greens) — practical for warm GLMZ summers but elevated by careful tailoring and layering. Often wears a patterned wrap or kente-inspired shawl over her shoulders. Simple jewelry: a plain gold wedding band (worn since 2174), small ceramic earrings she makes herself, occasionally a brooch of brass or natural stone. Comfortable, supportive shoes suitable for daily walking. Nothing nouveau-riche or ostentatiously modified; everything speaks to intentionality and long wear."
-  },
-  "image_prompt": "Adriaan Song, 72-year-old woman with warm golden-brown complexion reflecting East Asian, Southeast Asian, Sub-Saharan African, and Hispanic ancestry. Silver-gray hair arranged in intricate braids adorned with brass and ceramic beads, wrapped close to scalp. Deep warm brown eyes with amber undertones and creases from decades of animated expression. Compact 163cm frame with squared shoulders and upright, grounded posture. Wearing well-fitted ochre linen shirt layered beneath a patterned kente-inspired shawl in rust and deep green tones. Plain gold wedding band, handmade ceramic earrings, faint iridescent blue-green geneware fingernails visible as she gestures expressively. Dignified age lines around eyes and mouth, smooth warm complexion catching light beautifully. Classroom mentor aesthetic, deliberately purposeful movement, natural authority. GLMZ 2200s Great Lakes Metropolitan Zone, warm afternoon indoor lighting, soft shadows emphasizing character and warmth --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 50.5,
-    "Southeast Asian": 25.2,
-    "Sub-Saharan African": 15.4,
-    "Hispanic/Latin American": 8.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 36.4
-      },
-      "Japanese": {
-        "Japanese": 14.1
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 10.6
-      },
-      "Cambodian": {
-        "Khmer": 12.5
-      },
-      "Indonesian": {
-        "Javanese": 2.1
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Kenyan": 5.5,
-        "Ethiopian": 3.3
-      },
-      "Central African": {
-        "Congolese": 4.6,
-        "Cameroonian": 2
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Ecuadorian": 2.5,
-        "Colombian": 6.4
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6b77fc788ec309585a1fc80",
+    "type":  "character",
+    "name":  "Adriaan Song",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Retired secondary school teacher, informal neighborhood storyteller and oral historian",
+    "age":  72,
+    "status":  "active",
+    "location":  "Avalon Quiet, Unit 3B; teaches informal story sessions at the Avalon Community Hearth, near Lincoln and Addison",
+    "description":  "Adriaan Song is the kind of woman who makes a room feel both smaller and more significant simply by being present â€” she has that particular gravity of someone who spent decades at the front of a classroom demanding attention and getting it. She\u0027s medium height, brown-skinned, with warm undertones and a face built for expression, every emotion living near the surface and making no apologies. She wears her silver hair in elaborate braided wraps she learned from her Guinean grandmother and has continued perfecting for sixty years. Her only augmentation is cosmetic: her fingernails are geneware, growing in shifting blues and greens, a retirement gift she gave herself after twenty-eight years of being professionally \u0027appropriate.\u0027\n\nShe is the best storyteller in Avalon Quiet, possibly in any of the Quiet districts, and she knows it without it making her insufferable â€” she treats it as a responsibility rather than a distinction. On the third evening of every month she holds sessions at the Community Hearth where she tells stories: sometimes history, sometimes myth, sometimes thinly veiled accounts of things that actually happened to people in the room who gave her permission. Children come because they\u0027re brought. Adults come because they keep coming back. She has never repeated a session in eleven years.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being forgotten â€” not as a person but as a voice, having the stories die with her",
+                                          "that she taught children to love a world that was going to fail them"
+                                      ],
+                       "core_desires":  [
+                                            "to pass something real on, not just information but a way of seeing",
+                                            "to tell one true story about herself before she dies"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "transforming pain into narrative as a way of giving it shape and distance",
+                                                 "connection â€” she is never truly at rest unless she\u0027s with people",
+                                                 "the monthly sessions as a ritual that structures time and meaning"
+                                             ],
+                       "blind_spots":  [
+                                           "sometimes aestheticizes suffering â€” including her own â€” in ways that prevent her from sitting with it directly",
+                                           "can be performing warmth when she\u0027s actually lonely"
+                                       ],
+                       "secret":  "One of the stories she tells â€” a beloved one, about a teacher who protected a student during the Corporate Wars by hiding them in the school\u0027s server room and convincing an Arcturus unit that the building was empty â€” is true, and she is the teacher. She has never confirmed this. The student died in 2199 and she has never spoken of them by name in any other context."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "rich, varied, deliberately chosen; shifts register easily between formal and intimate; uses silence as punctuation",
+                            "cadence":  "expansive and controlled, the cadence of someone who knows exactly how much time they have and how to fill it",
+                            "verbal_tics":  [
+                                                "\u0027Now â€”\u0027 to begin any story or reorientation",
+                                                "repeating a question before answering it, as if tasting it",
+                                                "very rare profanity, deployed for maximum effect"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You want to know what the Corporate Wars were like? I\u0027ll tell you. But I\u0027m going to tell you the version that\u0027s true, not the version that\u0027s useful.\u0027",
+                                                  "\u0027I taught for twenty-eight years. I know when someone is sitting in the back of the room hoping not to be called on. I always called on them. I\u0027m going to call on you now.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A former student has returned to Avalon Quiet â€” now working for Axiom â€” and wants her blessing for something she finds deeply troubling",
+                        "She has finally decided to tell the true version of the server room story, but only in the presence of someone who will record it accurately",
+                        "A corporate media company has approached the Community Hearth about licensing her sessions for a nostalgia content platform â€” the community is divided and she has the casting vote"
+                    ],
+    "narrative_function":  "Storyteller and local color, keeper of oral history, emotional core of the Avalon Quiet community; can provide backstory on long-term residents and neighborhood history through the frame of her stories",
+    "augmentations":  "Geneware fingernails (shifting blue-green, cosmetic); no other modifications",
+    "daily_life":  "Mornings for walking and observation â€” she collects raw material constantly; afternoons for writing and correspondence; evenings for people, always for people.",
+    "affiliation":  "Avalon Quiet Community Hearth; GLMZ Educators Retiree Association (MERA); independent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  9,
+                                 "spatial":  4
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  8,
+                                 "expression":  10,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  1,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "storyteller",
+                               "educator",
+                               "oral historian",
+                               "community anchor",
+                               "war witness",
+                               "avalon quiet"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "never tell a story about someone without their permission â€” except when the story is larger than them",
+                                              "a room full of people is never a crowd, it\u0027s a collection of individuals who deserve to be seen as such",
+                                              "if a thing is true, it deserves to be said well"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "a story with a pointed moral",
+                                                 "direct private conversation",
+                                                 "direct public statement",
+                                                 "refusal â€” she is capable of simply withdrawing her presence as a form of protest"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "immediately warm, immediately curious, immediately asking questions; makes people feel chosen",
+                                                   "friends":  "deeply present, occasionally overwhelming; remembers everything, asks after everything"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "goes for a longer walk, collects more material",
+                                                "medium":  "tells a story about someone else in her situation, processing it once removed",
+                                                "high":  "goes entirely internal and quiet for days, then returns with something new to say"
+                                            },
+                       "contradictions":  [
+                                              "celebrates honesty but has held her most important true story for decades",
+                                              "makes others feel seen while carefully controlling what of herself is visible"
+                                          ],
+                       "habits":  [
+                                      "carries a small physical notebook for raw observations â€” smells, fragments of overheard conversation, the particular quality of light",
+                                      "touches the framing of the Hearth doorway each session before she begins, a private ritual she has no explanation for",
+                                      "leaves printed story-fragments as data offerings at the neighborhood ELF shrine"
+                                  ],
+                       "breaking_points":  [
+                                               "a story being used against someone she told it to honor",
+                                               "watching a child give up on the idea that things can be different"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "vibrant",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Mentor":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Avalon Quiet",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in GLMZ, Grainfort district",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Begins teaching at Garfield Secondary Node",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Corporate Wars engagement near Garfield; hides a student, saves their life",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Purchases geneware fingernails as quiet self-reclamation",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "The hidden student dies; she does not attend the funeral publicly",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Retires; moves to Avalon Quiet; begins the Community Hearth sessions",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Avalon Quiet",
+                             "Grandmother",
+                             "The United Workers Front",
+                             "The Quiet Room",
+                             "Silver",
+                             "Crucible HS-2 \u0027Hearth\u0027",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "SynapTech ReadRoom Social Cue Enhancer"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "East Asian dominant (50.5%) with significant Southeast Asian (25.2%), Sub-Saharan African (15.4%), and Hispanic/Latin American (8.9%) ancestry. This creates a rich, multifaceted phenotype: the East Asian foundation provides characteristic facial structure and eye shape, warmed and deepened by Southeast Asian and African components, with subtle warmth from Latin American heritage.",
+                                 "height_cm":  163,
+                                 "weight_kg":  68,
+                                 "build":  "Compact and proportional, neither frail nor heavy â€” the build of someone who walks daily and carries her years without apology. Shoulders still squared from decades of classroom presence.",
+                                 "hair_color":  "Silver-gray, naturally grayed over decades",
+                                 "hair_style":  "Elaborate braided wraps in intricate patterns, each braid reinforced and arranged with deliberate artistry, some adorned with small brass or ceramic beads passed down from her grandmother\u0027s collection",
+                                 "hair_length":  "Medium (wrapped close to scalp in braids extending to mid-shoulder when unwrapped)",
+                                 "eye_color":  "Deep warm brown with subtle amber undertones, characteristic of East and Southeast Asian heritage enriched by African ancestry, with the slight creasing at the corners that comes from seventy-two years of animated expression",
+                                 "skin_tone":  "Warm medium golden-brown â€” the harmonious blend of East Asian warmth with deeper Sub-Saharan African and Southeast Asian tones, creating a luminous complexion that catches light beautifully with golden and amber undertones.",
+                                 "complexion":  "Smooth with dignified age linesâ€”particularly pronounced around her eyes and mouth from decades of teaching and smiling. Facial structure reflects East Asian heritage (softer cheekbones, gentle eye shape) enriched by the fuller features characteristic of Southeast Asian and African ancestry. Skin well-maintained, no visible scarring or blemishing. Expression naturally animated even in repose.",
+                                 "distinguishing_marks":  [
+                                                              "Faint surgical scar along left wrist (appendectomy, 2178) â€” barely visible unless examined closely",
+                                                              "Small burn scar on right forearm (cooking accident, 2195) â€” pale and largely faded"
+                                                          ],
+                                 "visible_augmentations":  "Geneware fingernails that shift between iridescent blue and green depending on light angle and her body chemistry â€” they catch attention in conversation and storytelling gestures. No other visible modifications; any neural or sensory augmentations are entirely subcutaneous.",
+                                 "posture_movement":  "Upright and grounded, with the natural authority of someone accustomed to commanding a room. She moves deliberately rather than quickly, each gesture economical and purposeful. When speaking, her hands are never still â€” they illustrate, emphasize, and invite listeners into the narrative. Sits with perfect spinal alignment.",
+                                 "clothing_style":  "Tier 3-4 working class, but with evident personal style and dignity. Favors well-fitted linen and cotton blends in earth tones (ochre, rust, deep greens) â€” practical for warm GLMZ summers but elevated by careful tailoring and layering. Often wears a patterned wrap or kente-inspired shawl over her shoulders. Simple jewelry: a plain gold wedding band (worn since 2174), small ceramic earrings she makes herself, occasionally a brooch of brass or natural stone. Comfortable, supportive shoes suitable for daily walking. Nothing nouveau-riche or ostentatiously modified; everything speaks to intentionality and long wear."
+                             },
+    "image_prompt":  "Adriaan Song, 72-year-old woman with warm golden-brown complexion reflecting East Asian, Southeast Asian, Sub-Saharan African, and Hispanic ancestry. Silver-gray hair arranged in intricate braids adorned with brass and ceramic beads, wrapped close to scalp. Deep warm brown eyes with amber undertones and creases from decades of animated expression. Compact 163cm frame with squared shoulders and upright, grounded posture. Wearing well-fitted ochre linen shirt layered beneath a patterned kente-inspired shawl in rust and deep green tones. Plain gold wedding band, handmade ceramic earrings, faint iridescent blue-green geneware fingernails visible as she gestures expressively. Dignified age lines around eyes and mouth, smooth warm complexion catching light beautifully. Classroom mentor aesthetic, deliberately purposeful movement, natural authority. GLMZ 2200s Great Lakes Metropolitan Zone, warm afternoon indoor lighting, soft shadows emphasizing character and warmth --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  50.5,
+                             "Southeast Asian":  25.2,
+                             "Sub-Saharan African":  15.4,
+                             "Hispanic/Latin American":  8.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  36.4
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  14.1
+                                                            }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  10.6
+                                                                },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  12.5
+                                                                  },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  2.1
+                                                                   }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Kenyan":  5.5,
+                                                                             "Ethiopian":  3.3
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  4.6,
+                                                                                "Cameroonian":  2
+                                                                            }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  2.5,
+                                                                                   "Colombian":  6.4
+                                                                               }
+                                                        }
+                        },
+    "tier":  "1"
 }

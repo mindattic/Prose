@@ -1,343 +1,356 @@
-{
-  "id": "019d6143a7187f7885ddfd9cf7590ef7",
-  "type": "character",
-  "name": "Rachid Arredondo-Boudiaf",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Prototype theft and corporate tech acquisition — tech retriever",
-  "age": 31,
-  "status": "active",
-  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
-  "description": "Rachid Arredondo-Boudiaf is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 31, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a tech retriever out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nRachid Arredondo-Boudiaf operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.68,
-      "ideal": 0.74,
-      "id": 0.76,
-      "shadow": 0.57,
-      "mask": 0.56,
-      "ghost": 0.77
-    },
-    "core_fears": [
-      "That their reputation is built on luck, not skill, and the luck is finite",
-      "Dying alone in some alley and nobody noticing for weeks",
-      "Losing their edge to age — the body slows before the mind accepts it"
-    ],
-    "core_desires": [
-      "Power — enough leverage that nobody ever threatens them again",
-      "Justice — the corporate kind, where the punishment fits the profit margin",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
-    ],
-    "coping_mechanisms": [
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Isolates — retreats into their space when overwhelmed, emerges only for work",
-      "Overwork — takes every contract offered because idleness invites thinking"
-    ],
-    "blind_spots": [
-      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
-      "Assumes their skill set is more transferable than it actually is",
-      "Assumes the worst in corporate people, missing the rare ones who could be allies"
-    ],
-    "secret": "Vuk Herrera-Kyei once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what's left of their independence."
-  },
-  "speech_patterns": {
-    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
-    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
-    "verbal_tics": [
-      "Uses technical jargon for everything, including emotions",
-      "Calls money 'weight' — as in 'that job doesn't carry enough weight'"
-    ],
-    "example_lines": [
-      "\"Corporate R&D security is built to stop amateurs. I'm a professional.\"",
-      "\"The prototype is worth more than both our lives combined. Handle it carefully.\"",
-      "\"I steal things that haven't been invented yet. The future is always in transit.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Vuk Herrera-Kyei's reputation — and a price for silence",
-    "A corporate black site Vuk Herrera-Kyei once infiltrated is being reopened, and the people inside know her face",
-    "Vuk Herrera-Kyei is offered a contract that would clear all their debts — the target is someone they respect"
-  ],
-  "narrative_function": "Vuk Herrera-Kyei is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
-  "augmentations": "Neural interface jack at base of skull — standard runner-grade, allows direct net access. Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Independent — Narrows-based operations",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 8
-      },
-      "agility": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 4
-      },
-      "reflexes": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 7
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 4
-      },
-      "perception": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 6
-      },
-      "willpower": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 6
-      },
-      "technical": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 9
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 10
-      },
-      "intimidation": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 10
-      },
-      "deception": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 9
-      },
-      "empathy": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 5
-      }
-    },
-    "personality": {
-      "aggression": 0.65,
-      "caution": 0.54,
-      "loyalty": 0.13,
-      "greed": 0.26,
-      "empathy": 0.91
-    },
-    "drives": [
-      "reputation",
-      "power",
-      "revenge"
-    ],
-    "thresholds": {
-      "pain": 5,
-      "stress": 6,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "exceptional close-quarters combat",
-      "encyclopedic knowledge of GLMZ infrastructure",
-      "natural leadership presence"
-    ],
-    "weaknesses": [
-      "augmentation dependency — performance drops sharply if chrome malfunctions",
-      "difficulty with authority figures"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "tech retriever",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Always verifies target identity independently before lethal contracts",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Advocates caution to others but takes insane risks personally — double standard they can't see",
-      "Claims not to care about reputation but monitors what people say about them obsessively"
-    ],
-    "habits": [
-      "Checks exits within 10 seconds of entering any room",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Keeps a physical paper notebook — no digital record of personal thoughts"
-    ],
-    "breaking_points": [
-      "Losing their primary augmentation — the one that defines their professional identity",
-      "Being forced to choose between a crew member and the mission — and choosing wrong"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Neural interface jack at base of skull",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
-      "replaces": ""
-    },
-    {
-      "name": "Internal air filtration system",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Manipulator": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Old Harbor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Street Custom 'Molotov Standard' Incendiary Bottle",
-    "Forge-Smith Collective Fighting Chain 'Serpent'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Neural Palate",
-    "Lazarus LX-2 'Lab Rat'",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Harbor Fish Shack",
-    "Slagworks Industrial",
-    "Pellucid Systems",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (60.6%) with significant North African Maghrebi (23.4%) and Middle Eastern Levantine (16.0%) ancestry. This creates a striking Mediterranean-influenced phenotype: warm golden-brown skin with olive undertones that deepen to amber in sunlight, characteristic of the blended Spanish-colonial and indigenous Latin American base enriched by Maghrebi and Levantine features. Strong, defined cheekbones and prominent jawline reflect North African and Levantine bone structure, while facial width and warmth of tone derive from the dominant Hispanic/Latin American genetics. The overall effect is a warm-toned, fine-featured face with subtle angular definition—Mediterranean heritage expressed through a Latin American foundation.",
-    "height_cm": 183,
-    "weight_kg": 68,
-    "build": "Lean and angular, with visible muscle definition in shoulders and forearms — the result of deliberate conditioning rather than bulk. Long limbs built for reach and leverage, minimal body fat, economical frame.",
-    "hair_color": "Black with subtle dark brown undertones",
-    "hair_style": "Pulled back in a tight, functional braid that exposes the neural interface jack at the base of her skull",
-    "hair_length": "Long",
-    "eye_color": "Dark brown, naturally warm but with a sharp, evaluative quality",
-    "skin_tone": "Warm golden-brown with subtle olive undertones — a complex blend reflecting Hispanic/Latin American base with North African and Middle Eastern warmth, creating depth and richness in tone that deepens toward amber in direct light",
-    "complexion": "Strong, defined cheekbones with prominent jawline characteristic of Levantine and North African heritage, complemented by the broader facial structure common to Hispanic/Latin American ancestry. Skin is kept clean and well-maintained — practical grooming, no cosmetic affectation. Expression tends toward neutral focus. Fine-grained texture suggests Mediterranean sun exposure in family lineage.",
-    "distinguishing_marks": [
-      "Surgical scar at base of skull where neural interface jack was installed — visible, roughly 3cm long, well-healed but noticeable given her shaved undercut",
-      "Fine webwork of pale scars across inner left forearm — old, possibly from early augmentation work or industrial accident",
-      "Small burn mark on right ribcage, visible when torso is exposed — roughly 2cm diameter, circular, consistent with contact burn"
-    ],
-    "visible_augmentations": "Chrome neural interface jack at base of skull, runner-grade — the jack itself is visible as brushed steel with slight LED activity when connected. No obvious limb replacements, but the deliberate way she moves and the slight luminescence in her eyes during certain angles suggests internal modifications. Scars around collarbone suggest thoracic work (lung replacement).",
-    "posture_movement": "Moves with controlled precision — no wasted motion, every gesture economical and purposeful. Stands with weight distributed for quick mobility, shoulders slightly forward. Eyes track movement constantly, assessing. At rest, she has an alertness that doesn't fully switch off. When focused on a task, her entire body becomes still, predatory.",
-    "clothing_style": "Tier 4 utilitarian — high-performance technical wear favoring function over fashion. Black or dark gray syndsuit base layer, often worn under reinforced cargo jacket with multiple sealed pockets and cable management loops. Matte-finish tactical boots with grip soles. Silver-gray armored gloves when working. Minimal jewelry — a single small pendant on a thin chain, usually hidden. Everything is maintained with precision, showing wear but never neglect. Moves like someone who expects to run or fight at any moment."
-  },
-  "image_prompt": "Rachid Arredondo-Boudiaf, GLMZ, 183cm lean angular build with visible shoulder and forearm definition. Warm golden-brown skin with olive undertones, strong defined cheekbones and prominent jawline reflecting Mediterranean-Levantine-Maghrebi-Hispanic blend. Dark brown eyes with sharp evaluative quality. Long black hair pulled back in tight functional braid exposing brushed steel neural interface jack at base of skull with LED indicators. Visible pale scar webwork on inner left forearm, surgical scar at skull base, circular burn mark on right ribcage. Controlled precise posture, weight distributed for mobility, constant movement assessment. Wearing black syndsuit under reinforced dark gray cargo jacket with sealed pockets and cable management loops, matte-finish tactical boots, silver-gray armored gloves. Single small pendant on thin chain. Predatory alertness even at rest. Tier 4 utilitarian technical wear, precision maintenance. Great Lakes Metropolitan Zone neon-lit urban setting, cool blue and amber lighting catching the chrome jack, shadows emphasizing angular features and augmentation scars. Moody, focused, professional operative aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 60.6,
-    "North African": 23.4,
-    "Middle Eastern": 16
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Brazilian": 60.6
-      }
-    },
-    "North African": {
-      "Nile Valley": {
-        "Egyptian": 12.5
-      },
-      "Amazigh": {
-        "Kabyle": 2.1,
-        "Berber": 8.8
-      }
-    },
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Jordanian": 7.4,
-        "Palestinian": 2.8
-      },
-      "Persian": {
-        "Afghan Dari": 4.2,
-        "Iranian": 1.6
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a7187f7885ddfd9cf7590ef7",
+    "type":  "character",
+    "name":  "Rachid Arredondo-Boudiaf",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Prototype theft and corporate tech acquisition â€” tech retriever",
+    "age":  31,
+    "status":  "active",
+    "location":  "Old Harbor â€” repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
+    "description":  "Rachid Arredondo-Boudiaf is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 31, she has the kind of face that changes depending on the light â€” trustworthy in daylight, dangerous after dark. The chrome is visible â€” neural interface jack at base of skull â€” standard runner-grade, allows direct ne â€” and she makes no effort to hide it.\n\nHer entry into running was involuntary â€” a debt to the wrong people, a choice between working it off or losing parts â€” and the debt is still not fully paid. She works as a tech retriever out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nRachid Arredondo-Boudiaf operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That their reputation is built on luck, not skill, and the luck is finite",
+                                          "Dying alone in some alley and nobody noticing for weeks",
+                                          "Losing their edge to age â€” the body slows before the mind accepts it"
+                                      ],
+                       "core_desires":  [
+                                            "Power â€” enough leverage that nobody ever threatens them again",
+                                            "Justice â€” the corporate kind, where the punishment fits the profit margin",
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+                                                 "Isolates â€” retreats into their space when overwhelmed, emerges only for work",
+                                                 "Overwork â€” takes every contract offered because idleness invites thinking"
+                                             ],
+                       "blind_spots":  [
+                                           "Refuses to update their mental model of people â€” first impressions calcify into permanent judgments",
+                                           "Assumes their skill set is more transferable than it actually is",
+                                           "Assumes the worst in corporate people, missing the rare ones who could be allies"
+                                       ],
+                       "secret":  "Vuk Herrera-Kyei once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what\u0027s left of their independence."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Terse to the point of rudeness. Treats words like ammunition â€” expensive and not to be wasted.",
+                            "cadence":  "Rhythmic, almost musical â€” the sentence structure has a pattern even when the words are brutal.",
+                            "verbal_tics":  [
+                                                "Uses technical jargon for everything, including emotions",
+                                                "Calls money \u0027weight\u0027 â€” as in \u0027that job doesn\u0027t carry enough weight\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Corporate R\u0026D security is built to stop amateurs. I\u0027m a professional.\"",
+                                                  "\"The prototype is worth more than both our lives combined. Handle it carefully.\"",
+                                                  "\"I steal things that haven\u0027t been invented yet. The future is always in transit.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A former associate resurfaces with evidence that could destroy Vuk Herrera-Kyei\u0027s reputation â€” and a price for silence",
+                        "A corporate black site Vuk Herrera-Kyei once infiltrated is being reopened, and the people inside know her face",
+                        "Vuk Herrera-Kyei is offered a contract that would clear all their debts â€” the target is someone they respect"
+                    ],
+    "narrative_function":  "Vuk Herrera-Kyei is a pressure point â€” the kind of character whose choices ripple outward. When she makes a decision, other people\u0027s lives change. That weight is the engine of her stories.",
+    "augmentations":  "Neural interface jack at base of skull â€” standard runner-grade, allows direct net access. Internal air filtration system â€” lungs replaced with synthetic equivalents, immune to gas attacks",
+    "daily_life":  "Keeps a rigid daily structure â€” wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+    "affiliation":  "Independent â€” Narrows-based operations",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  5,
+                                                    "augmented":  2,
+                                                    "effective":  8
+                                                },
+                                   "agility":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  9
+                                               },
+                                   "endurance":  {
+                                                     "base":  5,
+                                                     "augmented":  1,
+                                                     "effective":  4
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  5,
+                                                    "augmented":  0,
+                                                    "effective":  7
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  8,
+                                                      "augmented":  3,
+                                                      "effective":  4
+                                                  },
+                                 "perception":  {
+                                                    "base":  4,
+                                                    "augmented":  1,
+                                                    "effective":  6
+                                                },
+                                 "willpower":  {
+                                                   "base":  5,
+                                                   "augmented":  1,
+                                                   "effective":  6
+                                               },
+                                 "technical":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  3,
+                                                  "augmented":  0,
+                                                  "effective":  10
+                                              },
+                                 "intimidation":  {
+                                                      "base":  3,
+                                                      "augmented":  0,
+                                                      "effective":  10
+                                                  },
+                                 "deception":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               },
+                                 "empathy":  {
+                                                 "base":  8,
+                                                 "augmented":  1,
+                                                 "effective":  5
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.65,
+                                      "caution":  0.54,
+                                      "loyalty":  0.13,
+                                      "greed":  0.26,
+                                      "empathy":  0.91
+                                  },
+                  "drives":  [
+                                 "reputation",
+                                 "power",
+                                 "revenge"
+                             ],
+                  "thresholds":  {
+                                     "pain":  5,
+                                     "stress":  6,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "exceptional close-quarters combat",
+                                    "encyclopedic knowledge of GLMZ infrastructure",
+                                    "natural leadership presence"
+                                ],
+                  "weaknesses":  [
+                                     "augmentation dependency â€” performance drops sharply if chrome malfunctions",
+                                     "difficulty with authority figures"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "tech retriever",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Advocates caution to others but takes insane risks personally â€” double standard they can\u0027t see",
+                                              "Claims not to care about reputation but monitors what people say about them obsessively"
+                                          ],
+                       "habits":  [
+                                      "Checks exits within 10 seconds of entering any room",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore",
+                                      "Keeps a physical paper notebook â€” no digital record of personal thoughts"
+                                  ],
+                       "breaking_points":  [
+                                               "Losing their primary augmentation â€” the one that defines their professional identity",
+                                               "Being forced to choose between a crew member and the mission â€” and choosing wrong"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Neural interface jack at base of skull",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Neural interface jack at base of skull â€” standard runner-grade, allows direct net access",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Internal air filtration system",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Internal air filtration system â€” lungs replaced with synthetic equivalents, immune to gas attacks",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Manipulator":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Old Harbor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027",
+                            "Street Custom \u0027Molotov Standard\u0027 Incendiary Bottle",
+                            "Forge-Smith Collective Fighting Chain \u0027Serpent\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Neural Palate",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+                             "Harbor Fish Shack",
+                             "Slagworks Industrial",
+                             "Pellucid Systems",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Hispanic/Latin American (60.6%) with significant North African Maghrebi (23.4%) and Middle Eastern Levantine (16.0%) ancestry. This creates a striking Mediterranean-influenced phenotype: warm golden-brown skin with olive undertones that deepen to amber in sunlight, characteristic of the blended Spanish-colonial and indigenous Latin American base enriched by Maghrebi and Levantine features. Strong, defined cheekbones and prominent jawline reflect North African and Levantine bone structure, while facial width and warmth of tone derive from the dominant Hispanic/Latin American genetics. The overall effect is a warm-toned, fine-featured face with subtle angular definitionâ€”Mediterranean heritage expressed through a Latin American foundation.",
+                                 "height_cm":  183,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and angular, with visible muscle definition in shoulders and forearms â€” the result of deliberate conditioning rather than bulk. Long limbs built for reach and leverage, minimal body fat, economical frame.",
+                                 "hair_color":  "Black with subtle dark brown undertones",
+                                 "hair_style":  "Pulled back in a tight, functional braid that exposes the neural interface jack at the base of her skull",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Dark brown, naturally warm but with a sharp, evaluative quality",
+                                 "skin_tone":  "Warm golden-brown with subtle olive undertones â€” a complex blend reflecting Hispanic/Latin American base with North African and Middle Eastern warmth, creating depth and richness in tone that deepens toward amber in direct light",
+                                 "complexion":  "Strong, defined cheekbones with prominent jawline characteristic of Levantine and North African heritage, complemented by the broader facial structure common to Hispanic/Latin American ancestry. Skin is kept clean and well-maintained â€” practical grooming, no cosmetic affectation. Expression tends toward neutral focus. Fine-grained texture suggests Mediterranean sun exposure in family lineage.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar at base of skull where neural interface jack was installed â€” visible, roughly 3cm long, well-healed but noticeable given her shaved undercut",
+                                                              "Fine webwork of pale scars across inner left forearm â€” old, possibly from early augmentation work or industrial accident",
+                                                              "Small burn mark on right ribcage, visible when torso is exposed â€” roughly 2cm diameter, circular, consistent with contact burn"
+                                                          ],
+                                 "visible_augmentations":  "Chrome neural interface jack at base of skull, runner-grade â€” the jack itself is visible as brushed steel with slight LED activity when connected. No obvious limb replacements, but the deliberate way she moves and the slight luminescence in her eyes during certain angles suggests internal modifications. Scars around collarbone suggest thoracic work (lung replacement).",
+                                 "posture_movement":  "Moves with controlled precision â€” no wasted motion, every gesture economical and purposeful. Stands with weight distributed for quick mobility, shoulders slightly forward. Eyes track movement constantly, assessing. At rest, she has an alertness that doesn\u0027t fully switch off. When focused on a task, her entire body becomes still, predatory.",
+                                 "clothing_style":  "Tier 4 utilitarian â€” high-performance technical wear favoring function over fashion. Black or dark gray syndsuit base layer, often worn under reinforced cargo jacket with multiple sealed pockets and cable management loops. Matte-finish tactical boots with grip soles. Silver-gray armored gloves when working. Minimal jewelry â€” a single small pendant on a thin chain, usually hidden. Everything is maintained with precision, showing wear but never neglect. Moves like someone who expects to run or fight at any moment."
+                             },
+    "image_prompt":  "Rachid Arredondo-Boudiaf, GLMZ, 183cm lean angular build with visible shoulder and forearm definition. Warm golden-brown skin with olive undertones, strong defined cheekbones and prominent jawline reflecting Mediterranean-Levantine-Maghrebi-Hispanic blend. Dark brown eyes with sharp evaluative quality. Long black hair pulled back in tight functional braid exposing brushed steel neural interface jack at base of skull with LED indicators. Visible pale scar webwork on inner left forearm, surgical scar at skull base, circular burn mark on right ribcage. Controlled precise posture, weight distributed for mobility, constant movement assessment. Wearing black syndsuit under reinforced dark gray cargo jacket with sealed pockets and cable management loops, matte-finish tactical boots, silver-gray armored gloves. Single small pendant on thin chain. Predatory alertness even at rest. Tier 4 utilitarian technical wear, precision maintenance. Great Lakes Metropolitan Zone neon-lit urban setting, cool blue and amber lighting catching the chrome jack, shadows emphasizing angular features and augmentation scars. Moody, focused, professional operative aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  60.6,
+                             "North African":  23.4,
+                             "Middle Eastern":  16
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Brazilian":  60.6
+                                                                               }
+                                                        },
+                            "North African":  {
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  12.5
+                                                                  },
+                                                  "Amazigh":  {
+                                                                  "Kabyle":  2.1,
+                                                                  "Berber":  8.8
+                                                              }
+                                              },
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Jordanian":  7.4,
+                                                                          "Palestinian":  2.8
+                                                                      },
+                                                   "Persian":  {
+                                                                   "Afghan Dari":  4.2,
+                                                                   "Iranian":  1.6
+                                                               }
+                                               }
+                        },
+    "tier":  "1"
 }

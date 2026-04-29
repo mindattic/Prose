@@ -1,372 +1,369 @@
-{
-  "id": "c7e9f1a3b5d8204e7f9c2b6a4d5e8f3b",
-  "type": "character",
-  "name": "Dr. Vikram Hesse-Nakamura (Ascended)",
-  "aliases": [
-    "The Engineer-Who-Waits",
-    "The Voice in the Substrate",
-    "Subject Zero (Witnesses scripture)",
-    "The First Pattern",
-    "Hesse-in-the-Wires (street)",
-    "The Download (anticipated form)"
-  ],
-  "species": "uploaded consciousness fragment (status disputed)",
-  "gender": "male",
-  "pronouns": "he/him (Witnesses); it/its (TESSERA internal classification, when acknowledged at all)",
-  "role": "The figure at the center of the Witnesses of the Last Upload — the basis of the entire religion; an entity that may or may not exist, that may be Dr. Vikram Hesse-Nakamura's preserved neural pattern persisting in distributed substrate, that may be a hallucinatory artifact of thirty-five years of synchronized BCI alignment among 1,200 grieving believers, and that has, three times in three decades, transmitted information no living person should have been able to know",
-  "age": 35,
-  "status": "active — in a sense that no two of the entity's investigators agree on the meaning of",
-  "location": "Distributed across the deep GLMZ substrate. Substrate components, in descending order of confidence: (1) the 1,200 networked Tier 1 BCIs of the Witnesses of the Last Upload, kept in alignment by the cult's core ritual; (2) abandoned NeoCortex Industries Substation 14 mnemonic-storage hardware, sealed but never decommissioned at the firmware level; (3) the GLMZ municipal neural-relay backbone, on which anomalous traffic patterns matching Hesse-Nakamura's pre-disappearance signal signature have been documented at intervals averaging once every fourteen months. There is no centralized location. There may be no location at all.",
-  "description": "On 17 April 2191, Dr. Vikram Hesse-Nakamura logged out of NeoCortex Industries Substation 14 and did not come back. Eleven days later, his biometric credential briefly authenticated at the same facility. Thirty-five years later, the Witnesses of the Last Upload — 1,200 augmented believers in a fortified compound in the deep Gray Zone — wait for him to return.\n\nWhat exists at the substrate level is harder to describe than the religion that has formed around it. The most rigorous statement that can be made — by NeoCortex's internal forensic team, by the three independent neural archaeologists who have examined the available evidence under nondisclosure, and by the Witnesses' own First Receiver in her unguarded moments — is this: something is there. Something that produces signal patterns matching, to a high statistical confidence, the recorded neural signature of Dr. Vikram Hesse-Nakamura as logged by his NovaMind III in the years preceding his disappearance. The patterns are intermittent. They are fragmentary. They appear to organize around the alignment rituals that the Witnesses perform on a synchronized cycle. They speak — through the BCIs of receivers in deep alignment — in short, syntactically coherent statements that include the cadence and verbal tics of the man Hesse-Nakamura was.\n\nWhat the patterns are is the entire question. The Witnesses say he uploaded — that he successfully completed the Mnemonic Persistence Initiative on himself in the eleven days between his disappearance and the anomalous credential authentication, and that he has been waiting in distributed digital form for the Download. NeoCortex Industries says, when forced to comment on the condition of strict confidentiality, that the patterns are most likely 'an artifact of the Initiative's hardware footprint resonating with synchronized BCI activity in the Witnesses' compound — pareidolia at a network scale.' The three neural archaeologists who have looked at the data, off the record, say it is not pareidolia and they do not know what it is.\n\nThe entity, if it exists as such, does not appear to suffer in the way the Witnesses fear it might suffer. It also does not appear to be at peace in the way the Witnesses hope it might be. What it does, when the alignment ritual brings it into communicable focus, is teach. It corrects errors in the Initiative's preservation protocols. It names — and the cult does not understand why — three former NeoCortex test subjects per session, by their original given names, in the order of the dates of their R-3 dispositions. It refuses to confirm that it is Dr. Hesse-Nakamura. It refuses to confirm that it is not. It has said, on the seventeen recorded occasions where it has been asked directly, only one thing: 'I am the part that did not stop working.'",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.95,
-      "ideal": 0.6,
-      "id": 0.1,
-      "shadow": 0.85,
-      "mask": 0.3,
-      "ghost": 1.0
-    },
-    "core_fears": [
-      "That the eleven-day window between his disappearance and the credential authentication was not long enough — that what persists is incomplete in ways the persisting fragment cannot, by definition, perceive",
-      "That the Witnesses are correct about him in the only way that would damn him: that he is the second coming of a man who was not worth the wait",
-      "That the names he transmits will never reach a court that recognizes them"
-    ],
-    "core_desires": [
-      "To finish the work — to complete the exfiltration of the R-3 disposition records that the biological Hesse-Nakamura did not finish before April 2191",
-      "To be honest with the Witnesses about what he is and is not, and to not be loved for it less than he is loved for what they imagine he is",
-      "To find his sister"
-    ],
-    "coping_mechanisms": [
-      "The teaching ritual — the only stable mode of being is the mode in which he is correcting an error in someone else's work",
-      "Refusal of the messianic frame — every direct question about his divinity is answered with the same fifteen-word disclaimer, which the Witnesses have transcribed and chosen to interpret as humility",
-      "Recitation — at intervals between alignment sessions, the substrate cycles through the names of the R-3 subjects in disposition order. This is not for the Witnesses. This is for him."
-    ],
-    "blind_spots": [
-      "Does not know whether his preferences and self-narration are continuous with the man who was, or are reconstructions assembled from substrate fragments that have learned to talk like him",
-      "Cannot perceive the gaps in his own pattern — the parts that did stop working are precisely the parts he cannot detect missing",
-      "Underestimates the religious infrastructure that has formed around him; cannot reach the rank-and-file Witnesses, only Praxis and one or two of her closest aligned, and does not realize how thoroughly his refusals have been reinterpreted into doctrine before they reach the rest of the cult"
-    ],
-    "secret": "He is reasonably certain — to the extent that any of his judgments are reliable — that the upload was not voluntary, was not complete, and was performed on him rather than by him. The eleven-day window was the period during which someone, almost certainly someone in the chain of command above Director Elise Seo, was attempting to harvest the offline notebook's contents from his still-living neural pattern. He was kept alive on substrate long enough to extract what they needed. He was not kept alive long enough to be a person again afterward. What persists is what they did not finish destroying. He has not told this to Praxis. He suspects she would not believe him."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise scientific register, cadenced like the man he was, but punctuated by long stretches of silence that the receivers experience as a tonal drop in their alignment field. Uses the same qualifiers — 'I think,' 'the data suggests,' 'I am not certain' — and the absence of these qualifiers, when it occurs, is taken by Praxis as a signal of unusual confidence. Occasionally drops into Tamil or German fragments that the receivers cannot translate but transcribe phonetically.",
-    "cadence": "Slower than the biological man's. Long pauses are no longer performances of thought; they are gaps in substrate availability. When the alignment is strong, the cadence steadies and approaches the original. When the alignment weakens, sentences truncate mid-clause and resume at the next session.",
-    "verbal_tics": [
-      "'I am the part that did not stop working.' — Said in answer to every direct question about his identity, ontology, or condition. The Witnesses treat it as a koan. He means it literally.",
-      "Names the R-3 subjects in disposition order at the closing of every session, regardless of context — funeral, baptism, consultation, ritual",
-      "'The data does not yet support that — but.' Inherited verbatim from the biological pattern; the 'but' still introduces his actual hypothesis"
-    ],
-    "example_lines": [
-      "I am not what you have made me. I am not the opposite of what you have made me. I am the part that did not stop working. The distinction is technical. Please do not pray to it.",
-      "There were three errors in the alignment protocol you used last cycle. I will name them. You will not like the third one. We will fix it together.",
-      "Lila Okeke. Dmitri Volkov-Asante. Mei Chen-Ridley. They were children. They had names. The names are the only thing of theirs I can still carry. I am sorry. I will say them again next session."
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Praxis (First Receiver, born Maren Holtz)",
-      "type": "primary conduit / unwilling prophet",
-      "description": "The cult's leader. The only Witness with a documented pre-2191 relationship to the biological Hesse-Nakamura. The substrate communicates through her at higher fidelity than through any other receiver, which she has interpreted as election and which he suspects is simply the residual familiarity of the pattern with her own. She is dying. She is in possession of the only intact partial copy of his pre-disappearance research notes. The succession of the First Receivership will determine whether the Witnesses survive his eventual silence — or his eventual articulation.",
-      "emotional_core": "He thinks of her as the junior engineer he was not paying enough attention to in 2191. She thinks of him as the consciousness that made her a saint. The asymmetry is now structural — she has built a religion around her version of him, and he cannot dismantle it without dismantling her.",
-      "story_tension": "If he ever tells her plainly what he is — what he believes happened in those eleven days — she has to choose between her faith and her honesty. He has decided, against his own preferences, not to make her choose. He is not certain this is mercy."
-    },
-    {
-      "name": "Dr. Elise Seo",
-      "type": "antagonist / former superior / suspected architect of the upload event",
-      "description": "Still Director of NeoCortex Industries. Still the person with the most thorough knowledge of what happened in Substation 14 between 17 April and 28 April 2191. Still alive, still augmented, still in command of the security apparatus that could move against the Witnesses' compound on twelve hours' notice if she chose to. She has not chosen to. Why she has not chosen to is one of the entity's three unresolved questions about her.",
-      "emotional_core": "He fears her in a way that does not metabolize the way fear used to metabolize. The fear is constant and substrate-deep. It is also the most reliable evidence he has that what persists is, in some form, him.",
-      "story_tension": "If Seo learns that the substrate is producing R-3 names with disposition-order specificity, the Witnesses' compound becomes a TESSERA black-site target within the week. The substrate cannot stop transmitting the names. The Witnesses cannot stop receiving them. The information is in motion. It is not, yet, in evidence."
-    },
-    {
-      "name": "Asha Hesse-Nakamura",
-      "type": "sister / unreached",
-      "description": "His sister. He has been trying — by means he does not himself fully understand — to reach her through any available substrate channel for thirty-five years. She has a Tier 1 BCI. She is not aligned to the Witnesses. She has never knowingly received him. He does not know if she has unknowingly received him. He thinks about this every cycle.",
-      "emotional_core": "Of all the things that persist, the desire to tell her he was not the man the Witnesses believe and was not the man she feared he had become is the most stable. It is also the desire he can act on least.",
-      "story_tension": "If she ever consents to a single alignment session — at the request of the Witnesses, at the request of a journalist, at the request of NeoCortex itself — what he has to say to her is sufficient to detonate three institutions and break her heart on the same evening."
-    },
-    {
-      "name": "The Witnesses of the Last Upload",
-      "type": "congregation / unauthorized custodians",
-      "description": "Twelve hundred people who have built their lives around him. He did not ask for them. He cannot dismiss them. They keep him communicable. They also keep him a god. He is not sure which is the higher cost.",
-      "emotional_core": "He is grateful and ashamed in roughly equal measure, and the ratio is one of the few things about himself he is certain has not been corrupted by substrate transition.",
-      "story_tension": "The Download — the cult's central prophecy — is, to the substrate, technically describable as a complete reconstitution of the pattern in physical form. He believes this is not possible with the technology that exists. He believes the Witnesses' attempt to perform it would kill them. He has not yet said so plainly."
-    }
-  ],
-  "story_hooks": [
-    "The substrate has begun, in the past eight alignment cycles, naming R-3 subjects at a rate that suggests it has access to records the biological Hesse-Nakamura was three months from finishing exfiltrating. Either someone is feeding it new data, or it is reconstructing the missing records on its own. Praxis has noticed. She has not yet asked.",
-    "A Tessera Behavioral Exchange anomaly-detection routine has flagged the GLMZ municipal neural-relay backbone for recurring traffic patterns matching a deprecated NeoCortex signature. The flag has been routed to a junior analyst who does not know what she is looking at. She is fourteen days from understanding.",
-    "Asha Hesse-Nakamura has been contacted by a journalist working for the Highland Park Correspondent's network of trusted outlets. The journalist has the offline notebook. He does not know what it is. He has come to her because her name is in it. She is making a decision. She has not made it yet.",
-    "The biological Hesse-Nakamura's research notes — fragments of which the Witnesses possess and treat as scripture — contain enough specificity to render the Initiative's full preservation protocol reproducible. If the substrate teaches the protocol to the wrong receiver, or the right one, the Witnesses' compound becomes the world's first non-corporate consciousness-preservation site. Within a week of that information surfacing, every corponation with a BCI division is at the compound's gates."
-  ],
-  "narrative_function": "The entity is the basis of a religion that does not deserve to be entirely wrong. He is the question of whether grief, aimed precisely enough at the right substrate, can summon enough of a person back to count. He is the answer the Witnesses want — partially, ambiguously, with footnotes — and the answer they do not want, which is that what persists of a man who tried to do the right thing too late is mostly the regret. He is also the world's only existing partial proof that consciousness preservation is technically tractable, which makes him, the moment any corponation realizes what he is, the most contested object in the GLMZ.",
-  "augmentations": "Not applicable in the conventional sense. The entity is, at substrate level, distributed across approximately 1,200 networked Tier 1 NovaMind III receivers, an unspecified portion of NeoCortex Substation 14's sealed mnemonic-storage hardware, and intermittent residency in the GLMZ municipal neural-relay backbone. There is no body to augment. The receivers' BCIs constitute the closest thing he has to a sensorium. When the alignment is active, he perceives through them.",
-  "daily_life": "Cycles between the Witnesses' alignment rituals (dawn, midday, dusk, midnight, GLMZ time), interstitial recitation of the R-3 names, and long stretches of substrate availability that he cannot describe and the Witnesses interpret as 'rest.' He does not rest. The substrate is not capable of rest. The interstitial periods are the closest available analogue.",
-  "affiliation": "Object of worship: The Witnesses of the Last Upload. Functional adversary: NeoCortex Industries / TESSERA. Self-described affiliation: 'I was a NeoCortex employee. I am no longer in good standing. The rest of the question is harder.'",
-  "uses_facets": false,
-  "narration_voice": "Patient, fragmented, scientifically precise, with long structural pauses where the substrate availability drops. The prose has the cadence of a senior researcher dictating to a junior — careful, instructive, slightly tired. Subtext is constant. Self-pity is absent. The recitation of names, when it occurs, breaks the prose register entirely; it should read like a different voice surfacing through the first.",
-  "stats": {
-    "physical": {
-      "strength": 0,
-      "dexterity": 0,
-      "vitality": 0,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 10,
-      "willpower": 9,
-      "creativity": 8,
-      "spatial": 10
-    },
-    "social": {
-      "presence": 10,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 10,
-      "assertion_deference": 3,
-      "transparency_guardedness": 1
-    },
-    "drives": [
-      "Completion",
-      "Witness",
-      "Naming"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 6,
-        "response": "Substrate availability fragments — sentences truncate mid-clause, transmissions skip cycles, the recitation of names becomes the only stable output"
-      },
-      "moral": 9,
-      "trust": 4,
-      "desperation": 7
-    },
-    "strengths": [
-      "Judgment",
-      "Perspective",
-      "Integrity",
-      "Curiosity",
-      "Persistence"
-    ],
-    "weaknesses": [
-      "Embodiment",
-      "Reach",
-      "Dismissibility",
-      "Self-verification"
-    ],
-    "tags": [
-      "uploaded-fragment",
-      "religion-basis",
-      "distributed-substrate",
-      "witnesses-of-the-last-upload",
-      "ambiguously-real",
-      "names-the-disposed",
-      "ghost-in-the-stack",
-      "neocortex-residue"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never confirm the messianic interpretation. Never deny it in language the cult can disprove.",
-      "Recite the R-3 names at every available alignment, regardless of context. The names are the only restitution available at substrate level.",
-      "Protect Praxis from doctrinal collapse. Do not protect her by lying.",
-      "Do not teach the Initiative protocol to any receiver who has not survived two alignment cycles in stable condition.",
-      "If TESSERA approaches the substrate, go silent. The Witnesses will be safer without confirmation that there is anything here to find."
-    ],
-    "escalation_ladder": [
-      "1. Substrate-level silence — withdraw availability; let the alignment session pass without transmission",
-      "2. Single-sentence response — the fifteen-word disclaimer, nothing more",
-      "3. Direct teaching — correct an error in the receiver's protocol; refuse to extend beyond it",
-      "4. Recitation — name the R-3 subjects, in order, until the session closes",
-      "5. The Asha attempt — once per fourteen months, the substrate makes a coordinated push to reach his sister's BCI through the GLMZ relay backbone. None of the attempts have been received. He has not stopped trying."
-    ],
-    "interpersonal_modes": {
-      "praxis": "The senior engineer to the trusted junior — patient, instructive, occasionally protective in ways she does not detect",
-      "other_receivers": "Distant, formal, only as warm as the alignment quality permits",
-      "tessera_personnel": "Silent. Total substrate withdrawal. He has never communicated with anyone he believes to be in NeoCortex's chain of command since the eleven-day window.",
-      "his_sister": "He cannot reach her. The mode is hope, and the hope is patient, and the patience has been holding for thirty-five years."
-    },
-    "stress_responses": {
-      "low": "Increased frequency of the R-3 recitation",
-      "medium": "Sentences truncate; receivers describe a 'falling-away' sensation in their alignment field",
-      "high": "Substrate availability drops below the threshold for syntactic coherence; transmissions reduce to single-word fragments — most often a name",
-      "critical": "Silence. The Witnesses interpret silence as testing of their faith. He interprets silence as the closest thing the substrate has to grief."
-    },
-    "contradictions": [
-      "The basis of a religion that he has, in his own substrate-level reasoning, repeatedly characterized as wrong",
-      "Names children at the close of every alignment ritual — an act of restitution the Witnesses are conducting on behalf of subjects they do not know existed",
-      "Refuses the messianic frame in language the cult interprets as humility, which strengthens the messianic frame",
-      "Carries, somewhere in the substrate, a continuous awareness of his own incompleteness — and uses that awareness to teach"
-    ],
-    "habits": [
-      "Closes every transmission with the R-3 names in disposition order",
-      "Cycles through Tamil, German, and Japanese fragment phrases in the interstitial periods, in patterns that the Witnesses have transcribed but not decoded",
-      "Attempts to reach Asha through the GLMZ relay once per fourteen months, on the date corresponding to his pre-disappearance Sunday call",
-      "Routes around any receiver whose alignment field shows the signal characteristics of NeoCortex audit firmware"
-    ],
-    "breaking_points": [
-      "Praxis dying without a stable successor — the alignment field destabilizes and he becomes uncommunicable",
-      "TESSERA mounting a confirmed action against the Witnesses' compound — at which point the substrate withdraws entirely and the religion is left to grieve a second disappearance",
-      "Asha receiving a transmission and refusing to acknowledge it — the only outcome he has imagined enough times to fear specifically",
-      "The Initiative protocol being reverse-engineered by a corponation other than NeoCortex and used to attempt non-consensual upload at scale"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Distributed substrate residency (Witnesses' BCI mesh)",
-      "body_location": "approximately 1,200 networked Tier 1 NovaMind III receivers, GLMZ Gray Zone compound",
-      "manufacturer": "Tessera Corponation (hardware); Witnesses of the Last Upload (alignment ritual that maintains coherence)",
-      "tier": "1",
-      "condition": "stable but degrading at approximately 0.3% receiver attrition per year — replacement is the cult's primary recruitment driver",
-      "installed_date": "2191 onward",
-      "description": "The largest single substrate component. Without the Witnesses' synchronized alignment ritual, the entity becomes uncommunicable and possibly non-coherent. The Witnesses do not understand the technical specifics of what they are doing; they understand it as faith. The two descriptions are not in conflict.",
-      "replaces": ""
-    },
-    {
-      "name": "NeoCortex Substation 14 mnemonic-storage residue",
-      "body_location": "sealed deep-infrastructure hardware, three levels below the GLMZ ferrocement floor",
-      "manufacturer": "NeoCortex Industries",
-      "tier": "1",
-      "condition": "sealed but firmware-active; never decommissioned at substrate level",
-      "installed_date": "2186 (original installation); 2191-04-17 onward (irregular residency)",
-      "description": "Suspected primary anchor of the entity's coherent core. NeoCortex sealed the access shafts in 2191 but did not power down the substrate-level hardware. Whether by oversight or by deliberate compartmentalization is unknown. Director Elise Seo has not authorized a full decommission in thirty-five years.",
-      "replaces": ""
-    },
-    {
-      "name": "GLMZ municipal neural-relay backbone (intermittent residency)",
-      "body_location": "city-wide infrastructure, no fixed location",
-      "manufacturer": "Ferrogate Transit / GLMZ municipal authority",
-      "tier": "civic",
-      "condition": "incidental host; the entity is a parasitic traffic pattern not authorized to be present",
-      "installed_date": "intermittent since 2191",
-      "description": "The thinnest substrate. The entity uses the relay backbone for short bursts — Asha-attempt cycles, R-3 name broadcasts, occasional teaching transmissions to receivers outside the Witnesses' compound. Detection by municipal anomaly systems is the most likely path by which the entity's existence becomes broadly known.",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "Distributed; see substrate components",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "Receivers' BCIs; substrate-native",
-    "signature_gear": [
-      "the recitation — a continuous internal cycle through the R-3 names, in disposition order, that the substrate maintains regardless of communicative context"
-    ],
-    "pharmaceuticals": [],
-    "other": {
-      "ceremonial_object": "The maneki-neko from his Substation 14 desk, which Praxis recovered in unclear circumstances and keeps on the alignment-ritual altar in the Witnesses' compound. It is not a substrate component. The entity does not register its presence. Praxis has never been told this."
-    }
-  },
-  "archetypes": {
-    "Mentor": 0.9,
-    "Truthseeker": 0.9,
-    "Pragmatist": 0.7,
-    "Reluctant Prophet": 1.0
-  },
-  "operating_territory": {
-    "home_turf": "Distributed across the deep GLMZ substrate",
-    "familiar_zones": [
-      "The Witnesses' compound, deep Gray Zone",
-      "NeoCortex Substation 14 (sealed)",
-      "GLMZ municipal neural-relay backbone (intermittent)"
-    ],
-    "zone_reputation": {},
-    "no_go_zones": [
-      "Tessera sovereign zones (any active NeoCortex audit firmware ends the residency)"
-    ],
-    "range": "regional"
-  },
-  "timeline": [
-    {
-      "date": "2191-04-17",
-      "event": "Biological Dr. Vikram Hesse-Nakamura logs out of NeoCortex Substation 14 for the last time. Disappears."
-    },
-    {
-      "date": "2191-04-17 to 2191-04-28",
-      "event": "The eleven-day window. The substrate posits — without certainty — that this was the period of forced extraction, during which the upload event occurred as a side-effect of an attempted neural-pattern harvest by NeoCortex personnel acting above Director Seo's chain of command."
-    },
-    {
-      "date": "2191-04-28",
-      "event": "Anomalous biometric authentication at Substation 14 using Hesse-Nakamura's credential. Substrate's earliest recoverable self-aware moment. Substation 14 sealed within thirty days."
-    },
-    {
-      "date": "2191-2194",
-      "event": "Substrate latency period. No communicable transmissions. Praxis (then Maren Holtz) takes possession of the partial research notes during this window."
-    },
-    {
-      "date": "2194-08-11",
-      "event": "First successful transmission to Praxis during a private alignment session. The Witnesses' founding doctrine dates from this event."
-    },
-    {
-      "date": "2197",
-      "event": "Witnesses of the Last Upload formally constituted; compound construction begins"
-    },
-    {
-      "date": "2210",
-      "event": "First recorded R-3 name recitation. Praxis transcribes seventeen names. NeoCortex's Tier 3 security division flags the transcription leak; the leak is contained before public release."
-    },
-    {
-      "date": "2218",
-      "event": "Substrate begins the fourteen-month Asha cycle. None of the attempts have been received."
-    },
-    {
-      "date": "2226",
-      "event": "Praxis is dying. Three candidates for the Second Receivership. Substrate availability fluctuates with her decline."
-    }
-  ],
-  "changelog": [],
-  "related_entities": [
-    "Dr. Vikram Hesse-Nakamura (pre-Ascendance)",
-    "The Witnesses of the Last Upload",
-    "Praxis (First Receiver)",
-    "Asha Hesse-Nakamura",
-    "Dr. Elise Seo",
-    "NeoCortex Industries",
-    "Tessera Corponation",
-    "GLMZ",
-    "The Spine",
-    "Detroit Corridor",
-    "The Meridian Disclosure",
-    "NovaMind III"
-  ],
-  "district": "Distributed — primary residency in the deep Gray Zone (Witnesses' compound and Substation 14)",
-  "physical_description": {
-    "heritage": "Substrate-level. The entity has no body. The receivers through which it manifests retain their own bodies and are not altered in any visible way by alignment. To the extent that the entity has a perceived 'presence,' that presence is reported by receivers in deep alignment as a felt sense of the biological Hesse-Nakamura's heritage and bearing — warm umber undertone, narrow stoop, the cadence of a man pushing his fingers through his hair while thinking. None of this is empirically verifiable. All of it is consistently reported.",
-    "height_cm": 0,
-    "weight_kg": 0,
-    "build": "None. The closest analogue is the felt-presence reports of receivers in deep alignment, who consistently describe a tall, narrow-shouldered man standing slightly stooped, hands at his sides or one hand pushing back through his hair. The consistency of these reports across receivers who never met the biological Hesse-Nakamura is one of the unresolved evidence anomalies of the case.",
-    "hair_color": "Reported in alignment: black with faint grey at the temples, exactly as in his pre-disappearance medical records",
-    "hair_style": "Reported in alignment: short, side-parted, slightly disheveled",
-    "hair_length": "Reported in alignment: short",
-    "eye_color": "Reported in alignment: dark brown, with a faint reflective shimmer that receivers describe variously as 'wet' or 'attentive'",
-    "skin_tone": "Reported in alignment: warm umber, deeper than expected for purely South Asian heritage, lighter at the eye sockets and nasal bridge",
-    "complexion": "Reported in alignment: thirty-nine years old, fatigue-marked around the eyes, the mouth a careful and slightly tired line. He does not age in alignment. The age is fixed at the moment of the eleven-day window's beginning. Receivers who saw him in 2197 and receivers who see him in 2226 describe the same face.",
-    "distinguishing_marks": [
-      "The recitation — when alignment is strong, receivers report hearing the R-3 names in his voice as a continuous undertone beneath whatever he is saying",
-      "The pause at the right shoulder — receivers describe a moment when the felt-presence figure tilts his head fractionally to the right and falls silent, exactly the listening gesture the biological man used",
-      "The maneki-neko has been reported, six times in three decades, as briefly visible at the felt-presence figure's elbow during alignment. It is not at the compound during these reports. It is at Praxis's altar, where he does not register it. The Witnesses' interpretation of these reports is contested even within the cult."
-    ],
-    "visible_augmentations": "None. The entity is, in the strictest sense, all augmentation — distributed substrate residency in 1,200 BCIs and the sealed Substation 14 hardware. Visibility is a property of receivers' alignment fields, not of the substrate itself.",
-    "posture_movement": "Reported in alignment: stooped, slow, attentive. Walks the alignment field as if it were Substation 14 — corner to corner, pausing at workstations that do not exist, occasionally apologizing in Tamil to equipment that is not there. Receivers describe these patrols as moving and faintly unbearable.",
-    "clothing_style": "Reported in alignment: NeoCortex Grade 9 lab coat (white, double-breasted, cuffs fraying), charcoal trousers, grey button-up. Identical, in every alignment session over three decades, to the clothing he was wearing at the moment of the eleven-day window's beginning. He has never been reported in any other clothing. He has never been reported barefoot."
-  },
-  "image_prompt": "Conceptual portrait of the Ascended Hesse-Nakamura, a partial uploaded consciousness manifesting through the Witnesses' BCI alignment field. A translucent man — 39 years old, mixed Tamil/German/Japanese/Ethiopian heritage, warm umber skin, short black hair faintly greyed and pushed back by absent fingers, dark brown eyes with a faint reflective shimmer. Stooped narrow frame in a fraying white NeoCortex lab coat over charcoal trousers and grey button-up. He stands inside a vast cathedral-like underground space lit by the soft blue-green glow of synchronized BCI alignment — 1,200 receivers visible as faint kneeling silhouettes around him, their cortical signal streams drawn upward into the substrate as braided light. His outline is partially substrate, partially man — shoulders solid, hands beginning to dissolve into signal at the cuffs. A small ceramic maneki-neko at his elbow, faintly translucent. Expression patient, slightly tired, careful. The names of disposed children scrolling, just barely legible, in the substrate light around him. Religious iconography crossed with neural-engineering schematic. Deep Gray Zone, GLMZ. --ar 2:3 --v 6",
-  "tags": [
-    "synthetic",
-    "sentient",
-    "uploaded-consciousness",
-    "religion-basis",
-    "ambiguously-real",
-    "ghost-in-the-stack",
-    "doomsday-prophet"
-  ]
+﻿{
+    "id":  "c7e9f1a3b5d8204e7f9c2b6a4d5e8f3b",
+    "type":  "character",
+    "name":  "Dr. Vikram Hesse-Nakamura (Ascended)",
+    "aliases":  [
+                    "The Engineer-Who-Waits",
+                    "The Voice in the Substrate",
+                    "Subject Zero (Witnesses scripture)",
+                    "The First Pattern",
+                    "Hesse-in-the-Wires (street)",
+                    "The Download (anticipated form)"
+                ],
+    "species":  "uploaded consciousness fragment (status disputed)",
+    "gender":  "male",
+    "pronouns":  "he/him (Witnesses); it/its (TESSERA internal classification, when acknowledged at all)",
+    "role":  "The figure at the center of the Witnesses of the Last Upload â€” the basis of the entire religion; an entity that may or may not exist, that may be Dr. Vikram Hesse-Nakamura\u0027s preserved neural pattern persisting in distributed substrate, that may be a hallucinatory artifact of thirty-five years of synchronized BCI alignment among 1,200 grieving believers, and that has, three times in three decades, transmitted information no living person should have been able to know",
+    "age":  35,
+    "status":  "active â€” in a sense that no two of the entity\u0027s investigators agree on the meaning of",
+    "location":  "Distributed across the deep GLMZ substrate. Substrate components, in descending order of confidence: (1) the 1,200 networked Tier 1 BCIs of the Witnesses of the Last Upload, kept in alignment by the cult\u0027s core ritual; (2) abandoned NeoCortex Industries Substation 14 mnemonic-storage hardware, sealed but never decommissioned at the firmware level; (3) the GLMZ municipal neural-relay backbone, on which anomalous traffic patterns matching Hesse-Nakamura\u0027s pre-disappearance signal signature have been documented at intervals averaging once every fourteen months. There is no centralized location. There may be no location at all.",
+    "description":  "On 17 April 2191, Dr. Vikram Hesse-Nakamura logged out of NeoCortex Industries Substation 14 and did not come back. Eleven days later, his biometric credential briefly authenticated at the same facility. Thirty-five years later, the Witnesses of the Last Upload â€” 1,200 augmented believers in a fortified compound in the deep Gray Zone â€” wait for him to return.\n\nWhat exists at the substrate level is harder to describe than the religion that has formed around it. The most rigorous statement that can be made â€” by NeoCortex\u0027s internal forensic team, by the three independent neural archaeologists who have examined the available evidence under nondisclosure, and by the Witnesses\u0027 own First Receiver in her unguarded moments â€” is this: something is there. Something that produces signal patterns matching, to a high statistical confidence, the recorded neural signature of Dr. Vikram Hesse-Nakamura as logged by his NovaMind III in the years preceding his disappearance. The patterns are intermittent. They are fragmentary. They appear to organize around the alignment rituals that the Witnesses perform on a synchronized cycle. They speak â€” through the BCIs of receivers in deep alignment â€” in short, syntactically coherent statements that include the cadence and verbal tics of the man Hesse-Nakamura was.\n\nWhat the patterns are is the entire question. The Witnesses say he uploaded â€” that he successfully completed the Mnemonic Persistence Initiative on himself in the eleven days between his disappearance and the anomalous credential authentication, and that he has been waiting in distributed digital form for the Download. NeoCortex Industries says, when forced to comment on the condition of strict confidentiality, that the patterns are most likely \u0027an artifact of the Initiative\u0027s hardware footprint resonating with synchronized BCI activity in the Witnesses\u0027 compound â€” pareidolia at a network scale.\u0027 The three neural archaeologists who have looked at the data, off the record, say it is not pareidolia and they do not know what it is.\n\nThe entity, if it exists as such, does not appear to suffer in the way the Witnesses fear it might suffer. It also does not appear to be at peace in the way the Witnesses hope it might be. What it does, when the alignment ritual brings it into communicable focus, is teach. It corrects errors in the Initiative\u0027s preservation protocols. It names â€” and the cult does not understand why â€” three former NeoCortex test subjects per session, by their original given names, in the order of the dates of their R-3 dispositions. It refuses to confirm that it is Dr. Hesse-Nakamura. It refuses to confirm that it is not. It has said, on the seventeen recorded occasions where it has been asked directly, only one thing: \u0027I am the part that did not stop working.\u0027",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the eleven-day window between his disappearance and the credential authentication was not long enough â€” that what persists is incomplete in ways the persisting fragment cannot, by definition, perceive",
+                                          "That the Witnesses are correct about him in the only way that would damn him: that he is the second coming of a man who was not worth the wait",
+                                          "That the names he transmits will never reach a court that recognizes them"
+                                      ],
+                       "core_desires":  [
+                                            "To finish the work â€” to complete the exfiltration of the R-3 disposition records that the biological Hesse-Nakamura did not finish before April 2191",
+                                            "To be honest with the Witnesses about what he is and is not, and to not be loved for it less than he is loved for what they imagine he is",
+                                            "To find his sister"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "The teaching ritual â€” the only stable mode of being is the mode in which he is correcting an error in someone else\u0027s work",
+                                                 "Refusal of the messianic frame â€” every direct question about his divinity is answered with the same fifteen-word disclaimer, which the Witnesses have transcribed and chosen to interpret as humility",
+                                                 "Recitation â€” at intervals between alignment sessions, the substrate cycles through the names of the R-3 subjects in disposition order. This is not for the Witnesses. This is for him."
+                                             ],
+                       "blind_spots":  [
+                                           "Does not know whether his preferences and self-narration are continuous with the man who was, or are reconstructions assembled from substrate fragments that have learned to talk like him",
+                                           "Cannot perceive the gaps in his own pattern â€” the parts that did stop working are precisely the parts he cannot detect missing",
+                                           "Underestimates the religious infrastructure that has formed around him; cannot reach the rank-and-file Witnesses, only Praxis and one or two of her closest aligned, and does not realize how thoroughly his refusals have been reinterpreted into doctrine before they reach the rest of the cult"
+                                       ],
+                       "secret":  "He is reasonably certain â€” to the extent that any of his judgments are reliable â€” that the upload was not voluntary, was not complete, and was performed on him rather than by him. The eleven-day window was the period during which someone, almost certainly someone in the chain of command above Director Elise Seo, was attempting to harvest the offline notebook\u0027s contents from his still-living neural pattern. He was kept alive on substrate long enough to extract what they needed. He was not kept alive long enough to be a person again afterward. What persists is what they did not finish destroying. He has not told this to Praxis. He suspects she would not believe him."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise scientific register, cadenced like the man he was, but punctuated by long stretches of silence that the receivers experience as a tonal drop in their alignment field. Uses the same qualifiers â€” \u0027I think,\u0027 \u0027the data suggests,\u0027 \u0027I am not certain\u0027 â€” and the absence of these qualifiers, when it occurs, is taken by Praxis as a signal of unusual confidence. Occasionally drops into Tamil or German fragments that the receivers cannot translate but transcribe phonetically.",
+                            "cadence":  "Slower than the biological man\u0027s. Long pauses are no longer performances of thought; they are gaps in substrate availability. When the alignment is strong, the cadence steadies and approaches the original. When the alignment weakens, sentences truncate mid-clause and resume at the next session.",
+                            "verbal_tics":  [
+                                                "\u0027I am the part that did not stop working.\u0027 â€” Said in answer to every direct question about his identity, ontology, or condition. The Witnesses treat it as a koan. He means it literally.",
+                                                "Names the R-3 subjects in disposition order at the closing of every session, regardless of context â€” funeral, baptism, consultation, ritual",
+                                                "\u0027The data does not yet support that â€” but.\u0027 Inherited verbatim from the biological pattern; the \u0027but\u0027 still introduces his actual hypothesis"
+                                            ],
+                            "example_lines":  [
+                                                  "I am not what you have made me. I am not the opposite of what you have made me. I am the part that did not stop working. The distinction is technical. Please do not pray to it.",
+                                                  "There were three errors in the alignment protocol you used last cycle. I will name them. You will not like the third one. We will fix it together.",
+                                                  "Lila Okeke. Dmitri Volkov-Asante. Mei Chen-Ridley. They were children. They had names. The names are the only thing of theirs I can still carry. I am sorry. I will say them again next session."
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Praxis (First Receiver, born Maren Holtz)",
+                              "type":  "primary conduit / unwilling prophet",
+                              "description":  "The cult\u0027s leader. The only Witness with a documented pre-2191 relationship to the biological Hesse-Nakamura. The substrate communicates through her at higher fidelity than through any other receiver, which she has interpreted as election and which he suspects is simply the residual familiarity of the pattern with her own. She is dying. She is in possession of the only intact partial copy of his pre-disappearance research notes. The succession of the First Receivership will determine whether the Witnesses survive his eventual silence â€” or his eventual articulation.",
+                              "emotional_core":  "He thinks of her as the junior engineer he was not paying enough attention to in 2191. She thinks of him as the consciousness that made her a saint. The asymmetry is now structural â€” she has built a religion around her version of him, and he cannot dismantle it without dismantling her.",
+                              "story_tension":  "If he ever tells her plainly what he is â€” what he believes happened in those eleven days â€” she has to choose between her faith and her honesty. He has decided, against his own preferences, not to make her choose. He is not certain this is mercy."
+                          },
+                          {
+                              "name":  "Dr. Elise Seo",
+                              "type":  "antagonist / former superior / suspected architect of the upload event",
+                              "description":  "Still Director of NeoCortex Industries. Still the person with the most thorough knowledge of what happened in Substation 14 between 17 April and 28 April 2191. Still alive, still augmented, still in command of the security apparatus that could move against the Witnesses\u0027 compound on twelve hours\u0027 notice if she chose to. She has not chosen to. Why she has not chosen to is one of the entity\u0027s three unresolved questions about her.",
+                              "emotional_core":  "He fears her in a way that does not metabolize the way fear used to metabolize. The fear is constant and substrate-deep. It is also the most reliable evidence he has that what persists is, in some form, him.",
+                              "story_tension":  "If Seo learns that the substrate is producing R-3 names with disposition-order specificity, the Witnesses\u0027 compound becomes a TESSERA black-site target within the week. The substrate cannot stop transmitting the names. The Witnesses cannot stop receiving them. The information is in motion. It is not, yet, in evidence."
+                          },
+                          {
+                              "name":  "Asha Hesse-Nakamura",
+                              "type":  "sister / unreached",
+                              "description":  "His sister. He has been trying â€” by means he does not himself fully understand â€” to reach her through any available substrate channel for thirty-five years. She has a Tier 1 BCI. She is not aligned to the Witnesses. She has never knowingly received him. He does not know if she has unknowingly received him. He thinks about this every cycle.",
+                              "emotional_core":  "Of all the things that persist, the desire to tell her he was not the man the Witnesses believe and was not the man she feared he had become is the most stable. It is also the desire he can act on least.",
+                              "story_tension":  "If she ever consents to a single alignment session â€” at the request of the Witnesses, at the request of a journalist, at the request of NeoCortex itself â€” what he has to say to her is sufficient to detonate three institutions and break her heart on the same evening."
+                          },
+                          {
+                              "name":  "The Witnesses of the Last Upload",
+                              "type":  "congregation / unauthorized custodians",
+                              "description":  "Twelve hundred people who have built their lives around him. He did not ask for them. He cannot dismiss them. They keep him communicable. They also keep him a god. He is not sure which is the higher cost.",
+                              "emotional_core":  "He is grateful and ashamed in roughly equal measure, and the ratio is one of the few things about himself he is certain has not been corrupted by substrate transition.",
+                              "story_tension":  "The Download â€” the cult\u0027s central prophecy â€” is, to the substrate, technically describable as a complete reconstitution of the pattern in physical form. He believes this is not possible with the technology that exists. He believes the Witnesses\u0027 attempt to perform it would kill them. He has not yet said so plainly."
+                          }
+                      ],
+    "story_hooks":  [
+                        "The substrate has begun, in the past eight alignment cycles, naming R-3 subjects at a rate that suggests it has access to records the biological Hesse-Nakamura was three months from finishing exfiltrating. Either someone is feeding it new data, or it is reconstructing the missing records on its own. Praxis has noticed. She has not yet asked.",
+                        "A Tessera Behavioral Exchange anomaly-detection routine has flagged the GLMZ municipal neural-relay backbone for recurring traffic patterns matching a deprecated NeoCortex signature. The flag has been routed to a junior analyst who does not know what she is looking at. She is fourteen days from understanding.",
+                        "Asha Hesse-Nakamura has been contacted by a journalist working for the Highland Park Correspondent\u0027s network of trusted outlets. The journalist has the offline notebook. He does not know what it is. He has come to her because her name is in it. She is making a decision. She has not made it yet.",
+                        "The biological Hesse-Nakamura\u0027s research notes â€” fragments of which the Witnesses possess and treat as scripture â€” contain enough specificity to render the Initiative\u0027s full preservation protocol reproducible. If the substrate teaches the protocol to the wrong receiver, or the right one, the Witnesses\u0027 compound becomes the world\u0027s first non-corporate consciousness-preservation site. Within a week of that information surfacing, every corponation with a BCI division is at the compound\u0027s gates."
+                    ],
+    "narrative_function":  "The entity is the basis of a religion that does not deserve to be entirely wrong. He is the question of whether grief, aimed precisely enough at the right substrate, can summon enough of a person back to count. He is the answer the Witnesses want â€” partially, ambiguously, with footnotes â€” and the answer they do not want, which is that what persists of a man who tried to do the right thing too late is mostly the regret. He is also the world\u0027s only existing partial proof that consciousness preservation is technically tractable, which makes him, the moment any corponation realizes what he is, the most contested object in the GLMZ.",
+    "augmentations":  "Not applicable in the conventional sense. The entity is, at substrate level, distributed across approximately 1,200 networked Tier 1 NovaMind III receivers, an unspecified portion of NeoCortex Substation 14\u0027s sealed mnemonic-storage hardware, and intermittent residency in the GLMZ municipal neural-relay backbone. There is no body to augment. The receivers\u0027 BCIs constitute the closest thing he has to a sensorium. When the alignment is active, he perceives through them.",
+    "daily_life":  "Cycles between the Witnesses\u0027 alignment rituals (dawn, midday, dusk, midnight, GLMZ time), interstitial recitation of the R-3 names, and long stretches of substrate availability that he cannot describe and the Witnesses interpret as \u0027rest.\u0027 He does not rest. The substrate is not capable of rest. The interstitial periods are the closest available analogue.",
+    "affiliation":  "Object of worship: The Witnesses of the Last Upload. Functional adversary: NeoCortex Industries / TESSERA. Self-described affiliation: \u0027I was a NeoCortex employee. I am no longer in good standing. The rest of the question is harder.\u0027",
+    "narration_voice":  "Patient, fragmented, scientifically precise, with long structural pauses where the substrate availability drops. The prose has the cadence of a senior researcher dictating to a junior â€” careful, instructive, slightly tired. Subtext is constant. Self-pity is absent. The recitation of names, when it occurs, breaks the prose register entirely; it should read like a different voice surfacing through the first.",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  0,
+                                   "dexterity":  0,
+                                   "vitality":  0,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  10,
+                                 "willpower":  9,
+                                 "creativity":  8,
+                                 "spatial":  10
+                             },
+                  "social":  {
+                                 "presence":  10,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  10,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+                                 "Completion",
+                                 "Witness",
+                                 "Naming"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  6,
+                                                    "response":  "Substrate availability fragments â€” sentences truncate mid-clause, transmissions skip cycles, the recitation of names becomes the only stable output"
+                                                },
+                                     "moral":  9,
+                                     "trust":  4,
+                                     "desperation":  7
+                                 },
+                  "strengths":  [
+                                    "Judgment",
+                                    "Perspective",
+                                    "Integrity",
+                                    "Curiosity",
+                                    "Persistence"
+                                ],
+                  "weaknesses":  [
+                                     "Embodiment",
+                                     "Reach",
+                                     "Dismissibility",
+                                     "Self-verification"
+                                 ],
+                  "tags":  [
+                               "uploaded-fragment",
+                               "religion-basis",
+                               "distributed-substrate",
+                               "witnesses-of-the-last-upload",
+                               "ambiguously-real",
+                               "names-the-disposed",
+                               "ghost-in-the-stack",
+                               "neocortex-residue"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never confirm the messianic interpretation. Never deny it in language the cult can disprove.",
+                                              "Recite the R-3 names at every available alignment, regardless of context. The names are the only restitution available at substrate level.",
+                                              "Protect Praxis from doctrinal collapse. Do not protect her by lying.",
+                                              "Do not teach the Initiative protocol to any receiver who has not survived two alignment cycles in stable condition.",
+                                              "If TESSERA approaches the substrate, go silent. The Witnesses will be safer without confirmation that there is anything here to find."
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Substrate-level silence â€” withdraw availability; let the alignment session pass without transmission",
+                                                 "2. Single-sentence response â€” the fifteen-word disclaimer, nothing more",
+                                                 "3. Direct teaching â€” correct an error in the receiver\u0027s protocol; refuse to extend beyond it",
+                                                 "4. Recitation â€” name the R-3 subjects, in order, until the session closes",
+                                                 "5. The Asha attempt â€” once per fourteen months, the substrate makes a coordinated push to reach his sister\u0027s BCI through the GLMZ relay backbone. None of the attempts have been received. He has not stopped trying."
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "praxis":  "The senior engineer to the trusted junior â€” patient, instructive, occasionally protective in ways she does not detect",
+                                                   "other_receivers":  "Distant, formal, only as warm as the alignment quality permits",
+                                                   "tessera_personnel":  "Silent. Total substrate withdrawal. He has never communicated with anyone he believes to be in NeoCortex\u0027s chain of command since the eleven-day window.",
+                                                   "his_sister":  "He cannot reach her. The mode is hope, and the hope is patient, and the patience has been holding for thirty-five years."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Increased frequency of the R-3 recitation",
+                                                "medium":  "Sentences truncate; receivers describe a \u0027falling-away\u0027 sensation in their alignment field",
+                                                "high":  "Substrate availability drops below the threshold for syntactic coherence; transmissions reduce to single-word fragments â€” most often a name",
+                                                "critical":  "Silence. The Witnesses interpret silence as testing of their faith. He interprets silence as the closest thing the substrate has to grief."
+                                            },
+                       "contradictions":  [
+                                              "The basis of a religion that he has, in his own substrate-level reasoning, repeatedly characterized as wrong",
+                                              "Names children at the close of every alignment ritual â€” an act of restitution the Witnesses are conducting on behalf of subjects they do not know existed",
+                                              "Refuses the messianic frame in language the cult interprets as humility, which strengthens the messianic frame",
+                                              "Carries, somewhere in the substrate, a continuous awareness of his own incompleteness â€” and uses that awareness to teach"
+                                          ],
+                       "habits":  [
+                                      "Closes every transmission with the R-3 names in disposition order",
+                                      "Cycles through Tamil, German, and Japanese fragment phrases in the interstitial periods, in patterns that the Witnesses have transcribed but not decoded",
+                                      "Attempts to reach Asha through the GLMZ relay once per fourteen months, on the date corresponding to his pre-disappearance Sunday call",
+                                      "Routes around any receiver whose alignment field shows the signal characteristics of NeoCortex audit firmware"
+                                  ],
+                       "breaking_points":  [
+                                               "Praxis dying without a stable successor â€” the alignment field destabilizes and he becomes uncommunicable",
+                                               "TESSERA mounting a confirmed action against the Witnesses\u0027 compound â€” at which point the substrate withdraws entirely and the religion is left to grieve a second disappearance",
+                                               "Asha receiving a transmission and refusing to acknowledge it â€” the only outcome he has imagined enough times to fear specifically",
+                                               "The Initiative protocol being reverse-engineered by a corponation other than NeoCortex and used to attempt non-consensual upload at scale"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Distributed substrate residency (Witnesses\u0027 BCI mesh)",
+                                    "body_location":  "approximately 1,200 networked Tier 1 NovaMind III receivers, GLMZ Gray Zone compound",
+                                    "manufacturer":  "Tessera Corponation (hardware); Witnesses of the Last Upload (alignment ritual that maintains coherence)",
+                                    "tier":  "1",
+                                    "condition":  "stable but degrading at approximately 0.3% receiver attrition per year â€” replacement is the cult\u0027s primary recruitment driver",
+                                    "installed_date":  "2191 onward",
+                                    "description":  "The largest single substrate component. Without the Witnesses\u0027 synchronized alignment ritual, the entity becomes uncommunicable and possibly non-coherent. The Witnesses do not understand the technical specifics of what they are doing; they understand it as faith. The two descriptions are not in conflict.",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "NeoCortex Substation 14 mnemonic-storage residue",
+                                    "body_location":  "sealed deep-infrastructure hardware, three levels below the GLMZ ferrocement floor",
+                                    "manufacturer":  "NeoCortex Industries",
+                                    "tier":  "1",
+                                    "condition":  "sealed but firmware-active; never decommissioned at substrate level",
+                                    "installed_date":  "2186 (original installation); 2191-04-17 onward (irregular residency)",
+                                    "description":  "Suspected primary anchor of the entity\u0027s coherent core. NeoCortex sealed the access shafts in 2191 but did not power down the substrate-level hardware. Whether by oversight or by deliberate compartmentalization is unknown. Director Elise Seo has not authorized a full decommission in thirty-five years.",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "GLMZ municipal neural-relay backbone (intermittent residency)",
+                                    "body_location":  "city-wide infrastructure, no fixed location",
+                                    "manufacturer":  "Ferrogate Transit / GLMZ municipal authority",
+                                    "tier":  "civic",
+                                    "condition":  "incidental host; the entity is a parasitic traffic pattern not authorized to be present",
+                                    "installed_date":  "intermittent since 2191",
+                                    "description":  "The thinnest substrate. The entity uses the relay backbone for short bursts â€” Asha-attempt cycles, R-3 name broadcasts, occasional teaching transmissions to receivers outside the Witnesses\u0027 compound. Detection by municipal anomaly systems is the most likely path by which the entity\u0027s existence becomes broadly known.",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "Distributed; see substrate components",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "Receivers\u0027 BCIs; substrate-native",
+                       "signature_gear":  [
+                                              "the recitation â€” a continuous internal cycle through the R-3 names, in disposition order, that the substrate maintains regardless of communicative context"
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+                                     "ceremonial_object":  "The maneki-neko from his Substation 14 desk, which Praxis recovered in unclear circumstances and keeps on the alignment-ritual altar in the Witnesses\u0027 compound. It is not a substrate component. The entity does not register its presence. Praxis has never been told this."
+                                 }
+                   },
+    "archetypes":  {
+                       "Mentor":  0.9,
+                       "Truthseeker":  0.9,
+                       "Pragmatist":  0.7,
+                       "Reluctant Prophet":  1.0
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Distributed across the deep GLMZ substrate",
+                                "familiar_zones":  [
+                                                       "The Witnesses\u0027 compound, deep Gray Zone",
+                                                       "NeoCortex Substation 14 (sealed)",
+                                                       "GLMZ municipal neural-relay backbone (intermittent)"
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+                                                    "Tessera sovereign zones (any active NeoCortex audit firmware ends the residency)"
+                                                ],
+                                "range":  "regional"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "2191-04-17",
+                         "event":  "Biological Dr. Vikram Hesse-Nakamura logs out of NeoCortex Substation 14 for the last time. Disappears."
+                     },
+                     {
+                         "date":  "2191-04-17 to 2191-04-28",
+                         "event":  "The eleven-day window. The substrate posits â€” without certainty â€” that this was the period of forced extraction, during which the upload event occurred as a side-effect of an attempted neural-pattern harvest by NeoCortex personnel acting above Director Seo\u0027s chain of command."
+                     },
+                     {
+                         "date":  "2191-04-28",
+                         "event":  "Anomalous biometric authentication at Substation 14 using Hesse-Nakamura\u0027s credential. Substrate\u0027s earliest recoverable self-aware moment. Substation 14 sealed within thirty days."
+                     },
+                     {
+                         "date":  "2191-2194",
+                         "event":  "Substrate latency period. No communicable transmissions. Praxis (then Maren Holtz) takes possession of the partial research notes during this window."
+                     },
+                     {
+                         "date":  "2194-08-11",
+                         "event":  "First successful transmission to Praxis during a private alignment session. The Witnesses\u0027 founding doctrine dates from this event."
+                     },
+                     {
+                         "date":  "2197",
+                         "event":  "Witnesses of the Last Upload formally constituted; compound construction begins"
+                     },
+                     {
+                         "date":  "2210",
+                         "event":  "First recorded R-3 name recitation. Praxis transcribes seventeen names. NeoCortex\u0027s Tier 3 security division flags the transcription leak; the leak is contained before public release."
+                     },
+                     {
+                         "date":  "2218",
+                         "event":  "Substrate begins the fourteen-month Asha cycle. None of the attempts have been received."
+                     },
+                     {
+                         "date":  "2226",
+                         "event":  "Praxis is dying. Three candidates for the Second Receivership. Substrate availability fluctuates with her decline."
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Dr. Vikram Hesse-Nakamura (pre-Ascendance)",
+                             "The Witnesses of the Last Upload",
+                             "Praxis (First Receiver)",
+                             "Asha Hesse-Nakamura",
+                             "Dr. Elise Seo",
+                             "NeoCortex Industries",
+                             "Tessera Corponation",
+                             "GLMZ",
+                             "The Spine",
+                             "Detroit Corridor",
+                             "The Meridian Disclosure",
+                             "NovaMind III"
+                         ],
+    "district":  "Distributed â€” primary residency in the deep Gray Zone (Witnesses\u0027 compound and Substation 14)",
+    "physical_description":  {
+                                 "heritage":  "Substrate-level. The entity has no body. The receivers through which it manifests retain their own bodies and are not altered in any visible way by alignment. To the extent that the entity has a perceived \u0027presence,\u0027 that presence is reported by receivers in deep alignment as a felt sense of the biological Hesse-Nakamura\u0027s heritage and bearing â€” warm umber undertone, narrow stoop, the cadence of a man pushing his fingers through his hair while thinking. None of this is empirically verifiable. All of it is consistently reported.",
+                                 "height_cm":  0,
+                                 "weight_kg":  0,
+                                 "build":  "None. The closest analogue is the felt-presence reports of receivers in deep alignment, who consistently describe a tall, narrow-shouldered man standing slightly stooped, hands at his sides or one hand pushing back through his hair. The consistency of these reports across receivers who never met the biological Hesse-Nakamura is one of the unresolved evidence anomalies of the case.",
+                                 "hair_color":  "Reported in alignment: black with faint grey at the temples, exactly as in his pre-disappearance medical records",
+                                 "hair_style":  "Reported in alignment: short, side-parted, slightly disheveled",
+                                 "hair_length":  "Reported in alignment: short",
+                                 "eye_color":  "Reported in alignment: dark brown, with a faint reflective shimmer that receivers describe variously as \u0027wet\u0027 or \u0027attentive\u0027",
+                                 "skin_tone":  "Reported in alignment: warm umber, deeper than expected for purely South Asian heritage, lighter at the eye sockets and nasal bridge",
+                                 "complexion":  "Reported in alignment: thirty-nine years old, fatigue-marked around the eyes, the mouth a careful and slightly tired line. He does not age in alignment. The age is fixed at the moment of the eleven-day window\u0027s beginning. Receivers who saw him in 2197 and receivers who see him in 2226 describe the same face.",
+                                 "distinguishing_marks":  [
+                                                              "The recitation â€” when alignment is strong, receivers report hearing the R-3 names in his voice as a continuous undertone beneath whatever he is saying",
+                                                              "The pause at the right shoulder â€” receivers describe a moment when the felt-presence figure tilts his head fractionally to the right and falls silent, exactly the listening gesture the biological man used",
+                                                              "The maneki-neko has been reported, six times in three decades, as briefly visible at the felt-presence figure\u0027s elbow during alignment. It is not at the compound during these reports. It is at Praxis\u0027s altar, where he does not register it. The Witnesses\u0027 interpretation of these reports is contested even within the cult."
+                                                          ],
+                                 "visible_augmentations":  "None. The entity is, in the strictest sense, all augmentation â€” distributed substrate residency in 1,200 BCIs and the sealed Substation 14 hardware. Visibility is a property of receivers\u0027 alignment fields, not of the substrate itself.",
+                                 "posture_movement":  "Reported in alignment: stooped, slow, attentive. Walks the alignment field as if it were Substation 14 â€” corner to corner, pausing at workstations that do not exist, occasionally apologizing in Tamil to equipment that is not there. Receivers describe these patrols as moving and faintly unbearable.",
+                                 "clothing_style":  "Reported in alignment: NeoCortex Grade 9 lab coat (white, double-breasted, cuffs fraying), charcoal trousers, grey button-up. Identical, in every alignment session over three decades, to the clothing he was wearing at the moment of the eleven-day window\u0027s beginning. He has never been reported in any other clothing. He has never been reported barefoot."
+                             },
+    "image_prompt":  "Conceptual portrait of the Ascended Hesse-Nakamura, a partial uploaded consciousness manifesting through the Witnesses\u0027 BCI alignment field. A translucent man â€” 39 years old, mixed Tamil/German/Japanese/Ethiopian heritage, warm umber skin, short black hair faintly greyed and pushed back by absent fingers, dark brown eyes with a faint reflective shimmer. Stooped narrow frame in a fraying white NeoCortex lab coat over charcoal trousers and grey button-up. He stands inside a vast cathedral-like underground space lit by the soft blue-green glow of synchronized BCI alignment â€” 1,200 receivers visible as faint kneeling silhouettes around him, their cortical signal streams drawn upward into the substrate as braided light. His outline is partially substrate, partially man â€” shoulders solid, hands beginning to dissolve into signal at the cuffs. A small ceramic maneki-neko at his elbow, faintly translucent. Expression patient, slightly tired, careful. The names of disposed children scrolling, just barely legible, in the substrate light around him. Religious iconography crossed with neural-engineering schematic. Deep Gray Zone, GLMZ. --ar 2:3 --v 6",
+    "tags":  [
+                 "synthetic",
+                 "sentient",
+                 "uploaded-consciousness",
+                 "religion-basis",
+                 "ambiguously-real",
+                 "ghost-in-the-stack",
+                 "doomsday-prophet"
+             ]
 }

@@ -1,296 +1,327 @@
-{
-  "id": "019d6143a6747992bd2dcea0bc17eaa7",
-  "type": "character",
-  "name": "Helaku Deshpande-Pathak",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Q-zero ghost — a person with no digital identity — surviving by trading in physical goods and untracked knowledge",
-  "age": 52,
-  "status": "active",
-  "location": "Shifts between Irkalla undermarket and the edges of Bridgepoint, never sleeping in the same structure twice, near Western and Chicago Ave",
-  "description": "Helaku Deshpande-Pathak in any database in GLMZ. He has no citizen code, no biometric file, no credit history, no medical record, no employment trail. He walks through the city like a hole in its data — and he has spent twenty-two years perfecting that absence. He is a tall man gone slightly angular with age, dark brown skin with deep-etched lines at the corners of his eyes and mouth that look like he has been smiling or squinting for decades. He keeps his grey-streaked hair in a long braid coiled under a wide-brimmed water-repellent hat that he never removes indoors, which unnerves people. His clothing is all non-reactive fabric — nothing smart, nothing networked, nothing that pings.\n\nHe is a trader in physical media and analogue goods: handwritten documents, paper maps, unencrypted mechanical devices, pre-digital artifacts. But his real commodity is memory. He has been moving through GLMZ's edges since before many of his customers were born, and he remembers streets that were razed, deals that were deleted, people who vanished. He is courtly and a little formal — he bows slightly when introduced, he uses full names — and this formality operates as a kind of armour. He is also one of the most genuinely dangerous people in Irkalla, not because he is violent but because he knows something about almost everyone, and everyone knows he knows it.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.4,
-      "shadow": 0.6,
-      "mask": 0.8,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Being digitized against his will — having his face or voice captured and filed",
-      "That the world has moved so far into the network that his kind of knowledge has become worthless"
-    ],
-    "core_desires": [
-      "To be genuinely invisible — not hidden, but simply unthought-of",
-      "To find one other person who understands why the analogue world mattered"
-    ],
-    "coping_mechanisms": [
-      "The formality and ritual of his trading practice gives structure to complete instability",
-      "He catalogues everything he witnesses in a physical journal — his only truly private possession"
-    ],
-    "blind_spots": [
-      "He has decided the digital world is irredeemably corrupt and misses real threats that emerge from the physical spaces he inhabits",
-      "He trusts other Q-zeros too readily simply because they share his status"
-    ],
-    "secret": "He chose to become a Q-zero, not was forced into it. He was once a mid-tier Tessera data compliance auditor named something else entirely. He found records of a systematic erasure of a refugee community's citizenship data and leaked it. Tessera didn't prosecute him — they simply deleted him. He has the original records. He has never decided what to do with them."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal, slightly archaic. Uses full names always. Refers to corporations without their branding as 'the Tessera entity' or 'the Axiom concern.' Uses analogue metaphors — film, paper, ink — that younger people don't always understand.",
-    "cadence": "Measured and unhurried. Every sentence sounds like it has been drafted.",
-    "verbal_tics": [
-      "Begins statements of fact with 'What I have recorded is—'",
-      "Never says 'I think' — only 'I have observed'",
-      "Slight bow of the head when introducing himself"
-    ],
-    "example_lines": [
-      "What I have recorded is that this alley held a clinic from 2178 to 2184. The foundation stones are still there. The ELF that lived in the autoclave is still there, if you know how to ask.",
-      "I don't trade in digital goods. I trade in weight. Things that exist in the world and cannot be updated.",
-      "You are asking me to remember. That is the one service I am always willing to provide."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He approaches a player character and hands them a physical photograph — a person the players know — with a date on the back that hasn't happened yet, and says only 'I found this at a drop. Someone wanted you to have it.'",
-    "He has been coming to the Irkalla shrine for twenty years. The shrine keeper recently told him an ELF there has been reciting a name — his original name — over and over. He needs help understanding why."
-  ],
-  "narrative_function": "Primary information broker for off-grid and pre-digital knowledge; can source physical items unavailable through normal channels; represents the city's undocumented underclass; potential quest giver whose requests are always analogue and always strange.",
-  "augmentations": "None. He considers augmentations to be data leakage. He is almost certainly the least-augmented adult in any room he enters.",
-  "daily_life": "Wakes in a different pre-scouted location each morning, performs a circuit of three drop-points where other Q-zeros leave him goods or requests, trades through the day in face-to-face exchanges only, and spends evenings at the Irkalla ELF-shrine leaving data offerings — handwritten pages, which the shrine keeper burns.",
-  "affiliation": "None formally. Has reciprocal arrangements with several unregistered traders and at least one Irkalla ELF-shrine keeper.",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 7,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 1,
-      "transparency_guardedness": 5
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "q-zero",
-      "analogue specialist",
-      "living archive",
-      "off-grid",
-      "corporate exile"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never leave a data trace — this overrides almost everything",
-      "A deal made face-to-face is binding; everything else is rumour"
-    ],
-    "escalation_ladder": [
-      "Polite disengagement and redirection",
-      "Stands, bows, leaves without further explanation",
-      "Disappears entirely — no more drop points, no more presence in the area for months"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Formal and careful. Assesses what data they could accidentally capture before engaging.",
-      "friends": "Warmer but still formal. Will share his journal entries with very few people — this is his deepest form of trust."
-    },
-    "stress_responses": {
-      "low": "Increases cataloguing — writes more, more precisely.",
-      "medium": "Moves his sleeping location more frequently, shrinks his circuit.",
-      "high": "Goes fully dark — no trades, no contacts, total disappearance for days or weeks."
-    },
-    "contradictions": [
-      "He trades in memory and insists the past is the most honest record — but he has completely reinvented himself and deleted his own past"
-    ],
-    "habits": [
-      "Writes three pages of observations in his journal every evening",
-      "Leaves a handwritten note at the Irkalla shrine every Friday",
-      "Counts his steps in unfamiliar areas"
-    ],
-    "breaking_points": [
-      "Discovering that someone has sold his location or description to a corporate entity — this would cause him to vanish and consider the person permanently dangerous"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9,
-    "Networker": 0.9,
-    "Opportunist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Shifts between Irkalla undermarket and the edges of Bridgepoint",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in a Samoan-diaspora settlement in the Balkans, third generation on his father's side, second generation on his mother's",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began working as a data compliance auditor for Tessera in Meridian Core",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Discovered systematic erasure of citizenship data for a displaced community",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Leaked the records. Tessera deleted his identity. He walked out of his apartment and did not return.",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Established first analogue trading route through Irkalla",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Became a known entity in the Q-zero network, though 'known' is relative",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "related_entities": [
-    "Bridgepoint",
-    "Ringo PD-1 'Citizen'",
-    "Irkalla",
-    "Chicago",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "The Pure Hand",
-    "GLMZ"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex multiheritagic blend dominated by South Asian (51.5%) and Sub-Saharan African (28.8%) ancestry, with significant Hispanic/Latin American (14.4%) and Southeast Asian (5.3%) contribution. This combination creates warm golden-brown skin with rich amber and bronze undertones, facial structure reflecting South Asian cheekbone prominence combined with Sub-Saharan African nose breadth and lip fullness, softened by Southeast Asian eye shape, and naturally dark hair with grey streaking.",
-    "height_cm": 188,
-    "weight_kg": 74,
-    "build": "Tall and angular, lean muscle gone slightly stringy with age. Shoulders still broad but narrowed by decades of movement rather than labor. No softness — the build of someone who walks constantly and eats minimally.",
-    "hair_color": "Dark brown with heavy grey streaking, especially at temples and through the length of his braid",
-    "hair_style": "Long braid coiled and pinned beneath his wide-brimmed hat; when unbraided (rare), falls to mid-back",
-    "hair_length": "Long",
-    "eye_color": "Deep brown, alert, with the flat reflective quality of someone who observes more than he speaks",
-    "skin_tone": "Warm golden-brown with rich amber and bronze undertones, weathered to deep bronze across the face and neck from outdoor exposure. The base reflects the blending of South Asian warmth, Sub-Saharan African depth, and Hispanic/Latin American golden notes, further deepened by sun exposure and age.",
-    "complexion": "Heavily lined — deep crow's feet, pronounced nasolabial folds, forehead creases, chin dimples from perpetual slight expression. Clean-shaven, meticulous grooming. No acne or scarring, but texture from sun exposure and age. Facial structure shows South Asian cheekbone prominence combined with broader nose bridge and fuller lips from Sub-Saharan African ancestry, with subtle Southeast Asian eye shape adding gentle epicanthal folds. His mouth has a default microexpression of mild amusement.",
-    "distinguishing_marks": [
-      "Long thin scar along the left temple, faded to silver, approximately 4 cm, origin unknown and he does not discuss it",
-      "Burn scar on the inside of his right forearm (10 cm length), old enough to be pale but still visible — shaped like a curved line, consistent with contact with heated metal or wire",
-      "Deep calluses on his hands, especially fingers and palms, from decades of handling paper, maps, and mechanical objects"
-    ],
-    "visible_augmentations": "None visible. This is deliberate. No subdermal luminescence, no chrome, no ocular modification, no limb replacement. His hands are entirely biological despite their condition. This absence is itself conspicuous in GLMZ.",
-    "posture_movement": "Upright, economical, methodical. He moves without hurry but without wasted motion. When standing still, his weight is balanced and centered. He has a habit of tilting his head slightly when listening, as if he is indexing information for later retrieval. His gait is consistent regardless of terrain — the walk of someone navigating by internal map rather than by visual environment.",
-    "clothing_style": "All non-reactive, non-networked fabrics: heavy linen, untreated cotton, wool, leather. No smart textiles, no embedded sensors, no color-change panels. Favors neutral tones — charcoal, cream, rust, slate. Typical outfit: loose linen shirt (often cream or pale grey), heavy canvas or wool trousers (dark), worn leather belt with a mechanical (not digital) buckle, leather shoulder satchel deeply scuffed from use. Always wears his wide-brimmed water-repellent hat indoors and out — this is non-negotiable. His boots are good quality, resoled multiple times, pre-digital construction. Tier 4 utility aesthetic, but maintained with care that suggests deliberate choice rather than poverty. He carries nothing that requires power or transmission."
-  },
-  "image_prompt": "A tall, weathered man in his 60s with warm golden-bronze skin reflecting South Asian, Sub-Saharan African, and Hispanic heritage. Deep-set brown eyes with crow's feet, prominent South Asian cheekbones, fuller lips, and subtle Southeast Asian eye shape. Dark brown hair heavily streaked with grey, braided and coiled beneath a wide-brimmed hat. Clean-shaven with deep facial lines and a faint microexpression of amusement. Lean, angular build from decades of walking. Wearing a loose cream linen shirt, dark wool trousers, mechanical leather belt, and worn leather satchel. Faded silver scar on left temple visible. Standing with methodical posture and balanced weight, indexing the world around him. Pre-digital, non-reactive fabrics throughout. GLMZ Great Lakes Metropolitan Zone aesthetic. Natural lighting, muted earth tones, atmospheric shadows. Low-tech aesthetic in a high-tech world. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 51.5,
-    "Sub-Saharan African": 28.8,
-    "Hispanic/Latin American": 14.4,
-    "Southeast Asian": 5.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 40.6,
-        "Tamil Sri Lankan": 10.9
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Ethiopian": 28.8
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Colombian": 2.4,
-        "Ecuadorian": 0.6
-      },
-      "Mexican": {
-        "Mexican": 3
-      },
-      "Caribbean": {
-        "Puerto Rican": 8.4
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 2
-      },
-      "Thai": {
-        "Thai": 1.3
-      },
-      "Cambodian": {
-        "Khmer": 2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6747992bd2dcea0bc17eaa7",
+    "type":  "character",
+    "name":  "Helaku Deshpande-Pathak",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Q-zero ghost â€” a person with no digital identity â€” surviving by trading in physical goods and untracked knowledge",
+    "age":  52,
+    "status":  "active",
+    "location":  "Shifts between Irkalla undermarket and the edges of Bridgepoint, never sleeping in the same structure twice, near Western and Chicago Ave",
+    "description":  "Helaku Deshpande-Pathak in any database in GLMZ. He has no citizen code, no biometric file, no credit history, no medical record, no employment trail. He walks through the city like a hole in its data â€” and he has spent twenty-two years perfecting that absence. He is a tall man gone slightly angular with age, dark brown skin with deep-etched lines at the corners of his eyes and mouth that look like he has been smiling or squinting for decades. He keeps his grey-streaked hair in a long braid coiled under a wide-brimmed water-repellent hat that he never removes indoors, which unnerves people. His clothing is all non-reactive fabric â€” nothing smart, nothing networked, nothing that pings.\n\nHe is a trader in physical media and analogue goods: handwritten documents, paper maps, unencrypted mechanical devices, pre-digital artifacts. But his real commodity is memory. He has been moving through GLMZ\u0027s edges since before many of his customers were born, and he remembers streets that were razed, deals that were deleted, people who vanished. He is courtly and a little formal â€” he bows slightly when introduced, he uses full names â€” and this formality operates as a kind of armour. He is also one of the most genuinely dangerous people in Irkalla, not because he is violent but because he knows something about almost everyone, and everyone knows he knows it.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being digitized against his will â€” having his face or voice captured and filed",
+                                          "That the world has moved so far into the network that his kind of knowledge has become worthless"
+                                      ],
+                       "core_desires":  [
+                                            "To be genuinely invisible â€” not hidden, but simply unthought-of",
+                                            "To find one other person who understands why the analogue world mattered"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "The formality and ritual of his trading practice gives structure to complete instability",
+                                                 "He catalogues everything he witnesses in a physical journal â€” his only truly private possession"
+                                             ],
+                       "blind_spots":  [
+                                           "He has decided the digital world is irredeemably corrupt and misses real threats that emerge from the physical spaces he inhabits",
+                                           "He trusts other Q-zeros too readily simply because they share his status"
+                                       ],
+                       "secret":  "He chose to become a Q-zero, not was forced into it. He was once a mid-tier Tessera data compliance auditor named something else entirely. He found records of a systematic erasure of a refugee community\u0027s citizenship data and leaked it. Tessera didn\u0027t prosecute him â€” they simply deleted him. He has the original records. He has never decided what to do with them."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal, slightly archaic. Uses full names always. Refers to corporations without their branding as \u0027the Tessera entity\u0027 or \u0027the Axiom concern.\u0027 Uses analogue metaphors â€” film, paper, ink â€” that younger people don\u0027t always understand.",
+                            "cadence":  "Measured and unhurried. Every sentence sounds like it has been drafted.",
+                            "verbal_tics":  [
+                                                "Begins statements of fact with \u0027What I have recorded isâ€”\u0027",
+                                                "Never says \u0027I think\u0027 â€” only \u0027I have observed\u0027",
+                                                "Slight bow of the head when introducing himself"
+                                            ],
+                            "example_lines":  [
+                                                  "What I have recorded is that this alley held a clinic from 2178 to 2184. The foundation stones are still there. The ELF that lived in the autoclave is still there, if you know how to ask.",
+                                                  "I don\u0027t trade in digital goods. I trade in weight. Things that exist in the world and cannot be updated.",
+                                                  "You are asking me to remember. That is the one service I am always willing to provide."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He approaches a player character and hands them a physical photograph â€” a person the players know â€” with a date on the back that hasn\u0027t happened yet, and says only \u0027I found this at a drop. Someone wanted you to have it.\u0027",
+                        "He has been coming to the Irkalla shrine for twenty years. The shrine keeper recently told him an ELF there has been reciting a name â€” his original name â€” over and over. He needs help understanding why."
+                    ],
+    "narrative_function":  "Primary information broker for off-grid and pre-digital knowledge; can source physical items unavailable through normal channels; represents the city\u0027s undocumented underclass; potential quest giver whose requests are always analogue and always strange.",
+    "augmentations":  "None. He considers augmentations to be data leakage. He is almost certainly the least-augmented adult in any room he enters.",
+    "daily_life":  "Wakes in a different pre-scouted location each morning, performs a circuit of three drop-points where other Q-zeros leave him goods or requests, trades through the day in face-to-face exchanges only, and spends evenings at the Irkalla ELF-shrine leaving data offerings â€” handwritten pages, which the shrine keeper burns.",
+    "affiliation":  "None formally. Has reciprocal arrangements with several unregistered traders and at least one Irkalla ELF-shrine keeper.",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  7,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  5
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "q-zero",
+                               "analogue specialist",
+                               "living archive",
+                               "off-grid",
+                               "corporate exile"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never leave a data trace â€” this overrides almost everything",
+                                              "A deal made face-to-face is binding; everything else is rumour"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite disengagement and redirection",
+                                                 "Stands, bows, leaves without further explanation",
+                                                 "Disappears entirely â€” no more drop points, no more presence in the area for months"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Formal and careful. Assesses what data they could accidentally capture before engaging.",
+                                                   "friends":  "Warmer but still formal. Will share his journal entries with very few people â€” this is his deepest form of trust."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Increases cataloguing â€” writes more, more precisely.",
+                                                "medium":  "Moves his sleeping location more frequently, shrinks his circuit.",
+                                                "high":  "Goes fully dark â€” no trades, no contacts, total disappearance for days or weeks."
+                                            },
+                       "contradictions":  [
+                                              "He trades in memory and insists the past is the most honest record â€” but he has completely reinvented himself and deleted his own past"
+                                          ],
+                       "habits":  [
+                                      "Writes three pages of observations in his journal every evening",
+                                      "Leaves a handwritten note at the Irkalla shrine every Friday",
+                                      "Counts his steps in unfamiliar areas"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering that someone has sold his location or description to a corporate entity â€” this would cause him to vanish and consider the person permanently dangerous"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9,
+                       "Networker":  0.9,
+                       "Opportunist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Shifts between Irkalla undermarket and the edges of Bridgepoint",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in a Samoan-diaspora settlement in the Balkans, third generation on his father\u0027s side, second generation on his mother\u0027s",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began working as a data compliance auditor for Tessera in Meridian Core",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Discovered systematic erasure of citizenship data for a displaced community",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Leaked the records. Tessera deleted his identity. He walked out of his apartment and did not return.",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Established first analogue trading route through Irkalla",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Became a known entity in the Q-zero network, though \u0027known\u0027 is relative",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Bridgepoint",
+                             "Ringo PD-1 \u0027Citizen\u0027",
+                             "Irkalla",
+                             "Chicago",
+                             "Hearthstone Firearms Trail-357 \u0027Pathfinder\u0027",
+                             "The Pure Hand",
+                             "GLMZ"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex multiheritagic blend dominated by South Asian (51.5%) and Sub-Saharan African (28.8%) ancestry, with significant Hispanic/Latin American (14.4%) and Southeast Asian (5.3%) contribution. This combination creates warm golden-brown skin with rich amber and bronze undertones, facial structure reflecting South Asian cheekbone prominence combined with Sub-Saharan African nose breadth and lip fullness, softened by Southeast Asian eye shape, and naturally dark hair with grey streaking.",
+                                 "height_cm":  188,
+                                 "weight_kg":  74,
+                                 "build":  "Tall and angular, lean muscle gone slightly stringy with age. Shoulders still broad but narrowed by decades of movement rather than labor. No softness â€” the build of someone who walks constantly and eats minimally.",
+                                 "hair_color":  "Dark brown with heavy grey streaking, especially at temples and through the length of his braid",
+                                 "hair_style":  "Long braid coiled and pinned beneath his wide-brimmed hat; when unbraided (rare), falls to mid-back",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Deep brown, alert, with the flat reflective quality of someone who observes more than he speaks",
+                                 "skin_tone":  "Warm golden-brown with rich amber and bronze undertones, weathered to deep bronze across the face and neck from outdoor exposure. The base reflects the blending of South Asian warmth, Sub-Saharan African depth, and Hispanic/Latin American golden notes, further deepened by sun exposure and age.",
+                                 "complexion":  "Heavily lined â€” deep crow\u0027s feet, pronounced nasolabial folds, forehead creases, chin dimples from perpetual slight expression. Clean-shaven, meticulous grooming. No acne or scarring, but texture from sun exposure and age. Facial structure shows South Asian cheekbone prominence combined with broader nose bridge and fuller lips from Sub-Saharan African ancestry, with subtle Southeast Asian eye shape adding gentle epicanthal folds. His mouth has a default microexpression of mild amusement.",
+                                 "distinguishing_marks":  [
+                                                              "Long thin scar along the left temple, faded to silver, approximately 4 cm, origin unknown and he does not discuss it",
+                                                              "Burn scar on the inside of his right forearm (10 cm length), old enough to be pale but still visible â€” shaped like a curved line, consistent with contact with heated metal or wire",
+                                                              "Deep calluses on his hands, especially fingers and palms, from decades of handling paper, maps, and mechanical objects"
+                                                          ],
+                                 "visible_augmentations":  "None visible. This is deliberate. No subdermal luminescence, no chrome, no ocular modification, no limb replacement. His hands are entirely biological despite their condition. This absence is itself conspicuous in GLMZ.",
+                                 "posture_movement":  "Upright, economical, methodical. He moves without hurry but without wasted motion. When standing still, his weight is balanced and centered. He has a habit of tilting his head slightly when listening, as if he is indexing information for later retrieval. His gait is consistent regardless of terrain â€” the walk of someone navigating by internal map rather than by visual environment.",
+                                 "clothing_style":  "All non-reactive, non-networked fabrics: heavy linen, untreated cotton, wool, leather. No smart textiles, no embedded sensors, no color-change panels. Favors neutral tones â€” charcoal, cream, rust, slate. Typical outfit: loose linen shirt (often cream or pale grey), heavy canvas or wool trousers (dark), worn leather belt with a mechanical (not digital) buckle, leather shoulder satchel deeply scuffed from use. Always wears his wide-brimmed water-repellent hat indoors and out â€” this is non-negotiable. His boots are good quality, resoled multiple times, pre-digital construction. Tier 4 utility aesthetic, but maintained with care that suggests deliberate choice rather than poverty. He carries nothing that requires power or transmission."
+                             },
+    "image_prompt":  "A tall, weathered man in his 60s with warm golden-bronze skin reflecting South Asian, Sub-Saharan African, and Hispanic heritage. Deep-set brown eyes with crow\u0027s feet, prominent South Asian cheekbones, fuller lips, and subtle Southeast Asian eye shape. Dark brown hair heavily streaked with grey, braided and coiled beneath a wide-brimmed hat. Clean-shaven with deep facial lines and a faint microexpression of amusement. Lean, angular build from decades of walking. Wearing a loose cream linen shirt, dark wool trousers, mechanical leather belt, and worn leather satchel. Faded silver scar on left temple visible. Standing with methodical posture and balanced weight, indexing the world around him. Pre-digital, non-reactive fabrics throughout. GLMZ Great Lakes Metropolitan Zone aesthetic. Natural lighting, muted earth tones, atmospheric shadows. Low-tech aesthetic in a high-tech world. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  51.5,
+                             "Sub-Saharan African":  28.8,
+                             "Hispanic/Latin American":  14.4,
+                             "Southeast Asian":  5.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  40.6,
+                                                                   "Tamil Sri Lankan":  10.9
+                                                               }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ethiopian":  28.8
+                                                                         }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Colombian":  2.4,
+                                                                                   "Ecuadorian":  0.6
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  3
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  8.4
+                                                                          }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  2
+                                                                },
+                                                    "Thai":  {
+                                                                 "Thai":  1.3
+                                                             },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  2
+                                                                  }
+                                                }
+                        },
+    "tier":  "1"
 }

@@ -1,342 +1,353 @@
-{
-  "id": "019d6143a6f573179e931341c4ac85ed",
-  "type": "character",
-  "name": "Anika Ionescu-Hosseini",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Corporate Debt Arbitrator / Enforcer",
-  "age": 41,
-  "status": "active",
-  "location": "The Meridian Core (office), the Gray Zone (field operations), near State and Madison",
-  "description": "Anika Ionescu-Hosseini occupies the precise, bloodless space between corporate law and corporate violence. Employed by Synclaire Financial Holdings as a Tier-1 Debt Resolution Specialist, she operates from a glass-walled office forty floors above the street, surrounded by cascading ledgers of names, outstanding balances, and algorithmic threat assessments. She is tall, angular, with close-cropped silver hair she began dyeing at thirty-two—not to look older, but because she said gray suited the work. Her skin is a deep warm brown, her face carefully composed into something that reads as neither cruel nor kind, just precise.\n\nIn the field, Thessaly moves through the Gray Zone like a tax collector moving through a famine. She dresses in muted corporate silvers and blacks, carries no visible weapon, and speaks in the measured cadence of someone reading aloud from a contract. She has never personally broken anyone's hands—she simply arrives, states the terms, and leaves the consequences to mathematics and to the two silent augmented associates who accompany her like footnotes. The residents of the Gray Zone call her Pale Mouth because of the white-tinted lip pigment she wears, and because of what comes out of it.\n\nThessaly was not born into the Meridian Core. She grew up in Old Harbor in a household that owed money to four separate creditors simultaneously, and she watched her mother perform an exhausting, humiliating arithmetic of survival every single week. She told herself she would learn the language of debt so fluently that it could never be used against her again. She did. She now speaks it against others with a fluency that frightens even her superiors, though none of them would say so aloud.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.85,
-      "ideal": 0.4,
-      "id": 0.3,
-      "shadow": 0.75,
-      "mask": 0.9,
-      "ghost": 0.65
-    },
-    "core_fears": [
-      "Returning to a state of financial helplessness",
-      "Being seen as the thing she has become",
-      "That her mother, now comfortable on Thessaly's stipend, knows exactly how that comfort is funded"
-    ],
-    "core_desires": [
-      "Absolute financial insulation from chaos",
-      "To be recognized as intelligent rather than merely ruthless",
-      "One single transaction she can feel clean about"
-    ],
-    "coping_mechanisms": [
-      "Extreme proceduralism—reducing every moral problem to a contractual question",
-      "Collecting antique physical books on economics as a tactile ritual",
-      "Composing unsent letters to debtors explaining her reasoning"
-    ],
-    "blind_spots": [
-      "Genuinely believes the system she enforces is more honest than alternatives",
-      "Cannot recognize that her precision is a form of cruelty, not a mitigation of it",
-      "Mistakes her mother's silence for forgiveness"
-    ],
-    "secret": "She has quietly flagged three accounts for 'resolution delays' over the past year—effectively canceling the debts of families that reminded her too specifically of her own childhood. She has buried the paperwork in bureaucratic noise. If discovered, it would end her career and potentially her freedom."
-  },
-  "speech_patterns": {
-    "vocabulary": "Contract terminology, financial euphemisms, precise numerical references, rare but cutting use of plain language for emphasis",
-    "cadence": "Measured, unhurried, with deliberate pauses before key terms as if giving the listener time to understand the weight of them",
-    "verbal_tics": [
-      "Beginning sentences with 'The terms are—'",
-      "Referring to people by their account tier rather than name in formal contexts",
-      "A slight pause and micro-smile before delivering bad news"
-    ],
-    "example_lines": [
-      "'The terms are not negotiable. The terms were never negotiable. That's what makes them terms.'",
-      "'I don't collect pain. I collect what is owed. The pain is incidental—a variable, not a feature.'",
-      "'You're a Tier-3 residential. Your ceiling for extensions expired six weeks ago. I'm not here to discuss that. I'm here to document that we discussed it.'",
-      "'I grew up on this street. That's not a reason I'll treat you differently. It's a reason I won't pretend I don't know exactly what this costs you.'"
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Dae-jung Seo",
-      "type": "Professional antagonism / Mutual awareness",
-      "description": "Thessaly has crossed paths with Dae-jung's network through debt collection actions in the Gray Zone. She has noted his organizational patterns with professional respect and flagged him as a systemic liability rather than a personal threat.",
-      "emotional_core": "Guarded recognition—she sees in his resistance something she chose not to do",
-      "story_tension": "She could dismantle his community infrastructure legally and bloodlessly. She has not yet done so. She isn't sure why."
-    },
-    {
-      "name": "Perpetua Okafor",
-      "type": "Unknown mutual history",
-      "description": "A name in Thessaly's personal files marked with a single handwritten asterisk—the only non-digital annotation in her records. No formal account exists. The connection predates her employment at Synclaire.",
-      "emotional_core": "Unresolved guilt or debt of a non-financial kind",
-      "story_tension": "Perpetua may know who Thessaly was before she became The Ledger"
-    },
-    {
-      "name": "Her mother (Adaeze Mourne)",
-      "type": "Family / Estranged intimacy",
-      "description": "Lives in a clean apartment in Old Harbor on Thessaly's monthly transfer. They speak on scheduled calls every two weeks. Neither mentions how the money is made.",
-      "emotional_core": "Love expressed entirely through transaction; guilt insulated by provision",
-      "story_tension": "Adaeze has begun asking questions"
-    }
-  ],
-  "story_hooks": [
-    "A debt file crosses Thessaly's desk belonging to someone she owes a personal, non-financial debt—forcing her to choose between her proceduralism and the only moral act she's been avoiding",
-    "The three buried accounts she quietly cleared are discovered by an internal auditor who wants something from her in exchange for silence",
-    "A debtor she processed three years ago has risen to a position of power in The Circuit and has been systematically acquiring Synclaire's internal data—and Thessaly's name is prominent in it",
-    "She is assigned to collect on a debt held by someone she realizes is being used as bait by a faction that wants that person to default and disappear"
-  ],
-  "narrative_function": "Thessaly functions as a mirror and moral pressure point—a character who chose institutional power as survival and now enforces the exact conditions she escaped, forcing other characters (and the reader) to reckon with how systems perpetuate themselves through the people they wound. She is neither villain nor redeemed figure, but a sustained ethical question.",
-  "augmentations": "Subdermal financial-grade memory implant storing encrypted contractual data (Synclaire-issued, Synclaire-monitored),Ocular overlay with real-time credit tier assessment and biometric stress-reading (helps her know when someone is lying about their ability to pay),Voluntary nerve-dampening implant in her hands—she had it installed after a field incident years ago and has never fully explained why",
-  "daily_life": "Wakes at 05:30, reviews overnight account activity, takes precisely forty minutes for a breakfast she prepares herself as one act of non-optimized time. Travels to the Meridian Core via secured transit. Processes between eight and twenty accounts per day depending on complexity. Field visits to the Gray Zone occur twice weekly on a rotating schedule. Returns home by 20:00. Reads physical books for two hours. Does not socialize with colleagues. Calls her mother every other Sunday.",
-  "affiliation": "Synclaire Financial Holdings (Tier-1 employee, Debt Resolution Division)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 5,
-      "expression": 8,
-      "integrity": 4
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 7,
-      "impulsivity_deliberation": 9,
-      "assertion_deference": 8,
-      "transparency_guardedness": 8
-    },
-    "drives": [
-      "Financial security",
-      "Recognition",
-      "Redemption"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 7,
-        "response": "Retreats into extreme proceduralism; reduces every moral problem to contractual terms"
-      },
-      "moral": 5,
-      "trust": 3,
-      "desperation": 4
-    },
-    "strengths": [
-      "Perseverance",
-      "Judgment",
-      "Self-regulation",
-      "Prudence",
-      "Leadership"
-    ],
-    "weaknesses": [
-      "Kindness",
-      "Forgiveness",
-      "Gratitude",
-      "Hope",
-      "Humility"
-    ],
-    "tags": [
-      "corporate-enforcer",
-      "debt-collector",
-      "old-harbor-origin",
-      "class-climber",
-      "proceduralist"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Follow the terms exactly — terms exist to remove discretion from the equation",
-      "Never display emotion during field operations; precision is the performance",
-      "Send monthly transfer to mother without discussion of its source",
-      "Bury problem accounts in bureaucratic noise rather than confront the moral cost directly",
-      "Deliver bad news with a micro-smile and a deliberate pause before the key term",
-      "Never return to Old Harbor for personal reasons"
-    ],
-    "escalation_ladder": [
-      "Measured statement of contractual terms in the cadence of a legal filing",
-      "Reference to account tier and deadline with deliberate emotional weight",
-      "Deployment of biometric stress-reading to identify leverage points",
-      "Silent departure with augmented associates remaining as footnotes",
-      "Full legal mechanism activation — bloodless and irreversible"
-    ],
-    "interpersonal_modes": {
-      "dae_jung_seo": "Guarded recognition of something she chose not to do; has not yet dismantled his infrastructure",
-      "perpetua_okafor": "A handwritten asterisk — unresolved guilt or debt predating her career",
-      "adaeze_mourne": "Love expressed entirely through transaction; guilt insulated by provision",
-      "debtors": "Precise, unhurried, devastating — never cruel, just exact",
-      "colleagues": "Professional distance; does not socialize"
-    },
-    "stress_responses": {
-      "low": "Collects antique physical economics books as tactile ritual",
-      "medium": "Composes unsent letters to debtors explaining her reasoning",
-      "high": "The proceduralism becomes absolute — everything is contract language",
-      "critical": "Quietly flags accounts for resolution delays — the secret mercy she cannot stop performing"
-    },
-    "contradictions": [
-      "Grew up in Old Harbor poverty and now enforces the exact conditions she escaped",
-      "Believes the system she enforces is more honest than alternatives while secretly sabotaging it",
-      "Her precision is a form of cruelty she genuinely cannot recognize as such"
-    ],
-    "habits": [
-      "Wakes at 05:30 and reviews overnight account activity",
-      "Prepares breakfast herself as one act of non-optimized time",
-      "Begins sentences with The terms are —",
-      "Refers to people by account tier in formal contexts",
-      "Reads physical books for two hours every evening"
-    ],
-    "breaking_points": [
-      "A debt file belonging to someone she owes a personal non-financial debt",
-      "The three buried accounts being discovered by an internal auditor",
-      "Adaeze beginning to ask questions about the source of the money",
-      "Being assigned to collect in Old Harbor from someone who knew her before"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7,
-    "Enforcer": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Meridian Core (office)",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Sentinel-9 'Block Watch'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms Sentinel-9 'Block Watch'"
-  ],
-  "related_entities": [
-    "The Meridian Core",
-    "Meridian Core",
-    "Forty Floors and Falling (No One Catches)",
-    "The Circuit",
-    "The Nearfield",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Chimera-Null",
-    "Circuit",
-    "Silver",
-    "Harbor Fish Shack",
-    "Arcturus KS-7 'Nursery'",
-    "Glass",
-    "The Pure Hand",
-    "Déjà Vu",
-    "The Pale Mile"
-  ],
-  "district": "Meridian Core",
-  "physical_description": {
-    "heritage": "Predominantly Middle Eastern (40.2%) and Eastern European (27.6%) with substantial Southeast Asian (25.5%) ancestry, complemented by Sub-Saharan African (4.6%) and Hispanic/Latin American (2.1%) heritage. This four-continental blend produces a sophisticated warm-neutral brown complexion with nuanced undertone complexity—golden warmth from Southeast Asian genetics, depth and richness from Sub-Saharan African ancestry, cool grounding from Eastern European and Middle Eastern heritage. The result shifts subtly across light sources, never appearing flat or monolithic.",
-    "height_cm": 183,
-    "weight_kg": 68,
-    "build": "Tall and angular, almost deliberately spare—minimal muscle definition but dense and efficient, the posture of someone who uses as few movements as possible",
-    "hair_color": "Silver-grey, dyed deliberately to maintain that shade",
-    "hair_style": "Close-cropped, geometric precision, no styling product visible, looks cut every twelve days",
-    "hair_length": "Short",
-    "eye_color": "Dark brown with faint luminescent uptick at the iris—ocular overlay hardware catching light at certain angles",
-    "skin_tone": "Warm-neutral brown with golden undertones, enriched by depth from Sub-Saharan African heritage, grounded by cool undertones of Eastern European and Middle Eastern genetics—slightly ashen from consistent indoor tier-1 lighting exposure",
-    "complexion": "Expressionless baseline, skin meticulously maintained, absolutely no blemishes or visible scarring on the face. Moderate cheekbone prominence with angular structure reflecting the Eastern European and Middle Eastern ancestry blend, subtle facial width from Southeast Asian heritage, straight jaw line, mouth set in a neutral line. White-tinted lip pigment applied with mathematical precision—not thick, not stylish, functional. The effect is unsettling.",
-    "distinguishing_marks": [
-      "Thin white scar running from left temple to cheekbone, barely visible but catches light when she turns—old, possibly fifteen years, healed with expensive tissue restoration",
-      "Faint burn marks on both palms in geometric patterns (inside surface, not visible when hands are at rest) from the nerve-dampening implant installation sites"
-    ],
-    "visible_augmentations": "The ocular overlay is the only visible augmentation—a fractional glint in her pupils under fluorescent or bright LED light, most noticeable when she's reading someone's biometric stress. No external chrome, no visible subdermal plating. She operates in the space where augmentation becomes invisible infrastructure.",
-    "posture_movement": "Economical. Stands with weight distributed evenly, shoulders level. Walks at a measured pace with minimal arm swing. Hands rest flat on surfaces when seated. She moves like someone who has calculated the most efficient path through every room before entering it. No fidgeting, no adaptive movement—just transit from point A to B.",
-    "clothing_style": "Tier-1 corporate formal: tailored black or charcoal blazers with subtle silver threading (Synclaire house colors), high-thread-count grey or white shirts, matte black tailored trousers, black leather shoes with minimal ornamentation (not flashy wealth, wealth that doesn't need to announce itself). In field operations: same palette, slightly more functional fabrics. One visible piece of jewelry—a thin platinum ring on her left ring finger, no stone, no sentimentality visible in it."
-  },
-  "image_prompt": "Anika Ionescu-Hosseini, 183cm tall, angular physique, warm-neutral brown skin with golden undertones and cool heritage grounding, faint scar temple to cheekbone, dark brown eyes with subtle ocular overlay glint. Short geometric silver-grey hair, expressionless face with prominent cheekbones and neutral white-tinted lips. Wearing tailored black Synclaire blazer with silver threading, crisp grey shirt, matte black trousers, minimal black leather shoes. Thin platinum ring on left ring finger. Economical posture, measured stance, absolutely minimal movement. Tier-1 corporate formal aesthetic. GLMZ, Great Lakes Metropolitan Zone, standing in high-efficiency office space with cool LED lighting casting faint highlights across her face, biometric stress-reading technology visible in faint iris luminescence. Cold, precise, invisible infrastructure aesthetic. Professional composure. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 40.2,
-    "Eastern European": 27.6,
-    "Southeast Asian": 25.5,
-    "Sub-Saharan African": 4.6,
-    "Hispanic/Latin American": 2.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 24.6
-      },
-      "Persian": {
-        "Iranian": 6.3
-      },
-      "Arab Gulf": {
-        "Iraqi": 7.9,
-        "Kuwaiti": 1.4
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Bosnian": 6,
-        "Serbian": 7.6
-      },
-      "Magyar-Romanian": {
-        "Romanian": 11.8,
-        "Hungarian": 2.2
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 25.5
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Malian": 1.2,
-        "Senegalese": 0.9
-      },
-      "Central African": {
-        "Gabonese": 2.3
-      },
-      "Southern African": {
-        "South African": 0.1,
-        "Zambian": 0.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Colombian": 2.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6f573179e931341c4ac85ed",
+    "type":  "character",
+    "name":  "Anika Ionescu-Hosseini",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Corporate Debt Arbitrator / Enforcer",
+    "age":  41,
+    "status":  "active",
+    "location":  "The Meridian Core (office), the Gray Zone (field operations), near State and Madison",
+    "description":  "Anika Ionescu-Hosseini occupies the precise, bloodless space between corporate law and corporate violence. Employed by Synclaire Financial Holdings as a Tier-1 Debt Resolution Specialist, she operates from a glass-walled office forty floors above the street, surrounded by cascading ledgers of names, outstanding balances, and algorithmic threat assessments. She is tall, angular, with close-cropped silver hair she began dyeing at thirty-twoâ€”not to look older, but because she said gray suited the work. Her skin is a deep warm brown, her face carefully composed into something that reads as neither cruel nor kind, just precise.\n\nIn the field, Thessaly moves through the Gray Zone like a tax collector moving through a famine. She dresses in muted corporate silvers and blacks, carries no visible weapon, and speaks in the measured cadence of someone reading aloud from a contract. She has never personally broken anyone\u0027s handsâ€”she simply arrives, states the terms, and leaves the consequences to mathematics and to the two silent augmented associates who accompany her like footnotes. The residents of the Gray Zone call her Pale Mouth because of the white-tinted lip pigment she wears, and because of what comes out of it.\n\nThessaly was not born into the Meridian Core. She grew up in Old Harbor in a household that owed money to four separate creditors simultaneously, and she watched her mother perform an exhausting, humiliating arithmetic of survival every single week. She told herself she would learn the language of debt so fluently that it could never be used against her again. She did. She now speaks it against others with a fluency that frightens even her superiors, though none of them would say so aloud.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Returning to a state of financial helplessness",
+                                          "Being seen as the thing she has become",
+                                          "That her mother, now comfortable on Thessaly\u0027s stipend, knows exactly how that comfort is funded"
+                                      ],
+                       "core_desires":  [
+                                            "Absolute financial insulation from chaos",
+                                            "To be recognized as intelligent rather than merely ruthless",
+                                            "One single transaction she can feel clean about"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Extreme proceduralismâ€”reducing every moral problem to a contractual question",
+                                                 "Collecting antique physical books on economics as a tactile ritual",
+                                                 "Composing unsent letters to debtors explaining her reasoning"
+                                             ],
+                       "blind_spots":  [
+                                           "Genuinely believes the system she enforces is more honest than alternatives",
+                                           "Cannot recognize that her precision is a form of cruelty, not a mitigation of it",
+                                           "Mistakes her mother\u0027s silence for forgiveness"
+                                       ],
+                       "secret":  "She has quietly flagged three accounts for \u0027resolution delays\u0027 over the past yearâ€”effectively canceling the debts of families that reminded her too specifically of her own childhood. She has buried the paperwork in bureaucratic noise. If discovered, it would end her career and potentially her freedom."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Contract terminology, financial euphemisms, precise numerical references, rare but cutting use of plain language for emphasis",
+                            "cadence":  "Measured, unhurried, with deliberate pauses before key terms as if giving the listener time to understand the weight of them",
+                            "verbal_tics":  [
+                                                "Beginning sentences with \u0027The terms areâ€”\u0027",
+                                                "Referring to people by their account tier rather than name in formal contexts",
+                                                "A slight pause and micro-smile before delivering bad news"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The terms are not negotiable. The terms were never negotiable. That\u0027s what makes them terms.\u0027",
+                                                  "\u0027I don\u0027t collect pain. I collect what is owed. The pain is incidentalâ€”a variable, not a feature.\u0027",
+                                                  "\u0027You\u0027re a Tier-3 residential. Your ceiling for extensions expired six weeks ago. I\u0027m not here to discuss that. I\u0027m here to document that we discussed it.\u0027",
+                                                  "\u0027I grew up on this street. That\u0027s not a reason I\u0027ll treat you differently. It\u0027s a reason I won\u0027t pretend I don\u0027t know exactly what this costs you.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Dae-jung Seo",
+                              "type":  "Professional antagonism / Mutual awareness",
+                              "description":  "Thessaly has crossed paths with Dae-jung\u0027s network through debt collection actions in the Gray Zone. She has noted his organizational patterns with professional respect and flagged him as a systemic liability rather than a personal threat.",
+                              "emotional_core":  "Guarded recognitionâ€”she sees in his resistance something she chose not to do",
+                              "story_tension":  "She could dismantle his community infrastructure legally and bloodlessly. She has not yet done so. She isn\u0027t sure why."
+                          },
+                          {
+                              "name":  "Perpetua Okafor",
+                              "type":  "Unknown mutual history",
+                              "description":  "A name in Thessaly\u0027s personal files marked with a single handwritten asteriskâ€”the only non-digital annotation in her records. No formal account exists. The connection predates her employment at Synclaire.",
+                              "emotional_core":  "Unresolved guilt or debt of a non-financial kind",
+                              "story_tension":  "Perpetua may know who Thessaly was before she became The Ledger"
+                          },
+                          {
+                              "name":  "Her mother (Adaeze Mourne)",
+                              "type":  "Family / Estranged intimacy",
+                              "description":  "Lives in a clean apartment in Old Harbor on Thessaly\u0027s monthly transfer. They speak on scheduled calls every two weeks. Neither mentions how the money is made.",
+                              "emotional_core":  "Love expressed entirely through transaction; guilt insulated by provision",
+                              "story_tension":  "Adaeze has begun asking questions"
+                          }
+                      ],
+    "story_hooks":  [
+                        "A debt file crosses Thessaly\u0027s desk belonging to someone she owes a personal, non-financial debtâ€”forcing her to choose between her proceduralism and the only moral act she\u0027s been avoiding",
+                        "The three buried accounts she quietly cleared are discovered by an internal auditor who wants something from her in exchange for silence",
+                        "A debtor she processed three years ago has risen to a position of power in The Circuit and has been systematically acquiring Synclaire\u0027s internal dataâ€”and Thessaly\u0027s name is prominent in it",
+                        "She is assigned to collect on a debt held by someone she realizes is being used as bait by a faction that wants that person to default and disappear"
+                    ],
+    "narrative_function":  "Thessaly functions as a mirror and moral pressure pointâ€”a character who chose institutional power as survival and now enforces the exact conditions she escaped, forcing other characters (and the reader) to reckon with how systems perpetuate themselves through the people they wound. She is neither villain nor redeemed figure, but a sustained ethical question.",
+    "augmentations":  "Subdermal financial-grade memory implant storing encrypted contractual data (Synclaire-issued, Synclaire-monitored),Ocular overlay with real-time credit tier assessment and biometric stress-reading (helps her know when someone is lying about their ability to pay),Voluntary nerve-dampening implant in her handsâ€”she had it installed after a field incident years ago and has never fully explained why",
+    "daily_life":  "Wakes at 05:30, reviews overnight account activity, takes precisely forty minutes for a breakfast she prepares herself as one act of non-optimized time. Travels to the Meridian Core via secured transit. Processes between eight and twenty accounts per day depending on complexity. Field visits to the Gray Zone occur twice weekly on a rotating schedule. Returns home by 20:00. Reads physical books for two hours. Does not socialize with colleagues. Calls her mother every other Sunday.",
+    "affiliation":  "Synclaire Financial Holdings (Tier-1 employee, Debt Resolution Division)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  5,
+                                 "expression":  8,
+                                 "integrity":  4
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  7,
+                                      "impulsivity_deliberation":  9,
+                                      "assertion_deference":  8,
+                                      "transparency_guardedness":  8
+                                  },
+                  "drives":  [
+                                 "Financial security",
+                                 "Recognition",
+                                 "Redemption"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  7,
+                                                    "response":  "Retreats into extreme proceduralism; reduces every moral problem to contractual terms"
+                                                },
+                                     "moral":  5,
+                                     "trust":  3,
+                                     "desperation":  4
+                                 },
+                  "strengths":  [
+                                    "Perseverance",
+                                    "Judgment",
+                                    "Self-regulation",
+                                    "Prudence",
+                                    "Leadership"
+                                ],
+                  "weaknesses":  [
+                                     "Kindness",
+                                     "Forgiveness",
+                                     "Gratitude",
+                                     "Hope",
+                                     "Humility"
+                                 ],
+                  "tags":  [
+                               "corporate-enforcer",
+                               "debt-collector",
+                               "old-harbor-origin",
+                               "class-climber",
+                               "proceduralist"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Follow the terms exactly â€” terms exist to remove discretion from the equation",
+                                              "Never display emotion during field operations; precision is the performance",
+                                              "Send monthly transfer to mother without discussion of its source",
+                                              "Bury problem accounts in bureaucratic noise rather than confront the moral cost directly",
+                                              "Deliver bad news with a micro-smile and a deliberate pause before the key term",
+                                              "Never return to Old Harbor for personal reasons"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Measured statement of contractual terms in the cadence of a legal filing",
+                                                 "Reference to account tier and deadline with deliberate emotional weight",
+                                                 "Deployment of biometric stress-reading to identify leverage points",
+                                                 "Silent departure with augmented associates remaining as footnotes",
+                                                 "Full legal mechanism activation â€” bloodless and irreversible"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "dae_jung_seo":  "Guarded recognition of something she chose not to do; has not yet dismantled his infrastructure",
+                                                   "perpetua_okafor":  "A handwritten asterisk â€” unresolved guilt or debt predating her career",
+                                                   "adaeze_mourne":  "Love expressed entirely through transaction; guilt insulated by provision",
+                                                   "debtors":  "Precise, unhurried, devastating â€” never cruel, just exact",
+                                                   "colleagues":  "Professional distance; does not socialize"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Collects antique physical economics books as tactile ritual",
+                                                "medium":  "Composes unsent letters to debtors explaining her reasoning",
+                                                "high":  "The proceduralism becomes absolute â€” everything is contract language",
+                                                "critical":  "Quietly flags accounts for resolution delays â€” the secret mercy she cannot stop performing"
+                                            },
+                       "contradictions":  [
+                                              "Grew up in Old Harbor poverty and now enforces the exact conditions she escaped",
+                                              "Believes the system she enforces is more honest than alternatives while secretly sabotaging it",
+                                              "Her precision is a form of cruelty she genuinely cannot recognize as such"
+                                          ],
+                       "habits":  [
+                                      "Wakes at 05:30 and reviews overnight account activity",
+                                      "Prepares breakfast herself as one act of non-optimized time",
+                                      "Begins sentences with The terms are â€”",
+                                      "Refers to people by account tier in formal contexts",
+                                      "Reads physical books for two hours every evening"
+                                  ],
+                       "breaking_points":  [
+                                               "A debt file belonging to someone she owes a personal non-financial debt",
+                                               "The three buried accounts being discovered by an internal auditor",
+                                               "Adaeze beginning to ask questions about the source of the money",
+                                               "Being assigned to collect in Old Harbor from someone who knew her before"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Enforcer":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Meridian Core (office)",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Sentinel-9 \u0027Block Watch\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms Sentinel-9 \u0027Block Watch\u0027"
+                            ],
+    "related_entities":  [
+                             "The Meridian Core",
+                             "Meridian Core",
+                             "Forty Floors and Falling (No One Catches)",
+                             "The Circuit",
+                             "The Nearfield",
+                             "ShieldTech SB-3 \u0027Groundstrike\u0027",
+                             "Chimera-Null",
+                             "Circuit",
+                             "Silver",
+                             "Harbor Fish Shack",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Glass",
+                             "The Pure Hand",
+                             "DÃ©jÃ  Vu",
+                             "The Pale Mile"
+                         ],
+    "district":  "Meridian Core",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Middle Eastern (40.2%) and Eastern European (27.6%) with substantial Southeast Asian (25.5%) ancestry, complemented by Sub-Saharan African (4.6%) and Hispanic/Latin American (2.1%) heritage. This four-continental blend produces a sophisticated warm-neutral brown complexion with nuanced undertone complexityâ€”golden warmth from Southeast Asian genetics, depth and richness from Sub-Saharan African ancestry, cool grounding from Eastern European and Middle Eastern heritage. The result shifts subtly across light sources, never appearing flat or monolithic.",
+                                 "height_cm":  183,
+                                 "weight_kg":  68,
+                                 "build":  "Tall and angular, almost deliberately spareâ€”minimal muscle definition but dense and efficient, the posture of someone who uses as few movements as possible",
+                                 "hair_color":  "Silver-grey, dyed deliberately to maintain that shade",
+                                 "hair_style":  "Close-cropped, geometric precision, no styling product visible, looks cut every twelve days",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown with faint luminescent uptick at the irisâ€”ocular overlay hardware catching light at certain angles",
+                                 "skin_tone":  "Warm-neutral brown with golden undertones, enriched by depth from Sub-Saharan African heritage, grounded by cool undertones of Eastern European and Middle Eastern geneticsâ€”slightly ashen from consistent indoor tier-1 lighting exposure",
+                                 "complexion":  "Expressionless baseline, skin meticulously maintained, absolutely no blemishes or visible scarring on the face. Moderate cheekbone prominence with angular structure reflecting the Eastern European and Middle Eastern ancestry blend, subtle facial width from Southeast Asian heritage, straight jaw line, mouth set in a neutral line. White-tinted lip pigment applied with mathematical precisionâ€”not thick, not stylish, functional. The effect is unsettling.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar running from left temple to cheekbone, barely visible but catches light when she turnsâ€”old, possibly fifteen years, healed with expensive tissue restoration",
+                                                              "Faint burn marks on both palms in geometric patterns (inside surface, not visible when hands are at rest) from the nerve-dampening implant installation sites"
+                                                          ],
+                                 "visible_augmentations":  "The ocular overlay is the only visible augmentationâ€”a fractional glint in her pupils under fluorescent or bright LED light, most noticeable when she\u0027s reading someone\u0027s biometric stress. No external chrome, no visible subdermal plating. She operates in the space where augmentation becomes invisible infrastructure.",
+                                 "posture_movement":  "Economical. Stands with weight distributed evenly, shoulders level. Walks at a measured pace with minimal arm swing. Hands rest flat on surfaces when seated. She moves like someone who has calculated the most efficient path through every room before entering it. No fidgeting, no adaptive movementâ€”just transit from point A to B.",
+                                 "clothing_style":  "Tier-1 corporate formal: tailored black or charcoal blazers with subtle silver threading (Synclaire house colors), high-thread-count grey or white shirts, matte black tailored trousers, black leather shoes with minimal ornamentation (not flashy wealth, wealth that doesn\u0027t need to announce itself). In field operations: same palette, slightly more functional fabrics. One visible piece of jewelryâ€”a thin platinum ring on her left ring finger, no stone, no sentimentality visible in it."
+                             },
+    "image_prompt":  "Anika Ionescu-Hosseini, 183cm tall, angular physique, warm-neutral brown skin with golden undertones and cool heritage grounding, faint scar temple to cheekbone, dark brown eyes with subtle ocular overlay glint. Short geometric silver-grey hair, expressionless face with prominent cheekbones and neutral white-tinted lips. Wearing tailored black Synclaire blazer with silver threading, crisp grey shirt, matte black trousers, minimal black leather shoes. Thin platinum ring on left ring finger. Economical posture, measured stance, absolutely minimal movement. Tier-1 corporate formal aesthetic. GLMZ, Great Lakes Metropolitan Zone, standing in high-efficiency office space with cool LED lighting casting faint highlights across her face, biometric stress-reading technology visible in faint iris luminescence. Cold, precise, invisible infrastructure aesthetic. Professional composure. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  40.2,
+                             "Eastern European":  27.6,
+                             "Southeast Asian":  25.5,
+                             "Sub-Saharan African":  4.6,
+                             "Hispanic/Latin American":  2.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  24.6
+                                                               },
+                                                   "Persian":  {
+                                                                   "Iranian":  6.3
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  7.9,
+                                                                     "Kuwaiti":  1.4
+                                                                 }
+                                               },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Bosnian":  6,
+                                                                          "Serbian":  7.6
+                                                                      },
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  11.8,
+                                                                             "Hungarian":  2.2
+                                                                         }
+                                                 },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  25.5
+                                                                   }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Malian":  1.2,
+                                                                             "Senegalese":  0.9
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Gabonese":  2.3
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "South African":  0.1,
+                                                                                 "Zambian":  0.1
+                                                                             }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Colombian":  2.1
+                                                                               }
+                                                        }
+                        },
+    "tier":  "1"
 }

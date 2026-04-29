@@ -1,344 +1,371 @@
-{
-  "id": "019d6143a6527efb99d9163e783906c0",
-  "type": "character",
-  "name": "Diksha Fassi-Wojciechowski",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Protection racket enforcer and neighborhood tax collector, the Gray Zone lower levels",
-  "age": 44,
-  "status": "active",
-  "location": "the Gray Zone, lower levels — operates a rotating circuit of Burnside Pocket and Blackpipe Corridor businesses, near Pulaski and Chicago Ave",
-  "description": "Diksha Fassi-Wojciechowski is a big woman and she has never apologized for it — Tanzanian-Polish heritage, nearly six feet, broad through the shoulders, with a body that carries its strength like furniture: solidly, without trying. Her hair is worn in thick locs shot through with copper wire that glints when she moves, and her skin is very dark and very smooth except for a patch of scarring on her left jaw where she took something ceramic in a fight eleven years ago and kept it as a conversation piece. She dresses practically and well — not flashy, but never cheap — and has a habit of touching the scarring when she's working something out.\n\nShe is the neighborhood's collector for the Gray Zone Compact, an informal protection network that has run the lower levels since before she was born, and she does this job with a thoroughness that people mistake for menace until they know her better. She is not cruel. She is extremely serious. The businesses in her circuit pay on time and have done so for seven years, not because they fear her specifically but because they have seen what she does when accounts fall behind, which is to sit down with the owner and explain — in considerable detail, with full eye contact — exactly how much worse their situation could become and exactly how much it will cost her personally to allow it not to. She has a talent for making the math of compliance feel like mercy.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.6,
-      "id": 0.5,
-      "shadow": 0.5,
-      "mask": 0.4,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "Becoming her predecessor, who eventually started enjoying the fear",
-      "the Gray Zone Compact being absorbed by a larger organization that doesn't understand the neighborhood"
-    ],
-    "core_desires": [
-      "To run her circuit like a system that works — predictable, fair by her definition, sustainable",
-      "To eventually stop and run an actual legitimate business"
-    ],
-    "coping_mechanisms": [
-      "Rigid routine as a container for moral complexity",
-      "Cooking as the only space where she doesn't think about the work"
-    ],
-    "blind_spots": [
-      "She genuinely believes the businesses on her circuit are better off with Compact protection than without it, and this is sometimes true and sometimes catastrophically not true",
-      "She dismisses people who express fear of her as people who 'don't understand the system yet'"
-    ],
-    "secret": "She has been slowly diverting a small percentage of collections into a fund she thinks of as an 'exit account' — enough to buy out her position from the Compact and leave. She has been doing this for four years. She tells herself she is nearly there. She is not nearly there."
-  },
-  "speech_patterns": {
-    "vocabulary": "Deliberate, formal Meridian Standard with occasional Swahili phrases, especially when annoyed; economical with words, no filler",
-    "cadence": "Slow and measured, like someone who has all the time in the world and is demonstrating that they do",
-    "verbal_tics": [
-      "Long pauses before the most important word in a sentence",
-      "Touches her jaw scar when recalculating",
-      "'Let me ask you something.'"
-    ],
-    "example_lines": [
-      "'Let me ask you something. How much do you think it costs me to come here twice? Think about what your answer means before you give it.'",
-      "'I'm not here because I want to be here. I'm here because you didn't make this easy. That's a distinction worth understanding.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A business on her circuit is being targeted by a different criminal element that is not the Compact — she needs information about who is moving into the Gray Zone and why, and she can pay in access and goodwill",
-    "One of 'her' business owners has died and left the establishment to a young relative who has no idea about the Compact arrangement — Malaika is trying to handle this as delicately as possible before Uncle hears about the disruption"
-  ],
-  "narrative_function": "Antagonist or uneasy ally depending on whether player characters are in her territory, local power figure who mediates disputes, information source about the Gray Zone's economic underbelly, demonstration that protection rackets have their own social logic",
-  "augmentations": "Subdermal impact plating — forearms and sternum, rated for small-arms blunt trauma. Joint-assist servos in both knees (injury rehabilitation, functional advantage). No cosmetic mods.",
-  "daily_life": "Rises at five, exercises for ninety minutes, eats a large breakfast, walks her circuit to collect weekly payments and check on 'her' businesses, is home by eight in the evening, cooks dinner, watches old sports broadcasts, sleeps.",
-  "affiliation": "the Gray Zone Compact (established lower-level protection network); informal loyalty to the Compact's senior figure, an elderly man she calls Uncle who she has never met in person; Switchblade Alley",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 8,
-      "dexterity": 6,
-      "vitality": 8,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 4,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 5,
-      "expression": 6,
-      "integrity": 4
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 4,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "controlled force",
-      "neighborhood institution",
-      "slow exit",
-      "system believer",
-      "cook"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Escalate only as far as necessary — excess force is waste and waste is unprofessional",
-      "Never collect from someone who has explained a genuine emergency; note it, defer, revisit in a month",
-      "Always know two things about every person in her circuit: what they love and what they can't afford to lose"
-    ],
-    "escalation_ladder": [
-      "The conversation",
-      "The second conversation with a witness present",
-      "Demonstration of capability (property, not people)",
-      "Referral to Compact resources that are less measured than she is"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Neutral assessment, says little, watches everything, offers nothing until she's decided if they're a variable or an asset",
-      "friends": "Warm but not effusive, cooks for people she likes, will remember things you said six months ago and bring them back when they matter"
-    },
-    "stress_responses": {
-      "low": "Routine becomes even more rigid — if anything is out of place she corrects it",
-      "medium": "Becomes very still and very quiet",
-      "high": "Physical response — the plating activates involuntarily, jaw tightens, she puts distance between herself and the situation before she does something she'll have to account for"
-    },
-    "contradictions": [
-      "Believes she is the stable, fair alternative to something worse, which is true, and uses this belief to avoid examining what she actually is, which is also true",
-      "Dreams of leaving but has structured her entire sense of self around the work she wants to leave"
-    ],
-    "habits": [
-      "Cooks Sunday dinner for four neighbors who don't know each other, serves as informal dispute mediator between courses",
-      "Checks the ELF shrine in Blackpipe Corridor every Thursday — leaves a physical offering, a handful of copper coins, for what she calls the Spirit of Fair Dealing"
-    ],
-    "breaking_points": [
-      "Watching someone on her circuit genuinely break under the weight of what she collects",
-      "Being ordered to collect from someone she knows cannot pay without losing something irreplaceable"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal impact plating — forearms and sternum, rated for blunt trauma and low-caliber impacts",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal impact plating — forearms and sternum, rated for blunt trauma and low-caliber impacts",
-      "replaces": ""
-    },
-    {
-      "name": "Knee joint-assist servos — bilateral, originally rehabilitative, now provide enhanced stability and load capacity",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Knee joint-assist servos — bilateral, originally rehabilitative, now provide enhanced stability and load capacity",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Judge": 0.9,
-    "Sentinel": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2156 — Born in Burnside Pocket, the Gray Zone, to a Tanzanian transit worker and a Polish food vendor",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2174 — Begins working informally for the Gray Zone Compact as a message carrier at eighteen",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2183 — Becomes a full collector after seven years of demonstrated reliability",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2189 — Takes over the Burnside/Blackpipe circuit after her predecessor's retirement",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2196 — Begins the exit fund, tells no one",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'"
-  ],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "Burnside Pocket",
-    "The Meridian Compact for Economic Justice",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Heritage Vault",
-    "GLMZ",
-    "The Gradient Compact",
-    "Circuit",
-    "Chicago",
-    "Copper",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Flux Strömqvist-Villalobos"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "A genetic synthesis of East Asian (33.1%), North African (23.5%), and Eastern European (22.7%) ancestry, with secondary contributions from Southeast Asian (9.1%), Sub-Saharan African (7.1%), and Hispanic/Latin American (4.5%) lineages — the living embodiment of the Ubiquitous Diaspora. Her facial structure blends the angular planes and high cheekbones characteristic of East Asian heritage with the broader, warmer facial geometry of North African and Sub-Saharan ancestry. Eastern European bone structure adds width to her face and strength to her jaw. Southeast Asian and Hispanic influences soften edges throughout. The result is a uniquely calibrated fusion: sharp where East Asian influence dominates the eye area, warmed and broadened by African heritage across the cheeks and lower face, with the solid architectural quality of Slavic ancestry anchoring her overall presence.",
-    "height_cm": 183,
-    "weight_kg": 89,
-    "build": "Broad-shouldered and powerfully built without bulk — heavy muscle density in the chest, shoulders, and legs. Carries herself with the grounded solidity of someone who has learned her body's full weight is an asset, not a liability.",
-    "hair_color": "Dark brown, naturally black, woven through with copper wire filaments",
-    "hair_style": "Thick locs, shoulder-length, interwoven with conductive copper threading that catches light during movement",
-    "hair_length": "Long",
-    "eye_color": "Very dark brown, almost black, with exceptional clarity and direct gaze",
-    "skin_tone": "Rich warm brown with golden undertones — the result of blended East Asian, North African, Sub-Saharan African, and Southeast Asian ancestry creating a complex, resilient complexion with subtle warmth from Hispanic heritage influence. Smooth and maintained with care.",
-    "complexion": "Strong, defined facial structure with the high cheekbones and eye-area angularity of East Asian heritage, the broader midface and warmer undertones of North African and Sub-Saharan ancestry, and the solid jaw architecture of Eastern European genetics, softened slightly by Southeast Asian influence across the cheekbones. Unlined face for her age. Left jaw bears a distinctive patch of ceramic-scar tissue from an old fight — pale, matte, roughly 4cm across, which she touches habitually when thinking. No other visible marks. Grooming is meticulous; she maintains herself like essential equipment.",
-    "distinguishing_marks": [
-      "Ceramic-scar tissue on left jaw, approximately 4cm irregular patch, acquired eleven years ago, pale matte finish against deep warm skin",
-      "Faint linear scarring on inner right forearm where subdermal plating edges are occasionally visible under certain angles of light"
-    ],
-    "visible_augmentations": "Subdermal impact plating visible as slight geometric raising and hardened patches under the skin of both forearms and across the sternum — noticeable during physical contact or when wearing fitted clothing. Minimal cosmetic signature; functional only. Joint servos in both knees produce no visible external hardware but create a subtle precision in her gait.",
-    "posture_movement": "Moves with calculated economy — never rushed, never wasted motion. Stands with weight evenly distributed, shoulders back. Her gaze is level and unflinching. She has a habit of touching the scar on her jaw with her thumb when processing information or working through a problem. When seated, she remains alert. Handshakes are firm but not performative.",
-    "clothing_style": "Tier 3-4 practical wear — good-quality, durable fabrics that read as professional but not corporate. Favors fitted athletic-cut jackets (often dark, usually charcoal or black) over long-sleeved compression tops or tactical shirts that accommodate her augmentation without drawing attention. Tailored trousers in neutral colors, well-fitted boots with good ankle support (important for the knee servos). Jewelry minimal — a single heavy steel bracelet on her right wrist, no other adornment. Her clothes fit well because they are fitted to her; she does not buy off-racks. No corporate logos. No gang signifiers. Everything about her appearance says: reliable, experienced, expensive to maintain, not looking for trouble but thoroughly prepared."
-  },
-  "image_prompt": "Diksha Fassi-Wojciechowski, 183cm tall broad-shouldered woman with powerfully built frame and heavy muscle density. Dark rich warm brown skin with golden undertones, sharp high cheekbones of East Asian heritage blending with broader North African midface and solid Eastern European jaw architecture. Very dark brown almost-black eyes with exceptional clarity and direct unflinching gaze. Thick shoulder-length locs woven with copper wire filaments that catch light. Pale ceramic-scar tissue patch on left jaw, matte finish, approximately 4cm. Subdermal impact plating visible as subtle geometric raising on both forearms and sternum. Wearing charcoal fitted athletic-cut jacket over long-sleeved tactical compression top, tailored neutral trousers, well-fitted boots with ankle support. Single heavy steel bracelet on right wrist. Meticulous grooming. Calculated posture with weight evenly distributed, shoulders back. GLMZ, Great Lakes Metropolitan Zone, professional reliable experienced augmented operative aesthetic. Dim neon-filtered interior lighting. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 33.1,
-    "North African": 23.5,
-    "Eastern European": 22.7,
-    "Southeast Asian": 9.1,
-    "Sub-Saharan African": 7.1,
-    "Hispanic/Latin American": 4.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 5.5
-      },
-      "Korean": {
-        "Korean": 13.4
-      },
-      "Chinese": {
-        "Fujianese": 12.3,
-        "Cantonese": 1.9
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Tuareg": 16.1,
-        "Kabyle": 3.1
-      },
-      "Nile Valley": {
-        "Egyptian": 4.3
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Serbian": 22.7
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 2.4
-      },
-      "Indonesian": {
-        "Javanese": 1.1,
-        "Balinese": 0.1
-      },
-      "Laotian": {
-        "Laotian": 5.5
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 7.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 1,
-        "Ecuadorian": 1
-      },
-      "Central American": {
-        "Costa Rican": 1,
-        "Honduran": 0.4
-      },
-      "Mexican": {
-        "Mexican": 1.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6527efb99d9163e783906c0",
+    "type":  "character",
+    "name":  "Diksha Fassi-Wojciechowski",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Protection racket enforcer and neighborhood tax collector, the Gray Zone lower levels",
+    "age":  44,
+    "status":  "active",
+    "location":  "the Gray Zone, lower levels â€” operates a rotating circuit of Burnside Pocket and Blackpipe Corridor businesses, near Pulaski and Chicago Ave",
+    "description":  "Diksha Fassi-Wojciechowski is a big woman and she has never apologized for it â€” Tanzanian-Polish heritage, nearly six feet, broad through the shoulders, with a body that carries its strength like furniture: solidly, without trying. Her hair is worn in thick locs shot through with copper wire that glints when she moves, and her skin is very dark and very smooth except for a patch of scarring on her left jaw where she took something ceramic in a fight eleven years ago and kept it as a conversation piece. She dresses practically and well â€” not flashy, but never cheap â€” and has a habit of touching the scarring when she\u0027s working something out.\n\nShe is the neighborhood\u0027s collector for the Gray Zone Compact, an informal protection network that has run the lower levels since before she was born, and she does this job with a thoroughness that people mistake for menace until they know her better. She is not cruel. She is extremely serious. The businesses in her circuit pay on time and have done so for seven years, not because they fear her specifically but because they have seen what she does when accounts fall behind, which is to sit down with the owner and explain â€” in considerable detail, with full eye contact â€” exactly how much worse their situation could become and exactly how much it will cost her personally to allow it not to. She has a talent for making the math of compliance feel like mercy.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming her predecessor, who eventually started enjoying the fear",
+                                          "the Gray Zone Compact being absorbed by a larger organization that doesn\u0027t understand the neighborhood"
+                                      ],
+                       "core_desires":  [
+                                            "To run her circuit like a system that works â€” predictable, fair by her definition, sustainable",
+                                            "To eventually stop and run an actual legitimate business"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Rigid routine as a container for moral complexity",
+                                                 "Cooking as the only space where she doesn\u0027t think about the work"
+                                             ],
+                       "blind_spots":  [
+                                           "She genuinely believes the businesses on her circuit are better off with Compact protection than without it, and this is sometimes true and sometimes catastrophically not true",
+                                           "She dismisses people who express fear of her as people who \u0027don\u0027t understand the system yet\u0027"
+                                       ],
+                       "secret":  "She has been slowly diverting a small percentage of collections into a fund she thinks of as an \u0027exit account\u0027 â€” enough to buy out her position from the Compact and leave. She has been doing this for four years. She tells herself she is nearly there. She is not nearly there."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Deliberate, formal Meridian Standard with occasional Swahili phrases, especially when annoyed; economical with words, no filler",
+                            "cadence":  "Slow and measured, like someone who has all the time in the world and is demonstrating that they do",
+                            "verbal_tics":  [
+                                                "Long pauses before the most important word in a sentence",
+                                                "Touches her jaw scar when recalculating",
+                                                "\u0027Let me ask you something.\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Let me ask you something. How much do you think it costs me to come here twice? Think about what your answer means before you give it.\u0027",
+                                                  "\u0027I\u0027m not here because I want to be here. I\u0027m here because you didn\u0027t make this easy. That\u0027s a distinction worth understanding.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A business on her circuit is being targeted by a different criminal element that is not the Compact â€” she needs information about who is moving into the Gray Zone and why, and she can pay in access and goodwill",
+                        "One of \u0027her\u0027 business owners has died and left the establishment to a young relative who has no idea about the Compact arrangement â€” Malaika is trying to handle this as delicately as possible before Uncle hears about the disruption"
+                    ],
+    "narrative_function":  "Antagonist or uneasy ally depending on whether player characters are in her territory, local power figure who mediates disputes, information source about the Gray Zone\u0027s economic underbelly, demonstration that protection rackets have their own social logic",
+    "augmentations":  "Subdermal impact plating â€” forearms and sternum, rated for small-arms blunt trauma. Joint-assist servos in both knees (injury rehabilitation, functional advantage). No cosmetic mods.",
+    "daily_life":  "Rises at five, exercises for ninety minutes, eats a large breakfast, walks her circuit to collect weekly payments and check on \u0027her\u0027 businesses, is home by eight in the evening, cooks dinner, watches old sports broadcasts, sleeps.",
+    "affiliation":  "the Gray Zone Compact (established lower-level protection network); informal loyalty to the Compact\u0027s senior figure, an elderly man she calls Uncle who she has never met in person; Switchblade Alley",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  8,
+                                   "dexterity":  6,
+                                   "vitality":  8,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  4,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  5,
+                                 "expression":  6,
+                                 "integrity":  4
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "controlled force",
+                               "neighborhood institution",
+                               "slow exit",
+                               "system believer",
+                               "cook"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Escalate only as far as necessary â€” excess force is waste and waste is unprofessional",
+                                              "Never collect from someone who has explained a genuine emergency; note it, defer, revisit in a month",
+                                              "Always know two things about every person in her circuit: what they love and what they can\u0027t afford to lose"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "The conversation",
+                                                 "The second conversation with a witness present",
+                                                 "Demonstration of capability (property, not people)",
+                                                 "Referral to Compact resources that are less measured than she is"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Neutral assessment, says little, watches everything, offers nothing until she\u0027s decided if they\u0027re a variable or an asset",
+                                                   "friends":  "Warm but not effusive, cooks for people she likes, will remember things you said six months ago and bring them back when they matter"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Routine becomes even more rigid â€” if anything is out of place she corrects it",
+                                                "medium":  "Becomes very still and very quiet",
+                                                "high":  "Physical response â€” the plating activates involuntarily, jaw tightens, she puts distance between herself and the situation before she does something she\u0027ll have to account for"
+                                            },
+                       "contradictions":  [
+                                              "Believes she is the stable, fair alternative to something worse, which is true, and uses this belief to avoid examining what she actually is, which is also true",
+                                              "Dreams of leaving but has structured her entire sense of self around the work she wants to leave"
+                                          ],
+                       "habits":  [
+                                      "Cooks Sunday dinner for four neighbors who don\u0027t know each other, serves as informal dispute mediator between courses",
+                                      "Checks the ELF shrine in Blackpipe Corridor every Thursday â€” leaves a physical offering, a handful of copper coins, for what she calls the Spirit of Fair Dealing"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone on her circuit genuinely break under the weight of what she collects",
+                                               "Being ordered to collect from someone she knows cannot pay without losing something irreplaceable"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal impact plating â€” forearms and sternum, rated for blunt trauma and low-caliber impacts",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal impact plating â€” forearms and sternum, rated for blunt trauma and low-caliber impacts",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Knee joint-assist servos â€” bilateral, originally rehabilitative, now provide enhanced stability and load capacity",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Knee joint-assist servos â€” bilateral, originally rehabilitative, now provide enhanced stability and load capacity",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Judge":  0.9,
+                       "Sentinel":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2156 â€” Born in Burnside Pocket, the Gray Zone, to a Tanzanian transit worker and a Polish food vendor",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2174 â€” Begins working informally for the Gray Zone Compact as a message carrier at eighteen",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2183 â€” Becomes a full collector after seven years of demonstrated reliability",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2189 â€” Takes over the Burnside/Blackpipe circuit after her predecessor\u0027s retirement",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2196 â€” Begins the exit fund, tells no one",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Viper Mk.III \u0027Copperhead\u0027",
+                            "Kang-Petrov Arms KPS-3M \u0027Mongrel\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Viper Mk.III \u0027Copperhead\u0027",
+                                "Kang-Petrov Arms KPS-3M \u0027Mongrel\u0027"
+                            ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "Burnside Pocket",
+                             "The Meridian Compact for Economic Justice",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "The Heritage Vault",
+                             "GLMZ",
+                             "The Gradient Compact",
+                             "Circuit",
+                             "Chicago",
+                             "Copper",
+                             "IRONLIMB Spectre SV-4 Stealth Arm",
+                             "Flux StrÃ¶mqvist-Villalobos"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "A genetic synthesis of East Asian (33.1%), North African (23.5%), and Eastern European (22.7%) ancestry, with secondary contributions from Southeast Asian (9.1%), Sub-Saharan African (7.1%), and Hispanic/Latin American (4.5%) lineages â€” the living embodiment of the Ubiquitous Diaspora. Her facial structure blends the angular planes and high cheekbones characteristic of East Asian heritage with the broader, warmer facial geometry of North African and Sub-Saharan ancestry. Eastern European bone structure adds width to her face and strength to her jaw. Southeast Asian and Hispanic influences soften edges throughout. The result is a uniquely calibrated fusion: sharp where East Asian influence dominates the eye area, warmed and broadened by African heritage across the cheeks and lower face, with the solid architectural quality of Slavic ancestry anchoring her overall presence.",
+                                 "height_cm":  183,
+                                 "weight_kg":  89,
+                                 "build":  "Broad-shouldered and powerfully built without bulk â€” heavy muscle density in the chest, shoulders, and legs. Carries herself with the grounded solidity of someone who has learned her body\u0027s full weight is an asset, not a liability.",
+                                 "hair_color":  "Dark brown, naturally black, woven through with copper wire filaments",
+                                 "hair_style":  "Thick locs, shoulder-length, interwoven with conductive copper threading that catches light during movement",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Very dark brown, almost black, with exceptional clarity and direct gaze",
+                                 "skin_tone":  "Rich warm brown with golden undertones â€” the result of blended East Asian, North African, Sub-Saharan African, and Southeast Asian ancestry creating a complex, resilient complexion with subtle warmth from Hispanic heritage influence. Smooth and maintained with care.",
+                                 "complexion":  "Strong, defined facial structure with the high cheekbones and eye-area angularity of East Asian heritage, the broader midface and warmer undertones of North African and Sub-Saharan ancestry, and the solid jaw architecture of Eastern European genetics, softened slightly by Southeast Asian influence across the cheekbones. Unlined face for her age. Left jaw bears a distinctive patch of ceramic-scar tissue from an old fight â€” pale, matte, roughly 4cm across, which she touches habitually when thinking. No other visible marks. Grooming is meticulous; she maintains herself like essential equipment.",
+                                 "distinguishing_marks":  [
+                                                              "Ceramic-scar tissue on left jaw, approximately 4cm irregular patch, acquired eleven years ago, pale matte finish against deep warm skin",
+                                                              "Faint linear scarring on inner right forearm where subdermal plating edges are occasionally visible under certain angles of light"
+                                                          ],
+                                 "visible_augmentations":  "Subdermal impact plating visible as slight geometric raising and hardened patches under the skin of both forearms and across the sternum â€” noticeable during physical contact or when wearing fitted clothing. Minimal cosmetic signature; functional only. Joint servos in both knees produce no visible external hardware but create a subtle precision in her gait.",
+                                 "posture_movement":  "Moves with calculated economy â€” never rushed, never wasted motion. Stands with weight evenly distributed, shoulders back. Her gaze is level and unflinching. She has a habit of touching the scar on her jaw with her thumb when processing information or working through a problem. When seated, she remains alert. Handshakes are firm but not performative.",
+                                 "clothing_style":  "Tier 3-4 practical wear â€” good-quality, durable fabrics that read as professional but not corporate. Favors fitted athletic-cut jackets (often dark, usually charcoal or black) over long-sleeved compression tops or tactical shirts that accommodate her augmentation without drawing attention. Tailored trousers in neutral colors, well-fitted boots with good ankle support (important for the knee servos). Jewelry minimal â€” a single heavy steel bracelet on her right wrist, no other adornment. Her clothes fit well because they are fitted to her; she does not buy off-racks. No corporate logos. No gang signifiers. Everything about her appearance says: reliable, experienced, expensive to maintain, not looking for trouble but thoroughly prepared."
+                             },
+    "image_prompt":  "Diksha Fassi-Wojciechowski, 183cm tall broad-shouldered woman with powerfully built frame and heavy muscle density. Dark rich warm brown skin with golden undertones, sharp high cheekbones of East Asian heritage blending with broader North African midface and solid Eastern European jaw architecture. Very dark brown almost-black eyes with exceptional clarity and direct unflinching gaze. Thick shoulder-length locs woven with copper wire filaments that catch light. Pale ceramic-scar tissue patch on left jaw, matte finish, approximately 4cm. Subdermal impact plating visible as subtle geometric raising on both forearms and sternum. Wearing charcoal fitted athletic-cut jacket over long-sleeved tactical compression top, tailored neutral trousers, well-fitted boots with ankle support. Single heavy steel bracelet on right wrist. Meticulous grooming. Calculated posture with weight evenly distributed, shoulders back. GLMZ, Great Lakes Metropolitan Zone, professional reliable experienced augmented operative aesthetic. Dim neon-filtered interior lighting. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  33.1,
+                             "North African":  23.5,
+                             "Eastern European":  22.7,
+                             "Southeast Asian":  9.1,
+                             "Sub-Saharan African":  7.1,
+                             "Hispanic/Latin American":  4.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  5.5
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  13.4
+                                                          },
+                                               "Chinese":  {
+                                                               "Fujianese":  12.3,
+                                                               "Cantonese":  1.9
+                                                           }
+                                           },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Tuareg":  16.1,
+                                                                  "Kabyle":  3.1
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  4.3
+                                                                  }
+                                              },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Serbian":  22.7
+                                                                      }
+                                                 },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  2.4
+                                                                   },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  1.1,
+                                                                       "Balinese":  0.1
+                                                                   },
+                                                    "Laotian":  {
+                                                                    "Laotian":  5.5
+                                                                }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  7.1
+                                                                            }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  1,
+                                                                                   "Ecuadorian":  1
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Costa Rican":  1,
+                                                                                     "Honduran":  0.4
+                                                                                 },
+                                                            "Mexican":  {
+                                                                            "Mexican":  1.1
+                                                                        }
+                                                        }
+                        },
+    "tier":  "1"
 }

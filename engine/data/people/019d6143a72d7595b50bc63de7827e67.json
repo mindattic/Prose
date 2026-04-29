@@ -1,307 +1,338 @@
-{
-  "id": "019d6143a72d7595b50bc63de7827e67",
-  "type": "character",
-  "name": "Dolores Sokolov",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Grandmother raising two grandchildren; former Axiom administrative coordinator, now pension-dependent",
-  "age": 63,
-  "status": "active",
-  "location": "Montclare Quiet, third-floor walkup apartment above a synthetic food cooperative, near Milwaukee and North Ave",
-  "description": "Dolores Sokolov is a compact, kinetic woman who moves like someone with a permanent to-do list she is racing against. Her heritage is Kazakh and Congolese on one side, Basque and Filipina on the other, and she has inherited a particular combination of high cheekbones, deep-set dark eyes, and a complexion the color of strong tea that she has never once thought about because there has always been something more pressing to think about. Her hair is natural black with silver threading through it, worn in a practical knot held by whatever is nearby — today a stylus, yesterday a fork. She has a small blue bioluminescent patch on her left collarbone, a cosmetic genemod she got when her daughter was still alive and the two of them went together; she has never removed it.\n\nShe worked for Axiom Corp for twenty-one years as an administrative coordinator, which is a title that means she was the person who actually made things function while people with better titles collected the credit. She retired at 58 when her daughter and son-in-law were killed in a transit accident — the same Ferrogate collapse that took Dragomir Achebe-Qalashani's leg, though they have never met — and she became the primary caregiver for her grandchildren Kojo, now 11, and Amara, now 8. Her pension from Axiom is tier-2 and she is meticulous about budgeting it, but every time she gets a small surplus she spends it on the children's education supplements rather than herself. She is holding together so completely on the outside that almost no one has noticed she has not fully processed her daughter's death.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.8,
-      "ideal": 0.6,
-      "id": 0.45,
-      "shadow": 0.35,
-      "mask": 0.7,
-      "ghost": 0.55
-    },
-    "core_fears": [
-      "That she will die before the children are old enough to manage without her",
-      "That she will eventually break in front of them and they will see how close to the edge she is"
-    ],
-    "core_desires": [
-      "To give Kojo and Amara a stable enough life that they don't inherit her scarcity",
-      "To understand what actually caused the Ferrogate collapse that killed her daughter"
-    ],
-    "coping_mechanisms": [
-      "Relentless activity that leaves no space for grief",
-      "Hypervigilant budgeting as a form of control over an uncontrollable situation",
-      "The bioluminescent patch — she touches it when overwhelmed, as if her daughter can feel it"
-    ],
-    "blind_spots": [
-      "Refuses to ask for help even when she desperately needs it; interprets offers of assistance as pity",
-      "So focused on the children's future she has not investigated the accident because investigating would mean feeling it"
-    ],
-    "secret": "She received a private settlement from Ferrogate after her daughter's death — significantly more than the standard accident settlement — with a non-disclosure clause attached. She signed it because she needed the money for the children. She thinks about it almost every day and has never told anyone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Efficient and practical; corporate administrative precision from her Axiom years mixed with the warm diminutives she uses with the children that leak into adult conversations",
-    "cadence": "Quick and organized; she speaks in list-structures; she is always slightly in a hurry",
-    "verbal_tics": [
-      "'Right, so—'",
-      "Uses children's names as anchors in her own sentences even when they're not present ('Kojo would say—')",
-      "Short exhale through the nose when she is suppressing something"
-    ],
-    "example_lines": [
-      "'I have forty-five minutes between pickup and when the cooperative closes its daily accounting, so tell me what you need and let's be specific.'",
-      "'She would have hated that I signed it. She was always braver than me. I keep telling myself I did it for the kids. I did do it for the kids. That's not the whole story.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Kojo, age 11, has started following an older kid into parts of Montclare Quiet that Ysabel knows are not safe, and she needs help she won't ask for directly",
-    "A journalist working on the Ferrogate collapse contacts her about the NDA settlement and she has to decide — for the first time — whether her daughter's story is worth more than her security"
-  ],
-  "narrative_function": "Humanizing civilian anchor; represents the generational cost of corporate accidents; potential quest giver when the children get into trouble or when she discovers something about the Ferrogate accident she was never meant to know; emotional touchstone",
-  "augmentations": "Small bioluminescent blue patch on left collarbone (cosmetic genemod, no longer wanted but kept for sentimental reasons); reading lens implant in left eye (corrective, basic model)",
-  "daily_life": "Gets the children ready and walks them to the local education node, then works a half-shift at the food cooperative downstairs in exchange for reduced meal costs, then collects the children, oversees homework, makes dinner, falls asleep over her budget spreadsheets.",
-  "affiliation": "Ferrogate Transit (mid-level grandmother raising two grandchildren; former axio)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 6
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 8,
-      "creativity": 5,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 7,
-      "expression": 6,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": -2,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "grief-masked",
-      "caregiver load",
-      "bureaucratic fluency",
-      "nda holder",
-      "quietly extraordinary"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Children's stability comes first in every calculation",
-      "Never let anyone see the budget is actually at breaking point",
-      "Accept help only when it is offered as exchange, not charity"
-    ],
-    "escalation_ladder": [
-      "Polite efficiency and redirection",
-      "Direct statement of what she needs and what she can offer in return",
-      "Controlled anger — she can be very precise about it when it comes",
-      "Full vulnerability — rare, destabilizing for her, and only for people who have truly earned it"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Brisk and pleasant; assesses within seconds whether they are a resource, neutral, or a drain; will be kind to all three but allocate differently",
-      "friends": "Warm in action rather than words; shows up; brings food; remembers what you need without asking again"
-    },
-    "stress_responses": {
-      "low": "Reorganizes the apartment; meal preps aggressively",
-      "medium": "Becomes very precise and slightly sharp in speech; the list-structures get longer",
-      "high": "Goes very still; touches the bioluminescent patch; goes through budget spreadsheets at 0200 as a form of catastrophe-modelling"
-    },
-    "contradictions": [
-      "She is the person everyone in Montclare Quiet goes to when they need to think through a problem clearly, but she cannot apply the same clarity to her own grief"
-    ],
-    "habits": [
-      "Checks the children's education node performance metrics every evening",
-      "Makes a small data offering to the building's E.L.F. shrine every Sunday — she is not sure she believes but her daughter did",
-      "Keeps the Ferrogate settlement documents in a physical lockbox she has not opened in two years"
-    ],
-    "breaking_points": [
-      "If either grandchild is seriously harmed, the NDA becomes meaningless to her immediately"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Dreamer": 0.9,
-    "Seeker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Montclare Quiet",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Montclare Quiet; mixed Kazakh-Congolese-Basque-Filipina family",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Hired by Axiom Corp as administrative assistant; rises to coordinator over eight years",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Gets bioluminescent genemod with her daughter Adaora as a birthday ritual",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Daughter Adaora and son-in-law killed in Ferrogate tunnel collapse",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Signs Ferrogate NDA settlement; becomes primary caregiver for Kojo and Amara",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Retires from Axiom on pension; begins cooperative work downstairs",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Defender-38 'Snubnose'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Montclare Quiet",
-    "Ferrogate Transit",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "The Heritage Vault",
-    "The Accidental",
-    "The Gradient Compact",
-    "Silver",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Compass Rose",
-    "Arcturus Defense Solutions ETF-3 'Mantis'"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Dolores Sokolov carries a striking tricontinent blend: 47.4% Hispanic/Latin American ancestry provides warm olive undertones and prominent cheekbones; 27.3% Eastern European heritage contributes angular bone structure, a defined jawline, and cooler undertones; 25.3% East Asian ancestry shapes eye geometry, cheekbone prominence, and facial proportions. The result is a complexion that shifts between warm golden-olive and cool slate depending on light, with subtle bronze reflectivity—a sophisticated interplay of three distinct genetic traditions.",
-    "height_cm": 158,
-    "weight_kg": 52,
-    "build": "Compact and wiry, with the lean musculature of someone who moves constantly and eats efficiently. No excess, no softness — the body is a functional tool never prioritized for maintenance.",
-    "hair_color": "Natural black with silver threading",
-    "hair_style": "Worn in a practical knot, secured with whatever is at hand (pen, stylus, fork, chopstick)",
-    "hair_length": "Medium to long, always pinned up",
-    "eye_color": "Deep brown, natural; left eye contains a faint corrective lens implant visible only under direct light",
-    "skin_tone": "Warm golden-olive with slate undertones — a sophisticated medium-deep blend reflecting the tricontinent ancestry mix. Subtle bronze reflectivity in natural light.",
-    "complexion": "Minimal grooming, weathered by decades of corporate work and caregiving. Fine lines around eyes and mouth. Face is expressive but rarely at rest—always slightly tensed toward the next task. Prominent cheekbones reflect Hispanic and East Asian ancestry; angular Eastern European bone structure shapes jawline and brow ridge. Hands show minor calluses from food cooperative work. Nails kept short and practical.",
-    "distinguishing_marks": [
-      "Small bioluminescent blue patch on left collarbone, roughly the size of a coin, faintly glowing in low light — a cosmetic genemod received decades ago",
-      "Faint scar on right palm, thin and old, consistent with minor kitchen burn or accident from years past",
-      "Thin stress lines across forehead that deepen when concentrating on budget calculations"
-    ],
-    "visible_augmentations": "The bioluminescent patch on collarbone is the only visible augmentation; it glows faintly in dim light. The reading lens implant in left eye is invisible unless examined closely. No chrome, no obvious modifications—augmentations are practical and decades old, chosen for function, not aesthetics.",
-    "posture_movement": "Constant, economical motion—never still, always oriented toward the next task. Upright but not rigid posture, shoulders slightly forward as if leaning into the day ahead. Quick walk, even when not rushing. When seated, rarely fully relaxed; hands usually occupied—folding, organizing, calculating. Default expression is focused, slightly furrowed, with undercurrent of exhaustion.",
-    "clothing_style": "Tier 3-4 practical: well-maintained but worn synthetic fabrics in neutral colors (charcoal, dark blue, gray, black). Work uniform at food cooperative is green apron over simple tech-blend clothing. Off-duty: durable pants with multiple pockets, simple long-sleeved shirts to cover the bioluminescent patch, flat worn shoes suitable for standing all day. Simple band on left ring finger—late spouse's. No jewelry or personal style flourishes; everything chosen for durability. Clothing smells faintly of synthetic food base and cooperative washing station detergent."
-  },
-  "image_prompt": "A weathered woman in her 60s with striking tricontinent features: warm golden-olive skin with cool slate undertones, prominent cheekbones blending Hispanic and East Asian ancestry with angular Eastern European bone structure. Natural black hair with silver threading pulled into a practical knot secured with a pen. Deep brown eyes showing faint lines of concentration. Lean, compact build. Wearing worn charcoal synthetic shirt with long sleeves covering a faintly glowing bioluminescent blue patch on her collarbone. Simple wedding band visible. Standing in a dimly-lit food cooperative warehouse, fluorescent overhead lights casting cool shadows across her focused, slightly-furrowed expression. Hands showing minor calluses, posture slightly forward-leaning. GLMZ, realistic portrait, weathered but dignified, functional augmentations, worn but well-maintained clothing, cinematic lighting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 47.4,
-    "Eastern European": 27.3,
-    "East Asian": 25.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Ecuadorian": 11.4,
-        "Argentine": 4.4
-      },
-      "Mexican": {
-        "Mexican": 31.6
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Czech": 27.3
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Hakka": 25.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a72d7595b50bc63de7827e67",
+    "type":  "character",
+    "name":  "Dolores Sokolov",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Grandmother raising two grandchildren; former Axiom administrative coordinator, now pension-dependent",
+    "age":  63,
+    "status":  "active",
+    "location":  "Montclare Quiet, third-floor walkup apartment above a synthetic food cooperative, near Milwaukee and North Ave",
+    "description":  "Dolores Sokolov is a compact, kinetic woman who moves like someone with a permanent to-do list she is racing against. Her heritage is Kazakh and Congolese on one side, Basque and Filipina on the other, and she has inherited a particular combination of high cheekbones, deep-set dark eyes, and a complexion the color of strong tea that she has never once thought about because there has always been something more pressing to think about. Her hair is natural black with silver threading through it, worn in a practical knot held by whatever is nearby â€” today a stylus, yesterday a fork. She has a small blue bioluminescent patch on her left collarbone, a cosmetic genemod she got when her daughter was still alive and the two of them went together; she has never removed it.\n\nShe worked for Axiom Corp for twenty-one years as an administrative coordinator, which is a title that means she was the person who actually made things function while people with better titles collected the credit. She retired at 58 when her daughter and son-in-law were killed in a transit accident â€” the same Ferrogate collapse that took Dragomir Achebe-Qalashani\u0027s leg, though they have never met â€” and she became the primary caregiver for her grandchildren Kojo, now 11, and Amara, now 8. Her pension from Axiom is tier-2 and she is meticulous about budgeting it, but every time she gets a small surplus she spends it on the children\u0027s education supplements rather than herself. She is holding together so completely on the outside that almost no one has noticed she has not fully processed her daughter\u0027s death.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That she will die before the children are old enough to manage without her",
+                                          "That she will eventually break in front of them and they will see how close to the edge she is"
+                                      ],
+                       "core_desires":  [
+                                            "To give Kojo and Amara a stable enough life that they don\u0027t inherit her scarcity",
+                                            "To understand what actually caused the Ferrogate collapse that killed her daughter"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Relentless activity that leaves no space for grief",
+                                                 "Hypervigilant budgeting as a form of control over an uncontrollable situation",
+                                                 "The bioluminescent patch â€” she touches it when overwhelmed, as if her daughter can feel it"
+                                             ],
+                       "blind_spots":  [
+                                           "Refuses to ask for help even when she desperately needs it; interprets offers of assistance as pity",
+                                           "So focused on the children\u0027s future she has not investigated the accident because investigating would mean feeling it"
+                                       ],
+                       "secret":  "She received a private settlement from Ferrogate after her daughter\u0027s death â€” significantly more than the standard accident settlement â€” with a non-disclosure clause attached. She signed it because she needed the money for the children. She thinks about it almost every day and has never told anyone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Efficient and practical; corporate administrative precision from her Axiom years mixed with the warm diminutives she uses with the children that leak into adult conversations",
+                            "cadence":  "Quick and organized; she speaks in list-structures; she is always slightly in a hurry",
+                            "verbal_tics":  [
+                                                "\u0027Right, soâ€”\u0027",
+                                                "Uses children\u0027s names as anchors in her own sentences even when they\u0027re not present (\u0027Kojo would sayâ€”\u0027)",
+                                                "Short exhale through the nose when she is suppressing something"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I have forty-five minutes between pickup and when the cooperative closes its daily accounting, so tell me what you need and let\u0027s be specific.\u0027",
+                                                  "\u0027She would have hated that I signed it. She was always braver than me. I keep telling myself I did it for the kids. I did do it for the kids. That\u0027s not the whole story.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Kojo, age 11, has started following an older kid into parts of Montclare Quiet that Ysabel knows are not safe, and she needs help she won\u0027t ask for directly",
+                        "A journalist working on the Ferrogate collapse contacts her about the NDA settlement and she has to decide â€” for the first time â€” whether her daughter\u0027s story is worth more than her security"
+                    ],
+    "narrative_function":  "Humanizing civilian anchor; represents the generational cost of corporate accidents; potential quest giver when the children get into trouble or when she discovers something about the Ferrogate accident she was never meant to know; emotional touchstone",
+    "augmentations":  "Small bioluminescent blue patch on left collarbone (cosmetic genemod, no longer wanted but kept for sentimental reasons); reading lens implant in left eye (corrective, basic model)",
+    "daily_life":  "Gets the children ready and walks them to the local education node, then works a half-shift at the food cooperative downstairs in exchange for reduced meal costs, then collects the children, oversees homework, makes dinner, falls asleep over her budget spreadsheets.",
+    "affiliation":  "Ferrogate Transit (mid-level grandmother raising two grandchildren; former axio)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  6
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  8,
+                                 "creativity":  5,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  7,
+                                 "expression":  6,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "grief-masked",
+                               "caregiver load",
+                               "bureaucratic fluency",
+                               "nda holder",
+                               "quietly extraordinary"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Children\u0027s stability comes first in every calculation",
+                                              "Never let anyone see the budget is actually at breaking point",
+                                              "Accept help only when it is offered as exchange, not charity"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite efficiency and redirection",
+                                                 "Direct statement of what she needs and what she can offer in return",
+                                                 "Controlled anger â€” she can be very precise about it when it comes",
+                                                 "Full vulnerability â€” rare, destabilizing for her, and only for people who have truly earned it"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Brisk and pleasant; assesses within seconds whether they are a resource, neutral, or a drain; will be kind to all three but allocate differently",
+                                                   "friends":  "Warm in action rather than words; shows up; brings food; remembers what you need without asking again"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Reorganizes the apartment; meal preps aggressively",
+                                                "medium":  "Becomes very precise and slightly sharp in speech; the list-structures get longer",
+                                                "high":  "Goes very still; touches the bioluminescent patch; goes through budget spreadsheets at 0200 as a form of catastrophe-modelling"
+                                            },
+                       "contradictions":  [
+                                              "She is the person everyone in Montclare Quiet goes to when they need to think through a problem clearly, but she cannot apply the same clarity to her own grief"
+                                          ],
+                       "habits":  [
+                                      "Checks the children\u0027s education node performance metrics every evening",
+                                      "Makes a small data offering to the building\u0027s E.L.F. shrine every Sunday â€” she is not sure she believes but her daughter did",
+                                      "Keeps the Ferrogate settlement documents in a physical lockbox she has not opened in two years"
+                                  ],
+                       "breaking_points":  [
+                                               "If either grandchild is seriously harmed, the NDA becomes meaningless to her immediately"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Dreamer":  0.9,
+                       "Seeker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Montclare Quiet",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Montclare Quiet; mixed Kazakh-Congolese-Basque-Filipina family",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Hired by Axiom Corp as administrative assistant; rises to coordinator over eight years",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Gets bioluminescent genemod with her daughter Adaora as a birthday ritual",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Daughter Adaora and son-in-law killed in Ferrogate tunnel collapse",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Signs Ferrogate NDA settlement; becomes primary caregiver for Kojo and Amara",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Retires from Axiom on pension; begins cooperative work downstairs",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Defender-38 \u0027Snubnose\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Montclare Quiet",
+                             "Ferrogate Transit",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "The Heritage Vault",
+                             "The Accidental",
+                             "The Gradient Compact",
+                             "Silver",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Compass Rose",
+                             "Arcturus Defense Solutions ETF-3 \u0027Mantis\u0027"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Dolores Sokolov carries a striking tricontinent blend: 47.4% Hispanic/Latin American ancestry provides warm olive undertones and prominent cheekbones; 27.3% Eastern European heritage contributes angular bone structure, a defined jawline, and cooler undertones; 25.3% East Asian ancestry shapes eye geometry, cheekbone prominence, and facial proportions. The result is a complexion that shifts between warm golden-olive and cool slate depending on light, with subtle bronze reflectivityâ€”a sophisticated interplay of three distinct genetic traditions.",
+                                 "height_cm":  158,
+                                 "weight_kg":  52,
+                                 "build":  "Compact and wiry, with the lean musculature of someone who moves constantly and eats efficiently. No excess, no softness â€” the body is a functional tool never prioritized for maintenance.",
+                                 "hair_color":  "Natural black with silver threading",
+                                 "hair_style":  "Worn in a practical knot, secured with whatever is at hand (pen, stylus, fork, chopstick)",
+                                 "hair_length":  "Medium to long, always pinned up",
+                                 "eye_color":  "Deep brown, natural; left eye contains a faint corrective lens implant visible only under direct light",
+                                 "skin_tone":  "Warm golden-olive with slate undertones â€” a sophisticated medium-deep blend reflecting the tricontinent ancestry mix. Subtle bronze reflectivity in natural light.",
+                                 "complexion":  "Minimal grooming, weathered by decades of corporate work and caregiving. Fine lines around eyes and mouth. Face is expressive but rarely at restâ€”always slightly tensed toward the next task. Prominent cheekbones reflect Hispanic and East Asian ancestry; angular Eastern European bone structure shapes jawline and brow ridge. Hands show minor calluses from food cooperative work. Nails kept short and practical.",
+                                 "distinguishing_marks":  [
+                                                              "Small bioluminescent blue patch on left collarbone, roughly the size of a coin, faintly glowing in low light â€” a cosmetic genemod received decades ago",
+                                                              "Faint scar on right palm, thin and old, consistent with minor kitchen burn or accident from years past",
+                                                              "Thin stress lines across forehead that deepen when concentrating on budget calculations"
+                                                          ],
+                                 "visible_augmentations":  "The bioluminescent patch on collarbone is the only visible augmentation; it glows faintly in dim light. The reading lens implant in left eye is invisible unless examined closely. No chrome, no obvious modificationsâ€”augmentations are practical and decades old, chosen for function, not aesthetics.",
+                                 "posture_movement":  "Constant, economical motionâ€”never still, always oriented toward the next task. Upright but not rigid posture, shoulders slightly forward as if leaning into the day ahead. Quick walk, even when not rushing. When seated, rarely fully relaxed; hands usually occupiedâ€”folding, organizing, calculating. Default expression is focused, slightly furrowed, with undercurrent of exhaustion.",
+                                 "clothing_style":  "Tier 3-4 practical: well-maintained but worn synthetic fabrics in neutral colors (charcoal, dark blue, gray, black). Work uniform at food cooperative is green apron over simple tech-blend clothing. Off-duty: durable pants with multiple pockets, simple long-sleeved shirts to cover the bioluminescent patch, flat worn shoes suitable for standing all day. Simple band on left ring fingerâ€”late spouse\u0027s. No jewelry or personal style flourishes; everything chosen for durability. Clothing smells faintly of synthetic food base and cooperative washing station detergent."
+                             },
+    "image_prompt":  "A weathered woman in her 60s with striking tricontinent features: warm golden-olive skin with cool slate undertones, prominent cheekbones blending Hispanic and East Asian ancestry with angular Eastern European bone structure. Natural black hair with silver threading pulled into a practical knot secured with a pen. Deep brown eyes showing faint lines of concentration. Lean, compact build. Wearing worn charcoal synthetic shirt with long sleeves covering a faintly glowing bioluminescent blue patch on her collarbone. Simple wedding band visible. Standing in a dimly-lit food cooperative warehouse, fluorescent overhead lights casting cool shadows across her focused, slightly-furrowed expression. Hands showing minor calluses, posture slightly forward-leaning. GLMZ, realistic portrait, weathered but dignified, functional augmentations, worn but well-maintained clothing, cinematic lighting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  47.4,
+                             "Eastern European":  27.3,
+                             "East Asian":  25.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  11.4,
+                                                                                   "Argentine":  4.4
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  31.6
+                                                                        }
+                                                        },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Czech":  27.3
+                                                                     }
+                                                 },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Hakka":  25.3
+                                                           }
+                                           }
+                        },
+    "tier":  "3"
 }

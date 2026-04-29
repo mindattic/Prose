@@ -1,350 +1,361 @@
-{
-  "id": "019d6143a66871edb873854d1c83827e",
-  "type": "character",
-  "name": "Divyansh Hong-Najjar",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Freelance combat specialist — street samurai",
-  "age": 42,
-  "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Divyansh Hong-Najjar is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 42, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a street samurai out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented street samurai in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.66,
-      "ideal": 0.68,
-      "id": 0.41,
-      "shadow": 0.66,
-      "mask": 0.68,
-      "ghost": 0.21
-    },
-    "core_fears": [
-      "That their reputation is built on luck, not skill, and the luck is finite",
-      "Losing control of their own body to a hacker or malfunctioning cyberware",
-      "That they're fundamentally alone and connection is just a vulnerability"
-    ],
-    "core_desires": [
-      "The perfect run — one job so clean it becomes legend",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "To prove everyone who dismissed them catastrophically wrong"
-    ],
-    "coping_mechanisms": [
-      "Maintains weapons obsessively — cleaning guns is meditation",
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Denial — nothing is wrong, everything is fine, they are fine, shut up"
-    ],
-    "blind_spots": [
-      "Trusts technology more than people — machines don't betray",
-      "Thinks speed can substitute for planning because it's worked so far",
-      "Believes their trauma makes them special instead of recognizing it as damage to manage"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
-    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
-    "verbal_tics": [
-      "Ends statements with 'yeah?' — not a question, a dare",
-      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
-    ],
-    "example_lines": [
-      "\"I don't get paid to have opinions about the target. I get paid to make them stop moving.\"",
-      "\"Chrome doesn't make you faster. Training makes you faster. Chrome just means you survive learning.\"",
-      "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Tier 4 executive offers Nneka Cruz-Addo a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "Nneka Cruz-Addo's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
-    "A crew member from Nneka Cruz-Addo's past shows up in GLMZ, carrying old grievances and new chrome"
-  ],
-  "narrative_function": "Nneka Cruz-Addo represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters. Enhanced tendons — geneware upgrade, jump height and grip strength tripled",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Independent — Narrows-based operations; The Glass Ladder",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 6
-      },
-      "agility": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 9
-      },
-      "reflexes": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 4
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 7
-      },
-      "perception": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 8
-      },
-      "willpower": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 5
-      },
-      "technical": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 7
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 8
-      },
-      "intimidation": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 6
-      },
-      "deception": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 5
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 10
-      }
-    },
-    "personality": {
-      "aggression": 0.8,
-      "caution": 0.42,
-      "loyalty": 0.48,
-      "greed": 0.56,
-      "empathy": 0.56
-    },
-    "drives": [
-      "survival",
-      "power",
-      "money"
-    ],
-    "thresholds": {
-      "pain": 8,
-      "stress": 3,
-      "loyalty_break": 10
-    },
-    "strengths": [
-      "network of reliable contacts",
-      "exceptional close-quarters combat"
-    ],
-    "weaknesses": [
-      "poor impulse control in specific triggers",
-      "physical limitation from incomplete augmentation"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "street samurai",
-      "tier-2",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Never discusses active contracts with anyone not directly involved",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Insists they work alone but performs noticeably better in a team",
-      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
-    ],
-    "habits": [
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
-    ],
-    "breaking_points": [
-      "Being publicly exposed — name, face, address, all of it blown",
-      "Discovering their employer deliberately sent them into a death trap",
-      "Running out of options — no contacts, no money, no safe house, no way out"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Retractable monofilament whip in left forearm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters",
-      "replaces": ""
-    },
-    {
-      "name": "Enhanced tendons",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Enhanced tendons — geneware upgrade, jump height and grip strength tripled",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Protector": 0.9,
-    "Code Keeper": 0.9,
-    "Charmer": 0.9,
-    "Pragmatist": 0.9,
-    "Duelist": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Dockside",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Arcturus Defense Solutions SAR-3 'Warden'",
-    "Volkov-Saito Precision VS-R8 'Verdict'"
-  ],
-  "registered_firearms": [
-    "Arcturus Defense Solutions SAR-3 'Warden'",
-    "Volkov-Saito Precision VS-R8 'Verdict'"
-  ],
-  "related_entities": [
-    "The Nearfield",
-    "Lazarus LX-2 'Lab Rat'",
-    "The Pure Hand",
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Predominantly Middle Eastern (74.2%) with significant East Asian (21.2%) and minor South Asian (4.6%) ancestry. The genetic blend creates a striking phenotype: warm golden-brown complexion with subtle amber undertones from the Middle Eastern base, refined by East Asian bone structure. High cheekbones and angular facial geometry from East Asian heritage harmonize with the broader facial structure and fuller features characteristic of Middle Eastern ancestry, creating a balanced, compelling face with depth.",
-    "height_cm": 178,
-    "weight_kg": 92,
-    "build": "Stocky and densely muscled — broad shoulders, thick trunk, legs like load-bearing columns. No excess fat. Built for power, not speed.",
-    "hair_color": "Black, natural",
-    "hair_style": "Low fade, kept practical and short",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm golden-brown with amber undertones — the genetic blend creates a complexion that reads as rich mid-to-deep tone with inherent warmth. Sun exposure has weathered the surface, creating visible texture and minor hyperpigmentation patterns across the shoulders and forearms.",
-    "complexion": "Face architecture reflects blended heritage: angular cheekbones and defined brow ridge from East Asian ancestry, broader nose and fuller lips from Middle Eastern heritage, subtle strength through the jaw from the combined genetic influence. Broken nose healed slightly off-center, deep-set eyes, strong jawline. Skin shows sun damage and minor scarring around the knuckles and temples. Pragmatic grooming — no vanity, no neglect.",
-    "distinguishing_marks": [
-      "Horizontal scar across right cheekbone — 3 inches, thin and pale, approximately 8 years old",
-      "Burn scar on left wrist where monofilament housing meets skin — irregular, webbed tissue",
-      "Knuckle scarring on both hands — multiple old breaks, thick scar tissue across dorsal surface",
-      "Tattoo on left shoulder — geometric pattern in dark ink, Akan symbols arranged in a grid, worn but visible"
-    ],
-    "visible_augmentations": "Left forearm shows a subtle line running from wrist to mid-forearm where the monofilament whip mechanism is housed — chrome edging visible around the deployment slot when the mechanism is tensioned. Enhanced tendons are subcutaneous but create an unusual muscularity in the forearms and calves that looks slightly too defined for natural biology.",
-    "posture_movement": "Moves with deliberate economy — no wasted motion. Stands with weight distributed evenly, ready to shift in any direction. Hands rest naturally at his sides, but fingers flex habitually. Eyes track movement constantly. When relaxed, he gives the impression of a spring under tension.",
-    "clothing_style": "Tier 4 practical — reinforced denim and synthleather jackets that can take impact and blade damage. Unmarked gray and black palette. Steel-toed boots, worn but maintained. A weathered long coat in charcoal, lined with reactive fabric. No corp branding, no flashy modifications. Clothing is chosen for function: concealed pockets for tools, reinforced seams, durable materials. A battered smartwatch on his right wrist — several generations old, reliable, repaired multiple times. Dull finish, no gleam."
-  },
-  "image_prompt": "Divyansh Hong-Najjar, stocky muscular man with warm golden-brown skin and amber undertones, angular cheekbones from East Asian heritage blending with fuller Middle Eastern features, dark brown eyes deep-set and alert, broken nose healed off-center, strong jaw. Black short hair in low fade. Horizontal pale scar across right cheekbone, knuckle scarring, burn scar on left wrist around monofilament housing with visible chrome edging. Left forearm showing enhanced tendon definition from augmentation. Wearing reinforced gray and black synthleather jacket, worn charcoal reactive-lined long coat, steel-toed boots. Battered smartwatch on right wrist. Standing with deliberate posture, weight balanced, ready to move. Hands relaxed at sides with flexing fingers. Eyes tracking, spring-tension alertness. GLMZ Great Lakes Metropolitan Zone setting, industrial neon-lit background with shadows, cool blue and amber lighting highlighting his golden-brown complexion and scar tissue. Gritty, worn aesthetic, practical fighter's frame. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 74.2,
-    "East Asian": 21.2,
-    "South Asian": 4.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Yemeni": 34.6,
-        "Emirati": 39.6
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 8.6
-      },
-      "Chinese": {
-        "Cantonese": 0.3
-      },
-      "Korean": {
-        "Korean": 12.3
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 0.8
-      },
-      "Indian": {
-        "Marathi": 1.9,
-        "Tamil": 0.5
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 1.4
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a66871edb873854d1c83827e",
+    "type":  "character",
+    "name":  "Divyansh Hong-Najjar",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Freelance combat specialist â€” street samurai",
+    "age":  42,
+    "status":  "active",
+    "location":  "Dockside â€” Lake Michigan waterfront, smuggler territory, near Wacker and State",
+    "description":  "Divyansh Hong-Najjar is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 42, he has soft features that belie the chrome underneath â€” people underestimate him once, usually only once. The chrome is visible â€” retractable monofilament whip in left forearm â€” concealed weapon, devastating in â€” and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate â€” low-tier security, the kind that teaches you exactly how the system\u0027s defenses fail. He works as a street samurai out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented street samurai in GLMZ, but he might be the most stubborn, and in this city that\u0027s worth more.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That their reputation is built on luck, not skill, and the luck is finite",
+                                          "Losing control of their own body to a hacker or malfunctioning cyberware",
+                                          "That they\u0027re fundamentally alone and connection is just a vulnerability"
+                                      ],
+                       "core_desires":  [
+                                            "The perfect run â€” one job so clean it becomes legend",
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail",
+                                            "To prove everyone who dismissed them catastrophically wrong"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Maintains weapons obsessively â€” cleaning guns is meditation",
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+                                                 "Denial â€” nothing is wrong, everything is fine, they are fine, shut up"
+                                             ],
+                       "blind_spots":  [
+                                           "Trusts technology more than people â€” machines don\u0027t betray",
+                                           "Thinks speed can substitute for planning because it\u0027s worked so far",
+                                           "Believes their trauma makes them special instead of recognizing it as damage to manage"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Terse to the point of rudeness. Treats words like ammunition â€” expensive and not to be wasted.",
+                            "cadence":  "Measured and deliberate â€” pauses before important words for emphasis.",
+                            "verbal_tics":  [
+                                                "Ends statements with \u0027yeah?\u0027 â€” not a question, a dare",
+                                                "Addresses people by physical traits â€” \u0027hey, tall one\u0027 or \u0027listen, chrome-arm\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I don\u0027t get paid to have opinions about the target. I get paid to make them stop moving.\"",
+                                                  "\"Chrome doesn\u0027t make you faster. Training makes you faster. Chrome just means you survive learning.\"",
+                                                  "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Tier 4 executive offers Nneka Cruz-Addo a permanent position â€” the pay is obscene and the strings are invisible until they tighten",
+                        "Nneka Cruz-Addo\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad",
+                        "A crew member from Nneka Cruz-Addo\u0027s past shows up in GLMZ, carrying old grievances and new chrome"
+                    ],
+    "narrative_function":  "Nneka Cruz-Addo represents the working professional of the runner world â€” competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+    "augmentations":  "Retractable monofilament whip in left forearm â€” concealed weapon, devastating in close quarters. Enhanced tendons â€” geneware upgrade, jump height and grip strength tripled",
+    "daily_life":  "Between contracts, maintains a cover identity â€” mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+    "affiliation":  "Independent â€” Narrows-based operations; The Glass Ladder",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  6,
+                                                    "augmented":  0,
+                                                    "effective":  6
+                                                },
+                                   "agility":  {
+                                                   "base":  5,
+                                                   "augmented":  3,
+                                                   "effective":  8
+                                               },
+                                   "endurance":  {
+                                                     "base":  6,
+                                                     "augmented":  2,
+                                                     "effective":  9
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  8,
+                                                    "augmented":  0,
+                                                    "effective":  4
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  4,
+                                                      "augmented":  2,
+                                                      "effective":  7
+                                                  },
+                                 "perception":  {
+                                                    "base":  8,
+                                                    "augmented":  3,
+                                                    "effective":  8
+                                                },
+                                 "willpower":  {
+                                                   "base":  6,
+                                                   "augmented":  0,
+                                                   "effective":  5
+                                               },
+                                 "technical":  {
+                                                   "base":  5,
+                                                   "augmented":  3,
+                                                   "effective":  7
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  6,
+                                                  "augmented":  3,
+                                                  "effective":  8
+                                              },
+                                 "intimidation":  {
+                                                      "base":  7,
+                                                      "augmented":  0,
+                                                      "effective":  6
+                                                  },
+                                 "deception":  {
+                                                   "base":  8,
+                                                   "augmented":  2,
+                                                   "effective":  5
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  0,
+                                                 "effective":  10
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.8,
+                                      "caution":  0.42,
+                                      "loyalty":  0.48,
+                                      "greed":  0.56,
+                                      "empathy":  0.56
+                                  },
+                  "drives":  [
+                                 "survival",
+                                 "power",
+                                 "money"
+                             ],
+                  "thresholds":  {
+                                     "pain":  8,
+                                     "stress":  3,
+                                     "loyalty_break":  10
+                                 },
+                  "strengths":  [
+                                    "network of reliable contacts",
+                                    "exceptional close-quarters combat"
+                                ],
+                  "weaknesses":  [
+                                     "poor impulse control in specific triggers",
+                                     "physical limitation from incomplete augmentation"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "street samurai",
+                               "tier-2",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Never discusses active contracts with anyone not directly involved",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+                                          ],
+                       "habits":  [
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Takes a specific route home every time, varying only one block per trip â€” paranoia as lifestyle",
+                                      "Arrives fifteen minutes early to everything â€” late once, nearly died, never again"
+                                  ],
+                       "breaking_points":  [
+                                               "Being publicly exposed â€” name, face, address, all of it blown",
+                                               "Discovering their employer deliberately sent them into a death trap",
+                                               "Running out of options â€” no contacts, no money, no safe house, no way out"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Retractable monofilament whip in left forearm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Retractable monofilament whip in left forearm â€” concealed weapon, devastating in close quarters",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Enhanced tendons",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Enhanced tendons â€” geneware upgrade, jump height and grip strength tripled",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Protector":  0.9,
+                       "Code Keeper":  0.9,
+                       "Charmer":  0.9,
+                       "Pragmatist":  0.9,
+                       "Duelist":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Dockside",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Arcturus Defense Solutions SAR-3 \u0027Warden\u0027",
+                            "Volkov-Saito Precision VS-R8 \u0027Verdict\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Arcturus Defense Solutions SAR-3 \u0027Warden\u0027",
+                                "Volkov-Saito Precision VS-R8 \u0027Verdict\u0027"
+                            ],
+    "related_entities":  [
+                             "The Nearfield",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "The Pure Hand",
+                             "Slagworks Industrial",
+                             "GLMZ"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Middle Eastern (74.2%) with significant East Asian (21.2%) and minor South Asian (4.6%) ancestry. The genetic blend creates a striking phenotype: warm golden-brown complexion with subtle amber undertones from the Middle Eastern base, refined by East Asian bone structure. High cheekbones and angular facial geometry from East Asian heritage harmonize with the broader facial structure and fuller features characteristic of Middle Eastern ancestry, creating a balanced, compelling face with depth.",
+                                 "height_cm":  178,
+                                 "weight_kg":  92,
+                                 "build":  "Stocky and densely muscled â€” broad shoulders, thick trunk, legs like load-bearing columns. No excess fat. Built for power, not speed.",
+                                 "hair_color":  "Black, natural",
+                                 "hair_style":  "Low fade, kept practical and short",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, natural",
+                                 "skin_tone":  "Warm golden-brown with amber undertones â€” the genetic blend creates a complexion that reads as rich mid-to-deep tone with inherent warmth. Sun exposure has weathered the surface, creating visible texture and minor hyperpigmentation patterns across the shoulders and forearms.",
+                                 "complexion":  "Face architecture reflects blended heritage: angular cheekbones and defined brow ridge from East Asian ancestry, broader nose and fuller lips from Middle Eastern heritage, subtle strength through the jaw from the combined genetic influence. Broken nose healed slightly off-center, deep-set eyes, strong jawline. Skin shows sun damage and minor scarring around the knuckles and temples. Pragmatic grooming â€” no vanity, no neglect.",
+                                 "distinguishing_marks":  [
+                                                              "Horizontal scar across right cheekbone â€” 3 inches, thin and pale, approximately 8 years old",
+                                                              "Burn scar on left wrist where monofilament housing meets skin â€” irregular, webbed tissue",
+                                                              "Knuckle scarring on both hands â€” multiple old breaks, thick scar tissue across dorsal surface",
+                                                              "Tattoo on left shoulder â€” geometric pattern in dark ink, Akan symbols arranged in a grid, worn but visible"
+                                                          ],
+                                 "visible_augmentations":  "Left forearm shows a subtle line running from wrist to mid-forearm where the monofilament whip mechanism is housed â€” chrome edging visible around the deployment slot when the mechanism is tensioned. Enhanced tendons are subcutaneous but create an unusual muscularity in the forearms and calves that looks slightly too defined for natural biology.",
+                                 "posture_movement":  "Moves with deliberate economy â€” no wasted motion. Stands with weight distributed evenly, ready to shift in any direction. Hands rest naturally at his sides, but fingers flex habitually. Eyes track movement constantly. When relaxed, he gives the impression of a spring under tension.",
+                                 "clothing_style":  "Tier 4 practical â€” reinforced denim and synthleather jackets that can take impact and blade damage. Unmarked gray and black palette. Steel-toed boots, worn but maintained. A weathered long coat in charcoal, lined with reactive fabric. No corp branding, no flashy modifications. Clothing is chosen for function: concealed pockets for tools, reinforced seams, durable materials. A battered smartwatch on his right wrist â€” several generations old, reliable, repaired multiple times. Dull finish, no gleam."
+                             },
+    "image_prompt":  "Divyansh Hong-Najjar, stocky muscular man with warm golden-brown skin and amber undertones, angular cheekbones from East Asian heritage blending with fuller Middle Eastern features, dark brown eyes deep-set and alert, broken nose healed off-center, strong jaw. Black short hair in low fade. Horizontal pale scar across right cheekbone, knuckle scarring, burn scar on left wrist around monofilament housing with visible chrome edging. Left forearm showing enhanced tendon definition from augmentation. Wearing reinforced gray and black synthleather jacket, worn charcoal reactive-lined long coat, steel-toed boots. Battered smartwatch on right wrist. Standing with deliberate posture, weight balanced, ready to move. Hands relaxed at sides with flexing fingers. Eyes tracking, spring-tension alertness. GLMZ Great Lakes Metropolitan Zone setting, industrial neon-lit background with shadows, cool blue and amber lighting highlighting his golden-brown complexion and scar tissue. Gritty, worn aesthetic, practical fighter\u0027s frame. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  74.2,
+                             "East Asian":  21.2,
+                             "South Asian":  4.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Yemeni":  34.6,
+                                                                     "Emirati":  39.6
+                                                                 }
+                                               },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  8.6
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  0.3
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  12.3
+                                                          }
+                                           },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  0.8
+                                                           },
+                                                "Indian":  {
+                                                               "Marathi":  1.9,
+                                                               "Tamil":  0.5
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  1.4
+                                                               }
+                                            }
+                        },
+    "tier":  "2"
 }

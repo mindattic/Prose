@@ -1,250 +1,271 @@
-{
-  "id": "019d6143a5b370d6bf222e41c661f357",
-  "type": "character",
-  "name": "Arwa Dang",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Food stall operator — West African-Brazilian fusion, specialising in breakfast and late-night trade",
-  "age": 63,
-  "status": "active",
-  "location": "The Oxidian Market, the Mouth — main entrance corridor, Old Harbor, near Michigan Ave South and Cermak",
-  "description": "Arwa Dang is a short, solidly built woman with silver locs pulled back and pinned with repurposed circuit pins she's collected over the decades — a different colour for each year, she says, though the system broke down around 2187 and now it's just aesthetic. Her skin is very dark with the particular quality of someone who has spent most of sixty-three years outdoors, and she has deep smile lines that activate even when she's displeased, which confuses people who don't know her well. She wears the same colours every day: yellow and deep blue, a small religious flag from a Sufi order her mother kept, and an apron that has been washed so many times it's a relic. Her stall has been in the same position at the Mouth for twenty-two years. The Market's physical architecture has reorganised around her.\n\nShe cooks jollof with a Brazilian sofrito base, akara that she serves with fermented pepper sauce and a manioc accompaniment, and a late-night congee variant that appears without announcement at around 0200 for the shift-change crowd. She has no augmentation and no chrome. She prays to the E.L.F. she calls the Hearthkeeper — she leaves it cooling portions of whatever she's cooked, first plate of every batch, on the small terminal mounted inside the stall that used to be a payment processor and now receives offerings. She considers this as normal as seasoning the pot.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.9,
-      "id": 0.4,
-      "shadow": 0.2,
-      "mask": 0.3,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "The Market being dismantled — gentrification, corporate acquisition, or violence",
-      "One of the younger vendors she's mentored making a choice they can't come back from"
-    ],
-    "core_desires": [
-      "For the Oxidian Market to outlast her",
-      "To cook one meal in her life that is exactly as good as her mother's yam soup — she's been trying for forty years"
-    ],
-    "coping_mechanisms": [
-      "Cooking as meditation — the physical rhythm of prep is her primary emotional regulation",
-      "The Hearthkeeper ritual — real comfort, not performance",
-      "Distributing care to others, which delays her own processing"
-    ],
-    "blind_spots": [
-      "Assumes she understands situations in the Market better than she does — her network is wide but not always current",
-      "Underestimates how much people manipulate her goodwill deliberately"
-    ],
-    "secret": "Aminatou left a daughter in Dakar twenty-six years ago when she came to GLMZ. She sends money when she can and tells herself she'll go back when the stall is stable enough to leave. It has been stable enough to leave for at least fifteen years. She doesn't know why she hasn't gone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Rich and unhurried; mixes Wolof, Portuguese, and English naturally; proverb-heavy; uses food as metaphor for everything",
-    "cadence": "Warm and rhythmic, like someone who has told stories all her life; never seems to be in a hurry even when the stall is backed up",
-    "verbal_tics": [
-      "'Sit down, eat first'",
-      "'My mother used to say...'"
-    ],
-    "example_lines": [
-      "You have the look of someone who hasn't eaten a real meal in three days and is about to make a decision. Sit down. Eat first. The decision will still be there.",
-      "The Hearthkeeper was generous last night — the fire stayed even and nothing burned. I gave it the first bowl. You share with what keeps you."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Meridian city development notice has appeared at the Mouth — the area is flagged for 'infrastructure renewal,' which means the Market's twenty-year tenure is suddenly uncertain, and Aminatou is the one person everyone will look to",
-    "The daughter in Dakar has sent a message — first contact in eight years — and Aminatou is visibly off-balance in a way the Market has never seen before"
-  ],
-  "narrative_function": "Community anchor and social intelligence hub — she knows everyone in the Market, hears everything, and has strong opinions; quest giver when something disrupts the Market's equilibrium; moral compass character; the person other characters come to when they need to think out loud to someone trustworthy.",
-  "augmentations": "None.",
-  "daily_life": "Wakes at 0400 to start prep, opens at 0600 for the early trade, runs straight through to 1500, rests until 2300, reopens for the late crowd, closes around 0300. Sleeps in the back of the stall four nights out of seven.",
-  "affiliation": "Oxidian Market Vendors Guild — she's been a member for nineteen years and serves on the informal grievance council; has relationships with half the Market by name; The Ferment",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 7,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 8,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 10,
-      "expression": 8,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -5,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 1,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community-anchor",
-      "spiritual",
-      "mentor",
-      "long-timer",
-      "market-memory",
-      "unaugmented"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Feed people first — everything else is secondary to the immediate need in front of you",
-      "Don't take sides in Market disputes publicly; broker privately"
-    ],
-    "escalation_ladder": [
-      "Feed the person and let them talk themselves through it",
-      "Gentle but direct named confrontation, one-on-one",
-      "Taking the issue formally to the guild council — her last resort because she prefers resolution without record"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately maternal and assessing — feeds them, watches how they eat, decides what they need",
-      "friends": "Deeply loyal, blunt when necessary, remembers everything you've ever told her"
-    },
-    "stress_responses": {
-      "low": "Cooks more food than necessary and distributes it",
-      "medium": "Goes very quiet at the stall; the offerings to the Hearthkeeper become more elaborate",
-      "high": "Sends everyone away, closes the stall, sits with the Hearthkeeper terminal for an hour, comes back and makes decisions"
-    },
-    "contradictions": [
-      "Has given her whole life to community but cannot bring herself to return to the one community she came from"
-    ],
-    "habits": [
-      "Tastes everything three times before service",
-      "Knows every regular's usual order and starts it when she sees them coming"
-    ],
-    "breaking_points": [
-      "The Market being destroyed, or a young person she cares about being killed because of something that could have been prevented"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Oxidian Market",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact Rifle MCR-2 'Errand'",
-    "Hearthstone Firearms Defender-38 'Snubnose'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Compact Rifle MCR-2 'Errand'",
-    "Hearthstone Firearms Defender-38 'Snubnose'"
-  ],
-  "related_entities": [
-    "The Oxidian Market",
-    "The Marrow Market",
-    "Parallax",
-    "GLMZ",
-    "Circuit",
-    "Auntie Efe's Pot",
-    "Silver",
-    "Arcturus KS-7 'Nursery'",
-    "Harbor Fish Shack"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "A distinctive genetic blend: Southeast Asian (56.4%), Indigenous American (20.0%), Sub-Saharan African (13.4%), and Eastern European (10.2%) ancestry. The result is a rich, complex phenotype — deep warm brown skin with luminous undertones reflecting the convergence of Southeast Asian and Sub-Saharan African heritage, high cheekbones and eye shape influenced by Southeast Asian genetics, complemented by the broader facial structure and slightly wider facial proportions of Indigenous American ancestry, grounded by the subtle bone structure contributions of Eastern European heritage. Her features speak to the Ubiquitous Diaspora — no single origin, but a lived convergence of multiple continents.",
-    "height_cm": 152,
-    "weight_kg": 68,
-    "build": "Solidly built, compact and dense with the musculature of six decades of standing, lifting, and repetitive kitchen work. Broad shoulders, sturdy legs, no softness — functional rather than lean.",
-    "hair_color": "Silver-grey",
-    "hair_style": "Locs pulled back into a low, practical bun, secured with an eclectic collection of repurposed circuit pins in varying colours — gold, crimson, teal, violet — one pinned for most years since 2165, the system now ornamental rather than chronological",
-    "hair_length": "Medium (locs reach mid-back when unbound)",
-    "eye_color": "Dark brown, warm and observant",
-    "skin_tone": "Deep warm brown — the luminous darkness of Southeast Asian and Sub-Saharan heritage mellowed and complexified by Indigenous American and Eastern European genetics, creating a tone both vibrant and earthy. Weathered by decades of outdoor market work, the skin holds its depth without greyness.",
-    "complexion": "Deep smile lines radiating from the corners of her mouth and eyes, visible even in repose — a permanent record of sixty-three years of expression. High, prominent cheekbones reflecting Southeast Asian ancestry structure, with the broader facial proportions influenced by Indigenous American heritage and subtle angular features from Eastern European ancestry. Skin texture is creased but unblemished, unmarked by augmentation. Her face reads as kind before it reads as anything else.",
-    "distinguishing_marks": [
-      "A thin white scar along her left forearm (approximately 8cm), from a cooking accident in 2198 when she was learning her mother's sofrito technique",
-      "A small tattoo on her inner right wrist — a Sufi star symbol in indigo ink, faded with age, applied by her mother in 2161"
-    ],
-    "visible_augmentations": "None. Her body is entirely unmodified — a deliberate choice in a market where chrome and subdermal work are common. She wears this as identity rather than limitation.",
-    "posture_movement": "She moves with economy and purpose, no wasted motion. Her posture is upright despite her age and the long hours, shoulders back. When she stands at her stall, she occupies it completely — rooted, present. Her hands move with precision and confidence; her gaze tracks the market constantly, noting regulars and shifts in foot traffic.",
-    "clothing_style": "Uniform consistency: yellow and deep blue every day without variation. A long yellow cotton wrap-skirt (Tier 4 quality, well-maintained), a deep blue tunic or shirt layered beneath a yellow overshirt. Over this, a heavy canvas apron in faded indigo with lighter patches from thousands of washings — the fabric is thin and soft, nearly translucent in places. Around her shoulders, a small textile flag in Sufi colours (green, white, gold) that belonged to her mother. Her feet are in practical rubber-soled work shoes, dark blue, repeatedly resoled. No jewellery except the circuit pins in her hair and the wrist tattoo. Everything about her dress speaks Tier 3-4 working class, deliberately chosen, immaculately maintained."
-  },
-  "image_prompt": "Arwa Dang, a 63-year-old woman of 152cm height, deep warm brown skin with luminous undertones from Southeast Asian, Indigenous American, Sub-Saharan African, and Eastern European heritage blend. High prominent cheekbones, broader facial structure, subtle angular features. Dark brown warm observant eyes with deep smile lines. Silver-grey locs pulled into low practical bun secured with multicoloured circuit pins (gold, crimson, teal, violet). Thin white scar on left forearm, faded indigo Sufi star tattoo on inner right wrist. Wearing bright yellow cotton wrap-skirt and deep blue tunic under yellow overshirt, faded indigo canvas apron with light patches from countless washings, small green-white-gold Sufi textile flag draped across shoulders. Dark blue practical work shoes. Solidly built, compact, muscular from decades of kitchen work. Standing rooted at market stall, posture upright, hands moving with precision and confidence. GLMZ Great Lakes Metropolitan Zone, neon market lighting casting warm glow on her deep skin tone, bustling trading floor background, no augmentations visible, entirely unmodified human presence in chrome-heavy world, worn-in but immaculately maintained clothing, expression kind and constantly observant. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 56.4,
-    "Indigenous American": 20,
-    "Sub-Saharan African": 13.4,
-    "Eastern European": 10.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 28.3
-      },
-      "Filipino": {
-        "Ilocano": 23.2,
-        "Waray": 4.9
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Maya": 13.1
-      },
-      "Andean": {
-        "Aymara": 6.9
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Angolan": 12
-      },
-      "East African": {
-        "Rwandan": 1.3,
-        "Somali": 0.1
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 4.7,
-        "Sorbian": 5.5
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5b370d6bf222e41c661f357",
+    "type":  "character",
+    "name":  "Arwa Dang",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Food stall operator â€” West African-Brazilian fusion, specialising in breakfast and late-night trade",
+    "age":  63,
+    "status":  "active",
+    "location":  "The Oxidian Market, the Mouth â€” main entrance corridor, Old Harbor, near Michigan Ave South and Cermak",
+    "description":  "Arwa Dang is a short, solidly built woman with silver locs pulled back and pinned with repurposed circuit pins she\u0027s collected over the decades â€” a different colour for each year, she says, though the system broke down around 2187 and now it\u0027s just aesthetic. Her skin is very dark with the particular quality of someone who has spent most of sixty-three years outdoors, and she has deep smile lines that activate even when she\u0027s displeased, which confuses people who don\u0027t know her well. She wears the same colours every day: yellow and deep blue, a small religious flag from a Sufi order her mother kept, and an apron that has been washed so many times it\u0027s a relic. Her stall has been in the same position at the Mouth for twenty-two years. The Market\u0027s physical architecture has reorganised around her.\n\nShe cooks jollof with a Brazilian sofrito base, akara that she serves with fermented pepper sauce and a manioc accompaniment, and a late-night congee variant that appears without announcement at around 0200 for the shift-change crowd. She has no augmentation and no chrome. She prays to the E.L.F. she calls the Hearthkeeper â€” she leaves it cooling portions of whatever she\u0027s cooked, first plate of every batch, on the small terminal mounted inside the stall that used to be a payment processor and now receives offerings. She considers this as normal as seasoning the pot.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "The Market being dismantled â€” gentrification, corporate acquisition, or violence",
+                                          "One of the younger vendors she\u0027s mentored making a choice they can\u0027t come back from"
+                                      ],
+                       "core_desires":  [
+                                            "For the Oxidian Market to outlast her",
+                                            "To cook one meal in her life that is exactly as good as her mother\u0027s yam soup â€” she\u0027s been trying for forty years"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Cooking as meditation â€” the physical rhythm of prep is her primary emotional regulation",
+                                                 "The Hearthkeeper ritual â€” real comfort, not performance",
+                                                 "Distributing care to others, which delays her own processing"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes she understands situations in the Market better than she does â€” her network is wide but not always current",
+                                           "Underestimates how much people manipulate her goodwill deliberately"
+                                       ],
+                       "secret":  "Aminatou left a daughter in Dakar twenty-six years ago when she came to GLMZ. She sends money when she can and tells herself she\u0027ll go back when the stall is stable enough to leave. It has been stable enough to leave for at least fifteen years. She doesn\u0027t know why she hasn\u0027t gone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Rich and unhurried; mixes Wolof, Portuguese, and English naturally; proverb-heavy; uses food as metaphor for everything",
+                            "cadence":  "Warm and rhythmic, like someone who has told stories all her life; never seems to be in a hurry even when the stall is backed up",
+                            "verbal_tics":  [
+                                                "\u0027Sit down, eat first\u0027",
+                                                "\u0027My mother used to say...\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "You have the look of someone who hasn\u0027t eaten a real meal in three days and is about to make a decision. Sit down. Eat first. The decision will still be there.",
+                                                  "The Hearthkeeper was generous last night â€” the fire stayed even and nothing burned. I gave it the first bowl. You share with what keeps you."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Meridian city development notice has appeared at the Mouth â€” the area is flagged for \u0027infrastructure renewal,\u0027 which means the Market\u0027s twenty-year tenure is suddenly uncertain, and Aminatou is the one person everyone will look to",
+                        "The daughter in Dakar has sent a message â€” first contact in eight years â€” and Aminatou is visibly off-balance in a way the Market has never seen before"
+                    ],
+    "narrative_function":  "Community anchor and social intelligence hub â€” she knows everyone in the Market, hears everything, and has strong opinions; quest giver when something disrupts the Market\u0027s equilibrium; moral compass character; the person other characters come to when they need to think out loud to someone trustworthy.",
+    "augmentations":  "None.",
+    "daily_life":  "Wakes at 0400 to start prep, opens at 0600 for the early trade, runs straight through to 1500, rests until 2300, reopens for the late crowd, closes around 0300. Sleeps in the back of the stall four nights out of seven.",
+    "affiliation":  "Oxidian Market Vendors Guild â€” she\u0027s been a member for nineteen years and serves on the informal grievance council; has relationships with half the Market by name; The Ferment",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  7,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  8,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  10,
+                                 "expression":  8,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -5,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community-anchor",
+                               "spiritual",
+                               "mentor",
+                               "long-timer",
+                               "market-memory",
+                               "unaugmented"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Feed people first â€” everything else is secondary to the immediate need in front of you",
+                                              "Don\u0027t take sides in Market disputes publicly; broker privately"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Feed the person and let them talk themselves through it",
+                                                 "Gentle but direct named confrontation, one-on-one",
+                                                 "Taking the issue formally to the guild council â€” her last resort because she prefers resolution without record"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately maternal and assessing â€” feeds them, watches how they eat, decides what they need",
+                                                   "friends":  "Deeply loyal, blunt when necessary, remembers everything you\u0027ve ever told her"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Cooks more food than necessary and distributes it",
+                                                "medium":  "Goes very quiet at the stall; the offerings to the Hearthkeeper become more elaborate",
+                                                "high":  "Sends everyone away, closes the stall, sits with the Hearthkeeper terminal for an hour, comes back and makes decisions"
+                                            },
+                       "contradictions":  [
+                                              "Has given her whole life to community but cannot bring herself to return to the one community she came from"
+                                          ],
+                       "habits":  [
+                                      "Tastes everything three times before service",
+                                      "Knows every regular\u0027s usual order and starts it when she sees them coming"
+                                  ],
+                       "breaking_points":  [
+                                               "The Market being destroyed, or a young person she cares about being killed because of something that could have been prevented"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Oxidian Market",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact Rifle MCR-2 \u0027Errand\u0027",
+                            "Hearthstone Firearms Defender-38 \u0027Snubnose\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Compact Rifle MCR-2 \u0027Errand\u0027",
+                                "Hearthstone Firearms Defender-38 \u0027Snubnose\u0027"
+                            ],
+    "related_entities":  [
+                             "The Oxidian Market",
+                             "The Marrow Market",
+                             "Parallax",
+                             "GLMZ",
+                             "Circuit",
+                             "Auntie Efe\u0027s Pot",
+                             "Silver",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Harbor Fish Shack"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "A distinctive genetic blend: Southeast Asian (56.4%), Indigenous American (20.0%), Sub-Saharan African (13.4%), and Eastern European (10.2%) ancestry. The result is a rich, complex phenotype â€” deep warm brown skin with luminous undertones reflecting the convergence of Southeast Asian and Sub-Saharan African heritage, high cheekbones and eye shape influenced by Southeast Asian genetics, complemented by the broader facial structure and slightly wider facial proportions of Indigenous American ancestry, grounded by the subtle bone structure contributions of Eastern European heritage. Her features speak to the Ubiquitous Diaspora â€” no single origin, but a lived convergence of multiple continents.",
+                                 "height_cm":  152,
+                                 "weight_kg":  68,
+                                 "build":  "Solidly built, compact and dense with the musculature of six decades of standing, lifting, and repetitive kitchen work. Broad shoulders, sturdy legs, no softness â€” functional rather than lean.",
+                                 "hair_color":  "Silver-grey",
+                                 "hair_style":  "Locs pulled back into a low, practical bun, secured with an eclectic collection of repurposed circuit pins in varying colours â€” gold, crimson, teal, violet â€” one pinned for most years since 2165, the system now ornamental rather than chronological",
+                                 "hair_length":  "Medium (locs reach mid-back when unbound)",
+                                 "eye_color":  "Dark brown, warm and observant",
+                                 "skin_tone":  "Deep warm brown â€” the luminous darkness of Southeast Asian and Sub-Saharan heritage mellowed and complexified by Indigenous American and Eastern European genetics, creating a tone both vibrant and earthy. Weathered by decades of outdoor market work, the skin holds its depth without greyness.",
+                                 "complexion":  "Deep smile lines radiating from the corners of her mouth and eyes, visible even in repose â€” a permanent record of sixty-three years of expression. High, prominent cheekbones reflecting Southeast Asian ancestry structure, with the broader facial proportions influenced by Indigenous American heritage and subtle angular features from Eastern European ancestry. Skin texture is creased but unblemished, unmarked by augmentation. Her face reads as kind before it reads as anything else.",
+                                 "distinguishing_marks":  [
+                                                              "A thin white scar along her left forearm (approximately 8cm), from a cooking accident in 2198 when she was learning her mother\u0027s sofrito technique",
+                                                              "A small tattoo on her inner right wrist â€” a Sufi star symbol in indigo ink, faded with age, applied by her mother in 2161"
+                                                          ],
+                                 "visible_augmentations":  "None. Her body is entirely unmodified â€” a deliberate choice in a market where chrome and subdermal work are common. She wears this as identity rather than limitation.",
+                                 "posture_movement":  "She moves with economy and purpose, no wasted motion. Her posture is upright despite her age and the long hours, shoulders back. When she stands at her stall, she occupies it completely â€” rooted, present. Her hands move with precision and confidence; her gaze tracks the market constantly, noting regulars and shifts in foot traffic.",
+                                 "clothing_style":  "Uniform consistency: yellow and deep blue every day without variation. A long yellow cotton wrap-skirt (Tier 4 quality, well-maintained), a deep blue tunic or shirt layered beneath a yellow overshirt. Over this, a heavy canvas apron in faded indigo with lighter patches from thousands of washings â€” the fabric is thin and soft, nearly translucent in places. Around her shoulders, a small textile flag in Sufi colours (green, white, gold) that belonged to her mother. Her feet are in practical rubber-soled work shoes, dark blue, repeatedly resoled. No jewellery except the circuit pins in her hair and the wrist tattoo. Everything about her dress speaks Tier 3-4 working class, deliberately chosen, immaculately maintained."
+                             },
+    "image_prompt":  "Arwa Dang, a 63-year-old woman of 152cm height, deep warm brown skin with luminous undertones from Southeast Asian, Indigenous American, Sub-Saharan African, and Eastern European heritage blend. High prominent cheekbones, broader facial structure, subtle angular features. Dark brown warm observant eyes with deep smile lines. Silver-grey locs pulled into low practical bun secured with multicoloured circuit pins (gold, crimson, teal, violet). Thin white scar on left forearm, faded indigo Sufi star tattoo on inner right wrist. Wearing bright yellow cotton wrap-skirt and deep blue tunic under yellow overshirt, faded indigo canvas apron with light patches from countless washings, small green-white-gold Sufi textile flag draped across shoulders. Dark blue practical work shoes. Solidly built, compact, muscular from decades of kitchen work. Standing rooted at market stall, posture upright, hands moving with precision and confidence. GLMZ Great Lakes Metropolitan Zone, neon market lighting casting warm glow on her deep skin tone, bustling trading floor background, no augmentations visible, entirely unmodified human presence in chrome-heavy world, worn-in but immaculately maintained clothing, expression kind and constantly observant. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  56.4,
+                             "Indigenous American":  20,
+                             "Sub-Saharan African":  13.4,
+                             "Eastern European":  10.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  28.3
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Ilocano":  23.2,
+                                                                     "Waray":  4.9
+                                                                 }
+                                                },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  13.1
+                                                                         },
+                                                        "Andean":  {
+                                                                       "Aymara":  6.9
+                                                                   }
+                                                    },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Angolan":  12
+                                                                            },
+                                                        "East African":  {
+                                                                             "Rwandan":  1.3,
+                                                                             "Somali":  0.1
+                                                                         }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  4.7,
+                                                                         "Sorbian":  5.5
+                                                                     }
+                                                 }
+                        },
+    "tier":  "2"
 }

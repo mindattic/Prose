@@ -54,6 +54,8 @@ public static class Constants
     {
         public const string Engine = "engine";
         public const string Stories = "stories";
+        public const string Books = "books";
+        public const string Series = "series";
         public const string Archives = "archives";
         public const string Graph = "graph";
         public const string Audio = "audio";

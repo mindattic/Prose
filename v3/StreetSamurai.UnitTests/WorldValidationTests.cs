@@ -266,6 +266,8 @@ public class WorldValidationTests
         public string MutableDataDir    => dataDir;
         public string DataRoot          => Path.GetDirectoryName(dataDir) ?? dataDir;
         public string StoriesDir        => Path.Combine(dataDir, "stories");
+        public string BooksDir           => Path.Combine(dataDir, "books");
+        public string SeriesDir          => Path.Combine(dataDir, "series");
         public string GraphDir          => Path.Combine(dataDir, "graph");
         public string LogDir            => Path.Combine(dataDir, "logs");
         public string ExportDir         => Path.GetFullPath(Path.Combine(dataDir, "..", "exports"));
@@ -275,7 +277,6 @@ public class WorldValidationTests
         public string EssencesDir       => Path.Combine(dataDir, "facets");
         public string NarrativeBiblePath => Path.Combine(dataDir, "story_bible.json");
         public string WorldDir          => dataDir;
-        public string FacetsDir         => Path.Combine(dataDir, "facets");
         public string MediaDir          => Path.Combine(dataDir, "media");
         public string MediaArchiveDir   => Path.Combine(dataDir, "archives", "media");
     }

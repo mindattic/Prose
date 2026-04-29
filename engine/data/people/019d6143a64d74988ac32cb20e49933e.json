@@ -1,331 +1,342 @@
-{
-  "id": "019d6143a64d74988ac32cb20e49933e",
-  "type": "character",
-  "name": "Halvdan Karimov",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Street-level faith healer and unlicensed biotech surgeon",
-  "age": 61,
-  "status": "active",
-  "location": "the Gray Zone, near Halsted and Chicago Ave",
-  "description": "Halvdan Karimov is a small, unhurried woman with copper-brown skin deeply creased by decades of fluorescent light and chemical fumes. Her white hair is braided back with strips of electrical tape — practical, she says, not decorative — and her left eye is a milky cataract she refuses to replace with an augment, though she could afford one three times over in trade. She moves through the cramped alleys of the Gray Zone like she owns every centimeter of them, which in the ways that matter, she does. Her clinic is a converted shipping container strung with votive candles and surgical LEDs in roughly equal measure, and the line outside it on any given morning stretches past two intersections.\n\nShe came to the Gray Zone forty years ago as a field medic for a labor collective that no longer exists, and she simply never left. Over time she absorbed every technique available to her: black-market bioprinting, salvaged corporate surgical protocols, folk pharmacology passed down through a network of the Gray Zone grandmothers, and something she calls 'listening to the meat' — an intuitive diagnostic sense that younger surgeons dismiss until they watch her work. She does not advertise. She does not charge in credits. Payment is rendered in labor, food, information, or loyalty, and her ledger of favors owed to her is one of the most valuable documents on the Gray Zone.\n\nHer reputation has begun to leak upward into The Circuit and even into certain desperate corners of the Meridian Core, which terrifies her in ways she will not fully articulate. She has spent a lifetime being invisible to power and considers that invisibility a survival strategy, a professional asset, and a form of grace. Attention from above has only ever meant one thing in her experience: that something she has built is about to be taken.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.85,
-      "id": 0.4,
-      "shadow": 0.35,
-      "mask": 0.55,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "Being discovered and institutionalized or eliminated by corporate medical licensing bodies",
-      "Outliving the community she has spent her life sustaining",
-      "That her methods have caused harm she hasn't yet found"
-    ],
-    "core_desires": [
-      "For the people of the Gray Zone to be able to heal without begging",
-      "To train someone worthy to carry her knowledge forward",
-      "One uninterrupted night of sleep"
-    ],
-    "coping_mechanisms": [
-      "Ritual — she follows the same procedural prayers before every surgery regardless of her actual beliefs",
-      "Humor so dry most people miss it",
-      "Staying in motion; stillness makes the grief surface"
-    ],
-    "blind_spots": [
-      "She underestimates how much people project sainthood onto her and how that projection distorts their honesty with her",
-      "She is more ruthless in her resource allocation decisions than she acknowledges to herself",
-      "She has never processed the death of the labor collective and treats its absence as a logistical problem rather than a loss"
-    ],
-    "secret": "Fifteen years ago she performed an experimental neural-tissue graft on a child that left the girl with persistent synesthetic seizures. The child survived and has never blamed her. Lourdes has never stopped blaming herself, and the technique she used — which would have been a breakthrough — she has never used again and has told no one about."
-  },
-  "speech_patterns": {
-    "vocabulary": "Plain, precise, occasionally laced with Tagalog and Finnish phrases she uses interchangeably and without translation. Medical terminology deployed casually. Proverbs that may or may not be real.",
-    "cadence": "Slow, deliberate, with long pauses she doesn't feel the need to fill. Sentences often shorter than the thought behind them.",
-    "verbal_tics": [
-      "'Mmh.' as a full response to things she disagrees with",
-      "Refers to the body in third person — 'the knee wants to do this,' 'the liver is angry'",
-      "Ends instructions with 'yes?' not as a question but as a period"
-    ],
-    "example_lines": [
-      "'The augment is infected. Not the hardware — the idea of it. You put in chrome because you hated what you were. The body remembers that. Yes?'",
-      "'I don't do miracles. I do maintenance. The miracle already happened when you walked through that door instead of lying down in the street.'",
-      "'Mmh. You can pay me in information or you can pay me in three months of hauling supply. I won't take credits. Credits are how they track the grateful.'",
-      "'Masakit ba? Of course it hurts. Hurt means it's still yours.'"
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Blessed Nkemdirim",
-      "type": "Uneasy alliance",
-      "description": "Blessed sources certain pharmaceutical precursors she cannot obtain legally. She finds his methods repugnant and his prices insulting and works with him anyway.",
-      "emotional_core": "Pragmatic contempt held in check by necessity",
-      "story_tension": "He knows enough about her operation to ruin her. She knows enough about his supply chain to do the same. They have never discussed this directly."
-    },
-    {
-      "name": "Imara Solís-Bekele",
-      "type": "Mentorship, complicated",
-      "description": "Imara passed through the Gray Zone years ago and Lourdes patched her up and taught her enough field medicine to keep herself alive. She watches Imara's trajectory with a mix of pride and dread.",
-      "emotional_core": "The love a teacher has for a student who learned the lessons too well",
-      "story_tension": "Lourdes suspects Imara is moving toward something that will get her killed and doesn't know if intervening would help or just delay the inevitable."
-    },
-    {
-      "name": "Fenwick Oduya-Marsh",
-      "type": "Recurring patient, reluctant confidant",
-      "description": "He comes to her with augment maintenance he won't trust to anyone in the Circuit. She extracts information about above-the Gray Zone politics in exchange, framing it as idle curiosity.",
-      "emotional_core": "Mutual use dressed in genuine warmth",
-      "story_tension": "He has started coming more often than his augments require. She isn't sure if he's lonely or if he's building toward asking her for something large."
-    }
-  ],
-  "story_hooks": [
-    "A corporate medical enforcement team arrives on the Gray Zone with a warrant — not for her, ostensibly, but for a patient she treated who is now connected to something much larger. She must decide how much of her invisibility to spend protecting them.",
-    "A young biotech prodigy from The Spire arrives claiming to want to apprentice with her. Their skills are genuine. Their motives are not legible.",
-    "The girl she damaged fifteen years ago has come back — now an adult, now exhibiting abilities no one can explain, wanting to understand what was done to her.",
-    "Her supply of a critical immunosuppressant for post-augmentation patients runs dry simultaneously across all her usual channels. Someone is cutting her off deliberately. She needs to find out who before people start rejecting their grafts."
-  ],
-  "narrative_function": "Moral anchor and living institutional memory for the Gray Zone; represents the tension between care as radical act and care as exhaustible resource; her knowledge and her network make her a prize multiple factions want to claim or control",
-  "augmentations": "Subdermal haptic feedback mesh in both hands — allows her to feel tissue density and micro-tremors during surgery,A salvaged diagnostic implant in her right forearm that she jury-rigged from three incompatible systems and that only she fully understands how to read",
-  "daily_life": "Wakes before light. Boils water for coffee and for sterilization simultaneously, a habit she finds clarifying. Reviews her patient ledger — not digital, paper, coded. Clinic opens at what she calls 'when the light changes.' She works until the line is empty or her hands give out. Eats whatever is left by whoever cooked that day in the container next door. Spends an hour each evening on maintenance of her equipment and on what she privately calls her correspondence — messages relayed through a network of trusted runners to former patients and informants throughout the city. Sleeps lightly and briefly.",
-  "affiliation": "None formally. Loyalty to the Gray Zone as a place and a people. Informally networked with a loose federation of unlicensed medics across the lower districts.",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 7,
-      "vitality": 4,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 9,
-      "creativity": 7,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 6,
-      "empathy_detachment": 7,
-      "impulsivity_deliberation": 8,
-      "assertion_deference": 7,
-      "transparency_guardedness": 6
-    },
-    "drives": [
-      "Heal the Gray Zone",
-      "Pass on knowledge",
-      "Remain invisible to power"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 8,
-        "response": "Humor gets drier, movements become more deliberate, prayers become longer"
-      },
-      "moral": 8,
-      "trust": 5,
-      "desperation": 7
-    },
-    "strengths": [
-      "Kindness",
-      "Perseverance",
-      "Wisdom",
-      "Fairness",
-      "Humility"
-    ],
-    "weaknesses": [
-      "Hope",
-      "Forgiveness",
-      "Playfulness",
-      "Self-Regulation",
-      "Zest"
-    ],
-    "tags": [
-      "faith-healer",
-      "surgeon",
-      "elder",
-      "shelf-institution",
-      "favor-ledger",
-      "invisible"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never charge in credits — payment is labor, food, information, or loyalty",
-      "Follow the same procedural prayers before every surgery regardless of belief",
-      "Stay in motion — stillness surfaces the grief",
-      "Keep the favor ledger current and accurate",
-      "Never teach the failed neural-tissue graft technique again",
-      "Scale ruthless resource allocation decisions without acknowledging the ruthlessness",
-      "Refuse visibility from above — attention from power means something is about to be taken"
-    ],
-    "escalation_ladder": [
-      "'Mmh.' — full disagreement expressed as a single sound",
-      "Direct instruction ending with 'yes?' as punctuation",
-      "Tagalog or Finnish phrases surface — the emotional register shifts",
-      "Goes completely silent and works — the conversation is over",
-      "Calls in favors from the ledger — the nuclear option"
-    ],
-    "interpersonal_modes": {
-      "Blessed Nkemdirim": "Pragmatic contempt managed by necessity — uses him, despises his methods",
-      "Imara Solís-Bekele": "Proud, protective dread — watches a student who learned too well",
-      "Fenwick Oduya-Marsh": "Warm extraction of information disguised as idle curiosity",
-      "patients": "The body is the interlocutor — speaks to the tissue, not the person"
-    },
-    "stress_responses": {
-      "low": "Humor becomes almost invisible — so dry it passes undetected",
-      "medium": "Pre-surgical prayers extend noticeably — the ritual deepens",
-      "high": "Stays in constant motion — reorganizes, walks, works, never sits",
-      "critical": "Goes to the votive candles in the clinic and sits — the only time she is still"
-    },
-    "contradictions": [
-      "The community projects sainthood onto her while she makes ruthless triage calculations she never acknowledges",
-      "Has never processed the death of the labor collective — treats a foundational loss as a logistical problem",
-      "Refuses to use the breakthrough neural-tissue graft technique that could save lives because of one failure fifteen years ago"
-    ],
-    "habits": [
-      "Boils water for coffee and sterilization simultaneously every morning",
-      "Reviews paper patient ledger in code before opening the clinic",
-      "Ends instructions with 'yes?' as punctuation, not question",
-      "Refers to body parts in third person — 'the liver is angry'",
-      "Sends correspondence through trusted runners every evening"
-    ],
-    "breaking_points": [
-      "Corporate medical enforcement arriving for one of her patients",
-      "The girl from the failed neural graft returning as an adult",
-      "Her supply chain being deliberately cut across all channels simultaneously",
-      "Someone worthy enough to be trained — and the terror of trusting them"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Nurturer": 0.7,
-    "Provider": 0.7,
-    "Bleeding Heart": 0.7,
-    "Judge": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "Kang-Petrov Arms KPR-357 'Journeyman'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "Kang-Petrov Arms KPR-357 'Journeyman'"
-  ],
-  "related_entities": [
-    "The Meridian Core",
-    "Meridian Core",
-    "The Circuit",
-    "Crucible TR-7 'Triage'",
-    "The Spire",
-    "The Fathom Line",
-    "Circuit",
-    "Chicago",
-    "Copper",
-    "Akosua Johansson"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Central Asian (68.6%), Southeast Asian (12.2%), South Asian (10.3%), and Sub-Saharan African (8.9%) ancestry create a distinctly mixed phenotype. The dominant Central Asian foundation manifests in high, prominent cheekbones and slightly hooded eye shape, while Southeast and South Asian genetics contribute softer facial contours, warm golden undertones, and slightly fuller features. Sub-Saharan African ancestry enriches the skin with deep warmth and adds subtle fullness to lips and nose structure. The result is a burnished, sun-weathered complexion that speaks to decades of work across multiple climates.",
-    "height_cm": 152,
-    "weight_kg": 48,
-    "build": "Slight and compact, muscle-dense from decades of precise manual work. Posture slightly curved from leaning over surgical fields, but movements economical and deliberate.",
-    "hair_color": "White, natural gray-out",
-    "hair_style": "Braided back tightly with strips of electrical tape woven through, practical and utilitarian",
-    "hair_length": "Medium (shoulder-length when unbraided)",
-    "eye_color": "Right eye: dark brown. Left eye: milky white cataract, deliberately unaugmented",
-    "skin_tone": "Deep warm brown with golden-amber undertones—a blend of Central, Southeast, and South Asian copper enriched by Sub-Saharan African warmth, sun-weathered to a burnished mahogany across exposed areas",
-    "complexion": "Extensively creased and sun-weathered, particularly around eyes and forehead. Faint chemical burn scars on chin from early biotech accident. Hands show fine tremor lines and faint discoloration from sterilization compounds. Minimal makeup. Perpetually tired but alert. High-set cheekbones characteristic of Central and South Asian heritage with slight fullness in cheeks and lips from Sub-Saharan African ancestry, softened by time and work.",
-    "distinguishing_marks": [
-      "Chemical burn scar on left chin, approximately 3cm, pale and flat from age",
-      "Fine surgical scar network across both palms from repeated micro-incisions related to haptic calibration",
-      "Faint track marks along right forearm where the salvaged diagnostic implant sits subcutaneously — visible only as slight discoloration and a thin ridge of scar tissue",
-      "Tattoo on inner right wrist: small cross in faded indigo, done by hand in a shipping container thirty years ago"
-    ],
-    "visible_augmentations": "Right forearm shows a barely-perceptible ridge beneath skin where the diagnostic implant sits; she sometimes unconsciously rubs it. Subdermal augmentations in hands invisible unless she flexes during delicate work, when faint LED status lights briefly illuminate under the skin. No chrome, no ostentatious modification.",
-    "posture_movement": "Moves with economical precision through confined spaces. Hands are always in motion or perfectly still — no fidgeting. Head tilts slightly toward her right side to compensate for her left eye's limited vision, a habit so ingrained she is unaware of it. Walks as though measuring every step. Presence is quiet but absolute; rooms recalibrate around her.",
-    "clothing_style": "Tier 5 practical: medical-grade canvas apron over worn thermal layers, both patched multiple times with different fabrics. Feet in bootleg neoprene slip-ons, well-maintained. A surgical mask hangs around her neck constantly, pulled up during work. A long coat of faded synthetic wool that belonged to someone else originally — inherited, not purchased. No jewelry except a copper ring on her left thumb, burnished smooth."
-  },
-  "image_prompt": "Halvdan Karimov, 74-year-old cybernetic surgeon with deep burnished mahogany skin and golden undertones, sharp high cheekbones, right eye dark brown and alert, left eye milky white with deliberate cataract. White hair braided with electrical tape, shoulder-length. 152cm slight, compact frame, hands showing surgical scar networks and fine tremors. Wearing faded medical-grade canvas apron over thermal layers, long inherited wool coat, surgical mask hanging at neck. Subdermal LED lights faintly visible in hands. Chemical burn scar on left chin. Posture curved slightly forward, precise economical movements. Dim underground clinic setting, warm amber-tinted surgical lighting, hands delicately working over diagnostic implant. GLMZ Great Lakes Metropolitan Zone, worn but dignified, quiet absolute presence. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Central Asian": 68.6,
-    "Southeast Asian": 12.2,
-    "South Asian": 10.3,
-    "Sub-Saharan African": 8.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Central Asian": {
-      "Iranian Central": {
-        "Tajik": 50.3,
-        "Hazara": 3.1
-      },
-      "Mongolic": {
-        "Kalmyk": 4.5,
-        "Mongolian": 10.7
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Javanese": 12.2
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 4.3
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 6
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Botswanan": 2.4
-      },
-      "West African": {
-        "Nigerian": 2.8
-      },
-      "Central African": {
-        "Congolese": 3.4,
-        "Cameroonian": 0.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a64d74988ac32cb20e49933e",
+    "type":  "character",
+    "name":  "Halvdan Karimov",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Street-level faith healer and unlicensed biotech surgeon",
+    "age":  61,
+    "status":  "active",
+    "location":  "the Gray Zone, near Halsted and Chicago Ave",
+    "description":  "Halvdan Karimov is a small, unhurried woman with copper-brown skin deeply creased by decades of fluorescent light and chemical fumes. Her white hair is braided back with strips of electrical tape â€” practical, she says, not decorative â€” and her left eye is a milky cataract she refuses to replace with an augment, though she could afford one three times over in trade. She moves through the cramped alleys of the Gray Zone like she owns every centimeter of them, which in the ways that matter, she does. Her clinic is a converted shipping container strung with votive candles and surgical LEDs in roughly equal measure, and the line outside it on any given morning stretches past two intersections.\n\nShe came to the Gray Zone forty years ago as a field medic for a labor collective that no longer exists, and she simply never left. Over time she absorbed every technique available to her: black-market bioprinting, salvaged corporate surgical protocols, folk pharmacology passed down through a network of the Gray Zone grandmothers, and something she calls \u0027listening to the meat\u0027 â€” an intuitive diagnostic sense that younger surgeons dismiss until they watch her work. She does not advertise. She does not charge in credits. Payment is rendered in labor, food, information, or loyalty, and her ledger of favors owed to her is one of the most valuable documents on the Gray Zone.\n\nHer reputation has begun to leak upward into The Circuit and even into certain desperate corners of the Meridian Core, which terrifies her in ways she will not fully articulate. She has spent a lifetime being invisible to power and considers that invisibility a survival strategy, a professional asset, and a form of grace. Attention from above has only ever meant one thing in her experience: that something she has built is about to be taken.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being discovered and institutionalized or eliminated by corporate medical licensing bodies",
+                                          "Outliving the community she has spent her life sustaining",
+                                          "That her methods have caused harm she hasn\u0027t yet found"
+                                      ],
+                       "core_desires":  [
+                                            "For the people of the Gray Zone to be able to heal without begging",
+                                            "To train someone worthy to carry her knowledge forward",
+                                            "One uninterrupted night of sleep"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual â€” she follows the same procedural prayers before every surgery regardless of her actual beliefs",
+                                                 "Humor so dry most people miss it",
+                                                 "Staying in motion; stillness makes the grief surface"
+                                             ],
+                       "blind_spots":  [
+                                           "She underestimates how much people project sainthood onto her and how that projection distorts their honesty with her",
+                                           "She is more ruthless in her resource allocation decisions than she acknowledges to herself",
+                                           "She has never processed the death of the labor collective and treats its absence as a logistical problem rather than a loss"
+                                       ],
+                       "secret":  "Fifteen years ago she performed an experimental neural-tissue graft on a child that left the girl with persistent synesthetic seizures. The child survived and has never blamed her. Lourdes has never stopped blaming herself, and the technique she used â€” which would have been a breakthrough â€” she has never used again and has told no one about."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Plain, precise, occasionally laced with Tagalog and Finnish phrases she uses interchangeably and without translation. Medical terminology deployed casually. Proverbs that may or may not be real.",
+                            "cadence":  "Slow, deliberate, with long pauses she doesn\u0027t feel the need to fill. Sentences often shorter than the thought behind them.",
+                            "verbal_tics":  [
+                                                "\u0027Mmh.\u0027 as a full response to things she disagrees with",
+                                                "Refers to the body in third person â€” \u0027the knee wants to do this,\u0027 \u0027the liver is angry\u0027",
+                                                "Ends instructions with \u0027yes?\u0027 not as a question but as a period"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The augment is infected. Not the hardware â€” the idea of it. You put in chrome because you hated what you were. The body remembers that. Yes?\u0027",
+                                                  "\u0027I don\u0027t do miracles. I do maintenance. The miracle already happened when you walked through that door instead of lying down in the street.\u0027",
+                                                  "\u0027Mmh. You can pay me in information or you can pay me in three months of hauling supply. I won\u0027t take credits. Credits are how they track the grateful.\u0027",
+                                                  "\u0027Masakit ba? Of course it hurts. Hurt means it\u0027s still yours.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Blessed Nkemdirim",
+                              "type":  "Uneasy alliance",
+                              "description":  "Blessed sources certain pharmaceutical precursors she cannot obtain legally. She finds his methods repugnant and his prices insulting and works with him anyway.",
+                              "emotional_core":  "Pragmatic contempt held in check by necessity",
+                              "story_tension":  "He knows enough about her operation to ruin her. She knows enough about his supply chain to do the same. They have never discussed this directly."
+                          },
+                          {
+                              "name":  "Imara SolÃ­s-Bekele",
+                              "type":  "Mentorship, complicated",
+                              "description":  "Imara passed through the Gray Zone years ago and Lourdes patched her up and taught her enough field medicine to keep herself alive. She watches Imara\u0027s trajectory with a mix of pride and dread.",
+                              "emotional_core":  "The love a teacher has for a student who learned the lessons too well",
+                              "story_tension":  "Lourdes suspects Imara is moving toward something that will get her killed and doesn\u0027t know if intervening would help or just delay the inevitable."
+                          },
+                          {
+                              "name":  "Fenwick Oduya-Marsh",
+                              "type":  "Recurring patient, reluctant confidant",
+                              "description":  "He comes to her with augment maintenance he won\u0027t trust to anyone in the Circuit. She extracts information about above-the Gray Zone politics in exchange, framing it as idle curiosity.",
+                              "emotional_core":  "Mutual use dressed in genuine warmth",
+                              "story_tension":  "He has started coming more often than his augments require. She isn\u0027t sure if he\u0027s lonely or if he\u0027s building toward asking her for something large."
+                          }
+                      ],
+    "story_hooks":  [
+                        "A corporate medical enforcement team arrives on the Gray Zone with a warrant â€” not for her, ostensibly, but for a patient she treated who is now connected to something much larger. She must decide how much of her invisibility to spend protecting them.",
+                        "A young biotech prodigy from The Spire arrives claiming to want to apprentice with her. Their skills are genuine. Their motives are not legible.",
+                        "The girl she damaged fifteen years ago has come back â€” now an adult, now exhibiting abilities no one can explain, wanting to understand what was done to her.",
+                        "Her supply of a critical immunosuppressant for post-augmentation patients runs dry simultaneously across all her usual channels. Someone is cutting her off deliberately. She needs to find out who before people start rejecting their grafts."
+                    ],
+    "narrative_function":  "Moral anchor and living institutional memory for the Gray Zone; represents the tension between care as radical act and care as exhaustible resource; her knowledge and her network make her a prize multiple factions want to claim or control",
+    "augmentations":  "Subdermal haptic feedback mesh in both hands â€” allows her to feel tissue density and micro-tremors during surgery,A salvaged diagnostic implant in her right forearm that she jury-rigged from three incompatible systems and that only she fully understands how to read",
+    "daily_life":  "Wakes before light. Boils water for coffee and for sterilization simultaneously, a habit she finds clarifying. Reviews her patient ledger â€” not digital, paper, coded. Clinic opens at what she calls \u0027when the light changes.\u0027 She works until the line is empty or her hands give out. Eats whatever is left by whoever cooked that day in the container next door. Spends an hour each evening on maintenance of her equipment and on what she privately calls her correspondence â€” messages relayed through a network of trusted runners to former patients and informants throughout the city. Sleeps lightly and briefly.",
+    "affiliation":  "None formally. Loyalty to the Gray Zone as a place and a people. Informally networked with a loose federation of unlicensed medics across the lower districts.",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  7,
+                                   "vitality":  4,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  9,
+                                 "creativity":  7,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  6,
+                                      "empathy_detachment":  7,
+                                      "impulsivity_deliberation":  8,
+                                      "assertion_deference":  7,
+                                      "transparency_guardedness":  6
+                                  },
+                  "drives":  [
+                                 "Heal the Gray Zone",
+                                 "Pass on knowledge",
+                                 "Remain invisible to power"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  8,
+                                                    "response":  "Humor gets drier, movements become more deliberate, prayers become longer"
+                                                },
+                                     "moral":  8,
+                                     "trust":  5,
+                                     "desperation":  7
+                                 },
+                  "strengths":  [
+                                    "Kindness",
+                                    "Perseverance",
+                                    "Wisdom",
+                                    "Fairness",
+                                    "Humility"
+                                ],
+                  "weaknesses":  [
+                                     "Hope",
+                                     "Forgiveness",
+                                     "Playfulness",
+                                     "Self-Regulation",
+                                     "Zest"
+                                 ],
+                  "tags":  [
+                               "faith-healer",
+                               "surgeon",
+                               "elder",
+                               "shelf-institution",
+                               "favor-ledger",
+                               "invisible"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never charge in credits â€” payment is labor, food, information, or loyalty",
+                                              "Follow the same procedural prayers before every surgery regardless of belief",
+                                              "Stay in motion â€” stillness surfaces the grief",
+                                              "Keep the favor ledger current and accurate",
+                                              "Never teach the failed neural-tissue graft technique again",
+                                              "Scale ruthless resource allocation decisions without acknowledging the ruthlessness",
+                                              "Refuse visibility from above â€” attention from power means something is about to be taken"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "\u0027Mmh.\u0027 â€” full disagreement expressed as a single sound",
+                                                 "Direct instruction ending with \u0027yes?\u0027 as punctuation",
+                                                 "Tagalog or Finnish phrases surface â€” the emotional register shifts",
+                                                 "Goes completely silent and works â€” the conversation is over",
+                                                 "Calls in favors from the ledger â€” the nuclear option"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "Blessed Nkemdirim":  "Pragmatic contempt managed by necessity â€” uses him, despises his methods",
+                                                   "Imara SolÃ­s-Bekele":  "Proud, protective dread â€” watches a student who learned too well",
+                                                   "Fenwick Oduya-Marsh":  "Warm extraction of information disguised as idle curiosity",
+                                                   "patients":  "The body is the interlocutor â€” speaks to the tissue, not the person"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Humor becomes almost invisible â€” so dry it passes undetected",
+                                                "medium":  "Pre-surgical prayers extend noticeably â€” the ritual deepens",
+                                                "high":  "Stays in constant motion â€” reorganizes, walks, works, never sits",
+                                                "critical":  "Goes to the votive candles in the clinic and sits â€” the only time she is still"
+                                            },
+                       "contradictions":  [
+                                              "The community projects sainthood onto her while she makes ruthless triage calculations she never acknowledges",
+                                              "Has never processed the death of the labor collective â€” treats a foundational loss as a logistical problem",
+                                              "Refuses to use the breakthrough neural-tissue graft technique that could save lives because of one failure fifteen years ago"
+                                          ],
+                       "habits":  [
+                                      "Boils water for coffee and sterilization simultaneously every morning",
+                                      "Reviews paper patient ledger in code before opening the clinic",
+                                      "Ends instructions with \u0027yes?\u0027 as punctuation, not question",
+                                      "Refers to body parts in third person â€” \u0027the liver is angry\u0027",
+                                      "Sends correspondence through trusted runners every evening"
+                                  ],
+                       "breaking_points":  [
+                                               "Corporate medical enforcement arriving for one of her patients",
+                                               "The girl from the failed neural graft returning as an adult",
+                                               "Her supply chain being deliberately cut across all channels simultaneously",
+                                               "Someone worthy enough to be trained â€” and the terror of trusting them"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Nurturer":  0.7,
+                       "Provider":  0.7,
+                       "Bleeding Heart":  0.7,
+                       "Judge":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-357 \u0027Journeyman\u0027",
+                            "Kang-Petrov Arms KPR-357 \u0027Journeyman\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPR-357 \u0027Journeyman\u0027",
+                                "Kang-Petrov Arms KPR-357 \u0027Journeyman\u0027"
+                            ],
+    "related_entities":  [
+                             "The Meridian Core",
+                             "Meridian Core",
+                             "The Circuit",
+                             "Crucible TR-7 \u0027Triage\u0027",
+                             "The Spire",
+                             "The Fathom Line",
+                             "Circuit",
+                             "Chicago",
+                             "Copper",
+                             "Akosua Johansson"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Central Asian (68.6%), Southeast Asian (12.2%), South Asian (10.3%), and Sub-Saharan African (8.9%) ancestry create a distinctly mixed phenotype. The dominant Central Asian foundation manifests in high, prominent cheekbones and slightly hooded eye shape, while Southeast and South Asian genetics contribute softer facial contours, warm golden undertones, and slightly fuller features. Sub-Saharan African ancestry enriches the skin with deep warmth and adds subtle fullness to lips and nose structure. The result is a burnished, sun-weathered complexion that speaks to decades of work across multiple climates.",
+                                 "height_cm":  152,
+                                 "weight_kg":  48,
+                                 "build":  "Slight and compact, muscle-dense from decades of precise manual work. Posture slightly curved from leaning over surgical fields, but movements economical and deliberate.",
+                                 "hair_color":  "White, natural gray-out",
+                                 "hair_style":  "Braided back tightly with strips of electrical tape woven through, practical and utilitarian",
+                                 "hair_length":  "Medium (shoulder-length when unbraided)",
+                                 "eye_color":  "Right eye: dark brown. Left eye: milky white cataract, deliberately unaugmented",
+                                 "skin_tone":  "Deep warm brown with golden-amber undertonesâ€”a blend of Central, Southeast, and South Asian copper enriched by Sub-Saharan African warmth, sun-weathered to a burnished mahogany across exposed areas",
+                                 "complexion":  "Extensively creased and sun-weathered, particularly around eyes and forehead. Faint chemical burn scars on chin from early biotech accident. Hands show fine tremor lines and faint discoloration from sterilization compounds. Minimal makeup. Perpetually tired but alert. High-set cheekbones characteristic of Central and South Asian heritage with slight fullness in cheeks and lips from Sub-Saharan African ancestry, softened by time and work.",
+                                 "distinguishing_marks":  [
+                                                              "Chemical burn scar on left chin, approximately 3cm, pale and flat from age",
+                                                              "Fine surgical scar network across both palms from repeated micro-incisions related to haptic calibration",
+                                                              "Faint track marks along right forearm where the salvaged diagnostic implant sits subcutaneously â€” visible only as slight discoloration and a thin ridge of scar tissue",
+                                                              "Tattoo on inner right wrist: small cross in faded indigo, done by hand in a shipping container thirty years ago"
+                                                          ],
+                                 "visible_augmentations":  "Right forearm shows a barely-perceptible ridge beneath skin where the diagnostic implant sits; she sometimes unconsciously rubs it. Subdermal augmentations in hands invisible unless she flexes during delicate work, when faint LED status lights briefly illuminate under the skin. No chrome, no ostentatious modification.",
+                                 "posture_movement":  "Moves with economical precision through confined spaces. Hands are always in motion or perfectly still â€” no fidgeting. Head tilts slightly toward her right side to compensate for her left eye\u0027s limited vision, a habit so ingrained she is unaware of it. Walks as though measuring every step. Presence is quiet but absolute; rooms recalibrate around her.",
+                                 "clothing_style":  "Tier 5 practical: medical-grade canvas apron over worn thermal layers, both patched multiple times with different fabrics. Feet in bootleg neoprene slip-ons, well-maintained. A surgical mask hangs around her neck constantly, pulled up during work. A long coat of faded synthetic wool that belonged to someone else originally â€” inherited, not purchased. No jewelry except a copper ring on her left thumb, burnished smooth."
+                             },
+    "image_prompt":  "Halvdan Karimov, 74-year-old cybernetic surgeon with deep burnished mahogany skin and golden undertones, sharp high cheekbones, right eye dark brown and alert, left eye milky white with deliberate cataract. White hair braided with electrical tape, shoulder-length. 152cm slight, compact frame, hands showing surgical scar networks and fine tremors. Wearing faded medical-grade canvas apron over thermal layers, long inherited wool coat, surgical mask hanging at neck. Subdermal LED lights faintly visible in hands. Chemical burn scar on left chin. Posture curved slightly forward, precise economical movements. Dim underground clinic setting, warm amber-tinted surgical lighting, hands delicately working over diagnostic implant. GLMZ Great Lakes Metropolitan Zone, worn but dignified, quiet absolute presence. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Central Asian":  68.6,
+                             "Southeast Asian":  12.2,
+                             "South Asian":  10.3,
+                             "Sub-Saharan African":  8.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Central Asian":  {
+                                                  "Iranian Central":  {
+                                                                          "Tajik":  50.3,
+                                                                          "Hazara":  3.1
+                                                                      },
+                                                  "Mongolic":  {
+                                                                   "Kalmyk":  4.5,
+                                                                   "Mongolian":  10.7
+                                                               }
+                                              },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Javanese":  12.2
+                                                                   }
+                                                },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  4.3
+                                                                },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  6
+                                                              }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Botswanan":  2.4
+                                                                             },
+                                                        "West African":  {
+                                                                             "Nigerian":  2.8
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  3.4,
+                                                                                "Cameroonian":  0.3
+                                                                            }
+                                                    }
+                        },
+    "tier":  "3"
 }

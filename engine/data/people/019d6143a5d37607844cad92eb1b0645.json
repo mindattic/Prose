@@ -1,190 +1,249 @@
-{
-  "id": "019d6143a5d37607844cad92eb1b0645",
-  "rating": 30,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Celina Kovalenko-Wattana",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Fixer - Precision ops only",
-  "age": 35,
-  "status": "active",
-  "location": "The Circuit, near Armitage and Milwaukee",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Independent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Circuit",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Complex Ubiquitous Diaspora blend: Northern European (26.5%) and Eastern European (25.5%) ancestry provides structural foundation with sharp cheekbone definition and angular bone geometry. Substantial South Asian (24.6%) and Southeast Asian (16.8%) heritage creates softer facial curves and prominent cheekbones with warm golden undertones. Hispanic/Latin American (4.1%) and Sub-Saharan African (2.5%) ancestry contribute warmth and luminous depth to the complexion. The result is a face of striking dimensional contrast—Eastern European angular sharpness balanced by South Asian fullness and warmth, with golden-amber undertones radiating from cheekbones and bridge of nose, creating a complexion that appears to glow from within.",
-    "height_cm": 172,
-    "weight_kg": 68,
-    "build": "Lean and angular with corded muscle density — built for precision work rather than raw strength. Shoulders slightly narrower than hips, creating an understated silhouette.",
-    "hair_color": "Black with natural dark brown undertones",
-    "hair_style": "Cropped close on sides, slightly longer on top — styled back with subtle texture. Low maintenance, high function.",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, alert and calculating",
-    "skin_tone": "Medium-toned warm complexion with balanced undertones: cooler Northern/Eastern European notes along the temples and jawline blend seamlessly into golden-amber warmth from South Asian, Southeast Asian, and African ancestry concentrated on cheekbones and bridge of nose. Skin carries luminous rather than matte quality—subtle radiance without shine.",
-    "complexion": "Angular, well-defined facial structure balancing Eastern European sharpness with South Asian softness. High, prominent cheekbones with gentle fullness underneath. Strong, tapered jawline. Clear skin with functional rather than pampered appearance. Minimal facial hair. Warm golden-amber luminosity concentrated on cheekbones, bridge of nose, and upper cheeks, creating visual dimensionality. Cooler undertones along temples, jawline, and forehead creating subtle shadow play.",
-    "distinguishing_marks": [
-      "Thin surgical scar along the left temple, barely visible unless light hits it directly",
-      "Small burn mark on the inner right wrist — roughly 2cm diameter, old and faded silver",
-      "Faint tattoo on the back of the neck: geometric circuit pattern in matte black, barely visible under their typical collar line"
-    ],
-    "visible_augmentations": "None visible. Operates on the assumption that visible chrome signals desperation or ego.",
-    "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight distributed evenly, shoulders relaxed. Eyes constantly scanning. Handshakes are firm but brief. Speech is measured; they listen more than they talk.",
-    "clothing_style": "Tier 3-4 practical wear. Prefers neutral colors: charcoal, black, muted gray. Typical outfit: reinforced cargo pants with multiple hidden pockets, fitted synthweave turtleneck or unmarked tech jacket. Worn-in leather boots with non-slip soles. Minimal branding. A single piece of jewelry — a thin braided bracelet in matte gunmetal, possibly containing subcutaneous tech interface. Dressing room aesthetic: function first, invisibility second."
-  },
-  "image_prompt": "Celina Kovalenko-Wattana, 172cm lean angular frame, dark cropped hair styled back with texture. Medium-toned warm complexion with golden-amber radiance on high prominent cheekbones and bridge of nose, cool undertones along temples and sharp jawline—striking blend of Eastern European angular structure and South Asian softness. Dark brown alert eyes. Minimal facial hair. Thin surgical scar on left temple barely visible. Small faded burn mark on inner right wrist. Faint geometric circuit tattoo on back of neck. Wearing charcoal synthweave tech jacket and reinforced black cargo pants, worn leather boots. Single matte gunmetal braided bracelet. Economical precise posture, shoulders relaxed, hands resting naturally. GLMZ Great Lakes Metropolitan Zone setting—dimly lit corporate hallway or neon-lit safe house, cool blue and amber neon lighting emphasizing the warm-cool interplay of their skin tone. Serious, calculating expression. Professional spy or infiltration operative aesthetic. Highly detailed photorealistic --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Northern European": 26.5,
-    "Eastern European": 25.5,
-    "South Asian": 24.6,
-    "Southeast Asian": 16.8,
-    "Hispanic/Latin American": 4.1,
-    "Sub-Saharan African": 2.5
-  },
-  "ancestry_detail": {
-    "Northern European": {
-      "British Isles": {
-        "English": 13.4,
-        "Irish": 13.1
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 11.7,
-        "Czech": 13.8
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 7
-      },
-      "Nepali": {
-        "Nepali": 17.6
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 16.1
-      },
-      "Laotian": {
-        "Laotian": 0.7
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Haitian": 1.8,
-        "Dominican": 0.3
-      },
-      "South American": {
-        "Colombian": 1.9,
-        "Brazilian": 0.1
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 0.5
-      },
-      "West African": {
-        "Malian": 0.5,
-        "Nigerian": 0.8
-      },
-      "East African": {
-        "Rwandan": 0.6,
-        "Somali": 0.1
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a5d37607844cad92eb1b0645",
+    "rating":  30,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Celina Kovalenko-Wattana",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Fixer - Precision ops only",
+    "age":  35,
+    "status":  "active",
+    "location":  "The Circuit, near Armitage and Milwaukee",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Independent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Circuit",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Complex Ubiquitous Diaspora blend: Northern European (26.5%) and Eastern European (25.5%) ancestry provides structural foundation with sharp cheekbone definition and angular bone geometry. Substantial South Asian (24.6%) and Southeast Asian (16.8%) heritage creates softer facial curves and prominent cheekbones with warm golden undertones. Hispanic/Latin American (4.1%) and Sub-Saharan African (2.5%) ancestry contribute warmth and luminous depth to the complexion. The result is a face of striking dimensional contrastâ€”Eastern European angular sharpness balanced by South Asian fullness and warmth, with golden-amber undertones radiating from cheekbones and bridge of nose, creating a complexion that appears to glow from within.",
+                                 "height_cm":  172,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and angular with corded muscle density â€” built for precision work rather than raw strength. Shoulders slightly narrower than hips, creating an understated silhouette.",
+                                 "hair_color":  "Black with natural dark brown undertones",
+                                 "hair_style":  "Cropped close on sides, slightly longer on top â€” styled back with subtle texture. Low maintenance, high function.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, alert and calculating",
+                                 "skin_tone":  "Medium-toned warm complexion with balanced undertones: cooler Northern/Eastern European notes along the temples and jawline blend seamlessly into golden-amber warmth from South Asian, Southeast Asian, and African ancestry concentrated on cheekbones and bridge of nose. Skin carries luminous rather than matte qualityâ€”subtle radiance without shine.",
+                                 "complexion":  "Angular, well-defined facial structure balancing Eastern European sharpness with South Asian softness. High, prominent cheekbones with gentle fullness underneath. Strong, tapered jawline. Clear skin with functional rather than pampered appearance. Minimal facial hair. Warm golden-amber luminosity concentrated on cheekbones, bridge of nose, and upper cheeks, creating visual dimensionality. Cooler undertones along temples, jawline, and forehead creating subtle shadow play.",
+                                 "distinguishing_marks":  [
+                                                              "Thin surgical scar along the left temple, barely visible unless light hits it directly",
+                                                              "Small burn mark on the inner right wrist â€” roughly 2cm diameter, old and faded silver",
+                                                              "Faint tattoo on the back of the neck: geometric circuit pattern in matte black, barely visible under their typical collar line"
+                                                          ],
+                                 "visible_augmentations":  "None visible. Operates on the assumption that visible chrome signals desperation or ego.",
+                                 "posture_movement":  "Moves with economical precision â€” no wasted motion. Stands with weight distributed evenly, shoulders relaxed. Eyes constantly scanning. Handshakes are firm but brief. Speech is measured; they listen more than they talk.",
+                                 "clothing_style":  "Tier 3-4 practical wear. Prefers neutral colors: charcoal, black, muted gray. Typical outfit: reinforced cargo pants with multiple hidden pockets, fitted synthweave turtleneck or unmarked tech jacket. Worn-in leather boots with non-slip soles. Minimal branding. A single piece of jewelry â€” a thin braided bracelet in matte gunmetal, possibly containing subcutaneous tech interface. Dressing room aesthetic: function first, invisibility second."
+                             },
+    "image_prompt":  "Celina Kovalenko-Wattana, 172cm lean angular frame, dark cropped hair styled back with texture. Medium-toned warm complexion with golden-amber radiance on high prominent cheekbones and bridge of nose, cool undertones along temples and sharp jawlineâ€”striking blend of Eastern European angular structure and South Asian softness. Dark brown alert eyes. Minimal facial hair. Thin surgical scar on left temple barely visible. Small faded burn mark on inner right wrist. Faint geometric circuit tattoo on back of neck. Wearing charcoal synthweave tech jacket and reinforced black cargo pants, worn leather boots. Single matte gunmetal braided bracelet. Economical precise posture, shoulders relaxed, hands resting naturally. GLMZ Great Lakes Metropolitan Zone settingâ€”dimly lit corporate hallway or neon-lit safe house, cool blue and amber neon lighting emphasizing the warm-cool interplay of their skin tone. Serious, calculating expression. Professional spy or infiltration operative aesthetic. Highly detailed photorealistic --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Northern European":  26.5,
+                             "Eastern European":  25.5,
+                             "South Asian":  24.6,
+                             "Southeast Asian":  16.8,
+                             "Hispanic/Latin American":  4.1,
+                             "Sub-Saharan African":  2.5
+                         },
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "English":  13.4,
+                                                                            "Irish":  13.1
+                                                                        }
+                                                  },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  11.7,
+                                                                         "Czech":  13.8
+                                                                     }
+                                                 },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  7
+                                                               },
+                                                "Nepali":  {
+                                                               "Nepali":  17.6
+                                                           }
+                                            },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  16.1
+                                                             },
+                                                    "Laotian":  {
+                                                                    "Laotian":  0.7
+                                                                }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Haitian":  1.8,
+                                                                              "Dominican":  0.3
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Colombian":  1.9,
+                                                                                   "Brazilian":  0.1
+                                                                               }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  0.5
+                                                                             },
+                                                        "West African":  {
+                                                                             "Malian":  0.5,
+                                                                             "Nigerian":  0.8
+                                                                         },
+                                                        "East African":  {
+                                                                             "Rwandan":  0.6,
+                                                                             "Somali":  0.1
+                                                                         }
+                                                    }
+                        }
 }

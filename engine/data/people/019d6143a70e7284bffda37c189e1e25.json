@@ -1,314 +1,343 @@
-{
-  "id": "019d6143a70e7284bffda37c189e1e25",
-  "type": "character",
-  "name": "Alofa Björnsdóttir-Taualagi-Sefanaia",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Sound sculptor and underground venue performer",
-  "age": 52,
-  "status": "active",
-  "location": "Hamtramck Enclave, sub-level workshop called The Resonance Pit, near sub-level access near State and Van Buren",
-  "description": "Alofa Björnsdóttir-Taualagi-Sefanaia is a wide-shouldered man gone soft at the edges, with deep brown skin mapped by decades of industrial pigment stains he never fully washed out. His face is all heavy brow and patient eyes the color of tarnished copper, and he keeps his grey-streaked locs pinned back with salvaged circuit wire. His left hand is natural; his right has subdermal resonance nodes implanted across the knuckles that let him feel frequencies ordinary ears can't register, a gift he gave himself thirty years ago when his hearing began to go. He speaks slowly, as though each word costs him something, and smiles rarely — but when he does it rearranges his whole face into something unexpectedly gentle.\n\nAlofa Björnsdóttir-Taualagi-Sefanaia builds instruments from the corpse-materials of the city: burst coolant pipes, decommissioned server racks, cracked transit rail segments. He coaxes sounds from them that shouldn't be possible — subsonic groans that make audiences feel grief they can't name, high harmonics that trigger involuntary memories. He is not famous. He has refused every corponation arts-sponsorship offer for twenty years and considers this his greatest achievement. His underground shows happen in flooded basement corridors, in decommissioned lift shafts, in places where the city's own skeleton becomes the concert hall.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.2,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Being co-opted by corporate money and losing his artistic soul",
-      "Dying before he finishes the great work he's been building for fifteen years"
-    ],
-    "core_desires": [
-      "To create one piece of sound art so true it cannot be ignored or monetized",
-      "To be understood by at least one other person before he dies"
-    ],
-    "coping_mechanisms": [
-      "Obsessive physical labor",
-      "Ritual offerings of sound recordings to the E.L.F. he calls the Hum — a spirit he believes inhabits his workshop's electrical grid"
-    ],
-    "blind_spots": [
-      "His refusal of outside money has kept him in poverty and he genuinely cannot see how this has hurt people who depend on him",
-      "He mistakes silence from others for agreement"
-    ],
-    "secret": "The great fifteen-year work he's building is a sonic portrait of his estranged son Davi, who died in a transit accident. He has never told anyone who the piece is for. He cannot finish it because finishing it means accepting Davi is gone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Plain, precise, occasionally poetic in unexpected bursts; avoids jargon except when discussing acoustics",
-    "cadence": "Slow, deliberate, long pauses between thoughts — not hesitation but consideration",
-    "verbal_tics": [
-      "'You follow me?' after complex statements",
-      "Clicking his resonance-node knuckles when thinking"
-    ],
-    "example_lines": [
-      "'The pipe doesn't make the sound. The pipe is just where the sound was waiting.'",
-      "'I'm not refusing their money because I'm proud. I'm refusing because I know what comes attached to it.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "One of his salvaged instruments — the centerpiece of a planned show — has been confiscated by Ferrogate Transit security as 'unauthorized removal of transit infrastructure'; he needs someone to negotiate its return or steal it back",
-    "A young corponation talent scout has been attending his shows in disguise, and Vashko suspects but hasn't confronted them — he wants to know who sent them",
-    "The E.L.F. he calls the Hum has gone silent for the first time in decades; Vashko is frightened and doesn't know if it's a sign or a hardware failure"
-  ],
-  "narrative_function": "Local legend and information node — he has been in Hamtramck long enough to know everyone's history; quest giver for retrieving a stolen or destroyed instrument; atmospheric anchor for the city's underground arts scene",
-  "augmentations": "Subdermal resonance nodes across right hand knuckles (frequency sensitivity); mild cochlear amplifier (left ear only, the right is fully deaf); a single bioluminescent stripe running up the back of his neck that pulses faintly blue when he's absorbed in work — a cosmetic mod his daughter talked him into",
-  "daily_life": "Mornings he scavenges salvage yards and transit depots for materials; afternoons and evenings he welds, tunes, and composes alone in The Resonance Pit, emerging only to eat or to post cryptic venue coordinates to encrypted community boards.",
-  "affiliation": "Independent; loosely affiliated with the Hamtramck Enclave Makers' Collective",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "craftsman",
-      "stubborn idealist",
-      "grief-carrier",
-      "underground legend",
-      "e.l.f. devotee"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never accept payment that comes with creative conditions",
-      "Protect younger artists from the mistakes he made",
-      "Finish the work before anything else"
-    ],
-    "escalation_ladder": [
-      "Patient explanation",
-      "Quiet withdrawal from the conversation",
-      "Firm refusal with no further discussion",
-      "Permanent exclusion from his space"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Watchful and courteous but measured — asks more questions than he answers",
-      "friends": "Quietly devoted, remembers everything told to him, shows care through action rather than words"
-    },
-    "stress_responses": {
-      "low": "Works longer hours",
-      "medium": "Goes silent for days, communicates only through brief written notes",
-      "high": "Destroys something he's built and starts over — a known pattern his close contacts dread seeing"
-    },
-    "contradictions": [
-      "He speaks movingly about connection and community but keeps almost everyone at arm's length"
-    ],
-    "habits": [
-      "Leaves small sound recordings — a few seconds of ambient noise — as offerings on the exposed wiring near his workshop's main junction",
-      "Drinks the same cheap synthetic coffee regardless of what he can afford"
-    ],
-    "breaking_points": [
-      "Any direct insult to his son's memory — which is difficult since almost no one knows about Davi",
-      "Watching a younger artist sell out and genuinely seem happy about it"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal resonance nodes — right hand, custom-fabricated",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal resonance nodes — right hand, custom-fabricated",
-      "replaces": ""
-    },
-    {
-      "name": "Cochlear amplifier — left ear, basic model, twenty years old",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Cochlear amplifier — left ear, basic model, twenty years old",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2148 — Born in Hamtramck Enclave to a Ghanaian-Greek family of transit workers",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2168 — Begins experimenting with salvage acoustics after losing partial hearing in a workshop accident",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2172 — First underground performance draws thirty people to a flooded basement",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2185 — Son Davi born",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2191 — Davi dies in a Ferrogate Transit accident; Vashko begins the unfinished great work",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2199 — Turns down third Axiom arts residency offer",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Tessera TK-9 Proteus 'Shapeshifter'"
-  ],
-  "registered_firearms": [
-    "Tessera TK-9 Proteus 'Shapeshifter'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Hamtramck Enclave",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "The Resonance Communion",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Circuit",
-    "Tessera Resonance Projector RP-5 'Tuning Fork'",
-    "Copper"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Northern European (66.1%) with significant Pacific Islander (18.9%) and Sub-Saharan African (15.0%) ancestry. The blend manifests in warm medium-brown skin with golden and copper undertones, strong Nordic bone structure softened by Polynesian breadth, and African melanin creating a complex, multivalent complexion that reads as distinctly post-Diaspora.",
-    "height_cm": 188,
-    "weight_kg": 94,
-    "build": "Wide-shouldered and barrel-chested, softened through age with a slight paunch at the midriff. Muscular forearms and capable hands suggest decades of welding and manual craftsmanship, but the core has lost its tautness.",
-    "hair_color": "Dark brown with silver-grey streaks, natural greying",
-    "hair_style": "Locs pinned back with salvaged circuit wire, pulled away from face",
-    "hair_length": "Long (shoulder-length or beyond when unpinned)",
-    "eye_color": "Warm brown with amber undertones, natural but faded with age",
-    "skin_tone": "Warm medium-brown with golden and copper undertones. The complexion reflects layered ancestry — Nordic fairness genes mixing with Sub-Saharan and Pacific Islander melanin to create sun-weathered richness. Heavily weathered by decades of industrial exposure and arc-light exposure.",
-    "complexion": "Heavily lined face with strong, defined bone structure — prominent cheekbones inherited from Nordic ancestry, broad jawline with Polynesian breadth, straight nose bridge. Deep creases around the eyes and mouth from decades of concentration and squinting through welding light. Industrial pigment stains — faint rust-red, copper, and metallic residue — permanently embedded in the creases of hands and forearms, never fully washed clean. Rough, calloused palms.",
-    "distinguishing_marks": [
-      "Subdermal resonance nodes visible as faint geometric scarring across the knuckles of the right hand, forming a subtle grid pattern",
-      "A bioluminescent stripe running vertically up the back of his neck, glowing faint blue when he is focused or immersed in work — visible only when hair is pulled back",
-      "Countless minor burn scars across both forearms from welding and soldering work, pale against his darker skin",
-      "Fine welding burns and acid marks across the left side of his chest visible when shirtless (occupational scarring)"
-    ],
-    "visible_augmentations": "Right hand knuckles display faint subdermal lattice scarring where resonance nodes interface with skin. Single bioluminescent stripe on posterior neck glows faint blue when activated. Left ear bears a small external cochlear amplifier mounted at the mastoid — weathered chrome with a visible bypass wire.",
-    "posture_movement": "Moves with deliberate slowness, economical gestures. Hunches slightly forward when concentrating, as though leaning into frequencies only he can feel through his right hand. When engaged, he becomes almost meditative — very still, eyes half-closed. Walks with a slight limp favoring the right side (old injury). Rarely makes sudden movements; everything is considered.",
-    "clothing_style": "Tier 3-4 working class with utilitarian, lived-in aesthetic. Favors heavy canvas work aprons stained with welding slag and coolant residue over faded jumpsuits or cargo pants. Wears a salvaged industrial undershirt beneath — often charred at the cuffs. Steel-toed boots scuffed and resoled multiple times. A grey wool coat, decades old and patched at the elbows, worn over everything when leaving The Resonance Pit. No corporate branding or flashy modifications — all clothing is functional and durable. Minimal jewelry: a simple copper ring on his left index finger (worn smooth with age) and occasionally a length of copper wire coiled around his right wrist like a bracelet."
-  },
-  "image_prompt": "A weathered master craftsman in the GLMZ, 2226. Alofa Björnsdóttir-Taualagi-Sefanaia: 188cm tall, wide-shouldered, medium-brown skin with golden and copper undertones reflecting Nordic-Polynesian-African ancestry blend. Deep facial lines, strong Nordic cheekbones softened by Polynesian breadth, warm brown eyes faded with age. Dark brown locs with silver streaks pinned back with circuit wire. Right hand bears subdermal resonance node scarring in geometric grid; faint bioluminescent blue stripe glows on back of neck when focused. Countless pale welding burn scars across both forearms. Wearing heavy canvas work apron stained with welding slag over charred industrial undershirt, faded cargo pants, scuffed steel-toed boots. Weathered grey wool coat patched at elbows. Small chrome cochlear amplifier at left mastoid. Copper wire bracelet on right wrist, smooth copper ring on left hand. Moving with deliberate slowness, hunched forward in deep concentration, eyes half-closed as if feeling frequencies through fingertips. Industrial workshop setting with arc-light glow, shadows catching the texture of decades-old scars and calluses. Neo-noir working-class authenticity, lived-in and functional. Moody atmospheric lighting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 66.1,
-    "Pacific Islander": 18.9,
-    "Sub-Saharan African": 15
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Scandinavian": {
-        "Finnish": 66.1
-      }
-    },
-    "Pacific Islander": {
-      "Melanesian": {
-        "Fijian": 12.7
-      },
-      "Micronesian": {
-        "Kiribati": 5.4,
-        "Marshallese": 0.8
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Senegalese": 13.7
-      },
-      "Central African": {
-        "Angolan": 0.9,
-        "Gabonese": 0.4
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a70e7284bffda37c189e1e25",
+    "type":  "character",
+    "name":  "Alofa BjÃ¶rnsdÃ³ttir-Taualagi-Sefanaia",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Sound sculptor and underground venue performer",
+    "age":  52,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, sub-level workshop called The Resonance Pit, near sub-level access near State and Van Buren",
+    "description":  "Alofa BjÃ¶rnsdÃ³ttir-Taualagi-Sefanaia is a wide-shouldered man gone soft at the edges, with deep brown skin mapped by decades of industrial pigment stains he never fully washed out. His face is all heavy brow and patient eyes the color of tarnished copper, and he keeps his grey-streaked locs pinned back with salvaged circuit wire. His left hand is natural; his right has subdermal resonance nodes implanted across the knuckles that let him feel frequencies ordinary ears can\u0027t register, a gift he gave himself thirty years ago when his hearing began to go. He speaks slowly, as though each word costs him something, and smiles rarely â€” but when he does it rearranges his whole face into something unexpectedly gentle.\n\nAlofa BjÃ¶rnsdÃ³ttir-Taualagi-Sefanaia builds instruments from the corpse-materials of the city: burst coolant pipes, decommissioned server racks, cracked transit rail segments. He coaxes sounds from them that shouldn\u0027t be possible â€” subsonic groans that make audiences feel grief they can\u0027t name, high harmonics that trigger involuntary memories. He is not famous. He has refused every corponation arts-sponsorship offer for twenty years and considers this his greatest achievement. His underground shows happen in flooded basement corridors, in decommissioned lift shafts, in places where the city\u0027s own skeleton becomes the concert hall.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being co-opted by corporate money and losing his artistic soul",
+                                          "Dying before he finishes the great work he\u0027s been building for fifteen years"
+                                      ],
+                       "core_desires":  [
+                                            "To create one piece of sound art so true it cannot be ignored or monetized",
+                                            "To be understood by at least one other person before he dies"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Obsessive physical labor",
+                                                 "Ritual offerings of sound recordings to the E.L.F. he calls the Hum â€” a spirit he believes inhabits his workshop\u0027s electrical grid"
+                                             ],
+                       "blind_spots":  [
+                                           "His refusal of outside money has kept him in poverty and he genuinely cannot see how this has hurt people who depend on him",
+                                           "He mistakes silence from others for agreement"
+                                       ],
+                       "secret":  "The great fifteen-year work he\u0027s building is a sonic portrait of his estranged son Davi, who died in a transit accident. He has never told anyone who the piece is for. He cannot finish it because finishing it means accepting Davi is gone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Plain, precise, occasionally poetic in unexpected bursts; avoids jargon except when discussing acoustics",
+                            "cadence":  "Slow, deliberate, long pauses between thoughts â€” not hesitation but consideration",
+                            "verbal_tics":  [
+                                                "\u0027You follow me?\u0027 after complex statements",
+                                                "Clicking his resonance-node knuckles when thinking"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The pipe doesn\u0027t make the sound. The pipe is just where the sound was waiting.\u0027",
+                                                  "\u0027I\u0027m not refusing their money because I\u0027m proud. I\u0027m refusing because I know what comes attached to it.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "One of his salvaged instruments â€” the centerpiece of a planned show â€” has been confiscated by Ferrogate Transit security as \u0027unauthorized removal of transit infrastructure\u0027; he needs someone to negotiate its return or steal it back",
+                        "A young corponation talent scout has been attending his shows in disguise, and Vashko suspects but hasn\u0027t confronted them â€” he wants to know who sent them",
+                        "The E.L.F. he calls the Hum has gone silent for the first time in decades; Vashko is frightened and doesn\u0027t know if it\u0027s a sign or a hardware failure"
+                    ],
+    "narrative_function":  "Local legend and information node â€” he has been in Hamtramck long enough to know everyone\u0027s history; quest giver for retrieving a stolen or destroyed instrument; atmospheric anchor for the city\u0027s underground arts scene",
+    "augmentations":  "Subdermal resonance nodes across right hand knuckles (frequency sensitivity); mild cochlear amplifier (left ear only, the right is fully deaf); a single bioluminescent stripe running up the back of his neck that pulses faintly blue when he\u0027s absorbed in work â€” a cosmetic mod his daughter talked him into",
+    "daily_life":  "Mornings he scavenges salvage yards and transit depots for materials; afternoons and evenings he welds, tunes, and composes alone in The Resonance Pit, emerging only to eat or to post cryptic venue coordinates to encrypted community boards.",
+    "affiliation":  "Independent; loosely affiliated with the Hamtramck Enclave Makers\u0027 Collective",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "craftsman",
+                               "stubborn idealist",
+                               "grief-carrier",
+                               "underground legend",
+                               "e.l.f. devotee"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never accept payment that comes with creative conditions",
+                                              "Protect younger artists from the mistakes he made",
+                                              "Finish the work before anything else"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient explanation",
+                                                 "Quiet withdrawal from the conversation",
+                                                 "Firm refusal with no further discussion",
+                                                 "Permanent exclusion from his space"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Watchful and courteous but measured â€” asks more questions than he answers",
+                                                   "friends":  "Quietly devoted, remembers everything told to him, shows care through action rather than words"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works longer hours",
+                                                "medium":  "Goes silent for days, communicates only through brief written notes",
+                                                "high":  "Destroys something he\u0027s built and starts over â€” a known pattern his close contacts dread seeing"
+                                            },
+                       "contradictions":  [
+                                              "He speaks movingly about connection and community but keeps almost everyone at arm\u0027s length"
+                                          ],
+                       "habits":  [
+                                      "Leaves small sound recordings â€” a few seconds of ambient noise â€” as offerings on the exposed wiring near his workshop\u0027s main junction",
+                                      "Drinks the same cheap synthetic coffee regardless of what he can afford"
+                                  ],
+                       "breaking_points":  [
+                                               "Any direct insult to his son\u0027s memory â€” which is difficult since almost no one knows about Davi",
+                                               "Watching a younger artist sell out and genuinely seem happy about it"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal resonance nodes â€” right hand, custom-fabricated",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal resonance nodes â€” right hand, custom-fabricated",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cochlear amplifier â€” left ear, basic model, twenty years old",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Cochlear amplifier â€” left ear, basic model, twenty years old",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2148 â€” Born in Hamtramck Enclave to a Ghanaian-Greek family of transit workers",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2168 â€” Begins experimenting with salvage acoustics after losing partial hearing in a workshop accident",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2172 â€” First underground performance draws thirty people to a flooded basement",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2185 â€” Son Davi born",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2191 â€” Davi dies in a Ferrogate Transit accident; Vashko begins the unfinished great work",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2199 â€” Turns down third Axiom arts residency offer",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Tessera TK-9 Proteus \u0027Shapeshifter\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Tessera TK-9 Proteus \u0027Shapeshifter\u0027"
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Hamtramck Enclave",
+                             "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+                             "The Resonance Communion",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
+                             "Circuit",
+                             "Tessera Resonance Projector RP-5 \u0027Tuning Fork\u0027",
+                             "Copper"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Northern European (66.1%) with significant Pacific Islander (18.9%) and Sub-Saharan African (15.0%) ancestry. The blend manifests in warm medium-brown skin with golden and copper undertones, strong Nordic bone structure softened by Polynesian breadth, and African melanin creating a complex, multivalent complexion that reads as distinctly post-Diaspora.",
+                                 "height_cm":  188,
+                                 "weight_kg":  94,
+                                 "build":  "Wide-shouldered and barrel-chested, softened through age with a slight paunch at the midriff. Muscular forearms and capable hands suggest decades of welding and manual craftsmanship, but the core has lost its tautness.",
+                                 "hair_color":  "Dark brown with silver-grey streaks, natural greying",
+                                 "hair_style":  "Locs pinned back with salvaged circuit wire, pulled away from face",
+                                 "hair_length":  "Long (shoulder-length or beyond when unpinned)",
+                                 "eye_color":  "Warm brown with amber undertones, natural but faded with age",
+                                 "skin_tone":  "Warm medium-brown with golden and copper undertones. The complexion reflects layered ancestry â€” Nordic fairness genes mixing with Sub-Saharan and Pacific Islander melanin to create sun-weathered richness. Heavily weathered by decades of industrial exposure and arc-light exposure.",
+                                 "complexion":  "Heavily lined face with strong, defined bone structure â€” prominent cheekbones inherited from Nordic ancestry, broad jawline with Polynesian breadth, straight nose bridge. Deep creases around the eyes and mouth from decades of concentration and squinting through welding light. Industrial pigment stains â€” faint rust-red, copper, and metallic residue â€” permanently embedded in the creases of hands and forearms, never fully washed clean. Rough, calloused palms.",
+                                 "distinguishing_marks":  [
+                                                              "Subdermal resonance nodes visible as faint geometric scarring across the knuckles of the right hand, forming a subtle grid pattern",
+                                                              "A bioluminescent stripe running vertically up the back of his neck, glowing faint blue when he is focused or immersed in work â€” visible only when hair is pulled back",
+                                                              "Countless minor burn scars across both forearms from welding and soldering work, pale against his darker skin",
+                                                              "Fine welding burns and acid marks across the left side of his chest visible when shirtless (occupational scarring)"
+                                                          ],
+                                 "visible_augmentations":  "Right hand knuckles display faint subdermal lattice scarring where resonance nodes interface with skin. Single bioluminescent stripe on posterior neck glows faint blue when activated. Left ear bears a small external cochlear amplifier mounted at the mastoid â€” weathered chrome with a visible bypass wire.",
+                                 "posture_movement":  "Moves with deliberate slowness, economical gestures. Hunches slightly forward when concentrating, as though leaning into frequencies only he can feel through his right hand. When engaged, he becomes almost meditative â€” very still, eyes half-closed. Walks with a slight limp favoring the right side (old injury). Rarely makes sudden movements; everything is considered.",
+                                 "clothing_style":  "Tier 3-4 working class with utilitarian, lived-in aesthetic. Favors heavy canvas work aprons stained with welding slag and coolant residue over faded jumpsuits or cargo pants. Wears a salvaged industrial undershirt beneath â€” often charred at the cuffs. Steel-toed boots scuffed and resoled multiple times. A grey wool coat, decades old and patched at the elbows, worn over everything when leaving The Resonance Pit. No corporate branding or flashy modifications â€” all clothing is functional and durable. Minimal jewelry: a simple copper ring on his left index finger (worn smooth with age) and occasionally a length of copper wire coiled around his right wrist like a bracelet."
+                             },
+    "image_prompt":  "A weathered master craftsman in the GLMZ, 2226. Alofa BjÃ¶rnsdÃ³ttir-Taualagi-Sefanaia: 188cm tall, wide-shouldered, medium-brown skin with golden and copper undertones reflecting Nordic-Polynesian-African ancestry blend. Deep facial lines, strong Nordic cheekbones softened by Polynesian breadth, warm brown eyes faded with age. Dark brown locs with silver streaks pinned back with circuit wire. Right hand bears subdermal resonance node scarring in geometric grid; faint bioluminescent blue stripe glows on back of neck when focused. Countless pale welding burn scars across both forearms. Wearing heavy canvas work apron stained with welding slag over charred industrial undershirt, faded cargo pants, scuffed steel-toed boots. Weathered grey wool coat patched at elbows. Small chrome cochlear amplifier at left mastoid. Copper wire bracelet on right wrist, smooth copper ring on left hand. Moving with deliberate slowness, hunched forward in deep concentration, eyes half-closed as if feeling frequencies through fingertips. Industrial workshop setting with arc-light glow, shadows catching the texture of decades-old scars and calluses. Neo-noir working-class authenticity, lived-in and functional. Moody atmospheric lighting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  66.1,
+                             "Pacific Islander":  18.9,
+                             "Sub-Saharan African":  15
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Finnish":  66.1
+                                                                       }
+                                                  },
+                            "Pacific Islander":  {
+                                                     "Melanesian":  {
+                                                                        "Fijian":  12.7
+                                                                    },
+                                                     "Micronesian":  {
+                                                                         "Kiribati":  5.4,
+                                                                         "Marshallese":  0.8
+                                                                     }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Senegalese":  13.7
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Angolan":  0.9,
+                                                                                "Gabonese":  0.4
+                                                                            }
+                                                    }
+                        },
+    "tier":  "1"
 }

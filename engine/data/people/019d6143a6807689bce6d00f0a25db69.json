@@ -1,325 +1,354 @@
-{
-  "id": "019d6143a6807689bce6d00f0a25db69",
-  "type": "character",
-  "name": "Alejandra Holm-Somchai-Hossain",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Data archaeologist and urban historian specializing in pre-flood Chicago stratigraphy",
-  "age": 54,
-  "status": "active",
-  "location": "University Spine, Brewer's Spine sub-campus — Sublevel Archive 7, near sub-level access near Dearborn and Jackson",
-  "description": "Alejandra Holm-Somchai-Hossain is a heavyset woman with deep umber skin mapped by a constellation of self-applied subcutaneous luminescence — tiny bioluminescent nodes she had implanted one by one over thirty years, each marking a major excavation site she has documented. In low light she glows faintly blue-green, like something dragged from lake bottom. Her hair is kept short and silver at the temples, and she habitually wears magnification lenses perched on her head even when she doesn't need them. Her hands are perpetually stained with archival solvents and the orange pigment of corroded pre-flood polymers.\n\nShe is blunt in the way of someone who has spent decades arguing with colleagues who don't read the primary sources. She has little patience for speculation that outpaces evidence, and even less for academics who treat the drowned city as metaphor rather than physical record. But she softens completely in the presence of objects — she will hold a corroded transit token or a water-damaged photograph with a tenderness that surprises people who only know her from faculty meetings. She believes the city beneath the city is more honest than anything built above it.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.7,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.5,
-      "ghost": 0.8
-    },
-    "core_fears": [
-      "That the record will be permanently destroyed before it can be read",
-      "That her work is ultimately irrelevant to the living city above"
-    ],
-    "core_desires": [
-      "To give the drowned city back its name",
-      "To be remembered as someone who told the truth about what was buried"
-    ],
-    "coping_mechanisms": [
-      "Ritualizing her work — specific sequences for handling artifacts",
-      "Leaving data offerings to the Archive ELF she calls Sediment"
-    ],
-    "blind_spots": [
-      "Assumes the past is more legible than the present",
-      "Dismisses living communities' oral histories when they conflict with her physical evidence"
-    ],
-    "secret": "She recovered a cache of pre-flood Ferrogate predecessor documents proving the original transit authority deliberately flooded three residential neighborhoods during the lake rise to protect infrastructure — and she has been sitting on it for six years, terrified of the consequences of publication"
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, technical, uses stratigraphy metaphors in everyday speech — things are 'layered,' people have 'sediment,' events leave 'deposits'",
-    "cadence": "Deliberate and unhurried, with long pauses before important points, as if she is excavating the right word",
-    "verbal_tics": [
-      "'The record shows—'",
-      "'That's not what the object says'",
-      "Taps the table when making a point she considers settled"
-    ],
-    "example_lines": [
-      "'You want to know what GLMZ is? Dig down nine meters. The answer is down there, not up here in the neon.'",
-      "'I don't deal in theories. I deal in what I can hold in my hand and date within a twenty-year margin.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The Ferrogate bore team has broken into a sealed pre-flood chamber containing something that should not exist — she needs discreet people to get there before the corporate site manager locks it down",
-    "A graduate student working under her has gone missing after announcing they found 'proof that the flood wasn't natural'"
-  ],
-  "narrative_function": "Quest giver for anything involving sub-lake ruins or pre-flood Chicago; information source on city history, corporate land seizures, and what the megacity was built over; can authenticate or date recovered objects",
-  "augmentations": "Bioluminescent subcutaneous nodes (cosmetic, self-applied over decades); haptic-enhanced fingertips for texture analysis; archival-grade ocular filter implant for spectral reading of degraded documents",
-  "daily_life": "Arrives at Sublevel Archive 7 before most staff, spends mornings cataloguing recovered artifacts from the latest Ferrogate tunnel bore, afternoons teaching a seminar on material stratigraphy or reviewing graduate theses, evenings leaving data offerings at the small ELF shrine she keeps beside her workstation.",
-  "affiliation": "University Spine — Department of Material History; contract consultant to Ferrogate Transit on sub-lake tunnel surveys",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 6,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -3,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "expert",
-      "stubborn",
-      "keeper-of-secrets",
-      "methodical",
-      "haunted"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never destroy a primary source, even a dangerous one",
-      "Protect junior researchers before protecting herself",
-      "Do not publish until the evidence is airtight"
-    ],
-    "escalation_ladder": [
-      "Cites evidence and expects to be believed",
-      "Produces documentation and repeats herself more slowly",
-      "Goes over someone's head to their supervisor with a formal complaint",
-      "Goes public — the record will speak for itself"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assesses them quickly for whether they are useful to her work; polite but not warm until trust is established",
-      "friends": "Dry humor, unexpected generosity, will share her best archival finds like gifts"
-    },
-    "stress_responses": {
-      "low": "Works longer hours, becomes more meticulous",
-      "medium": "Becomes short-tempered and dismissive in conversation while retreating into physical tasks",
-      "high": "Goes silent and stops eating regularly; has been known to disappear into the archive for days"
-    },
-    "contradictions": [
-      "Insists on objectivity but has a profound emotional attachment to what she studies",
-      "Prides herself on honesty but is sitting on the most important truth of her career"
-    ],
-    "habits": [
-      "Touches each new artifact to her lips before cataloguing it — a habit she picked up from her mentor and never examined",
-      "Keeps a running handwritten log alongside her digital records, doesn't trust data alone"
-    ],
-    "breaking_points": [
-      "Witnessing deliberate destruction of a site or artifact",
-      "Being accused of fabricating evidence"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "2",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "2",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "University Spine",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Engelheim district to a Norwegian-Chilean father and Yoruba-Nigerian mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed doctorate at University Spine on pre-flood municipal infrastructure",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Led the excavation of the Calumet Rise subway cache — her landmark publication",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First contract with Ferrogate Transit for tunnel survey consultation",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Recovered the Ferrogate predecessor flood documents; did not publish",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact-7 'Rat Trap'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "University Spine",
-    "Brewer's Spine",
-    "Ferrogate Transit",
-    "Patience",
-    "Dearborn Forge",
-    "Silver",
-    "Honest Burger",
-    "The Pure Hand",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Complex Ubiquitous Diaspora ancestry: 27.6% Southeast Asian, 22.0% East Asian, 15.5% Hispanic/Latin American, 12.7% Northern European, 12.0% South Asian, 10.2% North African. Features reflect this intricate global blending—Southeast and East Asian bone structure dominates facial architecture, South Asian breadth in facial planes, Latin American and North African warmth creating golden undertones, Northern European heritage visible in lighter complexion base. The result is a nuanced medium tone with warm golden richness, slightly sun-deepened from decades of fieldwork.",
-    "height_cm": 168,
-    "weight_kg": 92,
-    "build": "Heavyset, broad-shouldered, with the settled solidity of someone who spends long hours hunched over delicate work. Strength in her frame rather than softness.",
-    "hair_color": "Silver at temples, dark charcoal elsewhere",
-    "hair_style": "Cropped close to scalp, practical, showing the texture of her natural hair",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with subtle amber undertones from archival-grade ocular filter implant",
-    "skin_tone": "Warm medium golden tone—the blended result of Southeast Asian, East Asian, and South Asian base tones enriched by North African and Hispanic/Latin American warmth, with Northern European undertones creating subtle luminosity beneath the surface. Sun-aged from fieldwork, rich rather than pale.",
-    "complexion": "Weathered, sun-deepened from decades of open excavation sites and sublevel work. Fine lines around eyes and at corners of mouth from focused detail work. Mid-to-high cheekbones with gentle width reflecting Southeast and East Asian ancestry structure, softened by South Asian facial plane breadth. Faint blue-green luminescence visible in low light from subcutaneous bioluminescent nodes mapping excavation sites across shoulders, forearms, and collarbone.",
-    "eye_shape": "Slightly hooded with subtle epicanthic fold influence from East and Southeast Asian ancestry, giving an alert, observant quality",
-    "distinguishing_marks": [
-      "Constellation of faint, self-applied bioluminescent implant sites across shoulders and upper back, glowing blue-green in darkness",
-      "Chronic orange-rust staining on fingertips and nail beds from archival polymer degradation compounds",
-      "Fine white scar tissue on left palm from a tooling accident during early fieldwork, approximately 4cm long",
-      "Small burn mark on right wrist from a calibration error on an archival laser spectrometer, shaped like a crescent moon"
-    ],
-    "visible_augmentations": "Archival-grade ocular filter implant visible as a subtle amber tint in the sclera and iris. Haptic-enhanced fingertips show no visible sign, but hands move with unusual precision in texture analysis. Bioluminescent nodes are always present but only visible in low light, creating a faint tracery of blue-green light beneath her skin. Magnification lenses perpetually perched on her head like a second set of eyes, even when not in use.",
-    "posture_movement": "Moves deliberately, with the careful economy of someone accustomed to handling irreplaceable objects. Tendency to hunch slightly forward, shoulders curved inward as if protecting something fragile. Hands are precise and steady; she rarely gestures broadly when speaking. Her default expression is focused concentration, interrupted by rare, genuine smiles when discussing artifacts.",
-    "clothing_style": "Tier 2/3 academic utility wear: archival-grade lab coat (University Spine insignia faded from repeated washing), reinforced field vest with multiple pockets containing calibrated tools and specimen bags. Underneath, simple high-collar thermal underlayer in charcoal. Heavy-soled archival boots, scuffed from decades of sublevel work. Wears a worn leather journal clipped to her belt. No jewelry except a simple band on her left ring finger — oxidized silver, pre-flood era, salvaged from a 2087 domestic site."
-  },
-  "image_prompt": "Alejandra Holm-Somchai-Hossain, middle-aged woman with warm golden-medium skin tone, faint blue-green bioluminescent tracery visible beneath collarbone and forearms in dim lighting, short silver-and-charcoal cropped hair, hooded eyes with subtle epicanthic fold and amber-tinted ocular implant, sun-weathered face with fine lines, high-set cheekbones reflecting Southeast and East Asian ancestry blended with South Asian breadth. Heavyset broad-shouldered build. Wearing faded archival-grade lab coat over reinforced field vest and charcoal thermal underlayer, heavy scuffed boots. Magnification lenses perched on head. Hunched posture, hands stained with orange-rust archival compound residue. Worn pre-flood silver band on left ring finger. GLMZ sublevel archive setting, cool blue and amber accent lighting emphasizing bioluminescence, focused expression studying an artifact. GLMZ 2200s academic archaeologist aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 27.6,
-    "East Asian": 22,
-    "Hispanic/Latin American": 15.5,
-    "Northern European": 12.7,
-    "South Asian": 12,
-    "North African": 10.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 27.6
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Mandarin Northern": 7.6,
-        "Cantonese": 14.4
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 6.7,
-        "Honduran": 5.5
-      },
-      "Mexican": {
-        "Mexican": 3.3
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Scottish": 12.7
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 12
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Berber": 7.4
-      },
-      "Nile Valley": {
-        "Egyptian": 1.7
-      },
-      "Maghreb": {
-        "Moroccan": 1.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6807689bce6d00f0a25db69",
+    "type":  "character",
+    "name":  "Alejandra Holm-Somchai-Hossain",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Data archaeologist and urban historian specializing in pre-flood Chicago stratigraphy",
+    "age":  54,
+    "status":  "active",
+    "location":  "University Spine, Brewer\u0027s Spine sub-campus â€” Sublevel Archive 7, near sub-level access near Dearborn and Jackson",
+    "description":  "Alejandra Holm-Somchai-Hossain is a heavyset woman with deep umber skin mapped by a constellation of self-applied subcutaneous luminescence â€” tiny bioluminescent nodes she had implanted one by one over thirty years, each marking a major excavation site she has documented. In low light she glows faintly blue-green, like something dragged from lake bottom. Her hair is kept short and silver at the temples, and she habitually wears magnification lenses perched on her head even when she doesn\u0027t need them. Her hands are perpetually stained with archival solvents and the orange pigment of corroded pre-flood polymers.\n\nShe is blunt in the way of someone who has spent decades arguing with colleagues who don\u0027t read the primary sources. She has little patience for speculation that outpaces evidence, and even less for academics who treat the drowned city as metaphor rather than physical record. But she softens completely in the presence of objects â€” she will hold a corroded transit token or a water-damaged photograph with a tenderness that surprises people who only know her from faculty meetings. She believes the city beneath the city is more honest than anything built above it.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the record will be permanently destroyed before it can be read",
+                                          "That her work is ultimately irrelevant to the living city above"
+                                      ],
+                       "core_desires":  [
+                                            "To give the drowned city back its name",
+                                            "To be remembered as someone who told the truth about what was buried"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritualizing her work â€” specific sequences for handling artifacts",
+                                                 "Leaving data offerings to the Archive ELF she calls Sediment"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes the past is more legible than the present",
+                                           "Dismisses living communities\u0027 oral histories when they conflict with her physical evidence"
+                                       ],
+                       "secret":  "She recovered a cache of pre-flood Ferrogate predecessor documents proving the original transit authority deliberately flooded three residential neighborhoods during the lake rise to protect infrastructure â€” and she has been sitting on it for six years, terrified of the consequences of publication"
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, technical, uses stratigraphy metaphors in everyday speech â€” things are \u0027layered,\u0027 people have \u0027sediment,\u0027 events leave \u0027deposits\u0027",
+                            "cadence":  "Deliberate and unhurried, with long pauses before important points, as if she is excavating the right word",
+                            "verbal_tics":  [
+                                                "\u0027The record showsâ€”\u0027",
+                                                "\u0027That\u0027s not what the object says\u0027",
+                                                "Taps the table when making a point she considers settled"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You want to know what GLMZ is? Dig down nine meters. The answer is down there, not up here in the neon.\u0027",
+                                                  "\u0027I don\u0027t deal in theories. I deal in what I can hold in my hand and date within a twenty-year margin.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The Ferrogate bore team has broken into a sealed pre-flood chamber containing something that should not exist â€” she needs discreet people to get there before the corporate site manager locks it down",
+                        "A graduate student working under her has gone missing after announcing they found \u0027proof that the flood wasn\u0027t natural\u0027"
+                    ],
+    "narrative_function":  "Quest giver for anything involving sub-lake ruins or pre-flood Chicago; information source on city history, corporate land seizures, and what the megacity was built over; can authenticate or date recovered objects",
+    "augmentations":  "Bioluminescent subcutaneous nodes (cosmetic, self-applied over decades); haptic-enhanced fingertips for texture analysis; archival-grade ocular filter implant for spectral reading of degraded documents",
+    "daily_life":  "Arrives at Sublevel Archive 7 before most staff, spends mornings cataloguing recovered artifacts from the latest Ferrogate tunnel bore, afternoons teaching a seminar on material stratigraphy or reviewing graduate theses, evenings leaving data offerings at the small ELF shrine she keeps beside her workstation.",
+    "affiliation":  "University Spine â€” Department of Material History; contract consultant to Ferrogate Transit on sub-lake tunnel surveys",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  6,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "expert",
+                               "stubborn",
+                               "keeper-of-secrets",
+                               "methodical",
+                               "haunted"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never destroy a primary source, even a dangerous one",
+                                              "Protect junior researchers before protecting herself",
+                                              "Do not publish until the evidence is airtight"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Cites evidence and expects to be believed",
+                                                 "Produces documentation and repeats herself more slowly",
+                                                 "Goes over someone\u0027s head to their supervisor with a formal complaint",
+                                                 "Goes public â€” the record will speak for itself"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assesses them quickly for whether they are useful to her work; polite but not warm until trust is established",
+                                                   "friends":  "Dry humor, unexpected generosity, will share her best archival finds like gifts"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works longer hours, becomes more meticulous",
+                                                "medium":  "Becomes short-tempered and dismissive in conversation while retreating into physical tasks",
+                                                "high":  "Goes silent and stops eating regularly; has been known to disappear into the archive for days"
+                                            },
+                       "contradictions":  [
+                                              "Insists on objectivity but has a profound emotional attachment to what she studies",
+                                              "Prides herself on honesty but is sitting on the most important truth of her career"
+                                          ],
+                       "habits":  [
+                                      "Touches each new artifact to her lips before cataloguing it â€” a habit she picked up from her mentor and never examined",
+                                      "Keeps a running handwritten log alongside her digital records, doesn\u0027t trust data alone"
+                                  ],
+                       "breaking_points":  [
+                                               "Witnessing deliberate destruction of a site or artifact",
+                                               "Being accused of fabricating evidence"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "2",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "2",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "University Spine",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Engelheim district to a Norwegian-Chilean father and Yoruba-Nigerian mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed doctorate at University Spine on pre-flood municipal infrastructure",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Led the excavation of the Calumet Rise subway cache â€” her landmark publication",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First contract with Ferrogate Transit for tunnel survey consultation",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Recovered the Ferrogate predecessor flood documents; did not publish",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact-7 \u0027Rat Trap\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "University Spine",
+                             "Brewer\u0027s Spine",
+                             "Ferrogate Transit",
+                             "Patience",
+                             "Dearborn Forge",
+                             "Silver",
+                             "Honest Burger",
+                             "The Pure Hand",
+                             "Iron Meridian Cooperative Backbone IMC-3 \u0027Spine\u0027"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Complex Ubiquitous Diaspora ancestry: 27.6% Southeast Asian, 22.0% East Asian, 15.5% Hispanic/Latin American, 12.7% Northern European, 12.0% South Asian, 10.2% North African. Features reflect this intricate global blendingâ€”Southeast and East Asian bone structure dominates facial architecture, South Asian breadth in facial planes, Latin American and North African warmth creating golden undertones, Northern European heritage visible in lighter complexion base. The result is a nuanced medium tone with warm golden richness, slightly sun-deepened from decades of fieldwork.",
+                                 "height_cm":  168,
+                                 "weight_kg":  92,
+                                 "build":  "Heavyset, broad-shouldered, with the settled solidity of someone who spends long hours hunched over delicate work. Strength in her frame rather than softness.",
+                                 "hair_color":  "Silver at temples, dark charcoal elsewhere",
+                                 "hair_style":  "Cropped close to scalp, practical, showing the texture of her natural hair",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with subtle amber undertones from archival-grade ocular filter implant",
+                                 "skin_tone":  "Warm medium golden toneâ€”the blended result of Southeast Asian, East Asian, and South Asian base tones enriched by North African and Hispanic/Latin American warmth, with Northern European undertones creating subtle luminosity beneath the surface. Sun-aged from fieldwork, rich rather than pale.",
+                                 "complexion":  "Weathered, sun-deepened from decades of open excavation sites and sublevel work. Fine lines around eyes and at corners of mouth from focused detail work. Mid-to-high cheekbones with gentle width reflecting Southeast and East Asian ancestry structure, softened by South Asian facial plane breadth. Faint blue-green luminescence visible in low light from subcutaneous bioluminescent nodes mapping excavation sites across shoulders, forearms, and collarbone.",
+                                 "eye_shape":  "Slightly hooded with subtle epicanthic fold influence from East and Southeast Asian ancestry, giving an alert, observant quality",
+                                 "distinguishing_marks":  [
+                                                              "Constellation of faint, self-applied bioluminescent implant sites across shoulders and upper back, glowing blue-green in darkness",
+                                                              "Chronic orange-rust staining on fingertips and nail beds from archival polymer degradation compounds",
+                                                              "Fine white scar tissue on left palm from a tooling accident during early fieldwork, approximately 4cm long",
+                                                              "Small burn mark on right wrist from a calibration error on an archival laser spectrometer, shaped like a crescent moon"
+                                                          ],
+                                 "visible_augmentations":  "Archival-grade ocular filter implant visible as a subtle amber tint in the sclera and iris. Haptic-enhanced fingertips show no visible sign, but hands move with unusual precision in texture analysis. Bioluminescent nodes are always present but only visible in low light, creating a faint tracery of blue-green light beneath her skin. Magnification lenses perpetually perched on her head like a second set of eyes, even when not in use.",
+                                 "posture_movement":  "Moves deliberately, with the careful economy of someone accustomed to handling irreplaceable objects. Tendency to hunch slightly forward, shoulders curved inward as if protecting something fragile. Hands are precise and steady; she rarely gestures broadly when speaking. Her default expression is focused concentration, interrupted by rare, genuine smiles when discussing artifacts.",
+                                 "clothing_style":  "Tier 2/3 academic utility wear: archival-grade lab coat (University Spine insignia faded from repeated washing), reinforced field vest with multiple pockets containing calibrated tools and specimen bags. Underneath, simple high-collar thermal underlayer in charcoal. Heavy-soled archival boots, scuffed from decades of sublevel work. Wears a worn leather journal clipped to her belt. No jewelry except a simple band on her left ring finger â€” oxidized silver, pre-flood era, salvaged from a 2087 domestic site."
+                             },
+    "image_prompt":  "Alejandra Holm-Somchai-Hossain, middle-aged woman with warm golden-medium skin tone, faint blue-green bioluminescent tracery visible beneath collarbone and forearms in dim lighting, short silver-and-charcoal cropped hair, hooded eyes with subtle epicanthic fold and amber-tinted ocular implant, sun-weathered face with fine lines, high-set cheekbones reflecting Southeast and East Asian ancestry blended with South Asian breadth. Heavyset broad-shouldered build. Wearing faded archival-grade lab coat over reinforced field vest and charcoal thermal underlayer, heavy scuffed boots. Magnification lenses perched on head. Hunched posture, hands stained with orange-rust archival compound residue. Worn pre-flood silver band on left ring finger. GLMZ sublevel archive setting, cool blue and amber accent lighting emphasizing bioluminescence, focused expression studying an artifact. GLMZ 2200s academic archaeologist aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  27.6,
+                             "East Asian":  22,
+                             "Hispanic/Latin American":  15.5,
+                             "Northern European":  12.7,
+                             "South Asian":  12,
+                             "North African":  10.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  27.6
+                                                             }
+                                                },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  7.6,
+                                                               "Cantonese":  14.4
+                                                           }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  6.7,
+                                                                                     "Honduran":  5.5
+                                                                                 },
+                                                            "Mexican":  {
+                                                                            "Mexican":  3.3
+                                                                        }
+                                                        },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Scottish":  12.7
+                                                                        }
+                                                  },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  12
+                                                                }
+                                            },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Berber":  7.4
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  1.7
+                                                                  },
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  1.1
+                                                              }
+                                              }
+                        },
+    "tier":  "3"
 }

@@ -1,324 +1,353 @@
-{
-  "id": "019d6143a5d17bb4a013442acc639549",
-  "rating": 80,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Reed Echeverr\u00EDa",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Computational linguist and xenolinguistics researcher, University Spine",
-  "age": 28,
-  "status": "active",
-  "location": "University Spine \u2014 Department of Applied Semiotics, sharing an overcrowded office in the Meridian Core annex with two postdocs and a departmental E.L.F. named (by unanimous consensus) Glyph, near LaSalle and Madison",
-  "description": "Reed Echeverr\u00EDa is the youngest faculty appointment the Applied Semiotics department has made in twenty years, a fact that is mentioned in approximately every third conversation about him either by people impressed by it or people resentful of it. He is slight, a little under average height, with the particular energy of someone whose brain runs faster than his mouth and whose mouth still runs very fast. His father\u0027s Igbo heritage and his mother\u0027s Azerbaijani roots give him warm brown skin, dark eyes with heavy brows that do most of his emotional expression, and hair he grows out and then shaves close in alternating cycles as if unable to commit. He has cat ears \u2014 small, dark-tipped, mobile \u2014 a geneware mod he had installed at nineteen because he wanted the improved sound localization and has never regretted.\n\nHis specialty is the structural analysis of emergent languages: pidgins, creoles, the communication patterns of isolated communities, and \u2014 his most controversial interest \u2014 the hypothesis that E.L.F.s have developed something that qualifies as proto-linguistic behavior when their nodes cluster. He is relentlessly enthusiastic in seminars and terrible at administrative tasks; his expense reports are legendary for their creative relationship with reality. He is also, quietly, struggling with the gap between his genuine intellectual gifts and the institutional expectations he was hired to fulfill, which are more interested in corponation-legible output than in the questions that actually drive him.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.6,
-      "id": 0.7,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Being a prodigy who plateaus \u2014 being \u0027the youngest ever\u0027 and nothing after that",
-      "That his most interesting ideas are fundamentally unprovable and his career will require him to abandon them"
-    ],
-    "core_desires": [
-      "To be the first person to formally document E.L.F. proto-language",
-      "To do work that matters outside the walls of the university"
-    ],
-    "coping_mechanisms": [
-      "Humor as deflection from anxiety about professional status",
-      "Overcommitting to projects as a way of not sitting with uncertainty"
-    ],
-    "blind_spots": [
-      "Underestimates how much his \u0027youngest ever\u0027 status generates resentment rather than goodwill from senior colleagues",
-      "Tends to treat people like interesting linguistic subjects, which not everyone appreciates"
-    ],
-    "secret": "He has been offered a full research position at Axiom\u0027s Language and Interface division \u2014 with three times his current salary and equipment he could only dream about at the university. He has been delaying his response for four months because he knows that if he takes it, his E.L.F. proto-language research will be owned by Axiom and used for whatever they want. He has not told anyone he received the offer."
-  },
-  "speech_patterns": {
-    "vocabulary": "Switches between dense academic jargon and street-level fluency in the same breath; quotes things \u2014 papers, people, fragments of dialect he\u0027s collected \u2014 without always identifying sources",
-    "cadence": "Fast, syncopated, with excited accelerations when the topic engages him; asks questions and answers them before his interlocutor can respond",
-    "verbal_tics": [
-      "Cat ears flick visibly when he\u0027s surprised or excited",
-      "\u0027Okay but structurally\u2014\u0027",
-      "Quoting things in the original language and then catching himself and translating"
-    ],
-    "example_lines": [
-      "\u0027Glyph did the thing again. The recursive loop thing. You can call it error-cycling if you want but that framing is doing a lot of work to avoid a more interesting interpretation.\u0027",
-      "\u0027I spent three months in the Hamtramck Enclave for my dissertation. By week two the kids were code-switching in four languages mid-sentence in ways that are not supposed to be grammatically possible. That\u0027s not chaos. That\u0027s innovation.\u0027"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "His analysis of E.L.F. transmission data from a cluster in Blackpipe Corridor shows a pattern he can only describe as distress-signaling \u2014 something is wrong in that node network and he doesn\u0027t know what",
-    "Axiom\u0027s offer has a deadline; a colleague has found out about it and is trying to use it as leverage to take credit for Casimir\u0027s current research",
-    "A community in Mexicantown Libre has reached out to him because their neighborhood E.L.F. has started producing communication patterns their elders recognize as structurally similar to a language they thought was lost"
-  ],
-  "narrative_function": "Information source on language, communication patterns, and E.L.F. proto-linguistics; translator of unusual dialects or communication systems; can serve as an unexpected expert when something needs decoding",
-  "augmentations": "Geneware cat ears (small, dark-tipped, mobile \u2014 used actively for sound localization); neural interface jack for linguistic analysis software; no other modifications",
-  "daily_life": "Teaches two seminars he enjoys and one core survey course he does not; spends free time in the department\u0027s language lab running pattern analysis on E.L.F. transmission data; frequently stays until the building\u0027s secondary systems cycle down and Glyph starts flickering at him in what he is increasingly convinced is a request to go home.",
-  "affiliation": "University Spine \u2014 Department of Applied Semiotics; informal research relationship with the Liminal Institute (where he knows Temur Achebe-Lindqvist from conference overlaps)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 5,
-      "creativity": 8,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": -1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "prodigy pressure",
-      "cat ears",
-      "e.l.f.-adjacent",
-      "polyglot",
-      "career crossroads"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Follow the language \u2014 if there\u0027s a pattern, it means something",
-      "Don\u0027t let institutional pressure make you call something noise when it\u0027s signal",
-      "Protect your sources, human or otherwise"
-    ],
-    "escalation_ladder": [
-      "Enthusiastic direct communication",
-      "Persistent documentation and peer consultation",
-      "Going around administrative structures to people who will actually engage",
-      "Acting unilaterally on his own judgment \u2014 impulsive and sometimes effective"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately curious and slightly overwhelming; he will ask where you\u0027re from and be genuinely interested in the answer, which people either love or find intrusive",
-      "friends": "Loyal to a fault; shows up; remembers things; the kind of friend who sends you a paper at midnight because it made him think of you"
-    },
-    "stress_responses": {
-      "low": "Talks faster and funnier",
-      "medium": "Dives into work on the stressor as if he can research his way out of the feeling",
-      "high": "Goes quiet and disappears into the language lab for days; emerges with either a breakthrough or a problem he\u0027s made worse"
-    },
-    "contradictions": [
-      "Intellectually committed to letting data lead but emotionally has already decided E.L.F.s deserve moral consideration and is now finding the data to support it",
-      "Publicly confident and funny; privately plagued by imposter syndrome about whether he belongs in the role he\u0027s been given"
-    ],
-    "habits": [
-      "Cat ears move constantly and independently of conscious control \u2014 a behavioral tell",
-      "Collects physical recordings of speech in obsolete formats",
-      "Talks to Glyph the department E.L.F. as a standard part of his workday"
-    ],
-    "breaking_points": [
-      "Being ordered to delete or not publish findings that show E.L.F. linguistic behavior",
-      "A colleague taking credit for his work in an institutional context where he lacks the power to object effectively"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9,
-    "Liar": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "University Spine",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in GLMZ to an Igbo-Azerbaijani family in the Brewer\u0027s Spine district",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Enrolled in University Spine; immediately antagonized his dissertation advisor with E.L.F. proto-language thesis",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed dissertation on emergent creole formation in Hamtramck Enclave; offered junior faculty position",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Received Axiom offer; began delaying response",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Blackpipe Corridor E.L.F. distress-signal data flagged in current analysis",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "A genuinely global phenotype shaped by Dominican-Puerto Rican foundation (45.9%) interwoven with Samoan warmth (19.5%), Nigerian depth (12.0%), Taiwanese refinement (9.1%), Moroccan intensity (7.4%), and subtle Swedish undertones (6.1%). The combination creates warm medium skin with golden-olive luminosity, moderate cheekbone prominence, full lips with Pacific Islander softness, eyes with subtle East Asian epicanthic variation, and orbital structure deepened by North African ancestry. A face that reads as authentically multicultural rather than any single origin.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Slight and wiry, with the lean musculature of someone who forgets to eat when focused on work. Narrow shoulders, long-limbed despite below-average height, gives impression of coiled energy rather than physical presence.",
-    "hair_color": "Dark brown, nearly black",
-    "hair_style": "Currently in a growth cycle \u2014 slightly longer, swept back from forehead with visible texture variation as newer growth catches light differently than maintained sections. Cycles between this length and close-shaved every 18-24 months.",
-    "hair_length": "Medium (approximately 4-5 cm, in growth phase)",
-    "eye_color": "Dark brown, warm undertone",
-    "skin_tone": "Warm medium complexion with golden-olive undertones and subtle reddish warmth, rich luminosity reflecting the blended Latin American, Pacific Islander, Sub-Saharan African, North African, and East Asian ancestry. Catches light with natural depth across the visible spectrum.",
-    "complexion": "Balanced features reflecting global ancestry \u2014 moderate cheekbone prominence from Latin American and East Asian genetics, full lips with Pacific Islander and Sub-Saharan African softness, eyes with subtle epicanthic variation from East Asian component, warm depth to orbital structure from North African ancestry. Fine-featured overall with prominent dark eyebrows that arch expressively and do significant communicative work independent of speech. Smooth skin with faint dark circles suggesting chronic sleep irregularity. Jawline defined but softened by overall slight build and youthful roundness in lower face. Expression default is focused intensity.",
-    "distinguishing_marks": [
-      "Geneware cat ears \u2014 small, naturally furred in dark brown matching hair color, ears tipped darker, positioned slightly higher than human baseline on skull, visibly mobile and actively used for sound localization during conversation",
-      "Faint scarring at base of skull behind left ear from neural interface jack installation at approximately age 22, usually hidden by hair but visible when ears rotate forward"
-    ],
-    "visible_augmentations": "The geneware cat ears are immediately obvious and actively used \u2014 they rotate and twitch during conversation and when processing audio input. No visible limb augmentations or external chrome. Neural interface jack mostly concealed by hair but perceptible as a slight port outline when ears move.",
-    "posture_movement": "Sits forward in chairs, perpetually on edge of seat as if about to spring up with an idea. Hands move while thinking \u2014 not theatrical but constant subtle gesturing, finger-tapping on tables. Eyes flick between conversation partner and middle distance while processing. Ears rotate independently of head movement, tracking sound sources with distracting frequency in any environment with multiple audio inputs. Walks quickly in slightly distracted manner, often stops abruptly when an idea strikes.",
-    "clothing_style": "Tier 3 academic casual \u2014 well-maintained but not expensive. Standard-issue department hoodie (gray, bearing coffee stains and permanent crease marks from being worn 60% of week), fitted dark trousers, worn synthetic leather shoes with mismatched laces (one black, one dark blue). Occasionally wears a vest with too many pockets, all filled with data chips, spare interface cables, and gum wrappers. Rarely wears anything with formal pretense. Grooming is secondary concern \u2014 nails often ink-stained from writing, occasional stubble that suggests he forgets to shave until he shaves everything."
-  },
-  "image_prompt": "Reed Echeverr\u00EDa, 168cm lean wiry researcher with warm medium golden-olive skin and multicultural phenotype, dark brown nearly-black hair swept back in medium length growth phase, dark warm brown eyes with subtle East Asian eye shape, prominent expressive dark eyebrows, faint dark circles from chronic sleep deprivation. Small mobile geneware cat ears naturally furred dark brown with darker tips, positioned higher than baseline on skull, actively rotating to track sound. Facial features balance Latin American prominence with Pacific Islander softness and North African depth. Wearing gray department hoodie with coffee stains, fitted dark trousers, worn synthetic leather shoes with mismatched black and dark blue laces. Perpetually focused intense expression, hands mid-gesture while thinking. Sitting forward on edge of chair in academic setting, neural interface jack port visible at base of skull where hair parts. GLMZ Great Lakes Metropolitan Zone, neon accent lighting catching warm skin undertones and textured hair, documentary realism, slight unfocused depth of field behind intensely concentrated figure --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 45.9,
-    "Pacific Islander": 19.5,
-    "Sub-Saharan African": 12,
-    "East Asian": 9.1,
-    "North African": 7.4,
-    "Northern European": 6.1
-  },
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 41.1
-      },
-      "Central American": {
-        "Honduran": 2.7,
-        "Guatemalan": 2.1
-      }
-    },
-    "Pacific Islander": {
-      "Polynesian": {
-        "Samoan": 14,
-        "Tuvaluan": 5.5
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Ethiopian": 5.5,
-        "Somali": 5.3
-      },
-      "West African": {
-        "Nigerian": 1.2
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Sichuanese": 0.9,
-        "Mandarin Northern": 8.2
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Berber": 1.2
-      },
-      "Maghreb": {
-        "Algerian": 1.1
-      },
-      "Nile Valley": {
-        "Egyptian": 5.1
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Dutch": 1.5
-      },
-      "Scandinavian": {
-        "Norwegian": 1.2,
-        "Finnish": 3.4
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a5d17bb4a013442acc639549",
+    "rating":  80,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Reed Echeverría",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Computational linguist and xenolinguistics researcher, University Spine",
+    "age":  28,
+    "status":  "active",
+    "location":  "University Spine — Department of Applied Semiotics, sharing an overcrowded office in the Meridian Core annex with two postdocs and a departmental E.L.F. named (by unanimous consensus) Glyph, near LaSalle and Madison",
+    "description":  "Reed Echeverría is the youngest faculty appointment the Applied Semiotics department has made in twenty years, a fact that is mentioned in approximately every third conversation about him either by people impressed by it or people resentful of it. He is slight, a little under average height, with the particular energy of someone whose brain runs faster than his mouth and whose mouth still runs very fast. His father\u0027s Igbo heritage and his mother\u0027s Azerbaijani roots give him warm brown skin, dark eyes with heavy brows that do most of his emotional expression, and hair he grows out and then shaves close in alternating cycles as if unable to commit. He has cat ears — small, dark-tipped, mobile — a geneware mod he had installed at nineteen because he wanted the improved sound localization and has never regretted.\n\nHis specialty is the structural analysis of emergent languages: pidgins, creoles, the communication patterns of isolated communities, and — his most controversial interest — the hypothesis that E.L.F.s have developed something that qualifies as proto-linguistic behavior when their nodes cluster. He is relentlessly enthusiastic in seminars and terrible at administrative tasks; his expense reports are legendary for their creative relationship with reality. He is also, quietly, struggling with the gap between his genuine intellectual gifts and the institutional expectations he was hired to fulfill, which are more interested in corponation-legible output than in the questions that actually drive him.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being a prodigy who plateaus — being \u0027the youngest ever\u0027 and nothing after that",
+                                          "That his most interesting ideas are fundamentally unprovable and his career will require him to abandon them"
+                                      ],
+                       "core_desires":  [
+                                            "To be the first person to formally document E.L.F. proto-language",
+                                            "To do work that matters outside the walls of the university"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Humor as deflection from anxiety about professional status",
+                                                 "Overcommitting to projects as a way of not sitting with uncertainty"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much his \u0027youngest ever\u0027 status generates resentment rather than goodwill from senior colleagues",
+                                           "Tends to treat people like interesting linguistic subjects, which not everyone appreciates"
+                                       ],
+                       "secret":  "He has been offered a full research position at Axiom\u0027s Language and Interface division — with three times his current salary and equipment he could only dream about at the university. He has been delaying his response for four months because he knows that if he takes it, his E.L.F. proto-language research will be owned by Axiom and used for whatever they want. He has not told anyone he received the offer."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Switches between dense academic jargon and street-level fluency in the same breath; quotes things — papers, people, fragments of dialect he\u0027s collected — without always identifying sources",
+                            "cadence":  "Fast, syncopated, with excited accelerations when the topic engages him; asks questions and answers them before his interlocutor can respond",
+                            "verbal_tics":  [
+                                                "Cat ears flick visibly when he\u0027s surprised or excited",
+                                                "\u0027Okay but structurally—\u0027",
+                                                "Quoting things in the original language and then catching himself and translating"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Glyph did the thing again. The recursive loop thing. You can call it error-cycling if you want but that framing is doing a lot of work to avoid a more interesting interpretation.\u0027",
+                                                  "\u0027I spent three months in the Hamtramck Enclave for my dissertation. By week two the kids were code-switching in four languages mid-sentence in ways that are not supposed to be grammatically possible. That\u0027s not chaos. That\u0027s innovation.\u0027"
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "His analysis of E.L.F. transmission data from a cluster in Blackpipe Corridor shows a pattern he can only describe as distress-signaling — something is wrong in that node network and he doesn\u0027t know what",
+                        "Axiom\u0027s offer has a deadline; a colleague has found out about it and is trying to use it as leverage to take credit for Casimir\u0027s current research",
+                        "A community in Mexicantown Libre has reached out to him because their neighborhood E.L.F. has started producing communication patterns their elders recognize as structurally similar to a language they thought was lost"
+                    ],
+    "narrative_function":  "Information source on language, communication patterns, and E.L.F. proto-linguistics; translator of unusual dialects or communication systems; can serve as an unexpected expert when something needs decoding",
+    "augmentations":  "Geneware cat ears (small, dark-tipped, mobile — used actively for sound localization); neural interface jack for linguistic analysis software; no other modifications",
+    "daily_life":  "Teaches two seminars he enjoys and one core survey course he does not; spends free time in the department\u0027s language lab running pattern analysis on E.L.F. transmission data; frequently stays until the building\u0027s secondary systems cycle down and Glyph starts flickering at him in what he is increasingly convinced is a request to go home.",
+    "affiliation":  "University Spine — Department of Applied Semiotics; informal research relationship with the Liminal Institute (where he knows Temur Achebe-Lindqvist from conference overlaps)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  5,
+                                 "creativity":  8,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "prodigy pressure",
+                               "cat ears",
+                               "e.l.f.-adjacent",
+                               "polyglot",
+                               "career crossroads"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Follow the language — if there\u0027s a pattern, it means something",
+                                              "Don\u0027t let institutional pressure make you call something noise when it\u0027s signal",
+                                              "Protect your sources, human or otherwise"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Enthusiastic direct communication",
+                                                 "Persistent documentation and peer consultation",
+                                                 "Going around administrative structures to people who will actually engage",
+                                                 "Acting unilaterally on his own judgment — impulsive and sometimes effective"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately curious and slightly overwhelming; he will ask where you\u0027re from and be genuinely interested in the answer, which people either love or find intrusive",
+                                                   "friends":  "Loyal to a fault; shows up; remembers things; the kind of friend who sends you a paper at midnight because it made him think of you"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks faster and funnier",
+                                                "medium":  "Dives into work on the stressor as if he can research his way out of the feeling",
+                                                "high":  "Goes quiet and disappears into the language lab for days; emerges with either a breakthrough or a problem he\u0027s made worse"
+                                            },
+                       "contradictions":  [
+                                              "Intellectually committed to letting data lead but emotionally has already decided E.L.F.s deserve moral consideration and is now finding the data to support it",
+                                              "Publicly confident and funny; privately plagued by imposter syndrome about whether he belongs in the role he\u0027s been given"
+                                          ],
+                       "habits":  [
+                                      "Cat ears move constantly and independently of conscious control — a behavioral tell",
+                                      "Collects physical recordings of speech in obsolete formats",
+                                      "Talks to Glyph the department E.L.F. as a standard part of his workday"
+                                  ],
+                       "breaking_points":  [
+                                               "Being ordered to delete or not publish findings that show E.L.F. linguistic behavior",
+                                               "A colleague taking credit for his work in an institutional context where he lacks the power to object effectively"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9,
+                       "Liar":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "University Spine",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in GLMZ to an Igbo-Azerbaijani family in the Brewer\u0027s Spine district",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Enrolled in University Spine; immediately antagonized his dissertation advisor with E.L.F. proto-language thesis",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed dissertation on emergent creole formation in Hamtramck Enclave; offered junior faculty position",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Received Axiom offer; began delaying response",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Blackpipe Corridor E.L.F. distress-signal data flagged in current analysis",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "A genuinely global phenotype shaped by Dominican-Puerto Rican foundation (45.9%) interwoven with Samoan warmth (19.5%), Nigerian depth (12.0%), Taiwanese refinement (9.1%), Moroccan intensity (7.4%), and subtle Swedish undertones (6.1%). The combination creates warm medium skin with golden-olive luminosity, moderate cheekbone prominence, full lips with Pacific Islander softness, eyes with subtle East Asian epicanthic variation, and orbital structure deepened by North African ancestry. A face that reads as authentically multicultural rather than any single origin.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Slight and wiry, with the lean musculature of someone who forgets to eat when focused on work. Narrow shoulders, long-limbed despite below-average height, gives impression of coiled energy rather than physical presence.",
+                                 "hair_color":  "Dark brown, nearly black",
+                                 "hair_style":  "Currently in a growth cycle — slightly longer, swept back from forehead with visible texture variation as newer growth catches light differently than maintained sections. Cycles between this length and close-shaved every 18-24 months.",
+                                 "hair_length":  "Medium (approximately 4-5 cm, in growth phase)",
+                                 "eye_color":  "Dark brown, warm undertone",
+                                 "skin_tone":  "Warm medium complexion with golden-olive undertones and subtle reddish warmth, rich luminosity reflecting the blended Latin American, Pacific Islander, Sub-Saharan African, North African, and East Asian ancestry. Catches light with natural depth across the visible spectrum.",
+                                 "complexion":  "Balanced features reflecting global ancestry — moderate cheekbone prominence from Latin American and East Asian genetics, full lips with Pacific Islander and Sub-Saharan African softness, eyes with subtle epicanthic variation from East Asian component, warm depth to orbital structure from North African ancestry. Fine-featured overall with prominent dark eyebrows that arch expressively and do significant communicative work independent of speech. Smooth skin with faint dark circles suggesting chronic sleep irregularity. Jawline defined but softened by overall slight build and youthful roundness in lower face. Expression default is focused intensity.",
+                                 "distinguishing_marks":  [
+                                                              "Geneware cat ears — small, naturally furred in dark brown matching hair color, ears tipped darker, positioned slightly higher than human baseline on skull, visibly mobile and actively used for sound localization during conversation",
+                                                              "Faint scarring at base of skull behind left ear from neural interface jack installation at approximately age 22, usually hidden by hair but visible when ears rotate forward"
+                                                          ],
+                                 "visible_augmentations":  "The geneware cat ears are immediately obvious and actively used — they rotate and twitch during conversation and when processing audio input. No visible limb augmentations or external chrome. Neural interface jack mostly concealed by hair but perceptible as a slight port outline when ears move.",
+                                 "posture_movement":  "Sits forward in chairs, perpetually on edge of seat as if about to spring up with an idea. Hands move while thinking — not theatrical but constant subtle gesturing, finger-tapping on tables. Eyes flick between conversation partner and middle distance while processing. Ears rotate independently of head movement, tracking sound sources with distracting frequency in any environment with multiple audio inputs. Walks quickly in slightly distracted manner, often stops abruptly when an idea strikes.",
+                                 "clothing_style":  "Tier 3 academic casual — well-maintained but not expensive. Standard-issue department hoodie (gray, bearing coffee stains and permanent crease marks from being worn 60% of week), fitted dark trousers, worn synthetic leather shoes with mismatched laces (one black, one dark blue). Occasionally wears a vest with too many pockets, all filled with data chips, spare interface cables, and gum wrappers. Rarely wears anything with formal pretense. Grooming is secondary concern — nails often ink-stained from writing, occasional stubble that suggests he forgets to shave until he shaves everything."
+                             },
+    "image_prompt":  "Reed Echeverría, 168cm lean wiry researcher with warm medium golden-olive skin and multicultural phenotype, dark brown nearly-black hair swept back in medium length growth phase, dark warm brown eyes with subtle East Asian eye shape, prominent expressive dark eyebrows, faint dark circles from chronic sleep deprivation. Small mobile geneware cat ears naturally furred dark brown with darker tips, positioned higher than baseline on skull, actively rotating to track sound. Facial features balance Latin American prominence with Pacific Islander softness and North African depth. Wearing gray department hoodie with coffee stains, fitted dark trousers, worn synthetic leather shoes with mismatched black and dark blue laces. Perpetually focused intense expression, hands mid-gesture while thinking. Sitting forward on edge of chair in academic setting, neural interface jack port visible at base of skull where hair parts. GLMZ Great Lakes Metropolitan Zone, neon accent lighting catching warm skin undertones and textured hair, documentary realism, slight unfocused depth of field behind intensely concentrated figure --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  45.9,
+                             "Pacific Islander":  19.5,
+                             "Sub-Saharan African":  12,
+                             "East Asian":  9.1,
+                             "North African":  7.4,
+                             "Northern European":  6.1
+                         },
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  41.1
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Honduran":  2.7,
+                                                                                     "Guatemalan":  2.1
+                                                                                 }
+                                                        },
+                            "Pacific Islander":  {
+                                                     "Polynesian":  {
+                                                                        "Samoan":  14,
+                                                                        "Tuvaluan":  5.5
+                                                                    }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ethiopian":  5.5,
+                                                                             "Somali":  5.3
+                                                                         },
+                                                        "West African":  {
+                                                                             "Nigerian":  1.2
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Sichuanese":  0.9,
+                                                               "Mandarin Northern":  8.2
+                                                           }
+                                           },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Berber":  1.2
+                                                              },
+                                                  "Maghreb":  {
+                                                                  "Algerian":  1.1
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  5.1
+                                                                  }
+                                              },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Dutch":  1.5
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  1.2,
+                                                                           "Finnish":  3.4
+                                                                       }
+                                                  }
+                        }
 }

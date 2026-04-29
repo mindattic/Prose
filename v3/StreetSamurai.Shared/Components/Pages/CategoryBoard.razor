@@ -137,7 +137,8 @@ else
         };
         if (Access.CanWrite)
         {
-            list.Add(new("bi-journal-richtext", "/stories", "Stories",        0, true));
+            list.Add(new("bi-book",             "/books",   "Bookshelf",      0, true));
+            list.Add(new("bi-collection",       "/series",  "Series",         0, true));
             list.Add(new("bi-lightbulb",        "/facts",   "Fact Discovery", 0, true));
         }
         return list;

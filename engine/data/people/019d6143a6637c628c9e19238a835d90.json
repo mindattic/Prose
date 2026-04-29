@@ -1,244 +1,267 @@
-{
-  "id": "019d6143a6637c628c9e19238a835d90",
-  "type": "character",
-  "name": "Donatello Karimi",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Death midwife and grief ritualist",
-  "age": 38,
-  "status": "active",
-  "location": "Irkalla, the Passage House on Undertow Row, near Western and Division",
-  "description": "Donatello Karimi is a small woman who dresses exclusively in undyed natural fabrics, a deliberate choice that makes her look slightly out of place in every room she enters — soft and pale against the city's chrome and neon. Her hair is kept short and natural, and she wears no cosmetic geneware, though she could afford minimal modifications. Her one concession to body alteration is a set of patterned irises �� concentric rings of amber and dark brown — that she had done in honor of her Yoruba grandmother's description of the eye of god. Her hands are her most expressive feature: large, warm, always slightly in motion, and the first thing the dying reach for.\n\nShe came to death midwifery after her brother died alone in a Tessera medical pod, his passing logged and timestamped and unremarked. She was twenty-two. She spent three years studying under an older practitioner in the Canopy before establishing the Passage House in Irkalla, which is considered by most city planners to be an unfavorable address for anyone seeking comfort. Donatello Karimi disagrees. She thinks the dying deserve to be somewhere honest about what it is. The Passage House sees four to eight clients a week — some terminal, some simply old, some not yet dying but preparing — and she has never turned anyone away for inability to pay.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.9,
-      "id": 0.4,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "dying in the same isolated, unmarked way her brother did",
-      "losing the capacity to be present — becoming numb from accumulated grief"
-    ],
-    "core_desires": [
-      "for every person to die feeling witnessed",
-      "to build something lasting enough to outlive her"
-    ],
-    "coping_mechanisms": [
-      "strict separation of her grief-work from her personal emotional life — she processes death at work and keeps home separate",
-      "physical ritual: she washes her hands in a specific sequence after every passing"
-    ],
-    "blind_spots": [
-      "she sometimes projects her brother's death onto her clients' families, assuming more dysfunction than exists",
-      "she undervalues her own need for care and becomes resentful without knowing why"
-    ],
-    "secret": "She has a terminal diagnosis — a slow cardiac condition that her haptic hand-sensitivity enhancement is quietly compensating for. She has told no one. She is not ready to be the one receiving care."
-  },
-  "speech_patterns": {
-    "vocabulary": "Plain, unadorned, but precisely chosen; avoids euphemism for death — says 'dying' and 'death' and 'body' without flinching; occasionally slips into Yoruba endearments",
-    "cadence": "Unhurried and low; holds silences without discomfort; lets others finish every sentence",
-    "verbal_tics": [
-      "says 'yes' softly as an acknowledgment while listening, not necessarily agreement",
-      "uses 'we' when discussing death rituals even when speaking about her solo practice"
-    ],
-    "example_lines": [
-      "'What did she love? Tell me something specific. Not what she was proud of — what she loved.'",
-      "'We do not make death comfortable. We make the person comfortable inside it. There is a difference.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client died before completing their final legal wishes and someone is now contesting the estate — Ẹniọlá witnessed the dying person's verbal instructions and needs help ensuring they are honored",
-    "A family has hired her but the dying person is asking her in private to carry a message to someone the family has forbidden from entering — and the message contains information that could destabilize more than just the family"
-  ],
-  "narrative_function": "Emotional grounding figure; can provide information about recent deaths in Irkalla and surrounding areas; quest giver for honoring someone's final wishes; confronts players with questions about mortality and meaning",
-  "augmentations": "Patterned irises (cosmetic geneware, amber/brown concentric rings); low-grade haptic sensitivity enhancement in both hands (medical-grade, for pulse and tremor detection)",
-  "daily_life": "Mornings are for correspondence and intake — she answers every message personally; afternoons and evenings she spends at bedsides, conducting whatever rituals the dying person and their family practice or wish to practice.",
-  "affiliation": "Independent; loosely recognized by the Irkalla Community Council; occasional referrals from Aurochs Medical Complex palliative ward",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 4,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 4
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 9,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "death work",
-      "grief specialist",
-      "terminal secret",
-      "community service",
-      "emotionally durable"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "the dying person's wishes take precedence over the family's comfort",
-      "never perform a ritual she does not believe she can do with genuine presence"
-    ],
-    "escalation_ladder": [
-      "gentle redirection",
-      "direct statement of the dying person's rights",
-      "asking the disruptive party to leave",
-      "calling in the community council as witness"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Opens with a question rather than information; disarmingly direct about death; makes people feel she has time for them",
-      "friends": "Rare and deeply private; shows love through showing up without being asked"
-    },
-    "stress_responses": {
-      "low": "Cleans the Passage House meticulously",
-      "medium": "Goes for long walks in Irkalla at hours when she knows she will not be recognized",
-      "high": "Sits alone in the room where she conducts the most passings and counts her own heartbeats until she stabilizes"
-    },
-    "contradictions": [
-      "ministers to others facing death with extraordinary presence while actively avoiding processing her own diagnosis"
-    ],
-    "habits": [
-      "washes hands in a specific seven-step sequence after each passing",
-      "keeps a small unlabeled jar of soil from her grandmother's described homeland on her windowsill",
-      "never eats during working hours"
-    ],
-    "breaking_points": [
-      "witnessing a preventable death caused by institutional neglect",
-      "being forced to perform a ritual she knows the dying person did not want"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Irkalla",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact-7 'Rat Trap'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Grandmother",
-    "Canopy Station Nine",
-    "The Iron Lotus",
-    "Tessera Overwatch Platform OWP-3 'Panopticon'",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Tessera Corponation",
-    "Irkalla",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Canopy",
-    "Honest Burger",
-    "The Pure Hand",
-    "The Pale Mile"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Middle Eastern (61.2%) with significant Sub-Saharan African (37.3%) ancestry and trace South Asian (1.5%) heritage. Her genetic blend creates a striking East African-Levantine phenotype with warm, deep richness—high cheekbones and refined bone structure characteristic of the Levant combined with the luminous depth of Sub-Saharan ancestry. Her features speak to the historical crossroads of trade and migration across the Arabian Peninsula and Horn of Africa.",
-    "height_cm": 158,
-    "weight_kg": 52,
-    "build": "Small-framed and lean, with a dancer's posture despite her age—shoulders open, spine naturally aligned. Her frame carries no excess but reads as strong rather than fragile; the musculature of someone who moves with intention.",
-    "hair_color": "Natural black with silver threading at the temples and along the crown",
-    "hair_style": "Cropped close to the scalp, revealing the contours of her skull; edges maintained with precision but without vanity",
-    "hair_length": "Short",
-    "eye_color": "Augmented: concentric rings of amber (outer) transitioning to dark brown (inner), creating a hypnotic iris pattern that catches light distinctly",
-    "skin_tone": "Deep warm brown with rich undertones—a radiant blend of Middle Eastern and Sub-Saharan heritage, with subtle amber and golden notes that seem to glow from within. The tone is luminous yet grounded, speaking to sun-rooted ancestry across multiple latitudes.",
-    "complexion": "Unlined for her age in some places, deeply lined around her eyes and mouth in others—the geography of witnessing. High cheekbones with strong, elegant definition reflecting Levantine structure, a refined nose bridge with subtle breadth, and warm-toned skin that reads as both luminous and matte. Clear and unadorned, with no cosmetic geneware. Her hands show faint discoloration from repeated contact with dying skin; her nails are trimmed short and unpainted.",
-    "distinguishing_marks": [
-      "Thin white scar running from the base of her left ear to her jawline, barely visible unless light catches it at an angle—from a childhood accident with industrial machinery",
-      "Small burn mark on the inside of her right forearm, pale and old, shaped vaguely like a teapot spout—from her first apartment, a faulty appliance, never treated cosmetically",
-      "Faint tracery of ritual scarification on her upper back (three parallel lines on each side of the spine, barely raised), done in private honor of her grandmother"
-    ],
-    "visible_augmentations": "Her irises are visibly non-human—the concentric ring pattern is precise and luminescent in certain light, immediately recognizable as geneware. Otherwise, no visible augmentations; her haptic enhancements are subcutaneous and undetectable without medical scanning.",
-    "posture_movement": "She moves with economy and grace, never rushing. Her gestures are fluid but deliberate—hands speaking as much as her voice. She has a habit of tilting her head slightly when listening, as if the angle helps her hear better. She sits deeply, as if anchoring herself to the space.",
-    "clothing_style": "Exclusively natural, undyed fabrics—linen, cotton, hemp, raw silk in cream, ivory, pale grey, and soft brown. Loose-fitting layered tunics, wide-leg trousers, soft leather sandals worn thin. A long shawl in oatmeal linen, always present, worn wrapped or draped. No logos, no synthetic fibers, no visible branding. Her clothes look handmade or sourced from artisan vendors—deliberately counter to the city's neon-soaked aesthetic. Small pouch worn at her hip containing ritual objects: stones, dried herbs, water in a carved bone vessel. She wears a single piece of jewelry: a thin silver band on her right ring finger, engraved with script."
-  },
-  "image_prompt": "Portrait of Donatello Karimi, 158cm tall East African-Levantine woman with deep warm brown skin glowing with golden undertones, short natural black hair with silver at temples, augmented amber-to-brown concentric ring irises catching light hypnotically. Lean dancer's frame in cream linen layered tunic and wide-leg trousers, oatmeal linen shawl draped across shoulders. Thin white scar visible along left jawline, faint ritual scarification on upper back visible through open neckline. Silver engraved ring on right hand. Small hip pouch with ritual objects. Standing with graceful posture, head tilted slightly, in soft warm diffuse light contrasting against cool megacity backdrop of 2226 Great Lakes Metropolitan Zone. Deeply lined eyes and mouth showing lived wisdom. Natural, undyed aesthetic creates striking contrast with neon surroundings. Photorealistic, dignified, meditative. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 61.2,
-    "Sub-Saharan African": 37.3,
-    "South Asian": 1.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Kuwaiti": 61.2
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zimbabwean": 8.2,
-        "Botswanan": 9.6
-      },
-      "West African": {
-        "Ghanaian": 19.5
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 0.2
-      },
-      "Sri Lankan": {
-        "Sinhalese": 1
-      },
-      "Nepali": {
-        "Nepali": 0.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6637c628c9e19238a835d90",
+    "type":  "character",
+    "name":  "Donatello Karimi",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Death midwife and grief ritualist",
+    "age":  38,
+    "status":  "active",
+    "location":  "Irkalla, the Passage House on Undertow Row, near Western and Division",
+    "description":  "Donatello Karimi is a small woman who dresses exclusively in undyed natural fabrics, a deliberate choice that makes her look slightly out of place in every room she enters â€” soft and pale against the city\u0027s chrome and neon. Her hair is kept short and natural, and she wears no cosmetic geneware, though she could afford minimal modifications. Her one concession to body alteration is a set of patterned irises ï¿½ï¿½ concentric rings of amber and dark brown â€” that she had done in honor of her Yoruba grandmother\u0027s description of the eye of god. Her hands are her most expressive feature: large, warm, always slightly in motion, and the first thing the dying reach for.\n\nShe came to death midwifery after her brother died alone in a Tessera medical pod, his passing logged and timestamped and unremarked. She was twenty-two. She spent three years studying under an older practitioner in the Canopy before establishing the Passage House in Irkalla, which is considered by most city planners to be an unfavorable address for anyone seeking comfort. Donatello Karimi disagrees. She thinks the dying deserve to be somewhere honest about what it is. The Passage House sees four to eight clients a week â€” some terminal, some simply old, some not yet dying but preparing â€” and she has never turned anyone away for inability to pay.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "dying in the same isolated, unmarked way her brother did",
+                                          "losing the capacity to be present â€” becoming numb from accumulated grief"
+                                      ],
+                       "core_desires":  [
+                                            "for every person to die feeling witnessed",
+                                            "to build something lasting enough to outlive her"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "strict separation of her grief-work from her personal emotional life â€” she processes death at work and keeps home separate",
+                                                 "physical ritual: she washes her hands in a specific sequence after every passing"
+                                             ],
+                       "blind_spots":  [
+                                           "she sometimes projects her brother\u0027s death onto her clients\u0027 families, assuming more dysfunction than exists",
+                                           "she undervalues her own need for care and becomes resentful without knowing why"
+                                       ],
+                       "secret":  "She has a terminal diagnosis â€” a slow cardiac condition that her haptic hand-sensitivity enhancement is quietly compensating for. She has told no one. She is not ready to be the one receiving care."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Plain, unadorned, but precisely chosen; avoids euphemism for death â€” says \u0027dying\u0027 and \u0027death\u0027 and \u0027body\u0027 without flinching; occasionally slips into Yoruba endearments",
+                            "cadence":  "Unhurried and low; holds silences without discomfort; lets others finish every sentence",
+                            "verbal_tics":  [
+                                                "says \u0027yes\u0027 softly as an acknowledgment while listening, not necessarily agreement",
+                                                "uses \u0027we\u0027 when discussing death rituals even when speaking about her solo practice"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027What did she love? Tell me something specific. Not what she was proud of â€” what she loved.\u0027",
+                                                  "\u0027We do not make death comfortable. We make the person comfortable inside it. There is a difference.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client died before completing their final legal wishes and someone is now contesting the estate â€” áº¸niá»lÃ¡ witnessed the dying person\u0027s verbal instructions and needs help ensuring they are honored",
+                        "A family has hired her but the dying person is asking her in private to carry a message to someone the family has forbidden from entering â€” and the message contains information that could destabilize more than just the family"
+                    ],
+    "narrative_function":  "Emotional grounding figure; can provide information about recent deaths in Irkalla and surrounding areas; quest giver for honoring someone\u0027s final wishes; confronts players with questions about mortality and meaning",
+    "augmentations":  "Patterned irises (cosmetic geneware, amber/brown concentric rings); low-grade haptic sensitivity enhancement in both hands (medical-grade, for pulse and tremor detection)",
+    "daily_life":  "Mornings are for correspondence and intake â€” she answers every message personally; afternoons and evenings she spends at bedsides, conducting whatever rituals the dying person and their family practice or wish to practice.",
+    "affiliation":  "Independent; loosely recognized by the Irkalla Community Council; occasional referrals from Aurochs Medical Complex palliative ward",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  4,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  4
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  9,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "death work",
+                               "grief specialist",
+                               "terminal secret",
+                               "community service",
+                               "emotionally durable"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "the dying person\u0027s wishes take precedence over the family\u0027s comfort",
+                                              "never perform a ritual she does not believe she can do with genuine presence"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "gentle redirection",
+                                                 "direct statement of the dying person\u0027s rights",
+                                                 "asking the disruptive party to leave",
+                                                 "calling in the community council as witness"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Opens with a question rather than information; disarmingly direct about death; makes people feel she has time for them",
+                                                   "friends":  "Rare and deeply private; shows love through showing up without being asked"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Cleans the Passage House meticulously",
+                                                "medium":  "Goes for long walks in Irkalla at hours when she knows she will not be recognized",
+                                                "high":  "Sits alone in the room where she conducts the most passings and counts her own heartbeats until she stabilizes"
+                                            },
+                       "contradictions":  [
+                                              "ministers to others facing death with extraordinary presence while actively avoiding processing her own diagnosis"
+                                          ],
+                       "habits":  [
+                                      "washes hands in a specific seven-step sequence after each passing",
+                                      "keeps a small unlabeled jar of soil from her grandmother\u0027s described homeland on her windowsill",
+                                      "never eats during working hours"
+                                  ],
+                       "breaking_points":  [
+                                               "witnessing a preventable death caused by institutional neglect",
+                                               "being forced to perform a ritual she knows the dying person did not want"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Irkalla",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact-7 \u0027Rat Trap\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Grandmother",
+                             "Canopy Station Nine",
+                             "The Iron Lotus",
+                             "Tessera Overwatch Platform OWP-3 \u0027Panopticon\u0027",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "Tessera Corponation",
+                             "Irkalla",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Canopy",
+                             "Honest Burger",
+                             "The Pure Hand",
+                             "The Pale Mile"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Middle Eastern (61.2%) with significant Sub-Saharan African (37.3%) ancestry and trace South Asian (1.5%) heritage. Her genetic blend creates a striking East African-Levantine phenotype with warm, deep richnessâ€”high cheekbones and refined bone structure characteristic of the Levant combined with the luminous depth of Sub-Saharan ancestry. Her features speak to the historical crossroads of trade and migration across the Arabian Peninsula and Horn of Africa.",
+                                 "height_cm":  158,
+                                 "weight_kg":  52,
+                                 "build":  "Small-framed and lean, with a dancer\u0027s posture despite her ageâ€”shoulders open, spine naturally aligned. Her frame carries no excess but reads as strong rather than fragile; the musculature of someone who moves with intention.",
+                                 "hair_color":  "Natural black with silver threading at the temples and along the crown",
+                                 "hair_style":  "Cropped close to the scalp, revealing the contours of her skull; edges maintained with precision but without vanity",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Augmented: concentric rings of amber (outer) transitioning to dark brown (inner), creating a hypnotic iris pattern that catches light distinctly",
+                                 "skin_tone":  "Deep warm brown with rich undertonesâ€”a radiant blend of Middle Eastern and Sub-Saharan heritage, with subtle amber and golden notes that seem to glow from within. The tone is luminous yet grounded, speaking to sun-rooted ancestry across multiple latitudes.",
+                                 "complexion":  "Unlined for her age in some places, deeply lined around her eyes and mouth in othersâ€”the geography of witnessing. High cheekbones with strong, elegant definition reflecting Levantine structure, a refined nose bridge with subtle breadth, and warm-toned skin that reads as both luminous and matte. Clear and unadorned, with no cosmetic geneware. Her hands show faint discoloration from repeated contact with dying skin; her nails are trimmed short and unpainted.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar running from the base of her left ear to her jawline, barely visible unless light catches it at an angleâ€”from a childhood accident with industrial machinery",
+                                                              "Small burn mark on the inside of her right forearm, pale and old, shaped vaguely like a teapot spoutâ€”from her first apartment, a faulty appliance, never treated cosmetically",
+                                                              "Faint tracery of ritual scarification on her upper back (three parallel lines on each side of the spine, barely raised), done in private honor of her grandmother"
+                                                          ],
+                                 "visible_augmentations":  "Her irises are visibly non-humanâ€”the concentric ring pattern is precise and luminescent in certain light, immediately recognizable as geneware. Otherwise, no visible augmentations; her haptic enhancements are subcutaneous and undetectable without medical scanning.",
+                                 "posture_movement":  "She moves with economy and grace, never rushing. Her gestures are fluid but deliberateâ€”hands speaking as much as her voice. She has a habit of tilting her head slightly when listening, as if the angle helps her hear better. She sits deeply, as if anchoring herself to the space.",
+                                 "clothing_style":  "Exclusively natural, undyed fabricsâ€”linen, cotton, hemp, raw silk in cream, ivory, pale grey, and soft brown. Loose-fitting layered tunics, wide-leg trousers, soft leather sandals worn thin. A long shawl in oatmeal linen, always present, worn wrapped or draped. No logos, no synthetic fibers, no visible branding. Her clothes look handmade or sourced from artisan vendorsâ€”deliberately counter to the city\u0027s neon-soaked aesthetic. Small pouch worn at her hip containing ritual objects: stones, dried herbs, water in a carved bone vessel. She wears a single piece of jewelry: a thin silver band on her right ring finger, engraved with script."
+                             },
+    "image_prompt":  "Portrait of Donatello Karimi, 158cm tall East African-Levantine woman with deep warm brown skin glowing with golden undertones, short natural black hair with silver at temples, augmented amber-to-brown concentric ring irises catching light hypnotically. Lean dancer\u0027s frame in cream linen layered tunic and wide-leg trousers, oatmeal linen shawl draped across shoulders. Thin white scar visible along left jawline, faint ritual scarification on upper back visible through open neckline. Silver engraved ring on right hand. Small hip pouch with ritual objects. Standing with graceful posture, head tilted slightly, in soft warm diffuse light contrasting against cool megacity backdrop of 2226 Great Lakes Metropolitan Zone. Deeply lined eyes and mouth showing lived wisdom. Natural, undyed aesthetic creates striking contrast with neon surroundings. Photorealistic, dignified, meditative. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  61.2,
+                             "Sub-Saharan African":  37.3,
+                             "South Asian":  1.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Kuwaiti":  61.2
+                                                                 }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  8.2,
+                                                                                 "Botswanan":  9.6
+                                                                             },
+                                                        "West African":  {
+                                                                             "Ghanaian":  19.5
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  0.2
+                                                                },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  1
+                                                               },
+                                                "Nepali":  {
+                                                               "Nepali":  0.3
+                                                           }
+                                            }
+                        },
+    "tier":  "3"
 }

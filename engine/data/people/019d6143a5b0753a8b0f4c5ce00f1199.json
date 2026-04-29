@@ -1,286 +1,315 @@
-{
-  "id": "019d6143a5b0753a8b0f4c5ce00f1199",
-  "rating": 70,
-  "type": "character",
-  "name": "Carlota Magnúsdóttir",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Barber and braider, runs a one-chair shop in Hamtramck Enclave",
-  "age": 52,
-  "status": "active",
-  "location": "Hamtramck Enclave — her shop, Scalp Meridian, is wedged between a dumpling stall and a prayer-data kiosk on Volt Street, near Western and Division",
-  "description": "Carlota Magnúsdóttir is a broad-shouldered woman with hands that move like water — fast, precise, never wasted. Her skin is deep brown with a warm undertone, and she keeps her own hair in an elaborate crown of interlocked locs threaded with copper wire and small LED beads that pulse amber when she's working. She has a tattoo of a scissors-and-comb motif along her left forearm that she got at nineteen from a street artist in what used to be called Nairobi before the Corponation Accords. Her eyes are the grey-green of old lake glass, an inheritance from her Hungarian grandmother whose name she barely remembers.\n\nShe is patient in the way that only people who have survived a lot of nonsense can be patient — a deep, deliberate stillness that makes customers feel held. She will not rush a cut, will not shortchange a scalp massage, will not tolerate disrespect in her chair. She talks constantly while she works, a warm river of local gossip, neighborhood history, and unsolicited wisdom that customers either love or eventually learn to love. She has cut the hair of three generations of some Hamtramck families and considers this her real legacy.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.2,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "Dying before she can teach someone everything she knows",
-      "Hamtramck Enclave being bought out and hollowed by a Corponation"
-    ],
-    "core_desires": [
-      "To be genuinely remembered, not just mourned",
-      "To keep the neighborhood as a place where people can breathe"
-    ],
-    "coping_mechanisms": [
-      "Staying in motion — idle hands make her anxious",
-      "Turning worry into practical action (fixing something, cleaning something)"
-    ],
-    "blind_spots": [
-      "She sometimes treats adults like children who need managing, especially younger clients",
-      "She underestimates how much her own grief still runs her decisions"
-    ],
-    "secret": "Her son emigrated to a Zheng-Dao labor compound on the northern shelf twelve years ago under a work contract and has never contacted her. She tells customers he moved to a better district. She has sent him forty-seven letters through a data-runner she pays monthly. None have been answered."
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm, unpretentious, layered with Swahili loanwords and old Magyar phrases her mother used; comfortable with technical hair and scalp terminology",
-    "cadence": "Unhurried and melodic, rises at the end of observations like she's offering them rather than stating them",
-    "verbal_tics": [
-      "'You hear me?'",
-      "'Mmm, ndiyo' (yes, okay) when thinking",
-      "Clicks her tongue before disagreeing"
-    ],
-    "example_lines": [
-      "'Sit down, let me look at you. No, properly sit — your neck is fighting me already.'",
-      "'This block has lost six shops in two years. You know what that is? That is someone deciding we are not worth the trouble of keeping. Mmm, ndiyo. I intend to be very much worth the trouble.'"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A teenage client whose data-chip she accidentally scanned during a cut contains something someone powerful wants erased — and now people are asking Ambrosia uncomfortable questions",
-    "The E.L.F. in her shop wall has started giving warnings in the form of static patterns on the mirror — she needs someone literate in digital-spirit communication to interpret them",
-    "The Merchants' Mutual is fracturing over whether to accept a Tessera 'revitalization' offer, and Ambrosia is the swing vote"
-  ],
-  "narrative_function": "Community hub and information broker — she knows everyone in Hamtramck Enclave and several adjacent districts. Quest giver for neighborhood-scale problems, reliable source of background lore, a safe adult presence for younger characters who need grounding.",
-  "augmentations": "Tactile-feedback fingertip pads (medical grade, helps detect scalp conditions and hair texture anomalies); reading glasses with a built-in magnification overlay she got secondhand from an Aurochs Medical surplus sale",
-  "daily_life": "Opens at 07:00, takes her last client at 20:00, six days a week. She spends Sunday cleaning her tools, watching old footage of traditional East African hair ceremonies on her battered tablet, and leaving small data-packets at the E.L.F. shrine built into the wall behind her shampoo station.",
-  "affiliation": "Independent; loosely affiliated with the Hamtramck Enclave Merchants' Mutual",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": -2,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community anchor",
-      "information hub",
-      "skilled tradesperson",
-      "grief-carrier",
-      "neighborhood historian"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Protect the neighborhood first, personal cost second",
-      "Never put scissors down angry — always finish the cut",
-      "Trust earned through consistency, not words"
-    ],
-    "escalation_ladder": [
-      "Redirect with humor",
-      "State her position clearly and once",
-      "Go quiet and finish what she's doing before responding",
-      "Ask the person to leave — calmly, finally"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm but appraising — she asks three questions and listens very carefully to how they're answered",
-      "friends": "Loud, teasing, fierce loyalty; will feed you and argue with you in the same breath"
-    },
-    "stress_responses": {
-      "low": "Works faster, talks more",
-      "medium": "Goes quiet, hands still moving but eyes distant",
-      "high": "Sends everyone out, closes the shop, sits with her tools until she can think straight"
-    },
-    "contradictions": [
-      "Believes deeply in community interdependence but shoulders every burden alone",
-      "Gives excellent advice about letting go while holding her grief in both hands like a stone"
-    ],
-    "habits": [
-      "Wipes her scissors on her apron three times before and after every cut",
-      "Leaves a small curl of swept hair at the base of the E.L.F. shrine every evening",
-      "Hums without noticing she's doing it"
-    ],
-    "breaking_points": [
-      "Anyone threatening a client in her chair",
-      "Being told the Enclave 'can't be saved' — she will make this personal"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.7,
-    "Opportunist": 0.7,
-    "Info Broker": 0.7,
-    "Artist": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Hamtramck Enclave to a Hungarian-Kenyan family who ran a food stall",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Apprenticed to an older barber on Volt Street, learned traditional braiding alongside modern styling",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Opened Scalp Meridian after her mentor retired; took over the lease for almost nothing",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Her son Darian signed a Zheng-Dao labor contract and departed; last verified contact",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Elected to the Merchants' Mutual steering committee, has served three terms",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Predominantly East Asian (57.4%) with substantial Southeast Asian (28.6%) and Sub-Saharan African (14.0%) ancestry; the genetic blend creates a striking phenotype—East Asian bone structure and eye shape dominant, with Southeast Asian warmth and African heritage contributing to facial breadth and feature prominence; warm deep brown skin with golden-bronze undertones reflects the harmonic blend of all three ancestral regions",
-    "height_cm": 173,
-    "weight_kg": 82,
-    "build": "Broad-shouldered and solidly muscled through the arms and core from decades of precise, repetitive work; carries weight with density rather than softness",
-    "hair_color": "Dark brown-black with copper wire threading and amber LED beads",
-    "hair_style": "Elaborate crown of interlocked locs, each bead-adorned section deliberate and maintained with ritualistic care",
-    "hair_length": "Long (shoulder-length and past)",
-    "eye_color": "Deep brown with warm amber undertones, reflecting light with subtle luminosity",
-    "skin_tone": "Warm deep brown with golden-bronze undertones; the layered ancestry creates a complexion with remarkable depth—darker in shadowed areas, warm honey-gold where light catches; suggests the harmonic blend of East Asian, Southeast Asian, and African heritage",
-    "complexion": "Unlined face for her age; minimal makeup; skin shows the health of someone who has learned self-care through necessity; faint smile lines around eyes and mouth indicating chronic warmth; prominent cheekbones with moderate width reflecting the blend of East Asian angularity enhanced by African heritage breadth; nose with gentle bridge and well-defined nostrils characteristic of African ancestry; facial structure balancing East Asian angularity with Southeast Asian softness and African feature prominence; monolid and hooded eye characteristic of East Asian ancestry; overall face shows the balanced blend of her three major genetic regions",
-    "distinguishing_marks": [
-      "Scissors-and-comb motif tattoo running along the entire left forearm in deep indigo, applied by a street artist in Nairobi at age nineteen",
-      "Faint scar tissue on the knuckles of both hands—old, pale, from decades of tool work and a few neighborhood altercations best left unmentioned"
-    ],
-    "visible_augmentations": "Medical-grade tactile-feedback pads visible at fingertips (slight pearlescent sheen under skin at thumb and first two fingers, both hands); reading glasses with magnification overlay and subtle LED activation lights in the frame corners (worn on a beaded chain around her neck when not in use)",
-    "posture_movement": "Moves with economical grace—no wasted motion; stands with weight balanced, ready to shift; hands are constantly in motion even at rest, fingers finding rhythm in air; head tilts when listening, a habit of attentive care; walks with the steady pace of someone who has nowhere to rush",
-    "clothing_style": "Tier 3-4 practical comfort: well-maintained linen tunics or cotton button-ups in earth tones and jewel hues, often with sleeves rolled to mid-forearm to show the tattoo; neutral-colored work pants with deep pockets; soft leather slip-ons worn thin at the heel; a worn leather apron with small tool slots, patched and re-stitched multiple times; silver and brass jewelry—bangles, rings set with semi-precious stones, a small pendant combining Christian and indigenous Kenyan motifs"
-  },
-  "image_prompt": "Carlota Magnúsdóttir, GLMZ, 173cm tall with broad shoulders and dense musculature; striking mixed heritage phenotype with warm deep brown skin and golden-bronze undertones; monolid deep brown eyes with amber luminescence; prominent East Asian cheekbones blended with African breadth and feature prominence; elaborate shoulder-length crown of interlocked locs adorned with copper wire threading and amber LED beads; scissors-and-comb indigo tattoo visible on left forearm; reading glasses with LED frame lights worn on beaded chain; pearlescent tactile-feedback pads visible at fingertips; worn leather apron with tool slots over earth-tone linen tunic with rolled sleeves; silver and brass bangles and semi-precious stone rings; faint smile lines indicating chronic warmth; economical posture with hands in constant motion; warm, attentive presence; Great Lakes Metropolitan Zone workshop setting with soft amber and cool blue lighting, depth of field emphasizing her focused, capable presence --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "East Asian": 57.4,
-    "Southeast Asian": 28.6,
-    "Sub-Saharan African": 14
-  },
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 9.7
-      },
-      "Chinese": {
-        "Shanghainese": 47.7
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 11.1
-      },
-      "Cambodian": {
-        "Khmer": 17.5
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Angolan": 7.7,
-        "Cameroonian": 3.8
-      },
-      "East African": {
-        "Kenyan": 2.5
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a5b0753a8b0f4c5ce00f1199",
+    "rating":  70,
+    "type":  "character",
+    "name":  "Carlota MagnÃºsdÃ³ttir",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Barber and braider, runs a one-chair shop in Hamtramck Enclave",
+    "age":  52,
+    "status":  "active",
+    "location":  "Hamtramck Enclave â€” her shop, Scalp Meridian, is wedged between a dumpling stall and a prayer-data kiosk on Volt Street, near Western and Division",
+    "description":  "Carlota MagnÃºsdÃ³ttir is a broad-shouldered woman with hands that move like water â€” fast, precise, never wasted. Her skin is deep brown with a warm undertone, and she keeps her own hair in an elaborate crown of interlocked locs threaded with copper wire and small LED beads that pulse amber when she\u0027s working. She has a tattoo of a scissors-and-comb motif along her left forearm that she got at nineteen from a street artist in what used to be called Nairobi before the Corponation Accords. Her eyes are the grey-green of old lake glass, an inheritance from her Hungarian grandmother whose name she barely remembers.\n\nShe is patient in the way that only people who have survived a lot of nonsense can be patient â€” a deep, deliberate stillness that makes customers feel held. She will not rush a cut, will not shortchange a scalp massage, will not tolerate disrespect in her chair. She talks constantly while she works, a warm river of local gossip, neighborhood history, and unsolicited wisdom that customers either love or eventually learn to love. She has cut the hair of three generations of some Hamtramck families and considers this her real legacy.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Dying before she can teach someone everything she knows",
+                                          "Hamtramck Enclave being bought out and hollowed by a Corponation"
+                                      ],
+                       "core_desires":  [
+                                            "To be genuinely remembered, not just mourned",
+                                            "To keep the neighborhood as a place where people can breathe"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Staying in motion â€” idle hands make her anxious",
+                                                 "Turning worry into practical action (fixing something, cleaning something)"
+                                             ],
+                       "blind_spots":  [
+                                           "She sometimes treats adults like children who need managing, especially younger clients",
+                                           "She underestimates how much her own grief still runs her decisions"
+                                       ],
+                       "secret":  "Her son emigrated to a Zheng-Dao labor compound on the northern shelf twelve years ago under a work contract and has never contacted her. She tells customers he moved to a better district. She has sent him forty-seven letters through a data-runner she pays monthly. None have been answered."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm, unpretentious, layered with Swahili loanwords and old Magyar phrases her mother used; comfortable with technical hair and scalp terminology",
+                            "cadence":  "Unhurried and melodic, rises at the end of observations like she\u0027s offering them rather than stating them",
+                            "verbal_tics":  [
+                                                "\u0027You hear me?\u0027",
+                                                "\u0027Mmm, ndiyo\u0027 (yes, okay) when thinking",
+                                                "Clicks her tongue before disagreeing"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Sit down, let me look at you. No, properly sit â€” your neck is fighting me already.\u0027",
+                                                  "\u0027This block has lost six shops in two years. You know what that is? That is someone deciding we are not worth the trouble of keeping. Mmm, ndiyo. I intend to be very much worth the trouble.\u0027"
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A teenage client whose data-chip she accidentally scanned during a cut contains something someone powerful wants erased â€” and now people are asking Ambrosia uncomfortable questions",
+                        "The E.L.F. in her shop wall has started giving warnings in the form of static patterns on the mirror â€” she needs someone literate in digital-spirit communication to interpret them",
+                        "The Merchants\u0027 Mutual is fracturing over whether to accept a Tessera \u0027revitalization\u0027 offer, and Ambrosia is the swing vote"
+                    ],
+    "narrative_function":  "Community hub and information broker â€” she knows everyone in Hamtramck Enclave and several adjacent districts. Quest giver for neighborhood-scale problems, reliable source of background lore, a safe adult presence for younger characters who need grounding.",
+    "augmentations":  "Tactile-feedback fingertip pads (medical grade, helps detect scalp conditions and hair texture anomalies); reading glasses with a built-in magnification overlay she got secondhand from an Aurochs Medical surplus sale",
+    "daily_life":  "Opens at 07:00, takes her last client at 20:00, six days a week. She spends Sunday cleaning her tools, watching old footage of traditional East African hair ceremonies on her battered tablet, and leaving small data-packets at the E.L.F. shrine built into the wall behind her shampoo station.",
+    "affiliation":  "Independent; loosely affiliated with the Hamtramck Enclave Merchants\u0027 Mutual",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community anchor",
+                               "information hub",
+                               "skilled tradesperson",
+                               "grief-carrier",
+                               "neighborhood historian"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Protect the neighborhood first, personal cost second",
+                                              "Never put scissors down angry â€” always finish the cut",
+                                              "Trust earned through consistency, not words"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Redirect with humor",
+                                                 "State her position clearly and once",
+                                                 "Go quiet and finish what she\u0027s doing before responding",
+                                                 "Ask the person to leave â€” calmly, finally"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm but appraising â€” she asks three questions and listens very carefully to how they\u0027re answered",
+                                                   "friends":  "Loud, teasing, fierce loyalty; will feed you and argue with you in the same breath"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works faster, talks more",
+                                                "medium":  "Goes quiet, hands still moving but eyes distant",
+                                                "high":  "Sends everyone out, closes the shop, sits with her tools until she can think straight"
+                                            },
+                       "contradictions":  [
+                                              "Believes deeply in community interdependence but shoulders every burden alone",
+                                              "Gives excellent advice about letting go while holding her grief in both hands like a stone"
+                                          ],
+                       "habits":  [
+                                      "Wipes her scissors on her apron three times before and after every cut",
+                                      "Leaves a small curl of swept hair at the base of the E.L.F. shrine every evening",
+                                      "Hums without noticing she\u0027s doing it"
+                                  ],
+                       "breaking_points":  [
+                                               "Anyone threatening a client in her chair",
+                                               "Being told the Enclave \u0027can\u0027t be saved\u0027 â€” she will make this personal"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.7,
+                       "Opportunist":  0.7,
+                       "Info Broker":  0.7,
+                       "Artist":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Hamtramck Enclave to a Hungarian-Kenyan family who ran a food stall",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Apprenticed to an older barber on Volt Street, learned traditional braiding alongside modern styling",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Opened Scalp Meridian after her mentor retired; took over the lease for almost nothing",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Her son Darian signed a Zheng-Dao labor contract and departed; last verified contact",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Elected to the Merchants\u0027 Mutual steering committee, has served three terms",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Predominantly East Asian (57.4%) with substantial Southeast Asian (28.6%) and Sub-Saharan African (14.0%) ancestry; the genetic blend creates a striking phenotypeâ€”East Asian bone structure and eye shape dominant, with Southeast Asian warmth and African heritage contributing to facial breadth and feature prominence; warm deep brown skin with golden-bronze undertones reflects the harmonic blend of all three ancestral regions",
+                                 "height_cm":  173,
+                                 "weight_kg":  82,
+                                 "build":  "Broad-shouldered and solidly muscled through the arms and core from decades of precise, repetitive work; carries weight with density rather than softness",
+                                 "hair_color":  "Dark brown-black with copper wire threading and amber LED beads",
+                                 "hair_style":  "Elaborate crown of interlocked locs, each bead-adorned section deliberate and maintained with ritualistic care",
+                                 "hair_length":  "Long (shoulder-length and past)",
+                                 "eye_color":  "Deep brown with warm amber undertones, reflecting light with subtle luminosity",
+                                 "skin_tone":  "Warm deep brown with golden-bronze undertones; the layered ancestry creates a complexion with remarkable depthâ€”darker in shadowed areas, warm honey-gold where light catches; suggests the harmonic blend of East Asian, Southeast Asian, and African heritage",
+                                 "complexion":  "Unlined face for her age; minimal makeup; skin shows the health of someone who has learned self-care through necessity; faint smile lines around eyes and mouth indicating chronic warmth; prominent cheekbones with moderate width reflecting the blend of East Asian angularity enhanced by African heritage breadth; nose with gentle bridge and well-defined nostrils characteristic of African ancestry; facial structure balancing East Asian angularity with Southeast Asian softness and African feature prominence; monolid and hooded eye characteristic of East Asian ancestry; overall face shows the balanced blend of her three major genetic regions",
+                                 "distinguishing_marks":  [
+                                                              "Scissors-and-comb motif tattoo running along the entire left forearm in deep indigo, applied by a street artist in Nairobi at age nineteen",
+                                                              "Faint scar tissue on the knuckles of both handsâ€”old, pale, from decades of tool work and a few neighborhood altercations best left unmentioned"
+                                                          ],
+                                 "visible_augmentations":  "Medical-grade tactile-feedback pads visible at fingertips (slight pearlescent sheen under skin at thumb and first two fingers, both hands); reading glasses with magnification overlay and subtle LED activation lights in the frame corners (worn on a beaded chain around her neck when not in use)",
+                                 "posture_movement":  "Moves with economical graceâ€”no wasted motion; stands with weight balanced, ready to shift; hands are constantly in motion even at rest, fingers finding rhythm in air; head tilts when listening, a habit of attentive care; walks with the steady pace of someone who has nowhere to rush",
+                                 "clothing_style":  "Tier 3-4 practical comfort: well-maintained linen tunics or cotton button-ups in earth tones and jewel hues, often with sleeves rolled to mid-forearm to show the tattoo; neutral-colored work pants with deep pockets; soft leather slip-ons worn thin at the heel; a worn leather apron with small tool slots, patched and re-stitched multiple times; silver and brass jewelryâ€”bangles, rings set with semi-precious stones, a small pendant combining Christian and indigenous Kenyan motifs"
+                             },
+    "image_prompt":  "Carlota MagnÃºsdÃ³ttir, GLMZ, 173cm tall with broad shoulders and dense musculature; striking mixed heritage phenotype with warm deep brown skin and golden-bronze undertones; monolid deep brown eyes with amber luminescence; prominent East Asian cheekbones blended with African breadth and feature prominence; elaborate shoulder-length crown of interlocked locs adorned with copper wire threading and amber LED beads; scissors-and-comb indigo tattoo visible on left forearm; reading glasses with LED frame lights worn on beaded chain; pearlescent tactile-feedback pads visible at fingertips; worn leather apron with tool slots over earth-tone linen tunic with rolled sleeves; silver and brass bangles and semi-precious stone rings; faint smile lines indicating chronic warmth; economical posture with hands in constant motion; warm, attentive presence; Great Lakes Metropolitan Zone workshop setting with soft amber and cool blue lighting, depth of field emphasizing her focused, capable presence --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "East Asian":  57.4,
+                             "Southeast Asian":  28.6,
+                             "Sub-Saharan African":  14
+                         },
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  9.7
+                                                          },
+                                               "Chinese":  {
+                                                               "Shanghainese":  47.7
+                                                           }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  11.1
+                                                                },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  17.5
+                                                                  }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Angolan":  7.7,
+                                                                                "Cameroonian":  3.8
+                                                                            },
+                                                        "East African":  {
+                                                                             "Kenyan":  2.5
+                                                                         }
+                                                    }
+                        }
 }

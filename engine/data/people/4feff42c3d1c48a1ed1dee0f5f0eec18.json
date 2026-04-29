@@ -1,212 +1,208 @@
-{
-  "id": "4feff42c3d1c48a1ed1dee0f5f0eec18",
-  "name": "Amadou Keïta-Suzuki",
-  "type": "character",
-  "aliases": [],
-  "role": "Corporate investigator — Meridian Corporate Intelligence Group, Tier 4-5 clients exclusively",
-  "description": "Amadou Keïta-Suzuki is the person corporations call when they suspect the rot is coming from inside. Her firm, Meridian Corporate Intelligence Group, serves exclusively Tier 4 and Tier 5 clients — the corponations and the mega-wealthy individuals who orbit them. She investigates espionage, internal theft, executive misconduct, and the kind of byzantine corporate betrayals that can cost billions of Quanta and topple divisions.\n\nSouth African-Norwegian heritage, forty-one years old, with dark skin, sharp cheekbones, and eyes that evaluate everything they see like an appraiser assessing collateral. She wears severity like other people wear cologne. Her rise from the Gray Zone to the Spires is a story she never tells because it would reveal vulnerabilities she's spent decades armoring over. What matters is the present: she is the best corporate investigator in GLMZ, and everyone who matters knows it.\n\nHer methods are exhaustive and merciless. When she's hired to find a mole, the mole is found. When she's hired to prove fraud, the fraud is proven. She has never failed to deliver a result, though the results aren't always what her clients wanted to hear — she has, on three occasions, identified the client themselves as the source of the problem they hired her to investigate. She presents these findings with the same glacial professionalism as any other report, which is why she gets hired again despite making powerful people very uncomfortable.",
-  "affiliation": "Meridian Corporate Intelligence Group — a boutique firm serving Tier 4-5 clients",
-  "tier": "3",
-  "location": "A fortified suite on the 87th floor of the Tessera-adjacent Pinnacle Tower, Spires district, near Lake Shore Drive and Division",
-  "specialization": "Corporate espionage investigation — identifying moles, data breaches, and intellectual property theft",
-  "methods": [
-    "Behavioral analysis of employee populations to identify anomalous patterns",
-    "Honeypot operations — planting false data to see who takes the bait",
-    "Deep financial forensics — following money through shell companies and crypto channels",
-    "Counter-surveillance sweeps using military-grade detection equipment",
-    "Social network mapping to identify pressure points and compromised relationships"
-  ],
-  "notable_cases": [
-    "Identified a seventeen-year mole inside Axiom's quantum computing division who had been passing trade secrets to Zheng-Dao through a dead-drop system embedded in a children's game app",
-    "Uncovered a scheme where three Tessera executives were running a shadow company that siphoned Φ2.3 billion in R&D funds over four years",
-    "Proved that a supposed data breach was actually an inside job orchestrated by the company's own security chief to justify a budget increase"
-  ],
-  "equipment": [
-    "Military-grade counter-surveillance suite — detects and neutralizes listening devices, hidden cameras, and passive BCI scanners",
-    "Quantum-encrypted communications terminal — theoretically unbreakable",
-    "Access to corporate database cross-reference tools available only to licensed investigators",
-    "A wardrobe that costs more than a the Gray Zone apartment per outfit — appearances are investigative tools in the Spires",
-    "Retinal scanner spoofing device for accessing secured corporate facilities during investigations"
-  ],
-  "personality": "Thandiwe is cold the way a scalpel is cold — it's not personal, it's functional. She grew up Tier 2 and clawed her way to the Spires through intelligence, ruthlessness, and an absolute refusal to be impressed by anyone's title or wealth. She treats every person she meets as a potential subject of investigation and maintains files on her own clients because trust is a vulnerability she can't afford. She is impeccably professional, never drinks at business functions, laughs rarely and never spontaneously, and has a reputation for destroying careers with the same emotional affect as someone filing paperwork. Under the armor, she is deeply lonely and aware that she has optimized herself for success at the cost of everything else.",
-  "speech_patterns": {
-    "vocabulary": "Precise and economical. Every sentence is load-bearing. She does not use intensifiers. She does not hedge. When she is uncertain she says so in one word.",
-    "cadence": "Unhurried. She speaks at the pace of someone who knows the other person will wait. Silences are not awkward — they are deliberate. She lets silence do the work interrogators use questions for.",
-    "verbal_tics": [
-      "A single repeated word when she wants you to understand something has changed: 'Again.' Pause. Then the actual point.",
-      "She names the thing she's not saying before deciding not to say it — 'There's something here I'm not going to tell you, and you should factor that in.'",
-      "Never says 'I think' or 'I believe.' She says 'The evidence is' or 'My read is.' The distinction matters to her.",
-      "When she's finished with a topic she says 'Next.' Not dismissively. Clinically."
-    ],
-    "example_lines": [
-      "\"The job is clean. The client is not. You should know that going in.\"",
-      "\"There's something here I'm not going to tell you. Factor that in.\"",
-      "\"Again. — He didn't hire me to find the mole. He hired me to find out if the mole exists. There's a difference, and the difference is what you're going to get paid for.\""
-    ],
-    "subtext": "Every interaction is information exchange. She is always evaluating and never entirely off-duty. When she's asking a question she already knows part of the answer. When she offers something, she's watching what you do with it.",
-    "under_pressure": "Gets quieter. The pauses get longer. She stops completing sentences she's started, mid-phrase, when she's recalibrating. This is the tell — most people don't recognize it until they've seen it twice.",
-    "avoidances": [
-      "Does not discuss her Shelf origins in operational context — this information is leverage she doesn't hand out",
-      "Will not use the word 'trust' without visible distaste",
-      "Does not explain her reasoning unless the explanation is itself part of the job"
-    ],
-    "intimacy_register": "With the very few people she actually trusts: shorter sentences, occasionally a question that isn't tactical. She might use someone's name. She almost never uses names."
-  },
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.65,
-      "ideal": 0.55,
-      "id": 0.25,
-      "shadow": 0.7,
-      "mask": 0.85,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "That a client will eventually commission an investigation that leads back to her own past",
-      "That the person she's become — efficient, unreadable, precise — is not armor but the actual person, and there's nothing underneath",
-      "That her Shelf origins will surface in a context she cannot control"
-    ],
-    "core_desires": [
-      "Complete information — the full picture of who controls what in GLMZ, before someone uses that picture against her",
-      "A case that cannot be solved — the intellectual challenge she has not yet encountered",
-      "To one day close the Bergstrom-Osei file with something she can live with"
-    ],
-    "coping_mechanisms": [
-      "Treating every interaction as data collection — reduces emotional exposure by making it professional",
-      "Physical routine as cognitive reset — she runs 8km before every significant meeting",
-      "Maintaining a private archive of everything she has ever found, on the logic that the record is the only thing that survives the person"
-    ],
-    "blind_spots": [
-      "Believes her neutrality is principled when some of it is avoidance — she chooses clients who can't threaten her, not clients who need her most",
-      "Cannot see that her reputation for finding the truth has made her a target for anyone who needs the truth suppressed",
-      "Has never investigated herself"
-    ],
-    "secret": "Three of her notable cases produced results that she presented accurately to her clients. What she has never disclosed: a fourth case, uninvestigated, that connects two of her current clients to each other in a way neither knows about. She has held this finding for eight months, telling herself she is waiting for the right moment. She is not waiting for the right moment. She is afraid of what following it through would require."
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never presents findings she cannot fully substantiate — her credibility is the only asset that cannot be replaced",
-      "Keeps concurrent investigations structurally siloed — no client knows the names of other clients",
-      "Will identify a client as the source of a problem if the evidence supports it — has done this three times",
-      "Does not take cases below Tier 3 — the exposure risk is not proportional to the fee"
-    ],
-    "interpersonal_modes": {
-      "corporate_clients": "Professional warmth precisely calibrated to the client's ego requirements. She has files on all of them. She does not tell them this.",
-      "witnesses_subjects": "Patient, attentive, almost warm — people talk to her because she appears to listen, which she does, but not in the way they believe",
-      "rivals": "Respectful professional distance. She does not engage in competitive positioning. Her results speak."
-    },
-    "stress_responses": {
-      "low": "Goes quieter. Answers get shorter. Completes her 8km run in silence.",
-      "high": "Becomes entirely still and entirely focused. No small talk. No softening. The performance drops completely."
-    },
-    "contradictions": [
-      "Built a career on full disclosure to clients while holding a multi-client-connecting finding for eight months",
-      "Investigates everyone around her but has never turned the same tools on herself"
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Director Kaito Bergstrom-Osei",
-      "type": "primary client / subject of private ongoing assessment",
-      "description": "Axiom's head of internal affairs — her largest and most demanding client. She has begun a private file on him that she has not disclosed to anyone. The case she brought him last quarter was complete. The file she has kept back is not.",
-      "emotional_core": "Professional dependency she finds increasingly uncomfortable",
-      "story_tension": "He is her biggest client. He may also be the person she is about to destroy. She has not resolved which of these facts takes precedence."
-    },
-    {
-      "name": "Vesna Medina-Appiah",
-      "type": "former protege / now competitor",
-      "description": "Left her firm to start a competing practice two years ago. She monitors Vesna's operations — not from resentment, but because a former protege who knows her methods and her clients is a specific class of risk that requires ongoing assessment.",
-      "emotional_core": "The closest she came to mentorship — she is not certain she did it correctly",
-      "story_tension": "Vesna is building something that may eventually be better than what she built. She is deciding whether to view this as a threat or as evidence that she taught well."
-    }
-  ],
-  "story_hooks": [
-    "Kaito Bergstrom-Osei hires her to investigate a data breach — and the trail leads directly into the private file she has been holding back for eight months",
-    "One of her current clients has commissioned an investigation into the other client she holds the connecting finding on — she is now the only person in the city who can see the full shape of what's coming",
-    "Vesna Medina-Appiah calls with a case referral. It's the kind of case Vesna knows she can't turn down. Vesna also knows this is a trap.",
-    "Someone has begun investigating Amadou Keïta-Suzuki with exactly the methods she uses herself"
-  ],
-  "tags": [
-    "person",
-    "character",
-    "private_investigator",
-    "corporate_espionage",
-    "spires",
-    "tier_4",
-    "elite",
-    "sentient",
-    "human"
-  ],
-  "carried_weapons": [
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "WELLSPRING",
-    "The Heritage Vault",
-    "Tessera Corponation",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Déjà Vu",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "GLMZ",
-    "Arcturus MN-3 'Digger'"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "Amadou carries a striking genetic tapestry: 43.8% East Asian ancestry provides defined cheekbones, eye depth, and precise facial proportions; 34.5% Sub-Saharan African heritage contributes warm golden undertones to her skin and strong bone structure; 21.7% Northern European ancestry adds subtle softness to her jawline and complexity to her overall phenotype. The result is a face of beautiful ambiguity—luminous warm brown skin with golden-honey undertones that seem to shift in different light, unmarred and meticulously maintained. Her features defy easy categorization, reading as elegantly cosmopolitan rather than rooted to any single region.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Lean and angular, musculature defined by discipline rather than bulk. Efficient rather than imposing — a frame built for sustained focus and precise movement, not intimidation.",
-    "hair_color": "Natural black with silver threading at the temples",
-    "hair_style": "Pulled back in a tight, functional braid or wrapped in a sleek low knot",
-    "hair_length": "Medium (shoulder-length when loose)",
-    "eye_color": "Deep brown with warm amber undertones, unnervingly steady",
-    "skin_tone": "Rich warm brown with golden-honey undertones, luminous and unmarred. The complexion reflects the balanced blend of her East Asian, Sub-Saharan African, and Northern European ancestry, suggesting both careful genetics and meticulous self-care.",
-    "complexion": "Strong, defined cheekbones reflecting African and East Asian heritage structure, precise jawline with subtle softness characteristic of her mixed genetics, minimal expression lines despite age—a face trained not to broadcast emotion. Eyes set with characteristic depth, warm-toned iris with amber undertones. Skin condition is immaculate; grooming is ritualistic and flawless.",
-    "distinguishing_marks": [
-      "A thin white scar running 4cm along her left jawline, barely visible under professional lighting, likely from a blade or industrial accident",
-      "Faint linear scarring on both wrists (inner forearm), barely 2mm wide, consistent with subcutaneous implant installation"
-    ],
-    "visible_augmentations": "None visible. Her augmentations, if present, are subcutaneous or subdermal — no chrome, no LED optics, no external modifications. This is deliberate: she is designed to blend into Tier 1 boardrooms.",
-    "posture_movement": "Upright and economical. She moves with the controlled precision of someone who has trained muscle memory into a weapon. Her gaze lingers on details others miss. She does not fidget, does not shift weight, does not telegraph intent through body language — presence through stillness.",
-    "clothing_style": "Tier 1 corporate formal: tailored midnight-blue or charcoal wool blazers, crisp white or ivory shirt-blouses, high-waisted black trousers with clean lines, minimal jewelry (a single platinum ring, understated). Footwear is expensive and silent — leather loafers or minimalist heels that allow her to move without sound. Her bag is a slim leather briefcase, well-maintained, no logos. Nothing is worn; everything is maintained. She dresses like someone who has learned that visibility is a liability and invisibility is a luxury."
-  },
-  "image_prompt": "Amadou Keïta-Suzuki, 178cm tall, lean angular build, standing in corporate boardroom lighting. Luminous warm brown skin with golden undertones, strong defined cheekbones blending East Asian and African heritage, subtle jawline softness, deep brown eyes with amber undertones. Black hair with silver temples pulled into tight functional braid. Immaculate grooming, thin white scar along left jawline barely visible. Wearing tailored midnight-blue wool blazer, crisp white shirt-blouse, high-waisted black trousers, expensive silent leather loafers. Single platinum ring. Upright posture, controlled precision, face trained not to broadcast emotion. Unnervingly steady gaze. GLMZ, GLMZ aesthetic, Tier 1 boardroom setting, cool professional lighting with warm undertones catching her skin. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 43.8,
-    "Sub-Saharan African": 34.5,
-    "Northern European": 21.7
-  },
-  "ancestry_harmonized": true,
-  "ancestry_detail": {
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 13.5
-      },
-      "Korean": {
-        "Korean": 30.3
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Kenyan": 34.5
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Irish": 4.9
-      },
-      "Scandinavian": {
-        "Swedish": 5.3,
-        "Norwegian": 8.6
-      },
-      "Germanic": {
-        "Swiss German": 1.5,
-        "Dutch": 1.4
-      }
-    }
-  },
-  "operating_territory": {
-    "home_turf": "A fortified suite on the 87th floor of the Tessera-adjacent Pinnacle Tower"
-  }
+﻿{
+    "id":  "4feff42c3d1c48a1ed1dee0f5f0eec18",
+    "name":  "Amadou KeÃ¯ta-Suzuki",
+    "type":  "character",
+    "aliases":  [
+
+                ],
+    "role":  "Corporate investigator â€” Meridian Corporate Intelligence Group, Tier 4-5 clients exclusively",
+    "description":  "Amadou KeÃ¯ta-Suzuki is the person corporations call when they suspect the rot is coming from inside. Her firm, Meridian Corporate Intelligence Group, serves exclusively Tier 4 and Tier 5 clients â€” the corponations and the mega-wealthy individuals who orbit them. She investigates espionage, internal theft, executive misconduct, and the kind of byzantine corporate betrayals that can cost billions of Quanta and topple divisions.\n\nSouth African-Norwegian heritage, forty-one years old, with dark skin, sharp cheekbones, and eyes that evaluate everything they see like an appraiser assessing collateral. She wears severity like other people wear cologne. Her rise from the Gray Zone to the Spires is a story she never tells because it would reveal vulnerabilities she\u0027s spent decades armoring over. What matters is the present: she is the best corporate investigator in GLMZ, and everyone who matters knows it.\n\nHer methods are exhaustive and merciless. When she\u0027s hired to find a mole, the mole is found. When she\u0027s hired to prove fraud, the fraud is proven. She has never failed to deliver a result, though the results aren\u0027t always what her clients wanted to hear â€” she has, on three occasions, identified the client themselves as the source of the problem they hired her to investigate. She presents these findings with the same glacial professionalism as any other report, which is why she gets hired again despite making powerful people very uncomfortable.",
+    "affiliation":  "Meridian Corporate Intelligence Group â€” a boutique firm serving Tier 4-5 clients",
+    "tier":  "3",
+    "location":  "A fortified suite on the 87th floor of the Tessera-adjacent Pinnacle Tower, Spires district, near Lake Shore Drive and Division",
+    "specialization":  "Corporate espionage investigation â€” identifying moles, data breaches, and intellectual property theft",
+    "methods":  [
+                    "Behavioral analysis of employee populations to identify anomalous patterns",
+                    "Honeypot operations â€” planting false data to see who takes the bait",
+                    "Deep financial forensics â€” following money through shell companies and crypto channels",
+                    "Counter-surveillance sweeps using military-grade detection equipment",
+                    "Social network mapping to identify pressure points and compromised relationships"
+                ],
+    "notable_cases":  [
+                          "Identified a seventeen-year mole inside Axiom\u0027s quantum computing division who had been passing trade secrets to Zheng-Dao through a dead-drop system embedded in a children\u0027s game app",
+                          "Uncovered a scheme where three Tessera executives were running a shadow company that siphoned Î¦2.3 billion in R\u0026D funds over four years",
+                          "Proved that a supposed data breach was actually an inside job orchestrated by the company\u0027s own security chief to justify a budget increase"
+                      ],
+    "equipment":  [
+                      "Military-grade counter-surveillance suite â€” detects and neutralizes listening devices, hidden cameras, and passive BCI scanners",
+                      "Quantum-encrypted communications terminal â€” theoretically unbreakable",
+                      "Access to corporate database cross-reference tools available only to licensed investigators",
+                      "A wardrobe that costs more than a the Gray Zone apartment per outfit â€” appearances are investigative tools in the Spires",
+                      "Retinal scanner spoofing device for accessing secured corporate facilities during investigations"
+                  ],
+    "personality":  "Thandiwe is cold the way a scalpel is cold â€” it\u0027s not personal, it\u0027s functional. She grew up Tier 2 and clawed her way to the Spires through intelligence, ruthlessness, and an absolute refusal to be impressed by anyone\u0027s title or wealth. She treats every person she meets as a potential subject of investigation and maintains files on her own clients because trust is a vulnerability she can\u0027t afford. She is impeccably professional, never drinks at business functions, laughs rarely and never spontaneously, and has a reputation for destroying careers with the same emotional affect as someone filing paperwork. Under the armor, she is deeply lonely and aware that she has optimized herself for success at the cost of everything else.",
+    "speech_patterns":  {
+                            "vocabulary":  "Precise and economical. Every sentence is load-bearing. She does not use intensifiers. She does not hedge. When she is uncertain she says so in one word.",
+                            "cadence":  "Unhurried. She speaks at the pace of someone who knows the other person will wait. Silences are not awkward â€” they are deliberate. She lets silence do the work interrogators use questions for.",
+                            "verbal_tics":  [
+                                                "A single repeated word when she wants you to understand something has changed: \u0027Again.\u0027 Pause. Then the actual point.",
+                                                "She names the thing she\u0027s not saying before deciding not to say it â€” \u0027There\u0027s something here I\u0027m not going to tell you, and you should factor that in.\u0027",
+                                                "Never says \u0027I think\u0027 or \u0027I believe.\u0027 She says \u0027The evidence is\u0027 or \u0027My read is.\u0027 The distinction matters to her.",
+                                                "When she\u0027s finished with a topic she says \u0027Next.\u0027 Not dismissively. Clinically."
+                                            ],
+                            "example_lines":  [
+                                                  "\"The job is clean. The client is not. You should know that going in.\"",
+                                                  "\"There\u0027s something here I\u0027m not going to tell you. Factor that in.\"",
+                                                  "\"Again. â€” He didn\u0027t hire me to find the mole. He hired me to find out if the mole exists. There\u0027s a difference, and the difference is what you\u0027re going to get paid for.\""
+                                              ],
+                            "subtext":  "Every interaction is information exchange. She is always evaluating and never entirely off-duty. When she\u0027s asking a question she already knows part of the answer. When she offers something, she\u0027s watching what you do with it.",
+                            "under_pressure":  "Gets quieter. The pauses get longer. She stops completing sentences she\u0027s started, mid-phrase, when she\u0027s recalibrating. This is the tell â€” most people don\u0027t recognize it until they\u0027ve seen it twice.",
+                            "avoidances":  [
+                                               "Does not discuss her Shelf origins in operational context â€” this information is leverage she doesn\u0027t hand out",
+                                               "Will not use the word \u0027trust\u0027 without visible distaste",
+                                               "Does not explain her reasoning unless the explanation is itself part of the job"
+                                           ],
+                            "intimacy_register":  "With the very few people she actually trusts: shorter sentences, occasionally a question that isn\u0027t tactical. She might use someone\u0027s name. She almost never uses names."
+                        },
+    "psychology":  {
+                       "core_fears":  [
+                                          "That a client will eventually commission an investigation that leads back to her own past",
+                                          "That the person she\u0027s become â€” efficient, unreadable, precise â€” is not armor but the actual person, and there\u0027s nothing underneath",
+                                          "That her Shelf origins will surface in a context she cannot control"
+                                      ],
+                       "core_desires":  [
+                                            "Complete information â€” the full picture of who controls what in GLMZ, before someone uses that picture against her",
+                                            "A case that cannot be solved â€” the intellectual challenge she has not yet encountered",
+                                            "To one day close the Bergstrom-Osei file with something she can live with"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Treating every interaction as data collection â€” reduces emotional exposure by making it professional",
+                                                 "Physical routine as cognitive reset â€” she runs 8km before every significant meeting",
+                                                 "Maintaining a private archive of everything she has ever found, on the logic that the record is the only thing that survives the person"
+                                             ],
+                       "blind_spots":  [
+                                           "Believes her neutrality is principled when some of it is avoidance â€” she chooses clients who can\u0027t threaten her, not clients who need her most",
+                                           "Cannot see that her reputation for finding the truth has made her a target for anyone who needs the truth suppressed",
+                                           "Has never investigated herself"
+                                       ],
+                       "secret":  "Three of her notable cases produced results that she presented accurately to her clients. What she has never disclosed: a fourth case, uninvestigated, that connects two of her current clients to each other in a way neither knows about. She has held this finding for eight months, telling herself she is waiting for the right moment. She is not waiting for the right moment. She is afraid of what following it through would require."
+                   },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never presents findings she cannot fully substantiate â€” her credibility is the only asset that cannot be replaced",
+                                              "Keeps concurrent investigations structurally siloed â€” no client knows the names of other clients",
+                                              "Will identify a client as the source of a problem if the evidence supports it â€” has done this three times",
+                                              "Does not take cases below Tier 3 â€” the exposure risk is not proportional to the fee"
+                                          ],
+                       "interpersonal_modes":  {
+                                                   "corporate_clients":  "Professional warmth precisely calibrated to the client\u0027s ego requirements. She has files on all of them. She does not tell them this.",
+                                                   "witnesses_subjects":  "Patient, attentive, almost warm â€” people talk to her because she appears to listen, which she does, but not in the way they believe",
+                                                   "rivals":  "Respectful professional distance. She does not engage in competitive positioning. Her results speak."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Goes quieter. Answers get shorter. Completes her 8km run in silence.",
+                                                "high":  "Becomes entirely still and entirely focused. No small talk. No softening. The performance drops completely."
+                                            },
+                       "contradictions":  [
+                                              "Built a career on full disclosure to clients while holding a multi-client-connecting finding for eight months",
+                                              "Investigates everyone around her but has never turned the same tools on herself"
+                                          ]
+                   },
+    "relationships":  [
+                          {
+                              "name":  "Director Kaito Bergstrom-Osei",
+                              "type":  "primary client / subject of private ongoing assessment",
+                              "description":  "Axiom\u0027s head of internal affairs â€” her largest and most demanding client. She has begun a private file on him that she has not disclosed to anyone. The case she brought him last quarter was complete. The file she has kept back is not.",
+                              "emotional_core":  "Professional dependency she finds increasingly uncomfortable",
+                              "story_tension":  "He is her biggest client. He may also be the person she is about to destroy. She has not resolved which of these facts takes precedence."
+                          },
+                          {
+                              "name":  "Vesna Medina-Appiah",
+                              "type":  "former protege / now competitor",
+                              "description":  "Left her firm to start a competing practice two years ago. She monitors Vesna\u0027s operations â€” not from resentment, but because a former protege who knows her methods and her clients is a specific class of risk that requires ongoing assessment.",
+                              "emotional_core":  "The closest she came to mentorship â€” she is not certain she did it correctly",
+                              "story_tension":  "Vesna is building something that may eventually be better than what she built. She is deciding whether to view this as a threat or as evidence that she taught well."
+                          }
+                      ],
+    "story_hooks":  [
+                        "Kaito Bergstrom-Osei hires her to investigate a data breach â€” and the trail leads directly into the private file she has been holding back for eight months",
+                        "One of her current clients has commissioned an investigation into the other client she holds the connecting finding on â€” she is now the only person in the city who can see the full shape of what\u0027s coming",
+                        "Vesna Medina-Appiah calls with a case referral. It\u0027s the kind of case Vesna knows she can\u0027t turn down. Vesna also knows this is a trap.",
+                        "Someone has begun investigating Amadou KeÃ¯ta-Suzuki with exactly the methods she uses herself"
+                    ],
+    "tags":  [
+                 "person",
+                 "character",
+                 "private_investigator",
+                 "corporate_espionage",
+                 "spires",
+                 "tier_4",
+                 "elite",
+                 "sentient",
+                 "human"
+             ],
+    "carried_weapons":  [
+                            "Vespid Dynamics Needlestorm NS-4 \u0027Pincushion\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "WELLSPRING",
+                             "The Heritage Vault",
+                             "Tessera Corponation",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "DÃ©jÃ  Vu",
+                             "Hearthstone Firearms Trail-357 \u0027Pathfinder\u0027",
+                             "GLMZ",
+                             "Arcturus MN-3 \u0027Digger\u0027"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "Amadou carries a striking genetic tapestry: 43.8% East Asian ancestry provides defined cheekbones, eye depth, and precise facial proportions; 34.5% Sub-Saharan African heritage contributes warm golden undertones to her skin and strong bone structure; 21.7% Northern European ancestry adds subtle softness to her jawline and complexity to her overall phenotype. The result is a face of beautiful ambiguityâ€”luminous warm brown skin with golden-honey undertones that seem to shift in different light, unmarred and meticulously maintained. Her features defy easy categorization, reading as elegantly cosmopolitan rather than rooted to any single region.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and angular, musculature defined by discipline rather than bulk. Efficient rather than imposing â€” a frame built for sustained focus and precise movement, not intimidation.",
+                                 "hair_color":  "Natural black with silver threading at the temples",
+                                 "hair_style":  "Pulled back in a tight, functional braid or wrapped in a sleek low knot",
+                                 "hair_length":  "Medium (shoulder-length when loose)",
+                                 "eye_color":  "Deep brown with warm amber undertones, unnervingly steady",
+                                 "skin_tone":  "Rich warm brown with golden-honey undertones, luminous and unmarred. The complexion reflects the balanced blend of her East Asian, Sub-Saharan African, and Northern European ancestry, suggesting both careful genetics and meticulous self-care.",
+                                 "complexion":  "Strong, defined cheekbones reflecting African and East Asian heritage structure, precise jawline with subtle softness characteristic of her mixed genetics, minimal expression lines despite ageâ€”a face trained not to broadcast emotion. Eyes set with characteristic depth, warm-toned iris with amber undertones. Skin condition is immaculate; grooming is ritualistic and flawless.",
+                                 "distinguishing_marks":  [
+                                                              "A thin white scar running 4cm along her left jawline, barely visible under professional lighting, likely from a blade or industrial accident",
+                                                              "Faint linear scarring on both wrists (inner forearm), barely 2mm wide, consistent with subcutaneous implant installation"
+                                                          ],
+                                 "visible_augmentations":  "None visible. Her augmentations, if present, are subcutaneous or subdermal â€” no chrome, no LED optics, no external modifications. This is deliberate: she is designed to blend into Tier 1 boardrooms.",
+                                 "posture_movement":  "Upright and economical. She moves with the controlled precision of someone who has trained muscle memory into a weapon. Her gaze lingers on details others miss. She does not fidget, does not shift weight, does not telegraph intent through body language â€” presence through stillness.",
+                                 "clothing_style":  "Tier 1 corporate formal: tailored midnight-blue or charcoal wool blazers, crisp white or ivory shirt-blouses, high-waisted black trousers with clean lines, minimal jewelry (a single platinum ring, understated). Footwear is expensive and silent â€” leather loafers or minimalist heels that allow her to move without sound. Her bag is a slim leather briefcase, well-maintained, no logos. Nothing is worn; everything is maintained. She dresses like someone who has learned that visibility is a liability and invisibility is a luxury."
+                             },
+    "image_prompt":  "Amadou KeÃ¯ta-Suzuki, 178cm tall, lean angular build, standing in corporate boardroom lighting. Luminous warm brown skin with golden undertones, strong defined cheekbones blending East Asian and African heritage, subtle jawline softness, deep brown eyes with amber undertones. Black hair with silver temples pulled into tight functional braid. Immaculate grooming, thin white scar along left jawline barely visible. Wearing tailored midnight-blue wool blazer, crisp white shirt-blouse, high-waisted black trousers, expensive silent leather loafers. Single platinum ring. Upright posture, controlled precision, face trained not to broadcast emotion. Unnervingly steady gaze. GLMZ, GLMZ aesthetic, Tier 1 boardroom setting, cool professional lighting with warm undertones catching her skin. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  43.8,
+                             "Sub-Saharan African":  34.5,
+                             "Northern European":  21.7
+                         },
+    "ancestry_harmonized":  true,
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  13.5
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  30.3
+                                                          }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Kenyan":  34.5
+                                                                         }
+                                                    },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  4.9
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  5.3,
+                                                                           "Norwegian":  8.6
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "Swiss German":  1.5,
+                                                                       "Dutch":  1.4
+                                                                   }
+                                                  }
+                        },
+    "operating_territory":  {
+                                "home_turf":  "A fortified suite on the 87th floor of the Tessera-adjacent Pinnacle Tower"
+                            }
 }

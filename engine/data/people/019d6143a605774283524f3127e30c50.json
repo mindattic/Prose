@@ -1,373 +1,386 @@
-{
-  "id": "019d6143a605774283524f3127e30c50",
-  "type": "character",
-  "name": "Ansgar Chakraborty",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Precision elimination specialist — ghost",
-  "age": 40,
-  "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Michigan Ave South and Cermak",
-  "description": "Ansgar Chakraborty are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 40, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a ghost out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented ghost in GLMZ, but they might be the most stubborn, and in this city that's worth more.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.45,
-      "ideal": 0.96,
-      "id": 0.58,
-      "shadow": 0.82,
-      "mask": 0.82,
-      "ghost": 1
-    },
-    "core_fears": [
-      "Losing control of their own body to a hacker or malfunctioning cyberware",
-      "Losing their edge to age — the body slows before the mind accepts it",
-      "Dying alone in some alley and nobody noticing for weeks"
-    ],
-    "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "Justice — the corporate kind, where the punishment fits the profit margin",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
-    ],
-    "coping_mechanisms": [
-      "Planning — responds to chaos by making detailed contingency plans for everything",
-      "Humor — deflects everything serious with jokes until the joke becomes the personality",
-      "Ritual — follows the same pre-job routine every time, superstition as structure"
-    ],
-    "blind_spots": [
-      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
-      "Cannot see that their independence is actually isolation wearing a better outfit",
-      "Assumes their skill set is more transferable than it actually is"
-    ],
-    "secret": "Erkin Wendt-Frempong can't read. Hides it behind voice interfaces and memorization. The shame is older than the chrome."
-  },
-  "speech_patterns": {
-    "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
-    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
-    "verbal_tics": [
-      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'",
-      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
-    ],
-    "example_lines": [
-      "\"I don't exist. Neither will they.\"",
-      "\"Clean means no witnesses, no evidence, no questions. That's three things. I charge for each.\"",
-      "\"The target will stop breathing at the specified time. What you do with that information is your concern.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A corporate black site Erkin Wendt-Frempong once infiltrated is being reopened, and the people inside know their face",
-    "Erkin Wendt-Frempong intercepts intelligence about a threat to their district and must decide between profit and protection",
-    "A crew member from Erkin Wendt-Frempong's past shows up in GLMZ, carrying old grievances and new chrome"
-  ],
-  "narrative_function": "Erkin Wendt-Frempong is a pressure point — the kind of character whose choices ripple outward. When they make a decision, other people's lives change. That weight is the engine of their stories.",
-  "augmentations": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
-  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Independent — works solo contracts",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 4
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 5
-      },
-      "endurance": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 5
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 10
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 4
-      },
-      "perception": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 5
-      },
-      "willpower": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 6
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 7
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 6
-      },
-      "intimidation": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 6
-      },
-      "deception": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 9
-      },
-      "empathy": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.57,
-      "caution": 0.4,
-      "loyalty": 0.89,
-      "greed": 0.48,
-      "empathy": 0.4
-    },
-    "drives": [
-      "reputation",
-      "revenge",
-      "power"
-    ],
-    "thresholds": {
-      "pain": 8,
-      "stress": 4,
-      "loyalty_break": 10
-    },
-    "strengths": [
-      "expert marksman",
-      "exceptional close-quarters combat",
-      "network of reliable contacts"
-    ],
-    "weaknesses": [
-      "substance dependency — functional but fragile",
-      "trust issues that limit crew effectiveness",
-      "old injury that flares under specific conditions"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "ghost",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Always verifies target identity independently before lethal contracts",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Always has an exit route planned before agreeing to any meeting",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
-    ],
-    "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Presents as emotionless professional but is deeply affected by collateral damage",
-      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
-    ],
-    "habits": [
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
-      "Checks exits within 10 seconds of entering any room",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
-    ],
-    "breaking_points": [
-      "Being forced to harm a civilian — collateral damage that can't be rationalized",
-      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Synthetic muscle fiber replacement in legs",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
-      "replaces": ""
-    },
-    {
-      "name": "Synthetic muscle fiber replacement in legs",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Dockside",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Bioelectric Muscle Fiber",
-    "The Unfinished Theorem",
-    "GLMZ"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Complex blend of Central Asian (33.7%), South Asian (26.9%), Middle Eastern (17.0%), Hispanic/Latin American (10.2%), Northern European (6.9%), and North African (5.3%) ancestry. The dominant Central and South Asian genetics create strong cheekbones and facial structure, while the substantial Middle Eastern and North African components add warmth to undertones and refine nose bridge characteristics. The Latin American and Northern European ancestry introduces subtle variation in skin depth and undertone complexity, creating a phenotype that reads as genuinely cosmopolitan rather than regionally fixed.",
-    "height_cm": 188,
-    "weight_kg": 74,
-    "build": "Lean and angular, all limbs and efficient muscle. Long-limbed in a way that reads as predatory rather than graceful. Chest slightly narrower than shoulders, giving a forward-canted silhouette.",
-    "hair_color": "Steel gray with natural dark roots showing — not dyed, just prematurely silvered",
-    "hair_style": "Pulled back in a tight, functional braid or secured with a chrome clip",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown, unremarkable — deliberately unremarkable",
-    "skin_tone": "Warm medium-tan with golden-olive undertones. Central Asian and South Asian ancestry creates the base warmth; Middle Eastern and North African genetics add depth and richness to the tone. Weathered by six years of dockside wind and salt spray, showing visible sun exposure and environmental aging.",
-    "complexion": "High, prominent cheekbones with strong Central and South Asian structure balanced by the width and definition of Middle Eastern influence. Angular jaw with slight forward projection. Nose bridge refined but strong, characteristic of the Central Asian and Middle Eastern blend. Slight asymmetry in the left side of the face suggesting old nerve damage. Minimal grooming — practical, not vain. Skin texture is rough, scarred in places, with a weathered quality that speaks to years of exposure and environmental stress.",
-    "distinguishing_marks": [
-      "Thin white scar running from left temple to cheekbone, tissue damage visible under the skin",
-      "Parallel burn scars across right forearm — old thermal weapon discharge, partially healed",
-      "Faint tattooed contract symbols along the inside of left wrist, barely visible unless actively shown"
-    ],
-    "visible_augmentations": "Synthetic muscle fiber replacement obvious in both legs — visible as matte gunmetal chrome latticing visible through reinforced synthetic skin at the thighs and calves, with faint LED junction points glowing soft amber at rest. The chrome is scarred and well-used, bearing impact marks from heavy use. No attempt to conceal it.",
-    "posture_movement": "Moves with controlled efficiency, every motion purposeful and economical. Stands with weight forward on the balls of feet, ready to move. Head tilts slightly when listening, like targeting. Sits at angles that preserve sight lines and exit routes. Rarely fidgets — when they do it's to check weapon accessibility or augmentation status.",
-    "clothing_style": "Tier 3-4 utilitarian: matte-black reactive fabric cargo pants with reinforced thigh pockets and cable routing. Sleeveless compression vest over a long-sleeved thermal shirt, showing off the chrome work deliberately. Worn tactical jacket in dark gray, military-cut, with visible ammunition and tool placement. Steel-toed boots rated for dockside work. No jewelry, no logos, no status markers. Everything is functional or invisible."
-  },
-  "image_prompt": "Ansgar Chakraborty, 188cm lean neo-noir operative in 2226 Great Lakes Metropolitan Zone. Medium-tan warm skin with golden-olive undertones, sharp Central Asian cheekbones and South Asian facial structure refined by Middle Eastern influence. Prematurely silvered steel-gray hair pulled back tight, dark brown eyes, weathered by dockside salt spray. Distinctive thin white scar temple to cheekbone, old thermal burn scars on right forearm. Muscular legs with visible gunmetal chrome synthetic fiber latticing and amber junction LEDs showing through synthetic skin — scarred and well-used. Wearing sleeveless compression vest over thermal shirt exposing augmentations deliberately, dark gray military tactical jacket, matte-black cargo pants, steel-toed boots. Forward-canted predatory stance, weight on balls of feet. Controlled, purposeful movement. Dockside industrial setting, moody shadow and neon glow, neo-noir urban aesthetic, functional and lethal. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Central Asian": 33.7,
-    "South Asian": 26.9,
-    "Middle Eastern": 17,
-    "Hispanic/Latin American": 10.2,
-    "Northern European": 6.9,
-    "North African": 5.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Central Asian": {
-      "Mongolic": {
-        "Kalmyk": 8,
-        "Mongolian": 8.7
-      },
-      "Turkic": {
-        "Uyghur": 17
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 18.9,
-        "Tamil Sri Lankan": 6.6
-      },
-      "Pakistani": {
-        "Sindhi": 1.4
-      }
-    },
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Lebanese": 6.7
-      },
-      "Arab Gulf": {
-        "Iraqi": 3.7,
-        "Kuwaiti": 2.5
-      },
-      "Persian": {
-        "Tajik Persian": 1.8,
-        "Iranian": 2.3
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 10.2
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Irish": 4.2
-      },
-      "Germanic": {
-        "Dutch": 1.9,
-        "Swiss German": 0.8
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Kabyle": 2,
-        "Tuareg": 1.6
-      },
-      "Nile Valley": {
-        "Egyptian": 0.8
-      },
-      "Maghreb": {
-        "Algerian": 0.7,
-        "Tunisian": 0.2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a605774283524f3127e30c50",
+    "type":  "character",
+    "name":  "Ansgar Chakraborty",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Precision elimination specialist â€” ghost",
+    "age":  40,
+    "status":  "active",
+    "location":  "Dockside â€” Lake Michigan waterfront, smuggler territory, near Michigan Ave South and Cermak",
+    "description":  "Ansgar Chakraborty are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 40, there\u0027s something unfinished about their face, like a sculpture the artist walked away from â€” striking rather than beautiful. The chrome is visible â€” synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on s â€” and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a ghost out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented ghost in GLMZ, but they might be the most stubborn, and in this city that\u0027s worth more.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing control of their own body to a hacker or malfunctioning cyberware",
+                                          "Losing their edge to age â€” the body slows before the mind accepts it",
+                                          "Dying alone in some alley and nobody noticing for weeks"
+                                      ],
+                       "core_desires":  [
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "Justice â€” the corporate kind, where the punishment fits the profit margin",
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Planning â€” responds to chaos by making detailed contingency plans for everything",
+                                                 "Humor â€” deflects everything serious with jokes until the joke becomes the personality",
+                                                 "Ritual â€” follows the same pre-job routine every time, superstition as structure"
+                                             ],
+                       "blind_spots":  [
+                                           "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+                                           "Cannot see that their independence is actually isolation wearing a better outfit",
+                                           "Assumes their skill set is more transferable than it actually is"
+                                       ],
+                       "secret":  "Erkin Wendt-Frempong can\u0027t read. Hides it behind voice interfaces and memorization. The shame is older than the chrome."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
+                            "cadence":  "Flowing and unhurried â€” talks like someone who has never been interrupted and doesn\u0027t expect to be.",
+                            "verbal_tics":  [
+                                                "Addresses people by physical traits â€” \u0027hey, tall one\u0027 or \u0027listen, chrome-arm\u0027",
+                                                "Uses \u0027we\u0027 instead of \u0027I\u0027 â€” either royal or dissociative, nobody asks"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I don\u0027t exist. Neither will they.\"",
+                                                  "\"Clean means no witnesses, no evidence, no questions. That\u0027s three things. I charge for each.\"",
+                                                  "\"The target will stop breathing at the specified time. What you do with that information is your concern.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A corporate black site Erkin Wendt-Frempong once infiltrated is being reopened, and the people inside know their face",
+                        "Erkin Wendt-Frempong intercepts intelligence about a threat to their district and must decide between profit and protection",
+                        "A crew member from Erkin Wendt-Frempong\u0027s past shows up in GLMZ, carrying old grievances and new chrome"
+                    ],
+    "narrative_function":  "Erkin Wendt-Frempong is a pressure point â€” the kind of character whose choices ripple outward. When they make a decision, other people\u0027s lives change. That weight is the engine of their stories.",
+    "augmentations":  "Synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on stairs. Synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on stairs",
+    "daily_life":  "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather â€” not for pleasure, but for market intelligence.",
+    "affiliation":  "Independent â€” works solo contracts",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  6,
+                                                    "augmented":  1,
+                                                    "effective":  4
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  0,
+                                                   "effective":  5
+                                               },
+                                   "endurance":  {
+                                                     "base":  4,
+                                                     "augmented":  0,
+                                                     "effective":  5
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  2,
+                                                    "effective":  10
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  7,
+                                                      "augmented":  1,
+                                                      "effective":  4
+                                                  },
+                                 "perception":  {
+                                                    "base":  4,
+                                                    "augmented":  2,
+                                                    "effective":  5
+                                                },
+                                 "willpower":  {
+                                                   "base":  5,
+                                                   "augmented":  3,
+                                                   "effective":  6
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  3,
+                                                   "effective":  7
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  8,
+                                                  "augmented":  1,
+                                                  "effective":  6
+                                              },
+                                 "intimidation":  {
+                                                      "base":  6,
+                                                      "augmented":  1,
+                                                      "effective":  6
+                                                  },
+                                 "deception":  {
+                                                   "base":  5,
+                                                   "augmented":  3,
+                                                   "effective":  9
+                                               },
+                                 "empathy":  {
+                                                 "base":  5,
+                                                 "augmented":  3,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.57,
+                                      "caution":  0.4,
+                                      "loyalty":  0.89,
+                                      "greed":  0.48,
+                                      "empathy":  0.4
+                                  },
+                  "drives":  [
+                                 "reputation",
+                                 "revenge",
+                                 "power"
+                             ],
+                  "thresholds":  {
+                                     "pain":  8,
+                                     "stress":  4,
+                                     "loyalty_break":  10
+                                 },
+                  "strengths":  [
+                                    "expert marksman",
+                                    "exceptional close-quarters combat",
+                                    "network of reliable contacts"
+                                ],
+                  "weaknesses":  [
+                                     "substance dependency â€” functional but fragile",
+                                     "trust issues that limit crew effectiveness",
+                                     "old injury that flares under specific conditions"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "ghost",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess â€” read the situation, identify threats and advantages",
+                                                 "2. Negotiate â€” try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate â€” make the cost of conflict clear",
+                                                 "4. Precision violence â€” surgical, targeted, minimal collateral",
+                                                 "5. Full engagement â€” overwhelming force, no half measures",
+                                                 "6. Emergency protocol â€” abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Presents as emotionless professional but is deeply affected by collateral damage",
+                                              "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+                                          ],
+                       "habits":  [
+                                      "Takes a specific route home every time, varying only one block per trip â€” paranoia as lifestyle",
+                                      "Checks exits within 10 seconds of entering any room",
+                                      "Arrives fifteen minutes early to everything â€” late once, nearly died, never again"
+                                  ],
+                       "breaking_points":  [
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized",
+                                               "Betrayal by the one person they actually trust â€” the single point of failure in their emotional architecture"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Synthetic muscle fiber replacement in legs",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on stairs",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Synthetic muscle fiber replacement in legs",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on stairs",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Dockside",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Ghostwriter\u0027 Grafitti Flamethrower"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Bioelectric Muscle Fiber",
+                             "The Unfinished Theorem",
+                             "GLMZ"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Complex blend of Central Asian (33.7%), South Asian (26.9%), Middle Eastern (17.0%), Hispanic/Latin American (10.2%), Northern European (6.9%), and North African (5.3%) ancestry. The dominant Central and South Asian genetics create strong cheekbones and facial structure, while the substantial Middle Eastern and North African components add warmth to undertones and refine nose bridge characteristics. The Latin American and Northern European ancestry introduces subtle variation in skin depth and undertone complexity, creating a phenotype that reads as genuinely cosmopolitan rather than regionally fixed.",
+                                 "height_cm":  188,
+                                 "weight_kg":  74,
+                                 "build":  "Lean and angular, all limbs and efficient muscle. Long-limbed in a way that reads as predatory rather than graceful. Chest slightly narrower than shoulders, giving a forward-canted silhouette.",
+                                 "hair_color":  "Steel gray with natural dark roots showing â€” not dyed, just prematurely silvered",
+                                 "hair_style":  "Pulled back in a tight, functional braid or secured with a chrome clip",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown, unremarkable â€” deliberately unremarkable",
+                                 "skin_tone":  "Warm medium-tan with golden-olive undertones. Central Asian and South Asian ancestry creates the base warmth; Middle Eastern and North African genetics add depth and richness to the tone. Weathered by six years of dockside wind and salt spray, showing visible sun exposure and environmental aging.",
+                                 "complexion":  "High, prominent cheekbones with strong Central and South Asian structure balanced by the width and definition of Middle Eastern influence. Angular jaw with slight forward projection. Nose bridge refined but strong, characteristic of the Central Asian and Middle Eastern blend. Slight asymmetry in the left side of the face suggesting old nerve damage. Minimal grooming â€” practical, not vain. Skin texture is rough, scarred in places, with a weathered quality that speaks to years of exposure and environmental stress.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar running from left temple to cheekbone, tissue damage visible under the skin",
+                                                              "Parallel burn scars across right forearm â€” old thermal weapon discharge, partially healed",
+                                                              "Faint tattooed contract symbols along the inside of left wrist, barely visible unless actively shown"
+                                                          ],
+                                 "visible_augmentations":  "Synthetic muscle fiber replacement obvious in both legs â€” visible as matte gunmetal chrome latticing visible through reinforced synthetic skin at the thighs and calves, with faint LED junction points glowing soft amber at rest. The chrome is scarred and well-used, bearing impact marks from heavy use. No attempt to conceal it.",
+                                 "posture_movement":  "Moves with controlled efficiency, every motion purposeful and economical. Stands with weight forward on the balls of feet, ready to move. Head tilts slightly when listening, like targeting. Sits at angles that preserve sight lines and exit routes. Rarely fidgets â€” when they do it\u0027s to check weapon accessibility or augmentation status.",
+                                 "clothing_style":  "Tier 3-4 utilitarian: matte-black reactive fabric cargo pants with reinforced thigh pockets and cable routing. Sleeveless compression vest over a long-sleeved thermal shirt, showing off the chrome work deliberately. Worn tactical jacket in dark gray, military-cut, with visible ammunition and tool placement. Steel-toed boots rated for dockside work. No jewelry, no logos, no status markers. Everything is functional or invisible."
+                             },
+    "image_prompt":  "Ansgar Chakraborty, 188cm lean neo-noir operative in 2226 Great Lakes Metropolitan Zone. Medium-tan warm skin with golden-olive undertones, sharp Central Asian cheekbones and South Asian facial structure refined by Middle Eastern influence. Prematurely silvered steel-gray hair pulled back tight, dark brown eyes, weathered by dockside salt spray. Distinctive thin white scar temple to cheekbone, old thermal burn scars on right forearm. Muscular legs with visible gunmetal chrome synthetic fiber latticing and amber junction LEDs showing through synthetic skin â€” scarred and well-used. Wearing sleeveless compression vest over thermal shirt exposing augmentations deliberately, dark gray military tactical jacket, matte-black cargo pants, steel-toed boots. Forward-canted predatory stance, weight on balls of feet. Controlled, purposeful movement. Dockside industrial setting, moody shadow and neon glow, neo-noir urban aesthetic, functional and lethal. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Central Asian":  33.7,
+                             "South Asian":  26.9,
+                             "Middle Eastern":  17,
+                             "Hispanic/Latin American":  10.2,
+                             "Northern European":  6.9,
+                             "North African":  5.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Kalmyk":  8,
+                                                                   "Mongolian":  8.7
+                                                               },
+                                                  "Turkic":  {
+                                                                 "Uyghur":  17
+                                                             }
+                                              },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  18.9,
+                                                                   "Tamil Sri Lankan":  6.6
+                                                               },
+                                                "Pakistani":  {
+                                                                  "Sindhi":  1.4
+                                                              }
+                                            },
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Lebanese":  6.7
+                                                                      },
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  3.7,
+                                                                     "Kuwaiti":  2.5
+                                                                 },
+                                                   "Persian":  {
+                                                                   "Tajik Persian":  1.8,
+                                                                   "Iranian":  2.3
+                                                               }
+                                               },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  10.2
+                                                                        }
+                                                        },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  4.2
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "Dutch":  1.9,
+                                                                       "Swiss German":  0.8
+                                                                   }
+                                                  },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Kabyle":  2,
+                                                                  "Tuareg":  1.6
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  0.8
+                                                                  },
+                                                  "Maghreb":  {
+                                                                  "Algerian":  0.7,
+                                                                  "Tunisian":  0.2
+                                                              }
+                                              }
+                        },
+    "tier":  "1"
 }

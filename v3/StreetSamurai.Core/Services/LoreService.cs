@@ -182,15 +182,6 @@ public class LoreService
                 Occupation = c.Role,
                 Affiliation = c.Affiliation,
                 Augmentation = c.Augmentations,
-                Facets = new FacetState
-                {
-                    Wound = c.Psychology.FacetWeights.Wound,
-                    Ideal = c.Psychology.FacetWeights.Ideal,
-                    Id = c.Psychology.FacetWeights.Id,
-                    Shadow = c.Psychology.FacetWeights.Shadow,
-                    Mask = c.Psychology.FacetWeights.Mask,
-                    Ghost = c.Psychology.FacetWeights.Ghost,
-                },
                 Relationships = c.Relationships.Select(r => new Relationship
                 {
                     Name = r.Name,

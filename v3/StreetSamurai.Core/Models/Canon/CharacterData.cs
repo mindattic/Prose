@@ -33,8 +33,6 @@ public class CharacterData : ICanonEntity
     [JsonPropertyName("augmentations")] public string Augmentations { get; set; } = "";
     [JsonPropertyName("daily_life")] public string DailyLife { get; set; } = "";
     [JsonPropertyName("affiliation")] public string Affiliation { get; set; } = "";
-    /// <summary>Whether this character uses the facet tag system in narration (only Kyle).</summary>
-    [JsonPropertyName("uses_facets")] public bool UsesFacets { get; set; }
     /// <summary>How this character's POV narration sounds — prose style, interior voice, what they notice first.</summary>
     [JsonPropertyName("narration_voice")] public string NarrationVoice { get; set; } = "";
     /// <summary>Numeric capability stats (1-10 scale).</summary>
@@ -237,22 +235,11 @@ public class CharacterBehavioral
 
 public class CharacterPsychology
 {
-    [JsonPropertyName("facet_weights")] public FacetWeights FacetWeights { get; set; } = new();
     [JsonPropertyName("core_fears")] public List<string> CoreFears { get; set; } = [];
     [JsonPropertyName("core_desires")] public List<string> CoreDesires { get; set; } = [];
     [JsonPropertyName("coping_mechanisms")] public List<string> CopingMechanisms { get; set; } = [];
     [JsonPropertyName("blind_spots")] public List<string> BlindSpots { get; set; } = [];
     [JsonPropertyName("secret")] public string Secret { get; set; } = "";
-}
-
-public class FacetWeights
-{
-    [JsonPropertyName("wound")] public double Wound { get; set; }
-    [JsonPropertyName("ideal")] public double Ideal { get; set; }
-    [JsonPropertyName("id")] public double Id { get; set; }
-    [JsonPropertyName("shadow")] public double Shadow { get; set; }
-    [JsonPropertyName("mask")] public double Mask { get; set; }
-    [JsonPropertyName("ghost")] public double Ghost { get; set; }
 }
 
 public class SpeechPatterns

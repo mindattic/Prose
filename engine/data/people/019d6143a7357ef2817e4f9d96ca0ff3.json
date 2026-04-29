@@ -1,261 +1,282 @@
-{
-  "id": "019d6143a7357ef2817e4f9d96ca0ff3",
-  "type": "character",
-  "name": "Erlingur Haraldsen-Park-Horváth",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Bootleg media seller and small-time data broker",
-  "age": 27,
-  "status": "active",
-  "location": "The Laceworks, mobile — regular circuit through three intersections near the Lace Bridge underpass, near Lincoln and Belmont",
-  "description": "Erlingur Haraldsen-Park-Horváth moves through the Laceworks like a current — always in motion, always aware of every exit. They're lean and compact with close-cropped hair that shifts color throughout the day via a follicular genemod cycling through rust, copper, and near-black in slow waves. Their irises are patterned in concentric hexagons, gold on brown, which they claim was a 'random outcome' from a budget gene clinic but is actually a deliberate aesthetic choice they're embarrassed to admit cost them six months of savings. They dress in layers they can shed fast: patchwork thermals, a jacket with thirty pockets, boots that are two sizes too large because they bought them for the hidden cavity under the left insole.\n\nTheir cart is a salvaged medical trolley rigged with a privacy shroud — a local-field scrambler that makes recordings of their transactions come out as static. The stock changes daily: today it's archived pre-corporate streaming libraries, tomorrow it's unlicensed sensory recordings from restricted-access Axiom research facilities, the day after it's soft intelligence packages compiled from public scraping and a handful of human sources they pay in trade. They're smart, funny, genuinely good at reading people, and trying very hard to project the kind of confidence that only comes from not worrying about rent. They do worry about rent.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.4,
-      "id": 0.7,
-      "shadow": 0.5,
-      "mask": 0.8,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Being erased — archived, forgotten, becoming just another data point",
-      "Trusting someone with something real and having it weaponized"
-    ],
-    "core_desires": [
-      "Freedom from the grinding anxiety of financial precarity",
-      "To be genuinely, lastingly impressed by something"
-    ],
-    "coping_mechanisms": [
-      "Humor as deflection — keeps everything at ironic distance",
-      "Obsessive cataloging and organization of their inventory as a control behavior"
-    ],
-    "blind_spots": [
-      "Mistakes their cynicism for wisdom — sometimes misses sincere offers because they assume angles that aren't there",
-      "Undervalues their own intelligence, attributes their successes to luck"
-    ],
-    "secret": "They have a complete, meticulously indexed archive of everything that has ever been publicly documented about the Threadneedle collective's leadership — including things those leaders would prefer stayed buried. They compiled it instinctively, as insurance, and have never decided whether to feel smart or terrified about it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Dense with Laceworks slang, media references, technical data-trade jargon. Pivots register fluently depending on who they're talking to.",
-    "cadence": "Fast, layered — often finishes other people's sentences with something slightly wrong on purpose to see if they'll correct it.",
-    "verbal_tics": [
-      "'Allegedly' inserted into factual statements for legal-plausibility theater",
-      "Clicking tongue twice before giving a price"
-    ],
-    "example_lines": [
-      "'I don't sell data, I sell context. The data is free, the context costs.'",
-      "'Allegedly this building's ventilation schematics allegedly updated three weeks ago. Allegedly Φ40.'",
-      "'Look, I like you. I like you enough to tell you that you're about to ask me something you don't want the answer to.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Someone has started selling counterfeit versions of Zibby's curated data packages — identical packaging, worse information, and it's killing their reputation with clients who don't know the difference",
-    "They have a data package they can't sell because every potential buyer who's seen it has either gone silent or left the Laceworks; they're trying to figure out what it actually contains without opening it themselves",
-    "A piece of archived pre-corporate media in their collection turns out to contain embedded evidence of something a current Corponation executive would pay significantly to suppress"
-  ],
-  "narrative_function": "Primary information-access point for street-level players. Can source obscure media, personal records, building schematics, and soft intelligence. Also serves as cultural texture — they know the gossip, the art, the underground scene of the Laceworks intimately.",
-  "augmentations": "Color-cycling follicular genemod (hair). Hexagonal patterned irises (cosmetic, gene-based). Subdermal haptic patch on left forearm — lets them feel file transfer completion and connection quality without looking at a screen. Basic neural link for data handling, consumer grade.",
-  "daily_life": "Wakes late, spends two hours curating and pricing their day's inventory, walks their circuit starting around noon, works until the light goes bad or they've sold out — whichever comes first. Three evenings a week they're at a Laceworks bar called The Needle's Eye, buying drinks for people who might have interesting things to say.",
-  "affiliation": "Independent. Pays informal protection to a loose collective of Laceworks street crews called the Threadneedles. Occasional contractor for Oxidian Market Guild intel arm.; The Glass Ladder",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 5,
-      "creativity": 8,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": -3,
-      "transparency_guardedness": 4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "information broker",
-      "street savvy",
-      "mobile vendor",
-      "laceworks local",
-      "archive hoarder"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never sell to someone who mentions law enforcement even in the context of criticizing it",
-      "Never hold a single piece of data that only one person has copies of — too much leverage, too much danger"
-    ],
-    "escalation_ladder": [
-      "Deflects with humor and subject-changes",
-      "Closes the privacy shroud and signals they're done talking",
-      "Disperses into the crowd — they have practiced routes",
-      "Activates the haptic alarm network shared with neighboring Laceworks vendors"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Bright and engaging, performs openness while giving away nothing actually personal",
-      "friends": "Drops the performance entirely — quieter, dryer, allows long silences"
-    },
-    "stress_responses": {
-      "low": "Faster talking, more jokes",
-      "medium": "Goes very still and very quiet while they calculate",
-      "high": "Moves — physically removes themselves and reassesses from distance"
-    },
-    "contradictions": [
-      "Claims to be motivated purely by profit but has a long history of giving trade discounts to people they've decided 'actually need' something"
-    ],
-    "habits": [
-      "Strokes their left forearm over the haptic patch when thinking",
-      "Reorganizes inventory by an entirely new taxonomy when they can't sleep"
-    ],
-    "breaking_points": [
-      "Direct threat to their archive or inventory",
-      "Witnessing a vendor they respect get shaken down with no recourse"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Laceworks",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KP-19 'Workhorse'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KP-19 'Workhorse'"
-  ],
-  "related_entities": [
-    "The Laceworks",
-    "Emberlace Systems",
-    "Irontide Tidal Energy",
-    "The Gradient Compact",
-    "Circuit",
-    "Copper",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Nesting Doll",
-    "SHROUD",
-    "Gold"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Striking genetic mosaic of East Asian (50%), Eastern European (28%), Northern European (11.2%), and South Asian (10.8%) ancestry. The blend creates distinctive warm medium golden-brown skin with subtle olive undertones and a unique facial geometry combining East Asian angular cheekbones with Eastern European jaw definition and South Asian depth. Features reflect the full complexity of the Ubiquitous Diaspora.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Lean and compact, wiry muscle definition from constant movement through crowded streets. Low body fat, economical frame built for speed and navigation rather than strength.",
-    "hair_color": "Color-cycling via follicular genemod: cycles through rust-red, copper, and near-black in slow waves throughout the day",
-    "hair_style": "Close-cropped, textured, reveals scalp and ear geometry",
-    "hair_length": "Short",
-    "eye_color": "Gold and brown concentric hexagonal pattern (cosmetic gene-mod, appears non-human but natural to the eye)",
-    "skin_tone": "Warm medium golden-brown with olive undertones, reflecting the harmonious blend of East Asian, Eastern European, Northern European, and South Asian ancestry",
-    "complexion": "Sharp, angular cheekbones with East Asian prominence, combined with the stronger jaw and brow ridge structure of Eastern European heritage. Slight fullness in lower face from South Asian ancestry. Dark eye region characteristic of East Asian ancestry with prominent orbital definition. Skin clear but weathered from outdoor street work. Minimal grooming beyond functional — nail beds show dirt from handling hardware.",
-    "distinguishing_marks": [
-      "Subdermal haptic patch visible as faint rectangular outline on left inner forearm, roughly 4cm x 2cm, slightly raised when active",
-      "Small scar at left eyebrow, likely from street incident, adds to alert expression"
-    ],
-    "visible_augmentations": "Hexagonal iris pattern immediately noticeable under close eye contact. Hair color-shift visible as slow gradient changes through rust-red and copper tones. Left forearm shows subtle haptic patch outline under skin when they flex.",
-    "posture_movement": "Never still. Weight shifts constantly, always oriented toward exits and sightlines. Moves with economical grace through crowds — practiced at threading tight spaces. Hands are active, touching surfaces for balance and texture feedback. Eyes move before head does.",
-    "clothing_style": "Tier 4-5 utilitarian: layered thermals in muted grays and browns, oversized lightweight jacket with excessive pockets (many empty for shed-and-abandon tactic), reinforced cargo pants with external straps and loops, boots two sizes too large for hidden insole cavity. Everything worn-in, patched, functional. No brands visible. Clothes designed for rapid disassembly and movement, not appearance. Carries a worn messenger bag across torso."
-  },
-  "image_prompt": "Erlingur Haraldsen-Park-Horváth, GLMZ, lean 168cm figure in muted gray-brown utilitarian layers and oversized tactical jacket with excessive pockets, reinforced cargo pants, weathered messenger bag. Warm golden-brown skin with olive undertones, sharp angular cheekbones blending East Asian and Eastern European features, dark eye region, defined jaw. Color-cycling rust-red and copper short-cropped textured hair reveals ear geometry. Striking gold and brown concentric hexagonal cybernetic iris pattern catching light. Small scar at left eyebrow, alert expression. Visible haptic patch outline on left forearm. Constant fidgeting posture, weight shifted, hands active, eyes moving—practiced urban street grace. Gritty street-level setting, neon-edged shadows, weathered surfaces, harsh overhead lighting catching hair color shifts and iris geometry. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 50,
-    "Eastern European": 28,
-    "Northern European": 11.2,
-    "South Asian": 10.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 23.6
-      },
-      "Chinese": {
-        "Cantonese": 8.3,
-        "Shanghainese": 3.2
-      },
-      "Korean": {
-        "Korean": 14.9
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Bulgarian": 6.9,
-        "Croatian": 9.4
-      },
-      "Slavic East": {
-        "Belarusian": 7
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 2.1,
-        "Romanian": 2.6
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Swiss German": 11.2
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 3.3,
-        "Tamil Sri Lankan": 0.7
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 1.3
-      },
-      "Nepali": {
-        "Nepali": 5.5
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a7357ef2817e4f9d96ca0ff3",
+    "type":  "character",
+    "name":  "Erlingur Haraldsen-Park-HorvÃ¡th",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Bootleg media seller and small-time data broker",
+    "age":  27,
+    "status":  "active",
+    "location":  "The Laceworks, mobile â€” regular circuit through three intersections near the Lace Bridge underpass, near Lincoln and Belmont",
+    "description":  "Erlingur Haraldsen-Park-HorvÃ¡th moves through the Laceworks like a current â€” always in motion, always aware of every exit. They\u0027re lean and compact with close-cropped hair that shifts color throughout the day via a follicular genemod cycling through rust, copper, and near-black in slow waves. Their irises are patterned in concentric hexagons, gold on brown, which they claim was a \u0027random outcome\u0027 from a budget gene clinic but is actually a deliberate aesthetic choice they\u0027re embarrassed to admit cost them six months of savings. They dress in layers they can shed fast: patchwork thermals, a jacket with thirty pockets, boots that are two sizes too large because they bought them for the hidden cavity under the left insole.\n\nTheir cart is a salvaged medical trolley rigged with a privacy shroud â€” a local-field scrambler that makes recordings of their transactions come out as static. The stock changes daily: today it\u0027s archived pre-corporate streaming libraries, tomorrow it\u0027s unlicensed sensory recordings from restricted-access Axiom research facilities, the day after it\u0027s soft intelligence packages compiled from public scraping and a handful of human sources they pay in trade. They\u0027re smart, funny, genuinely good at reading people, and trying very hard to project the kind of confidence that only comes from not worrying about rent. They do worry about rent.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being erased â€” archived, forgotten, becoming just another data point",
+                                          "Trusting someone with something real and having it weaponized"
+                                      ],
+                       "core_desires":  [
+                                            "Freedom from the grinding anxiety of financial precarity",
+                                            "To be genuinely, lastingly impressed by something"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Humor as deflection â€” keeps everything at ironic distance",
+                                                 "Obsessive cataloging and organization of their inventory as a control behavior"
+                                             ],
+                       "blind_spots":  [
+                                           "Mistakes their cynicism for wisdom â€” sometimes misses sincere offers because they assume angles that aren\u0027t there",
+                                           "Undervalues their own intelligence, attributes their successes to luck"
+                                       ],
+                       "secret":  "They have a complete, meticulously indexed archive of everything that has ever been publicly documented about the Threadneedle collective\u0027s leadership â€” including things those leaders would prefer stayed buried. They compiled it instinctively, as insurance, and have never decided whether to feel smart or terrified about it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Dense with Laceworks slang, media references, technical data-trade jargon. Pivots register fluently depending on who they\u0027re talking to.",
+                            "cadence":  "Fast, layered â€” often finishes other people\u0027s sentences with something slightly wrong on purpose to see if they\u0027ll correct it.",
+                            "verbal_tics":  [
+                                                "\u0027Allegedly\u0027 inserted into factual statements for legal-plausibility theater",
+                                                "Clicking tongue twice before giving a price"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I don\u0027t sell data, I sell context. The data is free, the context costs.\u0027",
+                                                  "\u0027Allegedly this building\u0027s ventilation schematics allegedly updated three weeks ago. Allegedly Î¦40.\u0027",
+                                                  "\u0027Look, I like you. I like you enough to tell you that you\u0027re about to ask me something you don\u0027t want the answer to.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Someone has started selling counterfeit versions of Zibby\u0027s curated data packages â€” identical packaging, worse information, and it\u0027s killing their reputation with clients who don\u0027t know the difference",
+                        "They have a data package they can\u0027t sell because every potential buyer who\u0027s seen it has either gone silent or left the Laceworks; they\u0027re trying to figure out what it actually contains without opening it themselves",
+                        "A piece of archived pre-corporate media in their collection turns out to contain embedded evidence of something a current Corponation executive would pay significantly to suppress"
+                    ],
+    "narrative_function":  "Primary information-access point for street-level players. Can source obscure media, personal records, building schematics, and soft intelligence. Also serves as cultural texture â€” they know the gossip, the art, the underground scene of the Laceworks intimately.",
+    "augmentations":  "Color-cycling follicular genemod (hair). Hexagonal patterned irises (cosmetic, gene-based). Subdermal haptic patch on left forearm â€” lets them feel file transfer completion and connection quality without looking at a screen. Basic neural link for data handling, consumer grade.",
+    "daily_life":  "Wakes late, spends two hours curating and pricing their day\u0027s inventory, walks their circuit starting around noon, works until the light goes bad or they\u0027ve sold out â€” whichever comes first. Three evenings a week they\u0027re at a Laceworks bar called The Needle\u0027s Eye, buying drinks for people who might have interesting things to say.",
+    "affiliation":  "Independent. Pays informal protection to a loose collective of Laceworks street crews called the Threadneedles. Occasional contractor for Oxidian Market Guild intel arm.; The Glass Ladder",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  5,
+                                 "creativity":  8,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "information broker",
+                               "street savvy",
+                               "mobile vendor",
+                               "laceworks local",
+                               "archive hoarder"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never sell to someone who mentions law enforcement even in the context of criticizing it",
+                                              "Never hold a single piece of data that only one person has copies of â€” too much leverage, too much danger"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Deflects with humor and subject-changes",
+                                                 "Closes the privacy shroud and signals they\u0027re done talking",
+                                                 "Disperses into the crowd â€” they have practiced routes",
+                                                 "Activates the haptic alarm network shared with neighboring Laceworks vendors"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Bright and engaging, performs openness while giving away nothing actually personal",
+                                                   "friends":  "Drops the performance entirely â€” quieter, dryer, allows long silences"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Faster talking, more jokes",
+                                                "medium":  "Goes very still and very quiet while they calculate",
+                                                "high":  "Moves â€” physically removes themselves and reassesses from distance"
+                                            },
+                       "contradictions":  [
+                                              "Claims to be motivated purely by profit but has a long history of giving trade discounts to people they\u0027ve decided \u0027actually need\u0027 something"
+                                          ],
+                       "habits":  [
+                                      "Strokes their left forearm over the haptic patch when thinking",
+                                      "Reorganizes inventory by an entirely new taxonomy when they can\u0027t sleep"
+                                  ],
+                       "breaking_points":  [
+                                               "Direct threat to their archive or inventory",
+                                               "Witnessing a vendor they respect get shaken down with no recourse"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Laceworks",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027"
+                            ],
+    "related_entities":  [
+                             "The Laceworks",
+                             "Emberlace Systems",
+                             "Irontide Tidal Energy",
+                             "The Gradient Compact",
+                             "Circuit",
+                             "Copper",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Nesting Doll",
+                             "SHROUD",
+                             "Gold"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Striking genetic mosaic of East Asian (50%), Eastern European (28%), Northern European (11.2%), and South Asian (10.8%) ancestry. The blend creates distinctive warm medium golden-brown skin with subtle olive undertones and a unique facial geometry combining East Asian angular cheekbones with Eastern European jaw definition and South Asian depth. Features reflect the full complexity of the Ubiquitous Diaspora.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and compact, wiry muscle definition from constant movement through crowded streets. Low body fat, economical frame built for speed and navigation rather than strength.",
+                                 "hair_color":  "Color-cycling via follicular genemod: cycles through rust-red, copper, and near-black in slow waves throughout the day",
+                                 "hair_style":  "Close-cropped, textured, reveals scalp and ear geometry",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Gold and brown concentric hexagonal pattern (cosmetic gene-mod, appears non-human but natural to the eye)",
+                                 "skin_tone":  "Warm medium golden-brown with olive undertones, reflecting the harmonious blend of East Asian, Eastern European, Northern European, and South Asian ancestry",
+                                 "complexion":  "Sharp, angular cheekbones with East Asian prominence, combined with the stronger jaw and brow ridge structure of Eastern European heritage. Slight fullness in lower face from South Asian ancestry. Dark eye region characteristic of East Asian ancestry with prominent orbital definition. Skin clear but weathered from outdoor street work. Minimal grooming beyond functional â€” nail beds show dirt from handling hardware.",
+                                 "distinguishing_marks":  [
+                                                              "Subdermal haptic patch visible as faint rectangular outline on left inner forearm, roughly 4cm x 2cm, slightly raised when active",
+                                                              "Small scar at left eyebrow, likely from street incident, adds to alert expression"
+                                                          ],
+                                 "visible_augmentations":  "Hexagonal iris pattern immediately noticeable under close eye contact. Hair color-shift visible as slow gradient changes through rust-red and copper tones. Left forearm shows subtle haptic patch outline under skin when they flex.",
+                                 "posture_movement":  "Never still. Weight shifts constantly, always oriented toward exits and sightlines. Moves with economical grace through crowds â€” practiced at threading tight spaces. Hands are active, touching surfaces for balance and texture feedback. Eyes move before head does.",
+                                 "clothing_style":  "Tier 4-5 utilitarian: layered thermals in muted grays and browns, oversized lightweight jacket with excessive pockets (many empty for shed-and-abandon tactic), reinforced cargo pants with external straps and loops, boots two sizes too large for hidden insole cavity. Everything worn-in, patched, functional. No brands visible. Clothes designed for rapid disassembly and movement, not appearance. Carries a worn messenger bag across torso."
+                             },
+    "image_prompt":  "Erlingur Haraldsen-Park-HorvÃ¡th, GLMZ, lean 168cm figure in muted gray-brown utilitarian layers and oversized tactical jacket with excessive pockets, reinforced cargo pants, weathered messenger bag. Warm golden-brown skin with olive undertones, sharp angular cheekbones blending East Asian and Eastern European features, dark eye region, defined jaw. Color-cycling rust-red and copper short-cropped textured hair reveals ear geometry. Striking gold and brown concentric hexagonal cybernetic iris pattern catching light. Small scar at left eyebrow, alert expression. Visible haptic patch outline on left forearm. Constant fidgeting posture, weight shifted, hands active, eyes movingâ€”practiced urban street grace. Gritty street-level setting, neon-edged shadows, weathered surfaces, harsh overhead lighting catching hair color shifts and iris geometry. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  50,
+                             "Eastern European":  28,
+                             "Northern European":  11.2,
+                             "South Asian":  10.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  23.6
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  8.3,
+                                                               "Shanghainese":  3.2
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  14.9
+                                                          }
+                                           },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Bulgarian":  6.9,
+                                                                          "Croatian":  9.4
+                                                                      },
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  7
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  2.1,
+                                                                             "Romanian":  2.6
+                                                                         }
+                                                 },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Swiss German":  11.2
+                                                                   }
+                                                  },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  3.3,
+                                                                   "Tamil Sri Lankan":  0.7
+                                                               },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  1.3
+                                                              },
+                                                "Nepali":  {
+                                                               "Nepali":  5.5
+                                                           }
+                                            }
+                        },
+    "tier":  "2"
 }

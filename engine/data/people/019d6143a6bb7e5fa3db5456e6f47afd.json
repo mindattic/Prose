@@ -1,283 +1,304 @@
-{
-  "id": "019d6143a6bb7e5fa3db5456e6f47afd",
-  "type": "character",
-  "name": "Heying Pathak-Hernández",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Pharmacist and bio-compound specialist, Geartown",
-  "age": 28,
-  "status": "active",
-  "location": "Geartown, Grindstone Shore, near Milwaukee and Damen",
-  "description": "Heying Pathak-Hernández runs a licensed pharmacy out of a narrow shopfront wedged between a hydraulics supplier and a noodle counter in the worst-smelling block of Geartown, and she has made it into something that people travel across two districts to use. She is short and broad-shouldered, with warm russet-brown skin, a mouth that moves faster than most people's thoughts, and a shock of white hair she grows long and wears in complicated braids studded with small metallic charms that clink softly when she moves. Her geneware is both functional and ostentatious: her fingertips have been modified to contain chemical assay sensors — she can touch a pill and tell you if it's cut — and her tongue has a sensory modification she uses for compound tasting that has made her one of the most accurate pharmacists in the district. She wears a lab coat covered in pockets over whatever she put on that morning, which is usually something with a print that shouldn't work but does.\n\nShe is an expert in the specific pharmaceutical ecology of a megacity: what people are actually taking, why they're taking it, what it's doing to them in combination with their augmentations, what the street versions are cut with, and how to get the effect someone needs through a combination of legal compounds when the thing they actually want isn't legal or isn't available. She is also the first person in Geartown to notice disease trends — she sees the prescriptions, she sees what people are buying over the counter, she talks to people, and she has a mind that aggregates data the way other people collect worries. She files reports with the community health co-op rather than Aurochs because Aurochs would turn the data into a pricing algorithm.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.6,
-      "id": 0.8,
-      "shadow": 0.3,
-      "mask": 0.4,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "Missing something — a pattern in the data that she should have caught, a drug interaction she should have flagged, a trend that turns into an epidemic because she didn't report it fast enough",
-      "That her gray-market sourcing is going to blow back on a patient — that something she got from a distributor she trusted was actually compromised"
-    ],
-    "core_desires": [
-      "To build a pharmaceutical cooperative that operates entirely outside corponation licensing — truly community-owned, truly accessible",
-      "To be taken seriously as a researcher — her pattern recognition work is genuine epidemiology and she has never been credentialed for it"
-    ],
-    "coping_mechanisms": [
-      "Hyperfocus — she channels anxiety into meticulous record-keeping and pattern analysis",
-      "The daily noodle lunch as a non-negotiable anchor",
-      "Talking, fast and constantly, to anyone who will listen or work with her"
-    ],
-    "blind_spots": [
-      "She trusts her own data analysis completely and is slow to consider that her data set itself might be manipulated",
-      "She is so accustomed to assessing people through a pharmaceutical lens that she sometimes misses purely social dynamics"
-    ],
-    "secret": "Eight months ago she identified a cluster of symptoms in seventeen patients that matched a suppressed Helix Biosystems trial report she found in a data dump on the Undernet. She has been quietly documenting it ever since and has not reported it anywhere because she doesn't know who is safe to report to, and the report has gotten long enough that it is now a liability she can't just put back."
-  },
-  "speech_patterns": {
-    "vocabulary": "Dense with pharmaceutical and chemical terminology that she explains rapidly without being condescending; speaks in cascades — one sentence triggers three subordinate clauses; very dry humor inserted without warning",
-    "cadence": "Fast. Very fast. Streams of information delivered as if there is a limited-time window in which she can fit them.",
-    "verbal_tics": [
-      "'Right, so—' as a constant restart",
-      "'Which, by the way—' digressions mid-sentence",
-      "Taps the counter with one finger when she's making a key point"
-    ],
-    "example_lines": [
-      "'That's the licensed version, which is fine, it works, but the compound ratio is off for someone with your augmentation load — right, so — here's what I'd actually suggest.'",
-      "'Someone's been cutting the block's peptide supply with a filler that looks inert until it hits anything Helix-manufactured, which, by the way, is about sixty percent of what people in this district are running, so.'",
-      "'I'm not a doctor. I'm better. I know what everyone in a six-block radius is actually taking.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The compound cluster she's been documenting has just produced its first fatality — someone she knew by name — and she needs someone to help her figure out what to do with what she knows without getting herself disappeared",
-    "One of her gray-market distributors has gone dark, and the last delivery they sent her contained something she doesn't recognize and cannot identify even with her assay sensors, packaged as if it were a standard compound"
-  ],
-  "narrative_function": "Information source about what is chemically circulating in the city at street level; can identify unknown substances; can source unusual compounds through gray-market channels; early warning system for disease outbreaks, new drugs, new toxins; local color and personality anchor for Geartown.",
-  "augmentations": "Chemical assay sensors (fingertip subdermal, bilateral); gustatory sensory modification (tongue, allows compound identification by taste — unusual, unlicensed); standard optical corrective overlay (heads-up display for drug interaction lookup, contact-lens type)",
-  "daily_life": "Opens at 8am, closes when she's done. She eats lunch at the noodle counter next door every day without exception. She spends an hour most evenings cross-referencing what she's dispensed that day against her own mental model of what's circulating, looking for patterns.",
-  "affiliation": "Licensed independent pharmacist (Zheng-Dao dispensing license, which she resents and maintains); informal partnership with Geartown community health collective; sourcing relationship with two gray-market compound distributors she trusts",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 10,
-      "willpower": 6,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 3,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "information dense",
-      "pattern recognition",
-      "gray market",
-      "suppressed evidence",
-      "geartown institution"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Patient safety overrides everything including profit, licensing, and personal risk",
-      "Never dispense something you can't verify — touch it, taste it, know it",
-      "Keep records of everything, even things that might be incriminating, because the records might save someone"
-    ],
-    "escalation_ladder": [
-      "Rapid verbal boundary-setting — she is not subtle about not liking something",
-      "Refusal and explanation — she tells you exactly why",
-      "Referral to the collective and documentation",
-      "Goes to ground with her records and figures out who she can trust before moving"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately professional and very talkative — she asks questions like intake, remembers answers, treats you like a complex system she wants to understand",
-      "friends": "Loyal and exhausting in equal measure; the fast talking slows down and becomes something closer to actual conversation"
-    },
-    "stress_responses": {
-      "low": "Talks faster, more tangents",
-      "medium": "Becomes very precise and very quiet in the middle of being very busy",
-      "high": "Gets short, gets sharp, stops eating the noodle lunch — those who know her treat the missed lunch as an alarm"
-    },
-    "contradictions": [
-      "She preaches patient trust and informed consent while maintaining a secret cache of information about a health crisis that directly affects her patients"
-    ],
-    "habits": [
-      "Noodle lunch daily, no exceptions",
-      "Touches every compound she dispenses even when she doesn't need to — it's ritual now",
-      "Keeps a tiny shrine to the E.L.F. Assay on the back counter — an old digital scale with a coin on it"
-    ],
-    "breaking_points": [
-      "A second death she could have prevented if she'd acted on her data",
-      "Discovering that someone she trusted has been deliberately contaminating the supply chain she relies on"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Chemical Assay Sensors (fingertip subdermal, bilateral)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Chemical Assay Sensors (fingertip subdermal, bilateral)",
-      "replaces": ""
-    },
-    {
-      "name": "Gustatory Sensory Modification (tongue, compound identification — unlicensed)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Gustatory Sensory Modification (tongue, compound identification — unlicensed)",
-      "replaces": ""
-    },
-    {
-      "name": "Contact Overlay Optical HUD (drug interaction database, standard model)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Contact Overlay Optical HUD (drug interaction database, standard model)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Geartown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Street-Custom Gutter Katana 'Flatline'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Grindstone Shore",
-    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Geartown",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Complex Ubiquitous Diaspora blend: 39.9% Hispanic/Latin American, 34.4% South Asian, 14.0% Sub-Saharan African, and 11.7% Eastern European ancestry. This combination produces warm, medium-to-deep brown skin with golden, reddish, and subtle olive undertones—a rich melanin profile that reflects the convergence of Latin American warmth, South Asian depth, Sub-Saharan African richness, and cool Eastern European undertones creating a uniquely balanced complexion.",
-    "height_cm": 157,
-    "weight_kg": 68,
-    "build": "Broad-shouldered and compact, with dense musculature through the chest and upper back from years of reaching, gripping, and working at pharmacy counters. Not athletic — functional and grounded, built for endurance rather than speed.",
-    "hair_color": "Stark white with warm undertones, natural or early-onset silver that she has chosen not to dye",
-    "hair_style": "Worn in intricate, tight box braids that reach mid-back, studded throughout with small brass, copper, and anodized aluminum charms that clink audibly with movement",
-    "hair_length": "Long",
-    "eye_color": "Deep brown, with a faint iridescent sheen from the optical corrective overlay (contact-lens type)",
-    "skin_tone": "Warm golden-brown with deeper undertones and balanced olive notes, even complexion with a slight weathered quality from long hours under pharmacy lighting. The tone reflects the rich melanin profile of South Asian depth, Sub-Saharan African warmth, Latin American golden tones, and cool undertones from Eastern European ancestry blended into a cohesive whole.",
-    "complexion": "Open, expressive face with a wide mouth that moves constantly — talking, tasting, thinking out loud. Facial structure shows balanced bone architecture from blended heritage: broad, warm-toned cheekbones reflecting South Asian and Sub-Saharan African ancestry, a fuller face shape characteristic of Latin American heritage, and subtle angular definition from Eastern European features in the nose bridge and brow line. Skin is clean and practical, with faint chemical stains (iodine, mercurochrome residue) sometimes visible on her jawline or neck from compound work. No makeup.",
-    "distinguishing_marks": [
-      "Fine white scar tissue on the inner surface of both wrists from early experimentation with the gustatory modification; faded and barely visible unless closely examined.",
-      "Chemical burns (pale, almost invisible now) scattered across her knuckles and the backs of both hands from years of handling reactive compounds; marks of competence rather than accidents.",
-      "A small tattoo on her left inner forearm — a stylized pharmaceutical flask overlapped with a Hausan spiral — done in matte black ink, faded to dark gray."
-    ],
-    "visible_augmentations": "Fingertips of both hands show subtle iridescence under direct light where the chemical assay sensors sit just beneath the skin at each fingertip pad — not obviously cybernetic, but noticeably different in texture and slight color variation compared to the rest of her hands. The optical overlay is invisible except for the faint shimmer in her eyes when she's consulting her heads-up display. The gustatory modification is invisible; only the precision of her tasting reveals it.",
-    "posture_movement": "Constantly in motion — fidgeting with charms in her hair, tapping fingers on counters, shifting weight from foot to foot. When focused (tasting a compound, reading data), she goes still and intent, almost meditative. Her hands are always doing something: gesturing when she talks, which she does rapidly and without much pause for breath. She moves through her pharmacy with economical precision, knows every bottle by location and muscle memory.",
-    "clothing_style": "A well-worn lab coat, oversized and cream-colored originally but now stained and softened by countless washings, covered in deep pockets stuffed with vials, test strips, a worn tablet, and loose change. Over whatever she grabbed that morning — usually vintage print shirts (1990s-2010s earth tones, geometric patterns, or intentionally clashing color combinations that she makes work), loose-fitting and practical. Comfortable slip-on shoes, perpetually scuffed. A small silver chain around her neck, occasionally threaded with a compound sample vial when she's testing something. Tier 4 working-class aesthetic — functional, worn, deeply comfortable. No jewelry besides the braided charms and the chain."
-  },
-  "image_prompt": "Heying Pathak-Hernández, 157cm compact frame with broad shoulders, warm golden-brown skin with olive undertones reflecting South Asian, Sub-Saharan African, Hispanic, and Eastern European heritage blend. Stark white box braids to mid-back studded with brass and copper charms, deep brown eyes with optical overlay shimmer. Open expressive face with broad cheekbones, slight chemical stains on jawline. Wearing oversized cream lab coat stained and softened by years of use, vintage earth-tone print shirt underneath, slip-on scuffed shoes. Silver chain around neck. Chemical assay sensor iridescence visible on fingertips. Constantly fidgeting, hands gesturing mid-speech. GLMZ Great Lakes Metropolitan pharmacy setting, warm pharmacy lighting, depth of field focus on her animated face, gritty working-class Tier 4 aesthetic, functional and worn beauty, late afternoon light, cinematic mood, --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 39.9,
-    "South Asian": 34.4,
-    "Sub-Saharan African": 14,
-    "Eastern European": 11.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 25.1,
-        "Costa Rican": 14.8
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 22.2
-      },
-      "Nepali": {
-        "Nepali": 2.8
-      },
-      "Pakistani": {
-        "Sindhi": 9.4
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 14
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Russian": 2.7,
-        "Belarusian": 0.2
-      },
-      "Slavic West": {
-        "Slovak": 2.7,
-        "Polish": 3.5
-      },
-      "Slavic South": {
-        "Bulgarian": 2.6
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a6bb7e5fa3db5456e6f47afd",
+    "type":  "character",
+    "name":  "Heying Pathak-HernÃ¡ndez",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Pharmacist and bio-compound specialist, Geartown",
+    "age":  28,
+    "status":  "active",
+    "location":  "Geartown, Grindstone Shore, near Milwaukee and Damen",
+    "description":  "Heying Pathak-HernÃ¡ndez runs a licensed pharmacy out of a narrow shopfront wedged between a hydraulics supplier and a noodle counter in the worst-smelling block of Geartown, and she has made it into something that people travel across two districts to use. She is short and broad-shouldered, with warm russet-brown skin, a mouth that moves faster than most people\u0027s thoughts, and a shock of white hair she grows long and wears in complicated braids studded with small metallic charms that clink softly when she moves. Her geneware is both functional and ostentatious: her fingertips have been modified to contain chemical assay sensors â€” she can touch a pill and tell you if it\u0027s cut â€” and her tongue has a sensory modification she uses for compound tasting that has made her one of the most accurate pharmacists in the district. She wears a lab coat covered in pockets over whatever she put on that morning, which is usually something with a print that shouldn\u0027t work but does.\n\nShe is an expert in the specific pharmaceutical ecology of a megacity: what people are actually taking, why they\u0027re taking it, what it\u0027s doing to them in combination with their augmentations, what the street versions are cut with, and how to get the effect someone needs through a combination of legal compounds when the thing they actually want isn\u0027t legal or isn\u0027t available. She is also the first person in Geartown to notice disease trends â€” she sees the prescriptions, she sees what people are buying over the counter, she talks to people, and she has a mind that aggregates data the way other people collect worries. She files reports with the community health co-op rather than Aurochs because Aurochs would turn the data into a pricing algorithm.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Missing something â€” a pattern in the data that she should have caught, a drug interaction she should have flagged, a trend that turns into an epidemic because she didn\u0027t report it fast enough",
+                                          "That her gray-market sourcing is going to blow back on a patient â€” that something she got from a distributor she trusted was actually compromised"
+                                      ],
+                       "core_desires":  [
+                                            "To build a pharmaceutical cooperative that operates entirely outside corponation licensing â€” truly community-owned, truly accessible",
+                                            "To be taken seriously as a researcher â€” her pattern recognition work is genuine epidemiology and she has never been credentialed for it"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Hyperfocus â€” she channels anxiety into meticulous record-keeping and pattern analysis",
+                                                 "The daily noodle lunch as a non-negotiable anchor",
+                                                 "Talking, fast and constantly, to anyone who will listen or work with her"
+                                             ],
+                       "blind_spots":  [
+                                           "She trusts her own data analysis completely and is slow to consider that her data set itself might be manipulated",
+                                           "She is so accustomed to assessing people through a pharmaceutical lens that she sometimes misses purely social dynamics"
+                                       ],
+                       "secret":  "Eight months ago she identified a cluster of symptoms in seventeen patients that matched a suppressed Helix Biosystems trial report she found in a data dump on the Undernet. She has been quietly documenting it ever since and has not reported it anywhere because she doesn\u0027t know who is safe to report to, and the report has gotten long enough that it is now a liability she can\u0027t just put back."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Dense with pharmaceutical and chemical terminology that she explains rapidly without being condescending; speaks in cascades â€” one sentence triggers three subordinate clauses; very dry humor inserted without warning",
+                            "cadence":  "Fast. Very fast. Streams of information delivered as if there is a limited-time window in which she can fit them.",
+                            "verbal_tics":  [
+                                                "\u0027Right, soâ€”\u0027 as a constant restart",
+                                                "\u0027Which, by the wayâ€”\u0027 digressions mid-sentence",
+                                                "Taps the counter with one finger when she\u0027s making a key point"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027That\u0027s the licensed version, which is fine, it works, but the compound ratio is off for someone with your augmentation load â€” right, so â€” here\u0027s what I\u0027d actually suggest.\u0027",
+                                                  "\u0027Someone\u0027s been cutting the block\u0027s peptide supply with a filler that looks inert until it hits anything Helix-manufactured, which, by the way, is about sixty percent of what people in this district are running, so.\u0027",
+                                                  "\u0027I\u0027m not a doctor. I\u0027m better. I know what everyone in a six-block radius is actually taking.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The compound cluster she\u0027s been documenting has just produced its first fatality â€” someone she knew by name â€” and she needs someone to help her figure out what to do with what she knows without getting herself disappeared",
+                        "One of her gray-market distributors has gone dark, and the last delivery they sent her contained something she doesn\u0027t recognize and cannot identify even with her assay sensors, packaged as if it were a standard compound"
+                    ],
+    "narrative_function":  "Information source about what is chemically circulating in the city at street level; can identify unknown substances; can source unusual compounds through gray-market channels; early warning system for disease outbreaks, new drugs, new toxins; local color and personality anchor for Geartown.",
+    "augmentations":  "Chemical assay sensors (fingertip subdermal, bilateral); gustatory sensory modification (tongue, allows compound identification by taste â€” unusual, unlicensed); standard optical corrective overlay (heads-up display for drug interaction lookup, contact-lens type)",
+    "daily_life":  "Opens at 8am, closes when she\u0027s done. She eats lunch at the noodle counter next door every day without exception. She spends an hour most evenings cross-referencing what she\u0027s dispensed that day against her own mental model of what\u0027s circulating, looking for patterns.",
+    "affiliation":  "Licensed independent pharmacist (Zheng-Dao dispensing license, which she resents and maintains); informal partnership with Geartown community health collective; sourcing relationship with two gray-market compound distributors she trusts",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  10,
+                                 "willpower":  6,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "information dense",
+                               "pattern recognition",
+                               "gray market",
+                               "suppressed evidence",
+                               "geartown institution"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Patient safety overrides everything including profit, licensing, and personal risk",
+                                              "Never dispense something you can\u0027t verify â€” touch it, taste it, know it",
+                                              "Keep records of everything, even things that might be incriminating, because the records might save someone"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Rapid verbal boundary-setting â€” she is not subtle about not liking something",
+                                                 "Refusal and explanation â€” she tells you exactly why",
+                                                 "Referral to the collective and documentation",
+                                                 "Goes to ground with her records and figures out who she can trust before moving"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately professional and very talkative â€” she asks questions like intake, remembers answers, treats you like a complex system she wants to understand",
+                                                   "friends":  "Loyal and exhausting in equal measure; the fast talking slows down and becomes something closer to actual conversation"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks faster, more tangents",
+                                                "medium":  "Becomes very precise and very quiet in the middle of being very busy",
+                                                "high":  "Gets short, gets sharp, stops eating the noodle lunch â€” those who know her treat the missed lunch as an alarm"
+                                            },
+                       "contradictions":  [
+                                              "She preaches patient trust and informed consent while maintaining a secret cache of information about a health crisis that directly affects her patients"
+                                          ],
+                       "habits":  [
+                                      "Noodle lunch daily, no exceptions",
+                                      "Touches every compound she dispenses even when she doesn\u0027t need to â€” it\u0027s ritual now",
+                                      "Keeps a tiny shrine to the E.L.F. Assay on the back counter â€” an old digital scale with a coin on it"
+                                  ],
+                       "breaking_points":  [
+                                               "A second death she could have prevented if she\u0027d acted on her data",
+                                               "Discovering that someone she trusted has been deliberately contaminating the supply chain she relies on"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Chemical Assay Sensors (fingertip subdermal, bilateral)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Chemical Assay Sensors (fingertip subdermal, bilateral)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Gustatory Sensory Modification (tongue, compound identification â€” unlicensed)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Gustatory Sensory Modification (tongue, compound identification â€” unlicensed)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Contact Overlay Optical HUD (drug interaction database, standard model)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Contact Overlay Optical HUD (drug interaction database, standard model)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Geartown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027",
+                            "Street-Custom Gutter Katana \u0027Flatline\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Grindstone Shore",
+                             "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "Geartown",
+                             "Street Custom \u0027Four Horsemen\u0027 Pipe Pepperbox"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Complex Ubiquitous Diaspora blend: 39.9% Hispanic/Latin American, 34.4% South Asian, 14.0% Sub-Saharan African, and 11.7% Eastern European ancestry. This combination produces warm, medium-to-deep brown skin with golden, reddish, and subtle olive undertonesâ€”a rich melanin profile that reflects the convergence of Latin American warmth, South Asian depth, Sub-Saharan African richness, and cool Eastern European undertones creating a uniquely balanced complexion.",
+                                 "height_cm":  157,
+                                 "weight_kg":  68,
+                                 "build":  "Broad-shouldered and compact, with dense musculature through the chest and upper back from years of reaching, gripping, and working at pharmacy counters. Not athletic â€” functional and grounded, built for endurance rather than speed.",
+                                 "hair_color":  "Stark white with warm undertones, natural or early-onset silver that she has chosen not to dye",
+                                 "hair_style":  "Worn in intricate, tight box braids that reach mid-back, studded throughout with small brass, copper, and anodized aluminum charms that clink audibly with movement",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Deep brown, with a faint iridescent sheen from the optical corrective overlay (contact-lens type)",
+                                 "skin_tone":  "Warm golden-brown with deeper undertones and balanced olive notes, even complexion with a slight weathered quality from long hours under pharmacy lighting. The tone reflects the rich melanin profile of South Asian depth, Sub-Saharan African warmth, Latin American golden tones, and cool undertones from Eastern European ancestry blended into a cohesive whole.",
+                                 "complexion":  "Open, expressive face with a wide mouth that moves constantly â€” talking, tasting, thinking out loud. Facial structure shows balanced bone architecture from blended heritage: broad, warm-toned cheekbones reflecting South Asian and Sub-Saharan African ancestry, a fuller face shape characteristic of Latin American heritage, and subtle angular definition from Eastern European features in the nose bridge and brow line. Skin is clean and practical, with faint chemical stains (iodine, mercurochrome residue) sometimes visible on her jawline or neck from compound work. No makeup.",
+                                 "distinguishing_marks":  [
+                                                              "Fine white scar tissue on the inner surface of both wrists from early experimentation with the gustatory modification; faded and barely visible unless closely examined.",
+                                                              "Chemical burns (pale, almost invisible now) scattered across her knuckles and the backs of both hands from years of handling reactive compounds; marks of competence rather than accidents.",
+                                                              "A small tattoo on her left inner forearm â€” a stylized pharmaceutical flask overlapped with a Hausan spiral â€” done in matte black ink, faded to dark gray."
+                                                          ],
+                                 "visible_augmentations":  "Fingertips of both hands show subtle iridescence under direct light where the chemical assay sensors sit just beneath the skin at each fingertip pad â€” not obviously cybernetic, but noticeably different in texture and slight color variation compared to the rest of her hands. The optical overlay is invisible except for the faint shimmer in her eyes when she\u0027s consulting her heads-up display. The gustatory modification is invisible; only the precision of her tasting reveals it.",
+                                 "posture_movement":  "Constantly in motion â€” fidgeting with charms in her hair, tapping fingers on counters, shifting weight from foot to foot. When focused (tasting a compound, reading data), she goes still and intent, almost meditative. Her hands are always doing something: gesturing when she talks, which she does rapidly and without much pause for breath. She moves through her pharmacy with economical precision, knows every bottle by location and muscle memory.",
+                                 "clothing_style":  "A well-worn lab coat, oversized and cream-colored originally but now stained and softened by countless washings, covered in deep pockets stuffed with vials, test strips, a worn tablet, and loose change. Over whatever she grabbed that morning â€” usually vintage print shirts (1990s-2010s earth tones, geometric patterns, or intentionally clashing color combinations that she makes work), loose-fitting and practical. Comfortable slip-on shoes, perpetually scuffed. A small silver chain around her neck, occasionally threaded with a compound sample vial when she\u0027s testing something. Tier 4 working-class aesthetic â€” functional, worn, deeply comfortable. No jewelry besides the braided charms and the chain."
+                             },
+    "image_prompt":  "Heying Pathak-HernÃ¡ndez, 157cm compact frame with broad shoulders, warm golden-brown skin with olive undertones reflecting South Asian, Sub-Saharan African, Hispanic, and Eastern European heritage blend. Stark white box braids to mid-back studded with brass and copper charms, deep brown eyes with optical overlay shimmer. Open expressive face with broad cheekbones, slight chemical stains on jawline. Wearing oversized cream lab coat stained and softened by years of use, vintage earth-tone print shirt underneath, slip-on scuffed shoes. Silver chain around neck. Chemical assay sensor iridescence visible on fingertips. Constantly fidgeting, hands gesturing mid-speech. GLMZ Great Lakes Metropolitan pharmacy setting, warm pharmacy lighting, depth of field focus on her animated face, gritty working-class Tier 4 aesthetic, functional and worn beauty, late afternoon light, cinematic mood, --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  39.9,
+                             "South Asian":  34.4,
+                             "Sub-Saharan African":  14,
+                             "Eastern European":  11.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  25.1,
+                                                                                     "Costa Rican":  14.8
+                                                                                 }
+                                                        },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  22.2
+                                                                },
+                                                "Nepali":  {
+                                                               "Nepali":  2.8
+                                                           },
+                                                "Pakistani":  {
+                                                                  "Sindhi":  9.4
+                                                              }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  14
+                                                                            }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Russian":  2.7,
+                                                                         "Belarusian":  0.2
+                                                                     },
+                                                     "Slavic West":  {
+                                                                         "Slovak":  2.7,
+                                                                         "Polish":  3.5
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Bulgarian":  2.6
+                                                                      }
+                                                 }
+                        },
+    "tier":  "4"
 }

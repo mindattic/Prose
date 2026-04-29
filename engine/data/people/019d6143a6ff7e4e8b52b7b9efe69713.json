@@ -1,315 +1,346 @@
-{
-  "id": "019d6143a6ff7e4e8b52b7b9efe69713",
-  "type": "character",
-  "name": "Dinora Möller-Montalvo",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Q-zero ghost, scrapper, and itinerant data-thief",
-  "age": 17,
-  "status": "active",
-  "location": "Waukegan Industrial the Gray Zone, pipe warren sector nine, near Wacker and State",
-  "description": "Dinora Möller-Montalvo is a lean teenager who moves like water finding its way downhill — always the path of least resistance, always finding the gap. They are mixed-dark, their skin a deep warm brown with a faint bioluminescent shimmer along their collarbones that they did not pay for and cannot explain, a geneware expression that surfaced at puberty from some deep ancestral combination no one has mapped. Their hair is cut close on the sides and left wild on top, dyed a persistent rust-orange that clashes magnificently with everything. Their eyes are dark with irises that shift to a green-gold in bright light. They wear clothes assembled with an engineer's practicality — lots of pockets, nothing that snags, shoes that fit.\n\nDinora Möller-Montalvo has no legal identity whatsoever. They were born in a transit shelter to a mother who died of an untreated infection three years later, before any papers were filed. They grew up in the pipe warrens of the Waukegan Industrial the Gray Zone among other Q-zeros, learning to exist in the margins of a city that has never officially acknowledged them. They are not bitter about this — or rather, they have metabolized the bitterness into something more useful: a comprehensive and functional understanding of how to extract resources from a system that believes you don't exist. They are quick, funny, and deeply lonely in a way they would violently deny.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.4,
-      "id": 0.8,
-      "shadow": 0.5,
-      "mask": 0.6,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "being captured and assigned an identity by a corponation — losing the freedom of nonexistence",
-      "dying before anyone knows they were here"
-    ],
-    "core_desires": [
-      "to build something permanent and real with their hands",
-      "to be known by at least one person who would grieve for them"
-    ],
-    "coping_mechanisms": [
-      "compulsive collecting of data scraps with no practical value",
-      "humor as deflection",
-      "building elaborate mechanical objects from scavenged parts and then dismantling them"
-    ],
-    "blind_spots": [
-      "believes they are completely self-sufficient when they are actually deeply embedded in an informal support network they refuse to acknowledge"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, dense with technical jargon and transit-slang, drops in Tuvaluan phrases when emotional without noticing",
-    "cadence": "Rapid-fire when engaged, goes completely silent when processing something difficult",
-    "verbal_tics": [
-      "'Right, okay, so—'",
-      "trailing off mid-sentence and restarting from a different angle",
-      "'No, that's — no.' (self-correction habit)"
-    ],
-    "example_lines": [
-      "'Right, okay, so the node is hot but only between shift changes, which gives you a nine-minute window, which is fine if you move like you mean it.'",
-      "'No, that's — no. I don't need anything from anyone. I was just asking because — it doesn't matter. Forget it.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Tokoua's encrypted Q-zero registry has accidentally captured documentation of an Axiom corponation illegal dumping operation — they don't realize what they have, but someone else does and is searching the Gray Zone for the source",
-    "Their pirated neural cache chip contains fragments of a previous owner's memories and one of those fragments is a location, a code, and a name that someone very powerful wants buried"
-  ],
-  "narrative_function": "Information source with unique access (can go where identity-checked systems block others), quest giver for Q-zero community issues, represents the human cost of digital identity systems, potential ally for characters operating outside official channels.",
-  "augmentations": "Bioluminescent shimmer along the collarbones (natural geneware expression, not installed). A pirated neural cache chip they found in a scrapper haul and installed themselves with mixed results — it stores data but occasionally dumps it at random.",
-  "daily_life": "Scavenges industrial components from the Gray Zone's decommissioned machinery during off-hours, sells what they can to grey-market parts dealers, and spends evenings cracking low-security data nodes for the information inside, which they trade or simply hoard.",
-  "affiliation": "Loose affiliation with the Waukegan Q-zero community, no formal ties",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 6,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": -2,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "q-zero ghost",
-      "scrapper",
-      "data-thief",
-      "community archivist (unofficial)",
-      "bioluminescent"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never give a corponation ID officer a real answer",
-      "If you can reach it, you can take it",
-      "Protect Q-zero community information above everything else"
-    ],
-    "escalation_ladder": [
-      "Joke and deflect",
-      "Go evasive and non-committal",
-      "Disappear mid-conversation without warning",
-      "If cornered, cause a scene loud enough to draw a crowd and escape in the confusion"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Performs confidence aggressively — lots of banter, takes up space, never stands still",
-      "friends": "Drops the performance and becomes awkwardly sincere, asks too many questions, forgets to be cool"
-    },
-    "stress_responses": {
-      "low": "Talks faster and starts touching everything within reach",
-      "medium": "Goes very still and very quiet, which is alarming to people who know them",
-      "high": "Runs. Just runs. Figures the rest out later."
-    },
-    "contradictions": [
-      "Insists they don't trust anyone but maintains an elaborate encrypted record of people they care about; claims to want no permanent connections but keeps coming back to the same locations and the same people"
-    ],
-    "habits": [
-      "Leaves small improvised mechanical trinkets in places they have been as a kind of unsigned signature",
-      "Eats standing up, always facing a door or exit",
-      "Hums Tuvaluan work songs while cracking data nodes"
-    ],
-    "breaking_points": [
-      "Someone threatening to report a Q-zero community member to identity enforcement — Tokoua will do something reckless and disproportionate"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "pirated neural cache chip (self-installed, unstable — intermittent data dumps)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "pirated neural cache chip (self-installed, unstable — intermittent data dumps)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Waukegan Industrial the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 0: Born in a Waukegan Industrial the Gray Zone transit shelter, no papers filed",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 3: Mother dies of untreated respiratory infection",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 5-13: Raised communally in the pipe warren Q-zero community",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 14: Begins serious data-cracking, first major scrapper haul",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 15: Installs pirated neural cache chip; begins the Q-zero registry project",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 17: Present day",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Waukegan Industrial Shelf",
-    "Axiom Systems Neural Dead Drop NDD-2",
-    "WELLSPRING",
-    "Stonepath Logistics",
-    "Blackpipe Corridor",
-    "Lacuna Genomics",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Arcturus KS-7 'Nursery'",
-    "Neural Palate",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Gold",
-    "Elena Vasquez-9"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Complex diaspora ancestry: predominantly Hispanic/Latin American (36.6%) with significant Sub-Saharan African (22.7%) and Middle Eastern (22.5%) heritage, Northern European (15.3%), and minor South Asian (2.9%) admixture. Physical features reflect this multifaceted blend—warm deep brown skin with golden and olive undertones from the Latin American, African, and Middle Eastern components, dark brown eyes with warm depth and natural green-gold shift in bright light, facial structure showing the fuller lips and defined cheekbones characteristic of African and Latin American ancestry combined with Middle Eastern nose and bone prominence.",
-    "height_cm": 168,
-    "weight_kg": 52,
-    "build": "Lean and wiry with defined musculature from constant climbing and crawling through industrial infrastructure. No excess fat. Shoulders slightly narrow but functional. Moves with an economical, practiced grace.",
-    "hair_color": "Rust-orange dye over natural dark brown base, showing fade at the roots",
-    "hair_style": "Undercut — sides clipped to bare scalp, top left long and tousled, styled with fingers rather than tools",
-    "hair_length": "Medium on top, very short sides",
-    "eye_color": "Dark brown irises that shift to green-gold in bright light",
-    "skin_tone": "Warm deep brown with golden and olive undertones reflecting the blend of Latin American, Sub-Saharan African, and Middle Eastern ancestry",
-    "complexion": "Clear except for minor scrapes and healing calluses on knuckles and palms. No acne or visible scarring on face. Skin has a faint iridescent quality in certain light along the collarbones and upper chest — the bioluminescent geneware expression appears as a subtle pearl-green shimmer beneath the skin, most visible at dusk or in dim light. Facial structure shows fuller lips and broader cheekbones characteristic of African and Latin American heritage with Middle Eastern nose and bone structure.",
-    "distinguishing_marks": [
-      "Faint bioluminescent shimmer running along both collarbones and down upper sternum in a branching pattern, like lightning under skin — natural geneware expression, appears greenish-pearl in low light",
-      "Small circular scar on right palm from a scrapper tool slip, approximately 1cm diameter",
-      "Thin burn mark across left forearm (5cm long) from contact with warm machinery, pale against skin"
-    ],
-    "visible_augmentations": "The bioluminescent geneware shimmer is visible along the collarbones and chest, most apparent in low light. No visible chrome, no external prosthetics. The pirated neural cache chip is subcutaneous at the base of the skull, hidden under hair.",
-    "posture_movement": "Moves with minimal energy expenditure — a scrapper's economy of motion. Hunched slightly forward at rest, as if mid-crouch. Steps quietly, places feet with precision. Hands are restless when still. Head tilts often, listening. Leans rather than sits. Takes corners at angles.",
-    "clothing_style": "Tier 5 scrapper practical — modified surplus coveralls with additional pockets sewn in by hand, reinforced at knees and elbows. Beneath: layered thermal base (salvaged corporate merchandise, now shapeless). Feet: broken-in cargo boots with mismatched laces. A too-large Shinohara Industries jacket (stolen, probably 2219 vintage) worn open as a vest-cape. Webbing belt with a carabiner, flashlight, and lockpick set hung at various points. Everything is worn, functional, and colored by the greasy dust of the Gray Zone. No branding except faded logos they haven't bothered to remove."
-  },
-  "image_prompt": "Dinora Möller-Montalvo, lean 168cm scrapper with warm deep brown skin glowing faintly with bioluminescent green-pearl shimmer along collarbones in dim light, dark brown eyes with natural gold-green shift, fuller lips and high cheekbones reflecting African and Latin American heritage with Middle Eastern bone structure, rust-orange dyed hair with dark roots, undercut sides shaved bare, top tousled and long. Muscular from climbing, calloused hands, 5cm burn scar on left forearm, 1cm scar on right palm. Wearing modified grey surplus coveralls with sewn pockets, reinforced knees and elbows, layered thermal base underneath, mismatched-laced cargo boots, stolen vintage Shinohara Industries jacket worn open as vest-cape, webbing belt with carabiner and lockpick set. Standing in industrial GLMZ setting, hunched forward in scrapper's crouch, hands restless, head tilted listening. Greasy dust coating everything. Dusk lighting with bioluminescence subtle and ethereal. Moody, focused, economical movement. Neo-noir Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 36.6,
-    "Sub-Saharan African": 22.7,
-    "Middle Eastern": 22.5,
-    "Northern European": 15.3,
-    "South Asian": 2.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Dominican": 36.6
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Tanzanian": 19.1,
-        "Ethiopian": 3.6
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Afghan Dari": 5.5
-      },
-      "Kurdish": {
-        "Kurdish": 6.9
-      },
-      "Arab Levantine": {
-        "Jordanian": 6.4,
-        "Palestinian": 3.7
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Swiss German": 15.3
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Tamil": 2.9
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6ff7e4e8b52b7b9efe69713",
+    "type":  "character",
+    "name":  "Dinora MÃ¶ller-Montalvo",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Q-zero ghost, scrapper, and itinerant data-thief",
+    "age":  17,
+    "status":  "active",
+    "location":  "Waukegan Industrial the Gray Zone, pipe warren sector nine, near Wacker and State",
+    "description":  "Dinora MÃ¶ller-Montalvo is a lean teenager who moves like water finding its way downhill â€” always the path of least resistance, always finding the gap. They are mixed-dark, their skin a deep warm brown with a faint bioluminescent shimmer along their collarbones that they did not pay for and cannot explain, a geneware expression that surfaced at puberty from some deep ancestral combination no one has mapped. Their hair is cut close on the sides and left wild on top, dyed a persistent rust-orange that clashes magnificently with everything. Their eyes are dark with irises that shift to a green-gold in bright light. They wear clothes assembled with an engineer\u0027s practicality â€” lots of pockets, nothing that snags, shoes that fit.\n\nDinora MÃ¶ller-Montalvo has no legal identity whatsoever. They were born in a transit shelter to a mother who died of an untreated infection three years later, before any papers were filed. They grew up in the pipe warrens of the Waukegan Industrial the Gray Zone among other Q-zeros, learning to exist in the margins of a city that has never officially acknowledged them. They are not bitter about this â€” or rather, they have metabolized the bitterness into something more useful: a comprehensive and functional understanding of how to extract resources from a system that believes you don\u0027t exist. They are quick, funny, and deeply lonely in a way they would violently deny.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being captured and assigned an identity by a corponation â€” losing the freedom of nonexistence",
+                                          "dying before anyone knows they were here"
+                                      ],
+                       "core_desires":  [
+                                            "to build something permanent and real with their hands",
+                                            "to be known by at least one person who would grieve for them"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "compulsive collecting of data scraps with no practical value",
+                                                 "humor as deflection",
+                                                 "building elaborate mechanical objects from scavenged parts and then dismantling them"
+                                             ],
+                       "blind_spots":  [
+                                           "believes they are completely self-sufficient when they are actually deeply embedded in an informal support network they refuse to acknowledge"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, dense with technical jargon and transit-slang, drops in Tuvaluan phrases when emotional without noticing",
+                            "cadence":  "Rapid-fire when engaged, goes completely silent when processing something difficult",
+                            "verbal_tics":  [
+                                                "\u0027Right, okay, soâ€”\u0027",
+                                                "trailing off mid-sentence and restarting from a different angle",
+                                                "\u0027No, that\u0027s â€” no.\u0027 (self-correction habit)"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Right, okay, so the node is hot but only between shift changes, which gives you a nine-minute window, which is fine if you move like you mean it.\u0027",
+                                                  "\u0027No, that\u0027s â€” no. I don\u0027t need anything from anyone. I was just asking because â€” it doesn\u0027t matter. Forget it.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Tokoua\u0027s encrypted Q-zero registry has accidentally captured documentation of an Axiom corponation illegal dumping operation â€” they don\u0027t realize what they have, but someone else does and is searching the Gray Zone for the source",
+                        "Their pirated neural cache chip contains fragments of a previous owner\u0027s memories and one of those fragments is a location, a code, and a name that someone very powerful wants buried"
+                    ],
+    "narrative_function":  "Information source with unique access (can go where identity-checked systems block others), quest giver for Q-zero community issues, represents the human cost of digital identity systems, potential ally for characters operating outside official channels.",
+    "augmentations":  "Bioluminescent shimmer along the collarbones (natural geneware expression, not installed). A pirated neural cache chip they found in a scrapper haul and installed themselves with mixed results â€” it stores data but occasionally dumps it at random.",
+    "daily_life":  "Scavenges industrial components from the Gray Zone\u0027s decommissioned machinery during off-hours, sells what they can to grey-market parts dealers, and spends evenings cracking low-security data nodes for the information inside, which they trade or simply hoard.",
+    "affiliation":  "Loose affiliation with the Waukegan Q-zero community, no formal ties",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  6,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "q-zero ghost",
+                               "scrapper",
+                               "data-thief",
+                               "community archivist (unofficial)",
+                               "bioluminescent"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never give a corponation ID officer a real answer",
+                                              "If you can reach it, you can take it",
+                                              "Protect Q-zero community information above everything else"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Joke and deflect",
+                                                 "Go evasive and non-committal",
+                                                 "Disappear mid-conversation without warning",
+                                                 "If cornered, cause a scene loud enough to draw a crowd and escape in the confusion"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Performs confidence aggressively â€” lots of banter, takes up space, never stands still",
+                                                   "friends":  "Drops the performance and becomes awkwardly sincere, asks too many questions, forgets to be cool"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks faster and starts touching everything within reach",
+                                                "medium":  "Goes very still and very quiet, which is alarming to people who know them",
+                                                "high":  "Runs. Just runs. Figures the rest out later."
+                                            },
+                       "contradictions":  [
+                                              "Insists they don\u0027t trust anyone but maintains an elaborate encrypted record of people they care about; claims to want no permanent connections but keeps coming back to the same locations and the same people"
+                                          ],
+                       "habits":  [
+                                      "Leaves small improvised mechanical trinkets in places they have been as a kind of unsigned signature",
+                                      "Eats standing up, always facing a door or exit",
+                                      "Hums Tuvaluan work songs while cracking data nodes"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone threatening to report a Q-zero community member to identity enforcement â€” Tokoua will do something reckless and disproportionate"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "pirated neural cache chip (self-installed, unstable â€” intermittent data dumps)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "pirated neural cache chip (self-installed, unstable â€” intermittent data dumps)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Waukegan Industrial the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 0: Born in a Waukegan Industrial the Gray Zone transit shelter, no papers filed",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 3: Mother dies of untreated respiratory infection",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 5-13: Raised communally in the pipe warren Q-zero community",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 14: Begins serious data-cracking, first major scrapper haul",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 15: Installs pirated neural cache chip; begins the Q-zero registry project",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 17: Present day",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Waukegan Industrial Shelf",
+                             "Axiom Systems Neural Dead Drop NDD-2",
+                             "WELLSPRING",
+                             "Stonepath Logistics",
+                             "Blackpipe Corridor",
+                             "Lacuna Genomics",
+                             "LifeWire LumiFace Bioluminescent Subdermal Accent",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Neural Palate",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "Gold",
+                             "Elena Vasquez-9"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora ancestry: predominantly Hispanic/Latin American (36.6%) with significant Sub-Saharan African (22.7%) and Middle Eastern (22.5%) heritage, Northern European (15.3%), and minor South Asian (2.9%) admixture. Physical features reflect this multifaceted blendâ€”warm deep brown skin with golden and olive undertones from the Latin American, African, and Middle Eastern components, dark brown eyes with warm depth and natural green-gold shift in bright light, facial structure showing the fuller lips and defined cheekbones characteristic of African and Latin American ancestry combined with Middle Eastern nose and bone prominence.",
+                                 "height_cm":  168,
+                                 "weight_kg":  52,
+                                 "build":  "Lean and wiry with defined musculature from constant climbing and crawling through industrial infrastructure. No excess fat. Shoulders slightly narrow but functional. Moves with an economical, practiced grace.",
+                                 "hair_color":  "Rust-orange dye over natural dark brown base, showing fade at the roots",
+                                 "hair_style":  "Undercut â€” sides clipped to bare scalp, top left long and tousled, styled with fingers rather than tools",
+                                 "hair_length":  "Medium on top, very short sides",
+                                 "eye_color":  "Dark brown irises that shift to green-gold in bright light",
+                                 "skin_tone":  "Warm deep brown with golden and olive undertones reflecting the blend of Latin American, Sub-Saharan African, and Middle Eastern ancestry",
+                                 "complexion":  "Clear except for minor scrapes and healing calluses on knuckles and palms. No acne or visible scarring on face. Skin has a faint iridescent quality in certain light along the collarbones and upper chest â€” the bioluminescent geneware expression appears as a subtle pearl-green shimmer beneath the skin, most visible at dusk or in dim light. Facial structure shows fuller lips and broader cheekbones characteristic of African and Latin American heritage with Middle Eastern nose and bone structure.",
+                                 "distinguishing_marks":  [
+                                                              "Faint bioluminescent shimmer running along both collarbones and down upper sternum in a branching pattern, like lightning under skin â€” natural geneware expression, appears greenish-pearl in low light",
+                                                              "Small circular scar on right palm from a scrapper tool slip, approximately 1cm diameter",
+                                                              "Thin burn mark across left forearm (5cm long) from contact with warm machinery, pale against skin"
+                                                          ],
+                                 "visible_augmentations":  "The bioluminescent geneware shimmer is visible along the collarbones and chest, most apparent in low light. No visible chrome, no external prosthetics. The pirated neural cache chip is subcutaneous at the base of the skull, hidden under hair.",
+                                 "posture_movement":  "Moves with minimal energy expenditure â€” a scrapper\u0027s economy of motion. Hunched slightly forward at rest, as if mid-crouch. Steps quietly, places feet with precision. Hands are restless when still. Head tilts often, listening. Leans rather than sits. Takes corners at angles.",
+                                 "clothing_style":  "Tier 5 scrapper practical â€” modified surplus coveralls with additional pockets sewn in by hand, reinforced at knees and elbows. Beneath: layered thermal base (salvaged corporate merchandise, now shapeless). Feet: broken-in cargo boots with mismatched laces. A too-large Shinohara Industries jacket (stolen, probably 2219 vintage) worn open as a vest-cape. Webbing belt with a carabiner, flashlight, and lockpick set hung at various points. Everything is worn, functional, and colored by the greasy dust of the Gray Zone. No branding except faded logos they haven\u0027t bothered to remove."
+                             },
+    "image_prompt":  "Dinora MÃ¶ller-Montalvo, lean 168cm scrapper with warm deep brown skin glowing faintly with bioluminescent green-pearl shimmer along collarbones in dim light, dark brown eyes with natural gold-green shift, fuller lips and high cheekbones reflecting African and Latin American heritage with Middle Eastern bone structure, rust-orange dyed hair with dark roots, undercut sides shaved bare, top tousled and long. Muscular from climbing, calloused hands, 5cm burn scar on left forearm, 1cm scar on right palm. Wearing modified grey surplus coveralls with sewn pockets, reinforced knees and elbows, layered thermal base underneath, mismatched-laced cargo boots, stolen vintage Shinohara Industries jacket worn open as vest-cape, webbing belt with carabiner and lockpick set. Standing in industrial GLMZ setting, hunched forward in scrapper\u0027s crouch, hands restless, head tilted listening. Greasy dust coating everything. Dusk lighting with bioluminescence subtle and ethereal. Moody, focused, economical movement. Neo-noir Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  36.6,
+                             "Sub-Saharan African":  22.7,
+                             "Middle Eastern":  22.5,
+                             "Northern European":  15.3,
+                             "South Asian":  2.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Dominican":  36.6
+                                                                          }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Tanzanian":  19.1,
+                                                                             "Ethiopian":  3.6
+                                                                         }
+                                                    },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Afghan Dari":  5.5
+                                                               },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  6.9
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Jordanian":  6.4,
+                                                                          "Palestinian":  3.7
+                                                                      }
+                                               },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Swiss German":  15.3
+                                                                   }
+                                                  },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Tamil":  2.9
+                                                           }
+                                            }
+                        },
+    "tier":  "1"
 }

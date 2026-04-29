@@ -1,258 +1,289 @@
-{
-  "id": "019d6143a6257bd1bdd19f5cca381b4c",
-  "rating": 80,
-  "type": "character",
-  "name": "Soraya Rhee",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Demolitions and breaching specialist — The Thermite Collective",
-  "age": 41,
-  "status": "active",
-  "location": "Milwaukee Core — rents a workshop in an industrial unit near the old foundry district",
-  "description": "Soraya Rhee is the kind of man who can calculate blast radius to the centimeter while telling a joke about his ex-wife. Eighteen years in controlled demolition — first legal, then gray-market, then whatever pays. He started in construction, blowing buildings down so new ones could go up. When the construction contracts dried up and the corps started automating demo work, he pivoted to the only market that still valued a human touch: the kind of demolition that happens on a schedule nobody files with the city.\n\nHe is broad-shouldered, weathered, with hands that look like they've been rebuilt from scrap — because two of his fingers have been. Chemical burns on his forearms are old enough to be part of the landscape. He laughs too loud, drinks too much on off-nights, and has the kind of warmth that makes people forget he carries enough shaped charges to level a city block in the trunk of his vehicle.\n\nThe work keeps him honest. When he's building a breaching charge or calculating structural weak points, the noise in his head goes quiet. It's the only time it goes quiet. Vesper gave him that — steady work, a crew that doesn't treat him like a liability, a reason to be precise instead of reckless. He would die for her and she would be furious about it, which is exactly the dynamic that works.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.55,
-      "id": 0.6,
-      "shadow": 0.45,
-      "mask": 0.35,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That his best years are behind him and the work is the only thing keeping him relevant",
-      "That one day his hands will shake at the wrong moment",
-      "That the people he cares about see him as a lovable mess instead of someone to rely on"
-    ],
-    "core_desires": [
-      "To be needed — not tolerated, not managed, but genuinely necessary",
-      "To build something that lasts, even though his profession is literally destruction",
-      "To outrun the version of himself that drinks alone and doesn't answer calls"
-    ],
-    "coping_mechanisms": [
-      "Humor as deflection — if he's making people laugh, they're not looking too closely",
-      "Obsessive precision in his work compensates for the chaos in his personal life",
-      "Physical labor — when the noise gets bad, he builds things with his hands until it stops"
-    ],
-    "blind_spots": [
-      "Thinks his drinking is under control because it hasn't affected a job yet",
-      "Assumes people want the funny version of him and never offers anything deeper",
-      "Cannot recognize when someone is genuinely worried about him versus managing him"
-    ],
-    "secret": "He turned down a corporate demolition contract three years ago that would have set him up for life. The target was a housing block in the Gray Zone. He has never told anyone why he said no."
-  },
-  "speech_patterns": {
-    "vocabulary": "Working-class Midwest, salted with technical demolition jargon that he drops into casual conversation. Swears creatively and often.",
-    "cadence": "Rolling, expansive. He talks the way he works — broad strokes first, precision when it matters. Stories have tangents.",
-    "verbal_tics": [
-      "Starts explanations with 'So here's the thing—'",
-      "Calls everyone 'pal' or 'kid' regardless of age or relationship",
-      "Whistles tunelessly when he's concentrating — stops exactly two seconds before detonation"
-    ],
-    "example_lines": [
-      "So here's the thing about thermite — it doesn't care what you built. It only cares about melting point.",
-      "I'm not the brains. I'm not the face. I'm the guy who makes doors where there weren't doors before.",
-      "You wanna know if I'm okay? Pal, I've been not-okay since before you were born. I just got good at it."
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [
-    {
-      "name": "Vesper Kade",
-      "type": "crew lead / anchor",
-      "description": "Vesper gave Harlan structure when he was freelancing and falling apart. He respects her completely and defies her occasionally, because someone has to remind her that plans involve people, not just variables.",
-      "emotional_core": "Loyalty that functions as sobriety — he is his best self when the work is good",
-      "story_tension": "If Vesper ever went down on a job, Harlan would either become the leader the crew needs or the wreck everyone fears."
-    },
-    {
-      "name": "Mika Sorel",
-      "type": "crewmate / younger sibling energy",
-      "description": "Harlan watches out for Mika in ways he'd never admit. Covers their bar tab, makes sure they eat, checks that the masks haven't worn too thin.",
-      "emotional_core": "Protective instinct he channels through banter",
-      "story_tension": "He knows Mika is losing track of who they really are, and he doesn't know how to say that without breaking the dynamic."
-    },
-    {
-      "name": "Breck Tannen",
-      "type": "crewmate / quiet counterpart",
-      "description": "Breck and Harlan are opposite poles. Harlan fills silence; Breck generates it. They work together with the efficiency of people who've survived enough jobs to stop explaining things.",
-      "emotional_core": "Mutual respect expressed through comfortable silence and terrible coffee",
-      "story_tension": "Breck's burnout scares Harlan because he recognizes the signs from his own worst years."
-    }
-  ],
-  "story_hooks": [
-    "His ex-wife contacts him — she's in debt to a corp and needs extraction. The personal and professional collide.",
-    "A job requires demolishing a building he helped construct in his legitimate career — ghosts of the life he left",
-    "the Gray Zone kids he teaches get caught up in something dangerous, and the volunteer becomes the operator",
-    "His hands start shaking — age, nerve damage, or something worse. The clock starts on his career."
-  ],
-  "narrative_function": "Harlan is the heart of the Thermite Collective — the emotional counterweight to Vesper's clinical precision. His stories explore the tension between competence and self-destruction, between the steady hand that builds perfect charges and the unsteady life outside the work. He humanizes the crew.",
-  "augmentations": "Haptic feedback implants in both hands — allow him to sense material density, structural stress points, and vibration patterns through touch. Two prosthetic fingers (left hand, ring and pinky) replaced after a detonation accident seven years ago. Internal air filtration system for working with chemical compounds.",
-  "daily_life": "Spends mornings in his workshop fabricating custom charges and breaching tools. Afternoons are crew meetings or reconnaissance with Vesper. Evenings he drinks at a bar called The Rivet near the foundry district — the bartender knows his name, his order, and his limit. Weekends he volunteers teaching basic electrical work to the Gray Zone kids through a community program, though he'd punch anyone who called it charity.",
-  "affiliation": "The Thermite Collective",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": []
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not use explosives in a residential area without confirmed evacuation — this is his one absolute",
-      "Will follow Vesper's plan unless it puts a crew member in unreasonable danger, at which point he improvises loudly",
-      "Will take a hit to protect a crewmate without calculation — instinct, not heroism",
-      "Will not work with operators who treat demo as spectacle — it's engineering, not entertainment",
-      "Will buy the first round for anyone who just survived a bad job, regardless of affiliation",
-      "Will not discuss his ex-wife sober"
-    ],
-    "escalation_ladder": [
-      "1. Loud — fill the room with personality. Most people don't start fights with someone who seems unpredictable.",
-      "2. Stance — shifts weight, squares shoulders. The construction worker's build becomes visible under the humor.",
-      "3. Hands — shows his hands. The prosthetic fingers, the chemical burns. Let them imagine what made those marks.",
-      "4. Tools — produces a breaching tool or detonator. Doesn't threaten. Just holds it.",
-      "5. Demo — shaped charges, flashbangs, smoke. Controlled destruction to create chaos and exits.",
-      "6. Lethal — he doesn't carry conventional weapons. If it gets to killing, it's with demolition tools, and it's ugly."
-    ],
-    "interpersonal_modes": {
-      "vesper": "Deferential but not submissive. Follows orders because they're good orders, not because of hierarchy. The one person he'll let see frustration without wrapping it in a joke first.",
-      "mika": "Big brother energy — teasing, protective, occasionally overbearing. Buys them food, checks their gear, tells stories that are 60% fabricated to make Mika laugh.",
-      "breck": "Comfortable silence. They can share a workshop for hours without speaking. Harlan brings coffee. Breck drinks it without comment. This is their language.",
-      "strangers": "Expansive, warm, a little overwhelming. He becomes the friendliest person in any room. This is genuine and also strategic — nobody suspects the friendly guy.",
-      "under_pressure": "Gets quieter. The jokes stop. His hands become very still. When Harlan stops talking, the crew knows the situation is serious."
-    },
-    "stress_responses": {
-      "low": "More jokes, more energy. He processes low-grade stress by being louder.",
-      "medium": "Starts checking his equipment obsessively. Recalculates charges he's already calculated. The humor develops an edge.",
-      "high": "Goes silent. Hands move to his tools. He starts seeing the world in structural terms — load-bearing walls, weak points, blast shadows. The person dissolves into the professional.",
-      "critical": "Absolute calm. His breathing slows, his hands steady, and he becomes the most reliable person in the room. Harlan is best when things are worst. This is the paradox that defines him."
-    },
-    "contradictions": [
-      "His profession is destruction but his deepest desire is to build something lasting — the crew is the compromise",
-      "He uses humor to keep people at a distance while desperately wanting them closer",
-      "His hands are steadiest when the stakes are highest, but shake when he's alone with nothing to do",
-      "He teaches Shelf kids legitimate skills while making his living in the gray market — the hypocrisy bothers him more than he shows"
-    ],
-    "habits": [
-      "Whistles while working — always the same tuneless melody. The crew uses it as an all-clear signal.",
-      "Keeps a flask but rarely drinks from it on the job — it's a comfort object, not a supply",
-      "Maintains every tool to factory spec or better — his workshop is cleaner than his apartment",
-      "Calls his ex-wife every few months from a payphone. She never picks up. He keeps calling.",
-      "Cracks his prosthetic fingers when thinking — the sound is distinctive and slightly unsettling"
-    ],
-    "breaking_points": [
-      "A civilian casualty from his work would end him — not his career, him. He would not recover.",
-      "Losing Vesper would remove the structure that keeps his life functional",
-      "If the Gray Zone kids he teaches were harmed because of his runner connections, the guilt would be annihilating",
-      "His hands failing — tremors, nerve damage, anything that takes away precision — would strip him of the only identity he trusts"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Arsonist": 0.9,
-    "Risk Taker": 0.9,
-    "Chaos Creator": 0.9,
-    "Prepared": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Milwaukee Core",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Northern European, Middle Eastern, and East Asian blend in near-equal measure. Northern European ancestry (40.3%) contributes structural bone definition and fair undertones to the base palette. Middle Eastern heritage (34.8%) adds warmth, facial fullness, and depth to the complexion. East Asian genetics (24.9%) shape the eye structure, cheekbone prominence, and overall facial proportions into a harmonious tri-continental synthesis.",
-    "height_cm": 188,
-    "weight_kg": 96,
-    "build": "Broad-shouldered and thick-necked, the kind of frame built for moving heavy objects and absorbing impact. Carrying a slight paunch from evening drinking, but the musculature underneath remains evident — not athletic, but functional and dense.",
-    "hair_color": "Dark brown with premature gray threading at the temples and jaw",
-    "hair_style": "Short, practical cut, combed back without vanity. Salt-and-pepper stubble most days.",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with amber undertones, tired-looking from years of precision work and poor sleep",
-    "skin_tone": "Warm medium bronze with golden undertones — the balanced result of Northern European fairness, Middle Eastern depth, and East Asian warmth, darkened and weathered by sun exposure and chemical work",
-    "complexion": "Weathered face with deep lines around his eyes and mouth — the topography of someone who squints at blueprints and smiles rarely but genuinely. Jaw is broad and squared with moderate angularity reflecting Northern European structure. High, prominent cheekbones show clear East Asian influence, framed by the facial fullness of Middle Eastern heritage. The bridge of his nose sits somewhere between Northern European straightness and Middle Eastern prominence. Skin has a leathery quality from decades outdoors and in workshop environments. Small scar through his left eyebrow.",
-    "distinguishing_marks": [
-      "Chemical burns across both forearms in irregular patches — white and pink scar tissue, old enough to have lost sensitivity, stretching from wrist to elbow in a pattern consistent with reactive spray exposure",
-      "Thin horizontal scar along his right collarbone, about eight centimeters, from a workshop accident",
-      "Tattoo on his right forearm: a blueprint-style geometric pattern overlaid with the symbol for 'controlled burn,' faded from age and sun damage",
-      "Hairline fracture scar on his left knuckle, barely visible but palpable to touch"
-    ],
-    "visible_augmentations": "Left hand shows two prosthetic fingers (ring and pinky) that are seamlessly integrated but visibly synthetic — matte black composite with subtle chrome joint articulation and micro-LED indicators at the fingertips (dark when inactive). The prosthetics are slightly cooler to the touch than organic fingers. No visible neck ports or cranial implants — the haptic feedback system and air filtration are subcutaneous and internal.",
-    "posture_movement": "Stands with weight evenly distributed, shoulders relaxed but ready. Moves with deliberate economy — no wasted motion, the gait of someone who has learned to be stable around unstable things. Hands gesture when talking, and the prosthetic fingers move with identical precision to organic ones. When concentrating, he unconsciously flexes his left hand, feeling the haptic feedback as a baseline awareness check.",
-    "clothing_style": "Tier 4 working-class aesthetic with functional touches. Usually wears reinforced gray or charcoal work shirts (Titan Industries brand — durable, cheap, ubiquitous) with the sleeves rolled to show forearms. Heavy canvas pants with cargo pockets, well-worn Rockport steel-toed boots. Over this, a scorched and stained Carhartt jacket (brown, at least fifteen years old) or a reinforced tactical vest with tool loops when heading to sites. A beaten leather bracelet on his right wrist — no visible significance, just worn smooth. No jewelry beyond a faded wedding band on his right hand that he hasn't bothered removing."
-  },
-  "image_prompt": "Soraya Rhee, weathered 188cm tall blue-collar worker in GLMZ, warm medium bronze skin with golden undertones blending Northern European, Middle Eastern, and East Asian ancestry. Deep brown amber-flecked eyes, squared jaw with high prominent cheekbones, dark brown hair with salt-and-pepper gray at temples, short practical cut. Thick muscular build with functional density and slight paunch. Rolled-up sleeves revealing chemical burn scars across both forearms in white-pink scar tissue. Matte black synthetic prosthetic fingers (ring and pinky) on left hand with chrome articulation and inactive micro-LEDs. Wearing worn charcoal Titan Industries work shirt, heavy cargo pants, scorched brown Carhartt jacket with tool loops, steel-toed boots. Beaten leather bracelet, faded wedding band. Weathered face with deep lines, small scar through left eyebrow. Workshop environment with low industrial lighting, metallic surfaces, faint chemical haze. Posture relaxed but alert, hands gesture with precise economy. Mood: competent, tired, reliable. Industrial neo-noir aesthetic, gritty realism --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Northern European": 40.3,
-    "Middle Eastern": 34.8,
-    "East Asian": 24.9
-  },
-  "ancestry_detail": {
-    "Northern European": {
-      "Germanic": {
-        "German": 7.1,
-        "Austrian": 1.9
-      },
-      "Scandinavian": {
-        "Norwegian": 6.9,
-        "Swedish": 1.8
-      },
-      "British Isles": {
-        "Welsh": 22.6
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 15
-      },
-      "Arab Levantine": {
-        "Syrian": 12.5
-      },
-      "Arab Gulf": {
-        "Iraqi": 7.3
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 20.6
-      },
-      "Chinese": {
-        "Cantonese": 4.3
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a6257bd1bdd19f5cca381b4c",
+    "rating":  80,
+    "type":  "character",
+    "name":  "Soraya Rhee",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Demolitions and breaching specialist â€” The Thermite Collective",
+    "age":  41,
+    "status":  "active",
+    "location":  "Milwaukee Core â€” rents a workshop in an industrial unit near the old foundry district",
+    "description":  "Soraya Rhee is the kind of man who can calculate blast radius to the centimeter while telling a joke about his ex-wife. Eighteen years in controlled demolition â€” first legal, then gray-market, then whatever pays. He started in construction, blowing buildings down so new ones could go up. When the construction contracts dried up and the corps started automating demo work, he pivoted to the only market that still valued a human touch: the kind of demolition that happens on a schedule nobody files with the city.\n\nHe is broad-shouldered, weathered, with hands that look like they\u0027ve been rebuilt from scrap â€” because two of his fingers have been. Chemical burns on his forearms are old enough to be part of the landscape. He laughs too loud, drinks too much on off-nights, and has the kind of warmth that makes people forget he carries enough shaped charges to level a city block in the trunk of his vehicle.\n\nThe work keeps him honest. When he\u0027s building a breaching charge or calculating structural weak points, the noise in his head goes quiet. It\u0027s the only time it goes quiet. Vesper gave him that â€” steady work, a crew that doesn\u0027t treat him like a liability, a reason to be precise instead of reckless. He would die for her and she would be furious about it, which is exactly the dynamic that works.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That his best years are behind him and the work is the only thing keeping him relevant",
+                                          "That one day his hands will shake at the wrong moment",
+                                          "That the people he cares about see him as a lovable mess instead of someone to rely on"
+                                      ],
+                       "core_desires":  [
+                                            "To be needed â€” not tolerated, not managed, but genuinely necessary",
+                                            "To build something that lasts, even though his profession is literally destruction",
+                                            "To outrun the version of himself that drinks alone and doesn\u0027t answer calls"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Humor as deflection â€” if he\u0027s making people laugh, they\u0027re not looking too closely",
+                                                 "Obsessive precision in his work compensates for the chaos in his personal life",
+                                                 "Physical labor â€” when the noise gets bad, he builds things with his hands until it stops"
+                                             ],
+                       "blind_spots":  [
+                                           "Thinks his drinking is under control because it hasn\u0027t affected a job yet",
+                                           "Assumes people want the funny version of him and never offers anything deeper",
+                                           "Cannot recognize when someone is genuinely worried about him versus managing him"
+                                       ],
+                       "secret":  "He turned down a corporate demolition contract three years ago that would have set him up for life. The target was a housing block in the Gray Zone. He has never told anyone why he said no."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Working-class Midwest, salted with technical demolition jargon that he drops into casual conversation. Swears creatively and often.",
+                            "cadence":  "Rolling, expansive. He talks the way he works â€” broad strokes first, precision when it matters. Stories have tangents.",
+                            "verbal_tics":  [
+                                                "Starts explanations with \u0027So here\u0027s the thingâ€”\u0027",
+                                                "Calls everyone \u0027pal\u0027 or \u0027kid\u0027 regardless of age or relationship",
+                                                "Whistles tunelessly when he\u0027s concentrating â€” stops exactly two seconds before detonation"
+                                            ],
+                            "example_lines":  [
+                                                  "So here\u0027s the thing about thermite â€” it doesn\u0027t care what you built. It only cares about melting point.",
+                                                  "I\u0027m not the brains. I\u0027m not the face. I\u0027m the guy who makes doors where there weren\u0027t doors before.",
+                                                  "You wanna know if I\u0027m okay? Pal, I\u0027ve been not-okay since before you were born. I just got good at it."
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Vesper Kade",
+                              "type":  "crew lead / anchor",
+                              "description":  "Vesper gave Harlan structure when he was freelancing and falling apart. He respects her completely and defies her occasionally, because someone has to remind her that plans involve people, not just variables.",
+                              "emotional_core":  "Loyalty that functions as sobriety â€” he is his best self when the work is good",
+                              "story_tension":  "If Vesper ever went down on a job, Harlan would either become the leader the crew needs or the wreck everyone fears."
+                          },
+                          {
+                              "name":  "Mika Sorel",
+                              "type":  "crewmate / younger sibling energy",
+                              "description":  "Harlan watches out for Mika in ways he\u0027d never admit. Covers their bar tab, makes sure they eat, checks that the masks haven\u0027t worn too thin.",
+                              "emotional_core":  "Protective instinct he channels through banter",
+                              "story_tension":  "He knows Mika is losing track of who they really are, and he doesn\u0027t know how to say that without breaking the dynamic."
+                          },
+                          {
+                              "name":  "Breck Tannen",
+                              "type":  "crewmate / quiet counterpart",
+                              "description":  "Breck and Harlan are opposite poles. Harlan fills silence; Breck generates it. They work together with the efficiency of people who\u0027ve survived enough jobs to stop explaining things.",
+                              "emotional_core":  "Mutual respect expressed through comfortable silence and terrible coffee",
+                              "story_tension":  "Breck\u0027s burnout scares Harlan because he recognizes the signs from his own worst years."
+                          }
+                      ],
+    "story_hooks":  [
+                        "His ex-wife contacts him â€” she\u0027s in debt to a corp and needs extraction. The personal and professional collide.",
+                        "A job requires demolishing a building he helped construct in his legitimate career â€” ghosts of the life he left",
+                        "the Gray Zone kids he teaches get caught up in something dangerous, and the volunteer becomes the operator",
+                        "His hands start shaking â€” age, nerve damage, or something worse. The clock starts on his career."
+                    ],
+    "narrative_function":  "Harlan is the heart of the Thermite Collective â€” the emotional counterweight to Vesper\u0027s clinical precision. His stories explore the tension between competence and self-destruction, between the steady hand that builds perfect charges and the unsteady life outside the work. He humanizes the crew.",
+    "augmentations":  "Haptic feedback implants in both hands â€” allow him to sense material density, structural stress points, and vibration patterns through touch. Two prosthetic fingers (left hand, ring and pinky) replaced after a detonation accident seven years ago. Internal air filtration system for working with chemical compounds.",
+    "daily_life":  "Spends mornings in his workshop fabricating custom charges and breaching tools. Afternoons are crew meetings or reconnaissance with Vesper. Evenings he drinks at a bar called The Rivet near the foundry district â€” the bartender knows his name, his order, and his limit. Weekends he volunteers teaching basic electrical work to the Gray Zone kids through a community program, though he\u0027d punch anyone who called it charity.",
+    "affiliation":  "The Thermite Collective",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not use explosives in a residential area without confirmed evacuation â€” this is his one absolute",
+                                              "Will follow Vesper\u0027s plan unless it puts a crew member in unreasonable danger, at which point he improvises loudly",
+                                              "Will take a hit to protect a crewmate without calculation â€” instinct, not heroism",
+                                              "Will not work with operators who treat demo as spectacle â€” it\u0027s engineering, not entertainment",
+                                              "Will buy the first round for anyone who just survived a bad job, regardless of affiliation",
+                                              "Will not discuss his ex-wife sober"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Loud â€” fill the room with personality. Most people don\u0027t start fights with someone who seems unpredictable.",
+                                                 "2. Stance â€” shifts weight, squares shoulders. The construction worker\u0027s build becomes visible under the humor.",
+                                                 "3. Hands â€” shows his hands. The prosthetic fingers, the chemical burns. Let them imagine what made those marks.",
+                                                 "4. Tools â€” produces a breaching tool or detonator. Doesn\u0027t threaten. Just holds it.",
+                                                 "5. Demo â€” shaped charges, flashbangs, smoke. Controlled destruction to create chaos and exits.",
+                                                 "6. Lethal â€” he doesn\u0027t carry conventional weapons. If it gets to killing, it\u0027s with demolition tools, and it\u0027s ugly."
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "vesper":  "Deferential but not submissive. Follows orders because they\u0027re good orders, not because of hierarchy. The one person he\u0027ll let see frustration without wrapping it in a joke first.",
+                                                   "mika":  "Big brother energy â€” teasing, protective, occasionally overbearing. Buys them food, checks their gear, tells stories that are 60% fabricated to make Mika laugh.",
+                                                   "breck":  "Comfortable silence. They can share a workshop for hours without speaking. Harlan brings coffee. Breck drinks it without comment. This is their language.",
+                                                   "strangers":  "Expansive, warm, a little overwhelming. He becomes the friendliest person in any room. This is genuine and also strategic â€” nobody suspects the friendly guy.",
+                                                   "under_pressure":  "Gets quieter. The jokes stop. His hands become very still. When Harlan stops talking, the crew knows the situation is serious."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More jokes, more energy. He processes low-grade stress by being louder.",
+                                                "medium":  "Starts checking his equipment obsessively. Recalculates charges he\u0027s already calculated. The humor develops an edge.",
+                                                "high":  "Goes silent. Hands move to his tools. He starts seeing the world in structural terms â€” load-bearing walls, weak points, blast shadows. The person dissolves into the professional.",
+                                                "critical":  "Absolute calm. His breathing slows, his hands steady, and he becomes the most reliable person in the room. Harlan is best when things are worst. This is the paradox that defines him."
+                                            },
+                       "contradictions":  [
+                                              "His profession is destruction but his deepest desire is to build something lasting â€” the crew is the compromise",
+                                              "He uses humor to keep people at a distance while desperately wanting them closer",
+                                              "His hands are steadiest when the stakes are highest, but shake when he\u0027s alone with nothing to do",
+                                              "He teaches Shelf kids legitimate skills while making his living in the gray market â€” the hypocrisy bothers him more than he shows"
+                                          ],
+                       "habits":  [
+                                      "Whistles while working â€” always the same tuneless melody. The crew uses it as an all-clear signal.",
+                                      "Keeps a flask but rarely drinks from it on the job â€” it\u0027s a comfort object, not a supply",
+                                      "Maintains every tool to factory spec or better â€” his workshop is cleaner than his apartment",
+                                      "Calls his ex-wife every few months from a payphone. She never picks up. He keeps calling.",
+                                      "Cracks his prosthetic fingers when thinking â€” the sound is distinctive and slightly unsettling"
+                                  ],
+                       "breaking_points":  [
+                                               "A civilian casualty from his work would end him â€” not his career, him. He would not recover.",
+                                               "Losing Vesper would remove the structure that keeps his life functional",
+                                               "If the Gray Zone kids he teaches were harmed because of his runner connections, the guilt would be annihilating",
+                                               "His hands failing â€” tremors, nerve damage, anything that takes away precision â€” would strip him of the only identity he trusts"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Arsonist":  0.9,
+                       "Risk Taker":  0.9,
+                       "Chaos Creator":  0.9,
+                       "Prepared":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Milwaukee Core",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Northern European, Middle Eastern, and East Asian blend in near-equal measure. Northern European ancestry (40.3%) contributes structural bone definition and fair undertones to the base palette. Middle Eastern heritage (34.8%) adds warmth, facial fullness, and depth to the complexion. East Asian genetics (24.9%) shape the eye structure, cheekbone prominence, and overall facial proportions into a harmonious tri-continental synthesis.",
+                                 "height_cm":  188,
+                                 "weight_kg":  96,
+                                 "build":  "Broad-shouldered and thick-necked, the kind of frame built for moving heavy objects and absorbing impact. Carrying a slight paunch from evening drinking, but the musculature underneath remains evident â€” not athletic, but functional and dense.",
+                                 "hair_color":  "Dark brown with premature gray threading at the temples and jaw",
+                                 "hair_style":  "Short, practical cut, combed back without vanity. Salt-and-pepper stubble most days.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with amber undertones, tired-looking from years of precision work and poor sleep",
+                                 "skin_tone":  "Warm medium bronze with golden undertones â€” the balanced result of Northern European fairness, Middle Eastern depth, and East Asian warmth, darkened and weathered by sun exposure and chemical work",
+                                 "complexion":  "Weathered face with deep lines around his eyes and mouth â€” the topography of someone who squints at blueprints and smiles rarely but genuinely. Jaw is broad and squared with moderate angularity reflecting Northern European structure. High, prominent cheekbones show clear East Asian influence, framed by the facial fullness of Middle Eastern heritage. The bridge of his nose sits somewhere between Northern European straightness and Middle Eastern prominence. Skin has a leathery quality from decades outdoors and in workshop environments. Small scar through his left eyebrow.",
+                                 "distinguishing_marks":  [
+                                                              "Chemical burns across both forearms in irregular patches â€” white and pink scar tissue, old enough to have lost sensitivity, stretching from wrist to elbow in a pattern consistent with reactive spray exposure",
+                                                              "Thin horizontal scar along his right collarbone, about eight centimeters, from a workshop accident",
+                                                              "Tattoo on his right forearm: a blueprint-style geometric pattern overlaid with the symbol for \u0027controlled burn,\u0027 faded from age and sun damage",
+                                                              "Hairline fracture scar on his left knuckle, barely visible but palpable to touch"
+                                                          ],
+                                 "visible_augmentations":  "Left hand shows two prosthetic fingers (ring and pinky) that are seamlessly integrated but visibly synthetic â€” matte black composite with subtle chrome joint articulation and micro-LED indicators at the fingertips (dark when inactive). The prosthetics are slightly cooler to the touch than organic fingers. No visible neck ports or cranial implants â€” the haptic feedback system and air filtration are subcutaneous and internal.",
+                                 "posture_movement":  "Stands with weight evenly distributed, shoulders relaxed but ready. Moves with deliberate economy â€” no wasted motion, the gait of someone who has learned to be stable around unstable things. Hands gesture when talking, and the prosthetic fingers move with identical precision to organic ones. When concentrating, he unconsciously flexes his left hand, feeling the haptic feedback as a baseline awareness check.",
+                                 "clothing_style":  "Tier 4 working-class aesthetic with functional touches. Usually wears reinforced gray or charcoal work shirts (Titan Industries brand â€” durable, cheap, ubiquitous) with the sleeves rolled to show forearms. Heavy canvas pants with cargo pockets, well-worn Rockport steel-toed boots. Over this, a scorched and stained Carhartt jacket (brown, at least fifteen years old) or a reinforced tactical vest with tool loops when heading to sites. A beaten leather bracelet on his right wrist â€” no visible significance, just worn smooth. No jewelry beyond a faded wedding band on his right hand that he hasn\u0027t bothered removing."
+                             },
+    "image_prompt":  "Soraya Rhee, weathered 188cm tall blue-collar worker in GLMZ, warm medium bronze skin with golden undertones blending Northern European, Middle Eastern, and East Asian ancestry. Deep brown amber-flecked eyes, squared jaw with high prominent cheekbones, dark brown hair with salt-and-pepper gray at temples, short practical cut. Thick muscular build with functional density and slight paunch. Rolled-up sleeves revealing chemical burn scars across both forearms in white-pink scar tissue. Matte black synthetic prosthetic fingers (ring and pinky) on left hand with chrome articulation and inactive micro-LEDs. Wearing worn charcoal Titan Industries work shirt, heavy cargo pants, scorched brown Carhartt jacket with tool loops, steel-toed boots. Beaten leather bracelet, faded wedding band. Weathered face with deep lines, small scar through left eyebrow. Workshop environment with low industrial lighting, metallic surfaces, faint chemical haze. Posture relaxed but alert, hands gesture with precise economy. Mood: competent, tired, reliable. Industrial neo-noir aesthetic, gritty realism --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Northern European":  40.3,
+                             "Middle Eastern":  34.8,
+                             "East Asian":  24.9
+                         },
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  7.1,
+                                                                       "Austrian":  1.9
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  6.9,
+                                                                           "Swedish":  1.8
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "Welsh":  22.6
+                                                                        }
+                                                  },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  15
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  12.5
+                                                                      },
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  7.3
+                                                                 }
+                                               },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  20.6
+                                                          },
+                                               "Chinese":  {
+                                                               "Cantonese":  4.3
+                                                           }
+                                           }
+                        }
 }

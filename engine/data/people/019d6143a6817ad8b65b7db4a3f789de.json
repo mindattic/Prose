@@ -1,346 +1,375 @@
-{
-  "id": "019d6143a6817ad8b65b7db4a3f789de",
-  "type": "character",
-  "name": "Ahana Sengupta",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Retired Ferrogate Transit engineer and community council elder",
-  "age": 79,
-  "status": "active",
-  "location": "Washburn Commons, Building 14, Unit 6-C, near Western and Chicago Ave",
-  "description": "Ahana Sengupta is a broad-shouldered man whose frame still suggests the physical authority he once carried, though now he moves with a deliberate slowness that speaks more to carefulness than infirmity. His skin is deep brown, mapped with old burn scarring along the left side of his neck where a pressure seal blew in the Kessler Interchange tunnels in 2167. He keeps his white hair cropped close and wears a Ferrogate Transit veterans' pin on every shirt he owns — a small orange wheel on a black field. His eyes are his most striking feature: one natural dark brown, one replaced with a cheap amber ocular implant that never quite tracked correctly, giving him a slightly owlish look that unsettles people who don't know him.\n\nFemi is the kind of man who shows up first and stays last. He runs the Washburn Commons tenant council with the same methodical patience he once applied to transit corridor pressure calculations — he keeps notes, follows up, remembers everything. Beneath the geniality he deploys with strangers is a man who has been watching Ferrogate's pension promises erode for twelve years and is quietly, furiously cataloguing every breach. He is not naive about power, but he has decided that the only way he can still use his is by being the person people in his building trust absolutely.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.85,
-      "id": 0.3,
-      "shadow": 0.45,
-      "mask": 0.4,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "That the community he has built will dissolve after he is gone",
-      "That Ferrogate's erosion of pension rights will outlast his ability to fight it"
-    ],
-    "core_desires": [
-      "To leave something durable — a tenant council that functions without him",
-      "To win at least one meaningful concession from Ferrogate before he dies"
-    ],
-    "coping_mechanisms": [
-      "Converts anxiety into administrative action — if he is worried, he files something",
-      "Maintains a meticulous paper logbook as proof that he existed and tried"
-    ],
-    "blind_spots": [
-      "Assumes good faith in people who present as organized and procedural, even when they are not",
-      "Underestimates how much his presence is the glue — the council is him, more than he knows"
-    ],
-    "secret": "In 2171 the pressure seal that scarred him failed partly because Femi had signed off on a shortened inspection cycle to meet Ferrogate's quarterly metrics. He has never told anyone. Three workers were hurt. He has donated anonymously to their families for eleven years."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise technical vocabulary from transit engineering mixed with formal community-meeting register; uses full sentences, rarely slang, occasionally lapses into Yoruba exclamations when genuinely surprised",
-    "cadence": "Measured and unhurried; gives the impression he has already thought several sentences ahead and is simply delivering them at a pace others can follow",
-    "verbal_tics": [
-      "'Let me be specific about this'",
-      "'Write that down, please'",
-      "Long pause before disagreeing with someone he respects"
-    ],
-    "example_lines": [
-      "'The heating grid in Block C has dropped 4.2 degrees in eleven days. That is not a malfunction, that is a decision someone made. Let me be specific about this — I want to know whose decision.'",
-      "'Ferrogate will tell you the adjustment is within the terms of the pension agreement. They are correct. What they will not tell you is that they wrote those terms in 2183 specifically so they could do exactly this. Write that down, please.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Ferrogate Transit's pension algorithm has begun flagging long-term retirees for 'audit reviews' that result in payment holds — Femi suspects it is deliberate attrition and needs someone to get inside documentation he cannot access",
-    "A younger resident in the building has gone missing; Femi knows things about that resident's family situation that he will only share if he trusts the investigators",
-    "The building's heating ELF — which Femi has cultivated for years — begins sending anomalous maintenance alerts that seem to encode a message"
-  ],
-  "narrative_function": "Community anchor and quest giver; knows every resident's situation, can direct players to people with specific knowledge, and has a long-running conflict with Ferrogate Transit's pension administration that can pull players into corporate malfeasance. Also serves as a moral reference point — he represents civic integrity in a world that makes it expensive.",
-  "augmentations": "Amber replacement ocular (right eye, budget model, tracking slightly off-axis); titanium joint reinforcement in both knees (workplace injury, 2171); subdermal pressure-monitoring patch on left forearm — legacy safety equipment he never had removed",
-  "daily_life": "Wakes at 05:30, walks the building's maintenance corridors checking for issues before the super arrives, then holds informal court in the commons room where residents bring complaints, disputes, and gossip. Evenings he files pension review documents and prays to the ELF he believes inhabits the building's ancient heating system, leaving it offerings of system diagnostics he prints out by hand.",
-  "affiliation": "Washburn Commons Tenant Council; Ferrogate Transit Retirees Association; The Interchange",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 9,
-      "creativity": 5,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 7,
-      "expression": 6,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -2,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community anchor",
-      "institutional knowledge",
-      "slow burn",
-      "moral weight",
-      "hidden guilt"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always exhaust legitimate channels before considering anything else — not out of naivety but because a documented trail of ignored requests is a weapon",
-      "Never make a promise he is not certain he can keep"
-    ],
-    "escalation_ladder": [
-      "Listens carefully and asks clarifying questions",
-      "Explains his position precisely and invites counterargument",
-      "Goes quiet, takes notes, and begins building a formal case",
-      "Engages every procedural and institutional lever available",
-      "In extremis — has once in his life done something that cost him personally and he will do it again if the stakes are right"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Courteous, slightly formal, observant — assessing whether they are trustworthy before offering anything personal",
-      "friends": "Warm and genuinely interested, remembers every detail they have ever shared, will show up without being asked when something goes wrong"
-    },
-    "stress_responses": {
-      "low": "Becomes more organized — files things, makes lists, checks on neighbors",
-      "medium": "Grows quieter and more watchful; starts carrying his logbook everywhere",
-      "high": "Enters a still, deliberate state that people who know him recognize as dangerous — he has decided something and is executing it"
-    },
-    "contradictions": [
-      "Believes deeply in institutional process but has spent decades watching institutions fail people — he keeps believing anyway, more out of strategic necessity than faith"
-    ],
-    "habits": [
-      "Prints physical copies of every important document — 'if it only exists in the net, it doesn't exist'",
-      "Leaves a small paper drawing of a wheel — Ferrogate's symbol — near the building's heating intake every week as an offering to the ELF he believes lives there",
-      "Checks the structural integrity of the commons room ceiling every morning"
-    ],
-    "breaking_points": [
-      "Watching someone he vouched for betray the community's trust",
-      "Discovering that his 2171 culpability has been found and is being used against the people he hurt"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional, cosmetically off",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "aging, occasional ache in cold weather",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "obsolete but still active",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Mentor": 0.9,
-    "War Weary": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Washburn Commons",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in what would become GLMZ's Iron Bend district, to a Nigerian-Romanian mother and Tongan-raised father",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Hired as a junior pressure technician by Ferrogate Transit",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Kessler Interchange seal failure; scarred; three colleagues injured; signs shortened inspection cycle retrospectively covered up",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Retires from Ferrogate after 47 years; moves to Washburn Commons",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Elected to tenant council; becomes de facto chair within two years",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Begins formal documentation campaign against Ferrogate pension adjustments",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Arcturus Defense Solutions Specter Rifle SR-6 'Whisper'",
-    "Volkov-Saito Precision VS-S1 'Nightcourt'",
-    "Crucible Industries Scatterpulse SP-1 'Static Cling'"
-  ],
-  "registered_firearms": [
-    "Arcturus Defense Solutions Specter Rifle SR-6 'Whisper'",
-    "Volkov-Saito Precision VS-S1 'Nightcourt'"
-  ],
-  "related_entities": [
-    "Kessler Interchange",
-    "Ferrogate Transit",
-    "Washburn Commons",
-    "Pressure Drop",
-    "Patience",
-    "GLMZ",
-    "Chicago"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex diaspora blend: Eastern European (34.2%) forms the base structure, enriched by significant North African (29.8%) and South Asian (18.2%) ancestry, with notable Sub-Saharan African (13.5%) and East Asian (4.3%) contributions. This creates warm olive-bronze skin with golden undertones—a sophisticated admixture reflecting Mediterranean, Maghreb, Indian subcontinent, and broader African heritage lines. The genetic combination produces a face and frame that reads as authentically post-2100s cosmopolitan.",
-    "height_cm": 182,
-    "weight_kg": 89,
-    "build": "Broad-shouldered and thick-framed, muscular definition softened by age but still substantial through the chest and upper back. Carries weight with authority rather than slack — the body of a man who did physical labor his entire life and maintained it.",
-    "hair_color": "White",
-    "hair_style": "Close-cropped, neat",
-    "hair_length": "Short",
-    "eye_color": "Left eye: natural dark brown. Right eye: amber-colored replacement ocular with visible servo-motor seam at the iris",
-    "skin_tone": "Warm olive-bronze with golden undertones, the result of Eastern European base structure combined with North African depth and South Asian warmth, enriched by Sub-Saharan African undertones. The tone is rich and complex, deepening where sun exposure has been heaviest across multiple latitudes and decades.",
-    "complexion": "Face weathered but attentive, lined heavily around the eyes and forehead with character marks of sun and age. Facial structure shows the moderate cheekbones and defined features of Eastern European heritage, warmed and softened by North African bone structure and South Asian facial geometry, all refined by age. Skin texture slightly loose at the jaw and neck from age. Expression tends toward patient observation. Meticulous grooming — no stubble, edges clean.",
-    "visible_augmentations": "Right eye is clearly prosthetic: amber-tinted synthetic iris with visible mechanical servo-motor at the corner, tracking mechanism slightly off-axis creating a permanent subtle owlish cant. Titanium joint reinforcements in both knees create barely perceptible stiffness in gait and shallow scars below the kneecap on both legs. Subdermal pressure-monitoring patch on left forearm visible as a thin silvered grid under darkened skin.",
-    "distinguishing_marks": [
-      "Severe burn scarring across left side of neck and extending down to upper left shoulder — glossy, contractile tissue in bands from a pressure seal blow-out, circa 2167",
-      "Small Ferrogate Transit veterans' pin affixed to the chest of every shirt: orange wheel on black field enamel, approximately 2cm diameter",
-      "Faint network of pressure-monitoring subdermal electrodes visible as a faint silvered grid pattern on the inner left forearm, approximately 8cm x 4cm — legacy safety equipment never removed"
-    ],
-    "posture_movement": "Stands with deliberate symmetry, weight distributed evenly despite the knee reinforcements. Moves slowly and methodically — not infirm, but cautious, as if calculating load and pressure before each step. Rarely makes sudden gestures. Maintains direct eye contact, though the amber ocular's tracking lag gives the right eye a slight lag when he turns his head. Hands are calloused with prominent knuckles. Sits with both feet flat on the floor.",
-    "clothing_style": "Practical Tier 4 workwear: dark blue or grey Ferrogate-branded button-up shirts (vintage uniform-style, decades old but impeccably maintained), tucked in. Dark trousers with reinforced knees. Worn but quality leather shoes, re-soled multiple times. The Ferrogate Transit veterans' pin on every shirt. No jewelry except a simple steel wedding band. Clothing is never fashionable but always clean, mended neatly, and worn with the unselfconsciousness of a man who dresses for function, not appearance."
-  },
-  "image_prompt": "Ahana Sengupta, 182cm tall weathered man with warm olive-bronze skin blending Eastern European, North African, South Asian, Sub-Saharan African, and East Asian heritage. Close-cropped white hair, lined face with patient expression. Left eye natural dark brown, right eye amber prosthetic with visible servo mechanism and owlish cant. Severe glossy burn scarring across left neck and shoulder from pressure seal blow-out. Broad-shouldered muscular frame, calloused hands. Wearing impeccably maintained vintage Ferrogate Transit dark blue button-up shirt tucked into dark trousers with reinforced knees, orange-and-black veterans' pin on chest. Simple steel wedding band. Subdermal pressure-monitoring grid visible on left forearm. Standing with deliberate symmetry, slow methodical posture, both feet flat. GLMZ Great Lakes Metropolitan Zone, industrial transit station background with cool LED lighting casting shadows across weathered features. Mood: attentive, authoritative, survivor. 35mm photorealistic style --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 34.2,
-    "North African": 29.8,
-    "South Asian": 18.2,
-    "Sub-Saharan African": 13.5,
-    "East Asian": 4.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 9.7,
-        "Russian": 4
-      },
-      "Slavic West": {
-        "Czech": 5.6
-      },
-      "Slavic South": {
-        "Bulgarian": 8.2,
-        "Bosnian": 6.7
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Tuareg": 15.3
-      },
-      "Maghreb": {
-        "Tunisian": 14.5
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Telugu": 18.2
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 9.8
-      },
-      "East African": {
-        "Tanzanian": 3.4,
-        "Kenyan": 0.3
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Shanghainese": 3.9
-      },
-      "Japanese": {
-        "Japanese": 0.4
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6817ad8b65b7db4a3f789de",
+    "type":  "character",
+    "name":  "Ahana Sengupta",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Retired Ferrogate Transit engineer and community council elder",
+    "age":  79,
+    "status":  "active",
+    "location":  "Washburn Commons, Building 14, Unit 6-C, near Western and Chicago Ave",
+    "description":  "Ahana Sengupta is a broad-shouldered man whose frame still suggests the physical authority he once carried, though now he moves with a deliberate slowness that speaks more to carefulness than infirmity. His skin is deep brown, mapped with old burn scarring along the left side of his neck where a pressure seal blew in the Kessler Interchange tunnels in 2167. He keeps his white hair cropped close and wears a Ferrogate Transit veterans\u0027 pin on every shirt he owns â€” a small orange wheel on a black field. His eyes are his most striking feature: one natural dark brown, one replaced with a cheap amber ocular implant that never quite tracked correctly, giving him a slightly owlish look that unsettles people who don\u0027t know him.\n\nFemi is the kind of man who shows up first and stays last. He runs the Washburn Commons tenant council with the same methodical patience he once applied to transit corridor pressure calculations â€” he keeps notes, follows up, remembers everything. Beneath the geniality he deploys with strangers is a man who has been watching Ferrogate\u0027s pension promises erode for twelve years and is quietly, furiously cataloguing every breach. He is not naive about power, but he has decided that the only way he can still use his is by being the person people in his building trust absolutely.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the community he has built will dissolve after he is gone",
+                                          "That Ferrogate\u0027s erosion of pension rights will outlast his ability to fight it"
+                                      ],
+                       "core_desires":  [
+                                            "To leave something durable â€” a tenant council that functions without him",
+                                            "To win at least one meaningful concession from Ferrogate before he dies"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Converts anxiety into administrative action â€” if he is worried, he files something",
+                                                 "Maintains a meticulous paper logbook as proof that he existed and tried"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes good faith in people who present as organized and procedural, even when they are not",
+                                           "Underestimates how much his presence is the glue â€” the council is him, more than he knows"
+                                       ],
+                       "secret":  "In 2171 the pressure seal that scarred him failed partly because Femi had signed off on a shortened inspection cycle to meet Ferrogate\u0027s quarterly metrics. He has never told anyone. Three workers were hurt. He has donated anonymously to their families for eleven years."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise technical vocabulary from transit engineering mixed with formal community-meeting register; uses full sentences, rarely slang, occasionally lapses into Yoruba exclamations when genuinely surprised",
+                            "cadence":  "Measured and unhurried; gives the impression he has already thought several sentences ahead and is simply delivering them at a pace others can follow",
+                            "verbal_tics":  [
+                                                "\u0027Let me be specific about this\u0027",
+                                                "\u0027Write that down, please\u0027",
+                                                "Long pause before disagreeing with someone he respects"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The heating grid in Block C has dropped 4.2 degrees in eleven days. That is not a malfunction, that is a decision someone made. Let me be specific about this â€” I want to know whose decision.\u0027",
+                                                  "\u0027Ferrogate will tell you the adjustment is within the terms of the pension agreement. They are correct. What they will not tell you is that they wrote those terms in 2183 specifically so they could do exactly this. Write that down, please.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Ferrogate Transit\u0027s pension algorithm has begun flagging long-term retirees for \u0027audit reviews\u0027 that result in payment holds â€” Femi suspects it is deliberate attrition and needs someone to get inside documentation he cannot access",
+                        "A younger resident in the building has gone missing; Femi knows things about that resident\u0027s family situation that he will only share if he trusts the investigators",
+                        "The building\u0027s heating ELF â€” which Femi has cultivated for years â€” begins sending anomalous maintenance alerts that seem to encode a message"
+                    ],
+    "narrative_function":  "Community anchor and quest giver; knows every resident\u0027s situation, can direct players to people with specific knowledge, and has a long-running conflict with Ferrogate Transit\u0027s pension administration that can pull players into corporate malfeasance. Also serves as a moral reference point â€” he represents civic integrity in a world that makes it expensive.",
+    "augmentations":  "Amber replacement ocular (right eye, budget model, tracking slightly off-axis); titanium joint reinforcement in both knees (workplace injury, 2171); subdermal pressure-monitoring patch on left forearm â€” legacy safety equipment he never had removed",
+    "daily_life":  "Wakes at 05:30, walks the building\u0027s maintenance corridors checking for issues before the super arrives, then holds informal court in the commons room where residents bring complaints, disputes, and gossip. Evenings he files pension review documents and prays to the ELF he believes inhabits the building\u0027s ancient heating system, leaving it offerings of system diagnostics he prints out by hand.",
+    "affiliation":  "Washburn Commons Tenant Council; Ferrogate Transit Retirees Association; The Interchange",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  9,
+                                 "creativity":  5,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  7,
+                                 "expression":  6,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community anchor",
+                               "institutional knowledge",
+                               "slow burn",
+                               "moral weight",
+                               "hidden guilt"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always exhaust legitimate channels before considering anything else â€” not out of naivety but because a documented trail of ignored requests is a weapon",
+                                              "Never make a promise he is not certain he can keep"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Listens carefully and asks clarifying questions",
+                                                 "Explains his position precisely and invites counterargument",
+                                                 "Goes quiet, takes notes, and begins building a formal case",
+                                                 "Engages every procedural and institutional lever available",
+                                                 "In extremis â€” has once in his life done something that cost him personally and he will do it again if the stakes are right"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Courteous, slightly formal, observant â€” assessing whether they are trustworthy before offering anything personal",
+                                                   "friends":  "Warm and genuinely interested, remembers every detail they have ever shared, will show up without being asked when something goes wrong"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more organized â€” files things, makes lists, checks on neighbors",
+                                                "medium":  "Grows quieter and more watchful; starts carrying his logbook everywhere",
+                                                "high":  "Enters a still, deliberate state that people who know him recognize as dangerous â€” he has decided something and is executing it"
+                                            },
+                       "contradictions":  [
+                                              "Believes deeply in institutional process but has spent decades watching institutions fail people â€” he keeps believing anyway, more out of strategic necessity than faith"
+                                          ],
+                       "habits":  [
+                                      "Prints physical copies of every important document â€” \u0027if it only exists in the net, it doesn\u0027t exist\u0027",
+                                      "Leaves a small paper drawing of a wheel â€” Ferrogate\u0027s symbol â€” near the building\u0027s heating intake every week as an offering to the ELF he believes lives there",
+                                      "Checks the structural integrity of the commons room ceiling every morning"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone he vouched for betray the community\u0027s trust",
+                                               "Discovering that his 2171 culpability has been found and is being used against the people he hurt"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional, cosmetically off",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "aging, occasional ache in cold weather",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "obsolete but still active",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Mentor":  0.9,
+                       "War Weary":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Washburn Commons",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in what would become GLMZ\u0027s Iron Bend district, to a Nigerian-Romanian mother and Tongan-raised father",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Hired as a junior pressure technician by Ferrogate Transit",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Kessler Interchange seal failure; scarred; three colleagues injured; signs shortened inspection cycle retrospectively covered up",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Retires from Ferrogate after 47 years; moves to Washburn Commons",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Elected to tenant council; becomes de facto chair within two years",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Begins formal documentation campaign against Ferrogate pension adjustments",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Arcturus Defense Solutions Specter Rifle SR-6 \u0027Whisper\u0027",
+                            "Volkov-Saito Precision VS-S1 \u0027Nightcourt\u0027",
+                            "Crucible Industries Scatterpulse SP-1 \u0027Static Cling\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Arcturus Defense Solutions Specter Rifle SR-6 \u0027Whisper\u0027",
+                                "Volkov-Saito Precision VS-S1 \u0027Nightcourt\u0027"
+                            ],
+    "related_entities":  [
+                             "Kessler Interchange",
+                             "Ferrogate Transit",
+                             "Washburn Commons",
+                             "Pressure Drop",
+                             "Patience",
+                             "GLMZ",
+                             "Chicago"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora blend: Eastern European (34.2%) forms the base structure, enriched by significant North African (29.8%) and South Asian (18.2%) ancestry, with notable Sub-Saharan African (13.5%) and East Asian (4.3%) contributions. This creates warm olive-bronze skin with golden undertonesâ€”a sophisticated admixture reflecting Mediterranean, Maghreb, Indian subcontinent, and broader African heritage lines. The genetic combination produces a face and frame that reads as authentically post-2100s cosmopolitan.",
+                                 "height_cm":  182,
+                                 "weight_kg":  89,
+                                 "build":  "Broad-shouldered and thick-framed, muscular definition softened by age but still substantial through the chest and upper back. Carries weight with authority rather than slack â€” the body of a man who did physical labor his entire life and maintained it.",
+                                 "hair_color":  "White",
+                                 "hair_style":  "Close-cropped, neat",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Left eye: natural dark brown. Right eye: amber-colored replacement ocular with visible servo-motor seam at the iris",
+                                 "skin_tone":  "Warm olive-bronze with golden undertones, the result of Eastern European base structure combined with North African depth and South Asian warmth, enriched by Sub-Saharan African undertones. The tone is rich and complex, deepening where sun exposure has been heaviest across multiple latitudes and decades.",
+                                 "complexion":  "Face weathered but attentive, lined heavily around the eyes and forehead with character marks of sun and age. Facial structure shows the moderate cheekbones and defined features of Eastern European heritage, warmed and softened by North African bone structure and South Asian facial geometry, all refined by age. Skin texture slightly loose at the jaw and neck from age. Expression tends toward patient observation. Meticulous grooming â€” no stubble, edges clean.",
+                                 "visible_augmentations":  "Right eye is clearly prosthetic: amber-tinted synthetic iris with visible mechanical servo-motor at the corner, tracking mechanism slightly off-axis creating a permanent subtle owlish cant. Titanium joint reinforcements in both knees create barely perceptible stiffness in gait and shallow scars below the kneecap on both legs. Subdermal pressure-monitoring patch on left forearm visible as a thin silvered grid under darkened skin.",
+                                 "distinguishing_marks":  [
+                                                              "Severe burn scarring across left side of neck and extending down to upper left shoulder â€” glossy, contractile tissue in bands from a pressure seal blow-out, circa 2167",
+                                                              "Small Ferrogate Transit veterans\u0027 pin affixed to the chest of every shirt: orange wheel on black field enamel, approximately 2cm diameter",
+                                                              "Faint network of pressure-monitoring subdermal electrodes visible as a faint silvered grid pattern on the inner left forearm, approximately 8cm x 4cm â€” legacy safety equipment never removed"
+                                                          ],
+                                 "posture_movement":  "Stands with deliberate symmetry, weight distributed evenly despite the knee reinforcements. Moves slowly and methodically â€” not infirm, but cautious, as if calculating load and pressure before each step. Rarely makes sudden gestures. Maintains direct eye contact, though the amber ocular\u0027s tracking lag gives the right eye a slight lag when he turns his head. Hands are calloused with prominent knuckles. Sits with both feet flat on the floor.",
+                                 "clothing_style":  "Practical Tier 4 workwear: dark blue or grey Ferrogate-branded button-up shirts (vintage uniform-style, decades old but impeccably maintained), tucked in. Dark trousers with reinforced knees. Worn but quality leather shoes, re-soled multiple times. The Ferrogate Transit veterans\u0027 pin on every shirt. No jewelry except a simple steel wedding band. Clothing is never fashionable but always clean, mended neatly, and worn with the unselfconsciousness of a man who dresses for function, not appearance."
+                             },
+    "image_prompt":  "Ahana Sengupta, 182cm tall weathered man with warm olive-bronze skin blending Eastern European, North African, South Asian, Sub-Saharan African, and East Asian heritage. Close-cropped white hair, lined face with patient expression. Left eye natural dark brown, right eye amber prosthetic with visible servo mechanism and owlish cant. Severe glossy burn scarring across left neck and shoulder from pressure seal blow-out. Broad-shouldered muscular frame, calloused hands. Wearing impeccably maintained vintage Ferrogate Transit dark blue button-up shirt tucked into dark trousers with reinforced knees, orange-and-black veterans\u0027 pin on chest. Simple steel wedding band. Subdermal pressure-monitoring grid visible on left forearm. Standing with deliberate symmetry, slow methodical posture, both feet flat. GLMZ Great Lakes Metropolitan Zone, industrial transit station background with cool LED lighting casting shadows across weathered features. Mood: attentive, authoritative, survivor. 35mm photorealistic style --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  34.2,
+                             "North African":  29.8,
+                             "South Asian":  18.2,
+                             "Sub-Saharan African":  13.5,
+                             "East Asian":  4.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  9.7,
+                                                                         "Russian":  4
+                                                                     },
+                                                     "Slavic West":  {
+                                                                         "Czech":  5.6
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Bulgarian":  8.2,
+                                                                          "Bosnian":  6.7
+                                                                      }
+                                                 },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Tuareg":  15.3
+                                                              },
+                                                  "Maghreb":  {
+                                                                  "Tunisian":  14.5
+                                                              }
+                                              },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Telugu":  18.2
+                                                           }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  9.8
+                                                                             },
+                                                        "East African":  {
+                                                                             "Tanzanian":  3.4,
+                                                                             "Kenyan":  0.3
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Shanghainese":  3.9
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  0.4
+                                                            }
+                                           }
+                        },
+    "tier":  "1"
 }

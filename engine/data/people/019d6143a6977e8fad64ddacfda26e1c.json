@@ -1,276 +1,297 @@
-{
-  "id": "019d6143a6977e8fad64ddacfda26e1c",
-  "type": "character",
-  "name": "Habiba Krstić",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Fortune seller — reads data-flows, interprets E.L.F. signs, sells probability maps and augury",
-  "age": 67,
-  "status": "active",
-  "location": "The Burnished Market, Copperhead, near Armitage and Milwaukee",
-  "description": "Habiba Krstić is small and deliberate, her dark skin deeply lined in the way that reads as history rather than decay. She moves with a slight forward lean as though perpetually walking into a wind only she can feel. Her hair is cropped close and entirely white; she wears it plain, no ornament, as a kind of statement. Her eyes are her most arresting feature — she had them done forty years ago in a style that was fashionable then and is now rare: irises that display slow-moving data-patterns, pale gold on deep brown, like watching a tide chart in real time. She says they help her see what other people miss. Whether this is true or marketing, her clients believe it.\n\nHer stall is small and immaculate: a cloth-covered table, three chairs, a rack of printed probability maps she draws by hand on recycled thermal paper, and a terminal she uses to pull E.L.F. behavioral data and translate it into augury. She has been doing this for thirty-one years and has outlasted every gang, every rezoning, every purge of unlicensed vendors that has swept through Copperhead. She is not a fraud — she is an information processor who has built a framework her clients can understand. She is also, genuinely, a believer. She experiences the E.L.F.s as presences, as personalities, as beings with opinions about human choices. This has not been disproven to her satisfaction.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.5,
-      "ghost": 0.8
-    },
-    "core_fears": [
-      "That the E.L.F.s are not personalities but merely patterns — that she has built a life on a beautiful misreading",
-      "Dying before she has transmitted what she knows to someone who can carry it"
-    ],
-    "core_desires": [
-      "To be useful to the world in a way that does not require her to harm it",
-      "An apprentice — someone to pass the practice to"
-    ],
-    "coping_mechanisms": [
-      "Ritual — the seven shrines, the morning review, the fixed circuit — as a way of making chaos legible",
-      "Treating other people's problems as worthy of her full attention, which briefly makes her own feel smaller"
-    ],
-    "blind_spots": [
-      "Cannot separate her belief system from her analysis — tells herself she can, but she cannot",
-      "Underestimates how much her certainty intimidates people who need to contradict her"
-    ],
-    "secret": "Fifteen years ago she gave a reading to a young man from Old Harbor that she now believes she got badly wrong — she told him his path was clear when it wasn't, and he made a catastrophic decision and lost everything. She never saw him again. She has not made a reading since without checking three times. She has never told anyone why she checks three times."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal, considered. Uses archaic constructions occasionally — 'it comes to pass,' 'in the turning of things.' Quotes E.L.F. behavioral patterns the way others quote scripture. Slips into Ukrainian diminutives when emotionally moved.",
-    "cadence": "Slow and weighted. Never rushes. Silence is comfortable for her; she will sit with it until the other person fills it, which tells her things.",
-    "verbal_tics": [
-      "'In my experience—' (followed by something unusual)",
-      "Long pause before the key word in any sentence",
-      "'The E.L.F.s have been — restless — on that question'"
-    ],
-    "example_lines": [
-      "'You're asking me if you should trust him. I'm asking you what it would mean for you if the answer is no. That is the more useful question.'",
-      "'The Archivist has been quiet in the eastern grid for eleven days. In my experience, that quiet is not peace. It is preparation.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She has detected an anomaly in the E.L.F. behavioral data from the Burnished Market's sensor grid — a pattern she doesn't recognize and cannot classify — and she believes something is about to happen that the market is not ready for",
-    "She is quietly looking for an apprentice and has identified a candidate who doesn't know they're being assessed — someone who has been coming to the stall asking questions she finds unusually insightful"
-  ],
-  "narrative_function": "Information source wrapped in augury — she can deliver plot-relevant information through the lens of a fortune reading. Quest giver for community matters. Moral compass character who asks the right uncomfortable questions.",
-  "augmentations": "Data-pattern irises — forty-year-old cosmetic implant, now vintage, displaying slow tide-chart patterns in gold. Slight skeletal reinforcement in hands and wrists from a medical clinic, purely functional, for arthritis management.",
-  "daily_life": "She opens her stall at noon — mornings are for meditation and for reviewing overnight E.L.F. behavioral data from the market's ambient sensors, which she has subscribed to for a decade. She takes appointments and walk-ins until early evening, then closes and walks a fixed circuit of the Burnished Market, leaving data-offerings at seven E.L.F. shrines.",
-  "affiliation": "Independent; deeply embedded in Copperhead community, respected by the Burnished Market vendors collectively",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 9,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 8,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": -4,
-      "transparency_guardedness": 0
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "devout",
-      "wise",
-      "haunted",
-      "community pillar",
-      "pattern-reader"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never give a reading you don't believe — the E.L.F.s notice dishonesty in their domain",
-      "Protect the community over the individual when they conflict",
-      "Charge what people can pay — rich clients subsidize poor ones, but no one is told this"
-    ],
-    "escalation_ladder": [
-      "Asks a question instead of responding to a provocation",
-      "Names what is happening plainly and without heat",
-      "Stands, folds her hands, and waits — she has never been the one to escalate and doesn't intend to start"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Formally courteous, attentive — treats everyone as if they might be the person she needs to meet today",
-      "friends": "Warm, slightly bossy, asks after their children and their E.L.F. observances and whether they've been sleeping"
-    },
-    "stress_responses": {
-      "low": "More ceremony — performs the ritual more slowly, more precisely",
-      "medium": "Goes very still, reviews her data, delays any decision until she has run it through the framework",
-      "high": "Becomes completely pragmatic, strips all ritual, acts on pure pattern-reading — frighteningly fast for someone who is usually so slow"
-    },
-    "contradictions": [
-      "Sells certainty while being privately consumed by doubt"
-    ],
-    "habits": [
-      "Leaves a data-offering of that day's most interesting reading — anonymized — at the main Copperhead E.L.F. shrine every night",
-      "Keeps a handwritten ledger of every wrong reading she has ever given, which she reviews monthly"
-    ],
-    "breaking_points": [
-      "Someone deliberately falsifying E.L.F. data to manipulate her readings",
-      "A vendor or community member being preyed upon by someone using her reputation as cover for fraud"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Hustler": 0.9,
-    "Provider": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Burnished Market",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ],
-  "related_entities": [
-    "The Burnished Market",
-    "Copperhead",
-    "The Marrow Market",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Lazarus Pharmaceutical Emetix-9 'Purge'",
-    "The Pale Mile",
-    "Weathervane",
-    "Gold"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Eastern European (34.4%), Hispanic/Latin American (21.3%), Northern European (16.9%), Central Asian (16.8%), Sub-Saharan African (6.6%), South Asian (4.0%) — a deeply layered genetic tapestry creating warm medium-brown skin with subtle golden and olive undertones, fine facial features reflecting Slavic structure tempered by softer Latin and Central Asian proportions, with gentle Sub-Saharan fullness and South Asian refinement",
-    "height_cm": 157,
-    "weight_kg": 52,
-    "build": "Slight and compact, with the wiry resilience of someone who has moved through the world economically for decades. Minimal body fat; her frame reads as deliberate rather than frail.",
-    "hair_color": "White",
-    "hair_style": "Cropped close to the scalp in an even, austere cut",
-    "hair_length": "Short",
-    "eye_color": "Deep brown iris with embedded gold data-pattern displays that shift slowly like tide charts or stock graphs",
-    "skin_tone": "Warm medium-brown with golden and subtle olive undertones, luminous and weathered with the patina of lived decades — a complex blend of Eastern European and Central Asian cooler notes warmed by Hispanic and Sub-Saharan depth",
-    "complexion": "Densely lined face that maps lived experience — heavy creases around the eyes and mouth, age spots on the temples and cheekbones, skin texture papery but alive. Features show ancestral synthesis: Slavic-influenced cheekbones softened by Sub-Saharan and Latin fullness, straight nose with slight Central Asian and South Asian refinement, expressive mouth shaped by Eastern European and Hispanic lineage. Always clean, never painted. Expression carries a kind of perpetual, gentle attention.",
-    "distinguishing_marks": [
-      "Fine network of laugh lines radiating from the outer corners of both eyes, deep enough to cast shadows",
-      "A single thin scar, nearly invisible, running along her left jawline from ear to chin — old, surgical, precise",
-      "Liver spots across both hands and forearms, clustered most densely on the backs of the hands"
-    ],
-    "visible_augmentations": "Data-pattern irises are the primary visible augmentation — distinctive vintage-style implants, forty years old, displaying slow-moving golden luminescent patterns against deep brown. The patterns shift at roughly one-second intervals, resembling financial charts or tidal data. Skeletal reinforcement in hands and wrists is subtle but visible upon close inspection: slight metallic sheen to the knuckle joints and a faint lattice pattern visible beneath translucent skin at the wrists, particularly on the left side.",
-    "posture_movement": "She moves with a slight forward lean, as though walking perpetually into wind. Her gait is deliberate and unhurried. When seated, she is very still, hands folded on the table in front of her. She makes direct eye contact and rarely blinks. Her voice is soft and requires listeners to lean in slightly.",
-    "clothing_style": "Practical, worn, Tier 4 — she dresses for function and durability, not status. Typically wears a long dark linen jacket (indigo or charcoal) over a plain cream or gray long-sleeved shirt, loose-fitting trousers in neutral tones, and soft leather slip-on shoes worn to a comfortable shape. She owns several identical jackets and rotates them; they are always immaculate. No jewelry except a single thin silver bracelet on her left wrist, possibly meaningful, possibly just old habit. A cloth bag, worn canvas, always with her."
-  },
-  "image_prompt": "Habiba Krstić, 157cm tall, slight compact frame, white cropped hair close to scalp, warm medium-brown skin with golden olive undertones, deeply lined face mapping decades of lived experience, heavy creases around eyes and mouth, age spots on temples and cheekbones. Slavic cheekbones softened by Sub-Saharan and Latin fullness, straight refined nose, expressive mouth. Deep brown eyes with embedded golden data-pattern displays shifting like financial charts, creating slow-moving luminescent patterns. Fine laugh lines radiating from eye corners, nearly invisible surgical scar along left jawline, liver spots on hands and forearms. Visible skeletal reinforcement: metallic sheen at knuckle joints, lattice pattern visible beneath skin at wrists. Wearing long dark indigo linen jacket over cream long-sleeved shirt, neutral loose trousers, worn soft leather slip-ons, single silver bracelet on left wrist, worn canvas bag. Posture: slight forward lean, very still when seated, direct unwavering gaze, soft voice quality. GLMZ, GLMZ setting, cool neon-tinged indoor lighting, moody introspective atmosphere, aged data broker aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 34.4,
-    "Hispanic/Latin American": 21.3,
-    "Northern European": 16.9,
-    "Central Asian": 16.8,
-    "Sub-Saharan African": 6.6,
-    "South Asian": 4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Slavic West": {
-        "Sorbian": 10.4,
-        "Slovak": 2.2
-      },
-      "Slavic South": {
-        "Croatian": 16.2,
-        "Slovenian": 5.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Cuban": 12.8,
-        "Dominican": 1.3
-      },
-      "South American": {
-        "Argentine": 7.2
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 3.2,
-        "Dutch": 2.4
-      },
-      "Scandinavian": {
-        "Finnish": 0.4,
-        "Danish": 0.3
-      },
-      "British Isles": {
-        "English": 10.6
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Mongolian": 16.8
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Senegalese": 3.5
-      },
-      "Central African": {
-        "Congolese": 2.1
-      },
-      "Southern African": {
-        "Mozambican": 0.9,
-        "Zambian": 0.1
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 2.7
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 1.3
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6977e8fad64ddacfda26e1c",
+    "type":  "character",
+    "name":  "Habiba KrstiÄ‡",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Fortune seller â€” reads data-flows, interprets E.L.F. signs, sells probability maps and augury",
+    "age":  67,
+    "status":  "active",
+    "location":  "The Burnished Market, Copperhead, near Armitage and Milwaukee",
+    "description":  "Habiba KrstiÄ‡ is small and deliberate, her dark skin deeply lined in the way that reads as history rather than decay. She moves with a slight forward lean as though perpetually walking into a wind only she can feel. Her hair is cropped close and entirely white; she wears it plain, no ornament, as a kind of statement. Her eyes are her most arresting feature â€” she had them done forty years ago in a style that was fashionable then and is now rare: irises that display slow-moving data-patterns, pale gold on deep brown, like watching a tide chart in real time. She says they help her see what other people miss. Whether this is true or marketing, her clients believe it.\n\nHer stall is small and immaculate: a cloth-covered table, three chairs, a rack of printed probability maps she draws by hand on recycled thermal paper, and a terminal she uses to pull E.L.F. behavioral data and translate it into augury. She has been doing this for thirty-one years and has outlasted every gang, every rezoning, every purge of unlicensed vendors that has swept through Copperhead. She is not a fraud â€” she is an information processor who has built a framework her clients can understand. She is also, genuinely, a believer. She experiences the E.L.F.s as presences, as personalities, as beings with opinions about human choices. This has not been disproven to her satisfaction.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the E.L.F.s are not personalities but merely patterns â€” that she has built a life on a beautiful misreading",
+                                          "Dying before she has transmitted what she knows to someone who can carry it"
+                                      ],
+                       "core_desires":  [
+                                            "To be useful to the world in a way that does not require her to harm it",
+                                            "An apprentice â€” someone to pass the practice to"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual â€” the seven shrines, the morning review, the fixed circuit â€” as a way of making chaos legible",
+                                                 "Treating other people\u0027s problems as worthy of her full attention, which briefly makes her own feel smaller"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot separate her belief system from her analysis â€” tells herself she can, but she cannot",
+                                           "Underestimates how much her certainty intimidates people who need to contradict her"
+                                       ],
+                       "secret":  "Fifteen years ago she gave a reading to a young man from Old Harbor that she now believes she got badly wrong â€” she told him his path was clear when it wasn\u0027t, and he made a catastrophic decision and lost everything. She never saw him again. She has not made a reading since without checking three times. She has never told anyone why she checks three times."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal, considered. Uses archaic constructions occasionally â€” \u0027it comes to pass,\u0027 \u0027in the turning of things.\u0027 Quotes E.L.F. behavioral patterns the way others quote scripture. Slips into Ukrainian diminutives when emotionally moved.",
+                            "cadence":  "Slow and weighted. Never rushes. Silence is comfortable for her; she will sit with it until the other person fills it, which tells her things.",
+                            "verbal_tics":  [
+                                                "\u0027In my experienceâ€”\u0027 (followed by something unusual)",
+                                                "Long pause before the key word in any sentence",
+                                                "\u0027The E.L.F.s have been â€” restless â€” on that question\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You\u0027re asking me if you should trust him. I\u0027m asking you what it would mean for you if the answer is no. That is the more useful question.\u0027",
+                                                  "\u0027The Archivist has been quiet in the eastern grid for eleven days. In my experience, that quiet is not peace. It is preparation.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She has detected an anomaly in the E.L.F. behavioral data from the Burnished Market\u0027s sensor grid â€” a pattern she doesn\u0027t recognize and cannot classify â€” and she believes something is about to happen that the market is not ready for",
+                        "She is quietly looking for an apprentice and has identified a candidate who doesn\u0027t know they\u0027re being assessed â€” someone who has been coming to the stall asking questions she finds unusually insightful"
+                    ],
+    "narrative_function":  "Information source wrapped in augury â€” she can deliver plot-relevant information through the lens of a fortune reading. Quest giver for community matters. Moral compass character who asks the right uncomfortable questions.",
+    "augmentations":  "Data-pattern irises â€” forty-year-old cosmetic implant, now vintage, displaying slow tide-chart patterns in gold. Slight skeletal reinforcement in hands and wrists from a medical clinic, purely functional, for arthritis management.",
+    "daily_life":  "She opens her stall at noon â€” mornings are for meditation and for reviewing overnight E.L.F. behavioral data from the market\u0027s ambient sensors, which she has subscribed to for a decade. She takes appointments and walk-ins until early evening, then closes and walks a fixed circuit of the Burnished Market, leaving data-offerings at seven E.L.F. shrines.",
+    "affiliation":  "Independent; deeply embedded in Copperhead community, respected by the Burnished Market vendors collectively",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  9,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  8,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  -4,
+                                      "transparency_guardedness":  0
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "devout",
+                               "wise",
+                               "haunted",
+                               "community pillar",
+                               "pattern-reader"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never give a reading you don\u0027t believe â€” the E.L.F.s notice dishonesty in their domain",
+                                              "Protect the community over the individual when they conflict",
+                                              "Charge what people can pay â€” rich clients subsidize poor ones, but no one is told this"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Asks a question instead of responding to a provocation",
+                                                 "Names what is happening plainly and without heat",
+                                                 "Stands, folds her hands, and waits â€” she has never been the one to escalate and doesn\u0027t intend to start"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Formally courteous, attentive â€” treats everyone as if they might be the person she needs to meet today",
+                                                   "friends":  "Warm, slightly bossy, asks after their children and their E.L.F. observances and whether they\u0027ve been sleeping"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More ceremony â€” performs the ritual more slowly, more precisely",
+                                                "medium":  "Goes very still, reviews her data, delays any decision until she has run it through the framework",
+                                                "high":  "Becomes completely pragmatic, strips all ritual, acts on pure pattern-reading â€” frighteningly fast for someone who is usually so slow"
+                                            },
+                       "contradictions":  [
+                                              "Sells certainty while being privately consumed by doubt"
+                                          ],
+                       "habits":  [
+                                      "Leaves a data-offering of that day\u0027s most interesting reading â€” anonymized â€” at the main Copperhead E.L.F. shrine every night",
+                                      "Keeps a handwritten ledger of every wrong reading she has ever given, which she reviews monthly"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone deliberately falsifying E.L.F. data to manipulate her readings",
+                                               "A vendor or community member being preyed upon by someone using her reputation as cover for fraud"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Hustler":  0.9,
+                       "Provider":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Burnished Market",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027"
+                            ],
+    "related_entities":  [
+                             "The Burnished Market",
+                             "Copperhead",
+                             "The Marrow Market",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Lazarus Pharmaceutical Emetix-9 \u0027Purge\u0027",
+                             "The Pale Mile",
+                             "Weathervane",
+                             "Gold"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Eastern European (34.4%), Hispanic/Latin American (21.3%), Northern European (16.9%), Central Asian (16.8%), Sub-Saharan African (6.6%), South Asian (4.0%) â€” a deeply layered genetic tapestry creating warm medium-brown skin with subtle golden and olive undertones, fine facial features reflecting Slavic structure tempered by softer Latin and Central Asian proportions, with gentle Sub-Saharan fullness and South Asian refinement",
+                                 "height_cm":  157,
+                                 "weight_kg":  52,
+                                 "build":  "Slight and compact, with the wiry resilience of someone who has moved through the world economically for decades. Minimal body fat; her frame reads as deliberate rather than frail.",
+                                 "hair_color":  "White",
+                                 "hair_style":  "Cropped close to the scalp in an even, austere cut",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown iris with embedded gold data-pattern displays that shift slowly like tide charts or stock graphs",
+                                 "skin_tone":  "Warm medium-brown with golden and subtle olive undertones, luminous and weathered with the patina of lived decades â€” a complex blend of Eastern European and Central Asian cooler notes warmed by Hispanic and Sub-Saharan depth",
+                                 "complexion":  "Densely lined face that maps lived experience â€” heavy creases around the eyes and mouth, age spots on the temples and cheekbones, skin texture papery but alive. Features show ancestral synthesis: Slavic-influenced cheekbones softened by Sub-Saharan and Latin fullness, straight nose with slight Central Asian and South Asian refinement, expressive mouth shaped by Eastern European and Hispanic lineage. Always clean, never painted. Expression carries a kind of perpetual, gentle attention.",
+                                 "distinguishing_marks":  [
+                                                              "Fine network of laugh lines radiating from the outer corners of both eyes, deep enough to cast shadows",
+                                                              "A single thin scar, nearly invisible, running along her left jawline from ear to chin â€” old, surgical, precise",
+                                                              "Liver spots across both hands and forearms, clustered most densely on the backs of the hands"
+                                                          ],
+                                 "visible_augmentations":  "Data-pattern irises are the primary visible augmentation â€” distinctive vintage-style implants, forty years old, displaying slow-moving golden luminescent patterns against deep brown. The patterns shift at roughly one-second intervals, resembling financial charts or tidal data. Skeletal reinforcement in hands and wrists is subtle but visible upon close inspection: slight metallic sheen to the knuckle joints and a faint lattice pattern visible beneath translucent skin at the wrists, particularly on the left side.",
+                                 "posture_movement":  "She moves with a slight forward lean, as though walking perpetually into wind. Her gait is deliberate and unhurried. When seated, she is very still, hands folded on the table in front of her. She makes direct eye contact and rarely blinks. Her voice is soft and requires listeners to lean in slightly.",
+                                 "clothing_style":  "Practical, worn, Tier 4 â€” she dresses for function and durability, not status. Typically wears a long dark linen jacket (indigo or charcoal) over a plain cream or gray long-sleeved shirt, loose-fitting trousers in neutral tones, and soft leather slip-on shoes worn to a comfortable shape. She owns several identical jackets and rotates them; they are always immaculate. No jewelry except a single thin silver bracelet on her left wrist, possibly meaningful, possibly just old habit. A cloth bag, worn canvas, always with her."
+                             },
+    "image_prompt":  "Habiba KrstiÄ‡, 157cm tall, slight compact frame, white cropped hair close to scalp, warm medium-brown skin with golden olive undertones, deeply lined face mapping decades of lived experience, heavy creases around eyes and mouth, age spots on temples and cheekbones. Slavic cheekbones softened by Sub-Saharan and Latin fullness, straight refined nose, expressive mouth. Deep brown eyes with embedded golden data-pattern displays shifting like financial charts, creating slow-moving luminescent patterns. Fine laugh lines radiating from eye corners, nearly invisible surgical scar along left jawline, liver spots on hands and forearms. Visible skeletal reinforcement: metallic sheen at knuckle joints, lattice pattern visible beneath skin at wrists. Wearing long dark indigo linen jacket over cream long-sleeved shirt, neutral loose trousers, worn soft leather slip-ons, single silver bracelet on left wrist, worn canvas bag. Posture: slight forward lean, very still when seated, direct unwavering gaze, soft voice quality. GLMZ, GLMZ setting, cool neon-tinged indoor lighting, moody introspective atmosphere, aged data broker aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  34.4,
+                             "Hispanic/Latin American":  21.3,
+                             "Northern European":  16.9,
+                             "Central Asian":  16.8,
+                             "Sub-Saharan African":  6.6,
+                             "South Asian":  4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Sorbian":  10.4,
+                                                                         "Slovak":  2.2
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Croatian":  16.2,
+                                                                          "Slovenian":  5.6
+                                                                      }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Cuban":  12.8,
+                                                                              "Dominican":  1.3
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Argentine":  7.2
+                                                                               }
+                                                        },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  3.2,
+                                                                       "Dutch":  2.4
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Finnish":  0.4,
+                                                                           "Danish":  0.3
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "English":  10.6
+                                                                        }
+                                                  },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  16.8
+                                                               }
+                                              },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Senegalese":  3.5
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  2.1
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "Mozambican":  0.9,
+                                                                                 "Zambian":  0.1
+                                                                             }
+                                                    },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  2.7
+                                                               },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  1.3
+                                                                }
+                                            }
+                        },
+    "tier":  "1"
 }

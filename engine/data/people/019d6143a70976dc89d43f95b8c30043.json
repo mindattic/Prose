@@ -1,326 +1,355 @@
-{
-  "id": "019d6143a70976dc89d43f95b8c30043",
-  "type": "character",
-  "name": "Onida Okada-Kristjánsson",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Street pharmacist and grey-market drug dealer, The Burnished Market",
-  "age": 41,
-  "status": "active",
-  "location": "The Burnished Market, Calumet Rise, near North Ave and Milwaukee",
-  "description": "Onida Okada-Kristjánsson is a tall man with a runner's build that has gone slightly soft around the middle in recent years, dark russet-brown skin, and a neatly maintained beard going grey at the chin. He has retractable cat-claw geneware on both hands — a practical mod, he'll tell you, useful for precise chemical work, though anyone who has seen him actually use a pipette knows he doesn't need them for that. His eyes are unmodified, which makes him unusual in the Burnished Market. He operates from a converted medical cart, immaculate inside its locking compartments, which he parks at the same spot every day with the punctuality of someone who understands that reliability is the most important product he sells. His signage is understated: a small white placard that says TÒFÀ HEALTH SOLUTIONS in plain text.\n\nOnida Okada-Kristjánsson was, for nine years, a licensed pharmaceutical technician at a Helix Biosystems retail clinic. He knows medication interactions, dosing principles, contraindications, and the specific pharmaceutical needs of a community that cannot afford a clinic visit with the depth of someone who studied it formally and has spent a decade applying that knowledge in conditions his training never covered. He is scrupulously honest about what his products can and cannot do. He has turned people away. He has sent people to the clinic when they needed the clinic, even when they couldn't pay and even when that meant losing a sale. He is not a good man in a simple sense — he is a man operating in a system that makes goodness expensive — but he is a careful one.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.2,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Making a dispensing error that kills or permanently harms someone",
-      "Being shut down before the community he serves can find an alternative"
-    ],
-    "core_desires": [
-      "For his clients to have access to actual medical care, not just him",
-      "To be, precisely and without inflation, as useful as he actually is"
-    ],
-    "coping_mechanisms": [
-      "Rigid routine as anxiety management",
-      "Documentation — if everything is recorded, errors can be found and corrected"
-    ],
-    "blind_spots": [
-      "Trusts his own assessment of risk too completely; has difficulty accepting when he is out of his depth",
-      "So committed to pragmatic realism that he undervalues the emotional dimension of what clients need from him"
-    ],
-    "secret": "The neural pharmacy index he retained contains not just the pharmaceutical database but also eighteen months of Helix Biosystems internal memos about a cost-cutting reformulation of a widely-used chronic condition medication. The reformulation caused adverse effects in a small but statistically significant patient cohort. Helix buried the data. He has it all. He has not decided what to do with it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clinical and precise, but translated into accessible language automatically — he spent years learning to communicate medical information to people without medical training.",
-    "cadence": "Even and measured. Does not rush, does not trail off.",
-    "verbal_tics": [
-      "'What I can tell you is—'",
-      "Long pause before saying anything he isn't certain of"
-    ],
-    "example_lines": [
-      "'What I can tell you is that this compound will reduce the symptom profile for approximately six hours. What I cannot tell you is what is actually causing it. You need imaging for that and I can't do imaging.'",
-      "'I don't sell you what you want. I sell you what you need and explain the difference. If you disagree with my assessment, I'll explain my reasoning, and if you still disagree, that's your right.'",
-      "'The clinic is three stops on the Ferrogate. I know it costs. I'm telling you anyway because what you're describing is outside what I should be managing alone.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The Helix Biosystems data buried in his neural index has become suddenly relevant — patients on the reformulated medication are presenting at his cart with adverse effects he recognizes from the suppressed memos. Someone needs to decide what to do with what he knows.",
-    "A Helix compliance agent has been photographing his cart from a distance for two weeks. He doesn't know if they're after the pharmacy index or something else entirely, and he needs to find out before they move."
-  ],
-  "narrative_function": "Practical resource and moral-complexity NPC. Provides medical and pharmaceutical assistance at street level. Can identify substances, assess physical conditions, and give accurate information that players can trust. His Helix Biosystems background and retained database access make him a potential target for corporate interest. The tension between his care for his clients and his legal exposure is a rich vein.",
-  "augmentations": "Retractable cat-claw geneware (both hands, short precision grade). Olfactory enhancement augment — helps him smell compound degradation and contamination in product. Neural pharmacy index — a basic neural implant containing a licensed pharmaceutical database he kept access to after leaving Helix, technically against his severance agreement.",
-  "daily_life": "Arrives at the Burnished Market precisely at 09:00, opens the cart, and works until 17:00 with a thirty-minute break at 13:00 that he takes at the same food stall every day. Spends evenings sourcing supply, reviewing compound research on the Mesh, and maintaining meticulous encrypted records of what he has dispensed and to whom.",
-  "affiliation": "Independent. Formerly Helix Biosystems (licensed technician, employment terminated). Loose professional regard from the Oxidian Market Vendors Guild who see him as adjacent.",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 6,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -2,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "street-medical",
-      "corporate-knowledge-holder",
-      "grey-market-pharmaceutical",
-      "evidence-suppression",
-      "routine-dependent"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never dispense something you haven't positively identified",
-      "If you can't help safely, say so and say why",
-      "Keep records of everything — they protect you and the people you serve"
-    ],
-    "escalation_ladder": [
-      "Clarifying questions",
-      "Direct refusal with explanation",
-      "Offering a safer alternative",
-      "Closing the cart early",
-      "Contacting informal Burnished Market security network"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional and neutral; assesses their presentation before assessing their request.",
-      "friends": "Slightly warmer, more willing to explain his reasoning rather than just his conclusions. Still concise."
-    },
-    "stress_responses": {
-      "low": "Reorganizes the cart compartments during quiet periods",
-      "medium": "Speaks more slowly and more precisely, which people find either reassuring or alarming",
-      "high": "Closes the cart, sits inside the converted shell alone with his encrypted records, and methodically reviews what he knows"
-    },
-    "contradictions": [
-      "Committed to doing as much good as he can within his actual competence — but holding a piece of information that could do enormous good and enormous damage that he is not acting on"
-    ],
-    "habits": [
-      "Calibrates his olfactory augment every morning before opening — a diagnostic ritual",
-      "Never eats or drinks at the cart; the 13:00 break is inviolable",
-      "Writes a one-line summary of every significant client interaction in an encrypted personal log"
-    ],
-    "breaking_points": [
-      "Dispensing error with serious consequences",
-      "The Helix data becoming undeniably relevant to an ongoing harm he is watching happen"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Burnished Market",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Calumet Rise to a Yoruba-Russian working-class family",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed pharmaceutical technician certification; hired by Helix Biosystems retail clinic",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Discovered suppressed reformulation data in internal Helix systems; copied it to neural index",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Employment terminated by Helix Biosystems for unrelated compliance violation — he believes they found something but couldn't prove the data theft",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Established street pharmacy cart at the Burnished Market",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Molotov Standard' Incendiary Bottle"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Burnished Market",
-    "Helix Biosystems",
-    "Calumet Rise",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "BLACKWATER",
-    "Lazarus LX-2 'Lab Rat'",
-    "Honest Burger",
-    "Neural Palate",
-    "The Pure Hand",
-    "Auni Bergqvist",
-    "Compass Rose",
-    "Elena Vasquez-9"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Indigenous American-dominant (39.2%) with substantial Northern European (21.5%), East Asian (18.6%), and meaningful Hispanic/Latin American (16.2%) and Eastern European (4.5%) ancestry—a true Ubiquitous Diaspora blend that creates a warm, complex phenotype. Strong Indigenous American bone structure (broad cheekbones, fuller features) tempered by Northern European height and lean build, with East Asian eye shape and skin undertones, and Hispanic/Latin American warmth in coloration.",
-    "height_cm": 188,
-    "weight_kg": 82,
-    "build": "Tall and formerly athletic, now carrying a subtle softness through the torso that speaks to sedentary precision work and years of standing in one place. Still lean-limbed, with the posture of someone accustomed to detail work.",
-    "hair_color": "Dark brown, natural",
-    "hair_style": "Closely trimmed, neat, no styling affectation",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, unmodified",
-    "skin_tone": "Warm copper-bronze with subtle golden undertones—a luminous blend of Indigenous American base enriched by Northern European fairness, East Asian warmth, and Hispanic/Latin American richness creating depth and complexity. Weathered from half-days under GLMZ sky.",
-    "complexion": "Clean-shaven face with neatly maintained beard along jawline and chin showing distinct grey threading. Facial structure shows strong Indigenous American prominence (broad cheekbones, wider nasal base, fuller lips) balanced by Northern European jaw definition and subtle monolid eye shape influence from East Asian heritage. Skin shows minimal augmentation wear—well-maintained. Expression carries studied neutrality of someone who listens more than speaks.",
-    "distinguishing_marks": [
-      "Fine parallel scars across the knuckles of both hands, barely visible unless light catches them right, from years of retractable claw deployment and retraction",
-      "A small chemical burn mark on the left forearm (approximately 3cm diameter), faded to pale brown, from a Helix-era accident he does not discuss"
-    ],
-    "visible_augmentations": "Retractable cat-claw geneware visible only when deployed—otherwise his hands appear entirely human. When dormant, only a faint hairline scarring at the base of each fingertip suggests the mod. No visible neural implant interface—the pharmacy index is fully subcutaneous.",
-    "posture_movement": "Still, economical movement. He does not fidget. When reaching for compounds or tools, his hands move with the precision of someone who has learned to compensate for augmentations that could be lethal if poorly controlled. He stands with his weight balanced, ready to move laterally—a habit from working in confined spaces. Speaks quietly. Makes deliberate eye contact.",
-    "clothing_style": "Tier 3-4 practical wear. A weathered grey lab coat over dark slacks, well-maintained but not new, bearing the small stains of his work that no amount of washing quite removes. Under the coat: a neutral button-up shirt, usually cream or pale grey. Steel-toed work boots, scuffed but functional. A thin chain around his neck bearing a small brass pharmaceutical symbol—not ostentatious, barely visible. No corp insignia. No chrome flourish. Everything about his presentation says: I know what I am doing, and you can trust that."
-  },
-  "image_prompt": "Onida Okada-Kristjánsson, tall mixed-heritage male with warm copper-bronze skin, broad high cheekbones and fuller lips (Indigenous American heritage), sharp jaw definition (Northern European), subtle monolid eye shape (East Asian), dark unmodified brown eyes, short dark brown hair with grey beard threading along jawline. 188cm lean build with slight torso softness. Wearing weathered grey lab coat over pale grey shirt and dark slacks, scuffed steel-toed work boots. Small brass pharmaceutical pendant on thin chain. Fine scars visible on knuckles, faded chemical burn mark on left forearm. Still, economical posture, precise hand positioning. Standing in neo-noir laboratory environment, cool blue-white accent lighting catching the faded scars and warm undertones of his skin. Studied neutral expression, deliberate eye contact. GLMZ 2226 aesthetic, practical tier 3-4 gear, no chrome flourish, entirely human appearance except for barely-visible hairline scarring at fingertips suggesting dormant geneware augmentation. Moody, clinical, trustworthy presence. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Indigenous American": 39.2,
-    "Northern European": 21.5,
-    "East Asian": 18.6,
-    "Hispanic/Latin American": 16.2,
-    "Eastern European": 4.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Indigenous American": {
-      "Andean": {
-        "Aymara": 2.9,
-        "Quechua": 36.3
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "English": 21.5
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 18.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 0.3,
-        "Colombian": 0.3
-      },
-      "Mexican": {
-        "Mexican": 15.6
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Russian": 0.7,
-        "Belarusian": 3.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a70976dc89d43f95b8c30043",
+    "type":  "character",
+    "name":  "Onida Okada-KristjÃ¡nsson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Street pharmacist and grey-market drug dealer, The Burnished Market",
+    "age":  41,
+    "status":  "active",
+    "location":  "The Burnished Market, Calumet Rise, near North Ave and Milwaukee",
+    "description":  "Onida Okada-KristjÃ¡nsson is a tall man with a runner\u0027s build that has gone slightly soft around the middle in recent years, dark russet-brown skin, and a neatly maintained beard going grey at the chin. He has retractable cat-claw geneware on both hands â€” a practical mod, he\u0027ll tell you, useful for precise chemical work, though anyone who has seen him actually use a pipette knows he doesn\u0027t need them for that. His eyes are unmodified, which makes him unusual in the Burnished Market. He operates from a converted medical cart, immaculate inside its locking compartments, which he parks at the same spot every day with the punctuality of someone who understands that reliability is the most important product he sells. His signage is understated: a small white placard that says TÃ’FÃ€ HEALTH SOLUTIONS in plain text.\n\nOnida Okada-KristjÃ¡nsson was, for nine years, a licensed pharmaceutical technician at a Helix Biosystems retail clinic. He knows medication interactions, dosing principles, contraindications, and the specific pharmaceutical needs of a community that cannot afford a clinic visit with the depth of someone who studied it formally and has spent a decade applying that knowledge in conditions his training never covered. He is scrupulously honest about what his products can and cannot do. He has turned people away. He has sent people to the clinic when they needed the clinic, even when they couldn\u0027t pay and even when that meant losing a sale. He is not a good man in a simple sense â€” he is a man operating in a system that makes goodness expensive â€” but he is a careful one.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Making a dispensing error that kills or permanently harms someone",
+                                          "Being shut down before the community he serves can find an alternative"
+                                      ],
+                       "core_desires":  [
+                                            "For his clients to have access to actual medical care, not just him",
+                                            "To be, precisely and without inflation, as useful as he actually is"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Rigid routine as anxiety management",
+                                                 "Documentation â€” if everything is recorded, errors can be found and corrected"
+                                             ],
+                       "blind_spots":  [
+                                           "Trusts his own assessment of risk too completely; has difficulty accepting when he is out of his depth",
+                                           "So committed to pragmatic realism that he undervalues the emotional dimension of what clients need from him"
+                                       ],
+                       "secret":  "The neural pharmacy index he retained contains not just the pharmaceutical database but also eighteen months of Helix Biosystems internal memos about a cost-cutting reformulation of a widely-used chronic condition medication. The reformulation caused adverse effects in a small but statistically significant patient cohort. Helix buried the data. He has it all. He has not decided what to do with it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clinical and precise, but translated into accessible language automatically â€” he spent years learning to communicate medical information to people without medical training.",
+                            "cadence":  "Even and measured. Does not rush, does not trail off.",
+                            "verbal_tics":  [
+                                                "\u0027What I can tell you isâ€”\u0027",
+                                                "Long pause before saying anything he isn\u0027t certain of"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027What I can tell you is that this compound will reduce the symptom profile for approximately six hours. What I cannot tell you is what is actually causing it. You need imaging for that and I can\u0027t do imaging.\u0027",
+                                                  "\u0027I don\u0027t sell you what you want. I sell you what you need and explain the difference. If you disagree with my assessment, I\u0027ll explain my reasoning, and if you still disagree, that\u0027s your right.\u0027",
+                                                  "\u0027The clinic is three stops on the Ferrogate. I know it costs. I\u0027m telling you anyway because what you\u0027re describing is outside what I should be managing alone.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The Helix Biosystems data buried in his neural index has become suddenly relevant â€” patients on the reformulated medication are presenting at his cart with adverse effects he recognizes from the suppressed memos. Someone needs to decide what to do with what he knows.",
+                        "A Helix compliance agent has been photographing his cart from a distance for two weeks. He doesn\u0027t know if they\u0027re after the pharmacy index or something else entirely, and he needs to find out before they move."
+                    ],
+    "narrative_function":  "Practical resource and moral-complexity NPC. Provides medical and pharmaceutical assistance at street level. Can identify substances, assess physical conditions, and give accurate information that players can trust. His Helix Biosystems background and retained database access make him a potential target for corporate interest. The tension between his care for his clients and his legal exposure is a rich vein.",
+    "augmentations":  "Retractable cat-claw geneware (both hands, short precision grade). Olfactory enhancement augment â€” helps him smell compound degradation and contamination in product. Neural pharmacy index â€” a basic neural implant containing a licensed pharmaceutical database he kept access to after leaving Helix, technically against his severance agreement.",
+    "daily_life":  "Arrives at the Burnished Market precisely at 09:00, opens the cart, and works until 17:00 with a thirty-minute break at 13:00 that he takes at the same food stall every day. Spends evenings sourcing supply, reviewing compound research on the Mesh, and maintaining meticulous encrypted records of what he has dispensed and to whom.",
+    "affiliation":  "Independent. Formerly Helix Biosystems (licensed technician, employment terminated). Loose professional regard from the Oxidian Market Vendors Guild who see him as adjacent.",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  6,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "street-medical",
+                               "corporate-knowledge-holder",
+                               "grey-market-pharmaceutical",
+                               "evidence-suppression",
+                               "routine-dependent"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never dispense something you haven\u0027t positively identified",
+                                              "If you can\u0027t help safely, say so and say why",
+                                              "Keep records of everything â€” they protect you and the people you serve"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Clarifying questions",
+                                                 "Direct refusal with explanation",
+                                                 "Offering a safer alternative",
+                                                 "Closing the cart early",
+                                                 "Contacting informal Burnished Market security network"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional and neutral; assesses their presentation before assessing their request.",
+                                                   "friends":  "Slightly warmer, more willing to explain his reasoning rather than just his conclusions. Still concise."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Reorganizes the cart compartments during quiet periods",
+                                                "medium":  "Speaks more slowly and more precisely, which people find either reassuring or alarming",
+                                                "high":  "Closes the cart, sits inside the converted shell alone with his encrypted records, and methodically reviews what he knows"
+                                            },
+                       "contradictions":  [
+                                              "Committed to doing as much good as he can within his actual competence â€” but holding a piece of information that could do enormous good and enormous damage that he is not acting on"
+                                          ],
+                       "habits":  [
+                                      "Calibrates his olfactory augment every morning before opening â€” a diagnostic ritual",
+                                      "Never eats or drinks at the cart; the 13:00 break is inviolable",
+                                      "Writes a one-line summary of every significant client interaction in an encrypted personal log"
+                                  ],
+                       "breaking_points":  [
+                                               "Dispensing error with serious consequences",
+                                               "The Helix data becoming undeniably relevant to an ongoing harm he is watching happen"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Burnished Market",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Calumet Rise to a Yoruba-Russian working-class family",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed pharmaceutical technician certification; hired by Helix Biosystems retail clinic",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Discovered suppressed reformulation data in internal Helix systems; copied it to neural index",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Employment terminated by Helix Biosystems for unrelated compliance violation â€” he believes they found something but couldn\u0027t prove the data theft",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Established street pharmacy cart at the Burnished Market",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Molotov Standard\u0027 Incendiary Bottle"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Burnished Market",
+                             "Helix Biosystems",
+                             "Calumet Rise",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "BLACKWATER",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "Honest Burger",
+                             "Neural Palate",
+                             "The Pure Hand",
+                             "Auni Bergqvist",
+                             "Compass Rose",
+                             "Elena Vasquez-9"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Indigenous American-dominant (39.2%) with substantial Northern European (21.5%), East Asian (18.6%), and meaningful Hispanic/Latin American (16.2%) and Eastern European (4.5%) ancestryâ€”a true Ubiquitous Diaspora blend that creates a warm, complex phenotype. Strong Indigenous American bone structure (broad cheekbones, fuller features) tempered by Northern European height and lean build, with East Asian eye shape and skin undertones, and Hispanic/Latin American warmth in coloration.",
+                                 "height_cm":  188,
+                                 "weight_kg":  82,
+                                 "build":  "Tall and formerly athletic, now carrying a subtle softness through the torso that speaks to sedentary precision work and years of standing in one place. Still lean-limbed, with the posture of someone accustomed to detail work.",
+                                 "hair_color":  "Dark brown, natural",
+                                 "hair_style":  "Closely trimmed, neat, no styling affectation",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, unmodified",
+                                 "skin_tone":  "Warm copper-bronze with subtle golden undertonesâ€”a luminous blend of Indigenous American base enriched by Northern European fairness, East Asian warmth, and Hispanic/Latin American richness creating depth and complexity. Weathered from half-days under GLMZ sky.",
+                                 "complexion":  "Clean-shaven face with neatly maintained beard along jawline and chin showing distinct grey threading. Facial structure shows strong Indigenous American prominence (broad cheekbones, wider nasal base, fuller lips) balanced by Northern European jaw definition and subtle monolid eye shape influence from East Asian heritage. Skin shows minimal augmentation wearâ€”well-maintained. Expression carries studied neutrality of someone who listens more than speaks.",
+                                 "distinguishing_marks":  [
+                                                              "Fine parallel scars across the knuckles of both hands, barely visible unless light catches them right, from years of retractable claw deployment and retraction",
+                                                              "A small chemical burn mark on the left forearm (approximately 3cm diameter), faded to pale brown, from a Helix-era accident he does not discuss"
+                                                          ],
+                                 "visible_augmentations":  "Retractable cat-claw geneware visible only when deployedâ€”otherwise his hands appear entirely human. When dormant, only a faint hairline scarring at the base of each fingertip suggests the mod. No visible neural implant interfaceâ€”the pharmacy index is fully subcutaneous.",
+                                 "posture_movement":  "Still, economical movement. He does not fidget. When reaching for compounds or tools, his hands move with the precision of someone who has learned to compensate for augmentations that could be lethal if poorly controlled. He stands with his weight balanced, ready to move laterallyâ€”a habit from working in confined spaces. Speaks quietly. Makes deliberate eye contact.",
+                                 "clothing_style":  "Tier 3-4 practical wear. A weathered grey lab coat over dark slacks, well-maintained but not new, bearing the small stains of his work that no amount of washing quite removes. Under the coat: a neutral button-up shirt, usually cream or pale grey. Steel-toed work boots, scuffed but functional. A thin chain around his neck bearing a small brass pharmaceutical symbolâ€”not ostentatious, barely visible. No corp insignia. No chrome flourish. Everything about his presentation says: I know what I am doing, and you can trust that."
+                             },
+    "image_prompt":  "Onida Okada-KristjÃ¡nsson, tall mixed-heritage male with warm copper-bronze skin, broad high cheekbones and fuller lips (Indigenous American heritage), sharp jaw definition (Northern European), subtle monolid eye shape (East Asian), dark unmodified brown eyes, short dark brown hair with grey beard threading along jawline. 188cm lean build with slight torso softness. Wearing weathered grey lab coat over pale grey shirt and dark slacks, scuffed steel-toed work boots. Small brass pharmaceutical pendant on thin chain. Fine scars visible on knuckles, faded chemical burn mark on left forearm. Still, economical posture, precise hand positioning. Standing in neo-noir laboratory environment, cool blue-white accent lighting catching the faded scars and warm undertones of his skin. Studied neutral expression, deliberate eye contact. GLMZ 2226 aesthetic, practical tier 3-4 gear, no chrome flourish, entirely human appearance except for barely-visible hairline scarring at fingertips suggesting dormant geneware augmentation. Moody, clinical, trustworthy presence. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Indigenous American":  39.2,
+                             "Northern European":  21.5,
+                             "East Asian":  18.6,
+                             "Hispanic/Latin American":  16.2,
+                             "Eastern European":  4.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Aymara":  2.9,
+                                                                       "Quechua":  36.3
+                                                                   }
+                                                    },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "English":  21.5
+                                                                        }
+                                                  },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  18.6
+                                                            }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  0.3,
+                                                                                   "Colombian":  0.3
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  15.6
+                                                                        }
+                                                        },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Russian":  0.7,
+                                                                         "Belarusian":  3.8
+                                                                     }
+                                                 }
+                        },
+    "tier":  "3"
 }

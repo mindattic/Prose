@@ -1,246 +1,269 @@
-{
-  "id": "019d6143a5bd75bd84806da3bc8f518c",
-  "type": "character",
-  "name": "Aiman Valenzuela-Chatterjee",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Synthetic rights lawyer and policy advocate",
-  "age": 38,
-  "status": "active",
-  "location": "North Branch Commons — offices above a textile cooperative on the fourth floor, near Milwaukee and Damen",
-  "description": "Aiman Valenzuela-Chatterjee is tall with a deliberate, considered physicality — she moves like someone who has learned to take up exactly the right amount of space, no more. Her skin is deep brown-gold, her eyes fitted with patterned irises in the style of circuit-board tracery, a mod she got at thirty-two after winning her first major synthetic personhood case, a gift to herself she describes as 'wearing the victory.' Her hair is grown out natural and enormous, which in courtroom environments she has found functions as a kind of presence-amplifier.\n\nShe practices out of a two-room office staffed by herself, a paralegal who moonlights as a protest medic, and an unpaid intern rotation from Hamtramck Enclave's legal aid collective. She takes four pro bono cases for every paid one. Her specialty is arguing the legal personhood of synthetic laborers under Meridian's Corponation Compact — a niche so narrow that she is, in practice, one of three people in the city doing this work seriously. She is precise without being cold, and has developed the particular skill of translating genuine outrage into language that courts cannot dismiss. She rarely raises her voice. She doesn't need to.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.7,
-      "id": 0.4,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That the legal system she works within is irredeemably compromised and her work is legitimizing it",
-      "Losing control of her own professional narrative to someone else's politics"
-    ],
-    "core_desires": [
-      "A binding legal precedent for synthetic personhood that survives appeal",
-      "To practice law without constantly wondering if she's chosen the wrong tool"
-    ],
-    "coping_mechanisms": [
-      "Rigorous compartmentalization between professional and personal",
-      "Long runs along the North Branch canal at dawn",
-      "Picking fights she can win on paper when she can't win the ones that matter"
-    ],
-    "blind_spots": [
-      "She privileges the legible, documentable harm over the harm that doesn't fit a filing",
-      "She underestimates how much her clients need emotional support versus legal strategy"
-    ],
-    "secret": "She's quietly drafting a legal argument that would, if filed, challenge Axiom's sovereign corporate status under Meridian's founding compact. She hasn't told anyone because she doesn't know if she's brave enough to file it, and because the colleague she trusts most to review it is employed by Axiom's external legal firm."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal register as default, but not cold — she uses it as a tool and can shift registers deliberately. Technical legal language deployed precisely.",
-    "cadence": "Even, structured. Speaks in argument shapes: claim, evidence, implication. Rarely backtracks.",
-    "verbal_tics": [
-      "'Specifically, what I'm observing is—'",
-      "Repeating a question back before answering it"
-    ],
-    "example_lines": [
-      "'The statute doesn't say persons. It says entities capable of contractual obligation. Your synthetic coworker signed a work contract. That's the argument.'",
-      "'I take your frustration seriously. I'm also going to tell you that frustration doesn't win appeals, and so we're going to talk about what does.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She's been approached by a synthetic worker collective from Dearborn Forge seeking representation in a mass wrongful termination suit against Helix Biosystems — but Helix is also her largest paying client.",
-    "A counterpart lawyer working for Zheng-Dao is quietly dismantling her previous case wins through a series of technical appeals, and the pattern suggests coordination."
-  ],
-  "narrative_function": "Quest giver and legal resource. She can explain the system's actual rules, which are often different from how people think they work. She's also a pressure point — if she takes your case, it signals legitimacy; if she declines, it may mean the situation is too dangerous or too legally complex even for her.",
-  "augmentations": "Circuit-tracery patterned irises (cosmetic). No other augmentations — she considers it a political statement, though she'd deny the vanity in it.",
-  "daily_life": "Mornings in the office preparing filings. Afternoons in hearings, client consultations, or the Commons' courtyard mediating disputes informally. Evenings writing policy briefs that she sends to Meridian municipal committees who mostly do not respond.",
-  "affiliation": "Meridian Synthetic Personhood Project; North Branch Commons Legal Aid Collective; informal advisory role to the Labor Solidarity Network",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 7,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -3,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "legal strategist",
-      "controlled idealist",
-      "pressure point",
-      "ethically bifurcated",
-      "institutional player"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Know the rule before you break it",
-      "Take the case that establishes precedent over the case that's easy",
-      "Never lie to a client about their odds"
-    ],
-    "escalation_ladder": [
-      "Document everything precisely",
-      "File within existing frameworks",
-      "Appeal",
-      "Public pressure campaign coordinated with media contacts",
-      "Test case deliberately designed to be appealed to higher authority"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional courtesy with genuine attentiveness. She listens more than she speaks at first.",
-      "friends": "Dry wit and unexpected warmth. She bakes, badly, and brings it to the office as apology for her workaholic tendencies."
-    },
-    "stress_responses": {
-      "low": "Reorganizes her filing system.",
-      "medium": "Runs longer. Writes more. Slightly terse.",
-      "high": "Becomes very, very calm and starts writing the argument that scares her most."
-    },
-    "contradictions": [
-      "Represents the dispossessed within systems that dispossess them and has made an uneasy peace with this that is never quite peace"
-    ],
-    "habits": [
-      "Checks the Synthetic Personhood Project's E.L.F. shrine each morning — an old decommissioned legal database terminal that the collective treats as an ancestor spirit",
-      "Annotates every case she loses in a private file she's kept since her first year"
-    ],
-    "breaking_points": [
-      "A client dying because the legal process she trusted moved too slowly",
-      "Being forced to choose between the Axiom brief and everything else"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "North Branch Commons",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "North Branch Commons",
-    "Hamtramck Enclave",
-    "Helix Biosystems",
-    "Dearborn Forge",
-    "Zheng-dao Bioelectric",
-    "The Gradient Compact",
-    "Circuit",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Compass Rose",
-    "Gold"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Hispanic/Latin American (39.0%), Southeast Asian (33.0%), and South Asian (28.0%) — a striking triadic heritage reflecting the Ubiquitous Diaspora. Her features blend warm Latin structure with Southeast Asian eye shape and cheekbone prominence, enriched by South Asian skin depth and facial harmony. The combination creates a distinctive appearance that defies singular regional categorization.",
-    "height_cm": 183,
-    "weight_kg": 72,
-    "build": "Tall and lean with deliberate posture; shoulders squared, minimal excess weight — the physiology of someone who has cultivated presence through economy of movement rather than mass.",
-    "hair_color": "Natural dark brown with hints of auburn in direct light",
-    "hair_style": "Worn natural, voluminous, and textured — typically gathered into a high puff or allowed to frame her face during formal proceedings",
-    "hair_length": "Long (shoulder-length and fuller)",
-    "eye_color": "Deep brown irises with embedded circuit-board tracery pattern in gold and copper tones — a cosmetic augmentation that catches light when she focuses",
-    "skin_tone": "Warm medium-deep brown with golden undertones, reflecting the blended melanin of Southeast and South Asian heritage warmed by Latin American genetics; complexion is luminous and even-toned",
-    "complexion": "High, prominent cheekbones with Southeast Asian definition balanced by the fuller facial structure of South Asian ancestry, defined jawline with graceful angles. Minimal cosmetics — typically matte brown lip color. No visible scarring or blemishes; skin is meticulously maintained. Expression is controlled but not cold; eyes engage directly.",
-    "distinguishing_marks": [
-      "Circuit-tracery pattern overlay on both irises in gold and copper filament — visible only at close range or under direct light",
-      "Small scar on left knuckle, pale and thin, consistent with old courtroom injury or deliberate marking"
-    ],
-    "visible_augmentations": "Only the patterned irises are visible; she carries no chrome, subdermal plating, or external cybernetics. This is deliberate — her unaugmented body is a political stance, a contrast to the synthetics she defends.",
-    "posture_movement": "Walks with measured, economical steps. Stands with weight balanced evenly. Rarely gestures broadly; when she moves her hands, each motion is purposeful and restrained. Her stillness in conversation is notable — she listens more than she speaks. When she does move, it commands attention without effort.",
-    "clothing_style": "Tier 2-3 professional: well-maintained but not expensive. Favors high-necked tunics or collarless shirts in muted earth tones (charcoal, ochre, deep teal) layered with unstructured linen jackets. Trousers are tailored and practical. She wears minimal jewelry — a thin silver bracelet (possibly sentimental) and a wrist-mounted legal pad projector. Her shoes are worn but polished, practical for courtroom and Commons walking. No visible brand signaling; her authority comes from presence, not logos."
-  },
-  "image_prompt": "Aiman Valenzuela-Chatterjee, tall lean woman with warm deep brown skin with golden undertones, triadic ancestry blend of Hispanic/Southeast/South Asian heritage. High prominent Southeast Asian cheekbones balanced with fuller South Asian facial structure, defined jawline. Natural dark brown voluminous textured hair in high puff, shoulder-length. Deep brown eyes with subtle gold and copper circuit-board tracery pattern visible under light. Minimal makeup, composed controlled expression. Wearing high-necked charcoal tunic layered with unstructured linen jacket, tailored trousers, worn polished shoes. Silver bracelet visible. Standing with measured economical posture, even weight distribution, still and commanding presence. Great Lakes Metropolitan Zone courtroom or Commons setting, 2226 neo-noir era, subtle neon underglow on distant architecture, warm professional lighting catching eye augmentation tracery, photorealistic, dignified, --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 39,
-    "Southeast Asian": 33,
-    "South Asian": 28
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 8,
-        "Dominican": 10.6
-      },
-      "Mexican": {
-        "Mexican": 20.4
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 15.8
-      },
-      "Cambodian": {
-        "Khmer": 7.9
-      },
-      "Thai": {
-        "Thai": 9.3
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Pashtun": 23.3
-      },
-      "Nepali": {
-        "Nepali": 4.7
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a5bd75bd84806da3bc8f518c",
+    "type":  "character",
+    "name":  "Aiman Valenzuela-Chatterjee",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Synthetic rights lawyer and policy advocate",
+    "age":  38,
+    "status":  "active",
+    "location":  "North Branch Commons â€” offices above a textile cooperative on the fourth floor, near Milwaukee and Damen",
+    "description":  "Aiman Valenzuela-Chatterjee is tall with a deliberate, considered physicality â€” she moves like someone who has learned to take up exactly the right amount of space, no more. Her skin is deep brown-gold, her eyes fitted with patterned irises in the style of circuit-board tracery, a mod she got at thirty-two after winning her first major synthetic personhood case, a gift to herself she describes as \u0027wearing the victory.\u0027 Her hair is grown out natural and enormous, which in courtroom environments she has found functions as a kind of presence-amplifier.\n\nShe practices out of a two-room office staffed by herself, a paralegal who moonlights as a protest medic, and an unpaid intern rotation from Hamtramck Enclave\u0027s legal aid collective. She takes four pro bono cases for every paid one. Her specialty is arguing the legal personhood of synthetic laborers under Meridian\u0027s Corponation Compact â€” a niche so narrow that she is, in practice, one of three people in the city doing this work seriously. She is precise without being cold, and has developed the particular skill of translating genuine outrage into language that courts cannot dismiss. She rarely raises her voice. She doesn\u0027t need to.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the legal system she works within is irredeemably compromised and her work is legitimizing it",
+                                          "Losing control of her own professional narrative to someone else\u0027s politics"
+                                      ],
+                       "core_desires":  [
+                                            "A binding legal precedent for synthetic personhood that survives appeal",
+                                            "To practice law without constantly wondering if she\u0027s chosen the wrong tool"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Rigorous compartmentalization between professional and personal",
+                                                 "Long runs along the North Branch canal at dawn",
+                                                 "Picking fights she can win on paper when she can\u0027t win the ones that matter"
+                                             ],
+                       "blind_spots":  [
+                                           "She privileges the legible, documentable harm over the harm that doesn\u0027t fit a filing",
+                                           "She underestimates how much her clients need emotional support versus legal strategy"
+                                       ],
+                       "secret":  "She\u0027s quietly drafting a legal argument that would, if filed, challenge Axiom\u0027s sovereign corporate status under Meridian\u0027s founding compact. She hasn\u0027t told anyone because she doesn\u0027t know if she\u0027s brave enough to file it, and because the colleague she trusts most to review it is employed by Axiom\u0027s external legal firm."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal register as default, but not cold â€” she uses it as a tool and can shift registers deliberately. Technical legal language deployed precisely.",
+                            "cadence":  "Even, structured. Speaks in argument shapes: claim, evidence, implication. Rarely backtracks.",
+                            "verbal_tics":  [
+                                                "\u0027Specifically, what I\u0027m observing isâ€”\u0027",
+                                                "Repeating a question back before answering it"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The statute doesn\u0027t say persons. It says entities capable of contractual obligation. Your synthetic coworker signed a work contract. That\u0027s the argument.\u0027",
+                                                  "\u0027I take your frustration seriously. I\u0027m also going to tell you that frustration doesn\u0027t win appeals, and so we\u0027re going to talk about what does.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She\u0027s been approached by a synthetic worker collective from Dearborn Forge seeking representation in a mass wrongful termination suit against Helix Biosystems â€” but Helix is also her largest paying client.",
+                        "A counterpart lawyer working for Zheng-Dao is quietly dismantling her previous case wins through a series of technical appeals, and the pattern suggests coordination."
+                    ],
+    "narrative_function":  "Quest giver and legal resource. She can explain the system\u0027s actual rules, which are often different from how people think they work. She\u0027s also a pressure point â€” if she takes your case, it signals legitimacy; if she declines, it may mean the situation is too dangerous or too legally complex even for her.",
+    "augmentations":  "Circuit-tracery patterned irises (cosmetic). No other augmentations â€” she considers it a political statement, though she\u0027d deny the vanity in it.",
+    "daily_life":  "Mornings in the office preparing filings. Afternoons in hearings, client consultations, or the Commons\u0027 courtyard mediating disputes informally. Evenings writing policy briefs that she sends to Meridian municipal committees who mostly do not respond.",
+    "affiliation":  "Meridian Synthetic Personhood Project; North Branch Commons Legal Aid Collective; informal advisory role to the Labor Solidarity Network",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  7,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "legal strategist",
+                               "controlled idealist",
+                               "pressure point",
+                               "ethically bifurcated",
+                               "institutional player"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Know the rule before you break it",
+                                              "Take the case that establishes precedent over the case that\u0027s easy",
+                                              "Never lie to a client about their odds"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Document everything precisely",
+                                                 "File within existing frameworks",
+                                                 "Appeal",
+                                                 "Public pressure campaign coordinated with media contacts",
+                                                 "Test case deliberately designed to be appealed to higher authority"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional courtesy with genuine attentiveness. She listens more than she speaks at first.",
+                                                   "friends":  "Dry wit and unexpected warmth. She bakes, badly, and brings it to the office as apology for her workaholic tendencies."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Reorganizes her filing system.",
+                                                "medium":  "Runs longer. Writes more. Slightly terse.",
+                                                "high":  "Becomes very, very calm and starts writing the argument that scares her most."
+                                            },
+                       "contradictions":  [
+                                              "Represents the dispossessed within systems that dispossess them and has made an uneasy peace with this that is never quite peace"
+                                          ],
+                       "habits":  [
+                                      "Checks the Synthetic Personhood Project\u0027s E.L.F. shrine each morning â€” an old decommissioned legal database terminal that the collective treats as an ancestor spirit",
+                                      "Annotates every case she loses in a private file she\u0027s kept since her first year"
+                                  ],
+                       "breaking_points":  [
+                                               "A client dying because the legal process she trusted moved too slowly",
+                                               "Being forced to choose between the Axiom brief and everything else"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "North Branch Commons",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Zheng-Dao Heavy Industries Rail Pistol RP-2 \u0027Verdict\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "North Branch Commons",
+                             "Hamtramck Enclave",
+                             "Helix Biosystems",
+                             "Dearborn Forge",
+                             "Zheng-dao Bioelectric",
+                             "The Gradient Compact",
+                             "Circuit",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Compass Rose",
+                             "Gold"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Hispanic/Latin American (39.0%), Southeast Asian (33.0%), and South Asian (28.0%) â€” a striking triadic heritage reflecting the Ubiquitous Diaspora. Her features blend warm Latin structure with Southeast Asian eye shape and cheekbone prominence, enriched by South Asian skin depth and facial harmony. The combination creates a distinctive appearance that defies singular regional categorization.",
+                                 "height_cm":  183,
+                                 "weight_kg":  72,
+                                 "build":  "Tall and lean with deliberate posture; shoulders squared, minimal excess weight â€” the physiology of someone who has cultivated presence through economy of movement rather than mass.",
+                                 "hair_color":  "Natural dark brown with hints of auburn in direct light",
+                                 "hair_style":  "Worn natural, voluminous, and textured â€” typically gathered into a high puff or allowed to frame her face during formal proceedings",
+                                 "hair_length":  "Long (shoulder-length and fuller)",
+                                 "eye_color":  "Deep brown irises with embedded circuit-board tracery pattern in gold and copper tones â€” a cosmetic augmentation that catches light when she focuses",
+                                 "skin_tone":  "Warm medium-deep brown with golden undertones, reflecting the blended melanin of Southeast and South Asian heritage warmed by Latin American genetics; complexion is luminous and even-toned",
+                                 "complexion":  "High, prominent cheekbones with Southeast Asian definition balanced by the fuller facial structure of South Asian ancestry, defined jawline with graceful angles. Minimal cosmetics â€” typically matte brown lip color. No visible scarring or blemishes; skin is meticulously maintained. Expression is controlled but not cold; eyes engage directly.",
+                                 "distinguishing_marks":  [
+                                                              "Circuit-tracery pattern overlay on both irises in gold and copper filament â€” visible only at close range or under direct light",
+                                                              "Small scar on left knuckle, pale and thin, consistent with old courtroom injury or deliberate marking"
+                                                          ],
+                                 "visible_augmentations":  "Only the patterned irises are visible; she carries no chrome, subdermal plating, or external cybernetics. This is deliberate â€” her unaugmented body is a political stance, a contrast to the synthetics she defends.",
+                                 "posture_movement":  "Walks with measured, economical steps. Stands with weight balanced evenly. Rarely gestures broadly; when she moves her hands, each motion is purposeful and restrained. Her stillness in conversation is notable â€” she listens more than she speaks. When she does move, it commands attention without effort.",
+                                 "clothing_style":  "Tier 2-3 professional: well-maintained but not expensive. Favors high-necked tunics or collarless shirts in muted earth tones (charcoal, ochre, deep teal) layered with unstructured linen jackets. Trousers are tailored and practical. She wears minimal jewelry â€” a thin silver bracelet (possibly sentimental) and a wrist-mounted legal pad projector. Her shoes are worn but polished, practical for courtroom and Commons walking. No visible brand signaling; her authority comes from presence, not logos."
+                             },
+    "image_prompt":  "Aiman Valenzuela-Chatterjee, tall lean woman with warm deep brown skin with golden undertones, triadic ancestry blend of Hispanic/Southeast/South Asian heritage. High prominent Southeast Asian cheekbones balanced with fuller South Asian facial structure, defined jawline. Natural dark brown voluminous textured hair in high puff, shoulder-length. Deep brown eyes with subtle gold and copper circuit-board tracery pattern visible under light. Minimal makeup, composed controlled expression. Wearing high-necked charcoal tunic layered with unstructured linen jacket, tailored trousers, worn polished shoes. Silver bracelet visible. Standing with measured economical posture, even weight distribution, still and commanding presence. Great Lakes Metropolitan Zone courtroom or Commons setting, 2226 neo-noir era, subtle neon underglow on distant architecture, warm professional lighting catching eye augmentation tracery, photorealistic, dignified, --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  39,
+                             "Southeast Asian":  33,
+                             "South Asian":  28
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  8,
+                                                                              "Dominican":  10.6
+                                                                          },
+                                                            "Mexican":  {
+                                                                            "Mexican":  20.4
+                                                                        }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  15.8
+                                                                   },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  7.9
+                                                                  },
+                                                    "Thai":  {
+                                                                 "Thai":  9.3
+                                                             }
+                                                },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Pashtun":  23.3
+                                                              },
+                                                "Nepali":  {
+                                                               "Nepali":  4.7
+                                                           }
+                                            }
+                        },
+    "tier":  "4"
 }

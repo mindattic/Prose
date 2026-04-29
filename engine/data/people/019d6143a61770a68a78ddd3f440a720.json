@@ -1,348 +1,379 @@
-{
-  "id": "019d6143a61770a68a78ddd3f440a720",
-  "type": "character",
-  "name": "Camila Kettani",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Retired secondary school teacher, former union leader",
-  "age": 67,
-  "status": "active",
-  "location": "Norwood Quiet — the second floor of a converted pre-Meridian row house they have lived in for thirty-one years, near North Ave and Damen",
-  "description": "Camila Kettani is precisely the kind of person who looks exactly like what they are: a teacher. They are medium height and softly built, with warm brown skin, a crown of silver locs wound up in a complicated knot, and reading glasses that are always either on their face or lost somewhere on their body. Their geneware is minimal but characteristic — color-shifting irises that cycle through blues and greens as a cosmetic choice they made at forty and never bothered to reverse, and a small bioluminescent tattoo across their left collarbone in a geometric Ghanaian kente pattern that pulses faintly when they're excited about an idea. They dress in comfortable, slightly chaotic layers, always with at least one pocket overflowing with something — a physical book, printed lecture notes from years ago, data chips, sweets for the neighborhood children.\n\nFor thirty-two years Camila Kettani taught history and civic literacy at a community school in Norwood Quiet, the last twelve as a union chapter leader fighting against Tessera Corporation's creeping acquisition of the public school data infrastructure. They lost most of those fights. They won a few. They retired with a modest Tessera-adjacent pension and a comprehensive knowledge of exactly how institutional power erodes communities from the inside, which they now use freely and without corporate constraint. They have strong opinions delivered with a professor's patience — they will give you time to be wrong before correcting you, but they will correct you.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.9,
-      "id": 0.5,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That the history they are writing will be accurate and useless",
-      "Outliving their sense of purpose"
-    ],
-    "core_desires": [
-      "One generation of students who understand what was taken from them and know how to want it back",
-      "To finish the book"
-    ],
-    "coping_mechanisms": [
-      "Converting anxiety into research and writing",
-      "Finding humor in institutional absurdity as a way of maintaining hope"
-    ],
-    "blind_spots": [
-      "They sometimes treat people as students rather than peers, which they don't realize they're doing",
-      "They are more optimistic about collective action than the evidence sometimes warrants, because they need to be"
-    ],
-    "secret": "During the Tessera negotiations of 2188, they accepted a one-time payment from a Tessera community liaison in exchange for softening a union position on data privacy. It was Φ3,000 — barely anything. They told themselves it was a tactical retreat. They have never forgiven themselves and have never told anyone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Educated and precise but deliberately accessible — they have spent decades translating complex ideas and the habit is permanent; occasional Serbian-Romanian verbal constructions from family idiom; quotes historical sources with automatic citation",
-    "cadence": "Measured and unhurried, with a teacher's habit of letting a question sit in the air before answering it",
-    "verbal_tics": [
-      "'Which brings us to—'",
-      "Rhetorical questions they then answer themselves",
-      "'And this is important—' before anything they actually want you to remember"
-    ],
-    "example_lines": [
-      "'Tessera didn't buy the school data infrastructure. They offered to maintain it for free. And that is how you buy something without paying for it.'",
-      "'I've been wrong before. I was wrong in 2188, specifically. But I don't think I'm wrong about this.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Florinel's history manuscript contains an interview with a Corporate Wars veteran whose account contradicts official Ringo Corporation records — someone wants the interview suppressed",
-    "A former student of theirs has taken a corporate job and is now implementing exactly the policies Florinel spent years fighting; they don't know how to feel about this and it's affecting their work"
-  ],
-  "narrative_function": "Exposition resource for history and institutional knowledge; political catalyst in community storylines; mentor figure; represents organized resistance within civilian structures; source of union and labor history",
-  "augmentations": "Color-shifting cosmetic irises (geneware); bioluminescent kente-pattern tattoo, left collarbone (geneware, cosmetic); standard sensory enhancement for classroom acoustics that they keep forgetting they have",
-  "daily_life": "Mornings spent writing — they are working on a comprehensive history of the Corporate Wars from civilian source material, which they are not sure anyone will publish but are writing anyway. Afternoons volunteering at the Community Education Collective, running a civic literacy workshop for adults. Three evenings a week they host what they call a reading group and what everyone else calls a political meeting.",
-  "affiliation": "Retired, former Norwood Quiet Teachers' Union chapter leader; Community Education Collective (volunteer); informal mentor network",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 6
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 9,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 3,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "teacher",
-      "union organizer",
-      "historian",
-      "community leader",
-      "idealist"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always explain your reasoning — people deserve to understand why, not just what",
-      "Don't take a position you can't defend without appealing to authority"
-    ],
-    "escalation_ladder": [
-      "Asks clarifying questions until the other person has to articulate what they actually mean",
-      "Makes the structural argument explicitly",
-      "Calls the meeting and builds the coalition",
-      "Goes public — writes it out, distributes it, lets the record speak"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Curious and warm, immediately asks questions about what the person knows or does",
-      "friends": "Relaxed and teasing, genuinely delighted by people they respect"
-    },
-    "stress_responses": {
-      "low": "Makes tea and reads something unrelated for twenty minutes",
-      "medium": "Writes out the problem in long-form prose — externalizing it helps",
-      "high": "Calls an emergency meeting of anyone who will come and thinks out loud at them"
-    },
-    "contradictions": [
-      "They believe passionately in transparency and collective decision-making and have been carrying a private guilt alone for twelve years"
-    ],
-    "habits": [
-      "Underlines physical books in three colors with a system only they understand",
-      "Their irises shift fastest to green when they're excited about an idea — they've never noticed this tell",
-      "Always offers food at any meeting, because their teacher training taught them people think better when they're not hungry"
-    ],
-    "breaking_points": [
-      "Watching a young person accept an unjust situation because they've been taught they have no alternative"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good, seventeen years old",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional, often forgotten",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Mentor": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Norwood Quiet",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Norwood Quiet to a Ghanaian-Bosnian family, third generation GLMZ",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began teaching at Norwood Community Secondary",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Elected chapter leader of the Norwood Quiet Teachers' Union",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "The Tessera negotiation; the compromise they regret",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Retired from teaching; began the history manuscript",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Current — writing, volunteering, running the reading group",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Wheelgun-38 'Roundhouse'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Norwood Quiet",
-    "Patience",
-    "Tessera Corponation",
-    "Silver",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Nesting Doll",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Ringo Corponation",
-    "Compass Rose"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "North African (30.8%) with substantial Hispanic/Latin American (28.9%), South Asian (17.4%), East Asian (14.1%), Middle Eastern (5.6%), and Sub-Saharan African (3.2%) ancestry; complex multiethnic blend creating warm medium-to-deep brown tones with golden and subtle reddish undertones",
-    "height_cm": 168,
-    "weight_kg": 72,
-    "build": "Softly built, compact and rounded through the torso from decades of sedentary work; gentle posture without slouch; arms and legs retain subtle muscle tone beneath comfortable padding",
-    "hair_color": "Silver-gray",
-    "hair_style": "Locs wound into a complicated topknot, typically secured with worn fabric wraps or wooden pins; flyaways common",
-    "hair_length": "Long (locs reach mid-back when unbound)",
-    "eye_color": "Color-shifting cosmetic irises cycling through blue-green spectrum",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones; weathered and well-maintained, reflecting the combined influence of North African, Hispanic/Latin American, South Asian, East Asian, Middle Eastern, and Sub-Saharan African heritage creating rich complexity",
-    "complexion": "Open, expressive face lined with decades of teaching—laugh lines around eyes and mouth prominent; warm golden-brown skin showing sun exposure around cheekbones and forehead; facial structure reflects balanced North African and South Asian ancestry (defined cheekbones, strong brow) with softening influence and subtle broadening from East Asian and Hispanic/Latin American heritage; sparse silver facial hair; minimal makeup; reading glasses frequently perched on crown or hanging from fabric cord around neck",
-    "distinguishing_marks": [
-      "Bioluminescent kente-pattern geometric tattoo across left collarbone in blues and golds, pulses faintly when animated or excited",
-      "Fine age lines around eyes characteristic of constant reading and close observation",
-      "Small scar on left knuckle from union organizing incident, early 2190s"
-    ],
-    "visible_augmentations": "Color-shifting iris geneware immediately noticeable under direct light; bioluminescent collarbone tattoo visible in low light or when excited. Subcutaneous acoustic enhancement not visible. No obvious prosthetics or external chrome.",
-    "posture_movement": "Stands with weight slightly forward, hands frequently gesturing while speaking; walks with deliberate pace, rarely rushed; tendency to tilt head while listening—professorial attention. Settles into chairs fully, taking up comfortable space. Movements efficient rather than elegant; no wasted motion.",
-    "clothing_style": "Comfortable, layered Tier 3-4 casual: worn cotton cardigans or linen overshirts in earth tones, practical trousers with visible pockets stuffed with books/chips/sweets, worn canvas shoes. Fabrics show age but remain clean and carefully maintained. Personal accessories include old fabric bookmarks, reading glasses on cords, and a faded union pin from the 2210s. Overall effect: organized chaos of someone who has stopped performing for institutions."
-  },
-  "image_prompt": "Camila Kettani, 168cm woman with warm deep brown skin with golden undertones, silver-gray locs gathered in topknot with wooden pins, expressive face lined with decades of teaching and laugh lines, color-shifting blue-green cosmetic irises glowing faintly, bioluminescent kente-pattern geometric tattoo pulsing faintly on left collarbone in blues and golds, soft rounded build from decades of sedentary work, wearing layered earth-tone linen overshirt and worn canvas shoes, standing with weight forward gesturing while speaking, professorial attention, reading glasses hanging from fabric cord around neck, union pin on chest, surrounded by books and worn fabric bookmarks, GLMZ 2226 near-future megacity setting, warm indoor library lighting catching the bioluminescence, detailed face showing weathered warmth and North African-South Asian-Hispanic-East Asian heritage blend, organized chaos aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "North African": 30.8,
-    "Hispanic/Latin American": 28.9,
-    "South Asian": 17.4,
-    "East Asian": 14.1,
-    "Middle Eastern": 5.6,
-    "Sub-Saharan African": 3.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "North African": {
-      "Amazigh": {
-        "Berber": 30.8
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 0.4,
-        "Cuban": 1.8
-      },
-      "Central American": {
-        "Guatemalan": 11.6,
-        "Honduran": 5.7
-      },
-      "South American": {
-        "Peruvian": 9.4
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 14.5
-      },
-      "Indian": {
-        "Gujarati": 2.9
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Shanghainese": 8.4
-      },
-      "Japanese": {
-        "Japanese": 1.5
-      },
-      "Korean": {
-        "Korean": 4.2
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Iraqi": 5.6
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Cameroonian": 1.9,
-        "Congolese": 1.3
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a61770a68a78ddd3f440a720",
+    "type":  "character",
+    "name":  "Camila Kettani",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Retired secondary school teacher, former union leader",
+    "age":  67,
+    "status":  "active",
+    "location":  "Norwood Quiet â€” the second floor of a converted pre-Meridian row house they have lived in for thirty-one years, near North Ave and Damen",
+    "description":  "Camila Kettani is precisely the kind of person who looks exactly like what they are: a teacher. They are medium height and softly built, with warm brown skin, a crown of silver locs wound up in a complicated knot, and reading glasses that are always either on their face or lost somewhere on their body. Their geneware is minimal but characteristic â€” color-shifting irises that cycle through blues and greens as a cosmetic choice they made at forty and never bothered to reverse, and a small bioluminescent tattoo across their left collarbone in a geometric Ghanaian kente pattern that pulses faintly when they\u0027re excited about an idea. They dress in comfortable, slightly chaotic layers, always with at least one pocket overflowing with something â€” a physical book, printed lecture notes from years ago, data chips, sweets for the neighborhood children.\n\nFor thirty-two years Camila Kettani taught history and civic literacy at a community school in Norwood Quiet, the last twelve as a union chapter leader fighting against Tessera Corporation\u0027s creeping acquisition of the public school data infrastructure. They lost most of those fights. They won a few. They retired with a modest Tessera-adjacent pension and a comprehensive knowledge of exactly how institutional power erodes communities from the inside, which they now use freely and without corporate constraint. They have strong opinions delivered with a professor\u0027s patience â€” they will give you time to be wrong before correcting you, but they will correct you.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the history they are writing will be accurate and useless",
+                                          "Outliving their sense of purpose"
+                                      ],
+                       "core_desires":  [
+                                            "One generation of students who understand what was taken from them and know how to want it back",
+                                            "To finish the book"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Converting anxiety into research and writing",
+                                                 "Finding humor in institutional absurdity as a way of maintaining hope"
+                                             ],
+                       "blind_spots":  [
+                                           "They sometimes treat people as students rather than peers, which they don\u0027t realize they\u0027re doing",
+                                           "They are more optimistic about collective action than the evidence sometimes warrants, because they need to be"
+                                       ],
+                       "secret":  "During the Tessera negotiations of 2188, they accepted a one-time payment from a Tessera community liaison in exchange for softening a union position on data privacy. It was Î¦3,000 â€” barely anything. They told themselves it was a tactical retreat. They have never forgiven themselves and have never told anyone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Educated and precise but deliberately accessible â€” they have spent decades translating complex ideas and the habit is permanent; occasional Serbian-Romanian verbal constructions from family idiom; quotes historical sources with automatic citation",
+                            "cadence":  "Measured and unhurried, with a teacher\u0027s habit of letting a question sit in the air before answering it",
+                            "verbal_tics":  [
+                                                "\u0027Which brings us toâ€”\u0027",
+                                                "Rhetorical questions they then answer themselves",
+                                                "\u0027And this is importantâ€”\u0027 before anything they actually want you to remember"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Tessera didn\u0027t buy the school data infrastructure. They offered to maintain it for free. And that is how you buy something without paying for it.\u0027",
+                                                  "\u0027I\u0027ve been wrong before. I was wrong in 2188, specifically. But I don\u0027t think I\u0027m wrong about this.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Florinel\u0027s history manuscript contains an interview with a Corporate Wars veteran whose account contradicts official Ringo Corporation records â€” someone wants the interview suppressed",
+                        "A former student of theirs has taken a corporate job and is now implementing exactly the policies Florinel spent years fighting; they don\u0027t know how to feel about this and it\u0027s affecting their work"
+                    ],
+    "narrative_function":  "Exposition resource for history and institutional knowledge; political catalyst in community storylines; mentor figure; represents organized resistance within civilian structures; source of union and labor history",
+    "augmentations":  "Color-shifting cosmetic irises (geneware); bioluminescent kente-pattern tattoo, left collarbone (geneware, cosmetic); standard sensory enhancement for classroom acoustics that they keep forgetting they have",
+    "daily_life":  "Mornings spent writing â€” they are working on a comprehensive history of the Corporate Wars from civilian source material, which they are not sure anyone will publish but are writing anyway. Afternoons volunteering at the Community Education Collective, running a civic literacy workshop for adults. Three evenings a week they host what they call a reading group and what everyone else calls a political meeting.",
+    "affiliation":  "Retired, former Norwood Quiet Teachers\u0027 Union chapter leader; Community Education Collective (volunteer); informal mentor network",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  6
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  9,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "teacher",
+                               "union organizer",
+                               "historian",
+                               "community leader",
+                               "idealist"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always explain your reasoning â€” people deserve to understand why, not just what",
+                                              "Don\u0027t take a position you can\u0027t defend without appealing to authority"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Asks clarifying questions until the other person has to articulate what they actually mean",
+                                                 "Makes the structural argument explicitly",
+                                                 "Calls the meeting and builds the coalition",
+                                                 "Goes public â€” writes it out, distributes it, lets the record speak"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Curious and warm, immediately asks questions about what the person knows or does",
+                                                   "friends":  "Relaxed and teasing, genuinely delighted by people they respect"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Makes tea and reads something unrelated for twenty minutes",
+                                                "medium":  "Writes out the problem in long-form prose â€” externalizing it helps",
+                                                "high":  "Calls an emergency meeting of anyone who will come and thinks out loud at them"
+                                            },
+                       "contradictions":  [
+                                              "They believe passionately in transparency and collective decision-making and have been carrying a private guilt alone for twelve years"
+                                          ],
+                       "habits":  [
+                                      "Underlines physical books in three colors with a system only they understand",
+                                      "Their irises shift fastest to green when they\u0027re excited about an idea â€” they\u0027ve never noticed this tell",
+                                      "Always offers food at any meeting, because their teacher training taught them people think better when they\u0027re not hungry"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching a young person accept an unjust situation because they\u0027ve been taught they have no alternative"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good, seventeen years old",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional, often forgotten",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Mentor":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Norwood Quiet",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Norwood Quiet to a Ghanaian-Bosnian family, third generation GLMZ",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began teaching at Norwood Community Secondary",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Elected chapter leader of the Norwood Quiet Teachers\u0027 Union",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "The Tessera negotiation; the compromise they regret",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Retired from teaching; began the history manuscript",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Current â€” writing, volunteering, running the reading group",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Wheelgun-38 \u0027Roundhouse\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Norwood Quiet",
+                             "Patience",
+                             "Tessera Corponation",
+                             "Silver",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Nesting Doll",
+                             "IRONLIMB Spectre SV-4 Stealth Arm",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Ringo Corponation",
+                             "Compass Rose"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "North African (30.8%) with substantial Hispanic/Latin American (28.9%), South Asian (17.4%), East Asian (14.1%), Middle Eastern (5.6%), and Sub-Saharan African (3.2%) ancestry; complex multiethnic blend creating warm medium-to-deep brown tones with golden and subtle reddish undertones",
+                                 "height_cm":  168,
+                                 "weight_kg":  72,
+                                 "build":  "Softly built, compact and rounded through the torso from decades of sedentary work; gentle posture without slouch; arms and legs retain subtle muscle tone beneath comfortable padding",
+                                 "hair_color":  "Silver-gray",
+                                 "hair_style":  "Locs wound into a complicated topknot, typically secured with worn fabric wraps or wooden pins; flyaways common",
+                                 "hair_length":  "Long (locs reach mid-back when unbound)",
+                                 "eye_color":  "Color-shifting cosmetic irises cycling through blue-green spectrum",
+                                 "skin_tone":  "Warm medium-to-deep brown with golden undertones; weathered and well-maintained, reflecting the combined influence of North African, Hispanic/Latin American, South Asian, East Asian, Middle Eastern, and Sub-Saharan African heritage creating rich complexity",
+                                 "complexion":  "Open, expressive face lined with decades of teachingâ€”laugh lines around eyes and mouth prominent; warm golden-brown skin showing sun exposure around cheekbones and forehead; facial structure reflects balanced North African and South Asian ancestry (defined cheekbones, strong brow) with softening influence and subtle broadening from East Asian and Hispanic/Latin American heritage; sparse silver facial hair; minimal makeup; reading glasses frequently perched on crown or hanging from fabric cord around neck",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent kente-pattern geometric tattoo across left collarbone in blues and golds, pulses faintly when animated or excited",
+                                                              "Fine age lines around eyes characteristic of constant reading and close observation",
+                                                              "Small scar on left knuckle from union organizing incident, early 2190s"
+                                                          ],
+                                 "visible_augmentations":  "Color-shifting iris geneware immediately noticeable under direct light; bioluminescent collarbone tattoo visible in low light or when excited. Subcutaneous acoustic enhancement not visible. No obvious prosthetics or external chrome.",
+                                 "posture_movement":  "Stands with weight slightly forward, hands frequently gesturing while speaking; walks with deliberate pace, rarely rushed; tendency to tilt head while listeningâ€”professorial attention. Settles into chairs fully, taking up comfortable space. Movements efficient rather than elegant; no wasted motion.",
+                                 "clothing_style":  "Comfortable, layered Tier 3-4 casual: worn cotton cardigans or linen overshirts in earth tones, practical trousers with visible pockets stuffed with books/chips/sweets, worn canvas shoes. Fabrics show age but remain clean and carefully maintained. Personal accessories include old fabric bookmarks, reading glasses on cords, and a faded union pin from the 2210s. Overall effect: organized chaos of someone who has stopped performing for institutions."
+                             },
+    "image_prompt":  "Camila Kettani, 168cm woman with warm deep brown skin with golden undertones, silver-gray locs gathered in topknot with wooden pins, expressive face lined with decades of teaching and laugh lines, color-shifting blue-green cosmetic irises glowing faintly, bioluminescent kente-pattern geometric tattoo pulsing faintly on left collarbone in blues and golds, soft rounded build from decades of sedentary work, wearing layered earth-tone linen overshirt and worn canvas shoes, standing with weight forward gesturing while speaking, professorial attention, reading glasses hanging from fabric cord around neck, union pin on chest, surrounded by books and worn fabric bookmarks, GLMZ 2226 near-future megacity setting, warm indoor library lighting catching the bioluminescence, detailed face showing weathered warmth and North African-South Asian-Hispanic-East Asian heritage blend, organized chaos aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "North African":  30.8,
+                             "Hispanic/Latin American":  28.9,
+                             "South Asian":  17.4,
+                             "East Asian":  14.1,
+                             "Middle Eastern":  5.6,
+                             "Sub-Saharan African":  3.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Berber":  30.8
+                                                              }
+                                              },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  0.4,
+                                                                              "Cuban":  1.8
+                                                                          },
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  11.6,
+                                                                                     "Honduran":  5.7
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Peruvian":  9.4
+                                                                               }
+                                                        },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  14.5
+                                                               },
+                                                "Indian":  {
+                                                               "Gujarati":  2.9
+                                                           }
+                                            },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Shanghainese":  8.4
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  1.5
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  4.2
+                                                          }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  5.6
+                                                                 }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Cameroonian":  1.9,
+                                                                                "Congolese":  1.3
+                                                                            }
+                                                    }
+                        },
+    "tier":  "1"
 }

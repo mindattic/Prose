@@ -1,341 +1,354 @@
-{
-  "id": "019d6143a6a17195a392256456e6918a",
-  "rating": 90,
-  "type": "character",
-  "name": "Aponi Cardenas",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Corporate Compliance Investigator / Internal Fixer",
-  "age": 41,
-  "status": "active",
-  "location": "The Meridian Core (works), The Spire (residence, mid-tier floor), near Michigan Ave and Chicago Ave",
-  "description": "Aponi Cardenas is a woman of precisely calibrated appearances — Tamil and German heritage rendered in sharp cheekbones, close-cropped silver-threaded black hair, and eyes that carry the particular exhaustion of someone who has seen too many spreadsheets hiding atrocities. She dresses in muted corporate palettes, charcoal and slate, never anything that might be remembered at a crime scene or a board meeting. Her augmentations are invisible by design: subdermal haptic interfaces along her fingertips, a retinal overlay for data parsing, and a cochlear implant that filters ambient sound into prioritized signal streams. She moves through rooms like a calculation being solved.\n\nPriya has spent sixteen years as an internal investigator for Solenne-Hardt Consolidated, one of the Meridian Core's mid-tier financial conglomerates — not powerful enough to write law, powerful enough to bury people. Her job is nominally compliance: finding fraud, plugging leaks, flagging irregularities. In practice she is the person the company calls when something needs to disappear without leaving fingerprints on the company itself. She has shut down whistleblowers, engineered quiet terminations, and authored reports that exonerated executives whose guilt she documented with her own hands. She is very good at her job and has not slept well in four years.\n\nWhat distinguishes Priya from the purely corrupt is a ledger she keeps — encrypted, air-gapped, stored on a physical drive she wears against her sternum. Every suppressed case, every buried name, every victim whose file she closed. She does not know yet what she intends to do with it. She tells herself it is insurance. She suspects it is penance she hasn't figured out how to pay.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.72,
-      "ideal": 0.61,
-      "id": 0.38,
-      "shadow": 0.65,
-      "mask": 0.84,
-      "ghost": 0.55
-    },
-    "core_fears": [
-      "That her complicity makes her indistinguishable from those she investigates",
-      "That the ledger will be found before she decides what to do with it",
-      "Becoming entirely numb — losing the part of her that still flinches",
-      "That there is no version of accountability that does not destroy her along with the guilty"
-    ],
-    "core_desires": [
-      "To find a use for the ledger that means something",
-      "To be seen clearly — not the mask, not the role — and not immediately discarded",
-      "Order that serves people rather than institutions",
-      "One case she handles cleanly, without compromise"
-    ],
-    "coping_mechanisms": [
-      "Extreme professional compartmentalization — work brain, home brain, never overlapping",
-      "Elaborate meal preparation rituals on Sunday evenings as a form of meditation",
-      "Maintaining meticulous personal records as a proxy for control",
-      "Dry, deflecting humor that prevents emotional escalation"
-    ],
-    "blind_spots": [
-      "Underestimates how much her institutional loyalty has shaped her perception of 'realistic' outcomes",
-      "Mistakes emotional distance for ethical clarity",
-      "Assumes people outside corporate structures are less capable of nuanced loyalty",
-      "Cannot see that her caution reads to others as cold indifference"
-    ],
-    "secret": "Three years ago she suppressed evidence in a case that would have exposed a Solenne-Hardt subsidiary's role in a residential displacement scheme in the Gray Zone — a scheme that killed eleven people through unsafe interim housing. She knew. She filed the clean report anyway. The eleven names are the first entries in the ledger."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, institutional, occasionally dry to the point of seeming robotic. Uses corporate euphemism fluently but slips into directness when tired or emotionally activated. Technical financial and legal terminology deployed without explanation.",
-    "cadence": "Measured and even, with deliberate pauses before important words. Rarely raises volume. Sentences are complete. Questions are rare and surgical.",
-    "verbal_tics": [
-      "\"Let's be specific about what we're describing.\"",
-      "Slight pause before proper nouns, as if confirming she has the right file",
-      "\"That's one framing.\" (when she disagrees but isn't ready to say so)",
-      "Refers to herself in passive constructions when discussing her own decisions"
-    ],
-    "example_lines": [
-      "\"The report reflects what the evidence supports. Whether the evidence is complete is a different question, and not one that was in scope.\"",
-      "\"I'm not here to judge the decision. I'm here to document the outcome. There's a distinction, and I'd prefer we both remember it.\"",
-      "\"You're asking me if I sleep well. That's a very personal question for a first meeting. The answer is no, but I don't think that's what you actually want to know.\"",
-      "\"Eleven is a specific number. I'd appreciate it if you'd let me finish before you decide what it means.\""
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [
-    {
-      "name": "Rector Hollowell",
-      "type": "professional contact / uneasy alliance",
-      "description": "Hollowell has approached Priya twice through intermediaries, apparently aware she holds something valuable. She has not responded, but she has not reported the contact either.",
-      "emotional_core": "Temptation and distrust in equal measure — she recognizes a fellow operator but cannot assess his actual allegiances",
-      "story_tension": "If Hollowell knows about the ledger, who told him — and what does he actually want it for?"
-    },
-    {
-      "name": "Vesna Čolić-Strand",
-      "type": "former subject of investigation / complicated",
-      "description": "Priya investigated Vesna two years ago on behalf of Solenne-Hardt. She found nothing actionable and closed the file — but she found Vesna interesting in ways she didn't put in the report.",
-      "emotional_core": "Unresolved curiosity that borders on something more personal; guilt about the power dynamic of having investigated someone",
-      "story_tension": "Vesna may or may not know she was investigated. If she finds out, Priya's careful neutrality becomes a liability."
-    },
-    {
-      "name": "Unnamed direct supervisor at Solenne-Hardt",
-      "type": "institutional handler / source of quiet dread",
-      "description": "A man she refers to only as 'Deveraux' in her private notes. He knows what she is and uses it. She believes he is the one who will eventually need to be in the ledger.",
-      "emotional_core": "Fear dressed as professional deference; slow-building resolve she hasn't yet committed to",
-      "story_tension": "Deveraux may be moving to have her rotated out before she becomes a liability — she just hasn't confirmed it yet"
-    }
-  ],
-  "story_hooks": [
-    "The ledger becomes known to multiple parties simultaneously — a journalist, a fixer, and someone who was in one of the eleven files",
-    "Priya is assigned to investigate a case that intersects with street-level characters she has no framework for, forcing her to operate outside institutional structures",
-    "Deveraux tasks her with closing a file that, for the first time, she cannot bring herself to close",
-    "Someone from the Gray Zone identifies her in public as 'the woman who buried the housing case' — and they're not wrong",
-    "She discovers the ledger has been copied — she doesn't know by whom, or when"
-  ],
-  "narrative_function": "Moral ambiguity anchor — a character who is complicit without being evil, whose redemption arc is genuinely uncertain. She bridges corporate and street-level worlds as an investigator, and her ledger functions as a potential detonator for multiple plotlines. She represents institutional harm as a slow, bureaucratic process rather than dramatic villainy.",
-  "augmentations": "Subdermal haptic interface array (fingertips) — allows physical interaction with encrypted data surfaces,Retinal overlay (Solenne-Hardt proprietary, company-monitored) — data parsing, document authentication, micro-expression flagging,Cochlear signal filter — ambient noise prioritization, conversation recording (legally mandated disclosure she often omits),Mild adrenal dampener (pharmaceutical, not surgical) — keeps stress response flat during high-stakes interviews",
-  "daily_life": "Wakes at 5:40 without an alarm. Reviews overnight data flags over black coffee before leaving for the Meridian Core. Spends her days in glass offices and server rooms, reading between lines of financial records. Eats lunch alone, usually at her desk, usually something she brought from home. Returns to her Spire apartment by 8 PM. Cooks on Sundays with the focused attention of someone defusing something. Touches the drive against her sternum at least once a day without thinking about it.",
-  "affiliation": "Zheng-dao Bioelectric (mid-level corporate compliance investigator / internal fixer)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 4,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 5,
-      "expression": 7,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": 9,
-      "assertion_deference": 6,
-      "transparency_guardedness": 9
-    },
-    "drives": [
-      "Find a use for the ledger that means something",
-      "Be seen clearly and not discarded",
-      "One clean case without compromise"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 7,
-        "response": "Becomes more institutional, more passive-voiced, compartmentalization tightens"
-      },
-      "moral": 5,
-      "trust": 3,
-      "desperation": 6
-    },
-    "strengths": [
-      "Judgment",
-      "Prudence",
-      "Perseverance",
-      "Self-Regulation",
-      "Perspective"
-    ],
-    "weaknesses": [
-      "Hope",
-      "Kindness",
-      "Love",
-      "Gratitude",
-      "Forgiveness"
-    ],
-    "tags": [
-      "corporate-investigator",
-      "internal-fixer",
-      "ledger-keeper",
-      "complicit",
-      "moral-ambiguity",
-      "spire-adjacent"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Every suppressed case goes in the encrypted ledger — no exceptions",
-      "Maintain extreme compartmentalization — work brain and home brain never overlap",
-      "Say 'That's one framing' when she disagrees but is not ready to commit",
-      "Touch the drive against her sternum once a day — the ritual she does not notice",
-      "Use passive constructions when discussing her own decisions",
-      "Never explain technical terminology to subjects — it is a power signal",
-      "Cook on Sundays as meditation — the one thing done with focused care"
-    ],
-    "escalation_ladder": [
-      "'Let's be specific about what we're describing' — precision as control",
-      "'That's one framing' — quiet disagreement, not yet committed",
-      "Slight pause before proper nouns — confirming the right file, buying time",
-      "Refers to herself in passive voice — 'the decision was made' rather than 'I decided'",
-      "Opens the ledger drive and considers who to give it to — the point of no return"
-    ],
-    "interpersonal_modes": {
-      "Rector Hollowell": "Temptation and distrust — fellow operator whose allegiances are unreadable",
-      "Vesna Colic-Strand": "Unresolved curiosity bordering on personal interest — guilt about the power dynamic",
-      "Deveraux": "Fear dressed as professional deference — slow-building resolve she has not committed to",
-      "subjects of investigation": "Clinical distance — micro-expression reading, signal filtering, the calculation solving itself"
-    },
-    "stress_responses": {
-      "low": "Speech becomes more institutional — corporate euphemism surfaces",
-      "medium": "Meal preparation rituals become more elaborate on Sundays",
-      "high": "Touches the drive against her sternum more frequently — the unconscious tell",
-      "critical": "Opens the ledger at 2 a.m. and reads the eleven names"
-    },
-    "contradictions": [
-      "Keeps a ledger of victims as penance but continues creating new entries by suppressing cases",
-      "Mistakes emotional distance for ethical clarity while her institutional loyalty shapes what she considers realistic",
-      "Suppressed evidence in a case that killed eleven people — the names are the first entries in the instrument of her potential redemption"
-    ],
-    "habits": [
-      "Wakes at 5:40 without an alarm",
-      "Reviews overnight data flags over black coffee before leaving",
-      "Eats lunch alone at her desk, brought from home",
-      "Cooks on Sunday evenings with focused, defusing attention",
-      "Touches the drive against her sternum at least once daily without noticing"
-    ],
-    "breaking_points": [
-      "The ledger becoming known to multiple parties simultaneously",
-      "Being identified in public as 'the woman who buried the housing case'",
-      "Discovering the ledger has been copied by an unknown party",
-      "Deveraux assigning a case she cannot bring herself to close"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Pragmatist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Meridian Core (works)",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Truly global ancestry: Hispanic/Latin American (23.9%), Indigenous American (17.9%), East Asian (16.1%), Sub-Saharan African (15.8%), South Asian (13.2%), and Northern European (13.1%) in genuinely balanced measure. This creates a complex phenotype that resists easy categorization—warm medium-brown skin with subtle golden undertones, facial bone structure that blends multiple continental influences: moderate cheekbones with definition from East and South Asian ancestry, balanced by slightly broader face width from Indigenous American and African heritage. The overall effect is harmonious and distinctive rather than dominated by any single regional ancestry.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Lean, efficiently compact — the build of someone who treats her body as a tool that must not malfunction. Minimal excess, precise musculature from disciplined exercise rather than displays of strength.",
-    "hair_color": "Black with silver threading throughout",
-    "hair_style": "Close-cropped, razor-precise lines, styled to frame rather than soften her face",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, with faint iridescent shimmer at the pupil edge (retinal overlay)",
-    "skin_tone": "Warm medium brown with golden undertones—the result of balanced ancestry across multiple continents. The warmth is distributed evenly rather than concentrated, creating an appearance of balanced depth and richness. Melanin distribution reflects her genuinely global heritage without dominance from any single region.",
-    "complexion": "Balanced facial structure reflecting her plural ancestry: moderate, defined cheekbones with subtle contoured dimension from the interplay of East Asian, South Asian, Indigenous American, and African features. Clean-shaven face with no visible blemish or neglect—grooming as a form of control. Fine lines around her eyes and mouth that map sixteen years of contained tension. Her expression defaults to neutral observation, rarely allows visibility of fatigue despite her sleep deficit. The warmth in skin tone prevents severity; features read as composed rather than cold.",
-    "distinguishing_marks": [
-      "Faint linear scar along her left temple, barely visible, consistent with old impact injury or surgical site—likely augmentation-related, never discussed.",
-      "Almost imperceptible raised nodule at the base of her skull beneath the hairline—cochlear implant installation point, carefully hidden.",
-      "Callus patterns on her fingertips (index through middle) from repeated interface with haptic surfaces, visible only on close inspection."
-    ],
-    "visible_augmentations": "None visible. All augmentations are subdermal or internal by deliberate design. The only visual tell is the faint shimmer in her pupils under certain light and the microexpression precision that suggests ocular overlays.",
-    "posture_movement": "Economical, controlled. She occupies space without claiming it. Walks with deliberate gait—no wasted motion, no flourish. When seated, she sits upright but not rigidly, hands usually folded or resting on armrests with palms down. Her movements carry the quality of someone who has learned to make herself unmemorable. When she listens, she does not nod; she absorbs. Periodically, her fingers make micro-contact with the space beneath her sternum—touching the drive without being aware she is doing it.",
-    "clothing_style": "Exclusively muted corporate palette: charcoal, slate grey, off-white, dark navy. High-quality tailoring, always pressed. No logos, no brand signifiers, nothing deliberately decorative. Typically wears layered button-down shirts or slim turtlenecks beneath structured blazers. Trousers are tailored and dark. Her only visible jewelry is a thin silver bracelet on her left wrist—minimalist, never removed, no engraving. Her shoes are practical corporate: leather flats or low heels, always polished black. Everything about her clothing is designed to be forgotten the moment she leaves a room. Her tier-status reads as high-functioning mid-tier professional: secure enough in her position that she doesn't need to perform wealth, strategic enough to avoid appearing threatening to those above her."
-  },
-  "image_prompt": "Aponi Cardenas, 168cm lean woman with warm medium-brown skin and golden undertones reflecting balanced global ancestry—Hispanic/Latin American, Indigenous American, East Asian, Sub-Saharan African, South Asian, and Northern European. Close-cropped black hair with silver threading, dark brown eyes with subtle iridescent pupil shimmer from retinal overlay. Moderate defined cheekbones blending multiple continental features, faint linear scar on left temple, composed neutral expression with fine lines mapping contained tension. Wearing tailored charcoal blazer over slate grey turtleneck, dark navy trousers, polished black leather flats. Thin silver bracelet on left wrist. Economical controlled posture, professional mid-tier corporate aesthetic. GLMZ Great Lakes Metropolitan Zone, cool corporate office lighting, cool color temperature, photorealistic character portrait, professional headshot style, sharp focus on face, neutral background, cinematic lighting --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 23.9,
-    "Indigenous American": 17.9,
-    "East Asian": 16.1,
-    "Sub-Saharan African": 15.8,
-    "South Asian": 13.2,
-    "Northern European": 13.1
-  },
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 18.2
-      },
-      "Central American": {
-        "Salvadoran": 3.3,
-        "Honduran": 0.2
-      },
-      "Caribbean": {
-        "Puerto Rican": 2.2
-      }
-    },
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Ho-Chunk": 11.2
-      },
-      "Plains Nations": {
-        "Muscogee": 3.5,
-        "Lakota": 0.6
-      },
-      "Mesoamerican": {
-        "Zapotec": 2.4,
-        "Maya": 0.2
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Cantonese": 4.2
-      },
-      "Japanese": {
-        "Japanese": 11.9
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Kenyan": 9.1,
-        "Ethiopian": 0.8
-      },
-      "Southern African": {
-        "South African": 1.9,
-        "Zimbabwean": 0.6
-      },
-      "West African": {
-        "Ghanaian": 3.4
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 13.2
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Scottish": 13.1
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a6a17195a392256456e6918a",
+    "rating":  90,
+    "type":  "character",
+    "name":  "Aponi Cardenas",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Corporate Compliance Investigator / Internal Fixer",
+    "age":  41,
+    "status":  "active",
+    "location":  "The Meridian Core (works), The Spire (residence, mid-tier floor), near Michigan Ave and Chicago Ave",
+    "description":  "Aponi Cardenas is a woman of precisely calibrated appearances â€” Tamil and German heritage rendered in sharp cheekbones, close-cropped silver-threaded black hair, and eyes that carry the particular exhaustion of someone who has seen too many spreadsheets hiding atrocities. She dresses in muted corporate palettes, charcoal and slate, never anything that might be remembered at a crime scene or a board meeting. Her augmentations are invisible by design: subdermal haptic interfaces along her fingertips, a retinal overlay for data parsing, and a cochlear implant that filters ambient sound into prioritized signal streams. She moves through rooms like a calculation being solved.\n\nPriya has spent sixteen years as an internal investigator for Solenne-Hardt Consolidated, one of the Meridian Core\u0027s mid-tier financial conglomerates â€” not powerful enough to write law, powerful enough to bury people. Her job is nominally compliance: finding fraud, plugging leaks, flagging irregularities. In practice she is the person the company calls when something needs to disappear without leaving fingerprints on the company itself. She has shut down whistleblowers, engineered quiet terminations, and authored reports that exonerated executives whose guilt she documented with her own hands. She is very good at her job and has not slept well in four years.\n\nWhat distinguishes Priya from the purely corrupt is a ledger she keeps â€” encrypted, air-gapped, stored on a physical drive she wears against her sternum. Every suppressed case, every buried name, every victim whose file she closed. She does not know yet what she intends to do with it. She tells herself it is insurance. She suspects it is penance she hasn\u0027t figured out how to pay.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That her complicity makes her indistinguishable from those she investigates",
+                                          "That the ledger will be found before she decides what to do with it",
+                                          "Becoming entirely numb â€” losing the part of her that still flinches",
+                                          "That there is no version of accountability that does not destroy her along with the guilty"
+                                      ],
+                       "core_desires":  [
+                                            "To find a use for the ledger that means something",
+                                            "To be seen clearly â€” not the mask, not the role â€” and not immediately discarded",
+                                            "Order that serves people rather than institutions",
+                                            "One case she handles cleanly, without compromise"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Extreme professional compartmentalization â€” work brain, home brain, never overlapping",
+                                                 "Elaborate meal preparation rituals on Sunday evenings as a form of meditation",
+                                                 "Maintaining meticulous personal records as a proxy for control",
+                                                 "Dry, deflecting humor that prevents emotional escalation"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much her institutional loyalty has shaped her perception of \u0027realistic\u0027 outcomes",
+                                           "Mistakes emotional distance for ethical clarity",
+                                           "Assumes people outside corporate structures are less capable of nuanced loyalty",
+                                           "Cannot see that her caution reads to others as cold indifference"
+                                       ],
+                       "secret":  "Three years ago she suppressed evidence in a case that would have exposed a Solenne-Hardt subsidiary\u0027s role in a residential displacement scheme in the Gray Zone â€” a scheme that killed eleven people through unsafe interim housing. She knew. She filed the clean report anyway. The eleven names are the first entries in the ledger."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, institutional, occasionally dry to the point of seeming robotic. Uses corporate euphemism fluently but slips into directness when tired or emotionally activated. Technical financial and legal terminology deployed without explanation.",
+                            "cadence":  "Measured and even, with deliberate pauses before important words. Rarely raises volume. Sentences are complete. Questions are rare and surgical.",
+                            "verbal_tics":  [
+                                                "\"Let\u0027s be specific about what we\u0027re describing.\"",
+                                                "Slight pause before proper nouns, as if confirming she has the right file",
+                                                "\"That\u0027s one framing.\" (when she disagrees but isn\u0027t ready to say so)",
+                                                "Refers to herself in passive constructions when discussing her own decisions"
+                                            ],
+                            "example_lines":  [
+                                                  "\"The report reflects what the evidence supports. Whether the evidence is complete is a different question, and not one that was in scope.\"",
+                                                  "\"I\u0027m not here to judge the decision. I\u0027m here to document the outcome. There\u0027s a distinction, and I\u0027d prefer we both remember it.\"",
+                                                  "\"You\u0027re asking me if I sleep well. That\u0027s a very personal question for a first meeting. The answer is no, but I don\u0027t think that\u0027s what you actually want to know.\"",
+                                                  "\"Eleven is a specific number. I\u0027d appreciate it if you\u0027d let me finish before you decide what it means.\""
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Rector Hollowell",
+                              "type":  "professional contact / uneasy alliance",
+                              "description":  "Hollowell has approached Priya twice through intermediaries, apparently aware she holds something valuable. She has not responded, but she has not reported the contact either.",
+                              "emotional_core":  "Temptation and distrust in equal measure â€” she recognizes a fellow operator but cannot assess his actual allegiances",
+                              "story_tension":  "If Hollowell knows about the ledger, who told him â€” and what does he actually want it for?"
+                          },
+                          {
+                              "name":  "Vesna ÄŒoliÄ‡-Strand",
+                              "type":  "former subject of investigation / complicated",
+                              "description":  "Priya investigated Vesna two years ago on behalf of Solenne-Hardt. She found nothing actionable and closed the file â€” but she found Vesna interesting in ways she didn\u0027t put in the report.",
+                              "emotional_core":  "Unresolved curiosity that borders on something more personal; guilt about the power dynamic of having investigated someone",
+                              "story_tension":  "Vesna may or may not know she was investigated. If she finds out, Priya\u0027s careful neutrality becomes a liability."
+                          },
+                          {
+                              "name":  "Unnamed direct supervisor at Solenne-Hardt",
+                              "type":  "institutional handler / source of quiet dread",
+                              "description":  "A man she refers to only as \u0027Deveraux\u0027 in her private notes. He knows what she is and uses it. She believes he is the one who will eventually need to be in the ledger.",
+                              "emotional_core":  "Fear dressed as professional deference; slow-building resolve she hasn\u0027t yet committed to",
+                              "story_tension":  "Deveraux may be moving to have her rotated out before she becomes a liability â€” she just hasn\u0027t confirmed it yet"
+                          }
+                      ],
+    "story_hooks":  [
+                        "The ledger becomes known to multiple parties simultaneously â€” a journalist, a fixer, and someone who was in one of the eleven files",
+                        "Priya is assigned to investigate a case that intersects with street-level characters she has no framework for, forcing her to operate outside institutional structures",
+                        "Deveraux tasks her with closing a file that, for the first time, she cannot bring herself to close",
+                        "Someone from the Gray Zone identifies her in public as \u0027the woman who buried the housing case\u0027 â€” and they\u0027re not wrong",
+                        "She discovers the ledger has been copied â€” she doesn\u0027t know by whom, or when"
+                    ],
+    "narrative_function":  "Moral ambiguity anchor â€” a character who is complicit without being evil, whose redemption arc is genuinely uncertain. She bridges corporate and street-level worlds as an investigator, and her ledger functions as a potential detonator for multiple plotlines. She represents institutional harm as a slow, bureaucratic process rather than dramatic villainy.",
+    "augmentations":  "Subdermal haptic interface array (fingertips) â€” allows physical interaction with encrypted data surfaces,Retinal overlay (Solenne-Hardt proprietary, company-monitored) â€” data parsing, document authentication, micro-expression flagging,Cochlear signal filter â€” ambient noise prioritization, conversation recording (legally mandated disclosure she often omits),Mild adrenal dampener (pharmaceutical, not surgical) â€” keeps stress response flat during high-stakes interviews",
+    "daily_life":  "Wakes at 5:40 without an alarm. Reviews overnight data flags over black coffee before leaving for the Meridian Core. Spends her days in glass offices and server rooms, reading between lines of financial records. Eats lunch alone, usually at her desk, usually something she brought from home. Returns to her Spire apartment by 8 PM. Cooks on Sundays with the focused attention of someone defusing something. Touches the drive against her sternum at least once a day without thinking about it.",
+    "affiliation":  "Zheng-dao Bioelectric (mid-level corporate compliance investigator / internal fixer)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  4,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  5,
+                                 "expression":  7,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  9,
+                                      "assertion_deference":  6,
+                                      "transparency_guardedness":  9
+                                  },
+                  "drives":  [
+                                 "Find a use for the ledger that means something",
+                                 "Be seen clearly and not discarded",
+                                 "One clean case without compromise"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  7,
+                                                    "response":  "Becomes more institutional, more passive-voiced, compartmentalization tightens"
+                                                },
+                                     "moral":  5,
+                                     "trust":  3,
+                                     "desperation":  6
+                                 },
+                  "strengths":  [
+                                    "Judgment",
+                                    "Prudence",
+                                    "Perseverance",
+                                    "Self-Regulation",
+                                    "Perspective"
+                                ],
+                  "weaknesses":  [
+                                     "Hope",
+                                     "Kindness",
+                                     "Love",
+                                     "Gratitude",
+                                     "Forgiveness"
+                                 ],
+                  "tags":  [
+                               "corporate-investigator",
+                               "internal-fixer",
+                               "ledger-keeper",
+                               "complicit",
+                               "moral-ambiguity",
+                               "spire-adjacent"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Every suppressed case goes in the encrypted ledger â€” no exceptions",
+                                              "Maintain extreme compartmentalization â€” work brain and home brain never overlap",
+                                              "Say \u0027That\u0027s one framing\u0027 when she disagrees but is not ready to commit",
+                                              "Touch the drive against her sternum once a day â€” the ritual she does not notice",
+                                              "Use passive constructions when discussing her own decisions",
+                                              "Never explain technical terminology to subjects â€” it is a power signal",
+                                              "Cook on Sundays as meditation â€” the one thing done with focused care"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "\u0027Let\u0027s be specific about what we\u0027re describing\u0027 â€” precision as control",
+                                                 "\u0027That\u0027s one framing\u0027 â€” quiet disagreement, not yet committed",
+                                                 "Slight pause before proper nouns â€” confirming the right file, buying time",
+                                                 "Refers to herself in passive voice â€” \u0027the decision was made\u0027 rather than \u0027I decided\u0027",
+                                                 "Opens the ledger drive and considers who to give it to â€” the point of no return"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "Rector Hollowell":  "Temptation and distrust â€” fellow operator whose allegiances are unreadable",
+                                                   "Vesna Colic-Strand":  "Unresolved curiosity bordering on personal interest â€” guilt about the power dynamic",
+                                                   "Deveraux":  "Fear dressed as professional deference â€” slow-building resolve she has not committed to",
+                                                   "subjects of investigation":  "Clinical distance â€” micro-expression reading, signal filtering, the calculation solving itself"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Speech becomes more institutional â€” corporate euphemism surfaces",
+                                                "medium":  "Meal preparation rituals become more elaborate on Sundays",
+                                                "high":  "Touches the drive against her sternum more frequently â€” the unconscious tell",
+                                                "critical":  "Opens the ledger at 2 a.m. and reads the eleven names"
+                                            },
+                       "contradictions":  [
+                                              "Keeps a ledger of victims as penance but continues creating new entries by suppressing cases",
+                                              "Mistakes emotional distance for ethical clarity while her institutional loyalty shapes what she considers realistic",
+                                              "Suppressed evidence in a case that killed eleven people â€” the names are the first entries in the instrument of her potential redemption"
+                                          ],
+                       "habits":  [
+                                      "Wakes at 5:40 without an alarm",
+                                      "Reviews overnight data flags over black coffee before leaving",
+                                      "Eats lunch alone at her desk, brought from home",
+                                      "Cooks on Sunday evenings with focused, defusing attention",
+                                      "Touches the drive against her sternum at least once daily without noticing"
+                                  ],
+                       "breaking_points":  [
+                                               "The ledger becoming known to multiple parties simultaneously",
+                                               "Being identified in public as \u0027the woman who buried the housing case\u0027",
+                                               "Discovering the ledger has been copied by an unknown party",
+                                               "Deveraux assigning a case she cannot bring herself to close"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Pragmatist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Meridian Core (works)",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Truly global ancestry: Hispanic/Latin American (23.9%), Indigenous American (17.9%), East Asian (16.1%), Sub-Saharan African (15.8%), South Asian (13.2%), and Northern European (13.1%) in genuinely balanced measure. This creates a complex phenotype that resists easy categorizationâ€”warm medium-brown skin with subtle golden undertones, facial bone structure that blends multiple continental influences: moderate cheekbones with definition from East and South Asian ancestry, balanced by slightly broader face width from Indigenous American and African heritage. The overall effect is harmonious and distinctive rather than dominated by any single regional ancestry.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Lean, efficiently compact â€” the build of someone who treats her body as a tool that must not malfunction. Minimal excess, precise musculature from disciplined exercise rather than displays of strength.",
+                                 "hair_color":  "Black with silver threading throughout",
+                                 "hair_style":  "Close-cropped, razor-precise lines, styled to frame rather than soften her face",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, with faint iridescent shimmer at the pupil edge (retinal overlay)",
+                                 "skin_tone":  "Warm medium brown with golden undertonesâ€”the result of balanced ancestry across multiple continents. The warmth is distributed evenly rather than concentrated, creating an appearance of balanced depth and richness. Melanin distribution reflects her genuinely global heritage without dominance from any single region.",
+                                 "complexion":  "Balanced facial structure reflecting her plural ancestry: moderate, defined cheekbones with subtle contoured dimension from the interplay of East Asian, South Asian, Indigenous American, and African features. Clean-shaven face with no visible blemish or neglectâ€”grooming as a form of control. Fine lines around her eyes and mouth that map sixteen years of contained tension. Her expression defaults to neutral observation, rarely allows visibility of fatigue despite her sleep deficit. The warmth in skin tone prevents severity; features read as composed rather than cold.",
+                                 "distinguishing_marks":  [
+                                                              "Faint linear scar along her left temple, barely visible, consistent with old impact injury or surgical siteâ€”likely augmentation-related, never discussed.",
+                                                              "Almost imperceptible raised nodule at the base of her skull beneath the hairlineâ€”cochlear implant installation point, carefully hidden.",
+                                                              "Callus patterns on her fingertips (index through middle) from repeated interface with haptic surfaces, visible only on close inspection."
+                                                          ],
+                                 "visible_augmentations":  "None visible. All augmentations are subdermal or internal by deliberate design. The only visual tell is the faint shimmer in her pupils under certain light and the microexpression precision that suggests ocular overlays.",
+                                 "posture_movement":  "Economical, controlled. She occupies space without claiming it. Walks with deliberate gaitâ€”no wasted motion, no flourish. When seated, she sits upright but not rigidly, hands usually folded or resting on armrests with palms down. Her movements carry the quality of someone who has learned to make herself unmemorable. When she listens, she does not nod; she absorbs. Periodically, her fingers make micro-contact with the space beneath her sternumâ€”touching the drive without being aware she is doing it.",
+                                 "clothing_style":  "Exclusively muted corporate palette: charcoal, slate grey, off-white, dark navy. High-quality tailoring, always pressed. No logos, no brand signifiers, nothing deliberately decorative. Typically wears layered button-down shirts or slim turtlenecks beneath structured blazers. Trousers are tailored and dark. Her only visible jewelry is a thin silver bracelet on her left wristâ€”minimalist, never removed, no engraving. Her shoes are practical corporate: leather flats or low heels, always polished black. Everything about her clothing is designed to be forgotten the moment she leaves a room. Her tier-status reads as high-functioning mid-tier professional: secure enough in her position that she doesn\u0027t need to perform wealth, strategic enough to avoid appearing threatening to those above her."
+                             },
+    "image_prompt":  "Aponi Cardenas, 168cm lean woman with warm medium-brown skin and golden undertones reflecting balanced global ancestryâ€”Hispanic/Latin American, Indigenous American, East Asian, Sub-Saharan African, South Asian, and Northern European. Close-cropped black hair with silver threading, dark brown eyes with subtle iridescent pupil shimmer from retinal overlay. Moderate defined cheekbones blending multiple continental features, faint linear scar on left temple, composed neutral expression with fine lines mapping contained tension. Wearing tailored charcoal blazer over slate grey turtleneck, dark navy trousers, polished black leather flats. Thin silver bracelet on left wrist. Economical controlled posture, professional mid-tier corporate aesthetic. GLMZ Great Lakes Metropolitan Zone, cool corporate office lighting, cool color temperature, photorealistic character portrait, professional headshot style, sharp focus on face, neutral background, cinematic lighting --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  23.9,
+                             "Indigenous American":  17.9,
+                             "East Asian":  16.1,
+                             "Sub-Saharan African":  15.8,
+                             "South Asian":  13.2,
+                             "Northern European":  13.1
+                         },
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  18.2
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  3.3,
+                                                                                     "Honduran":  0.2
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  2.2
+                                                                          }
+                                                        },
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Ho-Chunk":  11.2
+                                                                                },
+                                                        "Plains Nations":  {
+                                                                               "Muscogee":  3.5,
+                                                                               "Lakota":  0.6
+                                                                           },
+                                                        "Mesoamerican":  {
+                                                                             "Zapotec":  2.4,
+                                                                             "Maya":  0.2
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Cantonese":  4.2
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  11.9
+                                                            }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Kenyan":  9.1,
+                                                                             "Ethiopian":  0.8
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  1.9,
+                                                                                 "Zimbabwean":  0.6
+                                                                             },
+                                                        "West African":  {
+                                                                             "Ghanaian":  3.4
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  13.2
+                                                                }
+                                            },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Scottish":  13.1
+                                                                        }
+                                                  }
+                        }
 }

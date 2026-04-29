@@ -1,186 +1,245 @@
-{
-  "id": "65f91f018d70e95199570796ed2e5173",
-  "rating": 80,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Siddharth Deshpande",
-  "aliases": [],
-  "species": "human",
-  "gender": "",
-  "pronouns": "",
-  "role": "Private Investigator",
-  "age": 0,
-  "status": "alive",
-  "location": "A co-working space in Burnside Corridor that she treats as her command center \u2014 multiple screens, standing desk, energy drinks, near Milwaukee and North Ave",
-  "description": "Siddharth Deshpande is either the future of private investigation or an ethical catastrophe in progress, depending on who you ask. She built MeridianEyes, a mesh-based platform that crowdsources investigative work to a network of over 30,000 gig participants across all five tiers of GLMZ. When a case comes in, she breaks it into hundreds of tiny, anonymized tasks \u2014 confirm a sighting, photograph a location, check a public record, note an anomaly \u2014 and distributes them to participants who earn micro-bounties for completing them.\n\nThe results are staggering. She solves cases faster than any individual investigator, covers more ground than any surveillance system, and generates more data points than any corporate intelligence operation. Her missing-persons recovery time averages eleven hours. Her platform has been used for everything from finding lost pets to tracking corporate fugitives, and it processes over 50,000 micro-tasks per week.\n\nThe ethical questions are equally staggering. MeridianEyes turns every participant into an unwitting surveillance node. The platform\u0027s anonymization protocols mean participants don\u0027t know what case they\u0027re contributing to or who benefits from their observations. Privacy advocates have called it \u0027distributed totalitarianism.\u0027 Naima argues that every participant is voluntary, every task is legal, and the platform includes safeguards against misuse. She\u0027s mostly right. The \u0027mostly\u0027 keeps her up at night, though she\u0027d never admit it.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0,
-      "ideal": 0,
-      "id": 0,
-      "shadow": 0,
-      "mask": 0,
-      "ghost": 0
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [
-    {
-      "name": "Yelena Okafor-Chen",
-      "type": "grudging respect",
-      "description": "The data-tracker PI considers MeridianEyes crude but effective \u2014 Naima considers Yelena\u0027s solo approach elegant but unscalable",
-      "emotional_core": "",
-      "story_tension": ""
-    },
-    {
-      "name": "Advocate Rashid Sandstrom-Badu",
-      "type": "antagonist",
-      "description": "A privacy rights lawyer who is building a case to shut down MeridianEyes \u2014 Naima considers him a speed bump, which is a mistake",
-      "emotional_core": "",
-      "story_tension": ""
-    }
-  ],
-  "story_hooks": [
-    "MeridianEyes is hijacked by someone who uses the platform to coordinate a massive crime \u2014 thousands of unwitting participants become accomplices in something terrible",
-    "A participant in the platform is murdered because the task they completed inadvertently revealed their identity to a dangerous subject \u2014 Naima faces the consequences of her \u0027anonymization is sufficient\u0027 philosophy",
-    "A rival platform launches with better technology and no ethical constraints \u2014 Naima has to decide whether to compromise her principles to compete or watch her creation become obsolete"
-  ],
-  "narrative_function": "",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Copperveil Intelligence (mid-level private investigator)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": []
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {},
-  "operating_territory": {
-    "home_turf": "A co-working space in Burnside Corridor that she treats as her command center",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "character",
-    "private_investigator",
-    "crowdsource",
-    "platform",
-    "gig_economy",
-    "burnside_corridor",
-    "technology",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "South Asian dominant (49.1%) with significant Southeast Asian (28.8%), East Asian (17.1%), and Sub-Saharan African (5.0%) ancestry. This creates a rich, complex blend: warm medium-brown base tone from South Asian heritage with golden and amber undertones, layered with the warmer ochre tones of Southeast Asian genetics, brightened by the luminosity of East Asian ancestry, and deepened by the warm richness of African heritage. The result is a polychromatic golden-bronze complexion with subtle warm undertones throughout.",
-    "height_cm": 172,
-    "weight_kg": 62,
-    "build": "Lean and angular, tense musculature from long hours at standing desks and stress. Shoulders slightly hunched forward from habitual posture over interfaces.",
-    "hair_color": "Dark brown with subtle auburn undertones",
-    "hair_style": "Pulled back in a tight, utilitarian braid; a few strands always escaping near her temples",
-    "hair_length": "Long",
-    "eye_color": "Hazel with flecks of amber",
-    "skin_tone": "Warm golden-bronze medium brown with amber undertones, reflecting the blended warmth of South Asian, Southeast Asian, and East Asian heritage enriched by Sub-Saharan African depth. Sun-kissed luminosity characteristic of tropical ancestry regions.",
-    "complexion": "Strong, prominent cheekbones with defined jawline reflecting South and Southeast Asian bone structure, with subtle East Asian eye shape characteristics and warmth from African ancestry. Warm, luminous skin beneath fatigue \u2014 faint shadows under eyes from irregular sleep patterns. A thin scar runs along her left temple to ear (old head trauma, partially covered by hair). Minimal makeup, functional grooming.",
-    "distinguishing_marks": [
-      "Linear scar along left temple extending to ear, approximately 8cm, pale and well-healed",
-      "Small burn mark on right forearm (inside wrist), circular, diameter ~1.5cm, from old neural interface calibration accident",
-      "Faint tattoo on inside left wrist: a stylized crosshair or target symbol in dark blue-grey ink, approximately 2cm across"
-    ],
-    "visible_augmentations": "Subcutaneous neural interface port at base of skull (barely visible at nape, thin metallic outline under skin). Subtle LED ring around left pupil (augmented optical nerve for low-light data processing) \u2014 only noticeable when light hits it directly. No obvious chrome or external modifications.",
-    "posture_movement": "Economical, restless. Hands frequently gesture as if manipulating invisible interfaces mid-air (haptic muscle memory). Eyes dart constantly, scanning environments as if cataloging details. Sits with spine curved, shoulders tense. Walks with purpose, minimal wasted motion.",
-    "clothing_style": "Tier 3-4 practical: fitted black Helios-brand tactical jacket with asymmetrical pockets (usually over a plain grey or charcoal compression shirt). Dark utility cargo pants with reinforced knees and thigh pockets. Matte black steel-toed boots, worn but maintained. Minimalist silver watch (functional, not decorative) on right wrist. No jewelry. Favors dark, unreflective fabrics. Occasionally wears a faded denim jacket over everything \u2014 a relic from before MeridianEyes success."
-  },
-  "image_prompt": "Siddharth Deshpande, androgynous figure with warm golden-bronze skin tone reflecting South Asian, Southeast Asian, East Asian, and African heritage. 172cm tall, lean angular build. Dark brown hair with auburn undertones pulled back in tight utilitarian braid, escaping wisps at temples. Hazel eyes with amber flecks, left pupil faintly rimmed with LED augmentation. Prominent cheekbones and defined jawline. Thin pale scar along left temple to ear. Dressed in fitted black Helios tactical jacket over grey compression shirt, dark utility cargo pants, matte black steel-toed boots. Minimalist silver functional watch on right wrist. GLMZ Great Lakes Metropolitan Zone setting, neon-lit environment. Tense posture, hunched shoulders, hands mid-gesture manipulating invisible haptic interfaces. Restless energy, eyes scanning surroundings. Fatigue shadows under eyes. Functional grooming, no jewelry, unreflective dark fabrics. Atmospheric lighting emphasizing warm skin undertones against cool cyber-environment. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "South Asian": 49.1,
-    "Southeast Asian": 28.8,
-    "East Asian": 17.1,
-    "Sub-Saharan African": 5
-  },
-  "ancestry_detail": {
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 39.2
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 5.8,
-        "Baloch": 4.1
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Cebuano": 28.8
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 6.4
-      },
-      "Chinese": {
-        "Sichuanese": 4.7
-      },
-      "Korean": {
-        "Korean": 6
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Mozambican": 5
-      }
-    }
-  }
+﻿{
+    "id":  "65f91f018d70e95199570796ed2e5173",
+    "rating":  80,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Siddharth Deshpande",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "",
+    "pronouns":  "",
+    "role":  "Private Investigator",
+    "age":  0,
+    "status":  "alive",
+    "location":  "A co-working space in Burnside Corridor that she treats as her command center — multiple screens, standing desk, energy drinks, near Milwaukee and North Ave",
+    "description":  "Siddharth Deshpande is either the future of private investigation or an ethical catastrophe in progress, depending on who you ask. She built MeridianEyes, a mesh-based platform that crowdsources investigative work to a network of over 30,000 gig participants across all five tiers of GLMZ. When a case comes in, she breaks it into hundreds of tiny, anonymized tasks — confirm a sighting, photograph a location, check a public record, note an anomaly — and distributes them to participants who earn micro-bounties for completing them.\n\nThe results are staggering. She solves cases faster than any individual investigator, covers more ground than any surveillance system, and generates more data points than any corporate intelligence operation. Her missing-persons recovery time averages eleven hours. Her platform has been used for everything from finding lost pets to tracking corporate fugitives, and it processes over 50,000 micro-tasks per week.\n\nThe ethical questions are equally staggering. MeridianEyes turns every participant into an unwitting surveillance node. The platform\u0027s anonymization protocols mean participants don\u0027t know what case they\u0027re contributing to or who benefits from their observations. Privacy advocates have called it \u0027distributed totalitarianism.\u0027 Naima argues that every participant is voluntary, every task is legal, and the platform includes safeguards against misuse. She\u0027s mostly right. The \u0027mostly\u0027 keeps her up at night, though she\u0027d never admit it.",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Yelena Okafor-Chen",
+                              "type":  "grudging respect",
+                              "description":  "The data-tracker PI considers MeridianEyes crude but effective — Naima considers Yelena\u0027s solo approach elegant but unscalable",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          },
+                          {
+                              "name":  "Advocate Rashid Sandstrom-Badu",
+                              "type":  "antagonist",
+                              "description":  "A privacy rights lawyer who is building a case to shut down MeridianEyes — Naima considers him a speed bump, which is a mistake",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          }
+                      ],
+    "story_hooks":  [
+                        "MeridianEyes is hijacked by someone who uses the platform to coordinate a massive crime — thousands of unwitting participants become accomplices in something terrible",
+                        "A participant in the platform is murdered because the task they completed inadvertently revealed their identity to a dangerous subject — Naima faces the consequences of her \u0027anonymization is sufficient\u0027 philosophy",
+                        "A rival platform launches with better technology and no ethical constraints — Naima has to decide whether to compromise her principles to compete or watch her creation become obsolete"
+                    ],
+    "narrative_function":  "",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Copperveil Intelligence (mid-level private investigator)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+
+                   },
+    "operating_territory":  {
+                                "home_turf":  "A co-working space in Burnside Corridor that she treats as her command center",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "character",
+                 "private_investigator",
+                 "crowdsource",
+                 "platform",
+                 "gig_economy",
+                 "burnside_corridor",
+                 "technology",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "South Asian dominant (49.1%) with significant Southeast Asian (28.8%), East Asian (17.1%), and Sub-Saharan African (5.0%) ancestry. This creates a rich, complex blend: warm medium-brown base tone from South Asian heritage with golden and amber undertones, layered with the warmer ochre tones of Southeast Asian genetics, brightened by the luminosity of East Asian ancestry, and deepened by the warm richness of African heritage. The result is a polychromatic golden-bronze complexion with subtle warm undertones throughout.",
+                                 "height_cm":  172,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and angular, tense musculature from long hours at standing desks and stress. Shoulders slightly hunched forward from habitual posture over interfaces.",
+                                 "hair_color":  "Dark brown with subtle auburn undertones",
+                                 "hair_style":  "Pulled back in a tight, utilitarian braid; a few strands always escaping near her temples",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Hazel with flecks of amber",
+                                 "skin_tone":  "Warm golden-bronze medium brown with amber undertones, reflecting the blended warmth of South Asian, Southeast Asian, and East Asian heritage enriched by Sub-Saharan African depth. Sun-kissed luminosity characteristic of tropical ancestry regions.",
+                                 "complexion":  "Strong, prominent cheekbones with defined jawline reflecting South and Southeast Asian bone structure, with subtle East Asian eye shape characteristics and warmth from African ancestry. Warm, luminous skin beneath fatigue — faint shadows under eyes from irregular sleep patterns. A thin scar runs along her left temple to ear (old head trauma, partially covered by hair). Minimal makeup, functional grooming.",
+                                 "distinguishing_marks":  [
+                                                              "Linear scar along left temple extending to ear, approximately 8cm, pale and well-healed",
+                                                              "Small burn mark on right forearm (inside wrist), circular, diameter ~1.5cm, from old neural interface calibration accident",
+                                                              "Faint tattoo on inside left wrist: a stylized crosshair or target symbol in dark blue-grey ink, approximately 2cm across"
+                                                          ],
+                                 "visible_augmentations":  "Subcutaneous neural interface port at base of skull (barely visible at nape, thin metallic outline under skin). Subtle LED ring around left pupil (augmented optical nerve for low-light data processing) — only noticeable when light hits it directly. No obvious chrome or external modifications.",
+                                 "posture_movement":  "Economical, restless. Hands frequently gesture as if manipulating invisible interfaces mid-air (haptic muscle memory). Eyes dart constantly, scanning environments as if cataloging details. Sits with spine curved, shoulders tense. Walks with purpose, minimal wasted motion.",
+                                 "clothing_style":  "Tier 3-4 practical: fitted black Helios-brand tactical jacket with asymmetrical pockets (usually over a plain grey or charcoal compression shirt). Dark utility cargo pants with reinforced knees and thigh pockets. Matte black steel-toed boots, worn but maintained. Minimalist silver watch (functional, not decorative) on right wrist. No jewelry. Favors dark, unreflective fabrics. Occasionally wears a faded denim jacket over everything — a relic from before MeridianEyes success."
+                             },
+    "image_prompt":  "Siddharth Deshpande, androgynous figure with warm golden-bronze skin tone reflecting South Asian, Southeast Asian, East Asian, and African heritage. 172cm tall, lean angular build. Dark brown hair with auburn undertones pulled back in tight utilitarian braid, escaping wisps at temples. Hazel eyes with amber flecks, left pupil faintly rimmed with LED augmentation. Prominent cheekbones and defined jawline. Thin pale scar along left temple to ear. Dressed in fitted black Helios tactical jacket over grey compression shirt, dark utility cargo pants, matte black steel-toed boots. Minimalist silver functional watch on right wrist. GLMZ Great Lakes Metropolitan Zone setting, neon-lit environment. Tense posture, hunched shoulders, hands mid-gesture manipulating invisible haptic interfaces. Restless energy, eyes scanning surroundings. Fatigue shadows under eyes. Functional grooming, no jewelry, unreflective dark fabrics. Atmospheric lighting emphasizing warm skin undertones against cool cyber-environment. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "South Asian":  49.1,
+                             "Southeast Asian":  28.8,
+                             "East Asian":  17.1,
+                             "Sub-Saharan African":  5
+                         },
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  39.2
+                                                           },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  5.8,
+                                                                  "Baloch":  4.1
+                                                              }
+                                            },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Cebuano":  28.8
+                                                                 }
+                                                },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  6.4
+                                                            },
+                                               "Chinese":  {
+                                                               "Sichuanese":  4.7
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  6
+                                                          }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Mozambican":  5
+                                                                             }
+                                                    }
+                        }
 }

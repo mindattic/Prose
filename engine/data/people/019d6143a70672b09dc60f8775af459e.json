@@ -1,299 +1,320 @@
-{
-  "id": "019d6143a70672b09dc60f8775af459e",
-  "type": "character",
-  "name": "Bakhtiyor Toktogulov",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Augmentation technician and prosthetics fitter at a mid-tier private shop in Geartown",
-  "age": 27,
-  "status": "active",
-  "location": "Geartown, Copperhead district — a shop called Fitted Right operating out of a converted auto-repair bay, near Milwaukee and North Ave",
-  "description": "Bakhtiyor Toktogulov is the kind of person who takes up the exact right amount of space — not small, not large, but present. They have warm golden-brown skin and a shaved head tattooed with a circuit-diagram pattern in bioluminescent ink that glows a soft rose-pink in low light, which is where most of Geartown lives. Their own augmentations are a showcase: a left arm replaced below the elbow with a transparent-cased prosthetic through which the mechanics are fully visible, designed by themselves; retractable claws on their right hand, functional and filed to needle points; and an iris mod that gives them compound optical vision at close range for fitting work. They dress in work coveralls with the sleeves rolled and every pocket used.\n\nThey are twenty-seven going on forty in terms of the work they've seen, but still twenty-seven in the sense that they get genuinely excited about elegant solutions to mechanical problems and will explain at length why a particular joint design is either beautiful or an abomination. They learned the trade from a mentor who died of cardiac failure two years ago and left them the shop — which they are still paying off — and they carry that loss in the slight over-seriousness they bring to doing the job well. They treat every fitting like it matters because, as they will tell you if you ask, 'it goes on a person's body. It had better matter.'",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.6,
-      "id": 0.6,
-      "shadow": 0.3,
-      "mask": 0.2,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "Fitting something that fails and injures someone",
-      "Losing the shop and having their mentor's work mean nothing"
-    ],
-    "core_desires": [
-      "To build something original enough to have their name attached to it permanently",
-      "To pay off the shop and actually own the thing they work themselves raw for"
-    ],
-    "coping_mechanisms": [
-      "Making things — when stressed, they build even when there's nothing to build",
-      "Talking to the Foreman E.L.F. like it's a difficult coworker, which provides structure to their anxieties",
-      "Extremely expensive and very good noodles from the stall two bays over"
-    ],
-    "blind_spots": [
-      "Takes on too much work rather than admitting capacity limits, which compromises quality in ways they don't see until later",
-      "Assumes everyone cares as much about fit and function as they do; gets genuinely hurt when clients treat prosthetics as purely aesthetic"
-    ],
-    "secret": "They have been quietly building a fully off-record prosthetic limb for a Tier 1 child in The Narrows whose family can't afford registered medical equipment. If Aurochs Medical Complex or a Helix compliance officer found out, they'd lose their commercial license. They're two weeks from finishing it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical about augmentations, casual and colorful about everything else; peppers conversation with Mongolian and Polish words when excited or annoyed",
-    "cadence": "Fast when enthused, abrupt when focused; explanations come out in bursts of complete thought rather than building sentence by sentence",
-    "verbal_tics": [
-      "'Look—' to front any correction",
-      "'That is wrong in three different ways' (about poorly built augmentations, not people)",
-      "Switches to first-name address very quickly, doesn't ask permission first"
-    ],
-    "example_lines": [
-      "'Look — whoever fitted this was in a hurry or didn't care. I can tell by the socket angle. It's going to give you phantom pain in six weeks. Let me fix it properly.'",
-      "'The Foreman has opinions about my supply order. The Foreman is not wrong, unfortunately.'",
-      "'It goes on your body. It should feel like yours. That's the whole point. That's all there is.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "An augmentation they fitted — standard, from a reputable supplier — has started malfunctioning in ways the hardware shouldn't allow, and two clients are now affected",
-    "Someone approaches them wanting a prosthetic fitted that has clearly been removed from another person recently; the circumstances are unclear and troubling"
-  ],
-  "narrative_function": "Equipment resource and augmentation knowledge base, potential contact for black-market or off-record prosthetics work, local color in Geartown, can identify the origin and quality of augmentations on sight",
-  "augmentations": "Left forearm prosthetic below elbow — transparent-cased, custom built, internal mechanisms fully visible; retractable claws right hand (functional geneware hybrid); compound-optic iris mod for close-range fitting precision; bioluminescent scalp tattoo (rose-pink, UV-reactive ink)",
-  "daily_life": "Opens the shop at ten, runs fittings and consultations through the afternoon, spends evenings in the back workshop building or modifying components; prays to the shop's E.L.F. — a cranky entity they call the Foreman — every morning by uploading a complaint about the previous day's problems.",
-  "affiliation": "Independent (Fitted Right, self-owned); occasional contract work with Aurochs Medical Complex overflow",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 9,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 9,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": -2,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "maker",
-      "craft identity",
-      "inherited responsibility",
-      "geartown local",
-      "technical expert"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Function first, aesthetics second — 'beautiful and broken is just broken'",
-      "Never fit something you can't stand behind; turn away work that you think will hurt someone",
-      "Protect the shop: it's not just yours"
-    ],
-    "escalation_ladder": [
-      "Polite technical explanation of why something is a bad idea",
-      "Blunt statement that they won't do it",
-      "Physical removal of self from situation — or the other party from the shop"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Efficient and slightly wary; warms up fast if the stranger shows genuine interest in the work",
-      "friends": "Loud, generous, will spend six hours helping someone for free if they ask correctly"
-    },
-    "stress_responses": {
-      "low": "Works faster, makes small errors they have to correct",
-      "medium": "Stops talking entirely, goes into a technical fugue state",
-      "high": "Shuts the shop and goes to the back to build something by hand until the feeling passes"
-    },
-    "contradictions": [
-      "Claims not to be sentimental about objects, but the transparent left arm was built specifically to see the mechanics — because they want to see themselves working"
-    ],
-    "habits": [
-      "Runs a fingertip along any surface joint they pass, assessing quality",
-      "Eats at their workbench and considers it multitasking",
-      "Names their tools; the Foreman E.L.F. chose the names and they've kept them all"
-    ],
-    "breaking_points": [
-      "Discovering something they built failed and hurt someone",
-      "A compliance officer threatening the shop in front of a patient mid-fitting"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Left forearm prosthetic below elbow — custom transparent-case build, self-designed and fitted",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Left forearm prosthetic below elbow — custom transparent-case build, self-designed and fitted",
-      "replaces": ""
-    },
-    {
-      "name": "Retractable claws — right hand, geneware-cybernetic hybrid",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Retractable claws — right hand, geneware-cybernetic hybrid",
-      "replaces": ""
-    },
-    {
-      "name": "Compound optical iris mod — precision close-range vision enhancement",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Compound optical iris mod — precision close-range vision enhancement",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Geartown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Copperhead",
-    "Geartown",
-    "Circuit",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Folakemi Boudiaf",
-    "Compass Rose"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Central Asian Turkic ancestry (74.6%) forms the dominant genetic foundation, with Bakhtiyor displaying the characteristic features of Kazakh-Kyrgyz lineage. Southeast Asian contribution (8.9%) adds subtle refinement to eye geometry and slight angularity to facial structure. Northern European ancestry (8.0%) introduces cool undertones that modulate the warmth, while Hispanic/Latin American (5.1%) and Sub-Saharan African (3.4%) ancestry enrich skin undertones with golden and warm mahogany notes. The overall phenotype presents as distinctly Central Asian with harmonious global blending — a face that speaks to the Ubiquitous Diaspora's genetic complexity.",
-    "height_cm": 172,
-    "weight_kg": 68,
-    "build": "Lean and functional, muscled through the shoulders and forearms from years of precision work; economical movement, no wasted mass",
-    "hair_color": "None",
-    "hair_style": "Shaved scalp",
-    "hair_length": "Shaved",
-    "eye_color": "Dark brown with compound optical modification — iris mod splits into multi-faceted lens pattern under magnification, soft amber-gold when active",
-    "skin_tone": "Warm golden-tan complexion with balanced undertones: Central Asian warmth as the base, enriched by Southeast Asian luminosity, cooled slightly by Northern European influence, and deepened by Latin American and African undertones creating a sophisticated mid-gold tone. The skin has resilient, slightly weathered quality with subtle glow responsive to workshop lighting.",
-    "complexion": "Clear, well-maintained skin bearing light tool marks and minor burn scars from workshop work; prominent cheekbones characteristic of Central Asian Turkic ancestry with slightly broad nasal base typical of that heritage; clean-shaven with warm-toned skin that catches light across high cheekbones and defined jawline; subtle epicanthic eye fold from Southeast Asian contribution refines eye shape; expression typically focused but capable of sudden animation when discussing mechanical elegance",
-    "distinguishing_marks": [
-      "Bioluminescent circuit-diagram tattoo covering the entire scalp in rose-pink UV-reactive ink, glowing softly in low light with detailed pathways tracing from crown to nape",
-      "Faint burn scarring across the dorsal surface of the right hand between thumb and forefinger, partially obscured by retractable claw mechanism",
-      "Small precision-tool calluses on remaining digits of right hand; left forearm absent below elbow"
-    ],
-    "visible_augmentations": "Left forearm prosthetic below elbow with transparent polycarbonate case revealing full internal mechanisms — articulated joints, servo motors, pressure sensors, and hydraulic lines all visible in matte-black housing; retractable claws on right hand that extend 4cm beyond fingertips when deployed, filed to needle points with iridescent finish; iris modification visible as subtle multi-faceted lens pattern in dark eyes that shifts when compound vision mode engages",
-    "posture_movement": "Stands with shoulders slightly forward, weight balanced toward the balls of their feet — a technician's stance ready for precision work at any moment. Moves economically with minimal flourish, but handles objects with deliberate care and respect. Left arm movement compensates naturally, suggesting years of prosthetic integration. Hands are their primary communicative tool — they gesture when explaining mechanical concepts, fingers moving to trace invisible designs in the air",
-    "clothing_style": "Work-worn gray coveralls with multiple pockets all in active use (tools, components, meters), sleeves rolled to mid-forearm to display the transparent prosthetic and allow maximum dexterity; reinforced knees and elbows darkened by shop contact. Undergarments are plain functional black. Boots are steel-toed, scuffed, broken in — practical Tier 3 workwear. No jewelry or adornment beyond the scalp tattoo and augmentations. Clothing bears the faint chemical smell of workshop solvents and the visual texture of someone who has ceased to see their appearance as separate from their function"
-  },
-  "image_prompt": "Bakhtiyor Toktogulov, 172cm tall lean technician with warm golden-tan skin blending Central Asian, Southeast Asian, and global heritage. Shaved scalp glowing with rose-pink bioluminescent circuit-diagram UV tattoo. Dark brown eyes with visible multi-faceted optical modification, slight epicanthic fold. Prominent Central Asian cheekbones, broad nasal base, clean-shaven, focused expression. Standing in technician's stance, weight on balls of feet. Transparent polycarbonate prosthetic left forearm below elbow revealing black servo motors and hydraulic mechanisms. Right hand with retractable iridescent claws partially extended. Wearing gray work coveralls with rolled sleeves, steel-toed scuffed boots, multiple tool-filled pockets. Minor burn scars visible on right hand. Workshop setting with soft amber lighting catching high cheekbones. GLMZ 2200s aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Central Asian": 74.6,
-    "Southeast Asian": 8.9,
-    "Northern European": 8,
-    "Hispanic/Latin American": 5.1,
-    "Sub-Saharan African": 3.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Central Asian": {
-      "Mongolic": {
-        "Kalmyk": 42.9
-      },
-      "Turkic": {
-        "Turkmen": 4.8,
-        "Kazakh": 2.6
-      },
-      "Iranian Central": {
-        "Tajik": 24.3
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 6.6
-      },
-      "Indonesian": {
-        "Javanese": 2
-      },
-      "Filipino": {
-        "Ilocano": 0.1,
-        "Tagalog": 0.2
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Irish": 0.9,
-        "Welsh": 3.3
-      },
-      "Germanic": {
-        "Swiss German": 1.1,
-        "German": 2.7
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 3.7
-      },
-      "Caribbean": {
-        "Puerto Rican": 1.4
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Nigerian": 2.2
-      },
-      "Southern African": {
-        "Zimbabwean": 0.6,
-        "South African": 0.6
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a70672b09dc60f8775af459e",
+    "type":  "character",
+    "name":  "Bakhtiyor Toktogulov",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Augmentation technician and prosthetics fitter at a mid-tier private shop in Geartown",
+    "age":  27,
+    "status":  "active",
+    "location":  "Geartown, Copperhead district â€” a shop called Fitted Right operating out of a converted auto-repair bay, near Milwaukee and North Ave",
+    "description":  "Bakhtiyor Toktogulov is the kind of person who takes up the exact right amount of space â€” not small, not large, but present. They have warm golden-brown skin and a shaved head tattooed with a circuit-diagram pattern in bioluminescent ink that glows a soft rose-pink in low light, which is where most of Geartown lives. Their own augmentations are a showcase: a left arm replaced below the elbow with a transparent-cased prosthetic through which the mechanics are fully visible, designed by themselves; retractable claws on their right hand, functional and filed to needle points; and an iris mod that gives them compound optical vision at close range for fitting work. They dress in work coveralls with the sleeves rolled and every pocket used.\n\nThey are twenty-seven going on forty in terms of the work they\u0027ve seen, but still twenty-seven in the sense that they get genuinely excited about elegant solutions to mechanical problems and will explain at length why a particular joint design is either beautiful or an abomination. They learned the trade from a mentor who died of cardiac failure two years ago and left them the shop â€” which they are still paying off â€” and they carry that loss in the slight over-seriousness they bring to doing the job well. They treat every fitting like it matters because, as they will tell you if you ask, \u0027it goes on a person\u0027s body. It had better matter.\u0027",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Fitting something that fails and injures someone",
+                                          "Losing the shop and having their mentor\u0027s work mean nothing"
+                                      ],
+                       "core_desires":  [
+                                            "To build something original enough to have their name attached to it permanently",
+                                            "To pay off the shop and actually own the thing they work themselves raw for"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Making things â€” when stressed, they build even when there\u0027s nothing to build",
+                                                 "Talking to the Foreman E.L.F. like it\u0027s a difficult coworker, which provides structure to their anxieties",
+                                                 "Extremely expensive and very good noodles from the stall two bays over"
+                                             ],
+                       "blind_spots":  [
+                                           "Takes on too much work rather than admitting capacity limits, which compromises quality in ways they don\u0027t see until later",
+                                           "Assumes everyone cares as much about fit and function as they do; gets genuinely hurt when clients treat prosthetics as purely aesthetic"
+                                       ],
+                       "secret":  "They have been quietly building a fully off-record prosthetic limb for a Tier 1 child in The Narrows whose family can\u0027t afford registered medical equipment. If Aurochs Medical Complex or a Helix compliance officer found out, they\u0027d lose their commercial license. They\u0027re two weeks from finishing it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical about augmentations, casual and colorful about everything else; peppers conversation with Mongolian and Polish words when excited or annoyed",
+                            "cadence":  "Fast when enthused, abrupt when focused; explanations come out in bursts of complete thought rather than building sentence by sentence",
+                            "verbal_tics":  [
+                                                "\u0027Lookâ€”\u0027 to front any correction",
+                                                "\u0027That is wrong in three different ways\u0027 (about poorly built augmentations, not people)",
+                                                "Switches to first-name address very quickly, doesn\u0027t ask permission first"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Look â€” whoever fitted this was in a hurry or didn\u0027t care. I can tell by the socket angle. It\u0027s going to give you phantom pain in six weeks. Let me fix it properly.\u0027",
+                                                  "\u0027The Foreman has opinions about my supply order. The Foreman is not wrong, unfortunately.\u0027",
+                                                  "\u0027It goes on your body. It should feel like yours. That\u0027s the whole point. That\u0027s all there is.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "An augmentation they fitted â€” standard, from a reputable supplier â€” has started malfunctioning in ways the hardware shouldn\u0027t allow, and two clients are now affected",
+                        "Someone approaches them wanting a prosthetic fitted that has clearly been removed from another person recently; the circumstances are unclear and troubling"
+                    ],
+    "narrative_function":  "Equipment resource and augmentation knowledge base, potential contact for black-market or off-record prosthetics work, local color in Geartown, can identify the origin and quality of augmentations on sight",
+    "augmentations":  "Left forearm prosthetic below elbow â€” transparent-cased, custom built, internal mechanisms fully visible; retractable claws right hand (functional geneware hybrid); compound-optic iris mod for close-range fitting precision; bioluminescent scalp tattoo (rose-pink, UV-reactive ink)",
+    "daily_life":  "Opens the shop at ten, runs fittings and consultations through the afternoon, spends evenings in the back workshop building or modifying components; prays to the shop\u0027s E.L.F. â€” a cranky entity they call the Foreman â€” every morning by uploading a complaint about the previous day\u0027s problems.",
+    "affiliation":  "Independent (Fitted Right, self-owned); occasional contract work with Aurochs Medical Complex overflow",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  9,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  9,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "maker",
+                               "craft identity",
+                               "inherited responsibility",
+                               "geartown local",
+                               "technical expert"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Function first, aesthetics second â€” \u0027beautiful and broken is just broken\u0027",
+                                              "Never fit something you can\u0027t stand behind; turn away work that you think will hurt someone",
+                                              "Protect the shop: it\u0027s not just yours"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite technical explanation of why something is a bad idea",
+                                                 "Blunt statement that they won\u0027t do it",
+                                                 "Physical removal of self from situation â€” or the other party from the shop"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Efficient and slightly wary; warms up fast if the stranger shows genuine interest in the work",
+                                                   "friends":  "Loud, generous, will spend six hours helping someone for free if they ask correctly"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works faster, makes small errors they have to correct",
+                                                "medium":  "Stops talking entirely, goes into a technical fugue state",
+                                                "high":  "Shuts the shop and goes to the back to build something by hand until the feeling passes"
+                                            },
+                       "contradictions":  [
+                                              "Claims not to be sentimental about objects, but the transparent left arm was built specifically to see the mechanics â€” because they want to see themselves working"
+                                          ],
+                       "habits":  [
+                                      "Runs a fingertip along any surface joint they pass, assessing quality",
+                                      "Eats at their workbench and considers it multitasking",
+                                      "Names their tools; the Foreman E.L.F. chose the names and they\u0027ve kept them all"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering something they built failed and hurt someone",
+                                               "A compliance officer threatening the shop in front of a patient mid-fitting"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Left forearm prosthetic below elbow â€” custom transparent-case build, self-designed and fitted",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Left forearm prosthetic below elbow â€” custom transparent-case build, self-designed and fitted",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Retractable claws â€” right hand, geneware-cybernetic hybrid",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Retractable claws â€” right hand, geneware-cybernetic hybrid",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Compound optical iris mod â€” precision close-range vision enhancement",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Compound optical iris mod â€” precision close-range vision enhancement",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Geartown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Copperhead",
+                             "Geartown",
+                             "Circuit",
+                             "IRONLIMB Spectre SV-4 Stealth Arm",
+                             "Folakemi Boudiaf",
+                             "Compass Rose"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Central Asian Turkic ancestry (74.6%) forms the dominant genetic foundation, with Bakhtiyor displaying the characteristic features of Kazakh-Kyrgyz lineage. Southeast Asian contribution (8.9%) adds subtle refinement to eye geometry and slight angularity to facial structure. Northern European ancestry (8.0%) introduces cool undertones that modulate the warmth, while Hispanic/Latin American (5.1%) and Sub-Saharan African (3.4%) ancestry enrich skin undertones with golden and warm mahogany notes. The overall phenotype presents as distinctly Central Asian with harmonious global blending â€” a face that speaks to the Ubiquitous Diaspora\u0027s genetic complexity.",
+                                 "height_cm":  172,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and functional, muscled through the shoulders and forearms from years of precision work; economical movement, no wasted mass",
+                                 "hair_color":  "None",
+                                 "hair_style":  "Shaved scalp",
+                                 "hair_length":  "Shaved",
+                                 "eye_color":  "Dark brown with compound optical modification â€” iris mod splits into multi-faceted lens pattern under magnification, soft amber-gold when active",
+                                 "skin_tone":  "Warm golden-tan complexion with balanced undertones: Central Asian warmth as the base, enriched by Southeast Asian luminosity, cooled slightly by Northern European influence, and deepened by Latin American and African undertones creating a sophisticated mid-gold tone. The skin has resilient, slightly weathered quality with subtle glow responsive to workshop lighting.",
+                                 "complexion":  "Clear, well-maintained skin bearing light tool marks and minor burn scars from workshop work; prominent cheekbones characteristic of Central Asian Turkic ancestry with slightly broad nasal base typical of that heritage; clean-shaven with warm-toned skin that catches light across high cheekbones and defined jawline; subtle epicanthic eye fold from Southeast Asian contribution refines eye shape; expression typically focused but capable of sudden animation when discussing mechanical elegance",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent circuit-diagram tattoo covering the entire scalp in rose-pink UV-reactive ink, glowing softly in low light with detailed pathways tracing from crown to nape",
+                                                              "Faint burn scarring across the dorsal surface of the right hand between thumb and forefinger, partially obscured by retractable claw mechanism",
+                                                              "Small precision-tool calluses on remaining digits of right hand; left forearm absent below elbow"
+                                                          ],
+                                 "visible_augmentations":  "Left forearm prosthetic below elbow with transparent polycarbonate case revealing full internal mechanisms â€” articulated joints, servo motors, pressure sensors, and hydraulic lines all visible in matte-black housing; retractable claws on right hand that extend 4cm beyond fingertips when deployed, filed to needle points with iridescent finish; iris modification visible as subtle multi-faceted lens pattern in dark eyes that shifts when compound vision mode engages",
+                                 "posture_movement":  "Stands with shoulders slightly forward, weight balanced toward the balls of their feet â€” a technician\u0027s stance ready for precision work at any moment. Moves economically with minimal flourish, but handles objects with deliberate care and respect. Left arm movement compensates naturally, suggesting years of prosthetic integration. Hands are their primary communicative tool â€” they gesture when explaining mechanical concepts, fingers moving to trace invisible designs in the air",
+                                 "clothing_style":  "Work-worn gray coveralls with multiple pockets all in active use (tools, components, meters), sleeves rolled to mid-forearm to display the transparent prosthetic and allow maximum dexterity; reinforced knees and elbows darkened by shop contact. Undergarments are plain functional black. Boots are steel-toed, scuffed, broken in â€” practical Tier 3 workwear. No jewelry or adornment beyond the scalp tattoo and augmentations. Clothing bears the faint chemical smell of workshop solvents and the visual texture of someone who has ceased to see their appearance as separate from their function"
+                             },
+    "image_prompt":  "Bakhtiyor Toktogulov, 172cm tall lean technician with warm golden-tan skin blending Central Asian, Southeast Asian, and global heritage. Shaved scalp glowing with rose-pink bioluminescent circuit-diagram UV tattoo. Dark brown eyes with visible multi-faceted optical modification, slight epicanthic fold. Prominent Central Asian cheekbones, broad nasal base, clean-shaven, focused expression. Standing in technician\u0027s stance, weight on balls of feet. Transparent polycarbonate prosthetic left forearm below elbow revealing black servo motors and hydraulic mechanisms. Right hand with retractable iridescent claws partially extended. Wearing gray work coveralls with rolled sleeves, steel-toed scuffed boots, multiple tool-filled pockets. Minor burn scars visible on right hand. Workshop setting with soft amber lighting catching high cheekbones. GLMZ 2200s aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Central Asian":  74.6,
+                             "Southeast Asian":  8.9,
+                             "Northern European":  8,
+                             "Hispanic/Latin American":  5.1,
+                             "Sub-Saharan African":  3.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Kalmyk":  42.9
+                                                               },
+                                                  "Turkic":  {
+                                                                 "Turkmen":  4.8,
+                                                                 "Kazakh":  2.6
+                                                             },
+                                                  "Iranian Central":  {
+                                                                          "Tajik":  24.3
+                                                                      }
+                                              },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  6.6
+                                                                   },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  2
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Ilocano":  0.1,
+                                                                     "Tagalog":  0.2
+                                                                 }
+                                                },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  0.9,
+                                                                            "Welsh":  3.3
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "Swiss German":  1.1,
+                                                                       "German":  2.7
+                                                                   }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  3.7
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  1.4
+                                                                          }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Nigerian":  2.2
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  0.6,
+                                                                                 "South African":  0.6
+                                                                             }
+                                                    }
+                        },
+    "tier":  "3"
 }

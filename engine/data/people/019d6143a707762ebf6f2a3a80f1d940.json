@@ -1,276 +1,303 @@
-{
-  "id": "019d6143a707762ebf6f2a3a80f1d940",
-  "type": "character",
-  "name": "Donya Odinga",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "truant message runner, Tier 1",
-  "age": 9,
-  "status": "active",
-  "location": "The Narrows, Blackpipe Corridor, near Damen and Armitage",
-  "description": "Donya Odinga is a rail-thin nine-year-old with close-cropped hair dyed the faded orange of someone who found a half-spent pigment cartridge and made the most of it. Her skin is deep brown, her eyes wide-set and alert, always tracking exits. She moves through Blackpipe Corridor like water through pipe joints — fast, quiet, and always finding the crack that leads somewhere else. She wears an oversized salvage-canvas vest with too many pockets, each one holding something she might need or trade.\n\nShe has been running messages for the pipe-stall vendors of Blackpipe for two years, since she was old enough to memorize a route without writing it down. She doesn't fully understand most of what she carries — folded slips of laminate, tiny beaded data-threads, once a tooth — but she understands that delivering on time means eating, and late means the cold corner by the effluent drain. She is cheerful with the intensity of someone who has decided cheerfulness is a survival tool.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.4,
-      "id": 0.7,
-      "shadow": 0.2,
-      "mask": 0.5,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "being forgotten entirely",
-      "losing the alcove — her only stable ground"
-    ],
-    "core_desires": [
-      "enough food that she stops counting bites",
-      "someone who notices she is smart"
-    ],
-    "coping_mechanisms": [
-      "humor as deflection",
-      "hypervigilant route-planning so she always knows the way out"
-    ],
-    "blind_spots": [
-      "trusts repeat customers too quickly once they've paid on time twice"
-    ],
-    "secret": "She has memorized the contents of three messages she was told were blank. She doesn't know what to do with what she knows but she keeps it, like a coin she found."
-  },
-  "speech_patterns": {
-    "vocabulary": "Street-clipped, inventive slang, mispronounces technical words confidently",
-    "cadence": "Fast and bouncing, sentences often trail into a question even when they aren't one",
-    "verbal_tics": [
-      "'yeah-no'",
-      "clicking tongue between thoughts"
-    ],
-    "example_lines": [
-      "Yeah-no I know where Vessel-court is, I been there before you were awake.",
-      "You want fast or you want safe? Can't always be both, cost you extra for both."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "One of the messages she memorized contains coordinates she doesn't understand — someone has noticed she knows",
-    "She's been asked to carry something by a new client and the weight is wrong for what they said it was"
-  ],
-  "narrative_function": "Local color and unexpected information courier; knows the physical layout of Blackpipe better than anyone; can be a quest hook when she accidentally carries something dangerous; embodies the texture of Tier 1 child survival without being purely tragic",
-  "augmentations": "None. Wants cat ears someday, has strong opinions about which color.",
-  "daily_life": "Up before the district lights cycle on, runs four to seven message routes through Blackpipe and into the lower Narrows, spends afternoons haunting the stall of Auntie-vendor Pelé who sometimes feeds her in exchange for sweeping, sleeps in a dry maintenance alcove she shares with two older kids.",
-  "affiliation": "Informal network of Blackpipe Corridor market vendors",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 2,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 6,
-      "creativity": 5,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 7,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": 2,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "street-smart",
-      "spatial memory",
-      "scrappy",
-      "pre-literate runner economy"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "If a client has paid on time twice, extend credit of trust",
-      "Never enter a space with only one exit unless the pay is very good"
-    ],
-    "escalation_ladder": [
-      "Tries to talk her way through — jokes, distracts, claims she's lost",
-      "Drops the package and runs if talking fails",
-      "Screams the vendor-network alarm phrase if cornered"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Friendly face, watching hands and feet, ready to bolt",
-      "friends": "Loud, generous with small things, will give you her last dry biscuit without being asked"
-    },
-    "stress_responses": {
-      "low": "Hums tunelessly and moves faster",
-      "medium": "Goes very quiet and very still for ten seconds then explodes into motion",
-      "high": "Runs first, processes second, cries later when alone"
-    },
-    "contradictions": [
-      "Presents as carefree but has a mental ledger of every debt, favor, and slight going back two years"
-    ],
-    "habits": [
-      "Counts her pockets before sleep",
-      "Names the E.L.F.s in every device she passes — has given them all names she uses consistently"
-    ],
-    "breaking_points": [
-      "Discovering a trusted repeat client used her as an unknowing drug mule"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Cockroach": 0.9,
-    "Safety First": 0.9,
-    "Improviser": 0.9,
-    "Lone Wolf": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 7 — parents split apart, mother took work in Ferrogate Transit maintenance tunnels, contact became irregular",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 7.5 — began sleeping in the alcove with older kid named Crow who taught her the route system",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 8 — Crow aged out and moved on; Tsira inherited the routes",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 9, present — running solo, known by name to eleven vendor stalls",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "The Narrows Compact",
-    "The Burden Clause",
-    "GLMZ",
-    "Helix Cortex Laminate — 'The Second Skin'",
-    "Marrowvault Cryogenics",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Corner Slice",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Elena Vasquez-9"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (82.8%) with significant Pacific Islander heritage (11.8%) and South Asian ancestry (5.4%). Her genetic makeup creates a striking blend of deep African features with subtle Pacific Islander bone structure and South Asian undertones — a living map of the Ubiquitous Diaspora.",
-    "height_cm": 128,
-    "weight_kg": 26,
-    "build": "Rail-thin and wiry with the compact muscularity of a child who moves constantly through urban terrain. Underfed but not starving — subsistence-level nutrition sustained by vendor scraps and occasional proper meals. Her frame is all angles: sharp elbows, visible ribs under loose clothing, knees that seem too large for her legs.",
-    "hair_color": "Faded orange — uneven pigment application from a salvaged or shared cartridge, darker roots showing where natural dark brown is growing back in",
-    "hair_style": "Close-cropped, uneven, self-cut or cut by another child with blunt implements. Practical for moving through tight spaces without catching on anything.",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, wide-set, with the perpetually alert quality of someone constantly mapping escape routes",
-    "skin_tone": "Deep rich brown with warm golden undertones — the luminous depth of Sub-Saharan African heritage with subtle warm radiance from Pacific Islander and South Asian ancestry blending",
-    "complexion": "Clean but weathered for her age — sun-darkened from outdoor route-running, hands calloused at fingertips and palms from climbing, a small scar on her left cheekbone from an undefined past incident. No cosmetic grooming; functional cleanliness only. Slight shadows under her eyes suggesting inconsistent sleep. Facial structure reflects her dominant African heritage with strong cheekbones and refined bone architecture, subtly broadened by Pacific Islander genetics.",
-    "visible_augmentations": "None. Completely organic. Her only expressed desire is for future augmentation — specifically cat ear implants, for which she has strong personal color preferences but limited means.",
-    "posture_movement": "Constantly in motion or coiled to move. Even when standing still, her weight is balanced on the balls of her feet. She moves through space like she's reading it — head up, eyes tracking sight lines and obstacles, body angled to move laterally or upward at any moment. Her natural state is forward momentum; stillness reads as temporary.",
-    "clothing_style": "Oversized salvage-canvas vest in weathered gray-tan, clearly scavenged from adult-sized stock, worn open over a faded undershirt with mismatched sleeves. The vest is her identity and tool — every pocket filled with small items: message capsules, trade goods, food scraps, a stub of pencil, things she might barter or need. Cheap pull-on pants in industrial gray, patched at both knees with different fabric colors. Worn slip-on shoes with the heels stomped flat. No jewelry except a single rubber band holding her hair back. Her aesthetic is 100% function — every item chosen for utility or survival, nothing for aesthetics.",
-    "distinguishing_marks": [
-      "Thin white scar on left cheekbone, roughly 2cm long, slightly puckered at one end",
-      "Rope-burn calluses on both palms and inner fingers, evidence of climbing and gripping practices",
-      "Faint bruise on right shin in various stages of healing — occupational hazard of parkour-style movement through industrial terrain"
-    ]
-  },
-  "image_prompt": "GLMZ, street child runner Donya Odinga, age 8-10, deep rich brown skin with warm golden undertones, faded orange uneven close-cropped hair with dark roots, lean wiry frame, dark alert eyes, white scar on left cheekbone. Wearing oversized weathered gray-tan salvage canvas vest over mismatched-sleeve undershirt, industrial gray patched pants, stomped-heel slip-ons. Standing coiled for motion, weight on balls of feet, head up tracking sight lines. Urban Great Lakes Metropolitan Zone setting, neon-lit industrial terrain, rooftop or narrow alley, cool overhead lighting casting sharp shadows. Completely organic, no augmentations. Street survivor aesthetic, functional clothing with bulging pockets, rope-burn calluses visible on hands. Perpetually alert parkour stance, ready to move laterally or upward. Gritty photorealistic neo-noir street scene, dusk lighting, rain-slicked surfaces, distant holographic advertisements. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 82.8,
-    "Pacific Islander": 11.8,
-    "South Asian": 5.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Central African": {
-        "Angolan": 6.6,
-        "Gabonese": 22.1
-      },
-      "Southern African": {
-        "South African": 34.7
-      },
-      "West African": {
-        "Nigerian": 19.4
-      }
-    },
-    "Pacific Islander": {
-      "Micronesian": {
-        "Kiribati": 8.6
-      },
-      "Melanesian": {
-        "Fijian": 2.5,
-        "Papua New Guinean": 0.7
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Marathi": 2.3,
-        "Malayali": 0.5
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 0.7
-      },
-      "Pakistani": {
-        "Pashtun": 1.3,
-        "Baloch": 0.6
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a707762ebf6f2a3a80f1d940",
+    "type":  "character",
+    "name":  "Donya Odinga",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "truant message runner, Tier 1",
+    "age":  9,
+    "status":  "active",
+    "location":  "The Narrows, Blackpipe Corridor, near Damen and Armitage",
+    "description":  "Donya Odinga is a rail-thin nine-year-old with close-cropped hair dyed the faded orange of someone who found a half-spent pigment cartridge and made the most of it. Her skin is deep brown, her eyes wide-set and alert, always tracking exits. She moves through Blackpipe Corridor like water through pipe joints â€” fast, quiet, and always finding the crack that leads somewhere else. She wears an oversized salvage-canvas vest with too many pockets, each one holding something she might need or trade.\n\nShe has been running messages for the pipe-stall vendors of Blackpipe for two years, since she was old enough to memorize a route without writing it down. She doesn\u0027t fully understand most of what she carries â€” folded slips of laminate, tiny beaded data-threads, once a tooth â€” but she understands that delivering on time means eating, and late means the cold corner by the effluent drain. She is cheerful with the intensity of someone who has decided cheerfulness is a survival tool.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being forgotten entirely",
+                                          "losing the alcove â€” her only stable ground"
+                                      ],
+                       "core_desires":  [
+                                            "enough food that she stops counting bites",
+                                            "someone who notices she is smart"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "humor as deflection",
+                                                 "hypervigilant route-planning so she always knows the way out"
+                                             ],
+                       "blind_spots":  [
+                                           "trusts repeat customers too quickly once they\u0027ve paid on time twice"
+                                       ],
+                       "secret":  "She has memorized the contents of three messages she was told were blank. She doesn\u0027t know what to do with what she knows but she keeps it, like a coin she found."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Street-clipped, inventive slang, mispronounces technical words confidently",
+                            "cadence":  "Fast and bouncing, sentences often trail into a question even when they aren\u0027t one",
+                            "verbal_tics":  [
+                                                "\u0027yeah-no\u0027",
+                                                "clicking tongue between thoughts"
+                                            ],
+                            "example_lines":  [
+                                                  "Yeah-no I know where Vessel-court is, I been there before you were awake.",
+                                                  "You want fast or you want safe? Can\u0027t always be both, cost you extra for both."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "One of the messages she memorized contains coordinates she doesn\u0027t understand â€” someone has noticed she knows",
+                        "She\u0027s been asked to carry something by a new client and the weight is wrong for what they said it was"
+                    ],
+    "narrative_function":  "Local color and unexpected information courier; knows the physical layout of Blackpipe better than anyone; can be a quest hook when she accidentally carries something dangerous; embodies the texture of Tier 1 child survival without being purely tragic",
+    "augmentations":  "None. Wants cat ears someday, has strong opinions about which color.",
+    "daily_life":  "Up before the district lights cycle on, runs four to seven message routes through Blackpipe and into the lower Narrows, spends afternoons haunting the stall of Auntie-vendor PelÃ© who sometimes feeds her in exchange for sweeping, sleeps in a dry maintenance alcove she shares with two older kids.",
+    "affiliation":  "Informal network of Blackpipe Corridor market vendors",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  2,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  6,
+                                 "creativity":  5,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  7,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "street-smart",
+                               "spatial memory",
+                               "scrappy",
+                               "pre-literate runner economy"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "If a client has paid on time twice, extend credit of trust",
+                                              "Never enter a space with only one exit unless the pay is very good"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Tries to talk her way through â€” jokes, distracts, claims she\u0027s lost",
+                                                 "Drops the package and runs if talking fails",
+                                                 "Screams the vendor-network alarm phrase if cornered"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Friendly face, watching hands and feet, ready to bolt",
+                                                   "friends":  "Loud, generous with small things, will give you her last dry biscuit without being asked"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Hums tunelessly and moves faster",
+                                                "medium":  "Goes very quiet and very still for ten seconds then explodes into motion",
+                                                "high":  "Runs first, processes second, cries later when alone"
+                                            },
+                       "contradictions":  [
+                                              "Presents as carefree but has a mental ledger of every debt, favor, and slight going back two years"
+                                          ],
+                       "habits":  [
+                                      "Counts her pockets before sleep",
+                                      "Names the E.L.F.s in every device she passes â€” has given them all names she uses consistently"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering a trusted repeat client used her as an unknowing drug mule"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Cockroach":  0.9,
+                       "Safety First":  0.9,
+                       "Improviser":  0.9,
+                       "Lone Wolf":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 7 â€” parents split apart, mother took work in Ferrogate Transit maintenance tunnels, contact became irregular",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 7.5 â€” began sleeping in the alcove with older kid named Crow who taught her the route system",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 8 â€” Crow aged out and moved on; Tsira inherited the routes",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 9, present â€” running solo, known by name to eleven vendor stalls",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "The Narrows Compact",
+                             "The Burden Clause",
+                             "GLMZ",
+                             "Helix Cortex Laminate â€” \u0027The Second Skin\u0027",
+                             "Marrowvault Cryogenics",
+                             "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+                             "Corner Slice",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Elena Vasquez-9"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Sub-Saharan African (82.8%) with significant Pacific Islander heritage (11.8%) and South Asian ancestry (5.4%). Her genetic makeup creates a striking blend of deep African features with subtle Pacific Islander bone structure and South Asian undertones â€” a living map of the Ubiquitous Diaspora.",
+                                 "height_cm":  128,
+                                 "weight_kg":  26,
+                                 "build":  "Rail-thin and wiry with the compact muscularity of a child who moves constantly through urban terrain. Underfed but not starving â€” subsistence-level nutrition sustained by vendor scraps and occasional proper meals. Her frame is all angles: sharp elbows, visible ribs under loose clothing, knees that seem too large for her legs.",
+                                 "hair_color":  "Faded orange â€” uneven pigment application from a salvaged or shared cartridge, darker roots showing where natural dark brown is growing back in",
+                                 "hair_style":  "Close-cropped, uneven, self-cut or cut by another child with blunt implements. Practical for moving through tight spaces without catching on anything.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, wide-set, with the perpetually alert quality of someone constantly mapping escape routes",
+                                 "skin_tone":  "Deep rich brown with warm golden undertones â€” the luminous depth of Sub-Saharan African heritage with subtle warm radiance from Pacific Islander and South Asian ancestry blending",
+                                 "complexion":  "Clean but weathered for her age â€” sun-darkened from outdoor route-running, hands calloused at fingertips and palms from climbing, a small scar on her left cheekbone from an undefined past incident. No cosmetic grooming; functional cleanliness only. Slight shadows under her eyes suggesting inconsistent sleep. Facial structure reflects her dominant African heritage with strong cheekbones and refined bone architecture, subtly broadened by Pacific Islander genetics.",
+                                 "visible_augmentations":  "None. Completely organic. Her only expressed desire is for future augmentation â€” specifically cat ear implants, for which she has strong personal color preferences but limited means.",
+                                 "posture_movement":  "Constantly in motion or coiled to move. Even when standing still, her weight is balanced on the balls of her feet. She moves through space like she\u0027s reading it â€” head up, eyes tracking sight lines and obstacles, body angled to move laterally or upward at any moment. Her natural state is forward momentum; stillness reads as temporary.",
+                                 "clothing_style":  "Oversized salvage-canvas vest in weathered gray-tan, clearly scavenged from adult-sized stock, worn open over a faded undershirt with mismatched sleeves. The vest is her identity and tool â€” every pocket filled with small items: message capsules, trade goods, food scraps, a stub of pencil, things she might barter or need. Cheap pull-on pants in industrial gray, patched at both knees with different fabric colors. Worn slip-on shoes with the heels stomped flat. No jewelry except a single rubber band holding her hair back. Her aesthetic is 100% function â€” every item chosen for utility or survival, nothing for aesthetics.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar on left cheekbone, roughly 2cm long, slightly puckered at one end",
+                                                              "Rope-burn calluses on both palms and inner fingers, evidence of climbing and gripping practices",
+                                                              "Faint bruise on right shin in various stages of healing â€” occupational hazard of parkour-style movement through industrial terrain"
+                                                          ]
+                             },
+    "image_prompt":  "GLMZ, street child runner Donya Odinga, age 8-10, deep rich brown skin with warm golden undertones, faded orange uneven close-cropped hair with dark roots, lean wiry frame, dark alert eyes, white scar on left cheekbone. Wearing oversized weathered gray-tan salvage canvas vest over mismatched-sleeve undershirt, industrial gray patched pants, stomped-heel slip-ons. Standing coiled for motion, weight on balls of feet, head up tracking sight lines. Urban Great Lakes Metropolitan Zone setting, neon-lit industrial terrain, rooftop or narrow alley, cool overhead lighting casting sharp shadows. Completely organic, no augmentations. Street survivor aesthetic, functional clothing with bulging pockets, rope-burn calluses visible on hands. Perpetually alert parkour stance, ready to move laterally or upward. Gritty photorealistic neo-noir street scene, dusk lighting, rain-slicked surfaces, distant holographic advertisements. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  82.8,
+                             "Pacific Islander":  11.8,
+                             "South Asian":  5.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Angolan":  6.6,
+                                                                                "Gabonese":  22.1
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "South African":  34.7
+                                                                             },
+                                                        "West African":  {
+                                                                             "Nigerian":  19.4
+                                                                         }
+                                                    },
+                            "Pacific Islander":  {
+                                                     "Micronesian":  {
+                                                                         "Kiribati":  8.6
+                                                                     },
+                                                     "Melanesian":  {
+                                                                        "Fijian":  2.5,
+                                                                        "Papua New Guinean":  0.7
+                                                                    }
+                                                 },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Marathi":  2.3,
+                                                               "Malayali":  0.5
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  0.7
+                                                                },
+                                                "Pakistani":  {
+                                                                  "Pashtun":  1.3,
+                                                                  "Baloch":  0.6
+                                                              }
+                                            }
+                        },
+    "tier":  "1"
 }

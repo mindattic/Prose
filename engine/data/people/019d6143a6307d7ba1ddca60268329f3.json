@@ -1,180 +1,239 @@
-{
-  "id": "019d6143a6307d7ba1ddca60268329f3",
-  "rating": 23.3,
-  "vote_count": 3,
-  "type": "character",
-  "name": "Franciszek Sengupta-Cisneros",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Fixer - Geneware jobs",
-  "age": 31,
-  "status": "active",
-  "location": "The Narrows, near North Ave and Milwaukee",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Independent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9,
-    "Opportunist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Predominantly South Asian (55.3%) with significant Sub-Saharan African (17.3%), Hispanic/Latin American (11.8%), Northern European (10.9%), and Southeast Asian (4.7%) ancestry—creating a striking multicontinental blend with warm medium-brown skin featuring golden and olive undertones, strong defined facial structure with prominent cheekbones characteristic of both South Asian and Sub-Saharan African heritage, and naturally textured deep black hair with subtle rust undertones",
-    "height_cm": 171,
-    "weight_kg": 62,
-    "build": "Athletic and lean with defined musculature; carries herself with economic efficiency—every movement purposeful. Long-limbed, suggesting endurance work rather than bulk.",
-    "hair_color": "Deep black with subtle rust undertones, naturally textured",
-    "hair_style": "Worn in a high, tight cornrow crown that transitions to shaved sides; practical and distinctive",
-    "hair_length": "Medium (crown) / Shaved (sides)",
-    "eye_color": "Warm brown with faint amber striations in direct light",
-    "skin_tone": "Warm medium brown with golden and olive undertones—the blended result of her predominantly South Asian heritage combined with Sub-Saharan African, Hispanic/Latin American, Northern European, and Southeast Asian ancestry. The tone carries warmth and depth from the African and Latin American components while maintaining the clarity associated with South Asian genetics.",
-    "complexion": "Clear, unmarked face; minimal grooming beyond essential maintenance. Strong, prominent cheekbones and slightly squared jawline reflecting the convergence of South Asian structure with Sub-Saharan African bone architecture. Small scar tissue visible at left temple hairline. Facial features show balanced integration of her ancestry—warmer undertones enhanced by the Sub-Saharan African and Latin American components, while maintaining the definition characteristic of South Asian heritage.",
-    "distinguishing_marks": [
-      "Thin white scar line running from left temple to just above the cheekbone, approximately 4cm long—consistent with old blade work or shrapnel.",
-      "Cluster of three small circular burn scars on the inside of her right wrist, arranged in a triangle—deliberate marks, possibly from test procedures.",
-      "Faint tattooed circuit pattern on her collarbone, barely visible beneath the skin, suggesting subcutaneous work or very fresh ink."
-    ],
-    "visible_augmentations": "None overtly visible at first glance. However, her left hand shows subtle irregularities—slightly too precise in movement, fingernails uniformly perfect chrome-silver caps suggesting subdermal enhancement. Occasional faint bioluminescent traces visible in her pupils under low light, indicating optical substrate integration.",
-    "posture_movement": "Moves with predatory stillness—minimal wasted motion. Stands with weight distributed evenly, ready to shift direction. Eyes track with analytical precision. Tends to keep her hands visible and relaxed; a tell of someone who deals in dangerous work.",
-    "clothing_style": "Tier 3-4 practical wear: form-fitting matte-black synth-leather jacket with reinforced seams and hidden pockets. Graphite compression shirt underneath. Cargo pants in dark grey with cargo pockets and thigh straps. Worn military-grade boots with reactive soles. No logos; all clothing is functional, durable, and designed for mobility. Wears a small wrist-mounted data terminal on her right forearm."
-  },
-  "image_prompt": "Franciszek Sengupta-Cisneros, 171cm athletic lean figure, warm medium-brown skin with golden and olive undertones, strong prominent cheekbones and squared jawline reflecting South Asian and Sub-Saharan African heritage blend. Deep black hair with rust undertones styled in tight cornrow crown fading to shaved sides. Warm brown eyes with amber striations. Thin white scar from left temple to cheekbone. Chrome-silver fingernail caps on left hand, faint bioluminescence in pupils. Wears form-fitting matte-black synth-leather jacket, graphite compression shirt, dark grey cargo pants with thigh straps, military-grade reactive boots. Wrist-mounted data terminal. Predatory stillness, purposeful economy of movement, analytical gaze. GLMZ GLMZ setting, neon-lit urban environment, moody cool lighting with accent highlights on metallic augmentations, cinematic depth, professional operative aesthetic --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "South Asian": 55.3,
-    "Sub-Saharan African": 17.3,
-    "Hispanic/Latin American": 11.8,
-    "Northern European": 10.9,
-    "Southeast Asian": 4.7
-  },
-  "ancestry_detail": {
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 55.3
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Mozambican": 9.9
-      },
-      "East African": {
-        "Somali": 2
-      },
-      "West African": {
-        "Senegalese": 5.4
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 9.1
-      },
-      "Caribbean": {
-        "Haitian": 2.7
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Welsh": 7.2,
-        "English": 3.7
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 2.5
-      },
-      "Indonesian": {
-        "Balinese": 0.9
-      },
-      "Cambodian": {
-        "Khmer": 1.3
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a6307d7ba1ddca60268329f3",
+    "rating":  23.3,
+    "vote_count":  3,
+    "type":  "character",
+    "name":  "Franciszek Sengupta-Cisneros",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Fixer - Geneware jobs",
+    "age":  31,
+    "status":  "active",
+    "location":  "The Narrows, near North Ave and Milwaukee",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Independent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9,
+                       "Opportunist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Predominantly South Asian (55.3%) with significant Sub-Saharan African (17.3%), Hispanic/Latin American (11.8%), Northern European (10.9%), and Southeast Asian (4.7%) ancestryâ€”creating a striking multicontinental blend with warm medium-brown skin featuring golden and olive undertones, strong defined facial structure with prominent cheekbones characteristic of both South Asian and Sub-Saharan African heritage, and naturally textured deep black hair with subtle rust undertones",
+                                 "height_cm":  171,
+                                 "weight_kg":  62,
+                                 "build":  "Athletic and lean with defined musculature; carries herself with economic efficiencyâ€”every movement purposeful. Long-limbed, suggesting endurance work rather than bulk.",
+                                 "hair_color":  "Deep black with subtle rust undertones, naturally textured",
+                                 "hair_style":  "Worn in a high, tight cornrow crown that transitions to shaved sides; practical and distinctive",
+                                 "hair_length":  "Medium (crown) / Shaved (sides)",
+                                 "eye_color":  "Warm brown with faint amber striations in direct light",
+                                 "skin_tone":  "Warm medium brown with golden and olive undertonesâ€”the blended result of her predominantly South Asian heritage combined with Sub-Saharan African, Hispanic/Latin American, Northern European, and Southeast Asian ancestry. The tone carries warmth and depth from the African and Latin American components while maintaining the clarity associated with South Asian genetics.",
+                                 "complexion":  "Clear, unmarked face; minimal grooming beyond essential maintenance. Strong, prominent cheekbones and slightly squared jawline reflecting the convergence of South Asian structure with Sub-Saharan African bone architecture. Small scar tissue visible at left temple hairline. Facial features show balanced integration of her ancestryâ€”warmer undertones enhanced by the Sub-Saharan African and Latin American components, while maintaining the definition characteristic of South Asian heritage.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar line running from left temple to just above the cheekbone, approximately 4cm longâ€”consistent with old blade work or shrapnel.",
+                                                              "Cluster of three small circular burn scars on the inside of her right wrist, arranged in a triangleâ€”deliberate marks, possibly from test procedures.",
+                                                              "Faint tattooed circuit pattern on her collarbone, barely visible beneath the skin, suggesting subcutaneous work or very fresh ink."
+                                                          ],
+                                 "visible_augmentations":  "None overtly visible at first glance. However, her left hand shows subtle irregularitiesâ€”slightly too precise in movement, fingernails uniformly perfect chrome-silver caps suggesting subdermal enhancement. Occasional faint bioluminescent traces visible in her pupils under low light, indicating optical substrate integration.",
+                                 "posture_movement":  "Moves with predatory stillnessâ€”minimal wasted motion. Stands with weight distributed evenly, ready to shift direction. Eyes track with analytical precision. Tends to keep her hands visible and relaxed; a tell of someone who deals in dangerous work.",
+                                 "clothing_style":  "Tier 3-4 practical wear: form-fitting matte-black synth-leather jacket with reinforced seams and hidden pockets. Graphite compression shirt underneath. Cargo pants in dark grey with cargo pockets and thigh straps. Worn military-grade boots with reactive soles. No logos; all clothing is functional, durable, and designed for mobility. Wears a small wrist-mounted data terminal on her right forearm."
+                             },
+    "image_prompt":  "Franciszek Sengupta-Cisneros, 171cm athletic lean figure, warm medium-brown skin with golden and olive undertones, strong prominent cheekbones and squared jawline reflecting South Asian and Sub-Saharan African heritage blend. Deep black hair with rust undertones styled in tight cornrow crown fading to shaved sides. Warm brown eyes with amber striations. Thin white scar from left temple to cheekbone. Chrome-silver fingernail caps on left hand, faint bioluminescence in pupils. Wears form-fitting matte-black synth-leather jacket, graphite compression shirt, dark grey cargo pants with thigh straps, military-grade reactive boots. Wrist-mounted data terminal. Predatory stillness, purposeful economy of movement, analytical gaze. GLMZ GLMZ setting, neon-lit urban environment, moody cool lighting with accent highlights on metallic augmentations, cinematic depth, professional operative aesthetic --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "South Asian":  55.3,
+                             "Sub-Saharan African":  17.3,
+                             "Hispanic/Latin American":  11.8,
+                             "Northern European":  10.9,
+                             "Southeast Asian":  4.7
+                         },
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  55.3
+                                                           }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Mozambican":  9.9
+                                                                             },
+                                                        "East African":  {
+                                                                             "Somali":  2
+                                                                         },
+                                                        "West African":  {
+                                                                             "Senegalese":  5.4
+                                                                         }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  9.1
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Haitian":  2.7
+                                                                          }
+                                                        },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Welsh":  7.2,
+                                                                            "English":  3.7
+                                                                        }
+                                                  },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  2.5
+                                                                   },
+                                                    "Indonesian":  {
+                                                                       "Balinese":  0.9
+                                                                   },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  1.3
+                                                                  }
+                                                }
+                        }
 }

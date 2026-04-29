@@ -1,154 +1,213 @@
-{
-  "id": "019d6143a6c772c2a6855e1fe74d4996",
-  "rating": 20,
-  "vote_count": 2,
-  "type": "character",
-  "name": "Arshia Agyemang",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Fixer - Transport logistics",
-  "age": 39,
-  "status": "active",
-  "location": "The Core, near LaSalle and Madison",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Ferrogate",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9,
-    "Opportunist": 0.9,
-    "Face": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Core",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (64.6%) with significant Eastern European (22%) and South Asian (13.4%) admixture; features the rich melanin foundation and strong facial structure of West African ancestry, combined with the refined bone definition and facial geometry of Eastern European genetics, and the subtle eye shape variation and facial proportions from South Asian heritage",
-    "height_cm": 172,
-    "weight_kg": 68,
-    "build": "Athletic and lean with defined shoulder musculature from years of manual labor and logistics work; carries herself with the efficient economy of movement typical of someone who works on cargo docks",
-    "hair_color": "Dark brown with premature silver threading at the temples",
-    "hair_style": "Pulled back in a tight, practical braid wrapped with copper wire for both form and function",
-    "hair_length": "Long",
-    "eye_color": "Deep brown, clear and direct",
-    "skin_tone": "Rich medium to deep brown complexion with warm golden undertones; sun-darkened from outdoor dock work with the depth characteristic of Sub-Saharan African genetics, layered with the subtle warmth and golden undertones from South Asian admixture and the cool undertones from Eastern European ancestry creating a complex, warm-toned medium-deep brown",
-    "complexion": "Strong, angular cheekbones and defined jawline reflecting the combination of Sub-Saharan African and Eastern European bone structure; a thin white scar running from left temple to cheekbone (old industrial accident); minimal makeup; skin shows the texture of someone who spends time exposed to Great Lakes wind and industrial grime; warm golden undertones reflecting the blended genetics of African, Eastern European, and South Asian ancestry, with subtle warm undertones around the eyes and jawline from the South Asian component",
-    "distinguishing_marks": [
-      "Thin white scar tracing from left temple to left cheekbone, approximately 8cm, slightly raised",
-      "Faded burn marks across the knuckles of both hands in geometric patterns (from handling heated cargo containers)",
-      "Tattoo on inner right forearm: a stylized freight container with the Ferrogate corporate cipher embedded in it"
-    ],
-    "visible_augmentations": "Subdermal chrome reinforcement visible at the wrists (burnished silver showing through translucent skin panels at pulse points); faint LED grid pattern visible beneath the skin at the base of her skull when her braid is loose, suggesting neural enhancements for logistics calculation and spatial reasoning",
-    "posture_movement": "Moves with deliberate precision; stands with weight balanced, shoulders back; speaks with clipped, efficient sentences; eyes constantly calculate angles and distances—the gaze of someone mentally mapping cargo spaces and route optimization",
-    "clothing_style": "Tier 3-4 utilitarian: heavy-duty Ferrogate-branded work jacket (charcoal with reflective trim and company patches), reinforced cargo pants with multiple weighted pockets, steel-toed boots scuffed from dock work, a worn leather belt with a brass Ferrogate buckle, and a thin smart-fabric undershirt that displays real-time logistics data feeds via subtle luminescent threads"
-  },
-  "image_prompt": "Arshia Agyemang, 172cm tall lean athletic woman with rich warm medium-deep brown skin, mixed Sub-Saharan African, Eastern European, and South Asian heritage visible in strong angular cheekbones and defined jawline. Dark brown hair with silver threading at temples, pulled back in tight practical braid wrapped with copper wire. Deep brown eyes with direct, calculating gaze. White scar tracing left temple to cheekbone. Faded geometric burn marks across knuckles. Inner right forearm tattoo of stylized freight container. Subdermal chrome at wrists showing burnished silver through translucent skin. Charcoal Ferrogate work jacket with reflective trim and patches, reinforced cargo pants, steel-toed scuffed boots, worn leather belt with brass buckle. Smart-fabric undershirt with luminescent data threads. Standing in Great Lakes industrial dock at dusk, blue-grey neo-noir lighting, LED glow from neural enhancement at skull base faintly visible, calculating warehouse angles, efficient posture, neon-lit cargo containers in background, atmospheric fog and industrial grime, cinematic GLMZ --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 64.6,
-    "Eastern European": 22,
-    "South Asian": 13.4
-  },
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Mozambican": 64.6
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Slovenian": 19.9,
-        "Croatian": 2.1
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Sindhi": 13.4
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a6c772c2a6855e1fe74d4996",
+    "rating":  20,
+    "vote_count":  2,
+    "type":  "character",
+    "name":  "Arshia Agyemang",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Fixer - Transport logistics",
+    "age":  39,
+    "status":  "active",
+    "location":  "The Core, near LaSalle and Madison",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Ferrogate",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9,
+                       "Opportunist":  0.9,
+                       "Face":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Core",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Predominantly Sub-Saharan African (64.6%) with significant Eastern European (22%) and South Asian (13.4%) admixture; features the rich melanin foundation and strong facial structure of West African ancestry, combined with the refined bone definition and facial geometry of Eastern European genetics, and the subtle eye shape variation and facial proportions from South Asian heritage",
+                                 "height_cm":  172,
+                                 "weight_kg":  68,
+                                 "build":  "Athletic and lean with defined shoulder musculature from years of manual labor and logistics work; carries herself with the efficient economy of movement typical of someone who works on cargo docks",
+                                 "hair_color":  "Dark brown with premature silver threading at the temples",
+                                 "hair_style":  "Pulled back in a tight, practical braid wrapped with copper wire for both form and function",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Deep brown, clear and direct",
+                                 "skin_tone":  "Rich medium to deep brown complexion with warm golden undertones; sun-darkened from outdoor dock work with the depth characteristic of Sub-Saharan African genetics, layered with the subtle warmth and golden undertones from South Asian admixture and the cool undertones from Eastern European ancestry creating a complex, warm-toned medium-deep brown",
+                                 "complexion":  "Strong, angular cheekbones and defined jawline reflecting the combination of Sub-Saharan African and Eastern European bone structure; a thin white scar running from left temple to cheekbone (old industrial accident); minimal makeup; skin shows the texture of someone who spends time exposed to Great Lakes wind and industrial grime; warm golden undertones reflecting the blended genetics of African, Eastern European, and South Asian ancestry, with subtle warm undertones around the eyes and jawline from the South Asian component",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar tracing from left temple to left cheekbone, approximately 8cm, slightly raised",
+                                                              "Faded burn marks across the knuckles of both hands in geometric patterns (from handling heated cargo containers)",
+                                                              "Tattoo on inner right forearm: a stylized freight container with the Ferrogate corporate cipher embedded in it"
+                                                          ],
+                                 "visible_augmentations":  "Subdermal chrome reinforcement visible at the wrists (burnished silver showing through translucent skin panels at pulse points); faint LED grid pattern visible beneath the skin at the base of her skull when her braid is loose, suggesting neural enhancements for logistics calculation and spatial reasoning",
+                                 "posture_movement":  "Moves with deliberate precision; stands with weight balanced, shoulders back; speaks with clipped, efficient sentences; eyes constantly calculate angles and distancesâ€”the gaze of someone mentally mapping cargo spaces and route optimization",
+                                 "clothing_style":  "Tier 3-4 utilitarian: heavy-duty Ferrogate-branded work jacket (charcoal with reflective trim and company patches), reinforced cargo pants with multiple weighted pockets, steel-toed boots scuffed from dock work, a worn leather belt with a brass Ferrogate buckle, and a thin smart-fabric undershirt that displays real-time logistics data feeds via subtle luminescent threads"
+                             },
+    "image_prompt":  "Arshia Agyemang, 172cm tall lean athletic woman with rich warm medium-deep brown skin, mixed Sub-Saharan African, Eastern European, and South Asian heritage visible in strong angular cheekbones and defined jawline. Dark brown hair with silver threading at temples, pulled back in tight practical braid wrapped with copper wire. Deep brown eyes with direct, calculating gaze. White scar tracing left temple to cheekbone. Faded geometric burn marks across knuckles. Inner right forearm tattoo of stylized freight container. Subdermal chrome at wrists showing burnished silver through translucent skin. Charcoal Ferrogate work jacket with reflective trim and patches, reinforced cargo pants, steel-toed scuffed boots, worn leather belt with brass buckle. Smart-fabric undershirt with luminescent data threads. Standing in Great Lakes industrial dock at dusk, blue-grey neo-noir lighting, LED glow from neural enhancement at skull base faintly visible, calculating warehouse angles, efficient posture, neon-lit cargo containers in background, atmospheric fog and industrial grime, cinematic GLMZ --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  64.6,
+                             "Eastern European":  22,
+                             "South Asian":  13.4
+                         },
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Mozambican":  64.6
+                                                                             }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Slovenian":  19.9,
+                                                                          "Croatian":  2.1
+                                                                      }
+                                                 },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Sindhi":  13.4
+                                                              }
+                                            }
+                        }
 }

@@ -1,193 +1,252 @@
-{
-  "id": "019d6143a7357674af2f4683eb62f584",
-  "rating": 30,
-  "vote_count": 2,
-  "type": "character",
-  "name": "Eman Árnason-Kang-Larsdóttir",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Fixer - Helix proxy",
-  "age": 33,
-  "status": "active",
-  "location": "The Core, near LaSalle and Madison",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Helix BioSystems",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9,
-    "Opportunist": 0.9,
-    "Face": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Core",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Globally mixed phenotype with East Asian (29.6%) and Southeast Asian (20.7%) as dominant bone structure foundation, creating characteristic cheekbones and eye set. Sub-Saharan African ancestry (18.2%) contributes warm depth, facial definition, and rich dimensionality to features. Northern European ancestry (24.8%) introduces lighter undertones and cool complexities to skin and eye coloration. Hispanic/Latin American heritage (6.7%) adds warmth and subtle golden qualities to overall palette. The result is a striking, harmoniously blended appearance where no single ancestry dominates visually.",
-    "height_cm": 172,
-    "weight_kg": 61,
-    "build": "Lean and angular, with defined musculature from consistent physical conditioning. Long-limbed with a graceful but tense posture that betrays readiness for confrontation.",
-    "hair_color": "Natural black with subtle auburn undertones in direct light",
-    "hair_style": "Pulled back in a tight, high ponytail; precisely maintained with no loose strands",
-    "hair_length": "Long",
-    "eye_color": "Deep brown with faint amber flecking near the iris",
-    "skin_tone": "Warm medium brown with golden and olive undertones. Luminous quality from the balanced blend of East Asian, Southeast Asian, Sub-Saharan African, and Hispanic ancestry. Evenly toned with subtle radiance.",
-    "complexion": "Prominent, well-defined cheekbones blending East Asian refinement with Sub-Saharan African depth and warmth. Strong angular jawline characteristic of the multi-continental ancestry blend. Refined nose bridge with subtle East Asian influence. Skin is meticulously maintained with minor tension lines around eyes and mouth from stress. No blemishes; fastidious grooming standard. Small scar tissue along left temple partially obscured by hairline.",
-    "distinguishing_marks": [
-      "Thin, pale surgical scar running 3cm along the left temple hairline, partially hidden by hair when worn down",
-      "Small tattoo on the inside of her right wrist: a stylized helix symbol in silver ink, company-affiliated",
-      "Faint burn scarring on the back of her right shoulder, roughly 5cm diameter, old and well-healed"
-    ],
-    "visible_augmentations": "Right hand shows chrome plating along the knuckles and finger joints, seamlessly integrated with warm medium-brown skin. The augmentation is precise and expensive-looking, suggesting Tier 1 corporate quality. Otherwise, augmentations are not visibly apparent—likely subcutaneous neural interfaces or internal modifications.",
-    "posture_movement": "Moves with controlled efficiency, economical gestures. Rarely relaxes completely; shoulders held slightly forward. Makes deliberate eye contact. Walks with measured pace, feet landing heel-first. Hands often rest in lap or clasped at waist when seated. Exudes controlled tension rather than relaxation.",
-    "clothing_style": "Corporate-adjacent minimalism. Favors tailored, high-end fabrics in blacks, grays, and muted blues. Typically wears fitted tactical trousers with discrete thigh pockets, fitted long-sleeved compression shirts, and lightweight polymer jackets with hidden hardware loops. Expensive, unremarkable sneakers for mobility. Minimal jewelry aside from her wrist tattoo. Tier 1-2 aesthetic—professional, expensive, deliberately understated to avoid drawing attention in corporate spaces."
-  },
-  "image_prompt": "GLMZ, professional corporate operative Eman Árnason-Kang-Larsdóttir. 172cm tall, lean angular frame with defined musculature. Warm medium-brown skin with golden and olive undertones, blending East Asian, Southeast Asian, Sub-Saharan African, and Northern European heritage. High cheekbones, refined angular jawline, deep brown eyes with amber flecking. Long black hair with auburn undertones pulled in tight high ponytail. Chrome-plated augmented right hand with visible knuckles and finger joints. Faint scar along left temple hairline. Meticulous posture, controlled movements, slight forward shoulder tension. Wearing fitted black tactical compression long-sleeve, muted blue lightweight polymer jacket with hardware loops, fitted tactical trousers with thigh pockets, expensive minimalist sneakers. Corporate professional aesthetic. Seated in modern corporate environment or futuristic data center. Cool blue and gray ambient lighting with subtle neon undertones. Controlled, focused expression. High-end neo-noir urban aesthetic. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "East Asian": 29.6,
-    "Northern European": 24.8,
-    "Southeast Asian": 20.7,
-    "Sub-Saharan African": 18.2,
-    "Hispanic/Latin American": 6.7
-  },
-  "ancestry_detail": {
-    "East Asian": {
-      "Chinese": {
-        "Fujianese": 2.2,
-        "Cantonese": 8.3
-      },
-      "Korean": {
-        "Korean": 11.6
-      },
-      "Japanese": {
-        "Japanese": 7.5
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 9.7,
-        "Dutch": 4.1
-      },
-      "Scandinavian": {
-        "Norwegian": 6.5
-      },
-      "British Isles": {
-        "Scottish": 4.5
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 7.2
-      },
-      "Thai": {
-        "Thai": 7.1
-      },
-      "Filipino": {
-        "Waray": 6.4
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Guinean": 5.9,
-        "Ghanaian": 0.8
-      },
-      "Central African": {
-        "Congolese": 3.1,
-        "Angolan": 0.4
-      },
-      "Southern African": {
-        "South African": 8
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 6.7
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a7357674af2f4683eb62f584",
+    "rating":  30,
+    "vote_count":  2,
+    "type":  "character",
+    "name":  "Eman Ãrnason-Kang-LarsdÃ³ttir",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Fixer - Helix proxy",
+    "age":  33,
+    "status":  "active",
+    "location":  "The Core, near LaSalle and Madison",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Helix BioSystems",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9,
+                       "Opportunist":  0.9,
+                       "Face":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Core",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Globally mixed phenotype with East Asian (29.6%) and Southeast Asian (20.7%) as dominant bone structure foundation, creating characteristic cheekbones and eye set. Sub-Saharan African ancestry (18.2%) contributes warm depth, facial definition, and rich dimensionality to features. Northern European ancestry (24.8%) introduces lighter undertones and cool complexities to skin and eye coloration. Hispanic/Latin American heritage (6.7%) adds warmth and subtle golden qualities to overall palette. The result is a striking, harmoniously blended appearance where no single ancestry dominates visually.",
+                                 "height_cm":  172,
+                                 "weight_kg":  61,
+                                 "build":  "Lean and angular, with defined musculature from consistent physical conditioning. Long-limbed with a graceful but tense posture that betrays readiness for confrontation.",
+                                 "hair_color":  "Natural black with subtle auburn undertones in direct light",
+                                 "hair_style":  "Pulled back in a tight, high ponytail; precisely maintained with no loose strands",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Deep brown with faint amber flecking near the iris",
+                                 "skin_tone":  "Warm medium brown with golden and olive undertones. Luminous quality from the balanced blend of East Asian, Southeast Asian, Sub-Saharan African, and Hispanic ancestry. Evenly toned with subtle radiance.",
+                                 "complexion":  "Prominent, well-defined cheekbones blending East Asian refinement with Sub-Saharan African depth and warmth. Strong angular jawline characteristic of the multi-continental ancestry blend. Refined nose bridge with subtle East Asian influence. Skin is meticulously maintained with minor tension lines around eyes and mouth from stress. No blemishes; fastidious grooming standard. Small scar tissue along left temple partially obscured by hairline.",
+                                 "distinguishing_marks":  [
+                                                              "Thin, pale surgical scar running 3cm along the left temple hairline, partially hidden by hair when worn down",
+                                                              "Small tattoo on the inside of her right wrist: a stylized helix symbol in silver ink, company-affiliated",
+                                                              "Faint burn scarring on the back of her right shoulder, roughly 5cm diameter, old and well-healed"
+                                                          ],
+                                 "visible_augmentations":  "Right hand shows chrome plating along the knuckles and finger joints, seamlessly integrated with warm medium-brown skin. The augmentation is precise and expensive-looking, suggesting Tier 1 corporate quality. Otherwise, augmentations are not visibly apparentâ€”likely subcutaneous neural interfaces or internal modifications.",
+                                 "posture_movement":  "Moves with controlled efficiency, economical gestures. Rarely relaxes completely; shoulders held slightly forward. Makes deliberate eye contact. Walks with measured pace, feet landing heel-first. Hands often rest in lap or clasped at waist when seated. Exudes controlled tension rather than relaxation.",
+                                 "clothing_style":  "Corporate-adjacent minimalism. Favors tailored, high-end fabrics in blacks, grays, and muted blues. Typically wears fitted tactical trousers with discrete thigh pockets, fitted long-sleeved compression shirts, and lightweight polymer jackets with hidden hardware loops. Expensive, unremarkable sneakers for mobility. Minimal jewelry aside from her wrist tattoo. Tier 1-2 aestheticâ€”professional, expensive, deliberately understated to avoid drawing attention in corporate spaces."
+                             },
+    "image_prompt":  "GLMZ, professional corporate operative Eman Ãrnason-Kang-LarsdÃ³ttir. 172cm tall, lean angular frame with defined musculature. Warm medium-brown skin with golden and olive undertones, blending East Asian, Southeast Asian, Sub-Saharan African, and Northern European heritage. High cheekbones, refined angular jawline, deep brown eyes with amber flecking. Long black hair with auburn undertones pulled in tight high ponytail. Chrome-plated augmented right hand with visible knuckles and finger joints. Faint scar along left temple hairline. Meticulous posture, controlled movements, slight forward shoulder tension. Wearing fitted black tactical compression long-sleeve, muted blue lightweight polymer jacket with hardware loops, fitted tactical trousers with thigh pockets, expensive minimalist sneakers. Corporate professional aesthetic. Seated in modern corporate environment or futuristic data center. Cool blue and gray ambient lighting with subtle neon undertones. Controlled, focused expression. High-end neo-noir urban aesthetic. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "East Asian":  29.6,
+                             "Northern European":  24.8,
+                             "Southeast Asian":  20.7,
+                             "Sub-Saharan African":  18.2,
+                             "Hispanic/Latin American":  6.7
+                         },
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Fujianese":  2.2,
+                                                               "Cantonese":  8.3
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  11.6
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  7.5
+                                                            }
+                                           },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  9.7,
+                                                                       "Dutch":  4.1
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  6.5
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "Scottish":  4.5
+                                                                        }
+                                                  },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  7.2
+                                                                   },
+                                                    "Thai":  {
+                                                                 "Thai":  7.1
+                                                             },
+                                                    "Filipino":  {
+                                                                     "Waray":  6.4
+                                                                 }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Guinean":  5.9,
+                                                                             "Ghanaian":  0.8
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  3.1,
+                                                                                "Angolan":  0.4
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "South African":  8
+                                                                             }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  6.7
+                                                                               }
+                                                        }
+                        }
 }

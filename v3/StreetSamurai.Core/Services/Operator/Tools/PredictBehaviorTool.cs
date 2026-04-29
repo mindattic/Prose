@@ -68,7 +68,7 @@ public class PredictBehaviorTool : IWriterTool
             character = p.CharacterName,
             emotional_state = p.CurrentEmotionalState,
             current_location = p.CurrentLocation,
-            dominant_facet = p.DominantFacet,
+            dominant_state = p.DominantState,
             likely_actions = p.LikelyActions,
             dialogue_mode = p.DialogueMode,
             concealing = p.Concealing,

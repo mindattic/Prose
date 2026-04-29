@@ -1,372 +1,385 @@
-{
-  "id": "019d6143a63b779798b37ddc55ccd8be",
-  "type": "character",
-  "name": "Alisha Krishnamurthy",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Infrastructure disruption and industrial sabotage — saboteur",
-  "age": 27,
-  "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures, near Fullerton and Damen",
-  "description": "Alisha Krishnamurthy is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 27, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Alisha Krishnamurthy plans to keep it that way. She works as a saboteur out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAlisha Krishnamurthy operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.39,
-      "ideal": 0.7,
-      "id": 0.66,
-      "shadow": 0.47,
-      "mask": 0.32,
-      "ghost": 0.12
-    },
-    "core_fears": [
-      "Being replaced — younger, faster, cheaper runners coming up behind them",
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "That they're fundamentally alone and connection is just a vulnerability"
-    ],
-    "core_desires": [
-      "Freedom from augmentation debt — the interest compounds like a tumor",
-      "To matter to someone for who they are, not what they can do",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
-    ],
-    "coping_mechanisms": [
-      "Exercises compulsively — the body must be ready, always",
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Isolates — retreats into their space when overwhelmed, emerges only for work"
-    ],
-    "blind_spots": [
-      "Believes their trauma makes them special instead of recognizing it as damage to manage",
-      "Cannot distinguish between caution and cowardice in themselves or others",
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there"
-    ],
-    "secret": "Kadiatou Bergstrom-Konate maintains a second identity — a completely clean civilian persona with a lease, a job history, and a social profile. It's their exit strategy."
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
-    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
-    "verbal_tics": [
-      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries",
-      "Uses technical jargon for everything, including emotions"
-    ],
-    "example_lines": [
-      "\"I don't break things. I introduce structural critiques.\"",
-      "\"The most effective sabotage looks like bad luck.\"",
-      "\"Everything has a weakness. Infrastructure has thousands.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A crew member from Kadiatou Bergstrom-Konate's past shows up in GLMZ, carrying old grievances and new chrome",
-    "A former associate resurfaces with evidence that could destroy Kadiatou Bergstrom-Konate's reputation — and a price for silence",
-    "Someone is impersonating Kadiatou Bergstrom-Konate on jobs, and the impersonator is better at the work than the original"
-  ],
-  "narrative_function": "Kadiatou Bergstrom-Konate functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Eye replacement — one organic, one cybernetic with recording capability and zoom. Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers",
-  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Independent — operates through reputation only; The Third Rail",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 8
-      },
-      "agility": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 6
-      },
-      "endurance": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 6
-      },
-      "reflexes": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 6
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 10
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 6
-      },
-      "willpower": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 5
-      },
-      "technical": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 6
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 7
-      },
-      "intimidation": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 7
-      },
-      "deception": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 4
-      },
-      "empathy": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 5
-      }
-    },
-    "personality": {
-      "aggression": 0.34,
-      "caution": 0.9,
-      "loyalty": 0.88,
-      "greed": 0.87,
-      "empathy": 0.75
-    },
-    "drives": [
-      "reputation",
-      "protection",
-      "freedom"
-    ],
-    "thresholds": {
-      "pain": 8,
-      "stress": 7,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "technical expertise with augmentation systems",
-      "multilingual — speaks 4+ languages fluently",
-      "network of reliable contacts"
-    ],
-    "weaknesses": [
-      "grudge-holding that compromises rational decision-making",
-      "old injury that flares under specific conditions"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "saboteur",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Always has an exit route planned before agreeing to any meeting",
-      "Never discusses active contracts with anyone not directly involved",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy"
-    ],
-    "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Insists they work alone but performs noticeably better in a team",
-      "Presents as emotionless professional but is deeply affected by collateral damage",
-      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
-    ],
-    "habits": [
-      "Carries a specific caliber round as a lucky charm — has never fired it",
-      "Checks exits within 10 seconds of entering any room",
-      "Never drinks anything they didn't see poured or open themselves"
-    ],
-    "breaking_points": [
-      "Being forced to harm a civilian — collateral damage that can't be rationalized",
-      "Being forced to choose between a crew member and the mission — and choosing wrong"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Eye replacement",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Eye replacement — one organic, one cybernetic with recording capability and zoom",
-      "replaces": ""
-    },
-    {
-      "name": "Subdermal armor plating across torso and forearms",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9,
-    "Opportunist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Masquerade",
-    "The Narrows Compact",
-    "Underground Alisha",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Multiethnic blend reflecting true genetic ancestry: South Asian (21.4%), North African (20.3%), Sub-Saharan African (18.4%), Northern European (16.7%), Hispanic/Latin American (16.1%), and East Asian (7.1%). This complex admixture creates a striking phenotype — warm deep brown skin with golden and reddish undertones from the African and North African components, high angular cheekbones with moderate width from Latin and South Asian heritage, eye shape showing the influence of East Asian ancestry layered beneath African and Mediterranean traits, with warm brown eye color reflecting the South Asian and African genetic dominance.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Wiry and angular — lean muscle with almost no body fat, built for speed and endurance rather than power. Shoulders slightly narrow, chest flat. Movement suggests coiled kinetic energy.",
-    "hair_color": "Dark brown, natural with grey threading at temples",
-    "hair_style": "Pulled back tightly in a functional braid; practical, not aesthetic",
-    "hair_length": "Medium",
-    "eye_color": "Left eye: warm brown, natural. Right eye: chrome-silver with visible circuitry matrix, iris replaced by adjustable aperture lens",
-    "skin_tone": "Deep warm brown with golden and reddish undertones — reflects the blended warmth of South Asian, North African, Sub-Saharan African, and Latin heritage in dynamic combination",
-    "complexion": "Lean face with high, angular cheekbones showing Latin, South Asian, and African heritage, sharp jaw. Eyes set with slight epicanthic fold from East Asian ancestry. Warm brown natural coloring reflects South Asian and African genetic weight. Skin weathered from stress and irregular sleep — faint lines around eyes. Minimal grooming beyond functionality; no cosmetics. Scarring visible around temples and jawline from augmentation installation — rough surgical marks, unprofessional work.",
-    "distinguishing_marks": [
-      "Surgical scarring along both temples where subdermal neural interface was installed — approximately 4cm each, slightly raised and irregular.",
-      "Jagged scar along left jawline from installation point of chrome eye assembly — approximately 6cm, pale against skin.",
-      "Faint burn marks across knuckles of both hands — old damage, silvered with scar tissue.",
-      "Small impact scar above right collarbone — appears to be shrapnel wound, partially healed."
-    ],
-    "visible_augmentations": "Right eye is wholly artificial — chrome and circuitry visible in the socket, no organic tissue. Subdermal armor plating visible as faint geometric seams and hard edges beneath skin across shoulders, upper torso, and forearms — military-grade titanium composite, scratched and dull from use. Chrome at wrists where plating meets flesh creates a subtle ridge.",
-    "posture_movement": "Stands with weight forward, ready to move. Walks with economical efficiency — no wasted motion. Fingers often fidgeting or checking equipment. Head moves constantly, cataloguing exits and threats. Right eye often seems to be recording — slight focus shift and micro-adjustments of the iris aperture. Restless even at rest — constant low-level physical tension.",
-    "clothing_style": "Tier 4-5 functional minimalism. Black or dark grey fitted cargo pants with reinforced knees and thigh pockets — worn Syndicate Industrial brand. Tight-fitting compression shirt under a worn leather jacket (grey-brown, creased from use, multiple hidden pockets added by hand). Fingerless gloves with exposed knuckle reinforcement. Steel-toed boots, scuffed and practical. No jewelry or decoration. Everything designed for quick movement and access to tools."
-  },
-  "image_prompt": "Alisha Krishnamurthy, 2226 neo-noir operative, 168cm lean and wiry frame, deep warm brown skin with golden undertones reflecting South Asian, North African and Sub-Saharan heritage, high angular cheekbones with sharp jawline, eyes with slight East Asian epicanthic fold, left eye warm brown, right eye pure chrome circuitry with adjustable aperture lens, dark brown hair with grey threads pulled back in tight functional braid, weathered face with faint stress lines, surgical scarring at temples and jawline, burn marks on knuckles, chrome plating visible beneath skin at shoulders and forearms, wearing black cargo pants and worn grey-brown leather jacket with added pockets, fingerless gloves, steel-toed boots, standing in forward-ready posture with restless kinetic energy, head angled to catalogue environment, chrome eye recording and processing, urban GLMZ neon-lit alley background, cool blue and amber lighting casting shadows across augmented features, GLMZ 2200s aesthetic, high contrast, gritty and functional --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 21.4,
-    "North African": 20.3,
-    "Sub-Saharan African": 18.4,
-    "Northern European": 16.7,
-    "Hispanic/Latin American": 16.1,
-    "East Asian": 7.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 21.4
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Berber": 6.6,
-        "Tuareg": 2.1
-      },
-      "Nile Valley": {
-        "Egyptian": 1.7,
-        "Sudanese": 5.9
-      },
-      "Maghreb": {
-        "Algerian": 4
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Gabonese": 18.4
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 6.9
-      },
-      "British Isles": {
-        "Scottish": 4.9,
-        "English": 2.9
-      },
-      "Scandinavian": {
-        "Finnish": 2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 4.7
-      },
-      "South American": {
-        "Ecuadorian": 8.4,
-        "Colombian": 3
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 4.7
-      },
-      "Korean": {
-        "Korean": 2.4
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a63b779798b37ddc55ccd8be",
+    "type":  "character",
+    "name":  "Alisha Krishnamurthy",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Infrastructure disruption and industrial sabotage â€” saboteur",
+    "age":  27,
+    "status":  "active",
+    "location":  "The Narrows â€” cramped residential corridors between megastructures, near Fullerton and Damen",
+    "description":  "Alisha Krishnamurthy is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 27, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible â€” eye replacement â€” one organic, one cybernetic with recording capability and zoom â€” and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name â€” that person is officially dead, and Alisha Krishnamurthy plans to keep it that way. She works as a saboteur out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAlisha Krishnamurthy operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them",
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "That they\u0027re fundamentally alone and connection is just a vulnerability"
+                                      ],
+                       "core_desires":  [
+                                            "Freedom from augmentation debt â€” the interest compounds like a tumor",
+                                            "To matter to someone for who they are, not what they can do",
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Exercises compulsively â€” the body must be ready, always",
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+                                                 "Isolates â€” retreats into their space when overwhelmed, emerges only for work"
+                                             ],
+                       "blind_spots":  [
+                                           "Believes their trauma makes them special instead of recognizing it as damage to manage",
+                                           "Cannot distinguish between caution and cowardice in themselves or others",
+                                           "Mistakes pattern recognition for wisdom â€” sees connections that aren\u0027t there"
+                                       ],
+                       "secret":  "Kadiatou Bergstrom-Konate maintains a second identity â€” a completely clean civilian persona with a lease, a job history, and a social profile. It\u0027s their exit strategy."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+                            "cadence":  "Flowing and unhurried â€” talks like someone who has never been interrupted and doesn\u0027t expect to be.",
+                            "verbal_tics":  [
+                                                "Speaks in clipped fragments when stressed â€” drops pronouns, articles, pleasantries",
+                                                "Uses technical jargon for everything, including emotions"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I don\u0027t break things. I introduce structural critiques.\"",
+                                                  "\"The most effective sabotage looks like bad luck.\"",
+                                                  "\"Everything has a weakness. Infrastructure has thousands.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A crew member from Kadiatou Bergstrom-Konate\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
+                        "A former associate resurfaces with evidence that could destroy Kadiatou Bergstrom-Konate\u0027s reputation â€” and a price for silence",
+                        "Someone is impersonating Kadiatou Bergstrom-Konate on jobs, and the impersonator is better at the work than the original"
+                    ],
+    "narrative_function":  "Kadiatou Bergstrom-Konate functions as a connector â€” her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Eye replacement â€” one organic, one cybernetic with recording capability and zoom. Subdermal armor plating across torso and forearms â€” military surplus, scratched serial numbers",
+    "daily_life":  "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather â€” not for pleasure, but for market intelligence.",
+    "affiliation":  "Independent â€” operates through reputation only; The Third Rail",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  7,
+                                                    "augmented":  0,
+                                                    "effective":  8
+                                                },
+                                   "agility":  {
+                                                   "base":  6,
+                                                   "augmented":  2,
+                                                   "effective":  6
+                                               },
+                                   "endurance":  {
+                                                     "base":  6,
+                                                     "augmented":  1,
+                                                     "effective":  6
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  6,
+                                                    "augmented":  3,
+                                                    "effective":  6
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  4,
+                                                      "augmented":  2,
+                                                      "effective":  10
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  1,
+                                                    "effective":  6
+                                                },
+                                 "willpower":  {
+                                                   "base":  3,
+                                                   "augmented":  1,
+                                                   "effective":  5
+                                               },
+                                 "technical":  {
+                                                   "base":  6,
+                                                   "augmented":  0,
+                                                   "effective":  6
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  5,
+                                                  "augmented":  0,
+                                                  "effective":  7
+                                              },
+                                 "intimidation":  {
+                                                      "base":  3,
+                                                      "augmented":  2,
+                                                      "effective":  7
+                                                  },
+                                 "deception":  {
+                                                   "base":  4,
+                                                   "augmented":  0,
+                                                   "effective":  4
+                                               },
+                                 "empathy":  {
+                                                 "base":  8,
+                                                 "augmented":  2,
+                                                 "effective":  5
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.34,
+                                      "caution":  0.9,
+                                      "loyalty":  0.88,
+                                      "greed":  0.87,
+                                      "empathy":  0.75
+                                  },
+                  "drives":  [
+                                 "reputation",
+                                 "protection",
+                                 "freedom"
+                             ],
+                  "thresholds":  {
+                                     "pain":  8,
+                                     "stress":  7,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "technical expertise with augmentation systems",
+                                    "multilingual â€” speaks 4+ languages fluently",
+                                    "network of reliable contacts"
+                                ],
+                  "weaknesses":  [
+                                     "grudge-holding that compromises rational decision-making",
+                                     "old injury that flares under specific conditions"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "saboteur",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Never discusses active contracts with anyone not directly involved",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess â€” read the situation, identify threats and advantages",
+                                                 "2. Negotiate â€” try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate â€” make the cost of conflict clear",
+                                                 "4. Precision violence â€” surgical, targeted, minimal collateral",
+                                                 "5. Full engagement â€” overwhelming force, no half measures",
+                                                 "6. Emergency protocol â€” abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Presents as emotionless professional but is deeply affected by collateral damage",
+                                              "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
+                                          ],
+                       "habits":  [
+                                      "Carries a specific caliber round as a lucky charm â€” has never fired it",
+                                      "Checks exits within 10 seconds of entering any room",
+                                      "Never drinks anything they didn\u0027t see poured or open themselves"
+                                  ],
+                       "breaking_points":  [
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized",
+                                               "Being forced to choose between a crew member and the mission â€” and choosing wrong"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Eye replacement",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Eye replacement â€” one organic, one cybernetic with recording capability and zoom",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Subdermal armor plating across torso and forearms",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal armor plating across torso and forearms â€” military surplus, scratched serial numbers",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9,
+                       "Opportunist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Mockingbird\u0027 Voice-Activated Trap Gun"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Masquerade",
+                             "The Narrows Compact",
+                             "Underground Alisha",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "Slagworks Industrial",
+                             "GLMZ"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Multiethnic blend reflecting true genetic ancestry: South Asian (21.4%), North African (20.3%), Sub-Saharan African (18.4%), Northern European (16.7%), Hispanic/Latin American (16.1%), and East Asian (7.1%). This complex admixture creates a striking phenotype â€” warm deep brown skin with golden and reddish undertones from the African and North African components, high angular cheekbones with moderate width from Latin and South Asian heritage, eye shape showing the influence of East Asian ancestry layered beneath African and Mediterranean traits, with warm brown eye color reflecting the South Asian and African genetic dominance.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Wiry and angular â€” lean muscle with almost no body fat, built for speed and endurance rather than power. Shoulders slightly narrow, chest flat. Movement suggests coiled kinetic energy.",
+                                 "hair_color":  "Dark brown, natural with grey threading at temples",
+                                 "hair_style":  "Pulled back tightly in a functional braid; practical, not aesthetic",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Left eye: warm brown, natural. Right eye: chrome-silver with visible circuitry matrix, iris replaced by adjustable aperture lens",
+                                 "skin_tone":  "Deep warm brown with golden and reddish undertones â€” reflects the blended warmth of South Asian, North African, Sub-Saharan African, and Latin heritage in dynamic combination",
+                                 "complexion":  "Lean face with high, angular cheekbones showing Latin, South Asian, and African heritage, sharp jaw. Eyes set with slight epicanthic fold from East Asian ancestry. Warm brown natural coloring reflects South Asian and African genetic weight. Skin weathered from stress and irregular sleep â€” faint lines around eyes. Minimal grooming beyond functionality; no cosmetics. Scarring visible around temples and jawline from augmentation installation â€” rough surgical marks, unprofessional work.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scarring along both temples where subdermal neural interface was installed â€” approximately 4cm each, slightly raised and irregular.",
+                                                              "Jagged scar along left jawline from installation point of chrome eye assembly â€” approximately 6cm, pale against skin.",
+                                                              "Faint burn marks across knuckles of both hands â€” old damage, silvered with scar tissue.",
+                                                              "Small impact scar above right collarbone â€” appears to be shrapnel wound, partially healed."
+                                                          ],
+                                 "visible_augmentations":  "Right eye is wholly artificial â€” chrome and circuitry visible in the socket, no organic tissue. Subdermal armor plating visible as faint geometric seams and hard edges beneath skin across shoulders, upper torso, and forearms â€” military-grade titanium composite, scratched and dull from use. Chrome at wrists where plating meets flesh creates a subtle ridge.",
+                                 "posture_movement":  "Stands with weight forward, ready to move. Walks with economical efficiency â€” no wasted motion. Fingers often fidgeting or checking equipment. Head moves constantly, cataloguing exits and threats. Right eye often seems to be recording â€” slight focus shift and micro-adjustments of the iris aperture. Restless even at rest â€” constant low-level physical tension.",
+                                 "clothing_style":  "Tier 4-5 functional minimalism. Black or dark grey fitted cargo pants with reinforced knees and thigh pockets â€” worn Syndicate Industrial brand. Tight-fitting compression shirt under a worn leather jacket (grey-brown, creased from use, multiple hidden pockets added by hand). Fingerless gloves with exposed knuckle reinforcement. Steel-toed boots, scuffed and practical. No jewelry or decoration. Everything designed for quick movement and access to tools."
+                             },
+    "image_prompt":  "Alisha Krishnamurthy, 2226 neo-noir operative, 168cm lean and wiry frame, deep warm brown skin with golden undertones reflecting South Asian, North African and Sub-Saharan heritage, high angular cheekbones with sharp jawline, eyes with slight East Asian epicanthic fold, left eye warm brown, right eye pure chrome circuitry with adjustable aperture lens, dark brown hair with grey threads pulled back in tight functional braid, weathered face with faint stress lines, surgical scarring at temples and jawline, burn marks on knuckles, chrome plating visible beneath skin at shoulders and forearms, wearing black cargo pants and worn grey-brown leather jacket with added pockets, fingerless gloves, steel-toed boots, standing in forward-ready posture with restless kinetic energy, head angled to catalogue environment, chrome eye recording and processing, urban GLMZ neon-lit alley background, cool blue and amber lighting casting shadows across augmented features, GLMZ 2200s aesthetic, high contrast, gritty and functional --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  21.4,
+                             "North African":  20.3,
+                             "Sub-Saharan African":  18.4,
+                             "Northern European":  16.7,
+                             "Hispanic/Latin American":  16.1,
+                             "East Asian":  7.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  21.4
+                                                                }
+                                            },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Berber":  6.6,
+                                                                  "Tuareg":  2.1
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  1.7,
+                                                                      "Sudanese":  5.9
+                                                                  },
+                                                  "Maghreb":  {
+                                                                  "Algerian":  4
+                                                              }
+                                              },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Gabonese":  18.4
+                                                                            }
+                                                    },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  6.9
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "Scottish":  4.9,
+                                                                            "English":  2.9
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Finnish":  2
+                                                                       }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  4.7
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  8.4,
+                                                                                   "Colombian":  3
+                                                                               }
+                                                        },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  4.7
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  2.4
+                                                          }
+                                           }
+                        },
+    "tier":  "3"
 }
