@@ -189,7 +189,7 @@ public class StoryQualityService
     /// </summary>
     public string GetImprovementDirectives()
     {
-        var path = Path.Combine(paths.StoriesDir, "quality_patterns.json");
+        var path = Path.Combine(paths.ChaptersDir, "quality_patterns.json");
         if (!File.Exists(path)) return "";
 
         try
@@ -242,7 +242,7 @@ public class StoryQualityService
     /// </summary>
     public List<StoryQualityReport> ListReports()
     {
-        var dir = paths.StoriesDir;
+        var dir = paths.ChaptersDir;
         if (!Directory.Exists(dir)) return [];
 
         return Directory.GetDirectories(dir)
@@ -319,7 +319,7 @@ public class StoryQualityService
     {
         try
         {
-            var path = StoryFolderHelper.GetFilePath(paths.StoriesDir, projectId, "quality_report.json");
+            var path = StoryFolderHelper.GetFilePath(paths.ChaptersDir, projectId, "quality_report.json");
             File.WriteAllText(path, JsonSerializer.Serialize(report, JsonDefaults.Indented));
             log.LogDebug("Quality report saved to {Path}", path);
         }
@@ -337,7 +337,7 @@ public class StoryQualityService
     /// </summary>
     private void UpdatePatternAccumulator(StoryQualityReport report)
     {
-        var path = Path.Combine(paths.StoriesDir, "quality_patterns.json");
+        var path = Path.Combine(paths.ChaptersDir, "quality_patterns.json");
 
         // Load existing patterns
         var existing = new QualityPatternAccumulator();
@@ -379,7 +379,7 @@ public class StoryQualityService
 
         try
         {
-            Directory.CreateDirectory(paths.StoriesDir);
+            Directory.CreateDirectory(paths.ChaptersDir);
             File.WriteAllText(path, JsonSerializer.Serialize(existing, JsonDefaults.Indented));
             log.LogDebug("Quality pattern accumulator updated: {Count} patterns, {Stories} stories",
                 existing.FailurePatterns.Count, existing.StoriesEvaluated);

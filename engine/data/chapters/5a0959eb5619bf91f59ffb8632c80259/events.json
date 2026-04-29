@@ -1,0 +1,701 @@
+[
+  {
+    "id": "019dd6ac",
+    "beat_index": 0,
+    "type": "action",
+    "summary": "A woman stands motionless in the rain for eleven minutes, covertly watching Kyle.",
+    "participants": [
+      "Kyle",
+      "unknown woman"
+    ],
+    "location": "street outside noodle stall",
+    "object": "",
+    "consequence": "Establishes the woman as a surveillance presence and sets up the encounter",
+    "emotional_weight": 4,
+    "tags": [
+      "surveillance",
+      "tension",
+      "mystery"
+    ],
+    "timestamp": "2026-04-29T00:38:59.0768661Z"
+  },
+  {
+    "id": "019dd6ac",
+    "beat_index": 0,
+    "type": "dialogue",
+    "summary": "Mrs. Chen mutters the word \u0027H\u00FAlij\u012Bng\u0027 into the steam, naming the watching woman.",
+    "participants": [
+      "Mrs. Chen"
+    ],
+    "location": "noodle stall",
+    "object": "long-handled spoon",
+    "consequence": "Signals that Mrs. Chen recognizes the woman as something dangerous or supernatural; first time she has named a person this way",
+    "emotional_weight": 6,
+    "tags": [
+      "warning",
+      "recognition",
+      "dread",
+      "folklore"
+    ],
+    "timestamp": "2026-04-29T00:38:59.0768879Z"
+  },
+  {
+    "id": "019dd6ac",
+    "beat_index": 0,
+    "type": "action",
+    "summary": "The woman steps under the awning and gives Kyle a precise, minimal gesture to follow.",
+    "participants": [
+      "unknown woman",
+      "Kyle"
+    ],
+    "location": "awning outside noodle stall",
+    "object": "",
+    "consequence": "Initiates direct contact and forces Kyle to make a choice",
+    "emotional_weight": 5,
+    "tags": [
+      "control",
+      "precision",
+      "invitation",
+      "tension"
+    ],
+    "timestamp": "2026-04-29T00:38:59.0768882Z"
+  },
+  {
+    "id": "019dd6ac",
+    "beat_index": 0,
+    "type": "decision",
+    "summary": "Kyle sets down his chopsticks and chooses to follow the woman into the rain.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "noodle stall",
+    "object": "",
+    "consequence": "Kyle commits to engaging with an unknown and potentially dangerous contact",
+    "emotional_weight": 6,
+    "tags": [
+      "agency",
+      "risk",
+      "resolve"
+    ],
+    "timestamp": "2026-04-29T00:38:59.0768885Z"
+  },
+  {
+    "id": "019dd6ac",
+    "beat_index": 0,
+    "type": "action",
+    "summary": "Kyle leaves \u03A640 on the counter \u2014 twelve over the cost \u2014 and Mrs. Chen covers the bills without looking.",
+    "participants": [
+      "Kyle",
+      "Mrs. Chen"
+    ],
+    "location": "noodle stall",
+    "object": "bills (\u03A640)",
+    "consequence": "Communicates a silent farewell ritual; Mrs. Chen\u0027s gesture signals disapproval and tacit acceptance simultaneously",
+    "emotional_weight": 7,
+    "tags": [
+      "trust",
+      "ritual",
+      "tenderness",
+      "foreboding",
+      "relationship"
+    ],
+    "timestamp": "2026-04-29T00:38:59.0768887Z"
+  },
+  {
+    "id": "019dd6ac",
+    "beat_index": 0,
+    "type": "departure",
+    "summary": "Kyle follows the woman into the dark of the walkway, falling in six feet behind her.",
+    "participants": [
+      "Kyle",
+      "unknown woman"
+    ],
+    "location": "rain-soaked walkway",
+    "object": "katana",
+    "consequence": "Sets the two characters in motion together toward an unknown destination and confrontation",
+    "emotional_weight": 5,
+    "tags": [
+      "pursuit",
+      "tension",
+      "danger",
+      "resolve"
+    ],
+    "timestamp": "2026-04-29T00:38:59.0768892Z"
+  },
+  {
+    "id": "019dd6ae",
+    "beat_index": 1,
+    "type": "discovery",
+    "summary": "Kyle observes that the woman has not adjusted her stride for puddles, concluding she has extensively prepared and rehearsed this route.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "Gray Zone walkway",
+    "object": "",
+    "consequence": "Establishes the woman as a deliberate, long-planning operative, raising Kyle\u0027s suspicion and alertness.",
+    "emotional_weight": 4,
+    "tags": [
+      "surveillance",
+      "paranoia",
+      "preparation",
+      "trust"
+    ],
+    "timestamp": "2026-04-29T00:40:31.3184891Z"
+  },
+  {
+    "id": "019dd6ae",
+    "beat_index": 1,
+    "type": "discovery",
+    "summary": "Kyle notices the woman\u0027s coat has not soaked through after eleven minutes in the rain, revealing it is expensive and purpose-built.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "Gray Zone walkway",
+    "object": "tan coat",
+    "consequence": "Further signals the woman is a well-resourced professional, deepening Kyle\u0027s wariness.",
+    "emotional_weight": 3,
+    "tags": [
+      "surveillance",
+      "deduction",
+      "professionalism"
+    ],
+    "timestamp": "2026-04-29T00:40:31.3184898Z"
+  },
+  {
+    "id": "019dd6ae",
+    "beat_index": 1,
+    "type": "action",
+    "summary": "The woman produces a brass-gasketed key and unlocks the relay station door with practiced efficiency, revealing she has performed this action many times before.",
+    "participants": [
+      "the woman"
+    ],
+    "location": "relay station entrance, Gray Zone",
+    "object": "brass-gasketed key",
+    "consequence": "Grants access to the relay station and confirms the woman has prior intimate knowledge of this location.",
+    "emotional_weight": 5,
+    "tags": [
+      "preparation",
+      "secrecy",
+      "infiltration"
+    ],
+    "timestamp": "2026-04-29T00:40:31.31849Z"
+  },
+  {
+    "id": "019dd6ae",
+    "beat_index": 1,
+    "type": "decision",
+    "summary": "Kyle chooses to step through the held door into the relay station, recognizing the woman needs him to enter willingly.",
+    "participants": [
+      "Kyle",
+      "the woman"
+    ],
+    "location": "relay station entrance, Gray Zone",
+    "object": "",
+    "consequence": "Kyle crosses a threshold both literally and figuratively, committing himself to whatever the woman has planned.",
+    "emotional_weight": 7,
+    "tags": [
+      "trust",
+      "agency",
+      "manipulation",
+      "choice",
+      "tension"
+    ],
+    "timestamp": "2026-04-29T00:40:31.3184904Z"
+  },
+  {
+    "id": "019dd6ae",
+    "beat_index": 1,
+    "type": "discovery",
+    "summary": "Once inside the relay station with the door closed, the low electromagnetic hum Kyle had never consciously noticed in his implant goes completely silent.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "relay station interior, Gray Zone",
+    "object": "NeoCortex implant",
+    "consequence": "Reveals the relay station is shielded or jamming Kyle\u0027s implant, potentially cutting him off from outside support and exposing a vulnerability he did not know he had.",
+    "emotional_weight": 9,
+    "tags": [
+      "vulnerability",
+      "isolation",
+      "technology",
+      "paranoia",
+      "trap"
+    ],
+    "timestamp": "2026-04-29T00:40:31.3184907Z"
+  },
+  {
+    "id": "019dd6af",
+    "beat_index": 2,
+    "type": "revelation",
+    "summary": "Kyle discovers that the internal hum he had attributed to his implants for eleven years is actually an external entity monitoring or influencing him through his neural hardware.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "dark equipment room",
+    "object": "neural implants",
+    "consequence": "Reframes eleven years of Kyle\u0027s decisions and perceived autonomy as potentially compromised",
+    "emotional_weight": 9,
+    "tags": [
+      "identity",
+      "loss of autonomy",
+      "surveillance",
+      "horror",
+      "self-deception"
+    ],
+    "timestamp": "2026-04-29T00:42:12.9844614Z"
+  },
+  {
+    "id": "019dd6af",
+    "beat_index": 2,
+    "type": "arrival",
+    "summary": "Sable removes her hood, revealing her face to Kyle for the first time after nine years of audio-only contact.",
+    "participants": [
+      "Sable",
+      "Kyle"
+    ],
+    "location": "dark equipment room",
+    "object": "",
+    "consequence": "Kyle experiences immediate recognition, collapsing the gap between her known voice and her unknown face",
+    "emotional_weight": 7,
+    "tags": [
+      "recognition",
+      "intimacy",
+      "trust",
+      "revelation"
+    ],
+    "timestamp": "2026-04-29T00:42:12.9844628Z"
+  },
+  {
+    "id": "019dd6af",
+    "beat_index": 2,
+    "type": "revelation",
+    "summary": "Sable explains she deliberately concealed her identity so Kyle would follow a stranger, preventing the entity monitoring him from recognizing their meeting.",
+    "participants": [
+      "Sable",
+      "Kyle"
+    ],
+    "location": "dark equipment room",
+    "object": "neural implants",
+    "consequence": "Establishes that Sable has been operating with foreknowledge of Kyle\u0027s compromised implants and planned this encounter carefully",
+    "emotional_weight": 6,
+    "tags": [
+      "deception",
+      "strategy",
+      "surveillance",
+      "trust",
+      "manipulation"
+    ],
+    "timestamp": "2026-04-29T00:42:12.9844632Z"
+  },
+  {
+    "id": "019dd6af",
+    "beat_index": 2,
+    "type": "dialogue",
+    "summary": "Sable states she refuses to be a non-human entity\u0027s puppet, framing her motivation for the operation.",
+    "participants": [
+      "Sable"
+    ],
+    "location": "dark equipment room",
+    "object": "",
+    "consequence": "Establishes Sable\u0027s personal stake and ideological position, distinguishing her agenda from purely operational concerns",
+    "emotional_weight": 5,
+    "tags": [
+      "autonomy",
+      "defiance",
+      "identity",
+      "non-human threat"
+    ],
+    "timestamp": "2026-04-29T00:42:12.9844635Z"
+  },
+  {
+    "id": "019dd6af",
+    "beat_index": 2,
+    "type": "revelation",
+    "summary": "Sable reveals she has already triangulated the entity\u0027s physical position to three possible locations using surveillance traffic readings against Kyle\u0027s implants.",
+    "participants": [
+      "Sable"
+    ],
+    "location": "dark equipment room",
+    "object": "surveillance nodes",
+    "consequence": "Sets up the operational plan requiring Kyle\u0027s participation to complete the triangulation",
+    "emotional_weight": 6,
+    "tags": [
+      "surveillance",
+      "strategy",
+      "technology",
+      "threat"
+    ],
+    "timestamp": "2026-04-29T00:42:12.9844638Z"
+  },
+  {
+    "id": "019dd6af",
+    "beat_index": 2,
+    "type": "decision",
+    "summary": "Kyle agrees to help Sable locate the entity by continuing to behave exactly as normal, knowing this is not a neutral act.",
+    "participants": [
+      "Kyle",
+      "Sable"
+    ],
+    "location": "dark equipment room",
+    "object": "neural implants",
+    "consequence": "Commits Kyle to the operation and to acting as unwitting bait while consciously aware of his compromised state",
+    "emotional_weight": 8,
+    "tags": [
+      "agency",
+      "risk",
+      "trust",
+      "autonomy",
+      "complicity"
+    ],
+    "timestamp": "2026-04-29T00:42:12.984464Z"
+  },
+  {
+    "id": "019dd6b1",
+    "beat_index": 3,
+    "type": "arrival",
+    "summary": "Kyle and Sable enter the wet market together.",
+    "participants": [
+      "Kyle",
+      "Sable"
+    ],
+    "location": "wet market",
+    "object": "",
+    "consequence": "Sets up the scene for Kyle\u0027s surveillance and the unfolding confrontation they witness.",
+    "emotional_weight": 2,
+    "tags": [
+      "surveillance",
+      "urban",
+      "tension"
+    ],
+    "timestamp": "2026-04-29T00:43:54.5180352Z"
+  },
+  {
+    "id": "019dd6b1",
+    "beat_index": 3,
+    "type": "discovery",
+    "summary": "Kyle\u0027s NeoCortex detects a familiar unannounced signal or presence \u2014 \u0027the hum\u0027 \u2014 registering it like a footstep behind him.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "wet market",
+    "object": "NeoCortex",
+    "consequence": "Establishes that something is tracking or present, connected to the node in Sable\u0027s pocket and Kyle\u0027s eleven-year history.",
+    "emotional_weight": 6,
+    "tags": [
+      "surveillance",
+      "threat",
+      "technology",
+      "unease"
+    ],
+    "timestamp": "2026-04-29T00:43:54.5180363Z"
+  },
+  {
+    "id": "019dd6b1",
+    "beat_index": 3,
+    "type": "conflict",
+    "summary": "A man with a rebar confronts a vendor with a fish cart, who already has a split lip from prior violence.",
+    "participants": [
+      "rebar man",
+      "cart vendor"
+    ],
+    "location": "fourth stall, wet market",
+    "object": "rebar",
+    "consequence": "The conflict dissipates without resolution, leaving both men diminished.",
+    "emotional_weight": 5,
+    "tags": [
+      "violence",
+      "poverty",
+      "urban decay",
+      "tension"
+    ],
+    "timestamp": "2026-04-29T00:43:54.5180366Z"
+  },
+  {
+    "id": "019dd6b1",
+    "beat_index": 3,
+    "type": "action",
+    "summary": "A neighboring aunt shouts in Mandarin at the fighting men, not to stop them but as a ritual protest against accepted violence.",
+    "participants": [
+      "aunt"
+    ],
+    "location": "wet market",
+    "object": "",
+    "consequence": "Underscores the normalization of violence in this environment; her final sharp word closes the incident.",
+    "emotional_weight": 4,
+    "tags": [
+      "community",
+      "resignation",
+      "violence",
+      "ritual"
+    ],
+    "timestamp": "2026-04-29T00:43:54.5180377Z"
+  },
+  {
+    "id": "019dd6b1",
+    "beat_index": 3,
+    "type": "decision",
+    "summary": "The rebar man chooses not to use the rebar, and the cart vendor does not flee \u2014 the fight simply exhausts itself.",
+    "participants": [
+      "rebar man",
+      "cart vendor"
+    ],
+    "location": "wet market",
+    "object": "rebar",
+    "consequence": "The conflict ends without decisive action, the rebar man sitting in the rain holding the weapon uselessly.",
+    "emotional_weight": 4,
+    "tags": [
+      "resignation",
+      "violence",
+      "exhaustion",
+      "non-resolution"
+    ],
+    "timestamp": "2026-04-29T00:43:54.518038Z"
+  },
+  {
+    "id": "019dd6b1",
+    "beat_index": 3,
+    "type": "action",
+    "summary": "Kyle and Sable walk through the conflict without altering their stride or intervening.",
+    "participants": [
+      "Kyle",
+      "Sable"
+    ],
+    "location": "wet market",
+    "object": "",
+    "consequence": "Reveals Kyle\u0027s discipline and the nature of his agreement \u2014 to not change, to observe and continue.",
+    "emotional_weight": 5,
+    "tags": [
+      "restraint",
+      "complicity",
+      "discipline",
+      "moral tension"
+    ],
+    "timestamp": "2026-04-29T00:43:54.5180383Z"
+  },
+  {
+    "id": "019dd6b1",
+    "beat_index": 3,
+    "type": "revelation",
+    "summary": "Kyle acknowledges that whatever Sable\u0027s node is reading is connected to something that has been living in his chest for eleven years.",
+    "participants": [
+      "Kyle",
+      "Sable"
+    ],
+    "location": "wet market",
+    "object": "node",
+    "consequence": "Implies a long-standing covert arrangement or burden Kyle carries, the nature of which is deliberately withheld.",
+    "emotional_weight": 8,
+    "tags": [
+      "secrets",
+      "burden",
+      "complicity",
+      "long-term consequence",
+      "trust"
+    ],
+    "timestamp": "2026-04-29T00:43:54.5180385Z"
+  },
+  {
+    "id": "019dd6b2",
+    "beat_index": 4,
+    "type": "arrival",
+    "summary": "Kyle and Sable enter a Tier 1 residential block from the market district.",
+    "participants": [
+      "Kyle",
+      "Sable"
+    ],
+    "location": "Tier 1 residential block",
+    "object": "",
+    "consequence": "Sets the environment for subsequent observations and the discovery Sable makes via the node.",
+    "emotional_weight": 2,
+    "tags": [
+      "transition",
+      "urban decay",
+      "surveillance"
+    ],
+    "timestamp": "2026-04-29T00:45:34.736723Z"
+  },
+  {
+    "id": "019dd6b2",
+    "beat_index": 4,
+    "type": "discovery",
+    "summary": "Kyle\u0027s NeoCortex registers the shift to lower signal density as they enter the residential block.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "Tier 1 residential block",
+    "object": "NeoCortex",
+    "consequence": "The reduced Grid interference causes the hum Kyle experiences to sharpen, suggesting heightened sensitivity or awareness.",
+    "emotional_weight": 3,
+    "tags": [
+      "technology",
+      "perception",
+      "augmentation"
+    ],
+    "timestamp": "2026-04-29T00:45:34.7367291Z"
+  },
+  {
+    "id": "019dd6b2",
+    "beat_index": 4,
+    "type": "emotional_shift",
+    "summary": "Kyle consciously files the intimate gesture between the couple himself, distinct from his NeoCortex, and recognizes the significance of that difference.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "Tier 1 residential block, third stoop from the corner",
+    "object": "",
+    "consequence": "Marks Kyle\u0027s growing awareness of the boundary between human perception and machine processing.",
+    "emotional_weight": 5,
+    "tags": [
+      "humanity",
+      "intimacy",
+      "self-awareness",
+      "augmentation",
+      "tenderness"
+    ],
+    "timestamp": "2026-04-29T00:45:34.7367293Z"
+  },
+  {
+    "id": "019dd6b2",
+    "beat_index": 4,
+    "type": "discovery",
+    "summary": "Sable reads something in the node she is carrying that causes her to go completely still for three seconds.",
+    "participants": [
+      "Sable"
+    ],
+    "location": "Tier 1 residential block",
+    "object": "node",
+    "consequence": "Sable begins carrying an undisclosed piece of information like a burden, altering her internal state without outward acknowledgment.",
+    "emotional_weight": 8,
+    "tags": [
+      "revelation",
+      "secrecy",
+      "tension",
+      "information",
+      "concealment"
+    ],
+    "timestamp": "2026-04-29T00:45:34.7367295Z"
+  },
+  {
+    "id": "019dd6b2",
+    "beat_index": 4,
+    "type": "decision",
+    "summary": "Sable resumes walking at the same pace and says nothing to Kyle about what she discovered in the node.",
+    "participants": [
+      "Sable",
+      "Kyle"
+    ],
+    "location": "Tier 1 residential block",
+    "object": "node",
+    "consequence": "Kyle does not ask, establishing a dynamic of mutual silence around the discovery and leaving the information\u0027s nature unresolved.",
+    "emotional_weight": 7,
+    "tags": [
+      "secrecy",
+      "trust",
+      "concealment",
+      "partnership",
+      "tension"
+    ],
+    "timestamp": "2026-04-29T00:45:34.7367297Z"
+  },
+  {
+    "id": "019dd6b5",
+    "beat_index": 6,
+    "type": "decision",
+    "summary": "She tells Kyle she will contact him when timing is operational, asserting they go together on her read and her call.",
+    "participants": [
+      "she",
+      "Kyle"
+    ],
+    "location": "courtyard\u0027s western edge",
+    "object": "",
+    "consequence": "Establishes her command authority over the joint operation and sets terms Kyle cannot refuse.",
+    "emotional_weight": 6,
+    "tags": [
+      "control",
+      "authority",
+      "negotiation",
+      "power dynamic"
+    ],
+    "timestamp": "2026-04-29T00:48:55.1618712Z"
+  },
+  {
+    "id": "019dd6b5",
+    "beat_index": 6,
+    "type": "dialogue",
+    "summary": "She says \u0027Thank you,\u0027 signaling that an agreement has been finalized and is now irrevocable.",
+    "participants": [
+      "she",
+      "Kyle"
+    ],
+    "location": "courtyard\u0027s western edge",
+    "object": "",
+    "consequence": "The agreement changes the shape of what comes next \u2014 both characters are now bound to something unnamed.",
+    "emotional_weight": 7,
+    "tags": [
+      "finality",
+      "obligation",
+      "trust",
+      "transaction"
+    ],
+    "timestamp": "2026-04-29T00:48:55.1618727Z"
+  },
+  {
+    "id": "019dd6b5",
+    "beat_index": 6,
+    "type": "departure",
+    "summary": "She turns west and walks into the rain, leaving Kyle standing at the courtyard\u0027s edge.",
+    "participants": [
+      "she"
+    ],
+    "location": "courtyard\u0027s western edge",
+    "object": "tan coat",
+    "consequence": "Kyle is left alone, marking the end of the encounter and the beginning of separate paths.",
+    "emotional_weight": 5,
+    "tags": [
+      "separation",
+      "solitude",
+      "finality"
+    ],
+    "timestamp": "2026-04-29T00:48:55.161873Z"
+  },
+  {
+    "id": "019dd6b5",
+    "beat_index": 6,
+    "type": "departure",
+    "summary": "Kyle turns north and begins walking toward The Pivot after watching her go for three seconds.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "courtyard\u0027s western edge",
+    "object": "",
+    "consequence": "Kyle moves forward on his own trajectory, now operating under the terms of the agreement.",
+    "emotional_weight": 4,
+    "tags": [
+      "solitude",
+      "forward motion",
+      "obligation"
+    ],
+    "timestamp": "2026-04-29T00:48:55.1618732Z"
+  },
+  {
+    "id": "019dd6b5",
+    "beat_index": 6,
+    "type": "emotional_shift",
+    "summary": "As Kyle passes the last planter, the hum returns to his sternum, settling with the quality of something returning to its place.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "street north of the courtyard",
+    "object": "brass-colored chrysanthemum planter",
+    "consequence": "Kyle re-enters a baseline internal state, suggesting the encounter had displaced him and he is now re-grounding.",
+    "emotional_weight": 5,
+    "tags": [
+      "interiority",
+      "calm",
+      "return",
+      "embodiment",
+      "implant"
+    ],
+    "timestamp": "2026-04-29T00:48:55.1618737Z"
+  }
+]

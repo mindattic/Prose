@@ -9,7 +9,7 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// Book repository — one JSON file per book under engine/data/books/.
 /// Filename: {bookId}.json. The book record carries the ordered list of ChapterIds;
-/// chapters themselves remain in <see cref="JsonChapterRepository"/> under stories/.
+/// chapters themselves remain in <see cref="JsonChapterRepository"/> under chapters/.
 /// Deletion is non-destructive — the file moves to archives/books/.
 /// </summary>
 public class JsonBookRepository : IBookRepository

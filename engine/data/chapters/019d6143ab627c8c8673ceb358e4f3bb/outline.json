@@ -1,0 +1,304 @@
+{
+  "title": "The Cartography of Uncharted Interfaces",
+  "logline": "A neural calibrator\u0027s suppressed discovery about a patient\u0027s hidden augmentation drags her into a corporate sabotage network along the I-90 Vein, where the cost of documentation is measured in lives.",
+  "theme": "What do we owe the truth we were afraid to tell?",
+  "premise": "Ambrosia Kiptoo-\u010Cavi\u0107 receives a contract that forces them to confront something they\u0027ve been avoiding.\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat.",
+  "characters": [
+    "Ambrosia Kiptoo-\u010Cavi\u0107",
+    "Orsolya Nkemelu-Draghici",
+    "Rorke Vassiliev"
+  ],
+  "acts": [
+    {
+      "act_number": 1,
+      "name": "The Filed Chart",
+      "purpose": "Establish Ambrosia\u0027s professional world, her suppressed secret, and the arrival of a contract that makes avoidance impossible.",
+      "beats": [
+        {
+          "beat_index": 0,
+          "title": "The File She Keeps Returning To",
+          "goal": "Ambrosia finishes a late calibration shift at Aurochs, arranges her instruments with ritual precision, and opens the anomalous patient chart for the seventh time in three months. The dormant secondary interface is still there in the data \u2014 a ghost geography she cannot explain and has not reported. A Helix liaison appears at the ward threshold asking about \u0027integration anomalies flagged for review.\u0027 She deflects with documentation.",
+          "characters_present": [
+            "Ambrosia Kiptoo-\u010Cavi\u0107"
+          ],
+          "location": "Aurochs Medical Complex, neural calibration ward, late shift",
+          "emotional_arc": "The reader feels the specific texture of a secret that has become a habit \u2014 something Ambrosia revisits not to resolve but to confirm is still hers.",
+          "stakes": "Ambrosia\u0027s professional standing; the patient whose chart she suppressed; her belief that her documentation practice makes her honest.",
+          "seeds": [
+            "The anomalous chart \u2014 patient with undocumented secondary augmentation interface",
+            "The Helix liaison\u0027s interest in \u0027integration anomalies\u0027",
+            "Ambrosia\u0027s badge worn off-shift, her instruments arranged in precise order before leaving"
+          ],
+          "payoffs": [],
+          "facet_hint": "mask",
+          "tension": 4
+        },
+        {
+          "beat_index": 1,
+          "title": "The Contract From Nowhere",
+          "goal": "A private calibration contract arrives through Aurochs\u0027 external referral system \u2014 a patient requesting in-home neural assessment along the I-90 Vein corridor, citing transport complications. The fee is significant. The referring physician does not exist in any registry Ambrosia can verify. She documents the discrepancy meticulously, then accepts the contract anyway because the patient\u0027s symptom profile exactly matches the anomaly in the suppressed chart. She takes the transit to the Enclave to collect a piece of specialized portable equipment from a repair contact \u2014 and finds herself in Orsolya\u0027s shop.",
+          "characters_present": [
+            "Ambrosia Kiptoo-\u010Cavi\u0107",
+            "Orsolya Nkemelu-Draghici"
+          ],
+          "location": "Aurochs referral system / Orsolya\u0027s alterations shop, the Enclave",
+          "emotional_arc": "Curiosity edged with the sick recognition that she is walking toward the thing she has been avoiding.",
+          "stakes": "Ambrosia\u0027s professional ethics; the safety of accepting an unverifiable contract; first contact with Orsolya\u0027s information network.",
+          "seeds": [
+            "The nonexistent referring physician",
+            "Orsolya\u0027s observation that Ambrosia\u0027s coat shows someone who sleeps in their office",
+            "Orsolya mentions a man who came through the Enclave two weeks ago asking about Ferrogate infrastructure access points \u2014 he had the posture of someone who maintains things"
+          ],
+          "payoffs": [],
+          "facet_hint": "ideal",
+          "tension": 5
+        }
+      ]
+    },
+    {
+      "act_number": 2,
+      "name": "Load-Bearing Failures",
+      "purpose": "Ambrosia moves toward the patient and the truth; Rorke\u0027s sabotage network and the cooling system deaths enter the story; all three characters converge under pressure they cannot fully see.",
+      "beats": [
+        {
+          "beat_index": 2,
+          "title": "The Patient at the End of the Vein",
+          "goal": "Ambrosia travels the I-90 Vein by rail \u2014 a maglev passage that takes ninety minutes and leaves her ears ringing with ozone and compressed silence. The \u0027patient\u0027 is a young man in a decommissioned Ferrogate relay station just outside the sovereign strip. His neural architecture is unmistakable: he carries the same dormant secondary interface as her suppressed chart patient. He is not sick. He is a courier, and the interface is a dead-drop mechanism. Someone has been using people\u0027s nervous systems as data storage without their knowledge. The young man does not know what he is carrying. Ambrosia\u0027s calibration instruments confirm it in three minutes. She writes everything down.",
+          "characters_present": [
+            "Ambrosia Kiptoo-\u010Cavi\u0107"
+          ],
+          "location": "I-90 Vein, decommissioned Ferrogate relay station near the lakeshore strip",
+          "emotional_arc": "The reader feels the floor drop \u2014 not dramatically but the way a step miscounts in the dark. The horror is technical before it is moral.",
+          "stakes": "The courier\u0027s safety; Ambrosia\u0027s understanding of what she suppressed three months ago; the scale of whatever network is using human nervous systems as infrastructure.",
+          "seeds": [
+            "The dead-drop interface architecture \u2014 someone designed this",
+            "The courier mentions his symptoms began after a \u0027wellness screening\u0027 at a Ferrogate contractor clinic",
+            "A Rail Hound patrol passes outside the relay station at 280 km/h \u2014 the pressure wave shakes the walls"
+          ],
+          "payoffs": [
+            "The anomalous chart \u2014 the suppressed patient was also a courier, not an integration error"
+          ],
+          "facet_hint": "wound",
+          "tension": 6
+        },
+        {
+          "beat_index": 3,
+          "title": "The Man Who Maintains Things",
+          "goal": "Rorke Vassiliev is at the relay station. He was not expecting a neural calibrator. He came to retrieve data from the courier\u0027s interface through standard dead-drop protocol \u2014 a procedure he has run a dozen times without the subject ever being conscious of it. Ambrosia is here with instruments that can read everything he has been doing. They face each other across a room that smells of ozone and lake water, both of them holding information the other cannot afford to have released. Rorke\u0027s composure is extraordinary. Ambrosia\u0027s documentation instinct is the only thing keeping her from running.",
+          "characters_present": [
+            "Ambrosia Kiptoo-\u010Cavi\u0107",
+            "Rorke Vassiliev"
+          ],
+          "location": "I-90 Vein, decommissioned Ferrogate relay station",
+          "emotional_arc": "Controlled mutual threat \u2014 the reader watches two very competent people try to assess each other without revealing how much they already know.",
+          "stakes": "Both characters\u0027 exposure; the courier\u0027s safety; whether Ambrosia\u0027s documentation is an asset or a liability in this moment.",
+          "seeds": [
+            "Rorke\u0027s dead-drop network uses human neural interfaces \u2014 Ambrosia is the only person who could map its full architecture",
+            "Rorke recognizes that Ambrosia has already written everything down and that this is the constraint he must work within",
+            "Ambrosia notices Rorke\u0027s hands \u2014 the posture Orsolya described, someone who maintains things"
+          ],
+          "payoffs": [
+            "Orsolya\u0027s description of the man asking about Ferrogate infrastructure access \u2014 it was Rorke"
+          ],
+          "facet_hint": "shadow",
+          "tension": 7
+        },
+        {
+          "beat_index": 4,
+          "title": "Rail Hounds",
+          "goal": "COMBAT BEAT. Ferrogate surveillance \u2014 triggered by the relay station\u0027s unauthorized power draw \u2014 dispatches two Rail Hound autonomous enforcement platforms into the lakeshore strip. They are not inside the sovereign right-of-way; they are in the narrow band of technically-unowned terrain where the station sits. The Rail Hounds\u0027 mandate does not technically apply here, but the platforms are not interested in jurisdictional nuance. Rorke has prepared for this contingency. He pulls a hardened signal jammer and triggers a coordinated infrastructure fault in the nearest Ferrogate relay tower \u2014 the lights die, the platforms\u0027 coordination network fragments. In the dark and the screaming of disrupted systems, one Rail Hound clips the station wall at speed. The structure partially collapses. The courier is injured. Ambrosia works on him in the dark with her instruments and her hands while Rorke holds the second platform\u0027s sensor array blinded with the jammer. The platform\u0027s chassis rams the doorframe twice before its coordination signal recovers and it withdraws. The withdrawal takes four minutes. They feel like geography.",
+          "characters_present": [
+            "Ambrosia Kiptoo-\u010Cavi\u0107",
+            "Rorke Vassiliev"
+          ],
+          "location": "I-90 Vein, collapsing relay station, lakeshore strip",
+          "emotional_arc": "Fear that is not cinematic \u2014 it is specific, physical, and leaves residue. The reader understands that both characters are shaken in ways they will not immediately name.",
+          "stakes": "The courier\u0027s life; Ambrosia\u0027s and Rorke\u0027s survival; Rorke\u0027s sabotage methodology exposed under pressure; Ambrosia\u0027s clinical distance destroyed by necessity.",
+          "seeds": [
+            "Rorke\u0027s infrastructure fault \u2014 he degraded a Ferrogate relay tower that also serves residential signal in the nearest community",
+            "Ambrosia\u0027s hands on the courier \u2014 she told herself she maintained professional distance, and she did not",
+            "The courier\u0027s interface activates during the chaos, briefly displaying data fragments neither of them was meant to see"
+          ],
+          "payoffs": [
+            "The dead-drop interface architecture \u2014 Ambrosia now understands it completely, having watched it activate"
+          ],
+          "facet_hint": "id",
+          "tension": 9
+        },
+        {
+          "beat_index": 5,
+          "title": "What the Coat Has Been Through",
+          "goal": "They bring the injured courier to Orsolya\u0027s shop in the Enclave \u2014 the only safe address Ambrosia knows in the corridor that isn\u0027t Aurochs. Orsolya makes tea without asking questions. She has already assessed the situation from the state of their clothing. While Ambrosia stabilizes the courier with portable equipment on Orsolya\u0027s worktable \u2014 between bolts of fabric and a half-mended coat \u2014 Rorke tells her the minimum necessary truth about the network. He omits the cooling system deaths. Orsolya listens from the back room, pretending to work, and hears everything. She says nothing yet. She fingers the hem of her own coat.",
+          "characters_present": [
+            "Ambrosia Kiptoo-\u010Cavi\u0107",
+            "Orsolya Nkemelu-Draghici",
+            "Rorke Vassiliev"
+          ],
+          "location": "Orsolya\u0027s alterations shop, the Enclave",
+          "emotional_arc": "Fragile, exhausted intimacy \u2014 three people in a small room with too much knowledge and the temporary warmth of someone making tea for people she doesn\u0027t owe anything to.",
+          "stakes": "The courier\u0027s recovery; how much Ambrosia will share with Rorke about what she knows; whether Orsolya\u0027s shop becomes a safe house and what that costs her.",
+          "seeds": [
+            "Rorke\u0027s omission of the cooling system deaths \u2014 Ambrosia notices the shape of what he isn\u0027t saying",
+            "Orsolya recognizes Rorke\u0027s posture from the man who came asking about Ferrogate access points \u2014 she does not say so yet",
+            "The data fragments from the courier\u0027s interface \u2014 Ambrosia photographed them before the interface went dark"
+          ],
+          "payoffs": [
+            "Orsolya\u0027s description of the man asking about infrastructure \u2014 confirmed as Rorke, whom Orsolya now has in her shop"
+          ],
+          "facet_hint": "ghost",
+          "tension": 6
+        }
+      ]
+    },
+    {
+      "act_number": 3,
+      "name": "The Weight of the Map",
+      "purpose": "Each character confronts what they have been avoiding. The resolution is not clean. The cost is specific.",
+      "beats": [
+        {
+          "beat_index": 6,
+          "title": "The Simulation He Runs",
+          "goal": "Ambrosia confronts Rorke with the data fragments \u2014 she has pieced together enough to know the network is not just information brokerage. She asks, precisely, whether anyone has been hurt by his infrastructure work. Rorke is quiet for a long time. Then he tells her about the cooling system failure. Not as confession \u2014 as technical briefing, the only register he can sustain it in. Two maintenance workers. Unforeseeable. He has run the simulation. Ambrosia listens without softening it for him. She asks what the simulation is for, if he already knows the answer he needs from it. Orsolya, from the doorway, says: \u0027A seam that keeps tearing is not a seam problem. It\u0027s a pattern problem.\u0027",
+          "characters_present": [
+            "Ambrosia Kiptoo-\u010Cavi\u0107",
+            "Orsolya Nkemelu-Draghici",
+            "Rorke Vassiliev"
+          ],
+          "location": "Orsolya\u0027s alterations shop, the Enclave, early morning",
+          "emotional_arc": "The particular weight of a truth that doesn\u0027t exonerate \u2014 the reader feels Rorke\u0027s architecture of self-justification develop its first structural crack.",
+          "stakes": "Rorke\u0027s moral reckoning; whether Ambrosia can work with someone whose methods have caused the deaths she spends her career trying to prevent; whether the network continues.",
+          "seeds": [
+            "Ambrosia\u0027s decision about whether to document what Rorke has told her \u2014 and what filing that chart would mean",
+            "Orsolya\u0027s pattern comment \u2014 she is speaking about herself as much as Rorke"
+          ],
+          "payoffs": [
+            "Rorke\u0027s cooling system secret \u2014 surfaced, named, not resolved",
+            "Ambrosia\u0027s blind spot about patient subjective accounts \u2014 the courier\u0027s experience was the data she needed, not her calibration instruments"
+          ],
+          "facet_hint": "wound",
+          "tension": 8
+        },
+        {
+          "beat_index": 7,
+          "title": "The Chart She Files",
+          "goal": "Ambrosia writes up the full case: the suppressed chart, the courier network, the dormant interfaces, the data fragments, the Rail Hound incident. She produces the most complete documentation of her career. Then she makes the decision she has been circling for three months: she does not file it with Aurochs. She does not give it to the Helix liaison. She gives the technical architecture of the interface design \u2014 stripped of patient identifiers \u2014 to the activist network through Rorke\u0027s dead-drop system, using the courier\u0027s recovered contact chain. The Helix liaison receives a formal notification that the original anomalous chart contained a documentation error and has been corrected. Orsolya alters the courier\u0027s coat to conceal the interface scar. Rorke leaves the Enclave before dawn. Ambrosia clips her badge to her lapel and takes the rail back to Aurochs. The maglev passage takes ninety minutes. She watches the lake through the window \u2014 the oldest thing in the corridor, entirely indifferent to what she has just done.",
+          "characters_present": [
+            "Ambrosia Kiptoo-\u010Cavi\u0107",
+            "Orsolya Nkemelu-Draghici",
+            "Rorke Vassiliev"
+          ],
+          "location": "Orsolya\u0027s alterations shop / I-90 Vein maglev / Aurochs Medical Complex",
+          "emotional_arc": "Not triumph. The moral aftertaste of a choice that cannot be taken back \u2014 Ambrosia has crossed the line she was afraid she\u0027d already crossed, deliberately, with full documentation of the crossing.",
+          "stakes": "Ambrosia\u0027s career and safety; the courier network\u0027s exposure risk; whether Rorke\u0027s sabotage continues with or without the deaths accounted for; what Orsolya carries forward.",
+          "seeds": [],
+          "payoffs": [
+            "The Helix liaison\u0027s interest in integration anomalies \u2014 redirected with a false correction",
+            "Ambrosia\u0027s badge worn off-shift \u2014 she clips it on as armor, not identity, for the first time knowing the difference",
+            "Orsolya\u0027s desire to leave something behind \u2014 the courier\u0027s coat, altered to protect him, is the most anonymous act of care she has performed since the food credits",
+            "Rorke\u0027s desire to do something that cannot be undone \u2014 the network now has the interface architecture, and he did not deliver it alone",
+            "The nonexistent referring physician \u2014 Rorke built the contract to find someone who could read the interfaces; he found Ambrosia instead of someone manageable"
+          ],
+          "facet_hint": "ideal",
+          "tension": 7
+        }
+      ]
+    }
+  ],
+  "character_arcs": [
+    {
+      "character": "Ambrosia Kiptoo-\u010Cavi\u0107",
+      "start_state": "A meticulous professional who uses documentation as a substitute for action, suppressing a significant finding because she is frightened of what it implies, and dismissing patient experience as less reliable than her own data.",
+      "end_state": "Someone who has made a deliberate, irreversible choice to withhold information from her institution \u2014 not from fear this time, but from understanding. She has crossed the line she feared she\u0027d already crossed, and she crossed it knowingly, with full records of the crossing.",
+      "turning_point": "Working on the courier in the dark during the Rail Hound attack \u2014 her hands on a patient she cannot maintain clinical distance from, her instruments reading an interface she already knew existed and suppressed.",
+      "cost": "Her belief that documentation makes her honest. She now knows it only makes her thorough."
+    },
+    {
+      "character": "Orsolya Nkemelu-Draghici",
+      "start_state": "A woman who has spent twenty years making small anonymous reparations for a single act of harm, believing that useful quiet work is enough \u2014 that presence without confession is a form of integrity.",
+      "end_state": "She has sheltered fugitives, heard a man confess to deaths he caused, and altered a coat to hide evidence. She has not resolved her own secret. But she has recognized, in Rorke\u0027s simulation-running, the shape of her own pattern \u2014 and named it aloud to someone else.",
+      "turning_point": "The moment she says \u0027A seam that keeps tearing is not a seam problem. It\u0027s a pattern problem.\u0027 \u2014 speaking to Rorke and hearing herself.",
+      "cost": "The shop\u0027s safety. She has made it a node in something larger than alterations, and she knows Tessera\u0027s surveillance does not distinguish."
+    },
+    {
+      "character": "Rorke Vassiliev",
+      "start_state": "A man who has constructed his entire identity around controlled, invisible action \u2014 who runs a simulation about the deaths he caused not to answer the question but to keep asking it at a safe distance, and who has denied himself connection to the people his work is meant to serve.",
+      "end_state": "He has told the truth about the cooling system deaths to someone who did not offer him absolution. He has completed a dead-drop delivery in the presence of the person who received it \u2014 not anonymous, not controlled. The mask did not fully hold. He left before dawn because staying would have required him to be known further.",
+      "turning_point": "Ambrosia asking what the simulation is for, if he already knows the answer he needs from it. He does not have a technical answer.",
+      "cost": "The operational certainty of working alone. Ambrosia has seen the architecture. He cannot undo that."
+    }
+  ],
+  "seeds_and_payoffs": [
+    {
+      "seed": "The anomalous patient chart \u2014 a secondary dormant augmentation interface not on any medical record",
+      "planted_in_beat": 0,
+      "payoff": "The suppressed patient was also a courier; the interface was a dead-drop mechanism, not an integration error",
+      "payoff_in_beat": 2
+    },
+    {
+      "seed": "The Helix liaison\u0027s interest in \u0027integration anomalies flagged for review\u0027",
+      "planted_in_beat": 0,
+      "payoff": "Ambrosia files a false correction to the anomalous chart, redirecting the Helix liaison away from the courier network",
+      "payoff_in_beat": 7
+    },
+    {
+      "seed": "Orsolya\u0027s description of a man who came through the Enclave asking about Ferrogate infrastructure access points \u2014 he had the posture of someone who maintains things",
+      "planted_in_beat": 1,
+      "payoff": "Ambrosia recognizes Rorke\u0027s hands and posture at the relay station; Orsolya confirms the identification when they arrive at her shop",
+      "payoff_in_beat": 5
+    },
+    {
+      "seed": "The nonexistent referring physician on Ambrosia\u0027s contract",
+      "planted_in_beat": 1,
+      "payoff": "Rorke built the contract specifically to find someone capable of reading the dormant interfaces \u2014 he found Ambrosia, who is more than he planned for",
+      "payoff_in_beat": 7
+    },
+    {
+      "seed": "The dead-drop interface architecture \u2014 someone designed this system",
+      "planted_in_beat": 2,
+      "payoff": "Ambrosia provides the full technical architecture to the activist network, stripping patient identifiers \u2014 the network now has what Rorke has been trying to deliver",
+      "payoff_in_beat": 7
+    },
+    {
+      "seed": "The courier\u0027s interface activating during the Rail Hound attack, displaying data fragments",
+      "planted_in_beat": 4,
+      "payoff": "Ambrosia photographed the fragments; they allow her to reconstruct enough of the network to confront Rorke with specific knowledge rather than suspicion",
+      "payoff_in_beat": 6
+    },
+    {
+      "seed": "Rorke\u0027s infrastructure fault during the Rail Hound attack \u2014 degrading a relay tower that also serves residential signal",
+      "planted_in_beat": 4,
+      "payoff": "Named as part of Ambrosia\u0027s confrontation \u2014 the pattern of harm that is \u0027unforeseeable\u0027 until it repeats",
+      "payoff_in_beat": 6
+    },
+    {
+      "seed": "Rorke\u0027s cooling system deaths \u2014 two maintenance workers, not Spire executives",
+      "planted_in_beat": 3,
+      "payoff": "Rorke tells Ambrosia about the deaths as technical briefing; she asks what the simulation is for, fracturing his architecture of self-justification",
+      "payoff_in_beat": 6
+    },
+    {
+      "seed": "Ambrosia\u0027s badge worn off-shift as though she is afraid of forgetting who she is supposed to be",
+      "planted_in_beat": 0,
+      "payoff": "She clips the badge on for the rail ride back to Aurochs \u2014 now understanding it as armor she chooses, not identity she clings to",
+      "payoff_in_beat": 7
+    },
+    {
+      "seed": "Ambrosia\u0027s assumption that patient subjective accounts are less reliable than calibration data",
+      "planted_in_beat": 0,
+      "payoff": "The courier\u0027s experience of his own symptoms was the map she needed \u2014 her instruments only confirmed what he had already described",
+      "payoff_in_beat": 6
+    },
+    {
+      "seed": "Orsolya\u0027s desire to leave something behind that outlasts her",
+      "planted_in_beat": 1,
+      "payoff": "She alters the courier\u0027s coat to conceal the interface scar \u2014 the most anonymous act of protection she has offered since the food credits, and the first she has witnessed being received",
+      "payoff_in_beat": 7
+    },
+    {
+      "seed": "Orsolya\u0027s pattern comment \u2014 \u0027A seam that keeps tearing is not a seam problem. It\u0027s a pattern problem.\u0027",
+      "planted_in_beat": 6,
+      "payoff": "Orsolya fingers the hem of her own coat after saying it \u2014 she is speaking about herself; the reader understands she has not resolved her twenty-year secret but has named its shape",
+      "payoff_in_beat": 7
+    }
+  ]
+}

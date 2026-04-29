@@ -1,0 +1,249 @@
+[
+  {
+    "id": "019dd4d2",
+    "beat_index": 2,
+    "type": "injury",
+    "summary": "He hits the water back-first, suffers system shock, and is carried by the current until his shoulder finds a slope and he stops moving.",
+    "participants": [
+      "unnamed protagonist"
+    ],
+    "location": "underground tunnel / waterway",
+    "object": "",
+    "consequence": "He is alive and begins assessing his condition; establishes the six-second survival benchmark logged by the NeoCortex",
+    "emotional_weight": 6,
+    "tags": [
+      "survival",
+      "violence",
+      "endurance",
+      "body horror"
+    ],
+    "timestamp": "2026-04-28T16:00:32.6145313Z"
+  },
+  {
+    "id": "019dd4d2",
+    "beat_index": 2,
+    "type": "discovery",
+    "summary": "He takes inventory and discovers the left cauterizer band seal is intact but weeping, confirming his severed hands are preserved in a chum barrel six meters above.",
+    "participants": [
+      "unnamed protagonist"
+    ],
+    "location": "underground tunnel",
+    "object": "cauterizer bands / EMT-spec nerve preservation bands",
+    "consequence": "Establishes the fourteen-hour tissue window and the reattachment math; frames the entire night as a timed survival problem",
+    "emotional_weight": 8,
+    "tags": [
+      "body horror",
+      "punishment",
+      "survival",
+      "clock",
+      "Syndicate"
+    ],
+    "timestamp": "2026-04-28T16:00:32.6145622Z"
+  },
+  {
+    "id": "019dd4d2",
+    "beat_index": 2,
+    "type": "revelation",
+    "summary": "He deduces that the Lotus Syndicate used civilian-rated EMT bands not out of mercy but to ensure the hands survive for reattachment, making the suffering the point of the punishment.",
+    "participants": [
+      "unnamed protagonist",
+      "Lotus Syndicate"
+    ],
+    "location": "underground tunnel",
+    "object": "cauterizer bands",
+    "consequence": "Reframes the punishment as deliberately prolonged and survivable by design; deepens the antagonist\u0027s menace",
+    "emotional_weight": 9,
+    "tags": [
+      "betrayal",
+      "cruelty",
+      "power",
+      "Syndicate",
+      "punishment",
+      "revelation"
+    ],
+    "timestamp": "2026-04-28T16:00:32.6145634Z"
+  },
+  {
+    "id": "019dd4d2",
+    "beat_index": 2,
+    "type": "action",
+    "summary": "He rolls onto his side, gets his knees under him, and walks himself upright using the tunnel wall as support.",
+    "participants": [
+      "unnamed protagonist"
+    ],
+    "location": "underground tunnel",
+    "object": "",
+    "consequence": "Restores mobility and enables continued movement through the tunnel",
+    "emotional_weight": 4,
+    "tags": [
+      "survival",
+      "endurance",
+      "resilience"
+    ],
+    "timestamp": "2026-04-28T16:00:32.6145637Z"
+  },
+  {
+    "id": "019dd4d2",
+    "beat_index": 2,
+    "type": "discovery",
+    "summary": "The NeoCortex\u0027s thermal trace detects multiple warm, multi-jointed, non-human biological signatures approaching from the south.",
+    "participants": [
+      "unnamed protagonist"
+    ],
+    "location": "underground tunnel",
+    "object": "NeoCortex / optic thread thermal system",
+    "consequence": "Introduces an immediate physical threat and forces a directional decision",
+    "emotional_weight": 7,
+    "tags": [
+      "threat",
+      "danger",
+      "survival",
+      "unknown",
+      "technology"
+    ],
+    "timestamp": "2026-04-28T16:00:32.6145641Z"
+  },
+  {
+    "id": "019dd4d2",
+    "beat_index": 2,
+    "type": "emotional_shift",
+    "summary": "The word \u0027First\u0027 surfaces in his mind with the shape of a table, a hand on a saya, and something already appraised \u2014 a memory or grief he consciously files away rather than suppresses.",
+    "participants": [
+      "unnamed protagonist"
+    ],
+    "location": "underground tunnel",
+    "object": "saya",
+    "consequence": "Hints at a prior relationship or loss connected to the severed hands; establishes an internal emotional cost running beneath the survival logic",
+    "emotional_weight": 10,
+    "tags": [
+      "grief",
+      "loss",
+      "tenderness",
+      "suppression",
+      "memory",
+      "cost"
+    ],
+    "timestamp": "2026-04-28T16:00:32.6145646Z"
+  },
+  {
+    "id": "019dd4d2",
+    "beat_index": 2,
+    "type": "decision",
+    "summary": "He turns north, away from the approaching non-human signatures, moving deeper into the dark.",
+    "participants": [
+      "unnamed protagonist"
+    ],
+    "location": "underground tunnel",
+    "object": "",
+    "consequence": "Sets the direction of his escape and avoids immediate confrontation with the unknown biological threat",
+    "emotional_weight": 5,
+    "tags": [
+      "survival",
+      "evasion",
+      "choice",
+      "danger"
+    ],
+    "timestamp": "2026-04-28T16:00:32.6145649Z"
+  },
+  {
+    "id": "019dd4d3",
+    "beat_index": 3,
+    "type": "discovery",
+    "summary": "Kyle detects an unidentified 19Hz frequency through the ferrocrete that his NeoCortex cannot classify, indicating something older than the facility\u0027s survey records.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "underground drainage channel",
+    "object": "NeoCortex",
+    "consequence": "Kyle moves toward the source, initiating the chain of discovery",
+    "emotional_weight": 3,
+    "tags": [
+      "mystery",
+      "technology",
+      "instinct"
+    ],
+    "timestamp": "2026-04-28T16:02:18.0513127Z"
+  },
+  {
+    "id": "019dd4d3",
+    "beat_index": 3,
+    "type": "discovery",
+    "summary": "Kyle finds a partially buried, heavily corroded industrial loader automaton with a still-cycling amber LED indicating residual trickle current.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "underground drainage channel, east wall",
+    "object": "industrial loader automaton",
+    "consequence": "Reveals the automaton has been abandoned for approximately eighteen years but retains functional actuator firmware",
+    "emotional_weight": 4,
+    "tags": [
+      "salvage",
+      "decay",
+      "technology",
+      "remnants"
+    ],
+    "timestamp": "2026-04-28T16:02:18.0513135Z"
+  },
+  {
+    "id": "019dd4d3",
+    "beat_index": 3,
+    "type": "revelation",
+    "summary": "Kyle recognizes that the automaton\u0027s manipulator interface uses an Axiom industrial bus compatible with undocumented modifications made eleven years ago at a facility he refuses to name aloud.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "underground drainage channel",
+    "object": "Axiom industrial bus coupling",
+    "consequence": "Kyle realizes he can interface with the arm, triggering suppressed memories of the unnamed facility",
+    "emotional_weight": 8,
+    "tags": [
+      "recognition",
+      "buried past",
+      "technology",
+      "secrecy",
+      "trauma"
+    ],
+    "timestamp": "2026-04-28T16:02:18.0513138Z"
+  },
+  {
+    "id": "019dd4d3",
+    "beat_index": 3,
+    "type": "emotional_shift",
+    "summary": "Kyle\u0027s NeoCortex surfaces a retrieval procedure unprompted and Kyle experiences a moment of certain recognition, concluding \u0027This is going to work.\u0027",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "underground drainage channel",
+    "object": "NeoCortex",
+    "consequence": "Kyle commits to salvaging the arm, moving from observation to action",
+    "emotional_weight": 6,
+    "tags": [
+      "resolve",
+      "recognition",
+      "technology",
+      "memory"
+    ],
+    "timestamp": "2026-04-28T16:02:18.051314Z"
+  },
+  {
+    "id": "019dd4d3",
+    "beat_index": 3,
+    "type": "action",
+    "summary": "Kyle turns his back to the automaton and presses his left stump against the posterior shoulder plate to begin separating the arm at the rotator coupling.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "underground drainage channel",
+    "object": "industrial loader automaton arm",
+    "consequence": "Initiates physical salvage of the arm, implying Kyle himself has a prosthetic or modified left limb suited to this interface",
+    "emotional_weight": 7,
+    "tags": [
+      "salvage",
+      "body horror",
+      "adaptation",
+      "technology",
+      "physicality"
+    ],
+    "timestamp": "2026-04-28T16:02:18.0513147Z"
+  }
+]

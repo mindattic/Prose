@@ -251,7 +251,7 @@ public class OutlineReviewService
     /// </summary>
     public void Save(string projectId, OutlineReviewResult result)
     {
-        var path = StoryFolderHelper.GetFilePath(paths.StoriesDir, projectId, "outline_review.json");
+        var path = StoryFolderHelper.GetFilePath(paths.ChaptersDir, projectId, "outline_review.json");
         File.WriteAllText(path, JsonSerializer.Serialize(result, JsonDefaults.Indented));
     }
 
@@ -262,7 +262,7 @@ public class OutlineReviewService
     /// </summary>
     private string LoadKnownFailurePatterns()
     {
-        var path = Path.Combine(paths.StoriesDir, "quality_patterns.json");
+        var path = Path.Combine(paths.ChaptersDir, "quality_patterns.json");
         if (!File.Exists(path)) return "";
 
         try

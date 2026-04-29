@@ -23,7 +23,7 @@ public interface IPathProvider
     /// </summary>
     string MutableDataDir { get; }
 
-    string StoriesDir { get; }
+    string ChaptersDir { get; }
     string BooksDir { get; }
     string SeriesDir { get; }
     string GraphDir { get; }

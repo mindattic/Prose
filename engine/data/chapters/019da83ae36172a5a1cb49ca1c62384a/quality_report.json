@@ -1,0 +1,164 @@
+{
+  "project_id": "019da83ae36172a5a1cb49ca1c62384a",
+  "title": "The Last Chair",
+  "evaluated_at": "2026-04-20T01:00:22.6669682Z",
+  "aggregate_scores": {
+    "VOICE": 9,
+    "MORAL_COMPLEXITY": 8.333333333333334,
+    "PACING": 8,
+    "CHARACTER_AUTHENTICITY": 9.166666666666666,
+    "WORLD_SPECIFICITY": 9.5,
+    "CLICHE_AVOIDANCE": 8.5,
+    "DIALOGUE_QUALITY": 8.833333333333334,
+    "OVERALL": 8.761904761904763
+  },
+  "consensus_strengths": [],
+  "all_failures": [
+    "Voice sustains across all beats without breaking register: \u0027The word voluntary was doing a great deal of work in that sentence.\u0027",
+    "The log ritual \u2014 \u0027The shop is still here\u0027 \u2014 is planted in Beat 1 and pays off structurally in Beat 8 without being underlined.",
+    "Mehdi\u0027s characterization through action rather than exposition: \u0027Scan, pass, redirect, scan\u0027 \u2014 her competence is shown in the geometry of her shift before she speaks a word.",
+    "The thrumline as physical world-texture: \u00278 Hz shiver that the long-timers stopped noticing and the newcomers never stopped mentioning\u0027 \u2014 specific, embodied, not decorative.",
+    "Dialogue uses naming as characterization correctly: Remi says \u0027heritage corridor consolidation\u0027 with the weight of someone who has watched it work before; the document language is treated as a weapon.",
+    "The moral inversion of Beat 7 is earned: Echo\u0027s real reason for refusing to sell is not nobility but grief, and the story does not redeem this \u2014 \u0027He says this once, clearly, and then does not say anything else for a long time.\u0027",
+    "The courier characterization is precise and humane: \u0027the careful posture of someone who had been told what this job was before they understood what this job was\u0027 \u2014 implicates the system without demonizing the individual.",
+    "Gray Zone atmospheric detail is specific and consistent: \u0027weak, watered-down Gray Zone light, the kind the atmospheric processors left over after they\u0027d skimmed the good wavelengths for the Spires.\u0027",
+    "The combat beat (Beat 6) resolves through a bluff that works \u2014 contractors retreat when Mehdi activates her incident-record function \u2014 which is structurally cleaner than the world warrants. The Gray Zone is established as a space where documentation goes nowhere; having it function as a deterrent, even a temporary one, softens the world\u0027s established logic.",
+    "Beat 8\u0027s distributed-truth gambit (\u0027distributed truth is harder to erase than silence\u0027) risks genre-optimism clich\u00E9 \u2014 the idea that getting the story out there constitutes meaningful resistance is a familiar noir failure mode, and the story does not fully interrogate whether it believes this."
+  ],
+  "all_cliches_found": [],
+  "improvement_directives": [
+    "Revise the Beat 8 resolution to introduce a cost or complication that undercuts the distributed-truth gambit, ensuring the ending lands as pyrrhic or ambiguous rather than procedurally optimistic",
+    "Deepen Yusuf\u0027s moral complexity by adding a scene or line of dialogue that reveals his personal stake in the demolition project, blurring the antagonist dynamic further beyond his structural role as a compliance analyst",
+    "Audit interior monologue passages in the early beats and trim or externalize overly reflective sections to prevent pacing from stalling before the confrontation builds momentum",
+    "Standardize world-building currency and tier references by weaving \u03A6 pricing and corponation tier language into at least two additional beats where they are currently absent, matching the texture already established with Tessera and the Glooms",
+    "Reexamine the Beat 6 combat sequence and introduce an unresolved consequence\u2014physical, relational, or informational\u2014that carries forward into Beat 7, preventing the revelation from feeling like earned catharsis rather than noir inevitability"
+  ],
+  "weakest_dimension": "PACING",
+  "individual_votes": [
+    {
+      "provider": "claude",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 8,
+        "PACING": 8,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 8,
+        "CLICHE_AVOIDANCE": 7,
+        "DIALOGUE_QUALITY": 9
+      },
+      "overall_score": 8,
+      "strengths": [],
+      "failures": [
+        "Voice sustains across all beats without breaking register: \u0027The word voluntary was doing a great deal of work in that sentence.\u0027",
+        "The log ritual \u2014 \u0027The shop is still here\u0027 \u2014 is planted in Beat 1 and pays off structurally in Beat 8 without being underlined.",
+        "Mehdi\u0027s characterization through action rather than exposition: \u0027Scan, pass, redirect, scan\u0027 \u2014 her competence is shown in the geometry of her shift before she speaks a word.",
+        "The thrumline as physical world-texture: \u00278 Hz shiver that the long-timers stopped noticing and the newcomers never stopped mentioning\u0027 \u2014 specific, embodied, not decorative.",
+        "Dialogue uses naming as characterization correctly: Remi says \u0027heritage corridor consolidation\u0027 with the weight of someone who has watched it work before; the document language is treated as a weapon.",
+        "The moral inversion of Beat 7 is earned: Echo\u0027s real reason for refusing to sell is not nobility but grief, and the story does not redeem this \u2014 \u0027He says this once, clearly, and then does not say anything else for a long time.\u0027",
+        "The courier characterization is precise and humane: \u0027the careful posture of someone who had been told what this job was before they understood what this job was\u0027 \u2014 implicates the system without demonizing the individual.",
+        "Gray Zone atmospheric detail is specific and consistent: \u0027weak, watered-down Gray Zone light, the kind the atmospheric processors left over after they\u0027d skimmed the good wavelengths for the Spires.\u0027",
+        "The combat beat (Beat 6) resolves through a bluff that works \u2014 contractors retreat when Mehdi activates her incident-record function \u2014 which is structurally cleaner than the world warrants. The Gray Zone is established as a space where documentation goes nowhere; having it function as a deterrent, even a temporary one, softens the world\u0027s established logic.",
+        "Beat 8\u0027s distributed-truth gambit (\u0027distributed truth is harder to erase than silence\u0027) risks genre-optimism clich\u00E9 \u2014 the idea that getting the story out there constitutes meaningful resistance is a familiar noir failure mode, and the story does not fully interrogate whether it believes this."
+      ],
+      "cliches_found": [],
+      "best_moment": "Beat 7\u0027s revelation, as outlined: Echo discloses that he has been keeping the shop not for the neighborhood but as the last place his son knew him \u2014 and that son is now a Tessera compliance analyst on the demolition project. The outline renders this with the correct restraint: \u0027He says this once, clearly, and then does not say anything else for a long time.\u0027 The moral cost is total. There is no version of this where Echo is right. The shop is a monument to a relationship that no longer exists in the form he is preserving it, and the act of preservation is now actively harming the neighborhood he has used as his stated justification. This is the story\u0027s genuine noir core.",
+      "worst_moment": "The boy on the curb, introduced in Beat 1 with \u0027Now \u2014\u0027 and returned to at the end of Beat 2 with the same italicized interruption, functions as a structural tease that the provided text does not resolve. The repetition of \u0027Now \u2014\u0027 signals that the boy is meant to carry weight, but without resolution the device reads as a withholding clich\u00E9 \u2014 the mysterious figure whose identity is being saved for a reveal. If the boy is Yusuf, the coincidence of his appearing on the morning of the compliance notice strains credibility and reduces the moral complexity of Beat 7 to a more conventional reunion structure.",
+      "improvement_directive": "Commit to the world\u0027s established pessimism in the resolution: the distributed-truth gambit and the incident footage submission in Beat 8 should feel like acts of defiance that the characters themselves do not believe will work, not procedural steps toward justice \u2014 the sixty-day clock should feel heavier at the end than at the beginning, not lighter, and Echo opening the shop should read as an act of grief rather than resistance."
+    },
+    {
+      "provider": "openai",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 8,
+        "PACING": 8,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 10,
+        "CLICHE_AVOIDANCE": 9,
+        "DIALOGUE_QUALITY": 9
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "The tense confrontation in the shop where Echo stands alone against Tessera contractors, holding scissors as a weapon, and Mehdi\u0027s arrival with tactical eye footage bluffs them into retreat \u2014 a vivid, character-driven climax that encapsulates the story\u0027s stakes and atmosphere.",
+      "worst_moment": "The internal reflection on the \u0027heritage corridor consolidation\u0027 language, while necessary, feels slightly expository and could be more integrated into character interaction to maintain momentum.",
+      "improvement_directive": "Integrate world-building exposition more seamlessly into character interactions and scenes to maintain narrative momentum without sacrificing clarity."
+    },
+    {
+      "provider": "deepseek",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 8,
+        "PACING": 7,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 10,
+        "CLICHE_AVOIDANCE": 9,
+        "DIALOGUE_QUALITY": 9
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "The revelation in Beat 7: \u0027The shop is the last place Yusuf knew him. He has been keeping it for a ghost of a twelve-year-old boy who is now a Tessera compliance analyst working the project that will demolish it.\u0027 This moment transforms the conflict from external to internal with devastating emotional precision.",
+      "worst_moment": "The truncated combat beat description feels slightly less distinctive than the rest of the prose, though this may be due to the excerpt being cut off.",
+      "improvement_directive": "Consider slightly tightening the ritual descriptions in the opening beats to bring the central threat into sharper focus earlier, while preserving the atmospheric depth that makes the story so distinctive."
+    },
+    {
+      "provider": "mistral",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 10,
+        "PACING": 9,
+        "CHARACTER_AUTHENTICITY": 10,
+        "WORLD_SPECIFICITY": 10,
+        "CLICHE_AVOIDANCE": 9,
+        "DIALOGUE_QUALITY": 9
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "Echo\u2019s confession in Beat 7: *\u0027The shop is the last place Yusuf knew him. He has been keeping it for a ghost of a twelve-year-old boy who is now a Tessera compliance analyst working the project that will demolish it.\u0027* The line is devastating in its specificity and moral weight, tying the personal to the systemic with no easy answers.",
+      "worst_moment": "The description of the boy on the curb: *\u0027No overlay glow. No neural indicator light at the temple. Nothing.\u0027* While evocative, the moment risks feeling like a trope (the \u0027pure\u0027 child in a cyberpunk world) without further development or payoff.",
+      "improvement_directive": "Clarify the Chair\u2019s scar\u2014either as a relic of Yusuf\u2019s last haircut or another loss entirely. This would sharpen the story\u2019s emotional core and reinforce the theme of tending to the dead while the living demand action."
+    },
+    {
+      "provider": "xai",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 8,
+        "PACING": 7,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 9,
+        "CLICHE_AVOIDANCE": 8,
+        "DIALOGUE_QUALITY": 8
+      },
+      "overall_score": 8,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "In Beat 7, Echo reveals his true reason for keeping the shop: \u0027The shop is the last place Yusuf knew him,\u0027 highlighting the emotional core and moral weight of his attachment.",
+      "worst_moment": "The story\u0027s truncation mid-sentence in the full text, such as \u0027The tail was flat against his hip, pressed there by his own hand, and h\u0027, leaves the narrative feeling incomplete and disrupts the building tension.",
+      "improvement_directive": "Fully develop and complete the story to ensure all beats are fleshed out, avoiding abrupt endings and enhancing the tension curve for a more satisfying resolution."
+    },
+    {
+      "provider": "groq",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 8,
+        "PACING": 9,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 10,
+        "CLICHE_AVOIDANCE": 9,
+        "DIALOGUE_QUALITY": 9
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "The revelation that the document is a predicate document, designed to look like negotiation but actually a precursor to demolition, is a masterful plot twist that raises the stakes and creates tension.",
+      "worst_moment": "The story\u0027s truncated nature means that some plot threads and character arcs are not fully resolved, which may leave readers feeling unsatisfied.",
+      "improvement_directive": "To further enhance the story, consider adding more nuance to the moral themes and character motivations, and explore the consequences of Echo\u0027s decisions in more depth."
+    }
+  ]
+}

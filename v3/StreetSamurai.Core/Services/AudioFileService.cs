@@ -16,7 +16,7 @@ public class AudioFileService : IAudioFileService
     {
         get
         {
-            var dir = Path.Combine(Path.GetDirectoryName(paths.StoriesDir)!, Constants.Folders.Audio);
+            var dir = Path.Combine(Path.GetDirectoryName(paths.ChaptersDir)!, Constants.Folders.Audio);
             Directory.CreateDirectory(dir);
             return dir;
         }

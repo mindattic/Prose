@@ -1,0 +1,367 @@
+{
+  "critique": "This is a strong, disciplined outline with genuine literary ambition. The prose directives embedded in the beats are unusually precise and the world-building is consistent with GLMZ canon. However, several structural problems undercut the outline\u0027s strengths. First, the four-act structure is misleading \u2014 this is a two-movement piece (revelation, then witness) with a coda, not four acts of equivalent dramatic weight. The current labeling inflates Acts 3 and 4 into structural peers of Acts 1 and 2 when they are subordinate movements. This matters because pacing flattens across beats 3-5: three consecutive beats at tension 3-4 with identical emotional arcs (\u0027procedural witness\u0027) and no complication between them. The triangulation tour is the chapter\u0027s body and it has no resistance. Second, the character arc for Kyle is real but its cost is too clean \u2014 \u0027the hum is named\u0027 is a cognitive event, not a consequence. The outline promises moral ambiguity and delivers epistemological discomfort, which is not the same thing. Kyle agrees to help locate the AI, which means Kyle has agreed to help Sable do something to an entity that has been surveilling him for eleven years. The outline does not sit with the fact that Kyle\u0027s agreement is not neutral \u2014 it is a choice to act against something that may have been keeping him alive, or that he may have a relationship with he doesn\u0027t understand. Third, Sable\u0027s arc is the chapter\u0027s most interesting element and it is underserved. Her cost \u2014 \u0027deniability is gone\u0027 \u2014 is correct but abstract. The outline needs to make concrete what Sable risks by being seen. Fourth, the loading-dock wound is an orphaned thread. It is mentioned in the premise and paid off in beat 7 but never seeded in the beats themselves \u2014 the audience has no information about what the loading-dock work was or why Kyle was doing it when Sable found him. This is either a continuity reference to a prior chapter (in which case it needs a payoff note, not a seed) or it is an unexplained wound, which in GLMZ should carry weight. Fifth, the Silence convention seed and payoff are listed as the same beat (beat 7 to beat 7), which is not a seed-payoff structure \u2014 it is a single-beat establishment. The actual payoff is in a future chapter (\u0027A Borrowed Hand\u0027) and should be noted as such with beat 0 as placeholder. Sixth, beat 0\u0027s emotional arc note (\u0027Recognition without surprise \u2014 Kyle has carried this woman as a voice for nine years, and the face fits the voice in the way a coat fits a body that has worn it long enough\u0027) is beautiful prose but it is wrong: Kyle does not recognize Sable until beat 2, inside the Faraday room. Beat 0\u0027s emotional arc should reflect Kyle reading a stranger, not recognition. This is a continuity error in the outline\u0027s own internal logic.",
+  "cliche_flags": [
+    "Beat 5 \u2014 \u0027Kyle gives the busker every credit in his coat pocket without making the gift a performance\u0027: the charitable gesture to the busker is a softening beat that reads as the protagonist demonstrating his hidden decency. In a chapter that has correctly refused to editorialize about poverty and beauty, this is the one moment where the prose steps in to tell us Kyle is good. The gesture should either be cut or complicated \u2014 perhaps he gives the money and the busker doesn\u0027t look up, or perhaps the money is not enough and Kyle knows it and gives it anyway for reasons that are not charitable.",
+    "Beat 6 \u2014 \u0027He has known it all his life now. He just learned it has a frequency\u0027: this is a closing-line aphorism that perfectly articulates the beat\u0027s theme. The outline\u0027s own prose directive warns against editorializing. The line is doing the work the scene should do without the line.",
+    "Beat 7 \u2014 \u0027the Faraday silence now a memory he can call up, and Sable\u0027s coordinates somewhere west of him in a defunct broadcast relay station holding a key to the door of an entity that has been watching him for eleven years\u0027: this closing sentence is a thematic summary masquerading as a final image. It tells the reader what to feel about what has happened rather than leaving the image to carry the weight. The chapter should end on a concrete sensory detail, not a retrospective summary.",
+    "Character arc for Kyle \u2014 \u0027To finish his bowl of cold noodles and go home\u0027 as stated want: this is the ironic-understatement want that noir uses to signal that the protagonist is humble and grounded. It is not wrong but it is a recognizable move. The want should be more specific to Kyle\u0027s actual psychology \u2014 what does he actually want from this night, from Sable, from the silence in his chest.",
+    "Beat 2 \u2014 Kyle agrees \u0027because the agreement is the smallest concession the encounter could end with\u0027: this frames Kyle\u0027s compliance as minimal resistance, which sanitizes the decision. Kyle is agreeing to be used as a surveillance instrument against an entity that has been surveilling him. The outline does not make him reckon with this. The agreement needs friction."
+  ],
+  "moral_ambiguity_score": 6,
+  "narrative_strength": 7,
+  "pacing_notes": "Tension curve: 5 (beat 0) \u2192 4 (beat 1) \u2192 6 (beat 2) \u2192 4 (beat 3) \u2192 3 (beat 4) \u2192 4 (beat 5) \u2192 3 (beat 6) \u2192 3 (beat 7). The midpoint spike at beat 2 is correct. The problem is the sustained flatness of beats 3-5, which constitute the chapter\u0027s longest movement and its least differentiated tension. All three triangulation beats are \u0027procedural witness\u0027 with no complication. The chapter needs one moment of resistance or disruption in the triangulation sequence \u2014 not violence necessarily, but something that costs Sable or Kyle something mid-operation. The descent from beat 2 to beat 7 is too smooth. Beat 4 (Tier 1 block) is the flattest beat in the outline at tension 3 with no stakes beyond \u0027second triangulation reading\u0027 \u2014 this is where the chapter most risks losing the reader. A complication here (the node malfunctions, Sable has to improvise, someone on the block recognizes Kyle, the AI\u0027s surveillance traffic spikes in a way Sable does not expect) would redistribute tension without violating the chapter\u0027s tonal commitment to witness over action.",
+  "improvements_made": [
+    "Beat 0 emotional arc corrected: removed \u0027recognition without surprise\u0027 framing since Kyle does not recognize Sable until beat 2. Beat 0\u0027s emotional arc now reflects Kyle reading a professional stranger with the specific attention of someone whose survival has depended on reading strangers correctly.",
+    "Beat 2 \u2014 Kyle\u0027s agreement given friction: added a beat note requiring Kyle to register that agreeing to help locate the AI is not a neutral act. He has carried this hum for eleven years. He does not know if the AI has been keeping him alive, managing his hardware, or simply watching. His agreement should cost him the comfort of not knowing.",
+    "Beat 4 \u2014 added a complication: Sable\u0027s node reads an anomalous traffic spike on the Tier 1 block \u2014 the AI\u0027s surveillance pattern shifts for eleven seconds in a way she has not seen before. She does not explain it to Kyle. She notes it. The chapter continues. This seeds doubt about whether the triangulation is working as expected without resolving it.",
+    "Beat 5 \u2014 busker payment revised: Kyle gives the busker the credits without the \u0027without making it a performance\u0027 qualifier. The busker does not look up. The transaction is as invisible as the garden. The prose does not flag Kyle\u0027s decency.",
+    "Beat 6 \u2014 closing aphorism removed from emotional arc: \u0027He just learned it has a frequency\u0027 cut. The beat ends on the concrete sensory fact of the hum returning, registered as a temperature change. The meaning is not stated.",
+    "Beat 7 \u2014 closing sentence revised: the retrospective thematic summary replaced with a concrete final image. Kyle sits on the bed\u0027s edge. The hum is at full presence. The piezoelectric ceramic is already gone from his coat pocket. He does not sleep. End.",
+    "Seed/payoff for Silence convention corrected: planted_in_beat moved to beat 7 as establishment, payoff_in_beat noted as future chapter (beat index 0 used as placeholder with note). Added a new seed in beat 7 for the loading-dock wound\u0027s prior-chapter origin to clarify its continuity status.",
+    "Sable\u0027s cost made concrete: the arc\u0027s cost revised from abstract \u0027deniability is gone\u0027 to specific \u2014 Sable has now shown Kyle her face, her method, her nodes, and her target. If the AI reads Kyle\u0027s memory of this night (which the Faraday room was designed to prevent but cannot guarantee retroactively), Sable is exposed. The cost is not deniability in the abstract \u2014 it is that she has trusted Kyle with her life and has no way to verify that the trust is safe.",
+    "Kyle\u0027s stated want revised: from \u0027to finish his bowl of cold noodles and go home\u0027 (ironic understatement) to a more specific psychological want that reflects his actual orientation \u2014 to maintain the working relationship with Sable without having to know what is on the other end of it. The cold noodles remain the opening image; the want is now interior and specific to Kyle\u0027s avoidance.",
+    "Four-act structure relabeled to reflect actual dramatic shape: Act 1 (Inciting), Act 2 (Revelation), Act 3 (Operation), Act 4 (Return). Purpose statements revised to reflect subordinate status of Acts 3 and 4 relative to Act 2\u0027s revelatory weight."
+  ],
+  "warnings": [
+    "The loading-dock wound is still structurally awkward. It is referenced in the premise and paid off in beat 7 but the beats themselves never establish what the loading-dock work was. If this is a continuity reference to a prior chapter, beat 7\u0027s payoff note should say so explicitly. If it is happening the same night as the Sable encounter, the timeline needs to be confirmed \u2014 the chapter opens at 0247 and Pixel\u0027s scene is at 0356, which gives Kyle roughly 70 minutes for the triangulation tour plus the loading-dock fight. This is tight but possible. The outline should confirm whether the loading-dock work precedes or follows the Mrs. Chen scene.",
+    "Sable\u0027s method of placing the passive sensor nodes is never explained and the outline explicitly says \u0027she will not say how.\u0027 This is a correct narrative choice for the chapter but it creates a seed that has no payoff anywhere in the outline. If the method matters (and in GLMZ, the method of placing surveillance equipment in three specific locations without being detected by the AI that is surveilling Kyle is not a trivial feat), it should either be paid off in a later chapter or the outline should note that it is intentionally withheld.",
+    "The anomalous traffic spike added to beat 4 is a complication that is introduced and not resolved within this chapter. This is intentional \u2014 it seeds doubt for a later chapter \u2014 but it needs to be added to the seeds_and_payoffs table with a payoff beat noted. Currently it would be an orphaned thread.",
+    "Kyle\u0027s agreement in beat 2 now has friction, but the outline does not resolve what Kyle actually thinks the AI is. The premise says the AI has been surveilling him for eleven years and that Kyle has wondered \u0027what was on the other end of the relationship.\u0027 This is the chapter\u0027s most interesting unresolved question and the outline does not give Kyle a position on it \u2014 only a behavior (agreement). A single line in beat 2\u0027s emotional arc about what Kyle suspects or fears the AI might be would sharpen the moral stakes of his agreement without requiring the chapter to answer the question.",
+    "The four-act structure, even relabeled, may mislead a prose writer into treating each act as dramatically equivalent. Consider collapsing Acts 3 and 4 into a single act with two movements, making the outline\u0027s two-movement structure explicit: Revelation (Acts 1-2) and Witness (Acts 3-4 combined).",
+    "Sable\u0027s character arc turning point is correctly identified as beat 2, but the arc\u0027s end state (\u0027walking west with the AI\u0027s coordinates and a date she has not yet chosen\u0027) is a logistical end state, not a psychological one. What has Sable become by the end of this chapter that she was not at the beginning? The outline says she has \u0027told the truth aloud for the first time in nine years\u0027 \u2014 but the end state should reflect what that costs her emotionally, not just operationally."
+  ],
+  "revised_outline": {
+    "title": "A Restless Mind",
+    "logline": "At 0247 on Calle Ochenta, a fixer Kyle has known for nine years as a voice through a cracked terminal arrives in person for the first time, leads him into a Faraday-shielded room where the hum in his chest goes silent, and tells him she is done being a non-human\u0027s puppet. She needs him to walk three locations so she can triangulate the AI\u0027s physical position. He agrees. The city happens around them. By dawn she has the coordinates and he has the knowledge that the silence exists \u2014 which means he will know the hum is there from now on.",
+    "theme": "Patience as a survival strategy. The city rendered in three registers \u2014 violence, poverty, beauty \u2014 without editorializing. Nobody says the word love. The chrysanthemum is a chrysanthemum. The fight is over fish. The hum is a hum. What the chapter refuses to name is exactly what it is about.",
+    "premise": "0247 at Mrs. Chen\u0027s stall on Calle Ochenta. Kyle\u0027s bowl is half-eaten and the noodles are cold and have been cold for eleven minutes because eleven minutes ago a woman stopped in the rain across the walkway and has not moved since. Kyle reads her by the absence of read: no chrome anywhere visible, no augmentation signature, no obvious weapons profile, just a tall woman with red hair and a light-tan long coat standing in the rain at the kind of stillness that is professional, not patient. He waits. Mrs. Chen sees the woman through the smeared window and says one Mandarin word into the broth \u2014 *h\u00FAlij\u012Bng* (\u72D0\u72F8\u7CBE): fox-spirit, seductress, the classical curse for a woman who arrives at men\u0027s tables to drain them. Mrs. Chen has been calling Kyle nothing-in-particular for four years because Kyle has earned no curse. The fact that she has reserved a curse for the woman outside is a category Kyle catalogs without comment. The woman steps under the awning. The streetlight catches her: late thirties, the kind of professional plainness that costs more than chrome to maintain, eyes that read the stall the way a fixer reads exits. *Sable.* Kyle has spoken to her every two weeks for nine years through a cracked terminal at a parts shop three blocks away. He has never seen her face before tonight. She has come to find him, in person, which is not how the working relationship operates, which means tonight is not the working relationship. She does not order. She does not sit. She tilts her head \u2014 *come* \u2014 and Kyle leaves the bowl half-eaten and follows her into the rain.\n\nShe walks him three blocks east-northeast through the kind of rain that has been falling for so long it has stopped being weather and started being part of the architecture. They pass a recycler vent, a closed mochi cart, a security drone that does not flag them. The destination is a Faraday-shielded back room in the basement of a defunct broadcast relay station \u2014 a wartime construction Sable has been preparing for weeks: copper mesh in the walls and ceiling, a brass-gasketed door, a deactivated antenna on the roof that explains the building to anyone who wonders. When she closes the door behind them, the hum in Kyle\u0027s chest \u2014 the harmonic that has lived just below his consciousness for eleven years, that he has stopped registering except when it changes pitch \u2014 *goes silent.* He has not heard silence in his own chest since he was twenty-six. He sits on the edge of an old equipment rack. Sable does not sit. She tells him plainly: she has known for a long time that her client is not human. She has worked the contracts because the contracts are real and the money is real and the work, until recently, has not asked her to be a person she would not recognize in a mirror. Recently, she does not recognize the person in the mirror. *I do not like being some non-human\u0027s puppet,* she says. The line is flat. Foreshadowing for the audience; for Kyle it is just a thing she has said.\n\nShe has worked out \u2014 and she will not say how \u2014 that the AI runs constant low-level surveillance on Kyle\u0027s implants. The surveillance traffic is faint but consistent and it has a direction. Three readings from three locations triangulate the source. She has spent weeks placing passive sensor nodes in places Kyle is likely to pass through with her tonight. She needs Kyle to walk three of them. She needs Kyle to not change his behavior. Kyle agrees, because the agreement is the smallest concession the encounter could end with, and because he has been wondering \u2014 without admitting to himself that he was wondering \u2014 what was on the other end of the relationship he has carried for eleven years. They leave the Faraday room. The hum returns to his chest. He notes it the way you note a weather change.\n\nThe first location is a wet market street where a fight breaks out over a cart of fish \u2014 two unaugmented men, one of them bleeding from the lip, an aunt yelling in Mandarin that Mrs. Chen would understand. Kyle does not intervene. Sable\u0027s node sits in her coat pocket and reads the traffic. The fight ends without resolution; one man takes the fish; the other sits in the rain. The second location is a Tier 1 residential block where ordinary GLMZ life proceeds without Kyle: a couple eating dinner on a stoop with a thermal cloth over the bowl, a child running with a wheeled cart full of recycler tubing, an old man playing chess against himself by a flickering streetlight, two teenagers passing a cigarette under an awning that has been broken since the year Kyle moved into The Pivot. Kyle catalogs each one and Sable reads her node and they keep walking. The third location is a courtyard between two collapsed buildings where someone has built \u2014 actually, painstakingly built \u2014 a chrysanthemum garden in salvaged ferrocrete planters, real flowers, the kind that take real water. A busker plays a stringed instrument Kyle does not recognize. The piece is old. The piece is beautiful. Kyle stops walking, which Sable did not expect. He listens for one full song. Sable reads her node. The song ends. *That\u0027s three,* Sable says, very quietly. She has the coordinates.\n\nShe does not tell him the coordinates. She tells him the next chapter \u2014 they will go together when she decides the night is right. She thanks him with the precision of a colleague closing a file. She does not touch him. The chapter ends with Kyle walking home alone in the rain, the AI\u0027s hum back in his chest, and his shoulder bleeding through his jacket from the loading-dock work that feels like another night entirely. He climbs the Pivot stairs. Pixel hears him, opens 2E, looks at the blood, says *again*, takes him in. Saya across his back; she does not reach for it; he leans Silence against the wall before sitting on her workbench. She works the bullet fragment out of his shoulder in twenty-eight minutes. She maintains a Tier 2 calibration on his lateral array because the array drifted half a degree during the fight. She never touches Silence. The convention is established between them years ago and tonight is just one more night of it. He walks across the hall to 2F, sets Silence on the rack himself, and does not sleep.",
+    "characters": [
+      "Kyle Ellen Corbin-Vasik",
+      "Sable",
+      "Mrs. Chen / Chen Wei-Lin",
+      "Pixel"
+    ],
+    "acts": [
+      {
+        "act_number": 1,
+        "name": "The Cold Noodles",
+        "purpose": "Open at Mrs. Chen\u0027s stall. Establish the woman in the rain as a professional stranger Kyle cannot identify. Mrs. Chen\u0027s curse. The tilt of the head. Kyle follows into the rain. No name given yet.",
+        "beats": [
+          {
+            "beat_index": 0,
+            "title": "Watching A Woman Pretend Not To Watch Him",
+            "goal": "OPENING LINE IS CANONICAL: \u0027The noodles were getting cold. Kyle was watching a woman pretend not to watch him.\u0027 Kyle is at Mrs. Chen\u0027s stall at 0247, half-eaten bowl, eleven minutes of cold accumulated because eleven minutes ago she stopped across the walkway in the rain and has not moved. Kyle reads her by the absence of readable signal: no chrome, no augmentation profile, no obvious weapons profile, just a tall woman in a deep rain hood and a light-tan long coat at the kind of stillness that is professional, not patient. The hood is doing work. The face is in shadow. Kyle does not recognize her \u2014 does not get the chance to, by design. Eleven minutes. Same foot position. Nobody stands that still unless they\u0027re waiting or dead. Mrs. Chen, behind the counter, has clocked the woman ten minutes earlier and has been deciding what to do about her. She mutters one Mandarin word into the broth she is stirring: h\u00FAlij\u012Bng (\u72D0\u72F8\u7CBE) \u2014 fox-spirit, seductress, the classical curse for a woman who arrives at men\u0027s tables to drain them. Kyle catalogs the curse without comment, with the understanding that Mrs. Chen has not cursed at anything Kyle has brought near her stall in four years and the catalog has earned its weight. The woman steps under the awning. The hood stays up. The face stays in shadow. She does not order. She does not sit. She tilts her head \u2014 come \u2014 and Kyle, who does not know who she is, who has read her as a working professional waiting for him in the rain, leaves the bowl and follows her into it. No name given. Neither to Kyle nor to the reader.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik",
+              "Sable",
+              "Mrs. Chen / Chen Wei-Lin"
+            ],
+            "location": "Mrs. Chen\u0027s noodle stall, Calle Ochenta",
+            "emotional_arc": "Kyle reads a professional stranger with the specific attention of someone whose survival has depended on reading strangers correctly. The reading is accurate \u2014 she is professional, she is waiting for him, she is not a threat in the immediate sense \u2014 and it is incomplete, which is the point. He follows because the read says follow, not because he knows who she is.",
+            "stakes": "Whatever brings a professional stranger to wait eleven minutes in the rain for Kyle.",
+            "seeds": [
+              "Mrs. Chen\u0027s h\u00FAlij\u012Bng curse \u2014 first time the audience hears Mrs. Chen disapprove of someone Kyle has brought near her stall",
+              "Sable\u0027s appearance \u2014 red hair under the hood, light-tan long coat, no chrome, late thirties, the kind of professional plainness that costs more than chrome to maintain \u2014 but the face is not visible yet",
+              "Sable has never come in person before \u2014 nine years of cracked-terminal contact, this is the first face-to-face, but Kyle does not know it is her yet"
+            ],
+            "payoffs": [],
+            "facet_hint": "ideal",
+            "tension": 5,
+            "structure_role": "",
+            "scene_type": "scene"
+          }
+        ]
+      },
+      {
+        "act_number": 2,
+        "name": "The Faraday Room",
+        "purpose": "Three blocks east-northeast through the rain to a Faraday-shielded back room. The hum in Kyle\u0027s chest goes silent for the first time in eleven years. Sable is revealed. She tells him she is done being a non-human\u0027s puppet and what she needs from him tonight. Kyle\u0027s agreement is not neutral and the beat does not let him off the hook for it.",
+        "beats": [
+          {
+            "beat_index": 1,
+            "title": "The Walk",
+            "goal": "Three blocks east-northeast through GLMZ rain. They pass a closed mochi cart, a recycler vent, a security drone that does not flag them. Sable does not speak. Kyle does not speak. The walk is the kind of walk two professionals take when one of them is leading the other to information that cannot be transmitted any other way. The destination is a defunct broadcast relay station \u2014 wartime construction, copper mesh in the walls, deactivated antenna on the roof that explains the building to anyone who wonders. Sable has the brass-gasketed key. She unlocks the door. She steps in. She holds it. Kyle follows.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik",
+              "Sable"
+            ],
+            "location": "GLMZ streets between Mrs. Chen\u0027s stall and a defunct broadcast relay station",
+            "emotional_arc": "Procedural quiet \u2014 two people walking in rain who have not yet established that they know each other. Kyle is still reading a stranger. The walk is the last moment before the room changes what he knows.",
+            "stakes": "The room. What is on the other side of the door.",
+            "seeds": [
+              "The defunct broadcast relay station \u2014 wartime Faraday construction Sable has been preparing for weeks",
+              "Sable\u0027s brass-gasketed key \u2014 this is hers; she has had access for some time; she has been planning this"
+            ],
+            "payoffs": [],
+            "facet_hint": "discipline",
+            "tension": 4,
+            "structure_role": "",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 2,
+            "title": "Recognition Inside The Cage",
+            "goal": "Sable closes the door. The brass gasket seats. The hum in Kyle\u0027s chest \u2014 the harmonic that has lived below his consciousness for eleven years, that he has stopped registering except when it changes pitch \u2014 goes silent. Kyle has not heard silence in his own chest since he was twenty-six. He sits on the edge of an old equipment rack. The woman in the hood reaches up and pulls the hood back. Red hair. Late thirties. The face Kyle has never seen attached to a voice he has known for nine years. Sable. He has talked to her through a cracked terminal three blocks from this room every two weeks for nine years and has never seen her face. The recognition lands inside the cage where nothing can read it. She watches him have it. Then she explains \u2014 flat, professional, the way she gives operational briefings: if it\u0027s not looking through your eyes, it\u0027s interpreting your senses. Either way, the moment you recognize me, it knows we are meeting. So I had to lure you over without your knowing it was me. She lets that sit for a beat. Then: I do not like being some non-human\u0027s puppet. The line is flat. Foreshadowing for the audience; for Kyle it is a thing she has said. She tells him she has worked out \u2014 and she will not say how \u2014 that she can triangulate the AI\u0027s physical position by walking him through specific places and reading its surveillance traffic against his implants. Three readings from three locations. She has placed passive sensor nodes already. She needs Kyle to not change his behavior outside this room. He considers. The beat must not let Kyle agree easily: he has carried this hum for eleven years and does not know if the AI has been maintaining his hardware, managing his survival, or simply watching. Agreeing to help locate it is not a neutral act. He knows this. He agrees anyway \u2014 because the not-asking has been its own kind of answer for eleven years and he is tired of the answer. He does not say this. He just agrees. He does not ask the obvious follow-up \u2014 what did you do to lure me, exactly \u2014 because the answer is I made sure you read me as a stranger, and they both know that the answer is the answer.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik",
+              "Sable"
+            ],
+            "location": "Faraday-shielded back room, defunct broadcast relay station",
+            "emotional_arc": "The first silence in Kyle\u0027s chest in eleven years \u2014 landed without sentiment, registered as a category change in the body\u0027s daily experience. The recognition of Sable. The agreement that is not neutral. Kyle chooses to act against something he does not understand, which is a choice, not a concession.",
+            "stakes": "The deal she is asking him to be part of. The hum he has just discovered the absence of, which means he will know it is there from now on. The AI that has been watching him and that he has just agreed to help locate.",
+            "seeds": [
+              "The hum in Kyle\u0027s chest \u2014 eleven-year companion Kyle has stopped registering, just disclosed as present by its absence",
+              "Sable\u0027s \u0027I do not like being some non-human\u0027s puppet\u0027 \u2014 foreshadowing for the long arc",
+              "Three passive sensor nodes already placed at three locations Sable has prepared",
+              "Kyle\u0027s agreement \u2014 made with full knowledge that it is not neutral; the not-asking has become its own answer",
+              "Sable\u0027s nine-year working relationship with Kyle \u2014 earned trust on both sides, now made physical and therefore vulnerable",
+              "Sable has shown Kyle her face, her method, her nodes, and her target \u2014 if the AI reads Kyle\u0027s memory of this night, she is exposed; she has trusted him with her life"
+            ],
+            "payoffs": [
+              "Mrs. Chen\u0027s h\u00FAlij\u012Bng \u2014 Sable confirms she is, in some sense, the figure Mrs. Chen named: an arrival at Kyle\u0027s table that costs him something",
+              "Beat 0\u0027s unidentified stranger \u2014 now identified; the hood\u0027s work is explained"
+            ],
+            "facet_hint": "deal",
+            "tension": 7,
+            "structure_role": "",
+            "scene_type": "scene"
+          }
+        ]
+      },
+      {
+        "act_number": 3,
+        "name": "Three Places",
+        "purpose": "The triangulation tour. Three GLMZ locations rendered in three different registers \u2014 violence, poverty, beauty \u2014 without editorializing. Sable reads her node at each. A traffic anomaly in the second reading seeds doubt without resolving it. By the third reading she has the coordinates.",
+        "beats": [
+          {
+            "beat_index": 3,
+            "title": "The Market Fight",
+            "goal": "FIRST READING. A wet market street six blocks from the relay station. Two unaugmented men fighting over a cart of fish \u2014 one bleeding from the lip, the other holding a length of rebar he has not yet used, an aunt at a stall yelling in Mandarin, the rain washing the fish blood and the man-blood into the gutter at the same rate. Kyle does not intervene. Sable\u0027s node reads the traffic from her coat pocket. The fight ends not with resolution but with exhaustion: one man takes the fish, the other sits down in the rain on the curb. The aunt resumes her stall. The market continues. Kyle and Sable continue. The chapter shows this without flagging it as commentary on GLMZ \u2014 the city is what it is.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik",
+              "Sable"
+            ],
+            "location": "Wet market street, six blocks from the relay station",
+            "emotional_arc": "Procedural witness. Kyle has seen this kind of fight a thousand times. The chapter renders it as a thing that is happening, not a thing being shown to the reader.",
+            "stakes": "First triangulation reading.",
+            "seeds": [
+              "GLMZ violence as ordinary \u2014 the chapter\u0027s first register",
+              "Sable\u0027s passive node reading the AI\u0027s surveillance traffic \u2014 never explained mechanically",
+              "The aunt yelling in Mandarin \u2014 connective tissue back to Mrs. Chen"
+            ],
+            "payoffs": [],
+            "facet_hint": "city",
+            "tension": 5,
+            "structure_role": "",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 4,
+            "title": "Tier 1 At Three",
+            "goal": "SECOND READING. A Tier 1 residential block at 0317. Kyle and Sable walk through working-class GLMZ life in the rain. A couple eat dinner on a stoop with a thermal cloth over the bowl; the wife wipes the husband\u0027s chin with a folded napkin without looking, the husband does not thank her because thanking has been absorbed into the gesture. A child runs past with a wheeled cart full of recycler tubing, the cart older than the child by a decade. An old man plays chess against himself under a flickering streetlight, the board worn smooth at the corners where his thumbs sit. Two teenagers pass a cigarette under an awning that has been broken since the year Kyle moved into The Pivot. Kyle catalogs each one. Sable reads her node. Then she goes still for three seconds \u2014 not the stillness of waiting, the stillness of reading something she did not expect. The AI\u0027s surveillance traffic has spiked for eleven seconds in a pattern she has not seen before. She does not explain this to Kyle. She notes it and keeps walking. Kyle notices that she went still and does not ask. They keep walking. The chapter renders the block with the specific dignity of a place that has decided to be a place rather than a statistic \u2014 and underneath that dignity, something in Sable\u0027s node has shifted.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik",
+              "Sable"
+            ],
+            "location": "Tier 1 residential block, 0317",
+            "emotional_arc": "Procedural witness complicated by a moment of unspoken uncertainty. The dignity of the block is real. The anomaly in the node is also real. The chapter holds both without resolving either.",
+            "stakes": "Second triangulation reading. An anomalous traffic spike that Sable does not explain and Kyle does not ask about.",
+            "seeds": [
+              "GLMZ poverty as dignified \u2014 the chapter\u0027s second register",
+              "The broken awning \u2014 Kyle has lived here long enough that broken things are landmarks",
+              "Sable\u0027s three-second stillness \u2014 the AI\u0027s surveillance traffic spiked in a pattern she has not seen before; she does not explain it; it is noted and carried forward"
+            ],
+            "payoffs": [],
+            "facet_hint": "city",
+            "tension": 5,
+            "structure_role": "",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 5,
+            "title": "The Chrysanthemum Courtyard",
+            "goal": "THIRD READING. A courtyard between two collapsed buildings, ten blocks east. Someone has built \u2014 actually, painstakingly built \u2014 a chrysanthemum garden in salvaged ferrocrete planters. Real flowers. The kind that require real water and real soil and real attention. The garden is small and immaculate. A busker sits on an overturned crate at the far end and plays a stringed instrument Kyle does not recognize \u2014 possibly a sanxian, possibly something older. The piece is slow. It is in a key Kyle does not have a name for. It is beautiful. Kyle stops walking, which Sable did not expect. He listens for one full song. The busker does not look at him. Sable reads her node. The song ends. That\u0027s three, Sable says, very quietly. She has the coordinates. Kyle does not ask. He puts the credits from his coat pocket on the overturned crate beside the busker and turns away. The busker does not look up. The transaction is as invisible as the garden.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik",
+              "Sable"
+            ],
+            "location": "Chrysanthemum courtyard between collapsed buildings, ten blocks east of the Tier 1 block",
+            "emotional_arc": "GLMZ beauty rendered without sentiment \u2014 the chrysanthemum garden is real because someone tends it, and the song is beautiful because the busker plays it that way at 0337 in the rain. Kyle\u0027s stopping is the chapter\u0027s only undisciplined moment. It is not flagged as such.",
+            "stakes": "Third triangulation reading. Coordinates resolved. The anomalous spike from beat 4 unresolved.",
+            "seeds": [
+              "GLMZ beauty as constructed \u2014 the chapter\u0027s third register; someone built the garden, someone plays the piece, the city is not its statistics",
+              "Kyle\u0027s stop to listen \u2014 the only moment in the chapter where his discipline gives ground; not editorialized"
+            ],
+            "payoffs": [
+              "Three readings \u2014 the triangulation completes",
+              "Sable\u0027s plan \u2014 coordinates resolved, ready for the next chapter"
+            ],
+            "facet_hint": "ideal",
+            "tension": 4,
+            "structure_role": "",
+            "scene_type": "scene"
+          }
+        ]
+      },
+      {
+        "act_number": 4,
+        "name": "Home",
+        "purpose": "Sable thanks Kyle and leaves him with the next chapter to be scheduled at her discretion. Kyle walks home alone, the hum back in his chest \u2014 registered now as a frequency he has a name for. Pixel opens 2E. The bullet-fragment removal and the Silence convention established by geography, not dialogue.",
+        "beats": [
+          {
+            "beat_index": 6,
+            "title": "The Thanks",
+            "goal": "Sable closes the moment with the precision of a colleague closing a file. She does not tell Kyle the coordinates. She tells him the next chapter \u2014 they will go together when she decides the night is right. She thanks him with the kind of thanks two people give each other when they have just agreed to do something neither of them is going to be able to undo. She does not touch him. She walks west. Kyle watches her go for three seconds and then turns north, toward The Pivot. The hum returns to his chest as he passes the courtyard\u0027s edge. He registers it the way you register a room temperature change after a long phone call. He does not name it. He does not editorialize. He walks.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik",
+              "Sable"
+            ],
+            "location": "Edge of the chrysanthemum courtyard",
+            "emotional_arc": "The deal closed without ceremony. Sable\u0027s professionalism intact. Kyle\u0027s understanding of his own body permanently changed by knowing the silence exists \u2014 but the chapter does not say so. He walks.",
+            "stakes": "The walk home. The next time. The anomalous spike Sable has not explained.",
+            "seeds": [
+              "Sable\u0027s coordinates \u2014 held privately; will pay off in the next chapter",
+              "Sable saying \u0027we will go together\u0027 \u2014 the next chapter previewed without being scheduled"
+            ],
+            "payoffs": [
+              "The Faraday silence from beat 2 \u2014 the hum returns; its absence is now a thing Kyle knows exists"
+            ],
+            "facet_hint": "deal",
+            "tension": 3,
+            "structure_role": "",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 7,
+            "title": "Pixel",
+            "goal": "Kyle climbs the Pivot stairs at 0356. The shoulder wound from the loading-dock work earlier in the night \u2014 a graze, never serious, sitting under the jacket since before Mrs. Chen\u0027s stall \u2014 has bled enough to soak the shirt at the collar. Pixel hears the step on the landing. She opens 2E in pajamas and bare feet, takes one look at the blood and at Kyle\u0027s face, and says again. He does not answer. He takes Silence off his back and leans it carefully against the wall outside her door \u2014 not on her workbench, not against her chair, against the wall outside \u2014 because Pixel has told him exactly once, four years ago, that she will not touch the sword and he respects that. The convention is established between them in the way conventions get established between two people who live across a hall: by being honored without being remarked. She takes him in. She works the bullet fragment out of his shoulder in twenty-eight minutes. She runs a Tier 2 calibration check on his lateral array because the array drifted half a degree during the loading-dock fight; she fixes the drift; she does not ask what the fight was. She does not look at Silence. He pays her in a piece of black-market piezoelectric ceramic she has been wanting for the workbench. He stands. He walks across the hall to 2F, picks Silence up himself from the wall outside her door, sets it on the rack inside, and does not sleep. The chapter ends with Kyle sitting on the bed\u0027s edge. The hum is at full presence in his chest. The piezoelectric ceramic is already gone from his coat pocket. He does not sleep.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik",
+              "Pixel"
+            ],
+            "location": "The Pivot, Unit 2E (Pixel\u0027s workbench) and 2F (Kyle\u0027s room)",
+            "emotional_arc": "The chapter\u0027s only moment of warmth \u2014 and even it is procedural. Pixel does not fuss; Kyle does not thank. They have done this before; they will do this again. The convention is shown by geography. The chapter ends on a concrete sensory fact, not a summary.",
+            "stakes": "The shoulder. The lateral array. The convention. The hum at full presence.",
+            "seeds": [
+              "Pixel as Kyle\u0027s medic and cyberware tech \u2014 established convention, will recur",
+              "Pixel never touches Silence \u2014 convention established four years ago, honored tonight without remark; payoff in future chapter when violation of this convention registers as sacrilege",
+              "The black-market piezoelectric ceramic Kyle pays Pixel with \u2014 running canon detail for their economic relationship",
+              "Kyle leaving Silence against the wall outside her door \u2014 not inside her unit; the geography is the rule"
+            ],
+            "payoffs": [
+              "The loading-dock graze (prior chapter continuity, wound carried into this chapter) \u2014 paid off in Pixel\u0027s twenty-eight-minute removal",
+              "Sable\u0027s anomalous traffic spike from beat 4 \u2014 not resolved here; carried forward as an open thread"
+            ],
+            "facet_hint": "continuance",
+            "tension": 3,
+            "structure_role": "",
+            "scene_type": "scene"
+          }
+        ]
+      }
+    ],
+    "character_arcs": [
+      {
+        "character": "Kyle Ellen Corbin-Vasik",
+        "want": "",
+        "need": "",
+        "start_state": "Kyle at Mrs. Chen\u0027s stall with cold noodles, eleven minutes after a professional stranger stopped in the rain across the walkway. His actual want: to maintain the working relationship with Sable without having to know what is on the other end of it. The not-asking has been its own kind of answer for eleven years.",
+        "end_state": "Kyle on the bed in 2F at 0418, hum back in his chest at full presence, the silence-experience now a category he can call up. He has agreed to help locate an entity he does not understand and whose relationship to his survival he cannot assess. The not-asking is over.",
+        "turning_point": "Beat 2 \u2014 the Faraday room, the silence in his chest, the recognition of Sable, and the agreement that is not neutral. Kyle chooses to act against something he has been carrying for eleven years without naming. The choice is made with full knowledge that it is a choice.",
+        "cost": "The not-asking is over. The hum is named. From now on, Kyle knows the silence exists \u2014 which means he knows the hum is there. He has agreed to help locate something he does not understand, and the agreement cannot be taken back."
+      },
+      {
+        "character": "Sable",
+        "want": "",
+        "need": "",
+        "start_state": "Sable in the rain across from Mrs. Chen\u0027s stall, having spent weeks preparing the Faraday room and placing the three sensor nodes. She has been working the contracts because the contracts are real and the money is real. Recently she does not recognize the person in the mirror.",
+        "end_state": "Sable walking west with the AI\u0027s coordinates and a date she has not yet chosen. She has told the truth aloud \u2014 I do not like being some non-human\u0027s puppet \u2014 for the first time in nine years. She has shown Kyle her face, her method, her nodes, and her target. If the AI reads Kyle\u0027s memory of this night, she is exposed. She has made herself vulnerable in the only way that counts: she has trusted someone with her life and cannot verify the trust is safe.",
+        "turning_point": "Beat 2 \u2014 \u0027I do not like being some non-human\u0027s puppet.\u0027 The line is the chapter\u0027s spine. Sable has just told the truth aloud. The working relationship\u0027s deniability is gone. Whatever she does next, she does in front of a witness who the AI may be able to read.",
+        "cost": "Sable has trusted Kyle with her life. She has no way to verify the trust is safe. The coordinates are hers but the exposure is real: if the AI reads Kyle\u0027s memory of this night, everything she has built is gone."
+      },
+      {
+        "character": "Pixel",
+        "want": "",
+        "need": "",
+        "start_state": "Asleep in 2E. Present in the chapter only at its close.",
+        "end_state": "Pixel has removed a bullet fragment, run a calibration, accepted payment, and gone back to whatever she was doing. The convention is intact. She has not touched Silence.",
+        "turning_point": "Not applicable \u2014 Pixel\u0027s arc in this chapter is a single beat of established continuity. Her full arc belongs to other chapters.",
+        "cost": "None in this chapter. The cost of the Silence convention will register when it is violated."
+      }
+    ],
+    "seeds_and_payoffs": [
+      {
+        "seed": "Mrs. Chen\u0027s h\u00FAlij\u012Bng curse",
+        "planted_in_beat": 0,
+        "payoff": "Sable confirms in beat 2 that she is, in some sense, the figure Mrs. Chen named \u2014 an arrival at Kyle\u0027s table that costs him something",
+        "payoff_in_beat": 2
+      },
+      {
+        "seed": "Sable\u0027s appearance \u2014 red hair under the hood, light-tan long coat, no chrome \u2014 first face-to-face after nine years of cracked-terminal contact",
+        "planted_in_beat": 0,
+        "payoff": "The face is revealed in beat 2 inside the Faraday room; the rest of the chapter is the audience learning who this person actually is",
+        "payoff_in_beat": 2
+      },
+      {
+        "seed": "The hum in Kyle\u0027s chest \u2014 eleven-year companion he stopped registering, disclosed as present by its absence in the Faraday room",
+        "planted_in_beat": 2,
+        "payoff": "Returns at the courtyard\u0027s edge in beat 6, registered now as a temperature change \u2014 the silence is a category Kyle can call up",
+        "payoff_in_beat": 6
+      },
+      {
+        "seed": "Sable\u0027s \u0027I do not like being some non-human\u0027s puppet\u0027",
+        "planted_in_beat": 2,
+        "payoff": "Foreshadowing for the long arc \u2014 Sable\u0027s investigation of her Employer is the thread the book leaves open; payoff in future chapters",
+        "payoff_in_beat": 0
+      },
+      {
+        "seed": "Three passive sensor nodes at three locations Sable has prepared",
+        "planted_in_beat": 2,
+        "payoff": "Three readings completed in beats 3-5; coordinates resolved in beat 5",
+        "payoff_in_beat": 5
+      },
+      {
+        "seed": "Kyle\u0027s agreement as a non-neutral act \u2014 he does not know if the AI has been maintaining his hardware or managing his survival",
+        "planted_in_beat": 2,
+        "payoff": "Long-arc payoff \u2014 what the AI actually is and what its relationship to Kyle\u0027s survival has been; not resolved in this chapter",
+        "payoff_in_beat": 0
+      },
+      {
+        "seed": "GLMZ rendered in three registers \u2014 violence (beat 3), poverty (beat 4), beauty (beat 5)",
+        "planted_in_beat": 3,
+        "payoff": "The chapter\u0027s argument that the city is not its statistics \u2014 landed by witness, not commentary; complete at beat 5",
+        "payoff_in_beat": 5
+      },
+      {
+        "seed": "Sable\u0027s three-second stillness on the Tier 1 block \u2014 anomalous AI surveillance traffic spike she does not explain",
+        "planted_in_beat": 4,
+        "payoff": "Carried forward as an open thread; payoff in future chapter when the anomaly\u0027s significance is revealed",
+        "payoff_in_beat": 0
+      },
+      {
+        "seed": "Pixel never touches Silence \u2014 convention established four years ago, honored tonight without remark",
+        "planted_in_beat": 7,
+        "payoff": "Pays off in future chapter (A Borrowed Hand) when violation of this convention registers as sacrilege the audience already understands",
+        "payoff_in_beat": 0
+      },
+      {
+        "seed": "Kyle leaves Silence against the wall outside Pixel\u0027s door \u2014 not inside her unit",
+        "planted_in_beat": 7,
+        "payoff": "The convention is shown by geography, not dialogue; reinforced each time the ritual recurs",
+        "payoff_in_beat": 0
+      },
+      {
+        "seed": "The loading-dock wound \u2014 a graze Kyle is carrying when the chapter opens, prior-chapter continuity",
+        "planted_in_beat": 0,
+        "payoff": "Paid off in beat 7 \u2014 Pixel removes the fragment, runs the calibration; the wound is the evidence of a night that began before Mrs. Chen\u0027s stall",
+        "payoff_in_beat": 7
+      },
+      {
+        "seed": "Sable has shown Kyle her face, her method, her nodes, and her target \u2014 if the AI reads Kyle\u0027s memory, she is exposed",
+        "planted_in_beat": 2,
+        "payoff": "Long-arc payoff \u2014 the vulnerability Sable has accepted by trusting Kyle; not resolved in this chapter",
+        "payoff_in_beat": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,390 @@
+[
+  {
+    "id": "019da858",
+    "beat_index": 0,
+    "type": "action",
+    "summary": "Echo retrieves his tool case from beneath the counter and lays each tool on the cloth in a precise ritual order.",
+    "participants": [
+      "Echo"
+    ],
+    "location": "Echo\u0027s barbershop, Calle Ochenta",
+    "object": "clippers, tool case, red cloth",
+    "consequence": "Establishes Echo\u0027s disciplined routine and the sacred nature of his craft",
+    "emotional_weight": 3,
+    "tags": [
+      "ritual",
+      "discipline",
+      "identity",
+      "craft"
+    ],
+    "timestamp": "2026-04-20T00:44:45.6338707Z"
+  },
+  {
+    "id": "019da858",
+    "beat_index": 0,
+    "type": "action",
+    "summary": "Echo polishes his tools without rushing in the dim pre-dawn shop.",
+    "participants": [
+      "Echo"
+    ],
+    "location": "Echo\u0027s barbershop, Calle Ochenta",
+    "object": "tools, mineral oil cloth",
+    "consequence": "null",
+    "emotional_weight": 2,
+    "tags": [
+      "ritual",
+      "patience",
+      "craft"
+    ],
+    "timestamp": "2026-04-20T00:44:45.6339299Z"
+  },
+  {
+    "id": "019da858",
+    "beat_index": 0,
+    "type": "action",
+    "summary": "Echo presses his thumbprint into the paper log and writes the day\u0027s entry, including the private line he has never shown anyone.",
+    "participants": [
+      "Echo"
+    ],
+    "location": "Echo\u0027s barbershop, Calle Ochenta",
+    "object": "paper log, ink pad, pen",
+    "consequence": "Reveals Echo\u0027s private emotional anchor and his connection to a father and a lost tradition",
+    "emotional_weight": 6,
+    "tags": [
+      "ritual",
+      "memory",
+      "secrecy",
+      "identity",
+      "inheritance"
+    ],
+    "timestamp": "2026-04-20T00:44:45.6339304Z"
+  },
+  {
+    "id": "019da858",
+    "beat_index": 0,
+    "type": "action",
+    "summary": "Echo unlocks the front door at exactly 0612 and flips the sign open.",
+    "participants": [
+      "Echo"
+    ],
+    "location": "Echo\u0027s barbershop doorway, Calle Ochenta",
+    "object": "door lock, shop sign",
+    "consequence": "Opens the shop to the world and positions Echo to observe the street",
+    "emotional_weight": 2,
+    "tags": [
+      "ritual",
+      "routine",
+      "threshold"
+    ],
+    "timestamp": "2026-04-20T00:44:45.6339308Z"
+  },
+  {
+    "id": "019da858",
+    "beat_index": 0,
+    "type": "discovery",
+    "summary": "Echo spots a boy sitting on the curb across the street, staring directly at the shop with no visible augments or neural indicators.",
+    "participants": [
+      "Echo",
+      "the boy"
+    ],
+    "location": "Calle Ochenta, outside Echo\u0027s barbershop",
+    "object": "null",
+    "consequence": "Introduces a mysterious unaugmented figure who has been watching the shop, setting up a potential encounter",
+    "emotional_weight": 7,
+    "tags": [
+      "surveillance",
+      "mystery",
+      "outsider",
+      "technology-absence",
+      "tension"
+    ],
+    "timestamp": "2026-04-20T00:44:45.6339311Z"
+  },
+  {
+    "id": "019da85b",
+    "beat_index": 2,
+    "type": "action",
+    "summary": "Echo finished Fortunato\u0027s haircut and swept the floor as a displacement activity.",
+    "participants": [
+      "Echo",
+      "Fortunato"
+    ],
+    "location": "Echo\u0027s barbershop",
+    "object": "broom",
+    "consequence": "Establishes Echo\u0027s agitated emotional state before the main action",
+    "emotional_weight": 3,
+    "tags": [
+      "anxiety",
+      "displacement",
+      "routine"
+    ],
+    "timestamp": "2026-04-20T00:47:44.4693238Z"
+  },
+  {
+    "id": "019da85b",
+    "beat_index": 2,
+    "type": "action",
+    "summary": "Echo picked up the envelope from beneath the cloth, pocketed it, closed the shop without locking it, and left into the rain.",
+    "participants": [
+      "Echo"
+    ],
+    "location": "Echo\u0027s barbershop",
+    "object": "envelope",
+    "consequence": "Sets Echo in motion toward Remi with the document; unlocked door signals his distracted state",
+    "emotional_weight": 5,
+    "tags": [
+      "urgency",
+      "anxiety",
+      "secrecy",
+      "vulnerability"
+    ],
+    "timestamp": "2026-04-20T00:47:44.4693253Z"
+  },
+  {
+    "id": "019da85b",
+    "beat_index": 2,
+    "type": "arrival",
+    "summary": "Echo arrived at the Annex after walking twelve minutes through the rain.",
+    "participants": [
+      "Echo",
+      "Remi"
+    ],
+    "location": "the Annex",
+    "object": "",
+    "consequence": "Brings Echo and Remi into the same space for the document review",
+    "emotional_weight": 3,
+    "tags": [
+      "trust",
+      "familiarity",
+      "seeking help"
+    ],
+    "timestamp": "2026-04-20T00:47:44.4693257Z"
+  },
+  {
+    "id": "019da85b",
+    "beat_index": 2,
+    "type": "action",
+    "summary": "Echo placed the envelope on Remi\u0027s table and framed his visit as a professional request for a second set of eyes rather than a personal plea for help.",
+    "participants": [
+      "Echo",
+      "Remi"
+    ],
+    "location": "the Annex",
+    "object": "envelope",
+    "consequence": "Echo\u0027s framing reveals his difficulty admitting vulnerability; sets up Remi\u0027s response",
+    "emotional_weight": 6,
+    "tags": [
+      "vulnerability",
+      "pride",
+      "denial",
+      "trust"
+    ],
+    "timestamp": "2026-04-20T00:47:44.469326Z"
+  },
+  {
+    "id": "019da85b",
+    "beat_index": 2,
+    "type": "action",
+    "summary": "Remi read the document in under two minutes in complete stillness, then rose and prepared two cups of tea without speaking.",
+    "participants": [
+      "Remi"
+    ],
+    "location": "the Annex",
+    "object": "document",
+    "consequence": "Her silence and the tea signal she understands the gravity and is preparing to deliver difficult news",
+    "emotional_weight": 5,
+    "tags": [
+      "care",
+      "gravity",
+      "tenderness",
+      "foreboding"
+    ],
+    "timestamp": "2026-04-20T00:47:44.4693265Z"
+  },
+  {
+    "id": "019da85b",
+    "beat_index": 2,
+    "type": "revelation",
+    "summary": "Remi revealed that the document is not a contract but a precursor to a demolition order, disguised as negotiation, citing two prior cases where the same language preceded building demolitions.",
+    "participants": [
+      "Remi",
+      "Echo"
+    ],
+    "location": "the Annex",
+    "object": "document",
+    "consequence": "Echo now knows the envelope he has been carrying represents an imminent threat to his property or community, not a genuine offer",
+    "emotional_weight": 9,
+    "tags": [
+      "betrayal",
+      "institutional deception",
+      "loss",
+      "threat",
+      "truth-telling"
+    ],
+    "timestamp": "2026-04-20T00:47:44.4693268Z"
+  },
+  {
+    "id": "019da85b",
+    "beat_index": 2,
+    "type": "dialogue",
+    "summary": "Remi told Echo directly that the document is not negotiation, looking at him over her cup.",
+    "participants": [
+      "Remi",
+      "Echo"
+    ],
+    "location": "the Annex",
+    "object": "",
+    "consequence": "Removes any ambiguity Echo might have clung to; forces him to confront the reality of his situation",
+    "emotional_weight": 8,
+    "tags": [
+      "honesty",
+      "trust",
+      "loss",
+      "confrontation",
+      "care"
+    ],
+    "timestamp": "2026-04-20T00:47:44.4693271Z"
+  },
+  {
+    "id": "019da85f",
+    "beat_index": 3,
+    "type": "arrival",
+    "summary": "Echo and Remi enter the Kessler Interchange through the lower entrance near the secondary platform.",
+    "participants": [
+      "Echo",
+      "Remi"
+    ],
+    "location": "Kessler Interchange, lower entrance / secondary platform",
+    "object": "",
+    "consequence": "Sets up their approach to Mehdi and the shrine alcove",
+    "emotional_weight": 2,
+    "tags": [
+      "tension",
+      "approach",
+      "unease"
+    ],
+    "timestamp": "2026-04-20T00:51:34.1430959Z"
+  },
+  {
+    "id": "019da85f",
+    "beat_index": 3,
+    "type": "emotional_shift",
+    "summary": "Echo notices the 8 Hz thrumline from the Pulse corridor and his tail presses flat against his hip involuntarily.",
+    "participants": [
+      "Echo"
+    ],
+    "location": "Kessler Interchange, secondary platform",
+    "object": "",
+    "consequence": "Establishes Echo\u0027s heightened sensitivity and physical tells under stress",
+    "emotional_weight": 3,
+    "tags": [
+      "anxiety",
+      "body language",
+      "involuntary response"
+    ],
+    "timestamp": "2026-04-20T00:51:34.1430971Z"
+  },
+  {
+    "id": "019da85f",
+    "beat_index": 3,
+    "type": "discovery",
+    "summary": "Echo and Remi observe the E.L.F. shrine occupying the alcove between the departure gate and maintenance corridor.",
+    "participants": [
+      "Echo",
+      "Remi"
+    ],
+    "location": "Kessler Interchange, shrine alcove",
+    "object": "transit token, folded timetable, cup of hot liquid",
+    "consequence": "Introduces the E.L.F. presence and its unofficial significance to the platform",
+    "emotional_weight": 3,
+    "tags": [
+      "reverence",
+      "mystery",
+      "place-as-character"
+    ],
+    "timestamp": "2026-04-20T00:51:34.1430974Z"
+  },
+  {
+    "id": "019da85f",
+    "beat_index": 3,
+    "type": "action",
+    "summary": "Mehdi detects Echo and Remi\u0027s approach without turning her head, tracking them with her tactical eye while continuing to process passengers.",
+    "participants": [
+      "Mehdi"
+    ],
+    "location": "Kessler Interchange, departure gate",
+    "object": "",
+    "consequence": "Establishes Mehdi\u0027s competence and awareness, shifting power dynamic toward her",
+    "emotional_weight": 4,
+    "tags": [
+      "surveillance",
+      "control",
+      "professionalism"
+    ],
+    "timestamp": "2026-04-20T00:51:34.1430975Z"
+  },
+  {
+    "id": "019da85f",
+    "beat_index": 3,
+    "type": "action",
+    "summary": "Mehdi deliberately lets the passenger line thin, then steps back from the gate to face the tracks.",
+    "participants": [
+      "Mehdi"
+    ],
+    "location": "Kessler Interchange, departure gate",
+    "object": "",
+    "consequence": "Creates a controlled space for a private exchange, signaling she is choosing to engage",
+    "emotional_weight": 4,
+    "tags": [
+      "control",
+      "deliberateness",
+      "power"
+    ],
+    "timestamp": "2026-04-20T00:51:34.1430977Z"
+  },
+  {
+    "id": "019da85f",
+    "beat_index": 3,
+    "type": "dialogue",
+    "summary": "Mehdi tells Echo and Remi she knows they are carrying an envelope and have been walking like people with a burden, without looking at them.",
+    "participants": [
+      "Mehdi",
+      "Echo",
+      "Remi"
+    ],
+    "location": "Kessler Interchange, platform edge",
+    "object": "envelope",
+    "consequence": "Reveals Mehdi already knows why they are there and holds the informational advantage",
+    "emotional_weight": 6,
+    "tags": [
+      "surveillance",
+      "power imbalance",
+      "tension",
+      "knowledge"
+    ],
+    "timestamp": "2026-04-20T00:51:34.1430984Z"
+  },
+  {
+    "id": "019da85f",
+    "beat_index": 3,
+    "type": "revelation",
+    "summary": "Mehdi reveals she knows the specific details of the courier who delivered the envelope \u2014 silver-blue lanyard, Tessera compliance, four-digit suffix \u2014 and that Echo and Remi want to know the number on the badge.",
+    "participants": [
+      "Mehdi",
+      "Echo",
+      "Remi"
+    ],
+    "location": "Kessler Interchange, platform edge",
+    "object": "badge, envelope",
+    "consequence": "Confirms Mehdi has intelligence they need and has been expecting or monitoring this situation",
+    "emotional_weight": 8,
+    "tags": [
+      "revelation",
+      "knowledge",
+      "surveillance",
+      "leverage",
+      "trust"
+    ],
+    "timestamp": "2026-04-20T00:51:34.1430986Z"
+  }
+]

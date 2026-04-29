@@ -32,7 +32,7 @@ public class FileSystemPathProvider : IPathProvider
             ? v
             : Path.Combine(EngineRoot, "data"));
 
-    public string StoriesDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Stories));
+    public string ChaptersDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Chapters));
     public string BooksDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Books));
     public string SeriesDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Series));
     public string GraphDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Graph));

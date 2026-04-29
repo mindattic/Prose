@@ -76,7 +76,7 @@ public abstract class DataScanUtility
                 !f.Contains(Path.DirectorySeparatorChar + "archives" + Path.DirectorySeparatorChar) &&
                 !f.Contains(Path.DirectorySeparatorChar + "graph"    + Path.DirectorySeparatorChar) &&
                 !f.Contains(Path.DirectorySeparatorChar + "logs"     + Path.DirectorySeparatorChar) &&
-                !f.Contains(Path.DirectorySeparatorChar + "stories"  + Path.DirectorySeparatorChar))
+                !f.Contains(Path.DirectorySeparatorChar + "chapters" + Path.DirectorySeparatorChar))
             .ToArray();
 
         if (repos is { Length: > 0 })

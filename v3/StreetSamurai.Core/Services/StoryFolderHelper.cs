@@ -4,10 +4,10 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Shared logic for finding and creating story folders.
-/// Convention: stories/{guid}/
-/// Files inside: story.json, checkpoint.json, outline.json, events.json, knowledge.json
-/// Title lives inside story.json — folder name is just the project ID.
+/// Shared logic for finding and creating chapter folders.
+/// Convention: chapters/{guid}/
+/// Files inside: chapter.json, checkpoint.json, outline.json, events.json, knowledge.json
+/// Title lives inside chapter.json — folder name is just the project ID.
 /// </summary>
 public static partial class StoryFolderHelper
 {
@@ -50,7 +50,7 @@ public static partial class StoryFolderHelper
         return File.Exists(path) ? path : null;
     }
 
-    /// <summary>Build folder name — just the project ID. Title lives inside story.json.</summary>
+    /// <summary>Build folder name — just the project ID. Title lives inside chapter.json.</summary>
     public static string BuildFolderName(string projectId, string? title = null)
     {
         return projectId;
