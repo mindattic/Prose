@@ -118,9 +118,13 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();
         services.AddSingleton<ViewModeService>();
-        services.AddSingleton<LoreTripleService>();
-        services.AddSingleton<LoreTripleExtractionService>();
-        services.AddSingleton<LoreTripleResolutionService>();
+        // Unified continuity store — atomic (entity, predicate, object) claims
+        // extracted from chapter prose AND entity records via Legion Quorum.
+        // One SQLite at engine/data/continuity.db. Replaces the prior
+        // LoreTriple* services (now removed).
+        services.AddSingleton<ContinuityService>();
+        services.AddSingleton<ContinuityExtractionService>();
+        services.AddSingleton<ContinuityApplyService>();
         services.AddSingleton<StoryMethodologyService>();
         services.AddSingleton<CharacterPipelineService>();
         services.AddSingleton<WorldConsistencyService>();

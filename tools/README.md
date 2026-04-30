@@ -5,6 +5,18 @@ in-app pipeline (`StreetSamurai.Server` + the MCP server) by providing
 bash-callable analyzers that future Claude Code sessions can run without
 touching the C# build.
 
+> **Note** — the prior `extract-lore-triples.js` and
+> `nightly-lore-triple-sweep.cmd` were retired on 2026-04-30 when the unified
+> `ContinuityService` + `ContinuityExtractionService` + `ContinuityApplyService`
+> took over. Run continuity operations via the C# CLI (`dotnet run --project
+> StreetSamurai.Blazor -- --continuity ...`) or the `/continuity` UI page,
+> or via the MCP tools `extract_continuity_from_chapter` /
+> `extract_continuity_from_book` / `list_continuity_contradictions` /
+> `resolve_continuity_contradiction` / `apply_continuity_claim`. The old
+> per-entity JSON store at `engine/data/continuity/*.json` was migrated into
+> `engine/data/continuity.db` and is now legacy backup; leave it in place
+> until you've verified the new store has everything you need.
+
 ## check-contradictions.js
 
 Reads a chapter, builds a canon-context bundle from the entities the chapter

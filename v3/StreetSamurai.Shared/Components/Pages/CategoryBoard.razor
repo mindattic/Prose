@@ -140,8 +140,7 @@ else
         {
             list.Add(new("bi-book",            "/books",        "Bookshelf",     0, true, "Every book in the project. Pick one to drill into chapters, outline, motifs, review, and continuity."));
             list.Add(new("bi-collection",      "/series",       "Series",        0, true, "Group books into multi-book arcs. Stub for now; future home for series-level outlines and continuity."));
-            list.Add(new("bi-lightbulb",       "/lore-triples", "Lore Triples",  0, true, "Subject-Predicate-Object knowledge graph extracted from worldbuilding entity records. Embedding-clustered consensus on canon facts; flags inconsistent values across sources for repair."));
-            list.Add(new("bi-database-check",  "/continuity",   "Continuity",    0, true, "Atomic facts extracted from chapter prose, organized per book. Surfaces contradictions (handedness, gear placement, ages, locations) and lets you resolve A / B / custom before treating the book as canon."));
+            list.Add(new("bi-database-check",  "/continuity",   "Continuity",    0, true, "Unified atomic-claim store. Extracts (entity, predicate, object) triples from chapter prose AND entity records via Legion Quorum, surfaces contradictions automatically, lets you resolve A / B / custom, and applies the agreed value back to the entity record (Legion picks the field)."));
         }
         return list;
     }

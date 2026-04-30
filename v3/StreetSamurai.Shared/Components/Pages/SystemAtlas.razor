@@ -72,7 +72,7 @@
             <div class="atlas-bid-col">
                 <strong class="text-warning">Story → Canon</strong>
                 <ul class="small">
-                    <li>LoreTripleExtractionService surfaces new SPO triples from entity records for promotion to canon</li>
+                    <li>ContinuityExtractionService surfaces new (entity, predicate, object) claims from chapter prose AND entity records, flags contradictions, and applies the agreed value back to entity files</li>
                     <li>EntityExtractionService finds new named entities in chapters</li>
                     <li>Co-Writer drawer can propose canon edits during writing — challenges conflicts, lets user override and propagates</li>
                     <li>WorldGraph auto-rebuilds on detected canon-data drift (file mtime newer than graph)</li>
@@ -432,9 +432,9 @@ engine/data/
         new("LLMVotingService", "Multi-LLM Backbone",
             "Sourced from MindAttic.Legion (singular project for multi-LLM). VoteAsync + ScoreAsync with Quorum thresholds. No homebrew voting in the project.",
             "MindAttic.Legion/Services/LLMVotingService.cs"),
-        new("LoreTripleExtractionService", "Entity → Canon Bridge",
-            "Reads chapter prose, extracts factual claims about characters/places. Feeds the bidirectional loop — story content can become canon.",
-            "Core/Services/LoreTripleExtractionService.cs"),
+        new("ContinuityService + ContinuityExtractionService + ContinuityApplyService", "Unified Truth Loop",
+            "One SQLite store of atomic (entity, predicate, object) claims. Extraction reads chapter prose AND entity records via Legion Quorum; contradictions flagged automatically; resolution flow picks a winner; ContinuityApplyService uses Legion.DecideAsync to write the agreed value back to the entity file (the source of truth).",
+            "Core/Services/ContinuityService.cs"),
         new("ContinuityValidatorService", "Hard-Break Detection",
             "Catches injuries that vanish, characters teleporting, timeline contradictions. Runs as part of review.",
             "Core/Services/ContinuityValidatorService.cs"),

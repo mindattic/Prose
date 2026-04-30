@@ -23,10 +23,14 @@ v3/
   StreetSamurai.UnitTests/     ~840 tests across 20+ test classes.
   generate_world.js            Node.js world content generation pipeline.
 tools/
-  check-contradictions.js      Legion-Quorum contradiction sweep (chapter or book mode).
-  extract-facts.js             Fact extraction + per-entity fact store + A/B/custom resolution.
-  nightly-fact-sweep.cmd       Windows scheduled task entry point (1am daily).
+  check-contradictions.js      Legion-Quorum chapter-vs-canon contradiction sweep (EPISTEMIC / TEMPORAL / CAPABILITY / CANON).
 ```
+
+The continuity claim pipeline (extract / contradictions / resolve / apply) is now in-process under
+`v3/StreetSamurai.Core/Services/Continuity*Service.cs`, with a CLI surface at
+`dotnet run --project v3/StreetSamurai.Blazor -- --continuity ...`. The prior
+`tools/extract-lore-triples.js` and `tools/nightly-lore-triple-sweep.cmd`
+were retired on 2026-04-30.
 
 External dependencies the writing pipeline shells to:
 - `MindAttic.Legion` (D:/Projects/MindAttic/MindAttic.Legion) — Quorum voting CLI for contradiction detection and fact extraction. Now scoped to Claude / OpenAI / Gemini / Deepseek with auto-refill of failed voter slots.
@@ -993,55 +997,114 @@ Tools are grouped by `[McpServerToolType]` class. Auto-discovered by `WithToolsF
 
 `get_director_context` is still the highest-value writing-context tool — it builds the "WHERE WE ARE" block (prior chapters' content, this chapter's outline, upcoming setup needs, open book-level threads) that the Director uses inside the Blazor host.
 
-### Continuity & Fact Extraction
+### Continuity (unified)
 
-The contradiction detector and the fact extractor share a common pattern: a Node CLI under `tools/` is the canonical implementation, the MCP tool shells out to it, and the Blazor UI does the same. This keeps a single Legion-call code path and avoids duplicating prompt logic in three places.
+> **Rebuilt 2026-04-30.** The prior trio of overlapping systems (per-entity JSON continuity store, SQLite lore-triples DB, ephemeral contradiction finder) is gone. There is **one** continuity system now — one DB, one service trio, one page, one MCP file. Four verbs: *find what's true → write it to entities → scan for contradictions → correct them.*
 
-- `tools/check-contradictions.js` — feeds canon context + draft prose into a Quorum vote with a contradiction-finding rubric. Reads an `EXTRACTED FACTS (treat as canon)` block from the fact store so canonical attributes (handedness, weapon carry positions, ages, etc.) appear in capitals at the top of the canon context. Voters no longer have to infer canon from a 250k-char haystack.
-- `tools/extract-facts.js` — extracts atomic factual assertions from prose (predicates like `weapon_carry_location_gun`, `handedness`, `lives_at`), validates each fact's snippet against the source, and upserts into `engine/data/continuity/<entity_id>.json`. Lifecycle: NEW → CONFIRMED (re-extracted from another chapter) | CONTRADICTED (same predicate, different object) → resolved to CANONICAL | REJECTED | SUPERSEDED.
-- Resolution: `extract-facts.js --mode resolve --fact-a <id> --fact-b <id> --winner A|B|custom [--custom-object "<value>"]`. Also reachable via the `resolve_contradiction` MCP tool and the `/books/{id}/continuity` UI page (or `/continuity` for the cross-book picker).
-- Quorum was scoped (in `MindAttic.Legion.VotingConfiguration.AllowedProviderIds`) to Claude / OpenAI / Gemini / Deepseek for cost/quality. `LLMVotingService.RefillFailedVotersAsync` round-robins failed voter slots across surviving allowed providers so a brief outage doesn't drop quorum size.
+**Storage.** `engine/data/continuity.db` (SQLite). `claims` table holds atomic (entity, predicate, object) rows from any source (`prose`, `entity_record`, `writer_assertion`); `claim_contradictions` and `claim_confirmations` are junction tables; `extraction_runs` is the audit log.
 
-A nightly Windows scheduled task (`tools/nightly-fact-sweep.cmd`, 01:00 America/Chicago) runs the full Bushido Coda fact sweep locally, commits the fact-store delta, and pushes it. A daily cloud audit routine cross-checks the committed state and surfaces any new CONTRADICTED facts since the prior commit.
+**Services** (`v3/StreetSamurai.Core/Services/`):
+- `ContinuityService` — schema, upsert (auto-flags `(entity, predicate)` collisions as CONTRADICTED), GetByStatus/GetByEntity/GetContradictions, Resolve(A|B|custom), MarkApplied, MigrateLegacyJson.
+- `ContinuityExtractionService` — calls `LLMVotingService.VoteAsync` (Legion Quorum) on chapter prose or entity records; validates each candidate's snippet against the source; resolves entity name → entity_id via the typed repos; upserts.
+- `ContinuityApplyService` — uses **`LLMVotingService.DecideAsync`** (added to Legion this session) to pick which entity-file field should hold a CANONICAL claim. Sets string fields, appends to array fields, or appends to a `continuity_facts[]` array on the entity if no field fits.
 
-### Running the contradiction scan end-to-end
+**Status lifecycle.** NEW → CONFIRMED (re-extracted from another source) | CONTRADICTED (same predicate, different object on the same entity) → resolved to CANONICAL or REJECTED. CANONICAL claims can be applied to the entity record (sets `applied_at` and `applied_to_field`).
 
-The flow is: **first extract facts, then look for contradictions, then resolve.** Three ways to kick this off, ranked by speed.
+**Snippet validation.** Every extracted claim must contain a substring that exists in the source prose / entity record. Hallucinations are filtered before upsert.
 
-#### Fastest — run it manually right now
+**Provider quorum** (unchanged from prior system): `MindAttic.Legion.VotingConfiguration.AllowedProviderIds` whitelist (default `{claude, openai, gemini, deepseek}`); `LLMVotingService.RefillFailedVotersAsync` round-robins failed slots across surviving providers so brief outages don't drop quorum size.
 
-```
-cd D:\Projects\MindAttic\StreetSamurai
-node tools/extract-facts.js eb91080d9c9c4f2b9b405fa5996bdea1 --mode book --max-tokens 4096
-```
+### Continuity CLI
 
-This dispatches one Legion vote per chapter (~6 votes for Bushido Coda) and writes everything to `engine/data/continuity/<entity_id>.json`. Takes a few minutes; cost is ~$2-4 in API calls. When it finishes, exit code 1 means contradictions exist; exit 0 means clean.
-
-Then open the resolution panel:
+From the repo root (`D:\Projects\MindAttic\StreetSamurai`), every continuity operation has a CLI subcommand. Same code path the `/continuity` UI and MCP tools use.
 
 ```
-https://localhost:7103/books/eb91080d9c9c4f2b9b405fa5996bdea1/continuity
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity <subcommand>
 ```
 
-You'll see every contradicted pair with A/B/Custom buttons.
+**Subcommands:**
 
-#### Via the UI — same thing, one click
+```powershell
+# One-time pull from engine/data/continuity/*.json into the new SQLite (idempotent)
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity migrate
 
-1. `dotnet run --project v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj` (or however you start the Blazor host)
-2. Navigate to `/books/eb91080d9c9c4f2b9b405fa5996bdea1` (Bushido Coda)
-3. Click the **Extract Facts** button in the toolbar
-4. Wait for the status line to show `N new · M confirmed · X contradiction(s)` — clicking the warning badge isn't wired, but the dedicated panel is at `/books/eb91080d9c9c4f2b9b405fa5996bdea1/continuity`
-5. Resolve each contradiction in the panel
+# Counts: total / NEW / CONFIRMED / CONTRADICTED / CANONICAL / REJECTED + sources breakdown
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity stats
 
-#### Wait until tonight — the scheduled task does it
+# List every CONTRADICTED pair awaiting resolution (entity, predicate, A vs B + uids)
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity contradictions
 
-The Windows Scheduled Task fires at **01:00 America/Chicago** nightly. It runs the same command, commits the fact store, and pushes. The next morning you can open the panel and resolve. The cloud audit at midnight will then summarize state diffs daily.
+# Resolve one contradiction (uids come from the previous command)
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity resolve --a <uidA> --b <uidB> --winner A
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity resolve --a <uidA> --b <uidB> --winner B
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity resolve --a <uidA> --b <uidB> --winner custom --object "low left hip" --note "matches ch.1 + ch.4"
 
-#### Recommended
+# Dump every claim about one entity (by exact name)
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity entity "Kyle Ellen Corbin-Vasik"
 
-Run the manual command now (option 1). The CLI shows progress per chapter; you'll see exactly which chapters land facts and which trigger contradictions. Then open the resolution panel to walk them down. The scheduled task tonight will pick up from wherever you leave it.
+# Extract claims from one chapter's prose (Legion Quorum vote — minutes; ~$0.50–$1 in API)
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity extract --chapter <chapterId>
 
-**One caveat:** the first run typically produces lots of CONTRADICTED facts that aren't real contradictions — they're voters phrasing the same fact slightly differently (e.g. `"low left hip"` vs `"left hip"`). Those will all surface in the panel. Resolving with **Custom** to write a canonical phrasing is the cleanest path; **A** or **B** also works fine. After the first cleanup pass, subsequent nightly runs will be much quieter.
+# Extract from every chapter in a book (sequential — long-running; ~$2–$4 for Bushido Coda)
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity extract --book <bookId>
+
+# Extract from one entity record file (top-level scalars + Legion vote on prose fields)
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity extract --entity engine/data/people/<id>.json
+
+# Apply a CANONICAL claim back to its entity record (Legion picks the field)
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity apply --claim <claimUid>
+
+# ── ONE-SHOT END-TO-END PIPELINE ─────────────────────────────────────────────
+# Extracts from every entity record + every chapter, auto-resolves every
+# contradiction via Legion DecideAsync, and applies every CANONICAL claim
+# back to its entity record. Long-running and expensive — wraps the whole
+# four-verb workflow in one command.
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity sweep
+
+# Scope to one book's chapters (still extracts from all entity records first)
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity sweep --book <bookId>
+
+# Selective skips
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity sweep --skip-records   # only chapters
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity sweep --skip-prose     # only entity records
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity sweep --skip-resolve   # extract but don't auto-resolve
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity sweep --skip-apply     # resolve but don't write to entities
+
+# Plan + extract only (no resolve, no apply) — safe to iterate on
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity sweep --dry-run
+```
+
+Exit codes match prior conventions: `0` clean, `1` contradictions present (extract + contradictions modes), other = pipeline error.
+
+**End-to-end flow.** The four verbs the system promises — *find truth → write to entities → find contradictions → correct them* — collapse into:
+
+```powershell
+dotnet run --project v3/StreetSamurai.Blazor -- --continuity sweep
+```
+
+That command does all four:
+1. **Extract from every entity record** in `engine/data/{people,places,factions,corponations}/*.json` (top-level scalars become claims directly; prose fields like `description` / `personality` / `ideology` go through Legion Quorum).
+2. **Extract from every chapter's prose** (or scope to one book with `--book <id>`).
+3. **Auto-resolve every CONTRADICTED pair** via `LLMVotingService.DecideAsync` — the panel sees both options, both snippets, and the source provenance, then picks A or B. If the panel doesn't pick a clean winner, that pair is left CONTRADICTED for human review in the UI.
+4. **Apply every CANONICAL claim** back to its entity record. `ContinuityApplyService` calls `DecideAsync` again to pick which field on the entity JSON should hold the value (string fields are set, array fields are appended to, otherwise the claim lands in a `continuity_facts[]` array on the entity).
+
+If you want manual control over any step, run the granular subcommands instead (`extract` → review in `/continuity` UI → `resolve` → `apply`). The `sweep` command is the same code path with auto-resolve + auto-apply on top.
+
+**One caveat:** the first extraction pass typically surfaces CONTRADICTED claims that aren't true conflicts — voters phrase the same fact slightly differently (`"low left hip"` vs `"left hip"`). Resolve those with **custom** to write a canonical phrasing; subsequent runs will be much quieter.
+
+### MCP tools for continuity
+
+Same engine, exposed via `mcp__streetsamurai__*` for Claude Code:
+
+- `extract_continuity_from_chapter` (chapterId, quorum, maxTokens, minVoters)
+- `extract_continuity_from_book` (bookId, quorum, maxTokens, minVoters)
+- `extract_continuity_from_entity_record` (filePath)
+- `get_continuity_claims` (entity?, status?)
+- `list_continuity_contradictions`
+- `resolve_continuity_contradiction` (aUid, bUid, winner, customObject?, note?)
+- `apply_continuity_claim` (claimUid)
+
+All in-process — no Node shell-out. The chapter-vs-canon `find_contradictions` MCP tool (EPISTEMIC / TEMPORAL / CAPABILITY / CANON narrative sweep) lives separately in `Tools.Continuity.cs` and is unchanged — different concern from the atomic-claim contradiction detection above.
 
 ### Toggle Model -- One-Time Registration, Not Per-Session
 
