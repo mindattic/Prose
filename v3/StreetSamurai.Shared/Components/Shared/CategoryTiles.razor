@@ -168,13 +168,8 @@
             </a>
             @if (Access.IsContributor)
             {
-                <a href="/lore-triples" class="board-tile board-tile-tool"
-                   title="Lore Triples — Subject-Predicate-Object knowledge graph extracted from worldbuilding entity records. Embedding-clustered consensus on canon facts; flags inconsistent values across sources for repair.">
-                    <i class="bi bi-lightbulb board-tile-icon"></i>
-                    <div class="board-tile-name">Lore Triples</div>
-                </a>
                 <a href="/continuity" class="board-tile board-tile-tool"
-                   title="Continuity — atomic facts extracted from chapter prose, organized per book. Surfaces contradictions (handedness, gear placement, ages, locations) and lets you resolve A / B / custom before treating the book as canon.">
+                   title="Continuity — unified atomic-claim store. Extracts (entity, predicate, object) triples from chapter prose AND entity records via Legion Quorum, surfaces contradictions, lets you resolve A / B / custom, and applies the agreed value back to the entity record.">
                     <i class="bi bi-database-check board-tile-icon"></i>
                     <div class="board-tile-name">Continuity</div>
                 </a>

@@ -63,6 +63,17 @@ if (args.Contains("--book"))
     return;
 }
 
+// CLI mode: unified continuity store — migrate / stats / contradictions / resolve / entity.
+// Run `dotnet run --project StreetSamurai.Blazor -- --continuity` (no subcommand) to see full usage.
+if (args.Contains("--continuity"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = ContinuityCli.Run(args, cliApp.Services);
+    return;
+}
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Configure Serilog — daily rolling log files in engine/logs/

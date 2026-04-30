@@ -191,3 +191,4 @@ System.Text.Json.JsonException: The JSON value could not be converted to System.
    at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
    at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
    at StreetSamurai.Core.Services.JsonBookRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonBookRepository.cs:line 86
+2026-04-30 12:17:02AM [INF] StreetSamurai Blazor host started

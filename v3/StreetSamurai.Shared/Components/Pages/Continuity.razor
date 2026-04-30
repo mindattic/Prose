@@ -1,9 +1,13 @@
 @page "/continuity"
 @attribute [Authorize(Roles = "Contributor,Administrator")]
-@using System.Text.Json
 @using StreetSamurai.Core.Interfaces
+@using StreetSamurai.Core.Services
+@using MindAttic.Legion
+@inject ContinuityService Store
+@inject ContinuityExtractionService Extract
+@inject ContinuityApplyService Apply
+@inject IChapterRepository ChapterRepo
 @inject IBookRepository BookRepo
-@inject IPathProvider Paths
 @inject NavigationManager Nav
 
 <div class="d-flex justify-content-between align-items-start mb-3">
@@ -13,93 +17,368 @@
         </div>
         <h4 class="text-info mb-0"><i class="bi bi-database-check me-2"></i>Continuity</h4>
         <p class="small text-muted mb-0">
-            Atomic facts extracted from chapter prose, organized per book. Pick a book to review and resolve its contradictions.
+            One store of atomic claims about every entity, extracted from prose and entity records. Find contradictions, resolve them, and apply the truth back to the entity.
         </p>
     </div>
-</div>
-
-@if (rows.Count == 0)
-{
-    <div class="alert alert-secondary small">No books on the shelf yet.</div>
-}
-else
-{
-    <div class="row g-2">
-        @foreach (var r in rows.OrderByDescending(x => x.Contradictions).ThenBy(x => x.Title))
-        {
-            <div class="col-md-6 col-lg-4">
-                <a href="@($"/books/{r.BookId}/continuity")" class="card text-decoration-none h-100 @(r.Contradictions > 0 ? "border-warning" : "border-secondary")">
-                    <div class="card-body py-2">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <h6 class="mb-1">@r.Title</h6>
-                                <div class="small text-muted">@r.ChapterCount chapters · @r.FactCount facts</div>
-                            </div>
-                            @if (r.Contradictions > 0)
-                            {
-                                <span class="badge bg-warning text-dark">@r.Contradictions <i class="bi bi-exclamation-triangle ms-1"></i></span>
-                            }
-                            else if (r.FactCount > 0)
-                            {
-                                <span class="badge bg-success"><i class="bi bi-check"></i></span>
-                            }
-                            else
-                            {
-                                <span class="badge bg-secondary">no facts yet</span>
-                            }
-                        </div>
-                    </div>
-                </a>
-            </div>
-        }
-    </div>
-}
-
-@code {
-    private record BookRow(string BookId, string Title, int ChapterCount, int FactCount, int Contradictions);
-
-    private List<BookRow> rows = new();
-
-    protected override void OnInitialized()
-    {
-        var continuityDir = Path.Combine(Paths.EngineDataDir, "continuity");
-        var bookChapterMap = new Dictionary<string, HashSet<string>>();
-        foreach (var b in BookRepo.ListBooks())
-        {
-            bookChapterMap[b.Id] = new HashSet<string>(b.ChapterIds ?? new());
-        }
-
-        var perBookFact = bookChapterMap.ToDictionary(kv => kv.Key, _ => 0);
-        var perBookContra = bookChapterMap.ToDictionary(kv => kv.Key, _ => 0);
-
-        if (Directory.Exists(continuityDir))
-        {
-            foreach (var file in Directory.GetFiles(continuityDir, "*.json"))
-            {
-                try
+    <div class="d-flex flex-column gap-2 align-items-end">
+        <div class="d-flex gap-2 align-items-center">
+            <select class="form-select form-select-sm" style="width:280px;" @bind="extractTarget">
+                <option value="">— pick a book or chapter to extract —</option>
+                @foreach (var b in books)
                 {
-                    using var doc = JsonDocument.Parse(File.ReadAllText(file));
-                    if (!doc.RootElement.TryGetProperty("facts", out var fa) || fa.ValueKind != JsonValueKind.Array) continue;
-                    foreach (var f in fa.EnumerateArray())
+                    <option value="@($"book:{b.Id}")">📚 @b.Title</option>
+                    @foreach (var cid in b.ChapterIds ?? new())
                     {
-                        var sourceChapterId = f.TryGetProperty("source_chapter_id", out var sc) ? sc.GetString() ?? "" : "";
-                        if (string.IsNullOrEmpty(sourceChapterId)) continue;
-                        var status = f.TryGetProperty("status", out var st) ? st.GetString() ?? "" : "";
-                        foreach (var (bid, chapters) in bookChapterMap)
+                        var c = chaptersById.GetValueOrDefault(cid);
+                        if (c != null)
                         {
-                            if (!chapters.Contains(sourceChapterId)) continue;
-                            perBookFact[bid] += 1;
-                            if (status == "CONTRADICTED") perBookContra[bid] += 1;
-                            break;
+                            <option value="@($"chapter:{c.Id}")">  └─ ch.@c.Number @c.Title</option>
                         }
                     }
                 }
-                catch { /* skip malformed */ }
+            </select>
+            <button class="btn btn-sm btn-outline-primary" disabled="@(working || string.IsNullOrEmpty(extractTarget))"
+                    @onclick="RunExtraction">
+                @(working && action == "extract" ? "extracting…" : "Extract")
+            </button>
+        </div>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(status))
+{
+    <div class="alert alert-info small py-2">@status</div>
+}
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger small py-2">@errorMessage</div>
+}
+
+@* ── Stats strip ─────────────────────────────────────────── *@
+<div class="row g-2 mb-3">
+    <div class="col"><div class="continuity-stat"><div class="lbl">Total</div><div class="val text-info">@stats.Total</div></div></div>
+    <div class="col"><div class="continuity-stat"><div class="lbl">New</div><div class="val text-info">@stats.New</div></div></div>
+    <div class="col"><div class="continuity-stat"><div class="lbl">Confirmed</div><div class="val text-success">@stats.Confirmed</div></div></div>
+    <div class="col"><div class="continuity-stat"><div class="lbl">Contradicted</div><div class="val text-warning">@stats.Contradicted</div></div></div>
+    <div class="col"><div class="continuity-stat"><div class="lbl">Canonical</div><div class="val text-success">@stats.Canonical</div></div></div>
+    <div class="col"><div class="continuity-stat"><div class="lbl">Rejected</div><div class="val text-muted">@stats.Rejected</div></div></div>
+    <div class="col"><div class="continuity-stat"><div class="lbl">From prose</div><div class="val">@stats.FromProse</div></div></div>
+    <div class="col"><div class="continuity-stat"><div class="lbl">From record</div><div class="val">@stats.FromEntityRecord</div></div></div>
+</div>
+
+@* ── Contradictions panel ─────────────────────────────────── *@
+@if (contradictions.Count > 0)
+{
+    <div class="card mb-3 border-warning">
+        <div class="card-header bg-warning bg-opacity-25 d-flex justify-content-between align-items-center">
+            <strong><i class="bi bi-exclamation-triangle me-1"></i>Unresolved contradictions</strong>
+            <span class="badge bg-warning text-dark">@contradictions.Count</span>
+        </div>
+        <div class="card-body">
+            @foreach (var pair in contradictions)
+            {
+                <div class="border rounded p-2 mb-2">
+                    <div class="small text-muted mb-1">
+                        <strong>@pair.A.EntityName</strong>
+                        <span class="ms-2">predicate: <code>@pair.A.Predicate</code></span>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-md-5">
+                            <div class="border rounded p-2 h-100">
+                                <div class="small text-muted">A · @SourceLabel(pair.A) · by @string.Join(", ", pair.A.ExtractedBy)</div>
+                                <div class="fw-bold">@pair.A.Object</div>
+                                @if (!string.IsNullOrEmpty(pair.A.Snippet))
+                                {
+                                    <div class="small fst-italic text-muted">"@pair.A.Snippet"</div>
+                                }
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="border rounded p-2 h-100">
+                                <div class="small text-muted">B · @SourceLabel(pair.B) · by @string.Join(", ", pair.B.ExtractedBy)</div>
+                                <div class="fw-bold">@pair.B.Object</div>
+                                @if (!string.IsNullOrEmpty(pair.B.Snippet))
+                                {
+                                    <div class="small fst-italic text-muted">"@pair.B.Snippet"</div>
+                                }
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex flex-column gap-1">
+                            <button class="btn btn-sm btn-outline-success py-0" disabled="@working"
+                                    @onclick="@(() => DoResolve(pair, "A", null))">A wins</button>
+                            <button class="btn btn-sm btn-outline-success py-0" disabled="@working"
+                                    @onclick="@(() => DoResolve(pair, "B", null))">B wins</button>
+                            <button class="btn btn-sm btn-outline-info py-0" disabled="@working"
+                                    @onclick="@(() => OpenCustom(pair))">Custom…</button>
+                        </div>
+                    </div>
+                    @if (customOpenFor == pair.Key)
+                    {
+                        <div class="mt-2">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text">@pair.A.Predicate =</span>
+                                <input class="form-control" @bind="customValue" placeholder="agreed-upon value" />
+                                <button class="btn btn-success" disabled="@(working || string.IsNullOrWhiteSpace(customValue))"
+                                        @onclick="@(() => DoResolve(pair, "custom", customValue))">Save</button>
+                                <button class="btn btn-outline-secondary" @onclick="@(() => customOpenFor = null)">Cancel</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+}
+else if (stats.Total > 0)
+{
+    <div class="alert alert-success small py-2">
+        <i class="bi bi-check-circle me-1"></i>No unresolved contradictions.
+    </div>
+}
+
+@* ── Canonical claims awaiting apply ────────────────────── *@
+@if (pendingApply.Count > 0)
+{
+    <div class="card mb-3 border-info">
+        <div class="card-header bg-info bg-opacity-25 d-flex justify-content-between align-items-center">
+            <strong><i class="bi bi-arrow-right-circle me-1"></i>Canonical claims ready to apply to entity records</strong>
+            <span class="badge bg-info">@pendingApply.Count</span>
+        </div>
+        <div class="card-body">
+            <table class="table table-sm small mb-0">
+                <thead><tr><th>Entity</th><th>Predicate</th><th>Value</th><th></th></tr></thead>
+                <tbody>
+                    @foreach (var c in pendingApply)
+                    {
+                        <tr>
+                            <td>@c.EntityName <span class="text-muted">(@c.EntityKind)</span></td>
+                            <td><code>@c.Predicate</code></td>
+                            <td>@c.Object</td>
+                            <td class="text-end">
+                                <button class="btn btn-sm btn-outline-info py-0" disabled="@working"
+                                        @onclick="() => DoApply(c)">
+                                    @(working && applyingUid == c.ClaimUid ? "applying…" : "Apply")
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+@* ── Per-entity browser ─────────────────────────────────── *@
+<div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <strong><i class="bi bi-search me-1"></i>Browse claims</strong>
+        <input type="text" class="form-control form-control-sm" style="width:240px;"
+               placeholder="filter by entity name…" @bind="filter" @bind:event="oninput" />
+    </div>
+    <div class="card-body p-0" style="max-height:540px;overflow-y:auto;">
+        @{
+            var visible = filtered();
+        }
+        @if (visible.Count == 0)
+        {
+            <div class="text-muted text-center py-4 small">No claims match.</div>
+        }
+        else
+        {
+            <table class="table table-sm small mb-0">
+                <thead class="sticky-top" style="background:#1c2128;">
+                    <tr>
+                        <th>Entity</th>
+                        <th>Predicate</th>
+                        <th>Value</th>
+                        <th>Source</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var c in visible)
+                    {
+                        <tr class="@StatusClass(c.Status)">
+                            <td>@c.EntityName <span class="text-muted small">(@c.EntityKind)</span></td>
+                            <td><code>@c.Predicate</code></td>
+                            <td>@c.Object</td>
+                            <td class="small text-muted">@SourceLabel(c)</td>
+                            <td><span class="badge @StatusBadge(c.Status)">@c.Status</span></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+
+<style>
+    .continuity-stat { background:#1c2128; border-radius:4px; padding:8px 12px; text-align:center; }
+    .continuity-stat .lbl { font-size:.7rem; text-transform:uppercase; color:var(--bs-secondary); }
+    .continuity-stat .val { font-size:1.4rem; font-weight:600; }
+</style>
+
+@code {
+    private ContinuityStats stats = new();
+    private List<ContradictionPair> contradictions = new();
+    private List<ContinuityClaim> allClaims = new();
+    private List<ContinuityClaim> pendingApply = new();
+    private List<StreetSamurai.Core.Models.Book> books = new();
+    private Dictionary<string, StreetSamurai.Core.Models.Chapter> chaptersById = new();
+
+    private bool working;
+    private string action = "";
+    private string applyingUid = "";
+    private string status = "";
+    private string errorMessage = "";
+
+    private string extractTarget = "";
+    private string filter = "";
+    private string? customOpenFor;
+    private string customValue = "";
+
+    protected override void OnInitialized()
+    {
+        books = BookRepo.ListBooks();
+        chaptersById = ChapterRepo.ListChapters().ToDictionary(c => c.Id, c => c);
+        Reload();
+    }
+
+    private void Reload()
+    {
+        stats          = Store.GetStats();
+        contradictions = Store.GetContradictions();
+        // Most-recent claims for browser (cap at a few hundred to keep render light)
+        var pulled = new List<ContinuityClaim>();
+        foreach (var s in new[] { "NEW", "CONFIRMED", "CONTRADICTED", "CANONICAL", "REJECTED", "SUPERSEDED" })
+            pulled.AddRange(Store.GetByStatus(s));
+        allClaims = pulled.OrderByDescending(c => c.LastConfirmedAt).Take(500).ToList();
+        pendingApply = Store.GetByStatus("CANONICAL").Where(c => string.IsNullOrEmpty(c.AppliedAt)).ToList();
+    }
+
+    private List<ContinuityClaim> filtered()
+    {
+        if (string.IsNullOrWhiteSpace(filter)) return allClaims;
+        return allClaims.Where(c => c.EntityName.Contains(filter, StringComparison.OrdinalIgnoreCase)).ToList();
+    }
+
+    private async Task RunExtraction()
+    {
+        if (string.IsNullOrEmpty(extractTarget)) return;
+        working = true; action = "extract"; status = "Running extraction (this can take a while)…"; errorMessage = "";
+        try
+        {
+            if (extractTarget.StartsWith("chapter:"))
+            {
+                var cid = extractTarget["chapter:".Length..];
+                var r = await Extract.ExtractFromChapterAsync(cid);
+                status = $"Done. {r.NewClaims} new, {r.ConfirmedClaims} confirmed, {r.ContradictedClaims} new contradictions, {r.UnknownEntities.Count} unknown entity references.";
+            }
+            else if (extractTarget.StartsWith("book:"))
+            {
+                var bid = extractTarget["book:".Length..];
+                var book = BookRepo.LoadBook(bid);
+                if (book == null) throw new InvalidOperationException("Book not found");
+                var rs = await Extract.ExtractFromBookAsync(book);
+                var n = rs.Sum(r => r.NewClaims);
+                var cf = rs.Sum(r => r.ConfirmedClaims);
+                var ct = rs.Sum(r => r.ContradictedClaims);
+                status = $"Book extraction done. {n} new, {cf} confirmed, {ct} new contradictions across {rs.Count} chapters.";
+            }
+            Reload();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Extraction error: " + ex.Message;
+            status = "";
+        }
+        finally
+        {
+            working = false; action = ""; StateHasChanged();
+        }
+    }
+
+    private void OpenCustom(ContradictionPair pair)
+    {
+        customOpenFor = pair.A.ClaimUid + "|" + pair.B.ClaimUid;
+        customValue = "";
+    }
+
+    private async Task DoResolve(ContradictionPair pair, string winner, string? customObj)
+    {
+        if (winner == "custom" && string.IsNullOrWhiteSpace(customObj)) { errorMessage = "Custom requires a value."; return; }
+        working = true; action = "resolve"; errorMessage = "";
+        try
+        {
+            await Task.Run(() => Store.Resolve(pair.A.ClaimUid, pair.B.ClaimUid, winner, customObj ?? "", ""));
+            customOpenFor = null;
+            customValue = "";
+            status = $"Resolved {pair.A.EntityName}.{pair.A.Predicate} (winner: {winner}).";
+            Reload();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Resolve error: " + ex.Message;
+        }
+        finally
+        {
+            working = false; action = ""; StateHasChanged();
+        }
+    }
+
+    private async Task DoApply(ContinuityClaim claim)
+    {
+        working = true; action = "apply"; applyingUid = claim.ClaimUid; errorMessage = "";
+        try
+        {
+            var r = await Apply.ApplyAsync(claim.ClaimUid);
+            if (r.Ok)
+            {
+                status = $"Applied to {Path.GetFileName(r.EntityFile)} → {r.FieldPath} (confidence {r.DecisionConfidence:P0}).";
+                Reload();
+            }
+            else
+            {
+                errorMessage = "Apply failed: " + r.Error;
             }
         }
-
-        rows = BookRepo.ListBooks()
-            .Select(b => new BookRow(b.Id, b.Title, b.ChapterIds?.Count ?? 0, perBookFact.GetValueOrDefault(b.Id), perBookContra.GetValueOrDefault(b.Id)))
-            .ToList();
+        catch (Exception ex)
+        {
+            errorMessage = "Apply error: " + ex.Message;
+        }
+        finally
+        {
+            working = false; action = ""; applyingUid = ""; StateHasChanged();
+        }
     }
+
+    private static string SourceLabel(ContinuityClaim c)
+    {
+        return c.SourceType switch
+        {
+            "prose"           => $"prose ch.{c.SourceChapterNumber}",
+            "entity_record"   => $"record {Path.GetFileName(c.SourcePath ?? "")}",
+            "writer_assertion" => "writer",
+            _                 => c.SourceType,
+        };
+    }
+
+    private static string StatusClass(string s) => s switch
+    {
+        "CONTRADICTED" => "table-warning",
+        "REJECTED"     => "text-muted",
+        "SUPERSEDED"   => "text-muted",
+        _              => "",
+    };
+
+    private static string StatusBadge(string s) => s switch
+    {
+        "CANONICAL"    => "bg-success",
+        "CONFIRMED"    => "bg-success bg-opacity-50",
+        "NEW"          => "bg-info",
+        "CONTRADICTED" => "bg-warning text-dark",
+        "REJECTED"     => "bg-secondary",
+        "SUPERSEDED"   => "bg-secondary",
+        _              => "bg-light text-dark",
+    };
 }
