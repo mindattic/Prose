@@ -30,7 +30,7 @@
         @if (open)
         {
             <div class="ub-panel">
-                @if (Access.CanAdminister)
+                @if (Access.IsAdministrator)
                 {
                     <a href="/rules" class="user-board-tile">
                         <i class="bi bi-book"></i><span>World Rules</span>
@@ -59,7 +59,7 @@
                     <a href="/profile" class="user-board-tile">
                         <i class="bi bi-person"></i><span>Profile</span>
                     </a>
-                    @if (Access.CanWrite)
+                    @if (Access.IsContributor)
                     {
                         <a href="/books" class="user-board-tile">
                             <i class="bi bi-book"></i><span>Bookshelf</span>

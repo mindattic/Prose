@@ -1,13 +1,13 @@
-@page "/facts"
+@page "/lore-triples"
 @attribute [Authorize(Roles = "Contributor,Administrator")]
-@inject FactDiscoveryService Facts
-@inject FactExtractionService Extraction
-@inject FactResolutionService Resolution
+@inject LoreTripleService Triples
+@inject LoreTripleExtractionService Extraction
+@inject LoreTripleResolutionService Resolution
 @inject SettingsService SettingsSvc
 @implements IDisposable
 
 <div class="d-flex justify-content-between align-items-center mb-3">
-    <h4 class="text-danger mb-0">Fact Discovery</h4>
+    <h4 class="text-danger mb-0">Lore Triples</h4>
     <div class="d-flex gap-2 align-items-center">
         @if (Extraction.IsRunning)
         {
@@ -62,7 +62,7 @@
 }
 
 @* No data placeholder *@
-@if (!Facts.IsAvailable && !Extraction.IsRunning)
+@if (!Triples.IsAvailable && !Extraction.IsRunning)
 {
     <div class="card bg-dark text-light border-secondary">
         <div class="card-body text-center py-5">
@@ -74,7 +74,7 @@
 }
 
 @* Main content — shown when DB exists *@
-@if (Facts.IsAvailable)
+@if (Triples.IsAvailable)
 {
     @* Stats strip *@
     <div class="row g-2 mb-3">
@@ -272,9 +272,9 @@
 
     private void RefreshData()
     {
-        if (!Facts.IsAvailable) return;
-        stats   = Facts.GetStats();
-        flagged = Facts.GetFlagged(200, confidenceFilter);
+        if (!Triples.IsAvailable) return;
+        stats   = Triples.GetStats();
+        flagged = Triples.GetFlagged(200, confidenceFilter);
     }
 
     private void OnExtractionStateChanged()
@@ -304,15 +304,15 @@
     {
         if (string.IsNullOrWhiteSpace(searchQuery)) return;
         lastSearch    = searchQuery.Trim();
-        searchResults = Facts.QuerySubject(lastSearch);
+        searchResults = Triples.QuerySubject(lastSearch);
     }
 
     private void Dismiss(int id)
     {
-        Facts.MarkDismissed(id);
+        Triples.MarkDismissed(id);
         resolutionResults.Remove(id);
-        flagged = Facts.GetFlagged(200, confidenceFilter);
-        stats   = Facts.GetStats();
+        flagged = Triples.GetFlagged(200, confidenceFilter);
+        stats   = Triples.GetStats();
     }
 
     private async Task Resolve(FlaggedFact fact)
@@ -323,8 +323,8 @@
         {
             var result = await Resolution.ResolveAsync(fact);
             resolutionResults[fact.Id] = result;
-            flagged = Facts.GetFlagged(200, confidenceFilter);
-            stats   = Facts.GetStats();
+            flagged = Triples.GetFlagged(200, confidenceFilter);
+            stats   = Triples.GetStats();
         }
         catch (Exception ex)
         {
@@ -347,7 +347,7 @@
         if (int.TryParse(e.Value?.ToString(), out var val))
         {
             confidenceFilter = val / 100.0;
-            flagged = Facts.GetFlagged(200, confidenceFilter);
+            flagged = Triples.GetFlagged(200, confidenceFilter);
         }
     }
 

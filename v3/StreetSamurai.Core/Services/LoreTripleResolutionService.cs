@@ -16,12 +16,12 @@ namespace StreetSamurai.Core.Services;
 /// If the LLM vote overturns the consensus → the source file likely has an
 /// error; flag as "minority correct" so the author can fix it.
 /// </summary>
-public class FactResolutionService
+public class LoreTripleResolutionService
 {
     private readonly LLMVotingService voting;
-    private readonly FactDiscoveryService factDb;
+    private readonly LoreTripleService factDb;
 
-    public FactResolutionService(LLMVotingService voting, FactDiscoveryService factDb)
+    public LoreTripleResolutionService(LLMVotingService voting, LoreTripleService factDb)
     {
         this.voting = voting;
         this.factDb = factDb;

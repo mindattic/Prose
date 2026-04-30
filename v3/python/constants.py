@@ -13,7 +13,7 @@ load_dotenv()
 # ── Environment / Config ──────────────────────────────────────────────────
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 DATA_DIR = os.getenv("DATA_DIR", "../../engine/data")
-DB_PATH = os.getenv("DB_PATH", "facts.db")
+DB_PATH = os.getenv("DB_PATH", "lore-triples.db")
 CONCURRENCY = int(os.getenv("CONCURRENCY", "20"))
 MODEL = os.getenv("MODEL", "claude-haiku-4-5-20251001")
 

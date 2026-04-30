@@ -28,26 +28,20 @@
 <div class="home-sections">
 
     @* ── Writing ────────────────────────────────────────────────────── *@
-    @if (Access.CanWrite)
+    @if (Access.IsContributor)
     {
         <div class="board-section">
             <div class="board-section-label">Writing</div>
             <div class="board-grid">
-                <a href="/books" class="board-tile board-tile-tool">
+                <a href="/books" class="board-tile board-tile-tool"
+                   title="Bookshelf — every book in the project. Pick one to drill into chapters, outline, motifs, review, and continuity.">
                     <i class="bi bi-book board-tile-icon"></i>
                     <div class="board-tile-name">Bookshelf</div>
                 </a>
-                <a href="/series" class="board-tile board-tile-tool">
+                <a href="/series" class="board-tile board-tile-tool"
+                   title="Series — group books into multi-book arcs. Stub for now; future home for series-level outlines and continuity.">
                     <i class="bi bi-collection board-tile-icon"></i>
                     <div class="board-tile-name">Series</div>
-                </a>
-                <a href="/facts" class="board-tile board-tile-tool">
-                    <i class="bi bi-lightbulb board-tile-icon"></i>
-                    <div class="board-tile-name">Fact Discovery</div>
-                </a>
-                <a href="/atlas" class="board-tile board-tile-tool">
-                    <i class="bi bi-book-half board-tile-icon"></i>
-                    <div class="board-tile-name">Encyclopedia</div>
                 </a>
             </div>
         </div>
@@ -57,32 +51,38 @@
     <div class="board-section">
         <div class="board-section-label">Repositories</div>
         <div class="board-grid">
-            <a href="/board/characters" class="board-tile">
+            <a href="/board/characters" class="board-tile"
+               title="Characters — people, synthetic life (AIs / androids / robots / cyborg AIs / etc.), archetypes, and ceramic men. Browse and edit full psychology, speech patterns, behavioral rules, cyberware, and timelines.">
                 <i class="bi bi-people-fill board-tile-icon"></i>
                 <div class="board-tile-name">Characters</div>
                 <span class="board-tile-count">@charCount</span>
             </a>
-            <a href="/board/organizations" class="board-tile">
+            <a href="/board/organizations" class="board-tile"
+               title="Organizations — corporate nation-states (corponations), their subsidiaries, and non-corporate factions (gangs, syndicates, movements). Who controls what territory, and what they want.">
                 <i class="bi bi-buildings board-tile-icon"></i>
                 <div class="board-tile-name">Organizations</div>
                 <span class="board-tile-count">@orgCount</span>
             </a>
-            <a href="/board/gear" class="board-tile">
+            <a href="/board/gear" class="board-tile"
+               title="Gear — weaponry, ammunition, cyberware, equipment, apparel, genemods, and pharmaceuticals. Tactical use, manufacturer, tier, and cultural context for everything a character can carry, wear, or take.">
                 <i class="bi bi-tools board-tile-icon"></i>
                 <div class="board-tile-name">Gear</div>
                 <span class="board-tile-count">@gearCount</span>
             </a>
-            <a href="/board/world" class="board-tile">
+            <a href="/board/world" class="board-tile"
+               title="World — places (districts, buildings, landmarks), transportation (vehicles + the Pulse), materials, technology, automata (autonomous machines, NOT synthetic life), and the literary rules that govern prose.">
                 <i class="bi bi-globe2 board-tile-icon"></i>
                 <div class="board-tile-name">World</div>
                 <span class="board-tile-count">@worldCount</span>
             </a>
-            <a href="/board/culture" class="board-tile">
+            <a href="/board/culture" class="board-tile"
+               title="Culture — long-form lore documents, in-world quotes, GLMZ vocabulary, news archive, entertainment (films / books / music), and consumer goods. The texture of daily life in 2200.">
                 <i class="bi bi-palette2 board-tile-icon"></i>
                 <div class="board-tile-name">Culture</div>
                 <span class="board-tile-count">@cultureCount</span>
             </a>
-            <a href="contracts" class="board-tile">
+            <a href="contracts" class="board-tile"
+               title="Contracts — freelance contract registry. Generated jobs with twists, moral dilemmas, and persistent reputation/consequence effects across stories.">
                 <i class="bi bi-file-earmark-check board-tile-icon"></i>
                 <div class="board-tile-name">Contracts</div>
                 <span class="board-tile-count">@contractCount</span>
@@ -94,22 +94,26 @@
     <div class="board-section">
         <div class="board-section-label">World Data</div>
         <div class="board-grid">
-            <a href="quotes" class="board-tile board-tile-data">
+            <a href="quotes" class="board-tile board-tile-data"
+               title="Quotes — in-world quotations attributed to characters, documents, or sources. Pull-quote material for chapters and epigraphs.">
                 <i class="bi bi-quote board-tile-icon"></i>
                 <div class="board-tile-name">Quotes</div>
                 <span class="board-tile-count">@quoteCount</span>
             </a>
-            <a href="vocabulary" class="board-tile board-tile-data">
+            <a href="vocabulary" class="board-tile board-tile-data"
+               title="Vocabulary — GLMZ-specific terminology: street slang, corporate jargon, technical terms with definitions and usage context. The dictionary the world speaks.">
                 <i class="bi bi-chat-quote board-tile-icon"></i>
                 <div class="board-tile-name">Vocabulary</div>
                 <span class="board-tile-count">@vocabCount</span>
             </a>
-            <a href="archetypes" class="board-tile board-tile-data">
+            <a href="archetypes" class="board-tile board-tile-data"
+               title="Archetypes — psychological / narrative archetype templates with trait weights. Used to seed character generation and anchor recurring patterns.">
                 <i class="bi bi-person-bounding-box board-tile-icon"></i>
                 <div class="board-tile-name">Archetypes</div>
                 <span class="board-tile-count">@archetypeCount</span>
             </a>
-            <a href="rules" class="board-tile board-tile-data">
+            <a href="rules" class="board-tile board-tile-data"
+               title="World Rules — hard prose constraints injected into every generation call as NON-NEGOTIABLE. Sentence length limits, banned cliches, grounded-prose requirements.">
                 <i class="bi bi-book board-tile-icon"></i>
                 <div class="board-tile-name">World Rules</div>
             </a>
@@ -120,19 +124,23 @@
     <div class="board-section">
         <div class="board-section-label">Visualizations</div>
         <div class="board-grid">
-            <a href="graph" class="board-tile board-tile-viz">
+            <a href="graph" class="board-tile board-tile-viz"
+               title="World Graph — 2D D3 force-directed view of every entity and relationship. Pan, zoom, click any node to drill in.">
                 <i class="bi bi-diagram-3 board-tile-icon"></i>
                 <div class="board-tile-name">World Graph</div>
             </a>
-            <a href="graph-3d" class="board-tile board-tile-viz">
+            <a href="graph-3d" class="board-tile board-tile-viz"
+               title="World Graph 3D — three-dimensional rendering of the same graph. Spatial clustering reveals tight subgraphs the 2D view smushes flat.">
                 <i class="bi bi-bounding-box board-tile-icon"></i>
                 <div class="board-tile-name">World Graph 3D</div>
             </a>
-            <a href="map" class="board-tile board-tile-viz">
+            <a href="map" class="board-tile board-tile-viz"
+               title="Map — geographic layout of GLMZ districts and exits. Zork-style directional travel between places, computed from real coordinates.">
                 <i class="bi bi-map-fill board-tile-icon"></i>
                 <div class="board-tile-name">Map</div>
             </a>
-            <a href="heritage" class="board-tile board-tile-viz">
+            <a href="heritage" class="board-tile board-tile-viz"
+               title="Heritage — ethnic / genetic ancestry heatmap of the cast. Visualizes the Ubiquitous Diaspora across every named character.">
                 <i class="bi bi-tree-fill board-tile-icon"></i>
                 <div class="board-tile-name">Heritage</div>
             </a>
@@ -143,15 +151,34 @@
     <div class="board-section">
         <div class="board-section-label">Tools</div>
         <div class="board-grid">
-            <a href="dashboard" class="board-tile board-tile-tool">
+            <a href="/dashboard" class="board-tile board-tile-tool"
+               title="Dashboard — live overview: entity counts across all repositories, world-graph size, story counts, configured-service status. Your at-a-glance health check.">
                 <i class="bi bi-speedometer2 board-tile-icon"></i>
                 <div class="board-tile-name">Dashboard</div>
             </a>
-            <a href="oracle" class="board-tile board-tile-tool">
-                <i class="bi bi-book-half board-tile-icon"></i>
+            <a href="/oracle" class="board-tile board-tile-tool"
+               title="World Oracle — ask factual questions about GLMZ in natural language. Answers grounded strictly in documented canon. Refuses to speculate when the data isn't there.">
+                <i class="bi bi-question-circle board-tile-icon"></i>
                 <div class="board-tile-name">World Oracle</div>
             </a>
-            @* Stories / Bookshelf / Fact Discovery moved to the Writing section above. *@
+            <a href="/atlas" class="board-tile board-tile-tool"
+               title="Atlas — system-wide directory of every entity type, service, and architectural component. The whole codebase + canon expressed as a hierarchy.">
+                <i class="bi bi-book-half board-tile-icon"></i>
+                <div class="board-tile-name">Atlas</div>
+            </a>
+            @if (Access.IsContributor)
+            {
+                <a href="/lore-triples" class="board-tile board-tile-tool"
+                   title="Lore Triples — Subject-Predicate-Object knowledge graph extracted from worldbuilding entity records. Embedding-clustered consensus on canon facts; flags inconsistent values across sources for repair.">
+                    <i class="bi bi-lightbulb board-tile-icon"></i>
+                    <div class="board-tile-name">Lore Triples</div>
+                </a>
+                <a href="/continuity" class="board-tile board-tile-tool"
+                   title="Continuity — atomic facts extracted from chapter prose, organized per book. Surfaces contradictions (handedness, gear placement, ages, locations) and lets you resolve A / B / custom before treating the book as canon.">
+                    <i class="bi bi-database-check board-tile-icon"></i>
+                    <div class="board-tile-name">Continuity</div>
+                </a>
+            }
         </div>
     </div>
 

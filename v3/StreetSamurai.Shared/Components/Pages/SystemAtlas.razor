@@ -72,7 +72,7 @@
             <div class="atlas-bid-col">
                 <strong class="text-warning">Story → Canon</strong>
                 <ul class="small">
-                    <li>FactExtractionService surfaces new facts in prose for promotion to canon</li>
+                    <li>LoreTripleExtractionService surfaces new SPO triples from entity records for promotion to canon</li>
                     <li>EntityExtractionService finds new named entities in chapters</li>
                     <li>Co-Writer drawer can propose canon edits during writing — challenges conflicts, lets user override and propagates</li>
                     <li>WorldGraph auto-rebuilds on detected canon-data drift (file mtime newer than graph)</li>
@@ -432,9 +432,9 @@ engine/data/
         new("LLMVotingService", "Multi-LLM Backbone",
             "Sourced from MindAttic.Legion (singular project for multi-LLM). VoteAsync + ScoreAsync with Quorum thresholds. No homebrew voting in the project.",
             "MindAttic.Legion/Services/LLMVotingService.cs"),
-        new("FactExtractionService", "Story → Canon Bridge",
+        new("LoreTripleExtractionService", "Entity → Canon Bridge",
             "Reads chapter prose, extracts factual claims about characters/places. Feeds the bidirectional loop — story content can become canon.",
-            "Core/Services/FactExtractionService.cs"),
+            "Core/Services/LoreTripleExtractionService.cs"),
         new("ContinuityValidatorService", "Hard-Break Detection",
             "Catches injuries that vanish, characters teleporting, timeline contradictions. Runs as part of review.",
             "Core/Services/ContinuityValidatorService.cs"),

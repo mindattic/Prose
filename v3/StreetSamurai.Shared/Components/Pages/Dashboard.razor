@@ -15,7 +15,7 @@
 <div class="row g-3 mt-2">
 
     @* ── Story Engine ────────────────────────────────────── *@
-    @if (Access.CanWrite)
+    @if (Access.IsContributor)
     {
         <div class="col-12">
             <div class="card bg-dark text-light border-secondary">
@@ -82,7 +82,7 @@
         </div>
     }
 
-    @if (Access.CanWrite)
+    @if (Access.IsContributor)
     {
         @* ── Stories ────────────────────────────────────────── *@
         <div class="col-md-4">

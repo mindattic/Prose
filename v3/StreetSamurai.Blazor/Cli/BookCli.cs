@@ -17,7 +17,7 @@ namespace StreetSamurai.Blazor.Cli;
 ///   ss --book review &lt;bookId&gt;
 ///   ss --book apply &lt;bookId&gt; &lt;findingId&gt;
 ///   ss --book export &lt;bookId&gt; [--format epub|html|md]
-///   ss --book delete &lt;bookId&gt;
+///   ss --book archive &lt;bookId&gt; --confirm &lt;bookId&gt;
 ///
 /// Every operation matches what the chapters page does in the UI — parity, not divergence.
 /// </summary>
@@ -44,7 +44,7 @@ public static class BookCli
             "review"   => await CmdReview(rest, services.GetRequiredService<IBookReviewService>()),
             "apply"    => await CmdApply(rest, services.GetRequiredService<IBookReviewService>()),
             "export"   => CmdExport(rest, services.GetRequiredService<BookExportService>()),
-            "delete"   => CmdDelete(rest, bookRepo),
+            "archive"  => CmdArchive(rest, bookRepo),
             _          => Fail($"unknown subcommand: {sub}"),
         };
     }
@@ -196,12 +196,22 @@ public static class BookCli
         }
     }
 
-    static int CmdDelete(string[] args, IBookRepository repo)
+    static int CmdArchive(string[] args, IBookRepository repo)
     {
-        if (args.Length == 0) return Fail("usage: --book delete <bookId>");
+        if (args.Length == 0) return Fail("usage: --book archive <bookId> --confirm <bookId>");
         var book = ResolveBook(args[0], repo);
         if (book == null) return 1;
-        repo.DeleteBook(book.Id);
+
+        // Require the user to retype the full book id as a confirmation token —
+        // matches the UI modal so accidental archives can't slip through automation.
+        var confirm = ArgValue(args, "--confirm");
+        if (string.IsNullOrEmpty(confirm) || !string.Equals(confirm, book.Id, StringComparison.Ordinal))
+        {
+            Console.Error.WriteLine($"[book] archive aborted — pass --confirm {book.Id} to proceed");
+            return 2;
+        }
+
+        repo.ArchiveBook(book.Id);
         Console.Error.WriteLine($"[book] archived '{book.Title}' ({book.Id})");
         return 0;
     }
@@ -253,9 +263,11 @@ public static class BookCli
           --book review <bookId>
           --book apply <bookId> <findingId>
           --book export <bookId> [--format epub|html|md]
-          --book delete <bookId>
+          --book archive <bookId> --confirm <bookId>
 
         Book ids accept the full guid, an 8-char prefix, or an exact title match (when unambiguous).
+        Archive moves the book file to engine/data/archives/books/. The --confirm token must be the
+        full 32-char guid of the same book; this guard mirrors the UI's type-the-id modal.
         Operation status messages go to stderr; result data (book json, file paths) goes to stdout.
         """);
 }

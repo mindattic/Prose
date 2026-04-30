@@ -118,9 +118,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();
         services.AddSingleton<ViewModeService>();
-        services.AddSingleton<FactDiscoveryService>();
-        services.AddSingleton<FactExtractionService>();
-        services.AddSingleton<FactResolutionService>();
+        services.AddSingleton<LoreTripleService>();
+        services.AddSingleton<LoreTripleExtractionService>();
+        services.AddSingleton<LoreTripleResolutionService>();
         services.AddSingleton<StoryMethodologyService>();
         services.AddSingleton<CharacterPipelineService>();
         services.AddSingleton<WorldConsistencyService>();

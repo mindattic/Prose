@@ -18,7 +18,7 @@
                          class="entity-carousel-img"
                          alt="@EntityName"
                          onerror="this.classList.add('entity-carousel-img-missing')" />
-                    @if (Access.CanWrite)
+                    @if (Access.IsContributor)
                     {
                         <button class="btn btn-sm entity-carousel-archive"
                                 @onclick="async () => await ConfirmArchive(captured)"
@@ -38,7 +38,7 @@
     }
 
     @* ── Generate controls (admin only) ───────────────────────────── *@
-    @if (Access.CanWrite)
+    @if (Access.IsContributor)
     {
         <div class="entity-image-controls">
             <textarea class="form-control form-control-sm bg-dark text-light border-secondary entity-image-prompt-input"

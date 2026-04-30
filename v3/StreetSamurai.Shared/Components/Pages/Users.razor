@@ -8,7 +8,7 @@
 
 <h4 class="text-danger mb-3">User Management</h4>
 
-@if (!Access.CanAdminister)
+@if (!Access.IsAdministrator)
 {
     <div class="alert alert-danger">Administrator access required.</div>
 }

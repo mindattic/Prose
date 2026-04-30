@@ -10,7 +10,7 @@
         {
             <StarRating Value="@Rating" ValueChanged="OnStarChanged" />
         }
-        @if (Access.CanWrite)
+        @if (Access.IsContributor)
         {
             @if (editMode)
             {
@@ -28,7 +28,7 @@
     </div>
 </div>
 
-@if (editMode && Access.CanWrite)
+@if (editMode && Access.IsContributor)
 {
     @ChildContent
 }

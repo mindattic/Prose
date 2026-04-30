@@ -75,17 +75,17 @@ public class BookRepositoryTests
     }
 
     [Test]
-    public void DeleteBook_MovesToArchive_DoesNotPurge()
+    public void ArchiveBook_MovesToArchive_DoesNotPurge()
     {
         var book = new Book { Title = "Doomed" };
         books.SaveBook(book);
         Assert.That(books.LoadBook(book.Id), Is.Not.Null);
 
-        books.DeleteBook(book.Id);
+        books.ArchiveBook(book.Id);
 
         Assert.That(books.LoadBook(book.Id), Is.Null);
         var archive = Path.Combine(paths.ArchiveDir, "books", $"{book.Id}.json");
-        Assert.That(File.Exists(archive), Is.True, "Deleted book should be in archives/books/");
+        Assert.That(File.Exists(archive), Is.True, "Archived book should be in archives/books/");
     }
 
     [Test]

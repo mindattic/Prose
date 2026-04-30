@@ -182,6 +182,22 @@ public class StoryTools
     {
         return outlines.BuildDirectorContext(bookId, chapterId);
     }
+
+    [McpServerTool, Description("Archive a book: moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive — the original chapters stay in place but the book record is removed from the active shelf. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.")]
+    public string ArchiveBook(
+        [Description("Book id (32-char hex).")] string id,
+        [Description("Confirmation token — must equal the same full book id. Mismatched or missing values abort the archive.")] string confirmId)
+    {
+        var book = books.LoadBook(id);
+        if (book == null)
+            return JsonSerializer.Serialize(new { error = "not_found", id }, CanonTools.JsonOpts);
+
+        if (!string.Equals(confirmId, book.Id, StringComparison.Ordinal))
+            return JsonSerializer.Serialize(new { error = "confirmation_mismatch", expected = book.Id }, CanonTools.JsonOpts);
+
+        books.ArchiveBook(book.Id);
+        return JsonSerializer.Serialize(new { ok = true, id = book.Id, title = book.Title, archived_to = "archives/books/" }, CanonTools.JsonOpts);
+    }
 }
 
 [McpServerToolType]

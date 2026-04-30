@@ -66,6 +66,17 @@ else
                     <span class="badge bg-danger ms-1">@PendingFindingsCount</span>
                 }
             </button>
+            <button class="btn btn-sm btn-outline-primary" @onclick="ExtractContinuityForBook" disabled="@extractingContinuity" title="Scan every chapter and extract atomic continuity facts about every entity. Surfaces contradictions for resolution at /books/{id}/continuity.">
+                <i class="bi bi-database-add"></i><div class="btn-lbl"> Extract Continuity</div>
+                @if (lastContinuityContradictions > 0)
+                {
+                    <span class="badge bg-warning text-dark ms-1">@lastContinuityContradictions</span>
+                }
+            </button>
+            @if (!string.IsNullOrEmpty(continuityStatus))
+            {
+                <span class="text-muted small ms-2">@continuityStatus</span>
+            }
             <button class="btn btn-sm btn-outline-info" @onclick="OpenMotifs" title="Detect motif candidates / manage motif inventory">
                 <i class="bi bi-tags"></i><div class="btn-lbl"> Motifs</div>
                 @if (motifInventory != null && motifInventory.Motifs.Count > 0)
@@ -896,6 +907,66 @@ else if (!generating)
     }
 
     private void CloseReview() => reviewOpen = false;
+
+    // ── Continuity (chapter-fact) extraction ───────────────────
+    private bool extractingContinuity;
+    private string continuityStatus = "";
+    private int lastContinuityContradictions;
+
+    private async Task ExtractContinuityForBook()
+    {
+        if (book == null || extractingContinuity) return;
+        extractingContinuity = true;
+        continuityStatus = "running continuity extraction across every chapter…";
+        lastContinuityContradictions = 0;
+        StateHasChanged();
+        try
+        {
+            var psi = new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "node",
+                UseShellExecute = false,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                CreateNoWindow = true,
+            };
+            psi.ArgumentList.Add(System.IO.Path.GetFullPath(System.IO.Path.Combine("tools", "extract-facts.js")));
+            psi.ArgumentList.Add(book.Id);
+            psi.ArgumentList.Add("--mode");
+            psi.ArgumentList.Add("book");
+            psi.ArgumentList.Add("--max-tokens");
+            psi.ArgumentList.Add("4096");
+
+            using var proc = System.Diagnostics.Process.Start(psi);
+            if (proc == null) { continuityStatus = "node failed to start"; return; }
+            var stdoutTask = proc.StandardOutput.ReadToEndAsync();
+            await proc.WaitForExitAsync();
+            var stdout = await stdoutTask;
+            try
+            {
+                using var doc = System.Text.Json.JsonDocument.Parse(stdout);
+                var totals = doc.RootElement.GetProperty("totals");
+                var n  = totals.GetProperty("new").GetInt32();
+                var c  = totals.GetProperty("confirmed").GetInt32();
+                var x  = totals.GetProperty("contradicted").GetInt32();
+                lastContinuityContradictions = x;
+                continuityStatus = $"{n} new · {c} confirmed · {x} contradiction(s) — see /books/{book.Id}/continuity";
+            }
+            catch
+            {
+                continuityStatus = "extraction returned non-JSON; check logs";
+            }
+        }
+        catch (Exception ex)
+        {
+            continuityStatus = "error: " + ex.Message;
+        }
+        finally
+        {
+            extractingContinuity = false;
+            StateHasChanged();
+        }
+    }
 
     private async Task StartReview()
     {

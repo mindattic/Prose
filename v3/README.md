@@ -16,14 +16,20 @@ This is not a chatbot. It is a structured writing tool with a rich HTML editor, 
 
 ```
 v3/
-  StreetSamurai.Core/          Business logic, services, models. No UI. (45 services, 22 models)
+  StreetSamurai.Core/          Business logic, services, models. No UI.
   StreetSamurai.Shared/        All Razor pages and components shared by both hosts.
   StreetSamurai.Blazor/        Blazor Server web host (.NET 10).
   StreetSamurai.Mcp/           Model Context Protocol server — exposes canon as MCP tools.
-  StreetSamurai.UnitTests/     200 tests across 17 test classes.
+  StreetSamurai.UnitTests/     ~840 tests across 20+ test classes.
   generate_world.js            Node.js world content generation pipeline.
-  RebuildCanon/                Legacy canon migration tooling.
+tools/
+  check-contradictions.js      Legion-Quorum contradiction sweep (chapter or book mode).
+  extract-facts.js             Fact extraction + per-entity fact store + A/B/custom resolution.
+  nightly-fact-sweep.cmd       Windows scheduled task entry point (1am daily).
 ```
+
+External dependencies the writing pipeline shells to:
+- `MindAttic.Legion` (D:/Projects/MindAttic/MindAttic.Legion) — Quorum voting CLI for contradiction detection and fact extraction. Now scoped to Claude / OpenAI / Gemini / Deepseek with auto-refill of failed voter slots.
 
 **Core Dependencies:**
 - Markdig 1.1.2 -- Markdown-to-HTML rendering
@@ -724,36 +730,56 @@ Extracts entities from generated prose and maps them into the world graph. Keeps
 
 ---
 
-## Story System
+## Book / Chapter / Beat hierarchy
 
-### StoryProject Model
+As of 2026-04-26 the project is organized around a three-tier hierarchy:
 
-Stories are stored as `StoryProject` with a single `html` field. Rich HTML is the source of truth. Plain text is derived by stripping HTML tags. One JSON file per project, named by UUID.
+- **Series** — stub for grouping books (volumes of an arc)
+- **Book** — collection of chapters with a shared outline, premise, and protagonist set. One JSON file per book at `engine/data/books/<id>.json`. Has `chapter_ids[]` listing the canonical order.
+- **Chapter** — one folder per chapter at `engine/data/chapters/<id>/`. The folder contains `chapter.json` (id, number, title, characters[], html, synopsis, status), plus optional sidecars (`outline.json`, `outline_review.json`, `checkpoint.json`, `events.json`, `knowledge.json`).
+
+Chapter content is now version-controlled (the `stories/` gitignore line was dropped in commit 9425cba28). The earlier `StoryProject` / `story_blocks/` / `IStoryBlockRepository` naming has been retired in favor of `Chapter` / `chapters/` / `IChapterRepository`. URL routes `/stories/write/{id}` and a few class names are kept for historical continuity.
 
 ```json
 {
-  "id": "e85880cc638c4c68b7b7707526ac52fc",
-  "title": "Story Title",
-  "characters": ["Kyle", "Sable"],
+  "id": "019d6143ab61752da68e0bc71595cd6c",
+  "book_id": "eb91080d9c9c4f2b9b405fa5996bdea1",
+  "number": 1,
+  "title": "Bearing Teeth",
+  "characters": ["Kyle Ellen Corbin-Vasik"],
+  "synopsis": "...",
   "status": "draft",
   "html": "<p>Rich HTML content...</p>",
   "created": "2026-04-03T20:49:00Z",
-  "modified": "2026-04-03T21:23:34Z"
+  "modified": "2026-04-29T02:37:46Z"
 }
 ```
 
-Stored at `{CanonRoot}/story_blocks/{UUID}.json`.
-
-### IStoryBlockRepository Interface
+### Repository interfaces
 
 ```csharp
-List<StoryProject> ListProjects();
-StoryProject? LoadProject(string id);
-void SaveProject(StoryProject project);
-void DeleteProject(string id);
+// IBookRepository — engine/data/books/<id>.json
+List<Book> ListBooks();
+Book? LoadBook(string id);
+void SaveBook(Book book);
+void DeleteBook(string id);
+
+// IChapterRepository — engine/data/chapters/<id>/chapter.json
+List<Chapter> ListChapters();
+Chapter? LoadChapter(string id);
+void SaveChapter(Chapter chapter);
+void DeleteChapter(string id);
 ```
 
-This is the migration seam. Implement with EF Core or Dapper, register in DI, nothing else changes.
+The migration seam is now `IChapterRepository` (was `IStoryBlockRepository`).
+
+### Outline-first workflow
+
+`BookOutlineService` owns a shared `BookOutline` for every book. Chapters draw their per-chapter outline (premise, beats, seeds, payoffs) from this shared document. Editing one chapter's outline triggers an LLM reconsideration of neighboring chapters so canon stays consistent. Outlines must be Approved before prose generation runs against them.
+
+### Book Review
+
+`BookReviewService` runs a multi-LLM Quorum review across the entire book — surfacing continuity, motif, anaphora, and pacing findings — with an in-UI apply-edit flow. Surfaces on the chapter page review panel.
 
 ---
 
@@ -953,15 +979,69 @@ The Quorum-based generation pipeline (`BookReviewService` + `LLMVotingService`) 
 
 ### Tool Surface
 
-13 tools in three groups, all read-mostly:
+Tools are grouped by `[McpServerToolType]` class. Auto-discovered by `WithToolsFromAssembly()` — adding a new tool only requires building. Highlights:
 
 | Group | Tools |
 | --- | --- |
-| `CanonTools` | `list_characters` / `get_character`, `list_places` / `get_place`, `list_factions` / `get_faction`, `list_corponations` / `get_corponation`, `get_literary_rules` |
+| `CanonTools` | `list_characters` / `get_character` / `get_character_profile`, `list_places` / `get_place`, `list_factions` / `get_faction`, `list_corponations` / `get_corponation`, `list_subsidiaries` / `get_subsidiary`, weapon / cyberware / equipment / pharmaceutical / synthetic / automaton encyclopedia getters, `get_literary_rules`, `get_tone_bible`, `get_story_bible` |
 | `StoryTools` | `list_books`, `get_book`, `get_chapter`, `get_book_outline`, `get_director_context` |
-| `ContextTools` | `search_semantic`, `get_neighbors`, `get_motifs`, `plant_motif` |
+| `ContextTools` | `search_semantic`, `get_neighbors`, `get_neighbors_by_relation`, `get_motifs`, `plant_motif`, `extract_entities`, `validate_canon_text`, `analyze_writing_quality` |
+| `CombatTools` | `draft_combat_scene` — wraps the in-app `WriterOperator`'s combat writer so MCP clients can draft action sequences directly (added ce8e306a4) |
+| `ContinuityTools` | `find_contradictions` (chapter), `find_contradictions_book` (full pairwise sweep). Legion-Quorum contradiction rubric with EPISTEMIC / TEMPORAL / CAPABILITY / CANON classifications |
+| `FactTools` | `extract_facts` / `extract_facts_book` (extract atomic facts from prose into per-entity fact store), `get_facts` (list with filters), `list_unresolved_contradictions`, `resolve_contradiction` (winner=A\|B\|custom) |
+| `ConsequenceTools` | `predict_behavior`, `get_consequences_for`, `get_recent_consequences`, `get_consequence_context` |
 
-`get_director_context` is the highest-value writing-context tool -- it builds the "WHERE WE ARE" block (prior chapters' content, this chapter's outline, upcoming setup needs, open book-level threads) that the Director uses inside the Blazor host.
+`get_director_context` is still the highest-value writing-context tool — it builds the "WHERE WE ARE" block (prior chapters' content, this chapter's outline, upcoming setup needs, open book-level threads) that the Director uses inside the Blazor host.
+
+### Continuity & Fact Extraction
+
+The contradiction detector and the fact extractor share a common pattern: a Node CLI under `tools/` is the canonical implementation, the MCP tool shells out to it, and the Blazor UI does the same. This keeps a single Legion-call code path and avoids duplicating prompt logic in three places.
+
+- `tools/check-contradictions.js` — feeds canon context + draft prose into a Quorum vote with a contradiction-finding rubric. Reads an `EXTRACTED FACTS (treat as canon)` block from the fact store so canonical attributes (handedness, weapon carry positions, ages, etc.) appear in capitals at the top of the canon context. Voters no longer have to infer canon from a 250k-char haystack.
+- `tools/extract-facts.js` — extracts atomic factual assertions from prose (predicates like `weapon_carry_location_gun`, `handedness`, `lives_at`), validates each fact's snippet against the source, and upserts into `engine/data/continuity/<entity_id>.json`. Lifecycle: NEW → CONFIRMED (re-extracted from another chapter) | CONTRADICTED (same predicate, different object) → resolved to CANONICAL | REJECTED | SUPERSEDED.
+- Resolution: `extract-facts.js --mode resolve --fact-a <id> --fact-b <id> --winner A|B|custom [--custom-object "<value>"]`. Also reachable via the `resolve_contradiction` MCP tool and the `/books/{id}/continuity` UI page (or `/continuity` for the cross-book picker).
+- Quorum was scoped (in `MindAttic.Legion.VotingConfiguration.AllowedProviderIds`) to Claude / OpenAI / Gemini / Deepseek for cost/quality. `LLMVotingService.RefillFailedVotersAsync` round-robins failed voter slots across surviving allowed providers so a brief outage doesn't drop quorum size.
+
+A nightly Windows scheduled task (`tools/nightly-fact-sweep.cmd`, 01:00 America/Chicago) runs the full Bushido Coda fact sweep locally, commits the fact-store delta, and pushes it. A daily cloud audit routine cross-checks the committed state and surfaces any new CONTRADICTED facts since the prior commit.
+
+### Running the contradiction scan end-to-end
+
+The flow is: **first extract facts, then look for contradictions, then resolve.** Three ways to kick this off, ranked by speed.
+
+#### Fastest — run it manually right now
+
+```
+cd D:\Projects\MindAttic\StreetSamurai
+node tools/extract-facts.js eb91080d9c9c4f2b9b405fa5996bdea1 --mode book --max-tokens 4096
+```
+
+This dispatches one Legion vote per chapter (~6 votes for Bushido Coda) and writes everything to `engine/data/continuity/<entity_id>.json`. Takes a few minutes; cost is ~$2-4 in API calls. When it finishes, exit code 1 means contradictions exist; exit 0 means clean.
+
+Then open the resolution panel:
+
+```
+https://localhost:7103/books/eb91080d9c9c4f2b9b405fa5996bdea1/continuity
+```
+
+You'll see every contradicted pair with A/B/Custom buttons.
+
+#### Via the UI — same thing, one click
+
+1. `dotnet run --project v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj` (or however you start the Blazor host)
+2. Navigate to `/books/eb91080d9c9c4f2b9b405fa5996bdea1` (Bushido Coda)
+3. Click the **Extract Facts** button in the toolbar
+4. Wait for the status line to show `N new · M confirmed · X contradiction(s)` — clicking the warning badge isn't wired, but the dedicated panel is at `/books/eb91080d9c9c4f2b9b405fa5996bdea1/continuity`
+5. Resolve each contradiction in the panel
+
+#### Wait until tonight — the scheduled task does it
+
+The Windows Scheduled Task fires at **01:00 America/Chicago** nightly. It runs the same command, commits the fact store, and pushes. The next morning you can open the panel and resolve. The cloud audit at midnight will then summarize state diffs daily.
+
+#### Recommended
+
+Run the manual command now (option 1). The CLI shows progress per chapter; you'll see exactly which chapters land facts and which trigger contradictions. Then open the resolution panel to walk them down. The scheduled task tonight will pick up from wherever you leave it.
+
+**One caveat:** the first run typically produces lots of CONTRADICTED facts that aren't real contradictions — they're voters phrasing the same fact slightly differently (e.g. `"low left hip"` vs `"left hip"`). Those will all surface in the panel. Resolving with **Custom** to write a canonical phrasing is the cleanest path; **A** or **B** also works fine. After the first cleanup pass, subsequent nightly runs will be much quieter.
 
 ### Toggle Model -- One-Time Registration, Not Per-Session
 

@@ -4,10 +4,13 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Read/write access to facts.db — the fact discovery database.
-/// Populated either by the legacy Python pipeline or the in-process FactExtractionService.
+/// Read/write access to lore-triples.db — the SPO triple store extracted from
+/// worldbuilding entity records (people, places, factions, etc.). Schema covers
+/// raw triples, embedding-clustered groupings, frequency-consensus scores, and
+/// flagged minority-disagreement records for the resolution flow.
+/// Populated either by the legacy Python pipeline or the in-process LoreTripleExtractionService.
 /// </summary>
-public class FactDiscoveryService
+public class LoreTripleService
 {
     private readonly string dbPath;
 
@@ -45,9 +48,9 @@ public class FactDiscoveryService
         );
         """;
 
-    public FactDiscoveryService(IPathProvider paths)
+    public LoreTripleService(IPathProvider paths)
     {
-        dbPath = Path.Combine(paths.DataRoot, "v3", "python", "facts.db");
+        dbPath = Path.Combine(paths.DataRoot, "v3", "python", "lore-triples.db");
     }
 
     public bool IsAvailable => File.Exists(dbPath);
