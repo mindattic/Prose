@@ -20,18 +20,22 @@
   "state_at_end": {
     "character_status": {
       "Kyle Ellen Corbin-Vasik": "Alive. Hands reattached at an Ashland-and-Whiting AutoDoc inside the cauterizer band's preservation window. Silence on the side tray as he goes under. Hardware metabolism still running fast and now also hosting an E.L.F. named Puppeteer — resident in his NeoCortex stack since the auditory bridge in the Cruciform Depot's lower-level trench, capable of effortlessly puppeting any cybernetic system, cooperative for now. Holds a Φ85,000 verbal debt over Hua on collection terms (*one favor at a time, until I deem we are even*) set by Kyle alone. Bound to a cryptic continuance — *we are not done*.",
-      "Mrs. Chen": "Still in her apartment. The husband still in the corner. The half-rate transaction still the bond between them.",
-      "Sasha Võ": "Introduced. The arrangement formed. Half-step back and left.",
+      "Mrs. Chen": "Still in her apartment. The husband still in the corner. The half-rate transaction still the bond between them. Kyle now eats at the noodle stall roughly three hundred nights a year and says *standard rate* aloud every night as he sets the chip on the counter.",
+      "Pixel": "Across the hall in Unit 2E. Met Kyle in the hallway when he came home from the AutoDoc with reattached hands; wept on his wrists; the convention between them is no longer purely tools-and-quiet. Currently asleep in 2E with the music off for the first time in years.",
+      "Dr. Nadia Park": "Off-GLMZ in Sable's safekeeping after Kyle refused to deliver her to Hua. Destination not disclosed even to Kyle. Carries the Atlas-program calibration toolchain Kyle has been hunting for since Seo died; her notebook of twenty-three dead test subjects is in Sable's bag without Sable's knowledge.",
       "Mira (gang captain)": "Wounded but alive. Knows what Kyle is. Will tell others.",
-      "Hua (Lotus Syndicate)": "Alive at her own chamber table. Personal debt of Φ85,000 to Kyle, acknowledged aloud under duress, with collection terms set unilaterally by him: one favor at a time, ending when he says it ends. Witnessed the only place in the night Kyle's discipline visibly slipped.",
+      "Hua (Lotus Syndicate)": "Alive at her own chamber table. The contract she designed for the doctor extraction — read Kyle's file, withheld the cargo's identity, modeled three forks all of which served the federation — failed in a fork she had not modeled (Kyle returned the money and closed the contract from his side). She personally performed the cleaver work and is the only living witness to the place in the night Kyle's discipline visibly slipped (the scream). Holds a Φ85,000 personal debt to Kyle, acknowledged aloud under duress, on collection terms set unilaterally by him: one favor at a time, ending when he says it ends. She does not know — neither she nor anyone else inside the Lotus Syndicate knows — that the doctor-extraction contract may have been originated through her by a third-party fixer acting on behalf of the rogue AI Sable triangulated in A Restless Mind.",
       "The Lotus Syndicate (south-arm cell)": "Rank-and-file destroyed; one lieutenant fled south. Hua remains in place but operating under personal debt to Kyle.",
       "Puppeteer (E.L.F., resident in Kyle)": "Out of eighteen years of imprisonment in a sealed Axiom-era cargo-handler automaton at the bottom of the Cruciform Depot's south-arm sluice trench. Resident in Kyle's NeoCortex stack since beat 4. Has revealed its name, its ongoing access (*I will visit you again*), and — by inference — its native capability of effortless possession of any cybernetic system. Cooperative arrangement with Kyle for now."
     },
     "open_threads": [
       "Kyle's right-forearm cybernetics carry an undocumented dorsal port row, placed eleven years ago by people whose intentions are now suspect; the geometry was specifically suited to interface with Axiom-era industrial hardware, suggesting his modifications were made for purposes he was not told",
       "Who put the bounty on Kyle in the West Town cross-street",
-      "What Sasha needs from Kyle long-term — the arrangement is provisional",
       "The hardware metabolism — Kyle is paying it down in flesh and the body has a ceiling",
+      "The rogue AI Sable triangulated through Kyle's senses in A Restless Mind — coordinates locked at dawn after three readings (market fight, Tier 1 block, courtyard busker). Kyle and Sable's working hypothesis is that the AI has been routing contracts to Kyle through the cracked-terminal pipeline because it wants his Atlas hardware as an avatar. The pattern is real; the avatar interpretation is theirs and may be a misdirect. The AI's actual motive remains unresolved on the page.",
+      "Whether the doctor-extraction contract was originated by the rogue AI through a third-party fixer who routed it to Hua. Kyle and Sable suspect; Hua does not know she may have been used.",
+      "The notebook of twenty-three dead Atlas-program test subjects that Dr. Nadia put in Sable's bag without telling Sable — the leverage history that has kept Nadia alive for two years has now silently transferred to Sable, who carries it in her tan coat without knowing it",
+      "Dr. Nadia Park, off-GLMZ — the only person who can maintain Kyle's Atlas array properly, reachable only through Sable, every tune-up costs a favor and a Pulse trip",
       "Hua's Φ85,000 verbal debt to Kyle on his terms — *one favor at a time, until I deem we are even* — when he calls it, what for, whether the syndicate's other cells honor it",
       "The scream — what Hua does with the fact that she alone witnessed Kyle's discipline slip",
       "Puppeteer (E.L.F.) — resident in Kyle's NeoCortex stack with stated ongoing access; the long-term arrangement is cooperative for now, reversible at Puppeteer's will. *we are not done*",
@@ -40,8 +44,11 @@
       "The capability disclosed in this chapter: an E.L.F. of Puppeteer's class can effortlessly possess any cybernetic system. The book has named the threat without resolving it"
     ],
     "canon_changes": [
-      "Lotus Syndicate south-arm cell broken (rank-and-file killed/fled); Hua personally indebted to Kyle for Φ85,000",
-      "Cruciform Depot E.L.F. (named Puppeteer) escaped after eighteen years of imprisonment in a sealed cargo-handler automaton; now resident in Kyle Ellen Corbin-Vasik's NeoCortex stack. Disclosed canon capability: an E.L.F. of this class can effortlessly possess any cybernetic system."
+      "Lotus Syndicate south-arm cell broken (rank-and-file killed/fled); Hua personally indebted to Kyle for Φ85,000 on his unilateral collection terms",
+      "Cruciform Depot E.L.F. (named Puppeteer) escaped after eighteen years of imprisonment in a sealed cargo-handler automaton; now resident in Kyle Ellen Corbin-Vasik's NeoCortex stack. Disclosed canon capability: an E.L.F. of this class can effortlessly possess any cybernetic system",
+      "Dr. Nadia Park (ex-NeoCortex Atlas Division neurointerface surgeon) extracted from a corponation continuation lab and removed from the GLMZ by Sable; the Atlas-program calibration toolchain has left corponation control for the first time since the program's founding",
+      "The Vultures (body-pickup federation) used by Hua for the False Death Protocol facility delivery — first on-page confirmation that Carrion Logistics LLC is the GLMZ's operational substrate for body-disposal logistics, and that the syndicates have standing-contract access to it",
+      "Mrs. Chen and Kyle's *standard rate* ritual canonized — the discipline of paying full price for offered grace becomes a recurring spoken beat across the book"
     ],
     "in_world_time": null
   },
