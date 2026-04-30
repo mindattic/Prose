@@ -38,7 +38,7 @@ public class DataRepairService : PipelineServiceBase
     public int          WikiLinksInserted    { get; private set; }
     public List<string> ChangeLog            { get; private set; } = [];
 
-    private string FactsDbPath => Path.Combine(paths.DataRoot, "v3", "python", "facts.db");
+    private string FactsDbPath => Path.Combine(paths.DataRoot, "v3", "python", "lore-triples.db");
 
     public DataRepairService(IPathProvider paths, ILogger<DataRepairService> log)
     {
@@ -90,7 +90,7 @@ public class DataRepairService : PipelineServiceBase
     {
         if (!File.Exists(FactsDbPath))
         {
-            ChangeLog.Add("[Fact Repair] facts.db not found — run Fact Discovery first.");
+            ChangeLog.Add("[Triple Repair] lore-triples.db not found — run Lore Triples first.");
             return;
         }
 

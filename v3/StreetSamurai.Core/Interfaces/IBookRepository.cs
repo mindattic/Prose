@@ -7,5 +7,5 @@ public interface IBookRepository
     List<Book> ListBooks();
     Book? LoadBook(string id);
     void SaveBook(Book book);
-    void DeleteBook(string id);
+    void ArchiveBook(string id);
 }

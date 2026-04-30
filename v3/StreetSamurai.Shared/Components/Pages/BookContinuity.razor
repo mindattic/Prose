@@ -1,0 +1,394 @@
+@page "/books/{BookId}/continuity"
+@attribute [Authorize(Roles = "Contributor,Administrator")]
+@using System.Diagnostics
+@using System.Text.Json
+@using StreetSamurai.Core.Interfaces
+@inject IBookRepository BookRepo
+@inject IChapterRepository ChapterRepo
+@inject IPathProvider Paths
+@inject NavigationManager Nav
+
+@if (book == null)
+{
+    <div class="alert alert-danger">Book not found. <a href="/books">Back to bookshelf</a></div>
+}
+else
+{
+    <div class="d-flex justify-content-between align-items-start mb-3">
+        <div class="flex-grow-1 me-3">
+            <div class="small text-muted mb-1">
+                <a href="/books" class="text-muted text-decoration-none"><i class="bi bi-arrow-left me-1"></i>Bookshelf</a>
+                <span class="mx-2">/</span>
+                <a href="@($"/books/{book.Id}/chapters")" class="text-muted text-decoration-none">@book.Title</a>
+            </div>
+            <h4 class="text-info mb-0"><i class="bi bi-database-check me-2"></i>Continuity</h4>
+            <p class="small text-muted mb-0">
+                Atomic lore triples extracted from each chapter's prose, grouped by entity. Resolve any contradictions before treating the book as canon.
+            </p>
+        </div>
+        <div class="d-flex gap-2 align-items-center flex-wrap justify-content-end">
+            <button class="btn btn-sm btn-outline-primary" @onclick="ExtractLoreTriplesForBook" disabled="@working">
+                <i class="bi bi-arrow-clockwise"></i><div class="btn-lbl"> @(working ? "running…" : "Re-run extraction")</div>
+            </button>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(status))
+    {
+        <div class="alert alert-info small py-2">@status</div>
+    }
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger small py-2">@errorMessage</div>
+    }
+
+    @* ── Contradictions panel ─────────────────────────────────────── *@
+    @if (contradictions.Count > 0)
+    {
+        <div class="card mb-3 border-warning">
+            <div class="card-header bg-warning bg-opacity-25">
+                <strong><i class="bi bi-exclamation-triangle me-1"></i>Unresolved contradictions</strong>
+                <span class="badge bg-warning text-dark ms-2">@contradictions.Count</span>
+                <span class="small text-muted ms-2">— pick A, B, or write a custom resolution</span>
+            </div>
+            <div class="card-body">
+                @foreach (var pair in contradictions)
+                {
+                    <div class="border rounded p-2 mb-2">
+                        <div class="small text-muted mb-1">
+                            <strong>@pair.EntityName</strong>
+                            <span class="ms-2">predicate: <code>@pair.Predicate</code></span>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-md-5">
+                                <div class="border rounded p-2 h-100 @(IsWinner(pair, "A") ? "border-success bg-success bg-opacity-10" : "")">
+                                    <div class="small text-muted">A · ch @pair.A.SourceChapterNumber · by @string.Join(", ", pair.A.ExtractedBy)</div>
+                                    <div class="fw-bold">@pair.A.Object</div>
+                                    <div class="small fst-italic text-muted">"@pair.A.Snippet"</div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="border rounded p-2 h-100 @(IsWinner(pair, "B") ? "border-success bg-success bg-opacity-10" : "")">
+                                    <div class="small text-muted">B · ch @pair.B.SourceChapterNumber · by @string.Join(", ", pair.B.ExtractedBy)</div>
+                                    <div class="fw-bold">@pair.B.Object</div>
+                                    <div class="small fst-italic text-muted">"@pair.B.Snippet"</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 d-flex flex-column gap-1">
+                                <button class="btn btn-sm btn-outline-success py-0" disabled="@working"
+                                        @onclick="() => ResolveA(pair)">A wins</button>
+                                <button class="btn btn-sm btn-outline-success py-0" disabled="@working"
+                                        @onclick="() => ResolveB(pair)">B wins</button>
+                                <button class="btn btn-sm btn-outline-info py-0" disabled="@working"
+                                        @onclick="() => OpenCustom(pair)">Custom…</button>
+                            </div>
+                        </div>
+                        @if (customOpenFor == pair.Key)
+                        {
+                            <div class="mt-2">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-text">@pair.Predicate =</span>
+                                    <input class="form-control" @bind="customValue" placeholder="agreed-upon value" />
+                                    <button class="btn btn-success" disabled="@(working || string.IsNullOrWhiteSpace(customValue))"
+                                            @onclick="() => ResolveCustom(pair)">Save resolution</button>
+                                    <button class="btn btn-outline-secondary" @onclick="() => customOpenFor = null">Cancel</button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    }
+    else if (entities.Count > 0)
+    {
+        <div class="alert alert-success small py-2">
+            <i class="bi bi-check-circle me-1"></i>No unresolved contradictions in this book's continuity store.
+        </div>
+    }
+
+    @* ── Per-entity lore-triple listing ───────────────────────────── *@
+    @if (entities.Count == 0)
+    {
+        <div class="alert alert-secondary small">
+            No lore triples extracted yet. Click <strong>Re-run extraction</strong> above (or run <code>node tools/extract-lore-triples.js @book.Id --mode book --max-tokens 4096</code> from a terminal).
+        </div>
+    }
+    else
+    {
+        @foreach (var entity in entities.OrderBy(e => e.Name))
+        {
+            <div class="card mb-2">
+                <div class="card-header py-1">
+                    <strong>@entity.Name</strong>
+                    <span class="small text-muted ms-2">@entity.Kind · @entity.Triples.Count triples</span>
+                </div>
+                <div class="card-body py-2">
+                    <table class="table table-sm small mb-0">
+                        <thead>
+                            <tr>
+                                <th>predicate</th>
+                                <th>value</th>
+                                <th>chapters</th>
+                                <th>status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var f in entity.Triples.OrderBy(x => x.Predicate))
+                            {
+                                <tr class="@StatusClass(f.Status)">
+                                    <td><code>@f.Predicate</code></td>
+                                    <td>@f.Object</td>
+                                    <td class="small text-muted">@string.Join(", ", f.ConfirmedInChapters)</td>
+                                    <td><span class="badge @StatusBadge(f.Status)">@f.Status</span></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+    }
+}
+
+@code {
+    [Parameter] public string BookId { get; set; } = "";
+
+    private StreetSamurai.Core.Models.Book? book;
+    private List<EntityTriples> entities = new();
+    private List<ContradictionPair> contradictions = new();
+    private bool working;
+    private string status = "";
+    private string errorMessage = "";
+    private string? customOpenFor;
+    private string customValue = "";
+
+    protected override void OnInitialized()
+    {
+        book = BookRepo.LoadBook(BookId);
+        Reload();
+    }
+
+    private void Reload()
+    {
+        entities.Clear();
+        contradictions.Clear();
+        if (book == null) return;
+
+        var continuityDir = Path.Combine(Paths.EngineDataDir, "continuity");
+        if (!Directory.Exists(continuityDir)) return;
+
+        var bookChapters = new HashSet<string>(book.ChapterIds ?? new());
+
+        foreach (var file in Directory.GetFiles(continuityDir, "*.json"))
+        {
+            try
+            {
+                using var doc = JsonDocument.Parse(File.ReadAllText(file));
+                var root = doc.RootElement;
+                var entityName = root.GetProperty("entity_name").GetString() ?? "";
+                var entityId   = root.GetProperty("entity_id").GetString() ?? "";
+                var kind       = root.TryGetProperty("kind", out var kk) ? kk.GetString() ?? "" : "";
+
+                var triples = new List<TripleRow>();
+                if (root.TryGetProperty("facts", out var fa) && fa.ValueKind == JsonValueKind.Array)
+                {
+                    foreach (var f in fa.EnumerateArray())
+                    {
+                        var sourceChapterId = f.TryGetProperty("source_chapter_id", out var sc) ? sc.GetString() ?? "" : "";
+                        // Filter to only triples whose source chapter belongs to this book
+                        if (!string.IsNullOrEmpty(sourceChapterId) && !bookChapters.Contains(sourceChapterId)) continue;
+
+                        var row = new TripleRow
+                        {
+                            Id                  = f.GetProperty("id").GetString() ?? "",
+                            EntityId            = entityId,
+                            EntityName          = entityName,
+                            Predicate           = f.GetProperty("predicate").GetString() ?? "",
+                            Object              = f.GetProperty("object").GetString() ?? "",
+                            Snippet             = f.TryGetProperty("snippet", out var sn) ? sn.GetString() ?? "" : "",
+                            SourceChapterId     = sourceChapterId,
+                            SourceChapterNumber = f.TryGetProperty("source_chapter_number", out var scn) ? scn.GetInt32() : 0,
+                            Status              = f.TryGetProperty("status", out var st) ? st.GetString() ?? "" : "",
+                            ExtractedBy         = f.TryGetProperty("extracted_by", out var eb) && eb.ValueKind == JsonValueKind.Array
+                                ? eb.EnumerateArray().Select(x => x.GetString() ?? "").Where(x => x.Length > 0).ToList()
+                                : new(),
+                            ConfirmedInChapters = f.TryGetProperty("confirmed_in_chapters", out var cc) && cc.ValueKind == JsonValueKind.Array
+                                ? cc.EnumerateArray().Select(x => x.GetInt32()).ToList()
+                                : new(),
+                        };
+                        triples.Add(row);
+                    }
+                }
+                if (triples.Count == 0) continue;
+                entities.Add(new EntityTriples { Id = entityId, Name = entityName, Kind = kind, Triples = triples });
+            }
+            catch { /* skip malformed continuity files */ }
+        }
+
+        // Build contradiction pairs: triples marked CONTRADICTED that share (entity, predicate)
+        foreach (var ent in entities)
+        {
+            var contras = ent.Triples.Where(f => f.Status == "CONTRADICTED").ToList();
+            var groups = contras.GroupBy(f => f.Predicate);
+            foreach (var g in groups)
+            {
+                var list = g.ToList();
+                for (int i = 0; i < list.Count; i++)
+                    for (int j = i + 1; j < list.Count; j++)
+                        contradictions.Add(new ContradictionPair
+                        {
+                            EntityId   = ent.Id,
+                            EntityName = ent.Name,
+                            Predicate  = g.Key,
+                            A          = list[i],
+                            B          = list[j],
+                        });
+            }
+        }
+    }
+
+    private async Task ExtractLoreTriplesForBook()
+    {
+        if (book == null) return;
+        await ShellOut(new[] { book.Id, "--mode", "book", "--max-tokens", "4096" }, "Re-running lore-triple extraction across every chapter…");
+        Reload();
+    }
+
+    private Task ResolveA(ContradictionPair pair)      => Resolve(pair, "A", null);
+    private Task ResolveB(ContradictionPair pair)      => Resolve(pair, "B", null);
+    private Task ResolveCustom(ContradictionPair pair) => Resolve(pair, "custom", customValue);
+
+    private async Task Resolve(ContradictionPair pair, string winner, string? customObj)
+    {
+        if (winner == "custom" && string.IsNullOrWhiteSpace(customObj))
+        {
+            errorMessage = "Custom resolution needs a value.";
+            return;
+        }
+        var args = new List<string>
+        {
+            "--mode", "resolve",
+            "--triple-a", pair.A.Id,
+            "--triple-b", pair.B.Id,
+            "--winner", winner,
+        };
+        if (winner == "custom")
+        {
+            args.Add("--custom-object");
+            args.Add(customObj!);
+        }
+        await ShellOut(args.ToArray(), $"Resolving {pair.EntityName}.{pair.Predicate} — winner: {winner}…");
+        customOpenFor = null;
+        customValue   = "";
+        Reload();
+    }
+
+    private void OpenCustom(ContradictionPair pair)
+    {
+        customOpenFor = pair.Key;
+        customValue   = "";
+    }
+
+    private async Task ShellOut(string[] args, string runningStatus)
+    {
+        if (working) return;
+        working = true;
+        status = runningStatus;
+        errorMessage = "";
+        StateHasChanged();
+        try
+        {
+            var psi = new ProcessStartInfo
+            {
+                FileName = "node",
+                UseShellExecute = false,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                CreateNoWindow = true,
+            };
+            psi.ArgumentList.Add(Path.GetFullPath(Path.Combine("tools", "extract-lore-triples.js")));
+            foreach (var a in args) psi.ArgumentList.Add(a);
+
+            using var proc = Process.Start(psi);
+            if (proc == null) { errorMessage = "node failed to start"; return; }
+            var stdoutTask = proc.StandardOutput.ReadToEndAsync();
+            var stderrTask = proc.StandardError.ReadToEndAsync();
+            await proc.WaitForExitAsync();
+            var stdout = await stdoutTask;
+            var stderr = await stderrTask;
+
+            if (proc.ExitCode == 2)
+            {
+                errorMessage = $"Pipeline error: {stderr}";
+                status = "";
+            }
+            else
+            {
+                status = $"Done. (exit {proc.ExitCode})";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Error: " + ex.Message;
+            status = "";
+        }
+        finally
+        {
+            working = false;
+            StateHasChanged();
+        }
+    }
+
+    private bool IsWinner(ContradictionPair pair, string side) => false; // reserved for live preview state
+    private string StatusClass(string s) => s switch
+    {
+        "CONTRADICTED" => "table-warning",
+        "REJECTED"     => "table-secondary text-muted",
+        "SUPERSEDED"   => "table-secondary text-muted",
+        _              => "",
+    };
+    private string StatusBadge(string s) => s switch
+    {
+        "CANONICAL"    => "bg-success",
+        "CONFIRMED"    => "bg-success bg-opacity-50",
+        "NEW"          => "bg-info",
+        "CONTRADICTED" => "bg-warning text-dark",
+        "REJECTED"     => "bg-secondary",
+        "SUPERSEDED"   => "bg-secondary",
+        _              => "bg-light text-dark",
+    };
+
+    private class EntityTriples
+    {
+        public string Id { get; set; } = "";
+        public string Name { get; set; } = "";
+        public string Kind { get; set; } = "";
+        public List<TripleRow> Triples { get; set; } = new();
+    }
+
+    private class TripleRow
+    {
+        public string Id { get; set; } = "";
+        public string EntityId { get; set; } = "";
+        public string EntityName { get; set; } = "";
+        public string Predicate { get; set; } = "";
+        public string Object { get; set; } = "";
+        public string Snippet { get; set; } = "";
+        public string SourceChapterId { get; set; } = "";
+        public int SourceChapterNumber { get; set; }
+        public string Status { get; set; } = "";
+        public List<string> ExtractedBy { get; set; } = new();
+        public List<int> ConfirmedInChapters { get; set; } = new();
+    }
+
+    private class ContradictionPair
+    {
+        public string EntityId { get; set; } = "";
+        public string EntityName { get; set; } = "";
+        public string Predicate { get; set; } = "";
+        public TripleRow A { get; set; } = new();
+        public TripleRow B { get; set; } = new();
+        public string Key => EntityId + "|" + Predicate + "|" + A.Id + "|" + B.Id;
+    }
+}

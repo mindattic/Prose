@@ -81,9 +81,11 @@ public class BookState
     [JsonPropertyName("canon_changes")]
     public List<string> CanonChanges { get; set; } = [];
 
-    /// <summary>In-world date/time at the end of the last chapter. Drives diegetic continuity.</summary>
+    /// <summary>In-world time at the end of the last chapter. Free-form to accommodate
+    /// both ISO timestamps (when a chapter pins an exact date) and descriptive prose
+    /// (e.g. "approximately ten years before Bushido Coda" when timing is intentionally fuzzy).</summary>
     [JsonPropertyName("in_world_time")]
-    public DateTime? InWorldTime { get; set; }
+    public string? InWorldTime { get; set; }
 }
 
 /// <summary>

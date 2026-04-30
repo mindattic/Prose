@@ -8,16 +8,16 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// In-process SPO fact extraction from all entity JSON files.
 /// Supports pause/resume: Pause() suspends the batch loop without losing progress.
-/// Resume() unblocks it. Auto-paused by FactDiscovery.razor on Dispose (navigate-away).
+/// Resume() unblocks it. Auto-paused by LoreTriples.razor on Dispose (navigate-away).
 /// </summary>
-public class FactExtractionService
+public class LoreTripleExtractionService
 {
     public record ExtractionProgress(int Processed, int Total, string Phase, string Current = "");
 
     private readonly IServiceScopeFactory scopeFactory;
     private readonly IPathProvider paths;
-    private readonly FactDiscoveryService factDb;
-    private readonly ILogger<FactExtractionService> log;
+    private readonly LoreTripleService factDb;
+    private readonly ILogger<LoreTripleExtractionService> log;
 
     private CancellationTokenSource? cts;
     private volatile TaskCompletionSource<bool>? pauseTcs;
@@ -41,11 +41,11 @@ public class FactExtractionService
         "archetypes", "consumer_goods"
     ];
 
-    public FactExtractionService(
+    public LoreTripleExtractionService(
         IServiceScopeFactory scopeFactory,
         IPathProvider paths,
-        FactDiscoveryService factDb,
-        ILogger<FactExtractionService> log)
+        LoreTripleService factDb,
+        ILogger<LoreTripleExtractionService> log)
     {
         this.scopeFactory = scopeFactory;
         this.paths = paths;

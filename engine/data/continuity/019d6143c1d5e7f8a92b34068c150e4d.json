@@ -1,0 +1,108 @@
+{
+  "entity_id": "019d6143c1d5e7f8a92b34068c150e4d",
+  "entity_name": "Pixel",
+  "kind": "person",
+  "facts": [
+    {
+      "id": "fact-5891deea61fa863f",
+      "entity_id": "019d6143c1d5e7f8a92b34068c150e4d",
+      "entity_name": "Pixel",
+      "predicate": "residence",
+      "object": "The Pivot, room 2E",
+      "snippet": "The door to 2E opened before he reached the landing. Pixel in pajamas.",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.888Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.888Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-7cda0235b34a6d6b"
+      ]
+    },
+    {
+      "id": "fact-25302b8e7b537cfc",
+      "entity_id": "019d6143c1d5e7f8a92b34068c150e4d",
+      "entity_name": "Pixel",
+      "predicate": "relationship_to_kyle",
+      "object": "neighbor (across the hall)",
+      "snippet": "He walked across the hall. Picked Silence up from the wall",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.888Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.888Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-30ea873f02a94ead"
+      ]
+    },
+    {
+      "id": "fact-7cda0235b34a6d6b",
+      "entity_id": "019d6143c1d5e7f8a92b34068c150e4d",
+      "entity_name": "Pixel",
+      "predicate": "residence",
+      "object": "2E at The Pivot",
+      "snippet": "The door to 2E opened before he reached the landing. Pixel in pajamas.",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.900Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.900Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-5891deea61fa863f"
+      ]
+    },
+    {
+      "id": "fact-30ea873f02a94ead",
+      "entity_id": "019d6143c1d5e7f8a92b34068c150e4d",
+      "entity_name": "Pixel",
+      "predicate": "relationship_to_Kyle",
+      "object": "housemate or close associate",
+      "snippet": "She did not look at it. The convention did not require acknowledgment to function.",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "medium",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.901Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.901Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-25302b8e7b537cfc"
+      ]
+    }
+  ],
+  "updated": "2026-04-30T04:47:56.901Z"
+}

@@ -1,4 +1,4 @@
-# Fact Discovery Pipeline
+# Lore Triples Pipeline
 
 A Python-based machine learning pipeline that reads 10,000+ worldbuilding entity files, extracts every factual claim as a Subject-Predicate-Object triple, groups semantically equivalent claims using vector embeddings, and determines consensus based on source agreement — then flags and optionally repairs inconsistencies.
 
@@ -21,7 +21,7 @@ python query.py --stats                          # Dashboard of numbers
 python query.py --flagged                        # All inconsistencies
 python query.py "Arcturus Defense Solutions"      # Query a specific subject
 
-# Refresh the app — Tools > Fact Discovery shows results
+# Refresh the app — Tools > Lore Triples shows results
 ```
 
 **One command does everything:** extraction, embedding, clustering, scoring, and auto-repair of 90%+ confidence fixes.
@@ -56,7 +56,7 @@ cp .env.example .env
 ```
 ANTHROPIC_API_KEY=sk-ant-...     # Your Claude API key
 DATA_DIR=../../engine/data        # Path to entity JSON files
-DB_PATH=facts.db                  # SQLite database for results
+DB_PATH=lore-triples.db                  # SQLite database for results
 BATCH_SIZE=10                     # Files between rate-limit pauses
 SIMILARITY_THRESHOLD=0.87         # Cosine similarity for claim matching
 ```
@@ -152,7 +152,7 @@ python run_pipeline.py --dry-run          # Preview extraction only
 
 ## Database Schema (`db_schema.py`)
 
-SQLite database (`facts.db`) with these tables:
+SQLite database (`lore-triples.db`) with these tables:
 
 | Table | Purpose |
 |-------|---------|
@@ -164,7 +164,7 @@ SQLite database (`facts.db`) with these tables:
 
 ## C# Integration
 
-The Blazor app includes a `FactDiscoveryService` that reads `facts.db` in read-only mode. No Python dependency at runtime. The Fact Discovery page (`/facts` under Tools) shows:
+The Blazor app includes a `LoreTripleService` that reads `lore-triples.db` in read-only mode. No Python dependency at runtime. The Lore Triples page (`/lore-triples` under Tools) shows:
 
 - Dashboard with stats (triples, sources, clusters, consensus claims, flags, confidence)
 - Subject search with confidence scores
@@ -239,11 +239,11 @@ Midjourney-style prompt string with physical descriptors, clothing, setting/mood
 [score.py] -- consensus vote + flagging
     |
     v
-facts.db (SQLite)
+lore-triples.db (SQLite)
     |
     v
 [query.py] -- CLI search    [repair.py] -- fix source files
     |
     v
-FactDiscoveryService (C#) -- Blazor UI dashboard
+LoreTripleService (C#) -- Blazor UI dashboard
 ```

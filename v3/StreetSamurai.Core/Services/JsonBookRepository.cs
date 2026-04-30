@@ -10,7 +10,7 @@ namespace StreetSamurai.Core.Services;
 /// Book repository — one JSON file per book under engine/data/books/.
 /// Filename: {bookId}.json. The book record carries the ordered list of ChapterIds;
 /// chapters themselves remain in <see cref="JsonChapterRepository"/> under chapters/.
-/// Deletion is non-destructive — the file moves to archives/books/.
+/// Removal is non-destructive — <see cref="ArchiveBook"/> moves the file to archives/books/.
 /// </summary>
 public class JsonBookRepository : IBookRepository
 {
@@ -65,7 +65,7 @@ public class JsonBookRepository : IBookRepository
         File.WriteAllText(path, JsonSerializer.Serialize(book, JsonOpts));
     }
 
-    public void DeleteBook(string id)
+    public void ArchiveBook(string id)
     {
         var path = Path.Combine(BookDir, $"{id}.json");
         if (!File.Exists(path)) return;

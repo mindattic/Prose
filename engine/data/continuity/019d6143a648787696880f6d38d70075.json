@@ -1,0 +1,1360 @@
+{
+  "entity_id": "019d6143a648787696880f6d38d70075",
+  "entity_name": "Kyle Ellen Corbin-Vasik",
+  "kind": "person",
+  "facts": [
+    {
+      "id": "fact-8e2b48b2cbeaacc8",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "height",
+      "object": "six feet",
+      "snippet": "He is six feet of nothing.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.578Z",
+      "last_confirmed_at": "2026-04-30T03:21:38.392Z",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "fact-da4dcadd5e214d88",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "build",
+      "object": "swimmer's build, lean",
+      "snippet": "A swimmer's build stripped past lean into something the body shouldn't sustain.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.585Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.585Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-0fa06bb0da45fa48"
+      ]
+    },
+    {
+      "id": "fact-b0b10c6780c72a30",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "cheekbones",
+      "object": "throw shadows in low light",
+      "snippet": "His cheekbones throw shadows in low light.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.586Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.586Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-efe90597ceade3a0",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "forearms_appearance",
+      "object": "rope and tendon and zero forgiveness",
+      "snippet": "His forearms, emerging from rolled sleeves, are rope and tendon and zero forgiveness — no softness anywhere, no insulation",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.586Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.586Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-1c3014c322c40bfb",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "age",
+      "object": "at least 32 (since 32,000 electrodes paid since 19)",
+      "snippet": "Thirty-two thousand electrodes don't come free. The array bills him in calories and he has been paying the invoice in flesh since he was nineteen.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "medium",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.587Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.587Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-11a63d90fbad1e62",
+        "fact-264fa94197951288"
+      ]
+    },
+    {
+      "id": "fact-c47d73331caf3e4f",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_carry_location_katana",
+      "object": "across his back in a matte-black friction sheath, hilt over the right shoulder",
+      "snippet": "The katana is across his back in a matte-black friction sheath — a 102-centimeter draw, hilt over the right shoulder",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.587Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.587Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-131871b69d86a45e",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_name_katana",
+      "object": "Silence",
+      "snippet": "The blade is called Silence and the name was not his idea.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.588Z",
+      "last_confirmed_at": "2026-04-30T03:21:38.396Z",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "fact-b3e2dd80c8a2f5c1",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_carry_location_gun",
+      "object": "holstered but not secured on low left hip",
+      "snippet": "On his low left hip, holstered but not secured, sits the Torii TSS-3",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.588Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.588Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-635044466f544ff2",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_name_gun",
+      "object": "Chorus",
+      "snippet": "Chorus. He named it himself.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.589Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.589Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-1ef8e09b52c2323f",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_gun_magazine_capacity",
+      "object": "four rounds in magazine plus one in chamber",
+      "snippet": "Four rounds in the magazine and one in the chamber.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.589Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.589Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-8846eed194cc9681",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "ability",
+      "object": "ballistic_precognition",
+      "snippet": "Ballistic precognition. That's what NeoCortex called it on the intake form.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.590Z",
+      "last_confirmed_at": "2026-04-30T03:21:38.397Z",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "fact-7945f64df4539e77",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "handedness",
+      "object": "right-handed (katana draw and use)",
+      "snippet": "Silence cleared the saya in one continuous draw — right hand over the right shoulder",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.590Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.590Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-1689590637180296",
+        "fact-f9161eb7498f8589"
+      ]
+    },
+    {
+      "id": "fact-66b5c05f9b4b0182",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_gun_hand_use",
+      "object": "left hand",
+      "snippet": "The bird's-head grip cleared the holster in his left hand",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.591Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.591Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-b50bf43ec084a85b",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "residence",
+      "object": "Gray Zone",
+      "snippet": "The loading dock sat at the bottom of the Gray Zone's eastern strut",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.591Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.591Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-ed7cf68de9b1dba9"
+      ]
+    },
+    {
+      "id": "fact-5e69664728e47149",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "employment",
+      "object": "contracted killer/operative",
+      "snippet": "He took the job at half rate. He told himself it was the jaw.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.591Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.591Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-6948f388e0891c5c"
+      ]
+    },
+    {
+      "id": "fact-abc3d3124e3fc8c7",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "physical_condition",
+      "object": "emaciated, blood-misted shape",
+      "snippet": "Kyle felt the watching the way you feel a draft you cannot find the source of.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "medium",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.592Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.592Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-19d17e80368e84ae",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_maintenance",
+      "object": "cleans blade after use",
+      "snippet": "He cleaned the blade.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.592Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.592Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-875bab26fc0c4096",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "payment_preference",
+      "object": "pays standard rate for food",
+      "snippet": "Kyle reaches into his coat and sets a credit chip on the counter beside her hand. Standard rate.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.593Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.593Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-0d703b0ed4e081b6",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "relationship_to_girl",
+      "object": "knows her as daughter of the man with wired jaw",
+      "snippet": "Her father's daughter.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.593Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.593Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-d1a1e855a8e5556a",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "payment_rate_for_contract",
+      "object": "half rate",
+      "snippet": "He took the job at half rate.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.594Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.594Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-369f6c9f19608dce",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_gun_type",
+      "object": "Torii TSS-3 revolver",
+      "snippet": "On his low left hip, holstered but not secured, sits the Torii TSS-3 — bird's-head grip, no stock, the silhouette of a large revolver under a coat.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:19:45.594Z",
+      "last_confirmed_at": "2026-04-30T03:19:45.594Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-0fa06bb0da45fa48",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "build",
+      "object": "swimmer's build stripped past lean",
+      "snippet": "A swimmer's build stripped past lean into something the body shouldn't sustain.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:21:38.393Z",
+      "last_confirmed_at": "2026-04-30T03:21:38.393Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-da4dcadd5e214d88"
+      ]
+    },
+    {
+      "id": "fact-6de0a93a74631ea4",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "cheekbone_feature",
+      "object": "cheekbones throw shadows in low light",
+      "snippet": "His cheekbones throw shadows in low light.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:21:38.394Z",
+      "last_confirmed_at": "2026-04-30T03:21:38.394Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-11a63d90fbad1e62",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "age",
+      "object": "at least 32",
+      "snippet": "he has been paying the invoice in flesh since he was nineteen. He looks like a man who forgot to eat in 2031 and has been catching up badly ever since.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "medium",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:21:38.395Z",
+      "last_confirmed_at": "2026-04-30T03:21:38.395Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-1c3014c322c40bfb"
+      ]
+    },
+    {
+      "id": "fact-3bf4b431f0b2246e",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_name_revolver",
+      "object": "Chorus",
+      "snippet": "Chorus. He named it himself.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:21:38.396Z",
+      "last_confirmed_at": "2026-04-30T03:21:38.396Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-6948f388e0891c5c",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "employment",
+      "object": "contracted killer",
+      "snippet": "He took the job at half rate. He told himself it was the jaw.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "inner_monologue",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:21:38.397Z",
+      "last_confirmed_at": "2026-04-30T03:21:38.397Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-5e69664728e47149"
+      ]
+    },
+    {
+      "id": "fact-1b977d16fd8fe9d8",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_use_discipline",
+      "object": "blade and gun used with mathematical precision",
+      "snippet": "Kneecaps are math. Duel is discipline. They are the same job.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "inner_monologue",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:21:38.398Z",
+      "last_confirmed_at": "2026-04-30T03:21:38.398Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-590b72f888a37a0a",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "payment_behavior",
+      "object": "pays standard rate for food",
+      "snippet": "Kyle reaches into his coat and sets a credit chip on the counter beside her hand. Standard rate.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:21:38.398Z",
+      "last_confirmed_at": "2026-04-30T03:21:38.398Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-6a6d39492a99766f",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "physical_condition_post_combat",
+      "object": "hands tremble after fight",
+      "snippet": "Kyle's hands were steady. They would shake in four minutes.",
+      "source_chapter_id": "019d6143ab61752da68e0bc71595cd6c",
+      "source_chapter_number": 1,
+      "source_chapter_title": "Bearing Teeth",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        1
+      ],
+      "first_asserted_at": "2026-04-30T03:21:38.399Z",
+      "last_confirmed_at": "2026-04-30T03:21:38.399Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-9624b4bc5d3c4896",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "hair_color",
+      "object": "not specified",
+      "snippet": "Kyle was watching a woman pretend not to watch him.",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "low",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.871Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.872Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-e48fef1c22e9e841",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "implant_type",
+      "object": "NeoCortex",
+      "snippet": "His NeoCortex kept reaching for a signal and finding the shape of one instead",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.874Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.874Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-84c52bcdf22e78ef",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_carry_location",
+      "object": "katana on hip",
+      "snippet": "The katana's weight shifted against his hip with each step",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek",
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.875Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.875Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-ba861ec84ef9ce0d",
+        "fact-1653c0e9f8a9da11",
+        "fact-271fe218e18ce27d"
+      ]
+    },
+    {
+      "id": "fact-ba861ec84ef9ce0d",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_carry_location",
+      "object": "Silence on back",
+      "snippet": "He unslung Silence from his back and leaned it against the wall outside her door",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek",
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.875Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.875Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-84c52bcdf22e78ef"
+      ]
+    },
+    {
+      "id": "fact-1653c0e9f8a9da11",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_carry_location",
+      "object": "Chorus (left hand)",
+      "snippet": "The left hand was already where Chorus would be in eight-tenths of a second",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.876Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.876Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-84c52bcdf22e78ef"
+      ]
+    },
+    {
+      "id": "fact-271fe218e18ce27d",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "weapon_carry_location",
+      "object": "Silence (right hand draw)",
+      "snippet": "the right hand was already where Silence's draw would begin in three-tenths",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.876Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.876Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-84c52bcdf22e78ef"
+      ]
+    },
+    {
+      "id": "fact-264fa94197951288",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "age",
+      "object": "37 (implied: 26 + 11 years)",
+      "snippet": "He had been twenty-six when they finished the installation and he had not been quiet inside since.",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "medium",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.877Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.877Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-1c3014c322c40bfb"
+      ]
+    },
+    {
+      "id": "fact-282ad3d3e05df1ac",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "implant_duration_years",
+      "object": "11",
+      "snippet": "Eleven years. He had been twenty-six when they finished the installation",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.878Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.878Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-d67d3d515588bf54",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "occupation",
+      "object": "freelancer (contract worker)",
+      "snippet": "the calculation a freelancer does when his fixer of two months shows up",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.878Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.878Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-1689590637180296",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "handedness",
+      "object": "not specified",
+      "snippet": "The left hand was already where Chorus would be in eight-tenths of a second; the right hand was already where Silence's draw would begin in three-tenths.",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "low",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.879Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.879Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-7945f64df4539e77"
+      ]
+    },
+    {
+      "id": "fact-6d7c46f74e69f714",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "relationship_to_sable",
+      "object": "fixer-client for two months",
+      "snippet": "the relationship is two months old. A fixer he barely knows",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.880Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.880Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-544c7283c21996f8",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "implant_effect",
+      "object": "constant low hum in chest for 11 years",
+      "snippet": "the hum had been there for eleven years and he had not known it was there",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.881Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.881Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-c1b8d667bda89a61",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "possessions",
+      "object": "piezoelectric ceramic",
+      "snippet": "The piezoelectric ceramic was in his coat pocket and he set it on the bench's cleared edge",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.881Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.881Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-367ec740a2e25930",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "implant_presence",
+      "object": "NeoCortex implant",
+      "snippet": "His NeoCortex kept reaching for a signal",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.890Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.890Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-3853cd58397978bb"
+      ]
+    },
+    {
+      "id": "fact-3853cd58397978bb",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "implant_presence",
+      "object": "ocular implants",
+      "snippet": "The ocular implants — black, machined, the aperture rings that made a small sound when she shifted focus",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.891Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.891Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-367ec740a2e25930"
+      ]
+    },
+    {
+      "id": "fact-f550d1a1e308d174",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "implant_ability",
+      "object": "detects electromagnetic hum",
+      "snippet": "The hum in his chest, the low electromagnetic signature that lived in the implant's background like a second heartbeat",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.891Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.892Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-2e975b67a94d5bab"
+      ]
+    },
+    {
+      "id": "fact-2e975b67a94d5bab",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "implant_ability",
+      "object": "tracks signals and surveillance traffic",
+      "snippet": "I can triangulate its physical position. Three locations. Three readings of surveillance traffic against your implants",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "character",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.892Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.892Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-f550d1a1e308d174"
+      ]
+    },
+    {
+      "id": "fact-ed7cf68de9b1dba9",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "residence",
+      "object": "The Pivot",
+      "snippet": "The stairs at The Pivot had a particular sound at 0356",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.893Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.893Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-b50bf43ec084a85b"
+      ]
+    },
+    {
+      "id": "fact-f9161eb7498f8589",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "handedness",
+      "object": "left hand near Chorus weapon, right hand near Silence weapon",
+      "snippet": "His left hand stayed where Chorus would be. His right hand stayed where Silence's draw would begin",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.894Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.894Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-7945f64df4539e77"
+      ]
+    },
+    {
+      "id": "fact-103dc5d276c5e6ac",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "possession",
+      "object": "piezoelectric ceramic",
+      "snippet": "The piezoelectric ceramic was in his coat pocket and he set it on the bench's cleared edge",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.895Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.895Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-451f6f903c5bf8bc",
+        "fact-fe6d1ee2bb078e68"
+      ]
+    },
+    {
+      "id": "fact-7d60167d9f7ac974",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "knowledge",
+      "object": "knows Sable's voice from two months of contracts",
+      "snippet": "the voice he had been getting contracts in for two months and had not yet built a face for",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.901Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.901Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-156fd1f9288b4f57",
+        "fact-ef3f0ceea6dc1199",
+        "fact-06f13d21956aa289",
+        "fact-a9a1099ef8c2918b",
+        "fact-5ad29b8fbe0e0966"
+      ]
+    },
+    {
+      "id": "fact-156fd1f9288b4f57",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "knowledge",
+      "object": "knows Sable is a fixer",
+      "snippet": "A fixer he barely knows showing up at his stall in person",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.902Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.902Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-7d60167d9f7ac974"
+      ]
+    },
+    {
+      "id": "fact-ef3f0ceea6dc1199",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "knowledge",
+      "object": "knows hum in chest has existed for eleven years",
+      "snippet": "The hum had been there for eleven years and he had not known it was there",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.903Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.903Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-7d60167d9f7ac974"
+      ]
+    },
+    {
+      "id": "fact-06f13d21956aa289",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "knowledge",
+      "object": "knows hum is electromagnetic signature of implant",
+      "snippet": "the low electromagnetic signature that lived in the implant's background like a second heartbeat",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.904Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.904Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-7d60167d9f7ac974"
+      ]
+    },
+    {
+      "id": "fact-a9a1099ef8c2918b",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "knowledge",
+      "object": "knows Sable placed nodes for triangulation",
+      "snippet": "I have placed the nodes. I need you outside this room behaving exactly as you behave",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "character",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.905Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.905Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-7d60167d9f7ac974"
+      ]
+    },
+    {
+      "id": "fact-5ad29b8fbe0e0966",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "knowledge",
+      "object": "knows the wet market never closes",
+      "snippet": "The wet market always ran — it did not close for rain, did not close for cold",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.905Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.905Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-7d60167d9f7ac974"
+      ]
+    },
+    {
+      "id": "fact-451f6f903c5bf8bc",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "possession",
+      "object": "forty credits",
+      "snippet": "Kyle reached into his coat pocket and produced what was there: forty credits",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.906Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.906Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-103dc5d276c5e6ac"
+      ]
+    },
+    {
+      "id": "fact-fe6d1ee2bb078e68",
+      "entity_id": "019d6143a648787696880f6d38d70075",
+      "entity_name": "Kyle Ellen Corbin-Vasik",
+      "predicate": "possession",
+      "object": "forty credits placed on busker's crate",
+      "snippet": "He set them on the crate beside the busker",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.907Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.907Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-103dc5d276c5e6ac"
+      ]
+    }
+  ],
+  "updated": "2026-04-30T04:47:56.907Z"
+}

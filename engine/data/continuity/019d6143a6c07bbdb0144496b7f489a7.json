@@ -1,0 +1,373 @@
+{
+  "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+  "entity_name": "Sable",
+  "kind": "person",
+  "facts": [
+    {
+      "id": "fact-bab8b4d79dac69d3",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "hair_color",
+      "object": "red",
+      "snippet": "the dark of red hair beneath the rain hood",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.883Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.883Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-aae0454ed97d11f4"
+      ]
+    },
+    {
+      "id": "fact-4673233c85a18e8f",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "age",
+      "object": "late thirties",
+      "snippet": "Late thirties.",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek",
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.884Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.884Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-d92dcc8753d59231",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "physical_feature",
+      "object": "tall",
+      "snippet": "Tall.",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.884Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.884Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-458267df6c4283b4",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "implant_type",
+      "object": "ocular implants (black, machined, aperture rings)",
+      "snippet": "The ocular implants — black, machined, the aperture rings that made a small sound when she shifted focus",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.885Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.885Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-ef1f6d478363aa73",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "occupation",
+      "object": "fixer",
+      "snippet": "A fixer he barely knows showing up at his stall in person",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.885Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.885Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-82888f967a150757",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "relationship_to_kyle",
+      "object": "fixer for two months",
+      "snippet": "the voice that had given him eleven operational briefings in the two months since she picked him up",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.886Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.886Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-7afb0498a512d8f5",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "possessions",
+      "object": "tan coat (quality, not soaked through)",
+      "snippet": "the coat that had been with her in the rain for eleven minutes and had not soaked through",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.886Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.886Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-99b39dc552e5d538"
+      ]
+    },
+    {
+      "id": "fact-99b39dc552e5d538",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "possessions",
+      "object": "brass-gasketed key",
+      "snippet": "produced a key. Brass-gasketed.",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.886Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.886Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-7afb0498a512d8f5"
+      ]
+    },
+    {
+      "id": "fact-d8acdec51b69b6c1",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "knowledge_of_implant",
+      "object": "knows about the implant's surveillance",
+      "snippet": "If it is not looking through your eyes, it is interpreting your senses.",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "character",
+      "confidence": "high",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.887Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.887Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-00be327f19c93f30",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "residence",
+      "object": "not specified (uses relay station for meetings)",
+      "snippet": "the room she lives in is not safe",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "low",
+      "extracted_by": [
+        "deepseek"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.887Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.887Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-aae0454ed97d11f4",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "hair_color",
+      "object": "dark red",
+      "snippet": "the dark of red hair beneath the rain hood",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.896Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.896Z",
+      "status": "CONTRADICTED",
+      "contradicts": [
+        "fact-bab8b4d79dac69d3"
+      ]
+    },
+    {
+      "id": "fact-bda211ec18c675c1",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "ocular_implants",
+      "object": "black, machined with aperture rings",
+      "snippet": "The ocular implants — black, machined, the aperture rings that made a small sound when she shifted focus",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.896Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.896Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-432eadaa5045d55c",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "coat_color",
+      "object": "tan",
+      "snippet": "She reached into the tan coat",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.897Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.897Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-db332dcbc5349973",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "coat_feature",
+      "object": "quality, does not soak through",
+      "snippet": "the coat that had been with her in the rain for eleven minutes and had not soaked through",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.897Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.897Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-a55da07953e180ec",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "possession",
+      "object": "node for triangulating surveillance",
+      "snippet": "Somewhere in Sable's coat pocket the node was reading",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.898Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.898Z",
+      "status": "NEW"
+    },
+    {
+      "id": "fact-11f67a114a248cb1",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7",
+      "entity_name": "Sable",
+      "predicate": "employment",
+      "object": "fixer",
+      "snippet": "She has never come in person before. The relationship is two months old. A fixer he barely knows",
+      "source_chapter_id": "5a0959eb5619bf91f59ffb8632c80259",
+      "source_chapter_number": 2,
+      "source_chapter_title": "A Restless Mind",
+      "voice": "narrator",
+      "confidence": "high",
+      "extracted_by": [
+        "openai"
+      ],
+      "confirmed_in_chapters": [
+        2
+      ],
+      "first_asserted_at": "2026-04-30T04:47:56.898Z",
+      "last_confirmed_at": "2026-04-30T04:47:56.898Z",
+      "status": "NEW"
+    }
+  ],
+  "updated": "2026-04-30T04:47:56.898Z"
+}

@@ -40,7 +40,7 @@ else
     <div class="board-grid">
         @foreach (var tile in tiles.Where(t => t.AlwaysShow || t.Count > 0))
         {
-            <a href="@tile.Href" class="board-tile">
+            <a href="@tile.Href" class="board-tile" title="@tile.Tooltip">
                 <i class="bi @tile.Icon board-tile-icon"></i>
                 <div class="board-tile-name">@tile.Name</div>
                 @if (tile.Count > 0)
@@ -55,7 +55,7 @@ else
 @code {
     [Parameter] public string? Slug { get; set; }
 
-    record BoardTile(string Icon, string Href, string Name, int Count, bool AlwaysShow = false);
+    record BoardTile(string Icon, string Href, string Name, int Count, bool AlwaysShow = false, string Tooltip = "");
 
     string title = "";
     List<BoardTile> tiles = [];
@@ -78,51 +78,51 @@ else
         {
             "Characters" =>
             [
-                new("bi-people",              "/characters",      "People",          CharRepo.GetAll().Count),
-                new("bi-cpu-fill",            "/synthetics",      "Synthetic Life",  SynthRepo.GetAll().Count),
-                new("bi-person-bounding-box", "/archetypes",      "Archetypes",      ArchetypeRepo.GetAll().Count),
-                new("bi-emoji-neutral",       "/ceramic-men",     "Ceramic Men",     SynthRepo.GetAll().Count(s => s.Type == "ceramic_man")),
+                new("bi-people",              "/characters",      "People",          CharRepo.GetAll().Count, false, "Human characters with full psychology, speech patterns, behavioral rules, cyberware inventory, and timelines."),
+                new("bi-cpu-fill",            "/synthetics",      "Synthetic Life",  SynthRepo.GetAll().Count, false, "Non-biological persons: AIs, androids, robots, cyborg AIs, distributed AIs, emergent AIs, rogue AIs, corporate AIs."),
+                new("bi-person-bounding-box", "/archetypes",      "Archetypes",      ArchetypeRepo.GetAll().Count, false, "Reusable character archetype templates with trait weights — seed for new character generation."),
+                new("bi-emoji-neutral",       "/ceramic-men",     "Ceramic Men",     SynthRepo.GetAll().Count(s => s.Type == "ceramic_man"), false, "Subset of synthetic life: humanoid ceramic-shelled synthetics specifically."),
             ],
             "Organizations" =>
             [
-                new("bi-building",            "/corps",           "Corponations",    CorpRepo.GetAll().Count),
-                new("bi-diagram-3",           "/subsidiaries",    "Subsidiaries",    SubsidiaryRepo.GetAll().Count),
-                new("bi-shield-exclamation",  "/factions",        "Factions",        FactionRepo.GetAll().Count),
+                new("bi-building",            "/corps",           "Corponations",    CorpRepo.GetAll().Count, false, "Corporate nation-states that replaced governments. Own territory, field armies, write laws within their zones."),
+                new("bi-diagram-3",           "/subsidiaries",    "Subsidiaries",    SubsidiaryRepo.GetAll().Count, false, "Subsidiary corps under corponations. Smaller scope — often a single product line, region, or service."),
+                new("bi-shield-exclamation",  "/factions",        "Factions",        FactionRepo.GetAll().Count, false, "Non-corporate organizations: gangs, syndicates, cults, freelancer collectives, political movements."),
             ],
             "Gear" =>
             [
-                new("bi-crosshair",           "/weaponry",        "Weaponry",        WeaponRepo.GetAll().Count),
-                new("bi-bullseye",            "/ammunition",      "Ammunition",      AmmoRepo.GetAll().Count),
-                new("bi-motherboard",         "/cyberware",       "Cyberware",       CyberRepo.GetAll().Count),
-                new("bi-shield-shaded",       "/equipment",       "Equipment",       EquipRepo.GetAll().Count),
-                new("bi-handbag",             "/apparel",         "Apparel",         ApparelRepo.GetAll().Count),
-                new("bi-virus",               "/genemods",        "Genemods",        GenemodRepo.GetAll().Count),
-                new("bi-capsule",             "/pharmaceuticals", "Pharmaceuticals", PharmaRepo.GetAll().Count),
+                new("bi-crosshair",           "/weaponry",        "Weaponry",        WeaponRepo.GetAll().Count, false, "Weapons with tactical use, manufacturer, tier, and cultural context. Described by what they do to flesh, not by model number."),
+                new("bi-bullseye",            "/ammunition",      "Ammunition",      AmmoRepo.GetAll().Count, false, "Ammo types and effects — specialty rounds, hand-fit slugs, suppression loads."),
+                new("bi-motherboard",         "/cyberware",       "Cyberware",       CyberRepo.GetAll().Count, false, "Augmentations with body location, manufacturer, tier, condition (functional / damaged / destroyed)."),
+                new("bi-shield-shaded",       "/equipment",       "Equipment",       EquipRepo.GetAll().Count, false, "Gear, tools, and field equipment that aren't weapons or apparel."),
+                new("bi-handbag",             "/apparel",         "Apparel",         ApparelRepo.GetAll().Count, false, "Clothing — tier-coded fashion that signals affiliation, status, and intent."),
+                new("bi-virus",               "/genemods",        "Genemods",        GenemodRepo.GetAll().Count, false, "Genetic modifications with effects, side effects, and accessibility tier."),
+                new("bi-capsule",             "/pharmaceuticals", "Pharmaceuticals", PharmaRepo.GetAll().Count, false, "Drugs both legal and illegal: stimulants, suppressants, augment-control meds, recreational use."),
             ],
             "World" =>
             [
-                new("bi-geo-alt",             "/places",          "Places",          DistrictRepo.GetAll().Count),
-                new("bi-truck",               "/transportation",  "Transportation",  TransportRepo.GetAll().Count),
-                new("bi-gem",                 "/materials",       "Materials",       MaterialRepo.GetAll().Count),
-                new("bi-cpu",                 "/technology",      "Technology",      TechRepo.GetAll().Count),
-                new("bi-robot",               "/automata",        "Automata",        AutomatonRepo.GetAll().Count),
-                new("bi-book",                "/rules",           "World Rules",     0),
+                new("bi-geo-alt",             "/places",          "Places",          DistrictRepo.GetAll().Count, false, "Districts, buildings, landmarks. Atmosphere (sights / sounds / smells / feel), demographics, dangers, exits."),
+                new("bi-truck",               "/transportation",  "Transportation",  TransportRepo.GetAll().Count, false, "Vehicles + the Pulse — magnetic vacuum tube transit at Mach 6. Chicago is the world hub."),
+                new("bi-gem",                 "/materials",       "Materials",       MaterialRepo.GetAll().Count, false, "Construction materials and their properties: ferrocement, smart polymers, carbon weave, etc."),
+                new("bi-cpu",                 "/technology",      "Technology",      TechRepo.GetAll().Count, false, "Tech concepts and systems: BCI, NeoCortex, ballistic precognition, the network layer."),
+                new("bi-robot",               "/automata",        "Automata",        AutomatonRepo.GetAll().Count, false, "Autonomous machines — NOT synthetic life. Iowan Behemoths, security drones, factory units."),
+                new("bi-book",                "/rules",           "World Rules",     0, true, "Hard prose constraints (literary_rules.json) injected into every generation call as NON-NEGOTIABLE."),
             ],
             "Culture" =>
             [
-                new("bi-file-earmark-text",   "/documents",       "Documents",       DocRepo.GetAll().Count),
-                new("bi-quote",               "/quotes",          "Quotes",          QuoteRepo.GetAll().Count),
-                new("bi-chat-quote",          "/vocabulary",      "Vocabulary",      VocabRepo.GetAll().Count),
-                new("bi-newspaper",           "/news",            "News Archive",    NewsRepo.GetAll().Count),
-                new("bi-film",                "/entertainment",   "Entertainment",   EntertainmentRepo.GetAll().Count),
-                new("bi-basket",              "/goods",           "Consumer Goods",  GoodsRepo.GetAll().Count),
+                new("bi-file-earmark-text",   "/documents",       "Documents",       DocRepo.GetAll().Count, false, "Long-form worldbuilding lore: history, sociology, politics, deep-canon essays."),
+                new("bi-quote",               "/quotes",          "Quotes",          QuoteRepo.GetAll().Count, false, "In-world quotations attributed to characters, documents, or sources."),
+                new("bi-chat-quote",          "/vocabulary",      "Vocabulary",      VocabRepo.GetAll().Count, false, "GLMZ-specific terminology: street slang, corporate jargon, technical terms."),
+                new("bi-newspaper",           "/news",            "News Archive",    NewsRepo.GetAll().Count, false, "Period news articles and headlines from the GLMZ media ecosystem."),
+                new("bi-film",                "/entertainment",   "Entertainment",   EntertainmentRepo.GetAll().Count, false, "Films, books, music, and games that exist in-world — pop culture characters reference."),
+                new("bi-basket",              "/goods",           "Consumer Goods",  GoodsRepo.GetAll().Count, false, "Branded products characters consume: Libation Corp drinks, branded foods, household items."),
             ],
             "Tools" => BuildToolsTiles(),
             "Visualizations" =>
             [
-                new("bi-diagram-3",           "/graph",           "World Graph",     0, true),
-                new("bi-map-fill",            "/map",             "Map",             0, true),
-                new("bi-tree-fill",           "/heritage",        "Heritage",        0, true),
+                new("bi-diagram-3",           "/graph",           "World Graph",     0, true, "2D D3 force-directed view of every entity and relationship. Pan, zoom, click any node to drill in."),
+                new("bi-map-fill",            "/map",             "Map",             0, true, "Geographic layout of GLMZ districts and exits. Zork-style directional travel between places."),
+                new("bi-tree-fill",           "/heritage",        "Heritage",        0, true, "Ethnic / genetic ancestry heatmap of the cast — visualizes the Ubiquitous Diaspora."),
             ],
             _ => []
         };
@@ -132,14 +132,16 @@ else
     {
         var list = new List<BoardTile>
         {
-            new("bi-speedometer2", "/dashboard", "Dashboard",    0, true),
-            new("bi-book-half",    "/oracle",    "World Oracle", 0, true),
+            new("bi-speedometer2",    "/dashboard", "Dashboard",     0, true, "Live overview: entity counts across all repositories, world-graph size, story counts, configured-service status. Your at-a-glance health check."),
+            new("bi-question-circle", "/oracle",    "World Oracle",  0, true, "Ask factual questions about GLMZ in natural language. Answers grounded strictly in documented canon. Refuses to speculate when the data isn't there."),
+            new("bi-book-half",       "/atlas",     "Atlas",         0, true, "System-wide directory of every entity type, service, and architectural component. The whole codebase + canon expressed as a hierarchy."),
         };
-        if (Access.CanWrite)
+        if (Access.IsContributor)
         {
-            list.Add(new("bi-book",             "/books",   "Bookshelf",      0, true));
-            list.Add(new("bi-collection",       "/series",  "Series",         0, true));
-            list.Add(new("bi-lightbulb",        "/facts",   "Fact Discovery", 0, true));
+            list.Add(new("bi-book",            "/books",        "Bookshelf",     0, true, "Every book in the project. Pick one to drill into chapters, outline, motifs, review, and continuity."));
+            list.Add(new("bi-collection",      "/series",       "Series",        0, true, "Group books into multi-book arcs. Stub for now; future home for series-level outlines and continuity."));
+            list.Add(new("bi-lightbulb",       "/lore-triples", "Lore Triples",  0, true, "Subject-Predicate-Object knowledge graph extracted from worldbuilding entity records. Embedding-clustered consensus on canon facts; flags inconsistent values across sources for repair."));
+            list.Add(new("bi-database-check",  "/continuity",   "Continuity",    0, true, "Atomic facts extracted from chapter prose, organized per book. Surfaces contradictions (handedness, gear placement, ages, locations) and lets you resolve A / B / custom before treating the book as canon."));
         }
         return list;
     }

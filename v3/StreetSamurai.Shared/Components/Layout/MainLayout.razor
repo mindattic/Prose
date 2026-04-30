@@ -24,7 +24,7 @@
 }
 *@
 
-<div class="app-shell @(!Access.CanWrite ? "readonly-mode" : "") @(SettingsSvc.RepoListOnRight ? "list-right" : "")"
+<div class="app-shell @(!Access.IsContributor ? "readonly-mode" : "") @(SettingsSvc.RepoListOnRight ? "list-right" : "")"
      @onkeydown="OnGlobalKeyDown" tabindex="-1">
     <NavMenu />
     <main class="topnav-main">

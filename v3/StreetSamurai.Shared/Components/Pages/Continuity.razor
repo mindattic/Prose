@@ -1,0 +1,105 @@
+@page "/continuity"
+@attribute [Authorize(Roles = "Contributor,Administrator")]
+@using System.Text.Json
+@using StreetSamurai.Core.Interfaces
+@inject IBookRepository BookRepo
+@inject IPathProvider Paths
+@inject NavigationManager Nav
+
+<div class="d-flex justify-content-between align-items-start mb-3">
+    <div>
+        <div class="small text-muted mb-1">
+            <a href="/" class="text-muted text-decoration-none"><i class="bi bi-arrow-left me-1"></i>Home</a>
+        </div>
+        <h4 class="text-info mb-0"><i class="bi bi-database-check me-2"></i>Continuity</h4>
+        <p class="small text-muted mb-0">
+            Atomic facts extracted from chapter prose, organized per book. Pick a book to review and resolve its contradictions.
+        </p>
+    </div>
+</div>
+
+@if (rows.Count == 0)
+{
+    <div class="alert alert-secondary small">No books on the shelf yet.</div>
+}
+else
+{
+    <div class="row g-2">
+        @foreach (var r in rows.OrderByDescending(x => x.Contradictions).ThenBy(x => x.Title))
+        {
+            <div class="col-md-6 col-lg-4">
+                <a href="@($"/books/{r.BookId}/continuity")" class="card text-decoration-none h-100 @(r.Contradictions > 0 ? "border-warning" : "border-secondary")">
+                    <div class="card-body py-2">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h6 class="mb-1">@r.Title</h6>
+                                <div class="small text-muted">@r.ChapterCount chapters · @r.FactCount facts</div>
+                            </div>
+                            @if (r.Contradictions > 0)
+                            {
+                                <span class="badge bg-warning text-dark">@r.Contradictions <i class="bi bi-exclamation-triangle ms-1"></i></span>
+                            }
+                            else if (r.FactCount > 0)
+                            {
+                                <span class="badge bg-success"><i class="bi bi-check"></i></span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">no facts yet</span>
+                            }
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private record BookRow(string BookId, string Title, int ChapterCount, int FactCount, int Contradictions);
+
+    private List<BookRow> rows = new();
+
+    protected override void OnInitialized()
+    {
+        var continuityDir = Path.Combine(Paths.EngineDataDir, "continuity");
+        var bookChapterMap = new Dictionary<string, HashSet<string>>();
+        foreach (var b in BookRepo.ListBooks())
+        {
+            bookChapterMap[b.Id] = new HashSet<string>(b.ChapterIds ?? new());
+        }
+
+        var perBookFact = bookChapterMap.ToDictionary(kv => kv.Key, _ => 0);
+        var perBookContra = bookChapterMap.ToDictionary(kv => kv.Key, _ => 0);
+
+        if (Directory.Exists(continuityDir))
+        {
+            foreach (var file in Directory.GetFiles(continuityDir, "*.json"))
+            {
+                try
+                {
+                    using var doc = JsonDocument.Parse(File.ReadAllText(file));
+                    if (!doc.RootElement.TryGetProperty("facts", out var fa) || fa.ValueKind != JsonValueKind.Array) continue;
+                    foreach (var f in fa.EnumerateArray())
+                    {
+                        var sourceChapterId = f.TryGetProperty("source_chapter_id", out var sc) ? sc.GetString() ?? "" : "";
+                        if (string.IsNullOrEmpty(sourceChapterId)) continue;
+                        var status = f.TryGetProperty("status", out var st) ? st.GetString() ?? "" : "";
+                        foreach (var (bid, chapters) in bookChapterMap)
+                        {
+                            if (!chapters.Contains(sourceChapterId)) continue;
+                            perBookFact[bid] += 1;
+                            if (status == "CONTRADICTED") perBookContra[bid] += 1;
+                            break;
+                        }
+                    }
+                }
+                catch { /* skip malformed */ }
+            }
+        }
+
+        rows = BookRepo.ListBooks()
+            .Select(b => new BookRow(b.Id, b.Title, b.ChapterIds?.Count ?? 0, perBookFact.GetValueOrDefault(b.Id), perBookContra.GetValueOrDefault(b.Id)))
+            .ToList();
+    }
+}

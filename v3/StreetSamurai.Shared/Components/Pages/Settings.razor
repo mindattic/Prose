@@ -16,7 +16,7 @@
 @inject AuthenticationStateProvider AuthStateProvider
 @using Microsoft.AspNetCore.Components.Authorization
 
-@if (Access.CanAdminister)
+@if (Access.IsAdministrator)
 {
 <div class="d-flex justify-content-between align-items-center mb-1">
     <h4 class="text-danger mb-0">Settings</h4>
@@ -743,11 +743,11 @@
     private async Task PublishToFtp() { }
     */
 
-    // Fact Discovery
+    // Lore Triples (legacy Python pipeline launcher)
     private string? factStatus;
     private string? describeStatus;
 
-    private async Task LaunchFactDiscovery()
+    private async Task LaunchLoreTripleExtraction()
     {
         factStatus = "Launching pipeline...";
         await InvokeAsync(StateHasChanged);
@@ -846,7 +846,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        if (!Access.CanAdminister) return;
+        if (!Access.IsAdministrator) return;
         providerStatus = await LlmRouter.GetProvidersAsync();
         activeProvider = providerStatus.FirstOrDefault(p => p.IsActive);
         ttsConfigured = await TtsSvc.IsConfiguredAsync();

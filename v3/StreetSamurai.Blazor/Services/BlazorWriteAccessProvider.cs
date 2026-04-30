@@ -24,7 +24,17 @@ public class BlazorWriteAccessProvider : IWriteAccessProvider
 
     public bool IsReadOnlyMode => readOnlyState.IsReadOnly;
 
-    public bool CanWrite
+    public bool IsVisitor
+    {
+        get
+        {
+            if (readOnlyState.IsReadOnly) return true;
+            var user = GetUser();
+            return !user.IsInRole(UserRoles.Contributor) && !user.IsInRole(UserRoles.Administrator);
+        }
+    }
+
+    public bool IsContributor
     {
         get
         {
@@ -34,7 +44,7 @@ public class BlazorWriteAccessProvider : IWriteAccessProvider
         }
     }
 
-    public bool CanAdminister
+    public bool IsAdministrator
     {
         get
         {

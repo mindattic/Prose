@@ -5,6 +5,7 @@
 @inject IBookRepository BookRepo
 @inject IChapterRepository ChapterRepo
 @inject NavigationManager Nav
+@inject IWriteAccessProvider Access
 
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h4 class="text-danger mb-0"><i class="bi bi-book me-2"></i>Bookshelf</h4>
@@ -12,9 +13,12 @@
         <a href="/series" class="btn btn-sm btn-outline-secondary">
             <i class="bi bi-collection"></i><div class="btn-lbl"> Series</div>
         </a>
-        <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew">
-            <i class="bi bi-plus-lg"></i><div class="btn-lbl"> New Book</div>
-        </button>
+        @if (Access.IsAdministrator)
+        {
+            <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew">
+                <i class="bi bi-plus-lg"></i><div class="btn-lbl"> New Book</div>
+            </button>
+        }
     </div>
 </div>
 
@@ -66,12 +70,56 @@
     </div>
 }
 
+@* ── Archive Book Modal ──────────────────────────── *@
+@if (archiveBook != null)
+{
+    <div class="modal-backdrop fade show" style="z-index:1050;"></div>
+    <div class="modal fade show d-block" tabindex="-1" style="z-index:1055;" @onclick="CloseArchive">
+        <div class="modal-dialog modal-dialog-centered" @onclick:stopPropagation="true">
+            <div class="modal-content bg-dark text-light border-warning">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-warning"><i class="bi bi-archive me-2"></i>Archive Book</h5>
+                    <button type="button" class="btn-close btn-close-white" @onclick="CloseArchive"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-2">
+                        You are about to archive <strong class="text-danger">@archiveBook.Title</strong>.
+                        The book file moves to <code>engine/data/archives/books/</code>; chapters stay in place.
+                    </p>
+                    <p class="small text-muted mb-2">
+                        To confirm, paste this book's id below:
+                    </p>
+                    <div class="mb-2">
+                        <code class="user-select-all small text-info">@archiveBook.Id</code>
+                    </div>
+                    <input class="form-control bg-black text-light border-secondary font-monospace small"
+                           @bind="archiveConfirmId"
+                           @bind:event="oninput"
+                           placeholder="Paste the book id to enable archive" />
+                    @if (!string.IsNullOrEmpty(archiveError))
+                    {
+                        <div class="text-danger small mt-2">@archiveError</div>
+                    }
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button class="btn btn-secondary btn-sm" @onclick="CloseArchive">Cancel</button>
+                    <button class="btn btn-warning btn-sm" @onclick="ConfirmArchive"
+                            disabled="@(!string.Equals(archiveConfirmId, archiveBook.Id, StringComparison.Ordinal))">
+                        <i class="bi bi-archive"></i> Archive
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 @* ── Bookshelf Grid ──────────────────────────────── *@
 <div class="bookshelf-grid">
     @foreach (var book in books)
     {
         var chapterCount = book.ChapterIds.Count;
-        <a class="book-card" href="@($"/books/{book.Id}/chapters")">
+        var bookId = book.Id;
+        <div class="book-card" @onclick="@(() => Nav.NavigateTo($"/books/{bookId}/chapters"))">
             <div class="book-card-cover" style="@CoverStyle(book)">
                 @if (string.IsNullOrEmpty(book.CoverImageUrl))
                 {
@@ -84,20 +132,33 @@
                         }
                     </div>
                 }
+                @if (Access.IsAdministrator)
+                {
+                    <button type="button"
+                            class="book-card-archive-btn"
+                            title="Archive this book"
+                            @onclick="@(() => OpenArchive(book))"
+                            @onclick:stopPropagation="true">
+                        <i class="bi bi-archive"></i>
+                    </button>
+                }
             </div>
             <div class="book-card-meta">
                 <span class="badge bg-secondary">@chapterCount @(chapterCount == 1 ? "chapter" : "chapters")</span>
                 <span class="badge bg-dark text-muted">@book.Status</span>
             </div>
-        </a>
+        </div>
     }
 
-    <div class="book-card book-card-new" @onclick="CreateNew">
-        <div class="book-card-cover book-card-cover-new">
-            <i class="bi bi-plus-lg"></i>
-            <div class="small mt-2">New Book</div>
+    @if (Access.IsAdministrator)
+    {
+        <div class="book-card book-card-new" @onclick="CreateNew">
+            <div class="book-card-cover book-card-cover-new">
+                <i class="bi bi-plus-lg"></i>
+                <div class="small mt-2">New Book</div>
+            </div>
         </div>
-    </div>
+    }
 </div>
 
 @* ── Loose Chapters ──────────────────────────────── *@
@@ -200,6 +261,24 @@
     }
     .book-card-new:hover .book-card-cover-new { border-color: #c00 !important; color: #c00; }
 
+    .book-card-archive-btn {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        background: rgba(0, 0, 0, 0.55);
+        border: 1px solid #444;
+        color: #ddd;
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        line-height: 1;
+        border-radius: 3px;
+        opacity: 0;
+        transition: opacity 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .book-card:hover .book-card-archive-btn { opacity: 1; }
+    .book-card-archive-btn:hover { color: #ffc107; border-color: #ffc107; }
+
     .loose-chapters-strip {
         display: flex;
         gap: 12px;
@@ -232,6 +311,10 @@
     private string newArcTarget = "";
     private string newProtagonists = "";
 
+    private Book? archiveBook;
+    private string archiveConfirmId = "";
+    private string archiveError = "";
+
     protected override void OnInitialized()
     {
         Reload();
@@ -253,6 +336,7 @@
 
     private void CreateNew()
     {
+        if (!Access.IsAdministrator) return;
         newTitle = newTagline = newPremise = newArcTarget = newProtagonists = "";
         newBookOpen = true;
     }
@@ -260,6 +344,7 @@
 
     private void SaveNewBook()
     {
+        if (!Access.IsAdministrator) return;
         if (string.IsNullOrWhiteSpace(newTitle)) return;
         var book = new Book
         {
@@ -276,5 +361,36 @@
         newBookOpen = false;
         // Land directly on the outline — that's where the work begins for a new book.
         Nav.NavigateTo($"/books/{book.Id}/outline");
+    }
+
+    private void OpenArchive(Book book)
+    {
+        if (!Access.IsAdministrator) return;
+        archiveBook = book;
+        archiveConfirmId = "";
+        archiveError = "";
+    }
+
+    private void CloseArchive()
+    {
+        archiveBook = null;
+        archiveConfirmId = "";
+        archiveError = "";
+    }
+
+    private void ConfirmArchive()
+    {
+        if (!Access.IsAdministrator) return;
+        if (archiveBook == null) return;
+        if (!string.Equals(archiveConfirmId, archiveBook.Id, StringComparison.Ordinal))
+        {
+            archiveError = "The id you entered doesn't match. Paste the full book id shown above.";
+            return;
+        }
+        BookRepo.ArchiveBook(archiveBook.Id);
+        archiveBook = null;
+        archiveConfirmId = "";
+        archiveError = "";
+        Reload();
     }
 }
