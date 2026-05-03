@@ -74,6 +74,27 @@ if (args.Contains("--continuity"))
     return;
 }
 
+// CLI mode: ask the local Qwen against the live RAG corpus.
+//   ss --ask "question"      ss --ask --reindex      ss --ask --stats
+if (args.Contains("--ask"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AskCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: findings inbox — list / show / apply / dismiss / scan.
+if (args.Contains("--findings"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await FindingsCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Configure Serilog — daily rolling log files in engine/logs/
@@ -173,6 +194,17 @@ builder.Services.AddScoped<IWriteAccessProvider, BlazorWriteAccessProvider>();
 builder.Services.AddScoped<ToastNotifier>();
 
 var app = builder.Build();
+
+// Eager-instantiate background services that subscribe to events at construction.
+// EmbeddingIndexService starts the FileSystemWatcher; ContinuousQualityService
+// subscribes to its FileReindexed event for autonomous contradiction/cliché scans.
+_ = app.Services.GetRequiredService<StreetSamurai.Core.Services.EmbeddingIndexService>();
+_ = app.Services.GetRequiredService<StreetSamurai.Core.Services.ContinuousQualityService>();
+
+// Spin up Ollama in the background at boot so /ask is fast on first visit.
+// Fire-and-forget — fails silently on hosts without Ollama installed (Azure).
+var ollamaProc = app.Services.GetRequiredService<StreetSamurai.Core.Services.OllamaProcessManager>();
+_ = Task.Run(() => ollamaProc.EnsureRunningAsync());
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

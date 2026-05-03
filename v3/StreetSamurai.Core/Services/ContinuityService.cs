@@ -267,6 +267,59 @@ public class ContinuityService
         return pairs;
     }
 
+    /// <summary>
+    /// Returns every (entity, predicate) tuple that has more than one live
+    /// claim — the structural definition of a contradiction, regardless of
+    /// whether an edge exists in claim_contradictions. Catches the orphan
+    /// CONTRADICTED rows that <see cref="GetContradictions"/> misses when the
+    /// pair edge was lost or never written.
+    /// </summary>
+    public List<ContradictionGroup> GetContradictionGroups()
+    {
+        var groups = new List<ContradictionGroup>();
+        using var conn = Open();
+
+        // Find (entity_id, predicate) tuples with >1 distinct *unresolved* object.
+        // CANONICAL/REJECTED/SUPERSEDED claims don't count — they've been triaged.
+        using (var c = conn.CreateCommand())
+        {
+            c.CommandText = """
+                SELECT entity_id, predicate, COUNT(DISTINCT object) AS variants
+                  FROM claims
+                 WHERE status IN ('NEW', 'CONFIRMED', 'CONTRADICTED')
+                 GROUP BY entity_id, predicate
+                HAVING COUNT(DISTINCT object) > 1;
+                """;
+            var keys = new List<(string EntityId, string Predicate)>();
+            using (var r = c.ExecuteReader())
+                while (r.Read()) keys.Add((r.GetString(0), r.GetString(1)));
+
+            foreach (var (eid, pred) in keys)
+            {
+                using var q = conn.CreateCommand();
+                q.CommandText = """
+                    SELECT * FROM claims
+                     WHERE entity_id = $eid AND predicate = $pred
+                       AND status IN ('NEW', 'CONFIRMED', 'CONTRADICTED')
+                     ORDER BY first_asserted_at;
+                    """;
+                q.Parameters.AddWithValue("$eid", eid);
+                q.Parameters.AddWithValue("$pred", pred);
+                var claims = ReadAll(q);
+                if (claims.Count >= 2)
+                    groups.Add(new ContradictionGroup
+                    {
+                        EntityId   = eid,
+                        EntityName = claims[0].EntityName,
+                        EntityKind = claims[0].EntityKind,
+                        Predicate  = pred,
+                        Claims     = claims,
+                    });
+            }
+        }
+        return groups;
+    }
+
     public ContinuityStats GetStats()
     {
         using var conn = Open();
@@ -373,6 +426,54 @@ public class ContinuityService
 
         tx.Commit();
         return new ResolveResult { Winner = custom, Loser = a, Loser2 = b };
+    }
+
+    /// <summary>
+    /// Mark a single claim CANONICAL and reject every OTHER live claim that
+    /// shares its (entity_id, predicate). Used by the contradiction-groups UI
+    /// where N&gt;2 claims compete and the user picks one winner.
+    /// </summary>
+    public void MakeCanonical(string claimUid, string note = "")
+    {
+        using var conn = Open(write: true);
+        using var tx = conn.BeginTransaction();
+        var winner = LoadClaim(conn, tx, claimUid)
+            ?? throw new InvalidOperationException($"Claim not found: {claimUid}");
+        var now = DateTime.UtcNow.ToString("o");
+
+        UpdateStatus(conn, tx, winner.ClaimUid, "CANONICAL", now, note);
+
+        using (var c = conn.CreateCommand())
+        {
+            c.Transaction = tx;
+            c.CommandText = """
+                UPDATE claims
+                   SET status = 'REJECTED', resolved_at = $now, superseded_by = $win,
+                       resolution_note = $note
+                 WHERE entity_id = $eid AND predicate = $pred AND claim_uid != $win
+                   AND status IN ('NEW', 'CONFIRMED', 'CONTRADICTED');
+                """;
+            c.Parameters.AddWithValue("$now",  now);
+            c.Parameters.AddWithValue("$win",  winner.ClaimUid);
+            c.Parameters.AddWithValue("$note", note);
+            c.Parameters.AddWithValue("$eid",  winner.EntityId);
+            c.Parameters.AddWithValue("$pred", winner.Predicate);
+            c.ExecuteNonQuery();
+        }
+        tx.Commit();
+    }
+
+    /// <summary>
+    /// Mark a single claim REJECTED without affecting any siblings. Useful when
+    /// one variant is plainly wrong but the user isn't ready to pick a winner.
+    /// </summary>
+    public void RejectClaim(string claimUid, string note = "")
+    {
+        using var conn = Open(write: true);
+        using var tx = conn.BeginTransaction();
+        var now = DateTime.UtcNow.ToString("o");
+        UpdateStatus(conn, tx, claimUid, "REJECTED", now, note);
+        tx.Commit();
     }
 
     /// <summary>
@@ -691,6 +792,21 @@ public class ContradictionPair
     public ContinuityClaim A { get; set; } = new();
     public ContinuityClaim B { get; set; } = new();
     public string Key => A.ClaimUid + "|" + B.ClaimUid;
+}
+
+/// <summary>
+/// All competing claims for one (entity, predicate). Surfaced by
+/// <see cref="ContinuityService.GetContradictionGroups"/> — the structural
+/// view of contradictions that doesn't depend on edge bookkeeping.
+/// </summary>
+public class ContradictionGroup
+{
+    public string EntityId   { get; set; } = "";
+    public string EntityName { get; set; } = "";
+    public string EntityKind { get; set; } = "";
+    public string Predicate  { get; set; } = "";
+    public List<ContinuityClaim> Claims { get; set; } = new();
+    public string Key => EntityId + "|" + Predicate;
 }
 
 public class ResolveResult

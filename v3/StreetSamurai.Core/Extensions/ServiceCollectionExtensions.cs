@@ -107,6 +107,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IDatabaseService>(sp => sp.GetRequiredService<DatabaseService>());
         services.AddSingleton<XrefService>();
         services.AddSingleton<ScriptRunnerService>();
+        services.AddSingleton<ProjectArchitectureService>();
         services.AddSingleton<FixPhiService>();
         services.AddSingleton<FixIdentityCorruptionService>();
         services.AddSingleton<TagNormalizerService>();
@@ -125,6 +126,21 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ContinuityService>();
         services.AddSingleton<ContinuityExtractionService>();
         services.AddSingleton<ContinuityApplyService>();
+
+        // Local LLM (Ollama + Qwen) — RAG corpus index over engine/data and a
+        // shared HTTP wrapper used by /ask plus any local-first Legion call site.
+        // The index keeps itself current via FileSystemWatcher; on every save
+        // changed files re-embed within ~1s so the LLM corpus always reflects
+        // the live JSON/prose state.
+        services.AddSingleton<OllamaOptions>(_ => new OllamaOptions());
+        services.AddHttpClient<OllamaClient>((sp, c) =>
+        {
+            var opts = sp.GetRequiredService<OllamaOptions>();
+            c.BaseAddress = new Uri(opts.BaseUrl);
+            c.Timeout = TimeSpan.FromMinutes(5);
+        });
+        services.AddSingleton<EmbeddingIndexService>();
+        services.AddSingleton<OllamaProcessManager>();
         services.AddSingleton<StoryMethodologyService>();
         services.AddSingleton<CharacterPipelineService>();
         services.AddSingleton<WorldConsistencyService>();
@@ -352,7 +368,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<VotingConfiguration>(sp =>
         {
             var s = sp.GetRequiredService<SettingsService>();
-            return new VotingConfiguration
+            var paths = sp.GetRequiredService<IPathProvider>();
+            var cfg = new VotingConfiguration
             {
                 ApiKeys =
                 {
@@ -367,10 +384,41 @@ public static class ServiceCollectionExtensions
                     ["openrouter"] = s.OpenRouterApiKey,
                     ["fireworks"]  = s.FireworksApiKey,
                     ["cohere"]     = s.CohereApiKey,
+                    // Ollama runs locally and ignores the bearer token; any
+                    // non-empty string passes Legion's "key supplied" check.
+                    ["ollama"]     = "ollama-local",
                 },
                 JudgeProviderId = "claude",
+                // AllowedProviderIds defaults to { claude, openai, deepseek }.
+                // legion.json (when present at the project root) overrides this
+                // so each app declares its own voter panel.
             };
+
+            // Walk up from the data root looking for legion.json. Per-project
+            // override; absent → defaults stand.
+            var legion = LegionConfig.LoadFromDirectory(paths.DataRoot);
+            legion?.ApplyTo(cfg);
+
+            return cfg;
         });
+
+        // Register LocalRagService — fact-bound primitive: retrieves chunks
+        // from the embedding index, prepends them, calls Ollama via Legion.
+        services.AddSingleton<LocalRagService>();
+
+        // Findings store (SQLite) + autonomous quality monitor.
+        // The monitor subscribes to EmbeddingIndexService.FileReindexed on
+        // construction, so eager-instantiating it at startup makes the
+        // subscription live immediately. Every chapter save then triggers a
+        // background contradiction + cliché scan via local Qwen.
+        services.AddSingleton<FindingsService>();
+        services.AddSingleton<FindingApplyService>();
+        services.AddSingleton<ContinuousQualityService>(sp =>
+            new ContinuousQualityService(
+                sp.GetRequiredService<EmbeddingIndexService>(),
+                sp.GetRequiredService<LocalRagService>(),
+                sp.GetRequiredService<FindingsService>(),
+                sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<ContinuousQualityService>>()));
         services.AddSingleton<LlmVotingProvider>(sp =>
         {
             var cfg  = sp.GetRequiredService<VotingConfiguration>();
@@ -381,7 +429,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<StoryQualityService>();
         services.AddSingleton<StoryRefinementService>();
         services.AddSingleton<CanonGroundingService>();
-        services.AddSingleton<WorldOracleService>();
         services.AddSingleton<EntityRatingService>();
 
         return services;

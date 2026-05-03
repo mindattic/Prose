@@ -7,13 +7,13 @@
   "atmosphere": {
     "sights": [
       "From satellite: densely packed residential block with narrow streets, a corner commercial space, a small open area that was once a shared courtyard",
-      "From street level: weathered wall, seamlessly integrated into adjacent Shelf buildings, indistinguishable from original construction",
-      "Memorial markers left by Shelf residents at the base of the wall — flowers, photographs, handwritten notes",
+      "From street level: weathered wall, seamlessly integrated into adjacent Gray Zone buildings, indistinguishable from original construction",
+      "Memorial markers left by Gray Zone residents at the base of the wall — flowers, photographs, handwritten notes",
       "Thermal imaging showing 55 signatures including several child-sized, moving through familiar domestic patterns"
     ],
     "sounds": [
       "the Gray Zone is not quiet — the surrounding neighborhood is active, lived-in, noisy with life",
-      "On the anniversary, the sound of Shelf residents calling names at the wall. The wall does not answer."
+      "On the anniversary, the sound of Gray Zone residents calling names at the wall. The wall does not answer."
     ],
     "smells": [
       "the Gray Zone's own smells — street food, engine grease, the mineral tang of old infrastructure",
@@ -43,8 +43,8 @@
   "connections": {
     "adjacent_to": [
       "the Gray Zone main street (western perimeter)",
-      "Shelf residential blocks (north and south)",
-      "Shelf utility infrastructure (sub-surface)"
+      "Gray Zone residential blocks (north and south)",
+      "Gray Zone utility infrastructure (sub-surface)"
     ],
     "exits": [],
     "tags": []
@@ -67,7 +67,7 @@
     "new_weird",
     "inexplicable",
     "meridian_88",
-    "the_shelf",
+    "the_gray_zone",
     "community"
   ],
   "related_entities": [

@@ -22,7 +22,7 @@
     </div>
     <div class="d-flex flex-column gap-2 align-items-end">
         <div class="d-flex gap-2 align-items-center">
-            <select class="form-select form-select-sm" style="width:280px;" @bind="extractTarget">
+            <select class="form-select form-select-sm bg-dark text-light border-secondary continuity-extract-select" style="width:280px;" @bind="extractTarget">
                 <option value="">— pick a book or chapter to extract —</option>
                 @foreach (var b in books)
                 {
@@ -66,25 +66,84 @@
     <div class="col"><div class="continuity-stat"><div class="lbl">From record</div><div class="val">@stats.FromEntityRecord</div></div></div>
 </div>
 
+@* ── Contradiction groups (entity, predicate with multiple live values) ── *@
+@if (contradictionGroups.Count > 0)
+{
+    <div class="card bg-dark text-light mb-3 border-warning">
+        <div class="card-header bg-warning bg-opacity-25 border-warning d-flex justify-content-between align-items-center">
+            <strong><i class="bi bi-exclamation-diamond me-1"></i>Conflicting claims</strong>
+            <span class="badge bg-warning text-dark">@contradictionGroups.Count</span>
+        </div>
+        <div class="card-body">
+            <div class="small text-muted mb-2">
+                These (entity, predicate) tuples have multiple competing values still live.
+                Pick one as canonical or reject the rest. Each group becomes one resolution.
+            </div>
+            @foreach (var g in contradictionGroups)
+            {
+                <div class="border border-secondary rounded p-2 mb-2">
+                    <div class="small text-muted mb-1">
+                        <strong>@g.EntityName</strong> <span class="text-muted">(@g.EntityKind)</span>
+                        <span class="ms-2">predicate: <code>@g.Predicate</code></span>
+                        <span class="ms-2 badge bg-secondary">@g.Claims.Count values</span>
+                    </div>
+                    <div class="row g-2">
+                        @foreach (var c in g.Claims)
+                        {
+                            <div class="col-md-6">
+                                <div class="border border-secondary rounded p-2 h-100 d-flex flex-column">
+                                    <div class="small text-muted mb-1">
+                                        @c.SourceType
+                                        @if (!string.IsNullOrEmpty(c.SourceChapterTitle))
+                                        {
+                                            <span> · ch.@c.SourceChapterNumber @c.SourceChapterTitle</span>
+                                        }
+                                        · status <span class="badge @StatusBadge(c.Status)">@c.Status</span>
+                                    </div>
+                                    <div class="fw-bold">@c.Object</div>
+                                    @if (!string.IsNullOrEmpty(c.Snippet))
+                                    {
+                                        <div class="small fst-italic text-muted">"@c.Snippet"</div>
+                                    }
+                                    <div class="mt-2 d-flex gap-1">
+                                        <button class="btn btn-sm btn-outline-success py-0" disabled="@working"
+                                                @onclick="@(() => MakeCanonical(c.ClaimUid))">
+                                            Make canonical
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary py-0" disabled="@working"
+                                                @onclick="@(() => RejectClaim(c.ClaimUid))">
+                                            Reject
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
 @* ── Contradictions panel ─────────────────────────────────── *@
 @if (contradictions.Count > 0)
 {
-    <div class="card mb-3 border-warning">
-        <div class="card-header bg-warning bg-opacity-25 d-flex justify-content-between align-items-center">
+    <div class="card bg-dark text-light mb-3 border-warning">
+        <div class="card-header bg-warning bg-opacity-25 border-warning d-flex justify-content-between align-items-center">
             <strong><i class="bi bi-exclamation-triangle me-1"></i>Unresolved contradictions</strong>
             <span class="badge bg-warning text-dark">@contradictions.Count</span>
         </div>
         <div class="card-body">
             @foreach (var pair in contradictions)
             {
-                <div class="border rounded p-2 mb-2">
+                <div class="border border-secondary rounded p-2 mb-2">
                     <div class="small text-muted mb-1">
                         <strong>@pair.A.EntityName</strong>
                         <span class="ms-2">predicate: <code>@pair.A.Predicate</code></span>
                     </div>
                     <div class="row g-2">
                         <div class="col-md-5">
-                            <div class="border rounded p-2 h-100">
+                            <div class="border border-secondary rounded p-2 h-100">
                                 <div class="small text-muted">A · @SourceLabel(pair.A) · by @string.Join(", ", pair.A.ExtractedBy)</div>
                                 <div class="fw-bold">@pair.A.Object</div>
                                 @if (!string.IsNullOrEmpty(pair.A.Snippet))
@@ -94,7 +153,7 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <div class="border rounded p-2 h-100">
+                            <div class="border border-secondary rounded p-2 h-100">
                                 <div class="small text-muted">B · @SourceLabel(pair.B) · by @string.Join(", ", pair.B.ExtractedBy)</div>
                                 <div class="fw-bold">@pair.B.Object</div>
                                 @if (!string.IsNullOrEmpty(pair.B.Snippet))
@@ -129,7 +188,7 @@
         </div>
     </div>
 }
-else if (stats.Total > 0)
+else if (stats.Total > 0 && contradictionGroups.Count == 0)
 {
     <div class="alert alert-success small py-2">
         <i class="bi bi-check-circle me-1"></i>No unresolved contradictions.
@@ -139,13 +198,13 @@ else if (stats.Total > 0)
 @* ── Canonical claims awaiting apply ────────────────────── *@
 @if (pendingApply.Count > 0)
 {
-    <div class="card mb-3 border-info">
-        <div class="card-header bg-info bg-opacity-25 d-flex justify-content-between align-items-center">
+    <div class="card bg-dark text-light mb-3 border-info">
+        <div class="card-header bg-info bg-opacity-25 border-info d-flex justify-content-between align-items-center">
             <strong><i class="bi bi-arrow-right-circle me-1"></i>Canonical claims ready to apply to entity records</strong>
             <span class="badge bg-info">@pendingApply.Count</span>
         </div>
-        <div class="card-body">
-            <table class="table table-sm small mb-0">
+        <div class="card-body p-0">
+            <table class="table table-sm table-dark table-hover small mb-0">
                 <thead><tr><th>Entity</th><th>Predicate</th><th>Value</th><th></th></tr></thead>
                 <tbody>
                     @foreach (var c in pendingApply)
@@ -169,13 +228,13 @@ else if (stats.Total > 0)
 }
 
 @* ── Per-entity browser ─────────────────────────────────── *@
-<div class="card">
-    <div class="card-header d-flex justify-content-between align-items-center">
+<div class="card continuity-browse-card border-secondary">
+    <div class="card-header continuity-browse-header border-secondary d-flex justify-content-between align-items-center">
         <strong><i class="bi bi-search me-1"></i>Browse claims</strong>
-        <input type="text" class="form-control form-control-sm" style="width:240px;"
+        <input type="text" class="form-control form-control-sm continuity-filter-input" style="width:240px;"
                placeholder="filter by entity name…" @bind="filter" @bind:event="oninput" />
     </div>
-    <div class="card-body p-0" style="max-height:540px;overflow-y:auto;">
+    <div class="card-body p-0 continuity-browse-body" style="max-height:540px;overflow-y:auto;">
         @{
             var visible = filtered();
         }
@@ -185,8 +244,8 @@ else if (stats.Total > 0)
         }
         else
         {
-            <table class="table table-sm small mb-0">
-                <thead class="sticky-top" style="background:#1c2128;">
+            <table class="table table-sm table-dark table-hover small mb-0 continuity-browse">
+                <thead class="sticky-top">
                     <tr>
                         <th>Entity</th>
                         <th>Predicate</th>
@@ -216,11 +275,79 @@ else if (stats.Total > 0)
     .continuity-stat { background:#1c2128; border-radius:4px; padding:8px 12px; text-align:center; }
     .continuity-stat .lbl { font-size:.7rem; text-transform:uppercase; color:var(--bs-secondary); }
     .continuity-stat .val { font-size:1.4rem; font-weight:600; }
+
+    /* Dark dropdown */
+    .continuity-extract-select {
+        background-color:#0d1117 !important;
+        color:#c9d1d9 !important;
+        border-color:#30363d !important;
+    }
+    .continuity-extract-select:focus {
+        background-color:#0d1117 !important;
+        color:#c9d1d9 !important;
+        border-color:#58a6ff !important;
+        box-shadow:0 0 0 .2rem rgba(88,166,255,.25) !important;
+    }
+    .continuity-extract-select option {
+        background-color:#0d1117;
+        color:#c9d1d9;
+    }
+
+    /* Force dark on browse-claims card (bg-dark was being overridden) */
+    .continuity-browse-card {
+        background-color:#0d1117 !important;
+        color:#c9d1d9 !important;
+    }
+    .continuity-browse-header {
+        background-color:#161b22 !important;
+        color:#c9d1d9 !important;
+        border-color:#30363d !important;
+    }
+    .continuity-browse-body {
+        background-color:#0d1117 !important;
+    }
+    .continuity-filter-input {
+        background-color:#0d1117 !important;
+        color:#c9d1d9 !important;
+        border-color:#30363d !important;
+    }
+    .continuity-filter-input::placeholder { color:#6e7681 !important; }
+    .continuity-filter-input:focus {
+        background-color:#0d1117 !important;
+        color:#c9d1d9 !important;
+        border-color:#58a6ff !important;
+        box-shadow:0 0 0 .2rem rgba(88,166,255,.25) !important;
+    }
+
+    /* Dark continuity browse table */
+    .continuity-browse {
+        --bs-table-bg: #0d1117;
+        --bs-table-color: #c9d1d9;
+        --bs-table-striped-bg: #161b22;
+        --bs-table-hover-bg: #1f2937;
+        --bs-table-hover-color: #ffffff;
+        --bs-table-border-color: #30363d;
+    }
+    .continuity-browse thead.sticky-top th {
+        background:#1c2128;
+        border-bottom:1px solid #30363d;
+        color:#c9d1d9;
+    }
+    .continuity-browse code { color:#ff7b72; background:transparent; }
+    /* Bootstrap's table-warning is yellow-on-yellow inside table-dark — recolor for legibility */
+    .continuity-browse > tbody > tr.table-warning,
+    .continuity-browse > tbody > tr.table-warning > * {
+        --bs-table-bg: rgba(255, 193, 7, .12);
+        --bs-table-color: #ffe69c;
+        background-color: var(--bs-table-bg);
+        color: var(--bs-table-color);
+    }
 </style>
 
 @code {
     private ContinuityStats stats = new();
     private List<ContradictionPair> contradictions = new();
+    private List<ContradictionGroup> contradictionGroups = new();
     private List<ContinuityClaim> allClaims = new();
     private List<ContinuityClaim> pendingApply = new();
     private List<StreetSamurai.Core.Models.Book> books = new();
@@ -246,8 +373,9 @@ else if (stats.Total > 0)
 
     private void Reload()
     {
-        stats          = Store.GetStats();
-        contradictions = Store.GetContradictions();
+        stats               = Store.GetStats();
+        contradictions      = Store.GetContradictions();
+        contradictionGroups = Store.GetContradictionGroups();
         // Most-recent claims for browser (cap at a few hundred to keep render light)
         var pulled = new List<ContinuityClaim>();
         foreach (var s in new[] { "NEW", "CONFIRMED", "CONTRADICTED", "CANONICAL", "REJECTED", "SUPERSEDED" })
@@ -260,6 +388,32 @@ else if (stats.Total > 0)
     {
         if (string.IsNullOrWhiteSpace(filter)) return allClaims;
         return allClaims.Where(c => c.EntityName.Contains(filter, StringComparison.OrdinalIgnoreCase)).ToList();
+    }
+
+    private void MakeCanonical(string claimUid)
+    {
+        working = true; action = "canonical"; errorMessage = "";
+        try
+        {
+            Store.MakeCanonical(claimUid, "Selected from contradiction-groups UI.");
+            Reload();
+            status = "Canonical claim set; siblings rejected.";
+        }
+        catch (Exception ex) { errorMessage = ex.Message; }
+        finally { working = false; action = ""; }
+    }
+
+    private void RejectClaim(string claimUid)
+    {
+        working = true; action = "reject"; errorMessage = "";
+        try
+        {
+            Store.RejectClaim(claimUid, "Rejected from contradiction-groups UI.");
+            Reload();
+            status = "Claim rejected.";
+        }
+        catch (Exception ex) { errorMessage = ex.Message; }
+        finally { working = false; action = ""; }
     }
 
     private async Task RunExtraction()

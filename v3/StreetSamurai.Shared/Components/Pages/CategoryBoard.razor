@@ -133,9 +133,13 @@ else
         var list = new List<BoardTile>
         {
             new("bi-speedometer2",    "/dashboard", "Dashboard",     0, true, "Live overview: entity counts across all repositories, world-graph size, story counts, configured-service status. Your at-a-glance health check."),
-            new("bi-question-circle", "/oracle",    "World Oracle",  0, true, "Ask factual questions about GLMZ in natural language. Answers grounded strictly in documented canon. Refuses to speculate when the data isn't there."),
+            new("bi-chat-dots",       "/ask",       "Ask",           0, true, "Ask questions in natural language against the live JSON + chapter prose. Local Qwen via Ollama; reindexes on save so answers always reflect the current truth on disk."),
             new("bi-book-half",       "/atlas",     "Atlas",         0, true, "System-wide directory of every entity type, service, and architectural component. The whole codebase + canon expressed as a hierarchy."),
         };
+        if (Access.IsAdministrator)
+        {
+            list.Add(new("bi-diagram-3",   "/architecture", "Architecture", 0, true, "Live scan of every service, CLI verb, MCP tool, Razor page, and script. Surfaces duplicate / overlapping names so you can spot dead utilities at a glance."));
+        }
         if (Access.IsContributor)
         {
             list.Add(new("bi-book",            "/books",        "Bookshelf",     0, true, "Every book in the project. Pick one to drill into chapters, outline, motifs, review, and continuity."));

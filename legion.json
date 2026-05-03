@@ -1,0 +1,7 @@
+{
+  "voters": ["ollama"],
+  "judge": "ollama",
+  "models": {
+    "ollama": "qwen3:14b"
+  }
+}
