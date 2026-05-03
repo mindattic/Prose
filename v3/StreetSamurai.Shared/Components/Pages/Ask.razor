@@ -1,0 +1,300 @@
+@page "/ask"
+@attribute [Authorize]
+@using Microsoft.AspNetCore.Authorization
+@using StreetSamurai.Core.Services
+@inject EmbeddingIndexService Index
+@inject OllamaClient Ollama
+@inject OllamaProcessManager OllamaProc
+
+<div class="d-flex justify-content-between align-items-start mb-3">
+    <div>
+        <div class="small text-muted mb-1">
+            <a href="/" class="text-muted text-decoration-none"><i class="bi bi-arrow-left me-1"></i>Home</a>
+        </div>
+        <h4 class="text-info mb-0"><i class="bi bi-chat-dots me-2"></i>Ask</h4>
+        <p class="small text-muted mb-0">
+            Local Qwen reads the live JSON files and chapter prose. Every save updates the index — answers always reflect the current truth on disk.
+        </p>
+    </div>
+    <div class="d-flex flex-column gap-1 align-items-end">
+        <div class="small text-muted">Reindex any file the watcher missed</div>
+        <button class="btn btn-sm btn-outline-secondary" @onclick="DoReindex" disabled="@working">
+            @(working && action == "reindex" ? "reindexing…" : "Reindex now")
+        </button>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(status))
+{
+    <div class="alert alert-info small py-2">@status</div>
+}
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger small py-2">@errorMessage</div>
+}
+
+@* ── Stats strip ─────────────────────────────────────────── *@
+<div class="row g-2 mb-3">
+    <div class="col-md-3"><div class="ask-stat"><div class="lbl">Files indexed</div><div class="val text-info">@stats.FileCount</div></div></div>
+    <div class="col-md-3"><div class="ask-stat"><div class="lbl">Chunks</div><div class="val text-info">@stats.ChunkCount</div></div></div>
+    <div class="col-md-3"><div class="ask-stat"><div class="lbl">Last indexed</div><div class="val small text-muted">@(stats.LastIndexed?.ToLocalTime().ToString("g") ?? "—")</div></div></div>
+    <div class="col-md-3"><div class="ask-stat"><div class="lbl">Ollama</div><div class="val small @(ollamaUp ? "text-success" : "text-danger")">@(ollamaUp ? "reachable" : "offline")</div></div></div>
+</div>
+
+@if (starting)
+{
+    <div class="alert alert-info small d-flex align-items-center gap-2">
+        <div class="spinner-border spinner-border-sm" role="status"></div>
+        Starting Ollama and warming <code>@Ollama.ChatModel</code>… first answer will be a few seconds slower.
+    </div>
+}
+else if (!ollamaUp)
+{
+    <div class="alert alert-warning small">
+        <strong>Ollama not reachable at @Ollama.BaseUrl.</strong>
+        @if (!string.IsNullOrEmpty(OllamaProc.LastError))
+        {
+            <span> Auto-start failed: <em>@OllamaProc.LastError</em></span>
+        }
+        Install Ollama and pull the models:
+        <pre class="mb-0 mt-2 small">ollama pull @Ollama.ChatModel
+ollama pull @Ollama.EmbedModel</pre>
+    </div>
+}
+
+@* ── Conversation ──────────────────────────────────────── *@
+<div class="card bg-dark text-light border-secondary mb-3">
+    <div class="card-body p-3" style="min-height:220px;">
+        @if (turns.Count == 0)
+        {
+            <div class="text-muted text-center py-4 small">
+                Ask anything. Examples: "What color is Sable's hair?", "Where does Kyle eat?", "Who is Hua and what does she owe Kyle?"
+            </div>
+        }
+        @foreach (var t in turns)
+        {
+            <div class="mb-3">
+                <div class="small text-muted mb-1 d-flex align-items-center gap-2">
+                    <span><i class="bi @(t.Role == "user" ? "bi-person-fill" : "bi-cpu") me-1"></i>@t.Role</span>
+                    @if (t.Role == "assistant")
+                    {
+                        @if (t.ElapsedSeconds.HasValue)
+                        {
+                            <span class="badge bg-dark border border-secondary text-info">
+                                @FormatDuration(t.ElapsedSeconds.Value) total
+                            </span>
+                            if (t.RetrievalSeconds.HasValue)
+                            {
+                                <span class="badge bg-dark border border-secondary">retrieval @FormatDuration(t.RetrievalSeconds.Value)</span>
+                            }
+                            if (t.FirstTokenMs.HasValue)
+                            {
+                                <span class="badge bg-dark border border-secondary">first token @(t.FirstTokenMs.Value)ms</span>
+                            }
+                            if (t.ElapsedSeconds is double e && t.FirstTokenMs is int ft && e > ft / 1000.0)
+                            {
+                                var genTokens = ApproxTokens(t.Content);
+                                var genSec = e - ft / 1000.0;
+                                if (genSec > 0)
+                                {
+                                    <span class="badge bg-dark border border-secondary">~@((int)(genTokens / genSec)) tok/s</span>
+                                }
+                            }
+                        }
+                        else if (t == turns[^1] && working)
+                        {
+                            <span class="badge bg-warning text-dark">@FormatDuration(liveElapsed)…</span>
+                        }
+                    }
+                </div>
+                <div class="ms-3" style="white-space:pre-wrap;">@t.Content</div>
+                @if (t.Role == "assistant" && t.Citations is { Count: > 0 })
+                {
+                    <div class="ms-3 mt-2">
+                        <div class="small text-muted mb-1">cited from</div>
+                        @foreach (var c in t.Citations)
+                        {
+                            <div class="small text-muted border border-secondary rounded p-1 mb-1">
+                                <code>@RelPath(c.FilePath)</code> · chunk @c.ChunkIndex · score @c.Score.ToString("F3")
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+<div class="input-group mb-3">
+    <input class="form-control bg-dark text-light border-secondary"
+           placeholder="Ask the corpus…"
+           @bind="prompt" @bind:event="oninput"
+           @onkeydown="OnKey"
+           disabled="@(working || !ollamaUp)" />
+    <button class="btn btn-primary" disabled="@(working || !ollamaUp || string.IsNullOrWhiteSpace(prompt))" @onclick="Submit">
+        @(working && action == "ask" ? $"thinking… {FormatDuration(liveElapsed)}" : "Ask")
+    </button>
+</div>
+
+<style>
+    .ask-stat { background:#1c2128; border-radius:4px; padding:8px 12px; text-align:center; }
+    .ask-stat .lbl { font-size:.7rem; text-transform:uppercase; color:var(--bs-secondary); }
+    .ask-stat .val { font-size:1.2rem; font-weight:600; }
+</style>
+
+@code {
+    record Turn(string Role, string Content, List<SearchHit>? Citations = null, double? ElapsedSeconds = null, double? RetrievalSeconds = null, int? FirstTokenMs = null);
+
+    private readonly List<Turn> turns = new();
+    private string prompt = "";
+    private string status = "";
+    private string errorMessage = "";
+    private string action = "";
+    private bool working;
+    private bool ollamaUp;
+    private bool starting;
+    private System.Diagnostics.Stopwatch? questionTimer;
+    private System.Threading.Timer? tickTimer;
+    private double liveElapsed;
+    private IndexStats stats = new(0, 0, null, false);
+
+    protected override async Task OnInitializedAsync()
+    {
+        stats = Index.GetStats();
+        ollamaUp = await Index.OllamaReachableAsync();
+        if (!ollamaUp)
+        {
+            starting = true;
+            StateHasChanged();
+            ollamaUp = await OllamaProc.EnsureRunningAsync();
+            starting = false;
+        }
+    }
+
+    private async Task RefreshStatus()
+    {
+        stats = Index.GetStats();
+        ollamaUp = await Index.OllamaReachableAsync();
+    }
+
+    private async Task OnKey(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !e.ShiftKey) await Submit();
+    }
+
+    private async Task Submit()
+    {
+        if (string.IsNullOrWhiteSpace(prompt) || working) return;
+        var question = prompt.Trim();
+        prompt = "";
+        errorMessage = "";
+        status = "";
+        action = "ask";
+        working = true;
+        turns.Add(new Turn("user", question));
+
+        questionTimer = System.Diagnostics.Stopwatch.StartNew();
+        liveElapsed = 0;
+        tickTimer = new System.Threading.Timer(_ =>
+        {
+            liveElapsed = questionTimer?.Elapsed.TotalSeconds ?? 0;
+            InvokeAsync(StateHasChanged);
+        }, null, 250, 250);
+        StateHasChanged();
+
+        try
+        {
+            var retrievalSw = System.Diagnostics.Stopwatch.StartNew();
+            var hits = await Index.SearchAsync(question, k: 5);
+            retrievalSw.Stop();
+
+            var context = string.Join("\n\n---\n\n",
+                hits.Select(h => $"[{RelPath(h.FilePath)} · chunk {h.ChunkIndex}]\n{h.Text}"));
+
+            var system = "You answer questions about the StreetSamurai world strictly from the provided context. " +
+                         "If the context does not contain the answer, say so plainly. Cite the source file paths you used.";
+            var user = $"Context from the live corpus:\n\n{context}\n\n---\n\nQuestion: {question}";
+
+            var sb = new System.Text.StringBuilder();
+            var assistantTurn = new Turn("assistant", "", hits.ToList(), null, retrievalSw.Elapsed.TotalSeconds);
+            turns.Add(assistantTurn);
+
+            int? firstTokenMs = null;
+            await foreach (var piece in Ollama.StreamChatAsync(new[]
+                {
+                    ("system", system),
+                    ("user", user),
+                }))
+            {
+                if (firstTokenMs == null && !string.IsNullOrEmpty(piece))
+                    firstTokenMs = (int)questionTimer.Elapsed.TotalMilliseconds;
+                sb.Append(piece);
+                turns[^1] = assistantTurn with { Content = sb.ToString(), FirstTokenMs = firstTokenMs };
+                StateHasChanged();
+                await Task.Yield();
+            }
+
+            questionTimer.Stop();
+            turns[^1] = turns[^1] with
+            {
+                ElapsedSeconds = questionTimer.Elapsed.TotalSeconds,
+                FirstTokenMs = firstTokenMs,
+            };
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+        finally
+        {
+            tickTimer?.Dispose();
+            tickTimer = null;
+            working = false;
+            action = "";
+            StateHasChanged();
+        }
+    }
+
+    private async Task DoReindex()
+    {
+        errorMessage = "";
+        status = "";
+        action = "reindex";
+        working = true;
+        StateHasChanged();
+        try
+        {
+            var n = await Index.ReindexAllAsync();
+            status = n == 0 ? "Index already current." : $"Re-embedded {n} file(s).";
+            await RefreshStatus();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+        finally
+        {
+            working = false;
+            action = "";
+            StateHasChanged();
+        }
+    }
+
+    private static string RelPath(string p)
+    {
+        var idx = p.IndexOf("engine", StringComparison.OrdinalIgnoreCase);
+        return idx >= 0 ? p[idx..].Replace('\\', '/') : Path.GetFileName(p);
+    }
+
+    private static string FormatDuration(double seconds)
+    {
+        if (seconds < 1)   return $"{(int)(seconds * 1000)}ms";
+        if (seconds < 60)  return $"{seconds:F1}s";
+        var m = (int)(seconds / 60);
+        var s = (int)(seconds % 60);
+        return $"{m}m {s:D2}s";
+    }
+
+    // Rough tokens-per-output approximation: ~4 chars per token for English.
+    private static int ApproxTokens(string text) => Math.Max(1, text.Length / 4);
+}

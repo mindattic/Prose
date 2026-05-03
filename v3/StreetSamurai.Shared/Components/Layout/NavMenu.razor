@@ -2,6 +2,7 @@
 @inject NavigationManager Nav
 @inject IWriteAccessProvider Access
 @inject SearchTriggerService SearchTrigger
+@inject StreetSamurai.Core.Services.FindingsService Findings
 
 <nav class="topnav navbar navbar-expand-md">
 
@@ -62,6 +63,14 @@
         <button class="topnav-link" @onclick="OpenSearch" title="Search">
             <i class="bi bi-search"></i>
         </button>
+        <a class="topnav-link position-relative" href="/findings" title="Findings inbox">
+            <i class="bi bi-inbox"></i>
+            @if (newFindingsCount > 0)
+            {
+                <span class="badge bg-warning text-dark position-absolute top-0 start-100 translate-middle"
+                      style="font-size:.55rem;padding:.15rem .3rem;">@newFindingsCount</span>
+            }
+        </a>
         <div class="topnav-controls d-flex align-items-center gap-1">
             <UserBoard />
         </div>
@@ -75,6 +84,14 @@
                        value="@searchInput" @oninput="OnSearchInput" @onkeydown="HandleKey" />
             </div>
             <div class="topnav-controls d-flex align-items-center gap-1">
+                <a class="topnav-link position-relative" href="/findings" title="Findings inbox">
+                    <i class="bi bi-inbox"></i>
+                    @if (newFindingsCount > 0)
+                    {
+                        <span class="badge bg-warning text-dark position-absolute top-0 start-100 translate-middle"
+                              style="font-size:.6rem;padding:.18rem .35rem;">@newFindingsCount</span>
+                    }
+                </a>
                 <UserBoard />
             </div>
         </div>
@@ -84,16 +101,32 @@
 
 @code {
     private string searchInput = "";
+    private int newFindingsCount;
+    private System.Threading.Timer? findingsPoll;
 
     protected override void OnInitialized()
     {
         Nav.LocationChanged += OnLocationChanged;
         SyncSearchFromUrl();
+        RefreshFindingsCount();
+        // Poll every 15s so the badge updates as the autonomous monitor posts findings
+        findingsPoll = new System.Threading.Timer(_ =>
+        {
+            RefreshFindingsCount();
+            InvokeAsync(StateHasChanged);
+        }, null, TimeSpan.FromSeconds(15), TimeSpan.FromSeconds(15));
+    }
+
+    private void RefreshFindingsCount()
+    {
+        try { newFindingsCount = Findings.CountByStatus(StreetSamurai.Core.Services.FindingStatus.New); }
+        catch { newFindingsCount = 0; }
     }
 
     private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
     {
         SyncSearchFromUrl();
+        RefreshFindingsCount();
         InvokeAsync(StateHasChanged);
     }
 
@@ -149,7 +182,7 @@
             "logging"         => new(null, null, "Logging",          null,          "bi-journal-code"),
             "utilities"       => new(null, null, "Utilities",        null,          "bi-tools"),
             "dashboard"       => new("Tools",          "/board/tools",          "Dashboard",         "bi-grid-3x3-gap",     "bi-speedometer2"),
-            "oracle"          => new("Tools",          "/board/tools",          "World Oracle",      "bi-grid-3x3-gap",     "bi-book-half"),
+            "ask"             => new("Tools",          "/board/tools",          "Ask",               "bi-grid-3x3-gap",     "bi-chat-dots"),
             "books"           => new("Tools",          "/board/tools",          "Bookshelf",         "bi-grid-3x3-gap",     "bi-book"),
             _ when seg.StartsWith("books/") && seg.EndsWith("/chapters")
                               => new("Bookshelf",      "/books",                "Chapters",          "bi-book",             "bi-list-ol",
@@ -222,5 +255,9 @@
         _ => slug.Length == 0 ? "" : char.ToUpper(slug[0]) + slug[1..]
     };
 
-    public void Dispose() => Nav.LocationChanged -= OnLocationChanged;
+    public void Dispose()
+    {
+        Nav.LocationChanged -= OnLocationChanged;
+        findingsPoll?.Dispose();
+    }
 }

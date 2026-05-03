@@ -4,7 +4,7 @@
   "type": "weapon",
   "aliases": [],
   "category": "rifle",
-  "description": "The KPA-16R is not a new rifle. It is an officially sanctioned rebuild program — a KPA-16 platform that has been factory-returned, inspected, rebarreled with a new Slagworks chrome-lined 16-inch unit, refinished, and reissued with a new serial number and a 'Certified Reclaim' marking on the lower receiver. The upper receiver, handguard, and furniture may be original, refurbished, or replaced with new-production components depending on the inspection result; the internal components are individually assessed and replaced as needed. The trigger group is replaced as a unit regardless of condition. The resulting rifle is, by Kang-Petrov's published standards, functionally equivalent to a new KPA-16 — the 'Reclaim' designation carries a standard warranty and the same performance specifications as the new-production model.\n\nThe Reclaim program exists because GLMZ's Tier 1 market cannot always absorb the cost of new-production rifles, and Kang-Petrov and Slagworks Industrial recognized that a certified refurbishment pipeline was more profitable than leaving worn rifles to circulate in the gray market without quality oversight. The Reclaim program captures those rifles, certifies them, and returns them to commercial circulation at approximately 70% of new-production pricing. For Tier 1 buyers who are price-sensitive but want something with a warranty and traceable provenance, the Reclaim program is a genuine value proposition.\n\nA KPA-16R with its Certified Reclaim marking carries complicated social meaning in GLMZ's armed communities. On the practical side, it's a functional rifle with a warranty at accessible pricing. On the social side, it marks its owner as someone who couldn't or wouldn't pay for new. Some shelf workers wear the Reclaim marking as a form of class solidarity — the rebuild rifle, the second-chance tool, the thing that keeps working after it should have been discarded. Others quietly sand off the Reclaim marking and carry the rifle without the designation visible. Both responses reveal something true about GLMZ's class dynamics.",
+  "description": "The KPA-16R is not a new rifle. It is an officially sanctioned rebuild program — a KPA-16 platform that has been factory-returned, inspected, rebarreled with a new Slagworks chrome-lined 16-inch unit, refinished, and reissued with a new serial number and a 'Certified Reclaim' marking on the lower receiver. The upper receiver, handguard, and furniture may be original, refurbished, or replaced with new-production components depending on the inspection result; the internal components are individually assessed and replaced as needed. The trigger group is replaced as a unit regardless of condition. The resulting rifle is, by Kang-Petrov's published standards, functionally equivalent to a new KPA-16 — the 'Reclaim' designation carries a standard warranty and the same performance specifications as the new-production model.\n\nThe Reclaim program exists because GLMZ's Tier 1 market cannot always absorb the cost of new-production rifles, and Kang-Petrov and Slagworks Industrial recognized that a certified refurbishment pipeline was more profitable than leaving worn rifles to circulate in the gray market without quality oversight. The Reclaim program captures those rifles, certifies them, and returns them to commercial circulation at approximately 70% of new-production pricing. For Tier 1 buyers who are price-sensitive but want something with a warranty and traceable provenance, the Reclaim program is a genuine value proposition.\n\nA KPA-16R with its Certified Reclaim marking carries complicated social meaning in GLMZ's armed communities. On the practical side, it's a functional rifle with a warranty at accessible pricing. On the social side, it marks its owner as someone who couldn't or wouldn't pay for new. Some gray zone workers wear the Reclaim marking as a form of class solidarity — the rebuild rifle, the second-chance tool, the thing that keeps working after it should have been discarded. Others quietly sand off the Reclaim marking and carry the rifle without the designation visible. Both responses reveal something true about GLMZ's class dynamics.",
   "manufacturer": "KANG-PETROV ARMS",
   "tier_availability": "Tier 1+",
   "legality": "Legal — standard registration",
@@ -20,7 +20,7 @@
   "known_users": [
     "price-sensitive Tier 1 buyers",
     "community defense forces with limited budgets",
-    "shelf workers accessing rifles for the first time",
+    "gray zone workers accessing rifles for the first time",
     "cooperative security rotations"
   ],
   "story_hooks": [
@@ -36,7 +36,7 @@
     "carbine",
     "refurbished",
     "certified-reclaim",
-    "shelf-tier",
+    "gray-zone",
     "slagworks",
     "kang-petrov",
     "budget-accessible"

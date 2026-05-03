@@ -15,10 +15,10 @@
     "recycled feedstock polymer"
   ],
   "specifications": "caliber: 9x19mm Standard effective_range: 50m rate_of_fire: Semi-automatic magazine_capacity: 17 rounds weight: 0.71 kg",
-  "tactical_use": "The KP-17 is a general-purpose sidearm for operators who need volume of fire at close to medium range and can't afford ammunition waste. Standard practice among shelf security is a Condition 2 carry — loaded magazine, empty chamber — because most users have no formal training and the passive safeties don't inspire confidence in people who've seen a KP discharge when dropped. Experienced users run it hot and use the long sight radius for deliberate aimed shots rather than spray. The 17-round capacity means most encounters can be resolved without a reload if the shooter doesn't panic.",
+  "tactical_use": "The KP-17 is a general-purpose sidearm for operators who need volume of fire at close to medium range and can't afford ammunition waste. Standard practice among gray zone security is a Condition 2 carry — loaded magazine, empty chamber — because most users have no formal training and the passive safeties don't inspire confidence in people who've seen a KP discharge when dropped. Experienced users run it hot and use the long sight radius for deliberate aimed shots rather than spray. The 17-round capacity means most encounters can be resolved without a reload if the shooter doesn't panic.",
   "cultural_context": "In GLMZ, owning a KP-17 communicates exactly one thing: you are not wealthy enough to own anything else, but you are not so poor you go unarmed. Mid-tier security firms issue them without holsters. the Gray Zone cooperative defense committees bulk-purchase them at Φ380 per unit with group discount. They show up in evidence lockers after domestic disputes, in storm drain grates after gang disputes, and in the locked drawers of people who bought them fifteen years ago and never cleaned them. The KP-17 is so ubiquitous it has become invisible — which makes it, in certain contexts, the perfect weapon.",
   "known_users": [
-    "shelf cooperative security volunteers",
+    "gray zone cooperative security volunteers",
     "Tier 1 building guards",
     "subcontracted Arcturus crowd liaisons",
     "Excluded encampment defenders",
@@ -40,6 +40,6 @@
     "common",
     "polymer-frame",
     "striker-fired",
-    "shelf-worker"
+    "gray-zone-worker"
   ]
 }
