@@ -456,3 +456,148 @@ System.Net.Http.HttpRequestException: Response status code does not indicate suc
 2026-05-02 07:48:03PM [INF] LLMVoting: starting vote — question='Produce a complete book outline in the JSON format specified. Honor any pre-fill', voters=1, quorum="Plurality"
 2026-05-02 07:49:52PM [INF] LLMVoting: vote complete — consensus='', strength=100 %, quorumReached=true, duration="00:01:49.6061386"
 2026-05-02 07:52:13PM [INF] Quality scan: D:\Projects\MindAttic\StreetSamurai\engine\data\chapters\019dd24feb047e9fb9c901450389a8b9\chapter.json
+2026-05-02 08:21:19PM [INF] StreetSamurai Blazor host started
+2026-05-02 08:21:25PM [INF] Reindexing 1375 changed file(s)…
+2026-05-02 08:22:03PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5b57832a12ff98e320ef44a.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:22:04PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5b772ec8c3fe52fc02e294c.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:22:05PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5d3763c963b355febd2618f.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:22:07PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5dc756598a690baa8d3d673.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:22:08PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5e17892821ace3acbeb1d45.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:22:09PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5ef7a248785a78913cc277d.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:22:10PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5f4737b902a939e51f1e44a.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:22:11PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a60c7081bf154911419b4665.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:22:13PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6277d8da908cd539e9e8bab.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:23:21PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a665757a8637b255120a49aa.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:23:23PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a68c74ac8357597af48825c1.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:23:23PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a69870c9b94ea8708ac3ed3d.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:23:24PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6a079ccb75e41520a0a1872.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:23:27PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6c27bebb7a83393a7acaf82.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:23:28PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6d8724dbd9f41b7c0536fdb.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:23:30PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a70375f4b6baa7968f6671ee.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:23:30PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a70f725280105dc5baff3dfd.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:23:31PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a71170ea909d1766b084494d.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:23:33PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a72670489c9fd891b34a5693.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:23:33PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\aca6e7cc73aa52a265a3a00d7add0486.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 69
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 198
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 185
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 161
+2026-05-02 08:23:43PM [INF] Quality scan: D:\Projects\MindAttic\StreetSamurai\engine\data\chapters\019da83ae36172a5a1cb49ca1c62384a\chapter.json
+2026-05-02 08:26:38PM [INF] Quality scan: D:\Projects\MindAttic\StreetSamurai\engine\data\chapters\0260c8b9d1a7f4e2b8c9d0a1e2f3b4c5\chapter.json
+2026-05-02 08:26:38PM [INF] Reindex complete: 1355 file(s) embedded
