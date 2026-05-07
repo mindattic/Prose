@@ -11,6 +11,12 @@ namespace StreetSamurai.Mcp;
 // so any MCP client (Claude Code, Claude Desktop) can query the corpus and
 // triage findings without opening the web UI.
 
+/// <summary>
+/// Local-LLM Q&amp;A tools. Wraps the same EmbeddingIndexService / LocalRagService
+/// the /ask UI uses so any MCP client can query the live StreetSamurai corpus
+/// (entity JSON, chapter prose, continuity claims) without opening the web UI.
+/// Free, local, and always reads the current state of disk.
+/// </summary>
 [McpServerToolType]
 public class AskTools
 {
@@ -23,6 +29,13 @@ public class AskTools
         this.rag   = rag;
     }
 
+    /// <summary>
+    /// Ask a natural-language question against the live StreetSamurai corpus.
+    /// Retrieves the top-k relevant chunks via embeddings, prepends them as
+    /// context, and asks the local Qwen model for a grounded answer. Returns the
+    /// answer plus the cited chunk paths. Free (local), private, and always reads
+    /// the current state of disk — no stale snapshots.
+    /// </summary>
     [McpServerTool, Description(
         "Ask a natural-language question against the live StreetSamurai corpus. " +
         "Retrieves the top-k relevant chunks (entity JSON, chapter prose, " +
@@ -43,7 +56,7 @@ public class AskTools
             return JsonSerializer.Serialize(new
             {
                 error = "ollama_unreachable",
-                hint  = "Local Ollama is not responding at localhost:11434. Start it and pull qwen3:14b + bge-m3.",
+                hint  = "Local Ollama is not responding at localhost:11434. Start it and pull qwen3:1.7b + bge-m3.",
             });
 
         var hits = await index.SearchAsync(question, retrieveK);
@@ -62,6 +75,11 @@ public class AskTools
         }, new JsonSerializerOptions { WriteIndented = true });
     }
 
+    /// <summary>
+    /// Re-embed any files whose content has changed since last indexing. Normally
+    /// the FileSystemWatcher keeps the index current automatically; use this when
+    /// files were edited while the Blazor server was offline.
+    /// </summary>
     [McpServerTool, Description(
         "Re-embed any files whose content has changed since last indexing. " +
         "Normally the FileSystemWatcher keeps the index current automatically; " +
@@ -80,6 +98,10 @@ public class AskTools
         }, new JsonSerializerOptions { WriteIndented = true });
     }
 
+    /// <summary>
+    /// Get current corpus index status: file count, chunk count, last-indexed
+    /// timestamp, and whether the local Ollama server is reachable.
+    /// </summary>
     [McpServerTool, Description(
         "Get current corpus index status: file count, chunk count, last-indexed " +
         "timestamp, and whether the local Ollama server is reachable.")]
@@ -96,6 +118,12 @@ public class AskTools
     }
 }
 
+/// <summary>
+/// Tools for the autonomous quality-findings inbox. Wraps the same
+/// FindingsService / FindingApplyService / ContinuousQualityService used by the
+/// /findings UI so MCP clients can list, triage, and apply suggested fixes
+/// without opening the web UI.
+/// </summary>
 [McpServerToolType]
 public class FindingsTools
 {
@@ -110,6 +138,11 @@ public class FindingsTools
         this.monitor = monitor;
     }
 
+    /// <summary>
+    /// List findings from the autonomous quality inbox. ContinuousQualityService
+    /// auto-detects contradictions and clichés on every chapter save via local
+    /// Qwen; results land here for triage. Sorted high-severity-first.
+    /// </summary>
     [McpServerTool, Description(
         "List findings from the autonomous quality inbox. ContinuousQualityService " +
         "auto-detects contradictions and clichés on every chapter save via local " +
@@ -146,6 +179,7 @@ public class FindingsTools
         }, new JsonSerializerOptions { WriteIndented = true });
     }
 
+    /// <summary>Counts of findings per status (new / triaged / applied / dismissed).</summary>
     [McpServerTool, Description("Counts of findings per status (new / triaged / applied / dismissed).")]
     public string FindingsStats() => JsonSerializer.Serialize(new
     {
@@ -155,6 +189,13 @@ public class FindingsTools
         dismissed = store.CountByStatus(FindingStatus.Dismissed),
     }, new JsonSerializerOptions { WriteIndented = true });
 
+    /// <summary>
+    /// Apply a finding's suggested fix to the source file. Locates the snippet,
+    /// replaces it with the suggested rewrite, writes a backup to
+    /// engine/data/archives/findings/, and marks the finding Applied. Returns the
+    /// outcome: Applied, SnippetNotFound (LLM paraphrased — edit manually),
+    /// NoSuggestedFix, NoSnippet, FileMissing, or Failed.
+    /// </summary>
     [McpServerTool, Description(
         "Apply a finding's suggested fix to the source file. Locates the snippet " +
         "in the file, replaces it with the suggested rewrite, writes a backup to " +
@@ -173,6 +214,7 @@ public class FindingsTools
         }, new JsonSerializerOptions { WriteIndented = true });
     }
 
+    /// <summary>Mark a finding triaged / applied / dismissed without writing to source files.</summary>
     [McpServerTool, Description("Mark a finding triaged / applied / dismissed without writing to source files.")]
     public string SetFindingStatus(
         [Description("Finding id.")] long id,
@@ -184,6 +226,11 @@ public class FindingsTools
         return JsonSerializer.Serialize(new { ok = true, id, status = s.ToString() });
     }
 
+    /// <summary>
+    /// Manually trigger a quality scan (contradiction + cliché) on a single
+    /// chapter file via local Qwen. Normally the autonomous monitor runs this on
+    /// every save; use this for ad-hoc rescans without modifying the file.
+    /// </summary>
     [McpServerTool, Description(
         "Manually trigger a quality scan (contradiction + cliché) on a single " +
         "chapter file via local Qwen. Normally the autonomous monitor runs this " +

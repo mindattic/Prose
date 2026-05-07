@@ -184,6 +184,7 @@ public class SettingsService : IDisposable
     public string OpenRouterModel { get => data.OpenRouterModel; set { data.OpenRouterModel = value; ScheduleSave(); } }
     public string FireworksModel { get => data.FireworksModel; set { data.FireworksModel = value; ScheduleSave(); } }
     public string CohereModel { get => data.CohereModel; set { data.CohereModel = value; ScheduleSave(); } }
+    public string OllamaChatModel { get => data.OllamaChatModel; set { data.OllamaChatModel = value; ScheduleSave(); } }
     public string MapService { get => data.MapService; set { data.MapService = value; ScheduleSave(); } }
     public string MapAppId { get => Env("SS_MAP_APP_ID", data.MapAppId); set { data.MapAppId = value; ScheduleSave(); } }
     public string MapApiKey
@@ -331,7 +332,12 @@ public class SettingsService : IDisposable
         lock (saveLock)
         {
             saveTimer?.Dispose();
-            saveTimer = new Timer(_ => Flush(), null, 500, Timeout.Infinite);
+            saveTimer = new Timer(_ =>
+            {
+                try { Flush(); }
+                catch (IOException) { }
+                catch (UnauthorizedAccessException) { }
+            }, null, 500, Timeout.Infinite);
         }
     }
 
@@ -342,6 +348,8 @@ public class SettingsService : IDisposable
         {
             saveTimer?.Dispose();
             saveTimer = null;
+            var dir = Path.GetDirectoryName(settingsPath);
+            if (string.IsNullOrEmpty(dir) || !Directory.Exists(dir)) return;
             var json = JsonSerializer.Serialize(data, JsonDefaults.Indented);
             File.WriteAllText(settingsPath, json);
         }
@@ -390,6 +398,7 @@ public class SettingsService : IDisposable
         public string OpenRouterModel { get; set; } = "meta-llama/llama-3.3-70b-instruct";
         public string FireworksModel { get; set; } = "accounts/fireworks/models/llama-v3p3-70b-instruct";
         public string CohereModel { get; set; } = "command-a-03-2025";
+        public string OllamaChatModel { get; set; } = "qwen3:1.7b";
         public string MapService { get; set; } = "google";
         public string MapAppId { get; set; } = "";
         public string MapApiKey { get; set; } = "";

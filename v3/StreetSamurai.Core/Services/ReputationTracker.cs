@@ -46,13 +46,15 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class ReputationTracker
 {
-    private readonly IPathProvider paths;
+    private const string SettingsKey = "world_reputation";
+
+    private readonly SettingsKvStore kv;
     private readonly ILogger<ReputationTracker> log;
     private Dictionary<string, CharacterReputation>? _data;
 
-    public ReputationTracker(IPathProvider paths, ILogger<ReputationTracker> log)
+    public ReputationTracker(SettingsKvStore kv, ILogger<ReputationTracker> log)
     {
-        this.paths = paths;
+        this.kv = kv;
         this.log = log;
     }
 
@@ -196,24 +198,12 @@ public class ReputationTracker
     private void LoadIfNeeded()
     {
         if (_data != null) return;
-        var path = GetPath();
-        if (File.Exists(path))
-        {
-            try { _data = JsonSerializer.Deserialize<Dictionary<string, CharacterReputation>>(File.ReadAllText(path)); }
-            catch (Exception ex) { log.LogError(ex, "Failed to load reputation data from {Path}", path); }
-        }
+        try { _data = kv.Get<Dictionary<string, CharacterReputation>>(SettingsKey); }
+        catch (Exception ex) { log.LogError(ex, "Failed to load reputation data from Settings"); }
         _data ??= new();
     }
 
-    private void Save()
-    {
-        var path = GetPath();
-        var dir = Path.GetDirectoryName(path);
-        if (dir != null) Directory.CreateDirectory(dir);
-        File.WriteAllText(path, JsonSerializer.Serialize(_data, JsonDefaults.Indented));
-    }
-
-    private string GetPath() => Path.Combine(paths.EngineDataDir, "reputation.json");
+    private void Save() => kv.Set(SettingsKey, _data ?? new());
 }
 
 public class CharacterReputation

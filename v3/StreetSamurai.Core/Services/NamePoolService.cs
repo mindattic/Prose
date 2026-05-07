@@ -31,7 +31,10 @@ public class NamePoolService
         "Sarah", "Lee", "Bekka", "Karen",
     };
 
+    private const string SettingsKey = "name_pool";
+
     private readonly IPathProvider paths;
+    private readonly SettingsKvStore kv;
     private readonly IDatabaseService db;
     private readonly ILogger<NamePoolService> log;
 
@@ -39,9 +42,10 @@ public class NamePoolService
     private List<string>? poolCache;
     private readonly object cacheLock = new();
 
-    public NamePoolService(IPathProvider paths, IDatabaseService db, ILogger<NamePoolService> log)
+    public NamePoolService(IPathProvider paths, SettingsKvStore kv, IDatabaseService db, ILogger<NamePoolService> log)
     {
         this.paths = paths;
+        this.kv    = kv;
         this.db    = db;
         this.log   = log;
     }
@@ -155,6 +159,16 @@ public class NamePoolService
 
     List<string> LoadPool()
     {
+        // SQL Settings is the source of truth; engine_data/name_pool.json is the
+        // one-shot seed. On first access, if no Settings row exists, seed it from
+        // the JSON file so the migration is silent and re-runnable.
+        var fromKv = kv.Get<List<string>>(SettingsKey);
+        if (fromKv != null && fromKv.Count > 0)
+        {
+            log.LogInformation("NamePool loaded {Count} names from Settings", fromKv.Count);
+            return Sanitize(fromKv);
+        }
+
         var path = Path.Combine(paths.EngineDataDir, "name_pool.json");
         if (!File.Exists(path))
         {
@@ -165,12 +179,9 @@ public class NamePoolService
         {
             var json = File.ReadAllText(path);
             var names = JsonSerializer.Deserialize<List<string>>(json) ?? [];
-            var deduped = names
-                .Select(n => n?.Trim() ?? "")
-                .Where(n => n.Length > 0 && !Forbidden.Contains(n))
-                .Distinct(StringComparer.OrdinalIgnoreCase)
-                .ToList();
-            log.LogInformation("NamePool loaded {Count} unique names from {Path}", deduped.Count, path);
+            var deduped = Sanitize(names);
+            kv.Set(SettingsKey, deduped); // seed Settings so subsequent loads skip disk
+            log.LogInformation("NamePool seeded {Count} names from {Path} into Settings", deduped.Count, path);
             return deduped;
         }
         catch (Exception ex)
@@ -179,6 +190,13 @@ public class NamePoolService
             return [];
         }
     }
+
+    static List<string> Sanitize(List<string> names) =>
+        names
+            .Select(n => n?.Trim() ?? "")
+            .Where(n => n.Length > 0 && !Forbidden.Contains(n))
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .ToList();
 
     HashSet<string> GetUsedFirstNames()
     {

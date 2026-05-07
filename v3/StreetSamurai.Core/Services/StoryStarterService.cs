@@ -13,6 +13,7 @@ public class StoryStarterService
     private readonly IPathProvider paths;
     private readonly SemanticIndexService semanticIndex;
     private readonly InferenceService inference;
+    private readonly WorldStateService worldState;
     private readonly ILogger<StoryStarterService> log;
 
     // Seed premises for zero-input generation — drawn from the world's actual tensions
@@ -37,6 +38,7 @@ public class StoryStarterService
         ILlmService llm, WorldGraphService graph, LoreService canon,
         DatabaseService canonDb, IPathProvider paths,
         SemanticIndexService semanticIndex, InferenceService inference,
+        WorldStateService worldState,
         ILogger<StoryStarterService> log)
     {
         this.llm = llm;
@@ -46,6 +48,7 @@ public class StoryStarterService
         this.paths = paths;
         this.semanticIndex = semanticIndex;
         this.inference = inference;
+        this.worldState = worldState;
         this.log = log;
     }
 
@@ -304,7 +307,7 @@ public class StoryStarterService
         var sensoryPaletteCont = canonDb.GetSensoryPalettePrompt(location);
         var storyBible = JsonStoryBible();
 
-        var session = new NarrativeSessionContext(graph, semanticIndex, inference);
+        var session = new NarrativeSessionContext(graph, semanticIndex, inference, worldState);
         session.TouchAll(characters);
         if (location != null) session.Touch(location);
 

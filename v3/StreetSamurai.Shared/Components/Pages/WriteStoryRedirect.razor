@@ -1,0 +1,33 @@
+@page "/stories/write/{ProjectId}"
+@attribute [Authorize(Roles = "Contributor,Administrator")]
+@using StreetSamurai.Core.Interfaces
+@inject IChapterRepository Chapters
+@inject NavigationManager Nav
+
+@* Legacy route → simplified /talk surface. Anyone deep-linking to
+   /stories/write/{ProjectId} now lands on /talk/{BookId}/{ChapterId}. The
+   old multi-tool page lives at /stories/write-legacy/{ProjectId} for
+   one-off comparisons but is no longer the primary writer. *@
+
+<div class="container py-3 small text-muted">
+    <i class="bi bi-arrow-right-circle me-1"></i> Redirecting to the simplified writer…
+</div>
+
+@code {
+    [Parameter] public string ProjectId { get; set; } = "";
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (!firstRender) return;
+        var chapter = Chapters.LoadChapter(ProjectId);
+        if (chapter == null) { Nav.NavigateTo("/talk", replace: true); return; }
+        var url = string.IsNullOrEmpty(chapter.BookId)
+            ? $"/talk/{string.Empty}/{chapter.Id}"
+            : $"/talk/{chapter.BookId}/{chapter.Id}";
+        // Defensive: if BookId is empty, just send to /talk with the chapter open via a query.
+        if (string.IsNullOrEmpty(chapter.BookId))
+            Nav.NavigateTo($"/talk", replace: true);
+        else
+            Nav.NavigateTo(url, replace: true);
+    }
+}

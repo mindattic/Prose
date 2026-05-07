@@ -8,13 +8,12 @@ namespace StreetSamurai.Core.Services;
 public class OllamaOptions
 {
     public string BaseUrl    { get; set; } = "http://localhost:11434";
-    public string ChatModel  { get; set; } = "qwen3:14b";
+    public string ChatModel  { get; set; } = "qwen3:1.7b";
     public string EmbedModel { get; set; } = "bge-m3";
 
     /// <summary>
     /// Context window in tokens. Default 8192 — fits 8 retrieved chunks + system + question
-    /// without truncation while staying inside a 3080 Ti's 12GB VRAM (model ~9GB + KV ~2GB).
-    /// Bumping to 16384 spills to CPU on a 3080 Ti, dropping throughput ~6×.
+    /// without truncation. Smaller models leave plenty of VRAM for KV cache headroom.
     /// </summary>
     public int NumCtx { get; set; } = 8192;
 
@@ -35,15 +34,17 @@ public class OllamaClient
 {
     private readonly HttpClient http;
     private readonly OllamaOptions opts;
+    private readonly SettingsService settings;
 
-    public OllamaClient(HttpClient http, OllamaOptions opts)
+    public OllamaClient(HttpClient http, OllamaOptions opts, SettingsService settings)
     {
         this.http = http;
         this.opts = opts;
+        this.settings = settings;
     }
 
     public string EmbedModel => opts.EmbedModel;
-    public string ChatModel  => opts.ChatModel;
+    public string ChatModel  => string.IsNullOrWhiteSpace(settings.OllamaChatModel) ? opts.ChatModel : settings.OllamaChatModel;
     public string BaseUrl    => opts.BaseUrl;
 
     public async Task<bool> IsReachableAsync(CancellationToken ct = default)
@@ -56,16 +57,58 @@ public class OllamaClient
         catch { return false; }
     }
 
+    /// <summary>
+    /// Returns the names of all models currently pulled into the local Ollama
+    /// install (whatever <c>/api/tags</c> reports). Names include the tag, e.g.
+    /// "bge-m3:latest". Returns an empty list if Ollama is unreachable.
+    /// </summary>
+    public async Task<IReadOnlyList<string>> ListModelsAsync(CancellationToken ct = default)
+    {
+        try
+        {
+            using var res = await http.GetAsync("/api/tags", ct);
+            if (!res.IsSuccessStatusCode) return Array.Empty<string>();
+            var json = await res.Content.ReadAsStringAsync(ct);
+            using var doc = JsonDocument.Parse(json);
+            if (!doc.RootElement.TryGetProperty("models", out var models)
+                || models.ValueKind != JsonValueKind.Array)
+                return Array.Empty<string>();
+            var names = new List<string>(models.GetArrayLength());
+            foreach (var m in models.EnumerateArray())
+            {
+                if (m.TryGetProperty("name", out var n) && n.ValueKind == JsonValueKind.String)
+                {
+                    var s = n.GetString();
+                    if (!string.IsNullOrEmpty(s)) names.Add(s);
+                }
+            }
+            return names;
+        }
+        catch { return Array.Empty<string>(); }
+    }
+
     public async Task<IReadOnlyList<float[]>> EmbedAsync(
         IReadOnlyList<string> inputs, CancellationToken ct = default)
     {
         if (inputs.Count == 0) return Array.Empty<float[]>();
         var payload = new { model = opts.EmbedModel, input = inputs, keep_alive = opts.KeepAlive };
-        using var req = new HttpRequestMessage(HttpMethod.Post, "/api/embed")
+
+        // Single retry on 404: Ollama returns 404 from /api/embed briefly while it's
+        // loading the embed model into VRAM, and again if KeepAlive expires later in
+        // the session. A short backoff lets the model finish loading.
+        HttpResponseMessage res = null!;
+        for (int attempt = 0; attempt < 2; attempt++)
         {
-            Content = JsonContent.Create(payload),
-        };
-        using var res = await http.SendAsync(req, ct);
+            using var req = new HttpRequestMessage(HttpMethod.Post, "/api/embed")
+            {
+                Content = JsonContent.Create(payload),
+            };
+            res = await http.SendAsync(req, ct);
+            if (res.StatusCode != System.Net.HttpStatusCode.NotFound) break;
+            res.Dispose();
+            await Task.Delay(750, ct);
+        }
+        using var _ = res;
         res.EnsureSuccessStatusCode();
         var json = await res.Content.ReadAsStringAsync(ct);
         using var doc = JsonDocument.Parse(json);
@@ -89,7 +132,7 @@ public class OllamaClient
     {
         var payload = new
         {
-            model = opts.ChatModel,
+            model = ChatModel,
             stream = true,
             keep_alive = opts.KeepAlive,
             messages = messages.Select(m => new { role = m.Role, content = m.Content }).ToArray(),

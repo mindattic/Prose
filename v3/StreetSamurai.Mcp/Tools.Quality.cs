@@ -16,6 +16,13 @@ namespace StreetSamurai.Mcp;
 // strength, tension delta, paragraph-serves, motif reuse, voice cadence
 // drift. No LLM call, no Quorum vote — pure deterministic analysis.
 
+/// <summary>
+/// Quality / self-check tools. <c>validate_canon_text</c> scans arbitrary prose
+/// against the world rules so a chapter draft can be pre-flighted before delivery;
+/// <c>analyze_writing_quality</c> runs the deterministic heuristic pass over a
+/// whole book (no LLM, no Quorum vote) and surfaces the same findings the
+/// BookReviewService would.
+/// </summary>
 [McpServerToolType]
 public class QualityTools
 {
@@ -39,6 +46,7 @@ public class QualityTools
         this.motifs = motifs;
     }
 
+    /// <summary>Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/Meridian PD, no phi/Greek-letter confusion). Returns matched violations with surrounding context. Call this on a chapter draft before delivering it — catches rule slips an LLM might miss.</summary>
     [McpServerTool, Description("Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/Meridian PD, no phi/Greek-letter confusion). Returns the list of matched violations with the surrounding context. Call this on a chapter draft BEFORE delivering it — catches rule slips Claude might miss.")]
     public string ValidateCanonText(
         [Description("The prose to scan. Pass an entire chapter or a single beat.")] string text)
@@ -50,6 +58,7 @@ public class QualityTools
         return JsonSerializer.Serialize(new { ok = false, violations = report }, CanonTools.JsonOpts);
     }
 
+    /// <summary>Run the writing-quality heuristic pass over a book's chapters: first-line strength, tension delta, paragraph-serves audit, motif reuse, voice cadence Jaccard. Returns findings list. No LLM calls.</summary>
     [McpServerTool, Description("Run the writing-quality heuristic pass over a book's chapters. Same checks the BookReviewService runs before its LLM Quorum: first-line strength, tension delta (flags 4+ low-tension beats in a row), paragraph-serves audit (paragraphs with no dialogue / sensory detail / action / number / capitalized noun), motif reuse (chapters that drop registered motifs), voice cadence Jaccard (chapter prose drifting from POV character's documented vocabulary). Returns findings list. No LLM calls.")]
     public string AnalyzeWritingQuality(
         [Description("Book id.")] string bookId)

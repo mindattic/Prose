@@ -78,12 +78,8 @@ public class EmbeddingIndexService : IDisposable
         flushTimer = new Timer(_ => _ = FlushPendingAsync(), null, Timeout.Infinite, Timeout.Infinite);
         StartWatcher();
 
-        // Background catch-up — picks up anything changed while the app was offline.
-        _ = Task.Run(async () =>
-        {
-            try { await ReindexAllAsync(CancellationToken.None); }
-            catch (Exception ex) { log.LogWarning(ex, "Initial reindex failed"); }
-        });
+        // Initial reindex disabled — was spawning Ollama on startup and hanging the host.
+        // Run reindex manually via the /ask page or CLI when Ollama is available.
     }
 
     public IndexStats GetStats()
@@ -130,9 +126,11 @@ public class EmbeddingIndexService : IDisposable
     /// <summary>Walk the data tree and re-embed any file whose hash has changed.</summary>
     public async Task<int> ReindexAllAsync(CancellationToken ct = default)
     {
-        // Spin up Ollama if it's not already running. No-op if already up; on hosts
+        // Spin up Ollama if it's not already running AND wait for the embed model
+        // to finish loading. Without the warmup-await, the first ~30 embed calls
+        // race ahead of bge-m3 loading into VRAM and 404 from /api/embed. On hosts
         // without Ollama installed (Azure) this returns false and we fall through.
-        await ollamaProc.EnsureRunningAsync(ct: ct);
+        await ollamaProc.EnsureWarmAsync(ct);
 
         if (!await ollama.IsReachableAsync(ct))
         {

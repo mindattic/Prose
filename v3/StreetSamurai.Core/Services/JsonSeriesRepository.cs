@@ -1,88 +1,147 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
-using StreetSamurai.Core.Models;
+using Series = StreetSamurai.Core.Models.Series;
+using SeriesEntity = StreetSamurai.Core.Data.Entities.Series;
+using EntityRow = StreetSamurai.Core.Data.Entities.Entity;
+using RecordRow = StreetSamurai.Core.Data.Entities.Record;
 
 namespace StreetSamurai.Core.Services;
 
-/// <summary>
-/// Series repository — one JSON file per series under engine/data/series/.
-/// Series group Books that share continuity. Books reference their parent series
-/// via <see cref="Book.SeriesId"/>; this list is the canonical book order within
-/// a series.
-/// </summary>
+/// <summary>EF-backed Series repository on the unified StreetSamurai database.</summary>
 public class JsonSeriesRepository : ISeriesRepository
 {
-    private readonly IPathProvider paths;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<JsonSeriesRepository> log;
 
     private static readonly JsonSerializerOptions JsonOpts = new()
     {
-        WriteIndented = true,
+        WriteIndented = false,
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
     };
 
-    public JsonSeriesRepository(IPathProvider paths, ILogger<JsonSeriesRepository> log)
+    public JsonSeriesRepository(IDbContextFactory<StreetSamuraiDbContext> dbFactory, ILogger<JsonSeriesRepository> log)
     {
-        this.paths = paths;
+        this.dbFactory = dbFactory;
         this.log = log;
     }
 
-    private string SeriesDir => paths.SeriesDir;
-    private string ArchiveSeriesDir
+    /// <summary>Test-fixture ctor — wraps a SQLite-in-memory DbContextFactory keyed by path.</summary>
+    public JsonSeriesRepository(IPathProvider paths, ILogger<JsonSeriesRepository> log)
     {
-        get
-        {
-            var dir = Path.Combine(paths.ArchiveDir, Constants.Folders.Series);
-            Directory.CreateDirectory(dir);
-            return dir;
-        }
+        this.dbFactory = TestDbFactory.For(paths, "series");
+        this.log = log;
     }
 
     public List<Series> ListSeries()
     {
-        if (!Directory.Exists(SeriesDir)) return [];
-        return Directory.GetFiles(SeriesDir, "*.json")
-            .Select(LoadFromFile)
-            .Where(s => s != null)
-            .OrderByDescending(s => s!.Modified)
-            .ToList()!;
+        using var db = dbFactory.CreateDbContext();
+        var jsons = db.Records.AsNoTracking()
+            .Where(r => r.Entity!.EntityType == "series" && r.Entity.IsActive)
+            .OrderByDescending(r => r.UpdatedAt)
+            .Select(r => r.Json)
+            .ToList();
+        var list = new List<Series>(jsons.Count);
+        foreach (var j in jsons)
+        {
+            try { var s = JsonSerializer.Deserialize<Series>(j, JsonOpts); if (s != null) list.Add(s); }
+            catch (Exception ex) { log.LogWarning(ex, "Failed to deserialize a series record"); }
+        }
+        return list;
     }
 
     public Series? LoadSeries(string id)
     {
-        var path = Path.Combine(SeriesDir, $"{id}.json");
-        return LoadFromFile(path);
+        if (string.IsNullOrEmpty(id)) return null;
+        var guid = ParseGuid(id);
+        using var db = dbFactory.CreateDbContext();
+        var json = db.Records.AsNoTracking()
+            .Where(r => r.EntityId == guid)
+            .Select(r => r.Json)
+            .FirstOrDefault();
+        if (string.IsNullOrEmpty(json)) return null;
+        try { return JsonSerializer.Deserialize<Series>(json, JsonOpts); }
+        catch (Exception ex) { log.LogWarning(ex, "Failed to deserialize Series {Id}", id); return null; }
     }
 
     public void SaveSeries(Series series)
     {
+        if (string.IsNullOrEmpty(series.Id)) series.Id = Guid.CreateVersion7().ToString("N");
+        var id = ParseGuid(series.Id);
         series.Modified = DateTime.UtcNow;
-        Directory.CreateDirectory(SeriesDir);
-        var path = Path.Combine(SeriesDir, $"{series.Id}.json");
-        log.LogDebug("Saving series {Id} to {Path}", series.Id, path);
-        File.WriteAllText(path, JsonSerializer.Serialize(series, JsonOpts));
+
+        using var db = dbFactory.CreateDbContext();
+
+        var entity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (entity == null)
+        {
+            entity = new EntityRow
+            {
+                Id          = id,
+                EntityType  = "series",
+                Name        = series.Title,
+                Slug        = WorldGraphService.Slugify(series.Title),
+                Status      = "canon",
+                Description = series.Premise,
+                CreatedAt   = series.Created == default ? DateTime.UtcNow : series.Created,
+                ModifiedAt  = DateTime.UtcNow,
+                IsActive    = true,
+            };
+            db.Entities.Add(entity);
+        }
+        else
+        {
+            entity.Name        = series.Title;
+            entity.Slug        = WorldGraphService.Slugify(series.Title);
+            entity.Description = series.Premise;
+            entity.ModifiedAt  = DateTime.UtcNow;
+            entity.IsActive    = true;
+            entity.ArchivedAt  = null;
+        }
+
+        var sub = db.SeriesItems.FirstOrDefault(s => s.Id == id);
+        if (sub == null)
+        {
+            sub = new SeriesEntity { Id = id };
+            db.SeriesItems.Add(sub);
+        }
+        sub.Name     = series.Title ?? "";
+        sub.Title    = series.Title ?? "";
+        sub.Slug     = WorldGraphService.Slugify(series.Title);
+        sub.Description = series.Premise ?? "";
+
+        var rec = db.Records.FirstOrDefault(r => r.EntityId == id);
+        var json = JsonSerializer.Serialize(series, JsonOpts);
+        if (rec == null) db.Records.Add(new RecordRow { EntityId = id, Json = json, UpdatedAt = DateTime.UtcNow });
+        else { rec.Json = json; rec.UpdatedAt = DateTime.UtcNow; }
+
+        db.SaveChanges();
     }
 
     public void DeleteSeries(string id)
     {
-        var path = Path.Combine(SeriesDir, $"{id}.json");
-        if (!File.Exists(path)) return;
-
-        var archivePath = Path.Combine(ArchiveSeriesDir, $"{id}.json");
-        if (File.Exists(archivePath))
-            archivePath = Path.Combine(ArchiveSeriesDir, $"{id}.{DateTime.UtcNow:yyyyMMddHHmmss}.json");
-        File.Move(path, archivePath);
+        if (string.IsNullOrEmpty(id)) return;
+        var guid = ParseGuid(id);
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.FirstOrDefault(e => e.Id == guid);
+        if (entity == null) return;
+        entity.IsActive   = false;
+        entity.Status     = "archived";
+        entity.ArchivedAt = DateTime.UtcNow;
+        entity.ModifiedAt = DateTime.UtcNow;
+        db.SaveChanges();
     }
 
-    private static Series? LoadFromFile(string path)
+    private static Guid ParseGuid(string s)
     {
-        if (!File.Exists(path)) return null;
-        try
-        {
-            return JsonSerializer.Deserialize<Series>(File.ReadAllText(path));
-        }
-        catch (Exception ex) { Serilog.Log.Warning(ex, "Failed to load series from {Path}", path); return null; }
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
     }
 }

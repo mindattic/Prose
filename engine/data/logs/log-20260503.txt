@@ -1,0 +1,662 @@
+2026-05-03 01:18:34AM [INF] StreetSamurai Blazor host started
+2026-05-03 01:18:47AM [INF] Reindexing 1211 changed file(s)…
+2026-05-03 01:18:47AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\ammunition\40_smith_pattern.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:47AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\apparel\bd81560cd0a29b9f7be480de2627c31b.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:47AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\corponations\019d6143a7b2738a8d5facbac39e1f5b.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:47AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\equipment\019d6143a8797dfd8017ce96618ccec5.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:47AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5b57832a12ff98e320ef44a.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:48AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5b772ec8c3fe52fc02e294c.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:48AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5d3763c963b355febd2618f.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:48AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5dc756598a690baa8d3d673.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:48AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5e17892821ace3acbeb1d45.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:48AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5ef7a248785a78913cc277d.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:48AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5f4737b902a939e51f1e44a.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:48AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a60c7081bf154911419b4665.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:48AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6277d8da908cd539e9e8bab.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:48AM [INF] Ollama models warmed: chat=qwen3:1.7b, embed=bge-m3
+2026-05-03 01:18:48AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6527eb4a1f00ffdebe6ab66.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:48AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a665757a8637b255120a49aa.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:48AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a68c74ac8357597af48825c1.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:49AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a69870c9b94ea8708ac3ed3d.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:49AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6a079ccb75e41520a0a1872.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:49AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6c27bebb7a83393a7acaf82.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:49AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6d8724dbd9f41b7c0536fdb.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:49AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a70375f4b6baa7968f6671ee.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:49AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a70f725280105dc5baff3dfd.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:49AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a71170ea909d1766b084494d.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:49AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a72670489c9fd891b34a5693.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:49AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\aca6e7cc73aa52a265a3a00d7add0486.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:49AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\019d6143ab387665839d04adc29b1e72.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:50AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\019d6143ab577bf78f9dc4806d596065.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:50AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\019d6143ab58760ba869cb3c56c1810b.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:50AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\87ecb61c5667bad0d432bdcae41c13d0.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:50AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\e4393c09733d80fb41641b9a68275e52.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:50AM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\f3e0a5c8d1b24769f3a4b5c6d7e89015.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 70
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 200
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 187
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 163
+2026-05-03 01:18:50AM [INF] Reindex complete: 1180 file(s) embedded
+2026-05-03 12:22:57PM [INF] StreetSamurai Blazor host started
+2026-05-03 12:23:20PM [INF] Ollama models warmed: chat=qwen3:1.7b, embed=bge-m3
+2026-05-03 12:23:22PM [INF] Reindexing 1211 changed file(s)…
+2026-05-03 12:23:23PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\ammunition\40_smith_pattern.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:25PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\apparel\bd81560cd0a29b9f7be480de2627c31b.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:26PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\corponations\019d6143a7b2738a8d5facbac39e1f5b.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:28PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\equipment\019d6143a8797dfd8017ce96618ccec5.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:30PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5b57832a12ff98e320ef44a.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:31PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5b772ec8c3fe52fc02e294c.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:33PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5d3763c963b355febd2618f.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:34PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5dc756598a690baa8d3d673.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:36PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5e17892821ace3acbeb1d45.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:38PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5ef7a248785a78913cc277d.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:39PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5f4737b902a939e51f1e44a.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:41PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a60c7081bf154911419b4665.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:42PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6277d8da908cd539e9e8bab.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:44PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6527eb4a1f00ffdebe6ab66.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:46PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a665757a8637b255120a49aa.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:47PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a68c74ac8357597af48825c1.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:49PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a69870c9b94ea8708ac3ed3d.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:50PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6a079ccb75e41520a0a1872.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:52PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6c27bebb7a83393a7acaf82.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:54PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6d8724dbd9f41b7c0536fdb.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:55PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a70375f4b6baa7968f6671ee.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:57PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a70f725280105dc5baff3dfd.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:23:58PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a71170ea909d1766b084494d.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:24:00PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a72670489c9fd891b34a5693.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:24:02PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\aca6e7cc73aa52a265a3a00d7add0486.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:24:03PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\019d6143ab387665839d04adc29b1e72.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:24:05PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\019d6143ab577bf78f9dc4806d596065.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:24:06PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\019d6143ab58760ba869cb3c56c1810b.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:24:08PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\87ecb61c5667bad0d432bdcae41c13d0.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:24:10PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\e4393c09733d80fb41641b9a68275e52.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:24:11PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\f3e0a5c8d1b24769f3a4b5c6d7e89015.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 12:24:11PM [INF] Reindex complete: 1180 file(s) embedded
+2026-05-03 07:15:22PM [INF] Ollama models warmed: chat=qwen3:1.7b, embed=bge-m3
+2026-05-03 07:15:28PM [INF] Reindexing 1211 changed file(s)…
+2026-05-03 07:15:29PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\ammunition\40_smith_pattern.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:31PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\apparel\bd81560cd0a29b9f7be480de2627c31b.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:33PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\corponations\019d6143a7b2738a8d5facbac39e1f5b.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:34PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\equipment\019d6143a8797dfd8017ce96618ccec5.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:36PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5b57832a12ff98e320ef44a.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:37PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5b772ec8c3fe52fc02e294c.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:39PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5d3763c963b355febd2618f.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:41PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5dc756598a690baa8d3d673.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:42PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5e17892821ace3acbeb1d45.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:44PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5ef7a248785a78913cc277d.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:46PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a5f4737b902a939e51f1e44a.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:47PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a60c7081bf154911419b4665.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:49PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6277d8da908cd539e9e8bab.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:51PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6527eb4a1f00ffdebe6ab66.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:52PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a665757a8637b255120a49aa.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:54PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a68c74ac8357597af48825c1.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:56PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a69870c9b94ea8708ac3ed3d.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:57PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6a079ccb75e41520a0a1872.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:15:59PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6c27bebb7a83393a7acaf82.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:00PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a6d8724dbd9f41b7c0536fdb.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:02PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a70375f4b6baa7968f6671ee.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:04PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a70f725280105dc5baff3dfd.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:05PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a71170ea909d1766b084494d.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:07PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\019d6143a72670489c9fd891b34a5693.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:09PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\people\aca6e7cc73aa52a265a3a00d7add0486.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:10PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\019d6143ab387665839d04adc29b1e72.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:12PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\019d6143ab577bf78f9dc4806d596065.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:13PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\019d6143ab58760ba869cb3c56c1810b.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:15PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\87ecb61c5667bad0d432bdcae41c13d0.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:17PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\e4393c09733d80fb41641b9a68275e52.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:18PM [WRN] Failed to index D:\Projects\MindAttic\StreetSamurai\engine\data\weaponry\f3e0a5c8d1b24769f3a4b5c6d7e89015.json
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.OllamaClient.EmbedAsync(IReadOnlyList`1 inputs, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OllamaClient.cs:line 82
+   at StreetSamurai.Core.Services.EmbeddingIndexService.EmbedBatchedAsync(List`1 chunks, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 202
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexFileAsync(String filePath, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 189
+   at StreetSamurai.Core.Services.EmbeddingIndexService.ReindexAllAsync(CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EmbeddingIndexService.cs:line 165
+2026-05-03 07:16:18PM [INF] Reindex complete: 1180 file(s) embedded

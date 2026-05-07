@@ -23,21 +23,15 @@ public class BookReviewService : IBookReviewService
     private readonly IBookRepository books;
     private readonly IChapterRepository chapters;
     private readonly LLMVotingService llmVoting;
-    private readonly IPathProvider paths;
+    private readonly SettingsKvStore kv;
     private readonly WritingQualityService quality;
     private readonly MotifService motifs;
     private readonly DatabaseService db;
     private readonly ILogger<BookReviewService> log;
 
-    private static readonly JsonSerializerOptions JsonOpts = new()
-    {
-        WriteIndented = true,
-        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-    };
-
     public BookReviewService(
         IBookRepository books, IChapterRepository chapters,
-        LLMVotingService llmVoting, IPathProvider paths,
+        LLMVotingService llmVoting, SettingsKvStore kv,
         WritingQualityService quality, MotifService motifs,
         DatabaseService db,
         ILogger<BookReviewService> log)
@@ -45,31 +39,18 @@ public class BookReviewService : IBookReviewService
         this.books = books;
         this.chapters = chapters;
         this.llmVoting = llmVoting;
-        this.paths = paths;
+        this.kv = kv;
         this.quality = quality;
         this.motifs = motifs;
         this.db = db;
         this.log = log;
     }
 
-    private string ReportPath(string bookId) =>
-        Path.Combine(paths.BooksDir, $"{bookId}.review.json");
+    private static string ReportKey(string bookId) => $"book_review:{bookId}";
 
-    public BookReviewReport? LoadReport(string bookId)
-    {
-        var path = ReportPath(bookId);
-        if (!File.Exists(path)) return null;
-        try
-        {
-            return JsonSerializer.Deserialize<BookReviewReport>(File.ReadAllText(path));
-        }
-        catch (Exception ex) { log.LogWarning(ex, "Failed to load book review for {BookId}", bookId); return null; }
-    }
+    public BookReviewReport? LoadReport(string bookId) => kv.Get<BookReviewReport>(ReportKey(bookId));
 
-    private void SaveReport(BookReviewReport report)
-    {
-        File.WriteAllText(ReportPath(report.BookId), JsonSerializer.Serialize(report, JsonOpts));
-    }
+    private void SaveReport(BookReviewReport report) => kv.Set(ReportKey(report.BookId), report);
 
     public async Task<BookReviewReport> ReviewAsync(
         string bookId, IProgress<string>? progress = null, CancellationToken ct = default)

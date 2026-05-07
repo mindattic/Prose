@@ -19,19 +19,28 @@ public class LocalRagService
     private readonly EmbeddingIndexService index;
     private readonly LlmVotingProvider voting;
     private readonly OllamaClient ollama;
+    private readonly SettingsService settings;
     private readonly ILogger<LocalRagService> log;
 
     public LocalRagService(
         EmbeddingIndexService index,
         LlmVotingProvider voting,
         OllamaClient ollama,
+        SettingsService settings,
         ILogger<LocalRagService> log)
     {
-        this.index   = index;
-        this.voting  = voting;
-        this.ollama  = ollama;
-        this.log     = log;
+        this.index    = index;
+        this.voting   = voting;
+        this.ollama   = ollama;
+        this.settings = settings;
+        this.log      = log;
     }
+
+    private VoterProfile OllamaProfile() => new()
+    {
+        ProviderId    = "ollama",
+        ModelOverride = settings.OllamaChatModel,
+    };
 
     public async Task<string> AnswerAsync(
         string question,
@@ -59,6 +68,7 @@ public class LocalRagService
             userMessage: user,
             maxTokens: maxTokens,
             temperature: temperature,
+            voterOverrides: OllamaProfile(),
             ct: ct);
     }
 
@@ -95,6 +105,7 @@ public class LocalRagService
             userMessage: user,
             maxTokens: maxTokens,
             temperature: temperature,
+            voterOverrides: OllamaProfile(),
             ct: ct);
     }
 

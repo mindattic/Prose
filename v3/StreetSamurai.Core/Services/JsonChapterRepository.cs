@@ -1,135 +1,211 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
-using StreetSamurai.Core.Models;
+using Chapter = StreetSamurai.Core.Models.Chapter;
+using ChapterEntity = StreetSamurai.Core.Data.Entities.Chapter;
+using ChapterBeatEntity = StreetSamurai.Core.Data.Entities.ChapterBeat;
+using EntityRow = StreetSamurai.Core.Data.Entities.Entity;
+using RecordRow = StreetSamurai.Core.Data.Entities.Record;
+using StreetSamurai.Core.Data.Entities;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Chapter repository — one folder per chapter under chapters/.
-/// Folder naming: {guid}/
-/// Files inside: chapter.json, checkpoint.json, outline.json, events.json, knowledge.json
+/// EF-backed Chapter repository. Chapters live in the unified StreetSamurai
+/// database with a typed <see cref="StreetSamurai.Core.Data.Entities.Chapter"/>
+/// row plus child <see cref="StreetSamurai.Core.Data.Entities.ChapterBeat"/>
+/// rows for queryable beat scans, and a canonical
+/// <see cref="StreetSamurai.Core.Data.Entities.Record"/> JSON blob that round-trips
+/// the full <see cref="Models.Chapter"/> domain object.
 /// </summary>
 public class JsonChapterRepository : IChapterRepository
 {
-    private readonly IPathProvider paths;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly ILogger<JsonChapterRepository> log;
+
     private static readonly JsonSerializerOptions JsonOpts = new()
     {
-        WriteIndented = true,
+        WriteIndented = false,
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
     };
 
-    private string ChapterDir => paths.ChaptersDir;
-    private string ArchiveDir => paths.ArchiveDir;
+    public JsonChapterRepository(IDbContextFactory<StreetSamuraiDbContext> dbFactory, ILogger<JsonChapterRepository> log)
+    {
+        this.dbFactory = dbFactory;
+        this.log = log;
+    }
 
-    private readonly ILogger<JsonChapterRepository> log;
+    public event Action<Chapter>? OnChapterSaved;
 
+    /// <summary>Test-fixture ctor — wraps a SQLite-in-memory DbContextFactory keyed by path.</summary>
     public JsonChapterRepository(IPathProvider paths, ILogger<JsonChapterRepository> log)
     {
-        this.paths = paths;
+        this.dbFactory = TestDbFactory.For(paths, "chapter");
         this.log = log;
-        MigrateFlatFiles();
     }
 
     public List<Chapter> ListChapters()
     {
-        var dir = ChapterDir;
-        if (!Directory.Exists(dir)) return [];
-
-        return Directory.GetDirectories(dir)
-            .Select(d => LoadFromFile(Path.Combine(d, "chapter.json")))
-            .Where(c => c != null)
-            .DistinctBy(c => c!.Id)
-            .OrderByDescending(c => c!.Modified)
-            .ToList()!;
+        using var db = dbFactory.CreateDbContext();
+        var jsons = db.Records
+            .AsNoTracking()
+            .Where(r => r.Entity!.EntityType == "chapter" && r.Entity.IsActive)
+            .OrderByDescending(r => r.UpdatedAt)
+            .Select(r => r.Json)
+            .ToList();
+        var list = new List<Chapter>(jsons.Count);
+        foreach (var j in jsons)
+        {
+            try
+            {
+                var c = JsonSerializer.Deserialize<Chapter>(j, JsonOpts);
+                if (c != null) list.Add(c);
+            }
+            catch (Exception ex) { log.LogWarning(ex, "Failed to deserialize a chapter record"); }
+        }
+        return list;
     }
 
     public Chapter? LoadChapter(string id)
     {
-        var path = StoryFolderHelper.FindFile(ChapterDir, id, "chapter.json");
-        return path != null ? LoadFromFile(path) : null;
+        if (string.IsNullOrEmpty(id)) return null;
+        var guid = ParseGuid(id);
+        using var db = dbFactory.CreateDbContext();
+        var json = db.Records.AsNoTracking()
+            .Where(r => r.EntityId == guid)
+            .Select(r => r.Json)
+            .FirstOrDefault();
+        if (string.IsNullOrEmpty(json)) return null;
+        try { return JsonSerializer.Deserialize<Chapter>(json, JsonOpts); }
+        catch (Exception ex) { log.LogWarning(ex, "Failed to deserialize Chapter {Id}", id); return null; }
     }
 
     public void SaveChapter(Chapter chapter)
     {
+        if (string.IsNullOrEmpty(chapter.Id)) chapter.Id = Guid.CreateVersion7().ToString("N");
+        var id = ParseGuid(chapter.Id);
         chapter.Modified = DateTime.UtcNow;
 
-        // Get or create folder, renaming if title changed
-        var desiredName = StoryFolderHelper.BuildFolderName(chapter.Id, chapter.Title);
-        var desiredPath = Path.Combine(ChapterDir, desiredName);
-        var existing = StoryFolderHelper.FindFolder(ChapterDir, chapter.Id);
+        using var db = dbFactory.CreateDbContext();
 
-        if (existing != null && !string.Equals(existing, desiredPath, StringComparison.OrdinalIgnoreCase))
+        var entity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (entity == null)
         {
-            try { Directory.Move(existing, desiredPath); }
-            catch { desiredPath = existing; }
+            entity = new EntityRow
+            {
+                Id          = id,
+                EntityType  = "chapter",
+                Name        = chapter.Title,
+                Slug        = WorldGraphService.Slugify(chapter.Title),
+                Status      = string.IsNullOrEmpty(chapter.Status) ? "draft" : chapter.Status,
+                Description = chapter.Synopsis,
+                CreatedAt   = chapter.Created == default ? DateTime.UtcNow : chapter.Created,
+                ModifiedAt  = DateTime.UtcNow,
+                IsActive    = true,
+            };
+            db.Entities.Add(entity);
         }
-        else if (existing == null)
+        else
         {
-            Directory.CreateDirectory(desiredPath);
+            entity.Name        = chapter.Title;
+            entity.Slug        = WorldGraphService.Slugify(chapter.Title);
+            entity.Description = chapter.Synopsis;
+            entity.ModifiedAt  = DateTime.UtcNow;
+            entity.IsActive    = true;
+            entity.ArchivedAt  = null;
+            entity.Status      = string.IsNullOrEmpty(chapter.Status) ? entity.Status : chapter.Status;
         }
 
-        var chapterPath = Path.Combine(desiredPath, "chapter.json");
-        log.LogDebug("Saving chapter {Id} to {Path}", chapter.Id, chapterPath);
-        File.WriteAllText(chapterPath, JsonSerializer.Serialize(chapter, JsonOpts));
+        var sub = db.Chapters.Include(c => c.Beats).FirstOrDefault(c => c.Id == id);
+        if (sub == null)
+        {
+            sub = new ChapterEntity { Id = id };
+            db.Chapters.Add(sub);
+        }
+        sub.BookId         = string.IsNullOrEmpty(chapter.BookId) ? null : ParseGuid(chapter.BookId);
+        sub.Number         = chapter.Number;
+        sub.Title          = chapter.Title;
+        sub.Synopsis       = chapter.Synopsis ?? "";
+        sub.Status         = chapter.Status ?? "draft";
+        sub.Html           = chapter.Html ?? "";
+        sub.ModifiedAt     = DateTime.UtcNow;
+
+        // Replace ChapterCharacters bridge — no JSON column.
+        db.ChapterCharacters.RemoveRange(db.ChapterCharacters.Where(r => r.ChapterId == id));
+        for (int i = 0; i < chapter.Characters.Count; i++)
+        {
+            var alias = chapter.Characters[i] ?? "";
+            db.ChapterCharacters.Add(new ChapterCharacter
+            {
+                ChapterId = id, Position = i, Alias = alias,
+                CharacterId = ResolveCharacterIdByName(db, alias),
+            });
+        }
+
+        sub.Beats.Clear();
+        foreach (var beat in chapter.Beats.OrderBy(b => b.Index))
+            sub.Beats.Add(new ChapterBeatEntity
+            {
+                BeatGuid       = ParseGuid(beat.Id),
+                ChapterId      = id,
+                Index          = beat.Index,
+                Title          = beat.Title ?? "",
+                Synopsis       = beat.Synopsis ?? "",
+                Text           = beat.Text ?? "",
+                Act            = beat.Act,
+                StructureRole  = beat.StructureRole ?? "",
+                SceneType      = beat.SceneType ?? "scene",
+                FacetTag       = beat.FacetTag ?? "",
+            });
+
+        var rec = db.Records.FirstOrDefault(r => r.EntityId == id);
+        var json = JsonSerializer.Serialize(chapter, JsonOpts);
+        if (rec == null) db.Records.Add(new RecordRow { EntityId = id, Json = json, UpdatedAt = DateTime.UtcNow });
+        else { rec.Json = json; rec.UpdatedAt = DateTime.UtcNow; }
+
+        db.SaveChanges();
+
+        try { OnChapterSaved?.Invoke(chapter); }
+        catch (Exception ex) { log.LogWarning(ex, "OnChapterSaved subscriber threw for chapter {Id}", chapter.Id); }
     }
 
     public void DeleteChapter(string id)
     {
-        var folder = StoryFolderHelper.FindFolder(ChapterDir, id);
-        if (folder == null) return;
-
-        var archiveFolder = Path.Combine(ArchiveDir, Path.GetFileName(folder));
-        if (Directory.Exists(archiveFolder))
-            Directory.Delete(archiveFolder, true);
-        Directory.Move(folder, archiveFolder);
+        if (string.IsNullOrEmpty(id)) return;
+        var guid = ParseGuid(id);
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.FirstOrDefault(e => e.Id == guid);
+        if (entity == null) return;
+        entity.IsActive   = false;
+        entity.Status     = "archived";
+        entity.ArchivedAt = DateTime.UtcNow;
+        entity.ModifiedAt = DateTime.UtcNow;
+        db.SaveChanges();
     }
 
-    /// <summary>Migrate legacy flat files into folder structure on first run.</summary>
-    private void MigrateFlatFiles()
+    private static Guid? ResolveCharacterIdByName(StreetSamuraiDbContext db, string name)
     {
-        var dir = ChapterDir;
-        if (!Directory.Exists(dir)) return;
-
-        var storyFiles = Directory.GetFiles(dir, "*.story.json");
-        foreach (var storyFile in storyFiles)
-        {
-            try
-            {
-                var chapter = LoadFromFile(storyFile);
-                if (chapter == null) continue;
-
-                var folderName = StoryFolderHelper.BuildFolderName(chapter.Id, chapter.Title);
-                var folderPath = Path.Combine(dir, folderName);
-                Directory.CreateDirectory(folderPath);
-
-                File.Move(storyFile, Path.Combine(folderPath, "chapter.json"), overwrite: true);
-
-                foreach (var suffix in new[] { "checkpoint", "outline", "events", "knowledge" })
-                {
-                    var candidates = Directory.GetFiles(dir, $"*{chapter.Id}.{suffix}.json");
-                    foreach (var f in candidates)
-                        File.Move(f, Path.Combine(folderPath, $"{suffix}.json"), overwrite: true);
-                }
-
-                log.LogInformation("Migrated chapter '{Title}' to folder {Folder}", chapter.Title, folderName);
-            }
-            catch (Exception ex)
-            {
-                log.LogWarning(ex, "Failed to migrate chapter file {File}", storyFile);
-            }
-        }
+        if (string.IsNullOrWhiteSpace(name)) return null;
+        var slug = WorldGraphService.Slugify(name);
+        return db.Entities
+            .Where(e => e.EntityType == "character" && e.IsActive
+                && (e.Name == name || e.Slug == slug))
+            .Select(e => (Guid?)e.Id)
+            .FirstOrDefault();
     }
 
-    private static Chapter? LoadFromFile(string path)
+    private static Guid ParseGuid(string s)
     {
-        if (!File.Exists(path)) return null;
-        try
-        {
-            var json = File.ReadAllText(path);
-            return JsonSerializer.Deserialize<Chapter>(json);
-        }
-        catch (Exception ex) { Serilog.Log.Warning(ex, "Failed to load chapter from {Path}", path); return null; }
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        // Deterministic hash for non-GUID strings — same input always maps to the
+        // same Guid so save/load round-trip works for short/legacy ids.
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
     }
 }

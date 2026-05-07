@@ -50,15 +50,8 @@ public static class ContinuityCli
 
     static int CmdMigrate(ContinuityService svc)
     {
-        Console.WriteLine($"[continuity] Migrating engine/data/continuity/*.json → {svc.DbPath}");
-        var r = svc.MigrateLegacyJson();
-        Console.WriteLine($"[continuity] Migrated {r.MigratedClaims} claims from {r.MigratedFiles} files.");
-        if (r.Errors.Count > 0)
-        {
-            Console.WriteLine($"[continuity] {r.Errors.Count} error(s):");
-            foreach (var e in r.Errors) Console.WriteLine($"  - {e}");
-            return 1;
-        }
+        Console.WriteLine("[continuity] Legacy JSON migration is retired. Use:");
+        Console.WriteLine("  ss --migrate-sql --import continuity   (SQLite continuity.db → SQL Server)");
         return 0;
     }
 

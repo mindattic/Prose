@@ -1,90 +1,200 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
-using StreetSamurai.Core.Models;
+using Book = StreetSamurai.Core.Models.Book;
+using BookEntity = StreetSamurai.Core.Data.Entities.Book;
+using EntityRow = StreetSamurai.Core.Data.Entities.Entity;
+using RecordRow = StreetSamurai.Core.Data.Entities.Record;
+using StreetSamurai.Core.Data.Entities;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Book repository — one JSON file per book under engine/data/books/.
-/// Filename: {bookId}.json. The book record carries the ordered list of ChapterIds;
-/// chapters themselves remain in <see cref="JsonChapterRepository"/> under chapters/.
-/// Removal is non-destructive — <see cref="ArchiveBook"/> moves the file to archives/books/.
+/// EF-backed Book repository. Books live in the unified StreetSamurai database
+/// alongside every other entity:
+///   • <see cref="Entity"/> — universal row (Name, Slug, Status, IsActive, …)
+///   • <see cref="StreetSamurai.Core.Data.Entities.Book"/> — strongly-typed indexed columns
+///     (Title, Slug, SeriesId, Tagline, Premise, ArcTarget, ProtagonistsJson, ChapterIdsJson)
+///   • <see cref="StreetSamurai.Core.Data.Entities.Record"/> — canonical JSON of the
+///     <see cref="Models.Book"/> domain object, round-tripped on read/write.
+///
+/// Class name preserved so consumers don't change. The legacy file-based
+/// implementation has been retired.
 /// </summary>
 public class JsonBookRepository : IBookRepository
 {
-    private readonly IPathProvider paths;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<JsonBookRepository> log;
 
     private static readonly JsonSerializerOptions JsonOpts = new()
     {
-        WriteIndented = true,
+        WriteIndented = false,
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
     };
 
-    public JsonBookRepository(IPathProvider paths, ILogger<JsonBookRepository> log)
+    public JsonBookRepository(IDbContextFactory<StreetSamuraiDbContext> dbFactory, ILogger<JsonBookRepository> log)
     {
-        this.paths = paths;
+        this.dbFactory = dbFactory;
         this.log = log;
     }
 
-    private string BookDir => paths.BooksDir;
-    private string ArchiveBookDir
+    /// <summary>Test-fixture ctor — wraps a SQLite-in-memory DbContextFactory keyed by path.</summary>
+    public JsonBookRepository(IPathProvider paths, ILogger<JsonBookRepository> log)
     {
-        get
-        {
-            var dir = Path.Combine(paths.ArchiveDir, Constants.Folders.Books);
-            Directory.CreateDirectory(dir);
-            return dir;
-        }
+        this.dbFactory = TestDbFactory.For(paths, "book");
+        this.log = log;
     }
 
     public List<Book> ListBooks()
     {
-        if (!Directory.Exists(BookDir)) return [];
-        return Directory.GetFiles(BookDir, "*.json")
-            .Select(LoadFromFile)
-            .Where(b => b != null)
-            .OrderByDescending(b => b!.Modified)
-            .ToList()!;
+        using var db = dbFactory.CreateDbContext();
+        var jsons = db.Records
+            .AsNoTracking()
+            .Where(r => r.Entity!.EntityType == "book" && r.Entity.IsActive)
+            .OrderByDescending(r => r.UpdatedAt)
+            .Select(r => r.Json)
+            .ToList();
+        var list = new List<Book>(jsons.Count);
+        foreach (var j in jsons)
+        {
+            try
+            {
+                var b = JsonSerializer.Deserialize<Book>(j, JsonOpts);
+                if (b != null) list.Add(b);
+            }
+            catch (Exception ex) { log.LogWarning(ex, "Failed to deserialize a book record"); }
+        }
+        return list;
     }
 
     public Book? LoadBook(string id)
     {
-        var path = Path.Combine(BookDir, $"{id}.json");
-        return LoadFromFile(path);
+        if (string.IsNullOrEmpty(id)) return null;
+        var guid = ParseGuid(id);
+        using var db = dbFactory.CreateDbContext();
+        var json = db.Records
+            .AsNoTracking()
+            .Where(r => r.EntityId == guid)
+            .Select(r => r.Json)
+            .FirstOrDefault();
+        if (string.IsNullOrEmpty(json)) return null;
+        try { return JsonSerializer.Deserialize<Book>(json, JsonOpts); }
+        catch (Exception ex) { log.LogWarning(ex, "Failed to deserialize Book {Id}", id); return null; }
     }
 
     public void SaveBook(Book book)
     {
+        if (string.IsNullOrEmpty(book.Id)) book.Id = Guid.CreateVersion7().ToString("N");
+        var id = ParseGuid(book.Id);
         book.Modified = DateTime.UtcNow;
-        Directory.CreateDirectory(BookDir);
-        var path = Path.Combine(BookDir, $"{book.Id}.json");
-        log.LogDebug("Saving book {Id} to {Path}", book.Id, path);
-        File.WriteAllText(path, JsonSerializer.Serialize(book, JsonOpts));
+
+        using var db = dbFactory.CreateDbContext();
+
+        var entity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (entity == null)
+        {
+            entity = new EntityRow
+            {
+                Id          = id,
+                EntityType  = "book",
+                Name        = book.Title,
+                Slug        = WorldGraphService.Slugify(book.Title),
+                Status      = string.IsNullOrEmpty(book.Status) ? "canon" : book.Status,
+                Description = book.Premise,
+                CreatedAt   = book.Created == default ? DateTime.UtcNow : book.Created,
+                ModifiedAt  = DateTime.UtcNow,
+                IsActive    = true,
+            };
+            db.Entities.Add(entity);
+        }
+        else
+        {
+            entity.Name        = book.Title;
+            entity.Slug        = WorldGraphService.Slugify(book.Title);
+            entity.Description = book.Premise;
+            entity.ModifiedAt  = DateTime.UtcNow;
+            entity.IsActive    = true;
+            entity.ArchivedAt  = null;
+        }
+
+        var sub = db.Books.FirstOrDefault(b => b.Id == id);
+        if (sub == null)
+        {
+            sub = new BookEntity { Id = id };
+            db.Books.Add(sub);
+        }
+        sub.Title             = book.Title;
+        sub.Slug              = WorldGraphService.Slugify(book.Title);
+        sub.SeriesId          = string.IsNullOrEmpty(book.SeriesId) ? null : ParseGuid(book.SeriesId);
+        sub.Tagline           = book.Tagline ?? "";
+        sub.Premise           = book.Premise ?? "";
+        sub.ArcTarget         = book.ArcTarget ?? "";
+        sub.ModifiedAt        = DateTime.UtcNow;
+
+        // Replace bridge contents (BookProtagonists / BookChapterOrder) — no JSON columns.
+        db.BookProtagonists.RemoveRange(db.BookProtagonists.Where(r => r.BookId == id));
+        db.BookChapterOrder.RemoveRange(db.BookChapterOrder.Where(r => r.BookId == id));
+        for (int i = 0; i < book.Protagonists.Count; i++)
+        {
+            var alias = book.Protagonists[i] ?? "";
+            db.BookProtagonists.Add(new BookProtagonist
+            {
+                BookId = id, Position = i, Alias = alias,
+                CharacterId = ResolveCharacterIdByName(db, alias),
+            });
+        }
+        for (int i = 0; i < book.ChapterIds.Count; i++)
+        {
+            var raw = book.ChapterIds[i];
+            if (string.IsNullOrEmpty(raw)) continue;
+            var chId = ParseGuid(raw);
+            if (db.Chapters.Any(c => c.Id == chId))
+                db.BookChapterOrder.Add(new BookChapterOrder { BookId = id, Position = i, ChapterId = chId });
+        }
+
+        var rec = db.Records.FirstOrDefault(r => r.EntityId == id);
+        var json = JsonSerializer.Serialize(book, JsonOpts);
+        if (rec == null) db.Records.Add(new RecordRow { EntityId = id, Json = json, UpdatedAt = DateTime.UtcNow });
+        else { rec.Json = json; rec.UpdatedAt = DateTime.UtcNow; }
+
+        db.SaveChanges();
     }
 
     public void ArchiveBook(string id)
     {
-        var path = Path.Combine(BookDir, $"{id}.json");
-        if (!File.Exists(path)) return;
-
-        // Archive to a timestamped path on collision so a prior archive isn't lost.
-        var archivePath = Path.Combine(ArchiveBookDir, $"{id}.json");
-        if (File.Exists(archivePath))
-            archivePath = Path.Combine(ArchiveBookDir, $"{id}.{DateTime.UtcNow:yyyyMMddHHmmss}.json");
-        File.Move(path, archivePath);
+        if (string.IsNullOrEmpty(id)) return;
+        var guid = ParseGuid(id);
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.FirstOrDefault(e => e.Id == guid);
+        if (entity == null) return;
+        entity.IsActive   = false;
+        entity.Status     = "archived";
+        entity.ArchivedAt = DateTime.UtcNow;
+        entity.ModifiedAt = DateTime.UtcNow;
+        db.SaveChanges();
     }
 
-    private static Book? LoadFromFile(string path)
+    private static Guid ParseGuid(string s)
     {
-        if (!File.Exists(path)) return null;
-        try
-        {
-            var json = File.ReadAllText(path);
-            return JsonSerializer.Deserialize<Book>(json);
-        }
-        catch (Exception ex) { Serilog.Log.Warning(ex, "Failed to load book from {Path}", path); return null; }
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private static Guid? ResolveCharacterIdByName(StreetSamuraiDbContext db, string name)
+    {
+        if (string.IsNullOrWhiteSpace(name)) return null;
+        var slug = WorldGraphService.Slugify(name);
+        return db.Entities
+            .Where(e => e.EntityType == "character" && e.IsActive
+                && (e.Name == name || e.Slug == slug))
+            .Select(e => (Guid?)e.Id)
+            .FirstOrDefault();
     }
 }

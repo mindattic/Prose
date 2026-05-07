@@ -1,14 +1,18 @@
 using System.Collections.Concurrent;
 using System.Text.Json;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Interfaces;
+using StreetSamurai.Core.Models;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Autonomous quality monitor. Subscribes to <see cref="EmbeddingIndexService.FileReindexed"/>
-/// and, for each chapter file change, runs scoped contradiction + cliché checks
-/// against the live corpus via <see cref="LocalRagService"/>. Findings land in
-/// <see cref="FindingsService"/> for user triage at /findings.
+/// Autonomous quality monitor. Subscribes to <see cref="IChapterRepository.OnChapterSaved"/>
+/// (primary, post-SQL-cutover) and <see cref="EmbeddingIndexService.FileReindexed"/>
+/// (legacy, for `ss --findings scan &lt;path&gt;`). For each chapter save it runs
+/// scoped contradiction + cliché checks against the live corpus via
+/// <see cref="LocalRagService"/>. Findings land in <see cref="FindingsService"/>
+/// for user triage at /findings.
 ///
 /// Cost: zero — local Qwen via Ollama. Throughput cap: <see cref="MaxConcurrent"/>
 /// to keep the GPU from saturating during burst saves.
@@ -31,6 +35,7 @@ public class ContinuousQualityService
         EmbeddingIndexService index,
         LocalRagService rag,
         FindingsService findings,
+        IChapterRepository chapters,
         ILogger<ContinuousQualityService> log)
     {
         this.index    = index;
@@ -38,7 +43,31 @@ public class ContinuousQualityService
         this.findings = findings;
         this.log      = log;
 
+        // Primary trigger — fires whenever the EF chapter repo commits a save.
+        chapters.OnChapterSaved += OnChapterSaved;
+        // Legacy trigger — kept so `ss --findings scan <path>` and any
+        // ad-hoc filesystem rescans still hit the analyzer.
         index.FileReindexed += OnFileReindexed;
+    }
+
+    private void OnChapterSaved(Chapter chapter)
+    {
+        if (!Enabled) return;
+        if (chapter == null || string.IsNullOrEmpty(chapter.Id)) return;
+        var key = "chapter:" + chapter.Id;
+        if (!inFlight.TryAdd(key, 0)) return;
+
+        _ = Task.Run(async () =>
+        {
+            try
+            {
+                await gate.WaitAsync();
+                try { await AnalyzeChapterAsync(chapter); }
+                finally { gate.Release(); }
+            }
+            catch (Exception ex) { log.LogWarning(ex, "Quality analysis failed for chapter {Id}", chapter.Id); }
+            finally { inFlight.TryRemove(key, out _); }
+        });
     }
 
     private void OnFileReindexed(string path)
@@ -65,6 +94,22 @@ public class ContinuousQualityService
                          StringComparison.OrdinalIgnoreCase)
            && Path.GetFileName(path).Equals("chapter.json", StringComparison.OrdinalIgnoreCase);
 
+    /// <summary>
+    /// Scan a chapter loaded from SQL. Used by the OnChapterSaved hook and
+    /// by callers that already hold a Chapter (avoids a redundant DB read).
+    /// </summary>
+    public async Task AnalyzeChapterAsync(Chapter chapter, CancellationToken ct = default)
+    {
+        log.LogInformation("Quality scan: chapter {Id} '{Title}'", chapter.Id, chapter.Title);
+        // Synthetic file_path so existing FindingsService rows stay queryable
+        // (column is indexed on file_path; "chapter:<id>" is a stable key).
+        var pseudoPath = "chapter:" + chapter.Id;
+        var text = chapter.PlainText;
+        await Task.WhenAll(
+            ScanContradictionsTextAsync(pseudoPath, chapter.Id, text, ct),
+            ScanClichesTextAsync(pseudoPath, chapter.Id, text, ct));
+    }
+
     public async Task AnalyzeFileAsync(string filePath, CancellationToken ct = default)
     {
         log.LogInformation("Quality scan: {File}", filePath);
@@ -80,6 +125,12 @@ public class ContinuousQualityService
         var chapterText = SafeRead(filePath);
         if (string.IsNullOrWhiteSpace(chapterText)) return;
         var chapterId = TryGetChapterId(chapterText);
+        await ScanContradictionsTextAsync(filePath, chapterId, chapterText, ct);
+    }
+
+    private async Task ScanContradictionsTextAsync(string filePath, string? chapterId, string chapterText, CancellationToken ct)
+    {
+        if (string.IsNullOrWhiteSpace(chapterText)) return;
 
         var system =
             "You are a canon-consistency auditor for the StreetSamurai world. The user shows " +
@@ -116,6 +167,12 @@ public class ContinuousQualityService
         var chapterText = SafeRead(filePath);
         if (string.IsNullOrWhiteSpace(chapterText)) return;
         var chapterId = TryGetChapterId(chapterText);
+        await ScanClichesTextAsync(filePath, chapterId, chapterText, ct);
+    }
+
+    private async Task ScanClichesTextAsync(string filePath, string? chapterId, string chapterText, CancellationToken ct)
+    {
+        if (string.IsNullOrWhiteSpace(chapterText)) return;
 
         var system =
             "You are a prose quality reviewer for the StreetSamurai world — a precise, " +

@@ -14,6 +14,15 @@ namespace StreetSamurai.Mcp;
 // non-empty (falling back to Name) — the matching is case-insensitive on
 // whichever the repo's name selector returned.
 
+/// <summary>
+/// Tool group for the production-canon repos: weapons, ammo, equipment,
+/// technology, cyberware, apparel, pharmaceuticals, automata, synthetics,
+/// archetypes, materials, transportation, consumer goods, quotes, worldbuilding
+/// docs, genemods, lab specimens, psionics, subsidiaries. All read-only — list
+/// tools return slim projections, get tools return the full record. Equipment /
+/// Cyberware / Technology key on ProductName when set, falling back to Name
+/// (case-insensitive).
+/// </summary>
 [McpServerToolType]
 public class EncyclopediaTools
 {
@@ -71,6 +80,7 @@ public class EncyclopediaTools
         this.subsidiaries = subsidiaries;
     }
 
+    /// <summary>List every weapon in canon. Returns name + category + manufacturer. Use this to find a weapon for an action scene.</summary>
     [McpServerTool, Description("List every weapon in canon. Returns name + category + manufacturer. Use this to find a weapon for an action scene.")]
     public string ListWeapons()
     {
@@ -81,6 +91,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a weapon's full record by name: category, manufacturer, ammunition type, lethality, mechanics, sensory detail, story hooks, image prompts.</summary>
     [McpServerTool, Description("Load a weapon's full record by name: category, manufacturer, ammunition_type, lethality, mechanics, sensory detail, story_hooks, image prompts.")]
     public string GetWeapon([Description("Weapon name.")] string name)
     {
@@ -89,6 +100,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(w, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every ammunition variant in canon (calibers, specialty rounds, energy cells).</summary>
     [McpServerTool, Description("List every ammunition variant in canon (calibers, specialty rounds, energy cells).")]
     public string ListAmmunition()
     {
@@ -99,6 +111,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load an ammunition record by name.</summary>
     [McpServerTool, Description("Load an ammunition record.")]
     public string GetAmmunition([Description("Ammunition name.")] string name)
     {
@@ -107,6 +120,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(a, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every equipment item in canon: gear, tools, devices, augmentation accessories.</summary>
     [McpServerTool, Description("List every equipment item in canon: gear, tools, devices, augmentation accessories.")]
     public string ListEquipment()
     {
@@ -117,6 +131,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load an equipment record. Match is by ProductName when set, else Name (case-insensitive).</summary>
     [McpServerTool, Description("Load an equipment record. Match is by ProductName when set, else Name (case-insensitive).")]
     public string GetEquipment([Description("Equipment ProductName or Name.")] string name)
     {
@@ -125,6 +140,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(e, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every technology entry: software, protocols, networks, systems.</summary>
     [McpServerTool, Description("List every technology entry: software, protocols, networks, systems.")]
     public string ListTechnology()
     {
@@ -135,6 +151,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a technology record. Match is by ProductName when set, else Name.</summary>
     [McpServerTool, Description("Load a technology record. Match is by ProductName when set, else Name.")]
     public string GetTechnology([Description("Technology ProductName or Name.")] string name)
     {
@@ -143,6 +160,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(t, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every cyberware product: implants, neural augmentations, prosthetic limbs.</summary>
     [McpServerTool, Description("List every cyberware product: implants, neural augmentations, prosthetic limbs.")]
     public string ListCyberware()
     {
@@ -153,6 +171,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a cyberware record: install procedure, side effects, sensory experience, dependency profile.</summary>
     [McpServerTool, Description("Load a cyberware record: install procedure, side effects, sensory experience, dependency profile.")]
     public string GetCyberware([Description("Cyberware ProductName or Name.")] string name)
     {
@@ -161,6 +180,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(c, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every apparel item in canon: clothing, armor, accessories.</summary>
     [McpServerTool, Description("List every apparel item in canon: clothing, armor, accessories.")]
     public string ListApparel()
     {
@@ -171,6 +191,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load an apparel record by name.</summary>
     [McpServerTool, Description("Load an apparel record.")]
     public string GetApparel([Description("Apparel name.")] string name)
     {
@@ -179,6 +200,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(a, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every pharmaceutical: drugs, stims, pain modulators, neuro-pharma.</summary>
     [McpServerTool, Description("List every pharmaceutical: drugs, stims, pain modulators, neuro-pharma.")]
     public string ListPharmaceuticals()
     {
@@ -189,6 +211,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a pharmaceutical record: effects, dosage, side effects, dependency profile.</summary>
     [McpServerTool, Description("Load a pharmaceutical record: effects, dosage, side effects, dependency profile.")]
     public string GetPharmaceutical([Description("Pharmaceutical name.")] string name)
     {
@@ -197,6 +220,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(p, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every automaton in canon: drones, security bots, Iowan Behemoths, agricultural machines.</summary>
     [McpServerTool, Description("List every automaton in canon: drones, security bots, Iowan Behemoths, agricultural machines.")]
     public string ListAutomata()
     {
@@ -207,6 +231,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load an automaton record. Behemoths and other industrial automata are not synthetic life — they are machines.</summary>
     [McpServerTool, Description("Load an automaton record. Behemoths and other industrial automata: not synthetic life — these are machines.")]
     public string GetAutomaton([Description("Automaton name.")] string name)
     {
@@ -215,6 +240,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(a, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every synthetic life entry: Emergent Life Forms (ELFs), constructs, distributed AIs treated as persons.</summary>
     [McpServerTool, Description("List every synthetic life entry: Emergent Life Forms (ELFs), constructs, distributed AIs treated as persons.")]
     public string ListSynthetics()
     {
@@ -225,6 +251,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a synthetic life record by name.</summary>
     [McpServerTool, Description("Load a synthetic life record.")]
     public string GetSynthetic([Description("Synthetic name.")] string name)
     {
@@ -233,6 +260,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(s, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every archetype: occupational/social roles in the world (street samurai, fixer, runner, gleaner, etc).</summary>
     [McpServerTool, Description("List every archetype: occupational/social roles in the world (street samurai, fixer, runner, gleaner, etc).")]
     public string ListArchetypes()
     {
@@ -243,6 +271,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load an archetype record: typical behavior, knowledge, equipment, social position.</summary>
     [McpServerTool, Description("Load an archetype record: typical behavior, knowledge, equipment, social position.")]
     public string GetArchetype([Description("Archetype name.")] string name)
     {
@@ -251,6 +280,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(a, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every material: alloys, composites, fabrics, biomaterials. Use when describing physical objects with specificity.</summary>
     [McpServerTool, Description("List every material: alloys, composites, fabrics, biomaterials. Use this when describing physical objects with specificity.")]
     public string ListMaterials()
     {
@@ -261,6 +291,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a material record: properties, applications, sensory qualities.</summary>
     [McpServerTool, Description("Load a material record: properties, applications, sensory qualities.")]
     public string GetMaterial([Description("Material name.")] string name)
     {
@@ -269,6 +300,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(m, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every transportation entry: vehicles, transit systems, The Pulse stations, individual transports.</summary>
     [McpServerTool, Description("List every transportation entry: vehicles, transit systems, The Pulse stations, individual transports.")]
     public string ListTransportation()
     {
@@ -279,6 +311,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a transportation record by name.</summary>
     [McpServerTool, Description("Load a transportation record.")]
     public string GetTransportation([Description("Transportation name.")] string name)
     {
@@ -287,6 +320,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(t, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every consumer good: food, drinks, household items, branded products.</summary>
     [McpServerTool, Description("List every consumer good: food, drinks, household items, branded products.")]
     public string ListConsumerGoods()
     {
@@ -297,6 +331,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a consumer good record by name.</summary>
     [McpServerTool, Description("Load a consumer good record.")]
     public string GetConsumerGood([Description("Consumer good name.")] string name)
     {
@@ -305,6 +340,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(c, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every quote: in-world sayings, graffiti, advertising copy, attributed quotes. Useful for chapter epigraphs and ambient flavor. Optional tag filter.</summary>
     [McpServerTool, Description("List every quote: in-world sayings, graffiti, advertising copy, attributed quotes. Useful for chapter epigraphs and ambient flavor.")]
     public string ListQuotes(
         [Description("Optional filter: only quotes with a tag matching this value. Empty for all.")] string tag = "")
@@ -319,6 +355,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every worldbuilding document by file name + title + category. Use get_document to load the body.</summary>
     [McpServerTool, Description("List every worldbuilding document by file name + title + category. Use get_document to load the body.")]
     public string ListDocuments()
     {
@@ -329,6 +366,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a worldbuilding document by its file_name (the filename-derived identifier). Returns the full prose body.</summary>
     [McpServerTool, Description("Load a worldbuilding document by its file_name (the filename-derived identifier). Returns the full prose body.")]
     public string GetDocument([Description("Document file_name (e.g. 'corponations_overview' or as listed by list_documents).")] string fileName)
     {
@@ -337,6 +375,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(d, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every gene modification: somatic edits, lineage modifications, body-spec edits.</summary>
     [McpServerTool, Description("List every gene modification: somatic edits, lineage modifications, body-spec edits.")]
     public string ListGenemods()
     {
@@ -345,6 +384,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a gene modification record by name.</summary>
     [McpServerTool, Description("Load a gene modification record.")]
     public string GetGenemod([Description("Genemod name.")] string name)
     {
@@ -353,6 +393,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(g, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every lab specimen — anomalous biological / synthetic / hybrid samples held in research facilities.</summary>
     [McpServerTool, Description("List every lab specimen — anomalous biological / synthetic / hybrid samples held in research facilities.")]
     public string ListLabSpecimens()
     {
@@ -361,6 +402,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a lab specimen record by name.</summary>
     [McpServerTool, Description("Load a lab specimen record.")]
     public string GetLabSpecimen([Description("Specimen name.")] string name)
     {
@@ -369,6 +411,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(s, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every psionic phenomenon recorded in canon.</summary>
     [McpServerTool, Description("List every psionic phenomenon recorded in canon.")]
     public string ListPsionics()
     {
@@ -377,6 +420,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a psionic record by name.</summary>
     [McpServerTool, Description("Load a psionic record.")]
     public string GetPsionic([Description("Psionic name.")] string name)
     {
@@ -385,6 +429,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(p, CanonTools.JsonOpts);
     }
 
+    /// <summary>List every subsidiary — child/holding companies of larger corponations.</summary>
     [McpServerTool, Description("List every subsidiary — child/holding companies of larger corponations.")]
     public string ListSubsidiaries()
     {
@@ -393,6 +438,7 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
+    /// <summary>Load a subsidiary record by name.</summary>
     [McpServerTool, Description("Load a subsidiary record.")]
     public string GetSubsidiary([Description("Subsidiary name.")] string name)
     {
@@ -402,6 +448,11 @@ public class EncyclopediaTools
     }
 }
 
+/// <summary>
+/// Tool group for the per-project authoring "bibles" — Tone, Story, and the
+/// active Character Profile. These are the reference blocks injected into
+/// prose-generation prompts to lock voice, structure, and protagonist anchors.
+/// </summary>
 [McpServerToolType]
 public class BibleTools
 {
@@ -416,14 +467,17 @@ public class BibleTools
         this.profile = profile;
     }
 
+    /// <summary>Load the Tone Bible — voice, register, sensory palette, do/don't list for prose. Inject into the system prompt when drafting prose.</summary>
     [McpServerTool, Description("Load the Tone Bible — voice, register, sensory palette, what to do and what not to do for prose. Inject this into the system prompt when drafting prose.")]
     public string GetToneBible()
         => JsonSerializer.Serialize(tone.Get(), CanonTools.JsonOpts);
 
+    /// <summary>Load the Story Bible — structural rules for narrative shape: act structure, beat anatomy, motif planting, dialogue cadence.</summary>
     [McpServerTool, Description("Load the Story Bible — structural rules for narrative shape: act structure, beat anatomy, motif planting, dialogue cadence.")]
     public string GetStoryBible()
         => JsonSerializer.Serialize(storyBible.Get(), CanonTools.JsonOpts);
 
+    /// <summary>Load the Character Profile — the protagonist's core contradiction, signature behavior, voice anchors. Often Kyle's profile in this project.</summary>
     [McpServerTool, Description("Load the Character Profile — the protagonist's core contradiction, signature behavior, voice anchors. Often Kyle's profile in this project.")]
     public string GetCharacterProfile()
         => JsonSerializer.Serialize(profile.Get(), CanonTools.JsonOpts);

@@ -85,6 +85,57 @@ if (args.Contains("--ask"))
     return;
 }
 
+// CLI mode: SQL Server migration — apply EF migrations and import JSON entities.
+//   ss --migrate-sql --schema           apply EF migrations
+//   ss --migrate-sql --import people    import character JSON files
+//   ss --migrate-sql --all              schema + import all supported types
+if (args.Contains("--migrate-sql"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await MigrateSqlCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: per-table schema operations (snapshot + safe column-reorder rebuild).
+//   ss --schema snapshot --table NAME [--out path.sql]
+//   ss --schema rebuild  --table NAME --order "col1,col2,col3,…"
+if (args.Contains("--schema"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SchemaCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: dump the entire StreetSamurai DB to a re-runnable .sql script.
+//   ss --sql-export --schema             schema-only DDL
+//   ss --sql-export --data               schema + INSERT data
+//   ss --sql-export --schema --out path  override output path
+if (args.Contains("--sql-export"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SqlExportCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: dossier-driven story repair — walks every chapter, augments character
+// records with timeline entries and (optionally) LLM-extracted continuity claims.
+//   ss --repair                # cheap timeline-only pass
+//   ss --repair --continuity   # also run continuity extraction (LLM-heavy)
+if (args.Contains("--repair"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RepairCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: findings inbox — list / show / apply / dismiss / scan.
 if (args.Contains("--findings"))
 {
@@ -200,11 +251,12 @@ var app = builder.Build();
 // subscribes to its FileReindexed event for autonomous contradiction/cliché scans.
 _ = app.Services.GetRequiredService<StreetSamurai.Core.Services.EmbeddingIndexService>();
 _ = app.Services.GetRequiredService<StreetSamurai.Core.Services.ContinuousQualityService>();
+// Eager-instantiate the BeatStateExtractor so its OnChapterSaved subscription
+// is live before any chapter save can happen.
+_ = app.Services.GetRequiredService<StreetSamurai.Core.Services.BeatStateExtractor>();
 
-// Spin up Ollama in the background at boot so /ask is fast on first visit.
-// Fire-and-forget — fails silently on hosts without Ollama installed (Azure).
-var ollamaProc = app.Services.GetRequiredService<StreetSamurai.Core.Services.OllamaProcessManager>();
-_ = Task.Run(() => ollamaProc.EnsureRunningAsync());
+// Ollama is no longer auto-started at boot — it was freezing the host on startup.
+// EnsureRunningAsync is now invoked lazily on first /ask request.
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

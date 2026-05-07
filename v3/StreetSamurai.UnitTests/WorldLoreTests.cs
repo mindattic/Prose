@@ -294,6 +294,7 @@ public class WorldLoreTests
     private XrefService xrefSvc = null!;
     private CharacterRepository xrefChars = null!;
     private FactionRepository xrefFactions = null!;
+    private SettingsService xrefSettings = null!;
 
     [OneTimeSetUp]
     public void SetUpXref()
@@ -311,7 +312,7 @@ public class WorldLoreTests
         var paths = new TestPathProviderWithRoot(xrefTempDir);
         xrefChars = new(paths);
         xrefFactions = new(paths);
-        var xrefSettings = new SettingsService(xrefTempDir);
+        xrefSettings = new SettingsService(xrefTempDir);
         xrefSettings.EnablePlainTextNer = true;
         xrefSvc = new XrefService(
             xrefChars, new(paths), new(paths), xrefFactions, new(paths), new(paths),
@@ -325,6 +326,7 @@ public class WorldLoreTests
     [OneTimeTearDown]
     public void TearDownXref()
     {
+        xrefSettings?.Dispose();
         if (Directory.Exists(xrefTempDir)) Directory.Delete(xrefTempDir, recursive: true);
     }
 

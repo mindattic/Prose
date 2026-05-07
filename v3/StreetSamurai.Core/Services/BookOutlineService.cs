@@ -20,56 +20,50 @@ public class BookOutlineService
 {
     private readonly IBookRepository books;
     private readonly IChapterRepository chapters;
-    private readonly IPathProvider paths;
+    private readonly SettingsKvStore kv;
     private readonly LLMVotingService llmVoting;
     private readonly DatabaseService db;
     private readonly ILogger<BookOutlineService> log;
 
-    private static readonly JsonSerializerOptions JsonOpts = new()
-    {
-        WriteIndented = true,
-        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-    };
-
     public BookOutlineService(
         IBookRepository books, IChapterRepository chapters,
-        IPathProvider paths,
+        SettingsKvStore kv,
         LLMVotingService llmVoting, DatabaseService db,
         ILogger<BookOutlineService> log)
     {
         this.books = books;
         this.chapters = chapters;
-        this.paths = paths;
+        this.kv = kv;
         this.llmVoting = llmVoting;
         this.db = db;
         this.log = log;
     }
 
-    private string Path(string bookId) =>
-        System.IO.Path.Combine(paths.BooksDir, $"{bookId}.outline.json");
+    /// <summary>Test-fixture ctor — wraps a SQLite-in-memory factory so unit tests don't need LocalDB.</summary>
+    public BookOutlineService(
+        IBookRepository books, IChapterRepository chapters,
+        IPathProvider paths,
+        LLMVotingService llmVoting, DatabaseService db,
+        ILogger<BookOutlineService> log)
+        : this(books, chapters,
+               new SettingsKvStore(StreetSamurai.Core.Data.TestDbFactory.For(paths, "settings")),
+               llmVoting, db, log) { }
+
+    /// <summary>Settings key for a per-book outline document.</summary>
+    private static string Key(string bookId) => $"book_outline:{bookId}";
 
     public BookOutline Load(string bookId)
     {
-        var p = Path(bookId);
-        if (!File.Exists(p))
-        {
-            // Synthesize a fresh outline from the book + chapter files.
-            return BuildFromCanon(bookId);
-        }
-        try
-        {
-            var loaded = JsonSerializer.Deserialize<BookOutline>(File.ReadAllText(p))
-                         ?? new BookOutline { BookId = bookId };
-            return SyncWithBook(loaded);
-        }
-        catch (Exception ex) { log.LogWarning(ex, "Failed to load book outline for {BookId}", bookId); return new BookOutline { BookId = bookId }; }
+        var loaded = kv.Get<BookOutline>(Key(bookId));
+        if (loaded == null) return BuildFromCanon(bookId);
+        loaded.BookId = bookId;
+        return SyncWithBook(loaded);
     }
 
     public void Save(BookOutline outline)
     {
         outline.Modified = DateTime.UtcNow;
-        Directory.CreateDirectory(paths.BooksDir);
-        File.WriteAllText(Path(outline.BookId), JsonSerializer.Serialize(outline, JsonOpts));
+        kv.Set(Key(outline.BookId), outline);
     }
 
     /// <summary>

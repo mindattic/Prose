@@ -48,15 +48,21 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class ConsequenceEngine
 {
-    private readonly IPathProvider paths;
+    private const string SettingsKey = "world_consequences";
+
+    private readonly SettingsKvStore kv;
     private readonly ILogger<ConsequenceEngine> log;
     private List<WorldConsequence>? consequences;
 
-    public ConsequenceEngine(IPathProvider paths, ILogger<ConsequenceEngine> log)
+    public ConsequenceEngine(SettingsKvStore kv, ILogger<ConsequenceEngine> log)
     {
-        this.paths = paths;
+        this.kv = kv;
         this.log = log;
     }
+
+    /// <summary>Test-fixture ctor — wraps a SQLite-in-memory factory.</summary>
+    public ConsequenceEngine(IPathProvider paths, ILogger<ConsequenceEngine> log)
+        : this(new SettingsKvStore(StreetSamurai.Core.Data.TestDbFactory.For(paths, "settings")), log) { }
 
     /// <summary>Record a consequence from a completed story.</summary>
     public void RecordConsequence(WorldConsequence consequence)
@@ -191,24 +197,12 @@ public class ConsequenceEngine
     private void LoadIfNeeded()
     {
         if (consequences != null) return;
-        var path = GetPath();
-        if (File.Exists(path))
-        {
-            try { consequences = JsonSerializer.Deserialize<List<WorldConsequence>>(File.ReadAllText(path)); }
-            catch (Exception ex) { log.LogError(ex, "Failed to load consequences from {Path}", path); }
-        }
+        try { consequences = kv.Get<List<WorldConsequence>>(SettingsKey); }
+        catch (Exception ex) { log.LogError(ex, "Failed to load consequences from Settings"); }
         consequences ??= [];
     }
 
-    private void Save()
-    {
-        var path = GetPath();
-        var dir = Path.GetDirectoryName(path);
-        if (dir != null) Directory.CreateDirectory(dir);
-        File.WriteAllText(path, JsonSerializer.Serialize(consequences, JsonDefaults.Indented));
-    }
-
-    private string GetPath() => Path.Combine(paths.EngineDataDir, "consequences.json");
+    private void Save() => kv.Set(SettingsKey, consequences ?? []);
 }
 
 public class WorldConsequence

@@ -7,6 +7,10 @@ sessions/*/facet_responses/
 # Engine data (rebuilt from canon, not tracked)
 engine_data/
 
+# Chapter folders — SQL Server is the source of truth post-cutover (2026-05-06).
+# On-disk chapter.json files remain only as legacy seeds for `ss --migrate-sql --import books`.
+engine/data/chapters/
+
 # Canon queue working directories
 canon_queue/pending/
 canon_queue/rejected/
@@ -19,3 +23,14 @@ canon_queue/rejected/
 **/obj/
 v3/.vs/
 *.user
+
+# DB backups (1GB+ .bak files, never commit)
+backups/
+.claude/backups/
+*.bak
+
+# Cypress / Node
+node_modules/
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
