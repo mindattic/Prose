@@ -1,0 +1,132 @@
+namespace StreetSamurai.Core.Data.Entities;
+
+/// <summary>
+/// Lightweight per-type tables. Each row's <c>Id</c> is also FK to <c>Entity.Id</c>
+/// (TPT-style). Strongly-typed columns are limited to the fields the codebase
+/// actually filters on (Manufacturer, Tier, Sector, Legality, Category, etc.) —
+/// all hot for indexed reads. Everything else lands in <c>DataJson</c>, the
+/// "lift and shift" payload that lets us migrate now and normalize later as
+/// queries demand. This is the "super flexible — new fields tackable on without
+/// schema changes" path the user asked for.
+/// </summary>
+
+// ── Geographic / organizational ────────────────────────────────────────────────
+// Place and Faction moved to their own files (Place.cs / Faction.cs) and are now
+// fully relational — no DataJson column. The remaining types in this file still
+// use the DataJson "lift and shift" path until each one is decomposed in turn.
+
+// Corponation / Subsidiary / SyntheticLife / Automaton moved to dedicated files
+// (Corponation.cs / Subsidiary.cs / SyntheticLife.cs / Automaton.cs) — fully
+// relational, no DataJson column.
+
+// Gear cluster (Weapon / Equipment / Cyberware / Apparel / Ammunition /
+// Pharmaceutical / Genemod / Material / Transportation / ConsumerGood) moved
+// to Gear.cs — fully relational, no DataJson columns.
+
+// Story / canon content (Archetype / Quote / News / Contract / Document /
+// Vocabulary / LabSpecimen / Psionic / Technology / Facet / Motif /
+// Entertainment / FlyoverEntity) moved to Misc.cs — fully relational, no
+// DataJson columns. Ceramic Men live on SyntheticLives (Type == "ceramic_man").
+
+// ── Books / chapters / beats ────────────────────────────────────────────────
+
+public class Book
+{
+    public Guid Id { get; set; }
+    public string Title       { get; set; } = "";
+    public string Slug        { get; set; } = "";
+    public Guid? SeriesId     { get; set; }
+    public string Tagline     { get; set; } = "";
+    public string Premise     { get; set; } = "";
+    public string ArcTarget   { get; set; } = "";
+
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime ModifiedAt { get; set; } = DateTime.UtcNow;
+
+    public ICollection<BookProtagonist> Protagonists { get; set; } = new List<BookProtagonist>();
+    public ICollection<BookChapterOrder> ChapterOrder { get; set; } = new List<BookChapterOrder>();
+}
+
+/// <summary>Book protagonist by name + resolved Character FK. Replaces Book.ProtagonistsJson.</summary>
+public class BookProtagonist
+{
+    public long Id { get; set; }
+    public Guid BookId { get; set; }
+    public int Position { get; set; }
+    public Guid? CharacterId { get; set; }
+    public string Alias { get; set; } = "";
+    public Book? Book { get; set; }
+    public Entity? Character { get; set; }
+}
+
+/// <summary>Explicit ordering of a book's chapters. Replaces Book.ChapterIdsJson.</summary>
+public class BookChapterOrder
+{
+    public long Id { get; set; }
+    public Guid BookId { get; set; }
+    public int Position { get; set; }
+    public Guid ChapterId { get; set; }
+    public Book? Book { get; set; }
+    public Chapter? Chapter { get; set; }
+}
+
+public class Series
+{
+    public Guid Id { get; set; }
+    public string Name        { get; set; } = "";
+    public string Title       { get; set; } = "";
+    public string Slug        { get; set; } = "";
+    public string Description { get; set; } = "";
+}
+
+public class Chapter
+{
+    public Guid Id { get; set; }
+    public Guid? BookId       { get; set; }
+    public int? Number        { get; set; }
+    public string Title       { get; set; } = "";
+    public string Synopsis    { get; set; } = "";
+    public string Status      { get; set; } = "draft";
+    public string Html        { get; set; } = "";
+
+    /// <summary>23rd-century in-world date the chapter takes place on. Used as the dossier asOf cursor.</summary>
+    public DateTime? InWorldDate { get; set; }
+
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime ModifiedAt { get; set; } = DateTime.UtcNow;
+
+    public ICollection<ChapterBeat> Beats { get; set; } = new List<ChapterBeat>();
+    public ICollection<ChapterCharacter> CharactersMentioned { get; set; } = new List<ChapterCharacter>();
+}
+
+/// <summary>Character mentioned in a chapter, alias + resolved Character FK. Replaces Chapter.CharactersJson.</summary>
+public class ChapterCharacter
+{
+    public long Id { get; set; }
+    public Guid ChapterId { get; set; }
+    public int Position { get; set; }
+    public Guid? CharacterId { get; set; }
+    public string Alias { get; set; } = "";
+    public Chapter? Chapter { get; set; }
+    public Entity? Character { get; set; }
+}
+
+public class ChapterBeat
+{
+    public long Id { get; set; }
+    public Guid BeatGuid      { get; set; }
+    public Guid ChapterId     { get; set; }
+    public int Index          { get; set; }
+    public string Title       { get; set; } = "";
+    public string Synopsis    { get; set; } = "";
+    public string Text        { get; set; } = "";
+    public int Act            { get; set; }
+    public string StructureRole { get; set; } = "";
+    public string SceneType   { get; set; } = "scene";
+    public string FacetTag    { get; set; } = "";
+
+    /// <summary>23rd-century in-world date the beat takes place on (when known).</summary>
+    public DateTime? InWorldDate { get; set; }
+
+    public Chapter? Chapter   { get; set; }
+}

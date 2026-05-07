@@ -1,230 +1,420 @@
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models.Canon;
 
 namespace StreetSamurai.Core.Services;
 
+// ──────────────────────────────────────────────────────────────────────────────
+// EF-backed repositories — total conversion off JsonDirectoryRepository.
+// Public surface is unchanged (GetAll / GetById / GetByName / GetBySlug / Save /
+// Delete / Reload / Count / OnItemSaved / RepoName / GetExportEntries) so every
+// existing consumer compiles. Storage = StreetSamurai SQL Server database.
+//
+// Each Repository is a thin specialization that supplies (entityType, nameSelector)
+// to EfRepository<T>. The legacy `IPathProvider` ctor is preserved so unit-test
+// fixtures that constructed repos directly continue to compile; in production the
+// DbContext factory is injected by DI and used for real SQL persistence.
+// ──────────────────────────────────────────────────────────────────────────────
+
 /// <summary>
-/// Typed repositories — one per entity type. Each stores entities as individual
-/// JSON files in a typed directory (e.g. engine/characters/kyle.json).
-/// On first access, auto-migrates from legacy single-array files if present.
+/// Fully relational CharacterRepository. Reads materialize CharacterData from
+/// the Characters table + every child bridge (Aliases / StoryHooks /
+/// PsychologyTraits / SpeechPhrases / BehavioralRules + Maps / StatScalars +
+/// Phrases / PhysicalMarks / TerritoryZones + Reputations / BelongingsGear +
+/// Extras / BioBatteryThresholds / NeuralAbilities / Changelog / Cyberware /
+/// Knowledge + KnowledgeEntities / Conditions / Relationships / Timeline +
+/// TimelineBodyChanges) — never from Records.Json. Writes wipe child bridges
+/// and re-insert via <see cref="CharacterMapper"/>.
 /// </summary>
-
-public class CharacterRepository : JsonDirectoryRepository<CharacterData>
+public class CharacterRepository : EfRepository<CharacterData>
 {
+    public CharacterRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "character", c => c.Name) { }
     public CharacterRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "people"), c => c.Name) { AutoMigrate(paths); }
-    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "people.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
-}
+        : base(TestDbFactory.For(paths, "character"), "character", c => c.Name) { }
 
-public class CorponationRepository : JsonDirectoryRepository<CorponationData>
-{
-    public CorponationRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "corponations"), c => c.Name) { AutoMigrate(paths); }
-    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "corponations.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
-}
-
-public class DistrictRepository : JsonDirectoryRepository<DistrictData>
-{
-    public DistrictRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "places"), d => d.Name) { AutoMigrate(paths); }
-    private void AutoMigrate(IPathProvider p)
+    public override List<CharacterData> GetAll()
     {
-        var old = Path.Combine(p.EngineDataDir, "districts.json");
-        if (File.Exists(old)) MigrateFromArrayFile(old);
+        using var db = dbFactory.CreateDbContext();
+        return CharacterMapper.LoadAll(db, includeArchived: false);
+    }
+
+    public override List<CharacterData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return CharacterMapper.LoadAll(db, includeArchived: true);
+    }
+
+    public override void Save(CharacterData item)
+    {
+        var idStr = item.Id;
+        var id = ParseGuid(idStr);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        // Universal Entity row (Name / Slug / Status / IsActive). Same logic
+        // EfRepository.Save uses, kept here so the relational path doesn't
+        // depend on the JSON-blob path being correct.
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id = id,
+                EntityType = entityType,
+                Name = name,
+                Slug = ResolveCharacterSlug(db, name, id, currentSlug: null),
+                Status = "canon",
+                CreatedAt = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name = name;
+            existingEntity.Slug = ResolveCharacterSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        // Persist column + bridge state via the mapper (sync wrapper around the
+        // async API — Save is a synchronous repository contract).
+        CharacterMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+
+        // Refresh tags via the universal layer.
+        SyncTagsForEntity(db, id, item.Tags);
+
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        // Tell index services (XrefService, GlobalSearchService) the canon moved.
+        RaiseOnItemSaved(name);
+    }
+
+    private static Guid ParseGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveCharacterSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
+
+    /// <summary>
+    /// Add any tag names that aren't already attached to this entity. The
+    /// universal Tag/EntityTag tables are the source of truth — this only adds,
+    /// matching the existing import behavior (tag removal is a manual op).
+    /// </summary>
+    private static void SyncTagsForEntity(StreetSamuraiDbContext db, Guid entityId, IReadOnlyList<string>? tags)
+    {
+        if (tags == null || tags.Count == 0) return;
+        var existing = db.EntityTags
+            .Where(t => t.EntityId == entityId)
+            .Select(t => t.Tag!.Name)
+            .ToList()
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+        foreach (var tagName in tags.Distinct(StringComparer.OrdinalIgnoreCase))
+        {
+            if (string.IsNullOrWhiteSpace(tagName) || existing.Contains(tagName)) continue;
+            var tag = db.Tags.FirstOrDefault(t => t.Name == tagName);
+            if (tag == null)
+            {
+                tag = new Tag { Name = tagName };
+                db.Tags.Add(tag);
+                db.SaveChanges();
+            }
+            db.EntityTags.Add(new EntityTag { EntityId = entityId, TagId = tag.Id });
+        }
     }
 }
 
-public class FactionRepository : JsonDirectoryRepository<FactionData>
+public class CorponationRepository : EfRepository<CorponationData>
 {
+    public CorponationRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "corponation", c => c.Name) { }
+    public CorponationRepository(IPathProvider paths)
+        : base(TestDbFactory.For(paths, "corponation"), "corponation", c => c.Name) { }
+}
+
+public class DistrictRepository : EfRepository<DistrictData>
+{
+    public DistrictRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "place", d => d.Name) { }
+    public DistrictRepository(IPathProvider paths)
+        : base(TestDbFactory.For(paths, "place"), "place", d => d.Name) { }
+}
+
+public class FactionRepository : EfRepository<FactionData>
+{
+    public FactionRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "faction", f => f.Name) { }
     public FactionRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "factions"), f => f.Name) { AutoMigrate(paths); }
-    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "factions.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+        : base(TestDbFactory.For(paths, "faction"), "faction", f => f.Name) { }
 }
 
-public class FacetRepository : JsonDirectoryRepository<FacetData>
+public class FacetRepository : EfRepository<FacetData>
 {
+    public FacetRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "facet", f => f.Name) { }
     public FacetRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "facets"), f => f.Name) { AutoMigrate(paths); }
-    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "facets.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+        : base(TestDbFactory.For(paths, "facet"), "facet", f => f.Name) { }
 }
 
-public class WorldbuildingDocRepository : JsonDirectoryRepository<WorldbuildingDocument>
+public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
 {
+    public WorldbuildingDocRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "document", d => d.FileName) { }
     public WorldbuildingDocRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "documents"), d => d.FileName) { AutoMigrate(paths); }
-    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "worldbuilding_docs.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+        : base(TestDbFactory.For(paths, "document"), "document", d => d.FileName) { }
 }
 
-public class MotifRepository : JsonDirectoryRepository<MotifData>
+public class MotifRepository : EfRepository<MotifData>
 {
+    public MotifRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "motif", m => m.Name) { }
     public MotifRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "motifs"), m => m.Name) { AutoMigrate(paths); }
-    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "motifs.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+        : base(TestDbFactory.For(paths, "motif"), "motif", m => m.Name) { }
 }
 
-public class WeaponryRepository : JsonDirectoryRepository<WeaponryData>
+public class WeaponryRepository : EfRepository<WeaponryData>
 {
+    public WeaponryRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "weapon", w => w.Name) { }
     public WeaponryRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "weaponry"), w => w.Name) { AutoMigrate(paths); }
-    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "weaponry.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+        : base(TestDbFactory.For(paths, "weapon"), "weapon", w => w.Name) { }
 }
 
-public class AmmunitionRepository : JsonDirectoryRepository<AmmunitionData>
+public class AmmunitionRepository : EfRepository<AmmunitionData>
 {
+    public AmmunitionRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "ammunition", a => a.Name) { }
     public AmmunitionRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "ammunition"), a => a.Name) { AutoMigrate(paths); }
-    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "ammunition.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+        : base(TestDbFactory.For(paths, "ammunition"), "ammunition", a => a.Name) { }
 }
 
-public class EquipmentRepository : JsonDirectoryRepository<EquipmentData>
+public class EquipmentRepository : EfRepository<EquipmentData>
 {
+    public EquipmentRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "equipment", e => e.ProductName.Length > 0 ? e.ProductName : e.Name) { }
     public EquipmentRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "equipment"), e => e.ProductName.Length > 0 ? e.ProductName : e.Name) { AutoMigrate(paths); }
-    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "equipment.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+        : base(TestDbFactory.For(paths, "equipment"), "equipment", e => e.ProductName.Length > 0 ? e.ProductName : e.Name) { }
 }
 
-public class TechnologyRepository : JsonDirectoryRepository<TechnologyData>
+public class TechnologyRepository : EfRepository<TechnologyData>
 {
+    public TechnologyRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "technology", t => t.ProductName.Length > 0 ? t.ProductName : t.Name) { }
     public TechnologyRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "technology"), t => t.ProductName.Length > 0 ? t.ProductName : t.Name) { AutoMigrate(paths); }
-    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "technology.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+        : base(TestDbFactory.For(paths, "technology"), "technology", t => t.ProductName.Length > 0 ? t.ProductName : t.Name) { }
 }
 
-public class CyberwareRepository : JsonDirectoryRepository<CyberwareData>
+public class CyberwareRepository : EfRepository<CyberwareData>
 {
+    public CyberwareRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "cyberware", c => c.ProductName.Length > 0 ? c.ProductName : c.Name) { }
     public CyberwareRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "cyberware"), c => c.ProductName.Length > 0 ? c.ProductName : c.Name) { }
+        : base(TestDbFactory.For(paths, "cyberware"), "cyberware", c => c.ProductName.Length > 0 ? c.ProductName : c.Name) { }
 }
 
-public class VocabularyRepository : JsonDirectoryRepository<VocabularyData>
+public class VocabularyRepository : EfRepository<VocabularyData>
 {
+    public VocabularyRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "vocabulary", v => v.Term) { }
     public VocabularyRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "vocabulary"), v => v.Term) { }
+        : base(TestDbFactory.For(paths, "vocabulary"), "vocabulary", v => v.Term) { }
 }
 
-public class SyntheticLifeRepository : JsonDirectoryRepository<SyntheticLifeData>
+public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
 {
+    public SyntheticLifeRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "synthetic", s => s.Name) { }
     public SyntheticLifeRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "synthetics"), s => s.Name) { }
+        : base(TestDbFactory.For(paths, "synthetic"), "synthetic", s => s.Name) { }
 }
 
-public class GenemodRepository : JsonDirectoryRepository<GenemodData>
+public class GenemodRepository : EfRepository<GenemodData>
 {
+    public GenemodRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "genemod", g => g.ProductName.Length > 0 ? g.ProductName : g.Name) { }
     public GenemodRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "genemods"), g => g.ProductName.Length > 0 ? g.ProductName : g.Name) { }
+        : base(TestDbFactory.For(paths, "genemod"), "genemod", g => g.ProductName.Length > 0 ? g.ProductName : g.Name) { }
 }
 
-public class TransportationRepository : JsonDirectoryRepository<TransportationData>
+public class TransportationRepository : EfRepository<TransportationData>
 {
+    public TransportationRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "transportation", t => t.Name) { }
     public TransportationRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "transportation"), t => t.Name) { }
+        : base(TestDbFactory.For(paths, "transportation"), "transportation", t => t.Name) { }
 }
 
-public class ContractRepository : JsonDirectoryRepository<ContractData>
+public class ContractRepository : EfRepository<ContractData>
 {
+    public ContractRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "contract", c => c.Codename) { }
     public ContractRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "contracts"), c => c.Codename) { }
+        : base(TestDbFactory.For(paths, "contract"), "contract", c => c.Codename) { }
 }
 
-public class AutomatonRepository : JsonDirectoryRepository<AutomatonData>
+public class AutomatonRepository : EfRepository<AutomatonData>
 {
+    public AutomatonRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "automaton", a => a.Name) { }
     public AutomatonRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "automata"), a => a.Name) { }
+        : base(TestDbFactory.For(paths, "automaton"), "automaton", a => a.Name) { }
 }
 
-public class SubsidiaryRepository : JsonDirectoryRepository<SubsidiaryData>
+public class SubsidiaryRepository : EfRepository<SubsidiaryData>
 {
+    public SubsidiaryRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "subsidiary", s => s.Name) { }
     public SubsidiaryRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "subsidiaries"), s => s.Name) { }
+        : base(TestDbFactory.For(paths, "subsidiary"), "subsidiary", s => s.Name) { }
 }
 
-public class EntertainmentRepository : JsonDirectoryRepository<EntertainmentData>
+public class EntertainmentRepository : EfRepository<EntertainmentData>
 {
+    public EntertainmentRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "entertainment", e => e.Name) { }
     public EntertainmentRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "entertainment"), e => e.Name) { }
+        : base(TestDbFactory.For(paths, "entertainment"), "entertainment", e => e.Name) { }
 }
 
-public class ApparelRepository : JsonDirectoryRepository<ApparelData>
+public class ApparelRepository : EfRepository<ApparelData>
 {
+    public ApparelRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "apparel", a => a.Name) { }
     public ApparelRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "apparel"), a => a.Name) { }
+        : base(TestDbFactory.For(paths, "apparel"), "apparel", a => a.Name) { }
 }
 
-public class NewsRepository : JsonDirectoryRepository<NewsData>
+public class NewsRepository : EfRepository<NewsData>
 {
+    public NewsRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "news", n => n.Headline) { }
     public NewsRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "news"), n => n.Headline) { }
+        : base(TestDbFactory.For(paths, "news"), "news", n => n.Headline) { }
 }
 
-public class ArchetypeRepository : JsonDirectoryRepository<ArchetypeData>
+public class ArchetypeRepository : EfRepository<ArchetypeData>
 {
+    public ArchetypeRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "archetype", a => a.Name) { }
     public ArchetypeRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "archetypes"), a => a.Name) { }
+        : base(TestDbFactory.For(paths, "archetype"), "archetype", a => a.Name) { }
 }
 
-public class MaterialRepository : JsonDirectoryRepository<MaterialData>
+public class MaterialRepository : EfRepository<MaterialData>
 {
+    public MaterialRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "material", s => s.ProductName.Length > 0 ? s.ProductName : s.Name) { }
     public MaterialRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "materials"), s => s.ProductName.Length > 0 ? s.ProductName : s.Name) { }
+        : base(TestDbFactory.For(paths, "material"), "material", s => s.ProductName.Length > 0 ? s.ProductName : s.Name) { }
 }
 
-public class PharmaceuticalRepository : JsonDirectoryRepository<PharmaceuticalData>
+public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
 {
+    public PharmaceuticalRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "pharmaceutical", p => p.Name) { }
     public PharmaceuticalRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "pharmaceuticals"), p => p.Name) { }
+        : base(TestDbFactory.For(paths, "pharmaceutical"), "pharmaceutical", p => p.Name) { }
 }
 
-public class ConsumerGoodRepository : JsonDirectoryRepository<ConsumerGoodData>
+public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
 {
+    public ConsumerGoodRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "consumer_good", g => g.ProductName.Length > 0 ? g.ProductName : g.Name) { }
     public ConsumerGoodRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "consumer_goods"), g => g.ProductName.Length > 0 ? g.ProductName : g.Name) { }
+        : base(TestDbFactory.For(paths, "consumer_good"), "consumer_good", g => g.ProductName.Length > 0 ? g.ProductName : g.Name) { }
 }
 
-public class QuoteRepository : JsonDirectoryRepository<QuoteData>
+public class QuoteRepository : EfRepository<QuoteData>
 {
+    public QuoteRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "quote", q => q.Quote.Length > 40 ? q.Quote[..40] : q.Quote) { }
     public QuoteRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "quotes"), q => q.Quote.Length > 40 ? q.Quote[..40] : q.Quote) { }
+        : base(TestDbFactory.For(paths, "quote"), "quote", q => q.Quote.Length > 40 ? q.Quote[..40] : q.Quote) { }
 }
 
-// Singleton repositories stay file-based (they're single objects, not collections)
+// Singleton repositories — one JSON document each, persisted as a row in the
+// universal Settings table (keyed by name). Earlier these used the path-only
+// JsonSingletonRepository ctor which routed through NullFactory and silently
+// returned defaults on every Get — fixed 2026-05-06.
 public class ToneBibleRepository : JsonSingletonRepository<ToneBibleData>
 {
+    public ToneBibleRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "tone_bible") { }
     public ToneBibleRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "neo-noir_tone_bible.json")) { }
+        : base(TestDbFactory.For(paths, "tone_bible"), "tone_bible") { }
 }
 
 public class StoryBibleRepository : JsonSingletonRepository<StoryBibleData>
 {
+    public StoryBibleRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "story_bible") { }
     public StoryBibleRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "story_bible.json")) { }
+        : base(TestDbFactory.For(paths, "story_bible"), "story_bible") { }
 }
 
 public class LiteraryRulesRepository : JsonSingletonRepository<LiteraryRulesData>
 {
+    public LiteraryRulesRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "literary_rules") { }
     public LiteraryRulesRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "literary_rules.json")) { }
+        : base(TestDbFactory.For(paths, "literary_rules"), "literary_rules") { }
 }
 
 public class CharacterProfileRepository : JsonSingletonRepository<CharacterProfileData>
 {
+    public CharacterProfileRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "character_profile") { }
     public CharacterProfileRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "character_profile.json")) { }
+        : base(TestDbFactory.For(paths, "character_profile"), "character_profile") { }
 }
 
-public class LabSpecimenRepository : JsonDirectoryRepository<LabSpecimenData>
+public class LabSpecimenRepository : EfRepository<LabSpecimenData>
 {
+    public LabSpecimenRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "lab_specimen", s => s.Name) { }
     public LabSpecimenRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "lab_specimens"), s => s.Name) { }
+        : base(TestDbFactory.For(paths, "lab_specimen"), "lab_specimen", s => s.Name) { }
 }
 
-public class FlyoverEntityRepository : JsonDirectoryRepository<FlyoverEntityData>
+public class FlyoverEntityRepository : EfRepository<FlyoverEntityData>
 {
+    public FlyoverEntityRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "flyover_entity", w => w.Name) { }
     public FlyoverEntityRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "flyover_entities"), w => w.Name) { }
+        : base(TestDbFactory.For(paths, "flyover_entity"), "flyover_entity", w => w.Name) { }
 }
 
-public class PsionicRepository : JsonDirectoryRepository<PsionicData>
+public class PsionicRepository : EfRepository<PsionicData>
 {
+    public PsionicRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "psionic", p => p.Name) { }
     public PsionicRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "psionics"), p => p.Name) { }
+        : base(TestDbFactory.For(paths, "psionic"), "psionic", p => p.Name) { }
 }

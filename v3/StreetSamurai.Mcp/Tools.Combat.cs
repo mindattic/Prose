@@ -17,6 +17,16 @@ namespace StreetSamurai.Mcp;
 // caller is expected to review and stage the output (e.g. validate_canon_text
 // + analyze_writing_quality) before persisting it into a chapter.
 
+/// <summary>
+/// MCP wrapper around <see cref="CombatSceneWriter"/>. Unlike the rest of this
+/// server, this tool generates prose. The caller is expected to review and stage
+/// the output (e.g. validate_canon_text, analyze_writing_quality) before
+/// persisting it into a chapter.
+/// <para/>
+/// <c>[McpServerToolType]</c> is currently disabled: combat scenes go through
+/// hand-written prose, not the MCP draft pipeline. Uncomment to re-expose
+/// <c>draft_combat_scene</c>.
+/// </summary>
 // [McpServerToolType] — disabled: combat scenes go through hand-written prose,
 // not the MCP draft pipeline. Uncomment to re-expose draft_combat_scene.
 public class CombatTools
@@ -28,6 +38,15 @@ public class CombatTools
         this.writer = writer;
     }
 
+    /// <summary>
+    /// Generate an action sequence using the StreetSamurai combat writer. Respects
+    /// participants' canon loadouts and current injuries/stress and tracks
+    /// ammo/grenade counts across beats. Tone shapes word choice and pacing — pick
+    /// deliberately. Always pass preceding_context (last 1–3 paragraphs leading
+    /// into the fight) so the prose transitions cleanly. Returns the generated
+    /// beats plus the full stitched text. Run validate_canon_text on the result
+    /// before staging it into a chapter.
+    /// </summary>
     [McpServerTool, Description(
         "Generate an action sequence using the StreetSamurai combat writer. " +
         "Respects participants' canon loadouts, current injuries/stress, and " +

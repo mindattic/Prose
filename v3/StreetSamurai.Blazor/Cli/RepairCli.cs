@@ -1,0 +1,209 @@
+using Microsoft.Extensions.DependencyInjection;
+using StreetSamurai.Core.Services;
+
+namespace StreetSamurai.Blazor.Cli;
+
+/// <summary>
+/// CLI entry for the dossier-driven story repair pass. Walks every chapter,
+/// fills in character timelines, and (optionally) runs LLM-driven extraction.
+///
+///   ss --repair                  # cheap timeline-only pass, no LLM
+///   ss --repair --continuity     # also run continuity extraction (LLM-heavy)
+///   ss --repair --beat-facts     # also run Knowledge + Conditions extraction (LLM-heavy)
+///   ss --repair --backfill-dates # populate Chapter.InWorldDate (and beats) via LLM
+///   ss --repair --force          # re-extract even chapters that already ran
+/// </summary>
+public static class RepairCli
+{
+    public static async Task<int> RunAsync(string[] args, IServiceProvider sp)
+    {
+        var withContinuity = args.Contains("--continuity");
+        var withBeatFacts  = args.Contains("--beat-facts");
+        var withDates      = args.Contains("--backfill-dates");
+        var withMojibake   = args.Contains("--fix-mojibake");
+        var withState      = args.Contains("--extract-state");
+        var withChorusSeed = args.Contains("--seed-chorus");
+        var withLinkAmmo   = args.Contains("--link-ammunition");
+        var force          = args.Contains("--force");
+
+        var repair = sp.GetRequiredService<StoryRepairService>();
+        var ct = CancellationToken.None;
+        var failures = 0;
+
+        Console.WriteLine("=== StreetSamurai story repair ===");
+
+        // Idempotent schema bootstrap — applies any new columns/tables this
+        // build expects so subsequent EF queries don't trip on a missing
+        // column (e.g. CharacterBelongingsGear.GearEntityId, WeaponSpecs).
+        var ammoLinker = sp.GetRequiredService<StreetSamurai.Core.Services.AmmunitionLinkerService>();
+        await ammoLinker.EnsureWeaponSpecsSchemaAsync(ct);
+        await ammoLinker.EnsureGearEntityIdColumnAsync(ct);
+        var stateLedger = sp.GetRequiredService<StreetSamurai.Core.Services.WorldStateLedger>();
+        await stateLedger.EnsureSchemaAsync(ct);
+
+        var timeline = repair.RepairTimelines(ct);
+        Console.WriteLine();
+        Console.WriteLine("[timelines]");
+        Console.WriteLine($"  chapters scanned   : {timeline.ChaptersScanned}");
+        Console.WriteLine($"  characters scanned : {timeline.CharactersScanned}");
+        Console.WriteLine($"  entries added      : {timeline.TimelineEntriesAdded}");
+        Console.WriteLine($"  characters updated : {timeline.CharactersUpdated}");
+        if (timeline.Errors.Count > 0)
+        {
+            Console.WriteLine($"  errors             : {timeline.Errors.Count}");
+            foreach (var e in timeline.Errors.Take(10)) Console.WriteLine($"    - {e}");
+            failures++;
+        }
+
+        if (!withContinuity && !withBeatFacts && !withDates && !withMojibake
+            && !withState && !withChorusSeed && !withLinkAmmo)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Skipping LLM/repair phases. Add one of:");
+            Console.WriteLine("  --continuity        LLM continuity-claim extraction");
+            Console.WriteLine("  --beat-facts        knowledge + conditions extraction");
+            Console.WriteLine("  --backfill-dates    populate Chapter/Beat InWorldDate via LLM");
+            Console.WriteLine("  --fix-mojibake      reverse double-encoded UTF-8 in every NVARCHAR column");
+            Console.WriteLine("  --extract-state     emit EntityStateEvents from chapter beats");
+            Console.WriteLine("  --seed-chorus       insert canonical specs + ammo + Kyle link for Chorus");
+            Console.WriteLine("  --link-ammunition   bulk LLM pass: tie every firearm to compatible ammunition");
+            return failures > 0 ? 1 : 0;
+        }
+
+        if (withChorusSeed)
+        {
+            Console.WriteLine();
+            Console.WriteLine("[seed-chorus]");
+            var linker = sp.GetRequiredService<StreetSamurai.Core.Services.AmmunitionLinkerService>();
+            var rs = await linker.SeedChorusAsync(ct);
+            Console.WriteLine($"  ammunitions created    : {rs.AmmunitionsCreated}");
+            Console.WriteLine($"  weapon→ammo rows added : {rs.CompatibilityRowsAdded}");
+            Console.WriteLine($"  weapon specs written   : {rs.SpecsWritten}");
+            if (rs.Errors.Count > 0) { foreach (var e in rs.Errors) Console.WriteLine($"    ✘ {e}"); failures++; }
+        }
+
+        if (withLinkAmmo)
+        {
+            Console.WriteLine();
+            Console.WriteLine("[link-ammunition]");
+            var linker = sp.GetRequiredService<StreetSamurai.Core.Services.AmmunitionLinkerService>();
+            var progress = new Progress<string>(Console.WriteLine);
+            var rs = await linker.LinkAllFirearmsAsync(progress, ct);
+            Console.WriteLine();
+            Console.WriteLine($"  firearms scanned       : {rs.WeaponsScanned}");
+            Console.WriteLine($"  ammunitions created    : {rs.AmmunitionsCreated}");
+            Console.WriteLine($"  weapon→ammo rows added : {rs.CompatibilityRowsAdded}");
+            if (rs.Errors.Count > 0) { Console.WriteLine($"  errors: {rs.Errors.Count}"); foreach (var e in rs.Errors.Take(10)) Console.WriteLine($"    ✘ {e}"); failures++; }
+        }
+
+        if (withState)
+        {
+            Console.WriteLine();
+            Console.WriteLine("[extract-state]");
+            var ledger    = sp.GetRequiredService<StreetSamurai.Core.Services.WorldStateLedger>();
+            var extractor = sp.GetRequiredService<StreetSamurai.Core.Services.BeatStateExtractor>();
+            var chapters  = sp.GetRequiredService<StreetSamurai.Core.Interfaces.IChapterRepository>();
+
+            // Idempotent DDL: ensures EntityStateEvents exists on a live DB
+            // even when --rebuild hasn't been run since the feature landed.
+            await ledger.EnsureSchemaAsync(ct);
+
+            extractor.AutoOnChapterSaved = false; // we drive the loop ourselves
+            int totalEvents = 0, totalBeats = 0, totalErrors = 0;
+            var allChapters = chapters.ListChapters().OrderBy(c => c.Number ?? int.MaxValue).ToList();
+            for (int i = 0; i < allChapters.Count; i++)
+            {
+                var ch = allChapters[i];
+                Console.WriteLine($"  [{i + 1}/{allChapters.Count}] Ch{ch.Number} '{ch.Title}'");
+                var rs = await extractor.ExtractAsync(ch, ct);
+                totalBeats  += rs.BeatsScanned;
+                totalEvents += rs.EventsRecorded;
+                totalErrors += rs.Errors.Count;
+                Console.WriteLine($"    beats {rs.BeatsScanned,3}  events {rs.EventsRecorded,4}  errors {rs.Errors.Count,2}");
+            }
+            Console.WriteLine();
+            Console.WriteLine($"  beats scanned   : {totalBeats}");
+            Console.WriteLine($"  events recorded : {totalEvents}");
+            Console.WriteLine($"  errors          : {totalErrors}");
+            if (totalErrors > 0) failures++;
+        }
+
+        if (withMojibake)
+        {
+            Console.WriteLine();
+            Console.WriteLine("[fix-mojibake]");
+            var fixer = sp.GetRequiredService<StreetSamurai.Core.Services.MojibakeRepairService>();
+            var progress = new Progress<string>(Console.WriteLine);
+            var rm = await fixer.RepairAllAsync(progress, ct);
+            Console.WriteLine($"  tables scanned   : {rm.TablesScanned}");
+            Console.WriteLine($"  columns scanned  : {rm.ColumnsScanned}");
+            Console.WriteLine($"  rows scanned     : {rm.RowsScanned}");
+            Console.WriteLine($"  cells repaired   : {rm.CellsRepaired}");
+            Console.WriteLine($"  cells left alone : {rm.CellsLeftAlone}");
+            if (rm.Errors.Count > 0)
+            {
+                Console.WriteLine($"  errors           : {rm.Errors.Count}");
+                foreach (var e in rm.Errors.Take(10)) Console.WriteLine($"    - {e}");
+                failures++;
+            }
+        }
+
+        if (withDates)
+        {
+            Console.WriteLine();
+            Console.WriteLine("[backfill-dates]");
+            var backfill = sp.GetRequiredService<DateBackfillService>();
+            var progress = new Progress<string>(Console.WriteLine);
+            var dr = await backfill.RunAsync(force: force, includeBeats: true, progress: progress, ct: ct);
+            Console.WriteLine($"  chapters scanned : {dr.ChaptersScanned}");
+            Console.WriteLine($"  chapters dated   : {dr.ChaptersDated}");
+            Console.WriteLine($"  chapters skipped : {dr.ChaptersSkipped} (already had a date; use --force to override)");
+            Console.WriteLine($"  beats scanned    : {dr.BeatsScanned}");
+            Console.WriteLine($"  beats dated      : {dr.BeatsDated}");
+            if (dr.Errors.Count > 0)
+            {
+                Console.WriteLine($"  errors           : {dr.Errors.Count}");
+                foreach (var e in dr.Errors.Take(10)) Console.WriteLine($"    - {e}");
+                failures++;
+            }
+        }
+
+        if (withContinuity)
+        {
+            Console.WriteLine();
+            Console.WriteLine("[continuity]");
+            var continuity = await repair.RepairContinuityAsync(force, ct);
+            Console.WriteLine($"  chapters scanned    : {continuity.ChaptersScanned}");
+            Console.WriteLine($"  chapters extracted  : {continuity.ChaptersExtracted}");
+            Console.WriteLine($"  new claims          : {continuity.NewClaims}");
+            Console.WriteLine($"  confirmed claims    : {continuity.ConfirmedClaims}");
+            Console.WriteLine($"  contradicted claims : {continuity.ContradictedClaims}");
+            if (continuity.Errors.Count > 0)
+            {
+                Console.WriteLine($"  errors              : {continuity.Errors.Count}");
+                foreach (var e in continuity.Errors.Take(10)) Console.WriteLine($"    - {e}");
+                failures++;
+            }
+        }
+
+        if (withBeatFacts)
+        {
+            Console.WriteLine();
+            Console.WriteLine("[beat-facts (Knowledge + Conditions)]");
+            var bf = await repair.RepairBeatFactsAsync(ct);
+            Console.WriteLine($"  chapters scanned   : {bf.ChaptersScanned}");
+            Console.WriteLine($"  beats scanned      : {bf.BeatsScanned}");
+            Console.WriteLine($"  knowledge added    : {bf.KnowledgeAdded}");
+            Console.WriteLine($"  conditions added   : {bf.ConditionsAdded}");
+            Console.WriteLine($"  characters touched : {bf.TouchedCharacters.Count}");
+            if (bf.Errors.Count > 0)
+            {
+                Console.WriteLine($"  errors             : {bf.Errors.Count}");
+                foreach (var e in bf.Errors.Take(10)) Console.WriteLine($"    - {e}");
+                failures++;
+            }
+        }
+
+        return failures > 0 ? 1 : 0;
+    }
+}

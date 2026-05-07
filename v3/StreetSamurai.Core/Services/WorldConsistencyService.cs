@@ -102,14 +102,15 @@ public class WorldConsistencyService : PipelineServiceBase
         EntityConflicts = [];
         Duplicates      = [];
 
-        using var scope = scopeFactory.CreateScope();
-        var claude = scope.ServiceProvider.GetRequiredService<ClaudeService>();
-
         if (RunRuleScan)
             RunRuleScanPhase();
 
         if (RunConflictCheck)
+        {
+            using var scope = scopeFactory.CreateScope();
+            var claude = scope.ServiceProvider.GetRequiredService<ClaudeService>();
             await RunConflictCheckAsync(claude, ct);
+        }
 
         if (RunDedup)
             RunDedupPhase();
@@ -137,7 +138,8 @@ public class WorldConsistencyService : PipelineServiceBase
                     {
                         if (text.Contains(pattern))
                         {
-                            // Extract surrounding context
+                            if (IsHistoricallyExempt(pattern, text)) continue;
+
                             var idx = text.IndexOf(pattern, StringComparison.Ordinal);
                             var start = Math.Max(0, idx - 40);
                             var len = Math.Min(pattern.Length + 80, text.Length - start);
@@ -154,6 +156,18 @@ public class WorldConsistencyService : PipelineServiceBase
         }
 
         Notify("Phase 1 — Rule Scan", files.Count, files.Count, $"{RuleViolations.Count} violations");
+    }
+
+    // Meridian PD dissolved in 2208; historical references with explicit past-tense
+    // markers ("dissolved", "former", "disbanded", "dissolution") are canonical and
+    // not violations. Mirrors the rule in WorldLoreTests.LiveData_NoMeridianPDAsActiveInstitution.
+    private static bool IsHistoricallyExempt(string pattern, string lowerText)
+    {
+        if (pattern is not ("meridian pd" or "meridian police department")) return false;
+        return lowerText.Contains("dissolved")
+            || lowerText.Contains("former")
+            || lowerText.Contains("disbanded")
+            || lowerText.Contains("dissolution");
     }
 
     /// <summary>

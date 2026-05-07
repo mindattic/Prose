@@ -2,6 +2,6 @@
   "voters": ["ollama"],
   "judge": "ollama",
   "models": {
-    "ollama": "qwen3:14b"
+    "ollama": "qwen3:1.7b"
   }
 }

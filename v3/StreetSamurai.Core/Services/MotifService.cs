@@ -9,41 +9,37 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// Persists per-book motif inventories. The Director registers new motifs as chapters
 /// are produced; the BookReviewService consults the inventory to flag chapters that
-/// drop a thread or to suggest callbacks. Stored as engine/data/books/{bookId}.motifs.json.
+/// drop a thread or to suggest callbacks. Stored as Settings('book_motifs:{bookId}').
 /// </summary>
 public class MotifService
 {
-    private readonly IPathProvider paths;
+    private readonly SettingsKvStore kv;
     private readonly ILogger<MotifService> log;
 
-    private static readonly JsonSerializerOptions JsonOpts = new()
+    public MotifService(SettingsKvStore kv, ILogger<MotifService> log)
     {
-        WriteIndented = true,
-        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-    };
-
-    public MotifService(IPathProvider paths, ILogger<MotifService> log)
-    {
-        this.paths = paths;
+        this.kv = kv;
         this.log = log;
     }
 
-    private string Path(string bookId) =>
-        System.IO.Path.Combine(paths.BooksDir, $"{bookId}.motifs.json");
+    /// <summary>Test-fixture ctor — wraps a SQLite-in-memory factory.</summary>
+    public MotifService(IPathProvider paths, ILogger<MotifService> log)
+        : this(new SettingsKvStore(StreetSamurai.Core.Data.TestDbFactory.For(paths, "settings")), log) { }
+
+    private static string Key(string bookId) => $"book_motifs:{bookId}";
 
     public MotifInventory Load(string bookId)
     {
-        var p = Path(bookId);
-        if (!File.Exists(p)) return new MotifInventory { BookId = bookId };
-        try { return JsonSerializer.Deserialize<MotifInventory>(File.ReadAllText(p)) ?? new MotifInventory { BookId = bookId }; }
-        catch (Exception ex) { log.LogWarning(ex, "Failed to load motifs for {BookId}", bookId); return new MotifInventory { BookId = bookId }; }
+        var inv = kv.Get<MotifInventory>(Key(bookId));
+        if (inv == null) return new MotifInventory { BookId = bookId };
+        inv.BookId = bookId;
+        return inv;
     }
 
     public void Save(MotifInventory inv)
     {
         inv.Modified = DateTime.UtcNow;
-        Directory.CreateDirectory(paths.BooksDir);
-        File.WriteAllText(Path(inv.BookId), JsonSerializer.Serialize(inv, JsonOpts));
+        kv.Set(Key(inv.BookId), inv);
     }
 
     /// <summary>Record a new motif. Idempotent — duplicates by name (case-insensitive) are merged.</summary>

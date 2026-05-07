@@ -1,0 +1,298 @@
+@page "/timeline"
+@attribute [Authorize]
+@using Microsoft.EntityFrameworkCore
+@using StreetSamurai.Core.Data
+@using StreetSamurai.Core.Interfaces
+@using StreetSamurai.Core.Services
+@inject WorldClockService Clock
+@inject LocationContradictionService ContradictionScan
+@inject IBookRepository Books
+@inject IChapterRepository Chapters
+@inject IDbContextFactory<StreetSamuraiDbContext> Db
+@inject NavigationManager Nav
+
+<div class="container-fluid py-3">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <h4 class="mb-0"><i class="bi bi-clock-history text-info me-2"></i>Story Timeline</h4>
+            <div class="text-muted small">Where every book, chapter, and beat sits on the in-world clock.</div>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+            <span class="text-muted small">Story-time now:</span>
+            <input type="datetime-local" step="1"
+                   class="form-control form-control-sm bg-dark text-light border-secondary"
+                   style="width: 220px;"
+                   value="@FormatLocal(currentNow)"
+                   @onchange="OnNowChanged" />
+            <button class="btn btn-sm btn-outline-info" @onclick="RescanContradictions">
+                <i class="bi bi-search me-1"></i>Re-scan contradictions
+            </button>
+        </div>
+    </div>
+
+    @if (!events.Any())
+    {
+        <div class="alert alert-secondary">
+            No timeline events yet.
+            Set <code>Chapter.InWorldDate</code> or <code>ChapterBeat.InWorldDate</code> on at least one chapter
+            (or add an <code>Edge.RelationType = 'located_at'</code> with <code>StoryValidFrom</code>) to populate this view.
+        </div>
+    }
+    else
+    {
+        <div class="timeline-shell card bg-dark border-secondary mb-3">
+            <div class="card-body p-2">
+                <div class="d-flex justify-content-between align-items-center small text-muted px-2">
+                    <span>@FormatLocal(timelineMin)</span>
+                    <span>span: @SpanLabel</span>
+                    <span>@FormatLocal(timelineMax)</span>
+                </div>
+                <svg class="timeline-svg" viewBox="0 0 1000 220" preserveAspectRatio="none"
+                     @onclick="OnSvgClick">
+                    @* Track lines per type *@
+                    <line x1="0" y1="60"  x2="1000" y2="60"  stroke="#3a3a44" />
+                    <line x1="0" y1="110" x2="1000" y2="110" stroke="#3a3a44" />
+                    <line x1="0" y1="160" x2="1000" y2="160" stroke="#3a3a44" />
+                    <text x="6" y="55"  fill="#888" font-size="10">books</text>
+                    <text x="6" y="105" fill="#888" font-size="10">chapters</text>
+                    <text x="6" y="155" fill="#888" font-size="10">beats</text>
+
+                    @foreach (var ev in events)
+                    {
+                        var x = TimeToX(ev.At);
+                        var y = ev.Type == "book" ? 60 : ev.Type == "chapter" ? 110 : 160;
+                        var color = ev.Type switch
+                        {
+                            "book"    => "#7ad",
+                            "chapter" => "#ad7",
+                            _         => "#fa6",
+                        };
+                        <g class="timeline-event" style="cursor:pointer;" @onclick="() => OpenEvent(ev)" @onclick:stopPropagation="true">
+                            <circle cx="@x.ToString(System.Globalization.CultureInfo.InvariantCulture)"
+                                    cy="@y" r="5" fill="@color" stroke="#111" stroke-width="1">
+                                <title>@ev.Title — @FormatLocal(ev.At)</title>
+                            </circle>
+                        </g>
+                    }
+
+                    @* "Now" cursor — draggable *@
+                    @{ var nowX = TimeToX(currentNow); }
+                    <line x1="@nowX.ToString(System.Globalization.CultureInfo.InvariantCulture)"
+                          y1="20"
+                          x2="@nowX.ToString(System.Globalization.CultureInfo.InvariantCulture)"
+                          y2="200" stroke="#f33" stroke-width="2" stroke-dasharray="4,3" />
+                    <text x="@((nowX + 6).ToString(System.Globalization.CultureInfo.InvariantCulture))"
+                          y="18" fill="#f55" font-size="11" font-weight="bold">NOW</text>
+                </svg>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-7">
+                <div class="card bg-dark border-secondary">
+                    <div class="card-header small text-muted">Events near "now"</div>
+                    <ul class="list-group list-group-flush">
+                        @foreach (var ev in EventsNearNow)
+                        {
+                            var rel = ev.At - currentNow;
+                            var when = rel.TotalSeconds == 0
+                                ? "now"
+                                : (rel.TotalMinutes < 0 ? $"{(-rel).TotalMinutes:F0}m ago" : $"in {rel.TotalMinutes:F0}m");
+                            <li class="list-group-item bg-dark text-light border-secondary small d-flex justify-content-between"
+                                @onclick="() => OpenEvent(ev)" style="cursor:pointer;">
+                                <span>
+                                    <span class="badge @TypeBadge(ev.Type) me-2">@ev.Type</span>
+                                    @ev.Title
+                                </span>
+                                <span class="text-muted">@when · @FormatLocal(ev.At)</span>
+                            </li>
+                        }
+                        @if (!EventsNearNow.Any())
+                        {
+                            <li class="list-group-item bg-dark text-muted small">No events within ±24h of the cursor.</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card bg-dark border-secondary">
+                    <div class="card-header small text-muted d-flex justify-content-between">
+                        <span><i class="bi bi-exclamation-triangle text-warning me-1"></i>Cross-book contradictions</span>
+                        @if (contradictionScan != null)
+                        {
+                            <span>@contradictionScan.Conflicts.Count flagged</span>
+                        }
+                    </div>
+                    <div class="card-body p-2 small">
+                        @if (contradictionScan == null)
+                        {
+                            <div class="text-muted">Click "Re-scan contradictions" to run the detector.</div>
+                        }
+                        else if (contradictionScan.Conflicts.Count == 0)
+                        {
+                            <div class="text-muted">@contradictionScan.StatusNote</div>
+                        }
+                        else
+                        {
+                            @foreach (var c in contradictionScan.Conflicts.Take(20))
+                            {
+                                <div class="mb-2 pb-2 border-bottom border-secondary">
+                                    <div><strong>@c.CharacterName</strong></div>
+                                    <div class="text-muted">@c.PlaceA <span class="text-danger">→</span> @c.PlaceB in @c.Delta.TotalMinutes.ToString("F0") min</div>
+                                    <div class="text-muted small">@FormatLocal(c.AtA) → @FormatLocal(c.AtB)</div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    .timeline-svg { width: 100%; height: 220px; background: #14161c; border-radius: 4px; }
+    .timeline-event:hover circle { stroke: #fff; }
+</style>
+
+@code {
+    private record TimelineEvent(string Type, string Title, DateTime At, string Route);
+
+    private DateTime currentNow;
+    private DateTime timelineMin;
+    private DateTime timelineMax;
+    private List<TimelineEvent> events = new();
+    private LocationContradictionService.ScanResult? contradictionScan;
+
+    protected override async Task OnInitializedAsync()
+    {
+        currentNow = Clock.GetNow();
+        await LoadEventsAsync();
+    }
+
+    private async Task LoadEventsAsync()
+    {
+        await using var db = await Db.CreateDbContextAsync();
+
+        var chapterRows = await (
+            from c in db.Chapters.AsNoTracking()
+            join e in db.Entities.AsNoTracking() on c.Id equals e.Id
+            where e.IsActive && c.InWorldDate != null
+            select new { c.Id, c.Title, At = c.InWorldDate!.Value, c.BookId }).ToListAsync();
+
+        var beatRows = await (
+            from b in db.ChapterBeats.AsNoTracking()
+            where b.InWorldDate != null
+            select new { b.BeatGuid, b.ChapterId, b.Title, At = b.InWorldDate!.Value }).ToListAsync();
+
+        // Books appear as the earliest chapter date in the book — keeps every
+        // book a single point on the timeline without inventing a PublishedDate
+        // column.
+        var bookFirstDate = chapterRows
+            .Where(c => c.BookId.HasValue)
+            .GroupBy(c => c.BookId!.Value)
+            .ToDictionary(g => g.Key, g => g.Min(c => c.At));
+
+        var bookTitles = await (
+            from b in db.Books.AsNoTracking()
+            join e in db.Entities.AsNoTracking() on b.Id equals e.Id
+            where e.IsActive
+            select new { b.Id, b.Title }).ToListAsync();
+
+        events = new();
+        foreach (var b in bookTitles)
+            if (bookFirstDate.TryGetValue(b.Id, out var at))
+                events.Add(new("book", b.Title, at, $"/books/{b.Id:N}"));
+        foreach (var c in chapterRows)
+            events.Add(new("chapter", c.Title, c.At,
+                c.BookId.HasValue ? $"/talk/{c.BookId:N}/{c.Id:N}" : $"/talk//{c.Id:N}"));
+        foreach (var b in beatRows)
+            events.Add(new("beat", b.Title, b.At, $"/talk//{b.ChapterId:N}"));
+
+        events = events.OrderBy(e => e.At).ToList();
+
+        if (events.Any())
+        {
+            timelineMin = events.Min(e => e.At);
+            timelineMax = events.Max(e => e.At);
+            // Pad ±5% so points aren't pinned to the edge
+            var pad = TimeSpan.FromTicks((timelineMax - timelineMin).Ticks / 20);
+            if (pad < TimeSpan.FromHours(1)) pad = TimeSpan.FromHours(1);
+            timelineMin -= pad; timelineMax += pad;
+            // Ensure currentNow is inside the visible range
+            if (currentNow < timelineMin) timelineMin = currentNow - pad;
+            if (currentNow > timelineMax) timelineMax = currentNow + pad;
+        }
+        else
+        {
+            timelineMin = currentNow.AddDays(-7);
+            timelineMax = currentNow.AddDays(7);
+        }
+    }
+
+    private double TimeToX(DateTime when)
+    {
+        var span = (timelineMax - timelineMin).TotalSeconds;
+        if (span <= 0) return 500;
+        var t = (when - timelineMin).TotalSeconds / span;
+        return Math.Clamp(t * 1000.0, 0, 1000);
+    }
+
+    private DateTime XToTime(double x)
+    {
+        var t = Math.Clamp(x / 1000.0, 0, 1);
+        return timelineMin.AddSeconds(t * (timelineMax - timelineMin).TotalSeconds);
+    }
+
+    private void OnSvgClick(MouseEventArgs e)
+    {
+        // Map click X to the SVG viewBox X by ratio of clientX to bounding box width.
+        // Without JS interop we approximate using OffsetX + assumed full width 1000.
+        // (Hosted via SVG preserveAspectRatio="none", so this is acceptable for "drop the cursor here.")
+        var when = XToTime(e.OffsetX);
+        currentNow = when;
+        Clock.SetNow(currentNow);
+    }
+
+    private void OnNowChanged(ChangeEventArgs e)
+    {
+        if (DateTime.TryParse(e.Value?.ToString(), out var parsed))
+        {
+            currentNow = DateTime.SpecifyKind(parsed, DateTimeKind.Utc);
+            Clock.SetNow(currentNow);
+        }
+    }
+
+    private async Task RescanContradictions()
+    {
+        contradictionScan = await ContradictionScan.ScanAsync();
+    }
+
+    private void OpenEvent(TimelineEvent ev) => Nav.NavigateTo(ev.Route);
+
+    private IEnumerable<TimelineEvent> EventsNearNow => events
+        .Where(e => Math.Abs((e.At - currentNow).TotalHours) <= 24)
+        .OrderBy(e => e.At)
+        .Take(20);
+
+    private string SpanLabel
+    {
+        get
+        {
+            var d = timelineMax - timelineMin;
+            return d.TotalDays > 365 ? $"{d.TotalDays / 365.0:F1} years"
+                 : d.TotalDays > 1   ? $"{d.TotalDays:F1} days"
+                 : $"{d.TotalHours:F1} hours";
+        }
+    }
+
+    private static string FormatLocal(DateTime utc)
+        => utc.ToLocalTime().ToString("yyyy-MM-ddTHH:mm:ss");
+
+    private static string TypeBadge(string t) => t switch
+    {
+        "book"    => "bg-info",
+        "chapter" => "bg-success",
+        _         => "bg-warning text-dark",
+    };
+}

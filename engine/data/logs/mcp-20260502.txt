@@ -16,3 +16,21 @@
 2026-05-02 13:17:30.586 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.126) method 'tools/call' request handler called.
 2026-05-02 13:17:30.602 -05:00 [INF] "get_chapter" completed. IsError = false.
 2026-05-02 13:17:30.603 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.126) method 'tools/call' request handler completed in 16.8345ms.
+2026-05-02 20:36:00.812 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport completed reading messages.
+2026-05-02 22:02:29.139 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-05-02 22:02:29.206 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-05-02 22:02:29.222 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.126) method 'tools/list' request handler called.
+2026-05-02 22:02:29.223 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.126) method 'initialize' request handler completed in 13.7366ms.
+2026-05-02 22:02:29.229 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.126) method 'tools/list' request handler completed in 6.7739ms.
+2026-05-02 22:05:22.361 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-05-02 22:05:22.438 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-05-02 22:05:22.454 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.126) method 'tools/list' request handler called.
+2026-05-02 22:05:22.455 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.126) method 'initialize' request handler completed in 14.376ms.
+2026-05-02 22:05:22.462 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.126) method 'tools/list' request handler completed in 7.4195ms.
+2026-05-02 22:29:57.321 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport completed reading messages.
+2026-05-02 22:30:00.372 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport completed reading messages.
+2026-05-02 22:40:49.515 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-05-02 22:40:49.581 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-05-02 22:40:49.597 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.126) method 'tools/list' request handler called.
+2026-05-02 22:40:49.598 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.126) method 'initialize' request handler completed in 14.207ms.
+2026-05-02 22:40:49.604 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.126) method 'tools/list' request handler completed in 6.9035ms.

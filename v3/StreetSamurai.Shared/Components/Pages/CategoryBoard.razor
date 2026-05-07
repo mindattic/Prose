@@ -79,9 +79,8 @@ else
             "Characters" =>
             [
                 new("bi-people",              "/characters",      "People",          CharRepo.GetAll().Count, false, "Human characters with full psychology, speech patterns, behavioral rules, cyberware inventory, and timelines."),
-                new("bi-cpu-fill",            "/synthetics",      "Synthetic Life",  SynthRepo.GetAll().Count, false, "Non-biological persons: AIs, androids, robots, cyborg AIs, distributed AIs, emergent AIs, rogue AIs, corporate AIs."),
+                new("bi-cpu-fill",            "/synthetics",      "Synthetic Life",  SynthRepo.GetAll().Count, false, "Non-biological persons: AIs, androids, robots, cyborg AIs, distributed AIs, emergent AIs, rogue AIs, corporate AIs. Includes Ceramic Men (Type == \"ceramic_man\")."),
                 new("bi-person-bounding-box", "/archetypes",      "Archetypes",      ArchetypeRepo.GetAll().Count, false, "Reusable character archetype templates with trait weights — seed for new character generation."),
-                new("bi-emoji-neutral",       "/ceramic-men",     "Ceramic Men",     SynthRepo.GetAll().Count(s => s.Type == "ceramic_man"), false, "Subset of synthetic life: humanoid ceramic-shelled synthetics specifically."),
             ],
             "Organizations" =>
             [
@@ -121,6 +120,7 @@ else
             "Visualizations" =>
             [
                 new("bi-diagram-3",           "/graph",           "World Graph",     0, true, "2D D3 force-directed view of every entity and relationship. Pan, zoom, click any node to drill in."),
+                new("bi-bounding-box",        "/graph-3d",        "World Graph 3D",  0, true, "Three-dimensional rendering of the same graph. Spatial clustering reveals tight subgraphs the 2D view smushes flat."),
                 new("bi-map-fill",            "/map",             "Map",             0, true, "Geographic layout of GLMZ districts and exits. Zork-style directional travel between places."),
                 new("bi-tree-fill",           "/heritage",        "Heritage",        0, true, "Ethnic / genetic ancestry heatmap of the cast — visualizes the Ubiquitous Diaspora."),
             ],
@@ -133,7 +133,7 @@ else
         var list = new List<BoardTile>
         {
             new("bi-speedometer2",    "/dashboard", "Dashboard",     0, true, "Live overview: entity counts across all repositories, world-graph size, story counts, configured-service status. Your at-a-glance health check."),
-            new("bi-chat-dots",       "/ask",       "Ask",           0, true, "Ask questions in natural language against the live JSON + chapter prose. Local Qwen via Ollama; reindexes on save so answers always reflect the current truth on disk."),
+            new("bi-chat-dots",       "/ask",       "Ask",           0, true, "Ask questions in natural language against the live JSON + chapter prose. Reindexes on save so answers always reflect the current truth on disk."),
             new("bi-book-half",       "/atlas",     "Atlas",         0, true, "System-wide directory of every entity type, service, and architectural component. The whole codebase + canon expressed as a hierarchy."),
         };
         if (Access.IsAdministrator)

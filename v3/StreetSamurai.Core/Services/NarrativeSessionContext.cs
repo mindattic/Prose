@@ -1,5 +1,6 @@
 using System.Globalization;
 using System.Text;
+using StreetSamurai.Core.Models;
 using StreetSamurai.Core.Models.Graph;
 
 namespace StreetSamurai.Core.Services;
@@ -58,6 +59,7 @@ public class NarrativeSessionContext
     private readonly WorldGraphService graph;
     private readonly SemanticIndexService? semanticIndex;
     private readonly InferenceService? inference;
+    private readonly WorldStateService? worldState;
 
     // Entities whose full 2-hop neighborhood has been loaded
     private readonly HashSet<string> resolvedIds = new();
@@ -85,17 +87,32 @@ public class NarrativeSessionContext
     private string? storyPoint;
 
     public NarrativeSessionContext(WorldGraphService graph, int maxTokens = 16_000)
-        : this(graph, null, null, maxTokens) { }
+        : this(graph, null, null, null, maxTokens) { }
 
     public NarrativeSessionContext(
         WorldGraphService graph,
         SemanticIndexService? semanticIndex,
         InferenceService? inference,
         int maxTokens = 16_000)
+        : this(graph, semanticIndex, inference, null, maxTokens) { }
+
+    /// <summary>
+    /// Preferred constructor when the caller has access to <see cref="WorldStateService"/>.
+    /// When supplied, tier 1 (primary entity) briefs are upgraded to full Dossiers — graph
+    /// properties + 1-hop linked entities + canonical continuity facts + chapter-event
+    /// timeline + derived "current state". The LLM stops re-deriving these from prose.
+    /// </summary>
+    public NarrativeSessionContext(
+        WorldGraphService graph,
+        SemanticIndexService? semanticIndex,
+        InferenceService? inference,
+        WorldStateService? worldState,
+        int maxTokens = 16_000)
     {
         this.graph = graph;
         this.semanticIndex = semanticIndex;
         this.inference = inference;
+        this.worldState = worldState;
         graph.EnsureLoaded();
         this.maxTokens = maxTokens;
     }
@@ -260,14 +277,26 @@ public class NarrativeSessionContext
     {
         var sections = new List<string>();
 
-        // Tier 1: Primary entities — full briefs
+        // Tier 1: Primary entities — full Dossier when WorldStateService is wired in,
+        // legacy GraphService brief otherwise. The dossier carries continuity facts and
+        // chapter-event timeline that the plain brief cannot.
         var primarySection = new List<string>();
+        var asOf = ParseAsOfCursor(storyPoint);
         foreach (var id in loadOrder)
         {
             if (!primaryIds.Contains(id)) continue;
-            var brief = storyPoint != null
-                ? graph.GetEntityBriefAt(id, storyPoint)
-                : graph.GetEntityBrief(id);
+            string brief;
+            if (worldState != null)
+            {
+                var dossier = worldState.GetDossier(id, asOf);
+                brief = dossier?.ToPromptString() ?? "";
+            }
+            else
+            {
+                brief = storyPoint != null
+                    ? graph.GetEntityBriefAt(id, storyPoint)
+                    : graph.GetEntityBrief(id);
+            }
             if (brief.Length > 0) primarySection.Add(brief);
         }
         if (primarySection.Count > 0)
@@ -391,6 +420,19 @@ public class NarrativeSessionContext
 
     private static int EstimateTokens(string text) =>
         (int)(text.Length / 3.5); // Rough estimate: ~3.5 chars per token for English
+
+    /// <summary>
+    /// Parse a story-point string of the form "chapter:N" into an AsOfCursor.
+    /// Anything else (null/empty/non-chapter) yields AsOfCursor.Current.
+    /// </summary>
+    private static AsOfCursor ParseAsOfCursor(string? sp)
+    {
+        if (string.IsNullOrWhiteSpace(sp)) return AsOfCursor.Current;
+        if (sp.StartsWith("chapter:", StringComparison.OrdinalIgnoreCase)
+            && int.TryParse(sp[8..], NumberStyles.Integer, CultureInfo.InvariantCulture, out var n))
+            return new AsOfCursor(null, n, null);
+        return AsOfCursor.Current;
+    }
 }
 
 public record SessionEntity

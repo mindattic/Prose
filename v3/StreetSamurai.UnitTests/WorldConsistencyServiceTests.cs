@@ -76,7 +76,7 @@ public class WorldConsistencyServiceTests
     [Test]
     public async Task RuleScan_MeridianPdInDescription_ReportsViolation()
     {
-        WriteEntity(peopleDir, new { name = "Badge", description = "Former Meridian PD detective." });
+        WriteEntity(peopleDir, new { name = "Badge", description = "Active Meridian PD detective patrolling Z2." });
 
         await svc.RunAsync();
 
@@ -136,7 +136,7 @@ public class WorldConsistencyServiceTests
     [Test]
     public async Task RuleScan_ViolationContainsEntityName()
     {
-        WriteEntity(peopleDir, new { name = "Dirty Badge", description = "Former Meridian PD officer." });
+        WriteEntity(peopleDir, new { name = "Dirty Badge", description = "Currently a Meridian PD officer in active service." });
 
         await svc.RunAsync();
 

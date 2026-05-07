@@ -1,6 +1,8 @@
 using System.Text.Json;
 using System.Text.RegularExpressions;
+using Microsoft.EntityFrameworkCore;
 using QuikGraph;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models.Canon;
 using StreetSamurai.Core.Models.Graph;
@@ -11,6 +13,7 @@ public class WorldGraphService : IWorldGraphService
 {
     private readonly IPathProvider paths;
     private readonly DatabaseService db;
+    private readonly IDbContextFactory<StreetSamuraiDbContext>? sql;
     private readonly AdjacencyGraph<string, WorldEdge> _graph = new();
     private readonly Dictionary<string, WorldNode> _nodes = new();
     // Index: node type -> set of node IDs for fast type-based lookup
@@ -24,6 +27,15 @@ public class WorldGraphService : IWorldGraphService
     {
         this.paths = paths;
         this.db = db;
+        this.sql = null;
+    }
+
+    public WorldGraphService(IPathProvider paths, DatabaseService db,
+        IDbContextFactory<StreetSamuraiDbContext> sql)
+    {
+        this.paths = paths;
+        this.db = db;
+        this.sql = sql;
     }
 
     public int NodeCount => _nodes.Count;
@@ -66,10 +78,11 @@ public class WorldGraphService : IWorldGraphService
     }
 
     /// <summary>
-    /// Returns true when any canon data file has been modified more recently than the
-    /// persisted graph snapshot. The graph keeps an LastSaved timestamp; if any people /
-    /// places / factions / corponations / world data file is newer, the graph is stale
-    /// and should be rebuilt.
+    /// Returns true when canon data has been modified more recently than the persisted
+    /// graph snapshot. After the SQL cutover, freshness is driven by
+    /// <c>Records.UpdatedAt</c> — any record newer than the graph snapshot file means
+    /// canon moved. The legacy file-mtime walk is kept as a fallback when no SQL
+    /// factory is available (test fixtures).
     /// </summary>
     private bool IsStale()
     {
@@ -79,8 +92,26 @@ public class WorldGraphService : IWorldGraphService
             if (!File.Exists(graphPath)) return true;
             var graphTime = File.GetLastWriteTimeUtc(graphPath);
 
-            // Canon data dirs that feed the graph. If any file inside is newer, the graph
-            // doesn't reflect current canon. Cheap walk — directory enumeration only.
+            // SQL-first: ask the canonical Record table for the most recent update.
+            if (sql != null)
+            {
+                try
+                {
+                    using var ctx = sql.CreateDbContext();
+                    var maxUpdated = ctx.Records
+                        .OrderByDescending(r => r.UpdatedAt)
+                        .Select(r => (DateTime?)r.UpdatedAt)
+                        .FirstOrDefault();
+                    if (maxUpdated.HasValue && maxUpdated.Value.ToUniversalTime() > graphTime) return true;
+                    return false;
+                }
+                catch (Exception ex)
+                {
+                    Serilog.Log.Debug(ex, "SQL freshness probe failed; falling back to file mtime walk");
+                }
+            }
+
+            // Fallback (test fixtures, pre-cutover environments): canon data dirs.
             string[] canonDirs =
             [
                 paths.CharactersDir,
@@ -781,6 +812,14 @@ public class WorldGraphService : IWorldGraphService
         }, maxStackSize: 16 * 1024 * 1024);
         writer.Start();
         writer.Join();
+        // The cache is regenerable; if disk is read-only (e.g. RealDataTests' guard,
+        // a locked container volume) treat the write as best-effort. SQL is the
+        // source of truth; the in-memory graph is already populated.
+        if (error is UnauthorizedAccessException || error is IOException)
+        {
+            Serilog.Log.Debug(error, "world_graph.json cache write failed — continuing with in-memory graph");
+            return;
+        }
         if (error != null) throw error;
     }
 

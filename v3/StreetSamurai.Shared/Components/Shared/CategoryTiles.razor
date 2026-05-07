@@ -157,7 +157,7 @@
                 <div class="board-tile-name">Dashboard</div>
             </a>
             <a href="/ask" class="board-tile board-tile-tool"
-               title="Ask — natural-language questions against the live JSON + chapter prose. Local Qwen via Ollama; reindexes on save so answers always reflect the current truth on disk.">
+               title="Ask — natural-language questions against the live JSON + chapter prose. Reindexes on save so answers always reflect the current truth on disk.">
                 <i class="bi bi-chat-dots board-tile-icon"></i>
                 <div class="board-tile-name">Ask</div>
             </a>
@@ -166,6 +166,14 @@
                 <i class="bi bi-book-half board-tile-icon"></i>
                 <div class="board-tile-name">Atlas</div>
             </a>
+            @if (Access.IsAdministrator)
+            {
+                <a href="/architecture" class="board-tile board-tile-tool"
+                   title="Architecture — live scan of every service, CLI verb, MCP tool, Razor page, and script in the codebase, with duplicate-cluster detection. The inventory we work from when we ask &quot;what does this do, do we have two of these, can it die?&quot;">
+                    <i class="bi bi-diagram-3 board-tile-icon"></i>
+                    <div class="board-tile-name">Architecture</div>
+                </a>
+            }
             @if (Access.IsContributor)
             {
                 <a href="/continuity" class="board-tile board-tile-tool"

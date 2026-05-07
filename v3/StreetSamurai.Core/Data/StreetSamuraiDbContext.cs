@@ -1,0 +1,1652 @@
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data.Entities;
+using StreetSamurai.Core.Services;
+using ContractEntity = StreetSamurai.Core.Data.Entities.Contract;
+using DocumentEntity = StreetSamurai.Core.Data.Entities.Document;
+using QuoteEntity    = StreetSamurai.Core.Data.Entities.Quote;
+using NewsEntity     = StreetSamurai.Core.Data.Entities.News;
+
+namespace StreetSamurai.Core.Data;
+
+/// <summary>
+/// Single source of truth for canonical world data. Replaces the per-type JSON
+/// repositories at <c>engine/data/</c>. Contains:
+///
+/// • Universal layer — Entity, EntityProperty, Edge, Taxonomy, EntityTaxonomy,
+///   Tag, EntityTag.
+/// • Strongly-typed subtype tables — Character + child tables for now; remaining
+///   types added in subsequent migrations following the same pattern.
+///
+/// System-versioning (SQL Server <c>PERIOD FOR SYSTEM_TIME</c>) is enabled per
+/// table via raw SQL in the initial migration — EF doesn't emit those clauses
+/// natively yet. The OnModelCreating below registers indexes and relationships;
+/// the migration tacks on the temporal clauses.
+/// </summary>
+public class StreetSamuraiDbContext : DbContext
+{
+    public StreetSamuraiDbContext(DbContextOptions<StreetSamuraiDbContext> options) : base(options) { }
+
+    // Universal layer
+    public DbSet<Entity>          Entities         => Set<Entity>();
+    public DbSet<Record>          Records          => Set<Record>();
+    public DbSet<EntityProperty>  EntityProperties => Set<EntityProperty>();
+    public DbSet<Edge>            Edges            => Set<Edge>();
+    public DbSet<Taxonomy>        Taxonomies       => Set<Taxonomy>();
+    public DbSet<EntityTaxonomy>  EntityTaxonomies => Set<EntityTaxonomy>();
+    public DbSet<Tag>             Tags             => Set<Tag>();
+    public DbSet<EntityTag>       EntityTags       => Set<EntityTag>();
+
+    // Character subtype + children — fully columnar (no DataJson on this branch)
+    public DbSet<Character>                       Characters                    => Set<Character>();
+    public DbSet<CharacterAlias>                  CharacterAliases              => Set<CharacterAlias>();
+    public DbSet<CharacterStoryHook>              CharacterStoryHooks           => Set<CharacterStoryHook>();
+    public DbSet<CharacterArchetypeScore>         CharacterArchetypeScores      => Set<CharacterArchetypeScore>();
+    public DbSet<CharacterGeneticAncestry>        CharacterGeneticAncestries    => Set<CharacterGeneticAncestry>();
+    public DbSet<CharacterAncestryDetail>         CharacterAncestryDetails      => Set<CharacterAncestryDetail>();
+    public DbSet<CharacterPsychologyTrait>        CharacterPsychologyTraits     => Set<CharacterPsychologyTrait>();
+    public DbSet<CharacterSpeechPhrase>           CharacterSpeechPhrases        => Set<CharacterSpeechPhrase>();
+    public DbSet<CharacterBehavioralRule>         CharacterBehavioralRules      => Set<CharacterBehavioralRule>();
+    public DbSet<CharacterBehavioralMap>          CharacterBehavioralMaps       => Set<CharacterBehavioralMap>();
+    public DbSet<CharacterStatScalar>             CharacterStatScalars          => Set<CharacterStatScalar>();
+    public DbSet<CharacterStatPhrase>             CharacterStatPhrases          => Set<CharacterStatPhrase>();
+    public DbSet<CharacterPhysicalMark>           CharacterPhysicalMarks        => Set<CharacterPhysicalMark>();
+    public DbSet<CharacterTerritoryZone>          CharacterTerritoryZones       => Set<CharacterTerritoryZone>();
+    public DbSet<CharacterTerritoryReputation>    CharacterTerritoryReputations => Set<CharacterTerritoryReputation>();
+    public DbSet<CharacterBelongingsGear>         CharacterBelongingsGear       => Set<CharacterBelongingsGear>();
+    public DbSet<CharacterBelongingsExtra>        CharacterBelongingsExtras     => Set<CharacterBelongingsExtra>();
+    public DbSet<CharacterBioBatteryThreshold>    CharacterBioBatteryThresholds => Set<CharacterBioBatteryThreshold>();
+    public DbSet<CharacterNeuralAbility>          CharacterNeuralAbilities      => Set<CharacterNeuralAbility>();
+    public DbSet<CharacterChangelogRow>           CharacterChangelog            => Set<CharacterChangelogRow>();
+    public DbSet<CharacterCyberware>              CharacterCyberware            => Set<CharacterCyberware>();
+    public DbSet<CharacterKnowledgeRow>           CharacterKnowledge            => Set<CharacterKnowledgeRow>();
+    public DbSet<CharacterKnowledgeEntity>        CharacterKnowledgeEntities    => Set<CharacterKnowledgeEntity>();
+    public DbSet<CharacterConditionRow>           CharacterConditions           => Set<CharacterConditionRow>();
+    public DbSet<CharacterRelationshipRow>        CharacterRelationships        => Set<CharacterRelationshipRow>();
+    public DbSet<CharacterTimelineEvent>          CharacterTimeline             => Set<CharacterTimelineEvent>();
+    public DbSet<CharacterTimelineBodyChange>     CharacterTimelineBodyChanges  => Set<CharacterTimelineBodyChange>();
+    public DbSet<CharacterHomeTurf>               CharacterHomeTurfs            => Set<CharacterHomeTurf>();
+    public DbSet<CharacterAffiliation>            CharacterAffiliations         => Set<CharacterAffiliation>();
+
+    // Other subtype tables
+    public DbSet<Place>          Places          => Set<Place>();
+    public DbSet<PlaceAlias>            PlaceAliases          => Set<PlaceAlias>();
+    public DbSet<PlaceDanger>           PlaceDangers          => Set<PlaceDanger>();
+    public DbSet<PlaceOpportunity>      PlaceOpportunities    => Set<PlaceOpportunity>();
+    public DbSet<PlaceStoryHook>        PlaceStoryHooks       => Set<PlaceStoryHook>();
+    public DbSet<PlaceAtmosphereItem>   PlaceAtmosphereItems  => Set<PlaceAtmosphereItem>();
+    public DbSet<PlaceAdjacency>        PlaceAdjacencies      => Set<PlaceAdjacency>();
+    public DbSet<PlaceExitRow>          PlaceExits            => Set<PlaceExitRow>();
+    public DbSet<PlaceFrequentBy>       PlaceFrequentedBy     => Set<PlaceFrequentBy>();
+    public DbSet<PlaceNotableLocation>  PlaceNotableLocations => Set<PlaceNotableLocation>();
+    public DbSet<PlaceRelatedEntity>    PlaceRelatedEntities  => Set<PlaceRelatedEntity>();
+    public DbSet<Faction>        Factions        => Set<Faction>();
+    public DbSet<FactionAlias>            FactionAliases        => Set<FactionAlias>();
+    public DbSet<FactionMethod>           FactionMethods        => Set<FactionMethod>();
+    public DbSet<FactionResource>         FactionResources      => Set<FactionResource>();
+    public DbSet<FactionGoal>             FactionGoals          => Set<FactionGoal>();
+    public DbSet<FactionStoryHook>        FactionStoryHooks     => Set<FactionStoryHook>();
+    public DbSet<FactionRelationshipRow>  FactionRelationships  => Set<FactionRelationshipRow>();
+    public DbSet<FactionMemberRow>        FactionMembers        => Set<FactionMemberRow>();
+    public DbSet<CorponationCommonName>   CorponationCommonNames => Set<CorponationCommonName>();
+    public DbSet<SubsidiaryProduct>       SubsidiaryProducts     => Set<SubsidiaryProduct>();
+    public DbSet<SyntheticLifeAlias>      SyntheticLifeAliases   => Set<SyntheticLifeAlias>();
+    public DbSet<SyntheticLifeStoryHook>  SyntheticLifeStoryHooks => Set<SyntheticLifeStoryHook>();
+    public DbSet<SyntheticLifeKnownAssociation> SyntheticLifeKnownAssociations => Set<SyntheticLifeKnownAssociation>();
+    public DbSet<AutomatonAlias>          AutomatonAliases       => Set<AutomatonAlias>();
+    public DbSet<AutomatonArmament>       AutomatonArmament      => Set<AutomatonArmament>();
+    public DbSet<AutomatonSensor>         AutomatonSensors       => Set<AutomatonSensor>();
+    public DbSet<AutomatonDeployment>     AutomatonDeployments   => Set<AutomatonDeployment>();
+    public DbSet<AutomatonStoryHook>      AutomatonStoryHooks    => Set<AutomatonStoryHook>();
+    // Gear-cluster bridges
+    public DbSet<WeaponAlias>           WeaponAliases             => Set<WeaponAlias>();
+    public DbSet<WeaponBaseTechnology>  WeaponBaseTechnologies    => Set<WeaponBaseTechnology>();
+    public DbSet<WeaponKnownUser>       WeaponKnownUsers          => Set<WeaponKnownUser>();
+    public DbSet<WeaponAmmunitionType>  WeaponAmmunitionTypes     => Set<WeaponAmmunitionType>();
+    public DbSet<WeaponStoryHook>       WeaponStoryHooks          => Set<WeaponStoryHook>();
+    public DbSet<EquipmentAlias>          EquipmentAliases          => Set<EquipmentAlias>();
+    public DbSet<EquipmentBaseTechnology> EquipmentBaseTechnologies => Set<EquipmentBaseTechnology>();
+    public DbSet<EquipmentKnownUser>      EquipmentKnownUsers       => Set<EquipmentKnownUser>();
+    public DbSet<EquipmentSpecification>  EquipmentSpecifications   => Set<EquipmentSpecification>();
+    public DbSet<EquipmentStoryHook>      EquipmentStoryHooks       => Set<EquipmentStoryHook>();
+    public DbSet<CyberwareItemAlias>      CyberwareItemAliases      => Set<CyberwareItemAlias>();
+    public DbSet<CyberwareItemSideEffect> CyberwareItemSideEffects  => Set<CyberwareItemSideEffect>();
+    public DbSet<CyberwareItemKnownUser>  CyberwareItemKnownUsers   => Set<CyberwareItemKnownUser>();
+    public DbSet<CyberwareItemStoryHook>  CyberwareItemStoryHooks   => Set<CyberwareItemStoryHook>();
+    public DbSet<ApparelAlias>            ApparelAliases            => Set<ApparelAlias>();
+    public DbSet<ApparelStoryHook>        ApparelStoryHooks         => Set<ApparelStoryHook>();
+    public DbSet<AmmunitionAlias>            AmmunitionAliases            => Set<AmmunitionAlias>();
+    public DbSet<AmmunitionCompatibleWeapon> AmmunitionCompatibleWeapons  => Set<AmmunitionCompatibleWeapon>();
+    public DbSet<AmmunitionVariant>          AmmunitionVariants           => Set<AmmunitionVariant>();
+    public DbSet<AmmunitionStoryHook>        AmmunitionStoryHooks         => Set<AmmunitionStoryHook>();
+    public DbSet<PharmAlias>      PharmaceuticalAliases     => Set<PharmAlias>();
+    public DbSet<PharmEffect>     PharmaceuticalEffects     => Set<PharmEffect>();
+    public DbSet<PharmSideEffect> PharmaceuticalSideEffects => Set<PharmSideEffect>();
+    public DbSet<PharmStoryHook>  PharmaceuticalStoryHooks  => Set<PharmStoryHook>();
+    public DbSet<GenemodAlias>     GenemodAliases     => Set<GenemodAlias>();
+    public DbSet<GenemodStoryHook> GenemodStoryHooks  => Set<GenemodStoryHook>();
+    public DbSet<MaterialAlias>     MaterialAliases     => Set<MaterialAlias>();
+    public DbSet<MaterialStoryHook> MaterialStoryHooks  => Set<MaterialStoryHook>();
+    public DbSet<TransportationAlias>     TransportationAliases     => Set<TransportationAlias>();
+    public DbSet<TransportationStoryHook> TransportationStoryHooks  => Set<TransportationStoryHook>();
+    public DbSet<ConsumerGoodAlias>     ConsumerGoodAliases     => Set<ConsumerGoodAlias>();
+    public DbSet<ConsumerGoodStoryHook> ConsumerGoodStoryHooks  => Set<ConsumerGoodStoryHook>();
+    // Misc cluster — fully relational, replaces DataJson
+    public DbSet<ArchetypeWillAlways>     ArchetypeWillAlways      => Set<ArchetypeWillAlways>();
+    public DbSet<ArchetypeWillNever>      ArchetypeWillNever       => Set<ArchetypeWillNever>();
+    public DbSet<ArchetypeUnless>         ArchetypeUnless          => Set<ArchetypeUnless>();
+    public DbSet<ArchetypeSimilar>        ArchetypeSimilars        => Set<ArchetypeSimilar>();
+    public DbSet<ArchetypeOpposite>       ArchetypeOpposites       => Set<ArchetypeOpposite>();
+    public DbSet<NewsEntityInvolved>      NewsEntitiesInvolved     => Set<NewsEntityInvolved>();
+    public DbSet<NewsLocation>            NewsLocations            => Set<NewsLocation>();
+    public DbSet<ContractBonusRow>        ContractBonuses          => Set<ContractBonusRow>();
+    public DbSet<ContractComplication>    ContractComplications    => Set<ContractComplication>();
+    public DbSet<DocumentHeading>         DocumentHeadings         => Set<DocumentHeading>();
+    public DbSet<LabSpecimenAlias>          LabSpecimenAliases         => Set<LabSpecimenAlias>();
+    public DbSet<LabSpecimenKnownLocation>  LabSpecimenKnownLocations  => Set<LabSpecimenKnownLocation>();
+    public DbSet<LabSpecimenStoryHook>      LabSpecimenStoryHooks      => Set<LabSpecimenStoryHook>();
+    public DbSet<PsionicAlias>             PsionicAliases             => Set<PsionicAlias>();
+    public DbSet<PsionicKnownPractitioner> PsionicKnownPractitioners  => Set<PsionicKnownPractitioner>();
+    public DbSet<PsionicStoryHook>         PsionicStoryHooks          => Set<PsionicStoryHook>();
+    public DbSet<Technology>                Technologies              => Set<Technology>();
+    public DbSet<TechnologyAlias>           TechnologyAliases         => Set<TechnologyAlias>();
+    public DbSet<TechnologyDeveloper>       TechnologyDevelopers      => Set<TechnologyDeveloper>();
+    public DbSet<TechnologyBaseTechnology>  TechnologyBaseTechnologies => Set<TechnologyBaseTechnology>();
+    public DbSet<TechnologyEnables>         TechnologyEnabledList     => Set<TechnologyEnables>();
+    public DbSet<TechnologyStoryHook>       TechnologyStoryHooks      => Set<TechnologyStoryHook>();
+    public DbSet<Facet>                    Facets                  => Set<Facet>();
+    public DbSet<FacetTrigger>             FacetTriggers           => Set<FacetTrigger>();
+    public DbSet<FacetCoreMemory>          FacetCoreMemories       => Set<FacetCoreMemory>();
+    public DbSet<FacetVoiceProhibition>    FacetVoiceProhibitions  => Set<FacetVoiceProhibition>();
+    public DbSet<Motif>                    Motifs                  => Set<Motif>();
+    public DbSet<MotifAppearance>          MotifAppearances        => Set<MotifAppearance>();
+    public DbSet<Entertainment>            EntertainmentItems      => Set<Entertainment>();
+    public DbSet<EntertainmentAlias>       EntertainmentAliases    => Set<EntertainmentAlias>();
+    public DbSet<EntertainmentKnownFan>    EntertainmentKnownFans  => Set<EntertainmentKnownFan>();
+    public DbSet<EntertainmentStoryHook>   EntertainmentStoryHooks => Set<EntertainmentStoryHook>();
+    public DbSet<FlyoverEntity>            FlyoverEntities         => Set<FlyoverEntity>();
+    public DbSet<FlyoverEntityAlias>       FlyoverEntityAliases    => Set<FlyoverEntityAlias>();
+    public DbSet<FlyoverEntityKnownLocation> FlyoverEntityKnownLocations => Set<FlyoverEntityKnownLocation>();
+    public DbSet<FlyoverEntityStoryHook>   FlyoverEntityStoryHooks => Set<FlyoverEntityStoryHook>();
+    // CeramicMan tables retired 2026-05-06 — folded into SyntheticLives (Type == "ceramic_man").
+    // Book / chapter relational bridges
+    public DbSet<BookProtagonist>          BookProtagonists        => Set<BookProtagonist>();
+    public DbSet<BookChapterOrder>         BookChapterOrder        => Set<BookChapterOrder>();
+    public DbSet<ChapterCharacter>         ChapterCharacters       => Set<ChapterCharacter>();
+    public DbSet<Corponation>    Corponations    => Set<Corponation>();
+    public DbSet<Subsidiary>     Subsidiaries    => Set<Subsidiary>();
+    public DbSet<SyntheticLife>  SyntheticLives  => Set<SyntheticLife>();
+    public DbSet<Automaton>      Automata        => Set<Automaton>();
+    public DbSet<Weapon>         Weapons         => Set<Weapon>();
+    public DbSet<Equipment>      EquipmentItems  => Set<Equipment>();
+    public DbSet<Cyberware>      CyberwareItems  => Set<Cyberware>();
+    public DbSet<Apparel>        Apparels        => Set<Apparel>();
+    public DbSet<Ammunition>     Ammunitions     => Set<Ammunition>();
+    public DbSet<Pharmaceutical> Pharmaceuticals => Set<Pharmaceutical>();
+    public DbSet<Genemod>        Genemods        => Set<Genemod>();
+    public DbSet<Material>       Materials       => Set<Material>();
+    public DbSet<Transportation> Transportations => Set<Transportation>();
+    public DbSet<ConsumerGood>   ConsumerGoods   => Set<ConsumerGood>();
+    public DbSet<ArchetypeRow>   Archetypes      => Set<ArchetypeRow>();
+    public DbSet<QuoteEntity>    Quotes          => Set<QuoteEntity>();
+    public DbSet<NewsEntity>     News            => Set<NewsEntity>();
+    public DbSet<ContractEntity> Contracts       => Set<ContractEntity>();
+    public DbSet<DocumentEntity> Documents       => Set<DocumentEntity>();
+    public DbSet<Vocabulary>     VocabularyEntries => Set<Vocabulary>();
+    public DbSet<LabSpecimen>    LabSpecimens    => Set<LabSpecimen>();
+    public DbSet<Psionic>        Psionics        => Set<Psionic>();
+
+    // Books / chapters / beats
+    public DbSet<Book>           Books         => Set<Book>();
+    public DbSet<Series>         SeriesItems   => Set<Series>();
+    public DbSet<Chapter>        Chapters      => Set<Chapter>();
+    public DbSet<ChapterBeat>    ChapterBeats  => Set<ChapterBeat>();
+
+    // Single-document settings (tone bible, story bible, literary rules, character profile)
+    public DbSet<Setting>                Settings                => Set<Setting>();
+
+    // Continuity store (was a separate SQLite DB; folded into StreetSamurai)
+    public DbSet<ContinuityClaim>        ContinuityClaims        => Set<ContinuityClaim>();
+    public DbSet<ClaimContradictionRow>  ClaimContradictions     => Set<ClaimContradictionRow>();
+    public DbSet<ClaimConfirmationRow>   ClaimConfirmations      => Set<ClaimConfirmationRow>();
+    public DbSet<ExtractionRunRow>       ExtractionRuns          => Set<ExtractionRunRow>();
+
+    // World-state ledger — append-only stream of (entity, aspect, verb, value)
+    // changes timestamped to story-time. The "current" state is the latest row
+    // per (EntityId, AspectKey); as-of queries pivot on AtStoryTime.
+    public DbSet<EntityStateEvent>       EntityStateEvents       => Set<EntityStateEvent>();
+
+    // Per-weapon structured spec attributes (chambering, capacity, action, …)
+    // so canon facts are queryable instead of buried in free-form prose.
+    public DbSet<WeaponSpec>             WeaponSpecs             => Set<WeaponSpec>();
+
+    protected override void OnModelCreating(ModelBuilder b)
+    {
+        base.OnModelCreating(b);
+
+        // ── Entity (universal) ───────────────────────────────────────────────
+        b.Entity<Entity>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.EntityType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Name).HasMaxLength(400).IsRequired();
+            e.Property(x => x.Slug).HasMaxLength(400).IsRequired();
+            e.Property(x => x.Status).HasMaxLength(40);
+            // Slug is unique per type — two entities with the same name across kinds
+            // (a place "Silence" and a weapon "Silence") are valid. Wiki-link
+            // resolution disambiguates by type or by checking the most-canonical match.
+            e.HasIndex(x => new { x.EntityType, x.Slug }).IsUnique();
+            e.HasIndex(x => x.Slug);
+            e.HasIndex(x => x.EntityType);
+            // Filtered index — most pages query active rows only; archived rows
+            // are still indexed by Slug + Type for restore flows.
+            e.HasIndex(x => new { x.EntityType, x.IsActive })
+                .HasFilter("[IsActive] = 1");
+            // 23rd-century in-world creation date — supports "what was canon as of 2256-04-15".
+            e.HasIndex(x => x.InWorldCreatedDate);
+        });
+
+        // ── Record (1:1 canonical JSON for an entity) ────────────────────────
+        b.Entity<Record>(e =>
+        {
+            e.HasKey(x => x.EntityId);
+            e.HasOne(x => x.Entity).WithOne(x => x.Record!)
+                .HasForeignKey<Record>(x => x.EntityId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        // ── EntityProperty (flex bag) ────────────────────────────────────────
+        b.Entity<EntityProperty>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.PropertyKey).HasMaxLength(120).IsRequired();
+            e.Property(x => x.ValueKind).HasMaxLength(20);
+            e.Property(x => x.Source).HasMaxLength(200);
+            e.HasOne(x => x.Entity).WithMany(x => x.Properties)
+                .HasForeignKey(x => x.EntityId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.EntityId, x.PropertyKey, x.StoryValidFrom });
+            e.HasIndex(x => x.PropertyKey);
+        });
+
+        // ── Edge (typed temporal relationships) ──────────────────────────────
+        b.Entity<Edge>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.RelationType).HasMaxLength(80).IsRequired();
+            e.Property(x => x.Sentiment).HasMaxLength(20);
+            e.Property(x => x.Source).HasMaxLength(200);
+            e.HasOne(x => x.SourceEntity).WithMany(x => x.OutgoingEdges)
+                .HasForeignKey(x => x.SourceId).OnDelete(DeleteBehavior.Restrict);
+            e.HasOne(x => x.TargetEntity).WithMany(x => x.IncomingEdges)
+                .HasForeignKey(x => x.TargetId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.SourceId, x.RelationType, x.StoryValidFrom });
+            e.HasIndex(x => new { x.TargetId, x.RelationType, x.StoryValidFrom });
+        });
+
+        // ── Taxonomy ─────────────────────────────────────────────────────────
+        b.Entity<Taxonomy>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Domain).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Code).HasMaxLength(80).IsRequired();
+            e.Property(x => x.Label).HasMaxLength(200);
+            e.HasIndex(x => new { x.Domain, x.Code }).IsUnique();
+            e.HasOne(x => x.Parent).WithMany().HasForeignKey(x => x.ParentId)
+                .OnDelete(DeleteBehavior.Restrict);
+        });
+
+        b.Entity<EntityTaxonomy>(e =>
+        {
+            e.HasKey(x => new { x.EntityId, x.TaxonomyId, x.StoryValidFrom });
+            e.HasOne(x => x.Entity).WithMany(x => x.Taxonomies)
+                .HasForeignKey(x => x.EntityId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Taxonomy).WithMany(x => x.EntityLinks)
+                .HasForeignKey(x => x.TaxonomyId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => x.TaxonomyId);
+        });
+
+        // ── Tag ──────────────────────────────────────────────────────────────
+        b.Entity<Tag>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(120).IsRequired();
+            e.HasIndex(x => x.Name).IsUnique();
+        });
+
+        b.Entity<EntityTag>(e =>
+        {
+            e.HasKey(x => new { x.EntityId, x.TagId });
+            e.HasOne(x => x.Entity).WithMany(x => x.Tags)
+                .HasForeignKey(x => x.EntityId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Tag).WithMany(x => x.EntityLinks)
+                .HasForeignKey(x => x.TagId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.TagId);
+        });
+
+        // ── Character (TPT subtype, fully columnar) ──────────────────────────
+        b.Entity<Character>(e =>
+        {
+            e.HasKey(x => x.Id);
+            // Names — every character lookup goes through these, so all four are bounded
+            // and indexed. FullName mirrors Entity.Name so this table stands alone.
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.FirstName).HasMaxLength(200);
+            e.Property(x => x.MiddleName).HasMaxLength(200);
+            e.Property(x => x.LastName).HasMaxLength(200);
+            e.Property(x => x.TitlePrefix).HasMaxLength(40);
+            // Identity / classification — bounded for indexing.
+            e.Property(x => x.Species).HasMaxLength(40);
+            e.Property(x => x.KindOfBeing).HasMaxLength(40);
+            e.Property(x => x.Gender).HasMaxLength(40);
+            e.Property(x => x.Pronouns).HasMaxLength(40);
+            // Prose-content fields kept as NVARCHAR(MAX) — these can run hundreds
+            // of characters describing physical detail, life history, etc. Earlier
+            // bounded sizes (40/80/120) were silently rejecting >70% of imports.
+            // LifeStatus / TerritoryRange / HairLength can be either a short tag
+            // ("alive", "long") or a full sentence — leave unbounded.
+            e.Property(x => x.HomeTurf).HasMaxLength(450);
+            e.Property(x => x.TerritoryHomeTurf).HasMaxLength(450);
+            // Belongings scalars — refs to other entities by name, fits in 450.
+            e.Property(x => x.BelongingsPrimaryWeapon).HasMaxLength(450);
+            e.Property(x => x.BelongingsSecondaryWeapon).HasMaxLength(450);
+            e.Property(x => x.BelongingsArmor).HasMaxLength(450);
+            e.Property(x => x.BelongingsVehicle).HasMaxLength(450);
+            e.Property(x => x.BelongingsResidence).HasMaxLength(450);
+            e.Property(x => x.BelongingsClothingStyle).HasMaxLength(450);
+            e.Property(x => x.BelongingsFavoriteDrink).HasMaxLength(450);
+            e.Property(x => x.BelongingsFavoriteFood).HasMaxLength(450);
+            e.Property(x => x.BelongingsStimulant).HasMaxLength(450);
+            e.Property(x => x.BelongingsCommDevice).HasMaxLength(450);
+
+            e.HasOne(x => x.Entity).WithOne()
+                .HasForeignKey<Character>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+
+            e.HasIndex(x => x.Species);
+            e.HasIndex(x => x.KindOfBeing);
+            // Name lookups: roster sort by surname, "everyone with first name X",
+            // and full-name exact match all need their own index.
+            e.HasIndex(x => x.Name).HasDatabaseName("IX_Characters_Name");
+            e.HasIndex(x => x.FirstName).HasDatabaseName("IX_Characters_FirstName");
+            e.HasIndex(x => x.LastName).HasDatabaseName("IX_Characters_LastName");
+            e.HasIndex(x => new { x.LastName, x.FirstName }).HasDatabaseName("IX_Characters_LastFirst");
+            e.HasIndex(x => x.Affiliation).HasFilter("[Affiliation] IS NOT NULL AND [Affiliation] <> ''")
+                .HasDatabaseName("IX_Characters_Affiliation");
+            e.HasIndex(x => x.HomeTurf).HasDatabaseName("IX_Characters_HomeTurf");
+            e.HasIndex(x => x.TerritoryHomeTurf).HasDatabaseName("IX_Characters_TerritoryHomeTurf");
+            // Belongings indexes — "who carries Silence?", "who lives in this district?"
+            e.HasIndex(x => x.BelongingsPrimaryWeapon).HasDatabaseName("IX_Characters_PrimaryWeapon");
+            e.HasIndex(x => x.BelongingsSecondaryWeapon).HasDatabaseName("IX_Characters_SecondaryWeapon");
+            e.HasIndex(x => x.BelongingsVehicle).HasDatabaseName("IX_Characters_Vehicle");
+            e.HasIndex(x => x.BelongingsResidence).HasDatabaseName("IX_Characters_Residence");
+        });
+
+        // Per-character bridge tables — every list/dict/heterogeneous bag.
+        b.Entity<CharacterAlias>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Value).HasMaxLength(450);
+            e.HasOne(x => x.Character).WithMany(x => x.Aliases)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Position });
+            e.HasIndex(x => x.Value);
+        });
+
+        b.Entity<CharacterStoryHook>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Character).WithMany(x => x.StoryHooks)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Position });
+        });
+
+        b.Entity<CharacterArchetypeScore>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.ArchetypeName).HasMaxLength(120);
+            e.HasOne(x => x.Character).WithMany(x => x.ArchetypeScores)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.ArchetypeName }).IsUnique();
+            e.HasIndex(x => x.ArchetypeName);
+        });
+
+        b.Entity<CharacterGeneticAncestry>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Region).HasMaxLength(120);
+            e.HasOne(x => x.Character).WithMany(x => x.GeneticAncestry)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Region }).IsUnique();
+            e.HasIndex(x => x.Region);
+        });
+
+        b.Entity<CharacterAncestryDetail>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Region).HasMaxLength(120);
+            e.Property(x => x.SubRegion).HasMaxLength(120);
+            e.Property(x => x.Nationality).HasMaxLength(120);
+            e.HasOne(x => x.Character).WithMany(x => x.AncestryDetail)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Region, x.SubRegion, x.Nationality }).IsUnique();
+            e.HasIndex(x => x.Nationality);
+        });
+
+        b.Entity<CharacterPsychologyTrait>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Bucket).HasMaxLength(40);
+            e.HasOne(x => x.Character).WithMany(x => x.PsychologyTraits)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Bucket, x.Position });
+        });
+
+        b.Entity<CharacterSpeechPhrase>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Bucket).HasMaxLength(40);
+            e.HasOne(x => x.Character).WithMany(x => x.SpeechPhrases)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Bucket, x.Position });
+        });
+
+        b.Entity<CharacterBehavioralRule>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Bucket).HasMaxLength(40);
+            e.HasOne(x => x.Character).WithMany(x => x.BehavioralRules)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Bucket, x.Position });
+        });
+
+        b.Entity<CharacterBehavioralMap>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Bucket).HasMaxLength(40);
+            e.Property(x => x.KeyName).HasMaxLength(200);
+            e.HasOne(x => x.Character).WithMany(x => x.BehavioralMaps)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Bucket, x.KeyName }).IsUnique();
+        });
+
+        b.Entity<CharacterStatScalar>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Bucket).HasMaxLength(40);
+            e.Property(x => x.KeyName).HasMaxLength(200);
+            e.Property(x => x.ValueKind).HasMaxLength(20);
+            e.HasOne(x => x.Character).WithMany(x => x.StatScalars)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Bucket, x.KeyName }).IsUnique();
+            e.HasIndex(x => new { x.Bucket, x.KeyName });
+        });
+
+        b.Entity<CharacterStatPhrase>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Bucket).HasMaxLength(40);
+            e.HasOne(x => x.Character).WithMany(x => x.StatPhrases)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Bucket, x.Position });
+        });
+
+        b.Entity<CharacterPhysicalMark>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Character).WithMany(x => x.PhysicalMarks)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Position });
+        });
+
+        b.Entity<CharacterTerritoryZone>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Bucket).HasMaxLength(20);
+            e.Property(x => x.Zone).HasMaxLength(450);
+            e.HasOne(x => x.Character).WithMany(x => x.TerritoryZones)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Bucket, x.Position });
+            e.HasIndex(x => x.Zone);
+        });
+
+        b.Entity<CharacterTerritoryReputation>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Zone).HasMaxLength(450);
+            e.HasOne(x => x.Character).WithMany(x => x.TerritoryReputations)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Zone }).IsUnique();
+        });
+
+        b.Entity<CharacterBelongingsGear>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Bucket).HasMaxLength(40);
+            e.HasOne(x => x.Character).WithMany(x => x.BelongingsGear)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.GearEntity)
+                .WithMany()
+                .HasForeignKey(x => x.GearEntityId)
+                // NoAction avoids the multi-cascade-path conflict (this row
+                // already cascades from Characters → Entities). Entities are
+                // archived (IsActive=0), not deleted, so cleanup isn't needed.
+                .OnDelete(DeleteBehavior.NoAction);
+            e.HasIndex(x => new { x.CharacterId, x.Bucket, x.Position });
+            // "Who owns weapon X" lookups need this; resolves to a real entity
+            // when the importer / linker can match GearName → Entities.Id.
+            e.HasIndex(x => x.GearEntityId);
+        });
+
+        b.Entity<CharacterBelongingsExtra>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.KeyName).HasMaxLength(200);
+            e.HasOne(x => x.Character).WithMany(x => x.BelongingsExtras)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.KeyName }).IsUnique();
+        });
+
+        b.Entity<CharacterBioBatteryThreshold>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Threshold).HasMaxLength(40);
+            e.HasOne(x => x.Character).WithMany(x => x.BioBatteryThresholds)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Threshold }).IsUnique();
+        });
+
+        b.Entity<CharacterNeuralAbility>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(200);
+            e.HasOne(x => x.Character).WithMany(x => x.NeuralAbilities)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Position });
+            e.HasIndex(x => x.Name);
+        });
+
+        b.Entity<CharacterChangelogRow>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.StoryId).HasMaxLength(80);
+            e.Property(x => x.Beat).HasMaxLength(80);
+            e.Property(x => x.FieldName).HasMaxLength(200);
+            e.HasOne(x => x.Character).WithMany(x => x.Changelog)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Position });
+            e.HasIndex(x => new { x.CharacterId, x.InWorldDate });
+            e.HasIndex(x => x.StoryId);
+        });
+
+        b.Entity<CharacterCyberware>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            // BodyLocation / Tier / Condition often carry multi-clause prose
+            // ("Tier 3 — infrastructure deployment, corponation-controlled…"),
+            // so keep them NVARCHAR(MAX). Manufacturer stays at 450 because
+            // it's a name and we want it indexable.
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.HasOne(x => x.Character).WithMany(x => x.Cyberware)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.CharacterId);
+            e.HasIndex(x => x.Name);
+        });
+
+        b.Entity<CharacterKnowledgeRow>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Topic).HasMaxLength(450);
+            e.HasOne(x => x.Character).WithMany(x => x.Knowledge)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Topic });
+            e.HasIndex(x => x.LearnedChapter);
+        });
+
+        b.Entity<CharacterKnowledgeEntity>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.EntityRef).HasMaxLength(80);
+            e.HasOne(x => x.Knowledge).WithMany(x => x.RelatedEntities)
+                .HasForeignKey(x => x.KnowledgeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.KnowledgeId, x.Position });
+            e.HasIndex(x => x.EntityRef);
+        });
+
+        b.Entity<CharacterConditionRow>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Kind).HasMaxLength(40);
+            e.Property(x => x.Severity).HasMaxLength(40);
+            e.HasOne(x => x.Character).WithMany(x => x.Conditions)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.Kind });
+        });
+
+        b.Entity<CharacterRelationshipRow>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.TargetName).HasMaxLength(400);
+            e.Property(x => x.Status).HasMaxLength(40);
+            e.HasOne(x => x.Character).WithMany(x => x.Relationships)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.TargetName });
+            e.HasIndex(x => x.TargetEntityId);
+        });
+
+        b.Entity<CharacterTimelineEvent>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.StoryId).HasMaxLength(80);
+            e.HasOne(x => x.Character).WithMany(x => x.Timeline)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CharacterId, x.StoryId });
+            e.HasIndex(x => new { x.CharacterId, x.InWorldDate });
+        });
+
+        b.Entity<CharacterTimelineBodyChange>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.TimelineEvent).WithMany(x => x.BodyChanges)
+                .HasForeignKey(x => x.TimelineEventId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.TimelineEventId, x.Position });
+        });
+
+        // Resolved-entity bridges — keep Alias for fallback display, FK for joins.
+        b.Entity<CharacterHomeTurf>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Character).WithMany(x => x.HomeTurfs)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            // Restrict on the Place side: deleting a Place that's still referenced
+            // by a character would silently break the character's record. The
+            // archive flow (Entity.IsActive=false) is the right way to retire a place.
+            e.HasOne(x => x.Place).WithMany()
+                .HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.CharacterId, x.Position });
+            e.HasIndex(x => x.PlaceId);
+            e.HasIndex(x => x.Alias);
+        });
+
+        b.Entity<CharacterAffiliation>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Character).WithMany(x => x.Affiliations)
+                .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Faction).WithMany()
+                .HasForeignKey(x => x.FactionId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.CharacterId, x.Position });
+            e.HasIndex(x => x.FactionId);
+            e.HasIndex(x => x.Alias);
+        });
+
+        // ── Subtype tables (TPT — Id is PK + FK to Entity.Id) ────────────────
+        // Each follows the same shape: small set of indexed columns + DataJson blob
+        // for the rest of the source record. Indexes are tuned for the queries the
+        // existing pages run today: list-by-tier, filter-by-manufacturer, etc.
+
+        // Place — fully relational. Scalars + 10 bridge tables. Replaces the
+        // old DataJson-backed Place subtype.
+        b.Entity<Place>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Climate).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne()
+                .HasForeignKey<Place>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Climate);
+            e.HasIndex(x => x.Name);
+        });
+        ConfigurePlaceBridges(b);
+
+        // Faction — fully relational. Scalars + 7 bridge tables. Replaces the
+        // old DataJson-backed Faction subtype.
+        b.Entity<Faction>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Allegiance).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne()
+                .HasForeignKey<Faction>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Allegiance);
+            e.HasIndex(x => x.Name);
+        });
+        ConfigureFactionBridges(b);
+        // Corponation — fully relational. CommonNames bridge.
+        b.Entity<Corponation>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.FullLegalName).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne()
+                .HasForeignKey<Corponation>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Name);
+        });
+        b.Entity<CorponationCommonName>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Value).HasMaxLength(450);
+            e.HasOne(x => x.Corponation).WithMany(x => x.CommonNames)
+                .HasForeignKey(x => x.CorponationId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.CorponationId, x.Position });
+            e.HasIndex(x => x.Value);
+        });
+
+        // Subsidiary — fully relational. ParentCorponationId resolves to Entity.
+        b.Entity<Subsidiary>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.ParentCorponationAlias).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne()
+                .HasForeignKey<Subsidiary>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.ParentCorponation).WithMany()
+                .HasForeignKey(x => x.ParentCorponationId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => x.ParentCorponationId);
+            e.HasIndex(x => x.Name);
+            e.HasIndex(x => x.ParentCorponationAlias);
+        });
+        b.Entity<SubsidiaryProduct>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Subsidiary).WithMany(x => x.KnownProducts)
+                .HasForeignKey(x => x.SubsidiaryId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Product).WithMany()
+                .HasForeignKey(x => x.ProductEntityId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.SubsidiaryId, x.Position });
+            e.HasIndex(x => x.ProductEntityId);
+            e.HasIndex(x => x.Alias);
+        });
+
+        // SyntheticLife — fully relational. Includes Ceramic Man optional fields.
+        b.Entity<SyntheticLife>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.KindOfBeing).HasMaxLength(40);
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Classification).HasMaxLength(120);
+            e.HasOne(x => x.Entity).WithOne()
+                .HasForeignKey<SyntheticLife>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.KindOfBeing);
+            e.HasIndex(x => x.Manufacturer);
+            e.HasIndex(x => x.Classification);
+            e.HasIndex(x => x.Name);
+        });
+        b.Entity<SyntheticLifeAlias>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Value).HasMaxLength(450);
+            e.HasOne(x => x.SyntheticLife).WithMany(x => x.Aliases)
+                .HasForeignKey(x => x.SyntheticLifeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.SyntheticLifeId, x.Position });
+            e.HasIndex(x => x.Value);
+        });
+        b.Entity<SyntheticLifeStoryHook>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.SyntheticLife).WithMany(x => x.StoryHooks)
+                .HasForeignKey(x => x.SyntheticLifeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.SyntheticLifeId, x.Position });
+        });
+        b.Entity<SyntheticLifeKnownAssociation>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.SyntheticLife).WithMany(x => x.KnownAssociations)
+                .HasForeignKey(x => x.SyntheticLifeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Associate).WithMany()
+                .HasForeignKey(x => x.AssociateEntityId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.SyntheticLifeId, x.Position });
+            e.HasIndex(x => x.AssociateEntityId);
+            e.HasIndex(x => x.Alias);
+        });
+
+        // Automaton — fully relational. Armament resolves to Weapon FK,
+        // Deployments resolve to any-type entity FK.
+        b.Entity<Automaton>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.KindOfBeing).HasMaxLength(40);
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.Property(x => x.Operator).HasMaxLength(450);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Classification).HasMaxLength(120);
+            e.Property(x => x.AutonomyLevel).HasMaxLength(80);
+            e.HasOne(x => x.Entity).WithOne()
+                .HasForeignKey<Automaton>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.KindOfBeing);
+            e.HasIndex(x => x.Manufacturer);
+            e.HasIndex(x => x.Operator);
+            e.HasIndex(x => x.Classification);
+            e.HasIndex(x => x.Name);
+        });
+        b.Entity<AutomatonAlias>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Value).HasMaxLength(450);
+            e.HasOne(x => x.Automaton).WithMany(x => x.Aliases)
+                .HasForeignKey(x => x.AutomatonId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.AutomatonId, x.Position });
+            e.HasIndex(x => x.Value);
+        });
+        b.Entity<AutomatonArmament>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Automaton).WithMany(x => x.Armament)
+                .HasForeignKey(x => x.AutomatonId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Weapon).WithMany()
+                .HasForeignKey(x => x.WeaponId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.AutomatonId, x.Position });
+            e.HasIndex(x => x.WeaponId);
+            e.HasIndex(x => x.Alias);
+        });
+        b.Entity<AutomatonSensor>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.SensorName).HasMaxLength(200);
+            e.HasOne(x => x.Automaton).WithMany(x => x.Sensors)
+                .HasForeignKey(x => x.AutomatonId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.AutomatonId, x.Position });
+        });
+        b.Entity<AutomatonDeployment>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Automaton).WithMany(x => x.KnownDeployments)
+                .HasForeignKey(x => x.AutomatonId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.DeploymentEntity).WithMany()
+                .HasForeignKey(x => x.DeploymentEntityId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.AutomatonId, x.Position });
+            e.HasIndex(x => x.DeploymentEntityId);
+        });
+        b.Entity<AutomatonStoryHook>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Automaton).WithMany(x => x.StoryHooks)
+                .HasForeignKey(x => x.AutomatonId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.AutomatonId, x.Position });
+        });
+        ConfigureGear(b);
+        ConfigureMisc(b);
+
+        // ── Books / chapters / beats ─────────────────────────────────────────
+        b.Entity<Book>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Title).HasMaxLength(400);
+            e.Property(x => x.Slug).HasMaxLength(400);
+            e.HasIndex(x => x.Slug).IsUnique();
+            e.HasIndex(x => x.SeriesId);
+        });
+        b.Entity<BookProtagonist>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Book).WithMany(x => x.Protagonists).HasForeignKey(x => x.BookId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Character).WithMany().HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.BookId, x.Position });
+            e.HasIndex(x => x.CharacterId);
+        });
+        b.Entity<BookChapterOrder>(e => {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Book).WithMany(x => x.ChapterOrder).HasForeignKey(x => x.BookId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Chapter).WithMany().HasForeignKey(x => x.ChapterId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.BookId, x.Position }).IsUnique();
+            e.HasIndex(x => x.ChapterId);
+        });
+
+        b.Entity<Series>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(400);
+            e.Property(x => x.Title).HasMaxLength(400);
+            e.Property(x => x.Slug).HasMaxLength(400);
+            e.HasIndex(x => x.Slug).IsUnique();
+            e.HasIndex(x => x.Name);
+        });
+
+        b.Entity<Chapter>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Title).HasMaxLength(400);
+            e.HasIndex(x => x.BookId);
+            e.HasIndex(x => new { x.BookId, x.Number });
+            e.HasIndex(x => x.InWorldDate);
+        });
+        b.Entity<ChapterCharacter>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Chapter).WithMany(x => x.CharactersMentioned).HasForeignKey(x => x.ChapterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Character).WithMany().HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.ChapterId, x.Position });
+            e.HasIndex(x => x.CharacterId);
+        });
+
+        b.Entity<ChapterBeat>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Title).HasMaxLength(400);
+            e.HasOne(x => x.Chapter).WithMany(x => x.Beats)
+                .HasForeignKey(x => x.ChapterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.ChapterId, x.Index });
+            e.HasIndex(x => x.BeatGuid).IsUnique();
+            // 23rd-century beat date — supports timeline scans by date range.
+            e.HasIndex(x => x.InWorldDate);
+        });
+
+        // ── Settings (single-document) ────────────────────────────────────────
+        b.Entity<Setting>(e =>
+        {
+            e.HasKey(x => x.Key);
+            e.Property(x => x.Key).HasMaxLength(120);
+        });
+
+        // ── WeaponSpec (per-weapon structured key/value spec rows) ───────────
+        b.Entity<WeaponSpec>(e =>
+        {
+            e.ToTable("WeaponSpecs");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.SpecKey).HasMaxLength(80);
+            e.HasOne(x => x.Weapon)
+                .WithMany()
+                .HasForeignKey(x => x.WeaponId)
+                .OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.WeaponId, x.SpecKey });
+            e.HasIndex(x => x.SpecKey);
+        });
+
+        // ── World-state ledger (per-event append-only) ───────────────────────
+        b.Entity<EntityStateEvent>(e =>
+        {
+            e.ToTable("EntityStateEvents");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.AspectKey).HasMaxLength(200);
+            e.Property(x => x.Verb).HasMaxLength(20);
+            e.Property(x => x.Source).HasMaxLength(200);
+            // OldValue / NewValue / Snippet stay NVARCHAR(MAX) — values can be
+            // long JSON blobs or quoted prose.
+            e.HasOne(x => x.Entity)
+                .WithMany()
+                .HasForeignKey(x => x.EntityId)
+                .OnDelete(DeleteBehavior.Cascade);
+            // Hot path: "what was X's location at time T?" → seek by
+            // (EntityId, AspectKey) then walk by AtStoryTime.
+            e.HasIndex(x => new { x.EntityId, x.AspectKey, x.AtStoryTime });
+            // Timeline-axis scans (vis-timeline, contradiction detector).
+            e.HasIndex(x => x.AtStoryTime);
+            // "All events tied to chapter X" rollups.
+            e.HasIndex(x => x.ChapterId);
+            e.HasIndex(x => x.BeatGuid);
+        });
+
+        // ── Continuity store (migrated from SQLite continuity.db) ────────────
+        b.Entity<ContinuityClaim>(e =>
+        {
+            e.ToTable("ContinuityClaims");
+            e.HasKey(x => x.ClaimUid);
+            e.Property(x => x.ClaimUid).HasMaxLength(80);
+            e.Property(x => x.EntityId).HasMaxLength(80);
+            e.Property(x => x.EntityName).HasMaxLength(400);
+            e.Property(x => x.EntityKind).HasMaxLength(40);
+            e.Property(x => x.Predicate).HasMaxLength(120);
+            e.Property(x => x.Status).HasMaxLength(20);
+            e.Property(x => x.SourceType).HasMaxLength(40);
+            // Existing model holds ExtractedBy as List<string>; persist via a JSON
+            // backing column so we don't need a child table.
+            e.Property(x => x.ExtractedBy)
+                .HasConversion(
+                    list => System.Text.Json.JsonSerializer.Serialize(list, (System.Text.Json.JsonSerializerOptions?)null),
+                    json => string.IsNullOrEmpty(json)
+                        ? new List<string>()
+                        : System.Text.Json.JsonSerializer.Deserialize<List<string>>(json, (System.Text.Json.JsonSerializerOptions?)null) ?? new List<string>());
+            e.HasIndex(x => new { x.EntityId, x.Predicate });
+            e.HasIndex(x => x.Status);
+            e.HasIndex(x => x.SourceType);
+            // 23rd-century in-world date for asOf queries (e.g. "what was true on 2256-04-15").
+            e.HasIndex(x => x.StoryDate);
+        });
+
+        b.Entity<ClaimContradictionRow>(e =>
+        {
+            e.ToTable("ClaimContradictions");
+            e.HasKey(x => new { x.AUid, x.BUid });
+            e.Property(x => x.AUid).HasMaxLength(80);
+            e.Property(x => x.BUid).HasMaxLength(80);
+        });
+
+        b.Entity<ClaimConfirmationRow>(e =>
+        {
+            e.ToTable("ClaimConfirmations");
+            e.HasKey(x => new { x.ClaimUid, x.SourceChapterId, x.SourcePath });
+            e.Property(x => x.ClaimUid).HasMaxLength(80);
+            e.Property(x => x.SourceChapterId).HasMaxLength(80);
+            e.Property(x => x.SourcePath).HasMaxLength(400);
+        });
+
+        b.Entity<ExtractionRunRow>(e =>
+        {
+            e.ToTable("ExtractionRuns");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.ScopeType).HasMaxLength(40);
+            e.Property(x => x.ScopeId).HasMaxLength(80);
+            e.HasIndex(x => x.StartedAt);
+        });
+    }
+
+    /// <summary>Configures all 14 misc story/canon types and their bridges.</summary>
+    private static void ConfigureMisc(ModelBuilder b)
+    {
+        // Archetype
+        b.Entity<ArchetypeRow>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Family).HasMaxLength(120);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<ArchetypeRow>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Name); e.HasIndex(x => x.Family); e.HasIndex(x => x.Category);
+        });
+        b.Entity<ArchetypeWillAlways>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Archetype).WithMany(x => x.WillAlways).HasForeignKey(x => x.ArchetypeId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.ArchetypeId, x.Position }); });
+        b.Entity<ArchetypeWillNever>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Archetype).WithMany(x => x.WillNever).HasForeignKey(x => x.ArchetypeId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.ArchetypeId, x.Position }); });
+        b.Entity<ArchetypeUnless>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Archetype).WithMany(x => x.Unless).HasForeignKey(x => x.ArchetypeId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.ArchetypeId, x.Position }); });
+        b.Entity<ArchetypeSimilar>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Archetype).WithMany(x => x.SimilarTo).HasForeignKey(x => x.ArchetypeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Similar).WithMany().HasForeignKey(x => x.SimilarArchetypeId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.ArchetypeId, x.Position }); e.HasIndex(x => x.SimilarArchetypeId);
+        });
+        b.Entity<ArchetypeOpposite>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Archetype).WithMany(x => x.OppositeOf).HasForeignKey(x => x.ArchetypeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Opposite).WithMany().HasForeignKey(x => x.OppositeArchetypeId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.ArchetypeId, x.Position }); e.HasIndex(x => x.OppositeArchetypeId);
+        });
+
+        // Quote
+        b.Entity<Quote>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Attribution).HasMaxLength(450);
+            e.Property(x => x.Theme).HasMaxLength(120);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Quote>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Attribution); e.HasIndex(x => x.Theme); e.HasIndex(x => x.Category);
+        });
+
+        // News
+        b.Entity<News>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Outlet).HasMaxLength(200);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<News>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Outlet); e.HasIndex(x => x.PublishedDate); e.HasIndex(x => x.Category);
+            e.HasIndex(x => x.Name);
+        });
+        b.Entity<NewsEntityInvolved>(e => {
+            e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.News).WithMany(x => x.EntitiesInvolved).HasForeignKey(x => x.NewsId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.InvolvedEntity).WithMany().HasForeignKey(x => x.InvolvedEntityId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.NewsId, x.Position }); e.HasIndex(x => x.InvolvedEntityId);
+        });
+        b.Entity<NewsLocation>(e => {
+            e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.News).WithMany(x => x.Locations).HasForeignKey(x => x.NewsId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Place).WithMany().HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.NewsId, x.Position }); e.HasIndex(x => x.PlaceId);
+        });
+
+        // Contract
+        b.Entity<ContractEntity>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Codename).HasMaxLength(120);
+            e.Property(x => x.ContractStatus).HasMaxLength(40);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<ContractEntity>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.ClientEntity).WithMany().HasForeignKey(x => x.ClientEntityId).OnDelete(DeleteBehavior.Restrict);
+            e.HasOne(x => x.LocationPlace).WithMany().HasForeignKey(x => x.LocationPlaceId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => x.Codename); e.HasIndex(x => x.ContractStatus);
+            e.HasIndex(x => x.ClientEntityId); e.HasIndex(x => x.LocationPlaceId);
+        });
+        b.Entity<ContractBonusRow>(e => { e.HasKey(x => x.Id); e.Property(x => x.BonusType).HasMaxLength(80); e.HasOne(x => x.Contract).WithMany(x => x.Bonuses).HasForeignKey(x => x.ContractId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.ContractId, x.Position }); });
+        b.Entity<ContractComplication>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Contract).WithMany(x => x.Complications).HasForeignKey(x => x.ContractId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.ContractId, x.Position }); });
+
+        // Document
+        b.Entity<DocumentEntity>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Title).HasMaxLength(400);
+            e.Property(x => x.FileName).HasMaxLength(400);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<DocumentEntity>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Title); e.HasIndex(x => x.FileName); e.HasIndex(x => x.Category);
+        });
+        b.Entity<DocumentHeading>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Document).WithMany(x => x.Headings).HasForeignKey(x => x.DocumentId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.DocumentId, x.Position }); });
+
+        // Vocabulary
+        b.Entity<Vocabulary>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(200);
+            e.Property(x => x.Term).HasMaxLength(200);
+            e.Property(x => x.Domain).HasMaxLength(120);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Vocabulary>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Term); e.HasIndex(x => x.Domain); e.HasIndex(x => x.Category);
+        });
+
+        // LabSpecimen
+        b.Entity<LabSpecimen>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Classification).HasMaxLength(120);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<LabSpecimen>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Classification); e.HasIndex(x => x.Name);
+        });
+        b.Entity<LabSpecimenAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.LabSpecimen).WithMany(x => x.Aliases).HasForeignKey(x => x.LabSpecimenId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.LabSpecimenId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<LabSpecimenKnownLocation>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.LabSpecimen).WithMany(x => x.KnownLocations).HasForeignKey(x => x.LabSpecimenId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Place).WithMany().HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.LabSpecimenId, x.Position }); e.HasIndex(x => x.PlaceId); });
+        b.Entity<LabSpecimenStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.LabSpecimen).WithMany(x => x.StoryHooks).HasForeignKey(x => x.LabSpecimenId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.LabSpecimenId, x.Position }); });
+
+        // Psionic
+        b.Entity<Psionic>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Discipline).HasMaxLength(120);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Psionic>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Discipline); e.HasIndex(x => x.Name);
+        });
+        b.Entity<PsionicAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Psionic).WithMany(x => x.Aliases).HasForeignKey(x => x.PsionicId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.PsionicId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<PsionicKnownPractitioner>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Psionic).WithMany(x => x.KnownPractitioners).HasForeignKey(x => x.PsionicId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Character).WithMany().HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.PsionicId, x.Position }); e.HasIndex(x => x.CharacterId); });
+        b.Entity<PsionicStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Psionic).WithMany(x => x.StoryHooks).HasForeignKey(x => x.PsionicId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.PsionicId, x.Position }); });
+
+        // Technology
+        b.Entity<Technology>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.Property(x => x.Subcategory).HasMaxLength(120);
+            e.Property(x => x.BrandName).HasMaxLength(200);
+            e.Property(x => x.ProductName).HasMaxLength(200);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Technology>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Category); e.HasIndex(x => x.Name); e.HasIndex(x => x.BrandName);
+        });
+        b.Entity<TechnologyAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Technology).WithMany(x => x.Aliases).HasForeignKey(x => x.TechnologyId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.TechnologyId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<TechnologyDeveloper>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Technology).WithMany(x => x.Developers).HasForeignKey(x => x.TechnologyId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Developer).WithMany().HasForeignKey(x => x.DeveloperEntityId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.TechnologyId, x.Position }); e.HasIndex(x => x.DeveloperEntityId); });
+        b.Entity<TechnologyBaseTechnology>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Technology).WithMany(x => x.BaseTechnologies).HasForeignKey(x => x.TechnologyId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.BaseTechnology).WithMany().HasForeignKey(x => x.BaseTechnologyId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.TechnologyId, x.Position }); e.HasIndex(x => x.BaseTechnologyId); });
+        b.Entity<TechnologyEnables>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Technology).WithMany(x => x.Enables).HasForeignKey(x => x.TechnologyId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Enabled).WithMany().HasForeignKey(x => x.EnabledEntityId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.TechnologyId, x.Position }); e.HasIndex(x => x.EnabledEntityId); });
+        b.Entity<TechnologyStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Technology).WithMany(x => x.StoryHooks).HasForeignKey(x => x.TechnologyId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.TechnologyId, x.Position }); });
+
+        // Facet
+        b.Entity<Facet>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Label).HasMaxLength(200);
+            e.Property(x => x.Domain).HasMaxLength(120);
+            e.Property(x => x.Model).HasMaxLength(80);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Facet>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Domain); e.HasIndex(x => x.Name);
+        });
+        b.Entity<FacetTrigger>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Facet).WithMany(x => x.Triggers).HasForeignKey(x => x.FacetId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.FacetId, x.Position }); });
+        b.Entity<FacetCoreMemory>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Facet).WithMany(x => x.CoreMemories).HasForeignKey(x => x.FacetId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.FacetId, x.Position }); });
+        b.Entity<FacetVoiceProhibition>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Facet).WithMany(x => x.VoiceProhibitions).HasForeignKey(x => x.FacetId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.FacetId, x.Position }); });
+
+        // Motif
+        b.Entity<Motif>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Motif>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Name);
+        });
+        b.Entity<MotifAppearance>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Motif).WithMany(x => x.Appearances).HasForeignKey(x => x.MotifId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.MotifId, x.Position }); });
+
+        // Entertainment
+        b.Entity<Entertainment>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Entertainment>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Category); e.HasIndex(x => x.Genre); e.HasIndex(x => x.Name);
+        });
+        b.Entity<EntertainmentAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Entertainment).WithMany(x => x.Aliases).HasForeignKey(x => x.EntertainmentId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.EntertainmentId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<EntertainmentKnownFan>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Entertainment).WithMany(x => x.KnownFans).HasForeignKey(x => x.EntertainmentId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Character).WithMany().HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.EntertainmentId, x.Position }); e.HasIndex(x => x.CharacterId); });
+        b.Entity<EntertainmentStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Entertainment).WithMany(x => x.StoryHooks).HasForeignKey(x => x.EntertainmentId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.EntertainmentId, x.Position }); });
+
+        // FlyoverEntity (Wasteland)
+        b.Entity<FlyoverEntity>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Classification).HasMaxLength(120);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<FlyoverEntity>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Classification); e.HasIndex(x => x.Name);
+        });
+        b.Entity<FlyoverEntityAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.FlyoverEntity).WithMany(x => x.Aliases).HasForeignKey(x => x.FlyoverEntityId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.FlyoverEntityId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<FlyoverEntityKnownLocation>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.FlyoverEntity).WithMany(x => x.KnownLocations).HasForeignKey(x => x.FlyoverEntityId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Place).WithMany().HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.FlyoverEntityId, x.Position }); e.HasIndex(x => x.PlaceId); });
+        b.Entity<FlyoverEntityStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.FlyoverEntity).WithMany(x => x.StoryHooks).HasForeignKey(x => x.FlyoverEntityId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.FlyoverEntityId, x.Position }); });
+    }
+
+    /// <summary>Configures all 10 gear types and their bridge tables in one pass.</summary>
+    private static void ConfigureGear(ModelBuilder b)
+    {
+        // Weapon
+        b.Entity<Weapon>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Weapon>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Manufacturer); e.HasIndex(x => x.Category);
+            e.HasIndex(x => x.Name);
+        });
+        b.Entity<WeaponAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Weapon).WithMany(x => x.Aliases).HasForeignKey(x => x.WeaponId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.WeaponId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<WeaponBaseTechnology>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Weapon).WithMany(x => x.BaseTechnologies).HasForeignKey(x => x.WeaponId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Technology).WithMany().HasForeignKey(x => x.TechnologyId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.WeaponId, x.Position }); e.HasIndex(x => x.TechnologyId); });
+        b.Entity<WeaponKnownUser>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Weapon).WithMany(x => x.KnownUsers).HasForeignKey(x => x.WeaponId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Character).WithMany().HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.WeaponId, x.Position }); e.HasIndex(x => x.CharacterId); });
+        b.Entity<WeaponAmmunitionType>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Weapon).WithMany(x => x.AmmunitionTypes).HasForeignKey(x => x.WeaponId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Ammunition).WithMany().HasForeignKey(x => x.AmmunitionId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.WeaponId, x.Position }); e.HasIndex(x => x.AmmunitionId); });
+        b.Entity<WeaponStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Weapon).WithMany(x => x.StoryHooks).HasForeignKey(x => x.WeaponId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.WeaponId, x.Position }); });
+
+        // Equipment
+        b.Entity<Equipment>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.BrandName).HasMaxLength(200);
+            e.Property(x => x.ProductName).HasMaxLength(200);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Equipment>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Manufacturer); e.HasIndex(x => x.Category);
+            e.HasIndex(x => x.Name); e.HasIndex(x => x.BrandName);
+        });
+        b.Entity<EquipmentAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Equipment).WithMany(x => x.Aliases).HasForeignKey(x => x.EquipmentId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.EquipmentId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<EquipmentBaseTechnology>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Equipment).WithMany(x => x.BaseTechnologies).HasForeignKey(x => x.EquipmentId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Technology).WithMany().HasForeignKey(x => x.TechnologyId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.EquipmentId, x.Position }); e.HasIndex(x => x.TechnologyId); });
+        b.Entity<EquipmentKnownUser>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Equipment).WithMany(x => x.KnownUsers).HasForeignKey(x => x.EquipmentId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Character).WithMany().HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.EquipmentId, x.Position }); e.HasIndex(x => x.CharacterId); });
+        b.Entity<EquipmentSpecification>(e => { e.HasKey(x => x.Id); e.Property(x => x.KeyName).HasMaxLength(200); e.HasOne(x => x.Equipment).WithMany(x => x.Specifications).HasForeignKey(x => x.EquipmentId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.EquipmentId, x.KeyName }).IsUnique(); });
+        b.Entity<EquipmentStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Equipment).WithMany(x => x.StoryHooks).HasForeignKey(x => x.EquipmentId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.EquipmentId, x.Position }); });
+
+        // Cyberware
+        b.Entity<Cyberware>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Cyberware>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Manufacturer);
+            e.HasIndex(x => x.Name);
+        });
+        b.Entity<CyberwareItemAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Cyberware).WithMany(x => x.Aliases).HasForeignKey(x => x.CyberwareId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.CyberwareId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<CyberwareItemSideEffect>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Cyberware).WithMany(x => x.SideEffects).HasForeignKey(x => x.CyberwareId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.CyberwareId, x.Position }); });
+        b.Entity<CyberwareItemKnownUser>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Cyberware).WithMany(x => x.KnownUsers).HasForeignKey(x => x.CyberwareId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Character).WithMany().HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.CyberwareId, x.Position }); e.HasIndex(x => x.CharacterId); });
+        b.Entity<CyberwareItemStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Cyberware).WithMany(x => x.StoryHooks).HasForeignKey(x => x.CyberwareId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.CyberwareId, x.Position }); });
+
+        // Apparel
+        b.Entity<Apparel>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Apparel>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Manufacturer); e.HasIndex(x => x.Category); e.HasIndex(x => x.Name);
+        });
+        b.Entity<ApparelAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Apparel).WithMany(x => x.Aliases).HasForeignKey(x => x.ApparelId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.ApparelId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<ApparelStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Apparel).WithMany(x => x.StoryHooks).HasForeignKey(x => x.ApparelId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.ApparelId, x.Position }); });
+
+        // Ammunition
+        b.Entity<Ammunition>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.Property(x => x.Caliber).HasMaxLength(80);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Ammunition>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Manufacturer); e.HasIndex(x => x.Caliber); e.HasIndex(x => x.Name);
+        });
+        b.Entity<AmmunitionAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Ammunition).WithMany(x => x.Aliases).HasForeignKey(x => x.AmmunitionId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.AmmunitionId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<AmmunitionCompatibleWeapon>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Ammunition).WithMany(x => x.CompatibleWeapons).HasForeignKey(x => x.AmmunitionId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Weapon).WithMany().HasForeignKey(x => x.WeaponId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.AmmunitionId, x.Position }); e.HasIndex(x => x.WeaponId); });
+        b.Entity<AmmunitionVariant>(e => { e.HasKey(x => x.Id); e.Property(x => x.VariantName).HasMaxLength(200); e.HasOne(x => x.Ammunition).WithMany(x => x.Variants).HasForeignKey(x => x.AmmunitionId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.AmmunitionId, x.Position }); });
+        b.Entity<AmmunitionStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Ammunition).WithMany(x => x.StoryHooks).HasForeignKey(x => x.AmmunitionId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.AmmunitionId, x.Position }); });
+
+        // Pharmaceutical
+        b.Entity<Pharmaceutical>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.Property(x => x.Subcategory).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Pharmaceutical>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Manufacturer); e.HasIndex(x => x.Category);
+            e.HasIndex(x => x.Name);
+        });
+        b.Entity<PharmAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Pharmaceutical).WithMany(x => x.Aliases).HasForeignKey(x => x.PharmaceuticalId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.PharmaceuticalId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<PharmEffect>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Pharmaceutical).WithMany(x => x.Effects).HasForeignKey(x => x.PharmaceuticalId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.PharmaceuticalId, x.Position }); });
+        b.Entity<PharmSideEffect>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Pharmaceutical).WithMany(x => x.SideEffects).HasForeignKey(x => x.PharmaceuticalId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.PharmaceuticalId, x.Position }); });
+        b.Entity<PharmStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Pharmaceutical).WithMany(x => x.StoryHooks).HasForeignKey(x => x.PharmaceuticalId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.PharmaceuticalId, x.Position }); });
+
+        // Genemod
+        b.Entity<Genemod>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Genemod>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Manufacturer); e.HasIndex(x => x.Category); e.HasIndex(x => x.Name);
+        });
+        b.Entity<GenemodAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Genemod).WithMany(x => x.Aliases).HasForeignKey(x => x.GenemodId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.GenemodId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<GenemodStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Genemod).WithMany(x => x.StoryHooks).HasForeignKey(x => x.GenemodId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.GenemodId, x.Position }); });
+
+        // Material
+        b.Entity<Material>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Material>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Category); e.HasIndex(x => x.Name);
+        });
+        b.Entity<MaterialAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Material).WithMany(x => x.Aliases).HasForeignKey(x => x.MaterialId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.MaterialId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<MaterialStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Material).WithMany(x => x.StoryHooks).HasForeignKey(x => x.MaterialId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.MaterialId, x.Position }); });
+
+        // Transportation
+        b.Entity<Transportation>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Transportation>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Manufacturer); e.HasIndex(x => x.Category); e.HasIndex(x => x.Name);
+        });
+        b.Entity<TransportationAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Transportation).WithMany(x => x.Aliases).HasForeignKey(x => x.TransportationId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.TransportationId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<TransportationStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Transportation).WithMany(x => x.StoryHooks).HasForeignKey(x => x.TransportationId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.TransportationId, x.Position }); });
+
+        // ConsumerGood
+        b.Entity<ConsumerGood>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<ConsumerGood>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Manufacturer); e.HasIndex(x => x.Category); e.HasIndex(x => x.Name);
+        });
+        b.Entity<ConsumerGoodAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.ConsumerGood).WithMany(x => x.Aliases).HasForeignKey(x => x.ConsumerGoodId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.ConsumerGoodId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<ConsumerGoodStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.ConsumerGood).WithMany(x => x.StoryHooks).HasForeignKey(x => x.ConsumerGoodId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.ConsumerGoodId, x.Position }); });
+    }
+
+    private static void ConfigurePlaceBridges(ModelBuilder b)
+    {
+        b.Entity<PlaceAlias>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Value).HasMaxLength(450);
+            e.HasOne(x => x.Place).WithMany(x => x.Aliases).HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.PlaceId, x.Position });
+            e.HasIndex(x => x.Value);
+        });
+        b.Entity<PlaceDanger>(e => {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Place).WithMany(x => x.Dangers).HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.PlaceId, x.Position });
+        });
+        b.Entity<PlaceOpportunity>(e => {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Place).WithMany(x => x.Opportunities).HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.PlaceId, x.Position });
+        });
+        b.Entity<PlaceStoryHook>(e => {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Place).WithMany(x => x.StoryHooks).HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.PlaceId, x.Position });
+        });
+        b.Entity<PlaceAtmosphereItem>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Bucket).HasMaxLength(20);
+            e.HasOne(x => x.Place).WithMany(x => x.AtmosphereItems).HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.PlaceId, x.Bucket, x.Position });
+        });
+        b.Entity<PlaceAdjacency>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Place).WithMany(x => x.Adjacencies).HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Neighbor).WithMany().HasForeignKey(x => x.NeighborId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.PlaceId, x.Position });
+            e.HasIndex(x => x.NeighborId);
+            e.HasIndex(x => x.Alias);
+        });
+        b.Entity<PlaceExitRow>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Direction).HasMaxLength(40);
+            e.Property(x => x.DestinationAlias).HasMaxLength(450);
+            e.Property(x => x.ExitType).HasMaxLength(40);
+            e.HasOne(x => x.Place).WithMany(x => x.Exits).HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Destination).WithMany().HasForeignKey(x => x.DestinationId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.PlaceId, x.Position });
+            e.HasIndex(x => x.DestinationId);
+            e.HasIndex(x => x.Direction);
+        });
+        b.Entity<PlaceFrequentBy>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Place).WithMany(x => x.FrequentedBy).HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Target).WithMany().HasForeignKey(x => x.TargetEntityId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.PlaceId, x.Position });
+            e.HasIndex(x => x.TargetEntityId);
+            e.HasIndex(x => x.Alias);
+        });
+        b.Entity<PlaceNotableLocation>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.LocationName).HasMaxLength(450);
+            e.HasOne(x => x.Place).WithMany(x => x.NotableLocations).HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.PlaceId, x.Position });
+            e.HasIndex(x => x.LocationName);
+        });
+        b.Entity<PlaceRelatedEntity>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Place).WithMany(x => x.RelatedEntities).HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Related).WithMany().HasForeignKey(x => x.RelatedEntityId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.PlaceId, x.Position });
+            e.HasIndex(x => x.RelatedEntityId);
+        });
+    }
+
+    private static void ConfigureFactionBridges(ModelBuilder b)
+    {
+        b.Entity<FactionAlias>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Value).HasMaxLength(450);
+            e.HasOne(x => x.Faction).WithMany(x => x.Aliases).HasForeignKey(x => x.FactionId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.FactionId, x.Position });
+            e.HasIndex(x => x.Value);
+        });
+        b.Entity<FactionMethod>(e => {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Faction).WithMany(x => x.Methods).HasForeignKey(x => x.FactionId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.FactionId, x.Position });
+        });
+        b.Entity<FactionResource>(e => {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Faction).WithMany(x => x.Resources).HasForeignKey(x => x.FactionId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.FactionId, x.Position });
+        });
+        b.Entity<FactionGoal>(e => {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Faction).WithMany(x => x.Goals).HasForeignKey(x => x.FactionId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.FactionId, x.Position });
+        });
+        b.Entity<FactionStoryHook>(e => {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Faction).WithMany(x => x.StoryHooks).HasForeignKey(x => x.FactionId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.FactionId, x.Position });
+        });
+        b.Entity<FactionRelationshipRow>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.Faction).WithMany(x => x.Relationships).HasForeignKey(x => x.FactionId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.TargetFaction).WithMany().HasForeignKey(x => x.TargetFactionId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.FactionId, x.Position });
+            e.HasIndex(x => x.TargetFactionId);
+            e.HasIndex(x => x.Alias);
+        });
+        b.Entity<FactionMemberRow>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.Property(x => x.Role).HasMaxLength(120);
+            e.Property(x => x.MemberStatus).HasMaxLength(40);
+            e.HasOne(x => x.Faction).WithMany(x => x.Members).HasForeignKey(x => x.FactionId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Character).WithMany().HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.FactionId, x.Position });
+            e.HasIndex(x => x.CharacterId);
+            e.HasIndex(x => x.Alias);
+        });
+    }
+
+    // ConfigureSubtype helper removed — every subtype is now configured explicitly
+    // in ConfigureGear / ConfigureMisc / per-type blocks above. The previous helper
+    // added a shadow DataJson string column to every subtype; eliminating it here
+    // is what finally retires the JSON-dump shape from the model.
+
+    /// <summary>
+    /// Tables that should be system-versioned. Adding/removing here is the only
+    /// place the temporal-on/off decision lives.
+    /// </summary>
+    public static readonly string[] SystemVersionedTables =
+    {
+        "Entities", "Records", "EntityProperties", "Edges",
+        // Character relational schema — every bridge table is rewindable so that
+        // "what did this character know / carry / look like / believe on date X"
+        // can be answered without the parent's history alone leaving holes.
+        "Characters",
+        "CharacterAliases",
+        "CharacterStoryHooks",
+        "CharacterArchetypeScores",
+        "CharacterGeneticAncestries",
+        "CharacterAncestryDetails",
+        "CharacterPsychologyTraits",
+        "CharacterSpeechPhrases",
+        "CharacterBehavioralRules",
+        "CharacterBehavioralMaps",
+        "CharacterStatScalars",
+        "CharacterStatPhrases",
+        "CharacterPhysicalMarks",
+        "CharacterTerritoryZones",
+        "CharacterTerritoryReputations",
+        "CharacterBelongingsGear",
+        "CharacterBelongingsExtras",
+        "CharacterBioBatteryThresholds",
+        "CharacterNeuralAbilities",
+        "CharacterChangelog",
+        "CharacterCyberware",
+        "CharacterKnowledge",
+        "CharacterKnowledgeEntities",
+        "CharacterConditions",
+        "CharacterRelationships",
+        "CharacterTimeline",
+        "CharacterTimelineBodyChanges",
+        "CharacterHomeTurfs",
+        "CharacterAffiliations",
+        // Place relational schema.
+        "Places",
+        "PlaceAliases", "PlaceDangers", "PlaceOpportunities", "PlaceStoryHooks",
+        "PlaceAtmosphereItems", "PlaceAdjacencies", "PlaceExits",
+        "PlaceFrequentedBy", "PlaceNotableLocations", "PlaceRelatedEntities",
+        // Faction relational schema.
+        "Factions",
+        "FactionAliases", "FactionMethods", "FactionResources", "FactionGoals",
+        "FactionStoryHooks", "FactionRelationships", "FactionMembers",
+        // Corponation / Subsidiary / SyntheticLife / Automaton relational schemas.
+        "Corponations", "CorponationCommonNames",
+        "Subsidiaries", "SubsidiaryProducts",
+        "SyntheticLives", "SyntheticLifeAliases", "SyntheticLifeStoryHooks", "SyntheticLifeKnownAssociations",
+        "Automata", "AutomatonAliases", "AutomatonArmament", "AutomatonSensors",
+        "AutomatonDeployments", "AutomatonStoryHooks",
+        // Gear cluster.
+        "Weapons", "WeaponAliases", "WeaponBaseTechnologies", "WeaponKnownUsers",
+        "WeaponAmmunitionTypes", "WeaponStoryHooks",
+        "EquipmentItems", "EquipmentAliases", "EquipmentBaseTechnologies",
+        "EquipmentKnownUsers", "EquipmentSpecifications", "EquipmentStoryHooks",
+        "CyberwareItems", "CyberwareItemAliases", "CyberwareItemSideEffects",
+        "CyberwareItemKnownUsers", "CyberwareItemStoryHooks",
+        "Apparels", "ApparelAliases", "ApparelStoryHooks",
+        "Ammunitions", "AmmunitionAliases", "AmmunitionCompatibleWeapons",
+        "AmmunitionVariants", "AmmunitionStoryHooks",
+        "Pharmaceuticals", "PharmaceuticalAliases", "PharmaceuticalEffects",
+        "PharmaceuticalSideEffects", "PharmaceuticalStoryHooks",
+        "Genemods", "GenemodAliases", "GenemodStoryHooks",
+        "Materials", "MaterialAliases", "MaterialStoryHooks",
+        "Transportations", "TransportationAliases", "TransportationStoryHooks",
+        "ConsumerGoods", "ConsumerGoodAliases", "ConsumerGoodStoryHooks",
+        // Misc cluster
+        "Archetypes", "ArchetypeWillAlways", "ArchetypeWillNever", "ArchetypeUnless", "ArchetypeSimilars", "ArchetypeOpposites",
+        "Quotes",
+        "News", "NewsEntitiesInvolved", "NewsLocations",
+        "Contracts", "ContractBonuses", "ContractComplications",
+        "Documents", "DocumentHeadings",
+        "VocabularyEntries",
+        "LabSpecimens", "LabSpecimenAliases", "LabSpecimenKnownLocations", "LabSpecimenStoryHooks",
+        "Psionics", "PsionicAliases", "PsionicKnownPractitioners", "PsionicStoryHooks",
+        "Technologies", "TechnologyAliases", "TechnologyDevelopers", "TechnologyBaseTechnologies", "TechnologyEnabledList", "TechnologyStoryHooks",
+        "Facets", "FacetTriggers", "FacetCoreMemories", "FacetVoiceProhibitions",
+        "Motifs", "MotifAppearances",
+        "EntertainmentItems", "EntertainmentAliases", "EntertainmentKnownFans", "EntertainmentStoryHooks",
+        "FlyoverEntities", "FlyoverEntityAliases", "FlyoverEntityKnownLocations", "FlyoverEntityStoryHooks",
+        "Books", "BookProtagonists", "BookChapterOrder",
+        "Chapters", "ChapterCharacters", "ChapterBeats",
+        "ContinuityClaims",
+        "EntityStateEvents",
+        "WeaponSpecs",
+        "Settings",
+    };
+
+    /// <summary>
+    /// Enable SQL Server <c>SYSTEM_VERSIONING</c> on every table in
+    /// <see cref="SystemVersionedTables"/>. Idempotent: skips tables that are
+    /// already temporal. No-op on non-SQL-Server providers (SQLite tests).
+    ///
+    /// After this runs, every row mutation produces a history row in
+    /// <c>{Table}_History</c>. Querying with <c>FOR SYSTEM_TIME AS OF '…'</c>
+    /// gives you the database state as it was at any point in time — that's the
+    /// "rewindable" property the user asked for.
+    /// </summary>
+    /// <summary>
+    /// In-world-canon anchor for the temporal history. Every row that exists at the
+    /// moment SYSTEM_VERSIONING is enabled gets SysStart = this value, so a query
+    /// like <c>FOR SYSTEM_TIME AS OF '2026-01-01'</c> returns the initial corpus
+    /// rather than rows dated to the moment we ran the migration.
+    /// </summary>
+    public static readonly DateTime TemporalAnchor = new(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+
+    public async Task EnableSystemVersioningAsync(CancellationToken ct = default)
+    {
+        if (!Database.IsSqlServer()) return;
+
+        var anchor = TemporalAnchor.ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
+
+        foreach (var table in SystemVersionedTables)
+        {
+            try
+            {
+                await Database.ExecuteSqlRawAsync($"""
+                    IF NOT EXISTS (
+                        SELECT 1 FROM sys.tables t
+                        WHERE t.name = N'{table}' AND t.temporal_type = 2)
+                    BEGIN
+                        IF COL_LENGTH(N'[dbo].[{table}]', N'SysStart') IS NULL
+                        BEGIN
+                            -- DEFAULT '{anchor}' anchors every existing row to Jan 1 2026 (in-world canon zero).
+                            -- Future writes overwrite SysStart with SYSUTCDATETIME() because GENERATED ALWAYS
+                            -- always wins over the column default for new INSERTs and UPDATEs.
+                            ALTER TABLE [dbo].[{table}] ADD
+                                [SysStart] DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL
+                                    CONSTRAINT DF_{table}_SysStart DEFAULT CONVERT(DATETIME2, '{anchor}'),
+                                [SysEnd]   DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL
+                                    CONSTRAINT DF_{table}_SysEnd DEFAULT CONVERT(DATETIME2, '9999-12-31 23:59:59.9999999'),
+                                PERIOD FOR SYSTEM_TIME ([SysStart], [SysEnd]);
+                        END;
+                        ALTER TABLE [dbo].[{table}]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[{table}_History]));
+                    END;
+                    """, ct);
+            }
+            catch (Exception ex)
+            {
+                Serilog.Log.Warning(ex, "Failed to enable SYSTEM_VERSIONING on {Table}", table);
+            }
+        }
+    }
+}

@@ -26,18 +26,20 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class OutlineReviewService
 {
+    private const string FailurePatternsKey = "quality_patterns";
+
     private readonly ILlmService llm;
     private readonly DatabaseService db;
-    private readonly IPathProvider paths;
+    private readonly SettingsKvStore kv;
     private readonly ILogger<OutlineReviewService> log;
 
     public OutlineReviewService(
-        ILlmService llm, DatabaseService db, IPathProvider paths,
+        ILlmService llm, DatabaseService db, SettingsKvStore kv,
         ILogger<OutlineReviewService> log)
     {
         this.llm = llm;
         this.db = db;
-        this.paths = paths;
+        this.kv = kv;
         this.log = log;
     }
 
@@ -246,41 +248,37 @@ public class OutlineReviewService
     }
 
     /// <summary>
-    /// Save review result alongside the story project.
-    /// Gives the director a record of what was changed before writing began.
+    /// Save the review result keyed by chapter/project id. Pre-cutover this wrote
+    /// next to the chapter folder; now it lives in Settings('outline_review:{id}')
+    /// so the SQL store is the single source of truth.
     /// </summary>
     public void Save(string projectId, OutlineReviewResult result)
     {
-        var path = StoryFolderHelper.GetFilePath(paths.ChaptersDir, projectId, "outline_review.json");
-        File.WriteAllText(path, JsonSerializer.Serialize(result, JsonDefaults.Indented));
+        kv.Set($"outline_review:{projectId}", result);
     }
 
     /// <summary>
-    /// Load accumulated failure patterns from disk.
-    /// These are patterns that scored poorly in quality evaluations across previous stories.
-    /// Injected into the review prompt so the editor knows what to avoid.
+    /// Load accumulated failure patterns from the Settings table. These are patterns
+    /// that scored poorly in quality evaluations across previous stories. Injected
+    /// into the review prompt so the editor knows what to avoid.
     /// </summary>
     private string LoadKnownFailurePatterns()
     {
-        var path = Path.Combine(paths.ChaptersDir, "quality_patterns.json");
-        if (!File.Exists(path)) return "";
+        var doc = kv.Get<QualityPatternsDoc>(FailurePatternsKey);
+        if (doc?.FailurePatterns == null || doc.FailurePatterns.Count == 0) return "";
 
-        try
-        {
-            var doc = JsonDocument.Parse(File.ReadAllText(path));
-            if (!doc.RootElement.TryGetProperty("failure_patterns", out var patterns)) return "";
+        var lines = doc.FailurePatterns
+            .Where(p => !string.IsNullOrWhiteSpace(p))
+            .Select(p => $"- {p}")
+            .Take(20) // Cap to keep prompt from ballooning
+            .ToList();
 
-            var lines = patterns.EnumerateArray()
-                .Select(p => $"- {p.GetString()}")
-                .Take(20) // Cap to keep prompt from ballooning
-                .ToList();
+        return lines.Count > 0 ? string.Join("\n", lines) : "";
+    }
 
-            return lines.Count > 0 ? string.Join("\n", lines) : "";
-        }
-        catch
-        {
-            return "";
-        }
+    private sealed class QualityPatternsDoc
+    {
+        public List<string>? FailurePatterns { get; set; }
     }
 
     /// <summary>Build character context for the review system prompt.</summary>

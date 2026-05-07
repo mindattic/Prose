@@ -16,6 +16,14 @@ namespace StreetSamurai.Mcp;
 // Replaces the Node-shellout `extract_facts` tool. Same data store as the
 // /continuity UI; one source of truth per session.
 
+/// <summary>
+/// In-process MCP wrapper over the unified <c>ContinuityService</c>. Extracts
+/// atomic (entity, predicate, object) claims from chapter prose or entity records,
+/// surfaces same-(entity,predicate)-different-object contradictions, lets the
+/// caller resolve them, and applies the agreed value back to the entity record
+/// (Legion picks the field). Same data store as the /continuity UI; one source of
+/// truth per session.
+/// </summary>
 [McpServerToolType]
 public class LoreTripleTools
 {
@@ -36,6 +44,13 @@ public class LoreTripleTools
         this.books      = books;
     }
 
+    /// <summary>
+    /// Extract atomic continuity claims (entity, predicate, object triples) from a
+    /// chapter's prose via Legion Quorum. Each triple's snippet is validated against
+    /// the source prose; survivors are upserted into the unified continuity store.
+    /// Same-(entity,predicate) with different `object` auto-flags a contradiction.
+    /// Returns: new / confirmed / contradicted counts.
+    /// </summary>
     [McpServerTool, Description(
         "Extract atomic continuity claims (entity, predicate, object triples) from a chapter's prose " +
         "via Legion Quorum. Each triple's snippet is validated against the source prose; survivors are " +
@@ -69,6 +84,10 @@ public class LoreTripleTools
         }
     }
 
+    /// <summary>
+    /// Extract continuity claims from every chapter in a book sequentially.
+    /// Long-running; returns per-chapter results plus aggregate counts.
+    /// </summary>
     [McpServerTool, Description(
         "Extract continuity claims from every chapter in a book (sequential — long-running). " +
         "Returns per-chapter results plus aggregate counts.")]
@@ -108,6 +127,11 @@ public class LoreTripleTools
         }
     }
 
+    /// <summary>
+    /// Extract continuity claims from a single entity record file. Top-level scalar
+    /// fields become direct claims; prose fields (description, personality,
+    /// ideology…) go through the same Legion Quorum vote as chapter prose.
+    /// </summary>
     [McpServerTool, Description(
         "Extract continuity claims from a single entity record file (engine/data/{kind}/{id}.json). " +
         "Top-level scalar fields become direct claims; prose fields (description, personality, ideology…) " +
@@ -127,6 +151,10 @@ public class LoreTripleTools
         }
     }
 
+    /// <summary>
+    /// List continuity claims. Optional filters: entity (id or name) and status
+    /// (NEW | CONFIRMED | CONTRADICTED | CANONICAL | REJECTED | SUPERSEDED).
+    /// </summary>
     [McpServerTool, Description(
         "List continuity claims. Optional filters: entity (id or name), status (NEW | CONFIRMED | CONTRADICTED | CANONICAL | REJECTED | SUPERSEDED). " +
         "Returns the claims with their predicates, objects, sources, and statuses.")]
@@ -147,6 +175,11 @@ public class LoreTripleTools
         return JsonSerializer.Serialize(new { count = list.Count, claims = list }, CanonTools.JsonOpts);
     }
 
+    /// <summary>
+    /// List every CONTRADICTED claim awaiting resolution. Each entry is a pair
+    /// (A, B) sharing (entity, predicate) with different object values. Use
+    /// ResolveContinuityContradiction to pick a winner.
+    /// </summary>
     [McpServerTool, Description(
         "List every CONTRADICTED claim awaiting resolution. Each entry is a pair (A, B) where A and B share " +
         "(entity, predicate) but have different `object` values. Use ResolveContinuityContradiction to pick a winner.")]
@@ -161,6 +194,11 @@ public class LoreTripleTools
         }, CanonTools.JsonOpts);
     }
 
+    /// <summary>
+    /// Resolve a contradiction. Winner = A | B (winner becomes CANONICAL, loser
+    /// becomes REJECTED) or "custom" (both rejected, a writer-asserted CANONICAL
+    /// claim takes their place via customObject).
+    /// </summary>
     [McpServerTool, Description(
         "Resolve a contradiction. Winner = A | B (one claim wins → CANONICAL, the other → REJECTED) or " +
         "`custom` (both rejected, a new writer-asserted CANONICAL claim takes their place; pass customObject).")]
@@ -182,6 +220,12 @@ public class LoreTripleTools
         }
     }
 
+    /// <summary>
+    /// Apply a CANONICAL or CONFIRMED claim to its entity record file. Legion's
+    /// panel picks which field should hold the value (string fields are set,
+    /// arrays are appended to, otherwise the claim lands in a continuity_facts[]
+    /// array). The audit trail records which field was chosen.
+    /// </summary>
     [McpServerTool, Description(
         "Apply a CANONICAL or CONFIRMED claim to its entity record file. Legion's panel picks which field " +
         "should hold the value (string fields are set, array fields are appended to, otherwise the claim is " +

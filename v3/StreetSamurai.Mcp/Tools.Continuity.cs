@@ -19,6 +19,19 @@ namespace StreetSamurai.Mcp;
 // LLMVotingService.ScoreAsync — that work is queued in the architecture
 // proposal saved at memory/project_contradiction_detector.md.
 
+/// <summary>
+/// Continuity / contradiction-finding tools. <c>find_contradictions</c> runs the
+/// canon-grounded contradiction sweep over a chapter — pulling character profiles,
+/// the book's <c>state_at_end</c>, and prior-chapter synopses, then dispatching a
+/// Legion Quorum vote with a structured EPISTEMIC / TEMPORAL / CAPABILITY / CANON
+/// rubric. <c>find_contradictions_book</c> does a pairwise sweep across the whole
+/// book, catching cross-chapter drift a single-chapter check would miss.
+/// <para/>
+/// Implementation note: this MCP tool currently shells out to the Node prototype
+/// at <c>tools/check-contradictions.js</c> because that prototype is the validated
+/// reference implementation. A future refactor will inline the logic into a
+/// proper C# ContradictionFinderService backed by <c>LLMVotingService.ScoreAsync</c>.
+/// </summary>
 [McpServerToolType]
 public class ContinuityTools
 {
@@ -29,6 +42,14 @@ public class ContinuityTools
         this.paths = paths;
     }
 
+    /// <summary>
+    /// Find contradictions in a chapter against established canon. Pulls the
+    /// chapter's characters plus the book's state_at_end and all prior chapters'
+    /// synopses, builds a canon-context bundle, and dispatches a Legion Quorum vote
+    /// with a contradiction-finding rubric (EPISTEMIC / TEMPORAL / CAPABILITY /
+    /// CANON). Returns a JSON report with findings, citations, severity, and
+    /// suggested fixes. ok=true means no contradictions; ok=false means findings exist.
+    /// </summary>
     [McpServerTool, Description(
         "Find contradictions in a chapter against established canon. Pulls the " +
         "characters from the chapter's `characters` field, plus the book's " +
@@ -141,6 +162,14 @@ public class ContinuityTools
         }
     }
 
+    /// <summary>
+    /// Find contradictions across an entire book by running a pairwise sweep — every
+    /// chapter is graded against the full prose of every other chapter (forward AND
+    /// backward). Catches things a single-chapter check misses: a character who dies
+    /// in chapter 3 but speaks in chapter 5, a stated age that drifts between
+    /// chapters, etc. Cross-chapter findings are consolidated. Expensive — dispatches
+    /// N Legion votes per book. Use synopsisOnly=true for cheaper triage.
+    /// </summary>
     [McpServerTool, Description(
         "Find contradictions across an entire book by running a pairwise sweep — every chapter " +
         "is graded against the FULL PROSE of every OTHER chapter (forward AND backward). " +

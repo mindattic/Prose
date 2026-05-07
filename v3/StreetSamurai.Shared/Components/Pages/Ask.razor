@@ -5,6 +5,7 @@
 @inject EmbeddingIndexService Index
 @inject OllamaClient Ollama
 @inject OllamaProcessManager OllamaProc
+@inject SettingsService SettingsSvc
 
 <div class="d-flex justify-content-between align-items-start mb-3">
     <div>
@@ -16,11 +17,25 @@
             Local Qwen reads the live JSON files and chapter prose. Every save updates the index — answers always reflect the current truth on disk.
         </p>
     </div>
-    <div class="d-flex flex-column gap-1 align-items-end">
-        <div class="small text-muted">Reindex any file the watcher missed</div>
-        <button class="btn btn-sm btn-outline-secondary" @onclick="DoReindex" disabled="@working">
-            @(working && action == "reindex" ? "reindexing…" : "Reindex now")
-        </button>
+    <div class="d-flex flex-column gap-2 align-items-end">
+        <div class="d-flex flex-column gap-1 align-items-end">
+            <label class="small text-muted mb-0">Chat model — switches on the fly (no reindex)</label>
+            <OllamaModelPicker Value="@ChatModel"
+                               ValueChanged="OnChatModelChanged"
+                               Disabled="@working"
+                               CssClass="form-select form-select-sm bg-dark text-light border-secondary"
+                               style="width:auto; min-width:240px;" />
+            @if (!string.IsNullOrEmpty(modelStatus))
+            {
+                <div class="small text-info">@modelStatus</div>
+            }
+        </div>
+        <div class="d-flex flex-column gap-1 align-items-end">
+            <div class="small text-muted">Reindex any file the watcher missed</div>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="DoReindex" disabled="@working">
+                @(working && action == "reindex" ? "reindexing…" : "Reindex now")
+            </button>
+        </div>
     </div>
 </div>
 
@@ -45,7 +60,15 @@
 {
     <div class="alert alert-info small d-flex align-items-center gap-2">
         <div class="spinner-border spinner-border-sm" role="status"></div>
-        Starting Ollama and warming <code>@Ollama.ChatModel</code>… first answer will be a few seconds slower.
+        @startingMessage
+    </div>
+}
+else if (missingModels.Count > 0)
+{
+    <div class="alert alert-warning small">
+        <strong>Ollama is reachable but required model(s) are not pulled:</strong>
+        <pre class="mb-0 mt-2 small">@string.Join("\n", missingModels.Select(m => $"ollama pull {m}"))</pre>
+        <div class="mt-2">Ask is locked until the missing models are installed.</div>
     </div>
 }
 else if (!ollamaUp)
@@ -127,11 +150,11 @@ ollama pull @Ollama.EmbedModel</pre>
 
 <div class="input-group mb-3">
     <input class="form-control bg-dark text-light border-secondary"
-           placeholder="Ask the corpus…"
+           placeholder="@(askLocked ? "Waiting for local LLM…" : "Ask the corpus…")"
            @bind="prompt" @bind:event="oninput"
            @onkeydown="OnKey"
-           disabled="@(working || !ollamaUp)" />
-    <button class="btn btn-primary" disabled="@(working || !ollamaUp || string.IsNullOrWhiteSpace(prompt))" @onclick="Submit">
+           disabled="@askLocked" />
+    <button class="btn btn-primary" disabled="@(askLocked || string.IsNullOrWhiteSpace(prompt))" @onclick="Submit">
         @(working && action == "ask" ? $"thinking… {FormatDuration(liveElapsed)}" : "Ask")
     </button>
 </div>
@@ -149,10 +172,29 @@ ollama pull @Ollama.EmbedModel</pre>
     private string prompt = "";
     private string status = "";
     private string errorMessage = "";
+    private string modelStatus = "";
     private string action = "";
     private bool working;
     private bool ollamaUp;
     private bool starting;
+    private string startingMessage = "";
+    private List<string> missingModels = new();
+
+    private bool askLocked => working || starting || !ollamaUp || missingModels.Count > 0;
+
+    // Two-way bound to the dropdown; persists through SettingsService so the
+    // choice survives reload and is shared with the rest of the app.
+    private string ChatModel
+    {
+        get => string.IsNullOrWhiteSpace(SettingsSvc.OllamaChatModel) ? Ollama.ChatModel : SettingsSvc.OllamaChatModel;
+        set => SettingsSvc.OllamaChatModel = value;
+    }
+
+    private void OnChatModelChanged(string newModel)
+    {
+        ChatModel = newModel;
+        modelStatus = $"Now answering with {ChatModel}. First request will pay one cold-load before responses stream.";
+    }
     private System.Diagnostics.Stopwatch? questionTimer;
     private System.Threading.Timer? tickTimer;
     private double liveElapsed;
@@ -161,13 +203,37 @@ ollama pull @Ollama.EmbedModel</pre>
     protected override async Task OnInitializedAsync()
     {
         stats = Index.GetStats();
-        ollamaUp = await Index.OllamaReachableAsync();
-        if (!ollamaUp)
+        starting = true;
+        startingMessage = $"Starting Ollama at {Ollama.BaseUrl}…";
+        StateHasChanged();
+        try
         {
-            starting = true;
+            var running = await OllamaProc.EnsureRunningAsync();
+            if (!running)
+            {
+                ollamaUp = false;
+                return;
+            }
+
+            startingMessage = "Verifying required models are pulled…";
             StateHasChanged();
-            ollamaUp = await OllamaProc.EnsureRunningAsync();
+            var (ok, missing) = await OllamaProc.VerifyModelsAsync();
+            missingModels = missing.ToList();
+            if (!ok)
+            {
+                ollamaUp = true; // server up, but models missing — locked at askLocked
+                return;
+            }
+
+            startingMessage = $"Warming {Ollama.ChatModel} and {Ollama.EmbedModel} into VRAM…";
+            StateHasChanged();
+            await OllamaProc.EnsureWarmAsync();
+            ollamaUp = await Index.OllamaReachableAsync();
+        }
+        finally
+        {
             starting = false;
+            StateHasChanged();
         }
     }
 

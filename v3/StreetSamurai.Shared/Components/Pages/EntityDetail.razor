@@ -1,5 +1,7 @@
 @page "/entity/{EntityId}"
-
+@using StreetSamurai.Core.Services
+@using StreetSamurai.Core.Interfaces
+@inject IWriteAccessProvider Access
 @inject CharacterRepository CharRepo
 @inject SyntheticLifeRepository SynthRepo
 @inject DistrictRepository PlaceRepo
@@ -30,6 +32,7 @@
 @inject WorldbuildingDocRepository DocRepo
 @inject MediaService Media
 @inject DallEService Dalle
+@inject IChapterRepository Chapters
 
 <div class="entity-detail-page">
 
@@ -39,45 +42,313 @@
 }
 else if (character != null)
 {
+    @* Character gets one tab per connected child table + Dossier last. *@
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <ul class="nav nav-tabs small entity-tabs flex-grow-1">
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "record"        ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "relationships" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("relationships")'><i class="bi bi-people me-1"></i>Relationships <span class="badge bg-secondary">@character.Relationships.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "cyberware"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("cyberware")'><i class="bi bi-cpu me-1"></i>Cyberware <span class="badge bg-secondary">@character.CyberwareInventory.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "knowledge"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("knowledge")'><i class="bi bi-lightbulb me-1"></i>Knowledge <span class="badge bg-secondary">@character.Knowledge.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "conditions"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("conditions")'><i class="bi bi-bandaid me-1"></i>Conditions <span class="badge bg-secondary">@character.Conditions.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "belongings"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("belongings")'><i class="bi bi-bag me-1"></i>Belongings</a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "timeline"      ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("timeline")'><i class="bi bi-clock-history me-1"></i>Timeline <span class="badge bg-secondary">@character.Timeline.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"       ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
+        </ul>
+        @if (Access.IsAdministrator)
+        {
+            @if (!editMode)
+            {
+                <button class="btn btn-sm btn-outline-warning ms-2" @onclick="StartEdit"><i class="bi bi-pencil me-1"></i>Edit</button>
+            }
+            else
+            {
+                <span class="d-flex gap-2 ms-2">
+                    <button class="btn btn-sm btn-success" @onclick="SaveCharacterEdit"><i class="bi bi-check2 me-1"></i>Save</button>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit">Cancel</button>
+                </span>
+            }
+        }
+    </div>
+}
+else if (place != null)
+{
+    @* Place: Record / Sub-Places / Inhabitants / Events / Dossier. *@
+    <ul class="nav nav-tabs mb-3 small entity-tabs">
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "record"      ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "subplaces"   ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("subplaces")'><i class="bi bi-diagram-3 me-1"></i>Sub-Places <span class="badge bg-secondary">@subPlaces.Count</span></a></li>
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "inhabitants" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("inhabitants")'><i class="bi bi-people me-1"></i>Inhabitants <span class="badge bg-secondary">@inhabitants.Count</span></a></li>
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "events"      ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("events")'><i class="bi bi-calendar-event me-1"></i>Events <span class="badge bg-secondary">@placeEvents.Count</span></a></li>
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
+    </ul>
+}
+else if (corponation != null)
+{
+    @* Corponation: Record / Subsidiaries / Personnel / Operations / Dossier. *@
+    <ul class="nav nav-tabs mb-3 small entity-tabs">
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "record"        ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "subsidiaries"  ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("subsidiaries")'><i class="bi bi-diagram-3 me-1"></i>Subsidiaries <span class="badge bg-secondary">@corpSubs.Count</span></a></li>
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "personnel"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("personnel")'><i class="bi bi-person-badge me-1"></i>Personnel <span class="badge bg-secondary">@corpPersonnel.Count</span></a></li>
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "operations"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("operations")'><i class="bi bi-briefcase me-1"></i>Operations <span class="badge bg-secondary">@corpOps.Count</span></a></li>
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"       ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
+    </ul>
+}
+else if (faction != null)
+{
+    @* Faction: Record / Members / Operations / Dossier. *@
+    <ul class="nav nav-tabs mb-3 small entity-tabs">
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "record"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "members"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("members")'><i class="bi bi-person-badge me-1"></i>Members <span class="badge bg-secondary">@factionMembers.Count</span></a></li>
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "operations" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("operations")'><i class="bi bi-briefcase me-1"></i>Operations <span class="badge bg-secondary">@factionOps.Count</span></a></li>
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
+    </ul>
+}
+else
+{
+    @* All other entity types keep the simpler Record/Dossier pair. *@
+    <ul class="nav nav-tabs mb-3 small entity-tabs">
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "record"  ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
+        <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
+    </ul>
+}
+
+@if (!notFound && CurrentTab == "dossier")
+{
+    <DossierPanel EntityId="@(string.IsNullOrEmpty(resolvedId) ? EntityId : resolvedId)" AsOf="@AsOf" />
+}
+
+@* ── Place tab bodies ── *@
+@if (place != null && CurrentTab == "subplaces")     { <RelatedRowsList Title="Sub-Places"  Rows="subPlaces" /> }
+@if (place != null && CurrentTab == "inhabitants")   { <RelatedRowsList Title="Inhabitants" Rows="inhabitants" /> }
+@if (place != null && CurrentTab == "events")        { <RelatedRowsList Title="Events"      Rows="placeEvents" /> }
+
+@* ── Corponation tab bodies ── *@
+@if (corponation != null && CurrentTab == "subsidiaries") { <RelatedRowsList Title="Subsidiaries" Rows="corpSubs" /> }
+@if (corponation != null && CurrentTab == "personnel")    { <RelatedRowsList Title="Personnel"    Rows="corpPersonnel" /> }
+@if (corponation != null && CurrentTab == "operations")   { <RelatedRowsList Title="Operations"   Rows="corpOps" /> }
+
+@* ── Faction tab bodies ── *@
+@if (faction != null && CurrentTab == "members")      { <RelatedRowsList Title="Members"    Rows="factionMembers" /> }
+@if (faction != null && CurrentTab == "operations")   { <RelatedRowsList Title="Operations" Rows="factionOps" /> }
+
+@* ── Character child-collection tabs ── *@
+@if (CurrentTab == "relationships" && character != null)
+{
+    <EntityDetailHeader Name="@character.Name" Type="character" TypeLabel="Character — Relationships" Subtitle="@($"{character.Relationships.Count} known")" BackRoute="/characters" Tags="@character.Tags" />
+    <div class="entity-detail-body">
+        @if (character.Relationships.Count == 0) { <div class="text-muted small">No relationships recorded.</div> }
+        @foreach (var r in character.Relationships)
+        {
+            <div class="card bg-dark border-secondary mb-2">
+                <div class="card-body p-2 small">
+                    <div><strong><XrefText Text="@r.Name" /></strong> <span class="text-muted">— @r.Type</span> @if (!string.IsNullOrWhiteSpace(r.Status) && r.Status != "active") { <span class="badge bg-info">@r.Status</span> }</div>
+                    @if (!string.IsNullOrWhiteSpace(r.Description))   { <div class="text-muted mt-1"><XrefText Text="@r.Description" /></div> }
+                    @if (!string.IsNullOrWhiteSpace(r.EmotionalCore)) { <div class="text-muted mt-1"><em>core:</em> @r.EmotionalCore</div> }
+                    @if (!string.IsNullOrWhiteSpace(r.StoryTension))  { <div class="text-muted mt-1"><em>tension:</em> @r.StoryTension</div> }
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@if (CurrentTab == "cyberware" && character != null)
+{
+    <EntityDetailHeader Name="@character.Name" Type="character" TypeLabel="Character — Cyberware" Subtitle="@($"{character.CyberwareInventory.Count} installed")" BackRoute="/characters" Tags="@character.Tags" />
+    <div class="entity-detail-body">
+        @if (character.CyberwareInventory.Count == 0) { <div class="text-muted small">No installed cyberware.</div> }
+        @foreach (var c in character.CyberwareInventory)
+        {
+            <div class="card bg-dark border-secondary mb-2">
+                <div class="card-body p-2 small">
+                    <div><strong>@c.Name</strong> @if (!string.IsNullOrEmpty(c.BodyLocation)) { <span class="text-muted">@@@c.BodyLocation</span> } @if (!string.IsNullOrEmpty(c.Manufacturer)) { <span class="text-muted">— @c.Manufacturer</span> }</div>
+                    @if (!string.IsNullOrEmpty(c.Tier))         { <div><em>tier:</em> @c.Tier</div> }
+                    @if (!string.IsNullOrEmpty(c.Condition))    { <div><em>condition:</em> @c.Condition</div> }
+                    @if (!string.IsNullOrEmpty(c.InstalledDate)){ <div><em>installed:</em> @c.InstalledDate</div> }
+                    @if (!string.IsNullOrEmpty(c.Description))  { <div class="text-muted mt-1">@c.Description</div> }
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@if (CurrentTab == "knowledge" && character != null)
+{
+    <EntityDetailHeader Name="@character.Name" Type="character" TypeLabel="Character — Knowledge" Subtitle="@($"{character.Knowledge.Count} known facts")" BackRoute="/characters" Tags="@character.Tags" />
+    <div class="entity-detail-body">
+        @if (character.Knowledge.Count == 0) { <div class="text-muted small">No knowledge claims recorded.</div> }
+        @foreach (var k in character.Knowledge)
+        {
+            <div class="card bg-dark border-secondary mb-2">
+                <div class="card-body p-2 small">
+                    <div><strong>@k.Topic</strong> @if (k.LearnedChapter.HasValue) { <span class="badge bg-secondary">Ch @k.LearnedChapter</span> }</div>
+                    @if (!string.IsNullOrEmpty(k.Summary))       { <div class="text-muted mt-1">@k.Summary</div> }
+                    @if (!string.IsNullOrEmpty(k.SourceSnippet)) { <div class="text-muted mt-1"><em>"@k.SourceSnippet"</em></div> }
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@if (CurrentTab == "conditions" && character != null)
+{
+    <EntityDetailHeader Name="@character.Name" Type="character" TypeLabel="Character — Conditions" Subtitle="@($"{character.Conditions.Count} active")" BackRoute="/characters" Tags="@character.Tags" />
+    <div class="entity-detail-body">
+        @if (character.Conditions.Count == 0) { <div class="text-muted small">No conditions recorded.</div> }
+        @foreach (var c in character.Conditions)
+        {
+            <div class="card bg-dark border-secondary mb-2">
+                <div class="card-body p-2 small">
+                    <div><span class="badge bg-warning text-dark">@c.Kind</span> <strong>@c.Name</strong> @if (!string.IsNullOrEmpty(c.Severity)) { <span class="text-muted">— @c.Severity</span> }</div>
+                    @if (!string.IsNullOrEmpty(c.Notes))    { <div class="text-muted mt-1">@c.Notes</div> }
+                    @if (c.SinceChapter.HasValue || c.UntilChapter.HasValue)
+                    {
+                        <div class="text-muted mt-1">
+                            @if (c.SinceChapter.HasValue) { <text>since Ch @c.SinceChapter</text> }
+                            @if (c.UntilChapter.HasValue) { <text> until Ch @c.UntilChapter</text> }
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@if (CurrentTab == "belongings" && character != null)
+{
+    <EntityDetailHeader Name="@character.Name" Type="character" TypeLabel="Character — Belongings" Subtitle="What they carry / own / use" BackRoute="/characters" Tags="@character.Tags" />
+    <div class="entity-detail-body">
+        @{ var b = character.Belongings; }
+        <div class="row g-2 small">
+            @if (!string.IsNullOrEmpty(b.PrimaryWeapon))   { <div class="col-md-6"><span class="text-muted">primary weapon:</span> <XrefText Text="@b.PrimaryWeapon" /></div> }
+            @if (!string.IsNullOrEmpty(b.SecondaryWeapon)) { <div class="col-md-6"><span class="text-muted">secondary weapon:</span> <XrefText Text="@b.SecondaryWeapon" /></div> }
+            @if (!string.IsNullOrEmpty(b.Armor))           { <div class="col-md-6"><span class="text-muted">armor:</span> <XrefText Text="@b.Armor" /></div> }
+            @if (!string.IsNullOrEmpty(b.Vehicle))         { <div class="col-md-6"><span class="text-muted">vehicle:</span> <XrefText Text="@b.Vehicle" /></div> }
+            @if (!string.IsNullOrEmpty(b.Residence))       { <div class="col-md-6"><span class="text-muted">residence:</span> <XrefText Text="@b.Residence" /></div> }
+            @if (!string.IsNullOrEmpty(b.ClothingStyle))   { <div class="col-md-6"><span class="text-muted">clothing:</span> @b.ClothingStyle</div> }
+            @if (!string.IsNullOrEmpty(b.FavoriteDrink))   { <div class="col-md-6"><span class="text-muted">drinks:</span> <XrefText Text="@b.FavoriteDrink" /></div> }
+            @if (!string.IsNullOrEmpty(b.FavoriteFood))    { <div class="col-md-6"><span class="text-muted">eats:</span> <XrefText Text="@b.FavoriteFood" /></div> }
+            @if (!string.IsNullOrEmpty(b.Stimulant))       { <div class="col-md-6"><span class="text-muted">stimulant:</span> <XrefText Text="@b.Stimulant" /></div> }
+            @if (!string.IsNullOrEmpty(b.CommDevice))      { <div class="col-md-6"><span class="text-muted">comm:</span> <XrefText Text="@b.CommDevice" /></div> }
+        </div>
+        @if (b.SignatureGear.Count > 0)
+        {
+            <div class="mt-3"><div class="entity-section-label">Signature Gear</div>
+                <ul>@foreach (var g in b.SignatureGear) { <li><XrefText Text="@g" /></li> }</ul>
+            </div>
+        }
+        @if (b.Pharmaceuticals.Count > 0)
+        {
+            <div class="mt-3"><div class="entity-section-label">Pharmaceuticals</div>
+                <ul>@foreach (var p in b.Pharmaceuticals) { <li><XrefText Text="@p" /></li> }</ul>
+            </div>
+        }
+    </div>
+}
+
+@if (CurrentTab == "timeline" && character != null)
+{
+    <EntityDetailHeader Name="@character.Name" Type="character" TypeLabel="Character — Timeline" Subtitle="@($"{character.Timeline.Count} events")" BackRoute="/characters" Tags="@character.Tags" />
+    <div class="entity-detail-body">
+        @if (character.Timeline.Count == 0) { <div class="text-muted small">No timeline events recorded.</div> }
+        @foreach (var t in character.Timeline.OrderBy(x => x.Date))
+        {
+            <div class="card bg-dark border-secondary mb-2">
+                <div class="card-body p-2 small">
+                    <div><span class="badge bg-info">@t.Date</span> @t.Event</div>
+                    @if (!string.IsNullOrEmpty(t.Consequences)) { <div class="text-muted mt-1"><em>consequences:</em> @t.Consequences</div> }
+                    @if (!string.IsNullOrEmpty(t.StatusChange)) { <div class="text-muted mt-1"><em>status change:</em> @t.StatusChange</div> }
+                    @if (t.BodyChanges.Count > 0) { <div class="text-muted mt-1"><em>body:</em> @string.Join(", ", t.BodyChanges)</div> }
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@if (!notFound && CurrentTab == "record" && character != null)
+{
     <EntityDetailHeader Name="@character.Name" Type="character" TypeLabel="Character"
                         Subtitle="@character.Role" BackRoute="/characters"
                         Tags="@character.Tags" />
+    @if (editMode && !string.IsNullOrEmpty(editError))
+    {
+        <div class="alert alert-danger small">Save failed: @editError</div>
+    }
     <div class="entity-detail-body">
-        @if (!string.IsNullOrWhiteSpace(character.Description))
+        @if (editMode)
         {
-            <div class="entity-section">
-                <div class="entity-section-label">Description</div>
-                @if (primaryImage != null)
+            @* ── Edit mode: every top-level Character field is a form input. ── *@
+            <div class="row g-2 mb-3 small">
+                <div class="col-md-6"><label class="text-muted">Name</label>
+                    <input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="character.Name" /></div>
+                <div class="col-md-6"><label class="text-muted">Role</label>
+                    <input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="character.Role" /></div>
+                <div class="col-md-3"><label class="text-muted">Species</label>
+                    <input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="character.Species" /></div>
+                <div class="col-md-3"><label class="text-muted">Gender</label>
+                    <input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="character.Gender" /></div>
+                <div class="col-md-3"><label class="text-muted">Pronouns</label>
+                    <input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="character.Pronouns" /></div>
+                <div class="col-md-3"><label class="text-muted">Age</label>
+                    <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="character.Age" /></div>
+                <div class="col-md-4"><label class="text-muted">Status</label>
+                    <input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="character.Status" /></div>
+                <div class="col-md-8"><label class="text-muted">Location</label>
+                    <input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="character.Location" /></div>
+                <div class="col-12"><label class="text-muted">Affiliation</label>
+                    <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="character.Affiliation"></textarea></div>
+                <div class="col-12"><label class="text-muted">Description</label>
+                    <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="6" @bind="character.Description"></textarea></div>
+                <div class="col-12"><label class="text-muted">Augmentations</label>
+                    <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="3" @bind="character.Augmentations"></textarea></div>
+                <div class="col-12"><label class="text-muted">Narrative Function</label>
+                    <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="3" @bind="character.NarrativeFunction"></textarea></div>
+                <div class="col-12"><label class="text-muted">Narration Voice</label>
+                    <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="3" @bind="character.NarrationVoice"></textarea></div>
+                <div class="col-12"><label class="text-muted">Daily Life</label>
+                    <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="3" @bind="character.DailyLife"></textarea></div>
+                <div class="col-12"><label class="text-muted">Tags (comma-separated)</label>
+                    <input class="form-control form-control-sm bg-dark text-light border-secondary"
+                           value="@string.Join(", ", character.Tags)"
+                           @onchange="@((ChangeEventArgs e) => character.Tags = (e.Value?.ToString() ?? "").Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList())" /></div>
+            </div>
+        }
+        else
+        {
+            @if (!string.IsNullOrWhiteSpace(character.Description))
+            {
+                <div class="entity-section">
+                    <div class="entity-section-label">Description</div>
+                    @if (primaryImage != null)
+                    {
+                        <div class="entity-desc-with-portrait">
+                            <div><XrefText Text="@character.Description" Paragraphs="true" /></div>
+                            <img src="/api/media/@primaryImage" class="entity-portrait" alt="@character.Name" />
+                        </div>
+                    }
+                    else
+                    {
+                        <XrefText Text="@character.Description" Paragraphs="true" />
+                    }
+                </div>
+            }
+            <div class="entity-meta-row">
+                @if (!string.IsNullOrWhiteSpace(character.Location))
                 {
-                    <div class="entity-desc-with-portrait">
-                        <div><XrefText Text="@character.Description" Paragraphs="true" /></div>
-                        <img src="/api/media/@primaryImage" class="entity-portrait" alt="@character.Name" />
-                    </div>
+                    <div class="entity-meta-item"><span class="entity-meta-label">Location</span> <XrefText Text="@character.Location" /></div>
                 }
-                else
+                @if (character.Age > 0)
                 {
-                    <XrefText Text="@character.Description" Paragraphs="true" />
+                    <div class="entity-meta-item"><span class="entity-meta-label">Age</span> @character.Age</div>
+                }
+                @if (!string.IsNullOrWhiteSpace(character.Status))
+                {
+                    <div class="entity-meta-item"><span class="entity-meta-label">Status</span> @character.Status</div>
+                }
+                @if (!string.IsNullOrWhiteSpace(character.Affiliation))
+                {
+                    <div class="entity-meta-item"><span class="entity-meta-label">Affiliation</span> <XrefText Text="@character.Affiliation" /></div>
                 }
             </div>
         }
-        <div class="entity-meta-row">
-            @if (!string.IsNullOrWhiteSpace(character.Location))
-            {
-                <div class="entity-meta-item"><span class="entity-meta-label">Location</span> <XrefText Text="@character.Location" /></div>
-            }
-            @if (character.Age > 0)
-            {
-                <div class="entity-meta-item"><span class="entity-meta-label">Age</span> @character.Age</div>
-            }
-            @if (!string.IsNullOrWhiteSpace(character.Status))
-            {
-                <div class="entity-meta-item"><span class="entity-meta-label">Status</span> @character.Status</div>
-            }
-            @if (!string.IsNullOrWhiteSpace(character.Affiliation))
-            {
-                <div class="entity-meta-item"><span class="entity-meta-label">Affiliation</span> <XrefText Text="@character.Affiliation" /></div>
-            }
-        </div>
         @if (!string.IsNullOrWhiteSpace(character.Augmentations))
         {
             <div class="entity-section">
@@ -123,7 +394,7 @@ else if (character != null)
         }
     </div>
 }
-else if (synthetic != null)
+else if (CurrentTab == "record" && synthetic != null)
 {
     <EntityDetailHeader Name="@synthetic.Name" Type="synthetic" TypeLabel="Synthetic"
                         Subtitle="@synthetic.Classification" BackRoute="/synthetics"
@@ -182,7 +453,7 @@ else if (synthetic != null)
         }
     </div>
 }
-else if (place != null)
+else if (CurrentTab == "record" && place != null)
 {
     <EntityDetailHeader Name="@place.Name" Type="place" TypeLabel="Place"
                         Subtitle="@(place.Tags.FirstOrDefault() ?? "")" BackRoute="/places"
@@ -281,7 +552,7 @@ else if (place != null)
         }
     </div>
 }
-else if (faction != null)
+else if (CurrentTab == "record" && faction != null)
 {
     <EntityDetailHeader Name="@faction.Name" Type="faction" TypeLabel="Faction"
                         Subtitle="@faction.Motto" BackRoute="/factions"
@@ -331,7 +602,7 @@ else if (faction != null)
         }
     </div>
 }
-else if (corponation != null)
+else if (CurrentTab == "record" && corponation != null)
 {
     <EntityDetailHeader Name="@corponation.Name" Type="corponation" TypeLabel="Corponation"
                         Subtitle="@corponation.Sector" BackRoute="/corps"
@@ -381,7 +652,7 @@ else if (corponation != null)
         }
     </div>
 }
-else if (technology != null)
+else if (CurrentTab == "record" && technology != null)
 {
     <EntityDetailHeader Name="@(technology.ProductName.Length > 0 ? technology.ProductName : technology.Name)"
                         Type="technology" TypeLabel="Technology"
@@ -397,7 +668,7 @@ else if (technology != null)
         }
     </div>
 }
-else if (weapon != null)
+else if (CurrentTab == "record" && weapon != null)
 {
     <EntityDetailHeader Name="@weapon.Name" Type="weapon" TypeLabel="Weapon"
                         Subtitle="@weapon.Category" BackRoute="/weaponry"
@@ -412,7 +683,7 @@ else if (weapon != null)
         }
     </div>
 }
-else if (equipment != null)
+else if (CurrentTab == "record" && equipment != null)
 {
     <EntityDetailHeader Name="@(equipment.ProductName.Length > 0 ? equipment.ProductName : equipment.Name)"
                         Type="equipment" TypeLabel="Equipment"
@@ -428,7 +699,7 @@ else if (equipment != null)
         }
     </div>
 }
-else if (cyberware != null)
+else if (CurrentTab == "record" && cyberware != null)
 {
     <EntityDetailHeader Name="@(cyberware.ProductName.Length > 0 ? cyberware.ProductName : cyberware.Name)"
                         Type="cyberware" TypeLabel="Cyberware"
@@ -444,7 +715,7 @@ else if (cyberware != null)
         }
     </div>
 }
-else if (vocabEntry != null)
+else if (CurrentTab == "record" && vocabEntry != null)
 {
     <EntityDetailHeader Name="@vocabEntry.Term" Type="vocabulary" TypeLabel="Vocabulary"
                         Subtitle="@vocabEntry.Tier" BackRoute="/vocabulary"
@@ -480,7 +751,7 @@ else if (vocabEntry != null)
         }
     </div>
 }
-else if (ammo != null)
+else if (CurrentTab == "record" && ammo != null)
 {
     <EntityDetailHeader Name="@ammo.Name" Type="ammunition" TypeLabel="Ammunition"
                         Subtitle="@(ammo.Caliber.Length > 0 ? ammo.Caliber : ammo.Category)" BackRoute="/ammunition"
@@ -523,7 +794,7 @@ else if (ammo != null)
         }
     </div>
 }
-else if (apparel != null)
+else if (CurrentTab == "record" && apparel != null)
 {
     <EntityDetailHeader Name="@apparel.Name" Type="apparel" TypeLabel="Apparel"
                         Subtitle="@apparel.Category" BackRoute="/apparel"
@@ -565,7 +836,7 @@ else if (apparel != null)
         }
     </div>
 }
-else if (genemod != null)
+else if (CurrentTab == "record" && genemod != null)
 {
     <EntityDetailHeader Name="@(genemod.ProductName.Length > 0 ? genemod.ProductName : genemod.Name)" Type="genemod" TypeLabel="Genemod"
                         Subtitle="@genemod.TargetSystem" BackRoute="/genemods"
@@ -610,7 +881,7 @@ else if (genemod != null)
         }
     </div>
 }
-else if (pharma != null)
+else if (CurrentTab == "record" && pharma != null)
 {
     <EntityDetailHeader Name="@pharma.Name" Type="pharmaceutical" TypeLabel="Pharmaceutical"
                         Subtitle="@pharma.Category" BackRoute="/pharmaceuticals"
@@ -656,7 +927,7 @@ else if (pharma != null)
         }
     </div>
 }
-else if (material != null)
+else if (CurrentTab == "record" && material != null)
 {
     <EntityDetailHeader Name="@(material.ProductName.Length > 0 ? material.ProductName : material.Name)" Type="material" TypeLabel="Material"
                         Subtitle="@material.Category" BackRoute="/materials"
@@ -697,7 +968,7 @@ else if (material != null)
         }
     </div>
 }
-else if (transport != null)
+else if (CurrentTab == "record" && transport != null)
 {
     <EntityDetailHeader Name="@transport.Name" Type="transportation" TypeLabel="Transportation"
                         Subtitle="@transport.Category" BackRoute="/transportation"
@@ -737,7 +1008,7 @@ else if (transport != null)
         }
     </div>
 }
-else if (automaton != null)
+else if (CurrentTab == "record" && automaton != null)
 {
     <EntityDetailHeader Name="@automaton.Name" Type="automaton" TypeLabel="Automaton"
                         Subtitle="@automaton.Classification" BackRoute="/automata"
@@ -783,7 +1054,7 @@ else if (automaton != null)
         }
     </div>
 }
-else if (archetype != null)
+else if (CurrentTab == "record" && archetype != null)
 {
     <EntityDetailHeader Name="@archetype.Name" Type="archetype" TypeLabel="Archetype"
                         Subtitle="@archetype.Category" BackRoute="/archetypes"
@@ -830,7 +1101,7 @@ else if (archetype != null)
         }
     </div>
 }
-else if (subsidiary != null)
+else if (CurrentTab == "record" && subsidiary != null)
 {
     <EntityDetailHeader Name="@subsidiary.Name" Type="subsidiary" TypeLabel="Subsidiary"
                         Subtitle="@subsidiary.ParentCorponation" BackRoute="/subsidiaries"
@@ -856,7 +1127,7 @@ else if (subsidiary != null)
         }
     </div>
 }
-else if (entertainment != null)
+else if (CurrentTab == "record" && entertainment != null)
 {
     <EntityDetailHeader Name="@entertainment.Name" Type="entertainment" TypeLabel="Entertainment"
                         Subtitle="@(entertainment.Genre.Length > 0 ? entertainment.Genre : entertainment.Category)" BackRoute="/entertainment"
@@ -894,7 +1165,7 @@ else if (entertainment != null)
         }
     </div>
 }
-else if (consumerGood != null)
+else if (CurrentTab == "record" && consumerGood != null)
 {
     <EntityDetailHeader Name="@(consumerGood.ProductName.Length > 0 ? consumerGood.ProductName : consumerGood.Name)" Type="consumer-good" TypeLabel="Consumer Good"
                         Subtitle="@consumerGood.Category" BackRoute="/goods"
@@ -937,7 +1208,7 @@ else if (consumerGood != null)
         }
     </div>
 }
-else if (quote != null)
+else if (CurrentTab == "record" && quote != null)
 {
     <EntityDetailHeader Name="@quote.Attribution" Type="quote" TypeLabel="Quote"
                         Subtitle="@quote.Source" BackRoute="/quotes"
@@ -953,7 +1224,7 @@ else if (quote != null)
         </div>
     </div>
 }
-else if (news != null)
+else if (CurrentTab == "record" && news != null)
 {
     <EntityDetailHeader Name="@news.Headline" Type="news" TypeLabel="News"
                         Subtitle="@news.Category" BackRoute="/news"
@@ -1002,7 +1273,7 @@ else if (news != null)
         }
     </div>
 }
-else if (contract != null)
+else if (CurrentTab == "record" && contract != null)
 {
     <EntityDetailHeader Name="@contract.Codename" Type="contract" TypeLabel="Contract"
                         Subtitle="@contract.Difficulty" BackRoute="/contracts"
@@ -1044,7 +1315,7 @@ else if (contract != null)
         }
     </div>
 }
-else if (document != null)
+else if (CurrentTab == "record" && document != null)
 {
     <EntityDetailHeader Name="@document.Title" Type="document" TypeLabel="Document"
                         Subtitle="@document.Category" BackRoute="/documents"
@@ -1083,6 +1354,65 @@ else if (document != null)
 @code {
     [Parameter] public string EntityId { get; set; } = "";
 
+    [SupplyParameterFromQuery(Name = "tab")] public string? TabParam { get; set; }
+    [SupplyParameterFromQuery(Name = "asOf")] public int? AsOf { get; set; }
+
+    /// <summary>
+    /// Active view tab. Defaults to "record"; honored from ?tab=record|dossier|relationships|cyberware|knowledge|conditions|belongings|timeline.
+    /// </summary>
+    private static readonly string[] ValidTabs = {
+        "record", "dossier", "relationships", "cyberware",
+        "knowledge", "conditions", "belongings", "timeline"
+    };
+    private string CurrentTab =>
+        ValidTabs.FirstOrDefault(t => string.Equals(TabParam, t, StringComparison.OrdinalIgnoreCase))
+        ?? "record";
+
+    private void SwitchTab(string tab)
+    {
+        var query = tab == "record"
+            ? ""
+            : $"?tab={tab}{(AsOf.HasValue ? $"&asOf={AsOf}" : "")}";
+        Nav.NavigateTo($"/entity/{EntityId}{query}");
+        editMode = false; // any tab switch exits edit mode
+    }
+
+    // ── Edit mode (admin-only) ──
+    private bool editMode;
+    private CharacterData? editBackup;
+    private string editError = "";
+
+    private void StartEdit()
+    {
+        if (character == null) return;
+        // Snapshot the current character so Cancel can revert.
+        var json = System.Text.Json.JsonSerializer.Serialize(character);
+        editBackup = System.Text.Json.JsonSerializer.Deserialize<CharacterData>(json);
+        editMode = true;
+        editError = "";
+    }
+
+    private void CancelEdit()
+    {
+        if (editBackup != null) character = editBackup;
+        editBackup = null;
+        editMode = false;
+        editError = "";
+    }
+
+    private void SaveCharacterEdit()
+    {
+        if (character == null) return;
+        try
+        {
+            CharRepo.Save(character);
+            editMode = false;
+            editBackup = null;
+            editError = "";
+        }
+        catch (Exception ex) { editError = ex.Message; }
+    }
+
     private CharacterData? character;
     private SyntheticLifeData? synthetic;
     private DistrictData? place;
@@ -1116,6 +1446,18 @@ else if (document != null)
     private string resolvedDalle3Prompt = "";
     private List<CanonSearchResult> referencedBy = [];
 
+    // ── Tab content for non-character entities (place / corp / faction) ───
+    // Loaded on demand from the world graph + EF when the matching entity resolves.
+    // Reuses RelatedRowsList.RelatedRow so the component can render directly.
+    private List<RelatedRowsList.RelatedRow> subPlaces      = [];
+    private List<RelatedRowsList.RelatedRow> inhabitants    = [];
+    private List<RelatedRowsList.RelatedRow> placeEvents    = [];
+    private List<RelatedRowsList.RelatedRow> corpSubs       = [];
+    private List<RelatedRowsList.RelatedRow> corpPersonnel  = [];
+    private List<RelatedRowsList.RelatedRow> corpOps        = [];
+    private List<RelatedRowsList.RelatedRow> factionMembers = [];
+    private List<RelatedRowsList.RelatedRow> factionOps     = [];
+
     protected override void OnParametersSet()
     {
         character = null; synthetic = null; place = null; faction = null;
@@ -1137,7 +1479,77 @@ else if (document != null)
             referencedBy = GlobalSearch.Search(resolvedName, 1, 15)
                 .Where(r => r.Id != resolvedId)
                 .ToList();
+
+        LoadEntityTabs();
     }
+
+    /// <summary>
+    /// Populate tab contents for places / corponations / factions. Each pulls
+    /// related entities via the WorldGraph (which is already SQL-backed). Cheap:
+    /// graph reads are in-memory after EnsureLoaded.
+    /// </summary>
+    private void LoadEntityTabs()
+    {
+        subPlaces.Clear(); inhabitants.Clear(); placeEvents.Clear();
+        corpSubs.Clear();  corpPersonnel.Clear(); corpOps.Clear();
+        factionMembers.Clear(); factionOps.Clear();
+
+        if (place != null)
+        {
+            // Sub-places: places whose description mentions this place by name.
+            foreach (var p in PlaceRepo.GetAll())
+            {
+                if (p.Id == place.Id) continue;
+                if ((p.Description ?? "").Contains(place.Name, StringComparison.OrdinalIgnoreCase))
+                    subPlaces.Add(new(p.Id, p.Name, "", "place"));
+            }
+            // Inhabitants: characters whose territory / residence / affiliation mentions this place.
+            foreach (var c in CharRepo.GetAll())
+            {
+                var hay = $"{c.Territory?.HomeTurf} {c.Belongings?.Residence} {c.Affiliation}";
+                if (hay.Contains(place.Name, StringComparison.OrdinalIgnoreCase))
+                    inhabitants.Add(new(c.Id, c.Name, c.Role ?? "", "character"));
+            }
+            // Events: chapters whose synopsis or title references this place.
+            foreach (var ch in Chapters.ListChapters())
+            {
+                var hay = $"{ch.Title} {ch.Synopsis}";
+                if (hay.Contains(place.Name, StringComparison.OrdinalIgnoreCase))
+                    placeEvents.Add(new(ch.Id, ch.Title, $"Ch{ch.Number?.ToString() ?? "?"}", "chapter"));
+            }
+        }
+        else if (corponation != null)
+        {
+            foreach (var s in SubsidiaryRepo.GetAll())
+                if ((s.ParentCorponation ?? "").Equals(corponation.Name, StringComparison.OrdinalIgnoreCase))
+                    corpSubs.Add(new(s.Id, s.Name, s.LineOfBusiness ?? "", "subsidiary"));
+            foreach (var c in CharRepo.GetAll())
+                if ((c.Affiliation ?? "").Contains(corponation.Name, StringComparison.OrdinalIgnoreCase))
+                    corpPersonnel.Add(new(c.Id, c.Name, c.Role ?? "", "character"));
+            foreach (var ct in ContractRepo.GetAll())
+                if ((ct.Client ?? "").Contains(corponation.Name, StringComparison.OrdinalIgnoreCase))
+                    corpOps.Add(new(ct.Id, ct.Codename, ct.Description ?? "", "contract"));
+        }
+        else if (faction != null)
+        {
+            foreach (var c in CharRepo.GetAll())
+                if ((c.Affiliation ?? "").Contains(faction.Name, StringComparison.OrdinalIgnoreCase))
+                    factionMembers.Add(new(c.Id, c.Name, c.Role ?? "", "character"));
+            foreach (var ct in ContractRepo.GetAll())
+                if ((ct.Client ?? "").Contains(faction.Name, StringComparison.OrdinalIgnoreCase))
+                    factionOps.Add(new(ct.Id, ct.Codename, ct.Description ?? "", "contract"));
+        }
+    }
+
+    private static string TabIcon(string type) => type switch
+    {
+        "character"  => "bi-person",
+        "place"      => "bi-geo-alt",
+        "subsidiary" => "bi-diagram-3",
+        "contract"   => "bi-file-earmark-text",
+        "chapter"    => "bi-book",
+        _            => "bi-link-45deg",
+    };
 
     private void ResolveEntity()
     {

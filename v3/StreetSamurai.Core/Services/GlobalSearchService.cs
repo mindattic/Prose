@@ -220,7 +220,7 @@ public class GlobalSearchService
                 isCeramic
                     ? $"{s.OperatingHistory} {s.BehavioralNotes} {s.DiplomaticSpecialty}"
                     : $"{s.Description} {s.ObservedBehavior}",
-                s.Tags, isCeramic ? "/ceramic-men" : "/synthetics"));
+                s.Tags, "/synthetics"));
         }
         foreach (var c in corponations.GetAll())
             entries.Add(new(c.Id, "corponation", c.Name, c.Sector, $"{c.FoundingStory} {c.KeyDetail}", c.Tags, "/corps"));

@@ -1,0 +1,812 @@
+using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data.Entities;
+using StreetSamurai.Core.Models.Canon;
+
+namespace StreetSamurai.Core.Data;
+
+/// <summary>
+/// Bidirectional mapper between the column/bridge schema (Character + 25 child
+/// tables) and the domain model (CharacterData). This is the *only* place that
+/// knows the column ↔ JSON-field correspondence — JsonImportService and
+/// CharacterRepository both delegate to it so the mapping never drifts between
+/// the import path and the application read/write path.
+///
+/// Reads use a single root query plus eager Includes. Writes wipe the bridge
+/// rows by FK and re-insert (relational upsert) — same shape as
+/// JsonImportService.UpsertCharacterAsync, factored here for reuse.
+/// </summary>
+public static class CharacterMapper
+{
+    /// <summary>
+    /// Eager-load every active Character row + every child collection in one
+    /// trip and project to CharacterData. The Records.Json column is never
+    /// touched on this path.
+    /// </summary>
+    public static List<CharacterData> LoadAll(StreetSamuraiDbContext db, bool includeArchived = false)
+    {
+        var query = BuildIncludeChain(db.Characters.AsNoTracking());
+
+        var ids = (includeArchived
+            ? db.Entities.AsNoTracking().Where(e => e.EntityType == "character")
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "character" && e.IsActive))
+            .Select(e => e.Id)
+            .ToHashSet();
+
+        var characters = query.Where(c => ids.Contains(c.Id)).ToList();
+        var entityById = db.Entities.AsNoTracking()
+            .Where(e => ids.Contains(e.Id))
+            .ToDictionary(e => e.Id, e => e);
+        var tagsByEntity = db.EntityTags.AsNoTracking()
+            .Where(t => ids.Contains(t.EntityId))
+            .Select(t => new { t.EntityId, t.Tag!.Name })
+            .ToList()
+            .GroupBy(t => t.EntityId)
+            .ToDictionary(g => g.Key, g => g.Select(x => x.Name).ToList());
+
+        var result = new List<CharacterData>(characters.Count);
+        foreach (var c in characters)
+        {
+            entityById.TryGetValue(c.Id, out var entity);
+            tagsByEntity.TryGetValue(c.Id, out var tags);
+            result.Add(Materialize(c, entity, tags));
+        }
+        return result;
+    }
+
+    public static CharacterData? LoadOne(StreetSamuraiDbContext db, Guid id)
+    {
+        var c = BuildIncludeChain(db.Characters.AsNoTracking())
+            .FirstOrDefault(c => c.Id == id);
+        if (c == null) return null;
+        var entity = db.Entities.AsNoTracking().FirstOrDefault(e => e.Id == id);
+        var tags = db.EntityTags.AsNoTracking()
+            .Where(t => t.EntityId == id)
+            .Select(t => t.Tag!.Name)
+            .ToList();
+        return Materialize(c, entity, tags);
+    }
+
+    private static IQueryable<Character> BuildIncludeChain(IQueryable<Character> q)
+        => q.AsSplitQuery()
+            .Include(c => c.Aliases)
+            .Include(c => c.StoryHooks)
+            .Include(c => c.ArchetypeScores)
+            .Include(c => c.GeneticAncestry)
+            .Include(c => c.AncestryDetail)
+            .Include(c => c.PsychologyTraits)
+            .Include(c => c.SpeechPhrases)
+            .Include(c => c.BehavioralRules)
+            .Include(c => c.BehavioralMaps)
+            .Include(c => c.StatScalars)
+            .Include(c => c.StatPhrases)
+            .Include(c => c.PhysicalMarks)
+            .Include(c => c.TerritoryZones)
+            .Include(c => c.TerritoryReputations)
+            .Include(c => c.BelongingsGear)
+            .Include(c => c.BelongingsExtras)
+            .Include(c => c.BioBatteryThresholds)
+            .Include(c => c.NeuralAbilities)
+            .Include(c => c.Changelog)
+            .Include(c => c.Cyberware)
+            .Include(c => c.Knowledge).ThenInclude(k => k.RelatedEntities)
+            .Include(c => c.Conditions)
+            .Include(c => c.Relationships)
+            .Include(c => c.Timeline).ThenInclude(t => t.BodyChanges)
+            .Include(c => c.HomeTurfs).ThenInclude(h => h.Place)
+            .Include(c => c.Affiliations).ThenInclude(a => a.Faction);
+
+    /// <summary>
+    /// Build a CharacterData from the entity + bridges that were loaded by
+    /// <see cref="BuildIncludeChain"/>. Entity is used for the universal Name/Slug
+    /// — every other field comes from the columnar Character row.
+    /// </summary>
+    public static CharacterData Materialize(Character c, Entity? entity, List<string>? tags)
+    {
+        var data = new CharacterData
+        {
+            Id = c.Id.ToString("N"),
+            Type = "character",
+            Name = entity?.Name ?? "",
+            Rating = c.Rating,
+            VoteCount = c.VoteCount,
+            Species = c.Species,
+            Gender = c.Gender,
+            Pronouns = c.Pronouns,
+            Role = c.Role,
+            Age = c.Age,
+            Status = c.LifeStatus,
+            Location = c.Location,
+            Description = c.Description,
+            NarrativeFunction = c.NarrativeFunction,
+            Augmentations = c.Augmentations,
+            DailyLife = c.DailyLife,
+            Affiliation = c.Affiliation,
+            NarrationVoice = c.NarrationVoice,
+            MidjourneyPrompt = c.MidjourneyPrompt,
+            Dalle3Prompt = c.Dalle3Prompt,
+            Tags = tags ?? new List<string>(),
+        };
+
+        // ── Lists / dicts ─────────────────────────────────────────────────
+        data.Aliases    = c.Aliases.OrderBy(x => x.Position).Select(x => x.Value).ToList();
+        data.StoryHooks = c.StoryHooks.OrderBy(x => x.Position).Select(x => x.Hook).ToList();
+
+        data.Archetypes = c.ArchetypeScores.ToDictionary(x => x.ArchetypeName, x => x.Score);
+        data.GeneticAncestry = c.GeneticAncestry.ToDictionary(x => x.Region, x => x.Percent);
+
+        data.AncestryDetail = c.AncestryDetail
+            .GroupBy(x => x.Region)
+            .ToDictionary(
+                g => g.Key,
+                g => g.GroupBy(x => x.SubRegion)
+                      .ToDictionary(
+                          sg => sg.Key,
+                          sg => sg.ToDictionary(x => x.Nationality, x => x.Percent)));
+
+        // Psychology
+        data.Psychology = new CharacterPsychology
+        {
+            Secret           = c.PsychologySecret,
+            CoreFears        = PickList(c.PsychologyTraits, "core_fears",        x => x.Trait),
+            CoreDesires      = PickList(c.PsychologyTraits, "core_desires",      x => x.Trait),
+            CopingMechanisms = PickList(c.PsychologyTraits, "coping_mechanisms", x => x.Trait),
+            BlindSpots       = PickList(c.PsychologyTraits, "blind_spots",       x => x.Trait),
+        };
+
+        // Speech
+        data.SpeechPatterns = new SpeechPatterns
+        {
+            Vocabulary       = c.SpeechVocabulary,
+            Cadence          = c.SpeechCadence,
+            Subtext          = c.SpeechSubtext,
+            UnderPressure    = c.SpeechUnderPressure,
+            IntimacyRegister = c.SpeechIntimacyRegister,
+            VerbalTics   = PickList(c.SpeechPhrases, "verbal_tics",   x => x.Phrase),
+            ExampleLines = PickList(c.SpeechPhrases, "example_lines", x => x.Phrase),
+            Avoidances   = PickList(c.SpeechPhrases, "avoidances",    x => x.Phrase),
+        };
+
+        // Behavioral
+        data.Behavioral = new CharacterBehavioral
+        {
+            DecisionRules    = PickList(c.BehavioralRules, "decision_rules",    x => x.Rule),
+            EscalationLadder = PickList(c.BehavioralRules, "escalation_ladder", x => x.Rule),
+            Contradictions   = PickList(c.BehavioralRules, "contradictions",    x => x.Rule),
+            Habits           = PickList(c.BehavioralRules, "habits",            x => x.Rule),
+            BreakingPoints   = PickList(c.BehavioralRules, "breaking_points",   x => x.Rule),
+            InterpersonalModes = c.BehavioralMaps
+                .Where(x => x.Bucket == "interpersonal_modes")
+                .ToDictionary(x => x.KeyName, x => x.Value),
+            StressResponses    = c.BehavioralMaps
+                .Where(x => x.Bucket == "stress_responses")
+                .ToDictionary(x => x.KeyName, x => x.Value),
+        };
+
+        // Stats
+        data.Stats = new CharacterStats
+        {
+            Physical    = StatBucket(c.StatScalars, "physical"),
+            Mental      = StatBucket(c.StatScalars, "mental"),
+            Social      = StatBucket(c.StatScalars, "social"),
+            Personality = StatBucket(c.StatScalars, "personality"),
+            Thresholds  = StatBucket(c.StatScalars, "thresholds"),
+            Drives     = PickList(c.StatPhrases, "drives",     x => x.Phrase),
+            Strengths  = PickList(c.StatPhrases, "strengths",  x => x.Phrase),
+            Weaknesses = PickList(c.StatPhrases, "weaknesses", x => x.Phrase),
+            StatTags   = PickList(c.StatPhrases, "tags",       x => x.Phrase),
+        };
+
+        // Physical description
+        data.PhysicalDescription = new PhysicalDescription
+        {
+            Heritage             = c.Heritage,
+            HeightCm             = c.HeightCm,
+            WeightKg             = c.WeightKg,
+            Build                = c.Build,
+            HairColor            = c.HairColor,
+            HairStyle            = c.HairStyle,
+            HairLength           = c.HairLength,
+            EyeColor             = c.EyeColor,
+            SkinTone             = c.SkinTone,
+            Complexion           = c.Complexion,
+            VisibleAugmentations = c.VisibleAugmentations,
+            PostureMovement      = c.PostureMovement,
+            ClothingStyle        = c.PhysicalClothingStyle,
+            DistinguishingMarks  = c.PhysicalMarks.OrderBy(x => x.Position).Select(x => x.Mark).ToList(),
+        };
+
+        // Territory
+        data.Territory = new OperatingTerritory
+        {
+            HomeTurf = c.TerritoryHomeTurf,
+            Range    = c.TerritoryRange,
+            FamiliarZones = c.TerritoryZones.Where(x => x.Bucket == "familiar")
+                                            .OrderBy(x => x.Position).Select(x => x.Zone).ToList(),
+            NoGoZones     = c.TerritoryZones.Where(x => x.Bucket == "no_go")
+                                            .OrderBy(x => x.Position).Select(x => x.Zone).ToList(),
+            ZoneReputation = c.TerritoryReputations.ToDictionary(x => x.Zone, x => x.Reputation),
+        };
+
+        // Belongings
+        data.Belongings = new CharacterBelongings
+        {
+            PrimaryWeapon   = c.BelongingsPrimaryWeapon,
+            SecondaryWeapon = c.BelongingsSecondaryWeapon,
+            Armor           = c.BelongingsArmor,
+            Vehicle         = c.BelongingsVehicle,
+            Residence       = c.BelongingsResidence,
+            ClothingStyle   = c.BelongingsClothingStyle,
+            FavoriteDrink   = c.BelongingsFavoriteDrink,
+            FavoriteFood    = c.BelongingsFavoriteFood,
+            Stimulant       = c.BelongingsStimulant,
+            CommDevice      = c.BelongingsCommDevice,
+            SignatureGear   = c.BelongingsGear.Where(x => x.Bucket == "signature_gear")
+                                              .OrderBy(x => x.Position).Select(x => x.GearName).ToList(),
+            Pharmaceuticals = c.BelongingsGear.Where(x => x.Bucket == "pharmaceuticals")
+                                              .OrderBy(x => x.Position).Select(x => x.GearName).ToList(),
+            Other           = c.BelongingsExtras.ToDictionary(x => x.KeyName, x => x.Value),
+        };
+
+        // Bio-battery
+        if (!string.IsNullOrEmpty(c.BioBatteryMaxCapacity)
+            || !string.IsNullOrEmpty(c.BioBatteryRecovery)
+            || c.BioBatteryThresholds.Count > 0)
+        {
+            data.BioBattery = new BioBatteryDefinition
+            {
+                MaxCapacityDescription = c.BioBatteryMaxCapacity,
+                Recovery               = c.BioBatteryRecovery,
+                DepletionThresholds    = c.BioBatteryThresholds.ToDictionary(x => x.Threshold, x => x.Consequence),
+            };
+        }
+
+        // Neural abilities
+        data.NeuralAbilities = c.NeuralAbilities.OrderBy(x => x.Position).Select(x => new NeuralAbilityDefinition
+        {
+            Name = x.Name, CostPercent = x.CostPercent, Description = x.Description,
+            OverdrawnRisk = x.OverdrawnRisk, Passive = x.Passive,
+        }).ToList();
+
+        // Changelog
+        data.Changelog = c.Changelog.OrderBy(x => x.Position).Select(x => new CharacterChangelog
+        {
+            StoryId = x.StoryId, Beat = x.Beat, Date = x.Date,
+            Field = x.FieldName, From = x.FromValue, To = x.ToValue, Reason = x.Reason,
+        }).ToList();
+
+        // Cyberware / Knowledge / Conditions / Relationships / Timeline
+        data.CyberwareInventory = c.Cyberware.Select(x => new CyberwareEntry
+        {
+            Name = x.Name, BodyLocation = x.BodyLocation, Manufacturer = x.Manufacturer,
+            Tier = x.Tier, Condition = x.Condition, InstalledDate = x.InstalledDate,
+            Description = x.Description, Replaces = x.Replaces,
+        }).ToList();
+
+        data.Knowledge = c.Knowledge.Select(k => new CharacterKnowledge
+        {
+            Topic = k.Topic, Summary = k.Summary,
+            LearnedChapter = k.LearnedChapter, LearnedChapterId = k.LearnedChapterId,
+            SourceBeat = k.SourceBeat, SourceSnippet = k.SourceSnippet,
+            Entities = k.RelatedEntities.OrderBy(e => e.Position).Select(e => e.EntityRef).ToList(),
+        }).ToList();
+
+        data.Conditions = c.Conditions.Select(x => new CharacterCondition
+        {
+            Kind = x.Kind, Name = x.Name, Severity = x.Severity, Notes = x.Notes,
+            SinceChapter = x.SinceChapter, UntilChapter = x.UntilChapter,
+        }).ToList();
+
+        data.Relationships = c.Relationships.Select(x => new CharacterRelationship
+        {
+            Name = x.TargetName, Type = x.Type, Description = x.Description,
+            EmotionalCore = x.EmotionalCore, StoryTension = x.StoryTension, Status = x.Status,
+            SinceChapter = x.SinceChapter, UntilChapter = x.UntilChapter,
+        }).ToList();
+
+        data.Timeline = c.Timeline.Select(t => new TimelineEvent
+        {
+            Date = t.Date, StoryId = t.StoryId, Event = t.Event,
+            Consequences = t.Consequences, StatusChange = t.StatusChange,
+            BodyChanges = t.BodyChanges.OrderBy(b => b.Position).Select(b => b.BodyChange).ToList(),
+        }).ToList();
+
+        return data;
+    }
+
+    private static List<string> PickList<TRow>(IEnumerable<TRow> rows, string bucket, Func<TRow, string> select)
+        => rows.Where(r => GetBucket(r) == bucket)
+               .OrderBy(r => GetPosition(r))
+               .Select(select)
+               .ToList();
+
+    /// <summary>Reflect the Bucket / Position properties (every bucketed bridge type has them).</summary>
+    private static string GetBucket(object row)
+        => (string)(row.GetType().GetProperty("Bucket")?.GetValue(row) ?? "");
+    private static int GetPosition(object row)
+        => (int)(row.GetType().GetProperty("Position")?.GetValue(row) ?? 0);
+
+    /// <summary>Materialize a Stats sub-dictionary (Dict&lt;string, JsonElement&gt;) from polymorphic StatScalar rows.</summary>
+    private static Dictionary<string, JsonElement> StatBucket(IEnumerable<CharacterStatScalar> rows, string bucket)
+    {
+        var dict = new Dictionary<string, JsonElement>();
+        foreach (var r in rows.Where(x => x.Bucket == bucket))
+        {
+            JsonElement el;
+            switch (r.ValueKind)
+            {
+                case "number":
+                    el = JsonDocument.Parse(r.ValueNumber?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? "0").RootElement;
+                    break;
+                case "bool":
+                    el = JsonDocument.Parse(r.ValueBool == true ? "true" : "false").RootElement;
+                    break;
+                case "null":
+                    el = JsonDocument.Parse("null").RootElement;
+                    break;
+                case "array":
+                case "object":
+                    try { el = JsonDocument.Parse(r.ValueText ?? "null").RootElement; }
+                    catch { el = JsonDocument.Parse("null").RootElement; }
+                    break;
+                default: // string
+                    el = JsonDocument.Parse(JsonSerializer.Serialize(r.ValueText ?? "")).RootElement;
+                    break;
+            }
+            dict[r.KeyName] = el;
+        }
+        return dict;
+    }
+
+    // ─────────────────────────────────────────────────────────────────────
+    // WRITE PATH — drop bridge rows, repopulate columns + bridges from a
+    // CharacterData. Same algorithm JsonImportService uses for upsert.
+    // ─────────────────────────────────────────────────────────────────────
+
+    public static async Task PersistAsync(StreetSamuraiDbContext db, Guid id, CharacterData src, CancellationToken ct = default)
+    {
+        var ch = await db.Characters.FirstOrDefaultAsync(c => c.Id == id, ct);
+        var isNew = ch == null;
+
+        if (!isNew)
+        {
+            // Existing character — wipe child bridges (cascade deletes grandchildren).
+            // Only run on update. New characters have no rows to wipe; skipping the
+            // 27 round-trips makes seeds and bulk imports drastically faster
+            // (especially on SQLite where each ExecuteDelete is its own transaction).
+            await db.CharacterAliases.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterStoryHooks.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterArchetypeScores.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterGeneticAncestries.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterAncestryDetails.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterPsychologyTraits.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterSpeechPhrases.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterBehavioralRules.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterBehavioralMaps.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterStatScalars.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterStatPhrases.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterPhysicalMarks.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterTerritoryZones.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterTerritoryReputations.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterBelongingsGear.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterBelongingsExtras.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterBioBatteryThresholds.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterNeuralAbilities.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterChangelog.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterCyberware.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterKnowledge.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterConditions.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterRelationships.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterTimeline.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterHomeTurfs.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+            await db.CharacterAffiliations.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
+        }
+        else
+        {
+            ch = new Character { Id = id };
+            db.Characters.Add(ch);
+        }
+
+        FillScalars(ch!, src);
+        FillBridges(db, id, src);
+    }
+
+    /// <summary>Populate scalar columns on Character from src (no DB touch).</summary>
+    public static void FillScalars(Character ch, CharacterData src)
+    {
+        // Names — parse the canonical Name into structured parts so the table
+        // is queryable by surname, first name, etc.
+        var name = src.Name ?? "";
+        ch.Name = name;
+        var parts = ParseName(name);
+        ch.TitlePrefix = parts.Title;
+        ch.FirstName   = parts.First;
+        ch.MiddleName  = parts.Middle;
+        ch.LastName    = parts.Last;
+
+        ch.Species           = string.IsNullOrEmpty(src.Species) ? "human" : src.Species;
+        ch.Gender            = src.Gender ?? "";
+        ch.Pronouns          = src.Pronouns ?? "";
+        ch.Age               = src.Age;
+        ch.Rating             = src.Rating;
+        ch.VoteCount          = src.VoteCount;
+        ch.LifeStatus        = string.IsNullOrEmpty(src.Status) ? "alive" : src.Status;
+        ch.Location          = src.Location ?? "";
+        ch.Affiliation       = src.Affiliation ?? "";
+        ch.Role              = src.Role ?? "";
+        ch.Description       = src.Description ?? "";
+        ch.NarrativeFunction = src.NarrativeFunction ?? "";
+        ch.NarrationVoice    = src.NarrationVoice ?? "";
+        ch.Augmentations     = src.Augmentations ?? "";
+        ch.DailyLife         = src.DailyLife ?? "";
+        ch.MidjourneyPrompt  = src.MidjourneyPrompt ?? "";
+        ch.Dalle3Prompt      = src.Dalle3Prompt ?? "";
+
+        var b = src.Belongings ?? new();
+        ch.BelongingsPrimaryWeapon   = b.PrimaryWeapon   ?? "";
+        ch.BelongingsSecondaryWeapon = b.SecondaryWeapon ?? "";
+        ch.BelongingsArmor           = b.Armor           ?? "";
+        ch.BelongingsVehicle         = b.Vehicle         ?? "";
+        ch.BelongingsResidence       = b.Residence       ?? "";
+        ch.BelongingsClothingStyle   = b.ClothingStyle   ?? "";
+        ch.BelongingsFavoriteDrink   = b.FavoriteDrink   ?? "";
+        ch.BelongingsFavoriteFood    = b.FavoriteFood    ?? "";
+        ch.BelongingsStimulant       = b.Stimulant       ?? "";
+        ch.BelongingsCommDevice      = b.CommDevice      ?? "";
+
+        var t = src.Territory ?? new();
+        ch.TerritoryHomeTurf = t.HomeTurf ?? "";
+        ch.TerritoryRange    = string.IsNullOrEmpty(t.Range) ? "local" : t.Range;
+        ch.HomeTurf          = t.HomeTurf ?? "";
+
+        var p = src.PhysicalDescription ?? new();
+        ch.Heritage              = p.Heritage ?? "";
+        ch.HeightCm              = p.HeightCm;
+        ch.WeightKg              = p.WeightKg;
+        ch.Build                 = p.Build ?? "";
+        ch.HairColor             = p.HairColor ?? "";
+        ch.HairStyle             = p.HairStyle ?? "";
+        ch.HairLength            = p.HairLength ?? "";
+        ch.EyeColor              = p.EyeColor ?? "";
+        ch.SkinTone              = p.SkinTone ?? "";
+        ch.Complexion            = p.Complexion ?? "";
+        ch.VisibleAugmentations  = p.VisibleAugmentations ?? "";
+        ch.PostureMovement       = p.PostureMovement ?? "";
+        ch.PhysicalClothingStyle = p.ClothingStyle ?? "";
+
+        ch.PsychologySecret = src.Psychology?.Secret ?? "";
+
+        var sp = src.SpeechPatterns ?? new();
+        ch.SpeechVocabulary       = sp.Vocabulary ?? "";
+        ch.SpeechCadence          = sp.Cadence ?? "";
+        ch.SpeechSubtext          = sp.Subtext ?? "";
+        ch.SpeechUnderPressure    = sp.UnderPressure ?? "";
+        ch.SpeechIntimacyRegister = sp.IntimacyRegister ?? "";
+
+        ch.BioBatteryMaxCapacity = src.BioBattery?.MaxCapacityDescription ?? "";
+        ch.BioBatteryRecovery    = src.BioBattery?.Recovery ?? "";
+    }
+
+    /// <summary>Insert all bridge rows (assumes the parent's existing bridges have already been wiped).</summary>
+    public static void FillBridges(StreetSamuraiDbContext db, Guid id, CharacterData src)
+    {
+        for (int i = 0; i < src.Aliases.Count; i++)
+            db.CharacterAliases.Add(new CharacterAlias { CharacterId = id, Position = i, Value = src.Aliases[i] ?? "" });
+        for (int i = 0; i < src.StoryHooks.Count; i++)
+            db.CharacterStoryHooks.Add(new CharacterStoryHook { CharacterId = id, Position = i, Hook = src.StoryHooks[i] ?? "" });
+
+        foreach (var kv in src.Archetypes)
+            db.CharacterArchetypeScores.Add(new CharacterArchetypeScore { CharacterId = id, ArchetypeName = kv.Key, Score = kv.Value });
+        foreach (var kv in src.GeneticAncestry)
+            db.CharacterGeneticAncestries.Add(new CharacterGeneticAncestry { CharacterId = id, Region = kv.Key, Percent = kv.Value });
+
+        foreach (var (region, subDict) in src.AncestryDetail)
+            foreach (var (subRegion, natDict) in subDict)
+                foreach (var (nationality, percent) in natDict)
+                    db.CharacterAncestryDetails.Add(new CharacterAncestryDetail
+                    {
+                        CharacterId = id, Region = region, SubRegion = subRegion,
+                        Nationality = nationality, Percent = percent,
+                    });
+
+        AddTraits(db, id, src.Psychology?.CoreFears,        "core_fears");
+        AddTraits(db, id, src.Psychology?.CoreDesires,      "core_desires");
+        AddTraits(db, id, src.Psychology?.CopingMechanisms, "coping_mechanisms");
+        AddTraits(db, id, src.Psychology?.BlindSpots,       "blind_spots");
+
+        AddSpeechPhrases(db, id, src.SpeechPatterns?.VerbalTics,   "verbal_tics");
+        AddSpeechPhrases(db, id, src.SpeechPatterns?.ExampleLines, "example_lines");
+        AddSpeechPhrases(db, id, src.SpeechPatterns?.Avoidances,   "avoidances");
+
+        AddRules(db, id, src.Behavioral?.DecisionRules,    "decision_rules");
+        AddRules(db, id, src.Behavioral?.EscalationLadder, "escalation_ladder");
+        AddRules(db, id, src.Behavioral?.Contradictions,   "contradictions");
+        AddRules(db, id, src.Behavioral?.Habits,           "habits");
+        AddRules(db, id, src.Behavioral?.BreakingPoints,   "breaking_points");
+
+        if (src.Behavioral != null)
+        {
+            foreach (var kv in src.Behavioral.InterpersonalModes)
+                db.CharacterBehavioralMaps.Add(new CharacterBehavioralMap { CharacterId = id, Bucket = "interpersonal_modes", KeyName = kv.Key, Value = kv.Value ?? "" });
+            foreach (var kv in src.Behavioral.StressResponses)
+                db.CharacterBehavioralMaps.Add(new CharacterBehavioralMap { CharacterId = id, Bucket = "stress_responses",    KeyName = kv.Key, Value = kv.Value ?? "" });
+        }
+
+        AddStatScalars(db, id, src.Stats?.Physical,    "physical");
+        AddStatScalars(db, id, src.Stats?.Mental,      "mental");
+        AddStatScalars(db, id, src.Stats?.Social,      "social");
+        AddStatScalars(db, id, src.Stats?.Personality, "personality");
+        AddStatScalars(db, id, src.Stats?.Thresholds,  "thresholds");
+        AddStatPhrases(db, id, src.Stats?.Drives,     "drives");
+        AddStatPhrases(db, id, src.Stats?.Strengths,  "strengths");
+        AddStatPhrases(db, id, src.Stats?.Weaknesses, "weaknesses");
+        AddStatPhrases(db, id, src.Stats?.StatTags,   "tags");
+
+        for (int i = 0; i < (src.PhysicalDescription?.DistinguishingMarks?.Count ?? 0); i++)
+            db.CharacterPhysicalMarks.Add(new CharacterPhysicalMark { CharacterId = id, Position = i, Mark = src.PhysicalDescription!.DistinguishingMarks[i] ?? "" });
+
+        AddTerritoryZones(db, id, src.Territory?.FamiliarZones, "familiar");
+        AddTerritoryZones(db, id, src.Territory?.NoGoZones,     "no_go");
+        if (src.Territory != null)
+            foreach (var kv in src.Territory.ZoneReputation)
+                db.CharacterTerritoryReputations.Add(new CharacterTerritoryReputation { CharacterId = id, Zone = kv.Key, Reputation = kv.Value ?? "" });
+
+        var b = src.Belongings ?? new();
+        AddGear(db, id, b.SignatureGear,   "signature_gear");
+        AddGear(db, id, b.Pharmaceuticals, "pharmaceuticals");
+        foreach (var kv in b.Other)
+            db.CharacterBelongingsExtras.Add(new CharacterBelongingsExtra { CharacterId = id, KeyName = kv.Key, Value = kv.Value ?? "" });
+
+        if (src.BioBattery != null)
+            foreach (var kv in src.BioBattery.DepletionThresholds)
+                db.CharacterBioBatteryThresholds.Add(new CharacterBioBatteryThreshold { CharacterId = id, Threshold = kv.Key, Consequence = kv.Value ?? "" });
+
+        for (int i = 0; i < src.NeuralAbilities.Count; i++)
+        {
+            var na = src.NeuralAbilities[i];
+            db.CharacterNeuralAbilities.Add(new CharacterNeuralAbility
+            {
+                CharacterId = id, Position = i,
+                Name = na.Name ?? "", CostPercent = na.CostPercent,
+                Description = na.Description ?? "", OverdrawnRisk = na.OverdrawnRisk ?? "",
+                Passive = na.Passive,
+            });
+        }
+
+        for (int i = 0; i < src.Changelog.Count; i++)
+        {
+            var cl = src.Changelog[i];
+            db.CharacterChangelog.Add(new CharacterChangelogRow
+            {
+                CharacterId = id, Position = i,
+                StoryId = cl.StoryId ?? "", Beat = cl.Beat ?? "", Date = cl.Date ?? "",
+                FieldName = cl.Field ?? "", FromValue = cl.From ?? "", ToValue = cl.To ?? "", Reason = cl.Reason ?? "",
+            });
+        }
+
+        foreach (var c in src.CyberwareInventory)
+            db.CharacterCyberware.Add(new CharacterCyberware
+            {
+                CharacterId = id,
+                Name = c.Name ?? "", BodyLocation = c.BodyLocation ?? "", Manufacturer = c.Manufacturer ?? "",
+                Tier = c.Tier ?? "", Condition = string.IsNullOrEmpty(c.Condition) ? "functional" : c.Condition,
+                InstalledDate = c.InstalledDate ?? "", Description = c.Description ?? "", Replaces = c.Replaces ?? "",
+            });
+
+        foreach (var c in src.Conditions)
+            db.CharacterConditions.Add(new CharacterConditionRow
+            {
+                CharacterId = id,
+                Kind = c.Kind ?? "", Name = c.Name ?? "", Severity = c.Severity ?? "",
+                Notes = c.Notes ?? "", SinceChapter = c.SinceChapter, UntilChapter = c.UntilChapter,
+            });
+
+        foreach (var r in src.Relationships)
+            db.CharacterRelationships.Add(new CharacterRelationshipRow
+            {
+                CharacterId = id,
+                TargetName = r.Name ?? "", Type = r.Type ?? "", Description = r.Description ?? "",
+                EmotionalCore = r.EmotionalCore ?? "", StoryTension = r.StoryTension ?? "",
+                Status = string.IsNullOrEmpty(r.Status) ? "active" : r.Status,
+                SinceChapter = r.SinceChapter, UntilChapter = r.UntilChapter,
+            });
+
+        foreach (var k in src.Knowledge)
+        {
+            var krow = new CharacterKnowledgeRow
+            {
+                CharacterId = id,
+                Topic = k.Topic ?? "", Summary = k.Summary ?? "",
+                LearnedChapter = k.LearnedChapter, LearnedChapterId = k.LearnedChapterId,
+                SourceBeat = k.SourceBeat, SourceSnippet = k.SourceSnippet,
+            };
+            for (int i = 0; i < k.Entities.Count; i++)
+                krow.RelatedEntities.Add(new CharacterKnowledgeEntity { Position = i, EntityRef = k.Entities[i] ?? "" });
+            db.CharacterKnowledge.Add(krow);
+        }
+
+        foreach (var ev in src.Timeline)
+        {
+            var trow = new CharacterTimelineEvent
+            {
+                CharacterId = id,
+                Date = ev.Date ?? "", StoryId = ev.StoryId ?? "",
+                Event = ev.Event ?? "", Consequences = ev.Consequences ?? "",
+                StatusChange = ev.StatusChange ?? "",
+            };
+            for (int i = 0; i < ev.BodyChanges.Count; i++)
+                trow.BodyChanges.Add(new CharacterTimelineBodyChange { Position = i, BodyChange = ev.BodyChanges[i] ?? "" });
+            db.CharacterTimeline.Add(trow);
+        }
+
+        // ── Resolved-entity bridges ───────────────────────────────────────
+        // Source has at most one HomeTurf string and one Affiliation string,
+        // but the schema is 1:M because a character can accumulate many over
+        // their canonical history. The first row is index 0; future writes
+        // (e.g. relocation) append.
+        var homeTurf = src.Territory?.HomeTurf?.Trim();
+        if (!string.IsNullOrEmpty(homeTurf))
+        {
+            var placeId = ResolveEntityId(db, "place", homeTurf);
+            db.CharacterHomeTurfs.Add(new CharacterHomeTurf
+            {
+                CharacterId = id, Position = 0, Alias = homeTurf, PlaceId = placeId,
+            });
+        }
+
+        var affiliation = src.Affiliation?.Trim();
+        if (!string.IsNullOrEmpty(affiliation))
+        {
+            var factionId = ResolveEntityId(db, "faction", affiliation);
+            db.CharacterAffiliations.Add(new CharacterAffiliation
+            {
+                CharacterId = id, Position = 0, Alias = affiliation, FactionId = factionId,
+            });
+        }
+    }
+
+    /// <summary>
+    /// Look up the canonical Entity id of the given type for a free-form name.
+    /// Tries exact name match first, then slug. Returns null when nothing matches —
+    /// the bridge keeps the alias either way so display still works.
+    /// </summary>
+    private static Guid? ResolveEntityId(StreetSamuraiDbContext db, string entityType, string name)
+    {
+        if (string.IsNullOrWhiteSpace(name)) return null;
+        var slug = StreetSamurai.Core.Services.WorldGraphService.Slugify(name);
+        return db.Entities
+            .Where(e => e.EntityType == entityType && e.IsActive
+                && (e.Name == name || e.Slug == slug))
+            .Select(e => (Guid?)e.Id)
+            .FirstOrDefault();
+    }
+
+    private static void AddTraits(StreetSamuraiDbContext db, Guid id, IReadOnlyList<string>? items, string bucket)
+    {
+        if (items == null) return;
+        for (int i = 0; i < items.Count; i++)
+            db.CharacterPsychologyTraits.Add(new CharacterPsychologyTrait { CharacterId = id, Bucket = bucket, Position = i, Trait = items[i] ?? "" });
+    }
+    private static void AddSpeechPhrases(StreetSamuraiDbContext db, Guid id, IReadOnlyList<string>? items, string bucket)
+    {
+        if (items == null) return;
+        for (int i = 0; i < items.Count; i++)
+            db.CharacterSpeechPhrases.Add(new CharacterSpeechPhrase { CharacterId = id, Bucket = bucket, Position = i, Phrase = items[i] ?? "" });
+    }
+    private static void AddRules(StreetSamuraiDbContext db, Guid id, IReadOnlyList<string>? items, string bucket)
+    {
+        if (items == null) return;
+        for (int i = 0; i < items.Count; i++)
+            db.CharacterBehavioralRules.Add(new CharacterBehavioralRule { CharacterId = id, Bucket = bucket, Position = i, Rule = items[i] ?? "" });
+    }
+    private static void AddStatPhrases(StreetSamuraiDbContext db, Guid id, IReadOnlyList<string>? items, string bucket)
+    {
+        if (items == null) return;
+        for (int i = 0; i < items.Count; i++)
+            db.CharacterStatPhrases.Add(new CharacterStatPhrase { CharacterId = id, Bucket = bucket, Position = i, Phrase = items[i] ?? "" });
+    }
+    private static void AddTerritoryZones(StreetSamuraiDbContext db, Guid id, IReadOnlyList<string>? items, string bucket)
+    {
+        if (items == null) return;
+        for (int i = 0; i < items.Count; i++)
+            db.CharacterTerritoryZones.Add(new CharacterTerritoryZone { CharacterId = id, Bucket = bucket, Position = i, Zone = items[i] ?? "" });
+    }
+    private static void AddGear(StreetSamuraiDbContext db, Guid id, IReadOnlyList<string>? items, string bucket)
+    {
+        if (items == null) return;
+        for (int i = 0; i < items.Count; i++)
+            db.CharacterBelongingsGear.Add(new CharacterBelongingsGear { CharacterId = id, Bucket = bucket, Position = i, GearName = items[i] ?? "" });
+    }
+    // ─────────────────────────────────────────────────────────────────────
+    // Name parsing — runs at write time only (read time is a column read).
+    // ─────────────────────────────────────────────────────────────────────
+
+    /// <summary>Honorifics we strip when picking the first name. Stored separately in TitlePrefix.</summary>
+    private static readonly HashSet<string> NameTitles = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "Dr.", "Dr", "Mr.", "Mr", "Ms.", "Ms", "Mrs.", "Mrs", "Mx.", "Mx",
+        "Prof.", "Prof", "Sir", "Dame", "Lord", "Lady",
+        "Captain", "Capt.", "Capt", "Cmdr.", "Cmdr", "Lt.", "Lt", "Col.", "Col",
+        "Major", "Maj.", "Maj", "Sgt.", "Sgt", "Det.", "Det", "Officer",
+        "Reverend", "Rev.", "Rev", "Father", "Fr.", "Sister", "Brother",
+        "Auntie", "Uncle", "Granny", "Grandpa",
+    };
+
+    public readonly record struct NameParts(string Title, string First, string Middle, string Last);
+
+    /// <summary>
+    /// Split a free-form full name into Title / First / Middle / Last. Handles
+    /// honorifics, mononyms, and quoted aliases. Quoted segments
+    /// (e.g. "Sasha 'Lena Connor' Võ") are removed from name-part assignment —
+    /// they're stored separately in the Aliases bridge.
+    /// </summary>
+    public static NameParts ParseName(string fullName)
+    {
+        if (string.IsNullOrWhiteSpace(fullName)) return new("", "", "", "");
+
+        // Drop anything between paired single or double quotes — those are aliases,
+        // not part of the structured name.
+        var stripped = System.Text.RegularExpressions.Regex.Replace(fullName, "(['\"])([^'\"]*)\\1", "");
+        var tokens = stripped.Split(' ', '\t', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        if (tokens.Length == 0) return new("", "", "", "");
+
+        // Pull off a leading title if present. We allow at most one title token.
+        var title = "";
+        var idx = 0;
+        if (NameTitles.Contains(tokens[0]))
+        {
+            title = tokens[0];
+            idx = 1;
+        }
+
+        var nameTokens = tokens.Skip(idx).ToArray();
+        return nameTokens.Length switch
+        {
+            0 => new(title, "", "", ""),
+            1 => new(title, nameTokens[0], "", ""),
+            2 => new(title, nameTokens[0], "", nameTokens[1]),
+            _ => new(title, nameTokens[0], string.Join(' ', nameTokens[1..^1]), nameTokens[^1]),
+        };
+    }
+
+    private static void AddStatScalars(StreetSamuraiDbContext db, Guid id, Dictionary<string, JsonElement>? bucket, string bucketName)
+    {
+        if (bucket == null) return;
+        foreach (var (key, el) in bucket)
+        {
+            var row = new CharacterStatScalar { CharacterId = id, Bucket = bucketName, KeyName = key };
+            switch (el.ValueKind)
+            {
+                case JsonValueKind.Number:
+                    row.ValueKind = "number";
+                    if (el.TryGetDouble(out var n)) row.ValueNumber = n;
+                    row.ValueText = el.ToString();
+                    break;
+                case JsonValueKind.String:
+                    row.ValueKind = "string";
+                    row.ValueText = el.GetString() ?? "";
+                    break;
+                case JsonValueKind.True:
+                case JsonValueKind.False:
+                    row.ValueKind = "bool";
+                    row.ValueBool = el.GetBoolean();
+                    row.ValueText = row.ValueBool.Value ? "true" : "false";
+                    break;
+                case JsonValueKind.Null:
+                case JsonValueKind.Undefined:
+                    row.ValueKind = "null";
+                    break;
+                default:
+                    // Stats values are scalar (number / string / bool) by design;
+                    // arrays and objects don't belong here. If we ever see one, it's
+                    // a data shape we need to model explicitly — log loudly and skip
+                    // rather than silently dump JSON into a column.
+                    Serilog.Log.Warning(
+                        "StatScalar dropped: bucket={Bucket} key={Key} kind={Kind} — not a scalar; promote to its own bridge if real",
+                        bucketName, key, el.ValueKind);
+                    continue;
+            }
+            db.CharacterStatScalars.Add(row);
+        }
+    }
+}

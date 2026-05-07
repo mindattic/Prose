@@ -18,6 +18,8 @@ public class SceneGenerationService
     private readonly AmbientAnomalyService anomalies;
     private readonly NarrativeSummaryService summaries;
     private readonly DialogueService dialogue;
+    private readonly WorldStateService worldState;
+    private readonly WorldStatePrecheckService precheck;
 
     public event Action<BeatGenerationProgress>? OnBeatProgress;
     public event Action<GeneratedBeat>? OnBeatCompleted;
@@ -28,7 +30,8 @@ public class SceneGenerationService
         IPathProvider paths, SemanticIndexService semanticIndex, InferenceService inference,
         SceneContextBuilder contextBuilder, ConsequenceService consequences,
         AmbientAnomalyService anomalies, NarrativeSummaryService summaries,
-        DialogueService dialogue)
+        DialogueService dialogue, WorldStateService worldState,
+        WorldStatePrecheckService precheck)
     {
         this.analyzer = analyzer;
         this.beatGen = beatGen;
@@ -43,6 +46,8 @@ public class SceneGenerationService
         this.anomalies = anomalies;
         this.summaries = summaries;
         this.dialogue = dialogue;
+        this.worldState = worldState;
+        this.precheck = precheck;
     }
 
     public async Task<GeneratedScene> GenerateSceneAsync(SceneRequest request, CancellationToken ct = default)
@@ -53,7 +58,7 @@ public class SceneGenerationService
         // Build dialogue voice profiles once for the whole scene — all characters, all relationships
         var dialogueContext = dialogue.BuildDialogueContext(request.Characters);
 
-        var session = new NarrativeSessionContext(graph, semanticIndex, inference);
+        var session = new NarrativeSessionContext(graph, semanticIndex, inference, worldState);
         session.TouchAll(request.Characters);
         if (request.Location != null) session.Touch(request.Location);
 
@@ -62,6 +67,16 @@ public class SceneGenerationService
 
         // Build character state constraints (injuries, status, possessions)
         var characterConstraints = consequences.BuildConstraints(request.Characters);
+
+        // Pre-write contradiction check — runs once per scene, output is a constraint
+        // block injected into every beat prompt below. Blockers do not throw; the LLM
+        // sees them as hard rules and the writer can override at review time.
+        var precheckReport = precheck.Check(new PrecheckRequest(
+            Characters: request.Characters,
+            Location:   request.Location,
+            Synopsis:   request.Goal,
+            AsOf:       AsOfCursor.Current));
+        var precheckConstraints = precheckReport.ToPromptConstraints();
 
         // Get narrative summary chain from previous scenes
         var summaryContext = summaries.GetSummaryChain();
@@ -101,7 +116,7 @@ public class SceneGenerationService
             {
                 StoryBibleContext = storyBible,
                 RelationshipContext = worldContext,
-                LocationContext = $"{ambientContext}\n{anomalyHints}\n{characterConstraints}\n{summaryContext}\n{pacing.ProseGuidance}",
+                LocationContext = $"{ambientContext}\n{anomalyHints}\n{characterConstraints}\n{precheckConstraints}\n{summaryContext}\n{pacing.ProseGuidance}",
                 DialogueContext = dialogueContext,
                 SceneSoFar = sceneSoFar,
                 BeatGoal = beatGoal,

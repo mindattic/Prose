@@ -75,17 +75,45 @@ public class BookRepositoryTests
     }
 
     [Test]
-    public void ArchiveBook_MovesToArchive_DoesNotPurge()
+    public void ListBooks_IgnoresBookSidecarJsonFiles()
+    {
+        var book = new Book { Title = "Real Book" };
+        books.SaveBook(book);
+
+        Directory.CreateDirectory(paths.BooksDir);
+        File.WriteAllText(
+            Path.Combine(paths.BooksDir, $"{book.Id}.outline.json"),
+            $$"""
+            {
+              "book_id": "{{book.Id}}",
+              "chapters": [
+                { "chapter_id": "ch-1", "title": "Chapter One" }
+              ],
+              "modified": "2099-01-01T00:00:00Z"
+            }
+            """);
+
+        var list = books.ListBooks();
+
+        Assert.That(list, Has.Count.EqualTo(1));
+        Assert.That(list[0].Id, Is.EqualTo(book.Id));
+        Assert.That(list[0].Title, Is.EqualTo("Real Book"));
+    }
+
+    [Test]
+    public void ArchiveBook_FlipsActive_HidesFromList()
     {
         var book = new Book { Title = "Doomed" };
         books.SaveBook(book);
         Assert.That(books.LoadBook(book.Id), Is.Not.Null);
+        Assert.That(books.ListBooks(), Has.Count.EqualTo(1));
 
         books.ArchiveBook(book.Id);
 
-        Assert.That(books.LoadBook(book.Id), Is.Null);
-        var archive = Path.Combine(paths.ArchiveDir, "books", $"{book.Id}.json");
-        Assert.That(File.Exists(archive), Is.True, "Archived book should be in archives/books/");
+        // Soft-delete: the row stays in the DB but ListBooks/LoadBook only return active
+        // rows. The full audit trail (including archived rows) lives in the
+        // system-versioned history table, queryable via FOR SYSTEM_TIME AS OF.
+        Assert.That(books.ListBooks(), Is.Empty, "Archived book should not appear in default list");
     }
 
     [Test]

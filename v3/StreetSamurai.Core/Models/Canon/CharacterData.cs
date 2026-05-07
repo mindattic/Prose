@@ -77,6 +77,41 @@ public class CharacterData : ICanonEntity
     [JsonPropertyName("neural_abilities")] public List<NeuralAbilityDefinition> NeuralAbilities { get; set; } = [];
     /// <summary>Bio-battery system parameters — caloric conversion, depletion thresholds, recovery rules.</summary>
     [JsonPropertyName("bio_battery")] public BioBatteryDefinition? BioBattery { get; set; }
+    /// <summary>Things the character knows and when they learned them. Drives knowledge-gating in dossier checks.</summary>
+    [JsonPropertyName("knowledge")] public List<CharacterKnowledge> Knowledge { get; set; } = [];
+    /// <summary>Medical/mental conditions, addictions, allergies. Anything that changes how the body acts under stress.</summary>
+    [JsonPropertyName("conditions")] public List<CharacterCondition> Conditions { get; set; } = [];
+}
+
+/// <summary>
+/// A discrete fact the character knows. Sourced from a chapter beat or an entity record.
+/// Lets the precheck answer "could Sasha react to X here? — only if Knowledge contains X."
+/// </summary>
+public class CharacterKnowledge
+{
+    [JsonPropertyName("topic")] public string Topic { get; set; } = "";
+    [JsonPropertyName("summary")] public string Summary { get; set; } = "";
+    [JsonPropertyName("learned_chapter")] public int? LearnedChapter { get; set; }
+    [JsonPropertyName("learned_chapter_id")] public string? LearnedChapterId { get; set; }
+    [JsonPropertyName("source_beat")] public int? SourceBeat { get; set; }
+    [JsonPropertyName("source_snippet")] public string? SourceSnippet { get; set; }
+    /// <summary>Entity ids this knowledge concerns — so dossier expansion can pull related cards.</summary>
+    [JsonPropertyName("entities")] public List<string> Entities { get; set; } = [];
+}
+
+/// <summary>
+/// A persistent condition affecting the character — addiction, allergy, prescription
+/// dependency, chronic illness, mental health diagnosis. Severity drives prose tone;
+/// since/until bound the period of effect.
+/// </summary>
+public class CharacterCondition
+{
+    [JsonPropertyName("kind")] public string Kind { get; set; } = ""; // addiction | allergy | prescription | chronic | mental | injury
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("severity")] public string Severity { get; set; } = ""; // mild | moderate | severe | acute
+    [JsonPropertyName("notes")] public string Notes { get; set; } = "";
+    [JsonPropertyName("since_chapter")] public int? SinceChapter { get; set; }
+    [JsonPropertyName("until_chapter")] public int? UntilChapter { get; set; }
 }
 
 /// <summary>
@@ -265,6 +300,12 @@ public class CharacterRelationship
     [JsonPropertyName("description")] public string Description { get; set; } = "";
     [JsonPropertyName("emotional_core")] public string EmotionalCore { get; set; } = "";
     [JsonPropertyName("story_tension")] public string StoryTension { get; set; } = "";
+    /// <summary>Current state: active | dating | engaged | married | divorced | estranged | deceased | severed.</summary>
+    [JsonPropertyName("status")] public string Status { get; set; } = "active";
+    /// <summary>Chapter number where this relationship became valid in story time.</summary>
+    [JsonPropertyName("since_chapter")] public int? SinceChapter { get; set; }
+    /// <summary>Chapter number where this relationship ended, if applicable.</summary>
+    [JsonPropertyName("until_chapter")] public int? UntilChapter { get; set; }
 }
 
 /// <summary>

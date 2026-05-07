@@ -1,8 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System.Net;
 using MindAttic.Legion;
 using MindAttic.Legion.Providers;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Services;
 
@@ -12,6 +15,28 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddStreetSamuraiServices(this IServiceCollection services)
     {
+        // ── EF Core: SQL Server StreetSamurai database ──────────────────────────
+        // Connection string priority: env var ConnectionStrings__StreetSamurai →
+        // appsettings ConnectionStrings:StreetSamurai → LocalDB fallback.
+        //
+        // We register only AddDbContextFactory (singleton). Code that needs a
+        // scoped DbContext takes IDbContextFactory and calls CreateDbContext()
+        // — this keeps the factory consumable from singleton repositories without
+        // hitting the "scoped DbContextOptions consumed by singleton factory"
+        // validation error. A scoped DbContext registration below preserves
+        // direct StreetSamuraiDbContext injection for callers that expect it.
+        services.AddDbContextFactory<StreetSamuraiDbContext>((sp, opts) =>
+        {
+            var cfg = sp.GetService<IConfiguration>();
+            var connStr =
+                Environment.GetEnvironmentVariable("ConnectionStrings__StreetSamurai")
+                ?? cfg?.GetConnectionString("StreetSamurai")
+                ?? @"Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;";
+            opts.UseSqlServer(connStr);
+        }, ServiceLifetime.Singleton);
+        services.AddScoped<StreetSamuraiDbContext>(sp =>
+            sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContext());
+
         // Application logging — reads daily Serilog log files for the UI viewer
         services.AddSingleton<LoggingService>();
 
@@ -21,38 +46,46 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<SettingsService>();
         services.AddSingleton<ISecurePreferences, FileSecurePreferences>();
         services.AddSingleton<IPathProvider, FileSystemPathProvider>();
-        // Typed JSON repositories — one file per entity type
-        services.AddSingleton<CharacterRepository>();
-        services.AddSingleton<CorponationRepository>();
-        services.AddSingleton<DistrictRepository>();
-        services.AddSingleton<FactionRepository>();
-        services.AddSingleton<FacetRepository>();
-        services.AddSingleton<WorldbuildingDocRepository>();
-        services.AddSingleton<WeaponryRepository>();
-        services.AddSingleton<AmmunitionRepository>();
-        services.AddSingleton<EquipmentRepository>();
-        services.AddSingleton<TechnologyRepository>();
-        services.AddSingleton<CyberwareRepository>();
-        services.AddSingleton<VocabularyRepository>();
-        services.AddSingleton<SyntheticLifeRepository>();
-        services.AddSingleton<GenemodRepository>();
-        services.AddSingleton<TransportationRepository>();
-        services.AddSingleton<QuoteRepository>();
-        services.AddSingleton<ContractRepository>();
-        services.AddSingleton<NewsRepository>();
-        services.AddSingleton<ArchetypeRepository>();
-        services.AddSingleton<MaterialRepository>();
-        services.AddSingleton<PharmaceuticalRepository>();
-        services.AddSingleton<ConsumerGoodRepository>();
-        services.AddSingleton<AutomatonRepository>();
-        services.AddSingleton<ApparelRepository>();
-        services.AddSingleton<SubsidiaryRepository>();
-        services.AddSingleton<EntertainmentRepository>();
-        services.AddSingleton<MotifRepository>();
-        services.AddSingleton<LabSpecimenRepository>();
-        services.AddSingleton<FlyoverEntityRepository>();
-        services.AddSingleton<PsionicRepository>();
-        services.AddSingleton<ToneBibleRepository>();
+        // Typed repositories — every directory repo now lives on the unified
+        // SQL Server StreetSamurai database via EfRepository<T>. The explicit
+        // factory functions disambiguate between the production
+        // (IDbContextFactory) ctor and the test-fixture (IPathProvider) ctor.
+        IDbContextFactory<StreetSamuraiDbContext> Db(IServiceProvider sp) =>
+            sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
+        services.AddSingleton(sp => new CharacterRepository(Db(sp)));
+        services.AddSingleton(sp => new CorponationRepository(Db(sp)));
+        services.AddSingleton(sp => new DistrictRepository(Db(sp)));
+        services.AddSingleton(sp => new FactionRepository(Db(sp)));
+        services.AddSingleton(sp => new FacetRepository(Db(sp)));
+        services.AddSingleton(sp => new WorldbuildingDocRepository(Db(sp)));
+        services.AddSingleton(sp => new WeaponryRepository(Db(sp)));
+        services.AddSingleton(sp => new AmmunitionRepository(Db(sp)));
+        services.AddSingleton(sp => new EquipmentRepository(Db(sp)));
+        services.AddSingleton(sp => new TechnologyRepository(Db(sp)));
+        services.AddSingleton(sp => new CyberwareRepository(Db(sp)));
+        services.AddSingleton(sp => new VocabularyRepository(Db(sp)));
+        services.AddSingleton(sp => new SyntheticLifeRepository(Db(sp)));
+        services.AddSingleton(sp => new GenemodRepository(Db(sp)));
+        services.AddSingleton(sp => new TransportationRepository(Db(sp)));
+        services.AddSingleton(sp => new QuoteRepository(Db(sp)));
+        services.AddSingleton(sp => new ContractRepository(Db(sp)));
+        services.AddSingleton(sp => new NewsRepository(Db(sp)));
+        services.AddSingleton(sp => new ArchetypeRepository(Db(sp)));
+        services.AddSingleton(sp => new MaterialRepository(Db(sp)));
+        services.AddSingleton(sp => new PharmaceuticalRepository(Db(sp)));
+        services.AddSingleton(sp => new ConsumerGoodRepository(Db(sp)));
+        services.AddSingleton(sp => new AutomatonRepository(Db(sp)));
+        services.AddSingleton(sp => new ApparelRepository(Db(sp)));
+        services.AddSingleton(sp => new SubsidiaryRepository(Db(sp)));
+        services.AddSingleton(sp => new EntertainmentRepository(Db(sp)));
+        services.AddSingleton(sp => new MotifRepository(Db(sp)));
+        services.AddSingleton(sp => new LabSpecimenRepository(Db(sp)));
+        services.AddSingleton(sp => new FlyoverEntityRepository(Db(sp)));
+        services.AddSingleton(sp => new PsionicRepository(Db(sp)));
+        // Bible singletons — explicit factory routes through the SQL Settings
+        // ctor. Without this, DI sees both the SQL ctor and the IPathProvider
+        // test-fixture ctor and throws "ambiguous constructors".
+        services.AddSingleton(sp => new ToneBibleRepository(Db(sp)));
 
         // Daily trivia — pre-generates 100 facts from canon data, cached to disk
         services.AddSingleton<TriviaService>();
@@ -89,9 +122,9 @@ public static class ServiceCollectionExtensions
 
         // Export discovery — auto-finds all IExportableRepository instances
         services.AddSingleton<ExportDiscoveryService>();
-        services.AddSingleton<StoryBibleRepository>();
-        services.AddSingleton<LiteraryRulesRepository>();
-        services.AddSingleton<CharacterProfileRepository>();
+        services.AddSingleton(sp => new StoryBibleRepository(Db(sp)));
+        services.AddSingleton(sp => new LiteraryRulesRepository(Db(sp)));
+        services.AddSingleton(sp => new CharacterProfileRepository(Db(sp)));
 
         // Media files — images, video, 3D models named {entityId}.{index:D2}.{ext}
         services.AddSingleton<MediaService>();
@@ -127,6 +160,40 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ContinuityExtractionService>();
         services.AddSingleton<ContinuityApplyService>();
 
+        // Universal KV façade over the Settings table — used by every per-book /
+        // per-world JSON store that previously wrote to engine_data/*.json.
+        services.AddSingleton<SettingsKvStore>();
+
+        // Global story-time cursor (Settings('story_now') as datetime2(7)).
+        services.AddSingleton<WorldClockService>();
+
+        // Cross-book "character at two places at once" detector.
+        services.AddSingleton<LocationContradictionService>();
+
+        // LLM-driven backfill for Chapter/Beat InWorldDate columns.
+        services.AddSingleton<DateBackfillService>();
+
+        // Reverses double-encoded UTF-8 ("Ã³" → "ó", "â€"" → "—") in every
+        // NVARCHAR column. One-shot data hygiene utility.
+        services.AddSingleton<MojibakeRepairService>();
+
+        // World-state ledger — append-only EntityStateEvents stream + LLM
+        // extractor that runs on every chapter save. Subscribing to
+        // OnChapterSaved happens in BeatStateExtractor's ctor; eager-instantiate
+        // it at startup so the subscription is live before the first save.
+        services.AddSingleton<WorldStateLedger>();
+        services.AddSingleton<BeatStateExtractor>();
+        // Per-weapon ammo + spec wiring (one-shot Chorus seed + bulk LLM linker).
+        services.AddSingleton<AmmunitionLinkerService>();
+
+        // Single-table schema rebuild — formalized snapshot + drop + recreate
+        // workflow so column reorders / shape changes are routine instead of
+        // hand-crafted. Snapshot artifact lands in engine/data/schema-snapshots/.
+        services.AddSingleton<SchemaRebuildService>();
+
+        // Reads sys.* into a JSON-friendly graph for the /schema visualization.
+        services.AddSingleton<SchemaGraphService>();
+
         // Local LLM (Ollama + Qwen) — RAG corpus index over engine/data and a
         // shared HTTP wrapper used by /ask plus any local-first Legion call site.
         // The index keeps itself current via FileSystemWatcher; on every save
@@ -153,22 +220,61 @@ public static class ServiceCollectionExtensions
         // services.AddSingleton<FtpPublishService>(); // disabled — deploying via Azure CI/CD
         services.AddSingleton<HtmlExportService>();
         services.AddSingleton<StoryService>();
-        services.AddSingleton<IChapterRepository, JsonChapterRepository>();
-        services.AddSingleton<IBookRepository, JsonBookRepository>();
-        services.AddSingleton<ISeriesRepository, JsonSeriesRepository>();
+        services.AddSingleton<IChapterRepository>(sp => new JsonChapterRepository(
+            sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<JsonChapterRepository>>()));
+        services.AddSingleton<IBookRepository>(sp => new JsonBookRepository(
+            sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<JsonBookRepository>>()));
+        services.AddSingleton<ISeriesRepository>(sp => new JsonSeriesRepository(
+            sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<JsonSeriesRepository>>()));
+        services.AddSingleton<WorldStateService>(sp =>
+        {
+            var ws = new WorldStateService(
+                sp.GetRequiredService<WorldGraphService>(),
+                sp.GetRequiredService<ContinuityService>(),
+                sp.GetRequiredService<IChapterRepository>(),
+                sp.GetRequiredService<CharacterRepository>(),
+                sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<WorldStateService>>());
+            // Wire the DbContext factory so temporal recall (FOR SYSTEM_TIME AS OF)
+            // can hit the history tables directly.
+            ws.DbCtxFactory = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
+            // Invalidate the dossier cache whenever a character record is saved so
+            // subsequent prose generation sees the updated record.
+            sp.GetRequiredService<CharacterRepository>().OnItemSaved += _ => ws.InvalidateAll();
+            return ws;
+        });
+        services.AddSingleton<WorldStatePrecheckService>();
+        services.AddSingleton<BeatFactExtractionService>();
+        services.AddSingleton<StoryRepairService>();
+        services.AddSingleton<WikiLinkService>();
+        services.AddScoped<ConversationalWriterService>();
+        services.AddScoped<JsonImportService>();
         services.AddSingleton<IBookReviewService, BookReviewService>();
         services.AddSingleton<BookExportService>();
         services.AddSingleton<WritingQualityService>();
-        services.AddSingleton<MotifService>();
-        services.AddSingleton<BookOutlineService>();
+        services.AddSingleton(sp => new MotifService(
+            sp.GetRequiredService<SettingsKvStore>(),
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<MotifService>>()));
+        services.AddSingleton(sp => new BookOutlineService(
+            sp.GetRequiredService<IBookRepository>(),
+            sp.GetRequiredService<IChapterRepository>(),
+            sp.GetRequiredService<SettingsKvStore>(),
+            sp.GetRequiredService<MindAttic.Legion.LLMVotingService>(),
+            sp.GetRequiredService<DatabaseService>(),
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<BookOutlineService>>()));
         services.AddSingleton<CoWriterService>();
         services.AddSingleton<LastPromptStore>();
-        // Graph builds from canon.json on first access
+        // Graph builds from canon on first access. With the SQL cutover, freshness
+        // is driven by Records.UpdatedAt — the IDbContextFactory ctor receives the
+        // factory so IsStale() can probe the canonical record table.
         services.AddSingleton<WorldGraphService>(sp =>
         {
             var graph = new WorldGraphService(
                 sp.GetRequiredService<IPathProvider>(),
-                sp.GetRequiredService<DatabaseService>());
+                sp.GetRequiredService<DatabaseService>(),
+                sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>());
             graph.EnsureLoaded();
             return graph;
         });
@@ -332,11 +438,19 @@ public static class ServiceCollectionExtensions
 
         // Freelancer story systems
         services.AddSingleton<ContractGenerator>();
-        services.AddSingleton<NamePoolService>();
+        services.AddSingleton(sp => new NamePoolService(
+            sp.GetRequiredService<IPathProvider>(),
+            sp.GetRequiredService<SettingsKvStore>(),
+            sp.GetRequiredService<IDatabaseService>(),
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<NamePoolService>>()));
         services.AddSingleton<NpcGenerator>();
         services.AddSingleton<RandomEncounterService>();
-        services.AddSingleton<ReputationTracker>();
-        services.AddSingleton<ConsequenceEngine>();
+        services.AddSingleton(sp => new ReputationTracker(
+            sp.GetRequiredService<SettingsKvStore>(),
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<ReputationTracker>>()));
+        services.AddSingleton(sp => new ConsequenceEngine(
+            sp.GetRequiredService<SettingsKvStore>(),
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<ConsequenceEngine>>()));
 
         // Milestone 2 story engine services
         services.AddSingleton<DialogueService>();
@@ -348,7 +462,11 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<PacingService>();
 
         // Milestone 3 — outline review + quality feedback loop
-        services.AddSingleton<OutlineReviewService>();
+        services.AddSingleton(sp => new OutlineReviewService(
+            sp.GetRequiredService<ILlmService>(),
+            sp.GetRequiredService<DatabaseService>(),
+            sp.GetRequiredService<SettingsKvStore>(),
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<OutlineReviewService>>()));
 
         // MindAttic.Legion — universal LLM-call client (LegionClient) and the
         // multi-provider voting machinery. Both LlmVotingProvider and the
@@ -418,6 +536,7 @@ public static class ServiceCollectionExtensions
                 sp.GetRequiredService<EmbeddingIndexService>(),
                 sp.GetRequiredService<LocalRagService>(),
                 sp.GetRequiredService<FindingsService>(),
+                sp.GetRequiredService<IChapterRepository>(),
                 sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<ContinuousQualityService>>()));
         services.AddSingleton<LlmVotingProvider>(sp =>
         {

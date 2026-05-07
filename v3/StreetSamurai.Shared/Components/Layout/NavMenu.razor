@@ -63,6 +63,15 @@
         <button class="topnav-link" @onclick="OpenSearch" title="Search">
             <i class="bi bi-search"></i>
         </button>
+        <a class="topnav-link" href="/talk" title="Talk — You, Me, and the Page">
+            <i class="bi bi-chat-square-text"></i>
+        </a>
+        <a class="topnav-link" href="/timeline" title="Story timeline">
+            <i class="bi bi-clock-history"></i>
+        </a>
+        <a class="topnav-link" href="/schema" title="Database schema viewer">
+            <i class="bi bi-diagram-3"></i>
+        </a>
         <a class="topnav-link position-relative" href="/findings" title="Findings inbox">
             <i class="bi bi-inbox"></i>
             @if (newFindingsCount > 0)
@@ -84,6 +93,9 @@
                        value="@searchInput" @oninput="OnSearchInput" @onkeydown="HandleKey" />
             </div>
             <div class="topnav-controls d-flex align-items-center gap-1">
+                <a class="topnav-link" href="/talk" title="Talk — You, Me, and the Page">
+                    <i class="bi bi-chat-square-text"></i>
+                </a>
                 <a class="topnav-link position-relative" href="/findings" title="Findings inbox">
                     <i class="bi bi-inbox"></i>
                     @if (newFindingsCount > 0)
@@ -191,11 +203,15 @@
                               => new("Bookshelf",      "/books",                "Book",              "bi-book",             "bi-book-half",
                                      "Tools",          "/board/tools",          "bi-grid-3x3-gap"),
             "continuity"      => new("Tools",          "/board/tools",          "Continuity",        "bi-grid-3x3-gap",     "bi-database-check"),
+            "atlas"           => new("Tools",          "/board/tools",          "Atlas",             "bi-grid-3x3-gap",     "bi-book-half"),
+            "architecture"    => new("Tools",          "/board/tools",          "Architecture",      "bi-grid-3x3-gap",     "bi-diagram-3"),
+            "series"          => new("Tools",          "/board/tools",          "Series",            "bi-grid-3x3-gap",     "bi-collection"),
             "char-pipeline"   => new("Tools",          "/board/tools",          "Character Pipeline","bi-grid-3x3-gap",     "bi-person-badge"),
             "world-health"    => new("Tools",          "/board/tools",          "World Health",      "bi-grid-3x3-gap",     "bi-heart-pulse"),
             "data-repair"     => new("Tools",          "/board/tools",          "Data Repair",       "bi-grid-3x3-gap",     "bi-tools"),
             "generators"      => new("Tools",          "/board/tools",          "Generator Console", "bi-grid-3x3-gap",     "bi-terminal"),
             "graph"           => new("Visualizations", "/board/visualizations", "World Graph",       "bi-easel2",           "bi-diagram-3"),
+            "graph-3d"        => new("Visualizations", "/board/visualizations", "World Graph 3D",    "bi-easel2",           "bi-bounding-box"),
             "map"             => new("Visualizations", "/board/visualizations", "Map",               "bi-easel2",           "bi-map-fill"),
             "heritage"        => new("Visualizations", "/board/visualizations", "Heritage",          "bi-easel2",           "bi-tree-fill"),
             _ when seg.StartsWith("stories/write/")
@@ -205,7 +221,6 @@
             "characters"      => new("Characters",    "/board/characters",    "People",          "bi-people-fill",       "bi-person"),
             "synthetics"      => new("Characters",    "/board/characters",    "Synthetic Life",  "bi-people-fill",       "bi-cpu-fill"),
             "archetypes"      => new("Characters",    "/board/characters",    "Archetypes",      "bi-people-fill",       "bi-person-bounding-box"),
-            "ceramic-men"     => new("Characters",    "/board/characters",    "Ceramic Men",     "bi-people-fill",            "bi-emoji-neutral"),
             "corps"           => new("Organizations", "/board/organizations", "Corponations",    "bi-buildings",         "bi-building"),
             "subsidiaries"    => new("Organizations", "/board/organizations", "Subsidiaries",    "bi-buildings",         "bi-diagram-3"),
             "factions"        => new("Organizations", "/board/organizations", "Factions",        "bi-buildings",         "bi-shield-exclamation"),
