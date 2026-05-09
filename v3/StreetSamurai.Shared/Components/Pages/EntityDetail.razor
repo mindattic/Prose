@@ -1431,7 +1431,20 @@ else if (CurrentTab == "record" && document != null)
             : $"?tab={tab}{(AsOf.HasValue ? $"&asOf={AsOf}" : "")}";
         Nav.NavigateTo($"/entity/{EntityId}{query}");
         editMode = false; // any tab switch exits edit mode
+        _ = PersistTabAsync(tab);
     }
+
+    /// <summary>Persist the current tab so the next /entity/{id} entry resumes here.</summary>
+    private async Task PersistTabAsync(string tab)
+    {
+        try { await JS.InvokeVoidAsync("ssState.set", $"entity:{EntityId}:tab", tab); }
+        catch { }
+    }
+
+    /// <summary>
+    /// On first render, if no ?tab= was in the URL but a saved tab exists for
+    /// this entity, hop to it. Also installs scrollY persistence keyed per entity.
+    /// </summary>
 
     // ── Edit mode (admin-only) ──
     // One global Edit/Save/Cancel works across every entity type and every tab.
@@ -1690,6 +1703,26 @@ else if (CurrentTab == "record" && document != null)
                 try { await JS.InvokeVoidAsync("cbgEntityFlickerTabs"); }
                 catch { /* JS not loaded yet — silent */ }
             }
+        }
+        if (firstRender)
+        {
+            try
+            {
+                // Resume the last tab the user was on for this entity, but only if
+                // the URL didn't specify one — explicit ?tab= wins.
+                if (string.IsNullOrEmpty(TabParam))
+                {
+                    var savedTab = await JS.InvokeAsync<string?>("ssState.get", $"entity:{EntityId}:tab");
+                    if (!string.IsNullOrWhiteSpace(savedTab) && ValidTabs.Contains(savedTab) && savedTab != "record")
+                    {
+                        Nav.NavigateTo($"/entity/{EntityId}?tab={savedTab}{(AsOf.HasValue ? $"&asOf={AsOf}" : "")}", replace: true);
+                        return;
+                    }
+                }
+                await JS.InvokeVoidAsync("ssState.installAutoScroll", $"entity:{EntityId}:scroll");
+                await JS.InvokeVoidAsync("ssState.restoreScroll",     $"entity:{EntityId}:scroll");
+            }
+            catch { }
         }
     }
 

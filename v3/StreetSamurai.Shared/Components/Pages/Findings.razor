@@ -7,6 +7,7 @@
 @inject FindingApplyService Apply
 @inject ContinuityService Continuity
 @inject ContinuityApplyService ContinuityApply
+@inject IJSRuntime JS
 
 <div class="d-flex justify-content-between align-items-start mb-3">
     <div>
@@ -308,6 +309,25 @@ else
 
     protected override void OnInitialized() => Refresh();
 
+    /// <summary>Restore filter + scroll position from localStorage on first render.</summary>
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+        try
+        {
+            var savedFilter = await JS.InvokeAsync<string?>("ssState.get", "findings:filter");
+            if (Enum.TryParse<FindingStatus>(savedFilter ?? "", out var f) && f != filter)
+            {
+                filter = f;
+                Refresh();
+                StateHasChanged();
+            }
+            await JS.InvokeVoidAsync("ssState.installAutoScroll", "findings:scroll");
+            await JS.InvokeVoidAsync("ssState.restoreScroll",     "findings:scroll");
+        }
+        catch { /* JS may be unavailable during prerender */ }
+    }
+
     private void Refresh()
     {
         items = Store.List(filter, limit: 200).ToList();
@@ -442,6 +462,14 @@ else
     {
         filter = s;
         Refresh();
+        // Persist so the next /findings entry reopens the same view.
+        _ = PersistFilterAsync();
+    }
+
+    private async Task PersistFilterAsync()
+    {
+        try { await JS.InvokeVoidAsync("ssState.set", "findings:filter", filter?.ToString() ?? ""); }
+        catch { }
     }
 
     private void SetStatus(long id, FindingStatus s)
