@@ -557,7 +557,20 @@ else
 
     private async Task StartAutopilot()
     {
-        if (outline == null || autopilotRunning || outline.Status != OutlineStatus.Approved) return;
+        if (outline == null || autopilotRunning) return;
+        try
+        {
+            // Service-layer guard — UI-only checks rot when new entry points appear.
+            // The thrown exception carries the current status for the surfaced message.
+            OutlineSvc.EnsureApprovedForGeneration(outline.BookId);
+        }
+        catch (OutlineNotApprovedException ex)
+        {
+            autopilotMessage = $"Outline must be Approved before autopilot can run (currently {ex.CurrentStatus}).";
+            statusMessage = autopilotMessage;
+            StateHasChanged();
+            return;
+        }
         autopilotCts = new CancellationTokenSource();
         autopilotRunning = true;
         autopilotTotal = outline.Chapters.Count;

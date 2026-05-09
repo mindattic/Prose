@@ -67,6 +67,29 @@ public class BookOutlineService
     }
 
     /// <summary>
+    /// True when this book's outline has been Approved and is therefore unlocked
+    /// for chapter prose generation. Defense-in-depth contract for any flow that
+    /// triggers book-context prose generation — UI guards may be missing on a
+    /// new entry point, but a service-layer check covers the new path for free.
+    /// </summary>
+    public bool IsApprovedForGeneration(string bookId)
+        => Load(bookId).Status == OutlineStatus.Approved;
+
+    /// <summary>
+    /// Throw <see cref="OutlineNotApprovedException"/> when the outline isn't
+    /// Approved. Call this from any prose-generation entry point that targets a
+    /// specific book — e.g. the autopilot loop in BookOutlineEditor.razor — so
+    /// the contract documented on <see cref="OutlineStatus"/> is mechanically
+    /// enforced, not just commented.
+    /// </summary>
+    public void EnsureApprovedForGeneration(string bookId)
+    {
+        var outline = Load(bookId);
+        if (outline.Status != OutlineStatus.Approved)
+            throw new OutlineNotApprovedException(bookId, outline.Status);
+    }
+
+    /// <summary>
     /// Build a starter outline from canon: pulls Book metadata + each chapter's
     /// existing title/synopsis. Used on first access (no file) so chapters always
     /// see *some* shared spine even before the user authors one.
