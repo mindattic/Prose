@@ -58,10 +58,18 @@
                     @foreach (var c in bookChapters)
                     {
                         var active = chapter != null && c.Id == chapter.Id;
+                        // "Complete" = at least one beat AND every beat has prose. The
+                        // green tick is a quiet finish-line signal in the sidebar.
+                        var hasBeats = c.Beats != null && c.Beats.Count > 0;
+                        var complete = hasBeats && c.Beats.All(b => !string.IsNullOrWhiteSpace(b.Text));
                         <a href="@($"/write/{book.Id}/{c.Id}")"
                            class="@($"write-side-item{(active ? " active" : "")}")">
                             <span class="write-side-num">Ch @(c.Number?.ToString() ?? "?")</span>
                             <span class="write-side-title">@c.Title</span>
+                            @if (complete)
+                            {
+                                <span class="write-side-done text-success" title="Every beat has prose">✓</span>
+                            }
                         </a>
                     }
                     @if (bookChapters.Count == 0)
@@ -82,8 +90,15 @@
                     {
                         var done = !string.IsNullOrWhiteSpace(b.Text);
                         var ready = !done && !string.IsNullOrWhiteSpace(b.Synopsis);
-                        <div class="@($"write-beat{(done ? " done" : ready ? " ready" : "")}")">
+                        <div class="@($"write-beat{(done ? " done" : ready ? " ready" : "")}{(draggingBeatId == b.Id ? " dragging" : "")}")"
+                             draggable="true"
+                             @ondragstart="() => OnBeatDragStart(b)"
+                             @ondragover:preventDefault="true"
+                             @ondragenter="() => OnBeatDragOver(b)"
+                             @ondrop="() => OnBeatDrop(b)"
+                             @ondragend="OnBeatDragEnd">
                             <div class="write-beat-head">
+                                <span class="write-beat-grip" title="Drag to reorder">⋮⋮</span>
                                 <input class="write-beat-title" placeholder="Beat title…"
                                        @bind="b.Title" @bind:event="oninput" @bind:after="MarkPageDirty" />
                                 @if (done)
@@ -429,6 +444,7 @@
   .write-side-item.active { background:#1c2a3a; color:#fff; }
   .write-side-num { font-family:monospace; font-size:.75rem; color:#88a; min-width:46px; }
   .write-side-title { flex:1; font-size:.9rem; }
+  .write-side-done { font-family:monospace; font-size:.85rem; margin-left:auto; }
 
   .write-outline-item { display:flex; gap:6px; align-items:baseline; background:transparent; border:0;
                         text-align:left; color:#bbb; padding:4px 6px; border-radius:3px; font-size:.85rem; width:100%; }
@@ -441,7 +457,11 @@
      prose) = amber, Empty = muted. The amber "ready" stripe is the user's
      visual hint for "this is the next beat to expand." */
   .write-beat { background:#16181d; border:1px solid #2a2a32; border-left:3px solid #444;
-                padding:6px 8px; margin-bottom:6px; border-radius:3px; }
+                padding:6px 8px; margin-bottom:6px; border-radius:3px;
+                cursor:default; transition:opacity 0.15s ease, transform 0.15s ease; }
+  .write-beat.dragging { opacity:0.4; }
+  .write-beat-grip { color:#666; font-family:monospace; cursor:grab; user-select:none; padding:0 2px; }
+  .write-beat-grip:active { cursor:grabbing; }
   .write-beat.ready { border-left-color:#ffc107; }
   .write-beat.done  { border-left-color:#2ecc71; opacity:0.85; }
   .write-beat-head  { display:flex; align-items:center; gap:6px; margin-bottom:4px; }
@@ -561,6 +581,9 @@
     // FindingsService so they appear in the regular findings sidebar instead
     // of needing a parallel surface.
     private bool checkingDrift;
+    // Drag-to-reorder state for beats. We swap Index values rather than
+    // shifting the list so the order is stable and saves immediately.
+    private string? draggingBeatId;
     // localStorage-backed resume: at most one redirect attempt per page load
     // so we don't ping-pong if the saved selection was deleted.
     private bool redirectAttempted;
@@ -1109,6 +1132,45 @@
         if (chapter == null) return;
         chapter.Beats.Remove(b);
         MarkPageDirty();
+    }
+
+    // ── Drag-to-reorder ────────────────────────────────────────────────────
+    // The dragged beat's Index is set to the target's Index, with intermediate
+    // beats shifted by one in the direction of the move. List position in the
+    // model follows Index via OrderBy(b => b.Index) in the render.
+
+    private void OnBeatDragStart(ChapterBeat b)
+    {
+        draggingBeatId = b.Id;
+    }
+
+    private void OnBeatDragOver(ChapterBeat target)
+    {
+        // Visual feedback only — the @ondragover:preventDefault on the row
+        // already lets the drop fire. No state change here.
+    }
+
+    private void OnBeatDrop(ChapterBeat target)
+    {
+        if (chapter == null || draggingBeatId == null) return;
+        var dragged = chapter.Beats.FirstOrDefault(b => b.Id == draggingBeatId);
+        if (dragged == null || dragged.Id == target.Id) { draggingBeatId = null; return; }
+
+        var ordered = chapter.Beats.OrderBy(b => b.Index).ToList();
+        ordered.Remove(dragged);
+        var targetIdx = ordered.FindIndex(b => b.Id == target.Id);
+        if (targetIdx < 0) targetIdx = ordered.Count;
+        ordered.Insert(targetIdx, dragged);
+        // Re-stamp Index in the new order — keeps the dense 0..N-1 contract
+        // the rest of the code expects.
+        for (int i = 0; i < ordered.Count; i++) ordered[i].Index = i;
+        draggingBeatId = null;
+        MarkPageDirty();
+    }
+
+    private void OnBeatDragEnd()
+    {
+        draggingBeatId = null;
     }
 
     /// <summary>
