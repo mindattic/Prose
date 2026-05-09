@@ -196,6 +196,13 @@ public static class ServiceCollectionExtensions
         // Global story-time cursor (Settings('story_now') as datetime2(7)).
         services.AddSingleton<WorldClockService>();
 
+        // Living-world tick — advances story-time on a real-time interval.
+        // Foundation for decay rules / scheduled events / NPC routines. Ships
+        // disabled-by-default (see WorldTickService.Enabled) so infrastructure
+        // can land before the rule layer.
+        services.AddSingleton<WorldTickService>();
+        services.AddHostedService(sp => sp.GetRequiredService<WorldTickService>());
+
         // Cross-book "character at two places at once" detector.
         services.AddSingleton<LocationContradictionService>();
 
