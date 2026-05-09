@@ -1478,9 +1478,9 @@ textarea.auto-grow {
 /* Folder rectangle with the upper-RIGHT corner cut at 45° (manila-folder tab silhouette) */
 .cbg-folder {
     position: relative;
-    background: rgba(40, 52, 72, 0.38);
-    border: 1px solid rgba(140, 160, 180, 0.28);
-    color: rgba(210, 220, 235, 0.85);
+    background: rgba(40, 52, 72, 0.28);
+    border: 1px solid rgba(140, 160, 180, 0.18);
+    color: rgba(210, 220, 235, 0.75);
     font-size: 0.6rem;
     padding: 3px 14px 3px 8px;
     line-height: 1.3;
@@ -1492,10 +1492,10 @@ textarea.auto-grow {
     will-change: transform, opacity;
 }
 .cbg-folder.cbg-folder-highlight {
-    background: rgba(80, 200, 255, 0.28);
-    border-color: rgba(140, 220, 255, 0.85);
-    color: rgba(230, 245, 255, 1);
-    box-shadow: 0 0 9px rgba(80, 200, 255, 0.55);
+    background: rgba(80, 200, 255, 0.18);
+    border-color: rgba(140, 220, 255, 0.75);
+    color: rgba(230, 245, 255, 0.9);
+    box-shadow: 0 0 9px rgba(80, 200, 255, 0.45);
 }
 /* The ripping folder must lift above its siblings AND the window so it visibly slides
    past the right edge instead of getting clipped underneath. */

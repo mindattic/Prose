@@ -6019,6 +6019,12 @@ window.consoleBg = (function () {
             : -1;
         var wireKilled = false;
         var segIdx = 0, segProg = 0, lastTs = null;
+        // Speed ramp — the trace starts at 20% of cruise and linearly accelerates
+        // to full cruise speed over rampMs, then holds. Reads as the line "getting
+        // up to speed" instead of snapping into motion at full velocity.
+        var startTs = null;
+        var rampMs  = 700;
+        var startSpeedFrac = 0.20;
         var curLine = col.line, curNode = col.node;
         var iStart = 2, iEnd = pts.length - 2;
         function redraw() {
@@ -6073,12 +6079,16 @@ window.consoleBg = (function () {
         function tick(ts) {
             if (wireKilled) return;
             if (!lastTs) lastTs = ts;
+            if (!startTs) startTs = ts;
             var dt = Math.min((ts - lastTs) / 1000, 0.1);
             lastTs = ts;
             if (segIdx >= pts.length - 1) { doSuccess(); return; }
             var segLen = Math.hypot(pts[segIdx+1][0] - pts[segIdx][0], pts[segIdx+1][1] - pts[segIdx][1]);
             if (segLen < 1) { segIdx++; segProg = 0; requestAnimationFrame(tick); return; }
-            var advance = dt * speed / segLen;
+            // Linear speed ramp from startSpeedFrac → 1.0 over rampMs, then hold.
+            var rampT = Math.min(1, (ts - startTs) / rampMs);
+            var speedMul = startSpeedFrac + (1 - startSpeedFrac) * rampT;
+            var advance = dt * (speed * speedMul) / segLen;
             segProg = Math.min(1, segProg + advance);
             if (segProg >= 1) {
                 segProg = 0; segIdx++;
