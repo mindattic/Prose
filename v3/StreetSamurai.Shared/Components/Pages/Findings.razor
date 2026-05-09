@@ -5,15 +5,20 @@
 @inject FindingsService Store
 @inject ContinuousQualityService Monitor
 @inject FindingApplyService Apply
+@inject ContinuityService Continuity
+@inject ContinuityApplyService ContinuityApply
 
 <div class="d-flex justify-content-between align-items-start mb-3">
     <div>
         <div class="small text-muted mb-1">
             <a href="/" class="text-muted text-decoration-none"><i class="bi bi-arrow-left me-1"></i>Home</a>
         </div>
-        <h4 class="text-info mb-0"><i class="bi bi-inbox me-2"></i>Findings Inbox</h4>
+        <h4 class="text-info mb-0"><i class="bi bi-inbox me-2"></i>Inbox</h4>
         <p class="small text-muted mb-0">
-            Auto-detected contradictions and clichés. The continuous quality monitor scans every chapter on save against the cloud LLM, grounded by canon dossiers from SQL — findings appear here without you running anything.
+            One triage page for everything that needs your attention. Findings (auto-detected
+            contradictions, clichés, anachronisms, voice drift) live alongside continuity
+            contradictions (conflicting atomic claims about an entity). Resolve at your own pace —
+            both sets persist in the database and only leave the inbox when you mark them done.
         </p>
     </div>
     <div class="d-flex flex-column gap-1 align-items-end">
@@ -27,19 +32,192 @@
 
 @* ── Stats strip ─────────────────────────────────────────── *@
 <div class="row g-2 mb-3">
-    <div class="col-md-3"><div class="finding-stat"><div class="lbl">New</div><div class="val text-warning">@newCount</div></div></div>
-    <div class="col-md-3"><div class="finding-stat"><div class="lbl">Triaged</div><div class="val text-info">@triagedCount</div></div></div>
-    <div class="col-md-3"><div class="finding-stat"><div class="lbl">Applied</div><div class="val text-success">@appliedCount</div></div></div>
-    <div class="col-md-3"><div class="finding-stat"><div class="lbl">Dismissed</div><div class="val text-muted">@dismissedCount</div></div></div>
+    <div class="col-md-2"><div class="finding-stat"><div class="lbl">New</div><div class="val text-warning">@newCount</div></div></div>
+    <div class="col-md-2"><div class="finding-stat"><div class="lbl">Triaged</div><div class="val text-info">@triagedCount</div></div></div>
+    <div class="col-md-2"><div class="finding-stat"><div class="lbl">Applied</div><div class="val text-success">@appliedCount</div></div></div>
+    <div class="col-md-2"><div class="finding-stat"><div class="lbl">Dismissed</div><div class="val text-muted">@dismissedCount</div></div></div>
+    <div class="col-md-2"><div class="finding-stat"><div class="lbl">Contradicted</div><div class="val text-warning">@(contradictionPairs.Count + contradictionGroups.Count)</div></div></div>
+    <div class="col-md-2"><div class="finding-stat"><div class="lbl">Pending apply</div><div class="val text-info">@pendingApply.Count</div></div></div>
 </div>
 
+@if (!string.IsNullOrEmpty(contradictionStatus))
+{
+    <div class="alert alert-info small py-2">@contradictionStatus</div>
+}
+@if (!string.IsNullOrEmpty(contradictionError))
+{
+    <div class="alert alert-danger small py-2">@contradictionError</div>
+}
+
+@* ── Continuity contradiction groups (one (entity, predicate) → many values) *@
+@if (showContradictions && contradictionGroups.Count > 0)
+{
+    <div class="card bg-dark text-light mb-3 border-warning">
+        <div class="card-header bg-warning bg-opacity-25 border-warning d-flex justify-content-between align-items-center">
+            <strong><i class="bi bi-exclamation-diamond me-1"></i>Conflicting claims</strong>
+            <span class="badge bg-warning text-dark">@contradictionGroups.Count</span>
+        </div>
+        <div class="card-body">
+            <div class="small text-muted mb-2">
+                Same entity + predicate, multiple competing values still live. Pick one as
+                canonical or reject the rest. Each group becomes one resolution.
+            </div>
+            @foreach (var g in contradictionGroups)
+            {
+                <div class="border border-secondary rounded p-2 mb-2">
+                    <div class="small text-muted mb-1">
+                        <strong>@g.EntityName</strong> <span class="text-muted">(@g.EntityKind)</span>
+                        <span class="ms-2">predicate: <code>@g.Predicate</code></span>
+                        <span class="ms-2 badge bg-secondary">@g.Claims.Count values</span>
+                    </div>
+                    <div class="row g-2">
+                        @foreach (var c in g.Claims)
+                        {
+                            <div class="col-md-6">
+                                <div class="border border-secondary rounded p-2 h-100 d-flex flex-column">
+                                    <div class="small text-muted mb-1">
+                                        @c.SourceType
+                                        @if (!string.IsNullOrEmpty(c.SourceChapterTitle))
+                                        {
+                                            <span> · ch.@c.SourceChapterNumber @c.SourceChapterTitle</span>
+                                        }
+                                        · status <span class="badge @ClaimStatusBadge(c.Status)">@c.Status</span>
+                                    </div>
+                                    <div class="fw-bold">@c.Object</div>
+                                    @if (!string.IsNullOrEmpty(c.Snippet))
+                                    {
+                                        <div class="small fst-italic text-muted">"@c.Snippet"</div>
+                                    }
+                                    <div class="mt-2 d-flex gap-1">
+                                        <button class="btn btn-sm btn-outline-success py-0" disabled="@contradictionWorking"
+                                                @onclick="@(() => MakeCanonical(c.ClaimUid))">
+                                            Make canonical
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary py-0" disabled="@contradictionWorking"
+                                                @onclick="@(() => RejectClaim(c.ClaimUid))">
+                                            Reject
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@* ── Continuity contradiction pairs (A vs B, pick winner) ── *@
+@if (showContradictions && contradictionPairs.Count > 0)
+{
+    <div class="card bg-dark text-light mb-3 border-warning">
+        <div class="card-header bg-warning bg-opacity-25 border-warning d-flex justify-content-between align-items-center">
+            <strong><i class="bi bi-exclamation-triangle me-1"></i>Contradiction pairs</strong>
+            <span class="badge bg-warning text-dark">@contradictionPairs.Count</span>
+        </div>
+        <div class="card-body">
+            @foreach (var pair in contradictionPairs)
+            {
+                <div class="border border-secondary rounded p-2 mb-2">
+                    <div class="small text-muted mb-1">
+                        <strong>@pair.A.EntityName</strong>
+                        <span class="ms-2">predicate: <code>@pair.A.Predicate</code></span>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-md-5">
+                            <div class="border border-secondary rounded p-2 h-100">
+                                <div class="small text-muted">A · @SourceLabel(pair.A) · by @string.Join(", ", pair.A.ExtractedBy)</div>
+                                <div class="fw-bold">@pair.A.Object</div>
+                                @if (!string.IsNullOrEmpty(pair.A.Snippet))
+                                {
+                                    <div class="small fst-italic text-muted">"@pair.A.Snippet"</div>
+                                }
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="border border-secondary rounded p-2 h-100">
+                                <div class="small text-muted">B · @SourceLabel(pair.B) · by @string.Join(", ", pair.B.ExtractedBy)</div>
+                                <div class="fw-bold">@pair.B.Object</div>
+                                @if (!string.IsNullOrEmpty(pair.B.Snippet))
+                                {
+                                    <div class="small fst-italic text-muted">"@pair.B.Snippet"</div>
+                                }
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex flex-column gap-1">
+                            <button class="btn btn-sm btn-outline-success py-0" disabled="@contradictionWorking"
+                                    @onclick="@(() => DoResolve(pair, "A", null))">A wins</button>
+                            <button class="btn btn-sm btn-outline-success py-0" disabled="@contradictionWorking"
+                                    @onclick="@(() => DoResolve(pair, "B", null))">B wins</button>
+                            <button class="btn btn-sm btn-outline-info py-0" disabled="@contradictionWorking"
+                                    @onclick="@(() => OpenCustom(pair))">Custom…</button>
+                        </div>
+                    </div>
+                    @if (customOpenFor == pair.A.ClaimUid + "|" + pair.B.ClaimUid)
+                    {
+                        <div class="mt-2">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text">@pair.A.Predicate =</span>
+                                <input class="form-control" @bind="customValue" placeholder="agreed-upon value" />
+                                <button class="btn btn-success" disabled="@(contradictionWorking || string.IsNullOrWhiteSpace(customValue))"
+                                        @onclick="@(() => DoResolve(pair, "custom", customValue))">Save</button>
+                                <button class="btn btn-outline-secondary" @onclick="@(() => customOpenFor = null)">Cancel</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@* ── Continuity claims awaiting apply to entity record ── *@
+@if (showContradictions && pendingApply.Count > 0)
+{
+    <div class="card bg-dark text-light mb-3 border-info">
+        <div class="card-header bg-info bg-opacity-25 border-info d-flex justify-content-between align-items-center">
+            <strong><i class="bi bi-arrow-right-circle me-1"></i>Canonical claims ready to apply</strong>
+            <span class="badge bg-info">@pendingApply.Count</span>
+        </div>
+        <div class="card-body p-0">
+            <table class="table table-sm table-dark table-hover small mb-0">
+                <thead><tr><th>Entity</th><th>Predicate</th><th>Value</th><th></th></tr></thead>
+                <tbody>
+                    @foreach (var c in pendingApply)
+                    {
+                        <tr>
+                            <td>@c.EntityName <span class="text-muted">(@c.EntityKind)</span></td>
+                            <td><code>@c.Predicate</code></td>
+                            <td>@c.Object</td>
+                            <td class="text-end">
+                                <button class="btn btn-sm btn-outline-info py-0" disabled="@contradictionWorking"
+                                        @onclick="() => DoApplyClaim(c)">
+                                    @(applyingUid == c.ClaimUid ? "applying…" : "Apply")
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
 @* ── Filter chips ───────────────────────────────────────── *@
-<div class="mb-3">
-    <button class="btn btn-sm @(filter is null ? "btn-info" : "btn-outline-secondary") me-1" @onclick="() => SetFilter(null)">All</button>
-    <button class="btn btn-sm @(filter == FindingStatus.New ? "btn-warning text-dark" : "btn-outline-secondary") me-1" @onclick="() => SetFilter(FindingStatus.New)">New</button>
-    <button class="btn btn-sm @(filter == FindingStatus.Triaged ? "btn-info" : "btn-outline-secondary") me-1" @onclick="() => SetFilter(FindingStatus.Triaged)">Triaged</button>
-    <button class="btn btn-sm @(filter == FindingStatus.Applied ? "btn-success" : "btn-outline-secondary") me-1" @onclick="() => SetFilter(FindingStatus.Applied)">Applied</button>
+<div class="mb-3 d-flex flex-wrap gap-1 align-items-center">
+    <span class="small text-muted me-2">Findings:</span>
+    <button class="btn btn-sm @(filter is null ? "btn-info" : "btn-outline-secondary")" @onclick="() => SetFilter(null)">All</button>
+    <button class="btn btn-sm @(filter == FindingStatus.New ? "btn-warning text-dark" : "btn-outline-secondary")" @onclick="() => SetFilter(FindingStatus.New)">New</button>
+    <button class="btn btn-sm @(filter == FindingStatus.Triaged ? "btn-info" : "btn-outline-secondary")" @onclick="() => SetFilter(FindingStatus.Triaged)">Triaged</button>
+    <button class="btn btn-sm @(filter == FindingStatus.Applied ? "btn-success" : "btn-outline-secondary")" @onclick="() => SetFilter(FindingStatus.Applied)">Applied</button>
     <button class="btn btn-sm @(filter == FindingStatus.Dismissed ? "btn-secondary" : "btn-outline-secondary")" @onclick="() => SetFilter(FindingStatus.Dismissed)">Dismissed</button>
+    <span class="small text-muted ms-3 me-1">Continuity:</span>
+    <button class="btn btn-sm @(showContradictions ? "btn-warning text-dark" : "btn-outline-secondary")"
+            @onclick="() => { showContradictions = !showContradictions; }">
+        <i class="bi bi-@(showContradictions ? "eye-fill" : "eye-slash") me-1"></i>
+        @(showContradictions ? "Hide" : "Show") contradictions
+    </button>
     <button class="btn btn-sm btn-outline-info ms-3" @onclick="Refresh"><i class="bi bi-arrow-clockwise"></i> Refresh</button>
 </div>
 
@@ -115,6 +293,19 @@ else
     private long? applying;
     private readonly Dictionary<long, (string Css, string Text)> applyMessages = new();
 
+    // Continuity-side state — same shape as /continuity, surfaced here so the
+    // user has one inbox for findings + contradictions rather than two pages.
+    private bool showContradictions = true;
+    private List<ContradictionPair> contradictionPairs = new();
+    private List<ContradictionGroup> contradictionGroups = new();
+    private List<ContinuityClaim> pendingApply = new();
+    private bool contradictionWorking;
+    private string contradictionStatus = "";
+    private string contradictionError = "";
+    private string? customOpenFor;
+    private string customValue = "";
+    private string applyingUid = "";
+
     protected override void OnInitialized() => Refresh();
 
     private void Refresh()
@@ -124,7 +315,128 @@ else
         triagedCount   = Store.CountByStatus(FindingStatus.Triaged);
         appliedCount   = Store.CountByStatus(FindingStatus.Applied);
         dismissedCount = Store.CountByStatus(FindingStatus.Dismissed);
+
+        try
+        {
+            contradictionPairs  = Continuity.GetContradictions();
+            contradictionGroups = Continuity.GetContradictionGroups();
+            pendingApply        = Continuity.GetByStatus("CANONICAL")
+                                            .Where(c => string.IsNullOrEmpty(c.AppliedAt))
+                                            .ToList();
+        }
+        catch (Exception ex)
+        {
+            contradictionError = "Continuity load failed: " + ex.Message;
+            contradictionPairs.Clear();
+            contradictionGroups.Clear();
+            pendingApply.Clear();
+        }
     }
+
+    // ── Continuity actions ──────────────────────────────────────────────────
+
+    private void MakeCanonical(string claimUid)
+    {
+        contradictionWorking = true; contradictionError = "";
+        try
+        {
+            Continuity.MakeCanonical(claimUid, "Selected from /findings inbox.");
+            contradictionStatus = "Canonical claim set; siblings rejected.";
+            Refresh();
+        }
+        catch (Exception ex) { contradictionError = ex.Message; }
+        finally { contradictionWorking = false; }
+    }
+
+    private void RejectClaim(string claimUid)
+    {
+        contradictionWorking = true; contradictionError = "";
+        try
+        {
+            Continuity.RejectClaim(claimUid, "Rejected from /findings inbox.");
+            contradictionStatus = "Claim rejected.";
+            Refresh();
+        }
+        catch (Exception ex) { contradictionError = ex.Message; }
+        finally { contradictionWorking = false; }
+    }
+
+    private void OpenCustom(ContradictionPair pair)
+    {
+        customOpenFor = pair.A.ClaimUid + "|" + pair.B.ClaimUid;
+        customValue = "";
+    }
+
+    private async Task DoResolve(ContradictionPair pair, string winner, string? customObj)
+    {
+        if (winner == "custom" && string.IsNullOrWhiteSpace(customObj))
+        {
+            contradictionError = "Custom requires a value.";
+            return;
+        }
+        contradictionWorking = true; contradictionError = "";
+        try
+        {
+            await Task.Run(() => Continuity.Resolve(pair.A.ClaimUid, pair.B.ClaimUid, winner, customObj ?? "", ""));
+            customOpenFor = null;
+            customValue = "";
+            contradictionStatus = $"Resolved {pair.A.EntityName}.{pair.A.Predicate} (winner: {winner}).";
+            Refresh();
+        }
+        catch (Exception ex)
+        {
+            contradictionError = "Resolve error: " + ex.Message;
+        }
+        finally
+        {
+            contradictionWorking = false; StateHasChanged();
+        }
+    }
+
+    private async Task DoApplyClaim(ContinuityClaim claim)
+    {
+        contradictionWorking = true; applyingUid = claim.ClaimUid; contradictionError = "";
+        try
+        {
+            var r = await ContinuityApply.ApplyAsync(claim.ClaimUid);
+            if (r.Ok)
+            {
+                contradictionStatus = $"Applied to {Path.GetFileName(r.EntityFile)} → {r.FieldPath} (confidence {r.DecisionConfidence:P0}).";
+                Refresh();
+            }
+            else
+            {
+                contradictionError = "Apply failed: " + r.Error;
+            }
+        }
+        catch (Exception ex)
+        {
+            contradictionError = "Apply error: " + ex.Message;
+        }
+        finally
+        {
+            contradictionWorking = false; applyingUid = ""; StateHasChanged();
+        }
+    }
+
+    private static string SourceLabel(ContinuityClaim c) => c.SourceType switch
+    {
+        "prose"            => $"prose ch.{c.SourceChapterNumber}",
+        "entity_record"    => $"record {Path.GetFileName(c.SourcePath ?? "")}",
+        "writer_assertion" => "writer",
+        _                  => c.SourceType,
+    };
+
+    private static string ClaimStatusBadge(string s) => s switch
+    {
+        "CANONICAL"    => "bg-success",
+        "CONFIRMED"    => "bg-success bg-opacity-50",
+        "NEW"          => "bg-info",
+        "CONTRADICTED" => "bg-warning text-dark",
+        "REJECTED"     => "bg-secondary",
+        "SUPERSEDED"   => "bg-secondary",
+        _              => "bg-light text-dark",
+    };
 
     private void SetFilter(FindingStatus? s)
     {

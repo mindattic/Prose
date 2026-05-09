@@ -24,39 +24,30 @@ window.__gmapsReady = function() {
     window.__gmapsCbs = [];
 };
 
-// Navigation loader — C# code (MainLayout) handles show/hide; loader starts display:none in Blazor.
+// Navigation loader — small corner indicator only. C# code (MainLayout)
+// handles show/hide; loader starts display:none in Blazor. The previous
+// full-screen overlay + millisecond counter UX was retired 2026-05-09; the
+// corner spinner is unobtrusive enough that we don't need an "appear after
+// N ms" delay either.
 (function() {
-    var timer = null;
     var timeout = null;
-    var start = 0;
 
     function getEl() { return document.getElementById('app-loader'); }
-    function getMs()  { return document.getElementById('loader-ms'); }
-
-    function tick() {
-        var ms = getMs();
-        if (ms) ms.textContent = String(Math.floor(performance.now() - start)).padStart(4, '0');
-    }
 
     window.__loaderShow = function(delay) {
-        clearTimeout(timeout); clearInterval(timer);
-        start = performance.now();
+        clearTimeout(timeout);
         if (delay > 0) {
             timeout = setTimeout(function() {
-                var el = getEl(); if (el) el.style.display = 'flex';
-                timer = setInterval(tick, 1);
+                var el = getEl(); if (el) el.style.display = 'block';
             }, delay);
         } else {
-            var el = getEl(); if (el) el.style.display = 'flex';
-            timer = setInterval(tick, 1);
+            var el = getEl(); if (el) el.style.display = 'block';
         }
     };
 
     window.__loaderHide = function() {
-        clearTimeout(timeout); clearInterval(timer);
-        timer = null; timeout = null;
-        var el = getEl(); var ms = getMs();
-        if (el) el.style.display = 'none';
-        if (ms) ms.textContent = '0000';
+        clearTimeout(timeout);
+        timeout = null;
+        var el = getEl(); if (el) el.style.display = 'none';
     };
 })();

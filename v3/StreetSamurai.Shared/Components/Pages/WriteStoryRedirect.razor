@@ -4,13 +4,13 @@
 @inject IChapterRepository Chapters
 @inject NavigationManager Nav
 
-@* Legacy route → simplified /talk surface. Anyone deep-linking to
-   /stories/write/{ProjectId} now lands on /talk/{BookId}/{ChapterId}. The
+@* Legacy route → /write surface. Anyone deep-linking to
+   /stories/write/{ProjectId} now lands on /write/{BookId}/{ChapterId}. The
    old multi-tool page lives at /stories/write-legacy/{ProjectId} for
    one-off comparisons but is no longer the primary writer. *@
 
 <div class="container py-3 small text-muted">
-    <i class="bi bi-arrow-right-circle me-1"></i> Redirecting to the simplified writer…
+    <i class="bi bi-arrow-right-circle me-1"></i> Redirecting to the writer…
 </div>
 
 @code {
@@ -20,14 +20,10 @@
     {
         if (!firstRender) return;
         var chapter = Chapters.LoadChapter(ProjectId);
-        if (chapter == null) { Nav.NavigateTo("/talk", replace: true); return; }
-        var url = string.IsNullOrEmpty(chapter.BookId)
-            ? $"/talk/{string.Empty}/{chapter.Id}"
-            : $"/talk/{chapter.BookId}/{chapter.Id}";
-        // Defensive: if BookId is empty, just send to /talk with the chapter open via a query.
+        if (chapter == null) { Nav.NavigateTo("/write", replace: true); return; }
         if (string.IsNullOrEmpty(chapter.BookId))
-            Nav.NavigateTo($"/talk", replace: true);
+            Nav.NavigateTo("/write", replace: true);
         else
-            Nav.NavigateTo(url, replace: true);
+            Nav.NavigateTo($"/write/{chapter.BookId}/{chapter.Id}", replace: true);
     }
 }

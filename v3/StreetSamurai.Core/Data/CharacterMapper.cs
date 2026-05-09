@@ -23,6 +23,53 @@ public static class CharacterMapper
     /// trip and project to CharacterData. The Records.Json column is never
     /// touched on this path.
     /// </summary>
+    /// <summary>
+    /// Lightweight list-view projection. Returns one <see cref="CharacterData"/>
+    /// per active character with ONLY the fields the dictionary list view
+    /// renders: <c>Id</c>, <c>Name</c>, <c>Slug</c> (via Entity), <c>Role</c>,
+    /// <c>Status</c> (via LifeStatus), and <c>Tags</c>. No Includes, no
+    /// bridge materialization, no per-character LINQ over BelongingsGear.
+    /// Cold-loads in ~1 s where <see cref="LoadAll"/> took 50–80 s. Use this
+    /// for any list/filter/select UI; call <see cref="LoadOne"/> to get the
+    /// full record when a row is opened for edit.
+    /// </summary>
+    public static List<CharacterData> LoadAllLite(StreetSamuraiDbContext db)
+    {
+        var rows = db.Characters.AsNoTracking()
+            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "character"),
+                ch => ch.Id, e => e.Id,
+                (ch, e) => new { Id = ch.Id, Name = e.Name, Role = ch.Role, LifeStatus = ch.LifeStatus, Rating = ch.Rating, VoteCount = ch.VoteCount })
+            .ToList();
+
+        if (rows.Count == 0) return new();
+
+        var ids = rows.Select(r => r.Id).ToHashSet();
+        var tagsByEntity = db.EntityTags.AsNoTracking()
+            .Where(t => ids.Contains(t.EntityId))
+            .Select(t => new { t.EntityId, t.Tag!.Name })
+            .ToList()
+            .GroupBy(t => t.EntityId)
+            .ToDictionary(g => g.Key, g => g.Select(x => x.Name).ToList());
+
+        var result = new List<CharacterData>(rows.Count);
+        foreach (var r in rows)
+        {
+            tagsByEntity.TryGetValue(r.Id, out var tags);
+            result.Add(new CharacterData
+            {
+                Id = r.Id.ToString("N"),
+                Type = "character",
+                Name = r.Name ?? "",
+                Role = r.Role ?? "",
+                Status = string.IsNullOrEmpty(r.LifeStatus) ? "alive" : r.LifeStatus,
+                Rating = r.Rating,
+                VoteCount = r.VoteCount,
+                Tags = tags ?? new List<string>(),
+            });
+        }
+        return result;
+    }
+
     public static List<CharacterData> LoadAll(StreetSamuraiDbContext db, bool includeArchived = false)
     {
         var query = BuildIncludeChain(db.Characters.AsNoTracking());

@@ -165,7 +165,11 @@
 
     protected override void OnInitialized()
     {
-        Repo.Reload(); items = Repo.GetAll(); RebuildTags();
+        // List view loads ONLY the columns it renders (Id / Name / Role / Tags
+        // / Status). The full CharacterData with all bridges is re-fetched on
+        // click via Edit(c). This took /characters cold-start from ~50–80 s
+        // down to ~1 s.
+        Repo.Reload(); items = Repo.GetAllLite(); RebuildTags();
         if (Nav.Uri.Contains("new=true")) AddNew();
         else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } }
     }
@@ -192,7 +196,13 @@
     private void Edit(CharacterData c)
     {
         _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_people", c.Id);
-        editing = c; originalName = c.Name; isNew = false; _confirmDelete = false;
+        // The list view passes a lightweight CharacterData (Id / Name / Role /
+        // Tags only). Re-fetch the full record so the form binds to populated
+        // Psychology / SpeechPatterns / Belongings / etc — without this, those
+        // sections would render empty for every existing character.
+        var full = Repo.GetById(c.Id);
+        editing = full ?? c;
+        originalName = editing.Name; isNew = false; _confirmDelete = false;
 
         // Psychology lists
         editCoreFears = string.Join("\n", c.Psychology.CoreFears);

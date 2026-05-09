@@ -129,7 +129,7 @@ window.streetSamuraiTimeline = (function () {
 
     async function onDoubleClick(props) {
         // Two distinct double-click behaviors:
-        //   • on an item dot  → navigate to its associated route (e.g. /talk/{bookId}/{chapterId})
+        //   • on an item dot  → navigate to its associated route (e.g. /write/{bookId}/{chapterId})
         //   • on background / axis → set storyNow to that instant
         if (!dotnetRef) return;
         if (props.item) {

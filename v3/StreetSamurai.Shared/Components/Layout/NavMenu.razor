@@ -3,6 +3,7 @@
 @inject IWriteAccessProvider Access
 @inject SearchTriggerService SearchTrigger
 @inject StreetSamurai.Core.Services.FindingsService Findings
+@inject StreetSamurai.Core.Services.ContinuityService Continuity
 
 <nav class="topnav navbar navbar-expand-md">
 
@@ -63,8 +64,8 @@
         <button class="topnav-link" @onclick="OpenSearch" title="Search">
             <i class="bi bi-search"></i>
         </button>
-        <a class="topnav-link" href="/talk" title="Talk — You, Me, and the Page">
-            <i class="bi bi-chat-square-text"></i>
+        <a class="topnav-link" href="/write" title="Write">
+            <i class="bi bi-pencil-square"></i>
         </a>
         <a class="topnav-link" href="/timeline" title="Story timeline">
             <i class="bi bi-clock-history"></i>
@@ -72,12 +73,12 @@
         <a class="topnav-link" href="/schema" title="Database schema viewer">
             <i class="bi bi-diagram-3"></i>
         </a>
-        <a class="topnav-link position-relative" href="/findings" title="Findings inbox">
+        <a class="topnav-link position-relative" href="/findings" title="@(inboxCount > 0 ? inboxTooltip : "Inbox — findings & continuity contradictions")">
             <i class="bi bi-inbox"></i>
-            @if (newFindingsCount > 0)
+            @if (inboxCount > 0)
             {
                 <span class="badge bg-warning text-dark position-absolute top-0 start-100 translate-middle"
-                      style="font-size:.55rem;padding:.15rem .3rem;">@newFindingsCount</span>
+                      style="font-size:.55rem;padding:.15rem .3rem;">@inboxCount</span>
             }
         </a>
         <div class="topnav-controls d-flex align-items-center gap-1">
@@ -93,15 +94,15 @@
                        value="@searchInput" @oninput="OnSearchInput" @onkeydown="HandleKey" />
             </div>
             <div class="topnav-controls d-flex align-items-center gap-1">
-                <a class="topnav-link" href="/talk" title="Talk — You, Me, and the Page">
-                    <i class="bi bi-chat-square-text"></i>
+                <a class="topnav-link" href="/write" title="Write">
+                    <i class="bi bi-pencil-square"></i>
                 </a>
-                <a class="topnav-link position-relative" href="/findings" title="Findings inbox">
+                <a class="topnav-link position-relative" href="/findings" title="@(inboxCount > 0 ? inboxTooltip : "Inbox — findings & continuity contradictions")">
                     <i class="bi bi-inbox"></i>
-                    @if (newFindingsCount > 0)
+                    @if (inboxCount > 0)
                     {
                         <span class="badge bg-warning text-dark position-absolute top-0 start-100 translate-middle"
-                              style="font-size:.6rem;padding:.18rem .35rem;">@newFindingsCount</span>
+                              style="font-size:.6rem;padding:.18rem .35rem;">@inboxCount</span>
                     }
                 </a>
                 <UserBoard />
@@ -113,32 +114,51 @@
 
 @code {
     private string searchInput = "";
-    private int newFindingsCount;
-    private System.Threading.Timer? findingsPoll;
+    // Inbox badge — combined unread count across the two persistent issue
+    // streams: ContinuousQualityService findings (status='New') and
+    // ContinuityService contradictions (status='CONTRADICTED'). Both stay in
+    // SQL until the user explicitly resolves them, so the count survives
+    // restarts and only goes down when issues are actually dealt with.
+    private int findingsUnread;
+    private int contradictionsUnread;
+    private int inboxCount => findingsUnread + contradictionsUnread;
+    private string inboxTooltip = "";
+    private System.Threading.Timer? inboxPoll;
 
     protected override void OnInitialized()
     {
         Nav.LocationChanged += OnLocationChanged;
         SyncSearchFromUrl();
-        RefreshFindingsCount();
-        // Poll every 15s so the badge updates as the autonomous monitor posts findings
-        findingsPoll = new System.Threading.Timer(_ =>
+        RefreshInboxCount();
+        // Poll every 15s so the badge picks up findings/contradictions posted
+        // by the autonomous monitor + the daily continuity sweep without
+        // requiring the user to navigate.
+        inboxPoll = new System.Threading.Timer(_ =>
         {
-            RefreshFindingsCount();
+            RefreshInboxCount();
             InvokeAsync(StateHasChanged);
         }, null, TimeSpan.FromSeconds(15), TimeSpan.FromSeconds(15));
     }
 
-    private void RefreshFindingsCount()
+    private void RefreshInboxCount()
     {
-        try { newFindingsCount = Findings.CountByStatus(StreetSamurai.Core.Services.FindingStatus.New); }
-        catch { newFindingsCount = 0; }
+        try { findingsUnread = Findings.CountByStatus(StreetSamurai.Core.Services.FindingStatus.New); }
+        catch { findingsUnread = 0; }
+        try { contradictionsUnread = Continuity.CountUnresolvedContradictions(); }
+        catch { contradictionsUnread = 0; }
+        inboxTooltip = (findingsUnread, contradictionsUnread) switch
+        {
+            (0, 0) => "Inbox empty",
+            (_, 0) => $"{findingsUnread} unread finding{(findingsUnread == 1 ? "" : "s")}",
+            (0, _) => $"{contradictionsUnread} unresolved continuity contradiction{(contradictionsUnread == 1 ? "" : "s")}",
+            _      => $"{findingsUnread} finding{(findingsUnread == 1 ? "" : "s")} · {contradictionsUnread} contradiction{(contradictionsUnread == 1 ? "" : "s")}",
+        };
     }
 
     private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
     {
         SyncSearchFromUrl();
-        RefreshFindingsCount();
+        RefreshInboxCount();
         InvokeAsync(StateHasChanged);
     }
 
@@ -273,6 +293,6 @@
     public void Dispose()
     {
         Nav.LocationChanged -= OnLocationChanged;
-        findingsPoll?.Dispose();
+        inboxPoll?.Dispose();
     }
 }

@@ -42,6 +42,15 @@ public class Chapter
     public string Html { get; set; } = "";
 
     /// <summary>
+    /// Raw markdown source typed by the writer. Round-trips losslessly through
+    /// the records JSON blob so toolbar formatting (bold, italic, headings,
+    /// blockquote, lists) survives reload. Html is regenerated from this on save
+    /// so reading views and exports keep working.
+    /// </summary>
+    [JsonPropertyName("markdown")]
+    public string Markdown { get; set; } = "";
+
+    /// <summary>
     /// Persisted beats. Populated when a chapter is generated through the director,
     /// or when an absorbed chapter is split by an LLM pass. Empty for legacy chapters
     /// that only have HTML — those can be back-filled with a one-shot split.

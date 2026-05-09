@@ -35,6 +35,7 @@
 @inject IChapterRepository Chapters
 @inject CanonExportService CanonExport
 @inject ToastNotifier Toast
+@inject IJSRuntime JS
 
 <div class="entity-detail-page">
 
@@ -44,7 +45,7 @@
 }
 else if (character != null)
 {
-    @* Character gets one tab per connected child table + Dossier last. *@
+    @* Character gets one tab per connected child table + Dossier last. Global Edit/Save/Cancel sits at the right. *@
     <div class="d-flex justify-content-between align-items-center mb-2">
         <ul class="nav nav-tabs small entity-tabs flex-grow-1">
             <li class="nav-item"><a class="nav-link @(CurrentTab == "record"        ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
@@ -57,61 +58,60 @@ else if (character != null)
             <li class="nav-item"><a class="nav-link @(CurrentTab == "family"        ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("family")'><i class="bi bi-people me-1"></i>Family</a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"       ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
         </ul>
-        @if (Access.IsAdministrator)
-        {
-            @if (!editMode)
-            {
-                <button class="btn btn-sm btn-outline-warning ms-2" @onclick="StartEdit"><i class="bi bi-pencil me-1"></i>Edit</button>
-            }
-            else
-            {
-                <span class="d-flex gap-2 ms-2">
-                    <button class="btn btn-sm btn-success" @onclick="SaveCharacterEdit"><i class="bi bi-check2 me-1"></i>Save</button>
-                    <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit">Cancel</button>
-                </span>
-            }
-        }
+        @GlobalEditControls()
     </div>
 }
 else if (place != null)
 {
     @* Place: Record / Sub-Places / Inhabitants / Events / Dossier. *@
-    <ul class="nav nav-tabs mb-3 small entity-tabs">
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "record"      ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "subplaces"   ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("subplaces")'><i class="bi bi-diagram-3 me-1"></i>Sub-Places <span class="badge bg-secondary">@subPlaces.Count</span></a></li>
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "inhabitants" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("inhabitants")'><i class="bi bi-people me-1"></i>Inhabitants <span class="badge bg-secondary">@inhabitants.Count</span></a></li>
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "events"      ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("events")'><i class="bi bi-calendar-event me-1"></i>Events <span class="badge bg-secondary">@placeEvents.Count</span></a></li>
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
-    </ul>
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <ul class="nav nav-tabs small entity-tabs flex-grow-1">
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "record"      ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "subplaces"   ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("subplaces")'><i class="bi bi-diagram-3 me-1"></i>Sub-Places <span class="badge bg-secondary">@subPlaces.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "inhabitants" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("inhabitants")'><i class="bi bi-people me-1"></i>Inhabitants <span class="badge bg-secondary">@inhabitants.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "events"      ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("events")'><i class="bi bi-calendar-event me-1"></i>Events <span class="badge bg-secondary">@placeEvents.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
+        </ul>
+        @GlobalEditControls()
+    </div>
 }
 else if (corponation != null)
 {
     @* Corponation: Record / Subsidiaries / Personnel / Operations / Dossier. *@
-    <ul class="nav nav-tabs mb-3 small entity-tabs">
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "record"        ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "subsidiaries"  ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("subsidiaries")'><i class="bi bi-diagram-3 me-1"></i>Subsidiaries <span class="badge bg-secondary">@corpSubs.Count</span></a></li>
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "personnel"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("personnel")'><i class="bi bi-person-badge me-1"></i>Personnel <span class="badge bg-secondary">@corpPersonnel.Count</span></a></li>
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "operations"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("operations")'><i class="bi bi-briefcase me-1"></i>Operations <span class="badge bg-secondary">@corpOps.Count</span></a></li>
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"       ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
-    </ul>
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <ul class="nav nav-tabs small entity-tabs flex-grow-1">
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "record"        ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "subsidiaries"  ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("subsidiaries")'><i class="bi bi-diagram-3 me-1"></i>Subsidiaries <span class="badge bg-secondary">@corpSubs.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "personnel"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("personnel")'><i class="bi bi-person-badge me-1"></i>Personnel <span class="badge bg-secondary">@corpPersonnel.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "operations"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("operations")'><i class="bi bi-briefcase me-1"></i>Operations <span class="badge bg-secondary">@corpOps.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"       ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
+        </ul>
+        @GlobalEditControls()
+    </div>
 }
 else if (faction != null)
 {
     @* Faction: Record / Members / Operations / Dossier. *@
-    <ul class="nav nav-tabs mb-3 small entity-tabs">
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "record"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "members"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("members")'><i class="bi bi-person-badge me-1"></i>Members <span class="badge bg-secondary">@factionMembers.Count</span></a></li>
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "operations" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("operations")'><i class="bi bi-briefcase me-1"></i>Operations <span class="badge bg-secondary">@factionOps.Count</span></a></li>
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
-    </ul>
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <ul class="nav nav-tabs small entity-tabs flex-grow-1">
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "record"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "members"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("members")'><i class="bi bi-person-badge me-1"></i>Members <span class="badge bg-secondary">@factionMembers.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "operations" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("operations")'><i class="bi bi-briefcase me-1"></i>Operations <span class="badge bg-secondary">@factionOps.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
+        </ul>
+        @GlobalEditControls()
+    </div>
 }
 else
 {
     @* All other entity types keep the simpler Record/Dossier pair. *@
-    <ul class="nav nav-tabs mb-3 small entity-tabs">
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "record"  ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
-        <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
-    </ul>
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <ul class="nav nav-tabs small entity-tabs flex-grow-1">
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "record"  ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
+        </ul>
+        @GlobalEditControls()
+    </div>
 }
 
 @if (!notFound && CurrentTab == "dossier")
@@ -1410,39 +1410,156 @@ else if (CurrentTab == "record" && document != null)
     }
 
     // ── Edit mode (admin-only) ──
+    // One global Edit/Save/Cancel works across every entity type and every tab.
+    // Backup is a JSON snapshot of whichever typed entity field is loaded; Cancel rehydrates it.
     private bool editMode;
-    private CharacterData? editBackup;
+    private string? editBackupJson;
     private string editError = "";
+
+    private RenderFragment GlobalEditControls() =>
+        @<text>
+            @if (!notFound && Access.IsAdministrator)
+            {
+                @if (!editMode)
+                {
+                    <button class="btn btn-sm btn-outline-warning ms-2" @onclick="StartEdit"><i class="bi bi-pencil me-1"></i>Edit</button>
+                }
+                else
+                {
+                    <span class="d-flex gap-2 ms-2">
+                        <button class="btn btn-sm btn-success" @onclick="SaveAll"><i class="bi bi-check2 me-1"></i>Save All</button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit">Cancel</button>
+                    </span>
+                }
+            }
+        </text>;
 
     private void StartEdit()
     {
-        if (character == null) return;
-        // Snapshot the current character so Cancel can revert.
-        var json = System.Text.Json.JsonSerializer.Serialize(character);
-        editBackup = System.Text.Json.JsonSerializer.Deserialize<CharacterData>(json);
+        editBackupJson = SerializeLoadedEntity();
+        if (editBackupJson == null) return; // nothing loaded
         editMode = true;
         editError = "";
     }
 
     private void CancelEdit()
     {
-        if (editBackup != null) character = editBackup;
-        editBackup = null;
+        if (!string.IsNullOrEmpty(editBackupJson)) RestoreLoadedEntity(editBackupJson);
+        editBackupJson = null;
         editMode = false;
         editError = "";
     }
 
-    private void SaveCharacterEdit()
+    /// <summary>
+    /// Persist whichever typed entity is currently loaded. Each entity type lives in its own
+    /// EF-backed table; the dispatcher routes to the correct repo. Sub-tab data on Character
+    /// (Relationships, CyberwareInventory, Knowledge, etc.) lives on the CharacterData object
+    /// itself, so saving the parent persists every tab in one shot.
+    /// </summary>
+    private void SaveAll()
     {
-        if (character == null) return;
         try
         {
-            CharRepo.Save(character);
+            if      (character     != null) CharRepo.Save(character);
+            else if (synthetic     != null) SynthRepo.Save(synthetic);
+            else if (place         != null) PlaceRepo.Save(place);
+            else if (faction       != null) FactionRepo.Save(faction);
+            else if (corponation   != null) CorpRepo.Save(corponation);
+            else if (technology    != null) TechRepo.Save(technology);
+            else if (weapon        != null) WeaponRepo.Save(weapon);
+            else if (equipment     != null) EquipRepo.Save(equipment);
+            else if (cyberware     != null) CyberRepo.Save(cyberware);
+            else if (vocabEntry    != null) VocabRepo.Save(vocabEntry);
+            else if (ammo          != null) AmmoRepo.Save(ammo);
+            else if (apparel       != null) ApparelRepo.Save(apparel);
+            else if (genemod       != null) GenemodRepo.Save(genemod);
+            else if (pharma        != null) PharmaRepo.Save(pharma);
+            else if (material      != null) MaterialRepo.Save(material);
+            else if (transport     != null) TransportRepo.Save(transport);
+            else if (automaton     != null) AutomatonRepo.Save(automaton);
+            else if (archetype     != null) ArchetypeRepo.Save(archetype);
+            else if (subsidiary    != null) SubsidiaryRepo.Save(subsidiary);
+            else if (entertainment != null) EntertainRepo.Save(entertainment);
+            else if (consumerGood  != null) ConsumerRepo.Save(consumerGood);
+            else if (quote         != null) QuoteRepo.Save(quote);
+            else if (news          != null) NewsRepo.Save(news);
+            else if (contract      != null) ContractRepo.Save(contract);
+            else if (document      != null) DocRepo.Save(document);
+
             editMode = false;
-            editBackup = null;
+            editBackupJson = null;
             editError = "";
+            Toast.Success("EDIT-001", $"Saved {resolvedName}");
         }
-        catch (Exception ex) { editError = ex.Message; }
+        catch (Exception ex)
+        {
+            editError = ex.Message;
+            Toast.Error("EDIT-002", $"Save failed: {ex.Message}");
+        }
+    }
+
+    private string? SerializeLoadedEntity()
+    {
+        var opts = new System.Text.Json.JsonSerializerOptions { WriteIndented = false };
+        if (character     != null) return System.Text.Json.JsonSerializer.Serialize(character, opts);
+        if (synthetic     != null) return System.Text.Json.JsonSerializer.Serialize(synthetic, opts);
+        if (place         != null) return System.Text.Json.JsonSerializer.Serialize(place, opts);
+        if (faction       != null) return System.Text.Json.JsonSerializer.Serialize(faction, opts);
+        if (corponation   != null) return System.Text.Json.JsonSerializer.Serialize(corponation, opts);
+        if (technology    != null) return System.Text.Json.JsonSerializer.Serialize(technology, opts);
+        if (weapon        != null) return System.Text.Json.JsonSerializer.Serialize(weapon, opts);
+        if (equipment     != null) return System.Text.Json.JsonSerializer.Serialize(equipment, opts);
+        if (cyberware     != null) return System.Text.Json.JsonSerializer.Serialize(cyberware, opts);
+        if (vocabEntry    != null) return System.Text.Json.JsonSerializer.Serialize(vocabEntry, opts);
+        if (ammo          != null) return System.Text.Json.JsonSerializer.Serialize(ammo, opts);
+        if (apparel       != null) return System.Text.Json.JsonSerializer.Serialize(apparel, opts);
+        if (genemod       != null) return System.Text.Json.JsonSerializer.Serialize(genemod, opts);
+        if (pharma        != null) return System.Text.Json.JsonSerializer.Serialize(pharma, opts);
+        if (material      != null) return System.Text.Json.JsonSerializer.Serialize(material, opts);
+        if (transport     != null) return System.Text.Json.JsonSerializer.Serialize(transport, opts);
+        if (automaton     != null) return System.Text.Json.JsonSerializer.Serialize(automaton, opts);
+        if (archetype     != null) return System.Text.Json.JsonSerializer.Serialize(archetype, opts);
+        if (subsidiary    != null) return System.Text.Json.JsonSerializer.Serialize(subsidiary, opts);
+        if (entertainment != null) return System.Text.Json.JsonSerializer.Serialize(entertainment, opts);
+        if (consumerGood  != null) return System.Text.Json.JsonSerializer.Serialize(consumerGood, opts);
+        if (quote         != null) return System.Text.Json.JsonSerializer.Serialize(quote, opts);
+        if (news          != null) return System.Text.Json.JsonSerializer.Serialize(news, opts);
+        if (contract      != null) return System.Text.Json.JsonSerializer.Serialize(contract, opts);
+        if (document      != null) return System.Text.Json.JsonSerializer.Serialize(document, opts);
+        return null;
+    }
+
+    private void RestoreLoadedEntity(string json)
+    {
+        try
+        {
+            if      (character     != null) character     = System.Text.Json.JsonSerializer.Deserialize<CharacterData>(json);
+            else if (synthetic     != null) synthetic     = System.Text.Json.JsonSerializer.Deserialize<SyntheticLifeData>(json);
+            else if (place         != null) place         = System.Text.Json.JsonSerializer.Deserialize<DistrictData>(json);
+            else if (faction       != null) faction       = System.Text.Json.JsonSerializer.Deserialize<FactionData>(json);
+            else if (corponation   != null) corponation   = System.Text.Json.JsonSerializer.Deserialize<CorponationData>(json);
+            else if (technology    != null) technology    = System.Text.Json.JsonSerializer.Deserialize<TechnologyData>(json);
+            else if (weapon        != null) weapon        = System.Text.Json.JsonSerializer.Deserialize<WeaponryData>(json);
+            else if (equipment     != null) equipment     = System.Text.Json.JsonSerializer.Deserialize<EquipmentData>(json);
+            else if (cyberware     != null) cyberware     = System.Text.Json.JsonSerializer.Deserialize<CyberwareData>(json);
+            else if (vocabEntry    != null) vocabEntry    = System.Text.Json.JsonSerializer.Deserialize<VocabularyData>(json);
+            else if (ammo          != null) ammo          = System.Text.Json.JsonSerializer.Deserialize<AmmunitionData>(json);
+            else if (apparel       != null) apparel       = System.Text.Json.JsonSerializer.Deserialize<ApparelData>(json);
+            else if (genemod       != null) genemod       = System.Text.Json.JsonSerializer.Deserialize<GenemodData>(json);
+            else if (pharma        != null) pharma        = System.Text.Json.JsonSerializer.Deserialize<PharmaceuticalData>(json);
+            else if (material      != null) material      = System.Text.Json.JsonSerializer.Deserialize<MaterialData>(json);
+            else if (transport     != null) transport     = System.Text.Json.JsonSerializer.Deserialize<TransportationData>(json);
+            else if (automaton     != null) automaton     = System.Text.Json.JsonSerializer.Deserialize<AutomatonData>(json);
+            else if (archetype     != null) archetype     = System.Text.Json.JsonSerializer.Deserialize<ArchetypeData>(json);
+            else if (subsidiary    != null) subsidiary    = System.Text.Json.JsonSerializer.Deserialize<SubsidiaryData>(json);
+            else if (entertainment != null) entertainment = System.Text.Json.JsonSerializer.Deserialize<EntertainmentData>(json);
+            else if (consumerGood  != null) consumerGood  = System.Text.Json.JsonSerializer.Deserialize<ConsumerGoodData>(json);
+            else if (quote         != null) quote         = System.Text.Json.JsonSerializer.Deserialize<QuoteData>(json);
+            else if (news          != null) news          = System.Text.Json.JsonSerializer.Deserialize<NewsData>(json);
+            else if (contract      != null) contract      = System.Text.Json.JsonSerializer.Deserialize<ContractData>(json);
+            else if (document      != null) document      = System.Text.Json.JsonSerializer.Deserialize<WorldbuildingDocument>(json);
+        }
+        catch { /* if deserialization fails, leave entity as-edited */ }
     }
 
     // ── Export JSON ──
@@ -1535,6 +1652,23 @@ else if (CurrentTab == "record" && document != null)
     private List<RelatedRowsList.RelatedRow> factionMembers = [];
     private List<RelatedRowsList.RelatedRow> factionOps     = [];
 
+    // Trip a tab neon-flicker on the next render (set when the entity changes)
+    private bool _flickerOnRender;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (_flickerOnRender)
+        {
+            _flickerOnRender = false;
+            // ~50% of entity loads trigger the urban-decay neon flicker on a few tabs
+            if (Random.Shared.NextDouble() < 0.50)
+            {
+                try { await JS.InvokeVoidAsync("cbgEntityFlickerTabs"); }
+                catch { /* JS not loaded yet — silent */ }
+            }
+        }
+    }
+
     protected override void OnParametersSet()
     {
         character = null; synthetic = null; place = null; faction = null;
@@ -1546,6 +1680,10 @@ else if (CurrentTab == "record" && document != null)
         contract = null; document = null;
         notFound = false; resolvedName = ""; resolvedId = ""; resolvedMidjourneyPrompt = ""; resolvedDalle3Prompt = ""; referencedBy = [];
         primaryImage = null;
+        // Navigating to a different entity discards any pending edits — prevents stale Save dispatch
+        editMode = false; editBackupJson = null; editError = "";
+        // Mark the next render for the cyberpunk neon-flicker pass on tabs
+        _flickerOnRender = true;
 
         if (string.IsNullOrWhiteSpace(EntityId)) { notFound = true; return; }
 
