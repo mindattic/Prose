@@ -10,10 +10,11 @@
 @inject IBookRepository Books
 @inject IChapterRepository Chapters
 @inject MarkdownService Md
+@inject FindingsService Findings
 @inject NavigationManager Nav
 @inject IJSRuntime JS
 
-<div class="write-shell @(focusModeClass)">
+<div class="write-shell @(focusModeClass) @(showFindings && chapter != null ? "with-findings" : "")">
     @if (book == null)
     {
         <div class="p-3">
@@ -110,6 +111,14 @@
                             disabled="@readingMode">
                         <i class="bi bi-search"></i>
                     </button>
+                    <button class="btn btn-sm @(showFindings ? "btn-warning" : "btn-outline-secondary")"
+                            title="Findings for this chapter" @onclick="ToggleFindings">
+                        <i class="bi bi-clipboard-check"></i>
+                        @if (findings.Count > 0)
+                        {
+                            <span class="badge bg-dark ms-1">@findings.Count</span>
+                        }
+                    </button>
                     <button class="btn btn-sm btn-outline-info" @onclick="SaveChapter"
                             disabled="@(!pageDirty || saving)">
                         <i class="bi bi-floppy"></i> Save
@@ -170,11 +179,51 @@
                 }
             }
         </main>
+
+        @if (showFindings && chapter != null)
+        {
+            <aside class="write-findings-side">
+                <div class="write-findings-head">
+                    <span class="text-info small">
+                        <i class="bi bi-clipboard-check me-1"></i>Findings
+                    </span>
+                    <button class="btn-close btn-close-white btn-sm" @onclick="ToggleFindings"></button>
+                </div>
+                <div class="write-findings-list">
+                    @if (findings.Count == 0)
+                    {
+                        <div class="text-muted small px-2 py-3">
+                            No findings for this chapter yet. Reviews and the contradiction sweep
+                            attach findings here as they run.
+                        </div>
+                    }
+                    @foreach (var f in findings)
+                    {
+                        <div class="@($"write-finding sev-{f.Severity.ToString().ToLowerInvariant()}")">
+                            <div class="write-finding-head">
+                                <span class="write-finding-cat">@f.Category</span>
+                                <span class="write-finding-sev">@f.Severity</span>
+                            </div>
+                            <div class="write-finding-summary">@f.Summary</div>
+                            @if (!string.IsNullOrWhiteSpace(f.Snippet))
+                            {
+                                <div class="write-finding-snippet">@f.Snippet</div>
+                            }
+                            @if (!string.IsNullOrWhiteSpace(f.SuggestedFix))
+                            {
+                                <div class="write-finding-fix"><i class="bi bi-arrow-right me-1"></i>@f.SuggestedFix</div>
+                            }
+                        </div>
+                    }
+                </div>
+            </aside>
+        }
     }
 </div>
 
 <style>
   .write-shell { display:grid; grid-template-columns: 240px 1fr; height: calc(100vh - 56px); min-height:0; }
+  .write-shell.with-findings { grid-template-columns: 240px 1fr 300px; }
   .write-side { border-right:1px solid #444; display:flex; flex-direction:column; min-height:0; }
   .write-side-head { padding:8px 10px; border-bottom:1px solid #2a2a32; display:flex; flex-direction:column; gap:6px; }
   .write-side-tabs { display:flex; gap:4px; }
@@ -218,6 +267,19 @@
 
   .write-recovery { background:#3a2e0a; border:1px solid #6a5b1d; color:#f5d97a; padding:6px 10px; border-radius:4px; margin-bottom:8px; font-size:.9rem; }
 
+  .write-findings-side { border-left:1px solid #444; display:flex; flex-direction:column; min-height:0; }
+  .write-findings-head { display:flex; justify-content:space-between; align-items:center; padding:8px 10px; border-bottom:1px solid #2a2a32; }
+  .write-findings-list { flex:1; overflow-y:auto; padding:8px; display:flex; flex-direction:column; gap:8px; }
+  .write-finding { background:#1a1a1a; border:1px solid #333; border-left-width:3px; padding:8px 10px; font-size:.85rem; }
+  .write-finding.sev-high   { border-left-color:#c33; }
+  .write-finding.sev-medium { border-left-color:#c93; }
+  .write-finding.sev-low    { border-left-color:#48a; }
+  .write-finding-head { display:flex; justify-content:space-between; gap:8px; font-size:.7rem; text-transform:uppercase; letter-spacing:0.05em; color:#888; margin-bottom:4px; }
+  .write-finding-cat { color:#5be; }
+  .write-finding-summary { color:#ddd; line-height:1.4; }
+  .write-finding-snippet { color:#999; font-style:italic; margin-top:4px; padding-left:8px; border-left:2px solid #333; font-size:.8rem; }
+  .write-finding-fix { color:#7c7; margin-top:6px; font-size:.8rem; }
+
   @@media (max-width: 720px) {
     .write-shell { grid-template-columns: 1fr; height: auto; }
     .write-side { max-height: 220px; border-right:none; border-bottom:1px solid #444; }
@@ -252,6 +314,8 @@
     private bool showOutline;
     private bool readingMode;
     private bool findOpen;
+    private bool showFindings;
+    private IReadOnlyList<Finding> findings = Array.Empty<Finding>();
     private string findQuery = "";
     private string replaceQuery = "";
     private bool findCaseSensitive;
@@ -368,13 +432,22 @@
                     showOutline = false;
                     readingMode = false;
                 }
+                LoadFindings();
             }
         }
         else
         {
             chapter = null; pageTitle = ""; pageMarkdown = ""; pageDirty = false;
             lastSavedAt = null; recoveryAvailable = false;
+            findings = Array.Empty<Finding>();
         }
+    }
+
+    private void LoadFindings()
+    {
+        findings = chapter == null
+            ? Array.Empty<Finding>()
+            : Findings.ListByChapter(chapter.Id);
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -459,6 +532,7 @@
 
     private void ToggleReadingMode() { readingMode = !readingMode; if (readingMode) findOpen = false; }
     private void ToggleFind()        { findOpen = !findOpen; findStatus = null; }
+    private void ToggleFindings()    { showFindings = !showFindings; if (showFindings) LoadFindings(); }
 
     private async Task AutosaveTick()
     {
