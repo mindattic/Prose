@@ -11,6 +11,7 @@
 @inject IChapterRepository Chapters
 @inject MarkdownService Md
 @inject FindingsService Findings
+@inject BeatGeneratorService BeatGen
 @inject NavigationManager Nav
 @inject IJSRuntime JS
 
@@ -35,15 +36,18 @@
                     <i class="bi bi-arrow-left me-1"></i>@book.Title
                 </a>
                 <div class="write-side-tabs">
-                    <button class="@($"write-side-tab{(showOutline ? "" : " active")}")"
-                            @onclick="() => showOutline = false">Chapters</button>
-                    <button class="@($"write-side-tab{(showOutline ? " active" : "")}")"
-                            @onclick="() => showOutline = true"
+                    <button class="@($"write-side-tab{(sideTab == "chapters" ? " active" : "")}")"
+                            @onclick='() => sideTab = "chapters"'>Chapters</button>
+                    <button class="@($"write-side-tab{(sideTab == "beats" ? " active" : "")}")"
+                            @onclick='() => sideTab = "beats"'
+                            disabled="@(chapter == null)">Beats</button>
+                    <button class="@($"write-side-tab{(sideTab == "outline" ? " active" : "")}")"
+                            @onclick='() => sideTab = "outline"'
                             disabled="@(chapter == null)">Outline</button>
                 </div>
             </div>
             <div class="write-side-list">
-                @if (!showOutline)
+                @if (sideTab == "chapters")
                 {
                     @foreach (var c in bookChapters)
                     {
@@ -59,7 +63,72 @@
                         <div class="text-muted small px-2 py-3">No chapters yet.</div>
                     }
                 }
-                else
+                else if (sideTab == "beats" && chapter != null)
+                {
+                    @if (chapter.Beats.Count == 0)
+                    {
+                        <div class="text-muted small px-2 py-3">
+                            No beats yet. Add a beat blurb below — when you click <strong>Update</strong>,
+                            it expands the blurb into prose and appends it to the chapter.
+                        </div>
+                    }
+                    @foreach (var b in chapter.Beats.OrderBy(b => b.Index))
+                    {
+                        var done = !string.IsNullOrWhiteSpace(b.Text);
+                        var ready = !done && !string.IsNullOrWhiteSpace(b.Synopsis);
+                        <div class="@($"write-beat{(done ? " done" : ready ? " ready" : "")}")">
+                            <div class="write-beat-head">
+                                <input class="write-beat-title" placeholder="Beat title…"
+                                       @bind="b.Title" @bind:event="oninput" @bind:after="MarkPageDirty" />
+                                @if (done)
+                                {
+                                    <span class="write-beat-status text-success" title="Prose written">●</span>
+                                }
+                                else if (ready)
+                                {
+                                    <span class="write-beat-status text-warning" title="Ready for Update">○</span>
+                                }
+                                else
+                                {
+                                    <span class="write-beat-status text-muted" title="Empty">·</span>
+                                }
+                            </div>
+                            <textarea class="write-beat-blurb"
+                                      placeholder="Kyle walks into the bar and asks the bartender for a seltzer with a lime."
+                                      rows="2"
+                                      @bind="b.Synopsis" @bind:event="oninput" @bind:after="MarkPageDirty"></textarea>
+                            <div class="write-beat-actions">
+                                <button class="btn btn-sm btn-outline-info py-0"
+                                        title="Expand the blurb into prose and append it to the chapter"
+                                        disabled="@(string.IsNullOrWhiteSpace(b.Synopsis) || beatExpanding == b.Id)"
+                                        @onclick="() => ExpandBeat(b)">
+                                    @if (beatExpanding == b.Id)
+                                    {
+                                        <span class="spinner-border spinner-border-sm me-1" />
+                                        <span>Updating…</span>
+                                    }
+                                    else
+                                    {
+                                        <i class="bi bi-stars me-1" />
+                                        <span>Update</span>
+                                    }
+                                </button>
+                                <button class="btn btn-sm btn-link text-muted py-0" title="Remove this beat"
+                                        @onclick="() => RemoveBeat(b)">
+                                    <i class="bi bi-x-lg" />
+                                </button>
+                            </div>
+                        </div>
+                    }
+                    <button class="btn btn-sm btn-outline-secondary mt-2" @onclick="AddBeat">
+                        <i class="bi bi-plus-lg me-1" />Add beat
+                    </button>
+                    @if (!string.IsNullOrWhiteSpace(beatStatus))
+                    {
+                        <div class="text-muted small mt-2">@beatStatus</div>
+                    }
+                }
+                else if (sideTab == "outline")
                 {
                     @if (Outline.Count == 0)
                     {
@@ -244,6 +313,24 @@
   .write-outline-marker { color:#5b8; font-family:monospace; font-size:.7rem; }
   .write-outline-title { flex:1; }
 
+  /* Beat blurbs — sequential authoring strip in the left aside.
+     Status: dot color + left-border accent. Done = green, Ready (blurb but no
+     prose) = amber, Empty = muted. The amber "ready" stripe is the user's
+     visual hint for "this is the next beat to expand." */
+  .write-beat { background:#16181d; border:1px solid #2a2a32; border-left:3px solid #444;
+                padding:6px 8px; margin-bottom:6px; border-radius:3px; }
+  .write-beat.ready { border-left-color:#ffc107; }
+  .write-beat.done  { border-left-color:#2ecc71; opacity:0.85; }
+  .write-beat-head  { display:flex; align-items:center; gap:6px; margin-bottom:4px; }
+  .write-beat-title { flex:1; background:transparent; border:0; color:#ddd; font-size:.85rem;
+                      font-weight:600; padding:2px 0; outline:none; }
+  .write-beat-title::placeholder { color:#666; font-weight:400; }
+  .write-beat-status { font-family:monospace; font-size:.9rem; }
+  .write-beat-blurb { width:100%; background:#0e1014; color:#cfd; border:1px solid #2a2a32;
+                      border-radius:3px; padding:4px 6px; font-size:.8rem; resize:vertical;
+                      font-family:Georgia,serif; }
+  .write-beat-actions { display:flex; gap:4px; align-items:center; margin-top:4px; }
+
   .write-main { display:flex; flex-direction:column; min-height:0; padding:10px; }
   .write-bar { display:flex; gap:8px; align-items:center; margin-bottom:6px; }
   .write-title { flex:1; }
@@ -311,11 +398,16 @@
     private IDisposable? locationGuard;
 
     // Sidebar tab + reading + find
-    private bool showOutline;
+    // sideTab: "chapters" | "beats" | "outline" — replaces the old showOutline bool
+    // so the chapter editor can offer the beats workflow alongside the prior two views.
+    private string sideTab = "chapters";
     private bool readingMode;
     private bool findOpen;
     private bool showFindings;
     private IReadOnlyList<Finding> findings = Array.Empty<Finding>();
+    // Per-beat expand state
+    private string? beatExpanding;
+    private string beatStatus = "";
     private string findQuery = "";
     private string replaceQuery = "";
     private bool findCaseSensitive;
@@ -429,7 +521,8 @@
                     findOpen = false;
                     findCursor = 0;
                     findStatus = null;
-                    showOutline = false;
+                    sideTab = "chapters";
+                    beatStatus = "";
                     readingMode = false;
                 }
                 LoadFindings();
@@ -533,6 +626,84 @@
     private void ToggleReadingMode() { readingMode = !readingMode; if (readingMode) findOpen = false; }
     private void ToggleFind()        { findOpen = !findOpen; findStatus = null; }
     private void ToggleFindings()    { showFindings = !showFindings; if (showFindings) LoadFindings(); }
+
+    // ── Beat workflow ──────────────────────────────────────────────────────
+    // Each ChapterBeat holds a Synopsis (the user-authored blurb — "Kyle walks
+    // into the bar and asks for a seltzer with a lime") and a Text (the prose
+    // produced by Update). Beats with prose are "done"; beats with a blurb but
+    // no prose are "ready" — the next-up beat is implicitly whichever ready
+    // one comes first in Index order.
+
+    private void AddBeat()
+    {
+        if (chapter == null) return;
+        var nextIdx = chapter.Beats.Count == 0 ? 0 : chapter.Beats.Max(b => b.Index) + 1;
+        chapter.Beats.Add(new ChapterBeat { Index = nextIdx, Title = "", Synopsis = "", Text = "" });
+        MarkPageDirty();
+    }
+
+    private void RemoveBeat(ChapterBeat b)
+    {
+        if (chapter == null) return;
+        chapter.Beats.Remove(b);
+        MarkPageDirty();
+    }
+
+    /// <summary>
+    /// Expand the beat's Synopsis (blurb) into prose using BeatGeneratorService,
+    /// store the result in beat.Text, and append it to the chapter markdown.
+    /// SceneSoFar is the concatenation of prior beats' prose so the LLM picks up
+    /// continuity (mood shifts, revelations the room has just absorbed, etc).
+    /// </summary>
+    private async Task ExpandBeat(ChapterBeat b)
+    {
+        if (chapter == null || string.IsNullOrWhiteSpace(b.Synopsis)) return;
+        beatExpanding = b.Id;
+        beatStatus    = $"Expanding beat \"{(string.IsNullOrWhiteSpace(b.Title) ? b.Synopsis : b.Title)}\"…";
+        StateHasChanged();
+        try
+        {
+            // Earlier beats' Text feeds SceneSoFar so the new prose flows from the prior
+            // beat. Falls back to the page markdown when no prior beats exist.
+            var priorBeats = chapter.Beats.OrderBy(x => x.Index).TakeWhile(x => x.Id != b.Id).ToList();
+            var sceneSoFar = priorBeats.Any(p => !string.IsNullOrWhiteSpace(p.Text))
+                ? string.Join("\n\n", priorBeats.Select(p => p.Text).Where(t => !string.IsNullOrWhiteSpace(t)))
+                : (pageMarkdown ?? "");
+
+            var ctx = new BeatContext
+            {
+                StoryBibleContext   = "",
+                RelationshipContext = "",
+                LocationContext     = "",
+                DialogueContext     = "",
+                SceneSoFar          = sceneSoFar,
+                BeatGoal            = b.Synopsis,
+            };
+            var prose = await BeatGen.GenerateBeatAsync(ctx);
+            if (string.IsNullOrWhiteSpace(prose))
+            {
+                beatStatus = "LLM returned empty prose — check API key and try again.";
+                return;
+            }
+            b.Text = prose.Trim();
+
+            // Append to the page markdown so the prose appears in the chapter immediately.
+            // Blank-line separator preserves paragraph boundaries in the rendered output.
+            var sep = string.IsNullOrWhiteSpace(pageMarkdown) ? "" : "\n\n";
+            pageMarkdown = (pageMarkdown ?? "") + sep + b.Text;
+            MarkPageDirty();
+            beatStatus = $"Updated. Next: pick the next beat or add one.";
+        }
+        catch (Exception ex)
+        {
+            beatStatus = $"Error: {ex.Message}";
+        }
+        finally
+        {
+            beatExpanding = null;
+            StateHasChanged();
+        }
+    }
 
     private async Task AutosaveTick()
     {
