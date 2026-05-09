@@ -25,17 +25,20 @@ public class BookExportService
     private readonly IChapterRepository chapters;
     private readonly IPathProvider paths;
     private readonly MarkdownService markdown;
+    private readonly ITtsService? tts;
     private readonly ILogger<BookExportService> log;
 
     public BookExportService(
         IBookRepository books, IChapterRepository chapters,
         IPathProvider paths, MarkdownService markdown,
-        ILogger<BookExportService> log)
+        ILogger<BookExportService> log,
+        ITtsService? tts = null)
     {
         this.books = books;
         this.chapters = chapters;
         this.paths = paths;
         this.markdown = markdown;
+        this.tts = tts;
         this.log = log;
     }
 
@@ -119,6 +122,117 @@ public class BookExportService
         File.WriteAllText(path, sb.ToString());
         log.LogInformation("Exported book {BookId} markdown to {Path}", bookId, path);
         return path;
+    }
+
+    /// <summary>
+    /// Synthesize per-chapter audio via the configured TTS service. Each chapter
+    /// is split at paragraph boundaries into chunks ≤ 3500 characters (under
+    /// ElevenLabs' input cap) and each chunk becomes one MP3 file in playback
+    /// order. Output directory at <c>engine/exports/{slug}.{shortId}.audio/</c>;
+    /// concatenation into a single per-chapter or per-book file is left to the
+    /// user (ffmpeg / Audacity / Calibre handle MP3 concatenation cleanly).
+    ///
+    /// <para><b>API cost.</b> ElevenLabs charges per character. A 200k-character
+    /// book runs ~$30+ at standard tier. The method fails fast when the TTS
+    /// service is unavailable or unconfigured so a misroute never silently
+    /// starts a billable job.</para>
+    /// </summary>
+    public async Task<string> ExportAudioAsync(string bookId, string? voiceId = null, CancellationToken ct = default)
+    {
+        if (tts is null)
+            throw new InvalidOperationException("TTS service not registered — audiobook export unavailable.");
+        if (!await tts.IsConfiguredAsync())
+            throw new InvalidOperationException("TTS service is not configured (missing API key). Set ElevenLabs API key in Settings.");
+
+        var book = books.LoadBook(bookId)
+            ?? throw new InvalidOperationException($"Book {bookId} not found");
+
+        var ordered = book.ChapterIds
+            .Select(id => chapters.LoadChapter(id))
+            .Where(c => c != null)
+            .Cast<Chapter>()
+            .ToList();
+
+        if (ordered.Count == 0)
+            throw new InvalidOperationException($"Book {bookId} has no chapters to narrate");
+
+        var dirName = $"{Slug(book.Title)}.{book.Id[..8]}.audio";
+        var outDir = Path.Combine(paths.ExportDir, dirName);
+        Directory.CreateDirectory(outDir);
+
+        int totalParts = 0;
+        for (int ci = 0; ci < ordered.Count; ci++)
+        {
+            ct.ThrowIfCancellationRequested();
+            var chapter = ordered[ci];
+            var plain = StripHtmlToPlain(chapter.Html);
+            if (string.IsNullOrWhiteSpace(plain)) continue;
+
+            var chunks = ChunkForTts(plain, maxChars: 3500);
+            for (int pi = 0; pi < chunks.Count; pi++)
+            {
+                var bytes = await tts.SynthesizeAsync(chunks[pi], voiceId, ct);
+                var partPath = Path.Combine(outDir, $"chapter-{ci + 1:D3}-part-{pi + 1:D3}.mp3");
+                await File.WriteAllBytesAsync(partPath, bytes, ct);
+                totalParts++;
+            }
+        }
+
+        log.LogInformation("Exported audiobook for {BookId} to {Dir} ({Chapters} chapters, {Parts} parts)",
+            bookId, outDir, ordered.Count, totalParts);
+        return outDir;
+    }
+
+    /// <summary>
+    /// Strip HTML tags to plain text suitable for TTS input. Paragraph closes
+    /// become double newlines so the chunker can split on paragraph boundaries.
+    /// </summary>
+    private static string StripHtmlToPlain(string html)
+    {
+        if (string.IsNullOrWhiteSpace(html)) return "";
+        var s = System.Text.RegularExpressions.Regex.Replace(html, @"</p\s*>", "\n\n", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        s = System.Text.RegularExpressions.Regex.Replace(s, @"<br\s*/?>", "\n", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        s = System.Text.RegularExpressions.Regex.Replace(s, @"<[^>]+>", "");
+        s = System.Net.WebUtility.HtmlDecode(s);
+        s = System.Text.RegularExpressions.Regex.Replace(s, @"[ \t]+", " ");
+        s = System.Text.RegularExpressions.Regex.Replace(s, @"(\s*\n){3,}", "\n\n");
+        return s.Trim();
+    }
+
+    /// <summary>
+    /// Split prose at paragraph boundaries into chunks not exceeding
+    /// <paramref name="maxChars"/>. A single paragraph longer than the cap is
+    /// hard-split at the cap — rare in practice and still produces speakable audio.
+    /// </summary>
+    private static List<string> ChunkForTts(string text, int maxChars)
+    {
+        var paragraphs = text.Split(new[] { "\n\n" }, StringSplitOptions.RemoveEmptyEntries);
+        var chunks = new List<string>();
+        var cur = new StringBuilder();
+        foreach (var raw in paragraphs)
+        {
+            var p = raw.Trim();
+            if (p.Length == 0) continue;
+
+            if (p.Length > maxChars)
+            {
+                // Flush whatever's pending so the over-length paragraph stands alone.
+                if (cur.Length > 0) { chunks.Add(cur.ToString().Trim()); cur.Clear(); }
+                for (int i = 0; i < p.Length; i += maxChars)
+                    chunks.Add(p.Substring(i, Math.Min(maxChars, p.Length - i)));
+                continue;
+            }
+
+            if (cur.Length + p.Length + 2 > maxChars && cur.Length > 0)
+            {
+                chunks.Add(cur.ToString().Trim());
+                cur.Clear();
+            }
+            if (cur.Length > 0) cur.Append("\n\n");
+            cur.Append(p);
+        }
+        if (cur.Length > 0) chunks.Add(cur.ToString().Trim());
+        return chunks;
     }
 
     /// <summary>Standalone single-file HTML — opens in any browser, prints to PDF cleanly.</summary>

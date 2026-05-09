@@ -95,6 +95,9 @@ else
                         <i class="bi bi-filetype-html me-2"></i>Standalone HTML</button></li>
                     <li><button class="dropdown-item" @onclick='() => Export("md")'>
                         <i class="bi bi-markdown me-2"></i>Markdown</button></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><button class="dropdown-item" @onclick='() => Export("audio")'>
+                        <i class="bi bi-mic me-2"></i>Audiobook (TTS) <span class="text-warning small">· API cost</span></button></li>
                 </ul>
             </div>
             <button class="btn btn-sm btn-outline-secondary" @onclick="ToggleAbsorb" title="Absorb a loose chapter into this book">
@@ -1072,16 +1075,17 @@ else if (!generating)
     }
 
     /// <summary>Build an export of the current book in the requested format and surface the path.</summary>
-    private void Export(string format)
+    private async Task Export(string format)
     {
         if (book == null) return;
         try
         {
             string path = format switch
             {
-                "html" => ExportSvc.ExportHtml(book.Id),
-                "md"   => ExportSvc.ExportMarkdown(book.Id),
-                _      => ExportSvc.ExportEpub(book.Id),
+                "html"  => ExportSvc.ExportHtml(book.Id),
+                "md"    => ExportSvc.ExportMarkdown(book.Id),
+                "audio" => await ExportSvc.ExportAudioAsync(book.Id),
+                _       => ExportSvc.ExportEpub(book.Id),
             };
             applyError = $"Exported: {path}";  // reuse the alert slot — green path message
         }
