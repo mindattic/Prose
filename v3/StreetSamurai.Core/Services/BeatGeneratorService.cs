@@ -161,6 +161,121 @@ public class BeatGeneratorService
     }
 
     /// <summary>
+    /// Score and rank candidate beat blurbs with a 100-persona panel
+    /// distributed evenly across Legion's four trusted providers
+    /// (25 claude / 25 openai / 25 gemini / 25 deepseek).
+    ///
+    /// One prompt per persona — each persona scores ALL candidates 0-100
+    /// in a single response, so the call cost is 100 LLM requests total
+    /// regardless of how many candidates are being ranked. The aggregate
+    /// score per blurb is the mean of every responding persona's score
+    /// for it; result is sorted descending so the strongest candidates
+    /// rise to the top.
+    ///
+    /// <para><b>Cost.</b> 100 LLM requests is non-trivial — this is an
+    /// opt-in ranking step, NOT auto-fired after every suggest. UI should
+    /// gate behind an explicit "Rank with 100 personas" button.</para>
+    /// </summary>
+    public async Task<List<BeatRankResult>> RankBeatBlurbsAsync(
+        IReadOnlyList<string> blurbs, string sceneSoFar,
+        string chapterTitle, string povCharacter,
+        CancellationToken ct = default)
+    {
+        if (voting is null || blurbs.Count == 0) return new List<BeatRankResult>();
+
+        var ctxBuilder = new System.Text.StringBuilder();
+        if (!string.IsNullOrWhiteSpace(chapterTitle)) ctxBuilder.AppendLine($"CHAPTER: {chapterTitle}");
+        if (!string.IsNullOrWhiteSpace(povCharacter)) ctxBuilder.AppendLine($"POV: {povCharacter}");
+        if (!string.IsNullOrWhiteSpace(sceneSoFar))
+        {
+            ctxBuilder.AppendLine();
+            ctxBuilder.AppendLine("SCENE SO FAR:");
+            ctxBuilder.AppendLine(sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar);
+        }
+        ctxBuilder.AppendLine();
+        ctxBuilder.AppendLine("CANDIDATE NEXT BEATS (score each):");
+        for (int i = 0; i < blurbs.Count; i++)
+            ctxBuilder.AppendLine($"  {i + 1}. {blurbs[i]}");
+
+        var request = new VoteRequest
+        {
+            Question =
+                "Score each candidate next beat 0-100 based on: how compelling and specific it is, " +
+                "how well it serves story momentum from the scene so far, and whether it would lead " +
+                "to interesting prose that respects the POV character's voice. Output STRICT JSON: " +
+                "an array of objects [{\"id\": <int>, \"score\": <0-100>}, ...] — one entry per candidate, " +
+                "ids matching the numbered list. No prose outside the JSON.",
+            Context = ctxBuilder.ToString(),
+            MaxTokens = 512,
+            Temperature = 0.4,
+            SynthesizeNarrative = false,
+        };
+
+        // Build the 100-persona panel with explicit 25/25/25/25 distribution across
+        // the four trusted providers. CreatePanel spreads voices across providers
+        // round-robin which gives 25/25/25/25 when all four are active and the
+        // count is a multiple of 4.
+        var panel = voting.CreatePanel(count: 100, fallbackProviderId: "claude");
+
+        VotingResult result;
+        try
+        {
+            // Plurality: we don't want consensus — we want every persona's score for aggregation.
+            result = await voting.VoteWithProfilesAsync(request, Quorum.Plurality, panel, ct);
+        }
+        catch
+        {
+            return new List<BeatRankResult>();
+        }
+
+        var totals = blurbs.Select(_ => (sum: 0.0, n: 0)).ToList();
+        foreach (var v in result.IndividualVotes.Where(v => !v.IsError))
+        {
+            var payload = !string.IsNullOrWhiteSpace(v.Decision) ? v.Decision : v.Reasoning;
+            if (string.IsNullOrWhiteSpace(payload)) continue;
+            foreach (var (id, score) in ParseRankPayload(payload))
+            {
+                if (id < 1 || id > blurbs.Count) continue;
+                if (score < 0 || score > 100) continue;
+                var idx = id - 1;
+                var (sum, n) = totals[idx];
+                totals[idx] = (sum + score, n + 1);
+            }
+        }
+
+        return blurbs
+            .Select((b, i) => new BeatRankResult(
+                Blurb:    b,
+                Score:    totals[i].n == 0 ? 0.0 : totals[i].sum / totals[i].n,
+                VoteCount: totals[i].n))
+            .OrderByDescending(x => x.Score)
+            .ToList();
+    }
+
+    /// <summary>Parse a "[{id, score}, ...]" JSON payload tolerantly — accepts a JSON array anywhere in the response.</summary>
+    private static IEnumerable<(int id, double score)> ParseRankPayload(string payload)
+    {
+        var start = payload.IndexOf('[');
+        var end   = payload.LastIndexOf(']');
+        if (start < 0 || end <= start) yield break;
+        var json = payload[start..(end + 1)];
+        System.Text.Json.JsonDocument doc;
+        try { doc = System.Text.Json.JsonDocument.Parse(json); }
+        catch { yield break; }
+        using (doc)
+        {
+            if (doc.RootElement.ValueKind != System.Text.Json.JsonValueKind.Array) yield break;
+            foreach (var e in doc.RootElement.EnumerateArray())
+            {
+                if (e.ValueKind != System.Text.Json.JsonValueKind.Object) continue;
+                if (!e.TryGetProperty("id",    out var idEl)    || !idEl.TryGetInt32(out var id)) continue;
+                if (!e.TryGetProperty("score", out var scoreEl) || !scoreEl.TryGetDouble(out var score)) continue;
+                yield return (id, score);
+            }
+        }
+    }
+
+    /// <summary>
     /// Pull the top-3 semantically-similar past beats from the prose-embedding
     /// cache, render them as a short "STYLE ANCHORS" block. The query is the
     /// (BeatGoal + last ~1.5k chars of SceneSoFar) — that's what we want to
@@ -219,3 +334,11 @@ public record BeatContext
     public string SceneSoFar { get; init; } = "";
     public string BeatGoal { get; init; } = "";
 }
+
+/// <summary>
+/// One ranked candidate beat blurb, scored by the 100-persona panel.
+/// Score is the mean (0-100) across every responding persona; VoteCount is
+/// how many personas successfully scored this candidate (transparent failure
+/// when some providers error mid-vote).
+/// </summary>
+public record BeatRankResult(string Blurb, double Score, int VoteCount);

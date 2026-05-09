@@ -122,12 +122,27 @@
                             </div>
                         </div>
                     }
-                    @* Candidate next-beat blurbs from Legion's panel — pick one, write your own, or generate more. *@
-                    @if (beatSuggestions.Count > 0)
+                    @* Ranked next-beat blurbs (100-persona scoring) take precedence; otherwise show the raw suggestions. *@
+                    @if (rankedSuggestions.Count > 0)
                     {
                         <div class="write-beat-suggestions">
                             <div class="text-muted small mb-1">
-                                <i class="bi bi-stars me-1" />Pick a next beat — or "Write my own" / "More".
+                                <i class="bi bi-bar-chart-fill me-1" />Ranked by 100 personas (25 each: claude / openai / gemini / deepseek).
+                            </div>
+                            @foreach (var r in rankedSuggestions)
+                            {
+                                <button class="write-beat-suggestion ranked" @onclick="() => CommitSuggestion(r.Blurb)">
+                                    <span class="write-beat-rank-score">@($"{r.Score:F0}")</span>
+                                    <span class="write-beat-rank-blurb">@r.Blurb</span>
+                                </button>
+                            }
+                        </div>
+                    }
+                    else if (beatSuggestions.Count > 0)
+                    {
+                        <div class="write-beat-suggestions">
+                            <div class="text-muted small mb-1">
+                                <i class="bi bi-stars me-1" />Pick a next beat — or "Write my own" / "More" / "Rank".
                             </div>
                             @foreach (var s in beatSuggestions)
                             {
@@ -139,7 +154,7 @@
                     }
                     <div class="d-flex gap-1 mt-2 flex-wrap">
                         <button class="btn btn-sm btn-outline-info"
-                                disabled="@suggestingBeats" @onclick="SuggestBeats">
+                                disabled="@(suggestingBeats || ranking)" @onclick="SuggestBeats">
                             @if (suggestingBeats)
                             {
                                 <span class="spinner-border spinner-border-sm me-1" />
@@ -148,9 +163,26 @@
                             else
                             {
                                 <i class="bi bi-stars me-1" />
-                                <span>@(beatSuggestions.Count == 0 ? "Suggest beats" : "More")</span>
+                                <span>@(beatSuggestions.Count == 0 && rankedSuggestions.Count == 0 ? "Suggest beats" : "More")</span>
                             }
                         </button>
+                        @if (beatSuggestions.Count > 1 && rankedSuggestions.Count == 0)
+                        {
+                            <button class="btn btn-sm btn-outline-warning"
+                                    disabled="@(ranking || suggestingBeats)" @onclick="RankBeats"
+                                    title="Score every candidate 0-100 with a 100-persona panel (25 per provider). Costs ~$0.30+ in API calls.">
+                                @if (ranking)
+                                {
+                                    <span class="spinner-border spinner-border-sm me-1" />
+                                    <span>Ranking 100 personas…</span>
+                                }
+                                else
+                                {
+                                    <i class="bi bi-bar-chart-fill me-1" />
+                                    <span>Rank (100 personas)</span>
+                                }
+                            </button>
+                        }
                         <button class="btn btn-sm btn-outline-secondary" @onclick="AddBeat">
                             <i class="bi bi-pencil me-1" />Write my own
                         </button>
@@ -370,6 +402,13 @@
       font-family:Georgia,serif; line-height:1.4; cursor:pointer; transition:background 0.12s ease;
   }
   .write-beat-suggestion:hover { background:#162028; border-left-color:#9df; }
+  /* Ranked variant — score badge prefixed to the blurb. */
+  .write-beat-suggestion.ranked { display:flex; gap:8px; align-items:flex-start; border-left-color:#ffc107; }
+  .write-beat-suggestion.ranked:hover { border-left-color:#ffe59a; }
+  .write-beat-rank-score { background:#ffc107; color:#000; font-weight:600; font-size:.7rem;
+                            min-width:30px; text-align:center; padding:1px 4px; border-radius:2px;
+                            font-family:monospace; }
+  .write-beat-rank-blurb { flex:1; }
 
   .write-main { display:flex; flex-direction:column; min-height:0; padding:10px; }
   .write-bar { display:flex; gap:8px; align-items:center; margin-bottom:6px; }
@@ -452,6 +491,10 @@
     // and when a candidate is committed; "More" appends additional suggestions.
     private List<string> beatSuggestions = new();
     private bool suggestingBeats;
+    // Ranked suggestions from the 100-persona scoring pass. When non-empty, the UI
+    // renders these (with score badges) in place of the unranked list.
+    private List<BeatRankResult> rankedSuggestions = new();
+    private bool ranking;
     private string findQuery = "";
     private string replaceQuery = "";
     private bool findCaseSensitive;
@@ -568,6 +611,7 @@
                     sideTab = "chapters";
                     beatStatus = "";
                     beatSuggestions.Clear();
+                    rankedSuggestions.Clear();
                     readingMode = false;
                 }
                 LoadFindings();
@@ -740,8 +784,51 @@
         var nextIdx = chapter.Beats.Count == 0 ? 0 : chapter.Beats.Max(b => b.Index) + 1;
         chapter.Beats.Add(new ChapterBeat { Index = nextIdx, Title = "", Synopsis = blurb, Text = "" });
         beatSuggestions.Clear();
+        rankedSuggestions.Clear();
         beatStatus = "Beat committed. Refine the blurb or click Update to expand it into prose.";
         MarkPageDirty();
+    }
+
+    /// <summary>
+    /// Run a 100-persona ranking pass over the current candidate suggestions.
+    /// Each persona scores every candidate 0-100; the result list replaces the
+    /// unranked view sorted strongest-first.
+    /// </summary>
+    private async Task RankBeats()
+    {
+        if (chapter == null || ranking || beatSuggestions.Count == 0) return;
+        ranking = true;
+        beatStatus = "Polling 100 personas (25 each: claude / openai / gemini / deepseek)…";
+        StateHasChanged();
+        try
+        {
+            var doneBeats = chapter.Beats.OrderBy(b => b.Index)
+                                          .Where(b => !string.IsNullOrWhiteSpace(b.Text))
+                                          .ToList();
+            var sceneSoFar = doneBeats.Any()
+                ? string.Join("\n\n", doneBeats.Select(b => b.Text))
+                : (pageMarkdown ?? "");
+
+            var pov = chapter.Beats.LastOrDefault(b => !string.IsNullOrWhiteSpace(b.Text))?.Title ?? "";
+            var ranked = await BeatGen.RankBeatBlurbsAsync(
+                blurbs:       beatSuggestions,
+                sceneSoFar:   sceneSoFar,
+                chapterTitle: pageTitle,
+                povCharacter: pov);
+            rankedSuggestions = ranked;
+            beatStatus = ranked.Count == 0
+                ? "Ranking returned no scores — check API keys and try again."
+                : $"Ranked {ranked.Count} candidate(s). Top score: {ranked[0].Score:F0} (n={ranked[0].VoteCount}).";
+        }
+        catch (Exception ex)
+        {
+            beatStatus = $"Error: {ex.Message}";
+        }
+        finally
+        {
+            ranking = false;
+            StateHasChanged();
+        }
     }
 
     private void RemoveBeat(ChapterBeat b)
