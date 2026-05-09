@@ -31,9 +31,9 @@
             </div>
             <div class="atlas-step">
                 <div class="atlas-step-num">3</div>
-                <strong>Chapters</strong>
-                <code>/books/{id}/chapters</code>
-                <p>Once the outline is approved, generate prose. <em>Surprise Me</em> writes a chapter end-to-end; <em>Guide Me</em> takes a synopsis; <em>Write Full Book</em> autopilots the whole sequence. Each beat-level prompt sees the full book outline as context.</p>
+                <strong>Write</strong>
+                <code>/write/{bookId}</code>
+                <p>Once the outline is approved, write prose chapter-by-chapter. The Beats panel proposes next-beat blurbs (10 expert personas at HIGH tier), ranks them with a 100-persona chaos↔order panel at LOW tier, and expands the chosen blurb into prose with continuity from prior beats. Drift detection (OOC voice + outline-vs-prose) writes to the findings sidebar.</p>
             </div>
             <div class="atlas-step">
                 <div class="atlas-step-num">4</div>
@@ -154,10 +154,15 @@ Series              — multiple books that share continuity
         <table class="table table-dark table-sm">
             <tr><td><code>/</code></td><td>Home tiles — Writing section dominant</td></tr>
             <tr><td><code>/books</code></td><td>Bookshelf</td></tr>
-            <tr><td><code>/books/{id}</code></td><td>Redirects to /books/{id}/chapters</td></tr>
+            <tr><td><code>/books/{id}</code></td><td>Redirects to /write/{id}</td></tr>
             <tr><td><code>/books/{id}/outline</code></td><td>Outline editor (autopilot, sticky TOC, propagation)</td></tr>
-            <tr><td><code>/books/{id}/chapters</code></td><td>Chapter list, generation, review, publish</td></tr>
-            <tr><td><code>/stories/write/{id}</code></td><td>Per-chapter editor with prev/next book nav</td></tr>
+            <tr><td><code>/books/{id}/motifs</code></td><td>Motif management (registered + auto-detect proposals)</td></tr>
+            <tr><td><code>/books/{id}/continuity-extract</code></td><td>Run continuity extraction across every chapter</td></tr>
+            <tr><td><code>/write/{bookId}</code></td><td>Chapter editor — Chapters/Beats/Outline sidebar, findings sidebar, drift checks</td></tr>
+            <tr><td><code>/write/{bookId}/{chapterId}</code></td><td>Editor focused on one chapter</td></tr>
+            <tr><td><code>/publish/{bookId}</code></td><td>EPUB / HTML / Markdown export</td></tr>
+            <tr><td><code>/publish/{bookId}/audio</code></td><td>TTS audiobook export</td></tr>
+            <tr><td><code>/settings/ai</code></td><td>AI panel config (action voter counts + tiers, expert personas)</td></tr>
             <tr><td><code>/series</code></td><td>Series shelf</td></tr>
             <tr><td><code>/atlas</code></td><td>This page</td></tr>
         </table>

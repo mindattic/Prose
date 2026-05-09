@@ -39,8 +39,8 @@
 <div class="d-flex align-items-center gap-2 mb-2" style="height: 32px;">
     @if (book != null)
     {
-        <a href="@($"/books/{book.Id}/chapters")" class="btn btn-sm btn-outline-secondary text-nowrap" style="height: 32px;" title="Back to chapters">
-            <i class="bi bi-list-ol"></i>
+        <a href="@($"/write/{book.Id}")" class="btn btn-sm btn-outline-secondary text-nowrap" style="height: 32px;" title="Back to write">
+            <i class="bi bi-pencil-square"></i>
         </a>
         <button class="btn btn-sm btn-outline-secondary text-nowrap" style="height: 32px;"
                 disabled="@(prevChapterId == null)"
