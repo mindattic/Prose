@@ -227,9 +227,9 @@
                                     <div class="write-ooc-suggestion"><i class="bi bi-arrow-right me-1" />@f.Suggestion</div>
                                     <div class="d-flex gap-1 mt-1">
                                         <button class="btn btn-sm btn-outline-success py-0"
-                                                title="Append the detected trait to the POV character's canon"
-                                                @onclick="() => AddOocToCanon(f)">
-                                            <i class="bi bi-plus-lg me-1" />Add to canon
+                                                title="Pick which canon field receives the detected trait"
+                                                @onclick="() => OpenOocPicker(f)">
+                                            <i class="bi bi-plus-lg me-1" />Add to canon…
                                         </button>
                                     </div>
                                 </div>
@@ -428,6 +428,41 @@
     }
 </div>
 
+@* ── OOC field-picker modal — explicit field choice for "Add to canon" ── *@
+@if (oocPickerFor != null)
+{
+    <div class="modal-backdrop fade show" style="z-index:1050;"></div>
+    <div class="modal fade show d-block" tabindex="-1" style="z-index:1055;" @onclick="CloseOocPicker">
+        <div class="modal-dialog modal-dialog-centered" @onclick:stopPropagation="true">
+            <div class="modal-content bg-dark text-light border-success">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-success"><i class="bi bi-plus-lg me-2"></i>Add to canon</h5>
+                    <button type="button" class="btn-close btn-close-white" @onclick="CloseOocPicker"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted small mb-2">Trait to add to <strong>@(chapter?.Characters?.FirstOrDefault() ?? "?")</strong>:</p>
+                    <div class="bg-black p-2 mb-3 small" style="border-left:3px solid #5be;">
+                        @oocPickerFor.Detected
+                    </div>
+                    <p class="text-muted small mb-2">Pick the canonical field this lands in:</p>
+                    <div class="d-flex flex-column gap-1">
+                        @foreach (var (key, label) in OocFieldChoices)
+                        {
+                            <button class="btn btn-sm btn-outline-info text-start"
+                                    @onclick="() => CommitOocPick(key)">
+                                <strong>@key</strong> <span class="text-muted small">— @label</span>
+                            </button>
+                        }
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button class="btn btn-sm btn-secondary" @onclick="CloseOocPicker">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 <style>
   .write-shell { display:grid; grid-template-columns: 240px 1fr; height: calc(100vh - 56px); min-height:0; }
   .write-shell.with-findings { grid-template-columns: 240px 1fr 300px; }
@@ -584,6 +619,21 @@
     // Drag-to-reorder state for beats. We swap Index values rather than
     // shifting the list so the order is stable and saves immediately.
     private string? draggingBeatId;
+    // OOC field-picker modal state — set when the user clicks "Add to canon…"
+    // on a drift card; cleared on commit or cancel.
+    private OocFinding? oocPickerFor;
+    // Field choices presented in the picker. Key is the structured field path;
+    // value is the display description.
+    private static readonly (string Key, string Label)[] OocFieldChoices =
+    [
+        ("speech_patterns.verbal_tics",        "Recurring verbal habit, tic, or signature phrase"),
+        ("speech_patterns.under_pressure",     "How they speak under threat or provocation"),
+        ("speech_patterns.example_lines",      "An example line to anchor the voice"),
+        ("speech_patterns.avoidances",         "Topics, words, or registers they refuse"),
+        ("speech_patterns.subtext",            "How they say one thing while meaning another"),
+        ("psychology.coping_mechanisms",       "How they manage stress / threat / loss"),
+        ("psychology.blind_spots",             "What they miss about themselves or the world"),
+    ];
     // localStorage-backed resume: at most one redirect attempt per page load
     // so we don't ping-pong if the saved selection was deleted.
     private bool redirectAttempted;
@@ -793,19 +843,24 @@
         catch { }
     }
 
+    private void OpenOocPicker(OocFinding f) => oocPickerFor = f;
+    private void CloseOocPicker() => oocPickerFor = null;
+
     /// <summary>
-    /// Append a detected OOC trait to the POV character's canon. Routes by the
-    /// finding's Field path: speech-related → SpeechPatterns.VerbalTics or
-    /// .UnderPressure; psychology-related → Psychology.CopingMechanisms; else
-    /// the most general bucket (VerbalTics) so the trait is never lost. The
-    /// user can later promote it into the right structured field via the
-    /// entity editor.
+    /// Commit the chosen field for the OOC pick. Routes the trait to the
+    /// structured field the user explicitly picked — no auto-routing
+    /// heuristic, no silent canon corruption. Each field's container has
+    /// different shape (string vs List&lt;string&gt;) so the switch dispatches
+    /// per-field.
     /// </summary>
-    private void AddOocToCanon(OocFinding f)
+    private void CommitOocPick(string fieldKey)
     {
+        var f = oocPickerFor;
+        if (f == null) { CloseOocPicker(); return; }
         if (chapter?.Characters?.FirstOrDefault() is not string povName || string.IsNullOrWhiteSpace(povName))
         {
             Toast.Warning("OOC-CANON-NO-POV", "Chapter has no POV character — can't route the trait to canon.");
+            CloseOocPicker();
             return;
         }
         try
@@ -814,49 +869,74 @@
             if (c == null)
             {
                 Toast.Error("OOC-CANON-NOT-FOUND", $"No character named '{povName}' in canon.");
+                CloseOocPicker();
                 return;
             }
-            var field = (f.Field ?? "").ToLowerInvariant();
             var trait = (f.Detected ?? "").Trim();
             if (string.IsNullOrWhiteSpace(trait))
             {
                 Toast.Warning("OOC-CANON-EMPTY", "Nothing detected to add.");
+                CloseOocPicker();
                 return;
             }
 
-            string landingField;
-            if (field.Contains("under_pressure") || field.Contains("pressure"))
+            switch (fieldKey)
             {
-                c.SpeechPatterns.UnderPressure = string.IsNullOrWhiteSpace(c.SpeechPatterns.UnderPressure)
-                    ? trait
-                    : $"{c.SpeechPatterns.UnderPressure}; {trait}";
-                landingField = "speech_patterns.under_pressure";
-            }
-            else if (field.Contains("psychology") || field.Contains("coping"))
-            {
-                c.Psychology.CopingMechanisms.Add(trait);
-                landingField = "psychology.coping_mechanisms";
-            }
-            else if (field.Contains("blind"))
-            {
-                c.Psychology.BlindSpots.Add(trait);
-                landingField = "psychology.blind_spots";
-            }
-            else
-            {
-                // Default — speech_patterns.verbal_tics is the most general bucket.
-                c.SpeechPatterns.VerbalTics.Add(trait);
-                landingField = "speech_patterns.verbal_tics";
+                case "speech_patterns.verbal_tics":    c.SpeechPatterns.VerbalTics.Add(trait); break;
+                case "speech_patterns.example_lines":  c.SpeechPatterns.ExampleLines.Add(trait); break;
+                case "speech_patterns.avoidances":     c.SpeechPatterns.Avoidances.Add(trait); break;
+                case "speech_patterns.under_pressure":
+                    c.SpeechPatterns.UnderPressure = string.IsNullOrWhiteSpace(c.SpeechPatterns.UnderPressure)
+                        ? trait : $"{c.SpeechPatterns.UnderPressure}; {trait}";
+                    break;
+                case "speech_patterns.subtext":
+                    c.SpeechPatterns.Subtext = string.IsNullOrWhiteSpace(c.SpeechPatterns.Subtext)
+                        ? trait : $"{c.SpeechPatterns.Subtext}; {trait}";
+                    break;
+                case "psychology.coping_mechanisms":   c.Psychology.CopingMechanisms.Add(trait); break;
+                case "psychology.blind_spots":         c.Psychology.BlindSpots.Add(trait); break;
+                default:
+                    Toast.Warning("OOC-CANON-UNKNOWN-FIELD", $"Unknown field '{fieldKey}'.");
+                    CloseOocPicker();
+                    return;
             }
             CharRepo.Save(c);
-            // Remove this card so the user sees the action took.
             oocFindings.Remove(f);
-            Toast.Success("OOC-CANON-OK", $"Added to {povName}'s {landingField}.");
+            Toast.Success("OOC-CANON-OK", $"Added to {povName}'s {fieldKey}.");
         }
         catch (Exception ex)
         {
             Toast.Error("OOC-CANON-FAIL", $"Couldn't add to canon: {ex.Message}");
         }
+        finally
+        {
+            CloseOocPicker();
+        }
+    }
+
+    /// <summary>
+    /// When the user edits the chapter prose, mark this chapter's outstanding
+    /// drift findings as Dismissed — the prose has changed, the LLM's earlier
+    /// drift verdict is now stale. The user can rerun the audit to get a fresh
+    /// read. Triggered from MarkPageDirty so any keystroke counts.
+    /// </summary>
+    private void StaleDriftFindingsForCurrentChapter()
+    {
+        if (chapter == null) return;
+        try
+        {
+            // Drift findings carry the OUTLINE-DRIFT prefix in their summary;
+            // dismissing only those leaves unrelated findings (cliché, voice
+            // checks, etc.) untouched.
+            var drifts = Findings.ListByChapter(chapter.Id)
+                .Where(f => f.Status == FindingStatus.New
+                         && (f.Summary?.StartsWith("OUTLINE-DRIFT", StringComparison.OrdinalIgnoreCase) ?? false))
+                .ToList();
+            foreach (var d in drifts)
+                Findings.SetStatus(d.Id, FindingStatus.Dismissed);
+            if (drifts.Count > 0) LoadFindings();
+        }
+        catch { /* non-fatal; user can rerun the audit */ }
     }
 
     /// <summary>
@@ -981,6 +1061,11 @@
         pageDirty = true;
         lastEditAt = DateTime.UtcNow;
         _ = SyncDirty(true);
+        // Drift findings are stale once the prose changes — dismiss them so
+        // the user isn't second-guessing edits they just made. Cheap (single
+        // SQL UPDATE per finding) and idempotent; LoadFindings refreshes the
+        // sidebar in the same call.
+        StaleDriftFindingsForCurrentChapter();
     }
 
     private async Task SyncDirty(bool dirty)
