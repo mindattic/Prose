@@ -208,6 +208,17 @@
     .story-timeline-canvas .vis-item.vis-selected { box-shadow: 0 0 0 2px #ffe59a; }
     .story-timeline-canvas .vis-custom-time { background-color: #f33 !important; }
     .story-timeline-canvas .vis-custom-time-marker { color: #f55; }
+
+    /* Mobile / small-screen pass — cap fixed-width inputs and let header rows
+       wrap so the controls don't overflow on phones. The vis-timeline canvas
+       handles its own resizing; the surround is what needs the help. */
+    @@media (max-width: 768px) {
+        .story-timeline-canvas { height: 280px; min-height: 240px; }
+        .container-fluid > .d-flex.justify-content-between { flex-wrap: wrap; gap: 8px; }
+        .container-fluid input[type="datetime-local"] { width: 100% !important; max-width: 220px; }
+        .container-fluid input.form-control-sm[placeholder*="character"] { width: 100% !important; max-width: 220px; }
+        .card-body .row.g-2 > .col-md-4 { padding: 4px; }
+    }
 </style>
 
 @code {
