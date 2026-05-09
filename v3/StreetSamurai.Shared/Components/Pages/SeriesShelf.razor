@@ -80,10 +80,16 @@
             <div class="series-books">
                 @foreach (var b in seriesBooks)
                 {
-                    <a class="series-book-pill" href="@($"/books/{b.Id}/chapters")">
-                        <span class="text-light">@b.Title</span>
-                        <span class="badge bg-dark ms-1">@b.ChapterIds.Count</span>
-                    </a>
+                    <span class="series-book-pill-group">
+                        <a class="series-book-pill" href="@($"/books/{b.Id}/chapters")">
+                            <span class="text-light">@b.Title</span>
+                            <span class="badge bg-dark ms-1">@b.ChapterIds.Count</span>
+                        </a>
+                        <button class="btn btn-sm btn-link text-muted py-0 px-1" title="Detach from series"
+                                @onclick="() => Detach(b.Id, s.Id)">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </span>
                 }
                 @if (looseBooksByCount > 0)
                 {
@@ -157,6 +163,7 @@
         border-radius: 2px;
     }
     .series-book-pill:hover { border-color: #c00; }
+    .series-book-pill-group { display: inline-flex; align-items: center; gap: 2px; }
 </style>
 
 @code {
@@ -177,20 +184,47 @@
         looseBooksByCount = books.Count(b => string.IsNullOrEmpty(b.SeriesId));
     }
 
-    private void OpenNew() { newTitle = ""; newPremise = ""; newOpen = true; }
-    private void CloseNew() => newOpen = false;
+    private void OpenNew() { editing = null; newTitle = ""; newPremise = ""; newOpen = true; }
+    private void CloseNew() { newOpen = false; editing = null; }
 
     private void SaveNew()
     {
         if (string.IsNullOrWhiteSpace(newTitle)) return;
-        var s = new Series { Title = newTitle.Trim(), Premise = newPremise.Trim() };
-        SeriesRepo.SaveSeries(s);
+        // Editing an existing series? Mutate it. Otherwise create.
+        // The form is shared; the receiver is determined by `editing`.
+        if (editing != null)
+        {
+            editing.Title = newTitle.Trim();
+            editing.Premise = newPremise.Trim();
+            SeriesRepo.SaveSeries(editing);
+        }
+        else
+        {
+            var s = new Series { Title = newTitle.Trim(), Premise = newPremise.Trim() };
+            SeriesRepo.SaveSeries(s);
+        }
         newOpen = false;
+        editing = null;
         Reload();
     }
 
     private Series? editing;
     private void StartEdit(Series s) { editing = s; newTitle = s.Title; newPremise = s.Premise; newOpen = true; }
+
+    private void Detach(string bookId, string seriesId)
+    {
+        var book = books.FirstOrDefault(b => b.Id == bookId);
+        if (book == null) return;
+        book.SeriesId = null;
+        BookRepo.SaveBook(book);
+        var s = SeriesRepo.LoadSeries(seriesId);
+        if (s != null)
+        {
+            s.BookIds.Remove(bookId);
+            SeriesRepo.SaveSeries(s);
+        }
+        Reload();
+    }
 
     private void Delete(string id)
     {
