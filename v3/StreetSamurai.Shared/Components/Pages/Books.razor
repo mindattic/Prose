@@ -70,6 +70,52 @@
     </div>
 }
 
+@* ── Edit Book Modal ──────────────────────────────── *@
+@if (editBook != null)
+{
+    <div class="modal-backdrop fade show" style="z-index:1050;"></div>
+    <div class="modal fade show d-block" tabindex="-1" style="z-index:1055;" @onclick="CloseEdit">
+        <div class="modal-dialog modal-dialog-centered" @onclick:stopPropagation="true">
+            <div class="modal-content bg-dark text-light border-info">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-info"><i class="bi bi-pencil me-2"></i>Edit Book</h5>
+                    <button type="button" class="btn-close btn-close-white" @onclick="CloseEdit"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label small text-info mb-1">Title <span class="text-danger">*</span></label>
+                        <input class="form-control bg-black text-light border-secondary" @bind="editTitle" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small text-info mb-1">Tagline</label>
+                        <input class="form-control bg-black text-light border-secondary" @bind="editTagline" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small text-info mb-1">Premise</label>
+                        <textarea class="form-control bg-black text-light border-secondary" rows="3"
+                                  @bind="editPremise"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small text-info mb-1">Arc target</label>
+                        <input class="form-control bg-black text-light border-secondary" @bind="editArcTarget" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small text-info mb-1">Protagonist(s) — comma-separated</label>
+                        <input class="form-control bg-black text-light border-secondary" @bind="editProtagonists" />
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button class="btn btn-secondary btn-sm" @onclick="CloseEdit">Cancel</button>
+                    <button class="btn btn-info btn-sm" @onclick="SaveEditBook"
+                            disabled="@string.IsNullOrWhiteSpace(editTitle)">
+                        <i class="bi bi-check-lg"></i> Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 @* â”€â”€ Archive Book Modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ *@
 @if (archiveBook != null)
 {
@@ -134,6 +180,13 @@
                 }
                 @if (Access.IsAdministrator)
                 {
+                    <button type="button"
+                            class="book-card-edit-btn"
+                            title="Edit book metadata"
+                            @onclick="@(() => OpenEdit(book))"
+                            @onclick:stopPropagation="true">
+                        <i class="bi bi-pencil"></i>
+                    </button>
                     <button type="button"
                             class="book-card-archive-btn"
                             title="Archive this book"
@@ -280,6 +333,26 @@
     .book-card:hover .book-card-archive-btn { opacity: 1; }
     .book-card-archive-btn:hover { color: #ffc107; border-color: #ffc107; }
 
+    /* Edit button — sits to the LEFT of the archive button. Same hover-reveal
+       pattern; cyan accent on hover so it's visually distinct from archive. */
+    .book-card-edit-btn {
+        position: absolute;
+        top: 6px;
+        right: 40px;
+        background: rgba(0, 0, 0, 0.55);
+        border: 1px solid #444;
+        color: #ddd;
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        line-height: 1;
+        border-radius: 3px;
+        opacity: 0;
+        transition: opacity 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .book-card:hover .book-card-edit-btn { opacity: 1; }
+    .book-card-edit-btn:hover { color: #5be; border-color: #5be; }
+
     .loose-chapters-strip {
         display: flex;
         gap: 12px;
@@ -315,6 +388,16 @@
     private Book? archiveBook;
     private string archiveConfirmId = "";
     private string archiveError = "";
+
+    // Edit-book modal state. The full Book is captured so save can write back
+    // to the same record; field strings are bound to the inputs and folded
+    // back on save.
+    private Book? editBook;
+    private string editTitle = "";
+    private string editTagline = "";
+    private string editPremise = "";
+    private string editArcTarget = "";
+    private string editProtagonists = "";
 
     protected override void OnInitialized()
     {
@@ -362,6 +445,35 @@
         newBookOpen = false;
         // Land directly on the outline â€” that's where the work begins for a new book.
         Nav.NavigateTo($"/books/{book.Id}/outline");
+    }
+
+    private void OpenEdit(Book book)
+    {
+        if (!Access.IsAdministrator) return;
+        editBook         = book;
+        editTitle        = book.Title;
+        editTagline      = book.Tagline ?? "";
+        editPremise      = book.Premise ?? "";
+        editArcTarget    = book.ArcTarget ?? "";
+        editProtagonists = string.Join(", ", book.Protagonists ?? new List<string>());
+    }
+
+    private void CloseEdit() => editBook = null;
+
+    private void SaveEditBook()
+    {
+        if (!Access.IsAdministrator || editBook == null) return;
+        if (string.IsNullOrWhiteSpace(editTitle)) return;
+        editBook.Title        = editTitle.Trim();
+        editBook.Tagline      = string.IsNullOrWhiteSpace(editTagline) ? null : editTagline.Trim();
+        editBook.Premise      = editPremise.Trim();
+        editBook.ArcTarget    = editArcTarget.Trim();
+        editBook.Protagonists = editProtagonists
+            .Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries)
+            .ToList();
+        BookRepo.SaveBook(editBook);
+        editBook = null;
+        Reload();
     }
 
     private void OpenArchive(Book book)
