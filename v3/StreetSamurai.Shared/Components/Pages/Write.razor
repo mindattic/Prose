@@ -120,9 +120,39 @@
                             </div>
                         </div>
                     }
-                    <button class="btn btn-sm btn-outline-secondary mt-2" @onclick="AddBeat">
-                        <i class="bi bi-plus-lg me-1" />Add beat
-                    </button>
+                    @* Candidate next-beat blurbs from Legion's panel — pick one, write your own, or generate more. *@
+                    @if (beatSuggestions.Count > 0)
+                    {
+                        <div class="write-beat-suggestions">
+                            <div class="text-muted small mb-1">
+                                <i class="bi bi-stars me-1" />Pick a next beat — or "Write my own" / "More".
+                            </div>
+                            @foreach (var s in beatSuggestions)
+                            {
+                                <button class="write-beat-suggestion" @onclick="() => CommitSuggestion(s)">
+                                    @s
+                                </button>
+                            }
+                        </div>
+                    }
+                    <div class="d-flex gap-1 mt-2 flex-wrap">
+                        <button class="btn btn-sm btn-outline-info"
+                                disabled="@suggestingBeats" @onclick="SuggestBeats">
+                            @if (suggestingBeats)
+                            {
+                                <span class="spinner-border spinner-border-sm me-1" />
+                                <span>Suggesting…</span>
+                            }
+                            else
+                            {
+                                <i class="bi bi-stars me-1" />
+                                <span>@(beatSuggestions.Count == 0 ? "Suggest beats" : "More")</span>
+                            }
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="AddBeat">
+                            <i class="bi bi-pencil me-1" />Write my own
+                        </button>
+                    </div>
                     @if (!string.IsNullOrWhiteSpace(beatStatus))
                     {
                         <div class="text-muted small mt-2">@beatStatus</div>
@@ -330,6 +360,14 @@
                       border-radius:3px; padding:4px 6px; font-size:.8rem; resize:vertical;
                       font-family:Georgia,serif; }
   .write-beat-actions { display:flex; gap:4px; align-items:center; margin-top:4px; }
+  /* Legion-suggested next-beat candidates — clickable cards that commit on pick. */
+  .write-beat-suggestions { margin-top:6px; display:flex; flex-direction:column; gap:4px; }
+  .write-beat-suggestion {
+      background:#0e1014; color:#cfd; border:1px solid #2a3a4a; border-left:3px solid #5be;
+      border-radius:3px; padding:6px 8px; font-size:.8rem; text-align:left;
+      font-family:Georgia,serif; line-height:1.4; cursor:pointer; transition:background 0.12s ease;
+  }
+  .write-beat-suggestion:hover { background:#162028; border-left-color:#9df; }
 
   .write-main { display:flex; flex-direction:column; min-height:0; padding:10px; }
   .write-bar { display:flex; gap:8px; align-items:center; margin-bottom:6px; }
@@ -408,6 +446,10 @@
     // Per-beat expand state
     private string? beatExpanding;
     private string beatStatus = "";
+    // Legion-suggested next-beat blurbs awaiting selection. Cleared on chapter change
+    // and when a candidate is committed; "More" appends additional suggestions.
+    private List<string> beatSuggestions = new();
+    private bool suggestingBeats;
     private string findQuery = "";
     private string replaceQuery = "";
     private bool findCaseSensitive;
@@ -523,6 +565,7 @@
                     findStatus = null;
                     sideTab = "chapters";
                     beatStatus = "";
+                    beatSuggestions.Clear();
                     readingMode = false;
                 }
                 LoadFindings();
@@ -639,6 +682,63 @@
         if (chapter == null) return;
         var nextIdx = chapter.Beats.Count == 0 ? 0 : chapter.Beats.Max(b => b.Index) + 1;
         chapter.Beats.Add(new ChapterBeat { Index = nextIdx, Title = "", Synopsis = "", Text = "" });
+        MarkPageDirty();
+    }
+
+    /// <summary>
+    /// Ask Legion's panel for distinct next-beat blurbs. Each call appends to
+    /// the candidate list (so "More" extends rather than replaces). Scene-so-far
+    /// is built from prior beats' Text where possible, otherwise the chapter
+    /// markdown — same continuity source the expand step uses.
+    /// </summary>
+    private async Task SuggestBeats()
+    {
+        if (chapter == null || suggestingBeats) return;
+        suggestingBeats = true;
+        beatStatus = "Polling Legion's panel for diverse next beats…";
+        StateHasChanged();
+        try
+        {
+            var doneBeats = chapter.Beats.OrderBy(b => b.Index)
+                                          .Where(b => !string.IsNullOrWhiteSpace(b.Text))
+                                          .ToList();
+            var sceneSoFar = doneBeats.Any()
+                ? string.Join("\n\n", doneBeats.Select(b => b.Text))
+                : (pageMarkdown ?? "");
+
+            var pov = chapter.Beats.LastOrDefault(b => !string.IsNullOrWhiteSpace(b.Text))?.Title ?? "";
+            var fresh = await BeatGen.SuggestNextBeatsAsync(
+                sceneSoFar:    sceneSoFar,
+                chapterTitle:  pageTitle,
+                povCharacter:  pov,
+                count:         5);
+            // Dedupe against what's already on the list so "More" never repeats.
+            foreach (var s in fresh)
+                if (!beatSuggestions.Any(x => string.Equals(x, s, StringComparison.OrdinalIgnoreCase)))
+                    beatSuggestions.Add(s);
+            beatStatus = beatSuggestions.Count == 0
+                ? "Legion returned no suggestions — check API keys and try again."
+                : $"{beatSuggestions.Count} candidate beat(s). Click one to commit, or write your own.";
+        }
+        catch (Exception ex)
+        {
+            beatStatus = $"Error: {ex.Message}";
+        }
+        finally
+        {
+            suggestingBeats = false;
+            StateHasChanged();
+        }
+    }
+
+    /// <summary>Commit a Legion-proposed blurb as a new beat at the end of the list.</summary>
+    private void CommitSuggestion(string blurb)
+    {
+        if (chapter == null) return;
+        var nextIdx = chapter.Beats.Count == 0 ? 0 : chapter.Beats.Max(b => b.Index) + 1;
+        chapter.Beats.Add(new ChapterBeat { Index = nextIdx, Title = "", Synopsis = blurb, Text = "" });
+        beatSuggestions.Clear();
+        beatStatus = "Beat committed. Refine the blurb or click Update to expand it into prose.";
         MarkPageDirty();
     }
 
