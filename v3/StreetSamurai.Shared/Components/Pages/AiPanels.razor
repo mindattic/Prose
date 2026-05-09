@@ -1,0 +1,233 @@
+@page "/settings/ai"
+@attribute [Authorize(Roles = "Contributor,Administrator")]
+@using StreetSamurai.Core.Models
+@using StreetSamurai.Core.Services
+@using StreetSamurai.Shared.Services
+@inject ActionConfigService ActionCfg
+@inject ExpertPersonaService Personas
+@inject ToastNotifier Toast
+@inject NavigationManager Nav
+
+<div class="container-fluid py-3">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="mb-0 text-danger"><i class="bi bi-cpu me-2"></i>AI Panels</h4>
+        <a href="/settings" class="btn btn-sm btn-outline-secondary">
+            <i class="bi bi-arrow-left me-1"></i>Settings
+        </a>
+    </div>
+
+    <p class="text-muted small">
+        Per-action voter count + model tier. Writing actions are tier-locked HIGH so settings can't
+        accidentally degrade the prose readers actually see; voting / selection actions stay adjustable.
+    </p>
+
+    @if (actions == null)
+    {
+        <div class="text-muted">Loading…</div>
+    }
+    else
+    {
+        <div class="table-responsive mb-4">
+            <table class="table table-dark table-sm table-bordered align-middle">
+                <thead>
+                    <tr>
+                        <th style="width: 24%">Action</th>
+                        <th style="width: 36%">Description</th>
+                        <th style="width: 14%">Voters</th>
+                        <th style="width: 16%">Tier</th>
+                        <th style="width: 10%"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var a in actions)
+                    {
+                        <tr>
+                            <td>
+                                <div class="text-info fw-semibold">@a.Action</div>
+                                <div class="text-muted small">@a.Label</div>
+                            </td>
+                            <td class="small text-muted">
+                                @a.Description
+                                @if (a.LockTier)
+                                {
+                                    <span class="badge bg-warning text-dark ms-1" title="Tier-locked at HIGH or above — settings can't downgrade.">
+                                        <i class="bi bi-lock-fill"></i> locked
+                                    </span>
+                                }
+                            </td>
+                            <td>
+                                <input type="number" min="1" max="500" class="form-control form-control-sm bg-black text-light border-secondary"
+                                       @bind="a.VoterCount" />
+                            </td>
+                            <td>
+                                <select class="form-select form-select-sm bg-black text-light border-secondary"
+                                        @bind="a.Tier" disabled="@a.LockTier">
+                                    <option value="Low">Low (haiku-class)</option>
+                                    <option value="Medium">Medium (sonnet-class)</option>
+                                    <option value="High">High (opus-class)</option>
+                                    <option value="Higher">Higher (long-context / reasoning)</option>
+                                    <option value="Highest">Highest (flagship)</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-info" @onclick="() => SaveAction(a)">
+                                    <i class="bi bi-check-lg" /> Save
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+
+    @* ── Expert Personas ─────────────────────────────────────── *@
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <h5 class="text-info mb-0"><i class="bi bi-people-fill me-2"></i>Expert Personas</h5>
+        <button class="btn btn-sm btn-outline-success" @onclick="AddPersona">
+            <i class="bi bi-plus-lg me-1" />New persona
+        </button>
+    </div>
+    <p class="text-muted small">
+        Reusable expert lenses for the beat-writer panel. The selector picks the top-N pertinent
+        personas per scene, so growing the table improves coverage rather than slowing the call.
+    </p>
+
+    @if (personas == null)
+    {
+        <div class="text-muted">Loading…</div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-dark table-sm table-bordered align-middle">
+                <thead>
+                    <tr>
+                        <th style="width: 18%">Name</th>
+                        <th style="width: 50%">Lens</th>
+                        <th style="width: 22%">Tags</th>
+                        <th style="width: 10%"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var p in personas)
+                    {
+                        <tr>
+                            <td>
+                                <input class="form-control form-control-sm bg-black text-light border-secondary"
+                                       @bind="p.Name" />
+                                @if (p.Seeded)
+                                {
+                                    <div class="text-muted small mt-1"><i class="bi bi-bookmark-star me-1" />seeded</div>
+                                }
+                            </td>
+                            <td>
+                                <textarea class="form-control form-control-sm bg-black text-light border-secondary"
+                                          rows="3" @bind="p.Lens"></textarea>
+                            </td>
+                            <td>
+                                <input class="form-control form-control-sm bg-black text-light border-secondary"
+                                       placeholder="comma, separated, tags"
+                                       value="@string.Join(", ", p.Tags)"
+                                       @onchange="@(e => p.Tags = ParseTags((string?)e.Value))" />
+                            </td>
+                            <td>
+                                <div class="d-flex gap-1">
+                                    <button class="btn btn-sm btn-outline-info" @onclick="() => SavePersona(p)" title="Save">
+                                        <i class="bi bi-check-lg" />
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-danger" @onclick="() => DeletePersona(p)" title="Delete">
+                                        <i class="bi bi-trash" />
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@code {
+    private List<ActionConfig>?  actions;
+    private List<ExpertPersona>? personas;
+
+    protected override void OnInitialized()
+    {
+        Reload();
+    }
+
+    private void Reload()
+    {
+        try
+        {
+            actions  = ActionCfg.ListAll().OrderBy(a => a.Action).ToList();
+            personas = Personas.ListAll().OrderBy(p => p.Name).ToList();
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("AI-PANELS-LOAD", $"Couldn't load AI panel config: {ex.Message}");
+        }
+    }
+
+    private void SaveAction(ActionConfig a)
+    {
+        try
+        {
+            ActionCfg.Save(a);
+            Toast.Success("AI-PANELS-SAVE", $"Saved {a.Action}: {a.VoterCount} voters at {a.Tier} tier.");
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("AI-PANELS-SAVE-FAIL", $"Couldn't save {a.Action}: {ex.Message}");
+        }
+    }
+
+    private void AddPersona()
+    {
+        var p = new ExpertPersona { Name = "New Expert", Lens = "You're an expert in …", Tags = new() };
+        try
+        {
+            Personas.Save(p);
+            Toast.Success("PERSONA-ADD", $"Added {p.Name}.");
+            Reload();
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("PERSONA-ADD-FAIL", $"Couldn't add persona: {ex.Message}");
+        }
+    }
+
+    private void SavePersona(ExpertPersona p)
+    {
+        try
+        {
+            Personas.Save(p);
+            Toast.Success("PERSONA-SAVE", $"Saved {p.Name}.");
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("PERSONA-SAVE-FAIL", $"Couldn't save {p.Name}: {ex.Message}");
+        }
+    }
+
+    private void DeletePersona(ExpertPersona p)
+    {
+        try
+        {
+            Personas.Delete(p.Id);
+            Toast.Info("PERSONA-DELETE", $"Deleted {p.Name}.");
+            Reload();
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("PERSONA-DELETE-FAIL", $"Couldn't delete {p.Name}: {ex.Message}");
+        }
+    }
+
+    private static List<string> ParseTags(string? raw) =>
+        string.IsNullOrWhiteSpace(raw)
+            ? new List<string>()
+            : raw.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+}

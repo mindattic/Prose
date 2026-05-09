@@ -489,6 +489,9 @@
     // Per-beat expand state
     private string? beatExpanding;
     private string beatStatus = "";
+    // localStorage-backed resume: at most one redirect attempt per page load
+    // so we don't ping-pong if the saved selection was deleted.
+    private bool redirectAttempted;
     // Legion-suggested next-beat blurbs awaiting selection. Cleared on chapter change
     // and when a candidate is committed; "More" appends additional suggestions.
     private List<string> beatSuggestions = new();
@@ -576,6 +579,17 @@
     {
         allBooks = Books.ListBooks();
 
+        // If no book/chapter is in the route, hop to the last selection from
+        // localStorage so navigating to /write resumes where the user left off.
+        // Only fires on the bare /write entry; explicit /write/{book}/{chapter}
+        // routes win.
+        if (string.IsNullOrEmpty(BookId) && allBooks.Count > 0 && !redirectAttempted)
+        {
+            redirectAttempted = true;
+            _ = TryResumeLastSelectionAsync();
+            return;
+        }
+
         if (!string.IsNullOrEmpty(BookId))
         {
             book = Books.LoadBook(BookId);
@@ -625,6 +639,8 @@
             lastSavedAt = null; recoveryAvailable = false;
             findings = Array.Empty<Finding>();
         }
+        // Fire-and-forget — JS may be unavailable during prerender.
+        _ = PersistSelectionAsync();
     }
 
     private void LoadFindings()
@@ -632,6 +648,39 @@
         findings = chapter == null
             ? Array.Empty<Finding>()
             : Findings.ListByChapter(chapter.Id);
+    }
+
+    /// <summary>
+    /// Read the last (book, chapter) selection from localStorage and navigate
+    /// there. Falls back to the most-recent book on the bookshelf if no saved
+    /// selection exists, or stays on the picker view if no books are loaded.
+    /// </summary>
+    private async Task TryResumeLastSelectionAsync()
+    {
+        try
+        {
+            var lastBook    = await JS.InvokeAsync<string?>("ssState.get", "write:last-book");
+            var lastChapter = await JS.InvokeAsync<string?>("ssState.get", "write:last-chapter");
+            if (!string.IsNullOrWhiteSpace(lastBook) && allBooks.Any(b => b.Id == lastBook))
+            {
+                var url = string.IsNullOrWhiteSpace(lastChapter)
+                    ? $"/write/{lastBook}"
+                    : $"/write/{lastBook}/{lastChapter}";
+                Nav.NavigateTo(url, replace: true);
+            }
+        }
+        catch { /* JS may be unavailable during prerender — picker view stays */ }
+    }
+
+    /// <summary>Persist the current (book, chapter) selection so /write resumes here next time.</summary>
+    private async Task PersistSelectionAsync()
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("ssState.set", "write:last-book",    book?.Id ?? "");
+            await JS.InvokeVoidAsync("ssState.set", "write:last-chapter", chapter?.Id ?? "");
+        }
+        catch { }
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
