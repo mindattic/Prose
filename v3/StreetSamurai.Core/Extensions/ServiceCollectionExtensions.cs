@@ -193,6 +193,15 @@ public static class ServiceCollectionExtensions
         // per-world JSON store that previously wrote to engine_data/*.json.
         services.AddSingleton<SettingsKvStore>();
 
+        // Reusable expert-archetype voters for beat generation. ListAll() seeds
+        // from ExpertPersonaCatalog on first read; SelectPertinentAsync uses a
+        // small Haiku-class panel to pick top-N pertinent personas per scene.
+        services.AddSingleton<ExpertPersonaService>();
+
+        // Per-action voter-count + model-tier registry, editable from settings.
+        // ChapterBeatWriter (10 high) / ChapterBeatVoter (100 low) etc. live here.
+        services.AddSingleton<ActionConfigService>();
+
         // Global story-time cursor (Settings('story_now') as datetime2(7)).
         services.AddSingleton<WorldClockService>();
 
