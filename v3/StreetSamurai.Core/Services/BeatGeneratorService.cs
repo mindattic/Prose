@@ -440,7 +440,7 @@ public class BeatGeneratorService
     {
         "claude"   => "claude-haiku-4-5-20251001",
         "openai"   => "gpt-4.1-nano",
-        "gemini"   => "gemini-2.0-flash",
+        "gemini"   => "gemini-2.5-flash-lite",
         "deepseek" => "deepseek-chat",
         _          => null,
     };

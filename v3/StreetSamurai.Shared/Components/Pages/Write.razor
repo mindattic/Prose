@@ -16,6 +16,7 @@
 @inject BookOutlineService OutlineSvc
 @inject DatabaseService CanonDb
 @inject DialogueService Dialogue
+@inject CharacterRepository CharRepo
 @inject ToastNotifier Toast
 @inject NavigationManager Nav
 @inject IJSRuntime JS
@@ -209,6 +210,13 @@
                                         <div class="write-ooc-canon">Canon: @f.CanonValue</div>
                                     }
                                     <div class="write-ooc-suggestion"><i class="bi bi-arrow-right me-1" />@f.Suggestion</div>
+                                    <div class="d-flex gap-1 mt-1">
+                                        <button class="btn btn-sm btn-outline-success py-0"
+                                                title="Append the detected trait to the POV character's canon"
+                                                @onclick="() => AddOocToCanon(f)">
+                                            <i class="bi bi-plus-lg me-1" />Add to canon
+                                        </button>
+                                    </div>
                                 </div>
                             }
                             <button class="btn btn-sm btn-link text-muted py-0 mt-1"
@@ -756,6 +764,72 @@
     {
         try { await JS.InvokeVoidAsync("ssState.restoreCursorById", $"beat-blurb-{beatId}", $"write:beat-cursor:{beatId}"); }
         catch { }
+    }
+
+    /// <summary>
+    /// Append a detected OOC trait to the POV character's canon. Routes by the
+    /// finding's Field path: speech-related → SpeechPatterns.VerbalTics or
+    /// .UnderPressure; psychology-related → Psychology.CopingMechanisms; else
+    /// the most general bucket (VerbalTics) so the trait is never lost. The
+    /// user can later promote it into the right structured field via the
+    /// entity editor.
+    /// </summary>
+    private void AddOocToCanon(OocFinding f)
+    {
+        if (chapter?.Characters?.FirstOrDefault() is not string povName || string.IsNullOrWhiteSpace(povName))
+        {
+            Toast.Warning("OOC-CANON-NO-POV", "Chapter has no POV character — can't route the trait to canon.");
+            return;
+        }
+        try
+        {
+            var c = CharRepo.GetAll().FirstOrDefault(x => string.Equals(x.Name, povName, StringComparison.OrdinalIgnoreCase));
+            if (c == null)
+            {
+                Toast.Error("OOC-CANON-NOT-FOUND", $"No character named '{povName}' in canon.");
+                return;
+            }
+            var field = (f.Field ?? "").ToLowerInvariant();
+            var trait = (f.Detected ?? "").Trim();
+            if (string.IsNullOrWhiteSpace(trait))
+            {
+                Toast.Warning("OOC-CANON-EMPTY", "Nothing detected to add.");
+                return;
+            }
+
+            string landingField;
+            if (field.Contains("under_pressure") || field.Contains("pressure"))
+            {
+                c.SpeechPatterns.UnderPressure = string.IsNullOrWhiteSpace(c.SpeechPatterns.UnderPressure)
+                    ? trait
+                    : $"{c.SpeechPatterns.UnderPressure}; {trait}";
+                landingField = "speech_patterns.under_pressure";
+            }
+            else if (field.Contains("psychology") || field.Contains("coping"))
+            {
+                c.Psychology.CopingMechanisms.Add(trait);
+                landingField = "psychology.coping_mechanisms";
+            }
+            else if (field.Contains("blind"))
+            {
+                c.Psychology.BlindSpots.Add(trait);
+                landingField = "psychology.blind_spots";
+            }
+            else
+            {
+                // Default — speech_patterns.verbal_tics is the most general bucket.
+                c.SpeechPatterns.VerbalTics.Add(trait);
+                landingField = "speech_patterns.verbal_tics";
+            }
+            CharRepo.Save(c);
+            // Remove this card so the user sees the action took.
+            oocFindings.Remove(f);
+            Toast.Success("OOC-CANON-OK", $"Added to {povName}'s {landingField}.");
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("OOC-CANON-FAIL", $"Couldn't add to canon: {ex.Message}");
+        }
     }
 
     /// <summary>
