@@ -58,9 +58,17 @@ public class BookOutline
 }
 
 /// <summary>
-/// One chapter's slice of the book outline. Distinct from the chapter's
-/// <see cref="Chapter.Synopsis"/> — that's freeform; this is structured for
-/// generation use (key beats, threads opened/closed).
+/// One chapter's slice of the book outline. A single freeform <see cref="Body"/>
+/// blurb captures synopsis / key beats / threads opened-or-closed / state
+/// changes — six structured fields previously fought to stay in sync with each
+/// other and with the prose, and an outline is a sketch, not a fact database.
+///
+/// <para><b>Legacy fields below.</b> The old short/long synopsis, key beats,
+/// opens/closes threads, and state-changes columns are preserved on the model
+/// for backward compatibility — older saved outlines still load without loss.
+/// New writes go to <see cref="Body"/>; readers should prefer
+/// <see cref="EffectiveBody"/> which returns Body when present and otherwise
+/// composes the legacy fields into a single blurb.</para>
 /// </summary>
 public class BookChapterOutline
 {
@@ -74,33 +82,61 @@ public class BookChapterOutline
     [JsonPropertyName("title")]
     public string Title { get; set; } = "";
 
-    /// <summary>One sentence — what this chapter is, in shortest form. Drives TOC and the Plot view.</summary>
+    /// <summary>POV character for this chapter. Kept structured because it's a single value, low cost, high downstream signal.</summary>
+    [JsonPropertyName("pov_character")]
+    public string PovCharacter { get; set; } = "";
+
+    /// <summary>
+    /// Freeform per-chapter outline blurb. Replaces the structured short/long
+    /// synopsis + key_beats + opens_threads + closes_threads + state_changes
+    /// fields. Authors think in prose, the Director can extract structure at
+    /// prompt time, and one source of truth can't drift against itself.
+    /// </summary>
+    [JsonPropertyName("body")]
+    public string Body { get; set; } = "";
+
+    // ── Legacy fields (backward compat) ─────────────────────────────────────
+
     [JsonPropertyName("short_synopsis")]
     public string ShortSynopsis { get; set; } = "";
 
-    /// <summary>One paragraph — the chapter's premise, conflict, and end-state.</summary>
     [JsonPropertyName("long_synopsis")]
     public string LongSynopsis { get; set; } = "";
 
-    /// <summary>Ordered key beats — the must-include plot points. NOT prose-level beats; one rung up.</summary>
     [JsonPropertyName("key_beats")]
     public List<string> KeyBeats { get; set; } = [];
 
-    /// <summary>Threads (open promises) that this chapter introduces.</summary>
     [JsonPropertyName("opens_threads")]
     public List<string> OpensThreads { get; set; } = [];
 
-    /// <summary>Threads from earlier chapters that this chapter resolves.</summary>
     [JsonPropertyName("closes_threads")]
     public List<string> ClosesThreads { get; set; } = [];
 
-    /// <summary>Character state changes by end of chapter — wounds, debts, reveals.</summary>
     [JsonPropertyName("state_changes")]
     public Dictionary<string, string> StateChanges { get; set; } = [];
 
-    /// <summary>POV character for this chapter. Lets the book outline track multi-POV books cleanly.</summary>
-    [JsonPropertyName("pov_character")]
-    public string PovCharacter { get; set; } = "";
+    /// <summary>
+    /// The text every reader should consume. Returns <see cref="Body"/> when
+    /// non-empty; otherwise composes the legacy fields into one blurb so old
+    /// outlines keep producing useful prompt context.
+    /// </summary>
+    [JsonIgnore]
+    public string EffectiveBody
+    {
+        get
+        {
+            if (!string.IsNullOrWhiteSpace(Body)) return Body;
+            var sb = new System.Text.StringBuilder();
+            if (!string.IsNullOrWhiteSpace(LongSynopsis))  sb.AppendLine(LongSynopsis);
+            else if (!string.IsNullOrWhiteSpace(ShortSynopsis)) sb.AppendLine(ShortSynopsis);
+            if (KeyBeats.Count       > 0) sb.AppendLine("Beats: "  + string.Join(" | ", KeyBeats));
+            if (OpensThreads.Count   > 0) sb.AppendLine("Opens: "  + string.Join("; ",  OpensThreads));
+            if (ClosesThreads.Count  > 0) sb.AppendLine("Closes: " + string.Join("; ",  ClosesThreads));
+            if (StateChanges.Count   > 0)
+                sb.AppendLine("State: " + string.Join("; ", StateChanges.Select(kv => $"{kv.Key}: {kv.Value}")));
+            return sb.ToString().TrimEnd();
+        }
+    }
 }
 
 /// <summary>
