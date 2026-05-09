@@ -181,6 +181,18 @@ if (args.Contains("--ask"))
     return;
 }
 
+// CLI mode: idempotent stub-creator for the seeded "Vultures on the Doorstep"
+// future story. Creates the Book + Draft outline only; writes no prose.
+//   ss --seed-vultures
+if (args.Contains("--seed-vultures"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = VulturesSeedCli.Run(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: report Character columns that disagree with their latest
 // matching EntityStateEvents row. Lights up the static-vs-dynamic recipe
 // only for columns that actually drifted.
