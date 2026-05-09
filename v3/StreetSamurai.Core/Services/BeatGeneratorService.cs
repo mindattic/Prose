@@ -1,3 +1,4 @@
+using MindAttic.Legion;
 using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
@@ -12,19 +13,22 @@ public class BeatGeneratorService
     private readonly LoreService canon;
     private readonly EmbeddingService embeddings;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly LLMVotingService? voting;
 
     public BeatGeneratorService(
         ILlmService llm,
         WorldGraphService graph,
         LoreService canon,
         EmbeddingService embeddings,
-        IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        LLMVotingService? voting = null)
     {
         this.llm = llm;
         this.graph = graph;
         this.canon = canon;
         this.embeddings = embeddings;
         this.dbFactory = dbFactory;
+        this.voting = voting;
     }
 
     public async Task<string> GenerateBeatAsync(
@@ -86,6 +90,74 @@ public class BeatGeneratorService
             """;
 
         return await llm.GenerateAsync(system, user, temperature: 0.85, maxTokens: 2048, ct: ct);
+    }
+
+    /// <summary>
+    /// Ask Legion's panel for <paramref name="count"/> diverse next-beat blurbs.
+    /// Each trusted provider answers independently with one short blurb at high
+    /// temperature, so the returned list is genuinely varied (not converged
+    /// consensus). Caller picks one to commit, ignores the rest, or calls again
+    /// to append more candidates.
+    ///
+    /// Each blurb is a 1-2 sentence sketch in the voice of "what should happen
+    /// next" — not finished prose. The expand step (<see cref="GenerateBeatAsync"/>)
+    /// turns the chosen blurb into prose.
+    /// </summary>
+    public async Task<List<string>> SuggestNextBeatsAsync(
+        string sceneSoFar, string chapterTitle, string povCharacter,
+        int count = 5, CancellationToken ct = default)
+    {
+        if (voting is null) return new List<string>();
+
+        var ctxBuilder = new System.Text.StringBuilder();
+        if (!string.IsNullOrWhiteSpace(chapterTitle))
+            ctxBuilder.AppendLine($"CHAPTER: {chapterTitle}");
+        if (!string.IsNullOrWhiteSpace(povCharacter))
+            ctxBuilder.AppendLine($"POV: {povCharacter}");
+        ctxBuilder.AppendLine();
+        if (!string.IsNullOrWhiteSpace(sceneSoFar))
+        {
+            ctxBuilder.AppendLine("SCENE SO FAR:");
+            ctxBuilder.AppendLine(sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar);
+        }
+        else
+        {
+            ctxBuilder.AppendLine("SCENE SO FAR: (empty — this is the first beat of the chapter)");
+        }
+
+        var request = new VoteRequest
+        {
+            Question =
+                "Propose ONE next beat for this chapter — a 1-2 sentence blurb describing what " +
+                "should happen next. Be specific (named places, named characters, a concrete action " +
+                "or revelation), not generic. Lean into texture: implications, mood shifts, the " +
+                "moment something changes. Output ONLY the blurb, no preamble, no quotes, no list.",
+            Context = ctxBuilder.ToString(),
+            MaxTokens = 220,
+            Temperature = 0.95,
+            SynthesizeNarrative = false,
+        };
+
+        VotingResult result;
+        try
+        {
+            // Plurality: we don't want consensus, we want every voter's distinct take.
+            result = await voting.VoteAsync(request, Quorum.Plurality, ct);
+        }
+        catch
+        {
+            return new List<string>();
+        }
+
+        var blurbs = result.IndividualVotes
+            .Where(v => !v.IsError && !string.IsNullOrWhiteSpace(v.Decision))
+            .Select(v => v.Decision.Trim().Trim('"').Trim())
+            .Where(s => s.Length >= 8)
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .Take(count)
+            .ToList();
+
+        return blurbs;
     }
 
     /// <summary>
