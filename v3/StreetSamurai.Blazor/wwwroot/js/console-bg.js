@@ -5017,9 +5017,14 @@ window.consoleBg = (function () {
                 // Each shift also swaps the dot's color so motion + chromatic shift mark the symbol.
                 var d    = dirs[Math.floor(Math.random() * 4)];
                 var dist = s.units === 1 ? 5 : 13; // dit = small, dah = bigger throw
-                var outMs = Math.round(dur * 0.55);
-                var holdMs = Math.round(dur * 0.10);
-                var backMs = dur - outMs - holdMs;
+                // u/d/l/r motion is twice as fast as the symbol duration: the dot
+                // snaps out, holds at the offset for the bulk of the symbol, then
+                // snaps back. Halving out and back (was 0.55 / 0.35) gives the
+                // saved time to the hold, so each shift reads as a crisp gesture
+                // without changing the underlying morse rhythm.
+                var outMs  = Math.round(dur * 0.275);
+                var backMs = Math.round(dur * 0.175);
+                var holdMs = dur - outMs - backMs;
                 // Pick a different color than the current one — guaranteed change every shift
                 var nextColor = pick(MORSE_COLORS.filter(function (c) { return c !== dot.style.getPropertyValue('--mc'); }));
                 dot.style.setProperty('--mc', nextColor);
