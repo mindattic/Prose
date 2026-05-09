@@ -12,6 +12,8 @@
 @inject MarkdownService Md
 @inject FindingsService Findings
 @inject BeatGeneratorService BeatGen
+@inject DatabaseService CanonDb
+@inject DialogueService Dialogue
 @inject NavigationManager Nav
 @inject IJSRuntime JS
 
@@ -770,12 +772,26 @@
                 ? string.Join("\n\n", priorBeats.Select(p => p.Text).Where(t => !string.IsNullOrWhiteSpace(t)))
                 : (pageMarkdown ?? "");
 
+            // Canon wire-up: literary rules so the writer leans on the world's voice
+            // instead of generic cyberpunk; dialogue voice anchors so each named
+            // character speaks in their documented register without the user having
+            // to inline character notes into every blurb.
+            var storyBible = "";
+            try { storyBible = CanonDb.GetLiteraryRulesPrompt() ?? ""; } catch { }
+            var dialogueCtx = "";
+            try
+            {
+                if (chapter.Characters?.Any() == true)
+                    dialogueCtx = Dialogue.BuildDialogueContext(chapter.Characters) ?? "";
+            }
+            catch { }
+
             var ctx = new BeatContext
             {
-                StoryBibleContext   = "",
+                StoryBibleContext   = storyBible,
                 RelationshipContext = "",
                 LocationContext     = "",
-                DialogueContext     = "",
+                DialogueContext     = dialogueCtx,
                 SceneSoFar          = sceneSoFar,
                 BeatGoal            = b.Synopsis,
             };
