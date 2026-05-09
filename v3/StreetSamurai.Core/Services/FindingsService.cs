@@ -212,6 +212,24 @@ public class FindingsService
         return db.Findings.Count(f => f.Status == key);
     }
 
+    /// <summary>
+    /// Findings attached to a specific chapter, severity-sorted then most-recent.
+    /// Driven by the editor sidebar on Write.razor — that view wants the
+    /// in-progress findings for *this* chapter, not the whole project inbox.
+    /// </summary>
+    public IReadOnlyList<Finding> ListByChapter(string chapterId, int limit = 50)
+    {
+        if (string.IsNullOrWhiteSpace(chapterId)) return Array.Empty<Finding>();
+        using var db = dbFactory.CreateDbContext();
+        var rows = db.Findings.AsNoTracking()
+            .Where(f => f.ChapterId == chapterId)
+            .OrderBy(f => f.Severity == "High" ? 0 : f.Severity == "Medium" ? 1 : f.Severity == "Low" ? 2 : 3)
+            .ThenByDescending(f => f.DetectedAt)
+            .Take(limit)
+            .ToList();
+        return rows.Select(ToFinding).ToList();
+    }
+
     public void SetStatus(long id, FindingStatus status)
     {
         using var db = dbFactory.CreateDbContext();
