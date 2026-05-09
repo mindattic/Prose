@@ -14,6 +14,8 @@ public class BeatGeneratorService
     private readonly EmbeddingService embeddings;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly LLMVotingService? voting;
+    private readonly ExpertPersonaService? personas;
+    private readonly ActionConfigService? actionConfig;
 
     public BeatGeneratorService(
         ILlmService llm,
@@ -21,7 +23,9 @@ public class BeatGeneratorService
         LoreService canon,
         EmbeddingService embeddings,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-        LLMVotingService? voting = null)
+        LLMVotingService? voting = null,
+        ExpertPersonaService? personas = null,
+        ActionConfigService? actionConfig = null)
     {
         this.llm = llm;
         this.graph = graph;
@@ -29,6 +33,8 @@ public class BeatGeneratorService
         this.embeddings = embeddings;
         this.dbFactory = dbFactory;
         this.voting = voting;
+        this.personas = personas;
+        this.actionConfig = actionConfig;
     }
 
     public async Task<string> GenerateBeatAsync(
@@ -145,11 +151,19 @@ public class BeatGeneratorService
             SynthesizeNarrative = false,
         };
 
-        // 10 expert-archetype personas spread 25/25/25/25 across the trusted four,
-        // each pinned to that provider's HIGH-tier model (opus-class). Diverse
-        // generation step — quality matters over volume here, so we pay for the
-        // strong models on a small panel.
-        var experts = BuildExpertPanel();
+        // Voter count + tier come from ActionConfigService (default 10 / High,
+        // adjustable in settings — but tier-locked HIGH for writing actions so
+        // settings can't accidentally degrade prose quality). Personas come
+        // from the ExpertPersonaService table; the selector picks the top-N
+        // most pertinent to this scene rather than always using the same 10.
+        var voterCount = actionConfig?.GetVoterCount(ActionConfigService.ActionIds.ChapterBeatWriter) ?? 10;
+        var sceneFootprint = ctxBuilder.ToString();
+        var pickedPersonas = personas != null
+            ? await personas.SelectPertinentAsync(sceneFootprint, voterCount, ct)
+            : new List<Models.ExpertPersona>();
+        var experts = pickedPersonas.Count > 0
+            ? BuildExpertPanelFromTable(pickedPersonas)
+            : BuildExpertPanel();
 
         VotingResult result;
         try
@@ -261,6 +275,34 @@ public class BeatGeneratorService
     };
 
     /// <summary>
+    /// Build voter profiles from a selected subset of the persona table.
+    /// Provider distribution stays round-robin across the trusted four;
+    /// model is pinned HIGH (opus-class) per provider. Used when the
+    /// ExpertPersonaService selected a pertinent subset — preferred over the
+    /// hardcoded BuildExpertPanel because the table can grow over time.
+    /// </summary>
+    private static IReadOnlyList<VoterProfile> BuildExpertPanelFromTable(IReadOnlyList<Models.ExpertPersona> picked)
+    {
+        var providers = new[] { "claude", "openai", "gemini", "deepseek" };
+        var voters = new List<VoterProfile>(picked.Count);
+        for (int i = 0; i < picked.Count; i++)
+        {
+            var p = picked[i];
+            var providerId    = providers[i % providers.Length];
+            var modelOverride = HighTierModelFor(providerId);
+            voters.Add(new VoterProfile
+            {
+                VoterId             = $"expert-{p.Id}-{Guid.NewGuid().ToString("N")[..8]}",
+                Name                = p.Name,
+                ProviderId          = providerId,
+                ModelOverride       = modelOverride,
+                PersonalityMarkdown = p.Lens,
+            });
+        }
+        return voters;
+    }
+
+    /// <summary>
     /// Score and rank candidate beat blurbs with a 100-persona panel
     /// distributed evenly across Legion's four trusted providers
     /// (25 claude / 25 openai / 25 gemini / 25 deepseek).
@@ -311,13 +353,13 @@ public class BeatGeneratorService
             SynthesizeNarrative = false,
         };
 
-        // 100 expert-storyteller personas distributed evenly across the trusted
-        // four providers (25 each — round-robin assignment). Each persona occupies
-        // a distinct position on the chaos↔order narrative-craft spectrum so the
-        // resulting score is the mean reading across that whole aesthetic range,
-        // not a single voice's bias. Low-tier models keep the 100-call burst fast
-        // and cheap (haiku-class everywhere).
-        var panel = BuildStorytellerPanel(count: 100);
+        // Voter count comes from ActionConfigService (default 100, adjustable
+        // from settings since this is a scoring action, not a writing action).
+        // Personas are storytellers distributed along the chaos↔order spectrum;
+        // models pinned to each provider's haiku-class (Low tier) so the burst
+        // returns fast and cheap regardless of how high the user dials voter count.
+        var voterCount = actionConfig?.GetVoterCount(ActionConfigService.ActionIds.ChapterBeatVoter) ?? 100;
+        var panel = BuildStorytellerPanel(count: voterCount);
 
         VotingResult result;
         try
