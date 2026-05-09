@@ -1218,9 +1218,182 @@ The MCP wire protocol uses stdout. The MCP server *cannot* write to stdout for a
 
 ---
 
+## Writing Workflow (2026-05-09 wave)
+
+The chapter editor at `/write/{bookId}/{chapterId}` is the canonical authoring
+surface. The legacy `/books/{id}/chapters` page (`Stories.razor`) was retired
+2026-05-09 and its features migrated to dedicated routes.
+
+### Sequential beat authoring
+
+Each `ChapterBeat` now has three roles:
+
+- **`Title`** — short label
+- **`Synopsis`** — the **blurb**: a 1–2 sentence sketch of what the beat
+  delivers ("Kyle walks into the bar and asks the bartender for a seltzer with
+  a lime")
+- **`Text`** — the prose generated from the blurb
+
+Status accent on the left border of each beat row:
+
+- **Empty** (muted) — no blurb yet
+- **Ready** (amber) — blurb authored, prose not generated
+- **Done** (green) — prose written; the chapter sidebar surfaces a green ✓
+  next to the chapter when every beat is Done
+
+Beats are HTML5-drag-reorderable via the grip handle in the row header. Drop
+re-stamps `Index 0..N-1` so the dense ordering contract holds.
+
+### Suggest → Rank → Update
+
+The Beats panel offers three Legion-driven actions:
+
+1. **Suggest beats** — 10 expert-archetype personas (round-robin across
+   claude / openai / gemini / deepseek, pinned to each provider's HIGH-tier
+   model) each propose ONE next-beat blurb. Result is up to 10 distinct
+   candidates.
+2. **More** — appends additional Suggest results to the candidate list,
+   deduped against existing.
+3. **Rank (100 personas)** — fans out to a 100-voter chaos↔order spectrum
+   panel, each voter pinned to their provider's LOW-tier (haiku-class) model
+   so the burst returns in seconds. Each voter scores every candidate 0–100
+   in a single response; the candidate list re-renders sorted strongest-first
+   with a yellow score badge prefix.
+4. **Update** (per beat) — `BeatGeneratorService.GenerateBeatAsync` expands
+   the blurb into prose with `SceneSoFar` = concatenation of prior beats'
+   `Text`, so beat N picks up continuity from beat N-1 (mood shifts, room
+   reactions, the moment something changed). Generated prose lands in
+   `beat.Text` AND is appended to the chapter markdown so it shows up in the
+   editor immediately.
+
+### Drift detection (two layers)
+
+After every `Update`, two checks fire:
+
+- **OOC voice drift** (per beat) — `BeatGeneratorService.DetectOutOfCharacterAsync`
+  compares the generated prose against the POV character's documented
+  `SpeechPatterns` + `Psychology` and flags traits the prose introduced that
+  aren't in canon. Findings render inline in the beats panel with an
+  **"Add to canon…"** button that opens a field-picker modal letting the user
+  explicitly route the trait to `verbal_tics`, `under_pressure`,
+  `example_lines`, `avoidances`, `subtext`, `coping_mechanisms`, or
+  `blind_spots`. No silent auto-routing — every canon write is user-confirmed.
+- **Outline drift** (per chapter, on demand) — the shield-check button in the
+  Write toolbar fires `BookOutlineService.DetectChapterDriftAsync` which
+  compares the chapter's `BookChapterOutline.EffectiveBody` against the prose.
+  Drifts ("missing", "contradiction", "extra") become Findings prefixed
+  `OUTLINE-DRIFT [kind]:` so they live in the regular findings sidebar /
+  inbox. Drift findings auto-dismiss when the user keystrokes the prose
+  (verdict goes stale).
+
+### Reusable expert-persona table (`/settings/ai`)
+
+`ExpertPersona` rows are persisted via `SettingsKvStore` under
+`expert_personas`. The starter catalog (30+ archetypes covering combat,
+social, voice, genre, emotion, setting-specific, and meta lenses) seeds on
+first read. The page exposes:
+
+- **Inline edit** of name / lens / tags
+- **New persona** — manual add
+- **Combine (2-3 selected)** — fuses selected personas into one saved
+  persona; lens reads "You're a fused expert combining these lenses…" with
+  the union of tags
+- **Generate from scene** — invents a relevant expert persona via a single
+  Haiku-class LLM call given the user's scene description
+
+`ExpertPersonaService.SelectPertinentAsync` runs a small Haiku-class panel
+that reads every persona's name + lens + tags + the scene context and picks
+the top-N pertinent. Falls back to a tag-overlap heuristic when LLM keys
+aren't configured so the selector still produces a usable panel offline.
+
+### Per-action voter count + tier (`/settings/ai`)
+
+`ActionConfig` rows declare how big each LLM-driven action's panel is and at
+which model tier the voters run. Defaults seed on first read; existing
+installations backfill new actions on every read so introducing a new action
+never requires a manual reseed.
+
+| Action | Default voters | Default tier | Lock |
+|---|---|---|---|
+| `ChapterBeatWriter` | 10 | High (opus-class) | 🔒 |
+| `ChapterBeatExpander` | 1 | High | 🔒 |
+| `ChapterBeatVoter` | 100 | Low (haiku-class) | adjustable |
+| `PersonaSelector` | 4 | Low | adjustable |
+
+Writing actions have `LockTier = true` — `ActionConfigService.Save` rejects
+tier downgrades on locked rows so the settings UI cannot accidentally
+degrade prose quality. Voter count remains editable on locked rows. Tiers:
+`Low | Medium | High | Higher | Highest`. The Legion-side
+`LlmProviderCatalog.GetTieredModel(provider, tier)` resolves the right model
+id with graceful fallback when a tier isn't mapped (Highest on a 3-tier
+provider returns High, etc.). StreetSamurai uses an inline
+`LowTierModelFor` / `HighTierModelFor` bridge until the running app's Legion
+DLL lock clears at boot.
+
+### Toasts
+
+All errors and warnings surface as bottom-center toasts via
+`ToastNotifier` + `wwwroot/js/toasts.js`. Errors stay 8s, warnings 5s,
+info/success 3s. Errors also flow through `ILogger` so Serilog captures
+them. Mobile breakpoint stretches toasts to viewport edges.
+
+### State persistence
+
+`wwwroot/js/state.js` exposes `window.ssState` with
+`get / set / setJson / getJson / saveScroll / restoreScroll / saveCursor /
+restoreCursor / captureCursor / saveCursorById / restoreCursorById /
+saveScrollOf / restoreScrollOf / autoSaveScrollOf / installAutoScroll`,
+all wrapped in try/catch so disabled localStorage degrades silently.
+
+Pages that participate:
+
+- **`/write`** — bare entry resumes last (book, chapter); each chapter load
+  re-persists; sidebar list scroll restores per-book; per-beat textarea
+  caret position survives focus/blur per beat id
+- **`/findings`** — filter (All / New / Triaged / Applied / Dismissed) and
+  scrollY persist
+- **`/entity/{id}`** — active tab is saved per-entity so each entity
+  remembers its own last tab; explicit `?tab=` URLs win over the saved
+  default; scrollY persists per entity
+- **`/timeline`** — entity-picker name and scrollY persist; the saved entity
+  is auto-resolved on first render
+
+### Routes added 2026-05-09
+
+| Route | Purpose |
+|---|---|
+| `/write/{bookId}` | Chapter editor with Chapters/Beats/Outline sidebar tabs, findings sidebar, drift checks |
+| `/write/{bookId}/{chapterId}` | Editor focused on one chapter |
+| `/publish/{bookId}` | EPUB / HTML / Markdown export |
+| `/publish/{bookId}/audio` | TTS audiobook export (ElevenLabs; explicit cost warning) |
+| `/books/{bookId}/motifs` | Motif management — registered list, proposals, auto-detect from chapters |
+| `/books/{bookId}/continuity-extract` | Run continuity extraction across every chapter |
+| `/settings/ai` | ActionConfig + ExpertPersona table editor |
+
+`/books/{bookId}/chapters` (the old Stories page) is retired; `/books/{bookId}`
+redirects to `/write/{bookId}`.
+
+### CLI verbs
+
+- `ss --seed-vultures` — idempotent stub-creator for the
+  "Vultures on the Doorstep" book (book record + Draft outline; no prose).
+  Future stories seeded in memory get the same pattern.
+
+### Background services tied to this wave
+
+- `ContinuityLongSweepService` — hourly tick using the incremental sweep via
+  `LastConfirmedAt` watermark; falls back to full re-baseline weekly. Per
+  the playbook in `project_continuity_sync_architecture` memory.
+- `WorldTickService` — `BackgroundService` ready to advance the global
+  story-time clock. Ships **disabled by default** (`Enabled = false`)
+  pending the rule layer; heartbeat-logs every tick so the service's
+  existence is visible.
+
+---
+
 ## Testing
 
-99 unit tests across 10 test classes in `StreetSamurai.UnitTests/`:
+120+ unit tests across 13+ test classes in `StreetSamurai.UnitTests/`:
 
 | Test Class | Coverage |
 |------------|----------|
@@ -1234,8 +1407,26 @@ The MCP wire protocol uses stdout. The MCP server *cannot* write to stdout for a
 | `JsonDirectoryRepositoryTests` | Per-file CRUD, migration, caching |
 | `ExportServiceTests` | TXT, MD, HTML export |
 | `IntegrationTests` | Cross-service integration scenarios |
+| `ActionConfigServiceTests` | Per-action voter count + tier registry; LockTier prevents downgrade of writing actions |
+| `ExpertPersonaServiceTests` | Persona table seeding, CRUD, Combine fuses lenses + tags, tag-heuristic fallback when no LLM |
+| `OutlineGateTests` | OutlineNotApprovedException carries status; EffectiveBody composes legacy fields when Body is empty; Body wins over legacy when both present |
 
 `TestGraphService` and `TestHelpers` provide shared test infrastructure.
+
+### Cypress e2e (`cypress/e2e/`)
+
+- `navigation.cy.js` — headless navigation smoke. Hits every repo bucket,
+  every dictionary, every tool/visualization route (including the
+  2026-05-09 additions: `/settings/ai`, `/timeline`, `/series`, `/books`,
+  `/write`). Asserts 2xx + no error banner.
+- `ai-panels.cy.js` — focused spec for `/settings/ai`. Validates the
+  ActionConfig table renders the canonical rows, writing-action rows show
+  the locked badge, the persona table seeds with starter rows, and Combine /
+  Generate / New buttons are present. Combine starts disabled until ≥2
+  personas are selected.
+
+Run: `npx cypress run` against a local server at the URL from
+`CYPRESS_BASE_URL` (default `http://localhost:5101`).
 
 ---
 
