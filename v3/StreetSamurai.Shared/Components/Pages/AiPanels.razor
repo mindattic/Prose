@@ -84,10 +84,73 @@
     @* ── Expert Personas ─────────────────────────────────────── *@
     <div class="d-flex justify-content-between align-items-center mb-2">
         <h5 class="text-info mb-0"><i class="bi bi-people-fill me-2"></i>Expert Personas</h5>
-        <button class="btn btn-sm btn-outline-success" @onclick="AddPersona">
-            <i class="bi bi-plus-lg me-1" />New persona
-        </button>
+        <div class="d-flex gap-2">
+            <button class="btn btn-sm btn-outline-warning"
+                    disabled="@(selectedPersonaIds.Count < 2 || combining)"
+                    @onclick="CombineSelected"
+                    title="Fuse 2-3 selected personas into a single persona that applies all their lenses at once">
+                @if (combining)
+                {
+                    <span class="spinner-border spinner-border-sm me-1" />
+                    <span>Combining…</span>
+                }
+                else
+                {
+                    <i class="bi bi-link-45deg me-1" />
+                    <span>Combine (@selectedPersonaIds.Count)</span>
+                }
+            </button>
+            <button class="btn btn-sm btn-outline-info"
+                    @onclick="OpenGenerateModal"
+                    title="Generate a new expert persona for a specific scene type">
+                <i class="bi bi-stars me-1" />Generate from scene
+            </button>
+            <button class="btn btn-sm btn-outline-success" @onclick="AddPersona">
+                <i class="bi bi-plus-lg me-1" />New persona
+            </button>
+        </div>
     </div>
+
+    @if (generateOpen)
+    {
+        <div class="modal-backdrop fade show" style="z-index:1050;"></div>
+        <div class="modal fade show d-block" tabindex="-1" style="z-index:1055;" @onclick="CloseGenerateModal">
+            <div class="modal-dialog modal-dialog-centered" @onclick:stopPropagation="true">
+                <div class="modal-content bg-dark text-light border-info">
+                    <div class="modal-header border-secondary">
+                        <h5 class="modal-title text-info"><i class="bi bi-stars me-2"></i>Generate persona from scene</h5>
+                        <button type="button" class="btn-close btn-close-white" @onclick="CloseGenerateModal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-muted small mb-2">
+                            Describe the scene type the existing table doesn't cover well. The LLM
+                            will invent a relevant expert persona, persist it, and you'll see it
+                            in the list. Keep it short — a paragraph is plenty.
+                        </p>
+                        <textarea class="form-control bg-black text-light border-secondary"
+                                  rows="5" placeholder="A cyber-priest performing last rites in a hospital corridor while two corp medics argue over whether to revive the patient…"
+                                  @bind="generateScene"></textarea>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                        <button class="btn btn-sm btn-secondary" @onclick="CloseGenerateModal">Cancel</button>
+                        <button class="btn btn-sm btn-info" @onclick="GenerateFromScene"
+                                disabled="@(string.IsNullOrWhiteSpace(generateScene) || generating)">
+                            @if (generating)
+                            {
+                                <span class="spinner-border spinner-border-sm me-1" />
+                                <span>Generating…</span>
+                            }
+                            else
+                            {
+                                <i class="bi bi-stars me-1" />
+                                <span>Generate</span>
+                            }
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
     <p class="text-muted small">
         Reusable expert lenses for the beat-writer panel. The selector picks the top-N pertinent
         personas per scene, so growing the table improves coverage rather than slowing the call.
@@ -103,8 +166,9 @@
             <table class="table table-dark table-sm table-bordered align-middle">
                 <thead>
                     <tr>
-                        <th style="width: 18%">Name</th>
-                        <th style="width: 50%">Lens</th>
+                        <th style="width: 4%"></th>
+                        <th style="width: 16%">Name</th>
+                        <th style="width: 48%">Lens</th>
                         <th style="width: 22%">Tags</th>
                         <th style="width: 10%"></th>
                     </tr>
@@ -113,6 +177,11 @@
                     @foreach (var p in personas)
                     {
                         <tr>
+                            <td class="text-center">
+                                <input type="checkbox" class="form-check-input"
+                                       checked="@selectedPersonaIds.Contains(p.Id)"
+                                       @onchange="@(e => ToggleSelection(p.Id, (bool)(e.Value ?? false)))" />
+                            </td>
                             <td>
                                 <input class="form-control form-control-sm bg-black text-light border-secondary"
                                        @bind="p.Name" />
@@ -152,6 +221,16 @@
 @code {
     private List<ActionConfig>?  actions;
     private List<ExpertPersona>? personas;
+
+    // Combine: tracks which personas the user has checked. Combine fuses
+    // exactly 2-3 — the button is disabled below 2 and ignores past 3.
+    private HashSet<string> selectedPersonaIds = new();
+    private bool combining;
+
+    // Generate-from-scene modal state.
+    private bool generateOpen;
+    private string generateScene = "";
+    private bool generating;
 
     protected override void OnInitialized()
     {
@@ -230,4 +309,72 @@
         string.IsNullOrWhiteSpace(raw)
             ? new List<string>()
             : raw.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+
+    private void ToggleSelection(string id, bool selected)
+    {
+        if (selected) selectedPersonaIds.Add(id);
+        else selectedPersonaIds.Remove(id);
+    }
+
+    private void CombineSelected()
+    {
+        if (selectedPersonaIds.Count < 2 || combining) return;
+        combining = true;
+        try
+        {
+            var ids = selectedPersonaIds.Take(3).ToList(); // cap at 3 — Combine docs say 2-3
+            var fused = Personas.Combine(ids);
+            Toast.Success("PERSONA-COMBINE", $"Fused {ids.Count} personas into '{fused.Name}'.");
+            selectedPersonaIds.Clear();
+            Reload();
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("PERSONA-COMBINE-FAIL", $"Couldn't combine personas: {ex.Message}");
+        }
+        finally
+        {
+            combining = false;
+        }
+    }
+
+    private void OpenGenerateModal()
+    {
+        generateScene = "";
+        generateOpen = true;
+    }
+
+    private void CloseGenerateModal()
+    {
+        generateOpen = false;
+        generating = false;
+    }
+
+    private async Task GenerateFromScene()
+    {
+        if (string.IsNullOrWhiteSpace(generateScene) || generating) return;
+        generating = true;
+        StateHasChanged();
+        try
+        {
+            var p = await Personas.GenerateForSceneAsync(generateScene);
+            if (p == null)
+            {
+                Toast.Warning("PERSONA-GEN-EMPTY", "LLM returned nothing usable. Try a richer scene description or check API keys.");
+                return;
+            }
+            Toast.Success("PERSONA-GEN-OK", $"Generated persona: {p.Name}");
+            generateOpen = false;
+            Reload();
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("PERSONA-GEN-FAIL", $"Couldn't generate persona: {ex.Message}");
+        }
+        finally
+        {
+            generating = false;
+            StateHasChanged();
+        }
+    }
 }
