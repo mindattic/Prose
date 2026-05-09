@@ -80,6 +80,20 @@
         return { start: el.selectionStart, end: el.selectionEnd };
     }
 
+    // Convenience wrappers that locate an element by id and delegate to the
+    // capture/restore helpers — saves the caller from an eval round-trip.
+    function saveCursorById(elementId, key) {
+        var el = document.getElementById(elementId);
+        if (!el) return;
+        var c = captureCursor(el);
+        if (c) saveCursor(key, c);
+    }
+    function restoreCursorById(elementId, key) {
+        var el = document.getElementById(elementId);
+        if (!el) return;
+        restoreCursor(key, el);
+    }
+
     window.ssState = {
         set: set,
         get: get,
@@ -90,6 +104,8 @@
         saveCursor: saveCursor,
         restoreCursor: restoreCursor,
         captureCursor: captureCursor,
+        saveCursorById: saveCursorById,
+        restoreCursorById: restoreCursorById,
         // Ergonomic helper: save scroll on every page hide so navigations
         // away always have a fresh value to restore.
         installAutoScroll: function (key) {
