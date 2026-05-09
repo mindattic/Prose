@@ -495,6 +495,75 @@ public class BeatGeneratorService
             """;
     }
 
+    /// <summary>
+    /// After expanding a beat, compare the generated prose against the POV
+    /// character's documented psychology / speech_patterns and surface novel
+    /// traits the prose introduced that aren't in canon. Returns an empty list
+    /// when the prose stays in character; otherwise the caller can either
+    /// tighten the prose or write the novel trait back into the character
+    /// profile so future beats see it.
+    ///
+    /// Single low-tier LLM call — cheap to run after every expand.
+    /// </summary>
+    public async Task<List<OocFinding>> DetectOutOfCharacterAsync(
+        string prose, string povCharacter, string canonProfile, CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(prose) || string.IsNullOrWhiteSpace(canonProfile))
+            return new List<OocFinding>();
+
+        var system =
+            "You audit beat prose for out-of-character drift against a documented character " +
+            "profile. You're not a stylistic critic — you only flag traits the prose introduces " +
+            "that aren't supported by canon. Return STRICT JSON: an array of objects with the " +
+            "shape { \"field\": <profile field>, \"detected\": <novel trait the prose shows>, " +
+            "\"canon_value\": <what canon currently says, or empty>, \"suggestion\": <either " +
+            "'tighten prose' or 'add to canon' depending on whether the trait belongs>}. " +
+            "Empty array if the prose stays in character. No prose outside the JSON.";
+
+        var user = $"""
+            CHARACTER: {povCharacter}
+
+            CANON PROFILE:
+            {canonProfile}
+
+            BEAT PROSE:
+            {prose}
+            """;
+
+        string raw;
+        try { raw = await llm.GenerateAsync(system, user, temperature: 0.2, maxTokens: 600, ct: ct); }
+        catch { return new List<OocFinding>(); }
+
+        return ParseOocFindings(raw);
+    }
+
+    private static List<OocFinding> ParseOocFindings(string payload)
+    {
+        var result = new List<OocFinding>();
+        if (string.IsNullOrWhiteSpace(payload)) return result;
+        var start = payload.IndexOf('[');
+        var end   = payload.LastIndexOf(']');
+        if (start < 0 || end <= start) return result;
+        var json = payload[start..(end + 1)];
+        System.Text.Json.JsonDocument doc;
+        try { doc = System.Text.Json.JsonDocument.Parse(json); }
+        catch { return result; }
+        using (doc)
+        {
+            if (doc.RootElement.ValueKind != System.Text.Json.JsonValueKind.Array) return result;
+            foreach (var e in doc.RootElement.EnumerateArray())
+            {
+                if (e.ValueKind != System.Text.Json.JsonValueKind.Object) continue;
+                result.Add(new OocFinding(
+                    Field:      e.TryGetProperty("field", out var f)        ? f.GetString() ?? "" : "",
+                    Detected:   e.TryGetProperty("detected", out var d)     ? d.GetString() ?? "" : "",
+                    CanonValue: e.TryGetProperty("canon_value", out var cv) ? cv.GetString() ?? "" : "",
+                    Suggestion: e.TryGetProperty("suggestion", out var s)   ? s.GetString() ?? "" : ""));
+            }
+        }
+        return result;
+    }
+
     /// <summary>Parse a "[{id, score}, ...]" JSON payload tolerantly — accepts a JSON array anywhere in the response.</summary>
     private static IEnumerable<(int id, double score)> ParseRankPayload(string payload)
     {
@@ -577,6 +646,18 @@ public record BeatContext
     public string SceneSoFar { get; init; } = "";
     public string BeatGoal { get; init; } = "";
 }
+
+/// <summary>
+/// One detected out-of-character drift in generated beat prose. Compared
+/// against the POV character's documented psychology + speech_patterns;
+/// surfaced in the editor so the user can either edit the prose back into
+/// character or update the canon profile to capture the new trait.
+/// </summary>
+public record OocFinding(
+    string Field,           // e.g. "speech_patterns", "psychology.coping_mechanisms"
+    string Detected,        // The novel trait the prose introduced
+    string CanonValue,      // What the canon currently says
+    string Suggestion);     // Either "tighten prose" or "consider adding to canon"
 
 /// <summary>
 /// One ranked candidate beat blurb, scored by the 100-persona panel.
