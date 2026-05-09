@@ -98,9 +98,12 @@
                                 }
                             </div>
                             <textarea class="write-beat-blurb"
+                                      id="@($"beat-blurb-{b.Id}")"
                                       placeholder="Kyle walks into the bar and asks the bartender for a seltzer with a lime."
                                       rows="2"
-                                      @bind="b.Synopsis" @bind:event="oninput" @bind:after="MarkPageDirty"></textarea>
+                                      @bind="b.Synopsis" @bind:event="oninput" @bind:after="MarkPageDirty"
+                                      @onblur="() => SaveBeatCursor(b.Id)"
+                                      @onfocus="() => RestoreBeatCursor(b.Id)"></textarea>
                             <div class="write-beat-actions">
                                 <button class="btn btn-sm btn-outline-info py-0"
                                         title="Expand the blurb into prose and append it to the chapter"
@@ -280,6 +283,13 @@
                             disabled="@(!pageDirty || saving)">
                         <i class="bi bi-floppy"></i> Save
                     </button>
+                    @if (book != null)
+                    {
+                        <a href="@($"/publish/{book.Id}")" class="btn btn-sm btn-outline-secondary"
+                           title="Publish — EPUB / HTML / Markdown / Audio">
+                            <i class="bi bi-cloud-download"></i>
+                        </a>
+                    }
                 </div>
 
                 @if (!readingMode)
@@ -714,6 +724,20 @@
             await JS.InvokeVoidAsync("ssState.set", "write:last-book",    book?.Id ?? "");
             await JS.InvokeVoidAsync("ssState.set", "write:last-chapter", chapter?.Id ?? "");
         }
+        catch { }
+    }
+
+    /// <summary>Capture the textarea's caret position into localStorage when it loses focus.</summary>
+    private async Task SaveBeatCursor(string beatId)
+    {
+        try { await JS.InvokeVoidAsync("ssState.saveCursorById", $"beat-blurb-{beatId}", $"write:beat-cursor:{beatId}"); }
+        catch { }
+    }
+
+    /// <summary>Restore the textarea's caret position from localStorage when it gains focus.</summary>
+    private async Task RestoreBeatCursor(string beatId)
+    {
+        try { await JS.InvokeVoidAsync("ssState.restoreCursorById", $"beat-blurb-{beatId}", $"write:beat-cursor:{beatId}"); }
         catch { }
     }
 
