@@ -119,9 +119,32 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<LabSpecimenRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<FlyoverEntityRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<PsionicRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<MotifRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<FacetRepository>());
 
         // Export discovery — auto-finds all IExportableRepository instances
         services.AddSingleton<ExportDiscoveryService>();
+
+        // Canon JSON export to user's Downloads folder (entity / repo / global)
+        services.AddSingleton<CanonExportService>();
+
+        // Family-relationship API on top of the existing Edge table
+        services.AddSingleton<FamilyTieService>();
+
+        // Genetics inheritance — propagates genetic_ancestry from parents to
+        // children via the family graph with ±5% recombination noise. No-op
+        // until family ties exist.
+        services.AddSingleton<GeneticsInheritanceService>();
+
+        // Family-member generator — proposes parents/siblings/spouse/children
+        // for an existing character, names sourced from the canon name pool.
+        // Staged growth: proposal first, apply on user approval.
+        services.AddSingleton<FamilyGeneratorService>();
+
+        // Image-prompt regen — rewrite ethnicity-keyed visual descriptors in
+        // image_prompt + dalle3_prompt to match a character's current
+        // genetic_ancestry. Cost-aware via inline ancestry hash.
+        services.AddSingleton<ImagePromptRegenService>();
         services.AddSingleton(sp => new StoryBibleRepository(Db(sp)));
         services.AddSingleton(sp => new LiteraryRulesRepository(Db(sp)));
         services.AddSingleton(sp => new CharacterProfileRepository(Db(sp)));
@@ -160,6 +183,12 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ContinuityExtractionService>();
         services.AddSingleton<ContinuityApplyService>();
 
+        // Once-a-day background pass that re-runs GetContradictionGroups so
+        // the long-sweep audit isn't gated on a /continuity page click.
+        // PeriodicTimer-based BackgroundService — no Quartz/Hangfire dep.
+        services.AddSingleton<ContinuityLongSweepService>();
+        services.AddHostedService(sp => sp.GetRequiredService<ContinuityLongSweepService>());
+
         // Universal KV façade over the Settings table — used by every per-book /
         // per-world JSON store that previously wrote to engine_data/*.json.
         services.AddSingleton<SettingsKvStore>();
@@ -191,27 +220,39 @@ public static class ServiceCollectionExtensions
         // hand-crafted. Snapshot artifact lands in engine/data/schema-snapshots/.
         services.AddSingleton<SchemaRebuildService>();
 
+        // Single C# code path for the canonical SQL seeds under Data/Sql/*.sql.
+        // Idempotent via the SeedRuns audit table; CLI: `ss --seed <name>`.
+        services.AddSingleton<SqlSeedService>();
+
         // Reads sys.* into a JSON-friendly graph for the /schema visualization.
         services.AddSingleton<SchemaGraphService>();
 
-        // Local LLM (Ollama + Qwen) — RAG corpus index over engine/data and a
-        // shared HTTP wrapper used by /ask plus any local-first Legion call site.
-        // The index keeps itself current via FileSystemWatcher; on every save
-        // changed files re-embed within ~1s so the LLM corpus always reflects
-        // the live JSON/prose state.
-        services.AddSingleton<OllamaOptions>(_ => new OllamaOptions());
-        services.AddHttpClient<OllamaClient>((sp, c) =>
-        {
-            var opts = sp.GetRequiredService<OllamaOptions>();
-            c.BaseAddress = new Uri(opts.BaseUrl);
-            c.Timeout = TimeSpan.FromMinutes(5);
-        });
-        services.AddSingleton<EmbeddingIndexService>();
-        services.AddSingleton<OllamaProcessManager>();
+        // Repeatable workflow for "relocate every character matching predicate
+        // X to place P + add to faction F". Touches Characters / Records.Json /
+        // CharacterAffiliations / Edges / EntityStateEvents in one transaction.
+        services.AddSingleton<CohortRelocationService>();
+
+        // Generalized prose → relational graph compiler. Takes any description,
+        // extracts entities + typed relationships via LLM, resolves to canon
+        // (or stubs missing), wires Edges + ledger events.
+        services.AddSingleton<FactInterpreterService>();
+
         services.AddSingleton<StoryMethodologyService>();
         services.AddSingleton<CharacterPipelineService>();
         services.AddSingleton<WorldConsistencyService>();
+        services.AddSingleton<DataConsistencyService>();
         services.AddSingleton<DataRepairService>();
+        // JsonArchivalService and JsonPruneService retired 2026-05-08 —
+        // engine/data/*.json no longer exists, so file-vs-DB verification
+        // and pruning have no work to do. Files deleted, CLI verbs removed.
+
+        // Embedding cache + similarity search. One row per Entity in
+        // EntityEmbeddings; exact-NN cosine in C# at this corpus size.
+        services.AddHttpClient(nameof(EmbeddingService));
+        services.AddSingleton<EmbeddingService>();
+        services.AddSingleton<CharacterStateBackfillService>();
+        services.AddSingleton<DriftAuditService>();
+        services.AddSingleton<AskService>();
         services.AddSingleton<SceneContextBuilder>();
         services.AddSingleton<ConsequenceService>();
         services.AddSingleton<AmbientAnomalyService>();
@@ -220,15 +261,15 @@ public static class ServiceCollectionExtensions
         // services.AddSingleton<FtpPublishService>(); // disabled — deploying via Azure CI/CD
         services.AddSingleton<HtmlExportService>();
         services.AddSingleton<StoryService>();
-        services.AddSingleton<IChapterRepository>(sp => new JsonChapterRepository(
+        services.AddSingleton<IChapterRepository>(sp => new ChapterRepository(
             sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
-            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<JsonChapterRepository>>()));
-        services.AddSingleton<IBookRepository>(sp => new JsonBookRepository(
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<ChapterRepository>>()));
+        services.AddSingleton<IBookRepository>(sp => new BookRepository(
             sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
-            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<JsonBookRepository>>()));
-        services.AddSingleton<ISeriesRepository>(sp => new JsonSeriesRepository(
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<BookRepository>>()));
+        services.AddSingleton<ISeriesRepository>(sp => new SeriesRepository(
             sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
-            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<JsonSeriesRepository>>()));
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<SeriesRepository>>()));
         services.AddSingleton<WorldStateService>(sp =>
         {
             var ws = new WorldStateService(
@@ -250,7 +291,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<StoryRepairService>();
         services.AddSingleton<WikiLinkService>();
         services.AddScoped<ConversationalWriterService>();
-        services.AddScoped<JsonImportService>();
         services.AddSingleton<IBookReviewService, BookReviewService>();
         services.AddSingleton<BookExportService>();
         services.AddSingleton<WritingQualityService>();
@@ -303,7 +343,8 @@ public static class ServiceCollectionExtensions
             var discovery = new RelationshipDiscoveryService(
                 sp.GetRequiredService<WorldGraphService>(),
                 sp.GetRequiredService<SemanticIndexService>(),
-                sp.GetRequiredService<InferenceService>());
+                sp.GetRequiredService<InferenceService>(),
+                sp.GetRequiredService<EmbeddingService>());
 
             // Wire repository save events to auto-discover relationships
             sp.GetRequiredService<CharacterRepository>().OnItemSaved += name =>
@@ -502,9 +543,6 @@ public static class ServiceCollectionExtensions
                     ["openrouter"] = s.OpenRouterApiKey,
                     ["fireworks"]  = s.FireworksApiKey,
                     ["cohere"]     = s.CohereApiKey,
-                    // Ollama runs locally and ignores the bearer token; any
-                    // non-empty string passes Legion's "key supplied" check.
-                    ["ollama"]     = "ollama-local",
                 },
                 JudgeProviderId = "claude",
                 // AllowedProviderIds defaults to { claude, openai, deepseek }.
@@ -520,24 +558,14 @@ public static class ServiceCollectionExtensions
             return cfg;
         });
 
-        // Register LocalRagService — fact-bound primitive: retrieves chunks
-        // from the embedding index, prepends them, calls Ollama via Legion.
-        services.AddSingleton<LocalRagService>();
-
-        // Findings store (SQLite) + autonomous quality monitor.
-        // The monitor subscribes to EmbeddingIndexService.FileReindexed on
-        // construction, so eager-instantiating it at startup makes the
-        // subscription live immediately. Every chapter save then triggers a
-        // background contradiction + cliché scan via local Qwen.
+        // Findings store + autonomous quality monitor. The monitor subscribes
+        // to IChapterRepository.OnChapterSaved on construction; eager-
+        // instantiating it at startup makes the subscription live immediately.
+        // Every chapter save triggers a background contradiction + cliché scan
+        // via the cloud LLM, with grounding pulled from SQL via WorldStateService.
         services.AddSingleton<FindingsService>();
         services.AddSingleton<FindingApplyService>();
-        services.AddSingleton<ContinuousQualityService>(sp =>
-            new ContinuousQualityService(
-                sp.GetRequiredService<EmbeddingIndexService>(),
-                sp.GetRequiredService<LocalRagService>(),
-                sp.GetRequiredService<FindingsService>(),
-                sp.GetRequiredService<IChapterRepository>(),
-                sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<ContinuousQualityService>>()));
+        services.AddSingleton<ContinuousQualityService>();
         services.AddSingleton<LlmVotingProvider>(sp =>
         {
             var cfg  = sp.GetRequiredService<VotingConfiguration>();

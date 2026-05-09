@@ -1,9 +1,10 @@
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using StreetSamurai.Core.Interfaces;
+using StreetSamurai.Core.Data;
 
 namespace StreetSamurai.Core.Services;
 
@@ -23,7 +24,7 @@ public class WorldConsistencyService : PipelineServiceBase
     public record DuplicatePair(string File1, string Name1, string File2, string Name2, double Score);
 
     private readonly IServiceScopeFactory scopeFactory;
-    private readonly IPathProvider paths;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<WorldConsistencyService> log;
 
     // Results
@@ -37,14 +38,17 @@ public class WorldConsistencyService : PipelineServiceBase
     public bool RunDedup           { get; set; } = true;
     public double DedupThreshold   { get; set; } = 0.82;
 
-    private static readonly string[] AllDirs =
+    // Canonical EntityType values pulled from SQL during the scan. Replaces
+    // the legacy folder-name list now that engine/data/{folder}/*.json is
+    // archived and the source of truth is Records.Json in SQL.
+    private static readonly string[] AllEntityTypes =
     [
-        "people", "synthetics", "automata", "creatures",
-        "corponations", "subsidiaries", "factions",
-        "places", "weaponry", "ammunition", "cyberware", "equipment",
-        "apparel", "genemods", "pharmaceuticals", "transportation",
-        "materials", "technology", "lab_specimens", "psionics", "contracts",
-        "archetypes", "consumer_goods"
+        "character", "synthetic", "automaton", "creature",
+        "corponation", "subsidiary", "faction",
+        "place", "weapon", "ammunition", "cyberware", "equipment",
+        "apparel", "genemod", "pharmaceutical", "transportation",
+        "material", "technology", "lab_specimen", "psionic", "contract",
+        "archetype", "consumer_good"
     ];
 
     // Hardcoded world rules — each rule has a label and patterns that indicate a violation
@@ -81,12 +85,12 @@ public class WorldConsistencyService : PipelineServiceBase
 
     public WorldConsistencyService(
         IServiceScopeFactory scopeFactory,
-        IPathProvider paths,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ILogger<WorldConsistencyService> log)
     {
         this.scopeFactory = scopeFactory;
-        this.paths = paths;
-        this.log = log;
+        this.dbFactory    = dbFactory;
+        this.log          = log;
     }
 
     protected override void OnCancel()
@@ -122,15 +126,16 @@ public class WorldConsistencyService : PipelineServiceBase
 
     private void RunRuleScanPhase()
     {
-        var files = CollectFiles();
-        for (int i = 0; i < files.Count; i++)
+        var records = CollectRecords();
+        for (int i = 0; i < records.Count; i++)
         {
-            Notify("Phase 1 — Rule Scan", i, files.Count, Path.GetFileNameWithoutExtension(files[i]));
+            var rec = records[i];
+            Notify("Phase 1 — Rule Scan", i, records.Count, rec.EntityId.ToString("N")[..8]);
 
             try
             {
-                var text = File.ReadAllText(files[i]).ToLowerInvariant();
-                var name = ExtractName(files[i]);
+                var text = (rec.Json ?? "").ToLowerInvariant();
+                var name = ExtractName(rec.Json);
 
                 foreach (var (rule, patterns) in WorldRules)
                 {
@@ -144,18 +149,18 @@ public class WorldConsistencyService : PipelineServiceBase
                             var start = Math.Max(0, idx - 40);
                             var len = Math.Min(pattern.Length + 80, text.Length - start);
                             var context = "…" + text.Substring(start, len).Replace('\n', ' ').Trim() + "…";
-                            RuleViolations.Add(new(files[i], name, rule, context));
+                            RuleViolations.Add(new(rec.Identifier, name, rule, context));
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                log.LogWarning("Rule scan failed for {File}: {Msg}", files[i], ex.Message);
+                log.LogWarning("Rule scan failed for {Identifier}: {Msg}", rec.Identifier, ex.Message);
             }
         }
 
-        Notify("Phase 1 — Rule Scan", files.Count, files.Count, $"{RuleViolations.Count} violations");
+        Notify("Phase 1 — Rule Scan", records.Count, records.Count, $"{RuleViolations.Count} violations");
     }
 
     // Meridian PD dissolved in 2208; historical references with explicit past-tense
@@ -202,7 +207,7 @@ public class WorldConsistencyService : PipelineServiceBase
     private async Task RunConflictCheckAsync(ClaudeService claude, CancellationToken ct)
     {
         // Load a representative sample of entities across repos
-        var entities = LoadEntitySummaries(maxPerDir: 30);
+        var entities = LoadEntitySummaries(maxPerType: 30);
         const int windowSize = 10;
 
         for (int i = 0; i < entities.Count; i += windowSize)
@@ -265,7 +270,7 @@ public class WorldConsistencyService : PipelineServiceBase
 
     private void RunDedupPhase()
     {
-        var entities = LoadEntitySummaries(maxPerDir: 200);
+        var entities = LoadEntitySummaries(maxPerType: 200);
         var total = entities.Count;
         Notify("Phase 3 — Deduplication", 0, total);
 
@@ -290,41 +295,50 @@ public class WorldConsistencyService : PipelineServiceBase
     }
 
     // ── Helpers ───────────────────────────────────────────────
+    // Source of truth is SQL (Records.Json blob) — these helpers wrap
+    // (entityId, json text) tuples in the same shape the file-based code
+    // used. The "file" identifier in results is a synthetic
+    // `db:Records[entityId]` string for traceability.
 
-    private List<string> CollectFiles()
+    private record RecordEntry(string Identifier, Guid EntityId, string Json);
+
+    private List<RecordEntry> CollectRecords()
     {
-        var files = new List<string>();
-        foreach (var dir in AllDirs)
-        {
-            var full = Path.Combine(paths.EngineDataDir, dir);
-            if (Directory.Exists(full))
-                files.AddRange(Directory.GetFiles(full, "*.json"));
-        }
-        return files;
+        var types = AllEntityTypes.ToHashSet(StringComparer.OrdinalIgnoreCase);
+        using var db = dbFactory.CreateDbContext();
+        return db.Records.AsNoTracking()
+            .Where(r => r.Entity != null && r.Entity.IsActive && types.Contains(r.Entity.EntityType))
+            .Select(r => new { r.EntityId, r.Json })
+            .ToList()
+            .Select(r => new RecordEntry($"db:Records[{r.EntityId:N}]", r.EntityId, r.Json ?? ""))
+            .ToList();
     }
 
     private record EntitySummary(string File, string Name, string Type, string Zone, string Desc);
 
-    private List<EntitySummary> LoadEntitySummaries(int maxPerDir)
+    private List<EntitySummary> LoadEntitySummaries(int maxPerType)
     {
         var results = new List<EntitySummary>();
-        foreach (var dir in AllDirs)
+        var types = AllEntityTypes;
+        using var db = dbFactory.CreateDbContext();
+        foreach (var type in types)
         {
-            var full = Path.Combine(paths.EngineDataDir, dir);
-            if (!Directory.Exists(full)) continue;
-            int count = 0;
-            foreach (var f in Directory.GetFiles(full, "*.json"))
+            var rows = db.Records.AsNoTracking()
+                .Where(r => r.Entity != null && r.Entity.IsActive && r.Entity.EntityType == type)
+                .Select(r => new { r.EntityId, r.Json })
+                .Take(maxPerType)
+                .ToList();
+            foreach (var r in rows)
             {
-                if (count++ >= maxPerDir) break;
+                if (string.IsNullOrEmpty(r.Json)) continue;
                 try
                 {
-                    var text = File.ReadAllText(f);
-                    using var doc = JsonDocument.Parse(text);
+                    using var doc = JsonDocument.Parse(r.Json);
                     var root = doc.RootElement;
                     var name = GetStr(root, "name");
                     if (string.IsNullOrWhiteSpace(name)) continue;
                     results.Add(new(
-                        f, name,
+                        $"db:Records[{r.EntityId:N}]", name,
                         GetStr(root, "type"),
                         GetStr(root, "zone"),
                         Truncate(GetStr(root, "description"), 120)
@@ -336,15 +350,14 @@ public class WorldConsistencyService : PipelineServiceBase
         return results;
     }
 
-    private static string ExtractName(string path)
+    private static string ExtractName(string json)
     {
         try
         {
-            using var stream = File.OpenRead(path);
-            using var doc = JsonDocument.Parse(stream);
+            using var doc = JsonDocument.Parse(json);
             return doc.RootElement.TryGetProperty("name", out var n) ? n.GetString() ?? "" : "";
         }
-        catch { return Path.GetFileNameWithoutExtension(path); }
+        catch { return ""; }
     }
 
     // Normalised Levenshtein distance as similarity score (0–1)

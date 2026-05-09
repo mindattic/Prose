@@ -44,12 +44,19 @@ public static class CharacterMapper
             .GroupBy(t => t.EntityId)
             .ToDictionary(g => g.Key, g => g.Select(x => x.Name).ToList());
 
+        // Bulk-fetch the latest 'location' aspect for every character in this
+        // batch. After the static/dynamic split (2026-05-08) Location lives in
+        // EntityStateEvents, not on the Character entity. One indexed seek
+        // per (EntityId, AspectKey) pair, batched to one query.
+        var locationByCharId = LatestStateValues(db, ids, "location");
+
         var result = new List<CharacterData>(characters.Count);
         foreach (var c in characters)
         {
             entityById.TryGetValue(c.Id, out var entity);
             tagsByEntity.TryGetValue(c.Id, out var tags);
-            result.Add(Materialize(c, entity, tags));
+            locationByCharId.TryGetValue(c.Id, out var loc);
+            result.Add(Materialize(c, entity, tags, loc ?? ""));
         }
         return result;
     }
@@ -64,7 +71,37 @@ public static class CharacterMapper
             .Where(t => t.EntityId == id)
             .Select(t => t.Tag!.Name)
             .ToList();
-        return Materialize(c, entity, tags);
+        var loc = LatestStateValue(db, id, "location") ?? "";
+        return Materialize(c, entity, tags, loc);
+    }
+
+    /// <summary>
+    /// Pull the most recent <c>NewValue</c> for (entityId, aspectKey) from
+    /// <see cref="StreetSamurai.Core.Data.Entities.EntityStateEvent"/>. Returns
+    /// null when no event exists. Single indexed seek.
+    /// </summary>
+    private static string? LatestStateValue(StreetSamuraiDbContext db, Guid entityId, string aspectKey)
+        => db.EntityStateEvents.AsNoTracking()
+            .Where(e => e.EntityId == entityId && e.AspectKey == aspectKey)
+            .OrderByDescending(e => e.AtStoryTime).ThenByDescending(e => e.Id)
+            .Select(e => e.NewValue)
+            .FirstOrDefault();
+
+    /// <summary>
+    /// Bulk version: latest state value for one aspect across many entities.
+    /// One round-trip; returned dictionary is keyed by EntityId.
+    /// </summary>
+    private static Dictionary<Guid, string> LatestStateValues(
+        StreetSamuraiDbContext db, HashSet<Guid> entityIds, string aspectKey)
+    {
+        if (entityIds.Count == 0) return new();
+        return db.EntityStateEvents.AsNoTracking()
+            .Where(e => entityIds.Contains(e.EntityId) && e.AspectKey == aspectKey)
+            .GroupBy(e => e.EntityId)
+            .Select(g => g.OrderByDescending(e => e.AtStoryTime).ThenByDescending(e => e.Id).First())
+            .ToList()
+            .Where(e => e.NewValue != null)
+            .ToDictionary(e => e.EntityId, e => e.NewValue!);
     }
 
     private static IQueryable<Character> BuildIncludeChain(IQueryable<Character> q)
@@ -101,7 +138,7 @@ public static class CharacterMapper
     /// <see cref="BuildIncludeChain"/>. Entity is used for the universal Name/Slug
     /// — every other field comes from the columnar Character row.
     /// </summary>
-    public static CharacterData Materialize(Character c, Entity? entity, List<string>? tags)
+    public static CharacterData Materialize(Character c, Entity? entity, List<string>? tags, string currentLocation = "")
     {
         var data = new CharacterData
         {
@@ -116,12 +153,14 @@ public static class CharacterMapper
             Role = c.Role,
             Age = c.Age,
             Status = c.LifeStatus,
-            Location = c.Location,
+            Location = currentLocation,
             Description = c.Description,
             NarrativeFunction = c.NarrativeFunction,
             Augmentations = c.Augmentations,
             DailyLife = c.DailyLife,
-            Affiliation = c.Affiliation,
+            // Affiliation sourced from CharacterAffiliations bridge (denorm
+            // column dropped 2026-05-08). Primary affiliation = first by Position.
+            Affiliation = c.Affiliations.OrderBy(a => a.Position).Select(a => a.Alias).FirstOrDefault() ?? "",
             NarrationVoice = c.NarrationVoice,
             MidjourneyPrompt = c.MidjourneyPrompt,
             Dalle3Prompt = c.Dalle3Prompt,
@@ -216,10 +255,11 @@ public static class CharacterMapper
             DistinguishingMarks  = c.PhysicalMarks.OrderBy(x => x.Position).Select(x => x.Mark).ToList(),
         };
 
-        // Territory
+        // Territory — HomeTurf sourced from CharacterHomeTurfs bridge (denorm
+        // columns dropped 2026-05-08). Primary home turf = first by Position.
         data.Territory = new OperatingTerritory
         {
-            HomeTurf = c.TerritoryHomeTurf,
+            HomeTurf = c.HomeTurfs.OrderBy(h => h.Position).Select(h => h.Alias).FirstOrDefault() ?? "",
             Range    = c.TerritoryRange,
             FamiliarZones = c.TerritoryZones.Where(x => x.Bucket == "familiar")
                                             .OrderBy(x => x.Position).Select(x => x.Zone).ToList(),
@@ -228,19 +268,25 @@ public static class CharacterMapper
             ZoneReputation = c.TerritoryReputations.ToDictionary(x => x.Zone, x => x.Reputation),
         };
 
-        // Belongings
+        // Belongings — "current primary X" pointers sourced from the
+        // CharacterBelongingsGear bridge after the 2026-05-08 scalar drop.
+        // Each pointer is a single-row bucket; the bridge's existing
+        // signature_gear / pharmaceuticals buckets keep list semantics.
+        string PrimaryFromBucket(string bucket)
+            => c.BelongingsGear.Where(x => x.Bucket == bucket)
+                               .OrderBy(x => x.Position).Select(x => x.GearName).FirstOrDefault() ?? "";
         data.Belongings = new CharacterBelongings
         {
-            PrimaryWeapon   = c.BelongingsPrimaryWeapon,
-            SecondaryWeapon = c.BelongingsSecondaryWeapon,
-            Armor           = c.BelongingsArmor,
-            Vehicle         = c.BelongingsVehicle,
-            Residence       = c.BelongingsResidence,
-            ClothingStyle   = c.BelongingsClothingStyle,
-            FavoriteDrink   = c.BelongingsFavoriteDrink,
-            FavoriteFood    = c.BelongingsFavoriteFood,
-            Stimulant       = c.BelongingsStimulant,
-            CommDevice      = c.BelongingsCommDevice,
+            PrimaryWeapon   = PrimaryFromBucket("primary_weapon"),
+            SecondaryWeapon = PrimaryFromBucket("secondary_weapon"),
+            Armor           = PrimaryFromBucket("armor"),
+            Vehicle         = PrimaryFromBucket("vehicle"),
+            Residence       = PrimaryFromBucket("residence"),
+            ClothingStyle   = PrimaryFromBucket("clothing_style"),
+            FavoriteDrink   = PrimaryFromBucket("favorite_drink"),
+            FavoriteFood    = PrimaryFromBucket("favorite_food"),
+            Stimulant       = PrimaryFromBucket("stimulant"),
+            CommDevice      = PrimaryFromBucket("comm_device"),
             SignatureGear   = c.BelongingsGear.Where(x => x.Bucket == "signature_gear")
                                               .OrderBy(x => x.Position).Select(x => x.GearName).ToList(),
             Pharmaceuticals = c.BelongingsGear.Where(x => x.Bucket == "pharmaceuticals")
@@ -431,8 +477,10 @@ public static class CharacterMapper
         ch.Rating             = src.Rating;
         ch.VoteCount          = src.VoteCount;
         ch.LifeStatus        = string.IsNullOrEmpty(src.Status) ? "alive" : src.Status;
-        ch.Location          = src.Location ?? "";
-        ch.Affiliation       = src.Affiliation ?? "";
+        // Location moved to EntityStateEvents (aspect:location). Save handler is
+        // responsible for emitting a state event when src.Location differs from
+        // the current ledger value — see CharacterRepository.Save.
+        // Affiliation flat column dropped 2026-05-08 — bridge populated by FillBridges.
         ch.Role              = src.Role ?? "";
         ch.Description       = src.Description ?? "";
         ch.NarrativeFunction = src.NarrativeFunction ?? "";
@@ -442,22 +490,14 @@ public static class CharacterMapper
         ch.MidjourneyPrompt  = src.MidjourneyPrompt ?? "";
         ch.Dalle3Prompt      = src.Dalle3Prompt ?? "";
 
-        var b = src.Belongings ?? new();
-        ch.BelongingsPrimaryWeapon   = b.PrimaryWeapon   ?? "";
-        ch.BelongingsSecondaryWeapon = b.SecondaryWeapon ?? "";
-        ch.BelongingsArmor           = b.Armor           ?? "";
-        ch.BelongingsVehicle         = b.Vehicle         ?? "";
-        ch.BelongingsResidence       = b.Residence       ?? "";
-        ch.BelongingsClothingStyle   = b.ClothingStyle   ?? "";
-        ch.BelongingsFavoriteDrink   = b.FavoriteDrink   ?? "";
-        ch.BelongingsFavoriteFood    = b.FavoriteFood    ?? "";
-        ch.BelongingsStimulant       = b.Stimulant       ?? "";
-        ch.BelongingsCommDevice      = b.CommDevice      ?? "";
+        // Belongings* scalar columns dropped 2026-05-08 — the "current primary X"
+        // pointers are now single-row buckets in CharacterBelongingsGear (see
+        // FillBridges). Materialize sources them via PrimaryFromBucket.
 
         var t = src.Territory ?? new();
-        ch.TerritoryHomeTurf = t.HomeTurf ?? "";
+        // TerritoryHomeTurf / HomeTurf flat columns dropped 2026-05-08 —
+        // bridge (CharacterHomeTurfs) is populated by FillBridges.
         ch.TerritoryRange    = string.IsNullOrEmpty(t.Range) ? "local" : t.Range;
-        ch.HomeTurf          = t.HomeTurf ?? "";
 
         var p = src.PhysicalDescription ?? new();
         ch.Heritage              = p.Heritage ?? "";
@@ -554,6 +594,18 @@ public static class CharacterMapper
         var b = src.Belongings ?? new();
         AddGear(db, id, b.SignatureGear,   "signature_gear");
         AddGear(db, id, b.Pharmaceuticals, "pharmaceuticals");
+        // Single-row "primary X" buckets — carry the 10 dropped scalar columns
+        // through the bridge with consistent shape. Empty strings produce no row.
+        AddPrimary(db, id, b.PrimaryWeapon,   "primary_weapon");
+        AddPrimary(db, id, b.SecondaryWeapon, "secondary_weapon");
+        AddPrimary(db, id, b.Armor,           "armor");
+        AddPrimary(db, id, b.Vehicle,         "vehicle");
+        AddPrimary(db, id, b.Residence,       "residence");
+        AddPrimary(db, id, b.ClothingStyle,   "clothing_style");
+        AddPrimary(db, id, b.FavoriteDrink,   "favorite_drink");
+        AddPrimary(db, id, b.FavoriteFood,    "favorite_food");
+        AddPrimary(db, id, b.Stimulant,       "stimulant");
+        AddPrimary(db, id, b.CommDevice,      "comm_device");
         foreach (var kv in b.Other)
             db.CharacterBelongingsExtras.Add(new CharacterBelongingsExtra { CharacterId = id, KeyName = kv.Key, Value = kv.Value ?? "" });
 
@@ -716,6 +768,21 @@ public static class CharacterMapper
         if (items == null) return;
         for (int i = 0; i < items.Count; i++)
             db.CharacterBelongingsGear.Add(new CharacterBelongingsGear { CharacterId = id, Bucket = bucket, Position = i, GearName = items[i] ?? "" });
+    }
+
+    /// <summary>
+    /// Insert one row in <see cref="CharacterBelongingsGear"/> for a "primary X"
+    /// pointer (the bridge replacement for the 2026-05-08-dropped Belongings*
+    /// scalar columns). No row is added when value is empty so the bridge
+    /// stays sparse.
+    /// </summary>
+    private static void AddPrimary(StreetSamuraiDbContext db, Guid id, string? value, string bucket)
+    {
+        if (string.IsNullOrWhiteSpace(value)) return;
+        db.CharacterBelongingsGear.Add(new CharacterBelongingsGear
+        {
+            CharacterId = id, Bucket = bucket, Position = 0, GearName = value,
+        });
     }
     // ─────────────────────────────────────────────────────────────────────
     // Name parsing — runs at write time only (read time is a column read).

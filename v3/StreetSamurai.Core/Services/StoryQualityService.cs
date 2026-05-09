@@ -1,7 +1,10 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MindAttic.Legion;
+using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -36,8 +39,10 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class StoryQualityService
 {
+    private const string PatternsSettingKey = "story_quality.patterns";
     private readonly LLMVotingService llmVoting;
     private readonly IPathProvider paths;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<StoryQualityService> log;
 
     private static readonly List<string> RubricDimensions =
@@ -56,11 +61,26 @@ public class StoryQualityService
 
     public StoryQualityService(
         LLMVotingService llmVoting, IPathProvider paths,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ILogger<StoryQualityService> log)
     {
         this.llmVoting = llmVoting;
         this.paths = paths;
+        this.dbFactory = dbFactory;
         this.log = log;
+    }
+
+    /// <summary>
+    /// Idempotent column-add. Wired into <c>--repair</c>'s schema-bootstrap.
+    /// </summary>
+    public async Task EnsureQualityReportColumnAsync(CancellationToken ct = default)
+    {
+        await using var ctx = await dbFactory.CreateDbContextAsync(ct);
+        const string ddl = """
+            IF COL_LENGTH('dbo.Chapters', 'QualityReportJson') IS NULL
+                ALTER TABLE [dbo].[Chapters] ADD [QualityReportJson] NVARCHAR(MAX) NULL;
+            """;
+        await ctx.Database.ExecuteSqlRawAsync(ddl, ct);
     }
 
     /// <summary>
@@ -189,12 +209,12 @@ public class StoryQualityService
     /// </summary>
     public string GetImprovementDirectives()
     {
-        var path = Path.Combine(paths.ChaptersDir, "quality_patterns.json");
-        if (!File.Exists(path)) return "";
+        var json = LoadPatternsJson();
+        if (string.IsNullOrEmpty(json)) return "";
 
         try
         {
-            var doc = JsonDocument.Parse(File.ReadAllText(path));
+            var doc = JsonDocument.Parse(json);
 
             var directives = new List<string>();
 
@@ -242,20 +262,29 @@ public class StoryQualityService
     /// </summary>
     public List<StoryQualityReport> ListReports()
     {
-        var dir = paths.ChaptersDir;
-        if (!Directory.Exists(dir)) return [];
+        try
+        {
+            using var ctx = dbFactory.CreateDbContext();
+            var jsons = ctx.Chapters.AsNoTracking()
+                .Where(c => c.QualityReportJson != null)
+                .Select(c => c.QualityReportJson!)
+                .ToList();
 
-        return Directory.GetDirectories(dir)
-            .Select(d => Path.Combine(d, "quality_report.json"))
-            .Where(File.Exists)
-            .Select(f =>
-            {
-                try { return JsonSerializer.Deserialize<StoryQualityReport>(File.ReadAllText(f)); }
-                catch { return null; }
-            })
-            .Where(r => r != null)
-            .OrderByDescending(r => r!.AggregateScores.GetValueOrDefault("OVERALL"))
-            .ToList()!;
+            return jsons
+                .Select(j =>
+                {
+                    try { return JsonSerializer.Deserialize<StoryQualityReport>(j); }
+                    catch { return null; }
+                })
+                .Where(r => r != null)
+                .OrderByDescending(r => r!.AggregateScores.GetValueOrDefault("OVERALL"))
+                .ToList()!;
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "ListReports failed");
+            return [];
+        }
     }
 
     // ── Private ──
@@ -317,15 +346,75 @@ public class StoryQualityService
 
     private void Save(string projectId, StoryQualityReport report)
     {
+        if (!Guid.TryParse(projectId, out var chapterId)
+            && !Guid.TryParseExact(projectId, "N", out chapterId))
+        {
+            log.LogWarning("Quality: project id is not a Guid, skipping save: {ProjectId}", projectId);
+            return;
+        }
+
         try
         {
-            var path = StoryFolderHelper.GetFilePath(paths.ChaptersDir, projectId, "quality_report.json");
-            File.WriteAllText(path, JsonSerializer.Serialize(report, JsonDefaults.Indented));
-            log.LogDebug("Quality report saved to {Path}", path);
+            using var ctx = dbFactory.CreateDbContext();
+            var row = ctx.Chapters.FirstOrDefault(c => c.Id == chapterId);
+            if (row == null)
+            {
+                log.LogDebug("Quality: no Chapters row for {ProjectId}; report not persisted", projectId);
+                return;
+            }
+            row.QualityReportJson = JsonSerializer.Serialize(report, JsonDefaults.Indented);
+            row.ModifiedAt = DateTime.UtcNow;
+            ctx.SaveChanges();
+            log.LogDebug("Quality report saved to Chapters.QualityReportJson for {ProjectId}", projectId);
         }
         catch (Exception ex)
         {
             log.LogError(ex, "Failed to save quality report for {ProjectId}", projectId);
+        }
+    }
+
+    /// <summary>
+    /// Read the patterns accumulator JSON from <c>Settings</c> (key
+    /// "<c>story_quality.patterns</c>"). Returns empty string if not yet seeded.
+    /// </summary>
+    private string LoadPatternsJson()
+    {
+        try
+        {
+            using var ctx = dbFactory.CreateDbContext();
+            return ctx.Set<Setting>().AsNoTracking()
+                .Where(s => s.Key == PatternsSettingKey)
+                .Select(s => s.Json)
+                .FirstOrDefault() ?? "";
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "Quality: failed to load patterns from Settings");
+            return "";
+        }
+    }
+
+    /// <summary>Persist the accumulator JSON to <c>Settings</c> via UPSERT.</summary>
+    private void SavePatternsJson(string json)
+    {
+        try
+        {
+            using var ctx = dbFactory.CreateDbContext();
+            var setting = ctx.Set<Setting>().FirstOrDefault(s => s.Key == PatternsSettingKey);
+            if (setting == null)
+            {
+                ctx.Set<Setting>().Add(new Setting { Key = PatternsSettingKey, Json = json, UpdatedAt = DateTime.UtcNow });
+            }
+            else
+            {
+                setting.Json = json;
+                setting.UpdatedAt = DateTime.UtcNow;
+            }
+            ctx.SaveChanges();
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "Quality: failed to save patterns to Settings");
         }
     }
 
@@ -337,13 +426,12 @@ public class StoryQualityService
     /// </summary>
     private void UpdatePatternAccumulator(StoryQualityReport report)
     {
-        var path = Path.Combine(paths.ChaptersDir, "quality_patterns.json");
-
-        // Load existing patterns
+        // Load existing patterns from Settings (was: quality_patterns.json on disk)
         var existing = new QualityPatternAccumulator();
-        if (File.Exists(path))
+        var existingJson = LoadPatternsJson();
+        if (!string.IsNullOrEmpty(existingJson))
         {
-            try { existing = JsonSerializer.Deserialize<QualityPatternAccumulator>(File.ReadAllText(path)) ?? new(); }
+            try { existing = JsonSerializer.Deserialize<QualityPatternAccumulator>(existingJson) ?? new(); }
             catch { existing = new(); }
         }
 
@@ -377,17 +465,9 @@ public class StoryQualityService
         existing.StoriesEvaluated++;
         existing.LastUpdated = DateTime.UtcNow;
 
-        try
-        {
-            Directory.CreateDirectory(paths.ChaptersDir);
-            File.WriteAllText(path, JsonSerializer.Serialize(existing, JsonDefaults.Indented));
-            log.LogDebug("Quality pattern accumulator updated: {Count} patterns, {Stories} stories",
-                existing.FailurePatterns.Count, existing.StoriesEvaluated);
-        }
-        catch (Exception ex)
-        {
-            log.LogWarning(ex, "Failed to update quality pattern accumulator");
-        }
+        SavePatternsJson(JsonSerializer.Serialize(existing, JsonDefaults.Indented));
+        log.LogDebug("Quality pattern accumulator updated: {Count} patterns, {Stories} stories",
+            existing.FailurePatterns.Count, existing.StoriesEvaluated);
     }
 
     private static string BuildOutlineSummary(StoryOutline? outline)

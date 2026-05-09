@@ -8,21 +8,101 @@ namespace StreetSamurai.Core.Services;
 /// Scans structured properties (affiliation, manufacturer, location) for direct
 /// references and text properties (description, story_hooks) for entity name mentions.
 /// This eliminates the need for manual graph rebuilds after edits.
+///
+/// <para>Also offers <see cref="SuggestSemanticEdgesAsync"/>: an embedding-based
+/// pass that surfaces semantically-related entities that are NOT currently
+/// connected by an Edge — candidates the writer can review and accept. This
+/// catches the "two characters are clearly thematically linked but the prose
+/// never name-drops one inside the other's blob" case that the substring-scan
+/// path silently misses.</para>
 /// </summary>
 public class RelationshipDiscoveryService
 {
     private readonly WorldGraphService graph;
     private readonly SemanticIndexService semanticIndex;
     private readonly InferenceService inference;
+    private readonly EmbeddingService embeddings;
 
     public RelationshipDiscoveryService(
         WorldGraphService graph,
         SemanticIndexService semanticIndex,
-        InferenceService inference)
+        InferenceService inference,
+        EmbeddingService embeddings)
     {
         this.graph = graph;
         this.semanticIndex = semanticIndex;
         this.inference = inference;
+        this.embeddings = embeddings;
+    }
+
+    /// <summary>One semantic-edge candidate the writer may want to add to the graph.</summary>
+    public sealed record SemanticEdgeSuggestion(
+        Guid TargetEntityId,
+        string TargetName,
+        string TargetType,
+        double Similarity);
+
+    /// <summary>
+    /// For the entity named <paramref name="entityName"/>, find the top-K
+    /// most semantically similar canon entities that are NOT already
+    /// connected to it via an existing Edge. Returns a sorted list of
+    /// candidates the writer can accept (turn into edges) or dismiss.
+    ///
+    /// <para><b>What this catches.</b> Entities that share thematic / role
+    /// /  voice DNA but happen never to name each other in their dossiers —
+    /// the substring-scan path silently misses every one of these. With
+    /// <c>k=8</c> on a typical character the top hits are usually voice
+    /// peers and faction adjacencies that absolutely belong as edges.</para>
+    ///
+    /// <para><b>Filter.</b> Drops self-matches and any candidate already
+    /// edge-connected (in either direction). The minimum similarity gate
+    /// keeps the noise floor low.</para>
+    /// </summary>
+    public async Task<IReadOnlyList<SemanticEdgeSuggestion>> SuggestSemanticEdgesAsync(
+        string entityName,
+        int k = 8,
+        double minSimilarity = 0.45,
+        CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(entityName)) return Array.Empty<SemanticEdgeSuggestion>();
+
+        var sourceId = WorldGraphService.Slugify(entityName);
+        var sourceNode = graph.GetNode(sourceId);
+        if (sourceNode == null) return Array.Empty<SemanticEdgeSuggestion>();
+
+        // Build the query from the source entity's name + description so the
+        // similarity match keys on identity, not just the bare name token.
+        sourceNode.Properties.TryGetValue("description", out var description);
+        var query = string.IsNullOrWhiteSpace(description)
+            ? entityName
+            : $"{entityName}\n{description}";
+
+        IReadOnlyList<EmbeddingHit> hits;
+        try { hits = await embeddings.FindSimilarAsync(query, k * 2, ct: ct); }
+        catch { return Array.Empty<SemanticEdgeSuggestion>(); }
+
+        // Existing-edges filter — anything we're already connected to in either
+        // direction (regardless of relation type) is dropped from the list.
+        var connectedIds = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var edge in graph.GetEdgeHistory(sourceId))
+        {
+            connectedIds.Add(edge.Source);
+            connectedIds.Add(edge.Target);
+        }
+
+        var suggestions = new List<SemanticEdgeSuggestion>();
+        foreach (var hit in hits)
+        {
+            if (hit.Similarity < minSimilarity) break;     // hits are sorted desc
+            if (string.Equals(hit.EntityName, entityName, StringComparison.OrdinalIgnoreCase)) continue;
+            var candidateNodeId = WorldGraphService.Slugify(hit.EntityName);
+            if (candidateNodeId == sourceId) continue;
+            if (connectedIds.Contains(candidateNodeId)) continue;
+            suggestions.Add(new SemanticEdgeSuggestion(
+                hit.EntityId, hit.EntityName, hit.EntityType, Math.Round(hit.Similarity, 3)));
+            if (suggestions.Count >= k) break;
+        }
+        return suggestions;
     }
 
     /// <summary>

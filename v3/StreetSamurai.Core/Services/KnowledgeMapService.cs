@@ -1,6 +1,8 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -11,31 +13,38 @@ namespace StreetSamurai.Core.Services;
 /// the POV character doesn't have) and enables dramatic irony (reader knows something
 /// the character doesn't).
 ///
-/// "The reader knows Sable has the facility files. Kyle doesn't know this.
-/// When writing Kyle's POV, do not reveal this information. When writing Sable's
-/// behavior, show subtle signs of concealment."
+/// Storage: <c>Chapters.KnowledgeJson</c> on SQL Server (since 2026-05-08;
+/// the legacy <c>engine/data/chapters/&lt;projectId&gt;/knowledge.json</c>
+/// path was retired in the same migration that drained the rest of
+/// <c>engine/data</c>). On first read for a project that still has a legacy
+/// file, the service migrates it into the DB column and deletes the file.
 /// </summary>
 public class KnowledgeMapService
 {
     private readonly IPathProvider paths;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<KnowledgeMapService> log;
 
     // Per-story knowledge maps
-    private readonly Dictionary<string, KnowledgeMap> _maps = new();
+    private readonly Dictionary<string, KnowledgeMap> maps = new();
 
-    public KnowledgeMapService(IPathProvider paths, ILogger<KnowledgeMapService> log)
+    public KnowledgeMapService(
+        IPathProvider paths,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        ILogger<KnowledgeMapService> log)
     {
         this.paths = paths;
+        this.dbFactory = dbFactory;
         this.log = log;
     }
 
     /// <summary>Get or create the knowledge map for a story.</summary>
     public KnowledgeMap GetMap(string projectId)
     {
-        if (!_maps.TryGetValue(projectId, out var map))
+        if (!maps.TryGetValue(projectId, out var map))
         {
-            map = LoadFromDisk(projectId) ?? new KnowledgeMap { ProjectId = projectId };
-            _maps[projectId] = map;
+            map = LoadFromDb(projectId) ?? new KnowledgeMap { ProjectId = projectId };
+            maps[projectId] = map;
         }
         return map;
     }
@@ -56,7 +65,7 @@ public class KnowledgeMapService
             LearnedAtBeat = beatIndex,
             Source = source,
         });
-        SaveToDisk(projectId);
+        SaveToDb(projectId);
     }
 
     /// <summary>Record that the reader learned a fact (may or may not be known to characters).</summary>
@@ -71,7 +80,7 @@ public class KnowledgeMapService
             LearnedAtBeat = beatIndex,
             Source = revealedBy ?? "narration",
         });
-        SaveToDisk(projectId);
+        SaveToDb(projectId);
     }
 
     /// <summary>Record a secret — something that exists but hasn't been revealed to anyone yet.</summary>
@@ -84,7 +93,7 @@ public class KnowledgeMapService
             KnownBy = knownBy,
             Revealed = false,
         });
-        SaveToDisk(projectId);
+        SaveToDb(projectId);
     }
 
     /// <summary>Mark a secret as revealed (to a specific character or to the reader).</summary>
@@ -195,29 +204,102 @@ public class KnowledgeMapService
     /// <summary>Clear knowledge map for a story.</summary>
     public void Clear(string projectId)
     {
-        _maps[projectId] = new KnowledgeMap { ProjectId = projectId };
-        SaveToDisk(projectId);
+        maps[projectId] = new KnowledgeMap { ProjectId = projectId };
+        SaveToDb(projectId);
     }
 
-    private KnowledgeMap? LoadFromDisk(string projectId)
+    /// <summary>
+    /// Idempotent column-add. Mirrors the EnsureXxxSchemaAsync pattern in
+    /// <c>AmmunitionLinkerService</c>. Safe to call on every repair run.
+    /// </summary>
+    public async Task EnsureKnowledgeJsonColumnAsync(CancellationToken ct = default)
     {
-        var path = GetPath(projectId);
-        if (!File.Exists(path)) return null;
-        try { return JsonSerializer.Deserialize<KnowledgeMap>(File.ReadAllText(path)); }
-        catch (Exception ex) { log.LogWarning(ex, "Failed to load knowledge map from {Path}", path); return null; }
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        const string ddl = """
+            IF COL_LENGTH('dbo.Chapters', 'KnowledgeJson') IS NULL
+                ALTER TABLE [dbo].[Chapters] ADD [KnowledgeJson] NVARCHAR(MAX) NULL;
+            """;
+        await db.Database.ExecuteSqlRawAsync(ddl, ct);
     }
 
-    private void SaveToDisk(string projectId)
+    private KnowledgeMap? LoadFromDb(string projectId)
     {
-        var path = GetPath(projectId);
-        var dir = Path.GetDirectoryName(path);
-        if (dir != null) Directory.CreateDirectory(dir);
-        File.WriteAllText(path, JsonSerializer.Serialize(GetMap(projectId),
-            JsonDefaults.Indented));
+        if (!Guid.TryParse(projectId, out var chapterId)
+            && !Guid.TryParseExact(projectId, "N", out chapterId))
+        {
+            log.LogWarning("KnowledgeMap: project id is not a Guid: {ProjectId}", projectId);
+            return null;
+        }
+
+        try
+        {
+            using var db = dbFactory.CreateDbContext();
+            var row = db.Chapters.FirstOrDefault(c => c.Id == chapterId);
+            if (row == null) return TryReadLegacyDiskFile(projectId);
+
+            // Migration on first miss: empty DB column + legacy file present
+            // → import file then delete it.
+            if (string.IsNullOrEmpty(row.KnowledgeJson))
+            {
+                var fromDisk = TryReadLegacyDiskFile(projectId, deleteAfterRead: true);
+                if (fromDisk != null)
+                {
+                    row.KnowledgeJson = JsonSerializer.Serialize(fromDisk, JsonDefaults.Indented);
+                    row.ModifiedAt = DateTime.UtcNow;
+                    db.SaveChanges();
+                    return fromDisk;
+                }
+                return null;
+            }
+            return JsonSerializer.Deserialize<KnowledgeMap>(row.KnowledgeJson);
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "KnowledgeMap: load failed for {ProjectId}", projectId);
+            return null;
+        }
     }
 
-    private string GetPath(string projectId) =>
-        StoryFolderHelper.GetFilePath(paths.ChaptersDir, projectId, "knowledge.json");
+    private void SaveToDb(string projectId)
+    {
+        if (!Guid.TryParse(projectId, out var chapterId)
+            && !Guid.TryParseExact(projectId, "N", out chapterId)) return;
+
+        try
+        {
+            using var db = dbFactory.CreateDbContext();
+            var row = db.Chapters.FirstOrDefault(c => c.Id == chapterId);
+            if (row == null) return;
+            row.KnowledgeJson = JsonSerializer.Serialize(GetMap(projectId), JsonDefaults.Indented);
+            row.ModifiedAt = DateTime.UtcNow;
+            db.SaveChanges();
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "KnowledgeMap: save failed for {ProjectId}", projectId);
+        }
+    }
+
+    private KnowledgeMap? TryReadLegacyDiskFile(string projectId, bool deleteAfterRead = false)
+    {
+        var path = StoryFolderHelper.FindFile(paths.ChaptersDir, projectId, "knowledge.json");
+        if (path == null || !File.Exists(path)) return null;
+        try
+        {
+            var map = JsonSerializer.Deserialize<KnowledgeMap>(File.ReadAllText(path));
+            if (deleteAfterRead && map != null)
+            {
+                try { File.Delete(path); }
+                catch (Exception ex) { log.LogDebug(ex, "KnowledgeMap: legacy file delete failed for {Path}", path); }
+            }
+            return map;
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "KnowledgeMap: legacy disk read failed for {Path}", path);
+            return null;
+        }
+    }
 }
 
 public class KnowledgeMap

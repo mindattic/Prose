@@ -1,24 +1,26 @@
-using System.Text.Json;
-using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Stores user accounts in a single JSON file at {EngineDataDir}/users.json.
-/// Thread-safe for concurrent reads and writes.
+/// Stores user accounts in the SQL <c>Settings</c> table under the key
+/// <c>users.accounts</c> (one row, full account list as JSON). Replaces the
+/// pre-archival <c>{EngineDataDir}/users.json</c> file. Thread-safe for
+/// concurrent reads and writes.
 /// </summary>
 public class UserRepository
 {
-    private readonly string filePath;
+    private const string AccountsKey = "users.accounts";
+
+    private readonly SettingsKvStore kv;
     private readonly Lock writeLock = new();
     // Volatile ensures the double-check in EnsureLoaded sees a fully-constructed reference.
     // Without volatile, a thread could see a non-null but partially-initialized list.
     private volatile List<UserAccount>? cache;
 
-    public UserRepository(IPathProvider paths)
+    public UserRepository(SettingsKvStore kv)
     {
-        filePath = Path.Combine(paths.MutableDataDir, "users.json");
+        this.kv = kv;
     }
 
     public List<UserAccount> GetAll()
@@ -110,21 +112,12 @@ public class UserRepository
         lock (writeLock)
         {
             if (cache != null) return;
-            if (File.Exists(filePath))
-            {
-                var json = File.ReadAllText(filePath);
-                cache = JsonSerializer.Deserialize<List<UserAccount>>(json) ?? [];
-            }
-            else
-            {
-                cache = [];
-            }
+            cache = kv.Get<List<UserAccount>>(AccountsKey) ?? [];
         }
     }
 
     private void Save()
     {
-        var json = JsonSerializer.Serialize(cache, new JsonSerializerOptions { WriteIndented = true });
-        File.WriteAllText(filePath, json);
+        kv.Set(AccountsKey, cache);
     }
 }

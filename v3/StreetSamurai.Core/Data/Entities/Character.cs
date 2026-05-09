@@ -73,11 +73,18 @@ public class Character
 
     /// <summary>alive | dead | missing | etc.</summary>
     public string LifeStatus { get; set; } = "alive";
-    public string Location { get; set; } = "";
+
+    // Location was dropped from this entity 2026-05-08 — current location is
+    // dynamic story-state and lives in EntityStateEvents under aspect:location
+    // (read via WorldStateLedger.StateAtAsync, populated for free into
+    // CharacterData by CharacterMapper). The denormalised column behind this
+    // property has been ALTER TABLE DROP'd. See project_static_vs_dynamic_split.md.
 
     // ── Roles, prose blobs (single-string MAX) ────────────────────────────
     public string Role               { get; set; } = "";
-    public string Affiliation        { get; set; } = "";
+    // Affiliation flat column dropped 2026-05-08 — canonical source is
+    // the CharacterAffiliations bridge (Affiliations navigation below) plus
+    // Edge `affiliated_with`.
     public string Description        { get; set; } = "";
     public string NarrativeFunction  { get; set; } = "";
     public string NarrationVoice     { get; set; } = "";
@@ -86,26 +93,19 @@ public class Character
     public string MidjourneyPrompt   { get; set; } = "";
     public string Dalle3Prompt       { get; set; } = "";
 
-    // ── Belongings (scalar refs flattened — list/dict parts in bridges) ───
-    public string BelongingsPrimaryWeapon   { get; set; } = "";
-    public string BelongingsSecondaryWeapon { get; set; } = "";
-    public string BelongingsArmor           { get; set; } = "";
-    public string BelongingsVehicle         { get; set; } = "";
-    public string BelongingsResidence       { get; set; } = "";
-    public string BelongingsClothingStyle   { get; set; } = "";
-    public string BelongingsFavoriteDrink   { get; set; } = "";
-    public string BelongingsFavoriteFood    { get; set; } = "";
-    public string BelongingsStimulant       { get; set; } = "";
-    public string BelongingsCommDevice      { get; set; } = "";
+    // ── Belongings (scalar columns dropped 2026-05-08) ────────────────────
+    // The "current primary X" pointers are now single-row buckets in
+    // CharacterBelongingsGear — bucket names: primary_weapon, secondary_weapon,
+    // armor, vehicle, residence, clothing_style, favorite_drink, favorite_food,
+    // stimulant, comm_device. List buckets (signature_gear, pharmaceuticals)
+    // unchanged.
 
     // ── Operating territory (scalar parts) ────────────────────────────────
-    /// <summary>Where they know every alley. Indexed for "who works in this zone".</summary>
-    public string TerritoryHomeTurf { get; set; } = "";
+    // TerritoryHomeTurf and HomeTurf flat columns dropped 2026-05-08 —
+    // canonical source is the CharacterHomeTurfs bridge (HomeTurfs navigation
+    // below). The "primary" home turf is HomeTurfs.OrderBy(Position).First().Alias.
     /// <summary>local | regional | continental | global</summary>
     public string TerritoryRange    { get; set; } = "local";
-
-    // Convenience denorm — same value as TerritoryHomeTurf, kept for legacy callers.
-    public string HomeTurf { get; set; } = "";
 
     // ── Physical description (NCIC-style scalars) ─────────────────────────
     public string Heritage              { get; set; } = "";

@@ -1,71 +1,49 @@
+using Microsoft.Extensions.DependencyInjection;
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// CLI surface for the local-LLM Q&amp;A primitive.
+/// CLI surface for <see cref="AskService"/> — cloud RAG over the canon.
 ///
-///   ss --ask "question"                 Answer a question against the live corpus.
-///   ss --ask --reindex                  Walk the data tree and re-embed any changed files.
-///   ss --ask --stats                    Show index size, last-indexed time, Ollama reachability.
+///   ss --ask "Question"                       free-form Q&amp;A
+///   ss --ask "Question" --k 12                more retrieved context
+///   ss --ask "Question" --type character      restrict retrieval to one EntityType
 /// </summary>
 public static class AskCli
 {
-    public static async Task<int> RunAsync(string[] args, IServiceProvider services)
+    public static async Task<int> RunAsync(string[] args, IServiceProvider sp)
     {
-        var idx = Array.FindIndex(args, a => a == "--ask");
-        if (idx < 0) { PrintUsage(); return 1; }
-        var rest = args[(idx + 1)..];
-
-        var index = services.GetRequiredService<EmbeddingIndexService>();
-        var rag   = services.GetRequiredService<LocalRagService>();
-
-        if (rest.Contains("--stats"))
+        var idx = Array.IndexOf(args, "--ask");
+        var question = idx >= 0 && idx + 1 < args.Length ? args[idx + 1] : null;
+        if (string.IsNullOrWhiteSpace(question) || question.StartsWith("--"))
         {
-            var s = index.GetStats();
-            Console.WriteLine($"[ask] files indexed: {s.FileCount}");
-            Console.WriteLine($"[ask] chunks:        {s.ChunkCount}");
-            Console.WriteLine($"[ask] last indexed:  {s.LastIndexed?.ToLocalTime():g}");
-            Console.WriteLine($"[ask] ollama up:     {await index.OllamaReachableAsync()}");
-            return 0;
+            Console.Error.WriteLine("usage: ss --ask \"Your question\" [--k 8] [--type character]");
+            return 1;
         }
 
-        if (rest.Contains("--reindex"))
-        {
-            Console.WriteLine("[ask] reindexing changed files…");
-            var n = await index.ReindexAllAsync();
-            Console.WriteLine($"[ask] re-embedded {n} file(s).");
-            return 0;
-        }
+        int k = 8;
+        var kIdx = Array.IndexOf(args, "--k");
+        if (kIdx >= 0 && kIdx + 1 < args.Length && int.TryParse(args[kIdx + 1], out var parsed)) k = parsed;
 
-        // Question = positional args (joined). Handle quoted phrases too.
-        var question = string.Join(' ', rest).Trim();
-        if (string.IsNullOrWhiteSpace(question)) { PrintUsage(); return 1; }
+        string[]? types = null;
+        var tIdx = Array.IndexOf(args, "--type");
+        if (tIdx >= 0 && tIdx + 1 < args.Length) types = new[] { args[tIdx + 1] };
 
-        if (!await index.OllamaReachableAsync())
-        {
-            Console.Error.WriteLine("[ask] Ollama is not reachable at localhost:11434.");
-            return 2;
-        }
+        var svc = sp.GetRequiredService<AskService>();
+        Console.WriteLine($"[ask] retrieving top-{k}…");
+        var result = await svc.AnswerAsync(question, retrieveK: k, entityTypes: types);
 
-        var hits = await index.SearchAsync(question, k: 8);
-        var answer = await rag.AnswerWithHitsAsync(question, hits);
-
-        Console.WriteLine(answer);
         Console.WriteLine();
-        Console.WriteLine("─── citations ───");
-        foreach (var h in hits)
+        Console.WriteLine($"=== Answer ({result.CorpusChunks} chunks · {result.Duration.TotalSeconds:F1}s) ===");
+        Console.WriteLine(result.Answer);
+        Console.WriteLine();
+        if (result.Citations.Count > 0)
         {
-            Console.WriteLine($"  {h.Score:F3}  {h.FilePath} · chunk {h.ChunkIndex}");
+            Console.WriteLine("=== Citations ===");
+            foreach (var c in result.Citations)
+                Console.WriteLine($"  · {c.EntityName}  ({c.EntityType})  similarity={c.Similarity:F3}");
         }
         return 0;
-    }
-
-    static void PrintUsage()
-    {
-        Console.WriteLine("Usage:");
-        Console.WriteLine("  ss --ask \"question\"        Ask the corpus.");
-        Console.WriteLine("  ss --ask --reindex          Re-embed changed files.");
-        Console.WriteLine("  ss --ask --stats            Show index status.");
     }
 }

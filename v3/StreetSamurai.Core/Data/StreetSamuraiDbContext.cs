@@ -219,6 +219,13 @@ public class StreetSamuraiDbContext : DbContext
     // so canon facts are queryable instead of buried in free-form prose.
     public DbSet<WeaponSpec>             WeaponSpecs             => Set<WeaponSpec>();
 
+    // Cached cloud-LLM embedding per entity. Non-temporal so it's eligible
+    // for SQL Server 2025 vector indexes when the corpus crosses ~50k.
+    public DbSet<EntityEmbedding>        EntityEmbeddings        => Set<EntityEmbedding>();
+
+    // Polymorphic prose embeddings (ScopeKind = 'chapter' | 'beat').
+    public DbSet<ProseEmbedding>         ProseEmbeddings         => Set<ProseEmbedding>();
+
     protected override void OnModelCreating(ModelBuilder b)
     {
         base.OnModelCreating(b);
@@ -342,19 +349,10 @@ public class StreetSamuraiDbContext : DbContext
             // bounded sizes (40/80/120) were silently rejecting >70% of imports.
             // LifeStatus / TerritoryRange / HairLength can be either a short tag
             // ("alive", "long") or a full sentence — leave unbounded.
-            e.Property(x => x.HomeTurf).HasMaxLength(450);
-            e.Property(x => x.TerritoryHomeTurf).HasMaxLength(450);
-            // Belongings scalars — refs to other entities by name, fits in 450.
-            e.Property(x => x.BelongingsPrimaryWeapon).HasMaxLength(450);
-            e.Property(x => x.BelongingsSecondaryWeapon).HasMaxLength(450);
-            e.Property(x => x.BelongingsArmor).HasMaxLength(450);
-            e.Property(x => x.BelongingsVehicle).HasMaxLength(450);
-            e.Property(x => x.BelongingsResidence).HasMaxLength(450);
-            e.Property(x => x.BelongingsClothingStyle).HasMaxLength(450);
-            e.Property(x => x.BelongingsFavoriteDrink).HasMaxLength(450);
-            e.Property(x => x.BelongingsFavoriteFood).HasMaxLength(450);
-            e.Property(x => x.BelongingsStimulant).HasMaxLength(450);
-            e.Property(x => x.BelongingsCommDevice).HasMaxLength(450);
+            // HomeTurf / TerritoryHomeTurf flat columns dropped 2026-05-08 —
+            // bridge is CharacterHomeTurfs (HomeTurfs navigation).
+            // Belongings* scalar columns + their HasMaxLength dropped 2026-05-08.
+            // Pointers now live as single-row buckets in CharacterBelongingsGear.
 
             e.HasOne(x => x.Entity).WithOne()
                 .HasForeignKey<Character>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
@@ -367,15 +365,13 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.FirstName).HasDatabaseName("IX_Characters_FirstName");
             e.HasIndex(x => x.LastName).HasDatabaseName("IX_Characters_LastName");
             e.HasIndex(x => new { x.LastName, x.FirstName }).HasDatabaseName("IX_Characters_LastFirst");
-            e.HasIndex(x => x.Affiliation).HasFilter("[Affiliation] IS NOT NULL AND [Affiliation] <> ''")
-                .HasDatabaseName("IX_Characters_Affiliation");
-            e.HasIndex(x => x.HomeTurf).HasDatabaseName("IX_Characters_HomeTurf");
-            e.HasIndex(x => x.TerritoryHomeTurf).HasDatabaseName("IX_Characters_TerritoryHomeTurf");
-            // Belongings indexes — "who carries Silence?", "who lives in this district?"
-            e.HasIndex(x => x.BelongingsPrimaryWeapon).HasDatabaseName("IX_Characters_PrimaryWeapon");
-            e.HasIndex(x => x.BelongingsSecondaryWeapon).HasDatabaseName("IX_Characters_SecondaryWeapon");
-            e.HasIndex(x => x.BelongingsVehicle).HasDatabaseName("IX_Characters_Vehicle");
-            e.HasIndex(x => x.BelongingsResidence).HasDatabaseName("IX_Characters_Residence");
+            // Affiliation / HomeTurf / TerritoryHomeTurf indexes retired
+            // 2026-05-08 with the flat columns. Equivalent lookups go through
+            // the CharacterAffiliations / CharacterHomeTurfs bridges, which
+            // already index (CharacterId) and (PlaceId / FactionId).
+            // Belongings indexes retired 2026-05-08 with the flat columns.
+            // Equivalent lookups now go through CharacterBelongingsGear with
+            // (CharacterId, Bucket) — already indexed by the bridge's PK.
         });
 
         // Per-character bridge tables — every list/dict/heterogeneous bag.
@@ -956,6 +952,42 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.SpecKey);
         });
 
+        // ── EntityEmbedding (cloud-LLM embedding cache, non-temporal) ────────
+        // PK = EntityId so each entity has at most one current embedding.
+        // Deliberately non-temporal so the table is eligible for SQL Server
+        // 2025 VECTOR INDEX when the corpus crosses ~50k. Until then we run
+        // exact NN via cosine distance in C# over the JSON-encoded floats.
+        b.Entity<EntityEmbedding>(e =>
+        {
+            e.ToTable("EntityEmbeddings");
+            e.HasKey(x => x.EntityId);
+            e.Property(x => x.SourceHash).HasMaxLength(32).IsRequired();
+            e.Property(x => x.Model).HasMaxLength(80);
+            e.HasOne(x => x.Entity)
+                .WithMany()
+                .HasForeignKey(x => x.EntityId)
+                .OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.EmbeddedAt); // staleness sweeps
+            // The Vector column (VECTOR(1536)) is intentionally NOT mapped —
+            // EF Core has no native VECTOR support; EmbeddingService manages
+            // it via raw SQL (MERGE writes, SqlQueryRaw reads with
+            // VECTOR_DISTANCE).
+        });
+
+        // ── ProseEmbedding (polymorphic chapter+beat embedding cache) ────────
+        // Composite PK on (ScopeKind, ScopeId) — same shape as EntityEmbedding
+        // but unified across prose units. Vector column managed via raw SQL.
+        b.Entity<ProseEmbedding>(e =>
+        {
+            e.ToTable("ProseEmbeddings");
+            e.HasKey(x => new { x.ScopeKind, x.ScopeId });
+            e.Property(x => x.ScopeKind).HasMaxLength(20).IsRequired();
+            e.Property(x => x.SourceHash).HasMaxLength(32).IsRequired();
+            e.Property(x => x.Model).HasMaxLength(80);
+            e.HasIndex(x => x.EmbeddedAt);
+            e.HasIndex(x => new { x.ScopeKind, x.EmbeddedAt }); // per-scope staleness sweeps
+        });
+
         // ── World-state ledger (per-event append-only) ───────────────────────
         b.Entity<EntityStateEvent>(e =>
         {
@@ -973,6 +1005,10 @@ public class StreetSamuraiDbContext : DbContext
             // Hot path: "what was X's location at time T?" → seek by
             // (EntityId, AspectKey) then walk by AtStoryTime.
             e.HasIndex(x => new { x.EntityId, x.AspectKey, x.AtStoryTime });
+            // Closed-window seek: "what's true at story-time T?" — single index
+            // hit when the [InWorldValidFrom, InWorldValidTo) window is closed
+            // by WorldStateLedger.RecordAsync.
+            e.HasIndex(x => new { x.EntityId, x.AspectKey, x.InWorldValidFrom });
             // Timeline-axis scans (vis-timeline, contradiction detector).
             e.HasIndex(x => x.AtStoryTime);
             // "All events tied to chapter X" rollups.

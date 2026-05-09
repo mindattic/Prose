@@ -9,6 +9,9 @@
 @inject TriviaService TriviaSvc
 @inject IWriteAccessProvider Access
 @inject StoryDirectorService Director
+@inject CharacterRepository CharRepo
+@inject CorponationRepository CorpRepo
+@inject WorldbuildingDocRepository DocRepo
 @implements IDisposable
 
 
@@ -166,10 +169,11 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var docs = Canon.ListDocuments();
-        docCount = docs.Count;
-        corpCount = Canon.ListCorponations().Count;
-        charCount = Canon.ListCharacters().Count;
+        // Count() runs SELECT COUNT(*) — Canon.ListXxx materialises every row
+        // and was the cold-start bottleneck on /dashboard.
+        docCount  = DocRepo.Count();
+        corpCount = CorpRepo.Count();
+        charCount = CharRepo.Count();
 
         Graph.EnsureLoaded();
         nodeCount = Graph.NodeCount;
@@ -181,17 +185,19 @@
         llmReady = await Llm.IsConfiguredAsync();
         ttsReady = await Tts.IsConfiguredAsync();
 
-        // Top connected entities
+        // Top connected entities — use the precomputed edge-count index
+        // (O(1) per node); the prior GetAllEdges loop was O(N×E) and made
+        // /dashboard cold-start ~90s.
         var allNodes = Graph.AllNodes();
         topConnected = allNodes
             .Where(n => !string.IsNullOrWhiteSpace(n.Id) && !string.IsNullOrWhiteSpace(n.Name))
-            .Select(n => (node: n, count: Graph.GetAllEdges(n.Id).Count))
+            .Select(n => (node: n, count: Graph.GetEdgeCount(n.Id)))
             .Where(x => x.count > 0)
             .OrderByDescending(x => x.count)
             .Take(6)
             .ToList();
         orphanCount = allNodes.Count(n => string.IsNullOrWhiteSpace(n.Id) || string.IsNullOrWhiteSpace(n.Name)
-            || Graph.GetAllEdges(n.Id).Count == 0);
+            || Graph.GetEdgeCount(n.Id) == 0);
 
         Director.OnProgress += OnDirectorProgress;
     }

@@ -21,8 +21,10 @@ public class DataRepairServiceTests
         Directory.CreateDirectory(placesDir);
         Directory.CreateDirectory(peopleDir);
 
+        var paths = new TestPathProviderWithRoot(tempDir);
         svc = new DataRepairService(
-            new TestPathProviderWithRoot(tempDir),
+            paths,
+            StreetSamurai.Core.Data.TestDbFactory.For(paths, "datarepair"),
             NullLoggers.For<DataRepairService>());
 
         // Start with all tools off; each test opts in

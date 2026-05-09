@@ -144,7 +144,7 @@ public class MigrationSmokeTests
     [Test]
     public void Book_RoundTrip_PreservesChapterIds()
     {
-        var books = new JsonBookRepository(dbFactory, NullLoggers.For<JsonBookRepository>());
+        var books = new BookRepository(dbFactory, NullLoggers.For<BookRepository>());
         var src = new Book
         {
             Title       = "Bushido Coda",
@@ -167,7 +167,7 @@ public class MigrationSmokeTests
     [Test]
     public void Chapter_RoundTrip_PreservesBeats()
     {
-        var chapters = new JsonChapterRepository(dbFactory, NullLoggers.For<JsonChapterRepository>());
+        var chapters = new ChapterRepository(dbFactory, NullLoggers.For<ChapterRepository>());
         var src = new Chapter
         {
             BookId   = Guid.CreateVersion7().ToString("N"),

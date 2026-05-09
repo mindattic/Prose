@@ -23,8 +23,12 @@ public class IntegrationTests
         var llm = new FakeLlmService();
 
         storyState = new StoryStateService(llm, NullLoggers.For<StoryStateService>());
-        eventLog = new EventLogService(llm, paths, NullLoggers.For<EventLogService>());
-        knowledge = new KnowledgeMapService(paths, NullLoggers.For<KnowledgeMapService>());
+        eventLog = new EventLogService(llm, paths,
+            StreetSamurai.Core.Data.TestDbFactory.For(paths, "events"),
+            NullLoggers.For<EventLogService>());
+        knowledge = new KnowledgeMapService(paths,
+            StreetSamurai.Core.Data.TestDbFactory.For(paths, "knowledge"),
+            NullLoggers.For<KnowledgeMapService>());
     }
 
     [TearDown]

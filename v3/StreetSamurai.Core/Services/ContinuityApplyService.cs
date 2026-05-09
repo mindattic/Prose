@@ -1,31 +1,50 @@
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MindAttic.Legion;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Applies CANONICAL continuity claims back to their entity record files —
-/// the source of truth. Uses <see cref="LLMVotingService.DecideAsync"/> to
-/// pick which field on the entity JSON should hold the agreed value. The
-/// panel sees the entity's field shape and the claim, and votes.
+/// Applies CANONICAL continuity claims back to their entity's
+/// <see cref="Data.Entities.Record"/> blob — the source of truth in SQL Server.
+/// Uses <see cref="LLMVotingService.DecideAsync"/> to pick which field on the
+/// entity's JSON should hold the agreed value. The panel sees the entity's
+/// field shape and the claim, and votes.
 ///
 /// Update rules (per Legion's <see cref="DecisionResult.Choice"/>):
 ///   - existing string field      → set the value
 ///   - existing array field       → append the value (dedup, case-insensitive)
 ///   - "continuity_facts"          → append a structured entry to a continuity_facts[] array on the entity (created if missing). This is the catch-all for claims that don't map cleanly.
 ///
-/// After the entity file is updated, the claim is marked applied with the
+/// After the entity blob is updated, the claim is marked applied with the
 /// chosen field path so the audit trail shows where it landed.
 /// </summary>
 public class ContinuityApplyService
 {
     private readonly ContinuityService store;
     private readonly LLMVotingService voting;
-    private readonly IPathProvider paths;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<ContinuityApplyService> log;
+
+    // Continuity claims use kind names that don't always match the canonical
+    // EntityType slug; this maps each variant to the EntityType column value.
+    private static readonly Dictionary<string, string> KindToEntityType =
+        new(StringComparer.OrdinalIgnoreCase)
+        {
+            ["person"]      = "character",
+            ["character"]   = "character",
+            ["place"]       = "place",
+            ["faction"]     = "faction",
+            ["corponation"] = "corponation",
+            ["weapon"]      = "weapon",
+            ["equipment"]   = "equipment",
+            ["technology"]  = "technology",
+            ["cyberware"]   = "cyberware",
+        };
 
     private static readonly JsonSerializerOptions PrettyJson = new()
     {
@@ -36,13 +55,13 @@ public class ContinuityApplyService
     public ContinuityApplyService(
         ContinuityService store,
         LLMVotingService voting,
-        IPathProvider paths,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ILogger<ContinuityApplyService> log)
     {
-        this.store  = store;
-        this.voting = voting;
-        this.paths  = paths;
-        this.log    = log;
+        this.store     = store;
+        this.voting    = voting;
+        this.dbFactory = dbFactory;
+        this.log       = log;
     }
 
     /// <summary>
@@ -60,14 +79,14 @@ public class ContinuityApplyService
         if (claim == null)
             return new ApplyResult { Ok = false, Error = $"Claim not found or not in an applyable state: {claimUid}" };
 
-        // Locate the entity file
-        var entityPath = LocateEntityFile(claim);
-        if (entityPath == null)
-            return new ApplyResult { Ok = false, Error = $"No entity file for {claim.EntityName} ({claim.EntityKind}) id={claim.EntityId}" };
+        // Locate the entity's Records.Json blob in SQL.
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var record = await LocateRecordAsync(db, claim, ct);
+        if (record == null)
+            return new ApplyResult { Ok = false, Error = $"No Records.Json blob for {claim.EntityName} ({claim.EntityKind}) id={claim.EntityId}" };
 
-        // Load the JSON
         JsonNode? root;
-        try { root = JsonNode.Parse(File.ReadAllText(entityPath)); }
+        try { root = JsonNode.Parse(record.Json); }
         catch (Exception ex) { return new ApplyResult { Ok = false, Error = "JSON parse failed: " + ex.Message }; }
         if (root is not JsonObject obj) return new ApplyResult { Ok = false, Error = "Entity record is not a JSON object" };
 
@@ -103,46 +122,125 @@ public class ContinuityApplyService
         var applied = ApplyToField(obj, chosen, claim);
         if (!applied) return new ApplyResult { Ok = false, Error = $"Could not write to field: {chosen}" };
 
-        // Save the entity
-        File.WriteAllText(entityPath, root.ToJsonString(PrettyJson));
+        // Save the entity blob back to Records.Json.
+        record.Json      = root.ToJsonString(PrettyJson);
+        record.UpdatedAt = DateTime.UtcNow;
+        if (record.Entity != null) record.Entity.ModifiedAt = record.UpdatedAt;
+        await db.SaveChangesAsync(ct);
 
         // Mark the claim
         store.MarkApplied(claim.ClaimUid, chosen);
 
-        log.LogInformation("[continuity] Applied {Uid} → {Path}#{Field}",
-            claim.ClaimUid, Path.GetFileName(entityPath), chosen);
+        log.LogInformation("[continuity] Applied {Uid} → {Entity}#{Field}",
+            claim.ClaimUid, claim.EntityName, chosen);
+
+        // Find soft-duplicate claims on the same entity to surface as warnings.
+        // Cheap string similarity over (predicate, object) catches the common
+        // case (the SAME fact restated). The proper embedding-based version
+        // would need a separate ContinuityClaimEmbedding table and an extra
+        // OpenAI call per apply — overkill until duplicate volume justifies it.
+        var similarClaims = FindSimilarClaimsOnEntity(claim);
 
         return new ApplyResult
         {
             Ok               = true,
             ClaimUid         = claim.ClaimUid,
-            EntityFile       = entityPath,
+            EntityFile       = $"db:Records[{record.EntityId}]",
             FieldPath        = chosen,
             DecisionReason   = decision.Reasoning,
             DecisionConfidence = decision.Confidence,
+            SimilarClaims    = similarClaims,
         };
+    }
+
+    /// <summary>
+    /// Walk every claim on the same entity, score (predicate, object) string
+    /// similarity against the new claim, and return any with similarity ≥ 0.7.
+    /// Cheap warning surface for "have I already recorded this fact?"
+    /// </summary>
+    private List<SimilarClaimWarning> FindSimilarClaimsOnEntity(ContinuityClaim newClaim)
+    {
+        if (string.IsNullOrEmpty(newClaim.EntityId)) return new();
+        var existing = store.GetByEntity(newClaim.EntityId);
+        if (existing.Count <= 1) return new();
+        var newKey = $"{newClaim.Predicate} {newClaim.Object}".ToLowerInvariant();
+        var hits = new List<SimilarClaimWarning>();
+        foreach (var c in existing)
+        {
+            if (c.ClaimUid == newClaim.ClaimUid) continue;
+            var oldKey = $"{c.Predicate} {c.Object}".ToLowerInvariant();
+            var sim = StringSimilarity(newKey, oldKey);
+            if (sim < 0.7) continue;
+            hits.Add(new SimilarClaimWarning
+            {
+                ClaimUid   = c.ClaimUid,
+                Status     = c.Status,
+                Predicate  = c.Predicate,
+                Object     = c.Object,
+                Similarity = Math.Round(sim, 3),
+            });
+        }
+        return hits.OrderByDescending(h => h.Similarity).Take(5).ToList();
+    }
+
+    /// <summary>
+    /// Token-set Jaccard similarity — correlated-enough with semantic match for
+    /// short claim strings (predicate+object), and zero-cost (no API call). When
+    /// duplicate volume justifies it, swap this for an embedding-vs-embedding
+    /// cosine via a ContinuityClaimEmbedding table.
+    /// </summary>
+    private static double StringSimilarity(string a, string b)
+    {
+        if (string.IsNullOrEmpty(a) || string.IsNullOrEmpty(b)) return 0;
+        var ta = a.Split(new[] { ' ', '_', '-', '.', ',', ';' }, StringSplitOptions.RemoveEmptyEntries).ToHashSet();
+        var tb = b.Split(new[] { ' ', '_', '-', '.', ',', ';' }, StringSplitOptions.RemoveEmptyEntries).ToHashSet();
+        if (ta.Count == 0 || tb.Count == 0) return 0;
+        var intersection = ta.Intersect(tb).Count();
+        var union = ta.Union(tb).Count();
+        return union == 0 ? 0 : (double)intersection / union;
     }
 
     // ── helpers ─────────────────────────────────────────────────────────────
 
-    private string? LocateEntityFile(ContinuityClaim claim)
+    /// <summary>
+    /// Pull the Records.Json blob for the claim's target entity. Resolves by
+    /// id (preferred) and falls back to (EntityType, Name) so claims that
+    /// carry only a name still apply.
+    /// </summary>
+    private static async Task<Data.Entities.Record?> LocateRecordAsync(
+        StreetSamuraiDbContext db, ContinuityClaim claim, CancellationToken ct)
     {
-        var kindToDir = new Dictionary<string, string>
-        {
-            ["person"]      = "people",
-            ["place"]       = "places",
-            ["faction"]     = "factions",
-            ["corponation"] = "corponations",
-            ["weapon"]      = "weaponry",
-            ["equipment"]   = "equipment",
-            ["technology"]  = "technology",
-            ["cyberware"]   = "cyberware",
-        };
-        if (!kindToDir.TryGetValue(claim.EntityKind, out var dir))
+        if (!KindToEntityType.TryGetValue(claim.EntityKind, out var entityType))
             return null;
 
-        var path = Path.Combine(paths.EngineDataDir, dir, claim.EntityId + ".json");
-        return File.Exists(path) ? path : null;
+        // Id route — accept hyphenated and unhyphenated formats.
+        if (TryParseGuid(claim.EntityId, out var id))
+        {
+            var rec = await db.Records.Include(r => r.Entity)
+                .FirstOrDefaultAsync(r => r.EntityId == id && r.Entity!.EntityType == entityType, ct);
+            if (rec != null) return rec;
+        }
+
+        // Name fallback — required when the claim was extracted from prose
+        // and only stored the display name.
+        if (!string.IsNullOrWhiteSpace(claim.EntityName))
+        {
+            var rec = await db.Records.Include(r => r.Entity)
+                .FirstOrDefaultAsync(r =>
+                    r.Entity!.EntityType == entityType
+                    && r.Entity.Name == claim.EntityName, ct);
+            if (rec != null) return rec;
+        }
+        return null;
+    }
+
+    private static bool TryParseGuid(string raw, out Guid id)
+    {
+        if (string.IsNullOrWhiteSpace(raw)) { id = default; return false; }
+        if (Guid.TryParse(raw, out id)) return true;
+        if (raw.Length == 32 && Guid.TryParseExact(raw, "N", out id)) return true;
+        id = default;
+        return false;
     }
 
     private static List<(string field, string type, string preview)> BuildFieldMenu(JsonObject obj)
@@ -240,4 +338,22 @@ public class ApplyResult
     public string DecisionReason      { get; set; } = "";
     public double DecisionConfidence  { get; set; }
     public string Error               { get; set; } = "";
+
+    /// <summary>
+    /// Existing claims on the same entity that share semantic content with the
+    /// claim being applied — surfaced for caller review. Populated by the
+    /// embedding-similarity dedup pass (see ContinuityApplyService.ApplyAsync).
+    /// Empty when no soft-duplicates were found.
+    /// </summary>
+    public List<SimilarClaimWarning> SimilarClaims { get; set; } = new();
+}
+
+/// <summary>One existing claim that's semantically close to a newly applied claim.</summary>
+public class SimilarClaimWarning
+{
+    public string ClaimUid       { get; set; } = "";
+    public string Status         { get; set; } = "";
+    public string Predicate      { get; set; } = "";
+    public string Object         { get; set; } = "";
+    public double Similarity     { get; set; }
 }

@@ -1,14 +1,12 @@
-using System.Text.Json;
-using StreetSamurai.Core.Interfaces;
-
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Pre-generates 100 "Did You Know?" facts from canon data once per day.
-/// Facts are cached to engine/trivia.json and only regenerated when the date changes.
+/// Facts cache as a single <see cref="SettingsKvStore"/> row keyed
+/// <c>trivia.daily</c>; regenerated when the date changes.
 /// </summary>
 public class TriviaService(
-    IPathProvider paths,
+    SettingsKvStore kv,
     CharacterRepository charRepo,
     CorponationRepository corpRepo,
     DistrictRepository districtRepo,
@@ -23,10 +21,9 @@ public class TriviaService(
     TransportationRepository transportRepo)
 {
     private const int TriviaSlots = 100;
+    private const string SettingKey = "trivia.daily";
     private string[] facts = [];
     private string cachedDate = "";
-
-    private string FilePath => Path.Combine(paths.EngineDataDir, "trivia.json");
 
     /// <summary>Returns today's 100 pre-generated facts, regenerating if needed.</summary>
     public string[] GetFacts()
@@ -35,31 +32,19 @@ public class TriviaService(
         if (facts.Length > 0 && cachedDate == today)
             return facts;
 
-        // Try loading from disk
-        if (File.Exists(FilePath))
+        // Try loading from settings store
+        var stored = kv.Get<TriviaFile>(SettingKey);
+        if (stored?.Date == today && stored.Facts is { Length: > 0 })
         {
-            try
-            {
-                var wrapper = JsonSerializer.Deserialize<TriviaFile>(File.ReadAllText(FilePath));
-                if (wrapper?.Date == today && wrapper.Facts is { Length: > 0 })
-                {
-                    facts = wrapper.Facts;
-                    cachedDate = today;
-                    return facts;
-                }
-            }
-            catch { /* regenerate on parse failure */ }
+            facts = stored.Facts;
+            cachedDate = today;
+            return facts;
         }
 
-        // Generate fresh
+        // Generate fresh + persist
         facts = BuildAndShuffleTriviaPool();
         cachedDate = today;
-
-        // Persist
-        var json = JsonSerializer.Serialize(new TriviaFile { Date = today, Facts = facts },
-            new JsonSerializerOptions { WriteIndented = true });
-        File.WriteAllText(FilePath, json);
-
+        kv.Set(SettingKey, new TriviaFile { Date = today, Facts = facts });
         return facts;
     }
 

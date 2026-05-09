@@ -1,15 +1,16 @@
 using System.Text.Json.Nodes;
-using StreetSamurai.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Assigns social tier (1–5) to character entities in people/ and synthetics/
-/// based on keyword matching against role, description, affiliation, and tags.
-/// Tier 5 = power elite; Tier 1 = survival margin.
-/// Ported from: scripts/py/assign_tiers.py
+/// Assigns social tier (1–5) to character/synthetic entities based on
+/// keyword matching against role, description, affiliation, and tags.
+/// Tier 5 = power elite; Tier 1 = survival margin. Mutations land in
+/// <c>Records.Json</c>.
 /// </summary>
-public class AssignTiersService(IPathProvider paths) : DataScanUtility(paths)
+public class AssignTiersService(IDbContextFactory<StreetSamuraiDbContext> dbFactory) : DataScanUtility(dbFactory)
 {
     private static readonly (int tier, string[] keywords)[] TierRules =
     [

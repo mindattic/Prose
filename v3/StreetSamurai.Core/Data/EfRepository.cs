@@ -14,7 +14,7 @@ namespace StreetSamurai.Core.Data;
 /// from <see cref="Record.Json"/> on read and serialized into it on write. The
 /// per-type Entity + Subtype rows are kept in sync for indexed queries.
 /// </summary>
-public class EfRepository<T> : IExportableRepository where T : class
+public class EfRepository<T> : IExportableRepository, IJsonImportable where T : class
 {
     protected readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     protected readonly string entityType;
@@ -257,6 +257,98 @@ public class EfRepository<T> : IExportableRepository where T : class
 
     public List<(string name, string json)> GetExportEntries()
         => GetAll().Select(e => (nameSelector(e), JsonSerializer.Serialize(e, jsonOpts))).ToList();
+
+    /// <summary>
+    /// IJsonImportable: deserialize a single canonical JSON blob (the on-disk
+    /// shape under <c>engine/data/&lt;folder&gt;/*.json</c>) and route through
+    /// <see cref="Save"/>. Idempotent — re-running on the same JSON updates the
+    /// existing entity rather than duplicating it.
+    /// </summary>
+    public virtual void ImportFromJson(string fileJson)
+    {
+        if (string.IsNullOrWhiteSpace(fileJson))
+            throw new ArgumentException("Empty JSON blob.", nameof(fileJson));
+
+        var item = JsonSerializer.Deserialize<T>(fileJson, jsonOpts)
+            ?? throw new InvalidOperationException(
+                $"JSON deserialized to null for entityType '{entityType}' — malformed file.");
+
+        Save(item);
+    }
+
+    /// <summary>
+    /// IJsonImportable: classifies a file's JSON against the DB's canonical
+    /// representation of the same entity. The check round-trips both sides
+    /// through this repo's <c>jsonOpts</c> so formatting differences
+    /// (whitespace, key order, null-omission) don't false-positive as drift.
+    ///
+    /// Two read paths, in priority order:
+    ///   1. <c>Records.Json</c> — populated by the base <see cref="Save"/>;
+    ///      every plain <c>EfRepository&lt;T&gt;</c> uses this.
+    ///   2. <c>GetById</c> fallback — subclasses like
+    ///      <c>CharacterRepository</c> override <c>Save</c> to write fully
+    ///      relational rows and never touch <c>Records.Json</c>. When the
+    ///      <c>Entities</c> row exists but <c>Records.Json</c> doesn't, we
+    ///      materialize the domain object via the subclass's overridden
+    ///      <c>GetAll/GetById</c> and canonicalize that instead.
+    /// </summary>
+    public virtual JsonVerifyResult VerifyAgainstDb(string fileJson)
+    {
+        if (string.IsNullOrWhiteSpace(fileJson)) return JsonVerifyResult.NoId;
+
+        T? fileItem;
+        try { fileItem = JsonSerializer.Deserialize<T>(fileJson, jsonOpts); }
+        catch { return JsonVerifyResult.NoId; }
+        if (fileItem == null) return JsonVerifyResult.NoId;
+
+        // Need a stable Id to look up in DB. If T doesn't implement IWorldRecord
+        // or its Id is blank, we can't resolve — caller should flag as NoId.
+        if (fileItem is not IWorldRecord rec || string.IsNullOrEmpty(rec.Id))
+            return JsonVerifyResult.NoId;
+
+        Guid id;
+        try { id = ParseGuid(rec.Id); }
+        catch { return JsonVerifyResult.NoId; }
+
+        using var db = dbFactory.CreateDbContext();
+
+        // No Entity row → genuinely missing canon, regardless of the repo's
+        // storage strategy.
+        var entityExists = db.Entities.AsNoTracking().Any(e => e.Id == id);
+        if (!entityExists) return JsonVerifyResult.Missing;
+
+        // Canonicalize the file side once, used by either DB-side path.
+        var fileCanonical = JsonSerializer.Serialize(fileItem, jsonOpts);
+
+        // Path 1 — Records.Json (the standard EfRepository<T> shape).
+        var record = db.Records.AsNoTracking().FirstOrDefault(r => r.EntityId == id);
+        if (record != null)
+        {
+            T? dbItem;
+            try { dbItem = JsonSerializer.Deserialize<T>(record.Json, jsonOpts); }
+            catch { return JsonVerifyResult.Drift; }  // DB blob unparseable → can't claim match
+            if (dbItem == null) return JsonVerifyResult.Drift;
+
+            var dbCanonical = JsonSerializer.Serialize(dbItem, jsonOpts);
+            return string.Equals(fileCanonical, dbCanonical, StringComparison.Ordinal)
+                ? JsonVerifyResult.Match
+                : JsonVerifyResult.Drift;
+        }
+
+        // Path 2 — relational fallback. Some repositories
+        // (CharacterRepository.Save → CharacterMapper.PersistAsync) populate
+        // typed rows + child bridges and never write Records.Json. Their
+        // overridden GetById materializes the domain object from those tables.
+        // Use that as the canonical "what the DB says about this entity."
+        var relationalItem = GetById(id.ToString("N"));
+        if (relationalItem == null)
+            return JsonVerifyResult.Drift;  // Entity row exists but read failed → orphan-subtype, treat as drift
+
+        var relationalCanonical = JsonSerializer.Serialize(relationalItem, jsonOpts);
+        return string.Equals(fileCanonical, relationalCanonical, StringComparison.Ordinal)
+            ? JsonVerifyResult.Match
+            : JsonVerifyResult.Drift;
+    }
 
     private void InvalidateCache()
     {

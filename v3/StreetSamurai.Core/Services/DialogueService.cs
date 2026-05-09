@@ -15,8 +15,77 @@ namespace StreetSamurai.Core.Services;
 public class DialogueService
 {
     private readonly IDatabaseService db;
+    private readonly EmbeddingService? embeddings;
 
-    public DialogueService(IDatabaseService db) => this.db = db;
+    public DialogueService(IDatabaseService db) : this(db, null) { }
+
+    public DialogueService(IDatabaseService db, EmbeddingService? embeddings)
+    {
+        this.db         = db;
+        this.embeddings = embeddings;
+    }
+
+    /// <summary>
+    /// Pull a few canon characters with semantically-similar voice profiles
+    /// for each character in the scene, format as anchor examples for the
+    /// dialogue-generation LLM. The LLM gets to see "here are some real
+    /// voices in this universe that have an adjacent register" — anchors
+    /// generated dialogue without copying anyone specific.
+    ///
+    /// <para>Returns an empty string when the embedding cache is cold or the
+    /// service was constructed without an EmbeddingService (test fixtures).</para>
+    /// </summary>
+    public async Task<string> BuildVoiceAnchorsAsync(List<string> charactersInScene, CancellationToken ct = default)
+    {
+        if (embeddings == null) return "";
+        if (charactersInScene == null || charactersInScene.Count == 0) return "";
+
+        var sb = new System.Text.StringBuilder();
+        sb.AppendLine("CANON VOICE ANCHORS — existing characters with adjacent registers; write each scene character DISTINCT from these but in the same overall world voice:");
+
+        var added = 0;
+        var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var name in charactersInScene)
+        {
+            var ch = db.FindCharacter(name);
+            if (ch == null) continue;
+            if (!seen.Add(ch.Name)) continue;
+
+            // Build the embedding query from this character's voice signal
+            // (vocabulary + cadence + subtext + secret) so the cosine match
+            // surfaces voice peers, not just role peers.
+            var sp = ch.SpeechPatterns;
+            var query = string.Join(" ", new[]
+            {
+                ch.Name, ch.Role, ch.Affiliation,
+                sp.Vocabulary, sp.Cadence, sp.Subtext,
+            }.Where(s => !string.IsNullOrWhiteSpace(s)));
+            if (string.IsNullOrWhiteSpace(query)) continue;
+
+            IReadOnlyList<EmbeddingHit> hits;
+            try { hits = await embeddings.FindSimilarAsync(query, k: 4, entityTypes: new[] { "character" }, ct); }
+            catch { continue; }
+
+            sb.AppendLine();
+            sb.Append("  ").Append(ch.Name).AppendLine(" — voice peers:");
+            int peers = 0;
+            foreach (var hit in hits)
+            {
+                if (string.Equals(hit.EntityName, ch.Name, StringComparison.OrdinalIgnoreCase)) continue; // self
+                var peer = db.FindCharacter(hit.EntityName);
+                if (peer == null) continue;
+                var peerSp = peer.SpeechPatterns;
+                var fragment = !string.IsNullOrWhiteSpace(peerSp.Cadence) ? peerSp.Cadence
+                             : !string.IsNullOrWhiteSpace(peerSp.Vocabulary) ? peerSp.Vocabulary
+                             : "voice profile available in canon";
+                if (fragment.Length > 160) fragment = fragment[..157] + "…";
+                sb.Append("    • ").Append(peer.Name).Append(": ").AppendLine(fragment);
+                if (++peers >= 3) break;
+            }
+            added++;
+        }
+        return added == 0 ? "" : sb.ToString().TrimEnd();
+    }
 
     /// <summary>
     /// Build comprehensive dialogue constraints for all characters in a scene.

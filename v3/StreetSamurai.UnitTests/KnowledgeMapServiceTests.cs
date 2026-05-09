@@ -13,7 +13,11 @@ public class KnowledgeMapServiceTests
     {
         testDir = Path.Combine(Path.GetTempPath(), $"ss_test_{Guid.NewGuid():N}");
         Directory.CreateDirectory(Path.Combine(testDir, "story_blocks"));
-        svc = new KnowledgeMapService(new TestPathProviderWithRoot(testDir), NullLoggers.For<KnowledgeMapService>());
+        var paths = new TestPathProviderWithRoot(testDir);
+        svc = new KnowledgeMapService(
+            paths,
+            StreetSamurai.Core.Data.TestDbFactory.For(paths, "knowledge"),
+            NullLoggers.For<KnowledgeMapService>());
     }
 
     [TearDown]
@@ -154,12 +158,35 @@ public class KnowledgeMapServiceTests
     }
 
     [Test]
-    public void PersistsToDisk()
+    public void PersistsToDb()
     {
-        svc.CharacterLearned("proj1", "Kyle", "test fact", 1);
+        // Seed a Chapter row so SaveToDb actually persists.
+        var paths = new TestPathProviderWithRoot(testDir);
+        var dbFactory = StreetSamurai.Core.Data.TestDbFactory.For(paths, "knowledge");
+        var chapterId = Guid.NewGuid();
+        using (var db = dbFactory.CreateDbContext())
+        {
+            db.Entities.Add(new StreetSamurai.Core.Data.Entities.Entity
+            {
+                Id = chapterId,
+                EntityType = "chapter",
+                Name = "PersistsToDb test",
+                Slug = $"persists-knowledge-{chapterId:N}",
+                Status = "canon",
+            });
+            db.Chapters.Add(new StreetSamurai.Core.Data.Entities.Chapter
+            {
+                Id = chapterId,
+                Title = "PersistsToDb test",
+            });
+            db.SaveChanges();
+        }
 
-        var svc2 = new KnowledgeMapService(new TestPathProviderWithRoot(testDir), NullLoggers.For<KnowledgeMapService>());
-        Assert.That(svc2.CharacterKnows("proj1", "Kyle", "test fact"), Is.True);
+        var svcLocal = new KnowledgeMapService(paths, dbFactory, NullLoggers.For<KnowledgeMapService>());
+        svcLocal.CharacterLearned(chapterId.ToString("N"), "Kyle", "test fact", 1);
+
+        var svcLocal2 = new KnowledgeMapService(paths, dbFactory, NullLoggers.For<KnowledgeMapService>());
+        Assert.That(svcLocal2.CharacterKnows(chapterId.ToString("N"), "Kyle", "test fact"), Is.True);
     }
 
     [Test]

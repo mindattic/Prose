@@ -20,15 +20,55 @@ public class NpcGenerator
     private readonly CharacterRepository charRepo;
     private readonly WorldGraphService graph;
     private readonly NamePoolService namePool;
+    private readonly EmbeddingService embeddings;
 
     public NpcGenerator(ILlmService llm, DatabaseService db, CharacterRepository charRepo,
-        WorldGraphService graph, NamePoolService namePool)
+        WorldGraphService graph, NamePoolService namePool, EmbeddingService embeddings)
     {
         this.llm = llm;
         this.db = db;
         this.charRepo = charRepo;
         this.graph = graph;
         this.namePool = namePool;
+        this.embeddings = embeddings;
+    }
+
+    /// <summary>
+    /// Pull a handful of canon characters semantically closest to the role +
+    /// context, format their (name, role, voice) as a short in-context example
+    /// block. Anchors generated NPCs to canon voice without listing every
+    /// character. Returns "" when the embedding cache is cold.
+    /// </summary>
+    private async Task<string> BuildCanonExamplesAsync(
+        string role, string context, string? location, string? affiliation, CancellationToken ct)
+    {
+        var query = string.Join(" ", new[] { role, context, location, affiliation }
+            .Where(s => !string.IsNullOrWhiteSpace(s)));
+        if (string.IsNullOrWhiteSpace(query)) return "";
+
+        IReadOnlyList<EmbeddingHit> hits;
+        try { hits = await embeddings.FindSimilarAsync(query, k: 5, entityTypes: new[] { "character" }, ct); }
+        catch { return ""; }
+        if (hits.Count == 0) return "";
+
+        var sb = new System.Text.StringBuilder();
+        sb.AppendLine();
+        sb.AppendLine("CANON EXAMPLES (existing characters semantically related to this role — write your new character in similar voice but DISTINCT from these specific people):");
+        foreach (var hit in hits)
+        {
+            var ch = charRepo.GetByName(hit.EntityName);
+            if (ch == null) continue;
+            sb.Append("  • ").Append(ch.Name);
+            if (!string.IsNullOrWhiteSpace(ch.Role)) sb.Append(" — ").Append(ch.Role);
+            if (!string.IsNullOrWhiteSpace(ch.Affiliation)) sb.Append(" (").Append(ch.Affiliation).Append(')');
+            sb.AppendLine();
+            if (!string.IsNullOrWhiteSpace(ch.Description))
+            {
+                var trimmed = ch.Description.Length > 240 ? ch.Description[..237] + "…" : ch.Description;
+                sb.Append("    ").AppendLine(trimmed.Replace("\n", " "));
+            }
+        }
+        return sb.ToString();
     }
 
     /// <summary>
@@ -108,9 +148,12 @@ public class NpcGenerator
             Return ONLY the JSON. No markdown, no explanation.
             """;
 
+        var canonExamples = await BuildCanonExamplesAsync(role, context, location, affiliation, ct);
+
         var user = $"Create a character for this role: {role}\nContext: {context}" +
             (location != null ? $"\nLocation: {location}" : "") +
             (affiliation != null ? $"\nAffiliation: {affiliation}" : "") +
+            canonExamples +
             $"\n\nUSED FIRST NAMES (do NOT reuse any of these as the character's first name):\n  {string.Join(", ", usedFirstNames)}" +
             (preferredNames.Count > 0
                 ? $"\n\nPREFERRED FIRST NAMES (pick one of these, or a diaspora name of similar specificity):\n  {string.Join(", ", preferredNames)}"

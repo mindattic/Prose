@@ -1,5 +1,7 @@
 using System.Net.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 using StreetSamurai.Core.Models.Canon;
@@ -95,6 +97,7 @@ public class StoryDirectorService : IStoryDirectorService
         ContinuityValidatorService continuityValidator, SuggestionEngineService suggestions,
         OutlineReviewService outlineReview, StoryQualityService quality,
         CanonGroundingService canonGrounding,
+        IDbContextFactory<StreetSamuraiDbContext>? dbFactory = null,
         BookOutlineService? bookOutline = null, IChapterRepository? chapterRepo = null)
     {
         this.llm = llm;
@@ -120,8 +123,25 @@ public class StoryDirectorService : IStoryDirectorService
         this.outlineReview = outlineReview;
         this.quality = quality;
         this.canonGrounding = canonGrounding;
+        this.dbFactory = dbFactory;
         this.bookOutline = bookOutline;
         this.chapterRepo = chapterRepo;
+    }
+
+    private readonly IDbContextFactory<StreetSamuraiDbContext>? dbFactory;
+
+    /// <summary>
+    /// Idempotent column-add. Wired into <c>--repair</c>'s schema-bootstrap.
+    /// </summary>
+    public async Task EnsureCheckpointColumnAsync(CancellationToken ct = default)
+    {
+        if (dbFactory == null) return;
+        await using var ctx = await dbFactory.CreateDbContextAsync(ct);
+        const string ddl = """
+            IF COL_LENGTH('dbo.Chapters', 'CheckpointJson') IS NULL
+                ALTER TABLE [dbo].[Chapters] ADD [CheckpointJson] NVARCHAR(MAX) NULL;
+            """;
+        await ctx.Database.ExecuteSqlRawAsync(ddl, ct);
     }
 
     /// <summary>
@@ -904,15 +924,40 @@ public class StoryDirectorService : IStoryDirectorService
 
     private string ChaptersDir => paths.ChaptersDir;
 
-    /// <summary>Save a partial or complete story as a checkpoint to disk.</summary>
+    /// <summary>
+    /// Save a partial or complete story as a checkpoint to
+    /// <c>Chapters.CheckpointJson</c>. The legacy
+    /// <c>engine/data/chapters/&lt;id&gt;/checkpoint.json</c> path was retired
+    /// 2026-05-08 in the same migration that drained the rest of
+    /// <c>engine/data</c>.
+    /// </summary>
     private void SaveCheckpoint(AutonomousStory story)
     {
         try
         {
-            var path = StoryFolderHelper.GetFilePath(ChaptersDir, story.ProjectId, "checkpoint.json", story.Title);
+            if (dbFactory == null)
+            {
+                log.LogWarning("SaveCheckpoint: dbFactory not injected — checkpoint not persisted for {ProjectId}", story.ProjectId);
+                return;
+            }
+            if (!Guid.TryParse(story.ProjectId, out var chapterId)
+                && !Guid.TryParseExact(story.ProjectId, "N", out chapterId))
+            {
+                log.LogWarning("SaveCheckpoint: ProjectId is not a Guid: {ProjectId}", story.ProjectId);
+                return;
+            }
             var json = System.Text.Json.JsonSerializer.Serialize(story,
                 new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(path, json);
+            using var ctx = dbFactory.CreateDbContext();
+            var row = ctx.Chapters.FirstOrDefault(c => c.Id == chapterId);
+            if (row == null)
+            {
+                log.LogDebug("SaveCheckpoint: no Chapters row for {ProjectId}; checkpoint not persisted", story.ProjectId);
+                return;
+            }
+            row.CheckpointJson = json;
+            row.ModifiedAt = DateTime.UtcNow;
+            ctx.SaveChanges();
         }
         catch (Exception ex)
         {
@@ -920,14 +965,21 @@ public class StoryDirectorService : IStoryDirectorService
         }
     }
 
-    /// <summary>Load a checkpoint from disk.</summary>
+    /// <summary>Load a checkpoint from <c>Chapters.CheckpointJson</c>.</summary>
     public AutonomousStory? LoadCheckpoint(string projectId)
     {
-        var path = StoryFolderHelper.FindFile(ChaptersDir, projectId, "checkpoint.json");
-        if (path == null) return null;
+        if (dbFactory == null) return null;
+        if (!Guid.TryParse(projectId, out var chapterId)
+            && !Guid.TryParseExact(projectId, "N", out chapterId))
+            return null;
         try
         {
-            var json = File.ReadAllText(path);
+            using var ctx = dbFactory.CreateDbContext();
+            var json = ctx.Chapters.AsNoTracking()
+                .Where(c => c.Id == chapterId)
+                .Select(c => c.CheckpointJson)
+                .FirstOrDefault();
+            if (string.IsNullOrEmpty(json)) return null;
             return System.Text.Json.JsonSerializer.Deserialize<AutonomousStory>(json);
         }
         catch (Exception ex)
@@ -937,17 +989,27 @@ public class StoryDirectorService : IStoryDirectorService
         }
     }
 
-    /// <summary>List all available checkpoints (partial and complete stories).</summary>
+    /// <summary>List every chapter that has a saved CheckpointJson row.</summary>
     public List<AutonomousStory> ListCheckpoints()
     {
-        var dir = ChaptersDir;
-        if (!Directory.Exists(dir)) return [];
-        return Directory.GetDirectories(dir)
-            .Select(d => Path.Combine(d, "checkpoint.json"))
-            .Where(File.Exists)
-            .Select(f => { try { return System.Text.Json.JsonSerializer.Deserialize<AutonomousStory>(File.ReadAllText(f)); } catch { return null; } })
-            .Where(s => s != null)
-            .ToList()!;
+        if (dbFactory == null) return [];
+        try
+        {
+            using var ctx = dbFactory.CreateDbContext();
+            var jsons = ctx.Chapters.AsNoTracking()
+                .Where(c => c.CheckpointJson != null)
+                .Select(c => c.CheckpointJson!)
+                .ToList();
+            return jsons
+                .Select(j => { try { return System.Text.Json.JsonSerializer.Deserialize<AutonomousStory>(j); } catch { return null; } })
+                .Where(s => s != null)
+                .ToList()!;
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "ListCheckpoints failed");
+            return [];
+        }
     }
 
     /// <summary>Archive a failed story folder to archives/.</summary>

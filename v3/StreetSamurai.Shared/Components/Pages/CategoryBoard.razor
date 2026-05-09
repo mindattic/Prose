@@ -28,6 +28,9 @@
 @inject NewsRepository NewsRepo
 @inject EntertainmentRepository EntertainmentRepo
 @inject ConsumerGoodRepository GoodsRepo
+@inject LabSpecimenRepository LabSpecimenRepo
+@inject FlyoverEntityRepository FlyoverRepo
+@inject PsionicRepository PsionicRepo
 @inject IWriteAccessProvider Access
 
 
@@ -78,43 +81,46 @@ else
         {
             "Characters" =>
             [
-                new("bi-people",              "/characters",      "People",          CharRepo.GetAll().Count, false, "Human characters with full psychology, speech patterns, behavioral rules, cyberware inventory, and timelines."),
-                new("bi-cpu-fill",            "/synthetics",      "Synthetic Life",  SynthRepo.GetAll().Count, false, "Non-biological persons: AIs, androids, robots, cyborg AIs, distributed AIs, emergent AIs, rogue AIs, corporate AIs. Includes Ceramic Men (Type == \"ceramic_man\")."),
-                new("bi-person-bounding-box", "/archetypes",      "Archetypes",      ArchetypeRepo.GetAll().Count, false, "Reusable character archetype templates with trait weights — seed for new character generation."),
+                new("bi-people",              "/characters",      "People",          CharRepo.Count(), false, "Human characters with full psychology, speech patterns, behavioral rules, cyberware inventory, and timelines."),
+                new("bi-cpu-fill",            "/synthetics",      "Synthetic Life",  SynthRepo.Count(), false, "Non-biological persons: AIs, androids, robots, cyborg AIs, distributed AIs, emergent AIs, rogue AIs, corporate AIs. Includes Ceramic Men (Type == \"ceramic_man\")."),
+                new("bi-person-bounding-box", "/archetypes",      "Archetypes",      ArchetypeRepo.Count(), false, "Reusable character archetype templates with trait weights — seed for new character generation."),
             ],
             "Organizations" =>
             [
-                new("bi-building",            "/corps",           "Corponations",    CorpRepo.GetAll().Count, false, "Corporate nation-states that replaced governments. Own territory, field armies, write laws within their zones."),
-                new("bi-diagram-3",           "/subsidiaries",    "Subsidiaries",    SubsidiaryRepo.GetAll().Count, false, "Subsidiary corps under corponations. Smaller scope — often a single product line, region, or service."),
-                new("bi-shield-exclamation",  "/factions",        "Factions",        FactionRepo.GetAll().Count, false, "Non-corporate organizations: gangs, syndicates, cults, freelancer collectives, political movements."),
+                new("bi-building",            "/corps",           "Corponations",    CorpRepo.Count(), false, "Corporate nation-states that replaced governments. Own territory, field armies, write laws within their zones."),
+                new("bi-diagram-3",           "/subsidiaries",    "Subsidiaries",    SubsidiaryRepo.Count(), false, "Subsidiary corps under corponations. Smaller scope — often a single product line, region, or service."),
+                new("bi-shield-exclamation",  "/factions",        "Factions",        FactionRepo.Count(), false, "Non-corporate organizations: gangs, syndicates, cults, freelancer collectives, political movements."),
             ],
             "Gear" =>
             [
-                new("bi-crosshair",           "/weaponry",        "Weaponry",        WeaponRepo.GetAll().Count, false, "Weapons with tactical use, manufacturer, tier, and cultural context. Described by what they do to flesh, not by model number."),
-                new("bi-bullseye",            "/ammunition",      "Ammunition",      AmmoRepo.GetAll().Count, false, "Ammo types and effects — specialty rounds, hand-fit slugs, suppression loads."),
-                new("bi-motherboard",         "/cyberware",       "Cyberware",       CyberRepo.GetAll().Count, false, "Augmentations with body location, manufacturer, tier, condition (functional / damaged / destroyed)."),
-                new("bi-shield-shaded",       "/equipment",       "Equipment",       EquipRepo.GetAll().Count, false, "Gear, tools, and field equipment that aren't weapons or apparel."),
-                new("bi-handbag",             "/apparel",         "Apparel",         ApparelRepo.GetAll().Count, false, "Clothing — tier-coded fashion that signals affiliation, status, and intent."),
-                new("bi-virus",               "/genemods",        "Genemods",        GenemodRepo.GetAll().Count, false, "Genetic modifications with effects, side effects, and accessibility tier."),
-                new("bi-capsule",             "/pharmaceuticals", "Pharmaceuticals", PharmaRepo.GetAll().Count, false, "Drugs both legal and illegal: stimulants, suppressants, augment-control meds, recreational use."),
+                new("bi-crosshair",           "/weaponry",        "Weaponry",        WeaponRepo.Count(), false, "Weapons with tactical use, manufacturer, tier, and cultural context. Described by what they do to flesh, not by model number."),
+                new("bi-bullseye",            "/ammunition",      "Ammunition",      AmmoRepo.Count(), false, "Ammo types and effects — specialty rounds, hand-fit slugs, suppression loads."),
+                new("bi-motherboard",         "/cyberware",       "Cyberware",       CyberRepo.Count(), false, "Augmentations with body location, manufacturer, tier, condition (functional / damaged / destroyed)."),
+                new("bi-shield-shaded",       "/equipment",       "Equipment",       EquipRepo.Count(), false, "Gear, tools, and field equipment that aren't weapons or apparel."),
+                new("bi-handbag",             "/apparel",         "Apparel",         ApparelRepo.Count(), false, "Clothing — tier-coded fashion that signals affiliation, status, and intent."),
+                new("bi-virus",               "/genemods",        "Genemods",        GenemodRepo.Count(), false, "Genetic modifications with effects, side effects, and accessibility tier."),
+                new("bi-capsule",             "/pharmaceuticals", "Pharmaceuticals", PharmaRepo.Count(), false, "Drugs both legal and illegal: stimulants, suppressants, augment-control meds, recreational use."),
+                new("bi-lightbulb",           "/psionics",        "Psionics",        PsionicRepo.Count(), false, "Documented psionic abilities — telepathy, precog, kinesis. Rare, expensive to host, and never quite reliable."),
             ],
             "World" =>
             [
-                new("bi-geo-alt",             "/places",          "Places",          DistrictRepo.GetAll().Count, false, "Districts, buildings, landmarks. Atmosphere (sights / sounds / smells / feel), demographics, dangers, exits."),
-                new("bi-truck",               "/transportation",  "Transportation",  TransportRepo.GetAll().Count, false, "Vehicles + the Pulse — magnetic vacuum tube transit at Mach 6. Chicago is the world hub."),
-                new("bi-gem",                 "/materials",       "Materials",       MaterialRepo.GetAll().Count, false, "Construction materials and their properties: ferrocement, smart polymers, carbon weave, etc."),
-                new("bi-cpu",                 "/technology",      "Technology",      TechRepo.GetAll().Count, false, "Tech concepts and systems: BCI, NeoCortex, ballistic precognition, the network layer."),
-                new("bi-robot",               "/automata",        "Automata",        AutomatonRepo.GetAll().Count, false, "Autonomous machines — NOT synthetic life. Iowan Behemoths, security drones, factory units."),
+                new("bi-geo-alt",             "/places",          "Places",          DistrictRepo.Count(), false, "Districts, buildings, landmarks. Atmosphere (sights / sounds / smells / feel), demographics, dangers, exits."),
+                new("bi-truck",               "/transportation",  "Transportation",  TransportRepo.Count(), false, "Vehicles + the Pulse — magnetic vacuum tube transit at Mach 6. Chicago is the world hub."),
+                new("bi-gem",                 "/materials",       "Materials",       MaterialRepo.Count(), false, "Construction materials and their properties: ferrocement, smart polymers, carbon weave, etc."),
+                new("bi-cpu",                 "/technology",      "Technology",      TechRepo.Count(), false, "Tech concepts and systems: BCI, NeoCortex, ballistic precognition, the network layer."),
+                new("bi-robot",               "/automata",        "Automata",        AutomatonRepo.Count(), false, "Autonomous machines — NOT synthetic life. Iowan Behemoths, security drones, factory units."),
+                new("bi-eyedropper",          "/specimens",       "Lab Specimens",   LabSpecimenRepo.Count(), false, "Captured / cataloged biological samples studied in corp labs and academic facilities. The strange biology of the post-Collapse world."),
+                new("bi-bug",                 "/wasteland",       "Wasteland",       FlyoverRepo.Count(), false, "Flyover entities — the wildlife (and worse) that survives outside the corridor. Mutated fauna, drift-zone creatures, undocumented species."),
                 new("bi-book",                "/rules",           "World Rules",     0, true, "Hard prose constraints (literary_rules.json) injected into every generation call as NON-NEGOTIABLE."),
             ],
             "Culture" =>
             [
-                new("bi-file-earmark-text",   "/documents",       "Documents",       DocRepo.GetAll().Count, false, "Long-form worldbuilding lore: history, sociology, politics, deep-canon essays."),
-                new("bi-quote",               "/quotes",          "Quotes",          QuoteRepo.GetAll().Count, false, "In-world quotations attributed to characters, documents, or sources."),
-                new("bi-chat-quote",          "/vocabulary",      "Vocabulary",      VocabRepo.GetAll().Count, false, "GLMZ-specific terminology: street slang, corporate jargon, technical terms."),
-                new("bi-newspaper",           "/news",            "News Archive",    NewsRepo.GetAll().Count, false, "Period news articles and headlines from the GLMZ media ecosystem."),
-                new("bi-film",                "/entertainment",   "Entertainment",   EntertainmentRepo.GetAll().Count, false, "Films, books, music, and games that exist in-world — pop culture characters reference."),
-                new("bi-basket",              "/goods",           "Consumer Goods",  GoodsRepo.GetAll().Count, false, "Branded products characters consume: Libation Corp drinks, branded foods, household items."),
+                new("bi-file-earmark-text",   "/documents",       "Documents",       DocRepo.Count(), false, "Long-form worldbuilding lore: history, sociology, politics, deep-canon essays."),
+                new("bi-quote",               "/quotes",          "Quotes",          QuoteRepo.Count(), false, "In-world quotations attributed to characters, documents, or sources."),
+                new("bi-chat-quote",          "/vocabulary",      "Vocabulary",      VocabRepo.Count(), false, "GLMZ-specific terminology: street slang, corporate jargon, technical terms."),
+                new("bi-newspaper",           "/news",            "News Archive",    NewsRepo.Count(), false, "Period news articles and headlines from the GLMZ media ecosystem."),
+                new("bi-film",                "/entertainment",   "Entertainment",   EntertainmentRepo.Count(), false, "Films, books, music, and games that exist in-world — pop culture characters reference."),
+                new("bi-basket",              "/goods",           "Consumer Goods",  GoodsRepo.Count(), false, "Branded products characters consume: Libation Corp drinks, branded foods, household items."),
             ],
             "Tools" => BuildToolsTiles(),
             "Visualizations" =>

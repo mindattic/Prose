@@ -7,6 +7,7 @@
 @inject IPathProvider Paths
 @inject XrefService XrefSvc
 @inject ExportDiscoveryService ExportDiscovery
+@inject CanonExportService CanonExport
 @* @inject FtpPublishService FtpSvc *@
 @inject HtmlExportService HtmlExportSvc
 @inject AuthService Auth
@@ -201,6 +202,57 @@
 </div>
 
 @* FTP Publishing section removed — deploying via Azure CI/CD *@
+
+@* ── Canon Data Export ─────────────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted"><span><i class="bi bi-download"></i> Canon Data Export</span></div>
+            <div class="card-body">
+                <p class="text-muted small mb-3">
+                    Dump canon JSON to your Downloads folder.
+                    Per-repo and global exports are zipped; per-entity exports happen on each entity page.
+                </p>
+                <div class="row g-3 align-items-end">
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Export a single repo (.zip)</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="selectedRepo">
+                            <option value="">— pick a repo —</option>
+                            @foreach (var (name, count) in repoCounts)
+                            {
+                                <option value="@name">@(name) (@count)</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-outline-info" @onclick="DoExportRepo"
+                                disabled="@(exporting || string.IsNullOrEmpty(selectedRepo))">
+                            @if (exporting && exportScope == "repo") { <span class="spinner-border spinner-border-sm me-1"></span> }
+                            else { <i class="bi bi-file-zip me-1"></i> }
+                            <div class="btn-lbl">Export Repo</div>
+                        </button>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-end justify-content-end">
+                        <div class="text-end">
+                            <label class="form-label text-muted d-block">Everything, all repos in one archive.</label>
+                            <button class="btn btn-outline-warning" @onclick="DoExportAll" disabled="@exporting">
+                                @if (exporting && exportScope == "all") { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                else { <i class="bi bi-archive me-1"></i> }
+                                <div class="btn-lbl">Export Everything</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                @if (!string.IsNullOrEmpty(exportStatus))
+                {
+                    <div class="mt-3 small @(exportSuccess ? "text-success" : "text-danger")">
+                        @exportStatus
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
 
 @* ── LLM Providers ─────────────────────────────────────── *@
 <div class="row g-3 mb-3">
@@ -854,6 +906,9 @@
         if (ttsConfigured)
             await LoadVoices();
 
+        // Repo dropdown for canon export — auto-discovered, ordered by name.
+        repoCounts = ExportDiscovery.GetRepoCounts();
+
         var authState = await AuthStateProvider.GetAuthenticationStateAsync();
         var uid = authState.User.FindFirst("UserId")?.Value ?? "";
         if (!string.IsNullOrEmpty(uid))
@@ -1050,6 +1105,48 @@
 
     private Dictionary<string, List<(string name, string json)>> GetAllReposForExport()
         => ExportDiscovery.GetAllRepos();
+
+    // ── Canon JSON export (entity / repo / global) ────────
+    private string selectedRepo = "";
+    private bool exporting;
+    private string exportScope = "";   // "repo" | "all" — drives which spinner shows
+    private string? exportStatus;
+    private bool exportSuccess;
+    private List<(string name, int count)> repoCounts = [];
+
+    private async Task DoExportRepo()
+    {
+        if (string.IsNullOrWhiteSpace(selectedRepo)) return;
+        exporting = true; exportScope = "repo"; exportStatus = null;
+        StateHasChanged();
+        try
+        {
+            var r = await CanonExport.ExportRepoAsync(selectedRepo);
+            exportSuccess = true;
+            exportStatus = $"Saved {r.EntryCount} entries ({FormatBytes(r.Bytes)}) → {r.Path}";
+        }
+        catch (Exception ex) { exportSuccess = false; exportStatus = ex.Message; }
+        finally { exporting = false; exportScope = ""; StateHasChanged(); }
+    }
+
+    private async Task DoExportAll()
+    {
+        exporting = true; exportScope = "all"; exportStatus = null;
+        StateHasChanged();
+        try
+        {
+            var r = await CanonExport.ExportAllAsync();
+            exportSuccess = true;
+            exportStatus = $"Saved {r.EntryCount} entries across all repos ({FormatBytes(r.Bytes)}) → {r.Path}";
+        }
+        catch (Exception ex) { exportSuccess = false; exportStatus = ex.Message; }
+        finally { exporting = false; exportScope = ""; StateHasChanged(); }
+    }
+
+    private static string FormatBytes(long b) =>
+        b < 1024 ? $"{b} B" :
+        b < 1024 * 1024 ? $"{b / 1024.0:F1} KB" :
+        $"{b / 1024.0 / 1024.0:F2} MB";
 
     // ── SMTP test ─────────────────────────────────────────
     private bool smtpTesting;

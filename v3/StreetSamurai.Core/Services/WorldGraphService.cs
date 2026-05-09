@@ -20,6 +20,10 @@ public class WorldGraphService : IWorldGraphService
     private readonly Dictionary<string, HashSet<string>> typeIndex = new(StringComparer.OrdinalIgnoreCase);
     // Index: territory/location -> set of node IDs for spatial queries
     private readonly Dictionary<string, HashSet<string>> territoryIndex = new(StringComparer.OrdinalIgnoreCase);
+    // Index: nodeId -> total current edges incident to that node (out + in).
+    // Populated by RebuildIndexes; lets /dashboard's "top connected" widget
+    // skip the O(N×E) GetAllEdges loop and do a hash lookup instead.
+    private readonly Dictionary<string, int> edgeCountIndex = new(StringComparer.OrdinalIgnoreCase);
     private bool loaded;
     private bool loading;
 
@@ -79,10 +83,9 @@ public class WorldGraphService : IWorldGraphService
 
     /// <summary>
     /// Returns true when canon data has been modified more recently than the persisted
-    /// graph snapshot. After the SQL cutover, freshness is driven by
-    /// <c>Records.UpdatedAt</c> — any record newer than the graph snapshot file means
-    /// canon moved. The legacy file-mtime walk is kept as a fallback when no SQL
-    /// factory is available (test fixtures).
+    /// graph snapshot. SQL Server is the canonical source — freshness is driven by
+    /// <c>Records.UpdatedAt</c>. Any row newer than the graph snapshot file's mtime
+    /// means canon moved and the QuikGraph in memory needs a rebuild.
     /// </summary>
     private bool IsStale()
     {
@@ -92,46 +95,19 @@ public class WorldGraphService : IWorldGraphService
             if (!File.Exists(graphPath)) return true;
             var graphTime = File.GetLastWriteTimeUtc(graphPath);
 
-            // SQL-first: ask the canonical Record table for the most recent update.
-            if (sql != null)
+            if (sql == null)
             {
-                try
-                {
-                    using var ctx = sql.CreateDbContext();
-                    var maxUpdated = ctx.Records
-                        .OrderByDescending(r => r.UpdatedAt)
-                        .Select(r => (DateTime?)r.UpdatedAt)
-                        .FirstOrDefault();
-                    if (maxUpdated.HasValue && maxUpdated.Value.ToUniversalTime() > graphTime) return true;
-                    return false;
-                }
-                catch (Exception ex)
-                {
-                    Serilog.Log.Debug(ex, "SQL freshness probe failed; falling back to file mtime walk");
-                }
+                // No SQL connection (test fixture) — graph cache, if present, is
+                // considered authoritative; rebuilding requires a DB.
+                return false;
             }
 
-            // Fallback (test fixtures, pre-cutover environments): canon data dirs.
-            string[] canonDirs =
-            [
-                paths.CharactersDir,
-                Path.Combine(paths.EngineDataDir, "places"),
-                Path.Combine(paths.EngineDataDir, "factions"),
-                Path.Combine(paths.EngineDataDir, "corponations"),
-                Path.Combine(paths.EngineDataDir, "subsidiaries"),
-                Path.Combine(paths.EngineDataDir, "synthetics"),
-                Path.Combine(paths.EngineDataDir, "automata"),
-            ];
-
-            foreach (var d in canonDirs)
-            {
-                if (!Directory.Exists(d)) continue;
-                foreach (var f in Directory.EnumerateFiles(d, "*.json"))
-                {
-                    if (File.GetLastWriteTimeUtc(f) > graphTime) return true;
-                }
-            }
-            return false;
+            using var ctx = sql.CreateDbContext();
+            var maxUpdated = ctx.Records
+                .OrderByDescending(r => r.UpdatedAt)
+                .Select(r => (DateTime?)r.UpdatedAt)
+                .FirstOrDefault();
+            return maxUpdated.HasValue && maxUpdated.Value.ToUniversalTime() > graphTime;
         }
         catch (Exception ex)
         {
@@ -763,6 +739,7 @@ public class WorldGraphService : IWorldGraphService
     {
         typeIndex.Clear();
         territoryIndex.Clear();
+        edgeCountIndex.Clear();
         foreach (var node in _nodes.Values)
         {
             if (!string.IsNullOrWhiteSpace(node.NodeType))
@@ -776,6 +753,29 @@ public class WorldGraphService : IWorldGraphService
             }
             IndexNodeTerritory(node);
         }
+        // One pass over edges populates incident-count for every node — turns
+        // the dashboard "top connected" loop from O(N×E) to O(N+E) build +
+        // O(1) lookup. Only counts current edges to match GetAllEdges semantics.
+        foreach (var e in _graph.Edges)
+        {
+            if (!e.IsCurrent) continue;
+            if (!string.IsNullOrEmpty(e.Source))
+                edgeCountIndex[e.Source] = edgeCountIndex.GetValueOrDefault(e.Source) + 1;
+            if (!string.IsNullOrEmpty(e.Target) && !string.Equals(e.Source, e.Target, StringComparison.OrdinalIgnoreCase))
+                edgeCountIndex[e.Target] = edgeCountIndex.GetValueOrDefault(e.Target) + 1;
+        }
+    }
+
+    /// <summary>
+    /// O(1) lookup for the total current incident-edge count for a node. Equivalent
+    /// to <c>GetAllEdges(nodeId).Count</c> but uses the precomputed index from
+    /// <see cref="RebuildIndexes"/> — required for the /dashboard "top connected"
+    /// widget which would otherwise be O(N×E).
+    /// </summary>
+    public int GetEdgeCount(string nodeId)
+    {
+        EnsureLoaded();
+        return edgeCountIndex.GetValueOrDefault(nodeId);
     }
 
     /// <summary>Get territory index stats for display.</summary>

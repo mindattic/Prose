@@ -24,6 +24,8 @@ public static class RepairCli
         var withState      = args.Contains("--extract-state");
         var withChorusSeed = args.Contains("--seed-chorus");
         var withLinkAmmo   = args.Contains("--link-ammunition");
+        // --prune-json-* / --prune-types retired 2026-05-08 with JsonPruneService;
+        // engine/data/*.json no longer exists, so there's nothing to prune.
         var force          = args.Contains("--force");
 
         var repair = sp.GetRequiredService<StoryRepairService>();
@@ -40,6 +42,18 @@ public static class RepairCli
         await ammoLinker.EnsureGearEntityIdColumnAsync(ct);
         var stateLedger = sp.GetRequiredService<StreetSamurai.Core.Services.WorldStateLedger>();
         await stateLedger.EnsureSchemaAsync(ct);
+        var eventLog = sp.GetRequiredService<StreetSamurai.Core.Services.EventLogService>();
+        await eventLog.EnsureEventsJsonColumnAsync(ct);
+        var knowledgeMap = sp.GetRequiredService<StreetSamurai.Core.Services.KnowledgeMapService>();
+        await knowledgeMap.EnsureKnowledgeJsonColumnAsync(ct);
+        var outlineSvc = sp.GetRequiredService<StreetSamurai.Core.Services.OutlineService>();
+        await outlineSvc.EnsureOutlineJsonColumnAsync(ct);
+        var refinementSvc = sp.GetRequiredService<StreetSamurai.Core.Services.StoryRefinementService>();
+        await refinementSvc.EnsureRefinementReportColumnAsync(ct);
+        var qualitySvc = sp.GetRequiredService<StreetSamurai.Core.Services.StoryQualityService>();
+        await qualitySvc.EnsureQualityReportColumnAsync(ct);
+        var directorSvc = sp.GetRequiredService<StreetSamurai.Core.Services.StoryDirectorService>();
+        await directorSvc.EnsureCheckpointColumnAsync(ct);
 
         var timeline = repair.RepairTimelines(ct);
         Console.WriteLine();
@@ -60,13 +74,13 @@ public static class RepairCli
         {
             Console.WriteLine();
             Console.WriteLine("Skipping LLM/repair phases. Add one of:");
-            Console.WriteLine("  --continuity        LLM continuity-claim extraction");
-            Console.WriteLine("  --beat-facts        knowledge + conditions extraction");
-            Console.WriteLine("  --backfill-dates    populate Chapter/Beat InWorldDate via LLM");
-            Console.WriteLine("  --fix-mojibake      reverse double-encoded UTF-8 in every NVARCHAR column");
-            Console.WriteLine("  --extract-state     emit EntityStateEvents from chapter beats");
-            Console.WriteLine("  --seed-chorus       insert canonical specs + ammo + Kyle link for Chorus");
-            Console.WriteLine("  --link-ammunition   bulk LLM pass: tie every firearm to compatible ammunition");
+            Console.WriteLine("  --continuity            LLM continuity-claim extraction");
+            Console.WriteLine("  --beat-facts            knowledge + conditions extraction");
+            Console.WriteLine("  --backfill-dates        populate Chapter/Beat InWorldDate via LLM");
+            Console.WriteLine("  --fix-mojibake          reverse double-encoded UTF-8 in every NVARCHAR column");
+            Console.WriteLine("  --extract-state         emit EntityStateEvents from chapter beats");
+            Console.WriteLine("  --seed-chorus           insert canonical specs + ammo + Kyle link for Chorus");
+            Console.WriteLine("  --link-ammunition       bulk LLM pass: tie every firearm to compatible ammunition");
             return failures > 0 ? 1 : 0;
         }
 

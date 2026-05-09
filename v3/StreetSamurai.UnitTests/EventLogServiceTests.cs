@@ -14,7 +14,11 @@ public class EventLogServiceTests
         testDir = Path.Combine(Path.GetTempPath(), $"ss_test_{Guid.NewGuid():N}");
         Directory.CreateDirectory(Path.Combine(testDir, "story_blocks"));
         var paths = new TestPathProviderWithRoot(testDir);
-        svc = new EventLogService(new FakeLlmService(), paths, NullLoggers.For<EventLogService>());
+        svc = new EventLogService(
+            new FakeLlmService(),
+            paths,
+            StreetSamurai.Core.Data.TestDbFactory.For(paths, "events"),
+            NullLoggers.For<EventLogService>());
     }
 
     [TearDown]
@@ -114,13 +118,41 @@ public class EventLogServiceTests
     }
 
     [Test]
-    public void PersistsToDisk()
+    public void PersistsToDb()
     {
-        svc.AddEvent("proj1", new StoryEvent { Id = "e1", Summary = "test event" });
+        // Seed a Chapter row so SaveToDb actually persists. The service is a
+        // no-op write when no Chapters row exists for the project id.
+        var paths = new TestPathProviderWithRoot(testDir);
+        var dbFactory = StreetSamurai.Core.Data.TestDbFactory.For(paths, "events");
+        var chapterId = Guid.NewGuid();
+        using (var db = dbFactory.CreateDbContext())
+        {
+            db.Entities.Add(new StreetSamurai.Core.Data.Entities.Entity
+            {
+                Id = chapterId,
+                EntityType = "chapter",
+                Name = "PersistsToDb test",
+                Slug = $"persists-to-db-{chapterId:N}",
+                Status = "canon",
+            });
+            db.Chapters.Add(new StreetSamurai.Core.Data.Entities.Chapter
+            {
+                Id = chapterId,
+                Title = "PersistsToDb test",
+            });
+            db.SaveChanges();
+        }
 
-        // Create new service instance pointing to same directory
-        var svc2 = new EventLogService(new FakeLlmService(), new TestPathProviderWithRoot(testDir), NullLoggers.For<EventLogService>());
-        var events = svc2.GetEvents("proj1");
+        // Build an EventLogService bound to the same in-memory DB instance.
+        var svcLocal = new EventLogService(
+            new FakeLlmService(), paths, dbFactory, NullLoggers.For<EventLogService>());
+        svcLocal.AddEvent(chapterId.ToString("N"),
+            new StoryEvent { Id = "e1", Summary = "test event" });
+
+        // New service instance, same DbContextFactory → reads from DB.
+        var svcLocal2 = new EventLogService(
+            new FakeLlmService(), paths, dbFactory, NullLoggers.For<EventLogService>());
+        var events = svcLocal2.GetEvents(chapterId.ToString("N"));
         Assert.That(events, Has.Count.EqualTo(1));
         Assert.That(events[0].Summary, Is.EqualTo("test event"));
     }

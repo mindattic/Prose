@@ -25,13 +25,16 @@ public class SettingsService : IDisposable
         Load();
         MigrateLegacyCredentialsToSharedStore();
 
-        // Auto-detect canon root if not set or current path has insufficient data
+        // Auto-detect canon root if not set or current path has insufficient data.
+        // Post-archival, "valid canon" means the engine dir exists and has the
+        // standard subfolders — entity content lives in SQL now, not on disk,
+        // so the old "≥ 10 .json files" heuristic no longer applies.
         var engineDir = string.IsNullOrWhiteSpace(data.CanonRootPath)
             ? ""
             : Path.Combine(data.CanonRootPath, Constants.Folders.Engine);
         var hasData = !string.IsNullOrWhiteSpace(engineDir)
             && Directory.Exists(engineDir)
-            && Directory.EnumerateFiles(engineDir, "*.json", SearchOption.AllDirectories).Take(10).Count() >= 10;
+            && Directory.Exists(Path.Combine(engineDir, "data"));
 
         if (!hasData)
         {
@@ -63,7 +66,7 @@ public class SettingsService : IDisposable
         {
             var candidateDir = Path.Combine(path, Constants.Folders.Engine);
             if (Directory.Exists(candidateDir) &&
-                Directory.EnumerateFiles(candidateDir, "*.json", SearchOption.AllDirectories).Take(10).Count() >= 10)
+                Directory.Exists(Path.Combine(candidateDir, "data")))
                 return path;
         }
 
@@ -184,7 +187,6 @@ public class SettingsService : IDisposable
     public string OpenRouterModel { get => data.OpenRouterModel; set { data.OpenRouterModel = value; ScheduleSave(); } }
     public string FireworksModel { get => data.FireworksModel; set { data.FireworksModel = value; ScheduleSave(); } }
     public string CohereModel { get => data.CohereModel; set { data.CohereModel = value; ScheduleSave(); } }
-    public string OllamaChatModel { get => data.OllamaChatModel; set { data.OllamaChatModel = value; ScheduleSave(); } }
     public string MapService { get => data.MapService; set { data.MapService = value; ScheduleSave(); } }
     public string MapAppId { get => Env("SS_MAP_APP_ID", data.MapAppId); set { data.MapAppId = value; ScheduleSave(); } }
     public string MapApiKey
@@ -398,7 +400,6 @@ public class SettingsService : IDisposable
         public string OpenRouterModel { get; set; } = "meta-llama/llama-3.3-70b-instruct";
         public string FireworksModel { get; set; } = "accounts/fireworks/models/llama-v3p3-70b-instruct";
         public string CohereModel { get; set; } = "command-a-03-2025";
-        public string OllamaChatModel { get; set; } = "qwen3:1.7b";
         public string MapService { get; set; } = "google";
         public string MapAppId { get; set; } = "";
         public string MapApiKey { get; set; } = "";
