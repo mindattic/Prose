@@ -13,6 +13,7 @@
 @inject MarkdownService Md
 @inject FindingsService Findings
 @inject BeatGeneratorService BeatGen
+@inject BookOutlineService OutlineSvc
 @inject DatabaseService CanonDb
 @inject DialogueService Dialogue
 @inject ToastNotifier Toast
@@ -285,6 +286,18 @@
                     </button>
                     @if (book != null)
                     {
+                        <button class="btn btn-sm btn-outline-warning"
+                                title="Compare this chapter's outline against the prose; persists drift as findings"
+                                disabled="@(checkingDrift || chapter == null)" @onclick="CheckOutlineDrift">
+                            @if (checkingDrift)
+                            {
+                                <span class="spinner-border spinner-border-sm"></span>
+                            }
+                            else
+                            {
+                                <i class="bi bi-shield-check"></i>
+                            }
+                        </button>
                         <a href="@($"/publish/{book.Id}")" class="btn btn-sm btn-outline-secondary"
                            title="Publish — EPUB / HTML / Markdown / Audio">
                             <i class="bi bi-cloud-download"></i>
@@ -532,6 +545,10 @@
     // OOC drift detected on the most recent expand — surfaced inline in the
     // beat panel with "edit prose" or "add to canon" affordances.
     private List<OocFinding> oocFindings = new();
+    // Outline-vs-prose drift audit state. Drift findings are persisted to
+    // FindingsService so they appear in the regular findings sidebar instead
+    // of needing a parallel surface.
+    private bool checkingDrift;
     // localStorage-backed resume: at most one redirect attempt per page load
     // so we don't ping-pong if the saved selection was deleted.
     private bool redirectAttempted;
@@ -739,6 +756,64 @@
     {
         try { await JS.InvokeVoidAsync("ssState.restoreCursorById", $"beat-blurb-{beatId}", $"write:beat-cursor:{beatId}"); }
         catch { }
+    }
+
+    /// <summary>
+    /// Fire the outline-vs-prose drift audit for the current chapter.
+    /// Findings are written into the FindingsService so they show up in the
+    /// existing findings sidebar — no parallel UI surface needed.
+    /// </summary>
+    private async Task CheckOutlineDrift()
+    {
+        if (book == null || chapter == null || checkingDrift) return;
+        checkingDrift = true;
+        StateHasChanged();
+        try
+        {
+            var prose = pageMarkdown ?? "";
+            if (string.IsNullOrWhiteSpace(prose))
+            {
+                Toast.Warning("DRIFT-EMPTY", "No prose written yet — nothing to compare against the outline.");
+                return;
+            }
+            var drifts = await OutlineSvc.DetectChapterDriftAsync(book.Id, chapter.Id, prose);
+            if (drifts.Count == 0)
+            {
+                Toast.Success("DRIFT-NONE", "Prose delivers the outline. No drift.");
+                return;
+            }
+            // Persist each drift as a finding so it lives in the inbox + sidebar.
+            foreach (var d in drifts)
+            {
+                Findings.Upsert(
+                    filePath: $"chapter:{chapter.Id}",
+                    chapterId: chapter.Id,
+                    category: FindingCategory.Other,
+                    severity: d.Kind == "contradiction" ? FindingSeverity.High : FindingSeverity.Medium,
+                    summary: $"OUTLINE-DRIFT [{d.Kind}]: {d.Summary}",
+                    snippet: $"Outline says: {d.OutlineSays}\nProse says: {d.ProseSays}",
+                    suggestedFix: d.Kind switch
+                    {
+                        "missing"       => "Either deliver this beat in the prose or trim it from the outline.",
+                        "contradiction" => "Reconcile — the outline and the prose disagree.",
+                        "extra"         => "If this addition belongs, fold it into the outline body.",
+                        _               => "Review and reconcile.",
+                    });
+            }
+            // Refresh the sidebar so the new findings show up immediately.
+            LoadFindings();
+            if (!showFindings) showFindings = true;
+            Toast.Warning("DRIFT-FOUND", $"{drifts.Count} drift finding(s) added — see the sidebar.");
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("DRIFT-FAIL", $"Drift audit failed: {ex.Message}");
+        }
+        finally
+        {
+            checkingDrift = false;
+            StateHasChanged();
+        }
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
