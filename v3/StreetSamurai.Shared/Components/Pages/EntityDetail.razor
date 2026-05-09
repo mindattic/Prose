@@ -1383,6 +1383,30 @@ else if (CurrentTab == "record" && document != null)
 
 </div>
 
+<style>
+    /* Tab strip — 9 tabs is unworkable on a phone; scroll horizontally instead
+       of wrapping or squeezing. flex-shrink:0 on each tab keeps the labels
+       readable; the row itself becomes a horizontal scroller. */
+    .entity-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+    .entity-tabs .nav-item { flex-shrink: 0; }
+
+    @@media (max-width: 768px) {
+        .entity-detail-page { padding: 0 4px; }
+        .entity-tabs .nav-link { padding: 4px 8px; font-size: 0.8rem; }
+        .entity-tabs .nav-link .badge { font-size: 0.65rem; }
+        /* Bootstrap col-md-* already stack on xs/sm; the dense fields below
+           the tabs are the worst offenders for cramped layouts — let them
+           breathe. */
+        .entity-detail-page .row.g-2 > [class*="col-"] { padding: 4px; }
+        .entity-detail-page .card-body { padding: 8px; }
+    }
+</style>
+
 @code {
     [Parameter] public string EntityId { get; set; } = "";
 
