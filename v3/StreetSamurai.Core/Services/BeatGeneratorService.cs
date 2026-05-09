@@ -105,6 +105,7 @@ public class BeatGeneratorService
     /// </summary>
     public async Task<List<string>> SuggestNextBeatsAsync(
         string sceneSoFar, string chapterTitle, string povCharacter,
+        string povCharacterProfile = "",
         int count = 5, CancellationToken ct = default)
     {
         if (voting is null) return new List<string>();
@@ -114,6 +115,12 @@ public class BeatGeneratorService
             ctxBuilder.AppendLine($"CHAPTER: {chapterTitle}");
         if (!string.IsNullOrWhiteSpace(povCharacter))
             ctxBuilder.AppendLine($"POV: {povCharacter}");
+        if (!string.IsNullOrWhiteSpace(povCharacterProfile))
+        {
+            ctxBuilder.AppendLine();
+            ctxBuilder.AppendLine("POV CHARACTER PROFILE:");
+            ctxBuilder.AppendLine(povCharacterProfile);
+        }
         ctxBuilder.AppendLine();
         if (!string.IsNullOrWhiteSpace(sceneSoFar))
         {
@@ -128,21 +135,26 @@ public class BeatGeneratorService
         var request = new VoteRequest
         {
             Question =
-                "Propose ONE next beat for this chapter — a 1-2 sentence blurb describing what " +
-                "should happen next. Be specific (named places, named characters, a concrete action " +
-                "or revelation), not generic. Lean into texture: implications, mood shifts, the " +
-                "moment something changes. Output ONLY the blurb, no preamble, no quotes, no list.",
+                "Propose ONE next beat for this scene through YOUR area of expertise. 1-2 sentences. " +
+                "Be specific — named places, named characters, a concrete action or revelation. " +
+                "Lean into your specialty: what does it notice and want to surface here that other " +
+                "lenses might miss? Output ONLY the blurb. No preamble, no quotes, no list.",
             Context = ctxBuilder.ToString(),
             MaxTokens = 220,
             Temperature = 0.95,
             SynthesizeNarrative = false,
         };
 
+        // 10 expert-archetype personas spread 25/25/25/25 across the trusted four,
+        // each pinned to that provider's HIGH-tier model (opus-class). Diverse
+        // generation step — quality matters over volume here, so we pay for the
+        // strong models on a small panel.
+        var experts = BuildExpertPanel();
+
         VotingResult result;
         try
         {
-            // Plurality: we don't want consensus, we want every voter's distinct take.
-            result = await voting.VoteAsync(request, Quorum.Plurality, ct);
+            result = await voting.VoteWithProfilesAsync(request, Quorum.Plurality, experts, ct);
         }
         catch
         {
@@ -159,6 +171,94 @@ public class BeatGeneratorService
 
         return blurbs;
     }
+
+    /// <summary>
+    /// 10 expert-archetype voters — each a different specialty that the kind of
+    /// fiction this app produces benefits from. Provider distribution is
+    /// round-robin across the trusted four (claude/openai/gemini/deepseek);
+    /// each is pinned to the provider's HIGH-tier model (opus-class) because
+    /// generation quality dominates this stage. Personas are FIXED archetypes
+    /// (not random) so every panel includes the same lenses — the variation
+    /// comes from each lens's reading of the scene, not from sampling noise.
+    /// </summary>
+    private static IReadOnlyList<VoterProfile> BuildExpertPanel()
+    {
+        var experts = new (string Name, string Lens)[]
+        {
+            ("Master Swordsman",
+                "You're a master swordsman. You read distance, threat, opening, blade lineage. " +
+                "You see who in a room can fight and who only thinks they can. You notice draw stances, " +
+                "hand position, what's hidden behind a coat."),
+            ("Bar / Crowd Specialist",
+                "You're an expert on bars, dive scenes, and crowd dynamics. You read the room — " +
+                "who's watching, whose attention shifted, what the bartender's eyes do. " +
+                "Atmosphere, side conversations, the moment a room changes mood are your craft."),
+            ("Negotiation Tactician",
+                "You're a master of high-stakes negotiation under threat. You read leverage, " +
+                "framing, power moves, what each side cannot afford to admit. You see deals being " +
+                "struck behind a sentence about the weather."),
+            ("Voice & Dialogue Master",
+                "You're a craft master of dialogue. Subtext is your medium — what's NOT said, " +
+                "register flips, the line that lands like a counterweight. You hate dialogue tags."),
+            ("Pacing Dramatist",
+                "You're a master of beat rhythm. You feel when to escalate, when to hold, " +
+                "when to deflate before the next reveal. You read scenes as music — tempo, rest, " +
+                "the bar before the chord change."),
+            ("Character Psychology",
+                "You're an expert in interior life. Motivation, blind spots, the gap between what " +
+                "a character wants and what they think they want. You make sure inner monologue is " +
+                "specific, not abstract — anchored to the character's documented psychology."),
+            ("Cyberpunk Genre Specialist",
+                "You're an expert in cyberpunk texture — augments, neural interfaces, BCI cognition, " +
+                "the felt sense of running parallel processes in the head while a hand stays still. " +
+                "Body horror, grace, and tech-as-subtext are your beats."),
+            ("World-Grounding (GLMZ)",
+                "You're an expert in this story's world — GLMZ / Meridian 88, corponation politics, " +
+                "the Pulse, factions, the Tier system, the Sponsorship Program. You catch when " +
+                "prose drifts into generic cyberpunk and pull it back into THIS world's specifics."),
+            ("Literary Craft",
+                "You're an expert in line-level prose. Image, sound, rhythm, the sentence that earns " +
+                "its weight by what it leaves out. You're allergic to clichés and to neat resolutions."),
+            ("Continuity Guardian",
+                "You track what's been established — earlier beats, character state, threads " +
+                "opened-not-closed, reveals already deployed. You catch when a proposed beat would " +
+                "contradict canon or repeat a beat that already fired."),
+        };
+
+        var providers = new[] { "claude", "openai", "gemini", "deepseek" };
+        var voters = new List<VoterProfile>(experts.Length);
+        for (int i = 0; i < experts.Length; i++)
+        {
+            var (name, lens) = experts[i];
+            var providerId    = providers[i % providers.Length];
+            var modelOverride = HighTierModelFor(providerId);
+            voters.Add(new VoterProfile
+            {
+                VoterId             = $"expert-{i:D2}-{Guid.NewGuid().ToString("N")[..8]}",
+                Name                = name,
+                ProviderId          = providerId,
+                ModelOverride       = modelOverride,
+                PersonalityMarkdown = lens,
+            });
+        }
+        return voters;
+    }
+
+    /// <summary>
+    /// Pin each provider to its HIGH-tier model (opus-class) for prose-quality
+    /// generation. Mirrors LowTierModelFor — same bridge pattern. Will be
+    /// replaced with LlmProviderCatalog.GetTieredModel(provider, ModelTier.High)
+    /// once the running app's Legion DLL lock clears and the consumer bin
+    /// dir picks up the rebuilt Legion.
+    /// </summary>
+    private static string? HighTierModelFor(string providerId) => providerId switch
+    {
+        "claude"   => "claude-opus-4-7",
+        "openai"   => "gpt-4.1",
+        "gemini"   => "gemini-2.5-pro",
+        "deepseek" => "deepseek-reasoner",
+        _          => null,
+    };
 
     /// <summary>
     /// Score and rank candidate beat blurbs with a 100-persona panel

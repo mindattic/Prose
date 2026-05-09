@@ -6,6 +6,7 @@
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
 @using StreetSamurai.Core.Services
+@using StreetSamurai.Shared.Services
 @using Microsoft.AspNetCore.Components.Routing
 @inject IBookRepository Books
 @inject IChapterRepository Chapters
@@ -14,6 +15,7 @@
 @inject BeatGeneratorService BeatGen
 @inject DatabaseService CanonDb
 @inject DialogueService Dialogue
+@inject ToastNotifier Toast
 @inject NavigationManager Nav
 @inject IJSRuntime JS
 
@@ -769,6 +771,7 @@
         catch (Exception ex)
         {
             beatStatus = $"Error: {ex.Message}";
+            Toast.Error("BEAT-SUGGEST-FAIL", $"Couldn't suggest beats: {ex.Message}");
         }
         finally
         {
@@ -823,6 +826,7 @@
         catch (Exception ex)
         {
             beatStatus = $"Error: {ex.Message}";
+            Toast.Error("BEAT-RANK-FAIL", $"Couldn't rank beats: {ex.Message}");
         }
         finally
         {
@@ -900,6 +904,7 @@
         catch (Exception ex)
         {
             beatStatus = $"Error: {ex.Message}";
+            Toast.Error("BEAT-EXPAND-FAIL", $"Couldn't expand beat: {ex.Message}");
         }
         finally
         {

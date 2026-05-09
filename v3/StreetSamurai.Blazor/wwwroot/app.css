@@ -178,6 +178,82 @@ html, body {
 .topnav-link:hover { background: #21262d; color: #e6edf3 !important; }
 .topnav-link:focus, .topnav-link:active, .topnav-link.show { outline: none !important; box-shadow: none !important; border-color: transparent !important; background: #21262d; }
 .topnav-link.active { color: #dc3545 !important; background: none; }
+/* ── Toasts (bottom-center, level-styled) ─────────────────────────────────
+   Counterpart of wwwroot/js/toasts.js. Container is fixed at the bottom
+   center; toasts stack upward as they accumulate. Errors get a red accent
+   strip and a longer dismiss timeout (handled in JS). */
+#ss-toasts-container {
+    position: fixed;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    z-index: 9999;
+    pointer-events: none;
+}
+.ss-toast {
+    pointer-events: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 280px;
+    max-width: 480px;
+    padding: 10px 14px 10px 12px;
+    background: #1a1d24;
+    color: #e6edf3;
+    border: 1px solid #2a2e37;
+    border-left-width: 3px;
+    border-radius: 4px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    font-size: 0.88rem;
+}
+.ss-toast--shown { opacity: 1; transform: translateY(0) scale(1); }
+.ss-toast--leaving { opacity: 0; transform: translateY(8px) scale(0.98); }
+.ss-toast--error   { border-left-color: #ff0033; }
+.ss-toast--warn    { border-left-color: #ffc107; }
+.ss-toast--info    { border-left-color: #5be; }
+.ss-toast--success { border-left-color: #2ecc71; }
+.ss-toast-icon {
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    line-height: 1.2;
+}
+.ss-toast--error   .ss-toast-icon { color: #ff5577; }
+.ss-toast--warn    .ss-toast-icon { color: #ffd766; }
+.ss-toast--info    .ss-toast-icon { color: #88c5ee; }
+.ss-toast--success .ss-toast-icon { color: #6fdc99; }
+.ss-toast-body { flex: 1; min-width: 0; }
+.ss-toast-code {
+    font-family: monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #888;
+    margin-bottom: 2px;
+}
+.ss-toast-msg { line-height: 1.35; word-wrap: break-word; }
+.ss-toast-close {
+    background: transparent;
+    border: 0;
+    color: #888;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.ss-toast-close:hover { color: #fff; }
+@media (max-width: 768px) {
+    #ss-toasts-container { left: 8px; right: 8px; bottom: 12px; transform: none; }
+    .ss-toast { min-width: 0; max-width: none; }
+}
 /* Inbox-count badge — perfect circle, padded to optically center the number.
    !important on top/position because Bootstrap's .position-absolute and
    .top-0 utility classes would otherwise win over the size+offset we want. */
