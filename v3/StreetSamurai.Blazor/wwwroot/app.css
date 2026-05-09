@@ -178,6 +178,18 @@ html, body {
 .topnav-link:hover { background: #21262d; color: #e6edf3 !important; }
 .topnav-link:focus, .topnav-link:active, .topnav-link.show { outline: none !important; box-shadow: none !important; border-color: transparent !important; background: #21262d; }
 .topnav-link.active { color: #dc3545 !important; background: none; }
+/* Inbox-count badge — perfect circle, padded to optically center the number.
+   !important on top/position because Bootstrap's .position-absolute and
+   .top-0 utility classes would otherwise win over the size+offset we want. */
+.inbox-count {
+    font-size: .6rem;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    padding: 4px 0 0 0;
+    top: 5px !important;
+    position: absolute !important;
+}
 /* User board — custom Blazor dropdown */
 .ub-wrap { position: relative; display: inline-flex; }
 .ub-backdrop { position: fixed; inset: 0; z-index: 999; }
