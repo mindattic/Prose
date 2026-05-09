@@ -81,7 +81,7 @@
                 @foreach (var b in seriesBooks)
                 {
                     <span class="series-book-pill-group">
-                        <a class="series-book-pill" href="@($"/books/{b.Id}/chapters")">
+                        <a class="series-book-pill" href="@($"/write/{b.Id}")">
                             <span class="text-light">@b.Title</span>
                             <span class="badge bg-dark ms-1">@b.ChapterIds.Count</span>
                         </a>
