@@ -143,6 +143,25 @@ public enum OutlineStatus
 }
 
 /// <summary>
+/// Thrown when book-context prose generation is attempted before the book's
+/// outline is <see cref="OutlineStatus.Approved"/>. Callers that drive prose
+/// generation against a specific book should call
+/// <c>BookOutlineService.EnsureApprovedForGeneration(bookId)</c> first.
+/// </summary>
+public class OutlineNotApprovedException : InvalidOperationException
+{
+    public string BookId { get; }
+    public OutlineStatus CurrentStatus { get; }
+
+    public OutlineNotApprovedException(string bookId, OutlineStatus currentStatus)
+        : base($"Book '{bookId}' outline must be Approved before chapter generation; currently {currentStatus}.")
+    {
+        BookId = bookId;
+        CurrentStatus = currentStatus;
+    }
+}
+
+/// <summary>
 /// One LLM-proposed adjustment to keep the outline coherent after a user edit.
 /// Lives transiently on <see cref="BookOutline"/> until accepted or dismissed.
 /// </summary>
