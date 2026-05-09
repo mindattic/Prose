@@ -140,7 +140,7 @@ else
                     @foreach (var ch in outline.Chapters)
                     {
                         var pendingHere = outline.PendingAdjustments.Count(a => a.ChapterId == ch.ChapterId && a.Status == ReviewStatus.Pending);
-                        var isEmpty = string.IsNullOrEmpty(ch.LongSynopsis) && !ch.KeyBeats.Any();
+                        var isEmpty = string.IsNullOrWhiteSpace(ch.EffectiveBody);
                         <a href="@($"#ch-{ch.Number}")" class="outline-toc-item">
                             <span class="text-muted">@ch.Number.</span>
                             <span class="ms-1">@ch.Title</span>
@@ -222,45 +222,18 @@ else
                         </div>
                         <div class="card-body">
                             <div class="row g-2">
-                                <div class="col-md-6">
-                                    <label class="form-label small text-muted mb-1">Short synopsis (one sentence)</label>
-                                    <input class="form-control bg-black text-light border-secondary small" @bind="ch.ShortSynopsis" />
-                                </div>
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label class="form-label small text-muted mb-1">POV character</label>
                                     <input class="form-control bg-black text-light border-secondary small" @bind="ch.PovCharacter" />
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label small text-muted mb-1">Long synopsis (one paragraph)</label>
-                                    <textarea class="form-control bg-black text-light border-secondary small" rows="3" @bind="ch.LongSynopsis"></textarea>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label small text-muted mb-1">Key beats (one per line)</label>
-                                    <textarea class="form-control bg-black text-light border-secondary small" rows="4"
-                                              @bind="keyBeatsText[ch.ChapterId]"
-                                              @bind:after="() => SyncBeats(ch)"></textarea>
-                                </div>
-                                <div class="col-md-3">
-                                    <label class="form-label small text-muted mb-1">Opens threads</label>
-                                    <textarea class="form-control bg-black text-light border-secondary small" rows="4"
-                                              @bind="opensThreadsText[ch.ChapterId]"
-                                              @bind:after="() => SyncOpens(ch)"></textarea>
-                                </div>
-                                <div class="col-md-3">
-                                    <label class="form-label small text-muted mb-1">Closes threads</label>
-                                    <textarea class="form-control bg-black text-light border-secondary small" rows="4"
-                                              @bind="closesThreadsText[ch.ChapterId]"
-                                              @bind:after="() => SyncCloses(ch)"></textarea>
-                                </div>
-                                <div class="col-12">
                                     <label class="form-label small text-muted mb-1">
-                                        State changes by end of chapter
-                                        <span class="text-muted ms-1">— one per line: <code class="small">Name: what changed</code></span>
+                                        Outline
+                                        <span class="text-muted ms-1">— one paragraph: what happens, what beats fire, what threads open or close, end-state.</span>
                                     </label>
-                                    <textarea class="form-control bg-black text-light border-secondary small" rows="3"
-                                              placeholder="Kyle: ribs cracked, owes Pixel a favor&#10;Sasha: now knows about the Reliquary"
-                                              @bind="stateChangesText[ch.ChapterId]"
-                                              @bind:after="() => SyncStateChanges(ch)"></textarea>
+                                    <textarea class="form-control bg-black text-light border-secondary small" rows="6"
+                                              placeholder="Kyle takes the contract knowing Hua's reading the same dossier…"
+                                              @bind="ch.Body"></textarea>
                                 </div>
                             </div>
 
@@ -391,10 +364,6 @@ else
     private CancellationTokenSource? autopilotCts;
 
     // Per-chapter list-field text buffers (line-per-item).
-    private Dictionary<string, string> keyBeatsText = new();
-    private Dictionary<string, string> opensThreadsText = new();
-    private Dictionary<string, string> closesThreadsText = new();
-    private Dictionary<string, string> stateChangesText = new();
 
     private bool HasPendingAdjustments =>
         outline?.PendingAdjustments.Any(a => a.Status == ReviewStatus.Pending) ?? false;
@@ -410,42 +379,13 @@ else
         bookDirty = false;
     }
 
-    private void BuildBuffers()
-    {
-        if (outline == null) return;
-        keyBeatsText = outline.Chapters.ToDictionary(c => c.ChapterId, c => string.Join("\n", c.KeyBeats));
-        opensThreadsText = outline.Chapters.ToDictionary(c => c.ChapterId, c => string.Join("\n", c.OpensThreads));
-        closesThreadsText = outline.Chapters.ToDictionary(c => c.ChapterId, c => string.Join("\n", c.ClosesThreads));
-        stateChangesText = outline.Chapters.ToDictionary(
-            c => c.ChapterId,
-            c => string.Join("\n", c.StateChanges.Select(kv => $"{kv.Key}: {kv.Value}")));
-    }
+    // BuildBuffers used to materialize line-joined dictionaries for the legacy
+    // multi-textarea editor. With the single Body textarea binding directly to
+    // ch.Body, no buffers are needed — kept as a no-op so the existing Reload /
+    // GenerateFill / SaveAndReconsider call sites don't have to learn that.
+    private void BuildBuffers() { }
 
     private void MarkBookDirty() => bookDirty = true;
-
-    private void SyncBeats(BookChapterOutline ch) =>
-        ch.KeyBeats = SplitLines(keyBeatsText.GetValueOrDefault(ch.ChapterId, ""));
-    private void SyncOpens(BookChapterOutline ch) =>
-        ch.OpensThreads = SplitLines(opensThreadsText.GetValueOrDefault(ch.ChapterId, ""));
-    private void SyncCloses(BookChapterOutline ch) =>
-        ch.ClosesThreads = SplitLines(closesThreadsText.GetValueOrDefault(ch.ChapterId, ""));
-    private void SyncStateChanges(BookChapterOutline ch)
-    {
-        var dict = new Dictionary<string, string>();
-        foreach (var line in SplitLines(stateChangesText.GetValueOrDefault(ch.ChapterId, "")))
-        {
-            var colon = line.IndexOf(':');
-            if (colon <= 0) continue;
-            var name = line[..colon].Trim();
-            var delta = line[(colon + 1)..].Trim();
-            if (name.Length == 0 || delta.Length == 0) continue;
-            dict[name] = delta;
-        }
-        ch.StateChanges = dict;
-    }
-
-    private static List<string> SplitLines(string s) =>
-        s.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
 
     // ── Setup wizard ───────────────────────────────────────────────────
 
@@ -489,7 +429,7 @@ else
         StateHasChanged();
         try
         {
-            foreach (var ch in outline.Chapters) { SyncBeats(ch); SyncOpens(ch); SyncCloses(ch); SyncStateChanges(ch); }
+            // Body textareas bind directly to ch.Body — no sync step required.
             OutlineSvc.Save(outline);
             outline = await OutlineSvc.GenerateOutlineAsync(BookId);
             BuildBuffers();
@@ -514,7 +454,7 @@ else
         StateHasChanged();
         try
         {
-            SyncBeats(ch); SyncOpens(ch); SyncCloses(ch); SyncStateChanges(ch);
+            // Body textareas bind directly to ch.Body — no sync step required.
             OutlineSvc.Save(outline);
             outline = await OutlineSvc.ReconsiderAfterEditAsync(BookId, ch.ChapterId);
             BuildBuffers();
@@ -605,10 +545,10 @@ else
                     continue;
                 }
 
-                var synopsis = !string.IsNullOrEmpty(ch.LongSynopsis) ? ch.LongSynopsis : ch.ShortSynopsis;
+                var synopsis = ch.EffectiveBody;
                 if (string.IsNullOrWhiteSpace(synopsis) || synopsis.Length < 20)
                 {
-                    autopilotMessage = $"\"{ch.Title}\" has no synopsis — skipping.";
+                    autopilotMessage = $"\"{ch.Title}\" has no outline body — skipping.";
                     continue;
                 }
 

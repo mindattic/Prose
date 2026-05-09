@@ -97,7 +97,7 @@ public class CoWriterService
                 sb.AppendLine("CHAPTER OUTLINES (current state — your changes propose edits to this):");
                 foreach (var ch in outline.Chapters)
                 {
-                    sb.AppendLine($"  Ch {ch.Number} \"{ch.Title}\" [POV: {ch.PovCharacter}]: {ch.LongSynopsis}");
+                    sb.AppendLine($"  Ch {ch.Number} \"{ch.Title}\" [POV: {ch.PovCharacter}]: {ch.EffectiveBody}");
                 }
                 sb.AppendLine();
             }

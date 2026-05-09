@@ -128,7 +128,7 @@ public class ConversationalWriterService
                 {
                     sb.AppendLine("OUTLINE:");
                     foreach (var ch in ol.Chapters.OrderBy(c => c.Number))
-                        sb.AppendLine($"  Ch{ch.Number} \"{ch.Title}\" [POV {ch.PovCharacter}]: {ch.LongSynopsis}");
+                        sb.AppendLine($"  Ch{ch.Number} \"{ch.Title}\" [POV {ch.PovCharacter}]: {ch.EffectiveBody}");
                     sb.AppendLine();
                 }
             }

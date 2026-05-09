@@ -197,10 +197,12 @@ public class BookOutlineService
                 sb.Append($"  Ch {ch.Number} \"{ch.Title}\"");
                 if (!string.IsNullOrEmpty(ch.PovCharacter)) sb.Append($" [POV: {ch.PovCharacter}]");
                 sb.AppendLine();
-                if (!string.IsNullOrEmpty(ch.ShortSynopsis)) sb.AppendLine($"    {ch.ShortSynopsis}");
-                else if (!string.IsNullOrEmpty(ch.LongSynopsis)) sb.AppendLine($"    {Truncate(ch.LongSynopsis, 200)}");
-                if (ch.OpensThreads.Any()) sb.AppendLine($"    opens: {string.Join("; ", ch.OpensThreads)}");
-                if (ch.ClosesThreads.Any()) sb.AppendLine($"    closes: {string.Join("; ", ch.ClosesThreads)}");
+                var blurb = ch.EffectiveBody;
+                if (!string.IsNullOrWhiteSpace(blurb))
+                {
+                    foreach (var line in blurb.Split('\n', StringSplitOptions.RemoveEmptyEntries))
+                        sb.AppendLine($"    {line.TrimEnd()}");
+                }
             }
             sb.AppendLine();
         }
@@ -209,10 +211,10 @@ public class BookOutlineService
         {
             var current = outline.Chapters[currentIdx];
             sb.AppendLine($"── THIS CHAPTER ({current.Number}: \"{current.Title}\") ──");
-            if (!string.IsNullOrEmpty(current.LongSynopsis)) sb.AppendLine($"  synopsis: {current.LongSynopsis}");
-            if (current.KeyBeats.Any()) sb.AppendLine("  key beats: " + string.Join(" | ", current.KeyBeats));
-            if (current.OpensThreads.Any()) sb.AppendLine($"  must open: {string.Join("; ", current.OpensThreads)}");
-            if (current.ClosesThreads.Any()) sb.AppendLine($"  must close: {string.Join("; ", current.ClosesThreads)}");
+            var currentBlurb = current.EffectiveBody;
+            if (!string.IsNullOrWhiteSpace(currentBlurb))
+                foreach (var line in currentBlurb.Split('\n', StringSplitOptions.RemoveEmptyEntries))
+                    sb.AppendLine($"  {line.TrimEnd()}");
             sb.AppendLine();
         }
 
@@ -223,7 +225,9 @@ public class BookOutlineService
             {
                 var ch = outline.Chapters[i];
                 sb.Append($"  Ch {ch.Number} \"{ch.Title}\"");
-                if (!string.IsNullOrEmpty(ch.ShortSynopsis)) sb.Append($" — {ch.ShortSynopsis}");
+                // First non-empty line of the blurb stands in for "short synopsis" in this dense list view.
+                var firstLine = (ch.EffectiveBody ?? "").Split('\n', StringSplitOptions.RemoveEmptyEntries).FirstOrDefault();
+                if (!string.IsNullOrWhiteSpace(firstLine)) sb.Append(" — ").Append(Truncate(firstLine.Trim(), 140));
                 sb.AppendLine();
             }
             sb.AppendLine();
@@ -327,11 +331,8 @@ public class BookOutlineService
             var ch = filled.Chapters[i];
             sb.AppendLine($"  Chapter {ch.Number} \"{ch.Title}\":");
             if (!string.IsNullOrEmpty(ch.PovCharacter)) sb.AppendLine($"    pov: {ch.PovCharacter}");
-            if (!string.IsNullOrEmpty(ch.ShortSynopsis)) sb.AppendLine($"    short [FIXED]: {ch.ShortSynopsis}");
-            if (!string.IsNullOrEmpty(ch.LongSynopsis))  sb.AppendLine($"    long [FIXED]: {ch.LongSynopsis}");
-            if (ch.KeyBeats.Any())                       sb.AppendLine($"    beats [FIXED]: {string.Join(" | ", ch.KeyBeats)}");
-            if (ch.OpensThreads.Any())                   sb.AppendLine($"    opens [FIXED]: {string.Join("; ", ch.OpensThreads)}");
-            if (ch.ClosesThreads.Any())                  sb.AppendLine($"    closes [FIXED]: {string.Join("; ", ch.ClosesThreads)}");
+            if (!string.IsNullOrWhiteSpace(ch.EffectiveBody))
+                sb.AppendLine($"    body [FIXED]: {ch.EffectiveBody.Replace("\n", " ").Trim()}");
         }
         sb.AppendLine();
 
@@ -344,11 +345,7 @@ public class BookOutlineService
         sb.AppendLine("      \"number\": <int>,");
         sb.AppendLine("      \"title\": \"<chapter title — keep existing if provided>\",");
         sb.AppendLine("      \"pov_character\": \"<name>\",");
-        sb.AppendLine("      \"short_synopsis\": \"<one sentence>\",");
-        sb.AppendLine("      \"long_synopsis\": \"<one paragraph: setup, conflict, end-state>\",");
-        sb.AppendLine("      \"key_beats\": [\"<3-6 plot points\", \"<not prose-level — one rung up>\"],");
-        sb.AppendLine("      \"opens_threads\": [\"<promises this chapter introduces>\"],");
-        sb.AppendLine("      \"closes_threads\": [\"<earlier promises this chapter resolves>\"]");
+        sb.AppendLine("      \"body\": \"<one short paragraph: what happens, what beats fire, what threads this chapter opens or closes, end-state. Freeform prose, not a structured field list.>\"");
         sb.AppendLine("    }");
         sb.AppendLine("  ],");
         sb.AppendLine("  \"threads\": [");
@@ -358,8 +355,7 @@ public class BookOutlineService
         return sb.ToString();
     }
 
-    private record GenChapter(int Number, string? Title, string? Pov, string? Short, string? Long,
-                              List<string> Beats, List<string> Opens, List<string> Closes);
+    private record GenChapter(int Number, string? Title, string? Pov, string? Body);
     private record GenThread(string Name, string Description, int? PlantedNum, int? PaysOffNum);
     private record GenOutline(string? Theme, string? Structure, List<GenChapter> Chapters, List<GenThread> Threads);
 
@@ -380,15 +376,29 @@ public class BookOutlineService
                 foreach (var c in chArr.EnumerateArray())
                 {
                     if (c.ValueKind != JsonValueKind.Object) continue;
+                    // Tolerate either the new "body" shape or the legacy structured shape —
+                    // older voters may still respond with short_synopsis / long_synopsis /
+                    // key_beats / opens_threads / closes_threads. Whatever we get, fold it
+                    // into one body string and let the editor surface that.
+                    string? body = c.TryGetProperty("body", out var b) ? b.GetString() : null;
+                    if (string.IsNullOrWhiteSpace(body))
+                    {
+                        var sb = new StringBuilder();
+                        if (c.TryGetProperty("long_synopsis",  out var l) && !string.IsNullOrWhiteSpace(l.GetString())) sb.AppendLine(l.GetString());
+                        else if (c.TryGetProperty("short_synopsis", out var s) && !string.IsNullOrWhiteSpace(s.GetString())) sb.AppendLine(s.GetString());
+                        var beats  = ReadStringArray(c, "key_beats");
+                        var opens  = ReadStringArray(c, "opens_threads");
+                        var closes = ReadStringArray(c, "closes_threads");
+                        if (beats.Count  > 0) sb.AppendLine("Beats: "  + string.Join(" | ", beats));
+                        if (opens.Count  > 0) sb.AppendLine("Opens: "  + string.Join("; ",  opens));
+                        if (closes.Count > 0) sb.AppendLine("Closes: " + string.Join("; ",  closes));
+                        body = sb.ToString().TrimEnd();
+                    }
                     chapters.Add(new GenChapter(
                         Number: c.TryGetProperty("number", out var n) && n.TryGetInt32(out var ni) ? ni : 0,
                         Title:  c.TryGetProperty("title", out var t) ? t.GetString() : null,
                         Pov:    c.TryGetProperty("pov_character", out var p) ? p.GetString() : null,
-                        Short:  c.TryGetProperty("short_synopsis", out var s) ? s.GetString() : null,
-                        Long:   c.TryGetProperty("long_synopsis", out var l) ? l.GetString() : null,
-                        Beats:  ReadStringArray(c, "key_beats"),
-                        Opens:  ReadStringArray(c, "opens_threads"),
-                        Closes: ReadStringArray(c, "closes_threads")));
+                        Body:   body));
                 }
             }
             var threads = new List<GenThread>();
@@ -432,11 +442,13 @@ public class BookOutlineService
             var ch = existing.Chapters.FirstOrDefault(c => c.Number == g.Number);
             if (ch == null) continue;
             if (string.IsNullOrEmpty(ch.PovCharacter) && !string.IsNullOrEmpty(g.Pov)) ch.PovCharacter = g.Pov!;
-            if (string.IsNullOrEmpty(ch.ShortSynopsis) && !string.IsNullOrEmpty(g.Short)) ch.ShortSynopsis = g.Short!;
-            if (string.IsNullOrEmpty(ch.LongSynopsis) && !string.IsNullOrEmpty(g.Long)) ch.LongSynopsis = g.Long!;
-            if (!ch.KeyBeats.Any()) ch.KeyBeats = g.Beats;
-            if (!ch.OpensThreads.Any()) ch.OpensThreads = g.Opens;
-            if (!ch.ClosesThreads.Any()) ch.ClosesThreads = g.Closes;
+            // Fill Body only if neither the new field nor the legacy fields have content —
+            // i.e. the chapter has no human-authored outline yet at all.
+            var hasAuthored = !string.IsNullOrWhiteSpace(ch.Body)
+                           || !string.IsNullOrWhiteSpace(ch.LongSynopsis)
+                           || !string.IsNullOrWhiteSpace(ch.ShortSynopsis)
+                           || ch.KeyBeats.Count > 0 || ch.OpensThreads.Count > 0 || ch.ClosesThreads.Count > 0;
+            if (!hasAuthored && !string.IsNullOrWhiteSpace(g.Body)) ch.Body = g.Body!;
         }
 
         // Generated threads: add only if no thread by that name already exists.
@@ -523,11 +535,7 @@ public class BookOutlineService
         sb.AppendLine($"ARC TARGET: {outline.ArcTarget}");
         sb.AppendLine();
         sb.AppendLine($"EDITED CHAPTER (Ch {edited.Number} \"{edited.Title}\"):");
-        sb.AppendLine($"  short: {edited.ShortSynopsis}");
-        sb.AppendLine($"  long: {edited.LongSynopsis}");
-        if (edited.KeyBeats.Any()) sb.AppendLine($"  beats: {string.Join(" | ", edited.KeyBeats)}");
-        if (edited.OpensThreads.Any()) sb.AppendLine($"  opens: {string.Join("; ", edited.OpensThreads)}");
-        if (edited.ClosesThreads.Any()) sb.AppendLine($"  closes: {string.Join("; ", edited.ClosesThreads)}");
+        sb.AppendLine($"  body: {edited.EffectiveBody}");
         sb.AppendLine();
         sb.AppendLine("OTHER CHAPTERS (these may need adjustments to stay coherent):");
         for (int i = 0; i < outline.Chapters.Count; i++)
@@ -536,17 +544,13 @@ public class BookOutlineService
             var c = outline.Chapters[i];
             var direction = i < editedIdx ? "before" : "after";
             sb.AppendLine($"  [{direction}] Ch {c.Number} \"{c.Title}\":");
-            sb.AppendLine($"    short: {c.ShortSynopsis}");
-            sb.AppendLine($"    long: {c.LongSynopsis}");
-            if (c.KeyBeats.Any()) sb.AppendLine($"    beats: {string.Join(" | ", c.KeyBeats)}");
-            if (c.OpensThreads.Any()) sb.AppendLine($"    opens: {string.Join("; ", c.OpensThreads)}");
-            if (c.ClosesThreads.Any()) sb.AppendLine($"    closes: {string.Join("; ", c.ClosesThreads)}");
+            sb.AppendLine($"    body: {c.EffectiveBody}");
         }
         sb.AppendLine();
         sb.AppendLine("OUTPUT — strict JSON array. Each adjustment:");
         sb.AppendLine("{");
         sb.AppendLine("  \"chapter_number\": <int — the chapter being adjusted, NOT the edited one>,");
-        sb.AppendLine("  \"field\": \"long_synopsis\" | \"short_synopsis\" | \"key_beats\" | \"opens_threads\" | \"closes_threads\",");
+        sb.AppendLine("  \"field\": \"body\",");
         sb.AppendLine("  \"before\": \"<current value>\",");
         sb.AppendLine("  \"after\": \"<proposed replacement>\",");
         sb.AppendLine("  \"rationale\": \"<one or two sentences why this adjustment is needed given the edit>\",");
@@ -602,6 +606,10 @@ public class BookOutlineService
 
         switch (adj.Field)
         {
+            case "body":           ch.Body = adj.After; break;
+            // Legacy field paths preserved for adjustments emitted by older voters
+            // before the body migration. Tolerated, not invited — the prompt only
+            // asks for "body" now.
             case "long_synopsis":  ch.LongSynopsis = adj.After; break;
             case "short_synopsis": ch.ShortSynopsis = adj.After; break;
             case "key_beats":      ch.KeyBeats = SplitList(adj.After); break;
