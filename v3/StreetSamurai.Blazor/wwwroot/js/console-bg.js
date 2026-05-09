@@ -4342,8 +4342,11 @@ window.consoleBg = (function () {
         var stealCompleteMs = ripStartMs + (hiCount - 1) * perFileDelay + perFileDur;
         var winFadeAt = stealCompleteMs + 220;
         setTimeout(function () {
-            win.style.transition = 'opacity 0.55s ease';
-            win.style.opacity = '0';
+            // The window still has cbg-in's animation-fill-mode:forwards holding
+            // opacity 0.76; a transition can't reliably override that. Apply a
+            // keyframe animation instead — fresh animation wins over the prior
+            // forwards fill, so the fade always resolves visually.
+            win.classList.add('cbg-folder-win--fade');
             setTimeout(function () { if (win.parentNode) win.parentNode.removeChild(win); }, 600);
         }, winFadeAt);
     }

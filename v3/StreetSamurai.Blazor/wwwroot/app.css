@@ -1511,6 +1511,18 @@ textarea.auto-grow {
     40%  { opacity: 0.95; }
     100% { transform: translate(var(--rx, 240px), 0); opacity: 0; filter: blur(1.2px); }
 }
+/* Window dissolve after the steal completes. Driven by a keyframe rather than
+   an inline opacity transition because the window still has cbg-in's
+   animation-fill-mode:forwards asserting opacity 0.76 — a transition can lose
+   the race against that fill-state. A fresh animation overrides the prior
+   forwards fill cleanly so the fade resolves every time. */
+@keyframes cbg-folder-win-fade {
+    0%   { opacity: 0.76; }
+    100% { opacity: 0;    }
+}
+.cbg-folder-win--fade {
+    animation: cbg-folder-win-fade 0.55s ease forwards !important;
+}
 
 /* ── Morse-code glowing dot — pulses or shifts at cheat-code speed, with blur ─ */
 /* Outer "orbit" container — drifts very slowly across the sky like a satellite.
