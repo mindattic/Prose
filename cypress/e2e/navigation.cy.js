@@ -29,6 +29,12 @@ const tools = [
   '/ask', '/atlas', '/architecture', '/continuity',
   '/findings', '/world-health', '/data-repair',
   '/graph', '/graph-3d', '/map', '/heritage',
+  // New routes added in the writing/AI shipping wave:
+  '/settings/ai',  // ActionConfig + ExpertPersona table editor
+  '/timeline',     // story-time cursor with per-entity snapshot
+  '/series',       // series shelf
+  '/books',        // bookshelf — book-card → /write/{id}
+  '/write',        // chapter editor (selection-resume on bare entry)
 ];
 
 const failurePhrases = [
