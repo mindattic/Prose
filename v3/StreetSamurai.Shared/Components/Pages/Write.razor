@@ -189,6 +189,28 @@
                             <i class="bi bi-pencil me-1" />Write my own
                         </button>
                     </div>
+                    @if (oocFindings.Count > 0)
+                    {
+                        <div class="write-ooc-block mt-3">
+                            <div class="text-warning small mb-1">
+                                <i class="bi bi-exclamation-diamond me-1" />Character drift detected:
+                            </div>
+                            @foreach (var f in oocFindings)
+                            {
+                                <div class="write-ooc-card">
+                                    <div class="write-ooc-field">@f.Field</div>
+                                    <div class="write-ooc-detected">Detected: @f.Detected</div>
+                                    @if (!string.IsNullOrWhiteSpace(f.CanonValue))
+                                    {
+                                        <div class="write-ooc-canon">Canon: @f.CanonValue</div>
+                                    }
+                                    <div class="write-ooc-suggestion"><i class="bi bi-arrow-right me-1" />@f.Suggestion</div>
+                                </div>
+                            }
+                            <button class="btn btn-sm btn-link text-muted py-0 mt-1"
+                                    @onclick="() => oocFindings.Clear()">Dismiss</button>
+                        </div>
+                    }
                     @if (!string.IsNullOrWhiteSpace(beatStatus))
                     {
                         <div class="text-muted small mt-2">@beatStatus</div>
@@ -411,6 +433,14 @@
                             min-width:30px; text-align:center; padding:1px 4px; border-radius:2px;
                             font-family:monospace; }
   .write-beat-rank-blurb { flex:1; }
+  /* Out-of-character drift surfaced after expand — yellow-bordered cards. */
+  .write-ooc-block { background:#1a1408; border:1px solid #5a3a08; padding:8px; border-radius:3px; }
+  .write-ooc-card  { background:#0e0a04; border-left:3px solid #ffc107; padding:6px 8px;
+                     margin-bottom:6px; font-size:.78rem; }
+  .write-ooc-field      { color:#5be; font-family:monospace; font-size:.7rem; }
+  .write-ooc-detected   { color:#ffd766; margin-top:2px; }
+  .write-ooc-canon      { color:#888; font-style:italic; margin-top:2px; }
+  .write-ooc-suggestion { color:#7c7; margin-top:4px; }
 
   .write-main { display:flex; flex-direction:column; min-height:0; padding:10px; }
   .write-bar { display:flex; gap:8px; align-items:center; margin-bottom:6px; }
@@ -489,6 +519,9 @@
     // Per-beat expand state
     private string? beatExpanding;
     private string beatStatus = "";
+    // OOC drift detected on the most recent expand — surfaced inline in the
+    // beat panel with "edit prose" or "add to canon" affordances.
+    private List<OocFinding> oocFindings = new();
     // localStorage-backed resume: at most one redirect attempt per page load
     // so we don't ping-pong if the saved selection was deleted.
     private bool redirectAttempted;
@@ -628,6 +661,7 @@
                     beatStatus = "";
                     beatSuggestions.Clear();
                     rankedSuggestions.Clear();
+                    oocFindings.Clear();
                     readingMode = false;
                 }
                 LoadFindings();
@@ -949,6 +983,26 @@
             pageMarkdown = (pageMarkdown ?? "") + sep + b.Text;
             MarkPageDirty();
             beatStatus = $"Updated. Next: pick the next beat or add one.";
+
+            // Out-of-character drift check — fires after the expand so the user
+            // sees the finding in context. Quick + low-tier; failure is silent.
+            try
+            {
+                if (chapter.Characters?.FirstOrDefault() is string pov && !string.IsNullOrWhiteSpace(pov))
+                {
+                    var canonProfile = dialogueCtx; // already built above; fine as the ground truth source
+                    if (!string.IsNullOrWhiteSpace(canonProfile))
+                    {
+                        var ooc = await BeatGen.DetectOutOfCharacterAsync(b.Text, pov, canonProfile);
+                        if (ooc.Count > 0)
+                        {
+                            oocFindings = ooc;
+                            beatStatus = $"Updated. {ooc.Count} character drift(s) flagged below — review.";
+                        }
+                    }
+                }
+            }
+            catch { /* non-fatal */ }
         }
         catch (Exception ex)
         {

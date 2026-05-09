@@ -79,6 +79,98 @@ public class ExpertPersonaService
         kv.Set(KvKey, doc);
     }
 
+    /// <summary>
+    /// Compose a fused expert persona from two or three base personas. The
+    /// fused lens reads "You're an expert in BOTH X AND Y …" and inherits
+    /// the union of tags. Saved into the table so the selector can pick it
+    /// up next time. Fallback returns the first persona unchanged when
+    /// fewer than two ids are supplied.
+    /// </summary>
+    public ExpertPersona Combine(IReadOnlyList<string> personaIds, string? overrideName = null)
+    {
+        var sources = personaIds.Select(Get).Where(p => p != null).Cast<ExpertPersona>().ToList();
+        if (sources.Count == 0) throw new InvalidOperationException("No source personas resolved");
+        if (sources.Count == 1) return sources[0];
+
+        var name = overrideName ?? string.Join(" + ", sources.Select(s => s.Name));
+        var lens = "You're a fused expert combining these lenses — apply all of them at once:\n\n" +
+                   string.Join("\n\n", sources.Select(s => $"• {s.Name}: {s.Lens}"));
+        var tags = sources.SelectMany(s => s.Tags).Distinct(StringComparer.OrdinalIgnoreCase).ToList();
+
+        var fused = new ExpertPersona
+        {
+            Id     = $"fused-{Guid.NewGuid().ToString("N")[..12]}",
+            Name   = name,
+            Lens   = lens,
+            Tags   = tags,
+            Seeded = false,
+        };
+        Save(fused);
+        return fused;
+    }
+
+    /// <summary>
+    /// Generate and persist a new expert persona for a scene the table
+    /// doesn't yet cover. Asks an LLM (low-tier — this is meta-reasoning,
+    /// not prose) to invent a relevant specialty given the scene context,
+    /// then saves the result. Returns null when the LLM is unavailable or
+    /// returns malformed output.
+    /// </summary>
+    public async Task<ExpertPersona?> GenerateForSceneAsync(string sceneContext, CancellationToken ct = default)
+    {
+        if (voting is null || string.IsNullOrWhiteSpace(sceneContext)) return null;
+
+        var request = new VoteRequest
+        {
+            Question =
+                "Invent ONE expert persona whose specialty would be especially useful for the " +
+                "scene below. Output STRICT JSON: {\"name\": <short title, like 'Heist Negotiator'>, " +
+                "\"lens\": <2-3 sentence system prompt anchoring the expert's lens — what they read, " +
+                "what they notice, in second person 'You're an expert in …'>, " +
+                "\"tags\": [<3-6 lowercase scene-type keywords>]}. No prose outside the JSON.",
+            Context = sceneContext.Length > 4000 ? sceneContext[^4000..] : sceneContext,
+            MaxTokens = 400,
+            Temperature = 0.7,
+            SynthesizeNarrative = false,
+        };
+
+        var voters = BuildLowTierVoters().Take(1).ToList(); // single voter — cheaper, deterministic-ish
+        VotingResult result;
+        try { result = await voting.VoteWithProfilesAsync(request, Quorum.Plurality, voters, ct); }
+        catch (Exception ex) { log.LogWarning(ex, "ExpertPersonas: GenerateForScene voting failed"); return null; }
+
+        var raw = result.IndividualVotes.Where(v => !v.IsError)
+                        .Select(v => !string.IsNullOrWhiteSpace(v.Decision) ? v.Decision : v.Reasoning)
+                        .FirstOrDefault();
+        if (string.IsNullOrWhiteSpace(raw)) return null;
+        var start = raw.IndexOf('{');
+        var end   = raw.LastIndexOf('}');
+        if (start < 0 || end <= start) return null;
+        ExpertPersona generated;
+        try
+        {
+            using var doc = System.Text.Json.JsonDocument.Parse(raw[start..(end + 1)]);
+            var name = doc.RootElement.TryGetProperty("name", out var n)  ? n.GetString() ?? "Generated Expert" : "Generated Expert";
+            var lens = doc.RootElement.TryGetProperty("lens", out var l)  ? l.GetString() ?? "" : "";
+            var tags = new List<string>();
+            if (doc.RootElement.TryGetProperty("tags", out var t) && t.ValueKind == System.Text.Json.JsonValueKind.Array)
+                foreach (var e in t.EnumerateArray())
+                    if (e.ValueKind == System.Text.Json.JsonValueKind.String && !string.IsNullOrWhiteSpace(e.GetString()))
+                        tags.Add(e.GetString()!);
+            if (string.IsNullOrWhiteSpace(lens)) return null;
+            generated = new ExpertPersona
+            {
+                Id = $"gen-{Guid.NewGuid().ToString("N")[..12]}",
+                Name = name, Lens = lens, Tags = tags, Seeded = false,
+            };
+        }
+        catch { return null; }
+
+        Save(generated);
+        log.LogInformation("ExpertPersonas: generated new persona '{Name}' from scene context", generated.Name);
+        return generated;
+    }
+
     public void Delete(string id)
     {
         var doc = kv.Get<ExpertPersonaCollection>(KvKey);
