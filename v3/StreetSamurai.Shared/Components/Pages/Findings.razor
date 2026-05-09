@@ -269,7 +269,7 @@ else
                         }
                         @if (f.Status == FindingStatus.New)
                         {
-                            <button class="btn btn-sm btn-outline-info" @onclick="() => SetStatus(f.Id, FindingStatus.Triaged)">Mark triaged</button>
+                            <button class="btn btn-sm btn-outline-info" @onclick="() => SetStatus(f.Id, FindingStatus.Triaged)">Keep</button>
                         }
                         <button class="btn btn-sm btn-outline-success" @onclick="() => SetStatus(f.Id, FindingStatus.Applied)">Mark applied</button>
                         <button class="btn btn-sm btn-outline-secondary" @onclick="() => SetStatus(f.Id, FindingStatus.Dismissed)">Dismiss</button>
