@@ -257,6 +257,21 @@
             });
             await JS.InvokeVoidAsync("streetSamuraiTimeline.init",
                 "story-timeline", json, currentNow.ToString("o"), selfRef);
+
+            // Resume the last entity-picker name + scroll position from localStorage.
+            try
+            {
+                var saved = await JS.InvokeAsync<string?>("ssState.get", "timeline:entity-name");
+                if (!string.IsNullOrWhiteSpace(saved))
+                {
+                    entityPickerName = saved;
+                    await OnPickEntity();
+                    StateHasChanged();
+                }
+                await JS.InvokeVoidAsync("ssState.installAutoScroll", "timeline:scroll");
+                await JS.InvokeVoidAsync("ssState.restoreScroll",     "timeline:scroll");
+            }
+            catch { }
         }
     }
 
@@ -414,6 +429,9 @@
         selectedEntityId   = hit.Id;
         selectedEntityName = hit.Name;
         await ReloadEntitySnapshotAsync();
+        // Persist the resolved entity name so /timeline reopens it next session.
+        try { await JS.InvokeVoidAsync("ssState.set", "timeline:entity-name", hit.Name); }
+        catch { }
     }
 
     private async Task OnEntityPickerKey(KeyboardEventArgs e)
