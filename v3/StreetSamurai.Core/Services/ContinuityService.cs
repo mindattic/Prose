@@ -197,6 +197,58 @@ public class ContinuityService
         return groups;
     }
 
+    /// <summary>
+    /// Incremental variant of <see cref="GetContradictionGroups"/>. Only re-evaluates
+    /// (entity, predicate) tuples whose claims have been touched since
+    /// <paramref name="sinceUtc"/>, which is the watermark step in the playbook
+    /// from <c>project_continuity_sync_architecture</c>.
+    ///
+    /// LastConfirmedAt is bumped on every Upsert; FirstAssertedAt is set on insert.
+    /// Between them they cover any change that could newly introduce a variant.
+    /// Returns groups in the same shape as the full sweep, but a key not touched
+    /// since the watermark is silently absent (it can't have changed).
+    /// </summary>
+    public List<ContradictionGroup> GetContradictionGroupsSince(DateTime sinceUtc)
+    {
+        using var db = dbFactory.CreateDbContext();
+        var live = new[] { "NEW", "CONFIRMED", "CONTRADICTED" };
+        // ISO-8601 "o" format is lexicographically sortable so direct string
+        // comparison in SQL is safe — no DateTime parse round-trip needed.
+        var sinceIso = sinceUtc.ToUniversalTime().ToString("o");
+
+        var touchedKeys = db.ContinuityClaims.AsNoTracking()
+            .Where(c => live.Contains(c.Status) &&
+                        (c.LastConfirmedAt.CompareTo(sinceIso) >= 0 ||
+                         c.FirstAssertedAt.CompareTo(sinceIso) >= 0))
+            .Select(c => new { c.EntityId, c.Predicate })
+            .Distinct()
+            .ToList();
+
+        if (touchedKeys.Count == 0) return new List<ContradictionGroup>();
+
+        var groups = new List<ContradictionGroup>();
+        foreach (var k in touchedKeys)
+        {
+            // Pull every live claim for this (entity, predicate) — a new claim
+            // can contradict an arbitrarily-old one, so the variant check has
+            // to see the full set, not just the recent additions.
+            var claims = db.ContinuityClaims.AsNoTracking()
+                .Where(c => c.EntityId == k.EntityId && c.Predicate == k.Predicate && live.Contains(c.Status))
+                .OrderBy(c => c.FirstAssertedAt)
+                .ToList();
+            if (claims.Count >= 2 && claims.Select(c => c.Object).Distinct().Count() > 1)
+                groups.Add(new ContradictionGroup
+                {
+                    EntityId   = k.EntityId,
+                    EntityName = claims[0].EntityName,
+                    EntityKind = claims[0].EntityKind,
+                    Predicate  = k.Predicate,
+                    Claims     = claims,
+                });
+        }
+        return groups;
+    }
+
     public ContinuityStats GetStats()
     {
         using var db = dbFactory.CreateDbContext();
