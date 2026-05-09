@@ -1,21 +1,28 @@
 @page "/timeline"
 @attribute [Authorize]
+@using System.Text.Json
 @using Microsoft.EntityFrameworkCore
 @using StreetSamurai.Core.Data
+@using StreetSamurai.Core.Data.Entities
 @using StreetSamurai.Core.Interfaces
 @using StreetSamurai.Core.Services
 @inject WorldClockService Clock
+@inject WorldStateLedger Ledger
 @inject LocationContradictionService ContradictionScan
 @inject IBookRepository Books
 @inject IChapterRepository Chapters
 @inject IDbContextFactory<StreetSamuraiDbContext> Db
 @inject NavigationManager Nav
+@inject IJSRuntime JS
+@implements IDisposable
 
 <div class="container-fluid py-3">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div>
             <h4 class="mb-0"><i class="bi bi-clock-history text-info me-2"></i>Story Timeline</h4>
-            <div class="text-muted small">Where every book, chapter, and beat sits on the in-world clock.</div>
+            <div class="text-muted small">
+                vis-timeline · drag the <span class="text-danger">NOW</span> marker · double-click empty axis to snap · ctrl-scroll to zoom · click a dot to inspect
+            </div>
         </div>
         <div class="d-flex align-items-center gap-2">
             <span class="text-muted small">Story-time now:</span>
@@ -23,151 +30,223 @@
                    class="form-control form-control-sm bg-dark text-light border-secondary"
                    style="width: 220px;"
                    value="@FormatLocal(currentNow)"
-                   @onchange="OnNowChanged" />
+                   @onchange="OnNowInputChanged" />
+            <button class="btn btn-sm btn-outline-info" @onclick="OnZoomToFit">
+                <i class="bi bi-arrows-fullscreen"></i> fit
+            </button>
             <button class="btn btn-sm btn-outline-info" @onclick="RescanContradictions">
-                <i class="bi bi-search me-1"></i>Re-scan contradictions
+                <i class="bi bi-search me-1"></i>scan contradictions
             </button>
         </div>
     </div>
 
-    @if (!events.Any())
+    @if (events.Count == 0)
     {
         <div class="alert alert-secondary">
-            No timeline events yet.
-            Set <code>Chapter.InWorldDate</code> or <code>ChapterBeat.InWorldDate</code> on at least one chapter
-            (or add an <code>Edge.RelationType = 'located_at'</code> with <code>StoryValidFrom</code>) to populate this view.
+            No timeline events yet. Set <code>Chapter.InWorldDate</code> or
+            <code>ChapterBeat.InWorldDate</code> on at least one chapter,
+            or run <code>ss --repair --backfill-dates</code> to seed them via LLM.
         </div>
     }
-    else
-    {
-        <div class="timeline-shell card bg-dark border-secondary mb-3">
-            <div class="card-body p-2">
-                <div class="d-flex justify-content-between align-items-center small text-muted px-2">
-                    <span>@FormatLocal(timelineMin)</span>
-                    <span>span: @SpanLabel</span>
-                    <span>@FormatLocal(timelineMax)</span>
-                </div>
-                <svg class="timeline-svg" viewBox="0 0 1000 220" preserveAspectRatio="none"
-                     @onclick="OnSvgClick">
-                    @* Track lines per type *@
-                    <line x1="0" y1="60"  x2="1000" y2="60"  stroke="#3a3a44" />
-                    <line x1="0" y1="110" x2="1000" y2="110" stroke="#3a3a44" />
-                    <line x1="0" y1="160" x2="1000" y2="160" stroke="#3a3a44" />
-                    <text x="6" y="55"  fill="#888" font-size="10">books</text>
-                    <text x="6" y="105" fill="#888" font-size="10">chapters</text>
-                    <text x="6" y="155" fill="#888" font-size="10">beats</text>
 
-                    @foreach (var ev in events)
-                    {
-                        var x = TimeToX(ev.At);
-                        var y = ev.Type == "book" ? 60 : ev.Type == "chapter" ? 110 : 160;
-                        var color = ev.Type switch
-                        {
-                            "book"    => "#7ad",
-                            "chapter" => "#ad7",
-                            _         => "#fa6",
-                        };
-                        <g class="timeline-event" style="cursor:pointer;" @onclick="() => OpenEvent(ev)" @onclick:stopPropagation="true">
-                            <circle cx="@x.ToString(System.Globalization.CultureInfo.InvariantCulture)"
-                                    cy="@y" r="5" fill="@color" stroke="#111" stroke-width="1">
-                                <title>@ev.Title — @FormatLocal(ev.At)</title>
-                            </circle>
-                        </g>
-                    }
+    <div id="story-timeline" class="story-timeline-canvas"></div>
 
-                    @* "Now" cursor — draggable *@
-                    @{ var nowX = TimeToX(currentNow); }
-                    <line x1="@nowX.ToString(System.Globalization.CultureInfo.InvariantCulture)"
-                          y1="20"
-                          x2="@nowX.ToString(System.Globalization.CultureInfo.InvariantCulture)"
-                          y2="200" stroke="#f33" stroke-width="2" stroke-dasharray="4,3" />
-                    <text x="@((nowX + 6).ToString(System.Globalization.CultureInfo.InvariantCulture))"
-                          y="18" fill="#f55" font-size="11" font-weight="bold">NOW</text>
-                </svg>
-            </div>
-        </div>
-
-        <div class="row g-3">
-            <div class="col-md-7">
-                <div class="card bg-dark border-secondary">
-                    <div class="card-header small text-muted">Events near "now"</div>
-                    <ul class="list-group list-group-flush">
-                        @foreach (var ev in EventsNearNow)
+    <div class="row g-3 mt-2">
+        <div class="col-md-12 mb-2">
+            <div class="card bg-dark border-secondary">
+                <div class="card-header small text-muted d-flex justify-content-between align-items-center">
+                    <span><i class="bi bi-person-badge me-1"></i>Per-entity snapshot at @FormatLocal(snapshotAt)</span>
+                    <div class="d-flex align-items-center gap-2">
+                        <input class="form-control form-control-sm bg-dark text-light border-secondary"
+                               style="width: 220px;"
+                               placeholder="character name…"
+                               @bind="entityPickerName"
+                               @bind:event="oninput"
+                               @onkeyup="OnEntityPickerKey" />
+                        <button class="btn btn-sm btn-outline-info" @onclick="OnPickEntity">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        @if (selectedEntityName != null)
                         {
-                            var rel = ev.At - currentNow;
-                            var when = rel.TotalSeconds == 0
-                                ? "now"
-                                : (rel.TotalMinutes < 0 ? $"{(-rel).TotalMinutes:F0}m ago" : $"in {rel.TotalMinutes:F0}m");
-                            <li class="list-group-item bg-dark text-light border-secondary small d-flex justify-content-between"
-                                @onclick="() => OpenEvent(ev)" style="cursor:pointer;">
-                                <span>
-                                    <span class="badge @TypeBadge(ev.Type) me-2">@ev.Type</span>
-                                    @ev.Title
-                                </span>
-                                <span class="text-muted">@when · @FormatLocal(ev.At)</span>
-                            </li>
-                        }
-                        @if (!EventsNearNow.Any())
-                        {
-                            <li class="list-group-item bg-dark text-muted small">No events within ±24h of the cursor.</li>
-                        }
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="card bg-dark border-secondary">
-                    <div class="card-header small text-muted d-flex justify-content-between">
-                        <span><i class="bi bi-exclamation-triangle text-warning me-1"></i>Cross-book contradictions</span>
-                        @if (contradictionScan != null)
-                        {
-                            <span>@contradictionScan.Conflicts.Count flagged</span>
+                            <span class="text-muted small">→ @selectedEntityName</span>
                         }
                     </div>
-                    <div class="card-body p-2 small">
-                        @if (contradictionScan == null)
-                        {
-                            <div class="text-muted">Click "Re-scan contradictions" to run the detector.</div>
-                        }
-                        else if (contradictionScan.Conflicts.Count == 0)
-                        {
-                            <div class="text-muted">@contradictionScan.StatusNote</div>
-                        }
-                        else
-                        {
-                            @foreach (var c in contradictionScan.Conflicts.Take(20))
+                </div>
+                <div class="card-body p-2 small" style="max-height: 220px; overflow-y: auto;">
+                    @if (selectedEntityId == null)
+                    {
+                        <div class="text-muted">
+                            Type a character / entity name and press Enter to see every aspect's most-recent value as of the cursor.
+                            Each row is the latest <code>EntityStateEvent</code> at-or-before <code>@FormatLocal(snapshotAt)</code>.
+                        </div>
+                    }
+                    else if (entitySnapshot.Count == 0)
+                    {
+                        <div class="text-muted">
+                            No state-ledger events for @selectedEntityName at this instant. The ledger fills as
+                            chapters are saved (BeatStateExtractor) or via <code>ss --repair --extract-state</code>.
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="row g-2">
+                            @foreach (var kv in entitySnapshot.OrderBy(p => p.Key))
                             {
-                                <div class="mb-2 pb-2 border-bottom border-secondary">
-                                    <div><strong>@c.CharacterName</strong></div>
-                                    <div class="text-muted">@c.PlaceA <span class="text-danger">→</span> @c.PlaceB in @c.Delta.TotalMinutes.ToString("F0") min</div>
-                                    <div class="text-muted small">@FormatLocal(c.AtA) → @FormatLocal(c.AtB)</div>
+                                <div class="col-md-4">
+                                    <div class="border border-secondary rounded p-2 bg-black bg-opacity-25">
+                                        <div class="text-info small">@kv.Key</div>
+                                        <div>
+                                            <span class="badge @VerbBadge(kv.Value.Verb) me-1">@kv.Value.Verb</span>
+                                            <span>@(kv.Value.NewValue ?? kv.Value.Delta?.ToString() ?? "—")</span>
+                                        </div>
+                                        <div class="text-muted" style="font-size:.65rem;">@FormatLocal(kv.Value.AtStoryTime)</div>
+                                    </div>
                                 </div>
                             }
-                        }
-                    </div>
+                        </div>
+                    }
                 </div>
             </div>
         </div>
-    }
+        <div class="col-md-7">
+            <div class="card bg-dark border-secondary">
+                <div class="card-header small text-muted d-flex justify-content-between">
+                    <span><i class="bi bi-cone-striped me-1"></i>World state at @FormatLocal(snapshotAt)</span>
+                    <span>@worldEventsAtPoint.Count event(s) within ±6h</span>
+                </div>
+                <div class="card-body p-2 small" style="max-height: 320px; overflow-y: auto;">
+                    @if (worldEventsAtPoint.Count == 0)
+                    {
+                        <div class="text-muted">
+                            No state-ledger events near this instant. As chapters are saved,
+                            <code>BeatStateExtractor</code> populates the ledger automatically;
+                            run <code>ss --repair --extract-state</code> to backfill.
+                        </div>
+                    }
+                    else
+                    {
+                        @foreach (var ev in worldEventsAtPoint)
+                        {
+                            <div class="mb-2 pb-2 border-bottom border-secondary">
+                                <div>
+                                    <span class="badge @VerbBadge(ev.Verb) me-2">@ev.Verb</span>
+                                    <strong>@(entityNameById.TryGetValue(ev.EntityId, out var nm) ? nm : ev.EntityId.ToString("N").Substring(0, 8))</strong>
+                                    <span class="text-muted"> · </span>
+                                    <code>@ev.AspectKey</code>
+                                </div>
+                                <div class="text-muted small">
+                                    @if (!string.IsNullOrEmpty(ev.OldValue)) { <span><span class="text-secondary">@ev.OldValue</span> → </span> }
+                                    <span class="text-info">@(ev.NewValue ?? (ev.Delta?.ToString() ?? ""))</span>
+                                </div>
+                                @if (!string.IsNullOrWhiteSpace(ev.Snippet))
+                                {
+                                    <div class="text-muted small fst-italic">"@ev.Snippet"</div>
+                                }
+                                <div class="text-muted small">@FormatLocal(ev.AtStoryTime)</div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="card bg-dark border-secondary">
+                <div class="card-header small text-muted d-flex justify-content-between">
+                    <span><i class="bi bi-exclamation-triangle text-warning me-1"></i>Cross-book contradictions</span>
+                    @if (contradictionScan != null)
+                    {
+                        <span>@contradictionScan.Conflicts.Count flagged</span>
+                    }
+                </div>
+                <div class="card-body p-2 small" style="max-height: 320px; overflow-y: auto;">
+                    @if (contradictionScan == null)
+                    {
+                        <div class="text-muted">Click "scan contradictions" to run the detector.</div>
+                    }
+                    else if (contradictionScan.Conflicts.Count == 0)
+                    {
+                        <div class="text-muted">@contradictionScan.StatusNote</div>
+                    }
+                    else
+                    {
+                        @foreach (var c in contradictionScan.Conflicts.Take(20))
+                        {
+                            <div class="mb-2 pb-2 border-bottom border-secondary">
+                                <div><strong>@c.CharacterName</strong></div>
+                                <div class="text-muted">@c.PlaceA <span class="text-danger">→</span> @c.PlaceB in @c.Delta.TotalMinutes.ToString("F0") min</div>
+                                <div class="text-muted small">@FormatLocal(c.AtA) → @FormatLocal(c.AtB)</div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css" />
+<script src="js/timeline-vis.js"></script>
+
 <style>
-    .timeline-svg { width: 100%; height: 220px; background: #14161c; border-radius: 4px; }
-    .timeline-event:hover circle { stroke: #fff; }
+    .story-timeline-canvas {
+        height: 360px; min-height: 320px;
+        background: #0e1014; border: 1px solid #2a2a32; border-radius: 4px;
+    }
+    /* vis-timeline overrides for dark theme */
+    .story-timeline-canvas .vis-timeline { background: #0e1014; color: #ddd; border-color: #2a2a32; }
+    .story-timeline-canvas .vis-panel.vis-center,
+    .story-timeline-canvas .vis-panel.vis-left,
+    .story-timeline-canvas .vis-panel.vis-right,
+    .story-timeline-canvas .vis-panel.vis-top,
+    .story-timeline-canvas .vis-panel.vis-bottom { border-color: #2a2a32; }
+    .story-timeline-canvas .vis-time-axis .vis-text { color: #888; }
+    .story-timeline-canvas .vis-time-axis .vis-grid.vis-minor { border-color: #1d2027; }
+    .story-timeline-canvas .vis-time-axis .vis-grid.vis-major { border-color: #2a2e37; }
+    .story-timeline-canvas .vis-labelset .vis-label { color: #888; border-color: #2a2a32; background: #16181d; }
+    .story-timeline-canvas .vis-item.vis-selected { box-shadow: 0 0 0 2px #ffe59a; }
+    .story-timeline-canvas .vis-custom-time { background-color: #f33 !important; }
+    .story-timeline-canvas .vis-custom-time-marker { color: #f55; }
 </style>
 
 @code {
-    private record TimelineEvent(string Type, string Title, DateTime At, string Route);
+    private record TimelineEvent(string Id, string Type, string Title, DateTime At, string Route, string? Subtitle);
 
     private DateTime currentNow;
-    private DateTime timelineMin;
-    private DateTime timelineMax;
+    private DateTime snapshotAt;
     private List<TimelineEvent> events = new();
     private LocationContradictionService.ScanResult? contradictionScan;
+    private List<EntityStateEvent> worldEventsAtPoint = new();
+    private Dictionary<Guid, string> entityNameById = new();
+    private DotNetObjectReference<Timeline>? selfRef;
+
+    // Per-entity drill-in state
+    private string entityPickerName = "";
+    private Guid?  selectedEntityId;
+    private string? selectedEntityName;
+    private Dictionary<string, EntityStateEvent> entitySnapshot = new();
 
     protected override async Task OnInitializedAsync()
     {
         currentNow = Clock.GetNow();
+        snapshotAt = currentNow;
         await LoadEventsAsync();
+        await LoadEventsNearNowAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            selfRef = DotNetObjectReference.Create(this);
+            var json = JsonSerializer.Serialize(events, new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            });
+            await JS.InvokeVoidAsync("streetSamuraiTimeline.init",
+                "story-timeline", json, currentNow.ToString("o"), selfRef);
+        }
     }
 
     private async Task LoadEventsAsync()
@@ -185,9 +264,6 @@
             where b.InWorldDate != null
             select new { b.BeatGuid, b.ChapterId, b.Title, At = b.InWorldDate!.Value }).ToListAsync();
 
-        // Books appear as the earliest chapter date in the book — keeps every
-        // book a single point on the timeline without inventing a PublishedDate
-        // column.
         var bookFirstDate = chapterRows
             .Where(c => c.BookId.HasValue)
             .GroupBy(c => c.BookId!.Value)
@@ -202,65 +278,109 @@
         events = new();
         foreach (var b in bookTitles)
             if (bookFirstDate.TryGetValue(b.Id, out var at))
-                events.Add(new("book", b.Title, at, $"/books/{b.Id:N}"));
+                events.Add(new(b.Id.ToString("N"), "book", b.Title, at, $"/books/{b.Id:N}", null));
         foreach (var c in chapterRows)
-            events.Add(new("chapter", c.Title, c.At,
-                c.BookId.HasValue ? $"/talk/{c.BookId:N}/{c.Id:N}" : $"/talk//{c.Id:N}"));
+            events.Add(new(c.Id.ToString("N"), "chapter", c.Title, c.At,
+                c.BookId.HasValue ? $"/talk/{c.BookId:N}/{c.Id:N}" : $"/talk//{c.Id:N}", null));
         foreach (var b in beatRows)
-            events.Add(new("beat", b.Title, b.At, $"/talk//{b.ChapterId:N}"));
+            events.Add(new(b.BeatGuid.ToString("N"), "beat", b.Title, b.At,
+                $"/talk//{b.ChapterId:N}", null));
+
+        // Inject EntityStateEvents in the same time window as the chapter/beat
+        // items so the timeline shows authored events alongside extracted
+        // state. Compute the window from a flat list of dates to avoid
+        // anonymous-type concat issues.
+        if (chapterRows.Any() || beatRows.Any())
+        {
+            var allDates = chapterRows.Select(c => c.At)
+                .Concat(beatRows.Select(b => b.At))
+                .ToList();
+            var fromT = allDates.Min().AddDays(-1);
+            var toT   = allDates.Max().AddDays(1);
+            var ledgerRows = await db.EntityStateEvents.AsNoTracking()
+                .Where(e => e.AtStoryTime >= fromT && e.AtStoryTime <= toT)
+                .OrderBy(e => e.AtStoryTime)
+                .Take(500)
+                .ToListAsync();
+            foreach (var l in ledgerRows)
+            {
+                events.Add(new(
+                    Id:       $"ev-{l.Id}",
+                    Type:     "ledger",
+                    Title:    $"{l.Verb} {l.AspectKey}",
+                    At:       l.AtStoryTime,
+                    Route:    $"/entity/{l.EntityId:N}",
+                    Subtitle: l.Snippet ?? l.NewValue));
+            }
+        }
 
         events = events.OrderBy(e => e.At).ToList();
-
-        if (events.Any())
-        {
-            timelineMin = events.Min(e => e.At);
-            timelineMax = events.Max(e => e.At);
-            // Pad ±5% so points aren't pinned to the edge
-            var pad = TimeSpan.FromTicks((timelineMax - timelineMin).Ticks / 20);
-            if (pad < TimeSpan.FromHours(1)) pad = TimeSpan.FromHours(1);
-            timelineMin -= pad; timelineMax += pad;
-            // Ensure currentNow is inside the visible range
-            if (currentNow < timelineMin) timelineMin = currentNow - pad;
-            if (currentNow > timelineMax) timelineMax = currentNow + pad;
-        }
-        else
-        {
-            timelineMin = currentNow.AddDays(-7);
-            timelineMax = currentNow.AddDays(7);
-        }
     }
 
-    private double TimeToX(DateTime when)
+    private async Task LoadEventsNearNowAsync()
     {
-        var span = (timelineMax - timelineMin).TotalSeconds;
-        if (span <= 0) return 500;
-        var t = (when - timelineMin).TotalSeconds / span;
-        return Math.Clamp(t * 1000.0, 0, 1000);
+        await using var db = await Db.CreateDbContextAsync();
+        var window = TimeSpan.FromHours(6);
+        worldEventsAtPoint = await db.EntityStateEvents.AsNoTracking()
+            .Where(e => e.AtStoryTime >= snapshotAt - window && e.AtStoryTime <= snapshotAt + window)
+            .OrderBy(e => e.AtStoryTime)
+            .Take(120)
+            .ToListAsync();
+        var ids = worldEventsAtPoint.Select(e => e.EntityId).Distinct().ToList();
+        entityNameById = await db.Entities.AsNoTracking()
+            .Where(e => ids.Contains(e.Id))
+            .ToDictionaryAsync(e => e.Id, e => e.Name);
     }
 
-    private DateTime XToTime(double x)
+    /// <summary>Called from JS when the user drags or double-clicks the NOW marker.</summary>
+    [JSInvokable]
+    public async Task OnNowDragged(string isoTime)
     {
-        var t = Math.Clamp(x / 1000.0, 0, 1);
-        return timelineMin.AddSeconds(t * (timelineMax - timelineMin).TotalSeconds);
-    }
-
-    private void OnSvgClick(MouseEventArgs e)
-    {
-        // Map click X to the SVG viewBox X by ratio of clientX to bounding box width.
-        // Without JS interop we approximate using OffsetX + assumed full width 1000.
-        // (Hosted via SVG preserveAspectRatio="none", so this is acceptable for "drop the cursor here.")
-        var when = XToTime(e.OffsetX);
-        currentNow = when;
+        if (!DateTime.TryParse(isoTime, null,
+                System.Globalization.DateTimeStyles.RoundtripKind | System.Globalization.DateTimeStyles.AdjustToUniversal,
+                out var when))
+            return;
+        currentNow = DateTime.SpecifyKind(when, DateTimeKind.Utc);
+        snapshotAt = currentNow;
         Clock.SetNow(currentNow);
+        await LoadEventsNearNowAsync();
+        await ReloadEntitySnapshotAsync();
+        StateHasChanged();
     }
 
-    private void OnNowChanged(ChangeEventArgs e)
+    /// <summary>Called from JS when the user clicks an item dot. Single-click =
+    /// inspect (move snapshot cursor); double-click = activate (navigate).</summary>
+    [JSInvokable]
+    public async Task OnEventSelected(string eventId, string isoStart)
     {
-        if (DateTime.TryParse(e.Value?.ToString(), out var parsed))
+        if (DateTime.TryParse(isoStart, null,
+                System.Globalization.DateTimeStyles.RoundtripKind | System.Globalization.DateTimeStyles.AdjustToUniversal,
+                out var when))
         {
-            currentNow = DateTime.SpecifyKind(parsed, DateTimeKind.Utc);
-            Clock.SetNow(currentNow);
+            snapshotAt = DateTime.SpecifyKind(when, DateTimeKind.Utc);
+            await LoadEventsNearNowAsync();
+            await ReloadEntitySnapshotAsync();
+            StateHasChanged();
         }
+    }
+
+    /// <summary>Called from JS on double-click of an item — navigates to its route.</summary>
+    [JSInvokable]
+    public Task OnEventActivated(string route)
+    {
+        if (!string.IsNullOrWhiteSpace(route))
+            Nav.NavigateTo(route);
+        return Task.CompletedTask;
+    }
+
+    private async Task OnNowInputChanged(ChangeEventArgs e)
+    {
+        if (!DateTime.TryParse(e.Value?.ToString(), out var parsed)) return;
+        currentNow = DateTime.SpecifyKind(parsed, DateTimeKind.Utc);
+        snapshotAt = currentNow;
+        Clock.SetNow(currentNow);
+        await LoadEventsNearNowAsync();
+        await JS.InvokeVoidAsync("streetSamuraiTimeline.setNow", currentNow.ToString("o"));
     }
 
     private async Task RescanContradictions()
@@ -268,31 +388,51 @@
         contradictionScan = await ContradictionScan.ScanAsync();
     }
 
-    private void OpenEvent(TimelineEvent ev) => Nav.NavigateTo(ev.Route);
-
-    private IEnumerable<TimelineEvent> EventsNearNow => events
-        .Where(e => Math.Abs((e.At - currentNow).TotalHours) <= 24)
-        .OrderBy(e => e.At)
-        .Take(20);
-
-    private string SpanLabel
+    private async Task OnPickEntity()
     {
-        get
-        {
-            var d = timelineMax - timelineMin;
-            return d.TotalDays > 365 ? $"{d.TotalDays / 365.0:F1} years"
-                 : d.TotalDays > 1   ? $"{d.TotalDays:F1} days"
-                 : $"{d.TotalHours:F1} hours";
-        }
+        if (string.IsNullOrWhiteSpace(entityPickerName)) return;
+        await using var db = await Db.CreateDbContextAsync();
+        var slug = WorldGraphService.Slugify(entityPickerName);
+        var hit = await db.Entities.AsNoTracking()
+            .Where(e => e.IsActive
+                && (e.Name == entityPickerName || e.Slug == slug
+                    || e.Name.StartsWith(entityPickerName)))
+            .OrderBy(e => e.Name.Length)
+            .FirstOrDefaultAsync();
+        if (hit == null) { selectedEntityId = null; selectedEntityName = "(not found)"; entitySnapshot.Clear(); return; }
+        selectedEntityId   = hit.Id;
+        selectedEntityName = hit.Name;
+        await ReloadEntitySnapshotAsync();
     }
 
-    private static string FormatLocal(DateTime utc)
-        => utc.ToLocalTime().ToString("yyyy-MM-ddTHH:mm:ss");
-
-    private static string TypeBadge(string t) => t switch
+    private async Task OnEntityPickerKey(KeyboardEventArgs e)
     {
-        "book"    => "bg-info",
-        "chapter" => "bg-success",
-        _         => "bg-warning text-dark",
+        if (e.Key == "Enter") await OnPickEntity();
+    }
+
+    private async Task ReloadEntitySnapshotAsync()
+    {
+        if (selectedEntityId == null) { entitySnapshot.Clear(); return; }
+        entitySnapshot = await Ledger.SnapshotAsync(selectedEntityId.Value, snapshotAt);
+    }
+
+    private async Task OnZoomToFit() =>
+        await JS.InvokeVoidAsync("streetSamuraiTimeline.zoomToFit");
+
+    private static string FormatLocal(DateTime utc) =>
+        utc.ToLocalTime().ToString("yyyy-MM-ddTHH:mm:ss");
+
+    private static string VerbBadge(string verb) => verb.ToLowerInvariant() switch
+    {
+        "set"    => "bg-info",
+        "inc"    => "bg-success",
+        "dec"    => "bg-warning text-dark",
+        "enter"  => "bg-primary",
+        "leave"  => "bg-secondary",
+        "add"    => "bg-success",
+        "remove" => "bg-danger",
+        _        => "bg-secondary",
     };
+
+    public void Dispose() => selfRef?.Dispose();
 }

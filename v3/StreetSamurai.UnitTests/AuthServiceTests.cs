@@ -1,7 +1,15 @@
+using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.UnitTests;
+
+internal static class AuthTestHelpers
+{
+    public static UserRepository NewUserRepo(IPathProvider paths) =>
+        new UserRepository(new SettingsKvStore(TestDbFactory.For(paths, "users")));
+}
 
 [TestFixture]
 public class AuthServiceTests
@@ -17,7 +25,7 @@ public class AuthServiceTests
         Directory.CreateDirectory(testDir);
         var paths = new TestPathProviderWithRoot(testDir);
         Directory.CreateDirectory(paths.EngineDataDir);
-        userRepo = new UserRepository(paths);
+        userRepo = AuthTestHelpers.NewUserRepo(paths);
         auth = new AuthService(userRepo);
     }
 
@@ -1212,7 +1220,7 @@ public class UserRepositoryTests
         Directory.CreateDirectory(testDir);
         var paths = new TestPathProviderWithRoot(testDir);
         Directory.CreateDirectory(paths.EngineDataDir);
-        repo = new UserRepository(paths);
+        repo = AuthTestHelpers.NewUserRepo(paths);
     }
 
     [TearDown]
@@ -1250,7 +1258,7 @@ public class UserRepositoryTests
 
         // Create a new repo instance pointing at the same directory (simulates app restart)
         var paths = new TestPathProviderWithRoot(testDir);
-        var repo2 = new UserRepository(paths);
+        var repo2 = AuthTestHelpers.NewUserRepo(paths);
         var user = repo2.GetByEmail("persist@test.com");
         Assert.That(user, Is.Not.Null);
         Assert.That(user!.DisplayName, Is.EqualTo("Persist"));
@@ -1451,7 +1459,7 @@ public class UserRepositoryTests
 
         // Reload from disk
         var paths = new TestPathProviderWithRoot(testDir);
-        var repo2 = new UserRepository(paths);
+        var repo2 = AuthTestHelpers.NewUserRepo(paths);
         var loaded = repo2.GetByEmail("roundtrip@test.com");
 
         Assert.That(loaded, Is.Not.Null);
@@ -1507,7 +1515,7 @@ public class UserRepositoryTests
         });
 
         var paths = new TestPathProviderWithRoot(testDir);
-        var repo2 = new UserRepository(paths);
+        var repo2 = AuthTestHelpers.NewUserRepo(paths);
         var user = repo2.GetByEmail("unicode@test.com");
         Assert.That(user!.DisplayName, Is.EqualTo("\u5c0f\u6797\u592a\u90ce"));
     }
@@ -1553,7 +1561,7 @@ public class SecurityStampTests
         Directory.CreateDirectory(testDir);
         var paths = new TestPathProviderWithRoot(testDir);
         Directory.CreateDirectory(paths.EngineDataDir);
-        userRepo = new UserRepository(paths);
+        userRepo = AuthTestHelpers.NewUserRepo(paths);
         auth = new AuthService(userRepo);
     }
 
@@ -1627,7 +1635,7 @@ public class SecurityStampTests
 
         // Reload from disk
         var paths = new TestPathProviderWithRoot(testDir);
-        var repo2 = new UserRepository(paths);
+        var repo2 = AuthTestHelpers.NewUserRepo(paths);
         var reloaded = repo2.GetByEmail("test@test.com");
         Assert.That(reloaded!.SecurityStamp, Is.EqualTo(stamp));
     }
@@ -1668,7 +1676,7 @@ public class LockoutCleanupTests
         Directory.CreateDirectory(testDir);
         var paths = new TestPathProviderWithRoot(testDir);
         Directory.CreateDirectory(paths.EngineDataDir);
-        userRepo = new UserRepository(paths);
+        userRepo = AuthTestHelpers.NewUserRepo(paths);
         auth = new AuthService(userRepo);
     }
 
@@ -1749,7 +1757,7 @@ public class RedTeamRound2Tests
         Directory.CreateDirectory(testDir);
         var paths = new TestPathProviderWithRoot(testDir);
         Directory.CreateDirectory(paths.EngineDataDir);
-        userRepo = new UserRepository(paths);
+        userRepo = AuthTestHelpers.NewUserRepo(paths);
         auth = new AuthService(userRepo);
     }
 
@@ -2044,7 +2052,7 @@ public class RedTeamRound2Tests
 
         // Reload from disk
         var paths = new TestPathProviderWithRoot(testDir);
-        var repo2 = new UserRepository(paths);
+        var repo2 = AuthTestHelpers.NewUserRepo(paths);
         var reloaded = repo2.GetByEmail("admin@streetsamurai.local");
         Assert.That(reloaded!.MustChangePassword, Is.True);
     }

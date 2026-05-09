@@ -161,7 +161,9 @@ public class WorldValidationTests
     {
         var svc = new WorldConsistencyService(
             provider.GetRequiredService<IServiceScopeFactory>(),
-            provider.GetRequiredService<IPathProvider>(),
+            StreetSamurai.Core.Data.TestDbFactory.For(
+                provider.GetRequiredService<IPathProvider>(),
+                "validation"),
             NullLogger<WorldConsistencyService>.Instance);
 
         svc.RunRuleScan = true;

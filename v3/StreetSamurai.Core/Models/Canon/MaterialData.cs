@@ -24,7 +24,7 @@ public class MaterialData : ICanonEntity
     [JsonPropertyName("developers")] public List<string> Developers { get; set; } = [];
     [JsonPropertyName("applications")] public List<string> Applications { get; set; } = [];
     [JsonPropertyName("tier_availability")] public string TierAvailability { get; set; } = "";
-    [JsonPropertyName("cost")] public string Cost { get; set; } = "";
+    [JsonPropertyName("cost"), JsonConverter(typeof(TolerantStringConverter))] public string Cost { get; set; } = "";
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
     [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";

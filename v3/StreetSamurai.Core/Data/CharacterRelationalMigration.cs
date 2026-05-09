@@ -77,18 +77,12 @@ public class CharacterRelationalMigration
             ("Augmentations",    "NVARCHAR(MAX) NOT NULL", "''"),
             ("DailyLife",        "NVARCHAR(MAX) NOT NULL", "''"),
             // Belongings (scalar refs)
-            ("BelongingsPrimaryWeapon",   "NVARCHAR(450) NOT NULL", "''"),
-            ("BelongingsSecondaryWeapon", "NVARCHAR(450) NOT NULL", "''"),
-            ("BelongingsArmor",           "NVARCHAR(450) NOT NULL", "''"),
-            ("BelongingsVehicle",         "NVARCHAR(450) NOT NULL", "''"),
-            ("BelongingsResidence",       "NVARCHAR(450) NOT NULL", "''"),
-            ("BelongingsClothingStyle",   "NVARCHAR(450) NOT NULL", "''"),
-            ("BelongingsFavoriteDrink",   "NVARCHAR(450) NOT NULL", "''"),
-            ("BelongingsFavoriteFood",    "NVARCHAR(450) NOT NULL", "''"),
-            ("BelongingsStimulant",       "NVARCHAR(450) NOT NULL", "''"),
-            ("BelongingsCommDevice",      "NVARCHAR(450) NOT NULL", "''"),
-            // Operating territory scalars
-            ("TerritoryHomeTurf", "NVARCHAR(450) NOT NULL", "''"),
+            // BelongingsPrimaryWeapon / SecondaryWeapon / Armor / Vehicle /
+            // Residence / ClothingStyle / FavoriteDrink / FavoriteFood /
+            // Stimulant / CommDevice all dropped 2026-05-08 — single-row
+            // buckets in CharacterBelongingsGear are the new home.
+            // Operating territory scalars — TerritoryHomeTurf dropped 2026-05-08;
+            // canonical source is the CharacterHomeTurfs bridge.
             ("TerritoryRange",    "NVARCHAR(40)  NOT NULL", "'local'"),
             // Physical description scalars
             ("Heritage",              "NVARCHAR(450) NOT NULL", "''"),

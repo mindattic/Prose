@@ -24,8 +24,9 @@ public class Entity
 
     public string? Description { get; set; }
 
-    /// <summary>JSON array of tag strings — convenience copy of EntityTags for prompt rendering.</summary>
-    public string? TagsJson { get; set; }
+    // Entities.TagsJson dropped 2026-05-08 — was a convenience copy of EntityTags
+    // that drifted heavily and had zero readers. Tags now live exclusively on the
+    // EntityTags bridge (navigation: Tags below).
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime ModifiedAt { get; set; } = DateTime.UtcNow;

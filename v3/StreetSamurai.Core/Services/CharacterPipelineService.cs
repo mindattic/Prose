@@ -1,7 +1,9 @@
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -24,6 +26,7 @@ public class CharacterPipelineService : PipelineServiceBase
 
     private readonly IServiceScopeFactory scopeFactory;
     private readonly IPathProvider paths;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<CharacterPipelineService> log;
 
     // Configuration (set before RunAsync)
@@ -37,10 +40,15 @@ public class CharacterPipelineService : PipelineServiceBase
     public int LoadoutsAssigned  { get; private set; }
     public int Skipped           { get; private set; }
 
-    private static readonly string[] HumanDirs   = ["people", "synthetics"];
-    private static readonly string[] AllEntityDirs = ["people", "synthetics", "corponations", "factions",
-        "weaponry", "ammunition", "cyberware", "equipment", "apparel", "genemods", "pharmaceuticals",
-        "transportation", "materials", "technology", "automata"];
+    // Canonical Entities.EntityType values — replaces the old folder-name lists
+    // now that the source of truth is SQL. Each step queries the DB for these
+    // EntityTypes and walks the matching Records.Json blobs.
+    private static readonly string[] HumanTypes = ["character", "synthetic"];
+    private static readonly string[] AllEntityTypes = [
+        "character", "synthetic", "corponation", "faction",
+        "weapon", "ammunition", "cyberware", "equipment", "apparel", "genemod", "pharmaceutical",
+        "transportation", "material", "technology", "automaton",
+    ];
 
     // Zone → ancestry weight pools (Ubiquitous Diaspora: unexpected global combinations)
     // Keys: east_asian, south_asian, african, caribbean, latino, middle_eastern,
@@ -67,11 +75,13 @@ public class CharacterPipelineService : PipelineServiceBase
     public CharacterPipelineService(
         IServiceScopeFactory scopeFactory,
         IPathProvider paths,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ILogger<CharacterPipelineService> log)
     {
         this.scopeFactory = scopeFactory;
-        this.paths = paths;
-        this.log = log;
+        this.paths        = paths;
+        this.dbFactory    = dbFactory;
+        this.log          = log;
     }
 
     protected override void OnCancel()
@@ -109,14 +119,14 @@ public class CharacterPipelineService : PipelineServiceBase
 
     private async Task RunAncestryAsync(CancellationToken ct)
     {
-        var files = CollectFiles(HumanDirs);
+        var files = CollectFiles(HumanTypes);
         var rng = new Random(42);
 
         for (int i = 0; i < files.Count; i++)
         {
             ct.ThrowIfCancellationRequested();
             await CheckPauseAsync(ct);
-            Notify("Step 1 — Ancestry", i, files.Count, Path.GetFileNameWithoutExtension(files[i]));
+            Notify("Step 1 — Ancestry", i, files.Count, files[i].ToString("N")[..8]);
 
             var (node, raw) = LoadJson(files[i]);
             if (node == null) continue;
@@ -190,7 +200,7 @@ public class CharacterPipelineService : PipelineServiceBase
 
     private async Task RunDescriptionsAsync(ClaudeService claude, CancellationToken ct)
     {
-        var files = CollectFiles(AllEntityDirs);
+        var files = CollectFiles(AllEntityTypes);
         const int batchSize = 6;
 
         for (int i = 0; i < files.Count; i += batchSize)
@@ -199,9 +209,9 @@ public class CharacterPipelineService : PipelineServiceBase
             await CheckPauseAsync(ct);
 
             var batch = files.Skip(i).Take(batchSize).ToList();
-            Notify("Step 2 — Descriptions", i, files.Count, Path.GetFileNameWithoutExtension(batch[0]));
+            Notify("Step 2 — Descriptions", i, files.Count, batch[0].ToString("N")[..8]);
 
-            var needsDesc = new List<(string File, JsonNode Node)>();
+            var needsDesc = new List<(Guid File, JsonNode Node)>();
             foreach (var f in batch)
             {
                 var (node, _) = LoadJson(f);
@@ -306,17 +316,17 @@ public class CharacterPipelineService : PipelineServiceBase
 
     private async Task RunHarmonizeAsync(ClaudeService claude, CancellationToken ct)
     {
-        var files = CollectFiles(HumanDirs);
+        var files = CollectFiles(HumanTypes);
         const int batchSize = 8;
 
         for (int i = 0; i < files.Count; i += batchSize)
         {
             ct.ThrowIfCancellationRequested();
             await CheckPauseAsync(ct);
-            Notify("Step 3 — Harmonize", i, files.Count, Path.GetFileNameWithoutExtension(files[i]));
+            Notify("Step 3 — Harmonize", i, files.Count, files[i].ToString("N")[..8]);
 
             var batch = files.Skip(i).Take(batchSize).ToList();
-            var candidates = new List<(string File, JsonNode Node)>();
+            var candidates = new List<(Guid File, JsonNode Node)>();
 
             foreach (var f in batch)
             {
@@ -383,13 +393,13 @@ public class CharacterPipelineService : PipelineServiceBase
 
     private async Task RunLoadoutsAsync(CancellationToken ct)
     {
-        var files = CollectFiles(["people"]);
+        var files = CollectFiles(["character"]);
 
         for (int i = 0; i < files.Count; i++)
         {
             ct.ThrowIfCancellationRequested();
             await CheckPauseAsync(ct);
-            Notify("Step 4 — Loadouts", i, files.Count, Path.GetFileNameWithoutExtension(files[i]));
+            Notify("Step 4 — Loadouts", i, files.Count, files[i].ToString("N")[..8]);
 
             var (node, _) = LoadJson(files[i]);
             if (node == null) continue;
@@ -438,34 +448,48 @@ public class CharacterPipelineService : PipelineServiceBase
         return ["compact holdout pistol", "knife", "comms unit"];
     }
 
-    // ── File I/O helpers ──────────────────────────────────────
+    // ── DB I/O helpers ──────────────────────────────────────────
+    // The pipeline used to walk engine/data/{folder}/*.json files. The data
+    // now lives in SQL Records.Json blobs; these helpers preserve the
+    // original (collect → load → mutate → save) shape so the four step
+    // methods didn't have to be rewritten — they just iterate over EntityIds
+    // instead of file paths and the JsonNode round-trip is identical.
 
-    private List<string> CollectFiles(IEnumerable<string> dirs)
+    private List<Guid> CollectFiles(IEnumerable<string> entityTypes)
     {
-        var files = new List<string>();
-        foreach (var dir in dirs)
-        {
-            var full = Path.Combine(paths.EngineDataDir, dir);
-            if (Directory.Exists(full))
-                files.AddRange(Directory.GetFiles(full, "*.json"));
-        }
-        return files;
+        var types = entityTypes.ToHashSet(StringComparer.OrdinalIgnoreCase);
+        using var db = dbFactory.CreateDbContext();
+        return db.Entities.AsNoTracking()
+            .Where(e => e.IsActive && types.Contains(e.EntityType))
+            .Select(e => e.Id)
+            .ToList();
     }
 
-    private static (JsonNode? Node, string Raw) LoadJson(string path)
+    private (JsonNode? Node, string Raw) LoadJson(Guid entityId)
     {
         try
         {
-            var raw = File.ReadAllText(path);
+            using var db = dbFactory.CreateDbContext();
+            var raw = db.Records.AsNoTracking()
+                .Where(r => r.EntityId == entityId)
+                .Select(r => r.Json)
+                .FirstOrDefault();
+            if (string.IsNullOrEmpty(raw)) return (null, "");
             return (JsonNode.Parse(raw), raw);
         }
         catch { return (null, ""); }
     }
 
-    private static void SaveJson(string path, JsonNode node)
+    private void SaveJson(Guid entityId, JsonNode node)
     {
-        var opts = new JsonSerializerOptions { WriteIndented = true };
-        File.WriteAllText(path, node.ToJsonString(opts));
+        using var db = dbFactory.CreateDbContext();
+        var record = db.Records.Include(r => r.Entity)
+            .FirstOrDefault(r => r.EntityId == entityId);
+        if (record == null) return;
+        record.Json      = node.ToJsonString(new JsonSerializerOptions { WriteIndented = false });
+        record.UpdatedAt = DateTime.UtcNow;
+        if (record.Entity != null) record.Entity.ModifiedAt = record.UpdatedAt;
+        db.SaveChanges();
     }
 
     private static string Truncate(string s, int max) =>

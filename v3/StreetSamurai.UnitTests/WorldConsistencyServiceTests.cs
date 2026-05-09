@@ -26,9 +26,10 @@ public class WorldConsistencyServiceTests
         services.AddSingleton(new SettingsService(tempDir));
         var provider = services.BuildServiceProvider();
 
+        var paths = new TestPathProviderWithRoot(tempDir);
         svc = new WorldConsistencyService(
             provider.GetRequiredService<IServiceScopeFactory>(),
-            new TestPathProviderWithRoot(tempDir),
+            StreetSamurai.Core.Data.TestDbFactory.For(paths, "consistency"),
             NullLoggers.For<WorldConsistencyService>());
 
         svc.RunRuleScan      = true;

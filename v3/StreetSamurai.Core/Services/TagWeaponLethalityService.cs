@@ -1,5 +1,6 @@
 using System.Text.Json.Nodes;
-using StreetSamurai.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data;
 
 namespace StreetSamurai.Core.Services;
 
@@ -7,10 +8,10 @@ namespace StreetSamurai.Core.Services;
 /// Tags every weapon entity with a lethality classification:
 ///   lethal | less_lethal | non_lethal
 /// Uses category-based defaults then keyword overrides.
-/// Skips weapons that already have a lethality tag.
-/// Ported from: scripts/js/tag_weapon_lethality.js
+/// Skips weapons that already have a lethality tag. Operates on
+/// <c>Records.Json</c>.
 /// </summary>
-public class TagWeaponLethalityService(IPathProvider paths) : DataScanUtility(paths)
+public class TagWeaponLethalityService(IDbContextFactory<StreetSamuraiDbContext> dbFactory) : DataScanUtility(dbFactory)
 {
     private static readonly HashSet<string> LethalCategories = new(StringComparer.OrdinalIgnoreCase)
     {

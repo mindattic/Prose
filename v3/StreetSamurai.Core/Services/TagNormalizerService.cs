@@ -1,5 +1,6 @@
 using System.Text.Json.Nodes;
-using StreetSamurai.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data;
 
 namespace StreetSamurai.Core.Services;
 
@@ -8,9 +9,9 @@ namespace StreetSamurai.Core.Services;
 ///   1. Add category tag ("person" for people/, "synthetic" for synthetics/)
 ///   2. Lowercase + deduplicate all tags
 ///   3. Remove tags whose required keywords are absent from entity text
-/// Ported from: scripts/js/fix_entity_tags.js + scripts/js/cleanup_tags.js
+/// Operates on <c>Records.Json</c>.
 /// </summary>
-public class TagNormalizerService(IPathProvider paths) : DataScanUtility(paths)
+public class TagNormalizerService(IDbContextFactory<StreetSamuraiDbContext> dbFactory) : DataScanUtility(dbFactory)
 {
     public record Options(bool AddCategoryTags = true, bool ValidateKeywords = true);
 

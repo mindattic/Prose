@@ -128,21 +128,26 @@ public class LoreTripleTools
     }
 
     /// <summary>
-    /// Extract continuity claims from a single entity record file. Top-level scalar
+    /// Extract continuity claims from a single entity record. Top-level scalar
     /// fields become direct claims; prose fields (description, personality,
     /// ideology…) go through the same Legion Quorum vote as chapter prose.
     /// </summary>
     [McpServerTool, Description(
-        "Extract continuity claims from a single entity record file (engine/data/{kind}/{id}.json). " +
+        "Extract continuity claims from a single entity record by EntityId (canonical Records.Json blob in SQL). " +
         "Top-level scalar fields become direct claims; prose fields (description, personality, ideology…) " +
         "go through the same Legion Quorum vote as chapter prose.")]
     public async Task<string> ExtractContinuityFromEntityRecord(
-        [Description("Absolute or relative path to the entity record JSON file.")]
-            string filePath)
+        [Description("EntityId (guid, hyphenated or 32-char hex) of the canon entity to extract from.")]
+            string entityId)
     {
         try
         {
-            var r = await extraction.ExtractFromEntityRecordAsync(filePath);
+            if (!Guid.TryParse(entityId, out var id)
+                && !(entityId.Length == 32 && Guid.TryParseExact(entityId, "N", out id)))
+            {
+                return JsonSerializer.Serialize(new { error = "extract_entity_record_failed", detail = $"unparseable entityId '{entityId}'" }, CanonTools.JsonOpts);
+            }
+            var r = await extraction.ExtractFromEntityRecordAsync(id);
             return JsonSerializer.Serialize(new { ok = r.ContradictedClaims == 0, report = r }, CanonTools.JsonOpts);
         }
         catch (Exception ex)

@@ -1,15 +1,16 @@
 using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
-using StreetSamurai.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Replaces word-form "Phi"/"phi" currency references with "Quanta"/"quanta"
-/// in all entity prose. The Φ symbol is never touched.
-/// Ported from: scripts/js/fix_phi_to_quanta.js
+/// in all entity prose. The Φ symbol is never touched. Operates on
+/// <c>Records.Json</c>.
 /// </summary>
-public class FixPhiService(IPathProvider paths) : DataScanUtility(paths)
+public class FixPhiService(IDbContextFactory<StreetSamuraiDbContext> dbFactory) : DataScanUtility(dbFactory)
 {
     private static readonly Regex PhiUpper = new(@"\bPhi\b", RegexOptions.Compiled);
     private static readonly Regex PhiLower = new(@"\bphi\b", RegexOptions.Compiled);

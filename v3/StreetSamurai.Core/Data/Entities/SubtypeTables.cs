@@ -92,6 +92,55 @@ public class Chapter
     /// <summary>23rd-century in-world date the chapter takes place on. Used as the dossier asOf cursor.</summary>
     public DateTime? InWorldDate { get; set; }
 
+    /// <summary>
+    /// JSON array of structured StoryEvent records (what happened, who was
+    /// involved, where, what changed). Replaces the legacy
+    /// <c>engine/data/chapters/&lt;id&gt;/events.json</c> file. Null/empty
+    /// when no events have been extracted yet. Owned and serialized by
+    /// <see cref="StreetSamurai.Core.Services.EventLogService"/>.
+    /// </summary>
+    public string? EventsJson { get; set; }
+
+    /// <summary>
+    /// Serialized KnowledgeMap (information asymmetry — what each character
+    /// knows, what the reader knows, when learned). Replaces the legacy
+    /// <c>engine/data/chapters/&lt;id&gt;/knowledge.json</c> file. Owned by
+    /// <see cref="StreetSamurai.Core.Services.KnowledgeMapService"/>.
+    /// </summary>
+    public string? KnowledgeJson { get; set; }
+
+    /// <summary>
+    /// Serialized StoryOutline — beat sheet with act structure, character
+    /// arcs, seeds and payoffs. Replaces the legacy
+    /// <c>engine/data/chapters/&lt;id&gt;/outline.json</c> file. Owned by
+    /// <see cref="StreetSamurai.Core.Services.OutlineService"/>.
+    /// </summary>
+    public string? OutlineJson { get; set; }
+
+    /// <summary>
+    /// Serialized RefinementReport — beat-by-beat refinement notes from the
+    /// human-in-the-loop refinement pass. Replaces the legacy
+    /// <c>engine/data/chapters/&lt;id&gt;/refinement_report.json</c> file.
+    /// Owned by <see cref="StreetSamurai.Core.Services.StoryRefinementService"/>.
+    /// </summary>
+    public string? RefinementReportJson { get; set; }
+
+    /// <summary>
+    /// Serialized StoryQualityReport — per-chapter quality scores + flagged
+    /// clichés/strengths from the LLMVoting Quorum pass. Replaces the legacy
+    /// <c>engine/data/chapters/&lt;id&gt;/quality_report.json</c> file.
+    /// Owned by <see cref="StreetSamurai.Core.Services.StoryQualityService"/>.
+    /// </summary>
+    public string? QualityReportJson { get; set; }
+
+    /// <summary>
+    /// Serialized AutonomousStory — full pipeline checkpoint (beats, state,
+    /// outline progress) for StoryDirectorService resume-from-failure. Replaces
+    /// the legacy <c>engine/data/chapters/&lt;id&gt;/checkpoint.json</c> file.
+    /// Owned by <see cref="StreetSamurai.Core.Services.StoryDirectorService"/>.
+    /// </summary>
+    public string? CheckpointJson { get; set; }
+
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime ModifiedAt { get; set; } = DateTime.UtcNow;
 

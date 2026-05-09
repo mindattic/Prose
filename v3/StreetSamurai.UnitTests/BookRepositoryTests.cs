@@ -1,19 +1,19 @@
-using Microsoft.Extensions.Logging.Abstractions;
+﻿using Microsoft.Extensions.Logging.Abstractions;
 using StreetSamurai.Core.Models;
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.UnitTests;
 
 /// <summary>
-/// JsonBookRepository round-trip + Book/Chapter relationship integrity.
+/// BookRepository round-trip + Book/Chapter relationship integrity.
 /// </summary>
 [TestFixture]
 public class BookRepositoryTests
 {
     private string tempRoot = "";
     private TestPathProviderWithRoot paths = null!;
-    private JsonBookRepository books = null!;
-    private JsonChapterRepository chapters = null!;
+    private BookRepository books = null!;
+    private ChapterRepository chapters = null!;
 
     [SetUp]
     public void SetUp()
@@ -21,8 +21,8 @@ public class BookRepositoryTests
         tempRoot = Path.Combine(Path.GetTempPath(), "ss-book-tests-" + Guid.NewGuid().ToString("N"));
         Directory.CreateDirectory(tempRoot);
         paths = new TestPathProviderWithRoot(tempRoot);
-        books = new JsonBookRepository(paths, NullLogger<JsonBookRepository>.Instance);
-        chapters = new JsonChapterRepository(paths, NullLogger<JsonChapterRepository>.Instance);
+        books = new BookRepository(paths, NullLogger<BookRepository>.Instance);
+        chapters = new ChapterRepository(paths, NullLogger<ChapterRepository>.Instance);
     }
 
     [TearDown]
@@ -40,7 +40,7 @@ public class BookRepositoryTests
             Tagline = "Some debts can't be paid in QUANTA.",
             Premise = "A freelance contractor takes a job at half rate to help a poor family.",
             ArcTarget = "Redemption refused.",
-            Protagonists = ["Kyle Ellen Corbin-Vasik"],
+            Protagonists = ["Kyle Ellen Corbin-Vister"],
             ChapterIds = ["ch-1", "ch-2", "ch-3"],
             Status = "drafting",
         };
@@ -53,7 +53,7 @@ public class BookRepositoryTests
         Assert.That(loaded!.Title, Is.EqualTo("Half Rate"));
         Assert.That(loaded.Tagline, Is.EqualTo("Some debts can't be paid in QUANTA."));
         Assert.That(loaded.Protagonists, Has.Count.EqualTo(1));
-        Assert.That(loaded.Protagonists[0], Is.EqualTo("Kyle Ellen Corbin-Vasik"));
+        Assert.That(loaded.Protagonists[0], Is.EqualTo("Kyle Ellen Corbin-Vister"));
         Assert.That(loaded.ChapterIds, Has.Count.EqualTo(3));
         Assert.That(loaded.ChapterIds[1], Is.EqualTo("ch-2"));
         Assert.That(loaded.StateAtEnd.OpenThreads, Has.Count.EqualTo(1));

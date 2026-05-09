@@ -1,7 +1,4 @@
 {
-  "voters": ["ollama"],
-  "judge": "ollama",
-  "models": {
-    "ollama": "qwen3:1.7b"
-  }
+  "voters": ["claude"],
+  "judge": "claude"
 }

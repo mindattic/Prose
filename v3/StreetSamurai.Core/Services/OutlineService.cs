@@ -1,30 +1,41 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Plans multi-scene story arcs. Generates beat sheets with act structure so each
-/// generation call knows its role in the larger narrative. The system can now write
-/// strategically (toward a climax) not just tactically (next paragraph).
+/// generation call knows its role in the larger narrative.
 ///
-/// An outline is a living document — it can be generated upfront, modified as the
-/// story evolves, and extended when the original arc completes.
+/// Storage: <c>Chapters.OutlineJson</c> on SQL Server (since 2026-05-08;
+/// the legacy <c>engine/data/chapters/&lt;projectId&gt;/outline.json</c>
+/// file was retired in the same migration that drained the rest of
+/// <c>engine/data</c>). On first read for a project that still has a legacy
+/// file, the service migrates it into the DB column and deletes the file.
 /// </summary>
 public class OutlineService
 {
     private readonly ILlmService llm;
     private readonly DatabaseService db;
     private readonly IPathProvider paths;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<OutlineService> log;
 
-    public OutlineService(ILlmService llm, DatabaseService db, IPathProvider paths, ILogger<OutlineService> log)
+    public OutlineService(
+        ILlmService llm,
+        DatabaseService db,
+        IPathProvider paths,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        ILogger<OutlineService> log)
     {
         this.llm = llm;
         this.db = db;
         this.paths = paths;
+        this.dbFactory = dbFactory;
         this.log = log;
     }
 
@@ -297,20 +308,109 @@ public class OutlineService
         return -1;
     }
 
-    /// <summary>Save outline to disk alongside the story project.</summary>
-    public void Save(string projectId, StoryOutline outline)
+    /// <summary>
+    /// Idempotent column-add. Called from <c>--repair</c>'s schema-bootstrap
+    /// phase so subsequent EF queries don't trip on a missing column.
+    /// </summary>
+    public async Task EnsureOutlineJsonColumnAsync(CancellationToken ct = default)
     {
-        var path = StoryFolderHelper.GetFilePath(paths.ChaptersDir, projectId, "outline.json");
-        File.WriteAllText(path, JsonSerializer.Serialize(outline, JsonDefaults.Indented));
+        await using var ctx = await dbFactory.CreateDbContextAsync(ct);
+        const string ddl = """
+            IF COL_LENGTH('dbo.Chapters', 'OutlineJson') IS NULL
+                ALTER TABLE [dbo].[Chapters] ADD [OutlineJson] NVARCHAR(MAX) NULL;
+            """;
+        await ctx.Database.ExecuteSqlRawAsync(ddl, ct);
     }
 
-    /// <summary>Load outline from disk.</summary>
+    /// <summary>Save outline to <c>Chapters.OutlineJson</c>.</summary>
+    public void Save(string projectId, StoryOutline outline)
+    {
+        if (!Guid.TryParse(projectId, out var chapterId)
+            && !Guid.TryParseExact(projectId, "N", out chapterId))
+        {
+            log.LogWarning("Outline: project id is not a Guid, skipping save: {ProjectId}", projectId);
+            return;
+        }
+
+        try
+        {
+            using var ctx = dbFactory.CreateDbContext();
+            var row = ctx.Chapters.FirstOrDefault(c => c.Id == chapterId);
+            if (row == null)
+            {
+                log.LogDebug("Outline: no Chapters row for {ProjectId}; outline NOT persisted (chapter must be saved first)", projectId);
+                return;
+            }
+            row.OutlineJson = JsonSerializer.Serialize(outline, JsonDefaults.Indented);
+            row.ModifiedAt = DateTime.UtcNow;
+            ctx.SaveChanges();
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Outline: save failed for {ProjectId}", projectId);
+        }
+    }
+
+    /// <summary>
+    /// Load outline from <c>Chapters.OutlineJson</c>. Migrates a legacy
+    /// <c>outline.json</c> file (and deletes it) on first read miss.
+    /// </summary>
     public StoryOutline? Load(string projectId)
     {
+        if (!Guid.TryParse(projectId, out var chapterId)
+            && !Guid.TryParseExact(projectId, "N", out chapterId))
+        {
+            return TryReadLegacyDiskFile(projectId);
+        }
+
+        try
+        {
+            using var ctx = dbFactory.CreateDbContext();
+            var row = ctx.Chapters.FirstOrDefault(c => c.Id == chapterId);
+            if (row == null) return TryReadLegacyDiskFile(projectId);
+
+            // Migration on first miss: empty DB column + legacy file present
+            // → import file then delete it.
+            if (string.IsNullOrEmpty(row.OutlineJson))
+            {
+                var fromDisk = TryReadLegacyDiskFile(projectId, deleteAfterRead: true);
+                if (fromDisk != null)
+                {
+                    row.OutlineJson = JsonSerializer.Serialize(fromDisk, JsonDefaults.Indented);
+                    row.ModifiedAt = DateTime.UtcNow;
+                    ctx.SaveChanges();
+                    return fromDisk;
+                }
+                return null;
+            }
+            return JsonSerializer.Deserialize<StoryOutline>(row.OutlineJson);
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Outline: load failed for {ProjectId}", projectId);
+            return null;
+        }
+    }
+
+    private StoryOutline? TryReadLegacyDiskFile(string projectId, bool deleteAfterRead = false)
+    {
         var path = StoryFolderHelper.FindFile(paths.ChaptersDir, projectId, "outline.json");
-        if (path == null) return null;
-        try { return JsonSerializer.Deserialize<StoryOutline>(File.ReadAllText(path)); }
-        catch (Exception ex) { log.LogError(ex, "Failed to load outline from {Path}", path); return null; }
+        if (path == null || !File.Exists(path)) return null;
+        try
+        {
+            var outline = JsonSerializer.Deserialize<StoryOutline>(File.ReadAllText(path));
+            if (deleteAfterRead && outline != null)
+            {
+                try { File.Delete(path); }
+                catch (Exception ex) { log.LogDebug(ex, "Outline: legacy file delete failed for {Path}", path); }
+            }
+            return outline;
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Outline: legacy disk read failed for {Path}", path);
+            return null;
+        }
     }
 }
 

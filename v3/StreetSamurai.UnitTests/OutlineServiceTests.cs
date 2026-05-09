@@ -25,7 +25,7 @@ public class OutlineServiceTests
     {
         var outline = MakeTestOutline();
         var paths = new TestPathProviderWithRoot(testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, StreetSamurai.Core.Data.TestDbFactory.For(paths, "outline"), NullLoggers.For<OutlineService>());
 
         var next = svc.GetNextBeat(outline, -1);
         Assert.That(next, Is.Not.Null);
@@ -39,7 +39,7 @@ public class OutlineServiceTests
         outline.Acts[0].Beats[0].Written = true;
 
         var paths = new TestPathProviderWithRoot(testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, StreetSamurai.Core.Data.TestDbFactory.For(paths, "outline"), NullLoggers.For<OutlineService>());
 
         var next = svc.GetNextBeat(outline, -1);
         Assert.That(next, Is.Not.Null);
@@ -55,7 +55,7 @@ public class OutlineServiceTests
                 beat.Written = true;
 
         var paths = new TestPathProviderWithRoot(testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, StreetSamurai.Core.Data.TestDbFactory.For(paths, "outline"), NullLoggers.For<OutlineService>());
 
         Assert.That(svc.GetNextBeat(outline, -1), Is.Null);
     }
@@ -65,7 +65,7 @@ public class OutlineServiceTests
     {
         var outline = MakeTestOutline();
         var paths = new TestPathProviderWithRoot(testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, StreetSamurai.Core.Data.TestDbFactory.For(paths, "outline"), NullLoggers.For<OutlineService>());
 
         svc.MarkBeatWritten(outline, 0);
         Assert.That(outline.Acts[0].Beats[0].Written, Is.True);
@@ -77,7 +77,7 @@ public class OutlineServiceTests
     {
         var outline = MakeTestOutline();
         var paths = new TestPathProviderWithRoot(testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, StreetSamurai.Core.Data.TestDbFactory.For(paths, "outline"), NullLoggers.For<OutlineService>());
 
         var ctx = svc.BuildBeatContext(outline, 0);
         Assert.That(ctx, Does.Contain("STORY OUTLINE CONTEXT"));
@@ -92,7 +92,7 @@ public class OutlineServiceTests
     {
         var outline = MakeTestOutline();
         var paths = new TestPathProviderWithRoot(testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, StreetSamurai.Core.Data.TestDbFactory.For(paths, "outline"), NullLoggers.For<OutlineService>());
 
         var ctx = svc.BuildBeatContext(outline, 0);
         Assert.That(ctx, Does.Contain("PLANT these seeds"));
@@ -104,7 +104,7 @@ public class OutlineServiceTests
     {
         var outline = MakeTestOutline();
         var paths = new TestPathProviderWithRoot(testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, StreetSamurai.Core.Data.TestDbFactory.For(paths, "outline"), NullLoggers.For<OutlineService>());
 
         var ctx = svc.BuildBeatContext(outline, 0);
         Assert.That(ctx, Does.Contain("NEXT BEAT"));
@@ -113,12 +113,33 @@ public class OutlineServiceTests
     [Test]
     public void SaveAndLoad_RoundTrips()
     {
+        // Seed a Chapter row so OutlineService.Save actually persists.
         var outline = MakeTestOutline();
         var paths = new TestPathProviderWithRoot(testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
+        var dbFactory = StreetSamurai.Core.Data.TestDbFactory.For(paths, "outline");
+        var chapterId = Guid.NewGuid();
+        using (var db = dbFactory.CreateDbContext())
+        {
+            db.Entities.Add(new StreetSamurai.Core.Data.Entities.Entity
+            {
+                Id = chapterId,
+                EntityType = "chapter",
+                Name = "SaveAndLoad test",
+                Slug = $"save-load-outline-{chapterId:N}",
+                Status = "canon",
+            });
+            db.Chapters.Add(new StreetSamurai.Core.Data.Entities.Chapter
+            {
+                Id = chapterId,
+                Title = "SaveAndLoad test",
+            });
+            db.SaveChanges();
+        }
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(),
+            paths, dbFactory, NullLoggers.For<OutlineService>());
 
-        svc.Save("proj1", outline);
-        var loaded = svc.Load("proj1");
+        svc.Save(chapterId.ToString("N"), outline);
+        var loaded = svc.Load(chapterId.ToString("N"));
 
         Assert.That(loaded, Is.Not.Null);
         Assert.That(loaded!.Title, Is.EqualTo("Test Story"));
@@ -130,7 +151,7 @@ public class OutlineServiceTests
     public void Load_NonExistent_ReturnsNull()
     {
         var paths = new TestPathProviderWithRoot(testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, StreetSamurai.Core.Data.TestDbFactory.For(paths, "outline"), NullLoggers.For<OutlineService>());
 
         Assert.That(svc.Load("nonexistent"), Is.Null);
     }

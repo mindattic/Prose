@@ -1,4 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using MindAttic.Legion;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Services;
 
@@ -15,7 +18,7 @@ namespace StreetSamurai.Blazor.Cli;
 ///   ss --continuity entity &lt;name&gt;                    Dump every claim about one entity.
 ///   ss --continuity extract --chapter &lt;chapterId&gt;    Extract claims from one chapter's prose via Legion Quorum.
 ///   ss --continuity extract --book &lt;bookId&gt;          Extract claims from every chapter in a book.
-///   ss --continuity extract --entity &lt;path&gt;          Extract claims from one entity record file.
+///   ss --continuity extract --entity &lt;guid&gt;          Extract claims from one entity's Records.Json blob (by EntityId).
 ///   ss --continuity apply --claim &lt;uid&gt;              Apply a CANONICAL claim back to its entity record (Legion picks the field).
 ///
 /// Backed by ContinuityService / ContinuityExtractionService / ContinuityApplyService —
@@ -130,7 +133,7 @@ public static class ContinuityCli
         var bookRepo  = services.GetRequiredService<IBookRepository>();
         var chapterId = ArgValue(args, "--chapter");
         var bookId    = ArgValue(args, "--book");
-        var entityFile = ArgValue(args, "--entity");
+        var entityRef = ArgValue(args, "--entity");
 
         if (!string.IsNullOrEmpty(chapterId))
         {
@@ -159,19 +162,23 @@ public static class ContinuityCli
             }
             catch (Exception ex) { return Fail("extract failed: " + ex.Message); }
         }
-        if (!string.IsNullOrEmpty(entityFile))
+        if (!string.IsNullOrEmpty(entityRef))
         {
-            Console.WriteLine($"[continuity] Extracting from entity record {entityFile}…");
+            if (!Guid.TryParse(entityRef, out var entityId)
+                && !(entityRef.Length == 32 && Guid.TryParseExact(entityRef, "N", out entityId)))
+                return Fail($"--entity expects an EntityId guid (got '{entityRef}')");
+
+            Console.WriteLine($"[continuity] Extracting from entity record {entityId}…");
             try
             {
-                var r = await ext.ExtractFromEntityRecordAsync(entityFile);
+                var r = await ext.ExtractFromEntityRecordAsync(entityId);
                 if (r.Error != null) return Fail(r.Error);
                 Console.WriteLine($"[continuity] {r.NewClaims} new, {r.ConfirmedClaims} confirmed, {r.ContradictedClaims} contradicted.");
                 return r.ContradictedClaims > 0 ? 1 : 0;
             }
             catch (Exception ex) { return Fail("extract failed: " + ex.Message); }
         }
-        return Fail("extract requires one of: --chapter <id> | --book <id> | --entity <path>");
+        return Fail("extract requires one of: --chapter <id> | --book <id> | --entity <guid>");
     }
 
     static async Task<int> CmdApply(string[] args, IServiceProvider services)
@@ -240,17 +247,21 @@ public static class ContinuityCli
             scopeLabel = $"all chapters ({chapterIds.Count})";
         }
 
-        // Resolve scope of entity records
-        var entityDirs = new[] { "people", "places", "factions", "corponations" };
-        var recordPaths = new List<string>();
-        foreach (var d in entityDirs)
+        // Resolve scope of entity records — pulled from SQL so the sweep
+        // hits whatever's in canon today, not whatever happened to be on disk.
+        var entityKinds = new[] { "character", "place", "faction", "corponation" };
+        var dbFactory   = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
+        List<(Guid Id, string Name, string Type)> recordEntities;
+        await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var dir = Path.Combine(paths.EngineDataDir, d);
-            if (Directory.Exists(dir)) recordPaths.AddRange(Directory.GetFiles(dir, "*.json"));
+            recordEntities = await db.Entities.AsNoTracking()
+                .Where(e => e.IsActive && entityKinds.Contains(e.EntityType))
+                .Select(e => new ValueTuple<Guid, string, string>(e.Id, e.Name, e.EntityType))
+                .ToListAsync();
         }
 
         Console.WriteLine($"[sweep] Plan:");
-        Console.WriteLine($"[sweep]   1) Extract from entity records: {(skipRecords ? "skipped" : $"{recordPaths.Count} files")}");
+        Console.WriteLine($"[sweep]   1) Extract from entity records: {(skipRecords ? "skipped" : $"{recordEntities.Count} entities")}");
         Console.WriteLine($"[sweep]   2) Extract from chapter prose : {(skipProse ? "skipped" : scopeLabel)}");
         Console.WriteLine($"[sweep]   3) Auto-resolve contradictions: {(skipResolve || dryRun ? "skipped" : "Legion DecideAsync per pair")}");
         Console.WriteLine($"[sweep]   4) Apply CANONICAL → entity   : {(skipApply || dryRun ? "skipped" : "Legion DecideAsync per claim")}");
@@ -260,13 +271,13 @@ public static class ContinuityCli
         if (!skipRecords)
         {
             int i = 0;
-            foreach (var path in recordPaths)
+            foreach (var ent in recordEntities)
             {
                 i++;
-                Console.WriteLine($"[sweep] [{i,4}/{recordPaths.Count}] record: {Path.GetFileName(path)}");
+                Console.WriteLine($"[sweep] [{i,4}/{recordEntities.Count}] {ent.Type}: {ent.Name}");
                 try
                 {
-                    var r = await extraction.ExtractFromEntityRecordAsync(path);
+                    var r = await extraction.ExtractFromEntityRecordAsync(ent.Id);
                     if (r.Error != null) Console.WriteLine($"[sweep]     ! {r.Error}");
                     else Console.WriteLine($"[sweep]     {r.NewClaims} new, {r.ConfirmedClaims} confirmed, {r.ContradictedClaims} contradicted");
                 }

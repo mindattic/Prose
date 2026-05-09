@@ -27,7 +27,6 @@ Provider: EF Core (`Microsoft.EntityFrameworkCore.SqlServer`).
 | `Slug` | `NVARCHAR(400)` | derived once from name; **UNIQUE** |
 | `Status` | `NVARCHAR(40)` | `canon`, `stub`, `archived` |
 | `Description` | `NVARCHAR(MAX)` | summary blurb |
-| `Tags` | `NVARCHAR(MAX)` | JSON array — convenience copy; canonical Tags live in `EntityTag` |
 | `CreatedAt` | `DATETIME2` | `SYSUTCDATETIME()` default |
 | `ModifiedAt` | `DATETIME2` | trigger or app-level update |
 | `SysStart`, `SysEnd` | `DATETIME2` | `PERIOD FOR SYSTEM_TIME` (history table: `Entity_History`) |
@@ -108,12 +107,15 @@ Each row's PK is also FK to `Entity.Id` — TPT (table-per-type) inheritance. Ev
 | `Pronouns` | `NVARCHAR(40)` | |
 | `Age` | `INT` | nullable |
 | `Birthdate` | `DATE NULL` | 23rd century |
-| `HomeTurf` | `NVARCHAR(200)` | denormalized from `OperatingTerritory` for fast filtering |
-| `Affiliation` | `NVARCHAR(200)` | denormalized; canonical via `Edge` `affiliated_with` |
 | `NarrativeFunction` | `NVARCHAR(MAX)` | |
 | `NarrationVoice` | `NVARCHAR(MAX)` | |
 | `MidjourneyPrompt` | `NVARCHAR(MAX)` | |
 | `Dalle3Prompt` | `NVARCHAR(MAX)` | |
+
+> Tags, HomeTurf, TerritoryHomeTurf, and Affiliation were dropped 2026-05-08 as
+> denormalized "convenience copies" of bridge tables. Canonical sources are now
+> `EntityTags`, `CharacterHomeTurfs`, and `CharacterAffiliations` exclusively.
+> See `feedback_no_denorm_convenience_copies` and `project_denorm_cleanup_plan`.
 
 Sub-tables:
 - `CharacterCyberware` — cyberware inventory (rows over time).
@@ -162,7 +164,7 @@ The dossier and precheck use `chapter:N` story points today. The DB encodes stor
 
 - Full-text catalog on `Entity (Name, Description)`.
 - Computed columns + filtered indexes for the most-asked properties (e.g. `Affiliation`).
-- Continue using `EmbeddingIndexService` for semantic search (vector data; not great in SQL Server unless we adopt SQL Server 2025 vector — keep SQLite for now).
+- Semantic-search service is currently retired. Reintroduce via SQL Server 2025 vector indexes when the time comes.
 
 ### Audit / temporal recall
 

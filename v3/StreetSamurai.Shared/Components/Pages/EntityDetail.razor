@@ -33,6 +33,8 @@
 @inject MediaService Media
 @inject DallEService Dalle
 @inject IChapterRepository Chapters
+@inject CanonExportService CanonExport
+@inject ToastNotifier Toast
 
 <div class="entity-detail-page">
 
@@ -52,6 +54,7 @@ else if (character != null)
             <li class="nav-item"><a class="nav-link @(CurrentTab == "conditions"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("conditions")'><i class="bi bi-bandaid me-1"></i>Conditions <span class="badge bg-secondary">@character.Conditions.Count</span></a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "belongings"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("belongings")'><i class="bi bi-bag me-1"></i>Belongings</a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "timeline"      ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("timeline")'><i class="bi bi-clock-history me-1"></i>Timeline <span class="badge bg-secondary">@character.Timeline.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "family"        ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("family")'><i class="bi bi-people me-1"></i>Family</a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"       ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
         </ul>
         @if (Access.IsAdministrator)
@@ -114,6 +117,16 @@ else
 @if (!notFound && CurrentTab == "dossier")
 {
     <DossierPanel EntityId="@(string.IsNullOrEmpty(resolvedId) ? EntityId : resolvedId)" AsOf="@AsOf" />
+    @if (!string.IsNullOrEmpty(resolvedName))
+    {
+        <SemanticEdgeSuggestions Name="@resolvedName" />
+    }
+}
+
+@if (!notFound && CurrentTab == "family" && character != null && !string.IsNullOrEmpty(resolvedId))
+{
+    <FamilyTreeView EntityId="@resolvedId" SubjectName="@resolvedName" />
+    <FamilyPanel    EntityId="@resolvedId" />
 }
 
 @* ── Place tab bodies ── *@
@@ -1334,6 +1347,25 @@ else if (CurrentTab == "record" && document != null)
 {
     <EntityImagePanel EntityId="@resolvedId" EntityName="@resolvedName"
                       MidjourneyPrompt="@resolvedMidjourneyPrompt" Dalle3Prompt="@resolvedDalle3Prompt" />
+
+    <div class="entity-section mt-3 d-flex align-items-center gap-2">
+        <button class="btn btn-sm btn-outline-info" @onclick="ExportEntityJson" disabled="@exporting"
+                title="Save this entity's canonical JSON to your Downloads folder">
+            @if (exporting && exportMode == "shallow") { <span class="spinner-border spinner-border-sm me-1"></span> }
+            else { <i class="bi bi-download me-1"></i> }
+            <span>Export JSON</span>
+        </button>
+        <button class="btn btn-sm btn-outline-warning" @onclick="ExportEntityDeep" disabled="@exporting"
+                title="Save this entity plus every cross-repo record it names (weapons, vehicles, factions, …) as a zip">
+            @if (exporting && exportMode == "deep") { <span class="spinner-border spinner-border-sm me-1"></span> }
+            else { <i class="bi bi-file-zip me-1"></i> }
+            <span>Export + refs</span>
+        </button>
+        @if (!string.IsNullOrEmpty(exportStatus))
+        {
+            <small class="@(exportSuccess ? "text-success" : "text-danger")">@exportStatus</small>
+        }
+    </div>
 }
 
 @if (referencedBy.Count > 0)
@@ -1362,7 +1394,7 @@ else if (CurrentTab == "record" && document != null)
     /// </summary>
     private static readonly string[] ValidTabs = {
         "record", "dossier", "relationships", "cyberware",
-        "knowledge", "conditions", "belongings", "timeline"
+        "knowledge", "conditions", "belongings", "timeline", "family"
     };
     private string CurrentTab =>
         ValidTabs.FirstOrDefault(t => string.Equals(TabParam, t, StringComparison.OrdinalIgnoreCase))
@@ -1411,6 +1443,51 @@ else if (CurrentTab == "record" && document != null)
             editError = "";
         }
         catch (Exception ex) { editError = ex.Message; }
+    }
+
+    // ── Export JSON ──
+    private bool exporting;
+    private string exportMode = "";   // "shallow" | "deep" — drives which spinner shows
+    private string? exportStatus;
+    private bool exportSuccess;
+
+    private Task ExportEntityJson() => DoExport(deep: false);
+    private Task ExportEntityDeep() => DoExport(deep: true);
+
+    private async Task DoExport(bool deep)
+    {
+        if (string.IsNullOrWhiteSpace(resolvedId)) return;
+        if (!Guid.TryParse(resolvedId, out var id) &&
+            !(resolvedId.Length == 32 && Guid.TryParseExact(resolvedId, "N", out id)))
+        {
+            exportStatus = "Bad entity id."; exportSuccess = false;
+            return;
+        }
+        exporting = true; exportMode = deep ? "deep" : "shallow"; exportStatus = null;
+        StateHasChanged();
+        try
+        {
+            var result = deep
+                ? await CanonExport.ExportEntityDeepAsync(id)
+                : await CanonExport.ExportEntityAsync(id);
+            exportSuccess = true;
+            exportStatus = deep
+                ? $"Saved {result.EntryCount} record(s) to {result.Path}"
+                : $"Saved to {result.Path}";
+            Toast.Success("EXPORT-001", $"Entity {resolvedName} → {result.Path}");
+        }
+        catch (Exception ex)
+        {
+            exportSuccess = false;
+            exportStatus = ex.Message;
+            Toast.Error("EXPORT-002", $"{resolvedName}: {ex.Message}");
+        }
+        finally
+        {
+            exporting = false;
+            exportMode = "";
+            StateHasChanged();
+        }
     }
 
     private CharacterData? character;

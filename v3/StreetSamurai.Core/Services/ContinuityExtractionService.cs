@@ -1,7 +1,9 @@
 using System.Text.Json;
 using System.Text.RegularExpressions;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MindAttic.Legion;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 
@@ -28,6 +30,7 @@ public class ContinuityExtractionService
     private readonly DistrictRepository placesRepo;
     private readonly FactionRepository factionsRepo;
     private readonly CorponationRepository corponationsRepo;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<ContinuityExtractionService> log;
 
     public ContinuityExtractionService(
@@ -38,6 +41,7 @@ public class ContinuityExtractionService
         DistrictRepository placesRepo,
         FactionRepository factionsRepo,
         CorponationRepository corponationsRepo,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ILogger<ContinuityExtractionService> log)
     {
         this.store           = store;
@@ -47,6 +51,7 @@ public class ContinuityExtractionService
         this.placesRepo      = placesRepo;
         this.factionsRepo    = factionsRepo;
         this.corponationsRepo = corponationsRepo;
+        this.dbFactory       = dbFactory;
         this.log             = log;
     }
 
@@ -217,13 +222,14 @@ public class ContinuityExtractionService
     }
 
     /// <summary>
-    /// Flatten a structured entity-record file into atomic claims. Trivial
-    /// scalar fields (e.g. "role": "fixer") are emitted directly; prose fields
-    /// (description, personality) are run through the same Legion vote as
-    /// chapter prose so we extract atomic claims from them too.
+    /// Flatten a structured entity record into atomic claims. Loads the
+    /// canonical <c>Records.Json</c> blob for the given EntityId from SQL.
+    /// Trivial scalar fields (e.g. "role": "fixer") are emitted directly;
+    /// prose fields (description, personality) are run through the same
+    /// Legion vote as chapter prose so we extract atomic claims from them too.
     /// </summary>
     public async Task<ContinuityExtractionResult> ExtractFromEntityRecordAsync(
-        string filePath,
+        Guid entityId,
         Quorum quorum = Quorum.Plurality,
         int maxTokens = 2048,
         CancellationToken ct = default)
@@ -231,20 +237,29 @@ public class ContinuityExtractionService
         var result = new ContinuityExtractionResult
         {
             ChapterId    = "",
-            ChapterTitle = $"entity:{Path.GetFileName(filePath)}",
+            ChapterTitle = $"entity:{entityId}",
         };
 
-        if (!File.Exists(filePath))
-            throw new InvalidOperationException($"Entity record not found: {filePath}");
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var blob = await db.Records.AsNoTracking()
+            .Where(r => r.EntityId == entityId)
+            .Select(r => new { r.Json, EntityType = r.Entity!.EntityType, EntityName = r.Entity.Name })
+            .FirstOrDefaultAsync(ct);
+        if (blob == null)
+        {
+            result.Error = $"no Records.Json for entity {entityId}";
+            return result;
+        }
+        result.ChapterTitle = $"entity:{blob.EntityName}";
 
-        using var doc = JsonDocument.Parse(File.ReadAllText(filePath));
+        using var doc = JsonDocument.Parse(blob.Json);
         var root = doc.RootElement;
 
-        var entityId   = root.TryGetProperty("id",   out var i) ? i.GetString() ?? "" : "";
-        var entityName = root.TryGetProperty("name", out var n) ? n.GetString() ?? "" : "";
-        var entityKind = InferKindFromPath(filePath);
+        var entityIdStr = root.TryGetProperty("id",   out var i) ? i.GetString() ?? entityId.ToString("N") : entityId.ToString("N");
+        var entityName  = root.TryGetProperty("name", out var n) ? n.GetString() ?? blob.EntityName : blob.EntityName;
+        var entityKind  = InferKindFromEntityType(blob.EntityType);
 
-        if (string.IsNullOrEmpty(entityId) || string.IsNullOrEmpty(entityName))
+        if (string.IsNullOrEmpty(entityIdStr) || string.IsNullOrEmpty(entityName))
         {
             result.Error = "entity_record missing id or name";
             return result;
@@ -264,13 +279,13 @@ public class ContinuityExtractionService
 
             var claim = new ContinuityClaim
             {
-                EntityId    = entityId,
+                EntityId    = entityIdStr,
                 EntityName  = entityName,
                 EntityKind  = entityKind,
                 Predicate   = prop.Name,
                 Object      = val,
                 SourceType  = "entity_record",
-                SourcePath  = filePath,
+                SourcePath  = $"db:Records[{entityId}]",
                 Snippet     = val.Length > 200 ? val[..200] : val,
                 Voice       = "writer",
                 Confidence  = "high",
@@ -334,13 +349,13 @@ public class ContinuityExtractionService
 
                 var claim = new ContinuityClaim
                 {
-                    EntityId    = entityId,
+                    EntityId    = entityIdStr,
                     EntityName  = entityName,
                     EntityKind  = entityKind,
                     Predicate   = c.Predicate,
                     Object      = c.Object,
                     SourceType  = "entity_record",
-                    SourcePath  = filePath,
+                    SourcePath  = $"db:Records[{entityId}]",
                     Snippet     = c.Snippet,
                     Voice       = c.Voice,
                     Confidence  = c.Confidence,
@@ -369,22 +384,16 @@ public class ContinuityExtractionService
             or "story_hooks" or "context" or "summary";
     }
 
-    private static string InferKindFromPath(string path)
+    /// <summary>
+    /// Map a canonical <c>Entities.EntityType</c> value to the kind label
+    /// that <see cref="ContinuityClaim.EntityKind"/> uses (mostly identical;
+    /// `character` becomes `person` to match the legacy claim taxonomy).
+    /// </summary>
+    private static string InferKindFromEntityType(string entityType) => entityType switch
     {
-        var dir = Path.GetFileName(Path.GetDirectoryName(path) ?? "");
-        return dir.ToLowerInvariant() switch
-        {
-            "people"        => "person",
-            "places"        => "place",
-            "factions"      => "faction",
-            "corponations"  => "corponation",
-            "weaponry"      => "weapon",
-            "equipment"     => "equipment",
-            "technology"    => "technology",
-            "cyberware"     => "cyberware",
-            _               => dir,
-        };
-    }
+        "character" => "person",
+        _           => entityType,
+    };
 
     private static string Normalize(string s)
         => string.IsNullOrEmpty(s) ? "" : Regex.Replace(s.ToLowerInvariant(), @"\s+", " ").Trim();

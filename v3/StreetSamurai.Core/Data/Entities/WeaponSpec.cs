@@ -35,10 +35,11 @@ public class WeaponSpec
     /// <summary>Optional rationale / source citation (e.g. "see project_kyle_weapons_specs.md").</summary>
     public string? Notes { get; set; }
 
-    // SysStart/SysEnd live on the table as GENERATED ALWAYS (PERIOD FOR
-    // SYSTEM_TIME) but are intentionally not exposed as C# properties — EF
-    // can't write to them and we never need to query them from the model
-    // layer. History is reachable via FOR SYSTEM_TIME AS OF in raw SQL.
+    // SysStart/SysEnd are PERIOD FOR SYSTEM_TIME columns (transaction-time
+    // audit, GENERATED ALWAYS by the engine). NOT story-time. Read via raw
+    // SQL with FOR SYSTEM_TIME AS OF when you need row-history; not exposed
+    // as C# properties because EF doesn't write GENERATED ALWAYS columns.
+    // See EntityStateEvent.cs for the full explanation.
 
     public Weapon? Weapon { get; set; }
 }

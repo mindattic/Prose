@@ -1,40 +1,55 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Structured event log for each story. Records what happened, who was involved,
+/// Structured event log for each chapter. Records what happened, who was involved,
 /// where, and what the consequences were. Searchable and queryable — the system
 /// can answer "when did X last happen?" without re-reading the entire story.
 ///
-/// Events are extracted from generated text via LLM after each beat, then stored
-/// as structured records alongside the story project.
+/// Storage: <c>Chapters.EventsJson</c> on the SQL Server StreetSamurai database
+/// (since 2026-05-08; the legacy
+/// <c>engine/data/chapters/&lt;projectId&gt;/events.json</c> path was retired
+/// in the same migration that drained the rest of <c>engine/data</c>).
+/// On first read for a project that still has a legacy file, the service
+/// migrates it into the DB column and deletes the disk copy.
+///
+/// The public API is unchanged from the disk-backed version so callers don't
+/// need to know about the storage swap.
 /// </summary>
 public class EventLogService
 {
     private readonly ILlmService llm;
     private readonly IPathProvider paths;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<EventLogService> log;
 
-    // In-memory logs per project, lazy-loaded from disk
-    private readonly Dictionary<string, List<StoryEvent>> _logs = new();
+    // In-memory logs per project, lazy-loaded from DB (migrating from disk on first miss).
+    private readonly Dictionary<string, List<StoryEvent>> logs = new();
 
-    public EventLogService(ILlmService llm, IPathProvider paths, ILogger<EventLogService> log)
+    public EventLogService(
+        ILlmService llm,
+        IPathProvider paths,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        ILogger<EventLogService> log)
     {
         this.llm = llm;
         this.paths = paths;
+        this.dbFactory = dbFactory;
         this.log = log;
     }
 
-    /// <summary>Get all events for a story project.</summary>
+    /// <summary>Get all events for a chapter project.</summary>
     public List<StoryEvent> GetEvents(string projectId)
     {
-        if (!_logs.ContainsKey(projectId))
-            _logs[projectId] = LoadFromDisk(projectId);
-        return _logs[projectId];
+        if (!logs.ContainsKey(projectId))
+            logs[projectId] = LoadFromDb(projectId);
+        return logs[projectId];
     }
 
     /// <summary>
@@ -93,7 +108,7 @@ public class EventLogService
                 });
             }
 
-            SaveToDisk(projectId);
+            SaveToDb(projectId);
         }
         catch (Exception ex) { log.LogWarning(ex, "Event extraction failed for project={ProjectId}, beat={BeatIndex}", projectId, beatIndex); }
     }
@@ -102,7 +117,7 @@ public class EventLogService
     public void AddEvent(string projectId, StoryEvent evt)
     {
         GetEvents(projectId).Add(evt);
-        SaveToDisk(projectId);
+        SaveToDb(projectId);
     }
 
     /// <summary>Search events by participant name.</summary>
@@ -165,35 +180,139 @@ public class EventLogService
     /// <summary>Clear all events for a story.</summary>
     public void Clear(string projectId)
     {
-        _logs[projectId] = [];
-        SaveToDisk(projectId);
+        logs[projectId] = [];
+        SaveToDb(projectId);
     }
 
-    private List<StoryEvent> LoadFromDisk(string projectId)
+    // ── storage ──────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Idempotent column-add. Mirrors the EnsureXxxSchemaAsync pattern in
+    /// <c>AmmunitionLinkerService</c>. Safe to call on every repair run.
+    /// </summary>
+    public async Task EnsureEventsJsonColumnAsync(CancellationToken ct = default)
     {
-        var path = GetLogPath(projectId);
-        if (!File.Exists(path)) return [];
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        const string ddl = """
+            IF COL_LENGTH('dbo.Chapters', 'EventsJson') IS NULL
+                ALTER TABLE [dbo].[Chapters] ADD [EventsJson] NVARCHAR(MAX) NULL;
+            """;
+        await db.Database.ExecuteSqlRawAsync(ddl, ct);
+    }
+
+    /// <summary>
+    /// Sync read path. Resolves the project's chapter row, returns the
+    /// deserialized event list. If the DB column is null/empty but a legacy
+    /// <c>events.json</c> still exists on disk, migrates the file content into
+    /// the DB and deletes the source file in the same call.
+    /// </summary>
+    private List<StoryEvent> LoadFromDb(string projectId)
+    {
+        if (!Guid.TryParse(projectId, out var chapterId)
+            && !Guid.TryParseExact(projectId, "N", out chapterId))
+        {
+            log.LogWarning("EventLog: project id is not a Guid, returning empty: {ProjectId}", projectId);
+            return [];
+        }
+
+        try
+        {
+            using var db = dbFactory.CreateDbContext();
+            var row = db.Chapters.FirstOrDefault(c => c.Id == chapterId);
+            if (row == null)
+            {
+                // Chapter row doesn't exist in DB. Fall back to disk so we
+                // don't lose the events while the chapter row catches up.
+                return TryReadLegacyDiskFile(projectId);
+            }
+
+            // Migration on first miss: empty DB column + legacy file present
+            // → import file then delete it.
+            if (string.IsNullOrEmpty(row.EventsJson))
+            {
+                var fromDisk = TryReadLegacyDiskFile(projectId, deleteAfterRead: true);
+                if (fromDisk.Count > 0)
+                {
+                    row.EventsJson = JsonSerializer.Serialize(fromDisk, JsonDefaults.Indented);
+                    row.ModifiedAt = DateTime.UtcNow;
+                    db.SaveChanges();
+                    return fromDisk;
+                }
+                return [];
+            }
+
+            return JsonSerializer.Deserialize<List<StoryEvent>>(row.EventsJson,
+                JsonDefaults.LlmParsing) ?? [];
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "EventLog: load failed for {ProjectId}", projectId);
+            return [];
+        }
+    }
+
+    /// <summary>
+    /// Sync write path. Updates <c>Chapters.EventsJson</c> for the project's
+    /// chapter row. Creates no row — if the chapter doesn't exist yet, the
+    /// caller is mid-bootstrap and will save the chapter row separately
+    /// before any callers depend on these events being durable.
+    /// </summary>
+    private void SaveToDb(string projectId)
+    {
+        if (!Guid.TryParse(projectId, out var chapterId)
+            && !Guid.TryParseExact(projectId, "N", out chapterId))
+        {
+            log.LogWarning("EventLog: project id is not a Guid, skipping save: {ProjectId}", projectId);
+            return;
+        }
+
+        try
+        {
+            using var db = dbFactory.CreateDbContext();
+            var row = db.Chapters.FirstOrDefault(c => c.Id == chapterId);
+            if (row == null)
+            {
+                log.LogDebug("EventLog: no Chapters row for {ProjectId}; events held in-memory only until chapter exists", projectId);
+                return;
+            }
+            var events = logs.GetValueOrDefault(projectId, []);
+            row.EventsJson = events.Count == 0 ? null : JsonSerializer.Serialize(events, JsonDefaults.Indented);
+            row.ModifiedAt = DateTime.UtcNow;
+            db.SaveChanges();
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "EventLog: save failed for {ProjectId}", projectId);
+        }
+    }
+
+    /// <summary>
+    /// One-shot legacy reader. Looks for the old
+    /// <c>engine/data/chapters/&lt;projectId&gt;/events.json</c> file. If
+    /// <paramref name="deleteAfterRead"/> is true, removes the file once the
+    /// content is in hand — used by the migrate-on-first-miss path.
+    /// </summary>
+    private List<StoryEvent> TryReadLegacyDiskFile(string projectId, bool deleteAfterRead = false)
+    {
+        var path = StoryFolderHelper.FindFile(paths.ChaptersDir, projectId, "events.json");
+        if (path == null || !File.Exists(path)) return [];
         try
         {
             var json = File.ReadAllText(path);
-            return JsonSerializer.Deserialize<List<StoryEvent>>(json,
-                JsonDefaults.LlmParsing) ?? [];
+            var list = JsonSerializer.Deserialize<List<StoryEvent>>(json, JsonDefaults.LlmParsing) ?? [];
+            if (deleteAfterRead && list.Count >= 0)
+            {
+                try { File.Delete(path); }
+                catch (Exception ex) { log.LogDebug(ex, "EventLog: legacy file delete failed for {Path}", path); }
+            }
+            return list;
         }
-        catch (Exception ex) { log.LogWarning(ex, "Failed to load event log from disk for project={ProjectId}", projectId); return []; }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "EventLog: legacy disk read failed for {ProjectId}", projectId);
+            return [];
+        }
     }
-
-    private void SaveToDisk(string projectId)
-    {
-        var path = GetLogPath(projectId);
-        var dir = Path.GetDirectoryName(path);
-        if (dir != null) Directory.CreateDirectory(dir);
-        var json = JsonSerializer.Serialize(_logs.GetValueOrDefault(projectId, []),
-            JsonDefaults.Indented);
-        File.WriteAllText(path, json);
-    }
-
-    private string GetLogPath(string projectId) =>
-        StoryFolderHelper.GetFilePath(paths.ChaptersDir, projectId, "events.json");
 }
 
 /// <summary>A discrete narrative event — something that HAPPENED in the story.</summary>

@@ -1,4 +1,5 @@
 using System.Collections.Concurrent;
+using System.Text;
 using System.Text.Json;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
@@ -8,21 +9,22 @@ namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Autonomous quality monitor. Subscribes to <see cref="IChapterRepository.OnChapterSaved"/>
-/// (primary, post-SQL-cutover) and <see cref="EmbeddingIndexService.FileReindexed"/>
-/// (legacy, for `ss --findings scan &lt;path&gt;`). For each chapter save it runs
-/// scoped contradiction + cliché checks against the live corpus via
-/// <see cref="LocalRagService"/>. Findings land in <see cref="FindingsService"/>
-/// for user triage at /findings.
+/// and runs scoped contradiction + cliché checks on each saved chapter.
 ///
-/// Cost: zero — local Qwen via Ollama. Throughput cap: <see cref="MaxConcurrent"/>
-/// to keep the GPU from saturating during burst saves.
+/// Grounding comes from SQL: for each chapter we resolve the entities the prose
+/// mentions via <see cref="WorldGraphService"/> and pull dossiers via
+/// <see cref="WorldStateService"/> so the contradiction prompt is anchored to
+/// canon. The cliché scan needs no grounding — it goes straight to the LLM.
+/// Findings land in <see cref="FindingsService"/> for triage at /findings.
 /// </summary>
 public class ContinuousQualityService
 {
     private const int MaxConcurrent = 1;
 
-    private readonly EmbeddingIndexService index;
-    private readonly LocalRagService rag;
+    private readonly ILlmService llm;
+    private readonly WorldGraphService graph;
+    private readonly WorldStateService worldState;
+    private readonly EmbeddingService embeddings;
     private readonly FindingsService findings;
     private readonly ILogger<ContinuousQualityService> log;
 
@@ -32,22 +34,22 @@ public class ContinuousQualityService
     public bool Enabled { get; set; } = true;
 
     public ContinuousQualityService(
-        EmbeddingIndexService index,
-        LocalRagService rag,
+        ILlmService llm,
+        WorldGraphService graph,
+        WorldStateService worldState,
+        EmbeddingService embeddings,
         FindingsService findings,
         IChapterRepository chapters,
         ILogger<ContinuousQualityService> log)
     {
-        this.index    = index;
-        this.rag      = rag;
-        this.findings = findings;
-        this.log      = log;
+        this.llm        = llm;
+        this.graph      = graph;
+        this.worldState = worldState;
+        this.embeddings = embeddings;
+        this.findings   = findings;
+        this.log        = log;
 
-        // Primary trigger — fires whenever the EF chapter repo commits a save.
         chapters.OnChapterSaved += OnChapterSaved;
-        // Legacy trigger — kept so `ss --findings scan <path>` and any
-        // ad-hoc filesystem rescans still hit the analyzer.
-        index.FileReindexed += OnFileReindexed;
     }
 
     private void OnChapterSaved(Chapter chapter)
@@ -70,30 +72,6 @@ public class ContinuousQualityService
         });
     }
 
-    private void OnFileReindexed(string path)
-    {
-        if (!Enabled) return;
-        if (!IsChapterFile(path)) return;
-        if (!inFlight.TryAdd(path, 0)) return;
-
-        _ = Task.Run(async () =>
-        {
-            try
-            {
-                await gate.WaitAsync();
-                try { await AnalyzeFileAsync(path); }
-                finally { gate.Release(); }
-            }
-            catch (Exception ex) { log.LogWarning(ex, "Quality analysis failed for {Path}", path); }
-            finally { inFlight.TryRemove(path, out _); }
-        });
-    }
-
-    private static bool IsChapterFile(string path)
-        => path.Contains(Path.DirectorySeparatorChar + "chapters" + Path.DirectorySeparatorChar,
-                         StringComparison.OrdinalIgnoreCase)
-           && Path.GetFileName(path).Equals("chapter.json", StringComparison.OrdinalIgnoreCase);
-
     /// <summary>
     /// Scan a chapter loaded from SQL. Used by the OnChapterSaved hook and
     /// by callers that already hold a Chapter (avoids a redundant DB read).
@@ -101,8 +79,6 @@ public class ContinuousQualityService
     public async Task AnalyzeChapterAsync(Chapter chapter, CancellationToken ct = default)
     {
         log.LogInformation("Quality scan: chapter {Id} '{Title}'", chapter.Id, chapter.Title);
-        // Synthetic file_path so existing FindingsService rows stay queryable
-        // (column is indexed on file_path; "chapter:<id>" is a stable key).
         var pseudoPath = "chapter:" + chapter.Id;
         var text = chapter.PlainText;
         await Task.WhenAll(
@@ -110,43 +86,49 @@ public class ContinuousQualityService
             ScanClichesTextAsync(pseudoPath, chapter.Id, text, ct));
     }
 
+    /// <summary>
+    /// Legacy entry point. Reads a chapter.json file path and runs the same
+    /// scan against it. Kept for the <c>ss --findings scan &lt;path&gt;</c> CLI.
+    /// </summary>
     public async Task AnalyzeFileAsync(string filePath, CancellationToken ct = default)
     {
         log.LogInformation("Quality scan: {File}", filePath);
+        var raw = SafeRead(filePath);
+        if (string.IsNullOrWhiteSpace(raw)) return;
+        var chapterId = TryGetChapterId(raw);
+        var text = TryGetChapterText(raw) ?? raw;
         await Task.WhenAll(
-            ScanContradictionsAsync(filePath, ct),
-            ScanClichesAsync(filePath, ct));
+            ScanContradictionsTextAsync(filePath, chapterId, text, ct),
+            ScanClichesTextAsync(filePath, chapterId, text, ct));
     }
 
     // ── Contradiction scan ──────────────────────────────────────────────────────
-
-    private async Task ScanContradictionsAsync(string filePath, CancellationToken ct)
-    {
-        var chapterText = SafeRead(filePath);
-        if (string.IsNullOrWhiteSpace(chapterText)) return;
-        var chapterId = TryGetChapterId(chapterText);
-        await ScanContradictionsTextAsync(filePath, chapterId, chapterText, ct);
-    }
 
     private async Task ScanContradictionsTextAsync(string filePath, string? chapterId, string chapterText, CancellationToken ct)
     {
         if (string.IsNullOrWhiteSpace(chapterText)) return;
 
+        var grounding = await BuildGroundingContextAsync(chapterText, ct);
+
         var system =
             "You are a canon-consistency auditor for the StreetSamurai world. The user shows " +
-            "you a chapter and the most relevant grounded context retrieved from other files. " +
-            "Find statements in the chapter that contradict the context. Reply ONLY with a " +
+            "you a chapter and dossier excerpts for the entities the chapter names. " +
+            "Find statements in the chapter that contradict the dossiers. Reply ONLY with a " +
             "JSON array; empty array [] if none. Each item: " +
             "{\"severity\":\"high|medium|low\",\"summary\":\"...\",\"snippet\":\"...\",\"fix\":\"...\"}. " +
-            "Do not invent contradictions; if the chapter is consistent with the context, return [].";
+            "Do not invent contradictions; if the chapter is consistent with the dossiers, return [].";
 
-        var question =
-            "Audit this chapter for contradictions against the corpus. Chapter content:\n\n" +
-            Truncate(chapterText, 12000);
+        var prompt = new StringBuilder()
+            .AppendLine("DOSSIERS (canon excerpts for entities mentioned):")
+            .AppendLine(grounding)
+            .AppendLine()
+            .AppendLine("CHAPTER:")
+            .AppendLine(Truncate(chapterText, 12000))
+            .ToString();
 
-        var hits = await index.SearchAsync(question, k: 8, ct);
-        var answer = await rag.AnswerWithHitsAsync(question, hits, systemRole: system,
-            maxTokens: 2048, temperature: 0.1, ct: ct);
+        string answer;
+        try { answer = await llm.GenerateAsync(system, prompt, temperature: 0.1, maxTokens: 2048, ct: ct); }
+        catch (Exception ex) { log.LogWarning(ex, "Contradiction scan LLM call failed"); return; }
 
         foreach (var item in ParseJsonArray(answer))
         {
@@ -160,15 +142,53 @@ public class ContinuousQualityService
         }
     }
 
-    // ── Cliché / voice scan ─────────────────────────────────────────────────────
-
-    private async Task ScanClichesAsync(string filePath, CancellationToken ct)
+    /// <summary>
+    /// Build a dossier context block for the contradiction prompt by
+    /// pulling the top-K most semantically related entities to the chapter
+    /// text from <see cref="EmbeddingService"/>. Falls back to substring
+    /// name matching against the in-memory graph when the embedding index
+    /// is empty (cold start) or the embedding API is unavailable.
+    /// </summary>
+    private async Task<string> BuildGroundingContextAsync(string chapterText, CancellationToken ct)
     {
-        var chapterText = SafeRead(filePath);
-        if (string.IsNullOrWhiteSpace(chapterText)) return;
-        var chapterId = TryGetChapterId(chapterText);
-        await ScanClichesTextAsync(filePath, chapterId, chapterText, ct);
+        // Path 1 (preferred): semantic retrieval via OpenAI embeddings.
+        var hits = await embeddings.FindSimilarAsync(chapterText, k: 12, ct: ct);
+        if (hits.Count > 0)
+            return RenderDossiers(hits.Select(h => h.EntityName));
+
+        // Path 2 (fallback): substring name match against the QuikGraph.
+        // Used during the embedding-index cold start and when the API call
+        // failed (logged inside EmbeddingService).
+        var fallback = new List<string>();
+        var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var node in graph.AllNodes())
+        {
+            if (string.IsNullOrWhiteSpace(node.Name)) continue;
+            if (node.Name.Length < 3) continue;
+            if (chapterText.IndexOf(node.Name, StringComparison.OrdinalIgnoreCase) < 0) continue;
+            if (!seen.Add(node.Name)) continue;
+            fallback.Add(node.Name);
+            if (fallback.Count >= 12) break;
+        }
+        return fallback.Count == 0
+            ? "(no canon entities mentioned)"
+            : RenderDossiers(fallback);
     }
+
+    private string RenderDossiers(IEnumerable<string> names)
+    {
+        var sb = new StringBuilder();
+        var asOf = AsOfCursor.Current;
+        foreach (var name in names)
+        {
+            var dossier = worldState.GetDossier(name, asOf);
+            if (dossier == null) continue;
+            sb.AppendLine(dossier.ToPromptString()).AppendLine();
+        }
+        return sb.Length == 0 ? "(no dossiers available)" : sb.ToString();
+    }
+
+    // ── Cliché / voice scan ─────────────────────────────────────────────────────
 
     private async Task ScanClichesTextAsync(string filePath, string? chapterId, string chapterText, CancellationToken ct)
     {
@@ -182,11 +202,11 @@ public class ContinuousQualityService
             "array; empty array [] if none. Each item: " +
             "{\"severity\":\"high|medium|low\",\"summary\":\"<phrase>\",\"snippet\":\"<sentence>\",\"fix\":\"<rewrite>\"}.";
 
-        var question = "Find clichés in this chapter:\n\n" + Truncate(chapterText, 12000);
+        var prompt = "Find clichés in this chapter:\n\n" + Truncate(chapterText, 12000);
 
-        // Cliché scan doesn't need broad corpus retrieval — give it the chapter alone.
-        var answer = await rag.AnswerWithHitsAsync(question, Array.Empty<SearchHit>(),
-            systemRole: system, maxTokens: 1500, temperature: 0.2, ct: ct);
+        string answer;
+        try { answer = await llm.GenerateAsync(system, prompt, temperature: 0.2, maxTokens: 1500, ct: ct); }
+        catch (Exception ex) { log.LogWarning(ex, "Cliché scan LLM call failed"); return; }
 
         foreach (var item in ParseJsonArray(answer))
         {
@@ -220,6 +240,19 @@ public class ContinuousQualityService
         return null;
     }
 
+    private static string? TryGetChapterText(string json)
+    {
+        try
+        {
+            using var doc = JsonDocument.Parse(json);
+            foreach (var key in new[] { "plain_text", "text", "body", "prose" })
+                if (doc.RootElement.TryGetProperty(key, out var v) && v.ValueKind == JsonValueKind.String)
+                    return v.GetString();
+        }
+        catch { }
+        return null;
+    }
+
     private static IEnumerable<Dictionary<string, string?>> ParseJsonArray(string raw)
     {
         if (string.IsNullOrWhiteSpace(raw)) yield break;
@@ -248,13 +281,12 @@ public class ContinuousQualityService
         }
     }
 
-    private static FindingSeverity ParseSeverity(string? s) => (s ?? "").ToLowerInvariant() switch
+    private static FindingSeverity ParseSeverity(string? raw) => (raw ?? "").ToLowerInvariant() switch
     {
-        "high"   => FindingSeverity.High,
-        "medium" => FindingSeverity.Medium,
-        "low"    => FindingSeverity.Low,
-        _        => FindingSeverity.Medium,
+        "high" or "critical" => FindingSeverity.High,
+        "low"                => FindingSeverity.Low,
+        _                    => FindingSeverity.Medium,
     };
 
-    private static string Truncate(string s, int max) => s.Length <= max ? s : s.Substring(0, max);
+    private static string Truncate(string s, int n) => s.Length <= n ? s : s[..(n - 1)] + "…";
 }

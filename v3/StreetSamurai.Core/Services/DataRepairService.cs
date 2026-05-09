@@ -2,7 +2,9 @@ using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
 using Microsoft.Data.Sqlite;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -21,6 +23,7 @@ namespace StreetSamurai.Core.Services;
 public class DataRepairService : PipelineServiceBase
 {
     private readonly IPathProvider paths;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<DataRepairService> log;
 
     // Configuration
@@ -40,10 +43,55 @@ public class DataRepairService : PipelineServiceBase
 
     private string FactsDbPath => Path.Combine(paths.DataRoot, "v3", "python", "lore-triples.db");
 
-    public DataRepairService(IPathProvider paths, ILogger<DataRepairService> log)
+    public DataRepairService(
+        IPathProvider paths,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        ILogger<DataRepairService> log)
     {
-        this.paths = paths;
-        this.log   = log;
+        this.paths     = paths;
+        this.dbFactory = dbFactory;
+        this.log       = log;
+    }
+
+    // ── Canonical-data helpers (reads/writes Records.Json in SQL) ─────────
+
+    private record EntityRow(Guid Id, string Name);
+
+    /// <summary>List all active entities of an EntityType.</summary>
+    private List<EntityRow> ListEntitiesByType(string entityType)
+    {
+        using var db = dbFactory.CreateDbContext();
+        return db.Entities.AsNoTracking()
+            .Where(e => e.IsActive && e.EntityType == entityType)
+            .Select(e => new ValueTuple<Guid, string>(e.Id, e.Name))
+            .ToList()
+            .Select(t => new EntityRow(t.Item1, t.Item2))
+            .ToList();
+    }
+
+    /// <summary>Read the Records.Json blob for an entity (parsed to JsonNode).</summary>
+    private (JsonNode? Node, string Json) LoadEntityJson(Guid entityId)
+    {
+        using var db = dbFactory.CreateDbContext();
+        var raw = db.Records.AsNoTracking()
+            .Where(r => r.EntityId == entityId)
+            .Select(r => r.Json)
+            .FirstOrDefault();
+        if (string.IsNullOrEmpty(raw)) return (null, "");
+        try { return (JsonNode.Parse(raw), raw); }
+        catch { return (null, raw); }
+    }
+
+    /// <summary>Persist the mutated JsonNode back into Records.Json + bump ModifiedAt.</summary>
+    private void SaveEntityJson(Guid entityId, JsonNode node)
+    {
+        using var db = dbFactory.CreateDbContext();
+        var record = db.Records.Include(r => r.Entity).FirstOrDefault(r => r.EntityId == entityId);
+        if (record == null) return;
+        record.Json      = node.ToJsonString(new JsonSerializerOptions { WriteIndented = false });
+        record.UpdatedAt = DateTime.UtcNow;
+        if (record.Entity != null) record.Entity.ModifiedAt = record.UpdatedAt;
+        db.SaveChanges();
     }
 
     protected override void OnCancel()
@@ -192,26 +240,24 @@ public class DataRepairService : PipelineServiceBase
 
     private async Task RunTerritoryAssignmentAsync(CancellationToken ct)
     {
-        var corpDir = Path.Combine(paths.EngineDataDir, "corponations");
-        if (!Directory.Exists(corpDir)) { ChangeLog.Add("[Territory] corponations/ directory not found."); return; }
+        var entities = ListEntitiesByType("corponation");
+        Notify("Tool 2 — Territory Assignment", 0, entities.Count);
 
-        var files = Directory.GetFiles(corpDir, "*.json").ToList();
-        Notify("Tool 2 — Territory Assignment", 0, files.Count);
-
-        for (int i = 0; i < files.Count; i++)
+        for (int i = 0; i < entities.Count; i++)
         {
             ct.ThrowIfCancellationRequested();
             await CheckPauseAsync(ct);
-            Notify("Tool 2 — Territory Assignment", i, files.Count, Path.GetFileNameWithoutExtension(files[i]));
+            var ent = entities[i];
+            Notify("Tool 2 — Territory Assignment", i, entities.Count, ent.Name);
 
             try
             {
-                var node = JsonNode.Parse(File.ReadAllText(files[i]));
+                var (node, _) = LoadEntityJson(ent.Id);
                 if (node == null) continue;
 
                 if (!DryRun && node["glmzTerritory"] != null) continue;  // Already assigned
 
-                var name = node["name"]?.GetValue<string>() ?? "";
+                var name = node["name"]?.GetValue<string>() ?? ent.Name;
                 if (!TerritoryMap.TryGetValue(name, out var territory)) continue;
 
                 var zones = new JsonArray();
@@ -230,14 +276,14 @@ public class DataRepairService : PipelineServiceBase
                 if (!DryRun)
                 {
                     node["glmzTerritory"] = obj;
-                    SaveJson(files[i], node);
+                    SaveEntityJson(ent.Id, node);
                     TerritoriesAssigned++;
                 }
                 else TerritoriesAssigned++;
             }
             catch (Exception ex)
             {
-                ChangeLog.Add($"[Territory] Error on {Path.GetFileName(files[i])}: {ex.Message}");
+                ChangeLog.Add($"[Territory] Error on {ent.Name}: {ex.Message}");
             }
         }
     }
@@ -246,21 +292,19 @@ public class DataRepairService : PipelineServiceBase
 
     private async Task RunZoneInferenceAsync(CancellationToken ct)
     {
-        var placeDir = Path.Combine(paths.EngineDataDir, "places");
-        if (!Directory.Exists(placeDir)) { ChangeLog.Add("[Zone] places/ directory not found."); return; }
+        var entities = ListEntitiesByType("place");
+        Notify("Tool 3 — Zone Inference", 0, entities.Count);
 
-        var files = Directory.GetFiles(placeDir, "*.json").ToList();
-        Notify("Tool 3 — Zone Inference", 0, files.Count);
-
-        for (int i = 0; i < files.Count; i++)
+        for (int i = 0; i < entities.Count; i++)
         {
             ct.ThrowIfCancellationRequested();
             await CheckPauseAsync(ct);
-            if (i % 50 == 0) Notify("Tool 3 — Zone Inference", i, files.Count);
+            if (i % 50 == 0) Notify("Tool 3 — Zone Inference", i, entities.Count);
+            var ent = entities[i];
 
             try
             {
-                var node = JsonNode.Parse(File.ReadAllText(files[i]));
+                var (node, _) = LoadEntityJson(ent.Id);
                 if (node == null) continue;
 
                 if (!ForceRewrite(node) && node["zone"] != null) continue;
@@ -279,19 +323,19 @@ public class DataRepairService : PipelineServiceBase
                 if (lat == null || lng == null) continue;
 
                 var zone = InferZone(lat.Value, lng.Value);
-                ChangeLog.Add($"[Zone] {(DryRun ? "[DRY RUN] " : "")}{Path.GetFileNameWithoutExtension(files[i])}: zone → {zone} ({lat:F3}, {lng:F3})");
+                ChangeLog.Add($"[Zone] {(DryRun ? "[DRY RUN] " : "")}{ent.Name}: zone → {zone} ({lat:F3}, {lng:F3})");
 
                 if (!DryRun)
                 {
                     node["zone"] = zone;
-                    SaveJson(files[i], node);
+                    SaveEntityJson(ent.Id, node);
                     ZonesInferred++;
                 }
                 else ZonesInferred++;
             }
             catch (Exception ex)
             {
-                log.LogWarning("Zone inference error on {File}: {Msg}", files[i], ex.Message);
+                log.LogWarning("Zone inference error on {Name}: {Msg}", ent.Name, ex.Message);
             }
         }
     }
@@ -321,40 +365,37 @@ public class DataRepairService : PipelineServiceBase
 
     private async Task RunWikiLinkWriterAsync(CancellationToken ct)
     {
-        var allDirs = new[]
+        var allTypes = new[]
         {
-            "people", "synthetics", "corponations", "factions", "places",
-            "weaponry", "cyberware", "equipment", "apparel", "genemods",
-            "pharmaceuticals", "technology", "transportation", "documents"
+            "character", "synthetic", "corponation", "faction", "place",
+            "weapon", "cyberware", "equipment", "apparel", "genemod",
+            "pharmaceutical", "technology", "transportation", "document"
         };
 
         // Build name index from all entities
         Notify("Tool 4 — Wiki Link Writer", 0, 1, "Building name index…");
-        var nameIndex = BuildNameIndex(allDirs);
+        var nameIndex = BuildNameIndex(allTypes);
 
-        var files = new List<string>();
-        foreach (var dir in allDirs)
-        {
-            var full = Path.Combine(paths.EngineDataDir, dir);
-            if (Directory.Exists(full)) files.AddRange(Directory.GetFiles(full, "*.json"));
-        }
+        var entities = new List<EntityRow>();
+        foreach (var type in allTypes) entities.AddRange(ListEntitiesByType(type));
 
         // Text fields to scan in each entity
         var textFields = new[] { "description", "backstory", "body", "history", "notes",
                                   "background", "summary", "lore", "overview" };
 
-        for (int i = 0; i < files.Count; i++)
+        for (int i = 0; i < entities.Count; i++)
         {
             ct.ThrowIfCancellationRequested();
             await CheckPauseAsync(ct);
-            if (i % 100 == 0) Notify("Tool 4 — Wiki Link Writer", i, files.Count);
+            if (i % 100 == 0) Notify("Tool 4 — Wiki Link Writer", i, entities.Count);
+            var ent = entities[i];
 
             try
             {
-                var node = JsonNode.Parse(File.ReadAllText(files[i]));
+                var (node, _) = LoadEntityJson(ent.Id);
                 if (node == null) continue;
 
-                var selfName = node["name"]?.GetValue<string>() ?? "";
+                var selfName = node["name"]?.GetValue<string>() ?? ent.Name;
                 bool modified = false;
                 int linksAdded = 0;
 
@@ -374,10 +415,10 @@ public class DataRepairService : PipelineServiceBase
 
                 if (modified)
                 {
-                    ChangeLog.Add($"[Wiki] {(DryRun ? "[DRY RUN] " : "")}{Path.GetFileNameWithoutExtension(files[i])}: +{linksAdded} links");
+                    ChangeLog.Add($"[Wiki] {(DryRun ? "[DRY RUN] " : "")}{ent.Name}: +{linksAdded} links");
                     if (!DryRun)
                     {
-                        SaveJson(files[i], node);
+                        SaveEntityJson(ent.Id, node);
                         WikiLinksInserted += linksAdded;
                     }
                     else WikiLinksInserted += linksAdded;
@@ -385,31 +426,25 @@ public class DataRepairService : PipelineServiceBase
             }
             catch (Exception ex)
             {
-                log.LogWarning("Wiki link error on {File}: {Msg}", files[i], ex.Message);
+                log.LogWarning("Wiki link error on {Name}: {Msg}", ent.Name, ex.Message);
             }
         }
     }
 
-    private Dictionary<string, string> BuildNameIndex(string[] dirs)
+    private Dictionary<string, string> BuildNameIndex(string[] entityTypes)
     {
         // name → canonical name (lowercase key → original-case value)
         var index = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-        foreach (var dir in dirs)
+        using var db = dbFactory.CreateDbContext();
+        var names = db.Entities.AsNoTracking()
+            .Where(e => e.IsActive && entityTypes.Contains(e.EntityType))
+            .Select(e => e.Name)
+            .Where(n => !string.IsNullOrEmpty(n) && n.Length >= 4)
+            .ToList();
+        foreach (var name in names)
         {
-            var full = Path.Combine(paths.EngineDataDir, dir);
-            if (!Directory.Exists(full)) continue;
-            foreach (var f in Directory.GetFiles(full, "*.json"))
-            {
-                try
-                {
-                    using var stream = File.OpenRead(f);
-                    using var doc = JsonDocument.Parse(stream);
-                    var name = doc.RootElement.TryGetProperty("name", out var n) ? n.GetString() ?? "" : "";
-                    if (name.Length >= 4 && !index.ContainsKey(name))
-                        index[name] = name;
-                }
-                catch { }
-            }
+            if (!index.ContainsKey(name))
+                index[name] = name;
         }
         return index;
     }

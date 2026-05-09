@@ -74,17 +74,6 @@ if (args.Contains("--continuity"))
     return;
 }
 
-// CLI mode: ask the local Qwen against the live RAG corpus.
-//   ss --ask "question"      ss --ask --reindex      ss --ask --stats
-if (args.Contains("--ask"))
-{
-    var cliBuilder = WebApplication.CreateBuilder(args);
-    cliBuilder.Services.AddStreetSamuraiServices();
-    var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await AskCli.RunAsync(args, cliApp.Services);
-    return;
-}
-
 // CLI mode: SQL Server migration — apply EF migrations and import JSON entities.
 //   ss --migrate-sql --schema           apply EF migrations
 //   ss --migrate-sql --import people    import character JSON files
@@ -95,6 +84,51 @@ if (args.Contains("--migrate-sql"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await MigrateSqlCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: prose → entities + edges. LLM-driven.
+//   ss --interpret --text "..."  | --file path.txt
+//   add --commit to apply, --auto-create to stub missing entities, --tag <source>
+if (args.Contains("--interpret"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await InterpretCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: insert a worldbuilding Document directly into canon.
+//   ss --add-doc --title "…" --body-file path.md [--category essay] [--tags "a,b,c"] [--filename slug.md]
+if (args.Contains("--add-doc"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AddDocCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: insert a Character from a CharacterData JSON file.
+//   ss --add-character --file path.json
+if (args.Contains("--add-character"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AddCharacterCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: insert a News article from a NewsData JSON file.
+//   ss --add-news --file path.json
+if (args.Contains("--add-news"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AddNewsCli.RunAsync(args, cliApp.Services);
     return;
 }
 
@@ -133,6 +167,163 @@ if (args.Contains("--repair"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await RepairCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: cloud RAG over the canon corpus. Replaces the retired Ollama path.
+//   ss --ask "Question" [--k 8] [--type character]
+if (args.Contains("--ask"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AskCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: report Character columns that disagree with their latest
+// matching EntityStateEvents row. Lights up the static-vs-dynamic recipe
+// only for columns that actually drifted.
+//   ss --audit-drift           pretty-printed report
+//   ss --audit-drift --json    JSON dump
+if (args.Contains("--audit-drift"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AuditDriftCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill EntityStateEvents from the dynamic columns currently
+// sitting on Characters (Location, LifeStatus, Role, Affiliation, Belongings*,
+// Territory*, DailyLife). One-shot, idempotent.
+if (args.Contains("--backfill-character-state"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await StateBackfillCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: rewrite ethnicity-keyed visual descriptors in image prompts to
+// match a character's current genetic_ancestry. Cost-aware via stored hash.
+//   ss --image-prompts regen --id <id|slug> [--force]
+//   ss --image-prompts regen --all-changed
+if (args.Contains("--image-prompts"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ImagePromptsCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: propose a plausible immediate family for one character.
+//   ss --family-gen propose --of <id|slug>           dry run
+//   ss --family-gen propose --of <id|slug> --commit  write characters + edges + propagate genetics
+//   --seed N for reproducible RNG
+if (args.Contains("--family-gen"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await FamilyGenCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: propagate genetic_ancestry from parents to children via the
+// family graph (with ±5% recombination noise). Currently a no-op until family
+// ties are seeded.
+//   ss --genetics propagate                     full graph
+//   ss --genetics propagate --id <id|slug>      single character
+//   ss --genetics propagate --seed 42           reproducible RNG
+if (args.Contains("--genetics"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await GeneticsCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: family ties — hand-seed parent/sibling/spouse links between characters.
+//   ss --family parent  --parent <id|slug> --child <id|slug>
+//   ss --family sibling --a <id|slug> --b <id|slug>
+//   ss --family spouse  --a <id|slug> --b <id|slug>
+//   ss --family show    --of <id|slug>
+if (args.Contains("--family"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await FamilyCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: dump canon JSON to the user's Downloads folder.
+//   ss --export global                every repo, zipped + timestamped
+//   ss --export <repoName>            one repo, zipped (e.g. "people", "weaponry")
+//   ss --export <entityId>            one entity, plain .json
+if (args.Contains("--export"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ExportCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: rebuild the entity-embedding cache via cloud OpenAI.
+//   ss --reembed              drift-skipped corpus pass (only changed entities re-embed)
+//   ss --reembed --force      clear the table first, re-embed everything
+if (args.Contains("--reembed"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ReembedCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: query the Legion / LLMVoting cloud-LLM panel directly.
+//   ss --legion ask "Q" --options "A,B,C"  → forced-choice Quorum decision (JSON on stdout)
+//   ss --legion vote "Q" [--context "…"]    → open-ended vote with synthesized narrative
+if (args.Contains("--legion"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await LegionCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// --archive-json retired 2026-05-08 with JsonArchivalService — engine/data/*.json
+// no longer exists, so legacy-file verification is moot.
+
+// CLI mode: apply canonical SQL seeds via C# (replaces sqlcmd-by-hand workflow).
+//   ss --seed                     list known seeds
+//   ss --seed <name>              apply one
+//   ss --seed --all [--force]     apply every known seed in order
+if (args.Contains("--seed"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SeedCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: report flat-vs-bridge drift for a denormalised column.
+//   ss --audit-denorm Entities.TagsJson
+//   ss --audit-denorm Characters.Affiliation
+if (args.Contains("--audit-denorm"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AuditDenormCli.RunAsync(args, cliApp.Services);
     return;
 }
 
@@ -247,16 +438,24 @@ builder.Services.AddScoped<ToastNotifier>();
 var app = builder.Build();
 
 // Eager-instantiate background services that subscribe to events at construction.
-// EmbeddingIndexService starts the FileSystemWatcher; ContinuousQualityService
-// subscribes to its FileReindexed event for autonomous contradiction/cliché scans.
-_ = app.Services.GetRequiredService<StreetSamurai.Core.Services.EmbeddingIndexService>();
-_ = app.Services.GetRequiredService<StreetSamurai.Core.Services.ContinuousQualityService>();
-// Eager-instantiate the BeatStateExtractor so its OnChapterSaved subscription
-// is live before any chapter save can happen.
-_ = app.Services.GetRequiredService<StreetSamurai.Core.Services.BeatStateExtractor>();
+// Wrapped in try/Log.Fatal so a ctor failure doesn't silently swallow itself —
+// without this the host comes up but the service never wires its OnChapterSaved
+// subscription, and the symptom is "saves don't trigger findings" with no log line.
+try
+{
+    // ContinuousQualityService subscribes to IChapterRepository.OnChapterSaved for
+    // autonomous contradiction/cliché scans against the cloud LLM.
+    _ = app.Services.GetRequiredService<StreetSamurai.Core.Services.ContinuousQualityService>();
+}
+catch (Exception ex) { Log.Fatal(ex, "Eager-instantiate ContinuousQualityService failed — chapter-save quality scan will not run"); }
 
-// Ollama is no longer auto-started at boot — it was freezing the host on startup.
-// EnsureRunningAsync is now invoked lazily on first /ask request.
+try
+{
+    // Eager-instantiate the BeatStateExtractor so its OnChapterSaved subscription
+    // is live before any chapter save can happen.
+    _ = app.Services.GetRequiredService<StreetSamurai.Core.Services.BeatStateExtractor>();
+}
+catch (Exception ex) { Log.Fatal(ex, "Eager-instantiate BeatStateExtractor failed — beat state extraction on save will not run"); }
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

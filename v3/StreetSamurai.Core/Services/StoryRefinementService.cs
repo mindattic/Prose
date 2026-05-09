@@ -1,8 +1,10 @@
 using System.Text;
 using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MindAttic.Legion;
 using MindAttic.Legion.Providers;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 
@@ -34,6 +36,7 @@ public class StoryRefinementService
     private readonly VotingConfiguration voting;
     private readonly IDatabaseService db;
     private readonly IPathProvider paths;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<StoryRefinementService> log;
 
     public StoryRefinementService(
@@ -41,13 +44,28 @@ public class StoryRefinementService
         VotingConfiguration voting,
         IDatabaseService db,
         IPathProvider paths,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ILogger<StoryRefinementService> log)
     {
-        this.provider = provider;
-        this.voting   = voting;
-        this.db       = db;
-        this.paths    = paths;
-        this.log      = log;
+        this.provider  = provider;
+        this.voting    = voting;
+        this.db        = db;
+        this.paths     = paths;
+        this.dbFactory = dbFactory;
+        this.log       = log;
+    }
+
+    /// <summary>
+    /// Idempotent column-add. Called from <c>--repair</c>'s schema-bootstrap.
+    /// </summary>
+    public async Task EnsureRefinementReportColumnAsync(CancellationToken ct = default)
+    {
+        await using var ctx = await dbFactory.CreateDbContextAsync(ct);
+        const string ddl = """
+            IF COL_LENGTH('dbo.Chapters', 'RefinementReportJson') IS NULL
+                ALTER TABLE [dbo].[Chapters] ADD [RefinementReportJson] NVARCHAR(MAX) NULL;
+            """;
+        await ctx.Database.ExecuteSqlRawAsync(ddl, ct);
     }
 
     /// <summary>
@@ -104,12 +122,61 @@ public class StoryRefinementService
         return report;
     }
 
-    /// <summary>Load a saved refinement report for a story, if present.</summary>
+    /// <summary>
+    /// Load a saved refinement report for a story, if present. Reads from
+    /// <c>Chapters.RefinementReportJson</c>; on first miss with a legacy disk
+    /// file present, migrates the file content into the column and deletes
+    /// the source.
+    /// </summary>
     public RefinementReport? LoadReport(string projectId)
+    {
+        if (Guid.TryParse(projectId, out var chapterId)
+            || Guid.TryParseExact(projectId, "N", out chapterId))
+        {
+            try
+            {
+                using var ctx = dbFactory.CreateDbContext();
+                var row = ctx.Chapters.FirstOrDefault(c => c.Id == chapterId);
+                if (row != null)
+                {
+                    if (string.IsNullOrEmpty(row.RefinementReportJson))
+                    {
+                        var fromDisk = TryReadLegacyDiskFile(projectId, deleteAfterRead: true);
+                        if (fromDisk != null)
+                        {
+                            row.RefinementReportJson = JsonSerializer.Serialize(fromDisk, JsonDefaults.Indented);
+                            row.ModifiedAt = DateTime.UtcNow;
+                            ctx.SaveChanges();
+                            return fromDisk;
+                        }
+                        return null;
+                    }
+                    return JsonSerializer.Deserialize<RefinementReport>(row.RefinementReportJson);
+                }
+            }
+            catch (Exception ex)
+            {
+                log.LogError(ex, "Refinement: load failed for {ProjectId}", projectId);
+                return null;
+            }
+        }
+        return TryReadLegacyDiskFile(projectId);
+    }
+
+    private RefinementReport? TryReadLegacyDiskFile(string projectId, bool deleteAfterRead = false)
     {
         var path = StoryFolderHelper.FindFile(paths.ChaptersDir, projectId, "refinement_report.json");
         if (path == null) return null;
-        try { return JsonSerializer.Deserialize<RefinementReport>(File.ReadAllText(path)); }
+        try
+        {
+            var report = JsonSerializer.Deserialize<RefinementReport>(File.ReadAllText(path));
+            if (deleteAfterRead && report != null)
+            {
+                try { File.Delete(path); }
+                catch (Exception ex) { log.LogDebug(ex, "Refinement: legacy file delete failed for {Path}", path); }
+            }
+            return report;
+        }
         catch (Exception ex)
         {
             log.LogError(ex, "Failed to load refinement report for {ProjectId}", projectId);
@@ -338,11 +405,26 @@ public class StoryRefinementService
 
     void Save(string projectId, RefinementReport report)
     {
+        if (!Guid.TryParse(projectId, out var chapterId)
+            && !Guid.TryParseExact(projectId, "N", out chapterId))
+        {
+            log.LogWarning("Refinement: project id is not a Guid, skipping save: {ProjectId}", projectId);
+            return;
+        }
+
         try
         {
-            var path = StoryFolderHelper.GetFilePath(paths.ChaptersDir, projectId, "refinement_report.json");
-            File.WriteAllText(path, JsonSerializer.Serialize(report, JsonDefaults.Indented));
-            log.LogDebug("Refinement report saved to {Path}", path);
+            using var ctx = dbFactory.CreateDbContext();
+            var row = ctx.Chapters.FirstOrDefault(c => c.Id == chapterId);
+            if (row == null)
+            {
+                log.LogDebug("Refinement: no Chapters row for {ProjectId}; report not persisted", projectId);
+                return;
+            }
+            row.RefinementReportJson = JsonSerializer.Serialize(report, JsonDefaults.Indented);
+            row.ModifiedAt = DateTime.UtcNow;
+            ctx.SaveChanges();
+            log.LogDebug("Refinement report saved to Chapters.RefinementReportJson for {ProjectId}", projectId);
         }
         catch (Exception ex)
         {

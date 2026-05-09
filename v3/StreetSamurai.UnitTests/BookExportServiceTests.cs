@@ -14,8 +14,8 @@ public class BookExportServiceTests
 {
     private string tempRoot = "";
     private TestPathProviderWithRoot paths = null!;
-    private JsonBookRepository books = null!;
-    private JsonChapterRepository chapters = null!;
+    private BookRepository books = null!;
+    private ChapterRepository chapters = null!;
     private BookExportService export = null!;
 
     [SetUp]
@@ -24,8 +24,8 @@ public class BookExportServiceTests
         tempRoot = Path.Combine(Path.GetTempPath(), "ss-export-tests-" + Guid.NewGuid().ToString("N"));
         Directory.CreateDirectory(tempRoot);
         paths = new TestPathProviderWithRoot(tempRoot);
-        books = new JsonBookRepository(paths, NullLogger<JsonBookRepository>.Instance);
-        chapters = new JsonChapterRepository(paths, NullLogger<JsonChapterRepository>.Instance);
+        books = new BookRepository(paths, NullLogger<BookRepository>.Instance);
+        chapters = new ChapterRepository(paths, NullLogger<ChapterRepository>.Instance);
         var markdown = new MarkdownService();
         export = new BookExportService(books, chapters, paths, markdown,
             NullLogger<BookExportService>.Instance);

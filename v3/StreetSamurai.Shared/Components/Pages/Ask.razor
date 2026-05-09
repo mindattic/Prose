@@ -1,366 +1,129 @@
 @page "/ask"
-@attribute [Authorize]
-@using Microsoft.AspNetCore.Authorization
-@using StreetSamurai.Core.Services
-@inject EmbeddingIndexService Index
-@inject OllamaClient Ollama
-@inject OllamaProcessManager OllamaProc
-@inject SettingsService SettingsSvc
+@using Microsoft.Extensions.Logging
+@inject AskService AskSvc
+@inject NavigationManager Nav
+@inject ILogger<Ask> Log
 
-<div class="d-flex justify-content-between align-items-start mb-3">
-    <div>
-        <div class="small text-muted mb-1">
-            <a href="/" class="text-muted text-decoration-none"><i class="bi bi-arrow-left me-1"></i>Home</a>
-        </div>
-        <h4 class="text-info mb-0"><i class="bi bi-chat-dots me-2"></i>Ask</h4>
-        <p class="small text-muted mb-0">
-            Local Qwen reads the live JSON files and chapter prose. Every save updates the index — answers always reflect the current truth on disk.
-        </p>
-    </div>
-    <div class="d-flex flex-column gap-2 align-items-end">
-        <div class="d-flex flex-column gap-1 align-items-end">
-            <label class="small text-muted mb-0">Chat model — switches on the fly (no reindex)</label>
-            <OllamaModelPicker Value="@ChatModel"
-                               ValueChanged="OnChatModelChanged"
-                               Disabled="@working"
-                               CssClass="form-select form-select-sm bg-dark text-light border-secondary"
-                               style="width:auto; min-width:240px;" />
-            @if (!string.IsNullOrEmpty(modelStatus))
-            {
-                <div class="small text-info">@modelStatus</div>
-            }
-        </div>
-        <div class="d-flex flex-column gap-1 align-items-end">
-            <div class="small text-muted">Reindex any file the watcher missed</div>
-            <button class="btn btn-sm btn-outline-secondary" @onclick="DoReindex" disabled="@working">
-                @(working && action == "reindex" ? "reindexing…" : "Reindex now")
-            </button>
-        </div>
-    </div>
+<PageTitle>Ask Canon</PageTitle>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="mb-0"><i class="bi bi-question-circle"></i> Ask Canon</h4>
+    <span class="text-muted small">Cloud RAG over the canonical entity corpus — embedding-retrieved context, LLM-grounded answer.</span>
 </div>
 
-@if (!string.IsNullOrEmpty(status))
-{
-    <div class="alert alert-info small py-2">@status</div>
-}
-@if (!string.IsNullOrEmpty(errorMessage))
-{
-    <div class="alert alert-danger small py-2">@errorMessage</div>
-}
-
-@* ── Stats strip ─────────────────────────────────────────── *@
-<div class="row g-2 mb-3">
-    <div class="col-md-3"><div class="ask-stat"><div class="lbl">Files indexed</div><div class="val text-info">@stats.FileCount</div></div></div>
-    <div class="col-md-3"><div class="ask-stat"><div class="lbl">Chunks</div><div class="val text-info">@stats.ChunkCount</div></div></div>
-    <div class="col-md-3"><div class="ask-stat"><div class="lbl">Last indexed</div><div class="val small text-muted">@(stats.LastIndexed?.ToLocalTime().ToString("g") ?? "—")</div></div></div>
-    <div class="col-md-3"><div class="ask-stat"><div class="lbl">Ollama</div><div class="val small @(ollamaUp ? "text-success" : "text-danger")">@(ollamaUp ? "reachable" : "offline")</div></div></div>
+<div class="mb-3">
+    <textarea class="form-control bg-dark text-light border-secondary"
+              rows="3"
+              placeholder="Ask anything about the canon. Examples: 'Who broker information between corponations?', 'What weapons does Kyle carry?', 'Where does Sasha train?'"
+              @bind="question"
+              @bind:event="oninput"
+              @onkeydown="OnKeyDown"
+              disabled="@asking"></textarea>
 </div>
 
-@if (starting)
-{
-    <div class="alert alert-info small d-flex align-items-center gap-2">
-        <div class="spinner-border spinner-border-sm" role="status"></div>
-        @startingMessage
+<div class="d-flex gap-2 align-items-center mb-3">
+    <button class="btn btn-info" @onclick="AskNow" disabled="@(asking || string.IsNullOrWhiteSpace(question))">
+        @if (asking) { <span class="spinner-border spinner-border-sm me-1"></span> <text>Asking…</text> }
+        else { <i class="bi bi-search me-1"></i> <text>Ask</text> }
+    </button>
+
+    <div class="form-check form-check-inline ms-3 m-0">
+        <input class="form-check-input" type="checkbox" id="onlyChars"
+               checked="@charsOnly"
+               @onchange="@(e => charsOnly = (bool)(e.Value ?? false))"
+               disabled="@asking" />
+        <label class="form-check-label small" for="onlyChars">Characters only</label>
     </div>
-}
-else if (missingModels.Count > 0)
+
+    <span class="text-muted small ms-2">Top-K context:
+        <select class="form-select form-select-sm d-inline-block bg-dark text-light border-secondary" style="width:5rem;"
+                @bind="topK" disabled="@asking">
+            <option value="4">4</option>
+            <option value="8">8</option>
+            <option value="12">12</option>
+            <option value="16">16</option>
+        </select>
+    </span>
+</div>
+
+@if (errorMessage != null)
 {
-    <div class="alert alert-warning small">
-        <strong>Ollama is reachable but required model(s) are not pulled:</strong>
-        <pre class="mb-0 mt-2 small">@string.Join("\n", missingModels.Select(m => $"ollama pull {m}"))</pre>
-        <div class="mt-2">Ask is locked until the missing models are installed.</div>
-    </div>
-}
-else if (!ollamaUp)
-{
-    <div class="alert alert-warning small">
-        <strong>Ollama not reachable at @Ollama.BaseUrl.</strong>
-        @if (!string.IsNullOrEmpty(OllamaProc.LastError))
-        {
-            <span> Auto-start failed: <em>@OllamaProc.LastError</em></span>
-        }
-        Install Ollama and pull the models:
-        <pre class="mb-0 mt-2 small">ollama pull @Ollama.ChatModel
-ollama pull @Ollama.EmbedModel</pre>
-    </div>
+    <div class="alert alert-danger small">@errorMessage</div>
 }
 
-@* ── Conversation ──────────────────────────────────────── *@
-<div class="card bg-dark text-light border-secondary mb-3">
-    <div class="card-body p-3" style="min-height:220px;">
-        @if (turns.Count == 0)
-        {
-            <div class="text-muted text-center py-4 small">
-                Ask anything. Examples: "What color is Sable's hair?", "Where does Kyle eat?", "Who is Hua and what does she owe Kyle?"
+@if (answer != null)
+{
+    <div class="card bg-dark text-light border-secondary mb-3">
+        <div class="card-header text-muted d-flex justify-content-between">
+            <span><i class="bi bi-chat-square-text me-1"></i> Answer</span>
+            <span class="small">@answer.CorpusChunks chunks · @answer.Duration.TotalSeconds.ToString("F1")s</span>
+        </div>
+        <div class="card-body">
+            <pre class="mb-0" style="white-space: pre-wrap; font-family: inherit;">@answer.Answer</pre>
+        </div>
+    </div>
+
+    @if (answer.Citations.Count > 0)
+    {
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">
+                <i class="bi bi-link-45deg me-1"></i> Citations (semantic similarity, best-first)
             </div>
-        }
-        @foreach (var t in turns)
-        {
-            <div class="mb-3">
-                <div class="small text-muted mb-1 d-flex align-items-center gap-2">
-                    <span><i class="bi @(t.Role == "user" ? "bi-person-fill" : "bi-cpu") me-1"></i>@t.Role</span>
-                    @if (t.Role == "assistant")
+            <div class="card-body">
+                <div class="d-flex flex-wrap gap-2">
+                    @foreach (var c in answer.Citations)
                     {
-                        @if (t.ElapsedSeconds.HasValue)
-                        {
-                            <span class="badge bg-dark border border-secondary text-info">
-                                @FormatDuration(t.ElapsedSeconds.Value) total
-                            </span>
-                            if (t.RetrievalSeconds.HasValue)
-                            {
-                                <span class="badge bg-dark border border-secondary">retrieval @FormatDuration(t.RetrievalSeconds.Value)</span>
-                            }
-                            if (t.FirstTokenMs.HasValue)
-                            {
-                                <span class="badge bg-dark border border-secondary">first token @(t.FirstTokenMs.Value)ms</span>
-                            }
-                            if (t.ElapsedSeconds is double e && t.FirstTokenMs is int ft && e > ft / 1000.0)
-                            {
-                                var genTokens = ApproxTokens(t.Content);
-                                var genSec = e - ft / 1000.0;
-                                if (genSec > 0)
-                                {
-                                    <span class="badge bg-dark border border-secondary">~@((int)(genTokens / genSec)) tok/s</span>
-                                }
-                            }
-                        }
-                        else if (t == turns[^1] && working)
-                        {
-                            <span class="badge bg-warning text-dark">@FormatDuration(liveElapsed)…</span>
-                        }
+                        <a class="btn btn-sm btn-outline-info" href="/entity/@c.EntityId">
+                            @c.EntityName
+                            <span class="badge bg-secondary ms-1">@c.EntityType</span>
+                            <span class="text-muted small ms-1">@c.Similarity.ToString("F3")</span>
+                        </a>
                     }
                 </div>
-                <div class="ms-3" style="white-space:pre-wrap;">@t.Content</div>
-                @if (t.Role == "assistant" && t.Citations is { Count: > 0 })
-                {
-                    <div class="ms-3 mt-2">
-                        <div class="small text-muted mb-1">cited from</div>
-                        @foreach (var c in t.Citations)
-                        {
-                            <div class="small text-muted border border-secondary rounded p-1 mb-1">
-                                <code>@RelPath(c.FilePath)</code> · chunk @c.ChunkIndex · score @c.Score.ToString("F3")
-                            </div>
-                        }
-                    </div>
-                }
             </div>
-        }
+        </div>
+    }
+}
+else if (!asking)
+{
+    <div class="alert alert-secondary small">
+        Type a question and press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (or click Ask). Answers are grounded in the
+        canonical entity corpus via cloud embedding retrieval — the LLM sees only canon context, not the open web.
     </div>
-</div>
-
-<div class="input-group mb-3">
-    <input class="form-control bg-dark text-light border-secondary"
-           placeholder="@(askLocked ? "Waiting for local LLM…" : "Ask the corpus…")"
-           @bind="prompt" @bind:event="oninput"
-           @onkeydown="OnKey"
-           disabled="@askLocked" />
-    <button class="btn btn-primary" disabled="@(askLocked || string.IsNullOrWhiteSpace(prompt))" @onclick="Submit">
-        @(working && action == "ask" ? $"thinking… {FormatDuration(liveElapsed)}" : "Ask")
-    </button>
-</div>
-
-<style>
-    .ask-stat { background:#1c2128; border-radius:4px; padding:8px 12px; text-align:center; }
-    .ask-stat .lbl { font-size:.7rem; text-transform:uppercase; color:var(--bs-secondary); }
-    .ask-stat .val { font-size:1.2rem; font-weight:600; }
-</style>
+}
 
 @code {
-    record Turn(string Role, string Content, List<SearchHit>? Citations = null, double? ElapsedSeconds = null, double? RetrievalSeconds = null, int? FirstTokenMs = null);
+    private string question = "";
+    private int topK = 8;
+    private bool charsOnly = false;
+    private bool asking;
+    private string? errorMessage;
+    private AskService.AskAnswer? answer;
 
-    private readonly List<Turn> turns = new();
-    private string prompt = "";
-    private string status = "";
-    private string errorMessage = "";
-    private string modelStatus = "";
-    private string action = "";
-    private bool working;
-    private bool ollamaUp;
-    private bool starting;
-    private string startingMessage = "";
-    private List<string> missingModels = new();
-
-    private bool askLocked => working || starting || !ollamaUp || missingModels.Count > 0;
-
-    // Two-way bound to the dropdown; persists through SettingsService so the
-    // choice survives reload and is shared with the rest of the app.
-    private string ChatModel
+    private async Task OnKeyDown(KeyboardEventArgs e)
     {
-        get => string.IsNullOrWhiteSpace(SettingsSvc.OllamaChatModel) ? Ollama.ChatModel : SettingsSvc.OllamaChatModel;
-        set => SettingsSvc.OllamaChatModel = value;
+        if (e.Key == "Enter" && (e.CtrlKey || e.MetaKey)) await AskNow();
     }
 
-    private void OnChatModelChanged(string newModel)
+    private async Task AskNow()
     {
-        ChatModel = newModel;
-        modelStatus = $"Now answering with {ChatModel}. First request will pay one cold-load before responses stream.";
-    }
-    private System.Diagnostics.Stopwatch? questionTimer;
-    private System.Threading.Timer? tickTimer;
-    private double liveElapsed;
-    private IndexStats stats = new(0, 0, null, false);
-
-    protected override async Task OnInitializedAsync()
-    {
-        stats = Index.GetStats();
-        starting = true;
-        startingMessage = $"Starting Ollama at {Ollama.BaseUrl}…";
+        if (string.IsNullOrWhiteSpace(question) || asking) return;
+        asking = true; errorMessage = null; answer = null;
         StateHasChanged();
         try
         {
-            var running = await OllamaProc.EnsureRunningAsync();
-            if (!running)
-            {
-                ollamaUp = false;
-                return;
-            }
-
-            startingMessage = "Verifying required models are pulled…";
-            StateHasChanged();
-            var (ok, missing) = await OllamaProc.VerifyModelsAsync();
-            missingModels = missing.ToList();
-            if (!ok)
-            {
-                ollamaUp = true; // server up, but models missing — locked at askLocked
-                return;
-            }
-
-            startingMessage = $"Warming {Ollama.ChatModel} and {Ollama.EmbedModel} into VRAM…";
-            StateHasChanged();
-            await OllamaProc.EnsureWarmAsync();
-            ollamaUp = await Index.OllamaReachableAsync();
-        }
-        finally
-        {
-            starting = false;
-            StateHasChanged();
-        }
-    }
-
-    private async Task RefreshStatus()
-    {
-        stats = Index.GetStats();
-        ollamaUp = await Index.OllamaReachableAsync();
-    }
-
-    private async Task OnKey(KeyboardEventArgs e)
-    {
-        if (e.Key == "Enter" && !e.ShiftKey) await Submit();
-    }
-
-    private async Task Submit()
-    {
-        if (string.IsNullOrWhiteSpace(prompt) || working) return;
-        var question = prompt.Trim();
-        prompt = "";
-        errorMessage = "";
-        status = "";
-        action = "ask";
-        working = true;
-        turns.Add(new Turn("user", question));
-
-        questionTimer = System.Diagnostics.Stopwatch.StartNew();
-        liveElapsed = 0;
-        tickTimer = new System.Threading.Timer(_ =>
-        {
-            liveElapsed = questionTimer?.Elapsed.TotalSeconds ?? 0;
-            InvokeAsync(StateHasChanged);
-        }, null, 250, 250);
-        StateHasChanged();
-
-        try
-        {
-            var retrievalSw = System.Diagnostics.Stopwatch.StartNew();
-            var hits = await Index.SearchAsync(question, k: 5);
-            retrievalSw.Stop();
-
-            var context = string.Join("\n\n---\n\n",
-                hits.Select(h => $"[{RelPath(h.FilePath)} · chunk {h.ChunkIndex}]\n{h.Text}"));
-
-            var system = "You answer questions about the StreetSamurai world strictly from the provided context. " +
-                         "If the context does not contain the answer, say so plainly. Cite the source file paths you used.";
-            var user = $"Context from the live corpus:\n\n{context}\n\n---\n\nQuestion: {question}";
-
-            var sb = new System.Text.StringBuilder();
-            var assistantTurn = new Turn("assistant", "", hits.ToList(), null, retrievalSw.Elapsed.TotalSeconds);
-            turns.Add(assistantTurn);
-
-            int? firstTokenMs = null;
-            await foreach (var piece in Ollama.StreamChatAsync(new[]
-                {
-                    ("system", system),
-                    ("user", user),
-                }))
-            {
-                if (firstTokenMs == null && !string.IsNullOrEmpty(piece))
-                    firstTokenMs = (int)questionTimer.Elapsed.TotalMilliseconds;
-                sb.Append(piece);
-                turns[^1] = assistantTurn with { Content = sb.ToString(), FirstTokenMs = firstTokenMs };
-                StateHasChanged();
-                await Task.Yield();
-            }
-
-            questionTimer.Stop();
-            turns[^1] = turns[^1] with
-            {
-                ElapsedSeconds = questionTimer.Elapsed.TotalSeconds,
-                FirstTokenMs = firstTokenMs,
-            };
+            string[]? types = charsOnly ? new[] { "character" } : null;
+            answer = await AskSvc.AnswerAsync(question, retrieveK: topK, entityTypes: types);
         }
         catch (Exception ex)
         {
+            Log.LogError(ex, "Ask page failed");
             errorMessage = ex.Message;
         }
         finally
         {
-            tickTimer?.Dispose();
-            tickTimer = null;
-            working = false;
-            action = "";
+            asking = false;
             StateHasChanged();
         }
     }
-
-    private async Task DoReindex()
-    {
-        errorMessage = "";
-        status = "";
-        action = "reindex";
-        working = true;
-        StateHasChanged();
-        try
-        {
-            var n = await Index.ReindexAllAsync();
-            status = n == 0 ? "Index already current." : $"Re-embedded {n} file(s).";
-            await RefreshStatus();
-        }
-        catch (Exception ex)
-        {
-            errorMessage = ex.Message;
-        }
-        finally
-        {
-            working = false;
-            action = "";
-            StateHasChanged();
-        }
-    }
-
-    private static string RelPath(string p)
-    {
-        var idx = p.IndexOf("engine", StringComparison.OrdinalIgnoreCase);
-        return idx >= 0 ? p[idx..].Replace('\\', '/') : Path.GetFileName(p);
-    }
-
-    private static string FormatDuration(double seconds)
-    {
-        if (seconds < 1)   return $"{(int)(seconds * 1000)}ms";
-        if (seconds < 60)  return $"{seconds:F1}s";
-        var m = (int)(seconds / 60);
-        var s = (int)(seconds % 60);
-        return $"{m}m {s:D2}s";
-    }
-
-    // Rough tokens-per-output approximation: ~4 chars per token for English.
-    private static int ApproxTokens(string text) => Math.Max(1, text.Length / 4);
 }

@@ -40,6 +40,7 @@ public class GeoCoordinates
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
 
+[JsonConverter(typeof(AtmosphereDataConverter))]
 public class AtmosphereData
 {
     [JsonPropertyName("sights")] public List<string> Sights { get; set; } = [];
@@ -64,6 +65,7 @@ public class DistrictConnections
 /// waterways, or maintenance corridors. The exit description affects how characters
 /// experience the transition and what dangers they face.
 /// </summary>
+[JsonConverter(typeof(PlaceExitConverter))]
 public class PlaceExit
 {
     [JsonPropertyName("direction")] public string Direction { get; set; } = "";
@@ -75,6 +77,7 @@ public class PlaceExit
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
 
+[JsonConverter(typeof(NotableLocationConverter))]
 public class NotableLocation
 {
     [JsonPropertyName("name")] public string Name { get; set; } = "";

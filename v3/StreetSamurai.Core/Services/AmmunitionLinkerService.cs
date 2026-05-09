@@ -172,14 +172,16 @@ public class AmmunitionLinkerService
         //    insert a new gear row when none exists.
         await LinkCharacterToWeaponAsync(db, KyleCharacterId, ChorusWeaponId, "Chorus", ct);
 
-        // 5) Same favor for Silence (Kyle's blade) — Kyle's Characters row
-        //    already has the canonical weapon name in BelongingsPrimaryWeapon.
-        //    Use that exact string to resolve to the right entity (there are
-        //    multiple "Silence" weapons in canon — a CV-1 ECM rig, an Ouroboros
-        //    XB-7 jammer, AND Kyle's katana — and only the katana matches).
-        var kylePrimary = await db.Characters.AsNoTracking()
-            .Where(c => c.Id == KyleCharacterId)
-            .Select(c => c.BelongingsPrimaryWeapon)
+        // 5) Same favor for Silence (Kyle's blade) — Kyle's "primary weapon"
+        //    pointer lives in CharacterBelongingsGear.Bucket = 'primary_weapon'
+        //    after the 2026-05-08 scalar drop. Use that exact string to resolve
+        //    to the right entity (there are multiple "Silence" weapons in canon
+        //    — a CV-1 ECM rig, an Ouroboros XB-7 jammer, AND Kyle's katana —
+        //    and only the katana matches).
+        var kylePrimary = await db.CharacterBelongingsGear.AsNoTracking()
+            .Where(g => g.CharacterId == KyleCharacterId && g.Bucket == "primary_weapon")
+            .OrderBy(g => g.Position)
+            .Select(g => g.GearName)
             .FirstOrDefaultAsync(ct);
         if (!string.IsNullOrWhiteSpace(kylePrimary))
         {
@@ -355,7 +357,6 @@ public class AmmunitionLinkerService
             CreatedAt   = DateTime.UtcNow,
             ModifiedAt  = DateTime.UtcNow,
             IsActive    = true,
-            TagsJson    = JsonSerializer.Serialize(tags),
         });
         // Subtype row — Ammunition table has its own columns; minimal row is fine.
         db.Ammunitions.Add(new Ammunition { Id = id, Name = name });

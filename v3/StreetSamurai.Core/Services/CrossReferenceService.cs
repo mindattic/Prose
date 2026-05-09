@@ -1,17 +1,17 @@
 using System.Collections.Concurrent;
 using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
-using StreetSamurai.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Populates related_entities[] arrays by scanning entity prose for mentions
 /// of other entities (by name or alias). Uses the XrefService index so no
-/// separate index build is needed.
-/// Ported from: scripts/js/cross_reference_pass.js
+/// separate index build is needed. Operates on <c>Records.Json</c>.
 /// </summary>
-public class CrossReferenceService(XrefService xref, IPathProvider paths) : DataScanUtility(paths)
+public class CrossReferenceService(XrefService xref, IDbContextFactory<StreetSamuraiDbContext> dbFactory) : DataScanUtility(dbFactory)
 {
     private static readonly HashSet<string> ProseKeys = new(StringComparer.OrdinalIgnoreCase)
     {

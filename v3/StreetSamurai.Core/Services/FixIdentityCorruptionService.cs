@@ -1,15 +1,16 @@
 using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
-using StreetSamurai.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Strips wiki markup [[Name|id]] from identity fields (name, title, aliases, etc.).
-/// Extracts the display text portion, leaving clean strings.
-/// Ported from: scripts/py/fix_name_corruption.py
+/// Extracts the display text portion, leaving clean strings. Operates on
+/// <c>Records.Json</c>.
 /// </summary>
-public class FixIdentityCorruptionService(IPathProvider paths) : DataScanUtility(paths)
+public class FixIdentityCorruptionService(IDbContextFactory<StreetSamuraiDbContext> dbFactory) : DataScanUtility(dbFactory)
 {
     // Matches [[DisplayText|anything]] or [[DisplayText]]
     private static readonly Regex WikiLink = new(@"\[\[([^\]|]+?)(?:\|[^\]]+?)?\]\]", RegexOptions.Compiled);

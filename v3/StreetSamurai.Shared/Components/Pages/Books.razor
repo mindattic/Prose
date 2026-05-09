@@ -1,4 +1,4 @@
-@page "/books"
+﻿@page "/books"
 @attribute [Authorize(Roles = "Contributor,Administrator")]
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
@@ -22,7 +22,7 @@
     </div>
 </div>
 
-@* ── New Book Modal ──────────────────────────────── *@
+@* â”€â”€ New Book Modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ *@
 @if (newBookOpen)
 {
     <div class="modal-backdrop fade show" style="z-index:1050;"></div>
@@ -50,12 +50,12 @@
                     <div class="mb-3">
                         <label class="form-label small text-info mb-1">Arc target</label>
                         <input class="form-control bg-black text-light border-secondary" @bind="newArcTarget"
-                               placeholder="Where does this book land — redemption refused, downfall, escape?" />
+                               placeholder="Where does this book land â€” redemption refused, downfall, escape?" />
                     </div>
                     <div class="mb-3">
-                        <label class="form-label small text-info mb-1">Protagonist(s) — comma-separated</label>
+                        <label class="form-label small text-info mb-1">Protagonist(s) â€” comma-separated</label>
                         <input class="form-control bg-black text-light border-secondary" @bind="newProtagonists"
-                               placeholder="Kyle Ellen Corbin-Vasik, Sasha Võ" />
+                               placeholder="Kyle Ellen Corbin-Vister, Sasha VÃµ" />
                     </div>
                 </div>
                 <div class="modal-footer border-secondary">
@@ -70,7 +70,7 @@
     </div>
 }
 
-@* ── Archive Book Modal ──────────────────────────── *@
+@* â”€â”€ Archive Book Modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ *@
 @if (archiveBook != null)
 {
     <div class="modal-backdrop fade show" style="z-index:1050;"></div>
@@ -113,7 +113,7 @@
     </div>
 }
 
-@* ── Bookshelf Grid ──────────────────────────────── *@
+@* â”€â”€ Bookshelf Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ *@
 <div class="bookshelf-grid">
     @foreach (var book in books)
     {
@@ -161,13 +161,13 @@
     }
 </div>
 
-@* ── Loose Chapters ──────────────────────────────── *@
+@* â”€â”€ Loose Chapters â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ *@
 @if (looseChapters.Any())
 {
     <div class="mt-5">
         <h5 class="text-warning mb-2">
             <i class="bi bi-files me-2"></i>Loose Chapters
-            <span class="text-muted small ms-2">— not yet assigned to a book</span>
+            <span class="text-muted small ms-2">â€” not yet assigned to a book</span>
         </h5>
         <div class="loose-chapters-strip">
             @foreach (var c in looseChapters)
@@ -359,7 +359,7 @@
         };
         BookRepo.SaveBook(book);
         newBookOpen = false;
-        // Land directly on the outline — that's where the work begins for a new book.
+        // Land directly on the outline â€” that's where the work begins for a new book.
         Nav.NavigateTo($"/books/{book.Id}/outline");
     }
 

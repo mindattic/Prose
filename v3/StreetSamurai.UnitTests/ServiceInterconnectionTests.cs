@@ -101,8 +101,8 @@ public class BookOutlineSyncTests
 {
     private string rootDir = "";
     private TestPathProviderWithRoot paths = null!;
-    private JsonBookRepository books = null!;
-    private JsonChapterRepository chapters = null!;
+    private BookRepository books = null!;
+    private ChapterRepository chapters = null!;
     private BookOutlineService outline = null!;
 
     [SetUp]
@@ -112,8 +112,8 @@ public class BookOutlineSyncTests
         Directory.CreateDirectory(Path.Combine(rootDir, "books"));
         Directory.CreateDirectory(Path.Combine(rootDir, "chapters"));
         paths = new TestPathProviderWithRoot(rootDir);
-        books = new JsonBookRepository(paths, NullLoggers.For<JsonBookRepository>());
-        chapters = new JsonChapterRepository(paths, NullLoggers.For<JsonChapterRepository>());
+        books = new BookRepository(paths, NullLoggers.For<BookRepository>());
+        chapters = new ChapterRepository(paths, NullLoggers.For<ChapterRepository>());
 
         // BookOutlineService takes LLMVotingService + DatabaseService — for non-LLM tests we
         // construct it via reflection-free path: the methods we exercise (Load + Save) only

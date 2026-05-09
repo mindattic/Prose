@@ -1,4 +1,3 @@
-using System.Text.Json;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -10,14 +9,16 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class TtsEnhancementService
 {
+    private const string RulesKey = "tts.rules";
+
     private readonly ILlmService llm;
-    private readonly IPathProvider paths;
+    private readonly SettingsKvStore kv;
     private TtsRules? rules;
 
-    public TtsEnhancementService(ILlmService llm, IPathProvider paths)
+    public TtsEnhancementService(ILlmService llm, SettingsKvStore kv)
     {
         this.llm = llm;
-        this.paths = paths;
+        this.kv  = kv;
     }
 
     // Tags that ElevenLabs v3 reliably interprets as vocal direction (not read aloud)
@@ -84,18 +85,14 @@ public class TtsEnhancementService
     {
         if (rules != null) return rules;
 
-        var rulesPath = Path.Combine(paths.EngineDataDir, "tts_rules.json");
-        if (!File.Exists(rulesPath)) return null;
-
         try
         {
-            var json = File.ReadAllText(rulesPath);
-            rules = JsonSerializer.Deserialize<TtsRules>(json, JsonDefaults.LlmParsing);
+            rules = kv.Get<TtsRules>(RulesKey);
             return rules;
         }
         catch (Exception ex)
         {
-            Serilog.Log.Warning(ex, "Failed to load TTS rules");
+            Serilog.Log.Warning(ex, "Failed to load TTS rules from Settings[{Key}]", RulesKey);
             return null;
         }
     }

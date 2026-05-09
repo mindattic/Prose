@@ -17,7 +17,6 @@ namespace StreetSamurai.Core.Services;
 public class ConversationalWriterService
 {
     private readonly ILlmService llm;
-    private readonly OllamaClient ollama;
     private readonly WorldStateService worldState;
     private readonly WorldGraphService graph;
     private readonly IBookRepository books;
@@ -27,14 +26,13 @@ public class ConversationalWriterService
     private readonly ILogger<ConversationalWriterService> log;
 
     public ConversationalWriterService(
-        ILlmService llm, OllamaClient ollama,
+        ILlmService llm,
         WorldStateService worldState, WorldGraphService graph,
         IBookRepository books, IChapterRepository chapters,
         BookOutlineService outline, DatabaseService canon,
         ILogger<ConversationalWriterService> log)
     {
         this.llm = llm;
-        this.ollama = ollama;
         this.worldState = worldState;
         this.graph = graph;
         this.books = books;
@@ -45,41 +43,23 @@ public class ConversationalWriterService
     }
 
     /// <summary>
-    /// Streaming variant that pipes the LLM reply token-by-token. Uses Ollama directly
-    /// when reachable for snappy first-token latency; otherwise falls back to a single
-    /// blocking <see cref="ILlmService.GenerateAsync"/> call. Caller should append yielded
-    /// strings to the in-progress assistant message.
+    /// Streaming-shaped variant kept for callers that iterate an
+    /// <see cref="IAsyncEnumerable{T}"/>; emits exactly one chunk because the
+    /// underlying cloud provider call is non-streaming. Caller should append
+    /// the yielded string to the in-progress assistant message.
     /// </summary>
     public async IAsyncEnumerable<string> TalkStreamAsync(TalkTurn turn,
         [EnumeratorCancellation] CancellationToken ct = default)
     {
         var system = BuildSystemPrompt(turn);
         var userPrompt = BuildUserPrompt(turn);
-
-        bool ollamaUp = false;
-        try { ollamaUp = await ollama.IsReachableAsync(ct); } catch { ollamaUp = false; }
-
-        if (ollamaUp)
-        {
-            var messages = new List<(string Role, string Content)>
-            {
-                ("system", system),
-                ("user",   userPrompt),
-            };
-            await foreach (var piece in ollama.StreamChatAsync(messages, ct))
-                yield return piece;
-            yield break;
-        }
-
-        // Fallback: non-streaming through ILlmService.
-        var reply = await GenerateNonStreamingSafelyAsync(system, userPrompt, ct);
-        yield return reply;
+        yield return await GenerateSafelyAsync(system, userPrompt, ct);
     }
 
-    private async Task<string> GenerateNonStreamingSafelyAsync(string system, string userPrompt, CancellationToken ct)
+    private async Task<string> GenerateSafelyAsync(string system, string userPrompt, CancellationToken ct)
     {
         try { return await llm.GenerateAsync(system, userPrompt, 0.55, 2200, ct: ct); }
-        catch (Exception ex) { log.LogWarning(ex, "ConversationalWriterService stream fallback failed"); return $"(Error: {ex.Message})"; }
+        catch (Exception ex) { log.LogWarning(ex, "ConversationalWriterService generation failed"); return $"(Error: {ex.Message})"; }
     }
 
     /// <summary>

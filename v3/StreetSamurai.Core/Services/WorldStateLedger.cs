@@ -41,6 +41,13 @@ public class WorldStateLedger
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         if (ev.AtStoryTime == default) ev.AtStoryTime = DateTime.UtcNow;
+        if (!ev.InWorldValidFrom.HasValue) ev.InWorldValidFrom = ev.AtStoryTime;
+
+        // Close the prior open window for the same (EntityId, AspectKey) so the
+        // ledger maintains [from, to) intervals — point-in-story-time reads can
+        // then index-seek a single row instead of MAX(AtStoryTime <= T) per group.
+        await CloseOpenWindowAsync(db, ev.EntityId, ev.AspectKey, ev.InWorldValidFrom.Value, ct);
+
         db.EntityStateEvents.Add(ev);
         await db.SaveChangesAsync(ct);
         try { OnEventsRecorded?.Invoke(1); } catch { }
@@ -51,14 +58,49 @@ public class WorldStateLedger
     {
         if (events.Count == 0) return 0;
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        foreach (var ev in events)
+
+        // Process per (EntityId, AspectKey) so we close prior windows correctly
+        // even when several events for the same aspect arrive in one batch.
+        var ordered = events
+            .Select((ev, i) =>
+            {
+                if (ev.AtStoryTime == default) ev.AtStoryTime = DateTime.UtcNow;
+                if (!ev.InWorldValidFrom.HasValue) ev.InWorldValidFrom = ev.AtStoryTime;
+                return (ev, i);
+            })
+            .OrderBy(t => t.ev.AtStoryTime).ThenBy(t => t.i)
+            .Select(t => t.ev)
+            .ToList();
+
+        foreach (var ev in ordered)
         {
-            if (ev.AtStoryTime == default) ev.AtStoryTime = DateTime.UtcNow;
+            await CloseOpenWindowAsync(db, ev.EntityId, ev.AspectKey, ev.InWorldValidFrom!.Value, ct);
             db.EntityStateEvents.Add(ev);
         }
         var n = await db.SaveChangesAsync(ct);
         try { OnEventsRecorded?.Invoke(events.Count); } catch { }
         return n;
+    }
+
+    /// <summary>
+    /// Set <see cref="EntityStateEvent.InWorldValidTo"/> on the most recent
+    /// still-open event for (entityId, aspectKey) so that the new event can
+    /// open its own window cleanly. Idempotent: skips when nothing's open or
+    /// when the open row's InWorldValidFrom is already > newFrom (out-of-order
+    /// inserts — those are left alone; we never reach back in time).
+    /// </summary>
+    private static async Task CloseOpenWindowAsync(
+        StreetSamuraiDbContext db, Guid entityId, string aspectKey, DateTime newFrom, CancellationToken ct)
+    {
+        var openRow = await db.EntityStateEvents
+            .Where(e => e.EntityId == entityId
+                     && e.AspectKey == aspectKey
+                     && e.InWorldValidTo == null)
+            .OrderByDescending(e => e.AtStoryTime).ThenByDescending(e => e.Id)
+            .FirstOrDefaultAsync(ct);
+        if (openRow == null) return;
+        if (openRow.InWorldValidFrom.HasValue && openRow.InWorldValidFrom.Value > newFrom) return;
+        openRow.InWorldValidTo = newFrom;
     }
 
     // ── query ─────────────────────────────────────────────────────────────────
@@ -172,21 +214,23 @@ public class WorldStateLedger
             IF OBJECT_ID('dbo.EntityStateEvents','U') IS NULL
             BEGIN
                 CREATE TABLE [dbo].[EntityStateEvents] (
-                    [Id]           BIGINT IDENTITY(1,1) NOT NULL,
-                    [EntityId]     UNIQUEIDENTIFIER NOT NULL,
-                    [AspectKey]    NVARCHAR(200) NOT NULL,
-                    [Verb]         NVARCHAR(20)  NOT NULL,
-                    [OldValue]     NVARCHAR(MAX) NULL,
-                    [NewValue]     NVARCHAR(MAX) NULL,
-                    [Delta]        FLOAT NULL,
-                    [AtStoryTime]  DATETIME2(7)  NOT NULL,
-                    [ChapterId]    UNIQUEIDENTIFIER NULL,
-                    [BeatGuid]     UNIQUEIDENTIFIER NULL,
-                    [Source]       NVARCHAR(200) NOT NULL,
-                    [Confidence]   FLOAT NULL,
-                    [Snippet]      NVARCHAR(MAX) NULL,
-                    [SysStart]     DATETIME2(7) GENERATED ALWAYS AS ROW START NOT NULL DEFAULT SYSUTCDATETIME(),
-                    [SysEnd]       DATETIME2(7) GENERATED ALWAYS AS ROW END   NOT NULL DEFAULT CONVERT(DATETIME2, '9999-12-31 23:59:59.9999999'),
+                    [Id]               BIGINT IDENTITY(1,1) NOT NULL,
+                    [EntityId]         UNIQUEIDENTIFIER NOT NULL,
+                    [AspectKey]        NVARCHAR(200) NOT NULL,
+                    [Verb]             NVARCHAR(20)  NOT NULL,
+                    [OldValue]         NVARCHAR(MAX) NULL,
+                    [NewValue]         NVARCHAR(MAX) NULL,
+                    [Delta]            FLOAT NULL,
+                    [AtStoryTime]      DATETIME2(7)  NOT NULL,
+                    [InWorldValidFrom] DATETIME2(7)  NULL,
+                    [InWorldValidTo]   DATETIME2(7)  NULL,
+                    [ChapterId]        UNIQUEIDENTIFIER NULL,
+                    [BeatGuid]         UNIQUEIDENTIFIER NULL,
+                    [Source]           NVARCHAR(200) NOT NULL,
+                    [Confidence]       FLOAT NULL,
+                    [Snippet]          NVARCHAR(MAX) NULL,
+                    [SysStart]         DATETIME2(7) GENERATED ALWAYS AS ROW START NOT NULL DEFAULT SYSUTCDATETIME(),
+                    [SysEnd]           DATETIME2(7) GENERATED ALWAYS AS ROW END   NOT NULL DEFAULT CONVERT(DATETIME2, '9999-12-31 23:59:59.9999999'),
                     PERIOD FOR SYSTEM_TIME ([SysStart], [SysEnd]),
                     CONSTRAINT [PK_EntityStateEvents] PRIMARY KEY ([Id]),
                     CONSTRAINT [FK_EntityStateEvents_Entities_EntityId]
@@ -201,6 +245,23 @@ public class WorldStateLedger
                     ON [dbo].[EntityStateEvents]([ChapterId]);
                 CREATE INDEX [IX_EntityStateEvents_BeatGuid]
                     ON [dbo].[EntityStateEvents]([BeatGuid]);
+                CREATE INDEX [IX_EntityStateEvents_EntityId_AspectKey_InWorldValidFrom]
+                    ON [dbo].[EntityStateEvents]([EntityId], [AspectKey], [InWorldValidFrom])
+                    INCLUDE ([InWorldValidTo], [NewValue], [Verb]);
+            END
+            ELSE
+            BEGIN
+                -- Idempotent backfill for live DBs that pre-date the bi-temporal columns.
+                IF COL_LENGTH('dbo.EntityStateEvents', 'InWorldValidFrom') IS NULL
+                    ALTER TABLE [dbo].[EntityStateEvents] ADD [InWorldValidFrom] DATETIME2(7) NULL;
+                IF COL_LENGTH('dbo.EntityStateEvents', 'InWorldValidTo') IS NULL
+                    ALTER TABLE [dbo].[EntityStateEvents] ADD [InWorldValidTo]   DATETIME2(7) NULL;
+                IF NOT EXISTS (SELECT 1 FROM sys.indexes
+                               WHERE name = 'IX_EntityStateEvents_EntityId_AspectKey_InWorldValidFrom'
+                                 AND object_id = OBJECT_ID('dbo.EntityStateEvents'))
+                    CREATE INDEX [IX_EntityStateEvents_EntityId_AspectKey_InWorldValidFrom]
+                        ON [dbo].[EntityStateEvents]([EntityId], [AspectKey], [InWorldValidFrom])
+                        INCLUDE ([InWorldValidTo], [NewValue], [Verb]);
             END;
             """;
         await db.Database.ExecuteSqlRawAsync(ddl, ct);
