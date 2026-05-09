@@ -94,6 +94,44 @@
         restoreCursor(key, el);
     }
 
+    // Scroll persistence for arbitrary scrollable containers (not just window).
+    // Pass a selector + storage key; the helpers read/write the element's
+    // scrollTop. Useful for sidebars and beat lists where window scrolling
+    // doesn't apply.
+    function saveScrollOf(selector, key) {
+        try {
+            var el = document.querySelector(selector);
+            if (!el) return;
+            safeSet(key, String(el.scrollTop || 0));
+        } catch { }
+    }
+    function restoreScrollOf(selector, key) {
+        try {
+            var el = document.querySelector(selector);
+            if (!el) return;
+            var raw = safeGet(key);
+            if (raw == null) return;
+            var y = parseInt(raw, 10);
+            if (!isNaN(y)) {
+                requestAnimationFrame(function () { el.scrollTop = y; });
+            }
+        } catch { }
+    }
+    // One-shot listener install — debounced so heavy scroll storms don't
+    // hammer localStorage. Caller provides a unique key; previous installs
+    // on the same selector are not removed (caller responsibility).
+    function autoSaveScrollOf(selector, key) {
+        try {
+            var el = document.querySelector(selector);
+            if (!el) return;
+            var t = null;
+            el.addEventListener('scroll', function () {
+                if (t) clearTimeout(t);
+                t = setTimeout(function () { saveScrollOf(selector, key); }, 250);
+            }, { passive: true });
+        } catch { }
+    }
+
     window.ssState = {
         set: set,
         get: get,
@@ -106,6 +144,9 @@
         captureCursor: captureCursor,
         saveCursorById: saveCursorById,
         restoreCursorById: restoreCursorById,
+        saveScrollOf: saveScrollOf,
+        restoreScrollOf: restoreScrollOf,
+        autoSaveScrollOf: autoSaveScrollOf,
         // Ergonomic helper: save scroll on every page hide so navigations
         // away always have a fresh value to restore.
         installAutoScroll: function (key) {

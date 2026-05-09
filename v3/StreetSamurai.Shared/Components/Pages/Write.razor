@@ -821,6 +821,15 @@
         if (firstRender)
         {
             try { await JS.InvokeVoidAsync("writeInterop.writer.installBeforeUnload"); } catch { }
+            // Persist + restore the sidebar list scroll position. Key keys per
+            // book so a long chapter list resumes its scroll on chapter switch.
+            try
+            {
+                var scrollKey = $"write:side-scroll:{book?.Id ?? "none"}";
+                await JS.InvokeVoidAsync("ssState.autoSaveScrollOf", ".write-side-list", scrollKey);
+                await JS.InvokeVoidAsync("ssState.restoreScrollOf",  ".write-side-list", scrollKey);
+            }
+            catch { }
         }
         if (chapter != null && jsBoundChapterId != chapter.Id)
         {
