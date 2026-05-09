@@ -137,6 +137,19 @@ public class ContinuityService
             .ToList();
     }
 
+    /// <summary>
+    /// Count of CONTRADICTED claims still awaiting resolution. Used by the
+    /// inbox badge in the top nav so users see how many contradictions are
+    /// outstanding without opening /continuity. Resolving a pair (via the
+    /// /continuity page → "Pick A / Pick B / Custom") moves both claims out
+    /// of CONTRADICTED status, dropping the count.
+    /// </summary>
+    public int CountUnresolvedContradictions()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return db.ContinuityClaims.Count(c => c.Status == "CONTRADICTED");
+    }
+
     public List<ContradictionPair> GetContradictions()
     {
         using var db = dbFactory.CreateDbContext();

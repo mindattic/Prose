@@ -281,10 +281,10 @@
                 events.Add(new(b.Id.ToString("N"), "book", b.Title, at, $"/books/{b.Id:N}", null));
         foreach (var c in chapterRows)
             events.Add(new(c.Id.ToString("N"), "chapter", c.Title, c.At,
-                c.BookId.HasValue ? $"/talk/{c.BookId:N}/{c.Id:N}" : $"/talk//{c.Id:N}", null));
+                c.BookId.HasValue ? $"/write/{c.BookId:N}/{c.Id:N}" : $"/write//{c.Id:N}", null));
         foreach (var b in beatRows)
             events.Add(new(b.BeatGuid.ToString("N"), "beat", b.Title, b.At,
-                $"/talk//{b.ChapterId:N}", null));
+                $"/write//{b.ChapterId:N}", null));
 
         // Inject EntityStateEvents in the same time window as the chapter/beat
         // items so the timeline shows authored events alongside extracted

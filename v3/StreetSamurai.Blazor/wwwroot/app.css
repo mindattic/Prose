@@ -1325,6 +1325,53 @@ textarea.auto-grow {
     91%  { opacity: 0.00; }
     100% { opacity: 1.00; }
 }
+/* Each artifact body segment — its own grid container, offset behind the leader so segments
+   overlap. The seg-wave animation sways the whole segment perpendicular to the travel axis,
+   with each segment phase-shifted so the chain moves like a peristaltic wave. */
+.cbg-artifact-seg {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+@keyframes cbg-art-seg-wave {
+    0%, 100% { transform: translate(0, 0); }
+    50%      { transform: translate(var(--swx, 0px), var(--swy, 0px)); }
+}
+
+/* Slug-crawl on the artifact container — translates the whole structure across the screen
+   while it lives, fades in at the start, disintegrates (fade out + slight scale collapse) at the end. */
+@keyframes cbg-artifact-crawl {
+    0%   { transform: translate(0, 0) scale(0.92); opacity: 0; }
+    8%   { transform: translate(calc(var(--cdx, 0px) * 0.03), calc(var(--cdy, 0px) * 0.03)) scale(1.0); opacity: 1; }
+    78%  { transform: translate(calc(var(--cdx, 0px) * 0.78), calc(var(--cdy, 0px) * 0.78)) scale(1.0); opacity: 1; }
+    92%  { transform: translate(calc(var(--cdx, 0px) * 0.94), calc(var(--cdy, 0px) * 0.94)) scale(1.06); opacity: 0.45; }
+    100% { transform: translate(var(--cdx, 0px), var(--cdy, 0px)) scale(0.7); opacity: 0; }
+}
+
+/* Per-cell undulation — each cell slides through a small loop on its own random phase.
+   Neighbors out of phase = the lattice deforms/breathes like an amoeba's body. */
+@keyframes cbg-art-undulate {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25%      { transform: translate(var(--ux, 0px), var(--uy, 0px)) scale(1.03); }
+    50%      { transform: translate(0, calc(var(--uy, 0px) * 0.5)) scale(0.97); }
+    75%      { transform: translate(calc(var(--ux, 0px) * -0.7), 0) scale(1.02); }
+}
+
+/* Heartbeat — radial outward push twice in quick succession (lub-dub), then a long rest.
+   Each cell's --px/--py is its own outward direction, magnitude scaled per ring. */
+@keyframes cbg-art-heartbeat {
+    0%   { transform: translate(0, 0); }
+    /* lub */
+    8%   { transform: translate(var(--px, 0px), var(--py, 0px)); }
+    18%  { transform: translate(0, 0); }
+    /* dub — slightly weaker */
+    26%  { transform: translate(calc(var(--px, 0px) * 0.7), calc(var(--py, 0px) * 0.7)); }
+    36%  { transform: translate(0, 0); }
+    /* rest — diastole */
+    100% { transform: translate(0, 0); }
+}
+
 /* Purposeful one-way drift — each char travels toward --adx1/--ady1 (a shared
    cluster direction with per-glyph spread). The further it gets, the more it
    blurs and fades. Plays once with forwards fill so it vanishes at its destination. */
@@ -1339,6 +1386,171 @@ textarea.auto-grow {
            filter: blur(calc(var(--abl) * 4.0)) opacity(0.08); }
     100% { transform: translate(var(--adx1), var(--ady1));
            filter: blur(calc(var(--abl) * 4.5)) opacity(0); }
+}
+
+/* ── Entity tab neon flicker — broken-neon-sign effect on entity load ─────────
+   Cyberpunk urban-decay vibe. Irregular opacity drops, brief saturation shifts,
+   then a clean settle. Lives ~1.6s, applied to ~25% of tabs by JS at entity load. */
+.entity-tab-flicker {
+    animation: cbg-tab-neon-flicker 1.6s linear forwards;
+}
+/* ── List-item neon flicker — same animation, but LOOPED so it keeps misbehaving
+   until the user clicks the item. Clicking removes the class and the item
+   "fixes itself" on selection. Applied to ~25% of dictionary list items by JS.
+   DISABLED 2026-05-09: nothing applies the class right now. CSS kept here so
+   re-enabling is just uncommenting the JS call in MainLayout. */
+.neon-flicker-loop {
+    animation: cbg-tab-neon-flicker 2.4s linear infinite;
+}
+@keyframes cbg-tab-neon-flicker {
+    0%   { opacity: 1; filter: none; text-shadow: 0 0 6px currentColor; }
+    3%   { opacity: 0.10; filter: brightness(0.5) saturate(0.6); }
+    6%   { opacity: 1;    filter: brightness(1.3) saturate(1.4); text-shadow: 0 0 9px currentColor, 0 0 16px currentColor; }
+    9%   { opacity: 0.05; filter: brightness(0.4); }
+    13%  { opacity: 1;    filter: brightness(1.2); }
+    17%  { opacity: 0.35; }
+    21%  { opacity: 1; }
+    28%  { opacity: 0.06; filter: brightness(0.3) saturate(0.4); }
+    33%  { opacity: 1;    filter: brightness(1.4) saturate(1.5); text-shadow: 0 0 12px currentColor; }
+    40%  { opacity: 0.50; }
+    47%  { opacity: 1; }
+    56%  { opacity: 0.12; filter: brightness(0.5); }
+    62%  { opacity: 1; }
+    74%  { opacity: 0.7;  filter: brightness(1.1); }
+    85%  { opacity: 1;    filter: none; text-shadow: 0 0 4px currentColor; }
+    100% { opacity: 1;    filter: none; text-shadow: none; }
+}
+
+/* ── HEIST — semi-transparent CRT-style file browser, scan-line overlay ─────── */
+.cbg-folder-win {
+    position: absolute;
+    width: 220px;
+    background: rgba(8, 9, 14, 0.32);   /* more transparent — what's underneath shows through clearly */
+    border: 1px solid rgba(120, 130, 150, 0.32);
+    color: rgba(200, 210, 220, 0.88);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.55rem;
+    padding: 8px 10px 10px;
+    pointer-events: none;
+    z-index: 4;
+    overflow: visible;                  /* let ripped folders slide outside the window */
+}
+/* CRT scan lines — two superimposed gratings (1px tight + 2px loose) for organic CRT vibe */
+.cbg-folder-win::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        repeating-linear-gradient(0deg,
+            rgba(140, 170, 200, 0.10) 0px,
+            rgba(140, 170, 200, 0.10) 1px,
+            transparent 1px,
+            transparent 3px),
+        repeating-linear-gradient(0deg,
+            rgba(80, 100, 130, 0.06) 0px,
+            rgba(80, 100, 130, 0.06) 2px,
+            transparent 2px,
+            transparent 7px);
+    z-index: 0;
+    mix-blend-mode: screen;
+}
+.cbg-folder-win .cbg-title {
+    position: relative;
+    z-index: 1;
+    font-size: 0.55rem;
+    color: rgba(180, 195, 210, 0.85);
+    border-bottom: 1px solid rgba(120, 130, 150, 0.30);
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cbg-folder-list {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    overflow: visible;                  /* folders escape the list bounds during the rip */
+}
+/* Folder rectangle with the upper-RIGHT corner cut at 45° (manila-folder tab silhouette) */
+.cbg-folder {
+    position: relative;
+    background: rgba(40, 52, 72, 0.38);
+    border: 1px solid rgba(140, 160, 180, 0.28);
+    color: rgba(210, 220, 235, 0.85);
+    font-size: 0.6rem;
+    padding: 3px 14px 3px 8px;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+    transition: background 0.12s ease, color 0.12s ease, box-shadow 0.12s ease;
+    will-change: transform, opacity;
+}
+.cbg-folder.cbg-folder-highlight {
+    background: rgba(80, 200, 255, 0.28);
+    border-color: rgba(140, 220, 255, 0.85);
+    color: rgba(230, 245, 255, 1);
+    box-shadow: 0 0 9px rgba(80, 200, 255, 0.55);
+}
+/* The ripping folder must lift above its siblings AND the window so it visibly slides
+   past the right edge instead of getting clipped underneath. */
+.cbg-folder.cbg-folder-ripping {
+    z-index: 5;
+}
+/* Sleek single-motion extraction. The transform interpolates ONLY between 0% and 100%, so
+   the slide is one continuous easing curve with no velocity changes. Opacity shimmer lives on
+   intermediate keyframes that omit transform — they don't perturb the motion. */
+@keyframes cbg-folder-rip {
+    0%   { transform: translate(0, 0); opacity: 1; filter: blur(0); }
+    24%  { opacity: 0.55; }
+    40%  { opacity: 0.95; }
+    100% { transform: translate(var(--rx, 240px), 0); opacity: 0; filter: blur(1.2px); }
+}
+
+/* ── Morse-code glowing dot — pulses or shifts at cheat-code speed, with blur ─ */
+/* Outer "orbit" container — drifts very slowly across the sky like a satellite.
+   The dot inside is positioned at 0,0 so its shift-mode transform composes with the drift. */
+.cbg-morse-orbit {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    z-index: 3;
+    will-change: transform;
+}
+@keyframes cbg-morse-orbit-drift {
+    from { transform: translate(0, 0); }
+    to   { transform: translate(var(--ox, 0), var(--oy, 0)); }
+}
+.cbg-morse-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 3;
+    background: rgba(var(--mc, 255, 255, 255), 0.18);
+    box-shadow: 0 0 2px rgba(var(--mc, 255, 255, 255), 0.25);
+    transform: translate(0, 0);
+    /* Soft halo blur — the dot is fuzzy at the edges so fast shifts smear like motion blur */
+    filter: blur(0.5px);
+    will-change: transform, background, box-shadow, filter;
+}
+.cbg-morse-dot.cbg-morse-on {
+    background: rgba(var(--mc, 255, 255, 255), 1);
+    box-shadow:
+        0 0 5px  rgba(var(--mc, 255, 255, 255), 1),
+        0 0 12px rgba(var(--mc, 255, 255, 255), 0.85),
+        0 0 24px rgba(var(--mc, 255, 255, 255), 0.50);
+    /* Stronger blur when lit so fast keystrokes look like a glowing trail */
+    filter: blur(0.9px);
 }
 
 /* ── Network connection attempts ───────────────────────────────────────── */
@@ -1357,6 +1569,16 @@ textarea.auto-grow {
 @keyframes cbg-net-in {
     from { opacity: 0; transform: translate(-50%, -50%) scale(0.7); }
     to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+/* Three-blink success signal — wire canvas + both nodes pulse in lock-step before fading.
+   Six opacity flips over the duration: dim, restore, dim, restore, dim, restore. */
+@keyframes cbg-net-success-blink {
+    0%, 100% { opacity: 1; }
+    16.66%   { opacity: 0.08; }
+    33.33%   { opacity: 1; }
+    50%      { opacity: 0.08; }
+    66.66%   { opacity: 1; }
+    83.33%   { opacity: 0.08; }
 }
 .cbg-net-fail {
     position: absolute;
@@ -1400,6 +1622,49 @@ textarea.auto-grow {
     font-size: 0.55rem;
     transform: translate(-50%, -50%);
     opacity: 0.9;
+}
+
+/* Network interception — mean character swarms at every successful corner / arrival.
+   Each wasp glyph cycles through 4 random waypoints so the cluster looks chaotic, not synchronized. */
+.cbg-net-wasp {
+    position: absolute;
+    pointer-events: none;
+    z-index: 4;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 0 4px currentColor, 0 0 9px currentColor;
+    transform: translate(-50%, -50%);
+    animation: cbg-net-wasp-buzz var(--bd, 130ms) ease-in-out infinite;
+}
+@keyframes cbg-net-wasp-buzz {
+    0%   { transform: translate(-50%, -50%); }
+    20%  { transform: translate(calc(-50% + var(--bx1)), calc(-50% + var(--by1))); }
+    40%  { transform: translate(calc(-50% + var(--bx2)), calc(-50% + var(--by2))); }
+    60%  { transform: translate(calc(-50% + var(--bx3)), calc(-50% + var(--by3))); }
+    80%  { transform: translate(calc(-50% + var(--bx4)), calc(-50% + var(--by4))); }
+    100% { transform: translate(-50%, -50%); }
+}
+
+/* Sharp-turn spark — short bright particle that flies off the corner and fades */
+.cbg-net-spark {
+    position: absolute;
+    pointer-events: none;
+    z-index: 4;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 50%;
+    box-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
+    transform: translate(-50%, -50%);
+    animation: cbg-net-spark-fly 320ms ease-out forwards;
+}
+@keyframes cbg-net-spark-fly {
+    0%   { transform: translate(-50%, -50%);
+           opacity: 1; }
+    70%  { opacity: 0.85; }
+    100% { transform: translate(calc(-50% + var(--sx)), calc(-50% + var(--sy)));
+           opacity: 0; }
 }
 
 /* ── Corporate memo intercept ──────────────────────────────────────────── */

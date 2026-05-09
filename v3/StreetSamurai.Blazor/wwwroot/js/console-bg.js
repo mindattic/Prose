@@ -1,6 +1,56 @@
 window.consoleBg = (function () {
     'use strict';
 
+    // ════════════════════════════════════════════════════════════════════════
+    // EFFECT NAME REGISTRY
+    // ════════════════════════════════════════════════════════════════════════
+    // All console-bg effects have proper names. Refer to them by these.
+    //
+    // TOP-LEVEL EFFECTS (each has FX_*/RATE_* in the tick dispatcher):
+    //   CRASH      — fatal-error popup           (spawnError)
+    //   TREMOR     — warning popup               (spawnWarning)
+    //   LEAK       — leaked corp memo            (spawnMemo)
+    //   SCHEMATIC  — geometric schematic window  (spawnGeoWindow)
+    //   CASCADE    — burst of console windows    (spawnCascade)
+    //   ARTIFACT   — floating glyph cluster      (spawnArtifact)
+    //   FRAGMENT   — floating code fragment      (spawnFrag)
+    //   TRACE      — Tron-cycle network wire     (spawnNetConnect)
+    //   PULSAR     — Morse-code glowing dot      (spawnMorseDot)
+    //   HEIST      — folder-rip file extraction  (spawnFolderRip)
+    //   PREDATOR   — artifact-hunting swarm      (spawnArtifactPredator)
+    //   TERMINAL   — generic console window      (spawnWindow)
+    //
+    // ARTIFACT BEHAVIOR VARIANTS (rolled per spawn — see ART_VARIANTS):
+    //   SCATTER    — random blob, all glyphs drift one direction (original)
+    //   LATTICE    — Fibonacci grid, whole lattice drifts with corner-wave delay
+    //   ANCHOR     — stationary grid, glitches in place, leading edge emits feelers
+    //   SLUG       — single grid crawls + per-cell undulation
+    //   CENTIPEDE  — multi-segment chain, peristaltic wave + leader feelers
+    //   PULSE      — concentric Fibonacci rings, lub-dub heartbeat radiating outward
+    //   WANDERER   — small grid walks the screen, pauses to "look around"
+    //
+    // PULSAR (Morse) MODE VARIANTS:
+    //   BLINK      — classic on/off pulse mode (90% of spawns)
+    //   SHIFT      — slides cardinal directions, color-swaps each symbol (10%)
+    //
+    // TRACE (network wire) SUB-BEHAVIORS:
+    //   ARC        — sharp-turn spark burst at corners (~30% of corners)
+    //   ACK        — three-blink success signal then synced fade-out
+    //   SEVER      — direction-aligned CONNECTION-LOST message on failure
+    //
+    // HEIST (folder rip) PHASES:
+    //   HIGHLIGHT  — cyan selection glow on adjacent run of files
+    //   EXTRACT    — sleek slide-right exit with shimmer + fade (per-file stagger)
+    //   DISSOLVE   — window fade-out tied to extract completion
+    //
+    // PREDATOR sub-behaviors:
+    //   STALK      — off-screen swarm origin, homes on prey
+    //   SCAN       — prey detection cone (max forward, min behind)
+    //   FLEE       — prey panic-redirect of crawl vector away from swarm
+    //   DEVOUR     — cell consume-and-convert (cell adopts wasp glyph then dissolves)
+    //   DISPERSE   — wasps scatter and fade after kill
+    // ════════════════════════════════════════════════════════════════════════
+
     // ── Window title bar labels ─────────────────────────────────────────────
     var TITLES = [
         'proc/8812',  'proc/9144',  'proc/3301',  'proc/7712',  'proc/4492',
@@ -2547,6 +2597,17 @@ window.consoleBg = (function () {
         'for (int pass = 0; pass < ENCRYPT_PASSES; pass++) {\n    for (int blk = 0; blk < data.BlockCount; blk++) {\n        var plain  = data.ReadBlock(blk);\n        var iv     = rng.NextBytes(IV_LEN);\n        var cipher = aes.Encrypt(plain, iv, key);\n        var tag    = hmac.Sign(cipher, authKey);\n        out.WriteBlock(blk, iv, cipher, tag);\n        if (blk % PROGRESS_INTERVAL == 0) {\n            progress?.Report(\n                (pass * data.BlockCount + blk) /\n                (float)(ENCRYPT_PASSES * data.BlockCount));\n        }\n    }\n    key = kdf.Derive(key, salt, 1);\n}',
         'while (socket.State == WebSocketState.Open) {\n    var result = await socket.ReceiveAsync(\n        buffer, cts.Token);\n    if (result.MessageType == Close) {\n        await socket.CloseAsync(\n            WebSocketCloseStatus.NormalClosure,\n            "bye", cts.Token);\n        break;\n    }\n    accumulated.Write(\n        buffer.Array, 0, result.Count);\n    if (result.EndOfMessage) {\n        var msg = Encoding.UTF8.GetString(\n            accumulated.ToArray());\n        await dispatcher.HandleAsync(msg);\n        accumulated.SetLength(0);\n    }\n}',
         'Task.Run(async () => {\n    var sema = new SemaphoreSlim(\n        MAX_CONCURRENT_OPS);\n    var tasks = items.Select(async item => {\n        await sema.WaitAsync(cts.Token);\n        try {\n            await processor.ProcessAsync(\n                item, cts.Token);\n            Interlocked.Increment(ref done);\n        } catch (Exception ex) {\n            log.Error(\n                $"process {item.Id}: {ex.Message}");\n            Interlocked.Increment(ref failed);\n        } finally {\n            sema.Release();\n        }\n    });\n    await Task.WhenAll(tasks);\n    log.Info($"done={done} failed={failed}");\n});',
+        // ── 10 additional fragments ────────────────────────────────────────
+        'while (raft.Role == RaftRole.Candidate) {\n    var votes = 1;\n    foreach (var peer in cluster.Peers) {\n        var resp = await peer.RequestVoteAsync(\n            term, raft.LogIndex, raft.LogTerm,\n            cts.Token);\n        if (resp.VoteGranted) votes++;\n        if (resp.Term > term) {\n            raft.StepDown(resp.Term);\n            break;\n        }\n    }\n    if (votes > cluster.Peers.Count / 2) {\n        raft.PromoteToLeader();\n        log.Info($"leader elected term={term}");\n        break;\n    }\n    await Task.Delay(rng.Next(150, 300));\n}',
+        'foreach (var span in trace.Spans\n    .Where(s => s.Duration > SLOW_THRESHOLD)\n    .OrderByDescending(s => s.Duration)) {\n    log.Warn(\n        $"slow span {span.OperationName} " +\n        $"duration={span.Duration.TotalMilliseconds}ms");\n    foreach (var tag in span.Tags) {\n        log.Debug($"  {tag.Key}={tag.Value}");\n    }\n    if (span.Duration > KILL_THRESHOLD) {\n        await alerts.PageOnCallAsync(\n            span, AlertSeverity.High);\n        break;\n    }\n}',
+        'if (queue.Count > BACKPRESSURE_HIGH) {\n    if (!backpressure.IsActive) {\n        backpressure.Engage();\n        log.Warn("backpressure engaged");\n    }\n    await Task.Delay(\n        Math.Min(queue.Count, MAX_BP_DELAY));\n} else if (queue.Count < BACKPRESSURE_LOW &&\n           backpressure.IsActive) {\n    backpressure.Release();\n    log.Info("backpressure released");\n}\nfor (int i = 0; i < BATCH_SIZE && queue.TryDequeue(out var item); i++) {\n    await sink.WriteAsync(item, cts.Token);\n}',
+        'var ms = JsonSerializer.Deserialize<MerkleSnapshot>(blob);\nfor (int level = 0; level < ms.Levels.Length; level++) {\n    var pairs = ms.Levels[level];\n    for (int i = 0; i < pairs.Length; i += 2) {\n        var combined = sha256.ComputeHash(\n            pairs[i].Concat(\n                i + 1 < pairs.Length\n                    ? pairs[i+1]\n                    : pairs[i]).ToArray());\n        if (level + 1 < ms.Levels.Length &&\n            !combined.SequenceEqual(\n                ms.Levels[level+1][i/2])) {\n            throw new MerkleProofException(\n                $"hash mismatch L{level}");\n        }\n    }\n}',
+        'await using var conn = await pool.AcquireAsync(cts.Token);\nawait using var tx = await conn.BeginTransactionAsync(\n    IsolationLevel.Serializable, cts.Token);\ntry {\n    foreach (var op in batch) {\n        await op.ApplyAsync(conn, cts.Token);\n        if (cts.IsCancellationRequested) break;\n    }\n    if (await conflictDetector.HasConflictsAsync(conn)) {\n        await tx.RollbackAsync(cts.Token);\n        throw new SerializationException("write skew");\n    }\n    await tx.CommitAsync(cts.Token);\n    metrics.TxCommitted++;\n} catch (Exception ex) {\n    await tx.RollbackAsync(cts.Token);\n    metrics.TxRolledBack++;\n    throw;\n}',
+        'for (int z = 0; z < volume.D; z++) {\n    for (int y = 0; y < volume.H; y++) {\n        for (int x = 0; x < volume.W; x++) {\n            var v = volume[x, y, z];\n            if (v < ISO_THRESHOLD) continue;\n            var n = ComputeNormal(volume, x, y, z);\n            var col = palette.Sample(\n                Vector3.Dot(n, lightDir));\n            framebuffer.Plot(x, y, col,\n                ISO_THRESHOLD - v + DEPTH_BIAS * z);\n        }\n    }\n    if (z % SCANLINE_REPORT == 0)\n        progress?.Report((float)z / volume.D);\n}',
+        'using var batch = bus.CreateBatch();\nforeach (var ev in pending) {\n    if (!batch.TryAdd(ev.Serialize())) {\n        await bus.PublishAsync(batch, cts.Token);\n        batch.Reset();\n        if (!batch.TryAdd(ev.Serialize())) {\n            log.Error(\n                $"event {ev.Id} too large — dropped");\n            metrics.OversizedDropped++;\n            continue;\n        }\n    }\n}\nif (batch.Count > 0) {\n    await bus.PublishAsync(batch, cts.Token);\n    metrics.BatchedPublish += batch.Count;\n}',
+        'while (model.GradientNorm > CONVERGE_TOL &&\n       step < MAX_STEPS) {\n    var grad = await loss.BackwardAsync(\n        model, batch, cts.Token);\n    if (clipNorm > 0)\n        grad.ClipByNorm(clipNorm);\n    model.Apply(grad, lr);\n    if (step % EVAL_INTERVAL == 0) {\n        var valLoss = await Evaluate(model, valSet);\n        if (valLoss > prevValLoss + EARLY_STOP_DELTA)\n            patience--;\n        else { prevValLoss = valLoss; patience = MAX_PATIENCE; }\n        if (patience <= 0) {\n            log.Info($"early stop step={step}");\n            break;\n        }\n    }\n    step++;\n}',
+        'var holds = vault.AcquireMany(\n    keys.Select(k => new HoldSpec(\n        k, HoldKind.Exclusive, HOLD_TIMEOUT))\n        .ToList());\nif (holds.Any(h => !h.Acquired)) {\n    var miss = holds.First(h => !h.Acquired);\n    log.Warn($"hold denied: {miss.Key} — {miss.Reason}");\n    await Task.WhenAll(holds.Where(h => h.Acquired)\n        .Select(h => h.ReleaseAsync()));\n    throw new HoldContentionException(miss.Key);\n}\ntry {\n    foreach (var h in holds)\n        await mutator.ApplyAsync(h.Resource);\n} finally {\n    foreach (var h in holds) await h.ReleaseAsync();\n}',
+        'foreach (var bucket in shard.Buckets\n    .OrderByDescending(b => b.AccessCount)) {\n    if (bucket.HotKeys.Count == 0) continue;\n    var promote = bucket.HotKeys\n        .Where(k => k.Hits >= PROMOTE_THRESHOLD)\n        .Take(PROMOTE_BATCH).ToList();\n    foreach (var k in promote) {\n        try {\n            cache.L1.Insert(k.Id, k.Value);\n            bucket.HotKeys.Remove(k);\n            metrics.Promoted++;\n        } catch (CacheFullException) {\n            cache.L1.Evict(EVICT_FRACTION);\n            log.Debug($"L1 evict @{cache.L1.UsedB}B");\n            break;\n        }\n    }\n}',
         'for (int i = 0; i < bitmap.Width; i++) {\n    for (int j = 0; j < bitmap.Height; j++) {\n        int idx = (j * bitmap.Stride + i * 4);\n        float lum = (\n            pixels[idx + 0] * 0.2126f +\n            pixels[idx + 1] * 0.7152f +\n            pixels[idx + 2] * 0.0722f) / 255f;\n        float alpha = tornEdge.Sample(i, j);\n        pixels[idx + 3] = (byte)(\n            pixels[idx + 3] * alpha *\n            (0.6f + lum * 0.4f));\n    }\n}',
         'switch (packet.Protocol) {\n    case Protocol.Tcp:\n        if (!tcp.IsValidChecksum(packet)) {\n            dropped++; break;\n        }\n        switch (tcp.Flags) {\n            case TcpFlags.Syn:\n                connTable.OpenHalf(packet);\n                break;\n            case TcpFlags.SynAck:\n                connTable.Complete(packet);\n                break;\n            case TcpFlags.Fin:\n            case TcpFlags.Rst:\n                connTable.Close(packet);\n                break;\n        }\n        break;\n    case Protocol.Udp:\n        udp.Route(packet);\n        break;\n    case Protocol.Icmp:\n        if (firewall.AllowIcmp) icmp.Handle(packet);\n        break;\n}',
         'while (compressor.HasInput) {\n    var block = compressor.ReadInput(BLOCK_SIZE);\n    var lz4   = Lz4.Compress(block);\n    if (lz4.Length >= block.Length) {\n        out.WriteUncompressed(block);\n        stats.Uncompressed += block.Length;\n    } else {\n        out.WriteCompressed(lz4);\n        stats.Compressed   += block.Length;\n        stats.Saved        += block.Length - lz4.Length;\n    }\n    if (out.Position % FLUSH_INTERVAL == 0) {\n        await out.FlushAsync();\n    }\n}\nlog.Info($"ratio={stats.Ratio:F2} saved={stats.Saved}B");',
@@ -3102,20 +3163,94 @@ window.consoleBg = (function () {
     function pick(arr)  { return arr[rand(0, arr.length - 1)]; }
     function getHost()  { return document.querySelector('.console-bg-host'); }
 
+    // Cyberpunk neon-flicker on entity tabs — invoked from EntityDetail.razor after the
+    // entity loads. ~25% of the visible tabs briefly flicker like a damaged neon sign,
+    // then settle. Represents urban decay, not a UI bug.
+    window.cbgEntityFlickerTabs = function () {
+        var tabs = document.querySelectorAll('.entity-tabs .nav-link');
+        if (!tabs.length) return;
+        for (var i = 0; i < tabs.length; i++) {
+            if (Math.random() < 0.25) {
+                (function (el) {
+                    el.classList.remove('entity-tab-flicker');
+                    void el.offsetHeight; // force restart if class was already applied
+                    el.classList.add('entity-tab-flicker');
+                    setTimeout(function () { el.classList.remove('entity-tab-flicker'); }, 1700);
+                })(tabs[i]);
+            }
+        }
+    };
+
+    // Continuous neon flicker on dictionary list items. Picks ~25% of visible
+    // .list-item rows in any .dict-items container and loops the broken-neon
+    // animation on them indefinitely. Clicking a flickering item REMOVES the
+    // class — the item "fixes itself" on selection, the rest keep glitching.
+    // Idempotent: per-item dataset flag prevents re-randomising touched items
+    // (so a clicked-fixed item stays fixed even when Blazor re-renders the list,
+    // and an actively-flickering item doesn't restart its animation cycle).
+    //
+    // DISABLED 2026-05-09 — kept for later re-enablement. Function is callable
+    // but no caller invokes it; MainLayout's invocation site is commented out.
+    // To restore, uncomment the call in MainLayout.OnAfterRenderAsync.
+    window.cbgStartListItemFlicker = function () {
+        function apply() {
+            var items = document.querySelectorAll('.dict-items .list-item');
+            for (var i = 0; i < items.length; i++) {
+                var el = items[i];
+                if (el.dataset.flickerSet === '1') continue;
+                el.dataset.flickerSet = '1';
+                if (Math.random() < 0.25) el.classList.add('neon-flicker-loop');
+            }
+        }
+        if (window.__cbgListFlickerInited) { apply(); return; }
+        window.__cbgListFlickerInited = true;
+
+        // One delegated click handler covers every .dict-items list — Blazor
+        // re-renders rows but the document-level listener stays bound for the
+        // lifetime of the page.
+        document.addEventListener('click', function (e) {
+            var item = e.target && e.target.closest && e.target.closest('.dict-items .list-item');
+            if (item) {
+                item.classList.remove('neon-flicker-loop');
+                item.dataset.flickerSet = 'fixed';
+            }
+        });
+
+        apply();
+        // Re-apply periodically so newly-rendered rows (after a filter / save /
+        // page-switch) get their share of broken neon.
+        setInterval(apply, 2500);
+    };
+
     // Returns the bottom edge of .board-grid as a % of viewport height, +2% buffer.
     // Spawn positions use this as their minimum top value so nothing overlaps tiles.
     // randTop: unrestricted — effects can spawn anywhere including over tiles
     function randTop(lo, hi) { return rand(lo, hi); }
 
-    // Try 4 random positions, pick the one with the least overlap against existing large overlays.
-    // estW/estH are pixel estimates of the element being spawned.
+    // ── Tile keepout zone — quadrilateral covering the dashboard tile container ──
+    // No effect should spawn inside this rect. Computed live each call so it adapts to
+    // resizes / responsive layout / page changes (.home-content on Home, .board-grid elsewhere).
+    function getKeepoutRects() {
+        var sel = document.querySelectorAll('.home-content, .board-grid');
+        var rects = [];
+        for (var i = 0; i < sel.length; i++) {
+            var r = sel[i].getBoundingClientRect();
+            if (r.width > 8 && r.height > 8) rects.push(r);
+        }
+        return rects;
+    }
+
+    // Try several random positions, pick the one with the least overlap against existing large
+    // overlays AND the tile keepout rect. estW/estH are pixel estimates of the element. Tile
+    // overlap is weighted heavily so the placer avoids it unless every option is bad.
     function bestPos(host, estW, estH, xMin, xMax, yMin, yMax) {
         var hw = window.innerWidth, hh = window.innerHeight;
         var sel = host.querySelectorAll('.cbg-win,.cbg-err-popup,.cbg-warn-popup,.cbg-memo');
         var rects = [];
         for (var i = 0; i < sel.length; i++) rects.push(sel[i].getBoundingClientRect());
+        var keepout = getKeepoutRects();
         var bx = rand(xMin, xMax), by = rand(yMin, yMax), bov = Infinity;
-        for (var t = 0; t < 4; t++) {
+        for (var t = 0; t < 8; t++) {
             var cx = rand(xMin, xMax), cy = rand(yMin, yMax);
             var px = (cx / 100) * hw, py = (cy / 100) * hh;
             var ov = 0;
@@ -3125,7 +3260,40 @@ window.consoleBg = (function () {
                 var oy = Math.max(0, Math.min(py + estH, rc.bottom) - Math.max(py, rc.top));
                 ov += ox * oy;
             }
+            // Tile keepout — weighted 4× so a partial keepout overlap is worse than a window overlap
+            for (var k = 0; k < keepout.length; k++) {
+                var kc = keepout[k];
+                var kox = Math.max(0, Math.min(px + estW, kc.right)  - Math.max(px, kc.left));
+                var koy = Math.max(0, Math.min(py + estH, kc.bottom) - Math.max(py, kc.top));
+                ov += kox * koy * 4;
+            }
             if (ov < bov) { bov = ov; bx = cx; by = cy; }
+            if (ov === 0) return [cx, cy]; // perfect — no overlap, exit early
+        }
+        return [bx, by];
+    }
+
+    // Pick a random viewport-% position for a small effect (artifact / fragment / morse-dot)
+    // that doesn't fall inside the tile keepout zone. estW/estH are pixel estimates. If no
+    // clean spot is found in `tries` attempts, returns the least-overlapping candidate.
+    function safePos(estW, estH, xMin, xMax, yMin, yMax, tries) {
+        tries = tries || 10;
+        var hw = window.innerWidth, hh = window.innerHeight;
+        var keepout = getKeepoutRects();
+        if (keepout.length === 0) return [rand(xMin, xMax), rand(yMin, yMax)];
+        var bx = rand(xMin, xMax), by = rand(yMin, yMax), bov = Infinity;
+        for (var t = 0; t < tries; t++) {
+            var cx = rand(xMin, xMax), cy = rand(yMin, yMax);
+            var px = (cx / 100) * hw, py = (cy / 100) * hh;
+            var ov = 0;
+            for (var k = 0; k < keepout.length; k++) {
+                var kc = keepout[k];
+                var ox = Math.max(0, Math.min(px + estW, kc.right)  - Math.max(px, kc.left));
+                var oy = Math.max(0, Math.min(py + estH, kc.bottom) - Math.max(py, kc.top));
+                ov += ox * oy;
+            }
+            if (ov < bov) { bov = ov; bx = cx; by = cy; }
+            if (ov === 0) return [cx, cy];
         }
         return [bx, by];
     }
@@ -3305,8 +3473,10 @@ window.consoleBg = (function () {
 
         var el = document.createElement('div');
         el.className = 'cbg-frag';
-        el.style.left = rand(-4, 94) + '%';
-        el.style.top  = randTop(2, 94) + '%';
+        // Code fragments are ~280×120 estimated — pick a position that avoids the tile keepout
+        var fp = safePos(280, 120, -4, 94, 2, 94);
+        el.style.left = fp[0] + '%';
+        el.style.top  = fp[1] + '%';
         host.appendChild(el);
 
         var text = pick(FRAGS);
@@ -3343,9 +3513,213 @@ window.consoleBg = (function () {
         antiprism:{ label:'square antiprism',  verts:[[1,1,0],[0,1,1],[-1,1,0],[0,1,-1],[0.707,-1,0.707],[-0.707,-1,0.707],[-0.707,-1,-0.707],[0.707,-1,-0.707]], edges:[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[0,7],[1,4],[1,5],[2,5],[2,6],[3,6],[3,7]] },
         pyramid:  { label:'square pyramid',    verts:[[0,1.2,0],[1,-0.5,1],[-1,-0.5,1],[-1,-0.5,-1],[1,-0.5,-1]], edges:[[0,1],[0,2],[0,3],[0,4],[1,2],[2,3],[3,4],[4,1]] },
         pentaprism:{ label:'pentagonal prism', verts:[[1,1,0],[0.309,1,0.951],[-0.809,1,0.588],[-0.809,1,-0.588],[0.309,1,-0.951],[1,-1,0],[0.309,-1,0.951],[-0.809,-1,0.588],[-0.809,-1,-0.588],[0.309,-1,-0.951]], edges:[[0,1],[1,2],[2,3],[3,4],[4,0],[5,6],[6,7],[7,8],[8,9],[9,5],[0,5],[1,6],[2,7],[3,8],[4,9]] },
-        dodeca:   { label:'dodecahedron',      verts:[[1,1,1],[1,1,-1],[1,-1,1],[1,-1,-1],[-1,1,1],[-1,1,-1],[-1,-1,1],[-1,-1,-1],[0,0.618,1.618],[0,0.618,-1.618],[0,-0.618,1.618],[0,-0.618,-1.618],[0.618,1.618,0],[0.618,-1.618,0],[-0.618,1.618,0],[-0.618,-1.618,0],[1.618,0,0.618],[1.618,0,-0.618],[-1.618,0,0.618],[-1.618,0,-0.618]], edges:[[0,8],[0,12],[0,16],[1,9],[1,12],[1,17],[2,10],[2,13],[2,16],[3,11],[3,13],[3,17],[4,8],[4,14],[4,18],[5,9],[5,14],[5,19],[6,10],[6,15],[6,18],[7,11],[7,15],[7,19],[8,10],[9,11],[12,14],[13,15],[16,17],[18,19]] }
+        dodeca:   { label:'dodecahedron',      verts:[[1,1,1],[1,1,-1],[1,-1,1],[1,-1,-1],[-1,1,1],[-1,1,-1],[-1,-1,1],[-1,-1,-1],[0,0.618,1.618],[0,0.618,-1.618],[0,-0.618,1.618],[0,-0.618,-1.618],[0.618,1.618,0],[0.618,-1.618,0],[-0.618,1.618,0],[-0.618,-1.618,0],[1.618,0,0.618],[1.618,0,-0.618],[-1.618,0,0.618],[-1.618,0,-0.618]], edges:[[0,8],[0,12],[0,16],[1,9],[1,12],[1,17],[2,10],[2,13],[2,16],[3,11],[3,13],[3,17],[4,8],[4,14],[4,18],[5,9],[5,14],[5,19],[6,10],[6,15],[6,18],[7,11],[7,15],[7,19],[8,10],[9,11],[12,14],[13,15],[16,17],[18,19]] },
+        // ── 10 additional polyhedra ────────────────────────────────────────────
+        hexprism:    { label:'hexagonal prism',         verts:[[1,1,0],[0.5,1,0.866],[-0.5,1,0.866],[-1,1,0],[-0.5,1,-0.866],[0.5,1,-0.866],[1,-1,0],[0.5,-1,0.866],[-0.5,-1,0.866],[-1,-1,0],[-0.5,-1,-0.866],[0.5,-1,-0.866]], edges:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,0],[6,7],[7,8],[8,9],[9,10],[10,11],[11,6],[0,6],[1,7],[2,8],[3,9],[4,10],[5,11]] },
+        hexanti:     { label:'hexagonal antiprism',     verts:[[1,1,0],[0.5,1,0.866],[-0.5,1,0.866],[-1,1,0],[-0.5,1,-0.866],[0.5,1,-0.866],[0.866,-1,0.5],[0,-1,1],[-0.866,-1,0.5],[-0.866,-1,-0.5],[0,-1,-1],[0.866,-1,-0.5]], edges:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,0],[6,7],[7,8],[8,9],[9,10],[10,11],[11,6],[0,6],[0,11],[1,6],[1,7],[2,7],[2,8],[3,8],[3,9],[4,9],[4,10],[5,10],[5,11]] },
+        pentabipy:   { label:'pentagonal bipyramid',    verts:[[0,1,0],[0,-1,0],[1,0,0],[0.309,0,0.951],[-0.809,0,0.588],[-0.809,0,-0.588],[0.309,0,-0.951]], edges:[[0,2],[0,3],[0,4],[0,5],[0,6],[1,2],[1,3],[1,4],[1,5],[1,6],[2,3],[3,4],[4,5],[5,6],[6,2]] },
+        tribipy:     { label:'triangular bipyramid',    verts:[[0,1,0],[0,-1,0],[1,0,0],[-0.5,0,0.866],[-0.5,0,-0.866]], edges:[[0,2],[0,3],[0,4],[1,2],[1,3],[1,4],[2,3],[3,4],[4,2]] },
+        trunctetra:  { label:'truncated tetrahedron',   verts:[[0.333,1,1],[1,0.333,1],[1,1,0.333],[-0.333,-1,1],[-1,-0.333,1],[-1,-1,0.333],[-0.333,1,-1],[1,-0.333,-1],[1,-1,-0.333],[-1,0.333,-1],[-1,1,-0.333],[0.333,-1,-1]], edges:[[0,1],[1,2],[2,0],[3,4],[4,5],[5,3],[6,7],[7,8],[8,6],[9,10],[10,11],[11,9],[0,2],[2,6],[6,10],[10,0],[1,2],[1,7],[7,8],[8,1],[3,5],[5,9],[9,11],[11,3]] },
+        octapyramid: { label:'pyramid on octahedron',   verts:[[0,1.6,0],[0,0.5,0],[0,-0.5,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]], edges:[[0,3],[0,4],[0,5],[0,6],[1,3],[1,4],[1,5],[1,6],[2,3],[2,4],[2,5],[2,6],[3,5],[5,4],[4,6],[6,3],[0,1]] },
+        rhombdo:     { label:'rhombic dodecahedron',    verts:[[1,1,1],[1,1,-1],[1,-1,1],[1,-1,-1],[-1,1,1],[-1,1,-1],[-1,-1,1],[-1,-1,-1],[2,0,0],[-2,0,0],[0,2,0],[0,-2,0],[0,0,2],[0,0,-2]], edges:[[0,8],[1,8],[2,8],[3,8],[4,9],[5,9],[6,9],[7,9],[0,10],[1,10],[4,10],[5,10],[2,11],[3,11],[6,11],[7,11],[0,12],[2,12],[4,12],[6,12],[1,13],[3,13],[5,13],[7,13]] },
+        frustum:     { label:'square frustum',          verts:[[0.5,1,0.5],[-0.5,1,0.5],[-0.5,1,-0.5],[0.5,1,-0.5],[1,-1,1],[-1,-1,1],[-1,-1,-1],[1,-1,-1]], edges:[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]] },
+        rhombpara:   { label:'rhombic parallelepiped',  verts:[[1,1,0.5],[-0.5,1,1],[-1,1,-0.5],[0.5,1,-1],[1,-1,0.5],[-0.5,-1,1],[-1,-1,-0.5],[0.5,-1,-1]], edges:[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]] },
+        starbipy:    { label:'star tetrahedron pair',   verts:[[1.4,0,0],[-0.7,0,1.21],[-0.7,0,-1.21],[0,1.4,0],[0,-1.4,0],[1.21,0,-0.7],[-0.7,1.21,0],[-0.7,-1.21,0]], edges:[[0,3],[0,4],[1,3],[1,4],[2,3],[2,4],[0,1],[1,2],[2,0],[5,6],[6,7],[7,5],[5,3],[5,4],[6,3],[6,4],[7,3],[7,4]] }
     };
-    var GEO_KEYS = ['tetra','cube','octa','icosa','flower','metatron','prism','stella','cubocta','antiprism','vesica','spiral','lissajous','star5','torus','helix','dodeca','pyramid','pentaprism','rose','cardioid','asteroid','epicycloid','web'];
+
+    // ── Generated polyhedra (n-gonal prism / antiprism / bipyramid / pyramid / star) ─────
+    function _ngPrism(n, r, h) {
+        var v = [], e = [];
+        for (var i = 0; i < n; i++) { var a = i * 2 * Math.PI / n; v.push([Math.cos(a) * r,  h, Math.sin(a) * r]); }
+        for (var i = 0; i < n; i++) { var a = i * 2 * Math.PI / n; v.push([Math.cos(a) * r, -h, Math.sin(a) * r]); }
+        for (var i = 0; i < n; i++) {
+            e.push([i, (i + 1) % n]);
+            e.push([n + i, n + ((i + 1) % n)]);
+            e.push([i, n + i]);
+        }
+        return { verts: v, edges: e };
+    }
+    function _ngAnti(n, r, h) {
+        var v = [], e = [];
+        for (var i = 0; i < n; i++) { var a = i * 2 * Math.PI / n; v.push([Math.cos(a) * r,  h, Math.sin(a) * r]); }
+        for (var i = 0; i < n; i++) { var a = (i + 0.5) * 2 * Math.PI / n; v.push([Math.cos(a) * r, -h, Math.sin(a) * r]); }
+        for (var i = 0; i < n; i++) {
+            e.push([i, (i + 1) % n]);
+            e.push([n + i, n + ((i + 1) % n)]);
+            e.push([i, n + i]);
+            e.push([i, n + ((i + n - 1) % n)]);
+        }
+        return { verts: v, edges: e };
+    }
+    function _ngBipy(n, r, h) {
+        var v = [[0, h, 0], [0, -h, 0]], e = [];
+        for (var i = 0; i < n; i++) { var a = i * 2 * Math.PI / n; v.push([Math.cos(a) * r, 0, Math.sin(a) * r]); }
+        for (var i = 0; i < n; i++) {
+            e.push([0, 2 + i]);
+            e.push([1, 2 + i]);
+            e.push([2 + i, 2 + ((i + 1) % n)]);
+        }
+        return { verts: v, edges: e };
+    }
+    function _ngPy(n, r, h) {
+        var v = [[0, h, 0]], e = [];
+        for (var i = 0; i < n; i++) { var a = i * 2 * Math.PI / n; v.push([Math.cos(a) * r, -h, Math.sin(a) * r]); }
+        for (var i = 0; i < n; i++) {
+            e.push([0, 1 + i]);
+            e.push([1 + i, 1 + ((i + 1) % n)]);
+        }
+        return { verts: v, edges: e };
+    }
+    // Star polygon prism — n vertices on top + n on bottom, top connects every k-th, plus verticals
+    function _starPoly(n, k, r, h) {
+        var v = [], e = [];
+        for (var i = 0; i < n; i++) { var a = i * 2 * Math.PI / n; v.push([Math.cos(a) * r,  h, Math.sin(a) * r]); }
+        for (var i = 0; i < n; i++) { var a = i * 2 * Math.PI / n; v.push([Math.cos(a) * r, -h, Math.sin(a) * r]); }
+        for (var i = 0; i < n; i++) {
+            e.push([i, (i + k) % n]);
+            e.push([n + i, n + ((i + k) % n)]);
+            e.push([i, n + i]);
+        }
+        return { verts: v, edges: e };
+    }
+
+    // 33 additional shapes — doubles the catalog roughly. Mix of generated (parametric) and
+    // hand-coded compound shapes (tesseract, compounds, lattices, obelisks).
+    [
+        ['heptaprism',  'heptagonal prism',     _ngPrism(7,  1,    1)],
+        ['octaprism',   'octagonal prism',      _ngPrism(8,  1,    1)],
+        ['nonaprism',   'enneagonal prism',     _ngPrism(9,  1,    1)],
+        ['decaprism',   'decagonal prism',      _ngPrism(10, 1,    1)],
+        ['dodecaprism', 'dodecagonal prism',    _ngPrism(12, 1,    1)],
+        ['cylinder',    'cylindrical prism',    _ngPrism(20, 1,    1.2)],
+        ['heptanti',    'heptagonal antiprism', _ngAnti (7,  1,    0.85)],
+        ['octanti',     'octagonal antiprism',  _ngAnti (8,  1,    0.85)],
+        ['nonanti',     'enneagonal antiprism', _ngAnti (9,  1,    0.85)],
+        ['decanti',     'decagonal antiprism',  _ngAnti (10, 1,    0.85)],
+        ['dodecanti',   'dodecagonal antiprism',_ngAnti (12, 1,    0.85)],
+        ['hexbipy',     'hexagonal bipyramid',  _ngBipy (6,  1,    1.3)],
+        ['heptbipy',    'heptagonal bipyramid', _ngBipy (7,  1,    1.3)],
+        ['octbipy',     'octagonal bipyramid',  _ngBipy (8,  1,    1.3)],
+        ['nonabipy',    'enneagonal bipyramid', _ngBipy (9,  1,    1.3)],
+        ['decabipy',    'decagonal bipyramid',  _ngBipy (10, 1,    1.3)],
+        ['pentapy',     'pentagonal pyramid',   _ngPy   (5,  1,    1)],
+        ['hexapy',      'hexagonal pyramid',    _ngPy   (6,  1,    1)],
+        ['heptapy',     'heptagonal pyramid',   _ngPy   (7,  1,    1)],
+        ['cone',        'circular cone',        _ngPy   (20, 1,    1.4)],
+        ['heptagram',   '7-pointed star prism', _starPoly(7,  3, 1, 0.4)],
+        ['octagram',    '8-pointed star prism', _starPoly(8,  3, 1, 0.4)],
+        ['nonagram',    '9-pointed star prism', _starPoly(9,  4, 1, 0.4)],
+        ['decagram',    '10-pointed star prism',_starPoly(10, 3, 1, 0.4)]
+    ].forEach(function (g) {
+        GEO_SHAPES[g[0]] = { label: g[1], verts: g[2].verts, edges: g[2].edges };
+    });
+
+    // Hand-coded compound / unique shapes
+    GEO_SHAPES.tesseract = {
+        label: 'tesseract projection',
+        verts: [
+            [-1,-1,-1],[ 1,-1,-1],[ 1, 1,-1],[-1, 1,-1],
+            [-1,-1, 1],[ 1,-1, 1],[ 1, 1, 1],[-1, 1, 1],
+            [-0.5,-0.5,-0.5],[0.5,-0.5,-0.5],[0.5,0.5,-0.5],[-0.5,0.5,-0.5],
+            [-0.5,-0.5, 0.5],[0.5,-0.5, 0.5],[0.5,0.5, 0.5],[-0.5,0.5, 0.5]
+        ],
+        edges: [
+            [0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],
+            [0,4],[1,5],[2,6],[3,7],
+            [8,9],[9,10],[10,11],[11,8],[12,13],[13,14],[14,15],[15,12],
+            [8,12],[9,13],[10,14],[11,15],
+            [0,8],[1,9],[2,10],[3,11],[4,12],[5,13],[6,14],[7,15]
+        ]
+    };
+    // Cube + octahedron compound — both inscribed at the same center
+    GEO_SHAPES.compoundCO = {
+        label: 'cube–octa compound',
+        verts: [
+            [-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],
+            [-1,-1, 1],[1,-1, 1],[1,1, 1],[-1,1, 1],
+            [0, 1.4, 0],[0,-1.4,0],[1.4,0,0],[-1.4,0,0],[0,0, 1.4],[0,0,-1.4]
+        ],
+        edges: [
+            [0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7],
+            [8,10],[8,11],[8,12],[8,13],[9,10],[9,11],[9,12],[9,13],
+            [10,12],[12,11],[11,13],[13,10]
+        ]
+    };
+    GEO_SHAPES.obelisk = {
+        label: 'obelisk',
+        verts: [
+            [-0.6,-1.4,-0.6],[0.6,-1.4,-0.6],[0.6,-1.4,0.6],[-0.6,-1.4,0.6],
+            [-0.5, 0.9,-0.5],[0.5, 0.9,-0.5],[0.5, 0.9,0.5],[-0.5, 0.9,0.5],
+            [0, 1.5, 0]
+        ],
+        edges: [
+            [0,1],[1,2],[2,3],[3,0],
+            [4,5],[5,6],[6,7],[7,4],
+            [0,4],[1,5],[2,6],[3,7],
+            [4,8],[5,8],[6,8],[7,8]
+        ]
+    };
+    GEO_SHAPES.spire = {
+        label: 'spire',
+        verts: [
+            [1,-1,0],[0.309,-1,0.951],[-0.809,-1,0.588],[-0.809,-1,-0.588],[0.309,-1,-0.951],
+            [0.4,0,0],[0.124,0,0.380],[-0.324,0,0.235],[-0.324,0,-0.235],[0.124,0,-0.380],
+            [0,1.6,0]
+        ],
+        edges: [
+            [0,1],[1,2],[2,3],[3,4],[4,0],
+            [5,6],[6,7],[7,8],[8,9],[9,5],
+            [0,5],[1,6],[2,7],[3,8],[4,9],
+            [5,10],[6,10],[7,10],[8,10],[9,10]
+        ]
+    };
+    GEO_SHAPES.wedge = {
+        label: 'wedge',
+        verts: [[1,1,0],[-1,1,0],[1,-1,1],[-1,-1,1],[1,-1,-1],[-1,-1,-1]],
+        edges: [[0,1],[2,3],[4,5],[0,2],[0,4],[1,3],[1,5],[2,4],[3,5]]
+    };
+    GEO_SHAPES.lattice3 = {
+        label: '3³ lattice cube',
+        verts: (function () {
+            var v = [];
+            for (var x = -1; x <= 1; x++)
+                for (var y = -1; y <= 1; y++)
+                    for (var z = -1; z <= 1; z++) v.push([x, y, z]);
+            return v;
+        })(),
+        edges: (function () {
+            var e = [], idx = function (x, y, z) { return (x + 1) * 9 + (y + 1) * 3 + (z + 1); };
+            for (var x = -1; x <= 1; x++)
+                for (var y = -1; y <= 1; y++)
+                    for (var z = -1; z <= 1; z++) {
+                        if (x < 1) e.push([idx(x, y, z), idx(x + 1, y, z)]);
+                        if (y < 1) e.push([idx(x, y, z), idx(x, y + 1, z)]);
+                        if (z < 1) e.push([idx(x, y, z), idx(x, y, z + 1)]);
+                    }
+            return e;
+        })()
+    };
+    GEO_SHAPES.crystalPair = {
+        label: 'crystal pair',
+        verts: [
+            [0, 1.4, 0],[0,-1.4,0],[0.9,0,0],[-0.9,0,0],[0,0,0.9],[0,0,-0.9],
+            [0.6, 0.9,0.6],[-0.6,-0.9,-0.6],[1.0,0,0.5],[-1.0,0,-0.5],[0.5,0,1.0],[-0.5,0,-1.0]
+        ],
+        edges: [
+            [0,2],[0,3],[0,4],[0,5],[1,2],[1,3],[1,4],[1,5],
+            [2,4],[4,3],[3,5],[5,2],
+            [6,8],[6,10],[7,9],[7,11],[8,10],[9,11],[6,7]
+        ]
+    };
+
+    var GEO_KEYS = ['tetra','cube','octa','icosa','flower','metatron','prism','stella','cubocta','antiprism','vesica','spiral','lissajous','star5','torus','helix','dodeca','pyramid','pentaprism','rose','cardioid','asteroid','epicycloid','web','hexprism','hexanti','pentabipy','tribipy','trunctetra','octapyramid','rhombdo','frustum','rhombpara','starbipy',
+        // 33 additions (doubles the catalog)
+        'heptaprism','octaprism','nonaprism','decaprism','dodecaprism','cylinder',
+        'heptanti','octanti','nonanti','decanti','dodecanti',
+        'hexbipy','heptbipy','octbipy','nonabipy','decabipy',
+        'pentapy','hexapy','heptapy','cone',
+        'heptagram','octagram','nonagram','decagram',
+        'tesseract','compoundCO','obelisk','spire','wedge','lattice3','crystalPair'];
 
     function spawnGeoWindow() {
         var host = getHost();
@@ -3745,6 +4119,17 @@ window.consoleBg = (function () {
         'FROM: Enforcement Central\nTO: ALL DISTRICT COMMANDS\nRE: Op Dark Census — Final Phase\n\nFinal phase: all unregistered — detain.\nBCI registration: mandatory by 0600.\nNon-compliance: permanent detention.\nMedia blackout: indefinite. No record.\n\n>>> RELAY CORRUPTION — CRITICAL <<<',
         'FROM: Intelligence Operations\nTO: Corp Board\nRE: Outside Press — Containment\n\n3 journalists, 2 external orgs.\nAll have Silent Horizon fragments.\nLevel 4 authorized — all targets.\n0300 UTC simultaneous. Dark only.\n\n[SIG: 0xFF0000 // EXECUTE]',
         'TO: Corp Board — Eyes Only\nFROM: Population Analytics Lead\nRE: GLMZ Compliance — Final Report\n\nCompliance: 91% — above all targets.\nDissent index: 0.31 — historic low.\nMortality from ops: 88 — within budget.\nBoard consensus: proceed Phase 7.\n\n[SIG: 0xDEAD9441 // FINAL]',
+        // ── 10 additional leaked memos ─────────────────────────────────────
+        'FROM: Vultures Procurement\nTO: Corp Medical Logistics\nRE: Q4 Body Recovery — Pricing\n\n441 bodies processed Q4.\nUsable organ yield: 88% — record high.\nResale: Φ12.4M to corp medical.\nFamilies notified — generic causes.\n\n>>> INTERCEPT :: dist7/vault <<<',
+        'CONFIDENTIAL — DELETE ON READ\nFROM: District 4 Sponsorship Office\nTO: Corp Tier Management\nRE: Tier Demotion Protocol — Update\n\n3,301 tier-3 holders flagged Q4.\nDemotion to tier-2: 88% — quota met.\nPublic ceremony required — 5 weekly.\nMaintain humiliation visibility.\n\n[SIG: 0x9A3301 // SPONSORSHIP]',
+        'FROM: Libation Corp Senior Staff\nTO: Crest Dynamics Liaison\nRE: Joint Tier Mobility Pilot — Q1\n\nPilot: 12 sponsorships across corps.\nTier-1 to tier-3 advancement: 4 cases.\nPress narrative: meritocratic success.\nOmit: 8 demotions to tier-1 same period.\n\n>>> CORP/BROKER :: VAULTDROP <<<',
+        'INTERNAL — NO EXTERNAL\nFROM: Arcturus Civil Security\nTO: GLMZ Coordination Office\nRE: Police Vacuum — Q4 Brief\n\nNo official GLMZ police force exists.\nArcturus fills 88% of enforcement role.\nPress: never call us "the police."\nWe are private contractors. Always.\n\n[INTERCEPT: glmz/comms-d12]',
+        'FROM: Behemoth Operations Group\nTO: Corp Board — Eyes Only\nRE: Iowan Behemoth Update — Q4\n\n12 Iowan units active GLMZ-perimeter.\nAutonomous decisions: 99.7%.\nThey are NOT alive — repeat: NOT alive.\nIf press asks, they are "smart machines."\n\n[SIG: 0xFF0000 // BOARD-ONLY]',
+        'TO: Corp Board\nFROM: Pulse Network Operations\nRE: Ferrogate Mach-6 Disruption\n\nDistrict 9 → Rotterdam pod sabotaged.\n44 fatalities — frame as mechanical.\nFerrogate liability: shielded by NDA.\nVictims: all dist9 freelancer-adjacent.\n\n>>> DARK NODE :: pulse/operations <<<',
+        'FROM: Free Floating Coordination\nTO: Legal Loophole Group\nRE: Michigan City Casino — Status\n\nDrowned hull still classified vehicle.\nGLMZ jurisdiction: void by sea-treaty.\n88 freelancers operating from hull.\nDo not interfere — sets bad precedent.\n\n[INTERCEPT CONFIDENCE: 0.92]',
+        'CLASSIFIED — DESTROY AFTER\nFROM: Cortical Compliance Audit\nTO: Crest Board\nRE: Φ Currency Cortical Bind\n\n441,000 operators have BCI-bound Φ.\nWallet-spoofing: cortical impossible.\nBenefit: zero theft. Risk: zero opt-out.\nDo not brief regulators on this fact.\n\n[SIG: 0x9F3A // CORP-LEGAL]',
+        'FROM: Reliquary Branch — Outreach\nTO: Corp Cultural Liaison\nRE: Pixel Asset — Recovery\n\nPixel artifact ("notebook") still missing.\nOriginal owner: Auntie Hoa, dist7.\nReliquary will pay Φ440,000 — discreet.\nDo NOT involve corp enforcement.\n\n>>> RELAY: dist7/comms <<<',
+        'PRIORITY ALPHA — BOARD ONLY\nFROM: Crest Existential Risk Cell\nTO: Corp Board (Eyes Only)\nRE: Sasha Võ — Operational Status\n\n4471-K confirmed active across districts.\nFormer alias "Lena Connor" — fully retired.\nOperator is fully trained, not savant.\nDo NOT classify as cliché — strategic.\n\n[SIG: 0xFF0000 // EXECUTIVE-ONLY]',
     ];
 
     // ── Memo erasure — JS character-by-character erase ──────────────────────
@@ -3874,62 +4259,786 @@ window.consoleBg = (function () {
 
     // ── Tick loop ───────────────────────────────────────────────────────────
 
-    // ── Floating artifact clusters ───────────────────────────────────────────
+    // ── Folder-rip effect — file browser with selection getting yanked away ─────
+    // Filenames pool — cyberpunk-flavored: corp dossiers, neural batches, classified ops
+    var FOLDER_PATHS = [
+        '/vault/crest', '/dist04/ops', '/vault/0x9F3A', '/sec/bci', '/dist09/audit',
+        '/relay/dark', '/glmz/ferro', '/legal/redact', '/comms/intercept', '/dist12/cls',
+        '/sec/enclave', '/data/neural', '/finance/slush', '/audit/burn', '/corp/board',
+        '/glmz/water', '/medical/ethics', '/personnel/restrict', '/territory/buyout', '/vault/0x3AF7'
+    ];
+    var FOLDER_NAMES = [
+        'crest_keys.dat', 'bci_dump_q3', 'batch_44_neural', 'protocol_9.exe', 'vault_0x9F3A',
+        'meridian88_logs', 'silent_horizon', 'subject_3301', 'cohort_14_med', 'op_blackout',
+        'witness_0091', 'dark_census_l3', 'profile_pkg_q4', 'redaction_q3.tar', 'narrative_phase5',
+        'relay_map_d12', 'reroute_0xBE', 'compliance_a8', 'pulse_seg_44', 'sponsorship_demo',
+        'silent_witness', 'tier3_demote', 'ferrogate_log', 'audit_strip_q3', 'cohort_failed',
+        'consent_revoke', 'pop_throttle_d9', 'enclave_seed', 'leak_inside_07', 'class_action_88',
+        'autonomy_lock', 'kill_switch.dat', 'org_dissolve_d2', 'price_floor_x4', 'rev_q3.csv',
+        'subject_x4471k', 'med_diversion', 'legal_stratagem', 'vault_drop_4412', 'override_disable'
+    ];
+    var FOLDER_EXT_GLYPHS = ['📁', '▶', '►', '⊟', '▣']; // not used (no emoji) — keep arrow only
+    function folderItemText() { return pick(FOLDER_NAMES); }
 
-    function spawnArtifact() {
+    function spawnFolderRip() {
         var host = getHost();
         if (!host) return;
+        var win = document.createElement('div');
+        win.className = 'cbg-win cbg-folder-win';
+        var fp = bestPos(host, 220, 170, -2, 86, 4, 80);
+        win.style.left = fp[0] + '%';
+        win.style.top  = fp[1] + '%';
 
-        var palettes = ['cbg-artifact--red', 'cbg-artifact--white', 'cbg-artifact--blue', 'cbg-artifact--amber'];
+        var titleEl = document.createElement('div');
+        titleEl.className = 'cbg-title';
+        titleEl.textContent = 'filebrowser' + pick(FOLDER_PATHS);
+        win.appendChild(titleEl);
+
+        var listEl = document.createElement('div');
+        listEl.className = 'cbg-folder-list';
+        var n = rand(6, 10);
+        var folders = [];
+        for (var i = 0; i < n; i++) {
+            var f = document.createElement('div');
+            f.className = 'cbg-folder';
+            f.textContent = '► ' + folderItemText();
+            listEl.appendChild(f);
+            folders.push(f);
+        }
+        win.appendChild(listEl);
+        host.appendChild(win);
+
+        // After a beat, drop the highlight on a random consecutive run of 1–3 folders.
+        var hiCount = rand(1, 3);
+        var hiStart = Math.floor(Math.random() * (folders.length - hiCount + 1));
+        setTimeout(function () {
+            for (var i = hiStart; i < hiStart + hiCount; i++) folders[i].classList.add('cbg-folder-highlight');
+        }, 500);
+
+        // Extract the highlighted items — each file does ONE simple slide-blink-fade. The
+        // staggering is BETWEEN files: file 1 leaves first, file 2 starts 180ms later, file 3
+        // another 180ms later, and so on. Each individual file's motion is simple and clean.
+        // Tight stagger — files stay packed close together as they exit. 40ms between files
+        // means file 4 starts when file 1 has only moved ~6% of the way; the selection reads
+        // as a coherent stack sliding out together rather than spread-out individuals.
+        var ripStartMs   = 1100;
+        var perFileDelay = 40;
+        var perFileDur   = 640;
+        setTimeout(function () {
+            var ripDist = 240; // > window width so the folder clears the right edge entirely
+            for (var i = hiStart; i < hiStart + hiCount; i++) {
+                var f = folders[i];
+                f.classList.add('cbg-folder-ripping'); // lift z-index above the window
+                f.style.setProperty('--rx', ripDist + 'px');
+                f.style.setProperty('--ry', '0px');
+                var delay = (i - hiStart) * perFileDelay;
+                f.style.animation = 'cbg-folder-rip ' + perFileDur + 'ms cubic-bezier(0.32, 0.72, 0, 1) ' + delay + 'ms forwards';
+            }
+        }, ripStartMs);
+
+        // Window fades out exactly when the steal completes — tied to the LAST file's animation
+        // end. Last file leaves at: ripStart + (hiCount-1)*perFileDelay + perFileDur, plus a small
+        // beat so the empty window registers visually before it dissolves.
+        var stealCompleteMs = ripStartMs + (hiCount - 1) * perFileDelay + perFileDur;
+        var winFadeAt = stealCompleteMs + 220;
+        setTimeout(function () {
+            win.style.transition = 'opacity 0.55s ease';
+            win.style.opacity = '0';
+            setTimeout(function () { if (win.parentNode) win.parentNode.removeChild(win); }, 600);
+        }, winFadeAt);
+    }
+
+    // ── Floating artifact clusters ───────────────────────────────────────────
+
+    // Fibonacci + golden-ratio constants — every artifact sizing/timing decision draws from these
+    var ART_PHI       = 1.6180339887;             // golden ratio φ
+    var ART_INV_PHI   = 0.6180339887;             // 1/φ — the "minor" partition of golden division
+    var ART_FIB_DIMS  = [5, 8, 13];               // grid row/column counts (Fibonacci numbers)
+    var ART_FIB_SIZES = [8, 13, 21];              // per-row / per-col pixel sizes (consecutive Fibs → neighbors sit at golden ratio)
+    var ART_DIGITS    = '0123456789';
+
+    var ART_PALETTES = ['cbg-artifact--red', 'cbg-artifact--white', 'cbg-artifact--blue', 'cbg-artifact--amber'];
+
+    // ARTIFACT variant enum — each spawn picks one. Names listed in the registry at the top
+    // of this file; each is a preserved iteration of how ARTIFACTs have looked.
+    //   SCATTER    — original random blob, all glyphs drift in one direction
+    //   LATTICE    — Fibonacci grid, whole lattice drifts together (corner-wave delay)
+    //   ANCHOR     — stationary grid; glitches in place; leading edge emits feelers
+    //   SLUG       — single grid crawls + per-cell undulation
+    //   CENTIPEDE  — multi-segment chain, peristaltic wave + head feelers
+    //   PULSE      — concentric Fibonacci rings, lub-dub heartbeat (simulates life)
+    //   WANDERER   — small grid walks + pauses to "look around" (simulates awareness)
+    var ART_VARIANTS = ['SCATTER', 'LATTICE', 'ANCHOR', 'SLUG', 'CENTIPEDE', 'PULSE', 'WANDERER'];
+
+    // Shared helper — create a Fibonacci-sized grid scaffold (variable col widths / row heights).
+    // Returns positions + cumulative offsets so callers can build cells.
+    function artBuildFibGrid(cols, rows) {
+        var colW = new Array(cols), rowH = new Array(rows);
+        for (var c = 0; c < cols; c++) colW[c] = ART_FIB_SIZES[Math.floor(Math.random() * ART_FIB_SIZES.length)];
+        for (var r = 0; r < rows; r++) rowH[r] = ART_FIB_SIZES[Math.floor(Math.random() * ART_FIB_SIZES.length)];
+        var colX = new Array(cols + 1); colX[0] = 0;
+        for (var ci = 0; ci < cols; ci++) colX[ci + 1] = colX[ci] + colW[ci];
+        var rowY = new Array(rows + 1); rowY[0] = 0;
+        for (var ri = 0; ri < rows; ri++) rowY[ri + 1] = rowY[ri] + rowH[ri];
+        return { colW: colW, rowH: rowH, colX: colX, rowY: rowY, totalW: colX[cols], totalH: rowY[rows] };
+    }
+    function artNewContainer() {
         var el = document.createElement('div');
-        el.className = 'cbg-artifact ' + pick(palettes);
-        el.style.left = rand(-2, 90) + '%';
-        el.style.top  = rand(-2, 90) + '%';
+        el.className = 'cbg-artifact ' + pick(ART_PALETTES);
+        // Artifact body fits in roughly a 200×140 box once segments and feelers are spawned.
+        // Use safePos so the structure doesn't materialise on top of the tile container.
+        var ap = safePos(200, 140, -2, 88, -2, 85);
+        el.style.left = ap[0] + '%';
+        el.style.top  = ap[1] + '%';
+        return el;
+    }
+    function artGlyph() {
+        return Math.random() < ART_INV_PHI
+            ? ART_DIGITS[Math.floor(Math.random() * 10)]
+            : GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+    }
+
+    // ── Variant: SCATTER — original implementation ──────────────────────────────
+    // Random scatter inside a circular region; every glyph drifts toward a shared cluster
+    // direction with a small individual angle spread. Cells fade out as they travel.
+    function spawnArtifactScatter(host) {
+        var el = artNewContainer();
         el.style.opacity = '0';
         el.style.transition = 'opacity 0.55s ease';
-
-        var n = rand(14, 28);      // fewer chars — less center accumulation
-        var blobR = rand(40, 80);  // more spread — less density pileup
-        // One drift direction per cluster — glyphs share a destination with individual spread
+        var n = rand(14, 28);
+        var blobR = rand(40, 80);
         var clusterAngle = Math.random() * Math.PI * 2;
-
         for (var i = 0; i < n; i++) {
             var span = document.createElement('span');
             span.className = 'cbg-artifact-char';
             var angle = Math.random() * Math.PI * 2;
-            // Uniform random r (not sqrt) gives even area distribution — no dense centre
             var r     = Math.random() * blobR;
             span.style.left     = Math.round(r * Math.cos(angle)) + 'px';
             span.style.top      = Math.round(r * Math.sin(angle)) + 'px';
             span.style.fontSize = rand(9, 20) + 'px';
-            // Tiny base blur — chars start crisp; the drift keyframe multiplies this as they travel
             span.style.setProperty('--abl', (0.3 + Math.random() * 0.6).toFixed(1) + 'px');
-            // Target: cluster direction ± small individual spread (~±25°)
             var glyphAngle = clusterAngle + (Math.random() - 0.5) * 0.88;
             var glyphDist  = rand(50, 130);
             span.style.setProperty('--adx1', Math.round(Math.cos(glyphAngle) * glyphDist) + 'px');
             span.style.setProperty('--ady1', Math.round(Math.sin(glyphAngle) * glyphDist) + 'px');
-            // Varied duration + stagger so glyphs don't all vanish simultaneously
-            var driftDur   = (1.8 + Math.random() * 2.2).toFixed(2); // 1.8–4s — faster swim
-            var driftDelay = (Math.random() * 1.8).toFixed(2);        // 0–1.8s stagger
-            // ease-in: lazy start, accelerates — feels purposeful, not mechanical
+            var driftDur   = (1.8 + Math.random() * 2.2).toFixed(2);
+            var driftDelay = (Math.random() * 1.8).toFixed(2);
             span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, cbg-art-drift ' + driftDur + 's ease-in ' + driftDelay + 's forwards';
             span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
             el.appendChild(span);
         }
-
         host.appendChild(el);
-
-        // Fade in after paint
-        requestAnimationFrame(function () {
-            requestAnimationFrame(function () { el.style.opacity = '1'; });
-        });
-
-        // Remove container after all glyphs have dissolved (max drift + delay + buffer)
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
         var ttl = rand(6000, 8000);
+        setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, ttl);
+    }
+
+    // ── Variant: LATTICE — Fibonacci grid, whole lattice drifts together ────────
+    // Every cell shares the cluster drift; a corner-anchored ripple delays each cell so the
+    // grid moves like a single body, with the ripple reading as wave propagation.
+    function spawnArtifactLattice(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var cols = ART_FIB_DIMS[Math.floor(Math.random() * ART_FIB_DIMS.length)];
+        var rows = ART_FIB_DIMS[Math.floor(Math.random() * ART_FIB_DIMS.length)];
+        var g = artBuildFibGrid(cols, rows);
+        var clusterAngle = Math.random() * Math.PI * 2;
+        var clusterDist  = Math.round(89 + (Math.random() - 0.5) * (89 * ART_INV_PHI));
+        var dx = Math.round(Math.cos(clusterAngle) * clusterDist);
+        var dy = Math.round(Math.sin(clusterAngle) * clusterDist);
+        var waveOx = Math.random() < 0.5 ? 0 : cols - 1;
+        var waveOy = Math.random() < 0.5 ? 0 : rows - 1;
+        var stepDelay = 0.055 * ART_PHI;
+        for (var row = 0; row < rows; row++) {
+            for (var col = 0; col < cols; col++) {
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                span.style.left = Math.round(g.colX[col] - g.totalW / 2) + 'px';
+                span.style.top  = Math.round(g.rowY[row] - g.totalH / 2) + 'px';
+                var cellMin = Math.min(g.colW[col], g.rowH[row]);
+                span.style.fontSize = Math.max(8, Math.round(cellMin * ART_PHI * ART_INV_PHI)) + 'px';
+                span.style.setProperty('--abl', (ART_INV_PHI * 0.5 + Math.random() * ART_INV_PHI * 0.5).toFixed(2) + 'px');
+                span.style.setProperty('--adx1', dx + 'px');
+                span.style.setProperty('--ady1', dy + 'px');
+                var waveDist   = Math.abs(col - waveOx) + Math.abs(row - waveOy);
+                var driftDelay = (waveDist * stepDelay + Math.random() * ART_INV_PHI * 0.3).toFixed(2);
+                var driftDur   = (ART_PHI + Math.random() * ART_PHI).toFixed(2);
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, cbg-art-drift ' + driftDur + 's ease-in ' + driftDelay + 's forwards';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                el.appendChild(span);
+            }
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var ttl = Math.round(6765 + (Math.random() - 0.5) * 1597);
+        setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, ttl);
+    }
+
+    // ── Variant: ANCHOR — anchored grid; glitches in place; leading edge emits feelers ──
+    // Core lattice does NOT drift — it flickers + glitches in place. Periodic "feeler" glyphs
+    // launch from the leading-edge cells (cells with high projection onto the cluster vector).
+    function spawnArtifactAnchor(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var cols = ART_FIB_DIMS[Math.floor(Math.random() * ART_FIB_DIMS.length)];
+        var rows = ART_FIB_DIMS[Math.floor(Math.random() * ART_FIB_DIMS.length)];
+        var g = artBuildFibGrid(cols, rows);
+        var clusterAngle = Math.random() * Math.PI * 2;
+        var cosA = Math.cos(clusterAngle), sinA = Math.sin(clusterAngle);
+        var spans = [], cellInfo = [];
+        for (var row = 0; row < rows; row++) {
+            for (var col = 0; col < cols; col++) {
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                var leftPx = Math.round(g.colX[col] - g.totalW / 2);
+                var topPx  = Math.round(g.rowY[row] - g.totalH / 2);
+                span.style.left = leftPx + 'px';
+                span.style.top  = topPx + 'px';
+                var cellMin = Math.min(g.colW[col], g.rowH[row]);
+                var fontPx  = Math.max(8, Math.round(cellMin * ART_PHI * ART_INV_PHI));
+                span.style.fontSize = fontPx + 'px';
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                el.appendChild(span);
+                spans.push(span);
+                var ccx = leftPx + g.colW[col] / 2;
+                var ccy = topPx  + g.rowH[row] / 2;
+                cellInfo.push({ left: leftPx, top: topPx, fontPx: fontPx, score: ccx * cosA + ccy * sinA });
+            }
+        }
+        host.appendChild(el);
+        cellInfo.sort(function (a, b) { return b.score - a.score; });
+        var leadingPool = cellInfo.slice(0, Math.max(1, Math.round(cellInfo.length * (1 - ART_INV_PHI))));
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var glitchTimer = setInterval(function () {
+            var n = Math.max(2, Math.round(spans.length * Math.pow(ART_INV_PHI, 3)));
+            for (var i = 0; i < n; i++) spans[Math.floor(Math.random() * spans.length)].textContent = artGlyph();
+        }, Math.round(76 * ART_PHI));
+        var feelerTimer = setInterval(function () {
+            var seed = leadingPool[Math.floor(Math.random() * leadingPool.length)];
+            var feel = document.createElement('span');
+            feel.className = 'cbg-artifact-char';
+            feel.style.left = seed.left + 'px';
+            feel.style.top  = seed.top  + 'px';
+            feel.style.fontSize = seed.fontPx + 'px';
+            feel.style.setProperty('--abl', (0.4 + Math.random() * ART_INV_PHI).toFixed(2) + 'px');
+            var fdist  = 55 + Math.random() * 89;
+            var spread = (Math.random() - 0.5) * 0.42;
+            feel.style.setProperty('--adx1', Math.round(Math.cos(clusterAngle + spread) * fdist) + 'px');
+            feel.style.setProperty('--ady1', Math.round(Math.sin(clusterAngle + spread) * fdist) + 'px');
+            var fdur = ART_PHI + Math.random() * ART_PHI;
+            feel.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, cbg-art-drift ' + fdur.toFixed(2) + 's ease-in 0s forwards';
+            feel.textContent = artGlyph();
+            el.appendChild(feel);
+            setTimeout(function () { if (feel.parentNode) feel.parentNode.removeChild(feel); }, fdur * 1000 + 250);
+        }, 89);
+        var ttl = Math.round(6765 + (Math.random() - 0.5) * 1597);
         setTimeout(function () {
+            clearInterval(glitchTimer); clearInterval(feelerTimer);
             if (el.parentNode) el.parentNode.removeChild(el);
         }, ttl);
+    }
+
+    // ── Variant: SLUG — single grid that crawls + per-cell undulation ──────────
+    // The whole grid translates slowly across the screen via cbg-artifact-crawl. Per-cell
+    // undulation makes the body deform/breathe as it crawls. Disintegrates at end.
+    function spawnArtifactSlug(host) {
+        var el = artNewContainer();
+        var cols = ART_FIB_DIMS[Math.floor(Math.random() * ART_FIB_DIMS.length)];
+        var rows = ART_FIB_DIMS[Math.floor(Math.random() * ART_FIB_DIMS.length)];
+        var g = artBuildFibGrid(cols, rows);
+        var clusterAngle = Math.random() * Math.PI * 2;
+        var cosA = Math.cos(clusterAngle), sinA = Math.sin(clusterAngle);
+        var crawlDist = 144 + Math.random() * 89;
+        el.style.setProperty('--cdx', Math.round(cosA * crawlDist) + 'px');
+        el.style.setProperty('--cdy', Math.round(sinA * crawlDist) + 'px');
+        el.style.animation = 'cbg-artifact-crawl 7.2s ease-in-out forwards';
+        var spans = [];
+        for (var row = 0; row < rows; row++) {
+            for (var col = 0; col < cols; col++) {
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                span.style.left = Math.round(g.colX[col] - g.totalW / 2) + 'px';
+                span.style.top  = Math.round(g.rowY[row] - g.totalH / 2) + 'px';
+                var cellMin = Math.min(g.colW[col], g.rowH[row]);
+                span.style.fontSize = Math.max(8, Math.round(cellMin * ART_PHI * ART_INV_PHI)) + 'px';
+                var uAng = Math.random() * Math.PI * 2;
+                var uMag = 3 + Math.random() * 4;
+                span.style.setProperty('--ux', Math.round(Math.cos(uAng) * uMag) + 'px');
+                span.style.setProperty('--uy', Math.round(Math.sin(uAng) * uMag) + 'px');
+                var undDur   = (2.0 + Math.random() * 1.6).toFixed(2);
+                var undDelay = (-Math.random() * 3).toFixed(2);
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, '
+                                     + 'cbg-art-undulate ' + undDur + 's ease-in-out ' + undDelay + 's infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                el.appendChild(span);
+                spans.push(span);
+            }
+        }
+        host.appendChild(el);
+        var glitchTimer = setInterval(function () {
+            var n = Math.max(2, Math.round(spans.length * Math.pow(ART_INV_PHI, 3)));
+            for (var i = 0; i < n; i++) spans[Math.floor(Math.random() * spans.length)].textContent = artGlyph();
+        }, Math.round(76 * ART_PHI));
+        setTimeout(function () {
+            clearInterval(glitchTimer);
+            if (el.parentNode) el.parentNode.removeChild(el);
+        }, 7400);
+    }
+
+    // ── Variant: CENTIPEDE — multi-segment chain, peristaltic wave + head feelers ──
+    // Multiple overlapping Fibonacci grids form one undulating body. Each segment sways
+    // perpendicular to travel with phase offset; the leader emits feelers. Whole chain crawls.
+    function spawnArtifactCentipede(host) {
+        var el = artNewContainer();
+        var clusterAngle = Math.random() * Math.PI * 2;
+        var cosA = Math.cos(clusterAngle), sinA = Math.sin(clusterAngle);
+        var perpX = -sinA, perpY = cosA;
+        var crawlDist = 144 + Math.random() * 89;
+        el.style.setProperty('--cdx', Math.round(cosA * crawlDist) + 'px');
+        el.style.setProperty('--cdy', Math.round(sinA * crawlDist) + 'px');
+        el.style.animation = 'cbg-artifact-crawl 7.2s ease-in-out forwards';
+        var segCount = pick([3, 5, 8]);
+        var segStep  = 21 + Math.random() * 13;
+        var allSpans = [], leadingPool = [];
+        for (var seg = 0; seg < segCount; seg++) {
+            var segEl = document.createElement('div');
+            segEl.className = 'cbg-artifact-seg';
+            var segOffsetDist = -seg * segStep;
+            var segLeft = Math.round(cosA * segOffsetDist);
+            var segTop  = Math.round(sinA * segOffsetDist);
+            segEl.style.left = segLeft + 'px';
+            segEl.style.top  = segTop  + 'px';
+            var swMag = 5 + Math.random() * 5;
+            segEl.style.setProperty('--swx', Math.round(perpX * swMag) + 'px');
+            segEl.style.setProperty('--swy', Math.round(perpY * swMag) + 'px');
+            var swDur = (1.6 + Math.random() * 1.0).toFixed(2);
+            var swPhase = (-seg * parseFloat(swDur) / segCount * ART_PHI).toFixed(2);
+            segEl.style.animation = 'cbg-art-seg-wave ' + swDur + 's ease-in-out ' + swPhase + 's infinite';
+            var cols = pick([3, 5]);
+            var rows = pick([3, 5]);
+            var g = artBuildFibGrid(cols, rows);
+            for (var row = 0; row < rows; row++) {
+                for (var col = 0; col < cols; col++) {
+                    var span = document.createElement('span');
+                    span.className = 'cbg-artifact-char';
+                    var leftPx = Math.round(g.colX[col] - g.totalW / 2);
+                    var topPx  = Math.round(g.rowY[row] - g.totalH / 2);
+                    span.style.left = leftPx + 'px';
+                    span.style.top  = topPx + 'px';
+                    var cellMin = Math.min(g.colW[col], g.rowH[row]);
+                    var fontPx  = Math.max(8, Math.round(cellMin * ART_PHI * ART_INV_PHI));
+                    span.style.fontSize = fontPx + 'px';
+                    var uAng = Math.random() * Math.PI * 2;
+                    var uMag = 3 + Math.random() * 4;
+                    span.style.setProperty('--ux', Math.round(Math.cos(uAng) * uMag) + 'px');
+                    span.style.setProperty('--uy', Math.round(Math.sin(uAng) * uMag) + 'px');
+                    var undDur   = (2.0 + Math.random() * 1.6).toFixed(2);
+                    var undDelay = (-Math.random() * 3).toFixed(2);
+                    span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, '
+                                         + 'cbg-art-undulate ' + undDur + 's ease-in-out ' + undDelay + 's infinite';
+                    span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                    segEl.appendChild(span);
+                    allSpans.push(span);
+                    if (seg === 0) {
+                        var ccx = leftPx + g.colW[col] / 2;
+                        var ccy = topPx  + g.rowH[row] / 2;
+                        leadingPool.push({ left: leftPx + segLeft, top: topPx + segTop, fontPx: fontPx, score: ccx * cosA + ccy * sinA });
+                    }
+                }
+            }
+            el.appendChild(segEl);
+        }
+        leadingPool.sort(function (a, b) { return b.score - a.score; });
+        leadingPool = leadingPool.slice(0, Math.max(1, Math.round(leadingPool.length * (1 - ART_INV_PHI))));
+        host.appendChild(el);
+        var glitchTimer = setInterval(function () {
+            var n = Math.max(2, Math.round(allSpans.length * Math.pow(ART_INV_PHI, 3)));
+            for (var i = 0; i < n; i++) allSpans[Math.floor(Math.random() * allSpans.length)].textContent = artGlyph();
+        }, Math.round(76 * ART_PHI));
+        var feelerTimer = setInterval(function () {
+            if (!leadingPool.length) return;
+            var seed = leadingPool[Math.floor(Math.random() * leadingPool.length)];
+            var feel = document.createElement('span');
+            feel.className = 'cbg-artifact-char';
+            feel.style.left = seed.left + 'px';
+            feel.style.top  = seed.top  + 'px';
+            feel.style.fontSize = seed.fontPx + 'px';
+            feel.style.setProperty('--abl', (0.4 + Math.random() * ART_INV_PHI).toFixed(2) + 'px');
+            var fdist  = 55 + Math.random() * 89;
+            var spread = (Math.random() - 0.5) * 0.42;
+            feel.style.setProperty('--adx1', Math.round(Math.cos(clusterAngle + spread) * fdist) + 'px');
+            feel.style.setProperty('--ady1', Math.round(Math.sin(clusterAngle + spread) * fdist) + 'px');
+            var fdur = ART_PHI + Math.random() * ART_PHI;
+            feel.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, cbg-art-drift ' + fdur.toFixed(2) + 's ease-in 0s forwards';
+            feel.textContent = artGlyph();
+            el.appendChild(feel);
+            setTimeout(function () { if (feel.parentNode) feel.parentNode.removeChild(feel); }, fdur * 1000 + 250);
+        }, 89);
+        setTimeout(function () {
+            clearInterval(glitchTimer); clearInterval(feelerTimer);
+            if (el.parentNode) el.parentNode.removeChild(el);
+        }, 7400);
+    }
+
+    // ── Variant: PULSE — concentric Fibonacci rings beating in lub-dub rhythm ──────
+    // Cells live on Fibonacci-count rings at increasing radii. A heartbeat animation pushes
+    // each cell radially outward in a quick double-pulse, then rests. The whole organism
+    // drifts slowly across the screen (alive in fluid). Each spawn rolls a SIZE class —
+    // current dimensions are the LARGEST; smaller variants exist (distant / younger).
+    // ~25% of PULSE spawns "corrupt" partway through life: rings scatter outward, each cell
+    // becoming a wasp glyph in red and fading out — the organism falling apart.
+    function spawnArtifactPulse(host) {
+        var el = artNewContainer();
+        // Drift — gentler than SLUG. The organism floats while it beats.
+        var clusterAngle = Math.random() * Math.PI * 2;
+        var crawlDist = 65 + Math.random() * 55;
+        el.style.setProperty('--cdx', Math.round(Math.cos(clusterAngle) * crawlDist) + 'px');
+        el.style.setProperty('--cdy', Math.round(Math.sin(clusterAngle) * crawlDist) + 'px');
+        el.style.animation = 'cbg-artifact-crawl 8.6s ease-in-out forwards';
+
+        // Size tier — 1.0 is the largest (matches the original feel). Smaller tiers are rarer.
+        var scale = pick([0.42, 0.42, 0.62, 0.62, 0.82, 1.0, 1.0]);
+        var rings = [
+            { count: 1,  radius: 0      * scale, ampl: 0       },
+            { count: 5,  radius: 18     * scale, ampl: 4  * scale },
+            { count: 8,  radius: 36     * scale, ampl: 7  * scale },
+            { count: 13, radius: 58     * scale, ampl: 11 * scale },
+            { count: 21, radius: 84     * scale, ampl: 15 * scale }
+        ];
+        var spans = [];
+        rings.forEach(function (ring, ringIdx) {
+            for (var i = 0; i < ring.count; i++) {
+                var ang = (i / ring.count) * Math.PI * 2 + ringIdx * 0.13;
+                var cx = Math.cos(ang) * ring.radius;
+                var cy = Math.sin(ang) * ring.radius;
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                span.style.left = Math.round(cx) + 'px';
+                span.style.top  = Math.round(cy) + 'px';
+                // Font scales with size tier but never below readable
+                span.style.fontSize = Math.max(8, Math.round((10 + Math.random() * 4) * (0.6 + scale * 0.4))) + 'px';
+                span.style.setProperty('--px', (Math.cos(ang) * ring.ampl).toFixed(2) + 'px');
+                span.style.setProperty('--py', (Math.sin(ang) * ring.ampl).toFixed(2) + 'px');
+                var beatDelay = ringIdx * 0.08;
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, '
+                                     + 'cbg-art-heartbeat 1.6s ease-in-out ' + beatDelay + 's infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                el.appendChild(span);
+                spans.push({ el: span, ang: ang, radius: ring.radius });
+            }
+        });
+        host.appendChild(el);
+        var glitchTimer = setInterval(function () {
+            var n = Math.max(2, Math.round(spans.length * Math.pow(ART_INV_PHI, 3)));
+            for (var i = 0; i < n; i++) spans[Math.floor(Math.random() * spans.length)].el.textContent = artGlyph();
+        }, 130);
+
+        // CORRUPTION — ~25% of PULSE spawns fall apart. At a random point 55–75% through life,
+        // every cell scatters radially outward, swaps to a hostile glyph in red, and fades.
+        var willCorrupt = Math.random() < 0.25;
+        var totalLife  = 8800;
+        if (willCorrupt) {
+            var corruptAt = Math.round(totalLife * (0.55 + Math.random() * 0.20));
+            setTimeout(function () {
+                var WASP = '#@!*&%§¶†‡¦¤¥×÷±¬¿¡';
+                spans.forEach(function (s) {
+                    var scatterAng  = s.ang + (Math.random() - 0.5) * 0.7;
+                    var scatterDist = 30 + Math.random() * 90;
+                    var tx = Math.round(Math.cos(scatterAng) * scatterDist);
+                    var ty = Math.round(Math.sin(scatterAng) * scatterDist);
+                    // Drop the heartbeat — only the flicker continues until it's gone
+                    s.el.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                    s.el.style.transition = 'transform 0.9s cubic-bezier(0.2, 0.6, 0.4, 1), opacity 0.9s ease, color 0.2s ease';
+                    s.el.style.transform = 'translate(' + tx + 'px, ' + ty + 'px)';
+                    s.el.style.color = '#ff2244';
+                    s.el.style.opacity = '0';
+                    s.el.textContent = WASP[Math.floor(Math.random() * WASP.length)];
+                });
+                setTimeout(function () { clearInterval(glitchTimer); }, 950);
+            }, corruptAt);
+        }
+
+        setTimeout(function () {
+            clearInterval(glitchTimer);
+            if (el.parentNode) el.parentNode.removeChild(el);
+        }, totalLife);
+    }
+
+    // ── Variant: WANDERER — small cluster that walks the screen, pausing to "look around" ──
+    // JS-driven motion (not CSS animation) so it can change direction mid-flight. Picks a random
+    // target, walks toward it, arrives, pauses with a gentle wobble + breathing scale, picks a
+    // new target. Self-aware feel: it stops, surveys, then continues.
+    function spawnArtifactWanderer(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var cols = 5, rows = 3;
+        var g = artBuildFibGrid(cols, rows);
+        var spans = [];
+        for (var row = 0; row < rows; row++) {
+            for (var col = 0; col < cols; col++) {
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                span.style.left = Math.round(g.colX[col] - g.totalW / 2) + 'px';
+                span.style.top  = Math.round(g.rowY[row] - g.totalH / 2) + 'px';
+                var cellMin = Math.min(g.colW[col], g.rowH[row]);
+                span.style.fontSize = Math.max(8, Math.round(cellMin * ART_INV_PHI)) + 'px';
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                el.appendChild(span);
+                spans.push(span);
+            }
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+
+        var posX = 0, posY = 0, targetX = 0, targetY = 0;
+        var pauseUntil = 0;
+        var startTs = performance.now();
+        var ttl = 9500;
+        var lastTs = null;
+        var killed = false;
+
+        function pickNewTarget() {
+            var ang = Math.random() * Math.PI * 2;
+            var dist = 35 + Math.random() * 70;
+            targetX = posX + Math.cos(ang) * dist;
+            targetY = posY + Math.sin(ang) * dist;
+            // Soft bounds — keep the wanderer roughly local to its spawn (within ±150px)
+            targetX = Math.max(-180, Math.min(180, targetX));
+            targetY = Math.max(-150, Math.min(150, targetY));
+        }
+        pickNewTarget();
+
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            if (!lastTs) lastTs = ts;
+            var dt = Math.min(0.05, (ts - lastTs) / 1000);
+            lastTs = ts;
+            var sc = 1;
+            if (ts < pauseUntil) {
+                // Looking around — small head-wobble + breathing scale (sentient pause)
+                var wobble = Math.sin((ts - startTs) / 70) * 1.8;
+                sc = 1 + Math.sin((ts - startTs) / 220) * 0.08;
+                el.style.transform = 'translate(' + (posX + wobble) + 'px, ' + posY + 'px) scale(' + sc.toFixed(3) + ')';
+                requestAnimationFrame(step);
+                return;
+            }
+            var dx = targetX - posX, dy = targetY - posY;
+            var dist = Math.hypot(dx, dy);
+            if (dist < 5) {
+                // Arrived — pause to look around, then pick the next destination
+                pauseUntil = ts + 500 + Math.random() * 900;
+                setTimeout(function () { if (!killed) pickNewTarget(); }, 200);
+            } else {
+                var speed = 28; // px/s
+                var adv = Math.min(dist, speed * dt);
+                posX += (dx / dist) * adv;
+                posY += (dy / dist) * adv;
+                el.style.transform = 'translate(' + posX.toFixed(1) + 'px, ' + posY.toFixed(1) + 'px) scale(1)';
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+
+        var glitchTimer = setInterval(function () {
+            var n = Math.max(2, Math.round(spans.length * 0.20));
+            for (var i = 0; i < n; i++) spans[Math.floor(Math.random() * spans.length)].textContent = artGlyph();
+        }, 140);
+        setTimeout(function () {
+            killed = true;
+            clearInterval(glitchTimer);
+            el.style.transition = 'opacity 0.4s ease';
+            el.style.opacity = '0';
+            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }, ttl);
+    }
+
+    // Dispatcher — every spawn rolls a random variant from the enum so the screen cycles
+    // through every iteration of how artifacts have ever looked.
+    function spawnArtifact() {
+        var host = getHost();
+        if (!host) return;
+        var variant = ART_VARIANTS[Math.floor(Math.random() * ART_VARIANTS.length)];
+        switch (variant) {
+            case 'SCATTER':   spawnArtifactScatter(host);   break;
+            case 'LATTICE':   spawnArtifactLattice(host);   break;
+            case 'ANCHOR':    spawnArtifactAnchor(host);    break;
+            case 'SLUG':      spawnArtifactSlug(host);      break;
+            case 'CENTIPEDE': spawnArtifactCentipede(host); break;
+            case 'PULSE':     spawnArtifactPulse(host);     break;
+            case 'WANDERER':  spawnArtifactWanderer(host);  break;
+        }
+    }
+
+    // ── Morse-code glowing dot ────────────────────────────────────────────────
+    // A single dot pulses or shifts cardinal directions to spell a short word in Morse.
+    var MORSE_TABLE = {
+        'A':'.-',   'B':'-...', 'C':'-.-.', 'D':'-..',  'E':'.',    'F':'..-.',
+        'G':'--.',  'H':'....', 'I':'..',   'J':'.---', 'K':'-.-',  'L':'.-..',
+        'M':'--',   'N':'-.',   'O':'---',  'P':'.--.', 'Q':'--.-', 'R':'.-.',
+        'S':'...',  'T':'-',    'U':'..-',  'V':'...-', 'W':'.--',  'X':'-..-',
+        'Y':'-.--', 'Z':'--..',
+        '0':'-----','1':'.----','2':'..---','3':'...--','4':'....-',
+        '5':'.....','6':'-....','7':'--...','8':'---..','9':'----.'
+    };
+    // Cheat-code-ish message pool — natural-length messages, no length constraint applied.
+    var MORSE_MESSAGES = [
+        'SOS', 'HELP', 'CTRL', 'NULL', '404', 'KILL', 'BCI', 'GLMZ',
+        'JACK', 'WAKE', 'JOIN', 'PING', 'LOST', 'OKAY', 'AWAY',
+        'ZERO', 'IRIS', 'CALL', 'STOP', 'BURN', 'IDDQD', 'IDKFA',
+        'XYZZY', 'KONAMI', 'UPUPDOWN', 'BBABSEL', 'GHOSTLOG', 'SUDORM',
+        'ROOTKIT', 'CHMOD777', 'MORTAL11', 'ABACABB', 'FREEZE',
+        'CTRLALT', 'DEBUG'
+    ];
+    // rgb triplets — the CSS uses rgba(var(--mc), α) so we can pulse alpha in/out
+    var MORSE_COLORS = [
+        '255, 0, 51',     // red
+        '60, 130, 255',   // blue
+        '255, 185, 60',   // amber
+        '50, 220, 110',   // green
+        '220, 225, 230',  // white
+        '230, 80, 220',   // magenta
+        '60, 220, 230',   // cyan
+        '255, 110, 30'    // orange
+    ];
+
+    function morseEncode(msg) {
+        var out = [];
+        for (var i = 0; i < msg.length; i++) {
+            var ch = msg[i].toUpperCase();
+            if (MORSE_TABLE[ch]) out.push(MORSE_TABLE[ch]);
+        }
+        return out; // array of letter strings; join with letter-gap, gap inside string is intra-letter gap
+    }
+
+    function spawnMorseDot() {
+        var host = getHost();
+        if (!host) return;
+
+        // Natural-length message — Morse rules apply, no Fibonacci constraint.
+        var msg     = pick(MORSE_MESSAGES);
+        var color   = pick(MORSE_COLORS);
+        var letters = morseEncode(msg);
+        if (!letters.length) return;
+
+        // 90% blink, 10% shift. Shift mode is the rarer "this one's typing the cheat-code in motion" variant.
+        var mode = Math.random() < 0.10 ? 'shift' : 'blink';
+        // Cheat-code pace — ~3× faster than the original. dit ≈ 30–55ms
+        var unit = rand(30, 55);
+
+        // Build a flat instruction queue: {kind:'on', units:1|3} or {kind:'gap', units:1|3|7}
+        var queue = [];
+        for (var li = 0; li < letters.length; li++) {
+            var pat = letters[li];
+            for (var pi = 0; pi < pat.length; pi++) {
+                if (pi > 0) queue.push({ kind: 'gap', units: 1 }); // intra-letter gap
+                queue.push({ kind: 'on', units: pat[pi] === '.' ? 1 : 3 });
+            }
+            if (li < letters.length - 1) queue.push({ kind: 'gap', units: 3 }); // inter-letter gap
+        }
+
+        // Outer "orbit" container — handles the slow satellite drift across the sky.
+        // The dot inside is positioned at orbit-origin so its own transform (used by shift mode)
+        // composes cleanly with the orbit's drift transform. Spawn coords avoid the tile keepout.
+        var orbit = document.createElement('div');
+        orbit.className = 'cbg-morse-orbit';
+        var op = safePos(40, 40, 4, 92, 4, 92);
+        orbit.style.left = op[0] + '%';
+        orbit.style.top  = op[1] + '%';
+        // Tiny drift vector — barely moves, but enough that you'd notice if you watched it.
+        // 60–140px traveled over 45–80s ⇒ 1–3 px/sec, that "is that a satellite?" pace.
+        var driftAngle = Math.random() * Math.PI * 2;
+        var driftDist  = 60 + Math.random() * 80;
+        orbit.style.setProperty('--ox', Math.round(Math.cos(driftAngle) * driftDist) + 'px');
+        orbit.style.setProperty('--oy', Math.round(Math.sin(driftAngle) * driftDist) + 'px');
+        orbit.style.animation = 'cbg-morse-orbit-drift ' + (45 + Math.random() * 35).toFixed(1) + 's linear forwards';
+        host.appendChild(orbit);
+
+        var dot = document.createElement('div');
+        dot.className = 'cbg-morse-dot';
+        dot.style.setProperty('--mc', color);
+        // Shift-mode dots stay glowing the whole time; blink-mode dots toggle the .cbg-morse-on class
+        if (mode === 'shift') dot.classList.add('cbg-morse-on');
+        orbit.appendChild(dot);
+
+        // Fade in
+        dot.style.opacity = '0';
+        dot.style.transition = 'opacity 0.4s ease';
+        requestAnimationFrame(function () {
+            requestAnimationFrame(function () { dot.style.opacity = '1'; });
+        });
+
+        var dirs = [[0, -1], [0, 1], [-1, 0], [1, 0]]; // up, down, left, right
+        var idx = 0, killed = false;
+
+        function finish() {
+            if (killed) return;
+            killed = true;
+            dot.classList.remove('cbg-morse-on');
+            dot.style.transition = 'opacity 0.5s ease, transform 0.3s ease';
+            dot.style.transform = 'translate(0,0)';
+            dot.style.opacity = '0';
+            // Tear down the orbit container too — the dot lives inside it
+            setTimeout(function () { if (orbit.parentNode) orbit.parentNode.removeChild(orbit); }, 600);
+        }
+
+        function step() {
+            if (killed) return;
+            if (idx >= queue.length) { finish(); return; }
+            var s = queue[idx++];
+            var dur = s.units * unit;
+
+            if (s.kind === 'gap') {
+                if (mode === 'blink') dot.classList.remove('cbg-morse-on');
+                // shift mode: pause at start position during gap (transform already 0,0)
+                setTimeout(step, dur);
+                return;
+            }
+
+            // s.kind === 'on'
+            if (mode === 'blink') {
+                dot.classList.add('cbg-morse-on');
+                setTimeout(function () {
+                    if (killed) return;
+                    dot.classList.remove('cbg-morse-on');
+                    step();
+                }, dur);
+            } else {
+                // shift mode — slide in a random cardinal, hold, return; distance encodes dit vs dah.
+                // Each shift also swaps the dot's color so motion + chromatic shift mark the symbol.
+                var d    = dirs[Math.floor(Math.random() * 4)];
+                var dist = s.units === 1 ? 5 : 13; // dit = small, dah = bigger throw
+                var outMs = Math.round(dur * 0.55);
+                var holdMs = Math.round(dur * 0.10);
+                var backMs = dur - outMs - holdMs;
+                // Pick a different color than the current one — guaranteed change every shift
+                var nextColor = pick(MORSE_COLORS.filter(function (c) { return c !== dot.style.getPropertyValue('--mc'); }));
+                dot.style.setProperty('--mc', nextColor);
+                dot.style.transition = 'transform ' + outMs + 'ms ease-out';
+                dot.style.transform  = 'translate(' + (d[0] * dist) + 'px,' + (d[1] * dist) + 'px)';
+                setTimeout(function () {
+                    if (killed) return;
+                    setTimeout(function () {
+                        if (killed) return;
+                        dot.style.transition = 'transform ' + backMs + 'ms ease-in';
+                        dot.style.transform  = 'translate(0,0)';
+                        setTimeout(step, backMs);
+                    }, holdMs);
+                }, outMs);
+            }
+        }
+
+        step();
+
+        // Safety cap — if the queue somehow runs long, force-clean
+        var maxLifeMs = queue.reduce(function (a, q) { return a + q.units * unit; }, 0) + 1500;
+        setTimeout(finish, maxLifeMs + 800);
     }
 
     // ── Network connection attempts ───────────────────────────────────────────
@@ -3974,9 +5083,9 @@ window.consoleBg = (function () {
         return path;
     }
 
-    // Route one segment, randomly choosing from 8-dir diagonal-then-straight or cardinal L-shape
+    // Tron light-cycle routing: right-angle moves only, never diagonal.
+    // NET_OCCUPIED guarantees the path can never cross itself or other live wires.
     function netRouteSegment(x0, y0, x1, y1, extra) {
-        if (Math.random() < 0.4) { var d = netRouteDiag(x0, y0, x1, y1, extra); if (d) return d; }
         var hF = Math.random() < 0.5;
         return netRouteManh(x0, y0, x1, y1, hF, extra) || netRouteManh(x0, y0, x1, y1, !hF, extra);
     }
@@ -4053,16 +5162,114 @@ window.consoleBg = (function () {
     ];
     function netSuccessColor(col) { return pick(NET_COLORS.filter(function(c) { return c !== col; })); }
 
-    // 2226-appropriate endpoint IDs — no IP addresses
+    // 2226-appropriate endpoint IDs — no IP addresses. 100 distinct label formats.
+    function netHex(bits) { return Math.floor(Math.random() * Math.pow(2, bits)).toString(16).toUpperCase().padStart(Math.ceil(bits / 4), '0'); }
+    function netLetter() { return String.fromCharCode(65 + Math.floor(Math.random() * 26)); }
     var NET_ADDR_FMTS = [
-        function() { return 'NODE:' + Math.floor(Math.random()*0xFFFF).toString(16).toUpperCase().padStart(4,'0'); },
-        function() { return 'RLY-' + rand(100,999); },
-        function() { return 'ARCH:' + Math.floor(Math.random()*256).toString(16).toUpperCase() + '.' + rand(1,9); },
-        function() { return 'MEM:0x' + Math.floor(Math.random()*0xFFFF).toString(16).toUpperCase(); },
-        function() { return 'VX:' + rand(1,9) + Math.floor(Math.random()*16).toString(16).toUpperCase() + rand(1,9); },
-        function() { return 'SHARD:' + rand(1000,9999); },
-        function() { return 'BCI://' + Math.floor(Math.random()*0xFF).toString(16).toUpperCase() + ':' + rand(10,99); },
-        function() { return 'RELAY:' + Math.floor(Math.random()*16).toString(16).toUpperCase() + rand(10,99); },
+        function() { return 'NODE:'   + netHex(16); },
+        function() { return 'RLY-'    + rand(100,999); },
+        function() { return 'ARCH:'   + netHex(8)  + '.' + rand(1,9); },
+        function() { return 'MEM:0x'  + netHex(16); },
+        function() { return 'VX:'     + rand(1,9) + netHex(4) + rand(1,9); },
+        function() { return 'SHARD:'  + rand(1000,9999); },
+        function() { return 'BCI://'  + netHex(8) + ':' + rand(10,99); },
+        function() { return 'RELAY:'  + netHex(4) + rand(10,99); },
+        function() { return 'CORE-'   + netHex(8); },
+        function() { return 'BRIDGE:' + rand(10,99) + '/' + rand(10,99); },
+        function() { return 'HUB::'   + netLetter() + netLetter() + rand(100,999); },
+        function() { return 'SPINE-'  + netHex(12); },
+        function() { return 'GHOST:'  + netHex(16) + '@' + rand(1,9); },
+        function() { return 'FORK→'   + netHex(8); },
+        function() { return 'PORT:'   + rand(1024, 65535); },
+        function() { return 'AS'      + rand(10000,99999); },
+        function() { return 'TOR-'    + netHex(20).slice(0, 12); },
+        function() { return 'MESH#'   + netHex(8); },
+        function() { return 'DARK:'   + netHex(12); },
+        function() { return 'NEXUS-'  + netLetter() + rand(100,999); },
+        function() { return 'PULSE:'  + rand(40,200) + 'Hz'; },
+        function() { return 'FERRO·'  + netHex(8); },
+        function() { return 'KIRIN-'  + rand(1,9) + '.'  + rand(10,99); },
+        function() { return 'AMARA:'  + netHex(12); },
+        function() { return 'OBSID-'  + netHex(8); },
+        function() { return 'KARMA:'  + rand(0,7) + '/' + rand(0,7); },
+        function() { return 'STACK['  + rand(0,15) + ']'; },
+        function() { return 'PIPE→'   + rand(0,31) + '←' + rand(0,31); },
+        function() { return 'THRD:'   + netHex(8); },
+        function() { return 'EPHEM:'  + netHex(16); },
+        function() { return 'GATE:'   + netLetter() + netLetter() + '-' + rand(10,99); },
+        function() { return 'VAULT-'  + netHex(8); },
+        function() { return 'VEX:'    + rand(0,9) + ':' + rand(10,99); },
+        function() { return 'NULLPTR'; },
+        function() { return 'σ-'      + netHex(8); },
+        function() { return 'φ-'      + rand(100,999); },
+        function() { return 'WORM:'   + netHex(12); },
+        function() { return 'ROUTE→'  + netHex(8); },
+        function() { return 'TUNNEL[' + rand(0,99) + ']'; },
+        function() { return 'CACHE-'  + netHex(6); },
+        function() { return 'L2:'     + netHex(8); },
+        function() { return 'L3:'     + netHex(8); },
+        function() { return 'EDGE:'   + netLetter() + rand(100,999); },
+        function() { return 'GHOST['  + netHex(4) + ']'; },
+        function() { return 'AETH-'   + netHex(8); },
+        function() { return 'SCRIB:'  + rand(1,9) + '/' + rand(10,99); },
+        function() { return 'KEEP::'  + netHex(8); },
+        function() { return 'MIRROR-' + netHex(6); },
+        function() { return 'PYLON#'  + rand(100,999); },
+        function() { return 'HYDRA-'  + netLetter() + netLetter() + rand(10,99); },
+        function() { return 'DREAD:'  + netHex(8); },
+        function() { return 'HALF:'   + netHex(4) + '·' + netHex(4); },
+        function() { return 'OBELISK' + rand(1,9); },
+        function() { return 'STILL:'  + netHex(6); },
+        function() { return 'WHISPR-' + netHex(6); },
+        function() { return 'CRYPT:'  + netHex(12); },
+        function() { return 'ZERO:'   + netHex(8); },
+        function() { return 'COLD:'   + netHex(8); },
+        function() { return 'CIPHER#' + rand(1000,9999); },
+        function() { return 'DROP-'   + netLetter() + rand(10,99); },
+        function() { return 'BURN-'   + netHex(6); },
+        function() { return 'FENCE:'  + netHex(8); },
+        function() { return 'FANG:'   + netHex(6); },
+        function() { return 'WIRE-'   + rand(1,9) + '/' + rand(1,9) + '/' + rand(1,9); },
+        function() { return 'LATCH:'  + netHex(8); },
+        function() { return 'PHANT-'  + netHex(8); },
+        function() { return 'STEEPLE' + rand(10,99); },
+        function() { return 'SPIRE-'  + netHex(6); },
+        function() { return 'KOBOLD:' + netHex(6); },
+        function() { return 'HAUNT:'  + netHex(8); },
+        function() { return 'SIGIL#'  + netHex(8); },
+        function() { return 'CHANT-'  + rand(100,999); },
+        function() { return 'EMBER:'  + netHex(6); },
+        function() { return 'OBOL-'   + netHex(6); },
+        function() { return 'STRAY-'  + netHex(8); },
+        function() { return 'LANTRN:' + rand(10,99); },
+        function() { return 'GLITCH#' + netHex(6); },
+        function() { return 'SHARDS·' + rand(1,9) + '/' + rand(10,99); },
+        function() { return 'BIND:'   + netHex(8); },
+        function() { return 'DYE:'    + netHex(6); },
+        function() { return 'KEEN-'   + netHex(8); },
+        function() { return 'LURE:'   + netHex(8); },
+        function() { return 'COWL:'   + netHex(6); },
+        function() { return 'GRAVE:'  + netHex(8); },
+        function() { return 'WICK-'   + rand(100,999); },
+        function() { return 'TINDER#' + netHex(6); },
+        function() { return 'KNAVE:'  + netLetter() + netLetter() + rand(10,99); },
+        function() { return 'STILE-'  + netHex(6); },
+        function() { return 'MOTH:'   + netHex(8); },
+        function() { return 'BRIAR-'  + netHex(8); },
+        function() { return 'ASHEN:'  + netHex(6); },
+        function() { return 'LICH#'   + netHex(8); },
+        function() { return 'OUBLI-'  + netHex(6); },
+        function() { return 'VOLT:'   + rand(1,99) + 'kV'; },
+        function() { return 'NEMA-'   + rand(1,99); },
+        function() { return 'FORGE:'  + netHex(8); },
+        function() { return 'PALE-'   + netHex(6); },
+        function() { return 'WARDEN'  + rand(10,99); },
+        function() { return 'RUNE:'   + netHex(6); },
+        function() { return 'FLINT-'  + netHex(8); },
+        function() { return 'SCYTHE#' + netHex(6); },
+        function() { return 'YIELD:'  + rand(0,99) + '%'; },
+        function() { return 'SLAB-'   + netHex(6); },
+        function() { return 'KILN:'   + netHex(8); },
     ];
     function netAddr() { return pick(NET_ADDR_FMTS)(); }
 
@@ -4075,27 +5282,193 @@ window.consoleBg = (function () {
         'RELAY NODE OFFLINE',
         'ENCRYPTION MISMATCH',
         'TRACEROUTE BLOCKED',
+        // 100 additional failure messages
+        'KEY EXCHANGE ABORTED',
+        'CERT CHAIN INVALID',
+        'CERT EXPIRED',
+        'CERT REVOKED',
+        'TLS DOWNGRADE REJECTED',
+        'CIPHER SUITE UNSUPPORTED',
+        'PROTOCOL VERSION MISMATCH',
+        'UPSTREAM RESET',
+        'DOWNSTREAM RESET',
+        'PEER CLOSED CONNECTION',
+        'KEEPALIVE EXPIRED',
+        'TTL EXCEEDED',
+        'MTU MISMATCH',
+        'FRAGMENT REASSEMBLY FAIL',
+        'SEQUENCE GAP',
+        'ACK STORM',
+        'CONGESTION COLLAPSE',
+        'BACKPRESSURE LIMIT',
+        'QUEUE OVERFLOW',
+        'BUFFER UNDERRUN',
+        'RING BUFFER WRAP',
+        'TOKEN BUCKET DEPLETED',
+        'RATE LIMIT EXCEEDED',
+        'QUOTA EXHAUSTED',
+        'CIRCUIT BREAKER OPEN',
+        'DEADLINE EXCEEDED',
+        'OPERATION CANCELLED',
+        'CLIENT DISCONNECTED',
+        'SERVER UNREACHABLE',
+        'GATEWAY UNAVAILABLE',
+        'PROXY FAULT',
+        'LOAD BALANCER REJECT',
+        'BACKEND POOL DRAINED',
+        'NO HEALTHY UPSTREAMS',
+        'DNS RESOLUTION FAIL',
+        'DNS POISONED — REFUSED',
+        'BCI NEUROSYNC LOST',
+        'CORTEX ATTESTATION FAIL',
+        'IDENTITY ASSERTION REJECTED',
+        'CLAIMS NOT ENDORSED',
+        'TRUST ANCHOR MISSING',
+        'CRL FETCH FAIL',
+        'OCSP RESPONSE STALE',
+        'NONCE REPLAYED',
+        'REPLAY DETECTED — DROPPED',
+        'INTEGRITY HMAC INVALID',
+        'PAYLOAD TAMPERED',
+        'CHECKSUM MISMATCH',
+        'COMPRESSION BOMB',
+        'MALFORMED HEADER',
+        'OVERSIZED FRAME',
+        'UNDERSIZED FRAME',
+        'INVALID OPCODE',
+        'STREAM ABORTED',
+        'WINDOW UPDATE FROZEN',
+        'FLOW CONTROL VIOLATION',
+        'GOAWAY RECEIVED',
+        'SETTINGS NEGOTIATION FAILED',
+        'PUSH PROMISE REJECTED',
+        'CONTINUATION FRAME LOST',
+        'PRIORITY DEPENDENCY CYCLE',
+        'SHARD UNREACHABLE',
+        'CONSENSUS LOST — RETRY',
+        'QUORUM NOT MET',
+        'LEADER ELECTION TIMEOUT',
+        'WAL FRAME CORRUPT',
+        'JOURNAL TRUNCATED',
+        'SNAPSHOT INCOMPLETE',
+        'REPLICATION LAG TOO HIGH',
+        'PARTITION TOLERANCE BREACHED',
+        'SPLIT BRAIN DETECTED',
+        'GHOST WRITE OBSERVED',
+        'STALE READ — REJECTED',
+        'CLOCK SKEW INTOLERABLE',
+        'NTP DRIFT > THRESHOLD',
+        'EPOCH ROLLED — STALE TOKEN',
+        'CARRIER SIGNAL LOST',
+        'LINK LAYER DOWN',
+        'PHYSICAL LAYER FAULT',
+        'OPTICAL LINK ALARM',
+        'ICE CONNECTIVITY FAIL',
+        'STUN REFLEX ABSENT',
+        'TURN ALLOC DENIED',
+        'NAT BINDING EXPIRED',
+        'CGNAT POOL EXHAUSTED',
+        'BGP HIJACK SUSPECTED',
+        'AS PATH POISONED',
+        'PREFIX WITHDRAWN',
+        'JURISDICTIONAL FILTER',
+        'GEO-IP BLACKLIST',
+        'REGION ACCESS DENIED',
+        'SOVEREIGN CHANNEL CLOSED',
+        'CORPONATION FIREWALL HOLD',
+        'ENCLAVE SEAL FAIL',
+        'REMOTE ATTESTATION REJECTED',
+        'TPM QUOTE INVALID',
+        'SECURE BOOT FAIL',
+        'KERNEL MODULE TAINTED',
+        'DRIVER PANIC — CONNECTION LOST',
+        'INTERRUPT STORM',
+        'IRQ DEFERRED FOREVER',
+        'DMA REGION INVALID',
+        'POWER RAIL BROWNOUT',
+        'THERMAL THROTTLE — LINK DOWN',
+        'EMP-CLASS INTERFERENCE',
+        'JAMMING DETECTED',
+        'DECOY RESPONSE — IGNORED',
+        'INTERCEPTION CONFIRMED',
+        'TRAP NODE — BAILING',
+        'TARPIT — ABANDONING',
+        'HONEYNET SUSPECTED',
+        'KILL-SWITCH ENGAGED',
     ];
-    function netShowFail(host, fx, fy, col, elems, gridPath) {
+    // Sharp-turn sparks — small particle burst at a 90° corner, like a Tron light cycle scraping the wall
+    function netSpawnSparks(host, px, py, col) {
+        var n = rand(4, 8);
+        for (var i = 0; i < n; i++) {
+            var s = document.createElement('div');
+            s.className = 'cbg-net-spark';
+            s.style.left  = px + 'px';
+            s.style.top   = py + 'px';
+            s.style.color = col.fail; // bright variant of the wire colour
+            var ang  = Math.random() * Math.PI * 2;
+            var dist = rand(14, 32);
+            s.style.setProperty('--sx', Math.round(Math.cos(ang) * dist) + 'px');
+            s.style.setProperty('--sy', Math.round(Math.sin(ang) * dist) + 'px');
+            var dur = rand(220, 420);
+            s.style.animationDuration = dur + 'ms';
+            host.appendChild(s);
+            (function (el) {
+                setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, dur + 60);
+            })(s);
+        }
+    }
+
+    // Direction-aware fail message. `dir = {dx, dy}` is the wire's last-segment travel vector.
+    // Horizontal travel: text continues horizontally past the failure point in the travel direction.
+    // Vertical travel:   text is centered above (going up) or below (going down) the failure point.
+    function netShowFail(host, fx, fy, col, elems, gridPath, dir) {
+        dir = dir || { dx: 1, dy: 0 };
         var msg = document.createElement('div');
         msg.className = 'cbg-net-fail';
         msg.style.color = col.fail;
-        msg.style.left  = fx + 'px';
-        msg.style.top   = fy + 'px';
+
+        // Pick anchor + offset from direction. Inline transform replaces the default centering.
+        if (Math.abs(dir.dx) >= Math.abs(dir.dy)) {
+            // Horizontal travel — extend the text along the line, vertically centered
+            if (dir.dx >= 0) {
+                msg.style.left = (fx + 6) + 'px';
+                msg.style.top  = fy + 'px';
+                msg.style.transform = 'translate(0, -50%)';
+                msg.style.textAlign = 'left';
+            } else {
+                msg.style.left = (fx - 6) + 'px';
+                msg.style.top  = fy + 'px';
+                msg.style.transform = 'translate(-100%, -50%)';
+                msg.style.textAlign = 'right';
+            }
+        } else {
+            // Vertical travel — text centered above or below the failure point
+            if (dir.dy >= 0) {
+                msg.style.left = fx + 'px';
+                msg.style.top  = (fy + 6) + 'px';
+                msg.style.transform = 'translate(-50%, 0)';
+            } else {
+                msg.style.left = fx + 'px';
+                msg.style.top  = (fy - 6) + 'px';
+                msg.style.transform = 'translate(-50%, -100%)';
+            }
+            msg.style.textAlign = 'center';
+        }
+
         msg.textContent = pick(NET_FAIL_MSGS);
         host.appendChild(msg);
-        setTimeout(function() {
+        setTimeout(function () {
             if (msg.parentNode) msg.parentNode.removeChild(msg);
-            elems.forEach(function(el) {
+            elems.forEach(function (el) {
                 el.style.transition = 'opacity 0.4s ease';
                 el.style.opacity = '0';
-                setTimeout(function() { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+                setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
             });
-            gridPath.forEach(function(p) { NET_OCCUPIED.delete(netGk(p[0], p[1])); });
+            gridPath.forEach(function (p) { NET_OCCUPIED.delete(netGk(p[0], p[1])); });
         }, 1100);
     }
 
-    // Expanding ping ring — occasionally spawns an intercepting tracer
+    // Expanding ping ring — fires at every successful corner, neutral marker
     function netSpawnPing(host, px, py, col, depth) {
         depth = depth || 0;
         var el = document.createElement('div');
@@ -4104,10 +5477,261 @@ window.consoleBg = (function () {
         el.style.left = px + 'px';
         el.style.top  = py + 'px';
         host.appendChild(el);
-        setTimeout(function() { if (el.parentNode) el.parentNode.removeChild(el); }, 750);
+        setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 750);
         if (depth < 2 && Math.random() < 0.18) {
-            setTimeout(function() { netSpawnTracer(host, px, py, col, depth + 1); }, rand(200, 700));
+            setTimeout(function () { netSpawnTracer(host, px, py, col, depth + 1); }, rand(200, 700));
         }
+    }
+
+    // Mean glyphs the interception/predator swarm cycles through
+    var NET_WASP_CHARS = '#@!*&%§¶†‡¦¤¥×÷±¬¿¡';
+
+    // ── Artifact predator swarm — RARE event ────────────────────────────────────
+    // The swarm is no longer a network-failure mechanic. It hunts the LARGEST artifact on
+    // screen, consuming and converting its cells one at a time until nothing remains. Bails
+    // silently if there's no suitable target. Should feel like a surprise every time.
+    function spawnArtifactPredator() {
+        var host = getHost();
+        if (!host) return;
+        // Find the largest artifact on screen by cell count
+        var artifacts = host.querySelectorAll('.cbg-artifact');
+        var target = null, mostCells = 0;
+        artifacts.forEach(function (a) {
+            var c = a.querySelectorAll('.cbg-artifact-char').length;
+            if (c > mostCells) { mostCells = c; target = a; }
+        });
+        if (!target || mostCells < 16) return; // nothing big enough — silent bail
+
+        var hostRect = host.getBoundingClientRect();
+        var tRect    = target.getBoundingClientRect();
+        var ax = tRect.left - hostRect.left + tRect.width  / 2;
+        var ay = tRect.top  - hostRect.top  + tRect.height / 2;
+
+        // Live cell pool — references to actual DOM nodes still inside the artifact
+        var cellPool = Array.prototype.slice.call(target.querySelectorAll('.cbg-artifact-char'));
+        var n = Math.min(cellPool.length, rand(8, 14));
+
+        // Swarm origin — distant point off the artifact
+        var origAng  = Math.random() * Math.PI * 2;
+        var origDist = 220 + Math.random() * 200;
+        var ox = Math.max(20, Math.min((host.offsetWidth  || 800) - 20, ax + Math.cos(origAng) * origDist));
+        var oy = Math.max(20, Math.min((host.offsetHeight || 600) - 20, ay + Math.sin(origAng) * origDist));
+
+        // ── Prey detection + panic response ────────────────────────────────────
+        // The artifact has a directional detection cone — fastest in its direction of travel,
+        // slowest behind it. If the predator's origin lies within the cone, the artifact panics
+        // and redirects its crawl vector to flee AWAY from the predator at increased magnitude.
+        var artCdx = parseFloat(target.style.getPropertyValue('--cdx')) || 0;
+        var artCdy = parseFloat(target.style.getPropertyValue('--cdy')) || 0;
+        var travelMag = Math.hypot(artCdx, artCdy);
+        var apdx = ox - ax, apdy = oy - ay;     // from artifact center to predator origin
+        var apMag = Math.hypot(apdx, apdy);
+        var alignDot = 0;
+        if (travelMag > 0 && apMag > 0) {
+            alignDot = (artCdx / travelMag) * (apdx / apMag)
+                     + (artCdy / travelMag) * (apdy / apMag);
+            // alignDot ≈ +1: predator straight ahead (in direction of travel) → max detection
+            // alignDot ≈ -1: predator straight behind                         → min detection
+        }
+        var maxDetRadius = 420;   // detection range when predator is straight ahead
+        var minDetRadius = 100;   // detection range when predator is behind
+        var detRadius = minDetRadius + (maxDetRadius - minDetRadius) * (alignDot * 0.5 + 0.5);
+        if (apMag > 0 && apMag < detRadius) {
+            // PANIC: redirect crawl AWAY from predator. The current keyframe animation re-evaluates
+            // its var()-based keyframes when --cdx/--cdy change, so the artifact lurches into the
+            // new flee direction at the next frame — reads as a startled bolt.
+            var fleeMag = 360;
+            var fleeX = (-apdx / apMag) * fleeMag;
+            var fleeY = (-apdy / apMag) * fleeMag;
+            target.style.setProperty('--cdx', Math.round(fleeX) + 'px');
+            target.style.setProperty('--cdy', Math.round(fleeY) + 'px');
+        }
+
+        var PRED_COLOR = '255, 34, 68'; // rgb triplet for the wasp red
+        var wasps = [];
+        for (var i = 0; i < n; i++) {
+            var w = document.createElement('span');
+            w.className = 'cbg-net-wasp';
+            w.style.color = '#ff2244';
+            w.style.fontSize = rand(11, 16) + 'px';
+            for (var k = 1; k <= 4; k++) {
+                var jang = Math.random() * Math.PI * 2;
+                var jr   = 4 + Math.random() * 10;
+                w.style.setProperty('--bx' + k, Math.round(Math.cos(jang) * jr) + 'px');
+                w.style.setProperty('--by' + k, Math.round(Math.sin(jang) * jr) + 'px');
+            }
+            w.style.setProperty('--bd', rand(80, 140) + 'ms');
+            w.textContent = NET_WASP_CHARS[Math.floor(Math.random() * NET_WASP_CHARS.length)];
+            var jx = (Math.random() - 0.5) * 36;
+            var jy = (Math.random() - 0.5) * 36;
+            w.style.left = (ox + jx) + 'px';
+            w.style.top  = (oy + jy) + 'px';
+            host.appendChild(w);
+            wasps.push({ el: w, x: ox + jx, y: oy + jy, target: null });
+        }
+
+        var swarmSpeed = 720; // px/s — deliberate pace, gives the artifact time to die
+        var arriveDist = 10;
+        var lastTs = null;
+        var done = false;
+
+        function step(ts) {
+            if (done) return;
+            if (!lastTs) { lastTs = ts; requestAnimationFrame(step); return; }
+            var dt = Math.min(0.05, (ts - lastTs) / 1000);
+            lastTs = ts;
+            var hr = host.getBoundingClientRect();
+            for (var i = 0; i < wasps.length; i++) {
+                var w = wasps[i];
+                // Pick a fresh target if needed
+                if (!w.target || !w.target.parentNode) {
+                    if (cellPool.length === 0) { w.target = null; continue; }
+                    var idx = Math.floor(Math.random() * cellPool.length);
+                    w.target = cellPool.splice(idx, 1)[0];
+                }
+                // Re-read target position each frame — artifacts crawl/undulate, target moves
+                var cr = w.target.getBoundingClientRect();
+                if (cr.width === 0 && cr.height === 0) {
+                    // Target already detached — drop it and pick next frame
+                    w.target = null;
+                    continue;
+                }
+                var tx = cr.left - hr.left + cr.width  / 2;
+                var ty = cr.top  - hr.top  + cr.height / 2;
+                var dx = tx - w.x, dy = ty - w.y;
+                var dist = Math.hypot(dx, dy);
+                if (dist <= arriveDist) {
+                    // Consume + convert: cell adopts a wasp glyph and red color, then dissolves
+                    var c = w.target;
+                    c.textContent = NET_WASP_CHARS[Math.floor(Math.random() * NET_WASP_CHARS.length)];
+                    c.style.color = '#ff2244';
+                    c.style.transition = 'opacity 0.18s ease';
+                    c.style.opacity = '0';
+                    setTimeout((function (cellEl) { return function () {
+                        if (cellEl.parentNode) cellEl.parentNode.removeChild(cellEl);
+                    }; })(c), 200);
+                    w.target = null;
+                    continue;
+                }
+                var advance = Math.min(dist, swarmSpeed * dt);
+                w.x += (dx / dist) * advance;
+                w.y += (dy / dist) * advance;
+                w.el.style.left = w.x + 'px';
+                w.el.style.top  = w.y + 'px';
+            }
+
+            // Done when every cell is gone AND every wasp has cleared its current target
+            var allDone = (cellPool.length === 0) && wasps.every(function (w) { return !w.target; });
+            if (!allDone) { requestAnimationFrame(step); return; }
+            done = true;
+            // Disperse wasps off in random directions and fade them out
+            wasps.forEach(function (w) {
+                var dispAng = Math.random() * Math.PI * 2;
+                var dispD   = 60 + Math.random() * 80;
+                w.el.style.transition = 'left 0.45s ease-out, top 0.45s ease-out, opacity 0.45s ease';
+                w.el.style.left = (w.x + Math.cos(dispAng) * dispD) + 'px';
+                w.el.style.top  = (w.y + Math.sin(dispAng) * dispD) + 'px';
+                w.el.style.opacity = '0';
+                setTimeout(function () { if (w.el.parentNode) w.el.parentNode.removeChild(w.el); }, 480);
+            });
+            // Remove the now-empty artifact container
+            setTimeout(function () { if (target.parentNode) target.parentNode.removeChild(target); }, 500);
+        }
+        requestAnimationFrame(step);
+    }
+
+    // Hostile interception swarm — originates OFF the wire and HOMES on a moving target.
+    // `getTarget()` returns the current target point (x, y) — typically the LATEST corner the
+    // wire has reached. As the swarm flies, it scans every corner in `corners`; when its centroid
+    // gets within `awareRadius` of an undiscovered corner, `onAware(idx, x, y)` fires (the swarm
+    // "becomes aware" of that corner — caller fires a ping and marks it for the wire's redraw).
+    // `onArrive()` fires when the swarm catches up to the moving target (severs the wire).
+    function netSpawnInterception(host, getTarget, corners, col, onAware, onArrive) {
+        var hostW = host.offsetWidth || 800, hostH = host.offsetHeight || 600;
+        var n = rand(8, 14);
+        // Initial swarm origin — random distant point relative to the *current* target
+        var initial = getTarget();
+        var origAngle = Math.random() * Math.PI * 2;
+        var origDist  = 200 + Math.random() * 200;
+        var swarmX = Math.max(20, Math.min(hostW - 20, initial.x + Math.cos(origAngle) * origDist));
+        var swarmY = Math.max(20, Math.min(hostH - 20, initial.y + Math.sin(origAngle) * origDist));
+
+        var wasps = [];
+        for (var i = 0; i < n; i++) {
+            var w = document.createElement('span');
+            w.className = 'cbg-net-wasp';
+            w.style.color = col.fail;
+            w.style.fontSize = rand(10, 16) + 'px';
+            for (var k = 1; k <= 4; k++) {
+                var ang = Math.random() * Math.PI * 2;
+                var r   = 4 + Math.random() * 10;
+                w.style.setProperty('--bx' + k, Math.round(Math.cos(ang) * r) + 'px');
+                w.style.setProperty('--by' + k, Math.round(Math.sin(ang) * r) + 'px');
+            }
+            w.style.setProperty('--bd', rand(80, 140) + 'ms');
+            w.textContent = NET_WASP_CHARS[Math.floor(Math.random() * NET_WASP_CHARS.length)];
+            // Per-wasp offset around swarm centroid — gives the cluster width without breaking the formation
+            var ox = (Math.random() - 0.5) * 32;
+            var oy = (Math.random() - 0.5) * 32;
+            w.style.left = (swarmX + ox) + 'px';
+            w.style.top  = (swarmY + oy) + 'px';
+            host.appendChild(w);
+            wasps.push({ el: w, ox: ox, oy: oy });
+        }
+
+        // Swarm pace: faster than the typical wire speed (720–1100 px/s), so it always catches up.
+        // The wire's speed is its pace ALONG the path; the swarm's speed is straight-line — so even
+        // before doing the math, straight-line beats path-following with turns. 1500 px/s is plenty.
+        var swarmSpeed   = 1500;
+        var arriveDist   = 16;
+        var awareRadius  = 70;  // detection radius — swarm "becomes aware" of corners within this range
+        var awareR2      = awareRadius * awareRadius;
+        var lastTs = null, arrived = false;
+
+        function step(ts) {
+            if (arrived) return;
+            if (!lastTs) { lastTs = ts; requestAnimationFrame(step); return; }
+            var dt = Math.min(0.05, (ts - lastTs) / 1000);
+            lastTs = ts;
+
+            // Awareness scan — every undiscovered corner within radius gets discovered this frame.
+            // The wire keeps appearing dot-less until the swarm sweeps past; then dots bloom along
+            // the path, like the swarm is mapping the route as it hunts.
+            if (corners) {
+                for (var ci = 0; ci < corners.length; ci++) {
+                    var c = corners[ci];
+                    if (c.discovered) continue;
+                    var pdx = c.x - swarmX, pdy = c.y - swarmY;
+                    if (pdx * pdx + pdy * pdy <= awareR2) {
+                        c.discovered = true;
+                        onAware(c.idx, c.x, c.y);
+                    }
+                }
+            }
+
+            var t = getTarget();
+            var dx = t.x - swarmX, dy = t.y - swarmY;
+            var dist = Math.hypot(dx, dy);
+            if (dist <= arriveDist) {
+                arrived = true;
+                wasps.forEach(function (w) {
+                    w.el.style.transition = 'opacity 0.3s ease';
+                    w.el.style.opacity = '0';
+                    setTimeout(function () { if (w.el.parentNode) w.el.parentNode.removeChild(w.el); }, 320);
+                });
+                onArrive();
+                return;
+            }
+            var advance = Math.min(dist, swarmSpeed * dt);
+            swarmX += (dx / dist) * advance;
+            swarmY += (dy / dist) * advance;
+            for (var i = 0; i < wasps.length; i++) {
+                wasps[i].el.style.left = (swarmX + wasps[i].ox) + 'px';
+                wasps[i].el.style.top  = (swarmY + wasps[i].oy) + 'px';
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
     }
 
     // Small tracer that homes toward (tx, ty) and fires a ping on arrival
@@ -4139,25 +5763,199 @@ window.consoleBg = (function () {
         }, ms + 60);
     }
 
+    // Plan a Tron light-cycle path between two boxes. The result is fully deterministic before
+    // the line ever leaves the source: a Fibonacci number of turns, monotonic in each axis (so
+    // the wire CANNOT double back on itself), entering the destination box at the exact midpoint
+    // of one of its four sides.
+    var NET_FIB_TURNS = [1, 3, 5, 13]; // odd Fibs only — odd K gives K+1 segments alternating H/V cleanly
+
+    // Split a signed total into n monotonic pieces, all non-zero in the same direction,
+    // every piece a DISTINCT integer multiple of minMag, and not equal to any value in `forbidden`.
+    // Each piece's magnitude is multiplier × minMag where multipliers are unique positive integers.
+    // This produces "circuit board"-style runs: short stubs, long traces, no two segments the same.
+    function netSplitMono(total, n, minMag, forbidden) {
+        forbidden = forbidden || [];
+        var forbidUnits = forbidden.map(function (f) { return Math.round(Math.abs(f) / minMag); });
+        var sign = total < 0 ? -1 : 1;
+        var totalUnits = Math.round(Math.abs(total) / minMag);
+        if (n === 1) return [total];
+
+        // Minimum sum for n distinct positive integers is 1+2+…+n. If the budget is tight,
+        // we shrink minMag-equivalent to whatever fits — caller's job to size the boxes generously.
+        var baseSum = n * (n + 1) / 2;
+        if (totalUnits < baseSum) {
+            // Degenerate: fall back to the simple staircase (1, 2, …, n-1, remainder)
+            var pieces = [];
+            var rem = totalUnits;
+            for (var i = 0; i < n - 1; i++) {
+                var p = Math.min(i + 1, rem - (n - i - 1));
+                p = Math.max(1, p);
+                pieces.push(sign * p * minMag);
+                rem -= p;
+            }
+            pieces.push(sign * Math.max(1, rem) * minMag);
+            return pieces;
+        }
+
+        // Start from the minimal distinct set [1, 2, …, n] and distribute the surplus by
+        // bumping random multipliers (only when the new value stays unique and not forbidden).
+        var mults = [];
+        for (var i = 1; i <= n; i++) mults.push(i);
+        var surplus = totalUnits - baseSum;
+        var guard = 4000;
+        while (surplus > 0 && guard-- > 0) {
+            var idx = Math.floor(Math.random() * n);
+            var newVal = mults[idx] + 1;
+            if (mults.indexOf(newVal) >= 0 || forbidUnits.indexOf(newVal) >= 0) continue;
+            mults[idx] = newVal;
+            surplus--;
+        }
+        // Dump any leftover surplus onto the current maximum (preserves uniqueness)
+        if (surplus > 0) {
+            var mi = 0;
+            for (var i = 1; i < n; i++) if (mults[i] > mults[mi]) mi = i;
+            mults[mi] += surplus;
+        }
+        // Shuffle so segment lengths don't appear in monotonic order along the path
+        for (var i = mults.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var tmp = mults[i]; mults[i] = mults[j]; mults[j] = tmp;
+        }
+        var pieces = mults.map(function (m) { return sign * m * minMag; });
+        // Absorb the integer-rounding gap into the last piece so sum(pieces) === total exactly.
+        // Without this, the final segment can pick up a few sub-pixel diagonals from rounding.
+        var sum = pieces.reduce(function (a, b) { return a + b; }, 0);
+        var diff = total - sum;
+        pieces[pieces.length - 1] += diff;
+        return pieces;
+    }
+
+    // Pick a target Fibonacci K. We require this EXACT K to fit — no graceful fallback. If the
+    // chosen K's segment count doesn't fit in the available budget, the planner returns null
+    // and the connection fails (every wire has its limit of corners; geometry that can't honor
+    // it doesn't downgrade — it severs).
+    function netPickFibTurns(totalH, totalV, minSeg) {
+        // Pick at random from the Fibonacci ladder — every connection rolls its own complexity.
+        // Bias toward higher values so the screen is mostly circuitous, but small Ks still appear.
+        var K = NET_FIB_TURNS[Math.floor(Math.random() * NET_FIB_TURNS.length)];
+        var nPer = (K + 1) / 2;
+        if (Math.abs(totalH) < nPer * minSeg || Math.abs(totalV) < nPer * minSeg) return -1;
+        return K;
+    }
+
+    // Plan the wire. Returns { pts, K, srcSide, dstSide } where pts[0] is the source-side
+    // midpoint and pts[last] is the destination-side midpoint — both perfectly centered.
+    function netPlanFibPath(p1, sw, sh, p2, bw, bh) {
+        var dxRaw = p2[0] - p1[0], dyRaw = p2[1] - p1[1];
+        // Default first-segment direction is the dominant displacement axis — most direct route.
+        // ~30% of attempts deliberately START on the OPPOSITE axis, so the wire heads "the wrong
+        // way" first and has to correct itself with later segments. If that direction's geometry
+        // can't accommodate the chosen K, the connection gets lost (the wire couldn't recover).
+        var dominantH = Math.abs(dxRaw) >= Math.abs(dyRaw);
+        var firstH = Math.random() < 0.30 ? !dominantH : dominantH;
+        var srcSide, dstSide, srcExit, dstEntry;
+        if (firstH) {
+            srcSide  = dxRaw > 0 ? 'R' : 'L';
+            dstSide  = dyRaw >= 0 ? 'T' : 'B';
+            srcExit  = srcSide === 'R' ? [p1[0] + sw, p1[1]] : [p1[0] - sw, p1[1]];
+            dstEntry = dstSide === 'T' ? [p2[0], p2[1] - bh] : [p2[0], p2[1] + bh];
+        } else {
+            srcSide  = dyRaw > 0 ? 'D' : 'U';
+            dstSide  = dxRaw >= 0 ? 'L' : 'R';
+            srcExit  = srcSide === 'D' ? [p1[0], p1[1] + sh] : [p1[0], p1[1] - sh];
+            dstEntry = dstSide === 'L' ? [p2[0] - bw, p2[1]] : [p2[0] + bw, p2[1]];
+        }
+        var totalH = dstEntry[0] - srcExit[0];
+        var totalV = dstEntry[1] - srcExit[1];
+        var minSeg = NET_GRID; // 24 px — visual grid spacing
+        var K = netPickFibTurns(totalH, totalV, minSeg);
+        // Connection fails outright if the rolled corner count can't fit the available geometry —
+        // no downgrading to a simpler path. The wire either is what it was supposed to be, or breaks.
+        if (K < 0) return null;
+        var nPer = (K + 1) / 2;
+        // Generate H pieces first; pass them as forbidden when generating V pieces so that
+        // NO two segments anywhere in the wire share a length. The result reads as a circuitous
+        // PCB trace, never a regular grid step.
+        var hPieces = netSplitMono(totalH, nPer, minSeg, []);
+        var vPieces = netSplitMono(totalV, nPer, minSeg, hPieces);
+        var pts = [srcExit.slice()];
+        var cx = srcExit[0], cy = srcExit[1];
+        if (firstH) {
+            for (var i = 0; i < nPer; i++) {
+                cx += hPieces[i]; pts.push([cx, cy]);
+                cy += vPieces[i]; pts.push([cx, cy]);
+            }
+        } else {
+            for (var i = 0; i < nPer; i++) {
+                cy += vPieces[i]; pts.push([cx, cy]);
+                cx += hPieces[i]; pts.push([cx, cy]);
+            }
+        }
+        // Snap final point exactly to the planned midpoint — kills any rounding drift so the wire
+        // truly enters dead-centre on the destination side.
+        pts[pts.length - 1] = dstEntry.slice();
+        // Validate: every segment must be purely H or purely V — no diagonals allowed.
+        // If rounding ever produced a segment that changes both axes, the connection is lost.
+        for (var vi = 1; vi < pts.length; vi++) {
+            var sdx = pts[vi][0] - pts[vi - 1][0];
+            var sdy = pts[vi][1] - pts[vi - 1][1];
+            if (Math.abs(sdx) > 0.5 && Math.abs(sdy) > 0.5) return null;
+        }
+        return { pts: pts, K: K, srcSide: srcSide, dstSide: dstSide };
+    }
+
+    // Single-connection lock — only one network wire effect is allowed on screen at a time.
+    // Cleared by every terminal path (success fade-out, planner failure, willFail trigger).
+    var NET_BUSY = false;
+
     function spawnNetConnect() {
+        if (NET_BUSY) return;
         var host = getHost();
         if (!host) return;
+        NET_BUSY = true;
         var hostW = host.offsetWidth  || 800;
         var hostH = host.offsetHeight || 600;
-        var maxGX = Math.floor(hostW / NET_GRID) - 2;
-        var maxGY = Math.floor(hostH / NET_GRID) - 2;
         var col = pick(NET_COLORS);
         var marg = 70;
+        // Convert tile keepout rects to host-relative coords once for this attempt loop
+        var hostRect = host.getBoundingClientRect();
+        var keepout = getKeepoutRects().map(function (r) {
+            return {
+                left:   r.left   - hostRect.left,
+                right:  r.right  - hostRect.left,
+                top:    r.top    - hostRect.top,
+                bottom: r.bottom - hostRect.top
+            };
+        });
+        function pairBoundingBox(a, b) {
+            return {
+                left:   Math.min(a[0], b[0]),
+                right:  Math.max(a[0], b[0]),
+                top:    Math.min(a[1], b[1]),
+                bottom: Math.max(a[1], b[1])
+            };
+        }
+        function pairCrossesKeepout(a, b) {
+            // Wire is monotonic Manhattan, so its full extent stays within the bounding box of
+            // its endpoints. If THAT box overlaps any tile rect, the wire would cross tiles.
+            var bb = pairBoundingBox(a, b);
+            for (var k = 0; k < keepout.length; k++) {
+                var kc = keepout[k];
+                if (bb.left < kc.right && bb.right > kc.left && bb.top < kc.bottom && bb.bottom > kc.top) {
+                    return true;
+                }
+            }
+            return false;
+        }
         var p1, p2, att = 0;
         do {
             p1 = [rand(marg, hostW - marg), rand(marg, hostH - marg)];
             p2 = [rand(marg, hostW - marg), rand(marg, hostH - marg)];
             att++;
-        } while (Math.abs(p1[0]-p2[0]) + Math.abs(p1[1]-p2[1]) < 140 && att < 20);
-        var gx0 = Math.floor(p1[0] / NET_GRID), gy0 = Math.floor(p1[1] / NET_GRID);
-        var gx1 = Math.floor(p2[0] / NET_GRID), gy1 = Math.floor(p2[1] / NET_GRID);
-        var gridPath = netBuildPath(gx0, gy0, gx1, gy1, maxGX, maxGY);
-        // Source node: always opaque. Destination: faint until line arrives.
+        } while ((Math.abs(p1[0]-p2[0]) + Math.abs(p1[1]-p2[1]) < 220 || pairCrossesKeepout(p1, p2)) && att < 24);
+        // If no clear placement was found, abort cleanly so we don't draw across tiles
+        if (pairCrossesKeepout(p1, p2)) { NET_BUSY = false; return; }
+
         function makeBox(px, py, opaque) {
             var el = document.createElement('div');
             el.className = 'cbg-net-node';
@@ -4170,35 +5968,32 @@ window.consoleBg = (function () {
         var box1 = makeBox(p1[0], p1[1], true);
         var box2 = makeBox(p2[0], p2[1], false);
         host.appendChild(box1); host.appendChild(box2);
-        var midX = (p1[0] + p2[0]) * 0.5, midY = (p1[1] + p2[1]) * 0.5;
-        if (!gridPath || gridPath.length < 2) {
-            netShowFail(host, midX, midY, col, [box1, box2], []);
-            return;
-        }
-        gridPath.forEach(function(p) { NET_OCCUPIED.add(netGk(p[0], p[1])); });
-        var corners = netSimplifyPath(gridPath);
-        var gridPts = corners.map(function(c) { return [c[0] * NET_GRID + NET_GRID * 0.5, c[1] * NET_GRID + NET_GRID * 0.5]; });
+
+        // Measure boxes — DOM has to lay them out before we can pull offsetWidth/Height.
         var bw1 = (box1.offsetWidth  || 40) * 0.5, bh1 = (box1.offsetHeight || 14) * 0.5;
         var bw2 = (box2.offsetWidth  || 40) * 0.5, bh2 = (box2.offsetHeight || 14) * 0.5;
-        // Exit source from nearest cardinal side; first segment moves away from source node
-        var dxBoxes = p2[0] - p1[0], dyBoxes = p2[1] - p1[1];
-        var s1 = Math.abs(dxBoxes) >= Math.abs(dyBoxes) ? (dxBoxes >= 0 ? 'R' : 'L') : (dyBoxes >= 0 ? 'D' : 'U');
-        var startPt = s1==='R' ? [p1[0]+bw1, p1[1]] : s1==='L' ? [p1[0]-bw1, p1[1]] :
-                      s1==='D' ? [p1[0], p1[1]+bh1]             : [p1[0], p1[1]-bh1];
-        var gp1 = gridPts.length > 1 ? gridPts[1] : gridPts[0];
-        var startMid = (s1==='R'||s1==='L') ? [gp1[0], startPt[1]] : [startPt[0], gp1[1]];
-        // Build path: exit connector then all grid corners (including last, near destination)
-        var pts = [startPt, startMid].concat(gridPts.slice(1));
-        // Truncate at first intersection with destination box — line stops at closest edge, never inside
-        for (var si = 0; si < pts.length - 1; si++) {
-            var ax = pts[si][0], ay = pts[si][1];
-            var bxi = pts[si+1][0], byi = pts[si+1][1];
-            var t = netSegEntersBox(ax, ay, bxi, byi, p2[0], p2[1], bw2, bh2);
-            if (t !== null) {
-                pts = pts.slice(0, si+1).concat([[ax + (bxi-ax)*t, ay + (byi-ay)*t]]);
-                break;
-            }
+
+        // Plan the entire wire BEFORE the line ever exits the source node.
+        // Fibonacci turn count, monotonic-per-axis (no doubling back), centered destination entry.
+        // The planner can return null (geometry doesn't fit, or wrong-axis-bias chose impossibly).
+        // SEVER (CONNECTION LOST) should ONLY fire after the wire has actually started drawing.
+        // So: retry the planner up to 8× with re-rolled randomness; if every attempt fails, this
+        // attempt is silently aborted (boxes removed, NET_BUSY released — no fail message).
+        var plan = null;
+        for (var pAtt = 0; pAtt < 8; pAtt++) {
+            plan = netPlanFibPath(p1, bw1, bh1, p2, bw2, bh2);
+            if (plan && plan.pts && plan.pts.length >= 2) break;
+            plan = null;
         }
+        if (!plan) {
+            // Couldn't plan a route at all — silent abort, no SEVER message (nothing was drawn).
+            if (box1.parentNode) box1.parentNode.removeChild(box1);
+            if (box2.parentNode) box2.parentNode.removeChild(box2);
+            NET_BUSY = false;
+            return;
+        }
+        var pts = plan.pts;
+        var gridPath = []; // legacy occupancy hook — empty since the new planner doesn't use NET_OCCUPIED
         var canvas = document.createElement('canvas');
         canvas.width = hostW; canvas.height = hostH;
         canvas.style.cssText = 'position:absolute;left:0;top:0;pointer-events:none;z-index:1;';
@@ -4207,16 +6002,21 @@ window.consoleBg = (function () {
         var totalLen = 0;
         for (var i = 1; i < pts.length; i++)
             totalLen += Math.hypot(pts[i][0] - pts[i-1][0], pts[i][1] - pts[i-1][1]);
-        var speed    = rand(280, 480);
-        var willFail = Math.random() < 0.35;
-        var failLen  = willFail ? totalLen * (0.25 + Math.random() * 0.5) : totalLen * 2;
-        var segIdx = 0, segProg = 0, drawnLen = 0, lastTs = null;
-        var pingsFired = {};
+        var speed    = rand(280, 460); // slower trace pace — easier to follow as it lays
+        // A wire can only fail if it has at least 3 corners. K=1 (simple L) wires always succeed —
+        // there's not enough geometry to "break" mid-route in a way that reads as interesting.
+        var willFail = plan.K >= 3 && Math.random() < 0.30;
+        var failCornerIdx = willFail && pts.length >= 5
+            ? 1 + Math.floor(Math.random() * (pts.length - 3))
+            : -1;
+        var wireKilled = false;
+        var segIdx = 0, segProg = 0, lastTs = null;
         var curLine = col.line, curNode = col.node;
         var iStart = 2, iEnd = pts.length - 2;
         function redraw() {
             ctx.clearRect(0, 0, hostW, hostH);
             ctx.lineWidth = 1; ctx.strokeStyle = curLine; ctx.fillStyle = curNode;
+            // Wire — drawn segment-by-segment, no corner markers ever (the wire is just a wire)
             for (var i = 0; i < segIdx; i++) {
                 ctx.beginPath(); ctx.moveTo(pts[i][0], pts[i][1]); ctx.lineTo(pts[i+1][0], pts[i+1][1]); ctx.stroke();
             }
@@ -4224,12 +6024,6 @@ window.consoleBg = (function () {
                 var tx = pts[segIdx][0] + (pts[segIdx+1][0] - pts[segIdx][0]) * segProg;
                 var ty = pts[segIdx][1] + (pts[segIdx+1][1] - pts[segIdx][1]) * segProg;
                 ctx.beginPath(); ctx.moveTo(pts[segIdx][0], pts[segIdx][1]); ctx.lineTo(tx, ty); ctx.stroke();
-            }
-            for (var i = iStart; i <= Math.min(segIdx, iEnd); i++) {
-                ctx.beginPath(); ctx.arc(pts[i][0], pts[i][1], 3, 0, Math.PI * 2); ctx.fill();
-                ctx.save(); ctx.globalAlpha = 0.28;
-                ctx.beginPath(); ctx.arc(pts[i][0], pts[i][1], 5.5, 0, Math.PI * 2); ctx.stroke();
-                ctx.restore();
             }
         }
         function doSuccess() {
@@ -4243,16 +6037,33 @@ window.consoleBg = (function () {
             box1.style.transition = 'color 0.25s ease, border-color 0.25s ease';
             box1.style.color = sc.node; box1.style.borderColor = sc.node;
             redraw();
-            setTimeout(function() {
-                [canvas, box1, box2].forEach(function(el) {
-                    el.style.transition = 'opacity 0.55s ease';
-                    el.style.opacity = '0';
-                    setTimeout(function() { if (el.parentNode) el.parentNode.removeChild(el); }, 650);
+            // Brief settle, then blink the wire + both nodes three times in lock-step, then fade
+            // them all together at the same rate so the connection vanishes as a single unit.
+            setTimeout(function () {
+                var blinkMs = 600;
+                [canvas, box1, box2].forEach(function (el) {
+                    // Clear the cbg-net-in entry animation so the blink can take over cleanly.
+                    el.style.animation = 'none';
+                    void el.offsetHeight; // force reflow — guarantees the new animation restarts
+                    el.style.transition = ''; // animation drives opacity, no transition fight
+                    el.style.animation = 'cbg-net-success-blink ' + blinkMs + 'ms linear forwards';
                 });
-                gridPath.forEach(function(p) { NET_OCCUPIED.delete(netGk(p[0], p[1])); });
-            }, rand(600, 1400));
+                setTimeout(function () {
+                    var fadeMs = 800;
+                    [canvas, box1, box2].forEach(function (el) {
+                        el.style.animation  = 'none';
+                        el.style.transition = 'opacity ' + fadeMs + 'ms ease';
+                        el.style.opacity    = '0';
+                        setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, fadeMs + 60);
+                    });
+                    gridPath.forEach(function (p) { NET_OCCUPIED.delete(netGk(p[0], p[1])); });
+                    // Release the single-connection lock once the fade is done — next attempt allowed
+                    setTimeout(function () { NET_BUSY = false; }, fadeMs + 80);
+                }, blinkMs + 40);
+            }, rand(250, 600));
         }
         function tick(ts) {
+            if (wireKilled) return;
             if (!lastTs) lastTs = ts;
             var dt = Math.min((ts - lastTs) / 1000, 0.1);
             lastTs = ts;
@@ -4261,28 +6072,24 @@ window.consoleBg = (function () {
             if (segLen < 1) { segIdx++; segProg = 0; requestAnimationFrame(tick); return; }
             var advance = dt * speed / segLen;
             segProg = Math.min(1, segProg + advance);
-            drawnLen += dt * speed;
-            if (willFail && drawnLen >= failLen) {
-                var fx = pts[segIdx][0] + (pts[segIdx+1][0] - pts[segIdx][0]) * segProg;
-                var fy = pts[segIdx][1] + (pts[segIdx+1][1] - pts[segIdx][1]) * segProg;
-                canvas.style.opacity = '1';
-                redraw();
-                netShowFail(host, fx, fy, col, [box1, box2, canvas], gridPath);
-                return;
-            }
-            // Flicker: frequency and duty-cycle ramp as line approaches fail point
-            if (willFail) {
-                var failRatio = Math.min(1, drawnLen / failLen);
-                if (failRatio > 0.4) {
-                    var fr = (failRatio - 0.4) / 0.6;
-                    canvas.style.opacity = Math.sin(ts * (1 + fr * 19) * 0.006283) > (-0.9 + fr * 0.9) ? '1' : '0.1';
-                } else { canvas.style.opacity = '1'; }
-            }
             if (segProg >= 1) {
                 segProg = 0; segIdx++;
-                if (segIdx >= iStart && segIdx <= iEnd && !pingsFired[segIdx]) {
-                    pingsFired[segIdx] = true;
-                    netSpawnPing(host, pts[segIdx][0], pts[segIdx][1], col, 0);
+                // The wire fails the moment it reaches the doomed corner — line halts, the message
+                // appears at that point, aligned to the direction it was traveling.
+                if (willFail && segIdx === failCornerIdx) {
+                    wireKilled = true;
+                    var fx = pts[segIdx][0], fy = pts[segIdx][1];
+                    // Last-segment direction: the leg that just landed at this corner.
+                    var prev = pts[segIdx - 1];
+                    var dir = { dx: fx - prev[0], dy: fy - prev[1] };
+                    redraw();
+                    netShowFail(host, fx, fy, col, [box1, box2, canvas], gridPath, dir);
+                    setTimeout(function () { NET_BUSY = false; }, 1600);
+                    return;
+                }
+                // ARC — sharp-turn spark on ~15% of interior corners (every grid corner is a 90° turn)
+                if (segIdx > 0 && segIdx < pts.length - 1 && Math.random() < 0.15) {
+                    netSpawnSparks(host, pts[segIdx][0], pts[segIdx][1], col);
                 }
             }
             redraw();
@@ -4300,7 +6107,10 @@ window.consoleBg = (function () {
     var FX_CASCADE  = true;   // cascading console window burst
     var FX_ARTIFACT = true;   // floating glyph artifact clusters
     var FX_FRAG     = true;   // floating code fragments
-    var FX_NET      = false;  // network connection attempts
+    var FX_NET      = true;   // network connection attempts (Tron-cycle wire routing)
+    var FX_MORSE    = true;   // glowing Morse-code dots
+    var FX_FOLDER   = true;   // folder-rip browser windows
+    var FX_PREDATOR = true;   // RARE artifact-predator swarm (consumes large artifacts)
     var FX_WIN      = true;   // console windows (black / blue / amber)
 
     // ── Spawn rate constants — edit here to tune both hosts identically ────────
@@ -4311,13 +6121,17 @@ window.consoleBg = (function () {
     var RATE_CASCADE  = 0.03;  // cascading console window burst
     var RATE_ARTIFACT = 0.12;  // floating glyph artifact clusters
     var RATE_FRAG     = 0.40;  // floating code fragments
-    var RATE_NET      = 0.05;  // network connection attempts
+    var RATE_NET      = 0.08;  // network connection attempts
+    var RATE_MORSE    = 0.05;  // glowing Morse-code dots
+    var RATE_FOLDER   = 0.04;  // folder-rip browser windows
+    var RATE_PREDATOR = 0.012; // artifact-predator swarm — rare on purpose, surprise event
     // RATE_WIN = remainder — console windows (black / blue / amber)
 
     function tickDelay() {
         var area = window.innerWidth * window.innerHeight;
         var scale = Math.max(0.35, Math.min(2.5, (1920 * 1080) / area));
-        return rand(590, 2120) * scale;
+        // 15% lower spawn frequency = 1/(1-0.15) ≈ 1.176× longer delay between ticks.
+        return rand(590, 2120) * scale * 1.176;
     }
 
     function tick() {
@@ -4331,6 +6145,9 @@ window.consoleBg = (function () {
         else if (FX_ARTIFACT && r < (t += RATE_ARTIFACT)) spawnArtifact();
         else if (FX_FRAG     && r < (t += RATE_FRAG))     spawnFrag();
         else if (FX_NET      && r < (t += RATE_NET))      spawnNetConnect();
+        else if (FX_MORSE    && r < (t += RATE_MORSE))    spawnMorseDot();
+        else if (FX_FOLDER   && r < (t += RATE_FOLDER))   spawnFolderRip();
+        else if (FX_PREDATOR && r < (t += RATE_PREDATOR)) spawnArtifactPredator();
         else if (FX_WIN)                                   spawnWindow();
         tickTimer = setTimeout(tick, tickDelay());
     }

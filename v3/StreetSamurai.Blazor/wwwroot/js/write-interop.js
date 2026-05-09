@@ -597,6 +597,203 @@ window.writeInterop = {
     }
 };
 
+// ── /write surface helpers ─────────────────────────────────────────────────
+// Lives alongside writeInterop.richEditor; kept separate so the new minimal
+// writer doesn't depend on the richEditor lifecycle (DotNetRef, contenteditable,
+// entity index, etc.).
+window.writeInterop.writer = {
+
+    // ── Local backup (browser-crash recovery) ──
+    _localKey: function (chapterId) { return 'write:backup:' + chapterId; },
+
+    localSave: function (chapterId, text) {
+        if (!chapterId) return;
+        try {
+            localStorage.setItem(this._localKey(chapterId), JSON.stringify({
+                text: text || '',
+                ts: new Date().toISOString()
+            }));
+        } catch (e) { /* quota or disabled — silent */ }
+    },
+
+    localLoad: function (chapterId) {
+        if (!chapterId) return null;
+        try {
+            var raw = localStorage.getItem(this._localKey(chapterId));
+            return raw ? JSON.parse(raw) : null;
+        } catch (e) { return null; }
+    },
+
+    localClear: function (chapterId) {
+        if (!chapterId) return;
+        try { localStorage.removeItem(this._localKey(chapterId)); } catch (e) { }
+    },
+
+    // Bind an input listener to the textarea so every keystroke debounces a
+    // localStorage write — keeps SignalR quiet while still capturing crashes.
+    installLocalBackup: function (id, chapterId) {
+        var el = document.getElementById(id);
+        if (!el || !chapterId) return;
+        if (el._writerLocalBound === chapterId) return; // already bound to same chapter
+        if (el._writerLocalFn) el.removeEventListener('input', el._writerLocalFn);
+        var self = this;
+        var t = null;
+        el._writerLocalFn = function () {
+            clearTimeout(t);
+            t = setTimeout(function () { self.localSave(chapterId, el.value); }, 400);
+        };
+        el.addEventListener('input', el._writerLocalFn);
+        el._writerLocalBound = chapterId;
+    },
+
+    // ── Browser-close confirmation ──
+    _isDirty: false,
+    setDirty: function (b) { this._isDirty = !!b; },
+    installBeforeUnload: function () {
+        if (this._beforeUnloadFn) return;
+        var self = this;
+        this._beforeUnloadFn = function (e) {
+            if (self._isDirty) {
+                e.preventDefault();
+                e.returnValue = '';
+                return '';
+            }
+        };
+        window.addEventListener('beforeunload', this._beforeUnloadFn);
+    },
+    uninstallBeforeUnload: function () {
+        if (!this._beforeUnloadFn) return;
+        window.removeEventListener('beforeunload', this._beforeUnloadFn);
+        this._beforeUnloadFn = null;
+    },
+
+    // ── Smart paste — strip foreign formatting, keep markdown structure ──
+    installPaste: function (id) {
+        var el = document.getElementById(id);
+        if (!el || el._writerPasteBound) return;
+        el._writerPasteBound = true;
+        var self = this;
+        el.addEventListener('paste', function (e) {
+            var cd = e.clipboardData || window.clipboardData;
+            if (!cd) return;
+            var html = cd.getData('text/html');
+            var text = cd.getData('text/plain') || '';
+            if (html) {
+                e.preventDefault();
+                var converted = self._htmlToMd(html) || text;
+                document.execCommand('insertText', false, converted);
+            }
+            // Plain-text paste: native behavior is already correct.
+        });
+    },
+
+    _htmlToMd: function (html) {
+        var doc;
+        try { doc = new DOMParser().parseFromString(html, 'text/html'); }
+        catch (e) { return ''; }
+        doc.querySelectorAll('style,script,meta,link,head').forEach(function (n) { n.remove(); });
+
+        var walk = function (node) {
+            if (node.nodeType === 3) return node.textContent;
+            if (node.nodeType !== 1) return '';
+            var tag = node.tagName.toLowerCase();
+            var inner = '';
+            node.childNodes.forEach(function (c) { inner += walk(c); });
+            switch (tag) {
+                case 'b': case 'strong': return '**' + inner + '**';
+                case 'i': case 'em': return '*' + inner + '*';
+                case 'u': return inner; // markdown has no underline; drop wrapper
+                case 's': case 'strike': case 'del': return '~~' + inner + '~~';
+                case 'h1': return '\n\n# '   + inner + '\n\n';
+                case 'h2': return '\n\n## '  + inner + '\n\n';
+                case 'h3': return '\n\n### ' + inner + '\n\n';
+                case 'h4': case 'h5': case 'h6': return '\n\n#### ' + inner + '\n\n';
+                case 'blockquote':
+                    return '\n\n> ' + inner.trim().replace(/\n/g, '\n> ') + '\n\n';
+                case 'li':
+                    var p = node.parentElement;
+                    var bullet = (p && p.tagName && p.tagName.toLowerCase() === 'ol') ? '1. ' : '- ';
+                    return bullet + inner.trim() + '\n';
+                case 'ul': case 'ol': return '\n' + inner + '\n';
+                case 'p': case 'div': return '\n\n' + inner + '\n\n';
+                case 'br': return '\n';
+                case 'a':
+                    var href = node.getAttribute('href') || '';
+                    return href ? '[' + inner + '](' + href + ')' : inner;
+                case 'code': return '`' + inner + '`';
+                case 'pre': return '\n\n```\n' + inner + '\n```\n\n';
+                default: return inner;
+            }
+        };
+        var out = walk(doc.body || doc).replace(/\n{3,}/g, '\n\n').replace(/ /g, ' ').trim();
+        return out;
+    },
+
+    // ── Find / Replace ──
+    find: function (id, query, fromIndex, caseSensitive) {
+        var el = document.getElementById(id);
+        if (!el || !query) return null;
+        var hay = caseSensitive ? el.value : el.value.toLowerCase();
+        var needle = caseSensitive ? query : query.toLowerCase();
+        var pos = hay.indexOf(needle, fromIndex || 0);
+        if (pos < 0 && (fromIndex || 0) > 0) pos = hay.indexOf(needle, 0); // wrap
+        if (pos < 0) return null;
+        el.focus();
+        el.setSelectionRange(pos, pos + query.length);
+        var lineHeight = parseInt(getComputedStyle(el).lineHeight) || 20;
+        var linesBefore = el.value.substring(0, pos).split('\n').length - 1;
+        el.scrollTop = Math.max(0, linesBefore * lineHeight - el.clientHeight / 2);
+        return { start: pos, end: pos + query.length };
+    },
+
+    replaceCurrent: function (id, query, replacement, caseSensitive) {
+        var el = document.getElementById(id);
+        if (!el) return false;
+        var s = el.selectionStart, e = el.selectionEnd;
+        if (s === e) return false;
+        var sel = el.value.substring(s, e);
+        var matches = caseSensitive
+            ? (sel === query)
+            : (sel.toLowerCase() === (query || '').toLowerCase());
+        if (!matches) return false;
+        el.value = el.value.substring(0, s) + replacement + el.value.substring(e);
+        el.selectionStart = s;
+        el.selectionEnd = s + replacement.length;
+        el.dispatchEvent(new Event('input', { bubbles: true }));
+        return true;
+    },
+
+    replaceAll: function (id, find, replace, caseSensitive) {
+        var el = document.getElementById(id);
+        if (!el || !find) return 0;
+        var flags = caseSensitive ? 'g' : 'gi';
+        var escaped = find.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        var re = new RegExp(escaped, flags);
+        var count = 0;
+        var newVal = el.value.replace(re, function () { count++; return replace; });
+        if (count > 0) {
+            el.value = newVal;
+            el.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+        return count;
+    },
+
+    // ── Outline jump: scroll textarea to a specific line ──
+    scrollToLine: function (id, lineNum) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        var lines = el.value.split('\n');
+        var pos = 0;
+        for (var i = 0; i < lineNum && i < lines.length; i++) {
+            pos += lines[i].length + 1;
+        }
+        var lineHeight = parseInt(getComputedStyle(el).lineHeight) || 20;
+        el.focus();
+        el.setSelectionRange(pos, pos);
+        el.scrollTop = Math.max(0, lineNum * lineHeight - el.clientHeight / 4);
+    }
+};
+
 window.__dictScrollActive = function () {
     const active = document.querySelector('.dict-items .list-item.active');
     if (active) active.scrollIntoView({ block: 'nearest', behavior: 'smooth' });

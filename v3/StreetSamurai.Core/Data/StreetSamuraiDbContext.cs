@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Services;
 using ContractEntity = StreetSamurai.Core.Data.Entities.Contract;
@@ -35,6 +36,7 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<EntityTaxonomy>  EntityTaxonomies => Set<EntityTaxonomy>();
     public DbSet<Tag>             Tags             => Set<Tag>();
     public DbSet<EntityTag>       EntityTags       => Set<EntityTag>();
+    public DbSet<FindingRow>      Findings         => Set<FindingRow>();
 
     // Character subtype + children — fully columnar (no DataJson on this branch)
     public DbSet<Character>                       Characters                    => Set<Character>();
@@ -1029,18 +1031,46 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Status).HasMaxLength(20);
             e.Property(x => x.SourceType).HasMaxLength(40);
             // Existing model holds ExtractedBy as List<string>; persist via a JSON
-            // backing column so we don't need a child table.
+            // backing column so we don't need a child table. The ValueComparer
+            // is REQUIRED whenever a collection has a value converter — without
+            // it EF can't deep-compare two snapshots and emits the warning
+            // "ContinuityClaim.ExtractedBy is a collection or enumeration type
+            //  with a value converter but with no value comparer." It also means
+            // EF would miss updates to the list contents.
             e.Property(x => x.ExtractedBy)
                 .HasConversion(
                     list => System.Text.Json.JsonSerializer.Serialize(list, (System.Text.Json.JsonSerializerOptions?)null),
                     json => string.IsNullOrEmpty(json)
                         ? new List<string>()
-                        : System.Text.Json.JsonSerializer.Deserialize<List<string>>(json, (System.Text.Json.JsonSerializerOptions?)null) ?? new List<string>());
+                        : System.Text.Json.JsonSerializer.Deserialize<List<string>>(json, (System.Text.Json.JsonSerializerOptions?)null) ?? new List<string>(),
+                    new ValueComparer<List<string>>(
+                        (a, b) => (a == null && b == null) || (a != null && b != null && a.SequenceEqual(b)),
+                        list => list == null ? 0 : list.Aggregate(0, (h, s) => HashCode.Combine(h, s == null ? 0 : s.GetHashCode())),
+                        list => list == null ? new List<string>() : list.ToList()));
             e.HasIndex(x => new { x.EntityId, x.Predicate });
             e.HasIndex(x => x.Status);
             e.HasIndex(x => x.SourceType);
             // 23rd-century in-world date for asOf queries (e.g. "what was true on 2256-04-15").
             e.HasIndex(x => x.StoryDate);
+        });
+
+        // Findings inbox — auto-detected contradictions / clichés / etc from
+        // ContinuousQualityService. Last SQLite holdout, migrated 2026-05-09.
+        b.Entity<FindingRow>(e =>
+        {
+            e.ToTable("Findings");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).ValueGeneratedOnAdd();
+            e.Property(x => x.FilePath).HasMaxLength(900).IsRequired();
+            e.Property(x => x.ChapterId).HasMaxLength(80);
+            e.Property(x => x.Category).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Severity).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Status).HasMaxLength(20).IsRequired();
+            e.Property(x => x.DedupKey).HasMaxLength(450).IsRequired();
+            e.HasIndex(x => x.DedupKey).IsUnique().HasDatabaseName("UQ_Findings_DedupKey");
+            e.HasIndex(x => x.Status).HasDatabaseName("IX_Findings_Status");
+            e.HasIndex(x => x.FilePath).HasDatabaseName("IX_Findings_FilePath");
+            e.HasIndex(x => x.ChapterId).HasDatabaseName("IX_Findings_ChapterId");
         });
 
         b.Entity<ClaimContradictionRow>(e =>

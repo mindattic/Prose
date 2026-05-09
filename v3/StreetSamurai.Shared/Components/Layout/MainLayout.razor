@@ -59,6 +59,11 @@
             Nav.LocationChanged += OnLocationChanged;
             Nav.RegisterLocationChangingHandler(OnLocationChanging);
             CheckMissingEnvVars();
+            // List-item neon flicker DISABLED 2026-05-09 — too distracting in
+            // the dictionary UIs. JS (`cbgStartListItemFlicker` in console-bg.js)
+            // and CSS (`.neon-flicker-loop` in app.css) are intact for later
+            // re-enablement; uncomment the line below to restore.
+            // try { await JS.InvokeVoidAsync("cbgStartListItemFlicker"); } catch { }
             // portrait disabled
             // if (bgImage != null)
             // {

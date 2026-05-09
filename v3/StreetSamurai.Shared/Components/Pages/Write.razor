@@ -1,0 +1,592 @@
+@page "/write"
+@page "/write/{BookId}"
+@page "/write/{BookId}/{ChapterId}"
+@attribute [Authorize(Roles = "Contributor,Administrator")]
+@implements IAsyncDisposable
+@using StreetSamurai.Core.Models
+@using StreetSamurai.Core.Interfaces
+@using StreetSamurai.Core.Services
+@using Microsoft.AspNetCore.Components.Routing
+@inject IBookRepository Books
+@inject IChapterRepository Chapters
+@inject MarkdownService Md
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+
+<div class="write-shell @(focusModeClass)">
+    @if (book == null)
+    {
+        <div class="p-3">
+            <div class="text-muted small mb-2">Pick a book to start writing.</div>
+            <div class="d-flex flex-column gap-1">
+                @foreach (var b in allBooks)
+                {
+                    <a href="@($"/write/{b.Id}")" class="text-decoration-none text-light">@b.Title</a>
+                }
+            </div>
+        </div>
+    }
+    else
+    {
+        <aside class="write-side">
+            <div class="write-side-head">
+                <a href="@($"/books/{book.Id}/chapters")" class="text-muted small text-decoration-none">
+                    <i class="bi bi-arrow-left me-1"></i>@book.Title
+                </a>
+                <div class="write-side-tabs">
+                    <button class="@($"write-side-tab{(showOutline ? "" : " active")}")"
+                            @onclick="() => showOutline = false">Chapters</button>
+                    <button class="@($"write-side-tab{(showOutline ? " active" : "")}")"
+                            @onclick="() => showOutline = true"
+                            disabled="@(chapter == null)">Outline</button>
+                </div>
+            </div>
+            <div class="write-side-list">
+                @if (!showOutline)
+                {
+                    @foreach (var c in bookChapters)
+                    {
+                        var active = chapter != null && c.Id == chapter.Id;
+                        <a href="@($"/write/{book.Id}/{c.Id}")"
+                           class="@($"write-side-item{(active ? " active" : "")}")">
+                            <span class="write-side-num">Ch @(c.Number?.ToString() ?? "?")</span>
+                            <span class="write-side-title">@c.Title</span>
+                        </a>
+                    }
+                    @if (bookChapters.Count == 0)
+                    {
+                        <div class="text-muted small px-2 py-3">No chapters yet.</div>
+                    }
+                }
+                else
+                {
+                    @if (Outline.Count == 0)
+                    {
+                        <div class="text-muted small px-2 py-3">No headings yet. Add <code>## </code> lines to outline this chapter.</div>
+                    }
+                    @foreach (var o in Outline)
+                    {
+                        <button class="write-outline-item" @onclick="() => JumpTo(o.Line)"
+                                style="@($"padding-left:{4 + (o.Level - 1) * 12}px")">
+                            <span class="write-outline-marker">@(new string('#', o.Level))</span>
+                            <span class="write-outline-title">@o.Title</span>
+                        </button>
+                    }
+                }
+            </div>
+        </aside>
+
+        <main class="write-main">
+            @if (chapter == null)
+            {
+                <div class="text-muted small p-3">Pick a chapter from the left to start writing.</div>
+            }
+            else
+            {
+                @if (recoveryAvailable)
+                {
+                    <div class="write-recovery">
+                        <i class="bi bi-life-preserver me-1 text-warning"></i>
+                        Found a newer local copy from @RecoveryAgo. Restore it?
+                        <button class="btn btn-sm btn-warning ms-2" @onclick="RestoreLocal">Restore</button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="DismissRecovery">Discard</button>
+                    </div>
+                }
+
+                <div class="write-bar">
+                    <input class="form-control form-control-sm bg-dark text-light border-secondary write-title"
+                           placeholder="Chapter title"
+                           @bind="pageTitle" @bind:event="oninput"
+                           @bind:after="MarkPageDirty"
+                           disabled="@readingMode" />
+                    <span class="write-counts text-muted small">@WordCount words</span>
+                    <span class="write-saved text-muted small">@SavedLabel</span>
+                    <button class="btn btn-sm @(readingMode ? "btn-info" : "btn-outline-secondary")"
+                            title="Reading mode" @onclick="ToggleReadingMode">
+                        <i class="bi bi-book"></i>
+                    </button>
+                    <button class="btn btn-sm @(findOpen ? "btn-info" : "btn-outline-secondary")"
+                            title="Find / replace" @onclick="ToggleFind"
+                            disabled="@readingMode">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-info" @onclick="SaveChapter"
+                            disabled="@(!pageDirty || saving)">
+                        <i class="bi bi-floppy"></i> Save
+                    </button>
+                </div>
+
+                @if (!readingMode)
+                {
+                    <div class="write-toolbar" role="toolbar">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" title="Bold (Ctrl+B)"
+                                @onclick='() => Wrap("**","**")'><b>B</b></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" title="Italic (Ctrl+I)"
+                                @onclick='() => Wrap("*","*")'><i>I</i></button>
+                        <span class="write-toolbar-sep"></span>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" title="Heading"
+                                @onclick='() => Prefix("## ")'>H</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" title="Quote"
+                                @onclick='() => Prefix("> ")'><i class="bi bi-quote"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" title="Bulleted list"
+                                @onclick='() => Prefix("- ")'><i class="bi bi-list-ul"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" title="Numbered list"
+                                @onclick='() => Prefix("1. ")'><i class="bi bi-list-ol"></i></button>
+                    </div>
+
+                    @if (findOpen)
+                    {
+                        <div class="write-find">
+                            <input class="form-control form-control-sm bg-dark text-light border-secondary"
+                                   placeholder="Find" @bind="findQuery" @bind:event="oninput" />
+                            <input class="form-control form-control-sm bg-dark text-light border-secondary"
+                                   placeholder="Replace with" @bind="replaceQuery" @bind:event="oninput" />
+                            <label class="small text-muted d-flex align-items-center gap-1">
+                                <input type="checkbox" @bind="findCaseSensitive" /> Aa
+                            </label>
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="FindNext"
+                                    disabled="@string.IsNullOrEmpty(findQuery)">Next</button>
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="ReplaceNext"
+                                    disabled="@string.IsNullOrEmpty(findQuery)">Replace</button>
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="ReplaceAll"
+                                    disabled="@string.IsNullOrEmpty(findQuery)">All</button>
+                            <span class="small text-muted">@findStatus</span>
+                        </div>
+                    }
+
+                    <textarea id="write-surface"
+                              class="form-control bg-dark text-light border-secondary write-surface"
+                              placeholder="Write."
+                              @bind="pageMarkdown" @bind:event="oninput"
+                              @bind:after="MarkPageDirty"
+                              @onkeydown="OnKey"
+                              spellcheck="true"></textarea>
+                }
+                else
+                {
+                    <article class="write-reading">
+                        @((MarkupString)Markdig.Markdown.ToHtml(pageMarkdown ?? ""))
+                    </article>
+                }
+            }
+        </main>
+    }
+</div>
+
+<style>
+  .write-shell { display:grid; grid-template-columns: 240px 1fr; height: calc(100vh - 56px); min-height:0; }
+  .write-side { border-right:1px solid #444; display:flex; flex-direction:column; min-height:0; }
+  .write-side-head { padding:8px 10px; border-bottom:1px solid #2a2a32; display:flex; flex-direction:column; gap:6px; }
+  .write-side-tabs { display:flex; gap:4px; }
+  .write-side-tab { flex:1; background:transparent; border:1px solid #333; color:#aaa; padding:3px 0; font-size:.78rem; border-radius:3px; }
+  .write-side-tab.active { background:#1c2a3a; color:#fff; border-color:#3a5a7a; }
+  .write-side-tab:disabled { opacity:.45; cursor:not-allowed; }
+
+  .write-side-list { flex:1; overflow-y:auto; padding:6px; display:flex; flex-direction:column; gap:2px; }
+  .write-side-item { display:flex; gap:8px; padding:6px 8px; border-radius:4px; color:#bbb; text-decoration:none; }
+  .write-side-item:hover { background:#1f2229; color:#fff; }
+  .write-side-item.active { background:#1c2a3a; color:#fff; }
+  .write-side-num { font-family:monospace; font-size:.75rem; color:#88a; min-width:46px; }
+  .write-side-title { flex:1; font-size:.9rem; }
+
+  .write-outline-item { display:flex; gap:6px; align-items:baseline; background:transparent; border:0;
+                        text-align:left; color:#bbb; padding:4px 6px; border-radius:3px; font-size:.85rem; width:100%; }
+  .write-outline-item:hover { background:#1f2229; color:#fff; }
+  .write-outline-marker { color:#5b8; font-family:monospace; font-size:.7rem; }
+  .write-outline-title { flex:1; }
+
+  .write-main { display:flex; flex-direction:column; min-height:0; padding:10px; }
+  .write-bar { display:flex; gap:8px; align-items:center; margin-bottom:6px; }
+  .write-title { flex:1; }
+  .write-counts, .write-saved { white-space:nowrap; }
+  .write-saved { font-variant-numeric:tabular-nums; min-width:84px; text-align:right; }
+
+  .write-toolbar { display:flex; gap:4px; align-items:center; padding:4px 0; border-bottom:1px solid #333; margin-bottom:8px; }
+  .write-toolbar .btn { min-width:34px; }
+  .write-toolbar-sep { width:1px; height:18px; background:#333; margin:0 4px; }
+
+  .write-find { display:flex; gap:6px; align-items:center; padding:6px 0; flex-wrap:wrap; }
+  .write-find input.form-control { max-width: 220px; }
+
+  .write-surface { flex:1; resize:none; font-family: Georgia, serif; line-height:1.6; font-size:1rem; min-height:0; }
+
+  .write-reading { flex:1; overflow-y:auto; padding: 0 8% 6rem; max-width:none;
+                   font-family: Georgia, serif; line-height:1.7; font-size:1.05rem; color:#e6e6e6; }
+  .write-reading h1, .write-reading h2, .write-reading h3 { color:#fff; margin-top:1.6rem; }
+  .write-reading p { margin: 0 0 1rem; }
+  .write-reading blockquote { border-left:3px solid #444; padding-left:1rem; color:#bbb; margin: 1rem 0; }
+
+  .write-recovery { background:#3a2e0a; border:1px solid #6a5b1d; color:#f5d97a; padding:6px 10px; border-radius:4px; margin-bottom:8px; font-size:.9rem; }
+
+  @@media (max-width: 720px) {
+    .write-shell { grid-template-columns: 1fr; height: auto; }
+    .write-side { max-height: 220px; border-right:none; border-bottom:1px solid #444; }
+    .write-surface { min-height: 60vh; }
+  }
+</style>
+
+@code {
+    [Parameter] public string? BookId { get; set; }
+    [Parameter] public string? ChapterId { get; set; }
+
+    private List<Book> allBooks = new();
+    private List<Chapter> bookChapters = new();
+    private Book? book;
+    private Chapter? chapter;
+
+    private string pageTitle = "";
+    private string pageMarkdown = "";
+    private bool pageDirty;
+
+    // Autosave + saved-time indicator
+    private DateTime lastEditAt = DateTime.MinValue;
+    private DateTime? lastSavedAt;
+    private bool saving;
+    private System.Threading.Timer? autosaveTimer;
+    private const int AutosaveIdleMs = 2000;
+
+    // Navigation guard
+    private IDisposable? locationGuard;
+
+    // Sidebar tab + reading + find
+    private bool showOutline;
+    private bool readingMode;
+    private bool findOpen;
+    private string findQuery = "";
+    private string replaceQuery = "";
+    private bool findCaseSensitive;
+    private int findCursor;
+    private string? findStatus;
+
+    // Crash recovery
+    private bool recoveryAvailable;
+    private string? recoveredText;
+    private DateTime? recoveredTs;
+
+    // JS hook lifecycle — re-install when chapter changes
+    private string? jsBoundChapterId;
+
+    private string focusModeClass => readingMode ? "write-shell-reading" : "";
+
+    private int WordCount => string.IsNullOrWhiteSpace(pageMarkdown)
+        ? 0
+        : pageMarkdown.Split(new[] { ' ', '\t', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries).Length;
+
+    private string SavedLabel
+    {
+        get
+        {
+            if (saving) return "Saving…";
+            if (pageDirty) return "Unsaved";
+            if (lastSavedAt is null) return "";
+            var d = DateTime.UtcNow - lastSavedAt.Value;
+            if (d.TotalSeconds < 5)  return "Saved just now";
+            if (d.TotalSeconds < 60) return $"Saved {(int)d.TotalSeconds}s ago";
+            if (d.TotalMinutes < 60) return $"Saved {(int)d.TotalMinutes}m ago";
+            if (d.TotalHours   < 24) return $"Saved {(int)d.TotalHours}h ago";
+            return "Saved earlier";
+        }
+    }
+
+    private string RecoveryAgo
+    {
+        get
+        {
+            if (recoveredTs is null) return "";
+            var d = DateTime.UtcNow - recoveredTs.Value;
+            if (d.TotalSeconds < 60) return $"{(int)d.TotalSeconds}s ago";
+            if (d.TotalMinutes < 60) return $"{(int)d.TotalMinutes}m ago";
+            if (d.TotalHours   < 24) return $"{(int)d.TotalHours}h ago";
+            return "earlier";
+        }
+    }
+
+    private record OutlineItem(int Line, int Level, string Title);
+
+    private List<OutlineItem> Outline
+    {
+        get
+        {
+            if (string.IsNullOrEmpty(pageMarkdown)) return new();
+            var rx = new System.Text.RegularExpressions.Regex(@"^(#{1,6})\s+(.+)$");
+            var lines = pageMarkdown.Split('\n');
+            var list = new List<OutlineItem>();
+            for (int i = 0; i < lines.Length; i++)
+            {
+                var m = rx.Match(lines[i]);
+                if (m.Success) list.Add(new OutlineItem(i, m.Groups[1].Length, m.Groups[2].Value.Trim()));
+            }
+            return list;
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+        locationGuard = Nav.RegisterLocationChangingHandler(OnLocationChanging);
+        autosaveTimer = new System.Threading.Timer(_ => InvokeAsync(AutosaveTick),
+            null, TimeSpan.FromMilliseconds(1500), TimeSpan.FromMilliseconds(1500));
+    }
+
+    protected override void OnParametersSet()
+    {
+        allBooks = Books.ListBooks();
+
+        if (!string.IsNullOrEmpty(BookId))
+        {
+            book = Books.LoadBook(BookId);
+            bookChapters = book == null
+                ? new()
+                : book.ChapterIds
+                    .Select(Chapters.LoadChapter)
+                    .Where(c => c != null)
+                    .Cast<Chapter>()
+                    .OrderBy(c => c.Number ?? int.MaxValue)
+                    .ToList();
+        }
+        else { book = null; bookChapters = new(); }
+
+        if (!string.IsNullOrEmpty(ChapterId))
+        {
+            var prevId = chapter?.Id;
+            chapter = Chapters.LoadChapter(ChapterId);
+            if (chapter != null)
+            {
+                pageTitle = chapter.Title;
+                pageMarkdown = string.IsNullOrWhiteSpace(chapter.Markdown)
+                    ? HtmlToMarkdownFallback(chapter.Html)
+                    : chapter.Markdown;
+                pageDirty = false;
+                lastSavedAt = chapter.Modified;
+                if (prevId != chapter.Id)
+                {
+                    recoveryAvailable = false;
+                    recoveredText = null;
+                    recoveredTs = null;
+                    findOpen = false;
+                    findCursor = 0;
+                    findStatus = null;
+                    showOutline = false;
+                    readingMode = false;
+                }
+            }
+        }
+        else
+        {
+            chapter = null; pageTitle = ""; pageMarkdown = ""; pageDirty = false;
+            lastSavedAt = null; recoveryAvailable = false;
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            try { await JS.InvokeVoidAsync("writeInterop.writer.installBeforeUnload"); } catch { }
+        }
+        if (chapter != null && jsBoundChapterId != chapter.Id)
+        {
+            jsBoundChapterId = chapter.Id;
+            try
+            {
+                await JS.InvokeVoidAsync("writeInterop.writer.installPaste", "write-surface");
+                await JS.InvokeVoidAsync("writeInterop.writer.installLocalBackup", "write-surface", chapter.Id);
+
+                // Crash-recovery probe: only show banner if local copy beats server modified.
+                var local = await JS.InvokeAsync<LocalBackup?>("writeInterop.writer.localLoad", chapter.Id);
+                if (local is { Text.Length: > 0 })
+                {
+                    var localTs = DateTime.TryParse(local.Ts, null,
+                        System.Globalization.DateTimeStyles.RoundtripKind, out var ts)
+                        ? ts.ToUniversalTime() : DateTime.MinValue;
+                    if (localTs > chapter.Modified.AddSeconds(1) && local.Text != pageMarkdown)
+                    {
+                        recoveredText = local.Text;
+                        recoveredTs = localTs;
+                        recoveryAvailable = true;
+                        StateHasChanged();
+                    }
+                    else
+                    {
+                        // Local is stale or matches — drop it.
+                        await JS.InvokeVoidAsync("writeInterop.writer.localClear", chapter.Id);
+                    }
+                }
+            }
+            catch { /* JS not ready or interop disabled — fail open */ }
+        }
+    }
+
+    private record LocalBackup(string Text, string Ts);
+
+    private async ValueTask OnLocationChanging(LocationChangingContext ctx)
+    {
+        if (!pageDirty || saving) return;
+        bool keep;
+        try { keep = await JS.InvokeAsync<bool>("confirm", "You have unsaved changes. Leave anyway?"); }
+        catch { keep = true; }
+        if (!keep) ctx.PreventNavigation();
+    }
+
+    private void MarkPageDirty()
+    {
+        pageDirty = true;
+        lastEditAt = DateTime.UtcNow;
+        _ = SyncDirty(true);
+    }
+
+    private async Task SyncDirty(bool dirty)
+    {
+        try { await JS.InvokeVoidAsync("writeInterop.writer.setDirty", dirty); } catch { }
+    }
+
+    private async Task Wrap(string pre, string suf)
+    {
+        await JS.InvokeVoidAsync("writeInterop.richEditor.mdWrapSelection", "write-surface", pre, suf);
+    }
+
+    private async Task Prefix(string pre)
+    {
+        await JS.InvokeVoidAsync("writeInterop.richEditor.mdPrefixLine", "write-surface", pre);
+    }
+
+    private async Task OnKey(KeyboardEventArgs e)
+    {
+        if (!(e.CtrlKey || e.MetaKey)) return;
+        var k = (e.Key ?? "").ToLowerInvariant();
+        if      (k == "b") await Wrap("**", "**");
+        else if (k == "i") await Wrap("*", "*");
+    }
+
+    private void ToggleReadingMode() { readingMode = !readingMode; if (readingMode) findOpen = false; }
+    private void ToggleFind()        { findOpen = !findOpen; findStatus = null; }
+
+    private async Task AutosaveTick()
+    {
+        if (chapter == null) return;
+        // Always re-render so the "saved Xs ago" label ticks forward.
+        if (!pageDirty || saving)
+        {
+            StateHasChanged();
+            return;
+        }
+        if ((DateTime.UtcNow - lastEditAt).TotalMilliseconds < AutosaveIdleMs)
+        {
+            StateHasChanged();
+            return;
+        }
+        await SaveChapter();
+    }
+
+    private async Task SaveChapter()
+    {
+        if (chapter == null || saving) return;
+        saving = true;
+        StateHasChanged();
+        try
+        {
+            chapter.Title    = string.IsNullOrWhiteSpace(pageTitle) ? "Untitled" : pageTitle.Trim();
+            chapter.Markdown = pageMarkdown ?? "";
+            chapter.Html     = Md.RenderToHtml(chapter.Markdown);
+            Chapters.SaveChapter(chapter);
+            lastSavedAt = DateTime.UtcNow;
+            pageDirty = false;
+            try { await JS.InvokeVoidAsync("writeInterop.writer.localClear", chapter.Id); } catch { }
+            await SyncDirty(false);
+        }
+        finally
+        {
+            saving = false;
+            StateHasChanged();
+        }
+    }
+
+    private void RestoreLocal()
+    {
+        if (recoveredText is null) return;
+        pageMarkdown = recoveredText;
+        pageDirty = true;
+        lastEditAt = DateTime.UtcNow;
+        recoveryAvailable = false;
+        recoveredText = null;
+        _ = SyncDirty(true);
+    }
+
+    private async Task DismissRecovery()
+    {
+        recoveryAvailable = false;
+        recoveredText = null;
+        if (chapter != null)
+        {
+            try { await JS.InvokeVoidAsync("writeInterop.writer.localClear", chapter.Id); } catch { }
+        }
+    }
+
+    // ── Outline jump ──
+    private async Task JumpTo(int line)
+    {
+        if (readingMode) readingMode = false;
+        StateHasChanged();
+        await JS.InvokeVoidAsync("writeInterop.writer.scrollToLine", "write-surface", line);
+    }
+
+    // ── Find / Replace ──
+    private record FindResult(int Start, int End);
+
+    private async Task FindNext()
+    {
+        if (string.IsNullOrEmpty(findQuery)) return;
+        FindResult? r = null;
+        try { r = await JS.InvokeAsync<FindResult?>("writeInterop.writer.find",
+            "write-surface", findQuery, findCursor, findCaseSensitive); }
+        catch { }
+        if (r != null) { findCursor = r.End; findStatus = "Found"; }
+        else            { findCursor = 0;     findStatus = "Not found"; }
+    }
+
+    private async Task ReplaceNext()
+    {
+        if (string.IsNullOrEmpty(findQuery)) return;
+        bool replaced = false;
+        try { replaced = await JS.InvokeAsync<bool>("writeInterop.writer.replaceCurrent",
+            "write-surface", findQuery, replaceQuery ?? "", findCaseSensitive); }
+        catch { }
+        if (replaced) findStatus = "Replaced";
+        await FindNext();
+    }
+
+    private async Task ReplaceAll()
+    {
+        if (string.IsNullOrEmpty(findQuery)) return;
+        int n = 0;
+        try { n = await JS.InvokeAsync<int>("writeInterop.writer.replaceAll",
+            "write-surface", findQuery, replaceQuery ?? "", findCaseSensitive); }
+        catch { }
+        findStatus = n > 0 ? $"Replaced {n}" : "No matches";
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        locationGuard?.Dispose();
+        if (autosaveTimer != null)
+        {
+            await autosaveTimer.DisposeAsync();
+            autosaveTimer = null;
+        }
+        try { await JS.InvokeVoidAsync("writeInterop.writer.uninstallBeforeUnload"); } catch { }
+        try { await JS.InvokeVoidAsync("writeInterop.writer.setDirty", false); } catch { }
+    }
+
+    /// <summary>
+    /// Best-effort recovery of markdown from chapters saved by the previous editor,
+    /// which wrapped each line in &lt;p&gt; tags. Anything richer (e.g. raw &lt;strong&gt;
+    /// in legacy HTML) is left in place for the writer to clean up by hand.
+    /// </summary>
+    private static string HtmlToMarkdownFallback(string html)
+    {
+        if (string.IsNullOrEmpty(html)) return "";
+        var t = System.Text.RegularExpressions.Regex.Replace(html, @"<p>\s*</p>", "");
+        t = System.Text.RegularExpressions.Regex.Replace(t, @"<p>(.*?)</p>", "$1\n\n",
+            System.Text.RegularExpressions.RegexOptions.Singleline);
+        return System.Net.WebUtility.HtmlDecode(t).Trim();
+    }
+}

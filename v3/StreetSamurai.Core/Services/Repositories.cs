@@ -35,16 +35,78 @@ public class CharacterRepository : EfRepository<CharacterData>
     public CharacterRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "character"), "character", c => c.Name) { }
 
+    // CharacterMapper.LoadAll fans out into ~25 Include collections × 1240
+    // characters and is the slowest read in the app (~50–80 s cold). Cache the
+    // result here — invalidated by Save() and the OnItemSaved hook on the
+    // base class so writes from this repo are visible immediately. Reload()
+    // also clears it. Without this cache /characters re-ran the full load on
+    // every page visit and the user-facing spinner could spin for minutes.
+    private List<CharacterData>? mappedCache;
+    private readonly object mappedCacheLock = new();
+
     public override List<CharacterData> GetAll()
     {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null) return mappedCache;
+        }
         using var db = dbFactory.CreateDbContext();
-        return CharacterMapper.LoadAll(db, includeArchived: false);
+        var loaded = CharacterMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) mappedCache = loaded;
+        return loaded;
+    }
+
+    // List-view-only cache. Contains lightweight CharacterData (Id / Name /
+    // Role / Status / Tags / Rating / VoteCount) — fields beyond that read as
+    // empty defaults. Use this for dictionary/list/filter UIs and re-fetch the
+    // full record via GetById when a row is opened for edit.
+    private List<CharacterData>? mappedCacheLite;
+    private readonly object mappedCacheLiteLock = new();
+
+    public List<CharacterData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = CharacterMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) mappedCacheLite = loaded;
+        return loaded;
+    }
+
+    /// <summary>
+    /// Fast single-character fetch that bypasses the full LoadAll pipeline.
+    /// Hits CharacterMapper.LoadOne (one row + 25 Includes scoped to that
+    /// character — ~50 ms) instead of materialising every character first.
+    /// Required for the lite-list-then-Edit flow: the dictionary list shows
+    /// the lite projection; clicking a row re-fetches the full record here.
+    /// </summary>
+    public new CharacterData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            // Fall back to the legacy "32-char N format" the codebase also uses.
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return CharacterMapper.LoadOne(db, guid);
     }
 
     public override List<CharacterData> GetAllIncludingArchived()
     {
+        // Archived view bypasses the cache — it's used by audit/restore flows
+        // that explicitly want fresh data and tolerate the cost.
         using var db = dbFactory.CreateDbContext();
         return CharacterMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
     }
 
     public override void Save(CharacterData item)
@@ -95,8 +157,18 @@ public class CharacterRepository : EfRepository<CharacterData>
         db.SaveChanges();
 
         InvalidateCacheExternal();
+        InvalidateMappedCache();
         // Tell index services (XrefService, GlobalSearchService) the canon moved.
         RaiseOnItemSaved(name);
+    }
+
+    /// <summary>Override of <see cref="EfRepository{T}.Reload"/> so callers
+    /// who explicitly want a refresh (e.g. CharacterDictionary OnInitialized)
+    /// also clear the mapper-cache, not just the base JSON-blob cache.</summary>
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
     }
 
     private static Guid ParseGuid(string s)

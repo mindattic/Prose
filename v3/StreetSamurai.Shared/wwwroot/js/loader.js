@@ -18,60 +18,44 @@ window.__gmapsReady = function() {
     window.__gmapsCbs = [];
 };
 
-// Unified loader — used for both app startup and page navigation.
-// The overlay element must exist in the HTML with id="app-loader" and child id="loader-ms".
+// Unified loader — small corner indicator. The overlay element is now a
+// subtle top-right spinner (id="app-loader"); the millisecond counter and
+// full-screen darken-everything overlay were retired 2026-05-09.
 (function() {
-    var timer = null;
     var timeout = null;
     var safetyTimer = null;
-    var start = 0;
 
     function getEl() { return document.getElementById('app-loader'); }
-    function getMs() { return document.getElementById('loader-ms'); }
-
-    function tick() {
-        var ms = getMs();
-        if (ms) ms.textContent = String(Math.floor(performance.now() - start)).padStart(4, '0');
-    }
 
     window.__loaderShow = function(delay) {
         clearTimeout(timeout);
-        clearInterval(timer);
-        start = performance.now();
         if (delay > 0) {
             timeout = setTimeout(function() {
                 var el = getEl();
-                if (el) el.style.display = 'flex';
-                timer = setInterval(tick, 1);
+                if (el) el.style.display = 'block';
             }, delay);
         } else {
             var el = getEl();
-            if (el) el.style.display = 'flex';
-            timer = setInterval(tick, 1);
+            if (el) el.style.display = 'block';
         }
     };
 
     window.__loaderHide = function() {
         clearTimeout(timeout);
         clearTimeout(safetyTimer);
-        clearInterval(timer);
-        timer = null;
         timeout = null;
         var el = getEl();
         if (el) el.style.display = 'none';
     };
 
-    // Auto-start timer on initial load
-    start = performance.now();
-    timer = setInterval(tick, 1);
-
-    // Auto-hide: DOMContentLoaded fires after full HTML is parsed (reliable for static SSR).
-    // By this point the server-rendered .app-shell div is guaranteed to be in the DOM.
+    // Auto-hide: DOMContentLoaded fires after full HTML is parsed (reliable
+    // for static SSR). By this point the server-rendered .app-shell div is
+    // guaranteed to be in the DOM, so any boot-time spinner can come down.
     document.addEventListener('DOMContentLoaded', function() {
         window.__loaderHide();
     });
 
-    // Safety net: force-hide after 10s in case something goes wrong
+    // Safety net: force-hide after 10 s in case something goes wrong
     safetyTimer = setTimeout(function() {
         window.__loaderHide();
     }, 10000);
