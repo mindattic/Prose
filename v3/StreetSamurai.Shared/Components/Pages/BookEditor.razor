@@ -7,7 +7,9 @@
 
     protected override void OnInitialized()
     {
-        // Book detail collapsed into the chapters page — redirect so old bookmarks still work.
-        Nav.NavigateTo($"/books/{BookId}/chapters", replace: true);
+        // The /books/{id}/chapters route was retired in favor of opening the
+        // book directly in /write — chapters are already listed in the Write
+        // editor's left sidebar. Redirect old bookmarks so they still land.
+        Nav.NavigateTo($"/write/{BookId}", replace: true);
     }
 }

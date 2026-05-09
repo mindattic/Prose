@@ -289,7 +289,7 @@
         events = new();
         foreach (var b in bookTitles)
             if (bookFirstDate.TryGetValue(b.Id, out var at))
-                events.Add(new(b.Id.ToString("N"), "book", b.Title, at, $"/books/{b.Id:N}", null));
+                events.Add(new(b.Id.ToString("N"), "book", b.Title, at, $"/write/{b.Id:N}", null));
         foreach (var c in chapterRows)
             events.Add(new(c.Id.ToString("N"), "chapter", c.Title, c.At,
                 c.BookId.HasValue ? $"/write/{c.BookId:N}/{c.Id:N}" : $"/write//{c.Id:N}", null));

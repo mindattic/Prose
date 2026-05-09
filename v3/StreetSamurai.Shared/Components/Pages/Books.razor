@@ -119,7 +119,7 @@
     {
         var chapterCount = book.ChapterIds.Count;
         var bookId = book.Id;
-        <div class="book-card" @onclick="@(() => Nav.NavigateTo($"/books/{bookId}/chapters"))">
+        <div class="book-card" @onclick="@(() => Nav.NavigateTo($"/write/{bookId}"))">
             <div class="book-card-cover" style="@CoverStyle(book)">
                 @if (string.IsNullOrEmpty(book.CoverImageUrl))
                 {
@@ -200,6 +200,7 @@
         color: inherit;
         cursor: pointer;
         transition: transform 0.15s ease;
+        border-left: 3px solid #ff0033;
     }
     .book-card:hover { transform: translateY(-4px); }
     .book-card-cover {
