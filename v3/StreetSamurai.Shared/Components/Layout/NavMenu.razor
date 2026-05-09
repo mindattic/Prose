@@ -214,8 +214,14 @@
             "dashboard"       => new("Tools",          "/board/tools",          "Dashboard",         "bi-grid-3x3-gap",     "bi-speedometer2"),
             "ask"             => new("Tools",          "/board/tools",          "Ask",               "bi-grid-3x3-gap",     "bi-chat-dots"),
             "books"           => new("Tools",          "/board/tools",          "Bookshelf",         "bi-grid-3x3-gap",     "bi-book"),
-            _ when seg.StartsWith("books/") && seg.EndsWith("/chapters")
-                              => new("Bookshelf",      "/books",                "Chapters",          "bi-book",             "bi-list-ol",
+            _ when seg.StartsWith("books/") && seg.EndsWith("/motifs")
+                              => new("Bookshelf",      "/books",                "Motifs",            "bi-book",             "bi-tags",
+                                     "Tools",          "/board/tools",          "bi-grid-3x3-gap"),
+            _ when seg.StartsWith("books/") && seg.EndsWith("/continuity-extract")
+                              => new("Bookshelf",      "/books",                "Continuity",        "bi-book",             "bi-search",
+                                     "Tools",          "/board/tools",          "bi-grid-3x3-gap"),
+            _ when seg.StartsWith("books/") && seg.EndsWith("/outline")
+                              => new("Bookshelf",      "/books",                "Outline",           "bi-book",             "bi-list-ol",
                                      "Tools",          "/board/tools",          "bi-grid-3x3-gap"),
             _ when seg.StartsWith("books/")
                               => new("Bookshelf",      "/books",                "Book",              "bi-book",             "bi-book-half",
