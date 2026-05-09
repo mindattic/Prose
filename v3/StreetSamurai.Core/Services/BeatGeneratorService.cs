@@ -211,11 +211,13 @@ public class BeatGeneratorService
             SynthesizeNarrative = false,
         };
 
-        // Build the 100-persona panel with explicit 25/25/25/25 distribution across
-        // the four trusted providers. CreatePanel spreads voices across providers
-        // round-robin which gives 25/25/25/25 when all four are active and the
-        // count is a multiple of 4.
-        var panel = voting.CreatePanel(count: 100, fallbackProviderId: "claude");
+        // 100 expert-storyteller personas distributed evenly across the trusted
+        // four providers (25 each — round-robin assignment). Each persona occupies
+        // a distinct position on the chaos↔order narrative-craft spectrum so the
+        // resulting score is the mean reading across that whole aesthetic range,
+        // not a single voice's bias. Low-tier models keep the 100-call burst fast
+        // and cheap (haiku-class everywhere).
+        var panel = BuildStorytellerPanel(count: 100);
 
         VotingResult result;
         try
@@ -250,6 +252,105 @@ public class BeatGeneratorService
                 VoteCount: totals[i].n))
             .OrderByDescending(x => x.Score)
             .ToList();
+    }
+
+    /// <summary>
+    /// Build a panel of N expert-storyteller voters. Providers are round-robin
+    /// across the trusted four (claude / openai / gemini / deepseek), so a 100-
+    /// voter panel ends up 25/25/25/25 when all four are active. Each voter
+    /// occupies a distinct position on the chaos↔order narrative-craft spectrum
+    /// (position p / count) — the persona prompt anchors them at that point so
+    /// the aggregate score is the mean reading across the full range, not a
+    /// single voice's preference. Models are pinned to <see cref="ModelTier.Low"/>
+    /// per provider via <see cref="LlmProviderCatalog.GetTieredModel"/> so the
+    /// burst stays fast and cheap.
+    /// </summary>
+    private static IReadOnlyList<VoterProfile> BuildStorytellerPanel(int count)
+    {
+        var providers = new[] { "claude", "openai", "gemini", "deepseek" };
+        var voters = new List<VoterProfile>(count);
+        for (int i = 0; i < count; i++)
+        {
+            // Position on the chaos↔order spectrum, 0.0 (pure chaos) → 1.0 (pure order).
+            var t = count <= 1 ? 0.5 : (double)i / (count - 1);
+            var providerId = providers[i % providers.Length];
+            var modelOverride = LowTierModelFor(providerId);
+            voters.Add(new VoterProfile
+            {
+                VoterId             = $"storyteller-{i:D3}-{Guid.NewGuid().ToString("N")[..8]}",
+                Name                = $"Storyteller {i + 1} ({SpectrumLabel(t)})",
+                ProviderId          = providerId,
+                ModelOverride       = modelOverride,
+                PersonalityMarkdown = BuildStorytellerPersona(t),
+            });
+        }
+        return voters;
+    }
+
+    /// <summary>
+    /// Pin each persona to the cheapest fastest model the provider exposes —
+    /// haiku-class everywhere — so the 100-call burst returns in seconds rather
+    /// than minutes. The Legion-side tier catalog is the long-term home; this
+    /// inline map is the bridge until consumers can resolve via
+    /// LlmProviderCatalog.GetTieredModel from the Legion DLL.
+    /// </summary>
+    private static string? LowTierModelFor(string providerId) => providerId switch
+    {
+        "claude"   => "claude-haiku-4-5-20251001",
+        "openai"   => "gpt-4.1-nano",
+        "gemini"   => "gemini-2.0-flash",
+        "deepseek" => "deepseek-chat",
+        _          => null,
+    };
+
+    /// <summary>
+    /// One short label for the chaos↔order position so panel members are readable
+    /// in voting-result UIs (e.g., "0.32 → tilted-chaos").
+    /// </summary>
+    private static string SpectrumLabel(double t) => t switch
+    {
+        < 0.10 => "pure chaos",
+        < 0.30 => "tilted chaos",
+        < 0.45 => "balanced (lean chaos)",
+        < 0.55 => "balanced",
+        < 0.70 => "balanced (lean order)",
+        < 0.90 => "tilted order",
+        _      => "pure order",
+    };
+
+    /// <summary>
+    /// Persona prompt for an expert storyteller occupying a specific point on
+    /// the chaos↔order spectrum. The persona is an EXPERT in narrative craft —
+    /// they all share the toolkit; what differs is the aesthetic position from
+    /// which they evaluate. Anchored prose so the LLM commits to the bias.
+    /// </summary>
+    private static string BuildStorytellerPersona(double t)
+    {
+        var pct = (int)Math.Round(t * 100);
+        var stance = t switch
+        {
+            < 0.10 => "You favor narrative CHAOS in its purest form — surprising reversals, broken expectations, anti-tidy endings, unresolved tension as virtue. Causation that never lands. Beats that defy story shape on principle.",
+            < 0.30 => "You favor controlled CHAOS — most rules can be broken, but the breaking should land. Surprise is the highest virtue; structure is a foil to subvert.",
+            < 0.45 => "You lean chaos but respect craft — surprise matters more than satisfaction, but a broken expectation must MEAN something. You distrust tidy resolutions.",
+            < 0.55 => "You stand at the BALANCE point — story is the negotiation between expectation and surprise. You judge a beat by whether it serves the whole arc, neither over-tidy nor over-fractured.",
+            < 0.70 => "You lean order but value rupture — structure is a covenant, but the covenant has to bend at the right beats. Earned reversals over surprise for surprise's sake.",
+            < 0.90 => "You favor narrative ORDER — satisfying causation, every promise paid, every gun fired. The pleasure of a clockwork story assembled with intent.",
+            _      => "You favor pure ORDER — cause-and-effect rigor, structural inevitability, the catharsis of a perfectly closed loop. Chaos is failure of craft.",
+        };
+
+        return $$"""
+            You are an EXPERT in narrative craft — you know story structure, beat theory,
+            voice, pacing, dialogue, subtext, and how each element compounds. You evaluate
+            fiction by craft principles, not personal taste in subject matter.
+
+            YOUR AESTHETIC POSITION on the chaos↔order spectrum: **{{pct}}/100** (100 = pure order, 0 = pure chaos).
+
+            {{stance}}
+
+            Score candidate beats by how compelling YOU find them through this lens. Two
+            experts at different ends of the spectrum can rate the same beat very
+            differently — that's the point. Your score is a vote, not a consensus.
+            """;
     }
 
     /// <summary>Parse a "[{id, score}, ...]" JSON payload tolerantly — accepts a JSON array anywhere in the response.</summary>
