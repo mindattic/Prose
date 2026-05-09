@@ -76,6 +76,101 @@ public class BookOutlineService
         => Load(bookId).Status == OutlineStatus.Approved;
 
     /// <summary>
+    /// Compare a chapter's outline body against the actual prose and surface
+    /// discrepancies. The outline is a CONTRACT — what the chapter should
+    /// deliver — and the prose is the receipt. When they disagree, either the
+    /// prose lost the thread or the outline grew stale; either way, the user
+    /// should see it.
+    ///
+    /// Single low-tier LLM call. Returns the list of detected drifts;
+    /// summaries can be passed to <c>FindingsService</c> for persistence.
+    /// </summary>
+    public async Task<List<OutlineDriftFinding>> DetectChapterDriftAsync(
+        string bookId, string chapterId, string chapterProse, CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(chapterProse)) return new List<OutlineDriftFinding>();
+        var outline = Load(bookId);
+        var ch = outline.Chapters.FirstOrDefault(c => c.ChapterId == chapterId);
+        if (ch == null || string.IsNullOrWhiteSpace(ch.EffectiveBody)) return new List<OutlineDriftFinding>();
+
+        var providers = llmVoting.GetActiveProviderIds();
+        if (providers.Count == 0) return new List<OutlineDriftFinding>();
+
+        var system =
+            "You audit chapter prose against the chapter's outline contract. The outline says " +
+            "what the chapter SHOULD deliver — beats, threads opened/closed, character POV, " +
+            "end-state. The prose is what was actually written. Surface drift: things the outline " +
+            "promised that the prose didn't deliver, or things the prose introduced that contradict " +
+            "the outline. Return STRICT JSON: an array of objects with shape " +
+            "{\"kind\": <'missing' | 'contradiction' | 'extra'>, \"summary\": <one sentence>, " +
+            "\"outline_says\": <quote/paraphrase>, \"prose_says\": <quote/paraphrase>}. " +
+            "Empty array if the prose delivers what the outline promised. No prose outside the JSON.";
+
+        var user = $"""
+            CHAPTER {ch.Number}: {ch.Title}
+            POV: {ch.PovCharacter}
+
+            OUTLINE BODY (what the chapter should deliver):
+            {ch.EffectiveBody}
+
+            PROSE (what was actually written):
+            {(chapterProse.Length > 8000 ? chapterProse[..8000] + "\n…" : chapterProse)}
+            """;
+
+        var request = new VoteRequest
+        {
+            Question = system,
+            Context  = user,
+            MaxTokens = 1024,
+            Temperature = 0.2,
+            SynthesizeNarrative = false,
+        };
+
+        VotingResult result;
+        try { result = await llmVoting.VoteAsync(request, Quorum.Plurality, ct); }
+        catch (Exception ex) { log.LogWarning(ex, "Outline drift detection failed"); return new List<OutlineDriftFinding>(); }
+
+        // Aggregate drift findings across voters — dedupe by summary.
+        var bag = new Dictionary<string, OutlineDriftFinding>(StringComparer.OrdinalIgnoreCase);
+        foreach (var v in result.IndividualVotes.Where(v => !v.IsError))
+        {
+            var payload = !string.IsNullOrWhiteSpace(v.Decision) ? v.Decision : v.Reasoning;
+            foreach (var f in ParseDriftFindings(payload))
+            {
+                var key = f.Summary;
+                if (string.IsNullOrWhiteSpace(key)) continue;
+                bag.TryAdd(key, f);
+            }
+        }
+        return bag.Values.ToList();
+    }
+
+    private static List<OutlineDriftFinding> ParseDriftFindings(string? payload)
+    {
+        var result = new List<OutlineDriftFinding>();
+        if (string.IsNullOrWhiteSpace(payload)) return result;
+        var start = payload.IndexOf('[');
+        var end   = payload.LastIndexOf(']');
+        if (start < 0 || end <= start) return result;
+        try
+        {
+            using var doc = JsonDocument.Parse(payload[start..(end + 1)]);
+            if (doc.RootElement.ValueKind != JsonValueKind.Array) return result;
+            foreach (var e in doc.RootElement.EnumerateArray())
+            {
+                if (e.ValueKind != JsonValueKind.Object) continue;
+                result.Add(new OutlineDriftFinding(
+                    Kind:        e.TryGetProperty("kind",         out var k)  ? k.GetString() ?? "" : "",
+                    Summary:     e.TryGetProperty("summary",      out var s)  ? s.GetString() ?? "" : "",
+                    OutlineSays: e.TryGetProperty("outline_says", out var os) ? os.GetString() ?? "" : "",
+                    ProseSays:   e.TryGetProperty("prose_says",   out var ps) ? ps.GetString() ?? "" : ""));
+            }
+        }
+        catch { }
+        return result;
+    }
+
+    /// <summary>
     /// Throw <see cref="OutlineNotApprovedException"/> when the outline isn't
     /// Approved. Call this from any prose-generation entry point that targets a
     /// specific book — e.g. the autopilot loop in BookOutlineEditor.razor — so

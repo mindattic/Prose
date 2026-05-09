@@ -179,6 +179,17 @@ public enum OutlineStatus
 }
 
 /// <summary>
+/// One detected drift between a chapter's outline body and the prose
+/// actually written. <see cref="Kind"/> is "missing" (outline promised
+/// something the prose didn't deliver), "contradiction" (the prose says
+/// something the outline disagrees with), or "extra" (the prose introduced
+/// something the outline didn't account for — could be welcome, could be
+/// scope creep). <see cref="Summary"/> is the short headline; the
+/// <c>OutlineSays</c>/<c>ProseSays</c> pair is the receipt.
+/// </summary>
+public record OutlineDriftFinding(string Kind, string Summary, string OutlineSays, string ProseSays);
+
+/// <summary>
 /// Thrown when book-context prose generation is attempted before the book's
 /// outline is <see cref="OutlineStatus.Approved"/>. Callers that drive prose
 /// generation against a specific book should call
