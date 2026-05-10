@@ -6,6 +6,7 @@
 @inject ActionConfigService ActionCfg
 @inject ExpertPersonaService Personas
 @inject WorldTickService WorldTick
+@inject ContinuityLongSweepService ContinuitySweep
 @inject ToastNotifier Toast
 @inject NavigationManager Nav
 
@@ -26,7 +27,9 @@
     <div class="card bg-dark border-secondary mb-4">
         <div class="card-body py-2 px-3">
             <h6 class="text-info mb-2"><i class="bi bi-clock-history me-2"></i>Background services</h6>
-            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+
+            @* World tick *@
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 pb-2 mb-2 border-bottom border-secondary">
                 <div class="small flex-grow-1">
                     <strong>World tick</strong> — advances the global story clock on a periodic timer.
                     Foundation for decay rules, scheduled events, NPC routines.
@@ -54,6 +57,29 @@
                     <label class="form-check-label small" for="worldTickToggle">
                         @(WorldTick.Enabled ? "Enabled" : "Disabled")
                     </label>
+                </div>
+            </div>
+
+            @* Continuity long-sweep — read-only diagnostics *@
+            <div class="small">
+                <strong>Continuity long-sweep</strong> — periodic
+                <code>GetContradictionGroups</code> across the canon corpus.
+                Hourly tick uses the incremental variant (touched-since-watermark);
+                full re-baseline weekly.
+                <div class="text-muted">
+                    @if (ContinuitySweep.LastSweepAt.HasValue)
+                    {
+                        <span>last sweep <strong>@ContinuitySweep.LastSweepMode</strong> at @ContinuitySweep.LastSweepAt.Value.ToLocalTime().ToString("g")</span>
+                        <span> · @ContinuitySweep.LastSweepGroupCount contradiction group(s)</span>
+                    }
+                    else
+                    {
+                        <span>no sweep yet — service starts ~2 min after process boot</span>
+                    }
+                    @if (ContinuitySweep.LastFullSweepAt.HasValue)
+                    {
+                        <span> · last full re-baseline @ContinuitySweep.LastFullSweepAt.Value.ToLocalTime().ToString("g")</span>
+                    }
                 </div>
             </div>
         </div>
