@@ -168,7 +168,7 @@
     {
         var chapterCount = book.ChapterIds.Count;
         var bookId = book.Id;
-        <div class="book-card" @onclick="@(() => Nav.NavigateTo($"/write/{bookId}"))">
+        <div class="book-card" data-book-id="@bookId" @onclick="@(() => Nav.NavigateTo($"/write/{bookId}"))">
             <div class="book-card-cover" style="@CoverStyle(book)">
                 @if (string.IsNullOrEmpty(book.CoverImageUrl))
                 {
