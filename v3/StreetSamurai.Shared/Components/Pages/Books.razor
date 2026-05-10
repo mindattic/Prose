@@ -2,8 +2,11 @@
 @attribute [Authorize(Roles = "Contributor,Administrator")]
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
+@using StreetSamurai.Core.Services
 @inject IBookRepository BookRepo
 @inject IChapterRepository ChapterRepo
+@inject FindingsService Findings
+@inject MotifService MotifSvc
 @inject NavigationManager Nav
 @inject IWriteAccessProvider Access
 
@@ -199,6 +202,28 @@
             <div class="book-card-meta">
                 <span class="badge bg-secondary">@chapterCount @(chapterCount == 1 ? "chapter" : "chapters")</span>
                 <span class="badge bg-dark text-muted">@book.Status</span>
+                @if (bookStats.TryGetValue(bookId, out var s) && s.TotalBeats > 0)
+                {
+                    var pct = (int)Math.Round(100.0 * s.DoneBeats / s.TotalBeats);
+                    var pctClass = pct >= 100 ? "bg-success"
+                                 : pct >= 50  ? "bg-info text-dark"
+                                 : "bg-warning text-dark";
+                    <span class="badge @pctClass" title="Beats with prose / total beats">
+                        @pct% (@s.DoneBeats/@s.TotalBeats beats)
+                    </span>
+                }
+                @if (bookStats.TryGetValue(bookId, out var s2) && s2.DriftCount > 0)
+                {
+                    <span class="badge bg-warning text-dark" title="Open outline-drift findings">
+                        <i class="bi bi-shield-exclamation me-1"></i>@s2.DriftCount drift
+                    </span>
+                }
+                @if (bookStats.TryGetValue(bookId, out var s3) && s3.MotifCount > 0)
+                {
+                    <span class="badge bg-secondary" title="Registered motifs">
+                        <i class="bi bi-tags me-1"></i>@s3.MotifCount
+                    </span>
+                }
             </div>
         </div>
     }
@@ -408,12 +433,49 @@
     {
         books = BookRepo.ListBooks();
 
+        var allChapters = ChapterRepo.ListChapters();
+
         // A chapter is "loose" if its BookId is null OR points to a book that no longer exists.
         var bookIds = books.Select(b => b.Id).ToHashSet();
-        looseChapters = ChapterRepo.ListChapters()
+        looseChapters = allChapters
             .Where(c => string.IsNullOrEmpty(c.BookId) || !bookIds.Contains(c.BookId))
             .ToList();
+
+        // Per-book stats: beat completion %, drift findings count, motif count.
+        // Single pass over chapters → group by BookId to keep cold-load
+        // costs in check; ListChapters already deserializes every chapter.
+        bookStats.Clear();
+        var chaptersByBook = allChapters
+            .Where(c => !string.IsNullOrEmpty(c.BookId) && bookIds.Contains(c.BookId!))
+            .GroupBy(c => c.BookId!);
+        foreach (var group in chaptersByBook)
+        {
+            var beats     = group.SelectMany(c => c.Beats ?? new List<ChapterBeat>()).ToList();
+            var totalBeats = beats.Count;
+            var doneBeats  = beats.Count(b => !string.IsNullOrWhiteSpace(b.Text));
+            var driftCount = 0;
+            try
+            {
+                foreach (var c in group)
+                    driftCount += Findings.ListByChapter(c.Id)
+                        .Count(f => f.Status == FindingStatus.New
+                                 && (f.Category == FindingCategory.OutlineDrift
+                                     || (f.Summary?.StartsWith("OUTLINE-DRIFT", StringComparison.OrdinalIgnoreCase) ?? false)));
+            }
+            catch { /* findings DB may not be ready on first run */ }
+            int motifCount = 0;
+            try { motifCount = MotifSvc.Load(group.Key).Motifs.Count; }
+            catch { }
+            bookStats[group.Key] = new BookStats(totalBeats, doneBeats, driftCount, motifCount);
+        }
     }
+
+    /// <summary>
+    /// Per-book stats surfaced on each book card. Computed once on Reload from
+    /// a single ListChapters pass plus per-chapter findings counts.
+    /// </summary>
+    private record BookStats(int TotalBeats, int DoneBeats, int DriftCount, int MotifCount);
+    private Dictionary<string, BookStats> bookStats = new();
 
     private static string CoverStyle(Book book) =>
         string.IsNullOrEmpty(book.CoverImageUrl) ? "" : $"background-image: url('{book.CoverImageUrl}');";
