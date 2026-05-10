@@ -5,6 +5,7 @@
 @using StreetSamurai.Shared.Services
 @inject ActionConfigService ActionCfg
 @inject ExpertPersonaService Personas
+@inject WorldTickService WorldTick
 @inject ToastNotifier Toast
 @inject NavigationManager Nav
 
@@ -20,6 +21,43 @@
         Per-action voter count + model tier. Writing actions are tier-locked HIGH so settings can't
         accidentally degrade the prose readers actually see; voting / selection actions stay adjustable.
     </p>
+
+    @* ── Background services ────────────────────────────────── *@
+    <div class="card bg-dark border-secondary mb-4">
+        <div class="card-body py-2 px-3">
+            <h6 class="text-info mb-2"><i class="bi bi-clock-history me-2"></i>Background services</h6>
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div class="small flex-grow-1">
+                    <strong>World tick</strong> — advances the global story clock on a periodic timer.
+                    Foundation for decay rules, scheduled events, NPC routines.
+                    <div class="text-muted">
+                        Heartbeat #@WorldTick.TickCount ·
+                        @if (WorldTick.LastTickAt.HasValue)
+                        {
+                            <span>last tick @WorldTick.LastTickAt.Value.ToLocalTime().ToString("g")</span>
+                        }
+                        else
+                        {
+                            <span>no ticks yet</span>
+                        }
+                        @if (WorldTick.LastStoryNow.HasValue)
+                        {
+                            <span> · story-time @WorldTick.LastStoryNow.Value.ToLocalTime().ToString("g")</span>
+                        }
+                    </div>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch"
+                           id="worldTickToggle"
+                           checked="@WorldTick.Enabled"
+                           @onchange="ToggleWorldTick" />
+                    <label class="form-check-label small" for="worldTickToggle">
+                        @(WorldTick.Enabled ? "Enabled" : "Disabled")
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
 
     @if (actions == null)
     {
@@ -348,6 +386,15 @@
     {
         generateOpen = false;
         generating = false;
+    }
+
+    private void ToggleWorldTick(ChangeEventArgs e)
+    {
+        var enabled = e.Value is bool b && b;
+        WorldTick.Enabled = enabled;
+        Toast.Info("WORLD-TICK", enabled
+            ? "World tick enabled — story-time will advance on the next interval."
+            : "World tick disabled — heartbeat-only mode.");
     }
 
     private async Task GenerateFromScene()
