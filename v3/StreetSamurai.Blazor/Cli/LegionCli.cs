@@ -30,7 +30,7 @@ public static class LegionCli
             return 0;
         }
 
-        var voting = sp.GetRequiredService<LLMVotingService>();
+        var voting = sp.GetRequiredService<LlmVotingService>();
         var question = ArgValue(args, "--question") ?? PositionalAfter(args, sub);
         var context  = ArgValue(args, "--context") ?? "";
         var maxTok   = int.TryParse(ArgValue(args, "--max-tokens"), out var mt) ? mt : 1024;

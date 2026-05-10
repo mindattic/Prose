@@ -16,7 +16,7 @@ namespace StreetSamurai.Mcp;
 // prototype at tools/check-contradictions.js because that prototype is the
 // validated reference implementation. A future refactor will inline the
 // logic into a proper C# ContradictionFinderService backed by
-// LLMVotingService.ScoreAsync — that work is queued in the architecture
+// LlmVotingService.ScoreAsync — that work is queued in the architecture
 // proposal saved at memory/project_contradiction_detector.md.
 
 /// <summary>
@@ -30,7 +30,7 @@ namespace StreetSamurai.Mcp;
 /// Implementation note: this MCP tool currently shells out to the Node prototype
 /// at <c>tools/check-contradictions.js</c> because that prototype is the validated
 /// reference implementation. A future refactor will inline the logic into a
-/// proper C# ContradictionFinderService backed by <c>LLMVotingService.ScoreAsync</c>.
+/// proper C# ContradictionFinderService backed by <c>LlmVotingService.ScoreAsync</c>.
 /// </summary>
 [McpServerToolType]
 public class ContinuityTools

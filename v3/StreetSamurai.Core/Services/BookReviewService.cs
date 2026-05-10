@@ -22,7 +22,7 @@ public class BookReviewService : IBookReviewService
 {
     private readonly IBookRepository books;
     private readonly IChapterRepository chapters;
-    private readonly LLMVotingService llmVoting;
+    private readonly LlmVotingService llmVoting;
     private readonly SettingsKvStore kv;
     private readonly WritingQualityService quality;
     private readonly MotifService motifs;
@@ -32,7 +32,7 @@ public class BookReviewService : IBookReviewService
 
     public BookReviewService(
         IBookRepository books, IChapterRepository chapters,
-        LLMVotingService llmVoting, SettingsKvStore kv,
+        LlmVotingService llmVoting, SettingsKvStore kv,
         WritingQualityService quality, MotifService motifs,
         DatabaseService db,
         ILogger<BookReviewService> log,

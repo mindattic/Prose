@@ -16,7 +16,7 @@ namespace StreetSamurai.Core.Services;
 /// for upsert. Contradictions are surfaced automatically (same predicate,
 /// different object on the same entity).
 ///
-/// Backed by Legion's <see cref="LLMVotingService"/> Quorum vote: every active
+/// Backed by Legion's <see cref="LlmVotingService"/> Quorum vote: every active
 /// LLM provider becomes a voter, and only candidates whose snippet exists in
 /// the source prose survive. This gives multi-model agreement on what's
 /// actually being asserted.
@@ -24,7 +24,7 @@ namespace StreetSamurai.Core.Services;
 public class ContinuityExtractionService
 {
     private readonly ContinuityService store;
-    private readonly LLMVotingService voting;
+    private readonly LlmVotingService voting;
     private readonly IChapterRepository chapters;
     private readonly CharacterRepository peopleRepo;
     private readonly DistrictRepository placesRepo;
@@ -35,7 +35,7 @@ public class ContinuityExtractionService
 
     public ContinuityExtractionService(
         ContinuityService store,
-        LLMVotingService voting,
+        LlmVotingService voting,
         IChapterRepository chapters,
         CharacterRepository peopleRepo,
         DistrictRepository placesRepo,

@@ -21,14 +21,14 @@ public class BookOutlineService
     private readonly IBookRepository books;
     private readonly IChapterRepository chapters;
     private readonly SettingsKvStore kv;
-    private readonly LLMVotingService llmVoting;
+    private readonly LlmVotingService llmVoting;
     private readonly DatabaseService db;
     private readonly ILogger<BookOutlineService> log;
 
     public BookOutlineService(
         IBookRepository books, IChapterRepository chapters,
         SettingsKvStore kv,
-        LLMVotingService llmVoting, DatabaseService db,
+        LlmVotingService llmVoting, DatabaseService db,
         ILogger<BookOutlineService> log)
     {
         this.books = books;
@@ -43,7 +43,7 @@ public class BookOutlineService
     public BookOutlineService(
         IBookRepository books, IChapterRepository chapters,
         IPathProvider paths,
-        LLMVotingService llmVoting, DatabaseService db,
+        LlmVotingService llmVoting, DatabaseService db,
         ILogger<BookOutlineService> log)
         : this(books, chapters,
                new SettingsKvStore(StreetSamurai.Core.Data.TestDbFactory.For(paths, "settings")),

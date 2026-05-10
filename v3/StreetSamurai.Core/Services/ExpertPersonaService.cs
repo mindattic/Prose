@@ -23,10 +23,10 @@ public class ExpertPersonaService
     private const string KvKey = "expert_personas";
 
     private readonly SettingsKvStore kv;
-    private readonly LLMVotingService? voting;
+    private readonly LlmVotingService? voting;
     private readonly ILogger<ExpertPersonaService> log;
 
-    public ExpertPersonaService(SettingsKvStore kv, ILogger<ExpertPersonaService> log, LLMVotingService? voting = null)
+    public ExpertPersonaService(SettingsKvStore kv, ILogger<ExpertPersonaService> log, LlmVotingService? voting = null)
     {
         this.kv      = kv;
         this.voting  = voting;

@@ -120,7 +120,7 @@ Series              — multiple books that share continuity
     <div class="atlas-section">
         <h5 class="text-info"><i class="bi bi-robot me-2"></i>LLM Strategy</h5>
         <ul class="small">
-            <li><strong>Single source for multi-LLM:</strong> <code>MindAttic.Legion.LLMVotingService</code>. No homebrew voting code in the project.</li>
+            <li><strong>Single source for multi-LLM:</strong> <code>MindAttic.Legion.LlmVotingService</code>. No homebrew voting code in the project.</li>
             <li><strong>Quorum.Plurality</strong> for review pipelines (every voter contributes; aggregation by voter agreement).</li>
             <li><strong>Single-LLM creative</strong> for outline generation (multi-voter merge homogenizes; one voice produces tighter outlines).</li>
             <li><strong>Heuristic + LLM:</strong> WritingQualityService runs deterministic checks first (cheap), Quorum runs after (judgment). Findings merge into one report.</li>
@@ -429,14 +429,14 @@ engine/data/
             "Always-on chat with full book + canon context. Challenges conflicts (\"this contradicts X — override or revise?\"). Proposes outline / chapter / canon edits as confirmable actions.",
             "Core/Services/CoWriterService.cs"),
         new("StoryDirectorService", "Beat Generator",
-            "Per-chapter prose generation. Pulls outline context, POV voice rubric, character canon, world graph, motif inventory. Wired to LLMVotingService for review-quality checks.",
+            "Per-chapter prose generation. Pulls outline context, POV voice rubric, character canon, world graph, motif inventory. Wired to LlmVotingService for review-quality checks.",
             "Core/Services/StoryDirectorService.cs"),
         new("WorldGraphService", "Entity Network",
             "QuikGraph in-memory. Append-mode for runtime relationship adds. EnsureFresh detects canon-file drift via mtime and auto-rebuilds. Persisted to engine/data/graph/world_graph.json.",
             "Core/Services/WorldGraphService.cs"),
-        new("LLMVotingService", "Multi-LLM Backbone",
+        new("LlmVotingService", "Multi-LLM Backbone",
             "Sourced from MindAttic.Legion (singular project for multi-LLM). VoteAsync + ScoreAsync with Quorum thresholds. No homebrew voting in the project.",
-            "MindAttic.Legion/Services/LLMVotingService.cs"),
+            "MindAttic.Legion/Services/LlmVotingService.cs"),
         new("ContinuityService + ContinuityExtractionService + ContinuityApplyService", "Unified Truth Loop",
             "One SQLite store of atomic (entity, predicate, object) claims. Extraction reads chapter prose AND entity records via Legion Quorum; contradictions flagged automatically; resolution flow picks a winner; ContinuityApplyService uses Legion.DecideAsync to write the agreed value back to the entity file (the source of truth).",
             "Core/Services/ContinuityService.cs"),

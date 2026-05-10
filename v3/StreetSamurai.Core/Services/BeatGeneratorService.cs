@@ -13,7 +13,7 @@ public class BeatGeneratorService
     private readonly LoreService canon;
     private readonly EmbeddingService embeddings;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
-    private readonly LLMVotingService? voting;
+    private readonly LlmVotingService? voting;
     private readonly ExpertPersonaService? personas;
     private readonly ActionConfigService? actionConfig;
 
@@ -23,7 +23,7 @@ public class BeatGeneratorService
         LoreService canon,
         EmbeddingService embeddings,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-        LLMVotingService? voting = null,
+        LlmVotingService? voting = null,
         ExpertPersonaService? personas = null,
         ActionConfigService? actionConfig = null)
     {

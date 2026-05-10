@@ -40,7 +40,7 @@ namespace StreetSamurai.Core.Services;
 public class StoryQualityService
 {
     private const string PatternsSettingKey = "story_quality.patterns";
-    private readonly LLMVotingService llmVoting;
+    private readonly LlmVotingService llmVoting;
     private readonly IPathProvider paths;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<StoryQualityService> log;
@@ -60,7 +60,7 @@ public class StoryQualityService
     private const int FailureThreshold = 5;
 
     public StoryQualityService(
-        LLMVotingService llmVoting, IPathProvider paths,
+        LlmVotingService llmVoting, IPathProvider paths,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ILogger<StoryQualityService> log)
     {
