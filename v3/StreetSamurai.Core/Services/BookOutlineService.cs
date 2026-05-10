@@ -145,7 +145,7 @@ public class BookOutlineService
         return bag.Values.ToList();
     }
 
-    private static List<OutlineDriftFinding> ParseDriftFindings(string? payload)
+    internal static List<OutlineDriftFinding> ParseDriftFindings(string? payload)
     {
         var result = new List<OutlineDriftFinding>();
         if (string.IsNullOrWhiteSpace(payload)) return result;
