@@ -15,6 +15,8 @@ using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 using StreetSamurai.Core.Services;
 using StreetSamurai.Shared.Services;
+using MindAttic.Vault.Configuration;
+using MindAttic.Vault.DependencyInjection;
 
 // CLI mode: dotnet run --project ... -- --rebuild-graph
 // Rebuilds world_graph.json from source data without starting the web server.
@@ -350,6 +352,27 @@ if (args.Contains("--findings"))
 }
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Cloud-native configuration chain. Layered (later sources win):
+//   AddJsonFile (already added by WebApplicationBuilder for appsettings.json).
+//   AddMindAtticVaultFiles surfaces %APPDATA%\MindAttic\<bucket>\providers.json on dev.
+//   AddUserSecrets pinned to mindattic-vault-shared so the same secret store is
+//     visible to every MindAttic project that pins the same id.
+//   AddEnvironmentVariables (already present) picks up App Service Application
+//     Settings + Azure Key Vault references in production.
+builder.Configuration
+    .AddMindAtticVaultFiles()
+    .AddUserSecrets<Program>(optional: true);
+
+// Hand the host's IConfiguration to SettingsService BEFORE it's constructed so
+// the very first ResolveApiKey() call sees Vault values. Static-field injection
+// keeps SettingsService's constructor signature unchanged (tests still
+// `new SettingsService()` without DI).
+SettingsService.VaultConfiguration = builder.Configuration;
+
+// Vault: cloud-native credential resolvers available via DI for any future
+// service that wants to read from IConfiguration directly.
+builder.Services.AddMindAtticVault(builder.Configuration);
 
 // Configure Serilog — daily rolling log files in engine/logs/
 var settings = new SettingsService();

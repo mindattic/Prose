@@ -1,5 +1,8 @@
 # StreetSamurai Project Rules
 
+## Conversation
+- A bare "do" / "do it" / "yes" from the user means "continue", "keep going", "proceed". Resume the current task without asking for clarification.
+
 ## Rate Limit & Context Protection
 
 ### Rate Limit (billing — HARD STOP at 96%)
