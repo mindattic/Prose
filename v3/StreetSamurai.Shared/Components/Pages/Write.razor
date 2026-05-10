@@ -376,6 +376,8 @@
                               @bind="pageMarkdown" @bind:event="oninput"
                               @bind:after="MarkPageDirty"
                               @onkeydown="OnKey"
+                              @onblur="SaveProseCursor"
+                              @onfocus="RestoreProseCursor"
                               spellcheck="true"></textarea>
                 }
                 else
@@ -840,6 +842,26 @@
     private async Task RestoreBeatCursor(string beatId)
     {
         try { await JS.InvokeVoidAsync("ssState.restoreCursorById", $"beat-blurb-{beatId}", $"write:beat-cursor:{beatId}"); }
+        catch { }
+    }
+
+    /// <summary>
+    /// Save / restore caret position on the chapter prose textarea — keyed
+    /// per chapter so switching chapters and back picks up where the user
+    /// left off. Mirrors the per-beat caret persistence already in place;
+    /// no-op when no chapter is loaded (the picker view).
+    /// </summary>
+    private async Task SaveProseCursor()
+    {
+        if (chapter == null) return;
+        try { await JS.InvokeVoidAsync("ssState.saveCursorById", "write-surface", $"write:prose-cursor:{chapter.Id}"); }
+        catch { }
+    }
+
+    private async Task RestoreProseCursor()
+    {
+        if (chapter == null) return;
+        try { await JS.InvokeVoidAsync("ssState.restoreCursorById", "write-surface", $"write:prose-cursor:{chapter.Id}"); }
         catch { }
     }
 
