@@ -1,5 +1,7 @@
 # Embedding Grounding Audit — 2026-05-09
 
+> **STATUS — 2026-05-10:** Fully closed. All six flagged candidates are now embedding-grounded; closure commits listed at the bottom of this file. Subsequent prompt-grounding work should re-run this audit pattern (substring vs. embedding classification, priority-1 vs. priority-2 by impact-per-cost) on whatever new services have shipped since.
+
 Read-only audit of LLM prompt construction sites in `v3/StreetSamurai.Core/Services/`. Goal: classify each site by how it grounds prompts with canon and identify candidates that should migrate from substring/keyword grounding to `EmbeddingService.FindSimilarAsync` / `FindSimilarProseAsync`.
 
 ## EmbeddingService surface (reference)
@@ -74,3 +76,33 @@ Read-only audit of LLM prompt construction sites in `v3/StreetSamurai.Core/Servi
 - 12+ services either deterministic or correctly hand-curated
 
 Migration of the six candidates is a separate task — not executed in this audit.
+
+## Closure record (2026-05-10)
+
+All six candidates migrated. Each migration injects `EmbeddingService` as a nullable constructor parameter so cold-cache / no-API-key environments fall through to the prior behavior — no breaking changes.
+
+### Priority-1
+
+| Service | Commit | Approach |
+|---|---|---|
+| `EntityExtractionService` | `d44bfc3e7` | Replace `graph.AllNodes().Take(100)` with `FindSimilarAsync(storyText, k=20)` for the "existing entities" prompt context. Graph-prefix fallback when embeddings unavailable. |
+| `ContinuousQualityService` | (already done) | Audit was wrong — the service already used `FindSimilarAsync` with substring fallback at the time of the audit. Verified on re-read. |
+| `ConversationalWriterService` | `319c5d627` | Three-stage `ResolveMentions`: substring (floor) + book protagonists (always-relevant) + top-3 `FindSimilarAsync` hits (thematic discovery). |
+
+### Priority-2
+
+| Service | Commit | Approach |
+|---|---|---|
+| `StoryStarterService` | `5bcb914d5` | "ADJACENT CANON" hint block in opening prompts via `FindSimilarAsync(premise, k=5)`. Names+types only — resonance seeds, not full dossiers. |
+| `BookReviewService` | `5bcb914d5` | "THEMATIC NEIGHBORS" block in review context via `FindSimilarProseAsync(premise, k=3, scopeKind="chapter")`. Anchor candidates for the review LLM. |
+| `SuggestionEngineService` | `5bcb914d5` | "OFF-CAST RELEVANT" hint via `FindSimilarAsync(state + unresolvedSeeds, k=5, entityTypes=["character"])`. Excludes current cast — surfaces canon characters whose tensions match the scene but who aren't on stage. |
+
+### Pattern (for the next audit)
+
+Every closure followed the same shape:
+1. Add `EmbeddingService? embeddings` as the trailing constructor parameter (default `= null`).
+2. Build the embedding-grounded section in a private async helper (`BuildAdjacentCanonAsync`, `BuildOffCastRelevantAsync`, `BuildContextAsync`).
+3. Wrap the embedding call in `try/catch` returning the fallback (substring / empty string / plain context).
+4. Inject the helper's output into the existing prompt assembly without restructuring it.
+
+This keeps each migration one-file-one-commit-reversible and never blocks on the embedding cache being warm.
