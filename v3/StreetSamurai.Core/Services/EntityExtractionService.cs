@@ -13,11 +13,13 @@ public class EntityExtractionService
 {
     private readonly ILlmService llm;
     private readonly WorldGraphService graph;
+    private readonly EmbeddingService? embeddings;
 
-    public EntityExtractionService(ILlmService llm, WorldGraphService graph)
+    public EntityExtractionService(ILlmService llm, WorldGraphService graph, EmbeddingService? embeddings = null)
     {
         this.llm = llm;
         this.graph = graph;
+        this.embeddings = embeddings;
     }
 
     /// <summary>
@@ -27,11 +29,15 @@ public class EntityExtractionService
     {
         if (string.IsNullOrWhiteSpace(storyText)) return new ExtractionResult();
 
-        // Provide existing entity names so the LLM can match rather than duplicate
-        var existingNames = graph.AllNodes()
-            .Select(n => $"{n.Name} ({n.NodeType})")
-            .Take(100);
-        var existingContext = string.Join("\n", existingNames);
+        // Provide existing entity names so the LLM can match rather than duplicate.
+        // Per the 2026-05-09 embedding-grounding audit: prefer semantic similarity
+        // (top-20 entities the prose thematically resembles) over an arbitrary
+        // graph.AllNodes().Take(100) prefix — the alphabetic prefix is reactive
+        // (catches duplicates only when names happen to be in the prefix), the
+        // embedding-grounded set is proactive (catches entities the prose alludes
+        // to without name-dropping). Falls back to the graph prefix when the
+        // embedding cache is cold or the API is unavailable.
+        var existingContext = await BuildExistingContextAsync(storyText, ct);
 
         var system = """
             You are an entity extraction engine for a near-future fiction world database.
@@ -210,6 +216,38 @@ public class EntityExtractionService
 
         graph.Save();
         return (newEntities, newRelationships);
+    }
+
+    /// <summary>
+    /// Build the "existing entities" prompt context — embedding-grounded when
+    /// the cache is warm, alphabetic-prefix fallback otherwise. Returns at
+    /// most 100 lines either way to keep prompt length bounded.
+    /// </summary>
+    private async Task<string> BuildExistingContextAsync(string storyText, CancellationToken ct)
+    {
+        const int EmbeddingTopK = 20;
+        const int FallbackTake  = 100;
+
+        if (embeddings != null && !string.IsNullOrWhiteSpace(storyText))
+        {
+            try
+            {
+                var hits = await embeddings.FindSimilarAsync(storyText, k: EmbeddingTopK, ct: ct);
+                if (hits.Count > 0)
+                {
+                    return string.Join("\n", hits.Select(h => $"{h.EntityName} ({h.EntityType})"));
+                }
+            }
+            catch
+            {
+                // Fall through to graph prefix on any embedding failure — the
+                // extraction step is too important to gate on the cache.
+            }
+        }
+
+        return string.Join("\n", graph.AllNodes()
+            .Select(n => $"{n.Name} ({n.NodeType})")
+            .Take(FallbackTake));
     }
 
     private static ExtractionResult ParseExtraction(string response)
