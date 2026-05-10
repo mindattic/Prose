@@ -925,12 +925,14 @@
         if (chapter == null) return;
         try
         {
-            // Drift findings carry the OUTLINE-DRIFT prefix in their summary;
-            // dismissing only those leaves unrelated findings (cliché, voice
-            // checks, etc.) untouched.
+            // Drift findings now carry FindingCategory.OutlineDrift; filtering
+            // on category leaves unrelated findings (cliché, voice checks,
+            // etc.) untouched. The legacy OUTLINE-DRIFT summary-prefix path
+            // still matches old rows that pre-date the category promotion.
             var drifts = Findings.ListByChapter(chapter.Id)
                 .Where(f => f.Status == FindingStatus.New
-                         && (f.Summary?.StartsWith("OUTLINE-DRIFT", StringComparison.OrdinalIgnoreCase) ?? false))
+                         && (f.Category == FindingCategory.OutlineDrift
+                             || (f.Summary?.StartsWith("OUTLINE-DRIFT", StringComparison.OrdinalIgnoreCase) ?? false)))
                 .ToList();
             foreach (var d in drifts)
                 Findings.SetStatus(d.Id, FindingStatus.Dismissed);
@@ -964,14 +966,18 @@
                 return;
             }
             // Persist each drift as a finding so it lives in the inbox + sidebar.
+            // OutlineDrift is now a first-class FindingCategory; the [kind]
+            // prefix in Summary stays for human readability (it's the visible
+            // distinguishing label between missing/contradiction/extra) but
+            // filtering / auto-dismiss now key on Category, not the prefix.
             foreach (var d in drifts)
             {
                 Findings.Upsert(
                     filePath: $"chapter:{chapter.Id}",
                     chapterId: chapter.Id,
-                    category: FindingCategory.Other,
+                    category: FindingCategory.OutlineDrift,
                     severity: d.Kind == "contradiction" ? FindingSeverity.High : FindingSeverity.Medium,
-                    summary: $"OUTLINE-DRIFT [{d.Kind}]: {d.Summary}",
+                    summary: $"[{d.Kind}] {d.Summary}",
                     snippet: $"Outline says: {d.OutlineSays}\nProse says: {d.ProseSays}",
                     suggestedFix: d.Kind switch
                     {
