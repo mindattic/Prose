@@ -537,7 +537,7 @@ public class BeatGeneratorService
         return ParseOocFindings(raw);
     }
 
-    private static List<OocFinding> ParseOocFindings(string payload)
+    internal static List<OocFinding> ParseOocFindings(string payload)
     {
         var result = new List<OocFinding>();
         if (string.IsNullOrWhiteSpace(payload)) return result;
@@ -565,7 +565,7 @@ public class BeatGeneratorService
     }
 
     /// <summary>Parse a "[{id, score}, ...]" JSON payload tolerantly — accepts a JSON array anywhere in the response.</summary>
-    private static IEnumerable<(int id, double score)> ParseRankPayload(string payload)
+    internal static IEnumerable<(int id, double score)> ParseRankPayload(string payload)
     {
         var start = payload.IndexOf('[');
         var end   = payload.LastIndexOf(']');
