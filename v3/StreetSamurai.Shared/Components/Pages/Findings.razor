@@ -8,6 +8,7 @@
 @inject ContinuityService Continuity
 @inject ContinuityApplyService ContinuityApply
 @inject IJSRuntime JS
+@inject NavigationManager Nav
 
 <div class="d-flex justify-content-between align-items-start mb-3">
     <div>
@@ -300,6 +301,8 @@ else
 </style>
 
 @code {
+    [SupplyParameterFromQuery(Name = "drift")] public string? DriftQuery { get; set; }
+
     private FindingStatus? filter;
     private bool driftOnly;
     private List<Finding> items = new();
@@ -330,6 +333,17 @@ else
     private string applyingUid = "";
 
     protected override void OnInitialized() => Refresh();
+
+    /// <summary>
+    /// Query-param sync: ?drift=1 sets driftOnly on entry. Runs ahead of the
+    /// localStorage hop in OnAfterRenderAsync so a deep-link beats the saved
+    /// preference (explicit URL wins, matching the /entity tab behavior).
+    /// </summary>
+    protected override void OnParametersSet()
+    {
+        if (DriftQuery == "1" && !driftOnly) driftOnly = true;
+        if (DriftQuery == "0" && driftOnly)  driftOnly = false;
+    }
 
     /// <summary>Restore filter + scroll position from localStorage on first render.</summary>
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -504,6 +518,11 @@ else
     {
         driftOnly = !driftOnly;
         _ = PersistDriftOnlyAsync();
+        // Reflect into the URL so the current view is shareable. Use replace
+        // so the back button doesn't have a stop on every toggle, and skip
+        // the ?drift= param entirely when it's off (cleaner URL on default).
+        var url = driftOnly ? "/findings?drift=1" : "/findings";
+        Nav.NavigateTo(url, replace: true);
     }
 
     private async Task PersistDriftOnlyAsync()
