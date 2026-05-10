@@ -1,4 +1,5 @@
 using System.Text.Json;
+using Microsoft.Extensions.Configuration;
 using MindAttic.Legion;
 using StreetSamurai.Core.Interfaces;
 
@@ -6,6 +7,17 @@ namespace StreetSamurai.Core.Services;
 
 public class SettingsService : IDisposable
 {
+    /// <summary>
+    /// Optional cloud-native configuration source. When set (typically once at host
+    /// startup via <c>SettingsService.VaultConfiguration = builder.Configuration</c>),
+    /// every <see cref="ResolveApiKey"/> call checks
+    /// <c>MindAttic:Vault:LLM:&lt;providerId&gt;:apiKey</c> in <see cref="IConfiguration"/>
+    /// before consulting env vars or the file store. That layer covers User Secrets in
+    /// dev, App Service Application Settings in prod, and Azure Key Vault references —
+    /// all without changing this class's public surface or requiring DI plumbing.
+    /// </summary>
+    public static IConfiguration? VaultConfiguration { get; set; }
+
     private readonly string settingsPath;
     private readonly string defaultsPath;
     private SettingsData data = new();
@@ -90,12 +102,16 @@ public class SettingsService : IDisposable
     private static string Env(string key, string fallback) =>
         Environment.GetEnvironmentVariable(key) is { Length: > 0 } v ? v : fallback;
 
-    // Credential resolution: env var → shared %APPDATA%/MindAttic/LLM/ store → legacy Settings.json.
-    // The shared store (MindAtticCredentialStore from the LLMVoting library) is the canonical
-    // "first stop" so credentials propagate across every MindAttic application.
+    // Credential resolution: VaultConfiguration → env var → shared %APPDATA%/MindAttic/LLM/
+    // store → legacy Settings.json. VaultConfiguration is the cloud-native primary; when
+    // unset (e.g. in unit tests that construct SettingsService directly), the chain
+    // falls back to the prior env-var-first behaviour with no observable difference.
     // Override the store location with the MINDATTIC_LLM_CREDENTIALS env var.
     private static string ResolveApiKey(string envVar, string providerId, string legacyValue)
     {
+        var fromConfig = VaultConfiguration?[$"MindAttic:Vault:LLM:{providerId}:apiKey"];
+        if (!string.IsNullOrWhiteSpace(fromConfig)) return fromConfig.Trim();
+
         if (Environment.GetEnvironmentVariable(envVar) is { Length: > 0 } v) return v;
         var fromStore = MindAtticCredentialStore.GetKey(providerId);
         return !string.IsNullOrEmpty(fromStore) ? fromStore : legacyValue;
