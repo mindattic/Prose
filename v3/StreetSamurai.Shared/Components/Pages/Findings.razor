@@ -213,6 +213,11 @@
     <button class="btn btn-sm @(filter == FindingStatus.Triaged ? "btn-info" : "btn-outline-secondary")" @onclick="() => SetFilter(FindingStatus.Triaged)">Triaged</button>
     <button class="btn btn-sm @(filter == FindingStatus.Applied ? "btn-success" : "btn-outline-secondary")" @onclick="() => SetFilter(FindingStatus.Applied)">Applied</button>
     <button class="btn btn-sm @(filter == FindingStatus.Dismissed ? "btn-secondary" : "btn-outline-secondary")" @onclick="() => SetFilter(FindingStatus.Dismissed)">Dismissed</button>
+    <button class="btn btn-sm @(driftOnly ? "btn-warning text-dark" : "btn-outline-secondary") ms-2"
+            @onclick="ToggleDriftOnly"
+            title="Show only outline-vs-prose drift findings (OUTLINE-DRIFT prefix)">
+        <i class="bi bi-shield-exclamation me-1"></i>Drift only
+    </button>
     <span class="small text-muted ms-3 me-1">Continuity:</span>
     <button class="btn btn-sm @(showContradictions ? "btn-warning text-dark" : "btn-outline-secondary")"
             @onclick="() => { showContradictions = !showContradictions; }">
@@ -230,8 +235,9 @@
 }
 else
 {
-    @foreach (var f in items)
+    @foreach (var f in VisibleItems)
     {
+        var isDrift = (f.Summary ?? "").StartsWith("OUTLINE-DRIFT", StringComparison.OrdinalIgnoreCase);
         <div class="card bg-dark text-light border-secondary mb-2">
             <div class="card-body p-3">
                 <div class="d-flex justify-content-between align-items-start mb-2">
@@ -239,6 +245,12 @@ else
                         <span class="badge @CategoryBadge(f.Category) me-1">@f.Category</span>
                         <span class="badge @SeverityBadge(f.Severity) me-1">@f.Severity</span>
                         <span class="badge @StatusBadge(f.Status)">@f.Status</span>
+                        @if (isDrift)
+                        {
+                            <span class="badge bg-warning text-dark ms-1" title="Outline-vs-prose drift">
+                                <i class="bi bi-shield-exclamation me-1"></i>Drift
+                            </span>
+                        }
                         <span class="ms-2 small text-muted">@f.DetectedAt.ToLocalTime().ToString("g")</span>
                     </div>
                     <div class="small text-muted"><code>@RelPath(f.FilePath)</code></div>
@@ -289,8 +301,18 @@ else
 
 @code {
     private FindingStatus? filter;
+    private bool driftOnly;
     private List<Finding> items = new();
     private int newCount, triagedCount, appliedCount, dismissedCount;
+    /// <summary>
+    /// Items rendered in the list view. When the Drift-only chip is active,
+    /// narrow to findings whose summary carries the OUTLINE-DRIFT prefix —
+    /// the convention BookOutlineService.DetectChapterDriftAsync writes.
+    /// </summary>
+    private IEnumerable<Finding> VisibleItems =>
+        driftOnly
+            ? items.Where(f => (f.Summary ?? "").StartsWith("OUTLINE-DRIFT", StringComparison.OrdinalIgnoreCase))
+            : items;
     private long? applying;
     private readonly Dictionary<long, (string Css, string Text)> applyMessages = new();
 
@@ -320,6 +342,12 @@ else
             {
                 filter = f;
                 Refresh();
+                StateHasChanged();
+            }
+            var savedDrift = await JS.InvokeAsync<string?>("ssState.get", "findings:drift-only");
+            if (savedDrift == "1" && !driftOnly)
+            {
+                driftOnly = true;
                 StateHasChanged();
             }
             await JS.InvokeVoidAsync("ssState.installAutoScroll", "findings:scroll");
@@ -469,6 +497,18 @@ else
     private async Task PersistFilterAsync()
     {
         try { await JS.InvokeVoidAsync("ssState.set", "findings:filter", filter?.ToString() ?? ""); }
+        catch { }
+    }
+
+    private void ToggleDriftOnly()
+    {
+        driftOnly = !driftOnly;
+        _ = PersistDriftOnlyAsync();
+    }
+
+    private async Task PersistDriftOnlyAsync()
+    {
+        try { await JS.InvokeVoidAsync("ssState.set", "findings:drift-only", driftOnly ? "1" : "0"); }
         catch { }
     }
 
