@@ -27,6 +27,7 @@ public class BookReviewService : IBookReviewService
     private readonly WritingQualityService quality;
     private readonly MotifService motifs;
     private readonly DatabaseService db;
+    private readonly EmbeddingService? embeddings;
     private readonly ILogger<BookReviewService> log;
 
     public BookReviewService(
@@ -34,7 +35,8 @@ public class BookReviewService : IBookReviewService
         LLMVotingService llmVoting, SettingsKvStore kv,
         WritingQualityService quality, MotifService motifs,
         DatabaseService db,
-        ILogger<BookReviewService> log)
+        ILogger<BookReviewService> log,
+        EmbeddingService? embeddings = null)
     {
         this.books = books;
         this.chapters = chapters;
@@ -43,6 +45,7 @@ public class BookReviewService : IBookReviewService
         this.quality = quality;
         this.motifs = motifs;
         this.db = db;
+        this.embeddings = embeddings;
         this.log = log;
     }
 
@@ -79,7 +82,9 @@ public class BookReviewService : IBookReviewService
 
         progress?.Report($"Building LLM review context for {ordered.Count} chapters...");
 
-        var context = BuildContext(book, ordered, motifInventory);
+        // Embedding-augmented when EmbeddingService is registered — gracefully
+        // falls through to plain context when not. Per audit Priority-2.
+        var context = await BuildContextAsync(book, ordered, motifInventory, ct);
 
         progress?.Report($"Polling {activeProviders.Count} LLMs for findings...");
 
@@ -197,6 +202,51 @@ public class BookReviewService : IBookReviewService
     }
 
     // ── Context building ─────────────────────────────────────────────────
+
+    /// <summary>
+    /// Embedding-augmented context. Same shape as <see cref="BuildContext"/>
+    /// but appends a "THEMATIC NEIGHBORS" block listing the top-3 prose-
+    /// embedded chapters most similar to the book's premise — gives the
+    /// review LLM a quick read on which chapters are anchoring the book's
+    /// theme vs. drifting from it. Single embedding call regardless of
+    /// book length; gracefully degrades to plain BuildContext when the
+    /// embedding cache is cold or EmbeddingService isn't injected.
+    /// </summary>
+    private async Task<string> BuildContextAsync(Book book, List<Chapter> ordered, MotifInventory? motifInventory, CancellationToken ct)
+    {
+        var baseContext = BuildContext(book, ordered, motifInventory);
+        if (embeddings == null) return baseContext;
+        // Use the book's premise (or title if premise is empty) as the query.
+        // Premise is the load-bearing thematic statement; chapters whose prose
+        // embeds near it are anchoring the through-line.
+        var query = !string.IsNullOrWhiteSpace(book.Premise) ? book.Premise! : book.Title;
+        if (string.IsNullOrWhiteSpace(query)) return baseContext;
+
+        try
+        {
+            var hits = await embeddings.FindSimilarProseAsync(query, k: 3, scopeKind: "chapter", ct: ct);
+            if (hits.Count == 0) return baseContext;
+
+            var lookup = ordered.ToDictionary(c => c.Id, c => c);
+            var lines = new List<string>();
+            foreach (var h in hits)
+            {
+                var key = h.ScopeId.ToString("N");
+                var ch = ordered.FirstOrDefault(c => c.Id == key || c.Id == h.ScopeId.ToString());
+                if (ch != null)
+                    lines.Add($"- Chapter {ch.Number?.ToString() ?? "?"} \"{ch.Title}\" (similarity {h.Similarity:F2})");
+            }
+            if (lines.Count == 0) return baseContext;
+            return baseContext
+                + "\n── THEMATIC NEIGHBORS (chapters whose prose embeds nearest the book premise — anchor candidates) ──\n"
+                + string.Join("\n", lines)
+                + "\n";
+        }
+        catch
+        {
+            return baseContext;
+        }
+    }
 
     private string BuildContext(Book book, List<Chapter> ordered, MotifInventory? motifInventory)
     {

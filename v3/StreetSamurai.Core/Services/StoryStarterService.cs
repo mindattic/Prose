@@ -14,6 +14,7 @@ public class StoryStarterService
     private readonly SemanticIndexService semanticIndex;
     private readonly InferenceService inference;
     private readonly WorldStateService worldState;
+    private readonly EmbeddingService? embeddings;
     private readonly ILogger<StoryStarterService> log;
 
     // Seed premises for zero-input generation — drawn from the world's actual tensions
@@ -39,7 +40,8 @@ public class StoryStarterService
         DatabaseService canonDb, IPathProvider paths,
         SemanticIndexService semanticIndex, InferenceService inference,
         WorldStateService worldState,
-        ILogger<StoryStarterService> log)
+        ILogger<StoryStarterService> log,
+        EmbeddingService? embeddings = null)
     {
         this.llm = llm;
         this.graph = graph;
@@ -49,6 +51,7 @@ public class StoryStarterService
         this.semanticIndex = semanticIndex;
         this.inference = inference;
         this.worldState = worldState;
+        this.embeddings = embeddings;
         this.log = log;
     }
 
@@ -107,6 +110,15 @@ public class StoryStarterService
         if (request.Location != null) entityNames.Add(request.Location);
         var sceneContext = graph.GetSceneContext(entityNames);
 
+        // Audit Priority-2: pull thematically-adjacent canon entities for the
+        // premise so the opening leans on existing world texture instead of
+        // generating in a vacuum. Top-5 hits are listed by name+type as a
+        // "ADJACENT CANON" hint block — the LLM uses them as cohesion seeds
+        // (existing factions a contract might come through, prior-canon
+        // characters whose absence the prose can imply, places this premise
+        // would echo). Falls through silently when the embedding cache is cold.
+        var adjacentCanon = await BuildAdjacentCanonAsync(request.Premise, ct);
+
         // Fall back to typed JSON if graph is empty
         string locationContext, characterContext;
         if (!string.IsNullOrWhiteSpace(sceneContext))
@@ -152,6 +164,8 @@ public class StoryStarterService
             CHARACTERS:
             {characterContext}
 
+            {adjacentCanon}
+
             {(!string.IsNullOrWhiteSpace(request.CanonFacts) ? request.CanonFacts : "")}
 
             WORLD DETAILS:
@@ -193,6 +207,30 @@ public class StoryStarterService
             Characters = request.Characters,
             Location = request.Location,
         };
+    }
+
+    /// <summary>
+    /// Build an "ADJACENT CANON" hint block from the premise's top-5 embedding
+    /// matches. Returns empty string when embeddings are unavailable so the
+    /// prompt section drops out cleanly. Names+types only — full dossiers
+    /// would inflate the prompt; the goal here is "you have these neighbors"
+    /// not "here's everything we know about them."
+    /// </summary>
+    private async Task<string> BuildAdjacentCanonAsync(string premise, CancellationToken ct)
+    {
+        if (embeddings == null || string.IsNullOrWhiteSpace(premise)) return "";
+        try
+        {
+            var hits = await embeddings.FindSimilarAsync(premise, k: 5, ct: ct);
+            if (hits.Count == 0) return "";
+            var lines = hits.Select(h => $"- {h.EntityName} ({h.EntityType})");
+            return "ADJACENT CANON (entities thematically near this premise — use as resonance seeds, not requirements):\n"
+                 + string.Join("\n", lines);
+        }
+        catch
+        {
+            return "";
+        }
     }
 
     private string JsonStoryBible()
