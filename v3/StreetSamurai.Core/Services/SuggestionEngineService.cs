@@ -14,15 +14,18 @@ public class SuggestionEngineService
     private readonly IDatabaseService db;
     private readonly ConsequenceEngine consequences;
     private readonly StoryStateService storyState;
+    private readonly EmbeddingService? embeddings;
 
     public SuggestionEngineService(
         ILlmService llm, IDatabaseService db,
-        ConsequenceEngine consequences, StoryStateService storyState)
+        ConsequenceEngine consequences, StoryStateService storyState,
+        EmbeddingService? embeddings = null)
     {
         this.llm = llm;
         this.db = db;
         this.consequences = consequences;
         this.storyState = storyState;
+        this.embeddings = embeddings;
     }
 
     /// <summary>
@@ -60,6 +63,14 @@ public class SuggestionEngineService
             if (c?.Description.Length > 0)
                 agendas.Add($"  {name}: {c.Description[..Math.Min(200, c.Description.Length)]}");
         }
+
+        // Audit Priority-2: surface thematically-pressing characters whose
+        // agendas align with the current tension. The cast list contains who's
+        // physically present; the embedding query (story state + unresolved
+        // seeds) finds characters whose canon tension matches what the story
+        // is RIGHT NOW. Hits become "OFF-CAST RELEVANT" hints in the prompt
+        // so the LLM can suggest beats that bring those characters into play.
+        var offCastRelevant = await BuildOffCastRelevantAsync(stateContext, unresolvedSeeds, cast, ct);
 
         var system = """
             You are a story direction engine for a neo-noir narrative.
@@ -99,6 +110,7 @@ public class SuggestionEngineService
             {(agendas.Count > 0 ? string.Join("\n", agendas) : "  No specific agendas available.")}
 
             UNRESOLVED SEEDS: {(unresolvedSeeds.Count > 0 ? string.Join(", ", unresolvedSeeds) : "none")}
+            {offCastRelevant}
 
             STORY STATE:
             {stateContext}
@@ -144,6 +156,37 @@ public class SuggestionEngineService
         catch
         {
             return [];
+        }
+    }
+
+    /// <summary>
+    /// Embedding-grounded "characters not on stage who could matter right now"
+    /// hint. Query is (story state + unresolved seeds) — finds canon characters
+    /// whose embedded profile overlaps thematically with what's pressing in the
+    /// scene. Excludes the current cast so the suggestion isn't "the same
+    /// people" again. Empty string when EmbeddingService isn't available so
+    /// the prompt section drops out cleanly.
+    /// </summary>
+    private async Task<string> BuildOffCastRelevantAsync(
+        string stateContext, List<string> unresolvedSeeds, List<string> cast, CancellationToken ct)
+    {
+        if (embeddings == null) return "";
+        var query = $"{stateContext}\n{string.Join(" / ", unresolvedSeeds)}";
+        if (string.IsNullOrWhiteSpace(query)) return "";
+        try
+        {
+            var hits = await embeddings.FindSimilarAsync(query, k: 5, entityTypes: new[] { "character" }, ct: ct);
+            if (hits.Count == 0) return "";
+            // Drop characters already on cast — those are covered by AGENDAS above.
+            var castSet = new HashSet<string>(cast, StringComparer.OrdinalIgnoreCase);
+            var off = hits.Where(h => !castSet.Contains(h.EntityName)).Take(3).ToList();
+            if (off.Count == 0) return "";
+            return "\nOFF-CAST RELEVANT (canon characters whose tensions match the current scene — bringing one in could land):\n"
+                 + string.Join("\n", off.Select(h => $"  - {h.EntityName}"));
+        }
+        catch
+        {
+            return "";
         }
     }
 
