@@ -23,6 +23,7 @@ public class ConversationalWriterService
     private readonly IChapterRepository chapters;
     private readonly BookOutlineService outline;
     private readonly DatabaseService canon;
+    private readonly EmbeddingService? embeddings;
     private readonly ILogger<ConversationalWriterService> log;
 
     public ConversationalWriterService(
@@ -30,7 +31,8 @@ public class ConversationalWriterService
         WorldStateService worldState, WorldGraphService graph,
         IBookRepository books, IChapterRepository chapters,
         BookOutlineService outline, DatabaseService canon,
-        ILogger<ConversationalWriterService> log)
+        ILogger<ConversationalWriterService> log,
+        EmbeddingService? embeddings = null)
     {
         this.llm = llm;
         this.worldState = worldState;
@@ -39,6 +41,7 @@ public class ConversationalWriterService
         this.chapters = chapters;
         this.outline = outline;
         this.canon = canon;
+        this.embeddings = embeddings;
         this.log = log;
     }
 
@@ -181,6 +184,8 @@ public class ConversationalWriterService
         var found = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         var hay = $"{turn.UserMessage} {turn.ChapterPlain}";
 
+        // Stage 1: substring match on every graph node — catches every
+        // explicitly-named entity. Substring-grounding is the floor.
         foreach (var node in graph.AllNodes())
         {
             if (string.IsNullOrWhiteSpace(node.Name)) continue;
@@ -189,12 +194,40 @@ public class ConversationalWriterService
                 found.Add(node.Id);
         }
 
+        // Stage 2: protagonist-by-default — even if the user's message doesn't
+        // name them, the book's protagonists are always relevant.
         if (!string.IsNullOrEmpty(turn.BookId))
         {
             var book = books.LoadBook(turn.BookId);
             if (book != null)
                 foreach (var p in book.Protagonists)
                     if (graph.ResolveId(p) is string id) found.Add(id);
+        }
+
+        // Stage 3 (audit Priority-1): embedding-augmented thematic discovery.
+        // If the user is asking "how would Kyle handle a betrayal?" without
+        // naming Hua, embedding similarity surfaces Hua because the prose
+        // around Kyle's betrayals semantically resembles her dossier. Top-3
+        // is a deliberate floor — we don't want to flood dossier context
+        // with weak matches; substring + protagonist already cover the
+        // strong signals.
+        if (embeddings != null && !string.IsNullOrWhiteSpace(hay))
+        {
+            try
+            {
+                var hits = embeddings.FindSimilarAsync(hay, k: 3).GetAwaiter().GetResult();
+                foreach (var h in hits)
+                {
+                    var id = WorldGraphService.Slugify(h.EntityName);
+                    if (!string.IsNullOrEmpty(id)) found.Add(id);
+                }
+            }
+            catch
+            {
+                // Embedding cache cold or API down — substring + protagonist
+                // path already gave us a usable mention list. Don't fail the
+                // whole turn for a discovery miss.
+            }
         }
 
         return found;
