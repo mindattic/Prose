@@ -115,7 +115,7 @@ public class BookOutlineSyncTests
         books = new BookRepository(paths, NullLoggers.For<BookRepository>());
         chapters = new ChapterRepository(paths, NullLoggers.For<ChapterRepository>());
 
-        // BookOutlineService takes LLMVotingService + DatabaseService — for non-LLM tests we
+        // BookOutlineService takes LlmVotingService + DatabaseService — for non-LLM tests we
         // construct it via reflection-free path: the methods we exercise (Load + Save) only
         // use the IPathProvider/IBookRepository/IChapterRepository slots, so we pass nulls
         // for the LLM bits and they'll only blow up if a test calls Generate/Reconsider.

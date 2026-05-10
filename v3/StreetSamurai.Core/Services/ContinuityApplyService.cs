@@ -11,7 +11,7 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// Applies CANONICAL continuity claims back to their entity's
 /// <see cref="Data.Entities.Record"/> blob — the source of truth in SQL Server.
-/// Uses <see cref="LLMVotingService.DecideAsync"/> to pick which field on the
+/// Uses <see cref="LlmVotingService.DecideAsync"/> to pick which field on the
 /// entity's JSON should hold the agreed value. The panel sees the entity's
 /// field shape and the claim, and votes.
 ///
@@ -26,7 +26,7 @@ namespace StreetSamurai.Core.Services;
 public class ContinuityApplyService
 {
     private readonly ContinuityService store;
-    private readonly LLMVotingService voting;
+    private readonly LlmVotingService voting;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<ContinuityApplyService> log;
 
@@ -54,7 +54,7 @@ public class ContinuityApplyService
 
     public ContinuityApplyService(
         ContinuityService store,
-        LLMVotingService voting,
+        LlmVotingService voting,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ILogger<ContinuityApplyService> log)
     {

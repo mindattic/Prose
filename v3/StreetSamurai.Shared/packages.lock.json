@@ -459,6 +459,30 @@
         "resolved": "1.0.0",
         "contentHash": "N4KeF3cpcm1PUHym1RmakkzfkEv3GRMyofVv40uXsQhCQeglr2OHNcUk2WOG51AKpGO8ynGpo9M/kFXSzghwug=="
       },
+      "MindAttic.Legion": {
+        "type": "Transitive",
+        "resolved": "2.3.0",
+        "contentHash": "KfGeJF3xnlHP0bDAQ5QOoagoLX4F+PAChk4z0ryfHb6Upx0CU1bliCdUP8P89Pe5ol5oJkI0bNUPyKPmf3bxdw==",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5",
+          "MindAttic.Vault": "0.2.0"
+        }
+      },
+      "MindAttic.Vault": {
+        "type": "Transitive",
+        "resolved": "0.2.0",
+        "contentHash": "PZOWGCFTsaa6eISFpyWzH4QEvin4w4bzX+obJ4bkNEWvdXZstyFnxrz419BUm3V6mHfv/w6Ay6lF3/7HU9PJXQ==",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "9.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Options": "9.0.0"
+        }
+      },
       "QuikGraph": {
         "type": "Transitive",
         "resolved": "2.5.0",
@@ -573,14 +597,6 @@
         "resolved": "10.0.5",
         "contentHash": "MYkGiMGWYc9rhyvsmf2UGIHD4RVJ3+uNgllFPP1YW6ILJJDXpDN8jMcy++0E/KrG507kTPCo5EOW4tEwUOCKhQ=="
       },
-      "mindattic.legion": {
-        "type": "Project",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "[10.0.5, )",
-          "Microsoft.Extensions.Http": "[10.0.5, )",
-          "Microsoft.Extensions.Logging.Abstractions": "[10.0.5, )"
-        }
-      },
       "streetsamurai.core": {
         "type": "Project",
         "dependencies": {
@@ -592,7 +608,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "[10.0.5, )",
           "Microsoft.Extensions.Hosting.Abstractions": "[10.0.5, )",
           "Microsoft.Extensions.Http": "[10.0.5, )",
-          "MindAttic.Legion": "[2.0.0, )",
+          "MindAttic.Legion": "[2.3.0, )",
+          "MindAttic.Vault": "[0.2.0, )",
           "QuikGraph": "[2.5.0, )",
           "QuikGraph.Serialization": "[2.5.0, )",
           "Serilog": "[4.3.1, )",

@@ -21,7 +21,7 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class EntityRatingService
 {
-    private readonly LLMVotingService llmVoting;
+    private readonly LlmVotingService llmVoting;
     private readonly ILogger<EntityRatingService> log;
 
     private readonly CharacterRepository characters;
@@ -82,7 +82,7 @@ public class EntityRatingService
     private static readonly Random Rng = Random.Shared;
 
     public EntityRatingService(
-        LLMVotingService llmVoting,
+        LlmVotingService llmVoting,
         ILogger<EntityRatingService> log,
         CharacterRepository characters,
         SyntheticLifeRepository synthetics,

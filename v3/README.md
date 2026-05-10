@@ -979,7 +979,7 @@ Exposes the canon as Model Context Protocol tools so Claude (Desktop, Code, or a
 
 ### Why It Exists
 
-The Quorum-based generation pipeline (`BookReviewService` + `LLMVotingService`) is the right tool for **review** -- multiple voters catch what one misses -- but for **generation** it averages voice toward mediocrity. The MCP server is the alternative path: keep the disciplined data layer (canon, outline, motifs, semantic index, literary rules), drop the multi-voter generator, let one writer (Claude in conversation) call the canon as needed.
+The Quorum-based generation pipeline (`BookReviewService` + `LlmVotingService`) is the right tool for **review** -- multiple voters catch what one misses -- but for **generation** it averages voice toward mediocrity. The MCP server is the alternative path: keep the disciplined data layer (canon, outline, motifs, semantic index, literary rules), drop the multi-voter generator, let one writer (Claude in conversation) call the canon as needed.
 
 ### Tool Surface
 
@@ -1005,14 +1005,14 @@ Tools are grouped by `[McpServerToolType]` class. Auto-discovered by `WithToolsF
 
 **Services** (`v3/StreetSamurai.Core/Services/`):
 - `ContinuityService` â€” schema, upsert (auto-flags `(entity, predicate)` collisions as CONTRADICTED), GetByStatus/GetByEntity/GetContradictions, Resolve(A|B|custom), MarkApplied, MigrateLegacyJson.
-- `ContinuityExtractionService` â€” calls `LLMVotingService.VoteAsync` (Legion Quorum) on chapter prose or entity records; validates each candidate's snippet against the source; resolves entity name â†’ entity_id via the typed repos; upserts.
-- `ContinuityApplyService` â€” uses **`LLMVotingService.DecideAsync`** (added to Legion this session) to pick which entity-file field should hold a CANONICAL claim. Sets string fields, appends to array fields, or appends to a `continuity_facts[]` array on the entity if no field fits.
+- `ContinuityExtractionService` â€” calls `LlmVotingService.VoteAsync` (Legion Quorum) on chapter prose or entity records; validates each candidate's snippet against the source; resolves entity name â†’ entity_id via the typed repos; upserts.
+- `ContinuityApplyService` â€” uses **`LlmVotingService.DecideAsync`** (added to Legion this session) to pick which entity-file field should hold a CANONICAL claim. Sets string fields, appends to array fields, or appends to a `continuity_facts[]` array on the entity if no field fits.
 
 **Status lifecycle.** NEW â†’ CONFIRMED (re-extracted from another source) | CONTRADICTED (same predicate, different object on the same entity) â†’ resolved to CANONICAL or REJECTED. CANONICAL claims can be applied to the entity record (sets `applied_at` and `applied_to_field`).
 
 **Snippet validation.** Every extracted claim must contain a substring that exists in the source prose / entity record. Hallucinations are filtered before upsert.
 
-**Provider quorum** (unchanged from prior system): `MindAttic.Legion.VotingConfiguration.AllowedProviderIds` whitelist (default `{claude, openai, gemini, deepseek}`); `LLMVotingService.RefillFailedVotersAsync` round-robins failed slots across surviving providers so brief outages don't drop quorum size.
+**Provider quorum** (unchanged from prior system): `MindAttic.Legion.VotingConfiguration.AllowedProviderIds` whitelist (default `{claude, openai, gemini, deepseek}`); `LlmVotingService.RefillFailedVotersAsync` round-robins failed slots across surviving providers so brief outages don't drop quorum size.
 
 ### Continuity CLI
 
@@ -1085,7 +1085,7 @@ dotnet run --project v3/StreetSamurai.Blazor -- --continuity sweep
 That command does all four:
 1. **Extract from every entity record** in `engine/data/{people,places,factions,corponations}/*.json` (top-level scalars become claims directly; prose fields like `description` / `personality` / `ideology` go through Legion Quorum).
 2. **Extract from every chapter's prose** (or scope to one book with `--book <id>`).
-3. **Auto-resolve every CONTRADICTED pair** via `LLMVotingService.DecideAsync` â€” the panel sees both options, both snippets, and the source provenance, then picks A or B. If the panel doesn't pick a clean winner, that pair is left CONTRADICTED for human review in the UI.
+3. **Auto-resolve every CONTRADICTED pair** via `LlmVotingService.DecideAsync` â€” the panel sees both options, both snippets, and the source provenance, then picks A or B. If the panel doesn't pick a clean winner, that pair is left CONTRADICTED for human review in the UI.
 4. **Apply every CANONICAL claim** back to its entity record. `ContinuityApplyService` calls `DecideAsync` again to pick which field on the entity JSON should hold the value (string fields are set, array fields are appended to, otherwise the claim lands in a `continuity_facts[]` array on the entity).
 
 If you want manual control over any step, run the granular subcommands instead (`extract` â†’ review in `/continuity` UI â†’ `resolve` â†’ `apply`). The `sweep` command is the same code path with auto-resolve + auto-apply on top.

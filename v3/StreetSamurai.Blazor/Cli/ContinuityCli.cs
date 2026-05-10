@@ -219,7 +219,7 @@ public static class ContinuityCli
         var store      = services.GetRequiredService<ContinuityService>();
         var extraction = services.GetRequiredService<ContinuityExtractionService>();
         var apply      = services.GetRequiredService<ContinuityApplyService>();
-        var voting     = services.GetRequiredService<LLMVotingService>();
+        var voting     = services.GetRequiredService<LlmVotingService>();
         var paths      = services.GetRequiredService<IPathProvider>();
         var bookRepo   = services.GetRequiredService<IBookRepository>();
         var chapRepo   = services.GetRequiredService<IChapterRepository>();

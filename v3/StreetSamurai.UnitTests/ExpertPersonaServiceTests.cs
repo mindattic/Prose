@@ -25,7 +25,7 @@ public class ExpertPersonaServiceTests
         Directory.CreateDirectory(tempRoot);
         paths = new TestPathProviderWithRoot(tempRoot);
         kv = new SettingsKvStore(TestDbFactory.For(paths, "personas"));
-        // No LLMVotingService injected — tests target offline behavior + CRUD.
+        // No LlmVotingService injected — tests target offline behavior + CRUD.
         svc = new ExpertPersonaService(kv, NullLogger<ExpertPersonaService>.Instance);
     }
 
@@ -113,7 +113,7 @@ public class ExpertPersonaServiceTests
     [Test]
     public async Task SelectPertinentAsync_WithoutVoting_FallsBackToTagHeuristic()
     {
-        // Without an LLMVotingService, the selector falls back to keyword-tag
+        // Without an LlmVotingService, the selector falls back to keyword-tag
         // overlap. A scene about a "bar fight" should bring "bar" or "combat"
         // tagged personas to the top.
         var picks = await svc.SelectPertinentAsync("Kyle walks into a bar and a fight breaks out.", n: 5);
