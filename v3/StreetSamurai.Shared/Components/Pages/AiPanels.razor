@@ -7,6 +7,7 @@
 @inject ExpertPersonaService Personas
 @inject WorldTickService WorldTick
 @inject ContinuityLongSweepService ContinuitySweep
+@inject BeatGeneratorService BeatGen
 @inject ToastNotifier Toast
 @inject NavigationManager Nav
 
@@ -265,9 +266,20 @@
                                        @onchange="@(e => p.Tags = ParseTags((string?)e.Value))" />
                             </td>
                             <td>
-                                <div class="d-flex gap-1">
+                                <div class="d-flex gap-1 flex-wrap">
                                     <button class="btn btn-sm btn-outline-info" @onclick="() => SavePersona(p)" title="Save">
                                         <i class="bi bi-check-lg" />
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-warning" @onclick="() => PreviewPersona(p)"
+                                            disabled="@(previewingPersonaId == p.Id)" title="Generate a sample beat blurb using only this persona">
+                                        @if (previewingPersonaId == p.Id)
+                                        {
+                                            <span class="spinner-border spinner-border-sm" />
+                                        }
+                                        else
+                                        {
+                                            <i class="bi bi-stars" />
+                                        }
                                     </button>
                                     <button class="btn btn-sm btn-outline-danger" @onclick="() => DeletePersona(p)" title="Delete">
                                         <i class="bi bi-trash" />
@@ -275,6 +287,23 @@
                                 </div>
                             </td>
                         </tr>
+                        @if (personaPreview.TryGetValue(p.Id, out var preview))
+                        {
+                            <tr class="persona-preview-row">
+                                <td colspan="4" class="bg-black text-light small">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <div class="me-2 flex-grow-1">
+                                            <span class="text-warning"><i class="bi bi-stars me-1" />Preview from @p.Name:</span>
+                                            <div class="mt-1" style="white-space:pre-wrap;">@preview</div>
+                                        </div>
+                                        <button class="btn btn-sm btn-link text-muted py-0"
+                                                @onclick="() => personaPreview.Remove(p.Id)" title="Dismiss preview">
+                                            <i class="bi bi-x-lg" />
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
                     }
                 </tbody>
             </table>
@@ -295,6 +324,12 @@
     private bool generateOpen;
     private string generateScene = "";
     private bool generating;
+
+    // Per-row persona preview state — id-keyed so the spinner only shows on
+    // the row currently fetching, and previews persist until explicitly
+    // dismissed so the user can compare two personas side-by-side.
+    private string? previewingPersonaId;
+    private Dictionary<string, string> personaPreview = new();
 
     protected override void OnInitialized()
     {
@@ -412,6 +447,40 @@
     {
         generateOpen = false;
         generating = false;
+    }
+
+    /// <summary>
+    /// Generate a sample beat blurb using ONLY this persona at HIGH tier so
+    /// the user can sanity-check what the lens produces before adding it to
+    /// the rotation. One LLM call — couple cents — fired from the row's
+    /// stars button. Result lands in the personaPreview map and renders in
+    /// an expander row beneath the persona until the user dismisses it.
+    /// </summary>
+    private async Task PreviewPersona(ExpertPersona p)
+    {
+        if (previewingPersonaId != null) return;
+        previewingPersonaId = p.Id;
+        StateHasChanged();
+        try
+        {
+            var blurb = await BeatGen.PreviewPersonaAsync(p);
+            if (string.IsNullOrWhiteSpace(blurb))
+            {
+                Toast.Warning("PERSONA-PREVIEW-EMPTY", $"{p.Name} returned nothing — check API keys.");
+                return;
+            }
+            personaPreview[p.Id] = blurb;
+            Toast.Success("PERSONA-PREVIEW-OK", $"Preview ready for {p.Name}.");
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("PERSONA-PREVIEW-FAIL", $"Couldn't preview {p.Name}: {ex.Message}");
+        }
+        finally
+        {
+            previewingPersonaId = null;
+            StateHasChanged();
+        }
     }
 
     private void ToggleWorldTick(ChangeEventArgs e)

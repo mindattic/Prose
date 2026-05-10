@@ -303,6 +303,56 @@ public class BeatGeneratorService
     }
 
     /// <summary>
+    /// Preview what a single persona would produce as a next-beat blurb. Used
+    /// from /settings/ai's persona-table editor so the user can sanity-check
+    /// each lens before adding it to the rotation. One-voter panel pinned to
+    /// the persona's preferred provider (round-robins claude when unspecified)
+    /// at HIGH tier — quality matters because the user is judging the lens.
+    ///
+    /// <paramref name="sceneContext"/> is optional; when empty, a generic
+    /// "demo scene" prompt lets the persona pick its own canvas.
+    /// </summary>
+    public async Task<string> PreviewPersonaAsync(
+        Models.ExpertPersona persona, string sceneContext = "", CancellationToken ct = default)
+    {
+        if (voting is null) return "";
+
+        var scene = string.IsNullOrWhiteSpace(sceneContext)
+            ? "DEMO SCENE: invent a brief scene that lets your specialty shine. Be specific."
+            : "SCENE CONTEXT:\n" + (sceneContext.Length > 4000 ? sceneContext[^4000..] : sceneContext);
+
+        var voter = new VoterProfile
+        {
+            VoterId             = $"preview-{persona.Id}-{Guid.NewGuid().ToString("N")[..8]}",
+            Name                = persona.Name,
+            ProviderId          = "claude",
+            ModelOverride       = HighTierModelFor("claude"),
+            PersonalityMarkdown = persona.Lens,
+        };
+        var request = new VoteRequest
+        {
+            Question =
+                "Propose ONE next beat blurb (1-2 sentences) through your expert lens. " +
+                "Specific named places / people / actions. No preamble, no quotes, no list — just the blurb.",
+            Context = scene,
+            MaxTokens = 200,
+            Temperature = 0.9,
+            SynthesizeNarrative = false,
+        };
+
+        try
+        {
+            var result = await voting.VoteWithProfilesAsync(request, Quorum.Plurality, new[] { voter }, ct);
+            var v = result.IndividualVotes.FirstOrDefault(v => !v.IsError && !string.IsNullOrWhiteSpace(v.Decision));
+            return v?.Decision?.Trim().Trim('"').Trim() ?? "";
+        }
+        catch
+        {
+            return "";
+        }
+    }
+
+    /// <summary>
     /// Score and rank candidate beat blurbs with a 100-persona panel
     /// distributed evenly across Legion's four trusted providers
     /// (25 claude / 25 openai / 25 gemini / 25 deepseek).
