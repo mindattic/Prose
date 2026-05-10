@@ -74,34 +74,36 @@ public class GlobalSearchService
         this.flyoverEntities = flyoverEntities;
         this.psionics = psionics;
 
-        characters.OnItemSaved += _ => Invalidate();
-        synthetics.OnItemSaved += _ => Invalidate();
-        corponations.OnItemSaved += _ => Invalidate();
-        districts.OnItemSaved += _ => Invalidate();
-        factions.OnItemSaved += _ => Invalidate();
-        weaponry.OnItemSaved += _ => Invalidate();
-        ammunition.OnItemSaved += _ => Invalidate();
-        equipment.OnItemSaved += _ => Invalidate();
-        technology.OnItemSaved += _ => Invalidate();
-        cyberware.OnItemSaved += _ => Invalidate();
-        apparel.OnItemSaved += _ => Invalidate();
-        genemods.OnItemSaved += _ => Invalidate();
-        pharmaceuticals.OnItemSaved += _ => Invalidate();
-        materials.OnItemSaved += _ => Invalidate();
-        transportation.OnItemSaved += _ => Invalidate();
-        automata.OnItemSaved += _ => Invalidate();
-        archetypes.OnItemSaved += _ => Invalidate();
-        subsidiaries.OnItemSaved += _ => Invalidate();
-        entertainment.OnItemSaved += _ => Invalidate();
-        consumerGoods.OnItemSaved += _ => Invalidate();
-        vocabulary.OnItemSaved += _ => Invalidate();
-        quotes.OnItemSaved += _ => Invalidate();
-        news.OnItemSaved += _ => Invalidate();
-        contracts.OnItemSaved += _ => Invalidate();
-        documents.OnItemSaved += _ => Invalidate();
-        labSpecimens.OnItemSaved += _ => Invalidate();
-        flyoverEntities.OnItemSaved += _ => Invalidate();
-        psionics.OnItemSaved += _ => Invalidate();
+        // Note: OnItemSaved fires with the entity's name (not id), so we look up
+        // by name to fetch the freshly-saved row and re-project a single entry.
+        characters.OnItemSaved      += n => UpdateOrAdd(characters.GetByName(n) is { } c      ? ProjectCharacter(c)      : null);
+        synthetics.OnItemSaved      += n => UpdateOrAdd(synthetics.GetByName(n) is { } s      ? ProjectSynthetic(s)      : null);
+        corponations.OnItemSaved    += n => UpdateOrAdd(corponations.GetByName(n) is { } c    ? ProjectCorponation(c)    : null);
+        districts.OnItemSaved       += n => UpdateOrAdd(districts.GetByName(n) is { } d       ? ProjectDistrict(d)       : null);
+        factions.OnItemSaved        += n => UpdateOrAdd(factions.GetByName(n) is { } f        ? ProjectFaction(f)        : null);
+        weaponry.OnItemSaved        += n => UpdateOrAdd(weaponry.GetByName(n) is { } w        ? ProjectWeapon(w)         : null);
+        ammunition.OnItemSaved      += n => UpdateOrAdd(ammunition.GetByName(n) is { } a      ? ProjectAmmunition(a)     : null);
+        equipment.OnItemSaved       += n => UpdateOrAdd(equipment.GetByName(n) is { } e       ? ProjectEquipment(e)      : null);
+        technology.OnItemSaved      += n => UpdateOrAdd(technology.GetByName(n) is { } t      ? ProjectTechnology(t)     : null);
+        cyberware.OnItemSaved       += n => UpdateOrAdd(cyberware.GetByName(n) is { } c       ? ProjectCyberware(c)      : null);
+        apparel.OnItemSaved         += n => UpdateOrAdd(apparel.GetByName(n) is { } a         ? ProjectApparel(a)        : null);
+        genemods.OnItemSaved        += n => UpdateOrAdd(genemods.GetByName(n) is { } g        ? ProjectGenemod(g)        : null);
+        pharmaceuticals.OnItemSaved += n => UpdateOrAdd(pharmaceuticals.GetByName(n) is { } p ? ProjectPharmaceutical(p) : null);
+        materials.OnItemSaved       += n => UpdateOrAdd(materials.GetByName(n) is { } m       ? ProjectMaterial(m)       : null);
+        transportation.OnItemSaved  += n => UpdateOrAdd(transportation.GetByName(n) is { } t  ? ProjectTransportation(t) : null);
+        automata.OnItemSaved        += n => UpdateOrAdd(automata.GetByName(n) is { } a        ? ProjectAutomaton(a)      : null);
+        archetypes.OnItemSaved      += n => UpdateOrAdd(archetypes.GetByName(n) is { } a      ? ProjectArchetype(a)      : null);
+        subsidiaries.OnItemSaved    += n => UpdateOrAdd(subsidiaries.GetByName(n) is { } s    ? ProjectSubsidiary(s)     : null);
+        entertainment.OnItemSaved   += n => UpdateOrAdd(entertainment.GetByName(n) is { } e   ? ProjectEntertainment(e)  : null);
+        consumerGoods.OnItemSaved   += n => UpdateOrAdd(consumerGoods.GetByName(n) is { } g   ? ProjectConsumerGood(g)   : null);
+        vocabulary.OnItemSaved      += n => UpdateOrAdd(vocabulary.GetByName(n) is { } v      ? ProjectVocabulary(v)     : null);
+        quotes.OnItemSaved          += n => UpdateOrAdd(quotes.GetByName(n) is { } q          ? ProjectQuote(q)          : null);
+        news.OnItemSaved            += n => UpdateOrAdd(news.GetByName(n) is { } x            ? ProjectNews(x)           : null);
+        contracts.OnItemSaved       += n => UpdateOrAdd(contracts.GetByName(n) is { } c       ? ProjectContract(c)       : null);
+        documents.OnItemSaved       += n => UpdateOrAdd(documents.GetByName(n) is { } d       ? ProjectDocument(d)       : null);
+        labSpecimens.OnItemSaved    += n => UpdateOrAdd(labSpecimens.GetByName(n) is { } s    ? ProjectLabSpecimen(s)    : null);
+        flyoverEntities.OnItemSaved += n => UpdateOrAdd(flyoverEntities.GetByName(n) is { } w ? ProjectFlyoverEntity(w)  : null);
+        psionics.OnItemSaved        += n => UpdateOrAdd(psionics.GetByName(n) is { } p        ? ProjectPsionic(p)        : null);
     }
 
     // ── Public API ────────────────────────────────────────────────────────────
@@ -195,6 +197,13 @@ public class GlobalSearchService
 
     // ── Internal ──────────────────────────────────────────────────────────────
 
+    /// <summary>
+    /// Eagerly build the index; called by the warm-up hosted service so the
+    /// first user-triggered <see cref="Search"/> doesn't pay the ~40 s cold
+    /// deserialize-everything cost.
+    /// </summary>
+    public void WarmUp() => EnsureBuilt();
+
     private void Invalidate() { lock (syncLock) { index = []; } }
 
     private void EnsureBuilt()
@@ -206,77 +215,152 @@ public class GlobalSearchService
         }
     }
 
+    /// <summary>
+    /// Replace (or append) a single entry on save. Avoids the prior full-index
+    /// nuke that pushed the next page view back to a 40 s cold rebuild.
+    /// If the index hasn't been built yet, a no-op — the deferred full build
+    /// will pick up the saved row from the DB.
+    /// </summary>
+    private void UpdateOrAdd(SearchIndexEntry? entry)
+    {
+        if (entry is null) return;
+        lock (syncLock)
+        {
+            if (index.Count == 0) return;
+            index.RemoveAll(e => e.Id == entry.Id);
+            index.Add(entry);
+        }
+    }
+
     private void RebuildIndex()
     {
         var entries = new List<SearchIndexEntry>(4096);
 
-        foreach (var c in characters.GetAll())
-            entries.Add(new(c.Id, "character", c.Name, c.Role, c.Description, c.Tags, "/characters"));
-        foreach (var s in synthetics.GetAll())
-        {
-            var isCeramic = s.Type == "ceramic_man";
-            entries.Add(new(s.Id, isCeramic ? "ceramic-man" : "synthetic", s.Name,
-                isCeramic ? s.CurrentRole ?? "" : s.Classification,
-                isCeramic
-                    ? $"{s.OperatingHistory} {s.BehavioralNotes} {s.DiplomaticSpecialty}"
-                    : $"{s.Description} {s.ObservedBehavior}",
-                s.Tags, "/synthetics"));
-        }
-        foreach (var c in corponations.GetAll())
-            entries.Add(new(c.Id, "corponation", c.Name, c.Sector, $"{c.FoundingStory} {c.KeyDetail}", c.Tags, "/corps"));
-        foreach (var d in districts.GetAll())
-            entries.Add(new(d.Id, "place", d.Name, "", d.Description, d.Tags, "/places"));
-        foreach (var f in factions.GetAll())
-            entries.Add(new(f.Id, "faction", f.Name, f.Motto, $"{f.Description} {f.Ideology}", f.Tags, "/factions"));
-        foreach (var w in weaponry.GetAll())
-            entries.Add(new(w.Id, "weapon", w.Name, w.Category, $"{w.Description} {w.CulturalContext}", w.Tags, "/weaponry"));
-        foreach (var a in ammunition.GetAll())
-            entries.Add(new(a.Id, "ammunition", a.Name, a.Category, $"{a.Description} {a.CulturalContext}", a.Tags, "/ammunition"));
-        foreach (var e in equipment.GetAll())
-            entries.Add(new(e.Id, "equipment", e.Name, e.Category, $"{e.Description} {e.CulturalContext}", e.Tags, "/equipment"));
-        foreach (var t in technology.GetAll())
-            entries.Add(new(t.Id, "technology", t.Name, t.Subcategory, t.Description, t.Tags, "/technology"));
-        foreach (var c in cyberware.GetAll())
-            entries.Add(new(c.Id, "cyberware", c.Name, $"{c.Category} — {c.BodyLocation}", $"{c.Description} {c.CulturalContext}", c.Tags, "/cyberware"));
-        foreach (var a in apparel.GetAll())
-            entries.Add(new(a.Id, "apparel", a.Name, a.Category, $"{a.Description} {a.Functionality}", a.Tags, "/apparel"));
-        foreach (var g in genemods.GetAll())
-            entries.Add(new(g.Id, "genemod", g.Name, g.Category, g.Description, g.Tags, "/genemods"));
-        foreach (var p in pharmaceuticals.GetAll())
-            entries.Add(new(p.Id, "pharmaceutical", p.Name, p.Category, $"{p.Description} {p.CulturalContext}", p.Tags, "/pharmaceuticals"));
-        foreach (var m in materials.GetAll())
-            entries.Add(new(m.Id, "material", m.Name, m.Category, m.Description, m.Tags, "/materials"));
-        foreach (var t in transportation.GetAll())
-            entries.Add(new(t.Id, "transportation", t.Name, t.Category, $"{t.Description} {t.CommonUsage}", t.Tags, "/transportation"));
-        foreach (var a in automata.GetAll())
-            entries.Add(new(a.Id, "automaton", a.Name, a.Classification, $"{a.Description} {a.CulturalContext}", a.Tags, "/automata"));
-        foreach (var a in archetypes.GetAll())
-            entries.Add(new(a.Id, "archetype", a.Name, a.Category, a.Description, a.Tags, "/archetypes"));
-        foreach (var s in subsidiaries.GetAll())
-            entries.Add(new(s.Id, "subsidiary", s.Name, $"{s.ParentCorponation} — {s.LineOfBusiness}", s.Description, s.Tags, "/subsidiaries"));
-        foreach (var e in entertainment.GetAll())
-            entries.Add(new(e.Id, "entertainment", e.Name, e.Category, e.Description, e.Tags, "/entertainment"));
-        foreach (var g in consumerGoods.GetAll())
-            entries.Add(new(g.Id, "consumer-good", g.Name, g.Category, $"{g.Description} {g.CulturalContext}", g.Tags, "/goods"));
-        foreach (var v in vocabulary.GetAll())
-            entries.Add(new(v.Id, "vocabulary", v.Term, v.Category, $"{v.Definition} {v.Usage}", v.Tags, "/vocabulary"));
-        foreach (var q in quotes.GetAll())
-            entries.Add(new(q.Id, "quote", q.Attribution, q.Category, $"{q.Quote} {q.Context}", q.Tags, "/quotes"));
-        foreach (var n in news.GetAll())
-            entries.Add(new(n.Id, "news", n.Headline, n.Category, $"{n.Body} {n.Aftermath}", n.Tags, "/news"));
-        foreach (var c in contracts.GetAll())
-            entries.Add(new(c.Id, "contract", c.Codename, c.Category, $"{c.Description} {c.Objective}", c.Tags, "/contracts"));
-        foreach (var d in documents.GetAll())
-            entries.Add(new(d.Id, "document", d.Title, d.Category, d.Body, d.Tags, "/documents"));
-        foreach (var s in labSpecimens.GetAll())
-            entries.Add(new(s.Id, "lab-specimen", s.Name, s.Classification, $"{s.PhysicalDescription} {s.BehavioralProfile} {s.PitiableQualities}", s.Tags, "/specimens"));
-        foreach (var w in flyoverEntities.GetAll())
-            entries.Add(new(w.Id, "flyover-entity", w.Name, w.Classification, $"{w.PhysicalDescription} {w.BehavioralProfile} {w.HumanRemnants}", w.Tags, "/flyover"));
-        foreach (var p in psionics.GetAll())
-            entries.Add(new(p.Id, "psionic", p.Name, p.Classification, $"{p.Mechanism} {p.Abilities} {p.SideEffects}", p.Tags, "/psionics"));
+        foreach (var c in characters.GetAll())      entries.Add(ProjectCharacter(c));
+        foreach (var s in synthetics.GetAll())      entries.Add(ProjectSynthetic(s));
+        foreach (var c in corponations.GetAll())    entries.Add(ProjectCorponation(c));
+        foreach (var d in districts.GetAll())       entries.Add(ProjectDistrict(d));
+        foreach (var f in factions.GetAll())        entries.Add(ProjectFaction(f));
+        foreach (var w in weaponry.GetAll())        entries.Add(ProjectWeapon(w));
+        foreach (var a in ammunition.GetAll())      entries.Add(ProjectAmmunition(a));
+        foreach (var e in equipment.GetAll())       entries.Add(ProjectEquipment(e));
+        foreach (var t in technology.GetAll())      entries.Add(ProjectTechnology(t));
+        foreach (var c in cyberware.GetAll())       entries.Add(ProjectCyberware(c));
+        foreach (var a in apparel.GetAll())         entries.Add(ProjectApparel(a));
+        foreach (var g in genemods.GetAll())        entries.Add(ProjectGenemod(g));
+        foreach (var p in pharmaceuticals.GetAll()) entries.Add(ProjectPharmaceutical(p));
+        foreach (var m in materials.GetAll())       entries.Add(ProjectMaterial(m));
+        foreach (var t in transportation.GetAll())  entries.Add(ProjectTransportation(t));
+        foreach (var a in automata.GetAll())        entries.Add(ProjectAutomaton(a));
+        foreach (var a in archetypes.GetAll())      entries.Add(ProjectArchetype(a));
+        foreach (var s in subsidiaries.GetAll())    entries.Add(ProjectSubsidiary(s));
+        foreach (var e in entertainment.GetAll())   entries.Add(ProjectEntertainment(e));
+        foreach (var g in consumerGoods.GetAll())   entries.Add(ProjectConsumerGood(g));
+        foreach (var v in vocabulary.GetAll())      entries.Add(ProjectVocabulary(v));
+        foreach (var q in quotes.GetAll())          entries.Add(ProjectQuote(q));
+        foreach (var n in news.GetAll())            entries.Add(ProjectNews(n));
+        foreach (var c in contracts.GetAll())       entries.Add(ProjectContract(c));
+        foreach (var d in documents.GetAll())       entries.Add(ProjectDocument(d));
+        foreach (var s in labSpecimens.GetAll())    entries.Add(ProjectLabSpecimen(s));
+        foreach (var w in flyoverEntities.GetAll()) entries.Add(ProjectFlyoverEntity(w));
+        foreach (var p in psionics.GetAll())        entries.Add(ProjectPsionic(p));
 
         index = entries;
     }
+
+    // ── Per-type projections (shared between RebuildIndex and OnItemSaved) ────
+
+    private static SearchIndexEntry ProjectCharacter(CharacterData c)
+        => new(c.Id, "character", c.Name, c.Role, c.Description, c.Tags, "/characters");
+
+    private static SearchIndexEntry ProjectSynthetic(SyntheticLifeData s)
+    {
+        var isCeramic = s.Type == "ceramic_man";
+        return new(s.Id, isCeramic ? "ceramic-man" : "synthetic", s.Name,
+            isCeramic ? s.CurrentRole ?? "" : s.Classification,
+            isCeramic
+                ? $"{s.OperatingHistory} {s.BehavioralNotes} {s.DiplomaticSpecialty}"
+                : $"{s.Description} {s.ObservedBehavior}",
+            s.Tags, "/synthetics");
+    }
+
+    private static SearchIndexEntry ProjectCorponation(CorponationData c)
+        => new(c.Id, "corponation", c.Name, c.Sector, $"{c.FoundingStory} {c.KeyDetail}", c.Tags, "/corps");
+
+    private static SearchIndexEntry ProjectDistrict(DistrictData d)
+        => new(d.Id, "place", d.Name, "", d.Description, d.Tags, "/places");
+
+    private static SearchIndexEntry ProjectFaction(FactionData f)
+        => new(f.Id, "faction", f.Name, f.Motto, $"{f.Description} {f.Ideology}", f.Tags, "/factions");
+
+    private static SearchIndexEntry ProjectWeapon(WeaponryData w)
+        => new(w.Id, "weapon", w.Name, w.Category, $"{w.Description} {w.CulturalContext}", w.Tags, "/weaponry");
+
+    private static SearchIndexEntry ProjectAmmunition(AmmunitionData a)
+        => new(a.Id, "ammunition", a.Name, a.Category, $"{a.Description} {a.CulturalContext}", a.Tags, "/ammunition");
+
+    private static SearchIndexEntry ProjectEquipment(EquipmentData e)
+        => new(e.Id, "equipment", e.Name, e.Category, $"{e.Description} {e.CulturalContext}", e.Tags, "/equipment");
+
+    private static SearchIndexEntry ProjectTechnology(TechnologyData t)
+        => new(t.Id, "technology", t.Name, t.Subcategory, t.Description, t.Tags, "/technology");
+
+    private static SearchIndexEntry ProjectCyberware(CyberwareData c)
+        => new(c.Id, "cyberware", c.Name, $"{c.Category} — {c.BodyLocation}", $"{c.Description} {c.CulturalContext}", c.Tags, "/cyberware");
+
+    private static SearchIndexEntry ProjectApparel(ApparelData a)
+        => new(a.Id, "apparel", a.Name, a.Category, $"{a.Description} {a.Functionality}", a.Tags, "/apparel");
+
+    private static SearchIndexEntry ProjectGenemod(GenemodData g)
+        => new(g.Id, "genemod", g.Name, g.Category, g.Description, g.Tags, "/genemods");
+
+    private static SearchIndexEntry ProjectPharmaceutical(PharmaceuticalData p)
+        => new(p.Id, "pharmaceutical", p.Name, p.Category, $"{p.Description} {p.CulturalContext}", p.Tags, "/pharmaceuticals");
+
+    private static SearchIndexEntry ProjectMaterial(MaterialData m)
+        => new(m.Id, "material", m.Name, m.Category, m.Description, m.Tags, "/materials");
+
+    private static SearchIndexEntry ProjectTransportation(TransportationData t)
+        => new(t.Id, "transportation", t.Name, t.Category, $"{t.Description} {t.CommonUsage}", t.Tags, "/transportation");
+
+    private static SearchIndexEntry ProjectAutomaton(AutomatonData a)
+        => new(a.Id, "automaton", a.Name, a.Classification, $"{a.Description} {a.CulturalContext}", a.Tags, "/automata");
+
+    private static SearchIndexEntry ProjectArchetype(ArchetypeData a)
+        => new(a.Id, "archetype", a.Name, a.Category, a.Description, a.Tags, "/archetypes");
+
+    private static SearchIndexEntry ProjectSubsidiary(SubsidiaryData s)
+        => new(s.Id, "subsidiary", s.Name, $"{s.ParentCorponation} — {s.LineOfBusiness}", s.Description, s.Tags, "/subsidiaries");
+
+    private static SearchIndexEntry ProjectEntertainment(EntertainmentData e)
+        => new(e.Id, "entertainment", e.Name, e.Category, e.Description, e.Tags, "/entertainment");
+
+    private static SearchIndexEntry ProjectConsumerGood(ConsumerGoodData g)
+        => new(g.Id, "consumer-good", g.Name, g.Category, $"{g.Description} {g.CulturalContext}", g.Tags, "/goods");
+
+    private static SearchIndexEntry ProjectVocabulary(VocabularyData v)
+        => new(v.Id, "vocabulary", v.Term, v.Category, $"{v.Definition} {v.Usage}", v.Tags, "/vocabulary");
+
+    private static SearchIndexEntry ProjectQuote(QuoteData q)
+        => new(q.Id, "quote", q.Attribution, q.Category, $"{q.Quote} {q.Context}", q.Tags, "/quotes");
+
+    private static SearchIndexEntry ProjectNews(NewsData n)
+        => new(n.Id, "news", n.Headline, n.Category, $"{n.Body} {n.Aftermath}", n.Tags, "/news");
+
+    private static SearchIndexEntry ProjectContract(ContractData c)
+        => new(c.Id, "contract", c.Codename, c.Category, $"{c.Description} {c.Objective}", c.Tags, "/contracts");
+
+    private static SearchIndexEntry ProjectDocument(WorldbuildingDocument d)
+        => new(d.Id, "document", d.Title, d.Category, d.Body, d.Tags, "/documents");
+
+    private static SearchIndexEntry ProjectLabSpecimen(LabSpecimenData s)
+        => new(s.Id, "lab-specimen", s.Name, s.Classification, $"{s.PhysicalDescription} {s.BehavioralProfile} {s.PitiableQualities}", s.Tags, "/specimens");
+
+    private static SearchIndexEntry ProjectFlyoverEntity(FlyoverEntityData w)
+        => new(w.Id, "flyover-entity", w.Name, w.Classification, $"{w.PhysicalDescription} {w.BehavioralProfile} {w.HumanRemnants}", w.Tags, "/flyover");
+
+    private static SearchIndexEntry ProjectPsionic(PsionicData p)
+        => new(p.Id, "psionic", p.Name, p.Classification, $"{p.Mechanism} {p.Abilities} {p.SideEffects}", p.Tags, "/psionics");
 
     private static CanonSearchResult ToResult(SearchIndexEntry e, string query, int score) =>
         new(e.Id, e.Type, e.Name, e.Subtitle, Snippet(e.Body, query), e.Tags, $"{e.RepoRoute}?id={e.Id}", score);

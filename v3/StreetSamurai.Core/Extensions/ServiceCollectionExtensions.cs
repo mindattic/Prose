@@ -171,6 +171,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<AssignTiersService>();
         services.AddSingleton<CrossReferenceService>();
         services.AddSingleton<GlobalSearchService>();
+        services.AddHostedService<GlobalSearchWarmupService>();
         services.AddSingleton<SearchTriggerService>();
         services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();
@@ -317,7 +318,7 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<IBookRepository>(),
             sp.GetRequiredService<IChapterRepository>(),
             sp.GetRequiredService<SettingsKvStore>(),
-            sp.GetRequiredService<MindAttic.Legion.LLMVotingService>(),
+            sp.GetRequiredService<MindAttic.Legion.LlmVotingService>(),
             sp.GetRequiredService<DatabaseService>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<BookOutlineService>>()));
         services.AddSingleton<CoWriterService>();
@@ -588,7 +589,7 @@ public static class ServiceCollectionExtensions
             var http = sp.GetRequiredService<IHttpClientFactory>().CreateClient(nameof(LlmVotingProvider));
             return new LlmVotingProvider(http, cfg);
         });
-        services.AddSingleton<LLMVotingService>();
+        services.AddSingleton<LlmVotingService>();
         services.AddSingleton<StoryQualityService>();
         services.AddSingleton<StoryRefinementService>();
         services.AddSingleton<CanonGroundingService>();
