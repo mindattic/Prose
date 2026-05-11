@@ -66,62 +66,100 @@
     <div class="col"><div class="continuity-stat"><div class="lbl">From record</div><div class="val">@stats.FromEntityRecord</div></div></div>
 </div>
 
-@* ── Contradiction groups (entity, predicate with multiple live values) ── *@
-@if (contradictionGroups.Count > 0)
+@* ── Conflicting-claims wizard (one group at a time) ───────── *@
+@{
+    var wizardCurrent = CurrentWizardGroup;
+    var wizardTotal = wizardResolved + contradictionGroups.Count;
+    var wizardPct = wizardTotal == 0 ? 0 : (int)Math.Round(100.0 * wizardResolved / wizardTotal);
+}
+@if (wizardCurrent is not null)
 {
-    <div class="card bg-dark text-light mb-3 border-warning">
+    <div class="card bg-dark text-light mb-3 border-warning continuity-wizard">
         <div class="card-header bg-warning bg-opacity-25 border-warning d-flex justify-content-between align-items-center">
             <strong><i class="bi bi-exclamation-diamond me-1"></i>Conflicting claims</strong>
-            <span class="badge bg-warning text-dark">@contradictionGroups.Count</span>
+            <span class="small text-muted">
+                Decided <strong class="text-success">@wizardResolved</strong>
+                · Left <strong class="text-warning">@WizardRemaining</strong>
+                @if (wizardSkipped.Count > 0)
+                {
+                    <text> · Skipped <strong>@wizardSkipped.Count</strong></text>
+                }
+            </span>
         </div>
         <div class="card-body">
-            <div class="small text-muted mb-2">
-                These (entity, predicate) tuples have multiple competing values still live.
-                Pick one as canonical or reject the rest. Each group becomes one resolution.
+            <div class="progress mb-3" style="height:6px;background:#1c2128;">
+                <div class="progress-bar bg-success" role="progressbar" style="width:@wizardPct%"></div>
             </div>
-            @foreach (var g in contradictionGroups)
-            {
-                <div class="border border-secondary rounded p-2 mb-2">
-                    <div class="small text-muted mb-1">
-                        <strong>@g.EntityName</strong> <span class="text-muted">(@g.EntityKind)</span>
-                        <span class="ms-2">predicate: <code>@g.Predicate</code></span>
-                        <span class="ms-2 badge bg-secondary">@g.Claims.Count values</span>
-                    </div>
-                    <div class="row g-2">
-                        @foreach (var c in g.Claims)
-                        {
-                            <div class="col-md-6">
-                                <div class="border border-secondary rounded p-2 h-100 d-flex flex-column">
-                                    <div class="small text-muted mb-1">
-                                        @c.SourceType
-                                        @if (!string.IsNullOrEmpty(c.SourceChapterTitle))
-                                        {
-                                            <span> · ch.@c.SourceChapterNumber @c.SourceChapterTitle</span>
-                                        }
-                                        · status <span class="badge @StatusBadge(c.Status)">@c.Status</span>
-                                    </div>
-                                    <div class="fw-bold">@c.Object</div>
-                                    @if (!string.IsNullOrEmpty(c.Snippet))
-                                    {
-                                        <div class="small fst-italic text-muted">"@c.Snippet"</div>
-                                    }
-                                    <div class="mt-2 d-flex gap-1">
-                                        <button class="btn btn-sm btn-outline-success py-0" disabled="@working"
-                                                @onclick="@(() => MakeCanonical(c.ClaimUid))">
-                                            Make canonical
-                                        </button>
-                                        <button class="btn btn-sm btn-outline-secondary py-0" disabled="@working"
-                                                @onclick="@(() => RejectClaim(c.ClaimUid))">
-                                            Reject
-                                        </button>
-                                    </div>
-                                </div>
+
+            <h5 class="mb-1">@ConflictQuestion(wizardCurrent)</h5>
+            <p class="small text-muted mb-3">
+                @wizardCurrent.Claims.Count passages disagree — pick the true one.
+                Picking one resolves the rest automatically.
+            </p>
+
+            <div class="row g-3">
+                @foreach (var c in wizardCurrent.Claims)
+                {
+                    <div class="@OptionColClass(wizardCurrent.Claims.Count)">
+                        <div class="continuity-wizard-option h-100 d-flex flex-column">
+                            <div class="small text-muted mb-1">
+                                @c.SourceType
+                                @if (!string.IsNullOrEmpty(c.SourceChapterTitle))
+                                {
+                                    <span> · ch.@c.SourceChapterNumber @c.SourceChapterTitle</span>
+                                }
                             </div>
-                        }
+                            <div class="fw-bold fs-6 mb-1">@c.Object</div>
+                            @if (!string.IsNullOrEmpty(c.Snippet))
+                            {
+                                <div class="small fst-italic text-muted flex-grow-1">"@c.Snippet"</div>
+                            }
+                            else
+                            {
+                                <div class="flex-grow-1"></div>
+                            }
+                            <button class="btn btn-success mt-3 w-100" disabled="@working"
+                                    @onclick="@(() => WizardMakeCanonical(c.ClaimUid))">
+                                <i class="bi bi-check2 me-1"></i>This is true
+                            </button>
+                        </div>
                     </div>
+                }
+            </div>
+
+            <div class="mt-3 d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <button class="btn btn-sm btn-outline-danger" disabled="@working"
+                        @onclick="WizardRejectAll">
+                    <i class="bi bi-x-circle me-1"></i>None of these — reject all
+                </button>
+                <div class="d-flex gap-2 align-items-center">
+                    @if (wizardSkipped.Count > 0)
+                    {
+                        <button class="btn btn-sm btn-link text-muted text-decoration-none" @onclick="WizardShowSkipped">
+                            Show @wizardSkipped.Count skipped
+                        </button>
+                    }
+                    <button class="btn btn-sm btn-outline-secondary" disabled="@working"
+                            @onclick="WizardSkip">
+                        Skip <i class="bi bi-arrow-right ms-1"></i>
+                    </button>
                 </div>
-            }
+            </div>
         </div>
+    </div>
+}
+else if (contradictionGroups.Count > 0 && wizardSkipped.Count > 0)
+{
+    @* All remaining groups are skipped this session *@
+    <div class="alert alert-info small py-2 d-flex justify-content-between align-items-center mb-3">
+        <span>
+            <i class="bi bi-skip-forward me-1"></i>
+            You skipped @wizardSkipped.Count conflict@(wizardSkipped.Count == 1 ? "" : "s") this session.
+            Decided @wizardResolved.
+        </span>
+        <button class="btn btn-sm btn-outline-info" @onclick="WizardShowSkipped">
+            Bring them back
+        </button>
     </div>
 }
 
@@ -276,6 +314,27 @@ else if (stats.Total > 0 && contradictionGroups.Count == 0)
     .continuity-stat .lbl { font-size:.7rem; text-transform:uppercase; color:var(--bs-secondary); }
     .continuity-stat .val { font-size:1.4rem; font-weight:600; }
 
+    /* Conflicts wizard */
+    .continuity-wizard-option {
+        background:#0d1117;
+        border:1px solid #30363d;
+        border-radius:8px;
+        padding:14px;
+        transition: border-color .15s ease, background-color .15s ease;
+    }
+    .continuity-wizard-option:hover {
+        border-color:#3fb950;
+        background:#101820;
+    }
+    .continuity-wizard-option .btn-success {
+        background:#238636;
+        border-color:#238636;
+    }
+    .continuity-wizard-option .btn-success:hover {
+        background:#2ea043;
+        border-color:#2ea043;
+    }
+
     /* Dark dropdown */
     .continuity-extract-select {
         background-color:#0d1117 !important;
@@ -364,6 +423,16 @@ else if (stats.Total > 0 && contradictionGroups.Count == 0)
     private string? customOpenFor;
     private string customValue = "";
 
+    // Wizard state — session-only, never persisted.
+    private HashSet<string> wizardSkipped = new();
+    private int wizardResolved;
+
+    private ContradictionGroup? CurrentWizardGroup =>
+        contradictionGroups.FirstOrDefault(g => !wizardSkipped.Contains(g.Key));
+
+    private int WizardRemaining =>
+        contradictionGroups.Count(g => !wizardSkipped.Contains(g.Key));
+
     protected override void OnInitialized()
     {
         books = BookRepo.ListBooks();
@@ -414,6 +483,75 @@ else if (stats.Total > 0 && contradictionGroups.Count == 0)
         }
         catch (Exception ex) { errorMessage = ex.Message; }
         finally { working = false; action = ""; }
+    }
+
+    private void WizardMakeCanonical(string claimUid)
+    {
+        working = true; action = "canonical"; errorMessage = "";
+        try
+        {
+            Store.MakeCanonical(claimUid, "Selected from contradiction wizard.");
+            wizardResolved++;
+            Reload();
+            status = "Resolved — siblings rejected automatically.";
+        }
+        catch (Exception ex) { errorMessage = ex.Message; }
+        finally { working = false; action = ""; }
+    }
+
+    private void WizardRejectAll()
+    {
+        var g = CurrentWizardGroup;
+        if (g is null) return;
+        working = true; action = "reject-all"; errorMessage = "";
+        try
+        {
+            foreach (var c in g.Claims)
+                Store.RejectClaim(c.ClaimUid, "All values rejected from contradiction wizard.");
+            wizardResolved++;
+            Reload();
+            status = $"All {g.Claims.Count} values rejected.";
+        }
+        catch (Exception ex) { errorMessage = ex.Message; }
+        finally { working = false; action = ""; }
+    }
+
+    private void WizardSkip()
+    {
+        var g = CurrentWizardGroup;
+        if (g is not null) wizardSkipped.Add(g.Key);
+    }
+
+    private void WizardShowSkipped() => wizardSkipped.Clear();
+
+    private static string OptionColClass(int count) =>
+        count <= 1 ? "col-12"
+        : count == 3 ? "col-md-4"
+        : "col-md-6";
+
+    private static string ConflictQuestion(ContradictionGroup g)
+    {
+        var name = string.IsNullOrWhiteSpace(g.EntityName) ? "this entity" : g.EntityName;
+        var pred = (g.Predicate ?? "").ToLowerInvariant();
+        return pred switch
+        {
+            "age"               => $"What is {name}'s age?",
+            "name"              => $"What is {name}'s name?",
+            "build"             => $"What is {name}'s build?",
+            "height"            => $"What is {name}'s height?",
+            "weight"            => $"What is {name}'s weight?",
+            "eye_color" or "eyes" => $"What colour are {name}'s eyes?",
+            "hair" or "hair_color" => $"What is {name}'s hair?",
+            "employment"        => $"What is {name}'s employment?",
+            "occupation"        => $"What is {name}'s occupation?",
+            "knowledge"         => $"What does {name} know?",
+            "location"          => $"Where is {name}?",
+            "home_turf" or "hometurf" => $"Where is {name}'s home turf?",
+            "affiliation"       => $"What is {name}'s affiliation?",
+            "status"            => $"What is {name}'s status?",
+            "relationship"      => $"What is {name}'s relationship?",
+            _                   => $"What is {name}'s {pred.Replace('_', ' ')}?"
+        };
     }
 
     private async Task RunExtraction()

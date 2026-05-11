@@ -144,3 +144,85 @@ Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be 
 2026-05-09 02:54:31AM [INF] StreetSamurai Blazor host started
 2026-05-09 02:56:07AM [INF] StreetSamurai Blazor host started
 2026-05-09 02:58:08AM [INF] Continuity long-sweep: 15 contradiction group(s) live
+2026-05-09 08:57:25AM [WRN] FindingsService: legacy findings.db import failed; SQL table is empty and legacy file remains in place
+System.IO.IOException: The process cannot access the file because it is being used by another process.
+   at System.IO.FileSystem.MoveFile(String sourceFullPath, String destFullPath, Boolean overwrite)
+   at StreetSamurai.Core.Services.FindingsService.TryImportLegacySqlite() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FindingsService.cs:line 132
+2026-05-09 08:57:25AM [INF] StreetSamurai Blazor host started
+2026-05-09 08:59:25AM [INF] WorldTickService heartbeat (disabled): tick #1
+2026-05-09 08:59:25AM [INF] Continuity long-sweep (full): 15 contradiction group(s)
+2026-05-09 09:04:25AM [INF] WorldTickService heartbeat (disabled): tick #2
+2026-05-09 09:09:25AM [INF] WorldTickService heartbeat (disabled): tick #3
+2026-05-09 09:14:25AM [INF] WorldTickService heartbeat (disabled): tick #4
+2026-05-09 09:19:25AM [INF] WorldTickService heartbeat (disabled): tick #5
+2026-05-09 09:24:25AM [INF] WorldTickService heartbeat (disabled): tick #6
+2026-05-09 09:29:25AM [INF] WorldTickService heartbeat (disabled): tick #7
+2026-05-09 09:34:25AM [INF] WorldTickService heartbeat (disabled): tick #8
+2026-05-09 09:39:25AM [ERR] Navigation failed when changing the location to /books/158921636ce84ef79126ab5bf6e298a7/chapters
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, JSCallType callType, Object[] args)
+   at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+   at Microsoft.AspNetCore.Components.Server.Circuits.RemoteNavigationManager.<>c__DisplayClass18_0.<<NavigateToCore>g__PerformNavigationAsync|0>d.MoveNext()
+2026-05-09 09:39:25AM [ERR] Unhandled exception in circuit 'atsTRbgbELsTFQhCg3FeFicAHJCFipJkgaqViNRjb1s'.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, JSCallType callType, Object[] args)
+   at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+   at Microsoft.AspNetCore.Components.Server.Circuits.RemoteNavigationManager.<>c__DisplayClass18_0.<<NavigateToCore>g__PerformNavigationAsync|0>d.MoveNext()
+2026-05-09 09:39:25AM [INF] WorldTickService heartbeat (disabled): tick #9
+2026-05-09 09:44:25AM [INF] WorldTickService heartbeat (disabled): tick #10
+2026-05-09 09:44:30AM [DBG] Xref cross-type overlap: "The Seam" claimed by place/b43a4971e5b2f34a785112ce21de7392 and faction/781e4c1cef4357cbf1a32338d46bb79a
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "Enzymatic Electrochemical Bio-Battery (Implanted Biofuel Cell System)" claimed by technology/bio_battery_enzymatic_electrochemical_cell and technology/bio_battery_enzymatic_electrochemical_cell
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "Enzymatic Electrochemical Bio-Battery" claimed by technology/bio_battery_enzymatic_electrochemical_cell and technology/bio_battery_enzymatic_electrochemical_cell
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "bio-battery" claimed by technology/bio_battery_enzymatic_electrochemical_cell and technology/bio_battery_enzymatic_electrochemical_cell
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "biofuel cell" claimed by technology/bio_battery_enzymatic_electrochemical_cell and technology/bio_battery_enzymatic_electrochemical_cell
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "metabolic power cell" claimed by technology/bio_battery_enzymatic_electrochemical_cell and technology/bio_battery_enzymatic_electrochemical_cell
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "glucose cell" claimed by technology/bio_battery_enzymatic_electrochemical_cell and technology/bio_battery_enzymatic_electrochemical_cell
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "enzymatic cell" claimed by technology/bio_battery_enzymatic_electrochemical_cell and technology/bio_battery_enzymatic_electrochemical_cell
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "the tap" claimed by technology/bio_battery_enzymatic_electrochemical_cell and technology/bio_battery_enzymatic_electrochemical_cell
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "body tap" claimed by technology/bio_battery_enzymatic_electrochemical_cell and technology/bio_battery_enzymatic_electrochemical_cell
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "PZT Piezoelectric Composite Shingane Core" claimed by technology/pzt_piezoelectric_composite_shingane and technology/pzt_piezoelectric_composite_shingane
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "piezo spine" claimed by technology/pzt_piezoelectric_composite_shingane and technology/pzt_piezoelectric_composite_shingane
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "clash core" claimed by technology/pzt_piezoelectric_composite_shingane and technology/pzt_piezoelectric_composite_shingane
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "singing core" claimed by technology/pzt_piezoelectric_composite_shingane and technology/pzt_piezoelectric_composite_shingane
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "the shingane" claimed by technology/pzt_piezoelectric_composite_shingane and technology/pzt_piezoelectric_composite_shingane
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "PZT core" claimed by technology/pzt_piezoelectric_composite_shingane and technology/pzt_piezoelectric_composite_shingane
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "replacement core" claimed by technology/pzt_piezoelectric_composite_shingane and technology/pzt_piezoelectric_composite_shingane
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "Cascades GraphCap-T Blade-Handle Supercapacitor Assembly" claimed by technology/graphene_ultracapacitor_tsuka_module and technology/graphene_ultracapacitor_tsuka_module
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "Graphene Ultracapacitor Tsuka Module" claimed by technology/graphene_ultracapacitor_tsuka_module and technology/graphene_ultracapacitor_tsuka_module
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "tsuka module" claimed by technology/graphene_ultracapacitor_tsuka_module and technology/graphene_ultracapacitor_tsuka_module
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "spare handle" claimed by technology/graphene_ultracapacitor_tsuka_module and technology/graphene_ultracapacitor_tsuka_module
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "the spare" claimed by technology/graphene_ultracapacitor_tsuka_module and technology/graphene_ultracapacitor_tsuka_module
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "cap module" claimed by technology/graphene_ultracapacitor_tsuka_module and technology/graphene_ultracapacitor_tsuka_module
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "Nakago Electrode Interconnect Harness" claimed by technology/nakago_electrode_interconnect_harness and technology/nakago_electrode_interconnect_harness
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "electrode leads" claimed by technology/nakago_electrode_interconnect_harness and technology/nakago_electrode_interconnect_harness
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "the wiring" claimed by technology/nakago_electrode_interconnect_harness and technology/nakago_electrode_interconnect_harness
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "nakago harness" claimed by technology/nakago_electrode_interconnect_harness and technology/nakago_electrode_interconnect_harness
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "lead set" claimed by technology/nakago_electrode_interconnect_harness and technology/nakago_electrode_interconnect_harness
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "Cascades TNG-7 Blade-Surface Triboelectric Nanogenerator Film" claimed by technology/teng_triboelectric_nanogenerator_mune_film and technology/teng_triboelectric_nanogenerator_mune_film
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "TENG Triboelectric Nanogenerator Mune Film" claimed by technology/teng_triboelectric_nanogenerator_mune_film and technology/teng_triboelectric_nanogenerator_mune_film
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "TENG film" claimed by technology/teng_triboelectric_nanogenerator_mune_film and technology/teng_triboelectric_nanogenerator_mune_film
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "triboelectric film" claimed by technology/teng_triboelectric_nanogenerator_mune_film and technology/teng_triboelectric_nanogenerator_mune_film
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "drag skin" claimed by technology/teng_triboelectric_nanogenerator_mune_film and technology/teng_triboelectric_nanogenerator_mune_film
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "friction layer" claimed by technology/teng_triboelectric_nanogenerator_mune_film and technology/teng_triboelectric_nanogenerator_mune_film
+2026-05-09 09:44:30AM [WRN] Xref disambiguation conflict: "the dry coat" claimed by technology/teng_triboelectric_nanogenerator_mune_film and technology/teng_triboelectric_nanogenerator_mune_film
+2026-05-09 09:49:25AM [INF] WorldTickService heartbeat (disabled): tick #11
+2026-05-09 09:54:25AM [INF] WorldTickService heartbeat (disabled): tick #12
+2026-05-09 09:59:25AM [INF] WorldTickService heartbeat (disabled): tick #13
+2026-05-09 09:59:25AM [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-09 10:04:25AM [INF] WorldTickService heartbeat (disabled): tick #14
+2026-05-09 10:09:25AM [INF] WorldTickService heartbeat (disabled): tick #15
+2026-05-09 10:14:25AM [INF] WorldTickService heartbeat (disabled): tick #16
+2026-05-09 10:19:25AM [INF] WorldTickService heartbeat (disabled): tick #17
+2026-05-09 10:24:25AM [INF] WorldTickService heartbeat (disabled): tick #18
+2026-05-09 10:29:25AM [INF] WorldTickService heartbeat (disabled): tick #19
+2026-05-09 10:34:25AM [INF] WorldTickService heartbeat (disabled): tick #20
+2026-05-09 10:39:25AM [INF] WorldTickService heartbeat (disabled): tick #21
+2026-05-09 10:44:25AM [INF] WorldTickService heartbeat (disabled): tick #22
+2026-05-09 10:49:25AM [INF] WorldTickService heartbeat (disabled): tick #23
+2026-05-09 10:54:25AM [INF] WorldTickService heartbeat (disabled): tick #24
+2026-05-09 10:59:25AM [INF] WorldTickService heartbeat (disabled): tick #25
+2026-05-09 10:59:25AM [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-09 11:04:25AM [INF] WorldTickService heartbeat (disabled): tick #26
+2026-05-09 11:09:25AM [INF] WorldTickService heartbeat (disabled): tick #27
+2026-05-09 11:14:25AM [INF] WorldTickService heartbeat (disabled): tick #28
+2026-05-09 11:19:25AM [INF] WorldTickService heartbeat (disabled): tick #29

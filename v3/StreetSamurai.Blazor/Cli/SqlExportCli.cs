@@ -69,7 +69,7 @@ public static class SqlExportCli
         await w.WriteLineAsync("-- 1. DROP existing tables (children first via FK order)");
         await w.WriteLineAsync("-- =================================================================");
         foreach (var t in ((IEnumerable<TableInfo>)tables).Reverse())
-            await w.WriteLineAsync($"IF OBJECT_ID('[dbo].[{t.Name}]','U') IS NOT NULL DROP TABLE [dbo].[{t.Name}];");
+            await w.WriteLineAsync($"IF OBJECT_ID('[dbo].{Q(t.Name)}','U') IS NOT NULL DROP TABLE [dbo].{Q(t.Name)};");
         await w.WriteLineAsync("GO");
         await w.WriteLineAsync();
 
@@ -114,6 +114,10 @@ public static class SqlExportCli
     }
 
     // ── catalog reads ──────────────────────────────────────────────────────────
+
+    // Quote a SQL Server identifier: wrap in [] and escape ] as ]]. Use everywhere
+    // an identifier (table/column/index/constraint name) is interpolated into SQL.
+    private static string Q(string identifier) => $"[{identifier.Replace("]", "]]")}]";
 
     private record TableInfo(string Name, int Order);
 
@@ -210,7 +214,7 @@ public static class SqlExportCli
                 var isNullable  = rdr.GetBoolean(5);
                 var isIdentity  = rdr.GetBoolean(6);
 
-                cols.Add($"[{name}] {FormatType(typeName, maxLen, precision, scale)}"
+                cols.Add($"{Q(name)} {FormatType(typeName, maxLen, precision, scale)}"
                        + (isIdentity ? " IDENTITY(1,1)" : "")
                        + (isNullable ? " NULL" : " NOT NULL"));
             }
@@ -228,10 +232,10 @@ public static class SqlExportCli
         {
             cmd.Parameters.AddWithValue("@t", $"dbo.{t.Name}");
             await using var rdr = await cmd.ExecuteReaderAsync();
-            while (await rdr.ReadAsync()) pkCols.Add($"[{rdr.GetString(0)}]");
+            while (await rdr.ReadAsync()) pkCols.Add(Q(rdr.GetString(0)));
         }
 
-        await w.WriteLineAsync($"CREATE TABLE [dbo].[{t.Name}] (");
+        await w.WriteLineAsync($"CREATE TABLE [dbo].{Q(t.Name)} (");
         for (int i = 0; i < cols.Count; i++)
         {
             var sep = (i == cols.Count - 1 && pkCols.Count == 0) ? "" : ",";
@@ -277,7 +281,7 @@ public static class SqlExportCli
                 "SET_DEFAULT" => " ON DELETE SET DEFAULT",
                 _ => "",
             };
-            await w.WriteLineAsync($"ALTER TABLE [dbo].[{child}] ADD CONSTRAINT [{name}] FOREIGN KEY ([{ccol}]) REFERENCES [dbo].[{parent}]([{pcol}]){onDelete};");
+            await w.WriteLineAsync($"ALTER TABLE [dbo].{Q(child)} ADD CONSTRAINT {Q(name)} FOREIGN KEY ({Q(ccol)}) REFERENCES [dbo].{Q(parent)}({Q(pcol)}){onDelete};");
         }
         await w.WriteLineAsync("GO");
         await w.WriteLineAsync();
@@ -318,7 +322,7 @@ public static class SqlExportCli
 
             var u  = isUnique ? "UNIQUE " : "";
             var f  = hasFilter && filter != null ? $" WHERE {filter}" : "";
-            await w.WriteLineAsync($"CREATE {u}NONCLUSTERED INDEX [{idxName}] ON [dbo].[{table}] ({cols}){f};");
+            await w.WriteLineAsync($"CREATE {u}NONCLUSTERED INDEX {Q(idxName)} ON [dbo].{Q(table)} ({cols}){f};");
         }
         await w.WriteLineAsync("GO");
         await w.WriteLineAsync();
@@ -351,8 +355,8 @@ public static class SqlExportCli
         }
         if (cols.Count == 0) return 0;
 
-        var colList = string.Join(", ", cols.Select(c => $"[{c.Name}]"));
-        var selectSql = $"SELECT {colList} FROM [dbo].[{t.Name}]";
+        var colList = string.Join(", ", cols.Select(c => Q(c.Name)));
+        var selectSql = $"SELECT {colList} FROM [dbo].{Q(t.Name)}";
 
         await using var cmd = new SqlCommand(selectSql, conn) { CommandTimeout = 0 };
         await using var rdr = await cmd.ExecuteReaderAsync();
@@ -366,12 +370,12 @@ public static class SqlExportCli
             if (!wroteHeader)
             {
                 await w.WriteLineAsync($"-- {t.Name}");
-                if (hasIdentity) await w.WriteLineAsync($"SET IDENTITY_INSERT [dbo].[{t.Name}] ON;");
+                if (hasIdentity) await w.WriteLineAsync($"SET IDENTITY_INSERT [dbo].{Q(t.Name)} ON;");
                 wroteHeader = true;
             }
 
             sb.Clear();
-            sb.Append("INSERT INTO [dbo].[").Append(t.Name).Append("] (").Append(colList).Append(") VALUES (");
+            sb.Append("INSERT INTO [dbo].").Append(Q(t.Name)).Append(" (").Append(colList).Append(") VALUES (");
             for (int i = 0; i < cols.Count; i++)
             {
                 if (i > 0) sb.Append(", ");
@@ -387,7 +391,7 @@ public static class SqlExportCli
 
         if (wroteHeader)
         {
-            if (hasIdentity) await w.WriteLineAsync($"SET IDENTITY_INSERT [dbo].[{t.Name}] OFF;");
+            if (hasIdentity) await w.WriteLineAsync($"SET IDENTITY_INSERT [dbo].{Q(t.Name)} OFF;");
             await w.WriteLineAsync("GO");
             await w.WriteLineAsync();
         }
