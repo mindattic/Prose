@@ -76,10 +76,12 @@ public class BlazorWriteAccessProvider : IWriteAccessProvider
         // GetAuthenticationStateAsync is already resolved by the time Blazor components render.
         // This synchronous access works because the auth state is cached per circuit.
         var task = authProvider.GetAuthenticationStateAsync();
-        if (task.IsCompleted)
+        if (task.IsCompletedSuccessfully)
             return task.Result.User;
 
-        // Fallback: block briefly (should not happen in practice)
-        return task.GetAwaiter().GetResult().User;
+        // Don't block the Blazor circuit on an unfinished auth task — that path can
+        // deadlock under server-render. Return an unauthenticated principal; consumers
+        // see "Visitor" until the auth state finishes loading and the next render runs.
+        return new ClaimsPrincipal(new ClaimsIdentity());
     }
 }
