@@ -1,0 +1,8 @@
+2026-05-11 22:02:22.551 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-05-11 22:02:22.619 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-05-11 22:02:22.636 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.139) method 'initialize' request handler completed in 14.6407ms.
+2026-05-11 22:02:22.639 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.139) method 'tools/list' request handler called.
+2026-05-11 22:02:22.646 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.139) method 'tools/list' request handler completed in 7.1139ms.
+2026-05-11 22:02:59.866 -05:00 [INF] GlobalSearch index warmed in 37258 ms
+2026-05-11 22:04:22.611 -05:00 [INF] WorldTickService heartbeat (disabled): tick #1
+2026-05-11 22:04:22.669 -05:00 [INF] Continuity long-sweep (full): 2 contradiction group(s)

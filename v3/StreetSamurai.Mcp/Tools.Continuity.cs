@@ -3,6 +3,9 @@ using System.Diagnostics;
 using System.Text.Json;
 using ModelContextProtocol.Server;
 using StreetSamurai.Core.Interfaces;
+using StreetSamurai.Core.Models;
+using StreetSamurai.Core.Models.Canon;
+using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.Mcp;
 
@@ -36,10 +39,141 @@ namespace StreetSamurai.Mcp;
 public class ContinuityTools
 {
     private readonly IPathProvider paths;
+    private readonly IBookRepository books;
+    private readonly IChapterRepository chapters;
+    private readonly CharacterRepository characters;
 
-    public ContinuityTools(IPathProvider paths)
+    public ContinuityTools(
+        IPathProvider paths,
+        IBookRepository books,
+        IChapterRepository chapters,
+        CharacterRepository characters)
     {
         this.paths = paths;
+        this.books = books;
+        this.chapters = chapters;
+        this.characters = characters;
+    }
+
+    // Builds a self-contained JSON bundle of book + chapters + character profiles
+    // from the SQL Server canon, written to a temp file the Node script can read.
+    // Post-2026-05-08 the legacy engine/data/{books,chapters,people}/*.json layout
+    // is gone; the contradiction detector reads its canon from this bundle
+    // instead of crawling disk.
+    private string WriteBundleForBook(Book book)
+    {
+        var chapterRecords = new List<object>();
+        var characterNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var cid in book.ChapterIds)
+        {
+            var c = chapters.LoadChapter(cid);
+            if (c == null) continue;
+            chapterRecords.Add(new
+            {
+                id = c.Id,
+                book_id = c.BookId,
+                number = c.Number,
+                title = c.Title,
+                synopsis = c.Synopsis,
+                html = c.Html,
+                characters = c.Characters,
+            });
+            foreach (var name in c.Characters)
+            {
+                if (!string.IsNullOrWhiteSpace(name)) characterNames.Add(name.Trim());
+            }
+        }
+        foreach (var p in book.Protagonists)
+        {
+            if (!string.IsNullOrWhiteSpace(p)) characterNames.Add(p.Trim());
+        }
+
+        var characterRecords = new List<CharacterData>();
+        var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        characters.Reload();
+        foreach (var rawName in characterNames)
+        {
+            var cleaned = System.Text.RegularExpressions.Regex.Replace(rawName, @"\s*\([^)]*\)\s*$", "").Trim();
+            var c = characters.GetByName(cleaned) ?? characters.GetByName(rawName);
+            if (c == null || !seen.Add(c.Id)) continue;
+            characterRecords.Add(c);
+        }
+
+        var bundle = new
+        {
+            book   = book,
+            chapters = chapterRecords,
+            characters = characterRecords,
+        };
+        var path = Path.Combine(Path.GetTempPath(), $"contradiction-bundle-{Guid.NewGuid():N}.json");
+        File.WriteAllText(path, JsonSerializer.Serialize(bundle, CanonTools.JsonOpts));
+        return path;
+    }
+
+    private string WriteBundleForChapter(Chapter chapter)
+    {
+        var book = string.IsNullOrEmpty(chapter.BookId) ? null : books.LoadBook(chapter.BookId);
+        // For chapter mode we still want every prior-chapter synopsis available, so
+        // bundle the parent book's full chapter set when one exists. The Node
+        // script will index by id and only surface the priors it needs.
+        var chapterRecords = new List<object>();
+        var characterNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+        void AddChapter(Chapter c)
+        {
+            chapterRecords.Add(new
+            {
+                id = c.Id,
+                book_id = c.BookId,
+                number = c.Number,
+                title = c.Title,
+                synopsis = c.Synopsis,
+                html = c.Html,
+                characters = c.Characters,
+            });
+            foreach (var name in c.Characters)
+            {
+                if (!string.IsNullOrWhiteSpace(name)) characterNames.Add(name.Trim());
+            }
+        }
+
+        if (book != null)
+        {
+            foreach (var cid in book.ChapterIds)
+            {
+                var c = chapters.LoadChapter(cid);
+                if (c != null) AddChapter(c);
+            }
+            foreach (var p in book.Protagonists)
+            {
+                if (!string.IsNullOrWhiteSpace(p)) characterNames.Add(p.Trim());
+            }
+        }
+        else
+        {
+            AddChapter(chapter);
+        }
+
+        var characterRecords = new List<CharacterData>();
+        var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        characters.Reload();
+        foreach (var rawName in characterNames)
+        {
+            var cleaned = System.Text.RegularExpressions.Regex.Replace(rawName, @"\s*\([^)]*\)\s*$", "").Trim();
+            var c = characters.GetByName(cleaned) ?? characters.GetByName(rawName);
+            if (c == null || !seen.Add(c.Id)) continue;
+            characterRecords.Add(c);
+        }
+
+        var bundle = new
+        {
+            book = book,
+            chapters = chapterRecords,
+            characters = characterRecords,
+        };
+        var path = Path.Combine(Path.GetTempPath(), $"contradiction-bundle-{Guid.NewGuid():N}.json");
+        File.WriteAllText(path, JsonSerializer.Serialize(bundle, CanonTools.JsonOpts));
+        return path;
     }
 
     /// <summary>
@@ -90,8 +224,21 @@ public class ContinuityTools
             RedirectStandardError = true,
             CreateNoWindow = true,
         };
+        // Resolve the chapter from SQL Server and bundle book+chapters+characters
+        // into a temp JSON file the Node script reads via --bundle-file. The legacy
+        // disk layout was retired 2026-05-08; the Node script's only remaining job
+        // is the Legion vote dispatch and finding extraction.
+        var chapter = chapters.LoadChapter(chapterId);
+        if (chapter == null)
+        {
+            return JsonSerializer.Serialize(new { error = "chapter_not_found", chapterId }, CanonTools.JsonOpts);
+        }
+        var bundlePath = WriteBundleForChapter(chapter);
+
         psi.ArgumentList.Add(resolvedScriptPath);
         psi.ArgumentList.Add(chapterId);
+        psi.ArgumentList.Add("--bundle-file");
+        psi.ArgumentList.Add(bundlePath);
         psi.ArgumentList.Add("--quorum");
         psi.ArgumentList.Add(quorum);
         psi.ArgumentList.Add("--max-tokens");
@@ -116,6 +263,8 @@ public class ContinuityTools
             await proc.WaitForExitAsync();
             var stdout = await stdoutTask;
             var stderr = await stderrTask;
+
+            try { File.Delete(bundlePath); } catch { }
 
             // The Node script returns a JSON report on stdout regardless of exit code.
             // Exit 0 = no findings, exit 1 = findings flagged, exit 2 = pipeline error.
@@ -154,6 +303,7 @@ public class ContinuityTools
         }
         catch (Exception ex)
         {
+            try { File.Delete(bundlePath); } catch { }
             return JsonSerializer.Serialize(new
             {
                 error = "contradiction_detector_exception",
@@ -213,10 +363,21 @@ public class ContinuityTools
             RedirectStandardError = true,
             CreateNoWindow = true,
         };
+        // Build the bundle from SQL Server; the legacy engine/data/books/<id>.json
+        // layout was retired 2026-05-08. Node script reads canon from --bundle-file.
+        var book = books.LoadBook(bookId);
+        if (book == null)
+        {
+            return JsonSerializer.Serialize(new { error = "book_not_found", bookId }, CanonTools.JsonOpts);
+        }
+        var bundlePath = WriteBundleForBook(book);
+
         psi.ArgumentList.Add(resolvedScriptPath);
         psi.ArgumentList.Add(bookId);
         psi.ArgumentList.Add("--mode");
         psi.ArgumentList.Add("book");
+        psi.ArgumentList.Add("--bundle-file");
+        psi.ArgumentList.Add(bundlePath);
         psi.ArgumentList.Add("--quorum");
         psi.ArgumentList.Add(quorum);
         psi.ArgumentList.Add("--max-tokens");
@@ -248,6 +409,8 @@ public class ContinuityTools
             await proc.WaitForExitAsync();
             var stdout = await stdoutTask;
             var stderr = await stderrTask;
+
+            try { File.Delete(bundlePath); } catch { }
 
             // Exit 0 = no findings, 1 = findings flagged, 2 = pipeline error.
             // The Node script emits per-chapter progress on stderr; only treat
@@ -290,6 +453,7 @@ public class ContinuityTools
         }
         catch (Exception ex)
         {
+            try { File.Delete(bundlePath); } catch { }
             return JsonSerializer.Serialize(new
             {
                 error = "contradiction_detector_exception",
