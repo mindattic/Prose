@@ -26,6 +26,15 @@
 //   node tools/check-contradictions.js <book_id> --mode book
 //   node tools/check-contradictions.js <book_id> --mode book --synopsis-only
 //
+// DB mode (post-2026-05-08 SQL Server cutover):
+//   The legacy disk-resolution paths above only work against the retired
+//   engine/data/{books,chapters,people}/*.json layout. For SQL-backed canon,
+//   the caller (typically the C# MCP tool) builds a bundle JSON containing
+//   `book`, `chapters[]`, `characters[]` and passes it via --bundle-file:
+//
+//   node tools/check-contradictions.js <book_id> --mode book --bundle-file <path>
+//   node tools/check-contradictions.js <chapter_id>            --bundle-file <path>
+//
 // Exit codes:
 //   0  no contradictions flagged
 //   1  contradictions flagged
@@ -446,10 +455,53 @@ function parseArgs(argv) {
     else if (a === '--synopsis-only') args.synopsisOnly = true;
     else if (a === '--dry-run')   args.dryRun = true;
     else if (a === '--no-narrative') args.noNarrative = true;
+    else if (a === '--bundle-file') args.bundleFile = argv[++i];
     else if (a === '-h' || a === '--help') args.help = true;
     else args.positional.push(a);
   }
   return args;
+}
+
+// Bundle loading — used when canon is sourced from SQL Server (post-2026-05-08
+// cutover) rather than the retired engine/data/{books,chapters,people}/*.json
+// disk layout. The C# MCP tool builds the bundle from the DB repositories and
+// writes it to a temp file before invoking this script. Shape:
+//   {
+//     book:       { id, title, premise, chapter_ids, state_at_end, ... },
+//     chapters:   [ { id, book_id, number, title, synopsis, html, characters }, ... ],
+//     characters: [ { id, name, aliases, ...full character record... }, ... ]
+//   }
+// For chapter-mode runs, the positional id is the chapter id; the bundle's
+// `book` may be null if the chapter is orphaned.
+function loadBundle(bundlePath) {
+  if (!fs.existsSync(bundlePath)) {
+    console.error('bundle file not found:', bundlePath);
+    process.exit(2);
+  }
+  const b = readJson(bundlePath);
+  const chaptersById = new Map();
+  for (const c of b.chapters || []) {
+    if (c && c.id) chaptersById.set(c.id, c);
+  }
+  const charactersByKey = new Map();
+  for (const p of b.characters || []) {
+    if (!p) continue;
+    if (p.name) charactersByKey.set(p.name.trim(), p);
+    for (const alias of p.aliases || []) {
+      if (alias) charactersByKey.set(String(alias).trim(), p);
+    }
+  }
+  return {
+    book: b.book || null,
+    chapters: b.chapters || [],
+    chaptersById,
+    findChapter: id => chaptersById.get(id) || null,
+    findCharacter: name => {
+      if (!name) return null;
+      const cleaned = name.replace(/\s*\([^)]*\)\s*$/, '').trim();
+      return charactersByKey.get(cleaned) || charactersByKey.get(name.trim()) || null;
+    },
+  };
 }
 
 function printUsage() {
@@ -474,15 +526,38 @@ function printUsage() {
 }
 
 function runChapterCheck(chapterId, args) {
-  const chapter = readJsonOrNull(chapterPath(chapterId));
+  const bundle = args.bundleFile ? loadBundle(args.bundleFile) : null;
+
+  const chapter = bundle
+    ? bundle.findChapter(chapterId)
+    : readJsonOrNull(chapterPath(chapterId));
   if (!chapter) {
     console.error('chapter not found:', chapterId);
     process.exit(2);
   }
 
-  const book = chapter.book_id ? readJsonOrNull(bookPath(chapter.book_id)) : null;
-  const characters = loadCharactersFromList(chapter.characters || []);
-  const priorChapters = book ? loadPriorChapters(book, chapterId) : [];
+  const book = bundle
+    ? bundle.book
+    : (chapter.book_id ? readJsonOrNull(bookPath(chapter.book_id)) : null);
+
+  const characters = bundle
+    ? (chapter.characters || []).map(n => bundle.findCharacter(n)).filter(Boolean)
+    : loadCharactersFromList(chapter.characters || []);
+
+  let priorChapters = [];
+  if (book) {
+    if (bundle) {
+      const idx = (book.chapter_ids || []).indexOf(chapterId);
+      if (idx > 0) {
+        for (let i = 0; i < idx; i++) {
+          const pc = bundle.findChapter(book.chapter_ids[i]);
+          if (pc) priorChapters.push(pc);
+        }
+      }
+    } else {
+      priorChapters = loadPriorChapters(book, chapterId);
+    }
+  }
 
   let canonContext = buildCanonContext(chapter, book, characters, priorChapters);
   const limit = args.maxContextChars || 80000;
@@ -520,7 +595,9 @@ function runChapterCheck(chapterId, args) {
 }
 
 function runBookSweep(bookId, args) {
-  const book = readJsonOrNull(bookPath(bookId));
+  const bundle = args.bundleFile ? loadBundle(args.bundleFile) : null;
+
+  const book = bundle ? bundle.book : readJsonOrNull(bookPath(bookId));
   if (!book) {
     console.error('book not found:', bookId);
     process.exit(2);
@@ -532,7 +609,12 @@ function runBookSweep(bookId, args) {
   }
 
   const includeProse = !args.synopsisOnly;
-  const allCharacters = unionCharactersAcrossBook(book);
+  // Bundle mode: characters are pre-resolved by the C# caller (every character
+  // referenced across the book's chapters). Disk mode falls back to the legacy
+  // peopleDir() lookup.
+  const allCharacters = bundle
+    ? (bundle.characters || [])
+    : unionCharactersAcrossBook(book);
   const defaultLimit = includeProse ? 400000 : 120000;
   const limit = args.maxContextChars || defaultLimit;
 
@@ -540,12 +622,17 @@ function runBookSweep(bookId, args) {
   let totalRaw = 0;
 
   for (const cid of chapterIds) {
-    const chapter = readJsonOrNull(chapterPath(cid));
+    const chapter = bundle ? bundle.findChapter(cid) : readJsonOrNull(chapterPath(cid));
     if (!chapter) {
       perChapter.push({ chapter_id: cid, error: 'chapter_not_found' });
       continue;
     }
-    const otherChapters = loadOtherChapters(book, cid);
+    const otherChapters = bundle
+      ? (book.chapter_ids || [])
+          .filter(oid => oid !== cid)
+          .map(oid => bundle.findChapter(oid))
+          .filter(Boolean)
+      : loadOtherChapters(book, cid);
     let canonContext = buildBookCanonContext(chapter, book, allCharacters, otherChapters, includeProse);
     if (canonContext.length > limit) {
       canonContext = canonContext.slice(0, limit) + '\n\n[... truncated for context budget ...]';

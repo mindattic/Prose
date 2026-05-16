@@ -191,6 +191,15 @@ public class XrefService
             if (!newIndex.TryAdd(name, entry))
             {
                 var existing = newIndex[name];
+                // Self-overlap: the same record reaches Add twice because its
+                // Name, ProductName, and an entry in Aliases are all the same
+                // string. Not a real disambiguation conflict — just a noisy
+                // index pass — so swallow it instead of warning.
+                if (existing.Type == type && string.Equals(existing.Id, id, StringComparison.OrdinalIgnoreCase))
+                {
+                    newIndexById.TryAdd(id, entry);
+                    return;
+                }
                 newConflicts.Add(new XrefConflict(name, existing, entry));
                 if (existing.Type == type)
                     logger.LogWarning("Xref disambiguation conflict: \"{Name}\" claimed by {TypeA}/{IdA} and {TypeB}/{IdB}",
