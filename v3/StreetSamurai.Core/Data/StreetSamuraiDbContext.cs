@@ -252,6 +252,12 @@ public class StreetSamuraiDbContext : DbContext
                 .HasFilter("[IsActive] = 1");
             // 23rd-century in-world creation date — supports "what was canon as of 2256-04-15".
             e.HasIndex(x => x.InWorldCreatedDate);
+            // "Recently modified" lists on dashboard / world-health / activity
+            // feeds order by ModifiedAt — filter on active so archived churn
+            // doesn't pollute the hot path.
+            e.HasIndex(x => x.ModifiedAt)
+                .HasDatabaseName("IX_Entities_ModifiedAt_Active")
+                .HasFilter("[IsActive] = 1");
         });
 
         // ── Record (1:1 canonical JSON for an entity) ────────────────────────
@@ -260,6 +266,11 @@ public class StreetSamuraiDbContext : DbContext
             e.HasKey(x => x.EntityId);
             e.HasOne(x => x.Entity).WithOne(x => x.Record!)
                 .HasForeignKey<Record>(x => x.EntityId).OnDelete(DeleteBehavior.Cascade);
+            // WorldGraphService.IsStale() probes max(UpdatedAt) on every cold
+            // start; chapter / book repos do OrderByDescending(r => r.UpdatedAt)
+            // for recent-first lists. Without this it was a full scan of every
+            // row's UpdatedAt — multi-second on a populated canon.
+            e.HasIndex(x => x.UpdatedAt).HasDatabaseName("IX_Records_UpdatedAt");
         });
 
         // ── EntityProperty (flex bag) ────────────────────────────────────────
@@ -288,6 +299,17 @@ public class StreetSamuraiDbContext : DbContext
                 .HasForeignKey(x => x.TargetId).OnDelete(DeleteBehavior.Restrict);
             e.HasIndex(x => new { x.SourceId, x.RelationType, x.StoryValidFrom });
             e.HasIndex(x => new { x.TargetId, x.RelationType, x.StoryValidFrom });
+            // Filtered indexes — "current edges only" is the hot read path
+            // (family ties, lives_at, member_of, deployed_at all use
+            // StoryValidUntil IS NULL). Without the filter SQL Server scans the
+            // history portion of the keys; with it the index is ~10× smaller
+            // and ~10× faster on current-only lookups.
+            e.HasIndex(x => new { x.SourceId, x.RelationType })
+                .HasDatabaseName("IX_Edges_Source_Current")
+                .HasFilter("[StoryValidUntil] IS NULL");
+            e.HasIndex(x => new { x.TargetId, x.RelationType })
+                .HasDatabaseName("IX_Edges_Target_Current")
+                .HasFilter("[StoryValidUntil] IS NULL");
         });
 
         // ── Taxonomy ─────────────────────────────────────────────────────────

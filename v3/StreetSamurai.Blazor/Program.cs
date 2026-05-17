@@ -18,6 +18,10 @@ using StreetSamurai.Shared.Services;
 using MindAttic.Vault.Configuration;
 using MindAttic.Vault.DependencyInjection;
 
+// QuestPDF Community license — required call before the first Document.Create.
+// This project is the non-commercial indie use case the Community tier exists for.
+QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
+
 // CLI mode: dotnet run --project ... -- --rebuild-graph
 // Rebuilds world_graph.json from source data without starting the web server.
 if (args.Contains("--rebuild-graph"))
@@ -472,25 +476,26 @@ builder.Services.AddScoped<ToastNotifier>();
 
 var app = builder.Build();
 
-// Eager-instantiate background services that subscribe to events at construction.
-// Wrapped in try/Log.Fatal so a ctor failure doesn't silently swallow itself —
-// without this the host comes up but the service never wires its OnChapterSaved
-// subscription, and the symptom is "saves don't trigger findings" with no log line.
-try
+// Background-instantiate services that subscribe to events at construction.
+// Doing this synchronously on the startup path used to block app.Run() for
+// 30-60 s while WorldGraphService.EnsureLoaded ran a full SQL rebuild — the host
+// didn't serve a single request until that finished. Fire-and-forget on a
+// Task.Run lets the host come up immediately; the subscriptions wire in a few
+// seconds later, well before any user can save a chapter.
+_ = Task.Run(() =>
 {
-    // ContinuousQualityService subscribes to IChapterRepository.OnChapterSaved for
-    // autonomous contradiction/cliché scans against the cloud LLM.
-    _ = app.Services.GetRequiredService<StreetSamurai.Core.Services.ContinuousQualityService>();
-}
-catch (Exception ex) { Log.Fatal(ex, "Eager-instantiate ContinuousQualityService failed — chapter-save quality scan will not run"); }
+    try
+    {
+        _ = app.Services.GetRequiredService<StreetSamurai.Core.Services.ContinuousQualityService>();
+    }
+    catch (Exception ex) { Log.Fatal(ex, "Background-instantiate ContinuousQualityService failed — chapter-save quality scan will not run"); }
 
-try
-{
-    // Eager-instantiate the BeatStateExtractor so its OnChapterSaved subscription
-    // is live before any chapter save can happen.
-    _ = app.Services.GetRequiredService<StreetSamurai.Core.Services.BeatStateExtractor>();
-}
-catch (Exception ex) { Log.Fatal(ex, "Eager-instantiate BeatStateExtractor failed — beat state extraction on save will not run"); }
+    try
+    {
+        _ = app.Services.GetRequiredService<StreetSamurai.Core.Services.BeatStateExtractor>();
+    }
+    catch (Exception ex) { Log.Fatal(ex, "Background-instantiate BeatStateExtractor failed — beat state extraction on save will not run"); }
+});
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

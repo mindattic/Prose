@@ -50,7 +50,29 @@
     {
         <p class="text-muted">Pick a format. Files land in <code>engine/exports/</code>.</p>
         <div class="row g-3">
-            <div class="col-md-4">
+            <div class="col-md-3">
+                <div class="card bg-dark border-secondary h-100">
+                    <div class="card-body">
+                        <h5 class="text-info"><i class="bi bi-filetype-pdf me-2"></i>PDF</h5>
+                        <p class="text-muted small">Print-ready PDF — title page, per-chapter pagination, page numbers. Take it with you.</p>
+                        <button class="btn btn-outline-info" @onclick='() => Export("pdf")' disabled="@working">
+                            <i class="bi bi-download me-1"></i>Build PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-dark border-secondary h-100">
+                    <div class="card-body">
+                        <h5 class="text-info"><i class="bi bi-markdown me-2"></i>Markdown</h5>
+                        <p class="text-muted small">Single Markdown file — useful for editorial review and plain-text pipelines.</p>
+                        <button class="btn btn-outline-info" @onclick='() => Export("md")' disabled="@working">
+                            <i class="bi bi-download me-1"></i>Build Markdown
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
                 <div class="card bg-dark border-secondary h-100">
                     <div class="card-body">
                         <h5 class="text-info"><i class="bi bi-book me-2"></i>EPUB</h5>
@@ -61,24 +83,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card bg-dark border-secondary h-100">
                     <div class="card-body">
                         <h5 class="text-info"><i class="bi bi-filetype-html me-2"></i>HTML</h5>
-                        <p class="text-muted small">Standalone single-file HTML. Opens in any browser, prints to PDF cleanly.</p>
+                        <p class="text-muted small">Standalone single-file HTML. Opens in any browser.</p>
                         <button class="btn btn-outline-info" @onclick='() => Export("html")' disabled="@working">
                             <i class="bi bi-download me-1"></i>Build HTML
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card bg-dark border-secondary h-100">
-                    <div class="card-body">
-                        <h5 class="text-info"><i class="bi bi-markdown me-2"></i>Markdown</h5>
-                        <p class="text-muted small">Single Markdown file — useful for editorial review and plain-text pipelines.</p>
-                        <button class="btn btn-outline-info" @onclick='() => Export("md")' disabled="@working">
-                            <i class="bi bi-download me-1"></i>Build Markdown
                         </button>
                     </div>
                 </div>
@@ -115,6 +126,7 @@
         {
             string path = format switch
             {
+                "pdf"  => ExportSvc.ExportPdf(book.Id),
                 "html" => ExportSvc.ExportHtml(book.Id),
                 "md"   => ExportSvc.ExportMarkdown(book.Id),
                 _      => ExportSvc.ExportEpub(book.Id),

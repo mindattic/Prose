@@ -16,7 +16,8 @@ namespace StreetSamurai.Blazor.Cli;
 ///   ss --book absorb &lt;bookId&gt; --chapter &lt;chapterId&gt;
 ///   ss --book review &lt;bookId&gt;
 ///   ss --book apply &lt;bookId&gt; &lt;findingId&gt;
-///   ss --book export &lt;bookId&gt; [--format epub|html|md]
+///   ss --book export &lt;bookId&gt; [--format pdf|epub|html|md]
+///   ss --book export-all --format &lt;pdf|epub|html|md&gt;
 ///   ss --book archive &lt;bookId&gt; --confirm &lt;bookId&gt;
 ///
 /// Every operation matches what the chapters page does in the UI — parity, not divergence.
@@ -44,6 +45,7 @@ public static class BookCli
             "review"   => await CmdReview(rest, services.GetRequiredService<IBookReviewService>()),
             "apply"    => await CmdApply(rest, services.GetRequiredService<IBookReviewService>()),
             "export"   => CmdExport(rest, services.GetRequiredService<BookExportService>()),
+            "export-all" => CmdExportAll(rest, services.GetRequiredService<BookExportService>()),
             "archive"  => CmdArchive(rest, bookRepo),
             _          => Fail($"unknown subcommand: {sub}"),
         };
@@ -173,7 +175,7 @@ public static class BookCli
 
     static int CmdExport(string[] args, BookExportService svc)
     {
-        if (args.Length == 0) return Fail("usage: --book export <bookId> [--format epub|html|md]");
+        if (args.Length == 0) return Fail("usage: --book export <bookId> [--format pdf|epub|html|md]");
         var bookId = args[0];
         var format = (ArgValue(args, "--format") ?? "epub").ToLowerInvariant();
 
@@ -181,6 +183,7 @@ public static class BookCli
         {
             string path = format switch
             {
+                "pdf"  => svc.ExportPdf(bookId),
                 "html" => svc.ExportHtml(bookId),
                 "md" or "markdown" => svc.ExportMarkdown(bookId),
                 _ => svc.ExportEpub(bookId),
@@ -192,6 +195,28 @@ public static class BookCli
         catch (Exception ex)
         {
             Console.Error.WriteLine($"[book export] {ex.Message}");
+            return 2;
+        }
+    }
+
+    static int CmdExportAll(string[] args, BookExportService svc)
+    {
+        var format = (ArgValue(args, "--format") ?? "pdf").ToLowerInvariant();
+        if (format is "markdown") format = "md";
+        if (format is not ("pdf" or "epub" or "html" or "md"))
+            return Fail($"--format must be one of pdf|epub|html|md (got '{format}')");
+
+        try
+        {
+            var result = svc.ExportAll(format);
+            foreach (var f in result.Files) Console.WriteLine(f);
+            Console.Error.WriteLine($"[book export-all] {result.Files.Count} file(s) → {result.Directory}"
+                + (result.Skipped > 0 ? $" ({result.Skipped} skipped)" : ""));
+            return 0;
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"[book export-all] {ex.Message}");
             return 2;
         }
     }
@@ -262,7 +287,8 @@ public static class BookCli
           --book absorb <bookId> --chapter <chapterId>
           --book review <bookId>
           --book apply <bookId> <findingId>
-          --book export <bookId> [--format epub|html|md]
+          --book export <bookId> [--format pdf|epub|html|md]
+          --book export-all --format <pdf|epub|html|md>
           --book archive <bookId> --confirm <bookId>
 
         Book ids accept the full guid, an 8-char prefix, or an exact title match (when unambiguous).

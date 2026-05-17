@@ -20,6 +20,7 @@
     <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.5" />
     <PackageReference Include="MindAttic.Legion" Version="2.3.0" />
     <PackageReference Include="MindAttic.Vault" Version="0.2.0" />
+    <PackageReference Include="QuestPDF" Version="2026.5.0" />
     <PackageReference Include="QuikGraph" Version="2.5.0" />
     <PackageReference Include="QuikGraph.Serialization" Version="2.5.0" />
     <PackageReference Include="Serilog" Version="4.3.1" />

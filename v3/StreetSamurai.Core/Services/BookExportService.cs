@@ -2,7 +2,13 @@ using System.IO.Compression;
 using System.Text;
 using System.Text.Json;
 using System.Web;
+using Markdig;
+using Markdig.Syntax;
+using Markdig.Syntax.Inlines;
 using Microsoft.Extensions.Logging;
+using QuestPDF.Fluent;
+using QuestPDF.Helpers;
+using QuestPDF.Infrastructure;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 
@@ -123,6 +129,140 @@ public class BookExportService
         log.LogInformation("Exported book {BookId} markdown to {Path}", bookId, path);
         return path;
     }
+
+    /// <summary>
+    /// Build a PDF of the book via QuestPDF. Title page + one document section per
+    /// chapter (each chapter starts on a fresh page; long chapters auto-flow).
+    /// Body prose is parsed as Markdown so paragraphs, headings, emphasis and
+    /// blockquotes survive the trip — pure-managed, no headless browser required.
+    /// </summary>
+    public string ExportPdf(string bookId)
+    {
+        var book = books.LoadBook(bookId)
+            ?? throw new InvalidOperationException($"Book {bookId} not found");
+
+        var ordered = book.ChapterIds
+            .Select(id => chapters.LoadChapter(id))
+            .Where(c => c != null)
+            .Cast<Chapter>()
+            .ToList();
+
+        if (ordered.Count == 0)
+            throw new InvalidOperationException($"Book {bookId} has no chapters to export");
+
+        Directory.CreateDirectory(paths.ExportDir);
+        var pdfPath = Path.Combine(paths.ExportDir, $"{Slug(book.Title)}.{book.Id[..8]}.pdf");
+        var author = book.Protagonists.FirstOrDefault() ?? "Unknown";
+
+        QuestPDF.Fluent.Document.Create(container =>
+        {
+            // Title page
+            container.Page(p =>
+            {
+                p.Size(PageSizes.Letter);
+                p.Margin(72);
+                p.PageColor(Colors.White);
+                p.DefaultTextStyle(t => t.FontFamily("Georgia").FontSize(12).FontColor(Colors.Black));
+                p.Content().AlignCenter().AlignMiddle().Column(col =>
+                {
+                    col.Item().Text(book.Title).FontSize(30).Bold();
+                    if (!string.IsNullOrEmpty(book.Tagline))
+                        col.Item().PaddingTop(10).Text(book.Tagline).FontSize(13).Italic().FontColor(Colors.Grey.Darken1);
+                    col.Item().PaddingTop(56).Text(author).FontSize(14);
+                });
+            });
+
+            for (int i = 0; i < ordered.Count; i++)
+            {
+                var chapter = ordered[i];
+                var chapterNumber = i + 1;
+                container.Page(p =>
+                {
+                    p.Size(PageSizes.Letter);
+                    p.Margin(72);
+                    p.PageColor(Colors.White);
+                    p.DefaultTextStyle(t => t.FontFamily("Georgia").FontSize(11.5f).LineHeight(1.45f).FontColor(Colors.Black));
+
+                    p.Header().PaddingBottom(20).Column(h =>
+                    {
+                        h.Item().Text($"CHAPTER {chapterNumber}")
+                            .FontSize(10).LetterSpacing(0.25f).FontColor(Colors.Grey.Darken1);
+                        h.Item().PaddingTop(4).Text(chapter.Title)
+                            .FontSize(20).Bold();
+                    });
+
+                    p.Content().Column(col =>
+                    {
+                        var cleanMd = markdown.StripToPlainText(chapter.Html ?? "");
+                        RenderMarkdownToColumn(col, cleanMd, chapter.Title);
+                    });
+
+                    p.Footer().AlignCenter().Text(t =>
+                    {
+                        t.Span($"— Page ").FontSize(9).FontColor(Colors.Grey.Medium);
+                        t.CurrentPageNumber().FontSize(9).FontColor(Colors.Grey.Medium);
+                        t.Span(" —").FontSize(9).FontColor(Colors.Grey.Medium);
+                    });
+                });
+            }
+        }).GeneratePdf(pdfPath);
+
+        log.LogInformation("Exported book {BookId} pdf to {Path} ({Chapters} chapters)",
+            bookId, pdfPath, ordered.Count);
+        return pdfPath;
+    }
+
+    /// <summary>
+    /// Export every active book in the chosen format into a timestamped
+    /// engine/exports/all-{yyyy-MM-dd-HHmm}/ subfolder. A book that fails (e.g.
+    /// has no chapters yet) is logged and skipped — one bad book doesn't abort
+    /// the bulk run. Returns the destination folder, the produced file paths,
+    /// and how many books were skipped.
+    /// </summary>
+    public BulkExportResult ExportAll(string format)
+    {
+        if (format is not ("pdf" or "epub" or "html" or "md"))
+            throw new ArgumentException($"Unknown format: {format}. Expected one of: pdf, epub, html, md.", nameof(format));
+
+        var allBooks = books.ListBooks();
+        if (allBooks.Count == 0)
+            throw new InvalidOperationException("No active books to export.");
+
+        var ts = DateTime.Now.ToString("yyyy-MM-dd-HHmm");
+        var bulkDir = Path.Combine(paths.ExportDir, $"all-{ts}");
+        Directory.CreateDirectory(bulkDir);
+
+        var produced = new List<string>(allBooks.Count);
+        var skipped = 0;
+        foreach (var b in allBooks)
+        {
+            try
+            {
+                string src = format switch
+                {
+                    "pdf"  => ExportPdf(b.Id),
+                    "html" => ExportHtml(b.Id),
+                    "md"   => ExportMarkdown(b.Id),
+                    _      => ExportEpub(b.Id),
+                };
+                var dst = Path.Combine(bulkDir, Path.GetFileName(src));
+                File.Move(src, dst, overwrite: true);
+                produced.Add(dst);
+            }
+            catch (Exception ex)
+            {
+                skipped++;
+                log.LogWarning(ex, "ExportAll skipped book {BookId} ({Title}): {Err}",
+                    b.Id, b.Title, ex.Message);
+            }
+        }
+        log.LogInformation("ExportAll {Format} → {Dir} ({Produced} produced, {Skipped} skipped)",
+            format, bulkDir, produced.Count, skipped);
+        return new BulkExportResult(bulkDir, produced, skipped);
+    }
+
+    /// <summary>Result of a bulk <see cref="ExportAll(string)"/> call.</summary>
+    public record BulkExportResult(string Directory, IReadOnlyList<string> Files, int Skipped);
 
     /// <summary>
     /// Synthesize per-chapter audio via the configured TTS service. Each chapter
@@ -404,6 +544,147 @@ public class BookExportService
         hr:after { content: "❦"; font-size: 1.4em; color: #888; }
         blockquote { margin: 1em 2em; font-style: italic; color: #444; }
         """;
+
+    // ── Markdown → QuestPDF walker ───────────────────────────────────────
+
+    /// <summary>
+    /// Walk a Markdown AST and emit equivalent QuestPDF column items. Supports
+    /// headings (H1-H3), paragraphs with bold/italic spans, blockquotes, ordered
+    /// and unordered lists, and thematic breaks. A leading H1 that matches the
+    /// chapter title is dropped — the page header already shows it.
+    /// </summary>
+    private static void RenderMarkdownToColumn(ColumnDescriptor col, string markdownText, string chapterTitle)
+    {
+        if (string.IsNullOrWhiteSpace(markdownText)) return;
+        var doc = Markdown.Parse(markdownText);
+        bool first = true;
+        foreach (var block in doc)
+        {
+            // Drop the leading "# Chapter Title" if the chapter content opens with it —
+            // the page header already shows the chapter title, so duplicating reads as a typo.
+            if (first && block is HeadingBlock hb && hb.Level == 1)
+            {
+                var headingText = ExtractPlainInline(hb.Inline);
+                if (string.Equals(headingText.Trim(), chapterTitle?.Trim(), StringComparison.OrdinalIgnoreCase)
+                    || headingText.StartsWith("Chapter ", StringComparison.OrdinalIgnoreCase))
+                {
+                    first = false;
+                    continue;
+                }
+            }
+            first = false;
+            RenderBlock(col, block);
+        }
+    }
+
+    private static void RenderBlock(ColumnDescriptor col, Block block)
+    {
+        switch (block)
+        {
+            case HeadingBlock h:
+                float size = h.Level switch { 1 => 18f, 2 => 15f, 3 => 13f, _ => 12f };
+                col.Item().PaddingTop(14).PaddingBottom(6).Text(t =>
+                {
+                    RenderInline(t, h.Inline, bold: true, italic: false, baseSize: size);
+                });
+                break;
+
+            case ParagraphBlock p:
+                col.Item().PaddingBottom(8).Text(t =>
+                {
+                    t.Justify();
+                    RenderInline(t, p.Inline, bold: false, italic: false, baseSize: 11.5f);
+                });
+                break;
+
+            case QuoteBlock q:
+                col.Item().PaddingLeft(20).PaddingBottom(8).BorderLeft(2).BorderColor(Colors.Grey.Lighten2)
+                    .PaddingLeft(12).Column(inner =>
+                    {
+                        foreach (var sub in q) RenderBlock(inner, sub);
+                    });
+                break;
+
+            case ThematicBreakBlock:
+                col.Item().PaddingVertical(14).AlignCenter().Text("❦").FontSize(13).FontColor(Colors.Grey.Medium);
+                break;
+
+            case ListBlock lst:
+                col.Item().PaddingBottom(8).Column(inner =>
+                {
+                    int n = 1;
+                    foreach (var li in lst)
+                    {
+                        if (li is not ListItemBlock item) continue;
+                        var bullet = lst.IsOrdered ? $"{n++}. " : "•  ";
+                        inner.Item().Row(r =>
+                        {
+                            r.ConstantItem(22).Text(bullet);
+                            r.RelativeItem().Column(c2 =>
+                            {
+                                foreach (var b in item) RenderBlock(c2, b);
+                            });
+                        });
+                    }
+                });
+                break;
+        }
+    }
+
+    private static void RenderInline(TextDescriptor t, ContainerInline? inline,
+                                     bool bold, bool italic, float baseSize)
+    {
+        if (inline == null) return;
+        foreach (var i in inline)
+        {
+            switch (i)
+            {
+                case LiteralInline lit:
+                    {
+                        var span = t.Span(lit.Content.ToString()).FontSize(baseSize);
+                        if (bold) span.Bold();
+                        if (italic) span.Italic();
+                        break;
+                    }
+                case EmphasisInline em:
+                    {
+                        var b = bold || em.DelimiterCount >= 2;
+                        var it = italic || em.DelimiterCount == 1;
+                        RenderInline(t, em, b, it, baseSize);
+                        break;
+                    }
+                case LineBreakInline:
+                    t.Span("\n");
+                    break;
+                case CodeInline code:
+                    t.Span(code.Content).FontFamily("Consolas").FontSize(baseSize - 0.5f);
+                    break;
+                case LinkInline link:
+                    // Treat as plain text — the link target wouldn't be tappable from a PDF reader
+                    // anyway for many readers, and the inner text already reads naturally.
+                    RenderInline(t, link, bold, italic, baseSize);
+                    break;
+            }
+        }
+    }
+
+    private static string ExtractPlainInline(ContainerInline? inline)
+    {
+        if (inline == null) return "";
+        var sb = new StringBuilder();
+        foreach (var i in inline)
+        {
+            switch (i)
+            {
+                case LiteralInline lit: sb.Append(lit.Content.ToString()); break;
+                case EmphasisInline em: sb.Append(ExtractPlainInline(em)); break;
+                case LineBreakInline: sb.Append(' '); break;
+                case CodeInline code: sb.Append(code.Content); break;
+                case LinkInline link: sb.Append(ExtractPlainInline(link)); break;
+            }
+        }
+        return sb.ToString();
+    }
 
     // ── Helpers ──────────────────────────────────────────────────────────
 

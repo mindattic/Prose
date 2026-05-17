@@ -3,10 +3,13 @@
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
 @using StreetSamurai.Core.Services
+@using StreetSamurai.Shared.Services
 @inject IBookRepository BookRepo
 @inject IChapterRepository ChapterRepo
 @inject FindingsService Findings
 @inject MotifService MotifSvc
+@inject BookExportService ExportSvc
+@inject ToastNotifier Toast
 @inject NavigationManager Nav
 @inject IWriteAccessProvider Access
 
@@ -16,6 +19,12 @@
         <a href="/series" class="btn btn-sm btn-outline-secondary">
             <i class="bi bi-collection"></i><div class="btn-lbl"> Series</div>
         </a>
+        @if (books.Count > 0)
+        {
+            <button class="btn btn-sm btn-outline-info" @onclick="OpenBulk" title="Export every book in one go">
+                <i class="bi bi-cloud-download"></i><div class="btn-lbl"> Export all</div>
+            </button>
+        }
         @if (Access.IsAdministrator)
         {
             <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew">
@@ -24,6 +33,49 @@
         }
     </div>
 </div>
+
+@* ── Bulk Export Modal ─────────────────────────────────────────── *@
+@if (bulkExportOpen)
+{
+    <div class="modal-backdrop fade show" style="z-index:1050;"></div>
+    <div class="modal fade show d-block" tabindex="-1" style="z-index:1055;" @onclick="CloseBulk">
+        <div class="modal-dialog modal-dialog-centered" @onclick:stopPropagation="true">
+            <div class="modal-content bg-dark text-light border-info">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-info"><i class="bi bi-cloud-download me-2"></i>Export every book</h5>
+                    <button type="button" class="btn-close btn-close-white" @onclick="CloseBulk" disabled="@bulkBusy"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted small mb-3">
+                        Builds one file per book in the chosen format, then drops them into
+                        <code>engine/exports/all-@DateTime.Now.ToString("yyyy-MM-dd-HHmm")/</code>.
+                        Books with no chapters yet are skipped.
+                    </p>
+                    @if (bulkBusy)
+                    {
+                        <div class="text-info"><span class="spinner-border spinner-border-sm me-2"></span>Building @bulkFormat.ToUpperInvariant() for @books.Count book(s)…</div>
+                    }
+                    else if (!string.IsNullOrEmpty(bulkResult))
+                    {
+                        <div class="alert alert-success small mb-0"><i class="bi bi-check-circle me-1"></i>@bulkResult</div>
+                    }
+                    else
+                    {
+                        <div class="d-flex gap-2 flex-wrap">
+                            <button class="btn btn-outline-info" @onclick='() => RunBulk("pdf")'><i class="bi bi-filetype-pdf me-1"></i>PDF</button>
+                            <button class="btn btn-outline-info" @onclick='() => RunBulk("md")'><i class="bi bi-markdown me-1"></i>Markdown</button>
+                            <button class="btn btn-outline-info" @onclick='() => RunBulk("epub")'><i class="bi bi-book me-1"></i>EPUB</button>
+                            <button class="btn btn-outline-info" @onclick='() => RunBulk("html")'><i class="bi bi-filetype-html me-1"></i>HTML</button>
+                        </div>
+                    }
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button class="btn btn-secondary btn-sm" @onclick="CloseBulk" disabled="@bulkBusy">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
 
 @* â”€â”€ New Book Modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ *@
 @if (newBookOpen)
@@ -414,6 +466,13 @@
     private string archiveConfirmId = "";
     private string archiveError = "";
 
+    // Bulk export modal state. ExportAll runs on Task.Run so the SignalR loop
+    // stays responsive — PDF for a multi-book corpus can take many seconds.
+    private bool bulkExportOpen;
+    private bool bulkBusy;
+    private string bulkFormat = "";
+    private string bulkResult = "";
+
     // Edit-book modal state. The full Book is captured so save can write back
     // to the same record; field strings are bound to the inputs and folded
     // back on save.
@@ -479,6 +538,48 @@
 
     private static string CoverStyle(Book book) =>
         string.IsNullOrEmpty(book.CoverImageUrl) ? "" : $"background-image: url('{book.CoverImageUrl}');";
+
+    private void OpenBulk()
+    {
+        bulkExportOpen = true;
+        bulkBusy = false;
+        bulkFormat = "";
+        bulkResult = "";
+    }
+
+    private void CloseBulk()
+    {
+        if (bulkBusy) return; // Don't let the modal close mid-build.
+        bulkExportOpen = false;
+    }
+
+    private async Task RunBulk(string format)
+    {
+        if (bulkBusy) return;
+        bulkFormat = format;
+        bulkBusy = true;
+        bulkResult = "";
+        StateHasChanged();
+        try
+        {
+            // PDF for the whole corpus is CPU-bound and can hold the SignalR
+            // loop for tens of seconds — offload so the spinner stays alive.
+            var result = await Task.Run(() => ExportSvc.ExportAll(format));
+            bulkResult = $"Wrote {result.Files.Count} file(s) to {result.Directory}"
+                       + (result.Skipped > 0 ? $" — {result.Skipped} book(s) skipped (no chapters)" : "");
+            Toast.Success("EXPORT-ALL-OK", $"{format.ToUpperInvariant()}: {result.Files.Count} book(s) → {result.Directory}");
+        }
+        catch (Exception ex)
+        {
+            bulkResult = $"Failed: {ex.Message}";
+            Toast.Error("EXPORT-ALL-FAIL", $"{format.ToUpperInvariant()} bulk export failed: {ex.Message}");
+        }
+        finally
+        {
+            bulkBusy = false;
+            await InvokeAsync(StateHasChanged);
+        }
+    }
 
     private void CreateNew()
     {

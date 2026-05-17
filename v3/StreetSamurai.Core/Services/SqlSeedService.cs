@@ -45,6 +45,7 @@ public class SqlSeedService
             ["ammunition_45_acp"]            = "insert_ammunition_45_acp.sql",
             ["weapon_sw_governor_2211"]      = "insert_weapon_sw_governor_2211.sql",
             ["weapon_sw_governor_2211_fks"]  = "fix_weapon_sw_governor_2211_fks.sql",
+            ["performance_indexes_20260516"] = "add_performance_indexes_20260516.sql",
         };
 
     public class SeedResult
