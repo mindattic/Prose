@@ -483,6 +483,11 @@
           "Microsoft.Extensions.Options": "9.0.0"
         }
       },
+      "QuestPDF": {
+        "type": "Transitive",
+        "resolved": "2026.5.0",
+        "contentHash": "QddELSgpJ7YFrNaqlqUik/OOhK2/yVDqdqGjtdH+V3nxml2cvjUorFp2yiK8xnTLLvR139SXpVt3G/0oVCynig=="
+      },
       "QuikGraph": {
         "type": "Transitive",
         "resolved": "2.5.0",
@@ -610,6 +615,7 @@
           "Microsoft.Extensions.Http": "[10.0.5, )",
           "MindAttic.Legion": "[2.3.0, )",
           "MindAttic.Vault": "[0.2.0, )",
+          "QuestPDF": "[2026.5.0, )",
           "QuikGraph": "[2.5.0, )",
           "QuikGraph.Serialization": "[2.5.0, )",
           "Serilog": "[4.3.1, )",

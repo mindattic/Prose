@@ -56,14 +56,42 @@ public class WorldGraphService : IWorldGraphService
         try
         {
             Load();
+            // Empty cache (first run) → must rebuild synchronously, there's no data
+            // to serve. Otherwise we trust the cache and let RefreshIfStale handle
+            // the SQL freshness probe in the background — that probe used to block
+            // the startup path for 30-60 s on the eager-instantiate chain.
             if (_nodes.Count == 0) Rebuild();
-            else if (IsStale()) Rebuild();
             RebuildIndexes();
             loaded = true;
         }
         finally
         {
             loading = false;
+        }
+    }
+
+    /// <summary>
+    /// Background-safe freshness check. Probes SQL for canon updates more recent
+    /// than the on-disk snapshot, and rebuilds the graph if so. Called from the
+    /// DI factory on a Task.Run so the startup path doesn't pay the SQL probe +
+    /// potential 6-table rebuild cost. Concurrent reads during the rebuild window
+    /// may briefly observe partial state — accepted because canon updates are rare
+    /// and the alternative is blocking startup for the full rebuild duration.
+    /// </summary>
+    public void RefreshIfStale()
+    {
+        try
+        {
+            if (!loaded) EnsureLoaded();
+            if (IsStale())
+            {
+                Rebuild();
+                RebuildIndexes();
+            }
+        }
+        catch (Exception ex)
+        {
+            Serilog.Log.Warning(ex, "Background WorldGraph freshness check failed");
         }
     }
 

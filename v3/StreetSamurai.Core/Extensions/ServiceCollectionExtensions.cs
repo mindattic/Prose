@@ -326,6 +326,12 @@ public static class ServiceCollectionExtensions
         // Graph builds from canon on first access. With the SQL cutover, freshness
         // is driven by Records.UpdatedAt — the IDbContextFactory ctor receives the
         // factory so IsStale() can probe the canonical record table.
+        //
+        // EnsureLoaded() runs synchronously and only loads the on-disk JSON cache;
+        // it no longer probes SQL or rebuilds unless the cache is empty (first
+        // run). RefreshIfStale() does the SQL probe + potential rebuild on a
+        // background task so app.Run() isn't held up by it — that was the bulk
+        // of the 60+ s cold-start cost.
         services.AddSingleton<WorldGraphService>(sp =>
         {
             var graph = new WorldGraphService(
@@ -333,26 +339,21 @@ public static class ServiceCollectionExtensions
                 sp.GetRequiredService<DatabaseService>(),
                 sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>());
             graph.EnsureLoaded();
+            _ = Task.Run(graph.RefreshIfStale);
             return graph;
         });
 
         services.AddSingleton<IWorldGraphService>(sp => sp.GetRequiredService<WorldGraphService>());
 
-        // Semantic search — TF-IDF index over all graph entities
-        services.AddSingleton<SemanticIndexService>(sp =>
-        {
-            var idx = new SemanticIndexService(sp.GetRequiredService<WorldGraphService>());
-            idx.RebuildIndex();
-            return idx;
-        });
+        // Semantic search — TF-IDF index over all graph entities. Build is gated
+        // inside Search/UpdateNode on the `built` flag so first query rebuilds
+        // lazily; do NOT rebuild in the DI factory or we pay ~5-10 s of TF-IDF
+        // work on every startup before serving the first request.
+        services.AddSingleton<SemanticIndexService>();
 
-        // Cross-entity inference — transitive relationships via shared hubs/properties
-        services.AddSingleton<InferenceService>(sp =>
-        {
-            var inf = new InferenceService(sp.GetRequiredService<WorldGraphService>());
-            inf.RebuildPropertyIndex();
-            return inf;
-        });
+        // Cross-entity inference — same lazy pattern: RebuildPropertyIndex runs
+        // on first GetInferredConnections / GetNodesByProperty call.
+        services.AddSingleton<InferenceService>();
 
         // Automatic relationship discovery — scans entity saves for new edges
         services.AddSingleton<RelationshipDiscoveryService>(sp =>
@@ -422,23 +423,11 @@ public static class ServiceCollectionExtensions
         // Canon validation — checks generated text against graph for contradictions
         services.AddSingleton<ValidationService>();
 
-        // Thematic index — tag-based cross-repo retrieval for story generation
-        services.AddSingleton<ThematicIndexService>(sp =>
-        {
-            var idx = new ThematicIndexService(
-                sp.GetRequiredService<DatabaseService>(),
-                sp.GetRequiredService<SyntheticLifeRepository>(),
-                sp.GetRequiredService<GenemodRepository>(),
-                sp.GetRequiredService<TransportationRepository>(),
-                sp.GetRequiredService<VocabularyRepository>(),
-                sp.GetRequiredService<QuoteRepository>(),
-                sp.GetRequiredService<ConsumerGoodRepository>(),
-                sp.GetRequiredService<PharmaceuticalRepository>(),
-                sp.GetRequiredService<MaterialRepository>(),
-                sp.GetRequiredService<AmmunitionRepository>());
-            idx.RebuildIndex();
-            return idx;
-        });
+        // Thematic index — tag-based cross-repo retrieval for story generation.
+        // RebuildIndex is gated inside Get* methods on the `built` flag, so the
+        // first query builds lazily. Skipping the factory rebuild trims ~5-15 s
+        // off cold-start (this one touches 10 repos via GetAll()).
+        services.AddSingleton<ThematicIndexService>();
 
         // Crew assessment — grades team capability against contract requirements
         services.AddSingleton<CrewAssessmentService>();
