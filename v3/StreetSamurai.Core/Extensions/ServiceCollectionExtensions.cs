@@ -310,6 +310,16 @@ public static class ServiceCollectionExtensions
         services.AddScoped<ConversationalWriterService>();
         services.AddSingleton<IBookReviewService, BookReviewService>();
         services.AddSingleton<BookExportService>();
+
+        // Episode (bedtime adventures) — seed → LLM → beats → TTS → audio files
+        services.AddSingleton<EpisodeSeedService>();
+        services.AddSingleton<EpisodeGeneratorService>();
+        services.AddSingleton<EpisodeAudioService>();
+        services.AddSingleton<EpisodeExportService>();
+        services.AddSingleton<ChapterRecordingService>();
+        services.AddSingleton<StrandMigrationService>();
+        services.AddSingleton<StrandWorkbenchService>();
+        services.AddSingleton<BeatContextService>();
         services.AddSingleton<WritingQualityService>();
         services.AddSingleton(sp => new MotifService(
             sp.GetRequiredService<SettingsKvStore>(),

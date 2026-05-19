@@ -140,6 +140,11 @@ public class SettingsService : IDisposable
     public double TtsStability { get => data.TtsStability; set { data.TtsStability = value; ScheduleSave(); } }
     public double TtsSimilarityBoost { get => data.TtsSimilarityBoost; set { data.TtsSimilarityBoost = value; ScheduleSave(); } }
     public double TtsStyle { get => data.TtsStyle; set { data.TtsStyle = value; ScheduleSave(); } }
+    /// <summary>When the configured model is v3-class (audio-tag capable),
+    /// inject inline tags like <c>[whispering]</c> / <c>[softly]</c> based
+    /// on each beat's EmotionalTone / FacetTag. Off to fall back to plain
+    /// voice_settings tuning only.</summary>
+    public bool TtsUseAudioTags { get => data.TtsUseAudioTags; set { data.TtsUseAudioTags = value; ScheduleSave(); } }
     public string OpenAiApiKey
     {
         get => ResolveApiKey("SS_OPENAI_API_KEY", "openai", data.OpenAiApiKey);
@@ -393,6 +398,7 @@ public class SettingsService : IDisposable
         public double TtsStability { get; set; } = 0.5;
         public double TtsSimilarityBoost { get; set; } = 0.75;
         public double TtsStyle { get; set; } = 0.0;
+        public bool TtsUseAudioTags { get; set; } = true;
         public string OpenAiApiKey { get; set; } = "";
         public string OpenAiModel { get; set; } = "gpt-4.1-mini";
         public string ActiveLlmProvider { get; set; } = "claude";

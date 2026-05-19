@@ -333,6 +333,31 @@ if (args.Contains("--seed"))
     return;
 }
 
+// CLI mode: generate a new strand from a user-supplied seed.
+//   ss --write-strand --seed "..." [--voice id] [--kind episode] [--title "..."] [--narrate]
+if (args.Contains("--write-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await WriteStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: migrate legacy Books/Chapters/ChapterBeats/Episodes/EpisodeBeats
+// data into the unified Beat/Strand schema. Idempotent — safe to re-run.
+//   ss --migrate-strands
+if (args.Contains("--migrate-strands"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    var svc = cliApp.Services.GetRequiredService<StrandMigrationService>();
+    var report = await svc.MigrateAllAsync();
+    Console.WriteLine($"[migrate-strands] Books={report.BooksAdded} Chapters={report.ChaptersAdded} Beats={report.BeatsAdded} Episodes={report.EpisodesAdded} Standalone={report.StandaloneBeatsAdded} Junctions={report.JunctionRowsAdded}");
+    return;
+}
+
 // CLI mode: report flat-vs-bridge drift for a denormalised column.
 //   ss --audit-denorm Entities.TagsJson
 //   ss --audit-denorm Characters.Affiliation
@@ -550,6 +575,181 @@ app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddAdditionalAssemblies(typeof(StreetSamurai.Shared.Components.Pages.Home).Assembly);
+
+// Episode audio: serve the per-beat MP3 files the /listen page plays.
+// File path is engine/audio/episodes/{episodeId}/{index:D3}.mp3 — bound to the
+// EpisodeAudioService's GetAudioRoot() so the two stay in sync.
+// Episode artifact endpoints — keyed by Guid (UUIDv7) for stable URLs.
+// Each endpoint resolves the slug from the DB (one AsNoTracking query) then
+// joins with EpisodeAudioService's path helpers to find the file on disk.
+static async Task<string?> ResolveSlugAsync(
+    Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory,
+    Guid episodeId)
+{
+    await using var db = await dbFactory.CreateDbContextAsync();
+    var slug = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
+        .FirstOrDefaultAsync(
+            Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
+                .AsNoTracking(db.Episodes)
+                .Where(e => e.Id == episodeId)
+                .Select(e => e.Slug));
+    if (string.IsNullOrWhiteSpace(slug)) return null;
+    return slug;
+}
+
+app.MapGet("/api/episodes/{episodeId:guid}/audio/{index:int}", async (
+    Guid episodeId,
+    int index,
+    StreetSamurai.Core.Services.EpisodeAudioService audio,
+    Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory,
+    HttpContext ctx) =>
+{
+    var slug = await ResolveSlugAsync(dbFactory, episodeId);
+    if (slug is null) { ctx.Response.StatusCode = 404; return; }
+    var audioDir = System.IO.Path.Combine(audio.GetEpisodeRoot(slug), "audio");
+    // Probe lossless first, then MP3 fallback.
+    var wavPath = System.IO.Path.Combine(audioDir, $"{index:D3}.wav");
+    var mp3Path = System.IO.Path.Combine(audioDir, $"{index:D3}.mp3");
+    if (System.IO.File.Exists(wavPath))
+    {
+        ctx.Response.ContentType = "audio/wav";
+        await ctx.Response.SendFileAsync(wavPath);
+        return;
+    }
+    if (System.IO.File.Exists(mp3Path))
+    {
+        ctx.Response.ContentType = "audio/mpeg";
+        await ctx.Response.SendFileAsync(mp3Path);
+        return;
+    }
+    ctx.Response.StatusCode = 404;
+}).RequireAuthorization();
+
+app.MapGet("/api/episodes/{episodeId:guid}/script.md", async (
+    Guid episodeId,
+    StreetSamurai.Core.Services.EpisodeAudioService audio,
+    Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory,
+    HttpContext ctx) =>
+{
+    var slug = await ResolveSlugAsync(dbFactory, episodeId);
+    if (slug is null) { ctx.Response.StatusCode = 404; return; }
+    var path = System.IO.Path.Combine(audio.GetEpisodeRoot(slug), "script.md");
+    if (!System.IO.File.Exists(path)) { ctx.Response.StatusCode = 404; return; }
+    ctx.Response.ContentType = "text/markdown; charset=utf-8";
+    ctx.Response.Headers.ContentDisposition = $"attachment; filename=\"{slug}.md\"";
+    await ctx.Response.SendFileAsync(path);
+}).RequireAuthorization();
+
+app.MapGet("/api/episodes/{episodeId:guid}/script.pdf", async (
+    Guid episodeId,
+    StreetSamurai.Core.Services.EpisodeAudioService audio,
+    Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory,
+    HttpContext ctx) =>
+{
+    var slug = await ResolveSlugAsync(dbFactory, episodeId);
+    if (slug is null) { ctx.Response.StatusCode = 404; return; }
+    var path = System.IO.Path.Combine(audio.GetEpisodeRoot(slug), "script.pdf");
+    if (!System.IO.File.Exists(path)) { ctx.Response.StatusCode = 404; return; }
+    ctx.Response.ContentType = "application/pdf";
+    ctx.Response.Headers.ContentDisposition = $"attachment; filename=\"{slug}.pdf\"";
+    await ctx.Response.SendFileAsync(path);
+}).RequireAuthorization();
+
+app.MapGet("/api/episodes/{episodeId:guid}/episode.wav", async (
+    Guid episodeId,
+    StreetSamurai.Core.Services.EpisodeAudioService audio,
+    Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory,
+    HttpContext ctx) =>
+{
+    var slug = await ResolveSlugAsync(dbFactory, episodeId);
+    if (slug is null) { ctx.Response.StatusCode = 404; return; }
+    var dir = audio.GetEpisodeRoot(slug);
+    // The combined export lands as .wav (lossless tier) or .mp3 (MP3 tier).
+    // The URL keeps its historical name but we serve whichever exists.
+    var wavPath = System.IO.Path.Combine(dir, "episode.wav");
+    var mp3Path = System.IO.Path.Combine(dir, "episode.mp3");
+    if (System.IO.File.Exists(wavPath))
+    {
+        ctx.Response.ContentType = "audio/wav";
+        ctx.Response.Headers.ContentDisposition = $"attachment; filename=\"{slug}.wav\"";
+        await ctx.Response.SendFileAsync(wavPath);
+        return;
+    }
+    if (System.IO.File.Exists(mp3Path))
+    {
+        ctx.Response.ContentType = "audio/mpeg";
+        ctx.Response.Headers.ContentDisposition = $"attachment; filename=\"{slug}.mp3\"";
+        await ctx.Response.SendFileAsync(mp3Path);
+        return;
+    }
+    ctx.Response.StatusCode = 404;
+}).RequireAuthorization();
+
+// ── Unified strand audio endpoints ───────────────────────────────────────
+// Per-beat audio served from engine/strands/{slug}/audio/{beatId}.{wav|mp3}.
+// File names are Beat.Id ("N" format) so a beat in multiple strands has one
+// rendering — the file path is keyed on the beat, not the strand.
+app.MapGet("/api/strands/{strandId:guid}/beat/{beatId:guid}/audio", async (
+    Guid strandId,
+    Guid beatId,
+    StreetSamurai.Core.Services.StrandWorkbenchService workbench,
+    Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory,
+    HttpContext ctx) =>
+{
+    await using var db = await dbFactory.CreateDbContextAsync();
+    var beat = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
+        .FirstOrDefaultAsync(
+            Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AsNoTracking(db.Beats)
+                .Where(b => b.Id == beatId));
+    if (beat?.AudioPath is null) { ctx.Response.StatusCode = 404; return; }
+    var full = workbench.ResolveAudioFile(beat.AudioPath);
+    if (!System.IO.File.Exists(full)) { ctx.Response.StatusCode = 404; return; }
+    ctx.Response.ContentType = beat.AudioPath.EndsWith(".mp3", StringComparison.OrdinalIgnoreCase) ? "audio/mpeg" : "audio/wav";
+    await ctx.Response.SendFileAsync(full);
+}).RequireAuthorization();
+
+app.MapGet("/api/strands/{strandId:guid}/strand.wav", async (
+    Guid strandId,
+    StreetSamurai.Core.Services.StrandWorkbenchService workbench,
+    Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory,
+    HttpContext ctx) =>
+{
+    await using var db = await dbFactory.CreateDbContextAsync();
+    var strand = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
+        .FirstOrDefaultAsync(
+            Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AsNoTracking(db.Strands)
+                .Where(s => s.Id == strandId));
+    if (strand is null) { ctx.Response.StatusCode = 404; return; }
+    var dir = workbench.GetStrandRoot(strand.Slug);
+    var wavPath = System.IO.Path.Combine(dir, "strand.wav");
+    var mp3Path = System.IO.Path.Combine(dir, "strand.mp3");
+    // Legacy fallback for content migrated from the Episode era — the
+    // combined audio still lives under engine/episodes/{slug}/episode.{wav|mp3}
+    // until the strand is re-narrated.
+    if (!System.IO.File.Exists(wavPath) && !System.IO.File.Exists(mp3Path))
+    {
+        var legacyDir = System.IO.Path.Combine(workbench.GetAudioRoot(), "..", "episodes", strand.Slug);
+        var legacyWav = System.IO.Path.Combine(legacyDir, "episode.wav");
+        var legacyMp3 = System.IO.Path.Combine(legacyDir, "episode.mp3");
+        if (System.IO.File.Exists(legacyWav)) wavPath = legacyWav;
+        if (System.IO.File.Exists(legacyMp3)) mp3Path = legacyMp3;
+    }
+    if (System.IO.File.Exists(wavPath))
+    {
+        ctx.Response.ContentType = "audio/wav";
+        ctx.Response.Headers.ContentDisposition = $"attachment; filename=\"{strand.Slug}.wav\"";
+        await ctx.Response.SendFileAsync(wavPath);
+        return;
+    }
+    if (System.IO.File.Exists(mp3Path))
+    {
+        ctx.Response.ContentType = "audio/mpeg";
+        ctx.Response.Headers.ContentDisposition = $"attachment; filename=\"{strand.Slug}.mp3\"";
+        await ctx.Response.SendFileAsync(mp3Path);
+        return;
+    }
+    ctx.Response.StatusCode = 404;
+}).RequireAuthorization();
 
 // Login endpoint — form POST from Login.razor, with antiforgery + open redirect + rate limiting
 app.MapPost("/api/auth/login", async (HttpContext ctx, AuthService auth, IAntiforgery antiforgery) =>

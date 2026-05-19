@@ -165,7 +165,14 @@ public class ChapterBeat
     public long Id { get; set; }
     public Guid BeatGuid      { get; set; }
     public Guid ChapterId     { get; set; }
+
+    /// <summary>Stable index issued at creation; embedded in audio file paths.</summary>
     public int Index          { get; set; }
+
+    /// <summary>Mutable ordering. Insertions / splits write here without
+    /// renumbering siblings. UI sorts by SortKey ASC.</summary>
+    public double SortKey     { get; set; }
+
     public string Title       { get; set; } = "";
     public string Synopsis    { get; set; } = "";
     public string Text        { get; set; } = "";
@@ -174,8 +181,21 @@ public class ChapterBeat
     public string SceneType   { get; set; } = "scene";
     public string FacetTag    { get; set; } = "";
 
+    /// <summary>"tense" / "wry" / "tender" / "violent" / "quiet" — optional tone hint.</summary>
+    public string? EmotionalTone { get; set; }
+
+    /// <summary>"clipped" / "languorous" / "staccato" / "flowing" — optional cadence hint.</summary>
+    public string? PaceHint { get; set; }
+
     /// <summary>23rd-century in-world date the beat takes place on (when known).</summary>
     public DateTime? InWorldDate { get; set; }
+
+    // ── Recording state ──────────────────────────────────────────────
+    public string? AudioPath     { get; set; }
+    public double? DurationSec   { get; set; }
+    public DateTime? NarratedAt  { get; set; }
+    public string? LastRequestId { get; set; }
+    public bool WasCorrected     { get; set; }
 
     public Chapter? Chapter   { get; set; }
 }

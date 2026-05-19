@@ -136,3 +136,56 @@
 2026-05-16 20:42:05.029 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.143) method 'tools/list' request handler called.
 2026-05-16 20:42:05.036 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.143) method 'tools/list' request handler completed in 7.4627ms.
 2026-05-16 20:42:43.714 -05:00 [INF] GlobalSearch index warmed in 38712 ms
+2026-05-16 20:44:05.007 -05:00 [INF] WorldTickService heartbeat (disabled): tick #1
+2026-05-16 20:44:05.062 -05:00 [INF] Continuity long-sweep (full): 2 contradiction group(s)
+2026-05-16 20:49:05.007 -05:00 [INF] WorldTickService heartbeat (disabled): tick #2
+2026-05-16 20:54:05.013 -05:00 [INF] WorldTickService heartbeat (disabled): tick #3
+2026-05-16 20:59:05.024 -05:00 [INF] WorldTickService heartbeat (disabled): tick #4
+2026-05-16 21:04:05.018 -05:00 [INF] WorldTickService heartbeat (disabled): tick #5
+2026-05-16 21:09:05.024 -05:00 [INF] WorldTickService heartbeat (disabled): tick #6
+2026-05-16 21:14:05.020 -05:00 [INF] WorldTickService heartbeat (disabled): tick #7
+2026-05-16 21:19:05.021 -05:00 [INF] WorldTickService heartbeat (disabled): tick #8
+2026-05-16 21:24:05.019 -05:00 [INF] WorldTickService heartbeat (disabled): tick #9
+2026-05-16 21:29:05.016 -05:00 [INF] WorldTickService heartbeat (disabled): tick #10
+2026-05-16 21:34:05.024 -05:00 [INF] WorldTickService heartbeat (disabled): tick #11
+2026-05-16 21:39:05.015 -05:00 [INF] WorldTickService heartbeat (disabled): tick #12
+2026-05-16 21:44:05.014 -05:00 [INF] WorldTickService heartbeat (disabled): tick #13
+2026-05-16 21:44:05.697 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-16 21:45:21.188 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.143) method 'tools/call' request handler called.
+2026-05-16 21:45:21.231 -05:00 [INF] "get_book" completed. IsError = false.
+2026-05-16 21:45:21.233 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.143) method 'tools/call' request handler completed in 45.0125ms.
+2026-05-16 21:46:00.176 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.143) method 'tools/call' request handler called.
+2026-05-16 21:46:00.188 -05:00 [INF] "get_chapter" completed. IsError = false.
+2026-05-16 21:46:00.189 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.143) method 'tools/call' request handler completed in 12.6261ms.
+2026-05-16 21:49:05.007 -05:00 [INF] WorldTickService heartbeat (disabled): tick #14
+2026-05-16 21:54:05.012 -05:00 [INF] WorldTickService heartbeat (disabled): tick #15
+2026-05-16 21:59:05.019 -05:00 [INF] WorldTickService heartbeat (disabled): tick #16
+2026-05-16 22:04:05.013 -05:00 [INF] WorldTickService heartbeat (disabled): tick #17
+2026-05-16 22:09:05.016 -05:00 [INF] WorldTickService heartbeat (disabled): tick #18
+2026-05-16 22:14:05.006 -05:00 [INF] WorldTickService heartbeat (disabled): tick #19
+2026-05-16 22:19:05.017 -05:00 [INF] WorldTickService heartbeat (disabled): tick #20
+2026-05-16 22:24:05.013 -05:00 [INF] WorldTickService heartbeat (disabled): tick #21
+2026-05-16 22:29:05.016 -05:00 [INF] WorldTickService heartbeat (disabled): tick #22
+2026-05-16 22:34:05.012 -05:00 [INF] WorldTickService heartbeat (disabled): tick #23
+2026-05-16 22:39:05.018 -05:00 [INF] WorldTickService heartbeat (disabled): tick #24
+2026-05-16 22:44:05.027 -05:00 [INF] WorldTickService heartbeat (disabled): tick #25
+2026-05-16 22:44:05.691 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-16 22:49:05.019 -05:00 [INF] WorldTickService heartbeat (disabled): tick #26
+2026-05-16 22:54:05.006 -05:00 [INF] WorldTickService heartbeat (disabled): tick #27
+2026-05-16 22:59:05.010 -05:00 [INF] WorldTickService heartbeat (disabled): tick #28
+2026-05-16 23:04:05.011 -05:00 [INF] WorldTickService heartbeat (disabled): tick #29
+2026-05-16 23:09:05.017 -05:00 [INF] WorldTickService heartbeat (disabled): tick #30
+2026-05-16 23:14:05.020 -05:00 [INF] WorldTickService heartbeat (disabled): tick #31
+2026-05-16 23:19:05.017 -05:00 [INF] WorldTickService heartbeat (disabled): tick #32
+2026-05-16 23:22:01.696 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.143) method 'tools/call' request handler called.
+2026-05-16 23:22:01.711 -05:00 [INF] "get_character" completed. IsError = false.
+2026-05-16 23:22:01.713 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.143) method 'tools/call' request handler completed in 16.6755ms.
+2026-05-16 23:24:05.009 -05:00 [INF] WorldTickService heartbeat (disabled): tick #33
+2026-05-16 23:29:05.021 -05:00 [INF] WorldTickService heartbeat (disabled): tick #34
+2026-05-16 23:34:05.018 -05:00 [INF] WorldTickService heartbeat (disabled): tick #35
+2026-05-16 23:39:05.012 -05:00 [INF] WorldTickService heartbeat (disabled): tick #36
+2026-05-16 23:44:05.021 -05:00 [INF] WorldTickService heartbeat (disabled): tick #37
+2026-05-16 23:44:05.779 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-16 23:49:05.018 -05:00 [INF] WorldTickService heartbeat (disabled): tick #38
+2026-05-16 23:54:05.014 -05:00 [INF] WorldTickService heartbeat (disabled): tick #39
+2026-05-16 23:59:05.012 -05:00 [INF] WorldTickService heartbeat (disabled): tick #40

@@ -20,6 +20,7 @@
 @inject ToastNotifier Toast
 @inject NavigationManager Nav
 @inject IJSRuntime JS
+@inject ChapterRecordingService Recordings
 
 <div class="write-shell @(focusModeClass) @(showFindings && chapter != null ? "with-findings" : "")">
     @if (book == null)
@@ -303,6 +304,11 @@
                             <span class="badge bg-dark ms-1">@findings.Count</span>
                         }
                     </button>
+                    <button class="btn btn-sm @(showRecording ? "btn-info" : "btn-outline-secondary")"
+                            title="Listen / Record — per-beat narration controls for this chapter"
+                            @onclick="ToggleRecording">
+                        <i class="bi bi-mic-fill"></i>
+                    </button>
                     <button class="btn btn-sm btn-outline-info" @onclick="SaveChapter"
                             disabled="@(!pageDirty || saving)">
                         <i class="bi bi-floppy"></i> Save
@@ -331,6 +337,13 @@
                         </a>
                     }
                 </div>
+
+                @if (showRecording && chapter != null && book != null)
+                {
+                    <ChapterRecordingPanel BookId="@book.Id"
+                                           ChapterId="@chapter.Id"
+                                           ChapterNumber="@(book.ChapterIds.IndexOf(chapter.Id) + 1)" />
+                }
 
                 @if (!readingMode)
                 {
@@ -607,6 +620,7 @@
     private bool readingMode;
     private bool findOpen;
     private bool showFindings;
+    private bool showRecording;
     private IReadOnlyList<Finding> findings = Array.Empty<Finding>();
     // Per-beat expand state
     private string? beatExpanding;
@@ -717,9 +731,21 @@
 
     protected override void OnInitialized()
     {
-        locationGuard = Nav.RegisterLocationChangingHandler(OnLocationChanging);
-        autosaveTimer = new System.Threading.Timer(_ => InvokeAsync(AutosaveTick),
-            null, TimeSpan.FromMilliseconds(1500), TimeSpan.FromMilliseconds(1500));
+        // Unified-strand cutover: /write* routes funnel to /strand/{id} now.
+        // The migration preserved the Chapter.Id → Strand.Id mapping, so a
+        // direct hop with the chapter id resolves the same data on the new
+        // surface. /write with no id lands on the strand index.
+        if (!string.IsNullOrEmpty(ChapterId))
+        {
+            Nav.NavigateTo($"/strand/{ChapterId}", replace: true);
+            return;
+        }
+        if (!string.IsNullOrEmpty(BookId))
+        {
+            Nav.NavigateTo($"/strand/{BookId}", replace: true);
+            return;
+        }
+        Nav.NavigateTo("/strands", replace: true);
     }
 
     protected override void OnParametersSet()
@@ -1122,6 +1148,7 @@
     private void ToggleReadingMode() { readingMode = !readingMode; if (readingMode) findOpen = false; }
     private void ToggleFind()        { findOpen = !findOpen; findStatus = null; }
     private void ToggleFindings()    { showFindings = !showFindings; if (showFindings) LoadFindings(); }
+    private void ToggleRecording()   { showRecording = !showRecording; }
 
     // ── Beat workflow ──────────────────────────────────────────────────────
     // Each ChapterBeat holds a Synopsis (the user-authored blurb — "Kyle walks
@@ -1409,6 +1436,12 @@
             pageDirty = false;
             try { await JS.InvokeVoidAsync("writeInterop.writer.localClear", chapter.Id); } catch { }
             await SyncDirty(false);
+
+            // Desync sweep: per Legion-panel consensus (4/4 high tier), every
+            // chapter save invalidates any drifted recording-beat audio. Cheap
+            // hash-compare; no-op when nothing changed. Fire-and-forget so the
+            // save UI doesn't wait on it.
+            _ = Task.Run(() => Recordings.SyncRecordingAfterChapterSaveAsync(chapter.Id));
         }
         finally
         {
