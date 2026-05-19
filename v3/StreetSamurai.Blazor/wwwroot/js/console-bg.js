@@ -3489,13 +3489,24 @@ window.consoleBg = (function () {
         el.style.top  = fp[1] + '%';
         host.appendChild(el);
 
-        var text = pick(FRAGS);
-        var idx  = 0;
-        var cur  = '';
+        var text      = pick(FRAGS);
+        var idx       = 0;
+        var msPerChar = rand(1, 3);
+        var lastTs    = null;
 
-        var typeTimer = setInterval(function () {
+        // Drive typing on rAF rather than a 1-3ms setInterval. Background tabs
+        // throttle setTimeout/setInterval to ~1Hz (Chrome intensive throttling can
+        // stretch that to a minute+), which used to leave fragments stuck mid-type
+        // for many seconds while the tick loop kept spawning new ones. rAF is fully
+        // paused while the tab is hidden, so typing simply resumes when you return.
+        function frame(ts) {
+            if (lastTs == null) lastTs = ts;
+            var dt = ts - lastTs;
+            lastTs = ts;
+            var add = Math.max(1, Math.floor(dt / msPerChar));
+            idx = Math.min(idx + add, text.length);
+            el.textContent = text.slice(0, idx);
             if (idx >= text.length) {
-                clearInterval(typeTimer);
                 setTimeout(function () {
                     el.classList.add('cbg-frag--out');
                     setTimeout(function () {
@@ -3504,9 +3515,9 @@ window.consoleBg = (function () {
                 }, rand(18, 75));
                 return;
             }
-            cur += text[idx++];
-            el.textContent = cur;
-        }, rand(1, 3));
+            requestAnimationFrame(frame);
+        }
+        requestAnimationFrame(frame);
     }
 
     // ── Geometry schematic window ────────────────────────────────────────────
@@ -6167,6 +6178,11 @@ window.consoleBg = (function () {
 
     function tick() {
         if (!getHost()) { tickTimer = null; return; }
+        // Stop spawning when the tab is hidden — background timers get throttled to
+        // ~1Hz (and worse under Chrome intensive throttling), which used to let
+        // effects pile up faster than they could despawn. visibilitychange below
+        // restarts the loop when the tab is visible again.
+        if (document.hidden) { tickTimer = null; return; }
         var r = Math.random(), t = 0;
         if      (FX_ERROR    && r < (t += RATE_ERROR))    spawnError();
         else if (FX_WARN     && r < (t += RATE_WARN))     spawnWarning();
@@ -6197,6 +6213,12 @@ window.consoleBg = (function () {
     } else {
         start();
     }
+
+    // Restart whenever the tab becomes visible again (tick() bails out on
+    // document.hidden to prevent throttled-timer pile-up).
+    document.addEventListener('visibilitychange', function () {
+        if (!document.hidden) start();
+    });
 
     // Restart whenever .console-bg-host is added back to the DOM (Blazor navigation)
     new MutationObserver(function (mutations) {
