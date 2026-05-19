@@ -1822,11 +1822,6 @@ textarea.auto-grow {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 110px;
-    height: 110px;
-    flex: 0 0 110px;
-    aspect-ratio: 1 / 1;
-    box-sizing: border-box;
     background: #161b22;
     border: 1px solid #30363d;
     border-radius: 8px;
@@ -1836,6 +1831,9 @@ textarea.auto-grow {
     gap: 6px;
     transition: background 0.12s, border-color 0.12s;
     position: relative;
+    /* <button> elements get a UA font by default — force Outfit (host
+       fallback chain) so tile labels match the rest of the page. */
+    font-family: 'Outfit', system-ui, sans-serif;
 }
 .board-tile:hover { background: #1c2128; border-color: #dc3545; color: #fff; text-decoration: none; }
 .board-tile-viz .board-tile-icon { color: #58a6ff; }
@@ -1845,25 +1843,25 @@ textarea.auto-grow {
 .board-tile-tool .board-tile-icon { color: #3fb950; }
 .board-tile-tool:hover { border-color: #3fb950; }
 .board-tile-icon { font-size: 1.5rem; color: #dc3545; }
-.board-tile-name { font-size: 0.8rem; font-weight: 500; text-align: center; line-height: 1.3; }
+.board-tile-name {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3;
+    font-family: 'Outfit';
+}
 .board-tile-count { position: absolute; bottom: 2px; right: 10px; font-size: 0.65rem; color: #8b949e; }
 
-/* == Scan-line glitch boxes (scan-glitch.js) =========================
-   Single blurry unicode glyphs that drift in at random vw/vh, hold,
-   then fade out. The JS sets left/top inline as vw/vh; that requires
-   position:fixed (without it, the values are ignored and every box
-   stacks at the left edge of the document flow). */
-.sl-glitch-box {
+/* == Pin-when-short footer (pin-footer.js) ===========================
+   Hosts opt in by giving their footer (or any other element) the class
+   `pin-when-short`. The companion JS toggles `.pinned` whenever the
+   document is shorter than the viewport. */
+.pin-when-short.pinned {
     position: fixed;
-    pointer-events: none;
-    color: rgba(220, 225, 230, 0.42);
-    font-family: 'Courier New', Courier, monospace;
-    z-index: 0;
-    opacity: 1;
-    transition: opacity 0.62s ease;
-    user-select: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
-.sl-glitch-box--out { opacity: 0; }
 
 /* == Tab control (mindattic.com pattern) ============================
    Tiles act as tabs. A single panel below the grid shows the active
