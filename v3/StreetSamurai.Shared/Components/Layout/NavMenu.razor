@@ -64,7 +64,10 @@
         <button class="topnav-link" @onclick="OpenSearch" title="Search">
             <i class="bi bi-search"></i>
         </button>
-        <a class="topnav-link" href="/write" title="Write">
+        <a class="topnav-link" href="/strands" title="Strands — writer + recorder + listener">
+            <i class="bi bi-headphones"></i>
+        </a>
+        <a class="topnav-link" href="/strands" title="Strands — writer + recorder + listener">
             <i class="bi bi-pencil-square"></i>
         </a>
         <a class="topnav-link" href="/timeline" title="Story timeline">
@@ -93,6 +96,9 @@
                        value="@searchInput" @oninput="OnSearchInput" @onkeydown="HandleKey" />
             </div>
             <div class="topnav-controls d-flex align-items-center gap-1">
+                <a class="topnav-link" href="/listen" title="Tonight's adventure">
+                    <i class="bi bi-headphones"></i>
+                </a>
                 <a class="topnav-link" href="/write" title="Write">
                     <i class="bi bi-pencil-square"></i>
                 </a>

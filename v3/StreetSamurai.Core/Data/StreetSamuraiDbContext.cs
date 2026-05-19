@@ -38,6 +38,19 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<EntityTag>       EntityTags       => Set<EntityTag>();
     public DbSet<FindingRow>      Findings         => Set<FindingRow>();
 
+    // Episodic adventures — folk-hero Kyle, bedtime-listenable, scoreable
+    public DbSet<Episode>            Episodes            => Set<Episode>();
+    public DbSet<EpisodeBeat>        EpisodeBeats        => Set<EpisodeBeat>();
+    public DbSet<EpisodeCorrection>  EpisodeCorrections  => Set<EpisodeCorrection>();
+    public DbSet<EpisodeSurvey>      EpisodeSurveys      => Set<EpisodeSurvey>();
+
+    // Unified storytelling schema — Beat = atom of prose+audio, Strand =
+    // ordered composition (replaces Book/Chapter/Episode), StrandBeat =
+    // junction. The whole system migrates onto these three.
+    public DbSet<Beat>               Beats               => Set<Beat>();
+    public DbSet<Strand>             Strands             => Set<Strand>();
+    public DbSet<StrandBeat>         StrandBeats         => Set<StrandBeat>();
+
     // Character subtype + children — fully columnar (no DataJson on this branch)
     public DbSet<Character>                       Characters                    => Set<Character>();
     public DbSet<CharacterAlias>                  CharacterAliases              => Set<CharacterAlias>();
@@ -231,6 +244,80 @@ public class StreetSamuraiDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder b)
     {
         base.OnModelCreating(b);
+
+        // ── Episode (bedtime-adventure domain) ──────────────────────────────
+        b.Entity<Episode>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Seed).HasMaxLength(1000).IsRequired();
+            e.Property(x => x.Title).HasMaxLength(400).IsRequired();
+            e.Property(x => x.VoiceId).HasMaxLength(64);
+            e.Property(x => x.Status).HasMaxLength(32).IsRequired();
+            e.HasIndex(x => x.StartedAt);
+            e.HasIndex(x => x.Status);
+        });
+        b.Entity<EpisodeBeat>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Episode).WithMany(x => x.Beats)
+                .HasForeignKey(x => x.EpisodeId).OnDelete(DeleteBehavior.Cascade);
+            e.Property(x => x.AudioPath).HasMaxLength(400);
+            e.HasIndex(x => new { x.EpisodeId, x.Index }).IsUnique();
+        });
+        b.Entity<EpisodeCorrection>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Episode).WithMany(x => x.Corrections)
+                .HasForeignKey(x => x.EpisodeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.EpisodeId);
+            e.HasIndex(x => x.Applied);
+        });
+        b.Entity<EpisodeSurvey>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.Episode).WithOne(x => x.Survey!)
+                .HasForeignKey<EpisodeSurvey>(x => x.EpisodeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.EpisodeId).IsUnique();
+        });
+
+        // ── Unified strand schema ───────────────────────────────────────────
+        b.Entity<Beat>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Text).IsRequired();
+            e.Property(x => x.SceneType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Slug).HasMaxLength(200);
+            e.Property(x => x.BeatTitle).HasMaxLength(400);
+            e.Property(x => x.AudioPath).HasMaxLength(400);
+            e.Property(x => x.TextHash).HasMaxLength(80);
+            e.Property(x => x.LastRequestId).HasMaxLength(120);
+            e.HasIndex(x => x.Slug);
+        });
+        b.Entity<Strand>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Slug).HasMaxLength(200).IsRequired();
+            e.Property(x => x.Title).HasMaxLength(400).IsRequired();
+            e.Property(x => x.Kind).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Status).HasMaxLength(40).IsRequired();
+            e.Property(x => x.VoiceId).HasMaxLength(80);
+            e.Property(x => x.CombinedAudioPath).HasMaxLength(400);
+            e.HasIndex(x => x.Slug).IsUnique();
+            e.HasIndex(x => x.Kind);
+            e.HasIndex(x => new { x.ParentStrandId, x.SortKey });
+            e.HasOne(x => x.ParentStrand).WithMany(x => x.Children)
+                .HasForeignKey(x => x.ParentStrandId).OnDelete(DeleteBehavior.Restrict);
+        });
+        b.Entity<StrandBeat>(e =>
+        {
+            e.HasKey(x => new { x.StrandId, x.BeatId });
+            e.HasOne(x => x.Strand).WithMany(x => x.StrandBeats)
+                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Beat).WithMany(x => x.StrandBeats)
+                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.StrandId, x.SortKey });
+            e.HasIndex(x => x.BeatId);
+        });
 
         // ── Entity (universal) ───────────────────────────────────────────────
         b.Entity<Entity>(e =>

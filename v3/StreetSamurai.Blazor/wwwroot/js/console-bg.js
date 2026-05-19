@@ -3227,11 +3227,21 @@ window.consoleBg = (function () {
     // randTop: unrestricted — effects can spawn anywhere including over tiles
     function randTop(lo, hi) { return rand(lo, hi); }
 
-    // ── Tile keepout zone — quadrilateral covering the dashboard tile container ──
-    // No effect should spawn inside this rect. Computed live each call so it adapts to
-    // resizes / responsive layout / page changes (.home-content on Home, .board-grid elsewhere).
+    // ── Effect keepout zones — rects no effect should spawn behind ───────────────
+    // Computed live each call so it adapts to resizes / responsive layout changes.
+    //
+    // Baked-in selectors (any host gets these for free):
+    //   .cbg-keepout     — opt-in marker; add to any container you want protected
+    //   main             — top-level page content (mindattic.com #content lives here)
+    //   .home-content    — StreetSamurai Home page wrapper
+    //   .board-grid      — any tab/tile board
+    //
+    // Hosts can extend the list via window.__cbgKeepoutSelectors (CSS selector
+    // string, comma-separated).
     function getKeepoutRects() {
-        var sel = document.querySelectorAll('.home-content, .board-grid');
+        var extra = (typeof window !== 'undefined' && window.__cbgKeepoutSelectors) || '';
+        var selector = '.cbg-keepout, main, .home-content, .board-grid' + (extra ? ', ' + extra : '');
+        var sel = document.querySelectorAll(selector);
         var rects = [];
         for (var i = 0; i < sel.length; i++) {
             var r = sel[i].getBoundingClientRect();
@@ -4176,7 +4186,10 @@ window.consoleBg = (function () {
 
     // ── Scrolling texture layer ─────────────────────────────────────────────
 
-    var TEX_SRCS = [
+    // Hosts can override these by defining window.__cbgCircuitboardSrcs = [a, b, c]
+    // before this script loads. mindattic.com inlines them as base64 data URIs;
+    // StreetSamurai leaves the default (/api/media/... served by MediaController).
+    var TEX_SRCS = (typeof window !== 'undefined' && window.__cbgCircuitboardSrcs) || [
         '/api/media/circuitboard.00.png',
         '/api/media/circuitboard.01.png',
         '/api/media/circuitboard.02.png',

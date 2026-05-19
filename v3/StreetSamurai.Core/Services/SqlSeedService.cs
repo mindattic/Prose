@@ -46,6 +46,19 @@ public class SqlSeedService
             ["weapon_sw_governor_2211"]      = "insert_weapon_sw_governor_2211.sql",
             ["weapon_sw_governor_2211_fks"]  = "fix_weapon_sw_governor_2211_fks.sql",
             ["performance_indexes_20260516"] = "add_performance_indexes_20260516.sql",
+            ["episode_tables_20260518"]      = "create_episode_tables_20260518.sql",
+            ["episodebeat_duration_20260518"] = "add_episodebeat_duration_20260518.sql",
+            ["episode_export_paths_20260518"] = "add_episode_export_paths_20260518.sql",
+            ["episode_slug_20260518"]         = "add_episode_slug_20260518.sql",
+            ["episode_guid_id_20260518"]      = "rebuild_episode_tables_as_guid_20260518.sql",
+            ["episode_resume_columns_20260518"] = "add_episode_resume_columns_20260518.sql",
+            ["episode_book_chapter_20260518"]   = "add_episode_book_chapter_20260518.sql",
+            ["episodebeat_sortkey_20260518"]    = "add_episodebeat_sortkey_20260518.sql",
+            ["beat_narrative_metadata_20260518"] = "add_beat_narrative_metadata_20260518.sql",
+            ["chapter_beats_table_20260518"]    = "create_chapter_beats_table_20260518.sql",
+            ["extend_chapter_beats_for_recording_20260518"] = "extend_chapter_beats_for_recording_20260518.sql",
+            ["episodebeat_hash_stale_20260518"] = "add_episodebeat_hash_stale_20260518.sql",
+            ["strand_schema_20260518"]          = "create_strand_schema_20260518.sql",
         };
 
     public class SeedResult

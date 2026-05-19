@@ -4,7 +4,7 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: process.env.CYPRESS_BASE_URL || 'http://localhost:5101',
     specPattern: 'cypress/e2e/**/*.cy.js',
-    supportFile: false,
+    supportFile: 'cypress/support/e2e.js',
     video: false,
     screenshotOnRunFailure: true,
     defaultCommandTimeout: 15000,
