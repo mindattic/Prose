@@ -1,0 +1,132 @@
+@page "/inbox"
+@attribute [Authorize(Roles = "Contributor,Administrator")]
+@using Microsoft.EntityFrameworkCore
+@using StreetSamurai.Core.Data
+@using StreetSamurai.Core.Data.Entities
+@using StreetSamurai.Shared.Services
+@inject IDbContextFactory<StreetSamuraiDbContext> DbFactory
+@inject ToastNotifier Toast
+
+<div class="container py-3">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <h4 class="text-danger mb-0"><i class="bi bi-inboxes me-2"></i>Inbox</h4>
+            <div class="text-muted small">Score what Kyle did. Unscored episodes float to the top.</div>
+        </div>
+        <a href="/listen" class="btn btn-sm btn-outline-info">
+            <i class="bi bi-headphones me-1"></i>New Adventure
+        </a>
+    </div>
+
+    @if (episodes == null)
+    {
+        <div class="text-muted">Loading…</div>
+    }
+    else if (episodes.Count == 0)
+    {
+        <div class="card bg-dark border-secondary p-5 text-center text-muted">
+            No episodes yet. <a href="/listen">Start one.</a>
+        </div>
+    }
+    else
+    {
+        foreach (var ep in episodes)
+        {
+            <div class="card bg-dark border-secondary mb-2">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="flex-grow-1">
+                            <h6 class="text-info mb-1">@ep.Title</h6>
+                            <div class="text-muted small">@ep.StartedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</div>
+                            <div class="text-light small mt-1">@ep.Seed</div>
+                        </div>
+                        <span class="badge bg-@StatusColor(ep.Status) text-uppercase">@ep.Status</span>
+                    </div>
+
+                    @* Artifact download links *@
+                    @if (!string.IsNullOrEmpty(ep.ScriptMarkdownPath) ||
+                         !string.IsNullOrEmpty(ep.ScriptPdfPath) ||
+                         !string.IsNullOrEmpty(ep.CombinedAudioPath))
+                    {
+                        <div class="d-flex gap-3 small mb-2">
+                            @if (!string.IsNullOrEmpty(ep.ScriptMarkdownPath))
+                            {
+                                <a class="text-info text-decoration-none" href="/api/episodes/@ep.Id/script.md" download>
+                                    <i class="bi bi-markdown me-1"></i>.md
+                                </a>
+                            }
+                            @if (!string.IsNullOrEmpty(ep.ScriptPdfPath))
+                            {
+                                <a class="text-info text-decoration-none" href="/api/episodes/@ep.Id/script.pdf" download>
+                                    <i class="bi bi-filetype-pdf me-1"></i>.pdf
+                                </a>
+                            }
+                            @if (!string.IsNullOrEmpty(ep.CombinedAudioPath))
+                            {
+                                <a class="text-info text-decoration-none" href="/api/episodes/@ep.Id/episode.wav" download>
+                                    <i class="bi bi-file-earmark-music me-1"></i>.wav
+                                </a>
+                            }
+                        </div>
+                    }
+
+                    @if (ep.Survey == null && ep.Status == "ready")
+                    {
+                        <SurveyEditor Episode="ep" OnSaved="ReloadAsync" />
+                    }
+                    else if (ep.Survey != null)
+                    {
+                        <div class="d-flex gap-3 small text-muted">
+                            <span>Score: <span class="text-warning">@(new string('★', ep.Survey.Score))</span></span>
+                            @if (ep.Survey.Pacing.HasValue)
+                            {
+                                <span>Pacing: @ep.Survey.Pacing/5</span>
+                            }
+                            @if (ep.Survey.Voice.HasValue)
+                            {
+                                <span>Voice: @ep.Survey.Voice/5</span>
+                            }
+                            @if (!string.IsNullOrEmpty(ep.Survey.Notes))
+                            {
+                                <span class="text-light">"@ep.Survey.Notes"</span>
+                            }
+                        </div>
+                    }
+                    else if (ep.Status == "failed" && !string.IsNullOrEmpty(ep.Error))
+                    {
+                        <div class="text-danger small">@ep.Error</div>
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    private List<Episode>? episodes;
+
+    protected override async Task OnInitializedAsync() => await ReloadAsync();
+
+    private async Task ReloadAsync()
+    {
+        await using var db = await DbFactory.CreateDbContextAsync();
+        episodes = await db.Episodes
+            .Include(e => e.Survey)
+            .OrderBy(e => e.Survey == null ? 0 : 1)  // unscored first
+            .ThenByDescending(e => e.StartedAt)
+            .AsNoTracking()
+            .Take(50)
+            .ToListAsync();
+        StateHasChanged();
+    }
+
+    private static string StatusColor(string status) => status switch
+    {
+        "ready"           => "success",
+        "ready_for_audio" => "info",
+        "narrating"       => "primary",
+        "generating"      => "primary",
+        "failed"          => "danger",
+        _                  => "secondary",
+    };
+}

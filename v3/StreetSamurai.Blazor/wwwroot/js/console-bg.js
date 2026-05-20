@@ -3477,12 +3477,18 @@ window.consoleBg = (function () {
 
     // ── Floating code fragments ─────────────────────────────────────────────
 
+    // Fragment color variants — additive classes; default (no extra class) is green.
+    var FRAG_COLOR_VARIANTS = ['', 'cbg-frag--cyan', 'cbg-frag--amber', 'cbg-frag--magenta', 'cbg-frag--white'];
+    // Plausible typo characters — adjacent-key feel plus common punctuation.
+    var FRAG_TYPO_CHARS = 'abcdefghijklmnopqrstuvwxyz_-=+*/.,;:()[]{}';
+
     function spawnFrag() {
         var host = getHost();
         if (!host) return;
 
         var el = document.createElement('div');
-        el.className = 'cbg-frag';
+        var variant = pick(FRAG_COLOR_VARIANTS);
+        el.className = 'cbg-frag' + (variant ? ' ' + variant : '');
         // Code fragments are ~280×120 estimated — pick a position that avoids the tile keepout
         var fp = safePos(280, 120, -4, 94, 2, 94);
         el.style.left = fp[0] + '%';
@@ -3490,9 +3496,34 @@ window.consoleBg = (function () {
         host.appendChild(el);
 
         var text      = pick(FRAGS);
-        var idx       = 0;
-        var msPerChar = rand(1, 3);
+        // msPerChar 1.1-3.3 — 10% slower than the previous rand(1,3).
+        var msPerChar = rand(11, 33) / 10;
         var lastTs    = null;
+
+        // Build the typing plan as a list of segments. Normal frags are one
+        // straight append; ~30% of long-enough frags get a typo + pause + backspace
+        // + resume sequence, simulating a fumble.
+        var segs = [];
+        if (text.length > 12 && Math.random() < 0.30) {
+            var mistakeAt  = rand(6, text.length - 6);
+            var garbageLen = rand(2, 5);
+            var garbage    = '';
+            for (var g = 0; g < garbageLen; g++) {
+                garbage += FRAG_TYPO_CHARS[Math.floor(Math.random() * FRAG_TYPO_CHARS.length)];
+            }
+            segs.push({ kind: 'type', str: text.slice(0, mistakeAt) });
+            segs.push({ kind: 'type', str: garbage });
+            segs.push({ kind: 'pause', ms: rand(180, 360) });
+            segs.push({ kind: 'back', count: garbageLen });
+            segs.push({ kind: 'type', str: text.slice(mistakeAt) });
+        } else {
+            segs.push({ kind: 'type', str: text });
+        }
+
+        var segIdx    = 0;   // current segment index
+        var segDone   = 0;   // chars completed within current segment (type/back) or 0 (pause)
+        var pauseEnd  = 0;   // ts at which current pause ends (0 = pause not yet entered)
+        var content   = '';  // accumulated visible text (incl. transient garbage)
 
         // Drive typing on rAF rather than a 1-3ms setInterval. Background tabs
         // throttle setTimeout/setInterval to ~1Hz (Chrome intensive throttling can
@@ -3503,10 +3534,32 @@ window.consoleBg = (function () {
             if (lastTs == null) lastTs = ts;
             var dt = ts - lastTs;
             lastTs = ts;
-            var add = Math.max(1, Math.floor(dt / msPerChar));
-            idx = Math.min(idx + add, text.length);
-            el.textContent = text.slice(0, idx);
-            if (idx >= text.length) {
+            var charsAvail = Math.max(1, Math.floor(dt / msPerChar));
+
+            while (charsAvail > 0 && segIdx < segs.length) {
+                var s = segs[segIdx];
+                if (s.kind === 'type') {
+                    var take = Math.min(charsAvail, s.str.length - segDone);
+                    content += s.str.slice(segDone, segDone + take);
+                    segDone += take;
+                    charsAvail -= take;
+                    if (segDone >= s.str.length) { segIdx++; segDone = 0; }
+                } else if (s.kind === 'back') {
+                    var take2 = Math.min(charsAvail, s.count - segDone);
+                    content = content.slice(0, content.length - take2);
+                    segDone += take2;
+                    charsAvail -= take2;
+                    if (segDone >= s.count) { segIdx++; segDone = 0; }
+                } else { // pause
+                    if (pauseEnd === 0) pauseEnd = ts + s.ms;
+                    if (ts >= pauseEnd) { segIdx++; pauseEnd = 0; }
+                    break;
+                }
+            }
+
+            el.textContent = content;
+
+            if (segIdx >= segs.length) {
                 setTimeout(function () {
                     el.classList.add('cbg-frag--out');
                     setTimeout(function () {
@@ -3630,7 +3683,15 @@ window.consoleBg = (function () {
         ['heptagram',   '7-pointed star prism', _starPoly(7,  3, 1, 0.4)],
         ['octagram',    '8-pointed star prism', _starPoly(8,  3, 1, 0.4)],
         ['nonagram',    '9-pointed star prism', _starPoly(9,  4, 1, 0.4)],
-        ['decagram',    '10-pointed star prism',_starPoly(10, 3, 1, 0.4)]
+        ['decagram',    '10-pointed star prism',_starPoly(10, 3, 1, 0.4)],
+        // ── +7 generator-based additions (paired with 3 hand-coded shapes below) ──
+        ['hendecaprism',  'hendecagonal prism',     _ngPrism(11, 1,    1)],
+        ['tridecaprism',  'tridecagonal prism',     _ngPrism(13, 1,    1)],
+        ['pentadecaprism','pentadecagonal prism',   _ngPrism(15, 1,    1)],
+        ['hendecanti',    'hendecagonal antiprism', _ngAnti (11, 1,    0.85)],
+        ['tridecanti',    'tridecagonal antiprism', _ngAnti (13, 1,    0.85)],
+        ['octapy',        'octagonal pyramid',      _ngPy   (8,  1,    1)],
+        ['decapy',        'decagonal pyramid',      _ngPy   (10, 1,    1)]
     ].forEach(function (g) {
         GEO_SHAPES[g[0]] = { label: g[1], verts: g[2].verts, edges: g[2].edges };
     });
@@ -3733,6 +3794,64 @@ window.consoleBg = (function () {
         ]
     };
 
+    // Truncated cube — each cube corner replaced by a triangle (24 verts, 36 edges).
+    GEO_SHAPES.trunccube = (function () {
+        var t = 0.333, verts = [], edges = [];
+        for (var sx = -1; sx <= 1; sx += 2)
+            for (var sy = -1; sy <= 1; sy += 2)
+                for (var sz = -1; sz <= 1; sz += 2) {
+                    verts.push([sx * t, sy, sz]);
+                    verts.push([sx, sy * t, sz]);
+                    verts.push([sx, sy, sz * t]);
+                }
+        for (var c = 0; c < 8; c++) {
+            var b = c * 3;
+            edges.push([b, b + 1]); edges.push([b + 1, b + 2]); edges.push([b + 2, b]);
+        }
+        for (var c1 = 0; c1 < 8; c1++) {
+            for (var bit = 0; bit < 3; bit++) {
+                var c2 = c1 ^ (1 << bit);
+                if (c2 > c1) {
+                    var off = (bit === 0) ? 2 : (bit === 1) ? 1 : 0;
+                    edges.push([c1 * 3 + off, c2 * 3 + off]);
+                }
+            }
+        }
+        return { label: 'truncated cube', verts: verts, edges: edges };
+    })();
+
+    // Johnson solid J11 — gyroelongated pentagonal pyramid: antiprism + apex.
+    GEO_SHAPES.gyropy = {
+        label: 'gyroelongated pyramid',
+        verts: [
+            [1, 0, 0], [0.309, 0, 0.951], [-0.809, 0, 0.588], [-0.809, 0, -0.588], [0.309, 0, -0.951],
+            [0.809, -1.2, 0.588], [-0.309, -1.2, 0.951], [-1, -1.2, 0], [-0.309, -1.2, -0.951], [0.809, -1.2, -0.588],
+            [0, 1.2, 0]
+        ],
+        edges: [
+            [0,1],[1,2],[2,3],[3,4],[4,0],
+            [5,6],[6,7],[7,8],[8,9],[9,5],
+            [0,5],[0,9],[1,5],[1,6],[2,6],[2,7],[3,7],[3,8],[4,8],[4,9],
+            [10,0],[10,1],[10,2],[10,3],[10,4]
+        ]
+    };
+
+    // Double-helix — two strands 180° apart, 8 rungs, looks DNA-ish.
+    GEO_SHAPES.dnahelix = (function () {
+        var verts = [], edges = [], n = 8, R = 0.6, dA = Math.PI / 4, h0 = -1.5, dy = 3 / (n - 1);
+        for (var i = 0; i < n; i++) {
+            var a = i * dA;
+            verts.push([R * Math.cos(a), h0 + i * dy, R * Math.sin(a)]);
+        }
+        for (var i = 0; i < n; i++) {
+            var a = i * dA + Math.PI;
+            verts.push([R * Math.cos(a), h0 + i * dy, R * Math.sin(a)]);
+        }
+        for (var i = 0; i < n - 1; i++) { edges.push([i, i + 1]); edges.push([n + i, n + i + 1]); }
+        for (var i = 0; i < n; i++) edges.push([i, n + i]);
+        return { label: 'double helix', verts: verts, edges: edges };
+    })();
+
     var GEO_KEYS = ['tetra','cube','octa','icosa','flower','metatron','prism','stella','cubocta','antiprism','vesica','spiral','lissajous','star5','torus','helix','dodeca','pyramid','pentaprism','rose','cardioid','asteroid','epicycloid','web','hexprism','hexanti','pentabipy','tribipy','trunctetra','octapyramid','rhombdo','frustum','rhombpara','starbipy',
         // 33 additions (doubles the catalog)
         'heptaprism','octaprism','nonaprism','decaprism','dodecaprism','cylinder',
@@ -3740,7 +3859,10 @@ window.consoleBg = (function () {
         'hexbipy','heptbipy','octbipy','nonabipy','decabipy',
         'pentapy','hexapy','heptapy','cone',
         'heptagram','octagram','nonagram','decagram',
-        'tesseract','compoundCO','obelisk','spire','wedge','lattice3','crystalPair'];
+        'tesseract','compoundCO','obelisk','spire','wedge','lattice3','crystalPair',
+        // +10 additions (Apr cycle)
+        'hendecaprism','tridecaprism','pentadecaprism','hendecanti','tridecanti',
+        'octapy','decapy','trunccube','gyropy','dnahelix'];
 
     function spawnGeoWindow() {
         var host = getHost();
@@ -4384,7 +4506,9 @@ window.consoleBg = (function () {
     var ART_FIB_SIZES = [8, 13, 21];              // per-row / per-col pixel sizes (consecutive Fibs → neighbors sit at golden ratio)
     var ART_DIGITS    = '0123456789';
 
-    var ART_PALETTES = ['cbg-artifact--red', 'cbg-artifact--white', 'cbg-artifact--blue', 'cbg-artifact--amber'];
+    // Predator wasps use #ff2244 (bright red). ARTIFACT cells stay off that hue so the
+    // consume-and-convert flash is visually unambiguous when a swarm shows up.
+    var ART_PALETTES = ['cbg-artifact--white', 'cbg-artifact--blue', 'cbg-artifact--amber'];
 
     // ARTIFACT variant enum — each spawn picks one. Names listed in the registry at the top
     // of this file; each is a preserved iteration of how ARTIFACTs have looked.
@@ -5602,8 +5726,15 @@ window.consoleBg = (function () {
             wasps.push({ el: w, x: ox + jx, y: oy + jy, target: null });
         }
 
-        var swarmSpeed = 720; // px/s — deliberate pace, gives the artifact time to die
-        var arriveDist = 10;
+        // Pacing knobs — tuned to feel deliberate rather than violent.
+        // swarmSpeed lower = wasps glide instead of zipping; feedMs holds each wasp on
+        // its kill for a beat so the dissolve has visible weight; the cell-fade itself
+        // is also stretched (was 0.18s/200ms).
+        var swarmSpeed   = 480; // px/s — slower glide toward each target
+        var arriveDist   = 10;
+        var feedMs       = 240; // wasp idles on the just-consumed cell before picking next
+        var consumeFade  = 0.45; // s — cell opacity transition during dissolve
+        var consumeRemove = 520; // ms — DOM removal delay (slightly > consumeFade)
         var lastTs = null;
         var done = false;
 
@@ -5615,6 +5746,12 @@ window.consoleBg = (function () {
             var hr = host.getBoundingClientRect();
             for (var i = 0; i < wasps.length; i++) {
                 var w = wasps[i];
+                // Honor feeding pause — wasp idles on the just-consumed cell before
+                // moving on. Reads as "digestion" instead of an immediate dart-away.
+                if (w.feedingUntil) {
+                    if (ts < w.feedingUntil) continue;
+                    w.feedingUntil = 0;
+                }
                 // Pick a fresh target if needed
                 if (!w.target || !w.target.parentNode) {
                     if (cellPool.length === 0) { w.target = null; continue; }
@@ -5633,16 +5770,19 @@ window.consoleBg = (function () {
                 var dx = tx - w.x, dy = ty - w.y;
                 var dist = Math.hypot(dx, dy);
                 if (dist <= arriveDist) {
-                    // Consume + convert: cell adopts a wasp glyph and red color, then dissolves
+                    // Consume + convert: cell adopts a wasp glyph + the signature wasp red,
+                    // then slowly dissolves. The longer fade + feeding pause give the kill
+                    // visible weight without the original snap.
                     var c = w.target;
                     c.textContent = NET_WASP_CHARS[Math.floor(Math.random() * NET_WASP_CHARS.length)];
                     c.style.color = '#ff2244';
-                    c.style.transition = 'opacity 0.18s ease';
+                    c.style.transition = 'opacity ' + consumeFade + 's ease';
                     c.style.opacity = '0';
                     setTimeout((function (cellEl) { return function () {
                         if (cellEl.parentNode) cellEl.parentNode.removeChild(cellEl);
-                    }; })(c), 200);
+                    }; })(c), consumeRemove);
                     w.target = null;
+                    w.feedingUntil = ts + feedMs;
                     continue;
                 }
                 var advance = Math.min(dist, swarmSpeed * dt);
@@ -6159,7 +6299,7 @@ window.consoleBg = (function () {
     var RATE_ERROR    = 0.01;  // fatal error popups
     var RATE_WARN     = 0.01;  // warning popups
     var RATE_MEMO     = 0.04;  // corporate memo intercepts
-    var RATE_GEO      = 0.10;  // geometric schematic windows
+    var RATE_GEO      = 0.115; // geometric schematic windows (+15% over baseline 0.10)
     var RATE_CASCADE  = 0.03;  // cascading console window burst
     var RATE_ARTIFACT = 0.12;  // floating glyph artifact clusters
     var RATE_FRAG     = 0.40;  // floating code fragments

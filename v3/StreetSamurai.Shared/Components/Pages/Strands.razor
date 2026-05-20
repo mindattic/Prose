@@ -1,0 +1,170 @@
+@page "/strands"
+@attribute [Authorize(Roles = "Contributor,Administrator")]
+@using Microsoft.EntityFrameworkCore
+@using StreetSamurai.Core.Data
+@using StrandEntity = StreetSamurai.Core.Data.Entities.Strand
+@inject IDbContextFactory<StreetSamuraiDbContext> DbFactory
+@inject NavigationManager Nav
+
+@*
+   Strand index. Lists every strand grouped by kind. Click to open in the
+   unified writer/recorder at /strand/{id}. The "+ New strand" CTA below
+   creates a blank top-level strand and routes you there.
+*@
+
+<div class="container py-3" style="max-width: 1100px;">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <h4 class="text-danger mb-0"><i class="bi bi-collection me-2"></i>Strands</h4>
+            <div class="text-muted small">Every story, scene, book, and bedtime episode — all one schema now.</div>
+        </div>
+        <div class="d-flex gap-2 align-items-end">
+            <input class="form-control form-control-sm bg-black text-light border-secondary"
+                   placeholder="New strand title…" @bind="newTitle" @bind:event="oninput" style="width:240px;" />
+            <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="newKind" style="width:120px;">
+                <option value="strand">strand</option>
+                <option value="book">book</option>
+                <option value="chapter">chapter</option>
+                <option value="episode">episode</option>
+                <option value="scene">scene</option>
+                <option value="saga">saga</option>
+                <option value="anthology">anthology</option>
+            </select>
+            <button class="btn btn-sm btn-outline-info" @onclick="CreateAsync" disabled="@(string.IsNullOrWhiteSpace(newTitle))">
+                <i class="bi bi-plus-circle me-1"></i>Create
+            </button>
+        </div>
+    </div>
+
+    @if (loading)
+    {
+        <div class="text-muted"><span class="spinner-border spinner-border-sm me-2"></span>Loading strands…</div>
+    }
+    else if (strands.Count == 0)
+    {
+        <div class="card bg-dark border-secondary text-center py-5">
+            <div class="text-muted mb-2">
+                <i class="bi bi-stars" style="font-size:2rem; opacity:0.4;"></i>
+            </div>
+            <h6 class="text-light mb-2">No strands yet</h6>
+            <div class="text-muted small mb-3">
+                A <em>strand</em> is the universal container — a book, a chapter, an episode, a scene, or just a string of beats.
+                <br />Type a title above and click Create, or run <code>ss --write-strand --seed "&hellip;"</code> from the CLI to generate one with the LLM.
+            </div>
+        </div>
+    }
+    else
+    {
+        @foreach (var group in grouped)
+        {
+            <div class="card bg-dark border-secondary mb-3">
+                <div class="card-header py-2 px-3">
+                    <span class="text-uppercase text-muted small">@group.Key</span>
+                    <span class="text-muted small ms-2">@group.Count() strand(s)</span>
+                </div>
+                <ul class="list-group list-group-flush">
+                    @foreach (var s in group.OrderBy(x => x.Title))
+                    {
+                        var beatCount = beatCounts.GetValueOrDefault(s.Id, 0);
+                        var childCount = childCounts.GetValueOrDefault(s.Id, 0);
+                        <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center border-secondary">
+                            <a href="@($"/strand/{s.Slug}")" class="text-info text-decoration-none flex-grow-1">
+                                <strong>@s.Title</strong>
+                                @if (!string.IsNullOrEmpty(s.Synopsis))
+                                {
+                                    <span class="text-muted small ms-2">— @(s.Synopsis.Length > 80 ? s.Synopsis[..80] + "…" : s.Synopsis)</span>
+                                }
+                            </a>
+                            <div class="d-flex align-items-center gap-2 small">
+                                @if (childCount > 0)
+                                {
+                                    <span class="text-muted" title="Direct child strands (chapters, scenes, etc.)">
+                                        <i class="bi bi-diagram-3 me-1"></i>@childCount
+                                    </span>
+                                }
+                                @if (beatCount > 0)
+                                {
+                                    <span class="text-muted" title="Direct beats in this strand">
+                                        <i class="bi bi-three-dots me-1"></i>@beatCount
+                                    </span>
+                                }
+                                <span class="badge bg-@StatusColor(s.Status) text-uppercase">@StatusLabel(s.Status)</span>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    private bool loading = true;
+    private List<StrandEntity> strands = new();
+    private IEnumerable<IGrouping<string, StrandEntity>> grouped = Array.Empty<IGrouping<string, StrandEntity>>();
+    /// <summary>Direct-beat count per top-level strand id. Lets the index
+    /// show a "this has stuff" cue without opening every strand.</summary>
+    private Dictionary<Guid, int> beatCounts = new();
+    /// <summary>Number of direct child strands per top-level strand id —
+    /// e.g. a book strand reports its chapter count here.</summary>
+    private Dictionary<Guid, int> childCounts = new();
+    private string newTitle = "";
+    private string newKind = "strand";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAsync();
+    }
+
+    private async Task LoadAsync()
+    {
+        loading = true;
+        StateHasChanged();
+        await using var db = await DbFactory.CreateDbContextAsync();
+        strands = await db.Strands
+            .Where(s => s.ParentStrandId == null) // top-level only on this view
+            .AsNoTracking()
+            .ToListAsync();
+        var ids = strands.Select(s => s.Id).ToList();
+        // Pull both counts in one DB round-trip each, then lookup per-row.
+        beatCounts = await db.StrandBeats
+            .Where(sb => ids.Contains(sb.StrandId))
+            .GroupBy(sb => sb.StrandId)
+            .Select(g => new { Id = g.Key, Count = g.Count() })
+            .ToDictionaryAsync(x => x.Id, x => x.Count);
+        childCounts = await db.Strands
+            .Where(s => s.ParentStrandId != null && ids.Contains(s.ParentStrandId!.Value))
+            .GroupBy(s => s.ParentStrandId!.Value)
+            .Select(g => new { Id = g.Key, Count = g.Count() })
+            .ToDictionaryAsync(x => x.Id, x => x.Count);
+        grouped = strands.GroupBy(s => s.Kind).OrderBy(g => g.Key);
+        loading = false;
+        StateHasChanged();
+    }
+
+    private async Task CreateAsync()
+    {
+        if (string.IsNullOrWhiteSpace(newTitle)) return;
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var id = Guid.CreateVersion7();
+        var baseSlug = System.Text.RegularExpressions.Regex
+            .Replace(newTitle.ToLowerInvariant(), @"[^a-z0-9]+", "-")
+            .Trim('-');
+        if (string.IsNullOrEmpty(baseSlug)) baseSlug = "strand";
+        var slug = $"{baseSlug}-{id.ToString("N")[..8]}";
+        db.Strands.Add(new StreetSamurai.Core.Data.Entities.Strand
+        {
+            Id = id,
+            Slug = slug,
+            Title = newTitle.Trim(),
+            Kind = newKind,
+            Status = "draft",
+            SortKey = (strands.Count + 1) * 100.0,
+        });
+        await db.SaveChangesAsync();
+        Nav.NavigateTo($"/strand/{slug}");
+    }
+
+    private static string StatusColor(string status) => StreetSamurai.Core.Services.StrandWorkbenchService.StatusColor(status);
+    private static string StatusLabel(string status) => StreetSamurai.Core.Services.StrandWorkbenchService.StatusLabel(status);
+}

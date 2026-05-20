@@ -1,0 +1,932 @@
+@page "/strand/{IdOrSlug}"
+@attribute [Authorize(Roles = "Contributor,Administrator")]
+@using Microsoft.EntityFrameworkCore
+@using StreetSamurai.Core.Data
+@using StreetSamurai.Core.Data.Entities
+@using StreetSamurai.Core.Services
+@using StreetSamurai.Shared.Services
+@using StrandEntity = StreetSamurai.Core.Data.Entities.Strand
+@using BeatEntity = StreetSamurai.Core.Data.Entities.Beat
+@inject IDbContextFactory<StreetSamuraiDbContext> DbFactory
+@inject StrandWorkbenchService Workbench
+@inject ElevenLabsTtsService Tts
+@inject SettingsService Settings
+@inject NavigationManager Nav
+@inject ToastNotifier Toast
+@inject IJSRuntime JS
+@implements IDisposable
+
+@*
+   The unified writer + recorder + listener. One page does everything:
+   write, edit, record, add beats (before/after), split, join, re-record,
+   delete. /write, /listen, /recordings all funnel here.
+*@
+
+<style>
+    .strand-shell { max-width: 1040px; }
+    .strand-head { position: sticky; top: 0; z-index: 5; background: rgba(15,15,15,0.95); backdrop-filter: blur(6px); border-bottom: 1px solid #2a2a2a; padding: 0.75rem 0; margin-bottom: 1rem; }
+    .strand-title { background: transparent; border: none; color: #f8f9fa; font-size: 1.5rem; font-weight: 600; padding: 0; outline: none; }
+    .strand-title:focus { box-shadow: none; border-bottom: 2px solid #0dcaf0; }
+    .strand-synopsis { background: transparent; border: none; color: #adb5bd; font-size: 0.9rem; resize: none; padding: 0; outline: none; width: 100%; }
+    .strand-synopsis:focus { color: #ced4da; }
+    .beat-card { background: #161616; border: 1px solid #2a2a2a; border-radius: 8px; padding: 0.85rem 1rem; transition: border-color 0.15s ease; }
+    .beat-card:hover { border-color: #3a3a3a; }
+    .beat-card.editing { border-color: #0dcaf0; }
+    .beat-card.stale { border-left: 3px solid #dc3545; }
+    .beat-card.recorded { border-left: 3px solid #198754; }
+    .beat-num { color: #6c757d; font-variant-numeric: tabular-nums; font-size: 0.8rem; letter-spacing: 0.05em; }
+    .beat-prose { color: #e9ecef; white-space: pre-wrap; cursor: text; line-height: 1.55; min-height: 1.5rem; }
+    .beat-prose:hover { color: #f8f9fa; }
+    .beat-prose-empty { color: #495057; font-style: italic; }
+    .beat-textarea { background: #0a0a0a; color: #f8f9fa; border: 1px solid #3a3a3a; border-radius: 4px; padding: 0.6rem; font-family: inherit; line-height: 1.55; resize: vertical; width: 100%; }
+    .beat-textarea:focus { outline: none; border-color: #0dcaf0; box-shadow: 0 0 0 2px rgba(13,202,240,0.15); }
+    .beat-actions .btn { padding: 0.15rem 0.45rem; }
+    .insert-bar { display: flex; align-items: center; gap: 0.5rem; opacity: 0; transition: opacity 0.15s ease; padding: 0.25rem 0; }
+    .insert-bar:hover, .insert-bar:focus-within { opacity: 1; }
+    .insert-bar-line { flex-grow: 1; height: 1px; background: #2a2a2a; }
+    .beat-meta-chips { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.35rem; font-size: 0.7rem; }
+    .beat-meta-chip { padding: 0.1rem 0.45rem; border-radius: 10px; background: rgba(13,202,240,0.08); color: #79d2e8; cursor: pointer; }
+    .beat-meta-chip.unset { color: #495057; background: transparent; border: 1px dashed #2a2a2a; }
+    .beat-meta-chip:hover { background: rgba(13,202,240,0.15); }
+    .beat-meta-panel { margin-top: 0.6rem; padding: 0.6rem; background: #0d0d0d; border: 1px solid #2a2a2a; border-radius: 6px; }
+    .beat-meta-panel label { color: #adb5bd; font-size: 0.75rem; margin-bottom: 0.15rem; }
+    .beat-meta-panel select, .beat-meta-panel input { background: #0a0a0a; border: 1px solid #2a2a2a; color: #f8f9fa; font-size: 0.85rem; }
+    .insert-bar-btn { background: transparent; border: 1px dashed #3a3a3a; color: #0dcaf0; font-size: 0.75rem; padding: 0.15rem 0.55rem; border-radius: 12px; cursor: pointer; }
+    .insert-bar-btn:hover { background: rgba(13,202,240,0.08); border-color: #0dcaf0; }
+    .beat-audio { width: 100%; height: 28px; margin-top: 0.5rem; filter: brightness(0.85); }
+    .strand-meta-chip { font-size: 0.7rem; padding: 0.2rem 0.5rem; }
+</style>
+
+@if (loading)
+{
+    <div class="container py-4 text-muted">
+        <div class="spinner-border spinner-border-sm me-2"></div>Loading strand…
+    </div>
+}
+else if (strand == null)
+{
+    <div class="container py-4">
+        <div class="alert alert-warning">No strand found for <code>@IdOrSlug</code>. <a href="/strands">Back to index</a>.</div>
+    </div>
+}
+else
+{
+    <div class="container strand-shell py-3">
+        @if (ancestors.Count > 0)
+        {
+            <nav aria-label="strand breadcrumb" class="mb-2">
+                <ol class="d-flex flex-wrap gap-1 small text-muted mb-0 ps-0" style="list-style:none;">
+                    <li><a href="/strands" class="text-decoration-none text-muted">strands</a></li>
+                    @foreach (var a in ancestors)
+                    {
+                        <li>›</li>
+                        <li><a href="@($"/strand/{a.Slug}")" class="text-decoration-none text-info">@a.Title</a><span class="text-muted ms-1">(@a.Kind)</span></li>
+                    }
+                    <li>›</li>
+                    <li><span class="text-light">@strand.Title</span></li>
+                </ol>
+            </nav>
+        }
+        <div class="strand-head">
+            <div class="d-flex align-items-start gap-3">
+                <div class="flex-grow-1">
+                    <div class="d-flex align-items-center gap-2 mb-1 flex-wrap">
+                        <span class="badge bg-secondary strand-meta-chip text-uppercase">@strand.Kind</span>
+                        <span class="badge bg-@StatusColor(strand.Status) strand-meta-chip text-uppercase">@StatusLabel(strand.Status)</span>
+                        @if (StaleCount > 0)
+                        {
+                            <span class="badge bg-danger strand-meta-chip">@StaleCount stale</span>
+                        }
+                        @if (NarratedCount > 0)
+                        {
+                            <span class="badge bg-success strand-meta-chip">@NarratedCount/@beats.Count narrated</span>
+                        }
+                        @if (TotalChars > 0)
+                        {
+                            <span class="text-muted small">@TotalChars.ToString("N0") chars</span>
+                        }
+                    </div>
+                    <input class="strand-title w-100" placeholder="Untitled strand"
+                           @bind="strand.Title" @bind:event="oninput" @onblur="SaveStrandHeaderAsync" />
+                    <textarea class="strand-synopsis mt-1" rows="1" placeholder="Synopsis (optional)"
+                              @bind="strand.Synopsis" @bind:event="oninput" @onblur="SaveStrandHeaderAsync"></textarea>
+                </div>
+                <div style="min-width:200px;">
+                    <label class="form-label small text-muted mb-1">Voice</label>
+                    <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="strand.VoiceId" @bind:after="SaveStrandHeaderAsync">
+                        @foreach (var v in voices)
+                        {
+                            <option value="@v.VoiceId">@v.Name</option>
+                        }
+                    </select>
+                </div>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap mt-2">
+                @if (strand.Status is "narrating" or "generating")
+                {
+                    <button class="btn btn-sm btn-warning" @onclick="StopAsync">
+                        <i class="bi bi-stop-circle me-1"></i>Stop narration
+                    </button>
+                }
+                else
+                {
+                    <button class="btn btn-sm btn-primary" @onclick="NarrateAsync" disabled="@working">
+                        @if (working) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                        else { <i class="bi bi-mic-fill me-1"></i> }
+                        @(NarratedCount > 0 && NarratedCount < beats.Count ? "Continue recording" : NarratedCount == 0 ? "Record" : "Re-narrate gaps")
+                    </button>
+                    @if (StaleCount > 0)
+                    {
+                        <button class="btn btn-sm btn-warning" @onclick="NarrateAsync" disabled="@working">
+                            <i class="bi bi-arrow-repeat me-1"></i>Re-record stale (@StaleCount)
+                        </button>
+                    }
+                    <button class="btn btn-sm btn-outline-warning" @onclick="ReRecordAllAsync" disabled="@working" title="Replaces ALL audio for this strand">
+                        <i class="bi bi-arrow-counterclockwise me-1"></i>Re-record all
+                    </button>
+                }
+                <div class="vr"></div>
+                <button class="btn btn-sm btn-outline-success" @onclick="ExportCombinedAsync" disabled="@working" title="Stitch every beat's audio into one file">
+                    <i class="bi bi-collection-play me-1"></i>Stitch
+                </button>
+                @if (!string.IsNullOrEmpty(strand.CombinedAudioPath))
+                {
+                    @if (StaleCount > 0)
+                    {
+                        <button class="btn btn-sm btn-outline-secondary" disabled title="@($"{StaleCount} beat(s) need re-recording.")">
+                            <i class="bi bi-download me-1"></i>Download (incomplete)
+                        </button>
+                    }
+                    else
+                    {
+                        <a class="btn btn-sm btn-success" href="@($"/api/strands/{strand.Id}/strand.wav")" download>
+                            <i class="bi bi-download me-1"></i>Download
+                        </a>
+                    }
+                }
+                <div class="ms-auto">
+                    <a href="/strands" class="btn btn-sm btn-link text-muted">
+                        <i class="bi bi-arrow-left me-1"></i>All strands
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        @if (!string.IsNullOrEmpty(strand.CombinedAudioPath) && StaleCount == 0)
+        {
+            <div class="mb-3">
+                <audio controls src="@($"/api/strands/{strand.Id}/strand.wav")" class="w-100" style="height:34px;"></audio>
+            </div>
+        }
+
+        @if (children.Count > 0)
+        {
+            <div class="card bg-dark border-secondary mb-3">
+                <div class="card-header py-2 px-3 text-uppercase small text-muted">
+                    <i class="bi bi-diagram-3 me-1"></i>@children.Count child strand(s)
+                </div>
+                <ul class="list-group list-group-flush">
+                    @foreach (var c in children)
+                    {
+                        <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center border-secondary">
+                            <a href="@($"/strand/{c.Slug}")" class="text-info text-decoration-none flex-grow-1">
+                                <strong>@c.Title</strong>
+                                <span class="text-muted ms-2 small">@c.Kind</span>
+                                @if (!string.IsNullOrEmpty(c.Synopsis))
+                                {
+                                    <span class="text-muted small ms-2">— @(c.Synopsis.Length > 80 ? c.Synopsis[..80] + "…" : c.Synopsis)</span>
+                                }
+                            </a>
+                            <span class="badge bg-@StatusColor(c.Status) text-uppercase">@StatusLabel(c.Status)</span>
+                        </li>
+                    }
+                </ul>
+            </div>
+        }
+
+        @if (beats.Count == 0)
+        {
+            <div class="card bg-dark border-secondary text-center py-5 text-muted">
+                <div class="mb-3">
+                    <i class="bi bi-stars" style="font-size: 2rem; opacity: 0.4;"></i>
+                </div>
+                <div class="mb-1">An empty strand. The first beat starts the story.</div>
+                <div class="mt-3">
+                    <button class="btn btn-outline-info" @onclick="() => InsertBeatAsync(null)" disabled="@working" data-cy="insert-first">
+                        <i class="bi bi-plus-circle me-1"></i>Add the first beat
+                    </button>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="d-flex flex-column">
+                <div class="insert-bar">
+                    <div class="insert-bar-line"></div>
+                    <button class="insert-bar-btn" @onclick="() => InsertBeatAsync(null)" disabled="@working" data-cy="insert-top">
+                        <i class="bi bi-plus-circle me-1"></i>insert at top
+                    </button>
+                    <div class="insert-bar-line"></div>
+                </div>
+
+                @{ int position = 0; }
+                @foreach (var entry in beats)
+                {
+                    position++;
+                    var b = entry.Beat;
+                    var isEditing = editingBeatId == b.Id;
+                    var bid = b.Id;
+                    var rowClass = "beat-card mb-1";
+                    if (isEditing) rowClass += " editing";
+                    else if (b.Stale) rowClass += " stale";
+                    else if (!string.IsNullOrEmpty(b.AudioPath)) rowClass += " recorded";
+                    var rowPosition = position;
+
+                    <div class="@rowClass" data-cy="beat-row" data-beat-id="@bid">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="beat-num">BEAT @rowPosition.ToString("D3")</span>
+                                @if (b.Stale)
+                                {
+                                    <span class="badge bg-danger strand-meta-chip" title="Prose edited past the audio. Re-record to repair.">stale</span>
+                                }
+                                else if (!string.IsNullOrEmpty(b.AudioPath))
+                                {
+                                    <span class="badge bg-success strand-meta-chip">
+                                        <i class="bi bi-volume-up-fill me-1"></i>@(b.DurationSec.HasValue ? FormatDuration(b.DurationSec.Value) : "—")
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary strand-meta-chip">unrecorded</span>
+                                }
+                                @if (!string.IsNullOrEmpty(b.Text))
+                                {
+                                    <span class="text-muted small">@b.Text.Length chars</span>
+                                }
+                            </div>
+                            <div class="beat-actions d-flex align-items-center gap-1">
+                                <button class="btn btn-sm btn-outline-info" title="Re-record this beat"
+                                        @onclick="() => RerecordOneAsync(bid)" disabled="@working"
+                                        data-cy="beat-rerecord">
+                                    <i class="bi bi-mic"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary" title="Split this beat at the nearest sentence boundary"
+                                        @onclick="() => SplitBeatAsync(bid)" disabled="@(working || (b.Text?.Length ?? 0) < 40)"
+                                        data-cy="beat-split">
+                                    <i class="bi bi-scissors"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary" title="Merge this beat into the previous one"
+                                        @onclick="() => JoinBeatAsync(bid)" disabled="@(working || rowPosition == 1)"
+                                        data-cy="beat-join">
+                                    <i class="bi bi-arrow-up-square"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger" title="Delete this beat"
+                                        @onclick="() => RequestDeleteAsync(bid)" disabled="@working"
+                                        data-cy="beat-delete">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        @if (isEditing)
+                        {
+                            <textarea class="beat-textarea" id="@($"beat-{bid:N}-edit")"
+                                      rows="@Math.Max(3, (editingText?.Length ?? 0) / 90 + 2)"
+                                      @bind="editingText"
+                                      @bind:event="oninput"
+                                      @onkeydown="@(e => OnEditorKeydown(e, bid))"></textarea>
+                            <div class="d-flex gap-2 mt-2 align-items-center">
+                                <button class="btn btn-sm btn-success" @onclick="() => SaveBeatEditAsync(bid)" disabled="@savingEdit" data-cy="beat-save">
+                                    @if (savingEdit) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                    else { <i class="bi bi-check-lg me-1"></i> }
+                                    Save
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary" @onclick="CancelBeatEdit">
+                                    <i class="bi bi-x-lg me-1"></i>Cancel
+                                </button>
+                                <span class="text-muted small ms-auto">⌘/Ctrl+Enter to save · Esc to cancel</span>
+                            </div>
+                        }
+                        else
+                        {
+                            @if (string.IsNullOrEmpty(b.Text))
+                            {
+                                <div class="beat-prose beat-prose-empty" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">
+                                    (empty beat — click to write)
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="beat-prose" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">@b.Text</div>
+                            }
+                        }
+
+                        @if (!string.IsNullOrEmpty(b.AudioPath))
+                        {
+                            <audio controls preload="none" class="beat-audio"
+                                   src="@($"/api/strands/{strand.Id}/beat/{b.Id}/audio")"></audio>
+                        }
+
+                        <div class="beat-meta-chips">
+                            @{
+                                var tone  = b.EmotionalTone;
+                                var pace  = b.PaceHint;
+                                var facet = b.FacetTag;
+                                var btitle = b.BeatTitle;
+                            }
+                            @if (!string.IsNullOrEmpty(btitle))
+                            {
+                                <span class="beat-meta-chip" @onclick="() => ToggleMeta(bid)" title="Beat title — short label only, not narrated.">📑 @btitle</span>
+                            }
+                            <span class="beat-meta-chip @(string.IsNullOrEmpty(tone) ? "unset" : "")"
+                                  @onclick="() => ToggleMeta(bid)"
+                                  title="Emotional tone — maps to an ElevenLabs inline audio tag on v3 voices (e.g. [whispering], [shouting]).">
+                                @(string.IsNullOrEmpty(tone) ? "tone: —" : $"🎭 {tone}")
+                            </span>
+                            <span class="beat-meta-chip @(string.IsNullOrEmpty(pace) ? "unset" : "")"
+                                  @onclick="() => ToggleMeta(bid)"
+                                  title="Pace hint — biases narration stability (clipped/staccato → faster, languorous → slower).">
+                                @(string.IsNullOrEmpty(pace) ? "pace: —" : $"⏱ {pace}")
+                            </span>
+                            <span class="beat-meta-chip @(string.IsNullOrEmpty(facet) ? "unset" : "")"
+                                  @onclick="() => ToggleMeta(bid)"
+                                  title="Character facet — Kyle's psychological mode for this beat (WOUND/SHADOW/MASK/IDEAL). Used as a fallback narration cue when tone is blank.">
+                                @(string.IsNullOrEmpty(facet) ? "facet: —" : $"🎭 {facet}")
+                            </span>
+                            <span class="beat-meta-chip" @onclick="() => ToggleMeta(bid)" data-cy="beat-meta-toggle">
+                                @(metaOpenBeatId == bid ? "▲ details" : "▾ details")
+                            </span>
+                        </div>
+
+                        @if (metaOpenBeatId == bid)
+                        {
+                            <div class="beat-meta-panel">
+                                <div class="row g-2">
+                                    <div class="col-md-6">
+                                        <label>Beat title (label only — not narrated)</label>
+                                        <input class="form-control form-control-sm" @bind="metaForm.BeatTitle" placeholder="e.g. The threshold" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Synopsis (one line — fed to LLM regenerations)</label>
+                                        <input class="form-control form-control-sm" @bind="metaForm.Synopsis" placeholder="What is this beat doing?" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Emotional tone → audio tag</label>
+                                        <select class="form-select form-select-sm" @bind="metaForm.EmotionalTone" data-cy="beat-meta-tone">
+                                            <option value="">(none)</option>
+                                            <option value="quiet">quiet → [whispering]</option>
+                                            <option value="tender">tender → [softly]</option>
+                                            <option value="sad">sad → [melancholy]</option>
+                                            <option value="afraid">afraid → [afraid]</option>
+                                            <option value="tense">tense → [tense]</option>
+                                            <option value="wry">wry → [sarcastic]</option>
+                                            <option value="curious">curious → [curious]</option>
+                                            <option value="excited">excited → [excited]</option>
+                                            <option value="happy">happy → [cheerful]</option>
+                                            <option value="angry">angry → [angry]</option>
+                                            <option value="violent">violent → [shouting]</option>
+                                            <option value="mysterious">mysterious → [mysterious]</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Pace hint</label>
+                                        <select class="form-select form-select-sm" @bind="metaForm.PaceHint">
+                                            <option value="">(none)</option>
+                                            <option value="flowing">flowing</option>
+                                            <option value="clipped">clipped</option>
+                                            <option value="staccato">staccato</option>
+                                            <option value="languorous">languorous</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Character facet</label>
+                                        <select class="form-select form-select-sm" @bind="metaForm.FacetTag">
+                                            <option value="">(none)</option>
+                                            <option value="WOUND">WOUND → [somber]</option>
+                                            <option value="SHADOW">SHADOW → [menacing]</option>
+                                            <option value="MASK">MASK → [deadpan]</option>
+                                            <option value="IDEAL">IDEAL → [resolute]</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Structure role</label>
+                                        <input class="form-control form-control-sm" @bind="metaForm.StructureRole" placeholder="inciting-incident, rising-action, climax…" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Act</label>
+                                        <input type="number" class="form-control form-control-sm" min="0" max="5" @bind="metaForm.Act" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Scene type</label>
+                                        <select class="form-select form-select-sm" @bind="metaForm.SceneType">
+                                            <option value="scene">scene</option>
+                                            <option value="summary">summary</option>
+                                            <option value="transition">transition</option>
+                                            <option value="interstitial">interstitial</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 mt-2 align-items-center">
+                                    <button class="btn btn-sm btn-success" @onclick="() => SaveMetaAsync(bid)" data-cy="beat-meta-save">
+                                        <i class="bi bi-check-lg me-1"></i>Save details
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" @onclick="CancelMeta">Close</button>
+                                    <span class="text-muted small ms-auto">These steer narration tone on next re-record. Audio stays valid until you re-record.</span>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                    <div class="insert-bar">
+                        <div class="insert-bar-line"></div>
+                        <button class="insert-bar-btn" @onclick="() => InsertBeatAsync(bid)" disabled="@working" data-cy="insert-after">
+                            <i class="bi bi-plus-circle me-1"></i>insert beat
+                        </button>
+                        <div class="insert-bar-line"></div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+}
+
+@if (pendingDelete != null)
+{
+    @* Click backdrop → cancel. Click inside the dialog stops propagation
+       so the modal stays open. Escape handler attached at top of body via
+       JS interop — see EnsureEscapeHook(). *@
+    <div class="modal d-block" style="background:rgba(0,0,0,0.6);" tabindex="-1"
+         @onclick="CancelDelete">
+        <div class="modal-dialog modal-dialog-centered" @onclick:stopPropagation>
+            <div class="modal-content bg-dark border-danger">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-danger"><i class="bi bi-exclamation-triangle me-2"></i>Delete this beat?</h5>
+                </div>
+                <div class="modal-body text-light small">
+                    The beat will be removed from this strand. If no other strand references it, the beat itself (text + audio) is deleted.
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button class="btn btn-outline-secondary" @onclick="CancelDelete">Cancel <span class="text-muted ms-1">(Esc)</span></button>
+                    <button class="btn btn-danger" @onclick="ConfirmDeleteAsync" data-cy="confirm-delete">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public string IdOrSlug { get; set; } = "";
+
+    private StrandEntity? strand;
+    private List<StrandWorkbenchService.OrderedBeat> beats = new();
+    /// <summary>Ancestors of the current strand, root first. Empty if this is
+    /// a top-level strand. Used for the breadcrumb at the page header.</summary>
+    private List<StrandEntity> ancestors = new();
+    /// <summary>Direct children of the current strand. A book strand shows
+    /// its chapter children here so the user can navigate down without
+    /// going back to /strands.</summary>
+    private List<StrandEntity> children = new();
+    private bool loading = true;
+    private bool working;
+    private bool savingEdit;
+    private Guid? editingBeatId;
+    private string editingText = "";
+    /// <summary>UpdatedAt captured when the user entered edit mode. Passed
+    /// back on save so the workbench can detect "another tab/MCP-tool wrote
+    /// in between" and surface a conflict toast instead of clobbering.</summary>
+    private DateTime? editingOriginalUpdatedAt;
+
+    /// <summary>When set, the beat-details metadata panel is open for this beat.</summary>
+    private Guid? metaOpenBeatId;
+    /// <summary>Working copy of the meta panel form. Re-populated from the
+    /// beat each time the panel opens; not persisted until Save.</summary>
+    private MetaForm metaForm = new();
+    private Guid? pendingDelete;
+    private System.Threading.Timer? poll;
+    private string? lastIdOrSlug;
+
+    private string defaultVoiceId = "";
+    private List<TtsVoice> voices = new();
+
+    private int StaleCount    => beats.Count(b => b.Beat.Stale);
+    private int NarratedCount => beats.Count(b => !string.IsNullOrEmpty(b.Beat.AudioPath));
+    private int TotalChars    => beats.Sum(b => b.Beat.Text?.Length ?? 0);
+
+    protected override async Task OnInitializedAsync()
+    {
+        defaultVoiceId = Settings.ElevenLabsVoiceId ?? "";
+        try
+        {
+            voices = (await Tts.ListVoicesAsync()).OrderBy(v => v.Name).ToList();
+            if (!string.IsNullOrEmpty(defaultVoiceId) && !voices.Any(v => v.VoiceId == defaultVoiceId))
+                voices.Insert(0, new TtsVoice { VoiceId = defaultVoiceId, Name = "(saved default)" });
+        }
+        catch
+        {
+            voices = new() { new TtsVoice { VoiceId = defaultVoiceId, Name = "Default" } };
+        }
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (lastIdOrSlug == IdOrSlug) return;
+        lastIdOrSlug = IdOrSlug;
+        await LoadAsync();
+    }
+
+    private async Task LoadAsync()
+    {
+        loading = true;
+        StateHasChanged();
+        await using var db = await DbFactory.CreateDbContextAsync();
+        if (Guid.TryParse(IdOrSlug, out var guid))
+            strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == guid);
+        if (strand == null)
+            strand = await db.Strands.FirstOrDefaultAsync(s => s.Slug == IdOrSlug);
+
+        if (strand != null)
+        {
+            if (string.IsNullOrEmpty(strand.VoiceId)) strand.VoiceId = defaultVoiceId;
+            beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+
+            // Walk ancestors (root first) and load direct children.
+            ancestors = await LoadAncestorsAsync(db, strand.ParentStrandId);
+            children = await db.Strands.AsNoTracking()
+                .Where(s => s.ParentStrandId == strand.Id)
+                .OrderBy(s => s.SortKey)
+                .ToListAsync();
+
+            if (strand.Status is "narrating" or "generating")
+                StartPolling();
+        }
+        loading = false;
+        StateHasChanged();
+    }
+
+    private static async Task<List<StrandEntity>> LoadAncestorsAsync(StreetSamuraiDbContext db, Guid? parentId)
+    {
+        var chain = new List<StrandEntity>();
+        var visited = new HashSet<Guid>();
+        var current = parentId;
+        // Same cycle guard the workbench uses for beat traversal — a
+        // corrupted parent loop shouldn't hang the page.
+        while (current is { } id && visited.Add(id))
+        {
+            var p = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == id);
+            if (p == null) break;
+            chain.Insert(0, p);
+            current = p.ParentStrandId;
+        }
+        return chain;
+    }
+
+    private void StartPolling()
+    {
+        poll?.Dispose();
+        poll = new System.Threading.Timer(async _ =>
+        {
+            if (strand == null) return;
+            await using var db = await DbFactory.CreateDbContextAsync();
+            var fresh = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == strand.Id);
+            if (fresh == null) return;
+            strand.Status = fresh.Status;
+            strand.CombinedAudioPath = fresh.CombinedAudioPath;
+            strand.CharsNarrated = fresh.CharsNarrated;
+            beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+            await InvokeAsync(StateHasChanged);
+            if (strand.Status is "ready" or "failed" or "stopped")
+            {
+                poll?.Dispose();
+                poll = null;
+            }
+        }, null, TimeSpan.FromSeconds(2), TimeSpan.FromSeconds(3));
+    }
+
+    private async Task SaveStrandHeaderAsync()
+    {
+        if (strand == null) return;
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var s = await db.Strands.FirstOrDefaultAsync(x => x.Id == strand.Id);
+        if (s == null) return;
+        s.Title = strand.Title;
+        s.Synopsis = strand.Synopsis;
+        s.VoiceId = strand.VoiceId;
+        s.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync();
+    }
+
+    private void StartBeatEdit(BeatEntity b)
+    {
+        editingBeatId = b.Id;
+        editingText = b.Text ?? "";
+        editingOriginalUpdatedAt = b.UpdatedAt;
+        _ = Task.Run(async () =>
+        {
+            await Task.Delay(50);
+            try { await JS.InvokeVoidAsync("eval", $"document.getElementById('beat-{b.Id:N}-edit')?.focus();"); } catch { }
+        });
+    }
+
+    private void CancelBeatEdit()
+    {
+        editingBeatId = null;
+        editingText = "";
+        editingOriginalUpdatedAt = null;
+    }
+
+    private void ToggleMeta(Guid beatId)
+    {
+        if (metaOpenBeatId == beatId)
+        {
+            metaOpenBeatId = null;
+            return;
+        }
+        var beat = beats.FirstOrDefault(b => b.Beat.Id == beatId)?.Beat;
+        if (beat == null) return;
+        metaForm = new MetaForm
+        {
+            BeatTitle     = beat.BeatTitle ?? "",
+            Synopsis      = beat.Synopsis ?? "",
+            EmotionalTone = beat.EmotionalTone ?? "",
+            PaceHint      = beat.PaceHint ?? "",
+            FacetTag      = beat.FacetTag ?? "",
+            StructureRole = beat.StructureRole ?? "",
+            Act           = beat.Act,
+            SceneType     = string.IsNullOrEmpty(beat.SceneType) ? "scene" : beat.SceneType,
+        };
+        metaOpenBeatId = beatId;
+    }
+
+    private void CancelMeta() => metaOpenBeatId = null;
+
+    private async Task SaveMetaAsync(Guid beatId)
+    {
+        if (working) return;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            await Workbench.UpdateBeatMetadataAsync(beatId, new StrandWorkbenchService.BeatMetadataUpdate(
+                BeatTitle:     metaForm.BeatTitle,
+                Synopsis:      metaForm.Synopsis,
+                EmotionalTone: metaForm.EmotionalTone,
+                PaceHint:      metaForm.PaceHint,
+                FacetTag:      metaForm.FacetTag,
+                StructureRole: metaForm.StructureRole,
+                Act:           metaForm.Act,
+                SceneType:     metaForm.SceneType));
+            await ReloadBeatsAsync();
+            metaOpenBeatId = null;
+            Toast.Success("BEAT-META", "Beat details saved. Re-record this beat to apply the new tone.");
+        }
+        catch (Exception ex) { Toast.Error("BEAT-META-FAIL", ex.Message); }
+        finally { working = false; await InvokeAsync(StateHasChanged); }
+    }
+
+    /// <summary>Local working copy of the meta editor's bound values. Kept
+    /// separate from the beat row so cancel / close discards pending
+    /// changes without touching the DB.</summary>
+    private class MetaForm
+    {
+        public string BeatTitle { get; set; } = "";
+        public string Synopsis { get; set; } = "";
+        public string EmotionalTone { get; set; } = "";
+        public string PaceHint { get; set; } = "";
+        public string FacetTag { get; set; } = "";
+        public string StructureRole { get; set; } = "";
+        public int Act { get; set; }
+        public string SceneType { get; set; } = "scene";
+    }
+
+    private async Task OnEditorKeydown(KeyboardEventArgs e, Guid beatId)
+    {
+        if (e.Key == "Enter" && (e.CtrlKey || e.MetaKey)) await SaveBeatEditAsync(beatId);
+        else if (e.Key == "Escape") CancelBeatEdit();
+    }
+
+    private async Task SaveBeatEditAsync(Guid beatId)
+    {
+        if (strand == null || savingEdit) return;
+        savingEdit = true;
+        StateHasChanged();
+        try
+        {
+            await Workbench.UpdateBeatTextAsync(beatId, editingText, editingOriginalUpdatedAt);
+            await ReloadBeatsAsync();
+            editingBeatId = null;
+            editingText = "";
+            editingOriginalUpdatedAt = null;
+            Toast.Success("BEAT-EDIT", "Beat updated; audio invalidated.");
+        }
+        catch (BeatConflictException conflict)
+        {
+            // Surface a clear "another tab edited this" choice. Reloads the
+            // beats so the user sees the current canonical text, and keeps
+            // their edited text in the textarea so they can copy what they
+            // wanted to keep before re-applying. No silent clobber.
+            await ReloadBeatsAsync();
+            editingOriginalUpdatedAt = conflict.CurrentUpdatedAt;
+            Toast.Error("BEAT-CONFLICT", "Beat was modified elsewhere. The latest text is shown — review and re-save to apply your change over it.");
+        }
+        catch (Exception ex) { Toast.Error("BEAT-EDIT-FAIL", ex.Message); }
+        finally { savingEdit = false; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task InsertBeatAsync(Guid? afterBeatId)
+    {
+        if (strand == null || working) return;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            var newBeat = await Workbench.InsertBeatAsync(strand.Id, afterBeatId, "");
+            await ReloadBeatsAsync();
+            StartBeatEdit(newBeat);
+            Toast.Success("INSERT", afterBeatId == null ? "Beat inserted at top." : "Beat inserted.");
+        }
+        catch (Exception ex) { Toast.Error("INSERT-FAIL", ex.Message); }
+        finally { working = false; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task SplitBeatAsync(Guid beatId)
+    {
+        if (strand == null || working) return;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            await Workbench.SplitBeatAsync(strand.Id, beatId);
+            await ReloadBeatsAsync();
+            Toast.Success("SPLIT", "Beat split. Both halves need re-record.");
+        }
+        catch (Exception ex) { Toast.Error("SPLIT-FAIL", ex.Message); }
+        finally { working = false; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task JoinBeatAsync(Guid beatId)
+    {
+        if (strand == null || working) return;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            await Workbench.JoinBeatWithPreviousAsync(strand.Id, beatId);
+            await ReloadBeatsAsync();
+            Toast.Success("JOIN", "Beat merged into the previous one.");
+        }
+        catch (Exception ex) { Toast.Error("JOIN-FAIL", ex.Message); }
+        finally { working = false; await InvokeAsync(StateHasChanged); }
+    }
+
+    private void RequestDeleteAsync(Guid beatId)
+    {
+        pendingDelete = beatId;
+        _ = WireEscapeOnceAsync();
+    }
+    private void CancelDelete() => pendingDelete = null;
+
+    /// <summary>One-shot Escape-key hook for the open modal. Registers a
+    /// keydown listener on document while pendingDelete is set, and
+    /// invokes CancelDelete via JS interop when Escape fires. Cheap
+    /// alternative to a full Blazor focus-trap component.</summary>
+    private async Task WireEscapeOnceAsync()
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("eval", @"
+                (function(){
+                  if (window.__ssStrandEscBound) return;
+                  window.__ssStrandEscBound = true;
+                  document.addEventListener('keydown', function(e){
+                    if (e.key === 'Escape') {
+                      var btn = document.querySelector('.modal.d-block .modal-footer .btn-outline-secondary');
+                      if (btn) btn.click();
+                    }
+                  });
+                })();");
+        }
+        catch { /* JS interop is best-effort — clicking Cancel still works */ }
+    }
+
+    private async Task ConfirmDeleteAsync()
+    {
+        if (strand == null || pendingDelete == null) return;
+        var bid = pendingDelete.Value;
+        pendingDelete = null;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            await Workbench.DeleteBeatAsync(strand.Id, bid);
+            await ReloadBeatsAsync();
+            Toast.Success("DELETE", "Beat removed.");
+        }
+        catch (Exception ex) { Toast.Error("DELETE-FAIL", ex.Message); }
+        finally { working = false; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task NarrateAsync()
+    {
+        if (strand == null || working) return;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            _ = Task.Run(() => Workbench.NarrateAsync(strand!.Id));
+            await Task.Delay(250);
+            await ReloadBeatsAsync();
+            StartPolling();
+            Toast.Success("REC", "Narration started.");
+        }
+        catch (Exception ex) { Toast.Error("REC-FAIL", ex.Message); }
+        finally { working = false; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task ReRecordAllAsync()
+    {
+        if (strand == null || working) return;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            foreach (var entry in beats)
+                await Workbench.InvalidateBeatAudioAsync(entry.Beat.Id);
+            _ = Task.Run(() => Workbench.NarrateAsync(strand!.Id));
+            await ReloadBeatsAsync();
+            StartPolling();
+            Toast.Success("RE-REC-ALL", "Re-recording from scratch.");
+        }
+        catch (Exception ex) { Toast.Error("RE-REC-ALL-FAIL", ex.Message); }
+        finally { working = false; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task RerecordOneAsync(Guid beatId)
+    {
+        if (strand == null || working) return;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            await Workbench.InvalidateBeatAudioAsync(beatId);
+            _ = Task.Run(() => Workbench.NarrateAsync(strand!.Id));
+            await ReloadBeatsAsync();
+            StartPolling();
+            Toast.Success("BEAT-RE-REC", "Re-recording this beat…");
+        }
+        catch (Exception ex) { Toast.Error("BEAT-RE-REC-FAIL", ex.Message); }
+        finally { working = false; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task ExportCombinedAsync()
+    {
+        if (strand == null || working) return;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            var path = await Workbench.ExportCombinedAsync(strand.Id);
+            await ReloadBeatsAsync();
+            if (path == null) Toast.Info("COMBINE", "Nothing to combine yet — record some beats first.");
+            else Toast.Success("COMBINE", "Combined audio written.");
+        }
+        catch (Exception ex) { Toast.Error("COMBINE-FAIL", ex.Message); }
+        finally { working = false; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task StopAsync()
+    {
+        if (strand == null) return;
+        if (Workbench.CancelNarration(strand.Id))
+        {
+            Toast.Info("STOP", "Narration cancelled.");
+            await ReloadBeatsAsync();
+        }
+    }
+
+    private async Task ReloadBeatsAsync()
+    {
+        if (strand == null) return;
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var fresh = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == strand.Id);
+        if (fresh != null)
+        {
+            strand.Status = fresh.Status;
+            strand.CombinedAudioPath = fresh.CombinedAudioPath;
+            strand.CharsNarrated = fresh.CharsNarrated;
+        }
+        beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+    }
+
+    private static string StatusColor(string status) => StrandWorkbenchService.StatusColor(status);
+    private static string StatusLabel(string status) => StrandWorkbenchService.StatusLabel(status);
+
+    private static string FormatDuration(double sec)
+    {
+        var ts = TimeSpan.FromSeconds(sec);
+        return ts.TotalMinutes >= 1 ? $"{(int)ts.TotalMinutes}:{ts.Seconds:D2}" : $"{ts.TotalSeconds:0.0}s";
+    }
+
+    public void Dispose() => poll?.Dispose();
+}
