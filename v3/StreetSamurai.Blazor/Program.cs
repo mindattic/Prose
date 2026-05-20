@@ -358,6 +358,19 @@ if (args.Contains("--migrate-strands"))
     return;
 }
 
+// CLI mode: burst oversized beats (e.g. chapter-as-one-beat from old book
+// imports) into paragraph-sized pieces. Idempotent — already-small beats
+// are skipped on rerun.
+//   ss --burst-beats [--min-chars 800] [--strand slug] [--kind book] [--dry-run]
+if (args.Contains("--burst-beats"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await BurstBeatsCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: report flat-vs-bridge drift for a denormalised column.
 //   ss --audit-denorm Entities.TagsJson
 //   ss --audit-denorm Characters.Affiliation

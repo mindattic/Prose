@@ -1,0 +1,260 @@
+2026-05-18 12:16:42PM [INF] StreetSamurai Blazor host started
+2026-05-18 12:17:28PM [INF] Drew episode seed: A child rides up to Mrs. Chen's stall with a contract written on a Carrion receipt. The contract names Ayushmaan Horváth.
+2026-05-18 12:17:28PM [INF] Episode #"019e3c17-b886-7b45-886e-d5639082cd84" generating with seed: A child rides up to Mrs. Chen's stall with a contract written on a Carrion receipt. The contract names Ayushmaan Horváth.
+2026-05-18 12:17:28PM [DBG] Claude request via Legion: model=claude-sonnet-4-6, maxTokens=8000, temp=0.9, systemLen=3253, userLen=532
+2026-05-18 12:17:37PM [INF] GlobalSearch index warmed in 55332 ms
+2026-05-18 12:18:42PM [INF] WorldTickService heartbeat (disabled): tick #1
+2026-05-18 12:18:42PM [INF] Continuity long-sweep (full): 2 contradiction group(s)
+2026-05-18 12:18:48PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=12715
+2026-05-18 12:18:48PM [INF] Episode #"019e3c17-b886-7b45-886e-d5639082cd84" generation complete: title=The Weight of a Receipt, beats=132
+2026-05-18 12:18:48PM [INF] Episode #"019e3c17-b886-7b45-886e-d5639082cd84" script artifacts filed at D:\Projects\MindAttic\StreetSamurai\engine\episodes\the-weight-of-a-receipt
+2026-05-18 12:18:48PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #0 (66 chars)
+2026-05-18 12:18:48PM [ERR] TTS failed on episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #0
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 403 (Forbidden).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.ElevenLabsTtsService.SynthesizeAsync(String text, String voiceId, String outputFormat, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ElevenLabsTtsService.cs:line 67
+   at StreetSamurai.Core.Services.EpisodeAudioService.NarrateAsync(Guid episodeId, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EpisodeAudioService.cs:line 88
+2026-05-18 12:23:42PM [INF] WorldTickService heartbeat (disabled): tick #2
+2026-05-18 12:28:42PM [INF] WorldTickService heartbeat (disabled): tick #3
+2026-05-18 12:33:42PM [INF] WorldTickService heartbeat (disabled): tick #4
+2026-05-18 12:38:42PM [INF] WorldTickService heartbeat (disabled): tick #5
+2026-05-18 12:43:42PM [INF] WorldTickService heartbeat (disabled): tick #6
+2026-05-18 12:48:42PM [INF] WorldTickService heartbeat (disabled): tick #7
+2026-05-18 12:53:42PM [INF] WorldTickService heartbeat (disabled): tick #8
+2026-05-18 12:58:42PM [INF] WorldTickService heartbeat (disabled): tick #9
+2026-05-18 01:03:42PM [INF] WorldTickService heartbeat (disabled): tick #10
+2026-05-18 01:08:42PM [INF] WorldTickService heartbeat (disabled): tick #11
+2026-05-18 01:13:42PM [INF] WorldTickService heartbeat (disabled): tick #12
+2026-05-18 01:18:42PM [INF] WorldTickService heartbeat (disabled): tick #13
+2026-05-18 01:18:42PM [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-18 01:23:42PM [INF] WorldTickService heartbeat (disabled): tick #14
+2026-05-18 01:26:23PM [INF] StreetSamurai Blazor host started
+2026-05-18 01:27:13PM [INF] GlobalSearch index warmed in 50364 ms
+2026-05-18 01:28:23PM [INF] WorldTickService heartbeat (disabled): tick #1
+2026-05-18 01:28:23PM [INF] Continuity long-sweep (full): 2 contradiction group(s)
+2026-05-18 01:33:23PM [INF] WorldTickService heartbeat (disabled): tick #2
+2026-05-18 01:38:23PM [INF] WorldTickService heartbeat (disabled): tick #3
+2026-05-18 01:43:23PM [INF] WorldTickService heartbeat (disabled): tick #4
+2026-05-18 01:48:23PM [INF] WorldTickService heartbeat (disabled): tick #5
+2026-05-18 01:53:23PM [INF] WorldTickService heartbeat (disabled): tick #6
+2026-05-18 01:58:23PM [INF] WorldTickService heartbeat (disabled): tick #7
+2026-05-18 02:03:23PM [INF] WorldTickService heartbeat (disabled): tick #8
+2026-05-18 02:08:23PM [INF] WorldTickService heartbeat (disabled): tick #9
+2026-05-18 02:13:23PM [INF] WorldTickService heartbeat (disabled): tick #10
+2026-05-18 02:18:23PM [INF] WorldTickService heartbeat (disabled): tick #11
+2026-05-18 02:23:23PM [INF] WorldTickService heartbeat (disabled): tick #12
+2026-05-18 02:28:23PM [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-18 02:28:23PM [INF] WorldTickService heartbeat (disabled): tick #13
+2026-05-18 02:33:23PM [INF] WorldTickService heartbeat (disabled): tick #14
+2026-05-18 02:38:23PM [INF] WorldTickService heartbeat (disabled): tick #15
+2026-05-18 02:43:23PM [INF] WorldTickService heartbeat (disabled): tick #16
+2026-05-18 02:48:23PM [INF] WorldTickService heartbeat (disabled): tick #17
+2026-05-18 02:49:13PM [INF] StreetSamurai Blazor host started
+2026-05-18 02:49:22PM [INF] Retrying episode #"019e3c17-b886-7b45-886e-d5639082cd84" narration
+2026-05-18 02:49:22PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #0 (66 chars, lossless=true)
+2026-05-18 02:49:22PM [WRN] Episode #"019e3c17-b886-7b45-886e-d5639082cd84": pcm_44100 forbidden by ElevenLabs tier — falling back to mp3_44100_128 for remaining beats
+2026-05-18 02:49:25PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #1 (312 chars, lossless=false)
+2026-05-18 02:49:37PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #2 (22 chars, lossless=false)
+2026-05-18 02:49:38PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #3 (216 chars, lossless=false)
+2026-05-18 02:49:47PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #4 (134 chars, lossless=false)
+2026-05-18 02:49:50PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #5 (21 chars, lossless=false)
+2026-05-18 02:49:52PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #6 (40 chars, lossless=false)
+2026-05-18 02:49:53PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #7 (7 chars, lossless=false)
+2026-05-18 02:49:54PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #8 (279 chars, lossless=false)
+2026-05-18 02:49:58PM [INF] GlobalSearch index warmed in 45189 ms
+2026-05-18 02:50:04PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #9 (18 chars, lossless=false)
+2026-05-18 02:50:05PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #10 (60 chars, lossless=false)
+2026-05-18 02:50:07PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #11 (343 chars, lossless=false)
+2026-05-18 02:50:18PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #12 (19 chars, lossless=false)
+2026-05-18 02:50:19PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #13 (59 chars, lossless=false)
+2026-05-18 02:50:22PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #14 (21 chars, lossless=false)
+2026-05-18 02:50:23PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #15 (19 chars, lossless=false)
+2026-05-18 02:50:24PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #16 (84 chars, lossless=false)
+2026-05-18 02:50:27PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #17 (65 chars, lossless=false)
+2026-05-18 02:50:29PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #18 (22 chars, lossless=false)
+2026-05-18 02:50:29PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #19 (37 chars, lossless=false)
+2026-05-18 02:50:30PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #20 (49 chars, lossless=false)
+2026-05-18 02:50:32PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #21 (40 chars, lossless=false)
+2026-05-18 02:50:34PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #22 (7 chars, lossless=false)
+2026-05-18 02:50:35PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #23 (234 chars, lossless=false)
+2026-05-18 02:50:42PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #24 (665 chars, lossless=false)
+2026-05-18 02:51:02PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #25 (45 chars, lossless=false)
+2026-05-18 02:51:04PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #26 (130 chars, lossless=false)
+2026-05-18 02:51:09PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #27 (73 chars, lossless=false)
+2026-05-18 02:51:11PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #28 (384 chars, lossless=false)
+2026-05-18 02:51:13PM [INF] WorldTickService heartbeat (disabled): tick #1
+2026-05-18 02:51:13PM [INF] Continuity long-sweep (full): 2 contradiction group(s)
+2026-05-18 02:51:25PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #29 (34 chars, lossless=false)
+2026-05-18 02:51:26PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #30 (329 chars, lossless=false)
+2026-05-18 02:51:37PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #31 (29 chars, lossless=false)
+2026-05-18 02:51:38PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #32 (321 chars, lossless=false)
+2026-05-18 02:51:49PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #33 (30 chars, lossless=false)
+2026-05-18 02:51:51PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #34 (9 chars, lossless=false)
+2026-05-18 02:51:53PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #35 (10 chars, lossless=false)
+2026-05-18 02:51:54PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #36 (419 chars, lossless=false)
+2026-05-18 02:52:06PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #37 (48 chars, lossless=false)
+2026-05-18 02:52:08PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #38 (87 chars, lossless=false)
+2026-05-18 02:52:10PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #39 (277 chars, lossless=false)
+2026-05-18 02:52:17PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #40 (55 chars, lossless=false)
+2026-05-18 02:52:19PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #41 (409 chars, lossless=false)
+2026-05-18 02:52:31PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #42 (108 chars, lossless=false)
+2026-05-18 02:52:34PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #43 (27 chars, lossless=false)
+2026-05-18 02:52:35PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #44 (20 chars, lossless=false)
+2026-05-18 02:52:36PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #45 (27 chars, lossless=false)
+2026-05-18 02:52:37PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #46 (70 chars, lossless=false)
+2026-05-18 02:52:39PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #47 (34 chars, lossless=false)
+2026-05-18 02:52:40PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #48 (136 chars, lossless=false)
+2026-05-18 02:52:44PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #49 (13 chars, lossless=false)
+2026-05-18 02:52:45PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #50 (208 chars, lossless=false)
+2026-05-18 02:52:51PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #51 (41 chars, lossless=false)
+2026-05-18 02:52:52PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #52 (37 chars, lossless=false)
+2026-05-18 02:52:54PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #53 (67 chars, lossless=false)
+2026-05-18 02:52:56PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #54 (16 chars, lossless=false)
+2026-05-18 02:52:57PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #55 (16 chars, lossless=false)
+2026-05-18 02:52:58PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #56 (331 chars, lossless=false)
+2026-05-18 02:53:09PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #57 (29 chars, lossless=false)
+2026-05-18 02:53:10PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #58 (250 chars, lossless=false)
+2026-05-18 02:53:18PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #59 (73 chars, lossless=false)
+2026-05-18 02:53:20PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #60 (351 chars, lossless=false)
+2026-05-18 02:53:32PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #61 (31 chars, lossless=false)
+2026-05-18 02:53:34PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #62 (106 chars, lossless=false)
+2026-05-18 02:53:38PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #63 (35 chars, lossless=false)
+2026-05-18 02:53:39PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #64 (78 chars, lossless=false)
+2026-05-18 02:53:42PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #65 (17 chars, lossless=false)
+2026-05-18 02:53:43PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #66 (6 chars, lossless=false)
+2026-05-18 02:53:44PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #67 (243 chars, lossless=false)
+2026-05-18 02:53:52PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #68 (50 chars, lossless=false)
+2026-05-18 02:53:54PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #69 (33 chars, lossless=false)
+2026-05-18 02:53:56PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #70 (77 chars, lossless=false)
+2026-05-18 02:53:59PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #71 (23 chars, lossless=false)
+2026-05-18 02:54:00PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #72 (14 chars, lossless=false)
+2026-05-18 02:54:01PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #73 (75 chars, lossless=false)
+2026-05-18 02:54:04PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #74 (148 chars, lossless=false)
+2026-05-18 02:54:08PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #75 (428 chars, lossless=false)
+2026-05-18 02:54:19PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #76 (60 chars, lossless=false)
+2026-05-18 02:54:22PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #77 (157 chars, lossless=false)
+2026-05-18 02:54:27PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #78 (253 chars, lossless=false)
+2026-05-18 02:54:35PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #79 (147 chars, lossless=false)
+2026-05-18 02:54:40PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #80 (8 chars, lossless=false)
+2026-05-18 02:54:41PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #81 (11 chars, lossless=false)
+2026-05-18 02:54:42PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #82 (7 chars, lossless=false)
+2026-05-18 02:54:43PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #83 (38 chars, lossless=false)
+2026-05-18 02:54:44PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #84 (27 chars, lossless=false)
+2026-05-18 02:54:45PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #85 (6 chars, lossless=false)
+2026-05-18 02:54:46PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #86 (92 chars, lossless=false)
+2026-05-18 02:54:49PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #87 (20 chars, lossless=false)
+2026-05-18 02:54:50PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #88 (147 chars, lossless=false)
+2026-05-18 02:54:54PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #89 (16 chars, lossless=false)
+2026-05-18 02:54:56PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #90 (38 chars, lossless=false)
+2026-05-18 02:54:57PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #91 (35 chars, lossless=false)
+2026-05-18 02:54:58PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #92 (12 chars, lossless=false)
+2026-05-18 02:54:59PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #93 (194 chars, lossless=false)
+2026-05-18 02:55:05PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #94 (62 chars, lossless=false)
+2026-05-18 02:55:08PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #95 (50 chars, lossless=false)
+2026-05-18 02:55:10PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #96 (34 chars, lossless=false)
+2026-05-18 02:55:11PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #97 (46 chars, lossless=false)
+2026-05-18 02:55:13PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #98 (14 chars, lossless=false)
+2026-05-18 02:55:14PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #99 (29 chars, lossless=false)
+2026-05-18 02:55:15PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #100 (387 chars, lossless=false)
+2026-05-18 02:55:28PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #101 (28 chars, lossless=false)
+2026-05-18 02:55:29PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #102 (29 chars, lossless=false)
+2026-05-18 02:55:30PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #103 (36 chars, lossless=false)
+2026-05-18 02:55:31PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #104 (24 chars, lossless=false)
+2026-05-18 02:55:32PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #105 (11 chars, lossless=false)
+2026-05-18 02:55:33PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #106 (166 chars, lossless=false)
+2026-05-18 02:55:39PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #107 (41 chars, lossless=false)
+2026-05-18 02:55:40PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #108 (64 chars, lossless=false)
+2026-05-18 02:55:43PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #109 (8 chars, lossless=false)
+2026-05-18 02:55:44PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #110 (45 chars, lossless=false)
+2026-05-18 02:55:46PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #111 (35 chars, lossless=false)
+2026-05-18 02:55:47PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #112 (51 chars, lossless=false)
+2026-05-18 02:55:49PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #113 (34 chars, lossless=false)
+2026-05-18 02:55:50PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #114 (202 chars, lossless=false)
+2026-05-18 02:55:56PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #115 (31 chars, lossless=false)
+2026-05-18 02:55:57PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #116 (165 chars, lossless=false)
+2026-05-18 02:56:02PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #117 (21 chars, lossless=false)
+2026-05-18 02:56:03PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #118 (138 chars, lossless=false)
+2026-05-18 02:56:07PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #119 (21 chars, lossless=false)
+2026-05-18 02:56:08PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #120 (20 chars, lossless=false)
+2026-05-18 02:56:09PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #121 (84 chars, lossless=false)
+2026-05-18 02:56:12PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #122 (19 chars, lossless=false)
+2026-05-18 02:56:13PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #123 (21 chars, lossless=false)
+2026-05-18 02:56:13PM [INF] WorldTickService heartbeat (disabled): tick #2
+2026-05-18 02:56:14PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #124 (57 chars, lossless=false)
+2026-05-18 02:56:16PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #125 (47 chars, lossless=false)
+2026-05-18 02:56:18PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #126 (165 chars, lossless=false)
+2026-05-18 02:56:23PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #127 (60 chars, lossless=false)
+2026-05-18 02:56:25PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #128 (67 chars, lossless=false)
+2026-05-18 02:56:27PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #129 (20 chars, lossless=false)
+2026-05-18 02:56:27PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #130 (36 chars, lossless=false)
+2026-05-18 02:56:29PM [DBG] Narrating episode #"019e3c17-b886-7b45-886e-d5639082cd84" beat #131 (27 chars, lossless=false)
+2026-05-18 02:56:30PM [INF] Episode #"019e3c17-b886-7b45-886e-d5639082cd84" narration complete (132 beats, 12409 chars)
+2026-05-18 02:56:30PM [INF] Episode #"019e3c17-b886-7b45-886e-d5639082cd84" contains non-WAV beats (likely MP3 tier-fallback); skipping combined-audio export. Per-beat files remain available.
+2026-05-18 03:01:13PM [INF] WorldTickService heartbeat (disabled): tick #3
+2026-05-18 03:03:06PM [INF] Episode #"019e3caf-5fc9-7278-a4f1-4dc4947c0393" generating with seed: Continuing from "The Weight of a Receipt". The previous episode closed on: "The broth had been correct." Pick up the thread the next night.
+2026-05-18 03:03:06PM [DBG] Claude request via Legion: model=claude-sonnet-4-6, maxTokens=8000, temp=0.9, systemLen=3253, userLen=245
+2026-05-18 03:03:29PM [INF] StreetSamurai Blazor host started
+2026-05-18 03:04:23PM [INF] GlobalSearch index warmed in 53252 ms
+2026-05-18 03:05:29PM [INF] WorldTickService heartbeat (disabled): tick #1
+2026-05-18 03:05:29PM [INF] Continuity long-sweep (full): 2 contradiction group(s)
+2026-05-18 03:10:29PM [INF] WorldTickService heartbeat (disabled): tick #2
+2026-05-18 03:15:29PM [INF] WorldTickService heartbeat (disabled): tick #3
+2026-05-18 03:20:29PM [INF] WorldTickService heartbeat (disabled): tick #4
+2026-05-18 03:25:29PM [INF] WorldTickService heartbeat (disabled): tick #5
+2026-05-18 03:30:29PM [INF] WorldTickService heartbeat (disabled): tick #6
+2026-05-18 03:35:29PM [INF] WorldTickService heartbeat (disabled): tick #7
+2026-05-18 03:40:29PM [INF] WorldTickService heartbeat (disabled): tick #8
+2026-05-18 03:45:29PM [INF] WorldTickService heartbeat (disabled): tick #9
+2026-05-18 03:50:29PM [INF] WorldTickService heartbeat (disabled): tick #10
+2026-05-18 03:55:29PM [INF] WorldTickService heartbeat (disabled): tick #11
+2026-05-18 04:00:29PM [INF] WorldTickService heartbeat (disabled): tick #12
+2026-05-18 04:05:29PM [INF] WorldTickService heartbeat (disabled): tick #13
+2026-05-18 04:05:29PM [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-18 04:10:29PM [INF] WorldTickService heartbeat (disabled): tick #14
+2026-05-18 04:15:29PM [INF] WorldTickService heartbeat (disabled): tick #15
+2026-05-18 04:20:29PM [INF] WorldTickService heartbeat (disabled): tick #16
+2026-05-18 04:25:29PM [INF] WorldTickService heartbeat (disabled): tick #17
+2026-05-18 04:30:29PM [INF] WorldTickService heartbeat (disabled): tick #18
+2026-05-18 04:35:29PM [INF] WorldTickService heartbeat (disabled): tick #19
+2026-05-18 04:40:29PM [INF] WorldTickService heartbeat (disabled): tick #20
+2026-05-18 04:45:29PM [INF] WorldTickService heartbeat (disabled): tick #21
+2026-05-18 04:50:29PM [INF] WorldTickService heartbeat (disabled): tick #22
+2026-05-18 04:55:29PM [INF] WorldTickService heartbeat (disabled): tick #23
+2026-05-18 05:00:29PM [INF] WorldTickService heartbeat (disabled): tick #24
+2026-05-18 05:05:29PM [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-18 05:05:29PM [INF] WorldTickService heartbeat (disabled): tick #25
+2026-05-18 05:10:29PM [INF] WorldTickService heartbeat (disabled): tick #26
+2026-05-18 05:15:29PM [INF] WorldTickService heartbeat (disabled): tick #27
+2026-05-18 05:20:29PM [INF] WorldTickService heartbeat (disabled): tick #28
+2026-05-18 05:25:29PM [INF] WorldTickService heartbeat (disabled): tick #29
+2026-05-18 05:30:29PM [INF] WorldTickService heartbeat (disabled): tick #30
+2026-05-18 05:35:29PM [INF] WorldTickService heartbeat (disabled): tick #31
+2026-05-18 05:40:29PM [INF] WorldTickService heartbeat (disabled): tick #32
+2026-05-18 05:45:29PM [INF] WorldTickService heartbeat (disabled): tick #33
+2026-05-18 05:50:29PM [INF] WorldTickService heartbeat (disabled): tick #34
+2026-05-18 05:55:29PM [INF] WorldTickService heartbeat (disabled): tick #35
+2026-05-18 06:00:29PM [INF] WorldTickService heartbeat (disabled): tick #36
+2026-05-18 06:05:29PM [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-18 06:05:29PM [INF] WorldTickService heartbeat (disabled): tick #37
+2026-05-18 06:10:29PM [INF] WorldTickService heartbeat (disabled): tick #38
+2026-05-18 06:15:29PM [INF] WorldTickService heartbeat (disabled): tick #39
+2026-05-18 06:20:29PM [INF] WorldTickService heartbeat (disabled): tick #40
+2026-05-18 06:25:29PM [INF] WorldTickService heartbeat (disabled): tick #41
+2026-05-18 06:30:29PM [INF] WorldTickService heartbeat (disabled): tick #42
+2026-05-18 06:35:29PM [INF] WorldTickService heartbeat (disabled): tick #43
+2026-05-18 06:40:29PM [INF] WorldTickService heartbeat (disabled): tick #44
+2026-05-18 06:45:29PM [INF] WorldTickService heartbeat (disabled): tick #45
+2026-05-18 06:50:29PM [INF] WorldTickService heartbeat (disabled): tick #46
+2026-05-18 06:55:29PM [INF] WorldTickService heartbeat (disabled): tick #47
+2026-05-18 07:00:29PM [INF] WorldTickService heartbeat (disabled): tick #48
+2026-05-18 07:05:29PM [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-18 07:05:29PM [INF] WorldTickService heartbeat (disabled): tick #49
+2026-05-18 07:10:29PM [INF] WorldTickService heartbeat (disabled): tick #50
+2026-05-18 07:15:29PM [INF] WorldTickService heartbeat (disabled): tick #51
+2026-05-18 07:20:29PM [INF] WorldTickService heartbeat (disabled): tick #52
+2026-05-18 07:25:29PM [INF] WorldTickService heartbeat (disabled): tick #53
+2026-05-18 07:30:29PM [INF] WorldTickService heartbeat (disabled): tick #54
+2026-05-18 07:35:29PM [INF] WorldTickService heartbeat (disabled): tick #55
+2026-05-18 07:40:29PM [INF] WorldTickService heartbeat (disabled): tick #56
+2026-05-18 07:45:29PM [INF] WorldTickService heartbeat (disabled): tick #57
+2026-05-18 10:49:16PM [INF] StreetSamurai Blazor host started
