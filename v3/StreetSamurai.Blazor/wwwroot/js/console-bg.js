@@ -30,14 +30,21 @@ window.consoleBg = (function () {
     //   WANDERER   — small grid walks the screen, pauses to "look around"
     //   SPIDER     — 8-leg radial cluster; legs alternate-pulse in walking gait
     //   INCHWORM   — linear chain bunches and extends, translating per cycle
-    //   SNAKE      — chain travels along a sinusoidal S-curve, head-led
     //   HOPPER     — cluster crouches, launches in parabolic arc, lands, repeats
-    //   CRAB       — wide body with two claws; scuttles sideways perpendicular to axis
     //   JELLY      — concentric rings pulse outward/in; whole body drifts vertically
     //   SQUID      — pulse-jet propulsion (burst + glide), trailing tentacles sway
     //   BEETLE     — scurry-stop-scurry rhythm with shell shimmer and antennae
     //   TADPOLE    — small body + long sinusoidal whipping tail (tail propels motion)
     //   ANT        — zigzag wobble path with two antennae feelers at the front
+    //   MOIRE      — two overlapping rotated grids; interference patterns shift
+    //   VORTEX     — spiral arms rotate; glyphs drift along the inflow spiral
+    //   EXPLOSION  — outward burst with deceleration, then float
+    //   ORBIT      — multiple concentric rings rotate at golden-ratio speeds
+    //   NETWORK    — nodes float on individual axes; visible packets travel between
+    //   PHASEFIELD — wide grid; each cell phases brightness by (x+y+t) sine
+    //   SHATTER    — single cluster fractures into N pieces that drift apart
+    //   SPIROGRAM  — glyphs trail along an epitrochoid (Spirograph) path
+    //   PULSARRING — ring with a brightness wave traveling around it
     //
     // PULSAR (Morse) MODE VARIANTS:
     //   BLINK      — classic on/off pulse mode (90% of spawns)
@@ -3672,7 +3679,7 @@ window.consoleBg = (function () {
                 setTimeout(function () {
                     el.classList.add('cbg-frag--out');
                     setTimeout(function () {
-                        if (el.parentNode) el.parentNode.removeChild(el);
+                        if (!el.__predated && el.parentNode) el.parentNode.removeChild(el);
                     }, 360);
                 }, rand(18, 75));
                 return;
@@ -3977,10 +3984,10 @@ window.consoleBg = (function () {
         // +5 additions (creature cycle batch 2)
         'klein','hyperpara','trochoid','butterfly','hypocy'];
 
-    function spawnGeoWindow() {
+    function spawnGeoWindow(forceKey) {
         var host = getHost();
         if (!host) return;
-        var key = pick(GEO_KEYS);
+        var key = forceKey || pick(GEO_KEYS);
         var shape = GEO_SHAPES[key];
 
         var win = document.createElement('div');
@@ -4643,7 +4650,7 @@ window.consoleBg = (function () {
                 clearInterval(timer);
                 el.classList.add('cbg-memo--collapse');
                 setTimeout(function () {
-                    if (el.parentNode) el.parentNode.removeChild(el);
+                    if (!el.__predated && el.parentNode) el.parentNode.removeChild(el);
                 }, 360);
             }
         }, 22);
@@ -4867,17 +4874,27 @@ window.consoleBg = (function () {
     //   WANDERER   — small grid walks + pauses to "look around" (simulates awareness)
     //   SPIDER     — 8-leg radial cluster, alternate-pulse walking gait
     //   INCHWORM   — chain bunches and extends; translation only during the extend phase
-    //   SNAKE      — chain follows traveling sinusoidal S-curve along body axis
     //   HOPPER     — cluster crouch + parabolic launch + land cycle (grasshopper)
-    //   CRAB       — wide body + claws, scuttles sideways perpendicular to body axis
     //   JELLY      — concentric rings pulse outward/in; vertical drift
     //   SQUID      — pulse-jet propulsion: body squash + tentacles trail behind
     //   BEETLE     — scurry-stop-scurry with shell shimmer + small antennae
     //   TADPOLE    — small body + whipping sinusoidal tail; tail strokes propel body
     //   ANT        — zigzag walk with vibrating antennae at the head
+    //   ABSTRACT GEOMETRIC / PHYSICAL VARIANTS (no biological metaphor):
+    //   MOIRE      — two overlapping rotated grids producing interference
+    //   VORTEX     — spiral inflow; particles drift along an Archimedean spiral
+    //   EXPLOSION  — outward burst with deceleration to a slow float
+    //   ORBIT      — concentric rings rotating at golden-ratio period differences
+    //   NETWORK    — nodes float on per-node axes; multi-glyph packets travel between them
+    //   PHASEFIELD — wide grid; cell brightness phases by a traveling (x+y) wave
+    //   SHATTER    — cluster fractures into N pieces that slowly drift apart
+    //   SPIROGRAM  — glyphs trail along an epitrochoid (Spirograph) curve
+    //   PULSARRING — single ring with brightness wave traveling around its circumference
     var ART_VARIANTS = ['SCATTER', 'LATTICE', 'ANCHOR', 'SLUG', 'CENTIPEDE', 'PULSE', 'WANDERER',
-        'SPIDER', 'INCHWORM', 'SNAKE', 'HOPPER', 'CRAB',
-        'JELLY', 'SQUID', 'BEETLE', 'TADPOLE', 'ANT'];
+        'SPIDER', 'INCHWORM', 'HOPPER',
+        'JELLY', 'SQUID', 'BEETLE', 'TADPOLE', 'ANT',
+        'MOIRE', 'VORTEX', 'EXPLOSION', 'ORBIT', 'NETWORK',
+        'PHASEFIELD', 'SHATTER', 'SPIROGRAM', 'PULSARRING'];
 
     // Shared helper — create a Fibonacci-sized grid scaffold (variable col widths / row heights).
     // Returns positions + cumulative offsets so callers can build cells.
@@ -4939,7 +4956,7 @@ window.consoleBg = (function () {
         host.appendChild(el);
         requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
         var ttl = rand(6000, 8000);
-        setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, ttl);
+        setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, ttl);
     }
 
     // ── Variant: LATTICE — Fibonacci grid, whole lattice drifts together ────────
@@ -4981,7 +4998,7 @@ window.consoleBg = (function () {
         host.appendChild(el);
         requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
         var ttl = Math.round(6765 + (Math.random() - 0.5) * 1597);
-        setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, ttl);
+        setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, ttl);
     }
 
     // ── Variant: ANCHOR — anchored grid; glitches in place; leading edge emits feelers ──
@@ -5046,7 +5063,7 @@ window.consoleBg = (function () {
         var ttl = Math.round(6765 + (Math.random() - 0.5) * 1597);
         setTimeout(function () {
             clearInterval(glitchTimer); clearInterval(feelerTimer);
-            if (el.parentNode) el.parentNode.removeChild(el);
+            if (!el.__predated && el.parentNode) el.parentNode.removeChild(el);
         }, ttl);
     }
 
@@ -5093,7 +5110,7 @@ window.consoleBg = (function () {
         }, Math.round(76 * ART_PHI));
         setTimeout(function () {
             clearInterval(glitchTimer);
-            if (el.parentNode) el.parentNode.removeChild(el);
+            if (!el.__predated && el.parentNode) el.parentNode.removeChild(el);
         }, 7400);
     }
 
@@ -5188,7 +5205,7 @@ window.consoleBg = (function () {
         }, 89);
         setTimeout(function () {
             clearInterval(glitchTimer); clearInterval(feelerTimer);
-            if (el.parentNode) el.parentNode.removeChild(el);
+            if (!el.__predated && el.parentNode) el.parentNode.removeChild(el);
         }, 7400);
     }
 
@@ -5272,7 +5289,7 @@ window.consoleBg = (function () {
 
         setTimeout(function () {
             clearInterval(glitchTimer);
-            if (el.parentNode) el.parentNode.removeChild(el);
+            if (!el.__predated && el.parentNode) el.parentNode.removeChild(el);
         }, totalLife);
     }
 
@@ -5364,7 +5381,7 @@ window.consoleBg = (function () {
             clearInterval(glitchTimer);
             el.style.transition = 'opacity 0.4s ease';
             el.style.opacity = '0';
-            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+            setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450);
         }, ttl);
     }
 
@@ -5443,7 +5460,7 @@ window.consoleBg = (function () {
         setTimeout(function () {
             killed = true; clearInterval(glitchTimer);
             el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
-            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+            setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450);
         }, ttl);
     }
 
@@ -5502,61 +5519,10 @@ window.consoleBg = (function () {
         setTimeout(function () {
             killed = true; clearInterval(glitchTimer);
             el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
-            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+            setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450);
         }, ttl);
     }
 
-    // ── Variant: SNAKE — chain follows a traveling sinusoidal S-curve, head-led ───
-    // N glyphs trail along a body axis. Lateral position = sin(axisPos + travel). The whole
-    // chain translates along the axis; the wave makes it slither.
-    function spawnArtifactSnake(host) {
-        var el = artNewContainer();
-        el.style.opacity = '0';
-        el.style.transition = 'opacity 0.55s ease';
-        var N = 12;
-        var ang = Math.random() * Math.PI * 2;
-        var ca = Math.cos(ang), sa = Math.sin(ang);
-        var perpX = -sa, perpY = ca;
-        var segGap = 10, waveAmp = 14, waveK = 0.55;
-        var spans = [];
-        for (var i = 0; i < N; i++) {
-            var span = document.createElement('span');
-            span.className = 'cbg-artifact-char';
-            span.style.fontSize = Math.max(8, Math.round(14 - i * 0.5)) + 'px';
-            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
-            span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
-            el.appendChild(span);
-            spans.push(span);
-        }
-        host.appendChild(el);
-        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
-        var startTs = performance.now(), ttl = 8800, killed = false;
-        var travel = 0; // head displacement along body axis
-        function step(ts) {
-            if (killed) return;
-            var elapsed = ts - startTs;
-            if (elapsed > ttl) return;
-            travel = elapsed * 0.022; // px/ms along body axis
-            for (var i = 0; i < N; i++) {
-                var sAlong = travel - i * segGap;
-                var lateral = Math.sin(sAlong * waveK) * waveAmp;
-                var x = ca * sAlong + perpX * lateral;
-                var y = sa * sAlong + perpY * lateral;
-                spans[i].style.left = Math.round(x) + 'px';
-                spans[i].style.top  = Math.round(y) + 'px';
-            }
-            requestAnimationFrame(step);
-        }
-        requestAnimationFrame(step);
-        var glitchTimer = setInterval(function () {
-            spans[Math.floor(Math.random() * N)].textContent = artGlyph();
-        }, 110);
-        setTimeout(function () {
-            killed = true; clearInterval(glitchTimer);
-            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
-            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
-        }, ttl);
-    }
 
     // ── Variant: HOPPER — crouch + parabolic launch + land cycle ──────────────────
     // Compact glyph cluster. Phase 0: idle. Phase 1: crouch (vertical squash). Phase 2:
@@ -5635,86 +5601,10 @@ window.consoleBg = (function () {
         setTimeout(function () {
             killed = true; clearInterval(glitchTimer);
             el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
-            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+            setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450);
         }, ttl);
     }
 
-    // ── Variant: CRAB — wide body + claws, scuttles sideways perpendicular to body axis ──
-    // Body is a wide Fib grid. Two claw clusters sit at the left/right ends, slightly elevated.
-    // Travel direction is PERPENDICULAR to the body axis (sideways). Claws shimmer brighter.
-    function spawnArtifactCrab(host) {
-        var el = artNewContainer();
-        el.style.opacity = '0';
-        el.style.transition = 'opacity 0.55s ease';
-        var bodyAng = Math.random() * Math.PI * 2;
-        var bca = Math.cos(bodyAng), bsa = Math.sin(bodyAng);
-        var travAng = bodyAng + Math.PI / 2;
-        var tca = Math.cos(travAng), tsa = Math.sin(travAng);
-        // Body grid — wide and short
-        var bodyW = 70;
-        var bodyN = 7;
-        var bodySpans = [];
-        for (var i = 0; i < bodyN; i++) {
-            var t = (i / (bodyN - 1)) - 0.5; // -0.5 to 0.5
-            var span = document.createElement('span');
-            span.className = 'cbg-artifact-char';
-            span.style.left = Math.round(bca * t * bodyW) + 'px';
-            span.style.top  = Math.round(bsa * t * bodyW) + 'px';
-            span.style.fontSize = '13px';
-            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
-            span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
-            el.appendChild(span);
-            bodySpans.push(span);
-        }
-        // Two claws — at each end, slightly forward (in travel direction)
-        var clawSpans = [];
-        for (var side = 0; side < 2; side++) {
-            var s = side === 0 ? -0.5 : 0.5;
-            var clawBaseX = bca * s * bodyW + tca * 8;
-            var clawBaseY = bsa * s * bodyW + tsa * 8;
-            for (var c = 0; c < 3; c++) {
-                var span2 = document.createElement('span');
-                span2.className = 'cbg-artifact-char';
-                var offX = bca * s * 8 * c + tca * c * 3;
-                var offY = bsa * s * 8 * c + tsa * c * 3;
-                span2.style.left = Math.round(clawBaseX + offX) + 'px';
-                span2.style.top  = Math.round(clawBaseY + offY) + 'px';
-                span2.style.fontSize = '12px';
-                span2.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
-                span2.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
-                el.appendChild(span2);
-                clawSpans.push(span2);
-            }
-        }
-        host.appendChild(el);
-        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
-        var startTs = performance.now(), ttl = 8200, killed = false;
-        function step(ts) {
-            if (killed) return;
-            var elapsed = ts - startTs;
-            if (elapsed > ttl) return;
-            // Scurry: not constant — alternates fast and slow phases. cos² gives a stop-go feel.
-            var scurry = 0.5 + 0.5 * Math.cos(elapsed / 380);
-            var travel = (elapsed * 0.018) * (0.4 + scurry * 0.6);
-            var x = tca * travel;
-            var y = tsa * travel;
-            el.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px)';
-            // Claws shimmer brighter on the scurry-on phase
-            var clawOp = (0.7 + scurry * 0.3).toFixed(2);
-            for (var i = 0; i < clawSpans.length; i++) clawSpans[i].style.opacity = clawOp;
-            requestAnimationFrame(step);
-        }
-        requestAnimationFrame(step);
-        var glitchTimer = setInterval(function () {
-            bodySpans[Math.floor(Math.random() * bodySpans.length)].textContent = artGlyph();
-            if (Math.random() < 0.4) clawSpans[Math.floor(Math.random() * clawSpans.length)].textContent = artGlyph();
-        }, 140);
-        setTimeout(function () {
-            killed = true; clearInterval(glitchTimer);
-            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
-            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
-        }, ttl);
-    }
 
     // ── Variant: JELLY — concentric rings pulse outward/in; vertical drift ───────
     // Concentric Fibonacci rings of glyphs at growing radii. Each ring's effective radius
@@ -5777,7 +5667,7 @@ window.consoleBg = (function () {
         setTimeout(function () {
             killed = true; clearInterval(glitchTimer);
             el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
-            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+            setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450);
         }, ttl);
     }
 
@@ -5875,7 +5765,7 @@ window.consoleBg = (function () {
         setTimeout(function () {
             killed = true; clearInterval(glitchTimer);
             el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
-            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+            setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450);
         }, ttl);
     }
 
@@ -5950,7 +5840,7 @@ window.consoleBg = (function () {
         setTimeout(function () {
             killed = true; clearInterval(shimmer); clearInterval(antTimer);
             el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
-            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+            setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450);
         }, ttl);
     }
 
@@ -6023,35 +5913,30 @@ window.consoleBg = (function () {
         setTimeout(function () {
             killed = true; clearInterval(glitchTimer);
             el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
-            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+            setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450);
         }, ttl);
     }
 
-    // ── Variant: ANT — zigzag wobble walk with vibrating antennae ────────────────
-    // Small 3-glyph body, two vibrating antennae at the head, walks forward with a zigzag
-    // wobble (slow sine across the body axis). Direction switches occasionally for organic feel.
+    // ── Variant: ANT — bezier wanderer; long curving legs, stop, reorient, repeat ─
+    // Each WALK leg is a quadratic bezier from current pos to a new target. The first
+    // control point sits along the current heading (G1 continuity — the curve starts
+    // tangent to the previous leg, no snap), and the second control point is offset
+    // perpendicular to give the curve a real sweep. The body's heading at any moment is
+    // the bezier tangent, so the ant glyphs face the way they're actually moving.
     function spawnArtifactAnt(host) {
         var el = artNewContainer();
         el.style.opacity = '0';
         el.style.transition = 'opacity 0.55s ease';
-        var ang = Math.random() * Math.PI * 2;
-        var ca = Math.cos(ang), sa = Math.sin(ang);
-        var perpX = -sa, perpY = ca;
-        // Body — three glyphs along axis
         var body = [];
         for (var i = 0; i < 3; i++) {
             var span = document.createElement('span');
             span.className = 'cbg-artifact-char';
-            var s = (i - 1) * 5;
-            span.style.left = Math.round(ca * s) + 'px';
-            span.style.top  = Math.round(sa * s) + 'px';
             span.style.fontSize = (i === 1 ? 12 : 11) + 'px';
             span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
             span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
             el.appendChild(span);
             body.push(span);
         }
-        // Antennae
         var antL = document.createElement('span'), antR = document.createElement('span');
         antL.className = antR.className = 'cbg-artifact-char';
         antL.style.fontSize = antR.style.fontSize = '9px';
@@ -6060,22 +5945,86 @@ window.consoleBg = (function () {
         el.appendChild(antL); el.appendChild(antR);
         host.appendChild(el);
         requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
-        var startTs = performance.now(), ttl = 8400, killed = false;
-        var posAlong = 0;
+        var startTs = performance.now(), ttl = 9000, killed = false;
+        var posX = 0, posY = 0;
+        var heading = Math.random() * Math.PI * 2;
+        var state = 'WALK';
+        var stateEndAt = 0;
+        var leg = null;     // active bezier: { p0, p1, p2, startTs, duration }
+        var SPEED = 55;     // px/sec average — drives target distance
+        function pickHeadingOffset() {
+            // Small turns common (~70% < ±50°), occasional sharp turns (~30%, up to ±135°)
+            var sign = Math.random() < 0.5 ? -1 : 1;
+            var mag = Math.random() < 0.70 ? Math.random() * 0.9
+                                            : 1.0 + Math.random() * 1.4;
+            heading += sign * mag;
+        }
+        function startNewLeg(ts) {
+            // If we're near the edge, point inward before laying down the new leg
+            if (Math.abs(posX) > 140 || Math.abs(posY) > 110) {
+                heading = Math.atan2(-posY, -posX) + (Math.random() - 0.5) * 0.6;
+            }
+            var ca = Math.cos(heading), sa = Math.sin(heading);
+            var perpX = -sa, perpY = ca;
+            var duration = 1500 + Math.random() * 2000;            // 1.5-3.5s — longer arcs
+            var targetDist = SPEED * (duration / 1000);            // ~80-190 px per leg
+            var lateralBias = (Math.random() - 0.5) * targetDist * 0.55;  // ±27.5% sideways
+            var tangentDist = targetDist * 0.40;                   // P1 along heading from P0
+            leg = {
+                p0: [posX, posY],
+                p1: [posX + ca * tangentDist, posY + sa * tangentDist],
+                p2: [posX + ca * targetDist + perpX * lateralBias,
+                     posY + sa * targetDist + perpY * lateralBias],
+                startTs: ts, duration: duration
+            };
+            stateEndAt = ts + duration;
+        }
+        function bezAt(t) {
+            var u = 1 - t;
+            return [ u*u*leg.p0[0] + 2*u*t*leg.p1[0] + t*t*leg.p2[0],
+                     u*u*leg.p0[1] + 2*u*t*leg.p1[1] + t*t*leg.p2[1] ];
+        }
+        function bezTan(t) {
+            var u = 1 - t;
+            return [ 2*u*(leg.p1[0]-leg.p0[0]) + 2*t*(leg.p2[0]-leg.p1[0]),
+                     2*u*(leg.p1[1]-leg.p0[1]) + 2*t*(leg.p2[1]-leg.p1[1]) ];
+        }
+        startNewLeg(performance.now());
         function step(ts) {
             if (killed) return;
             var elapsed = ts - startTs;
             if (elapsed > ttl) return;
-            posAlong += 0.045 * 16; // ~0.7 px/frame at 60fps
-            // Zigzag wobble — slow lateral sine
-            var wobble = Math.sin(elapsed / 280) * 9;
-            var x = ca * posAlong + perpX * wobble;
-            var y = sa * posAlong + perpY * wobble;
-            el.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px)';
-            // Antennae vibrate fast at front
-            var frontX = ca * 9, frontY = sa * 9;
-            var vibL = Math.sin(elapsed / 55) * 1.6;
-            var vibR = Math.sin(elapsed / 55 + Math.PI) * 1.6;
+            if (state === 'WALK') {
+                var t = (ts - leg.startTs) / leg.duration;
+                if (t >= 1) {
+                    posX = leg.p2[0]; posY = leg.p2[1];
+                    var tanEnd = bezTan(1);
+                    heading = Math.atan2(tanEnd[1], tanEnd[0]);
+                    state = 'PAUSE';
+                    stateEndAt = ts + 300 + Math.random() * 500;
+                } else {
+                    var p = bezAt(t);
+                    posX = p[0]; posY = p[1];
+                    var tan = bezTan(t);
+                    heading = Math.atan2(tan[1], tan[0]);
+                }
+            } else { // PAUSE — antennae keep twitching while body holds
+                if (ts > stateEndAt) {
+                    pickHeadingOffset();
+                    state = 'WALK';
+                    startNewLeg(ts);
+                }
+            }
+            var ca = Math.cos(heading), sa = Math.sin(heading);
+            for (var i = 0; i < body.length; i++) {
+                var s = (i - 1) * 5;
+                body[i].style.left = Math.round(posX + ca * s) + 'px';
+                body[i].style.top  = Math.round(posY + sa * s) + 'px';
+            }
+            var perpX = -sa, perpY = ca;
+            var frontX = posX + ca * 9, frontY = posY + sa * 9;
+            var vibL = Math.sin(ts / 55) * 1.8;
+            var vibR = Math.sin(ts / 55 + Math.PI) * 1.8;
             antL.style.left = Math.round(frontX + perpX * (4 + vibL)) + 'px';
             antL.style.top  = Math.round(frontY + perpY * (4 + vibL)) + 'px';
             antR.style.left = Math.round(frontX - perpX * (4 - vibR)) + 'px';
@@ -6090,16 +6039,552 @@ window.consoleBg = (function () {
         setTimeout(function () {
             killed = true; clearInterval(glitchTimer); clearInterval(antTimer);
             el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
-            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+            setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450);
         }, ttl);
     }
 
+
+    // ── Variant: MOIRE — two overlapping rotated grids producing interference ────
+    function spawnArtifactMoire(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0'; el.style.transition = 'opacity 0.55s ease';
+        var COLS = 7, ROWS = 7, SP = 9;
+        function buildGrid(angle, alpha) {
+            var grid = document.createElement('div');
+            grid.style.position = 'absolute'; grid.style.left = '0px'; grid.style.top = '0px';
+            grid.style.transformOrigin = '50% 50%';
+            grid.style.opacity = alpha;
+            var ca = Math.cos(angle), sa = Math.sin(angle);
+            var spans = [];
+            for (var r = 0; r < ROWS; r++) {
+                for (var c = 0; c < COLS; c++) {
+                    var lx = (c - (COLS - 1) / 2) * SP;
+                    var ly = (r - (ROWS - 1) / 2) * SP;
+                    var span = document.createElement('span');
+                    span.className = 'cbg-artifact-char';
+                    span.style.left = Math.round(ca * lx - sa * ly) + 'px';
+                    span.style.top  = Math.round(sa * lx + ca * ly) + 'px';
+                    span.style.fontSize = '10px';
+                    span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                    span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                    grid.appendChild(span);
+                    spans.push(span);
+                }
+            }
+            return { el: grid, spans: spans };
+        }
+        var g1 = buildGrid(0, '0.55');
+        var g2 = buildGrid(0.12, '0.45');
+        el.appendChild(g1.el); el.appendChild(g2.el);
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8200, killed = false;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            g1.el.style.transform = 'rotate(' + (elapsed * 0.012).toFixed(2) + 'deg)';
+            g2.el.style.transform = 'rotate(' + (-elapsed * 0.012 + 7).toFixed(2) + 'deg)';
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            for (var i = 0; i < 4; i++) {
+                var pool = Math.random() < 0.5 ? g1.spans : g2.spans;
+                pool[Math.floor(Math.random() * pool.length)].textContent = artGlyph();
+            }
+        }, 130);
+        setTimeout(function () { killed = true; clearInterval(glitchTimer); el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0'; setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450); }, ttl);
+    }
+
+    // ── Variant: VORTEX — spiral inflow; particles drift along the spiral toward center ──
+    function spawnArtifactVortex(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0'; el.style.transition = 'opacity 0.55s ease';
+        var N = 24;
+        var particles = [];
+        for (var i = 0; i < N; i++) {
+            var span = document.createElement('span');
+            span.className = 'cbg-artifact-char';
+            span.style.fontSize = (9 + Math.random() * 4) + 'px';
+            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+            el.appendChild(span);
+            particles.push({
+                el: span,
+                a0: (i / N) * Math.PI * 2,
+                r0: 50 + Math.random() * 24,
+                speed: 0.7 + Math.random() * 0.5
+            });
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8800, killed = false;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            for (var i = 0; i < particles.length; i++) {
+                var p = particles[i];
+                var t = elapsed / 1000;
+                var ang = p.a0 + t * p.speed;
+                var rad = Math.max(2, p.r0 - t * 5.5);
+                p.el.style.left = Math.round(Math.cos(ang) * rad) + 'px';
+                p.el.style.top  = Math.round(Math.sin(ang) * rad) + 'px';
+                p.el.style.opacity = (0.30 + 0.55 * (rad / p.r0)).toFixed(2);
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            for (var i = 0; i < 3; i++) particles[Math.floor(Math.random() * N)].el.textContent = artGlyph();
+        }, 130);
+        setTimeout(function () { killed = true; clearInterval(glitchTimer); el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0'; setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450); }, ttl);
+    }
+
+    // ── Variant: EXPLOSION — outward burst with deceleration to a slow float ─────
+    function spawnArtifactExplosion(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0'; el.style.transition = 'opacity 0.55s ease';
+        var N = 28;
+        var bits = [];
+        for (var i = 0; i < N; i++) {
+            var ang = Math.random() * Math.PI * 2;
+            var dist = 60 + Math.random() * 50;
+            var span = document.createElement('span');
+            span.className = 'cbg-artifact-char';
+            span.style.fontSize = (9 + Math.random() * 4) + 'px';
+            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+            el.appendChild(span);
+            bits.push({ el: span, dx: Math.cos(ang) * dist, dy: Math.sin(ang) * dist, driftAng: ang + (Math.random() - 0.5) * 0.5 });
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8400, killed = false;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            // Burst phase 0-700ms: ease-out outward. Then slow float along driftAng.
+            var burst = Math.min(1, elapsed / 700);
+            var burstE = 1 - Math.pow(1 - burst, 3);
+            var floatT = Math.max(0, elapsed - 700) / 1000;
+            for (var i = 0; i < bits.length; i++) {
+                var b = bits[i];
+                var x = b.dx * burstE + Math.cos(b.driftAng) * floatT * 2.5;
+                var y = b.dy * burstE + Math.sin(b.driftAng) * floatT * 2.5;
+                b.el.style.left = Math.round(x) + 'px';
+                b.el.style.top  = Math.round(y) + 'px';
+                b.el.style.opacity = (0.85 - floatT * 0.05).toFixed(2);
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            for (var i = 0; i < 3; i++) bits[Math.floor(Math.random() * N)].el.textContent = artGlyph();
+        }, 140);
+        setTimeout(function () { killed = true; clearInterval(glitchTimer); el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0'; setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450); }, ttl);
+    }
+
+    // ── Variant: ORBIT — concentric rings rotate at golden-ratio period differences ─
+    function spawnArtifactOrbit(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0'; el.style.transition = 'opacity 0.55s ease';
+        var rings = [
+            { r: 18, n: 5,  speed: 0.0010 },
+            { r: 32, n: 8,  speed: 0.0010 / ART_PHI },
+            { r: 48, n: 13, speed: 0.0010 / (ART_PHI * ART_PHI) }
+        ];
+        var nodes = [];
+        var center = document.createElement('span');
+        center.className = 'cbg-artifact-char';
+        center.style.left = '0px'; center.style.top = '0px'; center.style.fontSize = '14px';
+        center.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+        center.textContent = artGlyph();
+        el.appendChild(center);
+        nodes.push(center);
+        var orbitals = [];
+        rings.forEach(function (ring) {
+            for (var i = 0; i < ring.n; i++) {
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                span.style.fontSize = Math.max(8, 13 - Math.floor(ring.r / 18)) + 'px';
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                el.appendChild(span);
+                nodes.push(span);
+                orbitals.push({ el: span, r: ring.r, baseAng: (i / ring.n) * Math.PI * 2, speed: ring.speed });
+            }
+        });
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8800, killed = false;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            for (var i = 0; i < orbitals.length; i++) {
+                var o = orbitals[i];
+                var a = o.baseAng + elapsed * o.speed;
+                o.el.style.left = Math.round(Math.cos(a) * o.r) + 'px';
+                o.el.style.top  = Math.round(Math.sin(a) * o.r) + 'px';
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            for (var i = 0; i < 2; i++) nodes[Math.floor(Math.random() * nodes.length)].textContent = artGlyph();
+        }, 150);
+        setTimeout(function () { killed = true; clearInterval(glitchTimer); el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0'; setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450); }, ttl);
+    }
+
+
+    // ── Variant: NETWORK — multi-motion node graph with ghost trails ─────────────
+    // Per spawn rolls:
+    //   * MOTION ∈ {FLOAT, STATIC, DRIFT, ORBIT, JITTER}
+    //       - FLOAT  : each node oscillates around its own anchor on its own axis
+    //       - STATIC : nodes don't move at all
+    //       - DRIFT  : every node drifts in a shared random direction (formation slides)
+    //       - ORBIT  : nodes orbit a shared center at independent radii / speeds / direction
+    //       - JITTER : small bounded sine nudges in two dimensions (noisy hover)
+    //   * NODES ∈ [3..7] — random graph size
+    // Comms are 8-glyph packets that follow the LIVE node positions, and every ~10% of a
+    // packet's travel they drop a small "trail dot" at the current path point. Trail dots
+    // fade over 1.6s, so repeated traffic between the same nodes makes the web shape
+    // emerge as accumulating ghost glyphs.
+    function spawnArtifactNetwork(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0'; el.style.transition = 'opacity 0.55s ease';
+        var MOTION_VARIANTS = ['FLOAT', 'STATIC', 'DRIFT', 'ORBIT', 'JITTER'];
+        var MOTION = MOTION_VARIANTS[Math.floor(Math.random() * MOTION_VARIANTS.length)];
+        var NODES = 3 + Math.floor(Math.random() * 5); // 3..7
+        // Shared per-spawn params for DRIFT and ORBIT
+        var driftAng = Math.random() * Math.PI * 2;
+        var driftSpeed = 0.012 + Math.random() * 0.014;   // px/ms
+        var orbitCx = 0, orbitCy = 0;
+        var nodes = [];
+        for (var i = 0; i < NODES; i++) {
+            var a = (i / NODES) * Math.PI * 2 + Math.random() * 0.4;
+            var r = 28 + Math.random() * 22;
+            var anchorX = Math.cos(a) * r, anchorY = Math.sin(a) * r;
+            var nodeEl = document.createElement('div');
+            nodeEl.style.position = 'absolute';
+            nodeEl.style.left = '0px'; nodeEl.style.top = '0px';
+            var trio = [];
+            for (var k = 0; k < 3; k++) {
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                span.style.left = ((k - 1) * 5) + 'px';
+                span.style.top  = '0px';
+                span.style.fontSize = (k === 1 ? 13 : 10) + 'px';
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                nodeEl.appendChild(span);
+                trio.push(span);
+            }
+            el.appendChild(nodeEl);
+            nodes.push({
+                el: nodeEl, glyphs: trio,
+                anchorX: anchorX, anchorY: anchorY,
+                curX: anchorX, curY: anchorY,
+                floatAng: Math.random() * Math.PI * 2,
+                floatAmp: 5 + Math.random() * 5,
+                floatPeriod: 1800 + Math.random() * 1400,
+                floatPhase: Math.random() * Math.PI * 2,
+                orbitRadius: r * (0.7 + Math.random() * 0.6),
+                orbitAng0: a,
+                orbitSpeed: 0.0008 + Math.random() * 0.0010,
+                orbitDir: Math.random() < 0.5 ? -1 : 1,
+                jitterFreqX: 0.010 + Math.random() * 0.008,
+                jitterFreqY: 0.009 + Math.random() * 0.008
+            });
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 9500 + Math.random() * 2000, killed = false;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            for (var i = 0; i < nodes.length; i++) {
+                var n = nodes[i];
+                if (MOTION === 'FLOAT') {
+                    var t = (elapsed / n.floatPeriod) * Math.PI * 2 + n.floatPhase;
+                    var off = Math.sin(t) * n.floatAmp;
+                    n.curX = n.anchorX + Math.cos(n.floatAng) * off;
+                    n.curY = n.anchorY + Math.sin(n.floatAng) * off;
+                } else if (MOTION === 'STATIC') {
+                    n.curX = n.anchorX; n.curY = n.anchorY;
+                } else if (MOTION === 'DRIFT') {
+                    var d = elapsed * driftSpeed;
+                    n.curX = n.anchorX + Math.cos(driftAng) * d;
+                    n.curY = n.anchorY + Math.sin(driftAng) * d;
+                } else if (MOTION === 'ORBIT') {
+                    var oa = n.orbitAng0 + elapsed * n.orbitSpeed * n.orbitDir;
+                    n.curX = orbitCx + Math.cos(oa) * n.orbitRadius;
+                    n.curY = orbitCy + Math.sin(oa) * n.orbitRadius;
+                } else { // JITTER
+                    n.curX = n.anchorX + Math.sin(elapsed * n.jitterFreqX + n.floatPhase) * 4;
+                    n.curY = n.anchorY + Math.sin(elapsed * n.jitterFreqY + n.floatPhase * 1.7) * 4;
+                }
+                n.el.style.transform = 'translate(' + n.curX.toFixed(1) + 'px,' + n.curY.toFixed(1) + 'px)';
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        // Ghost trail dot — sticks around 1.6s while fading, so traffic builds a visible web
+        function dropTrailDot(x, y) {
+            var dot = document.createElement('span');
+            dot.className = 'cbg-artifact-char';
+            dot.style.left = Math.round(x) + 'px';
+            dot.style.top  = Math.round(y) + 'px';
+            dot.style.fontSize = '7px';
+            dot.style.opacity = '0.62';
+            dot.style.transition = 'opacity 1.6s ease';
+            dot.textContent = '·';
+            el.appendChild(dot);
+            requestAnimationFrame(function () { requestAnimationFrame(function () { dot.style.opacity = '0'; }); });
+            setTimeout(function () { if (dot.parentNode) dot.parentNode.removeChild(dot); }, 1800);
+        }
+        // Packet — 8 glyphs trailing the head; drops ghost dots every ~10% of travel
+        function sendPacket(fromNode, toNode) {
+            if (killed) return;
+            var LEN = 8;
+            var pkg = document.createElement('div');
+            pkg.style.position = 'absolute'; pkg.style.left = '0px'; pkg.style.top = '0px';
+            var pktGlyphs = [];
+            for (var i = 0; i < LEN; i++) {
+                var sp = document.createElement('span');
+                sp.className = 'cbg-artifact-char';
+                sp.style.fontSize = Math.max(7, 13 - i) + 'px';
+                sp.style.opacity = (0.95 - i * 0.10).toFixed(2);
+                sp.textContent = i === 0 ? artGlyph() : '·';
+                pkg.appendChild(sp);
+                pktGlyphs.push(sp);
+            }
+            el.appendChild(pkg);
+            var pktStart = performance.now(), TRAVEL = 720;
+            var lastDropP = -1;
+            function pktStep(ts2) {
+                if (killed) { if (pkg.parentNode) pkg.parentNode.removeChild(pkg); return; }
+                var p = (ts2 - pktStart) / TRAVEL;
+                if (p >= 1) { if (pkg.parentNode) pkg.parentNode.removeChild(pkg); return; }
+                if (p > lastDropP + 0.10) {
+                    lastDropP = p;
+                    var dx = fromNode.curX + (toNode.curX - fromNode.curX) * p;
+                    var dy = fromNode.curY + (toNode.curY - fromNode.curY) * p;
+                    dropTrailDot(dx, dy);
+                }
+                for (var i = 0; i < LEN; i++) {
+                    var pi = Math.max(0, p - i * 0.06);
+                    var x = fromNode.curX + (toNode.curX - fromNode.curX) * pi;
+                    var y = fromNode.curY + (toNode.curY - fromNode.curY) * pi;
+                    pktGlyphs[i].style.left = Math.round(x) + 'px';
+                    pktGlyphs[i].style.top  = Math.round(y) + 'px';
+                }
+                requestAnimationFrame(pktStep);
+            }
+            requestAnimationFrame(pktStep);
+        }
+        var sparker = setInterval(function () {
+            var a = nodes[Math.floor(Math.random() * NODES)];
+            var b = nodes[Math.floor(Math.random() * NODES)];
+            if (a !== b) sendPacket(a, b);
+        }, 250);
+        var allG = []; for (var i = 0; i < nodes.length; i++) allG.push.apply(allG, nodes[i].glyphs);
+        var glitchTimer = setInterval(function () { allG[Math.floor(Math.random() * allG.length)].textContent = artGlyph(); }, 150);
+        setTimeout(function () {
+            killed = true; clearInterval(glitchTimer); clearInterval(sparker);
+            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
+            setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }, ttl);
+    }
+
+    // ── Variant: PHASEFIELD — wide grid; cell brightness phases by (x+y+t) wave ─
+    function spawnArtifactPhasefield(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0'; el.style.transition = 'opacity 0.55s ease';
+        var COLS = 9, ROWS = 5, SP = 11;
+        var cells = [];
+        for (var r = 0; r < ROWS; r++) {
+            for (var c = 0; c < COLS; c++) {
+                var lx = (c - (COLS - 1) / 2) * SP;
+                var ly = (r - (ROWS - 1) / 2) * SP;
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                span.style.left = Math.round(lx) + 'px';
+                span.style.top  = Math.round(ly) + 'px';
+                span.style.fontSize = '10px';
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                el.appendChild(span);
+                cells.push({ el: span, c: c, r: r });
+            }
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8400, killed = false;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            var t = elapsed / 400;
+            for (var i = 0; i < cells.length; i++) {
+                var cell = cells[i];
+                var phase = (cell.c + cell.r) * 0.45 - t;
+                var v = Math.sin(phase) * 0.5 + 0.5;
+                cell.el.style.opacity = (0.20 + v * 0.75).toFixed(2);
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            for (var i = 0; i < 4; i++) cells[Math.floor(Math.random() * cells.length)].el.textContent = artGlyph();
+        }, 150);
+        setTimeout(function () { killed = true; clearInterval(glitchTimer); el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0'; setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450); }, ttl);
+    }
+
+    // ── Variant: SHATTER — cluster fractures into N pieces that drift apart ──────
+    function spawnArtifactShatter(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0'; el.style.transition = 'opacity 0.55s ease';
+        var SHARDS = 9;
+        var shards = [];
+        for (var i = 0; i < SHARDS; i++) {
+            var shard = document.createElement('div');
+            shard.style.position = 'absolute';
+            shard.style.left = '0px'; shard.style.top = '0px';
+            // Each shard = a 2x2 mini-grid of glyphs
+            for (var k = 0; k < 4; k++) {
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                span.style.left = ((k % 2) * 7) + 'px';
+                span.style.top  = (Math.floor(k / 2) * 7) + 'px';
+                span.style.fontSize = '11px';
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                shard.appendChild(span);
+            }
+            el.appendChild(shard);
+            var ang = (i / SHARDS) * Math.PI * 2 + Math.random() * 0.4;
+            shards.push({ el: shard, dx: Math.cos(ang) * (40 + Math.random() * 25), dy: Math.sin(ang) * (40 + Math.random() * 25), spin: (Math.random() - 0.5) * 0.6 });
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8400, killed = false;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            // Hold 600ms, then drift apart with deceleration
+            var driftT = Math.max(0, elapsed - 600) / 1000;
+            var ease = 1 - Math.pow(1 - Math.min(1, driftT / 4), 3);
+            for (var i = 0; i < shards.length; i++) {
+                var s = shards[i];
+                s.el.style.transform = 'translate(' + (s.dx * ease).toFixed(1) + 'px,' + (s.dy * ease).toFixed(1) + 'px) rotate(' + (driftT * s.spin * 60).toFixed(1) + 'deg)';
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var allG = el.querySelectorAll('.cbg-artifact-char');
+        var glitchTimer = setInterval(function () {
+            for (var i = 0; i < 3; i++) allG[Math.floor(Math.random() * allG.length)].textContent = artGlyph();
+        }, 150);
+        setTimeout(function () { killed = true; clearInterval(glitchTimer); el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0'; setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450); }, ttl);
+    }
+
+    // ── Variant: SPIROGRAM — glyphs trail along an epitrochoid (Spirograph) path ──
+    function spawnArtifactSpirogram(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0'; el.style.transition = 'opacity 0.55s ease';
+        // Epitrochoid params — chosen so the trail makes a visible petal pattern
+        var Rc = 22, rc = 6, d = 10;
+        var N = 18;
+        var trail = [];
+        for (var i = 0; i < N; i++) {
+            var span = document.createElement('span');
+            span.className = 'cbg-artifact-char';
+            span.style.fontSize = '10px';
+            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+            el.appendChild(span);
+            trail.push(span);
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 9000, killed = false;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            var leadP = elapsed * 0.0040;
+            for (var i = 0; i < N; i++) {
+                var p = leadP - i * 0.20;
+                var x = (Rc + rc) * Math.cos(p) - d * Math.cos(((Rc + rc) / rc) * p);
+                var y = (Rc + rc) * Math.sin(p) - d * Math.sin(((Rc + rc) / rc) * p);
+                trail[i].style.left = Math.round(x) + 'px';
+                trail[i].style.top  = Math.round(y) + 'px';
+                trail[i].style.opacity = (0.30 + 0.60 * (1 - i / N)).toFixed(2);
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () { trail[Math.floor(Math.random() * N)].textContent = artGlyph(); }, 120);
+        setTimeout(function () { killed = true; clearInterval(glitchTimer); el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0'; setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450); }, ttl);
+    }
+
+    // ── Variant: PULSARRING — ring with brightness wave traveling around it ──────
+    function spawnArtifactPulsarring(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0'; el.style.transition = 'opacity 0.55s ease';
+        var N = 16, R = 30;
+        var ring = [];
+        for (var i = 0; i < N; i++) {
+            var a = (i / N) * Math.PI * 2;
+            var span = document.createElement('span');
+            span.className = 'cbg-artifact-char';
+            span.style.left = Math.round(Math.cos(a) * R) + 'px';
+            span.style.top  = Math.round(Math.sin(a) * R) + 'px';
+            span.style.fontSize = '12px';
+            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+            el.appendChild(span);
+            ring.push({ el: span, idx: i });
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8400, killed = false;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            var head = (elapsed / 110) % N;
+            for (var i = 0; i < ring.length; i++) {
+                var dist = Math.abs(i - head);
+                if (dist > N / 2) dist = N - dist;
+                var brightness = Math.max(0, 1 - dist / 3);
+                var op = (0.25 + brightness * 0.70).toFixed(2);
+                var scale = (0.95 + brightness * 0.35).toFixed(2);
+                ring[i].el.style.opacity = op;
+                ring[i].el.style.transform = 'scale(' + scale + ')';
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            for (var i = 0; i < 2; i++) ring[Math.floor(Math.random() * N)].el.textContent = artGlyph();
+        }, 130);
+        setTimeout(function () { killed = true; clearInterval(glitchTimer); el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0'; setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450); }, ttl);
+    }
+
     // Dispatcher — every spawn rolls a random variant from the enum so the screen cycles
-    // through every iteration of how artifacts have ever looked.
-    function spawnArtifact() {
+    // through every iteration of how artifacts have ever looked. Pass forceVariant
+    // (e.g. 'SPIDER') to bypass the random roll — used by the demo page.
+    function spawnArtifact(forceVariant) {
         var host = getHost();
         if (!host) return;
-        var variant = ART_VARIANTS[Math.floor(Math.random() * ART_VARIANTS.length)];
+        var variant = forceVariant || ART_VARIANTS[Math.floor(Math.random() * ART_VARIANTS.length)];
         switch (variant) {
             case 'SCATTER':   spawnArtifactScatter(host);   break;
             case 'LATTICE':   spawnArtifactLattice(host);   break;
@@ -6110,14 +6595,21 @@ window.consoleBg = (function () {
             case 'WANDERER':  spawnArtifactWanderer(host);  break;
             case 'SPIDER':    spawnArtifactSpider(host);    break;
             case 'INCHWORM':  spawnArtifactInchworm(host);  break;
-            case 'SNAKE':     spawnArtifactSnake(host);     break;
             case 'HOPPER':    spawnArtifactHopper(host);    break;
-            case 'CRAB':      spawnArtifactCrab(host);      break;
             case 'JELLY':     spawnArtifactJelly(host);     break;
             case 'SQUID':     spawnArtifactSquid(host);     break;
             case 'BEETLE':    spawnArtifactBeetle(host);    break;
             case 'TADPOLE':   spawnArtifactTadpole(host);   break;
             case 'ANT':       spawnArtifactAnt(host);       break;
+            case 'MOIRE':      spawnArtifactMoire(host);      break;
+            case 'VORTEX':     spawnArtifactVortex(host);     break;
+            case 'EXPLOSION':  spawnArtifactExplosion(host);  break;
+            case 'ORBIT':      spawnArtifactOrbit(host);      break;
+            case 'NETWORK':    spawnArtifactNetwork(host);    break;
+            case 'PHASEFIELD': spawnArtifactPhasefield(host); break;
+            case 'SHATTER':    spawnArtifactShatter(host);    break;
+            case 'SPIROGRAM':  spawnArtifactSpirogram(host);  break;
+            case 'PULSARRING': spawnArtifactPulsarring(host); break;
         }
     }
 
@@ -6663,7 +7155,7 @@ window.consoleBg = (function () {
             s.style.animationDuration = dur + 'ms';
             host.appendChild(s);
             (function (el) {
-                setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, dur + 60);
+                setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, dur + 60);
             })(s);
         }
     }
@@ -6712,7 +7204,7 @@ window.consoleBg = (function () {
             elems.forEach(function (el) {
                 el.style.transition = 'opacity 0.4s ease';
                 el.style.opacity = '0';
-                setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+                setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 450);
             });
             gridPath.forEach(function (p) { NET_OCCUPIED.delete(netGk(p[0], p[1])); });
         }, 1100);
@@ -6727,7 +7219,7 @@ window.consoleBg = (function () {
         el.style.left = px + 'px';
         el.style.top  = py + 'px';
         host.appendChild(el);
-        setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 750);
+        setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, 750);
         if (depth < 2 && Math.random() < 0.18) {
             setTimeout(function () { netSpawnTracer(host, px, py, col, depth + 1); }, rand(200, 700));
         }
@@ -6751,6 +7243,11 @@ window.consoleBg = (function () {
             if (c > mostCells) { mostCells = c; target = a; }
         });
         if (!target || mostCells < 16) return; // nothing big enough — silent bail
+
+        // Mark the artifact as under attack — its own despawn timer will skip removal
+        // while this flag is set. The predator removes the empty container itself when
+        // every cell has been consumed.
+        target.__predated = true;
 
         var hostRect = host.getBoundingClientRect();
         var tRect    = target.getBoundingClientRect();
@@ -7024,7 +7521,7 @@ window.consoleBg = (function () {
             });
         });
         setTimeout(function() {
-            if (el.parentNode) el.parentNode.removeChild(el);
+            if (!el.__predated && el.parentNode) el.parentNode.removeChild(el);
             netSpawnPing(host, tx, ty, col, depth);
         }, ms + 60);
     }
@@ -7326,7 +7823,7 @@ window.consoleBg = (function () {
                         el.style.animation  = 'none';
                         el.style.transition = 'opacity ' + fadeMs + 'ms ease';
                         el.style.opacity    = '0';
-                        setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, fadeMs + 60);
+                        setTimeout(function () { if (!el.__predated && el.parentNode) el.parentNode.removeChild(el); }, fadeMs + 60);
                     });
                     gridPath.forEach(function (p) { NET_OCCUPIED.delete(netGk(p[0], p[1])); });
                     // Release the single-connection lock once the fade is done — next attempt allowed
@@ -7363,8 +7860,8 @@ window.consoleBg = (function () {
                     setTimeout(function () { NET_BUSY = false; }, 1600);
                     return;
                 }
-                // ARC — sharp-turn spark on ~15% of interior corners (every grid corner is a 90° turn)
-                if (segIdx > 0 && segIdx < pts.length - 1 && Math.random() < 0.15) {
+                // ARC — sharp-turn spark on ~16.5% of interior corners (every grid corner is a 90° turn)
+                if (segIdx > 0 && segIdx < pts.length - 1 && Math.random() < 0.165) {
                     netSpawnSparks(host, pts[segIdx][0], pts[segIdx][1], col);
                 }
             }
@@ -7400,7 +7897,7 @@ window.consoleBg = (function () {
     var RATE_NET      = 0.08;  // network connection attempts
     var RATE_MORSE    = 0.05;  // glowing Morse-code dots
     var RATE_FOLDER   = 0.04;  // folder-rip browser windows
-    var RATE_PREDATOR = 0.012; // artifact-predator swarm — rare on purpose, surprise event
+    var RATE_PREDATOR = 0.05;  // artifact-predator swarm — bumped from 0.012 for more visible hunts
     // RATE_WIN = remainder — console windows (black / blue / amber)
 
     function tickDelay() {
@@ -7441,6 +7938,17 @@ window.consoleBg = (function () {
         tickTimer = setTimeout(tick, rand(500, 1500));
     }
 
+    // Pause / resume the auto-spawn tick loop. Used by the demo page so the host can
+    // isolate a single manually-spawned effect without background noise.
+    function setAutoSpawn(on) {
+        if (on) {
+            start();              // start() is idempotent — no-op when already ticking
+        } else if (tickTimer) {
+            clearTimeout(tickTimer);
+            tickTimer = null;
+        }
+    }
+
     // Initial start
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', start);
@@ -7470,5 +7978,27 @@ window.consoleBg = (function () {
         }
     }).observe(document.body, { childList: true, subtree: true });
 
-    return { start: start };
+    // _demo: internal-but-public spawn handles for the demo/observation page.
+    // Underscore-prefixed to signal "dev tool, not production API". Safe to ignore;
+    // accessing these has no side effect until you invoke them.
+    return {
+        start: start,
+        _demo: {
+            ART_VARIANTS: ART_VARIANTS,
+            GEO_KEYS: GEO_KEYS,
+            spawnArtifact: spawnArtifact,
+            spawnGeoWindow: spawnGeoWindow,
+            spawnError: spawnError,
+            spawnWarning: spawnWarning,
+            spawnMemo: spawnMemo,
+            spawnFrag: spawnFrag,
+            spawnNetConnect: spawnNetConnect,
+            spawnMorseDot: spawnMorseDot,
+            spawnFolderRip: spawnFolderRip,
+            spawnArtifactPredator: spawnArtifactPredator,
+            spawnWindow: spawnWindow,
+            spawnCascade: spawnCascade,
+            setAutoSpawn: setAutoSpawn
+        }
+    };
 })();
