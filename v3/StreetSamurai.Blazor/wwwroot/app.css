@@ -1365,7 +1365,7 @@ textarea.auto-grow {
 }
 .cbg-geo-canvas { display: block; background: transparent; flex-shrink: 0; }
 .cbg-geo-report {
-    width: 160px;
+    width: 144px;
     height: 110px;
     overflow: hidden;
     position: relative;
