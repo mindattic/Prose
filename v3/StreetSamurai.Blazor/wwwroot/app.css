@@ -1168,7 +1168,7 @@ textarea.auto-grow {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
-    filter: blur(5px);
+    filter: blur(1.2px);
     opacity: 0;
     animation: cbg-line-in 0.1s ease forwards;
 }
@@ -1176,8 +1176,8 @@ textarea.auto-grow {
     from { opacity: 0; transform: translateX(-3px); }
     to   { opacity: 1; transform: translateX(0); }
 }
-.cbg-ok  { color: rgba(63,  185, 80,  0.6); filter: blur(5px); }
-.cbg-err { color: rgba(248,  81, 73,  0.6); filter: blur(5px); }
+.cbg-ok  { color: rgba(63,  185, 80,  0.6); filter: blur(1.2px); }
+.cbg-err { color: rgba(248,  81, 73,  0.6); filter: blur(1.2px); }
 
 /* Fatal error popup — scary red box, icon left, text right, no button */
 .cbg-err-popup {
@@ -1795,7 +1795,16 @@ textarea.auto-grow {
     from { opacity: 0; transform: translateY(-4px); }
     to   { opacity: 0.55; transform: translateY(0); }
 }
-/* memo exit handled by JS erasure — no flicker animation needed */
+.cbg-memo--collapse {
+    transform-origin: center center;
+    animation: cbg-memo-collapse 0.34s cubic-bezier(0.65, 0, 0.85, 0.35) forwards;
+}
+@keyframes cbg-memo-collapse {
+    0%   { opacity: 0.55; transform: scale(1, 1);     filter: blur(0); }
+    55%  { opacity: 0.50; transform: scale(1, 0.04);  filter: blur(0.4px); }
+    100% { opacity: 0;    transform: scale(0, 0.04);  filter: blur(1.6px); }
+}
+/* memo exit: JS clears characters, then triggers cbg-memo--collapse */
 
 /* ── Console prompt cursor ─────────────────────────────────────────────── */
 .cbg-cursor {

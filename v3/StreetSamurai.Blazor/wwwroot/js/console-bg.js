@@ -28,6 +28,16 @@ window.consoleBg = (function () {
     //   CENTIPEDE  — multi-segment chain, peristaltic wave + leader feelers
     //   PULSE      — concentric Fibonacci rings, lub-dub heartbeat radiating outward
     //   WANDERER   — small grid walks the screen, pauses to "look around"
+    //   SPIDER     — 8-leg radial cluster; legs alternate-pulse in walking gait
+    //   INCHWORM   — linear chain bunches and extends, translating per cycle
+    //   SNAKE      — chain travels along a sinusoidal S-curve, head-led
+    //   HOPPER     — cluster crouches, launches in parabolic arc, lands, repeats
+    //   CRAB       — wide body with two claws; scuttles sideways perpendicular to axis
+    //   JELLY      — concentric rings pulse outward/in; whole body drifts vertically
+    //   SQUID      — pulse-jet propulsion (burst + glide), trailing tentacles sway
+    //   BEETLE     — scurry-stop-scurry rhythm with shell shimmer and antennae
+    //   TADPOLE    — small body + long sinusoidal whipping tail (tail propels motion)
+    //   ANT        — zigzag wobble path with two antennae feelers at the front
     //
     // PULSAR (Morse) MODE VARIANTS:
     //   BLINK      — classic on/off pulse mode (90% of spawns)
@@ -2746,6 +2756,105 @@ window.consoleBg = (function () {
         'Task.Run(async () => {\n    var trie = new PatriciaRadixTrie();\n    while (!cts.IsCancellationRequested) {\n        var update = await routing\n            .DequeueUpdateAsync(cts.Token);\n        switch (update.Type) {\n            case RouteUpdate.Advertise:\n                trie.Insert(\n                    update.Prefix,\n                    update.NextHop);\n                log.Debug(\n                    $"route add {update.Prefix}");\n                break;\n            case RouteUpdate.Withdraw:\n                trie.Remove(update.Prefix);\n                log.Debug(\n                    $"route del {update.Prefix}");\n                break;\n        }\n        fib.Rebuild(trie);\n        metrics.RouteCount =\n            trie.Count;\n    }\n});',
         'for (int s = 0; s < samplers.Count; s++) {\n    var sample = await samplers[s]\n        .SampleAsync(cts.Token);\n    if (sample == null) continue;\n    var normalized = normalizer\n        .Normalize(sample, baseline[s]);\n    var anomaly    = detector\n        .Check(s, normalized);\n    if (anomaly.Detected) {\n        log.Warn(\n            $"sampler {s} anomaly: {anomaly.Score:F3} σ={anomaly.Sigma:F1}");\n        if (anomaly.Sigma > CRITICAL_SIGMA) {\n            await alerting.CriticalAsync(\n                s, anomaly);\n        } else {\n            await alerting.WarnAsync(\n                s, anomaly);\n        }\n    }\n    metrics.Samples[s] = sample;\n}',
         'while (!shutdown.IsCancellationRequested) {\n    var job = await queue\n        .DequeueAsync(DEQUEUE_TIMEOUT_MS,\n                      cts.Token);\n    if (job == null) {\n        if (++idleTicks > MAX_IDLE_TICKS) {\n            log.Debug("worker idle — suspend");\n            await Task.Delay(\n                IDLE_SUSPEND_MS, cts.Token);\n            idleTicks = 0;\n        }\n        continue;\n    }\n    idleTicks = 0;\n    var sw = Stopwatch.StartNew();\n    try {\n        await job.ExecuteAsync(cts.Token);\n        metrics.Done++;\n        log.Debug(\n            $"job {job.Id} done {sw.ElapsedMs}ms");\n    } catch (Exception ex) {\n        metrics.Failed++;\n        log.Error(\n            $"job {job.Id} error: {ex.Message}");\n        await queue.RetryAsync(job);\n    }\n}',
+        // 100 more
+        'for (int r = 0; r < CORTEX_RINGS; r++) {\n    var z = cortex.SampleZ(r);\n    if (Math.Abs(z) > Z_SPIKE) {\n        log.Warn($"cortex ring{r} spike z={z:F2}");\n        spikes[r]++;\n        if (spikes[r] > MAX_SPIKES) {\n            cortex.Disable(r);\n            audit.Record(\n                AuditEvent.CortexDisabled, r);\n        }\n        continue;\n    }\n    spikes[r] = Math.Max(0, spikes[r] - 1);\n    baseline[r] = baseline[r] * 0.99f + z * 0.01f;\n}',
+        'while (bci.SessionAge < MAX_SESSION_AGE) {\n    var raw = cortex.ReadFrame();\n    if (raw.SnrDb < MIN_SNR_DB) {\n        log.Warn($"cortex snr {raw.SnrDb:F1}dB low");\n        await Task.Delay(SNR_RECOVER_MS);\n        continue;\n    }\n    var spec = fft.Compute(raw, FFT_WINDOW);\n    powerAlpha = spec.BandPower(8, 13);\n    powerBeta  = spec.BandPower(13, 30);\n    if (powerBeta / powerAlpha > BETA_DOMINANT) {\n        focus.Promote();\n    } else if (powerAlpha > REST_THRESHOLD) {\n        focus.Demote();\n    }\n    await bci.PostFrameAsync(raw);\n}',
+        'foreach (var sample in cortex\n    .StreamSliding(WINDOW_MS, STEP_MS,\n                   cts.Token)) {\n    if (artifact.Detect(sample)) {\n        artifactsInWindow++;\n        continue;\n    }\n    if (artifactsInWindow > ARTIFACT_REJECT) {\n        log.Warn(\n            $"window dropped: {artifactsInWindow} artifacts");\n        artifactsInWindow = 0;\n        continue;\n    }\n    var feat = extractor.Extract(sample);\n    var intent = bim.Classify(feat);\n    history.Add(intent);\n    artifactsInWindow = 0;\n}',
+        'Task.Run(async () => {\n    while (cortex.IsLinked) {\n        var probe = cortex.ProbeImpedance();\n        for (int r = 0; r < probe.Length; r++) {\n            if (probe[r] > Z_DEGRADED_KOHM) {\n                log.Warn(\n                    $"ring{r} z={probe[r]}kΩ degrading");\n                gel.RequestRefill(r);\n            }\n        }\n        await Task.Delay(\n            IMPEDANCE_INTERVAL_MS, cts.Token);\n    }\n});',
+        'for (int e = 0; e < CAL_EPOCHS; e++) {\n    var trials = await operator2\n        .CollectTrialsAsync(TRIALS_PER_EPOCH,\n                            cts.Token);\n    bim.Train(trials);\n    var acc = bim.Validate(holdout);\n    log.Info(\n        $"cal epoch {e}: acc={acc:P1}");\n    if (acc >= TARGET_CAL_ACC) {\n        bim.Commit();\n        log.Info("cal converged");\n        break;\n    }\n    if (e == CAL_EPOCHS - 1) {\n        log.Warn("cal incomplete — partial commit");\n        bim.PartialCommit();\n    }\n}',
+        'while (intent.IsTransitioning) {\n    var next = bim.PeekIntent();\n    if (next == lastIntent) {\n        stableTicks++;\n        if (stableTicks > STABILIZE_TICKS) {\n            bci.Commit(next);\n            intent.MarkStable();\n            break;\n        }\n    } else {\n        stableTicks = 0;\n        lastIntent = next;\n    }\n    await Task.Delay(HYSTERESIS_MS);\n}',
+        'foreach (var spike in cortex\n    .DetectSpikes(THRESHOLD_UV,\n                  REFRACTORY_MS)) {\n    spikeTrain.Add(spike);\n    if (spikeTrain.Count > MAX_TRAIN_LEN) {\n        spikeTrain.RemoveAt(0);\n    }\n    var rate = spikeTrain.Count /\n        (RATE_WINDOW_MS / 1000f);\n    if (rate > BURST_RATE_HZ) {\n        log.Warn(\n            $"cortex burst {rate:F1}Hz @{spike.Channel}");\n        burstDetector.Record(spike);\n    }\n}',
+        'for (int r = 0; r < CONTACT_RINGS; r++) {\n    var polA = adc.SamplePolarity(r, Polarity.A);\n    var polB = adc.SamplePolarity(r, Polarity.B);\n    if (Math.Sign(polA) == Math.Sign(polB)) {\n        log.Error(\n            $"ring{r} polarity collapse");\n        cortex.Reseat(r);\n        if (!cortex.Verify(r)) {\n            cortex.Disable(r);\n            audit.Record(\n                AuditEvent.RingPolarityFail, r);\n        }\n    }\n}',
+        'while (!bci.IsLocked) {\n    try {\n        var key = await neural\n            .DeriveLockKeyAsync(\n                operatorId, sessionSalt,\n                cts.Token);\n        if (bci.TryLock(key)) {\n            log.Info("bci lock established");\n            break;\n        }\n        log.Warn("bci lock rejected — retry");\n    } catch (NeuralDesyncException) {\n        await cortex.ResyncAsync(cts.Token);\n    }\n    await Task.Delay(LOCK_RETRY_MS, cts.Token);\n}',
+        'Task.Run(async () => {\n    while (cortex.IsLinked) {\n        var baseline = cortex.MeasureBaseline(\n            BASELINE_SAMPLES);\n        for (int r = 0; r < baseline.Length; r++) {\n            var delta = Math.Abs(\n                baseline[r] - nominal[r]);\n            if (delta > BASELINE_DRIFT) {\n                log.Warn(\n                    $"ring{r} baseline drift {delta:F1}");\n                cortex.Recenter(r);\n            }\n        }\n        await Task.Delay(\n            BASELINE_INTERVAL_MS, cts.Token);\n    }\n});',
+        'for (int p = 0; p < RBS_PORTS; p++) {\n    rbs.SelectPort(p);\n    var enc = rbs.ReadEncoder();\n    if (Math.Abs(enc - rbs.Expected(p)) >\n            ENCODER_TOL) {\n        log.Error(\n            $"rbs port{p} encoder off by {enc - rbs.Expected(p)}");\n        rbs.Recalibrate(p);\n        if (!rbs.Verify(p)) {\n            weapon.SafetyEngage();\n            throw new RbsEncoderException(p);\n        }\n    }\n}',
+        'while (rbs.IsCycling) {\n    var state = rbs.PollBolt();\n    if (state == BoltState.OutOfBattery &&\n            elapsed > OOB_TIMEOUT_MS) {\n        log.Error(\n            $"bolt OOB for {elapsed}ms");\n        weapon.ClearJam();\n        if (!rbs.Verify(Port.Current)) {\n            weapon.SafetyEngage();\n            throw new BoltStuckException();\n        }\n    }\n    if (state == BoltState.InBattery) {\n        rbs.MarkReady();\n        break;\n    }\n    elapsed += POLL_INTERVAL_MS;\n    await Task.Delay(POLL_INTERVAL_MS);\n}',
+        'foreach (var port in rbs.Ports) {\n    var rounds = magazine.ReadCounter(port);\n    if (rounds < LOW_ROUND_THRESHOLD) {\n        log.Warn(\n            $"port {port} rounds {rounds} low");\n        hud.SetIndicator(port, IndicatorState.Low);\n    } else if (rounds == 0) {\n        rbs.LockPort(port);\n        led.Set(port, LedColor.Red);\n    }\n    metrics.RoundsByPort[port] = rounds;\n}',
+        'switch (selector.Position) {\n    case SelectorPosition.Safe:\n        weapon.SafetyEngage();\n        led.Set(LedColor.Off);\n        break;\n    case SelectorPosition.Semi:\n        weapon.SetMode(FireMode.Semi);\n        led.Set(LedColor.Green);\n        break;\n    case SelectorPosition.Burst:\n        weapon.SetMode(FireMode.Burst3);\n        led.Set(LedColor.Amber);\n        break;\n    case SelectorPosition.Auto:\n        weapon.SetMode(FireMode.Auto);\n        led.Set(LedColor.Red);\n        break;\n    default:\n        log.Warn(\n            $"selector unknown pos {selector.Position}");\n        weapon.SafetyEngage();\n        break;\n}',
+        'while (trigger.IsPressed) {\n    var force = trigger.ReadForce();\n    if (force > TRIGGER_BREAK_FORCE) {\n        if (!weapon.IsSafe) {\n            await weapon.FireAsync();\n            shotsTaken++;\n            if (shotsTaken >= burstLimit) {\n                weapon.HaltBurst();\n                break;\n            }\n        }\n    }\n    if (trigger.HoldMs > MAX_HOLD_MS) {\n        log.Warn(\n            $"trigger held {trigger.HoldMs}ms");\n        weapon.SafetyEngage();\n        break;\n    }\n    await Task.Delay(1);\n}',
+        'for (int slot = 0; slot < MAG_SLOTS; slot++) {\n    var mag = magazine.Read(slot);\n    if (mag.IsEmpty) continue;\n    if (mag.Sn != mag.ExpectedSn) {\n        log.Warn(\n            $"mag slot{slot} sn mismatch {mag.Sn:X}");\n        audit.Record(\n            AuditEvent.MagMismatch, slot);\n        magazine.Eject(slot);\n        continue;\n    }\n    inventory[slot] = mag;\n}',
+        'Task.Run(async () => {\n    while (weapon.IsArmed) {\n        var temp = suppressor.ReadTemp();\n        if (temp > SUPPRESSOR_CRIT_C) {\n            log.Error(\n                $"suppressor {temp:F0}C — cooldown");\n            weapon.RequestCooldown();\n            await Task.Delay(\n                COOLDOWN_MS, cts.Token);\n        } else if (temp > SUPPRESSOR_WARN_C) {\n            hud.SetIndicator(\n                Hud.SuppressorWarn, true);\n        }\n        await Task.Delay(\n            TEMP_POLL_MS, cts.Token);\n    }\n});',
+        'foreach (var actuator in rbs.Actuators) {\n    if (actuator.LubeCycles >=\n            LUBE_INTERVAL) {\n        log.Info(\n            $"actuator {actuator.Id} lube due");\n        await actuator.LubeAsync(\n            LUBE_MICROLITERS);\n        actuator.LubeCycles = 0;\n        audit.Record(\n            AuditEvent.RbsLubed, actuator.Id);\n    }\n    if (actuator.WearScore > WEAR_REPLACE) {\n        log.Error(\n            $"actuator {actuator.Id} wear {actuator.WearScore:F2}");\n        rbs.FlagForReplacement(actuator.Id);\n    }\n}',
+        'for (int cycle = 0; cycle < TEST_CYCLES; cycle++) {\n    rbs.LoadSpring(SPRING_LOAD_N);\n    var rebound = rbs.MeasureRebound();\n    if (rebound < REBOUND_MIN) {\n        log.Warn(\n            $"spring rebound {rebound:F1}mm low @ cycle {cycle}");\n        rbs.FlagSpringFatigue();\n        break;\n    }\n    rbs.UnloadSpring();\n    if (cycle % 100 == 0) {\n        log.Debug(\n            $"spring cycle {cycle}: rebound={rebound:F1}mm");\n    }\n}',
+        'while (hkb.IsCycling) {\n    var stroke = hkb.SampleStroke();\n    if (stroke.Velocity > VELOCITY_LIMIT) {\n        log.Warn(\n            $"hkb stroke v={stroke.Velocity:F2}m/s high");\n        overspeedCount++;\n        if (overspeedCount > OVERSPEED_TRIP) {\n            hkb.EmergencyVent();\n            throw new HkbOverspeedException();\n        }\n    }\n    hkb.AbsorbEnergy(stroke.KineticJ);\n    metrics.HkbEnergyJ += stroke.KineticJ;\n}',
+        'for (int s = 0; s < hkb.SpringStages; s++) {\n    var preload = hkb.MeasurePreload(s);\n    if (preload < PRELOAD_MIN[s] ||\n            preload > PRELOAD_MAX[s]) {\n        log.Warn(\n            $"hkb stage{s} preload {preload}N out of spec");\n        hkb.RequestAdjust(s, NOMINAL_PRELOAD[s]);\n        adjusted++;\n    }\n}\nif (adjusted > MAX_ADJUSTMENTS) {\n    log.Error("hkb preload — service required");\n    audit.Record(AuditEvent.HkbServiceDue);\n}',
+        'Task.Run(async () => {\n    while (hkb.IsActive) {\n        var visc = hkb.MeasureViscosity();\n        if (visc < VISC_MIN_CST ||\n                visc > VISC_MAX_CST) {\n            log.Warn(\n                $"hkb fluid visc {visc:F2}cSt out of band");\n            hkb.FlagFluidService();\n        }\n        viscHistory.Add(visc);\n        if (viscHistory.Count > VISC_HIST_SIZE) {\n            viscHistory.RemoveAt(0);\n        }\n        await Task.Delay(\n            VISC_INTERVAL_MS, cts.Token);\n    }\n});',
+        'foreach (var damper in hkb.Dampers) {\n    var wear = wearModel.Estimate(\n        damper.Cycles,\n        damper.AvgEnergyJ,\n        damper.FluidAgeHours);\n    if (wear > WEAR_REPLACE_THRESH) {\n        log.Error(\n            $"damper {damper.Id} wear {wear:F2}");\n        hkb.FlagDamperReplace(damper.Id);\n    } else if (wear > WEAR_WARN_THRESH) {\n        log.Warn(\n            $"damper {damper.Id} wear {wear:F2}");\n    }\n    metrics.DamperWear[damper.Id] = wear;\n}',
+        'while (hkb.HasStrokeQueue) {\n    var stroke = hkb.DequeueStroke();\n    var env = envelope.Sample(stroke.Time);\n    if (Math.Abs(stroke.Force - env.Expected) >\n            env.ToleranceN) {\n        log.Warn(\n            $"hkb stroke envelope deviation {stroke.Force - env.Expected:F1}N");\n        envelope.Adapt(stroke.Force);\n    }\n    if (++strokeCount % LOG_EVERY == 0) {\n        log.Debug(\n            $"hkb strokes={strokeCount}");\n    }\n}',
+        'for (int s = 0; s < hkb.Seals.Count; s++) {\n    var leak = hkb.MeasureSealLeak(s);\n    if (leak > SEAL_LEAK_LIMIT) {\n        log.Error(\n            $"hkb seal{s} leak {leak:F2}mL/min");\n        hkb.IsolateChamber(s);\n        sealLeaks.Add(s);\n        if (sealLeaks.Count > MAX_SEAL_LEAKS) {\n            hkb.RequestShutdown();\n            throw new HkbSealException(\n                sealLeaks.Count);\n        }\n    }\n}',
+        'while (hkb.Regulator.NeedsAdjust) {\n    var current = hkb.Regulator.ReadPsi();\n    var target  = hkb.Regulator.TargetPsi();\n    var err = target - current;\n    if (Math.Abs(err) < REGULATOR_DEADBAND)\n        break;\n    hkb.Regulator.Adjust(err * REGULATOR_KP);\n    await Task.Delay(REGULATOR_STEP_MS);\n    if (++iters > REGULATOR_MAX_ITERS) {\n        log.Warn(\n            $"regulator did not converge: err={err:F1}psi");\n        hkb.Regulator.Fault();\n        break;\n    }\n}',
+        'Task.Run(async () => {\n    while (hkb.IsActive) {\n        var snap = hkb.Telemetry.Snapshot();\n        await telemetry.EmitAsync(\n            "hkb.psi",     snap.Psi);\n        await telemetry.EmitAsync(\n            "hkb.fluid",   snap.FluidPct);\n        await telemetry.EmitAsync(\n            "hkb.cycles",  snap.Cycles);\n        await telemetry.EmitAsync(\n            "hkb.wear",    snap.WearScore);\n        await Task.Delay(\n            TELEMETRY_INTERVAL_MS, cts.Token);\n    }\n});',
+        'for (int p = 0; p < hkb.AlignPoints.Count; p++) {\n    var offset = hkb.MeasureAlign(p);\n    if (Math.Abs(offset) > ALIGN_TOLERANCE_MM) {\n        log.Warn(\n            $"hkb align p{p} offset {offset:F2}mm");\n        await hkb.AdjustAlignAsync(p,\n            -offset * ALIGN_GAIN);\n        adjusted++;\n        if (adjusted > MAX_ALIGN_ADJUSTMENTS) {\n            log.Error("hkb alignment — service required");\n            audit.Record(AuditEvent.HkbAlignFault);\n            break;\n        }\n    }\n}',
+        'while (rebound.IsMeasuring) {\n    var t = rebound.ElapsedMs;\n    var pos = rebound.Position;\n    if (pos > REBOUND_TARGET_MM) {\n        var dt = t - lastT;\n        if (dt < REBOUND_MIN_MS) {\n            log.Warn(\n                $"rebound too fast {dt}ms");\n            hkb.IncreaseDamping(\n                DAMPING_STEP);\n        }\n        break;\n    }\n    lastT = t;\n    await Task.Yield();\n}',
+        'foreach (var batch in trainSet.Shuffle()\n    .Batch(BATCH_SIZE)) {\n    var pred = bim.Forward(batch.Inputs);\n    var loss = crossEntropy.Compute(\n        pred, batch.Labels);\n    bim.Backward(loss);\n    if (clipNorm > 0) {\n        bim.ClipGradients(clipNorm);\n    }\n    optimizer.Step(lr);\n    optimizer.ZeroGrad();\n    runningLoss = runningLoss * 0.9f +\n        loss * 0.1f;\n}',
+        'for (int f = 0; f < features.Length; f++) {\n    var m = stats.Mean(f);\n    var s = stats.Std(f);\n    if (s < EPSILON) {\n        features[f] = 0f;\n        continue;\n    }\n    features[f] = (features[f] - m) / s;\n    if (Math.Abs(features[f]) > CLIP_SIGMA) {\n        features[f] =\n            Math.Sign(features[f]) * CLIP_SIGMA;\n        clipped++;\n    }\n}',
+        'while (ensemble.HasModel) {\n    var m = ensemble.NextModel();\n    var pred = m.Predict(input);\n    voteMap[pred.Class] =\n        voteMap.GetValueOrDefault(pred.Class)\n        + pred.Confidence;\n    if (voteMap[pred.Class] >=\n            ENSEMBLE_QUORUM) {\n        return new EnsembleResult(\n            pred.Class,\n            voteMap[pred.Class]);\n    }\n}\nreturn EnsembleResult.NoConsensus(voteMap);',
+        'foreach (var hp in hpSpace.Sample(\n    TRIALS, rng)) {\n    bim.Configure(hp);\n    var acc = await bim.TrainAndEvalAsync(\n        trainFold, valFold, cts.Token);\n    log.Info(\n        $"trial: lr={hp.Lr:F4} drop={hp.Dropout:F2} acc={acc:P1}");\n    if (acc > bestAcc) {\n        bestAcc = acc;\n        bestHp  = hp;\n    }\n    if (cts.IsCancellationRequested) break;\n}',
+        'for (int fold = 0; fold < K_FOLDS; fold++) {\n    var (train, test) =\n        dataset.SplitFold(fold, K_FOLDS);\n    bim.Reset();\n    await bim.TrainAsync(train, cts.Token);\n    var acc = bim.Evaluate(test);\n    foldAccuracies.Add(acc);\n    log.Debug(\n        $"fold {fold}: acc={acc:P1}");\n}\nvar mean = foldAccuracies.Average();\nvar std  = foldAccuracies.StdDev();\nlog.Info(\n    $"cv: mean={mean:P1} std={std:P1}");',
+        'while (model.GradNorm > CONVERGE_TOL\n    && step < MAX_STEPS) {\n    var (x, y) = batches.NextOrLoop();\n    var pred = model.Forward(x);\n    var loss = loss_fn(pred, y);\n    model.Backward(loss);\n    var norm = model.ComputeGradNorm();\n    if (norm > CLIP_NORM) {\n        model.ScaleGradients(CLIP_NORM / norm);\n    }\n    optimizer.Step(lr);\n    step++;\n}',
+        'Task.Run(async () => {\n    while (!cts.IsCancellationRequested) {\n        if (step % CHECKPOINT_EVERY == 0) {\n            var path = checkpointDir\n                + $"/ckpt-{step}.bin";\n            await model.SaveAsync(\n                path, cts.Token);\n            log.Info(\n                $"checkpoint @ step {step}");\n            checkpoints.Add(path);\n            if (checkpoints.Count >\n                    MAX_CHECKPOINTS) {\n                File.Delete(checkpoints[0]);\n                checkpoints.RemoveAt(0);\n            }\n        }\n        await Task.Delay(\n            CHECKPOINT_POLL_MS, cts.Token);\n    }\n});',
+        'foreach (var sample in batch) {\n    var z = adversary.DetectScore(sample);\n    if (z > ADV_THRESHOLD) {\n        log.Warn(\n            $"adversarial: z={z:F2} → reject");\n        rejected.Add(sample);\n        continue;\n    }\n    var pred = bim.Predict(sample);\n    if (pred.Confidence < MIN_CONFIDENCE) {\n        deferred.Add(sample);\n        continue;\n    }\n    results.Add(pred);\n}',
+        'while (inferDeadline > DateTime.UtcNow) {\n    var pred = bim.PartialInfer(input);\n    if (pred.Confidence >= EARLY_EXIT_CONF) {\n        return pred;\n    }\n    if (bim.RemainingLayers == 0) break;\n    bim.AdvanceLayer();\n}\nlog.Warn(\n    $"infer budget exceeded: layers={bim.LayersDone}");\nreturn bim.FinalInfer(input);',
+        'for (int i = 0; i < attestRounds; i++) {\n    var nonce = rng.NextBytes(NONCE_LEN);\n    var quote = await enclave\n        .AttestAsync(nonce, cts.Token);\n    if (!quote.VerifyAgainstPcr(\n            expectedPcr, mrEnclave)) {\n        log.Error(\n            $"attest round {i} failed");\n        attestFails++;\n        if (attestFails > MAX_ATTEST_FAILS) {\n            await lockdown.EngageAsync();\n            throw new AttestationException(\n                attestFails);\n        }\n    } else {\n        attestFails = 0;\n    }\n}',
+        'using (var seal = enclave.OpenSeal(\n    SealPolicy.MrEnclave)) {\n    try {\n        var wrapped = seal.Wrap(secret);\n        await vault.StoreAsync(\n            wrapped.KeyId, wrapped.Blob);\n        audit.Record(\n            AuditEvent.SecretSealed,\n            wrapped.KeyId);\n    } catch (SealException ex) {\n        log.Error(\n            $"seal failed: {ex.Message}");\n        audit.Record(\n            AuditEvent.SealFailed,\n            ex.Reason);\n        throw;\n    }\n}',
+        'while (token.IsExpiringSoon(REFRESH_BEFORE)) {\n    try {\n        token = await corp\n            .RefreshTokenAsync(\n                token, cts.Token);\n        if (!token.IsValid) {\n            log.Warn(\n                $"refresh denied: {token.Reason}");\n            await Task.Delay(\n                REFRESH_BACKOFF_MS << retries,\n                cts.Token);\n            retries++;\n            continue;\n        }\n        session.UpdateToken(token);\n        retries = 0;\n        break;\n    } catch (TokenRevokedException) {\n        await session.LogoutAsync();\n        throw;\n    }\n}',
+        'for (int factor = 0; factor < mfaFactors.Length; factor++) {\n    var challenge = mfaFactors[factor]\n        .GenerateChallenge();\n    var response = await operator2\n        .RespondAsync(challenge,\n                      MFA_TIMEOUT_MS,\n                      cts.Token);\n    if (response.IsValid) {\n        passed.Add(factor);\n        if (passed.Count >= MFA_REQUIRED) {\n            session.MarkMfaSatisfied();\n            return;\n        }\n        continue;\n    }\n    log.Warn(\n        $"mfa factor {factor} failed");\n    if (++failures >= MFA_LOCKOUT) {\n        await account.LockAsync(\n            operator2.Id);\n        throw new MfaLockoutException();\n    }\n}',
+        'while (!sso.IsResolved) {\n    var redirect = await sso\n        .GetRedirectAsync(cts.Token);\n    if (redirect == null) break;\n    var resp = await http\n        .GetAsync(redirect.Url,\n                  cts.Token);\n    if (resp.StatusCode == 302) {\n        sso.FollowRedirect(\n            resp.Headers.Location);\n        if (++redirectCount > MAX_REDIRECTS) {\n            throw new RedirectLoopException();\n        }\n    } else if (resp.StatusCode == 200) {\n        sso.ResolveFromResponse(resp);\n    } else {\n        throw new SsoException(\n            resp.StatusCode);\n    }\n}',
+        'foreach (var role in operator2.Roles) {\n    var perms = await rbac\n        .GetPermissionsAsync(role,\n                             cts.Token);\n    foreach (var p in perms) {\n        if (effective.ContainsKey(p.Resource)) {\n            effective[p.Resource] |= p.Actions;\n        } else {\n            effective[p.Resource] = p.Actions;\n        }\n    }\n    if (role.IsDeny) {\n        foreach (var p in perms) {\n            denied[p.Resource] |= p.Actions;\n        }\n    }\n}',
+        'Task.Run(async () => {\n    while (session.IsActive) {\n        var idle = DateTime.UtcNow -\n            session.LastActivity;\n        if (idle > IDLE_LOGOUT) {\n            log.Info(\n                $"session {session.Id} idle {idle.TotalMinutes:F0}m → logout");\n            await session.LogoutAsync(\n                LogoutReason.Idle);\n            return;\n        }\n        if (idle > IDLE_WARN) {\n            await session.NotifyIdleAsync();\n        }\n        await Task.Delay(\n            IDLE_POLL_MS, cts.Token);\n    }\n});',
+        'for (int i = 0; i < credentials.Count; i++) {\n    var c = credentials[i];\n    if (c.Age > CREDENTIAL_MAX_AGE) {\n        var newCred = await issuer\n            .RotateAsync(c, cts.Token);\n        await services.PropagateAsync(\n            c.Id, newCred.Id, cts.Token);\n        credentials[i] = newCred;\n        audit.Record(\n            AuditEvent.CredentialRotated,\n            c.Id, newCred.Id);\n        rotated++;\n    }\n}',
+        'while (auditChain.HasNext) {\n    var ev = auditChain.Next();\n    var hash = sha256.Hash(\n        ev.Serialize());\n    if (ev.PrevHash != lastHash) {\n        log.Error(\n            $"audit chain break @ {ev.Id}");\n        breaks.Add((lastEv?.Id, ev.Id));\n        if (breaks.Count > MAX_CHAIN_BREAKS) {\n            await sec.RaiseIncidentAsync(\n                IncidentType.AuditChainBroken);\n            break;\n        }\n    }\n    lastHash = hash;\n    lastEv = ev;\n    verified++;\n}',
+        'foreach (var (resource, delta) in permDeltas) {\n    if (delta.Add != Action.None) {\n        await rbac.GrantAsync(\n            principal, resource, delta.Add);\n        audit.Record(\n            AuditEvent.PermGranted,\n            principal, resource, delta.Add);\n    }\n    if (delta.Remove != Action.None) {\n        await rbac.RevokeAsync(\n            principal, resource, delta.Remove);\n        audit.Record(\n            AuditEvent.PermRevoked,\n            principal, resource, delta.Remove);\n    }\n}',
+        'while (!route.IsResolved) {\n    var hop = await glmz\n        .NextHopAsync(route.Destination,\n                      cts.Token);\n    if (hop == null) {\n        if (route.Hops.Count == 0) {\n            throw new NoRouteException(\n                route.Destination);\n        }\n        var prev = route.Hops.Last();\n        prev.Blacklist();\n        route.Hops.RemoveAt(\n            route.Hops.Count - 1);\n        continue;\n    }\n    route.AddHop(hop);\n    if (route.Hops.Count > MAX_HOP_COUNT) {\n        throw new RouteTooLongException(\n            route.Hops.Count);\n    }\n}',
+        'Task.Run(async () => {\n    while (darkNode.IsConnected) {\n        if (darkNode.FramesSinceRekey >\n                REKEY_FRAMES) {\n            await darkNode.RekeyAsync(\n                cts.Token);\n            log.Info(\n                $"dark-node rekey ok");\n            darkNode.FramesSinceRekey = 0;\n        }\n        var frame = await darkNode\n            .RecvAsync(cts.Token);\n        await processor.HandleAsync(\n            frame, cts.Token);\n        darkNode.FramesSinceRekey++;\n    }\n});',
+        'for (int g = 0; g < gateways.Count; g++) {\n    var probe = await gateways[g]\n        .ProbeAsync(PROBE_TIMEOUT_MS,\n                    cts.Token);\n    if (!probe.IsReachable) {\n        gateways[g].MissCount++;\n        if (gateways[g].MissCount >\n                GATEWAY_DEAD_THRESH) {\n            gateways[g].MarkDead();\n            log.Warn(\n                $"gateway {gateways[g].Id} dead");\n        }\n        continue;\n    }\n    gateways[g].MissCount = 0;\n    gateways[g].Rtt = probe.Rtt;\n}',
+        'while (window.HasUnacked) {\n    var pkt = window.NextUnacked();\n    if (pkt.SentAt + RTT_BUDGET <\n            DateTime.UtcNow) {\n        await net.ResendAsync(\n            pkt, cts.Token);\n        pkt.RetryCount++;\n        if (pkt.RetryCount > MAX_RETRIES) {\n            log.Error(\n                $"packet {pkt.Seq} max retries — drop");\n            window.Drop(pkt.Seq);\n            droppedPackets++;\n        }\n    }\n    if (window.AckedAhead(pkt.Seq, ACK_AGG)) {\n        window.SlideTo(pkt.Seq + ACK_AGG);\n    }\n}',
+        'foreach (var path in multipath.Paths) {\n    if (!path.IsHealthy) continue;\n    try {\n        var result = await path\n            .SendAsync(payload, cts.Token);\n        if (result.IsSuccess) {\n            metrics.MultipathSent++;\n            return result;\n        }\n    } catch (PathFailedException ex) {\n        log.Warn(\n            $"path {path.Id} failed: {ex.Reason}");\n        path.MarkUnhealthy();\n        if (--healthyPaths == 0) {\n            throw new AllPathsFailedException();\n        }\n    }\n}',
+        'while (stun.State != StunState.Bound) {\n    var resp = await stun.SendBindingAsync(\n        STUN_SERVER, cts.Token);\n    if (resp.ChangedAddress != null) {\n        stun.PublicEndpoint =\n            resp.MappedAddress;\n        stun.State = StunState.Bound;\n        break;\n    }\n    if (++attempts > STUN_MAX_ATTEMPTS) {\n        throw new StunBindException(attempts);\n    }\n    await Task.Delay(\n        STUN_RETRY_MS * attempts, cts.Token);\n}',
+        'for (int i = 0; i < dnsCache.Count; i++) {\n    var entry = dnsCache[i];\n    if (entry.AnswerCount > MAX_ANSWERS) {\n        log.Warn(\n            $"dns cache {entry.Name}: {entry.AnswerCount} answers — suspect");\n        dnsCache.Quarantine(entry);\n        continue;\n    }\n    if (entry.Ttl == 0 ||\n            entry.ResolvedAt + entry.Ttl <\n                DateTime.UtcNow) {\n        dnsCache.Invalidate(entry.Name);\n    }\n}',
+        'while (tls.IsHandshaking) {\n    var msg = await tls\n        .NextHandshakeAsync(cts.Token);\n    if (msg.IsResumption) {\n        var ticket = tls.GetTicket();\n        if (ticket?.IsValid == true) {\n            await tls.ResumeAsync(\n                ticket, cts.Token);\n            log.Debug(\n                "tls session resumed");\n            return;\n        }\n    }\n    await tls.ProcessAsync(\n        msg, cts.Token);\n}',
+        'Task.Run(async () => {\n    for (int i = 0; i < pool.MinSize; i++) {\n        try {\n            var conn = await connFactory\n                .CreateAsync(cts.Token);\n            pool.Return(conn);\n        } catch (Exception ex) {\n            log.Warn(\n                $"pool warmup #{i} fail: {ex.Message}");\n            if (i == 0) throw;\n        }\n    }\n    log.Info(\n        $"pool warmed: {pool.Available}/{pool.MinSize}");\n});',
+        'while (shaper.HasCredits) {\n    var pkt = ingress.Peek();\n    if (pkt == null) {\n        await Task.Yield();\n        continue;\n    }\n    if (!shaper.TryConsume(pkt.Size)) {\n        await Task.Delay(\n            shaper.NextRefillMs, cts.Token);\n        continue;\n    }\n    ingress.Dequeue();\n    await egress.SendAsync(\n        pkt, cts.Token);\n    metrics.Shaped++;\n}',
+        'foreach (var sst in level.GetSstables()) {\n    var bloom = await sst\n        .RebuildBloomAsync(\n            BLOOM_BITS_PER_KEY,\n            cts.Token);\n    sst.AttachBloom(bloom);\n    log.Debug(\n        $"sst {sst.Id} bloom rebuilt: {bloom.Bits} bits");\n    rebuilt++;\n    if (rebuilt >= MAX_REBUILD_BATCH)\n        break;\n}',
+        'while (wal.HasRecoverableFrames) {\n    var frame = wal.NextFrame();\n    if (frame.Lsn <= lastApplied) continue;\n    try {\n        await db.ApplyFrameAsync(\n            frame, cts.Token);\n        lastApplied = frame.Lsn;\n        if (lastApplied % WAL_CKPT == 0) {\n            await db.CheckpointAsync();\n            await wal.TruncateBeforeAsync(\n                lastApplied);\n            log.Info(\n                $"wal ckpt @lsn={lastApplied:X}");\n        }\n    } catch (FrameApplyException ex) {\n        log.Error(\n            $"wal frame {frame.Lsn:X} apply fail");\n        throw;\n    }\n}',
+        'for (int i = 0; i < mvcc.Versions.Count; i++) {\n    var v = mvcc.Versions[i];\n    if (v.CommitLsn < snapshotHorizon) {\n        mvcc.Remove(v);\n        purged++;\n        i--;\n        continue;\n    }\n    if (v.IsTombstone &&\n            v.CreatedAt + TOMBSTONE_TTL <\n                DateTime.UtcNow) {\n        mvcc.Remove(v);\n        purged++;\n        i--;\n    }\n}',
+        'foreach (var node in btree\n    .ScanLeaves()\n    .Where(n => n.TombstoneCount >\n        n.LiveCount)) {\n    var rebuilt = await btree\n        .RewriteNodeAsync(\n            node, cts.Token);\n    if (rebuilt.LiveCount == 0) {\n        await btree.MergeUpAsync(\n            rebuilt, cts.Token);\n    }\n    metrics.NodesCompacted++;\n}',
+        'while (cache.PinnedPages > MAX_PINNED) {\n    var oldest = cache.OldestPinned();\n    if (oldest.RefCount == 0) {\n        cache.Unpin(oldest);\n        cache.Evict(oldest.Id);\n        unpinned++;\n        continue;\n    }\n    log.Warn(\n        $"page {oldest.Id} pinned {oldest.RefCount}× — wait");\n    await Task.Delay(\n        PIN_WAIT_MS, cts.Token);\n    if (++spins > MAX_SPINS) {\n        throw new PinExhaustionException();\n    }\n}',
+        'for (int level = 0;\n     level < lsm.MaxLevel; level++) {\n    var files = lsm.GetLevel(level);\n    if (files.Count <\n            lsm.LevelTrigger(level)) continue;\n    var merged = await Sstable\n        .CompactAsync(files,\n            lsm.NewOutput(level + 1),\n            cts.Token);\n    foreach (var f in files) {\n        f.RetireAsync();\n    }\n    lsm.Promote(merged, level + 1);\n    log.Info(\n        $"lsm L{level}→L{level+1}: {files.Count}→1");\n}',
+        'while (delta.HasOps) {\n    var op = delta.NextOp();\n    switch (op.Type) {\n        case DeltaOp.Insert:\n            target.Insert(op.Key, op.Value);\n            break;\n        case DeltaOp.Update:\n            target.Update(op.Key, op.Value);\n            break;\n        case DeltaOp.Delete:\n            target.Delete(op.Key);\n            break;\n    }\n    if (++applied % SYNC_EVERY == 0) {\n        await target.SyncAsync();\n    }\n}',
+        'Task.Run(async () => {\n    using var idx = db.OpenIndexBuilder(\n        indexName);\n    await foreach (var row in db\n        .ScanTableAsync(table,\n                        cts.Token)) {\n        var keys = projection.Extract(row);\n        foreach (var k in keys) {\n            idx.Add(k, row.RowId);\n        }\n        if (++processed % FLUSH_EVERY == 0) {\n            await idx.FlushAsync(cts.Token);\n            log.Debug(\n                $"idx {indexName} progress: {processed} rows");\n        }\n    }\n    await idx.FinalizeAsync(cts.Token);\n});',
+        'while (writeMeter.HasData) {\n    var write = writeMeter.Sample();\n    var amp   = write.BytesToDisk /\n        (float)write.BytesLogical;\n    if (amp > AMPLIFY_WARN) {\n        log.Warn(\n            $"write amp {amp:F2}× ({write.BytesToDisk}/{write.BytesLogical})");\n        if (amp > AMPLIFY_CRIT) {\n            await alerting.FireAsync(\n                Alert.WriteAmplification, amp);\n        }\n    }\n    metrics.WriteAmp = amp;\n}',
+        'for (int s = 0; s < SECTORS; s++) {\n    var err = disk.ReadErrorRate(s);\n    if (err > SECTOR_ERR_LIMIT) {\n        log.Error(\n            $"disk sector {s} err rate {err:F4}");\n        await disk.RemapAsync(s, cts.Token);\n        remapped++;\n        if (remapped > MAX_REMAPS) {\n            log.Fatal("disk failing — replace");\n            await alerting.PageOncallAsync(\n                Alert.DiskFailing);\n            break;\n        }\n    }\n}',
+        'foreach (var msg in batch) {\n    var sig = ed25519.Sign(\n        signingKey, msg.Payload);\n    msg.Signature = sig;\n    msg.SignedAt = DateTime.UtcNow;\n    if (sigBuf.Count >= BATCH_SIG_FLUSH) {\n        await net.SendBatchAsync(\n            sigBuf, cts.Token);\n        sigBuf.Clear();\n    }\n    sigBuf.Add(msg);\n    metrics.Signed++;\n}\nif (sigBuf.Count > 0) {\n    await net.SendBatchAsync(sigBuf, cts.Token);\n}',
+        'while (handshake.NeedsExchange) {\n    var pub = x25519.GeneratePublic(\n        ephemeralPriv);\n    await net.SendAsync(pub, cts.Token);\n    var peerPub = await net\n        .RecvAsync(cts.Token);\n    var shared = x25519.ComputeShared(\n        ephemeralPriv, peerPub);\n    sessionKey = hkdf.Expand(\n        shared, salt, KEY_LEN);\n    handshake.MarkComplete();\n    log.Info("ecdh established");\n}',
+        'for (int i = 0; i < commits.Count; i++) {\n    var c = commits[i];\n    var expected = (i == 0)\n        ? GENESIS_HASH\n        : commits[i - 1].Hash;\n    if (c.PrevHash != expected) {\n        log.Error(\n            $"chain break @ {i}: {c.PrevHash:X} != {expected:X}");\n        throw new ChainBrokenException(i);\n    }\n    var hash = sha256.Hash(c.Serialize());\n    if (hash != c.Hash) {\n        log.Error(\n            $"commit {i} hash mismatch");\n        throw new TamperException(i);\n    }\n}',
+        'foreach (var shard in vault\n    .EnumerateShards()) {\n    var newKey = await kms\n        .RotateAsync(shard.KeyId, cts.Token);\n    var plain = shard.Decrypt(shard.OldKey);\n    var wrapped = newKey.Wrap(plain);\n    await vault.UpdateAsync(\n        shard.Id, wrapped, newKey.Id);\n    audit.Record(\n        AuditEvent.ShardReencrypted,\n        shard.Id);\n    rotated++;\n}',
+        'while (verify.HasItem) {\n    var (mac, expected) = verify.Next();\n    var actual = hmac.Compute(\n        verifyKey, mac.Payload);\n    int diff = 0;\n    for (int i = 0; i < actual.Length; i++) {\n        diff |= actual[i] ^ expected[i];\n    }\n    if (diff != 0) {\n        log.Error(\n            $"hmac mismatch msg {mac.Id}");\n        invalid++;\n        if (invalid > MAX_INVALID) {\n            await sec.RaiseIncidentAsync(\n                IncidentType.HmacFlood);\n            break;\n        }\n    }\n}',
+        'foreach (var nonce in incoming\n    .GroupBy(p => p.Nonce)\n    .Where(g => g.Count() > 1)) {\n    log.Error(\n        $"nonce reuse: {nonce.Key:X} ({nonce.Count()} pkts)");\n    foreach (var p in nonce) {\n        p.Quarantine();\n    }\n    await sec.RaiseIncidentAsync(\n        IncidentType.NonceReuse);\n    reuse++;\n    if (reuse > MAX_REUSE_TOLERATED) {\n        await session.RekeyAsync(cts.Token);\n        break;\n    }\n}',
+        'for (int i = 0; i < KDF_ITERS; i++) {\n    derived = pbkdf2.Iterate(\n        derived, salt, HASH);\n    if (i % PROGRESS_EVERY == 0) {\n        progress?.Report(\n            i / (float)KDF_ITERS);\n    }\n}\nif (derived.Length != KEY_LEN) {\n    throw new KdfLengthException(\n        derived.Length, KEY_LEN);\n}\nlog.Debug(\n    $"pbkdf2 {KDF_ITERS} iters done");',
+        'while (chain.HasNext) {\n    var cert = chain.Next();\n    if (!pinning.IsPinned(cert.Thumbprint,\n                          cert.Subject)) {\n        log.Error(\n            $"cert {cert.Subject} not pinned");\n        throw new PinningException(\n            cert.Subject);\n    }\n    if (revocation.IsRevoked(\n            cert.Thumbprint)) {\n        throw new RevokedException(\n            cert.Subject);\n    }\n    verified++;\n}',
+        'foreach (var sig in pendingSigs) {\n    var tsa = await tsaClient\n        .RequestAsync(sig.Payload, cts.Token);\n    if (!tsa.Verify(tsaCert)) {\n        log.Warn(\n            $"tsa response for {sig.Id} invalid");\n        invalid++;\n        continue;\n    }\n    sig.TimestampAnchor = tsa.Token;\n    await signedStore.PersistAsync(\n        sig, cts.Token);\n    anchored++;\n}',
+        'while (kdf.NeedsRotation) {\n    var newSalt = rng.NextBytes(SALT_LEN);\n    var newKey  = kdf.Derive(\n        masterSeed, newSalt, KDF_ITERS);\n    foreach (var consumer in keyConsumers) {\n        await consumer.UpdateKeyAsync(\n            newKey, cts.Token);\n    }\n    kdf.MarkRotated(newSalt);\n    audit.Record(\n        AuditEvent.KdfRotated);\n    break;\n}',
+        'while (queue.HasItem) {\n    if (!workStealing.LocalQueue.TryPop(\n            out var task)) {\n        var stolen = workStealing\n            .StealFromRandomVictim();\n        if (stolen == null) {\n            await Task.Yield();\n            continue;\n        }\n        task = stolen;\n        metrics.Stolen++;\n    } else {\n        metrics.Local++;\n    }\n    await task.RunAsync(cts.Token);\n}',
+        'foreach (var holder in lock2.Holders\n    .OrderByDescending(\n        h => h.EffectivePriority)) {\n    if (holder.NeedsPriorityBoost(\n            waitingPriority)) {\n        holder.BoostTo(waitingPriority);\n        log.Debug(\n            $"pi boost {holder.Tid} → {waitingPriority}");\n        boosted++;\n    }\n    if (holder.Priority == MAX_PRIORITY) {\n        break;\n    }\n}',
+        'for (int t = 0; t < threads.Count; t++) {\n    var cpu = affinity.PreferredCpu(\n        threads[t].WorkClass);\n    if (threads[t].CurrentCpu != cpu) {\n        await scheduler\n            .BindAffinityAsync(\n                threads[t].Tid, cpu);\n        log.Debug(\n            $"tid {threads[t].Tid} bound cpu{cpu}");\n        rebound++;\n    }\n}',
+        'while (coro.HasBudget) {\n    coro.Step();\n    if (coro.BudgetRemaining < BUDGET_LOW) {\n        await Task.Yield();\n        coro.RefreshBudget();\n        yielded++;\n        if (yielded > MAX_YIELDS_PER_TICK) {\n            log.Warn(\n                $"coro {coro.Id} yield storm");\n            await Task.Delay(\n                STALL_RECOVER_MS);\n            break;\n        }\n    }\n}',
+        'Task.Run(async () => {\n    using var timer = new TimerWheel(\n        BUCKET_COUNT, TICK_MS);\n    while (!cts.IsCancellationRequested) {\n        var fired = timer.AdvanceTick();\n        foreach (var t in fired) {\n            try {\n                await t.Callback(cts.Token);\n                metrics.TimersFired++;\n            } catch (Exception ex) {\n                log.Warn(\n                    $"timer {t.Id} cb: {ex.Message}");\n            }\n        }\n        await Task.Delay(\n            TICK_MS, cts.Token);\n    }\n});',
+        'foreach (var child in scope.Children) {\n    if (child.IsLinked) {\n        child.PropagateCancel(reason);\n    }\n    if (child.WaitOnDispose) {\n        await child.WaitAsync(\n            CANCEL_WAIT_MS, cts.Token);\n    }\n    child.Detach();\n    detached++;\n}\nlog.Debug(\n    $"cancel propagated: {detached} children");',
+        'while (attempts < MAX_RETRY) {\n    try {\n        return await op.RunAsync(cts.Token);\n    } catch (TransientException ex) {\n        attempts++;\n        var jitter = rng.Next(\n            -JITTER_MS, JITTER_MS);\n        var delay = Math.Min(\n            BASE_MS * (1 << attempts) + jitter,\n            MAX_DELAY_MS);\n        log.Warn(\n            $"op fail #{attempts}: {ex.Message} retry {delay}ms");\n        await Task.Delay(\n            delay, cts.Token);\n    }\n}',
+        'for (int i = 0; i < queues.Count; i++) {\n    var weight = queues[i].Weight;\n    var deserved = totalCapacity *\n        (weight / totalWeight);\n    var actual = queues[i].Consumed;\n    if (actual > deserved * OVERSHOOT_TOL) {\n        queues[i].Throttle(\n            actual - deserved);\n        log.Debug(\n            $"q{i} throttled by {actual - deserved}");\n    }\n}',
+        'while (pendingOps.Count > 0) {\n    if (pendingOps.Count > OP_CAP) {\n        log.Warn(\n            $"op cap {OP_CAP} reached — backpressure");\n        backpressure.Engage();\n        await pendingOps.WaitDrainAsync(\n            cts.Token);\n        backpressure.Release();\n    }\n    var op = pendingOps.Dequeue();\n    _ = Task.Run(\n        async () => await op\n            .ExecuteAsync(cts.Token));\n}',
+        'Task.Run(async () => {\n    while (!shutdown.IsCancellationRequested) {\n        await Task.Delay(\n            POLL_MS, cts.Token);\n    }\n    foreach (var svc in services\n        .OrderByDescending(\n            s => s.ShutdownPriority)) {\n        log.Info(\n            $"stopping {svc.Name}");\n        await svc.StopAsync(\n            STOP_TIMEOUT_MS);\n    }\n    log.Info("shutdown complete");\n});',
+        'foreach (var sample in latencyStream) {\n    p99.Add(sample);\n    if (p99.Count > P99_WINDOW) {\n        p99.RemoveAt(0);\n    }\n    if (p99.Count >= P99_MIN) {\n        var p99v = p99\n            .Percentile(99);\n        await telemetry.EmitAsync(\n            "latency.p99", p99v);\n        if (p99v > SLO_P99_MS) {\n            await alerting.FireAsync(\n                Alert.SloP99Breach, p99v);\n        }\n    }\n}',
+        'for (int x = 0; x < grid.W; x++) {\n    for (int y = 0; y < grid.H; y++) {\n        var v = grid[x, y];\n        if (v == 0) continue;\n        var bucket = (int)(\n            v / heatmap.Resolution);\n        heatmap.Buckets[bucket]++;\n        heatmap.Coords.Add((x, y, bucket));\n    }\n}\nheatmap.Normalize();\nlog.Debug(\n    $"heatmap: buckets={heatmap.Buckets.Length}");',
+        'while (errorBudget.HasRemaining) {\n    var rate = errorMeter.RatePerMin;\n    var consumption = rate / SLO_TARGET_RATE;\n    errorBudget.Consume(consumption);\n    if (errorBudget.Remaining < BUDGET_WARN) {\n        log.Warn(\n            $"slo budget {errorBudget.Remaining:P1} left");\n    }\n    if (errorBudget.Remaining <= 0) {\n        await releaseGate\n            .FreezeAsync(\n                FreezeReason.SloBudgetExhausted);\n        break;\n    }\n    await Task.Delay(\n        BUDGET_INTERVAL_MS, cts.Token);\n}',
+        'foreach (var span in trace.Spans) {\n    if (sampling.ShouldSample(span)) {\n        await spanSink.WriteAsync(\n            span, cts.Token);\n        sampled++;\n    }\n    if (span.Duration > TRACE_SLOW) {\n        await spanSink.ForceWriteAsync(\n            span, cts.Token);\n        forced++;\n    }\n    if (span.HasError) {\n        await alertSink.WriteAsync(\n            span, cts.Token);\n    }\n}',
+        'while (anomaly.HasInput) {\n    var (key, value) = anomaly.Next();\n    var z = anomaly.ZScore(key, value);\n    if (Math.Abs(z) > ANOMALY_Z) {\n        log.Warn(\n            $"anomaly {key}={value} z={z:F2}");\n        await siem.IngestAsync(\n            new AnomalyEvent(\n                key, value, z,\n                DateTime.UtcNow));\n        recentAnomalies++;\n        if (recentAnomalies >\n                ANOMALY_STORM) {\n            await alerting.FireAsync(\n                Alert.AnomalyStorm);\n            recentAnomalies = 0;\n        }\n    }\n}',
+        'for (int i = 0; i < probes.Count; i++) {\n    try {\n        var r = await probes[i]\n            .CheckAsync(cts.Token);\n        rollup[probes[i].Name] = r.Status;\n        if (r.Status != HealthStatus.Healthy) {\n            unhealthy.Add(probes[i].Name);\n        }\n    } catch (Exception ex) {\n        rollup[probes[i].Name] =\n            HealthStatus.Failed;\n        unhealthy.Add(probes[i].Name);\n        log.Warn(\n            $"probe {probes[i].Name}: {ex.Message}");\n    }\n}',
+        'foreach (var alert in alerts) {\n    var key = alert.DedupeKey();\n    if (recentAlerts.TryGetValue(\n            key, out var prev)) {\n        if (DateTime.UtcNow - prev.LastFired <\n                DEDUPE_WINDOW) {\n            prev.RepeatCount++;\n            deduped++;\n            continue;\n        }\n    }\n    recentAlerts[key] = alert;\n    await alertSink.FireAsync(\n        alert, cts.Token);\n    fired++;\n}',
+        'while (exporter.HasMetric) {\n    var m = exporter.Next();\n    try {\n        await exporter.WriteAsync(\n            new MetricPayload {\n                Name      = m.Name,\n                Value     = m.Value,\n                Labels    = m.Labels,\n                Timestamp = m.Timestamp\n            }, cts.Token);\n        exported++;\n    } catch (Exception ex) {\n        log.Warn(\n            $"export {m.Name} fail: {ex.Message}");\n        exporter.RequeueAsync(m);\n    }\n}',
+        'for (int i = 0; i < logBatch.Count; i++) {\n    var line = logBatch[i];\n    foreach (var pattern in redactPatterns) {\n        line = pattern.Replace(\n            line, REDACT_TOKEN);\n    }\n    if (line.Length > MAX_LOG_LEN) {\n        line = line.Substring(\n            0, MAX_LOG_LEN) + "…";\n        truncated++;\n    }\n    logBatch[i] = line;\n}\nlog.Debug(\n    $"redact pass: truncated={truncated}");',
+        'foreach (var span in spans) {\n    if (span.TraceContext == null) {\n        span.TraceContext =\n            TraceContext.Generate();\n    } else {\n        span.TraceContext =\n            parent.ChildContext();\n    }\n    if (!baggage.IsEmpty) {\n        span.TraceContext.Baggage =\n            baggage.Snapshot();\n    }\n    propagator.Inject(\n        span.TraceContext,\n        span.OutgoingHeaders);\n    propagated++;\n}',
     ];
 
     // ── Warning popup data ──────────────────────────────────────────────────
@@ -3862,7 +3971,11 @@ window.consoleBg = (function () {
         'tesseract','compoundCO','obelisk','spire','wedge','lattice3','crystalPair',
         // +10 additions (Apr cycle)
         'hendecaprism','tridecaprism','pentadecaprism','hendecanti','tridecanti',
-        'octapy','decapy','trunccube','gyropy','dnahelix'];
+        'octapy','decapy','trunccube','gyropy','dnahelix',
+        // +5 additions (creature cycle): parametric curves / knots / fractals
+        'trefoil','fig8knot','koch','sierpinski','harmono',
+        // +5 additions (creature cycle batch 2)
+        'klein','hyperpara','trochoid','butterfly','hypocy'];
 
     function spawnGeoWindow() {
         var host = getHost();
@@ -4079,6 +4192,226 @@ window.consoleBg = (function () {
                 ctx2.closePath(); ctx2.stroke();
             }
         }
+        // Trefoil knot — 3-crossing torus knot drawn parametrically; z modulates alpha for depth
+        function drawTrefoil(t) {
+            var rot=t*0.025, R=18;
+            ctx2.lineWidth=0.85;
+            ctx2.beginPath();
+            for(var i=0;i<=480;i++){
+                var u=(i/480)*Math.PI*2+rot;
+                var x=Math.sin(u)+2*Math.sin(2*u);
+                var y=Math.cos(u)-2*Math.cos(2*u);
+                var z=-Math.sin(3*u);
+                var al=(0.30+0.50*(z*0.5+0.5)).toFixed(2);
+                ctx2.strokeStyle='rgba(70,210,170,'+al+')';
+                if(i===0) ctx2.moveTo(x*R,y*R);
+                else { ctx2.lineTo(x*R,y*R); ctx2.stroke(); ctx2.beginPath(); ctx2.moveTo(x*R,y*R); }
+            }
+            ctx2.strokeStyle='rgba(70,200,220,0.22)'; ctx2.lineWidth=0.5;
+            ctx2.beginPath(); ctx2.arc(0,0,R*2.4,0,Math.PI*2); ctx2.stroke();
+        }
+        // Figure-8 knot — parametric form; depth cue via alpha gradient on the second pass
+        function drawFig8Knot(t) {
+            var rot=t*0.03, R=10;
+            ctx2.lineWidth=0.85;
+            ctx2.beginPath();
+            for(var i=0;i<=520;i++){
+                var u=(i/520)*Math.PI*2+rot;
+                var x=(2+Math.cos(2*u))*Math.cos(3*u);
+                var y=(2+Math.cos(2*u))*Math.sin(3*u);
+                var z=Math.sin(4*u);
+                var al=(0.28+0.45*(z*0.5+0.5)).toFixed(2);
+                ctx2.strokeStyle='rgba(70,220,170,'+al+')';
+                if(i===0) ctx2.moveTo(x*R,y*R);
+                else { ctx2.lineTo(x*R,y*R); ctx2.stroke(); ctx2.beginPath(); ctx2.moveTo(x*R,y*R); }
+            }
+        }
+        // Koch snowflake — three iterations from an equilateral seed; rotates slowly
+        function drawKoch(t) {
+            var rot=t*0.015, R=36;
+            // Seed: equilateral triangle
+            var pts=[];
+            for(var i=0;i<3;i++){ var a=(i/3)*Math.PI*2+rot-Math.PI/2; pts.push([Math.cos(a)*R,Math.sin(a)*R]); }
+            pts.push(pts[0]);
+            // Iterate 3x: replace each segment with 4 sub-segments forming the bump
+            function iterate(seg){
+                var out=[];
+                for(var s=0;s<seg.length-1;s++){
+                    var a=seg[s], b=seg[s+1];
+                    var dx=b[0]-a[0], dy=b[1]-a[1];
+                    var p1=[a[0]+dx/3, a[1]+dy/3];
+                    var p2=[a[0]+2*dx/3, a[1]+2*dy/3];
+                    // Outward bump: rotate (b-a)/3 by -60deg around p1, that gives the apex
+                    var bx=(dx/3)*Math.cos(-Math.PI/3)-(dy/3)*Math.sin(-Math.PI/3);
+                    var by=(dx/3)*Math.sin(-Math.PI/3)+(dy/3)*Math.cos(-Math.PI/3);
+                    var apex=[p1[0]+bx, p1[1]+by];
+                    out.push(a); out.push(p1); out.push(apex); out.push(p2);
+                }
+                out.push(seg[seg.length-1]);
+                return out;
+            }
+            for(var k=0;k<3;k++) pts=iterate(pts);
+            ctx2.strokeStyle='rgba(70,210,170,0.62)'; ctx2.lineWidth=0.7;
+            ctx2.beginPath();
+            for(var i=0;i<pts.length;i++){
+                if(i===0) ctx2.moveTo(pts[i][0],pts[i][1]);
+                else ctx2.lineTo(pts[i][0],pts[i][1]);
+            }
+            ctx2.stroke();
+        }
+        // Sierpinski triangle — 4 iterations of corner-midpoint subdivision, outline-only
+        function drawSierpinski(t) {
+            var rot=t*0.012, R=42;
+            var seed=[];
+            for(var i=0;i<3;i++){ var a=(i/3)*Math.PI*2+rot-Math.PI/2; seed.push([Math.cos(a)*R,Math.sin(a)*R]); }
+            // Build a list of triangles via recursion (4 levels deep)
+            function mid(p,q){ return [(p[0]+q[0])/2,(p[1]+q[1])/2]; }
+            var tris=[seed];
+            for(var iter=0;iter<4;iter++){
+                var next=[];
+                for(var ti=0;ti<tris.length;ti++){
+                    var T=tris[ti];
+                    var m01=mid(T[0],T[1]), m12=mid(T[1],T[2]), m20=mid(T[2],T[0]);
+                    next.push([T[0],m01,m20]);
+                    next.push([m01,T[1],m12]);
+                    next.push([m20,m12,T[2]]);
+                }
+                tris=next;
+            }
+            ctx2.strokeStyle='rgba(70,210,170,0.45)'; ctx2.lineWidth=0.5;
+            ctx2.beginPath();
+            for(var ti=0;ti<tris.length;ti++){
+                var T=tris[ti];
+                ctx2.moveTo(T[0][0],T[0][1]);
+                ctx2.lineTo(T[1][0],T[1][1]);
+                ctx2.lineTo(T[2][0],T[2][1]);
+                ctx2.closePath();
+            }
+            ctx2.stroke();
+        }
+        // Harmonograph — superposed Lissajous with exponential decay envelope
+        function drawHarmono(t) {
+            var R=38, dec=0.0008;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.lineWidth=0.7;
+            ctx2.beginPath();
+            for(var i=0;i<=800;i++){
+                var u=i*0.04;
+                var env=Math.exp(-u*dec*40);
+                var x=R*env*(Math.sin(2.01*u+t*0.012)+0.6*Math.sin(3.03*u+t*0.018));
+                var y=R*env*(Math.cos(2.99*u+t*0.014)+0.6*Math.cos(2.0*u-t*0.016));
+                if(i===0) ctx2.moveTo(x,y); else ctx2.lineTo(x,y);
+            }
+            ctx2.stroke();
+        }
+        // Klein bottle — immersion in R^3, projected to 2D, rotated slowly. Iso-u rings + iso-v meridians.
+        function drawKlein(t) {
+            var rot=t*0.02, S=16;
+            function K(u,v){
+                var cu=Math.cos(u), su=Math.sin(u), cv=Math.cos(v), sv=Math.sin(v);
+                var x=-(2/15)*cu*(3*cv-30*su+90*Math.pow(cu,4)*su-60*Math.pow(cu,6)*su+5*cu*cv*su);
+                var y=-(1/15)*su*(3*cv-3*Math.pow(cu,2)*cv-48*Math.pow(cu,4)*cv+48*Math.pow(cu,6)*cv-60*su+5*cu*cv*su-5*Math.pow(cu,3)*cv*su-80*Math.pow(cu,5)*cv*su+80*Math.pow(cu,7)*cv*su);
+                // 2D projection with rotation
+                var rc=Math.cos(rot), rs=Math.sin(rot);
+                return [(x*rc - y*rs)*S, (x*rs + y*rc)*S];
+            }
+            ctx2.lineWidth=0.55;
+            // iso-u rings
+            for(var ui=0;ui<14;ui++){
+                var u=(ui/14)*Math.PI*2;
+                ctx2.strokeStyle='rgba(70,210,170,'+(0.30+0.30*Math.sin(u+rot)).toFixed(2)+')';
+                ctx2.beginPath();
+                for(var vi=0;vi<=42;vi++){
+                    var v=(vi/42)*Math.PI*2;
+                    var p=K(u,v);
+                    if(vi===0) ctx2.moveTo(p[0],p[1]); else ctx2.lineTo(p[0],p[1]);
+                }
+                ctx2.stroke();
+            }
+        }
+        // Hyperbolic paraboloid — saddle z = x^2 - y^2 rendered as a u/v grid in 3D, projected with perspective
+        function drawHyperPara(t) {
+            var rot=t*0.025, tilt=Math.sin(t*0.012)*0.4+0.6;
+            var R=18, N=8;
+            function P(u,v){
+                var x=u, y=v, z=(u*u-v*v)*0.4;
+                var cy=Math.cos(rot), sy=Math.sin(rot);
+                var x1=x*cy+z*sy, z1=-x*sy+z*cy;
+                var cx=tilt, sx=Math.sqrt(Math.max(0,1-tilt*tilt));
+                var y1=y*cx - z1*sx;
+                var d=2.6/(2.6+z1*0.3);
+                return [x1*d*R, y1*d*R];
+            }
+            ctx2.lineWidth=0.55;
+            // u-lines
+            for(var i=0;i<=N;i++){
+                var u=-1+i*(2/N);
+                ctx2.strokeStyle='rgba(70,210,170,'+(0.35+0.25*Math.abs(u)).toFixed(2)+')';
+                ctx2.beginPath();
+                for(var j=0;j<=N;j++){
+                    var v=-1+j*(2/N);
+                    var p=P(u,v);
+                    if(j===0) ctx2.moveTo(p[0],p[1]); else ctx2.lineTo(p[0],p[1]);
+                }
+                ctx2.stroke();
+            }
+            // v-lines
+            for(var j=0;j<=N;j++){
+                var v=-1+j*(2/N);
+                ctx2.strokeStyle='rgba(70,190,220,'+(0.30+0.25*Math.abs(v)).toFixed(2)+')';
+                ctx2.beginPath();
+                for(var i=0;i<=N;i++){
+                    var u=-1+i*(2/N);
+                    var p=P(u,v);
+                    if(i===0) ctx2.moveTo(p[0],p[1]); else ctx2.lineTo(p[0],p[1]);
+                }
+                ctx2.stroke();
+            }
+        }
+        // Epitrochoid (Spirograph) — point at distance d from center of small circle rolling outside fixed circle
+        function drawTrochoid(t) {
+            var Rc=22, rc=7, d=11, rot=t*0.022;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.lineWidth=0.75;
+            ctx2.beginPath();
+            for(var i=0;i<=720;i++){
+                var p=(i/720)*Math.PI*2*7+rot; // 7 winds for closed petals at d!=rc
+                var x=(Rc+rc)*Math.cos(p)-d*Math.cos(((Rc+rc)/rc)*p);
+                var y=(Rc+rc)*Math.sin(p)-d*Math.sin(((Rc+rc)/rc)*p);
+                if(i===0) ctx2.moveTo(x,y); else ctx2.lineTo(x,y);
+            }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,200,220,0.22)'; ctx2.lineWidth=0.5;
+            ctx2.beginPath(); ctx2.arc(0,0,Rc,0,Math.PI*2); ctx2.stroke();
+        }
+        // Butterfly (Fay) curve — well-known transcendental parametric curve
+        function drawButterfly(t) {
+            var R=11, rot=t*0.018;
+            ctx2.strokeStyle='rgba(70,220,170,0.70)'; ctx2.lineWidth=0.8;
+            ctx2.beginPath();
+            for(var i=0;i<=600;i++){
+                var u=(i/600)*12*Math.PI;
+                var f=Math.exp(Math.cos(u))-2*Math.cos(4*u)-Math.pow(Math.sin(u/12),5);
+                var x=Math.sin(u+rot)*f;
+                var y=Math.cos(u+rot)*f;
+                if(i===0) ctx2.moveTo(x*R,y*R); else ctx2.lineTo(x*R,y*R);
+            }
+            ctx2.stroke();
+        }
+        // Hypocycloid — small circle rolling INSIDE a larger one. R/r ratio sets the cusp count.
+        function drawHypocy(t) {
+            var Rc=34, rc=9, rot=t*0.025;
+            var k=(Rc-rc)/rc;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.lineWidth=0.8;
+            ctx2.beginPath();
+            for(var i=0;i<=400;i++){
+                var p=(i/400)*Math.PI*2+rot;
+                var x=(Rc-rc)*Math.cos(p)+rc*Math.cos(k*p);
+                var y=(Rc-rc)*Math.sin(p)-rc*Math.sin(k*p);
+                if(i===0) ctx2.moveTo(x,y); else ctx2.lineTo(x,y);
+            }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,200,220,0.22)'; ctx2.lineWidth=0.5;
+            ctx2.beginPath(); ctx2.arc(0,0,Rc,0,Math.PI*2); ctx2.stroke();
+        }
 
         function geoFrame() {
             ctx2.clearRect(0,0,S,S);
@@ -4097,6 +4430,16 @@ window.consoleBg = (function () {
             else if (key==='asteroid')   drawAsteroid(angle);
             else if (key==='epicycloid') drawEpicycloid(angle);
             else if (key==='web')        drawWeb(angle);
+            else if (key==='trefoil')    drawTrefoil(angle);
+            else if (key==='fig8knot')   drawFig8Knot(angle);
+            else if (key==='koch')       drawKoch(angle);
+            else if (key==='sierpinski') drawSierpinski(angle);
+            else if (key==='harmono')    drawHarmono(angle);
+            else if (key==='klein')      drawKlein(angle);
+            else if (key==='hyperpara')  drawHyperPara(angle);
+            else if (key==='trochoid')   drawTrochoid(angle);
+            else if (key==='butterfly')  drawButterfly(angle);
+            else if (key==='hypocy')     drawHypocy(angle);
             else                         drawWire(shape, angle*0.4, angle);
             ctx2.restore();
             rafId = requestAnimationFrame(geoFrame);
@@ -4298,7 +4641,10 @@ window.consoleBg = (function () {
             if (phase === 0 && count >= total * 1.6) { phase = 1; count = 0; }
             if (phase === 1 && count >= total * 1.6) {
                 clearInterval(timer);
-                if (el.parentNode) el.parentNode.removeChild(el);
+                el.classList.add('cbg-memo--collapse');
+                setTimeout(function () {
+                    if (el.parentNode) el.parentNode.removeChild(el);
+                }, 360);
             }
         }, 22);
     }
@@ -4519,7 +4865,19 @@ window.consoleBg = (function () {
     //   CENTIPEDE  — multi-segment chain, peristaltic wave + head feelers
     //   PULSE      — concentric Fibonacci rings, lub-dub heartbeat (simulates life)
     //   WANDERER   — small grid walks + pauses to "look around" (simulates awareness)
-    var ART_VARIANTS = ['SCATTER', 'LATTICE', 'ANCHOR', 'SLUG', 'CENTIPEDE', 'PULSE', 'WANDERER'];
+    //   SPIDER     — 8-leg radial cluster, alternate-pulse walking gait
+    //   INCHWORM   — chain bunches and extends; translation only during the extend phase
+    //   SNAKE      — chain follows traveling sinusoidal S-curve along body axis
+    //   HOPPER     — cluster crouch + parabolic launch + land cycle (grasshopper)
+    //   CRAB       — wide body + claws, scuttles sideways perpendicular to body axis
+    //   JELLY      — concentric rings pulse outward/in; vertical drift
+    //   SQUID      — pulse-jet propulsion: body squash + tentacles trail behind
+    //   BEETLE     — scurry-stop-scurry with shell shimmer + small antennae
+    //   TADPOLE    — small body + whipping sinusoidal tail; tail strokes propel body
+    //   ANT        — zigzag walk with vibrating antennae at the head
+    var ART_VARIANTS = ['SCATTER', 'LATTICE', 'ANCHOR', 'SLUG', 'CENTIPEDE', 'PULSE', 'WANDERER',
+        'SPIDER', 'INCHWORM', 'SNAKE', 'HOPPER', 'CRAB',
+        'JELLY', 'SQUID', 'BEETLE', 'TADPOLE', 'ANT'];
 
     // Shared helper — create a Fibonacci-sized grid scaffold (variable col widths / row heights).
     // Returns positions + cumulative offsets so callers can build cells.
@@ -5010,6 +5368,732 @@ window.consoleBg = (function () {
         }, ttl);
     }
 
+    // ── Variant: SPIDER — 8-leg radial cluster, alternate-pulse walking gait ───────
+    // Central hub glyph anchors the body. 8 legs spread radially, each a 3-glyph chain.
+    // Legs are paired (i, i+4) and each pair pulses (scale + opacity) on a phase offset
+    // so the spider reads as walking. Hub drifts slowly.
+    function spawnArtifactSpider(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var LEGS = 8, SEG_PER_LEG = 3, segLen = 12;
+        var legSpans = [];
+        for (var leg = 0; leg < LEGS; leg++) {
+            var legAngle = (leg / LEGS) * Math.PI * 2;
+            var legCx = Math.cos(legAngle), legCy = Math.sin(legAngle);
+            var segs = [];
+            for (var s = 0; s < SEG_PER_LEG; s++) {
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                var r = (s + 1) * segLen;
+                span.style.left = Math.round(legCx * r) + 'px';
+                span.style.top  = Math.round(legCy * r) + 'px';
+                span.style.fontSize = Math.max(8, Math.round(13 - s * 1.5)) + 'px';
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                el.appendChild(span);
+                segs.push(span);
+            }
+            legSpans.push(segs);
+        }
+        var hub = document.createElement('span');
+        hub.className = 'cbg-artifact-char';
+        hub.style.left = '0px'; hub.style.top = '0px';
+        hub.style.fontSize = '16px';
+        hub.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+        hub.textContent = artGlyph();
+        el.appendChild(hub);
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now();
+        var ttl = 8200, killed = false;
+        var driftAng = Math.random() * Math.PI * 2;
+        var driftMag = 0.012; // px per ms — very slow body drift
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            // Walking-gait: each leg pair (i, i+4) pulses opposite-phase. Eight legs → four phases.
+            for (var leg = 0; leg < LEGS; leg++) {
+                var phaseLeg = (leg % 4) / 4;
+                var phase = (elapsed / 420 + phaseLeg) * Math.PI * 2;
+                var pulse = (Math.sin(phase) * 0.5 + 0.5);
+                for (var s = 0; s < SEG_PER_LEG; s++) {
+                    var sp = legSpans[leg][s];
+                    var opacity = (0.45 + pulse * 0.55).toFixed(2);
+                    var scale = (0.85 + pulse * 0.30).toFixed(2);
+                    sp.style.opacity = opacity;
+                    sp.style.transform = 'scale(' + scale + ')';
+                }
+            }
+            var dx = Math.cos(driftAng) * driftMag * elapsed;
+            var dy = Math.sin(driftAng) * driftMag * elapsed;
+            el.style.transform = 'translate(' + dx.toFixed(1) + 'px,' + dy.toFixed(1) + 'px)';
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            hub.textContent = artGlyph();
+            for (var i = 0; i < 2; i++) {
+                var pickLeg = Math.floor(Math.random() * LEGS);
+                var pickSeg = Math.floor(Math.random() * SEG_PER_LEG);
+                legSpans[pickLeg][pickSeg].textContent = artGlyph();
+            }
+        }, 160);
+        setTimeout(function () {
+            killed = true; clearInterval(glitchTimer);
+            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
+            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }, ttl);
+    }
+
+    // ── Variant: INCHWORM — body bunches and extends, translates only on the extend phase ──
+    // Linear chain of glyphs along an angle vector. Body cycles: BUNCH (all crowd near head) →
+    // EXTEND (spread out + head pulls forward) → BUNCH again. Direction-anchored, head-led.
+    function spawnArtifactInchworm(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var N = 7;
+        var ang = Math.random() * Math.PI * 2;
+        var ca = Math.cos(ang), sa = Math.sin(ang);
+        var maxSpread = 56, stepDist = 22;
+        var spans = [];
+        for (var i = 0; i < N; i++) {
+            var span = document.createElement('span');
+            span.className = 'cbg-artifact-char';
+            span.style.fontSize = Math.max(8, Math.round(14 - i * 0.7)) + 'px';
+            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+            el.appendChild(span);
+            spans.push(span);
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8400, killed = false;
+        var headX = 0, headY = 0;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            var cycle = 1400; // ms per bunch-extend
+            var phase = (elapsed % cycle) / cycle; // 0..1
+            var extend = 0.5 - 0.5 * Math.cos(phase * Math.PI * 2); // 0 → 1 → 0
+            // On the leading edge of extend (phase 0→0.5), the head pulls forward;
+            // the tail catches up on the trailing edge (0.5→1).
+            if (phase < 0.5) {
+                headX += ca * stepDist * 0.014;
+                headY += sa * stepDist * 0.014;
+            }
+            for (var i = 0; i < N; i++) {
+                var t = i / (N - 1); // 0 at head, 1 at tail
+                var spread = t * maxSpread * extend;
+                var x = headX - ca * spread;
+                var y = headY - sa * spread;
+                spans[i].style.left = Math.round(x) + 'px';
+                spans[i].style.top  = Math.round(y) + 'px';
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            spans[Math.floor(Math.random() * N)].textContent = artGlyph();
+        }, 130);
+        setTimeout(function () {
+            killed = true; clearInterval(glitchTimer);
+            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
+            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }, ttl);
+    }
+
+    // ── Variant: SNAKE — chain follows a traveling sinusoidal S-curve, head-led ───
+    // N glyphs trail along a body axis. Lateral position = sin(axisPos + travel). The whole
+    // chain translates along the axis; the wave makes it slither.
+    function spawnArtifactSnake(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var N = 12;
+        var ang = Math.random() * Math.PI * 2;
+        var ca = Math.cos(ang), sa = Math.sin(ang);
+        var perpX = -sa, perpY = ca;
+        var segGap = 10, waveAmp = 14, waveK = 0.55;
+        var spans = [];
+        for (var i = 0; i < N; i++) {
+            var span = document.createElement('span');
+            span.className = 'cbg-artifact-char';
+            span.style.fontSize = Math.max(8, Math.round(14 - i * 0.5)) + 'px';
+            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+            el.appendChild(span);
+            spans.push(span);
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8800, killed = false;
+        var travel = 0; // head displacement along body axis
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            travel = elapsed * 0.022; // px/ms along body axis
+            for (var i = 0; i < N; i++) {
+                var sAlong = travel - i * segGap;
+                var lateral = Math.sin(sAlong * waveK) * waveAmp;
+                var x = ca * sAlong + perpX * lateral;
+                var y = sa * sAlong + perpY * lateral;
+                spans[i].style.left = Math.round(x) + 'px';
+                spans[i].style.top  = Math.round(y) + 'px';
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            spans[Math.floor(Math.random() * N)].textContent = artGlyph();
+        }, 110);
+        setTimeout(function () {
+            killed = true; clearInterval(glitchTimer);
+            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
+            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }, ttl);
+    }
+
+    // ── Variant: HOPPER — crouch + parabolic launch + land cycle ──────────────────
+    // Compact glyph cluster. Phase 0: idle. Phase 1: crouch (vertical squash). Phase 2:
+    // launch in a parabolic arc along an angle. Phase 3: land + return scale. Loops.
+    function spawnArtifactHopper(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var cluster = document.createElement('div');
+        cluster.style.position = 'absolute';
+        cluster.style.left = '0px'; cluster.style.top = '0px';
+        cluster.style.transformOrigin = '50% 100%';
+        el.appendChild(cluster);
+        var cols = 3, rows = 2;
+        var g = artBuildFibGrid(cols, rows);
+        var spans = [];
+        for (var row = 0; row < rows; row++) {
+            for (var col = 0; col < cols; col++) {
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                span.style.left = Math.round(g.colX[col] - g.totalW / 2) + 'px';
+                span.style.top  = Math.round(g.rowY[row] - g.totalH / 2) + 'px';
+                var cellMin = Math.min(g.colW[col], g.rowH[row]);
+                span.style.fontSize = Math.max(8, Math.round(cellMin * ART_INV_PHI)) + 'px';
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                cluster.appendChild(span);
+                spans.push(span);
+            }
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8400, killed = false;
+        var hopAng = Math.random() * Math.PI * 2;
+        var hopDist = 35 + Math.random() * 30;
+        var posX = 0, posY = 0;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            var cycle = 1600;
+            var p = (elapsed % cycle) / cycle; // 0..1
+            var scaleY = 1, scaleX = 1, arcDx = 0, arcDy = 0;
+            if (p < 0.20) {
+                // crouch: scaleY < 1, scaleX > 1
+                var k = p / 0.20;
+                scaleY = 1 - 0.30 * k; scaleX = 1 + 0.18 * k;
+            } else if (p < 0.65) {
+                // launch arc
+                var k = (p - 0.20) / 0.45;
+                scaleY = 1 + 0.25 * Math.sin(k * Math.PI); scaleX = 1 - 0.12 * Math.sin(k * Math.PI);
+                arcDx = Math.cos(hopAng) * hopDist * k;
+                // parabola: max at k=0.5
+                arcDy = Math.sin(hopAng) * hopDist * k - Math.sin(k * Math.PI) * 18;
+            } else if (p < 0.80) {
+                // land squash
+                var k = (p - 0.65) / 0.15;
+                scaleY = 1 - 0.22 * Math.sin(k * Math.PI); scaleX = 1 + 0.14 * Math.sin(k * Math.PI);
+                arcDx = Math.cos(hopAng) * hopDist;
+                arcDy = Math.sin(hopAng) * hopDist;
+                if (k > 0.95) { posX += arcDx; posY += arcDy; }
+            } else {
+                // idle wobble before next hop
+                arcDx = Math.cos(hopAng) * hopDist;
+                arcDy = Math.sin(hopAng) * hopDist;
+                if (p > 0.81 && p < 0.83) { posX += arcDx; posY += arcDy; hopAng = Math.random() * Math.PI * 2; hopDist = 35 + Math.random() * 30; arcDx = 0; arcDy = 0; }
+            }
+            el.style.transform = 'translate(' + (posX + arcDx).toFixed(1) + 'px,' + (posY + arcDy).toFixed(1) + 'px)';
+            cluster.style.transform = 'scale(' + scaleX.toFixed(3) + ',' + scaleY.toFixed(3) + ')';
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            spans[Math.floor(Math.random() * spans.length)].textContent = artGlyph();
+        }, 150);
+        setTimeout(function () {
+            killed = true; clearInterval(glitchTimer);
+            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
+            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }, ttl);
+    }
+
+    // ── Variant: CRAB — wide body + claws, scuttles sideways perpendicular to body axis ──
+    // Body is a wide Fib grid. Two claw clusters sit at the left/right ends, slightly elevated.
+    // Travel direction is PERPENDICULAR to the body axis (sideways). Claws shimmer brighter.
+    function spawnArtifactCrab(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var bodyAng = Math.random() * Math.PI * 2;
+        var bca = Math.cos(bodyAng), bsa = Math.sin(bodyAng);
+        var travAng = bodyAng + Math.PI / 2;
+        var tca = Math.cos(travAng), tsa = Math.sin(travAng);
+        // Body grid — wide and short
+        var bodyW = 70;
+        var bodyN = 7;
+        var bodySpans = [];
+        for (var i = 0; i < bodyN; i++) {
+            var t = (i / (bodyN - 1)) - 0.5; // -0.5 to 0.5
+            var span = document.createElement('span');
+            span.className = 'cbg-artifact-char';
+            span.style.left = Math.round(bca * t * bodyW) + 'px';
+            span.style.top  = Math.round(bsa * t * bodyW) + 'px';
+            span.style.fontSize = '13px';
+            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+            el.appendChild(span);
+            bodySpans.push(span);
+        }
+        // Two claws — at each end, slightly forward (in travel direction)
+        var clawSpans = [];
+        for (var side = 0; side < 2; side++) {
+            var s = side === 0 ? -0.5 : 0.5;
+            var clawBaseX = bca * s * bodyW + tca * 8;
+            var clawBaseY = bsa * s * bodyW + tsa * 8;
+            for (var c = 0; c < 3; c++) {
+                var span2 = document.createElement('span');
+                span2.className = 'cbg-artifact-char';
+                var offX = bca * s * 8 * c + tca * c * 3;
+                var offY = bsa * s * 8 * c + tsa * c * 3;
+                span2.style.left = Math.round(clawBaseX + offX) + 'px';
+                span2.style.top  = Math.round(clawBaseY + offY) + 'px';
+                span2.style.fontSize = '12px';
+                span2.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span2.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                el.appendChild(span2);
+                clawSpans.push(span2);
+            }
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8200, killed = false;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            // Scurry: not constant — alternates fast and slow phases. cos² gives a stop-go feel.
+            var scurry = 0.5 + 0.5 * Math.cos(elapsed / 380);
+            var travel = (elapsed * 0.018) * (0.4 + scurry * 0.6);
+            var x = tca * travel;
+            var y = tsa * travel;
+            el.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px)';
+            // Claws shimmer brighter on the scurry-on phase
+            var clawOp = (0.7 + scurry * 0.3).toFixed(2);
+            for (var i = 0; i < clawSpans.length; i++) clawSpans[i].style.opacity = clawOp;
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            bodySpans[Math.floor(Math.random() * bodySpans.length)].textContent = artGlyph();
+            if (Math.random() < 0.4) clawSpans[Math.floor(Math.random() * clawSpans.length)].textContent = artGlyph();
+        }, 140);
+        setTimeout(function () {
+            killed = true; clearInterval(glitchTimer);
+            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
+            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }, ttl);
+    }
+
+    // ── Variant: JELLY — concentric rings pulse outward/in; vertical drift ───────
+    // Concentric Fibonacci rings of glyphs at growing radii. Each ring's effective radius
+    // oscillates around a base via a phase-delayed sine, producing an outward-traveling pulse.
+    // Whole body drifts vertically (up or down, randomised) and slightly sideways.
+    function spawnArtifactJelly(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var RINGS = [5, 8, 13];
+        var ringSpans = [];
+        for (var ri = 0; ri < RINGS.length; ri++) {
+            var n = RINGS[ri];
+            var baseR = 10 + ri * 14;
+            var ring = [];
+            for (var i = 0; i < n; i++) {
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                span.style.fontSize = Math.max(8, Math.round(13 - ri * 1.5)) + 'px';
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                el.appendChild(span);
+                ring.push({ el: span, angle: (i / n) * Math.PI * 2, baseR: baseR, ringIdx: ri });
+            }
+            ringSpans.push(ring);
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 9000, killed = false;
+        var driftAng = Math.random() * Math.PI * 0.5 - Math.PI * 0.25 + (Math.random() < 0.5 ? Math.PI / 2 : -Math.PI / 2);
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            // Outward-traveling pulse: each ring's expansion phase is delayed by its index
+            for (var ri = 0; ri < ringSpans.length; ri++) {
+                var ring = ringSpans[ri];
+                var phase = (elapsed / 1100) * Math.PI * 2 - ri * 0.9;
+                var pulse = Math.sin(phase);
+                var rEff = ring[0].baseR + pulse * 6;
+                for (var i = 0; i < ring.length; i++) {
+                    var p = ring[i];
+                    var x = Math.cos(p.angle) * rEff;
+                    var y = Math.sin(p.angle) * rEff * 0.78; // jelly-bell aspect
+                    p.el.style.left = Math.round(x) + 'px';
+                    p.el.style.top  = Math.round(y) + 'px';
+                    p.el.style.opacity = (0.45 + 0.45 * (Math.sin(phase + i * 0.4) * 0.5 + 0.5)).toFixed(2);
+                }
+            }
+            var drift = elapsed * 0.020;
+            el.style.transform = 'translate(' + (Math.cos(driftAng) * drift).toFixed(1) + 'px,' + (Math.sin(driftAng) * drift).toFixed(1) + 'px)';
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var allSpans = [];
+        for (var ri = 0; ri < ringSpans.length; ri++) for (var i = 0; i < ringSpans[ri].length; i++) allSpans.push(ringSpans[ri][i].el);
+        var glitchTimer = setInterval(function () {
+            for (var i = 0; i < 3; i++) allSpans[Math.floor(Math.random() * allSpans.length)].textContent = artGlyph();
+        }, 150);
+        setTimeout(function () {
+            killed = true; clearInterval(glitchTimer);
+            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
+            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }, ttl);
+    }
+
+    // ── Variant: SQUID — pulse-jet propulsion with trailing tentacles ────────────
+    // Bell-shaped body up front. 4 tentacle chains trail behind. Body squashes vertically
+    // (jet burst) then relaxes (glide). Translation accumulates on burst phases. Tentacles
+    // wave on glide phases (less violent on burst).
+    function spawnArtifactSquid(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var ang = Math.random() * Math.PI * 2;
+        var ca = Math.cos(ang), sa = Math.sin(ang);
+        var perpX = -sa, perpY = ca;
+        // Bell body — 3x2 cluster up front
+        var bell = document.createElement('div');
+        bell.style.position = 'absolute'; bell.style.left = '0px'; bell.style.top = '0px';
+        bell.style.transformOrigin = '50% 100%';
+        el.appendChild(bell);
+        var bellSpans = [];
+        for (var row = 0; row < 2; row++) {
+            for (var col = 0; col < 3; col++) {
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                span.style.left = (col * 8 - 8) + 'px';
+                span.style.top  = (row * 7 - 14) + 'px';
+                span.style.fontSize = '13px';
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                bell.appendChild(span);
+                bellSpans.push(span);
+            }
+        }
+        // 4 tentacles trailing OPPOSITE to forward direction
+        var tentSpans = [];
+        for (var t = 0; t < 4; t++) {
+            var lateral = (t - 1.5) * 5;
+            var chain = [];
+            for (var s = 0; s < 5; s++) {
+                var span2 = document.createElement('span');
+                span2.className = 'cbg-artifact-char';
+                span2.style.fontSize = '10px';
+                span2.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span2.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                el.appendChild(span2);
+                chain.push({ el: span2, lateralOffset: lateral, seg: s });
+            }
+            tentSpans.push(chain);
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8800, killed = false;
+        var posAlong = 0;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            var cycle = 1300;
+            var p = (elapsed % cycle) / cycle;
+            // Burst (0-0.25): body squashes, translation kicks. Glide (0.25-1): relax.
+            var bellSY = 1, bellSX = 1, jet = 0;
+            if (p < 0.25) {
+                var k = p / 0.25;
+                bellSY = 1 - 0.40 * Math.sin(k * Math.PI); bellSX = 1 + 0.22 * Math.sin(k * Math.PI);
+                jet = k;
+            } else {
+                bellSY = 1 + 0.05 * Math.sin((p - 0.25) * Math.PI * 4); bellSX = 1;
+            }
+            posAlong += jet * 1.4;
+            var advance = ca * posAlong, advanceY = sa * posAlong;
+            el.style.transform = 'translate(' + advance.toFixed(1) + 'px,' + advanceY.toFixed(1) + 'px)';
+            bell.style.transform = 'scale(' + bellSX.toFixed(3) + ',' + bellSY.toFixed(3) + ')';
+            // Tentacles trail backward (opposite to forward direction). Wave during glide.
+            for (var ti = 0; ti < tentSpans.length; ti++) {
+                var chain = tentSpans[ti];
+                for (var s = 0; s < chain.length; s++) {
+                    var node = chain[s];
+                    var backDist = -10 - s * 7; // negative = behind
+                    var waveAmp = p > 0.25 ? 4 + s * 0.8 : 1.5;
+                    var wave = Math.sin(elapsed / 230 + s * 0.6) * waveAmp;
+                    var x = ca * backDist + perpX * (node.lateralOffset + wave);
+                    var y = sa * backDist + perpY * (node.lateralOffset + wave);
+                    node.el.style.left = Math.round(x) + 'px';
+                    node.el.style.top  = Math.round(y) + 'px';
+                }
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            bellSpans[Math.floor(Math.random() * bellSpans.length)].textContent = artGlyph();
+            var ch = tentSpans[Math.floor(Math.random() * tentSpans.length)];
+            ch[Math.floor(Math.random() * ch.length)].el.textContent = artGlyph();
+        }, 130);
+        setTimeout(function () {
+            killed = true; clearInterval(glitchTimer);
+            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
+            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }, ttl);
+    }
+
+    // ── Variant: BEETLE — scurry-stop-scurry rhythm with shell shimmer + antennae ─
+    // Compact rectangular body. Bursts of fast motion alternated with full stops. The shell
+    // glyphs shimmer (rapid glyph swap) distinctly faster than the standard idle glitch.
+    // Two single-glyph antennae sit at the front and vibrate.
+    function spawnArtifactBeetle(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var ang = Math.random() * Math.PI * 2;
+        var ca = Math.cos(ang), sa = Math.sin(ang);
+        var perpX = -sa, perpY = ca;
+        // Shell — 4x3 grid
+        var shell = [];
+        for (var row = 0; row < 3; row++) {
+            for (var col = 0; col < 4; col++) {
+                var span = document.createElement('span');
+                span.className = 'cbg-artifact-char';
+                var lx = (col - 1.5) * 7;
+                var ly = (row - 1) * 7;
+                // Rotate to body axis
+                span.style.left = Math.round(ca * lx - sa * ly) + 'px';
+                span.style.top  = Math.round(sa * lx + ca * ly) + 'px';
+                span.style.fontSize = '12px';
+                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                el.appendChild(span);
+                shell.push(span);
+            }
+        }
+        // Two antennae at front (along ca,sa direction), splayed perpendicular
+        var antL = document.createElement('span');
+        antL.className = 'cbg-artifact-char'; antL.style.fontSize = '10px';
+        antL.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+        antL.textContent = artGlyph();
+        var antR = antL.cloneNode(true);
+        el.appendChild(antL); el.appendChild(antR);
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8400, killed = false;
+        var posDist = 0, scurryPhase = 0;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            // Cycle: SCURRY (fast, 0-0.35) then STOP (still, 0.35-1.0)
+            var cycle = 1700;
+            var p = (elapsed % cycle) / cycle;
+            var moving = p < 0.35;
+            if (moving) posDist += 1.7;
+            var x = ca * posDist, y = sa * posDist;
+            el.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px)';
+            // Antennae positions: at front (along axis), splayed
+            var frontX = ca * 13, frontY = sa * 13;
+            var splayBase = 5;
+            var vibrate = Math.sin(elapsed / 60) * 1.4; // fast jitter
+            antL.style.left = Math.round(frontX + perpX * (splayBase + vibrate)) + 'px';
+            antL.style.top  = Math.round(frontY + perpY * (splayBase + vibrate)) + 'px';
+            antR.style.left = Math.round(frontX - perpX * (splayBase - vibrate)) + 'px';
+            antR.style.top  = Math.round(frontY - perpY * (splayBase - vibrate)) + 'px';
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var shimmer = setInterval(function () {
+            // Shell shimmer — many glyphs swap quickly when moving, few when stopped
+            var n = 5;
+            for (var i = 0; i < n; i++) shell[Math.floor(Math.random() * shell.length)].textContent = artGlyph();
+        }, 90);
+        var antTimer = setInterval(function () { antL.textContent = artGlyph(); antR.textContent = artGlyph(); }, 80);
+        setTimeout(function () {
+            killed = true; clearInterval(shimmer); clearInterval(antTimer);
+            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
+            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }, ttl);
+    }
+
+    // ── Variant: TADPOLE — small body + long whipping sinusoidal tail ────────────
+    // Tight head cluster + a chain of glyphs forming a tail. Tail oscillates laterally with
+    // phase delay (S-wave). Body advances in pulses synchronized with tail strokes (zero-crossing
+    // of the head-end of the tail wave → small forward kick).
+    function spawnArtifactTadpole(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var ang = Math.random() * Math.PI * 2;
+        var ca = Math.cos(ang), sa = Math.sin(ang);
+        var perpX = -sa, perpY = ca;
+        // Head — 3 glyphs in a small triangle around origin
+        var headSpans = [];
+        var headOffsets = [[0, 0], [4, -3], [4, 3]];
+        for (var i = 0; i < headOffsets.length; i++) {
+            var span = document.createElement('span');
+            span.className = 'cbg-artifact-char';
+            var hx = headOffsets[i][0], hy = headOffsets[i][1];
+            span.style.left = Math.round(ca * hx - sa * hy) + 'px';
+            span.style.top  = Math.round(sa * hx + ca * hy) + 'px';
+            span.style.fontSize = '13px';
+            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+            el.appendChild(span);
+            headSpans.push(span);
+        }
+        // Tail — 9 glyphs trailing behind (opposite of body axis)
+        var TAIL_N = 9;
+        var tailSpans = [];
+        for (var i = 0; i < TAIL_N; i++) {
+            var span2 = document.createElement('span');
+            span2.className = 'cbg-artifact-char';
+            span2.style.fontSize = Math.max(8, Math.round(12 - i * 0.4)) + 'px';
+            span2.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span2.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+            el.appendChild(span2);
+            tailSpans.push(span2);
+        }
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8800, killed = false;
+        var posDist = 0;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            // Tail wave — frequency tuned for "whipping" feel; head propels on stroke peaks
+            var omega = elapsed / 170;
+            var headWave = Math.sin(omega);
+            posDist += Math.max(0, Math.abs(headWave) - 0.5) * 0.9; // forward kick on extrema
+            for (var i = 0; i < TAIL_N; i++) {
+                var s = -8 - i * 6; // distance behind head along body axis
+                var lateral = Math.sin(omega - i * 0.6) * (4 + i * 0.8);
+                var x = ca * s + perpX * lateral;
+                var y = sa * s + perpY * lateral;
+                tailSpans[i].style.left = Math.round(x) + 'px';
+                tailSpans[i].style.top  = Math.round(y) + 'px';
+            }
+            el.style.transform = 'translate(' + (ca * posDist).toFixed(1) + 'px,' + (sa * posDist).toFixed(1) + 'px)';
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            headSpans[Math.floor(Math.random() * headSpans.length)].textContent = artGlyph();
+            tailSpans[Math.floor(Math.random() * tailSpans.length)].textContent = artGlyph();
+        }, 130);
+        setTimeout(function () {
+            killed = true; clearInterval(glitchTimer);
+            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
+            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }, ttl);
+    }
+
+    // ── Variant: ANT — zigzag wobble walk with vibrating antennae ────────────────
+    // Small 3-glyph body, two vibrating antennae at the head, walks forward with a zigzag
+    // wobble (slow sine across the body axis). Direction switches occasionally for organic feel.
+    function spawnArtifactAnt(host) {
+        var el = artNewContainer();
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+        var ang = Math.random() * Math.PI * 2;
+        var ca = Math.cos(ang), sa = Math.sin(ang);
+        var perpX = -sa, perpY = ca;
+        // Body — three glyphs along axis
+        var body = [];
+        for (var i = 0; i < 3; i++) {
+            var span = document.createElement('span');
+            span.className = 'cbg-artifact-char';
+            var s = (i - 1) * 5;
+            span.style.left = Math.round(ca * s) + 'px';
+            span.style.top  = Math.round(sa * s) + 'px';
+            span.style.fontSize = (i === 1 ? 12 : 11) + 'px';
+            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+            el.appendChild(span);
+            body.push(span);
+        }
+        // Antennae
+        var antL = document.createElement('span'), antR = document.createElement('span');
+        antL.className = antR.className = 'cbg-artifact-char';
+        antL.style.fontSize = antR.style.fontSize = '9px';
+        antL.style.animation = antR.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+        antL.textContent = artGlyph(); antR.textContent = artGlyph();
+        el.appendChild(antL); el.appendChild(antR);
+        host.appendChild(el);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.opacity = '1'; }); });
+        var startTs = performance.now(), ttl = 8400, killed = false;
+        var posAlong = 0;
+        function step(ts) {
+            if (killed) return;
+            var elapsed = ts - startTs;
+            if (elapsed > ttl) return;
+            posAlong += 0.045 * 16; // ~0.7 px/frame at 60fps
+            // Zigzag wobble — slow lateral sine
+            var wobble = Math.sin(elapsed / 280) * 9;
+            var x = ca * posAlong + perpX * wobble;
+            var y = sa * posAlong + perpY * wobble;
+            el.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px)';
+            // Antennae vibrate fast at front
+            var frontX = ca * 9, frontY = sa * 9;
+            var vibL = Math.sin(elapsed / 55) * 1.6;
+            var vibR = Math.sin(elapsed / 55 + Math.PI) * 1.6;
+            antL.style.left = Math.round(frontX + perpX * (4 + vibL)) + 'px';
+            antL.style.top  = Math.round(frontY + perpY * (4 + vibL)) + 'px';
+            antR.style.left = Math.round(frontX - perpX * (4 - vibR)) + 'px';
+            antR.style.top  = Math.round(frontY - perpY * (4 - vibR)) + 'px';
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        var glitchTimer = setInterval(function () {
+            body[Math.floor(Math.random() * body.length)].textContent = artGlyph();
+        }, 140);
+        var antTimer = setInterval(function () { antL.textContent = artGlyph(); antR.textContent = artGlyph(); }, 90);
+        setTimeout(function () {
+            killed = true; clearInterval(glitchTimer); clearInterval(antTimer);
+            el.style.transition = 'opacity 0.4s ease'; el.style.opacity = '0';
+            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }, ttl);
+    }
+
     // Dispatcher — every spawn rolls a random variant from the enum so the screen cycles
     // through every iteration of how artifacts have ever looked.
     function spawnArtifact() {
@@ -5024,6 +6108,16 @@ window.consoleBg = (function () {
             case 'CENTIPEDE': spawnArtifactCentipede(host); break;
             case 'PULSE':     spawnArtifactPulse(host);     break;
             case 'WANDERER':  spawnArtifactWanderer(host);  break;
+            case 'SPIDER':    spawnArtifactSpider(host);    break;
+            case 'INCHWORM':  spawnArtifactInchworm(host);  break;
+            case 'SNAKE':     spawnArtifactSnake(host);     break;
+            case 'HOPPER':    spawnArtifactHopper(host);    break;
+            case 'CRAB':      spawnArtifactCrab(host);      break;
+            case 'JELLY':     spawnArtifactJelly(host);     break;
+            case 'SQUID':     spawnArtifactSquid(host);     break;
+            case 'BEETLE':    spawnArtifactBeetle(host);    break;
+            case 'TADPOLE':   spawnArtifactTadpole(host);   break;
+            case 'ANT':       spawnArtifactAnt(host);       break;
         }
     }
 
