@@ -1,0 +1,98 @@
+2026-05-21 20:09:18.340 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-05-21 20:09:18.414 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-05-21 20:09:18.430 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'initialize' request handler completed in 14.0434ms.
+2026-05-21 20:09:18.434 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/list' request handler called.
+2026-05-21 20:09:18.442 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/list' request handler completed in 7.9163ms.
+2026-05-21 20:09:49.697 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:09:49.803 -05:00 [INF] "list_books" completed. IsError = false.
+2026-05-21 20:09:49.804 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 107.0419ms.
+2026-05-21 20:09:49.811 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:09:49.899 -05:00 [INF] "list_strands" completed. IsError = false.
+2026-05-21 20:09:49.900 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 88.9988ms.
+2026-05-21 20:09:55.873 -05:00 [INF] GlobalSearch index warmed in 37470 ms
+2026-05-21 20:11:18.414 -05:00 [INF] WorldTickService heartbeat (disabled): tick #1
+2026-05-21 20:11:18.487 -05:00 [INF] Continuity long-sweep (full): 2 contradiction group(s)
+2026-05-21 20:16:18.419 -05:00 [INF] WorldTickService heartbeat (disabled): tick #2
+2026-05-21 20:17:25.767 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:17:25.823 -05:00 [INF] "get_chapter" completed. IsError = false.
+2026-05-21 20:17:25.823 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 55.8221ms.
+2026-05-21 20:17:26.853 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:17:26.857 -05:00 [INF] "get_chapter" completed. IsError = false.
+2026-05-21 20:17:26.857 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 3.9516ms.
+2026-05-21 20:17:27.864 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:17:27.866 -05:00 [INF] "get_chapter" completed. IsError = false.
+2026-05-21 20:17:27.866 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 2.1267ms.
+2026-05-21 20:17:28.828 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:17:28.830 -05:00 [INF] "get_chapter" completed. IsError = false.
+2026-05-21 20:17:28.830 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 2.8068ms.
+2026-05-21 20:17:29.917 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:17:29.919 -05:00 [INF] "get_chapter" completed. IsError = false.
+2026-05-21 20:17:29.919 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 2.0548ms.
+2026-05-21 20:17:30.349 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:17:30.442 -05:00 [INF] "get_strand" completed. IsError = false.
+2026-05-21 20:17:30.443 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 93.8053ms.
+2026-05-21 20:21:18.422 -05:00 [INF] WorldTickService heartbeat (disabled): tick #3
+2026-05-21 20:21:45.645 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:21:45.647 -05:00 [INF] "get_chapter" completed. IsError = false.
+2026-05-21 20:21:45.647 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 1.9007ms.
+2026-05-21 20:21:46.133 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:21:46.134 -05:00 [INF] "get_chapter" completed. IsError = false.
+2026-05-21 20:21:46.134 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 1.4832ms.
+2026-05-21 20:21:46.388 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:21:46.389 -05:00 [INF] "get_chapter" completed. IsError = false.
+2026-05-21 20:21:46.389 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 1.2444ms.
+2026-05-21 20:21:55.098 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:21:55.101 -05:00 [INF] "get_chapter" completed. IsError = false.
+2026-05-21 20:21:55.101 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 2.9157ms.
+2026-05-21 20:26:18.418 -05:00 [INF] WorldTickService heartbeat (disabled): tick #4
+2026-05-21 20:27:17.619 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:27:17.638 -05:00 [INF] "list_strands" completed. IsError = false.
+2026-05-21 20:27:17.638 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 18.4629ms.
+2026-05-21 20:27:34.010 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler called.
+2026-05-21 20:27:34.016 -05:00 [INF] "get_strand" completed. IsError = false.
+2026-05-21 20:27:34.016 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.147) method 'tools/call' request handler completed in 5.6498ms.
+2026-05-21 20:31:18.427 -05:00 [INF] WorldTickService heartbeat (disabled): tick #5
+2026-05-21 20:36:18.427 -05:00 [INF] WorldTickService heartbeat (disabled): tick #6
+2026-05-21 20:41:18.424 -05:00 [INF] WorldTickService heartbeat (disabled): tick #7
+2026-05-21 20:46:18.413 -05:00 [INF] WorldTickService heartbeat (disabled): tick #8
+2026-05-21 20:51:18.418 -05:00 [INF] WorldTickService heartbeat (disabled): tick #9
+2026-05-21 20:56:18.428 -05:00 [INF] WorldTickService heartbeat (disabled): tick #10
+2026-05-21 21:01:18.416 -05:00 [INF] WorldTickService heartbeat (disabled): tick #11
+2026-05-21 21:06:18.416 -05:00 [INF] WorldTickService heartbeat (disabled): tick #12
+2026-05-21 21:11:18.425 -05:00 [INF] WorldTickService heartbeat (disabled): tick #13
+2026-05-21 21:11:19.207 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-21 21:16:18.415 -05:00 [INF] WorldTickService heartbeat (disabled): tick #14
+2026-05-21 21:21:18.423 -05:00 [INF] WorldTickService heartbeat (disabled): tick #15
+2026-05-21 21:26:18.419 -05:00 [INF] WorldTickService heartbeat (disabled): tick #16
+2026-05-21 21:31:18.417 -05:00 [INF] WorldTickService heartbeat (disabled): tick #17
+2026-05-21 21:36:18.416 -05:00 [INF] WorldTickService heartbeat (disabled): tick #18
+2026-05-21 21:41:18.417 -05:00 [INF] WorldTickService heartbeat (disabled): tick #19
+2026-05-21 21:46:18.416 -05:00 [INF] WorldTickService heartbeat (disabled): tick #20
+2026-05-21 21:51:18.423 -05:00 [INF] WorldTickService heartbeat (disabled): tick #21
+2026-05-21 21:56:18.421 -05:00 [INF] WorldTickService heartbeat (disabled): tick #22
+2026-05-21 22:01:18.423 -05:00 [INF] WorldTickService heartbeat (disabled): tick #23
+2026-05-21 22:06:18.420 -05:00 [INF] WorldTickService heartbeat (disabled): tick #24
+2026-05-21 22:11:18.415 -05:00 [INF] WorldTickService heartbeat (disabled): tick #25
+2026-05-21 22:11:19.226 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-21 22:16:18.421 -05:00 [INF] WorldTickService heartbeat (disabled): tick #26
+2026-05-21 22:21:18.418 -05:00 [INF] WorldTickService heartbeat (disabled): tick #27
+2026-05-21 22:26:18.427 -05:00 [INF] WorldTickService heartbeat (disabled): tick #28
+2026-05-21 22:31:18.425 -05:00 [INF] WorldTickService heartbeat (disabled): tick #29
+2026-05-21 22:36:18.421 -05:00 [INF] WorldTickService heartbeat (disabled): tick #30
+2026-05-21 22:41:18.414 -05:00 [INF] WorldTickService heartbeat (disabled): tick #31
+2026-05-21 22:46:18.420 -05:00 [INF] WorldTickService heartbeat (disabled): tick #32
+2026-05-21 22:51:18.419 -05:00 [INF] WorldTickService heartbeat (disabled): tick #33
+2026-05-21 22:56:18.414 -05:00 [INF] WorldTickService heartbeat (disabled): tick #34
+2026-05-21 23:01:18.424 -05:00 [INF] WorldTickService heartbeat (disabled): tick #35
+2026-05-21 23:06:18.414 -05:00 [INF] WorldTickService heartbeat (disabled): tick #36
+2026-05-21 23:11:18.420 -05:00 [INF] WorldTickService heartbeat (disabled): tick #37
+2026-05-21 23:11:19.186 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-21 23:16:18.418 -05:00 [INF] WorldTickService heartbeat (disabled): tick #38
+2026-05-21 23:21:18.426 -05:00 [INF] WorldTickService heartbeat (disabled): tick #39
+2026-05-21 23:26:18.417 -05:00 [INF] WorldTickService heartbeat (disabled): tick #40
+2026-05-21 23:31:18.428 -05:00 [INF] WorldTickService heartbeat (disabled): tick #41
+2026-05-21 23:36:18.419 -05:00 [INF] WorldTickService heartbeat (disabled): tick #42
+2026-05-21 23:41:18.424 -05:00 [INF] WorldTickService heartbeat (disabled): tick #43
+2026-05-21 23:46:18.420 -05:00 [INF] WorldTickService heartbeat (disabled): tick #44
+2026-05-21 23:51:18.417 -05:00 [INF] WorldTickService heartbeat (disabled): tick #45
+2026-05-21 23:56:18.413 -05:00 [INF] WorldTickService heartbeat (disabled): tick #46
