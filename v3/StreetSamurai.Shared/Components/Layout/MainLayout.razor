@@ -12,8 +12,8 @@
     html, body { font-family: '@SettingsSvc.FontFamily', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 </style>
 
-@* <div class="cbg-sl-fine"        aria-hidden="true"></div> *@
-@* <div class="cbg-sl-coarse"       aria-hidden="true"></div> *@
+@* <div class="cyberspace-sl-fine"        aria-hidden="true"></div> *@
+@* <div class="cyberspace-sl-coarse"       aria-hidden="true"></div> *@
 @* <div class="console-bg-host"     aria-hidden="true"></div> *@
 
 @* portrait disabled
@@ -60,10 +60,10 @@
             Nav.RegisterLocationChangingHandler(OnLocationChanging);
             CheckMissingEnvVars();
             // List-item neon flicker DISABLED 2026-05-09 — too distracting in
-            // the dictionary UIs. JS (`cbgStartListItemFlicker` in console-bg.js)
+            // the dictionary UIs. JS (`cyberspaceStartListItemFlicker` in console-bg.js)
             // and CSS (`.neon-flicker-loop` in app.css) are intact for later
             // re-enablement; uncomment the line below to restore.
-            // try { await JS.InvokeVoidAsync("cbgStartListItemFlicker"); } catch { }
+            // try { await JS.InvokeVoidAsync("cyberspaceStartListItemFlicker"); } catch { }
             // portrait disabled
             // if (bgImage != null)
             // {

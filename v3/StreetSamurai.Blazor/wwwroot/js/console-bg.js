@@ -3282,7 +3282,7 @@ window.consoleBg = (function () {
     // Cyberpunk neon-flicker on entity tabs — invoked from EntityDetail.razor after the
     // entity loads. ~25% of the visible tabs briefly flicker like a damaged neon sign,
     // then settle. Represents urban decay, not a UI bug.
-    window.cbgEntityFlickerTabs = function () {
+    window.cyberspaceEntityFlickerTabs = function () {
         var tabs = document.querySelectorAll('.entity-tabs .nav-link');
         if (!tabs.length) return;
         for (var i = 0; i < tabs.length; i++) {
@@ -3308,7 +3308,7 @@ window.consoleBg = (function () {
     // DISABLED 2026-05-09 — kept for later re-enablement. Function is callable
     // but no caller invokes it; MainLayout's invocation site is commented out.
     // To restore, uncomment the call in MainLayout.OnAfterRenderAsync.
-    window.cbgStartListItemFlicker = function () {
+    window.cyberspaceStartListItemFlicker = function () {
         function apply() {
             var items = document.querySelectorAll('.dict-items .list-item');
             for (var i = 0; i < items.length; i++) {
@@ -3318,8 +3318,8 @@ window.consoleBg = (function () {
                 if (Math.random() < 0.25) el.classList.add('neon-flicker-loop');
             }
         }
-        if (window.__cbgListFlickerInited) { apply(); return; }
-        window.__cbgListFlickerInited = true;
+        if (window.__cyberspaceListFlickerInited) { apply(); return; }
+        window.__cyberspaceListFlickerInited = true;
 
         // One delegated click handler covers every .dict-items list — Blazor
         // re-renders rows but the document-level listener stays bound for the
@@ -3347,16 +3347,16 @@ window.consoleBg = (function () {
     // Computed live each call so it adapts to resizes / responsive layout changes.
     //
     // Baked-in selectors (any host gets these for free):
-    //   .cbg-keepout     — opt-in marker; add to any container you want protected
+    //   .cyberspace-keepout     — opt-in marker; add to any container you want protected
     //   main             — top-level page content (mindattic.com #content lives here)
     //   .home-content    — StreetSamurai Home page wrapper
     //   .board-grid      — any tab/tile board
     //
-    // Hosts can extend the list via window.__cbgKeepoutSelectors (CSS selector
+    // Hosts can extend the list via window.__cyberspaceKeepoutSelectors (CSS selector
     // string, comma-separated).
     function getKeepoutRects() {
-        var extra = (typeof window !== 'undefined' && window.__cbgKeepoutSelectors) || '';
-        var selector = '.cbg-keepout, main, .home-content, .board-grid' + (extra ? ', ' + extra : '');
+        var extra = (typeof window !== 'undefined' && window.__cyberspaceKeepoutSelectors) || '';
+        var selector = '.cyberspace-keepout, main, .home-content, .board-grid' + (extra ? ', ' + extra : '');
         var sel = document.querySelectorAll(selector);
         var rects = [];
         for (var i = 0; i < sel.length; i++) {
@@ -3371,7 +3371,7 @@ window.consoleBg = (function () {
     // overlap is weighted heavily so the placer avoids it unless every option is bad.
     function bestPos(host, estW, estH, xMin, xMax, yMin, yMax) {
         var hw = window.innerWidth, hh = window.innerHeight;
-        var sel = host.querySelectorAll('.cbg-win,.cbg-err-popup,.cbg-warn-popup,.cbg-memo');
+        var sel = host.querySelectorAll('.cyberspace-win,.cyberspace-err-popup,.cyberspace-warn-popup,.cyberspace-memo');
         var rects = [];
         for (var i = 0; i < sel.length; i++) rects.push(sel[i].getBoundingClientRect());
         var keepout = getKeepoutRects();
@@ -3435,19 +3435,19 @@ window.consoleBg = (function () {
             var waiting = Math.random() < 0.20;
 
             var win = document.createElement('div');
-            var colorVar = pick(['', '', 'cbg-win--blue', 'cbg-win--amber']);
-            win.className = 'cbg-win' + (colorVar ? ' ' + colorVar : '') + (extraClass ? ' ' + extraClass : '');
+            var colorVar = pick(['', '', 'cyberspace-win--blue', 'cyberspace-win--amber']);
+            win.className = 'cyberspace-win' + (colorVar ? ' ' + colorVar : '') + (extraClass ? ' ' + extraClass : '');
             var wp = posX !== undefined ? [posX, posY] : bestPos(host, 228, 140, -8, 88, 4, 76);
             win.style.left = wp[0] + '%';
             win.style.top  = wp[1] + '%';
 
             var titleEl = document.createElement('div');
-            titleEl.className = 'cbg-title';
+            titleEl.className = 'cyberspace-title';
             titleEl.textContent = pick(TITLES);
             win.appendChild(titleEl);
 
             var body = document.createElement('div');
-            body.className = 'cbg-body';
+            body.className = 'cyberspace-body';
             win.appendChild(body);
 
             host.appendChild(win);
@@ -3458,13 +3458,13 @@ window.consoleBg = (function () {
 
             var success = !waiting && Math.random() > 0.32;
             var result  = pick(success ? OK_RESULTS : ERR_RESULTS);
-            var resCls  = success ? 'cbg-ok' : 'cbg-err';
+            var resCls  = success ? 'cyberspace-ok' : 'cyberspace-err';
 
             var idx = 0;
             var lineTimer = setInterval(function () {
                 if (idx < lines.length) {
                     var ln = document.createElement('div');
-                    ln.className = 'cbg-line';
+                    ln.className = 'cyberspace-line';
                     ln.textContent = lines[idx];
                     body.appendChild(ln);
                     idx++;
@@ -3474,24 +3474,24 @@ window.consoleBg = (function () {
                         if (waiting) {
                             // Show a prompt line with blinking cursor — no result, lingers
                             var prompt = document.createElement('div');
-                            prompt.className = 'cbg-line cbg-prompt';
-                            prompt.innerHTML = '> <span class="cbg-cursor">&#9608;</span>';
+                            prompt.className = 'cyberspace-line cyberspace-prompt';
+                            prompt.innerHTML = '> <span class="cyberspace-cursor">&#9608;</span>';
                             body.appendChild(prompt);
                             // Long random TTL: 6–18 seconds
                             setTimeout(function () {
-                                win.classList.add('cbg-win--out');
+                                win.classList.add('cyberspace-win--out');
                                 setTimeout(function () {
                                     if (win.parentNode) win.parentNode.removeChild(win);
                                 }, 160);
                             }, rand(6000, 18000));
                         } else {
                             var res = document.createElement('div');
-                            res.className = 'cbg-line ' + resCls;
+                            res.className = 'cyberspace-line ' + resCls;
                             res.textContent = result;
                             body.appendChild(res);
 
                             setTimeout(function () {
-                                win.classList.add('cbg-win--out');
+                                win.classList.add('cyberspace-win--out');
                                 setTimeout(function () {
                                     if (win.parentNode) win.parentNode.removeChild(win);
                                 }, 160);
@@ -3508,7 +3508,7 @@ window.consoleBg = (function () {
         var x = rand(-5, 75), y = randTop(3, 85);
         var stepX = rand(2, 5), stepY = rand(1, 4);
         for (var i = 0; i < n; i++) {
-            spawnWindow(i * rand(65, 210), x + i * stepX, y + i * stepY, 'cbg-cascade');
+            spawnWindow(i * rand(65, 210), x + i * stepX, y + i * stepY, 'cyberspace-cascade');
         }
     }
 
@@ -3519,27 +3519,27 @@ window.consoleBg = (function () {
         if (!host) return;
 
         var popup = document.createElement('div');
-        popup.className = 'cbg-err-popup';
+        popup.className = 'cyberspace-err-popup';
         var ep = posX !== undefined ? [posX, posY] : bestPos(host, 310, 90, -5, 80, 5, 88);
         popup.style.left = ep[0] + '%';
         popup.style.top  = ep[1] + '%';
 
         // Layout: [red icon] | [title \n message \n ... \n OK btn]
         var icon = document.createElement('div');
-        icon.className = 'cbg-err-popup-icon';
+        icon.className = 'cyberspace-err-popup-icon';
         icon.textContent = '⬛';   // replaced visually via CSS — just a block placeholder
         popup.appendChild(icon);
 
         var content = document.createElement('div');
-        content.className = 'cbg-err-popup-content';
+        content.className = 'cyberspace-err-popup-content';
 
         var titleEl = document.createElement('div');
-        titleEl.className = 'cbg-err-popup-title';
+        titleEl.className = 'cyberspace-err-popup-title';
         titleEl.textContent = pick(FATAL_TITLES);
         content.appendChild(titleEl);
 
         var msgEl = document.createElement('div');
-        msgEl.className = 'cbg-err-popup-msg';
+        msgEl.className = 'cyberspace-err-popup-msg';
         msgEl.textContent = pick(FATAL_MSGS);
         content.appendChild(msgEl);
 
@@ -3548,7 +3548,7 @@ window.consoleBg = (function () {
         host.appendChild(popup);
 
         setTimeout(function () {
-            popup.classList.add('cbg-win--out');
+            popup.classList.add('cyberspace-win--out');
             setTimeout(function () {
                 if (popup.parentNode) popup.parentNode.removeChild(popup);
             }, 160);
@@ -3562,21 +3562,21 @@ window.consoleBg = (function () {
         if (!host) return;
 
         var popup = document.createElement('div');
-        popup.className = 'cbg-warn-popup';
+        popup.className = 'cyberspace-warn-popup';
         var wp2 = posX !== undefined ? [posX, posY] : bestPos(host, 290, 90, -5, 82, 5, 88);
         popup.style.left = wp2[0] + '%';
         popup.style.top  = wp2[1] + '%';
 
         var content = document.createElement('div');
-        content.className = 'cbg-warn-popup-content';
+        content.className = 'cyberspace-warn-popup-content';
 
         var titleEl = document.createElement('div');
-        titleEl.className = 'cbg-warn-popup-title';
+        titleEl.className = 'cyberspace-warn-popup-title';
         titleEl.textContent = pick(WARN_TITLES);
         content.appendChild(titleEl);
 
         var msgEl = document.createElement('div');
-        msgEl.className = 'cbg-warn-popup-msg';
+        msgEl.className = 'cyberspace-warn-popup-msg';
         msgEl.textContent = pick(WARN_MSGS);
         content.appendChild(msgEl);
 
@@ -3584,7 +3584,7 @@ window.consoleBg = (function () {
         host.appendChild(popup);
 
         setTimeout(function () {
-            popup.classList.add('cbg-win--out');
+            popup.classList.add('cyberspace-win--out');
             setTimeout(function () {
                 if (popup.parentNode) popup.parentNode.removeChild(popup);
             }, 160);
@@ -3594,7 +3594,7 @@ window.consoleBg = (function () {
     // ── Floating code fragments ─────────────────────────────────────────────
 
     // Fragment color variants — additive classes; default (no extra class) is green.
-    var FRAG_COLOR_VARIANTS = ['', 'cbg-frag--cyan', 'cbg-frag--amber', 'cbg-frag--magenta', 'cbg-frag--white'];
+    var FRAG_COLOR_VARIANTS = ['', 'cyberspace-frag--cyan', 'cyberspace-frag--amber', 'cyberspace-frag--magenta', 'cyberspace-frag--white'];
     // Plausible typo characters — adjacent-key feel plus common punctuation.
     var FRAG_TYPO_CHARS = 'abcdefghijklmnopqrstuvwxyz_-=+*/.,;:()[]{}';
 
@@ -3604,7 +3604,7 @@ window.consoleBg = (function () {
 
         var el = document.createElement('div');
         var variant = pick(FRAG_COLOR_VARIANTS);
-        el.className = 'cbg-frag' + (variant ? ' ' + variant : '');
+        el.className = 'cyberspace-frag' + (variant ? ' ' + variant : '');
         // Code fragments are ~280×120 estimated — pick a position that avoids the tile keepout
         var fp = safePos(280, 120, -4, 94, 2, 94);
         el.style.left = fp[0] + '%';
@@ -3677,7 +3677,7 @@ window.consoleBg = (function () {
 
             if (segIdx >= segs.length) {
                 setTimeout(function () {
-                    el.classList.add('cbg-frag--out');
+                    el.classList.add('cyberspace-frag--out');
                     setTimeout(function () {
                         if (!el.__predated && el.parentNode) el.parentNode.removeChild(el);
                     }, 360);
@@ -3991,21 +3991,21 @@ window.consoleBg = (function () {
         var shape = GEO_SHAPES[key];
 
         var win = document.createElement('div');
-        win.className = 'cbg-win cbg-geo-win';
+        win.className = 'cyberspace-win cyberspace-geo-win';
         var gp = bestPos(host, 240, 130, -5, 80, 5, 90);
         win.style.left = gp[0] + '%';
         win.style.top  = gp[1] + '%';
 
         var titleEl = document.createElement('div');
-        titleEl.className = 'cbg-title';
+        titleEl.className = 'cyberspace-title';
         titleEl.textContent = 'schematic/' + (shape ? shape.label : key);
         win.appendChild(titleEl);
 
         var S = 110;
         var bodyEl = document.createElement('div');
-        bodyEl.className = 'cbg-geo-body';
+        bodyEl.className = 'cyberspace-geo-body';
         var cv = document.createElement('canvas');
-        cv.className = 'cbg-geo-canvas';
+        cv.className = 'cyberspace-geo-canvas';
         cv.width = S; cv.height = S;
         bodyEl.appendChild(cv);
         win.appendChild(bodyEl);
@@ -4455,9 +4455,9 @@ window.consoleBg = (function () {
 
         // ── Scrolling element report text (right of canvas) ────────────────
         var reportEl = document.createElement('div');
-        reportEl.className = 'cbg-geo-report';
+        reportEl.className = 'cyberspace-geo-report';
         var innerEl = document.createElement('div');
-        innerEl.className = 'cbg-geo-report-inner';
+        innerEl.className = 'cyberspace-geo-report-inner';
         reportEl.appendChild(innerEl);
         bodyEl.appendChild(reportEl);
 
@@ -4483,7 +4483,7 @@ window.consoleBg = (function () {
         setTimeout(function () {
             clearInterval(scrollTmr);
             cancelAnimationFrame(rafId);
-            win.classList.add('cbg-win--out');
+            win.classList.add('cyberspace-win--out');
             setTimeout(function () { if (win.parentNode) win.parentNode.removeChild(win); }, 500);
         }, ttl);
     }
@@ -4648,7 +4648,7 @@ window.consoleBg = (function () {
             if (phase === 0 && count >= total * 1.6) { phase = 1; count = 0; }
             if (phase === 1 && count >= total * 1.6) {
                 clearInterval(timer);
-                el.classList.add('cbg-memo--collapse');
+                el.classList.add('cyberspace-memo--collapse');
                 setTimeout(function () {
                     if (!el.__predated && el.parentNode) el.parentNode.removeChild(el);
                 }, 360);
@@ -4660,7 +4660,7 @@ window.consoleBg = (function () {
         var host = getHost();
         if (!host) return;
         var el = document.createElement('div');
-        el.className = 'cbg-memo';
+        el.className = 'cyberspace-memo';
         var mp = bestPos(host, 240, 110, -5, 78, 4, 88);
         el.style.left = mp[0] + '%';
         el.style.top  = mp[1] + '%';
@@ -4672,10 +4672,10 @@ window.consoleBg = (function () {
 
     // ── Scrolling texture layer ─────────────────────────────────────────────
 
-    // Hosts can override these by defining window.__cbgCircuitboardSrcs = [a, b, c]
+    // Hosts can override these by defining window.__cyberspaceCircuitboardSrcs = [a, b, c]
     // before this script loads. mindattic.com inlines them as base64 data URIs;
     // StreetSamurai leaves the default (/api/media/... served by MediaController).
-    var TEX_SRCS = (typeof window !== 'undefined' && window.__cbgCircuitboardSrcs) || [
+    var TEX_SRCS = (typeof window !== 'undefined' && window.__cyberspaceCircuitboardSrcs) || [
         '/api/media/circuitboard.00.png',
         '/api/media/circuitboard.01.png',
         '/api/media/circuitboard.02.png',
@@ -4683,22 +4683,54 @@ window.consoleBg = (function () {
     var texLayers = null;   // built once; images reused across navigations
     var texRaf    = null;
     var texTimer  = null;
+    var texResizeBound = false;
+    var texCanvas = null;
+    var texRO     = null;
+
+    function syncTexCanvasSize() {
+        if (!texCanvas) return;
+        // Use the live viewport — the host is position:fixed;inset:0 so it always
+        // matches window inner dimensions. Round in case devicePixelRatio gives
+        // fractional pixels.
+        var w = Math.max(1, Math.round(window.innerWidth));
+        var h = Math.max(1, Math.round(window.innerHeight));
+        if (texCanvas.width  !== w) texCanvas.width  = w;
+        if (texCanvas.height !== h) texCanvas.height = h;
+    }
 
     function initTextures() {
         var host = getHost();
         if (!host) return;
 
-        // Reuse or create canvas inside host
-        var canvas = host.querySelector('.cbg-tex');
+        // Reuse or create canvas inside host. CSS width/height:100% forces the
+        // canvas's CSS box to stretch with the host regardless of the width/height
+        // HTML attributes (which would otherwise also dictate the CSS box size
+        // and leave new viewport area uncovered after a maximize/resize).
+        var canvas = host.querySelector('.cyberspace-tex');
         if (!canvas) {
             canvas = document.createElement('canvas');
-            canvas.className = 'cbg-tex';
-            canvas.style.cssText = 'position:absolute;inset:0;pointer-events:none;z-index:0;';
+            canvas.className = 'cyberspace-tex';
+            canvas.style.cssText = 'position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:0;';
             host.insertBefore(canvas, host.firstChild);
+        } else {
+            canvas.style.cssText = 'position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:0;';
         }
-        canvas.width  = window.innerWidth;
-        canvas.height = window.innerHeight;
+        texCanvas = canvas;
+        syncTexCanvasSize();
         var ctx = canvas.getContext('2d');
+
+        // Keep the bitmap in sync with the viewport — without this the parallax
+        // texture only paints the original window area after a maximize/resize.
+        if (!texResizeBound) {
+            window.addEventListener('resize', syncTexCanvasSize);
+            // Also observe the host directly so zoom changes, devtools panel
+            // toggles, and other container-size shifts repaint correctly.
+            if (typeof ResizeObserver !== 'undefined') {
+                texRO = new ResizeObserver(syncTexCanvasSize);
+                texRO.observe(host);
+            }
+            texResizeBound = true;
+        }
 
         // Build layer descriptors once; images survive page navigations
         if (!texLayers) {
@@ -4734,9 +4766,10 @@ window.consoleBg = (function () {
 
         // Restart animation loop on the (possibly new) canvas
         if (texRaf) cancelAnimationFrame(texRaf);
-        var w = canvas.width, h = canvas.height;
 
         function frame() {
+            // Read live so a resize-driven canvas.width/height change takes effect immediately.
+            var w = canvas.width, h = canvas.height;
             ctx.clearRect(0, 0, w, h);
             texLayers.forEach(function (t) {
                 if (!t.img.complete || !t.img.naturalWidth) return;
@@ -4783,23 +4816,23 @@ window.consoleBg = (function () {
         var host = getHost();
         if (!host) return;
         var win = document.createElement('div');
-        win.className = 'cbg-win cbg-folder-win';
+        win.className = 'cyberspace-win cyberspace-folder-win';
         var fp = bestPos(host, 220, 170, -2, 86, 4, 80);
         win.style.left = fp[0] + '%';
         win.style.top  = fp[1] + '%';
 
         var titleEl = document.createElement('div');
-        titleEl.className = 'cbg-title';
+        titleEl.className = 'cyberspace-title';
         titleEl.textContent = 'filebrowser' + pick(FOLDER_PATHS);
         win.appendChild(titleEl);
 
         var listEl = document.createElement('div');
-        listEl.className = 'cbg-folder-list';
+        listEl.className = 'cyberspace-folder-list';
         var n = rand(6, 10);
         var folders = [];
         for (var i = 0; i < n; i++) {
             var f = document.createElement('div');
-            f.className = 'cbg-folder';
+            f.className = 'cyberspace-folder';
             f.textContent = '► ' + folderItemText();
             listEl.appendChild(f);
             folders.push(f);
@@ -4811,7 +4844,7 @@ window.consoleBg = (function () {
         var hiCount = rand(1, 3);
         var hiStart = Math.floor(Math.random() * (folders.length - hiCount + 1));
         setTimeout(function () {
-            for (var i = hiStart; i < hiStart + hiCount; i++) folders[i].classList.add('cbg-folder-highlight');
+            for (var i = hiStart; i < hiStart + hiCount; i++) folders[i].classList.add('cyberspace-folder-highlight');
         }, 500);
 
         // Extract the highlighted items — each file does ONE simple slide-blink-fade. The
@@ -4827,11 +4860,11 @@ window.consoleBg = (function () {
             var ripDist = 240; // > window width so the folder clears the right edge entirely
             for (var i = hiStart; i < hiStart + hiCount; i++) {
                 var f = folders[i];
-                f.classList.add('cbg-folder-ripping'); // lift z-index above the window
+                f.classList.add('cyberspace-folder-ripping'); // lift z-index above the window
                 f.style.setProperty('--rx', ripDist + 'px');
                 f.style.setProperty('--ry', '0px');
                 var delay = (i - hiStart) * perFileDelay;
-                f.style.animation = 'cbg-folder-rip ' + perFileDur + 'ms cubic-bezier(0.32, 0.72, 0, 1) ' + delay + 'ms forwards';
+                f.style.animation = 'cyberspace-folder-rip ' + perFileDur + 'ms cubic-bezier(0.32, 0.72, 0, 1) ' + delay + 'ms forwards';
             }
         }, ripStartMs);
 
@@ -4841,11 +4874,11 @@ window.consoleBg = (function () {
         var stealCompleteMs = ripStartMs + (hiCount - 1) * perFileDelay + perFileDur;
         var winFadeAt = stealCompleteMs + 220;
         setTimeout(function () {
-            // The window still has cbg-in's animation-fill-mode:forwards holding
+            // The window still has cyberspace-in's animation-fill-mode:forwards holding
             // opacity 0.76; a transition can't reliably override that. Apply a
             // keyframe animation instead — fresh animation wins over the prior
             // forwards fill, so the fade always resolves visually.
-            win.classList.add('cbg-folder-win--fade');
+            win.classList.add('cyberspace-folder-win--fade');
             setTimeout(function () { if (win.parentNode) win.parentNode.removeChild(win); }, 600);
         }, winFadeAt);
     }
@@ -4861,7 +4894,7 @@ window.consoleBg = (function () {
 
     // Predator wasps use #ff2244 (bright red). ARTIFACT cells stay off that hue so the
     // consume-and-convert flash is visually unambiguous when a swarm shows up.
-    var ART_PALETTES = ['cbg-artifact--white', 'cbg-artifact--blue', 'cbg-artifact--amber'];
+    var ART_PALETTES = ['cyberspace-artifact--white', 'cyberspace-artifact--blue', 'cyberspace-artifact--amber'];
 
     // ARTIFACT variant enum — each spawn picks one. Names listed in the registry at the top
     // of this file; each is a preserved iteration of how ARTIFACTs have looked.
@@ -4910,7 +4943,7 @@ window.consoleBg = (function () {
     }
     function artNewContainer() {
         var el = document.createElement('div');
-        el.className = 'cbg-artifact ' + pick(ART_PALETTES);
+        el.className = 'cyberspace-artifact ' + pick(ART_PALETTES);
         // Artifact body fits in roughly a 200×140 box once segments and feelers are spawned.
         // Use safePos so the structure doesn't materialise on top of the tile container.
         var ap = safePos(200, 140, -2, 88, -2, 85);
@@ -4936,7 +4969,7 @@ window.consoleBg = (function () {
         var clusterAngle = Math.random() * Math.PI * 2;
         for (var i = 0; i < n; i++) {
             var span = document.createElement('span');
-            span.className = 'cbg-artifact-char';
+            span.className = 'cyberspace-artifact-char';
             var angle = Math.random() * Math.PI * 2;
             var r     = Math.random() * blobR;
             span.style.left     = Math.round(r * Math.cos(angle)) + 'px';
@@ -4949,7 +4982,7 @@ window.consoleBg = (function () {
             span.style.setProperty('--ady1', Math.round(Math.sin(glyphAngle) * glyphDist) + 'px');
             var driftDur   = (1.8 + Math.random() * 2.2).toFixed(2);
             var driftDelay = (Math.random() * 1.8).toFixed(2);
-            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, cbg-art-drift ' + driftDur + 's ease-in ' + driftDelay + 's forwards';
+            span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite, cyberspace-art-drift ' + driftDur + 's ease-in ' + driftDelay + 's forwards';
             span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
             el.appendChild(span);
         }
@@ -4979,7 +5012,7 @@ window.consoleBg = (function () {
         for (var row = 0; row < rows; row++) {
             for (var col = 0; col < cols; col++) {
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 span.style.left = Math.round(g.colX[col] - g.totalW / 2) + 'px';
                 span.style.top  = Math.round(g.rowY[row] - g.totalH / 2) + 'px';
                 var cellMin = Math.min(g.colW[col], g.rowH[row]);
@@ -4990,7 +5023,7 @@ window.consoleBg = (function () {
                 var waveDist   = Math.abs(col - waveOx) + Math.abs(row - waveOy);
                 var driftDelay = (waveDist * stepDelay + Math.random() * ART_INV_PHI * 0.3).toFixed(2);
                 var driftDur   = (ART_PHI + Math.random() * ART_PHI).toFixed(2);
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, cbg-art-drift ' + driftDur + 's ease-in ' + driftDelay + 's forwards';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite, cyberspace-art-drift ' + driftDur + 's ease-in ' + driftDelay + 's forwards';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 el.appendChild(span);
             }
@@ -5017,7 +5050,7 @@ window.consoleBg = (function () {
         for (var row = 0; row < rows; row++) {
             for (var col = 0; col < cols; col++) {
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 var leftPx = Math.round(g.colX[col] - g.totalW / 2);
                 var topPx  = Math.round(g.rowY[row] - g.totalH / 2);
                 span.style.left = leftPx + 'px';
@@ -5025,7 +5058,7 @@ window.consoleBg = (function () {
                 var cellMin = Math.min(g.colW[col], g.rowH[row]);
                 var fontPx  = Math.max(8, Math.round(cellMin * ART_PHI * ART_INV_PHI));
                 span.style.fontSize = fontPx + 'px';
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 el.appendChild(span);
                 spans.push(span);
@@ -5045,7 +5078,7 @@ window.consoleBg = (function () {
         var feelerTimer = setInterval(function () {
             var seed = leadingPool[Math.floor(Math.random() * leadingPool.length)];
             var feel = document.createElement('span');
-            feel.className = 'cbg-artifact-char';
+            feel.className = 'cyberspace-artifact-char';
             feel.style.left = seed.left + 'px';
             feel.style.top  = seed.top  + 'px';
             feel.style.fontSize = seed.fontPx + 'px';
@@ -5055,7 +5088,7 @@ window.consoleBg = (function () {
             feel.style.setProperty('--adx1', Math.round(Math.cos(clusterAngle + spread) * fdist) + 'px');
             feel.style.setProperty('--ady1', Math.round(Math.sin(clusterAngle + spread) * fdist) + 'px');
             var fdur = ART_PHI + Math.random() * ART_PHI;
-            feel.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, cbg-art-drift ' + fdur.toFixed(2) + 's ease-in 0s forwards';
+            feel.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite, cyberspace-art-drift ' + fdur.toFixed(2) + 's ease-in 0s forwards';
             feel.textContent = artGlyph();
             el.appendChild(feel);
             setTimeout(function () { if (feel.parentNode) feel.parentNode.removeChild(feel); }, fdur * 1000 + 250);
@@ -5068,7 +5101,7 @@ window.consoleBg = (function () {
     }
 
     // ── Variant: SLUG — single grid that crawls + per-cell undulation ──────────
-    // The whole grid translates slowly across the screen via cbg-artifact-crawl. Per-cell
+    // The whole grid translates slowly across the screen via cyberspace-artifact-crawl. Per-cell
     // undulation makes the body deform/breathe as it crawls. Disintegrates at end.
     function spawnArtifactSlug(host) {
         var el = artNewContainer();
@@ -5080,12 +5113,12 @@ window.consoleBg = (function () {
         var crawlDist = 144 + Math.random() * 89;
         el.style.setProperty('--cdx', Math.round(cosA * crawlDist) + 'px');
         el.style.setProperty('--cdy', Math.round(sinA * crawlDist) + 'px');
-        el.style.animation = 'cbg-artifact-crawl 7.2s ease-in-out forwards';
+        el.style.animation = 'cyberspace-artifact-crawl 7.2s ease-in-out forwards';
         var spans = [];
         for (var row = 0; row < rows; row++) {
             for (var col = 0; col < cols; col++) {
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 span.style.left = Math.round(g.colX[col] - g.totalW / 2) + 'px';
                 span.style.top  = Math.round(g.rowY[row] - g.totalH / 2) + 'px';
                 var cellMin = Math.min(g.colW[col], g.rowH[row]);
@@ -5096,8 +5129,8 @@ window.consoleBg = (function () {
                 span.style.setProperty('--uy', Math.round(Math.sin(uAng) * uMag) + 'px');
                 var undDur   = (2.0 + Math.random() * 1.6).toFixed(2);
                 var undDelay = (-Math.random() * 3).toFixed(2);
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, '
-                                     + 'cbg-art-undulate ' + undDur + 's ease-in-out ' + undDelay + 's infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite, '
+                                     + 'cyberspace-art-undulate ' + undDur + 's ease-in-out ' + undDelay + 's infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 el.appendChild(span);
                 spans.push(span);
@@ -5125,13 +5158,13 @@ window.consoleBg = (function () {
         var crawlDist = 144 + Math.random() * 89;
         el.style.setProperty('--cdx', Math.round(cosA * crawlDist) + 'px');
         el.style.setProperty('--cdy', Math.round(sinA * crawlDist) + 'px');
-        el.style.animation = 'cbg-artifact-crawl 7.2s ease-in-out forwards';
+        el.style.animation = 'cyberspace-artifact-crawl 7.2s ease-in-out forwards';
         var segCount = pick([3, 5, 8]);
         var segStep  = 21 + Math.random() * 13;
         var allSpans = [], leadingPool = [];
         for (var seg = 0; seg < segCount; seg++) {
             var segEl = document.createElement('div');
-            segEl.className = 'cbg-artifact-seg';
+            segEl.className = 'cyberspace-artifact-seg';
             var segOffsetDist = -seg * segStep;
             var segLeft = Math.round(cosA * segOffsetDist);
             var segTop  = Math.round(sinA * segOffsetDist);
@@ -5142,14 +5175,14 @@ window.consoleBg = (function () {
             segEl.style.setProperty('--swy', Math.round(perpY * swMag) + 'px');
             var swDur = (1.6 + Math.random() * 1.0).toFixed(2);
             var swPhase = (-seg * parseFloat(swDur) / segCount * ART_PHI).toFixed(2);
-            segEl.style.animation = 'cbg-art-seg-wave ' + swDur + 's ease-in-out ' + swPhase + 's infinite';
+            segEl.style.animation = 'cyberspace-art-seg-wave ' + swDur + 's ease-in-out ' + swPhase + 's infinite';
             var cols = pick([3, 5]);
             var rows = pick([3, 5]);
             var g = artBuildFibGrid(cols, rows);
             for (var row = 0; row < rows; row++) {
                 for (var col = 0; col < cols; col++) {
                     var span = document.createElement('span');
-                    span.className = 'cbg-artifact-char';
+                    span.className = 'cyberspace-artifact-char';
                     var leftPx = Math.round(g.colX[col] - g.totalW / 2);
                     var topPx  = Math.round(g.rowY[row] - g.totalH / 2);
                     span.style.left = leftPx + 'px';
@@ -5163,8 +5196,8 @@ window.consoleBg = (function () {
                     span.style.setProperty('--uy', Math.round(Math.sin(uAng) * uMag) + 'px');
                     var undDur   = (2.0 + Math.random() * 1.6).toFixed(2);
                     var undDelay = (-Math.random() * 3).toFixed(2);
-                    span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, '
-                                         + 'cbg-art-undulate ' + undDur + 's ease-in-out ' + undDelay + 's infinite';
+                    span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite, '
+                                         + 'cyberspace-art-undulate ' + undDur + 's ease-in-out ' + undDelay + 's infinite';
                     span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                     segEl.appendChild(span);
                     allSpans.push(span);
@@ -5188,7 +5221,7 @@ window.consoleBg = (function () {
             if (!leadingPool.length) return;
             var seed = leadingPool[Math.floor(Math.random() * leadingPool.length)];
             var feel = document.createElement('span');
-            feel.className = 'cbg-artifact-char';
+            feel.className = 'cyberspace-artifact-char';
             feel.style.left = seed.left + 'px';
             feel.style.top  = seed.top  + 'px';
             feel.style.fontSize = seed.fontPx + 'px';
@@ -5198,7 +5231,7 @@ window.consoleBg = (function () {
             feel.style.setProperty('--adx1', Math.round(Math.cos(clusterAngle + spread) * fdist) + 'px');
             feel.style.setProperty('--ady1', Math.round(Math.sin(clusterAngle + spread) * fdist) + 'px');
             var fdur = ART_PHI + Math.random() * ART_PHI;
-            feel.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, cbg-art-drift ' + fdur.toFixed(2) + 's ease-in 0s forwards';
+            feel.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite, cyberspace-art-drift ' + fdur.toFixed(2) + 's ease-in 0s forwards';
             feel.textContent = artGlyph();
             el.appendChild(feel);
             setTimeout(function () { if (feel.parentNode) feel.parentNode.removeChild(feel); }, fdur * 1000 + 250);
@@ -5223,7 +5256,7 @@ window.consoleBg = (function () {
         var crawlDist = 65 + Math.random() * 55;
         el.style.setProperty('--cdx', Math.round(Math.cos(clusterAngle) * crawlDist) + 'px');
         el.style.setProperty('--cdy', Math.round(Math.sin(clusterAngle) * crawlDist) + 'px');
-        el.style.animation = 'cbg-artifact-crawl 8.6s ease-in-out forwards';
+        el.style.animation = 'cyberspace-artifact-crawl 8.6s ease-in-out forwards';
 
         // Size tier — 1.0 is the largest (matches the original feel). Smaller tiers are rarer.
         var scale = pick([0.42, 0.42, 0.62, 0.62, 0.82, 1.0, 1.0]);
@@ -5241,7 +5274,7 @@ window.consoleBg = (function () {
                 var cx = Math.cos(ang) * ring.radius;
                 var cy = Math.sin(ang) * ring.radius;
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 span.style.left = Math.round(cx) + 'px';
                 span.style.top  = Math.round(cy) + 'px';
                 // Font scales with size tier but never below readable
@@ -5249,8 +5282,8 @@ window.consoleBg = (function () {
                 span.style.setProperty('--px', (Math.cos(ang) * ring.ampl).toFixed(2) + 'px');
                 span.style.setProperty('--py', (Math.sin(ang) * ring.ampl).toFixed(2) + 'px');
                 var beatDelay = ringIdx * 0.08;
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite, '
-                                     + 'cbg-art-heartbeat 1.6s ease-in-out ' + beatDelay + 's infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite, '
+                                     + 'cyberspace-art-heartbeat 1.6s ease-in-out ' + beatDelay + 's infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 el.appendChild(span);
                 spans.push({ el: span, ang: ang, radius: ring.radius });
@@ -5276,7 +5309,7 @@ window.consoleBg = (function () {
                     var tx = Math.round(Math.cos(scatterAng) * scatterDist);
                     var ty = Math.round(Math.sin(scatterAng) * scatterDist);
                     // Drop the heartbeat — only the flicker continues until it's gone
-                    s.el.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                    s.el.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                     s.el.style.transition = 'transform 0.9s cubic-bezier(0.2, 0.6, 0.4, 1), opacity 0.9s ease, color 0.2s ease';
                     s.el.style.transform = 'translate(' + tx + 'px, ' + ty + 'px)';
                     s.el.style.color = '#ff2244';
@@ -5307,12 +5340,12 @@ window.consoleBg = (function () {
         for (var row = 0; row < rows; row++) {
             for (var col = 0; col < cols; col++) {
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 span.style.left = Math.round(g.colX[col] - g.totalW / 2) + 'px';
                 span.style.top  = Math.round(g.rowY[row] - g.totalH / 2) + 'px';
                 var cellMin = Math.min(g.colW[col], g.rowH[row]);
                 span.style.fontSize = Math.max(8, Math.round(cellMin * ART_INV_PHI)) + 'px';
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 el.appendChild(span);
                 spans.push(span);
@@ -5401,12 +5434,12 @@ window.consoleBg = (function () {
             var segs = [];
             for (var s = 0; s < SEG_PER_LEG; s++) {
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 var r = (s + 1) * segLen;
                 span.style.left = Math.round(legCx * r) + 'px';
                 span.style.top  = Math.round(legCy * r) + 'px';
                 span.style.fontSize = Math.max(8, Math.round(13 - s * 1.5)) + 'px';
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 el.appendChild(span);
                 segs.push(span);
@@ -5414,10 +5447,10 @@ window.consoleBg = (function () {
             legSpans.push(segs);
         }
         var hub = document.createElement('span');
-        hub.className = 'cbg-artifact-char';
+        hub.className = 'cyberspace-artifact-char';
         hub.style.left = '0px'; hub.style.top = '0px';
         hub.style.fontSize = '16px';
-        hub.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+        hub.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
         hub.textContent = artGlyph();
         el.appendChild(hub);
         host.appendChild(el);
@@ -5478,9 +5511,9 @@ window.consoleBg = (function () {
         var spans = [];
         for (var i = 0; i < N; i++) {
             var span = document.createElement('span');
-            span.className = 'cbg-artifact-char';
+            span.className = 'cyberspace-artifact-char';
             span.style.fontSize = Math.max(8, Math.round(14 - i * 0.7)) + 'px';
-            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
             span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
             el.appendChild(span);
             spans.push(span);
@@ -5542,12 +5575,12 @@ window.consoleBg = (function () {
         for (var row = 0; row < rows; row++) {
             for (var col = 0; col < cols; col++) {
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 span.style.left = Math.round(g.colX[col] - g.totalW / 2) + 'px';
                 span.style.top  = Math.round(g.rowY[row] - g.totalH / 2) + 'px';
                 var cellMin = Math.min(g.colW[col], g.rowH[row]);
                 span.style.fontSize = Math.max(8, Math.round(cellMin * ART_INV_PHI)) + 'px';
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 cluster.appendChild(span);
                 spans.push(span);
@@ -5622,9 +5655,9 @@ window.consoleBg = (function () {
             var ring = [];
             for (var i = 0; i < n; i++) {
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 span.style.fontSize = Math.max(8, Math.round(13 - ri * 1.5)) + 'px';
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 el.appendChild(span);
                 ring.push({ el: span, angle: (i / n) * Math.PI * 2, baseR: baseR, ringIdx: ri });
@@ -5691,11 +5724,11 @@ window.consoleBg = (function () {
         for (var row = 0; row < 2; row++) {
             for (var col = 0; col < 3; col++) {
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 span.style.left = (col * 8 - 8) + 'px';
                 span.style.top  = (row * 7 - 14) + 'px';
                 span.style.fontSize = '13px';
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 bell.appendChild(span);
                 bellSpans.push(span);
@@ -5708,9 +5741,9 @@ window.consoleBg = (function () {
             var chain = [];
             for (var s = 0; s < 5; s++) {
                 var span2 = document.createElement('span');
-                span2.className = 'cbg-artifact-char';
+                span2.className = 'cyberspace-artifact-char';
                 span2.style.fontSize = '10px';
-                span2.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span2.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                 span2.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 el.appendChild(span2);
                 chain.push({ el: span2, lateralOffset: lateral, seg: s });
@@ -5785,14 +5818,14 @@ window.consoleBg = (function () {
         for (var row = 0; row < 3; row++) {
             for (var col = 0; col < 4; col++) {
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 var lx = (col - 1.5) * 7;
                 var ly = (row - 1) * 7;
                 // Rotate to body axis
                 span.style.left = Math.round(ca * lx - sa * ly) + 'px';
                 span.style.top  = Math.round(sa * lx + ca * ly) + 'px';
                 span.style.fontSize = '12px';
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 el.appendChild(span);
                 shell.push(span);
@@ -5800,8 +5833,8 @@ window.consoleBg = (function () {
         }
         // Two antennae at front (along ca,sa direction), splayed perpendicular
         var antL = document.createElement('span');
-        antL.className = 'cbg-artifact-char'; antL.style.fontSize = '10px';
-        antL.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+        antL.className = 'cyberspace-artifact-char'; antL.style.fontSize = '10px';
+        antL.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
         antL.textContent = artGlyph();
         var antR = antL.cloneNode(true);
         el.appendChild(antL); el.appendChild(antR);
@@ -5860,12 +5893,12 @@ window.consoleBg = (function () {
         var headOffsets = [[0, 0], [4, -3], [4, 3]];
         for (var i = 0; i < headOffsets.length; i++) {
             var span = document.createElement('span');
-            span.className = 'cbg-artifact-char';
+            span.className = 'cyberspace-artifact-char';
             var hx = headOffsets[i][0], hy = headOffsets[i][1];
             span.style.left = Math.round(ca * hx - sa * hy) + 'px';
             span.style.top  = Math.round(sa * hx + ca * hy) + 'px';
             span.style.fontSize = '13px';
-            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
             span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
             el.appendChild(span);
             headSpans.push(span);
@@ -5875,9 +5908,9 @@ window.consoleBg = (function () {
         var tailSpans = [];
         for (var i = 0; i < TAIL_N; i++) {
             var span2 = document.createElement('span');
-            span2.className = 'cbg-artifact-char';
+            span2.className = 'cyberspace-artifact-char';
             span2.style.fontSize = Math.max(8, Math.round(12 - i * 0.4)) + 'px';
-            span2.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span2.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
             span2.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
             el.appendChild(span2);
             tailSpans.push(span2);
@@ -5930,17 +5963,17 @@ window.consoleBg = (function () {
         var body = [];
         for (var i = 0; i < 3; i++) {
             var span = document.createElement('span');
-            span.className = 'cbg-artifact-char';
+            span.className = 'cyberspace-artifact-char';
             span.style.fontSize = (i === 1 ? 12 : 11) + 'px';
-            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
             span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
             el.appendChild(span);
             body.push(span);
         }
         var antL = document.createElement('span'), antR = document.createElement('span');
-        antL.className = antR.className = 'cbg-artifact-char';
+        antL.className = antR.className = 'cyberspace-artifact-char';
         antL.style.fontSize = antR.style.fontSize = '9px';
-        antL.style.animation = antR.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+        antL.style.animation = antR.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
         antL.textContent = artGlyph(); antR.textContent = artGlyph();
         el.appendChild(antL); el.appendChild(antR);
         host.appendChild(el);
@@ -6061,11 +6094,11 @@ window.consoleBg = (function () {
                     var lx = (c - (COLS - 1) / 2) * SP;
                     var ly = (r - (ROWS - 1) / 2) * SP;
                     var span = document.createElement('span');
-                    span.className = 'cbg-artifact-char';
+                    span.className = 'cyberspace-artifact-char';
                     span.style.left = Math.round(ca * lx - sa * ly) + 'px';
                     span.style.top  = Math.round(sa * lx + ca * ly) + 'px';
                     span.style.fontSize = '10px';
-                    span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                    span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                     span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                     grid.appendChild(span);
                     spans.push(span);
@@ -6105,9 +6138,9 @@ window.consoleBg = (function () {
         var particles = [];
         for (var i = 0; i < N; i++) {
             var span = document.createElement('span');
-            span.className = 'cbg-artifact-char';
+            span.className = 'cyberspace-artifact-char';
             span.style.fontSize = (9 + Math.random() * 4) + 'px';
-            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
             span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
             el.appendChild(span);
             particles.push({
@@ -6152,9 +6185,9 @@ window.consoleBg = (function () {
             var ang = Math.random() * Math.PI * 2;
             var dist = 60 + Math.random() * 50;
             var span = document.createElement('span');
-            span.className = 'cbg-artifact-char';
+            span.className = 'cyberspace-artifact-char';
             span.style.fontSize = (9 + Math.random() * 4) + 'px';
-            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
             span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
             el.appendChild(span);
             bits.push({ el: span, dx: Math.cos(ang) * dist, dy: Math.sin(ang) * dist, driftAng: ang + (Math.random() - 0.5) * 0.5 });
@@ -6198,9 +6231,9 @@ window.consoleBg = (function () {
         ];
         var nodes = [];
         var center = document.createElement('span');
-        center.className = 'cbg-artifact-char';
+        center.className = 'cyberspace-artifact-char';
         center.style.left = '0px'; center.style.top = '0px'; center.style.fontSize = '14px';
-        center.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+        center.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
         center.textContent = artGlyph();
         el.appendChild(center);
         nodes.push(center);
@@ -6208,9 +6241,9 @@ window.consoleBg = (function () {
         rings.forEach(function (ring) {
             for (var i = 0; i < ring.n; i++) {
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 span.style.fontSize = Math.max(8, 13 - Math.floor(ring.r / 18)) + 'px';
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 el.appendChild(span);
                 nodes.push(span);
@@ -6274,11 +6307,11 @@ window.consoleBg = (function () {
             var trio = [];
             for (var k = 0; k < 3; k++) {
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 span.style.left = ((k - 1) * 5) + 'px';
                 span.style.top  = '0px';
                 span.style.fontSize = (k === 1 ? 13 : 10) + 'px';
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 nodeEl.appendChild(span);
                 trio.push(span);
@@ -6336,7 +6369,7 @@ window.consoleBg = (function () {
         // Ghost trail dot — sticks around 1.6s while fading, so traffic builds a visible web
         function dropTrailDot(x, y) {
             var dot = document.createElement('span');
-            dot.className = 'cbg-artifact-char';
+            dot.className = 'cyberspace-artifact-char';
             dot.style.left = Math.round(x) + 'px';
             dot.style.top  = Math.round(y) + 'px';
             dot.style.fontSize = '7px';
@@ -6356,7 +6389,7 @@ window.consoleBg = (function () {
             var pktGlyphs = [];
             for (var i = 0; i < LEN; i++) {
                 var sp = document.createElement('span');
-                sp.className = 'cbg-artifact-char';
+                sp.className = 'cyberspace-artifact-char';
                 sp.style.fontSize = Math.max(7, 13 - i) + 'px';
                 sp.style.opacity = (0.95 - i * 0.10).toFixed(2);
                 sp.textContent = i === 0 ? artGlyph() : '·';
@@ -6412,11 +6445,11 @@ window.consoleBg = (function () {
                 var lx = (c - (COLS - 1) / 2) * SP;
                 var ly = (r - (ROWS - 1) / 2) * SP;
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 span.style.left = Math.round(lx) + 'px';
                 span.style.top  = Math.round(ly) + 'px';
                 span.style.fontSize = '10px';
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 el.appendChild(span);
                 cells.push({ el: span, c: c, r: r });
@@ -6458,11 +6491,11 @@ window.consoleBg = (function () {
             // Each shard = a 2x2 mini-grid of glyphs
             for (var k = 0; k < 4; k++) {
                 var span = document.createElement('span');
-                span.className = 'cbg-artifact-char';
+                span.className = 'cyberspace-artifact-char';
                 span.style.left = ((k % 2) * 7) + 'px';
                 span.style.top  = (Math.floor(k / 2) * 7) + 'px';
                 span.style.fontSize = '11px';
-                span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+                span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
                 span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
                 shard.appendChild(span);
             }
@@ -6487,7 +6520,7 @@ window.consoleBg = (function () {
             requestAnimationFrame(step);
         }
         requestAnimationFrame(step);
-        var allG = el.querySelectorAll('.cbg-artifact-char');
+        var allG = el.querySelectorAll('.cyberspace-artifact-char');
         var glitchTimer = setInterval(function () {
             for (var i = 0; i < 3; i++) allG[Math.floor(Math.random() * allG.length)].textContent = artGlyph();
         }, 150);
@@ -6504,9 +6537,9 @@ window.consoleBg = (function () {
         var trail = [];
         for (var i = 0; i < N; i++) {
             var span = document.createElement('span');
-            span.className = 'cbg-artifact-char';
+            span.className = 'cyberspace-artifact-char';
             span.style.fontSize = '10px';
-            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
             span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
             el.appendChild(span);
             trail.push(span);
@@ -6543,11 +6576,11 @@ window.consoleBg = (function () {
         for (var i = 0; i < N; i++) {
             var a = (i / N) * Math.PI * 2;
             var span = document.createElement('span');
-            span.className = 'cbg-artifact-char';
+            span.className = 'cyberspace-artifact-char';
             span.style.left = Math.round(Math.cos(a) * R) + 'px';
             span.style.top  = Math.round(Math.sin(a) * R) + 'px';
             span.style.fontSize = '12px';
-            span.style.animation = 'cbg-art-flicker 0.7s steps(1) infinite';
+            span.style.animation = 'cyberspace-art-flicker 0.7s steps(1) infinite';
             span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
             el.appendChild(span);
             ring.push({ el: span, idx: i });
@@ -6684,7 +6717,7 @@ window.consoleBg = (function () {
         // The dot inside is positioned at orbit-origin so its own transform (used by shift mode)
         // composes cleanly with the orbit's drift transform. Spawn coords avoid the tile keepout.
         var orbit = document.createElement('div');
-        orbit.className = 'cbg-morse-orbit';
+        orbit.className = 'cyberspace-morse-orbit';
         var op = safePos(40, 40, 4, 92, 4, 92);
         orbit.style.left = op[0] + '%';
         orbit.style.top  = op[1] + '%';
@@ -6694,14 +6727,14 @@ window.consoleBg = (function () {
         var driftDist  = 60 + Math.random() * 80;
         orbit.style.setProperty('--ox', Math.round(Math.cos(driftAngle) * driftDist) + 'px');
         orbit.style.setProperty('--oy', Math.round(Math.sin(driftAngle) * driftDist) + 'px');
-        orbit.style.animation = 'cbg-morse-orbit-drift ' + (45 + Math.random() * 35).toFixed(1) + 's linear forwards';
+        orbit.style.animation = 'cyberspace-morse-orbit-drift ' + (45 + Math.random() * 35).toFixed(1) + 's linear forwards';
         host.appendChild(orbit);
 
         var dot = document.createElement('div');
-        dot.className = 'cbg-morse-dot';
+        dot.className = 'cyberspace-morse-dot';
         dot.style.setProperty('--mc', color);
-        // Shift-mode dots stay glowing the whole time; blink-mode dots toggle the .cbg-morse-on class
-        if (mode === 'shift') dot.classList.add('cbg-morse-on');
+        // Shift-mode dots stay glowing the whole time; blink-mode dots toggle the .cyberspace-morse-on class
+        if (mode === 'shift') dot.classList.add('cyberspace-morse-on');
         orbit.appendChild(dot);
 
         // Fade in
@@ -6717,7 +6750,7 @@ window.consoleBg = (function () {
         function finish() {
             if (killed) return;
             killed = true;
-            dot.classList.remove('cbg-morse-on');
+            dot.classList.remove('cyberspace-morse-on');
             dot.style.transition = 'opacity 0.5s ease, transform 0.3s ease';
             dot.style.transform = 'translate(0,0)';
             dot.style.opacity = '0';
@@ -6732,7 +6765,7 @@ window.consoleBg = (function () {
             var dur = s.units * unit;
 
             if (s.kind === 'gap') {
-                if (mode === 'blink') dot.classList.remove('cbg-morse-on');
+                if (mode === 'blink') dot.classList.remove('cyberspace-morse-on');
                 // shift mode: pause at start position during gap (transform already 0,0)
                 setTimeout(step, dur);
                 return;
@@ -6740,10 +6773,10 @@ window.consoleBg = (function () {
 
             // s.kind === 'on'
             if (mode === 'blink') {
-                dot.classList.add('cbg-morse-on');
+                dot.classList.add('cyberspace-morse-on');
                 setTimeout(function () {
                     if (killed) return;
-                    dot.classList.remove('cbg-morse-on');
+                    dot.classList.remove('cyberspace-morse-on');
                     step();
                 }, dur);
             } else {
@@ -7143,7 +7176,7 @@ window.consoleBg = (function () {
         var n = rand(4, 8);
         for (var i = 0; i < n; i++) {
             var s = document.createElement('div');
-            s.className = 'cbg-net-spark';
+            s.className = 'cyberspace-net-spark';
             s.style.left  = px + 'px';
             s.style.top   = py + 'px';
             s.style.color = col.fail; // bright variant of the wire colour
@@ -7166,7 +7199,7 @@ window.consoleBg = (function () {
     function netShowFail(host, fx, fy, col, elems, gridPath, dir) {
         dir = dir || { dx: 1, dy: 0 };
         var msg = document.createElement('div');
-        msg.className = 'cbg-net-fail';
+        msg.className = 'cyberspace-net-fail';
         msg.style.color = col.fail;
 
         // Pick anchor + offset from direction. Inline transform replaces the default centering.
@@ -7214,7 +7247,7 @@ window.consoleBg = (function () {
     function netSpawnPing(host, px, py, col, depth) {
         depth = depth || 0;
         var el = document.createElement('div');
-        el.className = 'cbg-net-ping';
+        el.className = 'cyberspace-net-ping';
         el.style.borderColor = col.node;
         el.style.left = px + 'px';
         el.style.top  = py + 'px';
@@ -7236,10 +7269,10 @@ window.consoleBg = (function () {
         var host = getHost();
         if (!host) return;
         // Find the largest artifact on screen by cell count
-        var artifacts = host.querySelectorAll('.cbg-artifact');
+        var artifacts = host.querySelectorAll('.cyberspace-artifact');
         var target = null, mostCells = 0;
         artifacts.forEach(function (a) {
-            var c = a.querySelectorAll('.cbg-artifact-char').length;
+            var c = a.querySelectorAll('.cyberspace-artifact-char').length;
             if (c > mostCells) { mostCells = c; target = a; }
         });
         if (!target || mostCells < 16) return; // nothing big enough — silent bail
@@ -7255,7 +7288,7 @@ window.consoleBg = (function () {
         var ay = tRect.top  - hostRect.top  + tRect.height / 2;
 
         // Live cell pool — references to actual DOM nodes still inside the artifact
-        var cellPool = Array.prototype.slice.call(target.querySelectorAll('.cbg-artifact-char'));
+        var cellPool = Array.prototype.slice.call(target.querySelectorAll('.cyberspace-artifact-char'));
         var n = Math.min(cellPool.length, rand(8, 14));
 
         // Swarm origin — distant point off the artifact
@@ -7298,7 +7331,7 @@ window.consoleBg = (function () {
         var wasps = [];
         for (var i = 0; i < n; i++) {
             var w = document.createElement('span');
-            w.className = 'cbg-net-wasp';
+            w.className = 'cyberspace-net-wasp';
             w.style.color = '#ff2244';
             w.style.fontSize = rand(11, 16) + 'px';
             for (var k = 1; k <= 4; k++) {
@@ -7422,7 +7455,7 @@ window.consoleBg = (function () {
         var wasps = [];
         for (var i = 0; i < n; i++) {
             var w = document.createElement('span');
-            w.className = 'cbg-net-wasp';
+            w.className = 'cyberspace-net-wasp';
             w.style.color = col.fail;
             w.style.fontSize = rand(10, 16) + 'px';
             for (var k = 1; k <= 4; k++) {
@@ -7505,7 +7538,7 @@ window.consoleBg = (function () {
         var sx = Math.max(10, Math.min(hostW - 10, Math.round(tx + Math.cos(angle) * dist)));
         var sy = Math.max(10, Math.min(hostH - 10, Math.round(ty + Math.sin(angle) * dist)));
         var el = document.createElement('div');
-        el.className = 'cbg-net-tracer';
+        el.className = 'cyberspace-net-tracer';
         el.style.color = col.node;
         el.style.left = sx + 'px';
         el.style.top  = sy + 'px';
@@ -7721,7 +7754,7 @@ window.consoleBg = (function () {
 
         function makeBox(px, py, opaque) {
             var el = document.createElement('div');
-            el.className = 'cbg-net-node';
+            el.className = 'cyberspace-net-node';
             el.style.color = col.node; el.style.borderColor = col.node;
             el.style.left = px + 'px'; el.style.top = py + 'px';
             el.style.opacity = opaque ? '1' : '0.15';
@@ -7811,11 +7844,11 @@ window.consoleBg = (function () {
             setTimeout(function () {
                 var blinkMs = 600;
                 [canvas, box1, box2].forEach(function (el) {
-                    // Clear the cbg-net-in entry animation so the blink can take over cleanly.
+                    // Clear the cyberspace-net-in entry animation so the blink can take over cleanly.
                     el.style.animation = 'none';
                     void el.offsetHeight; // force reflow — guarantees the new animation restarts
                     el.style.transition = ''; // animation drives opacity, no transition fight
-                    el.style.animation = 'cbg-net-success-blink ' + blinkMs + 'ms linear forwards';
+                    el.style.animation = 'cyberspace-net-success-blink ' + blinkMs + 'ms linear forwards';
                 });
                 setTimeout(function () {
                     var fadeMs = 800;
