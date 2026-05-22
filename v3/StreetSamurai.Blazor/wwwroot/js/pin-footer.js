@@ -7,7 +7,7 @@
 // let the element flow normally — a pinned footer over scrollable content
 // would cover the last line.
 //
-// Companion CSS lives in cyberspace/frontpage.css (`.pin-when-short.pinned`).
+// Companion CSS lives alongside this file in pin-footer.css (`.pin-when-short.pinned`).
 //
 // Opt-in: `<footer class="pin-when-short">...</footer>`
 // Multiple targets are supported; each toggles independently.
