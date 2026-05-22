@@ -1,6 +1,7 @@
 using System.Collections.Concurrent;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -201,6 +202,7 @@ public class StrandWorkbenchService
         var beat = new Beat
         {
             Id           = Guid.CreateVersion7(),
+            Number       = await NextBeatNumberAsync(db, ct),
             Text         = initialText,
             TextHash     = string.IsNullOrEmpty(initialText) ? null : ComputeTextHash(initialText),
             SceneType    = "scene",
@@ -218,6 +220,84 @@ public class StrandWorkbenchService
         log.LogInformation("Inserted beat {BeatId} into strand {StrandId} between SortKey {Prev} and {Next}",
             beat.Id, strandId, prevSk, nextSk);
         return beat;
+    }
+
+    /// <summary>Split a beat at an explicit character position — what the
+    /// writer wants when their cursor is inside the prose. Same shape as
+    /// <see cref="SplitBeatAsync"/> but skips the midpoint-search and uses
+    /// the caller's split index directly. Snaps to the nearest word
+    /// boundary so we never break a word in two.</summary>
+    public async Task<Beat> SplitBeatAtAsync(Guid strandId, Guid beatId, int splitPosition, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var target = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct)
+            ?? throw new InvalidOperationException($"Beat {beatId} not found.");
+
+        var text = target.Text ?? "";
+        if (splitPosition <= 0 || splitPosition >= text.Length)
+            throw new InvalidOperationException("Split position must land inside the prose, not at the start or end.");
+
+        // Snap to a word boundary if the cursor landed mid-word — keeps
+        // narration sane (we don't want the first half to end on a half-word).
+        int snapped = splitPosition;
+        if (!char.IsWhiteSpace(text[snapped - 1]) && !char.IsWhiteSpace(text[snapped]))
+        {
+            // Walk forward to the next space, capped by the rest of the text.
+            int fwd = snapped;
+            while (fwd < text.Length && !char.IsWhiteSpace(text[fwd])) fwd++;
+            // Also walk backward.
+            int bwd = snapped;
+            while (bwd > 0 && !char.IsWhiteSpace(text[bwd - 1])) bwd--;
+            // Pick whichever is closer to the original cursor.
+            snapped = (snapped - bwd) <= (fwd - snapped) ? bwd : fwd;
+        }
+
+        var firstHalf  = text[..snapped].TrimEnd();
+        var secondHalf = text[snapped..].TrimStart();
+        if (firstHalf.Length == 0 || secondHalf.Length == 0)
+            throw new InvalidOperationException("Split would leave one half empty — pick a different cursor position.");
+
+        var siblings = await db.StrandBeats
+            .Where(sb => sb.StrandId == strandId)
+            .OrderBy(sb => sb.SortKey)
+            .ToListAsync(ct);
+        var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
+        if (pos < 0) throw new InvalidOperationException($"Beat {beatId} not in strand {strandId}.");
+        var prevSk = siblings[pos].SortKey;
+        var nextSk = pos + 1 < siblings.Count ? siblings[pos + 1].SortKey : prevSk + 100.0;
+
+        target.Text         = firstHalf;
+        target.TextHash     = ComputeTextHash(firstHalf);
+        target.WasCorrected = true;
+        target.Stale        = true;
+        InvalidateAudioOnBeat(target);
+        target.UpdatedAt    = DateTime.UtcNow;
+
+        var second = new Beat
+        {
+            Id            = Guid.CreateVersion7(),
+            Number        = await NextBeatNumberAsync(db, ct),
+            Text          = secondHalf,
+            TextHash      = ComputeTextHash(secondHalf),
+            SceneType     = target.SceneType,
+            FacetTag      = target.FacetTag,
+            EmotionalTone = target.EmotionalTone,
+            PaceHint      = target.PaceHint,
+            Act           = target.Act,
+            StructureRole = target.StructureRole,
+            WasCorrected  = true,
+        };
+        db.Beats.Add(second);
+        db.StrandBeats.Add(new StrandBeat
+        {
+            StrandId = strandId,
+            BeatId   = second.Id,
+            SortKey  = (prevSk + nextSk) / 2.0,
+        });
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Split beat {BeatId} at position {Pos} (snapped to {Snap}) → ({First}|{Second}) in strand {StrandId}",
+            beatId, splitPosition, snapped, firstHalf.Length, secondHalf.Length, strandId);
+        return second;
     }
 
     /// <summary>Split one beat into two at the nearest sentence boundary
@@ -262,6 +342,7 @@ public class StrandWorkbenchService
         var second = new Beat
         {
             Id            = Guid.CreateVersion7(),
+            Number        = await NextBeatNumberAsync(db, ct),
             Text          = secondHalf,
             TextHash      = ComputeTextHash(secondHalf),
             SceneType     = target.SceneType,
@@ -328,11 +409,17 @@ public class StrandWorkbenchService
         // N paragraphs means N-1 new beats; stride = gap / N gives clean spacing.
         var newIds = new List<Guid>(paragraphs.Count - 1);
         double stride = (nextSk - prevSk) / paragraphs.Count;
+        // Pre-allocate a contiguous block of beat numbers in one round-trip
+        // rather than calling MAX(Number)+1 inside the loop (which would
+        // re-read uncommitted inserts and produce a sequence). Saves N-1
+        // queries on big paragraph splits.
+        var baseNumber = await NextBeatNumberAsync(db, ct);
         for (int i = 1; i < paragraphs.Count; i++)
         {
             var b = new Beat
             {
                 Id            = Guid.CreateVersion7(),
+                Number        = baseNumber + (i - 1),
                 Text          = paragraphs[i],
                 TextHash      = ComputeTextHash(paragraphs[i]),
                 SceneType     = target.SceneType,
@@ -382,6 +469,204 @@ public class StrandWorkbenchService
         if (byNewline.Count > 1) return byNewline;
 
         return new List<string> { text.Trim() };
+    }
+
+    /// <summary>
+    /// Take a chapter strand whose prose is sitting in the legacy
+    /// <c>Chapter.Html</c> / <c>Chapter.Markdown</c> blob (because it was written
+    /// before the Strand+Beat schema landed) and burst it into one Beat per
+    /// paragraph, attached to the chapter strand via StrandBeat junctions.
+    ///
+    /// Idempotent: if the chapter strand already has any beats, returns 0 and
+    /// leaves them alone. Parses Markdown-flavoured prose conventions:
+    /// <list type="bullet">
+    /// <item>First <c>#</c> chapter-title line is dropped (already on Strand.Title).</item>
+    /// <item><c>*Protagonist: …*</c> front-matter line is dropped.</item>
+    /// <item><c>## Section Heading</c> becomes the next paragraph beat's
+    ///   <see cref="Beat.BeatTitle"/>, and the preceding paragraph beat's
+    ///   <see cref="Beat.SceneType"/> is upgraded to <c>"section-end"</c>.</item>
+    /// <item><c>---</c> scene breaks mark the preceding paragraph beat's
+    ///   SceneType as <c>"scene-end"</c>.</item>
+    /// </list>
+    /// SceneType is consumed by the combined-audio export's silence pacer to
+    /// drop longer gaps between sections and scenes than between mid-scene
+    /// paragraphs.
+    /// </summary>
+    /// <returns>Beat count created. Zero means already populated, or the
+    /// chapter has no body to materialise.</returns>
+    public async Task<int> MaterializeChapterFromHtmlAsync(Guid chapterStrandId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == chapterStrandId, ct)
+            ?? throw new InvalidOperationException($"Strand {chapterStrandId} not found.");
+
+        var existingCount = await db.StrandBeats.CountAsync(sb => sb.StrandId == chapterStrandId, ct);
+        if (existingCount > 0)
+        {
+            log.LogInformation("Strand {S} ({T}) already has {N} beats; not materialising.",
+                chapterStrandId, strand.Title, existingCount);
+            return 0;
+        }
+
+        // The legacy Chapter blob is stored as a Records row hanging off the
+        // matching Entity (same Guid). Pull the JSON directly so this method
+        // doesn't take a dep on IChapterRepository.
+        var recordJson = await db.Records.AsNoTracking()
+            .Where(r => r.EntityId == chapterStrandId)
+            .Select(r => r.Json)
+            .FirstOrDefaultAsync(ct);
+        if (string.IsNullOrWhiteSpace(recordJson))
+        {
+            log.LogWarning("Strand {S} ({T}): no Chapter record found in Records; skipping.",
+                chapterStrandId, strand.Title);
+            return 0;
+        }
+
+        Models.Chapter? chapter;
+        try
+        {
+            chapter = JsonSerializer.Deserialize<Models.Chapter>(recordJson, ChapterJsonOpts);
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "Strand {S} ({T}): Chapter record JSON failed to deserialise; skipping.",
+                chapterStrandId, strand.Title);
+            return 0;
+        }
+        if (chapter == null) return 0;
+
+        var body = !string.IsNullOrWhiteSpace(chapter.Markdown) ? chapter.Markdown : chapter.Html;
+        if (string.IsNullOrWhiteSpace(body))
+        {
+            log.LogInformation("Strand {S} ({T}) has no prose body to materialise.",
+                chapterStrandId, strand.Title);
+            return 0;
+        }
+
+        var parsed = ParseChapterBodyIntoBeats(body);
+        if (parsed.Count == 0)
+        {
+            log.LogInformation("Strand {S} ({T}) body produced zero paragraphs after parse.",
+                chapterStrandId, strand.Title);
+            return 0;
+        }
+
+        var now = DateTime.UtcNow;
+        double sortKey = 100.0;
+        // Pre-allocate the whole block of beat numbers once. Cheaper than
+        // re-querying MAX(Number) per beat — and avoids racey reads against
+        // the uncommitted inserts in our own transaction.
+        var baseNumber = await NextBeatNumberAsync(db, ct);
+        int numberOffset = 0;
+        foreach (var pb in parsed)
+        {
+            var beat = new Beat
+            {
+                Id        = Guid.CreateVersion7(),
+                Number    = baseNumber + numberOffset++,
+                Text      = pb.Text,
+                TextHash  = ComputeTextHash(pb.Text),
+                BeatTitle = pb.BeatTitle,
+                SceneType = pb.SceneType,
+                CreatedAt = now,
+                UpdatedAt = now,
+            };
+            db.Beats.Add(beat);
+            db.StrandBeats.Add(new StrandBeat
+            {
+                StrandId = chapterStrandId,
+                BeatId   = beat.Id,
+                SortKey  = sortKey,
+            });
+            sortKey += 100.0;
+        }
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Strand {S} ({T}): materialised {N} beats from chapter body.",
+            chapterStrandId, strand.Title, parsed.Count);
+        return parsed.Count;
+    }
+
+    private static readonly JsonSerializerOptions ChapterJsonOpts = new()
+    {
+        PropertyNameCaseInsensitive = true,
+    };
+
+    private static readonly Regex ChapterBodyBlankLineSplit = new(@"\r?\n\s*\r?\n+", RegexOptions.Compiled);
+    private static readonly Regex ChapterBodyProtagonistLine = new(@"^\s*\*Protagonist:\s*[^*]+\*\s*$", RegexOptions.Compiled);
+    private static readonly Regex ChapterBodySceneBreak = new(@"^\s*(?:---+|\*\*\*+|[-*]\s*[-*]\s*[-*][-*\s]*)\s*$", RegexOptions.Compiled);
+
+    private record ParsedBeat(string Text, string? BeatTitle, string SceneType);
+
+    private static List<ParsedBeat> ParseChapterBodyIntoBeats(string body)
+    {
+        var blocks = ChapterBodyBlankLineSplit.Split(body)
+            .Select(p => p.Trim())
+            .Where(p => p.Length > 0)
+            .ToList();
+
+        var beats = new List<ParsedBeat>();
+        string? pendingTitle = null;
+        bool firstH1Skipped = false;
+
+        foreach (var raw in blocks)
+        {
+            var firstLine = raw.Split('\n', 2)[0].Trim();
+
+            // First H1 line is the chapter title — already on Strand.Title.
+            if (!firstH1Skipped && firstLine.StartsWith("# ") && !firstLine.StartsWith("## "))
+            {
+                firstH1Skipped = true;
+                continue;
+            }
+
+            // Protagonist marker — front matter, drop.
+            if (ChapterBodyProtagonistLine.IsMatch(firstLine)) continue;
+
+            // ## Section heading — capture for next beat's BeatTitle; mark
+            // the prior beat as section-end so the silence pacer drops a
+            // longer gap before the section opener.
+            if (firstLine.StartsWith("## "))
+            {
+                pendingTitle = firstLine.Substring(3).Trim();
+                if (beats.Count > 0)
+                {
+                    var prev = beats[^1];
+                    if (prev.SceneType == "scene" || prev.SceneType == "scene-end")
+                        beats[^1] = prev with { SceneType = "section-end" };
+                }
+                // If the block also carries body lines under the header, take
+                // them as the section opener immediately so we don't lose them.
+                var idx = raw.IndexOf('\n');
+                if (idx > 0)
+                {
+                    var bodyText = raw[(idx + 1)..].Trim();
+                    if (!string.IsNullOrEmpty(bodyText))
+                    {
+                        beats.Add(new ParsedBeat(bodyText, pendingTitle, "scene"));
+                        pendingTitle = null;
+                    }
+                }
+                continue;
+            }
+
+            // --- scene break — upgrade the prior beat to scene-end.
+            if (ChapterBodySceneBreak.IsMatch(firstLine))
+            {
+                if (beats.Count > 0)
+                {
+                    var prev = beats[^1];
+                    if (prev.SceneType == "scene")
+                        beats[^1] = prev with { SceneType = "scene-end" };
+                }
+                continue;
+            }
+
+            // Regular paragraph block.
+            var title = pendingTitle;
+            pendingTitle = null;
+            beats.Add(new ParsedBeat(raw, title, "scene"));
+        }
+        return beats;
     }
 
     /// <summary>Merge this beat's text into the previous beat in the strand
@@ -488,12 +773,18 @@ public class StrandWorkbenchService
             var outDir = Path.Combine(GetStrandRoot(strand.Slug), "audio");
             Directory.CreateDirectory(outDir);
 
-            // Lock the voice for the whole run. If the UI's voice picker
-            // changes mid-narration, the change applies to the NEXT run,
-            // not this one — otherwise a single strand would render in two
-            // voices. Beats with their own VoiceId still override (rare,
-            // future use: per-character voices).
-            var lockedStrandVoice = strand.VoiceId;
+            // Resolve the active voice profile ONCE before the loop and reuse
+            // it for every beat. Two reasons: (1) the default-profile lookup
+            // is keyed on a string id stored in settings, so resolving once
+            // means a mid-run settings change doesn't fork the strand into
+            // two voices, (2) the profile's voice_id + voice_settings are a
+            // bundle — using them together is the whole point of profiles
+            // (otherwise sliders drift). Beats with their own VoiceId still
+            // override (future per-character work).
+            var activeProfile = settings?.GetDefaultVoiceProfile();
+            var lockedStrandVoice = !string.IsNullOrEmpty(strand.VoiceId)
+                ? strand.VoiceId
+                : activeProfile?.VoiceId;
             bool useLossless = true;
 
             for (int idx = 0; idx < ordered.Count; idx++)
@@ -523,14 +814,16 @@ public class StrandWorkbenchService
                 var voiceForBeat = !string.IsNullOrEmpty(tracked.VoiceId) ? tracked.VoiceId : lockedStrandVoice;
 
                 // Map beat metadata → ElevenLabs prompt + per-request voice_settings.
-                // Tag injection only happens when the model is v3-class AND
-                // the global toggle is on; otherwise we still get the
-                // voice_settings tuning from EmotionalTone/PaceHint.
-                var modelId         = settings?.TtsModel ?? "eleven_v3";
-                var tagsEnabled     = settings?.TtsUseAudioTags ?? true;
-                var baseStability   = settings?.TtsStability ?? 0.5;
-                var baseSimilarity  = settings?.TtsSimilarityBoost ?? 0.75;
-                var baseStyle       = settings?.TtsStyle ?? 0.0;
+                // The baseline voice_settings come from the active VoiceProfile
+                // (so a profile change applies consistently to every beat in
+                // the run). EmotionalTone / PaceHint nudges still adjust them
+                // per beat for dramatic range, but they bias FROM the profile,
+                // not from free-floating settings sliders.
+                var modelId         = activeProfile?.Model              ?? settings?.TtsModel ?? "eleven_v3";
+                var tagsEnabled     = settings?.TtsUseAudioTags         ?? true;
+                var baseStability   = activeProfile?.Stability          ?? settings?.TtsStability ?? 0.5;
+                var baseSimilarity  = activeProfile?.SimilarityBoost    ?? settings?.TtsSimilarityBoost ?? 0.75;
+                var baseStyle       = activeProfile?.Style              ?? settings?.TtsStyle ?? 0.0;
                 var prompt = BeatPromptBuilder.Build(tracked, modelId, tagsEnabled,
                     baseStability, baseSimilarity, baseStyle);
 
@@ -626,6 +919,16 @@ public class StrandWorkbenchService
             return null;
         }
 
+        // Pull any user-customised Gaps for this strand's adjacent pairs.
+        // The lookup is keyed by (AboveBeatId, BelowBeatId); pairs not in
+        // the dict fall back to the auto-computed silence in
+        // ComputeTrailingSilenceMs.
+        var beatIds = ordered.Select(o => o.Beat.Id).ToHashSet();
+        var customGaps = (await db.Gaps.AsNoTracking()
+                .Where(g => beatIds.Contains(g.AboveBeatId) && beatIds.Contains(g.BelowBeatId))
+                .ToListAsync(ct))
+            .ToDictionary(g => (g.AboveBeatId, g.BelowBeatId));
+
         var dir = GetStrandRoot(strand.Slug);
         Directory.CreateDirectory(dir);
         var ext = allWav ? "wav" : "mp3";
@@ -633,15 +936,32 @@ public class StrandWorkbenchService
 
         if (allWav)
         {
+            // Inter-beat silence: pull each beat's PCM, then between beats
+            // append N samples of digital silence chosen by ComputeTrailingSilenceMs.
+            // Final beat gets no trailing silence (the strand just ends).
             var pcmParts = new List<byte[]>();
-            foreach (var o in ordered)
+            for (int i = 0; i < ordered.Count; i++)
             {
                 ct.ThrowIfCancellationRequested();
+                var o = ordered[i];
                 var full = ResolveAudioFile(o.Beat.AudioPath!);
                 if (!File.Exists(full)) continue;
                 var bytes = await File.ReadAllBytesAsync(full, ct);
                 if (bytes.Length <= 44) continue;
                 pcmParts.Add(bytes[44..]);
+
+                if (i < ordered.Count - 1)
+                {
+                    var next = ordered[i + 1].Beat;
+                    var pauseMs = customGaps.TryGetValue((o.Beat.Id, next.Id), out var gap)
+                        ? gap.DurationMs
+                        : ComputeTrailingSilenceMs(o.Beat, next, settings);
+                    if (pauseMs > 0)
+                    {
+                        var silence = GenerateSilencePcm(pauseMs, sampleRate: 44100, channels: 1, bitsPerSample: 16);
+                        if (silence.Length > 0) pcmParts.Add(silence);
+                    }
+                }
             }
             var total = pcmParts.Sum(p => p.Length);
             var all = new byte[total];
@@ -652,14 +972,34 @@ public class StrandWorkbenchService
         }
         else
         {
-            await using var outFs = File.Create(outPath);
-            foreach (var o in ordered)
+            // MP3 concat with ffmpeg-injected silence. ElevenLabs returns
+            // mp3_44100_128 on all account tiers, so this is the common path.
+            // Strategy: render one silence-MP3 per distinct pause length we
+            // need (cached by ms), then run ffmpeg's concat demuxer with a
+            // list that interleaves beat-MP3s and silence-MP3s. -c copy keeps
+            // it cheap (no re-encode). Falls back to naive byte concat if
+            // ffmpeg isn't on PATH — the audio still plays, just without
+            // paced silence.
+            var ffmpeg = ResolveFfmpegPath();
+            if (string.IsNullOrEmpty(ffmpeg))
             {
-                ct.ThrowIfCancellationRequested();
-                var full = ResolveAudioFile(o.Beat.AudioPath!);
-                if (!File.Exists(full)) continue;
-                var bytes = await File.ReadAllBytesAsync(full, ct);
-                await outFs.WriteAsync(bytes, ct);
+                log.LogWarning("ffmpeg not found on PATH — falling back to naive MP3 concat without inter-beat silence pacing. Install ffmpeg to enable paced gaps.");
+                await using var outFs = File.Create(outPath);
+                foreach (var o in ordered)
+                {
+                    ct.ThrowIfCancellationRequested();
+                    var full = ResolveAudioFile(o.Beat.AudioPath!);
+                    if (!File.Exists(full)) continue;
+                    var bytes = await File.ReadAllBytesAsync(full, ct);
+                    await outFs.WriteAsync(bytes, ct);
+                }
+            }
+            else
+            {
+                int Pause(Beat a, Beat b) => customGaps.TryGetValue((a.Id, b.Id), out var gap)
+                    ? gap.DurationMs
+                    : ComputeTrailingSilenceMs(a, b, settings);
+                await ConcatMp3sWithSilenceAsync(ffmpeg, ordered, outPath, Pause, ct);
             }
         }
 
@@ -708,6 +1048,256 @@ public class StrandWorkbenchService
         using var sha = SHA256.Create();
         var bytes = sha.ComputeHash(Encoding.UTF8.GetBytes(normalized));
         return Convert.ToHexString(bytes).ToLowerInvariant();
+    }
+
+    // ── Inter-beat silence (combined-audio export) ──────────────────────
+    // Two helpers used by ExportCombinedAsync: ComputeTrailingSilenceMs
+    // decides how much pause to insert after a beat, and GenerateSilencePcm
+    // produces the raw little-endian PCM bytes for that many ms. Pause
+    // length is a function of (a) SceneType (the parser-assigned label
+    // describing whether this beat ends a scene or a section), (b) the
+    // beat's terminating punctuation (a paragraph that ends mid-sentence
+    // gets less gap than one that lands on '.'/'?'/'!'). Settings carry
+    // the per-tier budgets so the user can adjust pacing globally.
+
+    /// <summary>Pick the silence in milliseconds to insert after <paramref name="beat"/>
+    /// and before <paramref name="next"/>. If <paramref name="settings"/> is null
+    /// (test harness, MCP-only paths), defaults are 1800 / 1000 / 400 / 200.</summary>
+    public static int ComputeTrailingSilenceMs(Beat beat, Beat? next, SettingsService? settings)
+    {
+        var sectionMs       = settings?.TtsPauseSectionMs      ?? 1800;
+        var sceneMs         = settings?.TtsPauseSceneMs        ?? 1000;
+        var paragraphMs     = settings?.TtsPauseParagraphMs    ?? 400;
+        var continuationMs  = settings?.TtsPauseContinuationMs ?? 200;
+
+        // SceneType is the strongest signal — set during chapter materialisation.
+        switch (beat.SceneType?.ToLowerInvariant())
+        {
+            case "section-end": return sectionMs;
+            case "scene-end":   return sceneMs;
+        }
+
+        // Otherwise fall back to terminator punctuation. Hard terminators
+        // suggest the sentence finished cleanly; comma/em-dash/no-mark
+        // suggest the prose continues into the next paragraph.
+        var trimmed = (beat.Text ?? "").TrimEnd();
+        if (trimmed.Length == 0) return continuationMs;
+        var last = trimmed[^1];
+        // Strip trailing italic/bold markdown so '*Likes me.*' still reads as '.' terminated.
+        if (last == '*' && trimmed.Length >= 2) last = trimmed[^2];
+        return last switch
+        {
+            '.' or '!' or '?' or '"' or '”' => paragraphMs,
+            _                               => continuationMs,
+        };
+    }
+
+    /// <summary>Generate <paramref name="ms"/> milliseconds of digital silence
+    /// at the given PCM format. 16-bit signed PCM silence is just zero bytes,
+    /// so this is a cheap allocation. Returns an empty array for ms ≤ 0.</summary>
+    public static byte[] GenerateSilencePcm(int ms, int sampleRate, short channels, short bitsPerSample)
+    {
+        if (ms <= 0) return Array.Empty<byte>();
+        long samples = (long)sampleRate * ms / 1000L;
+        long bytes = samples * channels * (bitsPerSample / 8);
+        return new byte[bytes];
+    }
+
+    /// <summary>Allocate the next globally-unique <see cref="Beat.Number"/>.
+    /// Reads MAX+1 inside the active DbContext so it sees uncommitted inserts
+    /// from this same transaction. The UNIQUE index on Beats.Number is the
+    /// safety net — if two concurrent inserts pick the same number, one
+    /// SaveChanges will fail with a duplicate-key error.</summary>
+    private static async Task<int> NextBeatNumberAsync(StreetSamuraiDbContext db, CancellationToken ct)
+    {
+        var max = await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0;
+        return max + 1;
+    }
+
+    /// <summary>Allocate the next globally-unique <see cref="Gap.Number"/>.</summary>
+    private static async Task<int> NextGapNumberAsync(StreetSamuraiDbContext db, CancellationToken ct)
+    {
+        var max = await db.Gaps.MaxAsync(g => (int?)g.Number, ct) ?? 0;
+        return max + 1;
+    }
+
+    // ── Gap CRUD ────────────────────────────────────────────────────────
+    // Lazy materialisation: the silence engine consults the Gaps table for
+    // user-customised overrides, otherwise computes a default from the
+    // adjacent beats' metadata. These helpers let the UI create / update /
+    // remove a Gap on demand without exposing the table directly.
+
+    /// <summary>Get the Gap between two adjacent beats, or null. Lookup is
+    /// O(log n) via the UX_Gaps_Pair index.</summary>
+    public async Task<Gap?> GetGapAsync(Guid aboveBeatId, Guid belowBeatId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        return await db.Gaps.AsNoTracking()
+            .FirstOrDefaultAsync(g => g.AboveBeatId == aboveBeatId && g.BelowBeatId == belowBeatId, ct);
+    }
+
+    /// <summary>Insert or update a Gap with the given duration. Returns the
+    /// persisted row (with assigned <see cref="Gap.Number"/> on first
+    /// materialisation). Setting durationMs back to the auto-computed
+    /// default doesn't delete the row — callers wanting cleanup should call
+    /// <see cref="DeleteGapAsync"/>.</summary>
+    public async Task<Gap> UpsertGapAsync(Guid aboveBeatId, Guid belowBeatId, int durationMs, string? notes = null, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var gap = await db.Gaps.FirstOrDefaultAsync(g => g.AboveBeatId == aboveBeatId && g.BelowBeatId == belowBeatId, ct);
+        if (gap == null)
+        {
+            gap = new Gap
+            {
+                Id          = Guid.CreateVersion7(),
+                Number      = await NextGapNumberAsync(db, ct),
+                AboveBeatId = aboveBeatId,
+                BelowBeatId = belowBeatId,
+                DurationMs  = Math.Max(0, durationMs),
+                Notes       = string.IsNullOrWhiteSpace(notes) ? null : notes,
+                CreatedAt   = DateTime.UtcNow,
+                UpdatedAt   = DateTime.UtcNow,
+            };
+            db.Gaps.Add(gap);
+        }
+        else
+        {
+            gap.DurationMs = Math.Max(0, durationMs);
+            if (notes != null) gap.Notes = string.IsNullOrWhiteSpace(notes) ? null : notes;
+            gap.UpdatedAt  = DateTime.UtcNow;
+        }
+        await db.SaveChangesAsync(ct);
+        return gap;
+    }
+
+    /// <summary>Remove a custom Gap, letting the silence engine fall back to
+    /// its default for that pair.</summary>
+    public async Task DeleteGapAsync(Guid aboveBeatId, Guid belowBeatId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var gap = await db.Gaps.FirstOrDefaultAsync(g => g.AboveBeatId == aboveBeatId && g.BelowBeatId == belowBeatId, ct);
+        if (gap == null) return;
+        db.Gaps.Remove(gap);
+        await db.SaveChangesAsync(ct);
+    }
+
+    /// <summary>Locate the ffmpeg executable on PATH. Returns the full path on
+    /// success, or null when ffmpeg isn't installed. Used by the MP3 combined
+    /// export path to inject precise digital silence between beats — the only
+    /// way to do that cleanly in an MP3 stream without re-encoding the whole
+    /// strand.</summary>
+    private static string? ResolveFfmpegPath()
+    {
+        var name = OperatingSystem.IsWindows() ? "ffmpeg.exe" : "ffmpeg";
+        var pathVar = Environment.GetEnvironmentVariable("PATH") ?? "";
+        var sep = OperatingSystem.IsWindows() ? ';' : ':';
+        foreach (var dir in pathVar.Split(sep, StringSplitOptions.RemoveEmptyEntries))
+        {
+            try
+            {
+                var candidate = Path.Combine(dir, name);
+                if (File.Exists(candidate)) return candidate;
+            }
+            catch { /* malformed PATH entry — skip */ }
+        }
+        return null;
+    }
+
+    /// <summary>Concat each beat's MP3 file into <paramref name="outPath"/>,
+    /// inserting precise digital silence between each beat per
+    /// <see cref="ComputeTrailingSilenceMs"/>. Silence MP3s are rendered once
+    /// per distinct pause length (cached in a temp dir) and reused via
+    /// ffmpeg's <c>-f concat</c> demuxer with <c>-c copy</c> (no re-encode).
+    /// </summary>
+    private async Task ConcatMp3sWithSilenceAsync(string ffmpegPath, List<OrderedBeat> ordered, string outPath, Func<Beat, Beat, int> pauseMsFor, CancellationToken ct)
+    {
+        var tmpDir = Path.Combine(Path.GetTempPath(), $"streetsamurai-concat-{Guid.CreateVersion7():N}");
+        Directory.CreateDirectory(tmpDir);
+        try
+        {
+            // Render any silence MP3 lengths we need, keyed by ms. Cache so a
+            // 400ms gap that repeats 50 times only renders once.
+            var silenceCache = new Dictionary<int, string>();
+            async Task<string> SilenceFor(int ms)
+            {
+                if (silenceCache.TryGetValue(ms, out var existing)) return existing;
+                var file = Path.Combine(tmpDir, $"silence_{ms}.mp3");
+                var args = $"-hide_banner -loglevel error -y -f lavfi -i anullsrc=channel_layout=mono:sample_rate=44100 -t {ms / 1000.0:F3} -b:a 128k \"{file}\"";
+                var psi = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = ffmpegPath,
+                    Arguments = args,
+                    RedirectStandardError = true,
+                    RedirectStandardOutput = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true,
+                };
+                using var proc = System.Diagnostics.Process.Start(psi)
+                    ?? throw new InvalidOperationException("Failed to spawn ffmpeg for silence render.");
+                await proc.WaitForExitAsync(ct);
+                if (proc.ExitCode != 0)
+                {
+                    var stderr = await proc.StandardError.ReadToEndAsync(ct);
+                    throw new InvalidOperationException($"ffmpeg silence render failed (exit {proc.ExitCode}): {stderr}");
+                }
+                silenceCache[ms] = file;
+                return file;
+            }
+
+            // Build the concat list.
+            var listLines = new List<string>();
+            for (int i = 0; i < ordered.Count; i++)
+            {
+                var o = ordered[i];
+                var beatAudio = ResolveAudioFile(o.Beat.AudioPath!);
+                if (!File.Exists(beatAudio)) continue;
+                listLines.Add($"file '{beatAudio.Replace("'", "'\\''")}'");
+                if (i < ordered.Count - 1)
+                {
+                    var pauseMs = pauseMsFor(o.Beat, ordered[i + 1].Beat);
+                    if (pauseMs > 0)
+                    {
+                        var silenceFile = await SilenceFor(pauseMs);
+                        listLines.Add($"file '{silenceFile.Replace("'", "'\\''")}'");
+                    }
+                }
+            }
+
+            if (listLines.Count == 0)
+            {
+                log.LogWarning("ConcatMp3sWithSilenceAsync: no beat audio files exist; not writing combined.");
+                return;
+            }
+
+            var listPath = Path.Combine(tmpDir, "concat.txt");
+            await File.WriteAllLinesAsync(listPath, listLines, ct);
+
+            var concatArgs = $"-hide_banner -loglevel error -y -f concat -safe 0 -i \"{listPath}\" -c copy \"{outPath}\"";
+            var concatPsi = new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = ffmpegPath,
+                Arguments = concatArgs,
+                RedirectStandardError = true,
+                RedirectStandardOutput = true,
+                UseShellExecute = false,
+                CreateNoWindow = true,
+            };
+            using var concatProc = System.Diagnostics.Process.Start(concatPsi)
+                ?? throw new InvalidOperationException("Failed to spawn ffmpeg for MP3 concat.");
+            await concatProc.WaitForExitAsync(ct);
+            if (concatProc.ExitCode != 0)
+            {
+                var stderr = await concatProc.StandardError.ReadToEndAsync(ct);
+                throw new InvalidOperationException($"ffmpeg concat failed (exit {concatProc.ExitCode}): {stderr}");
+            }
+            log.LogInformation("ffmpeg concat wrote {Path} ({Beats} beats, {Silences} silences)",
+                outPath, ordered.Count, silenceCache.Count);
+        }
+        finally
+        {
+            try { Directory.Delete(tmpDir, recursive: true); }
+            catch (Exception ex) { log.LogDebug(ex, "Could not clean up tmp concat dir {Dir}", tmpDir); }
+        }
     }
 
     private void InvalidateAudioOnBeat(Beat beat)

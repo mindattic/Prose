@@ -584,6 +584,161 @@
 </div>
 
 
+@* ── Voice Profiles & Silence Pacing ───────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">
+                Voice Profiles
+                <span class="text-secondary small ms-2">— named bundles of voice id + voice_settings. The default profile is used for every beat narration unless the strand has its own override.</span>
+            </div>
+            <div class="card-body">
+                <table class="table table-sm table-dark mb-3" style="border-color:#2a2a2a;">
+                    <thead>
+                        <tr class="text-muted small">
+                            <th style="width:1.5rem"></th>
+                            <th>Label</th>
+                            <th>Voice ID</th>
+                            <th class="text-end">Stability</th>
+                            <th class="text-end">Similarity</th>
+                            <th class="text-end">Style</th>
+                            <th style="width:7rem"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (SettingsSvc.VoiceProfiles.Count == 0)
+                        {
+                            <tr><td colspan="7" class="text-muted small text-center py-2">No saved profiles yet — the narrator-default profile below will be synthesised from the ElevenLabs section's voice settings on first run.</td></tr>
+                        }
+                        @foreach (var p in SettingsSvc.VoiceProfiles.ToList())
+                        {
+                            var pid = p.Id;
+                            var isDefault = SettingsSvc.DefaultVoiceProfileId == pid;
+                            <tr>
+                                <td>
+                                    <input type="radio" name="default-profile"
+                                           checked="@isDefault"
+                                           title="Make this the default profile"
+                                           @onchange="@(() => { SettingsSvc.DefaultVoiceProfileId = pid; })" />
+                                </td>
+                                <td><strong>@p.Label</strong> <span class="text-muted small ms-1">@p.Id</span></td>
+                                <td><code class="small text-info">@p.VoiceId</code></td>
+                                <td class="text-end font-monospace small">@p.Stability.ToString("F2")</td>
+                                <td class="text-end font-monospace small">@p.SimilarityBoost.ToString("F2")</td>
+                                <td class="text-end font-monospace small">@p.Style.ToString("F2")</td>
+                                <td class="text-end">
+                                    <button class="btn btn-sm btn-outline-info py-0 px-2" title="Load into editor" @onclick="@(() => EditVoiceProfile(pid))"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger py-0 px-2 ms-1" title="Delete profile" @onclick="@(() => DeleteVoiceProfile(pid))"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <div class="row g-2 align-items-end">
+                    <div class="col-md-3">
+                        <label class="form-label text-muted small">Profile label</label>
+                        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               placeholder='e.g. "Oliver Silk — gravel"'
+                               @bind="newProfile.Label" @bind:event="oninput" />
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted small">ElevenLabs voice</label>
+                        <select class="form-select form-select-sm bg-dark text-light border-secondary"
+                                @bind="newProfile.VoiceId">
+                            @if (voices.Any())
+                            {
+                                <option value="">— pick a voice —</option>
+                                @foreach (var v in voices.OrderBy(v => v.Name))
+                                {
+                                    <option value="@v.VoiceId">@v.Name</option>
+                                }
+                            }
+                            else
+                            {
+                                <option value="">(load voices in ElevenLabs section first)</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-1">
+                        <label class="form-label text-muted small">Stab.</label>
+                        <input type="number" min="0" max="1" step="0.05" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               @bind="newProfile.Stability" />
+                    </div>
+                    <div class="col-md-1">
+                        <label class="form-label text-muted small">Sim.</label>
+                        <input type="number" min="0" max="1" step="0.05" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               @bind="newProfile.SimilarityBoost" />
+                    </div>
+                    <div class="col-md-1">
+                        <label class="form-label text-muted small">Style</label>
+                        <input type="number" min="0" max="1" step="0.05" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               @bind="newProfile.Style" />
+                    </div>
+                    <div class="col-md-3 d-flex gap-2">
+                        <button class="btn btn-sm btn-outline-success" @onclick="SaveVoiceProfile" disabled="@(string.IsNullOrWhiteSpace(newProfile.Label) || string.IsNullOrWhiteSpace(newProfile.VoiceId))">
+                            <i class="bi @(string.IsNullOrEmpty(editingProfileId) ? "bi-plus-lg" : "bi-check-lg")"></i>
+                            @(string.IsNullOrEmpty(editingProfileId) ? "Add profile" : "Save changes")
+                        </button>
+                        @if (!string.IsNullOrEmpty(editingProfileId))
+                        {
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="ResetProfileEditor"><i class="bi bi-x-lg"></i></button>
+                        }
+                    </div>
+                </div>
+                @if (!string.IsNullOrEmpty(profileFeedback))
+                {
+                    <div class="mt-2 small text-info">@profileFeedback</div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@* ── Inter-beat silence pacing ─────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">
+                Silence Pacing
+                <span class="text-secondary small ms-2">— gap in ms inserted between beats in the combined audio. Set to 0 to disable a tier. WAV path uses native PCM silence; MP3 path uses ffmpeg.</span>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <label class="form-label text-muted small">Section break: @SettingsSvc.TtsPauseSectionMs ms</label>
+                        <input type="range" class="form-range" min="0" max="4000" step="50"
+                               value="@SettingsSvc.TtsPauseSectionMs"
+                               @onchange="@(e => SettingsSvc.TtsPauseSectionMs = int.Parse(e.Value?.ToString() ?? "1800"))" />
+                        <div class="text-muted small">After paragraphs preceding a <code>##</code> section header.</div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted small">Scene break: @SettingsSvc.TtsPauseSceneMs ms</label>
+                        <input type="range" class="form-range" min="0" max="3000" step="50"
+                               value="@SettingsSvc.TtsPauseSceneMs"
+                               @onchange="@(e => SettingsSvc.TtsPauseSceneMs = int.Parse(e.Value?.ToString() ?? "1000"))" />
+                        <div class="text-muted small">After paragraphs preceding a <code>---</code> divider.</div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted small">Paragraph: @SettingsSvc.TtsPauseParagraphMs ms</label>
+                        <input type="range" class="form-range" min="0" max="2000" step="25"
+                               value="@SettingsSvc.TtsPauseParagraphMs"
+                               @onchange="@(e => SettingsSvc.TtsPauseParagraphMs = int.Parse(e.Value?.ToString() ?? "400"))" />
+                        <div class="text-muted small">After paragraphs ending on <code>.</code>/<code>!</code>/<code>?</code>/<code>"</code>.</div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted small">Continuation: @SettingsSvc.TtsPauseContinuationMs ms</label>
+                        <input type="range" class="form-range" min="0" max="1500" step="25"
+                               value="@SettingsSvc.TtsPauseContinuationMs"
+                               @onchange="@(e => SettingsSvc.TtsPauseContinuationMs = int.Parse(e.Value?.ToString() ?? "200"))" />
+                        <div class="text-muted small">After paragraphs ending mid-sentence (comma, em-dash, no terminator).</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 @* ── SMTP ──────────────────────────────────────────────── *@
 <div class="row g-3 mb-3">
     <div class="col-12">
@@ -1059,6 +1214,57 @@
     }
 
     private void SaveSettings() { _ = SettingsSvc.TtsModel; }
+
+    // ── Voice Profile editor (single-form CRUD against SettingsSvc) ──────
+    // Pattern: <newProfile> is the bound editor model. When the user clicks
+    // a row's edit button, we copy that row into newProfile and remember
+    // <editingProfileId> so SaveVoiceProfile writes back to the same id
+    // (upsert). Otherwise (empty editingProfileId) it inserts a new row.
+    private StreetSamurai.Core.Models.VoiceProfile newProfile = new() { Stability = 0.5, SimilarityBoost = 0.75, Style = 0.0 };
+    private string editingProfileId = "";
+    private string profileFeedback = "";
+
+    private void EditVoiceProfile(string profileId)
+    {
+        var src = SettingsSvc.VoiceProfiles.FirstOrDefault(p => p.Id == profileId);
+        if (src == null) return;
+        editingProfileId = profileId;
+        newProfile = new StreetSamurai.Core.Models.VoiceProfile
+        {
+            Id = src.Id, Label = src.Label, VoiceId = src.VoiceId, Model = src.Model,
+            Stability = src.Stability, SimilarityBoost = src.SimilarityBoost,
+            Style = src.Style, UseSpeakerBoost = src.UseSpeakerBoost,
+        };
+        profileFeedback = $"Editing \"{src.Label}\" — changes overwrite this profile on Save.";
+        StateHasChanged();
+    }
+
+    private void SaveVoiceProfile()
+    {
+        if (string.IsNullOrWhiteSpace(newProfile.Label) || string.IsNullOrWhiteSpace(newProfile.VoiceId)) return;
+        // For an edit, retain the id; for a new profile, let SettingsService mint one.
+        if (string.IsNullOrEmpty(editingProfileId)) newProfile.Id = "";
+        var saved = SettingsSvc.UpsertVoiceProfile(newProfile);
+        profileFeedback = string.IsNullOrEmpty(editingProfileId)
+            ? $"Added profile \"{saved.Label}\"."
+            : $"Updated profile \"{saved.Label}\".";
+        ResetProfileEditor();
+    }
+
+    private void DeleteVoiceProfile(string profileId)
+    {
+        var match = SettingsSvc.VoiceProfiles.FirstOrDefault(p => p.Id == profileId);
+        SettingsSvc.DeleteVoiceProfile(profileId);
+        if (editingProfileId == profileId) ResetProfileEditor();
+        profileFeedback = match != null ? $"Deleted profile \"{match.Label}\"." : "";
+    }
+
+    private void ResetProfileEditor()
+    {
+        editingProfileId = "";
+        newProfile = new StreetSamurai.Core.Models.VoiceProfile { Stability = 0.5, SimilarityBoost = 0.75, Style = 0.0 };
+        StateHasChanged();
+    }
 
 
     private async Task DoReset() { SettingsSvc.ResetToDefaults(); confirmReset = false; await TestAllProviders(); }

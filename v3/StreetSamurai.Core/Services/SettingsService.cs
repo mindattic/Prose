@@ -140,6 +140,116 @@ public class SettingsService : IDisposable
     public double TtsStability { get => data.TtsStability; set { data.TtsStability = value; ScheduleSave(); } }
     public double TtsSimilarityBoost { get => data.TtsSimilarityBoost; set { data.TtsSimilarityBoost = value; ScheduleSave(); } }
     public double TtsStyle { get => data.TtsStyle; set { data.TtsStyle = value; ScheduleSave(); } }
+
+    // ── Inter-beat silence pacing (combined-audio export) ──────────────────
+    // When the per-beat audio files are concatenated into the combined strand
+    // audio, the StrandWorkbenchService.ExportCombinedAsync injects a brief
+    // window of digital silence between each pair of beats. The amount is
+    // chosen per-beat from these four budgets, picked by SceneType and the
+    // trailing punctuation of the prose — see ComputeTrailingSilenceMs in
+    // StrandWorkbenchService. Setting any value to 0 disables that tier.
+    /// <summary>Silence (ms) inserted after a beat whose SceneType is
+    /// <c>section-end</c> — the last paragraph before a <c>##</c> section
+    /// header. Long pause; "new chapter section starts here." Default 1800.</summary>
+    public int TtsPauseSectionMs { get => data.TtsPauseSectionMs; set { data.TtsPauseSectionMs = value; ScheduleSave(); } }
+    /// <summary>Silence (ms) inserted after a beat whose SceneType is
+    /// <c>scene-end</c> — the last paragraph before a <c>---</c> divider.
+    /// Medium pause; "scene changes." Default 1000.</summary>
+    public int TtsPauseSceneMs { get => data.TtsPauseSceneMs; set { data.TtsPauseSceneMs = value; ScheduleSave(); } }
+    /// <summary>Silence (ms) inserted between paragraph beats that end in a
+    /// hard sentence terminator (<c>.</c>, <c>!</c>, <c>?</c>). The "breath
+    /// between paragraphs" budget. Default 400.</summary>
+    public int TtsPauseParagraphMs { get => data.TtsPauseParagraphMs; set { data.TtsPauseParagraphMs = value; ScheduleSave(); } }
+    /// <summary>Silence (ms) inserted between paragraph beats whose prose
+    /// ends mid-sentence (comma, em-dash, colon, no terminator). Short pause
+    /// that keeps reading momentum across a paragraph break. Default 200.</summary>
+    public int TtsPauseContinuationMs { get => data.TtsPauseContinuationMs; set { data.TtsPauseContinuationMs = value; ScheduleSave(); } }
+
+    // ── Voice profile registry ─────────────────────────────────────────────
+    // Named bundles of (voice_id + model + stability + similarity_boost +
+    // style + use_speaker_boost). One profile is marked default; narration
+    // uses the default's full bundle whenever a beat doesn't carry its own
+    // override. The point: pull voice config out of free-floating settings
+    // and into a named record so the same profile always renders the same
+    // tone — no risk of the user remembering to set sliders identically
+    // across sessions.
+    public List<Models.VoiceProfile> VoiceProfiles
+    {
+        get => data.VoiceProfiles;
+        set { data.VoiceProfiles = value ?? new(); ScheduleSave(); }
+    }
+    public string DefaultVoiceProfileId
+    {
+        get => data.DefaultVoiceProfileId;
+        set { data.DefaultVoiceProfileId = value ?? ""; ScheduleSave(); }
+    }
+
+    /// <summary>Resolve the active default voice profile. If the user has
+    /// added profiles and pinned a default, returns that. Otherwise
+    /// synthesises one on the fly from the legacy scalar fields
+    /// (<see cref="ElevenLabsVoiceId"/>, <see cref="TtsModel"/>,
+    /// <see cref="TtsStability"/>, <see cref="TtsSimilarityBoost"/>,
+    /// <see cref="TtsStyle"/>) so first-run callers still get a coherent
+    /// profile until they create one in the settings UI.</summary>
+    public Models.VoiceProfile GetDefaultVoiceProfile()
+    {
+        if (!string.IsNullOrEmpty(data.DefaultVoiceProfileId))
+        {
+            var match = data.VoiceProfiles.FirstOrDefault(p => p.Id == data.DefaultVoiceProfileId);
+            if (match != null) return match;
+        }
+        if (data.VoiceProfiles.Count > 0) return data.VoiceProfiles[0];
+        // Synthesise from legacy scalars.
+        return new Models.VoiceProfile
+        {
+            Id              = "narrator-default",
+            Label           = string.IsNullOrEmpty(data.NarratorVoiceName) ? "Narrator" : data.NarratorVoiceName,
+            VoiceId         = data.ElevenLabsVoiceId,
+            Model           = data.TtsModel,
+            Stability       = data.TtsStability,
+            SimilarityBoost = data.TtsSimilarityBoost,
+            Style           = data.TtsStyle,
+            UseSpeakerBoost = true,
+        };
+    }
+
+    /// <summary>Insert or update a profile (matched by <c>Id</c>). Returns
+    /// the persisted profile.</summary>
+    public Models.VoiceProfile UpsertVoiceProfile(Models.VoiceProfile profile)
+    {
+        if (profile == null) throw new ArgumentNullException(nameof(profile));
+        if (string.IsNullOrWhiteSpace(profile.Id))
+            profile.Id = Slugify(profile.Label) + "-" + Guid.CreateVersion7().ToString("N")[..6];
+        var existing = data.VoiceProfiles.FindIndex(p => p.Id == profile.Id);
+        if (existing >= 0) data.VoiceProfiles[existing] = profile;
+        else data.VoiceProfiles.Add(profile);
+        if (string.IsNullOrEmpty(data.DefaultVoiceProfileId))
+            data.DefaultVoiceProfileId = profile.Id;
+        ScheduleSave();
+        return profile;
+    }
+
+    /// <summary>Remove a profile by id. If the deleted profile was the
+    /// default, the remaining first profile (if any) becomes the new default.</summary>
+    public void DeleteVoiceProfile(string profileId)
+    {
+        if (string.IsNullOrEmpty(profileId)) return;
+        var removed = data.VoiceProfiles.RemoveAll(p => p.Id == profileId);
+        if (removed > 0)
+        {
+            if (data.DefaultVoiceProfileId == profileId)
+                data.DefaultVoiceProfileId = data.VoiceProfiles.Count > 0 ? data.VoiceProfiles[0].Id : "";
+            ScheduleSave();
+        }
+    }
+
+    private static string Slugify(string s)
+    {
+        if (string.IsNullOrWhiteSpace(s)) return "profile";
+        var lower = s.ToLowerInvariant();
+        var slug = System.Text.RegularExpressions.Regex.Replace(lower, @"[^a-z0-9]+", "-").Trim('-');
+        return string.IsNullOrWhiteSpace(slug) ? "profile" : slug;
+    }
     /// <summary>When the configured model is v3-class (audio-tag capable),
     /// inject inline tags like <c>[whispering]</c> / <c>[softly]</c> based
     /// on each beat's EmotionalTone / FacetTag. Off to fall back to plain
@@ -399,6 +509,12 @@ public class SettingsService : IDisposable
         public double TtsSimilarityBoost { get; set; } = 0.75;
         public double TtsStyle { get; set; } = 0.0;
         public bool TtsUseAudioTags { get; set; } = true;
+        public int TtsPauseSectionMs { get; set; } = 1800;
+        public int TtsPauseSceneMs { get; set; } = 1000;
+        public int TtsPauseParagraphMs { get; set; } = 400;
+        public int TtsPauseContinuationMs { get; set; } = 200;
+        public List<Models.VoiceProfile> VoiceProfiles { get; set; } = new();
+        public string DefaultVoiceProfileId { get; set; } = "";
         public string OpenAiApiKey { get; set; } = "";
         public string OpenAiModel { get; set; } = "gpt-4.1-mini";
         public string ActiveLlmProvider { get; set; } = "claude";

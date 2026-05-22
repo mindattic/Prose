@@ -42,10 +42,20 @@ public static class BeatPromptBuilder
         double baselineStability, double baselineSimilarityBoost, double baselineStyle)
     {
         var text = beat.Text ?? "";
-        var tagPrefix = tagsEnabled && ModelSupportsAudioTags(modelId)
+        var supportsTags = tagsEnabled && ModelSupportsAudioTags(modelId);
+
+        var tagPrefix = supportsTags
             ? AudioTagFor(beat.EmotionalTone, beat.FacetTag, beat.PaceHint)
             : null;
-        var finalText = string.IsNullOrEmpty(tagPrefix) ? text : $"{tagPrefix} {text}";
+        // Trailing silence tag is bound to SceneType. The voice model
+        // tapers off into the pause naturally, then the concat-time
+        // digital-silence injection adds precise additional gap. Together
+        // the listener gets a natural breath followed by an exact pause.
+        var tagSuffix = supportsTags ? TrailingPauseTagFor(beat.SceneType) : null;
+
+        var finalText = text;
+        if (!string.IsNullOrEmpty(tagPrefix)) finalText = $"{tagPrefix} {finalText}";
+        if (!string.IsNullOrEmpty(tagSuffix)) finalText = $"{finalText} {tagSuffix}";
 
         var (stability, similarity, style) = VoiceSettingsFor(
             beat.EmotionalTone, beat.PaceHint,
@@ -53,6 +63,19 @@ public static class BeatPromptBuilder
 
         return new BeatPrompt(finalText, stability, similarity, style);
     }
+
+    /// <summary>Choose the trailing pause tag (or null) for a beat based on
+    /// its <see cref="Beat.SceneType"/>. Only the v3-class models render
+    /// these as audible silence; older models read the brackets literally
+    /// so the caller must gate on <see cref="ModelSupportsAudioTags"/>.
+    /// <c>[short pause]</c> renders as ~0.5s; <c>[long pause]</c> as ~1.5s
+    /// in the ElevenLabs v3 model card.</summary>
+    public static string? TrailingPauseTagFor(string? sceneType) => sceneType?.ToLowerInvariant() switch
+    {
+        "section-end" => "[long pause]",
+        "scene-end"   => "[short pause]",
+        _             => null,
+    };
 
     /// <summary>
     /// Pick the most appropriate inline audio tag. EmotionalTone is the
