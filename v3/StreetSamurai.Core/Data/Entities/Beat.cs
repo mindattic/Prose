@@ -21,6 +21,13 @@ public class Beat
     /// <summary>UUIDv7 — sortable by creation time, globally unique.</summary>
     public Guid Id { get; set; }
 
+    /// <summary>Small human-readable counter. Globally unique across all
+    /// beats. Stable across reordering / inserts / deletions — unlike the
+    /// positional "BEAT 042" badge in the writer UI, which shifts whenever
+    /// the strand is restructured. Users and CLI assistants reference beats
+    /// as "Beat #134" using this column.</summary>
+    public int Number { get; set; }
+
     /// <summary>Optional human-readable identifier. Used for stable URLs and
     /// debugging. Not required — most beats won't have one.</summary>
     public string? Slug { get; set; }

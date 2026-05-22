@@ -50,6 +50,7 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<Beat>               Beats               => Set<Beat>();
     public DbSet<Strand>             Strands             => Set<Strand>();
     public DbSet<StrandBeat>         StrandBeats         => Set<StrandBeat>();
+    public DbSet<Gap>                Gaps                => Set<Gap>();
 
     // Character subtype + children — fully columnar (no DataJson on this branch)
     public DbSet<Character>                       Characters                    => Set<Character>();

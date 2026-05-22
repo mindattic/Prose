@@ -59,6 +59,8 @@ public class SqlSeedService
             ["extend_chapter_beats_for_recording_20260518"] = "extend_chapter_beats_for_recording_20260518.sql",
             ["episodebeat_hash_stale_20260518"] = "add_episodebeat_hash_stale_20260518.sql",
             ["strand_schema_20260518"]          = "create_strand_schema_20260518.sql",
+            ["beat_number_20260522"]            = "add_beat_number_20260522.sql",
+            ["gaps_table_20260522"]             = "add_gaps_table_20260522.sql",
         };
 
     public class SeedResult
@@ -119,13 +121,42 @@ public class SqlSeedService
 
     private string ResolveSqlPath(string fileName)
     {
-        // Seed .sql files live next to the C# Data/Sql folder. paths.DataRoot
-        // points at engine/data/, but we need the source-tree Data/Sql/. Walk
-        // up to the project root and resolve from there.
+        // Seed .sql files live in the source tree at
+        // <repo>/v3/StreetSamurai.Core/Data/Sql/. The runtime entry point
+        // varies — Blazor host, Core test runner, one-shot CLI — so try a
+        // handful of candidate roots. Each candidate is a directory we hope
+        // ends in (…/StreetSamurai.Core), to which we append Data/Sql/X.
         var assemblyDir = Path.GetDirectoryName(typeof(SqlSeedService).Assembly.Location) ?? "";
-        // bin/Debug/net10.0 → core project root
-        var coreRoot = Path.GetFullPath(Path.Combine(assemblyDir, "..", "..", ".."));
-        return Path.Combine(coreRoot, "Data", "Sql", fileName);
+        var candidateRoots = new List<string>();
+
+        // 1. Walk up from the assembly. From any v3/<ProjectName>/bin/.../
+        //    going up 3 finds <ProjectName>. From there step sideways into
+        //    ../StreetSamurai.Core. Also try walking up further (some host
+        //    layouts publish to bin/Debug/net10.0/win-x64/publish/).
+        var dir = assemblyDir;
+        for (int up = 0; up < 6 && !string.IsNullOrEmpty(dir); up++)
+        {
+            candidateRoots.Add(dir); // case: dll is already inside Core/
+            candidateRoots.Add(Path.Combine(dir, "..", "StreetSamurai.Core"));
+            candidateRoots.Add(Path.Combine(dir, "StreetSamurai.Core"));
+            dir = Path.GetDirectoryName(dir) ?? "";
+        }
+
+        // 2. Source-tree fall-back relative to current working dir, so a
+        //    "dotnet run --project v3/X" from the repo root still resolves.
+        var cwd = Directory.GetCurrentDirectory();
+        candidateRoots.Add(Path.Combine(cwd, "v3", "StreetSamurai.Core"));
+        candidateRoots.Add(Path.Combine(cwd, "StreetSamurai.Core"));
+        candidateRoots.Add(cwd);
+
+        foreach (var root in candidateRoots)
+        {
+            var probe = Path.GetFullPath(Path.Combine(root, "Data", "Sql", fileName));
+            if (File.Exists(probe)) return probe;
+        }
+        // Return the first candidate so the error message points somewhere
+        // useful when the file truly is missing.
+        return Path.GetFullPath(Path.Combine(candidateRoots[0], "Data", "Sql", fileName));
     }
 
     private static string StripGo(string sql)

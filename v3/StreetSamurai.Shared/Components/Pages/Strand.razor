@@ -29,9 +29,46 @@
     .strand-title:focus { box-shadow: none; border-bottom: 2px solid #0dcaf0; }
     .strand-synopsis { background: transparent; border: none; color: #adb5bd; font-size: 0.9rem; resize: none; padding: 0; outline: none; width: 100%; }
     .strand-synopsis:focus { color: #ced4da; }
-    .beat-card { background: #161616; border: 1px solid #2a2a2a; border-radius: 8px; padding: 0.85rem 1rem; transition: border-color 0.15s ease; }
-    .beat-card:hover { border-color: #3a3a3a; }
-    .beat-card.editing { border-color: #0dcaf0; }
+    .beat-card { background: #161616; border: 1px solid #2a2a2a; border-radius: 8px; padding: 0.85rem 1rem 0.85rem 2rem; transition: border-color 0.15s ease, box-shadow 0.15s ease; position: relative; }
+    .beat-card:hover { border-color: #0dcaf0; box-shadow: 0 0 0 1px rgba(13,202,240,0.25); }
+    .beat-card:hover .beat-copy-actions { opacity: 1; }
+    .beat-card.editing { border-color: #0dcaf0; box-shadow: 0 0 0 1px rgba(13,202,240,0.35); }
+    .beat-card.selected { border-color: #ffc107; box-shadow: 0 0 0 1px rgba(255,193,7,0.35); }
+    .beat-copy-actions { position: absolute; top: 0.5rem; right: 0.5rem; display: flex; gap: 0.25rem; opacity: 0; transition: opacity 0.15s ease; pointer-events: none; }
+    .beat-card:hover .beat-copy-actions, .beat-card:focus-within .beat-copy-actions { pointer-events: auto; }
+    .beat-card.selected .beat-copy-actions { opacity: 1; pointer-events: auto; }
+    .beat-copy-btn { background: rgba(13,202,240,0.08); border: 1px solid rgba(13,202,240,0.3); color: #79d2e8; font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 4px; cursor: pointer; font-family: inherit; }
+    .beat-copy-btn:hover { background: rgba(13,202,240,0.2); border-color: #0dcaf0; color: #f8f9fa; }
+    .beat-copy-btn.copied { background: rgba(25,135,84,0.2); border-color: #198754; color: #75b798; }
+    .beat-select-box { position: absolute; top: 0.55rem; left: 0.5rem; width: 1rem; height: 1rem; cursor: pointer; accent-color: #ffc107; }
+    .beat-id-chip { color: #0dcaf0; font-variant-numeric: tabular-nums; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; }
+    .beat-id-chip .pos { color: #6c757d; font-weight: 400; margin-left: 0.35rem; }
+
+    /* Gap line: barely visible 1px hint by default so users know it's
+       interactive; expands on hover/focus with a glow + tooltip-style
+       editor floating above. Custom (overridden) gaps stay tinted yellow
+       so the user can see at a glance which gaps are tuned. */
+    .beat-gap { height: 6px; margin: 0.1rem 0; position: relative; cursor: pointer; transition: background-color 0.15s ease; }
+    .beat-gap::before { content: ""; position: absolute; left: 1rem; right: 1rem; top: 50%; height: 1px; background: #2a2a2a; transform: translateY(-50%); transition: background-color 0.15s ease, height 0.15s ease; }
+    .beat-gap:hover::before, .beat-gap:focus-within::before { background: #0dcaf0; height: 2px; }
+    .beat-gap.custom::before { background: rgba(255,193,7,0.5); height: 2px; }
+    .beat-gap.custom:hover::before { background: #ffc107; }
+    .beat-gap-editor { position: absolute; top: -2rem; left: 50%; transform: translateX(-50%); background: #0a0a0a; border: 1px solid #0dcaf0; border-radius: 4px; padding: 0.25rem 0.5rem; display: none; gap: 0.35rem; align-items: center; z-index: 10; font-size: 0.72rem; color: #f8f9fa; white-space: nowrap; box-shadow: 0 4px 12px rgba(0,0,0,0.35); }
+    .beat-gap:hover .beat-gap-editor, .beat-gap:focus-within .beat-gap-editor { display: flex; }
+    .beat-gap.custom .beat-gap-editor { border-color: #ffc107; }
+    .beat-gap-editor input[type="number"] { width: 72px; background: #161616; color: #f8f9fa; border: 1px solid #2a2a2a; padding: 0 0.3rem; font-size: 0.72rem; }
+    .beat-gap-editor input[type="number"]:focus { outline: none; border-color: #0dcaf0; }
+    .beat-gap-editor button { background: transparent; border: 1px solid #2a2a2a; color: #adb5bd; padding: 0 0.45rem; cursor: pointer; font-family: inherit; line-height: 1.4; }
+    .beat-gap-editor button:hover { border-color: #adb5bd; color: #f8f9fa; }
+    .beat-gap-editor button.save { border-color: #198754; color: #75b798; }
+    .beat-gap-editor button.save:hover { background: rgba(25,135,84,0.18); }
+    .beat-gap-editor button.reset { border-color: #dc3545; color: #ea868f; }
+    .beat-gap-editor button.reset:hover { background: rgba(220,53,69,0.18); }
+
+    .selection-bar { position: sticky; bottom: 1rem; z-index: 6; background: rgba(15,15,15,0.95); backdrop-filter: blur(6px); border: 1px solid #ffc107; border-radius: 8px; padding: 0.6rem 0.9rem; display: flex; align-items: center; gap: 0.75rem; margin-top: 1rem; box-shadow: 0 -4px 18px rgba(0,0,0,0.35); }
+    .selection-bar .count { color: #ffc107; font-weight: 600; font-size: 0.95rem; }
+    .selection-bar .hint { color: #6c757d; font-size: 0.75rem; }
+    .beat-card.playing { border-color: #20c997; box-shadow: 0 0 0 1px rgba(32,201,151,0.4), 0 0 18px rgba(32,201,151,0.25); }
     .beat-card.stale { border-left: 3px solid #dc3545; }
     .beat-card.recorded { border-left: 3px solid #198754; }
     .beat-num { color: #6c757d; font-variant-numeric: tabular-nums; font-size: 0.8rem; letter-spacing: 0.05em; }
@@ -230,23 +267,79 @@ else
                     <div class="insert-bar-line"></div>
                 </div>
 
-                @{ int position = 0; }
+                @{ int position = 0; Guid? prevBeatIdForGap = null; }
                 @foreach (var entry in beats)
                 {
                     position++;
                     var b = entry.Beat;
                     var isEditing = editingBeatId == b.Id;
                     var bid = b.Id;
+                    var isSelected = selectedBeats.Contains(bid);
                     var rowClass = "beat-card mb-1";
                     if (isEditing) rowClass += " editing";
+                    else if (isSelected) rowClass += " selected";
                     else if (b.Stale) rowClass += " stale";
                     else if (!string.IsNullOrEmpty(b.AudioPath)) rowClass += " recorded";
                     var rowPosition = position;
 
+                    @if (prevBeatIdForGap.HasValue)
+                    {
+                        var prev = prevBeatIdForGap.Value;
+                        var key = (prev, bid);
+                        var hasCustom = customGaps.TryGetValue(key, out var existingGap);
+                        var autoMs = ComputeAutoGapMs(beats[position - 2].Beat, b);
+                        var displayMs = hasCustom ? existingGap!.DurationMs : autoMs;
+                        var gapEditorId = $"gap-editor-{prev:N}-{bid:N}";
+                        <div class="beat-gap @(hasCustom ? "custom" : "")" tabindex="0" title="@(hasCustom ? $"Custom gap: {displayMs}ms (auto would be {autoMs}ms)" : $"Auto gap: {autoMs}ms — hover to override")">
+                            <div class="beat-gap-editor">
+                                <span class="text-muted">@(hasCustom ? "Gap #" + existingGap!.Number : "auto")</span>
+                                <input type="number" min="0" max="6000" step="50"
+                                       value="@displayMs"
+                                       id="@gapEditorId"
+                                       @onkeydown="@(e => OnGapEditorKeydown(e, prev, bid, gapEditorId))" />
+                                <span class="text-muted">ms</span>
+                                <button class="save" title="Save (Enter)" @onclick="@(() => SaveGapFromInputAsync(prev, bid, gapEditorId))">✓</button>
+                                @if (hasCustom)
+                                {
+                                    <button class="reset" title="Reset to auto" @onclick="@(() => ResetGapAsync(prev, bid))">↺</button>
+                                }
+                            </div>
+                        </div>
+                    }
+
                     <div class="@rowClass" data-cy="beat-row" data-beat-id="@bid">
+                        <input type="checkbox" class="beat-select-box"
+                               checked="@isSelected"
+                               title="Select beat for play / batch actions"
+                               @onchange="@(e => ToggleBeatSelection(bid, (bool)(e.Value ?? false)))" />
+                        <div class="beat-copy-actions">
+                            <button class="beat-copy-btn"
+                                    title="Edit beat text"
+                                    @onclick="() => StartBeatEdit(b)"
+                                    @onclick:stopPropagation
+                                    data-cy="beat-edit">
+                                <i class="bi bi-pencil"></i> edit
+                            </button>
+                            <button class="beat-copy-btn @(copiedTextBeatId == bid ? "copied" : "")"
+                                    title="Copy beat text"
+                                    @onclick="() => CopyBeatTextAsync(bid)"
+                                    @onclick:stopPropagation
+                                    data-cy="beat-copy-text">
+                                <i class="bi bi-clipboard"></i>
+                                @(copiedTextBeatId == bid ? " copied" : " text")
+                            </button>
+                            <button class="beat-copy-btn @(copiedIdBeatId == bid ? "copied" : "")"
+                                    title="Copy beat reference (Beat #N + guid + strand) for CLI"
+                                    @onclick="() => CopyBeatIdAsync(bid)"
+                                    @onclick:stopPropagation
+                                    data-cy="beat-copy-id">
+                                <i class="bi bi-hash"></i>
+                                @(copiedIdBeatId == bid ? " copied" : " id")
+                            </button>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center mb-1">
                             <div class="d-flex align-items-center gap-2">
-                                <span class="beat-num">BEAT @rowPosition.ToString("D3")</span>
+                                <span class="beat-id-chip" data-cy="beat-id" title="@($"Beat #{b.Number} — guid {bid}")">Beat #@b.Number</span>
                                 @if (b.Stale)
                                 {
                                     <span class="badge bg-danger strand-meta-chip" title="Prose edited past the audio. Re-record to repair.">stale</span>
@@ -446,6 +539,33 @@ else
                         </button>
                         <div class="insert-bar-line"></div>
                     </div>
+
+                    prevBeatIdForGap = bid;
+                } @* end foreach *@
+
+                @if (selectedBeats.Count > 0)
+                {
+                    <div class="selection-bar" data-cy="selection-bar">
+                        <span class="count" data-cy="selection-count">@selectedBeats.Count selected</span>
+                        @if (isPlayingSequence)
+                        {
+                            <button class="btn btn-sm btn-danger" title="Stop playback"
+                                    @onclick="StopPlayingAsync" data-cy="stop-playing">
+                                <i class="bi bi-stop-fill me-1"></i>Stop
+                            </button>
+                        }
+                        else
+                        {
+                            <button class="btn btn-sm btn-warning" title="Play selected beats in order with the gaps between them"
+                                    @onclick="PlaySelectedAsync" data-cy="play-selected">
+                                <i class="bi bi-play-fill me-1"></i>Play selected
+                            </button>
+                        }
+                        <button class="btn btn-sm btn-outline-warning" @onclick="ClearSelection" data-cy="clear-selection">
+                            <i class="bi bi-x-lg me-1"></i>Clear
+                        </button>
+                        <span class="ms-auto hint">Voice from active profile · pauses honour per-gap overrides · Esc to clear</span>
+                    </div>
                 }
             </div>
         }
@@ -507,6 +627,26 @@ else
     private System.Threading.Timer? poll;
     private string? lastIdOrSlug;
 
+    /// <summary>Per-beat "just copied to clipboard" flash state. Single guid so
+    /// only one button shows "copied" at a time; auto-clears after a short
+    /// delay so the chip relaxes back to its idle label.</summary>
+    private Guid? copiedTextBeatId;
+    private Guid? copiedIdBeatId;
+
+    /// <summary>Multi-select set. Beats appearing here render with the
+    /// .selected class and surface a "Play selected" action bar that
+    /// streams them in order with the calculated inter-beat silence.</summary>
+    private HashSet<Guid> selectedBeats = new();
+
+    /// <summary>User-customised Gap rows for this strand's adjacent pairs.
+    /// Keyed by (AboveBeatId, BelowBeatId). Loaded alongside beats; absence
+    /// means the silence between that pair uses the auto-computed default.</summary>
+    private Dictionary<(Guid, Guid), StreetSamurai.Core.Data.Entities.Gap> customGaps = new();
+
+    /// <summary>True while a multi-beat play sequence is running. Swaps
+    /// the selection bar's Play button for a Stop button.</summary>
+    private bool isPlayingSequence;
+
     private string defaultVoiceId = "";
     private List<TtsVoice> voices = new();
 
@@ -536,6 +676,19 @@ else
         await LoadAsync();
     }
 
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Esc binding is idempotent (window flag); wire on first render
+            // so the selection-bar Esc-clear works even when no delete modal
+            // has been opened yet. Must run AFTER initial render — JS interop
+            // is not available during OnInitialized / OnParametersSet on the
+            // server-prerender pass.
+            await WireEscapeOnceAsync();
+        }
+    }
+
     private async Task LoadAsync()
     {
         loading = true;
@@ -550,6 +703,7 @@ else
         {
             if (string.IsNullOrEmpty(strand.VoiceId)) strand.VoiceId = defaultVoiceId;
             beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+            await ReloadGapsAsync(db);
 
             // Walk ancestors (root first) and load direct children.
             ancestors = await LoadAncestorsAsync(db, strand.ParentStrandId);
@@ -757,9 +911,35 @@ else
         StateHasChanged();
         try
         {
-            await Workbench.SplitBeatAsync(strand.Id, beatId);
+            // If the user is editing this beat, split at the textarea
+            // cursor position rather than the auto-midpoint. That's the
+            // "I put my I-beam somewhere and click Split" workflow.
+            int cursor = -1;
+            if (editingBeatId == beatId)
+            {
+                try
+                {
+                    cursor = await JS.InvokeAsync<int>("streetsamurai.getCursorPosition", $"beat-{beatId:N}-edit");
+                }
+                catch { /* fall back to midpoint */ }
+            }
+
+            if (cursor > 0)
+            {
+                // Save any in-flight edit first so the split runs against
+                // the actual current prose, not the pre-edit text.
+                if (editingBeatId == beatId && !string.IsNullOrEmpty(editingText))
+                    await Workbench.UpdateBeatTextAsync(beatId, editingText);
+                await Workbench.SplitBeatAtAsync(strand.Id, beatId, cursor);
+                CancelBeatEdit();
+                Toast.Success("SPLIT", $"Beat split at cursor (position {cursor}). Both halves need re-record.");
+            }
+            else
+            {
+                await Workbench.SplitBeatAsync(strand.Id, beatId);
+                Toast.Success("SPLIT", "Beat split at midpoint sentence. Both halves need re-record.");
+            }
             await ReloadBeatsAsync();
-            Toast.Success("SPLIT", "Beat split. Both halves need re-record.");
         }
         catch (Exception ex) { Toast.Error("SPLIT-FAIL", ex.Message); }
         finally { working = false; await InvokeAsync(StateHasChanged); }
@@ -787,10 +967,10 @@ else
     }
     private void CancelDelete() => pendingDelete = null;
 
-    /// <summary>One-shot Escape-key hook for the open modal. Registers a
-    /// keydown listener on document while pendingDelete is set, and
-    /// invokes CancelDelete via JS interop when Escape fires. Cheap
-    /// alternative to a full Blazor focus-trap component.</summary>
+    /// <summary>One-shot Escape-key hook. Registers a keydown listener on
+    /// document; on Escape, in priority order: (1) close an open modal,
+    /// (2) clear the multi-select selection bar, (3) leave the page alone.
+    /// Cheap alternative to a full Blazor focus-trap component.</summary>
     private async Task WireEscapeOnceAsync()
     {
         try
@@ -800,14 +980,17 @@ else
                   if (window.__ssStrandEscBound) return;
                   window.__ssStrandEscBound = true;
                   document.addEventListener('keydown', function(e){
-                    if (e.key === 'Escape') {
-                      var btn = document.querySelector('.modal.d-block .modal-footer .btn-outline-secondary');
-                      if (btn) btn.click();
-                    }
+                    if (e.key !== 'Escape') return;
+                    // 1. open modal → cancel
+                    var cancel = document.querySelector('.modal.d-block .modal-footer .btn-outline-secondary');
+                    if (cancel) { cancel.click(); return; }
+                    // 2. selection bar present → click Clear
+                    var clear = document.querySelector('[data-cy=""clear-selection""]');
+                    if (clear) { clear.click(); return; }
                   });
                 })();");
         }
-        catch { /* JS interop is best-effort — clicking Cancel still works */ }
+        catch { /* JS interop is best-effort */ }
     }
 
     private async Task ConfirmDeleteAsync()
@@ -879,6 +1062,181 @@ else
         finally { working = false; await InvokeAsync(StateHasChanged); }
     }
 
+    /// <summary>Copy this beat's prose to the system clipboard so the user can
+    /// paste it into a chat / CLI / external editor. Flashes the chip green
+    /// for ~1.4s as visual confirmation.</summary>
+    private async Task CopyBeatTextAsync(Guid beatId)
+    {
+        var beat = beats.FirstOrDefault(o => o.Beat.Id == beatId)?.Beat;
+        if (beat == null) return;
+        try
+        {
+            await JS.InvokeVoidAsync("navigator.clipboard.writeText", beat.Text ?? "");
+            copiedTextBeatId = beatId;
+            StateHasChanged();
+            _ = Task.Run(async () =>
+            {
+                await Task.Delay(1400);
+                if (copiedTextBeatId == beatId)
+                {
+                    copiedTextBeatId = null;
+                    await InvokeAsync(StateHasChanged);
+                }
+            });
+        }
+        catch (Exception ex) { Toast.Error("COPY-FAIL", ex.Message); }
+    }
+
+    /// <summary>Copy this beat's stable reference to the clipboard. Format:
+    /// <code>Strand "2F" (2bc9ee96-…); Beat #134 (019e4d4a-…)</code>
+    /// The Number is the durable handle a CLI assistant looks up; the slug
+    /// gives the human a hint; the Guid is the machine-canonical id.</summary>
+    private async Task CopyBeatIdAsync(Guid beatId)
+    {
+        var entry = beats.FirstOrDefault(o => o.Beat.Id == beatId);
+        if (entry == null || strand == null) return;
+        var reference = $"Strand \"{strand.Title}\" ({strand.Id}); Beat #{entry.Beat.Number} ({beatId})";
+        try
+        {
+            await JS.InvokeVoidAsync("navigator.clipboard.writeText", reference);
+            copiedIdBeatId = beatId;
+            StateHasChanged();
+            _ = Task.Run(async () =>
+            {
+                await Task.Delay(1400);
+                if (copiedIdBeatId == beatId)
+                {
+                    copiedIdBeatId = null;
+                    await InvokeAsync(StateHasChanged);
+                }
+            });
+        }
+        catch (Exception ex) { Toast.Error("COPY-FAIL", ex.Message); }
+    }
+
+    // ── Multi-select + Play selected ─────────────────────────────────────
+
+    private void ToggleBeatSelection(Guid beatId, bool isChecked)
+    {
+        if (isChecked) selectedBeats.Add(beatId);
+        else selectedBeats.Remove(beatId);
+        StateHasChanged();
+    }
+
+    private void ClearSelection()
+    {
+        selectedBeats.Clear();
+        StateHasChanged();
+    }
+
+    /// <summary>Stream the selected beats in reading order with the
+    /// computed inter-beat silence between them. The browser plays them
+    /// sequentially via a JS helper that chains HTMLAudioElement playback
+    /// with setTimeout pauses. Voice consistency is automatic — every
+    /// beat's audio was rendered under the active VoiceProfile already.</summary>
+    private async Task PlaySelectedAsync()
+    {
+        if (selectedBeats.Count == 0 || strand == null) return;
+
+        // Walk beats in reading order so the selection always plays in
+        // narrative sequence, regardless of the order the user clicked.
+        var selectedInOrder = beats.Where(o => selectedBeats.Contains(o.Beat.Id)).ToList();
+        if (selectedInOrder.Count == 0) return;
+
+        var withAudio = selectedInOrder.Where(o => !string.IsNullOrEmpty(o.Beat.AudioPath)).ToList();
+        if (withAudio.Count == 0)
+        {
+            Toast.Warning("PLAY-EMPTY", "None of the selected beats have audio yet. Record them first.");
+            return;
+        }
+        if (withAudio.Count < selectedInOrder.Count)
+            Toast.Info("PLAY-PARTIAL", $"{selectedInOrder.Count - withAudio.Count} selected beat(s) skipped — no audio recorded yet.");
+
+        // Build the play list: alternating audioUrl + pauseMs entries.
+        // The last pause is 0 (playback ends after final beat).
+        var items = new List<object>();
+        for (int i = 0; i < withAudio.Count; i++)
+        {
+            var b = withAudio[i].Beat;
+            items.Add(new { audioUrl = $"/api/strands/{strand.Id}/beat/{b.Id}/audio", pauseMs = 0 });
+            if (i < withAudio.Count - 1)
+            {
+                var next = withAudio[i + 1].Beat;
+                var pauseMs = customGaps.TryGetValue((b.Id, next.Id), out var gap)
+                    ? gap.DurationMs
+                    : ComputeAutoGapMs(b, next);
+                items[^1] = new { audioUrl = $"/api/strands/{strand.Id}/beat/{b.Id}/audio", pauseMs };
+            }
+        }
+
+        try
+        {
+            isPlayingSequence = true;
+            StateHasChanged();
+            await JS.InvokeVoidAsync("streetsamurai.playBeatsInSequence", (object)items);
+        }
+        catch (Exception ex) { Toast.Error("PLAY-FAIL", ex.Message); }
+        finally
+        {
+            isPlayingSequence = false;
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    /// <summary>Interrupt the currently-running play sequence. The JS helper
+    /// pauses any active audio element and clears the pending silence
+    /// timeout; the foreground PlaySelectedAsync task unwinds in its
+    /// finally block.</summary>
+    private async Task StopPlayingAsync()
+    {
+        try { await JS.InvokeVoidAsync("streetsamurai.stopSequence"); }
+        catch (Exception ex) { Toast.Error("STOP-FAIL", ex.Message); }
+    }
+
+    // ── Gap editor ────────────────────────────────────────────────────────
+
+    /// <summary>Compute the same default ms the server-side silence engine
+    /// would use for this beat pair (mirrors
+    /// <see cref="StrandWorkbenchService.ComputeTrailingSilenceMs"/>) so the
+    /// gap-editor's placeholder value matches what would actually render.</summary>
+    private int ComputeAutoGapMs(BeatEntity above, BeatEntity below)
+        => StrandWorkbenchService.ComputeTrailingSilenceMs(above, below, Settings);
+
+    private void OnGapEditorKeydown(KeyboardEventArgs e, Guid above, Guid below, string editorId)
+    {
+        if (e.Key == "Enter") { _ = SaveGapFromInputAsync(above, below, editorId); }
+        else if (e.Key == "Escape") { /* let the hover close on blur */ }
+    }
+
+    private async Task SaveGapFromInputAsync(Guid above, Guid below, string editorId)
+    {
+        try
+        {
+            // Read the current input value via JS — the @bind doesn't fire on
+            // every keystroke and we want what's on screen, not the last-saved value.
+            var raw = await JS.InvokeAsync<string>("streetsamurai.readInput", editorId);
+            if (!int.TryParse(raw, out var ms)) return;
+            ms = Math.Clamp(ms, 0, 6000);
+            var gap = await Workbench.UpsertGapAsync(above, below, ms);
+            customGaps[(above, below)] = gap;
+            Toast.Success("GAP", $"Gap #{gap.Number} → {gap.DurationMs} ms.");
+            StateHasChanged();
+        }
+        catch (Exception ex) { Toast.Error("GAP-FAIL", ex.Message); }
+    }
+
+    private async Task ResetGapAsync(Guid above, Guid below)
+    {
+        try
+        {
+            await Workbench.DeleteGapAsync(above, below);
+            customGaps.Remove((above, below));
+            Toast.Info("GAP-RESET", "Reset to auto pause.");
+            StateHasChanged();
+        }
+        catch (Exception ex) { Toast.Error("GAP-RESET-FAIL", ex.Message); }
+    }
+
     private async Task ExportCombinedAsync()
     {
         if (strand == null || working) return;
@@ -917,6 +1275,24 @@ else
             strand.CharsNarrated = fresh.CharsNarrated;
         }
         beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+        await ReloadGapsAsync(db);
+    }
+
+    /// <summary>Pull the user-customised Gap rows for this strand's adjacent
+    /// beat pairs. Anything not in the dict falls back to the auto-computed
+    /// silence at concat time.</summary>
+    private async Task ReloadGapsAsync(StreetSamuraiDbContext db)
+    {
+        var beatIds = beats.Select(b => b.Beat.Id).ToHashSet();
+        if (beatIds.Count == 0)
+        {
+            customGaps = new();
+            return;
+        }
+        var rows = await db.Gaps.AsNoTracking()
+            .Where(g => beatIds.Contains(g.AboveBeatId) && beatIds.Contains(g.BelowBeatId))
+            .ToListAsync();
+        customGaps = rows.ToDictionary(g => (g.AboveBeatId, g.BelowBeatId));
     }
 
     private static string StatusColor(string status) => StrandWorkbenchService.StatusColor(status);
