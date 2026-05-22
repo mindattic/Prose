@@ -1700,7 +1700,7 @@ else if (CurrentTab == "record" && document != null)
             // ~50% of entity loads trigger the urban-decay neon flicker on a few tabs
             if (Random.Shared.NextDouble() < 0.50)
             {
-                try { await JS.InvokeVoidAsync("cbgEntityFlickerTabs"); }
+                try { await JS.InvokeVoidAsync("cyberspaceEntityFlickerTabs"); }
                 catch { /* JS not loaded yet — silent */ }
             }
         }
