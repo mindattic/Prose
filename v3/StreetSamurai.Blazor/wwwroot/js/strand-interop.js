@@ -86,8 +86,36 @@
         return el.selectionStart;
     }
 
+    /// Wrap the current selection in the beat-edit textarea with the given
+    /// marker on both sides (e.g. "**" for bold, "*" for italic, "__" for
+    /// underline, "~~" for strikethrough). If there is no selection, drops
+    /// an empty marker pair at the caret and parks the caret in the middle.
+    /// Dispatches an `input` event afterwards so Blazor's @bind picks up
+    /// the new value without waiting for blur.
+    function wrapSelection(id, marker) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const start = typeof el.selectionStart === 'number' ? el.selectionStart : el.value.length;
+        const end   = typeof el.selectionEnd   === 'number' ? el.selectionEnd   : start;
+        const before   = el.value.substring(0, start);
+        const selected = el.value.substring(start, end);
+        const after    = el.value.substring(end);
+        el.value = before + marker + selected + marker + after;
+        // Park the caret so a follow-up keystroke continues to type inside
+        // the wrap (or, if there was a real selection, re-selects it).
+        const caretStart = start + marker.length;
+        const caretEnd   = end + marker.length;
+        try {
+            el.setSelectionRange(caretStart, caretEnd);
+            el.focus();
+        } catch (e) { /* some browsers throw on detached elements */ }
+        // Blazor's @bind:event="oninput" listens for this.
+        el.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+
     window.streetsamurai.playBeatsInSequence = playBeatsInSequence;
     window.streetsamurai.stopSequence         = stopSequence;
     window.streetsamurai.readInput            = readInput;
     window.streetsamurai.getCursorPosition    = getCursorPosition;
+    window.streetsamurai.wrapSelection        = wrapSelection;
 })();

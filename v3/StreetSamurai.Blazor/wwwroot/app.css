@@ -1889,3 +1889,174 @@ hr {
 
 /* ── Topnav category icon ──────────────────────────────────────────────── */
 .topnav-cat-icon { font-size: 0.75rem; margin-right: 4px; opacity: 0.8; }
+
+/* ── Home tile board (CategoryTiles.razor) ─────────────────────────────────
+   Restored 2026-05-23 after MindAttic.Content -> MindAttic.Components sync
+   refresh wiped the prior copy. Lives OUTSIDE the sync marker blocks so the
+   next bundle refresh won't drop it again. */
+.home-sections { display: flex; flex-direction: column; gap: 0; }
+.board-section { padding: 0 0 4px; }
+.board-section-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #8b949e; padding: 12px 0 6px; border-top: 1px solid #21262d; }
+.board-section:first-child .board-section-label { border-top: none; padding-top: 4px; }
+.board-grid { display: flex; flex-wrap: wrap; gap: 12px; padding: 2px 0 8px; }
+.board-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 5px;
+    width: 120px;
+    height: 120px;
+    text-decoration: none;
+    color: #e6edf3;
+    gap: 6px;
+    transition: background 0.12s, border-color 0.12s;
+    position: relative;
+    font-family: 'Outfit', system-ui, sans-serif;
+}
+.board-tile:hover { background: #1c2128; border-color: #dc3545; color: #fff; text-decoration: none; }
+.board-tile-viz .board-tile-icon { color: #58a6ff; }
+.board-tile-viz:hover { border-color: #58a6ff; }
+.board-tile-data .board-tile-icon { color: #d9a030; }
+.board-tile-data:hover { border-color: #d9a030; }
+.board-tile-tool .board-tile-icon { color: #3fb950; }
+.board-tile-tool:hover { border-color: #3fb950; }
+.board-tile-icon { font-size: 1.5rem; color: #dc3545; }
+.board-tile-name {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3;
+    font-family: 'Outfit';
+}
+.board-tile-count { position: absolute; bottom: 2px; right: 10px; font-size: 0.65rem; color: #8b949e; }
+
+.board-tile.is-open {
+    border-color: #dc3545;
+    background: #1c2128;
+    color: #fff;
+    box-shadow: 0 0 0 1px #dc3545, 0 4px 14px rgba(220, 53, 69, 0.25);
+}
+.board-tile-tabpanels {
+    position: relative;
+    z-index: 1100;
+    margin-top: 12px;
+}
+.board-tile-desc.is-open { width: 100%; box-sizing: border-box; display: flex; flex-direction: column; }
+.board-tile-desc {
+    padding: 18px 24px;
+    background: rgba(22, 27, 34, 0.96);
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    color: #c9d1d9;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    box-shadow: 0 20px 56px rgba(0, 0, 0, 0.65),
+                0 4px 14px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: none;
+    gap: 16px;
+}
+.board-tile-desc a { color: #58a6ff; }
+.board-tile-desc a:hover { color: #79b8ff; }
+.board-tile-desc-row { display: flex; gap: 18px; align-items: flex-start; width: 100%; }
+.board-tile-desc-img {
+    flex-shrink: 0;
+    width: 150px;
+    height: 225px;
+    align-self: flex-start;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+.board-tile-desc-img--placeholder {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 225'><rect width='150' height='225' fill='%23161b22'/><rect x='0.5' y='0.5' width='149' height='224' fill='none' stroke='%2330363d'/><path d='M0 75 L150 75 M0 150 L150 150 M37 0 L37 225 M113 0 L113 225' stroke='%2330363d' stroke-width='0.5' opacity='0.6'/><circle cx='37' cy='75' r='2.5' fill='%2358a6ff' opacity='0.85'/><circle cx='113' cy='150' r='2.5' fill='%2358a6ff' opacity='0.85'/><text x='75' y='118' text-anchor='middle' fill='%2358a6ff' font-family='monospace' font-size='14' font-weight='700'>MindAttic</text></svg>");
+}
+.board-tile-desc-img--book {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.board-tile-desc-img--book img {
+    object-fit: contain;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
+}
+.board-tile-desc-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+}
+.board-tile-desc-mono {
+    flex-shrink: 0;
+    width: 150px;
+    height: 225px;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #21262d;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 700;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+.board-tile-desc-body {
+    flex: 1;
+    min-width: 0;
+}
+.board-tile-desc-body h3 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+    color: #fff;
+}
+.board-tile-desc-body p { margin: 0; }
+.board-tile-desc-text { margin: 0; }
+.board-tile-desc-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+    padding-top: 14px;
+    border-top: 1px solid #21262d;
+}
+.board-tile-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 18px;
+    min-width: 88px;
+    border: 1px solid #444c56;
+    border-radius: 6px;
+    background: #2d333b;
+    color: #c9d1d9 !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    cursor: pointer;
+}
+.board-tile-btn:hover {
+    background: #373e47;
+    border-color: #58a6ff;
+    color: #fff !important;
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    .board-tile-desc-row { flex-direction: column; }
+}

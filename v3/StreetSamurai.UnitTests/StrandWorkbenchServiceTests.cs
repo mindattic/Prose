@@ -367,4 +367,150 @@ public class StrandWorkbenchServiceTests
         var ordered = await svc.GetOrderedBeatsAsync(root.Id);
         Assert.That(ordered.Select(o => o.Beat.Text).ToArray(), Is.EqualTo(new[] { "root-beat", "child-beat" }));
     }
+
+    // ── Gap-after-beat tests (the standalone Gaps table was folded into
+    //    Beat.GapAfterMs in the 2026-05-23 schema migration) ────────────────
+
+    [Test]
+    public async Task SetGapAfterAsync_SetsExplicitOverride()
+    {
+        var s = await MakeStrandAsync();
+        var b = await svc.InsertBeatAsync(s.Id, null, "Some text.");
+
+        await svc.SetGapAfterAsync(b.Id, 1234);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var fresh = await db.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
+        Assert.That(fresh.GapAfterMs, Is.EqualTo(1234));
+    }
+
+    [Test]
+    public async Task SetGapAfterAsync_ClampsNegativeToZero()
+    {
+        var s = await MakeStrandAsync();
+        var b = await svc.InsertBeatAsync(s.Id, null, "Some text.");
+
+        await svc.SetGapAfterAsync(b.Id, -500);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var fresh = await db.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
+        Assert.That(fresh.GapAfterMs, Is.EqualTo(0), "0 is a valid override (explicit no-silence); negatives clamp to 0.");
+    }
+
+    [Test]
+    public async Task ClearGapAfterAsync_RevertsToAutoComputedDefault()
+    {
+        var s = await MakeStrandAsync();
+        var b = await svc.InsertBeatAsync(s.Id, null, "Some text.");
+        await svc.SetGapAfterAsync(b.Id, 2222);
+
+        await svc.ClearGapAfterAsync(b.Id);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var fresh = await db.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
+        Assert.That(fresh.GapAfterMs, Is.Null);
+        Assert.That(fresh.GapAfterAudioPath, Is.Null);
+    }
+
+    [Test]
+    public async Task ClearGapAfterAsync_MissingBeat_NoOps()
+    {
+        // Should not throw — clearing a beat that doesn't exist (e.g.,
+        // deleted between UI fetch and click) is a no-op.
+        Assert.DoesNotThrowAsync(() => svc.ClearGapAfterAsync(Guid.NewGuid()));
+    }
+
+    [Test]
+    public void ComputeTrailingSilenceMs_NullSettings_UsesBuiltInDefaults()
+    {
+        var sceneEnd = new Beat { Text = "ends like a scene.", SceneType = "scene-end" };
+        var sectionEnd = new Beat { Text = "section break.", SceneType = "section-end" };
+        var continuation = new Beat { Text = "no terminator" };
+        var paragraph = new Beat { Text = "Clean stop." };
+
+        Assert.That(StrandWorkbenchService.ComputeTrailingSilenceMs(sectionEnd, null, null), Is.EqualTo(1800));
+        Assert.That(StrandWorkbenchService.ComputeTrailingSilenceMs(sceneEnd, null, null), Is.EqualTo(1000));
+        Assert.That(StrandWorkbenchService.ComputeTrailingSilenceMs(paragraph, null, null), Is.EqualTo(400));
+        Assert.That(StrandWorkbenchService.ComputeTrailingSilenceMs(continuation, null, null), Is.EqualTo(200));
+    }
+
+    // ── BeatMetadataUpdate: IsChapterStart + Kind round-trip ────────────────
+
+    [Test]
+    public async Task UpdateBeatMetadata_PersistsIsChapterStartFlag()
+    {
+        var s = await MakeStrandAsync();
+        var b = await svc.InsertBeatAsync(s.Id, null, "Chapter opener prose.");
+
+        await svc.UpdateBeatMetadataAsync(b.Id, new StrandWorkbenchService.BeatMetadataUpdate(
+            BeatTitle:      "1. The thing that happened",
+            Synopsis:       null,
+            EmotionalTone:  null,
+            PaceHint:       null,
+            FacetTag:       null,
+            StructureRole:  null,
+            Act:            1,
+            SceneType:      "scene",
+            IsChapterStart: true,
+            Kind:           "prose"));
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var fresh = await db.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
+        Assert.That(fresh.IsChapterStart, Is.True);
+        Assert.That(fresh.BeatTitle, Is.EqualTo("1. The thing that happened"));
+        Assert.That(fresh.Kind, Is.EqualTo("prose"));
+    }
+
+    [Test]
+    public async Task UpdateBeatMetadata_StoresKind_LowercasedAndTrimmed()
+    {
+        var s = await MakeStrandAsync();
+        var b = await svc.InsertBeatAsync(s.Id, null, "Quotation text.");
+
+        await svc.UpdateBeatMetadataAsync(b.Id, new StrandWorkbenchService.BeatMetadataUpdate(
+            BeatTitle:      "Bill Coolman",
+            Synopsis:       null,
+            EmotionalTone:  null,
+            PaceHint:       null,
+            FacetTag:       null,
+            StructureRole:  null,
+            Act:            0,
+            SceneType:      "scene",
+            IsChapterStart: false,
+            Kind:           "  QUOTE  "));
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var fresh = await db.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
+        Assert.That(fresh.Kind, Is.EqualTo("quote"), "Kind is lowercased + trimmed at the service boundary.");
+    }
+
+    [Test]
+    public async Task UpdateBeatMetadata_NullOrBlankKind_FallsBackToProse()
+    {
+        var s = await MakeStrandAsync();
+        var b = await svc.InsertBeatAsync(s.Id, null, "Prose.");
+        // Force a non-default Kind first so we can observe the fallback.
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var row = await db.Beats.FirstAsync(x => x.Id == b.Id);
+            row.Kind = "dedication";
+            await db.SaveChangesAsync();
+        }
+
+        await svc.UpdateBeatMetadataAsync(b.Id, new StrandWorkbenchService.BeatMetadataUpdate(
+            BeatTitle:      null,
+            Synopsis:       null,
+            EmotionalTone:  null,
+            PaceHint:       null,
+            FacetTag:       null,
+            StructureRole:  null,
+            Act:            0,
+            SceneType:      "scene",
+            IsChapterStart: false,
+            Kind:           "   "));
+
+        await using var db2 = await dbFactory.CreateDbContextAsync();
+        var fresh = await db2.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
+        Assert.That(fresh.Kind, Is.EqualTo("prose"));
+    }
 }

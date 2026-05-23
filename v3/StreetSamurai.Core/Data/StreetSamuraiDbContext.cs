@@ -50,7 +50,9 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<Beat>               Beats               => Set<Beat>();
     public DbSet<Strand>             Strands             => Set<Strand>();
     public DbSet<StrandBeat>         StrandBeats         => Set<StrandBeat>();
-    public DbSet<Gap>                Gaps                => Set<Gap>();
+    // Gaps table folded into Beat.GapAfterMs / Beat.GapAfterAudioPath
+    // (migration fold_gaps_into_beats_20260523.sql). The standalone DbSet
+    // is gone; gap-after-beat is now a property of the upper beat.
 
     // Character subtype + children — fully columnar (no DataJson on this branch)
     public DbSet<Character>                       Characters                    => Set<Character>();

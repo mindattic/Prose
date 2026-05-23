@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Extensions;
 
 // ── ApplyMigrations ────────────────────────────────────────────────────────
@@ -54,6 +55,9 @@ var migrations = new[]
 {
     "add_beat_number_20260522.sql",
     "add_gaps_table_20260522.sql",
+    "fold_gaps_into_beats_20260523.sql",
+    "add_beat_is_chapter_start_20260523.sql",
+    "add_beat_kind_20260523.sql",
 };
 
 await using var db = await dbFactory.CreateDbContextAsync();
@@ -88,17 +92,164 @@ foreach (var file in migrations)
     Console.WriteLine($"    ✓ {file} applied");
 }
 
+// ── Data migration: fold nested strands into their roots ───────────────
+// After the SQL migrations finish, walk every strand tree in DFS preorder
+// and pull every non-root strand's beats up into the root with contiguous
+// SortKeys. The first beat of each formerly-nested strand is marked
+// IsChapterStart=true with BeatTitle = original strand title (chapter
+// heading). Also marks the very first beat of every root with the root's
+// title as a chapter start, so flat strands display "Chapter 1: ...". The
+// non-root strand rows are deleted once their beats are migrated.
+//
+// Idempotent: trees with no children get their beat-#1 marker only; trees
+// already flat skip the re-parent step entirely.
+Console.WriteLine();
+Console.WriteLine("→ Folding nested strands into roots...");
+var (foldedStrands, chapterStarts) = await FoldNestedStrandsAsync(dbFactory);
+Console.WriteLine($"    ✓ {foldedStrands} nested strand(s) folded, {chapterStarts} chapter-start marker(s) set");
+
 // Echo verification counts.
-var beatCount      = await db.Beats.CountAsync();
-var beatsWithNum   = await db.Beats.CountAsync(b => b.Number > 0);
-var gapTableExists = await db.Database.SqlQueryRaw<int>(
-        "SELECT CASE WHEN OBJECT_ID('dbo.Gaps','U') IS NOT NULL THEN 1 ELSE 0 END AS Value")
+var beatCount        = await db.Beats.CountAsync();
+var beatsWithNum     = await db.Beats.CountAsync(b => b.Number > 0);
+var beatsWithGapMs   = await db.Beats.CountAsync(b => b.GapAfterMs != null);
+var beatsAsChapter   = await db.Beats.CountAsync(b => b.IsChapterStart);
+var nestedStrands    = await db.Strands.CountAsync(s => s.ParentStrandId != null);
+var gapsTableGone    = await db.Database.SqlQueryRaw<int>(
+        "SELECT CASE WHEN OBJECT_ID('dbo.Gaps','U') IS NULL THEN 1 ELSE 0 END AS Value")
     .SingleAsync();
 Console.WriteLine();
-Console.WriteLine($"Beats total          : {beatCount}");
-Console.WriteLine($"Beats with Number > 0: {beatsWithNum}");
-Console.WriteLine($"Gaps table exists    : {(gapTableExists == 1 ? "yes" : "no")}");
+Console.WriteLine($"Beats total                : {beatCount}");
+Console.WriteLine($"Beats with Number > 0      : {beatsWithNum}");
+Console.WriteLine($"Beats with GapAfterMs set  : {beatsWithGapMs}");
+Console.WriteLine($"Beats marked IsChapterStart: {beatsAsChapter}");
+Console.WriteLine($"Nested (non-root) strands  : {nestedStrands}  (should be 0)");
+Console.WriteLine($"Gaps table dropped         : {(gapsTableGone == 1 ? "yes" : "no")}");
 return 0;
+
+// ───────────────────────────────────────────────────────────────────────
+// Fold helper: walks every root strand's tree, flattens beats into root,
+// marks chapter starts, deletes nested strands.
+async Task<(int strandsFolded, int chapterMarkers)> FoldNestedStrandsAsync(
+    IDbContextFactory<StreetSamuraiDbContext> factory)
+{
+    int strandsFolded = 0;
+    int chapterMarkers = 0;
+
+    await using var fdb = await factory.CreateDbContextAsync();
+    var allStrands = await fdb.Strands.AsNoTracking().ToListAsync();
+    var byId = allStrands.ToDictionary(s => s.Id);
+    var roots = allStrands.Where(s => s.ParentStrandId == null).ToList();
+
+    foreach (var root in roots)
+    {
+        var hasChildren = allStrands.Any(s => s.ParentStrandId == root.Id);
+
+        if (!hasChildren)
+        {
+            // Flat strand — just ensure beat #1 is marked as a chapter start
+            // so the UI renders "Chapter 1: <strand title>" above the first beat.
+            await using var flatDb = await factory.CreateDbContextAsync();
+            var firstBeatId = await flatDb.StrandBeats
+                .Where(sb => sb.StrandId == root.Id)
+                .OrderBy(sb => sb.SortKey)
+                .Select(sb => sb.BeatId)
+                .FirstOrDefaultAsync();
+            if (firstBeatId != Guid.Empty)
+            {
+                var firstBeat = await flatDb.Beats.FirstAsync(b => b.Id == firstBeatId);
+                if (!firstBeat.IsChapterStart)
+                {
+                    firstBeat.IsChapterStart = true;
+                    if (string.IsNullOrEmpty(firstBeat.BeatTitle))
+                        firstBeat.BeatTitle = root.Title;
+                    firstBeat.UpdatedAt = DateTime.UtcNow;
+                    await flatDb.SaveChangesAsync();
+                    chapterMarkers++;
+                }
+            }
+            continue;
+        }
+
+        // DFS preorder collect the entire subtree.
+        var subtree = new List<Strand>();
+        void Walk(Guid id)
+        {
+            if (!byId.TryGetValue(id, out var s)) return;
+            subtree.Add(s);
+            foreach (var c in allStrands.Where(x => x.ParentStrandId == id).OrderBy(x => x.SortKey))
+                Walk(c.Id);
+        }
+        Walk(root.Id);
+
+        // Pull all junctions for the subtree, then rebuild contiguously.
+        await using var workDb = await factory.CreateDbContextAsync();
+        var subtreeIds = subtree.Select(s => s.Id).ToHashSet();
+        var allJunctions = await workDb.StrandBeats
+            .Where(sb => subtreeIds.Contains(sb.StrandId))
+            .ToListAsync();
+
+        var seenBeats = new HashSet<Guid>();
+        var plan = new List<(Guid beatId, double sortKey, Strand owner, bool firstOfOwner)>();
+        double key = 100.0;
+        foreach (var s in subtree)
+        {
+            var beatsInS = allJunctions
+                .Where(j => j.StrandId == s.Id)
+                .OrderBy(j => j.SortKey)
+                .ToList();
+            bool first = true;
+            foreach (var sb in beatsInS)
+            {
+                if (!seenBeats.Add(sb.BeatId)) continue; // dedupe shared beats
+                plan.Add((sb.BeatId, key, s, first));
+                key += 100.0;
+                first = false;
+            }
+        }
+
+        // Wipe all subtree junctions and re-add under the root with new keys.
+        workDb.StrandBeats.RemoveRange(allJunctions);
+        await workDb.SaveChangesAsync();
+
+        foreach (var p in plan)
+        {
+            workDb.StrandBeats.Add(new StrandBeat
+            {
+                StrandId = root.Id,
+                BeatId   = p.beatId,
+                SortKey  = p.sortKey,
+            });
+        }
+        await workDb.SaveChangesAsync();
+
+        // Mark chapter starts: first beat of every strand in the subtree
+        // (including the root, so flat strands also get "Chapter 1").
+        foreach (var p in plan.Where(x => x.firstOfOwner))
+        {
+            var beat = await workDb.Beats.FirstAsync(b => b.Id == p.beatId);
+            if (!beat.IsChapterStart)
+            {
+                beat.IsChapterStart = true;
+                if (string.IsNullOrEmpty(beat.BeatTitle))
+                    beat.BeatTitle = p.owner.Title;
+                beat.UpdatedAt = DateTime.UtcNow;
+                chapterMarkers++;
+            }
+        }
+        await workDb.SaveChangesAsync();
+
+        // Delete the (now-empty) nested strands.
+        var nonRootIds = subtree.Where(s => s.Id != root.Id).Select(s => s.Id).ToHashSet();
+        var toDelete = await workDb.Strands
+            .Where(s => nonRootIds.Contains(s.Id))
+            .ToListAsync();
+        workDb.Strands.RemoveRange(toDelete);
+        await workDb.SaveChangesAsync();
+        strandsFolded += toDelete.Count;
+    }
+
+    return (strandsFolded, chapterMarkers);
+}
 
 // Split a T-SQL script into batches on lines that contain only "GO" (case
 // insensitive, optionally followed by a comment). Preserves blank lines

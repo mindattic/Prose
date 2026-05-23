@@ -14,6 +14,7 @@
 @inject NavigationManager Nav
 @inject ToastNotifier Toast
 @inject IJSRuntime JS
+@inject StreetSamurai.Core.Interfaces.ILlmService Llm
 @implements IDisposable
 
 @*
@@ -29,41 +30,80 @@
     .strand-title:focus { box-shadow: none; border-bottom: 2px solid #0dcaf0; }
     .strand-synopsis { background: transparent; border: none; color: #adb5bd; font-size: 0.9rem; resize: none; padding: 0; outline: none; width: 100%; }
     .strand-synopsis:focus { color: #ced4da; }
-    .beat-card { background: #161616; border: 1px solid #2a2a2a; border-radius: 8px; padding: 0.85rem 1rem 0.85rem 2rem; transition: border-color 0.15s ease, box-shadow 0.15s ease; position: relative; }
+    .beat-card { background: #161616; border: 1px solid #2a2a2a; border-radius: 8px; padding: 0.65rem 0.9rem; transition: border-color 0.15s ease, box-shadow 0.15s ease; position: relative; }
+
+    /* 3-row layout: header bar (controls), body (prose ↔ textarea), footer
+       (gap-after + meta chips). Rows separated by margin only — no borders
+       between rows so the card reads as one block. */
+    .beat-row-1 { /* spacing handled by .mb-2 on the element */ }
+    .beat-row-2 { min-height: 1.55rem; }
+    .beat-row-3 { margin-top: 0.5rem; padding-top: 0.4rem; border-top: 1px solid #1f1f1f; }
+
+    /* Inline checkbox replaces the absolute-positioned one. Slightly larger
+       hit target so it's easy to click on mobile. */
+    .beat-select-box-inline { width: 1rem; height: 1rem; accent-color: #ffc107; cursor: pointer; flex-shrink: 0; }
+
+    /* Format toolbar: tight grouped pill of icon buttons. Disabled state
+       dims to ~40% so the writer sees them but doesn't try clicking when
+       there's no textarea active. */
+    .beat-format-toolbar { display: inline-flex; gap: 0.15rem; margin-left: 0.5rem; padding: 0.1rem 0.25rem; background: rgba(255,255,255,0.02); border: 1px solid #2a2a2a; border-radius: 4px; }
+    .beat-format-toolbar .btn { padding: 0.1rem 0.4rem; line-height: 1; font-size: 0.85rem; }
+    .beat-format-toolbar .btn:disabled { opacity: 0.35; cursor: not-allowed; }
+    .beat-char-count { font-variant-numeric: tabular-nums; }
+
+    /* Tone-tag emoji rendered in the read view. The title attribute holds
+       the original bracketed form so a hover reveals the source token. */
+    .tone-tag { display: inline-block; padding: 0 0.1em; cursor: help; }
+    .tone-tag:hover { filter: brightness(1.15); }
+
     .beat-card:hover { border-color: #0dcaf0; box-shadow: 0 0 0 1px rgba(13,202,240,0.25); }
-    .beat-card:hover .beat-copy-actions { opacity: 1; }
     .beat-card.editing { border-color: #0dcaf0; box-shadow: 0 0 0 1px rgba(13,202,240,0.35); }
     .beat-card.selected { border-color: #ffc107; box-shadow: 0 0 0 1px rgba(255,193,7,0.35); }
-    .beat-copy-actions { position: absolute; top: 0.5rem; right: 0.5rem; display: flex; gap: 0.25rem; opacity: 0; transition: opacity 0.15s ease; pointer-events: none; }
-    .beat-card:hover .beat-copy-actions, .beat-card:focus-within .beat-copy-actions { pointer-events: auto; }
-    .beat-card.selected .beat-copy-actions { opacity: 1; pointer-events: auto; }
-    .beat-copy-btn { background: rgba(13,202,240,0.08); border: 1px solid rgba(13,202,240,0.3); color: #79d2e8; font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 4px; cursor: pointer; font-family: inherit; }
-    .beat-copy-btn:hover { background: rgba(13,202,240,0.2); border-color: #0dcaf0; color: #f8f9fa; }
-    .beat-copy-btn.copied { background: rgba(25,135,84,0.2); border-color: #198754; color: #75b798; }
-    .beat-select-box { position: absolute; top: 0.55rem; left: 0.5rem; width: 1rem; height: 1rem; cursor: pointer; accent-color: #ffc107; }
-    .beat-id-chip { color: #0dcaf0; font-variant-numeric: tabular-nums; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; }
-    .beat-id-chip .pos { color: #6c757d; font-weight: 400; margin-left: 0.35rem; }
 
-    /* Gap line: barely visible 1px hint by default so users know it's
-       interactive; expands on hover/focus with a glow + tooltip-style
-       editor floating above. Custom (overridden) gaps stay tinted yellow
-       so the user can see at a glance which gaps are tuned. */
-    .beat-gap { height: 6px; margin: 0.1rem 0; position: relative; cursor: pointer; transition: background-color 0.15s ease; }
-    .beat-gap::before { content: ""; position: absolute; left: 1rem; right: 1rem; top: 50%; height: 1px; background: #2a2a2a; transform: translateY(-50%); transition: background-color 0.15s ease, height 0.15s ease; }
-    .beat-gap:hover::before, .beat-gap:focus-within::before { background: #0dcaf0; height: 2px; }
-    .beat-gap.custom::before { background: rgba(255,193,7,0.5); height: 2px; }
-    .beat-gap.custom:hover::before { background: #ffc107; }
-    .beat-gap-editor { position: absolute; top: -2rem; left: 50%; transform: translateX(-50%); background: #0a0a0a; border: 1px solid #0dcaf0; border-radius: 4px; padding: 0.25rem 0.5rem; display: none; gap: 0.35rem; align-items: center; z-index: 10; font-size: 0.72rem; color: #f8f9fa; white-space: nowrap; box-shadow: 0 4px 12px rgba(0,0,0,0.35); }
-    .beat-gap:hover .beat-gap-editor, .beat-gap:focus-within .beat-gap-editor { display: flex; }
-    .beat-gap.custom .beat-gap-editor { border-color: #ffc107; }
-    .beat-gap-editor input[type="number"] { width: 72px; background: #161616; color: #f8f9fa; border: 1px solid #2a2a2a; padding: 0 0.3rem; font-size: 0.72rem; }
-    .beat-gap-editor input[type="number"]:focus { outline: none; border-color: #0dcaf0; }
-    .beat-gap-editor button { background: transparent; border: 1px solid #2a2a2a; color: #adb5bd; padding: 0 0.45rem; cursor: pointer; font-family: inherit; line-height: 1.4; }
-    .beat-gap-editor button:hover { border-color: #adb5bd; color: #f8f9fa; }
-    .beat-gap-editor button.save { border-color: #198754; color: #75b798; }
-    .beat-gap-editor button.save:hover { background: rgba(25,135,84,0.18); }
-    .beat-gap-editor button.reset { border-color: #dc3545; color: #ea868f; }
-    .beat-gap-editor button.reset:hover { background: rgba(220,53,69,0.18); }
+    /* Upper-right hover action buttons. Dim at rest (40% opacity) so they don't
+       compete with the prose; full opacity when hovering the card, focused
+       within it, or when the card is selected/editing. All icon-only with
+       Bootstrap btn-outline-* coloring; the .copied state turns the copy-text
+       button green via the .btn-outline-secondary.copied override below. */
+    .beat-actions { opacity: 0.4; transition: opacity 0.15s ease; }
+    .beat-card:hover .beat-actions,
+    .beat-card:focus-within .beat-actions,
+    .beat-card.selected .beat-actions,
+    .beat-card.editing .beat-actions { opacity: 1; }
+    .beat-actions .btn { padding: 0.15rem 0.45rem; line-height: 1; }
+    .btn-outline-secondary.copied { color: #75b798; border-color: #198754; background: rgba(25,135,84,0.15); }
+    .beat-id-chip { color: #0dcaf0; font-variant-numeric: tabular-nums; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; }
+
+    /* Chapter divider: rendered above any beat with IsChapterStart=true.
+       Reads the heading from BeatTitle. Visually announces "new division
+       of the prose" without nesting. */
+    .beat-chapter-divider { display: flex; align-items: center; gap: 0.75rem; margin: 1.5rem 0 0.6rem; }
+    .beat-chapter-line { flex: 1; height: 1px; background: linear-gradient(to right, transparent, #d9a030, transparent); }
+    .beat-chapter-label { color: #d9a030; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; white-space: nowrap; }
+
+    /* Beat-kind renderings — visual variants of .beat-prose driven by
+       Beat.Kind. All still click to edit. */
+    .beat-prose-book-title { text-align: center; padding: 1.5rem 0; }
+    .beat-prose-book-title .book-title-line { font-family: 'Outfit', sans-serif; font-size: 1.6rem; font-weight: 700; letter-spacing: 0.04em; color: #f8f9fa; }
+    .beat-prose-book-title .book-title-byline { font-size: 0.9rem; color: #adb5bd; margin-top: 0.4rem; font-style: italic; }
+    .beat-prose-dedication { text-align: center; font-style: italic; color: #ced4da; padding: 0.6rem 1.5rem; }
+    .beat-prose-quote { border-left: 3px solid #d9a030; padding: 0.5rem 1rem; margin: 0; background: rgba(217,160,48,0.04); }
+    .beat-prose-quote .quote-text { font-style: italic; color: #e6edf3; }
+    .beat-prose-quote .quote-attribution { font-size: 0.78rem; color: #adb5bd; margin-top: 0.4rem; text-align: right; }
+
+    /* Chapter index — jump-links to every IsChapterStart beat at the top
+       of the strand. Replaces the old child-strand sidebar. */
+    .chapter-index { border: 1px solid #2a2a2a; border-radius: 6px; padding: 0.6rem 0.9rem; margin-bottom: 1rem; background: #0f0f0f; }
+    .chapter-index-head { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8b949e; margin-bottom: 0.4rem; }
+    .chapter-index-list { display: flex; flex-direction: column; gap: 0.15rem; }
+    .chapter-index-link { color: #79d2e8; text-decoration: none; font-size: 0.9rem; padding: 0.15rem 0; }
+    .chapter-index-link:hover { color: #f8f9fa; text-decoration: underline; }
+    .chapter-index-link .ci-pos { color: #6c757d; font-variant-numeric: tabular-nums; margin-right: 0.5rem; font-size: 0.8rem; }
+    .beat-gap-inline { display: inline-flex; gap: 0.4rem; align-items: center; font-size: 0.72rem; color: #adb5bd; }
+    .beat-gap-inline.custom { color: #ffc107; }
+    .beat-gap-input { width: 70px; background: #161616; color: #f8f9fa; border: 1px solid #2a2a2a; padding: 0 0.3rem; font-size: 0.72rem; border-radius: 3px; }
+    .beat-gap-input:focus { outline: none; border-color: #0dcaf0; }
+    .beat-gap-inline.custom .beat-gap-input { border-color: rgba(255,193,7,0.5); }
 
     .selection-bar { position: sticky; bottom: 1rem; z-index: 6; background: rgba(15,15,15,0.95); backdrop-filter: blur(6px); border: 1px solid #ffc107; border-radius: 8px; padding: 0.6rem 0.9rem; display: flex; align-items: center; gap: 0.75rem; margin-top: 1rem; box-shadow: 0 -4px 18px rgba(0,0,0,0.35); }
     .selection-bar .count { color: #ffc107; font-weight: 600; font-size: 0.95rem; }
@@ -71,13 +111,45 @@
     .beat-card.playing { border-color: #20c997; box-shadow: 0 0 0 1px rgba(32,201,151,0.4), 0 0 18px rgba(32,201,151,0.25); }
     .beat-card.stale { border-left: 3px solid #dc3545; }
     .beat-card.recorded { border-left: 3px solid #198754; }
-    .beat-num { color: #6c757d; font-variant-numeric: tabular-nums; font-size: 0.8rem; letter-spacing: 0.05em; }
-    .beat-prose { color: #e9ecef; white-space: pre-wrap; cursor: text; line-height: 1.55; min-height: 1.5rem; }
+
+    /* Read / edit must share the exact same box: same font, line-height,
+       padding, border, background. Clicking into edit only swaps the
+       displayed content (formatted prose ↔ raw text with tags); the
+       container itself doesn't move. */
+    .beat-prose,
+    .beat-textarea {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: transparent;
+        color: #e9ecef;
+        font-family: inherit;
+        font-size: 1rem;
+        line-height: 1.55;
+        white-space: pre-wrap;
+        min-height: 1.55rem;
+        cursor: text;
+    }
     .beat-prose:hover { color: #f8f9fa; }
     .beat-prose-empty { color: #495057; font-style: italic; }
-    .beat-textarea { background: #0a0a0a; color: #f8f9fa; border: 1px solid #3a3a3a; border-radius: 4px; padding: 0.6rem; font-family: inherit; line-height: 1.55; resize: vertical; width: 100%; }
-    .beat-textarea:focus { outline: none; border-color: #0dcaf0; box-shadow: 0 0 0 2px rgba(13,202,240,0.15); }
-    .beat-actions .btn { padding: 0.15rem 0.45rem; }
+    .beat-textarea {
+        resize: none;            /* no drag handle — sizes by row count */
+        outline: none;
+        overflow: hidden;        /* row count drives height, no scrollbars */
+        box-shadow: none;
+    }
+    /* Focus indicator: the parent .beat-card.editing already turns its
+       border cyan, so a textarea-specific focus rule is redundant and
+       would risk shifting the box. Just kill the user-agent outline. */
+    .beat-textarea:focus { outline: none; }
+    /* Save/Cancel float over the upper-right of an editing beat-card so they
+       don't add a layout block under the textarea. They share screen space
+       with the upper-right hover actions but those auto-hide on edit. */
+    .beat-card.editing .beat-actions { display: none; }
+    .beat-edit-actions { position: absolute; top: 0.5rem; right: 0.75rem; display: inline-flex; gap: 0.3rem; z-index: 5; }
+    .beat-edit-actions .btn { padding: 0.15rem 0.45rem; line-height: 1; }
     .insert-bar { display: flex; align-items: center; gap: 0.5rem; opacity: 0; transition: opacity 0.15s ease; padding: 0.25rem 0; }
     .insert-bar:hover, .insert-bar:focus-within { opacity: 1; }
     .insert-bar-line { flex-grow: 1; height: 1px; background: #2a2a2a; }
@@ -217,28 +289,34 @@ else
             </div>
         }
 
-        @if (children.Count > 0)
+        @* Nested-strands list removed: a strand is now a single flat list of
+           beats, with section divisions marked by Beat.IsChapterStart.
+
+           In its place, render a chapter index — one jump-link per beat
+           with IsChapterStart=true. Click jumps to the beat's row via
+           anchor scroll. Built from the in-memory beats list so the count
+           updates immediately when the user toggles IsChapterStart. *@
+        @{
+            var chapterStops = beats
+                .Select((entry, idx) => (entry.Beat, position: idx + 1))
+                .Where(x => x.Beat.IsChapterStart)
+                .ToList();
+        }
+        @if (chapterStops.Count > 1)
         {
-            <div class="card bg-dark border-secondary mb-3">
-                <div class="card-header py-2 px-3 text-uppercase small text-muted">
-                    <i class="bi bi-diagram-3 me-1"></i>@children.Count child strand(s)
+            <div class="chapter-index">
+                <div class="chapter-index-head">
+                    <i class="bi bi-list-ol me-1"></i>@chapterStops.Count chapter(s)
                 </div>
-                <ul class="list-group list-group-flush">
-                    @foreach (var c in children)
+                <div class="chapter-index-list">
+                    @foreach (var stop in chapterStops)
                     {
-                        <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center border-secondary">
-                            <a href="@($"/strand/{c.Slug}")" class="text-info text-decoration-none flex-grow-1">
-                                <strong>@c.Title</strong>
-                                <span class="text-muted ms-2 small">@c.Kind</span>
-                                @if (!string.IsNullOrEmpty(c.Synopsis))
-                                {
-                                    <span class="text-muted small ms-2">— @(c.Synopsis.Length > 80 ? c.Synopsis[..80] + "…" : c.Synopsis)</span>
-                                }
-                            </a>
-                            <span class="badge bg-@StatusColor(c.Status) text-uppercase">@StatusLabel(c.Status)</span>
-                        </li>
+                        var label = string.IsNullOrEmpty(stop.Beat.BeatTitle) ? "(untitled chapter)" : stop.Beat.BeatTitle;
+                        <a href="@($"#beat-{stop.Beat.Id:N}")" class="chapter-index-link">
+                            <span class="ci-pos">#@stop.position</span>@label
+                        </a>
                     }
-                </ul>
+                </div>
             </div>
         }
 
@@ -267,7 +345,7 @@ else
                     <div class="insert-bar-line"></div>
                 </div>
 
-                @{ int position = 0; Guid? prevBeatIdForGap = null; }
+                @{ int position = 0; }
                 @foreach (var entry in beats)
                 {
                     position++;
@@ -281,146 +359,209 @@ else
                     else if (b.Stale) rowClass += " stale";
                     else if (!string.IsNullOrEmpty(b.AudioPath)) rowClass += " recorded";
                     var rowPosition = position;
+                    var isLastBeat = position == beats.Count;
+                    var nextBeat = isLastBeat ? null : beats[position].Beat;
+                    var autoGapMs = ComputeAutoGapMs(b, nextBeat);
+                    var hasCustomGap = b.GapAfterMs.HasValue;
+                    var displayGapMs = b.GapAfterMs ?? autoGapMs;
+                    var gapEditorId = $"gap-input-{bid:N}";
 
-                    @if (prevBeatIdForGap.HasValue)
+                    @if (b.IsChapterStart)
                     {
-                        var prev = prevBeatIdForGap.Value;
-                        var key = (prev, bid);
-                        var hasCustom = customGaps.TryGetValue(key, out var existingGap);
-                        var autoMs = ComputeAutoGapMs(beats[position - 2].Beat, b);
-                        var displayMs = hasCustom ? existingGap!.DurationMs : autoMs;
-                        var gapEditorId = $"gap-editor-{prev:N}-{bid:N}";
-                        <div class="beat-gap @(hasCustom ? "custom" : "")" tabindex="0" title="@(hasCustom ? $"Custom gap: {displayMs}ms (auto would be {autoMs}ms)" : $"Auto gap: {autoMs}ms — hover to override")">
-                            <div class="beat-gap-editor">
-                                <span class="text-muted">@(hasCustom ? "Gap #" + existingGap!.Number : "auto")</span>
-                                <input type="number" min="0" max="6000" step="50"
-                                       value="@displayMs"
-                                       id="@gapEditorId"
-                                       @onkeydown="@(e => OnGapEditorKeydown(e, prev, bid, gapEditorId))" />
-                                <span class="text-muted">ms</span>
-                                <button class="save" title="Save (Enter)" @onclick="@(() => SaveGapFromInputAsync(prev, bid, gapEditorId))">✓</button>
-                                @if (hasCustom)
-                                {
-                                    <button class="reset" title="Reset to auto" @onclick="@(() => ResetGapAsync(prev, bid))">↺</button>
-                                }
-                            </div>
+                        <div class="beat-chapter-divider" data-cy="chapter-divider">
+                            <span class="beat-chapter-line"></span>
+                            <span class="beat-chapter-label">@(string.IsNullOrEmpty(b.BeatTitle) ? "New section" : b.BeatTitle)</span>
+                            <span class="beat-chapter-line"></span>
                         </div>
                     }
 
-                    <div class="@rowClass" data-cy="beat-row" data-beat-id="@bid">
-                        <input type="checkbox" class="beat-select-box"
-                               checked="@isSelected"
-                               title="Select beat for play / batch actions"
-                               @onchange="@(e => ToggleBeatSelection(bid, (bool)(e.Value ?? false)))" />
-                        <div class="beat-copy-actions">
-                            <button class="beat-copy-btn"
-                                    title="Edit beat text"
-                                    @onclick="() => StartBeatEdit(b)"
-                                    @onclick:stopPropagation
-                                    data-cy="beat-edit">
-                                <i class="bi bi-pencil"></i> edit
-                            </button>
-                            <button class="beat-copy-btn @(copiedTextBeatId == bid ? "copied" : "")"
-                                    title="Copy beat text"
-                                    @onclick="() => CopyBeatTextAsync(bid)"
-                                    @onclick:stopPropagation
-                                    data-cy="beat-copy-text">
-                                <i class="bi bi-clipboard"></i>
-                                @(copiedTextBeatId == bid ? " copied" : " text")
-                            </button>
-                            <button class="beat-copy-btn @(copiedIdBeatId == bid ? "copied" : "")"
-                                    title="Copy beat reference (Beat #N + guid + strand) for CLI"
-                                    @onclick="() => CopyBeatIdAsync(bid)"
-                                    @onclick:stopPropagation
-                                    data-cy="beat-copy-id">
-                                <i class="bi bi-hash"></i>
-                                @(copiedIdBeatId == bid ? " copied" : " id")
-                            </button>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center mb-1">
-                            <div class="d-flex align-items-center gap-2">
-                                <span class="beat-id-chip" data-cy="beat-id" title="@($"Beat #{b.Number} — guid {bid}")">Beat #@b.Number</span>
-                                @if (b.Stale)
-                                {
-                                    <span class="badge bg-danger strand-meta-chip" title="Prose edited past the audio. Re-record to repair.">stale</span>
-                                }
-                                else if (!string.IsNullOrEmpty(b.AudioPath))
-                                {
-                                    <span class="badge bg-success strand-meta-chip">
-                                        <i class="bi bi-volume-up-fill me-1"></i>@(b.DurationSec.HasValue ? FormatDuration(b.DurationSec.Value) : "—")
-                                    </span>
-                                }
-                                else
-                                {
-                                    <span class="badge bg-secondary strand-meta-chip">unrecorded</span>
-                                }
-                                @if (!string.IsNullOrEmpty(b.Text))
-                                {
-                                    <span class="text-muted small">@b.Text.Length chars</span>
-                                }
+                    <div class="@rowClass" id="@($"beat-{bid:N}")" data-cy="beat-row" data-beat-id="@bid">
+                        @* ── Row 1: checkbox · Beat # + chips · format toolbar · right-aligned action buttons ── *@
+                        <div class="beat-row-1 d-flex align-items-center gap-2 mb-2">
+                            <input type="checkbox" class="beat-select-box-inline"
+                                   checked="@isSelected"
+                                   title="Select beat for play / batch actions"
+                                   @onchange="@(e => ToggleBeatSelection(bid, (bool)(e.Value ?? false)))" />
+                            <span class="beat-id-chip" data-cy="beat-id" title="@($"Position {rowPosition} in strand — Beat guid {bid}")">Beat #@rowPosition.ToString("D3")</span>
+                            @if (b.Stale)
+                            {
+                                <span class="badge bg-danger strand-meta-chip" title="Prose edited past the audio. Re-record to repair.">stale</span>
+                            }
+                            else if (!string.IsNullOrEmpty(b.AudioPath))
+                            {
+                                <span class="badge bg-success strand-meta-chip">
+                                    <i class="bi bi-volume-up-fill me-1"></i>@(b.DurationSec.HasValue ? FormatDuration(b.DurationSec.Value) : "—")
+                                </span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary strand-meta-chip">unrecorded</span>
+                            }
+                            @if (!string.IsNullOrEmpty(b.Text))
+                            {
+                                <span class="text-muted small beat-char-count">@b.Text.Length chars</span>
+                            }
+
+                            @* Format toolbar — only does anything while editing. The
+                               wrap helper inserts the marker either around the
+                               current textarea selection or at the caret. Buttons
+                               are disabled until the user clicks into edit mode. *@
+                            <div class="beat-format-toolbar" role="toolbar" aria-label="Inline formatting">
+                                <button class="btn btn-sm btn-outline-light"
+                                        title="Bold (**text**) — wraps current selection in the textarea"
+                                        @onclick='() => WrapFormatAsync(bid, "**")'
+                                        @onclick:stopPropagation
+                                        disabled="@(!isEditing)"
+                                        data-cy="beat-fmt-bold">
+                                    <i class="bi bi-type-bold"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-light"
+                                        title="Italic (*text*)"
+                                        @onclick='() => WrapFormatAsync(bid, "*")'
+                                        @onclick:stopPropagation
+                                        disabled="@(!isEditing)"
+                                        data-cy="beat-fmt-italic">
+                                    <i class="bi bi-type-italic"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-light"
+                                        title="Underline (__text__)"
+                                        @onclick='() => WrapFormatAsync(bid, "__")'
+                                        @onclick:stopPropagation
+                                        disabled="@(!isEditing)"
+                                        data-cy="beat-fmt-underline">
+                                    <i class="bi bi-type-underline"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-light"
+                                        title="Strikethrough (~~text~~)"
+                                        @onclick='() => WrapFormatAsync(bid, "~~")'
+                                        @onclick:stopPropagation
+                                        disabled="@(!isEditing)"
+                                        data-cy="beat-fmt-strike">
+                                    <i class="bi bi-type-strikethrough"></i>
+                                </button>
                             </div>
-                            <div class="beat-actions d-flex align-items-center gap-1">
-                                <button class="btn btn-sm btn-outline-info" title="Re-record this beat"
-                                        @onclick="() => RerecordOneAsync(bid)" disabled="@working"
+
+                            @* Right-aligned hover actions. Fade in on .beat-card:hover (CSS).
+                               All icon-only with descriptive tooltips. Each wired to its
+                               handler with @onclick:stopPropagation so clicks don't bubble
+                               up and start an inline edit on the prose body. *@
+                            <div class="beat-actions d-flex align-items-center gap-1 ms-auto">
+                                <button class="btn btn-sm btn-outline-secondary @(copiedTextBeatId == bid ? "copied" : "")"
+                                        title="@(copiedTextBeatId == bid ? "Copied!" : "Copy beat text to clipboard")"
+                                        @onclick="() => CopyBeatTextAsync(bid)"
+                                        @onclick:stopPropagation
+                                        data-cy="beat-copy-text">
+                                    <i class="bi @(copiedTextBeatId == bid ? "bi-check-lg" : "bi-clipboard")"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-primary"
+                                        title="Ask the LLM to rewrite this beat"
+                                        @onclick="() => OpenLlmSheet(b)"
+                                        @onclick:stopPropagation
+                                        disabled="@working"
+                                        data-cy="beat-llm">
+                                    <i class="bi bi-stars"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-info"
+                                        title="Re-record this beat's audio with ElevenLabs"
+                                        @onclick="() => RerecordOneAsync(bid)"
+                                        @onclick:stopPropagation
+                                        disabled="@working"
                                         data-cy="beat-rerecord">
                                     <i class="bi bi-mic"></i>
                                 </button>
-                                <button class="btn btn-sm btn-outline-secondary" title="Split this beat at the nearest sentence boundary"
-                                        @onclick="() => SplitBeatAsync(bid)" disabled="@(working || (b.Text?.Length ?? 0) < 40)"
-                                        data-cy="beat-split">
-                                    <i class="bi bi-scissors"></i>
-                                </button>
-                                <button class="btn btn-sm btn-outline-secondary" title="Merge this beat into the previous one"
-                                        @onclick="() => JoinBeatAsync(bid)" disabled="@(working || rowPosition == 1)"
-                                        data-cy="beat-join">
-                                    <i class="bi bi-arrow-up-square"></i>
-                                </button>
-                                <button class="btn btn-sm btn-outline-danger" title="Delete this beat"
-                                        @onclick="() => RequestDeleteAsync(bid)" disabled="@working"
+                                <button class="btn btn-sm btn-outline-danger"
+                                        title="Delete this beat (confirmation prompt)"
+                                        @onclick="() => RequestDeleteAsync(bid)"
+                                        @onclick:stopPropagation
+                                        disabled="@working"
                                         data-cy="beat-delete">
                                     <i class="bi bi-trash"></i>
                                 </button>
                             </div>
                         </div>
 
-                        @if (isEditing)
-                        {
-                            <textarea class="beat-textarea" id="@($"beat-{bid:N}-edit")"
-                                      rows="@Math.Max(3, (editingText?.Length ?? 0) / 90 + 2)"
-                                      @bind="editingText"
-                                      @bind:event="oninput"
-                                      @onkeydown="@(e => OnEditorKeydown(e, bid))"></textarea>
-                            <div class="d-flex gap-2 mt-2 align-items-center">
-                                <button class="btn btn-sm btn-success" @onclick="() => SaveBeatEditAsync(bid)" disabled="@savingEdit" data-cy="beat-save">
-                                    @if (savingEdit) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                                    else { <i class="bi bi-check-lg me-1"></i> }
-                                    Save
-                                </button>
-                                <button class="btn btn-sm btn-outline-secondary" @onclick="CancelBeatEdit">
-                                    <i class="bi bi-x-lg me-1"></i>Cancel
-                                </button>
-                                <span class="text-muted small ms-auto">⌘/Ctrl+Enter to save · Esc to cancel</span>
-                            </div>
-                        }
-                        else
-                        {
-                            @if (string.IsNullOrEmpty(b.Text))
+                        @* ── Row 2: readonly / textarea toggle. Same box either way.
+                           Edit mode reveals the raw markers ([WHISPERING], **bold**);
+                           read mode renders them as emoji + HTML formatting. ── *@
+                        <div class="beat-row-2">
+                            @if (isEditing)
                             {
-                                <div class="beat-prose beat-prose-empty" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">
-                                    (empty beat — click to write)
+                                <textarea class="beat-textarea" id="@($"beat-{bid:N}-edit")"
+                                          rows="@Math.Max(2, (editingText?.Length ?? 0) / 80 + 2)"
+                                          @bind="editingText"
+                                          @bind:event="oninput"
+                                          @onkeydown="@(e => OnEditorKeydown(e, bid))"></textarea>
+                                <div class="beat-edit-actions" title="⌘/Ctrl+Enter to save · Esc to cancel">
+                                    <button class="btn btn-sm btn-success"
+                                            @onclick="() => SaveBeatEditAsync(bid)"
+                                            disabled="@savingEdit"
+                                            title="Save (⌘/Ctrl+Enter)"
+                                            data-cy="beat-save">
+                                        @if (savingEdit) { <span class="spinner-border spinner-border-sm"></span> }
+                                        else { <i class="bi bi-check-lg"></i> }
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary"
+                                            @onclick="CancelBeatEdit"
+                                            title="Cancel (Esc)"
+                                            data-cy="beat-cancel">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
                                 </div>
                             }
                             else
                             {
-                                <div class="beat-prose" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">@b.Text</div>
+                                @if (string.IsNullOrEmpty(b.Text))
+                                {
+                                    <div class="beat-prose beat-prose-empty" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">
+                                        (empty beat — click to write)
+                                    </div>
+                                }
+                                else
+                                {
+                                    @* Render the beat body per its Kind. Beat.Text passes through
+                                       BeatFormatter so **bold** / *italic* / __underline__ / ~~strike~~
+                                       and ElevenLabs tone tags ([WHISPERING] → 🤫 etc.) render in
+                                       the read view. The textarea in edit mode shows raw markers. *@
+                                    var renderedHtml = (MarkupString)BeatFormatter.RenderInline(b.Text);
+                                    switch ((b.Kind ?? "prose").ToLowerInvariant())
+                                    {
+                                        case "book-title":
+                                            <div class="beat-prose beat-prose-book-title" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">
+                                                <div class="book-title-line">@renderedHtml</div>
+                                                @if (!string.IsNullOrEmpty(b.BeatTitle))
+                                                {
+                                                    <div class="book-title-byline">@b.BeatTitle</div>
+                                                }
+                                            </div>
+                                            break;
+                                        case "dedication":
+                                            <div class="beat-prose beat-prose-dedication" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">@renderedHtml</div>
+                                            break;
+                                        case "quote":
+                                            <blockquote class="beat-prose beat-prose-quote" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">
+                                                <div class="quote-text">@renderedHtml</div>
+                                                @if (!string.IsNullOrEmpty(b.BeatTitle))
+                                                {
+                                                    <footer class="quote-attribution">— @b.BeatTitle</footer>
+                                                }
+                                            </blockquote>
+                                            break;
+                                        default:
+                                            <div class="beat-prose" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">@renderedHtml</div>
+                                            break;
+                                    }
+                                }
                             }
-                        }
+                        </div>
 
-                        @if (!string.IsNullOrEmpty(b.AudioPath))
-                        {
-                            <audio controls preload="none" class="beat-audio"
-                                   src="@($"/api/strands/{strand.Id}/beat/{b.Id}/audio")"></audio>
-                        }
+                        @* ── Row 3: footer band. Audio (if recorded), meta chips,
+                           the meta-panel (when open) and the gap-after editor. ── *@
+                        <div class="beat-row-3">
+                            @if (!string.IsNullOrEmpty(b.AudioPath))
+                            {
+                                <audio controls preload="none" class="beat-audio"
+                                       src="@($"/api/strands/{strand.Id}/beat/{b.Id}/audio")"></audio>
+                            }
 
                         <div class="beat-meta-chips">
                             @{
@@ -520,6 +661,25 @@ else
                                             <option value="interstitial">interstitial</option>
                                         </select>
                                     </div>
+                                    <div class="col-md-4">
+                                        <label>Beat kind</label>
+                                        <select class="form-select form-select-sm" @bind="metaForm.Kind">
+                                            <option value="prose">prose (default)</option>
+                                            <option value="book-title">book-title (Text=title, BeatTitle=author)</option>
+                                            <option value="dedication">dedication (centered italic)</option>
+                                            <option value="quote">quote (Text=quote, BeatTitle=attribution)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="@($"beat-{bid:N}-chapstart")"
+                                                   @bind="metaForm.IsChapterStart" />
+                                            <label class="form-check-label" for="@($"beat-{bid:N}-chapstart")">
+                                                This beat starts a new chapter / section
+                                                <span class="text-muted small ms-1">— uses Beat title above as the heading; renders a divider. Orthogonal to Beat kind (a quote that opens a chapter is an epigraph).</span>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="d-flex gap-2 mt-2 align-items-center">
                                     <button class="btn btn-sm btn-success" @onclick="() => SaveMetaAsync(bid)" data-cy="beat-meta-save">
@@ -530,6 +690,26 @@ else
                                 </div>
                             </div>
                         }
+
+                            @* Gap-after editor — only shown when there's a next beat. *@
+                            @if (!isLastBeat)
+                            {
+                                <div class="beat-gap-inline @(hasCustomGap ? "custom" : "")" title="@(hasCustomGap ? $"Custom gap: {displayGapMs}ms (auto would be {autoGapMs}ms)" : $"Auto gap: {autoGapMs}ms — type to override")">
+                                    <span class="text-muted small">gap after</span>
+                                    <input type="number" min="0" max="6000" step="50"
+                                           value="@displayGapMs"
+                                           id="@gapEditorId"
+                                           class="beat-gap-input"
+                                           @onkeydown="@(e => OnGapEditorKeydown(e, bid, gapEditorId))" />
+                                    <span class="text-muted small">ms @(hasCustomGap ? "(custom)" : "(auto)")</span>
+                                    <button class="btn btn-sm btn-link p-0 text-info" title="Save (Enter)" @onclick="@(() => SaveGapAfterFromInputAsync(bid, gapEditorId))">✓</button>
+                                    @if (hasCustomGap)
+                                    {
+                                        <button class="btn btn-sm btn-link p-0 text-warning" title="Reset to auto" @onclick="@(() => ResetGapAfterAsync(bid))">↺</button>
+                                    }
+                                </div>
+                            }
+                        </div> @* /beat-row-3 *@
                     </div>
 
                     <div class="insert-bar">
@@ -539,8 +719,6 @@ else
                         </button>
                         <div class="insert-bar-line"></div>
                     </div>
-
-                    prevBeatIdForGap = bid;
                 } @* end foreach *@
 
                 @if (selectedBeats.Count > 0)
@@ -596,6 +774,86 @@ else
     </div>
 }
 
+@* ── LLM bottom sheet ───────────────────────────────────────────────────
+   Pops up from the bottom of the page when the user clicks the ✨ button
+   on any beat. Free-text instruction; previews the LLM's proposed rewrite;
+   user picks Apply (replaces beat.Text via Workbench.UpdateBeatTextAsync)
+   or Discard. *@
+@if (llmSheetBeat != null)
+{
+    <div class="llm-sheet-backdrop" @onclick="CloseLlmSheet"></div>
+    <div class="llm-sheet" @onclick:stopPropagation>
+        <div class="llm-sheet-header d-flex justify-content-between align-items-center gap-2">
+            <div class="d-flex align-items-center gap-2 flex-grow-1" style="min-width:0;">
+                <i class="bi bi-stars text-primary"></i>
+                <strong class="flex-shrink-0">Beat #@llmSheetBeatPosition</strong>
+                <code class="llm-sheet-ref text-truncate" title="strand-guid.beat-guid — click the id button to copy">@llmSheetRefText</code>
+                <button class="beat-copy-btn @(llmSheetIdCopied ? "copied" : "")"
+                        title="Copy strand-guid.beat-guid for CLI (--% --beat @llmSheetRefText)"
+                        @onclick="CopyLlmSheetRefAsync">
+                    <i class="bi bi-hash"></i>
+                    @(llmSheetIdCopied ? " copied" : " id")
+                </button>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="CloseLlmSheet">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <div class="llm-sheet-body">
+            <div class="text-muted small mb-1">Current beat text:</div>
+            <div class="llm-sheet-beat-text">@llmSheetBeat.Text</div>
+
+            <div class="text-muted small mt-3 mb-1">What should the LLM do with this beat?</div>
+            <textarea class="form-control bg-black text-light border-secondary"
+                      rows="3"
+                      placeholder="e.g. tighten this — drop the second sentence, keep the menace"
+                      @bind="llmSheetInstruction"
+                      @bind:event="oninput"></textarea>
+
+            <div class="d-flex gap-2 mt-2 align-items-center">
+                <button class="btn btn-sm btn-primary" @onclick="RunLlmSheetAsync"
+                        disabled="@(llmSheetRunning || string.IsNullOrWhiteSpace(llmSheetInstruction))">
+                    @if (llmSheetRunning) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                    else { <i class="bi bi-stars me-1"></i> }
+                    Run
+                </button>
+                <span class="text-muted small">⌘/Ctrl+Enter to run · Esc to close</span>
+            </div>
+
+            @if (!string.IsNullOrEmpty(llmSheetProposal))
+            {
+                <div class="text-muted small mt-3 mb-1">Proposed rewrite:</div>
+                <div class="llm-sheet-proposal">@llmSheetProposal</div>
+                <div class="d-flex gap-2 mt-2 align-items-center">
+                    <button class="btn btn-sm btn-success" @onclick="ApplyLlmSheetAsync" disabled="@llmSheetRunning">
+                        <i class="bi bi-check-lg me-1"></i>Apply
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="DiscardLlmSheetProposal" disabled="@llmSheetRunning">
+                        <i class="bi bi-x-lg me-1"></i>Discard
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+<style>
+    .llm-sheet-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 1080; }
+    .llm-sheet {
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 1090;
+        background: #0f0f0f; border-top: 1px solid #2a2a2a;
+        box-shadow: 0 -8px 24px rgba(0,0,0,0.5);
+        max-height: 70vh; overflow-y: auto;
+        animation: llm-sheet-rise 0.18s ease-out;
+    }
+    @@keyframes llm-sheet-rise { from { transform: translateY(100%); } to { transform: translateY(0); } }
+    .llm-sheet-header { padding: 0.75rem 1rem; border-bottom: 1px solid #2a2a2a; color: #f8f9fa; }
+    .llm-sheet-ref { font-size: 0.72rem; color: #79d2e8; background: rgba(13,202,240,0.06); border: 1px solid rgba(13,202,240,0.25); padding: 0.15rem 0.4rem; border-radius: 3px; }
+    .llm-sheet-body { padding: 0.75rem 1rem 1.25rem; max-width: 920px; margin: 0 auto; }
+    .llm-sheet-beat-text { background: #161616; border: 1px solid #2a2a2a; border-radius: 4px; padding: 0.6rem 0.8rem; color: #ced4da; font-size: 0.88rem; white-space: pre-wrap; }
+    .llm-sheet-proposal { background: rgba(13,202,240,0.06); border: 1px solid rgba(13,202,240,0.35); border-radius: 4px; padding: 0.6rem 0.8rem; color: #e6edf3; font-size: 0.88rem; white-space: pre-wrap; }
+</style>
+
 @code {
     [Parameter] public string IdOrSlug { get; set; } = "";
 
@@ -627,25 +885,32 @@ else
     private System.Threading.Timer? poll;
     private string? lastIdOrSlug;
 
-    /// <summary>Per-beat "just copied to clipboard" flash state. Single guid so
-    /// only one button shows "copied" at a time; auto-clears after a short
-    /// delay so the chip relaxes back to its idle label.</summary>
+    /// <summary>Per-beat "just copied to clipboard" flash state. The copy-text
+    /// button toggles to a check icon for ~1.4s after a successful copy.</summary>
     private Guid? copiedTextBeatId;
-    private Guid? copiedIdBeatId;
 
     /// <summary>Multi-select set. Beats appearing here render with the
     /// .selected class and surface a "Play selected" action bar that
     /// streams them in order with the calculated inter-beat silence.</summary>
     private HashSet<Guid> selectedBeats = new();
 
-    /// <summary>User-customised Gap rows for this strand's adjacent pairs.
-    /// Keyed by (AboveBeatId, BelowBeatId). Loaded alongside beats; absence
-    /// means the silence between that pair uses the auto-computed default.</summary>
-    private Dictionary<(Guid, Guid), StreetSamurai.Core.Data.Entities.Gap> customGaps = new();
-
     /// <summary>True while a multi-beat play sequence is running. Swaps
     /// the selection bar's Play button for a Stop button.</summary>
     private bool isPlayingSequence;
+
+    // ── LLM bottom-sheet state ───────────────────────────────────────────
+    /// <summary>When non-null, the bottom sheet is open with this beat as
+    /// context. Cleared on close.</summary>
+    private BeatEntity? llmSheetBeat;
+    private int llmSheetBeatPosition;
+    private string llmSheetInstruction = "";
+    private string llmSheetProposal = "";
+    private bool llmSheetRunning;
+    private bool llmSheetIdCopied;
+    /// <summary>Stable strand.beat reference printed in the sheet header
+    /// and used as the CLI handle ("strand-guid.beat-guid"). Built when
+    /// the sheet opens so it's always populated alongside the beat.</summary>
+    private string llmSheetRefText = "";
 
     private string defaultVoiceId = "";
     private List<TtsVoice> voices = new();
@@ -703,7 +968,6 @@ else
         {
             if (string.IsNullOrEmpty(strand.VoiceId)) strand.VoiceId = defaultVoiceId;
             beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
-            await ReloadGapsAsync(db);
 
             // Walk ancestors (root first) and load direct children.
             ancestors = await LoadAncestorsAsync(db, strand.ParentStrandId);
@@ -801,14 +1065,16 @@ else
         if (beat == null) return;
         metaForm = new MetaForm
         {
-            BeatTitle     = beat.BeatTitle ?? "",
-            Synopsis      = beat.Synopsis ?? "",
-            EmotionalTone = beat.EmotionalTone ?? "",
-            PaceHint      = beat.PaceHint ?? "",
-            FacetTag      = beat.FacetTag ?? "",
-            StructureRole = beat.StructureRole ?? "",
-            Act           = beat.Act,
-            SceneType     = string.IsNullOrEmpty(beat.SceneType) ? "scene" : beat.SceneType,
+            BeatTitle      = beat.BeatTitle ?? "",
+            Synopsis       = beat.Synopsis ?? "",
+            EmotionalTone  = beat.EmotionalTone ?? "",
+            PaceHint       = beat.PaceHint ?? "",
+            FacetTag       = beat.FacetTag ?? "",
+            StructureRole  = beat.StructureRole ?? "",
+            Act            = beat.Act,
+            SceneType      = string.IsNullOrEmpty(beat.SceneType) ? "scene" : beat.SceneType,
+            IsChapterStart = beat.IsChapterStart,
+            Kind           = string.IsNullOrEmpty(beat.Kind) ? "prose" : beat.Kind,
         };
         metaOpenBeatId = beatId;
     }
@@ -823,14 +1089,16 @@ else
         try
         {
             await Workbench.UpdateBeatMetadataAsync(beatId, new StrandWorkbenchService.BeatMetadataUpdate(
-                BeatTitle:     metaForm.BeatTitle,
-                Synopsis:      metaForm.Synopsis,
-                EmotionalTone: metaForm.EmotionalTone,
-                PaceHint:      metaForm.PaceHint,
-                FacetTag:      metaForm.FacetTag,
-                StructureRole: metaForm.StructureRole,
-                Act:           metaForm.Act,
-                SceneType:     metaForm.SceneType));
+                BeatTitle:      metaForm.BeatTitle,
+                Synopsis:       metaForm.Synopsis,
+                EmotionalTone:  metaForm.EmotionalTone,
+                PaceHint:       metaForm.PaceHint,
+                FacetTag:       metaForm.FacetTag,
+                StructureRole:  metaForm.StructureRole,
+                Act:            metaForm.Act,
+                SceneType:      metaForm.SceneType,
+                IsChapterStart: metaForm.IsChapterStart,
+                Kind:           metaForm.Kind));
             await ReloadBeatsAsync();
             metaOpenBeatId = null;
             Toast.Success("BEAT-META", "Beat details saved. Re-record this beat to apply the new tone.");
@@ -852,6 +1120,8 @@ else
         public string StructureRole { get; set; } = "";
         public int Act { get; set; }
         public string SceneType { get; set; } = "scene";
+        public bool IsChapterStart { get; set; }
+        public string Kind { get; set; } = "prose";
     }
 
     private async Task OnEditorKeydown(KeyboardEventArgs e, Guid beatId)
@@ -904,61 +1174,13 @@ else
         finally { working = false; await InvokeAsync(StateHasChanged); }
     }
 
-    private async Task SplitBeatAsync(Guid beatId)
-    {
-        if (strand == null || working) return;
-        working = true;
-        StateHasChanged();
-        try
-        {
-            // If the user is editing this beat, split at the textarea
-            // cursor position rather than the auto-midpoint. That's the
-            // "I put my I-beam somewhere and click Split" workflow.
-            int cursor = -1;
-            if (editingBeatId == beatId)
-            {
-                try
-                {
-                    cursor = await JS.InvokeAsync<int>("streetsamurai.getCursorPosition", $"beat-{beatId:N}-edit");
-                }
-                catch { /* fall back to midpoint */ }
-            }
+    // Split / Join were removed from the writer surface — the user does that
+    // manipulation manually (paste a new beat in, delete the old one). The
+    // SplitBeatAsync / JoinBeatWithPreviousAsync methods are still on the
+    // workbench service and the StrandTools MCP layer for programmatic
+    // callers (LLM clients, CLI scripts). See Strand.razor history before
+    // 2026-05-23 for the UI wrappers if they need to come back.
 
-            if (cursor > 0)
-            {
-                // Save any in-flight edit first so the split runs against
-                // the actual current prose, not the pre-edit text.
-                if (editingBeatId == beatId && !string.IsNullOrEmpty(editingText))
-                    await Workbench.UpdateBeatTextAsync(beatId, editingText);
-                await Workbench.SplitBeatAtAsync(strand.Id, beatId, cursor);
-                CancelBeatEdit();
-                Toast.Success("SPLIT", $"Beat split at cursor (position {cursor}). Both halves need re-record.");
-            }
-            else
-            {
-                await Workbench.SplitBeatAsync(strand.Id, beatId);
-                Toast.Success("SPLIT", "Beat split at midpoint sentence. Both halves need re-record.");
-            }
-            await ReloadBeatsAsync();
-        }
-        catch (Exception ex) { Toast.Error("SPLIT-FAIL", ex.Message); }
-        finally { working = false; await InvokeAsync(StateHasChanged); }
-    }
-
-    private async Task JoinBeatAsync(Guid beatId)
-    {
-        if (strand == null || working) return;
-        working = true;
-        StateHasChanged();
-        try
-        {
-            await Workbench.JoinBeatWithPreviousAsync(strand.Id, beatId);
-            await ReloadBeatsAsync();
-            Toast.Success("JOIN", "Beat merged into the previous one.");
-        }
-        catch (Exception ex) { Toast.Error("JOIN-FAIL", ex.Message); }
-        finally { working = false; await InvokeAsync(StateHasChanged); }
-    }
 
     private void RequestDeleteAsync(Guid beatId)
     {
@@ -1087,32 +1309,9 @@ else
         catch (Exception ex) { Toast.Error("COPY-FAIL", ex.Message); }
     }
 
-    /// <summary>Copy this beat's stable reference to the clipboard. Format:
-    /// <code>Strand "2F" (2bc9ee96-…); Beat #134 (019e4d4a-…)</code>
-    /// The Number is the durable handle a CLI assistant looks up; the slug
-    /// gives the human a hint; the Guid is the machine-canonical id.</summary>
-    private async Task CopyBeatIdAsync(Guid beatId)
-    {
-        var entry = beats.FirstOrDefault(o => o.Beat.Id == beatId);
-        if (entry == null || strand == null) return;
-        var reference = $"Strand \"{strand.Title}\" ({strand.Id}); Beat #{entry.Beat.Number} ({beatId})";
-        try
-        {
-            await JS.InvokeVoidAsync("navigator.clipboard.writeText", reference);
-            copiedIdBeatId = beatId;
-            StateHasChanged();
-            _ = Task.Run(async () =>
-            {
-                await Task.Delay(1400);
-                if (copiedIdBeatId == beatId)
-                {
-                    copiedIdBeatId = null;
-                    await InvokeAsync(StateHasChanged);
-                }
-            });
-        }
-        catch (Exception ex) { Toast.Error("COPY-FAIL", ex.Message); }
-    }
+    // The standalone "copy id" button on the beat-actions row was removed
+    // in the 2026-05-23 redesign. The strand-guid.beat-guid handle is now
+    // copied from the LLM bottom sheet's header via CopyLlmSheetRefAsync.
 
     // ── Multi-select + Play selected ─────────────────────────────────────
 
@@ -1162,9 +1361,7 @@ else
             if (i < withAudio.Count - 1)
             {
                 var next = withAudio[i + 1].Beat;
-                var pauseMs = customGaps.TryGetValue((b.Id, next.Id), out var gap)
-                    ? gap.DurationMs
-                    : ComputeAutoGapMs(b, next);
+                var pauseMs = b.GapAfterMs ?? ComputeAutoGapMs(b, next);
                 items[^1] = new { audioUrl = $"/api/strands/{strand.Id}/beat/{b.Id}/audio", pauseMs };
             }
         }
@@ -1193,48 +1390,158 @@ else
         catch (Exception ex) { Toast.Error("STOP-FAIL", ex.Message); }
     }
 
-    // ── Gap editor ────────────────────────────────────────────────────────
+    // ── Gap-after-beat editor ─────────────────────────────────────────────
+    // Each beat owns the silence that follows it (Beat.GapAfterMs). Null =
+    // use the computed default; a value (incl. 0) is an explicit override.
 
-    /// <summary>Compute the same default ms the server-side silence engine
-    /// would use for this beat pair (mirrors
-    /// <see cref="StrandWorkbenchService.ComputeTrailingSilenceMs"/>) so the
-    /// gap-editor's placeholder value matches what would actually render.</summary>
-    private int ComputeAutoGapMs(BeatEntity above, BeatEntity below)
+    /// <summary>Auto-computed ms the server-side engine would use as the gap
+    /// after <paramref name="above"/>, before <paramref name="below"/>.</summary>
+    private int ComputeAutoGapMs(BeatEntity above, BeatEntity? below)
         => StrandWorkbenchService.ComputeTrailingSilenceMs(above, below, Settings);
 
-    private void OnGapEditorKeydown(KeyboardEventArgs e, Guid above, Guid below, string editorId)
+    private void OnGapEditorKeydown(KeyboardEventArgs e, Guid beatId, string editorId)
     {
-        if (e.Key == "Enter") { _ = SaveGapFromInputAsync(above, below, editorId); }
-        else if (e.Key == "Escape") { /* let the hover close on blur */ }
+        if (e.Key == "Enter") { _ = SaveGapAfterFromInputAsync(beatId, editorId); }
     }
 
-    private async Task SaveGapFromInputAsync(Guid above, Guid below, string editorId)
+    private async Task SaveGapAfterFromInputAsync(Guid beatId, string editorId)
     {
         try
         {
-            // Read the current input value via JS — the @bind doesn't fire on
-            // every keystroke and we want what's on screen, not the last-saved value.
             var raw = await JS.InvokeAsync<string>("streetsamurai.readInput", editorId);
             if (!int.TryParse(raw, out var ms)) return;
             ms = Math.Clamp(ms, 0, 6000);
-            var gap = await Workbench.UpsertGapAsync(above, below, ms);
-            customGaps[(above, below)] = gap;
-            Toast.Success("GAP", $"Gap #{gap.Number} → {gap.DurationMs} ms.");
+            await Workbench.SetGapAfterAsync(beatId, ms);
+            // Reflect in the in-memory list so the chip updates without a full reload.
+            var entry = beats.FirstOrDefault(x => x.Beat.Id == beatId);
+            if (entry != null) entry.Beat.GapAfterMs = ms;
+            Toast.Success("GAP", $"Gap after this beat → {ms} ms.");
             StateHasChanged();
         }
         catch (Exception ex) { Toast.Error("GAP-FAIL", ex.Message); }
     }
 
-    private async Task ResetGapAsync(Guid above, Guid below)
+    /// <summary>Wrap the current textarea selection in the given markdown
+    /// marker via JS interop. The wrap helper also dispatches an 'input'
+    /// event so Blazor's @bind picks up the new value without waiting for
+    /// blur. Buttons are disabled outside edit mode, so this is a no-op
+    /// when the textarea isn't present.</summary>
+    private async Task WrapFormatAsync(Guid beatId, string marker)
+    {
+        var elementId = $"beat-{beatId:N}-edit";
+        try { await JS.InvokeVoidAsync("streetsamurai.wrapSelection", elementId, marker); }
+        catch (Exception ex) { Toast.Error("FORMAT-FAIL", ex.Message); }
+    }
+
+    private async Task ResetGapAfterAsync(Guid beatId)
     {
         try
         {
-            await Workbench.DeleteGapAsync(above, below);
-            customGaps.Remove((above, below));
+            await Workbench.ClearGapAfterAsync(beatId);
+            var entry = beats.FirstOrDefault(x => x.Beat.Id == beatId);
+            if (entry != null) { entry.Beat.GapAfterMs = null; entry.Beat.GapAfterAudioPath = null; }
             Toast.Info("GAP-RESET", "Reset to auto pause.");
             StateHasChanged();
         }
         catch (Exception ex) { Toast.Error("GAP-RESET-FAIL", ex.Message); }
+    }
+
+    // ── LLM bottom sheet ──────────────────────────────────────────────────
+    // Free-text instruction → calls ILlmService.GenerateAsync with the beat
+    // text + neighbour context → previews the proposal → user picks Apply
+    // (replaces beat.Text) or Discard.
+
+    private void OpenLlmSheet(BeatEntity b)
+    {
+        llmSheetBeat = b;
+        llmSheetBeatPosition = beats.FindIndex(x => x.Beat.Id == b.Id) + 1;
+        llmSheetRefText = strand != null ? $"{strand.Id}.{b.Id}" : b.Id.ToString();
+        llmSheetInstruction = "";
+        llmSheetProposal = "";
+        llmSheetRunning = false;
+        llmSheetIdCopied = false;
+    }
+
+    private void CloseLlmSheet()
+    {
+        llmSheetBeat = null;
+        llmSheetInstruction = "";
+        llmSheetProposal = "";
+        llmSheetRefText = "";
+        llmSheetIdCopied = false;
+    }
+
+    private async Task CopyLlmSheetRefAsync()
+    {
+        if (string.IsNullOrEmpty(llmSheetRefText)) return;
+        try
+        {
+            await JS.InvokeVoidAsync("navigator.clipboard.writeText", llmSheetRefText);
+            llmSheetIdCopied = true;
+            StateHasChanged();
+            await Task.Delay(1200);
+            llmSheetIdCopied = false;
+            await InvokeAsync(StateHasChanged);
+        }
+        catch (Exception ex) { Toast.Error("COPY-FAIL", ex.Message); }
+    }
+
+    private void DiscardLlmSheetProposal()
+    {
+        llmSheetProposal = "";
+    }
+
+    private async Task RunLlmSheetAsync()
+    {
+        if (llmSheetBeat == null || string.IsNullOrWhiteSpace(llmSheetInstruction) || llmSheetRunning) return;
+        llmSheetRunning = true;
+        llmSheetProposal = "";
+        StateHasChanged();
+        try
+        {
+            var system = "You are an assistant rewriting a single beat of prose for a noir/cyberpunk narrative. " +
+                         "Return ONLY the rewritten beat text — no preamble, no commentary, no quotes around it. " +
+                         "Preserve the beat's voice and tense unless the instruction says otherwise.";
+            var strandTitle = strand?.Title ?? "(unknown strand)";
+            var user =
+                $"STRAND: {strandTitle}\n" +
+                $"REFERENCE: {llmSheetRefText}    (CLI handle: strand-guid.beat-guid)\n" +
+                $"POSITION: Beat #{llmSheetBeatPosition} in this strand\n\n" +
+                $"INSTRUCTION:\n{llmSheetInstruction.Trim()}\n\n" +
+                $"CURRENT BEAT TEXT:\n{llmSheetBeat.Text}";
+            var raw = await Llm.GenerateAsync(system, user, temperature: 0.7, maxTokens: 1500);
+            llmSheetProposal = (raw ?? "").Trim();
+            if (string.IsNullOrEmpty(llmSheetProposal))
+                Toast.Info("LLM", "Empty response — try a different instruction.");
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("LLM-FAIL", ex.Message);
+        }
+        finally
+        {
+            llmSheetRunning = false;
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private async Task ApplyLlmSheetAsync()
+    {
+        if (llmSheetBeat == null || string.IsNullOrEmpty(llmSheetProposal)) return;
+        var beatId = llmSheetBeat.Id;
+        try
+        {
+            await Workbench.UpdateBeatTextAsync(beatId, llmSheetProposal, expectedUpdatedAt: llmSheetBeat.UpdatedAt);
+            llmSheetBeat.Text = llmSheetProposal;
+            llmSheetBeat.UpdatedAt = DateTime.UtcNow;
+            Toast.Success("LLM", "Beat rewritten — audio invalidated; re-record to refresh.");
+            CloseLlmSheet();
+            await ReloadBeatsAsync();
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("LLM-APPLY-FAIL", ex.Message);
+        }
     }
 
     private async Task ExportCombinedAsync()
@@ -1275,24 +1582,6 @@ else
             strand.CharsNarrated = fresh.CharsNarrated;
         }
         beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
-        await ReloadGapsAsync(db);
-    }
-
-    /// <summary>Pull the user-customised Gap rows for this strand's adjacent
-    /// beat pairs. Anything not in the dict falls back to the auto-computed
-    /// silence at concat time.</summary>
-    private async Task ReloadGapsAsync(StreetSamuraiDbContext db)
-    {
-        var beatIds = beats.Select(b => b.Beat.Id).ToHashSet();
-        if (beatIds.Count == 0)
-        {
-            customGaps = new();
-            return;
-        }
-        var rows = await db.Gaps.AsNoTracking()
-            .Where(g => beatIds.Contains(g.AboveBeatId) && beatIds.Contains(g.BelowBeatId))
-            .ToListAsync();
-        customGaps = rows.ToDictionary(g => (g.AboveBeatId, g.BelowBeatId));
     }
 
     private static string StatusColor(string status) => StrandWorkbenchService.StatusColor(status);

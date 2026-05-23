@@ -217,6 +217,9 @@
             "users"           => new(null, null, "Users",            null,          "bi-people-fill"),
             "logging"         => new(null, null, "Logging",          null,          "bi-journal-code"),
             "utilities"       => new(null, null, "Utilities",        null,          "bi-tools"),
+            "strands"         => new(null, null, "Strands",          null,          "bi-collection"),
+            _ when seg.StartsWith("strand/")
+                              => new("Strands",       "/strands",              StrandTitle(seg[7..]), "bi-collection",     "bi-pencil-square"),
             "dashboard"       => new("Tools",          "/board/tools",          "Dashboard",         "bi-grid-3x3-gap",     "bi-speedometer2"),
             "ask"             => new("Tools",          "/board/tools",          "Ask",               "bi-grid-3x3-gap",     "bi-chat-dots"),
             "books"           => new("Tools",          "/board/tools",          "Bookshelf",         "bi-grid-3x3-gap",     "bi-book"),
@@ -299,6 +302,27 @@
         "visualizations" => "Visualizations",
         _ => slug.Length == 0 ? "" : char.ToUpper(slug[0]) + slug[1..]
     };
+
+    // Render the slug portion of /strand/{idOrSlug} as a human title in the
+    // crumb. Slugs come in two shapes: a GUID (no readable name available
+    // without a DB lookup) or a kebab/underscore slug ("bushido_coda" or
+    // "bushido-coda-1a2b3c4d"). For GUIDs, fall back to "Strand". For slugs,
+    // strip any trailing 8-hex disambiguator, then Title Case each word.
+    private static string StrandTitle(string slug)
+    {
+        if (string.IsNullOrEmpty(slug)) return "Strand";
+        if (Guid.TryParse(slug, out _)) return "Strand";
+        var s = slug.Replace('_', ' ').Replace('-', ' ').Trim();
+        // Drop a trailing 8-hex disambiguator (the suffix CreateAsync appends).
+        var parts = s.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        if (parts.Length > 1)
+        {
+            var last = parts[^1];
+            if (last.Length == 8 && last.All(c => "0123456789abcdef".Contains(c)))
+                parts = parts[..^1];
+        }
+        return string.Join(' ', parts.Select(p => p.Length == 0 ? p : char.ToUpper(p[0]) + p[1..]));
+    }
 
     public void Dispose()
     {
