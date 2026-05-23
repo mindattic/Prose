@@ -1,0 +1,113 @@
+2026-05-23 10:30:01.861 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-05-23 10:30:01.930 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-05-23 10:30:01.949 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.150) method 'initialize' request handler completed in 15.2152ms.
+2026-05-23 10:30:01.950 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.150) method 'tools/list' request handler called.
+2026-05-23 10:30:01.959 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.150) method 'tools/list' request handler completed in 8.7477ms.
+2026-05-23 10:30:53.757 -05:00 [INF] GlobalSearch index warmed in 51836 ms
+2026-05-23 10:32:01.934 -05:00 [INF] WorldTickService heartbeat (disabled): tick #1
+2026-05-23 10:32:01.999 -05:00 [INF] Continuity long-sweep (full): 2 contradiction group(s)
+2026-05-23 10:37:01.943 -05:00 [INF] WorldTickService heartbeat (disabled): tick #2
+2026-05-23 10:42:01.946 -05:00 [INF] WorldTickService heartbeat (disabled): tick #3
+2026-05-23 10:47:01.943 -05:00 [INF] WorldTickService heartbeat (disabled): tick #4
+2026-05-23 10:52:01.952 -05:00 [INF] WorldTickService heartbeat (disabled): tick #5
+2026-05-23 10:57:01.938 -05:00 [INF] WorldTickService heartbeat (disabled): tick #6
+2026-05-23 11:02:01.934 -05:00 [INF] WorldTickService heartbeat (disabled): tick #7
+2026-05-23 11:07:01.951 -05:00 [INF] WorldTickService heartbeat (disabled): tick #8
+2026-05-23 11:12:01.951 -05:00 [INF] WorldTickService heartbeat (disabled): tick #9
+2026-05-23 11:17:01.940 -05:00 [INF] WorldTickService heartbeat (disabled): tick #10
+2026-05-23 11:22:01.943 -05:00 [INF] WorldTickService heartbeat (disabled): tick #11
+2026-05-23 11:27:01.937 -05:00 [INF] WorldTickService heartbeat (disabled): tick #12
+2026-05-23 11:32:01.949 -05:00 [INF] WorldTickService heartbeat (disabled): tick #13
+2026-05-23 11:32:01.985 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-23 11:37:01.944 -05:00 [INF] WorldTickService heartbeat (disabled): tick #14
+2026-05-23 11:42:01.944 -05:00 [INF] WorldTickService heartbeat (disabled): tick #15
+2026-05-23 11:47:01.954 -05:00 [INF] WorldTickService heartbeat (disabled): tick #16
+2026-05-23 11:52:01.954 -05:00 [INF] WorldTickService heartbeat (disabled): tick #17
+2026-05-23 11:57:01.946 -05:00 [INF] WorldTickService heartbeat (disabled): tick #18
+2026-05-23 12:02:01.939 -05:00 [INF] WorldTickService heartbeat (disabled): tick #19
+2026-05-23 12:07:01.939 -05:00 [INF] WorldTickService heartbeat (disabled): tick #20
+2026-05-23 12:12:01.945 -05:00 [INF] WorldTickService heartbeat (disabled): tick #21
+2026-05-23 12:17:01.944 -05:00 [INF] WorldTickService heartbeat (disabled): tick #22
+2026-05-23 12:22:01.948 -05:00 [INF] WorldTickService heartbeat (disabled): tick #23
+2026-05-23 12:27:01.944 -05:00 [INF] WorldTickService heartbeat (disabled): tick #24
+2026-05-23 12:32:01.945 -05:00 [INF] WorldTickService heartbeat (disabled): tick #25
+2026-05-23 12:32:01.963 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-23 12:37:01.951 -05:00 [INF] WorldTickService heartbeat (disabled): tick #26
+2026-05-23 12:42:01.940 -05:00 [INF] WorldTickService heartbeat (disabled): tick #27
+2026-05-23 12:47:01.939 -05:00 [INF] WorldTickService heartbeat (disabled): tick #28
+2026-05-23 12:52:01.951 -05:00 [INF] WorldTickService heartbeat (disabled): tick #29
+2026-05-23 12:57:01.939 -05:00 [INF] WorldTickService heartbeat (disabled): tick #30
+2026-05-23 13:02:01.946 -05:00 [INF] WorldTickService heartbeat (disabled): tick #31
+2026-05-23 13:07:01.945 -05:00 [INF] WorldTickService heartbeat (disabled): tick #32
+2026-05-23 13:12:01.943 -05:00 [INF] WorldTickService heartbeat (disabled): tick #33
+2026-05-23 13:17:01.948 -05:00 [INF] WorldTickService heartbeat (disabled): tick #34
+2026-05-23 13:22:01.948 -05:00 [INF] WorldTickService heartbeat (disabled): tick #35
+2026-05-23 13:27:01.938 -05:00 [INF] WorldTickService heartbeat (disabled): tick #36
+2026-05-23 13:32:01.950 -05:00 [INF] WorldTickService heartbeat (disabled): tick #37
+2026-05-23 13:32:01.967 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-23 13:37:01.956 -05:00 [INF] WorldTickService heartbeat (disabled): tick #38
+2026-05-23 13:42:01.939 -05:00 [INF] WorldTickService heartbeat (disabled): tick #39
+2026-05-23 13:47:01.950 -05:00 [INF] WorldTickService heartbeat (disabled): tick #40
+2026-05-23 13:52:01.951 -05:00 [INF] WorldTickService heartbeat (disabled): tick #41
+2026-05-23 13:57:01.949 -05:00 [INF] WorldTickService heartbeat (disabled): tick #42
+2026-05-23 14:02:01.952 -05:00 [INF] WorldTickService heartbeat (disabled): tick #43
+2026-05-23 14:07:01.940 -05:00 [INF] WorldTickService heartbeat (disabled): tick #44
+2026-05-23 14:12:01.950 -05:00 [INF] WorldTickService heartbeat (disabled): tick #45
+2026-05-23 14:17:01.941 -05:00 [INF] WorldTickService heartbeat (disabled): tick #46
+2026-05-23 14:22:01.933 -05:00 [INF] WorldTickService heartbeat (disabled): tick #47
+2026-05-23 14:27:01.951 -05:00 [INF] WorldTickService heartbeat (disabled): tick #48
+2026-05-23 14:32:01.944 -05:00 [INF] WorldTickService heartbeat (disabled): tick #49
+2026-05-23 14:32:01.975 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-23 14:37:01.953 -05:00 [INF] WorldTickService heartbeat (disabled): tick #50
+2026-05-23 14:42:01.958 -05:00 [INF] WorldTickService heartbeat (disabled): tick #51
+2026-05-23 14:47:01.958 -05:00 [INF] WorldTickService heartbeat (disabled): tick #52
+2026-05-23 14:52:01.965 -05:00 [INF] WorldTickService heartbeat (disabled): tick #53
+2026-05-23 14:57:01.953 -05:00 [INF] WorldTickService heartbeat (disabled): tick #54
+2026-05-23 15:02:01.948 -05:00 [INF] WorldTickService heartbeat (disabled): tick #55
+2026-05-23 15:07:01.953 -05:00 [INF] WorldTickService heartbeat (disabled): tick #56
+2026-05-23 15:12:01.940 -05:00 [INF] WorldTickService heartbeat (disabled): tick #57
+2026-05-23 15:17:01.954 -05:00 [INF] WorldTickService heartbeat (disabled): tick #58
+2026-05-23 15:22:01.971 -05:00 [INF] WorldTickService heartbeat (disabled): tick #59
+2026-05-23 15:27:01.965 -05:00 [INF] WorldTickService heartbeat (disabled): tick #60
+2026-05-23 15:32:01.971 -05:00 [INF] WorldTickService heartbeat (disabled): tick #61
+2026-05-23 15:32:02.969 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-23 15:37:01.958 -05:00 [INF] WorldTickService heartbeat (disabled): tick #62
+2026-05-23 15:42:01.946 -05:00 [INF] WorldTickService heartbeat (disabled): tick #63
+2026-05-23 15:47:01.958 -05:00 [INF] WorldTickService heartbeat (disabled): tick #64
+2026-05-23 15:52:01.955 -05:00 [INF] WorldTickService heartbeat (disabled): tick #65
+2026-05-23 15:57:01.958 -05:00 [INF] WorldTickService heartbeat (disabled): tick #66
+2026-05-23 16:02:01.976 -05:00 [INF] WorldTickService heartbeat (disabled): tick #67
+2026-05-23 16:07:01.961 -05:00 [INF] WorldTickService heartbeat (disabled): tick #68
+2026-05-23 16:12:01.961 -05:00 [INF] WorldTickService heartbeat (disabled): tick #69
+2026-05-23 16:17:01.961 -05:00 [INF] WorldTickService heartbeat (disabled): tick #70
+2026-05-23 16:22:01.967 -05:00 [INF] WorldTickService heartbeat (disabled): tick #71
+2026-05-23 16:27:01.964 -05:00 [INF] WorldTickService heartbeat (disabled): tick #72
+2026-05-23 16:32:01.956 -05:00 [INF] WorldTickService heartbeat (disabled): tick #73
+2026-05-23 16:32:02.740 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-23 16:37:01.944 -05:00 [INF] WorldTickService heartbeat (disabled): tick #74
+2026-05-23 16:42:01.946 -05:00 [INF] WorldTickService heartbeat (disabled): tick #75
+2026-05-23 16:47:01.947 -05:00 [INF] WorldTickService heartbeat (disabled): tick #76
+2026-05-23 16:52:01.957 -05:00 [INF] WorldTickService heartbeat (disabled): tick #77
+2026-05-23 16:57:01.945 -05:00 [INF] WorldTickService heartbeat (disabled): tick #78
+2026-05-23 17:02:01.950 -05:00 [INF] WorldTickService heartbeat (disabled): tick #79
+2026-05-23 17:07:01.953 -05:00 [INF] WorldTickService heartbeat (disabled): tick #80
+2026-05-23 17:12:01.944 -05:00 [INF] WorldTickService heartbeat (disabled): tick #81
+2026-05-23 17:17:01.957 -05:00 [INF] WorldTickService heartbeat (disabled): tick #82
+2026-05-23 17:22:01.947 -05:00 [INF] WorldTickService heartbeat (disabled): tick #83
+2026-05-23 17:27:01.946 -05:00 [INF] WorldTickService heartbeat (disabled): tick #84
+2026-05-23 17:32:01.950 -05:00 [INF] WorldTickService heartbeat (disabled): tick #85
+2026-05-23 17:32:02.731 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-23 17:37:01.953 -05:00 [INF] WorldTickService heartbeat (disabled): tick #86
+2026-05-23 17:42:01.956 -05:00 [INF] WorldTickService heartbeat (disabled): tick #87
+2026-05-23 17:47:01.959 -05:00 [INF] WorldTickService heartbeat (disabled): tick #88
+2026-05-23 17:52:01.951 -05:00 [INF] WorldTickService heartbeat (disabled): tick #89
+2026-05-23 17:57:01.943 -05:00 [INF] WorldTickService heartbeat (disabled): tick #90
+2026-05-23 18:02:01.951 -05:00 [INF] WorldTickService heartbeat (disabled): tick #91
+2026-05-23 18:07:01.948 -05:00 [INF] WorldTickService heartbeat (disabled): tick #92
+2026-05-23 18:12:01.943 -05:00 [INF] WorldTickService heartbeat (disabled): tick #93
+2026-05-23 18:17:01.950 -05:00 [INF] WorldTickService heartbeat (disabled): tick #94
+2026-05-23 18:22:01.955 -05:00 [INF] WorldTickService heartbeat (disabled): tick #95
+2026-05-23 18:27:01.954 -05:00 [INF] WorldTickService heartbeat (disabled): tick #96
+2026-05-23 18:32:01.950 -05:00 [INF] WorldTickService heartbeat (disabled): tick #97
+2026-05-23 18:32:02.013 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-23 18:37:01.952 -05:00 [INF] WorldTickService heartbeat (disabled): tick #98
