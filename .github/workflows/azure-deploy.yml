@@ -1,5 +1,17 @@
 name: Build and deploy StreetSamurai to Azure App Service
 
+# Two-stage pipeline:
+#   build   — restore + publish the Blazor host as a deployable artifact
+#   deploy  — push the artifact to the streetsamurai App Service slot
+#
+# A `migrate` job that ran ApplyMigrations against Azure SQL via OIDC was
+# removed 2026-05-23: the initial schema landed via SqlPackage bacpac
+# import, and subsequent schema changes (when they come) are applied
+# manually for now. To re-add CI-driven migrations later, restore the
+# `migrate` job + the three repo secrets (AZURE_CLIENT_ID,
+# AZURE_TENANT_ID, AZURE_SUBSCRIPTION_ID) and the GRANT on the SQL DB
+# for the GitHub OIDC service principal — see infra/README.md.
+
 on:
   push:
     branches:
@@ -20,8 +32,13 @@ jobs:
         with:
           dotnet-version: '10.x'
 
+      # NuGet.config at the repo root points at ./lib/local-packages/
+      # for the MindAttic.Legion / MindAttic.Vault private packages.
+      # Restore picks them up alongside nuget.org. The `--locked-mode`
+      # flag is intentionally NOT set — bundled .nupkg files mean
+      # packages.lock.json isn't a meaningful source of truth here.
       - name: Restore dependencies
-        run: dotnet restore v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj --locked-mode
+        run: dotnet restore v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj
 
       - name: Publish
         run: dotnet publish v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj -c Release -o publish --no-restore
