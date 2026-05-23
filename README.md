@@ -218,15 +218,39 @@ Adding a new migration: drop a new `*.sql` file under `Data/Sql/`, append its fi
 
 ## Deploying to Azure
 
-The live site is on Azure App Service at **streetsamurai.azurewebsites.net**. `v3/StreetSamurai.Blazor/scripts/cli/deploy.ps1` packages and ships the Blazor app; secrets resolve through App Service Application Settings (with optional Key Vault references) via `MindAttic.Vault`.
+The live site runs on Azure App Service at **streetsamurai.azurewebsites.net** against an Azure SQL Database (Serverless General Purpose). End-to-end provisioning, AAD setup, and GitHub OIDC wiring live in [`infra/README.md`](infra/README.md); this section is the short version.
 
-The connection string follows the family priority chain:
+**Architecture**
 
-1. `ConnectionStrings__StreetSamurai` env var (App Service Application Setting in production)
-2. `ConnectionStrings:StreetSamurai` from `IConfiguration` (`appsettings.json`)
-3. LocalDB fallback
+| Component | What |
+| --- | --- |
+| Compute | Azure App Service `streetsamurai`, system-assigned managed identity |
+| Data | Azure SQL Database `StreetSamurai` on logical server `streetsamurai-sql`, AAD-only auth |
+| CI/CD | `.github/workflows/azure-deploy.yml` runs `build` → `migrate` → `deploy` on every push to master |
+| Migration runner | `dotnet run --project v3/ApplyMigrations` applies the raw T-SQL files under `v3/StreetSamurai.Core/Data/Sql/`. Same code path locally and in CI. |
+| Secrets | No SQL password anywhere. App Service uses its managed identity; GitHub Actions uses OIDC federated credentials. |
 
-Production never reads from the LocalDB fallback — it always resolves the connection string from Application Settings.
+**First-time setup** (~15 minutes, one shot):
+
+```powershell
+# Fill in the three __REPLACE__ values in infra/azure-sql.parameters.json,
+# then run:
+powershell -NoProfile -ExecutionPolicy Bypass `
+    -File infra/setup-azure.ps1 `
+    -ResourceGroup street-samurai-rg `
+    -AppServiceName streetsamurai `
+    -GitHubSpName  streetsamurai-github
+```
+
+The script provisions the SQL server + database via Bicep, grants database roles to the App Service MI and the GitHub OIDC SP, and writes the App Service `ConnectionStrings__StreetSamurai` application setting. After that, pushing to master fires the three-stage workflow automatically — Azure SQL stays in lock-step with the schema in the repo.
+
+**Connection-string resolution at runtime** (`ServiceCollectionExtensions.cs`):
+
+1. `ConnectionStrings__StreetSamurai` env var — App Service Application Setting in production; pre-populated by `azure/login@v2` for CI migrations.
+2. `IConfiguration.GetConnectionString("StreetSamurai")` from `appsettings.json` — local dev LocalDB.
+3. LocalDB fallback — only when neither of the above is set.
+
+Production resolves via (1) with `Authentication=Active Directory Default`, so `Microsoft.Data.SqlClient` transparently uses the App Service's managed identity. Local dev keeps using (2) → (3) — no Azure credentials required.
 
 ## Tests
 

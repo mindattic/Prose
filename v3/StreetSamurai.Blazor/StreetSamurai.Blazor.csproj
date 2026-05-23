@@ -25,12 +25,12 @@
     </Content>
   </ItemGroup>
 
-  <!-- Pull latest CBG bundle from MindAttic.Components into wwwroot before each build.
-       Idempotent: when MindAttic.Components hasn't changed, this is a no-op rewrite.
-       If MindAttic.Components isn't checked out next to this repo, the target is skipped. -->
+  <!-- Pull latest subscribed components from MindAttic.UIUX into wwwroot before each build.
+       Idempotent: when MindAttic.UIUX hasn't changed, this is a no-op rewrite.
+       If MindAttic.UIUX isn't checked out next to this repo, the target is skipped. -->
   <Target Name="SyncMindAtticComponents" BeforeTargets="BeforeBuild">
     <PropertyGroup>
-      <_ContentSync>$(MSBuildThisFileDirectory)..\..\..\MindAttic.Components\sync\sync-streetsamurai.ps1</_ContentSync>
+      <_ContentSync>$(MSBuildThisFileDirectory)..\..\..\MindAttic.UIUX\sync\sync-streetsamurai.ps1</_ContentSync>
     </PropertyGroup>
     <Exec Command="powershell -NoProfile -ExecutionPolicy Bypass -File &quot;$(_ContentSync)&quot;"
           Condition="Exists('$(_ContentSync)')"
