@@ -140,14 +140,127 @@ public class StrandTools
         return JsonSerializer.Serialize(new { ok = true, id = beat.Id, strand_id = strand.Id }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Update one beat's prose. Recomputes the hash, marks the beat stale, and invalidates its audio.")]
-    public async Task<string> UpdateBeatText(
-        [Description("Beat Guid id.")] string beatId,
-        [Description("New prose. Replaces the entire beat text.")] string text)
+    [McpServerTool, Description("Get a single beat with every authoring field — prose, kind, IsChapterStart, BeatTitle, gap-after, tone/pace/facet metadata, position within strand, and the previous/next beat ids for relative insertion. Accepts a plain Beat Guid or the 'strand-guid.beat-guid' dotted handle the writer UI shows on the LLM bottom sheet.")]
+    public async Task<string> GetBeat(
+        [Description("Beat Guid OR the dotted 'strand-guid.beat-guid' handle.")] string beatHandle)
     {
-        if (!Guid.TryParse(beatId, out var bid)) return JsonSerializer.Serialize(new { error = "bad_beat_id", beatId }, CanonTools.JsonOpts);
-        await workbench.UpdateBeatTextAsync(bid, text ?? "");
-        return JsonSerializer.Serialize(new { ok = true, id = bid }, CanonTools.JsonOpts);
+        if (!BeatHandle.TryParse(beatHandle, out var parsedStrand, out var parsedBeat) || parsedBeat == null)
+            return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == parsedBeat.Value);
+        if (beat == null) return JsonSerializer.Serialize(new { error = "beat_not_found", beatHandle }, CanonTools.JsonOpts);
+
+        // Resolve the strand that owns this beat — either the one from the
+        // dotted handle (if any), or the first StrandBeat junction.
+        var strandId = parsedStrand ?? (await db.StrandBeats.AsNoTracking()
+            .Where(sb => sb.BeatId == beat.Id)
+            .Select(sb => (Guid?)sb.StrandId)
+            .FirstOrDefaultAsync());
+        Strand? strand = null;
+        int position = 0;
+        Guid? prevBeatId = null;
+        Guid? nextBeatId = null;
+        if (strandId.HasValue)
+        {
+            strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == strandId.Value);
+            var ordered = await workbench.GetOrderedBeatsAsync(strandId.Value);
+            var idx = ordered.FindIndex(o => o.Beat.Id == beat.Id);
+            if (idx >= 0)
+            {
+                position = idx + 1;
+                if (idx > 0)                   prevBeatId = ordered[idx - 1].Beat.Id;
+                if (idx < ordered.Count - 1)   nextBeatId = ordered[idx + 1].Beat.Id;
+            }
+        }
+        return JsonSerializer.Serialize(new
+        {
+            id              = beat.Id,
+            handle          = strandId.HasValue ? $"{strandId.Value}.{beat.Id}" : beat.Id.ToString(),
+            number          = beat.Number,
+            position,
+            strand          = strand == null ? null : (object)new { id = strand.Id, slug = strand.Slug, title = strand.Title },
+            prev_beat_id    = prevBeatId,
+            next_beat_id    = nextBeatId,
+            text            = beat.Text,
+            kind            = beat.Kind,
+            is_chapter_start = beat.IsChapterStart,
+            beat_title      = beat.BeatTitle,
+            synopsis        = beat.Synopsis,
+            structure_role  = beat.StructureRole,
+            act             = beat.Act,
+            scene_type      = beat.SceneType,
+            facet_tag       = beat.FacetTag,
+            emotional_tone  = beat.EmotionalTone,
+            pace_hint       = beat.PaceHint,
+            gap_after_ms    = beat.GapAfterMs,
+            gap_after_audio = beat.GapAfterAudioPath,
+            has_audio       = !string.IsNullOrEmpty(beat.AudioPath),
+            stale           = beat.Stale,
+            updated_at      = beat.UpdatedAt,
+        }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description("Update one beat's prose. Recomputes the hash, marks the beat stale, and invalidates its audio. Beat.Text accepts inline markdown (**bold** / *italic* / __underline__ / ~~strike~~) and ElevenLabs-style tone tags ([WHISPERING] [GASP] [LAUGHS] [PAUSES] etc.) that render as emoji in the read view. Accepts a Beat Guid OR the 'strand-guid.beat-guid' handle.")]
+    public async Task<string> UpdateBeatText(
+        [Description("Beat Guid OR 'strand-guid.beat-guid' handle.")] string beatHandle,
+        [Description("New prose. Replaces the entire beat text. Markdown markers + tone-tag brackets are preserved verbatim in storage.")] string text)
+    {
+        if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
+            return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
+        await workbench.UpdateBeatTextAsync(bid.Value, text ?? "");
+        return JsonSerializer.Serialize(new { ok = true, id = bid.Value }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description("Update a beat's metadata: BeatTitle, Synopsis, EmotionalTone, PaceHint, FacetTag, StructureRole, Act, SceneType, IsChapterStart, Kind. Pass empty strings to clear nullable fields. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.")]
+    public async Task<string> UpdateBeatMetadata(
+        [Description("Beat Guid OR 'strand-guid.beat-guid' handle.")] string beatHandle,
+        [Description("Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.")] string beatTitle = "",
+        [Description("One-line synopsis fed to LLM regenerations.")] string synopsis = "",
+        [Description("Emotional tone, e.g. 'quiet' / 'tense' / 'wry'.")] string emotionalTone = "",
+        [Description("Pace hint, e.g. 'flowing' / 'clipped' / 'staccato' / 'languorous'.")] string paceHint = "",
+        [Description("Character facet: WOUND / SHADOW / MASK / IDEAL.")] string facetTag = "",
+        [Description("Structure role, e.g. 'inciting-incident' / 'rising-action' / 'climax'.")] string structureRole = "",
+        [Description("Plot-act number 0–5. 0 = unassigned.")] int act = 0,
+        [Description("Scene type: scene | summary | transition | interstitial.")] string sceneType = "scene",
+        [Description("True = this beat begins a new chapter / section. The writer renders a divider above it with BeatTitle as the heading.")] bool isChapterStart = false,
+        [Description("Beat kind: prose (default) | book-title | dedication | quote. Free-form so new kinds add no schema cost.")] string kind = "prose")
+    {
+        if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
+            return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
+        await workbench.UpdateBeatMetadataAsync(bid.Value, new StrandWorkbenchService.BeatMetadataUpdate(
+            BeatTitle:      beatTitle,
+            Synopsis:       synopsis,
+            EmotionalTone:  emotionalTone,
+            PaceHint:       paceHint,
+            FacetTag:       facetTag,
+            StructureRole:  structureRole,
+            Act:            act,
+            SceneType:      sceneType,
+            IsChapterStart: isChapterStart,
+            Kind:           kind));
+        return JsonSerializer.Serialize(new { ok = true, id = bid.Value }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description("Set the silence (in ms) the audio engine inserts AFTER this beat, before the next. 0 = no silence (explicit override). Use ClearBeatGapAfter to revert to the auto-computed default from SceneType + terminator punctuation.")]
+    public async Task<string> SetBeatGapAfter(
+        [Description("Beat Guid OR 'strand-guid.beat-guid' handle.")] string beatHandle,
+        [Description("Silence in milliseconds, 0..6000.")] int durationMs)
+    {
+        if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
+            return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
+        await workbench.SetGapAfterAsync(bid.Value, durationMs);
+        return JsonSerializer.Serialize(new { ok = true, id = bid.Value, gap_after_ms = Math.Max(0, durationMs) }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description("Clear an explicit gap-after-beat override. The audio engine falls back to the auto-computed silence from SceneType + terminator punctuation.")]
+    public async Task<string> ClearBeatGapAfter(
+        [Description("Beat Guid OR 'strand-guid.beat-guid' handle.")] string beatHandle)
+    {
+        if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
+            return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
+        await workbench.ClearGapAfterAsync(bid.Value);
+        return JsonSerializer.Serialize(new { ok = true, id = bid.Value }, CanonTools.JsonOpts);
     }
 
     [McpServerTool, Description("Split one beat into two at the nearest sentence boundary near its midpoint. Both halves lose their audio.")]

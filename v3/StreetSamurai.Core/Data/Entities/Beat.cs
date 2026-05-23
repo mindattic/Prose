@@ -44,8 +44,26 @@ public class Beat
 
     // ── Narrative metadata ───────────────────────────────────────────────
 
-    /// <summary>Optional short label for the beat. e.g. "The threshold".</summary>
+    /// <summary>Optional short label for the beat. e.g. "The threshold".
+    /// When <see cref="IsChapterStart"/> is true, this doubles as the chapter
+    /// heading rendered above the beat in the writer/listener.</summary>
     public string? BeatTitle { get; set; }
+
+    /// <summary>True when this beat begins a new chapter. The UI renders a
+    /// divider above the beat with <see cref="BeatTitle"/> as the heading.
+    /// Replaces the old "chapters are child strands" model: one flat strand
+    /// per work, chapters are just beats with this flag. Orthogonal to
+    /// <see cref="Kind"/> — a quote/epigraph can start a chapter too.</summary>
+    public bool IsChapterStart { get; set; }
+
+    /// <summary>What kind of beat this is. One of: "prose" (default),
+    /// "book-title" (front-matter title page; Text=title, BeatTitle=author),
+    /// "dedication" (centered italic line; Text=dedication),
+    /// "quote" (blockquote; Text=quote, BeatTitle=attribution).
+    /// Kept as a free-form string so new kinds can be added without a
+    /// schema migration. IsChapterStart is orthogonal — set both for an
+    /// epigraph that opens a chapter.</summary>
+    public string Kind { get; set; } = "prose";
 
     /// <summary>One-line of what this beat is doing — "Kyle reads the room
     /// and decides he's not leaving." Feeds into LLM regeneration prompts
@@ -100,6 +118,23 @@ public class Beat
 
     /// <summary>True if the beat has been manually rewritten since materialisation.</summary>
     public bool WasCorrected { get; set; }
+
+    // ── Trailing gap (silence after this beat, before the next) ─────────
+    // Each Beat owns the gap that follows it. The last beat in a strand
+    // ignores this field. Null = "use the computed default" from
+    // <see cref="StrandWorkbenchService.ComputeTrailingSilenceMs"/>
+    // (SceneType + terminator punctuation → 200/400/1000/1800ms). A value
+    // (including 0) is an explicit override the user set in the UI.
+    // Replaces the separate Gap table — gap is a property of the upper beat.
+
+    /// <summary>Explicit silence in ms after this beat, before the next one.
+    /// Null = use the auto-computed default. 0 = no silence (explicit).</summary>
+    public int? GapAfterMs { get; set; }
+
+    /// <summary>Optional recorded clip (rain, ambient, sigh) to play instead
+    /// of digital silence in the gap after this beat. Path relative to the
+    /// strands audio root. Null = digital silence.</summary>
+    public string? GapAfterAudioPath { get; set; }
 
     // ── Provenance ───────────────────────────────────────────────────────
 

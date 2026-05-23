@@ -161,15 +161,17 @@ public class StrandWorkbenchService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct)
             ?? throw new InvalidOperationException($"Beat {beatId} not found.");
-        beat.BeatTitle     = string.IsNullOrWhiteSpace(update.BeatTitle)     ? null : update.BeatTitle.Trim();
-        beat.Synopsis      = string.IsNullOrWhiteSpace(update.Synopsis)      ? null : update.Synopsis.Trim();
-        beat.EmotionalTone = string.IsNullOrWhiteSpace(update.EmotionalTone) ? null : update.EmotionalTone.Trim().ToLowerInvariant();
-        beat.PaceHint      = string.IsNullOrWhiteSpace(update.PaceHint)      ? null : update.PaceHint.Trim().ToLowerInvariant();
-        beat.FacetTag      = string.IsNullOrWhiteSpace(update.FacetTag)      ? null : update.FacetTag.Trim().ToUpperInvariant();
-        beat.StructureRole = string.IsNullOrWhiteSpace(update.StructureRole) ? null : update.StructureRole.Trim();
-        beat.Act           = update.Act;
-        beat.SceneType     = string.IsNullOrWhiteSpace(update.SceneType)     ? "scene" : update.SceneType.Trim();
-        beat.UpdatedAt     = DateTime.UtcNow;
+        beat.BeatTitle      = string.IsNullOrWhiteSpace(update.BeatTitle)     ? null : update.BeatTitle.Trim();
+        beat.Synopsis       = string.IsNullOrWhiteSpace(update.Synopsis)      ? null : update.Synopsis.Trim();
+        beat.EmotionalTone  = string.IsNullOrWhiteSpace(update.EmotionalTone) ? null : update.EmotionalTone.Trim().ToLowerInvariant();
+        beat.PaceHint       = string.IsNullOrWhiteSpace(update.PaceHint)      ? null : update.PaceHint.Trim().ToLowerInvariant();
+        beat.FacetTag       = string.IsNullOrWhiteSpace(update.FacetTag)      ? null : update.FacetTag.Trim().ToUpperInvariant();
+        beat.StructureRole  = string.IsNullOrWhiteSpace(update.StructureRole) ? null : update.StructureRole.Trim();
+        beat.Act            = update.Act;
+        beat.SceneType      = string.IsNullOrWhiteSpace(update.SceneType)     ? "scene" : update.SceneType.Trim();
+        beat.IsChapterStart = update.IsChapterStart;
+        beat.Kind           = string.IsNullOrWhiteSpace(update.Kind)          ? "prose" : update.Kind.Trim().ToLowerInvariant();
+        beat.UpdatedAt      = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
     }
 
@@ -919,15 +921,10 @@ public class StrandWorkbenchService
             return null;
         }
 
-        // Pull any user-customised Gaps for this strand's adjacent pairs.
-        // The lookup is keyed by (AboveBeatId, BelowBeatId); pairs not in
-        // the dict fall back to the auto-computed silence in
-        // ComputeTrailingSilenceMs.
-        var beatIds = ordered.Select(o => o.Beat.Id).ToHashSet();
-        var customGaps = (await db.Gaps.AsNoTracking()
-                .Where(g => beatIds.Contains(g.AboveBeatId) && beatIds.Contains(g.BelowBeatId))
-                .ToListAsync(ct))
-            .ToDictionary(g => (g.AboveBeatId, g.BelowBeatId));
+        // Gap-after-beat is now a property of the upper beat
+        // (Beat.GapAfterMs). Null = "use the auto-computed default" from
+        // ComputeTrailingSilenceMs; a value (including 0) is an explicit
+        // override the user set in the UI.
 
         var dir = GetStrandRoot(strand.Slug);
         Directory.CreateDirectory(dir);
@@ -953,9 +950,7 @@ public class StrandWorkbenchService
                 if (i < ordered.Count - 1)
                 {
                     var next = ordered[i + 1].Beat;
-                    var pauseMs = customGaps.TryGetValue((o.Beat.Id, next.Id), out var gap)
-                        ? gap.DurationMs
-                        : ComputeTrailingSilenceMs(o.Beat, next, settings);
+                    var pauseMs = o.Beat.GapAfterMs ?? ComputeTrailingSilenceMs(o.Beat, next, settings);
                     if (pauseMs > 0)
                     {
                         var silence = GenerateSilencePcm(pauseMs, sampleRate: 44100, channels: 1, bitsPerSample: 16);
@@ -996,9 +991,7 @@ public class StrandWorkbenchService
             }
             else
             {
-                int Pause(Beat a, Beat b) => customGaps.TryGetValue((a.Id, b.Id), out var gap)
-                    ? gap.DurationMs
-                    : ComputeTrailingSilenceMs(a, b, settings);
+                int Pause(Beat a, Beat b) => a.GapAfterMs ?? ComputeTrailingSilenceMs(a, b, settings);
                 await ConcatMp3sWithSilenceAsync(ffmpeg, ordered, outPath, Pause, ct);
             }
         }
@@ -1114,70 +1107,35 @@ public class StrandWorkbenchService
         return max + 1;
     }
 
-    /// <summary>Allocate the next globally-unique <see cref="Gap.Number"/>.</summary>
-    private static async Task<int> NextGapNumberAsync(StreetSamuraiDbContext db, CancellationToken ct)
-    {
-        var max = await db.Gaps.MaxAsync(g => (int?)g.Number, ct) ?? 0;
-        return max + 1;
-    }
+    // ── Gap-after-beat CRUD ─────────────────────────────────────────────
+    // The gap that follows a beat lives on that beat: Beat.GapAfterMs is the
+    // explicit override (null = "use the computed default from SceneType +
+    // terminator punctuation"). These helpers let the UI set or clear the
+    // override without exposing the column directly.
 
-    // ── Gap CRUD ────────────────────────────────────────────────────────
-    // Lazy materialisation: the silence engine consults the Gaps table for
-    // user-customised overrides, otherwise computes a default from the
-    // adjacent beats' metadata. These helpers let the UI create / update /
-    // remove a Gap on demand without exposing the table directly.
-
-    /// <summary>Get the Gap between two adjacent beats, or null. Lookup is
-    /// O(log n) via the UX_Gaps_Pair index.</summary>
-    public async Task<Gap?> GetGapAsync(Guid aboveBeatId, Guid belowBeatId, CancellationToken ct = default)
+    /// <summary>Set an explicit silence-after-this-beat override. 0 means
+    /// "no silence"; null callers should use <see cref="ClearGapAfterAsync"/>
+    /// to revert to the auto-computed default.</summary>
+    public async Task SetGapAfterAsync(Guid beatId, int durationMs, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.Gaps.AsNoTracking()
-            .FirstOrDefaultAsync(g => g.AboveBeatId == aboveBeatId && g.BelowBeatId == belowBeatId, ct);
-    }
-
-    /// <summary>Insert or update a Gap with the given duration. Returns the
-    /// persisted row (with assigned <see cref="Gap.Number"/> on first
-    /// materialisation). Setting durationMs back to the auto-computed
-    /// default doesn't delete the row — callers wanting cleanup should call
-    /// <see cref="DeleteGapAsync"/>.</summary>
-    public async Task<Gap> UpsertGapAsync(Guid aboveBeatId, Guid belowBeatId, int durationMs, string? notes = null, CancellationToken ct = default)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var gap = await db.Gaps.FirstOrDefaultAsync(g => g.AboveBeatId == aboveBeatId && g.BelowBeatId == belowBeatId, ct);
-        if (gap == null)
-        {
-            gap = new Gap
-            {
-                Id          = Guid.CreateVersion7(),
-                Number      = await NextGapNumberAsync(db, ct),
-                AboveBeatId = aboveBeatId,
-                BelowBeatId = belowBeatId,
-                DurationMs  = Math.Max(0, durationMs),
-                Notes       = string.IsNullOrWhiteSpace(notes) ? null : notes,
-                CreatedAt   = DateTime.UtcNow,
-                UpdatedAt   = DateTime.UtcNow,
-            };
-            db.Gaps.Add(gap);
-        }
-        else
-        {
-            gap.DurationMs = Math.Max(0, durationMs);
-            if (notes != null) gap.Notes = string.IsNullOrWhiteSpace(notes) ? null : notes;
-            gap.UpdatedAt  = DateTime.UtcNow;
-        }
+        var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct)
+            ?? throw new InvalidOperationException($"Beat {beatId} not found.");
+        beat.GapAfterMs = Math.Max(0, durationMs);
+        beat.UpdatedAt  = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
-        return gap;
     }
 
-    /// <summary>Remove a custom Gap, letting the silence engine fall back to
-    /// its default for that pair.</summary>
-    public async Task DeleteGapAsync(Guid aboveBeatId, Guid belowBeatId, CancellationToken ct = default)
+    /// <summary>Clear the explicit override, letting the silence engine fall
+    /// back to the computed default for that beat.</summary>
+    public async Task ClearGapAfterAsync(Guid beatId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var gap = await db.Gaps.FirstOrDefaultAsync(g => g.AboveBeatId == aboveBeatId && g.BelowBeatId == belowBeatId, ct);
-        if (gap == null) return;
-        db.Gaps.Remove(gap);
+        var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
+        if (beat == null || beat.GapAfterMs == null) return;
+        beat.GapAfterMs        = null;
+        beat.GapAfterAudioPath = null;
+        beat.UpdatedAt         = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
     }
 
@@ -1428,7 +1386,9 @@ public class StrandWorkbenchService
         string? FacetTag,
         string? StructureRole,
         int Act,
-        string? SceneType);
+        string? SceneType,
+        bool IsChapterStart,
+        string? Kind);
 
     /// <summary>Map a Strand.Status value to a Bootstrap chip color name.
     /// Single source of truth — used by /strand/{id}, /strands, any

@@ -204,14 +204,16 @@ public class StrandCliRoundTripTests
         var beat = ordered[0].Beat;
 
         await workbench.UpdateBeatMetadataAsync(beat.Id, new StrandWorkbenchService.BeatMetadataUpdate(
-            BeatTitle:     "The whisper",
-            Synopsis:      "Quiet open — set the mood",
-            EmotionalTone: "quiet",
-            PaceHint:      "languorous",
-            FacetTag:      null,
-            StructureRole: "opening",
-            Act:           1,
-            SceneType:     "scene"));
+            BeatTitle:      "The whisper",
+            Synopsis:       "Quiet open — set the mood",
+            EmotionalTone:  "quiet",
+            PaceHint:       "languorous",
+            FacetTag:       null,
+            StructureRole:  "opening",
+            Act:            1,
+            SceneType:      "scene",
+            IsChapterStart: false,
+            Kind:           "prose"));
 
         await using var probe = await dbFactory.CreateDbContextAsync();
         var refreshed = await probe.Beats.AsNoTracking().FirstAsync(b => b.Id == beat.Id);

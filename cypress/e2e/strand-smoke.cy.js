@@ -1,7 +1,7 @@
 // Cypress smoke test for the unified writer/recorder/listener at /strand/{id}.
 // Validates the workbench round-trip without touching TTS (no ElevenLabs credits
 // burned): visit /strands → create a new strand → land on /strand/{slug} →
-// insert a beat → write prose → save → split → join → delete → confirm gone.
+// insert a beat → write prose → save → insert second → delete → confirm gone.
 //
 // Runs against CYPRESS_BASE_URL (default http://localhost:5101). The page
 // is behind [Authorize] so the harness must already be authenticated —
@@ -10,6 +10,13 @@
 //
 // Selectors use data-cy hooks declared in Strand.razor so the spec is robust
 // against future CSS rewrites.
+//
+// 2026-05-23 — Updated for the flat-strand / Beat.Kind / IsChapterStart model:
+//   - The Split / Join / Edit / copy-Id buttons are gone (user does that
+//     manipulation manually now; copy-id moved into the LLM bottom sheet).
+//   - Gaps no longer have their own row between beats — each beat owns its
+//     trailing gap via Beat.GapAfterMs.
+//   - Chapters are not nested strands; they're beats with IsChapterStart=true.
 
 const failurePhrases = [
   /An unhandled error has occurred/i,
@@ -47,7 +54,7 @@ describe('Strand workbench smoke', () => {
     cy.contains(/strands/i, { timeout: 10000 }).should('exist');
   });
 
-  it('round-trip: create → insert → edit → split → join → delete', () => {
+  it('round-trip: create → insert → edit-via-click → insert second → delete', () => {
     // 1. Create a brand-new strand from the index.
     cy.visit('/strands');
     cy.get('input[placeholder*="New strand title"]').type(strandTitle);
@@ -60,7 +67,7 @@ describe('Strand workbench smoke', () => {
     // 2. Empty-state CTA: add the first beat.
     cy.get('[data-cy="insert-first"]').click();
 
-    // 3. Editor opens automatically. Type prose and save with Ctrl+Enter.
+    // 3. Editor opens automatically. Type prose and save with the Save button.
     cy.get('textarea.beat-textarea').should('be.visible').and('be.focused');
     cy.focused().type(
       'First sentence runs here. Second sentence picks up after a clean break.',
@@ -78,15 +85,15 @@ describe('Strand workbench smoke', () => {
     cy.get('[data-cy="beat-save"]').click();
     cy.get('[data-cy="beat-row"]').should('have.length', 2);
 
-    // 6. Split the first beat — should produce three rows total.
-    cy.get('[data-cy="beat-row"]').first().find('[data-cy="beat-split"]').click();
-    cy.get('[data-cy="beat-row"]', { timeout: 5000 }).should('have.length', 3);
+    // 6. Edit-by-click: clicking the prose body opens the inline editor.
+    //    (The standalone Edit button was removed — click the text directly.)
+    cy.get('[data-cy="beat-row"]').first().find('[data-cy="beat-prose"]').click();
+    cy.get('[data-cy="beat-row"]').first()
+      .find('textarea.beat-textarea').should('be.visible')
+      .and('contain.value', 'First sentence');
+    cy.get('[data-cy="beat-row"]').first().find('[data-cy="beat-cancel"]').click();
 
-    // 7. Join the second beat back into the first.
-    cy.get('[data-cy="beat-row"]').eq(1).find('[data-cy="beat-join"]').click();
-    cy.get('[data-cy="beat-row"]').should('have.length', 2);
-
-    // 8. Delete the second (remaining) beat — confirmation modal appears.
+    // 7. Delete the second beat — confirmation modal appears.
     cy.get('[data-cy="beat-row"]').last().find('[data-cy="beat-delete"]').click();
     cy.get('[data-cy="confirm-delete"]').click();
     cy.get('[data-cy="beat-row"]').should('have.length', 1);
