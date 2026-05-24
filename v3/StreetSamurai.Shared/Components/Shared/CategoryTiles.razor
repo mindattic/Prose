@@ -28,6 +28,7 @@
 @inject PsionicRepository PsionicRepo
 @inject Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> DbFactory
 @inject IWriteAccessProvider Access
+@inject StreetSamurai.Core.Services.HomeStatsCache Stats
 
 <div class="home-sections">
 
@@ -59,37 +60,37 @@
                title="Characters — people, synthetic life (AIs / androids / robots / cyborg AIs / etc.), archetypes, and ceramic men. Browse and edit full psychology, speech patterns, behavioral rules, cyberware, and timelines.">
                 <i class="bi bi-people-fill board-tile-icon"></i>
                 <div class="board-tile-name">Characters</div>
-                <span class="board-tile-count">@charCount</span>
+                <span class="board-tile-count">@Tile(charCount)</span>
             </a>
             <a href="/board/organizations" class="board-tile"
                title="Organizations — corporate nation-states (corponations), their subsidiaries, and non-corporate factions (gangs, syndicates, movements). Who controls what territory, and what they want.">
                 <i class="bi bi-buildings board-tile-icon"></i>
                 <div class="board-tile-name">Organizations</div>
-                <span class="board-tile-count">@orgCount</span>
+                <span class="board-tile-count">@Tile(orgCount)</span>
             </a>
             <a href="/board/gear" class="board-tile"
                title="Gear — weaponry, ammunition, cyberware, equipment, apparel, genemods, and pharmaceuticals. Tactical use, manufacturer, tier, and cultural context for everything a character can carry, wear, or take.">
                 <i class="bi bi-tools board-tile-icon"></i>
                 <div class="board-tile-name">Gear</div>
-                <span class="board-tile-count">@gearCount</span>
+                <span class="board-tile-count">@Tile(gearCount)</span>
             </a>
             <a href="/board/world" class="board-tile"
                title="World — places (districts, buildings, landmarks), transportation (vehicles + the Pulse), materials, technology, automata (autonomous machines, NOT synthetic life), and the literary rules that govern prose.">
                 <i class="bi bi-globe2 board-tile-icon"></i>
                 <div class="board-tile-name">World</div>
-                <span class="board-tile-count">@worldCount</span>
+                <span class="board-tile-count">@Tile(worldCount)</span>
             </a>
             <a href="/board/culture" class="board-tile"
                title="Culture — long-form lore documents, in-world quotes, GLMZ vocabulary, news archive, entertainment (films / books / music), and consumer goods. The texture of daily life in 2200.">
                 <i class="bi bi-palette2 board-tile-icon"></i>
                 <div class="board-tile-name">Culture</div>
-                <span class="board-tile-count">@cultureCount</span>
+                <span class="board-tile-count">@Tile(cultureCount)</span>
             </a>
             <a href="contracts" class="board-tile"
                title="Contracts — freelance contract registry. Generated jobs with twists, moral dilemmas, and persistent reputation/consequence effects across stories.">
                 <i class="bi bi-file-earmark-check board-tile-icon"></i>
                 <div class="board-tile-name">Contracts</div>
-                <span class="board-tile-count">@contractCount</span>
+                <span class="board-tile-count">@Tile(contractCount)</span>
             </a>
         </div>
     </div>
@@ -102,19 +103,19 @@
                title="Quotes — in-world quotations attributed to characters, documents, or sources. Pull-quote material for chapters and epigraphs.">
                 <i class="bi bi-quote board-tile-icon"></i>
                 <div class="board-tile-name">Quotes</div>
-                <span class="board-tile-count">@quoteCount</span>
+                <span class="board-tile-count">@Tile(quoteCount)</span>
             </a>
             <a href="vocabulary" class="board-tile board-tile-data"
                title="Vocabulary — GLMZ-specific terminology: street slang, corporate jargon, technical terms with definitions and usage context. The dictionary the world speaks.">
                 <i class="bi bi-chat-quote board-tile-icon"></i>
                 <div class="board-tile-name">Vocabulary</div>
-                <span class="board-tile-count">@vocabCount</span>
+                <span class="board-tile-count">@Tile(vocabCount)</span>
             </a>
             <a href="archetypes" class="board-tile board-tile-data"
                title="Archetypes — psychological / narrative archetype templates with trait weights. Used to seed character generation and anchor recurring patterns.">
                 <i class="bi bi-person-bounding-box board-tile-icon"></i>
                 <div class="board-tile-name">Archetypes</div>
-                <span class="board-tile-count">@archetypeCount</span>
+                <span class="board-tile-count">@Tile(archetypeCount)</span>
             </a>
             <a href="rules" class="board-tile board-tile-data"
                title="World Rules — hard prose constraints injected into every generation call as NON-NEGOTIABLE. Sentence length limits, banned cliches, grounded-prose requirements.">
@@ -192,34 +193,24 @@
 </div>
 
 @code {
-    int charCount, orgCount, gearCount, worldCount, cultureCount, contractCount;
-    int quoteCount, vocabCount, archetypeCount, episodeCount;
+    // All counts read from HomeStatsCache, populated every 5 min by
+    // HomeStatsRefreshService running on the host. Zero SQL queries on
+    // the home-page request path. On cold start (before the first
+    // refresh lands), Stats.IsWarm is false and counts are 0 — we
+    // display "—" rather than misleading zeros via the helper below.
+    int charCount    => Stats.CharactersTotal;
+    int orgCount     => Stats.OrganizationsTotal;
+    int gearCount    => Stats.GearTotal;
+    int worldCount   => Stats.WorldTotal;
+    int cultureCount => Stats.CultureTotal;
+    int contractCount  => Stats.Contracts;
+    int quoteCount     => Stats.Quotes;
+    int vocabCount     => Stats.Vocabulary;
+    int archetypeCount => Stats.Archetypes;
+    int episodeCount   => Stats.Episodes;
 
-    protected override void OnInitialized()
-    {
-        // Count() runs SELECT COUNT(*); GetAll() loads + deserializes every row.
-        // Home page cold-start dropped from ~40s to <1s after this switch.
-        charCount    = CharRepo.Count() + SynthRepo.Count();
-        orgCount     = CorpRepo.Count() + SubsidiaryRepo.Count() + FactionRepo.Count();
-        gearCount    = WeaponRepo.Count() + AmmoRepo.Count() + CyberRepo.Count()
-                     + EquipRepo.Count() + ApparelRepo.Count() + GenemodRepo.Count()
-                     + PharmaRepo.Count() + PsionicRepo.Count();
-        worldCount   = DistrictRepo.Count() + TransportRepo.Count() + MaterialRepo.Count()
-                     + TechRepo.Count() + AutomatonRepo.Count()
-                     + LabSpecimenRepo.Count() + FlyoverRepo.Count();
-        cultureCount = DocRepo.Count() + NewsRepo.Count()
-                     + EntertainmentRepo.Count() + GoodsRepo.Count();
-        contractCount  = ContractRepo.Count();
-        quoteCount     = QuoteRepo.Count();
-        vocabCount     = VocabRepo.Count();
-        archetypeCount = ArchetypeRepo.Count();
-
-        // Episode count via lightweight COUNT(*) query — DbContext is short-lived.
-        try
-        {
-            using var db = DbFactory.CreateDbContext();
-            episodeCount = db.Episodes.Count();
-        }
-        catch { episodeCount = 0; }
-    }
+    /// <summary>Render an em-dash for "not yet known" while the cache
+    /// warms; otherwise the number. Avoids the "0 Characters" lie on
+    /// the very first page load after a deploy.</summary>
+    string Tile(int n) => Stats.IsWarm ? n.ToString() : "—";
 }
