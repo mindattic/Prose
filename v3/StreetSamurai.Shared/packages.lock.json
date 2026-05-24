@@ -605,6 +605,7 @@
       "streetsamurai.core": {
         "type": "Project",
         "dependencies": {
+          "Azure.Identity": "[1.14.2, )",
           "BCrypt.Net-Next": "[4.0.3, )",
           "Markdig": "[1.1.2, )",
           "Microsoft.Data.Sqlite": "[10.0.5, )",
