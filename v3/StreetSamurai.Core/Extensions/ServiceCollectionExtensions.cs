@@ -37,6 +37,14 @@ public static class ServiceCollectionExtensions
         services.AddScoped<StreetSamuraiDbContext>(sp =>
             sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContext());
 
+        // Home-page stats cache: a singleton holding pre-computed entity
+        // counts for the tile board + /board sub-tiles. Populated by the
+        // background refresh service below. The request path reads from
+        // memory; no SQL queries fire on each page load. See HomeStatsCache.cs
+        // and HomeStatsRefreshService.cs for the contract.
+        services.AddSingleton<HomeStatsCache>();
+        services.AddHostedService<HomeStatsRefreshService>();
+
         // Application logging — reads daily Serilog log files for the UI viewer
         services.AddSingleton<LoggingService>();
 
