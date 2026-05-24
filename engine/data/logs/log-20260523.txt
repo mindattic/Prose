@@ -88,3 +88,28 @@ Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Gaps'.
 ClientConnectionId:60c45508-454c-4967-9777-94e19c783264
 Error Number:208,State:1,Class:16
 2026-05-23 06:59:54PM [INF] StreetSamurai Blazor host started
+2026-05-23 11:15:53PM [INF] StreetSamurai Blazor host started
+2026-05-23 11:15:57PM [INF] HomeStats refreshed in 3291 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-23 11:16:48PM [INF] GlobalSearch index warmed in 53907 ms
+2026-05-23 11:17:54PM [INF] WorldTickService heartbeat (disabled): tick #1
+2026-05-23 11:17:54PM [INF] Continuity long-sweep (full): 2 contradiction group(s)
+2026-05-23 11:20:57PM [INF] HomeStats refreshed in 127 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-23 11:22:54PM [INF] WorldTickService heartbeat (disabled): tick #2
+2026-05-23 11:25:57PM [INF] HomeStats refreshed in 125 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-23 11:27:54PM [INF] WorldTickService heartbeat (disabled): tick #3
+2026-05-23 11:30:57PM [INF] HomeStats refreshed in 106 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-23 11:32:54PM [INF] WorldTickService heartbeat (disabled): tick #4
+2026-05-23 11:35:58PM [INF] HomeStats refreshed in 85 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-23 11:37:54PM [INF] WorldTickService heartbeat (disabled): tick #5
+2026-05-23 11:40:58PM [INF] HomeStats refreshed in 84 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-23 11:42:54PM [INF] WorldTickService heartbeat (disabled): tick #6
+2026-05-23 11:45:58PM [INF] HomeStats refreshed in 89 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-23 11:47:54PM [INF] WorldTickService heartbeat (disabled): tick #7
+2026-05-23 11:50:58PM [INF] HomeStats refreshed in 103 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-23 11:52:54PM [INF] WorldTickService heartbeat (disabled): tick #8
+2026-05-23 11:54:27PM [INF] StreetSamurai Blazor host started
+2026-05-23 11:54:30PM [INF] HomeStats refreshed in 2404 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-23 11:55:13PM [INF] GlobalSearch index warmed in 45903 ms
+2026-05-23 11:56:28PM [INF] WorldTickService heartbeat (disabled): tick #1
+2026-05-23 11:56:28PM [INF] Continuity long-sweep (full): 2 contradiction group(s)
+2026-05-23 11:59:30PM [INF] HomeStats refreshed in 97 ms (chars=1584, gear=2681, world=1384, episodes=2)
