@@ -154,34 +154,6 @@ window.homeBg = (function () {
         try { return canvas.toDataURL('image/png'); } catch (e) { return null; }
     }
 
-    // ── localStorage cache ───────────────────────────────────────────────────
-
-    var PREFIX = 'ss-home-bg:';
-
-    function cacheGet(key) {
-        try { return localStorage.getItem(PREFIX + key); } catch (e) { return null; }
-    }
-
-    function cacheSet(key, dataUrl) {
-        try {
-            localStorage.setItem(PREFIX + key, dataUrl);
-        } catch (e) {
-            evictAll();
-            try { localStorage.setItem(PREFIX + key, dataUrl); } catch (e2) {}
-        }
-    }
-
-    function evictAll() {
-        var victims = [];
-        try {
-            for (var i = 0; i < localStorage.length; i++) {
-                var k = localStorage.key(i);
-                if (k && k.indexOf(PREFIX) === 0) victims.push(k);
-            }
-            victims.forEach(function (k) { try { localStorage.removeItem(k); } catch (e) {} });
-        } catch (e) {}
-    }
-
     // ── Quake light-style opacity breathing ─────────────────────────────────
     // Classic Quake engine light sequences: each char is a brightness level,
     // 'a' = dark (0), 'm' = normal (0.5), 'z' = full bright (1).  Ticks ~10 Hz.
@@ -372,9 +344,6 @@ window.homeBg = (function () {
 
         stopScanlineAnim();
         stopLightFlicker();
-
-        // DEV: nuke any previously stored composites so nothing sneaks through
-        evictAll();
 
         var src = new Image();
         src.onload = function () {

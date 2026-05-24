@@ -2,6 +2,7 @@
 // Fires on 10% of page navigations (triggered from MainLayout.razor).
 (function () {
   var overlay = null;
+  var currentGen = 0;
 
   window.__tvStaticShow = function () {
     if (!overlay) {
@@ -10,6 +11,8 @@
       overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;z-index:9998;pointer-events:none;opacity:1;';
       document.body.appendChild(overlay);
     }
+    // Bump generation so any in-flight drawStatic from a prior call self-aborts.
+    var gen = ++currentGen;
     overlay.width = window.innerWidth;
     overlay.height = window.innerHeight;
     overlay.style.display = 'block';
@@ -26,6 +29,7 @@
     var hShiftMax = 10 + Math.floor(Math.random() * 30);
 
     function drawStatic() {
+      if (gen !== currentGen) return;
       var elapsed = performance.now() - start;
       var pct = elapsed / duration;
       if (pct >= 1) {
