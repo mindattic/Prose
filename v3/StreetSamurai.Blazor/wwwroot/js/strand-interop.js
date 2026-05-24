@@ -118,4 +118,21 @@
     window.streetsamurai.readInput            = readInput;
     window.streetsamurai.getCursorPosition    = getCursorPosition;
     window.streetsamurai.wrapSelection        = wrapSelection;
+
+    /// Set a textarea's height to exactly fit its content. No padding,
+    /// no extra blank rows. Called on every input + once on open so
+    /// the textarea matches the visual height of the prose it replaced
+    /// (Blazor's `rows` attribute is too coarse — it counts text-rows,
+    /// not wrapped-display-rows, which leaves blank space at the bottom).
+    function autoSizeTextarea(id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        // Reset to 0 first so shrink-on-delete works (scrollHeight only
+        // grows as content does; without resetting it stays at the peak).
+        el.style.height = '0px';
+        // scrollHeight is the content's intrinsic height; +2px is a fudge
+        // for browser sub-pixel rounding so the bottom line isn't clipped.
+        el.style.height = (el.scrollHeight + 2) + 'px';
+    }
+    window.streetsamurai.autoSizeTextarea     = autoSizeTextarea;
 })();
