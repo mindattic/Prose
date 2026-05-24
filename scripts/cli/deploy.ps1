@@ -5,7 +5,7 @@
 # to the Azure App Service "streetsamurai" slot. This local /deploy
 # wrapper makes sure the working tree is fully prepared before that fires:
 #
-#   1. Pulls subscribed components from the sibling MindAttic.UIUX
+#   1. Pulls subscribed components from the sibling MindAttic.UiUx
 #      repo via sync-streetsamurai.ps1 (CSS markers in wwwroot/app.css,
 #      JS files in wwwroot/js, etc.). Skip with -NoSync.
 #   2. Runs a local Release build of the Blazor host so we catch
@@ -38,7 +38,7 @@ $blazorProj = Join-Path $repoRoot 'v3\StreetSamurai.Blazor\StreetSamurai.Blazor.
 $blazorRoot = Split-Path -Parent $blazorProj
 
 # ---------------------------------------------------------------------------
-# 1. Pull subscribed components from MindAttic.UIUX
+# 1. Pull subscribed components from MindAttic.UiUx
 # ---------------------------------------------------------------------------
 # Sibling-repo discovery mirrors the pattern in v3/StreetSamurai.Blazor/
 # StreetSamurai.Blazor.csproj's SyncMindAtticComponents target. Override
@@ -47,15 +47,15 @@ if (-not $NoSync) {
     $componentsRoot = if ($env:MINDATTIC_COMPONENTS_ROOT) {
         $env:MINDATTIC_COMPONENTS_ROOT
     } else {
-        Join-Path (Split-Path -Parent $repoRoot) 'MindAttic.UIUX'
+        Join-Path (Split-Path -Parent $repoRoot) 'MindAttic.UiUx'
     }
     $syncScript = Join-Path $componentsRoot 'sync\sync-streetsamurai.ps1'
 
     if (-not (Test-Path $syncScript)) {
-        Write-Warning "MindAttic.UIUX sync script not found at: $syncScript"
+        Write-Warning "MindAttic.UiUx sync script not found at: $syncScript"
         Write-Warning "Skipping component sync. Set MINDATTIC_COMPONENTS_ROOT or pass -NoSync to silence."
     } else {
-        Write-Host "==> Syncing MindAttic.UIUX -> StreetSamurai ..."
+        Write-Host "==> Syncing MindAttic.UiUx -> StreetSamurai ..."
         & powershell.exe -NoProfile -ExecutionPolicy Bypass -File $syncScript -BlazorRoot $blazorRoot
         if ($LASTEXITCODE -ne 0) {
             Write-Error "sync-streetsamurai.ps1 failed (exit $LASTEXITCODE) -- aborting deploy."
@@ -125,7 +125,7 @@ try {
     if ($LASTEXITCODE -ne 0) { Write-Error "git add failed." }
 
     $stamp = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
-    $msg   = "Sync MindAttic.UIUX for deploy ($stamp)"
+    $msg   = "Sync MindAttic.UiUx for deploy ($stamp)"
     Write-Host "==> Committing: $msg"
     & git commit -m $msg
     if ($LASTEXITCODE -ne 0) { Write-Error "git commit failed." }
