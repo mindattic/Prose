@@ -25,13 +25,6 @@ public static class ServiceCollectionExtensions
         // hitting the "scoped DbContextOptions consumed by singleton factory"
         // validation error. A scoped DbContext registration below preserves
         // direct StreetSamuraiDbContext injection for callers that expect it.
-        // AzureSqlTokenInterceptor attaches an AAD token to every SqlConnection
-        // whose host is *.database.windows.net. Lets us authenticate via
-        // managed identity without putting Authentication=... in the
-        // connection string (which App Service's settings storage truncates
-        // when the value contains spaces — known bug, not fixable on the
-        // Azure side). For LocalDB connections the interceptor is a no-op.
-        services.AddSingleton<AzureSqlTokenInterceptor>();
         services.AddDbContextFactory<StreetSamuraiDbContext>((sp, opts) =>
         {
             var cfg = sp.GetService<IConfiguration>();
@@ -40,7 +33,6 @@ public static class ServiceCollectionExtensions
                 ?? cfg?.GetConnectionString("StreetSamurai")
                 ?? @"Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;";
             opts.UseSqlServer(connStr);
-            opts.AddInterceptors(sp.GetRequiredService<AzureSqlTokenInterceptor>());
         }, ServiceLifetime.Singleton);
         services.AddScoped<StreetSamuraiDbContext>(sp =>
             sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContext());
