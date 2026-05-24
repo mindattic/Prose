@@ -15,6 +15,11 @@
 (function () {
     'use strict';
 
+    // Idempotency: marker-block syncs can splice this script into a page that
+    // already runs it. Bail out so we don't stack duplicate observers/listeners.
+    if (window.__pinFooterInited) return;
+    window.__pinFooterInited = true;
+
     function pinAll() {
         var hasScrollbar = document.documentElement.scrollHeight > window.innerHeight;
         var targets = document.querySelectorAll('.pin-when-short');
@@ -23,19 +28,25 @@
         }
     }
 
+    // Coalesce rapid triggers (mutation bursts, resize storms) into one rAF.
+    var rafId = 0;
+    function schedulePin() {
+        if (rafId) return;
+        rafId = requestAnimationFrame(function () {
+            rafId = 0;
+            pinAll();
+        });
+    }
+
     function start() {
         pinAll();
-        window.addEventListener('resize', pinAll);
+        window.addEventListener('resize', schedulePin);
         // Re-evaluate after fonts/images settle (late reflow common on mindattic.com).
         if (document.fonts && document.fonts.ready) {
             document.fonts.ready.then(pinAll).catch(function () {});
         }
         // Catch any DOM growth that pushes content past the viewport later.
-        var lastH = document.documentElement.scrollHeight;
-        new MutationObserver(function () {
-            var h = document.documentElement.scrollHeight;
-            if (h !== lastH) { lastH = h; pinAll(); }
-        }).observe(document.body, { childList: true, subtree: true });
+        new MutationObserver(schedulePin).observe(document.body, { childList: true, subtree: true });
     }
 
     if (document.readyState === 'loading') {
