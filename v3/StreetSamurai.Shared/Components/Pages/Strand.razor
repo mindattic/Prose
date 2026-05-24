@@ -38,6 +38,11 @@
     .beat-row-1 { /* spacing handled by .mb-2 on the element */ }
     .beat-row-2 { min-height: 1.55rem; }
     .beat-row-3 { margin-top: 0.5rem; padding-top: 0.4rem; border-top: 1px solid #1f1f1f; }
+    /* Row 3 bottom bar: meta chips (left) + gap-after editor (right) in one flex line.
+       gap-inline shrinks but won't wrap below the chips unless the card is very narrow. */
+    .beat-row-3-bar { gap: 0.5rem; }
+    .beat-row-3-bar .beat-meta-chips { margin-top: 0; flex: 1 1 auto; min-width: 0; }
+    .beat-row-3-bar .beat-gap-inline { flex: 0 0 auto; }
 
     /* Inline checkbox replaces the absolute-positioned one. Slightly larger
        hit target so it's easy to click on mobile. */
@@ -144,12 +149,14 @@
        border cyan, so a textarea-specific focus rule is redundant and
        would risk shifting the box. Just kill the user-agent outline. */
     .beat-textarea:focus { outline: none; }
-    /* Save/Cancel float over the upper-right of an editing beat-card so they
-       don't add a layout block under the textarea. They share screen space
-       with the upper-right hover actions but those auto-hide on edit. */
-    .beat-card.editing .beat-actions { display: none; }
-    .beat-edit-actions { position: absolute; top: 0.5rem; right: 0.75rem; display: inline-flex; gap: 0.3rem; z-index: 5; }
-    .beat-edit-actions .btn { padding: 0.15rem 0.45rem; line-height: 1; }
+    /* Edit textarea sizes to content via JS interop (autoSizeTextarea).
+       Min-height matches the prose container so very short beats don't
+       collapse below readable size. */
+    .beat-textarea { min-height: 1.55rem; }
+    /* Save/Cancel render INLINE in the same .beat-actions row that holds
+       the read-mode copy/llm/mic/delete buttons — conditional swap, so
+       they can never overlap. The absolute-positioned .beat-edit-actions
+       overlay is gone. */
     .insert-bar { display: flex; align-items: center; gap: 0.5rem; opacity: 0; transition: opacity 0.15s ease; padding: 0.25rem 0; }
     .insert-bar:hover, .insert-bar:focus-within { opacity: 1; }
     .insert-bar-line { flex-grow: 1; height: 1px; background: #2a2a2a; }
@@ -441,57 +448,13 @@ else
                                 </button>
                             </div>
 
-                            @* Right-aligned hover actions. Fade in on .beat-card:hover (CSS).
-                               All icon-only with descriptive tooltips. Each wired to its
-                               handler with @onclick:stopPropagation so clicks don't bubble
-                               up and start an inline edit on the prose body. *@
+                            @* Right-aligned action cluster. In edit mode it's Save / Cancel;
+                               in read mode it's the regular copy / LLM / mic / delete row.
+                               Conditional inline (no absolute floater) so the two states
+                               cannot overlap each other regardless of layout. *@
                             <div class="beat-actions d-flex align-items-center gap-1 ms-auto">
-                                <button class="btn btn-sm btn-outline-secondary @(copiedTextBeatId == bid ? "copied" : "")"
-                                        title="@(copiedTextBeatId == bid ? "Copied!" : "Copy beat text to clipboard")"
-                                        @onclick="() => CopyBeatTextAsync(bid)"
-                                        @onclick:stopPropagation
-                                        data-cy="beat-copy-text">
-                                    <i class="bi @(copiedTextBeatId == bid ? "bi-check-lg" : "bi-clipboard")"></i>
-                                </button>
-                                <button class="btn btn-sm btn-outline-primary"
-                                        title="Ask the LLM to rewrite this beat"
-                                        @onclick="() => OpenLlmSheet(b)"
-                                        @onclick:stopPropagation
-                                        disabled="@working"
-                                        data-cy="beat-llm">
-                                    <i class="bi bi-stars"></i>
-                                </button>
-                                <button class="btn btn-sm btn-outline-info"
-                                        title="Re-record this beat's audio with ElevenLabs"
-                                        @onclick="() => RerecordOneAsync(bid)"
-                                        @onclick:stopPropagation
-                                        disabled="@working"
-                                        data-cy="beat-rerecord">
-                                    <i class="bi bi-mic"></i>
-                                </button>
-                                <button class="btn btn-sm btn-outline-danger"
-                                        title="Delete this beat (confirmation prompt)"
-                                        @onclick="() => RequestDeleteAsync(bid)"
-                                        @onclick:stopPropagation
-                                        disabled="@working"
-                                        data-cy="beat-delete">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        @* ── Row 2: readonly / textarea toggle. Same box either way.
-                           Edit mode reveals the raw markers ([WHISPERING], **bold**);
-                           read mode renders them as emoji + HTML formatting. ── *@
-                        <div class="beat-row-2">
-                            @if (isEditing)
-                            {
-                                <textarea class="beat-textarea" id="@($"beat-{bid:N}-edit")"
-                                          rows="@Math.Max(2, (editingText?.Length ?? 0) / 80 + 2)"
-                                          @bind="editingText"
-                                          @bind:event="oninput"
-                                          @onkeydown="@(e => OnEditorKeydown(e, bid))"></textarea>
-                                <div class="beat-edit-actions" title="⌘/Ctrl+Enter to save · Esc to cancel">
+                                @if (isEditing)
+                                {
                                     <button class="btn btn-sm btn-success"
                                             @onclick="() => SaveBeatEditAsync(bid)"
                                             disabled="@savingEdit"
@@ -506,7 +469,58 @@ else
                                             data-cy="beat-cancel">
                                         <i class="bi bi-x-lg"></i>
                                     </button>
-                                </div>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-sm btn-outline-secondary @(copiedTextBeatId == bid ? "copied" : "")"
+                                            title="@(copiedTextBeatId == bid ? "Copied!" : "Copy beat text to clipboard")"
+                                            @onclick="() => CopyBeatTextAsync(bid)"
+                                            @onclick:stopPropagation
+                                            data-cy="beat-copy-text">
+                                        <i class="bi @(copiedTextBeatId == bid ? "bi-check-lg" : "bi-clipboard")"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-primary"
+                                            title="Ask the LLM to rewrite this beat"
+                                            @onclick="() => OpenLlmSheet(b)"
+                                            @onclick:stopPropagation
+                                            disabled="@working"
+                                            data-cy="beat-llm">
+                                        <i class="bi bi-stars"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-info"
+                                            title="Re-record this beat's audio with ElevenLabs"
+                                            @onclick="() => RerecordOneAsync(bid)"
+                                            @onclick:stopPropagation
+                                            disabled="@working"
+                                            data-cy="beat-rerecord">
+                                        <i class="bi bi-mic"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-danger"
+                                            title="Delete this beat (confirmation prompt)"
+                                            @onclick="() => RequestDeleteAsync(bid)"
+                                            @onclick:stopPropagation
+                                            disabled="@working"
+                                            data-cy="beat-delete">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                }
+                            </div>
+                        </div>
+
+                        @* ── Row 2: readonly / textarea toggle. Same box either way.
+                           Edit mode reveals the raw markers ([WHISPERING], **bold**);
+                           read mode renders them as emoji + HTML formatting. ── *@
+                        <div class="beat-row-2">
+                            @if (isEditing)
+                            {
+                                @* No rows attribute — JS autoSizeTextarea sizes height
+                                   to content. CSS gives min-height matching the prose
+                                   container so cold-start has no jump either. *@
+                                <textarea class="beat-textarea" id="@($"beat-{bid:N}-edit")"
+                                          @bind="editingText"
+                                          @bind:event="oninput"
+                                          @onkeyup="@(() => AutoSizeTextareaAsync(bid))"
+                                          @onkeydown="@(e => OnEditorKeydown(e, bid))"></textarea>
                             }
                             else
                             {
@@ -554,15 +568,16 @@ else
                             }
                         </div>
 
-                        @* ── Row 3: footer band. Audio (if recorded), meta chips,
-                           the meta-panel (when open) and the gap-after editor. ── *@
+                        @* ── Row 3: footer band. Audio (if recorded), then a single
+                           flex row with meta chips (left) + gap-after editor
+                           (right). The meta-panel (when open) stacks below. ── *@
                         <div class="beat-row-3">
                             @if (!string.IsNullOrEmpty(b.AudioPath))
                             {
                                 <audio controls preload="none" class="beat-audio"
                                        src="@($"/api/strands/{strand.Id}/beat/{b.Id}/audio")"></audio>
                             }
-
+                            <div class="beat-row-3-bar d-flex justify-content-between align-items-center flex-wrap">
                         <div class="beat-meta-chips">
                             @{
                                 var tone  = b.EmotionalTone;
@@ -593,6 +608,28 @@ else
                                 @(metaOpenBeatId == bid ? "▲ details" : "▾ details")
                             </span>
                         </div>
+
+                            @* Gap-after editor — only shown when there's a next beat.
+                               Lives inside .beat-row-3-bar so it sits on the same flex
+                               row as the meta chips, right-aligned by justify-content. *@
+                            @if (!isLastBeat)
+                            {
+                                <div class="beat-gap-inline @(hasCustomGap ? "custom" : "")" title="@(hasCustomGap ? $"Custom gap: {displayGapMs}ms (auto would be {autoGapMs}ms)" : $"Auto gap: {autoGapMs}ms — type to override")">
+                                    <span class="text-muted small">gap after</span>
+                                    <input type="number" min="0" max="6000" step="50"
+                                           value="@displayGapMs"
+                                           id="@gapEditorId"
+                                           class="beat-gap-input"
+                                           @onkeydown="@(e => OnGapEditorKeydown(e, bid, gapEditorId))" />
+                                    <span class="text-muted small">ms @(hasCustomGap ? "(custom)" : "(auto)")</span>
+                                    <button class="btn btn-sm btn-link p-0 text-info" title="Save (Enter)" @onclick="@(() => SaveGapAfterFromInputAsync(bid, gapEditorId))">✓</button>
+                                    @if (hasCustomGap)
+                                    {
+                                        <button class="btn btn-sm btn-link p-0 text-warning" title="Reset to auto" @onclick="@(() => ResetGapAfterAsync(bid))">↺</button>
+                                    }
+                                </div>
+                            }
+                            </div> @* /beat-row-3-bar *@
 
                         @if (metaOpenBeatId == bid)
                         {
@@ -690,25 +727,6 @@ else
                                 </div>
                             </div>
                         }
-
-                            @* Gap-after editor — only shown when there's a next beat. *@
-                            @if (!isLastBeat)
-                            {
-                                <div class="beat-gap-inline @(hasCustomGap ? "custom" : "")" title="@(hasCustomGap ? $"Custom gap: {displayGapMs}ms (auto would be {autoGapMs}ms)" : $"Auto gap: {autoGapMs}ms — type to override")">
-                                    <span class="text-muted small">gap after</span>
-                                    <input type="number" min="0" max="6000" step="50"
-                                           value="@displayGapMs"
-                                           id="@gapEditorId"
-                                           class="beat-gap-input"
-                                           @onkeydown="@(e => OnGapEditorKeydown(e, bid, gapEditorId))" />
-                                    <span class="text-muted small">ms @(hasCustomGap ? "(custom)" : "(auto)")</span>
-                                    <button class="btn btn-sm btn-link p-0 text-info" title="Save (Enter)" @onclick="@(() => SaveGapAfterFromInputAsync(bid, gapEditorId))">✓</button>
-                                    @if (hasCustomGap)
-                                    {
-                                        <button class="btn btn-sm btn-link p-0 text-warning" title="Reset to auto" @onclick="@(() => ResetGapAfterAsync(bid))">↺</button>
-                                    }
-                                </div>
-                            }
                         </div> @* /beat-row-3 *@
                     </div>
 
@@ -952,6 +970,30 @@ else
             // server-prerender pass.
             await WireEscapeOnceAsync();
         }
+        // If a beat just entered edit mode, size its textarea to match the
+        // content height. Subsequent typing keeps it sized via @oninput on
+        // the textarea itself.
+        if (autoSizePendingBeatId is { } b)
+        {
+            autoSizePendingBeatId = null;
+            await AutoSizeTextareaAsync(b);
+        }
+    }
+
+    /// <summary>The beat id whose textarea was just revealed and needs an
+    /// initial autosize once the DOM has settled. Set by StartBeatEdit;
+    /// cleared by OnAfterRenderAsync after the JS interop call.</summary>
+    private Guid? autoSizePendingBeatId;
+
+    /// <summary>Tell the textarea for this beat to shrink/grow its height
+    /// to match its content. Called on every input + once when edit mode
+    /// opens. JS interop is wrapped in try/catch so we don't bubble up
+    /// when the script hasn't loaded yet (cold-start race).</summary>
+    private async Task AutoSizeTextareaAsync(Guid beatId)
+    {
+        var elementId = $"beat-{beatId:N}-edit";
+        try { await JS.InvokeVoidAsync("streetsamurai.autoSizeTextarea", elementId); }
+        catch { /* JS not yet loaded — initial autosize will fire on first input instead */ }
     }
 
     private async Task LoadAsync()
@@ -1040,6 +1082,9 @@ else
         editingBeatId = b.Id;
         editingText = b.Text ?? "";
         editingOriginalUpdatedAt = b.UpdatedAt;
+        // Flag so OnAfterRenderAsync sizes the new textarea to content
+        // height once the DOM exists.
+        autoSizePendingBeatId = b.Id;
         _ = Task.Run(async () =>
         {
             await Task.Delay(50);
