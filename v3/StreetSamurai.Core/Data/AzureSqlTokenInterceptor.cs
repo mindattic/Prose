@@ -67,22 +67,62 @@ public class AzureSqlTokenInterceptor : DbConnectionInterceptor
 
     private static void AttachTokenIfAzure(DbConnection connection)
     {
-        if (connection is not SqlConnection sqlConn) return;
-        // Idempotent — only fetch a token the first time a connection is
-        // opened (or whenever EF Core hands us a fresh SqlConnection).
-        if (!string.IsNullOrEmpty(sqlConn.AccessToken)) return;
-        if (!IsAzureSql(sqlConn)) return;
-        var token = Credential.GetToken(new TokenRequestContext(Scopes), default);
-        sqlConn.AccessToken = token.Token;
+        if (connection is not SqlConnection sqlConn)
+        {
+            Console.WriteLine($"[AzureSqlTokenInterceptor] skip: not a SqlConnection ({connection?.GetType().Name ?? "null"})");
+            return;
+        }
+        if (!string.IsNullOrEmpty(sqlConn.AccessToken))
+        {
+            Console.WriteLine("[AzureSqlTokenInterceptor] skip: AccessToken already set");
+            return;
+        }
+        if (!IsAzureSql(sqlConn))
+        {
+            Console.WriteLine($"[AzureSqlTokenInterceptor] skip: not Azure SQL (DataSource='{sqlConn.DataSource}')");
+            return;
+        }
+        try
+        {
+            var token = Credential.GetToken(new TokenRequestContext(Scopes), default);
+            sqlConn.AccessToken = token.Token;
+            Console.WriteLine($"[AzureSqlTokenInterceptor] attached token to {sqlConn.DataSource} (len={token.Token?.Length ?? 0})");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[AzureSqlTokenInterceptor] FAILED sync: {ex.GetType().Name}: {ex.Message}");
+            throw;
+        }
     }
 
     private static async ValueTask AttachTokenIfAzureAsync(DbConnection connection, CancellationToken ct)
     {
-        if (connection is not SqlConnection sqlConn) return;
-        if (!string.IsNullOrEmpty(sqlConn.AccessToken)) return;
-        if (!IsAzureSql(sqlConn)) return;
-        var token = await Credential.GetTokenAsync(new TokenRequestContext(Scopes), ct).ConfigureAwait(false);
-        sqlConn.AccessToken = token.Token;
+        if (connection is not SqlConnection sqlConn)
+        {
+            Console.WriteLine($"[AzureSqlTokenInterceptor] (async) skip: not a SqlConnection ({connection?.GetType().Name ?? "null"})");
+            return;
+        }
+        if (!string.IsNullOrEmpty(sqlConn.AccessToken))
+        {
+            Console.WriteLine("[AzureSqlTokenInterceptor] (async) skip: AccessToken already set");
+            return;
+        }
+        if (!IsAzureSql(sqlConn))
+        {
+            Console.WriteLine($"[AzureSqlTokenInterceptor] (async) skip: not Azure SQL (DataSource='{sqlConn.DataSource}')");
+            return;
+        }
+        try
+        {
+            var token = await Credential.GetTokenAsync(new TokenRequestContext(Scopes), ct).ConfigureAwait(false);
+            sqlConn.AccessToken = token.Token;
+            Console.WriteLine($"[AzureSqlTokenInterceptor] (async) attached token to {sqlConn.DataSource} (len={token.Token?.Length ?? 0})");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[AzureSqlTokenInterceptor] (async) FAILED: {ex.GetType().Name}: {ex.Message}");
+            throw;
+        }
     }
 
     private static bool IsAzureSql(SqlConnection conn)
