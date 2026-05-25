@@ -32,15 +32,28 @@
         }
     }
 
-    async function playBeatsInSequence(items) {
+    // The currently-installed Blazor callback, if any. Cleared when the
+    // sequence ends or is cancelled so we don't hold a reference longer
+    // than the playback session.
+    let progressCallback = null;
+
+    async function playBeatsInSequence(items, callbackRef) {
         if (!Array.isArray(items) || items.length === 0) return;
         stopSequence();
         cancelled = false;
+        progressCallback = callbackRef ?? null;
 
         for (let i = 0; i < items.length; i++) {
             if (cancelled) return;
             const it = items[i];
             if (!it || !it.audioUrl) continue;
+            // Resume-from-here: tell C# which beat is about to play so the
+            // strand row's LastPlayedBeatId / LastPlayedSec stay current.
+            // Fire-and-forget — a failed invoke shouldn't stall playback.
+            if (progressCallback && it.beatId) {
+                try { progressCallback.invokeMethodAsync('OnBeatStarted', it.beatId); }
+                catch (e) { /* ignore — JS continues regardless */ }
+            }
             await playOne(it.audioUrl);
             if (cancelled) return;
             const pause = Math.max(0, Number(it.pauseMs) || 0);
@@ -48,6 +61,7 @@
                 await sleep(pause);
             }
         }
+        progressCallback = null;
     }
 
     function playOne(url) {
@@ -118,6 +132,129 @@
     window.streetsamurai.readInput            = readInput;
     window.streetsamurai.getCursorPosition    = getCursorPosition;
     window.streetsamurai.wrapSelection        = wrapSelection;
+
+    // Per-instance Escape handler: each call returns a token that the caller
+    // can pass to uninstallPageEscape on teardown. Priority order matches the
+    // old eval-installed handler — modal cancel first, then selection-bar
+    // clear — but the listener is now tracked and removable, so navigating
+    // away from /strand/X doesn't leak the handler onto the next page.
+    let escapeRegistry = new Map();
+    let escapeNextToken = 1;
+    function installPageEscape() {
+        const token = (escapeNextToken++).toString();
+        const handler = function (e) {
+            if (e.key !== 'Escape') return;
+            const cancel = document.querySelector('.modal.d-block .modal-footer .btn-outline-secondary');
+            if (cancel) { cancel.click(); return; }
+            const clear = document.querySelector('[data-cy="clear-selection"]');
+            if (clear) { clear.click(); return; }
+        };
+        document.addEventListener('keydown', handler);
+        escapeRegistry.set(token, handler);
+        return token;
+    }
+    function uninstallPageEscape(token) {
+        if (!token) return;
+        const handler = escapeRegistry.get(token);
+        if (handler) {
+            document.removeEventListener('keydown', handler);
+            escapeRegistry.delete(token);
+        }
+    }
+    window.streetsamurai.installPageEscape    = installPageEscape;
+    window.streetsamurai.uninstallPageEscape  = uninstallPageEscape;
+
+    // Drag-reorder support: HTML5 dragstart sets the dragged beat id +
+    // owning strand id on the dataTransfer payload; the drop handler reads
+    // both, rejects cross-strand drops (MoveBeatAsync only re-orders within
+    // one strand — cross-strand re-parenting is a future feature), and calls
+    // back into Blazor on accept. Pure DOM — no Blazor event-marshalling
+    // overhead per pointermove.
+    function attachBeatDragHandlers(rootId, callbackRef) {
+        const root = document.getElementById(rootId);
+        if (!root || !callbackRef) return;
+        // Idempotent: re-attaching is a no-op (the handlers live on the
+        // delegated root listener, no per-row state to clean up).
+        if (root.__ssDragAttached) return;
+        root.__ssDragAttached = true;
+
+        function sameStrand(rowA, rowB) {
+            const a = rowA.getAttribute('data-strand-id') || '';
+            const b = rowB.getAttribute('data-strand-id') || '';
+            return a && b && a === b;
+        }
+
+        root.addEventListener('dragstart', function (e) {
+            const row = e.target.closest('[data-beat-id]');
+            if (!row) return;
+            const beatId   = row.getAttribute('data-beat-id');
+            const strandId = row.getAttribute('data-strand-id') || '';
+            if (!beatId) return;
+            e.dataTransfer.setData('text/x-beat-id', beatId);
+            e.dataTransfer.setData('text/x-strand-id', strandId);
+            e.dataTransfer.effectAllowed = 'move';
+            row.classList.add('beat-dragging');
+        });
+        root.addEventListener('dragend', function (e) {
+            const row = e.target.closest('[data-beat-id]');
+            if (row) row.classList.remove('beat-dragging');
+            root.querySelectorAll('.beat-drop-target, .beat-drop-blocked').forEach(el =>
+                el.classList.remove('beat-drop-target', 'beat-drop-blocked'));
+        });
+        root.addEventListener('dragover', function (e) {
+            const row = e.target.closest('[data-beat-id]');
+            if (!row) return;
+            const dragging = root.querySelector('.beat-dragging');
+            const ok = dragging ? sameStrand(dragging, row) : true;
+            // Always preventDefault so the browser shows "no drop allowed"
+            // cursor instead of bouncing the drag back — we want feedback,
+            // not silence, when the user attempts a cross-strand drop.
+            e.preventDefault();
+            e.dataTransfer.dropEffect = ok ? 'move' : 'none';
+            // Toggle the drop-target ring on the row currently hovered;
+            // cross-strand drops get a different ring colour via .beat-drop-blocked.
+            root.querySelectorAll('.beat-drop-target, .beat-drop-blocked').forEach(el => {
+                if (el !== row) el.classList.remove('beat-drop-target', 'beat-drop-blocked');
+            });
+            row.classList.toggle('beat-drop-target', ok);
+            row.classList.toggle('beat-drop-blocked', !ok);
+        });
+        root.addEventListener('dragleave', function (e) {
+            const row = e.target.closest('[data-beat-id]');
+            if (row && !row.contains(e.relatedTarget))
+                row.classList.remove('beat-drop-target', 'beat-drop-blocked');
+        });
+        root.addEventListener('drop', function (e) {
+            const row = e.target.closest('[data-beat-id]');
+            if (!row) return;
+            e.preventDefault();
+            const draggedId       = e.dataTransfer.getData('text/x-beat-id');
+            const draggedStrandId = e.dataTransfer.getData('text/x-strand-id');
+            const targetId        = row.getAttribute('data-beat-id');
+            const targetStrandId  = row.getAttribute('data-strand-id') || '';
+            row.classList.remove('beat-drop-target', 'beat-drop-blocked');
+            if (!draggedId || !targetId || draggedId === targetId) return;
+            // Cross-strand drop: tell Blazor so it can toast the user with
+            // a clear "not supported yet" hint instead of silently dropping.
+            if (draggedStrandId && targetStrandId && draggedStrandId !== targetStrandId) {
+                try { callbackRef.invokeMethodAsync('OnCrossStrandDropRejected'); }
+                catch (err) { /* ignore */ }
+                return;
+            }
+            try { callbackRef.invokeMethodAsync('OnBeatDropped', draggedId, targetId); }
+            catch (err) { /* Blazor side logs */ }
+        });
+    }
+    window.streetsamurai.attachBeatDragHandlers = attachBeatDragHandlers;
+
+    // Scroll a beat into view by guid. No-op when the row hasn't rendered
+    // yet (page still loading). Used by the resume-from-here feature.
+    function scrollBeatIntoView(beatGuid) {
+        const id = 'beat-' + beatGuid.replace(/-/g, '');
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    window.streetsamurai.scrollBeatIntoView   = scrollBeatIntoView;
 
     /// Set a textarea's height to exactly fit its content. No padding,
     /// no extra blank rows. Called on every input + once on open so

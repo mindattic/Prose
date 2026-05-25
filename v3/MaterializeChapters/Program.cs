@@ -56,7 +56,13 @@ foreach (var c in emptyChapters)
 {
     try
     {
+        // This tool is the sanctioned consumer of MaterializeChapterFromHtmlAsync —
+        // it exists precisely to drain legacy Records.Json chapters into the
+        // unified Beat schema. Suppress the obsolete warning here so it stays
+        // loud everywhere else.
+#pragma warning disable CS0618
         var beats = await workbench.MaterializeChapterFromHtmlAsync(c.Id);
+#pragma warning restore CS0618
         if (beats > 0)
         {
             Console.WriteLine($"  ✓ {c.Title}: {beats} beats");

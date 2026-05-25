@@ -2,9 +2,11 @@
 @attribute [Authorize(Roles = "Contributor,Administrator")]
 @using Microsoft.EntityFrameworkCore
 @using StreetSamurai.Core.Data
+@using StreetSamurai.Shared.Services
 @using StrandEntity = StreetSamurai.Core.Data.Entities.Strand
 @inject IDbContextFactory<StreetSamuraiDbContext> DbFactory
 @inject NavigationManager Nav
+@inject ToastNotifier Toast
 
 @*
    Strand index. Lists every strand grouped by kind. Click to open in the
@@ -125,18 +127,48 @@
             .Where(s => s.ParentStrandId == null) // top-level only on this view
             .AsNoTracking()
             .ToListAsync();
-        var ids = strands.Select(s => s.Id).ToList();
-        // Pull both counts in one DB round-trip each, then lookup per-row.
-        beatCounts = await db.StrandBeats
-            .Where(sb => ids.Contains(sb.StrandId))
-            .GroupBy(sb => sb.StrandId)
-            .Select(g => new { Id = g.Key, Count = g.Count() })
-            .ToDictionaryAsync(x => x.Id, x => x.Count);
-        childCounts = await db.Strands
-            .Where(s => s.ParentStrandId != null && ids.Contains(s.ParentStrandId!.Value))
+        var ids = strands.Select(s => s.Id).ToHashSet();
+
+        // Recursive descendant count: walk the parent → children map in memory
+        // so a book strand reports total beats across all chapter children,
+        // not just the (zero) direct memberships. Single Strand read + single
+        // StrandBeat read covers the whole site; the in-memory rollup is O(N)
+        // and cheaper than a recursive CTE per row.
+        var parentMap = await db.Strands
+            .AsNoTracking()
+            .Where(s => s.ParentStrandId != null)
+            .Select(s => new { s.Id, s.ParentStrandId })
+            .ToListAsync();
+        var byParent = parentMap
             .GroupBy(s => s.ParentStrandId!.Value)
-            .Select(g => new { Id = g.Key, Count = g.Count() })
-            .ToDictionaryAsync(x => x.Id, x => x.Count);
+            .ToDictionary(g => g.Key, g => g.Select(x => x.Id).ToList());
+
+        var perStrandBeatCount = await db.StrandBeats
+            .GroupBy(sb => sb.StrandId)
+            .Select(g => new { StrandId = g.Key, Count = g.Count() })
+            .ToDictionaryAsync(x => x.StrandId, x => x.Count);
+
+        beatCounts = new Dictionary<Guid, int>(ids.Count);
+        foreach (var top in ids)
+        {
+            int total = 0;
+            var stack = new Stack<Guid>();
+            stack.Push(top);
+            var visited = new HashSet<Guid>();
+            while (stack.Count > 0)
+            {
+                var id = stack.Pop();
+                if (!visited.Add(id)) continue; // cycle guard
+                total += perStrandBeatCount.GetValueOrDefault(id, 0);
+                if (byParent.TryGetValue(id, out var kids))
+                    foreach (var k in kids) stack.Push(k);
+            }
+            beatCounts[top] = total;
+        }
+
+        childCounts = byParent
+            .Where(kvp => ids.Contains(kvp.Key))
+            .ToDictionary(kvp => kvp.Key, kvp => kvp.Value.Count);
         grouped = strands.GroupBy(s => s.Kind).OrderBy(g => g.Key);
         loading = false;
         StateHasChanged();
@@ -161,7 +193,24 @@
             Status = "draft",
             SortKey = (strands.Count + 1) * 100.0,
         });
-        await db.SaveChangesAsync();
+        try
+        {
+            await db.SaveChangesAsync();
+        }
+        catch (DbUpdateException ex)
+        {
+            // Slug collision is the only foreseeable unique-index hit here
+            // (two near-simultaneous creates whose titles slugify to the same
+            // base AND whose 8-char id prefixes collide — vanishingly rare
+            // but not impossible). Surface a friendly retry hint instead of
+            // letting the raw SqlException bubble up to the user.
+            var msg = ex.InnerException?.Message ?? ex.Message;
+            Toast.Error("STRAND-CREATE-FAIL",
+                msg.Contains("UNIQUE", StringComparison.OrdinalIgnoreCase) || msg.Contains("duplicate", StringComparison.OrdinalIgnoreCase)
+                    ? "A strand with that slug already exists. Try a different title or click Create again — the id suffix will reshuffle."
+                    : $"Couldn't save the new strand: {msg}");
+            return;
+        }
         Nav.NavigateTo($"/strand/{slug}");
     }
 

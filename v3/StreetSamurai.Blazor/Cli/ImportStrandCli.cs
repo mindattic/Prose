@@ -1,0 +1,411 @@
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
+using StreetSamurai.Core.Services;
+
+namespace StreetSamurai.Blazor.Cli;
+
+/// <summary>
+/// <c>ss --import-strand --file path.strand</c> — materialize a strand from a
+/// human-authored "beat + gap + beat" text file. The complement to
+/// <see cref="WriteStrandCli"/> (which generates strands via the LLM) — this
+/// is for hand-authored content (a draft pasted in from a chat, a transcript,
+/// a rewrite from an external editor).
+///
+/// File format ("<c>.strand</c>"):
+/// <code>
+/// # Title: Optional strand title (overrides --title)
+/// # Kind: episode | scene | chapter | book | …
+/// # Voice: optional-elevenlabs-voice-id
+/// # Synopsis: One-line description (optional)
+///
+/// %% beat
+/// First beat prose. Multiple lines are allowed and become one Beat.Text.
+///
+/// %% beat tone:tense pace:clipped
+/// Second beat. The key:value pairs are per-beat metadata that map onto
+/// the Beat columns. Recognised keys: title, tone, pace, facet, kind,
+/// scene-type, structure-role, act, gap, chapter, voice.
+///
+/// %% gap 800
+/// A standalone gap line sets the PRECEDING beat's GapAfterMs override.
+/// You can also write 'gap:800' on the next %% beat line — same effect.
+///
+/// %% beat chapter:"After the Fall" gap:1500
+/// This beat starts a new chapter; the chapter heading is "After the Fall".
+/// </code>
+///
+/// Args:
+///   --file PATH        Required. Path to the .strand file (or "-" for stdin).
+///   --title "..."      Override the file's # Title header.
+///   --kind KIND        Override the file's # Kind header. Default "episode".
+///   --slug SLUG        Force a specific slug (else derived from title).
+///   --parent SLUG      Attach the new strand as a child of an existing strand
+///                      (e.g. a book strand for a chapter import).
+///   --dry-run          Parse only — don't write anything.
+///
+/// Output: the new Strand's id + slug + URL, plus a beat count.
+/// </summary>
+public static class ImportStrandCli
+{
+    public static async Task<int> RunAsync(string[] args, IServiceProvider services)
+    {
+        string? file = null, titleOverride = null, kindOverride = null, slugOverride = null, parentSlug = null;
+        bool dryRun = false;
+        for (int i = 0; i < args.Length; i++)
+        {
+            switch (args[i])
+            {
+                case "--file":    if (i + 1 < args.Length) file = args[++i]; break;
+                case "--title":   if (i + 1 < args.Length) titleOverride = args[++i]; break;
+                case "--kind":    if (i + 1 < args.Length) kindOverride = args[++i]; break;
+                case "--slug":    if (i + 1 < args.Length) slugOverride = args[++i]; break;
+                case "--parent":  if (i + 1 < args.Length) parentSlug = args[++i]; break;
+                case "--dry-run": dryRun = true; break;
+            }
+        }
+
+        if (string.IsNullOrWhiteSpace(file))
+        {
+            Console.Error.WriteLine("[import-strand] --file is required (or '-' for stdin).");
+            Console.Error.WriteLine("Usage: ss --import-strand --file path.strand [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]");
+            return 2;
+        }
+
+        string raw;
+        if (file == "-")
+        {
+            raw = await Console.In.ReadToEndAsync();
+        }
+        else
+        {
+            if (!File.Exists(file))
+            {
+                Console.Error.WriteLine($"[import-strand] File not found: {file}");
+                return 1;
+            }
+            raw = await File.ReadAllTextAsync(file);
+        }
+
+        ParsedStrandFile parsed;
+        try { parsed = StrandFileParser.Parse(raw); }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"[import-strand] Parse failed: {ex.Message}");
+            return 1;
+        }
+
+        if (parsed.Beats.Count == 0)
+        {
+            Console.Error.WriteLine("[import-strand] No beats found in the file.");
+            return 1;
+        }
+
+        var title = !string.IsNullOrWhiteSpace(titleOverride) ? titleOverride : parsed.Title;
+        if (string.IsNullOrWhiteSpace(title))
+        {
+            Console.Error.WriteLine("[import-strand] No # Title: header and no --title override.");
+            return 1;
+        }
+        var kind = !string.IsNullOrWhiteSpace(kindOverride) ? kindOverride : (parsed.Kind ?? "episode");
+
+        Console.WriteLine($"[import-strand] file={file} title=\"{title}\" kind={kind} beats={parsed.Beats.Count} dry-run={dryRun}");
+        for (int i = 0; i < parsed.Beats.Count; i++)
+        {
+            var b = parsed.Beats[i];
+            var preview = b.Text.Length > 60 ? b.Text[..60].Replace('\n', ' ') + "…" : b.Text.Replace('\n', ' ');
+            var meta = new List<string>();
+            if (!string.IsNullOrEmpty(b.BeatTitle)) meta.Add($"title=\"{b.BeatTitle}\"");
+            if (b.IsChapterStart) meta.Add("chapter-start");
+            if (!string.IsNullOrEmpty(b.EmotionalTone)) meta.Add($"tone={b.EmotionalTone}");
+            if (!string.IsNullOrEmpty(b.PaceHint)) meta.Add($"pace={b.PaceHint}");
+            if (!string.IsNullOrEmpty(b.FacetTag)) meta.Add($"facet={b.FacetTag}");
+            if (b.GapAfterMs.HasValue) meta.Add($"gap={b.GapAfterMs}ms");
+            if (b.SceneType != "scene") meta.Add($"scene={b.SceneType}");
+            var metaStr = meta.Count > 0 ? "  [" + string.Join(' ', meta) + "]" : "";
+            Console.WriteLine($"  {i + 1,3}. {preview}{metaStr}");
+        }
+
+        if (dryRun) { Console.WriteLine("[import-strand] dry-run — nothing written."); return 0; }
+
+        var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
+        await using var db = await dbFactory.CreateDbContextAsync();
+
+        Guid? parentStrandId = null;
+        if (!string.IsNullOrWhiteSpace(parentSlug))
+        {
+            var p = await db.Strands.FirstOrDefaultAsync(s => s.Slug == parentSlug);
+            if (p == null) { Console.Error.WriteLine($"[import-strand] --parent slug not found: {parentSlug}"); return 1; }
+            parentStrandId = p.Id;
+        }
+
+        var strandId = Guid.CreateVersion7();
+        var slug = !string.IsNullOrWhiteSpace(slugOverride)
+            ? slugOverride!
+            : $"{Slugify(title)}-{strandId.ToString("N")[..8]}";
+
+        var siblingMaxSort = parentStrandId.HasValue
+            ? await db.Strands.Where(s => s.ParentStrandId == parentStrandId).Select(s => (double?)s.SortKey).MaxAsync() ?? 0
+            : await db.Strands.Where(s => s.ParentStrandId == null).Select(s => (double?)s.SortKey).MaxAsync() ?? 0;
+
+        var strand = new Strand
+        {
+            Id              = strandId,
+            Slug            = slug,
+            Title           = title!,
+            Kind            = kind,
+            Status          = "draft",
+            Synopsis        = parsed.Synopsis,
+            VoiceId         = parsed.VoiceId,
+            ParentStrandId  = parentStrandId,
+            SortKey         = siblingMaxSort + 100.0,
+        };
+        db.Strands.Add(strand);
+
+        // Pre-allocate a contiguous block of Beat.Number values in one round-trip
+        // — matches the pattern in StrandWorkbenchService.SplitBeatByParagraphsAsync.
+        var baseNumber = (await db.Beats.MaxAsync(b => (int?)b.Number) ?? 0) + 1;
+        double sortKey = 100.0;
+        for (int i = 0; i < parsed.Beats.Count; i++)
+        {
+            var pb = parsed.Beats[i];
+            var beat = new Beat
+            {
+                Id             = Guid.CreateVersion7(),
+                Number         = baseNumber + i,
+                Text           = pb.Text,
+                TextHash       = string.IsNullOrEmpty(pb.Text) ? null : StrandWorkbenchService.ComputeTextHash(pb.Text),
+                BeatTitle      = pb.BeatTitle,
+                IsChapterStart = pb.IsChapterStart,
+                Kind           = string.IsNullOrEmpty(pb.Kind) ? "prose" : pb.Kind,
+                Synopsis       = pb.Synopsis,
+                StructureRole  = pb.StructureRole,
+                Act            = pb.Act,
+                SceneType      = string.IsNullOrEmpty(pb.SceneType) ? "scene" : pb.SceneType,
+                FacetTag       = pb.FacetTag,
+                EmotionalTone  = pb.EmotionalTone,
+                PaceHint       = pb.PaceHint,
+                GapAfterMs     = pb.GapAfterMs,
+                VoiceId        = pb.VoiceId,
+            };
+            db.Beats.Add(beat);
+            db.StrandBeats.Add(new StrandBeat { StrandId = strandId, BeatId = beat.Id, SortKey = sortKey });
+            sortKey += 100.0;
+        }
+
+        await db.SaveChangesAsync();
+
+        Console.WriteLine();
+        Console.WriteLine($"[import-strand] OK — {parsed.Beats.Count} beats written.");
+        Console.WriteLine($"   Id:    {strandId}");
+        Console.WriteLine($"   Slug:  {slug}");
+        Console.WriteLine($"   Title: {title}");
+        Console.WriteLine($"   Kind:  {kind}");
+        if (parentStrandId.HasValue) Console.WriteLine($"   Parent: {parentSlug} ({parentStrandId})");
+        Console.WriteLine($"   URL:   https://localhost:7103/strand/{slug}");
+        Console.WriteLine($"   Next:  open the URL to edit, or run ss --narrate-strand --slug {slug} to record.");
+        return 0;
+    }
+
+    private static string Slugify(string s)
+    {
+        if (string.IsNullOrWhiteSpace(s)) return "strand";
+        var lower = s.ToLowerInvariant();
+        var ascii = System.Text.RegularExpressions.Regex.Replace(lower, @"[^a-z0-9]+", "-").Trim('-');
+        return string.IsNullOrEmpty(ascii) ? "strand" : ascii;
+    }
+}
+
+/// <summary>Parsed representation of a .strand file. Public on purpose so unit
+/// tests can drive the parser directly without going through the CLI.</summary>
+public sealed class ParsedStrandFile
+{
+    public string? Title { get; set; }
+    public string? Kind { get; set; }
+    public string? Synopsis { get; set; }
+    public string? VoiceId { get; set; }
+    public List<ParsedBeat> Beats { get; } = new();
+}
+
+public sealed class ParsedBeat
+{
+    public string Text { get; set; } = "";
+    public string? BeatTitle { get; set; }
+    public bool IsChapterStart { get; set; }
+    public string Kind { get; set; } = "prose";
+    public string? Synopsis { get; set; }
+    public string? StructureRole { get; set; }
+    public int Act { get; set; }
+    public string SceneType { get; set; } = "scene";
+    public string? FacetTag { get; set; }
+    public string? EmotionalTone { get; set; }
+    public string? PaceHint { get; set; }
+    public int? GapAfterMs { get; set; }
+    public string? VoiceId { get; set; }
+}
+
+/// <summary>
+/// Parser for the .strand text format. See <see cref="ImportStrandCli"/> for
+/// the format spec. Designed to be liberal about whitespace and forgiving on
+/// unknown keys (logs and skips, doesn't throw — so writers can paste rough
+/// drafts and iterate).
+/// </summary>
+public static class StrandFileParser
+{
+    private const string BeatMarker = "%% beat";
+    private const string GapMarker  = "%% gap";
+
+    public static ParsedStrandFile Parse(string content)
+    {
+        var result = new ParsedStrandFile();
+        if (string.IsNullOrEmpty(content)) return result;
+
+        // Normalise newlines so the line-by-line loop is platform-independent.
+        var lines = content.Replace("\r\n", "\n").Replace("\r", "\n").Split('\n');
+
+        ParsedBeat? current = null;
+        var buf = new System.Text.StringBuilder();
+        bool inFrontMatter = true;
+
+        void Flush()
+        {
+            if (current == null) return;
+            current.Text = buf.ToString().Trim();
+            // Discard beats that have no prose AND no metadata worth keeping.
+            // (An empty %% beat followed immediately by another %% beat with
+            // no text between them is a writer oversight, not a real beat.)
+            if (current.Text.Length > 0 || current.IsChapterStart || !string.IsNullOrEmpty(current.BeatTitle))
+                result.Beats.Add(current);
+            current = null;
+            buf.Clear();
+        }
+
+        for (int li = 0; li < lines.Length; li++)
+        {
+            var line = lines[li];
+            var trimmed = line.Trim();
+
+            // Front matter: leading lines starting with "# Key: value". Stops
+            // at the first non-empty non-# line (which is typically the first
+            // %% beat marker).
+            if (inFrontMatter)
+            {
+                if (trimmed.Length == 0) continue;
+                if (trimmed.StartsWith('#'))
+                {
+                    var headerBody = trimmed.TrimStart('#').Trim();
+                    var colon = headerBody.IndexOf(':');
+                    if (colon > 0)
+                    {
+                        var key = headerBody[..colon].Trim().ToLowerInvariant();
+                        var val = headerBody[(colon + 1)..].Trim();
+                        switch (key)
+                        {
+                            case "title":    result.Title = val; break;
+                            case "kind":     result.Kind = val; break;
+                            case "synopsis": result.Synopsis = val; break;
+                            case "voice":    result.VoiceId = val; break;
+                        }
+                    }
+                    continue;
+                }
+                inFrontMatter = false;
+                // fall through to body processing
+            }
+
+            // %% gap N : sets the preceding beat's GapAfterMs override.
+            if (trimmed.StartsWith(GapMarker, StringComparison.OrdinalIgnoreCase))
+            {
+                var rest = trimmed[GapMarker.Length..].Trim();
+                if (int.TryParse(rest.TrimEnd('m', 's', 'M', 'S'), out var ms) && result.Beats.Count > 0)
+                {
+                    result.Beats[^1].GapAfterMs = Math.Clamp(ms, 0, 6000);
+                }
+                continue;
+            }
+
+            // %% beat [key:value …] : starts a new beat. Any text after the
+            // marker is parsed as per-beat metadata (the prose starts on the
+            // following line).
+            if (trimmed.StartsWith(BeatMarker, StringComparison.OrdinalIgnoreCase))
+            {
+                Flush();
+                current = new ParsedBeat();
+                var metaLine = trimmed[BeatMarker.Length..].Trim();
+                if (metaLine.Length > 0) ApplyMetaTokens(current, metaLine, result);
+                continue;
+            }
+
+            if (current == null)
+            {
+                // Body text before any %% beat marker — implicit first beat.
+                current = new ParsedBeat();
+            }
+            buf.Append(line).Append('\n');
+        }
+        Flush();
+        return result;
+    }
+
+    /// <summary>Parse a "key:value foo:\"quoted bar\"" metadata string from a
+    /// %% beat line. Liberal: unknown keys are silently ignored so future
+    /// schemas don't break older imports.</summary>
+    private static void ApplyMetaTokens(ParsedBeat beat, string metaLine, ParsedStrandFile file)
+    {
+        foreach (var (key, val) in TokeniseMeta(metaLine))
+        {
+            switch (key.ToLowerInvariant())
+            {
+                case "title":         beat.BeatTitle = val; break;
+                case "synopsis":      beat.Synopsis = val; break;
+                case "tone":          beat.EmotionalTone = val.ToLowerInvariant(); break;
+                case "pace":          beat.PaceHint = val.ToLowerInvariant(); break;
+                case "facet":         beat.FacetTag = val.ToUpperInvariant(); break;
+                case "kind":          beat.Kind = val.ToLowerInvariant(); break;
+                case "scene-type":
+                case "scene":         beat.SceneType = val.ToLowerInvariant(); break;
+                case "structure":
+                case "structure-role":beat.StructureRole = val; break;
+                case "act":           if (int.TryParse(val, out var act)) beat.Act = act; break;
+                case "gap":           if (int.TryParse(val.TrimEnd('m','s'), out var ms)) beat.GapAfterMs = Math.Clamp(ms, 0, 6000); break;
+                case "chapter":       beat.IsChapterStart = true; beat.BeatTitle = val; break;
+                case "voice":         beat.VoiceId = val; break;
+            }
+        }
+    }
+
+    /// <summary>Yield key/value pairs from a meta string, handling double-quoted
+    /// values that may contain spaces. Forgiving on malformed input — partial
+    /// pairs are dropped rather than throwing.</summary>
+    private static IEnumerable<(string Key, string Value)> TokeniseMeta(string s)
+    {
+        int i = 0;
+        while (i < s.Length)
+        {
+            while (i < s.Length && char.IsWhiteSpace(s[i])) i++;
+            if (i >= s.Length) yield break;
+
+            int keyStart = i;
+            while (i < s.Length && s[i] != ':' && !char.IsWhiteSpace(s[i])) i++;
+            if (i >= s.Length || s[i] != ':') yield break;
+            var key = s[keyStart..i];
+            i++; // skip ':'
+
+            string val;
+            if (i < s.Length && s[i] == '"')
+            {
+                i++; int valStart = i;
+                while (i < s.Length && s[i] != '"') i++;
+                val = s[valStart..i];
+                if (i < s.Length) i++; // closing quote
+            }
+            else
+            {
+                int valStart = i;
+                while (i < s.Length && !char.IsWhiteSpace(s[i])) i++;
+                val = s[valStart..i];
+            }
+            if (!string.IsNullOrEmpty(key)) yield return (key, val);
+        }
+    }
+}

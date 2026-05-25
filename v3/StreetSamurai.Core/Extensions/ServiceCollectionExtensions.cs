@@ -54,6 +54,36 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<SettingsService>();
         services.AddSingleton<ISecurePreferences, FileSecurePreferences>();
         services.AddSingleton<IPathProvider, FileSystemPathProvider>();
+        // Audio bytes backend. Three modes via AudioStore:Provider:
+        //
+        //   "local"     (default)  — LocalDiskAudioStore. Files under
+        //                            MutableDataDir/strands/{slug}/audio/…
+        //   "azureblob"             — AzureBlobAudioStore. Bytes in an Azure
+        //                            Blob container; needs AudioStore:
+        //                            ConnectionString + AudioStore:Container.
+        //   "dual"                  — DualWriteAudioStore. Writes to BOTH
+        //                            local + blob; reads local first, falls
+        //                            back to blob. Designed for "Azure is a
+        //                            replica, local is the cache" deployments
+        //                            so recording works offline and bytes
+        //                            survive when either side has trouble.
+        //
+        // Env-var fallbacks: AudioStore__Provider (and the per-backend keys
+        // the individual stores read). The interface keeps StrandWorkbenchService
+        // backend-agnostic — see IAudioStore docs.
+        services.AddSingleton<IAudioStore>(sp =>
+        {
+            var config = sp.GetService<Microsoft.Extensions.Configuration.IConfiguration>();
+            var provider = config?["AudioStore:Provider"]
+                ?? Environment.GetEnvironmentVariable("AudioStore__Provider")
+                ?? "local";
+            return provider.ToLowerInvariant() switch
+            {
+                "azureblob" => ActivatorUtilities.CreateInstance<AzureBlobAudioStore>(sp),
+                "dual"      => BuildDualStore(sp, config),
+                _           => ActivatorUtilities.CreateInstance<LocalDiskAudioStore>(sp),
+            };
+        });
         // Typed repositories — every directory repo now lives on the unified
         // SQL Server StreetSamurai database via EfRepository<T>. The explicit
         // factory functions disambiguate between the production
@@ -327,7 +357,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ChapterRecordingService>();
         services.AddSingleton<StrandMigrationService>();
         services.AddSingleton<StrandWorkbenchService>();
-        services.AddSingleton<BeatContextService>();
         services.AddSingleton<WritingQualityService>();
         services.AddSingleton(sp => new MotifService(
             sp.GetRequiredService<SettingsKvStore>(),
@@ -603,5 +632,32 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntityRatingService>();
 
         return services;
+    }
+
+    /// <summary>Compose a DualWriteAudioStore from two sub-providers. Defaults
+    /// are local primary + Azure blob secondary — the typical "Azure as
+    /// replica" deployment. Override via AudioStore:Primary / AudioStore:Secondary
+    /// to flip the roles (e.g. blob primary, local cache).</summary>
+    private static IAudioStore BuildDualStore(IServiceProvider sp, Microsoft.Extensions.Configuration.IConfiguration? config)
+    {
+        var primaryName = config?["AudioStore:Primary"]
+            ?? Environment.GetEnvironmentVariable("AudioStore__Primary")
+            ?? "local";
+        var secondaryName = config?["AudioStore:Secondary"]
+            ?? Environment.GetEnvironmentVariable("AudioStore__Secondary")
+            ?? "azureblob";
+        var primary   = CreateBackend(sp, primaryName);
+        var secondary = CreateBackend(sp, secondaryName);
+        var log = sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<DualWriteAudioStore>>();
+        var cacheReads = !string.Equals(
+            config?["AudioStore:CacheReadsToPrimary"] ?? Environment.GetEnvironmentVariable("AudioStore__CacheReadsToPrimary") ?? "true",
+            "false", StringComparison.OrdinalIgnoreCase);
+        return new DualWriteAudioStore(primary, secondary, log, cacheReads);
+
+        static IAudioStore CreateBackend(IServiceProvider sp, string name) => name.ToLowerInvariant() switch
+        {
+            "azureblob" => ActivatorUtilities.CreateInstance<AzureBlobAudioStore>(sp),
+            _           => ActivatorUtilities.CreateInstance<LocalDiskAudioStore>(sp),
+        };
     }
 }

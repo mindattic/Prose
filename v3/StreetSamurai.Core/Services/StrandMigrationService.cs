@@ -127,6 +127,13 @@ public class StrandMigrationService
             .ToListAsync(ct))
             .Select(x => (x.StrandId, x.BeatId)).ToHashSet();
 
+        // Beat.Number has a UNIQUE constraint; assign sequential values
+        // starting from MAX+1 so re-runs of the migration don't collide with
+        // beats added since the last pass. Production hits the same backfill
+        // via add_beat_number_20260522.sql; this keeps the in-process tests
+        // (sqlite — no migration scripts) green and the prod re-run safe too.
+        int nextNumber = (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1;
+
         int beatsAdded = 0, junctionsAdded = 0;
         foreach (var cb in rows)
         {
@@ -135,6 +142,7 @@ public class StrandMigrationService
                 db.Beats.Add(new Beat
                 {
                     Id            = cb.BeatGuid,
+                    Number        = nextNumber++,
                     Text          = cb.Text ?? "",
                     TextHash      = string.IsNullOrEmpty(cb.Text) ? null : ComputeTextHash(cb.Text),
                     BeatTitle     = cb.Title,
@@ -251,6 +259,10 @@ public class StrandMigrationService
             .ToListAsync(ct))
             .Select(x => (x.StrandId, x.BeatId)).ToHashSet();
 
+        // Same Number allocation as ChapterBeats — picks up from the highest
+        // value present after that pass so the unique index doesn't fire.
+        int nextNumber = (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1;
+
         int standaloneAdded = 0, junctionsAdded = 0;
         foreach (var eb in rows)
         {
@@ -278,6 +290,7 @@ public class StrandMigrationService
                 db.Beats.Add(new Beat
                 {
                     Id            = beatId,
+                    Number        = nextNumber++,
                     Text          = eb.Text ?? "",
                     TextHash      = eb.TextHash ?? (string.IsNullOrEmpty(eb.Text) ? null : ComputeTextHash(eb.Text)),
                     BeatTitle     = eb.BeatTitle,

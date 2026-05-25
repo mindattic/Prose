@@ -35,7 +35,8 @@ public class StrandCliRoundTripTests
         paths = new TestPathProviderWithRoot(tempRoot);
         dbFactory = TestDbFactory.For(paths, "cli-roundtrip");
         migration = new StrandMigrationService(dbFactory, NullLogger<StrandMigrationService>.Instance);
-        workbench = new StrandWorkbenchService(dbFactory, null!, paths, NullLogger<StrandWorkbenchService>.Instance);
+        var audioStore = new LocalDiskAudioStore(paths, NullLogger<LocalDiskAudioStore>.Instance);
+        workbench = new StrandWorkbenchService(dbFactory, null!, paths, audioStore, NullLogger<StrandWorkbenchService>.Instance);
     }
 
     [TearDown]

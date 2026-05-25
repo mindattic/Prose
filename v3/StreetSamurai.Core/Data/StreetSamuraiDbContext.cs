@@ -295,6 +295,11 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.TextHash).HasMaxLength(80);
             e.Property(x => x.LastRequestId).HasMaxLength(120);
             e.HasIndex(x => x.Slug);
+            // Beat.Number is the stable "Beat #134" handle the CLI and writer
+            // surface to humans. NextBeatNumberAsync allocates as MAX+1; the
+            // unique index is the safety net that fails one of two racing
+            // inserts instead of letting them silently share a number.
+            e.HasIndex(x => x.Number).IsUnique();
         });
         b.Entity<Strand>(e =>
         {

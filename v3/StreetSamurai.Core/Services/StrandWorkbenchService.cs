@@ -29,6 +29,7 @@ public class StrandWorkbenchService
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ElevenLabsTtsService tts;
     private readonly IPathProvider paths;
+    private readonly IAudioStore audioStore;
     private readonly SettingsService? settings;
     private readonly ILogger<StrandWorkbenchService> log;
     private static readonly ConcurrentDictionary<Guid, CancellationTokenSource> cancelTokens = new();
@@ -37,12 +38,14 @@ public class StrandWorkbenchService
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ElevenLabsTtsService tts,
         IPathProvider paths,
+        IAudioStore audioStore,
         ILogger<StrandWorkbenchService> log,
         SettingsService? settings = null)
     {
         this.dbFactory = dbFactory;
         this.tts = tts;
         this.paths = paths;
+        this.audioStore = audioStore;
         this.settings = settings;
         this.log = log;
     }
@@ -201,6 +204,30 @@ public class StrandWorkbenchService
             nextSk = pos + 1 < ordered.Count ? ordered[pos + 1].SortKey : prevSk + 100.0;
         }
 
+        // Auto-restripe before the gap shrinks into IEEE-754 territory. After
+        // restripe the targets get fresh 100-step spacing; recompute prevSk
+        // and nextSk against the new ladder. Cheap (O(N) one-time) and only
+        // triggers after many midpoint inserts between the same two siblings.
+        if (nextSk - prevSk < MinSortKeyGap)
+        {
+            await RestripeSortKeysAsync(strandId, ct);
+            ordered = await db.StrandBeats
+                .Where(sb => sb.StrandId == strandId)
+                .OrderBy(sb => sb.SortKey)
+                .ToListAsync(ct);
+            if (afterBeatId == null)
+            {
+                prevSk = ordered.Count > 0 ? ordered[0].SortKey - 100.0 : 0.0;
+                nextSk = ordered.Count > 0 ? ordered[0].SortKey         : 100.0;
+            }
+            else
+            {
+                var pos = ordered.FindIndex(sb => sb.BeatId == afterBeatId.Value);
+                prevSk = ordered[pos].SortKey;
+                nextSk = pos + 1 < ordered.Count ? ordered[pos + 1].SortKey : prevSk + 100.0;
+            }
+        }
+
         var beat = new Beat
         {
             Id           = Guid.CreateVersion7(),
@@ -222,6 +249,111 @@ public class StrandWorkbenchService
         log.LogInformation("Inserted beat {BeatId} into strand {StrandId} between SortKey {Prev} and {Next}",
             beat.Id, strandId, prevSk, nextSk);
         return beat;
+    }
+
+    /// <summary>Below this fractional-SortKey gap, an insert/move would
+    /// halve the spacing into IEEE-754 territory where subsequent midpoints
+    /// stop producing strictly-ordered values. When InsertBeat/MoveBeat
+    /// would push below this, we restripe the whole strand first so the
+    /// new insertion has clean breathing room. 0.001 is empirically safe
+    /// across thousands of subdivisions on a 100-step initial spacing.</summary>
+    private const double MinSortKeyGap = 0.001;
+
+    /// <summary>Rewrite every <see cref="StrandBeat.SortKey"/> in this strand
+    /// to a fresh 100-step ladder (100, 200, 300, …). Preserves the current
+    /// reading order. O(N) and runs in a single transaction. Audio stays
+    /// valid — only the junction's SortKey changes.</summary>
+    public async Task<int> RestripeSortKeysAsync(Guid strandId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var siblings = await db.StrandBeats
+            .Where(sb => sb.StrandId == strandId)
+            .OrderBy(sb => sb.SortKey)
+            .ToListAsync(ct);
+        if (siblings.Count == 0) return 0;
+        double sk = 100.0;
+        foreach (var sb in siblings)
+        {
+            sb.SortKey = sk;
+            sk += 100.0;
+        }
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Restriped {N} StrandBeat rows in strand {Strand}", siblings.Count, strandId);
+        return siblings.Count;
+    }
+
+    /// <summary>Re-slot a beat within its strand. Pass <paramref name="afterBeatId"/>=null
+    /// to move to the very top; otherwise the beat lands directly after that
+    /// sibling. Uses fractional SortKey midpoints so no neighbouring rows need
+    /// to be touched. Audio is preserved — only the membership SortKey changes,
+    /// the beat's prose and recording stay valid.
+    ///
+    /// No-op when the beat is already in the requested position. Throws when
+    /// the beat is not a member of the strand or when <paramref name="afterBeatId"/>
+    /// refers to the beat being moved (would create a self-loop).</summary>
+    public async Task MoveBeatAsync(Guid strandId, Guid beatId, Guid? afterBeatId, CancellationToken ct = default)
+    {
+        if (afterBeatId == beatId)
+            throw new InvalidOperationException("Cannot move a beat to a position after itself.");
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var siblings = await db.StrandBeats
+            .Where(sb => sb.StrandId == strandId)
+            .OrderBy(sb => sb.SortKey)
+            .ToListAsync(ct);
+        var subject = siblings.FirstOrDefault(sb => sb.BeatId == beatId)
+            ?? throw new InvalidOperationException($"Beat {beatId} not in strand {strandId}.");
+
+        var others = siblings.Where(sb => sb.BeatId != beatId).ToList();
+        double prevSk, nextSk;
+        if (afterBeatId == null)
+        {
+            prevSk = others.Count > 0 ? others[0].SortKey - 100.0 : 0.0;
+            nextSk = others.Count > 0 ? others[0].SortKey         : 100.0;
+        }
+        else
+        {
+            var pos = others.FindIndex(sb => sb.BeatId == afterBeatId.Value);
+            if (pos < 0) throw new InvalidOperationException($"Anchor beat {afterBeatId} not in strand {strandId}.");
+            prevSk = others[pos].SortKey;
+            nextSk = pos + 1 < others.Count ? others[pos + 1].SortKey : prevSk + 100.0;
+        }
+
+        // Same precision guard as InsertBeatAsync — a move that targets a
+        // gap below the threshold restripes first, then recomputes against
+        // the fresh ladder.
+        if (nextSk - prevSk < MinSortKeyGap)
+        {
+            await RestripeSortKeysAsync(strandId, ct);
+            siblings = await db.StrandBeats
+                .Where(sb => sb.StrandId == strandId)
+                .OrderBy(sb => sb.SortKey)
+                .ToListAsync(ct);
+            subject = siblings.First(sb => sb.BeatId == beatId);
+            others = siblings.Where(sb => sb.BeatId != beatId).ToList();
+            if (afterBeatId == null)
+            {
+                prevSk = others.Count > 0 ? others[0].SortKey - 100.0 : 0.0;
+                nextSk = others.Count > 0 ? others[0].SortKey         : 100.0;
+            }
+            else
+            {
+                var pos = others.FindIndex(sb => sb.BeatId == afterBeatId.Value);
+                prevSk = others[pos].SortKey;
+                nextSk = pos + 1 < others.Count ? others[pos + 1].SortKey : prevSk + 100.0;
+            }
+        }
+
+        var newSortKey = (prevSk + nextSk) / 2.0;
+        // No-op short-circuit: same SortKey ± 1e-9 means the move would land
+        // exactly where the beat already is (drag onto self / drag onto the
+        // immediately-preceding sibling).
+        if (Math.Abs(newSortKey - subject.SortKey) < 1e-9) return;
+
+        subject.SortKey = newSortKey;
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Moved beat {Beat} in strand {Strand} to SortKey {Sk} (after {After})",
+            beatId, strandId, newSortKey, afterBeatId?.ToString() ?? "(top)");
     }
 
     /// <summary>Split a beat at an explicit character position — what the
@@ -496,6 +628,16 @@ public class StrandWorkbenchService
     /// </summary>
     /// <returns>Beat count created. Zero means already populated, or the
     /// chapter has no body to materialise.</returns>
+    /// <remarks>
+    /// LEGACY MIGRATION ONLY. Reads from the retired Records.Json table —
+    /// the project rule [NO new JSON files] supersedes that storage path
+    /// for everything else. The only sanctioned caller is the standalone
+    /// <c>v3/MaterializeChapters</c> one-shot tool. New runtime code paths
+    /// (UI, MCP tools, narration loop, generation pipeline) must not call
+    /// this; insert beats via <see cref="InsertBeatAsync"/> or
+    /// <see cref="SplitBeatByParagraphsAsync"/> instead.
+    /// </remarks>
+    [Obsolete("Legacy Records.Json migration only — see v3/MaterializeChapters. Use InsertBeatAsync / SplitBeatByParagraphsAsync for new code paths.", error: false)]
     public async Task<int> MaterializeChapterFromHtmlAsync(Guid chapterStrandId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -772,8 +914,9 @@ public class StrandWorkbenchService
             await db.SaveChangesAsync(ct);
 
             var ordered = await GetOrderedBeatsAsync(strandId, ct);
-            var outDir = Path.Combine(GetStrandRoot(strand.Slug), "audio");
-            Directory.CreateDirectory(outDir);
+            // Audio bytes are written through IAudioStore — the synth helpers
+            // hand the bytes to audioStore.WriteBeatAsync which knows where
+            // they live (local disk vs blob). No filesystem prep needed here.
 
             // Resolve the active voice profile ONCE before the loop and reuse
             // it for every beat. Two reasons: (1) the default-profile lookup
@@ -788,6 +931,8 @@ public class StrandWorkbenchService
                 ? strand.VoiceId
                 : activeProfile?.VoiceId;
             bool useLossless = true;
+            int failedCount = 0;
+            var failedBeatIds = new List<Guid>();
 
             for (int idx = 0; idx < ordered.Count; idx++)
             {
@@ -836,18 +981,18 @@ public class StrandWorkbenchService
                     {
                         try
                         {
-                            newReqId = await SynthesizeAsLosslessWavAsync(tracked, strand, outDir, prevIds.ToArray(), prevText, nextText, voiceForBeat, prompt, ct);
+                            newReqId = await SynthesizeAsLosslessWavAsync(tracked, strand, prevIds.ToArray(), prevText, nextText, voiceForBeat, prompt, ct);
                         }
                         catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.Forbidden)
                         {
                             log.LogWarning("Strand {S}: pcm_44100 forbidden — falling back to mp3", strand.Slug);
                             useLossless = false;
-                            newReqId = await SynthesizeAsMp3Async(tracked, strand, outDir, prevIds.ToArray(), prevText, nextText, voiceForBeat, prompt, ct);
+                            newReqId = await SynthesizeAsMp3Async(tracked, strand, prevIds.ToArray(), prevText, nextText, voiceForBeat, prompt, ct);
                         }
                     }
                     else
                     {
-                        newReqId = await SynthesizeAsMp3Async(tracked, strand, outDir, prevIds.ToArray(), prevText, nextText, voiceForBeat, prompt, ct);
+                        newReqId = await SynthesizeAsMp3Async(tracked, strand, prevIds.ToArray(), prevText, nextText, voiceForBeat, prompt, ct);
                     }
                     // Update the in-memory snapshot so the next iteration's
                     // backward look sees the just-stamped id without an
@@ -857,17 +1002,35 @@ public class StrandWorkbenchService
                     strand.CharsNarrated += tracked.Text.Length;
                     await db.SaveChangesAsync(ct);
                 }
+                catch (OperationCanceledException)
+                {
+                    // Cancellation propagates — outer handler rolls the strand
+                    // into "stopped". Don't count as a failure or eat the token.
+                    throw;
+                }
                 catch (Exception ex)
                 {
-                    log.LogError(ex, "Narration failed on strand {S} beat {B}", strandId, beat.Id);
-                    strand.Status = "failed";
-                    strand.Error = $"Beat {beat.Id}: {ex.Message}";
+                    // Per-beat failure: log, record the message on the strand
+                    // so the UI can surface it, and CONTINUE the loop. One bad
+                    // beat (content filter, timeout, weird unicode) used to
+                    // abort the whole strand and lock every later beat out of
+                    // narration; now we keep going and report the partial
+                    // result at the end.
+                    failedCount++;
+                    failedBeatIds.Add(beat.Id);
+                    log.LogError(ex, "Narration failed on strand {S} beat {B} — skipping and continuing", strandId, beat.Id);
+                    strand.Error = failedCount == 1
+                        ? $"Beat {beat.Id}: {ex.Message}"
+                        : $"{failedCount} beats failed (latest {beat.Id}): {ex.Message}";
                     await db.SaveChangesAsync(ct);
-                    throw;
                 }
             }
 
-            strand.Status = "ready";
+            // Strand outcome reflects the per-beat tally:
+            //   all beats rendered → "ready"
+            //   some beats failed  → "failed" (Error already populated above)
+            // Either way AudioCompletedAt stamps so callers can see the run finished.
+            strand.Status = failedCount == 0 ? "ready" : "failed";
             strand.AudioCompletedAt = DateTime.UtcNow;
             await db.SaveChangesAsync(ct);
 
@@ -926,25 +1089,21 @@ public class StrandWorkbenchService
         // ComputeTrailingSilenceMs; a value (including 0) is an explicit
         // override the user set in the UI.
 
-        var dir = GetStrandRoot(strand.Slug);
-        Directory.CreateDirectory(dir);
         var ext = allWav ? "wav" : "mp3";
-        var outPath = Path.Combine(dir, $"strand.{ext}");
 
         if (allWav)
         {
-            // Inter-beat silence: pull each beat's PCM, then between beats
-            // append N samples of digital silence chosen by ComputeTrailingSilenceMs.
-            // Final beat gets no trailing silence (the strand just ends).
+            // Inter-beat silence: pull each beat's PCM via the store (works
+            // for local-disk AND blob), then between beats append N samples
+            // of digital silence chosen by ComputeTrailingSilenceMs. Final
+            // beat gets no trailing silence (the strand just ends).
             var pcmParts = new List<byte[]>();
             for (int i = 0; i < ordered.Count; i++)
             {
                 ct.ThrowIfCancellationRequested();
                 var o = ordered[i];
-                var full = ResolveAudioFile(o.Beat.AudioPath!);
-                if (!File.Exists(full)) continue;
-                var bytes = await File.ReadAllBytesAsync(full, ct);
-                if (bytes.Length <= 44) continue;
+                var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
+                if (bytes == null || bytes.Length <= 44) continue;
                 pcmParts.Add(bytes[44..]);
 
                 if (i < ordered.Count - 1)
@@ -963,43 +1122,74 @@ public class StrandWorkbenchService
             int off = 0;
             foreach (var p in pcmParts) { Buffer.BlockCopy(p, 0, all, off, p.Length); off += p.Length; }
             var wav = EpisodeAudioService.WrapPcmAsWav(all, 44100, 1, 16);
-            await File.WriteAllBytesAsync(outPath, wav, ct);
+            await audioStore.WriteCombinedAsync(strand.Slug, "wav", wav, ct);
         }
         else
         {
-            // MP3 concat with ffmpeg-injected silence. ElevenLabs returns
-            // mp3_44100_128 on all account tiers, so this is the common path.
-            // Strategy: render one silence-MP3 per distinct pause length we
-            // need (cached by ms), then run ffmpeg's concat demuxer with a
-            // list that interleaves beat-MP3s and silence-MP3s. -c copy keeps
-            // it cheap (no re-encode). Falls back to naive byte concat if
-            // ffmpeg isn't on PATH — the audio still plays, just without
-            // paced silence.
+            // MP3 concat with ffmpeg-injected silence. Strategy unchanged:
+            // render one silence-MP3 per distinct pause length we need,
+            // then ffmpeg concat demuxer with -c copy (no re-encode).
+            //
+            // Blob-backed deployments don't have local file paths, so we
+            // stage every beat's MP3 to a temp dir first, run ffmpeg
+            // against the staged copies, then upload the result through
+            // the store. Local-disk just uses ResolveLocalPathAsync directly.
             var ffmpeg = ResolveFfmpegPath();
             if (string.IsNullOrEmpty(ffmpeg))
             {
                 log.LogWarning("ffmpeg not found on PATH — falling back to naive MP3 concat without inter-beat silence pacing. Install ffmpeg to enable paced gaps.");
-                await using var outFs = File.Create(outPath);
+                using var ms = new MemoryStream();
                 foreach (var o in ordered)
                 {
                     ct.ThrowIfCancellationRequested();
-                    var full = ResolveAudioFile(o.Beat.AudioPath!);
-                    if (!File.Exists(full)) continue;
-                    var bytes = await File.ReadAllBytesAsync(full, ct);
-                    await outFs.WriteAsync(bytes, ct);
+                    var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
+                    if (bytes == null) continue;
+                    await ms.WriteAsync(bytes, ct);
                 }
+                await audioStore.WriteCombinedAsync(strand.Slug, "mp3", ms.ToArray(), ct);
             }
             else
             {
                 int Pause(Beat a, Beat b) => a.GapAfterMs ?? ComputeTrailingSilenceMs(a, b, settings);
-                await ConcatMp3sWithSilenceAsync(ffmpeg, ordered, outPath, Pause, ct);
+                // Stage every beat to a local temp file (no-op rename for
+                // local-disk; download from blob otherwise), run ffmpeg
+                // against a temp output, then hand the bytes to the store.
+                var staged = new List<(OrderedBeat Source, string LocalPath)>(ordered.Count);
+                var stagingDir = Path.Combine(Path.GetTempPath(), $"ss-combine-{Guid.CreateVersion7():N}");
+                Directory.CreateDirectory(stagingDir);
+                try
+                {
+                    foreach (var o in ordered)
+                    {
+                        ct.ThrowIfCancellationRequested();
+                        var local = await audioStore.ResolveLocalPathAsync(o.Beat.AudioPath!, ct);
+                        if (local == null)
+                        {
+                            var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
+                            if (bytes == null) continue;
+                            local = Path.Combine(stagingDir, $"{o.Beat.Id:N}.mp3");
+                            await File.WriteAllBytesAsync(local, bytes, ct);
+                        }
+                        staged.Add((o, local));
+                    }
+                    var stagedOut = Path.Combine(stagingDir, "strand.mp3");
+                    await ConcatMp3sWithSilenceAsync(ffmpeg, staged, stagedOut, Pause, ct);
+                    var combined = await File.ReadAllBytesAsync(stagedOut, ct);
+                    await audioStore.WriteCombinedAsync(strand.Slug, "mp3", combined, ct);
+                }
+                finally
+                {
+                    try { Directory.Delete(stagingDir, recursive: true); }
+                    catch (Exception ex) { log.LogDebug(ex, "Could not clean up combine staging dir {Dir}", stagingDir); }
+                }
             }
         }
 
-        strand.CombinedAudioPath = $"{strand.Slug}/strand.{ext}";
+        var combinedRel = $"{strand.Slug}/strand.{ext}";
+        strand.CombinedAudioPath = combinedRel;
         await db.SaveChangesAsync(ct);
-        log.LogInformation("Strand {S} combined audio written to {Path}", strandId, outPath);
-        return outPath;
+        log.LogInformation("Strand {S} combined audio written ({Rel})", strandId, combinedRel);
+        return combinedRel;
     }
 
     /// <summary>Drop a single beat's audio (file + db fields) so the next
@@ -1017,22 +1207,32 @@ public class StrandWorkbenchService
 
     // ── Paths / helpers ──────────────────────────────────────────────────
 
-    public string GetAudioRoot() => Path.Combine(paths.DataRoot, "engine", "strands");
-    public string GetStrandRoot(string slug) => Path.Combine(paths.DataRoot, "engine", "strands", slug);
+    // Audio files MUST live under MutableDataDir, not DataRoot. On Azure App
+    // Service, DataRoot is on the read-only deployment slot — writes there
+    // either fail at runtime or get wiped on the next deploy. MutableDataDir
+    // honours SS_MUTABLE_DATA_ROOT (set to D:\home\data\StreetSamurai on
+    // Azure) so audio survives deploys and stays writable. On local dev with
+    // no env var, MutableDataDir falls back to the same engine/data path as
+    // before, so the dev experience doesn't change.
+    public string GetAudioRoot() => Path.Combine(paths.MutableDataDir, "strands");
+    public string GetStrandRoot(string slug) => Path.Combine(paths.MutableDataDir, "strands", slug);
 
     /// <summary>Resolve a relative audio path to an absolute file path. Tries
-    /// the new strands root first; on miss, falls back to the legacy
-    /// engine/episodes root so migrated content keeps playing without
-    /// physically moving files. Returns the strands-root path even when no
-    /// file exists at either location — callers check <see cref="File.Exists"/>
-    /// and 404 from there.</summary>
+    /// the new MutableDataDir-rooted strands tree first, then falls back to
+    /// (a) the pre-2026-05-24 strands location at <c>{DataRoot}/engine/strands/</c>
+    /// and (b) the even older episode-era location at <c>{DataRoot}/engine/episodes/</c>.
+    /// Files migrate forward as they're re-recorded; nothing physically moves
+    /// from the legacy locations. Returns the primary path even when no file
+    /// exists anywhere — callers check <see cref="File.Exists"/> and 404 from there.</summary>
     public string ResolveAudioFile(string relativePath)
     {
         var rel = relativePath.Replace('/', Path.DirectorySeparatorChar);
         var primary = Path.Combine(GetAudioRoot(), rel);
         if (File.Exists(primary)) return primary;
-        var legacy = Path.Combine(paths.DataRoot, "engine", "episodes", rel);
-        return File.Exists(legacy) ? legacy : primary;
+        var legacyStrands = Path.Combine(paths.DataRoot, "engine", "strands", rel);
+        if (File.Exists(legacyStrands)) return legacyStrands;
+        var legacyEpisodes = Path.Combine(paths.DataRoot, "engine", "episodes", rel);
+        return File.Exists(legacyEpisodes) ? legacyEpisodes : primary;
     }
 
     public static string ComputeTextHash(string text)
@@ -1074,10 +1274,13 @@ public class StrandWorkbenchService
         // suggest the sentence finished cleanly; comma/em-dash/no-mark
         // suggest the prose continues into the next paragraph.
         var trimmed = (beat.Text ?? "").TrimEnd();
-        if (trimmed.Length == 0) return continuationMs;
-        var last = trimmed[^1];
-        // Strip trailing italic/bold markdown so '*Likes me.*' still reads as '.' terminated.
-        if (last == '*' && trimmed.Length >= 2) last = trimmed[^2];
+        // Walk back across trailing markdown emphasis markers so '**Likes me.**'
+        // and '*__Likes me.__*' still read as '.' terminated. Strip * and _ only;
+        // these are the four markers BeatFormatter renders.
+        int tail = trimmed.Length - 1;
+        while (tail >= 0 && (trimmed[tail] == '*' || trimmed[tail] == '_')) tail--;
+        if (tail < 0) return continuationMs;
+        var last = trimmed[tail];
         return last switch
         {
             '.' or '!' or '?' or '"' or '”' => paragraphMs,
@@ -1161,13 +1364,32 @@ public class StrandWorkbenchService
         return null;
     }
 
-    /// <summary>Concat each beat's MP3 file into <paramref name="outPath"/>,
-    /// inserting precise digital silence between each beat per
-    /// <see cref="ComputeTrailingSilenceMs"/>. Silence MP3s are rendered once
-    /// per distinct pause length (cached in a temp dir) and reused via
-    /// ffmpeg's <c>-f concat</c> demuxer with <c>-c copy</c> (no re-encode).
-    /// </summary>
-    private async Task ConcatMp3sWithSilenceAsync(string ffmpegPath, List<OrderedBeat> ordered, string outPath, Func<Beat, Beat, int> pauseMsFor, CancellationToken ct)
+    /// <summary>Read a beat's audio bytes through the configured store.
+    /// Returns null when the relative path can't be resolved (missing file,
+    /// blob 404, etc) — caller treats null as "skip this beat" so a single
+    /// missing file doesn't blow up a combined export.</summary>
+    private async Task<byte[]?> ReadAllAudioAsync(string relativePath, CancellationToken ct)
+    {
+        try
+        {
+            await using var src = await audioStore.OpenReadAsync(relativePath, ct);
+            if (src == null) return null;
+            using var ms = new MemoryStream();
+            await src.CopyToAsync(ms, ct);
+            return ms.ToArray();
+        }
+        catch (Exception ex) { log.LogWarning(ex, "Audio read failed for {Path}", relativePath); return null; }
+    }
+
+    /// <summary>Concat each beat's already-staged-local MP3 file into
+    /// <paramref name="outPath"/>, inserting precise digital silence between
+    /// each beat per <see cref="ComputeTrailingSilenceMs"/>. Silence MP3s
+    /// are rendered once per distinct pause length (cached in a temp dir)
+    /// and reused via ffmpeg's <c>-f concat</c> demuxer with <c>-c copy</c>
+    /// (no re-encode). Inputs are paired with their source OrderedBeat so
+    /// the per-beat gap computation has access to the same Beat metadata
+    /// the rest of the workbench works against.</summary>
+    private async Task ConcatMp3sWithSilenceAsync(string ffmpegPath, List<(OrderedBeat Source, string LocalPath)> ordered, string outPath, Func<Beat, Beat, int> pauseMsFor, CancellationToken ct)
     {
         var tmpDir = Path.Combine(Path.GetTempPath(), $"streetsamurai-concat-{Guid.CreateVersion7():N}");
         Directory.CreateDirectory(tmpDir);
@@ -1202,17 +1424,16 @@ public class StrandWorkbenchService
                 return file;
             }
 
-            // Build the concat list.
+            // Build the concat list using the already-staged local paths.
             var listLines = new List<string>();
             for (int i = 0; i < ordered.Count; i++)
             {
-                var o = ordered[i];
-                var beatAudio = ResolveAudioFile(o.Beat.AudioPath!);
+                var (source, beatAudio) = ordered[i];
                 if (!File.Exists(beatAudio)) continue;
                 listLines.Add($"file '{beatAudio.Replace("'", "'\\''")}'");
                 if (i < ordered.Count - 1)
                 {
-                    var pauseMs = pauseMsFor(o.Beat, ordered[i + 1].Beat);
+                    var pauseMs = pauseMsFor(source.Beat, ordered[i + 1].Source.Beat);
                     if (pauseMs > 0)
                     {
                         var silenceFile = await SilenceFor(pauseMs);
@@ -1262,12 +1483,16 @@ public class StrandWorkbenchService
     {
         if (!string.IsNullOrEmpty(beat.AudioPath))
         {
-            try
+            // Fire-and-forget the delete via the store. Sync caller, so we
+            // can't await — the store's own try/catch keeps a transient
+            // blob/disk failure from cascading into a beat-edit failure.
+            // The DB row update below is the authoritative "audio is gone"
+            // signal regardless of whether the bytes actually deleted.
+            var path = beat.AudioPath;
+            _ = audioStore.DeleteAsync(path).ContinueWith(t =>
             {
-                var full = ResolveAudioFile(beat.AudioPath);
-                if (File.Exists(full)) File.Delete(full);
-            }
-            catch (Exception ex) { log.LogWarning(ex, "Could not delete audio at {Path}", beat.AudioPath); }
+                if (t.Exception != null) log.LogWarning(t.Exception.Flatten(), "Audio delete failed for {Path}", path);
+            }, TaskScheduler.Default);
         }
         beat.AudioPath    = null;
         beat.NarratedAt   = null;
@@ -1321,7 +1546,7 @@ public class StrandWorkbenchService
     }
 
     private async Task<string?> SynthesizeAsLosslessWavAsync(
-        Beat beat, Strand strand, string outDir,
+        Beat beat, Strand strand,
         string[] previousRequestIds, string? previousText, string? nextText,
         string? voiceForBeat, BeatPrompt prompt,
         CancellationToken ct)
@@ -1334,10 +1559,13 @@ public class StrandWorkbenchService
             voiceSettings: voiceSettings, ct);
 
         var wav = EpisodeAudioService.WrapPcmAsWav(result.Bytes, 44100, 1, 16);
-        var fileName = $"{beat.Id:N}.wav";
-        await File.WriteAllBytesAsync(Path.Combine(outDir, fileName), wav, ct);
+        // Persist bytes through the audio-store abstraction so a blob-backed
+        // deployment writes to Azure storage without the workbench knowing.
+        // The relative path stamped onto Beat.AudioPath is canonical across
+        // backends ("{slug}/audio/{beatId:N}.wav").
+        var rel = await audioStore.WriteBeatAsync(strand.Slug, beat.Id, "wav", wav, ct);
 
-        beat.AudioPath     = $"{strand.Slug}/audio/{fileName}";
+        beat.AudioPath     = rel;
         beat.NarratedAt    = DateTime.UtcNow;
         beat.DurationSec   = result.Bytes.Length / 88200.0;
         beat.TextHash      = ComputeTextHash(beat.Text);
@@ -1347,7 +1575,7 @@ public class StrandWorkbenchService
     }
 
     private async Task<string?> SynthesizeAsMp3Async(
-        Beat beat, Strand strand, string outDir,
+        Beat beat, Strand strand,
         string[] previousRequestIds, string? previousText, string? nextText,
         string? voiceForBeat, BeatPrompt prompt,
         CancellationToken ct)
@@ -1359,16 +1587,91 @@ public class StrandWorkbenchService
             previousText: previousText, nextText: nextText,
             voiceSettings: voiceSettings, ct);
 
-        var fileName = $"{beat.Id:N}.mp3";
-        await File.WriteAllBytesAsync(Path.Combine(outDir, fileName), result.Bytes, ct);
+        var rel = await audioStore.WriteBeatAsync(strand.Slug, beat.Id, "mp3", result.Bytes, ct);
 
-        beat.AudioPath     = $"{strand.Slug}/audio/{fileName}";
+        // Real duration: prefer ffprobe (already required for MP3 silence
+        // pacing on the export path), then a frame-header scan as a pure-C#
+        // fallback. The old code used `Text.Length / 15.0` which was off by
+        // 30-60% on short or punctuation-heavy beats and broke the listener's
+        // progress bar. ffprobe needs a local path; on blob backends the
+        // local lookup returns null and we fall back to the byte scan.
+        var localPathForProbe = await audioStore.ResolveLocalPathAsync(rel, ct);
+        var duration = await ProbeMp3DurationAsync(localPathForProbe, result.Bytes, ct);
+
+        beat.AudioPath     = rel;
         beat.NarratedAt    = DateTime.UtcNow;
-        beat.DurationSec   = Math.Max(1.0, beat.Text.Length / 15.0);
+        beat.DurationSec   = duration;
         beat.TextHash      = ComputeTextHash(beat.Text);
         beat.LastRequestId = result.RequestId;
         beat.Stale         = false;
         return result.RequestId;
+    }
+
+    /// <summary>Return the duration of an MP3 file in seconds. Tries ffprobe
+    /// first (precise, fast — needs a local path); falls back to a frame-
+    /// header byte scan for VBR safety; last resort is a CBR estimate
+    /// (file-size ÷ 16 KB/s ≈ 128 kbps). Never throws — bad audio just
+    /// yields a 1.0s sentinel so the UI's progress bar still moves.</summary>
+    private async Task<double> ProbeMp3DurationAsync(string? path, byte[] bytes, CancellationToken ct)
+    {
+        var ffprobe = string.IsNullOrEmpty(path) ? null : ResolveFfprobePath();
+        if (!string.IsNullOrEmpty(ffprobe))
+        {
+            try
+            {
+                var psi = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = ffprobe,
+                    Arguments = $"-v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 \"{path}\"",
+                    RedirectStandardOutput = true,
+                    RedirectStandardError  = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true,
+                };
+                using var proc = System.Diagnostics.Process.Start(psi);
+                if (proc != null)
+                {
+                    var stdout = await proc.StandardOutput.ReadToEndAsync(ct);
+                    await proc.WaitForExitAsync(ct);
+                    if (proc.ExitCode == 0
+                        && double.TryParse(stdout.Trim(), System.Globalization.NumberStyles.Float,
+                            System.Globalization.CultureInfo.InvariantCulture, out var sec)
+                        && sec > 0)
+                    {
+                        return Math.Round(sec, 3);
+                    }
+                }
+            }
+            catch (Exception ex) { log.LogDebug(ex, "ffprobe duration parse failed for {Path}", path); }
+        }
+        // Pure-C# fallback: ElevenLabs returns CBR mp3_44100_128 (128 kbps).
+        // 128 kbps = 16,000 bytes/sec. Skip the (small) ID3v2 header if present.
+        int offset = 0;
+        if (bytes.Length > 10 && bytes[0] == 'I' && bytes[1] == 'D' && bytes[2] == '3')
+        {
+            int size = ((bytes[6] & 0x7F) << 21) | ((bytes[7] & 0x7F) << 14)
+                     | ((bytes[8] & 0x7F) << 7)  | (bytes[9]  & 0x7F);
+            offset = 10 + size;
+        }
+        var audioBytes = Math.Max(0, bytes.Length - offset);
+        return Math.Max(1.0, Math.Round(audioBytes / 16000.0, 3));
+    }
+
+    private static string? ResolveFfprobePath()
+    {
+        var name = OperatingSystem.IsWindows() ? "ffprobe.exe" : "ffprobe";
+        var pathVar = Environment.GetEnvironmentVariable("PATH") ?? "";
+        var sep = OperatingSystem.IsWindows() ? ';' : ':';
+        foreach (var dir in pathVar.Split(sep, StringSplitOptions.RemoveEmptyEntries))
+        {
+            try
+            {
+                var candidate = Path.Combine(dir, name);
+                if (File.Exists(candidate)) return candidate;
+            }
+            catch { /* malformed PATH entry — skip */ }
+        }
+        return null;
     }
 
     /// <summary>A beat in reading-order context. Carries the parent strand id
