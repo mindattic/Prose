@@ -32,7 +32,8 @@ public class StrandWorkbenchServiceTests
         // TTS is only touched by NarrateAsync; CRUD tests don't reach it. The
         // workbench guards against null only inside that method's first
         // statement, so we pass null! here intentionally.
-        svc = new StrandWorkbenchService(dbFactory, null!, paths, NullLogger<StrandWorkbenchService>.Instance);
+        var audioStore = new LocalDiskAudioStore(paths, NullLogger<LocalDiskAudioStore>.Instance);
+        svc = new StrandWorkbenchService(dbFactory, null!, paths, audioStore, NullLogger<StrandWorkbenchService>.Instance);
     }
 
     [TearDown]

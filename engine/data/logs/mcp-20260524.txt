@@ -4,3 +4,115 @@
 2026-05-24 00:17:01.948 -05:00 [INF] WorldTickService heartbeat (disabled): tick #166
 2026-05-24 00:22:01.952 -05:00 [INF] WorldTickService heartbeat (disabled): tick #167
 2026-05-24 00:27:01.943 -05:00 [INF] WorldTickService heartbeat (disabled): tick #168
+2026-05-24 17:15:57.007 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-05-24 17:15:57.070 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-05-24 17:15:57.086 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.150) method 'tools/list' request handler called.
+2026-05-24 17:15:57.086 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.150) method 'initialize' request handler completed in 13.1614ms.
+2026-05-24 17:15:57.093 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.150) method 'tools/list' request handler completed in 7.0877ms.
+2026-05-24 17:15:59.304 -05:00 [INF] HomeStats refreshed in 2241 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 17:16:34.436 -05:00 [INF] GlobalSearch index warmed in 37376 ms
+2026-05-24 17:17:57.072 -05:00 [INF] WorldTickService heartbeat (disabled): tick #1
+2026-05-24 17:17:57.126 -05:00 [INF] Continuity long-sweep (full): 2 contradiction group(s)
+2026-05-24 17:20:59.400 -05:00 [INF] HomeStats refreshed in 89 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 17:22:57.087 -05:00 [INF] WorldTickService heartbeat (disabled): tick #2
+2026-05-24 17:25:59.586 -05:00 [INF] HomeStats refreshed in 179 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 17:27:57.081 -05:00 [INF] WorldTickService heartbeat (disabled): tick #3
+2026-05-24 17:30:59.674 -05:00 [INF] HomeStats refreshed in 81 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 17:32:57.090 -05:00 [INF] WorldTickService heartbeat (disabled): tick #4
+2026-05-24 17:35:59.769 -05:00 [INF] HomeStats refreshed in 82 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 17:37:57.082 -05:00 [INF] WorldTickService heartbeat (disabled): tick #5
+2026-05-24 17:40:59.939 -05:00 [INF] HomeStats refreshed in 158 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 17:42:57.085 -05:00 [INF] WorldTickService heartbeat (disabled): tick #6
+2026-05-24 17:46:00.054 -05:00 [INF] HomeStats refreshed in 101 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 17:47:57.075 -05:00 [INF] WorldTickService heartbeat (disabled): tick #7
+2026-05-24 17:51:00.216 -05:00 [INF] HomeStats refreshed in 155 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 17:52:57.089 -05:00 [INF] WorldTickService heartbeat (disabled): tick #8
+2026-05-24 17:56:00.323 -05:00 [INF] HomeStats refreshed in 94 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 17:57:57.075 -05:00 [INF] WorldTickService heartbeat (disabled): tick #9
+2026-05-24 18:01:00.505 -05:00 [INF] HomeStats refreshed in 168 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 18:02:57.079 -05:00 [INF] WorldTickService heartbeat (disabled): tick #10
+2026-05-24 18:06:00.671 -05:00 [INF] HomeStats refreshed in 155 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 18:07:57.098 -05:00 [INF] WorldTickService heartbeat (disabled): tick #11
+2026-05-24 18:11:00.822 -05:00 [INF] HomeStats refreshed in 147 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 18:12:57.084 -05:00 [INF] WorldTickService heartbeat (disabled): tick #12
+2026-05-24 18:16:00.916 -05:00 [INF] HomeStats refreshed in 80 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 18:17:57.088 -05:00 [INF] WorldTickService heartbeat (disabled): tick #13
+2026-05-24 18:17:57.134 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-24 18:21:01.004 -05:00 [INF] HomeStats refreshed in 73 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 18:22:57.079 -05:00 [INF] WorldTickService heartbeat (disabled): tick #14
+2026-05-24 18:26:01.159 -05:00 [INF] HomeStats refreshed in 149 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 18:27:57.090 -05:00 [INF] WorldTickService heartbeat (disabled): tick #15
+2026-05-24 18:31:01.293 -05:00 [INF] HomeStats refreshed in 132 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 18:32:57.074 -05:00 [INF] WorldTickService heartbeat (disabled): tick #16
+2026-05-24 18:36:01.450 -05:00 [INF] HomeStats refreshed in 144 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 18:37:57.088 -05:00 [INF] WorldTickService heartbeat (disabled): tick #17
+2026-05-24 18:41:01.534 -05:00 [INF] HomeStats refreshed in 78 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 18:42:57.076 -05:00 [INF] WorldTickService heartbeat (disabled): tick #18
+2026-05-24 18:46:01.680 -05:00 [INF] HomeStats refreshed in 136 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 18:47:57.080 -05:00 [INF] WorldTickService heartbeat (disabled): tick #19
+2026-05-24 18:51:01.783 -05:00 [INF] HomeStats refreshed in 91 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 18:52:57.085 -05:00 [INF] WorldTickService heartbeat (disabled): tick #20
+2026-05-24 18:56:01.950 -05:00 [INF] HomeStats refreshed in 156 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 18:57:57.079 -05:00 [INF] WorldTickService heartbeat (disabled): tick #21
+2026-05-24 19:01:02.030 -05:00 [INF] HomeStats refreshed in 74 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 19:02:57.073 -05:00 [INF] WorldTickService heartbeat (disabled): tick #22
+2026-05-24 19:06:02.204 -05:00 [INF] HomeStats refreshed in 167 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 19:07:57.080 -05:00 [INF] WorldTickService heartbeat (disabled): tick #23
+2026-05-24 19:11:02.291 -05:00 [INF] HomeStats refreshed in 72 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 19:12:57.071 -05:00 [INF] WorldTickService heartbeat (disabled): tick #24
+2026-05-24 19:16:02.450 -05:00 [INF] HomeStats refreshed in 148 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 19:17:57.083 -05:00 [INF] WorldTickService heartbeat (disabled): tick #25
+2026-05-24 19:17:57.104 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-24 19:21:02.532 -05:00 [INF] HomeStats refreshed in 82 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 19:22:57.085 -05:00 [INF] WorldTickService heartbeat (disabled): tick #26
+2026-05-24 19:26:02.685 -05:00 [INF] HomeStats refreshed in 144 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 19:27:57.078 -05:00 [INF] WorldTickService heartbeat (disabled): tick #27
+2026-05-24 19:31:02.784 -05:00 [INF] HomeStats refreshed in 85 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 19:32:57.078 -05:00 [INF] WorldTickService heartbeat (disabled): tick #28
+2026-05-24 19:36:02.954 -05:00 [INF] HomeStats refreshed in 158 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 19:37:57.088 -05:00 [INF] WorldTickService heartbeat (disabled): tick #29
+2026-05-24 19:41:03.048 -05:00 [INF] HomeStats refreshed in 82 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 19:42:57.078 -05:00 [INF] WorldTickService heartbeat (disabled): tick #30
+2026-05-24 19:46:03.208 -05:00 [INF] HomeStats refreshed in 156 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 19:47:57.092 -05:00 [INF] WorldTickService heartbeat (disabled): tick #31
+2026-05-24 19:51:03.342 -05:00 [INF] HomeStats refreshed in 122 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 19:52:57.075 -05:00 [INF] WorldTickService heartbeat (disabled): tick #32
+2026-05-24 19:56:03.512 -05:00 [INF] HomeStats refreshed in 166 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 19:57:57.082 -05:00 [INF] WorldTickService heartbeat (disabled): tick #33
+2026-05-24 20:01:03.597 -05:00 [INF] HomeStats refreshed in 84 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 20:02:57.074 -05:00 [INF] WorldTickService heartbeat (disabled): tick #34
+2026-05-24 20:06:03.765 -05:00 [INF] HomeStats refreshed in 163 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 20:07:57.086 -05:00 [INF] WorldTickService heartbeat (disabled): tick #35
+2026-05-24 20:11:03.855 -05:00 [INF] HomeStats refreshed in 81 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 20:12:57.076 -05:00 [INF] WorldTickService heartbeat (disabled): tick #36
+2026-05-24 20:16:04.057 -05:00 [INF] HomeStats refreshed in 197 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 20:17:57.088 -05:00 [INF] WorldTickService heartbeat (disabled): tick #37
+2026-05-24 20:17:57.113 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-24 20:21:04.143 -05:00 [INF] HomeStats refreshed in 78 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 20:22:57.080 -05:00 [INF] WorldTickService heartbeat (disabled): tick #38
+2026-05-24 20:26:04.356 -05:00 [INF] HomeStats refreshed in 203 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 20:27:57.079 -05:00 [INF] WorldTickService heartbeat (disabled): tick #39
+2026-05-24 20:31:04.475 -05:00 [INF] HomeStats refreshed in 109 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 20:32:57.075 -05:00 [INF] WorldTickService heartbeat (disabled): tick #40
+2026-05-24 20:36:04.630 -05:00 [INF] HomeStats refreshed in 154 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 20:37:57.090 -05:00 [INF] WorldTickService heartbeat (disabled): tick #41
+2026-05-24 20:41:04.751 -05:00 [INF] HomeStats refreshed in 109 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 20:42:57.078 -05:00 [INF] WorldTickService heartbeat (disabled): tick #42
+2026-05-24 20:46:04.904 -05:00 [INF] HomeStats refreshed in 151 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 20:47:57.085 -05:00 [INF] WorldTickService heartbeat (disabled): tick #43
+2026-05-24 20:51:04.999 -05:00 [INF] HomeStats refreshed in 81 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 20:52:57.078 -05:00 [INF] WorldTickService heartbeat (disabled): tick #44
+2026-05-24 20:56:05.145 -05:00 [INF] HomeStats refreshed in 144 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 20:57:57.089 -05:00 [INF] WorldTickService heartbeat (disabled): tick #45
+2026-05-24 21:01:05.228 -05:00 [INF] HomeStats refreshed in 82 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 21:02:57.077 -05:00 [INF] WorldTickService heartbeat (disabled): tick #46
+2026-05-24 21:06:05.416 -05:00 [INF] HomeStats refreshed in 182 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 21:07:57.082 -05:00 [INF] WorldTickService heartbeat (disabled): tick #47
+2026-05-24 21:11:05.504 -05:00 [INF] HomeStats refreshed in 82 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 21:12:57.085 -05:00 [INF] WorldTickService heartbeat (disabled): tick #48
+2026-05-24 21:16:05.669 -05:00 [INF] HomeStats refreshed in 151 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 21:17:57.090 -05:00 [INF] WorldTickService heartbeat (disabled): tick #49
+2026-05-24 21:17:57.111 -05:00 [INF] Continuity long-sweep (incremental): 0 contradiction group(s)
+2026-05-24 21:21:05.757 -05:00 [INF] HomeStats refreshed in 76 ms (chars=1584, gear=2681, world=1384, episodes=2)
+2026-05-24 21:22:57.082 -05:00 [INF] WorldTickService heartbeat (disabled): tick #50
+2026-05-24 21:26:05.902 -05:00 [INF] HomeStats refreshed in 143 ms (chars=1584, gear=2681, world=1384, episodes=2)

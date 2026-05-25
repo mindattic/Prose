@@ -64,6 +64,21 @@
     .beat-card:hover { border-color: #0dcaf0; box-shadow: 0 0 0 1px rgba(13,202,240,0.25); }
     .beat-card.editing { border-color: #0dcaf0; box-shadow: 0 0 0 1px rgba(13,202,240,0.35); }
     .beat-card.selected { border-color: #ffc107; box-shadow: 0 0 0 1px rgba(255,193,7,0.35); }
+    .beat-card.resume-here { border-color: #20c997; box-shadow: 0 0 0 1px rgba(32,201,151,0.55), 0 0 22px rgba(32,201,151,0.20); }
+    .beat-card.beat-dragging { opacity: 0.5; }
+    .beat-card.beat-drop-target { outline: 2px dashed #0dcaf0; outline-offset: 2px; }
+    /* Cross-strand drop: highlighted in red so the user sees the drop
+       attempt was recognised but rejected (a chapter beat can't be dropped
+       on a sibling chapter's beat — reorder is single-strand only). */
+    .beat-card.beat-drop-blocked { outline: 2px dashed #dc3545; outline-offset: 2px; cursor: not-allowed; }
+
+    /* Drag handle in the row-1 cluster. Only the handle itself initiates
+       a drag — clicking elsewhere in the card still works as before. */
+    .beat-drag-handle { cursor: grab; color: #6c757d; padding: 0 0.2rem; user-select: none; }
+    .beat-drag-handle:hover { color: #0dcaf0; }
+    .beat-drag-handle:active { cursor: grabbing; }
+    .resume-banner { background: rgba(32,201,151,0.08); border: 1px solid rgba(32,201,151,0.35); border-radius: 6px; padding: 0.4rem 0.65rem; color: #c8f0e0; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; }
+    .resume-banner .btn { padding: 0.1rem 0.5rem; font-size: 0.75rem; }
 
     /* Upper-right hover action buttons. Dim at rest (40% opacity) so they don't
        compete with the prose; full opacity when hovering the card, focused
@@ -247,17 +262,23 @@ else
                 }
                 else
                 {
+                    // Label adapts to what NarrateAsync will actually do.
+                    // Stale beats already have null AudioPath, so the same
+                    // single button covers "fresh record / continue / fill
+                    // gaps / re-record stale" — the old separate stale
+                    // button was a no-op duplicate.
+                    var recordLabel = NarratedCount == 0
+                        ? "Record"
+                        : StaleCount > 0
+                            ? $"Re-record stale ({StaleCount})"
+                            : NarratedCount < beats.Count
+                                ? "Continue recording"
+                                : "Re-narrate gaps";
                     <button class="btn btn-sm btn-primary" @onclick="NarrateAsync" disabled="@working">
                         @if (working) { <span class="spinner-border spinner-border-sm me-1"></span> }
                         else { <i class="bi bi-mic-fill me-1"></i> }
-                        @(NarratedCount > 0 && NarratedCount < beats.Count ? "Continue recording" : NarratedCount == 0 ? "Record" : "Re-narrate gaps")
+                        @recordLabel
                     </button>
-                    @if (StaleCount > 0)
-                    {
-                        <button class="btn btn-sm btn-warning" @onclick="NarrateAsync" disabled="@working">
-                            <i class="bi bi-arrow-repeat me-1"></i>Re-record stale (@StaleCount)
-                        </button>
-                    }
                     <button class="btn btn-sm btn-outline-warning" @onclick="ReRecordAllAsync" disabled="@working" title="Replaces ALL audio for this strand">
                         <i class="bi bi-arrow-counterclockwise me-1"></i>Re-record all
                     </button>
@@ -294,6 +315,28 @@ else
             <div class="mb-3">
                 <audio controls src="@($"/api/strands/{strand.Id}/strand.wav")" class="w-100" style="height:34px;"></audio>
             </div>
+        }
+
+        @* Resume banner: if the listener has a saved LastPlayedBeatId on
+           this strand AND that beat still exists, surface a one-click jump
+           to where they walked away. Hidden when the resume target is the
+           very first beat (no actual progress to resume). *@
+        @if (resumeBeatId.HasValue && beats.Any(o => o.Beat.Id == resumeBeatId.Value))
+        {
+            var resumePos = beats.FindIndex(o => o.Beat.Id == resumeBeatId.Value) + 1;
+            @if (resumePos > 1)
+            {
+                <div class="resume-banner">
+                    <i class="bi bi-bookmark-fill text-info"></i>
+                    <span>Listened up to Beat #@resumePos.ToString("D3").</span>
+                    <button class="btn btn-sm btn-outline-info" @onclick="ScrollToResumeAsync">
+                        <i class="bi bi-arrow-down-circle me-1"></i>Jump to it
+                    </button>
+                    <button class="btn btn-sm btn-link text-muted" @onclick="ClearResumeAsync" title="Forget the saved listening position">
+                        Dismiss
+                    </button>
+                </div>
+            }
         }
 
         @* Nested-strands list removed: a strand is now a single flat list of
@@ -343,7 +386,7 @@ else
         }
         else
         {
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column" id="strand-beats-root">
                 <div class="insert-bar">
                     <div class="insert-bar-line"></div>
                     <button class="insert-bar-btn" @onclick="() => InsertBeatAsync(null)" disabled="@working" data-cy="insert-top">
@@ -365,6 +408,7 @@ else
                     else if (isSelected) rowClass += " selected";
                     else if (b.Stale) rowClass += " stale";
                     else if (!string.IsNullOrEmpty(b.AudioPath)) rowClass += " recorded";
+                    if (resumeBeatId == bid) rowClass += " resume-here";
                     var rowPosition = position;
                     var isLastBeat = position == beats.Count;
                     var nextBeat = isLastBeat ? null : beats[position].Beat;
@@ -382,9 +426,12 @@ else
                         </div>
                     }
 
-                    <div class="@rowClass" id="@($"beat-{bid:N}")" data-cy="beat-row" data-beat-id="@bid">
-                        @* ── Row 1: checkbox · Beat # + chips · format toolbar · right-aligned action buttons ── *@
+                    <div class="@rowClass" id="@($"beat-{bid:N}")" data-cy="beat-row" data-beat-id="@bid" data-strand-id="@entry.StrandId" draggable="true">
+                        @* ── Row 1: drag handle · checkbox · Beat # + chips · format toolbar · right-aligned action buttons ── *@
                         <div class="beat-row-1 d-flex align-items-center gap-2 mb-2">
+                            <span class="beat-drag-handle" title="Drag to reorder this beat within the strand">
+                                <i class="bi bi-grip-vertical"></i>
+                            </span>
                             <input type="checkbox" class="beat-select-box-inline"
                                    checked="@isSelected"
                                    title="Select beat for play / batch actions"
@@ -933,6 +980,26 @@ else
     private string defaultVoiceId = "";
     private List<TtsVoice> voices = new();
 
+    /// <summary>Last beat the listener was playing, surfaced as a "resume here"
+    /// banner + a green highlight ring on the row. Backed by
+    /// Strand.LastPlayedBeatId; written by OnBeatStarted as the JS player
+    /// advances.</summary>
+    private Guid? resumeBeatId;
+
+    /// <summary>Token returned by streetsamurai.installPageEscape — handed
+    /// back to uninstallPageEscape on Dispose so the keydown listener does
+    /// not leak across page navigation.</summary>
+    private string? escapeToken;
+
+    /// <summary>Stable .NET-to-JS callback shim. JS holds this for play
+    /// progress AND drag-drop callbacks. Disposed in Dispose so the GC can
+    /// collect the page after navigation.</summary>
+    private DotNetObjectReference<Strand>? selfRef;
+
+    /// <summary>True once JS has been told about the beat-row container.
+    /// Drag handlers attach once and are idempotent on the JS side.</summary>
+    private bool dragHandlersAttached;
+
     private int StaleCount    => beats.Count(b => b.Beat.Stale);
     private int NarratedCount => beats.Count(b => !string.IsNullOrEmpty(b.Beat.AudioPath));
     private int TotalChars    => beats.Sum(b => b.Beat.Text?.Length ?? 0);
@@ -963,12 +1030,24 @@ else
     {
         if (firstRender)
         {
-            // Esc binding is idempotent (window flag); wire on first render
-            // so the selection-bar Esc-clear works even when no delete modal
-            // has been opened yet. Must run AFTER initial render — JS interop
-            // is not available during OnInitialized / OnParametersSet on the
-            // server-prerender pass.
-            await WireEscapeOnceAsync();
+            // Per-instance Escape handler — registers via JS interop and
+            // returns a token we hand back on Dispose. Replaces the old
+            // window-flag eval hook that leaked across page navigation.
+            try { escapeToken = await JS.InvokeAsync<string>("streetsamurai.installPageEscape"); }
+            catch { /* JS not loaded yet — selection-bar Esc just won't fire */ }
+        }
+        // Wire drag-and-drop reorder handlers as soon as the beats container
+        // exists. Idempotent on the JS side; the C# guard avoids the extra
+        // interop hop on every re-render.
+        if (!dragHandlersAttached && strand != null && beats.Count > 0)
+        {
+            try
+            {
+                selfRef ??= DotNetObjectReference.Create(this);
+                await JS.InvokeVoidAsync("streetsamurai.attachBeatDragHandlers", "strand-beats-root", selfRef);
+                dragHandlersAttached = true;
+            }
+            catch { /* JS load race — try again next render */ }
         }
         // If a beat just entered edit mode, size its textarea to match the
         // content height. Subsequent typing keeps it sized via @oninput on
@@ -1000,29 +1079,49 @@ else
     {
         loading = true;
         StateHasChanged();
-        await using var db = await DbFactory.CreateDbContextAsync();
-        if (Guid.TryParse(IdOrSlug, out var guid))
-            strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == guid);
-        if (strand == null)
-            strand = await db.Strands.FirstOrDefaultAsync(s => s.Slug == IdOrSlug);
-
-        if (strand != null)
+        try
         {
-            if (string.IsNullOrEmpty(strand.VoiceId)) strand.VoiceId = defaultVoiceId;
-            beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+            await using var db = await DbFactory.CreateDbContextAsync();
+            if (Guid.TryParse(IdOrSlug, out var guid))
+                strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == guid);
+            if (strand == null)
+                strand = await db.Strands.FirstOrDefaultAsync(s => s.Slug == IdOrSlug);
 
-            // Walk ancestors (root first) and load direct children.
-            ancestors = await LoadAncestorsAsync(db, strand.ParentStrandId);
-            children = await db.Strands.AsNoTracking()
-                .Where(s => s.ParentStrandId == strand.Id)
-                .OrderBy(s => s.SortKey)
-                .ToListAsync();
+            if (strand != null)
+            {
+                if (string.IsNullOrEmpty(strand.VoiceId)) strand.VoiceId = defaultVoiceId;
+                beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
 
-            if (strand.Status is "narrating" or "generating")
-                StartPolling();
+                // Surface the saved listening position so the user can jump back
+                // to where they walked away. Cleared from the banner if the beat
+                // no longer exists (deleted between sessions).
+                resumeBeatId = strand.LastPlayedBeatId;
+
+                // Walk ancestors (root first) and load direct children.
+                ancestors = await LoadAncestorsAsync(db, strand.ParentStrandId);
+                children = await db.Strands.AsNoTracking()
+                    .Where(s => s.ParentStrandId == strand.Id)
+                    .OrderBy(s => s.SortKey)
+                    .ToListAsync();
+
+                if (strand.Status is "narrating" or "generating")
+                    StartPolling();
+            }
         }
-        loading = false;
-        StateHasChanged();
+        catch (Exception ex)
+        {
+            // Surface load failure (cycle in a corrupted parent chain,
+            // transient DB blip) instead of stranding the user on a
+            // perpetual spinner. strand stays null → the "No strand found"
+            // alert renders.
+            Toast.Error("STRAND-LOAD-FAIL", ex.Message);
+            Console.Error.WriteLine($"[strand-load] {IdOrSlug}: {ex}");
+        }
+        finally
+        {
+            loading = false;
+            StateHasChanged();
+        }
     }
 
     private static async Task<List<StrandEntity>> LoadAncestorsAsync(StreetSamuraiDbContext db, Guid? parentId)
@@ -1047,19 +1146,30 @@ else
         poll?.Dispose();
         poll = new System.Threading.Timer(async _ =>
         {
-            if (strand == null) return;
-            await using var db = await DbFactory.CreateDbContextAsync();
-            var fresh = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == strand.Id);
-            if (fresh == null) return;
-            strand.Status = fresh.Status;
-            strand.CombinedAudioPath = fresh.CombinedAudioPath;
-            strand.CharsNarrated = fresh.CharsNarrated;
-            beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
-            await InvokeAsync(StateHasChanged);
-            if (strand.Status is "ready" or "failed" or "stopped")
+            // Defensive try/catch: a transient DB disconnect on the timer
+            // thread used to crash silently in unobserved-exception land
+            // and the UI would freeze on "narrating" forever. Now we log
+            // and keep ticking — the next interval gets a fresh attempt.
+            try
             {
-                poll?.Dispose();
-                poll = null;
+                if (strand == null) return;
+                await using var db = await DbFactory.CreateDbContextAsync();
+                var fresh = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == strand.Id);
+                if (fresh == null) return;
+                strand.Status = fresh.Status;
+                strand.CombinedAudioPath = fresh.CombinedAudioPath;
+                strand.CharsNarrated = fresh.CharsNarrated;
+                beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+                await InvokeAsync(StateHasChanged);
+                if (strand.Status is "ready" or "failed" or "stopped")
+                {
+                    poll?.Dispose();
+                    poll = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"[strand-poll] tick failed for {strand?.Id}: {ex.Message}");
             }
         }, null, TimeSpan.FromSeconds(2), TimeSpan.FromSeconds(3));
     }
@@ -1229,36 +1339,12 @@ else
 
     private void RequestDeleteAsync(Guid beatId)
     {
+        // Escape handler is installed once on first render via
+        // streetsamurai.installPageEscape and torn down in Dispose. No
+        // per-modal re-wiring required.
         pendingDelete = beatId;
-        _ = WireEscapeOnceAsync();
     }
     private void CancelDelete() => pendingDelete = null;
-
-    /// <summary>One-shot Escape-key hook. Registers a keydown listener on
-    /// document; on Escape, in priority order: (1) close an open modal,
-    /// (2) clear the multi-select selection bar, (3) leave the page alone.
-    /// Cheap alternative to a full Blazor focus-trap component.</summary>
-    private async Task WireEscapeOnceAsync()
-    {
-        try
-        {
-            await JS.InvokeVoidAsync("eval", @"
-                (function(){
-                  if (window.__ssStrandEscBound) return;
-                  window.__ssStrandEscBound = true;
-                  document.addEventListener('keydown', function(e){
-                    if (e.key !== 'Escape') return;
-                    // 1. open modal → cancel
-                    var cancel = document.querySelector('.modal.d-block .modal-footer .btn-outline-secondary');
-                    if (cancel) { cancel.click(); return; }
-                    // 2. selection bar present → click Clear
-                    var clear = document.querySelector('[data-cy=""clear-selection""]');
-                    if (clear) { clear.click(); return; }
-                  });
-                })();");
-        }
-        catch { /* JS interop is best-effort */ }
-    }
 
     private async Task ConfirmDeleteAsync()
     {
@@ -1397,25 +1483,33 @@ else
             Toast.Info("PLAY-PARTIAL", $"{selectedInOrder.Count - withAudio.Count} selected beat(s) skipped — no audio recorded yet.");
 
         // Build the play list: alternating audioUrl + pauseMs entries.
-        // The last pause is 0 (playback ends after final beat).
+        // The last pause is 0 (playback ends after final beat). Each entry
+        // also carries beatId so the JS player can fire OnBeatStarted back
+        // into Blazor for the resume-from-here marker.
         var items = new List<object>();
         for (int i = 0; i < withAudio.Count; i++)
         {
             var b = withAudio[i].Beat;
-            items.Add(new { audioUrl = $"/api/strands/{strand.Id}/beat/{b.Id}/audio", pauseMs = 0 });
+            var pauseMs = 0;
             if (i < withAudio.Count - 1)
             {
                 var next = withAudio[i + 1].Beat;
-                var pauseMs = b.GapAfterMs ?? ComputeAutoGapMs(b, next);
-                items[^1] = new { audioUrl = $"/api/strands/{strand.Id}/beat/{b.Id}/audio", pauseMs };
+                pauseMs = b.GapAfterMs ?? ComputeAutoGapMs(b, next);
             }
+            items.Add(new
+            {
+                audioUrl = $"/api/strands/{strand.Id}/beat/{b.Id}/audio",
+                pauseMs,
+                beatId   = b.Id.ToString(),
+            });
         }
 
         try
         {
             isPlayingSequence = true;
             StateHasChanged();
-            await JS.InvokeVoidAsync("streetsamurai.playBeatsInSequence", (object)items);
+            selfRef ??= DotNetObjectReference.Create(this);
+            await JS.InvokeVoidAsync("streetsamurai.playBeatsInSequence", (object)items, selfRef);
         }
         catch (Exception ex) { Toast.Error("PLAY-FAIL", ex.Message); }
         finally
@@ -1638,5 +1732,114 @@ else
         return ts.TotalMinutes >= 1 ? $"{(int)ts.TotalMinutes}:{ts.Seconds:D2}" : $"{ts.TotalSeconds:0.0}s";
     }
 
-    public void Dispose() => poll?.Dispose();
+    /// <summary>Called from JS as each beat in a play-selected sequence
+    /// begins. Persists Strand.LastPlayedBeatId so the resume banner shows
+    /// up next time the strand loads. Fire-and-forget; failures don't
+    /// interrupt playback.
+    ///
+    /// Coalesced: a fast playback of 50 beats would otherwise trigger 50
+    /// UPDATEs against Strands. We compare against the in-memory
+    /// <c>resumeBeatId</c> first so duplicate "still on the same beat"
+    /// callbacks (paused/resumed without advancing, double-fire from the
+    /// audio element's events) are a no-op.</summary>
+    [JSInvokable]
+    public async Task OnBeatStarted(string beatIdString)
+    {
+        if (strand == null || !Guid.TryParse(beatIdString, out var bid)) return;
+        // Already recorded — skip the round-trip. resumeBeatId tracks the
+        // in-memory equivalent of Strands.LastPlayedBeatId so a stable read
+        // means a stable write too.
+        if (resumeBeatId == bid) return;
+        try
+        {
+            await using var db = await DbFactory.CreateDbContextAsync();
+            var row = await db.Strands.FirstOrDefaultAsync(s => s.Id == strand.Id);
+            if (row == null) return;
+            row.LastPlayedBeatId = bid;
+            row.LastPlayedSec    = 0; // resume granularity is per-beat for now
+            row.UpdatedAt        = DateTime.UtcNow;
+            await db.SaveChangesAsync();
+            resumeBeatId = bid;
+            await InvokeAsync(StateHasChanged);
+        }
+        catch (Exception ex) { Console.Error.WriteLine($"[strand-resume] save failed: {ex.Message}"); }
+    }
+
+    /// <summary>Called from JS when the user attempted to drop a beat onto
+    /// a row in a different strand. Re-parenting across strands isn't
+    /// supported by MoveBeatAsync today — surface a clear toast instead of
+    /// the silent no-op the user would otherwise see.</summary>
+    [JSInvokable]
+    public Task OnCrossStrandDropRejected()
+    {
+        Toast.Warning("MOVE", "Cross-strand reorder isn't supported yet — drag only works within one strand.");
+        return Task.CompletedTask;
+    }
+
+    /// <summary>Called from JS when the user drops a beat row onto another.
+    /// Routes through Workbench.MoveBeatAsync which only mutates the
+    /// fractional SortKey — audio stays valid.</summary>
+    [JSInvokable]
+    public async Task OnBeatDropped(string draggedIdString, string targetIdString)
+    {
+        if (strand == null) return;
+        if (!Guid.TryParse(draggedIdString, out var dragged) || !Guid.TryParse(targetIdString, out var target)) return;
+        if (dragged == target) return;
+        try
+        {
+            // Drop-target semantics: the dragged beat lands AFTER the row
+            // it was dropped on. Dropping onto the first row therefore moves
+            // the beat to position 2; use "insert at top" affordance for
+            // position 1 (drag onto self is rejected by the workbench).
+            await Workbench.MoveBeatAsync(strand.Id, dragged, target);
+            await ReloadBeatsAsync();
+            await InvokeAsync(StateHasChanged);
+            Toast.Success("MOVE", "Beat reordered.");
+        }
+        catch (Exception ex) { Toast.Error("MOVE-FAIL", ex.Message); }
+    }
+
+    /// <summary>Scroll to the saved resume beat. Smooth-scroll via JS; the
+    /// row's .resume-here class gives the visual landing point.</summary>
+    private async Task ScrollToResumeAsync()
+    {
+        if (!resumeBeatId.HasValue) return;
+        try { await JS.InvokeVoidAsync("streetsamurai.scrollBeatIntoView", resumeBeatId.Value.ToString()); }
+        catch { /* JS race — banner stays visible, user can click again */ }
+    }
+
+    /// <summary>Forget the saved listening position. Updates the strand row
+    /// AND the in-memory resume marker so the banner disappears immediately.</summary>
+    private async Task ClearResumeAsync()
+    {
+        if (strand == null) return;
+        try
+        {
+            await using var db = await DbFactory.CreateDbContextAsync();
+            var row = await db.Strands.FirstOrDefaultAsync(s => s.Id == strand.Id);
+            if (row != null)
+            {
+                row.LastPlayedBeatId = null;
+                row.LastPlayedSec    = null;
+                row.UpdatedAt        = DateTime.UtcNow;
+                await db.SaveChangesAsync();
+            }
+            resumeBeatId = null;
+            StateHasChanged();
+        }
+        catch (Exception ex) { Toast.Error("RESUME-CLEAR-FAIL", ex.Message); }
+    }
+
+    public void Dispose()
+    {
+        poll?.Dispose();
+        // Best-effort JS teardown — page is unloading, so a fire-and-forget
+        // is fine. Don't await; the framework expects Dispose to be sync.
+        if (!string.IsNullOrEmpty(escapeToken))
+        {
+            try { _ = JS.InvokeVoidAsync("streetsamurai.uninstallPageEscape", escapeToken); }
+            catch { /* circuit may already be torn down */ }
+        }
+        selfRef?.Dispose();
+    }
 }

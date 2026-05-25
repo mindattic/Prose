@@ -358,6 +358,34 @@ if (args.Contains("--migrate-strands"))
     return;
 }
 
+// CLI mode: reconcile audio bytes between local disk and Azure Blob storage.
+// Companion to DualWriteAudioStore — repairs drift from offline recordings
+// and failed background uploads. Default (no --push/--pull args) is full
+// bidirectional repair. See SyncAudioCli class doc for the full arg list.
+//   ss --sync-audio [--push] [--pull] [--strand SLUG] [--dry-run] [--verbose]
+if (args.Contains("--sync-audio"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SyncAudioCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: import a hand-authored .strand file (beat + gap + beat …) into a
+// fresh strand. The complement to --write-strand (LLM-generated): this is for
+// drafts written elsewhere (chat exports, transcripts, paper notes typed up).
+// See ImportStrandCli class doc for the file format.
+//   ss --import-strand --file path.strand [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]
+if (args.Contains("--import-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ImportStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: burst oversized beats (e.g. chapter-as-one-beat from old book
 // imports) into paragraph-sized pieces. Idempotent — already-small beats
 // are skipped on rerun.
@@ -705,63 +733,76 @@ app.MapGet("/api/episodes/{episodeId:guid}/episode.wav", async (
 app.MapGet("/api/strands/{strandId:guid}/beat/{beatId:guid}/audio", async (
     Guid strandId,
     Guid beatId,
-    StreetSamurai.Core.Services.StrandWorkbenchService workbench,
-    Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory,
-    HttpContext ctx) =>
+    StreetSamurai.Core.Interfaces.IAudioStore audioStore,
+    Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory) =>
 {
     await using var db = await dbFactory.CreateDbContextAsync();
+    // Validate that this beat is actually a member of the strand in the URL.
+    // Without this check, an authenticated user with any beat GUID could pull
+    // its audio by inventing any strand GUID — the strandId segment was
+    // decorative. The unique (StrandId, BeatId) PK on StrandBeats makes this
+    // an index seek, ~free at any scale.
+    var isMember = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
+        .AnyAsync(db.StrandBeats.Where(sb => sb.StrandId == strandId && sb.BeatId == beatId));
+    if (!isMember) return Results.NotFound();
     var beat = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
         .FirstOrDefaultAsync(
             Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AsNoTracking(db.Beats)
                 .Where(b => b.Id == beatId));
-    if (beat?.AudioPath is null) { ctx.Response.StatusCode = 404; return; }
-    var full = workbench.ResolveAudioFile(beat.AudioPath);
-    if (!System.IO.File.Exists(full)) { ctx.Response.StatusCode = 404; return; }
-    ctx.Response.ContentType = beat.AudioPath.EndsWith(".mp3", StringComparison.OrdinalIgnoreCase) ? "audio/mpeg" : "audio/wav";
-    await ctx.Response.SendFileAsync(full);
+    if (beat?.AudioPath is null) return Results.NotFound();
+    var contentType = beat.AudioPath.EndsWith(".mp3", StringComparison.OrdinalIgnoreCase) ? "audio/mpeg" : "audio/wav";
+
+    // Local backend → Results.File(path) which uses sendfile() and gets
+    // range support for free. Blob backend → Results.File(stream) — the
+    // BlobClient stream is seekable, so enableRangeProcessing lets the
+    // browser scrub long combined-audio without downloading the whole
+    // thing. Same Results.File API for both paths.
+    var localPath = await audioStore.ResolveLocalPathAsync(beat.AudioPath);
+    if (localPath != null)
+        return Results.File(localPath, contentType, enableRangeProcessing: true);
+
+    var stream = await audioStore.OpenReadAsync(beat.AudioPath);
+    if (stream == null) return Results.NotFound();
+    return Results.File(stream, contentType, enableRangeProcessing: true);
 }).RequireAuthorization();
 
 app.MapGet("/api/strands/{strandId:guid}/strand.wav", async (
     Guid strandId,
-    StreetSamurai.Core.Services.StrandWorkbenchService workbench,
-    Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory,
-    HttpContext ctx) =>
+    StreetSamurai.Core.Interfaces.IAudioStore audioStore,
+    Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory) =>
 {
     await using var db = await dbFactory.CreateDbContextAsync();
     var strand = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
         .FirstOrDefaultAsync(
             Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AsNoTracking(db.Strands)
                 .Where(s => s.Id == strandId));
-    if (strand is null) { ctx.Response.StatusCode = 404; return; }
-    var dir = workbench.GetStrandRoot(strand.Slug);
-    var wavPath = System.IO.Path.Combine(dir, "strand.wav");
-    var mp3Path = System.IO.Path.Combine(dir, "strand.mp3");
-    // Legacy fallback for content migrated from the Episode era — the
-    // combined audio still lives under engine/episodes/{slug}/episode.{wav|mp3}
-    // until the strand is re-narrated.
-    if (!System.IO.File.Exists(wavPath) && !System.IO.File.Exists(mp3Path))
+    if (strand is null) return Results.NotFound();
+
+    // Try the WAV first, then MP3, then legacy episode-era filenames.
+    // Both formats are valid outputs from ExportCombinedAsync depending on
+    // whether the strand's beats were narrated as lossless PCM or MP3.
+    string? rel = null, contentType = null, filenameExt = null;
+    var candidates = new[]
     {
-        var legacyDir = System.IO.Path.Combine(workbench.GetAudioRoot(), "..", "episodes", strand.Slug);
-        var legacyWav = System.IO.Path.Combine(legacyDir, "episode.wav");
-        var legacyMp3 = System.IO.Path.Combine(legacyDir, "episode.mp3");
-        if (System.IO.File.Exists(legacyWav)) wavPath = legacyWav;
-        if (System.IO.File.Exists(legacyMp3)) mp3Path = legacyMp3;
-    }
-    if (System.IO.File.Exists(wavPath))
+        ($"{strand.Slug}/strand.wav",  "audio/wav",  "wav"),
+        ($"{strand.Slug}/strand.mp3",  "audio/mpeg", "mp3"),
+        ($"{strand.Slug}/episode.wav", "audio/wav",  "wav"),
+        ($"{strand.Slug}/episode.mp3", "audio/mpeg", "mp3"),
+    };
+    foreach (var (r, t, e) in candidates)
     {
-        ctx.Response.ContentType = "audio/wav";
-        ctx.Response.Headers.ContentDisposition = $"attachment; filename=\"{strand.Slug}.wav\"";
-        await ctx.Response.SendFileAsync(wavPath);
-        return;
+        if (await audioStore.ExistsAsync(r)) { rel = r; contentType = t; filenameExt = e; break; }
     }
-    if (System.IO.File.Exists(mp3Path))
-    {
-        ctx.Response.ContentType = "audio/mpeg";
-        ctx.Response.Headers.ContentDisposition = $"attachment; filename=\"{strand.Slug}.mp3\"";
-        await ctx.Response.SendFileAsync(mp3Path);
-        return;
-    }
-    ctx.Response.StatusCode = 404;
+    if (rel == null) return Results.NotFound();
+
+    var fileDownloadName = $"{strand.Slug}.{filenameExt}";
+    var localPath = await audioStore.ResolveLocalPathAsync(rel);
+    if (localPath != null)
+        return Results.File(localPath, contentType!, fileDownloadName, enableRangeProcessing: true);
+
+    var stream = await audioStore.OpenReadAsync(rel);
+    if (stream == null) return Results.NotFound();
+    return Results.File(stream, contentType!, fileDownloadName, enableRangeProcessing: true);
 }).RequireAuthorization();
 
 // Login endpoint — form POST from Login.razor, with antiforgery + open redirect + rate limiting

@@ -22,11 +22,13 @@ public class StrandTools
 {
     private readonly StrandWorkbenchService workbench;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly ElevenLabsTtsService tts;
 
-    public StrandTools(StrandWorkbenchService workbench, IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    public StrandTools(StrandWorkbenchService workbench, IDbContextFactory<StreetSamuraiDbContext> dbFactory, ElevenLabsTtsService tts)
     {
         this.workbench = workbench;
         this.dbFactory = dbFactory;
+        this.tts = tts;
     }
 
     [McpServerTool, Description("List strands. Optional kind filter ('book', 'chapter', 'episode', etc.). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
@@ -299,13 +301,23 @@ public class StrandTools
         return JsonSerializer.Serialize(new { ok = true, id = bid }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Kick off TTS narration for every un-narrated beat in this strand (and its child strands recursively). Returns immediately — narration runs in the background; poll get_strand to observe progress.")]
+    [McpServerTool, Description("Kick off TTS narration for every un-narrated beat in this strand (and its child strands recursively). Returns immediately — narration runs in the background; poll get_strand to observe progress. Returns an error response (without spawning anything) if TTS is not configured.")]
     public async Task<string> NarrateStrand(
         [Description("Strand Guid id or slug.")] string strandIdOrSlug)
     {
         var strand = await ResolveStrandAsync(strandIdOrSlug);
         if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
-        _ = Task.Run(() => workbench.NarrateAsync(strand.Id));
+        // Pre-flight: without this check, an unconfigured TTS account causes
+        // NarrateAsync to throw InvalidOperationException into the
+        // unobserved-task void; the MCP caller saw {ok:true} and nothing
+        // ever happened. Return the typed error here instead.
+        if (!await tts.IsConfiguredAsync())
+            return JsonSerializer.Serialize(new { error = "tts_not_configured", message = "ElevenLabs API key is missing. Set it in Settings before calling narrate_strand." }, CanonTools.JsonOpts);
+        _ = Task.Run(async () =>
+        {
+            try { await workbench.NarrateAsync(strand.Id); }
+            catch (Exception ex) { Console.Error.WriteLine($"[mcp:narrate_strand] {strand.Id}: {ex.Message}"); }
+        });
         return JsonSerializer.Serialize(new { ok = true, id = strand.Id, status = "narrating" }, CanonTools.JsonOpts);
     }
 
