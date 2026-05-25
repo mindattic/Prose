@@ -84,6 +84,14 @@ public class LocalDiskAudioStore : IAudioStore
             ? $"/api/strands/{strandId}/beat/{beatId}/audio"
             : $"/api/strands/{strandId}/beat/{beatId}/audio?v={Uri.EscapeDataString(cacheBust)}";
 
+    public Task<DateTimeOffset?> GetLastModifiedAsync(string relativePath, CancellationToken ct = default)
+    {
+        var full = ResolveExistingFile(relativePath);
+        if (full == null) return Task.FromResult<DateTimeOffset?>(null);
+        try { return Task.FromResult<DateTimeOffset?>(new DateTimeOffset(File.GetLastWriteTimeUtc(full), TimeSpan.Zero)); }
+        catch { return Task.FromResult<DateTimeOffset?>(null); }
+    }
+
     /// <summary>Resolve a relative path to an absolute file. Tries the
     /// canonical MutableDataDir location first, then the two legacy roots
     /// for files that haven't been re-recorded since the 2026-05-24 cutover.

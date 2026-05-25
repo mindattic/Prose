@@ -68,4 +68,11 @@ public interface IAudioStore
     /// UpdatedAt.Ticks) is appended as a query string so a re-record
     /// invalidates the browser cache without a path change.</summary>
     string BuildPlaybackUrl(Guid strandId, Guid beatId, string relativePath, string? cacheBust = null);
+
+    /// <summary>Last-modified timestamp of the bytes at <paramref name="relativePath"/>,
+    /// or null when the file/blob is absent. Used by the bidirectional
+    /// reconciliation service to decide which side wins: newer timestamp
+    /// is authoritative, ties (within ~2 s tolerance) are no-ops. Local
+    /// disk reads File.GetLastWriteTimeUtc; blob reads BlobProperties.LastModified.</summary>
+    Task<DateTimeOffset?> GetLastModifiedAsync(string relativePath, CancellationToken ct = default);
 }
