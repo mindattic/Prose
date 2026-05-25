@@ -24,7 +24,7 @@ namespace StreetSamurai.Core.Services;
 public class AudioReconciliationService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
-    private readonly IAudioStore audioStore;
+    private readonly IAudioStore? audioStore;
     private readonly ILogger<AudioReconciliationService> log;
     private static readonly TimeSpan DriftTolerance = TimeSpan.FromSeconds(2);
 
@@ -38,25 +38,38 @@ public class AudioReconciliationService
         this.log = log;
     }
 
+    /// <summary>Reconcile two explicit stores — used by callers that build
+    /// the pair themselves (the CLI, the Settings-page utility). Bypasses
+    /// the DI-registered IAudioStore entirely so this works even when the
+    /// runtime is configured for a single backend.</summary>
+    public async Task<ReconciliationReport> ReconcileAsync(IAudioStore a, IAudioStore b, CancellationToken ct = default)
+        => await ReconcileCoreAsync(a, b, ct);
+
     public sealed record ReconciliationReport(
         int Beats, int InSync, int CopiedAToB, int CopiedBToA,
         int CreatedOnB, int CreatedOnA, int MissingBoth, int Skipped, int Failed);
 
-    /// <summary>Run one full sweep. Safe to call concurrently with itself —
-    /// per-beat operations are independent. The background worker serialises
-    /// runs so a slow sweep doesn't pile up.</summary>
+    /// <summary>Run one full sweep against the DI-registered store. Only
+    /// does work when that store is a <see cref="DualWriteAudioStore"/>;
+    /// otherwise returns an empty report. Callers wanting to reconcile
+    /// arbitrary pairs (the CLI, the Settings utility) should use the
+    /// two-arg overload.</summary>
     public async Task<ReconciliationReport> ReconcileAsync(CancellationToken ct = default)
     {
-        // Reconciliation only makes sense when the audio store fronts two
-        // underlying backends. Outside of dual-write mode this method is a
-        // no-op — the single backend is its own source of truth.
         if (audioStore is not DualWriteAudioStore dual)
         {
             log.LogDebug("AudioReconciliation: audio store is not DualWrite, skipping.");
             return new ReconciliationReport(0, 0, 0, 0, 0, 0, 0, 0, 0);
         }
         var (a, b) = dual.UnderlyingStores;
+        return await ReconcileCoreAsync(a, b, ct);
+    }
 
+    /// <summary>Shared sweep logic — walks Beats.AudioPath, compares
+    /// timestamps on both stores, copies newer to older. Stateless;
+    /// safe to call concurrently per (a, b) pair.</summary>
+    private async Task<ReconciliationReport> ReconcileCoreAsync(IAudioStore a, IAudioStore b, CancellationToken ct)
+    {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var rows = await db.Beats.AsNoTracking()
             .Where(beat => beat.AudioPath != null)
