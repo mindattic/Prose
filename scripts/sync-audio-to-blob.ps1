@@ -27,14 +27,14 @@ if (-not (Test-Path $BlazorProj)) {
     exit 1
 }
 
-Write-Host "[sync-audio-to-blob] Pushing local-only audio to blob..." -ForegroundColor Cyan
+Write-Host "[sync-audio-to-blob] Reconciling local and blob (newest wins per beat)..." -ForegroundColor Cyan
 Push-Location $BlazorProj
 try {
-    # --push only: we never pull from blob to local during deploy. The
-    # deploy-time job is to ensure cloud has everything local has, NOT to
-    # rehydrate the local cache with cloud-only files. Manual --pull is
-    # for that.
-    & dotnet run --no-build --no-restore -- --sync-audio --push
+    # Single bidirectional pass: for every beat, the side with the newer
+    # last-modified timestamp wins and gets copied to the other. Same code
+    # path the always-on AudioReconciliationBackgroundService runs, but
+    # invoked synchronously here so the deploy waits for it.
+    & dotnet run --no-build --no-restore -- --sync-audio
     $code = $LASTEXITCODE
 } finally {
     Pop-Location
@@ -43,9 +43,9 @@ try {
 if ($code -eq 0) {
     Write-Host "[sync-audio-to-blob] OK: local + blob in sync." -ForegroundColor Green
 } elseif ($code -eq 1) {
-    Write-Warning '[sync-audio-to-blob] Some uploads failed. Re-running is safe; fix Azure connectivity then deploy again.'
+    Write-Warning '[sync-audio-to-blob] Some copies failed. Re-running is safe; fix connectivity then deploy again.'
 } elseif ($code -eq 2) {
-    Write-Warning '[sync-audio-to-blob] Config error: verify dotnet user-secrets has AudioStore:ConnectionString set.'
+    Write-Warning '[sync-audio-to-blob] Audio store is not in dual-write mode. Configure AudioStore:Provider=dual.'
 }
 
 exit $code

@@ -137,6 +137,18 @@ public class AzureBlobAudioStore : IAudioStore
             : $"/api/strands/{strandId}/beat/{beatId}/audio?v={Uri.EscapeDataString(cacheBust)}";
     }
 
+    public async Task<DateTimeOffset?> GetLastModifiedAsync(string relativePath, CancellationToken ct = default)
+    {
+        try
+        {
+            var blob = container.GetBlobClient(relativePath);
+            var props = await blob.GetPropertiesAsync(cancellationToken: ct);
+            return props.Value.LastModified;
+        }
+        catch (Azure.RequestFailedException ex) when (ex.Status == 404) { return null; }
+        catch (Exception ex) { log.LogDebug(ex, "Blob LastModified lookup failed for {Rel}", relativePath); return null; }
+    }
+
     /// <summary>Mint a short-lived read SAS URL for direct browser streaming.
     /// Not used by the default <see cref="BuildPlaybackUrl"/> — exposed so
     /// callers that want CDN-style direct access (e.g. a public bookshelf

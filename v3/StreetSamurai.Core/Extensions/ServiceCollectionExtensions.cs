@@ -84,6 +84,12 @@ public static class ServiceCollectionExtensions
                 _           => ActivatorUtilities.CreateInstance<LocalDiskAudioStore>(sp),
             };
         });
+        // Bidirectional newest-wins sync. The service short-circuits at run
+        // time when the audio store isn't DualWriteAudioStore — registering
+        // it unconditionally keeps the DI graph simple and lets a config
+        // change (single → dual) take effect on next restart without rewiring.
+        services.AddSingleton<AudioReconciliationService>();
+        services.AddHostedService<AudioReconciliationBackgroundService>();
         // Typed repositories — every directory repo now lives on the unified
         // SQL Server StreetSamurai database via EfRepository<T>. The explicit
         // factory functions disambiguate between the production

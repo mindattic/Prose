@@ -128,6 +128,26 @@ public class DualWriteAudioStore : IAudioStore
     public string BuildPlaybackUrl(Guid strandId, Guid beatId, string relativePath, string? cacheBust = null)
         => primary.BuildPlaybackUrl(strandId, beatId, relativePath, cacheBust);
 
+    /// <summary>Reconciliation needs both timestamps to choose a winner, so
+    /// expose the newer of the two here. Reconciler probes each underlying
+    /// store directly when it needs to act on drift; this aggregate value is
+    /// used by the HTTP layer / playback URL cache busting.</summary>
+    public async Task<DateTimeOffset?> GetLastModifiedAsync(string relativePath, CancellationToken ct = default)
+    {
+        var p = await primary.GetLastModifiedAsync(relativePath, ct);
+        var s = await secondary.GetLastModifiedAsync(relativePath, ct);
+        if (p == null) return s;
+        if (s == null) return p;
+        return p > s ? p : s;
+    }
+
+    /// <summary>Underlying stores, exposed so the reconciliation service can
+    /// probe each side independently and copy bytes between them without
+    /// going through the dual-write fan-out (which would re-trigger the
+    /// background uploads). Returns the (primary, secondary) pair the
+    /// composite was constructed with.</summary>
+    public (IAudioStore Primary, IAudioStore Secondary) UnderlyingStores => (primary, secondary);
+
     /// <summary>Run a secondary-store operation off the request thread and log
     /// any failure. Never propagates exceptions — secondary failures are
     /// degraded-mode events, not blockers. The store's own try/catch is the
