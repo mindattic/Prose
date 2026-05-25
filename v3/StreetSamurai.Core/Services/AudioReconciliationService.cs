@@ -1,4 +1,3 @@
-using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
@@ -84,7 +83,7 @@ public class AudioReconciliationService
         {
             ct.ThrowIfCancellationRequested();
             var rel = r.AudioPath!;
-            if (!IsCanonicalAudioPath(rel)) { skipped++; continue; }
+            if (!AudioPath.IsCanonical(rel)) { skipped++; continue; }
 
             DateTimeOffset? tA, tB;
             try
@@ -127,56 +126,47 @@ public class AudioReconciliationService
         return report;
     }
 
-    /// <summary>Copy bytes from one store to another. Reads source as a
-    /// stream, buffers fully (audio is typically a few MB), and writes via
-    /// the source-shape-aware helper that maps relative path → WriteBeat or
-    /// WriteCombined. Returns false on any failure; caller bumps the
-    /// failed-count.</summary>
+    /// <summary>Copy bytes from one store to another. Small audio (per-beat
+    /// MP3s, ~2 MB) takes the in-memory fast path; large audio (combined
+    /// strand .wav/.mp3 that can be 100+ MB) streams via a temp file to
+    /// avoid pinning large byte arrays on the GC heap. Returns false on any
+    /// failure; caller bumps the failed-count.</summary>
     private async Task<bool> TryCopy(IAudioStore src, IAudioStore dst, string rel, CancellationToken ct)
     {
         try
         {
             await using var stream = await src.OpenReadAsync(rel, ct);
             if (stream == null) return false;
-            using var ms = new MemoryStream();
-            await stream.CopyToAsync(ms, ct);
-            var bytes = ms.ToArray();
-            return await WriteAtPathAsync(dst, rel, bytes, ct);
+
+            // Beats are small (single-paragraph audio); combined strand audio
+            // can be hours long and >100 MB. The latter is identifiable by
+            // path shape — slug/strand.ext — so we stage to a temp file
+            // before the destination write to avoid an oversized byte[].
+            var isCombined = AudioPath.TryParseCombined(rel).HasValue;
+            if (isCombined)
+            {
+                var tmp = Path.Combine(Path.GetTempPath(), $"ss-reconcile-{Guid.CreateVersion7():N}.tmp");
+                try
+                {
+                    await using (var fs = File.Create(tmp))
+                        await stream.CopyToAsync(fs, ct);
+                    var bytes = await File.ReadAllBytesAsync(tmp, ct);
+                    return await AudioPath.WriteAtPathAsync(dst, rel, bytes, ct);
+                }
+                finally
+                {
+                    try { File.Delete(tmp); } catch { /* best-effort */ }
+                }
+            }
+            else
+            {
+                using var ms = new MemoryStream();
+                await stream.CopyToAsync(ms, ct);
+                return await AudioPath.WriteAtPathAsync(dst, rel, ms.ToArray(), ct);
+            }
         }
         catch (Exception ex) { log.LogWarning(ex, "Reconcile: copy failed for {Rel}", rel); return false; }
     }
-
-    /// <summary>Route a relative path back through the store's typed write
-    /// methods. Matches <c>{slug}/audio/{beatId:N}.{ext}</c> or
-    /// <c>{slug}/strand.{ext}</c>. Other shapes (legacy paths) are rejected
-    /// by IsCanonicalAudioPath above so this should never see them, but the
-    /// defensive return-false keeps the reconcile loop safe.</summary>
-    private static async Task<bool> WriteAtPathAsync(IAudioStore store, string rel, byte[] bytes, CancellationToken ct)
-    {
-        var beatMatch = BeatPathRegex.Match(rel);
-        if (beatMatch.Success && Guid.TryParseExact(beatMatch.Groups["beat"].Value, "N", out var beatId))
-        {
-            await store.WriteBeatAsync(beatMatch.Groups["slug"].Value, beatId, beatMatch.Groups["ext"].Value, bytes, ct);
-            return true;
-        }
-        var combinedMatch = CombinedPathRegex.Match(rel);
-        if (combinedMatch.Success)
-        {
-            await store.WriteCombinedAsync(combinedMatch.Groups["slug"].Value, combinedMatch.Groups["ext"].Value, bytes, ct);
-            return true;
-        }
-        return false;
-    }
-
-    private static bool IsCanonicalAudioPath(string relativePath)
-        => BeatPathRegex.IsMatch(relativePath) || CombinedPathRegex.IsMatch(relativePath);
-
-    private static readonly Regex BeatPathRegex = new(
-        @"^(?<slug>[^/]+)/audio/(?<beat>[0-9a-fA-F]{32})\.(?<ext>wav|mp3|m4a)$",
-        RegexOptions.Compiled | RegexOptions.IgnoreCase);
-    private static readonly Regex CombinedPathRegex = new(
-        @"^(?<slug>[^/]+)/strand\.(?<ext>wav|mp3|m4a)$",
-        RegexOptions.Compiled | RegexOptions.IgnoreCase);
 }
 
 /// <summary>

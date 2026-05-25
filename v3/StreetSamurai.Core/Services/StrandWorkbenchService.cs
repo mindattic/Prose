@@ -914,6 +914,13 @@ public class StrandWorkbenchService
             await db.SaveChangesAsync(ct);
 
             var ordered = await GetOrderedBeatsAsync(strandId, ct);
+            // Reset the per-run progress counters so the polling UI shows
+            // current-run state, not a stale lifetime total. Stamp the
+            // denominator from this snapshot so it stays stable even if
+            // beats are added/removed mid-run.
+            strand.NarratedBeatCount = 0;
+            strand.TotalBeatsToNarrate = ordered.Count;
+            await db.SaveChangesAsync(ct);
             // Audio bytes are written through IAudioStore — the synth helpers
             // hand the bytes to audioStore.WriteBeatAsync which knows where
             // they live (local disk vs blob). No filesystem prep needed here.
@@ -1000,6 +1007,9 @@ public class StrandWorkbenchService
                     if (!string.IsNullOrEmpty(newReqId))
                         ordered[idx].Beat.LastRequestId = newReqId;
                     strand.CharsNarrated += tracked.Text.Length;
+                    // Bump the progress counter so the polling UI reads a
+                    // single int instead of scanning the beats collection.
+                    strand.NarratedBeatCount++;
                     await db.SaveChangesAsync(ct);
                 }
                 catch (OperationCanceledException)

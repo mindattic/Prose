@@ -1,4 +1,3 @@
-using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 
@@ -171,27 +170,7 @@ public class DualWriteAudioStore : IAudioStore
     /// the next read just goes back to secondary.</summary>
     private async Task CacheToPrimaryAsync(string relativePath, byte[] bytes)
     {
-        try
-        {
-            var beatMatch = BeatPathRegex.Match(relativePath);
-            if (beatMatch.Success && Guid.TryParseExact(beatMatch.Groups["beat"].Value, "N", out var beatId))
-            {
-                await primary.WriteBeatAsync(beatMatch.Groups["slug"].Value, beatId, beatMatch.Groups["ext"].Value, bytes);
-                return;
-            }
-            var combinedMatch = CombinedPathRegex.Match(relativePath);
-            if (combinedMatch.Success)
-            {
-                await primary.WriteCombinedAsync(combinedMatch.Groups["slug"].Value, combinedMatch.Groups["ext"].Value, bytes);
-            }
-        }
+        try { await AudioPath.WriteAtPathAsync(primary, relativePath, bytes); }
         catch (Exception ex) { log.LogDebug(ex, "Cache-back to primary skipped for {Path}", relativePath); }
     }
-
-    private static readonly Regex BeatPathRegex = new(
-        @"^(?<slug>[^/]+)/audio/(?<beat>[0-9a-fA-F]{32})\.(?<ext>wav|mp3|m4a)$",
-        RegexOptions.Compiled | RegexOptions.IgnoreCase);
-    private static readonly Regex CombinedPathRegex = new(
-        @"^(?<slug>[^/]+)/strand\.(?<ext>wav|mp3|m4a)$",
-        RegexOptions.Compiled | RegexOptions.IgnoreCase);
 }

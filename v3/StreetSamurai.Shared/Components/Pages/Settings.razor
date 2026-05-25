@@ -16,6 +16,7 @@
 @inject UserRepository UserRepo
 @inject AuthenticationStateProvider AuthStateProvider
 @inject StreetSamurai.Core.Services.AudioReconciliationService AudioReconciler
+@inject StreetSamurai.Core.Interfaces.IAudioStore RuntimeAudioStore
 @inject StreetSamurai.Shared.Services.ToastNotifier Toast
 @inject Microsoft.Extensions.Configuration.IConfiguration AppConfig
 @inject Microsoft.Extensions.Logging.ILoggerFactory AppLogs
@@ -1341,13 +1342,29 @@
         rebuilding = false;
     }
 
+    /// <summary>Pick out a specific backend type from the runtime IAudioStore.
+    /// When the runtime is a DualWriteAudioStore the underlying pair already
+    /// has both sides ready (container ensured, file handles warm). When it's
+    /// a single-provider store we get one side for free; the missing side gets
+    /// constructed fresh by RunAudioSyncAsync. Returns null when no match.</summary>
+    private T? ResolveStore<T>() where T : class, IAudioStore
+    {
+        if (RuntimeAudioStore is T direct) return direct;
+        if (RuntimeAudioStore is DualWriteAudioStore dual)
+        {
+            var (primary, secondary) = dual.UnderlyingStores;
+            if (primary is T p) return p;
+            if (secondary is T s) return s;
+        }
+        return null;
+    }
+
     /// <summary>One-shot bidirectional reconcile triggered from the Audio
-    /// Storage card. Builds both backends fresh from configuration (so this
-    /// works regardless of whether the runtime IAudioStore is single-backend
-    /// or dual) and hands the pair to AudioReconciliationService. Same
-    /// engine the CLI and background timer use; just a different trigger.
-    /// Failures are surfaced via a toast plus the per-side counts on the
-    /// card; nothing in the running app is affected if a copy fails.</summary>
+    /// Storage card. Reuses the DI-registered backends when possible so a
+    /// click doesn't repeat the ~100 ms container-ensure round-trip the
+    /// AzureBlobAudioStore ctor used to do. Same engine the CLI and the
+    /// background timer use; just a different trigger. Failures are
+    /// surfaced via a toast plus the per-side counts on the card.</summary>
     private async Task RunAudioSyncAsync()
     {
         if (audioSyncRunning) return;
@@ -1355,17 +1372,22 @@
         StateHasChanged();
         try
         {
-            IAudioStore local;
-            IAudioStore blob;
-            try
+            // Pick up cached blob/local clients from the runtime IAudioStore
+            // when possible — that's a singleton that already ensured the
+            // container exists. Falling back to fresh construction only when
+            // the runtime store is pure local OR pure blob and we need the
+            // other side. Each round-trip avoided saves ~100 ms per click.
+            IAudioStore local = ResolveStore<LocalDiskAudioStore>()
+                ?? new LocalDiskAudioStore(Paths, AppLogs.CreateLogger<LocalDiskAudioStore>());
+            IAudioStore? blob = ResolveStore<AzureBlobAudioStore>();
+            if (blob == null)
             {
-                local = new LocalDiskAudioStore(Paths, AppLogs.CreateLogger<LocalDiskAudioStore>());
-                blob  = new AzureBlobAudioStore(AppConfig, AppLogs.CreateLogger<AzureBlobAudioStore>());
-            }
-            catch (InvalidOperationException ex)
-            {
-                Toast.Error("AUDIO-SYNC", $"Azure Blob is not configured: {ex.Message}");
-                return;
+                try { blob = new AzureBlobAudioStore(AppConfig, AppLogs.CreateLogger<AzureBlobAudioStore>()); }
+                catch (InvalidOperationException ex)
+                {
+                    Toast.Error("AUDIO-SYNC", $"Azure Blob is not configured: {ex.Message}");
+                    return;
+                }
             }
             audioSyncLastReport = await AudioReconciler.ReconcileAsync(local, blob);
             if (audioSyncLastReport.Failed > 0)

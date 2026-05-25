@@ -41,7 +41,12 @@ public class AzureBlobAudioStore : IAudioStore
     private readonly BlobContainerClient container;
     private readonly TimeSpan sasTtl;
     private readonly ILogger<AzureBlobAudioStore> log;
-    private readonly bool initialised;
+    // Container creation is lazy: the ctor used to call CreateIfNotExists
+    // synchronously, which blocked app startup on a network round-trip to
+    // Azure (and broke startup entirely when blob was unreachable). Now we
+    // ensure-once before the first write; reads don't need it (a missing
+    // container yields 404, which we already handle).
+    private int containerEnsured; // 0 = not yet, 1 = done
 
     public AzureBlobAudioStore(IConfiguration config, ILogger<AzureBlobAudioStore> log)
     {
@@ -54,18 +59,26 @@ public class AzureBlobAudioStore : IAudioStore
         sasTtl = TimeSpan.FromMinutes(Math.Clamp(ttlMinutes, 1, 60 * 24));
         var serviceClient = new BlobServiceClient(connStr);
         container = serviceClient.GetBlobContainerClient(containerName);
+    }
+
+    /// <summary>Ensure the container exists. Called once on the first write
+    /// path; subsequent calls are a one-instruction interlocked check.
+    /// Reads skip this — a missing container surfaces as 404 from
+    /// OpenReadAsync / ExistsAsync, which the rest of the code expects.</summary>
+    private async Task EnsureContainerAsync(CancellationToken ct)
+    {
+        if (Interlocked.CompareExchange(ref containerEnsured, 1, 0) != 0) return;
         try
         {
-            // CreateIfNotExists is idempotent; PublicAccessType.None keeps the
-            // container private (browser only reaches it via the SAS URL we
-            // mint on demand).
-            container.CreateIfNotExists(PublicAccessType.None);
-            initialised = true;
+            await container.CreateIfNotExistsAsync(PublicAccessType.None, cancellationToken: ct);
         }
         catch (Exception ex)
         {
-            log.LogError(ex, "Failed to initialise Azure blob container {Container} for audio storage", containerName);
-            initialised = false;
+            // Reset the flag so a transient failure doesn't permanently
+            // block writes — the next write attempt will retry.
+            Interlocked.Exchange(ref containerEnsured, 0);
+            log.LogError(ex, "Failed to ensure Azure blob container {Container}", container.Name);
+            throw;
         }
     }
 
@@ -73,6 +86,7 @@ public class AzureBlobAudioStore : IAudioStore
 
     public async Task<string> WriteBeatAsync(string strandSlug, Guid beatId, string extension, byte[] bytes, CancellationToken ct = default)
     {
+        await EnsureContainerAsync(ct);
         var ext = extension.TrimStart('.');
         var rel = $"{strandSlug}/audio/{beatId:N}.{ext}";
         var blob = container.GetBlobClient(rel);
@@ -84,6 +98,7 @@ public class AzureBlobAudioStore : IAudioStore
 
     public async Task<string> WriteCombinedAsync(string strandSlug, string extension, byte[] bytes, CancellationToken ct = default)
     {
+        await EnsureContainerAsync(ct);
         var ext = extension.TrimStart('.');
         var rel = $"{strandSlug}/strand.{ext}";
         var blob = container.GetBlobClient(rel);
@@ -110,12 +125,15 @@ public class AzureBlobAudioStore : IAudioStore
 
     public async Task<Stream?> OpenReadAsync(string relativePath, CancellationToken ct = default)
     {
+        // Don't probe ExistsAsync first — that's a separate HTTP round-trip
+        // and OpenReadAsync raises a typed 404 we can catch. Halves blob
+        // read latency for the common (file-exists) path.
         try
         {
             var blob = container.GetBlobClient(relativePath);
-            if (!(await blob.ExistsAsync(ct)).Value) return null;
             return await blob.OpenReadAsync(cancellationToken: ct);
         }
+        catch (Azure.RequestFailedException ex) when (ex.Status == 404) { return null; }
         catch (Exception ex) { log.LogDebug(ex, "Blob open-read failed for {Rel}", relativePath); return null; }
     }
 

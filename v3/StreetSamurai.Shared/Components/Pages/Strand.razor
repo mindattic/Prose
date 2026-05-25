@@ -297,7 +297,7 @@ else
                     }
                     else
                     {
-                        <a class="btn btn-sm btn-success" href="@($"/api/strands/{strand.Id}/strand.wav")" download>
+                        <a class="btn btn-sm btn-success" href="@CombinedAudioUrl()" download>
                             <i class="bi bi-download me-1"></i>Download
                         </a>
                     }
@@ -313,7 +313,7 @@ else
         @if (!string.IsNullOrEmpty(strand.CombinedAudioPath) && StaleCount == 0)
         {
             <div class="mb-3">
-                <audio controls src="@($"/api/strands/{strand.Id}/strand.wav")" class="w-100" style="height:34px;"></audio>
+                <audio controls src="@CombinedAudioUrl()" class="w-100" style="height:34px;"></audio>
             </div>
         }
 
@@ -1721,6 +1721,18 @@ else
             strand.CharsNarrated = fresh.CharsNarrated;
         }
         beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+    }
+
+    /// <summary>Build the combined-audio URL with a cache-bust query string.
+    /// Without the bust, re-stitching a strand writes new bytes to the same
+    /// URL — browsers serve the stale cached version until the page is
+    /// hard-reloaded. AudioCompletedAt ticks change on every successful
+    /// re-narrate, so appending them invalidates the browser cache cleanly.</summary>
+    private string CombinedAudioUrl()
+    {
+        if (strand == null) return "";
+        var bust = strand.AudioCompletedAt?.Ticks.ToString() ?? strand.UpdatedAt.Ticks.ToString();
+        return $"/api/strands/{strand.Id}/strand.wav?v={bust}";
     }
 
     private static string StatusColor(string status) => StrandWorkbenchService.StatusColor(status);

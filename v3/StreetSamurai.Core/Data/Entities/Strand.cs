@@ -79,6 +79,19 @@ public class Strand
     /// <summary>Sum of characters sent to TTS across this strand's beats.</summary>
     public int CharsNarrated { get; set; }
 
+    /// <summary>Number of beats that have been successfully narrated in the
+    /// current run. The narration loop bumps this each iteration so the
+    /// polling UI can show "narrated N of M" without re-loading the whole
+    /// beats collection on every tick. Reset to 0 at the start of each
+    /// NarrateAsync call (so the count reflects "this run" not "lifetime").</summary>
+    public int NarratedBeatCount { get; set; }
+
+    /// <summary>Total beats considered for narration this run (the snapshot
+    /// of the strand's beat count when NarrateAsync started). Pairs with
+    /// <see cref="NarratedBeatCount"/> to give the UI a stable denominator
+    /// even if beats are added/removed mid-narration.</summary>
+    public int TotalBeatsToNarrate { get; set; }
+
     /// <summary>Where the listener was when they walked away — a specific
     /// beat in this strand. Resume on /strand/{id}.</summary>
     public Guid? LastPlayedBeatId { get; set; }
