@@ -374,9 +374,11 @@ public static class StrandFileParser
         }
     }
 
-    /// <summary>Yield key/value pairs from a meta string, handling double-quoted
-    /// values that may contain spaces. Forgiving on malformed input — partial
-    /// pairs are dropped rather than throwing.</summary>
+    /// <summary>Yield key/value pairs from a meta string, handling double-
+    /// quoted values that may contain spaces and backslash-escaped quotes
+    /// (so a chapter title like <c>chapter:"Chapter \"Two\""</c> parses as
+    /// <c>chapter</c> = <c>Chapter "Two"</c>). Forgiving on malformed input —
+    /// partial pairs are dropped rather than throwing.</summary>
     private static IEnumerable<(string Key, string Value)> TokeniseMeta(string s)
     {
         int i = 0;
@@ -394,9 +396,26 @@ public static class StrandFileParser
             string val;
             if (i < s.Length && s[i] == '"')
             {
-                i++; int valStart = i;
-                while (i < s.Length && s[i] != '"') i++;
-                val = s[valStart..i];
+                i++; // skip opening quote
+                var sb = new System.Text.StringBuilder();
+                while (i < s.Length && s[i] != '"')
+                {
+                    // Backslash escape: \" yields a literal ", \\ yields a
+                    // literal backslash. Any other \x sequence is left as
+                    // two characters so the writer's own backslashes (e.g.
+                    // path samples) round-trip unchanged.
+                    if (s[i] == '\\' && i + 1 < s.Length && (s[i + 1] == '"' || s[i + 1] == '\\'))
+                    {
+                        sb.Append(s[i + 1]);
+                        i += 2;
+                    }
+                    else
+                    {
+                        sb.Append(s[i]);
+                        i++;
+                    }
+                }
+                val = sb.ToString();
                 if (i < s.Length) i++; // closing quote
             }
             else
