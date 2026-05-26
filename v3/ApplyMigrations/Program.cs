@@ -58,6 +58,7 @@ var migrations = new[]
     "fold_gaps_into_beats_20260523.sql",
     "add_beat_is_chapter_start_20260523.sql",
     "add_beat_kind_20260523.sql",
+    "add_strand_narration_progress_20260525.sql",
 };
 
 await using var db = await dbFactory.CreateDbContextAsync();
