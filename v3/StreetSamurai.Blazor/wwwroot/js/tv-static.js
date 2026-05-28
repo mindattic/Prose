@@ -19,6 +19,17 @@
     overlay.style.opacity = '1';
     var ctx = overlay.getContext('2d');
     var w = overlay.width, h = overlay.height;
+
+    // Keep the canvas covering the viewport if it resizes mid-effect; otherwise
+    // a resize during the ~300-450ms burst leaves new screen area unpainted.
+    // The listener is self-removing — it detaches when this generation ends.
+    function onResize() {
+        if (gen !== currentGen) { window.removeEventListener('resize', onResize); return; }
+        overlay.width  = w = window.innerWidth;
+        overlay.height = h = window.innerHeight;
+    }
+    window.addEventListener('resize', onResize);
+
     var start = performance.now();
     var duration = 300 + Math.floor(Math.random() * 150);
     var squeezeSpeed = 2 + Math.random() * 2;
@@ -34,6 +45,7 @@
       var pct = elapsed / duration;
       if (pct >= 1) {
         overlay.style.display = 'none';
+        window.removeEventListener('resize', onResize);
         return;
       }
       var imgData = ctx.createImageData(w, h);

@@ -333,7 +333,10 @@ window.homeBg = (function () {
             scanlinesRaf = requestAnimationFrame(frame);
         }
 
-        requestAnimationFrame(frame);
+        // Capture the initial frame's id too, so a stopScanlineAnim() that lands
+        // before the first frame fires can cancel it — otherwise that orphaned
+        // callback re-arms itself and runs forever on a detached canvas.
+        scanlinesRaf = requestAnimationFrame(frame);
     }
 
     // ── Public entry point ───────────────────────────────────────────────────
