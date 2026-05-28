@@ -17,6 +17,14 @@ window.__gmapsLoad = function(apiKey, cb) {
     var s = document.createElement('script');
     s.src = 'https://maps.googleapis.com/maps/api/js?key=' + apiKey + '&callback=__gmapsReady';
     s.async = true; s.defer = true;
+    // If the script fails to load (404, bad key, offline), release the latch so
+    // a later __gmapsLoad call can retry instead of hanging forever. Drop the
+    // dead <script> and clear the queued callbacks — they'll never be invoked.
+    s.onerror = function () {
+        window.__gmapsLoading = false;
+        window.__gmapsCbs = [];
+        if (s.parentNode) s.parentNode.removeChild(s);
+    };
     document.head.appendChild(s);
 };
 window.__gmapsReady = function() {
