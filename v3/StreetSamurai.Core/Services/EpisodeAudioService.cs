@@ -679,30 +679,36 @@ public class EpisodeAudioService
     /// </summary>
     public static byte[] WrapPcmAsWav(byte[] pcm, int sampleRate, short channels, short bitsPerSample)
     {
+        int dataChunkSize = pcm.Length;
+        using var ms = new MemoryStream(44 + dataChunkSize);
+        WriteWavHeader(ms, dataChunkSize, sampleRate, channels, bitsPerSample);
+        ms.Write(pcm, 0, pcm.Length);
+        return ms.ToArray();
+    }
+
+    /// <summary>Write a 44-byte RIFF/WAVE header to <paramref name="dst"/>
+    /// describing a PCM payload of <paramref name="dataChunkSize"/> bytes.
+    /// Caller is responsible for writing the PCM bytes that follow. Used by
+    /// the streaming concat path so we don't have to materialize the whole
+    /// strand's PCM in memory before stamping the header.</summary>
+    public static void WriteWavHeader(Stream dst, int dataChunkSize, int sampleRate, short channels, short bitsPerSample)
+    {
         int byteRate = sampleRate * channels * bitsPerSample / 8;
         short blockAlign = (short)(channels * bitsPerSample / 8);
-        int dataChunkSize = pcm.Length;
         int riffChunkSize = 36 + dataChunkSize;
-
-        using var ms = new MemoryStream(44 + dataChunkSize);
-        using var w = new BinaryWriter(ms);
-        // RIFF header
+        using var w = new BinaryWriter(dst, System.Text.Encoding.ASCII, leaveOpen: true);
         w.Write(System.Text.Encoding.ASCII.GetBytes("RIFF"));
         w.Write(riffChunkSize);
         w.Write(System.Text.Encoding.ASCII.GetBytes("WAVE"));
-        // fmt sub-chunk
         w.Write(System.Text.Encoding.ASCII.GetBytes("fmt "));
-        w.Write(16);                  // subchunk1 size for PCM
-        w.Write((short)1);            // PCM format
+        w.Write(16);
+        w.Write((short)1);
         w.Write(channels);
         w.Write(sampleRate);
         w.Write(byteRate);
         w.Write(blockAlign);
         w.Write(bitsPerSample);
-        // data sub-chunk
         w.Write(System.Text.Encoding.ASCII.GetBytes("data"));
         w.Write(dataChunkSize);
-        w.Write(pcm);
-        return ms.ToArray();
     }
 }

@@ -272,4 +272,15 @@
         el.style.height = (el.scrollHeight + 2) + 'px';
     }
     window.streetsamurai.autoSizeTextarea     = autoSizeTextarea;
+
+    /// Focus an element by id. Replaces the old eval(`...focus()`) shim
+    /// (which was CSP-hostile and didn't compose with strict policies).
+    /// Safe to call before the element exists — returns false in that case.
+    function focusElement(id) {
+        const el = document.getElementById(id);
+        if (!el) return false;
+        el.focus();
+        return true;
+    }
+    window.streetsamurai.focusElement         = focusElement;
 })();

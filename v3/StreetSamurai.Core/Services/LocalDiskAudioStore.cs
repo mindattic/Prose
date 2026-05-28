@@ -54,6 +54,17 @@ public class LocalDiskAudioStore : IAudioStore
         return rel;
     }
 
+    public async Task<string> WriteCombinedFromStreamAsync(string strandSlug, string extension, Stream src, CancellationToken ct = default)
+    {
+        var ext = extension.TrimStart('.');
+        var rel = $"{strandSlug}/strand.{ext}";
+        var full = Path.Combine(PrimaryRoot, rel.Replace('/', Path.DirectorySeparatorChar));
+        Directory.CreateDirectory(Path.GetDirectoryName(full)!);
+        await using var fs = new FileStream(full, FileMode.Create, FileAccess.Write, FileShare.None, 64 * 1024, useAsync: true);
+        await src.CopyToAsync(fs, ct);
+        return rel;
+    }
+
     public Task DeleteAsync(string relativePath, CancellationToken ct = default)
     {
         try

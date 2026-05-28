@@ -211,6 +211,13 @@ public class StrandWorkbenchService
         if (nextSk - prevSk < MinSortKeyGap)
         {
             await RestripeSortKeysAsync(strandId, ct);
+            // Restripe ran on its own DbContext and committed fresh SortKeys.
+            // Our local `db` still has the old StrandBeat instances tracked
+            // with their pre-restripe values — a re-query would return those
+            // same tracked instances (EF identity resolution), not the new
+            // DB values. Detach so the next ToListAsync materialises fresh
+            // rows with the post-restripe ladder.
+            db.ChangeTracker.Clear();
             ordered = await db.StrandBeats
                 .Where(sb => sb.StrandId == strandId)
                 .OrderBy(sb => sb.SortKey)
@@ -325,6 +332,10 @@ public class StrandWorkbenchService
         if (nextSk - prevSk < MinSortKeyGap)
         {
             await RestripeSortKeysAsync(strandId, ct);
+            // Restripe used a separate DbContext; clear ours so the re-read
+            // returns fresh post-restripe SortKeys, not the tracked stale
+            // values from the first ToListAsync above.
+            db.ChangeTracker.Clear();
             siblings = await db.StrandBeats
                 .Where(sb => sb.StrandId == strandId)
                 .OrderBy(sb => sb.SortKey)
@@ -1054,6 +1065,30 @@ public class StrandWorkbenchService
             var st = await db2.Strands.FirstOrDefaultAsync(s => s.Id == strandId, CancellationToken.None);
             if (st != null) { st.Status = "stopped"; await db2.SaveChangesAsync(CancellationToken.None); }
         }
+        catch (Exception ex)
+        {
+            // Top-level failure (DB unreachable, TTS service constructor blew
+            // up, anything else not caught per-beat). Without this catch the
+            // exception would escape NarrateAsync — and every caller is
+            // fire-and-forget Task.Run, so the strand would stay stuck in
+            // "narrating" forever with no signal to the UI. Flip status to
+            // "failed" with the exception message so the polling page can
+            // recover.
+            log.LogError(ex, "Strand {S} narration crashed at top level", strandId);
+            try
+            {
+                await using var db2 = await dbFactory.CreateDbContextAsync(CancellationToken.None);
+                var st = await db2.Strands.FirstOrDefaultAsync(s => s.Id == strandId, CancellationToken.None);
+                if (st != null)
+                {
+                    st.Status = "failed";
+                    st.Error = ex.Message;
+                    st.AudioCompletedAt = DateTime.UtcNow;
+                    await db2.SaveChangesAsync(CancellationToken.None);
+                }
+            }
+            catch (Exception inner) { log.LogError(inner, "Strand {S} failed-status write also failed", strandId); }
+        }
         finally
         {
             cancelTokens.TryRemove(strandId, out _);
@@ -1103,36 +1138,56 @@ public class StrandWorkbenchService
 
         if (allWav)
         {
-            // Inter-beat silence: pull each beat's PCM via the store (works
-            // for local-disk AND blob), then between beats append N samples
-            // of digital silence chosen by ComputeTrailingSilenceMs. Final
-            // beat gets no trailing silence (the strand just ends).
-            var pcmParts = new List<byte[]>();
-            for (int i = 0; i < ordered.Count; i++)
+            // Stream straight to a temp WAV file so the strand's PCM never
+            // sits in memory all at once. For a 100-beat strand at 44.1 kHz
+            // mono 16-bit, the old List<byte[]> + contiguous-array pattern
+            // pinned ~30-50 MB on the LOH twice (list + merged buffer +
+            // header-wrap allocation), routinely OOMing the B1 worker. Now
+            // each beat's bytes are written and released; the WAV header is
+            // patched in after the data chunk size is known.
+            var tmp = Path.Combine(Path.GetTempPath(), $"ss-combine-wav-{Guid.CreateVersion7():N}.wav");
+            try
             {
-                ct.ThrowIfCancellationRequested();
-                var o = ordered[i];
-                var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
-                if (bytes == null || bytes.Length <= 44) continue;
-                pcmParts.Add(bytes[44..]);
-
-                if (i < ordered.Count - 1)
+                await using (var fs = new FileStream(tmp, FileMode.Create, FileAccess.ReadWrite, FileShare.None, 64 * 1024, useAsync: true))
                 {
-                    var next = ordered[i + 1].Beat;
-                    var pauseMs = o.Beat.GapAfterMs ?? ComputeTrailingSilenceMs(o.Beat, next, settings);
-                    if (pauseMs > 0)
+                    // Reserve 44 bytes for the header — written after we
+                    // know the data chunk size.
+                    fs.Position = 44;
+                    long pcmTotal = 0;
+                    for (int i = 0; i < ordered.Count; i++)
                     {
-                        var silence = GenerateSilencePcm(pauseMs, sampleRate: 44100, channels: 1, bitsPerSample: 16);
-                        if (silence.Length > 0) pcmParts.Add(silence);
+                        ct.ThrowIfCancellationRequested();
+                        var o = ordered[i];
+                        var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
+                        if (bytes == null || bytes.Length <= 44) continue;
+                        await fs.WriteAsync(bytes.AsMemory(44), ct);
+                        pcmTotal += bytes.Length - 44;
+
+                        if (i < ordered.Count - 1)
+                        {
+                            var next = ordered[i + 1].Beat;
+                            var pauseMs = o.Beat.GapAfterMs ?? ComputeTrailingSilenceMs(o.Beat, next, settings);
+                            if (pauseMs > 0)
+                            {
+                                var silence = GenerateSilencePcm(pauseMs, sampleRate: 44100, channels: 1, bitsPerSample: 16);
+                                if (silence.Length > 0)
+                                {
+                                    await fs.WriteAsync(silence, ct);
+                                    pcmTotal += silence.Length;
+                                }
+                            }
+                        }
                     }
+                    fs.Position = 0;
+                    EpisodeAudioService.WriteWavHeader(fs, checked((int)pcmTotal), 44100, 1, 16);
+                    fs.Position = 0;
+                    await audioStore.WriteCombinedFromStreamAsync(strand.Slug, "wav", fs, ct);
                 }
             }
-            var total = pcmParts.Sum(p => p.Length);
-            var all = new byte[total];
-            int off = 0;
-            foreach (var p in pcmParts) { Buffer.BlockCopy(p, 0, all, off, p.Length); off += p.Length; }
-            var wav = EpisodeAudioService.WrapPcmAsWav(all, 44100, 1, 16);
-            await audioStore.WriteCombinedAsync(strand.Slug, "wav", wav, ct);
+            finally
+            {
+                try { File.Delete(tmp); } catch { /* best-effort */ }
+            }
         }
         else
         {
@@ -1641,14 +1696,34 @@ public class StrandWorkbenchService
                 using var proc = System.Diagnostics.Process.Start(psi);
                 if (proc != null)
                 {
-                    var stdout = await proc.StandardOutput.ReadToEndAsync(ct);
-                    await proc.WaitForExitAsync(ct);
-                    if (proc.ExitCode == 0
-                        && double.TryParse(stdout.Trim(), System.Globalization.NumberStyles.Float,
-                            System.Globalization.CultureInfo.InvariantCulture, out var sec)
-                        && sec > 0)
+                    // Drain stdout AND stderr concurrently. With both pipes
+                    // redirected, a child that writes >4 KB to stderr will
+                    // block on the unread pipe — and since stdout doesn't
+                    // close until the process exits, awaiting stdout first
+                    // hangs forever. The hard 10s timeout caps the worst-
+                    // case wedge so a misbehaving ffprobe can't pin a
+                    // narration thread indefinitely.
+                    using var timeoutCts = CancellationTokenSource.CreateLinkedTokenSource(ct);
+                    timeoutCts.CancelAfter(TimeSpan.FromSeconds(10));
+                    var stdoutTask = proc.StandardOutput.ReadToEndAsync(timeoutCts.Token);
+                    var stderrTask = proc.StandardError.ReadToEndAsync(timeoutCts.Token);
+                    try
                     {
-                        return Math.Round(sec, 3);
+                        await proc.WaitForExitAsync(timeoutCts.Token);
+                        var stdout = await stdoutTask;
+                        _ = await stderrTask;
+                        if (proc.ExitCode == 0
+                            && double.TryParse(stdout.Trim(), System.Globalization.NumberStyles.Float,
+                                System.Globalization.CultureInfo.InvariantCulture, out var sec)
+                            && sec > 0)
+                        {
+                            return Math.Round(sec, 3);
+                        }
+                    }
+                    catch (OperationCanceledException) when (!ct.IsCancellationRequested)
+                    {
+                        try { if (!proc.HasExited) proc.Kill(entireProcessTree: true); } catch { }
+                        log.LogWarning("ffprobe timed out for {Path}; falling back to byte scan", path);
                     }
                 }
             }

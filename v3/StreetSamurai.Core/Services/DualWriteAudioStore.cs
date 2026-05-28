@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 
@@ -46,6 +47,12 @@ public class DualWriteAudioStore : IAudioStore
     private readonly IAudioStore secondary;
     private readonly bool cacheReadsToPrimary;
     private readonly ILogger<DualWriteAudioStore> log;
+    // Tracks the most-recently-queued background secondary WRITE per
+    // relative path. DeleteAsync awaits any pending write for the path
+    // before issuing its secondary delete, so a slow secondary upload
+    // can't land after the delete and resurrect a phantom blob.
+    private readonly ConcurrentDictionary<string, Task> pendingSecondaryWrites
+        = new(StringComparer.OrdinalIgnoreCase);
 
     public DualWriteAudioStore(IAudioStore primary, IAudioStore secondary, ILogger<DualWriteAudioStore> log, bool cacheReadsToPrimary = true)
     {
@@ -65,19 +72,29 @@ public class DualWriteAudioStore : IAudioStore
     public async Task<string> WriteBeatAsync(string strandSlug, Guid beatId, string extension, byte[] bytes, CancellationToken ct = default)
     {
         var rel = await primary.WriteBeatAsync(strandSlug, beatId, extension, bytes, ct);
-        FireAndForgetSecondary(() => secondary.WriteBeatAsync(strandSlug, beatId, extension, bytes), $"WriteBeat {rel}");
+        TrackSecondaryWrite(rel, () => secondary.WriteBeatAsync(strandSlug, beatId, extension, bytes), $"WriteBeat {rel}");
         return rel;
     }
 
     public async Task<string> WriteCombinedAsync(string strandSlug, string extension, byte[] bytes, CancellationToken ct = default)
     {
         var rel = await primary.WriteCombinedAsync(strandSlug, extension, bytes, ct);
-        FireAndForgetSecondary(() => secondary.WriteCombinedAsync(strandSlug, extension, bytes), $"WriteCombined {rel}");
+        TrackSecondaryWrite(rel, () => secondary.WriteCombinedAsync(strandSlug, extension, bytes), $"WriteCombined {rel}");
         return rel;
     }
 
     public async Task DeleteAsync(string relativePath, CancellationToken ct = default)
     {
+        // Drain any in-flight secondary write for this path so it can't land
+        // after our delete and resurrect a phantom replica. Exceptions in the
+        // pending task are already logged at the fire site; we just need to
+        // know it's done.
+        if (pendingSecondaryWrites.TryGetValue(relativePath, out var pending))
+        {
+            try { await pending.WaitAsync(ct); }
+            catch (OperationCanceledException) { throw; }
+            catch { /* logged at fire site */ }
+        }
         await primary.DeleteAsync(relativePath, ct);
         FireAndForgetSecondary(() => secondary.DeleteAsync(relativePath), $"Delete {relativePath}");
     }
@@ -159,6 +176,28 @@ public class DualWriteAudioStore : IAudioStore
             try { await op(); }
             catch (Exception ex) { log.LogWarning(ex, "Secondary {Op} failed", opName); }
         });
+    }
+
+    /// <summary>Variant of FireAndForgetSecondary that registers the in-flight
+    /// task in <see cref="pendingSecondaryWrites"/> keyed by relative path,
+    /// so DeleteAsync can drain a pending write before issuing its delete.
+    /// The entry is removed on completion only if it's still ours — a newer
+    /// write for the same path replaces us in the dictionary and the entry
+    /// belongs to that newer task.</summary>
+    private void TrackSecondaryWrite(string relativePath, Func<Task> op, string opName)
+    {
+        Task task = null!;
+        task = Task.Run(async () =>
+        {
+            try { await op(); }
+            catch (Exception ex) { log.LogWarning(ex, "Secondary {Op} failed", opName); }
+            finally
+            {
+                ((ICollection<KeyValuePair<string, Task>>)pendingSecondaryWrites)
+                    .Remove(new KeyValuePair<string, Task>(relativePath, task));
+            }
+        });
+        pendingSecondaryWrites[relativePath] = task;
     }
 
     /// <summary>Push bytes back to primary at the canonical relative path. The

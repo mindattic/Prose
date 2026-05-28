@@ -15,6 +15,7 @@
 @inject ToastNotifier Toast
 @inject IJSRuntime JS
 @inject StreetSamurai.Core.Interfaces.ILlmService Llm
+@inject ILogger<Strand> Log
 @implements IDisposable
 
 @*
@@ -923,6 +924,12 @@ else
     [Parameter] public string IdOrSlug { get; set; } = "";
 
     private StrandEntity? strand;
+    /// <summary>UpdatedAt of the strand row at the moment LoadAsync ran.
+    /// Passed back into SaveStrandHeaderAsync as an optimistic-concurrency
+    /// check — if the row moved underneath us (another tab, an MCP tool),
+    /// the save aborts with a toast instead of silently clobbering the
+    /// other write.</summary>
+    private DateTime? strandLoadedUpdatedAt;
     private List<StrandWorkbenchService.OrderedBeat> beats = new();
     /// <summary>Ancestors of the current strand, root first. Empty if this is
     /// a top-level strand. Used for the breadcrumb at the page header.</summary>
@@ -1056,6 +1063,11 @@ else
         {
             autoSizePendingBeatId = null;
             await AutoSizeTextareaAsync(b);
+            // Move focus to the textarea via a typed helper. Runs on the
+            // circuit thread (no Task.Run, no eval, no hard delay race
+            // against the render).
+            try { await JS.InvokeVoidAsync("streetsamurai.focusElement", $"beat-{b:N}-edit"); }
+            catch { /* JS not loaded yet — focus just won't move; non-fatal */ }
         }
     }
 
@@ -1089,6 +1101,7 @@ else
 
             if (strand != null)
             {
+                strandLoadedUpdatedAt = strand.UpdatedAt;
                 if (string.IsNullOrEmpty(strand.VoiceId)) strand.VoiceId = defaultVoiceId;
                 beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
 
@@ -1180,11 +1193,22 @@ else
         await using var db = await DbFactory.CreateDbContextAsync();
         var s = await db.Strands.FirstOrDefaultAsync(x => x.Id == strand.Id);
         if (s == null) return;
+        // Optimistic concurrency: refuse to write if the strand's UpdatedAt
+        // moved between LoadAsync and now (another tab / MCP tool wrote in
+        // between). Without this check, the last-saver silently wins and
+        // the first-saver's edit vanishes with no signal.
+        if (strandLoadedUpdatedAt is { } expected
+            && Math.Abs((s.UpdatedAt - expected).TotalMilliseconds) > 1)
+        {
+            Toast.Error("STRAND-CONFLICT", "Another change landed since you opened the page — reload and re-apply.");
+            return;
+        }
         s.Title = strand.Title;
         s.Synopsis = strand.Synopsis;
         s.VoiceId = strand.VoiceId;
         s.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync();
+        strandLoadedUpdatedAt = s.UpdatedAt;
     }
 
     private void StartBeatEdit(BeatEntity b)
@@ -1193,13 +1217,11 @@ else
         editingText = b.Text ?? "";
         editingOriginalUpdatedAt = b.UpdatedAt;
         // Flag so OnAfterRenderAsync sizes the new textarea to content
-        // height once the DOM exists.
+        // height AND focuses it once the DOM exists. The focus call used
+        // to ride a Task.Run + Task.Delay(50) + JS eval() — racy with
+        // OnAfterRenderAsync and CSP-hostile — now both happen together
+        // on the circuit at the right moment.
         autoSizePendingBeatId = b.Id;
-        _ = Task.Run(async () =>
-        {
-            await Task.Delay(50);
-            try { await JS.InvokeVoidAsync("eval", $"document.getElementById('beat-{b.Id:N}-edit')?.focus();"); } catch { }
-        });
     }
 
     private void CancelBeatEdit()
@@ -1370,7 +1392,7 @@ else
         StateHasChanged();
         try
         {
-            _ = Task.Run(() => Workbench.NarrateAsync(strand!.Id));
+            FireNarrationInBackground(strand.Id);
             await Task.Delay(250);
             await ReloadBeatsAsync();
             StartPolling();
@@ -1389,7 +1411,7 @@ else
         {
             foreach (var entry in beats)
                 await Workbench.InvalidateBeatAudioAsync(entry.Beat.Id);
-            _ = Task.Run(() => Workbench.NarrateAsync(strand!.Id));
+            FireNarrationInBackground(strand.Id);
             await ReloadBeatsAsync();
             StartPolling();
             Toast.Success("RE-REC-ALL", "Re-recording from scratch.");
@@ -1406,13 +1428,30 @@ else
         try
         {
             await Workbench.InvalidateBeatAudioAsync(beatId);
-            _ = Task.Run(() => Workbench.NarrateAsync(strand!.Id));
+            FireNarrationInBackground(strand.Id);
             await ReloadBeatsAsync();
             StartPolling();
             Toast.Success("BEAT-RE-REC", "Re-recording this beat…");
         }
         catch (Exception ex) { Toast.Error("BEAT-RE-REC-FAIL", ex.Message); }
         finally { working = false; await InvokeAsync(StateHasChanged); }
+    }
+
+    // Outer try/catch on the fire-and-forget Task. NarrateAsync also has a
+    // top-level catch that flips the strand status to "failed" before
+    // re-throwing nothing — this is the belt-and-braces log if anything
+    // escapes that boundary so the unobserved-task channel doesn't swallow
+    // it silently.
+    private void FireNarrationInBackground(Guid strandId)
+    {
+        _ = Task.Run(async () =>
+        {
+            try { await Workbench.NarrateAsync(strandId); }
+            catch (Exception ex)
+            {
+                Log.LogError(ex, "Background narration crashed for strand {S}", strandId);
+            }
+        });
     }
 
     /// <summary>Copy this beat's prose to the system clipboard so the user can
