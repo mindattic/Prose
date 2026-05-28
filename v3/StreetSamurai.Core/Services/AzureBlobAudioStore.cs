@@ -46,7 +46,13 @@ public class AzureBlobAudioStore : IAudioStore
     // Azure (and broke startup entirely when blob was unreachable). Now we
     // ensure-once before the first write; reads don't need it (a missing
     // container yields 404, which we already handle).
-    private int containerEnsured; // 0 = not yet, 1 = done
+    //
+    // Concurrent writers share the same in-flight Lazy<Task>; on failure the
+    // field is replaced so the next caller actually retries. A bare int flag
+    // would let thread B race past the CompareExchange while thread A is
+    // still mid-network-call, then issue an upload against a container that
+    // doesn't exist yet — 404.
+    private Lazy<Task> ensureOnce;
 
     public AzureBlobAudioStore(IConfiguration config, ILogger<AzureBlobAudioStore> log)
     {
@@ -59,24 +65,30 @@ public class AzureBlobAudioStore : IAudioStore
         sasTtl = TimeSpan.FromMinutes(Math.Clamp(ttlMinutes, 1, 60 * 24));
         var serviceClient = new BlobServiceClient(connStr);
         container = serviceClient.GetBlobContainerClient(containerName);
+        ensureOnce = BuildEnsureLazy();
     }
 
-    /// <summary>Ensure the container exists. Called once on the first write
-    /// path; subsequent calls are a one-instruction interlocked check.
-    /// Reads skip this — a missing container surfaces as 404 from
-    /// OpenReadAsync / ExistsAsync, which the rest of the code expects.</summary>
+    private Lazy<Task> BuildEnsureLazy() => new(
+        () => (Task)container.CreateIfNotExistsAsync(PublicAccessType.None),
+        LazyThreadSafetyMode.ExecutionAndPublication);
+
+    /// <summary>Ensure the container exists. Concurrent writes share the
+    /// same in-flight Task; on failure we swap in a fresh Lazy so the next
+    /// caller retries. Reads skip this — a missing container surfaces as
+    /// 404 from OpenReadAsync / ExistsAsync, which the rest of the code
+    /// expects.</summary>
     private async Task EnsureContainerAsync(CancellationToken ct)
     {
-        if (Interlocked.CompareExchange(ref containerEnsured, 1, 0) != 0) return;
+        var lazy = ensureOnce;
         try
         {
-            await container.CreateIfNotExistsAsync(PublicAccessType.None, cancellationToken: ct);
+            await lazy.Value.WaitAsync(ct);
         }
         catch (Exception ex)
         {
-            // Reset the flag so a transient failure doesn't permanently
-            // block writes — the next write attempt will retry.
-            Interlocked.Exchange(ref containerEnsured, 0);
+            // Swap in a fresh Lazy so subsequent calls retry. Use Interlocked
+            // to ensure only the first failing caller installs a replacement.
+            Interlocked.CompareExchange(ref ensureOnce, BuildEnsureLazy(), lazy);
             log.LogError(ex, "Failed to ensure Azure blob container {Container}", container.Name);
             throw;
         }
@@ -105,6 +117,17 @@ public class AzureBlobAudioStore : IAudioStore
         using var ms = new MemoryStream(bytes);
         var headers = new BlobHttpHeaders { ContentType = MimeFor(ext) };
         await blob.UploadAsync(ms, new BlobUploadOptions { HttpHeaders = headers }, ct);
+        return rel;
+    }
+
+    public async Task<string> WriteCombinedFromStreamAsync(string strandSlug, string extension, Stream src, CancellationToken ct = default)
+    {
+        await EnsureContainerAsync(ct);
+        var ext = extension.TrimStart('.');
+        var rel = $"{strandSlug}/strand.{ext}";
+        var blob = container.GetBlobClient(rel);
+        var headers = new BlobHttpHeaders { ContentType = MimeFor(ext) };
+        await blob.UploadAsync(src, new BlobUploadOptions { HttpHeaders = headers }, ct);
         return rel;
     }
 

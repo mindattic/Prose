@@ -126,10 +126,10 @@ public class AudioReconciliationService
         return report;
     }
 
-    /// <summary>Copy bytes from one store to another. Small audio (per-beat
-    /// MP3s, ~2 MB) takes the in-memory fast path; large audio (combined
-    /// strand .wav/.mp3 that can be 100+ MB) streams via a temp file to
-    /// avoid pinning large byte arrays on the GC heap. Returns false on any
+    /// <summary>Copy bytes from one store to another. Combined strand audio
+    /// (100+ MB possible) streams source → destination directly via the
+    /// stream-based write — no intermediate byte[] on the LOH. Per-beat
+    /// audio (~2 MB) takes the simple in-memory path. Returns false on any
     /// failure; caller bumps the failed-count.</summary>
     private async Task<bool> TryCopy(IAudioStore src, IAudioStore dst, string rel, CancellationToken ct)
     {
@@ -138,32 +138,19 @@ public class AudioReconciliationService
             await using var stream = await src.OpenReadAsync(rel, ct);
             if (stream == null) return false;
 
-            // Beats are small (single-paragraph audio); combined strand audio
-            // can be hours long and >100 MB. The latter is identifiable by
-            // path shape — slug/strand.ext — so we stage to a temp file
-            // before the destination write to avoid an oversized byte[].
-            var isCombined = AudioPath.TryParseCombined(rel).HasValue;
-            if (isCombined)
+            if (AudioPath.TryParseCombined(rel) is { } combined)
             {
-                var tmp = Path.Combine(Path.GetTempPath(), $"ss-reconcile-{Guid.CreateVersion7():N}.tmp");
-                try
-                {
-                    await using (var fs = File.Create(tmp))
-                        await stream.CopyToAsync(fs, ct);
-                    var bytes = await File.ReadAllBytesAsync(tmp, ct);
-                    return await AudioPath.WriteAtPathAsync(dst, rel, bytes, ct);
-                }
-                finally
-                {
-                    try { File.Delete(tmp); } catch { /* best-effort */ }
-                }
+                await dst.WriteCombinedFromStreamAsync(combined.Slug, combined.Ext, stream, ct);
+                return true;
             }
-            else
+            if (AudioPath.TryParseBeat(rel) is { } beat)
             {
                 using var ms = new MemoryStream();
                 await stream.CopyToAsync(ms, ct);
-                return await AudioPath.WriteAtPathAsync(dst, rel, ms.ToArray(), ct);
+                await dst.WriteBeatAsync(beat.Slug, beat.BeatId, beat.Ext, ms.ToArray(), ct);
+                return true;
             }
+            return false;
         }
         catch (Exception ex) { log.LogWarning(ex, "Reconcile: copy failed for {Rel}", rel); return false; }
     }

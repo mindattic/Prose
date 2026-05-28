@@ -42,6 +42,18 @@ public interface IAudioStore
     /// Returns the relative path for Strand.CombinedAudioPath.</summary>
     Task<string> WriteCombinedAsync(string strandSlug, string extension, byte[] bytes, CancellationToken ct = default);
 
+    /// <summary>Stream-based variant of <see cref="WriteCombinedAsync"/>.
+    /// Lets backends that can sink straight to a file or HTTP body (local-
+    /// disk FileStream, blob UploadAsync) avoid materializing a 100+ MB
+    /// byte[] on the LOH. The default implementation buffers into memory
+    /// and delegates — backends should override for the perf win.</summary>
+    async Task<string> WriteCombinedFromStreamAsync(string strandSlug, string extension, Stream src, CancellationToken ct = default)
+    {
+        using var ms = new MemoryStream();
+        await src.CopyToAsync(ms, ct);
+        return await WriteCombinedAsync(strandSlug, extension, ms.ToArray(), ct);
+    }
+
     /// <summary>Delete a relative path. No-op if absent — callers should not
     /// have to check first.</summary>
     Task DeleteAsync(string relativePath, CancellationToken ct = default);

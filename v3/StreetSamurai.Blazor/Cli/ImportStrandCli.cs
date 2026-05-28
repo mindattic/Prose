@@ -144,6 +144,12 @@ public static class ImportStrandCli
             ? slugOverride!
             : $"{Slugify(title)}-{strandId.ToString("N")[..8]}";
 
+        // Serializable transaction around the sibling-max read + write so
+        // two concurrent imports under the same parent can't both claim
+        // `max + 100` and collide. SQL Server will deadlock-retry or block
+        // the second reader until the first commits.
+        await using var tx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable);
+
         var siblingMaxSort = parentStrandId.HasValue
             ? await db.Strands.Where(s => s.ParentStrandId == parentStrandId).Select(s => (double?)s.SortKey).MaxAsync() ?? 0
             : await db.Strands.Where(s => s.ParentStrandId == null).Select(s => (double?)s.SortKey).MaxAsync() ?? 0;
@@ -194,6 +200,7 @@ public static class ImportStrandCli
         }
 
         await db.SaveChangesAsync();
+        await tx.CommitAsync();
 
         Console.WriteLine();
         Console.WriteLine($"[import-strand] OK — {parsed.Beats.Count} beats written.");
