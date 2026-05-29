@@ -37,7 +37,6 @@
     var tintG = Math.floor(Math.random() * 40);
     var tintB = Math.floor(Math.random() * 40);
     var hShiftChance = 0.02 + Math.random() * 0.06;
-    var hShiftMax = 10 + Math.floor(Math.random() * 30);
 
     function drawStatic() {
       if (gen !== currentGen) return;
@@ -54,12 +53,11 @@
       var squeeze = Math.max(0, 1 - pct * squeezeSpeed);
       var barTop = Math.floor((1 - squeeze) * h * 0.5);
       var barBot = h - barTop;
-      // random horizontal shift bands
-      var shiftY = -1, shiftH = 0, shiftX = 0;
+      // random brighter horizontal band
+      var shiftY = -1, shiftH = 0;
       if (Math.random() < hShiftChance) {
         shiftY = Math.floor(Math.random() * h);
         shiftH = 5 + Math.floor(Math.random() * 40);
-        shiftX = Math.floor((Math.random() - 0.5) * hShiftMax * 2);
       }
       for (var i = 0; i < d.length; i += 4) {
         var px = (i / 4) | 0;

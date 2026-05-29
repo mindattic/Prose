@@ -1,4 +1,4 @@
-// Home page background — torn-edge compositing with localStorage caching.
+// Home page background — torn-edge compositing.
 //
 // Effect: the image fades into the page with a ragged, organic tear on the
 // left and top edges, a corner bite eating into the top-left, and a
