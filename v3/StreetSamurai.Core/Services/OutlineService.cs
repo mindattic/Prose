@@ -113,8 +113,7 @@ public class OutlineService
         }
 
         var json = response.Trim();
-        if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-        if (json.EndsWith("```")) json = json[..^3];
+        json = JsonDefaults.StripCodeFences(json);
         json = json.Trim();
 
         // First attempt: parse as-is

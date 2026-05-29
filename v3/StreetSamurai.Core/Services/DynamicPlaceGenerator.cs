@@ -177,8 +177,7 @@ public class DynamicPlaceGenerator
         {
             var response = await llm.GenerateAsync(system, user, 0.8, 1024, ct: ct);
             var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
+            json = JsonDefaults.StripCodeFences(json);
 
             var generated = JsonSerializer.Deserialize<GeneratedPlaceData>(json.Trim(),
                 JsonDefaults.LlmParsing);

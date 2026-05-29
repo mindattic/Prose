@@ -120,7 +120,11 @@ public class WikiLinkService
             var nameRegex = new Regex(@"\b" + Regex.Escape(n.Name) + @"\b", RegexOptions.IgnoreCase);
             foreach (Match m in nameRegex.Matches(text))
             {
-                if (protectedRanges.Any(r => m.Index >= r.Start && m.Index < r.End)) continue;
+                // Skip any match that OVERLAPS a protected region — not just one
+                // whose start falls inside it. A match beginning before a range
+                // but extending into it would otherwise yield overlapping
+                // replacements and corrupt the string during the right-to-left apply.
+                if (protectedRanges.Any(r => m.Index < r.End && m.Index + m.Length > r.Start)) continue;
                 replacements.Add((m.Index, m.Length, $"[[{n.Name}|{m.Value}]]"));
                 protectedRanges.Add((m.Index, m.Index + m.Length));
             }

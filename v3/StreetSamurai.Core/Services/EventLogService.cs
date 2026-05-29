@@ -83,8 +83,7 @@ public class EventLogService
         {
             var response = await llm.GenerateAsync(system, newText, 0.1, 1024, ct: ct);
             var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
+            json = JsonDefaults.StripCodeFences(json);
 
             var rawEvents = JsonSerializer.Deserialize<List<RawEvent>>(json.Trim(),
                 JsonDefaults.LlmParsing);

@@ -1,3 +1,5 @@
+using System.Collections.Concurrent;
+
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
@@ -7,17 +9,26 @@ namespace StreetSamurai.Core.Services;
 /// Two inference strategies:
 /// 1. Shared-hub: A -> hub -> B (both connected to the same entity)
 /// 2. Shared-property: A.manufacturer == B.manufacturer (same property value)
+///
+/// Registered as a singleton and shared across concurrent Blazor circuits, so
+/// all mutable state is thread-safe: the per-node cache is a
+/// <see cref="ConcurrentDictionary{TKey,TValue}"/> and the property index is
+/// rebuilt into a fresh map then swapped in atomically under <c>indexLock</c>.
 /// </summary>
 public class InferenceService
 {
     private readonly WorldGraphService graph;
 
-    // Property index: (propertyKey, propertyValue) -> list of nodeIds sharing that value
-    private Dictionary<(string key, string value), List<string>> _propertyIndex = new();
-    private bool indexBuilt;
+    // Property index: (propertyKey, propertyValue) -> list of nodeIds sharing that value.
+    // Replaced wholesale (never mutated in place) so readers can capture a stable snapshot.
+    private Dictionary<(string key, string value), List<string>> propertyIndex = new();
+    private volatile bool indexBuilt;
 
-    // Cache of computed inferences per node
-    private readonly Dictionary<string, List<InferredEdge>> _cache = new();
+    // Cache of computed inferences per node.
+    private readonly ConcurrentDictionary<string, List<InferredEdge>> cache = new();
+
+    // Serialises index rebuilds against each other (reads capture the field reference).
+    private readonly object indexLock = new();
 
     public InferenceService(WorldGraphService graph)
     {
@@ -29,12 +40,13 @@ public class InferenceService
     /// </summary>
     public void RebuildPropertyIndex()
     {
-        _propertyIndex.Clear();
-        _cache.Clear();
-
         var indexableKeys = new[] { "manufacturer", "affiliation", "location", "sector", "territory",
             "tier_availability", "category", "role" };
 
+        // Build into a local map first; the live field is only swapped once the
+        // new index is fully populated, so concurrent readers never see a
+        // half-cleared or half-built dictionary.
+        var index = new Dictionary<(string key, string value), List<string>>();
         foreach (var node in graph.AllNodes())
         {
             foreach (var key in indexableKeys)
@@ -52,14 +64,25 @@ public class InferenceService
                     if (v.Length < 2) continue;
                     var vLower = v.ToLowerInvariant();
                     var indexKey = (key, vLower);
-                    if (!_propertyIndex.ContainsKey(indexKey))
-                        _propertyIndex[indexKey] = [];
-                    if (!_propertyIndex[indexKey].Contains(node.Id))
-                        _propertyIndex[indexKey].Add(node.Id);
+                    if (!index.TryGetValue(indexKey, out var list))
+                        index[indexKey] = list = [];
+                    if (!list.Contains(node.Id))
+                        list.Add(node.Id);
                 }
             }
         }
-        indexBuilt = true;
+
+        lock (indexLock)
+        {
+            propertyIndex = index;
+            indexBuilt = true;
+            cache.Clear();
+        }
+    }
+
+    private void EnsureIndexBuilt()
+    {
+        if (!indexBuilt) RebuildPropertyIndex();
     }
 
     /// <summary>
@@ -67,9 +90,12 @@ public class InferenceService
     /// </summary>
     public List<InferredEdge> GetInferredConnections(string nodeId, int maxResults = 15)
     {
-        if (!indexBuilt) RebuildPropertyIndex();
+        EnsureIndexBuilt();
 
-        if (_cache.TryGetValue(nodeId, out var cached)) return cached;
+        if (cache.TryGetValue(nodeId, out var cached)) return cached;
+
+        // Capture a stable snapshot of the index reference for this computation.
+        var index = propertyIndex;
 
         var results = new List<InferredEdge>();
         var directNeighborIds = graph.GetAllEdges(nodeId).Select(e => e.Source == nodeId ? e.Target : e.Source).ToHashSet();
@@ -112,7 +138,7 @@ public class InferenceService
 
                 var vLower = value.Trim().ToLowerInvariant();
                 var indexKey = (key, vLower);
-                if (!_propertyIndex.TryGetValue(indexKey, out var siblings)) continue;
+                if (!index.TryGetValue(indexKey, out var siblings)) continue;
 
                 foreach (var siblingId in siblings)
                 {
@@ -139,7 +165,7 @@ public class InferenceService
 
         // Sort by confidence descending, limit results
         results = results.OrderByDescending(r => r.Confidence).Take(maxResults).ToList();
-        _cache[nodeId] = results;
+        cache[nodeId] = results;
         return results;
     }
 
@@ -156,9 +182,9 @@ public class InferenceService
     /// </summary>
     public List<string> GetNodesByProperty(string key, string value)
     {
-        if (!indexBuilt) RebuildPropertyIndex();
+        EnsureIndexBuilt();
         var indexKey = (key, value.ToLowerInvariant());
-        return _propertyIndex.TryGetValue(indexKey, out var nodes) ? nodes : [];
+        return propertyIndex.TryGetValue(indexKey, out var nodes) ? nodes : [];
     }
 
     /// <summary>
@@ -166,7 +192,7 @@ public class InferenceService
     /// </summary>
     public void InvalidateCache()
     {
-        _cache.Clear();
+        cache.Clear();
     }
 }
 

@@ -2304,7 +2304,7 @@
             try
             {
                 var json = response.Trim();
-                if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
+                if (json.StartsWith("```")) { var nl = json.IndexOf('\n'); json = nl >= 0 ? json[(nl + 1)..] : json[3..]; }
                 if (json.EndsWith("```")) json = json[..^3];
                 var newAlts = System.Text.Json.JsonSerializer.Deserialize<List<string>>(json.Trim()) ?? [];
                 suggestedAlts.AddRange(newAlts);

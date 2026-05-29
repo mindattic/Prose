@@ -136,8 +136,12 @@ public class ContinuityValidatorService
                 Issues = issues.OrderBy(i => i.Severity == "critical" ? 0 : i.Severity == "major" ? 1 : 2).ToList()
             };
         }
-        catch
+        catch (Exception ex)
         {
+            // Fail open — a transient LLM/parse hiccup must not block writing —
+            // but log it so a persistently-broken validator surfaces instead of
+            // silently reporting every beat as clean.
+            Serilog.Log.Warning(ex, "ContinuityValidatorService.ValidateAsync failed; reporting clean (fail-open)");
             return new ContinuityReport { Clean = true, Issues = [] };
         }
     }
