@@ -82,8 +82,7 @@ public class AgendaEngine
         {
             var response = await llm.GenerateAsync(system, "Generate character agendas now.", 0.6, 2048, ct: ct);
             var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
+            json = JsonDefaults.StripCodeFences(json);
 
             var agendas = JsonSerializer.Deserialize<List<CharacterAgenda>>(json.Trim(),
                 JsonDefaults.LlmParsing) ?? [];
@@ -140,8 +139,7 @@ public class AgendaEngine
         {
             var response = await llm.GenerateAsync(system, agendaText, 0.7, 2048, ct: ct);
             var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
+            json = JsonDefaults.StripCodeFences(json);
 
             var conflicts = JsonSerializer.Deserialize<List<ConflictPremise>>(json.Trim(),
                 JsonDefaults.LlmParsing) ?? [];

@@ -79,27 +79,37 @@ public class ClaudeCliService
             yield break;
         }
 
-        // Pipe the prompt in via stdin so we don't fight Windows command-line escaping.
-        await proc.StandardInput.WriteAsync(prompt.AsMemory(), ct);
-        await proc.StandardInput.FlushAsync(ct);
-        proc.StandardInput.Close();
-
-        string? line;
-        while ((line = await proc.StandardOutput.ReadLineAsync(ct)) != null)
+        try
         {
-            ct.ThrowIfCancellationRequested();
-            yield return line;
+            // Pipe the prompt in via stdin so we don't fight Windows command-line escaping.
+            await proc.StandardInput.WriteAsync(prompt.AsMemory(), ct);
+            await proc.StandardInput.FlushAsync(ct);
+            proc.StandardInput.Close();
+
+            string? line;
+            while ((line = await proc.StandardOutput.ReadLineAsync(ct)) != null)
+            {
+                ct.ThrowIfCancellationRequested();
+                yield return line;
+            }
+
+            await proc.WaitForExitAsync(ct);
+
+            if (proc.ExitCode != 0)
+            {
+                var err = await proc.StandardError.ReadToEndAsync(ct);
+                log.LogWarning("claude CLI exited {Code}: {Err}", proc.ExitCode, err);
+                yield return $"\n[claude CLI exit {proc.ExitCode}] {err}";
+            }
         }
-
-        await proc.WaitForExitAsync(ct);
-
-        if (proc.ExitCode != 0)
+        finally
         {
-            var err = await proc.StandardError.ReadToEndAsync(ct);
-            log.LogWarning("claude CLI exited {Code}: {Err}", proc.ExitCode, err);
-            yield return $"\n[claude CLI exit {proc.ExitCode}] {err}";
+            // If the caller cancelled or stopped enumerating early, the CLI may
+            // still be running. Kill the whole tree (cmd.exe → claude → node …)
+            // so we don't orphan a detached process, then release the handle.
+            try { if (!proc.HasExited) proc.Kill(entireProcessTree: true); }
+            catch { /* already exited, or never fully started */ }
+            proc.Dispose();
         }
-
-        proc.Dispose();
     }
 }

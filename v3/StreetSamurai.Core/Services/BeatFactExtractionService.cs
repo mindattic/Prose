@@ -110,13 +110,7 @@ public class BeatFactExtractionService
         return result;
     }
 
-    private static string StripFences(string s)
-    {
-        var t = s.Trim();
-        if (t.StartsWith("```")) t = t[(t.IndexOf('\n') + 1)..];
-        if (t.EndsWith("```")) t = t[..^3].TrimEnd();
-        return t;
-    }
+    private static string StripFences(string s) => JsonDefaults.StripCodeFences(s);
 
     private static string Truncate(string s, int n) => string.IsNullOrEmpty(s) || s.Length <= n ? s ?? "" : s[..(n - 1)] + "…";
 

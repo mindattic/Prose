@@ -107,8 +107,7 @@ public class StoryStateService
         {
             var response = await llm.GenerateAsync(system, $"NEW TEXT:\n{newText}", 0.1, 1024, ct: ct);
             var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
+            json = JsonDefaults.StripCodeFences(json);
 
             var update = JsonSerializer.Deserialize<StateUpdate>(json.Trim(),
                 JsonDefaults.LlmParsing);

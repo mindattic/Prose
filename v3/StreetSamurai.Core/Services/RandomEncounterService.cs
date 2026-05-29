@@ -86,8 +86,7 @@ public class RandomEncounterService
                 try
                 {
                     var json = parts[1].Trim();
-                    if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-                    if (json.EndsWith("```")) json = json[..^3];
+                    json = JsonDefaults.StripCodeFences(json);
                     meta = JsonSerializer.Deserialize<EncounterMeta>(json.Trim(),
                         JsonDefaults.LlmParsing);
                 }

@@ -235,8 +235,7 @@ public class ValidationService
         try
         {
             var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
+            json = JsonDefaults.StripCodeFences(json);
             json = json.Trim();
 
             // Some providers wrap JSON in prose — extract the array if present
@@ -296,8 +295,7 @@ public class ValidationService
         try
         {
             var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
+            json = JsonDefaults.StripCodeFences(json);
             return System.Text.Json.JsonSerializer.Deserialize<List<string>>(json.Trim()) ?? [];
         }
         catch (Exception ex) { log.LogWarning(ex, "Validation extraction failed"); return []; }
@@ -329,8 +327,7 @@ public class ValidationService
         try
         {
             var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
+            json = JsonDefaults.StripCodeFences(json);
             return System.Text.Json.JsonSerializer.Deserialize<List<string>>(json.Trim()) ?? [];
         }
         catch { return []; }
@@ -424,8 +421,7 @@ public class ValidationService
         try
         {
             var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
+            json = JsonDefaults.StripCodeFences(json);
             var scores = System.Text.Json.JsonSerializer.Deserialize<List<int>>(json.Trim());
             if (scores != null && scores.Count == expectedCount) return scores;
             return null;

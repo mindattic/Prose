@@ -125,8 +125,7 @@ public class ContractGenerator
         {
             var response = await llm.GenerateAsync(system, "Generate the contract now.", 0.8, 2048, ct: ct);
             var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
+            json = JsonDefaults.StripCodeFences(json);
 
             var contract = JsonSerializer.Deserialize<Contract>(json.Trim(),
                 JsonDefaults.LlmParsing) ?? new();

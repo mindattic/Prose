@@ -163,8 +163,7 @@ public class NpcGenerator
         {
             var response = await llm.GenerateAsync(system, user, 0.9, 3072, ct: ct);
             var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
+            json = JsonDefaults.StripCodeFences(json);
 
             var character = JsonSerializer.Deserialize<CharacterData>(json.Trim(),
                 JsonDefaults.LlmParsing);

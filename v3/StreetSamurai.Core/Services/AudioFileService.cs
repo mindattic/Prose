@@ -24,7 +24,7 @@ public class AudioFileService : IAudioFileService
 
     public async Task<string> SaveAudioAsync(byte[] audioData, string? fileName = null)
     {
-        fileName ??= $"narration_{DateTime.Now:yyyyMMdd_HHmmss}.mp3";
+        fileName ??= $"narration_{DateTime.UtcNow:yyyyMMdd_HHmmss}.mp3";
         var filePath = Path.Combine(AudioDir, fileName);
         await File.WriteAllBytesAsync(filePath, audioData);
         return filePath;
@@ -34,17 +34,20 @@ public class AudioFileService : IAudioFileService
     {
         if (!File.Exists(filePath)) return;
 
+        // Launch the OS file browser fire-and-forget, but Dispose the returned
+        // Process so we release our handle — without this the handle lingers
+        // until finalization, leaking one per reveal.
         if (OperatingSystem.IsWindows())
         {
-            Process.Start("explorer.exe", $"/select,\"{filePath}\"");
+            Process.Start("explorer.exe", $"/select,\"{filePath}\"")?.Dispose();
         }
         else if (OperatingSystem.IsMacOS())
         {
-            Process.Start("open", $"-R \"{filePath}\"");
+            Process.Start("open", $"-R \"{filePath}\"")?.Dispose();
         }
         else if (OperatingSystem.IsLinux())
         {
-            Process.Start("xdg-open", $"\"{Path.GetDirectoryName(filePath)}\"");
+            Process.Start("xdg-open", $"\"{Path.GetDirectoryName(filePath)}\"")?.Dispose();
         }
     }
 }

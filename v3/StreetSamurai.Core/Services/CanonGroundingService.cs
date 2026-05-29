@@ -113,8 +113,7 @@ public class CanonGroundingService
         {
             var response = await llm.GenerateAsync(system, user, 0.1, 4096, ct: ct);
             var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3].TrimEnd();
+            json = JsonDefaults.StripCodeFences(json);
 
             var raw = JsonSerializer.Deserialize<List<ExtractedEntity>>(json,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });

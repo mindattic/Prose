@@ -208,17 +208,34 @@ public class CharacterRepository : EfRepository<CharacterData>
             .ToList()
             .ToHashSet(StringComparer.OrdinalIgnoreCase);
 
-        foreach (var tagName in tags.Distinct(StringComparer.OrdinalIgnoreCase))
+        // Names we still need to attach, normalised and de-duped.
+        var wanted = tags
+            .Where(t => !string.IsNullOrWhiteSpace(t))
+            .Select(t => t.Trim())
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .Where(t => !existing.Contains(t))
+            .ToList();
+        if (wanted.Count == 0) return;
+
+        // One query for every pre-existing Tag row, instead of a FirstOrDefault
+        // round-trip per name.
+        var byName = db.Tags
+            .Where(t => wanted.Contains(t.Name))
+            .ToList()
+            .ToDictionary(t => t.Name, t => t, StringComparer.OrdinalIgnoreCase);
+
+        foreach (var tagName in wanted)
         {
-            if (string.IsNullOrWhiteSpace(tagName) || existing.Contains(tagName)) continue;
-            var tag = db.Tags.FirstOrDefault(t => t.Name == tagName);
-            if (tag == null)
+            if (!byName.TryGetValue(tagName, out var tag))
             {
                 tag = new Tag { Name = tagName };
                 db.Tags.Add(tag);
-                db.SaveChanges();
+                byName[tagName] = tag;
             }
-            db.EntityTags.Add(new EntityTag { EntityId = entityId, TagId = tag.Id });
+            // Use the navigation property so EF resolves TagId (including for
+            // brand-new Tag rows) on the caller's single SaveChanges — no more
+            // one-commit-per-tag inside the loop.
+            db.EntityTags.Add(new EntityTag { EntityId = entityId, Tag = tag });
         }
     }
 }

@@ -288,6 +288,10 @@ public class WritingQualityService
         // If the chapter's lead character is NOT the top match, the voice has drifted.
         if (!string.Equals(scores[0].Character, lead, StringComparison.OrdinalIgnoreCase))
         {
+            // Match the lead case-insensitively — the fingerprint dictionary key
+            // can differ in casing from c.Characters[0], and a case-sensitive
+            // First() here would throw InvalidOperationException on that mismatch.
+            var leadScore = scores.FirstOrDefault(s => string.Equals(s.Character, lead, StringComparison.OrdinalIgnoreCase))?.Score ?? 0.0;
             return
             [
                 new ReviewFinding
@@ -297,7 +301,7 @@ public class WritingQualityService
                     Severity = ReviewSeverity.Warning,
                     ChapterId = c.Id,
                     Title = $"Voice fingerprint matches {scores[0].Character} more than {lead}",
-                    Rationale = $"This chapter's vocabulary is closer to {scores[0].Character}'s established voice ({scores[0].Score:F2}) than to the chapter's lead character {lead} ({scores.First(s => s.Character == lead).Score:F2}). Push the prose harder toward {lead}'s specific cadence — what they notice first, what vocabulary they use, what they joke about.",
+                    Rationale = $"This chapter's vocabulary is closer to {scores[0].Character}'s established voice ({scores[0].Score:F2}) than to the chapter's lead character {lead} ({leadScore:F2}). Push the prose harder toward {lead}'s specific cadence — what they notice first, what vocabulary they use, what they joke about.",
                     VoterAgreement = 1,
                 }
             ];

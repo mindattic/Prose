@@ -26,8 +26,12 @@ public class ArcTrackerService
         CancellationToken ct = default)
     {
         var totalBeats = outline.Acts.SelectMany(a => a.Beats).Count();
-        var actNumber = outline.Acts.FindIndex(a => a.Beats.Contains(beat)) + 1;
-        var positionInAct = outline.Acts[actNumber - 1].Beats.IndexOf(beat) + 1;
+        // FindIndex returns -1 when `beat` isn't reference-equal to any beat the
+        // outline holds (e.g. a reloaded/cloned copy). Guard so we don't index
+        // Acts[-1]; fall back to the caller-supplied beatIndex for position.
+        var actIndex = outline.Acts.FindIndex(a => a.Beats.Contains(beat));
+        var actNumber = actIndex >= 0 ? actIndex + 1 : 1;
+        var positionInAct = actIndex >= 0 ? outline.Acts[actIndex].Beats.IndexOf(beat) + 1 : beatIndex + 1;
 
         // Find which character arcs should be progressing
         var relevantArcs = outline.CharacterArcs
