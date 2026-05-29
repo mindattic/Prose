@@ -107,6 +107,17 @@ public class AudioReconciliationService
 
             var delta = tA.Value - tB.Value;
             if (delta.Duration() <= DriftTolerance) { inSync++; continue; }
+
+            // mtime says the sides differ — but a copy stamps the destination's
+            // write-time to "now", so two BYTE-IDENTICAL files end up with skewed
+            // mtimes and would ping-pong the same bytes back and forth on every
+            // sweep, never converging. Confirm the content actually differs before
+            // copying; identical bytes count as in-sync regardless of timestamp.
+            bool identical;
+            try { identical = await ContentsMatchAsync(a, b, rel, ct); }
+            catch (Exception ex) { failed++; log.LogWarning(ex, "Reconcile: content compare failed for #{N}", r.Number); continue; }
+            if (identical) { inSync++; continue; }
+
             if (delta > TimeSpan.Zero)
             {
                 // A is newer
@@ -153,6 +164,48 @@ public class AudioReconciliationService
             return false;
         }
         catch (Exception ex) { log.LogWarning(ex, "Reconcile: copy failed for {Rel}", rel); return false; }
+    }
+
+    /// <summary>True when both stores hold byte-identical content for the path.
+    /// Streams both sides in parallel chunks (bounded memory — combined strand
+    /// audio can be 100+ MB) and bails on the first difference. Used to suppress
+    /// copies between files that differ only by mtime.</summary>
+    private static async Task<bool> ContentsMatchAsync(IAudioStore a, IAudioStore b, string rel, CancellationToken ct)
+    {
+        await using var sa = await a.OpenReadAsync(rel, ct);
+        await using var sb = await b.OpenReadAsync(rel, ct);
+        if (sa == null || sb == null) return false; // a side vanished mid-sweep — let the copy paths handle it
+        return await StreamsEqualAsync(sa, sb, ct);
+    }
+
+    private static async Task<bool> StreamsEqualAsync(Stream a, Stream b, CancellationToken ct)
+    {
+        const int bufSize = 128 * 1024;
+        var ba = new byte[bufSize];
+        var bb = new byte[bufSize];
+        while (true)
+        {
+            var ra = await ReadFullAsync(a, ba, ct);
+            var rb = await ReadFullAsync(b, bb, ct);
+            if (ra != rb) return false;          // different lengths
+            if (ra == 0) return true;            // both hit EOF together
+            if (!ba.AsSpan(0, ra).SequenceEqual(bb.AsSpan(0, rb))) return false;
+        }
+    }
+
+    /// <summary>Fill <paramref name="buf"/> (or stop at EOF). ReadAsync may return
+    /// fewer bytes than requested mid-stream, so loop — otherwise the two sides
+    /// can fall out of alignment and report a false mismatch.</summary>
+    private static async Task<int> ReadFullAsync(Stream s, byte[] buf, CancellationToken ct)
+    {
+        var total = 0;
+        while (total < buf.Length)
+        {
+            var n = await s.ReadAsync(buf.AsMemory(total), ct);
+            if (n == 0) break;
+            total += n;
+        }
+        return total;
     }
 }
 
