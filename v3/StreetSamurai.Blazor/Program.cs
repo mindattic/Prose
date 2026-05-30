@@ -425,14 +425,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Cloud-native configuration chain. Layered (later sources win):
 //   AddJsonFile (already added by WebApplicationBuilder for appsettings.json).
-//   AddMindAtticVaultFiles surfaces %APPDATA%\MindAttic\<bucket>\providers.json on dev.
-//   AddUserSecrets pinned to mindattic-vault-shared so the same secret store is
-//     visible to every MindAttic project that pins the same id.
+//   AddMindAtticVaultFiles surfaces %APPDATA%\MindAttic\<bucket>\providers.json on dev
+//     — the single credential source now that .NET User Secrets is retired.
 //   AddEnvironmentVariables (already present) picks up App Service Application
 //     Settings + Azure Key Vault references in production.
 builder.Configuration
-    .AddMindAtticVaultFiles()
-    .AddUserSecrets<Program>(optional: true);
+    .AddMindAtticVaultFiles();
 
 // Hand the host's IConfiguration to SettingsService BEFORE it's constructed so
 // the very first ResolveApiKey() call sees Vault values. Static-field injection

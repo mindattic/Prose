@@ -489,8 +489,8 @@
       },
       "MindAttic.Vault": {
         "type": "Transitive",
-        "resolved": "0.2.0",
-        "contentHash": "PZOWGCFTsaa6eISFpyWzH4QEvin4w4bzX+obJ4bkNEWvdXZstyFnxrz419BUm3V6mHfv/w6Ay6lF3/7HU9PJXQ==",
+        "resolved": "0.3.0",
+        "contentHash": "pX0hV+eq+7OODNEP/QhEmF0igROkmoABWaKJshEuPVLeMSyqjKwstTLG273fwbo2Y4fI59XgdTnkOZ35ITlnSA==",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "9.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.0",
@@ -638,7 +638,7 @@
           "Microsoft.Extensions.Hosting.Abstractions": "[10.0.5, )",
           "Microsoft.Extensions.Http": "[10.0.5, )",
           "MindAttic.Legion": "[2.3.0, )",
-          "MindAttic.Vault": "[0.2.0, )",
+          "MindAttic.Vault": "[0.3.0, )",
           "QuestPDF": "[2026.5.0, )",
           "QuikGraph": "[2.5.0, )",
           "QuikGraph.Serialization": "[2.5.0, )",

@@ -74,7 +74,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IAudioStore>(sp =>
         {
             var config = sp.GetService<Microsoft.Extensions.Configuration.IConfiguration>();
-            var provider = config?["AudioStore:Provider"]
+            var provider = config?["MindAttic:Vault:AudioStore:provider"]
+                ?? config?["AudioStore:Provider"]
                 ?? Environment.GetEnvironmentVariable("AudioStore__Provider")
                 ?? "local";
             return provider.ToLowerInvariant() switch

@@ -14,7 +14,6 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
-    <UserSecretsId>mindattic-vault-shared</UserSecretsId>
   </PropertyGroup>
 
   <!-- Include world data in published output so Azure deployment is self-contained.
