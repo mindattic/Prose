@@ -57,10 +57,13 @@ public class AzureBlobAudioStore : IAudioStore
     public AzureBlobAudioStore(IConfiguration config, ILogger<AzureBlobAudioStore> log)
     {
         this.log = log;
-        var connStr = config["AudioStore:ConnectionString"]
+        var connStr = config["MindAttic:Vault:AudioStore:connectionString"]
+            ?? config["AudioStore:ConnectionString"]
             ?? Environment.GetEnvironmentVariable("AudioStore__ConnectionString")
             ?? throw new InvalidOperationException("AzureBlobAudioStore requires AudioStore:ConnectionString.");
-        var containerName = config["AudioStore:Container"] ?? "strands-audio";
+        var containerName = config["MindAttic:Vault:AudioStore:container"]
+            ?? config["AudioStore:Container"]
+            ?? "strands-audio";
         var ttlMinutes = int.TryParse(config["AudioStore:SasTtlMinutes"], out var t) ? t : 30;
         sasTtl = TimeSpan.FromMinutes(Math.Clamp(ttlMinutes, 1, 60 * 24));
         var serviceClient = new BlobServiceClient(connStr);
