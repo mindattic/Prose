@@ -4673,7 +4673,7 @@ window.consoleBg = (function () {
     // ── Scrolling texture layer ─────────────────────────────────────────────
 
     // Hosts can override these by defining window.__cyberspaceCircuitboardSrcs = [a, b, c]
-    // before this script loads. mindattic.com inlines them as base64 data URIs;
+    // before this script loads. mindattic.com sets them to pinned jsDelivr URLs;
     // StreetSamurai leaves the default (/api/media/... served by MediaController).
     var TEX_SRCS = (typeof window !== 'undefined' && window.__cyberspaceCircuitboardSrcs) || [
         '/api/media/circuitboard.00.png',
@@ -4723,13 +4723,17 @@ window.consoleBg = (function () {
         // texture only paints the original window area after a maximize/resize.
         if (!texResizeBound) {
             window.addEventListener('resize', syncTexCanvasSize);
-            // Also observe the host directly so zoom changes, devtools panel
-            // toggles, and other container-size shifts repaint correctly.
-            if (typeof ResizeObserver !== 'undefined') {
-                texRO = new ResizeObserver(syncTexCanvasSize);
-                texRO.observe(host);
-            }
             texResizeBound = true;
+        }
+        // (Re)point the ResizeObserver at the *current* host so zoom changes,
+        // devtools panel toggles, and other container-size shifts repaint
+        // correctly. On Blazor navigation the old .console-bg-host is detached
+        // and a fresh one inserted; without re-observing here the observer would
+        // stay bound to the dead node and never fire for the live host.
+        if (typeof ResizeObserver !== 'undefined') {
+            if (!texRO) texRO = new ResizeObserver(syncTexCanvasSize);
+            else texRO.disconnect();
+            texRO.observe(host);
         }
 
         // Build layer descriptors once; images survive page navigations
@@ -4809,7 +4813,6 @@ window.consoleBg = (function () {
         'autonomy_lock', 'kill_switch.dat', 'org_dissolve_d2', 'price_floor_x4', 'rev_q3.csv',
         'subject_x4471k', 'med_diversion', 'legal_stratagem', 'vault_drop_4412', 'override_disable'
     ];
-    var FOLDER_EXT_GLYPHS = ['📁', '▶', '►', '⊟', '▣']; // not used (no emoji) — keep arrow only
     function folderItemText() { return pick(FOLDER_NAMES); }
 
     function spawnFolderRip() {

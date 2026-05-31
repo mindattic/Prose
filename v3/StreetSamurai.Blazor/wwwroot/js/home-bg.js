@@ -194,10 +194,14 @@ window.homeBg = (function () {
     // Drifting red scan lines + highlight boxes that hold then fade out.
 
     var scanlinesRaf = null;
+    var scanStartRaf = null;
     var scanlinesEl  = null;
 
     function stopScanlineAnim() {
         if (scanlinesRaf) { cancelAnimationFrame(scanlinesRaf); scanlinesRaf = null; }
+        // Also cancel a pending deferred-start rAF (see apply()); otherwise a
+        // rapid re-apply() can't stop the prior start and two loops briefly run.
+        if (scanStartRaf) { cancelAnimationFrame(scanStartRaf); scanStartRaf = null; }
         if (scanlinesEl && scanlinesEl.parentNode) scanlinesEl.parentNode.removeChild(scanlinesEl);
         scanlinesEl = null;
     }
@@ -354,8 +358,12 @@ window.homeBg = (function () {
             if (dataUrl) { imgEl.src = dataUrl; }
             imgEl.style.opacity = '1';
             startLightFlicker(imgEl);
-            // Wait one frame so the img has its final layout rect
-            requestAnimationFrame(function () { startScanlineAnim(imgEl); });
+            // Wait one frame so the img has its final layout rect. Track the id
+            // so a stopScanlineAnim() landing before it fires can cancel it.
+            scanStartRaf = requestAnimationFrame(function () {
+                scanStartRaf = null;
+                startScanlineAnim(imgEl);
+            });
         };
         src.onerror = function () { imgEl.style.opacity = '1'; };
         src.src = imageUrl;
