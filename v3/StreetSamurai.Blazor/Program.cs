@@ -366,6 +366,12 @@ if (args.Contains("--migrate-strands"))
 if (args.Contains("--sync-audio"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
+    // CLI builders don't get the main web host's config wiring (that lives after
+    // these early returns), so surface %APPDATA%\MindAttic\<bucket>\providers.json
+    // here too — AzureBlobAudioStore reads AudioStore:ConnectionString straight
+    // from IConfiguration with no file-store fallback, so without this the sync
+    // throws "requires AudioStore:ConnectionString" even though the Vault has it.
+    cliBuilder.Configuration.AddMindAtticVaultFiles();
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await SyncAudioCli.RunAsync(args, cliApp.Services);
