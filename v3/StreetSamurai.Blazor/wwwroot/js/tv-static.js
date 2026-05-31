@@ -39,7 +39,10 @@
     var hShiftChance = 0.02 + Math.random() * 0.06;
 
     function drawStatic() {
-      if (gen !== currentGen) return;
+      // A newer __tvStaticShow() bumped currentGen — abandon this burst and
+      // detach its resize listener now, rather than waiting for the next
+      // resize event to let onResize self-remove (which leaks until then).
+      if (gen !== currentGen) { window.removeEventListener('resize', onResize); return; }
       var elapsed = performance.now() - start;
       var pct = elapsed / duration;
       if (pct >= 1) {

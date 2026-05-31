@@ -1437,11 +1437,6 @@ textarea.auto-grow {
 @media (max-width: 480px) {
     .cyberspace-geo-win { width: 120px; }
     .cyberspace-geo-report { display: none; }
-    .ub-panel {
-        width: calc(100vw - 20px);
-        grid-template-columns: repeat(3, 30vw);
-        right: 0;
-    }
 }
 
 /* ── Floating artifacts — blurry glyph clusters that drift and fade ─────── */
@@ -1619,8 +1614,8 @@ textarea.auto-grow {
     overflow: visible;                  /* folders escape the list bounds during the rip */
 }
 /* Folder rectangle with the upper-RIGHT corner cut at 45° (manila-folder tab silhouette).
-   Background is OPAQUE so the window's scanline overlay (::before) cannot bleed through
-   the rows — only the empty parts of the window stay see-through. */
+   Background is OPAQUE so the semi-transparent heist window's see-through backdrop cannot
+   bleed through the rows — only the empty parts of the window stay see-through. */
 .cyberspace-folder {
     position: relative;
     background: rgb(20, 26, 36);
