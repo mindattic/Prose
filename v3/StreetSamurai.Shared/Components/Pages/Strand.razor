@@ -304,15 +304,15 @@ else
                 @if (broadcasting)
                 {
                     <button class="btn btn-sm btn-danger" @onclick="StopBroadcastAsync"
-                            title="Stop the live broadcast">
-                        <i class="bi bi-stop-circle me-1"></i>Stop broadcast
+                            title="Stop playback">
+                        <i class="bi bi-stop-fill me-1"></i>Stop
                     </button>
                 }
                 else
                 {
                     <button class="btn btn-sm btn-outline-info" @onclick="StartBroadcastAsync" disabled="@(working || beats.Count == 0)"
-                            title="Tell the story live — plays beat-by-beat, buffering a few ahead, so you can edit upcoming beats before the cursor reaches them">
-                        <i class="bi bi-broadcast me-1"></i>Live Broadcast
+                            title="Play the story live — plays beat-by-beat, buffering a few ahead, so you can edit upcoming beats before the cursor reaches them">
+                        <i class="bi bi-play-fill me-1"></i>Play
                     </button>
                 }
                 @if (!string.IsNullOrEmpty(strand.CombinedAudioPath))
