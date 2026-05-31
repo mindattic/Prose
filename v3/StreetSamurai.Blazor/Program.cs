@@ -127,6 +127,19 @@ if (args.Contains("--add-character"))
     return;
 }
 
+// CLI mode: insert OR update a Place/District from a DistrictData JSON file.
+// Upsert: include "id" to update, omit to create. Safe service-layer path
+// (DistrictRepository.Save) — no hand-SQL, collision-safe slugs.
+//   ss --add-place --file path.json [--print]
+if (args.Contains("--add-place"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AddPlaceCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: insert a News article from a NewsData JSON file.
 //   ss --add-news --file path.json
 if (args.Contains("--add-news"))
