@@ -1,0 +1,35 @@
+#!/usr/bin/env sh
+# ─────────────────────────────────────────────────────────────────────────────
+# Pre-commit gate: StreetSamurai's trusted LLM voting panel (legion.json:
+# claude / openai / gemini / deepseek) must authenticate LIVE before a commit.
+# ss --legion and the continuity auto-resolver depend on it — no point
+# committing when a panel key is dead.
+#
+# Offline / no-network bypass (use sparingly):
+#   SKIP_LLM_KEY_CHECK=1 git commit -m "..."
+# ─────────────────────────────────────────────────────────────────────────────
+set -e
+
+if [ "${SKIP_LLM_KEY_CHECK:-0}" = "1" ]; then
+  echo "pre-commit: SKIP_LLM_KEY_CHECK=1 — skipping live LLM key validation."
+  exit 0
+fi
+
+echo "pre-commit: validating StreetSamurai trusted LLM panel keys (live)…"
+if dotnet test v3/StreetSamurai.UnitTests -c Release \
+      --filter "Category=LiveKeysTrusted" \
+      --nologo --verbosity quiet; then
+  echo "pre-commit: all trusted LLM keys valid — proceeding."
+  exit 0
+fi
+
+cat >&2 <<'MSG'
+
+pre-commit: BLOCKED — a trusted LLM key failed live validation.
+  Fix/rotate the failing key, then re-commit:
+    • local:  %APPDATA%\MindAttic\LLM\providers.json
+    • cloud:  Azure Key Vault secret  MindAttic--Vault--LLM--<provider>--apiKey
+  Or narrow legion.json "voters" to the providers that work.
+  Offline bypass (last resort):  SKIP_LLM_KEY_CHECK=1 git commit ...
+MSG
+exit 1

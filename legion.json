@@ -1,4 +1,4 @@
 {
-  "voters": ["claude"],
+  "voters": ["claude", "openai", "gemini", "deepseek"],
   "judge": "claude"
 }
