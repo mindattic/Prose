@@ -98,32 +98,64 @@ public class ElevenLabsTtsService : ITtsService
         var format = outputFormat ?? "mp3_44100_128";
         var url = $"https://api.elevenlabs.io/v1/text-to-speech/{voice}?output_format={format}";
 
-        // Build the payload as a dictionary so we can conditionally add the
-        // optional context fields (previous_request_ids, previous_text,
-        // next_text). ElevenLabs ignores unknown fields, but explicit nulls in
-        // the JSON have varied across model versions — omitting is safest.
-        var stitchIds = previousRequestIds?.Where(s => !string.IsNullOrWhiteSpace(s)).Take(3).ToArray();
+        // The eleven_v3 family rejects a couple of things v2 happily accepts.
+        // Detect it once and adapt the payload automatically so callers never
+        // have to branch on model version — set TtsModel to a v2 or v3 model
+        // and narration just works.
+        var model = settings.TtsModel;
+        var isV3 = IsV3Model(model);
+
         var resolvedStability       = voiceSettings?.Stability       ?? settings.TtsStability;
         var resolvedSimilarityBoost = voiceSettings?.SimilarityBoost ?? settings.TtsSimilarityBoost;
         var resolvedStyle           = voiceSettings?.Style           ?? settings.TtsStyle;
-        var payload = new Dictionary<string, object?>
-        {
-            ["text"] = text,
-            ["model_id"] = settings.TtsModel,
-            ["voice_settings"] = new
+
+        // v3 takes only the three discrete stability presets (0.0 Creative /
+        // 0.5 Natural / 1.0 Robust); v2 takes any float in [0,1]. Snap for v3
+        // so an arbitrary slider value (e.g. 0.35) doesn't 400 the whole run.
+        // v3 also only consumes stability + use_speaker_boost, so we send the
+        // leaner voice_settings to avoid sending fields it doesn't honour.
+        object voiceSettingsObj = isV3
+            ? new
+            {
+                stability = SnapToV3Stability(resolvedStability),
+                use_speaker_boost = true,
+            }
+            : new
             {
                 stability = resolvedStability,
                 similarity_boost = resolvedSimilarityBoost,
                 style = resolvedStyle,
                 use_speaker_boost = true,
-            },
+            };
+
+        // Build the payload as a dictionary so we can conditionally add the
+        // optional context fields (previous_request_ids, previous_text,
+        // next_text). ElevenLabs ignores unknown fields, but explicit nulls in
+        // the JSON have varied across model versions — omitting is safest.
+        var payload = new Dictionary<string, object?>
+        {
+            ["text"] = text,
+            ["model_id"] = model,
+            ["voice_settings"] = voiceSettingsObj,
         };
-        if (stitchIds is { Length: > 0 })
-            payload["previous_request_ids"] = stitchIds;
-        if (!string.IsNullOrWhiteSpace(previousText))
-            payload["previous_text"] = previousText;
-        if (!string.IsNullOrWhiteSpace(nextText))
-            payload["next_text"] = nextText;
+
+        // v3 supports NO cross-request conditioning: it 400s on
+        // previous_request_ids ("request stitching not supported") AND on
+        // previous_text/next_text ("not yet supported with the 'eleven_v3'
+        // model"). So for v3 we send none of them — its only cross-beat
+        // continuity is a constant voice + constant voice_settings (held flat
+        // upstream in BeatPromptBuilder) plus the inline audio tags. v2 takes
+        // all three, which is why it can acoustically stitch beats together.
+        if (!isV3)
+        {
+            var stitchIds = previousRequestIds?.Where(s => !string.IsNullOrWhiteSpace(s)).Take(3).ToArray();
+            if (stitchIds is { Length: > 0 })
+                payload["previous_request_ids"] = stitchIds;
+            if (!string.IsNullOrWhiteSpace(previousText))
+                payload["previous_text"] = previousText;
+            if (!string.IsNullOrWhiteSpace(nextText))
+                payload["next_text"] = nextText;
+        }
 
         using var request = new HttpRequestMessage(HttpMethod.Post, url);
         request.Headers.Add("xi-api-key", settings.ElevenLabsApiKey);
@@ -134,7 +166,24 @@ public class ElevenLabsTtsService : ITtsService
             "application/json");
 
         var response = await http.SendAsync(request, ct);
-        response.EnsureSuccessStatusCode();
+        if (!response.IsSuccessStatusCode)
+        {
+            // ElevenLabs returns a JSON body explaining WHY a request was
+            // rejected (e.g. model_id doesn't support previous_request_ids,
+            // stability value out of range for eleven_v3, voice not found).
+            // EnsureSuccessStatusCode() discards that body — read it first and
+            // fold it into the message, while preserving StatusCode so callers
+            // (e.g. the pcm→mp3 403 fallback) can still branch on it.
+            string body;
+            try { body = await response.Content.ReadAsStringAsync(ct); }
+            catch { body = "<unreadable response body>"; }
+            if (body.Length > 1000) body = body[..1000] + "…";
+            throw new HttpRequestException(
+                $"ElevenLabs TTS {(int)response.StatusCode} {response.StatusCode} " +
+                $"(model={settings.TtsModel}, voice={voice}, format={format}): {body}",
+                inner: null,
+                statusCode: response.StatusCode);
+        }
 
         var bytes = await response.Content.ReadAsByteArrayAsync(ct);
         // Header is "request-id" (lowercase, with hyphen). Try a couple of casings
@@ -180,6 +229,28 @@ public class ElevenLabsTtsService : ITtsService
         }
 
         return voices;
+    }
+
+    /// <summary>
+    /// True when <paramref name="modelId"/> is an eleven_v3-family model
+    /// (eleven_v3, eleven_v3_alpha, …). v3 has stricter request rules than v2
+    /// — no request stitching, discrete stability — so <see cref="SynthesizeWithIdAsync(string,string?,string?,IList{string}?,string?,string?,TtsVoiceSettings?,CancellationToken)"/>
+    /// adapts the payload accordingly and callers never special-case it.
+    /// </summary>
+    private static bool IsV3Model(string? modelId)
+        => !string.IsNullOrWhiteSpace(modelId)
+           && modelId.StartsWith("eleven_v3", StringComparison.OrdinalIgnoreCase);
+
+    /// <summary>
+    /// eleven_v3 accepts only three stability presets — Creative (0.0),
+    /// Natural (0.5), Robust (1.0). Snap an arbitrary [0,1] value to the
+    /// nearest preset so v2-tuned sliders don't 400 a v3 request.
+    /// </summary>
+    private static double SnapToV3Stability(double value)
+    {
+        if (value <= 0.25) return 0.0;
+        if (value >= 0.75) return 1.0;
+        return 0.5;
     }
 }
 

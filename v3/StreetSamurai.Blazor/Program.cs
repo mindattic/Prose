@@ -372,6 +372,19 @@ if (args.Contains("--sync-audio"))
     return;
 }
 
+// CLI mode: (re)narrate an EXISTING strand by id (full or prefix) or slug.
+// Runs the same NarrateAsync path the Record button uses. Use to re-record a
+// strand whose beats failed (e.g. a TTS 400) without regenerating prose.
+//   ss --narrate-strand (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--narrate-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await NarrateStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: import a hand-authored .strand file (beat + gap + beat …) into a
 // fresh strand. The complement to --write-strand (LLM-generated): this is for
 // drafts written elsewhere (chat exports, transcripts, paper notes typed up).
