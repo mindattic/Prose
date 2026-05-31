@@ -109,4 +109,9 @@ public class Strand
 
     public List<Strand> Children { get; set; } = new();
     public List<StrandBeat> StrandBeats { get; set; } = new();
+
+    /// <summary>Publish-run history (1:M). Each Publish appends one row; the
+    /// latest completed run's file is what <see cref="CombinedAudioPath"/>
+    /// points at.</summary>
+    public List<StrandPublication> Publications { get; set; } = new();
 }

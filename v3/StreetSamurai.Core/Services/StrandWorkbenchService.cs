@@ -34,6 +34,21 @@ public class StrandWorkbenchService
     private readonly ILogger<StrandWorkbenchService> log;
     private static readonly ConcurrentDictionary<Guid, CancellationTokenSource> cancelTokens = new();
 
+    /// <summary>Live per-strand progress for an in-flight <see cref="ExportCombinedAsync"/>
+    /// (Publish). The UI polls <see cref="GetExportProgress"/> while the export
+    /// runs to drive the ring loader. Cleared in the export's finally.</summary>
+    private static readonly ConcurrentDictionary<Guid, ExportProgress> exportProgress = new();
+
+    /// <summary>Snapshot of a Publish/combine in progress. <see cref="Current"/>
+    /// of <see cref="Total"/> beats stitched; <see cref="Label"/> names the beat
+    /// currently being written.</summary>
+    public sealed record ExportProgress(int Current, int Total, string? Label);
+
+    /// <summary>Current Publish progress for a strand, or null when no export is
+    /// running. Read-only poll target for the ring-loader overlay.</summary>
+    public ExportProgress? GetExportProgress(Guid strandId)
+        => exportProgress.TryGetValue(strandId, out var p) ? p : null;
+
     public StrandWorkbenchService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ElevenLabsTtsService tts,
@@ -1021,6 +1036,8 @@ public class StrandWorkbenchService
                     // Bump the progress counter so the polling UI reads a
                     // single int instead of scanning the beats collection.
                     strand.NarratedBeatCount++;
+                    db.StrandAudioEvents.Add(NewAudioEvent(strandId, tracked.Id, null, "beat-recorded",
+                        $"{tracked.Text.Length} chars, voice {voiceForBeat}"));
                     await db.SaveChangesAsync(ct);
                 }
                 catch (OperationCanceledException)
@@ -1052,6 +1069,7 @@ public class StrandWorkbenchService
             //   some beats failed  → "failed" (Error already populated above)
             // Either way AudioCompletedAt stamps so callers can see the run finished.
             strand.Status = failedCount == 0 ? "ready" : "failed";
+            if (failedCount == 0) strand.Error = null; // clear stale failure note on a clean run
             strand.AudioCompletedAt = DateTime.UtcNow;
             await db.SaveChangesAsync(ct);
 
@@ -1165,6 +1183,8 @@ public class StrandWorkbenchService
             {
                 await SynthesizeAsMp3Async(tracked, strand, prevIds.ToArray(), prevText, nextText, voiceForBeat, prompt, ct);
             }
+            db.StrandAudioEvents.Add(NewAudioEvent(strandId, beatId, null, "beat-recorded",
+                $"{tracked.Text?.Length ?? 0} chars, voice {voiceForBeat}"));
             await db.SaveChangesAsync(ct);
             return true;
         }
@@ -1206,127 +1226,273 @@ public class StrandWorkbenchService
         // ComputeTrailingSilenceMs; a value (including 0) is an explicit
         // override the user set in the UI.
 
-        var ext = allWav ? "wav" : "mp3";
-
-        if (allWav)
+        // Open a Publish run (1:M header) and stamp the process ledger as we go
+        // — beat-assembled per beat, wav-exported, mp3-produced — so the whole
+        // pipeline has an accurate, queryable history.
+        var pub = new StrandPublication
         {
-            // Stream straight to a temp WAV file so the strand's PCM never
-            // sits in memory all at once. For a 100-beat strand at 44.1 kHz
-            // mono 16-bit, the old List<byte[]> + contiguous-array pattern
-            // pinned ~30-50 MB on the LOH twice (list + merged buffer +
-            // header-wrap allocation), routinely OOMing the B1 worker. Now
-            // each beat's bytes are written and released; the WAV header is
-            // patched in after the data chunk size is known.
-            var tmp = Path.Combine(Path.GetTempPath(), $"ss-combine-wav-{Guid.CreateVersion7():N}.wav");
-            try
-            {
-                await using (var fs = new FileStream(tmp, FileMode.Create, FileAccess.ReadWrite, FileShare.None, 64 * 1024, useAsync: true))
-                {
-                    // Reserve 44 bytes for the header — written after we
-                    // know the data chunk size.
-                    fs.Position = 44;
-                    long pcmTotal = 0;
-                    for (int i = 0; i < ordered.Count; i++)
-                    {
-                        ct.ThrowIfCancellationRequested();
-                        var o = ordered[i];
-                        var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
-                        if (bytes == null || bytes.Length <= 44) continue;
-                        await fs.WriteAsync(bytes.AsMemory(44), ct);
-                        pcmTotal += bytes.Length - 44;
+            Id = Guid.CreateVersion7(),
+            StrandId = strandId,
+            StartedAt = DateTime.UtcNow,
+            Status = "running",
+            BeatCount = ordered.Count,
+        };
+        db.StrandPublications.Add(pub);
+        db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "publish-started",
+            $"{ordered.Count} beats; source format {(allWav ? "wav" : "mp3")}"));
+        await db.SaveChangesAsync(ct);
 
-                        if (i < ordered.Count - 1)
+        // Publish a live progress snapshot the UI polls to drive the ring loader.
+        exportProgress[strandId] = new ExportProgress(0, ordered.Count, null);
+        var ffmpeg = ResolveFfmpegPath();
+        try
+        {
+            byte[]? combinedBytes = null; // the final published file's bytes
+            string finalExt;
+
+            if (allWav)
+            {
+                // Stitch beats + precise PCM silence into a temp WAV, then
+                // transcode that WAV → MP3 as the published artifact (≈10×
+                // smaller, universally playable). The temp WAV streams to disk
+                // so a long strand's PCM never sits fully in memory.
+                var tmp = Path.Combine(Path.GetTempPath(), $"ss-combine-wav-{Guid.CreateVersion7():N}.wav");
+                try
+                {
+                    long pcmTotal = 0;
+                    await using (var fs = new FileStream(tmp, FileMode.Create, FileAccess.ReadWrite, FileShare.None, 64 * 1024, useAsync: true))
+                    {
+                        fs.Position = 44; // reserve header; patched after data size known
+                        for (int i = 0; i < ordered.Count; i++)
                         {
-                            var next = ordered[i + 1].Beat;
-                            var pauseMs = o.Beat.GapAfterMs ?? ComputeTrailingSilenceMs(o.Beat, next, settings);
-                            if (pauseMs > 0)
+                            ct.ThrowIfCancellationRequested();
+                            var o = ordered[i];
+                            exportProgress[strandId] = new ExportProgress(i + 1, ordered.Count,
+                                string.IsNullOrWhiteSpace(o.Beat.BeatTitle) ? $"Beat {i + 1}" : o.Beat.BeatTitle);
+                            var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
+                            if (bytes == null || bytes.Length <= 44) continue;
+                            await fs.WriteAsync(bytes.AsMemory(44), ct);
+                            pcmTotal += bytes.Length - 44;
+                            db.StrandAudioEvents.Add(NewAudioEvent(strandId, o.Beat.Id, pub.Id, "beat-assembled",
+                                $"pos {i + 1}/{ordered.Count}, {bytes.Length - 44} pcm bytes"));
+
+                            if (i < ordered.Count - 1)
                             {
-                                var silence = GenerateSilencePcm(pauseMs, sampleRate: 44100, channels: 1, bitsPerSample: 16);
-                                if (silence.Length > 0)
+                                var next = ordered[i + 1].Beat;
+                                var pauseMs = o.Beat.GapAfterMs ?? ComputeTrailingSilenceMs(o.Beat, next, settings);
+                                if (pauseMs > 0)
                                 {
-                                    await fs.WriteAsync(silence, ct);
-                                    pcmTotal += silence.Length;
+                                    var silence = GenerateSilencePcm(pauseMs, sampleRate: 44100, channels: 1, bitsPerSample: 16);
+                                    if (silence.Length > 0) { await fs.WriteAsync(silence, ct); pcmTotal += silence.Length; }
                                 }
                             }
                         }
+                        fs.Position = 0;
+                        EpisodeAudioService.WriteWavHeader(fs, checked((int)pcmTotal), 44100, 1, 16);
                     }
-                    fs.Position = 0;
-                    EpisodeAudioService.WriteWavHeader(fs, checked((int)pcmTotal), 44100, 1, 16);
-                    fs.Position = 0;
-                    await audioStore.WriteCombinedFromStreamAsync(strand.Slug, "wav", fs, ct);
+                    db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "wav-exported",
+                        $"intermediate combined WAV, {new FileInfo(tmp).Length} bytes"));
+
+                    if (!string.IsNullOrEmpty(ffmpeg))
+                    {
+                        var tmpMp3 = Path.Combine(Path.GetTempPath(), $"ss-combine-mp3-{Guid.CreateVersion7():N}.mp3");
+                        try
+                        {
+                            await TranscodeWavToMp3Async(ffmpeg, tmp, tmpMp3, ct);
+                            combinedBytes = await File.ReadAllBytesAsync(tmpMp3, ct);
+                            await audioStore.WriteCombinedAsync(strand.Slug, "mp3", combinedBytes, ct);
+                            finalExt = "mp3";
+                            db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "mp3-produced",
+                                $"{strand.Slug}/strand.mp3, {combinedBytes.Length} bytes"));
+                        }
+                        finally { try { File.Delete(tmpMp3); } catch { } }
+                    }
+                    else
+                    {
+                        // No ffmpeg → publish the lossless WAV as-is.
+                        log.LogWarning("ffmpeg not found — publishing lossless WAV instead of MP3 for strand {S}", strandId);
+                        combinedBytes = await File.ReadAllBytesAsync(tmp, ct);
+                        await audioStore.WriteCombinedAsync(strand.Slug, "wav", combinedBytes, ct);
+                        finalExt = "wav";
+                    }
                 }
-            }
-            finally
-            {
-                try { File.Delete(tmp); } catch { /* best-effort */ }
-            }
-        }
-        else
-        {
-            // MP3 concat with ffmpeg-injected silence. Strategy unchanged:
-            // render one silence-MP3 per distinct pause length we need,
-            // then ffmpeg concat demuxer with -c copy (no re-encode).
-            //
-            // Blob-backed deployments don't have local file paths, so we
-            // stage every beat's MP3 to a temp dir first, run ffmpeg
-            // against the staged copies, then upload the result through
-            // the store. Local-disk just uses ResolveLocalPathAsync directly.
-            var ffmpeg = ResolveFfmpegPath();
-            if (string.IsNullOrEmpty(ffmpeg))
-            {
-                log.LogWarning("ffmpeg not found on PATH — falling back to naive MP3 concat without inter-beat silence pacing. Install ffmpeg to enable paced gaps.");
-                using var ms = new MemoryStream();
-                foreach (var o in ordered)
-                {
-                    ct.ThrowIfCancellationRequested();
-                    var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
-                    if (bytes == null) continue;
-                    await ms.WriteAsync(bytes, ct);
-                }
-                await audioStore.WriteCombinedAsync(strand.Slug, "mp3", ms.ToArray(), ct);
+                finally { try { File.Delete(tmp); } catch { } }
             }
             else
             {
-                int Pause(Beat a, Beat b) => a.GapAfterMs ?? ComputeTrailingSilenceMs(a, b, settings);
-                // Stage every beat to a local temp file (no-op rename for
-                // local-disk; download from blob otherwise), run ffmpeg
-                // against a temp output, then hand the bytes to the store.
-                var staged = new List<(OrderedBeat Source, string LocalPath)>(ordered.Count);
-                var stagingDir = Path.Combine(Path.GetTempPath(), $"ss-combine-{Guid.CreateVersion7():N}");
-                Directory.CreateDirectory(stagingDir);
-                try
+                // Beats are already MP3 → concat (ffmpeg-paced silence if available).
+                if (string.IsNullOrEmpty(ffmpeg))
                 {
+                    log.LogWarning("ffmpeg not found — naive MP3 concat without paced gaps for strand {S}", strandId);
+                    using var msx = new MemoryStream();
+                    int k = 0;
                     foreach (var o in ordered)
                     {
                         ct.ThrowIfCancellationRequested();
-                        var local = await audioStore.ResolveLocalPathAsync(o.Beat.AudioPath!, ct);
-                        if (local == null)
-                        {
-                            var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
-                            if (bytes == null) continue;
-                            local = Path.Combine(stagingDir, $"{o.Beat.Id:N}.mp3");
-                            await File.WriteAllBytesAsync(local, bytes, ct);
-                        }
-                        staged.Add((o, local));
+                        k++;
+                        exportProgress[strandId] = new ExportProgress(k, ordered.Count,
+                            string.IsNullOrWhiteSpace(o.Beat.BeatTitle) ? $"Beat {k}" : o.Beat.BeatTitle);
+                        var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
+                        if (bytes == null) continue;
+                        await msx.WriteAsync(bytes, ct);
+                        db.StrandAudioEvents.Add(NewAudioEvent(strandId, o.Beat.Id, pub.Id, "beat-assembled",
+                            $"pos {k}/{ordered.Count}, {bytes.Length} bytes (naive concat)"));
                     }
-                    var stagedOut = Path.Combine(stagingDir, "strand.mp3");
-                    await ConcatMp3sWithSilenceAsync(ffmpeg, staged, stagedOut, Pause, ct);
-                    var combined = await File.ReadAllBytesAsync(stagedOut, ct);
-                    await audioStore.WriteCombinedAsync(strand.Slug, "mp3", combined, ct);
+                    combinedBytes = msx.ToArray();
+                    await audioStore.WriteCombinedAsync(strand.Slug, "mp3", combinedBytes, ct);
+                    finalExt = "mp3";
+                    db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "mp3-produced",
+                        $"{strand.Slug}/strand.mp3, {combinedBytes.Length} bytes (no ffmpeg)"));
                 }
-                finally
+                else
                 {
-                    try { Directory.Delete(stagingDir, recursive: true); }
-                    catch (Exception ex) { log.LogDebug(ex, "Could not clean up combine staging dir {Dir}", stagingDir); }
+                    int Pause(Beat a, Beat b) => a.GapAfterMs ?? ComputeTrailingSilenceMs(a, b, settings);
+                    var staged = new List<(OrderedBeat Source, string LocalPath)>(ordered.Count);
+                    var stagingDir = Path.Combine(Path.GetTempPath(), $"ss-combine-{Guid.CreateVersion7():N}");
+                    Directory.CreateDirectory(stagingDir);
+                    try
+                    {
+                        int k = 0;
+                        foreach (var o in ordered)
+                        {
+                            ct.ThrowIfCancellationRequested();
+                            k++;
+                            exportProgress[strandId] = new ExportProgress(k, ordered.Count,
+                                string.IsNullOrWhiteSpace(o.Beat.BeatTitle) ? $"Beat {k}" : o.Beat.BeatTitle);
+                            var local = await audioStore.ResolveLocalPathAsync(o.Beat.AudioPath!, ct);
+                            if (local == null)
+                            {
+                                var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
+                                if (bytes == null) continue;
+                                local = Path.Combine(stagingDir, $"{o.Beat.Id:N}.mp3");
+                                await File.WriteAllBytesAsync(local, bytes, ct);
+                            }
+                            staged.Add((o, local));
+                            db.StrandAudioEvents.Add(NewAudioEvent(strandId, o.Beat.Id, pub.Id, "beat-assembled",
+                                $"pos {k}/{ordered.Count} (mp3 concat)"));
+                        }
+                        var stagedOut = Path.Combine(stagingDir, "strand.mp3");
+                        await ConcatMp3sWithSilenceAsync(ffmpeg, staged, stagedOut, Pause, ct);
+                        combinedBytes = await File.ReadAllBytesAsync(stagedOut, ct);
+                        await audioStore.WriteCombinedAsync(strand.Slug, "mp3", combinedBytes, ct);
+                        finalExt = "mp3";
+                        db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "mp3-produced",
+                            $"{strand.Slug}/strand.mp3, {combinedBytes.Length} bytes"));
+                    }
+                    finally
+                    {
+                        try { Directory.Delete(stagingDir, recursive: true); }
+                        catch (Exception ex) { log.LogDebug(ex, "Could not clean up combine staging dir {Dir}", stagingDir); }
+                    }
                 }
             }
-        }
 
-        var combinedRel = $"{strand.Slug}/strand.{ext}";
-        strand.CombinedAudioPath = combinedRel;
-        await db.SaveChangesAsync(ct);
-        log.LogInformation("Strand {S} combined audio written ({Rel})", strandId, combinedRel);
-        return combinedRel;
+            var combinedRel = $"{strand.Slug}/strand.{finalExt}";
+
+            // Dual-write: drop a friendly copy in the user's publish dir
+            // (Downloads by default) so the file is easy to find on disk. The
+            // internal store copy keeps the in-app player + download endpoint
+            // working unchanged.
+            string? exportedTo = null;
+            if (combinedBytes != null)
+            {
+                try
+                {
+                    var outDir = settings?.ResolvePublishOutputDirectory()
+                                 ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
+                    var friendly = $"{SafeFileName(string.IsNullOrWhiteSpace(strand.Title) ? strand.Slug : strand.Title)}.{finalExt}";
+                    var outPath = Path.Combine(outDir, friendly);
+                    await File.WriteAllBytesAsync(outPath, combinedBytes, ct);
+                    exportedTo = outPath;
+                    db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "exported-to-folder", outPath));
+                    log.LogInformation("Strand {S} published to {Path}", strandId, outPath);
+                }
+                catch (Exception ex)
+                {
+                    log.LogWarning(ex, "Strand {S}: combined file written internally but copy to publish dir failed", strandId);
+                }
+            }
+
+            strand.CombinedAudioPath = combinedRel;
+            strand.Error = null; // clear any stale failure note now that we have a clean publish
+            pub.Status = "completed";
+            pub.CompletedAt = DateTime.UtcNow;
+            pub.Format = finalExt;
+            pub.Path = exportedTo ?? combinedRel;
+            pub.ByteSize = combinedBytes?.LongLength ?? 0;
+            db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "publish-completed",
+                $"{finalExt}, {pub.ByteSize} bytes" + (exportedTo != null ? $" -> {exportedTo}" : "")));
+            await db.SaveChangesAsync(ct);
+            log.LogInformation("Strand {S} published ({Rel}, {Ext}, {Bytes} bytes)", strandId, combinedRel, finalExt, pub.ByteSize);
+            return combinedRel;
+        }
+        catch (Exception ex)
+        {
+            pub.Status = "failed";
+            pub.CompletedAt = DateTime.UtcNow;
+            pub.Error = ex.Message;
+            try
+            {
+                db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "publish-failed", ex.Message));
+                await db.SaveChangesAsync(ct);
+            }
+            catch { /* best-effort audit write */ }
+            throw;
+        }
+        finally
+        {
+            exportProgress.TryRemove(strandId, out _);
+        }
+    }
+
+    /// <summary>Build a <see cref="StrandAudioEvent"/> row for the process ledger.</summary>
+    private static StrandAudioEvent NewAudioEvent(Guid strandId, Guid? beatId, Guid? publicationId, string kind, string? detail)
+        => new()
+        {
+            Id = Guid.CreateVersion7(),
+            StrandId = strandId,
+            BeatId = beatId,
+            PublicationId = publicationId,
+            At = DateTime.UtcNow,
+            Kind = kind,
+            Detail = detail is { Length: > 1000 } d ? d[..1000] : detail,
+        };
+
+    /// <summary>Transcode a combined WAV to MP3 via ffmpeg (libmp3lame, VBR ~q2
+    /// ≈190 kbps). Throws on a non-zero exit so the publish run records the
+    /// failure rather than silently shipping a missing/partial file.</summary>
+    private async Task TranscodeWavToMp3Async(string ffmpegPath, string wavPath, string mp3Path, CancellationToken ct)
+    {
+        var psi = new System.Diagnostics.ProcessStartInfo
+        {
+            FileName = ffmpegPath,
+            RedirectStandardError = true,
+            RedirectStandardOutput = true,
+            UseShellExecute = false,
+            CreateNoWindow = true,
+        };
+        psi.ArgumentList.Add("-y");
+        psi.ArgumentList.Add("-i"); psi.ArgumentList.Add(wavPath);
+        psi.ArgumentList.Add("-codec:a"); psi.ArgumentList.Add("libmp3lame");
+        psi.ArgumentList.Add("-qscale:a"); psi.ArgumentList.Add("2");
+        psi.ArgumentList.Add(mp3Path);
+        using var proc = System.Diagnostics.Process.Start(psi)
+            ?? throw new InvalidOperationException("Failed to start ffmpeg for WAV->MP3 transcode.");
+        // Drain both pipes concurrently before awaiting exit to avoid a deadlock.
+        var outTask = proc.StandardOutput.ReadToEndAsync(ct);
+        var errTask = proc.StandardError.ReadToEndAsync(ct);
+        await proc.WaitForExitAsync(ct);
+        await outTask; var stderr = await errTask;
+        if (proc.ExitCode != 0)
+            throw new InvalidOperationException($"ffmpeg WAV->MP3 failed (exit {proc.ExitCode}): {stderr}");
+    }
+
+    /// <summary>Strip filesystem-hostile characters from a strand title so it
+    /// can be a download filename. Collapses to the slug if nothing survives.</summary>
+    private static string SafeFileName(string name)
+    {
+        var cleaned = new string(name.Select(c => Array.IndexOf(Path.GetInvalidFileNameChars(), c) >= 0 ? '_' : c).ToArray()).Trim();
+        return string.IsNullOrWhiteSpace(cleaned) ? "strand" : cleaned;
     }
 
     /// <summary>Drop a single beat's audio (file + db fields) so the next
@@ -1551,12 +1717,14 @@ public class StrandWorkbenchService
                 };
                 using var proc = System.Diagnostics.Process.Start(psi)
                     ?? throw new InvalidOperationException("Failed to spawn ffmpeg for silence render.");
+                // Drain BOTH pipes concurrently before awaiting exit — otherwise
+                // a full stderr/stdout buffer blocks ffmpeg and we deadlock.
+                var outTask = proc.StandardOutput.ReadToEndAsync(ct);
+                var errTask = proc.StandardError.ReadToEndAsync(ct);
                 await proc.WaitForExitAsync(ct);
+                await outTask; var stderr = await errTask;
                 if (proc.ExitCode != 0)
-                {
-                    var stderr = await proc.StandardError.ReadToEndAsync(ct);
                     throw new InvalidOperationException($"ffmpeg silence render failed (exit {proc.ExitCode}): {stderr}");
-                }
                 silenceCache[ms] = file;
                 return file;
             }
@@ -1600,12 +1768,15 @@ public class StrandWorkbenchService
             };
             using var concatProc = System.Diagnostics.Process.Start(concatPsi)
                 ?? throw new InvalidOperationException("Failed to spawn ffmpeg for MP3 concat.");
+            // Drain BOTH pipes concurrently before awaiting exit — otherwise a
+            // full stderr/stdout buffer blocks ffmpeg and we deadlock (which is
+            // exactly what hung the first real publish).
+            var concatOutTask = concatProc.StandardOutput.ReadToEndAsync(ct);
+            var concatErrTask = concatProc.StandardError.ReadToEndAsync(ct);
             await concatProc.WaitForExitAsync(ct);
+            await concatOutTask; var concatStderr = await concatErrTask;
             if (concatProc.ExitCode != 0)
-            {
-                var stderr = await concatProc.StandardError.ReadToEndAsync(ct);
-                throw new InvalidOperationException($"ffmpeg concat failed (exit {concatProc.ExitCode}): {stderr}");
-            }
+                throw new InvalidOperationException($"ffmpeg concat failed (exit {concatProc.ExitCode}): {concatStderr}");
             log.LogInformation("ffmpeg concat wrote {Path} ({Beats} beats, {Silences} silences)",
                 outPath, ordered.Count, silenceCache.Count);
         }
