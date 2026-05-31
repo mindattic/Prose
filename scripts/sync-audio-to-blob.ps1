@@ -34,7 +34,13 @@ try {
     # last-modified timestamp wins and gets copied to the other. Same code
     # path the always-on AudioReconciliationBackgroundService runs, but
     # invoked synchronously here so the deploy waits for it.
-    & dotnet run --no-build --no-restore -- --sync-audio
+    #
+    # -c Release is required: MindAttic.Deploy's preDeploy step builds this
+    # project in Release, so --no-build must target Release too. Without it,
+    # `dotnet run` defaults to Debug and reuses a stale (possibly months-old)
+    # Debug build that predates recent fixes -- which is how a resolved
+    # AudioStore:ConnectionString could still throw at deploy time.
+    & dotnet run -c Release --no-build --no-restore -- --sync-audio
     $code = $LASTEXITCODE
 } finally {
     Pop-Location
