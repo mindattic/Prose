@@ -224,6 +224,9 @@ public class StrandCliRoundTripTests
         var prompt = BeatPromptBuilder.Build(refreshed, "eleven_v3", tagsEnabled: true,
             baselineStability: 0.5, baselineSimilarityBoost: 0.75, baselineStyle: 0.0);
         Assert.That(prompt.Text, Does.StartWith("[whispering]"));
-        Assert.That(prompt.Stability, Is.GreaterThan(0.5), "Quiet tone biases stability up for controlled delivery");
+        // On v3 the quiet tone is carried by the [whispering] tag, and stability
+        // is held flat at the baseline so the strand keeps one stability preset
+        // across beats (continuity). The per-beat stability bias is v2-only.
+        Assert.That(prompt.Stability, Is.EqualTo(0.5), "v3 pins stability to the strand baseline; emotion comes from the audio tag");
     }
 }

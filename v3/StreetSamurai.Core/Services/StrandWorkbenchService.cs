@@ -1104,6 +1104,78 @@ public class StrandWorkbenchService
         return false;
     }
 
+    /// <summary>Render a SINGLE beat's audio in isolation — the unit of work
+    /// behind Live Broadcast's just-in-time look-ahead buffer. Mirrors one
+    /// iteration of <see cref="NarrateAsync"/>'s loop: resolves the active
+    /// voice profile, builds the v2/v3 prompt, synthesises lossless WAV
+    /// (falling back to mp3 on a 403), and stamps AudioPath / TextHash / etc.
+    /// It re-reads the beat's CURRENT text from the DB first, so an edit made
+    /// while the broadcast is mid-flight is what gets voiced when the buffer
+    /// reaches it. Returns true on success; per-beat failures are logged and
+    /// return false so the caller can skip-and-continue. Skips (returns true)
+    /// when the beat already has fresh, non-stale audio — idempotent, so the
+    /// look-ahead can call it on every tick without re-billing TTS.</summary>
+    public async Task<bool> NarrateBeatAsync(Guid strandId, Guid beatId, bool force = false, CancellationToken ct = default)
+    {
+        if (!await tts.IsConfiguredAsync())
+            throw new InvalidOperationException("TTS is not configured. Set ElevenLabs API key in Settings.");
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct)
+            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+
+        var ordered = await GetOrderedBeatsAsync(strandId, ct);
+        var idx = ordered.FindIndex(o => o.Beat.Id == beatId);
+        if (idx < 0) return false;
+
+        var tracked = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
+        if (tracked == null || string.IsNullOrWhiteSpace(tracked.Text)) return false;
+
+        // Idempotent fast-path: already voiced for the current text → nothing to do.
+        if (!force && !tracked.Stale && !string.IsNullOrEmpty(tracked.AudioPath))
+            return true;
+
+        var activeProfile     = settings?.GetDefaultVoiceProfile();
+        var lockedStrandVoice = !string.IsNullOrEmpty(strand.VoiceId) ? strand.VoiceId : activeProfile?.VoiceId;
+        var voiceForBeat      = !string.IsNullOrEmpty(tracked.VoiceId) ? tracked.VoiceId : lockedStrandVoice;
+
+        var modelId        = activeProfile?.Model           ?? settings?.TtsModel ?? "eleven_v3";
+        var tagsEnabled    = settings?.TtsUseAudioTags      ?? true;
+        var baseStability  = activeProfile?.Stability       ?? settings?.TtsStability ?? 0.5;
+        var baseSimilarity = activeProfile?.SimilarityBoost ?? settings?.TtsSimilarityBoost ?? 0.75;
+        var baseStyle      = activeProfile?.Style            ?? settings?.TtsStyle ?? 0.0;
+        var prompt = BeatPromptBuilder.Build(tracked, modelId, tagsEnabled, baseStability, baseSimilarity, baseStyle);
+
+        // v2 continuity context (the TTS layer drops both for v3).
+        var prevIds = new List<string>(3);
+        for (int j = idx - 1; j >= 0 && prevIds.Count < 3; j--)
+        {
+            var rid = ordered[j].Beat.LastRequestId;
+            if (!string.IsNullOrEmpty(rid)) prevIds.Insert(0, rid);
+        }
+        var (prevText, nextText) = BuildTextWindow(ordered, idx, contextChars: 1500);
+
+        try
+        {
+            try
+            {
+                await SynthesizeAsLosslessWavAsync(tracked, strand, prevIds.ToArray(), prevText, nextText, voiceForBeat, prompt, ct);
+            }
+            catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.Forbidden)
+            {
+                await SynthesizeAsMp3Async(tracked, strand, prevIds.ToArray(), prevText, nextText, voiceForBeat, prompt, ct);
+            }
+            await db.SaveChangesAsync(ct);
+            return true;
+        }
+        catch (OperationCanceledException) { throw; }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Live-broadcast render failed on strand {S} beat {B}", strandId, beatId);
+            return false;
+        }
+    }
+
     /// <summary>Concatenate every beat's audio (in reading order, recursively
     /// across child strands) into one WAV or MP3 at
     /// <c>engine/strands/{slug}/strand.wav|mp3</c>.</summary>

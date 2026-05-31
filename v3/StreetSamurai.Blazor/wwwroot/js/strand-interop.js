@@ -127,6 +127,42 @@
         el.dispatchEvent(new Event('input', { bubbles: true }));
     }
 
+    // ── Live Broadcast clip player ───────────────────────────────────────
+    // Unlike playBeatsInSequence (a fixed playlist), Live Broadcast is driven
+    // beat-by-beat from C#: the server renders the look-ahead buffer and
+    // advances the cursor, while JS just plays ONE clip and resolves its
+    // promise when the clip ends. That lets the C# loop await each beat,
+    // render ahead between beats, and pick up edits before the cursor arrives.
+    let broadcastAudio = null;
+    let broadcastResolve = null;
+    function playClip(url) {
+        stopClip();
+        return new Promise((resolve) => {
+            broadcastResolve = resolve;
+            const audio = new Audio(url);
+            audio.preload = 'auto';
+            broadcastAudio = audio;
+            const done = () => {
+                if (broadcastAudio === audio) broadcastAudio = null;
+                const r = broadcastResolve; broadcastResolve = null;
+                if (r) r();
+            };
+            audio.addEventListener('ended', done);
+            audio.addEventListener('error', done); // swallow — keep the broadcast moving
+            const p = audio.play();
+            if (p && typeof p.catch === 'function') p.catch(() => done());
+        });
+    }
+    // Halt the current clip AND resolve its pending promise so the awaiting
+    // C# loop unwinds (it checks its own cancellation flag after the await).
+    function stopClip() {
+        if (broadcastAudio) { try { broadcastAudio.pause(); } catch (e) { } broadcastAudio = null; }
+        const r = broadcastResolve; broadcastResolve = null;
+        if (r) r();
+    }
+    window.streetsamurai.playClip = playClip;
+    window.streetsamurai.stopClip = stopClip;
+
     window.streetsamurai.playBeatsInSequence = playBeatsInSequence;
     window.streetsamurai.stopSequence         = stopSequence;
     window.streetsamurai.readInput            = readInput;

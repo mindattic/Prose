@@ -133,6 +133,18 @@
     .beat-card.stale { border-left: 3px solid #dc3545; }
     .beat-card.recorded { border-left: 3px solid #198754; }
 
+    /* Live Broadcast cursor: the beat currently on air. Pulsing cyan rail so
+       the eye can track the cursor and edit the beats just past it. */
+    .beat-card.broadcasting-now {
+        border-color: #0dcaf0;
+        box-shadow: 0 0 0 1px rgba(13,202,240,0.55), 0 0 26px rgba(13,202,240,0.28);
+        animation: broadcast-pulse 1.6s ease-in-out infinite;
+    }
+    @@keyframes broadcast-pulse {
+        0%, 100% { box-shadow: 0 0 0 1px rgba(13,202,240,0.55), 0 0 12px rgba(13,202,240,0.18); }
+        50%      { box-shadow: 0 0 0 1px rgba(13,202,240,0.75), 0 0 30px rgba(13,202,240,0.35); }
+    }
+
     /* Read / edit must share the exact same box: same font, line-height,
        padding, border, background. Clicking into edit only swaps the
        displayed content (formatted prose ↔ raw text with tags); the
@@ -285,9 +297,24 @@ else
                     </button>
                 }
                 <div class="vr"></div>
-                <button class="btn btn-sm btn-outline-success" @onclick="ExportCombinedAsync" disabled="@working" title="Stitch every beat's audio into one file">
-                    <i class="bi bi-collection-play me-1"></i>Stitch
+                <button class="btn btn-sm btn-success" @onclick="ExportCombinedAsync" disabled="@working"
+                        title="Publish whatever's recorded so far into one sound file">
+                    <i class="bi bi-collection-play me-1"></i>Publish
                 </button>
+                @if (broadcasting)
+                {
+                    <button class="btn btn-sm btn-danger" @onclick="StopBroadcastAsync"
+                            title="Stop the live broadcast">
+                        <i class="bi bi-stop-circle me-1"></i>Stop broadcast
+                    </button>
+                }
+                else
+                {
+                    <button class="btn btn-sm btn-outline-info" @onclick="StartBroadcastAsync" disabled="@(working || beats.Count == 0)"
+                            title="Tell the story live — plays beat-by-beat, buffering a few ahead, so you can edit upcoming beats before the cursor reaches them">
+                        <i class="bi bi-broadcast me-1"></i>Live Broadcast
+                    </button>
+                }
                 @if (!string.IsNullOrEmpty(strand.CombinedAudioPath))
                 {
                     @if (StaleCount > 0)
@@ -410,6 +437,7 @@ else
                     else if (b.Stale) rowClass += " stale";
                     else if (!string.IsNullOrEmpty(b.AudioPath)) rowClass += " recorded";
                     if (resumeBeatId == bid) rowClass += " resume-here";
+                    if (broadcasting && broadcastBeatId == bid) rowClass += " broadcasting-now";
                     var rowPosition = position;
                     var isLastBeat = position == beats.Count;
                     var nextBeat = isLastBeat ? null : beats[position].Beat;
@@ -969,6 +997,21 @@ else
     /// <summary>True while a multi-beat play sequence is running. Swaps
     /// the selection bar's Play button for a Stop button.</summary>
     private bool isPlayingSequence;
+
+    // ── Live Broadcast state ─────────────────────────────────────────────
+    /// <summary>True while a live broadcast is airing. The render loop keeps
+    /// <see cref="BroadcastBufferAhead"/> beats voiced ahead of the cursor;
+    /// beats further out stay un-rendered so edits to them are picked up for
+    /// free when the cursor arrives.</summary>
+    private bool broadcasting;
+    /// <summary>The beat currently playing (the "cursor"). Highlighted in the
+    /// list and auto-scrolled into view.</summary>
+    private Guid? broadcastBeatId;
+    private CancellationTokenSource? broadcastCts;
+    /// <summary>How many beats to keep voiced ahead of the cursor. Capped low
+    /// on purpose: rendering outpaces playback ~10:1, so a small buffer keeps
+    /// distant beats un-rendered (and thus editable) until just before air.</summary>
+    private const int BroadcastBufferAhead = 3;
 
     // ── LLM bottom-sheet state ───────────────────────────────────────────
     /// <summary>When non-null, the bottom sheet is open with this beat as
@@ -1568,6 +1611,137 @@ else
         catch (Exception ex) { Toast.Error("STOP-FAIL", ex.Message); }
     }
 
+    // ── Live Broadcast ────────────────────────────────────────────────────
+    // Tell the story live: play beat-by-beat while a look-ahead buffer renders
+    // a few beats ahead of the cursor. Beats beyond the buffer stay un-rendered,
+    // so editing one before the cursor reaches it is voiced fresh on arrival —
+    // active listening for active writing.
+
+    /// <summary>In-flight per-beat render tasks, keyed by beat id, so the main
+    /// loop and the look-ahead warm-up never double-render (and double-bill)
+    /// the same beat. Completed entries are replaced on the next request, which
+    /// is how an edited (stale) beat gets re-voiced.</summary>
+    private readonly Dictionary<Guid, Task<bool>> broadcastRenders = new();
+
+    private Task<bool> EnsureBeatRenderedAsync(Guid beatId, CancellationToken ct)
+    {
+        lock (broadcastRenders)
+        {
+            if (broadcastRenders.TryGetValue(beatId, out var existing) && !existing.IsCompleted)
+                return existing;
+            var t = RenderOneBeatAsync(beatId, ct);
+            broadcastRenders[beatId] = t;
+            return t;
+        }
+    }
+
+    private async Task<bool> RenderOneBeatAsync(Guid beatId, CancellationToken ct)
+    {
+        if (strand == null) return false;
+        var ok = await Workbench.NarrateBeatAsync(strand.Id, beatId, force: false, ct);
+        if (ok)
+        {
+            // Refresh the in-memory beat's audio fields so the cache-bust URL
+            // points at the freshly-written bytes (re-render after an edit).
+            await using var db = await DbFactory.CreateDbContextAsync(ct);
+            var fresh = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId, ct);
+            var local = beats.FirstOrDefault(o => o.Beat.Id == beatId)?.Beat;
+            if (fresh != null && local != null)
+            {
+                local.AudioPath  = fresh.AudioPath;
+                local.Stale      = fresh.Stale;
+                local.NarratedAt = fresh.NarratedAt;
+                local.DurationSec = fresh.DurationSec;
+                local.TextHash   = fresh.TextHash;
+            }
+        }
+        return ok;
+    }
+
+    private async Task StartBroadcastAsync()
+    {
+        if (strand == null || broadcasting || beats.Count == 0) return;
+
+        // Don't let the selection player and the broadcast fight over audio.
+        if (isPlayingSequence)
+        {
+            try { await JS.InvokeVoidAsync("streetsamurai.stopSequence"); } catch { }
+            isPlayingSequence = false;
+        }
+
+        broadcasting = true;
+        broadcastCts = new CancellationTokenSource();
+        var ct = broadcastCts.Token;
+        selfRef ??= DotNetObjectReference.Create(this);
+        lock (broadcastRenders) broadcastRenders.Clear();
+        StateHasChanged();
+
+        try
+        {
+            for (int i = 0; i < beats.Count; i++)
+            {
+                ct.ThrowIfCancellationRequested();
+                if (i >= beats.Count) break; // list may have shrunk mid-air
+
+                var current = beats[i].Beat;
+                broadcastBeatId = current.Id;
+                await InvokeAsync(StateHasChanged);
+                try { await JS.InvokeVoidAsync("streetsamurai.scrollBeatIntoView", current.Id.ToString()); } catch { }
+
+                // Voice THIS beat for its current text (re-renders if it was
+                // edited while we waited). Usually already warm from look-ahead.
+                var ok = await EnsureBeatRenderedAsync(current.Id, ct);
+
+                // Warm the look-ahead window in the background so rendering
+                // overlaps with playback rather than stalling at each seam.
+                for (int j = i + 1; j <= i + BroadcastBufferAhead && j < beats.Count; j++)
+                    _ = EnsureBeatRenderedAsync(beats[j].Beat.Id, ct);
+
+                if (!ok)
+                {
+                    Toast.Warning("BROADCAST-SKIP", $"Beat #{i + 1} couldn't be voiced — skipping it.");
+                    continue;
+                }
+
+                // Play the beat and await its end. stopClip resolves the promise
+                // on cancel so this await unwinds and the loop sees the token.
+                try { await JS.InvokeVoidAsync("streetsamurai.playClip", BeatAudioUrl(current)); }
+                catch { /* clip error — keep the broadcast moving */ }
+
+                ct.ThrowIfCancellationRequested();
+
+                if (i < beats.Count - 1)
+                {
+                    var gap = current.GapAfterMs ?? ComputeAutoGapMs(current, beats[i + 1].Beat);
+                    if (gap > 0) await Task.Delay(gap, ct);
+                }
+            }
+            if (!ct.IsCancellationRequested)
+                Toast.Success("BROADCAST", "Broadcast reached the end of the strand.");
+        }
+        catch (OperationCanceledException) { /* user hit Stop */ }
+        catch (Exception ex) { Toast.Error("BROADCAST-FAIL", ex.Message); }
+        finally
+        {
+            broadcasting = false;
+            broadcastBeatId = null;
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private async Task StopBroadcastAsync()
+    {
+        try { broadcastCts?.Cancel(); } catch { }
+        try { await JS.InvokeVoidAsync("streetsamurai.stopClip"); } catch { }
+    }
+
+    private string BeatAudioUrl(BeatEntity b)
+    {
+        // Cache-bust on NarratedAt so a re-recorded beat isn't served stale.
+        var bust = (b.NarratedAt ?? b.UpdatedAt).Ticks;
+        return $"/api/strands/{strand!.Id}/beat/{b.Id}/audio?v={bust}";
+    }
+
     // ── Gap-after-beat editor ─────────────────────────────────────────────
     // Each beat owns the silence that follows it (Beat.GapAfterMs). Null =
     // use the computed default; a value (incl. 0) is an explicit override.
@@ -1731,10 +1905,10 @@ else
         {
             var path = await Workbench.ExportCombinedAsync(strand.Id);
             await ReloadBeatsAsync();
-            if (path == null) Toast.Info("COMBINE", "Nothing to combine yet — record some beats first.");
-            else Toast.Success("COMBINE", "Combined audio written.");
+            if (path == null) Toast.Info("PUBLISH", "Nothing to publish yet — record every beat first.");
+            else Toast.Success("PUBLISH", "Published — single sound file written. Use Download to save it.");
         }
-        catch (Exception ex) { Toast.Error("COMBINE-FAIL", ex.Message); }
+        catch (Exception ex) { Toast.Error("PUBLISH-FAIL", ex.Message); }
         finally { working = false; await InvokeAsync(StateHasChanged); }
     }
 
@@ -1884,6 +2058,10 @@ else
     public void Dispose()
     {
         poll?.Dispose();
+        // Stop any live broadcast so its render/play loop doesn't keep running
+        // after the user navigates away.
+        try { broadcastCts?.Cancel(); } catch { }
+        broadcastCts?.Dispose();
         // Best-effort JS teardown — page is unloading, so a fire-and-forget
         // is fine. Don't await; the framework expects Dispose to be sync.
         if (!string.IsNullOrEmpty(escapeToken))
@@ -1891,6 +2069,7 @@ else
             try { _ = JS.InvokeVoidAsync("streetsamurai.uninstallPageEscape", escapeToken); }
             catch { /* circuit may already be torn down */ }
         }
+        try { _ = JS.InvokeVoidAsync("streetsamurai.stopClip"); } catch { /* circuit may be gone */ }
         selfRef?.Dispose();
     }
 }

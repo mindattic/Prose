@@ -61,6 +61,17 @@ public static class BeatPromptBuilder
             beat.EmotionalTone, beat.PaceHint,
             baselineStability, baselineSimilarityBoost, baselineStyle);
 
+        // v2 vs v3 drive per-beat emotion through OPPOSITE channels, and mixing
+        // them makes v3 sound disjointed. v2 has continuous stability, so the
+        // per-beat ±delta above gives it expressive range. v3 only accepts three
+        // discrete stability presets (Creative/Natural/Robust) — so those same
+        // deltas round neighbouring beats onto DIFFERENT presets and the narrator
+        // audibly switches modes between beats. On v3 the emotion is carried by
+        // the inline audio tags instead, so we hold stability flat at the strand
+        // baseline: one preset for the whole strand → liquid, continuous delivery.
+        if (ModelSupportsAudioTags(modelId))
+            stability = baselineStability;
+
         return new BeatPrompt(finalText, stability, similarity, style);
     }
 

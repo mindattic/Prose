@@ -112,32 +112,49 @@ public class BeatPromptBuilderTests
         Assert.That(p.Text, Is.EqualTo("Hey."));
     }
 
+    // Per-beat stability biasing is a v2-only channel (v2 has continuous
+    // stability). On v3 it's suppressed in favour of inline audio tags — see
+    // Build_V3_PinsStabilityToBaseline_RegardlessOfTone below.
     [Test]
-    public void Build_QuietTone_RaisesStability()
+    public void Build_QuietTone_RaisesStability_OnV2()
     {
-        var p = BeatPromptBuilder.Build(B(tone: "quiet"), "eleven_v3", true,
+        var p = BeatPromptBuilder.Build(B(tone: "quiet"), "eleven_multilingual_v2", true,
             BaseStability, BaseSimilarity, BaseStyle);
         Assert.That(p.Stability, Is.GreaterThan(BaseStability));
     }
 
     [Test]
-    public void Build_ViolentTone_LowersStability_RaisesStyle()
+    public void Build_ViolentTone_LowersStability_RaisesStyle_OnV2()
     {
-        var p = BeatPromptBuilder.Build(B(tone: "violent"), "eleven_v3", true,
+        var p = BeatPromptBuilder.Build(B(tone: "violent"), "eleven_multilingual_v2", true,
             BaseStability, BaseSimilarity, BaseStyle);
         Assert.That(p.Stability, Is.LessThan(BaseStability));
         Assert.That(p.Style,     Is.GreaterThan(BaseStyle));
     }
 
-    [Test]
-    public void Build_ClampsAt0And1()
+    // v3 holds stability flat at the strand baseline so the narrator stays on a
+    // single stability preset across beats (liquid, not mode-switching). Emotion
+    // is carried by the injected audio tag instead.
+    [TestCase("quiet")]
+    [TestCase("violent")]
+    [TestCase("tense")]
+    [TestCase("tender")]
+    public void Build_V3_PinsStabilityToBaseline_RegardlessOfTone(string tone)
     {
-        // Extreme baselines: bias should not push below 0 or above 1.
-        var pHi = BeatPromptBuilder.Build(B(tone: "tense"), "eleven_v3", true,
+        var p = BeatPromptBuilder.Build(B(tone: tone), "eleven_v3", true,
+            BaseStability, BaseSimilarity, BaseStyle);
+        Assert.That(p.Stability, Is.EqualTo(BaseStability));
+    }
+
+    [Test]
+    public void Build_ClampsAt0And1_OnV2()
+    {
+        // Extreme baselines: the v2 per-beat bias should not push below 0 or above 1.
+        var pHi = BeatPromptBuilder.Build(B(tone: "tense"), "eleven_multilingual_v2", true,
             baselineStability: 0.95, baselineSimilarityBoost: 0.75, baselineStyle: 0.0);
         Assert.That(pHi.Stability, Is.LessThanOrEqualTo(1.0));
 
-        var pLo = BeatPromptBuilder.Build(B(tone: "violent"), "eleven_v3", true,
+        var pLo = BeatPromptBuilder.Build(B(tone: "violent"), "eleven_multilingual_v2", true,
             baselineStability: 0.05, baselineSimilarityBoost: 0.75, baselineStyle: 0.95);
         Assert.That(pLo.Stability, Is.GreaterThanOrEqualTo(0.0));
         Assert.That(pLo.Style,     Is.LessThanOrEqualTo(1.0));
