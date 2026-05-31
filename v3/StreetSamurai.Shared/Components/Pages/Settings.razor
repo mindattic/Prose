@@ -559,6 +559,15 @@
                     </div>
                 </div>
                 <div class="row g-3 mt-2">
+                    <div class="col-md-12">
+                        <label class="form-label text-muted">Publish output folder</label>
+                        <input type="text" class="form-control bg-dark text-light border-secondary"
+                               placeholder="Leave blank to use your Downloads folder"
+                               @bind="SettingsSvc.PublishOutputDirectory" @bind:event="onchange" />
+                        <div class="form-text text-muted">Where Publish drops the combined audio file so it's easy to find. Blank = your Downloads folder. The in-app player keeps its own internal copy.</div>
+                    </div>
+                </div>
+                <div class="row g-3 mt-2">
                     <div class="col-md-3">
                         <label class="form-label text-muted small">Stability: @SettingsSvc.TtsStability.ToString("F2")</label>
                         <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="SettingsSvc.TtsStability" />

@@ -50,6 +50,8 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<Beat>               Beats               => Set<Beat>();
     public DbSet<Strand>             Strands             => Set<Strand>();
     public DbSet<StrandBeat>         StrandBeats         => Set<StrandBeat>();
+    public DbSet<StrandPublication>  StrandPublications  => Set<StrandPublication>();
+    public DbSet<StrandAudioEvent>   StrandAudioEvents   => Set<StrandAudioEvent>();
     // Gaps table folded into Beat.GapAfterMs / Beat.GapAfterAudioPath
     // (migration fold_gaps_into_beats_20260523.sql). The standalone DbSet
     // is gone; gap-after-beat is now a property of the upper beat.
@@ -325,6 +327,27 @@ public class StreetSamuraiDbContext : DbContext
                 .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => new { x.StrandId, x.SortKey });
             e.HasIndex(x => x.BeatId);
+        });
+        b.Entity<StrandPublication>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Status).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Format).HasMaxLength(8).IsRequired();
+            e.Property(x => x.Path).HasMaxLength(600);
+            e.HasIndex(x => new { x.StrandId, x.StartedAt });
+            e.HasOne(x => x.Strand).WithMany(x => x.Publications)
+                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<StrandAudioEvent>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Kind).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Detail).HasMaxLength(1000);
+            e.HasIndex(x => new { x.StrandId, x.At });
+            e.HasIndex(x => x.PublicationId);
+            // Strand-scoped ledger; no hard FK to Strand so recording an event
+            // never fails on a transient strand-row state, and publication
+            // linkage is a soft id (events outlive a deleted publication row).
         });
 
         // ── Entity (universal) ───────────────────────────────────────────────

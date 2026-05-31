@@ -141,6 +141,27 @@ public class SettingsService : IDisposable
     public double TtsSimilarityBoost { get => data.TtsSimilarityBoost; set { data.TtsSimilarityBoost = value; ScheduleSave(); } }
     public double TtsStyle { get => data.TtsStyle; set { data.TtsStyle = value; ScheduleSave(); } }
 
+    /// <summary>Where Publish drops the combined audio file so it's easy to
+    /// find. Empty = the user's Downloads folder (the default). The in-app
+    /// player still serves an internal copy; this is the user-facing export.</summary>
+    public string PublishOutputDirectory
+    {
+        get => data.PublishOutputDirectory;
+        set { data.PublishOutputDirectory = value ?? ""; ScheduleSave(); }
+    }
+
+    /// <summary>Resolve the effective publish output directory: the configured
+    /// path, or the user's Downloads folder when unset. Always returns an
+    /// absolute, existing directory (creates it if needed).</summary>
+    public string ResolvePublishOutputDirectory()
+    {
+        var dir = data.PublishOutputDirectory;
+        if (string.IsNullOrWhiteSpace(dir))
+            dir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
+        try { Directory.CreateDirectory(dir); } catch { /* fall through; caller handles write failure */ }
+        return dir;
+    }
+
     // ── Inter-beat silence pacing (combined-audio export) ──────────────────
     // When the per-beat audio files are concatenated into the combined strand
     // audio, the StrandWorkbenchService.ExportCombinedAsync injects a brief
@@ -509,6 +530,8 @@ public class SettingsService : IDisposable
         public double TtsSimilarityBoost { get; set; } = 0.75;
         public double TtsStyle { get; set; } = 0.0;
         public bool TtsUseAudioTags { get; set; } = true;
+        /// <summary>Empty = the user's Downloads folder.</summary>
+        public string PublishOutputDirectory { get; set; } = "";
         public int TtsPauseSectionMs { get; set; } = 1800;
         public int TtsPauseSceneMs { get; set; } = 1000;
         public int TtsPauseParagraphMs { get; set; } = 400;

@@ -391,6 +391,19 @@ if (args.Contains("--narrate-strand"))
     return;
 }
 
+// CLI mode: stitch an existing strand's beats into one combined file (WAV →
+// MP3), copy it to the publish output dir (Downloads by default), and record
+// the publication run + process-event ledger. Headless Publish button.
+//   ss --publish-strand (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--publish-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await PublishStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: import a hand-authored .strand file (beat + gap + beat …) into a
 // fresh strand. The complement to --write-strand (LLM-generated): this is for
 // drafts written elsewhere (chat exports, transcripts, paper notes typed up).

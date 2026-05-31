@@ -145,6 +145,33 @@
         50%      { box-shadow: 0 0 0 1px rgba(13,202,240,0.75), 0 0 30px rgba(13,202,240,0.35); }
     }
 
+    /* Publish ring-loader overlay: full-viewport scrim with a clockwise-filling
+       cyan ring and the percentage in the middle (capped at 99% while working). */
+    .publish-overlay {
+        position: fixed; inset: 0; z-index: 1080;
+        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;
+        background: rgba(0,0,0,0.72); backdrop-filter: blur(3px);
+    }
+    .publish-ring-wrap { position: relative; width: 180px; height: 180px; }
+    /* rotate -90deg so the bar starts at 12 o'clock and fills clockwise */
+    .publish-ring { width: 180px; height: 180px; transform: rotate(-90deg); }
+    .publish-ring-track { fill: none; stroke: rgba(255,255,255,0.12); stroke-width: 8; }
+    .publish-ring-bar {
+        fill: none; stroke: #0dcaf0; stroke-width: 8; stroke-linecap: round;
+        transition: stroke-dashoffset 0.2s linear;
+        filter: drop-shadow(0 0 6px rgba(13,202,240,0.5));
+    }
+    .publish-ring-center {
+        position: absolute; inset: 0;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        color: #fff;
+    }
+    .publish-pct { font-size: 2.4rem; font-weight: 700; line-height: 1; }
+    .publish-pct span { font-size: 1.1rem; opacity: 0.7; margin-left: 2px; }
+    .publish-stage { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; opacity: 0.7; margin-top: 0.3rem; }
+    .publish-detail { color: #cdd6dd; font-size: 0.9rem; text-align: center; }
+    .publish-detail .publish-count { color: #6ee7b7; margin-left: 0.5rem; font-variant-numeric: tabular-nums; }
+
     /* Read / edit must share the exact same box: same font, line-height,
        padding, border, background. Clicking into edit only swaps the
        displayed content (formatted prose ↔ raw text with tags); the
@@ -297,7 +324,7 @@ else
                     </button>
                 }
                 <div class="vr"></div>
-                <button class="btn btn-sm btn-success" @onclick="ExportCombinedAsync" disabled="@working"
+                <button class="btn btn-sm btn-success" @onclick="ExportCombinedAsync" disabled="@(working || publishing)"
                         title="Publish whatever's recorded so far into one sound file">
                     <i class="bi bi-collection-play me-1"></i>Publish
                 </button>
@@ -337,6 +364,28 @@ else
                 </div>
             </div>
         </div>
+
+        @if (publishing)
+        {
+            <div class="publish-overlay" data-cy="publish-overlay">
+                <div class="publish-ring-wrap">
+                    <svg class="publish-ring" viewBox="0 0 120 120" aria-hidden="true">
+                        <circle class="publish-ring-track" cx="60" cy="60" r="54"></circle>
+                        <circle class="publish-ring-bar" cx="60" cy="60" r="54"
+                                style="stroke-dasharray:@PublishRingDash;stroke-dashoffset:@PublishRingOff;"></circle>
+                    </svg>
+                    <div class="publish-ring-center">
+                        <div class="publish-pct">@PublishPercent<span>%</span></div>
+                        <div class="publish-stage">Publishing</div>
+                    </div>
+                </div>
+                <div class="publish-detail">
+                    @if (!string.IsNullOrEmpty(publishLabel)) { <span>@publishLabel</span> }
+                    else { <span>Stitching audio…</span> }
+                    @if (publishTotal > 0) { <span class="publish-count">@publishCurrent / @publishTotal</span> }
+                </div>
+            </div>
+        }
 
         @if (!string.IsNullOrEmpty(strand.CombinedAudioPath) && StaleCount == 0)
         {
@@ -1012,6 +1061,24 @@ else
     /// on purpose: rendering outpaces playback ~10:1, so a small buffer keeps
     /// distant beats un-rendered (and thus editable) until just before air.</summary>
     private const int BroadcastBufferAhead = 3;
+
+    // ── Publish (combined export) progress ───────────────────────────────
+    /// <summary>True while a Publish/combine is running — drives the ring-loader
+    /// overlay. The export runs on the circuit's sync context and the handler
+    /// polls <see cref="StrandWorkbenchService.GetExportProgress"/> between its
+    /// await points to update the ring.</summary>
+    private bool publishing;
+    private int publishCurrent;
+    private int publishTotal;
+    private string? publishLabel;
+    private const double PublishRingRadius = 54;
+    private double PublishRingCircumference => 2 * Math.PI * PublishRingRadius;
+    /// <summary>Capped at 99% on purpose — the ring never shows a full 100%
+    /// while work is outstanding; the overlay closes when the export completes.</summary>
+    private int PublishPercent => publishTotal > 0 ? Math.Min(99, (int)(100.0 * publishCurrent / publishTotal)) : 0;
+    private double PublishRingOffset => PublishRingCircumference * (1 - PublishPercent / 100.0);
+    private string PublishRingDash => PublishRingCircumference.ToString("F2", System.Globalization.CultureInfo.InvariantCulture);
+    private string PublishRingOff  => PublishRingOffset.ToString("F2", System.Globalization.CultureInfo.InvariantCulture);
 
     // ── LLM bottom-sheet state ───────────────────────────────────────────
     /// <summary>When non-null, the bottom sheet is open with this beat as
@@ -1898,18 +1965,38 @@ else
 
     private async Task ExportCombinedAsync()
     {
-        if (strand == null || working) return;
-        working = true;
-        StateHasChanged();
+        if (strand == null || working || publishing) return;
+        publishing = true;
+        publishCurrent = 0;
+        publishTotal = beats.Count(b => !string.IsNullOrEmpty(b.Beat.AudioPath));
+        publishLabel = null;
+        await InvokeAsync(StateHasChanged);
         try
         {
-            var path = await Workbench.ExportCombinedAsync(strand.Id);
+            // Kick the combine off and poll its in-memory progress to drive the
+            // ring loader. Both run on the circuit's sync context and interleave
+            // at the export's await points, so no background thread is needed —
+            // the export yields on each file read/write and the loop renders.
+            var task = Workbench.ExportCombinedAsync(strand.Id);
+            while (!task.IsCompleted)
+            {
+                var p = Workbench.GetExportProgress(strand.Id);
+                if (p != null)
+                {
+                    publishCurrent = p.Current;
+                    if (p.Total > 0) publishTotal = p.Total;
+                    publishLabel = p.Label;
+                }
+                await InvokeAsync(StateHasChanged);
+                await Task.Delay(120);
+            }
+            var path = await task; // observe the result and surface any exception
             await ReloadBeatsAsync();
             if (path == null) Toast.Info("PUBLISH", "Nothing to publish yet — record every beat first.");
             else Toast.Success("PUBLISH", "Published — single sound file written. Use Download to save it.");
         }
         catch (Exception ex) { Toast.Error("PUBLISH-FAIL", ex.Message); }
-        finally { working = false; await InvokeAsync(StateHasChanged); }
+        finally { publishing = false; await InvokeAsync(StateHasChanged); }
     }
 
     private async Task StopAsync()
