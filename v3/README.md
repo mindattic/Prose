@@ -842,6 +842,99 @@ Audio exports use `ElevenLabsTtsService` directly:
 
 ---
 
+## Reader Reviews & Focus-Group Studies
+
+A synthetic market-research system: many LLM "readers" (drawn from MindAttic.Legion's
+1000-persona library) read a strand and score it like a book-review site, so you can
+measure reception and decide edits from data instead of vibes. Built around real
+research methodology — freeze-then-study, market segmentation, independent-panel
+replication, and social-choice/multi-objective aggregation.
+
+### Two instruments (use both)
+
+| Instrument | What it answers | How |
+|---|---|---|
+| **Tracking panels** (Group A/B/C) | "Did this edit actually move the score, or is it noise?" | Fixed, disjoint persona rosters re-run on each version. Pool them for a low-bias mean **with a confidence interval**. |
+| **Segment study** | "*Which* audiences want *what*, beat by beat?" | One fresh independent panel micro-scores every beat; reviewers are **clustered** post-hoc into emergent audiences; per-beat scores are aggregated into Pareto/contested/seam recommendations. |
+
+### Core methodology
+
+- **Freeze-then-study.** Never edit the strand between rounds of feedback. Every review is
+  pinned to a `ContentHash` (SHA-256 of the ordered beat text) = the exact version read, so
+  panels run on the same frozen artifact and **cannot conflict**.
+- **Independent panels + replication.** Three *disjoint* 128-persona panels (no shared
+  personas) are three independent samples. If they agree, the score is signal; if they
+  diverge, that divergence is the finding. Pooling gives the data-mass mean ± a 95% CI.
+- **Emergent segmentation.** Segments are *discovered* by clustering reviewers on their
+  per-beat score patterns (k-means + silhouette), not imposed by hand.
+- **Social choice / multi-objective.** Per beat, compare cluster means:
+  **Pareto-improving** (every cluster scores it low → fix, no tradeoff) vs **contested**
+  (clusters split → an explicit please-X / alienate-Y fork; constrained-utilitarian
+  default). Arrow's theorem ⇒ no perfect aggregator, so tradeoffs are always surfaced.
+- **Narrative tissue guard.** Reviewers read the whole strand first (so beats are judged
+  *in context*), give a separate **FlowScore** (cohesion/momentum), and the aggregator runs
+  **seam analysis** — a low beat flanked by strong neighbors is a broken *transition*, not a
+  bad paragraph. Stops per-beat optimization from producing "great paragraphs, no tissue."
+
+### Components
+
+| Piece | Role |
+|---|---|
+| `StrandMarkdownExporter` | Strand → readable markdown (`numberBeats` mode prefixes `[Beat N]` for micro-scoring); returns a `ContentHash`. |
+| `StrandReviewService` | `ReviewStrandAsync` (panel review), `RunSegmentStudyAsync` (study), `GenerateSummaryAsync` (Amazon-style synthesis), `CreateDisjointGroupAsync` (new panel). Fans out via `LegionClient.CallAsync`, round-robined across the trusted-4, concurrency-capped. |
+| `ReviewClusterer` | Pure k-means + silhouette (k∈2..4, z-scored per beat, deterministic seed) → emergent clusters. |
+| `SegmentAggregator` | Per-beat × per-cluster means → Pareto / contested / seam classification + ranked report. |
+
+### Data model
+
+| Table | Holds |
+|---|---|
+| `StrandReviews` | One row per persona review: `Score` (1-100), `FlowScore`, `ReviewText`, `Improvements`, `ContentHash`, `BeatCount`, `ProviderId`/`Model`, `PersonaId`/`Name`, `FocusGroupId`/`Name`, `ClusterId`/`Label`. |
+| `StrandReviewBeatScores` | `(ReviewId, BeatNumber) → Score` 1-5 — the reviewer × beat matrix (study mode). |
+| `StrandReviewSummaries` | One latest Amazon-style aggregate per strand (avg, distribution, synthesized markdown, `ContentHash`). |
+| `FocusGroups` / `FocusGroupMembers` | Named, reusable panels + their fixed persona rosters. |
+
+Tables are created by idempotent raw-SQL migrations (`create_strand_reviews_*.sql`,
+`create_focus_groups_*.sql`, `create_strand_beat_scores_*.sql`) registered in
+`ApplyMigrations`. `Strands`/`Beats` are **not** system-versioned, which is why each review
+fingerprints its version via `ContentHash`.
+
+### CLI
+
+```bash
+# Fresh panel review (random personas), saves reviews + an aggregate summary
+ss --review-strand --slug <slug> --readers 128
+
+# Named tracking panel — creates it on first use, reuses the same roster after
+ss --review-strand --slug <slug> --group "Group A"
+
+# Re-poll the exact personas from the strand's last batch (before/after)
+ss --review-strand --slug <slug> --same-personas
+
+# Create a fixed panel of N personas DISJOINT from every existing panel (no LLM calls)
+ss --make-group --name "Group B" --size 128
+
+# Segment study: per-beat micro-scores → emergent clusters → Pareto/contested/seam report
+ss --review-strand --slug <slug> --study --panel 128
+```
+
+The **Show reviews** modal on `/strands` (and the full GUID shown on the strands list +
+strand editor) surfaces the stored summary + individual reviews; review generation is CLI.
+
+### Worked example — "How the crow drives"
+
+Three disjoint panels (A/B/C, 128 each, 384 distinct personas) on one frozen version pooled
+to **73.2 / 100, 95% CI ±1.1**, with a 1.8-pt between-panel spread (tight agreement → real
+signal). The decisive lesson: with a single panel, scores of 73.4 / 74.5 / 73.7 looked like
+movement; the pooled three-panel CI showed they were **all inside the noise band** — so a
+run of edits had been chasing variance. Note too that **provider temperament dominates score
+variance** (Gemini ~79 / Claude ~78 vs OpenAI ~69 / DeepSeek ~67 — a ~12-pt gap, far larger
+than the ~2-pt panel gap); the round-robin balances it, but the absolute number is partly a
+function of the provider mix. Treat ~73 with tight cross-panel agreement as the reliable
+reading; only an edit that lifts the pooled mean past ±1.1 is a real improvement.
+
+---
+
 ## UI Pages
 
 ### / -- Home

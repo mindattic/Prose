@@ -7,6 +7,7 @@
 @inject IDbContextFactory<StreetSamuraiDbContext> DbFactory
 @inject NavigationManager Nav
 @inject ToastNotifier Toast
+@inject IJSRuntime JS
 
 @*
    Strand index. Lists every strand grouped by kind. Click to open in the
@@ -69,29 +70,38 @@
                     {
                         var beatCount = beatCounts.GetValueOrDefault(s.Id, 0);
                         var childCount = childCounts.GetValueOrDefault(s.Id, 0);
-                        <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center border-secondary">
-                            <a href="@($"/strand/{s.Slug}")" class="text-info text-decoration-none flex-grow-1">
-                                <strong>@s.Title</strong>
-                                @if (!string.IsNullOrEmpty(s.Synopsis))
-                                {
-                                    <span class="text-muted small ms-2">— @(s.Synopsis.Length > 80 ? s.Synopsis[..80] + "…" : s.Synopsis)</span>
-                                }
-                            </a>
-                            <div class="d-flex align-items-center gap-2 small">
-                                @if (childCount > 0)
-                                {
-                                    <span class="text-muted" title="Direct child strands (chapters, scenes, etc.)">
-                                        <i class="bi bi-diagram-3 me-1"></i>@childCount
-                                    </span>
-                                }
-                                @if (beatCount > 0)
-                                {
-                                    <span class="text-muted" title="Direct beats in this strand">
-                                        <i class="bi bi-three-dots me-1"></i>@beatCount
-                                    </span>
-                                }
-                                <span class="badge bg-@StatusColor(s.Status) text-uppercase">@StatusLabel(s.Status)</span>
+                        <li class="list-group-item bg-dark text-light border-secondary">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="@($"/strand/{s.Slug}")" class="text-info text-decoration-none flex-grow-1">
+                                    <strong>@s.Title</strong>
+                                    @if (!string.IsNullOrEmpty(s.Synopsis))
+                                    {
+                                        <span class="text-muted small ms-2">— @(s.Synopsis.Length > 80 ? s.Synopsis[..80] + "…" : s.Synopsis)</span>
+                                    }
+                                </a>
+                                <div class="d-flex align-items-center gap-2 small">
+                                    @if (childCount > 0)
+                                    {
+                                        <span class="text-muted" title="Direct child strands (chapters, scenes, etc.)">
+                                            <i class="bi bi-diagram-3 me-1"></i>@childCount
+                                        </span>
+                                    }
+                                    @if (beatCount > 0)
+                                    {
+                                        <span class="text-muted" title="Direct beats in this strand">
+                                            <i class="bi bi-three-dots me-1"></i>@beatCount
+                                        </span>
+                                    }
+                                    <span class="badge bg-@StatusColor(s.Status) text-uppercase">@StatusLabel(s.Status)</span>
+                                    <button class="btn btn-sm btn-outline-warning" title="Show reader reviews"
+                                            @onclick="() => OpenReviewsAsync(s)">
+                                        <i class="bi bi-star-half me-1"></i>Reviews
+                                    </button>
+                                </div>
                             </div>
+                            @* Full GUID — a stable handle to refer to this strand (CLI, conversation). Click to copy. *@
+                            <code class="text-muted strand-guid" title="Click to copy full id"
+                                  @onclick="() => CopyGuidAsync(s.Id)">@s.Id</code>
                         </li>
                     }
                 </ul>
@@ -99,6 +109,117 @@
         }
     }
 </div>
+
+@* ── Reader-reviews bottom sheet ─────────────────────────────────────── *@
+@if (reviewsOpen)
+{
+    <div class="review-sheet-backdrop" @onclick="CloseReviews"></div>
+    <div class="review-sheet" @onclick:stopPropagation>
+        <div class="review-sheet-header d-flex justify-content-between align-items-start gap-2">
+            <div>
+                <strong class="text-light"><i class="bi bi-star-half me-1 text-warning"></i>Reader reviews — @reviewsTitle</strong>
+                <div><code class="strand-guid">@reviewsStrandId</code></div>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="CloseReviews"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="review-sheet-body">
+            @if (reviewsLoading)
+            {
+                <div class="text-muted"><span class="spinner-border spinner-border-sm me-2"></span>Loading reviews…</div>
+            }
+            else if (reviewList.Count == 0)
+            {
+                <div class="text-muted">
+                    No reviews yet for this strand. Run
+                    <code>ss --review-strand --slug @reviewsSlug --readers 128</code> to generate them.
+                </div>
+            }
+            else
+            {
+                @if (reviewSummary != null)
+                {
+                    <div class="review-summary mb-3">
+                        <div class="d-flex align-items-center gap-3 flex-wrap mb-2">
+                            <span class="review-avg">@reviewSummary.AvgScore.ToString("0.0")<span class="review-avg-max">/100</span></span>
+                            <span class="text-muted small">@reviewSummary.ReviewCount reviews · generated @reviewSummary.GeneratedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</span>
+                            @if (reviewStaleNote)
+                            {
+                                <span class="badge bg-danger" title="The strand's beat count changed since these reviews were written.">story edited since</span>
+                            }
+                        </div>
+                        @foreach (var b in scoreBuckets)
+                        {
+                            <div class="d-flex align-items-center gap-2 review-bar-row">
+                                <span class="review-bar-label">@b.Key</span>
+                                <div class="review-bar-track"><div class="review-bar-fill" style="width:@(BarPct(b.Value))%"></div></div>
+                                <span class="review-bar-count">@b.Value</span>
+                            </div>
+                        }
+                        <div class="review-summary-md mt-2">@reviewSummary.SummaryMarkdown</div>
+                    </div>
+                    <hr class="border-secondary" />
+                }
+                <div class="review-list">
+                    @foreach (var r in reviewList)
+                    {
+                        <div class="review-card">
+                            <div class="d-flex justify-content-between align-items-center gap-2 mb-1">
+                                <div>
+                                    <strong class="text-light">@r.PersonaName</strong>
+                                    <span class="badge bg-secondary ms-1" title="@r.Model">@r.ProviderId</span>
+                                </div>
+                                <span class="badge @ScoreBadge(r.Score)">@r.Score/100</span>
+                            </div>
+                            @if (!string.IsNullOrWhiteSpace(r.PersonaBlurb))
+                            {
+                                <div class="text-muted review-blurb">@r.PersonaBlurb</div>
+                            }
+                            <div class="review-text">@r.ReviewText</div>
+                            @if (!string.IsNullOrWhiteSpace(r.Improvements))
+                            {
+                                <ul class="review-fixes">
+                                    @foreach (var fix in r.Improvements.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+                                    {
+                                        <li>@fix</li>
+                                    }
+                                </ul>
+                            }
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+}
+
+<style>
+    .strand-guid { font-size: 0.68rem; color: #6c757d; cursor: pointer; }
+    .strand-guid:hover { color: #0dcaf0; }
+    .review-sheet-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 1080; }
+    .review-sheet {
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 1090;
+        background: #0f0f0f; border-top: 1px solid #2a2a2a;
+        box-shadow: 0 -8px 24px rgba(0,0,0,0.5);
+        max-height: 82vh; overflow-y: auto;
+        animation: review-sheet-rise 0.18s ease-out;
+    }
+    @@keyframes review-sheet-rise { from { transform: translateY(100%); } to { transform: translateY(0); } }
+    .review-sheet-header { padding: 0.75rem 1rem; border-bottom: 1px solid #2a2a2a; position: sticky; top: 0; background: #0f0f0f; z-index: 1; }
+    .review-sheet-body { padding: 0.85rem 1rem 1.5rem; max-width: 920px; margin: 0 auto; }
+    .review-avg { font-size: 2rem; font-weight: 700; color: #ffc107; line-height: 1; }
+    .review-avg-max { font-size: 0.9rem; color: #6c757d; font-weight: 400; }
+    .review-bar-row { font-size: 0.75rem; }
+    .review-bar-label { width: 52px; color: #adb5bd; text-align: right; }
+    .review-bar-track { flex-grow: 1; height: 8px; background: #1c1c1c; border-radius: 4px; overflow: hidden; }
+    .review-bar-fill { height: 100%; background: #ffc107; }
+    .review-bar-count { width: 28px; color: #adb5bd; }
+    .review-summary-md { color: #e6edf3; font-size: 0.9rem; white-space: pre-wrap; background: rgba(255,193,7,0.05); border: 1px solid rgba(255,193,7,0.25); border-radius: 6px; padding: 0.6rem 0.8rem; }
+    .review-card { border: 1px solid #2a2a2a; border-radius: 6px; padding: 0.6rem 0.8rem; margin-bottom: 0.6rem; background: #161616; }
+    .review-blurb { font-size: 0.72rem; font-style: italic; margin-bottom: 0.35rem; }
+    .review-text { color: #ced4da; font-size: 0.88rem; white-space: pre-wrap; }
+    .review-fixes { margin: 0.4rem 0 0; padding-left: 1.1rem; color: #9fb6c2; font-size: 0.82rem; }
+    .review-fixes li { margin-bottom: 0.15rem; }
+</style>
 
 @code {
     private bool loading = true;
@@ -216,4 +337,87 @@
 
     private static string StatusColor(string status) => StreetSamurai.Core.Services.StrandWorkbenchService.StatusColor(status);
     private static string StatusLabel(string status) => StreetSamurai.Core.Services.StrandWorkbenchService.StatusLabel(status);
+
+    // ── Reviews modal ────────────────────────────────────────────────────
+    private bool reviewsOpen;
+    private bool reviewsLoading;
+    private Guid reviewsStrandId;
+    private string reviewsTitle = "";
+    private string reviewsSlug = "";
+    private bool reviewStaleNote;
+    private List<StreetSamurai.Core.Data.Entities.StrandReview> reviewList = new();
+    private StreetSamurai.Core.Data.Entities.StrandReviewSummary? reviewSummary;
+    private List<KeyValuePair<string, int>> scoreBuckets = new();
+
+    private async Task OpenReviewsAsync(StrandEntity s)
+    {
+        reviewsOpen = true;
+        reviewsLoading = true;
+        reviewsStrandId = s.Id;
+        reviewsTitle = s.Title;
+        reviewsSlug = s.Slug;
+        reviewList = new();
+        reviewSummary = null;
+        scoreBuckets = new();
+        reviewStaleNote = false;
+        StateHasChanged();
+
+        await using var db = await DbFactory.CreateDbContextAsync();
+        // Newest run = reviews carrying the most-recent content fingerprint.
+        var latestHash = await db.StrandReviews
+            .Where(r => r.StrandId == s.Id)
+            .OrderByDescending(r => r.ReviewedAt)
+            .Select(r => r.ContentHash)
+            .FirstOrDefaultAsync();
+        if (!string.IsNullOrEmpty(latestHash))
+        {
+            reviewList = await db.StrandReviews
+                .Where(r => r.StrandId == s.Id && r.ContentHash == latestHash)
+                .OrderByDescending(r => r.Score)
+                .AsNoTracking()
+                .ToListAsync();
+        }
+        reviewSummary = await db.StrandReviewSummaries
+            .Where(r => r.StrandId == s.Id)
+            .AsNoTracking()
+            .FirstOrDefaultAsync();
+
+        if (reviewSummary?.ScoreDistributionJson is { Length: > 0 } dj)
+        {
+            try
+            {
+                var d = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, int>>(dj);
+                if (d != null)
+                {
+                    var order = new[] { "81-100", "61-80", "41-60", "21-40", "1-20" };
+                    scoreBuckets = order.Where(d.ContainsKey).Select(k => new KeyValuePair<string, int>(k, d[k])).ToList();
+                }
+            }
+            catch { }
+        }
+
+        // Cheap staleness cue: the reviewed beat count vs the strand's current count.
+        if (reviewList.Count > 0 && beatCounts.TryGetValue(s.Id, out var currentBeats))
+            reviewStaleNote = reviewList[0].BeatCount != currentBeats;
+
+        reviewsLoading = false;
+        StateHasChanged();
+    }
+
+    private void CloseReviews() => reviewsOpen = false;
+
+    private async Task CopyGuidAsync(Guid id)
+    {
+        try { await JS.InvokeVoidAsync("navigator.clipboard.writeText", id.ToString()); Toast.Info("COPIED", $"{id}"); }
+        catch { /* clipboard blocked — non-fatal */ }
+    }
+
+    private int BarPct(int count)
+    {
+        var max = scoreBuckets.Count > 0 ? scoreBuckets.Max(b => b.Value) : 0;
+        return max <= 0 ? 0 : (int)Math.Round(count * 100.0 / max);
+    }
+
+    private static string ScoreBadge(int score) =>
+        score >= 80 ? "bg-success" : score >= 60 ? "bg-info text-dark" : score >= 40 ? "bg-warning text-dark" : "bg-danger";
 }

@@ -101,8 +101,10 @@ public class ElevenLabsTtsService : ITtsService
         // The eleven_v3 family rejects a couple of things v2 happily accepts.
         // Detect it once and adapt the payload automatically so callers never
         // have to branch on model version — set TtsModel to a v2 or v3 model
-        // and narration just works.
-        var model = settings.TtsModel;
+        // and narration just works. A per-request ModelId override (used by the
+        // strand voice-profile snapshot) wins over the global setting so a
+        // strand renders every beat on the model it was first narrated with.
+        var model = voiceSettings?.ModelId ?? settings.TtsModel;
         var isV3 = IsV3Model(model);
 
         var resolvedStability       = voiceSettings?.Stability       ?? settings.TtsStability;
@@ -138,6 +140,14 @@ public class ElevenLabsTtsService : ITtsService
             ["model_id"] = model,
             ["voice_settings"] = voiceSettingsObj,
         };
+
+        // Deterministic seed (both v2 and v3 honour it). Same seed across a
+        // strand's beats anchors the voice realization so the narrator sounds
+        // like one continuous performance instead of re-rolling per beat. Only
+        // sent when the caller supplies one; range is clamped to ElevenLabs'
+        // accepted [0, 2^31-1] window.
+        if (voiceSettings?.Seed is int seed)
+            payload["seed"] = Math.Clamp(seed, 0, int.MaxValue);
 
         // v3 supports NO cross-request conditioning: it 400s on
         // previous_request_ids ("request stitching not supported") AND on
@@ -269,5 +279,15 @@ public record TtsVoice
 /// <summary>Per-request voice_settings overrides. Any null falls back to the
 /// global <c>SettingsService</c> baseline. Pass to
 /// <see cref="ElevenLabsTtsService.SynthesizeWithIdAsync"/> to tune
-/// stability/style for emotional pacing.</summary>
-public record TtsVoiceSettings(double? Stability, double? SimilarityBoost, double? Style);
+/// stability/style for emotional pacing.
+/// <para><paramref name="Seed"/> — deterministic generation seed (0..2^31-1).
+/// Sending the same seed across a strand's beats anchors the model to one
+/// voice realization so beats stay acoustically consistent and re-records
+/// reproduce. Null = let ElevenLabs pick a random seed (legacy behaviour).</para>
+/// <para><paramref name="ModelId"/> — overrides the model for THIS request
+/// instead of reading <c>Settings.TtsModel</c>. Lets a strand lock the model
+/// it was first narrated with so later global changes don't fork its voice.
+/// Null = use the global setting.</para></summary>
+public record TtsVoiceSettings(
+    double? Stability, double? SimilarityBoost, double? Style,
+    int? Seed = null, string? ModelId = null);

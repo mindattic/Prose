@@ -52,6 +52,14 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<StrandBeat>         StrandBeats         => Set<StrandBeat>();
     public DbSet<StrandPublication>  StrandPublications  => Set<StrandPublication>();
     public DbSet<StrandAudioEvent>   StrandAudioEvents   => Set<StrandAudioEvent>();
+    // Persona reader-reviews + their Amazon-style aggregate summary.
+    public DbSet<StrandReview>          StrandReviews          => Set<StrandReview>();
+    public DbSet<StrandReviewSummary>   StrandReviewSummaries  => Set<StrandReviewSummary>();
+    // Named, reusable persona panels (focus groups) + their membership.
+    public DbSet<FocusGroup>            FocusGroups            => Set<FocusGroup>();
+    public DbSet<FocusGroupMember>      FocusGroupMembers      => Set<FocusGroupMember>();
+    // Per-beat micro-scores (study mode) — the reviewer x beat matrix.
+    public DbSet<StrandReviewBeatScore> StrandReviewBeatScores => Set<StrandReviewBeatScore>();
     // Gaps table folded into Beat.GapAfterMs / Beat.GapAfterAudioPath
     // (migration fold_gaps_into_beats_20260523.sql). The standalone DbSet
     // is gone; gap-after-beat is now a property of the upper beat.
@@ -348,6 +356,49 @@ public class StreetSamuraiDbContext : DbContext
             // Strand-scoped ledger; no hard FK to Strand so recording an event
             // never fails on a transient strand-row state, and publication
             // linkage is a soft id (events outlive a deleted publication row).
+        });
+        b.Entity<StrandReview>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.PersonaId).HasMaxLength(40).IsRequired();
+            e.Property(x => x.PersonaName).HasMaxLength(80).IsRequired();
+            e.Property(x => x.PersonaBlurb).HasMaxLength(400);
+            e.Property(x => x.ProviderId).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Model).HasMaxLength(80);
+            e.Property(x => x.ContentHash).HasMaxLength(64);
+            e.HasIndex(x => new { x.StrandId, x.ReviewedAt });
+            e.HasOne(x => x.Strand).WithMany(x => x.Reviews)
+                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<StrandReviewSummary>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.ContentHash).HasMaxLength(64);
+            e.HasIndex(x => x.StrandId).IsUnique();
+            e.HasOne(x => x.Strand).WithMany()
+                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<FocusGroup>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(100).IsRequired();
+            e.Property(x => x.Description).HasMaxLength(1000);
+            e.HasIndex(x => x.Name).IsUnique();
+        });
+        b.Entity<FocusGroupMember>(e =>
+        {
+            e.HasKey(x => new { x.FocusGroupId, x.PersonaId });
+            e.Property(x => x.PersonaId).HasMaxLength(40).IsRequired();
+            e.Property(x => x.PersonaName).HasMaxLength(80).IsRequired();
+            e.Property(x => x.PersonaBlurb).HasMaxLength(400);
+            e.HasOne(x => x.FocusGroup).WithMany(g => g.Members)
+                .HasForeignKey(x => x.FocusGroupId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<StrandReviewBeatScore>(e =>
+        {
+            e.HasKey(x => new { x.ReviewId, x.BeatNumber });
+            e.HasOne(x => x.Review).WithMany(r => r.BeatScores)
+                .HasForeignKey(x => x.ReviewId).OnDelete(DeleteBehavior.Cascade);
         });
 
         // ── Entity (universal) ───────────────────────────────────────────────

@@ -59,6 +59,10 @@ var migrations = new[]
     "add_beat_is_chapter_start_20260523.sql",
     "add_beat_kind_20260523.sql",
     "add_strand_narration_progress_20260525.sql",
+    "add_strand_voice_profile_20260531.sql",
+    "create_strand_reviews_20260531.sql",
+    "create_focus_groups_20260531.sql",
+    "create_strand_beat_scores_20260531.sql",
 };
 
 await using var db = await dbFactory.CreateDbContextAsync();

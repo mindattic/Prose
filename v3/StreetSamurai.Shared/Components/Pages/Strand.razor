@@ -92,6 +92,11 @@
     .beat-card.selected .beat-actions,
     .beat-card.editing .beat-actions { opacity: 1; }
     .beat-actions .btn { padding: 0.15rem 0.45rem; line-height: 1; }
+    /* Thin divider grouping Save/Revert (left) apart from copy/LLM/mic/delete. */
+    .beat-action-sep { width: 1px; align-self: stretch; margin: 0.1rem 0.15rem; background: #2a2a2a; }
+    /* Copy-guid icon buttons (next to Beat # and the strand title). Muted until hover. */
+    .beat-guid-copy, .strand-guid-copy { color: #6c757d; border: none; background: none; line-height: 1; }
+    .beat-guid-copy:hover, .strand-guid-copy:hover { color: #0dcaf0; }
     .btn-outline-secondary.copied { color: #75b798; border-color: #198754; background: rgba(25,135,84,0.15); }
     .beat-id-chip { color: #0dcaf0; font-variant-numeric: tabular-nums; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; }
 
@@ -279,6 +284,14 @@ else
                     </div>
                     <input class="strand-title w-100" placeholder="Untitled strand"
                            @bind="strand.Title" @bind:event="oninput" @onblur="SaveStrandHeaderAsync" />
+                    @* Full GUID — a stable handle for this strand (CLI, conversation). *@
+                    <div class="text-muted small mt-1 d-flex align-items-center gap-1">
+                        ID: <code class="strand-id-chip" title="Strand id">@strand.Id</code>
+                        <button class="btn btn-sm strand-guid-copy p-0" title="Copy strand id to clipboard"
+                                @onclick='() => CopyGuidAsync(strand.Id, "Strand id")'>
+                            <i class="bi @(copiedGuid == strand.Id ? "bi-check-lg" : "bi-clipboard")"></i>
+                        </button>
+                    </div>
                     <textarea class="strand-synopsis mt-1" rows="1" placeholder="Synopsis (optional)"
                               @bind="strand.Synopsis" @bind:event="oninput" @onblur="SaveStrandHeaderAsync"></textarea>
                 </div>
@@ -477,11 +490,15 @@ else
                 {
                     position++;
                     var b = entry.Beat;
-                    var isEditing = editingBeatId == b.Id;
                     var bid = b.Id;
+                    // Every beat is always an editable textarea (no read-only
+                    // rendered view). "editing" here means the draft has
+                    // unsaved changes — it lights the card border + keeps the
+                    // action buttons visible until the user saves or reverts.
+                    var isDirty = IsDirty(b);
                     var isSelected = selectedBeats.Contains(bid);
                     var rowClass = "beat-card mb-1";
-                    if (isEditing) rowClass += " editing";
+                    if (isDirty) rowClass += " editing";
                     else if (isSelected) rowClass += " selected";
                     else if (b.Stale) rowClass += " stale";
                     else if (!string.IsNullOrEmpty(b.AudioPath)) rowClass += " recorded";
@@ -504,7 +521,12 @@ else
                         </div>
                     }
 
-                    <div class="@rowClass" id="@($"beat-{bid:N}")" data-cy="beat-row" data-beat-id="@bid" data-strand-id="@entry.StrandId" draggable="true">
+                    @* draggable is NOT set here — the row is non-draggable by
+                       default. strand-interop arms draggable="true" only while
+                       the pointer went down on .beat-drag-handle, so a drag
+                       started anywhere else on the card (prose, textarea,
+                       buttons) does nothing instead of reordering beats. *@
+                    <div class="@rowClass" id="@($"beat-{bid:N}")" data-cy="beat-row" data-beat-id="@bid" data-strand-id="@entry.StrandId">
                         @* ── Row 1: drag handle · checkbox · Beat # + chips · format toolbar · right-aligned action buttons ── *@
                         <div class="beat-row-1 d-flex align-items-center gap-2 mb-2">
                             <span class="beat-drag-handle" title="Drag to reorder this beat within the strand">
@@ -515,6 +537,10 @@ else
                                    title="Select beat for play / batch actions"
                                    @onchange="@(e => ToggleBeatSelection(bid, (bool)(e.Value ?? false)))" />
                             <span class="beat-id-chip" data-cy="beat-id" title="@($"Position {rowPosition} in strand — Beat guid {bid}")">Beat #@rowPosition.ToString("D3")</span>
+                            <button class="btn btn-sm beat-guid-copy p-0" title="@($"Copy beat id {bid}")"
+                                    @onclick='() => CopyGuidAsync(bid, "Beat id")' @onclick:stopPropagation>
+                                <i class="bi @(copiedGuid == bid ? "bi-check-lg" : "bi-hash")"></i>
+                            </button>
                             @if (b.Stale)
                             {
                                 <span class="badge bg-danger strand-meta-chip" title="Prose edited past the audio. Re-record to repair.">stale</span>
@@ -534,16 +560,15 @@ else
                                 <span class="text-muted small beat-char-count">@b.Text.Length chars</span>
                             }
 
-                            @* Format toolbar — only does anything while editing. The
-                               wrap helper inserts the marker either around the
-                               current textarea selection or at the caret. Buttons
-                               are disabled until the user clicks into edit mode. *@
+                            @* Format toolbar. Every beat is an editable textarea,
+                               so the buttons are always live — the wrap helper
+                               inserts the marker around the current selection in
+                               this beat's textarea (or at the caret). *@
                             <div class="beat-format-toolbar" role="toolbar" aria-label="Inline formatting">
                                 <button class="btn btn-sm btn-outline-light"
                                         title="Bold (**text**) — wraps current selection in the textarea"
                                         @onclick='() => WrapFormatAsync(bid, "**")'
                                         @onclick:stopPropagation
-                                        disabled="@(!isEditing)"
                                         data-cy="beat-fmt-bold">
                                     <i class="bi bi-type-bold"></i>
                                 </button>
@@ -551,7 +576,6 @@ else
                                         title="Italic (*text*)"
                                         @onclick='() => WrapFormatAsync(bid, "*")'
                                         @onclick:stopPropagation
-                                        disabled="@(!isEditing)"
                                         data-cy="beat-fmt-italic">
                                     <i class="bi bi-type-italic"></i>
                                 </button>
@@ -559,7 +583,6 @@ else
                                         title="Underline (__text__)"
                                         @onclick='() => WrapFormatAsync(bid, "__")'
                                         @onclick:stopPropagation
-                                        disabled="@(!isEditing)"
                                         data-cy="beat-fmt-underline">
                                     <i class="bi bi-type-underline"></i>
                                 </button>
@@ -567,37 +590,36 @@ else
                                         title="Strikethrough (~~text~~)"
                                         @onclick='() => WrapFormatAsync(bid, "~~")'
                                         @onclick:stopPropagation
-                                        disabled="@(!isEditing)"
                                         data-cy="beat-fmt-strike">
                                     <i class="bi bi-type-strikethrough"></i>
                                 </button>
                             </div>
 
-                            @* Right-aligned action cluster. In edit mode it's Save / Cancel;
-                               in read mode it's the regular copy / LLM / mic / delete row.
-                               Conditional inline (no absolute floater) so the two states
-                               cannot overlap each other regardless of layout. *@
+                            @* Right-aligned action cluster. Every beat is always
+                               editable, so Save (✓) / Revert (✗) sit permanently to
+                               the LEFT of the copy / LLM / mic / delete row. Save and
+                               Revert disable themselves when the draft is clean, so
+                               they're only live when there's an unsaved change. *@
                             <div class="beat-actions d-flex align-items-center gap-1 ms-auto">
-                                @if (isEditing)
-                                {
-                                    <button class="btn btn-sm btn-success"
-                                            @onclick="() => SaveBeatEditAsync(bid)"
-                                            disabled="@savingEdit"
-                                            title="Save (⌘/Ctrl+Enter)"
-                                            data-cy="beat-save">
-                                        @if (savingEdit) { <span class="spinner-border spinner-border-sm"></span> }
-                                        else { <i class="bi bi-check-lg"></i> }
-                                    </button>
-                                    <button class="btn btn-sm btn-outline-secondary"
-                                            @onclick="CancelBeatEdit"
-                                            title="Cancel (Esc)"
-                                            data-cy="beat-cancel">
-                                        <i class="bi bi-x-lg"></i>
-                                    </button>
-                                }
-                                else
-                                {
-                                    <button class="btn btn-sm btn-outline-secondary @(copiedTextBeatId == bid ? "copied" : "")"
+                                <button class="btn btn-sm btn-success"
+                                        @onclick="() => SaveBeatEditAsync(bid)"
+                                        @onclick:stopPropagation
+                                        disabled="@(savingBeatId == bid || !isDirty)"
+                                        title="Save (⌘/Ctrl+Enter)"
+                                        data-cy="beat-save">
+                                    @if (savingBeatId == bid) { <span class="spinner-border spinner-border-sm"></span> }
+                                    else { <i class="bi bi-check-lg"></i> }
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary"
+                                        @onclick="() => RevertDraft(b)"
+                                        @onclick:stopPropagation
+                                        disabled="@(!isDirty)"
+                                        title="Revert unsaved changes (Esc)"
+                                        data-cy="beat-cancel">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                                <span class="beat-action-sep"></span>
+                                <button class="btn btn-sm btn-outline-secondary @(copiedTextBeatId == bid ? "copied" : "")"
                                             title="@(copiedTextBeatId == bid ? "Copied!" : "Copy beat text to clipboard")"
                                             @onclick="() => CopyBeatTextAsync(bid)"
                                             @onclick:stopPropagation
@@ -628,69 +650,26 @@ else
                                             data-cy="beat-delete">
                                         <i class="bi bi-trash"></i>
                                     </button>
-                                }
                             </div>
                         </div>
 
-                        @* ── Row 2: readonly / textarea toggle. Same box either way.
-                           Edit mode reveals the raw markers ([WHISPERING], **bold**);
-                           read mode renders them as emoji + HTML formatting. ── *@
+                        @* ── Row 2: the beat body. Always an editable textarea —
+                           there is no separate read-only rendered view. It shows
+                           the raw markers ([WHISPERING], **bold**) the same way the
+                           old edit mode did. @bind:get/@bind:set route through the
+                           per-beat draft dictionary so each beat is independently
+                           editable; Save commits, Revert restores. No rows attribute
+                           — JS autoSizeTextarea sizes height to content; CSS
+                           min-height matches the old prose box so short beats don't
+                           collapse. ── *@
                         <div class="beat-row-2">
-                            @if (isEditing)
-                            {
-                                @* No rows attribute — JS autoSizeTextarea sizes height
-                                   to content. CSS gives min-height matching the prose
-                                   container so cold-start has no jump either. *@
-                                <textarea class="beat-textarea" id="@($"beat-{bid:N}-edit")"
-                                          @bind="editingText"
-                                          @bind:event="oninput"
-                                          @onkeyup="@(() => AutoSizeTextareaAsync(bid))"
-                                          @onkeydown="@(e => OnEditorKeydown(e, bid))"></textarea>
-                            }
-                            else
-                            {
-                                @if (string.IsNullOrEmpty(b.Text))
-                                {
-                                    <div class="beat-prose beat-prose-empty" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">
-                                        (empty beat — click to write)
-                                    </div>
-                                }
-                                else
-                                {
-                                    @* Render the beat body per its Kind. Beat.Text passes through
-                                       BeatFormatter so **bold** / *italic* / __underline__ / ~~strike~~
-                                       and ElevenLabs tone tags ([WHISPERING] → 🤫 etc.) render in
-                                       the read view. The textarea in edit mode shows raw markers. *@
-                                    var renderedHtml = (MarkupString)BeatFormatter.RenderInline(b.Text);
-                                    switch ((b.Kind ?? "prose").ToLowerInvariant())
-                                    {
-                                        case "book-title":
-                                            <div class="beat-prose beat-prose-book-title" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">
-                                                <div class="book-title-line">@renderedHtml</div>
-                                                @if (!string.IsNullOrEmpty(b.BeatTitle))
-                                                {
-                                                    <div class="book-title-byline">@b.BeatTitle</div>
-                                                }
-                                            </div>
-                                            break;
-                                        case "dedication":
-                                            <div class="beat-prose beat-prose-dedication" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">@renderedHtml</div>
-                                            break;
-                                        case "quote":
-                                            <blockquote class="beat-prose beat-prose-quote" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">
-                                                <div class="quote-text">@renderedHtml</div>
-                                                @if (!string.IsNullOrEmpty(b.BeatTitle))
-                                                {
-                                                    <footer class="quote-attribution">— @b.BeatTitle</footer>
-                                                }
-                                            </blockquote>
-                                            break;
-                                        default:
-                                            <div class="beat-prose" @onclick="() => StartBeatEdit(b)" data-cy="beat-prose">@renderedHtml</div>
-                                            break;
-                                    }
-                                }
-                            }
+                            <textarea class="beat-textarea" id="@($"beat-{bid:N}-edit")"
+                                      placeholder="(empty beat — write here)"
+                                      @bind:get="DraftFor(b)"
+                                      @bind:set="@(v => OnDraftSet(bid, v))"
+                                      @bind:event="oninput"
+                                      @onkeyup="@(() => AutoSizeTextareaAsync(bid))"
+                                      @onkeydown="@(e => OnEditorKeydown(e, b))"></textarea>
                         </div>
 
                         @* ── Row 3: footer band. Audio (if recorded), then a single
@@ -1017,13 +996,81 @@ else
     private List<StrandEntity> children = new();
     private bool loading = true;
     private bool working;
-    private bool savingEdit;
-    private Guid? editingBeatId;
-    private string editingText = "";
-    /// <summary>UpdatedAt captured when the user entered edit mode. Passed
-    /// back on save so the workbench can detect "another tab/MCP-tool wrote
-    /// in between" and surface a conflict toast instead of clobbering.</summary>
-    private DateTime? editingOriginalUpdatedAt;
+    /// <summary>The beat whose Save is mid-flight (drives the spinner on that
+    /// one row's check button). Null when nothing is saving.</summary>
+    private Guid? savingBeatId;
+
+    // ── Per-beat draft model ─────────────────────────────────────────────
+    // Every beat is always an editable textarea (no read-only view), so each
+    // needs its own live draft + concurrency token rather than the old single
+    // editingBeatId/editingText pair. drafts[id] is the current textarea text;
+    // draftBase[id] is the Beat.UpdatedAt captured when the draft was seeded,
+    // passed back on save so the workbench can detect "another tab/MCP-tool
+    // wrote in between" and surface a conflict instead of clobbering.
+    private readonly Dictionary<Guid, string> drafts = new();
+    private readonly Dictionary<Guid, DateTime> draftBase = new();
+
+    /// <summary>Return this beat's live draft text, seeding it from the
+    /// canonical Beat.Text on first access. Called from the textarea's
+    /// @bind:get on every render — must be cheap and side-effect-light.</summary>
+    private string DraftFor(BeatEntity b)
+    {
+        if (!drafts.TryGetValue(b.Id, out var t))
+        {
+            t = b.Text ?? "";
+            drafts[b.Id] = t;
+            draftBase[b.Id] = b.UpdatedAt;
+        }
+        return t;
+    }
+
+    /// <summary>@bind:set target — record what the user typed.</summary>
+    private void OnDraftSet(Guid beatId, string value) => drafts[beatId] = value ?? "";
+
+    /// <summary>True when the draft differs from the saved beat text.</summary>
+    private bool IsDirty(BeatEntity b)
+        => drafts.TryGetValue(b.Id, out var t) && t != (b.Text ?? "");
+
+    /// <summary>Discard a beat's unsaved edits back to the saved text.</summary>
+    private void RevertDraft(BeatEntity b)
+    {
+        drafts[b.Id] = b.Text ?? "";
+        draftBase[b.Id] = b.UpdatedAt;
+        autoSizePendingBeatId = b.Id;
+    }
+
+    /// <summary>Reconcile drafts against a freshly reloaded beat list. Clean
+    /// (or absent) drafts are reseeded to the new text + token so re-records
+    /// and external edits to untouched beats don't leave a stale concurrency
+    /// token or a false "dirty" flag. Drafts the user has actually changed are
+    /// preserved verbatim. Drafts for deleted beats are dropped.</summary>
+    private void SyncDraftsAfterReload()
+    {
+        var live = new HashSet<Guid>();
+        foreach (var ob in beats)
+        {
+            var id = ob.Beat.Id;
+            var txt = ob.Beat.Text ?? "";
+            live.Add(id);
+            if (!drafts.TryGetValue(id, out var d) || d == txt)
+            {
+                drafts[id] = txt;
+                draftBase[id] = ob.Beat.UpdatedAt;
+            }
+            // else: unsaved user edit — keep the draft and its original token.
+        }
+        foreach (var stale in drafts.Keys.Where(k => !live.Contains(k)).ToList())
+        {
+            drafts.Remove(stale);
+            draftBase.Remove(stale);
+        }
+        sizeAllPending = true;
+    }
+
+    /// <summary>Set after any (re)load of the beat list so OnAfterRenderAsync
+    /// runs one pass of autosize across every textarea — each beat now renders
+    /// its own editor, so they all need sizing, not just the active one.</summary>
+    private bool sizeAllPending;
 
     /// <summary>When set, the beat-details metadata panel is open for this beat.</summary>
     private Guid? metaOpenBeatId;
@@ -1166,9 +1213,18 @@ else
             }
             catch { /* JS load race — try again next render */ }
         }
-        // If a beat just entered edit mode, size its textarea to match the
-        // content height. Subsequent typing keeps it sized via @oninput on
-        // the textarea itself.
+        // After any (re)load, size EVERY beat's textarea to its content —
+        // all beats render their own editor now, so a single per-beat autosize
+        // isn't enough. One JS call walks them all; cheap and idempotent.
+        if (sizeAllPending)
+        {
+            sizeAllPending = false;
+            try { await JS.InvokeVoidAsync("streetsamurai.autoSizeAllTextareas", "strand-beats-root"); }
+            catch { /* JS not loaded yet — first input on each textarea will size it */ }
+        }
+        // If a beat was just inserted / reverted, size its textarea to match the
+        // content height and focus it. Subsequent typing keeps it sized via
+        // @oninput on the textarea itself.
         if (autoSizePendingBeatId is { } b)
         {
             autoSizePendingBeatId = null;
@@ -1214,6 +1270,7 @@ else
                 strandLoadedUpdatedAt = strand.UpdatedAt;
                 if (string.IsNullOrEmpty(strand.VoiceId)) strand.VoiceId = defaultVoiceId;
                 beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+                SyncDraftsAfterReload();
 
                 // Surface the saved listening position so the user can jump back
                 // to where they walked away. Cleared from the banner if the beat
@@ -1283,6 +1340,7 @@ else
                 strand.CombinedAudioPath = fresh.CombinedAudioPath;
                 strand.CharsNarrated = fresh.CharsNarrated;
                 beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+                SyncDraftsAfterReload();
                 await InvokeAsync(StateHasChanged);
                 if (strand.Status is "ready" or "failed" or "stopped")
                 {
@@ -1321,24 +1379,19 @@ else
         strandLoadedUpdatedAt = s.UpdatedAt;
     }
 
+    /// <summary>Seed a beat's draft and queue focus + autosize on its
+    /// textarea. All beats are always editable now, so this is just the
+    /// "jump the caret into this beat" helper — used after inserting a new
+    /// beat so the user lands in it ready to type. Flag is honoured in
+    /// OnAfterRenderAsync once the DOM exists (no Task.Run / eval race).</summary>
     private void StartBeatEdit(BeatEntity b)
     {
-        editingBeatId = b.Id;
-        editingText = b.Text ?? "";
-        editingOriginalUpdatedAt = b.UpdatedAt;
-        // Flag so OnAfterRenderAsync sizes the new textarea to content
-        // height AND focuses it once the DOM exists. The focus call used
-        // to ride a Task.Run + Task.Delay(50) + JS eval() — racy with
-        // OnAfterRenderAsync and CSP-hostile — now both happen together
-        // on the circuit at the right moment.
+        if (!drafts.ContainsKey(b.Id))
+        {
+            drafts[b.Id] = b.Text ?? "";
+            draftBase[b.Id] = b.UpdatedAt;
+        }
         autoSizePendingBeatId = b.Id;
-    }
-
-    private void CancelBeatEdit()
-    {
-        editingBeatId = null;
-        editingText = "";
-        editingOriginalUpdatedAt = null;
     }
 
     private void ToggleMeta(Guid beatId)
@@ -1411,38 +1464,43 @@ else
         public string Kind { get; set; } = "prose";
     }
 
-    private async Task OnEditorKeydown(KeyboardEventArgs e, Guid beatId)
+    private async Task OnEditorKeydown(KeyboardEventArgs e, BeatEntity b)
     {
-        if (e.Key == "Enter" && (e.CtrlKey || e.MetaKey)) await SaveBeatEditAsync(beatId);
-        else if (e.Key == "Escape") CancelBeatEdit();
+        if (e.Key == "Enter" && (e.CtrlKey || e.MetaKey)) await SaveBeatEditAsync(b.Id);
+        else if (e.Key == "Escape") RevertDraft(b);
     }
 
     private async Task SaveBeatEditAsync(Guid beatId)
     {
-        if (strand == null || savingEdit) return;
-        savingEdit = true;
+        if (strand == null || savingBeatId != null) return;
+        if (!drafts.TryGetValue(beatId, out var text)) return; // nothing seeded
+        draftBase.TryGetValue(beatId, out var baseToken);
+        savingBeatId = beatId;
         StateHasChanged();
         try
         {
-            await Workbench.UpdateBeatTextAsync(beatId, editingText, editingOriginalUpdatedAt);
+            await Workbench.UpdateBeatTextAsync(beatId, text, baseToken);
+            // Drop this beat's draft so the reload reseeds it from the
+            // freshly-saved text + new concurrency token (clean state).
+            drafts.Remove(beatId);
+            draftBase.Remove(beatId);
             await ReloadBeatsAsync();
-            editingBeatId = null;
-            editingText = "";
-            editingOriginalUpdatedAt = null;
             Toast.Success("BEAT-EDIT", "Beat updated; audio invalidated.");
         }
         catch (BeatConflictException conflict)
         {
-            // Surface a clear "another tab edited this" choice. Reloads the
-            // beats so the user sees the current canonical text, and keeps
-            // their edited text in the textarea so they can copy what they
-            // wanted to keep before re-applying. No silent clobber.
+            // Another tab/MCP-tool wrote in between. Reload so the user sees
+            // the current canonical text on the OTHER rows, but keep THIS
+            // beat's draft (their unsaved text) and advance its base token to
+            // the conflicting version so a re-save applies over it. No silent
+            // clobber. SyncDraftsAfterReload preserves a dirty draft, so we
+            // just re-point the token here.
             await ReloadBeatsAsync();
-            editingOriginalUpdatedAt = conflict.CurrentUpdatedAt;
-            Toast.Error("BEAT-CONFLICT", "Beat was modified elsewhere. The latest text is shown — review and re-save to apply your change over it.");
+            draftBase[beatId] = conflict.CurrentUpdatedAt;
+            Toast.Error("BEAT-CONFLICT", "Beat was modified elsewhere. Your edit is kept in the box — re-save to apply it over the latest version.");
         }
         catch (Exception ex) { Toast.Error("BEAT-EDIT-FAIL", ex.Message); }
-        finally { savingEdit = false; await InvokeAsync(StateHasChanged); }
+        finally { savingBeatId = null; await InvokeAsync(StateHasChanged); }
     }
 
     private async Task InsertBeatAsync(Guid? afterBeatId)
@@ -1584,6 +1642,29 @@ else
                     copiedTextBeatId = null;
                     await InvokeAsync(StateHasChanged);
                 }
+            });
+        }
+        catch (Exception ex) { Toast.Error("COPY-FAIL", ex.Message); }
+    }
+
+    /// <summary>The strand or beat guid most recently copied — flips its copy
+    /// icon to a check for ~1.4s.</summary>
+    private Guid? copiedGuid;
+
+    /// <summary>Copy a guid (strand id or beat id, UUIDv7) to the clipboard as a
+    /// quick reference handle. Flashes the icon and toasts the value.</summary>
+    private async Task CopyGuidAsync(Guid id, string label)
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("navigator.clipboard.writeText", id.ToString());
+            copiedGuid = id;
+            Toast.Info("COPIED", $"{label}: {id}");
+            StateHasChanged();
+            _ = Task.Run(async () =>
+            {
+                await Task.Delay(1400);
+                if (copiedGuid == id) { copiedGuid = null; await InvokeAsync(StateHasChanged); }
             });
         }
         catch (Exception ex) { Toast.Error("COPY-FAIL", ex.Message); }
@@ -1953,6 +2034,10 @@ else
             await Workbench.UpdateBeatTextAsync(beatId, llmSheetProposal, expectedUpdatedAt: llmSheetBeat.UpdatedAt);
             llmSheetBeat.Text = llmSheetProposal;
             llmSheetBeat.UpdatedAt = DateTime.UtcNow;
+            // Drop any draft so the reload reseeds this beat's textarea from the
+            // LLM's new text (otherwise a stale draft would mask the rewrite).
+            drafts.Remove(beatId);
+            draftBase.Remove(beatId);
             Toast.Success("LLM", "Beat rewritten — audio invalidated; re-record to refresh.");
             CloseLlmSheet();
             await ReloadBeatsAsync();
@@ -2021,6 +2106,7 @@ else
             strand.CharsNarrated = fresh.CharsNarrated;
         }
         beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+        SyncDraftsAfterReload();
     }
 
     /// <summary>Build the combined-audio URL with a cache-bust query string.

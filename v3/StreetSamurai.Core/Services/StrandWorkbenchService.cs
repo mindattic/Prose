@@ -951,18 +951,17 @@ public class StrandWorkbenchService
             // hand the bytes to audioStore.WriteBeatAsync which knows where
             // they live (local disk vs blob). No filesystem prep needed here.
 
-            // Resolve the active voice profile ONCE before the loop and reuse
-            // it for every beat. Two reasons: (1) the default-profile lookup
-            // is keyed on a string id stored in settings, so resolving once
-            // means a mid-run settings change doesn't fork the strand into
-            // two voices, (2) the profile's voice_id + voice_settings are a
-            // bundle — using them together is the whole point of profiles
-            // (otherwise sliders drift). Beats with their own VoiceId still
-            // override (future per-character work).
-            var activeProfile = settings?.GetDefaultVoiceProfile();
-            var lockedStrandVoice = !string.IsNullOrEmpty(strand.VoiceId)
-                ? strand.VoiceId
-                : activeProfile?.VoiceId;
+            // Resolve (and snapshot) the strand's locked voice profile ONCE
+            // before the loop and reuse it for every beat. The snapshot is
+            // captured on first narration and frozen on the strand, so neither
+            // a mid-run settings change NOR a global profile change weeks later
+            // can fork the strand into two voices. The bundle (model + voice_id
+            // + stability/similarity/style + deterministic seed) is used
+            // together — that's the whole point. Beats with their own VoiceId
+            // still override (future per-character work).
+            var voice = await ResolveStrandVoiceAsync(db, strand, ct);
+            var lockedStrandVoice = voice.VoiceId;
+            var tagsEnabled = settings?.TtsUseAudioTags ?? true;
             bool useLossless = true;
             int failedCount = 0;
             var failedBeatIds = new List<Guid>();
@@ -994,18 +993,13 @@ public class StrandWorkbenchService
                 var voiceForBeat = !string.IsNullOrEmpty(tracked.VoiceId) ? tracked.VoiceId : lockedStrandVoice;
 
                 // Map beat metadata → ElevenLabs prompt + per-request voice_settings.
-                // The baseline voice_settings come from the active VoiceProfile
-                // (so a profile change applies consistently to every beat in
-                // the run). EmotionalTone / PaceHint nudges still adjust them
-                // per beat for dramatic range, but they bias FROM the profile,
-                // not from free-floating settings sliders.
-                var modelId         = activeProfile?.Model              ?? settings?.TtsModel ?? "eleven_v3";
-                var tagsEnabled     = settings?.TtsUseAudioTags         ?? true;
-                var baseStability   = activeProfile?.Stability          ?? settings?.TtsStability ?? 0.5;
-                var baseSimilarity  = activeProfile?.SimilarityBoost    ?? settings?.TtsSimilarityBoost ?? 0.75;
-                var baseStyle       = activeProfile?.Style              ?? settings?.TtsStyle ?? 0.0;
-                var prompt = BeatPromptBuilder.Build(tracked, modelId, tagsEnabled,
-                    baseStability, baseSimilarity, baseStyle);
+                // The baseline voice_settings come from the strand's LOCKED
+                // snapshot (so every beat — including ones recorded later —
+                // shares one tuning + one seed). EmotionalTone / PaceHint nudges
+                // still adjust them per beat for dramatic range on v2; on v3
+                // they're flattened back to the baseline inside Build.
+                var prompt = BeatPromptBuilder.Build(tracked, voice.Model, tagsEnabled,
+                    voice.Stability, voice.Similarity, voice.Style, voice.Seed);
 
                 string? newReqId = null;
                 try
@@ -1153,16 +1147,16 @@ public class StrandWorkbenchService
         if (!force && !tracked.Stale && !string.IsNullOrEmpty(tracked.AudioPath))
             return true;
 
-        var activeProfile     = settings?.GetDefaultVoiceProfile();
-        var lockedStrandVoice = !string.IsNullOrEmpty(strand.VoiceId) ? strand.VoiceId : activeProfile?.VoiceId;
-        var voiceForBeat      = !string.IsNullOrEmpty(tracked.VoiceId) ? tracked.VoiceId : lockedStrandVoice;
-
-        var modelId        = activeProfile?.Model           ?? settings?.TtsModel ?? "eleven_v3";
-        var tagsEnabled    = settings?.TtsUseAudioTags      ?? true;
-        var baseStability  = activeProfile?.Stability       ?? settings?.TtsStability ?? 0.5;
-        var baseSimilarity = activeProfile?.SimilarityBoost ?? settings?.TtsSimilarityBoost ?? 0.75;
-        var baseStyle      = activeProfile?.Style            ?? settings?.TtsStyle ?? 0.0;
-        var prompt = BeatPromptBuilder.Build(tracked, modelId, tagsEnabled, baseStability, baseSimilarity, baseStyle);
+        // Reuse the strand's LOCKED voice snapshot — this is the key to a
+        // single-beat re-record sounding like the rest of the strand: same
+        // model, same voice, same tuning, same deterministic seed as every
+        // other beat, regardless of what the global default profile is now.
+        var voice         = await ResolveStrandVoiceAsync(db, strand, ct);
+        var lockedStrandVoice = voice.VoiceId;
+        var voiceForBeat  = !string.IsNullOrEmpty(tracked.VoiceId) ? tracked.VoiceId : lockedStrandVoice;
+        var tagsEnabled   = settings?.TtsUseAudioTags ?? true;
+        var prompt = BeatPromptBuilder.Build(tracked, voice.Model, tagsEnabled,
+            voice.Stability, voice.Similarity, voice.Style, voice.Seed);
 
         // v2 continuity context (the TTS layer drops both for v3).
         var prevIds = new List<string>(3);
@@ -1853,13 +1847,73 @@ public class StrandWorkbenchService
         return (prev, next);
     }
 
+    /// <summary>The frozen voice parameters for one strand. Either read back
+    /// from the strand's snapshot columns or captured from the current default
+    /// profile on first narration. Every beat in the strand renders through
+    /// this exact bundle so the narrator stays one continuous performance.</summary>
+    private readonly record struct ResolvedVoice(
+        string Model, string? VoiceId,
+        double Stability, double Similarity, double Style, int Seed);
+
+    /// <summary>Resolve (and, on first narration, lazily persist) the immutable
+    /// voice profile for a strand. The FIRST time any beat is narrated we
+    /// snapshot the then-current default profile + a deterministic seed onto
+    /// the strand; every later (re)record reuses the snapshot. This is what
+    /// guarantees a beat recorded today sounds like beats recorded last week,
+    /// even if the global default profile/model has changed since. The passed
+    /// <paramref name="strand"/> must be tracked by <paramref name="db"/> so
+    /// the snapshot write persists.</summary>
+    private async Task<ResolvedVoice> ResolveStrandVoiceAsync(
+        StreetSamuraiDbContext db, Strand strand, CancellationToken ct)
+    {
+        var profile = settings?.GetDefaultVoiceProfile();
+        var dirty = false;
+
+        if (string.IsNullOrEmpty(strand.VoiceModel))
+        {
+            strand.VoiceModel      = profile?.Model           ?? settings?.TtsModel ?? "eleven_v3";
+            strand.VoiceStability  = profile?.Stability        ?? settings?.TtsStability ?? 0.5;
+            strand.VoiceSimilarity = profile?.SimilarityBoost  ?? settings?.TtsSimilarityBoost ?? 0.75;
+            strand.VoiceStyle      = profile?.Style            ?? settings?.TtsStyle ?? 0.0;
+            // Pin the voice too so it can't drift with the global default later.
+            if (string.IsNullOrEmpty(strand.VoiceId))
+                strand.VoiceId = profile?.VoiceId;
+            dirty = true;
+        }
+        if (strand.VoiceSeed is null)
+        {
+            strand.VoiceSeed = DeriveSeed(strand.Id);
+            dirty = true;
+        }
+        if (dirty) await db.SaveChangesAsync(ct);
+
+        return new ResolvedVoice(
+            strand.VoiceModel ?? "eleven_v3",
+            strand.VoiceId,
+            strand.VoiceStability  ?? 0.5,
+            strand.VoiceSimilarity ?? 0.75,
+            strand.VoiceStyle      ?? 0.0,
+            strand.VoiceSeed       ?? 0);
+    }
+
+    /// <summary>Deterministic, stable per-strand seed in ElevenLabs' accepted
+    /// [0, 2^31-1] range. Derived from the strand's Guid bytes so it never
+    /// changes for a given strand and never depends on process-level hashing.</summary>
+    private static int DeriveSeed(Guid id)
+    {
+        var b = id.ToByteArray();
+        int v = (b[0] << 24) | (b[1] << 16) | (b[2] << 8) | b[3];
+        return v & 0x7FFFFFFF;
+    }
+
     private async Task<string?> SynthesizeAsLosslessWavAsync(
         Beat beat, Strand strand,
         string[] previousRequestIds, string? previousText, string? nextText,
         string? voiceForBeat, BeatPrompt prompt,
         CancellationToken ct)
     {
-        var voiceSettings = new TtsVoiceSettings(prompt.Stability, prompt.SimilarityBoost, prompt.Style);
+        var voiceSettings = new TtsVoiceSettings(prompt.Stability, prompt.SimilarityBoost, prompt.Style,
+            Seed: prompt.Seed, ModelId: prompt.ModelId);
         var result = await tts.SynthesizeWithIdAsync(
             prompt.Text, voiceForBeat, outputFormat: "pcm_44100",
             previousRequestIds: previousRequestIds,
@@ -1888,7 +1942,8 @@ public class StrandWorkbenchService
         string? voiceForBeat, BeatPrompt prompt,
         CancellationToken ct)
     {
-        var voiceSettings = new TtsVoiceSettings(prompt.Stability, prompt.SimilarityBoost, prompt.Style);
+        var voiceSettings = new TtsVoiceSettings(prompt.Stability, prompt.SimilarityBoost, prompt.Style,
+            Seed: prompt.Seed, ModelId: prompt.ModelId);
         var result = await tts.SynthesizeWithIdAsync(
             prompt.Text, voiceForBeat, outputFormat: "mp3_44100_128",
             previousRequestIds: previousRequestIds,

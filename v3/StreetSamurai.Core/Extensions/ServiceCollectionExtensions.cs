@@ -633,6 +633,11 @@ public static class ServiceCollectionExtensions
             return new LlmVotingProvider(http, cfg);
         });
         services.AddSingleton<LlmVotingService>();
+        // Persona reader-review system: export a strand to markdown, fan N Legion
+        // personas across the trusted-4 to each write an honest scored review,
+        // then synthesize the Amazon-style aggregate.
+        services.AddSingleton<StrandMarkdownExporter>();
+        services.AddSingleton<StrandReviewService>();
         services.AddSingleton<StoryQualityService>();
         services.AddSingleton<StoryRefinementService>();
         services.AddSingleton<CanonGroundingService>();
