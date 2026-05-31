@@ -404,6 +404,31 @@ if (args.Contains("--narrate-strand"))
     return;
 }
 
+// CLI mode: create a fixed, named reviewer panel of N personas, disjoint from
+// every existing focus group (no persona on two panels). No LLM calls.
+//   ss --make-group --name "Group B" [--size 128]
+if (args.Contains("--make-group"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await MakeGroupCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: have N Legion personas each read an EXISTING strand and write an
+// honest, scored reader review (saved to StrandReviews), then synthesize the
+// Amazon-style aggregate summary. Round-robins reviewers across the trusted-4.
+//   ss --review-strand (--id <guid|prefix> | --slug <slug>) [--readers N]
+if (args.Contains("--review-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ReviewStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: stitch an existing strand's beats into one combined file (WAV →
 // MP3), copy it to the publish output dir (Downloads by default), and record
 // the publication run + process-event ledger. Headless Publish button.

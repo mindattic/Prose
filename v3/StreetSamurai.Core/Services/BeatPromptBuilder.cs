@@ -39,7 +39,8 @@ public static class BeatPromptBuilder
     /// this beat. Falls back gracefully when the beat has no metadata.
     /// </summary>
     public static BeatPrompt Build(Beat beat, string? modelId, bool tagsEnabled,
-        double baselineStability, double baselineSimilarityBoost, double baselineStyle)
+        double baselineStability, double baselineSimilarityBoost, double baselineStyle,
+        int? seed = null)
     {
         var text = beat.Text ?? "";
         var supportsTags = tagsEnabled && ModelSupportsAudioTags(modelId);
@@ -67,12 +68,21 @@ public static class BeatPromptBuilder
         // discrete stability presets (Creative/Natural/Robust) — so those same
         // deltas round neighbouring beats onto DIFFERENT presets and the narrator
         // audibly switches modes between beats. On v3 the emotion is carried by
-        // the inline audio tags instead, so we hold stability flat at the strand
-        // baseline: one preset for the whole strand → liquid, continuous delivery.
+        // the inline audio tags instead, so we hold ALL of voice_settings flat at
+        // the strand baseline: stability AND style AND similarity. Any per-beat
+        // wobble on v3 reads as the narrator being "re-tuned" between beats; the
+        // one-preset-for-the-whole-strand rule is what keeps delivery liquid and
+        // continuous. (The TTS layer already drops style/similarity from the v3
+        // payload, but we flatten here too so intent is explicit and survives any
+        // future change to which fields v3 honours.)
         if (ModelSupportsAudioTags(modelId))
-            stability = baselineStability;
+        {
+            stability  = baselineStability;
+            style      = baselineStyle;
+            similarity = baselineSimilarityBoost;
+        }
 
-        return new BeatPrompt(finalText, stability, similarity, style);
+        return new BeatPrompt(finalText, stability, similarity, style, modelId, seed);
     }
 
     /// <summary>Choose the trailing pause tag (or null) for a beat based on
@@ -177,5 +187,9 @@ public static class BeatPromptBuilder
 }
 
 /// <summary>The synthesized prompt for one beat: text (possibly tag-prefixed)
-/// plus the voice_settings to apply for this specific request.</summary>
-public record BeatPrompt(string Text, double Stability, double SimilarityBoost, double Style);
+/// plus the voice_settings to apply for this specific request, the resolved
+/// <paramref name="ModelId"/> (so the TTS layer and the v3-detection here agree
+/// on one model), and the strand's deterministic <paramref name="Seed"/>.</summary>
+public record BeatPrompt(
+    string Text, double Stability, double SimilarityBoost, double Style,
+    string? ModelId = null, int? Seed = null);

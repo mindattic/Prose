@@ -220,6 +220,27 @@
             return a && b && a === b;
         }
 
+        // Handle-gated dragging. The row carries no `draggable` attribute in
+        // markup, so it is inert by default. A pointer-down on the grip
+        // (.beat-drag-handle) arms that one row by setting draggable="true"
+        // synchronously — in time for the browser to honour it when the drag
+        // gesture starts. A pointer-down anywhere else on the card (prose,
+        // textarea, buttons) leaves every row inert, so it selects text or
+        // clicks as normal instead of starting a reorder. Disarm on dragend
+        // (drag finished) and on pointer-up (press that never became a drag).
+        function disarmAllRows() {
+            root.querySelectorAll('[data-beat-id][draggable="true"]').forEach(r =>
+                r.removeAttribute('draggable'));
+        }
+        root.addEventListener('pointerdown', function (e) {
+            disarmAllRows();
+            const handle = e.target.closest('.beat-drag-handle');
+            if (!handle) return;
+            const row = handle.closest('[data-beat-id]');
+            if (row) row.setAttribute('draggable', 'true');
+        });
+        root.addEventListener('pointerup', disarmAllRows);
+
         root.addEventListener('dragstart', function (e) {
             const row = e.target.closest('[data-beat-id]');
             if (!row) return;
@@ -236,6 +257,8 @@
             if (row) row.classList.remove('beat-dragging');
             root.querySelectorAll('.beat-drop-target, .beat-drop-blocked').forEach(el =>
                 el.classList.remove('beat-drop-target', 'beat-drop-blocked'));
+            // Some browsers suppress pointer-up after a native drag — disarm here too.
+            disarmAllRows();
         });
         root.addEventListener('dragover', function (e) {
             const row = e.target.closest('[data-beat-id]');
@@ -308,6 +331,20 @@
         el.style.height = (el.scrollHeight + 2) + 'px';
     }
     window.streetsamurai.autoSizeTextarea     = autoSizeTextarea;
+
+    /// Size every .beat-textarea under the given root to fit its content.
+    /// Every beat renders its own always-on editor, so after a (re)load they
+    /// all need a height pass — not just the one the user clicked into. Same
+    /// 0-then-scrollHeight trick as autoSizeTextarea, batched.
+    function autoSizeAllTextareas(rootId) {
+        const root = rootId ? document.getElementById(rootId) : document;
+        if (!root) return;
+        root.querySelectorAll('textarea.beat-textarea').forEach(function (el) {
+            el.style.height = '0px';
+            el.style.height = (el.scrollHeight + 2) + 'px';
+        });
+    }
+    window.streetsamurai.autoSizeAllTextareas = autoSizeAllTextareas;
 
     /// Focus an element by id. Replaces the old eval(`...focus()`) shim
     /// (which was CSP-hostile and didn't compose with strict policies).

@@ -66,6 +66,34 @@ public class Strand
     /// <c>VoiceId</c> override it; otherwise the strand's voice is used.</summary>
     public string? VoiceId { get; set; }
 
+    // ── Voice profile snapshot (locked at first narration) ───────────────
+    // Captured once, the first time any beat in this strand is narrated, from
+    // the then-current default voice profile. Every later (re)record reuses
+    // THESE values instead of the live global settings, so changing the
+    // default profile/model later can't make a freshly-recorded beat drift
+    // out of character with the beats already laid down. Null = not yet
+    // narrated (the snapshot is taken on first synthesis).
+
+    /// <summary>ElevenLabs model id locked for this strand (e.g. eleven_v3).</summary>
+    public string? VoiceModel { get; set; }
+
+    /// <summary>Locked baseline stability for this strand's narration.</summary>
+    public double? VoiceStability { get; set; }
+
+    /// <summary>Locked baseline similarity_boost for this strand's narration.</summary>
+    public double? VoiceSimilarity { get; set; }
+
+    /// <summary>Locked baseline style for this strand's narration.</summary>
+    public double? VoiceStyle { get; set; }
+
+    /// <summary>Deterministic ElevenLabs generation seed for this strand.
+    /// Every beat is rendered with the SAME seed so the model anchors to one
+    /// voice realization across the whole strand and single-beat re-records
+    /// reproduce the surrounding delivery. Derived from <see cref="Id"/> on
+    /// first narration, then frozen here. Distinct from <see cref="Seed"/>,
+    /// which is the LLM generator's text prompt — unrelated.</summary>
+    public int? VoiceSeed { get; set; }
+
     // ── Generation / cost / resume state ─────────────────────────────────
 
     /// <summary>For LLM-generated strands, the one-line seed that fed the
@@ -114,4 +142,8 @@ public class Strand
     /// latest completed run's file is what <see cref="CombinedAudioPath"/>
     /// points at.</summary>
     public List<StrandPublication> Publications { get; set; } = new();
+
+    /// <summary>Persona reader-reviews (1:M). Each review run appends rows; the
+    /// aggregate lives in <see cref="StrandReviewSummary"/>.</summary>
+    public List<StrandReview> Reviews { get; set; } = new();
 }
