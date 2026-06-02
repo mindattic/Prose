@@ -9,8 +9,10 @@ One call that grades a strand and tells you what to fix. Runs the whole evaluati
 - DB: `Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;`
 - CLI host project: `D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Blazor`
 - **Invoke the CLI with `dotnet run --project <proj> -- <args>` directly. Do NOT use `ss.cmd`** — the shim mis-parses its own `rem` lines when spawned from a non-interactive shell and exits 255.
-- A/B/C are three FIXED, DISJOINT 128-persona focus groups ("Group A"/"Group B"/"Group C"). They already exist. If a `--make-group` is ever needed: `dotnet run --project <proj> -- --make-group --name "Group X" --size 128`.
-- Reviews fingerprint the exact text via `ContentHash`. Pool/score ALWAYS by the ContentHash the run produced, so a re-run on edited text never mixes versions.
+- A/B/C/D are FOUR full-population panels ("Group A".."Group D"), **256 personas each = all 1024 enriched personas**, random split. A full run reviews the ENTIRE population (widest net), not a sample. Rosters live in FocusGroups/FocusGroupMembers.
+- Reviews are **psychometric-grounded**: each persona reviews through its OCEAN/HEXACO/MBTI/Enneagram/DISC profile (delivered by the Legion package). Do NOT run until the psychometric review service is built — otherwise the run is non-psychometric and wasted.
+- Reviews fingerprint the exact text via `ContentHash`. Pool/score ALWAYS by the ContentHash the run produced.
+- **LATEST-RUN-ONLY for display/scoring**: a persona accrues a new review every run, so the same persona can have many rows. The "current state" of a strand/beat is the **most recent review per persona** (or the latest run per group) — dedupe to that. Never average 4-5-6 stale opinions from the same persona; show only the most recent Focus Group result.
 
 ## Steps when invoked
 
@@ -19,10 +21,11 @@ One call that grades a strand and tells you what to fix. Runs the whole evaluati
 
 2. **GOTCHA — never edit beats during a run.** Each panel exports the strand text at its own start; editing mid-run splits panels across versions. If beats were just edited, confirm the edit is fully applied BEFORE starting. Run the three panels **sequentially, in the background** (sequential avoids tripling concurrent API load):
    ```
-   foreach ($g in 'Group A','Group B','Group C') {
+   foreach ($g in 'Group A','Group B','Group C','Group D') {
      dotnet run --project <proj> -- --review-strand --slug <slug> --group $g
    }
    ```
+   (Four groups now = full population ≈ 1024 reviews per run. Use `--no-build` if a VS instance holds the build lock.)
    Launch with `run_in_background: true`; wait for the completion notification (don't poll).
 
 3. **Pool + score** (PowerShell + System.Data.SqlClient — Unicode-safe; identify the newest ContentHash first, then stat it). Report:

@@ -329,11 +329,30 @@ public class StrandReviewService
         return review;
     }
 
-    private static string BuildStudyReviewerSystemPrompt(Persona persona, string title, int beatCount)
+    /// <summary>The persona's voice + their measured psychometric profile (from the
+    /// Legion package's embedded profiles), so each reviewer judges THROUGH their
+    /// real personality — Openness governs tolerance for the strange/lyrical,
+    /// Conscientiousness governs patience for looseness, etc. No DB: the profile is
+    /// delivered by <see cref="PersonaLibrary.GetProfile"/>.</summary>
+    private static string BuildWhoBlock(Persona persona)
     {
         var who = string.IsNullOrWhiteSpace(persona.PersonalityMarkdown)
             ? "You are an ordinary, opinionated reader."
             : persona.PersonalityMarkdown;
+
+        var profile = PersonaLibrary.GetProfile(persona.Id);
+        if (profile != null)
+            who +=
+$@"
+
+YOUR MEASURED PSYCHOMETRIC PROFILE — let it genuinely shape what you notice, what bothers you, and how you score: {profile.Summary()}.
+Read through this psychology, not a generic critic's: high Openness welcomes the strange, lyrical, and rule-breaking; low Openness wants clarity and convention. High Conscientiousness is impatient with looseness, purple prose, and unearned flourish; lower Conscientiousness forgives it for energy and feel. High Neuroticism feels stakes and dread sharply; low Neuroticism stays cool. Let your Agreeableness set how gentle or blunt your review reads. React as THIS person actually would.";
+        return who;
+    }
+
+    private static string BuildStudyReviewerSystemPrompt(Persona persona, string title, int beatCount)
+    {
+        var who = BuildWhoBlock(persona);
         return
 $@"{who}
 
@@ -353,9 +372,7 @@ Score honestly and specifically. The author wants the truth, not to be glazed.";
 
     private static string BuildReviewerSystemPrompt(Persona persona, string title)
     {
-        var who = string.IsNullOrWhiteSpace(persona.PersonalityMarkdown)
-            ? "You are an ordinary, opinionated reader."
-            : persona.PersonalityMarkdown;
+        var who = BuildWhoBlock(persona);
         return
 $@"{who}
 

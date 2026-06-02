@@ -140,6 +140,18 @@ if (args.Contains("--add-place"))
     return;
 }
 
+// CLI mode: generate a resource-tracked combat sequence via CombatSceneWriter.
+//   ss --combat --file scene.json [--out prose.txt]
+//   ss --combat --location "Hegewisch" --objective "..." --exchanges 6 --tone Cinematic
+if (args.Contains("--combat"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await CombatCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: insert a News article from a NewsData JSON file.
 //   ss --add-news --file path.json
 if (args.Contains("--add-news"))
