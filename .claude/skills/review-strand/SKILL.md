@@ -1,61 +1,65 @@
 ---
 name: review-strand
-description: Full strand evaluation in one call — runs the A/B/C reader panels, computes the pooled score + CI, runs the segment study (Pareto/contested/seam diagnostic), pulls the bottom-decile complaints, and prints one unified report. Usage /review-strand [slug-or-id]; defaults to the most-recently-edited strand.
+description: Economical strand evaluation in one call — a sampled panel casts cheap score-ballots (overall + per-beat + one gripe), clusters them into a Pareto/contested/seam study, upgrades the most informative few to full prose, and prints one report with the strand score + 95% CI. Usage /review-strand [slug-or-id]; defaults to the most-recently-edited strand.
 ---
 
-One call that grades a strand and tells you what to fix. Runs the whole evaluation pipeline in the correct order and returns a single report. The user invokes it as `/review-strand <slug>` (slug optional).
+One call that grades a strand and tells you what to fix — cheaply. The default is a **sampled two-tier** run (NOT a 1024-persona census): a stratified panel casts score-only ballots, those ballots double as the segment study, and only the most informative handful get upgraded to readable prose. The user invokes it as `/review-strand <slug>` (slug optional).
 
 ## Fixed facts for this engine
 - DB: `Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;`
 - CLI host project: `D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Blazor`
-- **Invoke the CLI with `dotnet run --project <proj> -- <args>` directly. Do NOT use `ss.cmd`** — the shim mis-parses its own `rem` lines when spawned from a non-interactive shell and exits 255.
-- A/B/C/D are FOUR full-population panels ("Group A".."Group D"), **256 personas each = all 1024 enriched personas**, random split. A full run reviews the ENTIRE population (widest net), not a sample. Rosters live in FocusGroups/FocusGroupMembers.
-- Reviews are **psychometric-grounded**: each persona reviews through its OCEAN/HEXACO/MBTI/Enneagram/DISC profile (delivered by the Legion package). Do NOT run until the psychometric review service is built — otherwise the run is non-psychometric and wasted.
+- **Invoke the CLI with `dotnet run --project <proj> -- <args>` directly. Do NOT use `ss.cmd`** — the shim mis-parses its own `rem` lines when spawned from a non-interactive shell and exits 255. Use `--no-build` if a VS/host instance holds the build lock (stop the host with `Get-Process StreetSamurai.Blazor | Stop-Process -Force` if you need a fresh build).
+- **Providers: all trusted-4** (Claude, OpenAI, DeepSeek, Gemini), round-robined for model + temperament diversity. DeepSeek runs harsh and Gemini generous; the spread is expected — read the pooled mean, not any single provider. (Single chokepoint to narrow if ever needed: `StrandReviewService.ReviewProviderIds()`.)
+- Reviews are **psychometric-grounded**: each persona reviews through its OCEAN/HEXACO/MBTI/Enneagram/DISC profile (delivered by the Legion package, injected via `BuildWhoBlock`).
 - Reviews fingerprint the exact text via `ContentHash`. Pool/score ALWAYS by the ContentHash the run produced.
-- **LATEST-RUN-ONLY for display/scoring**: a persona accrues a new review every run, so the same persona can have many rows. The "current state" of a strand/beat is the **most recent review per persona** (or the latest run per group) — dedupe to that. Never average 4-5-6 stale opinions from the same persona; show only the most recent Focus Group result.
+- **LATEST-RUN-ONLY for display/scoring**: dedupe to the most recent review per persona; never average stale opinions from the same persona across runs.
+
+## Why sampled, not census
+A score needs precision, not volume: with population SD ≈ 8, a sample of ~120 gives a 95% CI of ±~1.5 — tight enough to catch the ±2–3 pt moves edits produce. A 1024-census buys ±0.5 at ~8× the API calls (the per-call strand-input tokens dominate cost). And you only ever read a dozen reviews. So the default casts cheap **score-ballots** (just numbers + one gripe) wide, then writes **full prose** for only the most informative few.
 
 ## Steps when invoked
 
-1. **Resolve the strand.** If an arg slug/id was given, use it. Otherwise default to the most-recently-edited strand:
+1. **Resolve the strand.** If an arg slug/id was given, use it. Otherwise default to the most-recently-edited:
    `SELECT TOP 1 Id, Slug, Title FROM Strands ORDER BY UpdatedAt DESC`. Echo which strand you're evaluating.
 
-2. **GOTCHA — never edit beats during a run.** Each panel exports the strand text at its own start; editing mid-run splits panels across versions. If beats were just edited, confirm the edit is fully applied BEFORE starting. Run the three panels **sequentially, in the background** (sequential avoids tripling concurrent API load):
+2. **GOTCHA — never edit beats during a run.** The run exports the strand text at its start; editing mid-run splits the panel across versions. If beats were just edited, confirm the edit is fully applied BEFORE starting.
+
+3. **Run the default sampled pass** (one command — ballots + study + prose, all in one). Launch with `run_in_background: true`; wait for the completion notification (don't poll):
    ```
-   foreach ($g in 'Group A','Group B','Group C','Group D') {
-     dotnet run --project <proj> -- --review-strand --slug <slug> --group $g
-   }
+   dotnet run --project <proj> --no-build -- --review-strand --slug <slug>
    ```
-   (Four groups now = full population ≈ 1024 reviews per run. Use `--no-build` if a VS instance holds the build lock.)
-   Launch with `run_in_background: true`; wait for the completion notification (don't poll).
+   Knobs: `--ballots N` (default 120) sets the sample size; `--prose N` (default 10) sets how many full reviews to write. The command prints the strand mean + SD + 95% CI, cluster count, and the full Pareto/contested/seam report verbatim.
 
-3. **Pool + score** (PowerShell + System.Data.SqlClient — Unicode-safe; identify the newest ContentHash first, then stat it). Report:
-   - Newest ContentHash for the strand and its review count (expect ~384).
-   - **Pooled mean, SD, and 95% CI** (`±1.96*SD/sqrt(n)`).
-   - **Per-panel** A/B/C mean/SD/min/max and the cross-panel spread (agreement check).
-   - **Provider split** (deepseek/openai/claude/gemini means) — the temperament gap (~12 pts) usually dwarfs the panel gap; deepseek is the toughest critic, gemini the most generous.
-   - Compare the pooled mean vs the strand's prior-version means (other ContentHashes), and state whether the change cleared the ±CI band or was inside the noise.
+4. **Pool + verify** (PowerShell + System.Data.SqlClient — Unicode-safe; newest ContentHash first). The CLI already prints the headline number, but confirm/expand:
+   - Newest ContentHash + ballot count (expect ≈ `--ballots`).
+   - **Pooled mean, SD, 95% CI** (`±1.96*SD/sqrt(n)`).
+   - **Provider split** (claude / openai / deepseek / gemini means) — the temperament gap (~9–12 pts; deepseek harshest, gemini most generous) usually dwarfs any panel gap. Read the pooled mean.
+   - Compare vs the strand's prior-version means (other ContentHashes): did the change clear the ±CI band, or is it inside the noise?
 
-4. **Segment study** (the diagnostic — market-segmentation + social-choice + welfare + multi-objective):
-   `dotnet run --project <proj> -- --review-strand --slug <slug> --study`
-   Print its report verbatim: emergent audience clusters, **Pareto-improving** beats (fix-for-everyone, no tradeoff — do these first), **contested** beats (real forks, who-gains/who-loses), **seams** (transition/tissue), and the flow-vs-enjoyment guard.
+5. **Per-beat + complaints.** The per-beat % is already computed onto each beat (from the ballots' 1–5 micro-scores). For "what's gone awry," cluster the ballots' one-line **weakness** tags (stored in `Improvements`) by LIKE-count prevalence, and read the ~`--prose` full reviews (the harshest / median / most-generous spectrum) for the *why*.
 
-5. **Bottom-decile complaints** — pull the lowest ~10% of reviews for the newest ContentHash with provider + improvement notes, and cluster the recurring complaints (theme prevalence across ALL notes via LIKE counts is a good second cut). This is the "what's gone awry" view.
+6. **Unified report.** Lead with the verdict (mean + CI vs prior versions: real move or noise?), then the study's fix-list (Pareto beats first — fix-for-everyone; then contested forks; then seams), then the clustered weakness tags, then the handful of full reviews. Be honest — if it regressed, name the beats/lines driving it so the author can override the panel where voice warrants.
 
-6. **Unified report.** Lead with the verdict (pooled mean + CI vs prior versions: real move or noise?), then per-panel + provider, then the study's fix-list, then the clustered bottom-decile complaints. Be honest — if it regressed, say so and name the lines/beats driving it.
+## Modes / escape hatches
+- **Default (bare)** → sampled two-tier. Best for routine "did my edit move the needle?" Cheap, a few minutes.
+- `--ballots 60` → quicker pulse (CI ±~2.1) for fast iteration; `--ballots 200` for a milestone read.
+- `--census` → full-population pass: every enriched persona writes a full review (~1024). The old behavior — use only when you want the absolute-tightest number; expensive.
+- `--group "Group X"` → focus-group tracking on a fixed roster (full reviews) across versions.
+- `--same-personas` → re-run the exact personas from the strand's last batch (before/after focus group).
+- `--study` → standalone segment study only (the default already folds this in).
 
 ## Reference: pooled-stats PowerShell skeleton
 ```powershell
 $cs='Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;'
 Add-Type -AssemblyName System.Data
-$conn=New-Object System.Data.SqlClient.SqlConnection $cs; $conn.Open()
-# newest hash for the strand:
-#   SELECT TOP 1 ContentHash FROM StrandReviews WHERE StrandId=@sid ORDER BY ReviewedAt DESC
-# per-panel:  GROUP BY FocusGroupName  -> AVG(CAST(Score AS FLOAT)), STDEV(...), COUNT(*)
-# provider:   GROUP BY ProviderId
-# bottom decile: SELECT TOP (n/10) Score, ProviderId, Improvements ... ORDER BY Score ASC
-$conn.Close()
+# newest hash:  SELECT TOP 1 ContentHash FROM StrandReviews WHERE StrandId=@sid ORDER BY ReviewedAt DESC
+# pooled:       latest review per persona for that hash -> AVG/STDEV/COUNT, CI = 1.96*SD/sqrt(n)
+# provider:     GROUP BY ProviderId  (claude vs openai)
+# weakness tags: SELECT Improvements ... WHERE ContentHash=@h AND Improvements IS NOT NULL  (cluster by LIKE)
+# full reviews:  WHERE ContentHash=@h AND LEN(ReviewText) > 0   (the ~10 prose upgrades)
 ```
 
 ## Notes
-- The plain A/B/C panels are pure measurement (score + CI). The `--study` pass is the only mode that runs the clustering / Pareto / contested / seam analysis.
-- If the score regressed and the bottom-decile blames specific lines, surface them by name so the author can decide line-by-line — author voice can legitimately override the panel.
+- The ballots ARE the study sample (they carry per-beat 1–5 scores), so the default already produces the clustering / Pareto / contested / seam analysis — no separate `--study` needed.
+- Strand headline score = mean of the ballots (tagged `Group Sample <hash>` so `RecomputeScoresAsync` counts them); per-beat % = mean of the ballots' micro-scores mapped positional→SortKey order.
+- If the score regressed and the weakness tags / prose blame specific lines, surface them by name — author voice can legitimately override the panel.

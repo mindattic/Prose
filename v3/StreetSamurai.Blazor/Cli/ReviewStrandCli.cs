@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using MindAttic.Legion;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Services;
@@ -26,8 +27,8 @@ public static class ReviewStrandCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? id = null, slug = null, group = null;
-        int readers = 50, panel = 128;
-        bool samePersonas = false, study = false;
+        int readers = 50, panel = 128, ballots = 120, prose = 10;
+        bool samePersonas = false, study = false, census = false;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
@@ -39,6 +40,9 @@ public static class ReviewStrandCli
                 case "--group":         if (i + 1 < args.Length) group = args[++i]; break;
                 case "--study":         study = true; break;
                 case "--panel":         if (i + 1 < args.Length && int.TryParse(args[++i], out var pn)) panel = pn; break;
+                case "--ballots":       if (i + 1 < args.Length && int.TryParse(args[++i], out var bn)) ballots = bn; break;
+                case "--prose":         if (i + 1 < args.Length && int.TryParse(args[++i], out var pr)) prose = pr; break;
+                case "--census":        census = true; break;
             }
         }
 
@@ -104,6 +108,49 @@ public static class ReviewStrandCli
             }
             catch (Exception ex) { Console.Error.WriteLine($"[review-strand] Study crashed: {ex.Message}"); return 1; }
         }
+
+        // ── DEFAULT: economical SAMPLED two-tier — cheap score-ballots + a few prose
+        //    upgrades + the per-beat study, in one pass. Explicit modes (--census,
+        //    --group, --same-personas) opt out into full-review runs below. ──
+        if (!census && string.IsNullOrWhiteSpace(group) && !samePersonas)
+        {
+            if (ballots <= 0) ballots = 120;
+            if (prose < 0) prose = 0;
+            Console.WriteLine("[review-strand] SAMPLED REVIEW (economical default):");
+            Console.WriteLine($"   Id:    {strandId}");
+            Console.WriteLine($"   Slug:  {strandSlug}");
+            Console.WriteLine($"   Title: {strandTitle}");
+            Console.WriteLine($"   {ballots} score-ballots (round-robin across the trusted-4) + {prose} prose upgrades + per-beat study — one pass.");
+            Console.WriteLine("[review-strand] Running…");
+            var bp = new Progress<int>(k => { if (k == ballots || k % 20 == 0) Console.WriteLine($"   …{k}/{ballots} ballots done"); });
+            try
+            {
+                var sr = await reviewer.RunSampledReviewAsync(strandId, ballots, prose, bp);
+                Console.WriteLine($"[review-strand] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed), {sr.ProseAdded} prose upgraded.");
+                Console.WriteLine($"[review-strand] Strand {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
+                Console.WriteLine();
+                Console.WriteLine(sr.ReportMarkdown);
+
+                if (sr.BallotsSaved > 0)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("[review-strand] Synthesizing the \"Readers say\" synopsis…");
+                    try
+                    {
+                        var summary = await reviewer.GenerateSummaryAsync(strandId);
+                        Console.WriteLine();
+                        Console.WriteLine($"=== READER SYNOPSIS ({summary.ReviewCount} reviews, avg {summary.AvgScore:0.0}/100) ===");
+                        Console.WriteLine(summary.SummaryMarkdown);
+                    }
+                    catch (Exception ex) { Console.Error.WriteLine($"[review-strand] Synopsis failed: {ex.Message}"); }
+                }
+                return sr.BallotsSaved > 0 ? 0 : 1;
+            }
+            catch (Exception ex) { Console.Error.WriteLine($"[review-strand] Sampled run crashed: {ex.Message}"); return 1; }
+        }
+
+        // --census: full-population pass (every enriched persona writes a full review).
+        if (census) readers = PersonaLibrary.Enriched.Count;
 
         // Focus-group mode: reuse the exact personas from the strand's last batch.
         List<string>? personaIds = null;

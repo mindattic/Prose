@@ -1,5 +1,6 @@
 using System.Text;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MindAttic.Legion;
@@ -70,7 +71,7 @@ public class StrandReviewService
     {
         if (readers <= 0) readers = 1;
 
-        var providers = cfg.ActiveProviderIds;
+        var providers = ReviewProviderIds();
         if (providers.Count == 0)
             throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot run reviews.");
 
@@ -147,6 +148,355 @@ public class StrandReviewService
         return new ReviewRunResult(personas.Count, saved.Count, failed, avg, export.ContentHash, export.Path);
     }
 
+    public sealed record SampledRunResult(
+        int Ballots, int BallotsSaved, int ProseAdded, int Failed,
+        double MeanScore, double Sd, double Ci95, int Clusters,
+        string ContentHash, string ReportMarkdown, string ExportPath);
+
+    /// <summary>Economical default: a stratified SAMPLE of personas casts cheap
+    /// score-only BALLOTS (overall + flow + per-beat 1-5 + one weakness tag), then
+    /// only the most informative ballots (harshest / median / most generous) are
+    /// upgraded with a full prose review. The ballots double as the segment study —
+    /// clustered into emergent audiences with a Pareto/contested per-beat report —
+    /// so one pass yields a tight-CI strand score, per-beat %, a complaint
+    /// histogram, the decision report, AND a handful of readable reviews, at a
+    /// fraction of a census run's calls.</summary>
+    public async Task<SampledRunResult> RunSampledReviewAsync(
+        Guid strandId, int ballotCount, int proseCount,
+        IProgress<int>? progress = null, CancellationToken ct = default)
+    {
+        if (ballotCount <= 0) ballotCount = 120;
+        if (proseCount < 0) proseCount = 0;
+        var providers = ReviewProviderIds();
+        if (providers.Count == 0)
+            throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot run reviews.");
+
+        var export = await exporter.ExportAsync(strandId, numberBeats: true, ct);
+        var beatCount = export.BeatCount;
+        // "Group"-prefixed so the headline strand Score (RecomputeScores) counts these ballots.
+        var groupName = $"Group Sample {export.ContentHash[..6]}";
+        var personas = SampleEnrichedPersonas(ballotCount);
+
+        // ── Tier 1: cheap score-only ballots (providers round-robined → even split). ──
+        var sem = new SemaphoreSlim(MaxConcurrency);
+        var bag = new System.Collections.Concurrent.ConcurrentBag<StrandReview>();
+        var done = 0; var failed = 0;
+        var tasks = new List<Task>(personas.Count);
+        for (int i = 0; i < personas.Count; i++)
+        {
+            var persona = personas[i];
+            var provider = providers[i % providers.Count];
+            tasks.Add(Task.Run(async () =>
+            {
+                await sem.WaitAsync(ct);
+                try
+                {
+                    var r = await BallotOnceAsync(strandId, export, persona, provider, ct);
+                    if (r != null) { r.FocusGroupName = groupName; bag.Add(r); }
+                    else Interlocked.Increment(ref failed);
+                }
+                catch (Exception ex) { Interlocked.Increment(ref failed); log.LogWarning(ex, "Ballot failed: {P}", persona.Id); }
+                finally { sem.Release(); progress?.Report(Interlocked.Increment(ref done)); }
+            }, ct));
+        }
+        await Task.WhenAll(tasks);
+
+        var saved = bag.ToList();
+        if (saved.Count == 0)
+            return new SampledRunResult(personas.Count, 0, 0, failed, 0, 0, 0, 0, export.ContentHash,
+                "_No ballots saved — check provider API keys / connectivity._", export.Path);
+
+        // ── Tier 2: upgrade the most informative ballots with full prose. ──
+        int proseAdded = 0;
+        if (proseCount > 0)
+        {
+            var picks = SelectInformative(saved, Math.Min(proseCount, saved.Count));
+            var psem = new SemaphoreSlim(MaxConcurrency);
+            var ptasks = picks.Select(rv => Task.Run(async () =>
+            {
+                await psem.WaitAsync(ct);
+                try
+                {
+                    var persona = PersonasByIds(new[] { rv.PersonaId }).FirstOrDefault();
+                    if (persona == null) return;
+                    var prose = await ProseOnceAsync(export, persona, rv.ProviderId, ct);
+                    if (prose != null)
+                    {
+                        rv.ReviewText = prose.Value.review.Trim();
+                        if (prose.Value.improvements.Count > 0) rv.Improvements = string.Join("\n", prose.Value.improvements);
+                        Interlocked.Increment(ref proseAdded);
+                    }
+                }
+                catch (Exception ex) { log.LogWarning(ex, "Prose upgrade failed: {P}", rv.PersonaId); }
+                finally { psem.Release(); }
+            })).ToList();
+            await Task.WhenAll(ptasks);
+        }
+
+        // ── Diagnostic: cluster the ballots' per-beat matrix → Pareto/contested report. ──
+        string report = "_(per-beat report unavailable — too few ballots carried beat scores.)_";
+        int clusters = 0;
+        var withBeats = saved.Where(r => r.BeatScores.Count > 0).ToList();
+        if (withBeats.Count >= 8)
+        {
+            try
+            {
+                var matrix = BuildMatrix(withBeats, beatCount);
+                var clustering = ReviewClusterer.Cluster(matrix);
+                var rows = new List<SegmentAggregator.Reviewer>(withBeats.Count);
+                for (int i = 0; i < withBeats.Count; i++)
+                {
+                    var bs = withBeats[i].BeatScores.ToDictionary(x => x.BeatNumber, x => x.Score);
+                    rows.Add(new SegmentAggregator.Reviewer(clustering.Assignments[i], withBeats[i].Score, withBeats[i].FlowScore, bs));
+                }
+                var agg = SegmentAggregator.Build(rows, beatCount, clustering.K);
+                var labelById = agg.Clusters.ToDictionary(c => c.Id, c => c.Label);
+                for (int i = 0; i < withBeats.Count; i++)
+                {
+                    withBeats[i].ClusterId = clustering.Assignments[i];
+                    withBeats[i].ClusterLabel = labelById.TryGetValue(clustering.Assignments[i], out var lbl) ? Trunc(lbl, 60) : null;
+                }
+                report = agg.Markdown; clusters = clustering.K;
+            }
+            catch (Exception ex) { log.LogWarning(ex, "Sampled clustering failed"); }
+        }
+
+        // Persist (ballots + prose upgrades + cluster stamps), then recompute scores.
+        await using (var db = await dbFactory.CreateDbContextAsync(ct))
+        {
+            db.StrandReviews.AddRange(saved);
+            await db.SaveChangesAsync(ct);
+        }
+        await RecomputeScoresAsync(strandId, ct);
+
+        var scores = saved.Select(r => (double)r.Score).ToList();
+        var mean = scores.Average();
+        var sd = scores.Count > 1 ? Math.Sqrt(scores.Sum(x => (x - mean) * (x - mean)) / (scores.Count - 1)) : 0.0;
+        var ci = scores.Count > 1 ? 1.96 * sd / Math.Sqrt(scores.Count) : 0.0;
+
+        return new SampledRunResult(personas.Count, saved.Count, proseAdded, failed,
+            Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters,
+            export.ContentHash, report, export.Path);
+    }
+
+    /// <summary>Pick the most informative ballots for prose upgrade: the harshest,
+    /// the most generous, and a band around the median — a spectrum worth reading.</summary>
+    private static List<StrandReview> SelectInformative(List<StrandReview> all, int k)
+    {
+        if (k >= all.Count) return all.ToList();
+        var ordered = all.OrderBy(r => r.Score).ToList();
+        int low = Math.Max(1, k * 3 / 10);
+        int high = Math.Max(1, k * 3 / 10);
+        int mid = Math.Max(0, k - low - high);
+        var picked = new List<StrandReview>();
+        picked.AddRange(ordered.Take(low));                                            // harshest
+        picked.AddRange(ordered.Skip(Math.Max(low, ordered.Count - high)).Take(high)); // most generous
+        if (mid > 0)
+        {
+            int start = Math.Clamp(ordered.Count / 2 - mid / 2, 0, Math.Max(0, ordered.Count - mid));
+            picked.AddRange(ordered.Skip(start).Take(mid));                            // median band
+        }
+        return picked.DistinctBy(r => r.Id).Take(k).ToList();
+    }
+
+    // ── Review-driven auto-editor: weight the latest reviews, target the lowest /
+    //    most-flagged beats (raise the floor), and propose a conservative rewrite of
+    //    each with a before/after for an approval survey. ──────────────────────────
+
+    public sealed record EditProposal(
+        int BeatNumber, int Position, double Mean, int Flags, bool Contested, double Priority,
+        IReadOnlyList<string> Addresses, string Rationale, string Before, string After);
+
+    /// <summary>From the strand's latest review batch, score each beat's FIX-PRIORITY
+    /// = floor (5 − mean) × prevalence (1 + ½·times flagged) × a modifier that favors
+    /// fix-for-everyone beats (low across all clusters) and discounts contested ones,
+    /// then conservatively rewrite the top <paramref name="topN"/> floor-draggers.
+    /// Returns before/after proposals for an approval survey — nothing is written.</summary>
+    public async Task<List<EditProposal>> ProposeEditsAsync(Guid strandId, int topN, CancellationToken ct = default)
+    {
+        if (topN <= 0) topN = 5;
+        var providers = ReviewProviderIds();
+        if (providers.Count == 0)
+            throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot edit.");
+        var editProvider = providers.Contains("claude") ? "claude" : providers[0];
+
+        var export = await exporter.ExportAsync(strandId, numberBeats: true, ct);
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var latestHash = await db.StrandReviews.Where(r => r.StrandId == strandId)
+            .OrderByDescending(r => r.ReviewedAt).Select(r => r.ContentHash).FirstOrDefaultAsync(ct);
+        if (string.IsNullOrEmpty(latestHash)) return new List<EditProposal>();
+
+        var all = await db.StrandReviews
+            .Where(r => r.StrandId == strandId && r.ContentHash == latestHash)
+            .Include(r => r.BeatScores).ToListAsync(ct);
+        var reviews = all.GroupBy(r => r.PersonaId)
+            .Select(g => g.OrderByDescending(r => r.ReviewedAt).First()).ToList();
+        if (reviews.Count == 0) return new List<EditProposal>();
+
+        var ordered = await db.StrandBeats.Where(sb => sb.StrandId == strandId)
+            .OrderBy(sb => sb.SortKey).Include(sb => sb.Beat).Select(sb => sb.Beat!).ToListAsync(ct);
+        int n = ordered.Count;
+        if (n == 0) return new List<EditProposal>();
+
+        // Per-position aggregates (positional 1..N matches the numbered export the readers saw).
+        var byPos = new Dictionary<int, List<(int cluster, int score)>>();
+        foreach (var r in reviews)
+            foreach (var bs in r.BeatScores)
+                if (bs.BeatNumber >= 1 && bs.BeatNumber <= n)
+                {
+                    if (!byPos.TryGetValue(bs.BeatNumber, out var l)) { l = new(); byPos[bs.BeatNumber] = l; }
+                    l.Add((r.ClusterId ?? -1, bs.Score));
+                }
+        var mean = new double[n + 1];
+        var contested = new bool[n + 1];
+        for (int p = 1; p <= n; p++)
+        {
+            if (byPos.TryGetValue(p, out var l) && l.Count > 0)
+            {
+                mean[p] = l.Average(x => x.score);
+                var cm = l.Where(x => x.cluster >= 0).GroupBy(x => x.cluster).Select(g => g.Average(x => x.score)).ToList();
+                if (cm.Count >= 2) contested[p] = (cm.Max() - cm.Min()) >= 1.2;
+            }
+            else mean[p] = 3.0;
+        }
+
+        var improvLines = reviews.Where(r => !string.IsNullOrWhiteSpace(r.Improvements))
+            .SelectMany(r => r.Improvements!.Split('\n')).Select(s => s.Trim())
+            .Where(s => s.Length > 0).ToList();
+        var flags = new int[n + 1];
+        for (int p = 1; p <= n; p++)
+            flags[p] = improvLines.Count(s => Regex.IsMatch(s, $@"\bbeat\s*0*{p}\b", RegexOptions.IgnoreCase));
+
+        double Priority(int p)
+        {
+            double floor = Math.Max(0, 5.0 - mean[p]);
+            double prevalence = 1 + 0.5 * flags[p];
+            double mod = contested[p] ? 0.8 : (mean[p] < 3.8 ? 1.4 : 1.0);
+            return floor * prevalence * mod;
+        }
+
+        var candidates = Enumerable.Range(1, n)
+            .Where(p => mean[p] < 4.2)               // only floor problems — leave strong beats alone
+            .OrderByDescending(Priority).Take(topN).ToList();
+
+        var globalThemes = improvLines
+            .Where(s => !Regex.IsMatch(s, @"\bbeat\b", RegexOptions.IgnoreCase))
+            .GroupBy(s => s.ToLowerInvariant()).OrderByDescending(g => g.Count())
+            .Take(6).Select(g => g.First()).ToList();
+
+        string Neighbors(int p)
+        {
+            var sb = new StringBuilder();
+            if (p > 1) sb.Append($"[Beat {p - 1} — voice reference only]\n{ordered[p - 2].Text}\n\n");
+            if (p < n) sb.Append($"[Beat {p + 1} — voice reference only]\n{ordered[p].Text}\n");
+            return sb.ToString();
+        }
+
+        var proposals = new List<EditProposal>();
+        foreach (var p in candidates)
+        {
+            var beat = ordered[p - 1];
+            var complaints = improvLines
+                .Where(s => Regex.IsMatch(s, $@"\bbeat\s*0*{p}\b", RegexOptions.IgnoreCase))
+                .Distinct().Take(8).ToList();
+            var edit = await EditOnceAsync(export.Title, beat.Text, p, mean[p], contested[p],
+                complaints, globalThemes, Neighbors(p), editProvider, ct);
+            if (edit == null) continue;
+            if (string.Equals(edit.Value.after.Trim(), beat.Text.Trim(), StringComparison.Ordinal)) continue; // no-op
+            proposals.Add(new EditProposal(beat.Number, p, Math.Round(mean[p], 2), flags[p], contested[p],
+                Math.Round(Priority(p), 2), edit.Value.addresses, edit.Value.rationale, beat.Text, edit.Value.after));
+        }
+        return proposals.OrderByDescending(x => x.Priority).ToList();
+    }
+
+    private async Task<(string after, string rationale, IReadOnlyList<string> addresses)?> EditOnceAsync(
+        string title, string beatText, int pos, double mean, bool contested,
+        List<string> complaints, List<string> globalThemes, string neighbors, string provider, CancellationToken ct)
+    {
+        var key = ResolveKey(provider);
+        if (string.IsNullOrWhiteSpace(key)) return null;
+        var model = cfg.ModelOverrides.TryGetValue(provider, out var m) && !string.IsNullOrWhiteSpace(m)
+            ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
+
+        var sb = new StringBuilder();
+        sb.AppendLine($"BEAT {pos} — reader score {mean:0.0}/5{(contested ? " (CONTESTED: audiences disagree — do NOT lose what one camp loves)" : "")}.");
+        sb.AppendLine();
+        sb.AppendLine("CURRENT TEXT:");
+        sb.AppendLine(beatText);
+        sb.AppendLine();
+        if (complaints.Count > 0)
+        {
+            sb.AppendLine("WHAT READERS SAID ABOUT THIS BEAT:");
+            foreach (var c in complaints) sb.AppendLine("- " + c);
+            sb.AppendLine();
+        }
+        else if (globalThemes.Count > 0)
+        {
+            sb.AppendLine("OVERALL READER GRIPES (no beat-specific note — apply ONLY if they genuinely fit this beat):");
+            foreach (var t in globalThemes) sb.AppendLine("- " + t);
+            sb.AppendLine();
+        }
+        if (!string.IsNullOrWhiteSpace(neighbors))
+        {
+            sb.AppendLine("NEIGHBORING BEATS (match this exact voice; do NOT edit or repeat them):");
+            sb.AppendLine(neighbors);
+        }
+        sb.AppendLine($"Revise BEAT {pos} per your rules — the smallest change that fixes the complaints. Return ONLY the JSON.");
+
+        var raw = await legion.CallAsync(provider, key!, model, BuildEditorSystemPrompt(title), sb.ToString(),
+            maxTokens: 1600, temperature: 0.6, ct);
+        return TryParseEdit(raw);
+    }
+
+    private static string BuildEditorSystemPrompt(string title) =>
+$@"You are the developmental line-editor for a hard-edged near-future cyberpunk audio-fiction series. You revise ONE beat at a time to widen its appeal WITHOUT betraying the author's voice. The story is ""{title}"".
+
+VOICE: dry, controlled, witty-under-pressure; the protagonist Kyle is unflappable and audacity is the punchline. Match the neighboring beats exactly.
+
+HARD RULES — a violation makes your edit unusable:
+1. Do NOT invent plot, characters, capabilities, or world facts. Re-render only what is already there.
+2. PRESERVE signature lines. Vivid, voice-defining phrasings and earned character beats stay VERBATIM — change the connective tissue around them, never the keepers. When in doubt, keep the line.
+3. NO filler-wit: never a wry universal-truth aside (e.g. ""X does not, in fact, enjoy Y""). Every sentence must reveal character, raise stakes, or land a real joke. Kill on-the-nose theme-explaining and title-drops.
+4. Canon terms are exact: the in-head computer is the ""Neuretics"" (NEVER ""lattice""); the reality-warp phenomenon is ""The Weather""; the currency symbol is Φ.
+5. Prefer SHORTER. Cut drag, repetition, and over-narration. Add a clause of grounding ONLY where readers were genuinely confused about the physical action.
+6. CONSERVATIVE: make the smallest change that addresses the complaints. If the beat is already fine, return it nearly unchanged. Keep roughly the same length unless cutting drag.
+
+Return ONLY a JSON object, nothing else:
+{{""after"": ""<the revised beat, full text>"", ""rationale"": ""<one sentence: what you changed and why>"", ""addresses"": [""<the complaint this fixes>"", ...]}}";
+
+    private static (string after, string rationale, IReadOnlyList<string> addresses)? TryParseEdit(string? raw)
+    {
+        if (string.IsNullOrWhiteSpace(raw)) return null;
+        var text = raw.Trim();
+        if (text.StartsWith("```"))
+        {
+            var nl = text.IndexOf('\n');
+            if (nl >= 0) text = text[(nl + 1)..];
+            if (text.EndsWith("```")) text = text[..^3];
+            text = text.Trim();
+        }
+        var open = text.IndexOf('{');
+        var close = text.LastIndexOf('}');
+        if (open < 0 || close <= open) return null;
+        try
+        {
+            using var doc = JsonDocument.Parse(text[open..(close + 1)]);
+            var root = doc.RootElement;
+            if (!root.TryGetProperty("after", out var aEl) || aEl.ValueKind != JsonValueKind.String) return null;
+            var after = aEl.GetString() ?? "";
+            if (string.IsNullOrWhiteSpace(after)) return null;
+            var rationale = root.TryGetProperty("rationale", out var rEl) && rEl.ValueKind == JsonValueKind.String
+                ? rEl.GetString()!.Trim() : "";
+            var addresses = new List<string>();
+            if (root.TryGetProperty("addresses", out var adEl) && adEl.ValueKind == JsonValueKind.Array)
+                addresses = adEl.EnumerateArray().Where(x => x.ValueKind == JsonValueKind.String)
+                    .Select(x => x.GetString()!.Trim()).Where(x => x.Length > 0).ToList();
+            return (after.Trim(), rationale, addresses);
+        }
+        catch { return null; }
+    }
+
     public sealed record StudyRunResult(int Requested, int Saved, int Failed, int Clusters,
         double MeanScore, double MeanFlow, string ContentHash, string ReportMarkdown);
 
@@ -159,7 +509,7 @@ public class StrandReviewService
         Guid strandId, int panelSize, IProgress<int>? progress = null, CancellationToken ct = default)
     {
         if (panelSize <= 0) panelSize = 128;
-        var providers = cfg.ActiveProviderIds;
+        var providers = ReviewProviderIds();
         if (providers.Count == 0)
             throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot run a study.");
 
@@ -332,6 +682,81 @@ public class StrandReviewService
         return review;
     }
 
+    /// <summary>One cheap SCORE-ONLY ballot: overall + flow + per-beat 1-5 + a single
+    /// weakness tag, no prose paragraph. The wide-net scoring/per-beat tier.</summary>
+    private async Task<StrandReview?> BallotOnceAsync(
+        Guid strandId, StrandMarkdownExporter.StrandExport export, Persona persona, string provider, CancellationToken ct)
+    {
+        var key = ResolveKey(provider);
+        if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
+        var model = cfg.ModelOverrides.TryGetValue(provider, out var m) && !string.IsNullOrWhiteSpace(m)
+            ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
+
+        var system = BuildBallotSystemPrompt(persona, export.Title, export.BeatCount);
+        var raw = await legion.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: 900, temperature: 0.85, ct);
+        if (!TryParseBallot(raw, export.BeatCount, out var score, out var flow, out var weakness, out var beatScores))
+        {
+            log.LogWarning("Unparseable ballot from {Persona} via {Provider}", persona.Id, provider);
+            return null;
+        }
+        var review = new StrandReview
+        {
+            Id           = Guid.CreateVersion7(),
+            StrandId     = strandId,
+            PersonaId    = persona.Id,
+            PersonaName  = persona.Name,
+            PersonaBlurb = FirstLine(persona.PersonalityMarkdown),
+            ProviderId   = provider,
+            Model        = string.IsNullOrWhiteSpace(model) ? null : model,
+            Score        = Math.Clamp(score, 1, 100),
+            FlowScore    = flow.HasValue ? Math.Clamp(flow.Value, 1, 100) : null,
+            ReviewText   = "",
+            Improvements = string.IsNullOrWhiteSpace(weakness) ? null : weakness.Trim(),
+            ContentHash  = export.ContentHash,
+            BeatCount    = export.BeatCount,
+            ReviewedAt   = DateTime.UtcNow,
+            CreatedAt    = DateTime.UtcNow,
+            UpdatedAt    = DateTime.UtcNow,
+        };
+        if (beatScores != null)
+            foreach (var kv in beatScores)
+                review.BeatScores.Add(new StrandReviewBeatScore { ReviewId = review.Id, BeatNumber = kv.Key, Score = kv.Value });
+        return review;
+    }
+
+    /// <summary>Full prose review for an already-balloted persona — used to upgrade
+    /// the most informative ballots with readable text (returns text only).</summary>
+    private async Task<(string review, List<string> improvements)?> ProseOnceAsync(
+        StrandMarkdownExporter.StrandExport export, Persona persona, string provider, CancellationToken ct)
+    {
+        var key = ResolveKey(provider);
+        if (string.IsNullOrWhiteSpace(key)) return null;
+        var model = cfg.ModelOverrides.TryGetValue(provider, out var m) && !string.IsNullOrWhiteSpace(m)
+            ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
+        var system = BuildReviewerSystemPrompt(persona, export.Title);
+        var raw = await legion.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: 1400, temperature: 0.85, ct);
+        return TryParseReview(raw, out _, out var review, out var improvements) ? (review, improvements) : null;
+    }
+
+    private static string BuildBallotSystemPrompt(Persona persona, string title, int beatCount)
+    {
+        var who = BuildWhoBlock(persona);
+        return
+$@"{who}
+
+You are reading a complete short audio-fiction story titled ""{title}"" (below), split into {beatCount} numbered beats, [Beat 1] through [Beat {beatCount}]. Read the WHOLE thing as the person above, then cast a quick SCORING BALLOT — no prose review, just the numbers and one gripe.
+
+Judge each beat for how it LANDS IN CONTEXT (its job in the sequence), not its standalone flash.
+
+Return ONLY a JSON object, nothing else:
+- ""score"": integer 1-100 — your overall reaction as this reader. Use the WHOLE scale; do not default to the 70s.
+- ""flow"": integer 1-100 — how well it hangs together as a sequence (momentum, payoffs, transitions), separate from beat quality.
+- ""weakness"": your single biggest gripe in EIGHT WORDS OR FEWER (e.g. ""ending drags"", ""kid's dialogue too writerly"", ""jargon overload""), or ""none"".
+- ""beat_scores"": rate EVERY beat 1-5 in context (1 = hurt the story, 3 = fine, 5 = highlight), keyed by beat number 1..{beatCount}: {{""1"":4,""2"":3}}.
+
+Be honest and use the whole scale.";
+    }
+
     /// <summary>The persona's voice + their measured psychometric profile (from the
     /// Legion package's embedded profiles), so each reviewer judges THROUGH their
     /// real personality — Openness governs tolerance for the strange/lyrical,
@@ -444,32 +869,51 @@ Return ONLY a JSON object and nothing else:
         if (string.IsNullOrWhiteSpace(key)) return FallbackSummary(reviews, avg, dist);
         var model = LegionClient.DefaultModels.GetValueOrDefault(judge, "");
 
-        // Compact corpus: score + improvements + a trimmed review excerpt per row.
+        // Corpus: score distribution + a gripe TALLY (so the synopsis can calibrate
+        // many/some/a few honestly) + the full-prose reviews (for specific, quotable
+        // observations a single reader made).
+        var tagCounts = reviews
+            .Where(r => !string.IsNullOrWhiteSpace(r.Improvements))
+            .SelectMany(r => r.Improvements!.Split('\n'))
+            .Select(s => s.Trim()).Where(s => s.Length > 0)
+            .GroupBy(s => s.ToLowerInvariant())
+            .Select(g => (tag: g.First(), n: g.Count()))
+            .OrderByDescending(x => x.n).Take(14).ToList();
+        var prose = reviews.Where(r => !string.IsNullOrWhiteSpace(r.ReviewText))
+            .OrderByDescending(r => r.Score).ToList();
+
         var sb = new StringBuilder();
         sb.AppendLine($"{reviews.Count} reader reviews. Average score {avg:0.0}/100.");
         sb.AppendLine($"Score distribution: {string.Join(", ", dist.Select(kv => $"{kv.Key}:{kv.Value}"))}");
         sb.AppendLine();
-        foreach (var r in reviews.OrderByDescending(r => r.Score))
+        if (tagCounts.Count > 0)
         {
-            var excerpt = r.ReviewText.Length > 360 ? r.ReviewText[..360] + "…" : r.ReviewText;
+            sb.AppendLine("MOST-MENTIONED POINTS (point : how many readers raised it) — calibrate many/some/a few from these:");
+            foreach (var (tag, nn) in tagCounts) sb.AppendLine($"- ({nn}×) {tag}");
+            sb.AppendLine();
+        }
+        sb.AppendLine($"FULL REVIEWS ({prose.Count} read in depth — mine these for specific, quotable observations):");
+        foreach (var r in prose)
+        {
+            var excerpt = r.ReviewText.Length > 500 ? r.ReviewText[..500] + "…" : r.ReviewText;
             sb.AppendLine($"- [{r.Score}] {r.PersonaName} ({r.ProviderId}): {excerpt}");
             if (!string.IsNullOrWhiteSpace(r.Improvements))
-                sb.AppendLine($"    fixes: {r.Improvements.Replace("\n", " | ")}");
+                sb.AppendLine($"    notes: {r.Improvements.Replace("\n", " | ")}");
         }
 
         var system =
-@"You are aggregating many reader reviews of a single story into an honest editorial summary for the author — like the summary box at the top of a book's reviews. Be candid and concrete, never flattering. The author wants to know how readers actually reacted and exactly what to fix.";
+@"You generate the AI review-synopsis that sits atop a work's reviews — the ""Customers say"" box, but for fiction and addressed to the author. You read ALL the reader reviews and distill them into a short, natural, conversational synopsis. Attribute strictly by prevalence: ""Readers find…"", ""Many…"", ""Several mention…"", ""A few…"", ""At least one reader noted…"". Weave in one or two SPECIFIC concrete observations an individual reviewer made (credited generically, e.g. ""at least one reader noted that…""), not only generalities. Be candid and never flattering — invent no praise the reviews do not support.";
         var user =
-$@"Here are the reviews (score in brackets), with each reviewer's concrete fix notes:
+$@"Reviews (score in brackets) with each reviewer's notes, plus the prevalence tally:
 
 {sb}
 
-Write a Markdown summary with these sections:
-**What readers think** — 2-4 sentences on the overall reception and the score spread (note if opinion is divided).
-**What landed** — bullet list of the strengths readers repeatedly praised.
-**Top fixes (most-requested first)** — bullet list of the concrete improvements raised most often, each phrased as an actionable change with the kind of issue (grammar / prose / dialogue / pacing / clarity / characters / ending). Rank by how many reviewers raised it.
-**The split** — one line on who tended to score it high vs low and why.
-Be specific. Do not invent praise that the reviews do not support.";
+Write a Markdown summary, leading with the synopsis:
+**Readers say** — a flowing 4–7 sentence synopsis in the ""customers say"" register (prose, NOT bullets): open with the overall reaction calibrated to the score spread; then the recurring themes hedged by how many raised them (most-mentioned first, using many/some/several/a few to match the tally); and fold in at least one SPECIFIC concrete observation a reader made (e.g. ""at least one reader noted that steel doesn't…""). Honest, conversational, concrete.
+**What landed** — bullets: strengths readers repeatedly praised.
+**Top fixes (most-requested first)** — bullets ranked by prevalence, each an actionable change tagged by issue type (grammar / prose / dialogue / pacing / clarity / characters / ending).
+**The split** — one line on who scored it high vs low and why.
+Be specific; do not invent praise the reviews don't support.";
 
         try
         {
@@ -588,6 +1032,11 @@ Be specific. Do not invent praise that the reviews do not support.";
         if (cfg.ApiKeys.TryGetValue(provider, out var k) && !string.IsNullOrWhiteSpace(k)) return k;
         return MindAtticCredentialStore.GetKey(provider);
     }
+
+    /// <summary>Providers used for reviews — all active trusted providers (Claude,
+    /// OpenAI, DeepSeek, Gemini), round-robined for model + temperament diversity.
+    /// (Single chokepoint: narrow this here if a provider ever needs excluding.)</summary>
+    private List<string> ReviewProviderIds() => cfg.ActiveProviderIds.ToList();
 
     /// <summary>Distinct enriched personas (real personalities, not the empty
     /// per-provider defaults), drawn without replacement.</summary>
@@ -792,6 +1241,59 @@ Be specific. Do not invent praise that the reviews do not support.";
                 if (d.Count > 0) beatScores = d;
             }
             return score > 0 && !string.IsNullOrWhiteSpace(review);
+        }
+        catch { return false; }
+    }
+
+    /// <summary>Ballot parse: overall score + flow + one weakness tag + the per-beat
+    /// micro-score object. No prose review expected. Tolerant of fences/preamble.</summary>
+    private static bool TryParseBallot(
+        string? raw, int beatCount, out int score, out int? flow, out string weakness, out Dictionary<int, int>? beatScores)
+    {
+        score = 0; flow = null; weakness = ""; beatScores = null;
+        if (string.IsNullOrWhiteSpace(raw)) return false;
+        var text = raw.Trim();
+        if (text.StartsWith("```"))
+        {
+            var nl = text.IndexOf('\n');
+            if (nl >= 0) text = text[(nl + 1)..];
+            if (text.EndsWith("```")) text = text[..^3];
+            text = text.Trim();
+        }
+        var open = text.IndexOf('{');
+        var close = text.LastIndexOf('}');
+        if (open < 0 || close <= open) return false;
+        try
+        {
+            using var doc = JsonDocument.Parse(text[open..(close + 1)]);
+            var root = doc.RootElement;
+            if (root.TryGetProperty("score", out var sEl))
+            {
+                if (sEl.ValueKind == JsonValueKind.Number && sEl.TryGetInt32(out var si)) score = si;
+                else if (sEl.ValueKind == JsonValueKind.String && int.TryParse(sEl.GetString(), out var ss)) score = ss;
+            }
+            if (root.TryGetProperty("flow", out var fEl))
+            {
+                if (fEl.ValueKind == JsonValueKind.Number && fEl.TryGetInt32(out var fi)) flow = fi;
+                else if (fEl.ValueKind == JsonValueKind.String && int.TryParse(fEl.GetString(), out var fs)) flow = fs;
+            }
+            if (root.TryGetProperty("weakness", out var wEl) && wEl.ValueKind == JsonValueKind.String)
+                weakness = wEl.GetString() ?? "";
+            if (root.TryGetProperty("beat_scores", out var bEl) && bEl.ValueKind == JsonValueKind.Object)
+            {
+                var d = new Dictionary<int, int>();
+                foreach (var p in bEl.EnumerateObject())
+                {
+                    if (!int.TryParse(p.Name, out var bn) || bn < 1 || bn > beatCount) continue;
+                    int v;
+                    if (p.Value.ValueKind == JsonValueKind.Number && p.Value.TryGetInt32(out var iv)) v = iv;
+                    else if (p.Value.ValueKind == JsonValueKind.String && int.TryParse(p.Value.GetString(), out var sv)) v = sv;
+                    else continue;
+                    d[bn] = Math.Clamp(v, 1, 5);
+                }
+                if (d.Count > 0) beatScores = d;
+            }
+            return score > 0;
         }
         catch { return false; }
     }
