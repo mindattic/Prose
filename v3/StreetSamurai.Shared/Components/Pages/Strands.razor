@@ -92,6 +92,12 @@
                                             <i class="bi bi-three-dots me-1"></i>@beatCount
                                         </span>
                                     }
+                                    @if (s.Score.HasValue)
+                                    {
+                                        <span class="badge @ScoreBadge((int)Math.Round(s.Score.Value))" title="Reader score (latest run)">
+                                            <i class="bi bi-star-half me-1"></i>@s.Score.Value.ToString("0")%
+                                        </span>
+                                    }
                                     <span class="badge bg-@StatusColor(s.Status) text-uppercase">@StatusLabel(s.Status)</span>
                                     <button class="btn btn-sm btn-outline-warning" title="Show reader reviews"
                                             @onclick="() => OpenReviewsAsync(s)">
