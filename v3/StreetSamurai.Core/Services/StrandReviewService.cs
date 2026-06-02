@@ -140,6 +140,7 @@ public class StrandReviewService
             await using var db = await dbFactory.CreateDbContextAsync(ct);
             db.StrandReviews.AddRange(saved);
             await db.SaveChangesAsync(ct);
+            await RecomputeScoresAsync(strandId, ct);
         }
 
         var avg = saved.Count > 0 ? saved.Average(r => r.Score) : 0.0;
@@ -223,6 +224,8 @@ public class StrandReviewService
             db.StrandReviews.AddRange(saved);
             await db.SaveChangesAsync(ct);
         }
+
+        await RecomputeScoresAsync(strandId, ct);
 
         var meanScore = saved.Average(r => r.Score);
         var meanFlow = saved.Where(r => r.FlowScore.HasValue).Select(r => (double)r.FlowScore!.Value).DefaultIfEmpty(0).Average();
@@ -503,6 +506,79 @@ Be specific. Do not invent praise that the reviews do not support.";
             buckets[key]++;
         }
         return buckets;
+    }
+
+    /// <summary>
+    /// Recompute and persist latest-run scores: <see cref="Strand.Score"/> = mean of the
+    /// most-recent review per persona within the newest reviewed version; each
+    /// <see cref="Beat.Score"/> = the newest study run's per-beat micro-scores (mean 1-5 →
+    /// percentage, latest study review per persona). "Current state," never an average of
+    /// stale opinions. Called automatically after every review/study run; safe to call
+    /// directly to refresh.
+    /// </summary>
+    public async Task RecomputeScoresAsync(Guid strandId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct);
+        if (strand == null) return;
+
+        var latestHash = await db.StrandReviews
+            .Where(r => r.StrandId == strandId)
+            .OrderByDescending(r => r.ReviewedAt)
+            .Select(r => r.ContentHash)
+            .FirstOrDefaultAsync(ct);
+
+        if (string.IsNullOrEmpty(latestHash))
+        {
+            strand.Score = null; strand.ScoredAt = null;
+            await db.SaveChangesAsync(ct);
+            return;
+        }
+
+        var reviews = await db.StrandReviews
+            .Where(r => r.StrandId == strandId && r.ContentHash == latestHash)
+            .Include(r => r.BeatScores)
+            .ToListAsync(ct);
+
+        // Strand score: the FOCUS-GROUP result only (the A/B/C/D panels), latest review
+        // per persona → mean overall (0-100). Study reviews use a beat-focused prompt and
+        // are excluded from the headline strand score.
+        var latestPerPersona = reviews
+            .Where(r => r.FocusGroupName != null && r.FocusGroupName.StartsWith("Group"))
+            .GroupBy(r => r.PersonaId)
+            .Select(g => g.OrderByDescending(r => r.ReviewedAt).First())
+            .ToList();
+        strand.Score = latestPerPersona.Count > 0 ? latestPerPersona.Average(r => (double)r.Score) : (double?)null;
+        strand.ScoredAt = DateTime.UtcNow;
+
+        // Beat scores: from the study reviews (those carrying per-beat micro-scores),
+        // latest study review per persona, then per beat number mean(1-5) → percentage.
+        var perBeat = reviews
+            .Where(r => r.BeatScores.Count > 0)
+            .GroupBy(r => r.PersonaId)
+            .Select(g => g.OrderByDescending(r => r.ReviewedAt).First())
+            .SelectMany(r => r.BeatScores)
+            .GroupBy(bs => bs.BeatNumber)
+            .ToDictionary(g => g.Key, g => g.Average(x => (double)x.Score) / 5.0 * 100.0);
+
+        if (perBeat.Count > 0)
+        {
+            // perBeat is keyed by POSITIONAL beat index (1..N, the order the study saw the
+            // beats), NOT the global Beat.Number. Map positional → the strand's beats in
+            // reading (SortKey) order.
+            var ordered = await db.StrandBeats
+                .Where(sb => sb.StrandId == strandId)
+                .OrderBy(sb => sb.SortKey)
+                .Include(sb => sb.Beat)
+                .Select(sb => sb.Beat!)
+                .ToListAsync(ct);
+            var now = DateTime.UtcNow;
+            for (int pos = 1; pos <= ordered.Count; pos++)
+                if (perBeat.TryGetValue(pos, out var pct)) { ordered[pos - 1].Score = pct; ordered[pos - 1].ScoredAt = now; }
+        }
+
+        await db.SaveChangesAsync(ct);
     }
 
     // ── helpers ──────────────────────────────────────────────────────────
