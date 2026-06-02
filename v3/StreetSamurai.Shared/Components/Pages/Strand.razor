@@ -1015,22 +1015,38 @@ else
     {
         if (strand == null) return;
         await using var db = await DbFactory.CreateDbContextAsync();
-        var latestHash = await db.StrandReviews.Where(r => r.StrandId == strand.Id)
-            .OrderByDescending(r => r.ReviewedAt).Select(r => r.ContentHash).FirstOrDefaultAsync();
-        var rows = await db.StrandReviews
-            .Where(r => r.StrandId == strand.Id && r.ContentHash == latestHash
-                     && r.FocusGroupName != null && r.FocusGroupName.StartsWith("Group"))
+        var all = await db.StrandReviews
+            .Where(r => r.StrandId == strand.Id)
+            .Include(r => r.BeatScores)
             .ToListAsync();
-        reviewModalItems = rows
-            .GroupBy(r => r.PersonaId)
-            .Select(g => g.OrderByDescending(r => r.ReviewedAt).First())
-            .Select(r => new ReviewsModal.Item(
-                r.PersonaName, r.ProviderId, r.Score,
-                string.IsNullOrWhiteSpace(r.Improvements) ? r.ReviewText : r.ReviewText + "\n\nFixes:\n" + r.Improvements,
-                PersonaLibrary.GetProfile(r.PersonaId)?.Summary()))
-            .ToList();
         reviewModalTitle = $"Reader reviews — {strand.Title}";
         reviewModalMax = 100; reviewModalSuffix = "/100";
+        if (all.Count == 0) { reviewModalItems = new(); reviewsOpen = true; return; }
+
+        // Rows = the personas in the latest run's Group panels; each expands to that
+        // persona's FULL history (every run, newest first) with body + per-beat micros.
+        var latestHash = all.OrderByDescending(r => r.ReviewedAt).Select(r => r.ContentHash).First();
+        var latestPersonas = all
+            .Where(r => r.ContentHash == latestHash && r.FocusGroupName != null && r.FocusGroupName.StartsWith("Group"))
+            .Select(r => r.PersonaId).ToHashSet();
+        reviewModalItems = all
+            .Where(r => latestPersonas.Contains(r.PersonaId))
+            .GroupBy(r => r.PersonaId)
+            .Select(g =>
+            {
+                var ordered = g.OrderByDescending(r => r.ReviewedAt).ToList();
+                var latest = ordered[0];
+                var history = ordered.Select(r => new ReviewsModal.HistoryEntry(
+                    r.ReviewedAt.ToLocalTime().ToString("MM-dd HH:mm"),
+                    r.ContentHash.Length >= 6 ? r.ContentHash[..6] : r.ContentHash,
+                    r.Score,
+                    string.IsNullOrWhiteSpace(r.Improvements) ? r.ReviewText : r.ReviewText + "\n\nFixes:\n" + r.Improvements,
+                    r.BeatScores.Count > 0 ? r.BeatScores.OrderBy(b => b.BeatNumber).Select(b => b.Score).ToList() : null))
+                    .ToList();
+                return new ReviewsModal.Item(latest.PersonaName, latest.ProviderId, latest.Score,
+                    PersonaLibrary.GetProfile(g.Key)?.Summary(), history);
+            })
+            .ToList();
         reviewsOpen = true;
     }
 
@@ -1038,24 +1054,27 @@ else
     {
         if (strand == null) return;
         await using var db = await DbFactory.CreateDbContextAsync();
-        var latestHash = await db.StrandReviews.Where(r => r.StrandId == strand.Id)
-            .OrderByDescending(r => r.ReviewedAt).Select(r => r.ContentHash).FirstOrDefaultAsync();
-        var rows = await db.StrandReviews
-            .Where(r => r.StrandId == strand.Id && r.ContentHash == latestHash
-                     && r.BeatScores.Any(bs => bs.BeatNumber == positional))
-            .Select(r => new
-            {
-                r.PersonaId, r.PersonaName, r.ProviderId, r.ReviewedAt, r.Improvements,
-                Micro = r.BeatScores.Where(bs => bs.BeatNumber == positional).Select(bs => (double)bs.Score).FirstOrDefault()
-            })
+        var all = await db.StrandReviews
+            .Where(r => r.StrandId == strand.Id && r.BeatScores.Any(bs => bs.BeatNumber == positional))
+            .Include(r => r.BeatScores)
             .ToListAsync();
-        reviewModalItems = rows
-            .GroupBy(x => x.PersonaId)
-            .Select(g => g.OrderByDescending(x => x.ReviewedAt).First())
-            .Select(x => new ReviewsModal.Item(
-                x.PersonaName, x.ProviderId, x.Micro,
-                ExtractBeatNote(x.Improvements, positional),
-                PersonaLibrary.GetProfile(x.PersonaId)?.Summary()))
+        reviewModalItems = all
+            .GroupBy(r => r.PersonaId)
+            .Select(g =>
+            {
+                var ordered = g.OrderByDescending(r => r.ReviewedAt).ToList();
+                var latest = ordered[0];
+                static double Micro(StrandReview r, int pos) =>
+                    r.BeatScores.Where(bs => bs.BeatNumber == pos).Select(bs => (double)bs.Score).FirstOrDefault();
+                var history = ordered.Select(r => new ReviewsModal.HistoryEntry(
+                    r.ReviewedAt.ToLocalTime().ToString("MM-dd HH:mm"),
+                    r.ContentHash.Length >= 6 ? r.ContentHash[..6] : r.ContentHash,
+                    Micro(r, positional),
+                    ExtractBeatNote(r.Improvements, positional),
+                    null)).ToList();
+                return new ReviewsModal.Item(latest.PersonaName, latest.ProviderId, Micro(latest, positional),
+                    PersonaLibrary.GetProfile(g.Key)?.Summary(), history);
+            })
             .ToList();
         var title = string.IsNullOrEmpty(b.BeatTitle) ? $"Beat #{positional}" : $"Beat #{positional} — {b.BeatTitle}";
         reviewModalTitle = $"{title} · micro-reviews";
