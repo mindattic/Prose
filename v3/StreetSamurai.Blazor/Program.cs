@@ -441,6 +441,19 @@ if (args.Contains("--review-strand"))
     return;
 }
 
+// CLI mode: review-driven auto-editor. Weight the latest reviews, target the
+// lowest / most-flagged beats (raise the floor), and emit conservative
+// before/after rewrite PROPOSALS (JSON) for an approval survey. Nothing is written.
+//   ss --edit-strand (--id <guid|prefix> | --slug <slug>) [--top N]
+if (args.Contains("--edit-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await EditStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: stitch an existing strand's beats into one combined file (WAV →
 // MP3), copy it to the publish output dir (Downloads by default), and record
 // the publication run + process-event ledger. Headless Publish button.
