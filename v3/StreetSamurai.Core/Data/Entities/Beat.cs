@@ -119,6 +119,15 @@ public class Beat
     /// <summary>True if the beat has been manually rewritten since materialisation.</summary>
     public bool WasCorrected { get; set; }
 
+    /// <summary>Latest-run reader score for this beat as a percentage (0-100), derived
+    /// from the most recent segment-study per-beat micro-scores (mean of 1-5 → %).
+    /// Null = not yet scored. Surfaced in the writer so the author sees where to
+    /// concentrate effort; clicking it opens that beat's micro-reviews.</summary>
+    public double? Score { get; set; }
+
+    /// <summary>When <see cref="Score"/> was last computed (the run it reflects).</summary>
+    public DateTime? ScoredAt { get; set; }
+
     // ── Trailing gap (silence after this beat, before the next) ─────────
     // Each Beat owns the gap that follows it. The last beat in a strand
     // ignores this field. Null = "use the computed default" from

@@ -36,6 +36,14 @@ public class Strand
     /// "stopped". Mirrors the old Episode.Status semantics.</summary>
     public string Status { get; set; } = "draft";
 
+    /// <summary>Latest-run overall reader score as a percentage (0-100): the mean
+    /// of the most-recent focus-group reviews (one per persona). Null = not yet
+    /// reviewed. Shown on the strand; clicking it opens the full reviews.</summary>
+    public double? Score { get; set; }
+
+    /// <summary>When <see cref="Score"/> was last computed (the run it reflects).</summary>
+    public DateTime? ScoredAt { get; set; }
+
     /// <summary>Optional parent strand. A book strand has chapter-strand
     /// children; a saga strand has book-strand children; a standalone
     /// vignette has none. Walking the tree in SortKey order gives the

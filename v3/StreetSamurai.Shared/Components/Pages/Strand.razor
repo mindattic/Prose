@@ -7,6 +7,7 @@
 @using StreetSamurai.Shared.Services
 @using StrandEntity = StreetSamurai.Core.Data.Entities.Strand
 @using BeatEntity = StreetSamurai.Core.Data.Entities.Beat
+@using MindAttic.Legion
 @inject IDbContextFactory<StreetSamuraiDbContext> DbFactory
 @inject StrandWorkbenchService Workbench
 @inject ElevenLabsTtsService Tts
@@ -277,6 +278,14 @@ else
                         {
                             <span class="badge bg-success strand-meta-chip">@NarratedCount/@beats.Count narrated</span>
                         }
+                        @if (strand.Score.HasValue)
+                        {
+                            <span class="badge bg-@ScorePctColor(strand.Score.Value) strand-meta-chip"
+                                  style="cursor:pointer" title="Reader score (latest run) — click for full reviews"
+                                  @onclick="OpenStrandReviewsAsync">
+                                <i class="bi bi-star-half me-1"></i>@strand.Score.Value.ToString("0")%
+                            </span>
+                        }
                         @if (TotalChars > 0)
                         {
                             <span class="text-muted small">@TotalChars.ToString("N0") chars</span>
@@ -541,6 +550,14 @@ else
                                     @onclick='() => CopyGuidAsync(bid, "Beat id")' @onclick:stopPropagation>
                                 <i class="bi @(copiedGuid == bid ? "bi-check-lg" : "bi-hash")"></i>
                             </button>
+                            @if (b.Score.HasValue)
+                            {
+                                <span class="badge bg-@ScorePctColor(b.Score.Value) strand-meta-chip"
+                                      style="cursor:pointer" title="Beat reader score (latest run) — click for this beat's reviews"
+                                      @onclick="() => OpenBeatReviewsAsync(rowPosition, b)" @onclick:stopPropagation>
+                                    @b.Score.Value.ToString("0")%
+                                </span>
+                            }
                             @if (b.Stale)
                             {
                                 <span class="badge bg-danger strand-meta-chip" title="Prose edited past the audio. Re-record to repair.">stale</span>
@@ -976,10 +993,84 @@ else
     .llm-sheet-proposal { background: rgba(13,202,240,0.06); border: 1px solid rgba(13,202,240,0.35); border-radius: 4px; padding: 0.6rem 0.8rem; color: #e6edf3; font-size: 0.88rem; white-space: pre-wrap; }
 </style>
 
+<ReviewsModal Visible="reviewsOpen" Title="@reviewModalTitle" Items="reviewModalItems"
+              Max="reviewModalMax" ScoreSuffix="@reviewModalSuffix"
+              OnClose="@(() => { reviewsOpen = false; })" />
+
 @code {
     [Parameter] public string IdOrSlug { get; set; } = "";
 
     private StrandEntity? strand;
+
+    // ── Reviews modal (shared sortable component; strand = full reviews, beat = micro) ──
+    private bool reviewsOpen;
+    private string reviewModalTitle = "";
+    private double reviewModalMax = 100;
+    private string reviewModalSuffix = "/100";
+    private List<ReviewsModal.Item> reviewModalItems = new();
+
+    private static string ScorePctColor(double pct) => pct >= 80 ? "success" : pct >= 60 ? "info" : pct >= 40 ? "warning" : "danger";
+
+    private async Task OpenStrandReviewsAsync()
+    {
+        if (strand == null) return;
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var latestHash = await db.StrandReviews.Where(r => r.StrandId == strand.Id)
+            .OrderByDescending(r => r.ReviewedAt).Select(r => r.ContentHash).FirstOrDefaultAsync();
+        var rows = await db.StrandReviews
+            .Where(r => r.StrandId == strand.Id && r.ContentHash == latestHash
+                     && r.FocusGroupName != null && r.FocusGroupName.StartsWith("Group"))
+            .ToListAsync();
+        reviewModalItems = rows
+            .GroupBy(r => r.PersonaId)
+            .Select(g => g.OrderByDescending(r => r.ReviewedAt).First())
+            .Select(r => new ReviewsModal.Item(
+                r.PersonaName, r.ProviderId, r.Score,
+                string.IsNullOrWhiteSpace(r.Improvements) ? r.ReviewText : r.ReviewText + "\n\nFixes:\n" + r.Improvements,
+                PersonaLibrary.GetProfile(r.PersonaId)?.Summary()))
+            .ToList();
+        reviewModalTitle = $"Reader reviews — {strand.Title}";
+        reviewModalMax = 100; reviewModalSuffix = "/100";
+        reviewsOpen = true;
+    }
+
+    private async Task OpenBeatReviewsAsync(int positional, BeatEntity b)
+    {
+        if (strand == null) return;
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var latestHash = await db.StrandReviews.Where(r => r.StrandId == strand.Id)
+            .OrderByDescending(r => r.ReviewedAt).Select(r => r.ContentHash).FirstOrDefaultAsync();
+        var rows = await db.StrandReviews
+            .Where(r => r.StrandId == strand.Id && r.ContentHash == latestHash
+                     && r.BeatScores.Any(bs => bs.BeatNumber == positional))
+            .Select(r => new
+            {
+                r.PersonaId, r.PersonaName, r.ProviderId, r.ReviewedAt, r.Improvements,
+                Micro = r.BeatScores.Where(bs => bs.BeatNumber == positional).Select(bs => (double)bs.Score).FirstOrDefault()
+            })
+            .ToListAsync();
+        reviewModalItems = rows
+            .GroupBy(x => x.PersonaId)
+            .Select(g => g.OrderByDescending(x => x.ReviewedAt).First())
+            .Select(x => new ReviewsModal.Item(
+                x.PersonaName, x.ProviderId, x.Micro,
+                ExtractBeatNote(x.Improvements, positional),
+                PersonaLibrary.GetProfile(x.PersonaId)?.Summary()))
+            .ToList();
+        var title = string.IsNullOrEmpty(b.BeatTitle) ? $"Beat #{positional}" : $"Beat #{positional} — {b.BeatTitle}";
+        reviewModalTitle = $"{title} · micro-reviews";
+        reviewModalMax = 5; reviewModalSuffix = "/5";
+        reviewsOpen = true;
+    }
+
+    private static string ExtractBeatNote(string? improvements, int positional)
+    {
+        if (string.IsNullOrWhiteSpace(improvements)) return "";
+        var hits = improvements
+            .Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .Where(l => l.Contains($"Beat {positional}", StringComparison.OrdinalIgnoreCase));
+        return string.Join("\n", hits);
+    }
     /// <summary>UpdatedAt of the strand row at the moment LoadAsync ran.
     /// Passed back into SaveStrandHeaderAsync as an optimistic-concurrency
     /// check — if the row moved underneath us (another tab, an MCP tool),
