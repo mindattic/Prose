@@ -467,6 +467,44 @@ if (args.Contains("--publish-strand"))
     return;
 }
 
+// CLI mode: render a strand to a KDP-ready Word .docx in Downloads.
+//   ss --publish-docx (--id <guid|prefix> | --slug <slug>) [--author "Name"]
+if (args.Contains("--publish-docx"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await PublishDocxCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: render the WHOLE strand as one continuous audiobook (one TTS pass,
+// tiered to ElevenLabs limits — one request, else per-chapter, else split) and
+// drop the MP3 in Downloads. The headless twin of the "Publish Audiobook" button.
+//   ss --publish-audiobook (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--publish-audiobook"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await PublishAudiobookCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: bounded copy-edit of a strand — proper paragraph/dialogue spacing, a
+// "?" on questions that lack one, and "asks"/"asked" (not "says") on question
+// dialogue. Dry-run by default; --apply commits. Beats edited beyond those bounds
+// are rejected (word-token guard) and left untouched.
+//   ss --reflow-strand (--id <guid|prefix> | --slug <slug>) [--apply]
+if (args.Contains("--reflow-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ReflowStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: import a hand-authored .strand file (beat + gap + beat …) into a
 // fresh strand. The complement to --write-strand (LLM-generated): this is for
 // drafts written elsewhere (chat exports, transcripts, paper notes typed up).
