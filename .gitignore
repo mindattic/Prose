@@ -11,6 +11,13 @@ engine_data/
 # On-disk chapter.json files remain only as legacy seeds for `ss --migrate-sql --import books`.
 engine/data/chapters/
 
+# Generated narration audio (WAV/MP3) — runtime output of Publish Audiobook /
+# combined export, regenerated from the beats in SQL Server. Never source.
+engine/data/strands/
+
+# Runtime logs
+engine/data/logs/
+
 # Canon queue working directories
 canon_queue/pending/
 canon_queue/rejected/
