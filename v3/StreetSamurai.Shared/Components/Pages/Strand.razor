@@ -233,6 +233,11 @@
     .insert-bar-btn:hover { background: rgba(13,202,240,0.08); border-color: #0dcaf0; }
     .beat-audio { width: 100%; height: 28px; margin-top: 0.5rem; filter: brightness(0.85); }
     .strand-meta-chip { font-size: 0.7rem; padding: 0.2rem 0.5rem; }
+    /* Per-beat version cycler — two arrows that scrub the editor back and
+       forth through the beat's system-versioned history. When a past (non-
+       current) version is showing, the cluster glows so it's clear the editor
+       is previewing history, not the live text. */
+    .beat-history-nav.cycling .btn { border-color: #0dcaf0; color: #0dcaf0; }
 </style>
 
 @if (loading)
@@ -458,6 +463,15 @@ else
                     var displayGapMs = b.GapAfterMs ?? autoGapMs;
                     var gapEditorId = $"gap-input-{bid:N}";
 
+                    // Version cycler (system-versioned history). Cursor 0 = current
+                    // edit; higher = further back. Newer arrow (▶) is dead at the
+                    // current version; older arrow (◀) is dead at the oldest.
+                    var histCount = historyCounts.TryGetValue(bid, out var hc) ? hc : 0;
+                    var histCursor = historyCursor.TryGetValue(bid, out var hcur) ? hcur : 0;
+                    var histOlderDisabled = histCount <= 1 || histCursor >= histCount - 1;
+                    var histNewerDisabled = histCount == 0 || histCursor <= 0;
+                    var histCycling = histCount > 0 && histCursor > 0;
+
                     @if (b.IsChapterStart)
                     {
                         <div class="beat-chapter-divider" data-cy="chapter-divider">
@@ -554,6 +568,30 @@ else
                                         data-cy="beat-cancel">
                                     <i class="bi bi-x-lg"></i>
                                 </button>
+                                <span class="beat-action-sep"></span>
+                                @* Version cycler — two arrows that scrub this beat's
+                                   editor back/forward through its system-versioned
+                                   history (Beats_History). ◀ older, ▶ newer; ▶ is
+                                   disabled on the current version. Land on the one you
+                                   want, then Save to keep it (a new current version). *@
+                                <span class="beat-history-nav d-flex align-items-center @(histCycling ? "cycling" : "")">
+                                    <button class="btn btn-sm btn-outline-secondary"
+                                            @onclick="() => StepHistoryAsync(bid, +1)"
+                                            @onclick:stopPropagation
+                                            disabled="@histOlderDisabled"
+                                            title="@(histCount > 0 ? $"Older edit ({histCursor + 1}/{histCount})" : "No earlier versions yet")"
+                                            data-cy="beat-history-older">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary"
+                                            @onclick="() => StepHistoryAsync(bid, -1)"
+                                            @onclick:stopPropagation
+                                            disabled="@histNewerDisabled"
+                                            title="@(histCount > 0 ? $"Newer edit ({histCursor + 1}/{histCount})" : "No earlier versions yet")"
+                                            data-cy="beat-history-newer">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </button>
+                                </span>
                                 <span class="beat-action-sep"></span>
                                 <button class="btn btn-sm btn-outline-secondary @(copiedTextBeatId == bid ? "copied" : "")"
                                             title="@(copiedTextBeatId == bid ? "Copied!" : "Copy beat text to clipboard")"
@@ -1002,6 +1040,16 @@ else
     private readonly Dictionary<Guid, string> drafts = new();
     private readonly Dictionary<Guid, DateTime> draftBase = new();
 
+    // ── Per-beat version cycler (system-versioned temporal history) ───────
+    // historyCounts: how many stored versions (current + history) each beat
+    // has, from the Beats_History temporal table — drives the arrows' disabled
+    // state. Refreshed from the DB after each genuine (re)load. historyCursor:
+    // which version the editor is previewing — 0 = current/most-recent edit,
+    // higher = further back in history. Capture is automatic (every UPDATE is
+    // versioned by SQL Server), so there's nothing to push from the client.
+    private readonly Dictionary<Guid, int> historyCounts = new();
+    private readonly Dictionary<Guid, int> historyCursor = new();
+
     /// <summary>Return this beat's live draft text, seeding it from the
     /// canonical Beat.Text on first access. Called from the textarea's
     /// @bind:get on every render — must be cheap and side-effect-light.</summary>
@@ -1055,6 +1103,8 @@ else
         {
             drafts.Remove(stale);
             draftBase.Remove(stale);
+            historyCounts.Remove(stale);
+            historyCursor.Remove(stale);
         }
         sizeAllPending = true;
     }
@@ -1240,6 +1290,7 @@ else
                 if (string.IsNullOrEmpty(strand.VoiceId)) strand.VoiceId = defaultVoiceId;
                 beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
                 SyncDraftsAfterReload();
+                await RefreshHistoryCountsAsync();
 
                 // Surface the saved listening position so the user can jump back
                 // to where they walked away. Cleared from the banner if the beat
@@ -1449,6 +1500,8 @@ else
         try
         {
             await Workbench.UpdateBeatTextAsync(beatId, text, baseToken);
+            // The UPDATE is system-versioned, so the prior text is now in
+            // Beats_History automatically — nothing to snapshot client-side.
             // Drop this beat's draft so the reload reseeds it from the
             // freshly-saved text + new concurrency token (clean state).
             drafts.Remove(beatId);
@@ -1470,6 +1523,45 @@ else
         }
         catch (Exception ex) { Toast.Error("BEAT-EDIT-FAIL", ex.Message); }
         finally { savingBeatId = null; await InvokeAsync(StateHasChanged); }
+    }
+
+    /// <summary>Refresh the per-beat version counts from the temporal history
+    /// so the cycler arrows render the right disabled state, and reset every
+    /// cursor to the current version (0). One grouped DB query per (re)load.
+    /// Non-fatal — on failure the arrows simply stay disabled.</summary>
+    private async Task RefreshHistoryCountsAsync()
+    {
+        if (strand == null) return;
+        try
+        {
+            var counts = await Workbench.GetBeatVersionCountsAsync(strand.Id);
+            historyCounts.Clear();
+            historyCursor.Clear();
+            foreach (var kv in counts) historyCounts[kv.Key] = kv.Value;
+        }
+        catch (Exception ex) { Console.Error.WriteLine($"[strand-history] count refresh failed: {ex.Message}"); }
+    }
+
+    /// <summary>Step the version cycler for one beat. delta +1 = older, -1 =
+    /// newer; cursor 0 is the current/most-recent edit. Pulls the selected
+    /// version's prose from the temporal history and loads it into the beat's
+    /// draft so the editor previews it — the user then Saves to keep it (which
+    /// becomes a new current version) or Reverts to drop back to the live text.
+    /// No-op when the move would run past either end.</summary>
+    private async Task StepHistoryAsync(Guid beatId, int delta)
+    {
+        if (!historyCounts.TryGetValue(beatId, out var count) || count == 0) return;
+        var cursor = historyCursor.TryGetValue(beatId, out var c) ? c : 0;
+        var next = Math.Clamp(cursor + delta, 0, count - 1);
+        if (next == cursor) return;
+        string? text;
+        try { text = await Workbench.GetBeatVersionTextAsync(beatId, next); }
+        catch (Exception ex) { Toast.Error("BEAT-HISTORY", ex.Message); return; }
+        if (text is null) return; // version vanished (e.g. history trimmed) — leave the editor as-is
+        historyCursor[beatId] = next;
+        drafts[beatId] = text;
+        autoSizePendingBeatId = beatId; // resize + focus the textarea to the loaded version
+        await InvokeAsync(StateHasChanged);
     }
 
     private async Task InsertBeatAsync(Guid? afterBeatId)
@@ -1717,6 +1809,8 @@ else
         try
         {
             await Workbench.UpdateBeatTextAsync(beatId, llmSheetProposal, expectedUpdatedAt: llmSheetBeat.UpdatedAt);
+            // System-versioned: the pre-rewrite text is captured to history by
+            // the UPDATE itself, so an LLM rewrite is a cyclable version too.
             llmSheetBeat.Text = llmSheetProposal;
             llmSheetBeat.UpdatedAt = DateTime.UtcNow;
             // Drop any draft so the reload reseeds this beat's textarea from the
@@ -1812,6 +1906,7 @@ else
         }
         beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
         SyncDraftsAfterReload();
+        await RefreshHistoryCountsAsync();
     }
 
     /// <summary>Build the combined-audio URL with a cache-bust query string.

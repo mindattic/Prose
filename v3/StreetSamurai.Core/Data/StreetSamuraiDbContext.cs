@@ -1844,6 +1844,16 @@ public class StreetSamuraiDbContext : DbContext
         "FlyoverEntities", "FlyoverEntityAliases", "FlyoverEntityKnownLocations", "FlyoverEntityStoryHooks",
         "Books", "BookProtagonists", "BookChapterOrder",
         "Chapters", "ChapterCharacters", "ChapterBeats",
+        // Unified strand writer model (Beat / Strand / StrandBeat junction).
+        // System-versioned so every prose edit, metadata change, membership
+        // shuffle, AND deletion lands in {Table}_History — that's the rewind
+        // the writer's per-beat version cycler reads via FOR SYSTEM_TIME ALL,
+        // and it captures CLI / MCP edits automatically (the UPDATE itself is
+        // versioned; no app-side snapshotting required). Safe to version:
+        // neither table carries a vector index (prose embeddings live in the
+        // separate ProseEmbeddings table), so the SQL Server vector-index ↔
+        // system-versioning incompatibility doesn't apply here.
+        "Beats", "Strands", "StrandBeats",
         "ContinuityClaims",
         "EntityStateEvents",
         "WeaponSpecs",
