@@ -1024,6 +1024,56 @@ public class StrandWorkbenchService
         await db.SaveChangesAsync(ct);
     }
 
+    // ── Version history (system-versioned temporal) ──────────────────────
+    // The Beats table is system-versioned (see DbContext.SystemVersionedTables),
+    // so every UPDATE/DELETE — from the writer UI, the CLI, or an MCP tool —
+    // lands a prior-state row in Beats_History automatically. These two reads
+    // back the per-beat version cycler: one row per stored version, newest
+    // first, index 0 = the live/current row. No app-side snapshotting; the
+    // database is the single source of truth for "what did this beat say
+    // before." Returns empty on non-SQL-Server providers (SQLite tests have
+    // no temporal history).
+
+    private sealed class BeatVersionCountRow { public Guid Id { get; set; } public int Cnt { get; set; } }
+
+    /// <summary>Count of stored versions (current + history) for every beat in
+    /// a strand, keyed by beat id. Drives the cycler arrows' disabled state in
+    /// one grouped query. A beat never edited since versioning was enabled has
+    /// count 1 (just the current row → both arrows dead).</summary>
+    public async Task<Dictionary<Guid, int>> GetBeatVersionCountsAsync(Guid strandId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        if (!db.Database.IsSqlServer()) return new();
+        var rows = await db.Database.SqlQueryRaw<BeatVersionCountRow>(
+            """
+            SELECT b.Id AS Id, COUNT(*) AS Cnt
+            FROM [Beats] FOR SYSTEM_TIME ALL AS b
+            WHERE b.Id IN (SELECT BeatId FROM [StrandBeats] WHERE StrandId = {0})
+            GROUP BY b.Id
+            """, strandId).ToListAsync(ct);
+        return rows.ToDictionary(r => r.Id, r => r.Cnt);
+    }
+
+    /// <summary>The beat's prose at a newest-first version index — 0 = current,
+    /// 1 = the version before the last edit, and so on back through history.
+    /// Null when the index is past the end or on a non-temporal provider. Used
+    /// by the writer's ◀ ▶ cycler to preview a past version in the editor.</summary>
+    public async Task<string?> GetBeatVersionTextAsync(Guid beatId, int index, CancellationToken ct = default)
+    {
+        if (index < 0) return null;
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        if (!db.Database.IsSqlServer()) return null;
+        var rows = await db.Database.SqlQueryRaw<string>(
+            """
+            SELECT b.[Text] AS [Value]
+            FROM [Beats] FOR SYSTEM_TIME ALL AS b
+            WHERE b.Id = {0}
+            ORDER BY b.SysStart DESC
+            OFFSET {1} ROWS FETCH NEXT 1 ROWS ONLY
+            """, beatId, index).ToListAsync(ct);
+        return rows.FirstOrDefault();
+    }
+
     // ── Audio ────────────────────────────────────────────────────────────
 
     /// <summary>Re-fire narration on every beat in this strand (and its
