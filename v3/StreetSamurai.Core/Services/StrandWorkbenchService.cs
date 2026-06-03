@@ -1231,6 +1231,10 @@ public class StrandWorkbenchService
 
         exportProgress[strandId] = new ExportProgress(0, segments.Count, "narrating");
         var ffmpeg = ResolveFfmpegPath();
+        if (string.IsNullOrEmpty(ffmpeg))
+            throw new InvalidOperationException(
+                "Audiobook publishing needs ffmpeg on PATH. ElevenLabs only allows raw PCM output on the Pro " +
+                "tier, so segments are fetched as MP3 (mp3_44100_128) and decoded + assembled with ffmpeg.");
         var tmpWav = Path.Combine(Path.GetTempPath(), $"ss-audiobook-{Guid.CreateVersion7():N}.wav");
         long pcmTotal = 0, chars = 0;
         var prevReqIds = new List<string>();
@@ -1267,8 +1271,16 @@ public class StrandWorkbenchService
                         var nextText = ci < chunks.Count - 1 ? Head(chunks[ci + 1])
                                      : si < segments.Count - 1 ? Head(segments[si + 1][0].Beat.Text) : null;
 
-                        var res = await tts.SynthesizeWithIdAsync(chunks[ci], voice.VoiceId, "pcm_44100", stitch, prevText, nextText, vs, ct);
-                        if (res.Bytes.Length > 0) { await fs.WriteAsync(res.Bytes.AsMemory(), ct); pcmTotal += res.Bytes.Length; segBytes += res.Bytes.Length; }
+                        // ElevenLabs gates pcm_* behind the Pro tier; mp3_44100_128 is on
+                        // every tier (it's the API default). Fetch MP3, then decode each
+                        // segment back to PCM so the silence-gap assembly and the single
+                        // final encode below stay unchanged.
+                        var res = await tts.SynthesizeWithIdAsync(chunks[ci], voice.VoiceId, "mp3_44100_128", stitch, prevText, nextText, vs, ct);
+                        if (res.Bytes.Length > 0)
+                        {
+                            var pcm = await DecodeMp3ToPcmAsync(ffmpeg!, res.Bytes, ct);
+                            if (pcm.Length > 0) { await fs.WriteAsync(pcm.AsMemory(), ct); pcmTotal += pcm.Length; segBytes += pcm.Length; }
+                        }
                         if (!string.IsNullOrEmpty(res.RequestId)) { prevReqIds.Insert(0, res.RequestId!); if (prevReqIds.Count > 3) prevReqIds.RemoveRange(3, prevReqIds.Count - 3); }
                     }
                     db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "segment-narrated",
@@ -1706,6 +1718,50 @@ public class StrandWorkbenchService
         await outTask; var stderr = await errTask;
         if (proc.ExitCode != 0)
             throw new InvalidOperationException($"ffmpeg WAV->MP3 failed (exit {proc.ExitCode}): {stderr}");
+    }
+
+    /// <summary>Decode an MP3 segment (as returned by ElevenLabs on non-Pro tiers)
+    /// to raw signed-16-bit little-endian PCM, mono, 44.1 kHz — the exact shape the
+    /// WAV assembler and <see cref="GenerateSilencePcm"/> expect. ffmpeg writes a temp
+    /// .pcm we read back; both temps are cleaned up.</summary>
+    private async Task<byte[]> DecodeMp3ToPcmAsync(string ffmpegPath, byte[] mp3Bytes, CancellationToken ct)
+    {
+        var inMp3 = Path.Combine(Path.GetTempPath(), $"ss-seg-{Guid.CreateVersion7():N}.mp3");
+        var outPcm = Path.Combine(Path.GetTempPath(), $"ss-seg-{Guid.CreateVersion7():N}.pcm");
+        await File.WriteAllBytesAsync(inMp3, mp3Bytes, ct);
+        try
+        {
+            var psi = new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = ffmpegPath,
+                RedirectStandardError = true,
+                RedirectStandardOutput = true,
+                UseShellExecute = false,
+                CreateNoWindow = true,
+            };
+            psi.ArgumentList.Add("-y");
+            psi.ArgumentList.Add("-i"); psi.ArgumentList.Add(inMp3);
+            psi.ArgumentList.Add("-f"); psi.ArgumentList.Add("s16le");
+            psi.ArgumentList.Add("-acodec"); psi.ArgumentList.Add("pcm_s16le");
+            psi.ArgumentList.Add("-ar"); psi.ArgumentList.Add("44100");
+            psi.ArgumentList.Add("-ac"); psi.ArgumentList.Add("1");
+            psi.ArgumentList.Add(outPcm);
+            using var proc = System.Diagnostics.Process.Start(psi)
+                ?? throw new InvalidOperationException("Failed to start ffmpeg for MP3->PCM decode.");
+            // Drain both pipes concurrently before awaiting exit to avoid a deadlock.
+            var outTask = proc.StandardOutput.ReadToEndAsync(ct);
+            var errTask = proc.StandardError.ReadToEndAsync(ct);
+            await proc.WaitForExitAsync(ct);
+            await outTask; var stderr = await errTask;
+            if (proc.ExitCode != 0)
+                throw new InvalidOperationException($"ffmpeg MP3->PCM failed (exit {proc.ExitCode}): {stderr}");
+            return await File.ReadAllBytesAsync(outPcm, ct);
+        }
+        finally
+        {
+            try { File.Delete(inMp3); } catch { }
+            try { File.Delete(outPcm); } catch { }
+        }
     }
 
     /// <summary>Strip filesystem-hostile characters from a strand title so it
