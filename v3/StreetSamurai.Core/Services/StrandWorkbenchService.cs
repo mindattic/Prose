@@ -1190,6 +1190,233 @@ public class StrandWorkbenchService
         }
     }
 
+    /// <summary>
+    /// Publish a drift-free audiobook in the FEWEST TTS requests that fit
+    /// ElevenLabs' per-request budget, so the narrator is one continuous
+    /// performance instead of N separately-recorded beats. Tier 1 = whole strand
+    /// in one call; Tier 2 = one call per chapter (split at <c>IsChapterStart</c>);
+    /// Tier 3 = split an over-long chapter at the char budget. Intra-segment beat
+    /// gaps become inline <c>&lt;break&gt;</c> pauses (one recording keeps its
+    /// pacing); segment boundaries get exact PCM silence. The combined MP3 is
+    /// written to the audio store AND copied to the user's Downloads folder.
+    /// </summary>
+    public async Task<string?> PublishAudiobookAsync(Guid strandId, CancellationToken ct = default)
+    {
+        if (!await tts.IsConfiguredAsync())
+            throw new InvalidOperationException("TTS is not configured (no ElevenLabs API key).");
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct)
+            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+
+        var ordered = (await GetOrderedBeatsAsync(strandId, ct))
+            .Where(o => !string.IsNullOrWhiteSpace(o.Beat.Text)).ToList();
+        if (ordered.Count == 0) { log.LogWarning("Strand {S} has no beat text to narrate", strandId); return null; }
+
+        var voice = await ResolveStrandVoiceAsync(db, strand, ct);
+        bool isV3 = voice.Model.Contains("v3", StringComparison.OrdinalIgnoreCase);
+        // eleven_v3 caps a request far lower than the v2 family; budget per model.
+        int limit = isV3 ? 2800 : 9000;
+        var segments = BuildAudiobookSegments(ordered, limit);
+
+        var pub = new StrandPublication
+        {
+            Id = Guid.CreateVersion7(), StrandId = strandId, StartedAt = DateTime.UtcNow,
+            Status = "running", BeatCount = ordered.Count,
+        };
+        db.StrandPublications.Add(pub);
+        db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "publish-started",
+            $"one-pass audiobook: {ordered.Count} beats in {segments.Count} segment(s), model {voice.Model}"));
+        await db.SaveChangesAsync(ct);
+
+        exportProgress[strandId] = new ExportProgress(0, segments.Count, "narrating");
+        var ffmpeg = ResolveFfmpegPath();
+        var tmpWav = Path.Combine(Path.GetTempPath(), $"ss-audiobook-{Guid.CreateVersion7():N}.wav");
+        long pcmTotal = 0, chars = 0;
+        var prevReqIds = new List<string>();
+        try
+        {
+            await using (var fs = new FileStream(tmpWav, FileMode.Create, FileAccess.ReadWrite, FileShare.None, 64 * 1024, useAsync: true))
+            {
+                fs.Position = 44; // reserve WAV header; patched after total PCM known
+                for (int si = 0; si < segments.Count; si++)
+                {
+                    ct.ThrowIfCancellationRequested();
+                    var seg = segments[si];
+                    var text = AssembleSegmentText(seg, ref chars);
+                    exportProgress[strandId] = new ExportProgress(si + 1, segments.Count,
+                        string.IsNullOrWhiteSpace(seg[0].Beat.BeatTitle) ? $"Segment {si + 1}/{segments.Count}" : seg[0].Beat.BeatTitle);
+
+                    var vs = new TtsVoiceSettings(voice.Stability, voice.Similarity, voice.Style, Seed: voice.Seed, ModelId: voice.Model);
+
+                    // Last-ditch tier: a segment (e.g. a single over-long beat, or a
+                    // chapter that alone exceeds the budget) can still top the per-request
+                    // cap — split it on sentence boundaries so no call goes over. Chunks
+                    // within a segment are continuous prose, so they're concatenated with
+                    // NO silence between them (segment seams keep their PCM silence below).
+                    var chunks = SplitToLimit(text, limit);
+                    long segBytes = 0;
+                    for (int ci = 0; ci < chunks.Count; ci++)
+                    {
+                        ct.ThrowIfCancellationRequested();
+                        // v2 stitches on prior request-ids; v3 does NOT (it would disjoint) —
+                        // text conditioning (previous/next) is safe for both.
+                        IList<string>? stitch = !isV3 && prevReqIds.Count > 0 ? prevReqIds : null;
+                        var prevText = ci > 0 ? Tail(chunks[ci - 1])
+                                     : si > 0 ? Tail(segments[si - 1][^1].Beat.Text) : null;
+                        var nextText = ci < chunks.Count - 1 ? Head(chunks[ci + 1])
+                                     : si < segments.Count - 1 ? Head(segments[si + 1][0].Beat.Text) : null;
+
+                        var res = await tts.SynthesizeWithIdAsync(chunks[ci], voice.VoiceId, "pcm_44100", stitch, prevText, nextText, vs, ct);
+                        if (res.Bytes.Length > 0) { await fs.WriteAsync(res.Bytes.AsMemory(), ct); pcmTotal += res.Bytes.Length; segBytes += res.Bytes.Length; }
+                        if (!string.IsNullOrEmpty(res.RequestId)) { prevReqIds.Insert(0, res.RequestId!); if (prevReqIds.Count > 3) prevReqIds.RemoveRange(3, prevReqIds.Count - 3); }
+                    }
+                    db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "segment-narrated",
+                        $"seg {si + 1}/{segments.Count}: {seg.Count} beat(s), {chunks.Count} chunk(s), {segBytes} pcm bytes"));
+
+                    if (si < segments.Count - 1)
+                    {
+                        var last = seg[^1].Beat; var next = segments[si + 1][0].Beat;
+                        var pauseMs = last.GapAfterMs ?? ComputeTrailingSilenceMs(last, next, settings);
+                        if (pauseMs > 0)
+                        {
+                            var sil = GenerateSilencePcm(pauseMs, 44100, 1, 16);
+                            if (sil.Length > 0) { await fs.WriteAsync(sil.AsMemory(), ct); pcmTotal += sil.Length; }
+                        }
+                    }
+                }
+                fs.Position = 0;
+                EpisodeAudioService.WriteWavHeader(fs, checked((int)pcmTotal), 44100, 1, 16);
+            }
+
+            byte[] finalBytes; string ext;
+            if (!string.IsNullOrEmpty(ffmpeg))
+            {
+                var tmpMp3 = Path.Combine(Path.GetTempPath(), $"ss-audiobook-{Guid.CreateVersion7():N}.mp3");
+                try
+                {
+                    await TranscodeWavToMp3Async(ffmpeg, tmpWav, tmpMp3, ct);
+                    finalBytes = await File.ReadAllBytesAsync(tmpMp3, ct); ext = "mp3";
+                }
+                finally { try { File.Delete(tmpMp3); } catch { } }
+            }
+            else { finalBytes = await File.ReadAllBytesAsync(tmpWav, ct); ext = "wav"; }
+
+            await audioStore.WriteCombinedAsync(strand.Slug, ext, finalBytes, ct);
+
+            var dlDir = CanonExportService.DownloadsDir;
+            Directory.CreateDirectory(dlDir);
+            var dl = Path.Combine(dlDir, $"{strand.Slug}.{strand.Id.ToString("N")[..8]}.{ext}");
+            await File.WriteAllBytesAsync(dl, finalBytes, ct);
+
+            strand.CombinedAudioPath = $"{strand.Slug}/strand.{ext}";
+            strand.CharsNarrated = (int)Math.Min(chars, int.MaxValue);
+            strand.AudioCompletedAt = DateTime.UtcNow;
+            pub.Status = "ready";
+            db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "mp3-produced",
+                $"{strand.Slug}/strand.{ext}, {finalBytes.Length} bytes; copied to Downloads"));
+            await db.SaveChangesAsync(ct);
+            exportProgress[strandId] = new ExportProgress(segments.Count, segments.Count, "done");
+            log.LogInformation("Published one-pass audiobook for strand {S}: {Seg} segment(s) -> {Path}", strandId, segments.Count, dl);
+            return dl;
+        }
+        catch (Exception ex)
+        {
+            pub.Status = "error";
+            db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "publish-error", ex.Message));
+            try { await db.SaveChangesAsync(CancellationToken.None); } catch { }
+            throw;
+        }
+        finally { try { File.Delete(tmpWav); } catch { } }
+    }
+
+    /// <summary>Greedy segmenter: keep beats together up to the char budget,
+    /// preferring chapter starts as split points so a chapter never straddles two
+    /// recordings unless it alone exceeds the budget.</summary>
+    private static List<List<OrderedBeat>> BuildAudiobookSegments(List<OrderedBeat> ordered, int limit)
+    {
+        var segments = new List<List<OrderedBeat>>();
+        var cur = new List<OrderedBeat>();
+        int curLen = 0;
+        foreach (var ob in ordered)
+        {
+            int len = (ob.Beat.Text ?? "").Length + 24; // + inline-break/markup headroom
+            bool chapterBreak = ob.Beat.IsChapterStart && cur.Count > 0;
+            bool overflow = curLen + len > limit && cur.Count > 0;
+            if (chapterBreak || overflow) { segments.Add(cur); cur = new List<OrderedBeat>(); curLen = 0; }
+            cur.Add(ob);
+            curLen += len;
+        }
+        if (cur.Count > 0) segments.Add(cur);
+        return segments;
+    }
+
+    /// <summary>Join a segment's beats into one narration block, inserting an
+    /// inline pause between beats so the single recording keeps the strand's
+    /// pacing. Accumulates the spoken char count.</summary>
+    private string AssembleSegmentText(List<OrderedBeat> seg, ref long chars)
+    {
+        var sb = new System.Text.StringBuilder();
+        for (int i = 0; i < seg.Count; i++)
+        {
+            var beat = seg[i].Beat;
+            var text = (beat.Text ?? "").Trim();
+            if (text.Length == 0) continue;
+            sb.Append(text);
+            chars += text.Length;
+            if (i < seg.Count - 1)
+            {
+                var next = seg[i + 1].Beat;
+                var pauseMs = beat.GapAfterMs ?? ComputeTrailingSilenceMs(beat, next, settings);
+                var secs = Math.Clamp(pauseMs / 1000.0, 0.0, 3.0);
+                sb.Append(secs >= 0.1 ? $" <break time=\"{secs:0.0}s\" />\n\n" : "\n\n");
+            }
+        }
+        return sb.ToString();
+    }
+
+    private static string? Tail(string? t, int n = 200)
+    { if (string.IsNullOrWhiteSpace(t)) return null; var s = t.Trim(); return s.Length > n ? s[^n..] : s; }
+    private static string? Head(string? t, int n = 200)
+    { if (string.IsNullOrWhiteSpace(t)) return null; var s = t.Trim(); return s.Length > n ? s[..n] : s; }
+
+    /// <summary>Split prose into chunks no longer than <paramref name="limit"/>
+    /// characters, breaking on sentence boundaries where possible (and hard-cutting
+    /// a single sentence that itself exceeds the limit). The last-ditch tier that
+    /// guarantees no single TTS request exceeds the model's per-call budget.</summary>
+    private static List<string> SplitToLimit(string text, int limit)
+    {
+        text = (text ?? "").Trim();
+        var chunks = new List<string>();
+        if (text.Length == 0) return chunks;
+        if (text.Length <= limit) { chunks.Add(text); return chunks; }
+
+        // Sentence-ish units: keep terminal punctuation (and a trailing quote/bracket)
+        // with the sentence it closes.
+        var units = System.Text.RegularExpressions.Regex
+            .Split(text, @"(?<=[\.\!\?…][""'\)\]]?)\s+")
+            .Where(s => s.Length > 0)
+            .ToList();
+        var sb = new System.Text.StringBuilder();
+        foreach (var u in units)
+        {
+            var unit = u;
+            // A lone sentence longer than the limit: flush what we have, then hard-cut.
+            while (unit.Length > limit)
+            {
+                if (sb.Length > 0) { chunks.Add(sb.ToString().Trim()); sb.Clear(); }
+                chunks.Add(unit[..limit].Trim());
+                unit = unit[limit..];
+            }
+            if (sb.Length > 0 && sb.Length + 1 + unit.Length > limit)
+            { chunks.Add(sb.ToString().Trim()); sb.Clear(); }
+            if (sb.Length > 0) sb.Append(' ');
+            sb.Append(unit);
+        }
+        if (sb.Length > 0) chunks.Add(sb.ToString().Trim());
+        return chunks.Where(c => c.Length > 0).ToList();
+    }
+
     /// <summary>Concatenate every beat's audio (in reading order, recursively
     /// across child strands) into one WAV or MP3 at
     /// <c>engine/strands/{slug}/strand.wav|mp3</c>.</summary>

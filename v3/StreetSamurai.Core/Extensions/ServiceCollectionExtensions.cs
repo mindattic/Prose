@@ -637,6 +637,8 @@ public static class ServiceCollectionExtensions
         // personas across the trusted-4 to each write an honest scored review,
         // then synthesize the Amazon-style aggregate.
         services.AddSingleton<StrandMarkdownExporter>();
+        services.AddSingleton<DocxExportService>();
+        services.AddSingleton<ProseReflowService>();
         services.AddSingleton<StrandReviewService>();
         services.AddSingleton<StoryQualityService>();
         services.AddSingleton<StoryRefinementService>();
