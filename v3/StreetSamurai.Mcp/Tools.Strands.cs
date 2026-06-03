@@ -129,6 +129,20 @@ public class StrandTools
         return JsonSerializer.Serialize(new { ok = true, id, slug, url = $"/strand/{slug}" }, CanonTools.JsonOpts);
     }
 
+    [McpServerTool, Description("Deep-duplicate a strand (and its sub-strand tree) into a fresh, independent copy. Every beat is cloned into a new row — prose and narration metadata are preserved, but audio, review scores, and the stale flag are reset. Editing the copy never affects the original. Accepts a Guid id OR a slug. Returns the new strand's id, slug, and writer URL.")]
+    public async Task<string> DuplicateStrand(
+        [Description("Source strand Guid id or slug.")] string idOrSlug,
+        [Description("Title for the new duplicate. Required.")] string newTitle)
+    {
+        if (string.IsNullOrWhiteSpace(newTitle))
+            return JsonSerializer.Serialize(new { error = "title_required" }, CanonTools.JsonOpts);
+        var source = await ResolveStrandAsync(idOrSlug);
+        if (source == null) return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        var (id, slug) = await workbench.DuplicateStrandAsync(source.Id, newTitle);
+        return JsonSerializer.Serialize(new { ok = true, id, slug, title = newTitle, url = $"/strand/{slug}", source_id = source.Id }, CanonTools.JsonOpts);
+    }
+
     [McpServerTool, Description("Insert a new beat into a strand. Pass an empty afterBeatId to insert at the top. Returns the new beat's id.")]
     public async Task<string> InsertBeat(
         [Description("Strand Guid id or slug.")] string strandIdOrSlug,
