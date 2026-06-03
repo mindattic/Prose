@@ -505,6 +505,19 @@ if (args.Contains("--reflow-strand"))
     return;
 }
 
+// CLI mode: deep-duplicate a strand (and its sub-strand tree) into a fresh,
+// independent copy — every beat cloned to a new row (prose + metadata kept;
+// audio/score/stale reset). Editing the copy never touches the original.
+//   ss --duplicate-strand (--id <guid|prefix> | --slug <slug>) --title "New Title"
+if (args.Contains("--duplicate-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await DuplicateStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: import a hand-authored .strand file (beat + gap + beat …) into a
 // fresh strand. The complement to --write-strand (LLM-generated): this is for
 // drafts written elsewhere (chat exports, transcripts, paper notes typed up).

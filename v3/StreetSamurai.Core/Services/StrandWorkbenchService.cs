@@ -193,6 +193,126 @@ public class StrandWorkbenchService
         await db.SaveChangesAsync(ct);
     }
 
+    /// <summary>Deep-duplicate a strand (and its sub-strand tree) into a brand-new
+    /// independent copy. Every beat is cloned into a FRESH Beat row — prose and
+    /// narration metadata are preserved, but audio, review scores, and the stale
+    /// flag are reset, since a copy has no recordings and no reviews yet. Editing
+    /// the duplicate never touches the original (beats are not shared). The root
+    /// copy takes <paramref name="newTitle"/>; any child strands keep their own
+    /// titles. The duplicate slots in beside the source under the same parent.
+    /// Returns the new root strand's id and slug.</summary>
+    public async Task<(Guid Id, string Slug)> DuplicateStrandAsync(Guid sourceId, string newTitle, CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(newTitle))
+            throw new ArgumentException("A title for the duplicate is required.", nameof(newTitle));
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var source = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == sourceId, ct)
+            ?? throw new InvalidOperationException($"Strand {sourceId} not found.");
+
+        // Serializable so the sibling-max read + inserts can't race a concurrent
+        // create/duplicate under the same parent (mirrors ImportStrandCli).
+        await using var tx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
+
+        var siblingMaxSort = source.ParentStrandId.HasValue
+            ? await db.Strands.Where(s => s.ParentStrandId == source.ParentStrandId).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0
+            : await db.Strands.Where(s => s.ParentStrandId == null).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0;
+
+        // One contiguous block of Beat.Number values, allocated as we walk the tree.
+        var nextNumber = new[] { (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1 };
+
+        var (rootId, rootSlug) = await CloneStrandSubtreeAsync(
+            db, sourceId, newTitle, source.ParentStrandId, siblingMaxSort + 100.0, nextNumber, ct);
+
+        await db.SaveChangesAsync(ct);
+        await tx.CommitAsync(ct);
+        log.LogInformation("Duplicated strand {Src} -> {New} ({Slug})", sourceId, rootId, rootSlug);
+        return (rootId, rootSlug);
+    }
+
+    /// <summary>Recursively clone one strand subtree into newly-added (unsaved)
+    /// entities on <paramref name="db"/>. The caller owns the transaction + save.</summary>
+    private async Task<(Guid Id, string Slug)> CloneStrandSubtreeAsync(
+        StreetSamuraiDbContext db, Guid srcStrandId, string? titleOverride,
+        Guid? newParentId, double sortKey, int[] nextNumber, CancellationToken ct)
+    {
+        var src = await db.Strands.AsNoTracking().FirstAsync(s => s.Id == srcStrandId, ct);
+        var newId = Guid.CreateVersion7();
+        var title = titleOverride ?? src.Title;
+        var slug = $"{Slugify(title)}-{newId.ToString("N")[..8]}";
+
+        db.Strands.Add(new Strand
+        {
+            Id             = newId,
+            Slug           = slug,
+            Title          = title,
+            Kind           = src.Kind,
+            Status         = "draft",
+            Synopsis       = src.Synopsis,
+            VoiceId        = src.VoiceId,
+            ParentStrandId = newParentId,
+            SortKey        = sortKey,
+        });
+
+        // Direct beats in reading order → fresh Beat rows. Audio
+        // (AudioPath/NarratedAt/DurationSec/LastRequestId/GapAfterAudioPath),
+        // review (Score/ScoredAt), Stale and WasCorrected are intentionally left
+        // at defaults — a duplicate has no recordings, no reviews, nothing stale.
+        var srcBeats = await db.StrandBeats
+            .Where(sb => sb.StrandId == srcStrandId)
+            .OrderBy(sb => sb.SortKey)
+            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, Beat = b })
+            .ToListAsync(ct);
+        var now = DateTime.UtcNow;
+        foreach (var row in srcBeats)
+        {
+            var s = row.Beat;
+            var nb = new Beat
+            {
+                Id             = Guid.CreateVersion7(),
+                Number         = nextNumber[0]++,
+                Text           = s.Text,
+                TextHash       = s.TextHash,
+                BeatTitle      = s.BeatTitle,
+                IsChapterStart = s.IsChapterStart,
+                Kind           = s.Kind,
+                Synopsis       = s.Synopsis,
+                StructureRole  = s.StructureRole,
+                Act            = s.Act,
+                SceneType      = s.SceneType,
+                FacetTag       = s.FacetTag,
+                EmotionalTone  = s.EmotionalTone,
+                PaceHint       = s.PaceHint,
+                GapAfterMs     = s.GapAfterMs,
+                VoiceId        = s.VoiceId,
+                CreatedAt      = now,
+                UpdatedAt      = now,
+            };
+            db.Beats.Add(nb);
+            db.StrandBeats.Add(new StrandBeat { StrandId = newId, BeatId = nb.Id, SortKey = row.SortKey });
+        }
+
+        // Recurse into child strands, preserving their order.
+        var children = await db.Strands.AsNoTracking()
+            .Where(s => s.ParentStrandId == srcStrandId)
+            .OrderBy(s => s.SortKey)
+            .Select(s => new { s.Id, s.SortKey })
+            .ToListAsync(ct);
+        foreach (var child in children)
+            await CloneStrandSubtreeAsync(db, child.Id, null, newId, child.SortKey, nextNumber, ct);
+
+        return (newId, slug);
+    }
+
+    /// <summary>Title → URL slug stem (lowercase, non-alphanumerics to hyphens).
+    /// Callers append a short id suffix for global uniqueness.</summary>
+    private static string Slugify(string s)
+    {
+        if (string.IsNullOrWhiteSpace(s)) return "strand";
+        var ascii = Regex.Replace(s.ToLowerInvariant(), "[^a-z0-9]+", "-").Trim('-');
+        return string.IsNullOrEmpty(ascii) ? "strand" : ascii;
+    }
+
     /// <summary>Insert a brand-new empty beat into <paramref name="strandId"/>
     /// at a fractional SortKey just after <paramref name="afterBeatId"/>.
     /// Pass <c>null</c> for <paramref name="afterBeatId"/> to insert at the
