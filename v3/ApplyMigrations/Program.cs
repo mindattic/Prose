@@ -126,8 +126,9 @@ Console.WriteLine($"    ✓ {foldedStrands} nested strand(s) folded, {chapterSta
 // principal, NOT the App Service managed identity.
 Console.WriteLine();
 Console.WriteLine("→ Enabling SYSTEM_VERSIONING on the temporal set...");
-await db.EnableSystemVersioningAsync();
-Console.WriteLine("    ✓ system versioning enabled (idempotent — already-temporal tables skipped)");
+await db.EnableSystemVersioningAsync(onError: (t, ex) =>
+    Console.WriteLine($"    ✗ {t}: {ex.GetType().Name}: {ex.Message}"));
+Console.WriteLine("    ✓ system versioning pass complete (already-temporal tables skipped; see the N/3 check below)");
 
 // Echo verification counts.
 var beatCount        = await db.Beats.CountAsync();

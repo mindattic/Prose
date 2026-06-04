@@ -1878,7 +1878,7 @@ public class StreetSamuraiDbContext : DbContext
     /// </summary>
     public static readonly DateTime TemporalAnchor = new(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
-    public async Task EnableSystemVersioningAsync(CancellationToken ct = default)
+    public async Task EnableSystemVersioningAsync(CancellationToken ct = default, Action<string, Exception>? onError = null)
     {
         if (!Database.IsSqlServer()) return;
 
@@ -1888,23 +1888,32 @@ public class StreetSamuraiDbContext : DbContext
         {
             try
             {
+                // Two separate batches on purpose. SET SYSTEM_VERSIONING must see a
+                // COMMITTED period — combining ADD PERIOD and the SET in one batch fails
+                // on a not-yet-temporal table because SQL Server compiles the SET before
+                // the ADD has taken effect, which silently no-ops the enable in prod (a
+                // fresh DB) even though it "worked" locally where the tables were already
+                // temporal and neither statement ran.
+                //
+                // DEFAULT '{anchor}' anchors every existing row to Jan 1 2026 (in-world canon
+                // zero). Future writes overwrite SysStart with SYSUTCDATETIME() because
+                // GENERATED ALWAYS always wins over the column default for INSERTs/UPDATEs.
                 await Database.ExecuteSqlRawAsync($"""
-                    IF NOT EXISTS (
-                        SELECT 1 FROM sys.tables t
-                        WHERE t.name = N'{table}' AND t.temporal_type = 2)
+                    IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE name = N'{table}' AND temporal_type = 2)
+                       AND COL_LENGTH(N'[dbo].[{table}]', N'SysStart') IS NULL
                     BEGIN
-                        IF COL_LENGTH(N'[dbo].[{table}]', N'SysStart') IS NULL
-                        BEGIN
-                            -- DEFAULT '{anchor}' anchors every existing row to Jan 1 2026 (in-world canon zero).
-                            -- Future writes overwrite SysStart with SYSUTCDATETIME() because GENERATED ALWAYS
-                            -- always wins over the column default for new INSERTs and UPDATEs.
-                            ALTER TABLE [dbo].[{table}] ADD
-                                [SysStart] DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL
-                                    CONSTRAINT DF_{table}_SysStart DEFAULT CONVERT(DATETIME2, '{anchor}'),
-                                [SysEnd]   DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL
-                                    CONSTRAINT DF_{table}_SysEnd DEFAULT CONVERT(DATETIME2, '9999-12-31 23:59:59.9999999'),
-                                PERIOD FOR SYSTEM_TIME ([SysStart], [SysEnd]);
-                        END;
+                        ALTER TABLE [dbo].[{table}] ADD
+                            [SysStart] DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL
+                                CONSTRAINT DF_{table}_SysStart DEFAULT CONVERT(DATETIME2, '{anchor}'),
+                            [SysEnd]   DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL
+                                CONSTRAINT DF_{table}_SysEnd DEFAULT CONVERT(DATETIME2, '9999-12-31 23:59:59.9999999'),
+                            PERIOD FOR SYSTEM_TIME ([SysStart], [SysEnd]);
+                    END;
+                    """, ct);
+
+                await Database.ExecuteSqlRawAsync($"""
+                    IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE name = N'{table}' AND temporal_type = 2)
+                    BEGIN
                         ALTER TABLE [dbo].[{table}]
                             SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[{table}_History]));
                     END;
@@ -1913,6 +1922,7 @@ public class StreetSamuraiDbContext : DbContext
             catch (Exception ex)
             {
                 Serilog.Log.Warning(ex, "Failed to enable SYSTEM_VERSIONING on {Table}", table);
+                onError?.Invoke(table, ex);
             }
         }
     }
