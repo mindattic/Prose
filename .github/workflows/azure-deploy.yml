@@ -1,16 +1,21 @@
 name: Build and deploy StreetSamurai to Azure App Service
 
-# Two-stage pipeline:
+# Three-stage pipeline:
 #   build   — restore + publish the Blazor host as a deployable artifact
+#   migrate — apply schema + enable SYSTEM_VERSIONING against Azure SQL,
+#             authenticated via the GitHub OIDC service principal (db_ddladmin)
 #   deploy  — push the artifact to the streetsamurai App Service slot
 #
-# A `migrate` job that ran ApplyMigrations against Azure SQL via OIDC was
-# removed 2026-05-23: the initial schema landed via SqlPackage bacpac
-# import, and subsequent schema changes (when they come) are applied
-# manually for now. To re-add CI-driven migrations later, restore the
-# `migrate` job + the three repo secrets (AZURE_CLIENT_ID,
-# AZURE_TENANT_ID, AZURE_SUBSCRIPTION_ID) and the GRANT on the SQL DB
-# for the GitHub OIDC service principal — see infra/README.md.
+# The migrate job runs `v3/ApplyMigrations`: the idempotent Data/Sql/*.sql
+# column migrations, the nested-strand fold, then EnableSystemVersioningAsync()
+# — which turns on system versioning for Beats / Strands / StrandBeats and the
+# rest of the canon temporal set. It authenticates with azure/login@v2 (OIDC)
+# and connects with Authentication=Active Directory Default. The App Service
+# managed identity is read/write only and cannot run DDL, so schema changes
+# ride the OIDC service principal instead. Requires repo secrets
+# AZURE_CLIENT_ID / AZURE_TENANT_ID / AZURE_SUBSCRIPTION_ID /
+# AZURE_SQL_CONNECTION and the db_ddladmin GRANT — see infra/README.md.
+# (Re-added 2026-06-04; closes the manual-apply gap left on 2026-05-23.)
 
 on:
   push:
@@ -49,9 +54,51 @@ jobs:
           name: streetsamurai-app
           path: publish/
 
-  deploy:
+  migrate:
     runs-on: windows-latest
     needs: build
+
+    # OIDC: id-token lets azure/login@v2 mint a federated token for the
+    # streetsamurai-github service principal (db_ddladmin on the SQL DB).
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.x'
+
+      - name: Azure login (OIDC)
+        uses: azure/login@v2
+        with:
+          client-id:       ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id:       ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      # Same NuGet.config / bundled-package setup as the build job; restore so
+      # ApplyMigrations' transitive Core deps (Legion / Vault) resolve.
+      - name: Restore ApplyMigrations
+        run: dotnet restore v3/ApplyMigrations/ApplyMigrations.csproj
+
+      # ApplyMigrations resolves the connection string from
+      # ConnectionStrings__StreetSamurai (env wins over appsettings/LocalDB).
+      # AZURE_SQL_CONNECTION carries Authentication=Active Directory Default;
+      # the OIDC token from azure/login flows through DefaultAzureCredential.
+      # Idempotent — safe to run on every master push.
+      - name: Apply schema + enable temporal versioning
+        env:
+          ConnectionStrings__StreetSamurai: ${{ secrets.AZURE_SQL_CONNECTION }}
+        run: dotnet run --project v3/ApplyMigrations/ApplyMigrations.csproj -c Release --no-restore
+
+  deploy:
+    runs-on: windows-latest
+    needs: [build, migrate]
 
     steps:
       - name: Download artifact
