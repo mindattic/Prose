@@ -113,6 +113,21 @@ Console.WriteLine("→ Folding nested strands into roots...");
 var (foldedStrands, chapterStarts) = await FoldNestedStrandsAsync(dbFactory);
 Console.WriteLine($"    ✓ {foldedStrands} nested strand(s) folded, {chapterStarts} chapter-start marker(s) set");
 
+// ── Temporal versioning ────────────────────────────────────────────────
+// Turn on SQL Server SYSTEM_VERSIONING for every table in the temporal set
+// (Beats / Strands / StrandBeats + the canon tables). Idempotent: tables
+// already temporal are skipped, so this is a near no-op on re-deploys and
+// self-heals any table newly added to the set. Runs AFTER the .sql column
+// migrations (so each table has its final shape before the period columns
+// are added) and AFTER the fold (so the one-time structural migration's
+// churn stays out of the rewindable history the writer's version cycler
+// reads). Needs db_ddladmin — in CI that's the GitHub OIDC service
+// principal, NOT the App Service managed identity.
+Console.WriteLine();
+Console.WriteLine("→ Enabling SYSTEM_VERSIONING on the temporal set...");
+await db.EnableSystemVersioningAsync();
+Console.WriteLine("    ✓ system versioning enabled (idempotent — already-temporal tables skipped)");
+
 // Echo verification counts.
 var beatCount        = await db.Beats.CountAsync();
 var beatsWithNum     = await db.Beats.CountAsync(b => b.Number > 0);
@@ -122,6 +137,9 @@ var nestedStrands    = await db.Strands.CountAsync(s => s.ParentStrandId != null
 var gapsTableGone    = await db.Database.SqlQueryRaw<int>(
         "SELECT CASE WHEN OBJECT_ID('dbo.Gaps','U') IS NULL THEN 1 ELSE 0 END AS Value")
     .SingleAsync();
+var strandTemporalOn = await db.Database.SqlQueryRaw<int>(
+        "SELECT COUNT(*) AS Value FROM sys.tables WHERE name IN ('Beats','Strands','StrandBeats') AND temporal_type = 2")
+    .SingleAsync();
 Console.WriteLine();
 Console.WriteLine($"Beats total                : {beatCount}");
 Console.WriteLine($"Beats with Number > 0      : {beatsWithNum}");
@@ -129,6 +147,7 @@ Console.WriteLine($"Beats with GapAfterMs set  : {beatsWithGapMs}");
 Console.WriteLine($"Beats marked IsChapterStart: {beatsAsChapter}");
 Console.WriteLine($"Nested (non-root) strands  : {nestedStrands}  (should be 0)");
 Console.WriteLine($"Gaps table dropped         : {(gapsTableGone == 1 ? "yes" : "no")}");
+Console.WriteLine($"Strand temporal tables on  : {strandTemporalOn}/3  (Beats, Strands, StrandBeats)");
 return 0;
 
 // ───────────────────────────────────────────────────────────────────────
