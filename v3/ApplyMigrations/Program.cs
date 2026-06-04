@@ -63,6 +63,7 @@ var migrations = new[]
     "create_strand_reviews_20260531.sql",
     "create_focus_groups_20260531.sql",
     "create_strand_beat_scores_20260531.sql",
+    "add_strand_beat_score_columns_20260604.sql",
 };
 
 await using var db = await dbFactory.CreateDbContextAsync();
