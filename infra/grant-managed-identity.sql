@@ -13,7 +13,9 @@
 --   2. GitHub Actions OIDC service principal
 --      → display name = <GITHUB_SP_NAME>    (e.g. streetsamurai-github)
 --      → CI/CD workflow: run ApplyMigrations on every master push
---      → roles: db_ddladmin, db_datareader, db_datawriter
+--      → role: db_owner (db_ddladmin is NOT enough — enabling SYSTEM_VERSIONING
+--        on temporal tables fails with "You do not have the required permissions"
+--        under db_ddladmin; db_owner supersets ddladmin + datareader + datawriter)
 --
 -- Run this AGAINST THE StreetSamurai DATABASE (not master), as the AAD
 -- admin you configured in azure-sql.bicep. Example:
@@ -76,10 +78,11 @@ BEGIN
 END
 GO
 
-ALTER ROLE db_ddladmin   ADD MEMBER [$(GITHUB_SP_NAME)];
-ALTER ROLE db_datareader ADD MEMBER [$(GITHUB_SP_NAME)];
-ALTER ROLE db_datawriter ADD MEMBER [$(GITHUB_SP_NAME)];
-PRINT 'Granted db_ddladmin + db_datareader + db_datawriter to $(GITHUB_SP_NAME).';
+-- db_owner, not just db_ddladmin: enabling SYSTEM_VERSIONING / temporal tables
+-- (ALTER TABLE … SET (SYSTEM_VERSIONING = ON)) returns "You do not have the
+-- required permissions" under db_ddladmin alone. db_owner covers DDL + data + that.
+ALTER ROLE db_owner ADD MEMBER [$(GITHUB_SP_NAME)];
+PRINT 'Granted db_owner to $(GITHUB_SP_NAME).';
 GO
 
 -- ── Verification ─────────────────────────────────────────────────────────
