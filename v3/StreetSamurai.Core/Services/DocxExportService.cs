@@ -117,10 +117,10 @@ public class DocxExportService
 
     private static Paragraph BodyParagraph(string text)
     {
+        // Modern block style: no first-line indent; paragraphs separated by vertical space.
         var p = new Paragraph(new ParagraphProperties(
             new Justification { Val = JustificationValues.Both },
-            new Indentation { FirstLine = "432" },                                          // ~0.3"
-            new SpacingBetweenLines { Line = "276", LineRule = LineSpacingRuleValues.Auto })); // 1.15
+            new SpacingBetweenLines { Line = "276", LineRule = LineSpacingRuleValues.Auto, After = "160" })); // 1.15 line, ~8pt after
         foreach (var run in InlineRuns(text)) p.AppendChild(run);
         return p;
     }
