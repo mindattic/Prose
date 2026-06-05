@@ -229,17 +229,80 @@ public class ElevenLabsTtsService : ITtsService
         {
             foreach (var v in voicesArr.EnumerateArray())
             {
+                var modelIds = new List<string>();
+                if (v.TryGetProperty("high_quality_base_model_ids", out var hq)
+                    && hq.ValueKind == JsonValueKind.Array)
+                {
+                    foreach (var m in hq.EnumerateArray())
+                        if (m.GetString() is { Length: > 0 } id) modelIds.Add(id);
+                }
                 voices.Add(new TtsVoice
                 {
                     VoiceId = v.GetProperty("voice_id").GetString() ?? "",
                     Name = v.GetProperty("name").GetString() ?? "",
                     Category = v.TryGetProperty("category", out var cat) ? cat.GetString() ?? "" : "",
+                    PreviewUrl = v.TryGetProperty("preview_url", out var pu) ? pu.GetString() ?? "" : "",
+                    HighQualityModelIds = modelIds,
                 });
             }
         }
 
         return voices;
     }
+
+    /// <summary>
+    /// Lists the ElevenLabs models that can do text-to-speech, so the voice
+    /// studio can offer the real set of v2/v3 engines instead of a hardcoded
+    /// guess. Falls back to a known-good static list when the account can't
+    /// reach <c>/v1/models</c> (older keys, network failure) so the dropdown is
+    /// never empty.
+    /// </summary>
+    public async Task<List<TtsModel>> ListModelsAsync(CancellationToken ct = default)
+    {
+        if (!string.IsNullOrWhiteSpace(settings.ElevenLabsApiKey))
+        {
+            try
+            {
+                using var request = new HttpRequestMessage(HttpMethod.Get, "https://api.elevenlabs.io/v1/models");
+                request.Headers.Add("xi-api-key", settings.ElevenLabsApiKey);
+                var response = await http.SendAsync(request, ct);
+                if (response.IsSuccessStatusCode)
+                {
+                    var json = await response.Content.ReadAsStringAsync(ct);
+                    using var doc = JsonDocument.Parse(json);
+                    var models = new List<TtsModel>();
+                    // /v1/models returns a bare array of model objects.
+                    if (doc.RootElement.ValueKind == JsonValueKind.Array)
+                    {
+                        foreach (var m in doc.RootElement.EnumerateArray())
+                        {
+                            var canTts = !m.TryGetProperty("can_do_text_to_speech", out var c)
+                                         || c.ValueKind != JsonValueKind.False;
+                            if (!canTts) continue;
+                            var id = m.TryGetProperty("model_id", out var mid) ? mid.GetString() ?? "" : "";
+                            if (string.IsNullOrEmpty(id)) continue;
+                            var name = m.TryGetProperty("name", out var nm) ? nm.GetString() ?? id : id;
+                            models.Add(new TtsModel(id, name, IsV3Model(id)));
+                        }
+                    }
+                    if (models.Count > 0) return models;
+                }
+            }
+            catch (OperationCanceledException) { throw; }
+            catch { /* fall through to the static list */ }
+        }
+        return DefaultModels();
+    }
+
+    /// <summary>Known-good text-to-speech models, used when <c>/v1/models</c>
+    /// is unavailable. v3 first (the default), then the v2 family.</summary>
+    private static List<TtsModel> DefaultModels() =>
+    [
+        new("eleven_v3",               "Eleven v3",               true),
+        new("eleven_multilingual_v2",  "Eleven Multilingual v2",  false),
+        new("eleven_turbo_v2_5",       "Eleven Turbo v2.5",       false),
+        new("eleven_flash_v2_5",       "Eleven Flash v2.5",       false),
+    ];
 
     /// <summary>
     /// True when <paramref name="modelId"/> is an eleven_v3-family model
@@ -274,7 +337,20 @@ public record TtsVoice
     public string VoiceId { get; init; } = "";
     public string Name { get; init; } = "";
     public string Category { get; init; } = "";
+    /// <summary>Preview clip URL ElevenLabs hosts for this voice (may be empty).</summary>
+    public string PreviewUrl { get; init; } = "";
+    /// <summary>Base model ids this voice is flagged high-quality for. Used as a
+    /// UI hint (e.g. a v3✓ badge) — never as a hard gate, since most voices
+    /// render acceptably on any model.</summary>
+    public List<string> HighQualityModelIds { get; init; } = [];
+    /// <summary>True when the voice is flagged high-quality for an eleven_v3 model.</summary>
+    public bool SupportsV3 => HighQualityModelIds.Any(m => m.StartsWith("eleven_v3", StringComparison.OrdinalIgnoreCase));
 }
+
+/// <summary>One ElevenLabs TTS-capable model. <paramref name="IsV3"/> tells the
+/// UI to switch the stability slider to the three discrete v3 presets and grey
+/// out similarity/style (which v3 ignores).</summary>
+public record TtsModel(string ModelId, string Name, bool IsV3);
 
 /// <summary>Per-request voice_settings overrides. Any null falls back to the
 /// global <c>SettingsService</c> baseline. Pass to

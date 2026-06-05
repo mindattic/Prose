@@ -250,6 +250,41 @@ public class SettingsService : IDisposable
         return profile;
     }
 
+    /// <summary>
+    /// Bulk-import every ElevenLabs voice as TWO baseline profiles — a v3
+    /// variant (Robust 1.0, the project default that fights v3 accent drift)
+    /// and a v2 variant (factory 0.5). Deterministic ids
+    /// (<c>vox-{slug}-v3</c> / <c>vox-{slug}-v2</c>) make re-import idempotent:
+    /// baselines refresh in place rather than duplicating, and user-saved tuned
+    /// copies (which carry Guid-suffixed ids) are never touched. Returns the
+    /// number of voices imported (one count per voice, not per profile).
+    /// </summary>
+    public int ImportAllVoicesAsProfiles(IEnumerable<TtsVoice> voices)
+    {
+        if (voices is null) return 0;
+        var count = 0;
+        foreach (var v in voices)
+        {
+            if (string.IsNullOrWhiteSpace(v.VoiceId)) continue;
+            var name = string.IsNullOrWhiteSpace(v.Name) ? v.VoiceId : v.Name;
+            var slug = Slugify(name);
+            UpsertVoiceProfile(new Models.VoiceProfile
+            {
+                Id = $"vox-{slug}-v3", Label = $"{name} · v3",
+                VoiceId = v.VoiceId, Model = "eleven_v3",
+                Stability = 1.0, SimilarityBoost = 0.75, Style = 0.0, UseSpeakerBoost = true,
+            });
+            UpsertVoiceProfile(new Models.VoiceProfile
+            {
+                Id = $"vox-{slug}-v2", Label = $"{name} · v2",
+                VoiceId = v.VoiceId, Model = "eleven_multilingual_v2",
+                Stability = 0.5, SimilarityBoost = 0.75, Style = 0.0, UseSpeakerBoost = true,
+            });
+            count++;
+        }
+        return count;
+    }
+
     /// <summary>Remove a profile by id. If the deleted profile was the
     /// default, the remaining first profile (if any) becomes the new default.</summary>
     public void DeleteVoiceProfile(string profileId)

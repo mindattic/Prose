@@ -1286,6 +1286,65 @@ public class StrandWorkbenchService
         return false;
     }
 
+    /// <summary>
+    /// Render the strand's FIRST non-empty beat with an arbitrary voice profile
+    /// and return the MP3 bytes — a throwaway preview for the voice studio.
+    /// NOTHING is persisted: this never touches the strand's pinned voice, the
+    /// beat's stored audio, or the audio-event ledger. Uses the strand's
+    /// deterministic seed so the preview matches what a real publish on these
+    /// dials would actually sound like.
+    /// </summary>
+    public async Task<byte[]> AuditionBeatAsync(Guid strandId, Models.VoiceProfile dials, CancellationToken ct = default)
+    {
+        ArgumentNullException.ThrowIfNull(dials);
+        if (string.IsNullOrWhiteSpace(dials.VoiceId))
+            throw new InvalidOperationException("Pick a voice to audition.");
+        if (!await tts.IsConfiguredAsync())
+            throw new InvalidOperationException("TTS is not configured (no ElevenLabs API key).");
+
+        var first = (await GetOrderedBeatsAsync(strandId, ct))
+            .Where(o => !string.IsNullOrWhiteSpace(o.Beat.Text))
+            .Select(o => o.Beat)
+            .FirstOrDefault()
+            ?? throw new InvalidOperationException("Strand has no beat text to audition.");
+
+        var tagsEnabled = settings?.TtsUseAudioTags ?? true;
+        var prompt = BeatPromptBuilder.Build(first, dials.Model, tagsEnabled,
+            dials.Stability, dials.SimilarityBoost, dials.Style, DeriveSeed(strandId));
+        var vs = new TtsVoiceSettings(prompt.Stability, prompt.SimilarityBoost, prompt.Style,
+            Seed: prompt.Seed, ModelId: prompt.ModelId);
+        var result = await tts.SynthesizeWithIdAsync(
+            prompt.Text, dials.VoiceId, outputFormat: "mp3_44100_128",
+            previousRequestIds: null, previousText: null, nextText: null,
+            voiceSettings: vs, ct);
+        return result.Bytes;
+    }
+
+    /// <summary>
+    /// Pin a voice profile's full dial set onto the strand's snapshot columns so
+    /// every later (re)record and publish renders through it — the durable
+    /// "tweak the voice for THIS strand" path. Overwrites VoiceId/VoiceModel and
+    /// the three voice_settings dials; leaves VoiceSeed intact so the strand
+    /// stays deterministic across the change.
+    /// </summary>
+    public async Task SetStrandVoiceAsync(Guid strandId, Models.VoiceProfile dials, CancellationToken ct = default)
+    {
+        ArgumentNullException.ThrowIfNull(dials);
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct)
+            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+
+        strand.VoiceId         = dials.VoiceId;
+        strand.VoiceModel      = dials.Model;
+        strand.VoiceStability  = dials.Stability;
+        strand.VoiceSimilarity = dials.SimilarityBoost;
+        strand.VoiceStyle      = dials.Style;
+        strand.VoiceSeed     ??= DeriveSeed(strandId);
+        db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, null, "voice-set",
+            $"voice {dials.VoiceId}, model {dials.Model}, stability {dials.Stability}"));
+        await db.SaveChangesAsync(ct);
+    }
+
     /// <summary>Render a SINGLE beat's audio in isolation — the unit of work
     /// behind Live Broadcast's just-in-time look-ahead buffer. Mirrors one
     /// iteration of <see cref="NarrateAsync"/>'s loop: resolves the active
