@@ -526,7 +526,11 @@ public class SettingsService : IDisposable
         public string ElevenLabsVoiceId { get; set; } = "jfIS2w2yJi0grJZPyEsk";
         public string NarratorVoiceName { get; set; } = "Oliver Silk - Deep Gravel Narrative";
         public string TtsModel { get; set; } = "eleven_v3";
-        public double TtsStability { get; set; } = 0.5;
+        // Robust (1.0) on eleven_v3 — snapped to the highest of v3's three
+        // discrete presets so the narrator stays one continuous performance
+        // across beats. v3 ignores similarity_boost/style, so stability + the
+        // constant per-strand seed are the whole cross-beat consistency lever.
+        public double TtsStability { get; set; } = 1.0;
         public double TtsSimilarityBoost { get; set; } = 0.75;
         public double TtsStyle { get; set; } = 0.0;
         public bool TtsUseAudioTags { get; set; } = true;

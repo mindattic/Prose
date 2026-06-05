@@ -1370,7 +1370,7 @@ public class StrandWorkbenchService
     /// pacing); segment boundaries get exact PCM silence. The combined MP3 is
     /// written to the audio store AND copied to the user's Downloads folder.
     /// </summary>
-    public async Task<string?> PublishAudiobookAsync(Guid strandId, CancellationToken ct = default)
+    public async Task<string?> PublishAudiobookAsync(Guid strandId, bool retuneRobust = false, CancellationToken ct = default)
     {
         if (!await tts.IsConfiguredAsync())
             throw new InvalidOperationException("TTS is not configured (no ElevenLabs API key).");
@@ -1384,6 +1384,19 @@ public class StrandWorkbenchService
         if (ordered.Count == 0) { log.LogWarning("Strand {S} has no beat text to narrate", strandId); return null; }
 
         var voice = await ResolveStrandVoiceAsync(db, strand, ct);
+
+        // --robust: deliberately overwrite this strand's frozen stability to
+        // Robust (1.0). The snapshot normally pins voice params so re-records
+        // can't drift; this is the one explicit, opt-in retune that lets an
+        // older strand (snapshotted at Natural 0.5) adopt the Robust default on
+        // re-record. Persisted so every later (re)record stays Robust too.
+        if (retuneRobust && strand.VoiceStability is not 1.0)
+        {
+            strand.VoiceStability = 1.0;
+            await db.SaveChangesAsync(ct);
+            voice = voice with { Stability = 1.0 };
+            log.LogInformation("Strand {S} retuned to Robust (stability 1.0)", strandId);
+        }
         bool isV3 = voice.Model.Contains("v3", StringComparison.OrdinalIgnoreCase);
         // eleven_v3 caps a request far lower than the v2 family; budget per model.
         int limit = isV3 ? 2800 : 9000;
@@ -1403,11 +1416,60 @@ public class StrandWorkbenchService
         var ffmpeg = ResolveFfmpegPath();
         if (string.IsNullOrEmpty(ffmpeg))
             throw new InvalidOperationException(
-                "Audiobook publishing needs ffmpeg on PATH. ElevenLabs only allows raw PCM output on the Pro " +
-                "tier, so segments are fetched as MP3 (mp3_44100_128) and decoded + assembled with ffmpeg.");
+                "Audiobook publishing needs ffmpeg on PATH: segments are assembled as PCM and the combined " +
+                "track is encoded to MP3 with ffmpeg, and any non-PCM fetch format is decoded back to PCM with it.");
         var tmpWav = Path.Combine(Path.GetTempPath(), $"ss-audiobook-{Guid.CreateVersion7():N}.wav");
         long pcmTotal = 0, chars = 0;
         var prevReqIds = new List<string>();
+
+        // Voice params are frozen per strand, so the bundle is constant for
+        // every chunk — build it once.
+        var vs = new TtsVoiceSettings(voice.Stability, voice.Similarity, voice.Style, Seed: voice.Seed, ModelId: voice.Model);
+
+        // Negotiate the highest-fidelity output format this account/tier allows,
+        // once, then lock it for the whole strand (one consistent encode). The
+        // older path always fetched mp3_44100_128 — a lossy 128 k source that
+        // then got decoded + re-encoded, capping quality. pcm_44100 is lossless
+        // and skips the MP3 round-trip entirely; mp3_192 beats the universal
+        // mp3_128. On a tier/format rejection (401/403/422) we drop to the next.
+        string? fetchFormat = null;
+        async Task<(byte[] Pcm, string? RequestId)> FetchPcmAsync(
+            string chunk, IList<string>? stitchIds, string? pText, string? nText)
+        {
+            var prefs = fetchFormat is not null
+                ? new[] { fetchFormat }
+                : new[] { "pcm_44100", "mp3_44100_192", "mp3_44100_128" };
+            System.Net.Http.HttpRequestException? lastReject = null;
+            foreach (var fmt in prefs)
+            {
+                try
+                {
+                    var r = await tts.SynthesizeWithIdAsync(chunk, voice.VoiceId, fmt, stitchIds, pText, nText, vs, ct);
+                    if (fetchFormat is null)
+                    {
+                        fetchFormat = fmt;
+                        log.LogInformation("Audiobook fetch format negotiated: {Fmt}", fmt);
+                        db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "format-negotiated", fmt));
+                    }
+                    if (r.Bytes.Length == 0) return (r.Bytes, r.RequestId);
+                    var pcm = fmt.StartsWith("pcm", StringComparison.OrdinalIgnoreCase)
+                        ? r.Bytes
+                        : await DecodeMp3ToPcmAsync(ffmpeg!, r.Bytes, ct);
+                    return (pcm, r.RequestId);
+                }
+                catch (System.Net.Http.HttpRequestException ex) when (fetchFormat is null
+                    && ex.StatusCode is System.Net.HttpStatusCode.Unauthorized
+                        or System.Net.HttpStatusCode.Forbidden
+                        or System.Net.HttpStatusCode.UnprocessableEntity)
+                {
+                    lastReject = ex;
+                    log.LogWarning("Audiobook format {Fmt} rejected ({Code}); trying lower fidelity", fmt, ex.StatusCode);
+                }
+            }
+            if (lastReject is not null) throw lastReject;
+            throw new InvalidOperationException("No ElevenLabs output format accepted.");
+        }
+
         try
         {
             await using (var fs = new FileStream(tmpWav, FileMode.Create, FileAccess.ReadWrite, FileShare.None, 64 * 1024, useAsync: true))
@@ -1420,8 +1482,6 @@ public class StrandWorkbenchService
                     var text = AssembleSegmentText(seg, ref chars);
                     exportProgress[strandId] = new ExportProgress(si + 1, segments.Count,
                         string.IsNullOrWhiteSpace(seg[0].Beat.BeatTitle) ? $"Segment {si + 1}/{segments.Count}" : seg[0].Beat.BeatTitle);
-
-                    var vs = new TtsVoiceSettings(voice.Stability, voice.Similarity, voice.Style, Seed: voice.Seed, ModelId: voice.Model);
 
                     // Last-ditch tier: a segment (e.g. a single over-long beat, or a
                     // chapter that alone exceeds the budget) can still top the per-request
@@ -1441,16 +1501,12 @@ public class StrandWorkbenchService
                         var nextText = ci < chunks.Count - 1 ? Head(chunks[ci + 1])
                                      : si < segments.Count - 1 ? Head(segments[si + 1][0].Beat.Text) : null;
 
-                        // ElevenLabs gates pcm_* behind the Pro tier; mp3_44100_128 is on
-                        // every tier (it's the API default). Fetch MP3, then decode each
-                        // segment back to PCM so the silence-gap assembly and the single
-                        // final encode below stay unchanged.
-                        var res = await tts.SynthesizeWithIdAsync(chunks[ci], voice.VoiceId, "mp3_44100_128", stitch, prevText, nextText, vs, ct);
-                        if (res.Bytes.Length > 0)
-                        {
-                            var pcm = await DecodeMp3ToPcmAsync(ffmpeg!, res.Bytes, ct);
-                            if (pcm.Length > 0) { await fs.WriteAsync(pcm.AsMemory(), ct); pcmTotal += pcm.Length; segBytes += pcm.Length; }
-                        }
+                        // Fetch at the best format the tier allows (pcm_44100 lossless →
+                        // mp3_192 → mp3_128) and resolve to PCM so the silence-gap assembly
+                        // and the single final encode below stay unchanged. When the format
+                        // is already PCM the MP3 round-trip is skipped entirely.
+                        var res = await FetchPcmAsync(chunks[ci], stitch, prevText, nextText);
+                        if (res.Pcm.Length > 0) { await fs.WriteAsync(res.Pcm.AsMemory(), ct); pcmTotal += res.Pcm.Length; segBytes += res.Pcm.Length; }
                         if (!string.IsNullOrEmpty(res.RequestId)) { prevReqIds.Insert(0, res.RequestId!); if (prevReqIds.Count > 3) prevReqIds.RemoveRange(3, prevReqIds.Count - 3); }
                     }
                     db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "segment-narrated",
