@@ -299,7 +299,8 @@ else
                             <i class="bi @(copiedGuid == strand.Id ? "bi-check-lg" : "bi-clipboard")"></i>
                         </button>
                     </div>
-                    <textarea class="strand-synopsis mt-1" rows="1" placeholder="Synopsis (optional)"
+                    <textarea class="strand-synopsis mt-1" rows="5" placeholder="Synopsis (optional)"
+                              style="width:100%; resize:none; overflow-y:auto;"
                               @bind="strand.Synopsis" @bind:event="oninput" @onblur="SaveStrandHeaderAsync"></textarea>
                 </div>
                 <div style="min-width:200px;">
@@ -345,12 +346,13 @@ else
                     <div class="d-flex align-items-center mb-2">
                         <i class="bi bi-sliders text-info me-2"></i>
                         <span class="fw-semibold">Voice Studio</span>
-                        <span class="text-muted small ms-2">— pick a voice + model, turn the dials, audition Beat 001, then pin it to this strand or save it as a reusable profile.</span>
+                        <span class="text-muted small ms-2">— pick a voice + model, turn the dials, audition a sample line, then pin it to this strand or save it as a reusable profile.</span>
                         <button class="btn btn-sm btn-link text-muted ms-auto p-0" @onclick="() => showVoiceStudio = false"><i class="bi bi-x-lg"></i></button>
                     </div>
 
-                    <div class="row g-3">
-                        <div class="col-md-4">
+                    @* Voice is shared across engines; the dials below are not. *@
+                    <div class="row g-3 mb-2">
+                        <div class="col-md-6">
                             <label class="form-label small text-muted mb-1">Voice</label>
                             <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="editorProfile.VoiceId">
                                 <option value="">— pick a voice —</option>
@@ -360,48 +362,82 @@ else
                                 }
                             </select>
                         </div>
-                        <div class="col-md-4">
-                            <label class="form-label small text-muted mb-1">Model (engine)</label>
-                            <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="editorProfile.Model">
-                                @foreach (var m in models)
-                                {
-                                    <option value="@m.ModelId">@m.Name@(m.IsV3 ? "  · v3" : "  · v2")</option>
-                                }
-                            </select>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-end">
+                        <div class="col-md-6 d-flex align-items-end">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="vsSpeakerBoost" @bind="editorProfile.UseSpeakerBoost" />
                                 <label class="form-check-label small text-muted" for="vsSpeakerBoost">Speaker boost</label>
                             </div>
                         </div>
-
-                        <div class="col-md-4">
-                            <label class="form-label small text-muted mb-1">
-                                Stability: @editorProfile.Stability.ToString("F2")
-                                @if (EditorIsV3)
-                                {
-                                    <span class="text-info">— @(editorProfile.Stability <= 0.25 ? "Creative" : editorProfile.Stability >= 0.75 ? "Robust" : "Natural")</span>
-                                }
-                            </label>
-                            <input type="range" class="form-range" min="0" max="1"
-                                   step="@(EditorIsV3 ? "0.5" : "0.05")" @bind="editorProfile.Stability" @bind:event="oninput" />
-                            @if (EditorIsV3)
-                            {
-                                <div class="form-text text-muted small">v3 snaps to Creative / Natural / Robust. Robust = most consistent across the strand.</div>
-                            }
-                        </div>
-                        <div class="col-md-4">
-                            <label class="form-label small text-muted mb-1">Similarity: @editorProfile.SimilarityBoost.ToString("F2")</label>
-                            <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.SimilarityBoost" @bind:event="oninput" disabled="@EditorIsV3" />
-                            @if (EditorIsV3) { <div class="form-text text-muted small">Ignored by v3.</div> }
-                        </div>
-                        <div class="col-md-4">
-                            <label class="form-label small text-muted mb-1">Style: @editorProfile.Style.ToString("F2")</label>
-                            <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.Style" @bind:event="oninput" disabled="@EditorIsV3" />
-                            @if (EditorIsV3) { <div class="form-text text-muted small">Ignored by v3.</div> }
-                        </div>
                     </div>
+
+                    @* v2 and v3 are different APIs with different rules (continuous
+                       dials + request-stitching vs. discrete presets + inline tags).
+                       Separate tabs instead of one conditional UI straddling both. *@
+                    <ul class="nav nav-tabs mb-3">
+                        <li class="nav-item">
+                            <button type="button" class="nav-link @(studioEngine == "v3" ? "active" : "")" @onclick='() => SetEngine("v3")'>
+                                v3 <span class="small opacity-75">· tags + presets</span>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="nav-link @(studioEngine == "v2" ? "active" : "")" @onclick='() => SetEngine("v2")'>
+                                v2 <span class="small opacity-75">· continuous dials + stitching</span>
+                            </button>
+                        </li>
+                    </ul>
+
+                    @if (studioEngine == "v3")
+                    {
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label small text-muted mb-1">v3 model</label>
+                                <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="editorProfile.Model">
+                                    @foreach (var m in models.Where(m => m.IsV3))
+                                    {
+                                        <option value="@m.ModelId">@m.Name</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small text-muted mb-1">Stability preset</label>
+                                <div class="btn-group d-flex" role="group">
+                                    @foreach (var preset in V3Presets)
+                                    {
+                                        <button type="button"
+                                                class="btn btn-sm @(Math.Abs(editorProfile.Stability - preset.Value) < 0.01 ? "btn-info" : "btn-outline-info")"
+                                                @onclick="() => editorProfile.Stability = preset.Value">@preset.Name</button>
+                                    }
+                                </div>
+                                <div class="form-text text-muted small">Robust = most consistent across the strand (fights v3 accent drift). v3 ignores similarity &amp; style.</div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <label class="form-label small text-muted mb-1">v2 model</label>
+                                <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="editorProfile.Model">
+                                    @foreach (var m in models.Where(m => !m.IsV3))
+                                    {
+                                        <option value="@m.ModelId">@m.Name</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label small text-muted mb-1">Stability: @editorProfile.Stability.ToString("F2")</label>
+                                <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.Stability" @bind:event="oninput" />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label small text-muted mb-1">Similarity: @editorProfile.SimilarityBoost.ToString("F2")</label>
+                                <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.SimilarityBoost" @bind:event="oninput" />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label small text-muted mb-1">Style: @editorProfile.Style.ToString("F2")</label>
+                                <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.Style" @bind:event="oninput" />
+                            </div>
+                        </div>
+                    }
 
                     @if (Settings.VoiceProfiles.Count > 0)
                     {
@@ -419,11 +455,11 @@ else
                     }
 
                     <div class="d-flex gap-2 flex-wrap align-items-end mt-3">
-                        <button class="btn btn-sm btn-info" @onclick="AuditionBeatAsync" disabled="@(auditioning || string.IsNullOrWhiteSpace(editorProfile.VoiceId))"
-                                title="Render Beat 001 with these dials and play it — nothing is saved">
+                        <button class="btn btn-sm btn-info" @onclick="AuditionVoiceAsync" disabled="@(auditioning || string.IsNullOrWhiteSpace(editorProfile.VoiceId))"
+                                title='Speak "The quick brown fox jumped over the lazy dog." with these dials and play it — nothing is saved'>
                             @if (auditioning) { <span class="spinner-border spinner-border-sm me-1"></span> }
                             else { <i class="bi bi-play-fill me-1"></i> }
-                            Audition Beat 001
+                            Audition voice
                         </button>
                         <button class="btn btn-sm btn-outline-success" @onclick="ApplyVoiceToStrandAsync" disabled="@string.IsNullOrWhiteSpace(editorProfile.VoiceId)"
                                 title="Pin these dials to THIS strand — the next record/publish uses them">
@@ -452,7 +488,7 @@ else
                     @if (!string.IsNullOrEmpty(auditionAudioUrl))
                     {
                         <div class="mt-3">
-                            <label class="form-label small text-muted mb-1">Audition — Beat 001</label>
+                            <label class="form-label small text-muted mb-1">Audition — “The quick brown fox jumped over the lazy dog.”</label>
                             <audio controls autoplay src="@auditionAudioUrl" class="w-100" style="height:34px;"></audio>
                         </div>
                     }
@@ -1304,12 +1340,33 @@ else
     private string newProfileLabel = "";
     private bool importingVoices;
 
-    /// <summary>True when the editor's currently-selected model is v3-class —
-    /// the UI then snaps stability to the three presets and disables the
-    /// similarity/style dials (v3 ignores them).</summary>
-    private bool EditorIsV3 =>
-        models.FirstOrDefault(m => m.ModelId == editorProfile.Model)?.IsV3
-        ?? (editorProfile.Model?.StartsWith("eleven_v3", StringComparison.OrdinalIgnoreCase) ?? false);
+    /// <summary>Which engine's controls the studio is showing — "v3" or "v2".
+    /// They are genuinely different APIs (discrete presets + inline tags vs.
+    /// continuous dials + request-stitching), so each gets its own tab and
+    /// controls rather than one conditional UI straddling both.</summary>
+    private string studioEngine = "v3";
+
+    /// <summary>The only three stability values eleven_v3 accepts.</summary>
+    private static readonly (double Value, string Name)[] V3Presets =
+        [ (0.0, "Creative"), (0.5, "Natural"), (1.0, "Robust") ];
+
+    private static bool IsV3Model(string? model) =>
+        model?.StartsWith("eleven_v3", StringComparison.OrdinalIgnoreCase) ?? false;
+
+    private static double SnapV3Stability(double v) => v <= 0.25 ? 0.0 : v >= 0.75 ? 1.0 : 0.5;
+
+    /// <summary>Switch the studio to an engine's tab: adopt a valid model for
+    /// that engine if the current one belongs to the other, and snap stability
+    /// to a preset when moving to v3 (a v2 arbitrary value would be illegal).</summary>
+    private void SetEngine(string engine)
+    {
+        studioEngine = engine;
+        var wantV3 = engine == "v3";
+        if (IsV3Model(editorProfile.Model) != wantV3)
+            editorProfile.Model = (wantV3 ? models.FirstOrDefault(m => m.IsV3) : models.FirstOrDefault(m => !m.IsV3))?.ModelId
+                ?? (wantV3 ? "eleven_v3" : "eleven_multilingual_v2");
+        if (wantV3) editorProfile.Stability = SnapV3Stability(editorProfile.Stability);
+    }
 
     /// <summary>Copy the strand's pinned voice snapshot into the editor so the
     /// studio opens showing what the strand currently uses.</summary>
@@ -1327,6 +1384,7 @@ else
             Style           = strand.VoiceStyle      ?? Settings.TtsStyle,
             UseSpeakerBoost = true,
         };
+        studioEngine = IsV3Model(editorProfile.Model) ? "v3" : "v2";
         auditionAudioUrl = null;
     }
 
@@ -1340,11 +1398,12 @@ else
             Stability = p.Stability, SimilarityBoost = p.SimilarityBoost,
             Style = p.Style, UseSpeakerBoost = p.UseSpeakerBoost,
         };
+        studioEngine = IsV3Model(editorProfile.Model) ? "v3" : "v2";
         newProfileLabel = $"{p.Label} (copy)";
         auditionAudioUrl = null;
     }
 
-    private async Task AuditionBeatAsync()
+    private async Task AuditionVoiceAsync()
     {
         if (strand == null || auditioning) return;
         if (string.IsNullOrWhiteSpace(editorProfile.VoiceId)) { Toast.Error("AUDITION", "Pick a voice first."); return; }
@@ -1353,7 +1412,7 @@ else
         StateHasChanged();
         try
         {
-            var bytes = await Workbench.AuditionBeatAsync(strand.Id, editorProfile);
+            var bytes = await Workbench.AuditionVoiceAsync(strand.Id, editorProfile);
             auditionAudioUrl = "data:audio/mpeg;base64," + Convert.ToBase64String(bytes);
         }
         catch (Exception ex)
