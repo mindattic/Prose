@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.RateLimiting;
 using Serilog;
 using Serilog.Events;
-using StreetSamurai.Blazor.Auth;
 using StreetSamurai.Blazor.Cli;
 using StreetSamurai.Blazor.Components;
 using StreetSamurai.Blazor.Services;
@@ -646,10 +645,6 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
                 return;
             }
 
-            // Dev auto-login pseudo-user — skip DB validation.
-            // DevAutoLoginMiddleware only runs in Development; in production only real users exist.
-            if (userId == "dev-auto-login") return;
-
             var userRepo = context.HttpContext.RequestServices.GetRequiredService<UserRepository>();
             var user = userRepo.GetById(userId);
             if (user == null || user.SecurityStamp != stamp)
@@ -719,12 +714,6 @@ app.UseHttpsRedirection();
 app.UseRateLimiter();
 app.UseAuthentication();
 app.UseAuthorization();
-
-// Dev-only: auto-login as admin (reads DevAuth section from appsettings.Development.json)
-if (app.Environment.IsDevelopment() && app.Configuration.GetSection("DevAuth").Exists())
-{
-    app.UseMiddleware<DevAutoLoginMiddleware>();
-}
 
 // Enforce MustChangePassword: redirect users who haven't changed their forced password.
 // Without this, a user could navigate directly to any page and bypass the requirement.
