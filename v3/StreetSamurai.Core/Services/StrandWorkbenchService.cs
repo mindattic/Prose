@@ -1286,15 +1286,20 @@ public class StrandWorkbenchService
         return false;
     }
 
+    /// <summary>The fixed audition line. A pangram exercises a broad phoneme
+    /// spread in one short clip, so the operator hears a voice's character
+    /// without depending on whatever the strand's first beat happens to say.</summary>
+    public const string AuditionSampleText = "The quick brown fox jumped over the lazy dog.";
+
     /// <summary>
-    /// Render the strand's FIRST non-empty beat with an arbitrary voice profile
-    /// and return the MP3 bytes — a throwaway preview for the voice studio.
-    /// NOTHING is persisted: this never touches the strand's pinned voice, the
-    /// beat's stored audio, or the audio-event ledger. Uses the strand's
-    /// deterministic seed so the preview matches what a real publish on these
-    /// dials would actually sound like.
+    /// Render the fixed <see cref="AuditionSampleText"/> with an arbitrary voice
+    /// profile and return the MP3 bytes — a throwaway preview for the voice
+    /// studio. NOTHING is persisted: this never touches the strand's pinned
+    /// voice, any beat's stored audio, or the audio-event ledger. Uses the
+    /// strand's deterministic seed so the sample previews how THIS strand's
+    /// voice realization would actually sound on these dials.
     /// </summary>
-    public async Task<byte[]> AuditionBeatAsync(Guid strandId, Models.VoiceProfile dials, CancellationToken ct = default)
+    public async Task<byte[]> AuditionVoiceAsync(Guid strandId, Models.VoiceProfile dials, CancellationToken ct = default)
     {
         ArgumentNullException.ThrowIfNull(dials);
         if (string.IsNullOrWhiteSpace(dials.VoiceId))
@@ -1302,19 +1307,13 @@ public class StrandWorkbenchService
         if (!await tts.IsConfiguredAsync())
             throw new InvalidOperationException("TTS is not configured (no ElevenLabs API key).");
 
-        var first = (await GetOrderedBeatsAsync(strandId, ct))
-            .Where(o => !string.IsNullOrWhiteSpace(o.Beat.Text))
-            .Select(o => o.Beat)
-            .FirstOrDefault()
-            ?? throw new InvalidOperationException("Strand has no beat text to audition.");
-
-        var tagsEnabled = settings?.TtsUseAudioTags ?? true;
-        var prompt = BeatPromptBuilder.Build(first, dials.Model, tagsEnabled,
-            dials.Stability, dials.SimilarityBoost, dials.Style, DeriveSeed(strandId));
-        var vs = new TtsVoiceSettings(prompt.Stability, prompt.SimilarityBoost, prompt.Style,
-            Seed: prompt.Seed, ModelId: prompt.ModelId);
+        // A plain fixed line carries no beat metadata, so synthesize it directly
+        // with the dials. The TTS layer snaps stability and drops similarity/style
+        // for v3; the strand seed anchors the voice realization.
+        var vs = new TtsVoiceSettings(dials.Stability, dials.SimilarityBoost, dials.Style,
+            Seed: DeriveSeed(strandId), ModelId: dials.Model);
         var result = await tts.SynthesizeWithIdAsync(
-            prompt.Text, dials.VoiceId, outputFormat: "mp3_44100_128",
+            AuditionSampleText, dials.VoiceId, outputFormat: "mp3_44100_128",
             previousRequestIds: null, previousText: null, nextText: null,
             voiceSettings: vs, ct);
         return result.Bytes;
