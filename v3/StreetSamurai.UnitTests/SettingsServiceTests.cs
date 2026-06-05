@@ -230,4 +230,73 @@ public class SettingsServiceTests
         using var fresh = new SettingsService(tempDir);
         Assert.That(fresh.RepoListOnRight, Is.False);
     }
+
+    // ── ImportAllVoicesAsProfiles ─────────────────────────────────────────────
+
+    private static readonly TtsVoice[] TwoVoices =
+    [
+        new() { VoiceId = "vid-oliver", Name = "Oliver Silk" },
+        new() { VoiceId = "vid-mara",   Name = "Mara Quint" },
+    ];
+
+    [Test]
+    public void ImportAllVoices_CreatesTwoBaselinesPerVoice()
+    {
+        var n = svc.ImportAllVoicesAsProfiles(TwoVoices);
+
+        Assert.That(n, Is.EqualTo(2));
+        Assert.That(svc.VoiceProfiles, Has.Count.EqualTo(4));
+
+        var v3 = svc.VoiceProfiles.Single(p => p.Id == "vox-oliver-silk-v3");
+        Assert.Multiple(() =>
+        {
+            Assert.That(v3.Model, Is.EqualTo("eleven_v3"));
+            Assert.That(v3.Stability, Is.EqualTo(1.0));         // Robust — the drift fix
+            Assert.That(v3.VoiceId, Is.EqualTo("vid-oliver"));
+            Assert.That(v3.Label, Is.EqualTo("Oliver Silk · v3"));
+        });
+
+        var v2 = svc.VoiceProfiles.Single(p => p.Id == "vox-oliver-silk-v2");
+        Assert.Multiple(() =>
+        {
+            Assert.That(v2.Model, Is.EqualTo("eleven_multilingual_v2"));
+            Assert.That(v2.Stability, Is.EqualTo(0.5));         // factory default
+            Assert.That(v2.VoiceId, Is.EqualTo("vid-oliver"));
+        });
+    }
+
+    [Test]
+    public void ImportAllVoices_IsIdempotent_NoDuplicates()
+    {
+        svc.ImportAllVoicesAsProfiles(TwoVoices);
+        svc.ImportAllVoicesAsProfiles(TwoVoices);
+
+        Assert.That(svc.VoiceProfiles, Has.Count.EqualTo(4));
+    }
+
+    [Test]
+    public void ImportAllVoices_PreservesUserTunedCopies()
+    {
+        svc.ImportAllVoicesAsProfiles(TwoVoices);
+        // Simulate a copy-on-save tweak: a fresh-id profile the studio created.
+        var tuned = svc.UpsertVoiceProfile(new StreetSamurai.Core.Models.VoiceProfile
+        {
+            Label = "Oliver gravelly", VoiceId = "vid-oliver", Model = "eleven_v3", Stability = 0.5,
+        });
+
+        svc.ImportAllVoicesAsProfiles(TwoVoices); // re-import must not touch the tuned copy
+
+        var stillThere = svc.VoiceProfiles.SingleOrDefault(p => p.Id == tuned.Id);
+        Assert.That(stillThere, Is.Not.Null);
+        Assert.That(stillThere!.Stability, Is.EqualTo(0.5));
+        Assert.That(svc.VoiceProfiles, Has.Count.EqualTo(5));
+    }
+
+    [Test]
+    public void ImportAllVoices_SkipsVoicesWithNoId()
+    {
+        var n = svc.ImportAllVoicesAsProfiles([new TtsVoice { VoiceId = "", Name = "Bad" }]);
+        Assert.That(n, Is.EqualTo(0));
+        Assert.That(svc.VoiceProfiles, Is.Empty);
+    }
 }

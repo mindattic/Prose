@@ -304,12 +304,18 @@ else
                 </div>
                 <div style="min-width:200px;">
                     <label class="form-label small text-muted mb-1">Voice</label>
-                    <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="strand.VoiceId" @bind:after="SaveStrandHeaderAsync">
-                        @foreach (var v in voices)
-                        {
-                            <option value="@v.VoiceId">@v.Name</option>
-                        }
-                    </select>
+                    <div class="d-flex gap-1">
+                        <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="strand.VoiceId" @bind:after="SaveStrandHeaderAsync">
+                            @foreach (var v in voices)
+                            {
+                                <option value="@v.VoiceId">@v.Name</option>
+                            }
+                        </select>
+                        <button class="btn btn-sm btn-outline-info" type="button" @onclick="() => showVoiceStudio = !showVoiceStudio"
+                                title="Open the Voice Studio — pick any v2/v3 voice, turn its dials, audition Beat 001, save it as a profile">
+                            <i class="bi bi-sliders"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -332,6 +338,126 @@ else
                     </a>
                 </div>
             </div>
+
+            @if (showVoiceStudio)
+            {
+                <div class="border border-secondary rounded p-3 mt-2 bg-black">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-sliders text-info me-2"></i>
+                        <span class="fw-semibold">Voice Studio</span>
+                        <span class="text-muted small ms-2">— pick a voice + model, turn the dials, audition Beat 001, then pin it to this strand or save it as a reusable profile.</span>
+                        <button class="btn btn-sm btn-link text-muted ms-auto p-0" @onclick="() => showVoiceStudio = false"><i class="bi bi-x-lg"></i></button>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label class="form-label small text-muted mb-1">Voice</label>
+                            <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="editorProfile.VoiceId">
+                                <option value="">— pick a voice —</option>
+                                @foreach (var v in voices)
+                                {
+                                    <option value="@v.VoiceId">@v.Name@(v.SupportsV3 ? "  (v3✓)" : "")</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label small text-muted mb-1">Model (engine)</label>
+                            <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="editorProfile.Model">
+                                @foreach (var m in models)
+                                {
+                                    <option value="@m.ModelId">@m.Name@(m.IsV3 ? "  · v3" : "  · v2")</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-end">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="vsSpeakerBoost" @bind="editorProfile.UseSpeakerBoost" />
+                                <label class="form-check-label small text-muted" for="vsSpeakerBoost">Speaker boost</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label small text-muted mb-1">
+                                Stability: @editorProfile.Stability.ToString("F2")
+                                @if (EditorIsV3)
+                                {
+                                    <span class="text-info">— @(editorProfile.Stability <= 0.25 ? "Creative" : editorProfile.Stability >= 0.75 ? "Robust" : "Natural")</span>
+                                }
+                            </label>
+                            <input type="range" class="form-range" min="0" max="1"
+                                   step="@(EditorIsV3 ? "0.5" : "0.05")" @bind="editorProfile.Stability" @bind:event="oninput" />
+                            @if (EditorIsV3)
+                            {
+                                <div class="form-text text-muted small">v3 snaps to Creative / Natural / Robust. Robust = most consistent across the strand.</div>
+                            }
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label small text-muted mb-1">Similarity: @editorProfile.SimilarityBoost.ToString("F2")</label>
+                            <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.SimilarityBoost" @bind:event="oninput" disabled="@EditorIsV3" />
+                            @if (EditorIsV3) { <div class="form-text text-muted small">Ignored by v3.</div> }
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label small text-muted mb-1">Style: @editorProfile.Style.ToString("F2")</label>
+                            <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.Style" @bind:event="oninput" disabled="@EditorIsV3" />
+                            @if (EditorIsV3) { <div class="form-text text-muted small">Ignored by v3.</div> }
+                        </div>
+                    </div>
+
+                    @if (Settings.VoiceProfiles.Count > 0)
+                    {
+                        <div class="mt-3" style="max-width:360px;">
+                            <label class="form-label small text-muted mb-1">Load a saved profile into the editor</label>
+                            <select class="form-select form-select-sm bg-black text-light border-secondary"
+                                    @onchange="e => LoadProfileIntoEditor(e.Value?.ToString() ?? string.Empty)">
+                                <option value="">— @Settings.VoiceProfiles.Count saved profiles —</option>
+                                @foreach (var p in Settings.VoiceProfiles)
+                                {
+                                    <option value="@p.Id">@p.Label</option>
+                                }
+                            </select>
+                        </div>
+                    }
+
+                    <div class="d-flex gap-2 flex-wrap align-items-end mt-3">
+                        <button class="btn btn-sm btn-info" @onclick="AuditionBeatAsync" disabled="@(auditioning || string.IsNullOrWhiteSpace(editorProfile.VoiceId))"
+                                title="Render Beat 001 with these dials and play it — nothing is saved">
+                            @if (auditioning) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                            else { <i class="bi bi-play-fill me-1"></i> }
+                            Audition Beat 001
+                        </button>
+                        <button class="btn btn-sm btn-outline-success" @onclick="ApplyVoiceToStrandAsync" disabled="@string.IsNullOrWhiteSpace(editorProfile.VoiceId)"
+                                title="Pin these dials to THIS strand — the next record/publish uses them">
+                            <i class="bi bi-pin-angle me-1"></i>Apply to this strand
+                        </button>
+                        <div class="d-flex gap-1 align-items-end">
+                            <div>
+                                <label class="form-label small text-muted mb-1">New profile name</label>
+                                <input class="form-control form-control-sm bg-black text-light border-secondary" style="min-width:200px;"
+                                       placeholder="e.g. Oliver Silk — gravelly v3" @bind="newProfileLabel" />
+                            </div>
+                            <button class="btn btn-sm btn-outline-success" @onclick="SaveAsNewProfile"
+                                    disabled="@(string.IsNullOrWhiteSpace(editorProfile.VoiceId) || string.IsNullOrWhiteSpace(newProfileLabel))"
+                                    title="Save these dials as a new profile (never overwrites an existing one)">
+                                <i class="bi bi-save me-1"></i>Save as profile
+                            </button>
+                        </div>
+                        <button class="btn btn-sm btn-outline-light ms-auto" @onclick="ImportAllVoicesAsync" disabled="@importingVoices"
+                                title="Create baseline v2 + v3 profiles for every ElevenLabs voice so they're always in your list">
+                            @if (importingVoices) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                            else { <i class="bi bi-cloud-download me-1"></i> }
+                            Import all voices
+                        </button>
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(auditionAudioUrl))
+                    {
+                        <div class="mt-3">
+                            <label class="form-label small text-muted mb-1">Audition — Beat 001</label>
+                            <audio controls autoplay src="@auditionAudioUrl" class="w-100" style="height:34px;"></audio>
+                        </div>
+                    }
+                </div>
+            }
         </div>
 
         @if (publishing)
@@ -1165,6 +1291,134 @@ else
     private string defaultVoiceId = "";
     private List<TtsVoice> voices = new();
 
+    // ── Voice Studio ───────────────────────────────────────────────────────
+    // Pick any v2/v3 voice, turn its dials, audition Beat 001 (throwaway), then
+    // pin it to this strand and/or save it as a reusable profile. editorProfile
+    // is the live dial set being tuned; it is seeded from the strand's current
+    // voice snapshot whenever a strand loads.
+    private List<TtsModel> models = new();
+    private bool showVoiceStudio;
+    private StreetSamurai.Core.Models.VoiceProfile editorProfile = new() { Model = "eleven_v3", Stability = 1.0, SimilarityBoost = 0.75, Style = 0.0, UseSpeakerBoost = true };
+    private bool auditioning;
+    private string? auditionAudioUrl;
+    private string newProfileLabel = "";
+    private bool importingVoices;
+
+    /// <summary>True when the editor's currently-selected model is v3-class —
+    /// the UI then snaps stability to the three presets and disables the
+    /// similarity/style dials (v3 ignores them).</summary>
+    private bool EditorIsV3 =>
+        models.FirstOrDefault(m => m.ModelId == editorProfile.Model)?.IsV3
+        ?? (editorProfile.Model?.StartsWith("eleven_v3", StringComparison.OrdinalIgnoreCase) ?? false);
+
+    /// <summary>Copy the strand's pinned voice snapshot into the editor so the
+    /// studio opens showing what the strand currently uses.</summary>
+    private void SeedVoiceEditorFromStrand()
+    {
+        if (strand == null) return;
+        editorProfile = new StreetSamurai.Core.Models.VoiceProfile
+        {
+            Id              = "",
+            Label           = "",
+            VoiceId         = string.IsNullOrEmpty(strand.VoiceId) ? defaultVoiceId : strand.VoiceId,
+            Model           = string.IsNullOrEmpty(strand.VoiceModel) ? (Settings.TtsModel ?? "eleven_v3") : strand.VoiceModel,
+            Stability       = strand.VoiceStability  ?? Settings.TtsStability,
+            SimilarityBoost = strand.VoiceSimilarity ?? Settings.TtsSimilarityBoost,
+            Style           = strand.VoiceStyle      ?? Settings.TtsStyle,
+            UseSpeakerBoost = true,
+        };
+        auditionAudioUrl = null;
+    }
+
+    private void LoadProfileIntoEditor(string profileId)
+    {
+        var p = Settings.VoiceProfiles.FirstOrDefault(x => x.Id == profileId);
+        if (p == null) return;
+        editorProfile = new StreetSamurai.Core.Models.VoiceProfile
+        {
+            Id = "", Label = "", VoiceId = p.VoiceId, Model = p.Model,
+            Stability = p.Stability, SimilarityBoost = p.SimilarityBoost,
+            Style = p.Style, UseSpeakerBoost = p.UseSpeakerBoost,
+        };
+        newProfileLabel = $"{p.Label} (copy)";
+        auditionAudioUrl = null;
+    }
+
+    private async Task AuditionBeatAsync()
+    {
+        if (strand == null || auditioning) return;
+        if (string.IsNullOrWhiteSpace(editorProfile.VoiceId)) { Toast.Error("AUDITION", "Pick a voice first."); return; }
+        auditioning = true;
+        auditionAudioUrl = null;
+        StateHasChanged();
+        try
+        {
+            var bytes = await Workbench.AuditionBeatAsync(strand.Id, editorProfile);
+            auditionAudioUrl = "data:audio/mpeg;base64," + Convert.ToBase64String(bytes);
+        }
+        catch (Exception ex)
+        {
+            Log.LogError(ex, "Audition failed for strand {S}", strand.Id);
+            Toast.Error("AUDITION", ex.Message);
+        }
+        finally { auditioning = false; StateHasChanged(); }
+    }
+
+    private async Task ApplyVoiceToStrandAsync()
+    {
+        if (strand == null) return;
+        if (string.IsNullOrWhiteSpace(editorProfile.VoiceId)) { Toast.Error("VOICE", "Pick a voice first."); return; }
+        try
+        {
+            await Workbench.SetStrandVoiceAsync(strand.Id, editorProfile);
+            strand.VoiceId = editorProfile.VoiceId;
+            Toast.Success("VOICE", "Pinned to this strand — the next record/publish uses these dials.");
+        }
+        catch (Exception ex)
+        {
+            Log.LogError(ex, "Apply voice failed for strand {S}", strand.Id);
+            Toast.Error("VOICE", ex.Message);
+        }
+    }
+
+    private void SaveAsNewProfile()
+    {
+        if (string.IsNullOrWhiteSpace(editorProfile.VoiceId)) { Toast.Error("PROFILE", "Pick a voice first."); return; }
+        if (string.IsNullOrWhiteSpace(newProfileLabel)) { Toast.Error("PROFILE", "Give the profile a name."); return; }
+        // Blank Id forces UpsertVoiceProfile to mint a fresh one — copy-on-save,
+        // so a baseline or earlier custom profile is never overwritten.
+        var copy = new StreetSamurai.Core.Models.VoiceProfile
+        {
+            Id = "", Label = newProfileLabel.Trim(), VoiceId = editorProfile.VoiceId,
+            Model = editorProfile.Model, Stability = editorProfile.Stability,
+            SimilarityBoost = editorProfile.SimilarityBoost, Style = editorProfile.Style,
+            UseSpeakerBoost = editorProfile.UseSpeakerBoost,
+        };
+        var saved = Settings.UpsertVoiceProfile(copy);
+        Toast.Success("PROFILE", $"Saved “{saved.Label}” — it'll always be in your profile list.");
+        newProfileLabel = "";
+    }
+
+    private async Task ImportAllVoicesAsync()
+    {
+        if (importingVoices) return;
+        importingVoices = true;
+        StateHasChanged();
+        try
+        {
+            var live = (await Tts.ListVoicesAsync()).Where(v => !string.IsNullOrWhiteSpace(v.VoiceId)).ToList();
+            if (live.Count == 0) { Toast.Error("IMPORT", "No voices returned — check the ElevenLabs API key."); return; }
+            var n = Settings.ImportAllVoicesAsProfiles(live);
+            Toast.Success("IMPORT", $"Imported {n} voices as {n * 2} baseline profiles (v2 + v3).");
+        }
+        catch (Exception ex)
+        {
+            Log.LogError(ex, "Voice import failed");
+            Toast.Error("IMPORT", ex.Message);
+        }
+        finally { importingVoices = false; StateHasChanged(); }
+    }
+
     /// <summary>Last beat the listener was playing, surfaced as a "resume here"
     /// banner + a green highlight ring on the row. Backed by
     /// Strand.LastPlayedBeatId; written by OnBeatStarted as the JS player
@@ -1200,6 +1454,8 @@ else
         {
             voices = new() { new TtsVoice { VoiceId = defaultVoiceId, Name = "Default" } };
         }
+        try { models = await Tts.ListModelsAsync(); }
+        catch { models = new() { new TtsModel("eleven_v3", "Eleven v3", true) }; }
     }
 
     protected override async Task OnParametersSetAsync()
@@ -1288,6 +1544,7 @@ else
             {
                 strandLoadedUpdatedAt = strand.UpdatedAt;
                 if (string.IsNullOrEmpty(strand.VoiceId)) strand.VoiceId = defaultVoiceId;
+                SeedVoiceEditorFromStrand();
                 beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
                 SyncDraftsAfterReload();
                 await RefreshHistoryCountsAsync();

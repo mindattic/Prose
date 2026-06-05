@@ -38,6 +38,24 @@ if (args.Contains("--rebuild-graph"))
     return;
 }
 
+// CLI mode: ss --reset-password --email <e> --password <p> [--require-change]
+// Operator password reset over the MindAttic.Authentication store, no web server.
+if (args.Contains("--reset-password"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    // Security bucket surfaces the Argon2id pepper from Vault so the hash the
+    // reset writes is verifiable by the login flow (same as the live host).
+    cliBuilder.Configuration.AddMindAtticVaultFiles(o => o.Buckets = new[]
+        { "LLM", "Brokers", "Tokens", "Subtitles", "Notifications", "AudioStore", "Security" });
+    cliBuilder.Services.AddStreetSamuraiServices();
+    cliBuilder.Services.AddMindAtticAuthentication<StreetSamuraiAuthDbContext>(
+        cliBuilder.Configuration,
+        o => { o.AppName = "StreetSamurai"; o.IsProduction = !cliBuilder.Environment.IsDevelopment(); });
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ResetPasswordCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: dotnet run --project ... -- --write-story <mode> [options]
 // Generates a story via the same pipeline as the /stories UI and saves it as a Chapter.
 if (args.Contains("--write-story"))
