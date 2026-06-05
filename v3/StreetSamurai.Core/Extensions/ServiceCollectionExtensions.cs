@@ -37,6 +37,25 @@ public static class ServiceCollectionExtensions
         services.AddScoped<StreetSamuraiDbContext>(sp =>
             sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContext());
 
+        // ── EF Core: MindAttic.Authentication identity tables (auth schema) ──────
+        // SAME SQL database as StreetSamuraiDbContext (same connection-string
+        // resolution chain). Registered SCOPED — the library's data seam is
+        // AddScoped<IAuthDataContext>(sp => sp.GetRequiredService<StreetSamuraiAuthDbContext>()),
+        // so a scoped resolve must exist. A SEPARATE context so the auth tables ride
+        // clean EF migrations while the world tables stay on hand-written temporal SQL.
+        services.AddDbContext<StreetSamuraiAuthDbContext>((sp, opts) =>
+        {
+            var cfg = sp.GetService<IConfiguration>();
+            var connStr =
+                Environment.GetEnvironmentVariable("ConnectionStrings__StreetSamurai")
+                ?? cfg?.GetConnectionString("StreetSamurai")
+                ?? @"Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;";
+            opts.UseSqlServer(connStr);
+        });
+        // Idempotent legacy UserAccount → AuthUser migration (bcrypt carry +
+        // upgrade-on-login). Scoped: depends on the scoped auth context.
+        services.AddScoped<AuthUserImportService>();
+
         // Home-page stats cache: a singleton holding pre-computed entity
         // counts for the tile board + /board sub-tiles. Populated by the
         // background refresh service below. The request path reads from
@@ -197,11 +216,13 @@ public static class ServiceCollectionExtensions
         // Media files — images, video, 3D models named {entityId}.{index:D2}.{ext}
         services.AddSingleton<MediaService>();
 
-        // User accounts and authentication
+        // User accounts and authentication. AuthService + PasswordResetService were
+        // retired in favor of MindAttic.Authentication (wired in the Blazor host via
+        // AddMindAtticAuthentication). UserRepository is retained for one release as the
+        // sole data source for AuthUserImportService (its 'users.accounts' Settings blob
+        // is the rollback artifact); ProfileService (avatars) + EmailService (SMTP) stay.
         services.AddSingleton<UserRepository>();
-        services.AddSingleton<AuthService>();
         services.AddSingleton<ProfileService>();
-        services.AddSingleton<PasswordResetService>();
         services.AddSingleton<EmailService>();
 
         services.AddSingleton<DatabaseService>();

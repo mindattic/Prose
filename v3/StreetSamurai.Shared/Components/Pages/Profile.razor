@@ -1,13 +1,10 @@
 @page "/profile"
+@page "/account"
 @inject ProfileService ProfileSvc
 @inject IWriteAccessProvider Access
 @inject IJSRuntime JS
-@inject AuthService Auth
-@inject EmailService EmailSvc
-@inject PasswordResetService PwdReset
-@inject UserRepository UserRepo
-@inject AuthenticationStateProvider AuthStateProvider
-@using Microsoft.AspNetCore.Components.Authorization
+@inject NavigationManager Nav
+@inject PasswordPolicyDescriptor Policy
 
 <div class="d-flex flex-column gap-4">
 
@@ -67,88 +64,22 @@
     <div class="card bg-dark text-light border-secondary" style="max-width: 420px;">
         <div class="card-header text-muted">Change Password</div>
         <div class="card-body d-flex flex-column gap-3">
-            @if (pwdStep == PwdStep.Request)
+            @if (passwordChanged)
             {
-                <p class="text-muted small mb-0">
-                    A 6-digit code will be sent to <strong>@userEmail</strong>.
-                </p>
-                @if (!EmailSvc.IsConfigured)
-                {
-                    <div class="alert alert-warning py-2 small">
-                        SMTP is not configured. Ask an administrator to configure it in Settings.
-                    </div>
-                }
-                @if (!string.IsNullOrEmpty(pwdError))
-                {
-                    <div class="alert alert-danger py-2 small">@pwdError</div>
-                }
-                <button class="btn btn-sm btn-outline-danger" @onclick="SendCode" disabled="@pwdBusy">
-                    @if (pwdBusy)
-                    {
-                        <span class="spinner-border spinner-border-sm me-1"></span>
-                    }
-                    <i class="bi bi-envelope"></i><div class="btn-lbl"> Send Code to Email</div>
-                </button>
-            }
-            else if (pwdStep == PwdStep.Verify)
-            {
-                <p class="text-muted small mb-0">Enter the 6-digit code sent to <strong>@userEmail</strong>. It expires in 15 minutes.</p>
-                @if (!string.IsNullOrEmpty(pwdError))
-                {
-                    <div class="alert alert-danger py-2 small">@pwdError</div>
-                }
-                <div>
-                    <label class="form-label small text-muted">Verification Code</label>
-                    <input type="text" maxlength="6" inputmode="numeric" pattern="[0-9]*"
-                           class="form-control form-control-sm bg-dark text-light border-secondary"
-                           @bind="verifyCode" @bind:event="oninput" placeholder="000000" />
-                </div>
-                <div class="d-flex gap-2">
-                    <button class="btn btn-sm btn-danger" @onclick="VerifyCode"><div class="btn-lbl">Verify Code</div></button>
-                    <button class="btn btn-sm btn-link text-muted" @onclick="CancelPwd"><div class="btn-lbl">Cancel</div></button>
-                </div>
-            }
-            else if (pwdStep == PwdStep.SetPassword)
-            {
-                @if (!string.IsNullOrEmpty(pwdError))
-                {
-                    <div class="alert alert-danger py-2 small">@pwdError</div>
-                }
-                <div>
-                    <label class="form-label small text-muted">New Password</label>
-                    <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary"
-                           @bind="newPassword" @bind:event="oninput" />
-                </div>
-                <div>
-                    <label class="form-label small text-muted">Confirm New Password</label>
-                    <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary"
-                           @bind="confirmPassword" @bind:event="oninput" />
-                </div>
-                <div class="text-muted" style="font-size: 0.72rem; line-height: 1.5;">
-                    @{ var err = AuthService.GetPasswordError(newPassword); }
-                    @foreach (var req in PasswordRequirements(newPassword))
-                    {
-                        <div>
-                            <i class="bi @(req.Met ? "bi-check-circle-fill text-success" : "bi-circle text-secondary")"></i>
-                            <span class="@(req.Met ? "text-success" : "text-secondary")"> @req.Label</span>
-                        </div>
-                    }
-                </div>
-                <div class="d-flex gap-2">
-                    <button class="btn btn-sm btn-success" @onclick="SubmitNewPassword"
-                            disabled="@(AuthService.GetPasswordError(newPassword) != null || newPassword != confirmPassword)">
-                        <i class="bi bi-floppy"></i><div class="btn-lbl"> Save New Password</div>
-                    </button>
-                    <button class="btn btn-sm btn-link text-muted" @onclick="CancelPwd"><div class="btn-lbl">Cancel</div></button>
-                </div>
-            }
-            else if (pwdStep == PwdStep.Done)
-            {
-                <div class="alert alert-success py-2 small">
+                <div class="alert alert-success py-2 small mb-0">
                     <i class="bi bi-check-circle-fill"></i> Password changed successfully.
                 </div>
-                <button class="btn btn-sm btn-outline-secondary" @onclick="CancelPwd"><div class="btn-lbl">Done</div></button>
             }
+            @* Presentation-only form; the MindAttic.Authentication endpoint
+               (/_ma-auth/change-password) owns the change with current-password
+               verification, then redirects to /account?changed=1 on success. *@
+            <MaChangePassword Error="@passwordError" />
+            <div class="text-muted" style="font-size: 0.72rem; line-height: 1.6;">
+                @foreach (var req in Policy.Requirements)
+                {
+                    <div><i class="bi bi-dot"></i> @req</div>
+                }
+            </div>
         </div>
     </div>
 
@@ -162,28 +93,16 @@
     private bool showPreview;
     private string avatarStatus = "";
 
-    // ── Password change ──────────────────────────────
-    private enum PwdStep { Request, Verify, SetPassword, Done }
-    private PwdStep pwdStep = PwdStep.Request;
-    private string userEmail = "";
-    private string userId = "";
-    private string verifyCode = "";
-    private string newPassword = "";
-    private string confirmPassword = "";
-    private string pwdError = "";
-    private bool pwdBusy;
+    // ── Password change status (driven by the /_ma-auth redirect query) ──
+    private bool passwordChanged;
+    private bool passwordError;
 
-    protected override async Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
         savedAvatar = ProfileSvc.GetAvatar(Access.CurrentUserName ?? "");
-
-        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
-        userId = authState.User.FindFirst("UserId")?.Value ?? "";
-        if (!string.IsNullOrEmpty(userId))
-        {
-            var user = UserRepo.GetById(userId);
-            userEmail = user?.Email ?? "";
-        }
+        var query = new Uri(Nav.Uri).Query;
+        passwordChanged = query.Contains("changed=1");
+        passwordError = query.Contains("error=1");
     }
 
     // ── Avatar ──────────────────────────────────────
@@ -242,102 +161,4 @@
         showPreview = false;
         avatarStatus = "Profile picture saved.";
     }
-
-    // ── Password change ──────────────────────────────
-
-    private async Task SendCode()
-    {
-        pwdError = "";
-        pwdBusy = true;
-        try
-        {
-            if (!EmailSvc.IsConfigured)
-            {
-                pwdError = "SMTP is not configured. Ask an administrator to configure it in Settings.";
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(userEmail))
-            {
-                pwdError = "Your account has no email address on file. Contact an administrator.";
-                return;
-            }
-
-            var code = PwdReset.GenerateCode(userId);
-            await EmailSvc.SendAsync(
-                userEmail,
-                "Street Samurai — Password Reset Code",
-                $"Your password reset code is: {code}\n\nThis code expires in 15 minutes.\nIf you did not request this, ignore this email.");
-
-            pwdStep = PwdStep.Verify;
-        }
-        catch (Exception ex)
-        {
-            pwdError = $"Failed to send code: {ex.Message}";
-        }
-        finally
-        {
-            pwdBusy = false;
-        }
-    }
-
-    private void VerifyCode()
-    {
-        pwdError = "";
-        if (string.IsNullOrWhiteSpace(verifyCode))
-        {
-            pwdError = "Enter the 6-digit code from your email.";
-            return;
-        }
-        if (!PwdReset.ValidateCode(userId, verifyCode))
-        {
-            pwdError = "Invalid or expired code. Request a new one.";
-            pwdStep = PwdStep.Request;
-            verifyCode = "";
-            return;
-        }
-        newPassword = "";
-        confirmPassword = "";
-        pwdStep = PwdStep.SetPassword;
-    }
-
-    private void SubmitNewPassword()
-    {
-        pwdError = "";
-        var err = AuthService.GetPasswordError(newPassword);
-        if (err != null) { pwdError = err; return; }
-        if (newPassword != confirmPassword) { pwdError = "Passwords do not match."; return; }
-
-        try
-        {
-            Auth.ChangePassword(userId, newPassword);
-            newPassword = "";
-            confirmPassword = "";
-            pwdStep = PwdStep.Done;
-        }
-        catch (Exception ex)
-        {
-            pwdError = ex.Message;
-        }
-    }
-
-    private void CancelPwd()
-    {
-        PwdReset.CancelCode(userId);
-        pwdStep = PwdStep.Request;
-        verifyCode = "";
-        newPassword = "";
-        confirmPassword = "";
-        pwdError = "";
-    }
-
-    private record PasswordReq(string Label, bool Met);
-
-    private static IEnumerable<PasswordReq> PasswordRequirements(string pwd) =>
-    [
-        new("At least 8 characters", pwd.Length >= 8),
-        new("One uppercase letter", pwd.Any(char.IsUpper)),
-        new("One lowercase letter", pwd.Any(char.IsLower)),
-        new("One number", pwd.Any(char.IsDigit)),
-        new($"One special character ({AuthService.SpecialChars})", pwd.Any(c => AuthService.SpecialChars.Contains(c))),
-    ];
 }

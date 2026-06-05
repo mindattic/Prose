@@ -1,5 +1,6 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Components.Authorization;
+using MindAttic.Authentication;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 using StreetSamurai.Core.Services;
@@ -30,7 +31,7 @@ public class BlazorWriteAccessProvider : IWriteAccessProvider
         {
             if (readOnlyState.IsReadOnly) return true;
             var user = GetUser();
-            return !user.IsInRole(UserRoles.Contributor) && !user.IsInRole(UserRoles.Administrator);
+            return !user.IsInRole(UserRoles.Contributor) && !user.IsInRole(MaRoles.Admin);
         }
     }
 
@@ -40,7 +41,7 @@ public class BlazorWriteAccessProvider : IWriteAccessProvider
         {
             if (readOnlyState.IsReadOnly) return false;
             var user = GetUser();
-            return user.IsInRole(UserRoles.Contributor) || user.IsInRole(UserRoles.Administrator);
+            return user.IsInRole(UserRoles.Contributor) || user.IsInRole(MaRoles.Admin);
         }
     }
 
@@ -49,7 +50,7 @@ public class BlazorWriteAccessProvider : IWriteAccessProvider
         get
         {
             if (readOnlyState.IsReadOnly) return false;
-            return GetUser().IsInRole(UserRoles.Administrator);
+            return GetUser().IsInRole(MaRoles.Admin);
         }
     }
 
