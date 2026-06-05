@@ -6,22 +6,28 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --publish-audiobook (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;)</c>
+/// <c>ss --publish-audiobook (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--robust]</c>
 /// — render the whole strand as ONE continuous narration (no per-beat voice
 /// drift), tiered to ElevenLabs' per-request limits, and write the MP3 to the
 /// user's Downloads folder. The headless twin of the "Publish Audiobook" button.
+/// <para><c>--robust</c> retunes this strand's frozen voice snapshot to Robust
+/// stability (1.0) before recording — the explicit opt-in that lets a strand
+/// first narrated at Natural (0.5) adopt the most consistent v3 narrator on
+/// re-record. Persisted, so every later re-record stays Robust.</para>
 /// </summary>
 public static class PublishAudiobookCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? id = null, slug = null;
+        bool robust = false;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
             {
-                case "--id":   if (i + 1 < args.Length) id = args[++i]; break;
-                case "--slug": if (i + 1 < args.Length) slug = args[++i]; break;
+                case "--id":     if (i + 1 < args.Length) id = args[++i]; break;
+                case "--slug":   if (i + 1 < args.Length) slug = args[++i]; break;
+                case "--robust": robust = true; break;
             }
         }
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
@@ -46,10 +52,10 @@ public static class PublishAudiobookCli
             strandId = strand.Id; strandTitle = strand.Title;
         }
 
-        Console.WriteLine($"[publish-audiobook] Narrating \"{strandTitle}\" in one pass…");
+        Console.WriteLine($"[publish-audiobook] Narrating \"{strandTitle}\" in one pass{(robust ? " (retuning to Robust stability)" : "")}…");
         try
         {
-            var path = await workbench.PublishAudiobookAsync(strandId);
+            var path = await workbench.PublishAudiobookAsync(strandId, robust);
             if (path == null) { Console.Error.WriteLine("[publish-audiobook] Nothing to narrate — the strand has no beat text."); return 1; }
             Console.WriteLine($"[publish-audiobook] Wrote: {path}");
             return 0;
