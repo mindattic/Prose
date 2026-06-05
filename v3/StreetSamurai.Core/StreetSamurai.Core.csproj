@@ -11,18 +11,19 @@
     <PackageReference Include="Azure.Storage.Blobs" Version="12.21.2" />
     <PackageReference Include="DocumentFormat.OpenXml" Version="3.3.0" />
     <PackageReference Include="Markdig" Version="1.1.2" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.5">
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.8">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.5" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.5" />
-    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.5" />
-    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.8" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.8" />
     <PackageReference Include="MindAttic.Legion" Version="3.0.0" />
     <PackageReference Include="MindAttic.Vault" Version="1.0.0" />
+    <PackageReference Include="MindAttic.Authentication" Version="1.0.0" />
     <PackageReference Include="QuestPDF" Version="2026.5.0" />
     <PackageReference Include="QuikGraph" Version="2.5.0" />
     <PackageReference Include="QuikGraph.Serialization" Version="2.5.0" />
@@ -30,7 +31,7 @@
     <PackageReference Include="Serilog.Extensions.Logging" Version="10.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
-    <PackageReference Include="System.Speech" Version="10.0.5" />
+    <PackageReference Include="System.Speech" Version="10.0.8" />
   </ItemGroup>
 
 </Project>
