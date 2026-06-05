@@ -1,9 +1,12 @@
-using System.Security.Claims;
 using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.Antiforgery;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.RateLimiting;
+using Microsoft.EntityFrameworkCore;
+using MindAttic.Authentication;
+using MindAttic.Authentication.Web;
+using StreetSamurai.Core.Data;
 using Serilog;
 using Serilog.Events;
 using StreetSamurai.Blazor.Cli;
@@ -575,7 +578,14 @@ var builder = WebApplication.CreateBuilder(args);
 //   AddEnvironmentVariables (already present) picks up App Service Application
 //     Settings + Azure Key Vault references in production.
 builder.Configuration
-    .AddMindAtticVaultFiles();
+    .AddMindAtticVaultFiles(o => o.Buckets = new[]
+    {
+        // Default credential buckets PLUS "Security" — the MindAttic.Authentication
+        // trust domain (pepper, bootstrap-token, reset-token-key). Without adding it
+        // here the auth secrets at %APPDATA%\MindAttic\Security\providers.json would
+        // not surface under MindAttic:Vault:Security in dev (env vars cover prod).
+        "LLM", "Brokers", "Tokens", "Subtitles", "Notifications", "AudioStore", "Security",
+    });
 
 // Hand the host's IConfiguration to SettingsService BEFORE it's constructed so
 // the very first ResolveApiKey() call sees Vault values. Static-field injection
@@ -620,42 +630,37 @@ builder.Services.AddStreetSamuraiServices();
 var readOnlyState = new ReadOnlyState { IsReadOnly = builder.Configuration.GetValue<bool>("ReadOnly") };
 builder.Services.AddSingleton(readOnlyState);
 
-// Cookie authentication — hardened for production
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
+// MindAttic.Authentication — replaces the bespoke cookie/AuthService stack. The
+// library internally registers the cookie schemes (__Host-MindAttic.Auth + MfaPending),
+// MaPolicies.Admin (role-only here — MFA is off), Data Protection, cascading auth state +
+// a revalidating AuthenticationStateProvider, and every auth/user-admin service over
+// StreetSamuraiAuthDbContext. Do NOT also call AddAuthentication/AddCookie/AddAuthorization/
+// AddCascadingAuthenticationState — that would double-register and clobber the cookie.
+builder.Services.AddMindAtticAuthentication<StreetSamuraiAuthDbContext>(
+    builder.Configuration,
+    o =>
     {
-        options.LoginPath = "/login";
-        options.LogoutPath = "/api/auth/logout";
-        options.ExpireTimeSpan = TimeSpan.FromDays(30);
-        options.SlidingExpiration = true;
-        options.Cookie.HttpOnly = true;                              // No JS access
-        options.Cookie.SecurePolicy = CookieSecurePolicy.Always;     // HTTPS only
-        options.Cookie.SameSite = SameSiteMode.Strict;               // No cross-site requests
-        options.Cookie.Name = "__Host-SS-Auth";                       // __Host- prefix: browser enforces Secure+Path=/
-
-        // Validate SecurityStamp on every request — rejects sessions after password/role change
-        options.Events.OnValidatePrincipal = async context =>
+        o.AppName = "StreetSamurai";                          // per-app Data Protection trust boundary
+        o.IsProduction = !builder.Environment.IsDevelopment();
+        if (o.IsProduction)
         {
-            var userId = context.Principal?.FindFirstValue("UserId");
-            var stamp = context.Principal?.FindFirstValue("SecurityStamp");
-            if (userId == null || stamp == null)
+            // PROD: persist + protect the Data Protection key ring (the library fail-closes
+            // if this isn't supplied in prod). Blob holds the ring; Key Vault wraps it.
+            // DataProtection:BlobUri / DataProtection:KeyVaultKeyId come from App Service
+            // settings, resolved via the same managed identity used for SQL.
+            o.ConfigureDataProtection = dp =>
             {
-                context.RejectPrincipal();
-                await context.HttpContext.SignOutAsync();
-                return;
-            }
-
-            var userRepo = context.HttpContext.RequestServices.GetRequiredService<UserRepository>();
-            var user = userRepo.GetById(userId);
-            if (user == null || user.SecurityStamp != stamp)
-            {
-                context.RejectPrincipal();
-                await context.HttpContext.SignOutAsync();
-            }
-        };
+                var cred = new Azure.Identity.DefaultAzureCredential();
+                var blobUri = builder.Configuration["DataProtection:BlobUri"]
+                    ?? throw new InvalidOperationException("DataProtection:BlobUri is required in production.");
+                var kvKeyId = builder.Configuration["DataProtection:KeyVaultKeyId"]
+                    ?? throw new InvalidOperationException("DataProtection:KeyVaultKeyId is required in production.");
+                dp.PersistKeysToAzureBlobStorage(new Uri(blobUri), cred)
+                  .ProtectKeysWithAzureKeyVault(new Uri(kvKeyId), cred);
+            };
+        }
+        // DEV: the library persists the key ring to %APPDATA%\MindAttic\DataProtection\StreetSamurai.
     });
-builder.Services.AddAuthorization();
-builder.Services.AddCascadingAuthenticationState();
 
 // Per-IP rate limiting on login endpoint — prevents credential stuffing without DoS'ing legit users
 builder.Services.AddRateLimiter(options =>
@@ -680,6 +685,25 @@ builder.Services.AddScoped<IWriteAccessProvider, BlazorWriteAccessProvider>();
 builder.Services.AddScoped<ToastNotifier>();
 
 var app = builder.Build();
+
+// ── Auth startup orchestration ───────────────────────────────────────────
+// Strict order: migrate (schema) → import (legacy UserAccount → AuthUser) → seed
+// (bootstrap admin, only if NO users exist). MigrateAsync is DEV-ONLY: in prod the
+// App Service managed identity cannot run DDL, so the auth EF migration rides the CI
+// migrate job (ApplyMigrations) under db_ddladmin; import + seed are DDL-free and safe
+// at prod startup over the already-migrated schema.
+using (var scope = app.Services.CreateScope())
+{
+    var sp = scope.ServiceProvider;
+    if (app.Environment.IsDevelopment())
+    {
+        var authDb = sp.GetRequiredService<StreetSamuraiAuthDbContext>();
+        await authDb.Database.MigrateAsync();
+    }
+    var imported = await sp.GetRequiredService<StreetSamurai.Core.Services.AuthUserImportService>().ImportAsync();
+    Log.Information("Auth user import: {Count} legacy account(s) migrated.", imported);
+    await sp.GetRequiredService<MindAttic.Authentication.Services.AuthBootstrapper>().SeedAdminAsync();
+}
 
 // Background-instantiate services that subscribe to events at construction.
 // Doing this synchronously on the startup path used to block app.Run() for
@@ -711,36 +735,24 @@ if (!app.Environment.IsDevelopment())
 app.UseStatusCodePagesWithReExecute("/not-found", createScopeForStatusCodePages: true);
 app.UseHttpsRedirection();
 
-app.UseRateLimiter();
-app.UseAuthentication();
-app.UseAuthorization();
-
-// Enforce MustChangePassword: redirect users who haven't changed their forced password.
-// Without this, a user could navigate directly to any page and bypass the requirement.
-app.Use(async (context, next) =>
+// Honor the App Service reverse proxy's forwarded scheme/IP so Request.Scheme is
+// https (secure cookie issuance + no redirect loop) and the rate limiter / audit see
+// the real client IP. Must run before the auth middleware.
+var forwardedHeaders = new ForwardedHeadersOptions
 {
-    var path = context.Request.Path.Value ?? "";
-    // Skip enforcement for: static files, API endpoints, the change-password page itself, and login
-    if (path.StartsWith("/_") || path.StartsWith("/api/") || path == "/change-password" || path == "/login")
-    {
-        await next();
-        return;
-    }
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto,
+};
+forwardedHeaders.KnownIPNetworks.Clear();
+forwardedHeaders.KnownProxies.Clear();
+app.UseForwardedHeaders(forwardedHeaders);
 
-    var userId = context.User?.FindFirst("UserId")?.Value;
-    if (!string.IsNullOrEmpty(userId))
-    {
-        var userRepo = context.RequestServices.GetRequiredService<UserRepository>();
-        var user = userRepo.GetById(userId);
-        if (user?.MustChangePassword == true)
-        {
-            context.Response.Redirect("/change-password");
-            return;
-        }
-    }
+app.UseRateLimiter();
 
-    await next();
-});
+// MindAttic.Authentication: UseAuthentication + UseAuthorization + the forced-step
+// redirect (MustChangePassword → /account/change-password, claim-driven, no DB hit) +
+// a scoped CSP on the auth surface. Replaces the bespoke UseAuthentication/UseAuthorization
+// and the hand-rolled MustChangePassword middleware.
+app.UseMindAtticAuthentication();
 
 app.UseAntiforgery();
 
@@ -749,6 +761,11 @@ app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddAdditionalAssemblies(typeof(StreetSamurai.Shared.Components.Pages.Home).Assembly);
+
+// MindAttic.Authentication HTTP endpoints — /_ma-auth/{login,mfa-challenge,logout,
+// change-password,reset/request,reset/confirm}. These OWN sign-in (the Razor components
+// only render the antiforgery-protected forms that post here).
+app.MapMindAtticAuthEndpoints();
 
 // Episode audio: serve the per-beat MP3 files the /listen page plays.
 // File path is engine/audio/episodes/{episodeId}/{index:D3}.mp3 — bound to the
@@ -938,73 +955,6 @@ app.MapGet("/api/strands/{strandId:guid}/strand.wav", async (
     return Results.File(stream, contentType!, fileDownloadName, enableRangeProcessing: true);
 }).RequireAuthorization();
 
-// Login endpoint — form POST from Login.razor, with antiforgery + open redirect + rate limiting
-app.MapPost("/api/auth/login", async (HttpContext ctx, AuthService auth, IAntiforgery antiforgery) =>
-{
-    // Validate CSRF token
-    try { await antiforgery.ValidateRequestAsync(ctx); }
-    catch (AntiforgeryValidationException)
-    {
-        ctx.Response.StatusCode = 400;
-        return;
-    }
-
-    var form = await ctx.Request.ReadFormAsync();
-    var email = form["email"].ToString();
-    var password = form["password"].ToString();
-    var returnUrl = form["returnUrl"].ToString();
-
-    // Open redirect protection: only allow local paths
-    if (!AuthService.IsLocalUrl(returnUrl)) returnUrl = "/";
-
-    var user = auth.Authenticate(email, password);
-    if (user == null)
-    {
-        ctx.Response.Redirect("/login?error=invalid");
-        return;
-    }
-
-    var claims = new[]
-    {
-        new Claim(ClaimTypes.Name, user.DisplayName),
-        new Claim(ClaimTypes.Email, user.Email),
-        new Claim(ClaimTypes.Role, user.Role),
-        new Claim("UserId", user.Id),
-        new Claim("SecurityStamp", user.SecurityStamp),
-    };
-    var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-    var principal = new ClaimsPrincipal(identity);
-
-    await ctx.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-
-    // Clear the dev-logout cookie so DevAutoLoginMiddleware works again if needed
-    if (app.Environment.IsDevelopment())
-        ctx.Response.Cookies.Delete("ss-dev-logout");
-
-    // Force password change on first login (seeded admin, or admin-flagged accounts)
-    if (user.MustChangePassword)
-        ctx.Response.Redirect("/change-password");
-    else
-        ctx.Response.Redirect(returnUrl);
-}).RequireRateLimiting("login");
-
-// Logout endpoint — with antiforgery
-app.MapPost("/api/auth/logout", async (HttpContext ctx, IAntiforgery antiforgery) =>
-{
-    try { await antiforgery.ValidateRequestAsync(ctx); }
-    catch (AntiforgeryValidationException)
-    {
-        ctx.Response.StatusCode = 400;
-        return;
-    }
-
-    await ctx.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-    // In dev mode, set a cookie so DevAutoLoginMiddleware doesn't immediately re-login
-    if (app.Environment.IsDevelopment())
-        ctx.Response.Cookies.Append("ss-dev-logout", "1", new CookieOptions { Path = "/" });
-    ctx.Response.Redirect("/");
-});
-
 // Media file endpoint — serves {entityId}.{index}.{ext} files from engine/data/media/
 app.MapGet("/api/media/{filename}", (string filename, MediaService media) =>
 {
@@ -1013,8 +963,6 @@ app.MapGet("/api/media/{filename}", (string filename, MediaService media) =>
     var mime = MediaService.GetMimeType(filename);
     return Results.File(path, mime, enableRangeProcessing: true);
 });
-
-// Open redirect protection is now in AuthService.IsLocalUrl() — single source of truth, unit-testable.
 
 Log.Information("StreetSamurai Blazor host started");
 

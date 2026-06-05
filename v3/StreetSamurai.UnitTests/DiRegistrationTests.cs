@@ -129,9 +129,12 @@ public class DiRegistrationTests
     }
 
     [Test]
-    public void PasswordResetService_IsRegistered()
+    public void AuthUserImportService_IsRegistered()
     {
-        var svc = sp.GetService<PasswordResetService>();
+        // The MindAttic.Authentication adoption path: the legacy-user importer must
+        // resolve (scoped) so the Blazor host's startup migrate→import→seed works.
+        using var scope = sp.CreateScope();
+        var svc = scope.ServiceProvider.GetService<AuthUserImportService>();
         Assert.That(svc, Is.Not.Null);
     }
 }

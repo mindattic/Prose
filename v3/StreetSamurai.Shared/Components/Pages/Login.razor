@@ -19,13 +19,14 @@
                 {
                     <div class="alert alert-danger py-2 small">Invalid email or password.</div>
                 }
-                <form method="post" action="/api/auth/login">
+                <form method="post" action="/_ma-auth/login">
                     <AntiforgeryToken />
                     <input type="hidden" name="returnUrl" value="/" />
                     <div class="mb-3">
                         <label class="form-label small text-muted">Email</label>
-                        <input type="email" name="email" class="form-control form-control-sm bg-dark text-light border-secondary"
-                               placeholder="admin@streetsamurai.local" required autofocus />
+                        <input type="email" name="userName" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               placeholder="admin@streetsamurai.local" autocomplete="username" autocapitalize="none"
+                               spellcheck="false" required autofocus />
                     </div>
                     <div class="mb-3">
                         <label class="form-label small text-muted">Password</label>
@@ -44,7 +45,8 @@
 
     protected override void OnInitialized()
     {
+        // The MindAttic.Authentication login endpoint redirects to /login?error=1 on failure.
         var uri = new Uri(Nav.Uri);
-        hasError = uri.Query.Contains("error=invalid");
+        hasError = uri.Query.Contains("error=1");
     }
 }

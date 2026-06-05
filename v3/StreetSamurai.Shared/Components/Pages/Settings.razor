@@ -10,10 +10,8 @@
 @inject CanonExportService CanonExport
 @* @inject FtpPublishService FtpSvc *@
 @inject HtmlExportService HtmlExportSvc
-@inject AuthService Auth
 @inject EmailService EmailSvc
-@inject PasswordResetService PwdReset
-@inject UserRepository UserRepo
+@inject PasswordPolicyDescriptor Policy
 @inject AuthenticationStateProvider AuthStateProvider
 @inject StreetSamurai.Core.Services.AudioReconciliationService AudioReconciler
 @inject StreetSamurai.Core.Interfaces.IAudioStore RuntimeAudioStore
@@ -881,85 +879,19 @@
         <div class="card bg-dark text-light border-secondary">
             <div class="card-header text-muted">Account</div>
             <div class="card-body">
-                @if (acctStep == AcctStep.Request)
-                {
-                    <div class="d-flex flex-column gap-3" style="max-width: 400px;">
-                        <p class="text-muted small mb-0">Change your admin account password. A 6-digit code will be sent to <strong>@acctEmail</strong>.</p>
-                        @if (!string.IsNullOrEmpty(acctError))
+                <div class="d-flex flex-column gap-3" style="max-width: 400px;">
+                    @* Presentation-only form; the MindAttic.Authentication endpoint
+                       (/_ma-auth/change-password) owns the change with current-password
+                       verification, then redirects to /account (the Profile page) where
+                       the success/error status surfaces. *@
+                    <MaChangePassword />
+                    <div class="text-muted" style="font-size: 0.72rem; line-height: 1.6;">
+                        @foreach (var req in Policy.Requirements)
                         {
-                            <div class="alert alert-danger py-2 small">@acctError</div>
+                            <div><i class="bi bi-dot"></i> @req</div>
                         }
-                        <button class="btn btn-sm btn-outline-danger" @onclick="AcctSendCode" disabled="@acctBusy">
-                            @if (acctBusy) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                            <i class="bi bi-key"></i><div class="btn-lbl"> Change Password</div>
-                        </button>
                     </div>
-                }
-                else if (acctStep == AcctStep.Verify)
-                {
-                    <div class="d-flex flex-column gap-3" style="max-width: 400px;">
-                        <p class="text-muted small mb-0">Enter the 6-digit code sent to <strong>@acctEmail</strong>. Expires in 15 minutes.</p>
-                        @if (!string.IsNullOrEmpty(acctError))
-                        {
-                            <div class="alert alert-danger py-2 small">@acctError</div>
-                        }
-                        <div>
-                            <label class="form-label small text-muted">Verification Code</label>
-                            <input type="text" maxlength="6" inputmode="numeric" pattern="[0-9]*"
-                                   class="form-control form-control-sm bg-dark text-light border-secondary"
-                                   style="max-width: 160px;"
-                                   @bind="acctCode" @bind:event="oninput" placeholder="000000" />
-                        </div>
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-sm btn-danger" @onclick="AcctVerifyCode"><div class="btn-lbl">Verify Code</div></button>
-                            <button class="btn btn-sm btn-link text-muted" @onclick="AcctCancel"><div class="btn-lbl">Cancel</div></button>
-                        </div>
-                    </div>
-                }
-                else if (acctStep == AcctStep.SetPassword)
-                {
-                    <div class="d-flex flex-column gap-3" style="max-width: 400px;">
-                        @if (!string.IsNullOrEmpty(acctError))
-                        {
-                            <div class="alert alert-danger py-2 small">@acctError</div>
-                        }
-                        <div>
-                            <label class="form-label small text-muted">New Password</label>
-                            <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary"
-                                   @bind="acctNewPwd" @bind:event="oninput" />
-                        </div>
-                        <div>
-                            <label class="form-label small text-muted">Confirm New Password</label>
-                            <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary"
-                                   @bind="acctConfirmPwd" @bind:event="oninput" />
-                        </div>
-                        <div class="text-muted" style="font-size: 0.72rem; line-height: 1.5;">
-                            @foreach (var req in PasswordRequirements(acctNewPwd))
-                            {
-                                <div>
-                                    <i class="bi @(req.Met ? "bi-check-circle-fill text-success" : "bi-circle text-secondary")"></i>
-                                    <span class="@(req.Met ? "text-success" : "text-secondary")"> @req.Label</span>
-                                </div>
-                            }
-                        </div>
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-sm btn-success" @onclick="AcctSubmitPassword"
-                                    disabled="@(AuthService.GetPasswordError(acctNewPwd) != null || acctNewPwd != acctConfirmPwd)">
-                                <i class="bi bi-floppy"></i><div class="btn-lbl"> Save New Password</div>
-                            </button>
-                            <button class="btn btn-sm btn-link text-muted" @onclick="AcctCancel"><div class="btn-lbl">Cancel</div></button>
-                        </div>
-                    </div>
-                }
-                else if (acctStep == AcctStep.Done)
-                {
-                    <div class="d-flex flex-column gap-3" style="max-width: 400px;">
-                        <div class="alert alert-success py-2 small">
-                            <i class="bi bi-check-circle-fill"></i> Password changed successfully.
-                        </div>
-                        <button class="btn btn-sm btn-outline-secondary" @onclick="AcctCancel"><div class="btn-lbl">Done</div></button>
-                    </div>
-                }
+                </div>
             </div>
         </div>
     </div>
@@ -1142,15 +1074,9 @@
         // Repo dropdown for canon export — auto-discovered, ordered by name.
         repoCounts = ExportDiscovery.GetRepoCounts();
 
-        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
-        var uid = authState.User.FindFirst("UserId")?.Value ?? "";
-        if (!string.IsNullOrEmpty(uid))
-        {
-            var user = UserRepo.GetById(uid);
-            acctUserId = uid;
-            acctEmail = user?.Email ?? "";
-            smtpTestTarget = acctEmail;
-        }
+        // Default the SMTP self-test recipient to the signed-in account. Under
+        // MindAttic.Authentication the username IS the email (login is by username).
+        smtpTestTarget = Access.CurrentUserName == "Visitor" ? "" : Access.CurrentUserName;
 
         _ = TestAllProviders();
     }
@@ -1524,97 +1450,7 @@
         finally { smtpTesting = false; }
     }
 
-    // ── Account — admin password change ───────────────────
-    private enum AcctStep { Request, Verify, SetPassword, Done }
-    private AcctStep acctStep = AcctStep.Request;
-    private string acctUserId = "";
-    private string acctEmail = "";
-    private string acctCode = "";
-    private string acctNewPwd = "";
-    private string acctConfirmPwd = "";
-    private string acctError = "";
-    private bool acctBusy;
-
-    private async Task AcctSendCode()
-    {
-        acctError = "";
-        acctBusy = true;
-        try
-        {
-            if (!EmailSvc.IsConfigured)
-            {
-                acctError = "SMTP is not configured. Fill in the SMTP section above and save first.";
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(acctEmail))
-            {
-                acctError = "Your account has no email address. Contact system support.";
-                return;
-            }
-            var code = PwdReset.GenerateCode(acctUserId);
-            await EmailSvc.SendAsync(
-                acctEmail,
-                "Street Samurai — Password Reset Code",
-                $"Your password reset code is: {code}\n\nThis code expires in 15 minutes.\nIf you did not request this, ignore this email.");
-            acctStep = AcctStep.Verify;
-        }
-        catch (Exception ex)
-        {
-            acctError = $"Failed to send code: {ex.Message}";
-        }
-        finally { acctBusy = false; }
-    }
-
-    private void AcctVerifyCode()
-    {
-        acctError = "";
-        if (string.IsNullOrWhiteSpace(acctCode)) { acctError = "Enter the 6-digit code."; return; }
-        if (!PwdReset.ValidateCode(acctUserId, acctCode))
-        {
-            acctError = "Invalid or expired code. Request a new one.";
-            acctStep = AcctStep.Request;
-            acctCode = "";
-            return;
-        }
-        acctNewPwd = "";
-        acctConfirmPwd = "";
-        acctStep = AcctStep.SetPassword;
-    }
-
-    private void AcctSubmitPassword()
-    {
-        acctError = "";
-        var err = AuthService.GetPasswordError(acctNewPwd);
-        if (err != null) { acctError = err; return; }
-        if (acctNewPwd != acctConfirmPwd) { acctError = "Passwords do not match."; return; }
-        try
-        {
-            Auth.ChangePassword(acctUserId, acctNewPwd);
-            acctNewPwd = "";
-            acctConfirmPwd = "";
-            acctStep = AcctStep.Done;
-        }
-        catch (Exception ex) { acctError = ex.Message; }
-    }
-
-    private void AcctCancel()
-    {
-        PwdReset.CancelCode(acctUserId);
-        acctStep = AcctStep.Request;
-        acctCode = "";
-        acctNewPwd = "";
-        acctConfirmPwd = "";
-        acctError = "";
-    }
-
-    private record PasswordReq(string Label, bool Met);
-
-    private static IEnumerable<PasswordReq> PasswordRequirements(string pwd) =>
-    [
-        new("At least 8 characters", pwd.Length >= 8),
-        new("One uppercase letter", pwd.Any(char.IsUpper)),
-        new("One lowercase letter", pwd.Any(char.IsLower)),
-        new("One number", pwd.Any(char.IsDigit)),
-        new($"One special character ({AuthService.SpecialChars})", pwd.Any(c => AuthService.SpecialChars.Contains(c))),
-    ];
+    // Account password change is handled by the MindAttic.Authentication
+    // /_ma-auth/change-password endpoint (rendered by <MaChangePassword/> above),
+    // which redirects to /account (the Profile page) where status surfaces.
 }
