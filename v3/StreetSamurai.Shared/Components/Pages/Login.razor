@@ -15,26 +15,9 @@
             }
             else
             {
-                @if (hasError)
-                {
-                    <div class="alert alert-danger py-2 small">Invalid email or password.</div>
-                }
-                <form method="post" action="/_ma-auth/login">
-                    <AntiforgeryToken />
-                    <input type="hidden" name="returnUrl" value="/" />
-                    <div class="mb-3">
-                        <label class="form-label small text-muted">Email</label>
-                        <input type="email" name="userName" class="form-control form-control-sm bg-dark text-light border-secondary"
-                               placeholder="admin@streetsamurai.local" autocomplete="username" autocapitalize="none"
-                               spellcheck="false" required autofocus />
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label small text-muted">Password</label>
-                        <input type="password" name="password" class="form-control form-control-sm bg-dark text-light border-secondary"
-                               required />
-                    </div>
-                    <button type="submit" class="btn btn-danger btn-sm w-100"><div class="btn-lbl">Sign In</div></button>
-                </form>
+                @* UserLogin (MindAttic.UiUx) styles the library MaLogin static-SSR form; its default
+                   dark/red palette is on-theme. Posts to /_ma-auth/login; failure -> /login?error=1. *@
+                <UserLogin ReturnUrl="/" Error="@hasError" />
             }
         </div>
     </div>

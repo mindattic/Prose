@@ -24,6 +24,13 @@
 }
 *@
 
+@* Auth chrome (MindAttic.UiUx) — AuthorizeView-gated, so invisible to anonymous/readonly visitors.
+   UserCircle (upper-right) gives sign-out; UserTimeout arms the 30-min idle auto-logout. *@
+<div style="position:fixed;top:.6rem;right:.75rem;z-index:1100;">
+    <UserCircle />
+</div>
+<UserTimeout />
+
 <div class="app-shell @(!Access.IsContributor ? "readonly-mode" : "") @(SettingsSvc.RepoListOnRight ? "list-right" : "")"
      @onkeydown="OnGlobalKeyDown" tabindex="-1">
     <NavMenu />

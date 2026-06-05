@@ -1,0 +1,13 @@
+@namespace MindAttic.UiUx.Components
+@using MindAttic.Authentication.Components
+
+@* Static-SSR only. Do NOT add @@rendermode. The inner MaLogin owns the antiforgery POST to
+   /_ma-auth/login; this wrapper only adds the .ul-card styling (user-login.css). *@
+<div class="ul-card">
+    <MaLogin ReturnUrl="@ReturnUrl" Error="@Error" />
+</div>
+
+@code {
+    [Parameter] public string? ReturnUrl { get; set; }
+    [Parameter] public bool Error { get; set; }
+}

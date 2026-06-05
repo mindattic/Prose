@@ -1,0 +1,51 @@
+@namespace MindAttic.UiUx.Components
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+
+@* Static render + native form POST. user-circle.js handles toggle/submit. No auth-service calls —
+   reads the ClaimsPrincipal only. Shows nothing when unauthenticated. *@
+<AuthorizeView>
+    <Authorized Context="ctx">
+        @{
+            var name = ctx.User.Identity?.Name ?? "User";
+            var role = ctx.User.IsInRole("Admin") ? "Admin" : "";
+        }
+        <div class="uc-root" data-uc-click="@ClickAction" style="--uc-size:@(Size)px">
+            <button type="button" class="uc-btn" aria-haspopup="true" aria-label="User menu for @name">
+                @if (!string.IsNullOrEmpty(Icon))
+                {
+                    @((MarkupString)Icon)
+                }
+                else
+                {
+                    @Initials(name)
+                }
+            </button>
+            <div class="uc-menu">
+                <div class="uc-name">@name@(role == "" ? "" : $" ({role})")</div>
+                <form class="uc-logout-form" method="post" action="/_ma-auth/logout">
+                    <AntiforgeryToken />
+                    <button type="submit" class="uc-logout">Sign out</button>
+                </form>
+            </div>
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+@code {
+    /// <summary>Diameter in px (drives --uc-size). Default 40.</summary>
+    [Parameter] public int Size { get; set; } = 40;
+    /// <summary>Optional raw SVG/icon markup rendered instead of initials.</summary>
+    [Parameter] public string? Icon { get; set; }
+    /// <summary>"menu" (toggle dropdown, default) or "logout" (click circle = sign out).</summary>
+    [Parameter] public string ClickAction { get; set; } = "menu";
+
+    private static string Initials(string name)
+    {
+        var parts = name.Split(new[] { ' ', '.', '_', '-', '@' }, StringSplitOptions.RemoveEmptyEntries);
+        if (parts.Length == 0) return "?";
+        if (parts.Length == 1) return parts[0][..Math.Min(2, parts[0].Length)].ToUpperInvariant();
+        return ($"{parts[0][0]}{parts[^1][0]}").ToUpperInvariant();
+    }
+}
