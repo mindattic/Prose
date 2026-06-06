@@ -2,6 +2,8 @@ using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Models.Canon;
+// JsonDefaults lives in the root StreetSamurai.Core namespace.
+using StreetSamurai.Core;
 
 namespace StreetSamurai.Core.Data;
 
@@ -120,6 +122,203 @@ public static class CharacterMapper
             .ToList();
         var loc = LatestStateValue(db, id, "location") ?? "";
         return Materialize(c, entity, tags, loc);
+    }
+
+    // ─────────────────────────────────────────────────────────────────────
+    // READ-MODEL (CQRS-lite). A derived projection cached in CharacterReadModels
+    // so bulk full reads skip the 25-Include fan-out. The relational row +
+    // bridges stay the source of truth; this is regenerated on every write and
+    // is fully rebuildable. The two volatile fields sourced from other write
+    // paths — Tags (EntityTags) and Location (EntityStateEvents) — are NOT
+    // stored in the blob; they are overlaid live on read so it cannot drift.
+    // ─────────────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Schema version of the serialized read-model shape. Bump this whenever
+    /// <see cref="Materialize"/>'s output changes so existing rows are treated
+    /// as stale and rebuilt rather than deserialized into a mismatched model.
+    /// </summary>
+    public const int ReadModelVersion = 1;
+
+    private static readonly JsonSerializerOptions ReadModelWrite = new()
+    {
+        DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+    };
+
+    /// <summary>
+    /// Fast bulk read off the materialized projection. Deserializes the cached
+    /// blob for every active character (one column read, no Includes), then
+    /// overlays the live volatile fields (Tags + Location). Any character whose
+    /// read-model is missing or below <see cref="ReadModelVersion"/> is
+    /// materialized relationally and backfilled so the store self-heals.
+    /// </summary>
+    public static List<CharacterData> LoadAllFromReadModel(StreetSamuraiDbContext db, bool includeArchived = false)
+    {
+        var ids = (includeArchived
+            ? db.Entities.AsNoTracking().Where(e => e.EntityType == "character")
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "character" && e.IsActive))
+            .Select(e => e.Id)
+            .ToHashSet();
+        if (ids.Count == 0) return new();
+
+        var fresh = db.CharacterReadModels.AsNoTracking()
+            .Where(r => ids.Contains(r.CharacterId) && r.Version == ReadModelVersion)
+            .Select(r => new { r.CharacterId, r.Json })
+            .ToList();
+
+        var result = new List<CharacterData>(ids.Count);
+        var have = new HashSet<Guid>(fresh.Count);
+        foreach (var r in fresh)
+        {
+            var data = DeserializeReadModel(r.Json);
+            if (data == null) continue;                 // corrupt blob → fall through to backfill
+            result.Add(data);
+            have.Add(r.CharacterId);
+        }
+
+        // Backfill anything missing / stale-version / corrupt — relational
+        // materialize scoped to just those ids, then persist the rebuilt rows.
+        var missing = ids.Where(id => !have.Contains(id)).ToHashSet();
+        if (missing.Count > 0)
+            result.AddRange(BackfillReadModels(db, missing));
+
+        OverlayVolatile(db, result, ids);
+        return result;
+    }
+
+    /// <summary>
+    /// Fast single read off the projection. Falls back to the relational
+    /// <see cref="LoadOne"/> (and backfills) when the row is missing/stale.
+    /// </summary>
+    public static CharacterData? LoadOneFromReadModel(StreetSamuraiDbContext db, Guid id)
+    {
+        var row = db.CharacterReadModels.AsNoTracking()
+            .FirstOrDefault(r => r.CharacterId == id && r.Version == ReadModelVersion);
+        CharacterData? data = row != null ? DeserializeReadModel(row.Json) : null;
+        if (data == null)
+        {
+            data = LoadOne(db, id);
+            if (data == null) return null;
+            RefreshReadModelAsync(db, id).GetAwaiter().GetResult();   // self-heal
+        }
+        var tags = db.EntityTags.AsNoTracking()
+            .Where(t => t.EntityId == id).Select(t => t.Tag!.Name).ToList();
+        data.Tags = tags;
+        data.Location = LatestStateValue(db, id, "location") ?? "";
+        return data;
+    }
+
+    /// <summary>
+    /// Regenerate one character's read-model from the freshly-persisted
+    /// relational record and upsert it. Called by <c>CharacterRepository.Save</c>
+    /// after its SaveChanges — the enforced single-writer sync. Self-contained
+    /// (commits its own change). No-op if the character no longer exists.
+    /// </summary>
+    public static async Task RefreshReadModelAsync(StreetSamuraiDbContext db, Guid id, CancellationToken ct = default)
+    {
+        var data = LoadOne(db, id);
+        if (data == null) return;
+        await UpsertReadModelAsync(db, id, data, ct);
+        await db.SaveChangesAsync(ct);
+    }
+
+    /// <summary>
+    /// Rebuild the entire projection from the relational source of truth (the
+    /// one-time slow path) and prune rows for characters that no longer exist.
+    /// Backs <c>ss --rebuild-readmodel</c>. Returns the number of rows written.
+    /// </summary>
+    public static async Task<int> RebuildAllReadModelsAsync(StreetSamuraiDbContext db, bool includeArchived = false, CancellationToken ct = default)
+    {
+        var all = LoadAll(db, includeArchived);
+        foreach (var data in all)
+        {
+            if (Guid.TryParseExact(data.Id, "N", out var id) || Guid.TryParse(data.Id, out id))
+                await UpsertReadModelAsync(db, id, data, ct);
+        }
+
+        // Prune orphans — read-model rows whose character is gone entirely.
+        var liveIds = db.Entities.AsNoTracking()
+            .Where(e => e.EntityType == "character").Select(e => e.Id).ToHashSet();
+        await db.CharacterReadModels.Where(r => !liveIds.Contains(r.CharacterId)).ExecuteDeleteAsync(ct);
+
+        await db.SaveChangesAsync(ct);
+        return all.Count;
+    }
+
+    /// <summary>Upsert (track only — caller commits) the read-model row for one character.</summary>
+    private static async Task UpsertReadModelAsync(StreetSamuraiDbContext db, Guid id, CharacterData data, CancellationToken ct)
+    {
+        var json = SerializeReadModel(data);
+        var row = await db.CharacterReadModels.FirstOrDefaultAsync(r => r.CharacterId == id, ct);
+        if (row == null)
+        {
+            db.CharacterReadModels.Add(new CharacterReadModel
+            {
+                CharacterId = id, Json = json, Version = ReadModelVersion, RefreshedAt = DateTime.UtcNow,
+            });
+        }
+        else
+        {
+            row.Json = json;
+            row.Version = ReadModelVersion;
+            row.RefreshedAt = DateTime.UtcNow;
+        }
+    }
+
+    /// <summary>Serialize with the volatile (live-overlaid) fields cleared so the blob never looks authoritative on dynamic state.</summary>
+    private static string SerializeReadModel(CharacterData data)
+    {
+        var savedTags = data.Tags;
+        var savedLoc = data.Location;
+        data.Tags = new List<string>();
+        data.Location = "";
+        try { return JsonSerializer.Serialize(data, ReadModelWrite); }
+        finally { data.Tags = savedTags; data.Location = savedLoc; }
+    }
+
+    private static CharacterData? DeserializeReadModel(string json)
+    {
+        try { return JsonSerializer.Deserialize<CharacterData>(json, JsonDefaults.LlmParsing); }
+        catch { return null; }
+    }
+
+    /// <summary>Relationally materialize a set of characters and persist their rebuilt read-models.</summary>
+    private static List<CharacterData> BackfillReadModels(StreetSamuraiDbContext db, HashSet<Guid> ids)
+    {
+        var chars = BuildIncludeChain(db.Characters.AsNoTracking())
+            .Where(c => ids.Contains(c.Id)).ToList();
+        var entityById = db.Entities.AsNoTracking()
+            .Where(e => ids.Contains(e.Id)).ToDictionary(e => e.Id, e => e);
+
+        var rebuilt = new List<CharacterData>(chars.Count);
+        foreach (var c in chars)
+        {
+            entityById.TryGetValue(c.Id, out var entity);
+            var data = Materialize(c, entity, tags: null, currentLocation: "");
+            rebuilt.Add(data);
+            UpsertReadModelAsync(db, c.Id, data, default).GetAwaiter().GetResult();
+        }
+        if (rebuilt.Count > 0) db.SaveChanges();
+        return rebuilt;
+    }
+
+    /// <summary>Overlay the live Tags + Location onto a batch of read-model-sourced records (one query each).</summary>
+    private static void OverlayVolatile(StreetSamuraiDbContext db, List<CharacterData> records, HashSet<Guid> ids)
+    {
+        var tagsByEntity = db.EntityTags.AsNoTracking()
+            .Where(t => ids.Contains(t.EntityId))
+            .Select(t => new { t.EntityId, t.Tag!.Name })
+            .ToList()
+            .GroupBy(t => t.EntityId)
+            .ToDictionary(g => g.Key, g => g.Select(x => x.Name).ToList());
+        var locById = LatestStateValues(db, ids, "location");
+
+        foreach (var d in records)
+        {
+            if (!Guid.TryParseExact(d.Id, "N", out var id) && !Guid.TryParse(d.Id, out id)) continue;
+            d.Tags = tagsByEntity.TryGetValue(id, out var t) ? t : new List<string>();
+            d.Location = locById.TryGetValue(id, out var loc) ? loc : "";
+        }
     }
 
     /// <summary>
